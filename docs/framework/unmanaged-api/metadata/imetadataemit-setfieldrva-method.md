@@ -23,7 +23,7 @@ Sets a global variable value for the relative virtual address of the field refer
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFieldRVA (   
     [in]  mdFieldDef  fd,   
     [in]  ULONG       ulRVA   

@@ -22,7 +22,7 @@ Indicates the reason for a transition from managed to unmanaged code, or vice ve
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_TRANSITION_CALL,  
     COR_PRF_TRANSITION_RETURN  

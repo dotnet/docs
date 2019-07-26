@@ -22,7 +22,7 @@ Provides additional debugging options that can be used in a call to the [ICorDeb
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugCreateProcessFlags {  
     DEBUG_NO_SPECIAL_OPTIONS    = 0x0000  
 } CorDebugCreateProcessFlags;  

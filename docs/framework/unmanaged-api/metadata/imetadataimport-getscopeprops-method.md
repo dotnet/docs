@@ -23,7 +23,7 @@ Gets the name and optionally the version identifier of the assembly or module in
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetScopeProps (  
    [out] LPWSTR           szName,  
    [in]  ULONG            cchName,  

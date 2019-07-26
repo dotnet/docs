@@ -23,7 +23,7 @@ Notifies the profiler that a transition from managed code to unmanaged code has 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ManagedToUnmanagedTransition(  
     [in] FunctionID functionId,  
     [in] COR_PRF_TRANSITION_REASON reason);  

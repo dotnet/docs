@@ -13,7 +13,7 @@ ms.assetid: b79f459a-1c3f-4045-b2d4-1659cc8eaa3c
 For your custom event to support event routing, you need to register a <xref:System.Windows.RoutedEvent> using the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method. This example demonstrates the basics of creating a custom routed event.  
   
 ## Example  
- As shown in the following example, you first register a <xref:System.Windows.RoutedEvent> using the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method. By convention, the <xref:System.Windows.RoutedEvent> static field name should end with the suffix ***Event***. In this example, the name of the event is `Tap` and the routing strategy of the event is <xref:System.Windows.RoutingStrategy.Bubble>. After the registration call, you can provide add-and-remove [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] event accessors for the event.  
+ As shown in the following example, you first register a <xref:System.Windows.RoutedEvent> using the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method. By convention, the <xref:System.Windows.RoutedEvent> static field name should end with the suffix ***Event***. In this example, the name of the event is `Tap` and the routing strategy of the event is <xref:System.Windows.RoutingStrategy.Bubble>. After the registration call, you can provide add-and-remove common language runtime (CLR) event accessors for the event.  
   
  Note that even though the event is raised through the `OnTap` virtual method in this particular example, how you raise your event or how your event responds to changes depends on your needs.  
   

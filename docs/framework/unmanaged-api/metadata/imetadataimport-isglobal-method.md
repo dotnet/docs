@@ -23,7 +23,7 @@ Gets a value indicating whether the field, method, or type represented by the sp
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsGlobal (  
    [in]  mdToken     pd,  
    [out] int         *pbGlobal  

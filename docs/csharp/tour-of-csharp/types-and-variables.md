@@ -50,7 +50,7 @@ The following provides an overview of C#’s type system.
 [DelegateTypes]: ../language-reference/keywords/delegate.md
 [ArrayTypes]: ../programming-guide/arrays/index.md
 
-For more information about numeric types, see [Integral types table](../language-reference/keywords/integral-types-table.md) and [Floating-point types table](../language-reference/keywords/floating-point-types-table.md).
+For more information about numeric types, see [Integral types](../language-reference/builtin-types/integral-numeric-types.md) and [Floating-point types table](../language-reference/builtin-types/floating-point-numeric-types.md).
 
 C#’s `bool` type is used to represent Boolean values—values that are either `true` or `false`.
 

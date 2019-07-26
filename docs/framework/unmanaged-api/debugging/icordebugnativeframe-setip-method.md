@@ -23,7 +23,7 @@ Sets the instruction pointer to the specified offset location in native code.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetIP (  
     [in] ULONG32 nOffset  
 );  

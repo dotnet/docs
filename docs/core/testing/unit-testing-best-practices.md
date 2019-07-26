@@ -278,7 +278,7 @@ One of the principles of a unit test is that it must have full control of the sy
 ```csharp
 public int GetDiscountedPrice(int price)
 {
-    if(DateTime.Now == DayOfWeek.Tuesday) 
+    if(DateTime.Now.DayOfWeek == DayOfWeek.Tuesday) 
     {
         return price / 2;
     }

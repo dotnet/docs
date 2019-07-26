@@ -24,7 +24,7 @@ Gets the IL to address mapping information.
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetILAddressMap(
     [in] ULONG32                                   mapLen,
     [out] ULONG32                                 *mapNeeded,

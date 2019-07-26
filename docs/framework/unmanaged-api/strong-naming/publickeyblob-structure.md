@@ -22,7 +22,7 @@ Represents, in binary format, the public key of a public/private key pair.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct {  
     unsigned int SigAlgId;  
     unsigned int HashAlgId;  

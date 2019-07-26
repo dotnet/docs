@@ -22,7 +22,7 @@ Contains a type identifier.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_TYPEID{  
     UINT64 token1;  
     UINT64 token2;  

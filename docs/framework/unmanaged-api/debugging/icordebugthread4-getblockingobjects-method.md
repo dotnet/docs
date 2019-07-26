@@ -23,7 +23,7 @@ Provides an ordered enumeration of [CorDebugBlockingObject](../../../../docs/fra
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBlockingObjects (  
     [out] ICorDebugBlockingObjectEnum **ppBlockingObjectEnum  
 ```  

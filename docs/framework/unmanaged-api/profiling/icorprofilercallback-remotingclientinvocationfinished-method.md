@@ -23,7 +23,7 @@ Notifies the profiler that a remoting call has run to completion on the client.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingClientInvocationFinished();  
 ```  
   

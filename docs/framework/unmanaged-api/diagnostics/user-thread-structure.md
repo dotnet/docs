@@ -22,7 +22,7 @@ Provides information to a debugger about a thread. For more information, see the
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct tagUSER_THREAD  
 {  
     BYTE    *pSidBuffer;  

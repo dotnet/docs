@@ -22,7 +22,7 @@ Indicates the severity level of a descriptive message that is written to the eve
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum LoggingLevelEnum {  
     LTraceLevel0 = 0,  
     LTraceLevel1,  

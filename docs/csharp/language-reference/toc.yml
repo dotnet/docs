@@ -8,7 +8,7 @@
     items:
     - name: Overview
       href: keywords/index.md
-    - name: Types
+    - name: Built-in types
       items:
       - name: Value Types
         items:
@@ -16,62 +16,39 @@
           href: keywords/value-types.md
         - name: bool
           href: keywords/bool.md
-        - name: byte
-          href: keywords/byte.md
+        - name: Integral numeric types
+          displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer
+          href: builtin-types/integral-numeric-types.md
+        - name: Floating-point numeric types
+          displayName: float, decimal, double, rational, real
+          href: builtin-types/floating-point-numeric-types.md
         - name: char
           href: keywords/char.md
-        - name: decimal
-          href: keywords/decimal.md
-        - name: double
-          href: keywords/double.md
         - name: enum
           href: keywords/enum.md
-        - name: float
-          href: keywords/float.md
-        - name: int
-          href: keywords/int.md
-        - name: long
-          href: keywords/long.md
-        - name: sbyte
-          href: keywords/sbyte.md
-        - name: short
-          href: keywords/short.md
         - name: struct
           href: keywords/struct.md
-        - name: uint
-          href: keywords/uint.md
-        - name: ulong
-          href: keywords/ulong.md
-        - name: ushort
-          href: keywords/ushort.md
       - name: Reference Types
         items:
         - name: Features of reference types
           href: keywords/reference-types.md
         - name: class
           href: keywords/class.md
-        - name: delegate
-          href: keywords/delegate.md
-        - name: dynamic
-          href: keywords/dynamic.md
+        - name: Built-in reference types
+          displayName: object, delegate, dynamic, string
+          href: builtin-types/reference-types.md
         - name: interface
           href: keywords/interface.md
-        - name: object
-          href: keywords/object.md
-        - name: string
-          href: keywords/string.md
       - name: void
         href: keywords/void.md
       - name: var
         href: keywords/var.md
+      - name: Unmanaged types
+        href: builtin-types/unmanaged-types.md
       - name: Reference tables for types
         items:
         - name: Built-in types table
           href: keywords/built-in-types-table.md
-        - name: Integral types table
-          href: keywords/integral-types-table.md
-        - name: Floating-point types table
-          href: keywords/floating-point-types-table.md
         - name: Value types table
           href: keywords/value-types-table.md
         - name: Default values table
@@ -116,9 +93,11 @@
         href: keywords/event.md
       - name: extern
         href: keywords/extern.md
-      - name: in (Generic Modifier)
+      - name: in (generic modifier)
         href: keywords/in-generic-modifier.md
-      - name: out (Generic Modifier)
+      - name: new (member modifier)
+        href: keywords/new-modifier.md
+      - name: out (generic modifier)
         href: keywords/out-generic-modifier.md
       - name: override
         href: keywords/override.md
@@ -218,32 +197,16 @@
       items:
         - name: is
           href: keywords/is.md
+    - name: Generic Type Constraint Keywords
+      items:
+        - name: new constraint
+          href: keywords/new-constraint.md
+        - name: where
+          href: keywords/where-generic-type-constraint.md
     - name: Operator Keywords
       items:
       - name: await
         href: keywords/await.md
-      - name: new
-        items:
-        - name: new operator, modifier and constraint
-          href: keywords/new.md
-        - name: new Operator
-          href: keywords/new-operator.md
-        - name: new Modifier
-          href: keywords/new-modifier.md
-        - name: new Constraint
-          href: keywords/new-constraint.md
-      - name: sizeof
-        href: keywords/sizeof.md
-      - name: nameof
-        href: keywords/nameof.md
-    - name: Conversion Keywords
-      items:
-      - name: explicit
-        href: keywords/explicit.md
-      - name: implicit
-        href: keywords/implicit.md
-      - name: operator
-        href: keywords/operator.md
     - name: Access Keywords
       items:
       - name: base
@@ -280,8 +243,6 @@
         href: keywords/set.md
       - name: when (filter condition)
         href: keywords/when.md
-      - name: where (generic type constraint)
-        href: keywords/where-generic-type-constraint.md
       - name: value
         href: keywords/value.md
       - name: yield
@@ -342,7 +303,10 @@
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation"
     - name: Type-testing and conversion operators
       href: operators/type-testing-and-conversion-operators.md
-      displayName: "is, as, typeof, (), cast"
+      displayName: "is operator, is keyword, as operator, as keyword, typeof, (), cast"
+    - name: User-defined conversion operators
+      href: operators/user-defined-conversion-operators.md
+      displayName: implicit, explicit
     - name: Pointer related operators
       href: operators/pointer-related-operators.md
       displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
@@ -367,10 +331,21 @@
     - name: ":: operator"
       href: operators/namespace-alias-qualifer.md
       displayName: "namespace alias qualifier"
+    - name: delegate operator
+      href: operators/delegate-operator.md
+      displayName: anonymous
+    - name: nameof operator
+      href: operators/nameof.md
+    - name: new operator
+      href: operators/new-operator.md
+    - name: sizeof operator
+      href: operators/sizeof.md
     - name: stackalloc operator
       href: operators/stackalloc.md
     - name: true and false operators
       href: operators/true-false-operators.md
+    - name: Operator overloading
+      href: operators/operator-overloading.md
   - name: C# special characters
     items:
     - name: Overview

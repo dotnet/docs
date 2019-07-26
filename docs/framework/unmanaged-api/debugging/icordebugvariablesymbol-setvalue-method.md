@@ -10,7 +10,7 @@ Assigns the value of a byte array to a variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetValue(  
    [in] ULONG32 offset,  
    [in] DWORD threadID,  

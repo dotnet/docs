@@ -23,7 +23,7 @@ Gets the start offset of this variable within its parent. If this is a local var
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStartOffset(  
     [out, retval] ULONG32* pRetVal);  
 ```  

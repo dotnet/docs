@@ -23,7 +23,7 @@ Gets a value that indicates whether any managed callbacks are currently queued f
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HasQueuedCallbacks (  
     [in] ICorDebugThread *pThread,  
     [out] BOOL           *pbQueued  

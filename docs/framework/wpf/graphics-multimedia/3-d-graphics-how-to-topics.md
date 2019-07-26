@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 4f091835-28d1-498c-b660-9b3acf34ed13
 ---
 # 3-D Graphics How-to Topics
-The topics in this section demonstrate how to use [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] graphics in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  
+The topics in this section demonstrate how to use 3-D graphics in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  
   
 ## In This Section  
  [Create a 3-D Scene](how-to-create-a-3-d-scene.md)  

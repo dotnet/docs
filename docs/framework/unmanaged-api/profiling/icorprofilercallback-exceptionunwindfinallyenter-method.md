@@ -23,7 +23,7 @@ Notifies the profiler that the unwind phase of exception handling is entering a 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwindFinallyEnter(  
     [in] FunctionID functionId);  
 ```  

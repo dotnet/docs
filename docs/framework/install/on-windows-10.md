@@ -28,7 +28,7 @@ The .NET Framework 4.8 is included with:
 You can install [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) on:
 
 * Windows 10 October 2018 Update (version 1809)
-* Windows 10 April 2018 Updae (version 1803)
+* Windows 10 April 2018 Update (version 1803)
 * Windows 10 Fall Creators Update (version 1709)
 * Windows 10 Creators Update (version 1703)
 * Windows 10 Anniversary Update (version 1607)

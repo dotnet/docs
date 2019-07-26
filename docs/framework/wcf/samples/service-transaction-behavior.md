@@ -157,7 +157,7 @@ public class CalculatorService : ICalculator
         return runningTotal;
     }
 
-    // Logging method ommitted for brevity
+    // Logging method omitted for brevity
 }
 ```
 

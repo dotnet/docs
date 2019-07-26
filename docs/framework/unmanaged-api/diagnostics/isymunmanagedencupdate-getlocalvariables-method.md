@@ -23,7 +23,7 @@ Gets the local variables.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalVariables(  
     [in]  mdMethodDef  mdMethodToken,  
     [in]  ULONG        cLocals,  

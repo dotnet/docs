@@ -23,7 +23,7 @@ Gets the properties of the file with the specified metadata signature.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFileProps (  
     [in]  mdFile      mdf,   
     [out] LPWSTR      szName,   

@@ -23,7 +23,7 @@ Notifies the debugger that a common language runtime (CLR) module has been succe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadModule (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugModule    *pModule  

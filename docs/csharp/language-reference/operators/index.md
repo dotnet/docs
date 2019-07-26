@@ -23,7 +23,7 @@ ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 
 C# provides a number of predefined operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with operands of built-in numeric types and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands.
 
-A user-defined type can overload certain operators to define the corresponding behavior for the operands of that type. For more information, see the [operator](../keywords/operator.md) keyword article.
+A user-defined type can overload certain operators to define the corresponding behavior for the operands of that type. For more information, see [Operator overloading](operator-overloading.md).
 
 The following sections list the C# operators starting with the highest precedence to the lowest. The operators within each section share the same precedence level.
 
@@ -45,7 +45,7 @@ These are the highest precedence operators.
 
 [x--](arithmetic-operators.md#decrement-operator---) –  postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
 
-[new](../keywords/new-operator.md) – type instantiation.
+[new](new-operator.md) – type instantiation.
 
 [typeof](type-testing-and-conversion-operators.md#typeof-operator) – returns the <xref:System.Type> object representing the operand.
 
@@ -55,11 +55,11 @@ These are the highest precedence operators.
 
 [default(T)](../../programming-guide/statements-expressions-operators/default-value-expressions.md) – produces the default value of type T.
 
-[nameof](../keywords/nameof.md) - obtains the simple (unqualified) name of a variable, type, or member as a constant string.
+[nameof](nameof.md) - obtains the simple (unqualified) name of a variable, type, or member as a constant string.
 
-[delegate](../../programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.
+[delegate](delegate-operator.md) – declares and returns a delegate instance.
 
-[sizeof](../keywords/sizeof.md) – returns the size in bytes of the type operand.
+[sizeof](sizeof.md) – returns the size in bytes of the type operand.
 
 [stackalloc](stackalloc.md) - allocates a block of memory on the stack.
 
@@ -165,13 +165,13 @@ This operator has higher precedence than the next section and lower precedence t
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x && y](boolean-logical-operators.md#conditional-logical-and-operator-) – logical AND. If the first operand evaluates to false, then C# does not evaluate the second operand.
+[x && y](boolean-logical-operators.md#conditional-logical-and-operator-) – logical AND. If `x` evaluates to `false`, then `y` is not evaluated.
 
 ## Conditional OR operator
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-) – logical OR. If the first operand evaluates to true, then C# does not evaluate the second operand.
+[x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-) – logical OR. If `x` evaluates to `true`, then `y` is not evaluated.
 
 ## Null-coalescing operator
 
@@ -217,4 +217,3 @@ These operators have higher precedence than the next section and lower precedenc
 
 - [C# reference](../index.md)
 - [Operators](../../programming-guide/statements-expressions-operators/operators.md)
-- [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)

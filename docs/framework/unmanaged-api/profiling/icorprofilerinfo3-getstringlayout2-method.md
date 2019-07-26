@@ -23,7 +23,7 @@ Gets information about the layout of a string object. This method supersedes the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStringLayout2(  
     [out] ULONG *pStringLengthOffset,  
     [out] ULONG *pBufferOffset);  

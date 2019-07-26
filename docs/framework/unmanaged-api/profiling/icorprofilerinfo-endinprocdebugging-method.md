@@ -23,7 +23,7 @@ Shuts down an in-process debugging session. This method is obsolete in the .NET 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndInprocDebugging(  
     [in]  DWORD dwProfilerContext);  
 ```  

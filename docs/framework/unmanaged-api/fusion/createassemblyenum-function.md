@@ -24,7 +24,7 @@ Gets a pointer to an [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAssemblyEnum (  
     [out] IAssemblyEnum  **pEnum,  
     [in]  IUnknown       *pUnkReserved,  

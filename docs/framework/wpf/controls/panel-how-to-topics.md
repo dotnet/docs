@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 28d8faf2-490c-4e17-a447-df25a66f6679
 ---
 # Panel How-to Topics
-The topics in this section describe how to use the <xref:System.Windows.Controls.Panel> element and related [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)].  
+The topics in this section describe how to use the <xref:System.Windows.Controls.Panel> element and related APIs.  
   
 ## In This Section  
  [Create a Custom Panel Element](how-to-create-a-custom-panel-element.md)  

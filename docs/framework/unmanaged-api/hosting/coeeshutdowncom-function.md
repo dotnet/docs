@@ -26,7 +26,7 @@ Forces the common language runtime (CLR) to release all interface pointers it ho
   
 ## Syntax  
   
-```  
+```cpp  
 void CoEEShutDownCOM ();  
 ```  
   

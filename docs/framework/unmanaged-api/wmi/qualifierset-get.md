@@ -24,7 +24,7 @@ Gets the specified named qualifier.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_Get (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr, 

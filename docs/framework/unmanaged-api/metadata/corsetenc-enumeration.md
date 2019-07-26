@@ -22,7 +22,7 @@ Contains values used to influence behavior during the generation of metadata.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSetENC {  
   
     MDSetENCOn                  = 0x00000001,  

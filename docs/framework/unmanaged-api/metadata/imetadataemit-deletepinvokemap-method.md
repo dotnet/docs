@@ -23,7 +23,7 @@ Destroys the PInvoke mapping metadata for the object referenced by the specified
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeletePinvokeMap (   
     [in]  mdToken     tk   
 );  

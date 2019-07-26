@@ -23,7 +23,7 @@ Gets an enumerator for the processes that are being debugged.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateProcesses (  
     [out] ICorDebugProcessEnum      **ppProcess  
 );  

@@ -48,7 +48,7 @@ Polymorphism is often referred to as the third pillar of object-oriented program
  Virtual methods and properties enable derived classes to extend a base class without needing to use the base class implementation of a method. For more information, see [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md). An interface provides another way to define a method or set of methods whose implementation is left to derived classes. For more information, see [Interfaces](../../../csharp/programming-guide/interfaces/index.md).  
   
 ### Hiding Base Class Members with New Members  
- If you want your derived member to have the same name as a member in a base class, but you do not want it to participate in virtual invocation, you can use the [new](../../../csharp/language-reference/keywords/new.md) keyword. The `new` keyword is put before the return type of a class member that is being replaced. The following code provides an example:  
+ If you want your derived member to have the same name as a member in a base class, but you do not want it to participate in virtual invocation, you can use the [new](../../../csharp/language-reference/keywords/new-modifier.md) keyword. The `new` keyword is put before the return type of a class member that is being replaced. The following code provides an example:  
   
  [!code-csharp[csProgGuideInheritance#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#18)]  
   

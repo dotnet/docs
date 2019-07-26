@@ -23,7 +23,7 @@ Gets an interface pointer to the register set that is associated with the active
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisterSet (  
     [out] ICorDebugRegisterSet **ppRegisters  
 );  

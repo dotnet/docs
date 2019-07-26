@@ -23,7 +23,7 @@ Defines the offset range for the specified lexical scope. The scope becomes the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScope(  
     [in] ULONG32  scopeID,  
     [in] ULONG32  startOffset,  

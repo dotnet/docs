@@ -23,7 +23,7 @@ Sets checksum information.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCheckSum(  
     [in]  GUID     algorithmId,  
     [in]  ULONG32  checkSumSize,  

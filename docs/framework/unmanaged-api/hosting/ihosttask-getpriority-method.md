@@ -23,7 +23,7 @@ Gets the thread priority level of the task represented by the current [IHostTask
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPriority (  
     [out] int *pPriority  
 );  

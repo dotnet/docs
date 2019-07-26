@@ -23,7 +23,7 @@ Registers a callback pointer for the specified event.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RegisterActionOnEvent (  
     [in] EClrEvent event,  
     [in] IActionOnCLREvent *pAction  

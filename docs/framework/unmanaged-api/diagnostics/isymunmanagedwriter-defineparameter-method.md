@@ -25,7 +25,7 @@ Defines a single parameter in the current method. The parameter type is taken fr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineParameter(  
     [in] const WCHAR  *name,  
     [in] ULONG32      attributes,  

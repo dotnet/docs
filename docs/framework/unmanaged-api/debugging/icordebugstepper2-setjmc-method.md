@@ -23,7 +23,7 @@ Sets a value that specifies whether this ICorDebugStepper steps only through cod
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetJMC (  
     [in] BOOL    fIsJMCStepper  
 );  

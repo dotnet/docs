@@ -28,7 +28,7 @@ Defines a transport that causes a channel to transfer messages using named pipes
                     transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
   <connectionPoolSettings groupName="String"
                           idleTimeout="TimeSpan"
-                          maxOutboundConnectionsPerEndpopint="Integer" />
+                          maxOutboundConnectionsPerEndpoint="Integer" />
 </namedPipeTransport>
 ```  
   

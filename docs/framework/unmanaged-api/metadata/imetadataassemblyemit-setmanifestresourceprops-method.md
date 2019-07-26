@@ -23,7 +23,7 @@ Modifies the specified `ManifestResource` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetManifestResourceProps (  
     [in] mdManifestResource  mr,  
     [in] mdToken             tkImplementation,   

@@ -23,7 +23,7 @@ Gets a pointer to the "ICorDebugProcess" instance for the specified process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess (  
     [in] DWORD               dwProcessId,  
     [out] ICorDebugProcess   **ppProcess  

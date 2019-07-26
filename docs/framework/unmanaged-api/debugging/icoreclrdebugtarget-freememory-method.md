@@ -25,7 +25,7 @@ Frees the memory allocated by the [ICoreClrDebugTarget::EnumProcesses](../../../
   
 ## Syntax  
   
-```  
+```cpp  
 void FreeMemory (  
      [in] void*pMemory);  
 ```  

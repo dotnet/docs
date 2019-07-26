@@ -23,7 +23,7 @@ Modifies the specified `ExportedType` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetExportedTypeProps (  
     [in] mdExportedType   ct,   
     [in] mdToken          tkImplementation,  

@@ -23,7 +23,7 @@ Returns an enumerator for all functions that were previously JIT-compiled.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumJITedFunctions([out] ICorProfilerFunctionEnum** ppEnum);  
 ```  
   

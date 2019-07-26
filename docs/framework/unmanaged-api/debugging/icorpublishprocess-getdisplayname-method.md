@@ -23,7 +23,7 @@ Gets the full path of the executable for the process referenced by this [ICorPub
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDisplayName (  
     [in]  ULONG32                    cchName,   
     [out] ULONG32                    *pcchName,  

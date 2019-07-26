@@ -28,7 +28,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
   
 ### To configure the WAS to support TCP activation  
   
-1. To support net.tcp activation, the default Web site must first be bound to a net.tcp port. You can do this by using Appcmd.exe, which is installed with the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] management toolset. In an administrator-level Command Prompt window, run the following command.  
+1. To support net.tcp activation, the default Web site must first be bound to a net.tcp port. You can do this by using Appcmd.exe, which is installed with the IIS 7.0 management toolset. In an administrator-level Command Prompt window, run the following command.  
   
     ```  
     %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInformation='808:*']  

@@ -88,7 +88,9 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
 ### MSMQ Hash Algorithm  
  The hash algorithm specifies the algorithm used to create a digital signature of the MSMQ message. The receiving queue manager uses this same algorithm to authenticate the MSMQ message. This property is used only if <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> is set to <xref:System.Net.Security.ProtectionLevel.Sign> or <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
- The supported algorithms are `MD5`, `SHA1`, `SHA256`, and `SHA512`. The default is `SHA1`.  
+ The supported algorithms are `MD5`, `SHA1`, `SHA256`, and `SHA512`. The default is `SHA1`.
+
+ Due to collision problems with MD5/SHA1, Microsoft recommends SHA256 or better.
   
 ## See also
 

@@ -23,7 +23,7 @@ Gets a detailed message about the specified validation error.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FormatEventInfo (  
     [in] HRESULT            hVECode,  
     [in] VEContext          Context,  

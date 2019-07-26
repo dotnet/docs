@@ -23,7 +23,7 @@ Creates a `ManifestResource` structure containing metadata for the specified man
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineManifestResource (  
     [in] LPCWSTR                szName,   
     [in] mdToken                tkImplementation,   

@@ -23,7 +23,7 @@ Adds files to the assembly. Can also be used to create unbound modules.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddFile2(  
     mdAssembly AssemblyID,  
     LPCWSTR pszFilename,  

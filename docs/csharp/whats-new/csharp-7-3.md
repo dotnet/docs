@@ -28,7 +28,12 @@ The new compiler options are:
 - `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
 - `-pathmap` to provide a mapping for source directories.
 
-The remainder of this article provides details and links to learn more about each of the improvements.
+The remainder of this article provides details and links to learn more about each of the improvements. You can explore these features in your environment using the `dotnet try` global tool:
+
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
+1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
+1. Run `dotnet try`.
 
 ## Enabling more efficient safe code
 
@@ -118,7 +123,7 @@ For more information, see the [`fixed` statement](../language-reference/keywords
 
 You can now specify the type <xref:System.Enum?displayProperty=nameWithType> or <xref:System.Delegate?displayProperty=nameWithType> as base class constraints for a type parameter.
 
-You can also use the new `unmanaged` constraint, to specify that a type parameter must be an **unmanaged type**. An **unmanaged type** is a type that isn't a reference type and doesn't contain any reference type at any level of nesting.
+You can also use the new `unmanaged` constraint, to specify that a type parameter must be an [unmanaged type](../language-reference/builtin-types/unmanaged-types.md).
 
 For more information, see the articles on [`where` generic constraints](../language-reference/keywords/where-generic-type-constraint.md) and [constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md).
 

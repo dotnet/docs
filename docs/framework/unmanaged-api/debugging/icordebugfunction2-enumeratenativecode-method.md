@@ -26,7 +26,7 @@ Gets an interface pointer to an ICorDebugCodeEnum object that contains the nativ
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateNativeCode (  
     [out] ICorDebugCodeEnum   **ppCodeEnum  
 );  

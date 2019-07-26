@@ -23,7 +23,7 @@ Enumerates ParamDef tokens representing the parameters of the method referenced 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumParams (  
    [in, out] HCORENUM    *phEnum,  
    [in]  mdMethodDef     mb,  

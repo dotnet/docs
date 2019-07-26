@@ -22,7 +22,7 @@ Describes the policy actions the host can set for operations described by [EClrO
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eNoAction,  
     eThrowException,  

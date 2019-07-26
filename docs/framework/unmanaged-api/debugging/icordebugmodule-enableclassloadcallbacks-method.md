@@ -23,7 +23,7 @@ Controls whether the [ICorDebugManagedCallback::LoadClass](../../../../docs/fram
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableClassLoadCallbacks(  
     [in] BOOL bClassLoadCallbacks  
 );  

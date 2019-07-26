@@ -23,7 +23,7 @@ Notifies the debugger that a common language runtime (CLR) managed thread has ca
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LogMessage (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugThread     *pThread,  

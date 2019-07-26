@@ -23,7 +23,7 @@ Gets an interface pointer of type IAppDomainSetup to an <xref:System.AppDomainSe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDomainSetup (  
     [out] IUnknown** pAppDomainSetup  
 );  

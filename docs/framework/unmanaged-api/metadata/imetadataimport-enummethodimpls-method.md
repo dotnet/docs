@@ -23,7 +23,7 @@ Enumerates MethodBody and MethodDeclaration tokens representing methods of the s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMethodImpls (  
    [in, out] HCORENUM    *phEnum,   
    [in]      mdTypeDef   td,   

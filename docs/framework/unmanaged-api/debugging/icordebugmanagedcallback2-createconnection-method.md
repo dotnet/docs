@@ -23,7 +23,7 @@ Notifies the debugger that a new connection has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateConnection (  
     [in] ICorDebugProcess     *pProcess,  
     [in] CONNID               dwConnectionId,  

@@ -10,7 +10,7 @@ Returns information about a type's properties, such as the number of signature o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeProps(  
    [in]  ULONG32 vtableRva,  
    [in]  ULONG32 cbSignature,  

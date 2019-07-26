@@ -24,7 +24,12 @@ There are many enhancements to the C# language that you can try out already.
 > [!NOTE]
 > This article was last updated for C# 8.0 preview 5.
 
-The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided.
+The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
+
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
+1. Set the current directory to the *csharp8* subdirectory for the *try-samples* repository.
+1. Run `dotnet try`.
 
 ## Readonly members
 
@@ -254,7 +259,6 @@ static void WriteLinesToFile(IEnumerable<string> lines)
     using var file = new System.IO.StreamWriter("WriteLines2.txt");
     foreach (string line in lines)
     {
-        // If the line doesn't contain the word 'Second', write the line to the file.
         if (!line.Contains("Second"))
         {
             file.WriteLine(line);
@@ -264,7 +268,7 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 }
 ```
 
-In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code using the classic [using statements](../language-reference/keywords/using-statement.md) statement:
+In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code that uses the classic [using statement](../language-reference/keywords/using-statement.md):
 
 ```csharp
 static void WriteLinesToFile(IEnumerable<string> lines)
@@ -273,7 +277,6 @@ static void WriteLinesToFile(IEnumerable<string> lines)
     {
         foreach (string line in lines)
         {
-            // If the line doesn't contain the word 'Second', write the line to the file.
             if (!line.Contains("Second"))
             {
                 file.WriteLine(line);
@@ -285,7 +288,7 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 
 In the preceding example, the file is disposed when the closing brace associated with the `using` statement is reached.
 
-In both cases, the compiler generates the call to `Dispose()`. The compiler generates an error if the expression in the using statement is not disposable.
+In both cases, the compiler generates the call to `Dispose()`. The compiler generates an error if the expression in the `using` statement is not disposable.
 
 ## Static local functions
 
@@ -371,7 +374,7 @@ This language support relies on two new types, and two new operators.
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
 - The `^` operator, which specifies that an index is relative to the end of the sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
-- The Range operator (`..`), which specifies the start and end of a range as is operands.
+- The Range operator (`..`), which specifies the start and end of a range as its operands.
 
 Let's start with the rules for indexes. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
 
@@ -419,7 +422,7 @@ The following examples create ranges that are open ended for the start, end, or 
 ```csharp
 var allWords = words[..]; // contains "The" through "dog".
 var firstPhrase = words[..4]; // contains "The" through "fox"
-var lastPhrase = words[6..]; // contains "the, "lazy" and "dog"
+var lastPhrase = words[6..]; // contains "the", "lazy" and "dog"
 ```
 
 You can also declare ranges as variables:

@@ -22,7 +22,7 @@ Releases the Win32 resource blob and associated resources.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FreeWin32ResBlob(  
     const void** ppResBlob  
 ) PURE;  

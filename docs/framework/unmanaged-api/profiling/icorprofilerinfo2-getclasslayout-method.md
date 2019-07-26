@@ -23,7 +23,7 @@ Gets information about the layout, in memory, of the fields defined by the speci
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassLayout(  
     [in]  ClassID classID,  
     [in, out] COR_FIELD_OFFSET rFieldOffset[],  

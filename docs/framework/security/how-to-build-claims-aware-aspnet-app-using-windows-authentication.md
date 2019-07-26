@@ -50,7 +50,7 @@ author: "BrucePerlerMS"
 ## Step 1 – Create a Simple ASP.NET Web Forms Application  
  In this step, you will create a new ASP.NET Web Forms application.  
   
-#### To create a simple ASP.NET application  
+### To create a simple ASP.NET application  
   
 1. Start Visual Studio, then click **File**, **New**, and then **Project**.  
   
@@ -66,7 +66,7 @@ author: "BrucePerlerMS"
 ## Step 2 – Configure ASP.NET Web Forms Application for Claims Using Windows Authentication  
  In this step you will add a configuration entry to the *Web.config* configuration file and modify the *Default.aspx* file to display claims information for an account.  
   
-#### To configure ASP.NET application for claims using Windows authentication  
+### To configure ASP.NET application for claims using Windows authentication  
   
 1. In the **TestApp** project’s *Default.aspx* file, replace the existing markup with the following:  
   
@@ -130,6 +130,6 @@ author: "BrucePerlerMS"
 ## Step 3 – Test Your Solution  
  In this step you will test your ASP.NET Web Forms application, and verify that claims are presented when a user signs in with Windows authentication.  
   
-#### To test your ASP.NET Web Forms application for claims using Windows authentication  
+### To test your ASP.NET Web Forms application for claims using Windows authentication  
   
 1. Press **F5** to build and run the application. You should be presented with *Default.aspx*, and your Windows account name (including domain name) should already appear as the authenticated user in the top right of the page. The page’s content should include a table filled with claims retrieved from your Windows account.

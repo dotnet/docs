@@ -22,7 +22,7 @@ Indicates whether a particular range of native instructions, represented by an i
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugIlToNativeMappingTypes {  
     NO_MAPPING = -1,  
     PROLOG     = -2,  

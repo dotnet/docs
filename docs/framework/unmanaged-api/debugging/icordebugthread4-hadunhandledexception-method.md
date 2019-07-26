@@ -23,7 +23,7 @@ Indicates whether the thread has ever had an unhandled exception.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBlockingObjects (  
     [out] ICorDebugBlockingObjectEnum **ppBlockingObjectEnum  
     );  

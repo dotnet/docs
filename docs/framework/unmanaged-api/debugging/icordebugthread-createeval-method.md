@@ -23,7 +23,7 @@ Creates an ICorDebugEval object that collects and exposes the functionality of t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateEval (  
     [out] ICorDebugEval   **ppEval  
 );  

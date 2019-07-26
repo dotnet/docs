@@ -22,7 +22,7 @@ Provides flag values used by the linker when linking native code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     nlfNone         = 0x00,  

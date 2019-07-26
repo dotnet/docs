@@ -23,7 +23,7 @@ Increases the count of the current [IHostSemaphore](../../../../docs/framework/u
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReleaseSemaphore (  
     [in]  LONG  lReleaseCount,  
     [out] LONG  *lpPreviousCount  

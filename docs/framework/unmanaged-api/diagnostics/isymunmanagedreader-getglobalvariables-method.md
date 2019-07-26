@@ -23,7 +23,7 @@ Returns all global variables.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGlobalVariables(  
     [in]  ULONG32  cVars,  
     [out] ULONG32  *pcVars,  

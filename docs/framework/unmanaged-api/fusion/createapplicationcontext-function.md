@@ -22,7 +22,7 @@ This function supports the .NET Framework infrastructure and is not intended to 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateApplicationContext (  
     [in]  IAssemblyName  *pName,  
     [out] LPPAPPLICATIONCONTEXT  *ppCtx  

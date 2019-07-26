@@ -23,7 +23,7 @@ Gets invoked when a call is out.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnSyncCallOut  
 (  
     [in]  CALL_ID  in_CallID,  

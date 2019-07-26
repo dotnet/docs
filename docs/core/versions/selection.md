@@ -1,15 +1,13 @@
 ---
 title: Select which .NET Core version to use
 description: Learn how .NET Core automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
-author: billwagner
-ms.author: wiwagn
-ms.date: 06/27/2018
+author: thraka
+ms.author: adegeo
+ms.date: 06/26/2019
 ms.custom: "seodec18"
 ---
 
 # Select the .NET Core version to use
-
-[!INCLUDE [topic-appliesto-net-core-2plus](../../../includes/topic-appliesto-net-core-2plus.md)]
 
 This article explains the policies used by the .NET Core tools, SDK, and runtime for selecting versions. These policies provide a balance between running applications using the specified versions and enabling ease of upgrading both developer and end-user machines. These policies perform the following actions:
 
@@ -82,19 +80,20 @@ The host chooses the latest patch version installed on the machine. For example,
 
 If no acceptable `2.0.*` version is found, a new `2.*` version is used. For example, if you specified `netcoreapp2.0` and only `2.1.0` is installed, the application runs using the `2.1.0` runtime. This behavior is referred to as "minor version roll-forward." Lower versions also won't be considered. When no acceptable runtime is installed, the application won't run.
 
-A few usage examples demonstrate the behavior:
+A few usage examples demonstrate the behavior, if you target 2.0:
 
-- 2.0.4 is required. 2.0.5 is the highest patch version installed. 2.0.5 is used.
-- 2.0.4 is required. No 2.0.* versions are installed. 1.1.1 is the highest runtime installed. An error message is displayed.
-- 2.0.4 is required. 2.0.0 is the highest version installed. An error message is displayed.
-- 2.0.4 is required. No 2.0.* versions are installed. 2.2.2 is the highest 2.x runtime version installed. 2.2.2 is used.
-- 2.0.4 is required. No 2.x versions are installed. 3.0.0 (not a currently available version) is installed. An error message is displayed.
+- 2.0 is specified. 2.0.5 is the highest patch version installed. 2.0.5 is used.
+- 2.0 is specified. No 2.0.* versions are installed. 1.1.1 is the highest runtime installed. An error message is displayed.
+- 2.0 is specified. No 2.0.* versions are installed. 2.2.2 is the highest 2.x runtime version installed. 2.2.2 is used.
+- 2.0 is specified. No 2.x versions are installed. 3.0.0 is installed. An error message is displayed.
 
 Minor version roll-forward has one side-effect that may affect end users. Consider the following scenario:
 
-- 2.0.4 is required. No 2.0.* versions are installed. 2.2.2 is installed. 2.2.2 is used.
-- 2.0.5 is later installed. 2.0.5 will be used for subsequent application launches, not 2.2.2. The latest patch of the required minor version is preferred over a higher minor version.
-- It's possible that 2.0.5 and 2.2.2 behave differently, particularly for scenarios like serializing binary data.
+1. The application specifies that 2.0 is required.
+2. When run, version 2.0.* is not installed, however, 2.2.2 is. Version 2.2.2 will be used.
+3. Later, the user installs 2.0.5 and runs the application again, 2.0.5 will now be used.
+
+It's possible that 2.0.5 and 2.2.2 behave differently, particularly for scenarios like serializing binary data.
 
 ## Self-contained deployments include the selected runtime
 

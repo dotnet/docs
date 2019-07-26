@@ -22,7 +22,7 @@ Contains values that describe the features of a method.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorMethodAttr {  
   
     mdMemberAccessMask          =   0x0007,  

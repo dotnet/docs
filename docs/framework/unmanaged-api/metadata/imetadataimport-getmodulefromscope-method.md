@@ -23,7 +23,7 @@ Gets a metadata token for the module referenced in the current metadata scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleFromScope (  
    [out] mdModule    *pmd  
 );  

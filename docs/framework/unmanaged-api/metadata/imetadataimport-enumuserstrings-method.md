@@ -23,7 +23,7 @@ Enumerates String tokens representing hard-coded strings in the current metadata
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumUserStrings (  
    [in, out]  HCORENUM    *phEnum,  
    [out]  mdString        rStrings[],  

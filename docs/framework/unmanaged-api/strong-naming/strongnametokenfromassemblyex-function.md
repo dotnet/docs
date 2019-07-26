@@ -24,7 +24,7 @@ Creates a strong name token from the specified assembly file, and returns the pu
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameTokenFromAssemblyEx (  
     [in]  LPCWSTR   wszFilePath,  
     [out] BYTE      **ppbStrongNameToken,  

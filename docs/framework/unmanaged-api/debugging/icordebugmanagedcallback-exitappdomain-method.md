@@ -23,7 +23,7 @@ Notifies the debugger that an application domain has exited.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExitAppDomain (  
     [in] ICorDebugProcess   *pProcess,  
     [in] ICorDebugAppDomain *pAppDomain  

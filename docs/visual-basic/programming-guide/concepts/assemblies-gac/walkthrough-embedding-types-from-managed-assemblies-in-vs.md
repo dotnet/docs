@@ -46,7 +46,7 @@ Because the primary function of type embedding is to support embedding of type i
 
 ## Creating an Interface
 
-#### To create the type equivalence interface project
+### To create the type equivalence interface project
 
 1. In Visual Studio, on the **File** menu, point to **New** and then click **Project**.
 
@@ -91,7 +91,7 @@ Because the primary function of type embedding is to support embedding of type i
 
 ## Creating a Runtime Class
 
-#### To create the type equivalence runtime project
+### To create the type equivalence runtime project
 
 1. In Visual Studio, on the **File** menu, point to **New** and then click **Project**.
 
@@ -137,7 +137,7 @@ Because the primary function of type embedding is to support embedding of type i
 
 ## Creating a Client Project
 
-#### To create the type equivalence client project
+### To create the type equivalence client project
 
 1. In Visual Studio, on the **File** menu, point to **New** and then click **Project**.
 
@@ -176,7 +176,7 @@ Because the primary function of type embedding is to support embedding of type i
 
 ## Modifying the Interface
 
-#### To modify the interface
+### To modify the interface
 
 1. In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 
@@ -196,7 +196,7 @@ Because the primary function of type embedding is to support embedding of type i
 
 ## Modifying the Runtime Class
 
-#### To modify the runtime class
+### To modify the runtime class
 
 1. In Visual Studio, on the **File** menu, point to **Open**, and then click **Project/Solution**.
 

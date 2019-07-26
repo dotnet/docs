@@ -25,7 +25,7 @@ Allows the host to determine which version of the common language runtime (CLR) 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LockClrVersion (  
     [in] FLockClrVersionCallback   hostCallback,  
     [in] FLockClrVersionCallback  *pBeginHostSetup,  
@@ -54,7 +54,7 @@ HRESULT LockClrVersion (
 ## Remarks  
  The host calls `LockClrVersion` before initializing the CLR. `LockClrVersion` takes three parameters, all of which are callbacks of type [FLockClrVersionCallback](../../../../docs/framework/unmanaged-api/hosting/flockclrversioncallback-function-pointer.md). This type is defined as follows.  
   
-```  
+```cpp  
 typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();  
 ```  
   

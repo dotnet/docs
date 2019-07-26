@@ -10,7 +10,7 @@ Gets the address of a static field.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddress(  
    [out] CORDB_ADDRESS *pRVA  
 );  

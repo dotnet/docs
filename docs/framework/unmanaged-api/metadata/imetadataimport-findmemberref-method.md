@@ -23,7 +23,7 @@ Gets a pointer to the MemberRef token for the member reference that is enclosed 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindMemberRef (  
    [in]  mdTypeRef          td,  
    [in]  LPCWSTR            szName,   

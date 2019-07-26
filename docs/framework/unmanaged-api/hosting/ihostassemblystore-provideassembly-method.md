@@ -23,7 +23,7 @@ Gets a reference to an assembly that is not referenced by the [ICLRAssemblyRefer
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProvideAssembly (  
     [in]  AssemblyBindInfo *pBindInfo,  
     [out] UINT64           *pAssemblyId,  

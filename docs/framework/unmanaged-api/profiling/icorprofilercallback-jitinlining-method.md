@@ -23,7 +23,7 @@ Notifies the profiler that the just-in-time (JIT) compiler is about to insert a 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITInlining(  
     [in]  FunctionID callerId,  
     [in]  FunctionID calleeId,  

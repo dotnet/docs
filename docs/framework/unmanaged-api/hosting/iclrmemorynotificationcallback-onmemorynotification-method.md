@@ -23,7 +23,7 @@ Notifies the common language runtime (CLR) of the memory load on the computer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnMemoryNotification (  
     [in] EMemoryAvailable eMemoryAvailable  
 );  

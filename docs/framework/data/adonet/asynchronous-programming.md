@@ -488,7 +488,7 @@ namespace SqlBulkCopyAsyncCodeSample {
          }
       }
 
-      // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchornous calls)
+      // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchronous calls)
       private static async Task MixSyncAsyncSqlBulkCopy() {
          using (OdbcConnection odbcconn = new OdbcConnection(odbcConnectionString)) {
             odbcconn.Open();
@@ -698,7 +698,7 @@ class Class1 {
    }
 
    private static string GetConnectionString() {
-      // To avoid storing the connection string in your code, you can retrive it from a configuration file.
+      // To avoid storing the connection string in your code, you can retrieve it from a configuration file.
       return "Data Source=(local);Integrated Security=SSPI;Initial Catalog=AdventureWorks;MultipleActiveResultSets=True";
    }
 }
@@ -815,7 +815,7 @@ class Program {
    }
 
    private static string GetConnectionString() {
-      // To avoid storing the connection string in your code, you can retrive it from a configuration file.
+      // To avoid storing the connection string in your code, you can retrieve it from a configuration file.
       return "Data Source=(local);Integrated Security=SSPI;Initial Catalog=AdventureWorks;MultipleActiveResultSets=True";
    }
 }

@@ -101,7 +101,7 @@ You can modify this setting in any of three ways:
 
 - Set the `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` environment variable to the desired value.
 
-- Add the following line with the desired value to the `runtimeconfig.json` file:
+- Add the following line with the desired value to the *.runtimeconfig.json* file:
 
    ```json
    "rollForwardOnNoCandidateFx" : 0

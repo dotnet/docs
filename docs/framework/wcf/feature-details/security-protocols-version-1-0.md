@@ -123,7 +123,7 @@ The Web Services Security Protocols provide Web services security mechanisms tha
  WCF supports WSS SAML Token profiles 1.0 and 1.1 for SAML v1.1 tokens. It is possible to implement other versions of SAML token formats.  
   
 ### 1.5 Security Context Token  
- WCF supports the Security Context Token (SCT) introduced in WS-SecureCoversation. SCT is used to represent a security context established in SecureConversation as well as the binary negotiation protocols TLS and SSPI, described below.  
+ WCF supports the Security Context Token (SCT) introduced in WS-SecureConversation. SCT is used to represent a security context established in SecureConversation as well as the binary negotiation protocols TLS and SSPI, described below.  
   
 ## 2. Common Message Security Parameters  
   

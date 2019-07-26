@@ -26,7 +26,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
 ## API Calls Using Declare  
  The most common way to call Windows APIs is by using the `Declare` statement.  
   
-#### To declare a DLL procedure  
+### To declare a DLL procedure  
   
 1. Determine the name of the function you want to call, plus its arguments, argument types, and return value, as well as the name and location of the DLL that contains it.  
   
@@ -63,7 +63,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
 #### Windows API Constants  
  Some arguments are combinations of constants. For example, the `MessageBox` API shown in this walkthrough accepts an integer argument called `Typ` that controls how the message box is displayed. You can determine the numeric value of these constants by examining the `#define` statements in the file WinUser.h. The numeric values are generally shown in hexadecimal, so you may want to use a calculator to add them and convert to decimal. For example, if you want to combine the constants for the exclamation style `MB_ICONEXCLAMATION` 0x00000030 and the Yes/No style `MB_YESNO` 0x00000004, you can add the numbers and get a result of 0x00000034, or 52 decimal. Although you can use the decimal result directly, it is better to declare these values as constants in your application and combine them using the `Or` operator.  
   
-###### To declare constants for Windows API calls  
+##### To declare constants for Windows API calls  
   
 1. Consult the documentation for the Windows function you are calling. Determine the name of the constants it uses and the name of the .h file that contains the numeric values for these constants.  
   
@@ -88,7 +88,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
 #### Data Marshaling  
  Visual Basic automatically converts the data types of parameters and return values for Windows API calls, but you can use the `MarshalAs` attribute to explicitly specify unmanaged data types that an API expects. For more information about interop marshaling, see [Interop Marshaling](../../../framework/interop/interop-marshaling.md).  
   
-###### To use Declare and MarshalAs in an API call  
+##### To use Declare and MarshalAs in an API call  
   
 1. Determine the name of the function you want to call, plus its arguments, data types, and return value.  
   
@@ -105,7 +105,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
   
  You can use `DllImport` with most Windows API calls as long as the call refers to a shared (sometimes called *static*) method. You cannot use methods that require an instance of a class. Unlike `Declare` statements, `DllImport` calls cannot use the `MarshalAs` attribute.  
   
-#### To call a Windows API using the DllImport attribute  
+### To call a Windows API using the DllImport attribute  
   
 1. Open a new Windows Application project by clicking **New** on the **File** menu, and then clicking **Project**. The **New Project** dialog box appears.  
   

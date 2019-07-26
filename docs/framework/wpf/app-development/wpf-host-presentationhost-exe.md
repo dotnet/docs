@@ -17,7 +17,7 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
   
 - Launches the registered [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] handler to host the Windows Presentation Foundation (WPF) content.  
   
-- Loads the right versions of the required [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] and Windows Presentation Foundation (WPF) assemblies.  
+- Loads the right versions of the required common language runtime (CLR) and Windows Presentation Foundation (WPF) assemblies.  
   
 - Ensures the appropriate permission levels for the zone of deployment are in place.  
   
@@ -35,7 +35,7 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
 |-debugSecurityZoneURL \<url>|Used with a [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)] value to indicate to PresentationHost.exe that an application should be debugged as if it were deployed from the specified [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)]. This determines both the deployment zone and the site of origin.|  
 |-embedding|Required by OLE. If the `-event` or `-debug` parameter are specified, it is not necessary to specify the `-embedding` parameter, since that parameter is set internally.|  
 |-event \<eventname>|Open the event with this name and signal it when PresentationHost.exe is initialized and ready to host [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] content. PresentationHost.exe will terminate if there was an error opening the event, such as if it has not already been created.|  
-|-launchApplication \<url>|Launches a standalone [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] application from the specified URL. [!INCLUDE[TLA2#tla_iegeneric](../../../../includes/tla2sharptla-iegeneric-md.md)] and WinINet security policy concerning .NET applications are applied.|  
+|-launchApplication \<url>|Launches a standalone ClickOnce application from the specified URL. [!INCLUDE[TLA2#tla_iegeneric](../../../../includes/tla2sharptla-iegeneric-md.md)] and WinINet security policy concerning .NET applications are applied.|  
   
 ## Scenarios  
   

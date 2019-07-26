@@ -23,7 +23,7 @@ Gets the UTF-8 name of the object referenced by the specified metadata token. Th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNameFromToken (  
    [in] mdToken      tk,  
    [out] MDUTF8CSTR  *pszUtf8NamePtr  

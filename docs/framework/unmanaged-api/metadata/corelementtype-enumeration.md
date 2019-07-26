@@ -23,7 +23,7 @@ Specifies a common language runtime <xref:System.Type>, a type modifier, or info
 
 ## Syntax
 
-```
+```cpp
 typedef enum CorElementType {
     ELEMENT_TYPE_END            = 0x0,
     ELEMENT_TYPE_VOID           = 0x1,

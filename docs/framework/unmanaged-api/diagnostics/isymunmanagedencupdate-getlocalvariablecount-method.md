@@ -23,7 +23,7 @@ Gets the number of local variables.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalVariableCount(  
     [in]  mdMethodDef  mdMethodToken,  
     [out] ULONG        *pcLocals);  

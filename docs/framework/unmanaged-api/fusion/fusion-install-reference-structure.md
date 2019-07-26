@@ -22,7 +22,7 @@ Represents a reference that an application makes to an assembly that the applica
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _FUSION_INSTALL_REFERENCE_ {  
     DWORD    cbSize,  
     DWORD    dwFlags,  

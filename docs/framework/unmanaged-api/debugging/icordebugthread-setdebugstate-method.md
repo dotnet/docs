@@ -23,7 +23,7 @@ Sets flags that describe the debugging state of this ICorDebugThread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetDebugState (  
     [in] CorDebugThreadState state  
 );  

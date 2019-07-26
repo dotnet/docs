@@ -25,7 +25,7 @@ Generates an image in memory for the code base.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GenerateCeeMemoryImage (  
     [out] void    **ppImage  
 );  

@@ -23,7 +23,7 @@ Closes the most recently opened namespace.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseNamespace();  
 ```  
   

@@ -23,7 +23,7 @@ Creates a shallow copy of this [IAssemblyName](../../../../docs/framework/unmana
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (  
     [out] IAssemblyName **pName  
 );  

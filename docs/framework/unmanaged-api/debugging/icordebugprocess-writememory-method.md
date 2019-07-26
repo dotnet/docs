@@ -23,7 +23,7 @@ Writes data to an area of memory in this process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WriteMemory(  
     [in]  CORDB_ADDRESS address,  
     [in]  DWORD size,  

@@ -10,7 +10,7 @@ Gets the symbol records for all the merged assemblies.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMergedAssemblyRecords(  
    [in] ULONG32 cRequestedRecords,  
    [out] ULONG32 *pcFetchedRecords,  

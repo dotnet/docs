@@ -23,7 +23,7 @@ Notifies the host that the common language runtime (CLR) has acquired the specif
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AcquiredVirtualAddressSpace(  
     [in] LPVOID  startAddress,  
     [in] SIZE_T  size  

@@ -23,7 +23,7 @@ Gets the `TypeDef` metadata token that references the definition of this class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetToken (  
     [out] mdTypeDef          *pTypeDef  
 );  

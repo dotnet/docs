@@ -23,7 +23,7 @@ Attempts to enter the critical section represented by the current [IHostCrst](..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT TryEnter (  
     [in]  DWORD  option,  
     [out] BOOL   *pbSucceeded  

@@ -23,7 +23,7 @@ Returns an array of internal frames ([ICorDebugInternalFrame2](../../../../docs/
   
 ## Syntax  
   
-```  
+```cpp 
 HRESULT GetActiveInternalFrames  
       (  
       [in] ULONG32 cInternalFrames,  

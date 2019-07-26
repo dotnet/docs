@@ -24,7 +24,7 @@ Gets a pointer to an `IUnknown` object with the specified `IID` in the assembly 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyIdentityFromFile (  
     [in]  LPCWSTR   pwzFilePath,  
     [in]  REFIID    riid,  

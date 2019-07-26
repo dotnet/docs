@@ -23,7 +23,7 @@ Gets an interface pointer to an [IHostMAlloc](../../../../docs/framework/unmanag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateMalloc (  
     [in]  DWORD         dwMallocType,  
     [out] IHostMalloc **ppMalloc  

@@ -7,7 +7,7 @@ ms.assetid: 76fb27f5-8787-4b6a-bf4c-99b4be1d2e8b
 This sample demonstrates how to implement a custom client issued token provider.  
   
 ## Discussion  
- A token provider in Windows Communication Foundation (WCF) is used to supply credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with a [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:  
+ A token provider in Windows Communication Foundation (WCF) is used to supply credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with a CardSpace token provider. Custom token providers are useful in the following cases:  
   
 - If you have a credential store that the built-in token provider cannot operate with.  
   

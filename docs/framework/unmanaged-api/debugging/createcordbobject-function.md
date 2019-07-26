@@ -24,7 +24,7 @@ Creates a debugger interface ([ICorDebug](../../../../docs/framework/unmanaged-a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CordbCreateObject (  
        [in]  int         iDebuggerVersion,   
        [out] IUnknown**  ppCordb  

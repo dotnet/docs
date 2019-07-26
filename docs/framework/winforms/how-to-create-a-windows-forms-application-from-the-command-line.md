@@ -29,7 +29,7 @@ The following procedures describe the basic steps that you must complete to crea
      [!code-csharp[System.Windows.Forms.BasicForm#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BasicForm/CS/Form1.cs#3)]
      [!code-vb[System.Windows.Forms.BasicForm#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BasicForm/VB/Form1.vb#3)]  
   
-3. Create a default constructor for `Form1`.  
+3. Create a parameterless constructor for `Form1`.  
   
      You will add more code to the constructor in a subsequent procedure.  
   

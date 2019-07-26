@@ -16,7 +16,7 @@ The <xref:System.Windows.Forms.Clipboard> class provides methods that you can us
   
  To determine whether the Clipboard contains data in a particular format, use one of the `Contains`*Format* methods or the <xref:System.Windows.Forms.Clipboard.GetData%2A> method. To retrieve data from the Clipboard, use one of the `Get`*Format* methods or the <xref:System.Windows.Forms.Clipboard.GetData%2A> method. These methods are new in .NET Framework 2.0.  
   
- To access data from the Clipboard by using versions earlier than [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)], use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> method and call the methods of the returned <xref:System.Windows.Forms.IDataObject>. To determine whether a particular format is available in the returned object, for example, call the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A> method.  
+ To access data from the Clipboard by using versions earlier than .NET Framework 2.0, use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displayProperty=nameWithType> method and call the methods of the returned <xref:System.Windows.Forms.IDataObject>. To determine whether a particular format is available in the returned object, for example, call the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A> method.  
   
 > [!NOTE]
 >  All Windows-based applications share the system Clipboard. Therefore, the contents are subject to change when you switch to another application.  
@@ -43,7 +43,7 @@ The <xref:System.Windows.Forms.Clipboard> class provides methods that you can us
   
 ### To retrieve data from the Clipboard in multiple formats  
   
-1. Use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> method. You must use this method to retrieve data from the Clipboard on versions earlier than [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)].  
+1. Use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> method. You must use this method to retrieve data from the Clipboard on versions earlier than .NET Framework 2.0.  
   
      [!code-csharp[System.Windows.Forms.Clipboard#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#4)]
      [!code-vb[System.Windows.Forms.Clipboard#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#4)]  

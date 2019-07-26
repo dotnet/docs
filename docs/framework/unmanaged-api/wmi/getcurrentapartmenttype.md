@@ -24,7 +24,7 @@ Retrieves the type of apartment in which the caller is executing.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentApartmentType (
    [in] int                   vFunc, 
    [in] IComThreadingInfo*    ptr, 

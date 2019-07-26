@@ -54,7 +54,7 @@ The first step is to use `?` annotations on parameters and return types to indic
 Let's examine a common pattern:
 
 ```csharp
-bool TrtGetvalue(int key, out string val)
+bool TryGetvalue(int key, out string val)
 ```
 
 Should the `val` parameter be an `out string?`? Maybe, because you can pass `null` into this method. The input to `val` won't be changed if the `key` wasn't found. It would still be `null`. On the other hand, `val` would never be `null` if the `key` was found.
@@ -84,6 +84,9 @@ Those rules aren't sufficient for much existing code. Many of our APIs have more
 - `MaybeNullWhen`: A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
 - `NotNullWhen`: A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
 - `NotNullIfNotNull`: a string return value is not null when the input string argument is not null.
+
+
+<< Note that these only are checked for callers, not internal to the method>>
 
 In addition, generic types or methods can now use the `notnull` constraint to specify that a type argument cannot be nullable.
 
@@ -116,54 +119,149 @@ private string screenName;
 The preceding example demonstrates what to look for when adding the `AllowNull` attribute on an argument:
 
 1. The general contract for that variable is that it should not be `null`, so you want a non-nullable reference type.
-1. There are scenarios for the input variable to be `null`.
+1. There are scenarios for the input variable to be `null`, though they are not the most common usage.
 
-Most often you'll need this attribute for properties, or `in` `out` and `ref` arguments.
+Most often you'll need this attribute for properties, or `in` `out` and `ref` arguments. The `AllowNull` attribute is the best choice when a variable is typically non-null, but you need to allow `null` as a precondition.
 
-
-Or, a property may have the default value of `null`, but it should never be set to `null`:
+Contrast that with scenarios for using `DisallowNull`: You use this attribute to specify that an input variable of a nullable type should not be `null`. Consider a property where `null` is the default value, but clients can only set it to a non-null value. Consider the following code:
 
 ```csharp
-public string? FindABetterExample
+public string ReviewComment // Comments can be added, but not removed.
 {
-   get;
-   [DisallowNull] set;
+    get { return _comment;}
+    set
+    {
+        if (value == null) throw new ArgumentNullException(nameof(value), "Cannot set to null");
+        _comment = null;
+    }
 }
+string _comment;
 ```
 
-The other situation where these attributes are most useful is when you are using `ref` or `out` parameters. You may want the argument type to be a non-nullable, but the caller may not be required to initialize it:
+The preceding code is the best way to express your design that the `ReviewComment` could be `null`, but cannot be set to `null`. Once this code is nullable aware, you can express this concept more clearly to callers:
 
 ```csharp
-// example
+public string? ReviewComment // Comments can be added, but not removed.
+{
+    get { return _comment;}
+    [DisallowNull] set
+    {
+        if (value == null) throw new ArgumentNullException(nameof(value), "Cannot set to null");
+        _comment = null;
+    }
+}
+string? _comment;
 ```
+
+In a nullable context, the preceding code warns callers that the `ReviewComment` could be `null`, so it must be checked before access. Furthermore, it warns callers that, even though it could be `null`, callers should not explicitly set it to `null`. You should choose to use the `DisallowNull` attribute when you observe these characteristics about:
+
+1. The variable could be `null` in primary scenarios, often when first instantiated.
+1. The variable should not be explicitly set to `null`.
+
+These situations are common in code that was originally *null oblivious*. It may be that object properties are set in two distinct initialization operations. It may be that some properties are set only after some asynchronous work has completed.
+
+The `AllowNull` and `DisallowNull` attributes enable you to specify that preconditions on variables may not match the nullable annotations on those variables. These provide more detail about the characteristics of your API. This additional information helps callers use your API correctly.
+
+## Specify post-conditions: `MaybeNull` and `NotNull`
+
+Suppose you have a method with the following signature:
 
 ```csharp
-// example calling out with variable declaration
+public Customer FindCustomer(string lastName, string firstName)
 ```
 
-## Overriding types on return values
+You'd likely have written a method like this to return `null` when the name sought wasn't found. The `null` clearly indicates that the record wasn't found. In this example, you'd likely change the return type from `Customer` to `Customer?`. Instead, suppose it was a generic method like the following code:
 
-Find examples for return value `MaybeNull`, or `NotNull`.
+```csharp
+public T Find(IEnumerable<T> sequence, Func<T, bool> match)
+```
 
-Properties could be really good here. 
+You want to continue to express that the sequence does not contain `null` values, and the `match` function will not be called with a `null` value. But, if the sought element isn't found, the returned value could be `null`. That's when you add the `MaybeNull` annotation to the method return:
 
-## Conditional constraints on return values
+```csharp
+[return: MaybeNull]
+public T Find(IEnumerable<T> sequence, Func<T, bool> match)
+```
 
-Where `NotNullWhen(bool)` and `MaybeNullWhen(bool)` is discussed.
+The preceding code informs callers that the contract implies a non-nullable type, but the return value *may* actually be null.  Use the `MaybeNull` attribute when your API should be a non-nullable type, typically a generic type parameter, but there may be instances where `null` would be returned.
 
-## Conditional constraints on string return values
+You can also specify that a return, or an `out` or `ref` argument is not null even though the type is a nullable type. Consider a method that ensures an `Array` is large enough to hold a number of elements. If the input argument doesn't have capacity, the routine would allocate a new array and copy all the existing elements into it. If the input argument is `null`, the routine would allocate new storage. If there is sufficient capacity, the routine does nothing:
 
-Consider `NotNullIfNotNull(string)`
+```csharp
+public void EnsureCapacity<T>(ref T[] storage, int size)
+```
 
+You could call this routine as follows:
 
-## Apply constaints to type parameters
+```csharp
+// messages has the default value (null) when EnsureCapacity is called:
+EnsureCapacity<string>(ref messages, 10);
+// messages is not null.
+EnsureCapacity<string>(messages, 50);
+```
 
-Where `notnull` is discussed.  Likely a place to run into where you need `!`
+After enabling null reference types, you want to  ensure that the preceding code compiles without warnings. When the method returns, the `storage` argument is guaranteed to be not null. However, it's acceptable to call `EnsureCapacity` with a null reference. You can make `storage` a nullable reference type, and add the `NotNull` post-condition to the parameter declaration:
 
-## How to target older version
+```csharp
+public void EnsureCapacity<T>([NotNull]ref T[]? storage, int size)
+```
 
-Discuss how to include nullable annotations when targetting an older version of .NET
+The preceding code expresses the existing contract very clearly: Callers can pass a variable with the `null` value, but the return value is guaranteed to never be null. The `NotNull` attribute is most useful for `ref` and `out` arguments where `null` may be passed as an argument, but that argument is guaranteed to be not null when the method returns.
 
+## Specify conditional post-conditions: `NotNullWhen` and `MaybeNullWhen`
 
+You're likely familiar with the `string` method <xref:System.String.IsNullOrEmpty(string)?DisplayProperty=nameWithType>. This method returns `true` when the argument is not null, and not the empty string. Callers should not need to null-check the argument if the method returns `false`. To make a method like this nullable aware, you'd set the argument to a nullable type, and add teh `NotNullWhen` attribute:
+
+```csharp
+bool IsNullOrEmpty([NotNullWhen(false)]string? value);
+```
+
+That informs the compiler that any code where the return value is `false` need not be checked:
+
+```csharp
+string? userInput = GetUserInput();
+if (!(string.IsNullOrEmpty(userInput))
+{
+   int messageLength = userInput.Length; // no null check needed.
+}
+// null check needed on userInput here.
+```
+
+The <xref:System.String.IsNullOrEmpty(string)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that checks the state of objects for null values. The compiler won't recognize those, and you'll need to add the annotations yourself.
+
+Another use for these attributes is the Try* pattern. The postconditions for `ref` and `out` variables are communicated through the return value. Consider this method shown earlier:
+
+```csharp
+bool TryGetvalue(int key, out string val)
+```
+
+The preceding method follows a typical .NET idiom: the return value indicates if `val` was set or not. If the method returns `true`, the value is not null, `false`, and the method did not set `val`.
+
+You can communicate that idiom using the `NotNullWhen` attribute. When you update the signature for nullable reference types, make `val` and `string?` and add an attribute:
+
+```csharp
+bool TryGetvalue(int key, [NotNullWhen(true)out string? val)
+```
+
+In the preceding example, the value of `val` is known to be not null when `TryGetValue` returns true.  You should annotate similar methods in your codebase in the same way: the arguments could be `null`, and are known to be not null when the method returns `true`.
+
+There's one final attribute you may also need. Some methods manipulate string arguments. These methods will return a non-null string whenever the argument is not null. To correctly annotate these methods, you use the `NotNullIfNotNull` attribute. Consider the following method:
+
+```csharp
+string GetTopLevelDomainFromFullUrl(string url);
+```
+
+If the `url` argument is not null, the output is not `null`. You would annotate this method as the following code:
+
+```csharp
+[return: NotNullWhenNotNull("url")]
+string? GetTopLevelDomainFromFullUrl(string? url);
+```
+
+The return value and the argument have both been annotated with the `?` indicating that either could be `null`. The attribute further clarifies that the return value will not be null when the `url` argument is not `null`.
+
+## Generic definitions and nullability
+
+Correctly communicating the null state of generic types and generic methods requires special care. This stems from the fact that a nullable value type and a nullable reference type are quite different.
 
 ## Conclusions

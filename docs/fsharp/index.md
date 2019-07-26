@@ -14,13 +14,13 @@ The F# guide provides many resources to learn the F# language.
 
 [Tour of F#](tour.md) gives an overview of major language features with lots of code samples. This is recommended if you are interested in seeing core F# features in action.
 
-[Get started with F# in Visual Studio](get-started/get-started-visual-studio.md) if you're on Windows and want the full Visual Studio IDE (Integrated Development Environment) experience.
+[Get started with F# in Visual Studio](./get-started/get-started-visual-studio.md) if you're on Windows and want the full Visual Studio IDE (Integrated Development Environment) experience.
 
-[Get started with F# in Visual Studio for Mac](get-started/get-started-with-visual-studio-for-mac.md) if you're on macOS and want to use a Visual Studio IDE.
+[Get started with F# in Visual Studio for Mac](./get-started/get-started-with-visual-studio-for-mac.md) if you're on macOS and want to use a Visual Studio IDE.
 
-[Get Started with F# in Visual Studio Code](get-started/get-started-vscode.md) if you want a lightweight, cross-platform, and feature-packed IDE experience.
+[Get Started with F# in Visual Studio Code](./get-started/get-started-vscode.md) if you want a lightweight, cross-platform, and feature-packed IDE experience.
 
-[Get started with F# with the .NET Core CLI](get-started/get-started-command-line.md) if you want to use command-line tools.
+[Get started with F# with the .NET Core CLI](./get-started/get-started-command-line.md) if you want to use command-line tools.
 
 [Get started with F# and Xamarin](https://docs.microsoft.com/xamarin/cross-platform/platform/fsharp/) for mobile programming with F#.
 
@@ -28,7 +28,7 @@ The F# guide provides many resources to learn the F# language.
 
 ## References
 
-[F# Language Reference](language-reference/index.md) is the official, comprehensive reference for all F# language features. Each article explains the syntax and shows code samples. You can use the filter bar in the table of contents to find specific articles.
+[F# Language Reference](./language-reference/index.md) is the official, comprehensive reference for all F# language features. Each article explains the syntax and shows code samples. You can use the filter bar in the table of contents to find specific articles.
 
 [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference) is the API reference for the F# Core Library.
 

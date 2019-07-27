@@ -60,7 +60,7 @@ This tutorial explains how to create a localized application by using the LocBam
 ## Create the Neutral Language Resources Satellite Assembly  
  After the application is configured to generate a neutral language resources satellite assembly, you build the application. This generates the main application assembly, as well as the neutral language resources satellite assembly that is required by LocBaml for localization. To build the application:  
   
-1. Compile HelloApp to create a [!INCLUDE[TLA#tla_dll](../../../../includes/tlasharptla-dll-md.md)]:  
+1. Compile HelloApp to create a dynamic-link library (DLL):  
   
      **msbuild helloapp.csproj**  
   

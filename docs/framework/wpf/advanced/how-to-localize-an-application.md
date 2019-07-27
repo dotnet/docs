@@ -85,7 +85,7 @@ This tutorial explains how to create a localized application by using the LocBam
   
 4. The options that you can specify when you run LocBaml are as follows:  
   
-    - **parse** or **-p:** Parses Baml, resources, or [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] files to generate a .csv or .txt file.  
+    - **parse** or **-p:** Parses Baml, resources, or DLL files to generate a .csv or .txt file.  
   
     - **generate** or **-g:** Generates a localized binary file by using a translated file.  
   

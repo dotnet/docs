@@ -36,15 +36,15 @@ The internal architecture of [!INCLUDE[TLA2#tla_winclient](../../../../includes/
   
 - **Multitexture Support** Multitexture support refers to the ability to apply two or more distinct textures during a blending operation on a 3D graphics object. The degree of multitexture support is determined by the number of multitexture units on the graphics hardware.  
   
- The pixel shader, vertex shader, and multitexture features are used to define specific [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version levels, which, in turn, are used to define the different rendering tiers in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
+ The pixel shader, vertex shader, and multitexture features are used to define specific DirectX version levels, which, in turn, are used to define the different rendering tiers in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
  The features of the graphics hardware determine the rendering capability of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] system defines three rendering tiers:  
   
-- **Rendering Tier 0** No graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is less than version 7.0.  
+- **Rendering Tier 0** No graphics hardware acceleration. The DirectX version level is less than version 7.0.  
   
-- **Rendering Tier 1** Partial graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 7.0, and **lesser** than version 9.0.  
+- **Rendering Tier 1** Partial graphics hardware acceleration. The DirectX version level is greater than or equal to version 7.0, and **lesser** than version 9.0.  
   
-- **Rendering Tier 2** Most graphics features use graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 9.0.  
+- **Rendering Tier 2** Most graphics features use graphics hardware acceleration. The DirectX version level is greater than or equal to version 9.0.  
   
  For more information on [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering tiers, see [Graphics Rendering Tiers](graphics-rendering-tiers.md).  
   

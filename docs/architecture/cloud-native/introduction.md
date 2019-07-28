@@ -2,7 +2,7 @@
 title: Introduction to Cloud-Native .NET Applications
 description: Architecting Cloud-Native .NET Apps for Azure | Introduction to Cloud-Native .NET Applications
 author: robvet
-ms.date: 07/20/2019
+ms.date: 07/28/2019
 ---
 # Introduction to Cloud-Native .NET Applications
 
@@ -18,7 +18,7 @@ Unlike the constant hype that drives our industry, cloud native is “*for-real.
 
 This organization serves as the home for many of the fastest-growing open source projects in GitHub, including [Kubernetes](https://kubernetes.io/), [Prometheus](https://prometheus.io/), [Helm](https://helm.sh/), [Envoy](https://www.envoyproxy.io/), and [gRPC](https://grpc.io/).
 
-The CNCF fosters an ecosystem of open source and vendor-neutrality. Following that lead, we present principles, patterns, and best practices that are technology agnostic. At the same time, we want to raise your awareness of services and infrastructure available in the Microsoft Azure cloud for constructing cloud-native systems. 
+The CNCF fosters an ecosystem of open source and vendor-neutrality. Following that lead, we present cloud-native principles, patterns, and best practices that are technology agnostic. At the same time, we want to raise your awareness of the services and infrastructure available in the Microsoft Azure cloud for constructing cloud-native systems. 
 
 So, what exactly *is* Cloud Native? Sit back, relax, and let us help you explore this new world and how it ties to the Azure cloud.
 

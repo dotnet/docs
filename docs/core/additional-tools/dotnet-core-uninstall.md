@@ -8,27 +8,36 @@ ms.date: 07/25/2019
 
 The [.NET Core Uninstall Tool (`dotnet-core-uninstall`)](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) is a guided tool provided to enable the controlled clean-up of a system such that only the desired versions of .NET Core SDKs and Runtimes remain. A collection of options is available to facilitate the aggregation of uninstallations.
 
-The tool currently supports Windows and macOS. The Linux operating systems are not supported because .NET Core installations and clean-up are well managed by package managers.
+The tool supports Windows and macOS. Linux is currently not supported.
 
 Note that the Windows version of this tool can only uninstall .NET Core SDKs and Runtimes that were installed using .NET Core SDK or Runtime installers.
 
-## Installing
+## How to use the tool
+
+1. Download and install the tool.
+2. Display installed .NET Core SDKs and Runtimes that can be removed by this tool.
+3. Make sure that the tool gets elevated and uninstall .NET Core SDKs and Runtimes.
+4. Uninstall the tool.
+
+Read the following sections for details.
+
+### Installing
 
 You can download the .NET Core Uninstall Tool from [https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) and put the single executable (`dotnet-core-uninstall.exe`) in a directory.
 
-__Note__: Be aware that, since the tool requires elevation, it should be installed in a write-protected directory (e.g., `C:\Program Files` on Windows and `/usr/local/bin` on macOS).
+__Note__: The tool requires elevation to uninstall .NET Core SDKs and Runtimes. Therefore, it should be installed in a write-protected directory such as `C:\Program Files` on Windows and `/usr/local/bin` on macOS. See also [Elevated access for dotnet commands](https://docs.microsoft.com/en-us/dotnet/core/tools/elevated-access).
 
-## Display installed .NET Core SDKs and Runtimes
+### Displaying installed .NET Core SDKs and Runtimes
 
 `dotnet-core-uninstall list` lists installed .NET Core SDKs and Runtimes that can be removed with this tool.
 
-### Synopsis
+#### Synopsis
 
 ```
 dotnet-core-uninstall list [options]
 ```
 
-### Options
+#### Options
 
 # [Windows](#tab/windows)
 
@@ -84,7 +93,7 @@ dotnet-core-uninstall list [options]
   
 ---
 
-### Examples
+#### Examples
 
 * List all .NET Core SDKs and Runtimes that can be removed with this tool:
 
@@ -104,27 +113,27 @@ dotnet-core-uninstall list [options]
   dotnet-core-uninstall list --sdk --x86
   ```
 
-## Uninstalling .NET Core SDKs and Runtimes
+### Uninstalling .NET Core SDKs and Runtimes
 
 `dotnet-core-uninstall` uses a collection of options to aggregate uninstallations, as shown below.
 
 Since this is a destructive tool, the default behavior of a command execution is a dry run; the tool displays the .NET Core SDKs and Runtimes to be uninstalled. To actually uninstall the items, re-run the command with the `--do-it` option.
 
-Since the tool requires elevation to uninstall .NET Core SDKs and Runtimes, it should be run with elevated access. On Windows, run the tool in a command prompt with administrator privileges. On macOS, add `sudo` before the command.
+The tool requires elevation to uninstall .NET Core SDKs and Runtimes. Run the tool in an Administrator command prompt on Windows and with `sudo` on macOS.
 
-### Synopsis
+#### Synopsis
 
 ```
 dotnet-core-uninstall [options] [<VERSION>...]
 ```
 
-### Arguments
+#### Arguments
 
 `VERSION`
 
-The specified version to uninstall.
+A specified version to uninstall.
 
-### Options
+#### Options
 
 # [Windows](#tab/windows)
 
@@ -270,7 +279,7 @@ Note:
 
 ---
 
-### Examples
+#### Examples
 
 * Dry run of uninstalling all .NET Core SDKs that can be removed by this tool:
 
@@ -295,3 +304,7 @@ Note:
   ```
   dotnet-core-uninstall --major-minor 1.1 --do-it
   ```
+
+### Uninstalling the tool
+
+Remove the downloaded single executable `dotnet-core-uninstall.exe` from the directory where it was installed.

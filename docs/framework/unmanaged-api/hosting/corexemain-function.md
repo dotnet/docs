@@ -25,7 +25,7 @@ Initializes the common language runtime (CLR), locates the managed entry point i
   
 ## Syntax  
   
-```  
+```cpp  
 __int32 STDMETHODCALLTYPE _CorExeMain ();  
 ```  
   

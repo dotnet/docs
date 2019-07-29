@@ -22,7 +22,7 @@ Prepares objects implementing the [IALink Interface](../../../../docs/framework/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Init(  
     IMetaDataDispenserEx* pDispenser,  
     IMetaDataError* pErrorHandler  

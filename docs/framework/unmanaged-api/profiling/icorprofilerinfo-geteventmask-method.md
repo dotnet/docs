@@ -23,7 +23,7 @@ Gets the current event categories for which the profiler wants to receive event 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEventMask(  
     [out] DWORD *pdwEvents);  
 ```  

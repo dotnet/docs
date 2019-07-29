@@ -24,7 +24,7 @@ Translates an HRESULT value to an appropriate error message for the specified cu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadStringRCEx (  
     [in]  LCID    lcid,   
     [in]  UINT    iResouceID,   

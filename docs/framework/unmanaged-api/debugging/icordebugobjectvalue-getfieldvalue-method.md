@@ -23,7 +23,7 @@ Gets the value of the specified field of the specified class for this object val
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFieldValue (  
     [in]  ICorDebugClass     *pClass,  
     [in]  mdFieldDef         fieldDef,  

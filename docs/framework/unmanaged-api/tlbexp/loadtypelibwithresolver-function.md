@@ -22,7 +22,7 @@ Loads a type library and uses the supplied [ITypeLibResolver interface](../../..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadTypeLibWithResolver(  
     [in]  LPCOLESTR           szFile,  
     [in]  REGKIND             regkind,  

@@ -23,7 +23,7 @@ Notifies the profiler that a function that has been just-in-time (JIT)-compiled 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITFunctionPitched(  
     [in] FunctionID functionId);  
 ```  

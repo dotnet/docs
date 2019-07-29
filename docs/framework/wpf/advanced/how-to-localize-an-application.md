@@ -60,7 +60,7 @@ This tutorial explains how to create a localized application by using the LocBam
 ## Create the Neutral Language Resources Satellite Assembly  
  After the application is configured to generate a neutral language resources satellite assembly, you build the application. This generates the main application assembly, as well as the neutral language resources satellite assembly that is required by LocBaml for localization. To build the application:  
   
-1. Compile HelloApp to create a [!INCLUDE[TLA#tla_dll](../../../../includes/tlasharptla-dll-md.md)]:  
+1. Compile HelloApp to create a dynamic-link library (DLL):  
   
      **msbuild helloapp.csproj**  
   
@@ -85,7 +85,7 @@ This tutorial explains how to create a localized application by using the LocBam
   
 4. The options that you can specify when you run LocBaml are as follows:  
   
-    - **parse** or **-p:** Parses Baml, resources, or [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] files to generate a .csv or .txt file.  
+    - **parse** or **-p:** Parses Baml, resources, or DLL files to generate a .csv or .txt file.  
   
     - **generate** or **-g:** Generates a localized binary file by using a translated file.  
   
@@ -193,7 +193,7 @@ This tutorial explains how to create a localized application by using the LocBam
 <a name="Some_Tips_for_Using_LocBaml"></a>   
 ## Some Tips for Using LocBaml  
   
-- All dependent assemblies that define custom controls must be copied into the local directory of LocBaml or installed into the GAC. This is necessary because the localization API must have access to the dependent assemblies when it reads the [!INCLUDE[TLA#tla_baml](../../../../includes/tlasharptla-baml-md.md)].  
+- All dependent assemblies that define custom controls must be copied into the local directory of LocBaml or installed into the GAC. This is necessary because the localization API must have access to the dependent assemblies when it reads the binary XAML (BAML).  
   
 - If the main assembly is signed, the generated resource DLL must also be signed in order for it to be loaded.  
   

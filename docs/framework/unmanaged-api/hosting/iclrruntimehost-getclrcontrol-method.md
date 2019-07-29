@@ -23,7 +23,7 @@ Gets an interface pointer of type [ICLRControl Interface](../../../../docs/frame
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCLRControl(  
     [out] ICLRControl** pCLRControl  
 );  

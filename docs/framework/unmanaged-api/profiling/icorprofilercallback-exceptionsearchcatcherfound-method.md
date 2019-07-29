@@ -23,7 +23,7 @@ Notifies the profiler that the search phase of exception handling has located a 
   
 ## Syntax  
   
-```  
+```cpp  
 RESULT ExceptionSearchCatcherFound(  
     [in] FunctionID functionId);  
 ```  

@@ -23,7 +23,7 @@ Sets or updates the specified feature of an event defined by a prior call to [IM
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetEventProps (  
     [in]  mdEvent     ev,   
     [in]  DWORD       dwEventFlags,   

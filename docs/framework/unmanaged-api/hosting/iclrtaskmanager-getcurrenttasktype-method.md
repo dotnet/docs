@@ -23,7 +23,7 @@ Gets the type of the task that is currently executing.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentTaskType(  
     [out] ETaskType *pTaskType  
 );  

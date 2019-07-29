@@ -24,7 +24,7 @@ Gets a pointer to an [IInstallReferenceEnum](../../../../docs/framework/unmanage
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateInstallReferenceEnum (  
     [out] IInstallReferenceEnum **ppRefEnum,  
     [in]  IAssemblyName         *pName,  

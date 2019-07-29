@@ -24,7 +24,7 @@ Begins an enumeration of the methods available for the object.
     
 ## Syntax  
   
-``` 
+```cpp 
 HRESULT BeginMethodEnumeration (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr, 

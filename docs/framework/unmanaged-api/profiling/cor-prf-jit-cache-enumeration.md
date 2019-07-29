@@ -25,7 +25,7 @@ Indicates the result of a cached function search.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_CACHED_FUNCTION_FOUND,  
     COR_PRF_CACHED_FUNCTION_NOT_FOUND  

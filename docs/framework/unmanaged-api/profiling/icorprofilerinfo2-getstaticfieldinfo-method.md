@@ -23,7 +23,7 @@ Gets a value that indicates the kind of static that applies to the specified fie
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStaticFieldInfo (  
     [in] ClassID               classId,  
     [in] mdFieldDef            fieldToken,  

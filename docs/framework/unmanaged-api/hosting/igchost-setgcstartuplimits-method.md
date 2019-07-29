@@ -26,7 +26,7 @@ Sets the segment size and the maximum size for generation 0.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCStartupLimits (  
     [in] DWORD SegmentSize,  
     [in] DWORD MaxGen0Size  

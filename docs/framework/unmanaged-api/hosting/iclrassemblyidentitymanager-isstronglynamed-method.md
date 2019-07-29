@@ -23,7 +23,7 @@ Gets a value that indicates whether the specified assembly is strongly named.
   
 ## Syntax  
   
-```  
+```cpp  
 RESULT IsStronglyNamed (  
     [in]  LPCWSTR  pwzAssemblyIdentity,  
     [out] BOOL    *pbIsStronglyNamed  

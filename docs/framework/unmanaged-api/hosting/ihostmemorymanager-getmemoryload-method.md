@@ -23,7 +23,7 @@ Gets the amount of physical memory that is currently in use, and therefore unava
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMemoryLoad (  
     [out] DWORD*  pMemoryLoad,   
     [out] SIZE_T  *pAvailableBytes  

@@ -24,7 +24,7 @@ Assigns the supplied impersonation token to the current thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ResetSecurity (
    [in] HANDLE token
 ); 

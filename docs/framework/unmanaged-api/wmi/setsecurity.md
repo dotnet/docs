@@ -25,7 +25,7 @@ Retrieves the impersonation token associated with the current thread.
 
 ## Syntax
 
-```
+```cpp
 HRESULT SetSecurity (
    [out] boolean* pNeedToReset, 
    [out] HANDLE* pCurrentThreadToken

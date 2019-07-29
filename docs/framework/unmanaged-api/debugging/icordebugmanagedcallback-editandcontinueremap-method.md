@@ -23,7 +23,7 @@ This method has been deprecated. It notifies the debugger that a remap event has
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EditAndContinueRemap (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread *pThread,  

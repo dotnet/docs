@@ -23,7 +23,7 @@ Gets a token that represents a public key. A strong name token is the shortened 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameTokenFromPublicKey (   
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  

@@ -22,7 +22,7 @@ Represents stack frame information from an exception object.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct CorDebugExceptionObjectStackFrame {  
     ICorDebugModule* pModule;  
     CORDB_ADDRESS ip;  

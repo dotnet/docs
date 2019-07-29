@@ -23,7 +23,7 @@ Notifies the profiler that the runtime has completed suspension of all runtime t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeSuspendFinished();  
 ```  
   

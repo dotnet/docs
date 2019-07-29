@@ -23,7 +23,7 @@ Gets the unique identifier for this [ICorPublishAppDomain](../../../../docs/fram
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetID (  
     [out] ULONG32   *puId  
 );  

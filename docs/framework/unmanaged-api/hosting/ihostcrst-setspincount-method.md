@@ -23,7 +23,7 @@ Sets the spin count for the current [IHostCrst](../../../../docs/framework/unman
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSpinCount (  
     [in] DWORD dwSpinCount  
 );  

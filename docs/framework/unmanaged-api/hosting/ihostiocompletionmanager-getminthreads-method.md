@@ -23,7 +23,7 @@ Gets the minimum number of threads that the host provides for processing I/O req
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMinThreads (  
     [out] DWORD *pdwMinIOCompletionThreads  
 );  

@@ -23,7 +23,7 @@ Returns the stack address of the internal frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFrameAddress([out] CORDB_ADDRESS *pAddress);  
 ```  
   

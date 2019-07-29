@@ -22,7 +22,7 @@ Contains values that describe a portable executable (PE) file, as returned from 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorPEKind {  
   
     peNot           = 0x00000000,  

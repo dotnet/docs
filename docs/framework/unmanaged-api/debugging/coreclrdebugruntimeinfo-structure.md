@@ -24,7 +24,7 @@ Represents a common language runtime (CLR) instance that is loaded in a process 
   
 ## Syntax  
   
-```  
+```cpp  
 struct  CoreClrDebugRuntimeInfo {  
     DWORD m_dwInternalID;  
 };  

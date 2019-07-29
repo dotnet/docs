@@ -23,7 +23,7 @@ Gets the current compiler flag settings that the common language runtime (CLR) u
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDesiredNGENCompilerFlags (  
     [out] DWORD   *pdwFlags  
 );  

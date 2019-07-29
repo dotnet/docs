@@ -23,7 +23,7 @@ Notifies the debugger when a process has been attached or started for the first 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateProcess (  
     [in] ICorDebugProcess *pProcess  
 );  

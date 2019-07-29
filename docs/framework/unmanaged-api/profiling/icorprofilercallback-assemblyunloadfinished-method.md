@@ -23,7 +23,7 @@ Notifies the profiler that an assembly has been unloaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AssemblyUnloadFinished(  
     [in] AssemblyID assemblyId,  
     [in] HRESULT    hrStatus);  

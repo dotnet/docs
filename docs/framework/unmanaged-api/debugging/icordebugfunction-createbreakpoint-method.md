@@ -23,7 +23,7 @@ Creates a breakpoint at the beginning of this function.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateBreakpoint (  
     [out] ICorDebugFunctionBreakpoint **ppBreakpoint  
 );  

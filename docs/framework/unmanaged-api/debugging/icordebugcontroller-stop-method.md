@@ -23,7 +23,7 @@ Performs a cooperative stop on all threads that are running managed code in the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Stop (  
     [in] DWORD dwTimeoutIgnored  
 );  

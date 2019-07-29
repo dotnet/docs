@@ -23,7 +23,7 @@ Creates a set of security permissions to attach to the object referenced by the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineSecurityAttributeSet (   
     [in]  mdToken       tkObj,   
     [in]  COR_SECATTR   rSecAttrs[],   

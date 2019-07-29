@@ -23,7 +23,7 @@ Notifies the profiler that a module has finished unloading.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleUnloadFinished(  
     [in] ModuleID moduleId,  
     [in] HRESULT  hrStatus);  

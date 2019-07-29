@@ -202,19 +202,19 @@ Two parties (Alice and Bob) could use a hash function to ensure message integrit
 
 - Alice sends the plaintext message and the hashed message (digital signature) to Bob. Bob receives and hashes the message and compares his hash value to the hash value that he received from Alice. If the hash values are identical, the message was not altered. If the values are not identical, the message was altered after Alice wrote it.
 
-    Unfortunately, this method does not establish the authenticity of the sender. Anyone can impersonate Alice and send a message to Bob. They can use the same hash algorithm to sign their message, and all Bob can determine is that the message matches its signature. This is one form of a man-in-the-middle attack. For more information, see [Cryptography Next Generation (CNG) Secure Communication Example](https://docs.microsoft.com/previous-versions/cc488018(v=vs.100)).
+  Unfortunately, this method does not establish the authenticity of the sender. Anyone can impersonate Alice and send a message to Bob. They can use the same hash algorithm to sign their message, and all Bob can determine is that the message matches its signature. This is one form of a man-in-the-middle attack. For more information, see [Cryptography Next Generation (CNG) Secure Communication Example](https://docs.microsoft.com/previous-versions/cc488018(v=vs.100)).
 
 - Alice sends the plaintext message to Bob over a nonsecure public channel. She sends the hashed message to Bob over a secure private channel. Bob receives the plaintext message, hashes it, and compares the hash to the privately exchanged hash. If the hashes match, Bob knows two things:
 
-    - The message was not altered.
+  - The message was not altered.
 
-    - The sender of the message (Alice) is authentic.
+  - The sender of the message (Alice) is authentic.
 
-    For this system to work, Alice must hide her original hash value from all parties except Bob.
+  For this system to work, Alice must hide her original hash value from all parties except Bob.
 
 - Alice sends the plaintext message to Bob over a nonsecure public channel and places the hashed message on her publicly viewable Web site.
 
-    This method prevents message tampering by preventing anyone from modifying the hash value. Although the message and its hash can be read by anyone, the hash value can be changed only by Alice. An attacker who wants to impersonate Alice would require access to Alice's Web site.
+  This method prevents message tampering by preventing anyone from modifying the hash value. Although the message and its hash can be read by anyone, the hash value can be changed only by Alice. An attacker who wants to impersonate Alice would require access to Alice's Web site.
 
 None of the previous methods will prevent someone from reading Alice's messages, because they are transmitted in plaintext. Full security typically requires digital signatures (message signing) and encryption.
 

@@ -23,7 +23,7 @@ Gets a pointer to the TypeRef token for the <xref:System.Type> reference that is
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindTypeRef (  
    [in] mdToken        tkResolutionScope,  
    [in]  LPCWSTR       szName,  

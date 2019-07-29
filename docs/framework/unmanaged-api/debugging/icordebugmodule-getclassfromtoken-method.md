@@ -23,7 +23,7 @@ Gets the class specified by the metadata token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassFromToken(  
     [in]  mdTypeDef        typeDef,  
     [out] ICorDebugClass **ppClass  

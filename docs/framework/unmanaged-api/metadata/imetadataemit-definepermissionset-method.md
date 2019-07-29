@@ -23,7 +23,7 @@ Creates a definition for a permission set with the specified metadata signature,
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefinePermissionSet (  
     [in]  mdToken        tk,   
     [in]  DWORD          dwAction,   

@@ -23,7 +23,7 @@ Advances the enumerator's cursor from its current position so that the specified
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip([in] ULONG celt);  
 ```  
   

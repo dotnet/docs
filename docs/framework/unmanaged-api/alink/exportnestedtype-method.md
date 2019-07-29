@@ -23,7 +23,7 @@ Specifies nested types as exportable. The [ExportType Method](../../../../docs/f
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExportNestedType(  
     mdAssembly      AssemblyID,  
     mdToken         FileToken,  

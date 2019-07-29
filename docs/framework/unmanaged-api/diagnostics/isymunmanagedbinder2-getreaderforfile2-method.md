@@ -25,7 +25,7 @@ Given a metadata interface and a file name, returns the correct [ISymUnmanagedRe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReaderForFile2(  
     [in]  IUnknown     *importer,  
     [in]  const WCHAR  *fileName,  

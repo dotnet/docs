@@ -23,7 +23,7 @@ Sets the value of the property referenced by the specified property identifier.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetProperty (  
     [in] DWORD  PropertyId,  
     [in] LPVOID pvProperty,  

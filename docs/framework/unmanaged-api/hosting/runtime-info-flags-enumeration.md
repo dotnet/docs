@@ -22,7 +22,7 @@ Contains values that indicate what information about the common language runtime
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
   
     RUNTIME_INFO_UPGRADE_VERSION             = 0x01,  

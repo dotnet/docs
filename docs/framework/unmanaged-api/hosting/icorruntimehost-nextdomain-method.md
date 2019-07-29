@@ -23,7 +23,7 @@ Gets an interface pointer to the next domain in the enumeration.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NextDomain (  
     [in] HCORENUM hEnum,  
     [out] void** pAppDomain  

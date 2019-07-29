@@ -23,7 +23,7 @@ Gets the checksum.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCheckSum(  
     [in]  ULONG32  cData,  
     [out] ULONG32  *pcData,  

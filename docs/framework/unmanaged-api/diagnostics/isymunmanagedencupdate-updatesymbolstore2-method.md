@@ -23,7 +23,7 @@ Allows a compiler to omit functions that have not been modified from the program
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateSymbolStore2(  
     [in]  IStream      *pIStream,  
     [in]  SYMLINEDELTA* pDeltaLines,  

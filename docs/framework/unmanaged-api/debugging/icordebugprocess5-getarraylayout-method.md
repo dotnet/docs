@@ -23,7 +23,7 @@ Provides information about the layout of array types.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArrayLayout(    [in] COR_TYPEID id,     [out] COR_ARRAY_LAYOUT *pLayout);  
 ```  
   

@@ -22,7 +22,7 @@ Provides interfaces for managing applications that are being executed by the com
   
 ## Syntax  
   
-```  
+```cpp  
 coclass CorRuntimeHost {  
     [default] interface ICorRuntimeHost;  
     interface IGCHost;  

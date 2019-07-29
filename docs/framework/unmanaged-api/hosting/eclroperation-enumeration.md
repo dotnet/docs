@@ -22,7 +22,7 @@ Describes the set of operations for which a host can apply policy actions.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     OPR_ThreadAbort,  
     OPR_ThreadRudeAbortInNonCriticalRegion,  

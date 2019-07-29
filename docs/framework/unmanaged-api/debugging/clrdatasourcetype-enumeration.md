@@ -24,7 +24,7 @@ Provides values that are used by the CLRDATA_IL_ADDRESS_MAP structure.
 
 ## Syntax
 
-```
+```cpp
 typedef enum
 {
     CLRDATA_SOURCE_TYPE_INVALID        = 0x00, // To indicate that nothing else applies

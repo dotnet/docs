@@ -24,7 +24,7 @@ Retrieves error information from the previous function call.
   
 ## Syntax  
   
-```  
+```cpp  
 IErrorInfo* GetErrorInfo(); 
 ```  
 

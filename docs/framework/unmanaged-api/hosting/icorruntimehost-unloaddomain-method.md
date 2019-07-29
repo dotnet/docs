@@ -23,7 +23,7 @@ Unloads the specified application domain from the current process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadDomain (  
     [in] IUnknown* pAppDomain  
 );  

@@ -23,7 +23,7 @@ This method has not been implemented.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObject(  
     [out] ICorDebugValue **ppObject  
 );  

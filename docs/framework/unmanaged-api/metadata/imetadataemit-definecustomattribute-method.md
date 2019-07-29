@@ -23,7 +23,7 @@ Creates a definition for a custom attribute with the specified metadata signatur
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineCustomAttribute (   
     [in]  mdToken     tkObj,   
     [in]  mdToken     tkType,   

@@ -23,7 +23,7 @@ Provides information about the fields that belong to a type.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeFields(  
     [in] COR_TYPEID id,  
     [in] ULONG32 celt,  

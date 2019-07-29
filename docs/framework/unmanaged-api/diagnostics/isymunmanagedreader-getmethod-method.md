@@ -23,7 +23,7 @@ Gets a symbol reader method, given a method token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethod (  
     [in]  mdMethodDef  token,  
     [out, retval] ISymUnmanagedMethod**  pRetVal);  

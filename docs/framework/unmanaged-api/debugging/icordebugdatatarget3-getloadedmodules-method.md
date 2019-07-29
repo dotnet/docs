@@ -10,7 +10,7 @@ Gets a list of the modules that have been loaded so far.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLoadedModules(  
    [in] ULONG32 cRequestedModules,  
    [out] ULONG32 *pcFetchedModules,  

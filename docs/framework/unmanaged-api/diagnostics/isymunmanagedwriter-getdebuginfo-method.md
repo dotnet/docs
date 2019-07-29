@@ -25,7 +25,7 @@ Returns the information necessary for a compiler to write the debug directory en
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDebugInfo(  
     [in, out] IMAGE_DEBUG_DIRECTORY *pIDD,  
     [in]  DWORD cData,  

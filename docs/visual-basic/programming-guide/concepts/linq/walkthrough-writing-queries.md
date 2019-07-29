@@ -11,11 +11,11 @@ ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
 # Walkthrough: Writing Queries in Visual Basic
 This walkthrough demonstrates how you can use Visual Basic language features to write [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] query expressions. The walkthrough demonstrates how to create queries on a list of Student objects, how to run the queries, and how to modify them. The queries incorporate several features including object initializers, local type inference, and anonymous types.  
   
- After completing this walkthrough, you will be ready to move on to the samples and documentation for the specific [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] provider you are interested in. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] providers include [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)], [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)], and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
+ After completing this walkthrough, you will be ready to move on to the samples and documentation for the specific [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] provider you are interested in. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] providers include [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)], LINQ to DataSet, and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
   
 ## Create a Project  
   
-#### To create a console application project  
+### To create a console application project  
   
 1. Start Visual Studio.  
   
@@ -32,21 +32,21 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
 ## Add an In-Memory Data Source  
  The data source for the queries in this walkthrough is a list of `Student` objects. Each `Student` object contains a first name, a last name, a class year, and an academic rank in the student body.  
   
-#### To add the data source  
+### To add the data source  
   
 - Define a `Student` class, and create a list of instances of the class.  
   
     > [!IMPORTANT]
     >  The code needed to define the `Student` class and create the list used in the walkthrough examples is provided in [How to: Create a List of Items](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md). You can copy it from there and paste it into your project. The new code replaces the code that appeared when you created the project.  
   
-#### To add a new student to the students list  
+### To add a new student to the students list  
   
 - Follow the pattern in the `getStudents` method to add another instance of the `Student` class to the list. Adding the student will introduce you to object initializers. For more information, see [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md).  
   
 ## Create a Query  
  When executed, the query added in this section produces a list of the students whose academic rank puts them in the top ten. Because the query selects the complete `Student` object each time, the type of the query result is `IEnumerable(Of Student)`. However, the type of the query typically is not specified in query definitions. Instead, the compiler uses local type inference to determine the type. For more information, see [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md). The query's range variable, `currentStudent`, serves as a reference to each `Student` instance in the source, `students`, providing access to the properties of each object in `students`.  
   
-#### To create a simple query  
+### To create a simple query  
   
 1. Find the place in the `Main` method of the project that is marked as follows:  
   
@@ -61,7 +61,7 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
 ## Run the Query  
  The variable `studentQuery` contains the definition of the query, not the results of running the query. A typical mechanism for running a query is a `For Each` loop. Each element in the returned sequence is accessed through the loop iteration variable. For more information about query execution, see [Writing Your First LINQ Query](../../../../visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query.md).  
   
-#### To run the query  
+### To run the query  
   
 1. Add the following `For Each` loop below the query in your project.  
   
@@ -74,7 +74,7 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
 ## Modify the Query  
  It is easier to scan query results if they are in a specified order. You can sort the returned sequence based on any available field.  
   
-#### To order the results  
+### To order the results  
   
 1. Add the following `Order By` clause between the `Where` statement and the `Select` statement of the query. The `Order By` clause will order the results alphabetically from A to Z, according to the last name of each student.  
   
@@ -92,7 +92,7 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
   
 3. Build and run the application by pressing CTRL+F5. Note the results in the console window.  
   
-#### To introduce a local identifier  
+### To introduce a local identifier  
   
 1. Add the code in this section to introduce a local identifier in the query expression. The local identifier will hold an intermediate result. In the following example, `name` is an identifier that holds a concatenation of the student's first and last names. A local identifier can be used for convenience, or it can enhance performance by storing the results of an expression that would otherwise be calculated multiple times.  
   
@@ -100,7 +100,7 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
   
 2. Build and run the application by pressing CTRL+F5. Note the results in the console window.  
   
-#### To project one field in the Select clause  
+### To project one field in the Select clause  
   
 1. Add the query and `For Each` loop from this section to create a query that produces a sequence whose elements differ from the elements in the source. In the following example, the source is a collection of `Student` objects, but only one member of each object is returned: the first name of students whose last name is Garcia. Because `currentStudent.First` is a string, the data type of the sequence returned by `studentQuery3` is `IEnumerable(Of String)`, a sequence of strings. As in earlier examples, the assignment of a data type for `studentQuery3` is left for the compiler to determine by using local type inference.  
   
@@ -110,7 +110,7 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
   
 3. Build and run the application by pressing CTRL+F5. Note the results in the console window.  
   
-#### To create an anonymous type in the Select clause  
+### To create an anonymous type in the Select clause  
   
 1. Add the code from this section to see how anonymous types are used in queries. You use them in queries when you want to return several fields from the data source rather than complete records (`currentStudent` records in previous examples) or single fields (`First` in the preceding section). Instead of defining a new named type that contains the fields you want to include in the result, you specify the fields in the `Select` clause and the compiler creates an anonymous type with those fields as its properties. For more information, see [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).  
   

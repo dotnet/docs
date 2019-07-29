@@ -23,7 +23,7 @@ Gets the physical thread this call chain is part of.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread (  
     [out] ICorDebugThread    **ppThread  
 );  

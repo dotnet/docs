@@ -23,7 +23,7 @@ Determines whether the current frame is a child frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsChild([out] BOOL * pIsChild);  
 ```  
   

@@ -23,7 +23,7 @@ Verifies that an assembly that has already been mapped to memory is valid for th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameSignatureVerificationFromImage (  
     [in]  BYTE    *pbBase,  
     [in]  DWORD   dwLength,  

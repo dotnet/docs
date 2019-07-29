@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 1931d292-0dd1-434f-963c-dcda7638d75a
 ---
 # Walkthrough: Hosting an ActiveX Control in WPF
-To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx](../../../../includes/tlasharptla-actx-md.md)] controls in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based application. This walkthrough demonstrates how you can host the [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] as a control on a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] page.
+To enable improved interaction with browsers, you can use Microsoft ActiveX controls in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based application. This walkthrough demonstrates how you can host the [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] as a control on a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] page.
 
  Tasks illustrated in this walkthrough include:
 
@@ -20,7 +20,7 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 
 - Hosting the ActiveX control on a WPF Page.
 
- When you have completed this walkthrough, you will understand how to use [!INCLUDE[TLA#tla_actx](../../../../includes/tlasharptla-actx-md.md)] controls in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based application.
+ When you have completed this walkthrough, you will understand how to use Microsoft ActiveX controls in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based application.
 
 ## Prerequisites
  You need the following components to complete this walkthrough:
@@ -31,7 +31,7 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 
 ## Creating the Project
 
-#### To create and set up the project
+### To create and set up the project
 
 1. Create a WPF Application project named `HostingAxInWpf`.
 
@@ -54,9 +54,9 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 9. If you are prompted to rename all references, click **Yes**.
 
 ## Creating the ActiveX Control
- [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] automatically generates an <xref:System.Windows.Forms.AxHost> wrapper class for a [!INCLUDE[TLA#tla_actx](../../../../includes/tlasharptla-actx-md.md)] control when the control is added to a design surface. The following procedure creates a managed assembly named AxInterop.WMPLib.dll.
+ [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] automatically generates an <xref:System.Windows.Forms.AxHost> wrapper class for a Microsoft ActiveX control when the control is added to a design surface. The following procedure creates a managed assembly named AxInterop.WMPLib.dll.
 
-#### To create the ActiveX control
+### To create the ActiveX control
 
 1. Open WmpAxControl.vb or WmpAxControl.cs in the Windows Forms Designer.
 
@@ -68,9 +68,9 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 
 ## Hosting the ActiveX Control on a WPF Page
 
-#### To host the ActiveX control
+### To host the ActiveX control
 
-1. In the HostingAxInWpf project, add a reference to the generated [!INCLUDE[TLA2#tla_actx](../../../../includes/tla2sharptla-actx-md.md)] interoperability assembly.
+1. In the HostingAxInWpf project, add a reference to the generated ActiveX interoperability assembly.
 
      This assembly is named AxInterop.WMPLib.dll and was added to the Debug folder of the WmpAxLib project when you imported the Windows Media Player control.
 

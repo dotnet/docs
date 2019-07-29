@@ -26,7 +26,7 @@ Notifies the profiler that a COM interop vtable is being destroyed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT COMClassicVTableDestroyed(  
     [in] ClassID wrappedClassId,  
     [in] REFGUID implementedIID,  

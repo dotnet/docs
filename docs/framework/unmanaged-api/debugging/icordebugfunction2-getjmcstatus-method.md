@@ -23,7 +23,7 @@ Gets a value that indicates whether the function that is represented by this ICo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetJMCStatus (  
     [out] BOOL   *pbIsJustMyCode  
 );  

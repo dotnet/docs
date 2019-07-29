@@ -10,7 +10,7 @@ Gets the size in bytes of the static field.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize(  
    [out] ULONG32 *pcbSize  
 );  

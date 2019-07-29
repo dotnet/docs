@@ -23,7 +23,7 @@ Returns an enumerator that provides methods to sequentially iterate through a co
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumModules([out] ICorProfilerModuleEnum** ppEnum);  
 ```  
   

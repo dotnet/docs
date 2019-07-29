@@ -23,7 +23,7 @@ Gets the function that is specified by the metadata token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromToken(  
     [in] mdMethodDef methodDef,  
     [out] ICorDebugFunction **ppFunction  

@@ -23,7 +23,7 @@ Gets the [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMonitorOwner (  
     [in]  SIZE_T     cookie,  
     [out] IHostTask *ppOwnerHostTask  

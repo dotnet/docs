@@ -23,7 +23,7 @@ Returns the cumulative size of the parameters on the stack on x86 operating syst
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackParameterSize([out] ULONG32 * pSize)  
 ```  
   

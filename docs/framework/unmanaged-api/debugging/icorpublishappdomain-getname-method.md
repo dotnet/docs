@@ -23,7 +23,7 @@ Gets the name of the application domain that is represented by this [ICorPublish
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName (  
     [in]  ULONG32   cchName,   
     [out] ULONG32   *pcchName,  

@@ -26,7 +26,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetRegisters (  
     [in] ULONG64   mask,  
     [in] ULONG32   regCount,  

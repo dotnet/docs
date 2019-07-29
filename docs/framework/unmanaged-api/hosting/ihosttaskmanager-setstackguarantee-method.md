@@ -23,7 +23,7 @@ Reserved for internal use only.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetStackGuarantee(  
     [in] ULONG guarantee  
 );  

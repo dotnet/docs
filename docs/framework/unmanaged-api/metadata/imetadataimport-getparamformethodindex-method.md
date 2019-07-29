@@ -23,7 +23,7 @@ Gets the token that represents a specified parameter of the method represented b
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParamForMethodIndex (  
    [in]  mdMethodDef      md,  
    [in]  ULONG            ulParamSeq,  

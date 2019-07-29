@@ -23,7 +23,7 @@ Completes the layout of fields for a class that has been defined by a prior call
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetClassLayout (  
     [in]  mdTypeDef           td,   
     [in]  DWORD               dwPackSize,   

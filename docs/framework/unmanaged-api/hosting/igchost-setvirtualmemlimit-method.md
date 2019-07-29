@@ -23,7 +23,7 @@ Sets the maximum size of the runtime's virtual memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetVirtualMemLimit (  
     [in] SIZE_T sztMaxVirtualMemMB  
 );  

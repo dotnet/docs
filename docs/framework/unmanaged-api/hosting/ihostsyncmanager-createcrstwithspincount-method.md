@@ -23,7 +23,7 @@ Creates a critical section object with spin count for synchronization.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateCrstWithSpinCount (  
     [in]  DWORD dwSpinCount,  
     [out] IHostCrst** ppCrst  

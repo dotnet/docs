@@ -23,7 +23,7 @@ Sets a value that specifies whether calls to [ICorDebugStepper::StepRange](../..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetRangeIL (  
     [in] BOOL    bIL  
 );  

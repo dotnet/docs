@@ -22,7 +22,7 @@ Indicates the version, build, culture, signature, and so on, of the assembly who
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
   
     ASM_DISPLAYF_VERSION                 = 0x01,  

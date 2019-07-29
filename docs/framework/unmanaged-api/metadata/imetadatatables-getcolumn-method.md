@@ -23,7 +23,7 @@ Gets a pointer to the value contained in the cell of the specified column and ro
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetColumn (   
     [in]  ULONG   ixTbl,  
     [in]  ULONG   ixCol,  

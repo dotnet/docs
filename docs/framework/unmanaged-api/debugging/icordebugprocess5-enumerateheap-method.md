@@ -23,7 +23,7 @@ Gets an enumerator for the objects on the managed heap.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateHeap(  
     [out] ICorDebugHeapEnum **ppObjects  
 );  

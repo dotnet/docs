@@ -23,7 +23,7 @@ Gets the flags associated with the managed debugging assistant (MDA) represented
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFlags (  
     [in] CorDebugMDAFlags *pFlags  
 );  

@@ -23,7 +23,7 @@ Notifies the debugger that a CTRL+C is trapped in the process that is being debu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ControlCTrap (  
     [in] ICorDebugProcess *pProcess  
 );  

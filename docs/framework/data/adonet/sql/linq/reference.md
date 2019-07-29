@@ -25,7 +25,7 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  Provides answers to common questions regarding [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  [SQL Server Compact and LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/sql-server-compact-and-linq-to-sql.md)  
- Describes how [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] differs from SQL Server in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications.  
+ Describes how SQL Server Compact 3.5 differs from SQL Server in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications.  
   
  [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)  
  Describes how [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates Standard Query Operators to SQL commands.  

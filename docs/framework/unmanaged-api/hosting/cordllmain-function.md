@@ -23,7 +23,7 @@ Initializes the common language runtime (CLR), locates the managed entry point i
   
 ## Syntax  
   
-```  
+```cpp  
 BOOL STDMETHODCALLTYPE _CorDllMain (  
    [in] HINSTANCE hInst,  
    [in] DWORD     dwReason,  

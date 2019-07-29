@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 48fc34f3-f236-4b01-a0cb-f0752e6d22ae
 ---
 # How to: Use Antialiasing with Text
-*Antialiasing* refers to the smoothing of jagged edges of drawn graphics and text to improve their appearance or readability. With the managed [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] classes, you can render high quality antialiased text, as well as lower quality text. Typically, higher quality rendering takes more processing time than lower quality rendering. To set the text quality level, set the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property of a <xref:System.Drawing.Graphics> to one of the elements of the <xref:System.Drawing.Text.TextRenderingHint> enumeration  
+*Antialiasing* refers to the smoothing of jagged edges of drawn graphics and text to improve their appearance or readability. With the managed GDI+ classes, you can render high quality antialiased text, as well as lower quality text. Typically, higher quality rendering takes more processing time than lower quality rendering. To set the text quality level, set the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property of a <xref:System.Drawing.Graphics> to one of the elements of the <xref:System.Drawing.Text.TextRenderingHint> enumeration  
   
 ## Example  
  The following code example draws text with two different quality settings.  

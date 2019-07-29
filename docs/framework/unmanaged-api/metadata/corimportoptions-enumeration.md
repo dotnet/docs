@@ -22,7 +22,7 @@ Contains flag values that control the behavior during importation of an assembly
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorImportOptions {  
   
     MDImportOptionDefault                = 0x00000000,  

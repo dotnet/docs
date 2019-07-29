@@ -23,7 +23,7 @@ Sets the active state of this `ICorDebugBreakpoint`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Activate (  
     [in] BOOL bActive  
 );  

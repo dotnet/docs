@@ -22,7 +22,7 @@ Indicates the event that is being signaled by the callback during the unwind pha
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugExceptionUnwindCallbackType {  
     DEBUG_EXCEPTION_UNWIND_BEGIN = 1,  
     DEBUG_EXCEPTION_INTERCEPTED  = 2  

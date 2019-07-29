@@ -23,7 +23,7 @@ Allows the assembly in the global assembly cache to perform cleanup operations b
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AbortItem ();  
 ```  
   

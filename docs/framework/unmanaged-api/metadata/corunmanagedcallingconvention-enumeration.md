@@ -22,7 +22,7 @@ Specifies the calling conventions for unmanaged code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorUnmanagedCallingConvention {  
   
     IMAGE_CEE_UNMANAGED_CALLCONV_C         = 0x1,  

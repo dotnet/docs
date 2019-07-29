@@ -23,7 +23,7 @@ Gets the local variables defined within this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocals(  
     [in]  ULONG32  cLocals,  
     [out] ULONG32  *pcLocals,  

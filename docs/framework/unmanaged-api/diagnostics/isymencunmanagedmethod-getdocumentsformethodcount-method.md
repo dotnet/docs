@@ -23,7 +23,7 @@ Gets the number of documents that this method has lines in.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocumentsForMethodCount(  
     [out, retval] ULONG32* pRetVal);  
 ```  

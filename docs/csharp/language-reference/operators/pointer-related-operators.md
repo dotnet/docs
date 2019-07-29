@@ -118,7 +118,7 @@ For a pointer `p` of type `T*` and an expression `n` of a type implicitly conver
 - Both `p + n` and `n + p` expressions produce a pointer of type `T*` that results from adding `n * sizeof(T)` to the address given by `p`.
 - The `p - n` expression produces a pointer of type `T*` that results from subtracting `n * sizeof(T)` from the address given by `p`.
 
-The [`sizeof` operator](../keywords/sizeof.md) obtains the size of a type in bytes.
+The [`sizeof` operator](sizeof.md) obtains the size of a type in bytes.
 
 The following example demonstrates the usage of the `+` operator with a pointer:
 
@@ -187,4 +187,4 @@ For more information, see the following sections of the [C# language specificati
 - [unsafe keyword](../keywords/unsafe.md)
 - [fixed keyword](../keywords/fixed-statement.md)
 - [stackalloc operator](stackalloc.md)
-- [sizeof operator](../keywords/sizeof.md)
+- [sizeof operator](sizeof.md)

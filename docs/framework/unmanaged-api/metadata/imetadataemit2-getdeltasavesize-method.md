@@ -23,7 +23,7 @@ Gets a value indicating any change in metadata size that results from the curren
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDeltaSaveSize (  
     [in]  CorSaveSize  fSave,  
     [out] DWORD        *pdwSaveSize  

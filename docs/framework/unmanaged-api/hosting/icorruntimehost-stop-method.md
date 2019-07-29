@@ -23,7 +23,7 @@ Stops the execution of code in the runtime for the current process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Stop ();  
 ```  
   

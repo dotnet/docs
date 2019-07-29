@@ -23,7 +23,7 @@ Gets the start offset for this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStartOffset(  
     [out, retval] ULONG32* pRetVal);  
 ```  

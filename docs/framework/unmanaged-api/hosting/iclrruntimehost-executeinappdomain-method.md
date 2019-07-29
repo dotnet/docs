@@ -23,7 +23,7 @@ Specifies the <xref:System.AppDomain> in which to execute the specified managed 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExecuteInAppDomain(  
     [in] DWORD AppDomainId,   
     [in] FExecuteInDomainCallback pCallback,   

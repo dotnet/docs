@@ -22,7 +22,7 @@ Represents an address offset that is used by the [ICeeGen](../../../../docs/fram
   
 ## Syntax  
   
-```  
+```cpp  
 typedef union  {  
     USHORT highAdj;  
 } CeeSectionRelocExtra;  

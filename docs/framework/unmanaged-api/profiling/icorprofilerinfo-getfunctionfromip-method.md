@@ -23,7 +23,7 @@ Maps a managed code instruction pointer to a `FunctionID`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromIP(  
     [in]  LPCBYTE    ip,  
     [out] FunctionID *pFunctionId);  

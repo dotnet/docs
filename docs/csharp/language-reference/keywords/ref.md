@@ -134,7 +134,7 @@ The goal of keeping a `ref struct` type as a stack-allocated variable introduces
 
 - You can't box a `ref struct`. You cannot assign a `ref struct` type to a variable of type `object`, `dynamic`, or any interface type.
 - `ref struct` types cannot implement interfaces.
-- You can't declare a `ref struct` as a member of a class or a normal struct.
+- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler generated backing field. 
 - You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601> or `Task`-like types.
 - You cannot declare `ref struct` local variables in iterators.
 - You cannot capture `ref struct` variables in lambda expressions or local functions.

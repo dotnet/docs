@@ -23,7 +23,7 @@ Gets the current operating system identifier of the active part of this ICorDebu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetID (  
     [out] DWORD *pdwThreadId  
 );  

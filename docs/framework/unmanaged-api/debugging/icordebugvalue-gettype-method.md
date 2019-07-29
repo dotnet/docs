@@ -23,7 +23,7 @@ Gets the primitive type of this "ICorDebugValue" object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetType (  
     [out] CorElementType   *pType  
 );  

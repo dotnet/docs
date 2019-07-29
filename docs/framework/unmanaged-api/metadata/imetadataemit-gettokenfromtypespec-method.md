@@ -23,7 +23,7 @@ Gets a metadata token for the type with the specified metadata signature.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTokenFromTypeSpec (   
     [in]  PCCOR_SIGNATURE       pvSig,   
     [in]  ULONG                 cbSig,   

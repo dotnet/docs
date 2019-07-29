@@ -23,7 +23,7 @@ Gets the parent class, the metadata token, and the `ClassID` of each type argume
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionInfo2(  
     [in]  FunctionID funcId,  
     [in]  COR_PRF_FRAME_INFO frameInfo,  

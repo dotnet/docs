@@ -23,7 +23,7 @@ ms.author: "mairaw"
   
 - COR_PROFILER: If the COR_ENABLE_PROFILING check passes, the CLR connects to the profiler that has this CLSID or ProgID, which must have been stored previously in the registry. The COR_PROFILER environment variable is defined as a string, as shown in the following two examples.  
   
-    ```  
+    ```cpp  
     set COR_PROFILER={32E2F4DA-1BEA-47ea-88F9-C5DAF691C94A}  
     set COR_PROFILER="MyProfiler"  
     ```  
@@ -60,7 +60,7 @@ ms.author: "mairaw"
 ## Initializing the Profiler  
  When both environment variable checks pass, the CLR creates an instance of the profiler in a similar manner to the COM `CoCreateInstance` function. The profiler is not loaded through a direct call to `CoCreateInstance`. Therefore, a call to `CoInitialize`, which requires setting the threading model, is avoided. The CLR then calls the [ICorProfilerCallback::Initialize](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-initialize-method.md) method in the profiler. The signature of this method is as follows.  
   
-```  
+```cpp  
 HRESULT Initialize(IUnknown *pICorProfilerInfoUnk)  
 ```  
   
@@ -69,7 +69,7 @@ HRESULT Initialize(IUnknown *pICorProfilerInfoUnk)
 ## Setting Event Notifications  
  The profiler then calls the [ICorProfilerInfo::SetEventMask](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-seteventmask-method.md) method to specify which categories of notifications it is interested in. For example, if the profiler is interested only in function enter and leave notifications and garbage collection notifications, it specifies the following.  
   
-```  
+```cpp  
 ICorProfilerInfo* pInfo;  
 pICorProfilerInfoUnk->QueryInterface(IID_ICorProfilerInfo, (void**)&pInfo);  
 pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)  

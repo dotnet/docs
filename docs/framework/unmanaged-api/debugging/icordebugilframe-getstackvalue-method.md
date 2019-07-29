@@ -23,7 +23,7 @@ This method has not been implemented.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackValue (  
     [in] DWORD                  dwIndex,  
     [out] ICorDebugValue        **ppValue  

@@ -22,7 +22,7 @@ Marks the currently executing thread-pool thread for the execution of managed co
   
 ## Syntax  
   
-```  
+```cpp  
 void CorMarkThreadInThreadPool ();  
 ```  
   

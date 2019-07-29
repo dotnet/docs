@@ -23,7 +23,7 @@ Gets the size, in bytes, of this [ICorDebugValue3](../../../../docs/framework/un
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize64(  
     [out] ULONG64 *pSize  
 );  

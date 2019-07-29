@@ -22,7 +22,7 @@ Specifies the state of a thread for debugging.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugThreadState {  
     THREAD_RUN,  
     THREAD_SUSPEND  

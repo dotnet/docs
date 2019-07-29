@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects using deep learning with ONNX and ML.NET'
 description: This tutorial illustrates how to use a pre-trained ONNX deep learning model in ML.NET to detect objects in images.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 07/18/2019
+ms.date: 07/29/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use a pre-trained model in an object detection scenario to detect objects in images using ONNX.
@@ -18,6 +18,8 @@ Training an object detection model from scratch requires setting millions of par
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Understand the problem
+> * Learn what ONNX is and how it works with ML.NET
+> * Understand the model
 > * Reuse the pre-trained model
 > * Detect objects with a loaded model
 
@@ -55,15 +57,40 @@ Deep learning is a subset of machine learning. To train deep learning models, la
 
 There are different types of neural networks, each more suitable than the other for certain tasks. The most common types of neural networks are Multi-Layered Perceptron (MLP), Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN). The most basic is the MLP, which maps a set of inputs to a set of outputs. This neural network is good when the data does not have a spatial or time component. The CNN as implied by the name makes use of convolutional layers that take into account spatial information contained in the data. A good use case for CNNs is image processing when trying to detect the presence of a particular feature in a region of an image (i.e. is there a nose in the center of an image?). Finally, RNNs allow for the persistence of state or memory to be used as input therefore making it a good candidate for time-series analysis where the sequential ordering and context of events is important. 
 
-Object detection is an image processing task. Therefore, most deep learning models trained to solve this problem are CNNs. The model used in this tutorial is the Tiny YOLOv2 model, a more compact version of the YOLOv2 model described in the paper: ["YOLO9000: Better, Faster, Stronger" by Redmon and Fadhari](https://arxiv.org/pdf/1612.08242.pdf). Tiny YOLOv2 is trained on the Pascal VOC dataset and is made up of 15 layers that can predict 20 different classes of objects. Because Tiny YOLOv2 is a condensed version of the original YOLOv2 model, a tradeoff is made between speed and accuracy. 
+## Understand the model
 
-The model is stored in ONNX format. The Open Neural Network Exchange (ONNX) is an open source format for AI models. ONNX supports interoperability between frameworks. This means you can train a model in one of the many popular machine learning frameworks like PyTorch, convert it into ONNX format and consume the ONNX model in a different framework like ML.NET. To learn more, visit the [ONNX website](https://onnx.ai/). 
+Object detection is an image processing task. Therefore, most deep learning models trained to solve this problem are CNNs. The model used in this tutorial is the Tiny YOLOv2 model, a more compact version of the YOLOv2 model described in the paper: ["YOLO9000: Better, Faster, Stronger" by Redmon and Fadhari](https://arxiv.org/pdf/1612.08242.pdf). Tiny YOLOv2 is trained on the Pascal VOC dataset and is made up of 15 layers that can predict 20 different classes of objects. Because Tiny YOLOv2 is a condensed version of the original YOLOv2 model, a tradeoff is made between speed and accuracy. The different layers that make up the model can be visualized using tools like Netron. Inspecting the model would yield a mapping of the connections between all the layers in that make up the neural network, where each layer would contain the name of the layer along with the dimensions of the respective input / output. The data structures used to describe the inputs and outputs of the model are known as tensors. Tensors can be thought of as containers that store data in N-dimensions. In the case of Tiny YOLOv2, the name of the input layer is `image` and it expects a tensor of dimensions `3 x 416 x 416`. The name of the output layer is `grid` and generates an output tensor of dimensions `125 x 13 x 13`.  
+
+![](./media/object-detection-onnx/netron-model-map.png)
+
+The input expected by the YOLO model is an image that is `416px x 416px`, where each pixel contains 3 data elements corresponding to the RGB values of the respective pixel. The model takes this input and passes it through the different layers to produce an output. The output is a grid of dimensions `125 x 13 x 13`. 
+
+![](./media/object-detection-onnx/model-output-description.png)
+
+The model segments an image into a `13 x 13` grid, where each grid cell is `32px x 32px`. Each grid cell contains 125 elements within it that correspond to 5 areas in an image which are believed to contain an object, also known as bounding boxes. Each of these bounding boxes stores 25 elements of information to describe itself:
+
+- `x` the x position of the bounding box center relative to the grid cell it's associated with.
+- `y` the yposition of the bounding box center relative to the grid cell it's associated with.
+- `w` the width of the bounding box.
+- `h` the height of the bounding box. 
+- `o` the confidence value that an object exists within the bounding box, also known as Abjectness score.
+- `p1-p20` class probabilities for each of the 20 classes predicted by the model.
+
+In total, the 25 elements describing each of the 5 bounding boxes make up the 125 elements contained in each grid cell.
+
+## What is an ONNX model?
+
+The Open Neural Network Exchange (ONNX) is an open source format for AI models. ONNX supports interoperability between frameworks. This means you can train a model in one of the many popular machine learning frameworks like PyTorch, convert it into ONNX format and consume the ONNX model in a different framework like ML.NET. To learn more, visit the [ONNX website](https://onnx.ai/). 
 
 ![](./media/object-detection-onnx/onnx-frameworks.png)
 
-## Create console application
+The pre-trained Tiny YOLOv2 model is stored in ONNX format, a serialized representation of the layers and learned patterns of those layers. In ML.NET, interoperability with ONNX is achieved with the `ImageAnalytics` and [`OnnxTransformer`](xref:Microsoft.ML.Transforms.Onnx.OnnxTransformer) NuGet packages. The `ImageAnalytics` package contains a series of transforms that take an image and encode it into numerical values that can be used as input into a model or training pipeline. The [`OnnxTransformer`](xref:Microsoft.ML.Transforms.Onnx.OnnxTransformer) package leverages the ONNX Runtime to load an ONNX model and use it to make predictions based on input provided. 
 
-### Create a project
+![](./media/object-detection-onnx/onnx-ml-net-integration.png)
+
+## Set up the project
+
+### Create a console application
 
 1. Create a **.NET Core Console Application** called "ObjectDetection".
 
@@ -231,7 +258,7 @@ Both of these methods will be useful when the model has produced outputs and tho
 
 ## Create a parser to post-process model outputs
 
-The expected output generated by the pre-trained ONNX model is a tensor of shape `125 x 13 x 13` that is returned as a one-dimensional `float[]` of 21125 elements. In order to extract the predictions generated by the model, some post-processing work is required. To do so, create a set of classes to help parse the output.
+The output generated by the pre-trained ONNX model is a float array of length 21125, representing the elements of a tensor with dimensions `125 x 13 x 13`. In order to transform the predictions generated by the model into a tensor, some post-processing work is required. To do so, create a set of classes to help parse the output.
 
 Add a new directory to your project to organize the set of parser classes.
 
@@ -282,7 +309,7 @@ Next, create a class for your bounding boxes.
     - `Rect` contains the rectangle representation of the bounding box's dimensions.
     - `BoxColor` contains the color associated with the respective class used to draw on the image.
 
-### Create parser
+### Create the parser
 
 Now that the classes for dimensions and bounding boxes are created, it's time to create the parser.
 
@@ -330,7 +357,7 @@ There are colors associated with each of the classes. Assign your class colors b
 
 [!code-csharp [ParserColors](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L36-L59)]
 
-### Create Helper Functions
+### Create helper functions
 
 There are a series of steps involved in the post-processing phase. To help with that, several helper methods can be employed. 
 
@@ -344,7 +371,7 @@ The helper methods used in by the parser are:
 - `MapBoundingBoxToCell` uses the bounding box dimensions and maps them onto its respective cell within the image.
 - `ExtractClasses` extracts the class predictions for the bounding box from the model output using the `GetOffset` method and turns them into a probability distribution using the `Softmax` method.
 - `GetTopResult` selects the class from the list of predicted classes with the highest probability.
-- `IntersectionOverUnion` utilizes non-maximum suppression to filter overlapping bounding boxes with lower probabilities.
+- `IntersectionOverUnion` filters overlapping bounding boxes with lower probabilities.
 
 Add the code for all the helper methods below your list of `classColors`.
 
@@ -574,7 +601,7 @@ Now that both steps are set up, combine them into a single method. Below the `Pr
 
 Almost there! Now it's time to put it all to use.
 
-## Detect Objects
+## Detect objects
 
 Now that all of the setup is complete, it's time to detect some objects. Inside the `Main` method of your *Program.cs* class, add a try-catch statement.
 
@@ -674,7 +701,9 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 In this tutorial, you learned how to:
 > [!div class="checklist"]
 > * Understand the problem
-> * Reuse and tune the pre-trained model
+> * Learn what ONNX is and how it works with ML.NET
+> * Understand the model
+> * Reuse the pre-trained model
 > * Detect objects with a loaded model
 
 Check out the Machine Learning samples GitHub repository to explore an expanded object detection sample.

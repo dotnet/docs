@@ -88,7 +88,9 @@ The pre-trained Tiny YOLOv2 model is stored in ONNX format, a serialized represe
 
 ![](./media/object-detection-onnx/onnx-ml-net-integration.png)
 
-## Set up the project
+## Set up the .NET Core project
+
+Now that you have a general understanding of what ONNX is and how Tiny YOLOv2 works, it's time to build the application.
 
 ### Create a console application
 

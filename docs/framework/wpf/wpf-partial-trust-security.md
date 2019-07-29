@@ -107,7 +107,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
  In many cases, you should be able to find a partial trust alternative.  
   
- In a controlled environment, such as an intranet, custom managed frameworks can be installed across the client base into the [!INCLUDE[TLA#tla_gac](../../../includes/tlasharptla-gac-md.md)]. These libraries can execute code that requires full trust, and be referenced from applications that are only allowed partial trust by using <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (for more information, see [Security](security-wpf.md) and [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)).  
+ In a controlled environment, such as an intranet, custom managed frameworks can be installed across the client base into the global assembly cache (GAC). These libraries can execute code that requires full trust, and be referenced from applications that are only allowed partial trust by using <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (for more information, see [Security](security-wpf.md) and [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)).  
   
 <a name="Browser_Host_Detection"></a>   
 ### Browser Host Detection  

@@ -262,6 +262,16 @@ The return value and the argument have both been annotated with the `?` indicati
 
 ## Generic definitions and nullability
 
-Correctly communicating the null state of generic types and generic methods requires special care. This stems from the fact that a nullable value type and a nullable reference type are quite different.
+Correctly communicating the null state of generic types and generic methods requires special care. This stems from the fact that a nullable value type and a nullable reference type are fundamentally different. An `int?` is a synonym for `Nullable<int>`, whereas `string?` is `string` with an attribute added by the compiler. The result is that the compiler cannot generate correct code for `T?` without knowing if `T` is a `class` or a `struct`. 
+
+This doesn't mean you can use a nullable type (either value type or reference type) as the type argument for a closed generic type. Both `List<string?>` and `List<int?>` are valid instantiations of `List<T>`. 
+
+What it does mean is that you cannot use `T?` in a generic class or method declaration without constraints. For example, <xref:System.Linq.Enumerable%601(System.Collections.Generic.IEnumerable%601)?displayProperty=nameWithType> will not be changed to return `T?`. You can overcome this limitation by adding either the `struct` or `class` constraint. With either of those constraints, the compiler knows how to generate code for both `T` and `T?`.
+
+You may want to restrict the types used for a generic type argument to be non-nullable types. You can do that by adding the `notnull` constraint on that type argument. When that attribute is applied, the type argument nust not be a nullable type.
 
 ## Conclusions
+
+Adding nullable reference types provides an initial vocabulary to describe your APIs expectations for if variables could be `null`. The additional attributes provide a richer vocabulary to describe the null state of variables as preconditions and postconditions. These more clearly describe your expectations and provide a better experience for the developers using your APIs.
+
+As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage.

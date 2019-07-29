@@ -14,7 +14,7 @@ Windows services (formerly known as Windows NT services) provide a process model
   
 - The process that hosts your application must remain running once started. Once started, a Windows service process remains running unless explicitly shut down by a server administrator using the service control manager. Applications hosted in IIS or WAS may be started and stopped dynamically to make optimal use of system resources. Applications that require explicit control over the lifetime of their hosting process should use Windows services instead of IIS or WAS.  
   
-- Your WCF service must run on Windows Server 2003 and use transports other than HTTP. On Windows Server 2003, the [!INCLUDE[iis601](../../../../includes/iis601-md.md)] hosting environment is restricted to HTTP communication only. Windows service applications are not subject to this restriction and can use any transport WCF supports, including net.tcp, net.pipe, and net.msmq.  
+- Your WCF service must run on Windows Server 2003 and use transports other than HTTP. On Windows Server 2003, the IIS 6.0 hosting environment is restricted to HTTP communication only. Windows service applications are not subject to this restriction and can use any transport WCF supports, including net.tcp, net.pipe, and net.msmq.  
   
 ### To host WCF inside of a Windows service application  
   

@@ -55,7 +55,7 @@ async Task<int> AccessTheWebAsync()
 }
 ```
 
-You can learn several practices from the preceding sample. start with the method signature. It includes the `async` modifier. The return type is `Task<int>` (See "Return Types" section for more options). The method name ends in `Async`. In the body of the method, `GetStringAsync` returns a `Task<string>`. That means that when you `await` the task you'll get a `string` (`urlContents`).  Before awaiting the task, you can do work that doesn't rely on the `string` from `GetStringAsync`.
+You can learn several practices from the preceding sample. Start with the method signature. It includes the `async` modifier. The return type is `Task<int>` (See "Return Types" section for more options). The method name ends in `Async`. In the body of the method, `GetStringAsync` returns a `Task<string>`. That means that when you `await` the task you'll get a `string` (`urlContents`).  Before awaiting the task, you can do work that doesn't rely on the `string` from `GetStringAsync`.
 
 Pay close attention to the `await` operator. It suspends `AccessTheWebAsync`;
 

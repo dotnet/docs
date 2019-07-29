@@ -33,7 +33,7 @@ But the following expressions are valid.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-3/snippet502.fs)]
 
-To evalutate F# quotations, you must use the [F# Quotation Evaluator](https://github.com/fsprojects/FSharp.Quotations.Evaluator). It provides support for evaluating and executing F# expression objects.
+To evaluate F# quotations, you must use the [F# Quotation Evaluator](https://github.com/fsprojects/FSharp.Quotations.Evaluator). It provides support for evaluating and executing F# expression objects.
 
 ## Expr Type
 

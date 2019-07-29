@@ -24,7 +24,7 @@ The following table shows the precision and approximate ranges for the floating-
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Integral types table](integral-types-table.md)
+- [Integral types](../../../csharp/language-reference/builtin-types/integral-numeric-types.md)
 - [Default values table](default-values-table.md)
 - [Formatting numeric results table](formatting-numeric-results-table.md)
 - [Built-in types table](built-in-types-table.md)

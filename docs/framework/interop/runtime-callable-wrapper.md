@@ -18,7 +18,7 @@ The common language runtime exposes COM objects through a proxy called the runti
 
 The following image shows the process for accessing COM objects through the runtime callable wrapper:
 
- ![Process for accessing COM objects throug the RCW.](./media/runtime-callable-wrapper/runtime-callable-wrapper.gif)  
+ ![Process for accessing COM objects through the RCW.](./media/runtime-callable-wrapper/runtime-callable-wrapper.gif)  
 
  Using metadata derived from a type library, the runtime creates both the COM object being called and a wrapper for that object. Each RCW maintains a cache of interface pointers on the COM object it wraps and releases its reference on the COM object when the RCW is no longer needed. The runtime performs garbage collection on the RCW.  
   

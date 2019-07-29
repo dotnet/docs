@@ -80,6 +80,14 @@
   items:
   - name: Overview
     href: automl-overview.md
+  - name: Model Builder
+    items:
+    - name: What is Model Builder?
+      href: automate-training-with-model-builder.md
+    - name: Install Model Builder
+      href: how-to-guides/install-model-builder.md
+    - name: Predict prices with Model Builder
+      href: tutorials/predict-prices-with-model-builder.md    
   - name: ML.NET CLI
     items:
     - name: Install the CLI

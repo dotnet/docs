@@ -18,7 +18,7 @@ Enables packet routing and the use of one-way methods for a custom binding.
 <oneWay packetRoutable="Boolean">
   <channelPoolSettings idleTimeout="TimeSpan"
                        leaseTimeout="TimeSpan"
-                       maxOutboundConnectionsPerEndpopint="Integer" />
+                       maxOutboundConnectionsPerEndpoint="Integer" />
 </oneWay>
 ```  
   

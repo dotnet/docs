@@ -40,7 +40,7 @@ Use security boundaries provided by the operating system, such as virtualization
 
 ## System.EnterpriseServices
 
-System.EnterpiseServices (COM+) is not supported by .NET Core.
+System.EnterpriseServices (COM+) is not supported by .NET Core.
 
 >[!div class="step-by-step"]
 >[Next](third-party-deps.md)

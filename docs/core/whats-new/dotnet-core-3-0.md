@@ -499,9 +499,11 @@ The export methods produce DER-encoded binary data, and the import methods expec
 
 ## SerialPort for Linux
 
-.NET Core 3.0 supports <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> on Linux.
+.NET Core 3.0 have basic support for <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> on Linux.
 
 Previously, .NET Core only supported using `SerialPort` on Windows.
+
+Please refer to https://github.com/dotnet/corefx/issues/33146 for information on limitations.
 
 ## Docker and cgroup memory Limits
 

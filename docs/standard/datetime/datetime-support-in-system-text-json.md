@@ -11,7 +11,6 @@ helpviewer_keywords:
   - "Serializer, Utf8"
   - "JSON Reader, JSON Writer, times"
 ---
-
 # DateTime and DateTimeOffset support in System.Text.Json
 
 The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>, and <xref:System.Text.Json.JsonElement> parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset> text representations according to the extended profile of the ISO 8601-1:2019 format, e.g. 2019-07-26T16:59:57-05:00.
@@ -183,7 +182,7 @@ public class DateTimeConverterExample3 : JsonConverter<DateTime>
 
 ## Extended ISO 8601-1:2019 Profile in System.Text.Json
 
-### Date and time Components
+### Date and time components
 
 ISO 8601-1:2019 defines the following components for date and time representations:
 

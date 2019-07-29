@@ -25,7 +25,7 @@ Read the following sections for details.
 
 You can download the .NET Core Uninstall Tool from [https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) and put the single executable (`dotnet-core-uninstall.exe`) in a directory.
 
-__Note__: The tool requires elevation to uninstall .NET Core SDKs and Runtimes. Therefore, it should be installed in a write-protected directory such as `C:\Program Files` on Windows and `/usr/local/bin` on macOS. See also [Elevated access for dotnet commands](https://docs.microsoft.com/en-us/dotnet/core/tools/elevated-access).
+__Note__: The tool requires elevation to uninstall .NET Core SDKs and Runtimes. Therefore, it should be installed in a write-protected directory such as `C:\Program Files` on Windows and `/usr/local/bin` on macOS. See also [Elevated access for dotnet commands](https://docs.microsoft.com/dotnet/core/tools/elevated-access).
 
 ### Displaying installed .NET Core SDKs and Runtimes
 

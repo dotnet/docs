@@ -20,7 +20,7 @@ The following table shows the default values of C# types:
 |[char](char.md)|`'\0'` (U+0000)|
 |[enum](enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
 |[struct](struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|
-|Any [nullable value type](../../programming-guide/nullable-types/index.md)|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined.|
+|Any [nullable value type](../../programming-guide/nullable-types/index.md)|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined. That default value is also known as the *null* value of the nullable value type.|
 
 Use the [default value expression](../../programming-guide/statements-expressions-operators/default-value-expressions.md) to produce the default value of a type, as the following example shows:
 
@@ -34,11 +34,19 @@ Beginning with C# 7.1, you can use the [`default` literal](../../programming-gui
 int a = default;
 ```
 
-You also can use the parameterless constructor or the implicit parameterless constructor to produce the default value of a value type, as the following example shows:
+For a value type, the implicit parameterless constructor also produces the default value of the type, as the following example shows:
 
-```csharp
-int a = new int();
+```csharp-interactive
+var n = new System.Numerics.Complex();
+Console.WriteLine(n);  // output: (0, 0)
 ```
+
+## C# language specification
+
+For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+
+- [Default values](~/_csharplang/spec/variables.md#default-values)
+- [Default constructors](~/_csharplang/spec/types.md#default-constructors)
 
 ## See also
 

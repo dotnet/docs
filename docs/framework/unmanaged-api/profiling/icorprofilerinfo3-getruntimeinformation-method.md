@@ -23,7 +23,7 @@ Provides version information about the common language runtime (CLR) that is bei
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRuntimeInformation(  
        [out] USHORT *pClrInstanceId,  
        [out] COR_PRF_RUNTIME_TYPE *pRuntimeType,  

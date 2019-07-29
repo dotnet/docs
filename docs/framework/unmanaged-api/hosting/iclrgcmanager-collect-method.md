@@ -23,7 +23,7 @@ Forces a garbage collection for the specified generation.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Collect (  
     [in] LONG Generation  
 );  

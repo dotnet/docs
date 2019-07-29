@@ -23,7 +23,7 @@ Gets a value indicating whether the specified token holds a valid reference to a
   
 ## Syntax  
   
-```  
+```cpp  
 BOOL IsValidToken (  
    [in] mdToken     tk  
 );  

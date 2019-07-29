@@ -25,7 +25,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
 ## Mapping Relationships Across Tables  
  After the `Customer` class definition, create the `Order` entity class definition that includes the following code, which indicates that `Order.Customer` relates as a foreign key to `Customer.CustomerID`.  
   
-#### To add the Order entity class  
+### To add the Order entity class  
   
 - Type or paste the following code after the `Customer` class:  
   
@@ -34,7 +34,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
 ## Annotating the Customer Class  
  In this step, you annotate the `Customer` class to indicate its relationship to the `Order` class. (This addition is not strictly necessary, because defining the relationship in either direction is sufficient to create the link. But adding this annotation does enable you to easily navigate objects in either direction.)  
   
-#### To annotate the Customer class  
+### To annotate the Customer class  
   
 - Type or paste the following code into the `Customer` class:  
   
@@ -43,7 +43,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
 ## Creating and Running a Query Across the Customer-Order Relationship  
  You can now access `Order` objects directly from the `Customer` objects, or in the opposite order. You do not need an explicit *join* between customers and orders.  
   
-#### To access Order objects by using Customer objects  
+### To access Order objects by using Customer objects  
   
 1. Modify the `Main` method by typing or pasting the following code into the method:  
   
@@ -61,7 +61,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
   
  In the following steps, you will create `Customers` as a strongly typed table that maps to the Customers table in the database.  
   
-#### To strongly type the DataContext object  
+### To strongly type the DataContext object  
   
 1. Add the following code above the `Customer` class declaration.  
   

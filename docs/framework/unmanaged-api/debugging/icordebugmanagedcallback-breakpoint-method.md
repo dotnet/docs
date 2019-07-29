@@ -23,7 +23,7 @@ Notifies the debugger when a breakpoint is encountered.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Breakpoint (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugThread     *pThread,  

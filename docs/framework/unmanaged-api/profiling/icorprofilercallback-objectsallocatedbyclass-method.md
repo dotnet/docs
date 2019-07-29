@@ -23,7 +23,7 @@ Notifies the profiler about the number of instances of each specified class that
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ObjectsAllocatedByClass(  
     [in] ULONG   cClassCount,  
     [in, size_is(cClassCount)] ClassID classIds[] ,  

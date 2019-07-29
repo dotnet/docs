@@ -23,7 +23,7 @@ Gets invoked when entering a call.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnSyncCallEnter  
 (  
     [in]  CALL_ID   in_CallID,  

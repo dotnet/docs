@@ -44,5 +44,5 @@ The ability to access a member in the global [namespace](../../../csharp/languag
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
-- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
+- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifier.md)
 - [extern](../../../csharp/language-reference/keywords/extern.md)

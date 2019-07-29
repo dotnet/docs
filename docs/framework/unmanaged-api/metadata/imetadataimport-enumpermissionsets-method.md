@@ -23,7 +23,7 @@ Enumerates permissions for the objects in a specified metadata scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumPermissionSets  
    [in, out] HCORENUM      *phEnum,   
    [in]      mdToken       tk,   

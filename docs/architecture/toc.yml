@@ -1,0 +1,15 @@
+- name: .NET Application Architecture Guide
+  href: index.yml
+- name: E-books
+  expanded: true
+  items:
+    - name: Architect Modern web applications with ASP.NET Core and Microsoft Azure
+      href: modern-web-apps-azure/
+    - name: Modernize Existing .NET Applications with Azure cloud and Windows Containers
+      href: modernize-with-azure-containers/
+    - name: Containerized Docker Application Lifecycle with the Microsoft Platform and Tools
+      href: containerized-lifecycle/
+    - name: ".NET Microservices: Architecture for Containerized .NET Applications"
+      href: microservices/
+    - name: "Serverless apps: Architecture, patterns, and Azure implementation"
+      href: serverless/

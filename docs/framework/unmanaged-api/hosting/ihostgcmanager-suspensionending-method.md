@@ -23,7 +23,7 @@ Notifies the host that the common language runtime (CLR) is resuming execution o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SuspensionEnding (  
     [in] DWORD generation  
 );  

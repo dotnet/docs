@@ -23,7 +23,7 @@ Requests that the common language runtime (CLR) create an iterator for the host 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateRWLockOwnerIterator (  
     [in]  SIZE_T    cookie,  
     [out] SIZE_T   *pIterator  

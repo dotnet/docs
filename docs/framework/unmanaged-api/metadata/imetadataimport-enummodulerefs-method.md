@@ -23,7 +23,7 @@ Enumerates ModuleRef tokens that represent imported modules.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumModuleRefs (  
    [in, out] HCORENUM     *phEnum,  
    [out]     mdModuleRef  rModuleRefs[],  

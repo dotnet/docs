@@ -23,7 +23,7 @@ Gets a block of contiguous memory starting at the specified address, and returns
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReadVirtual(  
     [in] CORDB_ADDRESS   address,  
     [out, size_is(bytesRequested), length_is(*pBytesRead)]  

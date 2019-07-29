@@ -23,7 +23,7 @@ Gets a symbol reader method, given a method token and an edit-and-copy version n
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodByVersion (  
     [in]  mdMethodDef  token,  
     [in]  int  version,  

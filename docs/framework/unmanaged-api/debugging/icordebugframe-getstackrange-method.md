@@ -23,7 +23,7 @@ Gets the absolute address range of this stack frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackRange (  
     [out] CORDB_ADDRESS      *pStart,   
     [out] CORDB_ADDRESS      *pEnd  

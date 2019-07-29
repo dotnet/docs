@@ -23,7 +23,7 @@ Gets a ModuleRef token to represent the target assembly of a PInvoke call.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPinvokeMap (  
    [in]  mdToken       tk,  
    [out] DWORD         *pdwMappingFlags,  

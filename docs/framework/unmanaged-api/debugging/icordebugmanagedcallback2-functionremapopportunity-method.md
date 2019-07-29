@@ -23,7 +23,7 @@ Notifies the debugger that code execution has reached a sequence point in an old
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FunctionRemapOpportunity (  
     [in] ICorDebugAppDomain   *pAppDomain,  
     [in] ICorDebugThread      *pThread,  

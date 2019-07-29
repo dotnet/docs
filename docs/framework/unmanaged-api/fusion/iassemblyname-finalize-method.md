@@ -23,7 +23,7 @@ Allows this [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iass
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Finalize ();  
 ```  
   

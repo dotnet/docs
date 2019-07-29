@@ -23,7 +23,7 @@ Gets the index of the next binary large object (BLOB) in the table.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextBlob (  
     [in]  ULONG   ixBlob,  
     [out] ULONG   *pNext  

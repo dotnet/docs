@@ -10,7 +10,7 @@ Gets the size of the memory buffer in bytes.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize(  
    [out] ULONG32 *pcbBufferLength  
 );  

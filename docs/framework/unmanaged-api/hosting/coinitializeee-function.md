@@ -23,7 +23,7 @@ Ensures that the common language runtime execution engine is loaded into a proce
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CoInitializeEE (  
    [in] DWORD fFlags  
 );  

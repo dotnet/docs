@@ -23,7 +23,7 @@ Gets the current Win32 thread identity for the specified thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadInfo(  
     [in]  ThreadID threadId,  
     [out] DWORD    *pdwWin32ThreadId);  

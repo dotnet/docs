@@ -24,7 +24,7 @@ Defines an IL to address mapping.
 
 ## Syntax
 
-```
+```cpp
 typedef struct
 {
     ULONG32 ilOffset;

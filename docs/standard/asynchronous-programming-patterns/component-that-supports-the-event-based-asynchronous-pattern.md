@@ -47,14 +47,14 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Creating the Component  
  The first step is to create the component that will implement the Event-based Asynchronous Pattern.  
   
-#### To create the component  
+### To create the component  
   
 - Create a class called `PrimeNumberCalculator` that inherits from <xref:System.ComponentModel.Component>.  
   
 ## Defining Public Asynchronous Events and Delegates  
  Your component communicates to clients using events. The _MethodName_**Completed** event alerts clients to the completion of an asynchronous task, and the _MethodName_**ProgressChanged** event informs clients of the progress of an asynchronous task.  
   
-#### To define asynchronous events for clients of your component:  
+### To define asynchronous events for clients of your component:  
   
 1. Import the <xref:System.Threading?displayProperty=nameWithType> and <xref:System.Collections.Specialized?displayProperty=nameWithType> namespaces at the top of your file.  
   
@@ -79,7 +79,7 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Checkpoint  
  At this point, you can build the component.  
   
-#### To test your component  
+### To test your component  
   
 - Compile the component.  
   
@@ -95,7 +95,7 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Defining Private Delegates  
  The asynchronous aspects of the `PrimeNumberCalculator` component are implemented internally with a special delegate known as a <xref:System.Threading.SendOrPostCallback>. A <xref:System.Threading.SendOrPostCallback> represents a callback method that executes on a <xref:System.Threading.ThreadPool> thread. The callback method must have a signature that takes a single parameter of type <xref:System.Object>, which means you will need to pass state among delegates in a wrapper class. For more information, see <xref:System.Threading.SendOrPostCallback>.  
   
-#### To implement your component's internal asynchronous behavior:  
+### To implement your component's internal asynchronous behavior:  
   
 1. Declare and create the <xref:System.Threading.SendOrPostCallback> delegates in the `PrimeNumberCalculator` class. Create the <xref:System.Threading.SendOrPostCallback> objects in a utility method called `InitializeDelegates`.  
   
@@ -126,7 +126,7 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Implementing Public Events  
  Components that implement the Event-based Asynchronous Pattern communicate to clients using events. These events are invoked on the proper thread with the help of the <xref:System.ComponentModel.AsyncOperation> class.  
   
-#### To raise events to your component's clients:  
+### To raise events to your component's clients:  
   
 1. Implement public events for reporting to clients. You will need an event for reporting progress and one for reporting completion.  
   
@@ -140,7 +140,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
  The `CompletionMethod` signature must hold all state necessary to describe the outcome of the asynchronous operation. It holds state for the number that was tested by this particular asynchronous operation, whether the number is prime, and the value of its first divisor if it is not a prime number. It also holds state describing any exception that occurred, and the <xref:System.ComponentModel.AsyncOperation> corresponding to this particular task.  
   
-#### To complete an asynchronous operation:  
+### To complete an asynchronous operation:  
   
 - Implement the completion method. It takes six parameters, which it uses to populate a `CalculatePrimeCompletedEventArgs` that is returned to the client through the client's `CalculatePrimeCompletedEventHandler`. It removes the client's task ID token from the internal collection, and it ends the asynchronous operation's lifetime with a call to <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A>. The <xref:System.ComponentModel.AsyncOperation> marshals the call to the thread or context that is appropriate for the application model.  
   
@@ -150,7 +150,7 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Checkpoint  
  At this point, you can build the component.  
   
-#### To test your component  
+### To test your component  
   
 - Compile the component.  
   
@@ -172,7 +172,7 @@ If you are writing a class with some operations that may incur noticeable delays
 > [!NOTE]
 >  Progress reporting is implemented in the `BuildPrimeNumberList` method. On fast computers, `ProgressChanged` events can be raised in rapid succession. The client thread, on which these events are raised, must be able to handle this situation. User interface code may be flooded with messages and unable to keep up, resulting in unresponsiveness. For an example user interface that handles this situation, see [How to: Implement a Client of the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
-#### To execute the prime number calculation asynchronously:  
+### To execute the prime number calculation asynchronously:  
   
 1. Implement the `TaskCanceled` utility method. This checks the task lifetime collection for the given task ID, and returns `true` if the task ID is not found.  
   
@@ -204,7 +204,7 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Checkpoint  
  At this point, you can build the component.  
   
-#### To test your component  
+### To test your component  
   
 - Compile the component.  
   
@@ -215,7 +215,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
  You cancel a particular pending operation by calling <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> on its corresponding <xref:System.ComponentModel.AsyncOperation>. This ends that operation, and any subsequent calls to its <xref:System.ComponentModel.AsyncOperation> will throw an exception.  
   
-#### To implement Start and Cancel functionality:  
+### To implement Start and Cancel functionality:  
   
 1. Implement the `CalculatePrimeAsync` method. Make sure the client-supplied token (task ID) is unique with respect to all the tokens representing currently pending tasks. If the client passes in a non-unique token, `CalculatePrimeAsync` raises an exception. Otherwise, the token is added to the task ID collection.  
   
@@ -230,7 +230,7 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Checkpoint  
  At this point, you can build the component.  
   
-#### To test your component  
+### To test your component  
   
 - Compile the component.  
   

@@ -23,7 +23,7 @@ Gets the metadata associated with the generic parameter constraint represented b
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGenericParamConstraintProps (  
    [in]  mdGenericParamConstraint  gpc,  
    [out] mdGenericParam            *ptGenericParam,  

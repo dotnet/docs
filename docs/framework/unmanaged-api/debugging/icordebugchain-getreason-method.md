@@ -23,7 +23,7 @@ Gets the reason for the genesis of this calling chain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReason (  
     [out] CorDebugChainReason *pReason  
 );  

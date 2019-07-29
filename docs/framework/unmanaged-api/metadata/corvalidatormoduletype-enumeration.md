@@ -22,7 +22,7 @@ Specifies the type of a module.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     ValidatorModuleTypeInvalid  = 0x0,  

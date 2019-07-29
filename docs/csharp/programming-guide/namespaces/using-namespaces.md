@@ -78,7 +78,7 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
   
  [!code-csharp[csProgGuideNamespaces#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#15)]  
   
- This works, but if a type named `Alias` were to subsequently be introduced, `Alias.` would bind to that type instead. Using `Alias::Exception` insures that `Alias` is treated as a namespace alias and not mistaken for a type.  
+ This works, but if a type named `Alias` were to subsequently be introduced, `Alias.` would bind to that type instead. Using `Alias::Exception` ensures that `Alias` is treated as a namespace alias and not mistaken for a type.  
   
  See the topic [How to: Use the Global Namespace Alias](../../../csharp/programming-guide/namespaces/how-to-use-the-global-namespace-alias.md) for more information regarding the `global` alias.  
   
@@ -87,5 +87,5 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
 - [. Operator](../../../csharp/language-reference/operators/member-access-operators.md#member-access-operator-)
-- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
-- [extern](../../../csharp/language-reference/keywords/extern.md)
+- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifier.md)
+- [extern alias](../../../csharp/language-reference/keywords/extern-alias.md)

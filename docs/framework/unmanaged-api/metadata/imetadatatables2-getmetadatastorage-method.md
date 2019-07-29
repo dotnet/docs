@@ -23,7 +23,7 @@ Gets the size and contents of the metadata stored in the specified section.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataStorage (  
    [in, out] const void   **ppvMd,  
    [out] ULONG   *pcbMd  

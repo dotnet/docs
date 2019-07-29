@@ -23,7 +23,7 @@ Gets the size, in bytes, of the pointer type that the target process uses. This 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPointerSize (  
     [out] ULONG32     *pointerSize  
 );  

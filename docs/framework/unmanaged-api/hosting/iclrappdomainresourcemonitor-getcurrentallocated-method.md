@@ -23,7 +23,7 @@ Gets the total size, in bytes, of all memory allocations that have been made by 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentAllocated([in]  DWORD dwAppDomainId,  
                             [out] ULONGLONG* pBytesAllocated);  
 ```  

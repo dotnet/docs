@@ -22,7 +22,7 @@ Specifies the security actions that can be performed using declarative security.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDeclSecurity {  
   
     dclActionMask               =   0x001f,  

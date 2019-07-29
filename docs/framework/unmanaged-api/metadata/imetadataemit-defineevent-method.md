@@ -23,7 +23,7 @@ Creates a definition for an event with the specified metadata signature, and get
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineEvent (   
     [in]  mdTypeDef    td,   
     [in]  LPCWSTR      szEvent,   

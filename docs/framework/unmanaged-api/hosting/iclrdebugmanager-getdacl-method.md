@@ -23,7 +23,7 @@ This method is not implemented.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDacl (  
     [out] PACL* ppacl  
 );  

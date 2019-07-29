@@ -23,7 +23,7 @@ Opens an area of memory that contains existing metadata. That is, this method op
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScopeOnMemory (  
     [in]  LPCVOID     pData,   
     [in]  ULONG       cbData,   

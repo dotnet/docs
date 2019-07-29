@@ -23,7 +23,7 @@ Gets a value that indicates whether this ICorDebugStepper is currently executing
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsActive (  
     [out] BOOL   *pbActive  
 );  

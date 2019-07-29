@@ -23,7 +23,7 @@ Starts the common language runtime (CLR).
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Start ();  
 ```  
   

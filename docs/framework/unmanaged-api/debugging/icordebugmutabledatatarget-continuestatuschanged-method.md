@@ -10,7 +10,7 @@ Changes the continuation status for the outstanding debug event on the specified
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ContinueStatusChanged(  
    [in] DWORD dwThreadId,  
    [in] CORDB_CONTINUE_STATUS continueStatus);  

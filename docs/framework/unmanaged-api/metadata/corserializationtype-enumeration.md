@@ -22,7 +22,7 @@ Specifies how an object is serialized by the common language runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSerializationType {  
   
     SERIALIZATION_TYPE_UNDEFINED     = 0,  

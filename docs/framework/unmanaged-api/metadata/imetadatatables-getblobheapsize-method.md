@@ -23,7 +23,7 @@ Gets the size, in bytes, of the binary large object (BLOB) heap.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBlobHeapSize (  
     [out] ULONG     *pcbBlobs  
 );   

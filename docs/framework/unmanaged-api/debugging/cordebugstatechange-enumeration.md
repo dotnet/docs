@@ -19,7 +19,7 @@ Describes the amount of cached data that must be discarded based on changes to t
 
 ## Syntax
 
-```
+```cpp
 typedef enum CorDebugStateChange
 {
     PROCESS_RUNNING = 0x0000001,

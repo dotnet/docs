@@ -23,7 +23,7 @@ Gets the specified number of [COR_GC_REFERENCE](../../../../docs/framework/unman
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next(  
     [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetched)] COR_GC_REFERENCE roots[],   
     [out] ULONG *pceltFetched  

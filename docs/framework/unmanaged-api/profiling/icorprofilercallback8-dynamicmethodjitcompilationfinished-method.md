@@ -18,7 +18,7 @@ Notifies the profiler whenever JIT compilation of a dynamic method has completed
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DynamicMethodJITCompilationFinished(  
      [in]  FunctionID  functionId,   
      [in]  BOOL        hrStatus,   

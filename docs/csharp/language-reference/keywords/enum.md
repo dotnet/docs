@@ -1,18 +1,17 @@
 ---
 title: "enum keyword - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "enum"
   - "enum_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "enum keyword [C#]"
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
 ---
 # enum (C# Reference)
 
-The `enum` keyword is used to declare an enumeration, a distinct type that consists of a set of named constants called the enumerator list.  
+The `enum` keyword is used to declare an enumeration, a distinct type that consists of a set of named constants called the enumerator list.
 
 Usually it is best to define an enum directly within a namespace so that all classes in the namespace can access it with equal convenience. However, an enum can also be nested within a class or struct.
 
@@ -35,7 +34,6 @@ Every enumeration type has an underlying type, which can be any [integral numeri
 ```csharp
 enum Day : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 ```
-
 
 A variable of an enumeration type can be assigned any value in the range of the underlying type; the values are not limited to the named constants.
 

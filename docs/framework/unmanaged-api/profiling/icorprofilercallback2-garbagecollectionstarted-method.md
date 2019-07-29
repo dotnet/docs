@@ -23,7 +23,7 @@ Notifies the code profiler that garbage collection has started.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GarbageCollectionStarted(  
     [in] int cGenerations,  
     [in, size_is(cGenerations), length_is(cGenerations)] BOOL generationCollected[],  

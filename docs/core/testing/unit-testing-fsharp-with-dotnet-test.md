@@ -4,8 +4,6 @@ description: Learn unit test concepts for F# in .NET Core through an interactive
 author: billwagner
 ms.author: wiwagn
 ms.date: 08/30/2017
-dev_langs: 
-  - "fsharp"
 ms.custom: "seodec18"
 ---
 # Unit testing F# libraries in .NET Core using dotnet test and xUnit
@@ -108,9 +106,9 @@ let ``Sequence of Evens returns empty collection`` () =
     Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)
 ```
 
-Your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `MathService` class that works:
+Your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the `MathService` class that works:
 
-```csharp
+```fsharp
 let squaresOfOdds xs =
     Seq.empty<int>
 ```

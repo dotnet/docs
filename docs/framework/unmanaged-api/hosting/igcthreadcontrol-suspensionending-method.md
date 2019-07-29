@@ -23,7 +23,7 @@ Notifies the host that the runtime is resuming threads after a garbage collectio
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SuspensionEnding (  
     [in] DWORD Generation  
 );  

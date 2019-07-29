@@ -25,7 +25,7 @@ Truncates the specified code section by the specified length.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT TruncateSection (  
     [in]  HCEESECTION     section,  
     [in]  ULONG           len  

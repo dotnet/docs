@@ -95,7 +95,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Setting|Description|  
 |-------------|-----------------|  
 |**Disable Hardware Acceleration Option**|Specifies whether hardware acceleration should be enabled.|  
-|**Maximum Multisample Value**|Specifies the degree of multisampling for antialiasing [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] content.|  
+|**Maximum Multisample Value**|Specifies the degree of multisampling for antialiasing 3-D content.|  
 |**Required Video Driver Date Setting**|Specifies whether the system disables hardware acceleration for drivers released before November 2004.|  
 |**Use Reference Rasterizer Option**|Specifies whether [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] should use the reference rasterizer.|  
   

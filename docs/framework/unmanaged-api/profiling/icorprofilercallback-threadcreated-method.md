@@ -23,7 +23,7 @@ Notifies the profiler that a thread has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadCreated(  
     [in] ThreadID threadId);   
 ```  

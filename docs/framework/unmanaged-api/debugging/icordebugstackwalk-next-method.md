@@ -23,7 +23,7 @@ Moves the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debuggin
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next();  
 ```  
   

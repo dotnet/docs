@@ -23,7 +23,7 @@ Notifies the debugger that a native event has been fired.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebugEvent (  
     [in] LPDEBUG_EVENT  pDebugEvent,  
     [in] BOOL           fOutOfBand  

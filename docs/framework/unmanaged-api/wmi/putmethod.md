@@ -24,7 +24,7 @@ Creates a method.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT PutMethod (
    [in] int                vFunc, 
    [in] IWbemClassObject*  ptr, 

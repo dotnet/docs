@@ -23,7 +23,7 @@ Creates an [IHostSemaphore](../../../../docs/framework/unmanaged-api/hosting/iho
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateSemaphore (  
     [in]  DWORD dwInitial,  
     [in]  DWORD dwMax,  

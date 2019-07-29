@@ -23,7 +23,7 @@ Gets the results of this evaluation.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetResult (  
     [out] ICorDebugValue    **ppResult  
 );  

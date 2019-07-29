@@ -22,7 +22,7 @@ Contains values that describe the <xref:System.Type> parameters for generic type
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorGenericParamAttr {  
   
     gpVarianceMask                     =   0x0003,  

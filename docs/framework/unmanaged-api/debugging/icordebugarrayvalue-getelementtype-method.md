@@ -23,7 +23,7 @@ Gets a value that indicates the simple type of the elements in the array.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetElementType (  
     [out] CorElementType  *pType  
 );  

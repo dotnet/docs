@@ -24,7 +24,7 @@ Deletes the specified method from a CIM class definition.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Delete (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr, 

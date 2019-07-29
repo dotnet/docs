@@ -1,1 +1,0 @@
-bitmap (BMP)

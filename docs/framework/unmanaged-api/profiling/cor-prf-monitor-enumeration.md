@@ -22,7 +22,7 @@ Contains values that are used to specify behavior, capabilities, or events to wh
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_MONITOR_NONE                = 0x00000000,  
     COR_PRF_MONITOR_FUNCTION_UNLOADS    = 0x00000001,  

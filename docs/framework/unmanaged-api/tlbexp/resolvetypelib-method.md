@@ -21,7 +21,7 @@ Resolves the simple name of a type library by returning its fully qualified path
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ResolveTypeLib(  
     [in]  BSTR      bstrSimpleName,  
     [in]  GUID      tlbid,  

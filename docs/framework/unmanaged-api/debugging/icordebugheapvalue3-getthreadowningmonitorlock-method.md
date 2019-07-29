@@ -23,7 +23,7 @@ Returns the managed thread that owns the monitor lock on this object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadOwningMonitorLock (  
     [out] ICorDebugThread   **ppThread,  
     [out] DWORD              *pAcquisitionCount  

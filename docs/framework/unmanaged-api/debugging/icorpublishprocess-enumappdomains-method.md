@@ -23,7 +23,7 @@ Gets an enumerator for the application domains in the process that is referenced
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumAppDomains (  
     [out] ICorPublishAppDomainEnum   **ppEnum  
 );  

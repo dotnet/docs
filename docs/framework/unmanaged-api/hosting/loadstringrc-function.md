@@ -24,7 +24,7 @@ Translates an HRESULT value into an error message by using the default culture o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadStringRC (  
     [in]  UINT    iResourceID,   
     [out] LPWSTR  szBuffer,   

@@ -25,7 +25,7 @@ Gets the interface referenced by the specified token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIMapTokenIface (  
     [in, out] IUnknown   **pIMapToken  
 );  

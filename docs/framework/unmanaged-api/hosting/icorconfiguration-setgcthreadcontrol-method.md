@@ -23,7 +23,7 @@ Sets the callback interface for scheduling threads for non-runtime tasks that wo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCThreadControl (  
     [in] IGCThreadControl* pGCThreadControl  
 );  

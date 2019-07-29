@@ -23,7 +23,7 @@ Returns the current binding display information.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentDisplay (  
     [out, retval] SAFEARRAY(struct BindingDisplayTabControl) *display  
 );  

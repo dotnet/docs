@@ -35,7 +35,7 @@ Extends the ICorDebugType interface to retrieve the type identifier  of a base t
 ## Example  
  The following code fragment illustrates the use of the [ICorDebugType2::GetTypeID](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-gettypeid-method.md) method.  
   
-```  
+```cpp  
 // (error checking omitted for brevity)  
 // given an ICorDebugType *pType  
   

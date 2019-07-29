@@ -23,7 +23,7 @@ Gets the parameters for this method. The parameters are returned in the order in
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParameters(  
     [in]  ULONG32  cParams,  
     [out] ULONG32  *pcParams,  

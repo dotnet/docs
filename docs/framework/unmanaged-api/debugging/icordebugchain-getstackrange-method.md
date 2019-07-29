@@ -23,7 +23,7 @@ Gets the address range of the stack segment for this chain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackRange (  
     [out] CORDB_ADDRESS      *pStart,   
     [out] CORDB_ADDRESS      *pEnd  

@@ -22,7 +22,7 @@ Contains information about a region of memory in the managed heap.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_SEGMENT {  
     CORDB_ADDRESS start;            
     CORDB_ADDRESS end;              

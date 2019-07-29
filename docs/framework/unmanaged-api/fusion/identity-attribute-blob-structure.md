@@ -24,7 +24,7 @@ Contains information about a single attribute in an assembly, and consists of th
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _IDENTITY_ATTRIBUTE_BLOB {  
     DWORD  ofsNamespace;  
     DWORD  ofsName;  
@@ -51,7 +51,7 @@ typedef struct _IDENTITY_ATTRIBUTE_BLOB {
   
 4. Call the `CurrentIntoBuffer` method of the `IEnumIDENTITY_ATTRIBUTE` interface. This method copies the attributes `Namespace`, `Name`, and `Value` into the character buffer. The three offsets to those strings will become available in the `IDENTITY_ATTRIBUTE_BLOB` structure.  
   
-```  
+```cpp  
 // EnumAssemblyAttributes.cpp : main project file.  
   
 #include "stdafx.h"  

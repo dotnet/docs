@@ -23,7 +23,7 @@ Notifies the profiler that a thread has been destroyed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadDestroyed(  
     [in] ThreadID threadId);  
 ```  

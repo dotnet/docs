@@ -22,7 +22,7 @@ Contains information about the referenced assembly, including its version and it
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct {  
     USHORT  usMajorVersion;  
     USHORT  usMinorVersion;  

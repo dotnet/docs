@@ -23,7 +23,7 @@ Gets an interface pointer to the active (most recent) stack chain on this ICorDe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetActiveChain (  
     [out] ICorDebugChain **ppChain  
 );  

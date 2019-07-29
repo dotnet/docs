@@ -23,7 +23,7 @@ Gets a custom attribute based upon its name. Unlike metadata custom attributes, 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymAttributePreRemap(  
     [in]  mdToken  parent,  
     [in]  WCHAR    *name,  

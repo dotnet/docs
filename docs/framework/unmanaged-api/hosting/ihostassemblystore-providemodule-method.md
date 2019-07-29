@@ -23,7 +23,7 @@ Resolves a module within an assembly or a linked (but not an embedded) resource 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProvideModule (  
     [in]  ModuleBindInfo *pBindInfo,  
     [out] DWORD          *pdwModuleId,  

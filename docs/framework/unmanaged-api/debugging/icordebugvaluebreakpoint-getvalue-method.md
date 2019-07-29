@@ -23,7 +23,7 @@ Gets an interface pointer to an "ICorDebugValue" object that represents the valu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue (  
     [out] ICorDebugValue   **ppValue  
 );  

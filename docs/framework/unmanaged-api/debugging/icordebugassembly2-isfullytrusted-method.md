@@ -23,7 +23,7 @@ Gets a value that indicates whether the assembly has been granted full trust by 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsFullyTrusted(  
     [out] BOOL *pbFullyTrusted  
 );  

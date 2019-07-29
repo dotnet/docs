@@ -23,7 +23,7 @@ Provides the stack frame and argument information of the function that is being 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionEnter3Info(  
             [in]  FunctionID functionId,   
             [in]  COR_PRF_ELT_INFO eltInfo,  

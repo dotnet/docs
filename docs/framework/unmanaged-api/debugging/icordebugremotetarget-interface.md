@@ -22,7 +22,7 @@ Provides methods that enable developers to debug Silverlight-based applications 
   
 ## Syntax  
   
-```  
+```cpp  
 interface ICorDebugRemoteTarget  : IUnknown  
 {  
     HRESULT GetHostName (  

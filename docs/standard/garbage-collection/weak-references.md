@@ -29,7 +29,7 @@ The garbage collector cannot collect an object in use by an application while th
   
 - Short  
   
-     The target of a short weak reference becomes `null` when the object is reclaimed by garbage collection. The weak reference is itself a managed object, and is subject to garbage collection just like any other managed object.  A short weak reference is the default constructor for <xref:System.WeakReference>.  
+     The target of a short weak reference becomes `null` when the object is reclaimed by garbage collection. The weak reference is itself a managed object, and is subject to garbage collection just like any other managed object.  A short weak reference is the parameterless constructor for <xref:System.WeakReference>.  
   
 - Long  
   

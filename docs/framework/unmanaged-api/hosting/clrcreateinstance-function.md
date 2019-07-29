@@ -23,7 +23,7 @@ Provides one of three interfaces: [ICLRMetaHost](../../../../docs/framework/unma
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CLRCreateInstance(  
     [in]  REFCLSID  clsid,  
     [in]  REFIID     riid,  
@@ -60,7 +60,7 @@ HRESULT CLRCreateInstance(
   
  The following code shows how to use `CLRCreateInstance` to get all three interfaces:  
   
-```  
+```cpp  
 #include <metahost.h>  
 #pragma comment(lib, "mscoree.lib")  
   

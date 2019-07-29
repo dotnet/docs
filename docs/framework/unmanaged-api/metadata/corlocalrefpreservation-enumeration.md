@@ -22,7 +22,7 @@ Contains flag values for the treatment of local references.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorLocalRefPreservation  
 {  
     MDPreserveLocalRefsNone     =   0x00000000,  

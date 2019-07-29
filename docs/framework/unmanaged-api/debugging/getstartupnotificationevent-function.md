@@ -24,7 +24,7 @@ Creates or opens an event handle that will be signaled upon by any common langua
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStartupNotificationEvent  
     (  
     [in]  DWORD     debuggeePID,  

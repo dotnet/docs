@@ -19,16 +19,13 @@
         - name: Integral numeric types
           displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer
           href: builtin-types/integral-numeric-types.md
+        - name: Floating-point numeric types
+          displayName: float, decimal, double, rational, real
+          href: builtin-types/floating-point-numeric-types.md
         - name: char
           href: keywords/char.md
-        - name: decimal
-          href: keywords/decimal.md
-        - name: double
-          href: keywords/double.md
         - name: enum
           href: keywords/enum.md
-        - name: float
-          href: keywords/float.md
         - name: struct
           href: keywords/struct.md
       - name: Reference Types
@@ -37,26 +34,21 @@
           href: keywords/reference-types.md
         - name: class
           href: keywords/class.md
-        - name: delegate
-          href: keywords/delegate.md
-        - name: dynamic
-          href: keywords/dynamic.md
+        - name: Built-in reference types
+          displayName: object, delegate, dynamic, string
+          href: builtin-types/reference-types.md
         - name: interface
           href: keywords/interface.md
-        - name: object
-          href: keywords/object.md
-        - name: string
-          href: keywords/string.md
       - name: void
         href: keywords/void.md
       - name: var
         href: keywords/var.md
+      - name: Unmanaged types
+        href: builtin-types/unmanaged-types.md
       - name: Reference tables for types
         items:
         - name: Built-in types table
           href: keywords/built-in-types-table.md
-        - name: Floating-point types table
-          href: keywords/floating-point-types-table.md
         - name: Value types table
           href: keywords/value-types-table.md
         - name: Default values table
@@ -215,18 +207,6 @@
       items:
       - name: await
         href: keywords/await.md
-      - name: sizeof
-        href: keywords/sizeof.md
-      - name: nameof
-        href: keywords/nameof.md
-    - name: Conversion Keywords
-      items:
-      - name: explicit
-        href: keywords/explicit.md
-      - name: implicit
-        href: keywords/implicit.md
-      - name: operator
-        href: keywords/operator.md
     - name: Access Keywords
       items:
       - name: base
@@ -324,6 +304,9 @@
     - name: Type-testing and conversion operators
       href: operators/type-testing-and-conversion-operators.md
       displayName: "is operator, is keyword, as operator, as keyword, typeof, (), cast"
+    - name: User-defined conversion operators
+      href: operators/user-defined-conversion-operators.md
+      displayName: implicit, explicit
     - name: Pointer related operators
       href: operators/pointer-related-operators.md
       displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
@@ -346,14 +329,23 @@
       href: operators/lambda-operator.md
       displayName: lambda
     - name: ":: operator"
-      href: operators/namespace-alias-qualifer.md
+      href: operators/namespace-alias-qualifier.md
       displayName: "namespace alias qualifier"
+    - name: delegate operator
+      href: operators/delegate-operator.md
+      displayName: anonymous
+    - name: nameof operator
+      href: operators/nameof.md
     - name: new operator
       href: operators/new-operator.md
+    - name: sizeof operator
+      href: operators/sizeof.md
     - name: stackalloc operator
       href: operators/stackalloc.md
     - name: true and false operators
       href: operators/true-false-operators.md
+    - name: Operator overloading
+      href: operators/operator-overloading.md
   - name: C# special characters
     items:
     - name: Overview

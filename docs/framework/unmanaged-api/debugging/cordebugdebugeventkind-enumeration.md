@@ -18,7 +18,7 @@ Indicates the type of event whose information is decoded by the [DecodeEvent](..
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugDebugEventKind {  
     DEBUG_EVENT_KIND_MODULE_LOADED                          = 1,  
     DEBUG_EVENT_KIND_MODULE_UNLOADED                        = 2,  

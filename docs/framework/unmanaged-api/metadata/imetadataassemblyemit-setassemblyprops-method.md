@@ -23,7 +23,7 @@ Modifies the specified `Assembly` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyProps (  
     [in] mdAssembly               pma,  
     [in] const void               *pbPublicKey,  

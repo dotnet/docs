@@ -23,7 +23,7 @@ Requests that the host allocate the specified amount of memory from the heap.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Alloc (  
     [in] SIZE_T  cbSize,   
     [in] EMemoryCriticalLevel dwCriticalLevel,   

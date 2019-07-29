@@ -1,5 +1,5 @@
 ---
-title: "Constraints on Type Parameters - C# Programming Guide"
+title: "Constraints on type parameters - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 04/12/2018
 helpviewer_keywords: 
@@ -16,7 +16,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 |----------------|-----------------|
 |`where T : struct`|The type argument must be a value type. Any value type except <xref:System.Nullable%601> can be specified. For more information about nullable types, see [Nullable types](../nullable-types/index.md).|
 |`where T : class`|The type argument must be a reference type. This constraint applies also to any class, interface, delegate, or array type.|
-|`where T : unmanaged`|The type argument must not be a reference type and must not contain any reference type members at any level of nesting.|
+|`where T : unmanaged`|The type argument must be an [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md).|
 |`where T : new()`|The type argument must have a public parameterless constructor. When used together with other constraints, the `new()` constraint must be specified last.|
 |`where T :` *\<base class name>*|The type argument must be or derive from the specified base class.|
 |`where T :` *\<interface name>*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic.|
@@ -72,7 +72,7 @@ The usefulness of type parameters as constraints with generic classes is limited
 
 ## Unmanaged constraint
 
-Beginning with C# 7.3, you can use the `unmanaged` constraint to specify that the type parameter must be an **unmanaged type**. An **unmanaged type** is a type that is not a reference type and doesn't contain reference type fields at any level of nesting. The `unmanaged` constraint enables you to write reusable routines to work with types that can be manipulated as blocks of memory, as shown in the following example:
+Beginning with C# 7.3, you can use the `unmanaged` constraint to specify that the type parameter must be an [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md). The `unmanaged` constraint enables you to write reusable routines to work with types that can be manipulated as blocks of memory, as shown in the following example:
 
 [!code-csharp[using the unmanaged constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#15)]
 

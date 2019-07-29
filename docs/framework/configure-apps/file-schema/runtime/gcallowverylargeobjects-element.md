@@ -71,6 +71,10 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 </configuration>  
 ```  
   
+## Supported in
+
+.NET Framework 4.5 and later versions
+
 ## See also
 
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)

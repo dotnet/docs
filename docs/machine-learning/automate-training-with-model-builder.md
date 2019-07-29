@@ -4,11 +4,11 @@ description: How to use the ML.NET Model Builder to automatically train a machin
 author: natke
 ms.date: 06/26/2019
 ms.custom: overview
-#Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface. 
+#Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
 # What is Model Builder and how does it work?
 
-ML.NET Model Builder is an easy-to-understand graphical Visual Studio extension to build, train, and deploy custom machine learning models. 
+ML.NET Model Builder is an easy-to-understand graphical Visual Studio extension to build, train, and deploy custom machine learning models.
 
 Model Builder uses automated machine learning (AutoML) to explore different machine learning algorithms and settings to help you find the one that best suits your scenario.
 
@@ -47,7 +47,7 @@ Binary classification is used to categorize data into two classes (yes/no; pass/
 - Is this credit card transaction fraudulent? (fraud detection)
 
 If your scenario requires classification into two categories, you can use this template with your own dataset.
- 
+
 #### Issue classification (multiclass classification)
 
 Issue classification can be used to categorize customer feedback (for example, on GitHub) issues using the issue title and description. It is an example of the multi-class classification task.
@@ -137,10 +137,10 @@ You can provide a training time. In general, training for a longer time produces
 Dataset Size  | Dataset Type       | Avg. Time to train
 ------------- | ------------------ | --------------
 0 - 10 Mb     | Numeric and Text   | 10 sec
-10 - 100 Mb   | Numeric and Text   | 10 min 
-100 - 500 Mb  | Numeric and Text   | 30 min 
-500 - 1 Gb    | Numeric and Text   | 60 min 
-1 Gb+         | Numeric and Text   | 3 hour+ 
+10 - 100 Mb   | Numeric and Text   | 10 min
+100 - 500 Mb  | Numeric and Text   | 30 min
+500 - 1 Gb    | Numeric and Text   | 60 min
+1 Gb+         | Numeric and Text   | 3 hour+
 
 The exact time to train also depends on:
 
@@ -155,13 +155,13 @@ Model Builder has been tested for scale with a 1-TB dataset, but building a high
 
 Evaluation is the process of using the trained model to make predictions with new test data, and then measuring how good the predictions are.
 
-Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model.  The metrics used for evaluation depend on the ML task. For more information, see [model evaluation metrics](resources/metrics.md).  
+Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model.  The metrics used for evaluation depend on the ML task. For more information, see [model evaluation metrics](resources/metrics.md).
 
 ### Sentiment analysis (binary classification)
 
 The default metric for binary classification problems is **accuracy**. Accuracy defines the proportion of correct predictions your model makes over the test dataset. The **closer to 100%, the better it is**.
 
-Other metrics reported such as AUC (Area under the curve), which measures the true positive rate vs. the false positive rate, should be greater than 0.50 for models to be acceptable. 
+Other metrics reported such as AUC (Area under the curve), which measures the true positive rate vs. the false positive rate, should be greater than 0.50 for models to be acceptable.
 
 Additional metrics such as F1 score can be used to control the balance between precision (ratio of correct predictions to the total predictions of that class) and recall (proportion of correct predictions to the total actual members of that class).
 
@@ -171,15 +171,14 @@ The default metric for multiclass classification problems is **micro accuracy**.
 
 For problems where data is categorized into multiple classes there are two types of accuracy:
 
-- Micro-accuracy: the fraction of predictions that are correct across all instances. In the issue classification scenario, micro-accuracy is the proportion of incoming issues that get assigned to the correct category. 
+- Micro-accuracy: the fraction of predictions that are correct across all instances. In the issue classification scenario, micro-accuracy is the proportion of incoming issues that get assigned to the correct category.
 - Macro-accuracy: the average accuracy at the class level. In the issue classification scenario, the accuracy is measured for each category, and then the category accuracies are averaged. For this metric, all classes are given equal weight. For perfectly balanced datasets (where there are an equal number of examples of each category), micro-accuracy and macro-accuracy are the same.
-
 
 ### Price prediction (regression)
 
 The default metric for regression problems is **RSquared**. 1 is the best possible value. The closer RSquared is to 1, the better your model is.
 
-Other metrics reported, such as absolute-loss, squared-loss, and RMS loss can be used to understand your model, and compare it with other regression models. 
+Other metrics reported, such as absolute-loss, squared-loss, and RMS loss can be used to understand your model, and compare it with other regression models.
 
 ## Improve
 
@@ -187,7 +186,7 @@ If your model performance score is not as good as you want it to be, you can:
 
 * Train for a longer period of time. With more time, the automated machine learning engine to try more algorithms and settings.
 
-* Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model. 
+* Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model.
 
 * Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have four classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
 

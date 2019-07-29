@@ -23,7 +23,7 @@ Gets the local constants defined within this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetConstants(  
      [in]  ULONG32  cConstants,  
      [out] ULONG32  *pcConstants,  

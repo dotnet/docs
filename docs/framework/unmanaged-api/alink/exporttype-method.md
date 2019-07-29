@@ -22,7 +22,7 @@ Specifies that a type is exportable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExportType(  
     mdAssembly      AssemblyID,  
     mdToken         FileToken,  

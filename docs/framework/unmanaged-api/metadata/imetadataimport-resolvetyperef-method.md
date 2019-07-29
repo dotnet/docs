@@ -23,7 +23,7 @@ Resolves a <xref:System.Type> reference represented by the specified TypeRef tok
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ResolveTypeRef (  
    [in]  mdTypeRef       tr,  
    [in]  REFIID          riid,  

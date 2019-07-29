@@ -59,7 +59,7 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
   
  `Option Infer Off`  
   
- If you do not specify a value for `Option Infer` in your code, the compiler default is `Option Infer On`. For projects upgraded from [!INCLUDE[vb_orcas_long](~/includes/vb-orcas-long-md.md)] or earlier, the compiler default is `Option Infer Off`.  
+ If you do not specify a value for `Option Infer` in your code, the compiler default is `Option Infer On`. 
   
  If the value set for `Option Infer` in a file conflicts with the value set in the IDE or on the command line, the value in the file has precedence.  
   

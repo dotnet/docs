@@ -21,7 +21,7 @@ Provides an enumerator for the interface types that the current object has been 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCachedInterfaceTypes(  
     [in] BOOL bIInspectableOnly,  
     [out] ICorDebugTypeEnum **ppInterfacesEnum);  

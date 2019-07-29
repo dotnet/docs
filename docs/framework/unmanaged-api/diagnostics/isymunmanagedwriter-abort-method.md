@@ -23,7 +23,7 @@ Closes the symbol writer without committing the symbols to the symbol store. Aft
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Abort();  
 ```  
   

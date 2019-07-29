@@ -13,7 +13,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
  For purposes of this walkthrough, you will use two methods that have been mapped to stored procedures in the Northwind sample database: CustOrdersDetail and CustOrderHist. The mapping occurs when you run the SqlMetal command-line tool to generate a Visual Basic file. For more information, see the Prerequisites section later in this walkthrough.  
   
- This walkthrough does not rely on the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]. Developers using Visual Studio can also use the [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] to implement stored procedure functionality. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
+ This walkthrough does not rely on the Object Relational Designer. Developers using Visual Studio can also use the O/R Designer to implement stored procedure functionality. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
   
  [!INCLUDE[note_settings_general](../../../../../../includes/note-settings-general-md.md)]  
   
@@ -54,7 +54,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Creating a LINQ to SQL Solution  
  In this first task, you create a Visual Studio solution that contains the necessary references to build and run a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project.  
   
-#### To create a LINQ to SQL solution  
+### To create a LINQ to SQL solution  
   
 1. On the Visual Studio **File** menu, click **New Project**.  
   
@@ -71,7 +71,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Adding the LINQ to SQL Assembly Reference  
  The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] assembly is not included in the standard Windows Forms Application template. You will have to add the assembly yourself, as explained in the following steps:  
   
-#### To add System.Data.Linq.dll  
+### To add System.Data.Linq.dll  
   
 1. In **Solution Explorer**, click **Show All Files**.  
   
@@ -84,7 +84,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Adding the Northwind Code File to the Project  
  This step assumes that you have used the SqlMetal tool to generate a code file from the Northwind sample database. For more information, see the Prerequisites section earlier in this walkthrough.  
   
-#### To add the northwind code file to the project  
+### To add the northwind code file to the project  
   
 1. On the **Project** menu, click **Add Existing Item**.  
   
@@ -95,7 +95,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Creating a Database Connection  
  In this step, you define the connection to the Northwind sample database. This walkthrough uses "c:\linqtest3\northwnd.mdf" as the path.  
   
-#### To create the database connection  
+### To create the database connection  
   
 1. In **Solution Explorer**, right-click **Form1.vb**, and then click **View Code**.  
   
@@ -108,7 +108,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Setting up the User Interface  
  In this task you create an interface so that users can execute stored procedures to access data in the database. In the application that you are developing with this walkthrough, users can access data in the database only by using the stored procedures embedded in the application.  
   
-#### To set up the user interface  
+### To set up the user interface  
   
 1. Return to the Windows Forms Designer (**Form1.vb[Design]**).  
   
@@ -135,7 +135,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
      Widen the button controls so that all the text is visible.  
   
-#### To handle button clicks  
+### To handle button clicks  
   
 1. Double-click **Order Details** on **Form1** to create the `Button1` event handler and open the code editor.  
   
@@ -152,7 +152,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Testing the Application  
  Now it is time to test your application. Note that your contact with the datastore is limited to whatever actions the two stored procedures can take. Those actions are to return the products included for any orderID you enter, or to return a history of products ordered for any CustomerID you enter.  
   
-#### To test the application  
+### To test the application  
   
 1. Press F5 to start debugging.  
   

@@ -22,7 +22,7 @@ Provides the details of how the value of the instruction pointer (IP) was obtain
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugMappingResult {  
     MAPPING_PROLOG              = 0x1,  
     MAPPING_EPILOG              = 0x2,  

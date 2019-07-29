@@ -22,7 +22,7 @@ Contains values that indicate type metadata.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorTypeAttr {  
   
     tdVisibilityMask        =   0x00000007,  

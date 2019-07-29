@@ -121,352 +121,352 @@
       href: linq-to-xml-vs-dom.md
     - name: LINQ to XML vs. Other XML Technologies
       href: linq-to-xml-vs-other-xml-technologies.md
-- name: Programming Guide (LINQ to XML)
-  href: programming-guide-linq-to-xml.md
-  items:
-  - name: LINQ to XML Programming Overview
-    href: linq-to-xml-programming-overview.md
-  - name: Functional vs. Procedural Programming (LINQ to XML)
-    href: functional-vs-procedural-programming-linq-to-xml.md
-  - name: LINQ to XML Classes Overview
-    href: linq-to-xml-classes-overview.md
-  - name: XElement Class Overview
-    href: xelement-class-overview.md
-  - name: XAttribute Class Overview
-    href: xattribute-class-overview.md
+  - name: Programming Guide (LINQ to XML)
+    href: programming-guide-linq-to-xml.md
     items:
-    - name: XDocument Class Overview
-      href: xdocument-class-overview.md
-    - name: "How to: Build LINQ to XML Examples"
-      href: how-to-build-linq-to-xml-examples.md
-  - name: Creating XML Trees
-    href: creating-xml-trees.md
-    items:
-    - name: Functional Construction (LINQ to XML)
-      href: functional-construction-linq-to-xml.md
-    - name: Introduction to XML Literals
-      href: introduction-to-xml-literals.md
-    - name: Cloning vs. Attaching
-      href: cloning-vs-attaching.md
-    - name: Parsing XML
-      href: parsing-xml.md
+    - name: LINQ to XML Programming Overview
+      href: linq-to-xml-programming-overview.md
+    - name: Functional vs. Procedural Programming (LINQ to XML)
+      href: functional-vs-procedural-programming-linq-to-xml.md
+    - name: LINQ to XML Classes Overview
+      href: linq-to-xml-classes-overview.md
+    - name: XElement Class Overview
+      href: xelement-class-overview.md
+    - name: XAttribute Class Overview
+      href: xattribute-class-overview.md
       items:
-      - name: "How to: Parse a String"
-        href: how-to-parse-a-string.md
-      - name: "How to: Load XML from a File"
-        href: how-to-load-xml-from-a-file.md
-      - name: Preserving White Space while Loading or Parsing XML
-        href: preserving-white-space-while-loading-or-parsing-xml.md
-      - name: "How to: Catch Parsing Errors"
-        href: how-to-catch-parsing-errors.md
-      - name: "How to: Create a Tree from an XmlReader"
-        href: how-to-create-a-tree-from-an-xmlreader.md
-      - name: "How to: Stream XML Fragments from an XmlReader"
-        href: how-to-stream-xml-fragments-from-an-xmlreader.md
-    - name: "How to: Populate an XML Tree with an XmlWriter (LINQ to XML)"
-      href: how-to-populate-an-xml-tree-with-an-xmlwriter-linq-to-xml.md
-    - name: "How to: Validate Using XSD (LINQ to XML)"
-      href: how-to-validate-using-xsd-linq-to-xml.md
-    - name: Valid Content of XElement and XDocument Objects
-      href: valid-content-of-xelement-and-xdocument-objects.md
-- name: Working with XML Namespaces
-  href: working-with-xml-namespaces.md
-  items:
-  - name: Namespaces Overview (LINQ to XML)
-    href: namespaces-overview-linq-to-xml.md
-  - name: "How to: Create a Document with Namespaces (LINQ to XML)"
-    href: how-to-create-a-document-with-namespaces.md
-  - name: "How to: Control Namespace Prefixes (LINQ to XML)"
-    href: how-to-control-namespace-prefixes-linq-to-xml.md
-  - name: Scope of Default Namespaces
-    href: scope-of-default-namespaces.md
-  - name: Working with Global Namespaces (LINQ to XML)
-    href: working-with-global-namespaces-linq-to-xml.md
-  - name: "How to: Write Queries on XML in Namespaces"
-    href: how-to-write-queries-on-xml-in-namespaces.md
-- name: Serializing XML Trees
-  href: serializing-xml-trees.md
-  items:
-  - name: Preserving White Space While Serializing
-    href: preserving-white-space-while-serializing.md
-  - name: Serializing with an XML Declaration
-    href: serializing-with-an-xml-declaration.md
-  - name: Serializing to Files, TextWriters, and XmlWriters
-    href: serializing-to-files-textwriters-and-xmlwriters.md
-  - name: Serializing to an XmlReader (Invoking XSLT)
-    href: serializing-to-an-xmlreader-invoking-xslt.md
-- name: LINQ to XML Axes
-  href: linq-to-xml-axes.md
-  items:
-  - name: LINQ to XML Axes Overview
-    href: linq-to-xml-axes-overview.md
-  - name: "How to: Retrieve a Collection of Elements (LINQ to XML)"
-    href: how-to-retrieve-a-collection-of-elements-linq-to-xml.md
-  - name: "How to: Retrieve the Value of an Element (LINQ to XML)"
-    href: how-to-retrieve-the-value-of-an-element-linq-to-xml.md
-  - name: "How to: Filter on Element Names (LINQ to XML)"
-    href: how-to-filter-on-element-names-linq-to-xml.md
-  - name: "How to: Chain Axis Method Calls (LINQ to XML)"
-    href: how-to-chain-axis-method-calls-linq-to-xml.md
-  - name: "How to: Retrieve a Single Child Element (LINQ to XML)"
-    href: how-to-retrieve-a-single-child-element-linq-to-xml.md
-  - name: "How to: Retrieve a Collection of Attributes (LINQ to XML)"
-    href: how-to-retrieve-a-collection-of-attributes-linq-to-xml.md
-  - name: "How to: Retrieve a Single Attribute (LINQ to XML)"
-    href: how-to-retrieve-a-single-attribute-linq-to-xml.md
-  - name: "How to: Retrieve the Value of an Attribute (LINQ to XML)"
-    href: how-to-retrieve-the-value-of-an-attribute-linq-to-xml.md
-  - name: "How to: Retrieve the Shallow Value of an Element"
-    href: how-to-retrieve-the-shallow-value-of-an-element.md
-  - name: Language-Integrated Axes (LINQ to XML)
-    href: language-integrated-axes.md
-- name: Querying XML Trees
-  href: querying-xml-trees.md
-  items:
-  - name: Basic Queries (LINQ to XML)
-    href: basic-queries-linq-to-xml.md
-    items:
-    - name: "How to: Find an Element with a Specific Attribute"
-      href: how-to-find-an-element-with-a-specific-attribute.md
-    - name: "How to: Find an Element with a Specific Child Element"
-      href: how-to-find-an-element-with-a-specific-child-element.md
-    - name: Querying an XDocument vs. Querying an XElement
-      href: querying-an-xdocument-vs-querying-an-xelement.md
-    - name: "How to: Find Descendants with a Specific Element Name"
-      href: how-to-find-descendants-with-a-specific-element-name.md
-    - name: "How to: Find a Single Descendant Using the Descendants Method"
-      href: how-to-find-a-single-descendant-using-the-descendants-method.md
-    - name: "How to: Write Queries with Complex Filtering"
-      href: how-to-write-queries-with-complex-filtering.md
-    - name: "How to: Filter on an Optional Element"
-      href: how-to-filter-on-an-optional-element.md
-    - name: "How to: Find All Nodes in a Namespace"
-      href: how-to-find-all-nodes-in-a-namespace.md
-    - name: "How to: Sort Elements"
-      href: how-to-sort-elements.md
-    - name: "How to: Sort Elements on Multiple Keys"
-      href: how-to-sort-elements-on-multiple-keys.md
-    - name: "How to: Calculate Intermediate Values"
-      href: how-to-calculate-intermediate-values.md
-    - name: "How to: Write a Query that Finds Elements Based on Context"
-      href: how-to-write-a-query-that-finds-elements-based-on-context.md
-    - name: "How to: Debug Empty Query Results Sets"
-      href: how-to-debug-empty-query-results-sets.md
-  - name: Projections and Transformations (LINQ to XML)
-    href: projections-and-transformations-linq-to-xml.md
-  - name: "How to: Work with Dictionaries Using LINQ to XML"
-    href: how-to-work-with-dictionaries-using-linq-to-xml.md
-    items:
-    - name: "How to: Transform the Shape of an XML Tree"
-      href: how-to-transform-the-shape-of-an-xml-tree.md
-    - name: "How to: Control the Type of a Projection"
-      href: how-to-control-the-type-of-a-projection.md
-    - name: "How to: Project a New Type (LINQ to XML)"
-      href: how-to-project-a-new-type-linq-to-xml.md
-    - name: "How to: Project an Object Graph"
-      href: how-to-project-an-object-graph.md
-    - name: "How to: Project an Anonymous Type"
-      href: how-to-project-an-anonymous-type.md
-    - name: "How to: Generate Text Files from XML"
-      href: how-to-generate-text-files-from-xml.md
-    - name: "How to: Generate XML from CSV Files"
-      href: how-to-generate-xml-from-csv-files.md
-  - name: Advanced Query Techniques (LINQ to XML)
-    href: advanced-query-techniques-linq-to-xml.md
-    items:
-    - name: "How to: Join Two Collections (LINQ to XML)"
-      href: how-to-join-two-collections-linq-to-xml.md
+      - name: XDocument Class Overview
+        href: xdocument-class-overview.md
+      - name: "How to: Build LINQ to XML Examples"
+        href: how-to-build-linq-to-xml-examples.md
+    - name: Creating XML Trees
+      href: creating-xml-trees.md
       items:
-      - name: "How to: Create Hierarchy Using Grouping"
-        href: how-to-create-hierarchy-using-grouping.md
-      - name: "How to: Query LINQ to XML Using XPath"
-        href: how-to-query-linq-to-xml-using-xpath.md
-      - name: "How to: Write a LINQ to XML Axis Method"
-        href: how-to-write-a-linq-to-xml-axis-method.md
-      - name: "How to: List All Nodes in a Tree"
-        href: how-to-list-all-nodes-in-a-tree.md
-      - name: "How to: Retrieve Paragraphs from an Office Open XML Document"
-        href: how-to-retrieve-paragraphs-from-an-office-open-xml-document.md
-      - name: "How to: Modify an Office Open XML Document"
-        href: how-to-modify-an-office-open-xml-document.md
-      - name: "How to: Populate an XML Tree from the File System"
-        href: how-to-populate-an-xml-tree-from-the-file-system.md
-  - name: LINQ to XML for XPath Users
-    href: linq-to-xml-for-xpath-users.md
+      - name: Functional Construction (LINQ to XML)
+        href: functional-construction-linq-to-xml.md
+      - name: Introduction to XML Literals
+        href: introduction-to-xml-literals.md
+      - name: Cloning vs. Attaching
+        href: cloning-vs-attaching.md
+      - name: Parsing XML
+        href: parsing-xml.md
+        items:
+        - name: "How to: Parse a String"
+          href: how-to-parse-a-string.md
+        - name: "How to: Load XML from a File"
+          href: how-to-load-xml-from-a-file.md
+        - name: Preserving White Space while Loading or Parsing XML
+          href: preserving-white-space-while-loading-or-parsing-xml.md
+        - name: "How to: Catch Parsing Errors"
+          href: how-to-catch-parsing-errors.md
+        - name: "How to: Create a Tree from an XmlReader"
+          href: how-to-create-a-tree-from-an-xmlreader.md
+        - name: "How to: Stream XML Fragments from an XmlReader"
+          href: how-to-stream-xml-fragments-from-an-xmlreader.md
+      - name: "How to: Populate an XML Tree with an XmlWriter (LINQ to XML)"
+        href: how-to-populate-an-xml-tree-with-an-xmlwriter-linq-to-xml.md
+      - name: "How to: Validate Using XSD (LINQ to XML)"
+        href: how-to-validate-using-xsd-linq-to-xml.md
+      - name: Valid Content of XElement and XDocument Objects
+        href: valid-content-of-xelement-and-xdocument-objects.md
+  - name: Working with XML Namespaces
+    href: working-with-xml-namespaces.md
     items:
-    - name: Comparison of XPath and LINQ to XML
-      href: comparison-of-xpath-and-linq-to-xml.md
-    - name: "How to: Find a Child Element (XPath-LINQ to XML)"
-      href: how-to-find-a-child-element-xpath-linq-to-xml.md
-    - name: "How to: Find a List of Child Elements (XPath-LINQ to XML)"
-      href: how-to-find-a-list-of-child-elements-xpath-linq-to-xml.md
-    - name: "How to: Find the Root Element (XPath-LINQ to XML)"
-      href: how-to-find-the-root-element-xpath-linq-to-xml.md
-    - name: "How to: Find Descendant Elements (XPath-LINQ to XML)"
-      href: how-to-find-descendant-elements-xpath-linq-to-xml.md
-    - name: "How to: Filter on an Attribute (XPath-LINQ to XML)"
-      href: how-to-filter-on-an-attribute-xpath-linq-to-xml.md
-    - name: "How to: Find Related Elements (XPath-LINQ to XML)"
-      href: how-to-find-related-elements-xpath-linq-to-xml.md
-    - name: "How to: Find Elements in a Namespace (XPath-LINQ to XML)"
-      href: how-to-find-elements-in-a-namespace.md
-    - name: "How to: Find Preceding Siblings (XPath-LINQ to XML)"
-      href: how-to-find-preceding-siblings-xpath-linq-to-xml.md
-    - name: "How to: Find Descendants of a Child Element (XPath-LINQ to XML)"
-      href: how-to-find-descendants-of-a-child-element-xpath-linq-to-xml.md
-    - name: "How to: Find a Union of Two Location Paths (XPath-LINQ to XML)"
-      href: how-to-find-a-union-of-two-location-paths-xpath.md
-    - name: "How to: Find Sibling Nodes (XPath-LINQ to XML)"
-      href: how-to-find-sibling-nodes-xpath-linq-to-xml.md
-    - name: "How to: Find an Attribute of the Parent (XPath-LINQ to XML)"
-      href: how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml.md
-    - name: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML)"
-      href: how-to-find-attributes-of-siblings-with-a-specific-name.md
-    - name: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML)"
-      href: how-to-find-elements-with-a-specific-attribute.md
-    - name: "How to: Find Child Elements Based on Position (XPath-LINQ to XML)"
-      href: how-to-find-child-elements-based-on-position.md
-    - name: "How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML)"
-      href: how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md
-  - name: Pure Functional Transformations of XML
-    href: pure-functional-transformations-of-xml.md
+    - name: Namespaces Overview (LINQ to XML)
+      href: namespaces-overview-linq-to-xml.md
+    - name: "How to: Create a Document with Namespaces (LINQ to XML)"
+      href: how-to-create-a-document-with-namespaces.md
+    - name: "How to: Control Namespace Prefixes (LINQ to XML)"
+      href: how-to-control-namespace-prefixes-linq-to-xml.md
+    - name: Scope of Default Namespaces
+      href: scope-of-default-namespaces.md
+    - name: Working with Global Namespaces (LINQ to XML)
+      href: working-with-global-namespaces-linq-to-xml.md
+    - name: "How to: Write Queries on XML in Namespaces"
+      href: how-to-write-queries-on-xml-in-namespaces.md
+  - name: Serializing XML Trees
+    href: serializing-xml-trees.md
     items:
-    - name: Introduction to Pure Functional Transformations
-      href: introduction-to-pure-functional-transformations.md
-    - name: Concepts and Terminology (Functional Transformation)
-      href: concepts-and-terminology-functional-transformation.md
-    - name: Functional Programming vs. Imperative Programming
-      href: functional-programming-vs-imperative-programming.md
-    - name: Refactoring Into Pure Functions
-      href: refactoring-into-pure-functions.md
-    - name: Applicability of Functional Transformation
-      href: applicability-of-functional-transformation.md
-    - name: Functional Transformation of XML
-      href: functional-transformation-of-xml.md
-    - name: "Tutorial: Deferred Execution"
-      href: tutorial-deferred-execution.md
-    - name: Deferred Execution and Lazy Evaluation in LINQ to XML
-      href: deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
-    - name: Deferred Execution Example
-      href: deferred-execution-example.md
-    - name: "Tutorial: Manipulating Content in a WordprocessingML Document"
-      href: tutorial-manipulating-content-in-a-wordprocessingml-document.md
-    - name: Shape of WordprocessingML Documents
-      href: shape-of-wordprocessingml-documents.md
-    - name: Creating the Source Office Open XML Document
-      href: creating-the-source-office-open-xml-document.md
-    - name: Finding the Default Paragraph Style
-      href: finding-the-default-paragraph-style.md
-    - name: Retrieving the Paragraphs and Their Styles
-      href: retrieving-the-paragraphs-and-their-styles.md
-    - name: Retrieving the Text of the Paragraphs
-      href: retrieving-the-text-of-the-paragraphs.md
-    - name: Refactoring Using an Extension Method
-      href: refactoring-using-an-extension-method.md
-    - name: Refactoring Using a Pure Function
-      href: refactoring-using-a-pure-function.md
-    - name: Projecting XML in a Different Shape
-      href: projecting-xml-in-a-different-shape.md
-    - name: Finding Text in Word Documents
-      href: finding-text-in-word-documents.md
-    - name: Details of Office Open XML WordprocessingML Documents
-      href: details-of-office-open-xml-wordprocessingml-documents.md
-    - name: WordprocessingML Document with Styles
-      href: wordprocessingml-document-with-styles.md
-    - name: Style Part of a WordprocessingML Document
-      href: style-part-of-a-wordprocessingml-document.md
-    - name: Example that Outputs Office Open XML Document Parts
-      href: example-that-outputs-office-open-xml-document-parts.md
-- name: Modifying XML Trees (LINQ to XML)
-  href: modifying-xml-trees-linq-to-xml.md
-  items:
-  - name: In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML)
-    href: in-memory-xml-tree-modification-vs-functional-construction.md
-  - name: Adding Elements, Attributes, and Nodes to an XML Tree
-    href: adding-elements-attributes-and-nodes-to-an-xml-tree.md
-  - name: Modifying Elements, Attributes, and Nodes in an XML Tree
-    href: modifying-elements-attributes-and-nodes-in-an-xml-tree.md
-  - name: Removing Elements, Attributes, and Nodes from an XML Tree
-    href: removing-elements-attributes-and-nodes-from-an-xml-tree.md
-  - name: Maintaining Name-Value Pairs
-    href: maintaining-name-value-pairs.md
-  - name: "How to: Change the Namespace for an Entire XML Tree"
-    href: how-to-change-the-namespace-for-an-entire-xml-tree.md
-- name: Performance (LINQ to XML)
-  href: performance-linq-to-xml.md
-  items:
-  - name: Performance of Chained Queries (LINQ to XML)
-    href: performance-of-chained-queries-linq-to-xml.md
-  - name: Atomized XName and XNamespace Objects (LINQ to XML)
-    href: atomized-xname-and-xnamespace-objects-linq-to-xml.md
-  - name: Pre-Atomization of XName Objects (LINQ to XML)
-    href: pre-atomization-of-xname-objects-linq-to-xml.md
-  - name: Statically Compiled Queries (LINQ to XML)
-    href: statically-compiled-queries-linq-to-xml.md
-- name: Advanced LINQ to XML Programming
-  href: advanced-linq-to-xml-programming.md
-  items:
-  - name: LINQ to XML Annotations
-    href: linq-to-xml-annotations.md
-  - name: LINQ to XML Events
-    href: linq-to-xml-events.md
-  - name: Programming with Nodes
-    href: programming-with-nodes.md
-  - name: Mixed Declarative Code-Imperative Code Bugs (LINQ to XML)
-    href: mixed-declarative-code-imperative-code-bugs-linq-to-xml.md
-  - name: "How to: Stream XML Fragments with Access to Header Information"
-    href: how-to-stream-xml-fragments-with-access-to-header-information.md
-  - name: "How to: Perform Streaming Transform of Large XML Documents"
-    href: how-to-perform-streaming-transform-of-large-xml-documents.md
-  - name: "How to: Read and Write an Encoded Document"
-    href: how-to-read-and-write-an-encoded-document.md
-  - name: Using XSLT to Transform an XML Tree
-    href: using-xslt-to-transform-an-xml-tree.md
-  - name: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style"
-    href: how-to-use-annotation-trees-to-transform-linq-to-xml-trees-in-an-xslt-style.md
-  - name: Serializing Object Graphs that Contain XElement Objects
-    href: serializing-object-graphs-that-contain-xelement-objects.md
+    - name: Preserving White Space While Serializing
+      href: preserving-white-space-while-serializing.md
+    - name: Serializing with an XML Declaration
+      href: serializing-with-an-xml-declaration.md
+    - name: Serializing to Files, TextWriters, and XmlWriters
+      href: serializing-to-files-textwriters-and-xmlwriters.md
+    - name: Serializing to an XmlReader (Invoking XSLT)
+      href: serializing-to-an-xmlreader-invoking-xslt.md
+  - name: LINQ to XML Axes
+    href: linq-to-xml-axes.md
     items:
-    - name: "How to: Serialize Using XmlSerializer"
-      href: how-to-serialize-using-xmlserializer.md
-    - name: "How to: Serialize Using DataContractSerializer"
-      href: how-to-serialize-using-datacontractserializer.md
-  - name: LINQ to XML Security
-    href: linq-to-xml-security.md
-  - name: Sample XML Documents (LINQ to XML)
-    href: sample-xml-documents-linq-to-xml.md
+    - name: LINQ to XML Axes Overview
+      href: linq-to-xml-axes-overview.md
+    - name: "How to: Retrieve a Collection of Elements (LINQ to XML)"
+      href: how-to-retrieve-a-collection-of-elements-linq-to-xml.md
+    - name: "How to: Retrieve the Value of an Element (LINQ to XML)"
+      href: how-to-retrieve-the-value-of-an-element-linq-to-xml.md
+    - name: "How to: Filter on Element Names (LINQ to XML)"
+      href: how-to-filter-on-element-names-linq-to-xml.md
+    - name: "How to: Chain Axis Method Calls (LINQ to XML)"
+      href: how-to-chain-axis-method-calls-linq-to-xml.md
+    - name: "How to: Retrieve a Single Child Element (LINQ to XML)"
+      href: how-to-retrieve-a-single-child-element-linq-to-xml.md
+    - name: "How to: Retrieve a Collection of Attributes (LINQ to XML)"
+      href: how-to-retrieve-a-collection-of-attributes-linq-to-xml.md
+    - name: "How to: Retrieve a Single Attribute (LINQ to XML)"
+      href: how-to-retrieve-a-single-attribute-linq-to-xml.md
+    - name: "How to: Retrieve the Value of an Attribute (LINQ to XML)"
+      href: how-to-retrieve-the-value-of-an-attribute-linq-to-xml.md
+    - name: "How to: Retrieve the Shallow Value of an Element"
+      href: how-to-retrieve-the-shallow-value-of-an-element.md
+    - name: Language-Integrated Axes (LINQ to XML)
+      href: language-integrated-axes.md
+  - name: Querying XML Trees
+    href: querying-xml-trees.md
     items:
-    - name: "Sample XML File: Typical Purchase Order (LINQ to XML)"
-      href: sample-xml-file-typical-purchase-order-linq-to-xml.md
-    - name: "Sample XML File: Typical Purchase Order in a Namespace"
-      href: sample-xml-file-typical-purchase-order-in-a-namespace.md
-    - name: "Sample XML File: Multiple Purchase Orders (LINQ to XML)"
-      href: sample-xml-file-multiple-purchase-orders-linq-to-xml.md
-    - name: "Sample XML File: Multiple Purchase Orders in a Namespace"
-      href: sample-xml-file-multiple-purchase-orders-in-a-namespace.md
-    - name: "Sample XML File: Test Configuration (LINQ to XML)"
-      href: sample-xml-file-test-configuration-linq-to-xml.md
-    - name: "Sample XML File: Test Configuration in a Namespace"
-      href: sample-xml-file-test-configuration-in-a-namespace.md
-    - name: "Sample XML File: Customers and Orders (LINQ to XML)"
-      href: sample-xml-file-customers-and-orders-linq-to-xml.md
-    - name: "Sample XSD File: Customers and Orders"
-      href: sample-xsd-file-customers-and-orders.md
-    - name: "Sample XML File: Customers and Orders in a Namespace"
-      href: sample-xml-file-customers-and-orders-in-a-namespace.md
-    - name: "Sample XML File: Numerical Data (LINQ to XML)"
-      href: sample-xml-file-numerical-data-linq-to-xml.md
-    - name: "Sample XML File: Numerical Data in a Namespace"
-      href: sample-xml-file-numerical-data-in-a-namespace.md
-    - name: "Sample XML File: Books (LINQ to XML)"
-      href: sample-xml-file-books-linq-to-xml.md
-    - name: "Sample XML File: Consolidated Purchase Orders"
-      href: sample-xml-file-consolidated-purchase-orders.md
-    - name: Reference (LINQ to XML)
-      href: reference-linq-to-xml.md
-  - name: LINQ to ADO.NET (Portal Page)
-    href: linq-to-adonet-portal-page.md
-  - name: Enabling a Data Source for LINQ Querying
-    href: enabling-a-data-source-for-linq-querying.md
-  - name: Visual Studio IDE and Tools Support for LINQ
-    href: visual-studio-ide-and-tools-support-for-linq.md
+    - name: Basic Queries (LINQ to XML)
+      href: basic-queries-linq-to-xml.md
+      items:
+      - name: "How to: Find an Element with a Specific Attribute"
+        href: how-to-find-an-element-with-a-specific-attribute.md
+      - name: "How to: Find an Element with a Specific Child Element"
+        href: how-to-find-an-element-with-a-specific-child-element.md
+      - name: Querying an XDocument vs. Querying an XElement
+        href: querying-an-xdocument-vs-querying-an-xelement.md
+      - name: "How to: Find Descendants with a Specific Element Name"
+        href: how-to-find-descendants-with-a-specific-element-name.md
+      - name: "How to: Find a Single Descendant Using the Descendants Method"
+        href: how-to-find-a-single-descendant-using-the-descendants-method.md
+      - name: "How to: Write Queries with Complex Filtering"
+        href: how-to-write-queries-with-complex-filtering.md
+      - name: "How to: Filter on an Optional Element"
+        href: how-to-filter-on-an-optional-element.md
+      - name: "How to: Find All Nodes in a Namespace"
+        href: how-to-find-all-nodes-in-a-namespace.md
+      - name: "How to: Sort Elements"
+        href: how-to-sort-elements.md
+      - name: "How to: Sort Elements on Multiple Keys"
+        href: how-to-sort-elements-on-multiple-keys.md
+      - name: "How to: Calculate Intermediate Values"
+        href: how-to-calculate-intermediate-values.md
+      - name: "How to: Write a Query that Finds Elements Based on Context"
+        href: how-to-write-a-query-that-finds-elements-based-on-context.md
+      - name: "How to: Debug Empty Query Results Sets"
+        href: how-to-debug-empty-query-results-sets.md
+    - name: Projections and Transformations (LINQ to XML)
+      href: projections-and-transformations-linq-to-xml.md
+    - name: "How to: Work with Dictionaries Using LINQ to XML"
+      href: how-to-work-with-dictionaries-using-linq-to-xml.md
+      items:
+      - name: "How to: Transform the Shape of an XML Tree"
+        href: how-to-transform-the-shape-of-an-xml-tree.md
+      - name: "How to: Control the Type of a Projection"
+        href: how-to-control-the-type-of-a-projection.md
+      - name: "How to: Project a New Type (LINQ to XML)"
+        href: how-to-project-a-new-type-linq-to-xml.md
+      - name: "How to: Project an Object Graph"
+        href: how-to-project-an-object-graph.md
+      - name: "How to: Project an Anonymous Type"
+        href: how-to-project-an-anonymous-type.md
+      - name: "How to: Generate Text Files from XML"
+        href: how-to-generate-text-files-from-xml.md
+      - name: "How to: Generate XML from CSV Files"
+        href: how-to-generate-xml-from-csv-files.md
+    - name: Advanced Query Techniques (LINQ to XML)
+      href: advanced-query-techniques-linq-to-xml.md
+      items:
+      - name: "How to: Join Two Collections (LINQ to XML)"
+        href: how-to-join-two-collections-linq-to-xml.md
+        items:
+        - name: "How to: Create Hierarchy Using Grouping"
+          href: how-to-create-hierarchy-using-grouping.md
+        - name: "How to: Query LINQ to XML Using XPath"
+          href: how-to-query-linq-to-xml-using-xpath.md
+        - name: "How to: Write a LINQ to XML Axis Method"
+          href: how-to-write-a-linq-to-xml-axis-method.md
+        - name: "How to: List All Nodes in a Tree"
+          href: how-to-list-all-nodes-in-a-tree.md
+        - name: "How to: Retrieve Paragraphs from an Office Open XML Document"
+          href: how-to-retrieve-paragraphs-from-an-office-open-xml-document.md
+        - name: "How to: Modify an Office Open XML Document"
+          href: how-to-modify-an-office-open-xml-document.md
+        - name: "How to: Populate an XML Tree from the File System"
+          href: how-to-populate-an-xml-tree-from-the-file-system.md
+    - name: LINQ to XML for XPath Users
+      href: linq-to-xml-for-xpath-users.md
+      items:
+      - name: Comparison of XPath and LINQ to XML
+        href: comparison-of-xpath-and-linq-to-xml.md
+      - name: "How to: Find a Child Element (XPath-LINQ to XML)"
+        href: how-to-find-a-child-element-xpath-linq-to-xml.md
+      - name: "How to: Find a List of Child Elements (XPath-LINQ to XML)"
+        href: how-to-find-a-list-of-child-elements-xpath-linq-to-xml.md
+      - name: "How to: Find the Root Element (XPath-LINQ to XML)"
+        href: how-to-find-the-root-element-xpath-linq-to-xml.md
+      - name: "How to: Find Descendant Elements (XPath-LINQ to XML)"
+        href: how-to-find-descendant-elements-xpath-linq-to-xml.md
+      - name: "How to: Filter on an Attribute (XPath-LINQ to XML)"
+        href: how-to-filter-on-an-attribute-xpath-linq-to-xml.md
+      - name: "How to: Find Related Elements (XPath-LINQ to XML)"
+        href: how-to-find-related-elements-xpath-linq-to-xml.md
+      - name: "How to: Find Elements in a Namespace (XPath-LINQ to XML)"
+        href: how-to-find-elements-in-a-namespace.md
+      - name: "How to: Find Preceding Siblings (XPath-LINQ to XML)"
+        href: how-to-find-preceding-siblings-xpath-linq-to-xml.md
+      - name: "How to: Find Descendants of a Child Element (XPath-LINQ to XML)"
+        href: how-to-find-descendants-of-a-child-element-xpath-linq-to-xml.md
+      - name: "How to: Find a Union of Two Location Paths (XPath-LINQ to XML)"
+        href: how-to-find-a-union-of-two-location-paths-xpath.md
+      - name: "How to: Find Sibling Nodes (XPath-LINQ to XML)"
+        href: how-to-find-sibling-nodes-xpath-linq-to-xml.md
+      - name: "How to: Find an Attribute of the Parent (XPath-LINQ to XML)"
+        href: how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml.md
+      - name: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML)"
+        href: how-to-find-attributes-of-siblings-with-a-specific-name.md
+      - name: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML)"
+        href: how-to-find-elements-with-a-specific-attribute.md
+      - name: "How to: Find Child Elements Based on Position (XPath-LINQ to XML)"
+        href: how-to-find-child-elements-based-on-position.md
+      - name: "How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML)"
+        href: how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md
+    - name: Pure Functional Transformations of XML
+      href: pure-functional-transformations-of-xml.md
+      items:
+      - name: Introduction to Pure Functional Transformations
+        href: introduction-to-pure-functional-transformations.md
+      - name: Concepts and Terminology (Functional Transformation)
+        href: concepts-and-terminology-functional-transformation.md
+      - name: Functional Programming vs. Imperative Programming
+        href: functional-programming-vs-imperative-programming.md
+      - name: Refactoring Into Pure Functions
+        href: refactoring-into-pure-functions.md
+      - name: Applicability of Functional Transformation
+        href: applicability-of-functional-transformation.md
+      - name: Functional Transformation of XML
+        href: functional-transformation-of-xml.md
+      - name: "Tutorial: Deferred Execution"
+        href: tutorial-deferred-execution.md
+      - name: Deferred Execution and Lazy Evaluation in LINQ to XML
+        href: deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
+      - name: Deferred Execution Example
+        href: deferred-execution-example.md
+      - name: "Tutorial: Manipulating Content in a WordprocessingML Document"
+        href: tutorial-manipulating-content-in-a-wordprocessingml-document.md
+      - name: Shape of WordprocessingML Documents
+        href: shape-of-wordprocessingml-documents.md
+      - name: Creating the Source Office Open XML Document
+        href: creating-the-source-office-open-xml-document.md
+      - name: Finding the Default Paragraph Style
+        href: finding-the-default-paragraph-style.md
+      - name: Retrieving the Paragraphs and Their Styles
+        href: retrieving-the-paragraphs-and-their-styles.md
+      - name: Retrieving the Text of the Paragraphs
+        href: retrieving-the-text-of-the-paragraphs.md
+      - name: Refactoring Using an Extension Method
+        href: refactoring-using-an-extension-method.md
+      - name: Refactoring Using a Pure Function
+        href: refactoring-using-a-pure-function.md
+      - name: Projecting XML in a Different Shape
+        href: projecting-xml-in-a-different-shape.md
+      - name: Finding Text in Word Documents
+        href: finding-text-in-word-documents.md
+      - name: Details of Office Open XML WordprocessingML Documents
+        href: details-of-office-open-xml-wordprocessingml-documents.md
+      - name: WordprocessingML Document with Styles
+        href: wordprocessingml-document-with-styles.md
+      - name: Style Part of a WordprocessingML Document
+        href: style-part-of-a-wordprocessingml-document.md
+      - name: Example that Outputs Office Open XML Document Parts
+        href: example-that-outputs-office-open-xml-document-parts.md
+  - name: Modifying XML Trees (LINQ to XML)
+    href: modifying-xml-trees-linq-to-xml.md
+    items:
+    - name: In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML)
+      href: in-memory-xml-tree-modification-vs-functional-construction.md
+    - name: Adding Elements, Attributes, and Nodes to an XML Tree
+      href: adding-elements-attributes-and-nodes-to-an-xml-tree.md
+    - name: Modifying Elements, Attributes, and Nodes in an XML Tree
+      href: modifying-elements-attributes-and-nodes-in-an-xml-tree.md
+    - name: Removing Elements, Attributes, and Nodes from an XML Tree
+      href: removing-elements-attributes-and-nodes-from-an-xml-tree.md
+    - name: Maintaining Name-Value Pairs
+      href: maintaining-name-value-pairs.md
+    - name: "How to: Change the Namespace for an Entire XML Tree"
+      href: how-to-change-the-namespace-for-an-entire-xml-tree.md
+  - name: Performance (LINQ to XML)
+    href: performance-linq-to-xml.md
+    items:
+    - name: Performance of Chained Queries (LINQ to XML)
+      href: performance-of-chained-queries-linq-to-xml.md
+    - name: Atomized XName and XNamespace Objects (LINQ to XML)
+      href: atomized-xname-and-xnamespace-objects-linq-to-xml.md
+    - name: Pre-Atomization of XName Objects (LINQ to XML)
+      href: pre-atomization-of-xname-objects-linq-to-xml.md
+    - name: Statically Compiled Queries (LINQ to XML)
+      href: statically-compiled-queries-linq-to-xml.md
+  - name: Advanced LINQ to XML Programming
+    href: advanced-linq-to-xml-programming.md
+    items:
+    - name: LINQ to XML Annotations
+      href: linq-to-xml-annotations.md
+    - name: LINQ to XML Events
+      href: linq-to-xml-events.md
+    - name: Programming with Nodes
+      href: programming-with-nodes.md
+    - name: Mixed Declarative Code-Imperative Code Bugs (LINQ to XML)
+      href: mixed-declarative-code-imperative-code-bugs-linq-to-xml.md
+    - name: "How to: Stream XML Fragments with Access to Header Information"
+      href: how-to-stream-xml-fragments-with-access-to-header-information.md
+    - name: "How to: Perform Streaming Transform of Large XML Documents"
+      href: how-to-perform-streaming-transform-of-large-xml-documents.md
+    - name: "How to: Read and Write an Encoded Document"
+      href: how-to-read-and-write-an-encoded-document.md
+    - name: Using XSLT to Transform an XML Tree
+      href: using-xslt-to-transform-an-xml-tree.md
+    - name: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style"
+      href: how-to-use-annotation-trees-to-transform-linq-to-xml-trees-in-an-xslt-style.md
+    - name: Serializing Object Graphs that Contain XElement Objects
+      href: serializing-object-graphs-that-contain-xelement-objects.md
+      items:
+      - name: "How to: Serialize Using XmlSerializer"
+        href: how-to-serialize-using-xmlserializer.md
+      - name: "How to: Serialize Using DataContractSerializer"
+        href: how-to-serialize-using-datacontractserializer.md
+    - name: LINQ to XML Security
+      href: linq-to-xml-security.md
+    - name: Sample XML Documents (LINQ to XML)
+      href: sample-xml-documents-linq-to-xml.md
+      items:
+      - name: "Sample XML File: Typical Purchase Order (LINQ to XML)"
+        href: sample-xml-file-typical-purchase-order-linq-to-xml.md
+      - name: "Sample XML File: Typical Purchase Order in a Namespace"
+        href: sample-xml-file-typical-purchase-order-in-a-namespace.md
+      - name: "Sample XML File: Multiple Purchase Orders (LINQ to XML)"
+        href: sample-xml-file-multiple-purchase-orders-linq-to-xml.md
+      - name: "Sample XML File: Multiple Purchase Orders in a Namespace"
+        href: sample-xml-file-multiple-purchase-orders-in-a-namespace.md
+      - name: "Sample XML File: Test Configuration (LINQ to XML)"
+        href: sample-xml-file-test-configuration-linq-to-xml.md
+      - name: "Sample XML File: Test Configuration in a Namespace"
+        href: sample-xml-file-test-configuration-in-a-namespace.md
+      - name: "Sample XML File: Customers and Orders (LINQ to XML)"
+        href: sample-xml-file-customers-and-orders-linq-to-xml.md
+      - name: "Sample XSD File: Customers and Orders"
+        href: sample-xsd-file-customers-and-orders.md
+      - name: "Sample XML File: Customers and Orders in a Namespace"
+        href: sample-xml-file-customers-and-orders-in-a-namespace.md
+      - name: "Sample XML File: Numerical Data (LINQ to XML)"
+        href: sample-xml-file-numerical-data-linq-to-xml.md
+      - name: "Sample XML File: Numerical Data in a Namespace"
+        href: sample-xml-file-numerical-data-in-a-namespace.md
+      - name: "Sample XML File: Books (LINQ to XML)"
+        href: sample-xml-file-books-linq-to-xml.md
+      - name: "Sample XML File: Consolidated Purchase Orders"
+        href: sample-xml-file-consolidated-purchase-orders.md
+      - name: Reference (LINQ to XML)
+        href: reference-linq-to-xml.md
+- name: LINQ to ADO.NET (Portal Page)
+  href: linq-to-adonet-portal-page.md
+- name: Enabling a Data Source for LINQ Querying
+  href: enabling-a-data-source-for-linq-querying.md
+- name: Visual Studio IDE and Tools Support for LINQ
+  href: visual-studio-ide-and-tools-support-for-linq.md

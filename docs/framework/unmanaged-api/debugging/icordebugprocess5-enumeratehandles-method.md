@@ -23,7 +23,7 @@ Gets an enumerator for object handles in a process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateHandles(     [in] CorGCReferenceType types,  
     [out] ICorDebugGCReferenceEnum **ppEnum);  
 ```  

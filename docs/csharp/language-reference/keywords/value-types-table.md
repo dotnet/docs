@@ -16,21 +16,20 @@ The following table shows the C# value types:
 |Value type|Category|Type suffix|
 |----------------|--------------|-----------------|
 |[bool](bool.md)|Boolean||
-|[byte](../builtin-types/integral-numeric-types.md)|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)||
+|`byte`|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)||
 |[char](char.md)|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)
-)||
-|[decimal](decimal.md)|Numeric, [floating-point](floating-point-types-table.md)|M or m|
-|[double](double.md)|Numeric, [floating-point](floating-point-types-table.md)|D or d|
+|`decimal`|Numeric, [floating-point](../builtin-types/floating-point-numeric-types.md)|M or m|
+|`double`|Numeric, [floating-point](../builtin-types/floating-point-numeric-types.md)|D or d|
 |[enum](enum.md)|Enumeration||
-|[float](float.md)|Numeric, [floating-point](floating-point-types-table.md)|F or f|
-|[int](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)||
-|[long](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)|L or l|
-|[sbyte](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)||
-|[short](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)||
+|`float`|Numeric, [floating-point](../builtin-types/floating-point-numeric-types.md)|F or f|
+|`int`|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)||
+|`long`|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)|L or l|
+|`sbyte`|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)||
+|`short`|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)||
 |[struct](struct.md)|User-defined structure||
-|[uint](../builtin-types/integral-numeric-types.md)|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)|U or u|
-|[ulong](../builtin-types/integral-numeric-types.md)|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)|UL, Ul, uL, ul, LU, Lu, lU, or lu|
-|[ushort](../builtin-types/integral-numeric-types.md)|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)||
+|`uint`|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)|U or u|
+|`ulong`|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)|UL, Ul, uL, ul, LU, Lu, lU, or lu|
+|`ushort`|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)||
 
 ## Remarks
 

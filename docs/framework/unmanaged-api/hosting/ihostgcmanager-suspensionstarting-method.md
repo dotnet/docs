@@ -23,7 +23,7 @@ Notifies the host that the common language runtime (CLR) is suspending execution
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SuspensionStarting ();  
 ```  
   

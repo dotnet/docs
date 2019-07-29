@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: dea454e2-abd8-4c53-ba37-d3ed53187d64
 ---
 # Data
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] objects and XML. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] also provides a mechanism for the transfer of data through drag-and-drop operations.  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of common language runtime (CLR) objects and XML. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] also provides a mechanism for the transfer of data through drag-and-drop operations.  
   
 ## In This Section  
  [Data Binding](data-binding-wpf.md)  

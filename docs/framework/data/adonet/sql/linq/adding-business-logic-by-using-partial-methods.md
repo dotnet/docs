@@ -10,7 +10,7 @@ ms.assetid: 3a73991e-fd4e-4610-93fb-7ced4dc6b7f9
 You can customize Visual Basic and C# generated code in your [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] projects by using *partial methods*. The code that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] generates defines signatures as one part of a partial method. If you want to implement the method, you can add your own partial method. If you do not add your own implementation, the compiler discards the partial methods signature and calls the default methods in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
 > [!NOTE]
->  If you are using Visual Studio, you can use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to add validation and other customizations to entity classes.  
+>  If you are using Visual Studio, you can use the Object Relational Designer to add validation and other customizations to entity classes.  
   
  For example, the default mapping for the `Customer` class in the Northwind sample database includes the following partial method:  
   

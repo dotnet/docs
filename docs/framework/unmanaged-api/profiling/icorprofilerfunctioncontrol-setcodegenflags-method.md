@@ -23,7 +23,7 @@ Sets one or more flags from the [COR_PRF_CODEGEN_FLAGS](../../../../docs/framewo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCodegenFlags(  
     [in] DWORD flags);  
 ```  

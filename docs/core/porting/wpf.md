@@ -20,6 +20,9 @@ In this article, various names are used to identify types of files used for migr
 | **MyWPFCore.csproj** | The name of the new .NET Core project you create. |
 | **MyAppCore.exe** | The .NET Core WPF app executable. |
 
+>[!IMPORTANT]
+>Even though this article uses C# as the target language, the steps are the same for VB.NET, except that VB.NET uses *.vbproj* and *.vb* files instead of *.csproj* and *.cs* files, respectively.
+
 ## Prerequisites
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) for any designer work you want to do.
@@ -29,11 +32,10 @@ In this article, various names are used to identify types of files used for migr
   - .NET cross-platform development
 
 - A working WPF project in a solution that builds and runs without issue.
-- Your project must be coded in C#. 
 - Install the latest [.NET Core 3.0](https://aka.ms/netcore3download) preview.
 
 >[!NOTE]
->**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019** supports .NET Core 3.0 projects but doesn't yet support the visual designer for .NET Core 3.0 WPF projects. To use the visual designer, you must have a .NET WPF project in your solution that shares its files with the .NET Core project.
+>**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019** supports .NET Core 3.0 projects but has limited support for the .NET Core WPF visual designer. To use a fully-supported visual designer, you must have a .NET Framework WPF project in your solution that shares its files with the .NET Core project.
 
 ### Consider
 
@@ -213,10 +215,10 @@ The previous command adds the following to the **MyWPFCore.csproj** project:
 As detailed in this article, Visual Studio 2019 only supports the WPF Designer in .NET Framework projects. By creating a side-by-side .NET Core project, you can test your project with .NET Core while you use the .NET Framework project to design forms. Your solution file includes both the .NET Framework and .NET Core projects. Add and design your forms and controls in the .NET Framework project, and based on the file glob patterns we added to the .NET Core projects, any new or changed files will automatically be included in the .NET Core projects.
 
 Once Visual Studio 2019 supports the WPF Designer, you can copy/paste the content of your .NET Core project file into the .NET Framework project file. Then delete the file glob patterns added with the `<Source>` and `<EmbeddedResource>` items. Fix the paths to any project reference used by your app. This effectively upgrades the .NET Framework project to a .NET Core project.
- 
+
 ## Next steps
 
-* Read more about the [Windows Compatibility Pack][compat-pack].
-* Watch a [video on porting](https://www.youtube.com/watch?v=5MomsgkWkVw&list=PLS__JrkRveTMiWxG-Lv4cBwYfMQ6m2gmt) your .NET Framework WPF project to .NET Core.
+- Read more about the [Windows Compatibility Pack][compat-pack].
+- Watch a [video on porting](https://www.youtube.com/watch?v=5MomsgkWkVw&list=PLS__JrkRveTMiWxG-Lv4cBwYfMQ6m2gmt) your .NET Framework WPF project to .NET Core.
 
 [compat-pack]: windows-compat-pack.md

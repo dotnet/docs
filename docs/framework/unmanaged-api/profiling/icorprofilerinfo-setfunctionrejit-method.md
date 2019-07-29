@@ -23,7 +23,7 @@ Not implemented. Do not use.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFunctionReJIT(  
     [in] FunctionID functionId);  
 ```  

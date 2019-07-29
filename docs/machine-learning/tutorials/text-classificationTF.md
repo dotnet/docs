@@ -107,6 +107,7 @@ You prepare the application, and then load data:
     * Returns the model.
 
 
+
 [!code-csharp[DownloadModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DownloadModel)]
 
 [!code-csharp[CreateTrainData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateTrainData)]

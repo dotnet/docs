@@ -503,7 +503,7 @@ The export methods produce DER-encoded binary data, and the import methods expec
 
 Previously, .NET Core only supported using `SerialPort` on Windows.
 
-Please refer to https://github.com/dotnet/corefx/issues/33146 for information on limitations.
+For more information about the limited support for the serial port on Linux, see [GitHub issue #33146](https://github.com/dotnet/corefx/issues/33146).
 
 ## Docker and cgroup memory Limits
 

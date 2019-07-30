@@ -1,1 +1,0 @@
-Enhanced Metafile (EMF)

@@ -19,15 +19,15 @@ In the previous syntax, *exception-type* is the name of a new F# exception type,
 
 A typical definition for an F# exception resembles the following.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet5501.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5501.fs)]
 
 You can generate an exception of this type by using the `raise` function, as follows.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet5502.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5502.fs)]
 
 You can use an F# exception type directly in the filters in a `try...with` expression, as shown in the following example.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet5503.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5503.fs)]
 
 The exception type that you define with the `exception` keyword in F# is a new type that inherits from `System.Exception`.
 

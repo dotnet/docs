@@ -9,6 +9,71 @@
             "redirect_url": "/dotnet/standard/components"
         },
         {
+            "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
+            "redirect_url": "/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/deploy-existing-net-apps-as-windows-containers.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/deploy-existing-net-apps-as-windows-containers"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/how-to-deploy-existing-net-apps-to-azure-app-service.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-instances-ACI"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/index.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/index"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-with-monitoring-and-telemetry.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/what-about-cloud-optimized-applications.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/what-about-cloud-native-applications"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-not-to-deploy-to-windows-containers.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-not-to-deploy-to-windows-containers"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers//modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-service-fabric.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-service-fabric"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/microsoft-technologies-in-cloud-devops-ready-applications.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
+        },
+        {
             "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
             "redirect_url": "/dotnet/core/tools/dotnet-nuget-delete"
         },
@@ -723,6 +788,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#multiplication-operator-"
         },
         {
+            "source_path": "docs/csharp/language-reference/operators/namespace-alias-qualifer.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/namespace-alias-qualifier"
+        },
+        {
             "source_path": "docs/csharp/language-reference/operators/not-equal-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/equality-operators#inequality-operator-"
         },
@@ -1397,6 +1466,31 @@
         {
             "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
             "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
+        },
+        {
+            "source_path" : "docs/framework/interop/com-wrappers.md",
+            "redirect_url": "/dotnet/standard/native-interop/com-wrappers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path" : "docs/framework/interop/com-callable-wrapper.md",
+            "redirect_url": "/dotnet/standard/native-interop/com-callable-wrapper",
+            "redirect_document_id": true
+        },
+        {
+            "source_path" : "docs/framework/interop/runtime-callable-wrapper.md",
+            "redirect_url": "/dotnet/standard/native-interop/runtime-callable-wrapper",
+            "redirect_document_id": true
+        },
+        {
+            "source_path" : "docs/framework/interop/applying-interop-attributes.md",
+            "redirect_url": "/dotnet/standard/native-interop/apply-interop-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path" : "docs/framework/interop/qualifying-net-types-for-interoperation.md",
+            "redirect_url": "/dotnet/standard/native-interop/qualify-net-types-for-interoperation",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
@@ -2586,74 +2680,14 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/standard/guidance-architecture.md",
+            "redirect_url": "/dotnet/architecture/index",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/library.md",
             "redirect_url": "/dotnet/standard/net-standard",
             "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/standard/microservices-architecture/architect-microservice-container-applications/communication-between-microservices.md",
-            "redirect_url": "/dotnet/standard/microservices-architecture/architect-microservice-container-applications/communication-in-microservice-architecture",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/deploy-existing-net-apps-as-windows-containers.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/deploy-existing-net-apps-as-windows-containers"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/how-to-deploy-existing-net-apps-to-azure-app-service.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-instances-ACI"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/index.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/index"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-with-monitoring-and-telemetry.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/what-about-cloud-optimized-applications.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/what-about-cloud-native-applications"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-not-to-deploy-to-windows-containers.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-not-to-deploy-to-windows-containers"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers//modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-service-fabric.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-service-fabric"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containerslift-and-shift-existing-apps-devops/microsoft-technologies-in-cloud-devops-ready-applications.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
         },
         {
             "source_path": "docs/standard/native-interop.md",

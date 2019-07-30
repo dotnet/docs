@@ -41,7 +41,7 @@ You can train a binary classification model using the following algorithms:
 
 ### Binary classification inputs and outputs
 
-For best results with binary classification, the training data should be balanced (i.e. equal numbers of positive and negative training data). Missing and values should be handled before training.
+For best results with binary classification, the training data should be balanced (that is, equal numbers of positive and negative training data). Missing values should be handled before training.
 
 The input label column data must be <xref:System.Boolean>.
 The input features column data must be a fixed-size vector of <xref:System.Single>.

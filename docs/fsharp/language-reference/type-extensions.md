@@ -154,7 +154,7 @@ The following limitations also exist for type extensions:
 
 * Type extensions do not support virtual or abstract methods.
 * Type extensions do not support override methods as augmentations.
-* Type extensions do not support [Statically Resolved Type Parameters](generics/statically-resolved-type-parameters.md).
+* Type extensions do not support [Statically Resolved Type Parameters](./generics/statically-resolved-type-parameters.md).
 * Optional Type extensions do not support constructors as augmentations.
 * Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
 * Type extensions are not valid for `byref<'T>` (though they can be declared).
@@ -166,4 +166,4 @@ Finally, if multiple intrinsic type extensions exist for one type, all members m
 ## See also
 
 - [F# Language Reference](index.md)
-- [Members](members/index.md)
+- [Members](./members/index.md)

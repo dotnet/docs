@@ -24,9 +24,9 @@ helpviewer_keywords:
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
 ---
 # On Error Statement (Visual Basic)
-Enables an error-handling routine and specifies the location of the routine within a procedure; can also be used to disable an error-handling routine.
+Enables an error-handling routine and specifies the location of the routine within a procedure; can also be used to disable an error-handling routine. The `On Error` statement is used in unstructured error handling and can be used instead of structured exception handling. [Structured exception handling](../../../standard/exceptions/index.md) is built into .NET, is generally more efficient, and so is recommended when handling runtime errors in your application.
 
- Without error handling, any run-time error that occurs is fatal: an error message is displayed, and execution stops.
+ Without error handling or exception handling, any run-time error that occurs is fatal: an error message is displayed, and execution stops.
 
 > [!NOTE]
 >  The `Error` keyword is also used in the [Error Statement](../../../visual-basic/language-reference/statements/error-statement.md), which is supported for backward compatibility.
@@ -41,7 +41,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 
 |Term|Definition|
 |---|---|
-|`GoTo line`|Enables the error-handling routine that starts at the line specified in the required `line` argument. The `line` argument is any line label or line number. If a run-time error occurs, control branches to the specified line, making the error handler active. The specified line must be in the same procedure as the `On Error` statement, or a compile-time error will occur.|
+|`GoTo` *line*|Enables the error-handling routine that starts at the line specified in the required *line* argument. The *line* argument is any line label or line number. If a run-time error occurs, control branches to the specified line, making the error handler active. The specified line must be in the same procedure as the `On Error` statement or a compile-time error will occur.|
 |`GoTo 0`|Disables enabled error handler in the current procedure and resets it to `Nothing`.|
 |`GoTo -1`|Disables enabled exception in the current procedure and resets it to `Nothing`.|
 |`Resume Next`|Specifies that when a run-time error occurs, control goes to the statement immediately following the statement where the error occurred, and execution continues from that point. Use this form rather than `On Error GoTo` when accessing objects.|

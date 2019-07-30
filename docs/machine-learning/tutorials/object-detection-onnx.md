@@ -63,7 +63,7 @@ Object detection is an image processing task. Therefore, most deep learning mode
 
 ![](./media/object-detection-onnx/netron-model-map.png)
 
-The YOLO model takes an image `3(RGB) x 416px x 416px`. The model takes this input and passes it through the different layers to produce an output. The output divides the input image into a `13 x 13` grid, with each box in the grid consisting of `125` values. 
+The YOLO model takes an image `3(RGB) x 416px x 416px`. The model takes this input and passes it through the different layers to produce an output. The output divides the input image into a `13 x 13` grid, with each cell in the grid consisting of `125` values. 
 
 ### What is an ONNX model?
 

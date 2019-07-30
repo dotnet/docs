@@ -66,7 +66,7 @@ To load a serialized workflow, use the <xref:System.Activities.XamlIntegration.A
 
 When this workflow is invoked, the following output is displayed to the console.
 
-**25 + 15**
+**25 + 15**\
 **40**
 
 > [!NOTE]

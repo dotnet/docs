@@ -100,6 +100,20 @@
       href: standard/native-interop/best-practices.md
     - name: Charsets and marshaling
       href: standard/native-interop/charset.md
+    - name: COM Interop
+      href: standard/native-interop/cominterop.md
+      items:
+        - name: COM Wrappers
+          href: standard/native-interop/com-wrappers.md
+          items:
+            - name: Runtime Callable Wrapper
+              href: standard/native-interop/runtime-callable-wrapper.md
+            - name: COM Callable Wrapper
+              href: standard/native-interop/com-callable-wrapper.md
+        - name: Qualifying .NET types for COM interoperation
+          href: standard/native-interop/qualify-net-types-for-interoperation.md
+    - name: Applying Interop Attributes
+      href: standard/native-interop/apply-interop-attributes.md
   - name: Collections and Data Structures
     href: standard/collections/
   - name: Numerics in .NET
@@ -209,6 +223,10 @@
       href: core/tutorials/aspnet-core.md
     - name: Hosting .NET Core from native code
       href: core/tutorials/netcore-hosting.md
+  - name: Native Interoperability
+    items:
+    - name: Exposing .NET Core Components to COM
+      href: core/native-interop/expose-components-to-com.md
   - name: Packages, Metapackages and Frameworks
     href: core/packages.md
   - name: Changes in CLI overview
@@ -1024,6 +1042,24 @@
   - name: Programming Concepts
     href: visual-basic/programming-guide/concepts/index.md
     items:
+    - name: Assemblies
+      items:
+      - name: Friend Assemblies
+        items:
+        - name: "How to: Create Unsigned Friend Assemblies"
+          href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md
+        - name: "How to: Create Signed Friend Assemblies"
+          href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md
+      - name: "How to: Create and Use Assemblies Using the Command Line"
+        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md
+      - name: "How to: Determine If a File Is an Assembly"
+        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md
+      - name: "How to: Load and Unload Assemblies"
+        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md
+      - name: "How to: Share an Assembly with Other Applications"
+        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-share-an-assembly-with-other-applications.md
+      - name: "Walkthrough: Embedding Types from Managed Assemblies"
+        href: visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md
     - name: Asynchronous Programming with Async and Await
       href: visual-basic/programming-guide/concepts/async/index.md
     - name: Attributes

@@ -129,10 +129,10 @@ Other data transformations don't require training data. For example: the <xref:M
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.Calibrators.PlattCalibratorTransformer> | Transforms a binary classifier raw score into a class probability using logistic regression with parameters estimated using the training data |
-| <xref:Microsoft.ML.Calibrators.FixedPlattCalibratorTransformer> | Transforms a binary classifier raw score into a class probability using logistic regression with fixed parameters |
-| <xref:Microsoft.ML.Calibrators.NaiveCalibratorTransformer> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, and calculating the probability based on the distribution among the bins |
-| <xref:Microsoft.ML.Calibrators.IsotonicCalibratorTransformer> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, where the position of boundaries and the size of bins are estimated using the training data  |
+|<xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Platt%28System.String%2CSystem.String%2CSystem.String%29> | Transforms a binary classifier raw score into a class probability using logistic regression with parameters estimated using the training data |
+| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Platt%28System.Double%2CSystem.Double%2CSystem.String%29> | Transforms a binary classifier raw score into a class probability using logistic regression with fixed parameters |
+| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Naive*> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, and calculating the probability based on the distribution among the bins |
+| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Isotonic*> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, where the position of boundaries and the size of bins are estimated using the training data  |
 
 ## Deep learning transformations
 

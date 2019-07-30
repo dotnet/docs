@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects using deep learning with ONNX and ML.NET'
 description: This tutorial illustrates how to use a pre-trained ONNX deep learning model in ML.NET to detect objects in images.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 07/29/2019
+ms.date: 07/31/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use a pre-trained model in an object detection scenario to detect objects in images using ONNX.
@@ -11,7 +11,7 @@ ms.custom: mvc
 
 # Tutorial: Detect objects using ONNX in ML.NET
 
-Learn how to use a pre-trained ONNX model in ML.NET to detect objects. The pre-trained model was trained to find and classify objects in an image.
+Learn how to use a pre-trained ONNX model in ML.NET to detect objects in images.
 
 Training an object detection model from scratch requires setting millions of parameters, a large amount of labeled training data and a vast amount of compute resources (hundreds of GPU hours). Using a pre-trained model allows you to shortcut the training process.
 
@@ -38,7 +38,7 @@ This sample creates a .NET core console application that detects objects within 
 
 ## What is object detection?
 
-Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. When an image is processed, there's first a check on whether there's an object present or not. If so, the detected object is classified and using object localization, the location of that object is returned along with the class. Typically, you want to use this approach on images where there are multiple objects of different types so that each is individually recognized. 
+Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. Object detection both locates _and_ categorizes entities within images. Use object detection when images contain multiple objects of different types.
 
 ![](./media/object-detection-onnx/img-classification-obj-detection.PNG)
 
@@ -59,24 +59,11 @@ There are different types of neural networks, the most common being Multi-Layere
 
 ## Understand the model
 
-Object detection is an image processing task. Therefore, most deep learning models trained to solve this problem are CNNs. The model used in this tutorial is the Tiny YOLOv2 model, a more compact version of the YOLOv2 model described in the paper: ["YOLO9000: Better, Faster, Stronger" by Redmon and Fadhari](https://arxiv.org/pdf/1612.08242.pdf). Tiny YOLOv2 is trained on the Pascal VOC dataset and is made up of 15 layers that can predict 20 different classes of objects. Because Tiny YOLOv2 is a condensed version of the original YOLOv2 model, a tradeoff is made between speed and accuracy. The different layers that make up the model can be visualized using tools like Netron. Inspecting the model would yield a mapping of the connections between all the layers in that make up the neural network, where each layer would contain the name of the layer along with the dimensions of the respective input / output. The data structures used to describe the inputs and outputs of the model are known as tensors. Tensors can be thought of as containers that store data in N-dimensions. In the case of Tiny YOLOv2, the name of the input layer is `image` and it expects a tensor of dimensions `3 x 416 x 416`. The name of the output layer is `grid` and generates an output tensor of dimensions `125 x 13 x 13`.  
+Object detection is an image processing task. Therefore, most deep learning models trained to solve this problem are CNNs. The model used in this tutorial is the Tiny YOLOv2 model, a more compact version of the YOLOv2 model described in the paper: ["YOLO9000: Better, Faster, Stronger" by Redmon and Fadhari](https://arxiv.org/pdf/1612.08242.pdf). Tiny YOLOv2 is trained on the Pascal VOC dataset and is made up of 15 layers that can predict 20 different classes of objects. Because Tiny YOLOv2 is a condensed version of the original YOLOv2 model, a tradeoff is made between speed and accuracy. The different layers that make up the model can be visualized using tools like Netron. Inspecting the model would yield a mapping of the connections between all the layers that make up the neural network, where each layer would contain the name of the layer along with the dimensions of the respective input / output. The data structures used to describe the inputs and outputs of the model are known as tensors. Tensors can be thought of as containers that store data in N-dimensions. In the case of Tiny YOLOv2, the name of the input layer is `image` and it expects a tensor of dimensions `3 x 416 x 416`. The name of the output layer is `grid` and generates an output tensor of dimensions `125 x 13 x 13`.  
 
 ![](./media/object-detection-onnx/netron-model-map.png)
 
-The YOLO model takes an image `416px x 416px x 3 (RGB)`. The model takes this input and passes it through the different layers to produce an output. The output divides the input image into a `13 x 13` grid, with each box in the grid consisting of `125` values. 
-
-![](./media/object-detection-onnx/model-output-description.png)
-
-The model segments an image into a `13 x 13` grid, where each grid cell is `32px x 32px`. Each grid cell contains 5 potential object bounding boxes. A bounding box has  25 elements:
-
-- `x` the x position of the bounding box center relative to the grid cell it's associated with.
-- `y` the yposition of the bounding box center relative to the grid cell it's associated with.
-- `w` the width of the bounding box.
-- `h` the height of the bounding box. 
-- `o` the confidence value that an object exists within the bounding box, also known as Abjectness score.
-- `p1-p20` class probabilities for each of the 20 classes predicted by the model.
-
-In total, the 25 elements describing each of the 5 bounding boxes make up the 125 elements contained in each grid cell.
+The YOLO model takes an image `3(RGB) x 416px x 416px`. The model takes this input and passes it through the different layers to produce an output. The output divides the input image into a `13 x 13` grid, with each box in the grid consisting of `125` values. 
 
 ## What is an ONNX model?
 
@@ -260,7 +247,20 @@ Both of these methods will be useful when the model has produced outputs and tho
 
 ## Create a parser to post-process model outputs
 
-The output generated by the pre-trained ONNX model is a float array of length 21125, representing the elements of a tensor with dimensions `125 x 13 x 13`. In order to transform the predictions generated by the model into a tensor, some post-processing work is required. To do so, create a set of classes to help parse the output.
+The model segments an image into a `13 x 13` grid, where each grid cell is `32px x 32px`. Each grid cell contains 5 potential object bounding boxes. A bounding box has  25 elements:
+
+![](./media/object-detection-onnx/model-output-description.png)
+
+- `x` the x position of the bounding box center relative to the grid cell it's associated with.
+- `y` the y position of the bounding box center relative to the grid cell it's associated with.
+- `w` the width of the bounding box.
+- `h` the height of the bounding box. 
+- `o` the confidence value that an object exists within the bounding box, also known as Abjectness score.
+- `p1-p20` class probabilities for each of the 20 classes predicted by the model.
+
+In total, the 25 elements describing each of the 5 bounding boxes make up the 125 elements contained in each grid cell.
+
+The output generated by the pre-trained ONNX model is a float array of length `21125`, representing the elements of a tensor with dimensions `125 x 13 x 13`. In order to transform the predictions generated by the model into a tensor, some post-processing work is required. To do so, create a set of classes to help parse the output.
 
 Add a new directory to your project to organize the set of parser classes.
 

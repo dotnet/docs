@@ -67,7 +67,7 @@ The YOLO model takes an image `416px x 416px x 3 (RGB)`. The model takes this in
 
 ![](./media/object-detection-onnx/model-output-description.png)
 
-The model segments an image into a `13 x 13` grid, where each grid cell is `32px x 32px`. Each grid cell contains 125 elements within it that correspond to 5 areas in an image which are believed to contain an object, also known as bounding boxes. Each of these bounding boxes stores 25 elements of information to describe itself:
+The model segments an image into a `13 x 13` grid, where each grid cell is `32px x 32px`. Each grid cell contains 5 potential object bounding boxes. A bounding box has  25 elements:
 
 - `x` the x position of the bounding box center relative to the grid cell it's associated with.
 - `y` the yposition of the bounding box center relative to the grid cell it's associated with.

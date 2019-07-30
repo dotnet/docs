@@ -59,7 +59,7 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.TextCatalog.FeaturizeText*> | Transform a text column into a float array of normalized ngrams and char-grams counts | 
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoWords*> | Split one or more text columns into individual words |
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoCharactersAsKeys*> | Split one or more text columns into individual characters floats over a set of topics |
-| <xref:Microsoft.ML.TextCatalog.NormalizeText*> | Change case, remove diacritical marks, punctuation marks and numbers |
+| <xref:Microsoft.ML.TextCatalog.NormalizeText*> | Change case, remove diacritical marks, punctuation marks, and numbers |
 | <xref:Microsoft.ML.TextCatalog.ProduceNgrams*> | Transform text column into a bag of counts of ngrams (sequences of consecutive words)|
 | <xref:Microsoft.ML.TextCatalog.ProduceWordBags*> | Transform text column into a bag of counts of ngrams vector |
 | <xref:Microsoft.ML.TextCatalog.ProduceHashedNgrams*> | Transform text column into a vector of hashed ngram counts |
@@ -85,18 +85,18 @@ Other data transformations don't require training data. For example: the <xref:M
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding*> | Convert one or more text columns into [one-hot](https://en.wikipedia.org/wiki/One-hot) encoded vectors |
-| <xref:Microsoft.ML.CategoricalCatalog.OneHotHashEncoding*> | Convert one more text columns into hash-based one-hot encoded vectors |
+| <xref:Microsoft.ML.CategoricalCatalog.OneHotHashEncoding*> | Convert one or more text columns into hash-based one-hot encoded vectors |
 
-## Timeseries data transformations
+## Time series data transformations
 
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.TimeSeriesCatalog.DetectAnomalyBySrCnn*> | Detect anomalies in the input time series data using the Spectral Residual (SR) algorithm |
-| <xref:Microsoft.ML.TimeSeriesCatalog.DetectChangePointBySsa*> | Detect change points in timeseries data using singular spectrum analysis (SSA) |
-| <xref:Microsoft.ML.TimeSeriesCatalog.DetectIidChangePoint*> | Detect change points in independent and identically distributed (IID) timeseries data using adaptive kernel density estimations and martingale scores |
-| <xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa*> | Forecast timeseries data using singular spectrum analysis (SSA) |
-| <xref:Microsoft.ML.TimeSeriesCatalog.DetectSpikeBySsa*> | Detect spikes in timeseries data using singular spectrum analysis (SSA) |
-| <xref:Microsoft.ML.TimeSeriesCatalog.DetectIidSpike*> | Detect spikes in independent and identically distributed (IID) timeseries data using adaptive kernel density estimations and martingale scores |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectChangePointBySsa*> | Detect change points in time series data using singular spectrum analysis (SSA) |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectIidChangePoint*> | Detect change points in independent and identically distributed (IID) time series data using adaptive kernel density estimations and martingale scores |
+| <xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa*> | Forecast time series data using singular spectrum analysis (SSA) |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectSpikeBySsa*> | Detect spikes in time series data using singular spectrum analysis (SSA) |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectIidSpike*> | Detect spikes in independent and identically distributed (IID) time series data using adaptive kernel density estimations and martingale scores |
 
 ## Missing values
 

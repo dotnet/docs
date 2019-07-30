@@ -131,7 +131,7 @@ dotnet-core-uninstall [options] [<VERSION>...]
 
 `VERSION`
 
-A specified version to uninstall.
+The specified version to uninstall.
 
 #### Options
 

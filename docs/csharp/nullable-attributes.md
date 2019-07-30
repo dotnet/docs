@@ -1,16 +1,27 @@
 ---
-title: Communicate nullable constraints on generic APIs
-description: This advanced tutorial explains how to annotate generic types and methods to express nullability constraints. Adding those will help callers to use your APIs correctly
-ms.date: 07/19/2019
-ms.custom: mvc
+title: Upgrade libraries to provide clear expectations for potential null values to callers.
+description: This article explains the motivations and techniques for adding descriptive attributes to describe the null state of arguments and return values from APIs
+ms.date: 07/31/2019
 ---
-# Tutorial: Annotate existing libraries for nullable reference types
+# Update libraries to use nullable reference types and communicate nullable rules to callers.
 
-The introduction of nullable reference types gives you the means to annotate APIs with your expectations on if arguments can be null or not, and whether methods may return null or not. These features enable the compiler to spot potential causes of `NullReferenceException` errors in your code. The better you describe your API's guarantees and expectations for accepting or return null values, the better the compiler can provide accurate warnings. You want warnings that help you find potential errors but not warnings that are false positives.
+The addition of [nullable reference types](nullable-references.md) means you can declare for every variable whether or not a `null` value is allowed or expected. That provides a great experience as you write code.  You get warnings if a non-nullable variable might be set to `null`. You get warnings if a nullable variable is null-checked before you dereference it. Updating your libraries can take time, but the payoffs are worth it. The more information you provide the compiler about *when* a `null` value is allowed or prohibited, the better warnings users of your API will get. Let's start with a familiar example. Imagine your library has the following API to retrieve a resource string:
 
-Nullable reference types affect all your API signatures. Converting a reasonable size library or application takes time. The work will affect every public API. Every argument and return value has expected preconditions and postconditions describing if and when null is valid. It's not enough to add `?` to some variable declarations. There's a richer vocabulary to more clearly describe when and where null might be used as an argument or a return value.
+```csharp
+bool TryGetMessage(string key, out string message)
+```
 
-In this article, you'll learn techniques to make your library or application nullable-aware, while balancing other requirements and deliverables. You'll see how to balance ongoing development enabling nullable reference types. You'll learn challenges for generic type definitions. You'll learn to apply attributes to describe pre- and post-conditions on individual APIs.
+The preceding example follows the familiar `Try*` pattern in .NET. There are two reference arguments for this API: the `key` and the `message` parameter. This API has the following rules relating to the null-ness of these arguments:
+
+- Callers should not pass `null` as the argument for `key`.
+- Callers can pass a variable whose value is `null` as the argument for `message`.
+- If the `TryGetMessage` method returns `true`, the value of `message` is not null. If the return value is `false,` the value of `message` (and its null state) is unchanged.
+
+The rule for `key` can be completely expressed by the variable type: `key` should be a non-nullable reference type. The `message` argument is more complex. It allows `null` as the argument, but guarantees that on success, that `out` argument is not null. For these scenarios, you need a richer vocabulary to describe the expectations.
+
+Updating your library for nullable references requires more than sprinkling `?` on some the variables. The preceding example shows that you need to examine your APIs, consider your expectations for each input argument. Consider the guarantees for the return value, and any `out` or `ref` arguments upon the method's return. Then, communicate those rules to the compiler and the compiler will provide warnings when callers don't abide by those rules.
+
+This work takes time. Let's start with strategies to make your library or application nullable-aware, while balancing other requirements and deliverables. You'll see how to balance ongoing development enabling nullable reference types. You'll learn challenges for generic type definitions. You'll learn to apply attributes to describe pre- and post-conditions on individual APIs.
 
 ## Choose a nullable strategy
 
@@ -49,27 +60,16 @@ Before you enable nullable reference types, variables are considered *nullable o
 
 Another likely source of warnings are return values when the value has not been initialized.
 
-The first step is to use `?` annotations on parameters and return types to indicate when arguments or return values may be null, or must not be null. As you do this, your goal isn't just to fix warnings. The deeper goal is to make the compiler understand your intent for potential null values. As you examine the warnings, you reach your next major decision for your application. Do you want to consider modifying API signatures to more clearly communicate your design intent?
+The first step is to use `?` annotations on parameters and return types to indicate when arguments or return values may be null, or must not be null. As you do this, your goal isn't just to fix warnings. The deeper goal is to make the compiler understand your intent for potential null values. As you examine the warnings, you reach your next major decision for your application. Do you want to consider modifying API signatures to more clearly communicate your design intent? A better API signature for the `TryGetMessage` examined earlier could be:
 
-Let's examine a common pattern:
-
-```csharp
-bool TryGetvalue(int key, out string val)
-```
-
-Should the `val` parameter be an `out string?`? Maybe, because you can pass `null` into this method. The input to `val` won't be changed if the `key` wasn't found. It would still be `null`. On the other hand, `val` would never be `null` if the `key` was found.
-
-If you want to consider breaking changes in your public API, a better signature might be:
 
 ```csharp
-string? TryGetValue(int key);
+string? TryGetMessage(string key);
 ```
 
 The return value indicates success or failure, and carries the value if the value was found. In many cases, changing API signatures can improve how they communicate null values.
 
-However, for public libraries, or libraries with large user bases, you may prefer not introducing any API signature changes. For those cases, and other common patterns, you can apply attributes to more clearly define when an argument or return value may be null.
-
-Whether or not you consider changing the surface of your API, you'll likely find that type annotations alone are not sufficient for describing when `null` values for arguments or return values. In those instances, you can apply attributes to more clearly describe an API. 
+However, for public libraries, or libraries with large user bases, you may prefer not introducing any API signature changes. For those cases, and other common patterns, you can apply attributes to more clearly define when an argument or return value may be `null`. Whether or not you consider changing the surface of your API, you'll likely find that type annotations alone are not sufficient for describing when `null` values for arguments or return values. In those instances, you can apply attributes to more clearly describe an API. 
 
 ## Attributes extend type annotations
 

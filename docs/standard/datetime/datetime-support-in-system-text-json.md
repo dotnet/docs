@@ -15,7 +15,7 @@ helpviewer_keywords:
 
 The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>, and <xref:System.Text.Json.JsonElement> parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset> text representations according to the extended profile of the ISO 8601-1:2019 format, e.g. 2019-07-26T16:59:57-05:00.
 
-Date and time data can be serialized with <xref:System.Text.Json.JsonSerializer>:
+<xref:System.DateTime> and <xref:System.DateTimeOffset> data can be serialized with <xref:System.Text.Json.JsonSerializer>:
 
 ```csharp
 Product p = new Product();
@@ -29,12 +29,23 @@ string json = JsonSerializer.Serialize(p);
 To deserialize:
 
 ```csharp
-Product p = JsonSerialize.Deserialize<Product>(@"{""Name"":""Banana"",""ExpiryDate"":""2019-07-26T00:00:00""}");
-Console.WriteLine(p.Name) // Banana
-Console.WriteLine(p.ExpiryDate) // 7/26/2019 12:00:00 AM
+Product p = JsonSerializer.Deserialize<Product>(@"{""Name"":""Banana"",""ExpiryDate"":""2019-07-26T00:00:00""}");
+Console.WriteLine(p.Name); // Banana
+Console.WriteLine(p.ExpiryDate); // 7/26/2019 12:00:00 AM
+
+// With default options, input DateTimes must conform to the extended ISO 8601-1:2019 profile.
+try
+{
+	var _ = JsonSerializer.Deserialize<Product>(@"{""Name"":""Banana"",""ExpiryDate"":""26/07/2019""}");
+}
+catch (JsonException e)
+{
+	Console.WriteLine(e.Message);
+	// The JSON value could not be converted to System.DateTime. Path: $.ExpiryDate | LineNumber: 0 | BytePositionInLine: 42.
+}
 ```
 
-The <xref:System.Text.Json.JsonDocument> provides structured access to the contents of a JSON payload, including date and time values. Given a collection of temperatures:
+The <xref:System.Text.Json.JsonDocument> provides structured access to the contents of a JSON payload, including <xref:System.DateTime> and <xref:System.DateTimeOffset> representations. Given a collection of temperatures:
 
 ```json
 [
@@ -86,7 +97,35 @@ double ComputeAverageTemperatures(string json)
 }
 ```
 
-The lower level <xref:System.Text.Json.Utf8JsonWriter> writes date and time data:
+Given a payload with non-compliant <xref:System.DateTime> representations:
+
+```json
+[
+    {
+        "date": "2013/01/07 00:00:00Z",
+        "temp": 23,
+    },
+    {
+        "date": "2013/01/08 00:00:00Z",
+        "temp": 28,
+    },
+    {
+        "date": "2013/01/14 00:00:00Z",
+        "temp": 8,
+    },
+]
+```
+
+Computing the average will fail:
+
+```
+var _ = ComputeAverageTemperatures(json);
+
+// Unhandled exception. System.FormatException: One of the identified items was in an invalid format.
+//    at System.Text.Json.JsonElement.GetDateTimeOffset()
+```
+
+The lower level <xref:System.Text.Json.Utf8JsonWriter> writes <xref:System.DateTime> and <xref:System.DateTimeOffset> data:
 
 ```csharp
 var options = new JsonWriterOptions
@@ -120,65 +159,69 @@ To read with <xref:System.Text.Json.Utf8JsonReader>:
 ```csharp
 byte[] utf8Data = Encoding.UTF8.GetBytes(@"""2019-07-26T00:00:00""");
 
-var json = new Utf8JsonReader(utf8Data, isFinalBlock: true, state: default);
+var json = new Utf8JsonReader(utf8Data);
 while (json.Read())
 {
     if (json.TokenType == JsonTokenType.String)
     {
-        Console.WriteLine(json.TryGetDateTime(out DateTime datetime)); // True
-        Console.WriteLine(datetime) // 7/26/2019 12:00:00 AM
-        Console.WriteLine(json.GetDateTime()); // 7/26/2019 12:00:00 AM
+        Console.WriteLine(json.TryGetDateTime(out DateTime datetime));
+		// True
+        
+		Console.WriteLine(datetime);
+		// 7/26/2019 12:00:00 AM
+        
+		Console.WriteLine(json.GetDateTime());
+		// 7/26/2019 12:00:00 AM
     }
 }
 ```
-## Custom support for date and times in `JsonSerializer`
 
-If you want custom parsing or formatting at the serializer level, you can implement [custom converters](https://github.com/dotnet/corefx/issues/36639). Here are a few examples:
+Reading non-compliant formats will fail:
 
-### Using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
+```csharp
+byte[] utf8Data = Encoding.UTF8.GetBytes(@"""2019/07/26 00:00:00""");
 
-This allows you to use .NET's extensive support for parsing various date and time formats, including non-ISO 8601 strings and ISO 8601 formats that don't conform to the Extended ISO 8601-1:2019 profile.
-This approach can be used if you can't determine the input date and time formats, but it is significantly less performant than using the serializer's native implementation.
+var json = new Utf8JsonReader(utf8Data);
+while (json.Read())
+{
+    if (json.TokenType == JsonTokenType.String)
+    {
+        Console.WriteLine(json.TryGetDateTime(out DateTime datetime));
+		// False
+        
+		Console.WriteLine(datetime);
+		// 1/1/0001 12:00:00 AM
+        
+		var _ = json.GetDateTime();
+		// Unhandled exception. System.FormatException: The JSON value is not in a supported DateTime format.
+		//     at System.Text.Json.Utf8JsonReader.GetDateTime()
+    }
+}
+```
+
+## Custom support for <xref:System.DateTime> and <xref:System.DateTimeOffset> in `JsonSerializer`
+
+If you want custom parsing or formatting at the serializer level, you can implement [custom converters](https://docs.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1?view=netcore-3.0). Here are a few examples:
+
+### Using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`
+
+This allows you to use .NET's extensive support for parsing various <xref:System.DateTime> and <xref:System.DateTimeOffset> text formats, including non-ISO 8601 strings and ISO 8601 formats that don't conform to the Extended ISO 8601-1:2019 profile.
+This approach can be used if you can't determine the input formats, but it is significantly less performant than using the serializer's native implementation.
 
 [!code-csharp[example-showing-datetime-parse](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example1/Program.cs)]
 
-### Using `UTF8Parser` and `UTF8Formatter`.
+### Using `UTF8Parser` and `UTF8Formatter`
 
-This allows you to use fast parsing and formatting methods for UTF-8 date and time data that is compliant with one of the [Standard Date and Time Format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
+This allows you to use fast UTF-8-based parsing and formatting methods for <xref:System.DateTime> and <xref:System.DateTimeOffset> data that is compliant with one of the [Standard Date and Time Format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
 This is much faster than Example 1 and should be used if the input data isn't compliant with the Extended ISO 8601-1:2019 profile but conforms to the "R", "l", "O", or "G" standard format specifiers.
 
 [!code-csharp[example-showing-utf8-parser-and-formatter](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example2/Program.cs)]
 
-### Using `DateTime(Offset).Parse` as a fallback to the serializers native parsing.
+### Using `DateTime(Offset).Parse` as a fallback to the serializers native parsing
 
-This approach can be used if you generally expect the input date and time data to conform to the Extended ISO 8601-1:2019 profile, but want to have a fallback just in case.
+This approach can be used if you generally expect the input <xref:System.DateTime> and <xref:System.DateTimeOffset> data to conform to the Extended ISO 8601-1:2019 profile, but want to have a fallback just in case.
 
-```csharp
-public class DateTimeConverterExample3 : JsonConverter<DateTime>
-{
-    public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
-    {
-        if (reader.TokenType != JsonTokenType.String)
-        {
-            throw new JsonException();
-        }
-
-        ReadOnlySpan<byte> valueSpan = reader.ValueSpan;
-
-        if (!reader.TryGetDateTime(out DateTime value))
-        {
-            value = DateTime.Parse(Encoding.UTF8.GetString(valueSpan));
-        }
-
-        return value;
-    }
-
-    public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
-    {
-        writer.WriteStringValue(value.ToString());
-    }
-}
-```
+[!code-csharp[example-showing-datetime-parse-as-fallback](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example3/Program.cs)]
 
 ## Extended ISO 8601-1:2019 Profile in System.Text.Json
 
@@ -230,9 +273,15 @@ The extended ISO 8601 profile implemented in <xref:System.Text.Json> uses these 
 
 Seconds can be omitted according to ISO 8601-1:2019 5.3.1.3a "Representations with reduced precision". ISO 8601-1:2019 5.3.1.3b allows just specifying the hour, but that representation is not supported.
 
-ISO 8601-1:2019 5.3.14 allows decimal fractions for hours, minutes and seconds. Only second fractions are supported. Lower order components can't follow, i.e. you can have T23.3, but not T23.3:04.
-There must be one digit, but the maximum number of digits is implementation defined. Up to 16 digits of fractional seconds are supported. While up to 16 fractional digits are allowed, only the first seven are parsed.
-Anything beyond that is considered a zero. This is to stay compatible with the <xref:System.DateTime> implementation which is limited to this resolution.
+ISO 8601-1:2019 5.3.14 allows decimal fractions for hours, minutes and seconds. Only second fractions are supported.
+
+If there are decimal fractions for seconds, there must be at least one digit , i.e. `2019-07-26T00:00:00.` is not allowed. The maximum number of digits is implementation defined. Up to 16 digits of fractional seconds are supported.
+While up to 16 fractional digits are allowed, only the first seven are parsed. Anything beyond that is considered a zero. For example, `2019-07-26T00:00:00.1234567890` would be parsed as if it were `2019-07-26T00:00:00.1234567`.
+This is to stay compatible with the <xref:System.DateTime> implementation which is limited to this resolution.
+
+```csharp
+string 
+```
 
 Leap seconds are not supported.
 

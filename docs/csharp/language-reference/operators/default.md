@@ -1,13 +1,12 @@
 ---
-title: "Default value expressions - C# Programming Guide"
+title: "default operator - C# reference"
 ms.custom: seodec18
-description: "Default value expressions produce the default value for any reference type or value type"
-ms.date: 04/25/2018
+description: "Use default operator to produce the default value of a type"
+ms.date: 07/31/2019
 helpviewer_keywords: 
-  - "generics [C#], default keyword"
-  - "default keyword [C#], generic programming"
+  - "default keyword [C#]"
 ---
-# default value expressions (C# programming guide)
+# default operator (C# reference)
 
 A default value expression `default(T)` produces the default value of a type `T`. The following table shows which values are produced for various types:
 
@@ -40,7 +39,7 @@ The `default(T)` expression is not limited to generic classes and methods. Defau
 
  [!code-csharp[csProgGuideGenerics#2](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#Snippet41)]
 
-## default literal and type inference
+## default literal
 
 Beginning with C# 7.1, the `default` literal can be used for default value expressions when the compiler can infer the type of the expression. The `default` literal produces the same value as the equivalent `default(T)` where `T` is the inferred type. This can make code more concise by reducing the redundancy of declaring a type more than once. The `default` literal can be used in any of the following locations:
 
@@ -54,11 +53,14 @@ The following example shows many usages of the `default` literal in a default va
 
 [!code-csharp[csProgGuideGenerics#3](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-literal.cs)]
 
+For more information, see the [feature proposal note](~/_csharplang/proposals/csharp-7.1/target-typed-default.md).
+
+## C# language specification
+
+For more information, see the [Default value expressions](~/_csharplang/spec/expressions.md#default-value-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+
 ## See also
 
-- <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
-- [Generics (C# Programming Guide)](../generics/index.md)
-- [Generic Methods](../generics/generic-methods.md)
-- [Generics in .NET](~/docs/standard/generics/index.md)
-- [Default values table](../../language-reference/keywords/default-values-table.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
+- [Default values table](../keywords/default-values-table.md)

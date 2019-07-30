@@ -268,7 +268,7 @@ Add a new directory to your project to organize the set of parser classes.
 
 ### Create bounding boxes and dimensions
 
-Object localization is a core component of object detection. As such, much of the data output by the model contains coordinates and dimensions of the bounding boxes of objects within the image. Create a base class for dimensions.
+The data output by the model contains coordinates and dimensions of the bounding boxes of objects within the image. Create a base class for dimensions.
 
 1. In **Solution Explorer**, right-click the *YoloParser* directory, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *DimensionsBase.cs*. Then, select the **Add** button.

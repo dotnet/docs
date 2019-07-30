@@ -19,7 +19,7 @@ This example shows how to call a page function from a [!INCLUDE[TLA#tla_xaml](..
  [!code-csharp[HOWTOPageFunctionSnippets#NavigateToAPageFunctionLikeAPageCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/CSharp/CallingPage.xaml.cs#navigatetoapagefunctionlikeapagecodebehind)]
  [!code-vb[HOWTOPageFunctionSnippets#NavigateToAPageFunctionLikeAPageCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/VisualBasic/CallingPage.xaml.vb#navigatetoapagefunctionlikeapagecodebehind)]  
   
- If you need to pass data to the page function, you can create an instance of it and pass the data by setting a property. Or, as the following example shows, you can pass the data using a non-default constructor.  
+ If you need to pass data to the page function, you can create an instance of it and pass the data by setting a property. Or, as the following example shows, you can pass the data using a non-parameterless constructor.  
   
  [!code-xaml[HOWTOPageFunctionSnippets#CallAPageFunctionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/CSharp/CallingPage.xaml#callapagefunctionxaml)]  
   

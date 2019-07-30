@@ -55,11 +55,11 @@ These are the highest precedence operators.
 
 [default(T)](../../programming-guide/statements-expressions-operators/default-value-expressions.md) – produces the default value of type T.
 
-[nameof](../keywords/nameof.md) - obtains the simple (unqualified) name of a variable, type, or member as a constant string.
+[nameof](nameof.md) - obtains the simple (unqualified) name of a variable, type, or member as a constant string.
 
-[delegate](../../programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.
+[delegate](delegate-operator.md) – declares and returns a delegate instance.
 
-[sizeof](../keywords/sizeof.md) – returns the size in bytes of the type operand.
+[sizeof](sizeof.md) – returns the size in bytes of the type operand.
 
 [stackalloc](stackalloc.md) - allocates a block of memory on the stack.
 

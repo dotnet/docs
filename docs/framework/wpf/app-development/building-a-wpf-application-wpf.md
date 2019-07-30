@@ -128,11 +128,11 @@ The core compile step involves compilation of code files. This is orchestrated b
 
 ### Manifest Generation
 
-At the end of the build process, after all the application assemblies and content files are ready, the [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] manifests for the application are generated.
+At the end of the build process, after all the application assemblies and content files are ready, the ClickOnce manifests for the application are generated.
 
 The deployment manifest file describes the deployment model: the current version, update behavior, and publisher identity along with digital signature. This manifest is intended to be authored by administrators who handle deployment. The file extension is .xbap (for [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)]) and .application for installed applications. The former is dictated by the `HostInBrowser` project property and as a result the manifest identifies the application as browser-hosted.
 
-The application manifest (an .exe.manifest file) describes the application assemblies and dependent libraries and lists permissions required by the application. This file is intended to be authored by the application developer. In order to launch a [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] application, a user opens the application's deployment manifest file.
+The application manifest (an .exe.manifest file) describes the application assemblies and dependent libraries and lists permissions required by the application. This file is intended to be authored by the application developer. In order to launch a ClickOnce application, a user opens the application's deployment manifest file.
 
 These manifest files are always created for [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]. For installed applications, they are not created unless the `GenerateManifests` property is specified in the project file with value `true`.
 

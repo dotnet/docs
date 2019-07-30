@@ -170,7 +170,7 @@ myapp.deps.json  myapp.dll  myapp.pdb  myapp.runtimeconfig.json
 
 The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a plaintext file named *Dockerfile* that does not have an extension.
 
-In your terminal, navigate to up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Add the following command as the first line of the file:
+In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Add the following command as the first line of the file:
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/core/runtime:2.2
@@ -201,7 +201,13 @@ docker-working
     └───obj
 ```
 
-From your terminal, run `docker build -t myimage -f Dockerfile .` and Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **myimage** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
+From your terminal, run the following command:
+
+```console
+docker build -t myimage -f Dockerfile .
+```
+
+Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells Docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **myimage** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
 
 ```console
 > docker images
@@ -220,7 +226,7 @@ ENTRYPOINT ["dotnet", "app/myapp.dll"]
 
 The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the **publish** folder is copied to a folder named **app** in the container.
 
-The next command, `ENTRYPOINT`, tells docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
+The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 
 From your terminal, run `docker build -t myimage -f Dockerfile .` and when that command finishes, run `docker images`.
 
@@ -237,7 +243,6 @@ Removing intermediate container f34da5c18e7c
  ---> ddcc6646461b
 Successfully built ddcc6646461b
 Successfully tagged myimage:latest
-
 
 > docker images
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE

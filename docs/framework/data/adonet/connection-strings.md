@@ -32,6 +32,13 @@ Keyword='double"quotation;mark';
 Keyword="single'quotation;mark";
 ```
 
+You can also escape the enclosing character by using two of them together:
+
+```
+Keyword="double""quotation";
+Keyword='single''quotation';
+```
+
 The quotation marks themselves, as well as the equals sign, do not require escaping, so the following connection strings are valid:
 
 ```

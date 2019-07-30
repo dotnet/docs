@@ -30,7 +30,7 @@ ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
   
 |Component|Description|  
 |---------------|-----------------|  
-|Provider [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)] (UIAutomationProvider.dll and UIAutomationTypes.dll)|A set of interface definitions that are implemented by UI Automation providers, objects that provide information about [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements and respond to programmatic input.|  
+|Provider API (UIAutomationProvider.dll and UIAutomationTypes.dll)|A set of interface definitions that are implemented by UI Automation providers, objects that provide information about [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements and respond to programmatic input.|  
 |Client API (UIAutomationClient.dll and UIAutomationTypes.dll)|A set of types for managed code that enables UI Automation client applications to obtain information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] and to send input to controls.|  
 |UiAutomationCore.dll|The underlying code (sometimes called the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] core) that handles communication between providers and clients.|  
 |UIAutomationClientsideProviders.dll|A set of UI Automation providers for standard legacy controls. ([!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls have native support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].) This support is automatically available to client applications.|  

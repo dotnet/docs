@@ -26,7 +26,7 @@ dotnet build [-h|--help]
 
 ## Description
 
-The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a *.dll* extension and symbol files used for debugging with a *.pdb* extension. A dependencies JSON file (*\*.deps.json*) is produced that lists the dependencies of the application. A *\*.runtimeconfig.json* file is produced, which specifies the shared runtime and its version for the application.
+The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a *.dll* extension and symbol files used for debugging with a *.pdb* extension. A dependencies JSON file (*.deps.json*) is produced that lists the dependencies of the application. A *.runtimeconfig.json* file is produced, which specifies the shared runtime and its version for the application.
 
 If the project has third-party dependencies, such as libraries from NuGet, they're resolved from the NuGet cache and aren't available with the project's built output. With that in mind, the product of `dotnet build` isn't ready to be transferred to another machine to run. This is in contrast to the behavior of the .NET Framework in which building an executable project (an application) produces output that's runnable on any machine where the .NET Framework is installed. To have a similar experience with .NET Core, you need to use the [dotnet publish](dotnet-publish.md) command. For more information, see [.NET Core Application Deployment](../deploying/index.md).
 

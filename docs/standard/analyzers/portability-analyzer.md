@@ -1,7 +1,7 @@
-﻿---
+---
 title: The .NET Portability Analyzer - .NET
 description: Learn how to use the .NET Portability Analyzer tool to evaluate how portable your code is among the various .NET implementations, including .NET Core, .NET Standard, UWP, and Xamarin.
-ms.date: 07/10/2019
+ms.date: 07/18/2019
 ms.technology: dotnet-standard
 ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
 ---
@@ -24,7 +24,7 @@ To begin using the .NET Portability Analyzer in Visual Studio, you first need to
 
 ![Portability screenshot](./media/portability-analyzer/portability-screenshot.png)
 
-You can also use the ApiPort console application, download it from [ApiPort repository](http://aka.ms/apiportdownload). You can use `listTargets` command option to display the available target list, then pick target platforms by specifying `-t` or `--target` command option. 
+You can also use the ApiPort console application, download it from [ApiPort repository](https://aka.ms/apiportdownload). You can use `listTargets` command option to display the available target list, then pick target platforms by specifying `-t` or `--target` command option. 
 
 ### Analyze portability
 To analyze your entire project in Visual Studio, right-click on your project in **Solution Explorer** and select **Analyze Assembly Portability**. Otherwise, go to the **Analyze** menu and select **Analyze Assembly Portability**. From there, select your project’s executable or DLL.
@@ -48,7 +48,7 @@ After running the analysis in Visual Studio, you'll see your .NET Portability re
 
 ![Portability Summary](./media/portability-analyzer/portabilitysummary.png)
 
-The Portability Summary section of the report shows the the portability percentage for each assembly included in the run. In the previous example, 89.74% of the .NET Framework APIs used in the `ConsoleAppFramework` app are available in .NET Core + Platform Extensions v2.2. If you run the .NET Portability Analyzer tool against multiple assemblies, each assembly should have a row in the Portability Summary report.
+The Portability Summary section of the report shows the portability percentage for each assembly included in the run. In the previous example, 71.24% of the .NET Framework APIs used in the `svcutil` app are available in .NET Core + Platform Extensions. If you run the .NET Portability Analyzer tool against multiple assemblies, each assembly should have a row in the Portability Summary report.
 
 #### Details
 
@@ -56,13 +56,13 @@ The Portability Summary section of the report shows the the portability percenta
 
 The Details section of the report lists the APIs missing from one of the Target Platforms. 
 
- - Target type: the type has missing API from a Target Platform 
- - Target member: the method is missing from a Target Platform 
- - Assembly name: the .NET Framework assembly that the missing
-   API lives in. 
- - Each of the selected Target Platforms is one column, such as ".NET Core": "Not supported" value means the API is not
-   supported on this Target Platform. 
- - Recommended Changes: recommended API or technology to change to. Currently, this field is empty or out of date for a lot of APIs. Due to the large number of APIs, we have big challenge to keep it up. We are looking at alternate solutions to provide helpful information to customers.
+- Target type: the type has missing API from a Target Platform 
+- Target member: the method is missing from a Target Platform 
+- Assembly name: the .NET Framework assembly that the missing
+  API lives in. 
+- Each of the selected Target Platforms is one column, such as ".NET Core": "Not supported" value means the API is not
+  supported on this Target Platform. 
+- Recommended Changes: recommended API or technology to change to. Currently, this field is empty or out of date for a lot of APIs. Due to the large number of APIs, we have big challenge to keep it up. We are looking at alternate solutions to provide helpful information to customers.
 
 #### Missing Assemblies
 
@@ -71,5 +71,3 @@ The Details section of the report lists the APIs missing from one of the Target 
 You may find a Missing Assemblies section in your report. It tells you that this list of assemblies are referenced by your analyzed assemblies and were not analyzed. If it's an assembly that you own, include it in the Api portability analyzer run so that you can get API level detailed portability report for it. If it's third party library, looks for if they have newer version supporting your target platform. If so, consider moving to the newer version. Eventually, you would expect this list includes all the third party assemblies that your app depends on and confirmed that they have a version supporting your target platform.  
 
 For more information on the .NET Portability Analyzer, visit the [GitHub documentation](https://github.com/Microsoft/dotnet-apiport#documentation) and [A Brief Look at the .NET Portability Analyzer](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer) Channel 9 video.
-
-

@@ -40,5 +40,5 @@ You might have to reference two versions of assemblies that have the same fully-
 - [C# Reference](../../../csharp/language-reference/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
+- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifier.md)
 - [/reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)

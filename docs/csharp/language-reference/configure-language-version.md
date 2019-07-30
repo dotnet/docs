@@ -29,7 +29,7 @@ If you must specify your C# version explicitly, you can do so in several ways:
 
 - Manually edit your [project file](#edit-the-project-file).
 - Set the language version [for multiple projects in a subdirectory](#configure-multiple-projects).
-- Configure the [`-langversion` compiler option](#set-the-langversion-compiler-option).
+- Configure the [`-langversion` compiler option](compiler-options/langversion-compiler-option.md)
 
 ### Edit the project file
 

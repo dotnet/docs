@@ -17,7 +17,7 @@ This topic provides an overview of the Microsoft ClearType technology found in t
   
 <a name="sub-pixel_positioning"></a>   
 ## Sub-pixel Positioning  
- A significant improvement over the previous version of ClearType is the use of sub-pixel positioning. Unlike the ClearType implementation found in [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)], the ClearType found in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] allows glyphs to start within the pixel and not just the beginning boundary of the pixel. Because of this extra resolution in positioning glyphs, the spacing and proportions of the glyphs is more precise and consistent.  
+ A significant improvement over the previous version of ClearType is the use of sub-pixel positioning. Unlike the ClearType implementation found in GDI, the ClearType found in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] allows glyphs to start within the pixel and not just the beginning boundary of the pixel. Because of this extra resolution in positioning glyphs, the spacing and proportions of the glyphs is more precise and consistent.  
   
  The following two examples show how glyphs may begin on any sub-pixel boundary when sub-pixel positioning is used. The example on the left is rendered using the earlier version of the ClearType renderer, which did not employ sub-pixel positioning. The example on the right is rendered using the new version of the ClearType renderer, using sub-pixel positioning. Note how each **e** and **l** in the right-hand image is rendered slightly differently because each starts on a different sub-pixel. When viewing the text at its normal size on the screen, this difference is not noticeable because of the high contrast of the glyph image. This is only possible because of sophisticated color filtering that is incorporated in ClearType.  
   
@@ -31,7 +31,7 @@ Text with earlier and later versions of ClearType
   
 <a name="y-direction_antialiasing"></a>   
 ## Y-Direction Antialiasing  
- Another improvement of ClearType in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] is y-direction anti-aliasing. The ClearType in [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] without y-direction anti-aliasing provides better resolution on the x-axis but not the y-axis. On the tops and bottoms of shallow curves, the jagged edges detract from its readability.  
+ Another improvement of ClearType in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] is y-direction anti-aliasing. The ClearType in GDI without y-direction anti-aliasing provides better resolution on the x-axis but not the y-axis. On the tops and bottoms of shallow curves, the jagged edges detract from its readability.  
   
  The following example shows the effect of having no y-direction antialiasing. In this case, the jagged edges on the top and bottom of the letter are apparent.  
   

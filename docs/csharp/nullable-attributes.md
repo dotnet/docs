@@ -108,8 +108,8 @@ When you compile the preceding code in a nullable oblivious context, everything 
 [AllowNull]
 public string ScreenName
 {
-   get { return screenName; }
-   set { screenName = value ?? GenerateRandomScreenName(); }
+   get => screenName;
+   set => screenName = value ?? GenerateRandomScreenName();
 }
 private string screenName = GenerateRandomScreenName();
 ```
@@ -128,7 +128,7 @@ Contrast that with scenarios for using `DisallowNull`: You use this attribute to
 ```csharp
 public string ReviewComment // Comments can be set, but not cleared.
 {
-    get { return _comment;}
+    get => _comment;
     set
     {
         if (value == null) throw new ArgumentNullException(nameof(value), "Cannot set to null");
@@ -144,17 +144,14 @@ The preceding code is the best way to express your design that the `ReviewCommen
 [DisallowNull] 
 public string? ReviewComment // Comments can be added, but not removed.
 {
-    get { return _comment;}
-    set
-    {
-        if (value == null) throw new ArgumentNullException(nameof(value), "Cannot set to null");
-        _comment = value;
+    get => _comment;
+    set => _comment = value ?? throw new ArgumentNullException(nameof(value), "Cannot set to null");;
     }
 }
 string? _comment;
 ```
 
-In a nullable context, the preceding code warns callers that the `ReviewComment` could be `null`, so it must be checked before access. Furthermore, it warns callers that, even though it could be `null`, callers shouldn't explicitly set it to `null`. The `DisallowNull` attribute also specifies a *pre-condition*, it does not affect the `get` accessor. You should choose to use the `DisallowNull` attribute when you observe these characteristics about:
+In a nullable context, the `ReviewComment` `get` accessor could return the default value of `null`. The compiler ensures that it must be checked before access. Furthermore, it warns callers that, even though it could be `null`, callers shouldn't explicitly set it to `null`. The `DisallowNull` attribute also specifies a *pre-condition*, it does not affect the `get` accessor. You should choose to use the `DisallowNull` attribute when you observe these characteristics about:
 
 1. The variable could be `null` in core scenarios, often when first instantiated.
 1. The variable shouldn't be explicitly set to `null`.
@@ -174,13 +171,15 @@ Suppose you have a method with the following signature:
 public Customer FindCustomer(string lastName, string firstName)
 ```
 
-You've likely written a method like this to return `null` when the name sought wasn't found. The `null` clearly indicates that the record wasn't found. In this example, you'd likely change the return type from `Customer` to `Customer?`. Instead, suppose it was a generic method like the following code:
+You've likely written a method like this to return `null` when the name sought wasn't found. The `null` clearly indicates that the record wasn't found. In this example, you'd likely change the return type from `Customer` to `Customer?`. Declaring the return value as a nullable reference type specifies the intent of this API clearly. 
+
+For reasons covered under [Generic definitions and nullability](#generic-definitions-and-nullability) that technique does not work with generic methods. You may have a generic method that follows a similar pattern:
 
 ```csharp
 public T Find<T>(IEnumerable<T> sequence, Func<T, bool> match)
 ```
 
-You want to continue to express that the sequence doesn't contain `null` values, and the `match` function won't be called with a `null` value. But, if the sought element isn't found, the returned value could be `null`. That's when you add the `MaybeNull` annotation to the method return:
+You can't specify that the return value is `T?`. The method returns `null` when the sought item isn't found. Since you can't declare a `T?` return type, you add the `MaybeNull` annotation to the method return:
 
 ```csharp
 [return: MaybeNull]
@@ -217,13 +216,13 @@ The preceding code expresses the existing contract very clearly: Callers can pas
 
 ## Specify conditional post-conditions: `NotNullWhen` and `MaybeNullWhen`
 
-You're likely familiar with the `string` method <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType>. This method returns `true` when the argument isn't null, and not the empty string. Callers shouldn't need to null-check the argument if the method returns `false`. To make a method like this nullable aware, you'd set the argument to a nullable type, and add the `NotNullWhen` attribute:
+You're likely familiar with the `string` method <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType>. This method returns `true` when the argument isn't null, and not the empty string. It is a form of null-check: Callers don't need to null-check the argument if the method returns `false`. To make a method like this nullable aware, you'd set the argument to a nullable type, and add the `NotNullWhen` attribute:
 
 ```csharp
 bool IsNullOrEmpty([NotNullWhen(false)]string? value);
 ```
 
-That informs the compiler that any code where the return value is `false` need not be checked:
+That informs the compiler that any code where the return value is `false` need not be checked. The addition of the attribute informs the compiler's static analysis that `IsNullOrEmpty` performs the necessary null check: It returns `false` when the input argument is not `null`.
 
 ```csharp
 string? userInput = GetUserInput();
@@ -234,7 +233,7 @@ if (!(string.IsNullOrEmpty(userInput))
 // null check needed on userInput here.
 ```
 
-The <xref:System.String.IsNullOrEmpty(System.string)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that checks the state of objects for null values. The compiler won't recognize custom null check methods, and you'll need to add the annotations yourself.
+The <xref:System.String.IsNullOrEmpty(System.string)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that checks the state of objects for null values. The compiler won't recognize custom null check methods, and you'll need to add the annotations yourself. When you add the attribute, the compiler's static analysis knows when the tested variable has been null checked.
 
 Another use for these attributes is the `Try*` pattern. The postconditions for `ref` and `out` variables are communicated through the return value. Consider this method shown earlier:
 

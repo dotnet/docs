@@ -1,7 +1,7 @@
 ---
 title: Load data from files and other sources
 description: This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
-ms.date: 06/25/2019
+ms.date: 07/31/2019
 ms.custom: mvc,how-to, title-hack-0625
 #Customer intent: As a developer I want to know how to load data from file and other data sources.
 ---
@@ -135,6 +135,9 @@ HousingData[] inMemoryCollection = new HousingData[]
 ```
 
 Load the in-memory collection into an [`IDataView`](xref:Microsoft.ML.IDataView) with the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) method:
+
+> [!IMPORTANT]
+> [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) assumes that the [`IEnumerable`](xref:System.Collections.IEnumerable) it loads from is thread-safe. 
 
 ```csharp
 // Create MLContext

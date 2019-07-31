@@ -73,9 +73,9 @@ However, for public libraries, or libraries with large user bases, you may prefe
 
 ## Attributes extend type annotations
 
-several attributes have been added to express further information about the null state of variables. All code you wrote before C# 8 introduced nullable reference types was *null oblivious*. That means any reference type variable may be null, but null checks aren't required. Once your code is *nullable aware*, those rules change. Reference types should never be the `null` value, and nullable reference types must be checked against null before being dereferenced.
+Several attributes have been added to express further information about the null state of variables. All code you wrote before C# 8 introduced nullable reference types was *null oblivious*. That means any reference type variable may be null, but null checks aren't required. Once your code is *nullable aware*, those rules change. Reference types should never be the `null` value, and nullable reference types must be checked against null before being dereferenced.
 
-The rules for your APIs are likely more complicated, as you saw wit the `TryGetValue` API scenario. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use one of these attributes to express those rules:
+The rules for your APIs are likely more complicated, as you saw with the `TryGetValue` API scenario. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use one of these attributes to express those rules:
 
 - `AllowNull`: A non-nullable input argument may be null.
 - `DisallowNull`: A nullable input argument should never be null.

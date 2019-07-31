@@ -102,7 +102,7 @@ public string ScreenName
 private string screenName;
 ```
 
-When you compile the preceding code in a nullable oblivious context, everything is fine. Once you enable nullable reference types, the `ScreenName` property becomes a non-nullable reference. That's correct for the `get` accessor: it never returns `null`. Callers don't need to check the returned property for `null`. But now setting the property to `null` generates a warning. In order to continue to support this type of code, you add the <xref:System.Diagnostics.CodeAnalysis.AllowNull?displayProperty=nameWithType> attribute to the `set` accessor, as shown in the following code: 
+When you compile the preceding code in a nullable oblivious context, everything is fine. Once you enable nullable reference types, the `ScreenName` property becomes a non-nullable reference. That's correct for the `get` accessor: it never returns `null`. Callers don't need to check the returned property for `null`. But now setting the property to `null` generates a warning. In order to continue to support this type of code, you add the <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute?displayProperty=nameWithType> attribute to the `set` accessor, as shown in the following code: 
 
 ```csharp
 [AllowNull]
@@ -138,7 +138,7 @@ public string ReviewComment // Comments can be set, but not cleared.
 string _comment;
 ```
 
-The preceding code is the best way to express your design that the `ReviewComment` could be `null`, but can't be set to `null`. Once this code is nullable aware, you can express this concept more clearly to callers using the <xref:System.Diagnostics.CodeAnalysis.DisallowNull?displayProperty=nameWithType>:
+The preceding code is the best way to express your design that the `ReviewComment` could be `null`, but can't be set to `null`. Once this code is nullable aware, you can express this concept more clearly to callers using the <xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute?displayProperty=nameWithType>:
 
 ```csharp
 [DisallowNull] 
@@ -217,7 +217,7 @@ The preceding code expresses the existing contract very clearly: Callers can pas
 
 ## Specify conditional post-conditions: `NotNullWhen` and `MaybeNullWhen`
 
-You're likely familiar with the `string` method <xref:System.String.IsNullOrEmpty(string)?DisplayProperty=nameWithType>. This method returns `true` when the argument isn't null, and not the empty string. Callers shouldn't need to null-check the argument if the method returns `false`. To make a method like this nullable aware, you'd set the argument to a nullable type, and add the `NotNullWhen` attribute:
+You're likely familiar with the `string` method <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType>. This method returns `true` when the argument isn't null, and not the empty string. Callers shouldn't need to null-check the argument if the method returns `false`. To make a method like this nullable aware, you'd set the argument to a nullable type, and add the `NotNullWhen` attribute:
 
 ```csharp
 bool IsNullOrEmpty([NotNullWhen(false)]string? value);
@@ -234,7 +234,7 @@ if (!(string.IsNullOrEmpty(userInput))
 // null check needed on userInput here.
 ```
 
-The <xref:System.String.IsNullOrEmpty(string)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that checks the state of objects for null values. The compiler won't recognize custom null check methods, and you'll need to add the annotations yourself.
+The <xref:System.String.IsNullOrEmpty(System.string)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that checks the state of objects for null values. The compiler won't recognize custom null check methods, and you'll need to add the annotations yourself.
 
 Another use for these attributes is the `Try*` pattern. The postconditions for `ref` and `out` variables are communicated through the return value. Consider this method shown earlier:
 
@@ -283,7 +283,7 @@ Correctly communicating the null state of generic types and generic methods requ
 
 This doesn't mean you can use a nullable type (either value type or reference type) as the type argument for a closed generic type. Both `List<string?>` and `List<int?>` are valid instantiations of `List<T>`. 
 
-What it does mean is that you can't use `T?` in a generic class or method declaration without constraints. For example, <xref:System.Linq.Enumerable%601(System.Collections.Generic.IEnumerable%601)?displayProperty=nameWithType> won't be changed to return `T?`. You can overcome this limitation by adding either the `struct` or `class` constraint. With either of those constraints, the compiler knows how to generate code for both `T` and `T?`.
+What it does mean is that you can't use `T?` in a generic class or method declaration without constraints. For example, <xref:System.Linq.Enumerable.FirstOrDefault%601(System.Collections.Generic.IEnumerable{%600})?displayProperty=nameWithType> won't be changed to return `T?`. You can overcome this limitation by adding either the `struct` or `class` constraint. With either of those constraints, the compiler knows how to generate code for both `T` and `T?`.
 
 You may want to restrict the types used for a generic type argument to be non-nullable types. You can do that by adding the `notnull` constraint on that type argument. When that attribute is applied, the type argument must not be a nullable type.
 

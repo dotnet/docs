@@ -1,5 +1,5 @@
 ---
-title: Upgrade libraries to provide clear expectations for potential null values to callers.
+title: Upgrade APIs with attributes to define null expectations
 description: This article explains the motivations and techniques for adding descriptive attributes to describe the null state of arguments and return values from APIs
 ms.date: 07/31/2019
 ---
@@ -15,7 +15,7 @@ The preceding example follows the familiar `Try*` pattern in .NET. There are two
 
 - Callers shouldn't pass `null` as the argument for `key`.
 - Callers can pass a variable whose value is `null` as the argument for `message`.
-- If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false,` the value of `message` (and its null state) is unchanged.
+- If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false,` the value of `message` (and its null state) is null.
 
 The rule for `key` can be completely expressed by the variable type: `key` should be a non-nullable reference type. The `message` argument is more complex. It allows `null` as the argument, but guarantees that on success, that `out` argument isn't null. For these scenarios, you need a richer vocabulary to describe the expectations.
 
@@ -46,7 +46,7 @@ Following this second strategy you do the following:
 
 1. Add the `#nullable enable` pragma to the file you want to make nullable aware.
 1. Address any warnings.
-1. Continue these first two steps until you have made the entire library nullable aware.
+1. Continue these first two steps until you've made the entire library nullable aware.
 1. Enable nullable types for the entire project by adding the `<Nullable>enable</Nullable>` element to your *csproj* files. 
 1. Remove the `#nullable enable` pragmas, as they're no longer needed.
 

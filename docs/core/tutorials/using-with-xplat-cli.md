@@ -2,6 +2,7 @@
 title: Get started with .NET Core using the CLI
 description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
 author: thraka
+ms.author: adegeo
 ms.date: 09/10/2018
 ms.technology: dotnet-cli
 ms.custom: "seodec18"
@@ -149,7 +150,7 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
 
 ## Publish your app
 
-Once you're ready to distribute your app, you can publish it with the command [`dotnet publish`](../tools/dotnet-publish.md). Depending on the current .NET Core SDK you're using, the default [`dotnet publish`](../tools/dotnet-publish.md) command will choose a specific publishing method by default. For more information on what the default publishing method is for your SDK version, see [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli,md) .
+Once you're ready to distribute your app, you can publish it with the command [`dotnet publish`](../tools/dotnet-publish.md). Depending on the current .NET Core SDK you're using, the default [`dotnet publish`](../tools/dotnet-publish.md) command will choose a specific publishing method by default. For more information on what the default publishing method is for your SDK version, see [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md) .
 
 There are two publishing methods:
 

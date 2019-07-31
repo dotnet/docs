@@ -13,7 +13,9 @@ helpviewer_keywords:
 ---
 # DateTime and DateTimeOffset support in System.Text.Json
 
-The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>, and <xref:System.Text.Json.JsonElement> parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset> text representations according to the extended profile of the ISO 8601-1:2019 format, e.g. 2019-07-26T16:59:57-05:00.
+The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>,
+and <xref:System.Text.Json.JsonElement> parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset>
+text representations according to the extended profile of the ISO 8601-1:2019 format, e.g. 2019-07-26T16:59:57-05:00.
 
 <xref:System.DateTime> and <xref:System.DateTimeOffset> data can be serialized with <xref:System.Text.Json.JsonSerializer>:
 
@@ -33,7 +35,7 @@ Product p = JsonSerializer.Deserialize<Product>(@"{""Name"":""Banana"",""ExpiryD
 Console.WriteLine(p.Name); // Banana
 Console.WriteLine(p.ExpiryDate); // 7/26/2019 12:00:00 AM
 
-// With default options, input DateTimes must conform to the extended ISO 8601-1:2019 profile.
+// With default options, input DateTimes must conform to the native implementation of the ISO 8601-1:2019 profile.
 try
 {
 	var _ = JsonSerializer.Deserialize<Product>(@"{""Name"":""Banana"",""ExpiryDate"":""26/07/2019""}");
@@ -45,7 +47,8 @@ catch (JsonException e)
 }
 ```
 
-The <xref:System.Text.Json.JsonDocument> provides structured access to the contents of a JSON payload, including <xref:System.DateTime> and <xref:System.DateTimeOffset> representations. Given a collection of temperatures:
+The <xref:System.Text.Json.JsonDocument> provides structured access to the contents of a JSON payload, including <xref:System.DateTime>
+and <xref:System.DateTimeOffset> representations. Given a collection of temperatures:
 
 ```json
 [
@@ -201,25 +204,31 @@ while (json.Read())
 
 ## Custom support for <xref:System.DateTime> and <xref:System.DateTimeOffset> in `JsonSerializer`
 
-If you want custom parsing or formatting at the serializer level, you can implement [custom converters](https://docs.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1?view=netcore-3.0). Here are a few examples:
+If you want custom parsing or formatting at the serializer level, you can implement
+[custom converters](https://docs.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1?view=netcore-3.0).
+Here are a few examples:
 
 ### Using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`
 
-This allows you to use .NET's extensive support for parsing various <xref:System.DateTime> and <xref:System.DateTimeOffset> text formats, including non-ISO 8601 strings and ISO 8601 formats that don't conform to the Extended ISO 8601-1:2019 profile.
-This approach can be used if you can't determine the input formats, but it is significantly less performant than using the serializer's native implementation.
+This allows you to use .NET's extensive support for parsing various <xref:System.DateTime> and <xref:System.DateTimeOffset> text formats,
+including non-ISO 8601 strings and ISO 8601 formats that don't conform to the extended ISO 8601-1:2019 profile. This approach can be used
+if you can't determine the input formats, but it is significantly less performant than using the serializer's native implementation.
 
 [!code-csharp[example-showing-datetime-parse](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example1/Program.cs)]
 
-### Using `UTF8Parser` and `UTF8Formatter`
+### Using <xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>
 
-This allows you to use fast UTF-8-based parsing and formatting methods for <xref:System.DateTime> and <xref:System.DateTimeOffset> data that is compliant with one of the [Standard Date and Time Format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
-This is much faster than Example 1 and should be used if the input data isn't compliant with the Extended ISO 8601-1:2019 profile but conforms to the "R", "l", "O", or "G" standard format specifiers.
+This allows you to use fast UTF-8-based parsing and formatting methods for <xref:System.DateTime> and <xref:System.DateTimeOffset> datathat is compliant
+with one of the [Standard Date and Time Format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
+This is much faster than Example 1 and should be used if the input data isn't compliant with the extended ISO 8601-1:2019 profile but conforms to the
+"R", "l", "O", or "G" standard format specifiers.
 
 [!code-csharp[example-showing-utf8-parser-and-formatter](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example2/Program.cs)]
 
 ### Using `DateTime(Offset).Parse` as a fallback to the serializers native parsing
 
-This approach can be used if you generally expect the input <xref:System.DateTime> and <xref:System.DateTimeOffset> data to conform to the Extended ISO 8601-1:2019 profile, but want to have a fallback just in case.
+This approach can be used if you generally expect the input <xref:System.DateTime> and <xref:System.DateTimeOffset> data to conform to the
+extended ISO 8601-1:2019 profile, but want to have a fallback just in case.
 
 [!code-csharp[example-showing-datetime-parse-as-fallback](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example3/Program.cs)]
 
@@ -227,61 +236,54 @@ This approach can be used if you generally expect the input <xref:System.DateTim
 
 ### Date and time components
 
-ISO 8601-1:2019 defines the following components for date and time representations:
+The extended ISO 8601-1:2019 profile implemented in <xref:System.Text.Json> defines the following components for
+date and time representations. These components are used to define various levels of date and time granularity
+supported when parsing and formatting <xref:System.DateTime> and <xref:System.DateTimeOffset> representations.
 
-| Component         | Format                                                     | ISO 8601-1:2019 spec | Description                                                                                                     |
-|-------------------|------------------------------------------------------------|----------------------|-----------------------------------------------------------------------------------------------------------------|
-| `date-fullyear`   | `YYYY`                                                     | 4.3.2                | 0001-9999                                                                                                       |
-| `date-month`      | `MM`                                                       | 4.3.3                | 01-12                                                                                                           |
-| `date-mday`       | `DD`                                                       | 4.3.4                | 01-28, 01-29, 01-30, 01-31 based on month/year                                                                  |
-| `time-hour`       | `hh`                                                       | 4.3.8a               | 00-23                                                                                                           |
-| `time-minute`     | `mm`                                                       | 4.3.9a               | 00-59                                                                                                           |
-| `time-second`     | `ss`                                                       | 4.3.10a              | 00-58, 00-59, 00-60 based on leap second rules                                                                  |
-| `time-secfrac`    | `s`                                                        | 5.3.14               | There must be one digit, but the max number of digits is implemenation-defined                                  |
-| `time-numoffset`  | `("+" / "-") time-hour ":" time-minute`                    |                      |                                                                                                                 |
-| `time-offset`     | `"Z" / time-numoffset`                                     |                      |                                                                                                                 |
-| `partial-time`    | `time-hour ":" time-minute ":" time-second [time-secfrac]` |                      |                                                                                                                 |
-| `full-date`       | `date-fullyear "-" date-month "-" date-mday`               | 5.2.2.1b             | Extended calendar date                                                                                          |
-| `full-time`       | `partial-time time-offset`                                 | 5.3.3 or 5.3.4.2     | 5.3.3 is "UTC of day" while 5.3.4.2 is "Local time of day with the time shift between local time scale and UTC" |
-| `date-time`       | `full-date "T" full-time`                                  | 5.4.2.1              | Extended calendar date and time of day                                                                          |
+| Component       | Format                      | Description                                                                     |
+|-----------------|-----------------------------|---------------------------------------------------------------------------------|
+| Year            | "yyyy"                      | 0001-9999                                                                       |
+| Month           | "MM"                        | 01-12                                                                           |
+| Day             | "dd"                        | 01-28, 01-29, 01-30, 01-31 based on month/year                                  |
+| Hour            | "HH"                        | 00-23                                                                           |
+| Minute          | "mm"                        | 00-59                                                                           |
+| Second          | "ss"                        | 00-59                                                                           |
+| Second fraction | "FFFFFFF"                   | Minimum of one digit, maximum of 16 digits                                      |
+| Time offset     | "K"                         | Either "Z" or "('+'/'-')HH':'mm"                                                |
+| Partial time    | "HH':'mm':'ss[FFFFFFF]"     |                                                                                 |
+| Full date       | "yyyy'-'MM'-'dd"            |                                                                                 |
+| Full time       | "'Partial time'K"           | UTC of day or Local time of day with the time offset between local time and UTC |
+| Date time       | "'Full date''T''Full time'" | Extended calendar date and time of day                                          |
 
 ### Support for parsing
 
-The extended ISO 8601 profile implemented in <xref:System.Text.Json> uses these components to define the following levels of date and time granularity:
+The following levels of granularity are defined for parsing:
 
-1. `full-date` (ISO 8601-1:2019 5.2.2.1)
-	1. `YYYY-MM-DD`
+1. 'Full date'
+	1. "yyyy'-'MM'-'dd"
 
-	ISO 8601-1:2019 5.2.2.2 "Representations with reduced precision" allows for just YYYY-MM (a) and just YYYY (b), but neither is supported.
+2. "'Full date''T''Hour'':''Minute'"
+	1. "yyyy'-'MM'-'dd'T'HH':'mm"
 
-2. `full-date "T" time-hour ":" time-minute`
-	1. `YYYY-MM-DDThh:mm`
+3. "'Full date''T''Partial time'"
+	1. "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
+	([The Sortable ("s") Format Specifier](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-sortable-s-format-specifier))
+	2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF"
 
-3. `full-date "T" partial-time`
-	1. `YYYY-MM-DDThh:mm:ss`
-	2. `YYYY-MM-DDThh:mm:ss.s`
+4. "'Full date''T''Time hour'':''Minute''Time offset'"
+	1. "yyyy'-'MM'-'dd'T'HH':'mmZ"
+	2. "yyyy'-'MM'-'dd'T'HH':'mm('+'/'-')HH':'mm"
 
-4. `full-date "T" time-hour ":" time-minute time-offset`
-	1. `YYYY-MM-DDThh:mmZ`
-	2. `YYYY-MM-DDThh:mm("+" / "-")hh":"mm`
+5. 'Date time'
+	1. "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"
+	2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ"
+	3. "yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm"
+	4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
 
-5. `date-time` (ISO 8601-1:2019 5.4.2.1)
-	1. `YYYY-MM-DDThh:mm:ssZ`
-	2. `YYYY-MM-DDThh:mm:ss.sZ`
-	3. `YYYY-MM-DDThh:mm:ss("+" / "-")hh":"mm`
-	4. `YYYY-MM-DDThh:mm:ss.s("+" / "-")hh":"mm`
-
-Seconds can be omitted according to ISO 8601-1:2019 5.3.1.3a "Representations with reduced precision". ISO 8601-1:2019 5.3.1.3b allows just specifying the hour, but that representation is not supported.
-
-ISO 8601-1:2019 5.3.14 allows decimal fractions for hours, minutes and seconds. Only second fractions are supported.
-
-If there are decimal fractions for seconds, there must be at least one digit , i.e. `2019-07-26T00:00:00.` is not allowed. The maximum number of digits is implementation defined. Up to 16 digits of fractional seconds are supported.
-While up to 16 fractional digits are allowed, only the first seven are parsed. Anything beyond that is considered a zero. For example, `2019-07-26T00:00:00.1234567890` would be parsed as if it were `2019-07-26T00:00:00.1234567`.
+If there are decimal fractions for seconds, there must be at least one digit i.e. `2019-07-26T00:00:00.` is not allowed.
+While up to 16 fractional digits are allowed, only the first seven are parsed. Anything beyond that is considered a zero.
+For example, `2019-07-26T00:00:00.1234567890` will be parsed as if it is `2019-07-26T00:00:00.1234567`.
 This is to stay compatible with the <xref:System.DateTime> implementation which is limited to this resolution.
-
-```csharp
-string 
-```
 
 Leap seconds are not supported.
 
@@ -289,28 +291,29 @@ Leap seconds are not supported.
 
 The following levels of granularity are defined for formatting:
 
-1. `full-date "T" partial-time`
-	1. `YYYY-MM-DDThh:mm:ss` 
+1. "'Full date''T''Partial time'"
+	1. "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
+		([The Sortable ("s") Format Specifier](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-sortable-s-format-specifier))
 
 		Used to format a <xref:System.DateTime> without fractional seconds and without offset information.
 
-	2. `YYYY-MM-DDThh:mm:ss.s`
+	2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF"
 
 		Used to format a <xref:System.DateTime> with fractional seconds but without offset information.
 
-2. `date-time` (ISO 8601-1:2019 5.4.2.1)
-	1. `YYYY-MM-DDThh:mm:ssZ`
+2. 'Date time'
+	1. "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"
 
 		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a UTC offset.
 
-	2. `YYYY-MM-DDThh:mm:ss.sZ`
+	2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ"
 
 		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a UTC offset.
 
-	3. `YYYY-MM-DDThh:mm:ss("+" / "-")hh":"mm`
+	3. "yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm"
 
 		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a local offset.
 
-	4. `YYYY-MM-DDThh:mm:ss.s("+" / "-")hh":"mm`
+	4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
 
 		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a local offset.

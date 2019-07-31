@@ -114,7 +114,7 @@ public string ScreenName
 private string screenName = GenerateRandomScreenName();
 ```
 
-You may need to add a `using` directive for `System.Diagnostics.CodeAnalysis` to use this and other attributes discussed in this article. The attribute is applied to the property, not the `set` accessor. The `AllowNull` attribute specifies *pre-conditions*, and only applies to inputs. The `get` accessor has a return value, but no input arguments. Therefore, the `AllowNull` attribute only applies to the `set` accessor.
+You may need to add a `using` directive for <xref:System.Diagnostics.CodeAnalysis> to use this and other attributes discussed in this article. The attribute is applied to the property, not the `set` accessor. The `AllowNull` attribute specifies *pre-conditions*, and only applies to inputs. The `get` accessor has a return value, but no input arguments. Therefore, the `AllowNull` attribute only applies to the `set` accessor.
 
 The preceding example demonstrates what to look for when adding the `AllowNull` attribute on an argument:
 
@@ -241,12 +241,12 @@ Another use for these attributes is the `Try*` pattern. The postconditions for `
 bool TryGetMessage(string key, out string message)
 ```
 
-The preceding method follows a typical .NET idiom: the return value indicates if `message` was set or not. If the method returns `true`, the value isn't null, `false`, and the method didn't set `message`.
+The preceding method follows a typical .NET idiom: the return value indicates if `message` was set or not. If the method returns `true`, the value isn't null; `false`, and the method didn't set `message`.
 
-You can communicate that idiom using the `NotNullWhen` attribute. When you update the signature for nullable reference types, make `message` and `string?` and add an attribute:
+You can communicate that idiom using the `NotNullWhen` attribute. When you update the signature for nullable reference types, make `message` a `string?` and add an attribute:
 
 ```csharp
-bool TryGetMessage(string key, [NotNullWhen(true)out string? message)
+bool TryGetMessage(string key, [NotNullWhen(true)] out string? message)
 ```
 
 In the preceding example, the value of `message` is known to be not null when `TryGetMessage` returns true.  You should annotate similar methods in your codebase in the same way: the arguments could be `null`, and are known to be not null when the method returns `true`.
@@ -288,7 +288,7 @@ You may want to restrict the types used for a generic type argument to be non-nu
 
 ## Conclusions
 
-Adding nullable reference types provides an initial vocabulary to describe your APIs expectations for if variables could be `null`. The additional attributes provide a richer vocabulary to describe the null state of variables as preconditions and postconditions. These attributes more clearly describe your expectations and provide a better experience for the developers using your APIs.
+Adding nullable reference types provides an initial vocabulary to describe your APIs expectations for variables that could be `null`. The additional attributes provide a richer vocabulary to describe the null state of variables as preconditions and postconditions. These attributes more clearly describe your expectations and provide a better experience for the developers using your APIs.
 
 As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage. These attributes help you fully describe the null-state of input arguments and return values:
 

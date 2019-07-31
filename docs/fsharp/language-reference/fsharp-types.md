@@ -63,4 +63,4 @@ The following table shows aspects of the type syntax for F# types.
 |[Delegates](delegates.md)|Describes the delegate type, which represents a function as an object.|
 |[Enumerations](enumerations.md)|Describes enumeration types, whose values belong to a set of named values.|
 |[Attributes](attributes.md)|Describes attributes, which are used to specify metadata for another type.|
-|[Exception Types](/.exception-handling/exception-types.md)|Describes exceptions, which specify error information.|
+|[Exception Types](./exception-handling/exception-types.md)|Describes exceptions, which specify error information.|

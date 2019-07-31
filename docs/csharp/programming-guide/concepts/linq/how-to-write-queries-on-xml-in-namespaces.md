@@ -72,4 +72,4 @@ foreach (XElement el in c1)
   
 ## See also
 
-- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md)
+- [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md)

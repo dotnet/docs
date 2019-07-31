@@ -1,7 +1,7 @@
 ---
 title: Load data from files and other sources
 description: This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
-ms.date: 06/25/2019
+ms.date: 07/31/2019
 ms.custom: mvc,how-to, title-hack-0625
 #Customer intent: As a developer I want to know how to load data from file and other data sources.
 ---
@@ -51,7 +51,7 @@ Load columns as:
 - Individual columns like `Size` and `CurrentPrices` in the `HousingData` class.
 - Multiple columns at a time in the form of a vector like `HistoricalPrices` in the `HousingData` class.
 
-If you have a vector property, apply the [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute) attribute to the property in your data model. It's important to note that all of the elements in the vector need to be the same type.
+If you have a vector property, apply the [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute) attribute to the property in your data model. It's important to note that all of the elements in the vector need to be the same type. Although loading columns individually provides flexibility when performing feature engineering, in data sets with a large number of columns, loading multiple columns as a single vector reduces the number of passes over the data when you apply data transformations.
 
 ML.NET Operates through column names. If you want to change the name of a column to something other than the property name, use the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute. When creating in-memory objects, you still create objects using the property name. However, for data processing and building machine learning models, ML.NET overrides and references the property with the value provided in the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute.
 

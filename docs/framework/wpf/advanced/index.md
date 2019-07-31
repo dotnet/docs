@@ -20,7 +20,7 @@ This section describes some of the advanced areas in WPF.
 [Base Element Classes](base-elements.md)  
 [Element Tree and Serialization](element-tree-and-serialization.md)  
 [WPF Property System](properties-wpf.md)  
-[Events in WPF](events=wpf.md)  
+[Events in WPF](events-wpf.md)  
 [Input](input-wpf.md)  
 [Drag and Drop](drag-and-drop.md)  
 [Resources](resources-wpf.md)  

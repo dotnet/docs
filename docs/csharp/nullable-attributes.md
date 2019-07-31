@@ -100,16 +100,19 @@ public string ScreenName
 private string screenName;
 ```
 
-When you compile the preceding code in a nullable oblivious context, everything is fine. Once you enable nullable reference types, the `ScreenName` property becomes a non-nullable reference. That's correct for the `get` accessor: it never returns `null`. Callers don't need to check the returned property for `null`. But now setting the property to `null` generates a warning. In order to continue to support this type of code, you add the `AllowNull` attribute to the `set` accessor, as shown in the following code: 
+When you compile the preceding code in a nullable oblivious context, everything is fine. Once you enable nullable reference types, the `ScreenName` property becomes a non-nullable reference. That's correct for the `get` accessor: it never returns `null`. Callers don't need to check the returned property for `null`. But now setting the property to `null` generates a warning. In order to continue to support this type of code, you add the <xref:System.Diagnostics.CodeAnalysis.AllowNull?displayProperty=nameWithType> attribute to the `set` accessor, as shown in the following code: 
 
 ```csharp
+[AllowNull]
 public string ScreenName
 {
    get { return screenName; }
-   [AllowNull] set { screenName = value ?? GenerateRandomScreenName(); }
+   set { screenName = value ?? GenerateRandomScreenName(); }
 }
-private string screenName;
+private string screenName = GenerateRandomScreenName();
 ```
+
+You may need to add a `using` directive for `System.Diagnostics.CodeAnalysis` to use this and other attributes discussed in this article. The attribute is applied to the property, not the `set` accessor. The `AllowNull` attribute specifies *pre-conditions*, and only applies to inputs. The `get` accessor has a return value, but no input arguments. Therefore, the `AllowNull` attribute only applies to the `set` accessor.
 
 The preceding example demonstrates what to look for when adding the `AllowNull` attribute on an argument:
 
@@ -133,13 +136,14 @@ public string ReviewComment // Comments can be set, but not cleared.
 string _comment;
 ```
 
-The preceding code is the best way to express your design that the `ReviewComment` could be `null`, but can't be set to `null`. Once this code is nullable aware, you can express this concept more clearly to callers:
+The preceding code is the best way to express your design that the `ReviewComment` could be `null`, but can't be set to `null`. Once this code is nullable aware, you can express this concept more clearly to callers using the <xref:System.Diagnostics.CodeAnalysis.DisallowNull?displayProperty=nameWithType>:
 
 ```csharp
+[DisallowNull] 
 public string? ReviewComment // Comments can be added, but not removed.
 {
     get { return _comment;}
-    [DisallowNull] set
+    set
     {
         if (value == null) throw new ArgumentNullException(nameof(value), "Cannot set to null");
         _comment = null;
@@ -148,7 +152,7 @@ public string? ReviewComment // Comments can be added, but not removed.
 string? _comment;
 ```
 
-In a nullable context, the preceding code warns callers that the `ReviewComment` could be `null`, so it must be checked before access. Furthermore, it warns callers that, even though it could be `null`, callers shouldn't explicitly set it to `null`. You should choose to use the `DisallowNull` attribute when you observe these characteristics about:
+In a nullable context, the preceding code warns callers that the `ReviewComment` could be `null`, so it must be checked before access. Furthermore, it warns callers that, even though it could be `null`, callers shouldn't explicitly set it to `null`. The `DisallowNull` attribute also specifies a *pre-condition*, it does not affect the `get` accessor. You should choose to use the `DisallowNull` attribute when you observe these characteristics about:
 
 1. The variable could be `null` in core scenarios, often when first instantiated.
 1. The variable shouldn't be explicitly set to `null`.
@@ -168,14 +172,14 @@ public Customer FindCustomer(string lastName, string firstName)
 You've likely written a method like this to return `null` when the name sought wasn't found. The `null` clearly indicates that the record wasn't found. In this example, you'd likely change the return type from `Customer` to `Customer?`. Instead, suppose it was a generic method like the following code:
 
 ```csharp
-public T Find(IEnumerable<T> sequence, Func<T, bool> match)
+public T Find<T>(IEnumerable<T> sequence, Func<T, bool> match)
 ```
 
 You want to continue to express that the sequence doesn't contain `null` values, and the `match` function won't be called with a `null` value. But, if the sought element isn't found, the returned value could be `null`. That's when you add the `MaybeNull` annotation to the method return:
 
 ```csharp
 [return: MaybeNull]
-public T Find(IEnumerable<T> sequence, Func<T, bool> match)
+public T Find<T>(IEnumerable<T> sequence, Func<T, bool> match)
 ```
 
 The preceding code informs callers that the contract implies a non-nullable type, but the return value *may* actually be null.  Use the `MaybeNull` attribute when your API should be a non-nullable type, typically a generic type parameter, but there may be instances where `null` would be returned.

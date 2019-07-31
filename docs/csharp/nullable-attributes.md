@@ -85,6 +85,8 @@ The rules for your APIs are likely more complicated, as you saw with the `TryGet
 - `NotNullWhen`: A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
 - `NotNullIfNotNull`: a string return value isn't null when the input string argument isn't null.
 
+The preceding descriptions are a quick reference to what each attribute does. Each following section describes the behavior and meaning more thoroughly.
+
 Adding these rules attributes gives the compiler more information about the rules for your API. The compiler will warn callers when they violate those rules. These attributes don't enable additional checks on your implementation.
 
 ## Specify Preconditions: `AllowNull` and `DisallowNull`
@@ -159,7 +161,10 @@ In a nullable context, the preceding code warns callers that the `ReviewComment`
 
 These situations are common in code that was originally *null oblivious*. It may be that object properties are set in two distinct initialization operations. It may be that some properties are set only after some asynchronous work has completed.
 
-The `AllowNull` and `DisallowNull` attributes enable you to specify that preconditions on variables may not match the nullable annotations on those variables. These provide more detail about the characteristics of your API. This additional information helps callers use your API correctly.
+The `AllowNull` and `DisallowNull` attributes enable you to specify that preconditions on variables may not match the nullable annotations on those variables. These provide more detail about the characteristics of your API. This additional information helps callers use your API correctly. Remember you specify preconditions using the following attributes:
+
+- `AllowNull`: A non-nullable input argument may be null.
+- `DisallowNull`: A nullable input argument should never be null.
 
 ## Specify post-conditions: `MaybeNull` and `NotNull`
 
@@ -205,7 +210,10 @@ After enabling null reference types, you want to  ensure that the preceding code
 public void EnsureCapacity<T>([NotNull]ref T[]? storage, int size)
 ```
 
-The preceding code expresses the existing contract very clearly: Callers can pass a variable with the `null` value, but the return value is guaranteed to never be null. The `NotNull` attribute is most useful for `ref` and `out` arguments where `null` may be passed as an argument, but that argument is guaranteed to be not null when the method returns.
+The preceding code expresses the existing contract very clearly: Callers can pass a variable with the `null` value, but the return value is guaranteed to never be null. The `NotNull` attribute is most useful for `ref` and `out` arguments where `null` may be passed as an argument, but that argument is guaranteed to be not null when the method returns. You specify unconditional postconditions using the following attributes:
+
+- `MaybeNull`: A non-nullable return value may be null.
+- `NotNull`: A nullable return value will never be null.
 
 ## Specify conditional post-conditions: `NotNullWhen` and `MaybeNullWhen`
 
@@ -244,20 +252,30 @@ bool TryGetMessage(string key, [NotNullWhen(true)out string? message)
 
 In the preceding example, the value of `message` is known to be not null when `TryGetMessage` returns true.  You should annotate similar methods in your codebase in the same way: the arguments could be `null`, and are known to be not null when the method returns `true`.
 
-There's one final attribute you may also need. Some methods manipulate string arguments. These methods will return a non-null string whenever the argument isn't null. To correctly annotate these methods, you use the `NotNullIfNotNull` attribute. Consider the following method:
+There's one final attribute you may also need. Sometimes the null state of a return value depends on the null state of one or more input arguments. These methods will return a non-null value whenever certain input arguments aren't `null`. To correctly annotate these methods, you use the `NotNullIfNotNull` attribute. Consider the following method:
 
 ```csharp
 string GetTopLevelDomainFromFullUrl(string url);
 ```
 
-If the `url` argument isn't null, the output isn't `null`. You would annotate this method as the following code:
+If the `url` argument isn't null, the output isn't `null`. Once nullable references are enabled, that signature works correctly, provided your API never accepts a null input. However, if the input could be null, then then return value could also be null. Therefore, you could change the signature to the following:
+
+```csharp
+string? GetTopLevelDomainFromFullUrl(string? url);
+```
+
+That also works, but will often force callers to implement extra `null` checks. The contract is that the return value would be `null` only when the input argument `url` is `null`. To express that contract, you would annotate this method as shown in the following code:
 
 ```csharp
 [return: NotNullWhenNotNull("url")]
 string? GetTopLevelDomainFromFullUrl(string? url);
 ```
 
-The return value and the argument have both been annotated with the `?` indicating that either could be `null`. The attribute further clarifies that the return value won't be null when the `url` argument isn't `null`.
+The return value and the argument have both been annotated with the `?` indicating that either could be `null`. The attribute further clarifies that the return value won't be null when the `url` argument isn't `null`. You specify conditional postconditions using these attributes:
+
+- `MaybeNullWhen`: A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
+- `NotNullWhen`: A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
+- `NotNullIfNotNull`: a string return value isn't null when the input string argument isn't null.
 
 ## Generic definitions and nullability
 
@@ -273,4 +291,12 @@ You may want to restrict the types used for a generic type argument to be non-nu
 
 Adding nullable reference types provides an initial vocabulary to describe your APIs expectations for if variables could be `null`. The additional attributes provide a richer vocabulary to describe the null state of variables as preconditions and postconditions. These attributes more clearly describe your expectations and provide a better experience for the developers using your APIs.
 
-As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage.
+As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage. These attributes help you fully describe the null-state of input arguments and return values:
+
+- `AllowNull`: A non-nullable input argument may be null.
+- `DisallowNull`: A nullable input argument should never be null.
+- `MaybeNull`: A non-nullable return value may be null.
+- `NotNull`: A nullable return value will never be null.
+- `MaybeNullWhen`: A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
+- `NotNullWhen`: A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
+- `NotNullIfNotNull`: a string return value isn't null when the input string argument isn't null.

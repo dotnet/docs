@@ -52,7 +52,7 @@ Following this second strategy you do the following:
 
 This second strategy has less work up-front. The tradeoff is that the first task when you create a new file is to add the pragma and make it nullable aware. If any developers on your team forget, that new code is now in the backlog of work to make all code nullable aware.
 
-Which of these strategies you pick depends on how much active development is taking place in your project. The more mature and stable your project, the better the second strategy. The more active features are being developed, the better the first strategy.
+Which of these strategies you pick depends on how much active development is taking place in your project. The more mature and stable your project, the better the second strategy. The more features being developed, the better the first strategy.
 
 ## Should nullable warnings introduce breaking changes?
 
@@ -96,8 +96,8 @@ Consider a read / write property that never returns `null` because it has a reas
 ```csharp
 public string ScreenName
 {
-   get { return screenName; }
-   set { screenName = value ?? GenerateRandomScreenName(); }
+   get => screenName;
+   set => screenName = value ?? GenerateRandomScreenName();
 }
 private string screenName;
 ```
@@ -132,7 +132,7 @@ public string ReviewComment // Comments can be set, but not cleared.
     set
     {
         if (value == null) throw new ArgumentNullException(nameof(value), "Cannot set to null");
-        _comment = null;
+        _comment = value;
     }
 }
 string _comment;
@@ -148,7 +148,7 @@ public string? ReviewComment // Comments can be added, but not removed.
     set
     {
         if (value == null) throw new ArgumentNullException(nameof(value), "Cannot set to null");
-        _comment = null;
+        _comment = value;
     }
 }
 string? _comment;
@@ -204,7 +204,7 @@ EnsureCapacity<string>(ref messages, 10);
 EnsureCapacity<string>(messages, 50);
 ```
 
-After enabling null reference types, you want to  ensure that the preceding code compiles without warnings. When the method returns, the `storage` argument is guaranteed to be not null. However, it's acceptable to call `EnsureCapacity` with a null reference. You can make `storage` a nullable reference type, and add the `NotNull` post-condition to the parameter declaration:
+After enabling null reference types, you want to ensure that the preceding code compiles without warnings. When the method returns, the `storage` argument is guaranteed to be not null. However, it's acceptable to call `EnsureCapacity` with a null reference. You can make `storage` a nullable reference type, and add the `NotNull` post-condition to the parameter declaration:
 
 ```csharp
 public void EnsureCapacity<T>([NotNull]ref T[]? storage, int size)

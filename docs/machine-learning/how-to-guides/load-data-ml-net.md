@@ -51,7 +51,7 @@ Load columns as:
 - Individual columns like `Size` and `CurrentPrices` in the `HousingData` class.
 - Multiple columns at a time in the form of a vector like `HistoricalPrices` in the `HousingData` class.
 
-If you have a vector property, apply the [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute) attribute to the property in your data model. It's important to note that all of the elements in the vector need to be the same type. Although loading columns individually provides flexibility when performing feature engineering, in data sets with a large number of columns, loading multiple columns as a single vector reduces the number of passes over the data when you apply data transformations.
+If you have a vector property, apply the [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute) attribute to the property in your data model. It's important to note that all of the elements in the vector need to be the same type. Keeping the columns separated allows for ease and flexibility of feature engineering, but for a very large number of columns, operating on the individual columns causes a speed impact.
 
 ML.NET Operates through column names. If you want to change the name of a column to something other than the property name, use the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute. When creating in-memory objects, you still create objects using the property name. However, for data processing and building machine learning models, ML.NET overrides and references the property with the value provided in the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute.
 

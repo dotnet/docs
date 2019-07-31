@@ -1,5 +1,5 @@
 ---
-title: "Qualifying .NET Types for Interoperation"
+title: "Qualifying .NET Types for COM Interoperation"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "exposing .NET Framework components to COM"
@@ -12,7 +12,7 @@ ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Qualifying .NET Types for Interoperation
+# Qualifying .NET Types for COM Interoperation
 If you intend to expose types in an assembly to COM applications, consider the requirements of COM interop at design time. Managed types (class, interface, structure, and enumeration) seamlessly integrate with COM types when you adhere to the following guidelines:  
   
 - Classes should implement interfaces explicitly.  
@@ -46,5 +46,5 @@ If you intend to expose types in an assembly to COM applications, consider the r
 - <xref:System.Runtime.InteropServices.ComVisibleAttribute>
 - [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
 - [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)
-- [Applying Interop Attributes](../../../docs/framework/interop/applying-interop-attributes.md)
-- [Packaging an Assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)
+- [Applying Interop Attributes](../../../docs/standard/native-interop/apply-interop-attributes.md)
+- [Packaging a .NET Framework Assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)

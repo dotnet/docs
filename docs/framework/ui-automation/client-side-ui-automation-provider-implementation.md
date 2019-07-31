@@ -29,7 +29,7 @@ ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
   
 <a name="Registering_and_Configuring_Client-Side_Providers"></a>   
 ## Registering and Configuring Client-Side Providers  
- Client-side providers in a [!INCLUDE[TLA#tla_dll](../../../includes/tlasharptla-dll-md.md)] are loaded by calling <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly%2A>. No further action is required by a client application to make use of the providers.  
+ Client-side providers in a dynamic-link library (DLL) are loaded by calling <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly%2A>. No further action is required by a client application to make use of the providers.  
   
  Providers implemented in the client's own code are registered by using <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviders%2A>. This method takes as an argument an array of <xref:System.Windows.Automation.ClientSideProviderDescription> structures, each of which specifies the following properties:  
   

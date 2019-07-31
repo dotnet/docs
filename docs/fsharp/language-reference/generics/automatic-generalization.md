@@ -13,7 +13,7 @@ The F# compiler, when it performs type inference on a function, determines wheth
 
 The following code example illustrates a function that the compiler infers to be generic.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-3/snippet101.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet101.fs)]
 
 The type is inferred to be `'a -> 'a -> 'a`.
 
@@ -21,7 +21,7 @@ The type indicates that this is a function that takes two arguments of the same 
 
 Because `max` is generic, it can be used with types such as `int`, `float`, and so on, as shown in the following examples.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-3/snippet102.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet102.fs)]
 
 However, the two arguments must be of the same type. The signature is `'a -> 'a -> 'a`, not `'a -> 'b -> 'a`. Therefore, the following code produces an error because the types do not match.
 
@@ -32,7 +32,7 @@ let biggestIntFloat = max 2.0 3
 
 The `max` function also works with any type that supports the greater-than operator. Therefore, you could also use it on a string, as shown in the following code.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-3/snippet104.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet104.fs)]
 
 ## Value Restriction
 

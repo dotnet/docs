@@ -57,7 +57,7 @@ Instance methods are declared with the `member` keyword and a *self-identifier*,
 
 The following example illustrates the definition and use of a non-abstract instance method.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3401.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3401.fs)]
 
 Within instance methods, do not use the self identifier to access fields defined by using let bindings. Use the self identifier when accessing other members and properties.
 
@@ -69,7 +69,7 @@ The example in the next section shows fields declared with the `let` keyword, pr
 
 The following example illustrates the definition and use of static methods. Assume that these method definitions are in the `SomeType` class in the previous section.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3402.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3402.fs)]
 
 ## Abstract and Virtual Methods
 
@@ -83,11 +83,11 @@ Regardless of whether a base class implements its abstract methods, derived clas
 
 The following example illustrates an abstract method `Rotate` that has a default implementation, the equivalent of a .NET Framework virtual method.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3403.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3403.fs)]
 
 The following example illustrates a derived class that overrides a base class method. In this case, the override changes the behavior so that the method does nothing.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3404.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3404.fs)]
 
 ## Overloaded Methods
 
@@ -109,7 +109,7 @@ Note that the value passed in for `DefaultParameterValue` must match the input t
 
 The following example contains a type that has examples of fields, private functions, properties, and a static method.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3406.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3406.fs)]
 
 ## See also
 

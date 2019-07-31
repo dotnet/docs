@@ -47,7 +47,7 @@ namespace Prime.Services
     {
         public bool IsPrime(int candidate)
         {
-            throw new NotImplementedException("Please create a test first");
+            throw new NotImplementedException("Please create a test first.");
         }
     }
 }
@@ -122,12 +122,8 @@ namespace Prime.UnitTests.Services
     [TestFixture]
     public class PrimeService_IsPrimeShould
     {
-        public PrimeService_IsPrimeShould()
-        {
-        }
-
         [Test]
-        public void ReturnFalseGivenValueOf1()
+        public void IsPrime_InputIs1_ReturnFalse()
         {
             PrimeService primeService = CreatePrimeService();
             var result = primeService.IsPrime(1);
@@ -160,7 +156,7 @@ public bool IsPrime(int candidate)
     {
         return false;
     }
-    throw new NotImplementedException("Please create a test first");
+    throw new NotImplementedException("Please create a test first.");
 }
 ```
 

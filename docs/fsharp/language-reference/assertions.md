@@ -30,7 +30,7 @@ The assertion failure error cannot be caught by using F# exception handling.
 
 The following code example illustrates the use of the `assert` expression.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5401.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5401.fs)]
 
 ## See also
 

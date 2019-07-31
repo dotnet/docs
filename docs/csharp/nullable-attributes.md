@@ -60,7 +60,7 @@ Before you enable nullable reference types, variables are considered *nullable o
 
 Another likely source of warnings is return values when the value hasn't been initialized.
 
-The first step in addressing the compiler warnings is to use `?` annotations on parameters and return types to indicate when arguments or return values may be null, or must not be null. As you do this, your goal isn't just to fix warnings. The more important goal is to make the compiler understand your intent for potential null values. As you examine the warnings, you reach your next major decision for your library. Do you want to consider modifying API signatures to more clearly communicate your design intent? A better API signature for the `TryGetMessage` method examined earlier could be:
+The first step in addressing the compiler warnings is to use `?` annotations on parameters and return types to indicate when arguments or return values may be null. When reference variables must not be null, the original declaration is correct. As you do this, your goal isn't just to fix warnings. The more important goal is to make the compiler understand your intent for potential null values. As you examine the warnings, you reach your next major decision for your library. Do you want to consider modifying API signatures to more clearly communicate your design intent? A better API signature for the `TryGetMessage` method examined earlier could be:
 
 
 ```csharp
@@ -77,13 +77,13 @@ Several attributes have been added to express additional information about the n
 
 The rules for your APIs are likely more complicated, as you saw with the `TryGetValue` API scenario. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use one of these attributes to express those rules:
 
-- `AllowNull`: A non-nullable input argument may be null.
-- `DisallowNull`: A nullable input argument should never be null.
-- `MaybeNull`: A non-nullable return value may be null.
-- `NotNull`: A nullable return value will never be null.
-- `MaybeNullWhen`: A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
-- `NotNullWhen`: A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
-- `NotNullIfNotNull`: a string return value isn't null when the input string argument isn't null.
+- [AllowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute): A non-nullable input argument may be null.
+- [DisallowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute): A nullable input argument should never be null.
+- [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute): A non-nullable return value may be null.
+- [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute): A nullable return value will never be null.
+- [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute): A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
+- [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
+- [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): a string return value isn't null when the input string argument isn't null.
 
 The preceding descriptions are a quick reference to what each attribute does. Each following section describes the behavior and meaning more thoroughly.
 
@@ -163,8 +163,8 @@ These situations are common in code that was originally *null oblivious*. It may
 
 The `AllowNull` and `DisallowNull` attributes enable you to specify that preconditions on variables may not match the nullable annotations on those variables. These provide more detail about the characteristics of your API. This additional information helps callers use your API correctly. Remember you specify preconditions using the following attributes:
 
-- `AllowNull`: A non-nullable input argument may be null.
-- `DisallowNull`: A nullable input argument should never be null.
+- [AllowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute): A non-nullable input argument may be null.
+- [DisallowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute): A nullable input argument should never be null.
 
 ## Specify post-conditions: `MaybeNull` and `NotNull`
 
@@ -212,8 +212,8 @@ public void EnsureCapacity<T>([NotNull]ref T[]? storage, int size)
 
 The preceding code expresses the existing contract very clearly: Callers can pass a variable with the `null` value, but the return value is guaranteed to never be null. The `NotNull` attribute is most useful for `ref` and `out` arguments where `null` may be passed as an argument, but that argument is guaranteed to be not null when the method returns. You specify unconditional postconditions using the following attributes:
 
-- `MaybeNull`: A non-nullable return value may be null.
-- `NotNull`: A nullable return value will never be null.
+- [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute): A non-nullable return value may be null.
+- [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute): A nullable return value will never be null.
 
 ## Specify conditional post-conditions: `NotNullWhen` and `MaybeNullWhen`
 
@@ -273,9 +273,9 @@ string? GetTopLevelDomainFromFullUrl(string? url);
 
 The return value and the argument have both been annotated with the `?` indicating that either could be `null`. The attribute further clarifies that the return value won't be null when the `url` argument isn't `null`. You specify conditional postconditions using these attributes:
 
-- `MaybeNullWhen`: A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
-- `NotNullWhen`: A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
-- `NotNullIfNotNull`: a string return value isn't null when the input string argument isn't null.
+- [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute): A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
+- [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
+- [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): a string return value isn't null when the input string argument isn't null.
 
 ## Generic definitions and nullability
 
@@ -293,10 +293,10 @@ Adding nullable reference types provides an initial vocabulary to describe your 
 
 As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage. These attributes help you fully describe the null-state of input arguments and return values:
 
-- `AllowNull`: A non-nullable input argument may be null.
-- `DisallowNull`: A nullable input argument should never be null.
-- `MaybeNull`: A non-nullable return value may be null.
-- `NotNull`: A nullable return value will never be null.
-- `MaybeNullWhen`: A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
-- `NotNullWhen`: A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
-- `NotNullIfNotNull`: a string return value isn't null when the input string argument isn't null.
+- [AllowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute): A non-nullable input argument may be null.
+- [DisallowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute): A nullable input argument should never be null.
+- [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute): A non-nullable return value may be null.
+- [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute): A nullable return value will never be null.
+- [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute): A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
+- [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
+- [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): a string return value isn't null when the input string argument isn't null.

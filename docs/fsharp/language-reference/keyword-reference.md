@@ -32,7 +32,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`exception`|[Exception Handling](/.exception-handling/index.md)<br /><br />[Exception Types](/.exception-handling/exception-types.md)|Used to declare an exception type.|
 |`extern`|[External Functions](./functions/external-functions.md)|Indicates that a declared program element is defined in another binary or assembly.|
 |`false`|[Primitive Types](primitive-types.md)|Used as a Boolean literal.|
-|`finally`|[Exceptions: The `try...finally` Expression](/.exception-handling/the-try-finally-expression.md)|Used together with `try` to introduce a block of code that executes regardless of whether an exception occurs.|
+|`finally`|[Exceptions: The `try...finally` Expression](./exception-handling/the-try-finally-expression.md)|Used together with `try` to introduce a block of code that executes regardless of whether an exception occurs.|
 |`fixed`|[Fixed](fixed.md)|Used to "pin" a pointer on the stack to prevent it from being garbage collected.|
 |`for`|[Loops: `for...to` Expression](loops-for-to-expression.md)<br /><br />[Loops: for...in Expression](loops-for-in-expression.md)|Used in looping constructs.|
 |`fun`|[Lambda Expressions: The `fun` Keyword](./functions/lambda-expressions-the-fun-keyword.md)|Used in lambda expressions, also known as anonymous functions.|

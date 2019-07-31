@@ -29,7 +29,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`elif`|[Conditional Expressions: `if...then...else`](conditional-expressions-if-then-else.md)|Used in conditional branching. A short form of `else if`.|
 |`else`|[Conditional Expressions: `if...then...else`](conditional-expressions-if-then-else.md)|Used in conditional branching.|
 |`end`|[Structures](structures.md)<br /><br />[Discriminated Unions](discriminated-unions.md)<br /><br />[Records](records.md)<br /><br />[Type Extensions](type-extensions.md)<br /><br />[Verbose Syntax](verbose-syntax.md)|In type definitions and type extensions, indicates the end of a section of member definitions.<br /><br />In verbose syntax, used to specify the end of a code block that starts with the `begin` keyword.|
-|`exception`|[Exception Handling](/.exception-handling/index.md)<br /><br />[Exception Types](/.exception-handling/exception-types.md)|Used to declare an exception type.|
+|`exception`|[Exception Handling](./exception-handling/index.md)<br /><br />[Exception Types](./exception-handling/exception-types.md)|Used to declare an exception type.|
 |`extern`|[External Functions](./functions/external-functions.md)|Indicates that a declared program element is defined in another binary or assembly.|
 |`false`|[Primitive Types](primitive-types.md)|Used as a Boolean literal.|
 |`finally`|[Exceptions: The `try...finally` Expression](./exception-handling/the-try-finally-expression.md)|Used together with `try` to introduce a block of code that executes regardless of whether an exception occurs.|
@@ -56,7 +56,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`new`|[Constructors](./members/constructors.md)<br /><br />[Constraints](./generics/constraints.md)|Used to declare, define, or invoke a constructor that creates or that can create an object.<br /><br />Also used in generic parameter constraints to indicate that a type must have a certain constructor.|
 |`not`|[Symbol and Operator Reference](./symbol-and-operator-reference/index.md)<br /><br />[Constraints](./generics/constraints.md)|Not actually a keyword. However, `not struct` in combination is used as a generic parameter constraint.|
 |`null`|[Null Values](./values/null-values.md)<br /><br />[Constraints](./generics/constraints.md)|Indicates the absence of an object.<br /><br />Also used in generic parameter constraints.|
-|`of`|[Discriminated Unions](discriminated-unions.md)<br /><br />[Delegates](delegates.md)<br /><br />[Exception Types](/.exception-handling/exception-types.md)|Used in discriminated unions to indicate the type of categories of values, and in delegate and exception declarations.|
+|`of`|[Discriminated Unions](discriminated-unions.md)<br /><br />[Delegates](delegates.md)<br /><br />[Exception Types](./exception-handling/exception-types.md)|Used in discriminated unions to indicate the type of categories of values, and in delegate and exception declarations.|
 |`open`|[Import Declarations: The `open` Keyword](import-declarations-the-open-keyword.md)|Used to make the contents of a namespace or module available without qualification.|
 |`or`|[Symbol and Operator Reference](./symbol-and-operator-reference/index.md)<br /><br />[Constraints](./generics/constraints.md)|Used with Boolean conditions as a Boolean `or` operator. Equivalent to `||`.<br /><br />Also used in member constraints.|
 |`override`|[Members](./members/index.md)|Used to implement a version of an abstract or virtual method that differs from the base version.|

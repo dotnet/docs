@@ -136,6 +136,9 @@ HousingData[] inMemoryCollection = new HousingData[]
 
 Load the in-memory collection into an [`IDataView`](xref:Microsoft.ML.IDataView) with the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) method:
 
+> [!IMPORTANT]
+> [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) assumes that the [`IEnumerable`](xref:System.Collections.IEnumerable) it loads from is thread-safe. 
+
 ```csharp
 // Create MLContext
 MLContext mlContext = new MLContext();

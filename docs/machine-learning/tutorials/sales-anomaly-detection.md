@@ -303,7 +303,7 @@ The `DetectChangepoint()` method executes the following tasks:
 
     * `Alert` indicates a change point alert for a given data point.
     * `Score` is the `ProductSales` value for a given data point in the dataset.
-    * `P-Value` The "P" stands for probability. The close the P-value is to 0, the more likely the data point is an anomaly.
+    * `P-Value` The "P" stands for probability. The closer the P-value is to 0, the more likely the data point is an anomaly.
     * `Martingale value` is used to identify how "weird" a data point is, based on the sequence of P-values.
 
 1. Iterate through the `predictions` `IEnumerable` and display the results with the following code:

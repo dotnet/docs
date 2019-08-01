@@ -67,7 +67,7 @@ Text with ClearType y-direction antialiasing
 ## New Text Application Programming Interfaces (APIs)  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides several text APIs for developers to use when including text in their applications. These APIs are grouped into three categories:  
   
-- **Layout and user interface**. The common text controls for the [!INCLUDE[TLA#tla_gui](../../../../includes/tlasharptla-gui-md.md)].  
+- **Layout and user interface**. The common text controls for the graphical user interface (GUI).  
   
 - **Lightweight text drawing**. Allows you to draw text directly to objects.  
   

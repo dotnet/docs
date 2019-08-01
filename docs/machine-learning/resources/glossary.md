@@ -2,7 +2,8 @@
 title: Machine learning glossary
 description: A glossary of important machine learning terms that are useful as you build your custom models in ML.NET.
 ms.custom: seodec18
-ms.date: 05/09/2019
+ms.topic: reference
+ms.date: 07/31/2019
 ---
 # Machine learning glossary of important terms
 
@@ -103,6 +104,10 @@ A [classification](#classification) case where the [label](#label) is one out of
 
 A feature extraction scheme for text data: any sequence of N words turns into a [feature](#feature) value.
 
+## Normalization
+
+Normalization is the process of scaling floating point data to values between 0 and 1. Many of the training algorithms used in ML.NET require input feature data to be normalized. ML.NET provides a series of [transforms for normalization](transforms.md#normalization-and-scaling)
+
 ## Numerical feature vector
 
 A [feature](#feature) vector consisting only of numerical values. This is similar to `double[]`.
@@ -141,6 +146,10 @@ In [regression](#regression), an evaluation metric that is the sum of all square
 ## Root of mean squared error (RMSE)
 
 In [regression](#regression), an evaluation metric that is the square root of the average of the squares of the errors.
+
+## Scoring
+
+Scoring is the process of applying new data to a trained machine learning model, and generating predictions. Scoring is also known as inferencing. Depending on the type of model, the score may be a raw value, a probability, or a category.
 
 ## Supervised machine learning
 

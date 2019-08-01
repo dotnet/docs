@@ -37,7 +37,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the the license terms for the package you choose. Repeat these steps for **Microsoft.ML.TensorFlow**.
 
 > [!NOTE]
-> The model for this tutorial  from the [dotnet/machinelearning-testdata](https://github.com/dotnet/machinelearning-testdata/tree/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model) GitHub repo. The model is in 'SavedModel' format. For further explanation on the `sentiment_model`, see [](https://github.com/dotnet/machinelearning-testdata/blob/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model/README.md)
+> The model for this tutorial is from the [dotnet/machinelearning-testdata](https://github.com/dotnet/machinelearning-testdata/tree/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model) GitHub repo. The model is in 'SavedModel' format. For further explanation on the `sentiment_model`, see [](https://github.com/dotnet/machinelearning-testdata/blob/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model/README.md)
 
 ### Prepare your data
 
@@ -86,9 +86,9 @@ The input dataset class, `IMDBSentiment`, has a `string` for user comments (`Sen
 
 `IMDBPrediction` is the prediction class used after the model training. `IMDBPrediction` has a single `float` array (`Prediction`) and a `VectorType` attribute.
 
-The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations. Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
+### Adding context
 
-You prepare the application, and then load data:
+The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations. Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
 1. Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the mlContext variable:
 
@@ -137,7 +137,17 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 
 ### Extract and transform the data
 
-1. Create a dictionary to convert words into the integer indexes using the [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%2A) method to load data from a file. This code will function as a lookup map to assist with mapping text to integer vectors in later steps so add it next to the `ReuseAndTuneSentimentModel` method:
+1. Create a dictionary to convert words into the integer indexes using the [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%2A) method to load data from a file, as seen in the following table:
+
+|Word     |Index    |
+|---------|---------|
+|kids     |  362    |
+|want     |  181    |
+|wrong    |  355    |
+|effects  |  302    |
+|feeling  |  547    |
+
+This code will function as a lookup map to assist with mapping text to integer vectors in later steps so add it next to the `ReuseAndTuneSentimentModel` method:
 
 [!code-csharp[CreateLookupMap](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateLookupMap)]
 
@@ -187,7 +197,7 @@ Return the trained model by adding the following as the last line of code in the
 
 [!code-csharp[ReturnModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ReturnModel)]
 
-
+## Use the model to make a prediction
 
 ```csharp
     public static void PredictSentiment(MLContext mlContext, ITransformer model)
@@ -215,8 +225,6 @@ The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function make
 Display sentiment prediction and confidence using the following code:
 
 [!code-csharp[DisplayPredictions](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DisplayPredictions)]
-
-
 
 ## Results
 

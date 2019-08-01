@@ -199,7 +199,7 @@ The `DetectSpike()` method:
 
     * `Alert` indicates a spike alert for a given data point.
     * `Score` is the `ProductSales` value for a given data point in the dataset.
-    * `P-Value` The "P" stands for probability. The closer to 0, the p-value is the more likely the data point is an anomaly.
+    * `P-Value` The "P" stands for probability. The closer the p-value is to 0, the more likely the data point is an anomaly.
 
 1. Use the following code to iterate through the `predictions` `IEnumerable` and display the results:
 

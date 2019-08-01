@@ -115,7 +115,7 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 
     The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`.
 
-## ML task - time series anomaly detection
+## Time series anomaly detection
 
 Anomaly detection flags unexpected or unusual events or behaviors. It gives clues where to look for problems and helps you answer the question "Is this weird?".
 
@@ -136,7 +136,7 @@ There are two types of time series anomalies that can be detected:
 
 In ML.NET, The IID Spike Detection or IID Change point Detection algorithms are suited for [independent and identically distributed datasets](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables).
 
-Unlike the models in the other tutorials, the time series anomaly detector transforms operate directly on input data. The IEstimator.Fit() method does not need training data to produce the transform. It does need the data schema though, which is provided by a data view generated from an empty list of `ProductSalesData`.
+Unlike the models in the other tutorials, the time series anomaly detector transforms operate directly on input data. The `IEstimator.Fit()` method does not need training data to produce the transform. It does need the data schema though, which is provided by a data view generated from an empty list of `ProductSalesData`.
 
 You'll analyze the same product sales data to detect spikes and change points. The building and training model process is the same for spike detection and change point detection; the main difference is the specific detection algorithm used.
 
@@ -148,9 +148,11 @@ The goal of spike detection is to identify sudden yet temporary bursts that sign
 
 ### Add the CreateEmptyDataView() method
 
-The `CreateEmptyDataView()` produces an empty data view object with the correct schema to be used as input to the `IEstimator.Fit()` method.
+Add the following method to `Program.cs`:
 
 [!code-csharp[CreateEmptyDataView](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#CreateEmptyDataView)]
+
+The `CreateEmptyDataView()` produces an empty data view object with the correct schema to be used as input to the `IEstimator.Fit()` method.
 
 ### Create the DetectSpike() method
 

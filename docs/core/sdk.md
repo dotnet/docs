@@ -11,7 +11,7 @@ and libraries. It contains the following components that are used to build and r
 
 - The .NET Core CLI tools.
 - .NET Core libraries and runtime.
-- The `dotnet` [driver](/tools/index.md#driver).
+- The `dotnet` [driver](tools/index.md#driver).
 
 ## Acquiring the .NET Core SDK
 

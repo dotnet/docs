@@ -533,7 +533,7 @@ The following are some of the ways that cookies are supported in [!INCLUDE[TLA2#
 
 - [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] from the same domain can create and share cookies.
 
-- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] and [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] pages from the same domain can create and share cookies.
+- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] and HTML pages from the same domain can create and share cookies.
 
 - Cookies are dispatched when [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] and loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages make Web requests.
 
@@ -677,7 +677,7 @@ As mentioned earlier, more than one journal can exist within an application. The
 
 Throughout this topic, <xref:System.Windows.Controls.Page> and pack [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] have been used to demonstrate the various navigation capabilities of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]. However, a <xref:System.Windows.Controls.Page> that is compiled into an application is not the only type of content that can be navigated to, and pack [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] aren't the only way to identify content.
 
-As this section demonstrates, you can also navigate to loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files, [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] files, and objects.
+As this section demonstrates, you can also navigate to loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files, HTML files, and objects.
 
 <a name="Navigating_to_Loose_XAML_Files"></a>
 
@@ -718,19 +718,19 @@ One limitation with respect to loose [!INCLUDE[TLA2#tla_xaml](../../../../includ
 
 ### Navigating to HTML Files by Using Frame
 
-As you might expect, you can also navigate to [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)]. You simply need to provide a [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] that uses the http scheme. For example, the following [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] shows a <xref:System.Windows.Controls.Frame> that navigates to an [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] page.
+As you might expect, you can also navigate to HTML. You simply need to provide a [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] that uses the http scheme. For example, the following [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] shows a <xref:System.Windows.Controls.Frame> that navigates to an HTML page.
 
 [!code-xaml[NavigationOverviewSnippets#FrameHtmlNavMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/FrameHTMLNavPage.xaml#framehtmlnavmarkup)]
 
-Navigating to [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] requires special permissions. For example, you can't navigate from an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] that is running in the Internet zone partial trust security sandbox. For more information, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).
+Navigating to HTML requires special permissions. For example, you can't navigate from an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] that is running in the Internet zone partial trust security sandbox. For more information, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).
 
 <a name="Navigating_to_HTML_Files_Using_WebBrowser"></a>
 
 ### Navigating to HTML Files by Using the WebBrowser Control
 
-The <xref:System.Windows.Controls.WebBrowser> control supports [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] document hosting, navigation and script/managed code interoperability. For detailed information regarding the <xref:System.Windows.Controls.WebBrowser> control, see <xref:System.Windows.Controls.WebBrowser>.
+The <xref:System.Windows.Controls.WebBrowser> control supports HTML document hosting, navigation and script/managed code interoperability. For detailed information regarding the <xref:System.Windows.Controls.WebBrowser> control, see <xref:System.Windows.Controls.WebBrowser>.
 
-Like <xref:System.Windows.Controls.Frame>, navigating to [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] using <xref:System.Windows.Controls.WebBrowser> requires special permissions. For example, from a partial-trust application, you can navigate only to [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] located at the site of origin. For more information, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).
+Like <xref:System.Windows.Controls.Frame>, navigating to HTML using <xref:System.Windows.Controls.WebBrowser> requires special permissions. For example, from a partial-trust application, you can navigate only to HTML located at the site of origin. For more information, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).
 
 <a name="Navigating_to_Objects"></a>
 

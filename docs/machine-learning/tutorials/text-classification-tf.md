@@ -37,8 +37,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the the license terms for the package you choose. Repeat these steps for **Microsoft.ML.TensorFlow**.
 
 > [!NOTE]
-> The model for this tutorial is from the []()
-> The model is in 'SavedModel' format. For further explanation on the `sentiment_model`, see [](https://github.com/dotnet/machinelearning-testdata/blob/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model/README.md)
+> The model for this tutorial  from the [dotnet/machinelearning-testdata](https://github.com/dotnet/machinelearning-testdata/tree/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model) GitHub repo. The model is in 'SavedModel' format. For further explanation on the `sentiment_model`, see [](https://github.com/dotnet/machinelearning-testdata/blob/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model/README.md)
 
 ### Prepare your data
 
@@ -46,7 +45,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 2. Copy the contents of the innermost `sentiment_model` directory just unzipped into your *TextClassificationTF* project `sentiment_model` directory. This directory contains the model and additional support files needed for this tutorial, as shown in the following image:
 
-   ![sentiment_model directory contents](./media/text-classificationTF/sentiment_model-files.png)
+   ![sentiment_model directory contents](./media/text-classificationTF/sentiment-model-files.png)
 
 3. In Solution Explorer, right-click each of the files in the `sentiment_model` directory and subdirectory and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 

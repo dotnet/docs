@@ -66,7 +66,7 @@ The following table is a data preview from your \*.csv file:
 
 ### Create classes and define paths
 
-Next, define your input class data structure.
+Next, define your input and prediction class data structures.
 
 Add a new class to your project:
 
@@ -88,10 +88,12 @@ Add a new class to your project:
 
     `ProductSalesData` specifies an input data class. The [LoadColumn](xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29) attribute specifies which columns (by column index) in the dataset should be loaded.
 
+    `ProductSalesPrediction` specifies the prediction data class. For anomaly detection, the prediction consists of an alert to indicate whether there is an anomaly, a raw score, and p-value. The closer the p-value is to 0, the more likely an anomaly has occurred.
+
 5. Create two global fields to hold the recently downloaded dataset file path and the saved model file path:
 
     * `_dataPath` has the path to the dataset used to train the model.
-    * `_docsize` has the number of records in dataset file. You'll use this to calculate `pvalueHistoryLength`.
+    * `_docsize` has the number of records in dataset file. You'll use `_docSize` to calculate `pvalueHistoryLength`.
 
 6. Add the following code to the line right above the `Main` method to specify those paths:
 
@@ -123,7 +125,7 @@ Anomaly detection flags unexpected or unusual events or behaviors. It gives clue
 
 Anomaly detection is the process of detecting time-series data outliers; points on a given input time-series where the behavior isn't what was expected, or "weird".
 
-This can be useful in lots of ways. For instance:
+Anomaly detection can be useful in lots of ways. For instance:
 
 If you have a car, you might want to know: Is this oil gauge reading normal, or do I have a leak?
 If you're monitoring power consumption, you’d want to know: Is there an outage?
@@ -142,7 +144,7 @@ You'll analyze the same product sales data to detect spikes and change points. T
 
 ## Spike detection
 
-The goal of spike detection is to identify sudden yet temporary bursts that significantly differ from the majority of the time series data values. It's important to detect these suspicious rare items, events or observations in a timely manner to be minimized. The following approach can be used to detect a variety of anomalies such as: outages, cyber-attacks, or viral web content. The following image is an example of spikes in a time series dataset:
+The goal of spike detection is to identify sudden yet temporary bursts that significantly differ from the majority of the time series data values. It's important to detect these suspicious rare items, events, or observations in a timely manner to be minimized. The following approach can be used to detect a variety of anomalies such as: outages, cyber-attacks, or viral web content. The following image is an example of spikes in a time series dataset:
 
 ![SpikeDetection](./media/sales-anomaly-detection/SpikeDetection.png)
 
@@ -197,7 +199,7 @@ The `DetectSpike()` method:
 
     * `Alert` indicates a spike alert for a given data point.
     * `Score` is the `ProductSales` value for a given data point in the dataset.
-    * `P-Value` The "P" stands for probability. This indicates how likely this data point is an anomaly.
+    * `P-Value` The "P" stands for probability. The closer to 0, the p-value is the more likely the data point is an anomaly.
 
 1. Use the following code to iterate through the `predictions` `IEnumerable` and display the results:
 
@@ -209,7 +211,7 @@ The `DetectSpike()` method:
 
 ## Spike detection results
 
-Your results should be similar to the following. During processing, messages are displayed. You may see warnings, or processing messages. These have been removed from the following results for clarity.
+Your results should be similar to the following. During processing, messages are displayed. You may see warnings, or processing messages. Some of the messages have been removed from the following results for clarity.
 
 ```console
 Detect temporary changes in pattern
@@ -277,8 +279,6 @@ The `DetectChangepoint()` method executes the following tasks:
     }
     ```
 
-    The  is used to train the model for change point detection.
-
 1. Create the [iidChangePointEstimator](xref:Microsoft.ML.Transforms.TimeSeries.IidChangePointEstimator) in the `DetectChangepoint()` method with the following code:
 
     [!code-csharp[AddChangepointTrainer](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#AddChangepointTrainer)]
@@ -303,7 +303,7 @@ The `DetectChangepoint()` method executes the following tasks:
 
     * `Alert` indicates a change point alert for a given data point.
     * `Score` is the `ProductSales` value for a given data point in the dataset.
-    * `P-Value` The "P" stands for probability. This indicates how likely this data point is an anomaly.
+    * `P-Value` The "P" stands for probability. The close the P-value is to 0, the more likely the data point is an anomaly.
     * `Martingale value` is used to identify how "weird" a data point is, based on the sequence of P-values.
 
 1. Iterate through the `predictions` `IEnumerable` and display the results with the following code:
@@ -316,7 +316,7 @@ The `DetectChangepoint()` method executes the following tasks:
 
 ## Change point detection results
 
-Your results should be similar to the following. During processing, messages are displayed. You may see warnings, or processing messages. These have been removed from the following results for clarity.
+Your results should be similar to the following. During processing, messages are displayed. You may see warnings, or processing messages. Some messages have been removed from the following results for clarity.
 
 ```console
 Detect Persistent changes in pattern

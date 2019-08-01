@@ -45,7 +45,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 2. Copy the contents of the innermost `sentiment_model` directory just unzipped into your *TextClassificationTF* project `sentiment_model` directory. This directory contains the model and additional support files needed for this tutorial, as shown in the following image:
 
-   ![sentiment_model directory contents](./media/text-classificationTF/sentiment-model-files.png)
+   ![sentiment_model directory contents](./media/text-classification-tf/sentiment-model-files.png)
 
 3. In Solution Explorer, right-click each of the files in the `sentiment_model` directory and subdirectory and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 

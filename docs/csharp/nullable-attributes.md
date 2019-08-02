@@ -83,7 +83,7 @@ The rules for your APIs are likely more complicated, as you saw with the `TryGet
 - [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute): A nullable return value will never be null.
 - [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute): A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
 - [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
-- [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): a string return value isn't null when the input string argument isn't null.
+- [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): A return value isn't null if the input argument for the specified parameter isn't null.
 
 The preceding descriptions are a quick reference to what each attribute does. Each following section describes the behavior and meaning more thoroughly.
 

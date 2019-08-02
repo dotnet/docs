@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # default operator (C# reference)
 
-The `default` operator produces the [default value](../keywords/default-values-table.md) of a type. An argument of the `default` operator must be the name of a type or a type parameter.
+The `default` operator produces the [default value](../keywords/default-values-table.md) of a type. The argument to the `default` operator must be the name of a type or a type parameter.
 
 The following example shows the usage of the `default` operator:
 
@@ -20,10 +20,10 @@ You also use the `default` keyword as the default case label within the [`switch
 
 Beginning with C# 7.1, you can use the `default` literal to produce the default value of a type when the compiler can infer the expression type. The `default` literal expression produces the same value as the `default(T)` expression where `T` is the inferred type. You can use the `default` literal in any of the following cases:
 
-- assignment or initialization of a variable
-- declaration of the default value for an optional method parameter
-- providing the argument value in a method call
-- in a `return` statement or as an expression in an expression-bodied member
+- In the assignment or initialization of a variable.
+- In the declaration of the default value for an optional method parameter.
+- In an argument to a method call.
+- In a `return` statement or as an expression in an expression-bodied member.
 
 The following example shows the usage of the `default` literal:
 

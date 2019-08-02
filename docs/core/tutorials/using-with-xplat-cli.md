@@ -150,7 +150,12 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
 
 ## Publish your app
 
-Once you're ready to distribute your app, you can publish it with the command [`dotnet publish`](../tools/dotnet-publish.md). Depending on the current .NET Core SDK you're using, the default [`dotnet publish`](../tools/dotnet-publish.md) command will choose a specific publishing method by default. For more information on what the default publishing method is for your SDK version, see [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md) .
+Once you're ready to distribute your app, you can publish it with the command [`dotnet publish`](../tools/dotnet-publish.md). Depending on the current .NET Core SDK you're using, the default [`dotnet publish`](../tools/dotnet-publish.md) command will choose a specific publishing method. For more information on what the default publishing method is for your SDK version, see [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md). For more information on the different publishing modes, see [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md)
+
+Run the `dotnet publish` command to publish your app. The output is placed in the _bin\\debug\\netcoreapp3.0\\publish\\_ folder_
+
+
+
 
 There are two publishing methods:
 
@@ -169,13 +174,6 @@ Unlike FDD, a self-contained deployment doesn't rely on the presence of shared c
     ```
 
     For more information about runtime identifiers (RID), see the [.NET Core RID Catalog](../rid-catalog.md).
-
-<!-- Does not exist in 2.1 which this tutorial was written for --- Update this article for 3.0
-
-01. **Framework-dependent executables** (FDE)\
-Produces an executable that runs on a target platform. Similar to FDDs, framework-dependent executables (FDE) are platform-specific and aren't self-contained. These deployments still rely on the presence of a shared system-wide version of .NET Core to run.
-
--->
 
 For more information on the three publishing methods, see [Application Deployment](../deploying/index.md)
 

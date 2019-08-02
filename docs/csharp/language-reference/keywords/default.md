@@ -15,7 +15,7 @@ ms.assetid: 14c48aaa-7d35-4058-a1a4-f53353050579
 The `default` keyword can be used in two ways:
 
 - To specify the default label in the [`switch` statement](switch.md).
-- As the [default operator](../operators/default.md) to produce the default value of a type.
+- As the [default operator or literal](../operators/default.md) to produce the default value of a type.
 
 ## See also
 

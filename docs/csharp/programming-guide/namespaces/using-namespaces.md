@@ -9,10 +9,12 @@ helpviewer_keywords:
   - "namespaces [C#], how to use"
 ms.assetid: 1fe8bf39-addc-438a-bd9e-86410e32381d
 ---
-# Using Namespaces (C# Programming Guide)
+# Using namespaces (C# Programming Guide)
+
 Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Framework classes use namespaces to organize its many classes. Secondly, declaring your own namespaces can help control the scope of class and method names in larger programming projects.  
   
-## Accessing Namespaces  
+## Accessing namespaces
+
  Most C# applications begin with a section of `using` directives. This section lists the namespaces that the application will be using frequently, and saves the programmer from specifying a fully qualified name every time that a method that is contained within is used.  
   
  For example, by including the line:  
@@ -27,17 +29,20 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
   
  [!code-csharp[csProgGuide#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#30)]  
   
-## Namespace Aliases  
- The [using Directive](../../../csharp/language-reference/keywords/using-directive.md) can also be used to create an alias for a [namespace](../../../csharp/language-reference/keywords/namespace.md). For example, if you are using a previously written namespace that contains nested namespaces, you might want to declare an alias to provide a shorthand way of referencing one in particular, as in the following example:  
+## Namespace aliases
+
+ You also can use the [`using` directive](../../language-reference/keywords/using-directive.md) to create an alias for a namespace. Use the [namespace alias qualifier `::`](../../language-reference/operators/namespace-alias-qualifier.md) to access the members of the aliased namespace. The following example shows how to create and use a namespace alias:
   
- [!code-csharp[csProgGuideNamespaces#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces2.cs#7)]  
+[!code-csharp[csProgGuideNamespaces#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#5)]
   
-## Using Namespaces to control scope  
+## Using namespaces to control scope
+
  The `namespace` keyword is used to declare a scope. The ability to create scopes within your project helps organize code and lets you create globally-unique types. In the following example, a class titled `SampleClass` is defined in two namespaces, one nested inside the other. The [member access `.` operator](../../language-reference/operators/member-access-operators.md#member-access-operator-) is used to differentiate which method gets called.  
   
  [!code-csharp[csProgGuideNamespaces#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#8)]  
   
-## Fully Qualified Names  
+## Fully qualified names
+
  Namespaces and types have unique titles described by fully qualified names that indicate a logical hierarchy. For example, the statement `A.B` implies that `A` is the name of the namespace or type, and `B` is nested inside it.  
   
  In the following example, there are nested classes and namespaces. The fully qualified name is indicated as a comment following each entity.  
@@ -86,6 +91,6 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
-- [. Operator](../../../csharp/language-reference/operators/member-access-operators.md#member-access-operator-)
-- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifier.md)
+- [. operator](../../../csharp/language-reference/operators/member-access-operators.md#member-access-operator-)
+- [:: operator](../../../csharp/language-reference/operators/namespace-alias-qualifier.md)
 - [extern alias](../../../csharp/language-reference/keywords/extern-alias.md)

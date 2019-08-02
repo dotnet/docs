@@ -53,7 +53,7 @@ These are the highest precedence operators.
 
 [unchecked](../keywords/unchecked.md) – disables overflow checking for integer operations. This is the default compiler behavior.
 
-[default(T)](../../programming-guide/statements-expressions-operators/default-value-expressions.md) – produces the default value of type T.
+[default(T)](default.md) – produces the default value of type T.
 
 [nameof](nameof.md) - obtains the simple (unqualified) name of a variable, type, or member as a constant string.
 

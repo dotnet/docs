@@ -92,10 +92,7 @@ You can now omit the type on the right-hand side of the initialization:
 Func<string, bool> whereClause = default;
 ```
 
-You can learn more about this enhancement in the C# Programming Guide article
-on [default value expressions](../programming-guide/statements-expressions-operators/default-value-expressions.md).
-
-This enhancement also changes some of the parsing rules for the [default keyword](../language-reference/keywords/default.md).
+For more information, see the [default literal](../language-reference/operators/default.md#default-literal) section of the [default operator](../language-reference/operators/default.md) article.
 
 ## Inferred tuple element names
 

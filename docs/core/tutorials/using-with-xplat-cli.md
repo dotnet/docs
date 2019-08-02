@@ -155,14 +155,14 @@ Once you're ready to distribute your app, you can publish it with the command [`
 There are two publishing methods:
 
 01. **Framework-dependent deployments** (FDD)\
-Framework-dependent deployment (FDD) relies on the presence of a shared system-wide version of .NET Core. Because .NET Core is already present, your app is portable between installations of .NET Core. Your app deployment contains your app along with any third-party dependencies that are outside of the .NET Core libraries. FDDs produce a *.dll* file that can be launched by using the `dotnet` utility from the command line. For example, `dotnet app.dll` runs an application named app.
+Framework-dependent deployment relies on the presence of a shared system-wide version of .NET Core. Because .NET Core is already present, your app is portable between installations of .NET Core. Your app deployment contains your app along with any third-party dependencies that are outside of the .NET Core libraries. Framework-dependent deployments produce a *.dll* file that can be run by using the `dotnet` utility from the command line. For example, `dotnet app.dll` runs an application named app.
 
     ```console
     dotnet publish
     ```
 
 01. **Self-contained deployments** (SCD)\
-Unlike FDD, a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable named similar to your app which is a of the platform-specific .NET Core host, and your app *.dll* file, which is the actual application. SCD produces platform-specific binaries.
+Unlike FDD, a self-contained deployment doesn't rely on the presence of shared components on the system. All components, both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core runtimes and applications. self-contained deployments include an executable named for your app, which is a copy of the platform-specific .NET Core host, and your app *.dll* file, which is the actual application. SCD produces platform-specific binaries.
 
     ```console
     dotnet publish -c Release -r <RID> --self-contained true

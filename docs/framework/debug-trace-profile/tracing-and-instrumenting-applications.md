@@ -127,9 +127,6 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
   
  You can produce custom results by implementing your own listener. A custom trace listener might, for example, display the messages to a message box, or connect to a database to add messages to a table. All custom listeners should support the six methods mentioned above. For more information on creating developer-defined listeners, see <xref:System.Diagnostics.TraceListener> in the .NET Framework reference.  
   
-> [!NOTE]
->  In Visual Basic, the **Debug.Write**, **Debug.WriteIf**, **Debug.WriteLine**, and **Debug.WriteLineIf** methods have replaced the **Debug.Print** method that was available in earlier versions of Visual Basic.  
-  
  The **Write** and **WriteLine** methods always write the text that you specify. **Assert**, **WriteIf**, and **WriteLineIf** require a Boolean argument that controls whether or not they write the specified text; they write the specified text only if the expression is **true** (for **WriteIf** and **WriteLineIf**), or **false** (for **Assert**). The **Fail** method always writes the specified text. For more information, see [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md) and the .NET Framework reference.  
   
 ## Security Concerns  

@@ -150,32 +150,14 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
 
 ## Publish your app
 
-Once you're ready to distribute your app, you can publish it with the command [`dotnet publish`](../tools/dotnet-publish.md). Depending on the current .NET Core SDK you're using, the default [`dotnet publish`](../tools/dotnet-publish.md) command will choose a specific publishing method. For more information on what the default publishing method is for your SDK version, see [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md). For more information on the different publishing modes, see [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md)
+Once you're ready to distribute your app, use the [`dotnet publish`](../tools/dotnet-publish.md) command to publish your app. This command produces a _publish_ folder at _bin\\debug\\netcoreapp2.1\\publish\\_ (use `/` for non-Windows systems). You can distribute this app to other platforms as long as long as they have installed the dotnet runtime.
 
-Run the `dotnet publish` command to publish your app. The output is placed in the _bin\\debug\\netcoreapp3.0\\publish\\_ folder_
+You can run your published app with the `dotnet` command:
 
-
-
-
-There are two publishing methods:
-
-01. **Framework-dependent deployments** (FDD)\
-Framework-dependent deployment relies on the presence of a shared system-wide version of .NET Core. Because .NET Core is already present, your app is portable between installations of .NET Core. Your app deployment contains your app along with any third-party dependencies that are outside of the .NET Core libraries. Framework-dependent deployments produce a *.dll* file that can be run by using the `dotnet` utility from the command line. For example, `dotnet app.dll` runs an application named app.
-
-    ```console
-    dotnet publish
-    ```
-
-01. **Self-contained deployments** (SCD)\
-Unlike FDD, a self-contained deployment doesn't rely on the presence of shared components on the system. All components, both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core runtimes and applications. self-contained deployments include an executable named for your app, which is a copy of the platform-specific .NET Core host, and your app *.dll* file, which is the actual application. SCD produces platform-specific binaries.
-
-    ```console
-    dotnet publish -c Release -r <RID> --self-contained true
-    ```
-
-    For more information about runtime identifiers (RID), see the [.NET Core RID Catalog](../rid-catalog.md).
-
-For more information on the three publishing methods, see [Application Deployment](../deploying/index.md)
+```console
+$ dotnet bin\Debug\netcoreapp2.1\publish\Hello.dll
+Hello World!
+```
 
 ## Conclusion
 
@@ -186,3 +168,5 @@ Note that the commands and steps shown in this tutorial to run your application 
 ## See also
 
 - [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
+- [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md)
+- [Application Deployment](../deploying/index.md)

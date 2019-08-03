@@ -2,7 +2,7 @@
 title: Introduction to Cloud-Native .NET Applications
 description: Architecting Cloud-Native .NET Apps for Azure | Introduction to Cloud-Native .NET Applications
 author: robvet
-ms.date: 07/28/2019
+ms.date: 08/05/2019
 ---
 # Introduction to Cloud-Native .NET Applications
 

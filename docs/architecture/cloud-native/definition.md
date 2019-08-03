@@ -2,7 +2,7 @@
 title: Defining Cloud Native
 description: Architecting Cloud-Native .NET Apps for Azure | Defining Cloud Native
 author: robvet
-ms.date: 07/28/2019
+ms.date: 08/05/2019
 ---
 # Defining Cloud Native
 
@@ -10,11 +10,13 @@ Stop what you’re doing and ping 10 of your colleagues. Ask them to define the 
 
 Cloud native is all about changing the way we think about constructing critical business systems.
 
-Consider the [definition](https://github.com/cncf/foundation/blob/master/charter.md) from the Cloud Native Computing Foundation:
+But, what exactly is cloud native?
 
-- Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.
+The Cloud Native Computing Foundation provides an [official definition](https://github.com/cncf/foundation/blob/master/charter.md) of Cloud Native:
 
-- These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.
+*Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.*
+
+*These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.*
 
 Applications have become increasingly complex with users demanding more and more. Users expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. They'll easily move to your competitor.
 
@@ -88,7 +90,7 @@ An excellent reference guide for microservices is [.NET Microservices: Architect
 
 ## Deployed in containers…
 
-Microservices go hand in hand with software containerization. Developers package the code, dependencies, and runtime for a service as a single unit, called an [image](https://docs.docker.com/glossary/?term=image). Images are stored in a [container registry](https://azure.microsoft.com/services/container-registry/). Registries can be located on your laptop, in your data center, or in the public cloud. When needed, you *pull* the image and transform it into a running container instance. The instance runs on any computer (development laptop, QA, or production) that has the Docker software engine.
+Microservices go hand in hand with software containerization. Developers package the code, dependencies, and runtime for a service as a single unit, called a container [image](https://docs.docker.com/glossary/?term=image). Images are stored in a [container registry](https://azure.microsoft.com/services/container-registry/). Registries can be located on your laptop, in your data center, or in the public cloud. When needed, you *pull* the image and transform it into a running container instance. The instance runs on any computer (development laptop, QA, or production) that has the Docker software engine.
 
 ### Benefits of containers
 
@@ -109,17 +111,11 @@ Another benefit of containers is scalability. A single container image can rapid
 
 ### Developing in containers
 
-Most developers build code on their local computers. When complete, the code is unit tested and checked into a team repository for future use. 
+Most developers build code on their local computers. They install the required frameworks, libraries, and runtimes. When complete, the code is unit tested and checked into a team repository for future use.
 
-Microservice systems, however, are often large and perform poorly on local development machines. Many development teams containerize their cloud-native development cycle. They write code in Docker containers and run the application in a shared development cluster in the cloud. 
+Microservice systems, however, consist of large numbers of interrelated services. Running the entire applicaiton on a local computer can be difficult, if not impossible. A common alternative involves maintaining a set of mock dependencies to enable end-to-end testing on the local machine. However, their creation can be time-consuming and lead to subtle bugs if not kept current.
 
- [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) enables development teams to iteratively build and test an entire microservices application running in [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) (AKS). Azure Dev Spaces is shown in Figure 1-6.
-
-![Azure Dev Spaces](media/azure-dev-spaces-site-example.png)
-
-**Figure 1-6**. Azure Dev Spaces
-
-In the previous figure, Developer Susie Walker and team share a development instance of their entire application in an [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) cluster (in blue). Using Azure Dev Spaces, Susie creates a personal development space with a private copy of the Hotel Service, shown in gray. She can then work with her copy of the hotel service, but seamlessly run it against the entire application in the AKS development cluster. This way, Suzie doesn't need to install the full code base or have to mock or replicate dependencies on her local computer. Until Susie deploys her updated copy of the Hotel Service to the dev cluster, other team members run against the older version in the cluster. We discuss this upcoming product, Azure Dev Spaces, later in this book.
+Many development teams are containerizing their cloud-native development cycle. They write code in Docker containers and run the application in a shared development cluster in the cloud. New tooling innovations in Visual Studio and [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) help facitliate this fast-growing approach.
 
 Containers offer immense benefits for packaging, deploying, and managing cloud-native applications.
 
@@ -135,11 +131,7 @@ Cloud-native applications are best built using *cloud hosted backing services* m
 
 Built on cloud technologies, managed backing services are more agile and flexible than traditional offerings. They offer inherent scalability and resiliency and are continually optimized for speed, security, and performance.
 
-Importantly, cloud providers fully support their managed backing services. Open a ticket and they fix your issue. 
-
-Instead, your operations team could accept the responsibility for owning a backing service. They could provision a VM and install the open-source RabbitMQ message broker. While feasible, would this make sense?
-
-Chances are you’re not in the message broker business. So, why incur the responsibility for owning this service when the cloud provider can do it better and for less? No matter how skilled you are, it's unlikely that you can match the reliability and performance of [Azure Service Bus](https://azure.microsoft.com/services/service-bus/), a fully managed message broker service in Azure. The team working on Azure Service Bus specializes in message broker technology - that’s their business. While you, instead, sell consumer items, provide billing services, or deliver packages. Do what you're good at and let others help you with the rest. Focus your effort on building outstanding customer functionality, not becoming experts in open-source backing services.
+Importantly, cloud providers fully support their managed backing services. Open a ticket and they fix your issue.
 
 Figure 1-8 shows managed services available on the Azure platform.
 
@@ -216,15 +208,13 @@ We cover DevOps and CI/CD later in this chapter and in the book.
 
 If you had a small handful of containerized microservices, your DevOps team might have a chance at managing it manually. They would need to pay close attention to system performance and traffic patterns to operate and scale the services correctly. At best, this effort would be labor-intensive and error prone.
 
-When operating at scale, [container orchestration](https://blog.newrelic.com/engineering/container-orchestration-explained/) is mandatory. Orchestration includes deployment, management, scaling, and networking of your containers.
-
-Container orchestration is done with a special software program called (you guessed it) a container orchestrator. While several exist, [Kubernetes](https://kubernetes.io/) has become the de facto standard for the cloud-native world. The Azure cloud features Kubernetes as a managed service, [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). You use Kubernetes from the Azure portal; Microsoft is responsible for provisioning and managing the underlying infrastructure – a tremendously complex undertaking!
-
-Figure 1-10 provides insight into what container orchestrators do.
+When operating at scale, [container orchestration](https://blog.newrelic.com/engineering/container-orchestration-explained/) is mandatory. Figure 1-10 shows management tasks that container orchestrators perform, including deployment, health monitoring, scaling, and networking. Pay close attention to app upgrade feature which supports rolling, or incremental application upgrades with zero downtime.
 
 ![What container orchestrators do](media/what-container-orchestrators-do.png)
 
 **Figure 1-10**. What container orchestrators do
+
+Container orchestration is done with a special software program called (you guessed it) a container orchestrator. While several exist, [Kubernetes](https://kubernetes.io/) has become the de facto standard for the cloud-native world. The Azure cloud features Kubernetes as a managed service, [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). You use Kubernetes from the Azure portal; Microsoft is responsible for provisioning and managing the underlying infrastructure – a tremendously complex undertaking!
 
 We'll dig deep into containers orchestrators and Azure Kubernetes Services throughout this book.
 

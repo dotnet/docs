@@ -83,7 +83,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 ## Web Browsing Software Security Settings  
  The security settings on your computer determine the access that any Web browsing software is granted. Web browsing software includes any application or component that uses the [WinINet](https://go.microsoft.com/fwlink/?LinkId=179379) or [UrlMon](https://go.microsoft.com/fwlink/?LinkId=179383) APIs, including Internet Explorer and PresentationHost.exe.  
   
- [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] provides a mechanism by which you can configure the functionality that is allowed to be executed by or from [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)], including the following:  
+ Internet Explorer provides a mechanism by which you can configure the functionality that is allowed to be executed by or from Internet Explorer, including the following:  
   
 - .NET Framework-reliant components  
   
@@ -116,9 +116,9 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  Starting with [!INCLUDE[TLA#tla_ie7](../../../includes/tlasharptla-ie7-md.md)], the following security settings specifically for .NET Framework are included:  
   
-- **Loose XAML**. Controls whether [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] can navigate to and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files. (Enable, Disable, and Prompt options).  
+- **Loose XAML**. Controls whether Internet Explorer can navigate to and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files. (Enable, Disable, and Prompt options).  
   
-- **XAML browser applications**. Controls whether [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] can navigate to and run [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)]. (Enable, Disable, and Prompt options).  
+- **XAML browser applications**. Controls whether Internet Explorer can navigate to and run [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)]. (Enable, Disable, and Prompt options).  
   
  By default, these settings are all enabled for the **Internet**, **Local intranet**, and **Trusted sites** zones, and disabled for the **Restricted sites** zone.  
   
@@ -201,7 +201,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |---------------------|  
 |FEATURE_ENABLE_SCRIPT_PASTE_URLACTION_IF_PROMPT|  
   
- If you run a partial-trust [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Windows Internet Explorer, WPF hosts the WebBrowser ActiveX control in the address space of the Internet Explorer process. Since the WebBrowser ActiveX control is hosted in the [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] process, all of the feature controls for Internet Explorer are also enabled for the WebBrowser ActiveX control.  
+ If you run a partial-trust [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Windows Internet Explorer, WPF hosts the WebBrowser ActiveX control in the address space of the Internet Explorer process. Since the WebBrowser ActiveX control is hosted in the Internet Explorer process, all of the feature controls for Internet Explorer are also enabled for the WebBrowser ActiveX control.  
   
  XBAPs running in Internet Explorer also get an additional level of security compared to normal standalone applications. This additional security is because Internet Explorer, and therefore the WebBrowser ActiveX control, runs in protected mode by default on [!INCLUDE[TLA#tla_winvista](../../../includes/tlasharptla-winvista-md.md)] and [!INCLUDE[win7](../../../includes/win7-md.md)]. For more information about protected mode, see [Understanding and Working in Protected Mode Internet Explorer](https://go.microsoft.com/fwlink/?LinkId=179393).  
   

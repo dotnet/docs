@@ -69,7 +69,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 <a name="Limited_Rights_Process_for_Browser_Hosted_Applications"></a>   
 ### Limited Rights Process for Browser-Hosted Applications  
- Browser-hosted [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications execute within the Internet zone sandbox. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] integration with [!INCLUDE[TLA#tla_ie](../../../includes/tlasharptla-ie-md.md)] extends this protection with additional support.  
+ Browser-hosted [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications execute within the Internet zone sandbox. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] integration with Microsoft Internet Explorer extends this protection with additional support.  
   
 #### Internet Explorer 6 Service Pack 2 and Internet Explorer 7 for XP  
  [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] leverages operating system security by limiting process privileges for [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)] for further protection. Before a browser-hosted [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] application is launched, the operating system creates a host process that removes unnecessary privileges from the process token. Some examples of privileges that are removed include the ability to shut down the user's machine, load drivers, and read access to all files on the machine.  

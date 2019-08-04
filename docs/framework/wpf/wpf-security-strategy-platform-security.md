@@ -19,7 +19,7 @@ helpviewer_keywords:
 ms.assetid: 2a39a054-3e2a-4659-bcb7-8bcea490ba31
 ---
 # WPF Security Strategy - Platform Security
-While Windows Presentation Foundation (WPF) provides a variety of security services, it also leverages the security features of the underlying platform, which includes the operating system, the CLR, and [!INCLUDE[TLA2#tla_ie](../../../includes/tla2sharptla-ie-md.md)]. These layers combine to provide [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] a strong, defense-in-depth security model that attempts to avoid any single point of failure, as shown in the following figure:  
+While Windows Presentation Foundation (WPF) provides a variety of security services, it also leverages the security features of the underlying platform, which includes the operating system, the CLR, and Internet Explorer. These layers combine to provide [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] a strong, defense-in-depth security model that attempts to avoid any single point of failure, as shown in the following figure:  
   
  ![Diagram that shows the WPF security model.](./media/wpf-security-strategy-platform-security/windows-presentation-foundation-security.png)  
   

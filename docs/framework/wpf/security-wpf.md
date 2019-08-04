@@ -114,7 +114,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 > [!NOTE]
 >  You can also get to the Internet Options dialog box from Internet Explorer. Click **Tools** and then click **Internet Options**.  
   
- Starting with [!INCLUDE[TLA#tla_ie7](../../../includes/tlasharptla-ie7-md.md)], the following security settings specifically for .NET Framework are included:  
+ Starting with Windows Internet Explorer 7, the following security settings specifically for .NET Framework are included:  
   
 - **Loose XAML**. Controls whether Internet Explorer can navigate to and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files. (Enable, Disable, and Prompt options).  
   

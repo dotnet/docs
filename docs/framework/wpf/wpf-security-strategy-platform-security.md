@@ -180,7 +180,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 <a name="Microsoft_Internet_Explorer_Security"></a>   
 ## Microsoft Internet Explorer Security  
- Beyond reducing security issues and simplifying security configuration, [!INCLUDE[TLA#tla_ie6sp2](../../../includes/tlasharptla-ie6sp2-md.md)] contains several features that security improvements that enhance security for users of [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)]. The thrust of these features attempts to allow users greater control over their browsing experience.  
+ Beyond reducing security issues and simplifying security configuration, Microsoft Internet Explorer 6 (SP2) contains several features that security improvements that enhance security for users of [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)]. The thrust of these features attempts to allow users greater control over their browsing experience.  
   
  Prior to [!INCLUDE[TLA2#tla_ie6sp2](../../../includes/tla2sharptla-ie6sp2-md.md)], users could be subject to any of the following:  
   

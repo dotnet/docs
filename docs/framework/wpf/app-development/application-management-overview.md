@@ -287,7 +287,7 @@ All applications tend to share a common set of functionality that applies to app
   
 - An XBAP is navigated away from.  
   
-- In [!INCLUDE[TLA2#tla_ie7](../../../../includes/tla2sharptla-ie7-md.md)], when the tab that is hosting the XBAP is closed.  
+- In Internet Explorer, when the tab that is hosting the XBAP is closed.  
   
 - When the browser is closed.  
   

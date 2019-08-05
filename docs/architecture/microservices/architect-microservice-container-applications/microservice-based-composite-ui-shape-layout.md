@@ -36,6 +36,9 @@ However, we encourage you to use the following references to learn more about co
 - **Composite UI using ASP.NET (Particular's Workshop)** \
   <https://github.com/Particular/Workshop/tree/master/demos/asp-net-core>
 
+- **Ruben Oostinga. The Monolithic Frontend in the Microservices Architecture** \
+<https://xebia.com/blog/the-monolithic-frontend-in-the-microservices-architecture/>
+
 - **Mauro Servienti. The secret of better UI composition** \
   <https://particular.net/blog/secret-of-better-ui-composition>
 

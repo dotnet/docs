@@ -321,7 +321,7 @@ Release notes for the package.
 
 ### PackageTags
 
-A semicolon-delimited list of tags that designates the package.
+A space-delimited list of tags that designates the package.
 
 ### PackageOutputPath
 

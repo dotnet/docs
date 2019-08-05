@@ -287,7 +287,7 @@ All applications tend to share a common set of functionality that applies to app
   
 - An XBAP is navigated away from.  
   
-- In Internet Explorer 7, when the tab that is hosting the XBAP is closed.  
+- In Internet Explorer, when the tab that is hosting the XBAP is closed.  
   
 - When the browser is closed.  
   

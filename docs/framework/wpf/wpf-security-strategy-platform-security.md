@@ -77,7 +77,6 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
 #### Internet Explorer 7 for Vista  
  In Windows Internet Explorer 7, [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications run in protected mode. Specifically, [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)] run with medium-level integrity.  
   
-#### Defense-In-Depth Layer  
  Since [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)] are generally sandboxed by the Internet zone permission set, removing these privileges does not harm [!INCLUDE[TLA#tla_winfxwebapp#plural](../../../includes/tlasharptla-winfxwebappsharpplural-md.md)] from a compatibility perspective. Instead, an additional defense-in-depth layer is created; if a sandboxed application is able to exploit other layers and hijack the process, the process will still only have limited privileges.  
   
  See [Using a Least-Privileged User Account](https://docs.microsoft.com/previous-versions/tn-archive/cc700846%28v=technet.10%29).  

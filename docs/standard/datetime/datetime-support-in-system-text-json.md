@@ -6,10 +6,13 @@ author: layomia
 ms.author: laakinri
 ms.date: 07/22/2019
 helpviewer_keywords:
-  - "JSON DateTime"
-  - "DateTimeOffset"
-  - "Serializer, Utf8"
-  - "JSON Reader, JSON Writer, times"
+  - "JSON, Serializer, Utf8"
+  - "JSON DateTime, JSON DateTimeOffset"
+  - "DateTime, DateTimeOffset"
+  - "JsonSerializer, Utf8JsonReader, Utf8JsonWriter, JsonElement, JsonDocument"
+  - "JSON Serializer, JSON Reader, JSON Writer"
+  - "Converter, JSON Converter, DateTime Converter"
+  - "ISO, ISO 8601, ISO 8601-1:2019"
 ---
 # DateTime and DateTimeOffset support in System.Text.Json
 
@@ -35,7 +38,7 @@ Product p = JsonSerializer.Deserialize<Product>(@"{""Name"":""Banana"",""ExpiryD
 Console.WriteLine(p.Name); // Banana
 Console.WriteLine(p.ExpiryDate); // 7/26/2019 12:00:00 AM
 
-// With default options, input DateTimes must conform to the native implementation of the ISO 8601-1:2019 profile.
+// With default options, input DateTimes must conform to the extended ISO 8601-1:2019 profile.
 try
 {
 	var _ = JsonSerializer.Deserialize<Product>(@"{""Name"":""Banana"",""ExpiryDate"":""26/07/2019""}");
@@ -121,7 +124,7 @@ Given a payload with non-compliant <xref:System.DateTime> representations:
 
 Computing the average will fail:
 
-```
+```csharp
 var _ = ComputeAverageTemperatures(json);
 
 // Unhandled exception. System.FormatException: One of the identified items was in an invalid format.
@@ -168,13 +171,13 @@ while (json.Read())
     if (json.TokenType == JsonTokenType.String)
     {
         Console.WriteLine(json.TryGetDateTime(out DateTime datetime));
-		// True
-        
-		Console.WriteLine(datetime);
-		// 7/26/2019 12:00:00 AM
-        
-		Console.WriteLine(json.GetDateTime());
-		// 7/26/2019 12:00:00 AM
+        // True
+
+        Console.WriteLine(datetime);
+        // 7/26/2019 12:00:00 AM
+
+        Console.WriteLine(json.GetDateTime());
+        // 7/26/2019 12:00:00 AM
     }
 }
 ```
@@ -190,14 +193,14 @@ while (json.Read())
     if (json.TokenType == JsonTokenType.String)
     {
         Console.WriteLine(json.TryGetDateTime(out DateTime datetime));
-		// False
-        
-		Console.WriteLine(datetime);
-		// 1/1/0001 12:00:00 AM
-        
-		var _ = json.GetDateTime();
-		// Unhandled exception. System.FormatException: The JSON value is not in a supported DateTime format.
-		//     at System.Text.Json.Utf8JsonReader.GetDateTime()
+        // False
+
+        Console.WriteLine(datetime);
+        // 1/1/0001 12:00:00 AM
+
+        var _ = json.GetDateTime();
+        // Unhandled exception. System.FormatException: The JSON value is not in a supported DateTime format.
+        //     at System.Text.Json.Utf8JsonReader.GetDateTime()
     }
 }
 ```
@@ -220,8 +223,8 @@ if you can't determine the input formats, but it is significantly less performan
 
 This allows you to use fast UTF-8-based parsing and formatting methods for <xref:System.DateTime> and <xref:System.DateTimeOffset> datathat is compliant
 with one of the [Standard Date and Time Format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
-This is much faster than Example 1 and should be used if the input data isn't compliant with the extended ISO 8601-1:2019 profile but conforms to the
-"R", "l", "O", or "G" standard format specifiers.
+This is much faster than Example 1 and should be used if the input data isn't compliant with the extended ISO 8601-1:2019 profile but conforms to one of the
+"R", "l", "O", or "G" standard format specifiers (specifically "R" in this example).
 
 [!code-csharp[example-showing-utf8-parser-and-formatter](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example2/Program.cs)]
 
@@ -237,7 +240,7 @@ extended ISO 8601-1:2019 profile, but want to have a fallback just in case.
 ### Date and time components
 
 The extended ISO 8601-1:2019 profile implemented in <xref:System.Text.Json> defines the following components for
-date and time representations. These components are used to define various levels of date and time granularity
+date and time representations. These components are used to define various levels of granularity
 supported when parsing and formatting <xref:System.DateTime> and <xref:System.DateTimeOffset> representations.
 
 | Component       | Format                      | Description                                                                     |
@@ -250,10 +253,10 @@ supported when parsing and formatting <xref:System.DateTime> and <xref:System.Da
 | Second          | "ss"                        | 00-59                                                                           |
 | Second fraction | "FFFFFFF"                   | Minimum of one digit, maximum of 16 digits                                      |
 | Time offset     | "K"                         | Either "Z" or "('+'/'-')HH':'mm"                                                |
-| Partial time    | "HH':'mm':'ss[FFFFFFF]"     |                                                                                 |
-| Full date       | "yyyy'-'MM'-'dd"            |                                                                                 |
+| Partial time    | "HH':'mm':'ss[FFFFFFF]"     | Time without UTC offset information                                             |
+| Full date       | "yyyy'-'MM'-'dd"            | Calendar date                                                                   |
 | Full time       | "'Partial time'K"           | UTC of day or Local time of day with the time offset between local time and UTC |
-| Date time       | "'Full date''T''Full time'" | Extended calendar date and time of day                                          |
+| Date time       | "'Full date''T''Full time'" | Calendar date and time of day, e.g. 2019-07-26T16:59:57-05:00                   |
 
 ### Support for parsing
 

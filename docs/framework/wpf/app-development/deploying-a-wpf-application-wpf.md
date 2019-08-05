@@ -112,8 +112,6 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  If permission is granted, Internet Explorer downloads and installs the .NET Framework using the Microsoft Background Intelligent Transfer Service (BITS). After successful installation of the .NET Framework, the originally requested file is opened in a new browser window.  
   
- .NET Framework auto-detection is available on [!INCLUDE[TLA#tla_longhorn](../../../../includes/tlasharptla-longhorn-md.md)], [!INCLUDE[TLA#tla_winxpsp2](../../../../includes/tlasharptla-winxpsp2-md.md)], and [!INCLUDE[TLA#tla_winnetsvrfamsp1](../../../../includes/tlasharptla-winnetsvrfamsp1-md.md)] clients that have Internet Explorer 7 or later installed.  
-  
  For more information, see [Deploying the .NET Framework and Applications](../../deployment/index.md).  
   
 ## See also

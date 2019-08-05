@@ -225,7 +225,7 @@ The following is an alphabetic list of controls and components that can be used 
  Provides links to step-by-step topics, recommendations for which kind of control to create, and other information about creating your own control.  
   
  [Controls and Programmable Objects Compared in Various Languages and Libraries](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/0061wezk(v=vs.100))  
- Provides a table that maps controls in Visual Basic 6.0 to the corresponding control in Visual Basic. Note that controls are now classes in the .NET Framework.  
+ Provides a table that maps controls in Visual Basic 6.0 to the corresponding control in Visual Basic .NET. Note that controls are now classes in the .NET Framework.  
   
  [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md)  
  Describes how to use ActiveX controls on Windows Forms.

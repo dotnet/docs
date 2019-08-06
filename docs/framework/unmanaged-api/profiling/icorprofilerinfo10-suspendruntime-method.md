@@ -1,6 +1,6 @@
 ---
 title: "ICorProfilerInfo10::SuspendRuntime"
-ms.date: "08/DD/YYYY"
+ms.date: "08/06/2019"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -30,7 +30,7 @@ HRESULT SuspendRuntime();
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core](../../../../includes/net-core.md)  
+ **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30.md)]  
   
 ## See also
 - [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)

@@ -1,6 +1,6 @@
 ---
 title: "ICorProfilerInfo8::IsFunctionDynamic"
-ms.date: "08/DD/YYYY"
+ms.date: "08/06/2019"
 dev_langs: 
   - "cpp"
 api_name: 

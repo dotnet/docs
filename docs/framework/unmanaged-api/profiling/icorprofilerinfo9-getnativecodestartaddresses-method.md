@@ -1,6 +1,6 @@
 ---
 title: "ICorProfilerInfo9::GetNativeCodeStartAddresses"
-ms.date: "08/DD/YYYY"
+ms.date: "08/06/2019"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -53,7 +53,7 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core](../../../../includes/net-core.md)  
+ **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22.md)] 
   
 ## See also
 - [ICorProfilerInfo9 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo9-interface.md)

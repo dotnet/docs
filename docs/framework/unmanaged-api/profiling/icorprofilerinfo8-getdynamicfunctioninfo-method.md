@@ -1,6 +1,6 @@
 ---
 title: "ICorProfilerInfo8::GetDynamicFunctionInfo"
-ms.date: "08/DD/YYYY"
+ms.date: "08/06/2019"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -9,7 +9,7 @@ api_location:
   - "mscorwks.dll"
 api_type: 
   - "COM"
-ms.assetid: 74636166-6592-4bee-bb23-6003c9d98169
+ms.assetid: dbdab3da-6177-4e15-b29b-33383e5e5544
 author: "davmason"
 ms.author: "davmason"
 ---

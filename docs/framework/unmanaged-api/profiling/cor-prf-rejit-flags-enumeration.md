@@ -11,7 +11,7 @@ f1_keywords:
   - "COR_PRF_REJIT_FLAGS"
 helpviewer_keywords: 
   - "COR_PRF_REJIT_FLAGS enumeration [.NET Framework profiling]"
-ms.assetid: 35449514-333f-4918-9c60-7aa198d655d2
+ms.assetid: bef3af7a-61c6-4b27-938e-221f28a630d4
 topic_type: 
   - "apiref"
 author: "davmason"

@@ -1,6 +1,6 @@
 ---
 title: "ICorProfilerInfo10 Interface"
-ms.date: "08/DD/YYYY"
+ms.date: "08/06/2019"
 ms.assetid: 61a5f3e3-9c99-43a8-ab1a-34118e970bb6
 author: "davmason"
 ms.author: "davmason"
@@ -23,6 +23,6 @@ A subclass of [ICorProfilerInfo1-1](../../../../docs/framework/unmanaged-api/pro
 ## Requirements  
 **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
 **Header:** CorProf.idl, CorProf.h  
-**.NET Framework Versions:** [!INCLUDE[net_core](../../../../includes/net-core.md)]  
+**.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30.md)] 
 ## See also
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

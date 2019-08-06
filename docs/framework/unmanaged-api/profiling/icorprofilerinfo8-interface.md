@@ -1,6 +1,6 @@
 ---
 title: "ICorProfilerInfo8 Interface"
-ms.date: "08/DD/YYYY"
+ms.date: "08/06/2019"
 ms.assetid: b5674edb-043b-4476-9d0f-b44ded110dd5
 author: "davmason"
 ms.author: "davmason"

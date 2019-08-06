@@ -1,6 +1,6 @@
 ---
 title: "ICorProfilerInfo9::GetCodeInfo4"
-ms.date: "08/DD/YYYY"
+ms.date: "08/06/2019"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -9,7 +9,7 @@ api_location:
   - "mscorwks.dll"
 api_type: 
   - "COM"
-ms.assetid: 74636166-6592-4bee-bb23-6003c9d98169
+ms.assetid: 4cd59947-7b29-4e6c-8866-725ec902bcc1
 author: "davmason"
 ms.author: "davmason"
 ---
@@ -59,7 +59,7 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)  
+ **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22.md)] 
   
 ## See also
 - [ICorProfilerInfo9 Interface](../../../../docs/framework/unmanaged-api/profiling/ICorProfilerInfo9-interface.md)

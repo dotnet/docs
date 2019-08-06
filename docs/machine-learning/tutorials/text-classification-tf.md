@@ -68,9 +68,9 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 4. Next, create classes for your input data and predictions. Add a new class to your project:
 
-    - In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
+    * In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
-    - In the **Add New Item** dialog box, select **Class** and change the **Name** field to *IMDBData.cs*. Then, select the **Add** button.
+    * In the **Add New Item** dialog box, select **Class** and change the **Name** field to *IMDBData.cs*. Then, select the **Add** button.
 
 5. The *IMDBData.cs* file opens in the code editor. Add the following `using` statement to the top of *IMDBData.cs*:
 
@@ -157,9 +157,17 @@ This code will function as a lookup map to assist with mapping text to integer v
 
    The `LoadTensorFlowModel` is a convenience method that allows the `TensorFlow` model to be loaded once and then creates the `TensorFlowEstimator` using `ScoreTensorFlowModel`. `Prediction` returns a probability for sentiment of a given text, and all of those probabilities must add up to 1.
 
-GetModelSchema Gets DataViewSchema for complete model. Every node in the TensorFlow model will be included in the DataViewSchema object. In this tutorial, you use it to explore the TensorFlow model schema with the following linse 
+GetModelSchema gets the DataViewSchema for the complete model. the DataViewSchema object includes every node in the TensorFlow model . In this tutorial, you use it to explore the TensorFlow model schema with the following lines:
 
 [!code-csharp[GetModelSchema](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#GetModelSchema)]
+
+The schema is output to the console:
+
+```console
+=============== TensorFlow Model Schema ===============
+Name: Features, Type: System.Int32, Shape: (-1, 600)
+Name: Prediction/Softmax, Type: System.Int32, Shape: (-1, 600)
+```
 
 Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, and when dealing with deep neural networks you must adapt the images to the format expected by the network. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
 

@@ -1,5 +1,5 @@
 ---
-title: "Preserving White Space while Loading or Parsing XML1"
+title: "Preserving White Space while Loading or Parsing XML"
 ms.date: 07/20/2015
 ms.assetid: f3ff58c4-55aa-4fcd-b933-e3a2ee6e706c
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Customers and Orders in a Namespace1"
+title: "Sample XML File: Customers and Orders in a Namespace"
 ms.date: 07/20/2015
 ms.assetid: 9fe81dbb-e51f-4e80-a49b-e34ac0b1f980
 ---

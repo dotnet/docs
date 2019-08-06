@@ -3,15 +3,13 @@ title: .NET Core Logging and Tracing
 description: An introduction to .NET Core Logging and Tracing.
 author: stmaclea
 ms.author: stmaclea
-ms.date: 8/5/2019
-ms.topic: article
-ms.prod: .net-core
+ms.date: 08/05/2019
 ---
 # .NET Core Logging and Tracing
 
 Logging and tracing is a primitive technique used since the early days of computers. It simply involves instrumenting an application to produce output to be consumed later.
 
-Logging and tracing are similar.  As used here we'll distinguish:
+Logging and tracing are similar. As used here we'll distinguish:
 - Logging outputs text as human readable content.
 - Tracing outputs binary content.  It can use tokenizing, and filtering to reduce overhead in the traced application.
 
@@ -32,12 +30,12 @@ The choice of which API to use is up to you. The key differences:
   - Always compiled in and always writes to the console.
   - Useful for information that your customer may need to see in release.
   - Because it's the simplest approach, it's often used for ad-hoc temporary debugging. This debug code is often never checked in to source control.
-- <xref:System.Diagnostics.Trace>
-  - Only included when `TRACE` is defined.
+- <xref:System.Diagnostics.Trace?displayProperty=nameWithType>
+  - Only enabled when `TRACE` is defined.
   - Writes to attached <xref:System.Diagnostics.TraceListener>s. Usually a debugger.
   - It seems best to use this API when creating release-oriented logs.
-- <xref:System.Diagnostics.Debug>
-  - Only included when `DEBUG` is defined.
+- <xref:System.Diagnostics.Debug?displayProperty=nameWithType>
+  - Only enabled when `DEBUG` is defined.
   - Writes to attached <xref:System.Diagnostics.TraceListener>s. Usually a debugger.
   - It seems best to use this API when creating debug-oriented logs.
 
@@ -55,7 +53,7 @@ provides an overview of the logging techniques it supports.
 
 - The <xref:System.Exception.Message?displayProperty=nameWithType> is useful for logging exceptions.
 
-- The <xref:System.Console?displayProperty=nameWithType>, <xref:System.Diagnostics.StackTrace?displayProperty=nameWithType>
+- The <xref:System.Diagnostics.StackTrace?displayProperty=nameWithType>
 can be useful to provide debugger like logging info.
 
 - <xref:System.Diagnostics.TraceListener> provides an overview of existing listeners and creating a custom listener.

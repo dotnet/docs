@@ -1,1 +1,1 @@
-.NET Core 3.0
+Available since .NET Core 3.0

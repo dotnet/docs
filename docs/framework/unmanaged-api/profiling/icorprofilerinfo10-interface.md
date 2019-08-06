@@ -7,7 +7,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10 Interface
 
-A subclass of [ICorProfilerInfo1-1](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo1-1-interface.md) that provides ***TODO: Placeholder***  
+A subclass of [ICorProfilerInfo9](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo9-interface.md) that provides methods to modify function IL, query information from the runtime, and suspend and resume the runtime.
 
 ## Methods  
 

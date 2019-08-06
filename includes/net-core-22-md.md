@@ -1,1 +1,1 @@
-.NET Core 2.2
+Available since .NET Core 2.2

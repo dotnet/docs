@@ -267,6 +267,13 @@
       href: core/docker/build-container.md
     - name: Container Tools in Visual Studio
       href: /visualstudio/containers/overview
+  - name: Diagnostics
+    href: core/diagnostics/index.md
+    items:
+    - name: Managed Debuggers
+      href: core/diagnostics/managed-debuggers.md
+    - name: Logging and Tracing
+      href: core/diagnostics/logging-and-tracing.md
   - name: Unit Testing
     href: core/testing/index.md
     items:

@@ -26,5 +26,5 @@ While Visual Studio is a Windows application, it can still be used to debug Linu
 ## Visual Studio Code Managed Debugger
 
 **Visual Studio Code** is a lightweight cross-platform code editor. It uses the same .NET Core debugger implementation as Visual Studio, but with a simplified user interface.
-- [Tutorial - Debugging a .Net Core application with Visual Studio Code](../tutorials/with-visual-studio-code)
+- [Tutorial - Debugging a .Net Core application with Visual Studio Code](../tutorials/with-visual-studio-code#debug)
 - [Visual Studio Code's Debugging Overview](https://code.visualstudio.com/docs/editor/debugging)

@@ -15,20 +15,24 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo8::IsFunctionDynamic Method
   
-  Determines if a function has associated metadata  Certain methods like IL Stubs or LCG Methods do not have associated metadata that can be retrieved using the IMetaDataImport APIs.  Such methods can be encountered by profilers through instruction pointers or by listening to ICorProfilerCallback::DynamicMethodJITCompilationStarted  This API can be used to determine whether a FunctionID is dynamic.    
+  Determines if a function has associated metadata. Certain methods like IL Stubs or LCG Methods do not have associated metadata that can be retrieved using the IMetaDataImport APIs. These methods can be encountered by profilers through instruction pointers or by listening to ICorProfilerCallback::DynamicMethodJITCompilationStarted.    
   
 ## Syntax  
   
 ```cpp
-TODO: Method Signature
+HRESULT IsFunctionDynamic( [in]  FunctionID  functionId,
+                           [out] BOOL        *isDynamic);
 ```  
   
 #### Parameters  
- `TODO: param name`  
- TODO: param description  
-  
+ `functionId`
+  [in]  The `FunctionID` that identifies the function in question.
+
+  `isDynamic`
+  [out] A pointer to a `BOOL` that will contain a value indicating if the function has no metadata.
+
 ## Remarks  
- TODO: Remarks  
+ A function is considered dynamic if it has no metadata.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

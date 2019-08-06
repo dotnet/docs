@@ -15,7 +15,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo9::GetILToNativeMapping3 Method
   
- Given the native code start address, return the native->IL mapping information for this jitted version of the code   
+ Given the native code start address, return the native to IL mapping information for this jitted version of the code.   
   
 ## Syntax  
   

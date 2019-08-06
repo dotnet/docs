@@ -15,20 +15,29 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo8::GetFunctionFromIP3 Method
   
-  Maps a managed code instruction pointer to a FunctionID.  GetFunctionFromIP2 fails for dynamic methods, this method works for both dynamic and non-dynamic methods. It is a superset of GetFunctionFromIP2    
+  Maps a managed code instruction pointer to a FunctionID. This method works for both dynamic and non-dynamic methods.    
   
 ## Syntax  
   
 ```cpp
-TODO: Method Signature
+HRESULT GetFunctionFromIP3([in] LPCBYTE ip,
+                           [out] FunctionID *functionId,
+                           [out] ReJITID * pReJitId);
 ```  
   
 #### Parameters  
- `TODO: param name`  
- TODO: param description  
+ `ip`  
+ [in] The instruction pointer in managed code.  
+
+ `pFunctionId`  
+ [out] The function ID.  
+  
+ `pReJitId`  
+ [out] The identity of the JIT-recompiled version of the function.  
   
 ## Remarks  
- TODO: Remarks  
+ This method works for both dynamic and non-dynamic methods. It is a superset of `GetFunctionFromIP2`, which only works for functions with metadata.
+  
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

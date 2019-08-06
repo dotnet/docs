@@ -15,7 +15,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo9::GetNativeCodeStartAddresses Method
   
- Given functionId + rejitId, enumerate the native code start address of all jitted versions of this code that currently exist   
+ Given a functionId and rejitId, enumerate the native code start address of all jitted versions of this code that currently exist.   
   
 ## Syntax  
   

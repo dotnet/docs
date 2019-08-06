@@ -7,14 +7,14 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo8 Interface
 
-A subclass of [ICorProfilerInfo7](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md) that provides ***TODO: Placeholder***  
+A subclass of [ICorProfilerInfo7](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md) that provides methods to query information about dynamic methods.
 
 ## Methods  
 
 | Method|Description|  
 | ------------|-----------------|  
-|[IsFunctionDynamic Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-isfunctiondynamic-method.md)| Determines if a function has associated metadata  Certain methods like IL Stubs or LCG Methods do not have associated metadata that can be retrieved using the IMetaDataImport APIs.  Such methods can be encountered by profilers through instruction pointers or by listening to ICorProfilerCallback::DynamicMethodJITCompilationStarted  This API can be used to determine whether a FunctionID is dynamic.  |
-|[GetFunctionFromIP3 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-getfunctionfromip3-method.md)| Maps a managed code instruction pointer to a FunctionID.  GetFunctionFromIP2 fails for dynamic methods, this method works for both dynamic and non-dynamic methods. It is a superset of GetFunctionFromIP2  |
+|[IsFunctionDynamic Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-isfunctiondynamic-method.md)| Determines if a function has associated metadata. Certain methods like IL Stubs or LCG Methods do not have associated metadata that can be retrieved using the IMetaDataImport APIs. These methods can be encountered by profilers through instruction pointers or by listening to ICorProfilerCallback::DynamicMethodJITCompilationStarted.  |
+|[GetFunctionFromIP3 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-getfunctionfromip3-method.md)| Maps a managed code instruction pointer to a FunctionID. This method works for both dynamic and non-dynamic methods. |
 
 ## Requirements  
 **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

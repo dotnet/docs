@@ -340,7 +340,6 @@ Now that the classes for dimensions and bounding boxes are created, it's time to
     - `CELL_HEIGHT` is the height of one cell in the image grid.
     - `channelStride` is the starting position of the current cell in the grid.
 
-
     When the model scores an image, it divides the `416px x 416px`input into a grid of cells the size of `13 x 13`. Each cell contains is `32px x 32px`. Within each cell, there are 5 bounding boxes each containing 5 features (x, y, width, height, confidence). In addition, each bounding box contains the probability of each of the classes which in this case is 20. Therefore, each cell contains 125 pieces of information (5 features + 20 class probabilities). 
 
 Create a list of anchors below `channelStride` for all 5 bounding boxes:
@@ -650,7 +649,6 @@ Below that, use the `DrawBoundingBox` method to draw the bounding boxes on the i
 Lastly, add some logging logic with the `LogDetectedObjects` method.
 
 [!code-csharp [LogPredictionsOutput](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L54)]
-
 
 After the try-catch statement, add additional logic to indicate the process is done running.
 

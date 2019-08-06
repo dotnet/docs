@@ -20,15 +20,24 @@ ms.author: "davmason"
 ## Syntax  
   
 ```cpp
-TODO: Method Signature
+HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
+                                   [in] ObjectReferenceCallback callback,
+                                   [in] void* clientData);
 ```  
   
 #### Parameters  
- `TODO: param name`  
- TODO: param description  
+
+ `objectId`
+ [in] The object to enumerate references on.
+
+ `callback`
+ [in] The function that will be called with the references for the object.
+
+ `clientData`
+ [in] Profiler provided data to pass to the `callback` function.
   
 ## Remarks  
- TODO: Remarks  
+ The `EnumerateObjectReferences` method is similar to [ObjectReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-objectreferences-method.md), except that it walks the references one by one instead of forcing the profiler to pre-allocate an array to store the references in.  
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

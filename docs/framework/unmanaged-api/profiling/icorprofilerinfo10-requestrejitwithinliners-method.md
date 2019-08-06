@@ -15,20 +15,33 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::RequestReJITWithInliners Method
   
-  This method will ReJIT the methods requested, as well as any inliners of the methods requested.  RequestReJIT does not do any tracking of inlined methods. The profiler was expected to track inlining and call RequestReJIT for all inliners to make sure every instance of an inlined method was ReJITted. This poses a problem with ReJIT on attach, since the profiler was not present to monitor inlining. This method can be called to guarantee that the full set of inliners will be ReJITted as well.    
+  This method will ReJIT the methods requested, as well as any inliners of the methods requested.   
   
 ## Syntax  
   
 ```cpp
-TODO: Method Signature
+HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejitFlags,
+                                  [in]                       ULONG       cFunctions,
+                                  [in, size_is(cFunctions)]  ModuleID    moduleIds[],
+                                  [in, size_is(cFunctions)]  mdMethodDef methodIds[]);
 ```  
   
 #### Parameters  
- `TODO: param name`  
- TODO: param description  
+ 
+ `dwRejitFlags`
+ [in] A bitmask of [COR_PRF_REJIT_FLAGS](../../../../docs/framework/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md).
+ 
+ `cFunctions`  
+ [in] The number of functions to recompile.  
   
+ `moduleIds`  
+ [in] Specifies the `moduleId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.  
+  
+ `methodIds`  
+ [in] Specifies the `methodId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.  
+
 ## Remarks  
- TODO: Remarks  
+  [RequestReJIT](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-requestrejit-method.md) does not do any tracking of inlined methods. The profiler was expected to either block inlining or track inlining and call RequestReJIT for all inliners to make sure every instance of an inlined method was ReJITted. This poses a problem with ReJIT on attach, since the profiler was not present to monitor inlining. This method can be called to guarantee that the full set of inliners will be ReJITted as well.  
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

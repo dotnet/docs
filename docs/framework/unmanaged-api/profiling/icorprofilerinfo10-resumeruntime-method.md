@@ -1,36 +1,27 @@
 ---
-title: "ICorProfilerInfo10::IsFrozenObject"
+title: "ICorProfilerInfo10::ResumeRuntime"
 ms.date: "08/DD/YYYY"
 dev_langs: 
   - "cpp"
 api_name: 
-  - "ICorProfilerInfo10.IsFrozenObject"
+  - "ICorProfilerInfo10.ResumeRuntime"
 api_location: 
   - "mscorwks.dll"
 api_type: 
   - "COM"
-ms.assetid: 46b0d55d-6262-4487-8c3e-09bca27897a1
+ms.assetid: b30bc047-b85d-416a-89b8-e813f0dd3cef
 author: "davmason"
 ms.author: "davmason"
 ---
-# ICorProfilerInfo10::IsFrozenObject Method
+# ICorProfilerInfo10::ResumeRuntime Method
   
- Given an ObjectID, determines whether it is in a read only segment.   
+ Resume the runtime without performing a GC.   
   
 ## Syntax  
   
 ```cpp
-HRESULT IsFrozenObject( [in]  ObjectID objectId,
-                        [out] BOOL *pbFrozen);
+HRESULT ResumeRuntime();
 ```  
-  
-#### Parameters  
- 
- `objectId`
- [in] The object to determine if it is in a read only segment.
-
- `pbFrozen`
- [out] A `BOOL` indicating if the object is in a read only segment.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -20,15 +20,15 @@ ms.author: "davmason"
 ## Syntax  
   
 ```cpp
-TODO: Method Signature
+HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
 ```  
   
 #### Parameters  
- `TODO: param name`  
- TODO: param description  
+ `pThreshold`
+ [out] The large object heap threshold in bytes.
   
 ## Remarks  
- TODO: Remarks  
+ Objects larger than the Large Object Heap threshold will be allocated on the Large object heap.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

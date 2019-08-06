@@ -20,15 +20,27 @@ ms.author: "davmason"
 ## Syntax  
   
 ```cpp
-TODO: Method Signature
+HRESULT GetILToNativeMapping3( [in]  UINT_PTR pNativeCodeStartAddress,
+                               [in]  ULONG32 cMap,
+                               [out] ULONG32 *pcMap,
+                               [out] COR_DEBUG_IL_TO_NATIVE_MAP map[]);
 ```  
   
 #### Parameters  
- `TODO: param name`  
- TODO: param description  
-  
+ `pNativeCodeStartAddress`
+ [in] A pointer to the start of a native function.
+
+ `cMap`
+ [in] The maximum size of the `map` array. 
+
+ `pcMap`
+ [out] The total number of available COR_DEBUG_IL_TO_NATIVE_MAP structures.
+
+ `map`
+ [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` structures, each of which specifies the offsets. After the `GetILToNativeMapping2` method returns, `map` will contain some or all of the `COR_DEBUG_IL_TO_NATIVE_MAP` structures.
+
 ## Remarks  
- TODO: Remarks  
+ When tiered compilation is enabled a method may have more than one native code body. [ICorProfilerInfo9::GetNativeCodeStartAddresses](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-getnativecodestartaddresses-method.md) will return the start addresses for all of the native code bodies.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

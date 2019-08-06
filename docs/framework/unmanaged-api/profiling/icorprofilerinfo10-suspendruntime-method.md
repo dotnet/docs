@@ -20,15 +20,8 @@ ms.author: "davmason"
 ## Syntax  
   
 ```cpp
-TODO: Method Signature
+HRESULT SuspendRuntime();
 ```  
-  
-#### Parameters  
- `TODO: param name`  
- TODO: param description  
-  
-## Remarks  
- TODO: Remarks  
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -20,15 +20,31 @@ ms.author: "davmason"
 ## Syntax  
   
 ```cpp
-TODO: Method Signature
+HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
+                                     [in]  ReJITID reJitId,
+                                     [in]  ULONG32 cCodeStartAddresses,
+                                     [out] ULONG32 *pcCodeStartAddresses,
+                                     [out] UINT_PTR codeStartAddresses[]);
 ```  
   
 #### Parameters  
- `TODO: param name`  
- TODO: param description  
+ `functionId`  
+ [in] The ID of the function that native code start addresses should be returned for.  
   
+ `reJitId`  
+ [in] The identity of the JIT-recompiled function. 
+  
+ `cCodeStartAddresses`
+ [in] The maximum size of the `codeStartAddresses` array.
+
+ `pcCodeStartAddresses`
+ [out] The number of available addresses.
+
+ `codeStartAddresses`
+ [out] An array of `UINT_PTR`, each one is the start address for a native body for the specified function. 
+
 ## Remarks  
- TODO: Remarks  
+ When tiered compilation is enabled a function may have more than one native code body. 
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

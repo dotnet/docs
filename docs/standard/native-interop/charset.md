@@ -14,7 +14,7 @@ The following table shows a mapping between each charset and how a character or 
 
 | `CharSet` value | Windows            | .NET Core 2.2 and earlier on Unix | .NET Core 3.0 and later and Mono on Unix |
 |-----------------|--------------------|-----------------------------------|------------------------------------------|
-| Ansi            | `char` (ANSI)      | `char` (UTF-8)                    | `char` (UTF-8)                           |
+| Ansi            | `char` (the system default [Windows (ANSI) code page](/windows/win32/intl/code-pages))      | `char` (UTF-8)                    | `char` (UTF-8)                           |
 | Unicode         | `wchar_t` (UTF-16) | `char16_t` (UTF-16)               | `char16_t` (UTF-16)                      |
 | Auto            | `wchar_t` (UTF-16) | `char16_t` (UTF-16)               | `char` (UTF-8)                           |
 

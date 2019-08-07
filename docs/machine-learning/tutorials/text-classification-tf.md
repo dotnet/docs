@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze website comments - text classification with TensorFlow'
 description: This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments using a pre-trained TensorFlow model and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio.
-ms.date: 07/31/2019
+ms.date: 08/31/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task using a pre-trained TensorFlow model so that I can understand how to use sentiment prediction to take appropriate action.
@@ -41,7 +41,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### Prepare your data
 
-1. Download the [sentiment_model zip file](), and unzip.
+1. Download the [sentiment_model zip file](https://github.com/dotnet/samples/blob/master/machine-learning/models/textclassificationtf/sentiment_model.zip?raw=true), and unzip.
 
 2. Copy the contents of the innermost `sentiment_model` directory just unzipped into your *TextClassificationTF* project `sentiment_model` directory. This directory contains the model and additional support files needed for this tutorial, as shown in the following image:
 
@@ -125,7 +125,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 1. Create an instance of `IMDBSentiment` called `trainData` and pass it to the `Prediction Engine` by adding the following as the next lines of code in the `ReuseAndTuneSentimentModel()` method:
 
-[!code-csharp[CreateTrainData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateTrainData)]
+   [!code-csharp[CreateTrainData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateTrainData)]
 
 ### Load the data
 
@@ -133,7 +133,7 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 
 1. Load the in-memory collection into an [`IDataView`](xref:Microsoft.ML.IDataView) with the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable%2A) method:
 
-[!code-csharp[LoadTrainData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#LoadTrainData)]
+   [!code-csharp[LoadTrainData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#LoadTrainData)]
 
 ### Extract and transform the data
 
@@ -147,41 +147,43 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 |effects  |  302    |
 |feeling  |  547    |
 
-This code will function as a lookup map to assist with mapping text to integer vectors in later steps so add it next to the `ReuseAndTuneSentimentModel` method:
+1. This code will function as a lookup map to assist with mapping text to integer vectors in later steps, so add it next to the `ReuseAndTuneSentimentModel` method:
 
-[!code-csharp[CreateLookupMap](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateLookupMap)]
+   [!code-csharp[CreateLookupMap](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateLookupMap)]
 
 1. Append the `TensorFlowTransform` to the `pipeline` with the following line of code:
 
-[!code-csharp[LoadTensorFlowModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#LoadTensorFlowModel)]
+   [!code-csharp[LoadTensorFlowModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#LoadTensorFlowModel)]
 
    The `LoadTensorFlowModel` is a convenience method that allows the `TensorFlow` model to be loaded once and then creates the `TensorFlowEstimator` using `ScoreTensorFlowModel`. `Prediction` returns a probability for sentiment of a given text, and all of those probabilities must add up to 1.
 
-GetModelSchema gets the DataViewSchema for the complete model. the DataViewSchema object includes every node in the TensorFlow model . In this tutorial, you use it to explore the TensorFlow model schema with the following lines:
+1. The [GetModelSchema](Microsoft.ML.Transforms.TensorFlowModel.GetModelSchema*%2A) method returns the [DataViewSchema](Microsoft.ML.DataViewSchema) for the complete TensorFlow model. The `DataViewSchema` object includes every node in the TensorFlow model . In this tutorial, you use it to explore the TensorFlow model schema with the following lines:
 
-[!code-csharp[GetModelSchema](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#GetModelSchema)]
+   [!code-csharp[GetModelSchema](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#GetModelSchema)]
 
-The schema is output to the console:
+    The schema is output to the console:
 
-```console
-=============== TensorFlow Model Schema ===============
-Name: Features, Type: System.Int32, Shape: (-1, 600)
-Name: Prediction/Softmax, Type: System.Int32, Shape: (-1, 600)
-```
+    ```console
+    =============== TensorFlow Model Schema ===============
+    Name: Features, Type: System.Int32, Shape: (-1, 600)
+    Name: Prediction/Softmax, Type: System.Int32, Shape: (-1, 600)
+    ```
 
-Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, and when dealing with deep neural networks you must adapt the images to the format expected by the network. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
+1. Add an `Action` to resize the features as input to a `CustomMapping` transform with the next lines of code:
 
-Add an `Action` to resize the features as input to a `CustomMapping` transform with the next lines of code:
-
-[!code-csharp[ResizeFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ResizeFeatures)]
+   [!code-csharp[ResizeFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ResizeFeatures)]
+  
+   Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, and when dealing with deep neural networks you must adapt the images to the format expected by the network. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
 
    The [ResizeFeaturesAction](xref:System.Action%602) delegate resizes the integer vector to a fixed length vector for required model inputs. This will be used later by the CustomMapping transform.
 
-[!code-csharp[TokenizeIntoWords](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#TokenizeIntoWords)]
+1. Use the [TokenizeIntoWords](xref:Microsoft.ML.TextCatalog.TokenizeIntoWords%2A) transform to break the text into words as the next line of code:
+
+   [!code-csharp[TokenizeIntoWords](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#TokenizeIntoWords)]
 
    The [TokenizeIntoWords](xref:Microsoft.ML.TextCatalog.TokenizeIntoWords%2A) transform uses spaces to parse the text/string into words. It creates a new column and splits each input string to a vector of substrings based on the user defined separator. Space is also a default value for the 'separators' argument if it is not specified.
 
-[!code-csharp[MapValue](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#MapValue)]
+   [!code-csharp[MapValue](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#MapValue)]
 
    The [MapValue](Microsoft.ML.ConversionsExtensionsCatalog.MapValue%2A) transform maps each word to an integer which is an index in the dictionary `lookupMap` that you previously created.
 

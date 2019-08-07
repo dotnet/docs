@@ -122,7 +122,7 @@ dotnet-core-uninstall list [options]
 
 
 
-Since this is a destructive tool, it is **highly** recommended that you run with the `--dry-run` option first to determine the .NET Core SDKs and Runtimes that will be removed. [This article explains which SDKs and Runtimes are safe to remove.](https://docs.microsoft.com/en-us/dotnet/core/versions/remove-runtime-sdk-versions?tabs=macos#should-i-remove-a-version)
+Since this is a destructive tool, it is **highly** recommended that you run with the `--dry-run` option first to determine the .NET Core SDKs and Runtimes that will be removed. [This article explains which SDKs and Runtimes are safe to remove.](https://docs.microsoft.com/dotnet/core/versions/remove-runtime-sdk-versions#should-i-remove-a-version)
 
 ***Warning:*** This tool can uninstall versions of the .NET Core SDK that are required by `global.json` files on your machine. You can reinstall .NET Core SDKs from https://dotnet.microsoft.com/download.
 

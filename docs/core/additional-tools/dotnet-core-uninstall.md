@@ -17,7 +17,7 @@ Note that the Windows version of this tool can only uninstall .NET Core SDKs and
 1. Download and install the tool.
 2. Display installed .NET Core SDKs and Runtimes that can be removed by this tool.
 3. Do a dry run to ensure the right things will be installed, then run the tool with Admin privileges to uninstall .NET Core SDKs and Runtimes.
-4. Optional: delete the NuGetFallback folder if you no longer need it.
+4. Optional: delete the `NuGetFallbackFolder` folder if you no longer need it.
 5. Uninstall the tool.
 
 Read the following sections for details.
@@ -119,8 +119,6 @@ dotnet-core-uninstall list [options]
 ### Uninstalling .NET Core SDKs and Runtimes
 
 `dotnet-core-uninstall` uses a collection of options to specify what will be uninstalled.
-
-
 
 Since this is a destructive tool, it is **highly** recommended that you run with the `--dry-run` option first to determine the .NET Core SDKs and Runtimes that will be removed. [This article explains which SDKs and Runtimes are safe to remove.](https://docs.microsoft.com/dotnet/core/versions/remove-runtime-sdk-versions#should-i-remove-a-version)
 
@@ -327,6 +325,10 @@ Note:
   ```
   dotnet-core-uninstall --all --sdk
   ```
+
+### Optional: deleting the `NuGetFallbackFolder` folder
+
+The `NuGetFallbackFolder` folder contains a cache of NuGet packages used by a .NET Core SDK during the restore operation, such as running `dotnet restore` or `dotnet build /t:Restore`. It is located at `C:\Program Files\dotnet\sdk` on Windows and at `/usr/local/share/dotnet/sdk` on macOS. Delete this folder from your machine if you no longer need it after uninstalling .NET Core SDKs.
 
 ### Uninstalling the tool
 

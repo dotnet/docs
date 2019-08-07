@@ -152,7 +152,7 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
 
 Once you're ready to distribute your app, use the [`dotnet publish`](../tools/dotnet-publish.md) command to generate the _publish_ folder at _bin\\debug\\netcoreapp2.1\\publish\\_ (use `/` for non-Windows systems). You can distribute the contents of the _publish_ folder to other platforms as long as they've already installed the dotnet runtime.
 
-You can run your published app with the `dotnet` command:
+You can run your published app with the [dotnet](../tools/dotnet.md) command:
 
 ```console
 $ dotnet bin\Debug\netcoreapp2.1\publish\Hello.dll

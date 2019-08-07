@@ -16,7 +16,8 @@ Note that the Windows version of this tool can only uninstall .NET Core SDKs and
 
 1. Download and install the tool.
 2. Display installed .NET Core SDKs and Runtimes that can be removed by this tool.
-3. Make sure that the tool gets elevated and uninstall .NET Core SDKs and Runtimes.
+1. Do a dry run to ensure the right things will be installed, then run the tool with Admin privileges to uninstall .NET Core SDKs and Runtimes. 
+1. Optional: delete the NuGetFallback folder if you no longer need it.
 4. Uninstall the tool.
 
 Read the following sections for details.

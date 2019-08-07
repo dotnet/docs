@@ -202,3 +202,15 @@ The parent directories for the SDK and runtime are listed in the output from the
 The [.NET Core Uninstall Tool (`dotnet-core-uninstall`)](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) is a guided tool provided to enable the controlled clean-up of a system such that only the desired versions of .NET Core SDKs and Runtimes remain. A collection of options is available to facilitate the aggregation of uninstallations.
 
 The documentation of the tool is available [here](../additional-tools/dotnet-core-uninstall.md).
+
+## Visual Studio dependencies on .NET Core SDK versions
+
+Visual Studio installers prior to Visual Studio 2019 16.3 install a standalone .NET Core SDK, which is listed in the Windows **Add/Remove Programs** dialog. Hence, be aware that removing .NET Core SDKs installed via the Visual Studio installer prior to Visual Studio 2019 16.3 may break the Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions.
+
+| Visual Studio version | .NET Core SDK version |
+| -- | -- |
+| Visual Studio 2019 16.2 (Update 2) | .NET Core SDK 2.2.4xx, 2.1.8xx |
+| Visual Studio 2019 16.1 (Update 1) | .NET Core SDK 2.2.3xx, 2.1.7xx |
+| Visual Studio 2019 16.0 | .NET Core SDK 2.2.2xx, 2.1.6xx |
+| Visual Studio 2017 15.9 (Update 9) | .NET Core SDK 2.2.1xx, 2.1.5xx |
+| Visual Studio 2017 15.8 (Update 8) | .NET Core SDK 2.1.4xx |

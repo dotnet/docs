@@ -1,7 +1,7 @@
 ---
 title: .NET Core Logging and Tracing
 description: An introduction to .NET Core Logging and Tracing.
-author: stmaclea
+author: sdmaclea
 ms.author: stmaclea
 ms.date: 08/05/2019
 ---

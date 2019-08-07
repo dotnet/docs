@@ -1,7 +1,7 @@
 ---
 title: .NET Core Managed Debuggers
 description: An overview of the Visual Studio and VS Code managed debuggers.
-author: stmaclea
+author: sdmaclea
 ms.author: stmaclea
 ms.date: 08/05/2019
 ---

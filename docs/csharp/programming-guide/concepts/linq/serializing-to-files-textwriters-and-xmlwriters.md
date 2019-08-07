@@ -1,5 +1,5 @@
 ---
-title: "Serializing to Files, TextWriters, and XmlWriters1"
+title: "Serializing to Files, TextWriters, and XmlWriters"
 ms.date: 07/20/2015
 ms.assetid: bd3ea6f7-895b-4ff4-a625-fe2bb55b1886
 ---

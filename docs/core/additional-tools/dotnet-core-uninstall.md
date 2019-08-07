@@ -122,7 +122,13 @@ dotnet-core-uninstall list [options]
 
 
 
-Since this is a destructive tool, the default behavior of a command execution is a dry run; the tool displays the .NET Core SDKs and Runtimes to be uninstalled. To actually uninstall the items, re-run the command with the `--do-it` option.
+Since this is a destructive tool, it is **highly** recommended that you run with the `--dry-run` option first to determine the .NET Core SDKs and Runtimes that will be remove. [This article explains which SDKs and Runtimes are safe to remove.](https://docs.microsoft.com/en-us/dotnet/core/versions/remove-runtime-sdk-versions?tabs=macos#should-i-remove-a-version)
+
+***Warning*** This tool can uninstall versions of the .NET Core SDK that are required by `global.json` files on your machine. You can reinstall .NET Core SDKs from https://dotnet.microsoft.com/download.
+
+***Warning*** This tool can uninstall versions of the .NET Core Runtime that are required by framework dependent applications on your machine. You can reinstall .NET Core Runtimes from https://dotnet.microsoft.com/download.
+
+***Warning*** This tool can uninstall versions of the .NET Core SDK and Runtime that Visual Studio relies on. If you break your Visual Studio installation , run "Repair" in the Visual Studio installer to get back to a working state. 
 
 The tool requires elevation to uninstall .NET Core SDKs and Runtimes. Run the tool in an Administrator command prompt on Windows and with `sudo` on macOS. Elevation is not required when the `--dry-run` switch is used.
 

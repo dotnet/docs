@@ -10,74 +10,18 @@ The following decision table summarizes whether to use .NET Framework or .NET Co
 > [!IMPORTANT]
 > Your development machines will run one Docker host, either Linux or Windows. Related microservices that you want to run and test together in one solution will all need to run on the same container platform.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Architecture / App Type</strong></th>
-<th><strong>Linux containers</strong></th>
-<th><strong>Windows Containers</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microservices on containers</td>
-<td>.NET Core</td>
-<td>.NET Core</td>
-</tr>
-<tr class="even">
-<td>Monolithic app</td>
-<td>.NET Core</td>
-<td><p>.NET Framework</p>
-<p>.NET Core</p></td>
-</tr>
-<tr class="odd">
-<td>Best-in-class performance and scalability</td>
-<td>.NET Core</td>
-<td>.NET Core</td>
-</tr>
-<tr class="even">
-<td>Windows Server legacy app ("brown-field") migration to containers</td>
-<td>--</td>
-<td>.NET Framework</td>
-</tr>
-<tr class="odd">
-<td>New container-based development ("green-field")</td>
-<td>.NET Core</td>
-<td>.NET Core</td>
-</tr>
-<tr class="even">
-<td>ASP.NET Core</td>
-<td>.NET Core</td>
-<td><p>.NET Core (recommended)</p>
-<p>.NET Framework</p></td>
-</tr>
-<tr class="odd">
-<td>ASP.NET 4 (MVC 5, Web API 2, and Web Forms)</td>
-<td>--</td>
-<td>.NET Framework</td>
-</tr>
-<tr class="even">
-<td>SignalR services</td>
-<td>.NET Core 2.1 or higher version</td>
-<td><p>.NET Framework</p>
-<p>.NET Core 2.1 or higher version</p></td>
-</tr>
-<tr class="odd">
-<td>WCF, WF, and other legacy frameworks</td>
-<td>WCF in .NET Core (only the WCF client library)</td>
-<td><p>.NET Framework</p>
-<p>WCF in .NET Core (only the WCF client library)</p></td>
-</tr>
-<tr class="even">
-<td>Consumption of Azure services</td>
-<td><p>.NET Core</p>
-<p>(eventually all Azure services will provide client SDKs for .NET Core)</p></td>
-<td><p>.NET Framework</p>
-<p>.NET Core</p>
-<p>(eventually all Azure services will provide client SDKs for .NET Core)</p></td>
-</tr>
-</tbody>
-</table>
+| Architecture / App Type | Linux containers | Windows Containers |
+|-------------------------|------------------|--------------------|
+| Microservices on containers | .NET Core | .NET Core |
+| Monolithic app | .NET Core | .NET Framework <br/> .NET Core |
+| Best-in-class performance and scalability | .NET Core | .NET Core |
+| Windows Server legacy app ("brown-field") migration to containers | -- | .NET Framework |
+| New container-based development ("green-field") | .NET Core | .NET Core |
+| ASP.NET Core | .NET Core | .NET Core (recommended) <br/> .NET Framework |
+| ASP.NET 4 (MVC 5, Web API 2, and Web Forms) | -- | .NET Framework |
+| SignalR services | .NET Core 2.1 or higher version | .NET Framework <br/> .NET Core 2.1 or higher version |
+| WCF, WF, and other legacy frameworks | WCF in .NET Core (client library only) | .NET Framework <br/> WCF in .NET Core (client library only) |
+| Consumption of Azure services | .NET Core <br/> (eventually all Azure services will provide client SDKs for .NET Core) | .NET Framework <br/> .NET Core <br/> (eventually all Azure services will provide client SDKs for .NET Core) |
 
 >[!div class="step-by-step"]
 >[Previous](net-framework-container-scenarios.md)

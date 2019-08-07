@@ -122,7 +122,7 @@ dotnet-core-uninstall list [options]
 
 Since this is a destructive tool, the default behavior of a command execution is a dry run; the tool displays the .NET Core SDKs and Runtimes to be uninstalled. To actually uninstall the items, re-run the command with the `--do-it` option.
 
-The tool requires elevation to uninstall .NET Core SDKs and Runtimes. Run the tool in an Administrator command prompt on Windows and with `sudo` on macOS.
+The tool requires elevation to uninstall .NET Core SDKs and Runtimes. Run the tool in an Administrator command prompt on Windows and with `sudo` on macOS. Elevation is not required when the `--dry-run` switch is used.
 
 #### Synopsis
 

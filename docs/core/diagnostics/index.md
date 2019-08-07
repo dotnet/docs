@@ -13,10 +13,10 @@ Software doesn't always behave as you would expect, but .NET Core has tools and 
 This article helps you find the various tools you need.
 
 ## [Managed Debuggers](managed-debuggers.md)
-Managed debuggers allow you to interact with your program. Debuggers give you insight into the behavior of your code.
+Managed debuggers allow you to interact with your program. Pausing, incrementally executing, examining,  and resuming gives you insight into the behavior of your code. A debugger is the first choice for diagnosing functional problems that can be easily reproduced.
 
 ## [Logging and Tracing](logging-tracing.md)
-Logging and tracing are related techniques. They allow instrumenting code to create log files that can be used to diagnose the most complex problems.
+Logging and tracing are related techniques. They allow instrumenting code to create log files recording what the program does. The log files that can be used to diagnose the most complex problems. When combined with time stamps, these techniques are also valuable in performance investigations.
 
 ## [Unit Testing](../testing/index.md)
-Unit testing is a key component of continuous integration and deployment of high-quality software.
+Unit testing is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.

@@ -172,9 +172,9 @@ The specified version to uninstall.
 
   Remove ASP.NET Core Runtimes only.
 
-* **`--do-it`**
+* **`--dry-run`**
 
-  Actually uninstall specified .NET Core SDKs or Runtimes.
+  Display .NET Core SDKs and Runtimes that will be removed.
 
 * **`--hosting-bundle`**
 
@@ -203,6 +203,9 @@ The specified version to uninstall.
 * **`--x86`**
 
   Can be used with `--sdk`, `--runtime` and `--aspnet-runtime` to remove x86.
+
+* **`-y, --yes`**
+  Execute the command without requiring Y/n confirmation.
 
 Note:
 1. Exactly one of `--sdk` and `--runtime` is required.
@@ -243,9 +246,9 @@ Note:
 
   Remove ASP.NET Core Runtimes only.
 
-* **`--do-it`**
+* **`--dry-run`**
 
-  Actually uninstall specified .NET Core SDKs or Runtimes.
+  Display .NET Core SDKs and Runtimes that will be removed.
 
 * **`--hosting-bundle`**
 
@@ -274,6 +277,9 @@ Note:
 * **`--x86`**
 
   Can be used with `--sdk`, `--runtime` and `--aspnet-runtime` to remove x86.
+
+* **`-y, --yes`**
+  Execute the command without requiring Y/n confirmation.
 
 Note:
 1. Exactly one of `--sdk` and `--runtime` is required.

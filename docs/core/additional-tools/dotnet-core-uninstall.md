@@ -116,7 +116,9 @@ dotnet-core-uninstall list [options]
 
 ### Uninstalling .NET Core SDKs and Runtimes
 
-`dotnet-core-uninstall` uses a collection of options to aggregate uninstallations, as shown below.
+`dotnet-core-uninstall` uses a collection of options to specify what will be uninstalled.
+
+
 
 Since this is a destructive tool, the default behavior of a command execution is a dry run; the tool displays the .NET Core SDKs and Runtimes to be uninstalled. To actually uninstall the items, re-run the command with the `--do-it` option.
 

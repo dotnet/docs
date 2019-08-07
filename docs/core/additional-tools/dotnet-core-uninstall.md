@@ -2,7 +2,7 @@
 title: .NET Core Uninstall Tool
 description: An overview of the .NET Core Uninstall Tool, a guided tool that enables the controlled clean-up of .NET Core SDKs and Runtimes.
 author: yuchong-pan
-ms.date: 07/25/2019
+ms.date: 08/06/2019
 ---
 # .NET Core Uninstall Tool
 
@@ -15,10 +15,10 @@ Note that the Windows version of this tool can only uninstall .NET Core SDKs and
 ## How to use the tool
 
 1. Download and install the tool.
-1. Display installed .NET Core SDKs and Runtimes that can be removed by this tool.
-1. Do a dry run to ensure the right things will be installed, then run the tool with Admin privileges to uninstall .NET Core SDKs and Runtimes. 
-1. Optional: delete the NuGetFallback folder if you no longer need it.
-4. Uninstall the tool.
+2. Display installed .NET Core SDKs and Runtimes that can be removed by this tool.
+3. Do a dry run to ensure the right things will be installed, then run the tool with Admin privileges to uninstall .NET Core SDKs and Runtimes.
+4. Optional: delete the NuGetFallback folder if you no longer need it.
+5. Uninstall the tool.
 
 Read the following sections for details.
 

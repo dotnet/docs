@@ -21,9 +21,9 @@ This simple technique is surprisingly powerful. It can be used in situations whe
 
 ## .NET Core APIs
 
-<xref:System.Console?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> each provide similar print style APIs convenient for logging.
+The <xref:System.Console?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> classes each provide similar print style APIs convenient for logging.
 
-The choice of which print style API to use is up to you. The key differences:
+The choice of which print style API to use is up to you. The key differences are:
 - <xref:System.Console?displayProperty=nameWithType>
   - Always enabled and always writes to the console.
   - Useful for information that your customer may need to see in the release.
@@ -31,18 +31,18 @@ The choice of which print style API to use is up to you. The key differences:
 - <xref:System.Diagnostics.Trace?displayProperty=nameWithType>
   - Only enabled when `TRACE` is defined.
   - Writes to attached <xref:System.Diagnostics.Trace.Listeners>, by default the <xref:System.Diagnostics.DefaultTraceListener>.
-  - It seems best to use this API when creating logs that will be enabled in most builds.
+  - Use this API when creating logs that will be enabled in most builds.
 - <xref:System.Diagnostics.Debug?displayProperty=nameWithType>
   - Only enabled when `DEBUG` is defined.
   - Writes to an attached debugger.
   - On `*nix` writes to stderr if `COMPlus_DebugWriteToStdErr` is set.
-  - It seems best to use this API when creating logs that will only be useful in a debguenabled in debug builds.
+  - Use this API when creating logs that will be enabled only in debug builds.
 
 - <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>
-  - EventSource is the primary root .NET Core tracing API
-  - Available in all .NET Standard versions
-  - Only allows tracing serializable objects
-  - Writes to attached <xref:System.Diagnostics.EventListener>s.
+  - EventSource is the primary root .NET Core tracing API.
+  - Available in all .NET Standard versions.
+  - Only allows tracing serializable objects.
+  - Writes to attached <xref:System.Diagnostics.Tracing.EventListener>s.
   - .NET Core provides listeners for:
     - .NET Core's event pipe on all platforms
     - [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal)
@@ -50,15 +50,15 @@ The choice of which print style API to use is up to you. The key differences:
 
 - <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType>
   - Included in .NET Core and as a [Nuget package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) for .NET Framework
-  - Allows in process tracing non-serializable objects
+  - Allows in process tracing non-serializable objects.
   - Includes a bridge to allow select fields of logged objects to be written to an <xref:System.Diagnostics.Tracing.EventSource>.
 
 - <xref:System.Diagnostics.Activity?displayProperty=nameWithType>
   - Provides a definitive way to identify log messages resulting from a specific activity or transaction. This object can be used to correlate logs across different services.
 
 - <xref:System.Diagnostics.EventLog?displayProperty=nameWithType>
-  - Windows only
-  - Writes messages to Windows event log
+  - Windows only.
+  - Writes messages to Windows event log.
   - System administrators expect fatal application error messages to appear in the Windows event log.
 
 ## ILogger and logging frameworks

@@ -30,7 +30,7 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
  Objects larger than the large object heap threshold will be allocated on the large object heap.
 
 ## Requirements  
- **Platforms:** See [.NET Core supported operating systems](../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
   
  **Header:** CorProf.idl, CorProf.h  
   

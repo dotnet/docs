@@ -39,7 +39,7 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
  The `EnumerateObjectReferences` method is similar to [ObjectReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-objectreferences-method.md), except that it walks the references on demand for the profiler instead of pre-allocating an array to store the references.  
 
 ## Requirements  
- **Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).  
   
  **Header:** CorProf.idl, CorProf.h  
   

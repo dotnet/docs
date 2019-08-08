@@ -27,7 +27,7 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
  [out] The large object heap threshold in bytes.
   
 ## Remarks  
- Objects larger than the large object heap threshold will be allocated on the large object heap.
+ Objects larger than the large object heap threshold will be allocated on the large object heap. Starting with .NET Core 3.0 the large object heap threshold is configurable, `pThreshold` will contain the active large object heap threshold size in bytes.
 
 ## Requirements  
  **Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).  

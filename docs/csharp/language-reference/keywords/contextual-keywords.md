@@ -1,13 +1,13 @@
 ---
 title: "Contextual Keywords - C# Reference"
 ms.custom: seodec18
-
 ms.date: 03/07/2017
 helpviewer_keywords: 
   - "contextual keywords [C#]"
 ms.assetid: 7c76bc29-a754-4389-b0ab-f6b441018298
 ---
 # Contextual Keywords (C# Reference)
+
 A contextual keyword is used to provide a specific meaning in the code, but it is not a reserved word in C#. The following contextual keywords are introduced in this section:  
   
 |Keyword|Description|  
@@ -17,7 +17,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
 |[await](../../../csharp/language-reference/keywords/await.md)|Suspends an async method until an awaited task is completed.|  
 |[dynamic](../../../csharp/language-reference/keywords/dynamic.md)|Defines a reference type that enables operations in which it occurs to bypass compile-time type checking.|  
 |[get](../../../csharp/language-reference/keywords/get.md)|Defines an accessor method for a property or an indexer.|  
-|[global](../../../csharp/language-reference/keywords/global.md)|Specifies the default global namespace, which is otherwise unnamed.|  
+|[global](../../../csharp/language-reference/operators/namespace-alias-qualifier.md)|Alias of the global namespace, which is otherwise unnamed.|  
 |[partial](../../../csharp/language-reference/keywords/partial-type.md)|Defines partial classes, structs, and interfaces throughout the same compilation unit.|  
 |[remove](../../../csharp/language-reference/keywords/remove.md)|Defines a custom event accessor that is invoked when client code unsubscribes from the event.|  
 |[set](../../../csharp/language-reference/keywords/set.md)|Defines an accessor method for a property or an indexer.|  

@@ -161,3 +161,4 @@ For more information, see the following sections of the [C# language specificati
 - [C# reference](../index.md)
 - [C# operators](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)
+- [:: operator](namespace-alias-qualifier.md)

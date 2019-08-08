@@ -20,7 +20,7 @@ A subclass of [ICorProfilerInfo9](../../../../docs/framework/unmanaged-api/profi
 |[ResumeRuntime Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-resumeruntime-method.md)| Resumes the runtime without performing a GC. |
 
 ## Requirements  
-**Platforms:** See [.NET Core supported operating systems](../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
+**Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
 **Header:** CorProf.idl, CorProf.h  
 **.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)] 
 ## See also

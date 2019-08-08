@@ -15,7 +15,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::IsFrozenObject Method
   
- Given an ObjectID, determines whether it is in a read only segment.   
+ Given an ObjectID, determines whether the object is in a read-only segment.   
   
 ## Syntax  
   

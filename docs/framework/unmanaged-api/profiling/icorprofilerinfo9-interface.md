@@ -17,7 +17,7 @@ A subclass of [ICorProfilerInfo8](../../../../docs/framework/unmanaged-api/profi
 |[GetCodeInfo4 Method](icorprofilerinfo9-getcodeinfo4-method.md)| Given the native code start address, returns the blocks of virtual memory that store this code. |
 
 ## Requirements  
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [.NET Core supported operating systems](../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
 **Header:** CorProf.idl, CorProf.h  
 **.NET Versions:** [!INCLUDE[net_core](../../../../includes/net-core-22-md.md)]  
 ## See also

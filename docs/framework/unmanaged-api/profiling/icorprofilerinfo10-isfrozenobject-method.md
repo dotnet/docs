@@ -32,7 +32,7 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
  [out] A `BOOL` indicating if the object is in a read-only segment.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [.NET Core supported operating systems](../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
   
  **Header:** CorProf.idl, CorProf.h  
   

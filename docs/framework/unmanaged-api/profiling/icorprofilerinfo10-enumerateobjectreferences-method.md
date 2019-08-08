@@ -34,7 +34,7 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
  [in] The function that will be called with the references for the object.
 
  `clientData`
- [in] Profiler provided data to pass to the `callback` function.
+ [in] Profiler-provided data to pass to the `callback` function.
   
 ## Remarks  
  The `EnumerateObjectReferences` method is similar to [ObjectReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-objectreferences-method.md), except that it walks the references on demand for the profiler instead of pre-allocating an array to store the references in.  

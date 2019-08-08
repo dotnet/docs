@@ -46,7 +46,7 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
  When tiered compilation is enabled, a function may have more than one native code body. 
 
 ## Requirements  
- **Platforms:** See [.NET Core supported operating systems](../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
   
  **Header:** CorProf.idl, CorProf.h  
   

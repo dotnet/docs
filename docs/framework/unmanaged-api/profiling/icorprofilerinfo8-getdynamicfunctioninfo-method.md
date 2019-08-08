@@ -9,7 +9,6 @@ api_location:
   - "mscorwks.dll"
 api_type: 
   - "COM"
-ms.assetid: dbdab3da-6177-4e15-b29b-33383e5e5544
 author: "davmason"
 ms.author: "davmason"
 ---

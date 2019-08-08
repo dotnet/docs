@@ -15,7 +15,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::GetLOHObjectSizeThreshold Method
   
- Gets the value of the configured LOH Threshold.   
+ Gets the value of the configured large object heap (LOH) threshold.   
   
 ## Syntax  
   

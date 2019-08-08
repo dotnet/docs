@@ -27,7 +27,7 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
   
 #### Parameters  
  
- `dwRejitFlags`
+ `dwRejitFlags` \
  [in] A bitmask of [COR_PRF_REJIT_FLAGS](../../../../docs/framework/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md).
  
  `cFunctions`  

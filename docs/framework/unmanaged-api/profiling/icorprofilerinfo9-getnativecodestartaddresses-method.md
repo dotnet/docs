@@ -33,13 +33,13 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
  `reJitId`  
  [in] The identity of the JIT-recompiled function. 
   
- `cCodeStartAddresses`
+ `cCodeStartAddresses` \
  [in] The maximum size of the `codeStartAddresses` array.
 
- `pcCodeStartAddresses`
+ `pcCodeStartAddresses` \
  [out] The number of available addresses.
 
- `codeStartAddresses`
+ `codeStartAddresses` \
  [out] An array of `UINT_PTR`, each one of which is the start address for a native body for the specified function. 
 
 ## Remarks  

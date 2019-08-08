@@ -47,11 +47,11 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
  `pcchName`  
  [out] The number of characters in the `wszName` array.
 
- `wszName`
+ `wszName` \
  [out] An array of `WCHAR` which is the name of the function, if one exists.
   
 ## Remarks  
- Certain methods like IL Stubs or LCG do not have associated metadata that can be retrieved using the [IMetaDataImport](../metadata/imetadataimport-interface.md) and [IMetaDataImport2](../metadata/imetadataimport2-interface.md) APIs. Such methods can be encountered by profilers through instruction pointers or by listening to ICorProfilerCallback::DynamicMethodJITCompilationStarted.
+ Certain methods like IL Stubs or LCG do not have associated metadata that can be retrieved using the [IMetaDataImport](../metadata/imetadataimport-interface.md) and [IMetaDataImport2](../metadata/imetadataimport2-interface.md) APIs. Such methods can be encountered by profilers through instruction pointers or by listening to [ICorProfilerCallback8::DynamicMethodJITCompilationStarted](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md).
 
  This API can be used to retrieve information about dynamic methods, including a friendly name, if available.  
   

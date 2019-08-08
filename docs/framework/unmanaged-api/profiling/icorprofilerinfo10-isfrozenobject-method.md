@@ -30,7 +30,7 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
  [in] The object to examine.
 
  `pbFrozen`
- [out] A `BOOL` indicating if the object is in a read only segment.
+ [out] A `BOOL` indicating if the object is in a read-only segment.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

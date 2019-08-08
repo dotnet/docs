@@ -36,7 +36,7 @@ HRESULT GetFunctionFromIP3([in] LPCBYTE ip,
  [out] The identity of the JIT-recompiled version of the function.  
   
 ## Remarks  
- This method works for both dynamic and non-dynamic methods. It is a superset of `GetFunctionFromIP2`, which only works for functions with metadata.
+ This method works for both dynamic and non-dynamic methods. It is a superset of [GetFunctionFromIP2](icorprofilerinfo4-getfunctionfromip2-method.md), which only works for functions with metadata.
   
 
 ## Requirements  

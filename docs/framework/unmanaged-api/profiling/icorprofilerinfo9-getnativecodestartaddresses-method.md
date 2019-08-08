@@ -15,7 +15,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo9::GetNativeCodeStartAddresses Method
   
- Given a functionId and rejitId, enumerate the native code start address of all jitted versions of this code that currently exist.   
+ Given a functionId and rejitId, enumerates the native code start address of all jitted versions of this code that currently exist.   
   
 ## Syntax  
   
@@ -29,7 +29,7 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
   
 #### Parameters  
  `functionId`  
- [in] The ID of the function that native code start addresses should be returned for.  
+ [in] The ID of the function whose native code start addresses should be returned.  
   
  `reJitId`  
  [in] The identity of the JIT-recompiled function. 
@@ -41,10 +41,10 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
  [out] The number of available addresses.
 
  `codeStartAddresses`
- [out] An array of `UINT_PTR`, each one is the start address for a native body for the specified function. 
+ [out] An array of `UINT_PTR`, each one of which is the start address for a native body for the specified function. 
 
 ## Remarks  
- When tiered compilation is enabled a function may have more than one native code body. 
+ When tiered compilation is enabled, a function may have more than one native code body. 
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -53,7 +53,7 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)] 
+ **.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)] 
   
 ## See also
 - [ICorProfilerInfo9 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo9-interface.md)

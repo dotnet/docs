@@ -15,7 +15,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo9::GetCodeInfo4 Method
   
- Given the native code start address, return the the blocks of virtual memory that store this code.
+ Given the native code start address, returns the blocks of virtual memory that store this code.
   
 ## Syntax  
   
@@ -40,7 +40,7 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
  [out] A caller-provided buffer. After the method returns, it contains an array of `COR_PRF_CODE_INFO` structures, each of which describes a block of native code.  
   
 ## Remarks  
- The `GetCodeInfo4` method is similar to [GetCodeInfo3](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getcodeinfo3-method.md), except that it can look up code info for different native versions of a method.  
+ The `GetCodeInfo4` method is similar to [GetCodeInfo3](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getcodeinfo3-method.md), except that it can look up code information for different native versions of a method.  
   
 > [!NOTE]
 >  `GetCodeInfo4` can trigger a garbage collection.
@@ -59,7 +59,7 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)] 
+ **.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)] 
   
 ## See also
 - [ICorProfilerInfo9 Interface](../../../../docs/framework/unmanaged-api/profiling/ICorProfilerInfo9-interface.md)

@@ -15,7 +15,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::SuspendRuntime Method
   
- Suspend the runtime without performing a GC.   
+ Suspends the runtime without performing a GC.   
   
 ## Syntax  
   

@@ -39,7 +39,7 @@ An expression body definition has the following general syntax:
 member => expression;
 ```
 
-where *expression* is a valid expression. Note that *expression* can be a *statement expression* only if the member's return type is `void`, or if the member is a constructor, a finalizer, or a property `set` accessor.
+where *expression* is a valid expression. If the member's return type is `void` or if the member is a constructor, a finalizer, or a property `set` accessor, the *expression* must be a [*statement expression*](~/_csharplang/spec/statements.md#expression-statements).
 
 The following example shows an expression body definition for a `Person.ToString` method:
 

@@ -26,7 +26,7 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
                                 [out] ULONG                   *pbSig,
                                 [in]  ULONG                   cchName,
                                 [out] ULONG                   *pcchName,
-                                [out] WCHAR                    wszName[]);
+                                [out] WCHAR                   wszName[]);
 ```  
   
 #### Parameters  
@@ -43,7 +43,7 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
  [out] A pointer to the count of bytes for the function signature.
   
  `cchName`  
- [out] The maximum size of the `wszName` array.
+ [in] The maximum size of the `wszName` array.
   
  `pcchName`  
  [out] The number of characters in the `wszName` array.
@@ -52,11 +52,11 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
  [out] An array of `WCHAR` which is the name of the function, if one exists.
   
 ## Remarks  
- Certain methods like IL Stubs or LCG do not have associated metadata that can be retrieved using the IMetaDataImport APIs
+ Certain methods like IL Stubs or LCG do not have associated metadata that can be retrieved using the [IMetaDataImport](../metadata/metadataimport-interface.md) and [IMetaDataImport2](../metadata/metadataimport-interface2.md) APIs.
 
- Such methods can be encountered by profilers through instruction pointers or by listening to ICorProfilerCallback::DynamicMethodJITCompilationStarted
+ Such methods can be encountered by profilers through instruction pointers or by listening to ICorProfilerCallback::DynamicMethodJITCompilationStarted.
 
- This API can be used to retrieve information about dynamic methods including a friendly name if available.  
+ This API can be used to retrieve information about dynamic methods, including a friendly name, if available.  
   
 
 ## Requirements  

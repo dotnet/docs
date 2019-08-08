@@ -14,7 +14,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::GetLOHObjectSizeThreshold Method
   
- Gets the value of the configured LOH Threshold.   
+ Gets the value of the configured large object heap (LOH) threshold.   
   
 ## Syntax  
   
@@ -27,7 +27,7 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
  [out] The large object heap threshold in bytes.
   
 ## Remarks  
- Objects larger than the Large Object Heap threshold will be allocated on the Large object heap.
+ Objects larger than the large object heap threshold will be allocated on the large object heap.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -36,7 +36,7 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+ **.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
   
 ## See also
 - [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)

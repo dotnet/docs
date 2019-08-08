@@ -14,7 +14,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::SuspendRuntime Method
   
- Suspend the runtime without performing a GC.   
+ Suspends the runtime without performing a GC.   
   
 ## Syntax  
   
@@ -29,7 +29,7 @@ HRESULT SuspendRuntime();
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]  
+ **.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]  
   
 ## See also
 - [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)

@@ -33,10 +33,10 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
  [in] The function that will be called with the references for the object.
 
  `clientData`
- [in] Profiler provided data to pass to the `callback` function.
+ [in] Profiler-provided data to pass to the `callback` function.
   
 ## Remarks  
- The `EnumerateObjectReferences` method is similar to [ObjectReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-objectreferences-method.md), except that it walks the references on demand for the profiler instead of pre-allocating an array to store the references in.  
+ The `EnumerateObjectReferences` method is similar to [ObjectReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-objectreferences-method.md), except that it walks the references on demand for the profiler instead of pre-allocating an array to store the references.  
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -45,7 +45,7 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+ **.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
   
 ## See also
 - [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)

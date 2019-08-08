@@ -14,7 +14,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::ResumeRuntime Method
   
- Resume the runtime without performing a GC.   
+Resumes the runtime without performing a GC.   
   
 ## Syntax  
   
@@ -29,7 +29,7 @@ HRESULT ResumeRuntime();
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+ **.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
   
 ## See also
 - [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)

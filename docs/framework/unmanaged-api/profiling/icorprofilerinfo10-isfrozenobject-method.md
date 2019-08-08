@@ -14,7 +14,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::IsFrozenObject Method
   
- Given an ObjectID, determines whether it is in a read only segment.   
+ Given an ObjectID, determines whether the object is in a read-only segment.   
   
 ## Syntax  
   
@@ -26,10 +26,10 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
 #### Parameters  
  
  `objectId`
- [in] The object to determine if it is in a read only segment.
+ [in] The object to examine.
 
  `pbFrozen`
- [out] A `BOOL` indicating if the object is in a read only segment.
+ [out] A `BOOL` indicating if the object is in a read-only segment.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -38,7 +38,7 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)] 
+ **.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)] 
   
 ## See also
 - [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)

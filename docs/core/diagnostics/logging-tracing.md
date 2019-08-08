@@ -1,15 +1,15 @@
 ---
-title: .NET Core Logging or Tracing
+title: Logging and tracing - .NET Core
 description: An introduction to .NET Core Logging or Tracing.
 author: sdmaclea
 ms.author: stmaclea
 ms.date: 08/05/2019
 ---
-# .NET Core Logging and Tracing
+# .NET Core logging and tracing
 
 Logging and tracing are really two names for the same technique. The simple technique has been used since the early days of computers. It simply involves instrumenting an application to write output to be consumed later.
 
-## Why Logging and Tracing?
+## Reasons to use logging and tracing
 
 This simple technique is surprisingly powerful. It can be used in situations where a debugger fails:
 
@@ -26,7 +26,7 @@ This simple technique is surprisingly powerful. It can be used in situations whe
 The choice of which print style API to use is up to you. The key differences:
 - <xref:System.Console?displayProperty=nameWithType>
   - Always enabled and always writes to the console.
-  - Useful for information that your customer may need to see in release.
+  - Useful for information that your customer may need to see in the release.
   - Because it's the simplest approach, it's often used for ad-hoc temporary debugging. This debug code is often never checked in to source control.
 - <xref:System.Diagnostics.Trace?displayProperty=nameWithType>
   - Only enabled when `TRACE` is defined.
@@ -61,7 +61,7 @@ The choice of which print style API to use is up to you. The key differences:
   - Writes messages to Windows event log
   - System administrators expect fatal application error messages to appear in the Windows event log.
 
-## ILogger and Logging Frameworks
+## ILogger and logging frameworks
 
 The low-level APIs may not be the right choice for your logging needs. You may want to consider a logging framework.
 
@@ -71,30 +71,27 @@ For instance, to allow you to make the best choice for your application `ASP.NET
 - [ASP.NET built in logging providers](/aspnet/core/fundamentals/logging/#built-in-logging-providers)
 - [ASP.NET Third-party logging providers](/aspnet/core/fundamentals/logging/#third-party-logging-providers)
 
-## Logging Related References
+## Logging related references
 
-- [How to: Compile Conditionally with Trace and Debug](../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)
+- [How to: Compile Conditionally with Trace and Debug](../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)
 
-- [How to: Add Trace Statements to Application Code](../../framework/debug-trace-profile/how-to-add-trace-statements-to-application-code)
+- [How to: Add Trace Statements to Application Code](../../framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
 
 - [ASP.NET Logging](/aspnet/core/fundamentals/logging)
 provides an overview of the logging techniques it supports.
 
-- [C# String Interpolation](../../csharp/language-reference/tokens/interpolated)
+- [C# String Interpolation](../../csharp/language-reference/tokens/interpolated.md)
  can simplify writing logging code.
 
-- The <xref:System.Exception.Message?displayProperty=nameWithType> is useful for logging exceptions.
+- The <xref:System.Exception.Message?displayProperty=nameWithType> property is useful for logging exceptions.
 
-- The <xref:System.Diagnostics.StackTrace?displayProperty=nameWithType>
-can be useful to provide debugger like logging info.
+- The <xref:System.Diagnostics.StackTrace?displayProperty=nameWithType> class can be useful to provide stack info in your logs.
 
-## Performance Considerations
+## Performance considerations
 
 String formatting can take noticeable CPU processing time.
 
-In performance critical applications, it's good to:
+In performance critical applications, it's recommended that you:
 - Avoid lots of logging when no one is listening. Avoid constructing costly logging messages by checking if logging is enabled first.
-- Only log what is useful
-- Defer fancy formatting to the analysis stage
-
-Usually tracing is better than logging for most performance critical applications.
+- Only log what's useful.
+- Defer fancy formatting to the analysis stage.

@@ -12,7 +12,7 @@ A subclass of [ICorProfilerInfo7](../../../../docs/framework/unmanaged-api/profi
 
 | Method|Description|  
 | ------------|-----------------|  
-|[IsFunctionDynamic Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-isfunctiondynamic-method.md)| Determines if a function has associated metadata.|
+|[IsFunctionDynamic Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-isfunctiondynamic-method.md)| Determines if a function does not have associated metadata.|
 |[GetFunctionFromIP3 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-getfunctionfromip3-method.md)| Maps a managed code instruction pointer to a FunctionID. This method works for both dynamic and non-dynamic methods. |
 |[GetDynamicFunctionInfo Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-getdynamicfunctioninfo-method.md)| Retrieves information about dynamic methods. |
 

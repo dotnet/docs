@@ -14,7 +14,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo8::IsFunctionDynamic Method
   
-  Determines if a function has associated metadata.    
+  Determines if a function does not have associated metadata.    
   
 ## Syntax  
   

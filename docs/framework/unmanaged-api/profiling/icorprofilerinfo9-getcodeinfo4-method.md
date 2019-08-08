@@ -52,7 +52,7 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
   
 
 ## Requirements  
- **Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).  
   
  **Header:** CorProf.idl, CorProf.h  
   

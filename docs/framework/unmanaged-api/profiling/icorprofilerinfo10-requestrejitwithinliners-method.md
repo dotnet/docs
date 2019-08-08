@@ -15,7 +15,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::RequestReJITWithInliners Method
   
-  This method will ReJIT the methods requested, as well as any inliners of the methods requested.   
+ReJITs the methods requested, as well as any inliners of the methods requested.   
   
 ## Syntax  
   

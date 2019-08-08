@@ -1,7 +1,6 @@
 ---
 title: "ICorProfilerInfo9 Interface"
 ms.date: "08/06/2019"
-ms.assetid: 232a246e-07ce-460f-a48a-b567e3f41d46
 author: "davmason"
 ms.author: "davmason"
 ---

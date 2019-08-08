@@ -11,14 +11,13 @@ f1_keywords:
   - "COR_PRF_REJIT_FLAGS"
 helpviewer_keywords: 
   - "COR_PRF_REJIT_FLAGS enumeration [.NET Framework profiling]"
-ms.assetid: bef3af7a-61c6-4b27-938e-221f28a630d4
 topic_type: 
   - "apiref"
 author: "davmason"
 ms.author: "davmason"
 ---
 # COR_PRF_REJIT_FLAGS Enumeration
-Contains values that indicate the version of the common language runtime (CLR): desktop or CoreCLR, which is used in Silverlight.  
+Contains values that indicate how the [ICorProfilerInfo10::RequestReJITWithInliners](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-requestrejitwithinliners-method.md) API should behave.  
   
 ## Syntax  
   

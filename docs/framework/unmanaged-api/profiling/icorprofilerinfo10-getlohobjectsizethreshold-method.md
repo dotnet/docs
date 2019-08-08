@@ -28,7 +28,7 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
  [out] The large object heap threshold in bytes.
   
 ## Remarks  
- Objects larger than the Large Object Heap threshold will be allocated on the Large object heap.
+ Objects larger than the large object heap threshold will be allocated on the large object heap.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

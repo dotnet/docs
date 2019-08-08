@@ -15,7 +15,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo10::ResumeRuntime Method
   
- Resume the runtime without performing a GC.   
+Resumes the runtime without performing a GC.   
   
 ## Syntax  
   

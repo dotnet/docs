@@ -37,7 +37,7 @@ typedef enum
 |`COR_PRF_REJIT_INLINING_CALLBACKS`| Receive `GetFunctionParameters` callbacks for any methods that inline the methods requested to be ReJITted. |  
 
 ## Requirements  
- **Platforms:** See [.NET Core supported operating systems](../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md.md#net-core-supported-operating-systems).  
   
  **Header:** CorProf.idl, CorProf.h  
   

@@ -18,7 +18,7 @@ ms.date: 08/08/2019
 ## Synopsis
 
 ```
-dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--interactive] 
+dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--interactive] 
     [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output] [--runtime] [-s|--serviceable] 
     [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
@@ -26,7 +26,12 @@ dotnet pack [-h|--help]
 
 ## Description
 
-The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package. If the `--include-symbols` option is present, another package containing the debug symbols is created.
+The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package (that is, a *.nupkg* file). 
+
+If you want to generate a package that contains the debug symbols, you have two options available:
+
+- `--include-symbols` - it creates the symbols package.
+- `--include-source` - it creates the symbols package with a `src` folder inside containing the source files.
 
 NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. Project-to-project references aren't packaged inside the project. Currently, you must have a package per project if you have project-to-project dependencies.
 
@@ -46,9 +51,9 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 ## Arguments
 
-* **`PROJECT`**
+`PROJECT | SOLUTION`
 
-  The project to pack. It's either a path to a [csproj file](csproj.md) or to a directory. If not specified, it defaults to the current directory.
+  The project or solution to pack. It's either a path to a [csproj file](csproj.md), a solution file, or to a directory. If not specified, the command searches the current directory for a project or solution file.
 
 ## Options
 
@@ -66,11 +71,11 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 * **`--include-source`**
 
-  Includes the source files in the NuGet package. The sources files are included in the `src` folder within the `nupkg`.
+  Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory. The sources files are included in the `src` folder within the symbols package.
 
 * **`--include-symbols`**
 
-  Generates the symbols `nupkg`.
+  Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory.
 
 * **`--interactive`**
 
@@ -165,5 +170,5 @@ Web projects aren't packable by default. To override the default behavior, add t
 * Pack the project using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec):
 
   ```console
-  dotnet pack ~/projects/app1/project.csproj /p:NuspecFile=~/projects/app1/project.nuspec /p:NuspecBasePath=~/projects/app1/nuget
+  dotnet pack ~/projects/app1/project.csproj -p:NuspecFile=~/projects/app1/project.nuspec -p:NuspecBasePath=~/projects/app1/nuget
   ```

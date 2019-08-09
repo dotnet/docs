@@ -115,7 +115,7 @@ Prints out a short help for the command.
 * Pushes all *.nupkg* files in the current directory to the default push source:
 
   ```console
-  dotnet nuget push **/*.nupkg
+  dotnet nuget push *.nupkg
   ```
   
   > [!NOTE]

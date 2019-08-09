@@ -108,7 +108,7 @@ git clone https://github.com/dotnet/spark.git c:\github\dotnet-spark
 
    ```powershell
     spark-submit `
-    --class org.apache.spark.deploy.DotnetRunner `
+    --class org.apache.spark.deploy.dotnet.DotnetRunner `
     --master local `
     microsoft-spark-2.4.x-<version>.jar `
     dotnet HelloSpark.dll

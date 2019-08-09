@@ -21,6 +21,8 @@ This simple technique is surprisingly powerful. It can be used in situations whe
 
 ## .NET Core APIs
 
+### Print style APIs
+
 The <xref:System.Console?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> classes each provide similar print style APIs convenient for logging.
 
 The choice of which print style API to use is up to you. The key differences are:
@@ -37,6 +39,10 @@ The choice of which print style API to use is up to you. The key differences are
   - Writes to an attached debugger.
   - On `*nix` writes to stderr if `COMPlus_DebugWriteToStdErr` is set.
   - Use this API when creating logs that will be enabled only in debug builds.
+
+### Logging events
+
+The following APIs are more event oriented. Rather than logging simple strings they log event objects.
 
 - <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType>
   - EventSource is the primary root .NET Core tracing API.

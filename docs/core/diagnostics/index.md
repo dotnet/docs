@@ -7,7 +7,7 @@ ms.date: 08/05/2019
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
-# What Diagnostic Tools are Available in .NET Core?
+# What diagnostic tools are available in .NET Core?
 
 Software doesn't always behave as you would expect, but .NET Core has tools and APIs that will help you diagnose these issues quickly and effectively.
 

@@ -64,8 +64,8 @@ The following APIs are more event oriented. Rather than logging simple strings t
 
 - <xref:System.Diagnostics.EventLog?displayProperty=nameWithType>
   - Windows only.
-  - Writes messages to Windows event log.
-  - System administrators expect fatal application error messages to appear in the Windows event log.
+  - Writes messages to Windows Event Log.
+  - System administrators expect fatal application error messages to appear in the Windows Event Log.
 
 ## ILogger and logging frameworks
 

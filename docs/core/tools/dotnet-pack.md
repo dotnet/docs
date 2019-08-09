@@ -1,7 +1,7 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET Core project.
-ms.date: 06/26/2019
+ms.date: 08/08/2019
 ---
 # dotnet pack
 
@@ -18,8 +18,9 @@ ms.date: 06/26/2019
 ## Synopsis
 
 ```
-dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies]
-    [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
+dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--interactive] 
+    [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output] [--runtime] [-s|--serviceable] 
+    [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
 
@@ -51,15 +52,13 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 ## Options
 
-# [.NET Core 2.x](#tab/netcore2x)
-
 * **`-c|--configuration {Debug|Release}`**
 
   Defines the build configuration. The default value is `Debug`.
 
 * **`--force`**
 
-  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file. Option available since .NET Core x.x SDK.
+  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file. Option available since .NET Core 2.0 SDK.
 
 * **`-h|--help`**
 
@@ -73,17 +72,25 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Generates the symbols `nupkg`.
 
+* **`--interactive`**
+
+  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 3.0 SDK.
+
 * **`--no-build`**
 
   Doesn't build the project before packing. It also implicitly sets the `--no-restore` flag.
 
 * **`--no-dependencies`**
 
-  Ignores project-to-project references and only restores the root project. Option available since .NET Core x.x SDK.
+  Ignores project-to-project references and only restores the root project. Option available since .NET Core 2.0 SDK.
 
 * **`--no-restore`**
 
-  Doesn't execute an implicit restore when running the command. Option available since .NET Core x.x SDK.
+  Doesn't execute an implicit restore when running the command. Option available since .NET Core 2.0 SDK.
+
+* **`--nologo`**
+
+  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
 
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -104,46 +111,6 @@ Web projects aren't packable by default. To override the default behavior, add t
 * **`-v|--verbosity <LEVEL>`**
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-* **`-c|--configuration {Debug|Release}`**
-
-  Defines the build configuration. The default value is `Debug`.
-
-* **`-h|--help`**
-
-  Prints out a short help for the command.
-
-* **`--include-source`**
-
-  Includes the source files in the NuGet package. The sources files are included in the `src` folder within the `nupkg`.
-
-* **`--include-symbols`**
-
-  Generates the symbols `nupkg`.
-
-* **`--no-build`**
-
-  Doesn't build the project before packing.
-
-* **`-o|--output <OUTPUT_DIRECTORY>`**
-
-  Places the built packages in the directory specified.
-
-* **`-s|--serviceable`**
-
-  Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
-
-* **`--version-suffix <VERSION_SUFFIX>`**
-
-  Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
-
-* **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
-
----
 
 ## Examples
 

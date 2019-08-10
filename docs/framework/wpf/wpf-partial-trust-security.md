@@ -44,7 +44,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 |Editing|Spell Checking<br /><br /> RichTextBox<br /><br /> Plaintext and Ink Clipboard Support<br /><br /> User-Initiated Paste<br /><br /> Copying Selected Content|  
 |Controls|General Controls|  
   
- This table covers the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features at a high level. For more detailed information, the [!INCLUDE[TLA#tla_lhsdk](../../../includes/tlasharptla-lhsdk-md.md)] documents the permissions that are required by each member in [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
+ This table covers the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features at a high level. For more detailed information, the Windows Software Development Kit (SDK) documents the permissions that are required by each member in [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
   
 - [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] (see [XAML Overview (WPF)](./advanced/xaml-overview-wpf.md)).  
   

@@ -17,7 +17,7 @@ with only a get accessor:
 
 [!code-csharp[ReadOnlyAutoProperty](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoProperty)]
 
-The `FirstName` and `LastName` properties can be set only in the body of a constructor:
+The `FirstName` and `LastName` properties can be set only in the body of the constructor of the same class:
 
 [!code-csharp[ReadOnlyAutoPropertyConstructor](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoPropertyConstructor)]
 

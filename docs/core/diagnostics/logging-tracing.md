@@ -1,6 +1,6 @@
 ---
 title: Logging and tracing - .NET Core
-description: An introduction to .NET Core Logging or Tracing.
+description: An introduction to .NET Core logging and tracing.
 author: sdmaclea
 ms.author: stmaclea
 ms.date: 08/05/2019
@@ -48,23 +48,23 @@ The following APIs are more event oriented. Rather than logging simple strings t
   - EventSource is the primary root .NET Core tracing API.
   - Available in all .NET Standard versions.
   - Only allows tracing serializable objects.
-  - Writes to attached <xref:System.Diagnostics.Tracing.EventListener>s.
+  - Writes to the attached [event listeners](xref:System.Diagnostics.Tracing.EventListener).
   - .NET Core provides listeners for:
     - .NET Core's EventPipe on all platforms
     - [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal)
     - [LTTng tracing framework for Linux](https://lttng.org/)
 
 - <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType>
-  - Included in .NET Core and as a [Nuget package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) for .NET Framework
-  - Allows in process tracing non-serializable objects.
-  - Includes a bridge to allow select fields of logged objects to be written to an <xref:System.Diagnostics.Tracing.EventSource>.
+  - Included in .NET Core and as a [NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) for .NET Framework.
+  - Allows in-process tracing of non-serializable objects.
+  - Includes a bridge to allow selected fields of logged objects to be written to an <xref:System.Diagnostics.Tracing.EventSource>.
 
 - <xref:System.Diagnostics.Activity?displayProperty=nameWithType>
   - Provides a definitive way to identify log messages resulting from a specific activity or transaction. This object can be used to correlate logs across different services.
 
 - <xref:System.Diagnostics.EventLog?displayProperty=nameWithType>
   - Windows only.
-  - Writes messages to Windows Event Log.
+  - Writes messages to the Windows Event Log.
   - System administrators expect fatal application error messages to appear in the Windows Event Log.
 
 ## ILogger and logging frameworks

@@ -172,7 +172,7 @@ The specified version to uninstall.
 
 * **`--all-previews-but-latest`**
 
-  Remove .NET Core SDKs or Runtimes that are marked as previews except the one highest preview.
+  Remove .NET Core SDKs or Runtimes that are marked as previews except the one with the highest version number.
 
 * **`--aspnet-runtime`**
 

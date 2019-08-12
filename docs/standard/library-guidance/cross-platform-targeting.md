@@ -53,7 +53,7 @@ To shield your consumers from having to build for individual frameworks, you sho
 >
 > Do not drop support for .NET Standard when you do this. Instead, throw from the implementation and offer capability APIs. This way, your library can be used anywhere and supports runtime light-up of features.
 
-```C#
+```csharp
 public static class GpsLocation
 {
     // This project uses multi-targeting to expose device-specific APIs to .NET Standard.

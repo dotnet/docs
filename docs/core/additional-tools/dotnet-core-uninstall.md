@@ -32,7 +32,7 @@ __Note__: The tool requires elevation to uninstall .NET Core SDKs and Runtimes. 
 
 `dotnet-core-uninstall list` lists installed .NET Core SDKs and Runtimes that can be removed with this tool.
 
-On Windows, the .NET Core Uninstall Tool can only uninstall things that have been installed via the .NET Core SDK or Runtime installer, or the Visual Studio installer prior to Visual Studio 2019 16.3. On macOS, the tool can only uninstall things in the `/usr/local/share/dotnet` folder. This tool does not work on Linux. Because of these limitations, the tool may not be able to uninstall all of the .NET Core SDKs and Runtimes on your machine. You can use `dotnet --info` to find all of the .NET Core SDK's and Runtimes available.
+On Windows, the .NET Core Uninstall Tool can only uninstall things that have been installed via the .NET Core SDK or Runtime installer, or the Visual Studio installer prior to Visual Studio 2019 16.3. On macOS, the tool can only uninstall things in the `/usr/local/share/dotnet` folder. This tool does not work on Linux. Because of these limitations, the tool may not be able to uninstall all of the .NET Core SDKs and Runtimes on your machine. You can use `dotnet --info` to find all of the .NET Core SDK's and Runtimes available, including those this tool cannot remove.
 
 #### Synopsis
 

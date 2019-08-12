@@ -55,7 +55,7 @@ Forms authentication has benefited from WIF’s inclusion in .NET 4.5 because al
 
 In this step, you will create a new ASP.NET Web Forms application.
 
-#### To create a simple ASP.NET application
+### To create a simple ASP.NET application
 
 1. Start Visual Studio and click **File**, **New**, and then **Project**.
 
@@ -67,7 +67,7 @@ In this step, you will create a new ASP.NET Web Forms application.
 
 In this step you will add a configuration entry to the *Web.config* configuration file and edit the *Default.aspx* file to display claims information for an account.
 
-#### To configure ASP.NET application for claims using Forms authentication
+### To configure ASP.NET application for claims using Forms authentication
 
 1. In the *Default.aspx* file, replace the existing markup with the following:
 
@@ -121,7 +121,7 @@ In this step you will add a configuration entry to the *Web.config* configuratio
 
 In this step you will test your ASP.NET Web Forms application, and verify that claims are presented when a user signs in with Forms authentication.
 
-#### To test your ASP.NET Web Forms application for claims using Forms authentication
+### To test your ASP.NET Web Forms application for claims using Forms authentication
 
 1. Press **F5** to build and run the application. You should be presented with *Default.aspx*, which has **Register** and **Log in** links in the top right of the page. Click **Register**.
 

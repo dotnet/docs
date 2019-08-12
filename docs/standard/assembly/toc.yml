@@ -9,3 +9,64 @@
     href: file-format.md
   - name: "How to use and debug assembly unloadability in .NET Core"
     href: unloadability-howto.md
+  - name: Assemblies in the Common Language Runtime
+    href: assemblies-in-the-common-language-runtime.md
+    items:
+    - name: Assembly contents
+      href: assembly-contents.md
+    - name: Assembly manifest
+      href: assembly-manifest.md
+    - name: Strong-named assemblies
+      href: strong-named-assemblies.md
+    - name: Assembly security considerations
+      href: assembly-security-considerations.md
+    - name: Assembly versioning
+      href: assembly-versioning.md
+    - name: Assembly placement
+      href: assembly-placement.md
+    - name: Assemblies and side-by-side execution
+      href: assemblies-and-side-by-side-execution.md
+    - name: "How to: Obtain type and member information from an assembly"
+      href: how-to-obtain-type-and-member-information-from-an-assembly.md
+    - name: Resolve assembly loads
+      href: resolve-assembly-loads.md
+  - name: Programming with assemblies
+    href: programming-with-assemblies.md
+    items:
+    - name: Creating assemblies
+      href: create-assemblies.md
+    - name: Assembly names
+      href: assembly-names.md
+    - name: "How to: Determine an assembly's fully qualified name"
+      href: how-to-determine-assembly-fully-qualified-name.md
+    - name: Assembly location
+      href: assembly-location.md
+    - name: "How to: Build a single-file assembly"
+      href: how-to-build-a-single-file-assembly.md
+    - name: Multifile assemblies
+      href: multifile-assemblies.md
+    - name: "How to: Build a multifile assembly"
+      href: how-to-build-a-multifile-assembly.md
+    - name: Set assembly attributes
+      href: set-assembly-attributes.md
+    - name: Create and use strong-named assemblies
+      href: create-and-use-strong-named-assemblies.md
+      items:
+      - name: "How to: Create a public-private key pair"
+        href: how-to-create-a-public-private-key-pair.md
+      - name: "How to: Sign an assembly with a strong name"
+        href: how-to-sign-an-assembly-with-a-strong-name.md
+      - name: Enhanced strong naming
+        href: enhanced-strong-naming.md
+      - name: "How to: Reference a strong-named assembly"
+        href: how-to-reference-a-strong-named-assembly.md
+      - name: "How to: Disable the strong-name bypass feature"
+        href: how-to-disable-the-strong-name-bypass-feature.md
+    - name: Delay signing an assembly
+      href: delay-sign-assembly.md
+    - name: "How to: Install an assembly into the Global Assembly Cache"
+      href: how-to-install-an-assembly-into-the-gac.md
+    - name: "How to: View assembly contents"
+      href: how-to-view-assembly-contents.md
+    - name: Type forwarding in the Common Language Runtime
+      href: type-forwarding-in-the-common-language-runtime.md

@@ -29,7 +29,7 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [Running Intranet Applications in Full Trust](../../framework/app-domains/running-intranet-applications-in-full-trust.md)  
  Describes how to specify legacy security policy for full-trust assemblies on an intranet share.  
   
- [Assembly Location](../../framework/configure-apps/assembly-location.md)  
+ [Assembly Location](assembly-location.md)  
  Provides an overview of where to locate assemblies.  
   
  [How to: Build a Single-File Assembly](how-to-build-a-single-file-assembly.md)  

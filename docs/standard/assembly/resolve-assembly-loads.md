@@ -77,4 +77,4 @@ The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayPr
 ## See also
 
 - [Best Practices for Assembly Loading](../../framework/deployment/best-practices-for-assembly-loading.md)
-- [Using Application Domains](../../csharp/language-reference/keywords/use.md)
+- [Using Application Domains](../../framework/app-domains/use.md)

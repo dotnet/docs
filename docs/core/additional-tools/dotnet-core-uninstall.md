@@ -140,7 +140,7 @@ dotnet-core-uninstall [options] [<VERSION>...]
 
 `VERSION`
 
-The specified version to uninstall. You may list several versions, and response files are supported [[get syntax from Jon]].
+The specified version to uninstall. You may list several versions, and response files are supported.
 
 #### Options
 

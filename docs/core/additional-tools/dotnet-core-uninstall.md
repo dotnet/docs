@@ -330,6 +330,6 @@ Note:
 
 The `NuGetFallbackFolder` folder contains a cache of NuGet packages used by a .NET Core SDK during the restore operation, such as running `dotnet restore` or `dotnet build /t:Restore`. It is located at `C:\Program Files\dotnet\sdk` on Windows and at `/usr/local/share/dotnet/sdk` on macOS. Delete this folder from your machine if you no longer need it after uninstalling .NET Core SDKs.
 
-### Uninstalling the tool
+### Remove the `dotnet-core-uninstall` tool
 
 Remove the downloaded single executable `dotnet-core-uninstall.exe` from the directory where it was installed.

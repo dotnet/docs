@@ -199,7 +199,7 @@ The parent directories for the SDK and runtime are listed in the output from the
 
 ## .NET Core Uninstall Tool
 
-The [.NET Core Uninstall Tool (`dotnet-core-uninstall`)](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) lets you clean-up of .NET Core SDKs and Runtimes on a system such that only the specified versions remain. A collection of options is available to specify which versions are uninstalled. 
+The [.NET Core Uninstall Tool (`dotnet-core-uninstall`)](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) lets you clean-up .NET Core SDKs and Runtimes on a system such that only the specified versions remain. A collection of options is available to specify which versions are uninstalled. 
 
 The documentation of the tool is available [here](../additional-tools/dotnet-core-uninstall.md).
 

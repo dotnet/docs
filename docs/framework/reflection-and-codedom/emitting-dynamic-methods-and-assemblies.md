@@ -65,5 +65,5 @@ Introduces collectible assemblies, which are dynamic assemblies that can be unlo
  [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
  Explains how to explore metadata and managed code.  
   
- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
+ [Assemblies in the Common Language Runtime](../../standard/assembly/assemblies-in-the-common-language-runtime.md)  
  Provides an overview of assemblies in .NET implementations.

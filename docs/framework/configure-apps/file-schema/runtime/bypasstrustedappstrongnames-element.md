@@ -64,7 +64,7 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
 - Not delay-signed.  
   
 > [!NOTE]
->  If the bypass feature has been turned off for all applications on the computer by using a registry key, this configuration file setting has no effect. For more information, see [How to: Disable the Strong-Name Bypass Feature](../../../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md).  
+>  If the bypass feature has been turned off for all applications on the computer by using a registry key, this configuration file setting has no effect. For more information, see [How to: Disable the Strong-Name Bypass Feature](../../../../standard/assembly/how-to-disable-the-strong-name-bypass-feature.md).  
   
 ## Example  
  The following example shows how to specify the behavior that validates the strong-name signature on full-trust assemblies.  
@@ -81,4 +81,4 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
 
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [How to: Disable the Strong-Name Bypass Feature](../../../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md)
+- [How to: Disable the Strong-Name Bypass Feature](../../../../standard/assembly/how-to-disable-the-strong-name-bypass-feature.md)

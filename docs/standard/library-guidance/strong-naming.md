@@ -7,7 +7,7 @@ ms.date: 10/16/2018
 ---
 # Strong naming
 
-Strong naming refers to signing an assembly with a key, producing a [strong-named assembly](../../framework/app-domains/strong-named-assemblies.md). When an assembly is strong-named, it creates a unique identity based on the name and assembly version number, and it can help prevent assembly conflicts.
+Strong naming refers to signing an assembly with a key, producing a [strong-named assembly](../assembly/strong-named-assemblies.md). When an assembly is strong-named, it creates a unique identity based on the name and assembly version number, and it can help prevent assembly conflicts.
 
 The downside to strong naming is that the .NET Framework on Windows enables strict loading of assemblies once an assembly is strong named. A strong-named assembly reference must exactly match the version referenced by an assembly, forcing developers to [configure binding redirects](../../framework/configure-apps/redirect-assembly-versions.md) when using the assembly:
 

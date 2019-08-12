@@ -32,7 +32,7 @@ The following scenario outlines the process of signing an assembly with a strong
 
     - Using a development environment that supports creating strong names, such as Visual Studio.
 
-    - Creating a cryptographic key pair using the [Strong Name tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) and assigning that key pair to the assembly using either a command-line compiler or the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). The Windows Software Development Kit (SDK) provides both Sn.exe and Al.exe.
+    - Creating a cryptographic key pair using the [Strong Name tool (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) and assigning that key pair to the assembly using either a command-line compiler or the [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md). The Windows Software Development Kit (SDK) provides both Sn.exe and Al.exe.
 
 2. The development environment or tool signs the hash of the file containing the assembly's manifest with the developer's private key. This digital signature is stored in the portable executable (PE) file that contains Assembly A's manifest.
 
@@ -57,18 +57,18 @@ The bypass feature applies to any assembly that is signed with a strong name and
 
 - Not delay-signed.
 
-This feature can be disabled for individual applications or for a computer. See [How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md).
+This feature can be disabled for individual applications or for a computer. See [How to: Disable the Strong-Name Bypass Feature](how-to-disable-the-strong-name-bypass-feature.md).
 
 ## Related topics
 
 |Title|Description|
 |-----------|-----------------|
-|[How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)|Describes how to create a cryptographic key pair for signing an assembly.|
-|[How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)|Describes how to create a strong-named assembly.|
-|[Enhanced Strong Naming](../../../docs/framework/app-domains/enhanced-strong-naming.md)|Describes enhancements to strong-names in the .NET Framework 4.5.|
-|[How to: Reference a Strong-Named Assembly](../../../docs/framework/app-domains/how-to-reference-a-strong-named-assembly.md)|Describes how to reference types or resources in a strong-named assembly at compile time or run time.|
-|[How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md)|Describes how to disable the feature that bypasses the validation of strong-name signatures. This feature can be disabled for all or for specific applications.|
-|[Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)|Provides an overview of single-file and multifile assemblies.|
+|[How to: Create a Public-Private Key Pair](how-to-create-a-public-private-key-pair.md)|Describes how to create a cryptographic key pair for signing an assembly.|
+|[How to: Sign an Assembly with a Strong Name](how-to-sign-an-assembly-with-a-strong-name.md)|Describes how to create a strong-named assembly.|
+|[Enhanced Strong Naming](enhanced-strong-naming.md)|Describes enhancements to strong-names in the .NET Framework 4.5.|
+|[How to: Reference a Strong-Named Assembly](how-to-reference-a-strong-named-assembly.md)|Describes how to reference types or resources in a strong-named assembly at compile time or run time.|
+|[How to: Disable the Strong-Name Bypass Feature](how-to-disable-the-strong-name-bypass-feature.md)|Describes how to disable the feature that bypasses the validation of strong-name signatures. This feature can be disabled for all or for specific applications.|
+|[Creating Assemblies](create-assemblies.md)|Provides an overview of single-file and multifile assemblies.|
 |[How to Delay Sign an Assembly in Visual Studio](/visualstudio/ide/managing-assembly-and-manifest-signing#how-to-sign-an-assembly-in-visual-studio)|Explains how to sign an assembly with a strong name after the assembly has been created.|
-|[Sn.exe (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)|Describes the tool included in the .NET Framework that helps create assemblies with strong names. This tool provides options for key management, signature generation, and signature verification.|
-|[Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)|Describes the tool included in the .NET Framework that generates a file that has an assembly manifest from modules or resource files.|
+|[Sn.exe (Strong Name Tool)](../../framework/tools/sn-exe-strong-name-tool.md)|Describes the tool included in the .NET Framework that helps create assemblies with strong names. This tool provides options for key management, signature generation, and signature verification.|
+|[Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md)|Describes the tool included in the .NET Framework that generates a file that has an assembly manifest from modules or resource files.|

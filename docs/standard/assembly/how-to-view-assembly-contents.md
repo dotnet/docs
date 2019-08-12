@@ -18,7 +18,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: View Assembly Contents
-You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) information in a file. If the file being examined is an assembly, this information can include the assembly's attributes, as well as references to other modules and assemblies. This information can be helpful in determining whether a file is an assembly or part of an assembly, and whether the file has references to other modules or assemblies.  
+You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) information in a file. If the file being examined is an assembly, this information can include the assembly's attributes, as well as references to other modules and assemblies. This information can be helpful in determining whether a file is an assembly or part of an assembly, and whether the file has references to other modules or assemblies.  
   
 ### To display the contents of an assembly using Ildasm.exe  
   
@@ -84,6 +84,6 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
   
 ## See also
 
-- [Application domains and assemblies](application-domains.md#application-domains-and-assemblies)
-- [Application Domains and Assemblies How-to Topics](../../../docs/framework/app-domains/application-domains-and-assemblies-how-to-topics.md)
-- [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)
+- [Application domains and assemblies](../../framework/app-domains/application-domains.md#application-domains-and-assemblies)
+- [Application Domains and Assemblies How-to Topics](../../framework/app-domains/application-domains-and-assemblies-how-to-topics.md)
+- [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md)

@@ -38,7 +38,7 @@ Specifies the name of the assembly that this module will be a part of.
   
 ## See also
 
-- [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)
+- [How to: Build a Multifile Assembly](../../../standard/assembly/how-to-build-a-multifile-assembly.md)
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
 - [-main](../../../visual-basic/reference/command-line-compiler/main.md)

@@ -56,7 +56,7 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
  [!code-csharp[Assembly.Load1#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Assembly.Load1/CS/load2.cs#3)]
  [!code-vb[Assembly.Load1#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Assembly.Load1/VB/load2.vb#3)]  
   
- You can print the hexadecimal format of the public key and public key token for a specific assembly by using the following [Strong Name (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) command:  
+ You can print the hexadecimal format of the public key and public key token for a specific assembly by using the following [Strong Name (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) command:  
   
  **sn -Tp \<** *assembly* **>**  
   
@@ -66,4 +66,4 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
   
 ## See also
 
-- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)
+- [Creating and Using Strong-Named Assemblies](strong-named-assemblies.md)

@@ -133,7 +133,7 @@ Unlike the mscoree.h hosting API (described below), CoreCLRHost.h APIs start the
 
 ### Step 5 - Run managed code!
 
-With the runtime started, the host can call managed code. This can be done in a couple of different ways. The sample code linked to this tutorial uses the `coreclr_create_delegate` function to create a delegate to a static managed method. This API takes the [assembly name](../../framework/app-domains/assembly-names.md), namespace-qualified type name, and method name as inputs and returns a delegate that can be used to invoke the method.
+With the runtime started, the host can call managed code. This can be done in a couple of different ways. The sample code linked to this tutorial uses the `coreclr_create_delegate` function to create a delegate to a static managed method. This API takes the [assembly name](../../standard/assembly/assembly-names.md), namespace-qualified type name, and method name as inputs and returns a delegate that can be used to invoke the method.
 
 [!code-cpp[CoreClrHost#5](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#5)]
 
@@ -234,7 +234,7 @@ With an AppDomain up and running, the host can now start executing managed code.
 
 [!code-cpp[NetCoreHost#8](~/samples/core/hosting/HostWithMscoree/host.cpp#8)]
 
-Another option, if `ExecuteAssembly` doesn't meet your host's needs, is to use `CreateDelegate` to create a function pointer to a static managed method. This requires the host to know the signature of the method it is calling into (in order to create the function pointer type) but allows hosts the flexibility to invoke code other than an assembly's entry point. The assembly name provided in the second parameter is the [full managed assembly name](../../framework/app-domains/assembly-names.md) of the library to load.
+Another option, if `ExecuteAssembly` doesn't meet your host's needs, is to use `CreateDelegate` to create a function pointer to a static managed method. This requires the host to know the signature of the method it is calling into (in order to create the function pointer type) but allows hosts the flexibility to invoke code other than an assembly's entry point. The assembly name provided in the second parameter is the [full managed assembly name](../../standard/assembly/assembly-names.md) of the library to load.
 
 ```C++
 void *pfnDelegate = NULL;

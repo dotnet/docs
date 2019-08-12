@@ -47,7 +47,7 @@ The assembly version is what the CLR uses at runtime to select which version of 
 
 The Windows .NET Framework CLR demands an exact match to load a strong named assembly. For example, `Libary1, Version=1.0.0.0` was compiled with a reference to `Newtonsoft.Json, Version=11.0.0.0`. The .NET Framework will only load that exact version `11.0.0.0`. To load a different version at runtime, a binding redirect must be added to the .NET application's config file.
 
-Strong naming combined with assembly version enables [strict assembly version loading](../../framework/app-domains/assembly-versioning.md). While strong naming a library has a number of benefits, it often results in runtime exceptions that an assembly can't be found and [requires binding redirects](../../framework/configure-apps/redirect-assembly-versions.md) in `app.config`/`web.config` to be fixed. .NET Core assembly loading has been relaxed, and the .NET Core CLR will automatically load assemblies at runtime with a higher version.
+Strong naming combined with assembly version enables [strict assembly version loading](../assembly/assembly-versioning.md). While strong naming a library has a number of benefits, it often results in runtime exceptions that an assembly can't be found and [requires binding redirects](../../framework/configure-apps/redirect-assembly-versions.md) in `app.config`/`web.config` to be fixed. .NET Core assembly loading has been relaxed, and the .NET Core CLR will automatically load assemblies at runtime with a higher version.
 
 **✔️ CONSIDER** only including a major version in the AssemblyVersion.
 

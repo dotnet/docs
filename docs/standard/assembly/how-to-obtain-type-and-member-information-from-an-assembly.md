@@ -13,7 +13,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Obtain Type and Member Information from an Assembly
-The <xref:System.Reflection> namespace contains many methods for obtaining information from an assembly. This section demonstrates one of these methods. For additional information, see [Reflection Overview](../../../docs/framework/reflection-and-codedom/reflection.md).  
+The <xref:System.Reflection> namespace contains many methods for obtaining information from an assembly. This section demonstrates one of these methods. For additional information, see [Reflection Overview](../../csharp/programming-guide/concepts/attributes/reflection.md).  
   
  The following example obtains type and member information from an assembly.  
   
@@ -24,6 +24,6 @@ The <xref:System.Reflection> namespace contains many methods for obtaining infor
   
 ## See also
 
-- [Programming with Application Domains](./application-domains.md#programming-with-application-domains)
-- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Programming with Application Domains](./../../framework/app-domains/application-domains.md#programming-with-application-domains)
+- [Reflection](../../csharp/programming-guide/concepts/attributes/reflection.md)
+- [Using Application Domains](../../csharp/language-reference/keywords/use.md)

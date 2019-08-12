@@ -14,7 +14,7 @@ ms.author: "ronpet"
 ---
 # How to: Install an assembly into the global assembly cache
 
-The global assembly cache (GAC) stores assemblies that several applications share. Install an assembly into the [global assembly cache](gac.md) with one of the following components: 
+The global assembly cache (GAC) stores assemblies that several applications share. Install an assembly into the [global assembly cache](../../framework/app-domains/gac.md) with one of the following components: 
 - [Windows Installer](#windows-installer)
 - [Global assembly cache tool](#global-assembly-cache-tool)
 
@@ -27,7 +27,7 @@ The global assembly cache (GAC) stores assemblies that several applications shar
 
 ## Global assembly cache tool
 
-You can use the [global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to add assemblies to the global assembly cache and to view the contents of the global assembly cache.
+You can use the [global assembly cache tool (gacutil.exe)](../../framework/tools/gacutil-exe-gac-tool.md) to add assemblies to the global assembly cache and to view the contents of the global assembly cache.
 
    > [!NOTE]
    > *Gacutil.exe* is for development purposes only. Don't use it to install production assemblies into the global assembly cache.
@@ -40,7 +40,7 @@ gacutil -i <assembly name>
 
 In this command, *\<assembly name>* is the name of the assembly to install in the global assembly cache.
 
-If *gacutil.exe* isn't in your system path, use the [Developer Command Prompt for VS *\<version>*](../tools/developer-command-prompt-for-vs.md).
+If *gacutil.exe* isn't in your system path, use the [Developer Command Prompt for VS *\<version>*](../../framework/tools/developer-command-prompt-for-vs.md).
 
 The following example installs an assembly with the file name *hello.dll* into the global assembly cache.
 
@@ -53,7 +53,7 @@ gacutil -i hello.dll
 
 ## See also
 
-- [Working with assemblies and the global assembly cache](working-with-assemblies-and-the-gac.md)
-- [How to: Remove an assembly from the global assembly cache](how-to-remove-an-assembly-from-the-gac.md)
-- [Gacutil.exe (Global assembly cache tool)](../tools/gacutil-exe-gac-tool.md)
+- [Working with assemblies and the global assembly cache](working-with-assemblies-and-the-../../framework/app-domains/gac.md)
+- [How to: Remove an assembly from the global assembly cache](how-to-remove-an-assembly-from-the-../../framework/app-domains/gac.md)
+- [Gacutil.exe (Global assembly cache tool)](../../framework/tools/gacutil-exe-gac-tool.md)
 - [How to: Sign an assembly with a strong name](how-to-sign-an-assembly-with-a-strong-name.md)

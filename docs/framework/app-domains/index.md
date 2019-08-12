@@ -22,14 +22,14 @@ Hosts such as Microsoft Internet Explorer, ASP.NET, and the Windows shell load t
  [Using Application Domains](../../../docs/framework/app-domains/use.md)  
  Provides examples of creating, configuring, and using application domains.  
   
- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  
+ [Programming with Assemblies](../../standard/assembly/programming-with-assemblies.md)  
  Describes how to create, sign, and set attributes on assemblies.  
   
 ## Related Sections  
  [Emitting Dynamic Methods and Assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)  
  Describes how to create dynamic assemblies.  
   
- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
+ [Assemblies in the Common Language Runtime](../../standard/assembly/assemblies-in-the-common-language-runtime.md)  
  Provides a conceptual overview of assemblies.  
   
  [Application Domains](../../../docs/framework/app-domains/application-domains.md)  

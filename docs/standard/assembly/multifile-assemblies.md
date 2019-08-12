@@ -37,5 +37,5 @@ Once you create the assembly, you can sign the file that contains the assembly m
 
 ## See also
 
-- [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)
-- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [How to: Build a Multifile Assembly](how-to-build-a-multifile-assembly.md)
+- [Programming with Assemblies](programming-with-assemblies.md)

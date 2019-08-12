@@ -31,7 +31,7 @@ Specifies the name of the cryptographic key container.
   
  You can also pass your encryption information to the compiler with [-keyfile](../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md). Use [-delaysign](../../../csharp/language-reference/compiler-options/delaysign-compiler-option.md) if you want the public key added to the assembly manifest but want to delay signing the assembly until it has been tested.  
   
- For more information, see [Creating and Using Strong-Named Assemblies](../../../framework/app-domains/create-and-use-strong-named-assemblies.md) and [Delay Signing an Assembly](../../../framework/app-domains/delay-sign-assembly.md).  
+ For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/strong-named-assemblies.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign-assembly.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

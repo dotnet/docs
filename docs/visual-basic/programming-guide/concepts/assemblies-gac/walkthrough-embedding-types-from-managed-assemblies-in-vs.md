@@ -222,5 +222,5 @@ Because the primary function of type embedding is to support embedding of type i
 
 - [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)
 - [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
-- [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)
+- [Programming with Assemblies](../../../../standard/assembly/programming-with-assemblies.md)
 - [Assemblies in .NET](../../../../standard/assembly/index.md)

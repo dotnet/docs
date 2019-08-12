@@ -60,7 +60,7 @@ The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayPr
   
  For information about contexts, see the <xref:System.Reflection.Assembly.LoadFrom%28System.String%29?displayProperty=nameWithType> method overload.  
   
- Multiple versions of the same assembly can be loaded into the same application domain. This practice is not recommended, because it can lead to type assignment problems. See [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md).  
+ Multiple versions of the same assembly can be loaded into the same application domain. This practice is not recommended, because it can lead to type assignment problems. See [Best Practices for Assembly Loading](../../framework/deployment/best-practices-for-assembly-loading.md).  
   
 ### What the Event Handler Should Not Do  
  The primary rule for handling the <xref:System.AppDomain.AssemblyResolve> event is that you should not try to return an assembly you do not recognize. When you write the handler, you should know which assemblies might cause the event to be raised. Your handler should return null for other assemblies.  
@@ -76,5 +76,5 @@ The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayPr
   
 ## See also
 
-- [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Best Practices for Assembly Loading](../../framework/deployment/best-practices-for-assembly-loading.md)
+- [Using Application Domains](../../csharp/language-reference/keywords/use.md)

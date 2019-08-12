@@ -42,5 +42,5 @@ csc -addmodule:metad1.netmodule;metad2.netmodule -out:out.exe input.cs
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
-- [Multifile Assemblies](../../../framework/app-domains/multifile-assemblies.md)
-- [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)
+- [Multifile Assemblies](../../../standard/assembly/multifile-assemblies.md)
+- [How to: Build a Multifile Assembly](../../../standard/assembly/how-to-build-a-multifile-assembly.md)

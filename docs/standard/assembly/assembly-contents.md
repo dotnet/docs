@@ -13,7 +13,7 @@ ms.author: "ronpet"
 # Assembly Contents
 In general, a static assembly can consist of four elements:  
   
-- The [assembly manifest](../../../docs/framework/app-domains/assembly-manifest.md), which contains assembly metadata.  
+- The [assembly manifest](assembly-manifest.md), which contains assembly metadata.  
   
 - Type metadata.  
   
@@ -42,6 +42,6 @@ In general, a static assembly can consist of four elements:
   
 ## See also
 
-- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
-- [Assembly Manifest](../../../docs/framework/app-domains/assembly-manifest.md)
-- [Assembly Security Considerations](../../../docs/framework/app-domains/assembly-security-considerations.md)
+- [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)
+- [Assembly Manifest](assembly-manifest.md)
+- [Assembly Security Considerations](assembly-security-considerations.md)

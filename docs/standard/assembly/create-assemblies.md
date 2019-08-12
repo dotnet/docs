@@ -38,13 +38,13 @@ You have several options when grouping code modules and resources into assemblie
 
      Group modules containing types whose visibility should be restricted to the same assembly.
 
-Special considerations must be made when making common language runtime assemblies available to unmanaged COM applications. For more information about working with unmanaged code, see [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md).
+Special considerations must be made when making common language runtime assemblies available to unmanaged COM applications. For more information about working with unmanaged code, see [Exposing .NET Framework Components to COM](../../framework/interop/exposing-dotnet-components-to-com.md).
 
 ## See also
 
-- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
-- [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md)
-- [How to: Build a Single-File Assembly](../../../docs/framework/app-domains/how-to-build-a-single-file-assembly.md)
-- [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)
-- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Multifile Assemblies](../../../docs/framework/app-domains/multifile-assemblies.md)
+- [Programming with Assemblies](programming-with-assemblies.md)
+- [Assembly Versioning](assembly-versioning.md)
+- [How to: Build a Single-File Assembly](how-to-build-a-single-file-assembly.md)
+- [How to: Build a Multifile Assembly](how-to-build-a-multifile-assembly.md)
+- [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Multifile Assemblies](multifile-assemblies.md)

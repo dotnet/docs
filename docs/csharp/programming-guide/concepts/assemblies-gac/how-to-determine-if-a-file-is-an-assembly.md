@@ -4,7 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: ea5186bb-5bff-4dcb-bde9-d6ba4e2edd00
 ---
 # How to: Determine If a File Is an Assembly (C#)
-A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](../../../../../docs/framework/app-domains/assembly-manifest.md).  
+A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](../../../../standard/assembly/assembly-manifest.md).  
   
 ### How to manually determine if a file is an assembly  
   
@@ -12,7 +12,7 @@ A file is an assembly if and only if it is managed, and contains an assembly ent
   
 2. Load the file you wish to test.  
   
-3. If **ILDASM** reports that the file is not a portable executable (PE) file, then it is not an assembly. For more information, see the topic [How to: View Assembly Contents](../../../../framework/app-domains/how-to-view-assembly-contents.md).  
+3. If **ILDASM** reports that the file is not a portable executable (PE) file, then it is not an assembly. For more information, see the topic [How to: View Assembly Contents](../../../../standard/assembly/assembly-contents.md).  
   
 ### How to programmatically determine if a file is an assembly  
   

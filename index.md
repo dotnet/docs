@@ -303,7 +303,7 @@ ms.date: "12/04/2018"
                                 </a>
                             </li>
                             <li>
-                                <a href="/aspnet/overview">
+                                <a href="/aspnet/core/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

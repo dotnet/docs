@@ -28,4 +28,4 @@ Like the [Xml Serializer Generator (sgen.exe)](../../standard/serialization/xml-
 
 ## [.NET Core Uninstall Tool](dotnet-core-uninstall.md)
 
-The [.NET Core Uninstall Tool (`dotnet-core-uninstall`)](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) is a tool that provides controlled clean-up of .NET Core SDKs and Runtimes on a system such that only the desired versions remain. A collection of options is available to specify which versions you want to uninstall. 
+The [.NET Core Uninstall Tool (`dotnet-core-uninstall`)](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) lets you clean-up of .NET Core SDKs and Runtimes on a system such that only the specified versions remain. A collection of options is available to specify which versions are uninstalled. 

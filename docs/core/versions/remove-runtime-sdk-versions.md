@@ -205,7 +205,7 @@ The documentation of the tool is available [here](../additional-tools/dotnet-cor
 
 ## Visual Studio dependencies on .NET Core SDK versions
 
-Visual Studio installers prior to Visual Studio 2019 16.3 install a standalone .NET Core SDK, which is listed in the Windows **Add/Remove Programs** dialog. Hence, be aware that removing .NET Core SDKs installed via the Visual Studio installer prior to Visual Studio 2019 16.3 may break the Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions.
+Visual Studio installers prior to Visual Studio 2019 16.3 called the standalone .NET Core SDK installer. As a result, these versions of the SDK appear in the Windows **Add/Remove Programs** dialog. Hence, be aware that removing .NET Core SDKs installed prior to Visual Studio 2019 16.3 may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
 
 | Visual Studio version | .NET Core SDK version |
 | -- | -- |

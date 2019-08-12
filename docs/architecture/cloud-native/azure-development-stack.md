@@ -2,7 +2,7 @@
 title: The Azure Cloud-Native Development Stack
 description: Architecting Cloud Native .NET Apps for Azure | The Azure Cloud-Native Development Stack
 author: robvet
-ms.date: 07/28/2019
+ms.date: 08/10/2019
 ---
 
 # The Azure Cloud-Native Development Stack
@@ -11,15 +11,11 @@ The Azure cloud offers a tightly integrated, but full and open stack for constru
 
 Working to embrace a wider range of developers, Microsoft is [making tremendous investments in open source](https://www.zdnet.com/article/why-microsoft-is-turning-into-an-open-source-company/) and cross-platform development tools.
 
-## Choosing an OS
+## The operating system becomes transparent
 
-For years, Microsoft and Linux vendors fought for control of the enterprise *server* market. Sides were formed, battle lines drawn. It sometimes resembled more of a religious battle. Linux symbolizing freedom, and Microsoft with a well understood, comprehensive platform.
+With the growth of modern development platforms and container orchestrators, the operating system has become more transparent - in terms of both development and deployment.
 
-### The operating system becomes transparent
-
-With the growth of modern development platforms and container orchestrators, the operating system has become more transparent.
-
-Nowadays, modern development platforms natively support cross-platform portability. Developers write an application in a preferred language, deploy it to the operating system of choice, and the platform runtime engine automatically handles the environment-specific dependencies. Later, that same application package can be redeployed to a different operating system and ran just the same with the appropriate runtime engine and configuration changes.
+Nowadays, modern development platforms natively support cross-platform portability. Developers construct applications on their favorite operating system. They write the code in a preferred language, When complete, it is deployed to the operating system of choice. The development platform runtime engine automatically handles the environment-specific dependencies. Later, that same application package can be redeployed to a different operating system and ran just the same with the appropriate runtime engine and configuration changes.
 
 The explosive growth of containers further obscures the underlying operating system. Containers allow applications to run independently of the operating system. "If you take a look at the way that containers have evolved, it's basically an evolution of the OS model we've had to this point," says Microsoft Azure CTO [Mark Russinovich](https://www.google.com/search?q=If+you+take+a+look+at+the+way+that+containers+have+evolved%2C+it%E2%80%99s+basically+an+evolution+of+the+OS+model+we%E2%80%99ve+had+to+this+point&rlz=1C1GCEU_enFR819US820&oq=If+you+take+a+look+at+the+way+that+containers+have+evolved%2C+it%E2%80%99s+basically+an+evolution+of+the+OS+model+we%E2%80%99ve+had+to+this+point&aqs=chrome..69i57.915j0j9&sourceid=chrome&ie=UTF-8). While the operating system still exists, its role has diminished. Instead, the container orchestrator has become the *de-facto operating system* of choice.
 
@@ -45,21 +41,23 @@ Fast-forward to 2019 and the [Microsoft .NET Core platform](https://dotnet.micro
 
 .NET Core plays especially well with microservice-based applications. It has many built-in features and open-source integration that simplify microservice development. All that said, the .NET Core stack with C\# is an excellent choice for building cloud-native applications in the Azure cloud.
 
-## Tooling: IDE vs. Editor
+### Visual Studio
 
 When building cloud-native applications with .NET Core, you have several development tools from which to choose.
-
-### Visual Studio
 
 At the top of the list is [Visual Studio](https://visualstudio.microsoft.com/). A full-featured IDE [Integrated Development Environment](https://learn.g2crowd.com/ide) for Windows, It includes compilers, debuggers, source control, and profiling tooling. It's a complete solution used primarily for .NET development.
 
 Visual Studio features built-in support of Docker container-based development and a rich set of web development tooling. It provides everything you need to develop, manage, and deploy complex microservice applications. In the latest version of Visual Studio, you can develop cross-platform applications without leaving the IDE.
 
-Rated as one of the [world's leading IDEs](https://www.g2crowd.com/categories/integrated-development-environment-ide), Visual Studio is available in a free fully functional [Community Edition](https://visualstudio.microsoft.com/vs/community/). 
+Rated as one of the [world's leading IDEs](https://www.g2crowd.com/categories/integrated-development-environment-ide), Visual Studio is available in a free fully functional [Community Edition](https://visualstudio.microsoft.com/vs/community/).
+
+### Visual Studio for Mac
+
+Microsoft also brings the Visual Studio experience to the Mac. [Visual Studio 2019 for Mac](https://docs.microsoft.com/visualstudio/mac/?view=vsmac-2019) shares the native macOS look and feel, but is built upon the same shared core from Visual Studio for Windows. The editors, debuggers and feature-set are near-identical. You can build ASP.NET Core web-based applications, game with Unity, and mobile apps for Andriod and iOS using Xamarin.
 
 ### Visual Studio Code
 
-More recently, Microsoft has released [Visual Studio Code](https://code.visualstudio.com/docs/editor/whyvscode). A free, lightweight, and cross-platform editor, it can be used to view, edit, run, and debug source code for applications. 
+More recently, Microsoft has released [Visual Studio Code](https://code.visualstudio.com/docs/editor/whyvscode). A free, lightweight, and cross-platform editor, it can be used to view, edit, run, and debug source code for applications.
 
 It supports macOS, Linux, and Windows.
 
@@ -69,11 +67,27 @@ Both Visual Studio and Visual Studio Code have tight integration with the Azure 
 
 ### Other Open Source Editors
 
-Developers can use other open-source development tools to build .NET Core cloud-native applications. Figure 1-12 presents many of them.
+Developers can use other standard open-source development tools to build .NET Core cloud-native applications, including Atom, Vim, Brackets. eMacs, and Sublime Text.
 
-![Cross-platform editors for .NET Core](media/cross-platform-editors-for-dotnet-core.png)
+## Azure CLI
 
-**Figure 1-12**. Cross-platform editors for .NET Core
+The [Azure CLI (Command line interface)](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) is a cross-platform command-line tool for managing Azure resources. It's easy to learn, high intuitive, and the perfect tool for buidling custom automation that works with Azure resources.
+
+Figure 1-9 shows the platforms supported by the Azure CLI.
+
+![Platforms supported by the Azure CLI](media/platforms-supported-by-the-azure-cli.png)  
+
+**Figure 1-9**. Platforms supported by the Azure CLI
+
+Note in the previous image [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?view=azure-cli-latest). It is an interactive, browser-based command shell for managing Azure resources that is available in the Azure portal. It provides flexibility allowing developers to choose the shell experience that best suits their needs. Linus users can opt for a Bash experience, while Windows users can opt for PowerShell.
+
+Figure 1-10 shows Azure Cloud Shell.
+
+![Azure Cloud Shell](media/azure-cloud-shell.png)  
+
+**Figure 1-10**. Azure Cloud Shell
+
+Step #1 in the previous image shows how the Azure Cloud Shell is invoked from the Azure Portal. Step #2 enables either a Bash or a PowerShell experience. Step #3 shows the command shell embedded inside of the Azure portal.
 
 ## Source control in GitHub
 
@@ -83,7 +97,7 @@ Fortunately, development teams have many available options when selecting a repo
 
 One of them is [GitHub](https://github.com/). Founded in 2009, GitHub is a popular web-based repository for hosting projects, documentation, and code. Apple, Amazon, Google, and many other large tech companies use GitHub. It uses the [Git](https://en.wikipedia.org/wiki/Git) distributed version control system as its foundation. GitHub adds its own features, including defect tracking, feature and pull requests, task management, and wikis for each code base.
 
-With over 28 million users, GitHub is the largest host of source code in the world. 
+With over 28 million users, GitHub is the largest host of source code in the world.
 
 In October of 2018, Microsoft purchased GitHub. Microsoft has pledged to keep GitHub as an [open platform](https://techcrunch.com/2018/06/04/microsoft-promises-to-keep-github-independent-and-open/) that any developer can plug into and extend. It continues to operate as an independent company.
 
@@ -97,11 +111,11 @@ GitHub offers plans for enterprise, team, professional, and free accounts.
 
 ### Continuous Integration
 
-[Continuous Integration (CI)](https://martinfowler.com/articles/continuousIntegration.html) establishes an automated *pipeline* approach to building, testing, and packaging applications. Committing your source code invokes the pipeline and triggers a series of steps that validate your release. Figure 1-13 shows the process.
+[Continuous Integration (CI)](https://martinfowler.com/articles/continuousIntegration.html) establishes an automated *pipeline* approach to building, testing, and packaging applications. Committing your source code invokes the pipeline and triggers a series of steps that validate your release. Figure 1-11 shows the process.
 
 ![ Steps in the CI Pipeline](media/steps-in-the-ci-pipeline.png)  
 
-**Figure 1-13**. Steps in the CI Pipeline
+**Figure 1-11**. Steps in the CI Pipeline
 
 The pipeline approach enables you to insert additional steps and checks to map the process to the deployment requirements of your organization.
 
@@ -109,23 +123,23 @@ The goal is to catch problems early in the development cycle when they're less e
 
 ### Continuous Deployment
 
-[Continuous Delivery(CD)](https://martinfowler.com/bliki/ContinuousDelivery.html) is closely related to CI. CD picks up the package built by the CI process and deploys it to a specified environment, such as QA or production. Figure 1-14 shows the CD process.
+[Continuous Delivery(CD)](https://martinfowler.com/bliki/ContinuousDelivery.html) is closely related to CI. CD picks up the package built by the CI process and deploys it to a specified environment, such as QA or production. Figure 1-12 shows the CD process.
 
 It can invoke additional steps such as integration and performance tests.
 
 ![Steps in the CD Pipeline](media/steps-in-the-cd-pipeline.png)
 
-**Figure 1-14**. Steps in the CD Pipeline
+**Figure 1-12**. Steps in the CD Pipeline
 
 The goal of CI/CD is an automated, predictable deployment that can be triggered on demand.
 
 ### Azure Pipelines
 
-The Azure cloud includes a new CI/CD service entitled [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/), which is part of the [Azure DevOps](https://azure.microsoft.com/services/devops/) offering shown in Figure 1-15.
+The Azure cloud includes a new CI/CD service entitled [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/), which is part of the [Azure DevOps](https://azure.microsoft.com/services/devops/) offering shown in Figure 1-11.
 
 ![Azure Pipelines in DevOps](media/azure-pipelines-in-azure-devops.png)
 
-**Figure 1-15**. Azure Pipelines in DevOps
+**Figure 1-11**. Azure Pipelines in DevOps
 
 Azure DevOps supports most Git providers and generates deployment pipelines for Linux, macOS, and Windows. It includes support for Java, .NET, JavaScript, Python, PHP, Go, XCode, and C++.
 
@@ -141,7 +155,24 @@ When considering cloud native, it important to build a [cloud-native](https://de
 
 ### References
 
-- [Lift and Shift with Containers Book](https://aka.ms/liftandshiftwithcontainersebook)
+- [Cloud Native Computing Foundation](https://www.cncf.io/)
+
+- [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
+
+- [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
+
+- [Cloud Native Patterns by Cornelia Davis](https://www.manning.com/books/cloud-native-patterns)
+
+- [Beyond the Twelve-Factor Application](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
+
+- [Uber Engineering’s Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
+
+- [How Netflix Deploys Code](https://www.infoq.com/news/2013/06/netflix/)
+
+- [Overload Control for Scaling WeChat Microservices](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf)
+
+
+
 
 >[!div class="step-by-step"]
 >[Previous](candidate-apps.md)

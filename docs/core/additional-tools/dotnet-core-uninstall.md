@@ -10,7 +10,7 @@ The [.NET Core Uninstall Tool (`dotnet-core-uninstall`)](https://dotnet.microsof
 
 The tool supports Windows and macOS. Linux is currently not supported.
 
-Note that the Windows version of this tool can only uninstall .NET Core SDKs and Runtimes that were installed using .NET Core SDK or Runtime installers.
+Note that the Windows version of this tool can only uninstall .NET Core SDKs and Runtimes that were installed using .NET Core SDK or Runtime installers. Prior to Visual Studio 2019 Update 16.3, the Visual Studio installer called the .NET Core SDK installer and these can be uninstalled with the tool. The `dotnet-core-uninstall list` command displays which SDKs can be uninstalled with the tool.  
 
 ## How to use the tool
 

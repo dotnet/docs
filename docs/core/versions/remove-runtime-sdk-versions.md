@@ -214,3 +214,16 @@ Visual Studio installers prior to Visual Studio 2019 16.3 called the standalone 
 | Visual Studio 2019 16.0 | .NET Core SDK 2.2.2xx, 2.1.6xx |
 | Visual Studio 2017 15.9 (Update 9) | .NET Core SDK 2.2.1xx, 2.1.5xx |
 | Visual Studio 2017 15.8 (Update 8) | .NET Core SDK 2.1.4xx |
+
+## Removing the NuGet Fallback Folder
+
+Prior to .NET Core SDK 3.0, the .NET Core SDK installers used the `NuGetFallbackFolder` to store a cache of NuGet packages. This cache was used during operations such as `dotnet restore` or `dotnet build /t:Restore`. The `NuGetFallbackFolder` is located at `C:\Program Files\dotnet\sdk` on Windows and at `/usr/local/share/dotnet/sdk` on macOS.
+
+In some cases you may want to remove this folder:
+
+* You are no longer doing .NET development with SDKs below .NET Core SDK 3.0.
+* You are doing development on lower SDKs, but you don't mind being on line and things being slower once.
+
+If you want to remove the NuGet Fallback folder, you can delete it, although you will need Admin privileges.
+
+It is generally undesirable to delete the `dotnet` folder. Doing so would remove any global tools you have installed. Also, on Windows, you will break Visual Studio 2019 Update 16.3 (run **Repair** to recover) and if there are SDK entries in the **Add/Remove Programs** dialog they will be orphaned.

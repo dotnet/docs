@@ -229,8 +229,6 @@
       href: keywords/add.md
     - name: get
       href: keywords/get.md
-    - name: global
-      href: keywords/global.md
     - name: partial (Type)
       href: keywords/partial-type.md
     - name: partial (Method)
@@ -328,7 +326,7 @@
     displayName: lambda
   - name: ":: operator"
     href: operators/namespace-alias-qualifier.md
-    displayName: "namespace alias qualifier"
+    displayName: "namespace alias qualifier, global namespace"
   - name: default operator
     href: operators/default.md
     displayName: default value, default literal, type default

@@ -44,7 +44,7 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [Setting Assembly Attributes](set-assembly-attributes.md)  
  Describes assembly attributes and how to set them.  
   
- [Creating and Using Strong-Named Assemblies](strong-named-assemblies.md)  
+ [Creating and Using Strong-Named Assemblies](create-and-use-strong-named-assemblies.md)  
  Describes how and why you sign an assembly with a strong name, and includes how-to topics.  
   
  [Delay Signing an Assembly](delay-sign-assembly.md)  
@@ -76,5 +76,5 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)  
  Describes how the runtime determines which assembly to use to fulfill a binding request.  
   
- [Reflection](../../csharp/programming-guide/concepts/attributes/reflection.md)  
+ [Reflection](../../framework/reflection-and-codedom/reflection.md)  
  Describes how to use the **Reflection** class to obtain information about an assembly.

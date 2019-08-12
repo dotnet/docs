@@ -63,4 +63,4 @@ sn -p keypair.snk public.snk
 
 ## See also
 
-- [Creating and Using Strong-Named Assemblies](strong-named-assemblies.md)
+- [Creating and Using Strong-Named Assemblies](create-and-use-strong-named-assemblies.md)

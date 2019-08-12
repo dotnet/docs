@@ -27,7 +27,7 @@ To discover the fully qualified name of an assembly in the global assembly cache
   
 - You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.  
   
- For more information about setting assembly attributes such as version, culture, and assembly name, see [Setting Assembly Attributes](set-assembly-attributes.md). For more information about giving an assembly a strong name, see [Creating and Using Strong-Named Assemblies](strong-named-assemblies.md).  
+ For more information about setting assembly attributes such as version, culture, and assembly name, see [Setting Assembly Attributes](set-assembly-attributes.md). For more information about giving an assembly a strong name, see [Creating and Using Strong-Named Assemblies](create-and-use-strong-named-assemblies.md).  
   
 ## Example  
  The following code example shows how to display the fully qualified name of an assembly containing a specified class to the console. Because it retrieves the name of an assembly that the app has already loaded, it does not matter whether the assembly is in the GAC.  
@@ -40,7 +40,7 @@ To discover the fully qualified name of an assembly in the global assembly cache
 
 - [Assembly Names](assembly-names.md)
 - [Creating Assemblies](create-assemblies.md)
-- [Creating and Using Strong-Named Assemblies](strong-named-assemblies.md)
+- [Creating and Using Strong-Named Assemblies](create-and-use-strong-named-assemblies.md)
 - [Global Assembly Cache](../../framework/app-domains/gac.md)
 - [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Programming with Assemblies](programming-with-assemblies.md)

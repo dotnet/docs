@@ -38,7 +38,7 @@ The .NET Framework, through configuration files, gives developers and administra
   
  As with all XML files, the syntax in configuration files is case-sensitive.  
   
- You specify configuration settings using predefined attributes, which are name/value pairs inside an element's start tag. The following example specifies two attributes (`version` and `href`) for the `<codeBase>` element, which specifies where the runtime can locate an assembly (for more information, see [Specifying an Assembly's Location](../../standard/assembly/assembly-location.md)).  
+ You specify configuration settings using predefined attributes, which are name/value pairs inside an element's start tag. The following example specifies two attributes (`version` and `href`) for the `<codeBase>` element, which specifies where the runtime can locate an assembly (for more information, see [Specifying an Assembly's Location](specify-assembly-location.md)).  
   
 ```xml  
 <codeBase version="2.0.0.0"  
@@ -101,7 +101,7 @@ The .NET Framework, through configuration files, gives developers and administra
  [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)  
  Describes how to specify the location of an assembly and which version of an assembly to use.  
   
- [Specifying an Assembly's Location](../../standard/assembly/assembly-location.md)  
+ [Specifying an Assembly's Location](specify-assembly-location.md)  
  Describes how to specify where the runtime should search for an assembly.  
   
  [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)  
@@ -116,7 +116,7 @@ The .NET Framework, through configuration files, gives developers and administra
 ## See also
 
 - [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
-- [Specifying an Assembly's Location](../../standard/assembly/assembly-location.md)
+- [Specifying an Assembly's Location](specify-assembly-location.md)
 - [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)
 - [ASP.NET Web Site Administration](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/6hy1xzbw(v=vs.90))
 - [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))

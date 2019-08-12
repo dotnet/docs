@@ -90,5 +90,5 @@ This example shows how to use friend assemblies with assemblies that have strong
 - [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)
 - [/keyfile](../../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)
 - [Sn.exe (Strong Name Tool)](../../../../framework/tools/sn-exe-strong-name-tool.md)
-- [Creating and Using Strong-Named Assemblies](../../../../standard/assembly/strong-named-assemblies.md)
+- [Creating and Using Strong-Named Assemblies](../../../../standard/assembly/create-and-use-strong-named-assemblies.md)
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)

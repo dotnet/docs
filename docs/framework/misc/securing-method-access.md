@@ -34,7 +34,7 @@ ms.author: "mairaw"
   
 - Require derived classes that override specific methods to have a specified identity or permission.  
   
- The following example shows how to help protect a public class for limited access by requiring that callers be signed with a particular strong name. This example uses the <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> with a **Demand** for the strong name. For task-based information on how to sign an assembly with a strong name, see [Creating and Using Strong-Named Assemblies](../../standard/assembly/strong-named-assemblies.md).  
+ The following example shows how to help protect a public class for limited access by requiring that callers be signed with a particular strong name. This example uses the <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> with a **Demand** for the strong name. For task-based information on how to sign an assembly with a strong name, see [Creating and Using Strong-Named Assemblies](../../standard/assembly/create-and-use-strong-named-assemblies.md).  
   
 ```vb  
 <StrongNameIdentityPermissionAttribute(SecurityAction.Demand, PublicKey := "…hex…", Name := "App1", Version := "0.0.0.0")>  _  

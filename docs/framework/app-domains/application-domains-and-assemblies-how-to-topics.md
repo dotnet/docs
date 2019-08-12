@@ -45,7 +45,7 @@ The following sections contain links to all How-to topics found in the conceptua
   
 - [How to: Remove an Assembly from the Global Assembly Cache](../../../docs/framework/app-domains/how-to-remove-an-assembly-from-the-gac.md)  
   
-- [How to: View Assembly Contents](../../standard/assembly/assembly-contents.md)  
+- [How to: View Assembly Contents](../../standard/assembly/how-to-view-assembly-contents.md)  
   
 ## See also
 

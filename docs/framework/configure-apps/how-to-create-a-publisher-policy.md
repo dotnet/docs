@@ -38,7 +38,7 @@ Vendors of assemblies can state that applications should use a newer version of 
 </configuration>  
 ```  
   
- To learn how to specify a code base, see [Specifying an Assembly's Location](../../standard/assembly/assembly-location.md).  
+ To learn how to specify a code base, see [Specifying an Assembly's Location](specify-assembly-location.md).  
   
 ## Creating the Publisher Policy Assembly  
  Use the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to create the publisher policy assembly.  

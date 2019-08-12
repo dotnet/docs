@@ -31,7 +31,7 @@ All versioning of assemblies that use the common language runtime is done at the
   
  ![Diagram that shows steps in assembly binding request resolution.](./media/assembly-versioning/resolve-assembly-binding-request.gif)
   
- For more information about configuring applications, see [Configuring Apps](../../../api/index.md). For more information about binding policy, see [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md).  
+ For more information about configuring applications, see [Configuring Apps](../../framework/configure-apps/index.md). For more information about binding policy, see [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md).  
   
 ## Version Information  
  Each assembly has two distinct ways of expressing version information:  
@@ -53,7 +53,7 @@ All versioning of assemblies that use the common language runtime is done at the
   
  The runtime distinguishes between regular and strong-named assemblies for the purposes of versioning. Version checking only occurs with strong-named assemblies.  
   
- For information about specifying version binding policies, see [Configuring Apps](../../../api/index.md). For information about how the runtime uses version information to find a particular assembly, see [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md).  
+ For information about specifying version binding policies, see [Configuring Apps](../../framework/configure-apps/index.md). For information about how the runtime uses version information to find a particular assembly, see [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md).  
   
 ### Assembly Informational Version  
  The informational version is a string that attaches additional version information to an assembly for informational purposes only; this information is not used at run time. The text-based informational version corresponds to the product's marketing literature, packaging, or product name and is not used by the runtime. For example, an informational version could be "Common Language Runtime version 1.0" or "NET Control SP 2". On the Version tab of the file properties dialog in Microsoft Windows, this information appears in the item "Product Version".  
@@ -66,6 +66,6 @@ All versioning of assemblies that use the common language runtime is done at the
 ## See also
 
 - [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Configuring Apps](../../../api/index.md)
+- [Configuring Apps](../../framework/configure-apps/index.md)
 - [Setting Assembly Attributes](set-assembly-attributes.md)
 - [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)

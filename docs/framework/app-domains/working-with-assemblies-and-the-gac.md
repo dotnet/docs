@@ -59,7 +59,7 @@ If you intend to share an assembly among several applications, you can install i
  [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
  Describes the global assembly cache.  
   
- [How to: View Assembly Contents](../../standard/assembly/assembly-contents.md)  
+ [How to: View Assembly Contents](../../standard/assembly/how-to-view-assembly-contents.md)  
  Explains how to use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) information in an assembly.  
   
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  

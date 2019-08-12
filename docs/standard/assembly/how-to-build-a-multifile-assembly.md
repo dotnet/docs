@@ -94,6 +94,6 @@ This article explains how to create a multifile assembly and provides code that 
 ## See also
 
 - [Creating Assemblies](create-assemblies.md)
-- [How to: View Assembly Contents](../../framework/app-domains/assembly-contents.md)
+- [How to: View Assembly Contents](how-to-view-assembly-contents.md)
 - [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Multifile Assemblies](multifile-assemblies.md)

@@ -35,7 +35,7 @@ Specifies the filename containing the cryptographic key.
   
  Note that a key file might contain only the public key.  
   
- For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/strong-named-assemblies.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign-assembly.md).  
+ For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-and-use-strong-named-assemblies.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign-assembly.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

@@ -1,5 +1,5 @@
 ---
-title: "Scope of Default Namespaces in C#1"
+title: "Scope of Default Namespaces in C#"
 ms.date: 07/20/2015
 ms.assetid: fe826236-830f-457a-9027-7ad62c909fae
 ---

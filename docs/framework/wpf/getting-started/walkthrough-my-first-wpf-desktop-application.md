@@ -205,7 +205,7 @@ In this section, you'll add two pages and an image to the application.
 
     [!code-vb[ExpenseIt#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseReportPage.xaml.vb#5)]
 
-1. Add an image named *watermark.png* to the project. You can create your own image, copy the file from the sample code, or get it [here](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/WalkthroughFirstWPFApp).
+1. Add an image named *watermark.png* to the project. You can create your own image, copy the file from the sample code, or get it [here](https://raw.githubusercontent.com/microsoft/WPF-Samples/master/Getting%20Started/WalkthroughFirstWPFApp/csharp/watermark.png).
 
     1. Right-click on the project node and select **Add** > **Existing Item**, or press **Shift**+**Alt**+**A**.
 

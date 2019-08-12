@@ -1,5 +1,5 @@
 ---
-title: "CorElementType Enumeration1"
+title: "CorElementType Enumeration"
 ms.date: "03/30/2017"
 api_name:
   - "CorElementType"
@@ -17,7 +17,7 @@ topic_type:
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# CorElementType Enumeration1
+# CorElementType Enumeration
 
 Specifies a common language runtime <xref:System.Type>, a type modifier, or information about a type in a metadata type signature.
 

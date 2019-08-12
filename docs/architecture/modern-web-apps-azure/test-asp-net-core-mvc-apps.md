@@ -147,7 +147,7 @@ Unit testing this method is made difficult by its direct dependency on `System.I
 If you can't unit test the file system behavior directly, and you can't test the route, what is there to test? Well, after refactoring to make unit testing possible, you may discover some test cases and missing behavior, such as error handling. What does the method do when a file isn't found? What should it do? In this example, the refactored method looks like this:
 
 ```csharp
-[HttpGet("[controller]/pic/{id}")\]
+[HttpGet("[controller]/pic/{id}")]
 public IActionResult GetImage(int id)
 {
     byte[] imageBytes;

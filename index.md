@@ -303,7 +303,7 @@ ms.date: "12/04/2018"
                                 </a>
                             </li>
                             <li>
-                                <a href="/aspnet/overview">
+                                <a href="/aspnet/core/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -313,8 +313,8 @@ ms.date: "12/04/2018"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>What is ASP.NET?</h3>
-                                                    <p>Learn how to build ASP.NET web applications.</p>
+                                                    <h3>What is ASP.NET Core?</h3>
+                                                    <p>Learn how to build ASP.NET Core web applications.</p>
                                                 </div>
                                             </div>
                                         </div>

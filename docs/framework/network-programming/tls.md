@@ -60,7 +60,9 @@ The following sections show how to verify you're not using a specific TLS or SSL
 
 ### For HTTP networking
 
-<xref:System.Net.ServicePointManager>, using .NET Framework 4.7 and later versions, defaults to the OS choosing the best security protocol and version. To get the default OS best choice, if possible, don't set a value for the <xref:System.Net.ServicePointManager.SecurityProtocol> property. Otherwise, set it to <xref:System.Net.SecurityProtocolType.SystemDefault>.
+<xref:System.Net.ServicePointManager>, using .NET Framework 4.7 and later versions, will use the default security protocol configured in the OS. To get the default OS choice, if possible, don't set a value for the <xref:System.Net.ServicePointManager.SecurityProtocol> property which equals to <xref:System.Net.SecurityProtocolType.SystemDefault>.
+
+The <xref:System.Net.SecurityProtocolType.SystemDefault> setting will cause the <xref:System.Net.ServicePointManager> to use only the default TLS protocol configured in the operating system. This means on Windows 7 it will use TLS 1.0 and on Windows 8 and 10 it will use TLS 1.2.
 
 The remainder of this article is not relevant when targeting .NET Framework 4.7 or later versions for HTTP networking.
 

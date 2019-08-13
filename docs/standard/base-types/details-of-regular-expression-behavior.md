@@ -37,7 +37,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
      [!code-csharp[Conceptual.RegularExpressions.Design#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lazy1.cs#1)]
      [!code-vb[Conceptual.RegularExpressions.Design#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lazy1.vb#1)]  
   
-     The greedy and lazy versions of this regular expression are defined as shown in the following table.`  
+     The greedy and lazy versions of this regular expression are defined as shown in the following table:
   
     |Pattern|Description|  
     |-------------|-----------------|  

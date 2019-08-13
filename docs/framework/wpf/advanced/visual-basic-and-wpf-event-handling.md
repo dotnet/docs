@@ -34,7 +34,7 @@ For the Microsoft Visual Basic .NET language specifically, you can use the langu
  When a [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] page is compiled, the intermediate file declares `Friend` `WithEvents` references to every element on the page that has a <xref:System.Windows.FrameworkContentElement.Name%2A> property set (or [x:Name Directive](../../xaml-services/x-name-directive.md) declared). Each named instance is potentially an element that can be assigned to a handler through `Handles`.  
   
 > [!NOTE]
->  Within [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], [!INCLUDE[TLA2#tla_intellisense](../../../../includes/tla2sharptla-intellisense-md.md)] can show you completion for which elements are available for a `Handles` reference in a page. However, this might take one compile pass so that the intermediate file can populate all the `Friends` references.  
+>  Within [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], IntelliSense can show you completion for which elements are available for a `Handles` reference in a page. However, this might take one compile pass so that the intermediate file can populate all the `Friends` references.  
   
 ## See also
 

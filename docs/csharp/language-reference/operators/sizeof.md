@@ -11,7 +11,7 @@ ms.assetid: c548592c-677c-4f40-a4ce-e613f7529141
 ---
 # sizeof operator (C# reference)
 
-The `sizeof` operator returns the number of bytes occupied by a variable of a given type. An argument of the `sizeof` operator must be the name of an [unmanaged type](../builtin-types/unmanaged-types.md) or a type parameter that is [constrained](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint) to be an unmanaged type.
+The `sizeof` operator returns the number of bytes occupied by a variable of a given type. The argument to the `sizeof` operator must be the name of an [unmanaged type](../builtin-types/unmanaged-types.md) or a type parameter that is [constrained](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint) to be an unmanaged type.
 
 The `sizeof` operator requires an [unsafe](../keywords/unsafe.md) context. However, the expressions presented in the following table are evaluated in compile time to the corresponding constant values and don't require an unsafe context:
 

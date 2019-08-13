@@ -22,13 +22,13 @@ The following table shows the default values of C# types:
 |[struct](struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|
 |Any [nullable value type](../../programming-guide/nullable-types/index.md)|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined. That default value is also known as the *null* value of the nullable value type.|
 
-Use the [default value expression](../../programming-guide/statements-expressions-operators/default-value-expressions.md) to produce the default value of a type, as the following example shows:
+Use the [default operator](../operators/default.md) to produce the default value of a type, as the following example shows:
 
 ```csharp
 int a = default(int);
 ```
 
-Beginning with C# 7.1, you can use the [`default` literal](../../programming-guide/statements-expressions-operators/default-value-expressions.md#default-literal-and-type-inference) to initialize a variable with the default value of its type:
+Beginning with C# 7.1, you can use the [`default` literal](../operators/default.md#default-literal) to initialize a variable with the default value of its type:
 
 ```csharp
 int a = default;

@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects using deep learning with ONNX and ML.NET'
 description: This tutorial illustrates how to use a pre-trained ONNX deep learning model in ML.NET to detect objects in images.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 07/31/2019
+ms.date: 08/01/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use a pre-trained model in an object detection scenario to detect objects in images using ONNX.
@@ -71,7 +71,7 @@ The Open Neural Network Exchange (ONNX) is an open source format for AI models. 
 
 ![](./media/object-detection-onnx/onnx-frameworks.png)
 
-The pre-trained Tiny YOLOv2 model is stored in ONNX format, a serialized representation of the layers and learned patterns of those layers. In ML.NET, interoperability with ONNX is achieved with the [`ImageAnalytics`](xref:Microsoft.ML.Transforms.Image) and [`OnnxTransformer`](xref:Microsoft.ML.Transforms.Onnx.OnnxTransformer) NuGet packages. The [`ImageAnalytics`](xref:Microsoft.ML.Transforms.Image) package contains a series of transforms that take an image and encode it into numerical values that can be used as input into a model or training pipeline. The [`OnnxTransformer`](xref:Microsoft.ML.Transforms.Onnx.OnnxTransformer) package leverages the ONNX Runtime to load an ONNX model and use it to make predictions based on input provided. 
+The pre-trained Tiny YOLOv2 model is stored in ONNX format, a serialized representation of the layers and learned patterns of those layers. In ML.NET, interoperability with ONNX is achieved with the [`ImageAnalytics`](xref:Microsoft.ML.Transforms.Image) and [`OnnxTransformer`](xref:Microsoft.ML.Transforms.Onnx.OnnxTransformer) NuGet packages. The [`ImageAnalytics`](xref:Microsoft.ML.Transforms.Image) package contains a series of transforms that take an image and encode it into numerical values that can be used as input into a prediction or training pipeline. The [`OnnxTransformer`](xref:Microsoft.ML.Transforms.Onnx.OnnxTransformer) package leverages the ONNX Runtime to load an ONNX model and use it to make predictions based on input provided. 
 
 ![](./media/object-detection-onnx/onnx-ml-net-integration.png)
 
@@ -255,7 +255,7 @@ The model segments an image into a `13 x 13` grid, where each grid cell is `32px
 - `y` the y position of the bounding box center relative to the grid cell it's associated with.
 - `w` the width of the bounding box.
 - `h` the height of the bounding box. 
-- `o` the confidence value that an object exists within the bounding box, also known as Abjectness score.
+- `o` the confidence value that an object exists within the bounding box, also known as objectness score.
 - `p1-p20` class probabilities for each of the 20 classes predicted by the model.
 
 In total, the 25 elements describing each of the 5 bounding boxes make up the 125 elements contained in each grid cell.
@@ -339,7 +339,6 @@ Now that the classes for dimensions and bounding boxes are created, it's time to
     - `CELL_WIDTH` is the width of one cell in the image grid.
     - `CELL_HEIGHT` is the height of one cell in the image grid.
     - `channelStride` is the starting position of the current cell in the grid.
-
 
     When the model scores an image, it divides the `416px x 416px`input into a grid of cells the size of `13 x 13`. Each cell contains is `32px x 32px`. Within each cell, there are 5 bounding boxes each containing 5 features (x, y, width, height, confidence). In addition, each bounding box contains the probability of each of the classes which in this case is 20. Therefore, each cell contains 125 pieces of information (5 features + 20 class probabilities). 
 
@@ -650,7 +649,6 @@ Below that, use the `DrawBoundingBox` method to draw the bounding boxes on the i
 Lastly, add some logging logic with the `LogDetectedObjects` method.
 
 [!code-csharp [LogPredictionsOutput](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L54)]
-
 
 After the try-catch statement, add additional logic to indicate the process is done running.
 

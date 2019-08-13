@@ -66,7 +66,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
 - an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../../csharp/language-reference/keywords/enum.md) or a [struct](../../../csharp/programming-guide/classes-and-structs/structs.md);  
   
-- an expression of the form [default(ValType)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md),  where `ValType` is a value type.  
+- an expression of the form [default(ValType)](../../../csharp/language-reference/operators/default.md),  where `ValType` is a value type.  
   
  Optional parameters are defined at the end of the parameter list, after any required parameters. If the caller provides an argument for any one of a succession of optional parameters, it must provide arguments for all preceding optional parameters. Comma-separated gaps in the argument list are not supported. For example, in the following code, instance method `ExampleMethod` is defined with one required and two optional parameters.  
   

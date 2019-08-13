@@ -137,7 +137,7 @@ namespace Prime.UnitTests.Services
         
         private PrimeService CreatePrimeService()
         {
-             return new PrimerService();
+             return new PrimeService();
         }
     }
 }

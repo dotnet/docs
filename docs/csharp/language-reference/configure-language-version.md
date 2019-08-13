@@ -23,7 +23,7 @@ The compiler determines a default based on these rules:
 
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. This ensures that you can use the latest features that are guaranteed to work with that preview in any environment without affecting your projects that target a released .NET Core version.
 
-## Overriding a default
+## Override a default
 
 If you must specify your C# version explicitly, you can do so in several ways:
 
@@ -33,7 +33,7 @@ If you must specify your C# version explicitly, you can do so in several ways:
 
 ### Edit the project file
 
-You can set the language version in your project file. For example, if you explicitly wanted access to preview features, you could do add an element like this:
+You can set the language version in your project file. For example, if you explicitly want access to preview features, add an element like this:
 
 ```xml
 <PropertyGroup>
@@ -41,7 +41,7 @@ You can set the language version in your project file. For example, if you expli
 </PropertyGroup>
 ```
 
-The value `preview` uses the latest available preview C# language that your compiler supports.
+The value `preview` uses the latest available preview C# language version that your compiler supports.
 
 ### Configure multiple projects
 

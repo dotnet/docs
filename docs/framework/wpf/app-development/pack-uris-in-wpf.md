@@ -156,7 +156,7 @@ The following example shows the pack [!INCLUDE[TLA2#tla_uri](../../../../include
 `pack://application:,,,/Subfolder/ContentFile.xaml`
 
 > [!NOTE]
-> [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] content files cannot be navigated to. The [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] scheme only supports navigation to [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] files that are located at the site of origin.
+> HTML content files cannot be navigated to. The [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] scheme only supports navigation to HTML files that are located at the site of origin.
 
 <a name="The_siteoforigin_____Authority"></a>
 

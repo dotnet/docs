@@ -311,7 +311,7 @@
         },
         {
             "source_path": "docs/core/tutorials/libraries-with-vs.md",
-            "redirect_url": "/dotnet/csharp/getting-started/library-with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
         },
         {
             "source_path": "docs/core/tutorials/target-dotnetcore-with-msbuild.md",
@@ -406,7 +406,7 @@
         },
         {
             "source_path": "docs/csharp/getting-started/library-with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/getting-started/library-with-visual-studio",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio",
             "redirect_document_id": true
         },
         {
@@ -530,6 +530,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/floating-point-types-table.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/global.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/namespace-alias-qualifier"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/implicit.md",
@@ -1012,7 +1016,7 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/default",
             "redirect_document_id": true
         },
         {
@@ -1126,6 +1130,10 @@
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/conversion-operators.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/default-value-expressions.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/default"
         },
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md",
@@ -2774,6 +2782,10 @@
         {
             "source_path": "docs/tutorials/index.md",
             "redirect_url": "/dotnet/samples-and-tutorials/"
+        },
+        {
+            "source_path": "docs/visual-basic/sample-applications.md",
+            "redirect_url": "https://github.com/dotnet/samples/tree/master/snippets/visualbasic"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/customizing-extending-my/customizing-projects-and-extending-my.md",

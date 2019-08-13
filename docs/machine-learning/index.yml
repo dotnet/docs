@@ -29,10 +29,11 @@ sections:
     - html: <a href="/dotnet/machine-learning/tutorials/iris-clustering">Categorize flowers by characteristics using clustering</a>
     - html: <a href="/dotnet/machine-learning/tutorials/movie-recommendation">Create a movie recommender with matrix factorization</a>
     - html: <a href="/dotnet/machine-learning/tutorials/image-classification">Build a custom image classifier with TensorFlow</a>
+    - html: <a href="/dotnet/machine-learning/tutorials/object-detection-onnx">Detect objects in images with ONNX</a>
 - title: Reference and Resources
   items:
   - type: paragraph
-    text: 'The ML.NET API has two sets of packages: release components and preview components. The release API contains components for data handling, algorithms for binary classification, multiclass classification, regression, anomaly detection and ranking, model saving and loading, and much more! The preview API contains ONNX and TensorFlow model handling, algorithms for recommendation tasks, and components to process time-series data.'
+    text: 'The ML.NET API has two sets of packages: release components and preview components. The release API contains components for data handling, algorithms for binary classification, multiclass classification, regression, anomaly detection, time series and forecasting, ranking, model saving and loading, ONNX and TensorFlow model handling, and much more! The preview API contains algorithms for recommendation tasks, and support for standard deep learning models.'
   - type: list
     style: unordered
     items:

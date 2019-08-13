@@ -18,7 +18,7 @@ ms.author: "ronpet"
 
 <a name="top"></a> In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:
 
-- Enables you to develop your application without having to free memory.
+- Enables you to develop your application without having to manually free memory for objects you create.
 
 - Allocates objects on the managed heap efficiently.
 

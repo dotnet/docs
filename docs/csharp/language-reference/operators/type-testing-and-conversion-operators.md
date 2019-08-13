@@ -113,7 +113,7 @@ Other use of parentheses is to specify the order in which to evaluate operations
 
 ## typeof operator
 
-The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type. An argument of the `typeof` operator must be the name of a type or a type parameter, as the following example shows:
+The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type. The argument to the `typeof` operator must be the name of a type or a type parameter, as the following example shows:
 
 [!code-csharp-interactive[typeof operator](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#TypeOf)]
 

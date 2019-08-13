@@ -122,7 +122,7 @@ There can be many more cross-cutting concerns offered by the API Gateways produc
 
 [Azure API Management](https://azure.microsoft.com/services/api-management/) (as shown in Figure 4-14) not only solves your API Gateway needs but provides features like gathering insights from your APIs. If you're using an API management solution, an API Gateway is only a component within that full API management solution.
 
-![Azure API Management solves both your API Gateway and Management needs like logging, security, metering, etc.](./media/image14.png)
+![Azure API Management solves both your API Gateway and Management needs like logging, security, metering, etc.](./media/api-gateway-azure-api-management.png)
 
 **Figure 4-14**. Using Azure API Management for your API Gateway
 

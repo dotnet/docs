@@ -267,6 +267,14 @@
       href: core/docker/build-container.md
     - name: Container Tools in Visual Studio
       href: /visualstudio/containers/overview
+  - name: Diagnostic tools
+    items:
+    - name: Overview
+      href: core/diagnostics/index.md
+    - name: Managed debuggers
+      href: core/diagnostics/managed-debuggers.md
+    - name: Logging and tracing
+      href: core/diagnostics/logging-tracing.md
   - name: Unit Testing
     href: core/testing/index.md
     items:
@@ -595,14 +603,16 @@
     items:
     - name: C# Type system
       href: csharp/programming-guide/types/index.md
+    - name: Nullable reference types
+      href: csharp/nullable-references.md
+    - name: Describe nullable APIs using attributes and constraints
+      href: csharp/nullable-attributes.md
     - name: Namespaces
       href: csharp/programming-guide/namespaces/index.md
     - name: Basic Types
       href: csharp/basic-types.md
     - name: Classes
       href: csharp/programming-guide/classes-and-structs/classes.md
-    - name: Nullable reference types
-      href: csharp/nullable-references.md
     - name: Structs
       href: csharp/structs.md
     - name: Tuples

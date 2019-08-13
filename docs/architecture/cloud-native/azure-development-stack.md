@@ -165,6 +165,8 @@ When considering cloud native, it important to build a [cloud-native](https://de
 
 - [Beyond the Twelve-Factor Application](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
 
+- [What is Infrastructure as Code](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code)
+
 - [Uber Engineering’s Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
 
 - [How Netflix Deploys Code](https://www.infoq.com/news/2013/06/netflix/)

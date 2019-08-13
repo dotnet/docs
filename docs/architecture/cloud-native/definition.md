@@ -20,15 +20,21 @@ The Cloud Native Computing Foundation provides an [official definition](https://
 
 Applications have become increasingly complex with users demanding more and more. Users expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. They'll easily move to your competitor.
 
-Cloud native is much about *speed* and *agility*. Business systems are evolving from enabling business capabilities to weapons of strategic transformation, accelerating business velocity and growth. It’s imperative to get ideas to market immediately. Figure 1-1 presents three pioneers who have implemented these techniques. Think about the speed, agility, and scalability they've achieved.
+Cloud native is much about *speed* and *agility*. Business systems are evolving from enabling business capabilities to weapons of strategic transformation, accelerating business velocity and growth. It’s imperative to get ideas to market immediately. 
 
-![Companies using cloud native to embrace agility](media/companies-embracing-cloud-native.png)
 
-**Figure 1-1**. Companies using cloud native to embrace agility
+The following table highlights companies who have implemented these techniques. Think about the speed, agility, and scalability they've achieved.
 
-As you can see, Netflix, Uber, and WeChat expose systems that consist of hundreds of independent microservices. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application and indivdiually scale those areas as needed.
+|  |  |
+| :-------- | :-------- |
+| Netflix | Has 600+ services in production. Deploys a hundred times per day. |
+| Uber | Has 1,000+ services stored in production. Deploys several thousand service builds each week. |
+| WeChat | Has 300+ services in production. Makes almost 1,000 changes per day. |
 
-The speed and agility of cloud native derive from a number of ingredients, including system architecture and infrastructure, copupled with the six capabilities highlighted in blue in Figure 1-2.
+
+As you can see, Netflix, Uber, and WeChat expose systems that consist of hundreds of independent microservices. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application and individually scale those areas as needed.
+
+The speed and agility of cloud native derive from a number of ingredients, including system architecture and infrastructure, coupled with the six capabilities highlighted in blue in Figure 1-2.
 
 ![Capabilities of cloud-native apps](media/capabilities-of-cloud-native-apps.png)
 
@@ -132,11 +138,6 @@ Figure 1-3 contrasts a monolithic application approach with a microservices appr
 
 **Figure 1-3.** Monolithic deployment versus microservices
 
-
-
->> Microservices can be created in any modern dev platform. Touch on langugaes and dev tools???
-
-
 ### Why microservices?
 
 Microservice provide agility.
@@ -145,11 +146,15 @@ Each microservice has an autonomous lifecycle and evolve independently and deplo
 
 Each microservice can scale independently. Instead of scaling the entire application as a single unit, you scale out only those services that require more processing power or network bandwidth. This  fine-grained approach to scaling provides for greater control of your system and helps to reduce overall costs as you scale portions of your system, not everything.
 
+### Developing microservices
+
+>> Microservices can be created in any modern dev platform. Touch on languages and dev tools???
+
 An excellent reference guide for microservices is [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/standard/microservices-architecture/).
 
 ## Containers…
 
-Nowadays, it natural to hear the term *container* mentioned in any converstaion concerning *cloud native*. In her book, [Cloud Native Patterns](https://www.manning.com/books/cloud-native-patterns), author Cornelia Davis observes that, "Containers are a great enabler of cloud-native software." So much so that the Cloud Native Computing Foundation places microservice containerization as the [first step](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png) for enterprises starting their cloud native journey.
+Nowadays, it natural to hear the term *container* mentioned in any conversation concerning *cloud native*. In her book, [Cloud Native Patterns](https://www.manning.com/books/cloud-native-patterns), author Cornelia Davis observes that, "Containers are a great enabler of cloud-native software." So much so that the Cloud Native Computing Foundation places microservice containerization as the [first step](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png) for enterprises starting their cloud native journey.
 
 To containerize a microservice, developers package their code and its required infrastructure (dependencies and runtime) into a binary called a container [image](https://docs.docker.com/glossary/?term=image). Images are stored to a [container registry](https://azure.microsoft.com/services/container-registry/) in a public cloud. When needed, the image is transformed into a container instance. The instance runs on any computer which has the Docker runtime engine installed.
 
@@ -166,7 +171,7 @@ Figure 1-4 shows three different microservices, each in its own container, runni
 In the previous image, note how each container maintains its own set of dependencies and runtime, which can be different. Here, we see different versions of the Product microservice running on the same host. Each container shares a slice of the underlying host operating system, memory and processor, but is isolated from one another. 
 
 Containers support both Linux and Windows workloads. The Azure cloud openly embraces both, and it's Linux, not Windows Server, that has become the most popular operating system in Azure.
-  
+
 ### Why containers?
 
 Containers provide portability and guarantee consistency across environments. By encapsulating everything into a single package, you *isolate* the microservice and its dependencies from the underlying infrastructure. 
@@ -178,7 +183,7 @@ You can deploy that same container in any environment that has the Docker runtim
 
 By sharing the underlying operating system and host resources, containers have a much smaller footprint than a full virtual machine. The smaller size increases the *density*, or number of microservices, that a given host can run at one time.
 
-While tools such as Docker create images and run containers, you also need tools to manage them. Conatiner management is done with a special software program called a container orchestrator. When operating at scale, container orchestration is essential. 
+While tools such as Docker create images and run containers, you also need tools to manage them. Container management is done with a special software program called a container orchestrator. When operating at scale, container orchestration is essential. 
 
 Figure 1-6 shows common management tasks that container orchestrators perform.
 
@@ -199,7 +204,7 @@ The following table highlights the management tasks that container orchestrators
 | Service Discovery | Enable containers to locate each other.|
 | Rolling Upgrades | Coordinate incremental upgrades to avoid downtime and automatically rollback problematic changes.|
 
-While several container orchestators exist, [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) has become the de facto standard for the cloud-native world. It's a portable, extensible, open-source platform for managing conatinerized workloads. 
+While several container orchestrators exist, [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) has become the de facto standard for the cloud-native world. It's a portable, extensible, open-source platform for managing containerized workloads. 
 
 You could host your own instance of Kubernetes, but then you'd be responsible for provisioning and managing its resources - which can be complex. The Azure cloud features Kubernetes as a managed service, [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). Kubernetes as a managed service allows you fully leverage its features, without having to install and maintain it.
 
@@ -207,9 +212,9 @@ You could host your own instance of Kubernetes, but then you'd be responsible fo
 
 Most developers build code on their local computers. They install the required frameworks, libraries, and runtimes and construct their application. When complete, the code is unit tested and checked into a team repository for future use.
 
-Cloud-native systems, however, consist of large numbers of interrelated microservices. Running the entire applicaiton on a local computer can be difficult, if not impossible. A common alternative involves maintaining a set of mock dependencies to enable end-to-end testing on the local machine. However, their creation can be time-consuming and lead to subtle bugs if not kept current.
+Cloud-native systems, however, consist of large numbers of interrelated microservices. Running the entire application on a local computer can be difficult, if not impossible. A common alternative involves maintaining a set of mock dependencies to enable end-to-end testing on the local machine. However, their creation can be time-consuming and lead to subtle bugs if not kept current.
 
-Cloud-native development teams often containerize their development cycle. They write code in Docker containers and run the application in a shared development cluster in the cloud. New tooling innovations in Visual Studio and [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) help facitliate this new approach.
+Cloud-native development teams often containerize their development cycle. They write code in Docker containers and run the application in a shared development cluster in the cloud. New tooling innovations in Visual Studio and [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) help facilitate this new approach.
 
 ## Backing services...
 
@@ -227,13 +232,13 @@ Cloud providers offer a rich assortment of *managed backing services.* Instead o
 
 Cloud-native systems more often favor managed backing services from cloud vendors. The savings in time and labor are great. The operational risk of hosting your own and experiencing trouble can get expensive fast.
 
-When constructing cloud-native applications, it is a best practice to treat a backing service as an *attached resource*, bound to your containerized microservice by a URL and credentials stored in an external configruation. This guidance is explicity spelled out in the [Twelve-Factor Application](https://12factor.net/), disccused earlier in the chapter.
+When constructing cloud-native applications, it is a best practice to treat a backing service as an *attached resource*, bound to your containerized microservice by a URL and credentials stored in an external configuration. This guidance is explicitly spelled out in the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
 
 >*Factor \#4* specifies that "backing services should be configurable, accessible from a URL, and easily interchanged."
 
 >*Factor \#3* specifies that "configuration information should be externalized outside of the microservice code."
 
-With this pattern, each backing service is dyamically bound to the containerized microservice and can be attached and detached without code changes. For example, you might promote your microservice from QA to a staging environment. After provisioning the backing services to staging, you would update the bindings in the microservice configuration to point to the new resources and inject them into your container at startup. 
+With this pattern, each backing service is dynamically bound to the containerized microservice and can be attached and detached without code changes. For example, you might promote your microservice from QA to a staging environment. After provisioning the backing services to staging, you would update the microservice binding configuration to point to the new resources and inject them into your container at startup. 
 
 Finally, a microservice should never directly reference an API for a backing service. Cloud vendors provide libraries for you to communicate with their proprietary backing services. Directly communicating with these libraries in your code lock you into that backing service. It is a better practice to introduce an intermediation layer, or intermediate API, which insulates the implementation details of the proprietary API, exposing generic operations to you service code. This loose coupling enables you to swap out one backing service for another or move your code to a different public cloud without having to make changes to the mainline service code.
 
@@ -241,32 +246,57 @@ Throughout this book, we'll explore various types of cloud-managed backing servi
 
 ## Automation
 
-Cloud native goes beyond microservices, containers, and modern system design. Automation is mandatory. Large distributed systems require rapid provisioning of the underlying infrastructure, decentralized code deployment, and close adherence to widely accepted DevOps processes.
+As you've seen, cloud-native systems embrace microservices, containers, and modern system design to achieve speed and agility. But, that's only part of the story. How do you provision the cloud environments upon which these systems run? How do you rapidly deploy app features and updates? How can you round out the full picture?
 
-Typically, provisioning infrastructure is automated with [Infrastructure as Code (IaC)](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code). You use tooling such as [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/), [Terraform](https://www.terraform.io/), or the Azure CLI (Command Line Interface) to declaratively script the infrastructure you require. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You can invoke the script at any time to provision the same infrastructure across different system environments.
+Enter the widely-accepted practice of [Infrastructure as Code](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code), or IaC.
 
+With IaC, you automate platform provisioning and application deployment. You essentially apply software engineering practices such as testing, versioning, and xxxxxxx to your DevOps practices. Your infrastructure and deployments are automated, consistent, and repeatable.
 
+### Automating infrastructure
 
+Tools like [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/), [Terraform](https://www.terraform.io/) and the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest), enable you to declaratively script the infrastructure you require. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You can then invoke the script on demand to provision a consistent infrastructure across different system environments. 
 
+Under the hood, IaC is idempotent, meaning that you can run the same script over and over without side effects. If the team needs to make a change, they edit the script and rerun it.
 
+In the article, [What is Infrastructure as Code](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code), Sam Guckenheimer describes how, "Teams who implement IaC can deliver stable environments rapidly and at scale. Teams avoid manual configuration of environments and enforce consistency by representing the desired state of their environments via code. Infrastructure deployments with IaC are repeatable and prevent runtime issues caused by configuration drift or missing dependencies. DevOps teams can work together with a unified set of practices and tools to deliver applications and their supporting infrastructure rapidly, reliably, and at scale."
 
-### Automating Infrastructure
+### Automating deployments
 
-How can you provision numerous services in a cloud-based environment in a consistent and repeatable manner?
+The [Twelve-Factor Application](https://12factor.net/) details the steps for transforming code into a running application.
 
-While such provisioning could be done manaually using a cloud portal UI, cloud-native apps favor [Infrastructure as Code (IaC)](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code).
+> *Factor \#5* specifies that "Each release must enforce a strict separation across the build, release and run stages. Each should be tagged with a unique ID and support the ability to roll back."
 
-You use tooling such as [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/) or [Terraform](https://www.terraform.io/) to declaratively script the infrastructure you require. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You can invoke the script at any time to provision the same infrastructure across different system environments.
+In a nutshell, you should be able to test and build the code; then, combine the binaries with specific configuration information to create a specific release; and finally run the release. Each releases should be identifiable. You should be able to say, ‘This deployment is running Release 2.1.1 of the application.
 
-We cover infrastructure automation in detail in the Cloud-Native DevOps chapter of this book.
+Modern CI/CD systems help fulfill this principle. They provide for separate deployment steps and help ensure consistent and quality code that's readily available to users. Figure 1.x shows the process.
 
-### Automating deployment
+![Continuous Integration (CI)](media/build-release-run-pipeline.png)
 
-Cloud-native systems consist of many microservices. Manually integrating, testing, and deploying each would be labor intensive.
+**Figure 1-11**. Deployment steps in a CI/CD Pipeline
 
-Instead, put each service in its own continuous integration/continuous delivery (CI/CD) pipeline to automate the deployments.
+In the previous figure, the developer constructs a feature in his or her development environment. When complete, the code is pushed into a code repository, such as GitHub, an Azure DevOps repo or BitBucket. That push then triggers the build step which is implemented using a [Continuous Integration (CI)](https://martinfowler.com/articles/continuousIntegration.html) pipeline, which automatically builds, tests, and packages the application as a binary artifact. Next, the [Continuous Delivery(CD)](https://martinfowler.com/bliki/ContinuousDelivery.html) picks up the package built by the CI process, applies external configuration information, and produces an immutable release. Finally, the release is deployed to a specified cloud environment, such as QA or production. 
 
-We cover DevOps and CI/CD later in this chapter and in the book.
+Applying these practices, organizations have radically evolved how they ship software. Many have moved from quarterly releases to immediate on-demand updates.
+
+The goal of CI/CD is an automated, predictable deployment that can be triggered on demand.
+
+(CI/CD) is a set of operating principles that enable application development teams to deliver code changes frequently and reliably. 
+
+The goal is to catch problems early in the development cycle when they're less expensive to fix. The longer the duration between integrations, the more expensive problems become to resolve. The CI process outputs project artifact items that are used by the CD pipeline to drive automatic deployments. With consistency in the integration process, teams can commit code changes more frequently, leading to better collaboration and software quality.
+
+The Azure cloud includes a new CI/CD service entitled [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/), which is part of the [Azure DevOps](https://azure.microsoft.com/services/devops/) offering shown in Figure 1-11.
+
+![Azure Pipelines in DevOps](media/azure-pipelines-in-azure-devops.png)
+
+**Figure 1-11**. Azure Pipelines in DevOps
+
+Azure DevOps supports most Git providers and generates deployment pipelines for Linux, macOS, and Windows. It includes support for Java, .NET, JavaScript, Python, PHP, Go, XCode, and C++.
+
+An organization creates an account (called an Organization) in the [Azure DevOps](https://azure.microsoft.com/services/devops/pipelines/) service and stores its source code in a version control system. If your project is stored in a public repository, such as GitHub, Azure Pipelines is free to use. For private projects, there's a charge.
+
+Azure Pipelines combines CI/CD to consistently test, build, and deploy your code to any target.
+
+We cover automation and DevOps later in the book.
 
 >[!div class="step-by-step"]
 >[Previous](introduction.md)

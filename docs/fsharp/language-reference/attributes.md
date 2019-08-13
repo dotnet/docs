@@ -92,7 +92,7 @@ Although you do not usually need to specify the attribute target explicitly, val
         x : byte
         y : int
         end
-        <code></pre>
+        </code></pre>
     </td>
   </tr>
 </table>

@@ -86,12 +86,12 @@ Although you do not usually need to specify the attribute target explicitly, val
     <td>type</td>
     <td>
         <pre lang="fsharp"><code>
-        [&lt;type: StructLayout(Sequential)&gt;] 
-        type MyStruct = 
-        struct 
-        x : byte
-        y : int
-        end
+[&lt;type: StructLayout(Sequential)&gt;] 
+type MyStruct = 
+struct 
+x : byte
+y : int
+end
         </code></pre>
     </td>
   </tr>

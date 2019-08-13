@@ -36,7 +36,7 @@ The following table shows reference topics available that describe language conc
 |[Pattern Matching](pattern-matching.md)|Describes patterns, which are rules for transforming input data that are used throughout the F# language to extract compare data with a pattern, decompose data into constituent parts, or extract information from data in various ways.|
 |[Active Patterns](active-patterns.md)|Describes active patterns. Active patterns enable you to define named partitions that subdivide input data. You can use active patterns to decompose data in a customized manner for each partition.|
 |[Assertions](assertions.md)|Describes the `assert` expression, which is a debugging feature that you can use to test an expression. Upon failure in Debug mode, an assertion generates a system error dialog box.|
-|[Exception Handling](/.exception-handling/index.md)|Contains information about exception handling support in the F# language.|
+|[Exception Handling](./exception-handling/index.md)|Contains information about exception handling support in the F# language.|
 |[attributes](attributes.md)|Describes attributes, which enable metadata to be applied to a programming construct.|
 |[Resource Management: The `use` Keyword](resource-management-the-use-keyword.md)|Describes the keywords `use` and `using`, which can control the initialization and release of resources|
 |[namespaces](namespaces.md)|Describes namespace support in F#. A namespace lets you organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.|

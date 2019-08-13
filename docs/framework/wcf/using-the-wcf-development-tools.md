@@ -9,7 +9,7 @@ This section describes the Visual Studio development tools that can assist you i
  You can use the Visual Studio templates as a foundation to quickly build your own service, then use WCF Service Auto Host and WCF Test Client to debug and test your service. These tools together provide a fast and seamless debug and testing cycle, and preclude the need to commit to a hosting model at an early stage.  
  
  > [!NOTE]
- > Starting with Visual Studio 2017 the WCF Development Tools are not installed by default. In order to use these features you must ensure the Windows Communication Foundation individual component is selected in the Visual Studio installer.
+ > Starting with Visual Studio 2017, the WCF development tools are not installed by default. In order to use these features, you must ensure the Windows Communication Foundation component is selected in the Visual Studio installer.
   
 ## The WCF Developer Tools  
  [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)  

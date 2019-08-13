@@ -129,7 +129,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |-------------|-----------------|  
     |`^`|Begin the match at the beginning of the string.|  
     |`[A-Z0-9]`|Match any numeric or alphanumeric character. (The comparison is case-insensitive.)|  
-    |<code>([-!#$%&'.*+/=?^\`{}&#124;~\w])*</code>|Match zero or more occurrences of any word character, or any of the following characters:  -, !, #, $, %, &, ', ., \*, +, /, =, ?, ^, \`, {, }, &#124;, or ~.|    
+    |<code>([-!#$%&'.*+/=?^\`{}&#124;~\w])\*</code>|Match zero or more occurrences of any word character, or any of the following characters:  -, !, #, $, %, &, ', ., \*, +, /, =, ?, ^, \`, {, }, &#124;, or ~.|  
     |`(?<=[A-Z0-9])`|Look behind to the previous character, which must be numeric or alphanumeric. (The comparison is case-insensitive.)|  
     |`$`|End the match at the end of the string.|  
   

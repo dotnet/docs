@@ -91,8 +91,7 @@ type MyStruct =
 struct 
 x : byte
 y : int
-end
-        </code></pre>
+end</code></pre>
     </td>
   </tr>
 </table>

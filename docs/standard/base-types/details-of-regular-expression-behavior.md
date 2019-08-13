@@ -123,13 +123,13 @@ The .NET Framework regular expression engine is a backtracking regular expressio
      [!code-csharp[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lookbehind1.cs#5)]
      [!code-vb[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lookbehind1.vb#5)]  
   
-     The regular expression `^[A-Z0-9]([-!#$%&'.*+/=?^`{}|~\w])*(?<=[A-Z0-9])$` is defined as shown in the following table.  
+     The regular expression ``^[A-Z0-9]([-!#$%&'.*+/=?^`{}|~\w])*(?<=[A-Z0-9])$`` is defined as shown in the following table.  
   
     |Pattern|Description|  
     |-------------|-----------------|  
     |`^`|Begin the match at the beginning of the string.|  
     |`[A-Z0-9]`|Match any numeric or alphanumeric character. (The comparison is case-insensitive.)|  
-    |<code>([-!#$%&'.*+/=?^\`{}&#124;~\w])*<code>|Match zero or more occurrences of any word character, or any of the following characters:  -, !, #, $, %, &, ', ., *, +, /, =, ?, ^, \`, {, }, &#124;, or ~.|  
+    |<code>([-!#$%&'.*+/=?^\`{}&#124;~\w])*<code>|Match zero or more occurrences of any word character, or any of the following characters:  -, !, #, $, %, &, ', ., *, +, /, =, ?, ^, \`, {, }, &#124;, or ~.|    
     |`(?<=[A-Z0-9])`|Look behind to the previous character, which must be numeric or alphanumeric. (The comparison is case-insensitive.)|  
     |`$`|End the match at the end of the string.|  
   

@@ -173,15 +173,16 @@ Markup extensions are a XAML language concept. When used to provide the value of
 
 <!-- TODO LINK CLEAN UP -->
 
-The most common markup extensions used in WPF application programming are [Binding](binding-markup-extension.md), used for data binding expressions, and the resource references [StaticResource](staticresource-markup-extension.md) and [DynamicResource](dynamicresource-markup-extension.md). By using markup extensions, you can use attribute syntax to provide values for properties even if that property does not support an attribute syntax in general. Markup extensions often use intermediate expression types to enable features such as deferring values or referencing other objects that are only present at run-time.
+The most common markup extensions used in WPF application programming are `Binding`, used for data binding expressions, and the resource references `StaticResource` and `DynamicResource`. By using markup extensions, you can use attribute syntax to provide values for properties even if that property does not support an attribute syntax in general. Markup extensions often use intermediate expression types to enable features such as deferring values or referencing other objects that are only present at run-time.
 
-For example, the following markup sets the value of the <xref:System.Windows.FrameworkElement.Style%2A> property using attribute syntax. The <xref:System.Windows.FrameworkElement.Style%2A> property takes an instance of the <xref:System.Windows.Style> class, which by default could not be instantiated by an attribute syntax string. But in this case, the attribute references a particular markup extension, [StaticResource](staticresource-markup-extension.md). When that markup extension is processed, it returns a reference to a style that was previously instantiated as a keyed resource in a resource dictionary.
+For example, the following markup sets the value of the <xref:System.Windows.FrameworkElement.Style%2A> property using attribute syntax. The <xref:System.Windows.FrameworkElement.Style%2A> property takes an instance of the <xref:System.Windows.Style> class, which by default could not be instantiated by an attribute syntax string. But in this case, the attribute references a particular markup extension, `StaticResource`. When that markup extension is processed, it returns a reference to a style that was previously instantiated as a keyed resource in a resource dictionary.
 
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources)]
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources2](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources2)]
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources3](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources3)]
 
-For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Framework XAML implementations, see [XAML Namespace (x:) Language Features](../../../framework/xaml-services/xaml-namespace-x-language-features.md). <!-- TODO For more information about markup extension concepts, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). -->
+<!-- TODO 
+For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Core XAML implementations, see [XAML Namespace (x:) Language Features](../../../framework/xaml-services/xaml-namespace-x-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). -->
 
 ## Type converters
 
@@ -315,7 +316,7 @@ Underlying WPF XAML and its XAML namespace is a collection of types that corresp
 
 ## XAML security
 
-XAML is a markup language that directly represents object instantiation and execution. Therefore, elements created in XAML have the same ability to interact with system resources (network access, file system IO, for example) as the equivalent generated code does.
+XAML is a markup language that directly represents object instantiation and execution. Therefore, elements created in XAML have the same ability to interact with system resources (network access, file system IO, for example) as the equivalent generated code does. XAML loaded in to a fully trusted application has the same access to the system resources as the hosting application does.
 <!-- TODO
 WPF supports the .NET Framework 4 security framework Code Access Security (CAS). This means that WPF content running in the internet zone has reduced execution permissions. "Loose XAML" (pages of noncompiled XAML interpreted at load time by a XAML viewer) and XBAP are usually run in this internet zone and use the same permission set. However, XAML loaded in to a fully trusted application has the same access to the system resources as the hosting application does. For more information, see [WPF Partial Trust Security](../wpf-partial-trust-security.md). -->
 

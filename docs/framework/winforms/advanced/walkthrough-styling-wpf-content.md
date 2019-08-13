@@ -17,7 +17,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 
 - Create the WPF control type.
 
-- Apply a style to the WPF control.a
+- Apply a style to the WPF control.
 
 ## Prerequisites
 

@@ -288,31 +288,31 @@ Note:
 
 #### Examples
 
-* Dry run of uninstalling all .NET Core Runtimes that have been superceded by higher patches.
+* Dry run of removing all .NET Core Runtimes that have been superceded by higher patches.
 
   ```
   dotnet-core-uninstall --all-lower-patches --runtime --dry-run
   ```
 
-* Dry run of uninstalling all .NET Core SDKs below the version `2.2.301`:
+* Dry run of removing all .NET Core SDKs below the version `2.2.301`:
 
   ```
   dotnet-core-uninstall --all-below 2.2.301 --sdk --dry-run
   ```
 
-* Uninstall all x86 .NET Core Runtimes except the version `3.0.0-preview6-27804-01` without requiring Y/n confirmation:
+* Remove all x86 .NET Core Runtimes except the version `3.0.0-preview6-27804-01` without requiring Y/n confirmation:
 
   ```
   dotnet-core-uninstall --all-but 3.0.0-preview6-27804-01 --runtime --yes
   ```
 
-* Uninstall all .NET Core 1.1 SDKs without requiring Y/n confirmation:
+* Remove all .NET Core 1.1 SDKs without requiring Y/n confirmation:
 
   ```
   dotnet-core-uninstall --major-minor 1.1 -y
   ```
 
-* Uninstall all .NET Core SDKs that can be removed by this tool:
+* Remove all .NET Core SDKs that can be removed by this tool:
 
   ```
   dotnet-core-uninstall --all --sdk

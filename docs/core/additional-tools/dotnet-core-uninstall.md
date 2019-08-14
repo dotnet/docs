@@ -324,4 +324,4 @@ In some cases, you no longer need the `NuGetFallbackFolder` and may wish to dele
 
 ### Remove the `dotnet-core-uninstall` tool
 
-Remove the downloaded single executable `dotnet-core-uninstall.exe` from the directory where it was installed.
+Delete the downloaded single executable `dotnet-core-uninstall.exe` from the directory where it was installed.

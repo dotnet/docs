@@ -322,6 +322,6 @@ Note:
 
 In some cases, you no longer need the `NuGetFallbackFolder` and may wish to delete it. See this article on [Removing the NuGet Fallback Folder](../versions/remove-runtime-sdk-versions.md#removing-the-nuget-fallback-folder).
 
-### Remove the `dotnet-core-uninstall` tool
+### Deleting the `dotnet-core-uninstall` tool
 
 Delete the downloaded single executable `dotnet-core-uninstall.exe` from the directory where it was installed.

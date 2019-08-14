@@ -1,9 +1,9 @@
 ---
 title: "Main Procedure in Visual Basic"
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "vb.Main"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Main procedure"
   - "Main method [Visual Basic]"
   - "main function"
@@ -40,7 +40,7 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
         End Sub
     End Module
     ```
-  
+
 - `Main` can also return an `Integer` value, which the operating system uses as the exit code for your program. Other programs can test this code by examining the Windows ERRORLEVEL value. To return an exit code, you must declare `Main` as a `Function` procedure instead of a `Sub` procedure.
 
     ```vb
@@ -51,13 +51,13 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
             ' Insert call to appropriate starting place in your code.
             ' On return, assign appropriate value to returnValue.
             ' 0 usually means successful completion.
-            MsgBox("The application is terminating with error level " &  
+            MsgBox("The application is terminating with error level " &
                  CStr(returnValue) & ".")
             Return returnValue
         End Function
     End Module
     ```
-  
+
 - `Main` can also take a `String` array as an argument. Each string in the array contains one of the command-line arguments used to invoke your program. You can take different actions depending on their values.
 
     ```vb
@@ -75,15 +75,15 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
             ' Insert call to appropriate starting place in your code.
             ' On return, assign appropriate value to returnValue.
             ' 0 usually means successful completion.
-            MsgBox("The application is terminating with error level " &  
+            MsgBox("The application is terminating with error level " &
                  CStr(returnValue) & ".")
             Return returnValue
         End Function
     End Module
     ```
-  
+
 - You can declare `Main` to examine the command-line arguments but not return an exit code, as follows.
-  
+
     ```vb
     Module mainModule
         Sub Main(ByVal cmdArgs() As String)

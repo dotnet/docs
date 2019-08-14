@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET for Apache Spark application
 description: Learn how to debug your .NET for Apache Spark application.
-ms.date: 08/09/2019
+ms.date: 08/15/2019
 ms.topic: how-to
 ms.custom: mvc
 ---
@@ -34,7 +34,7 @@ In this debug mode, `DotnetRunner` does not launch the .NET application, but it 
 
 Now you can run your .NET application with any debugger to debug your application.
 
-## Debugging Scala code
+## Debug Scala code
 
 If you need to debug the Scala side code, such as `DotnetRunner` or `DotnetBackendHandler`, run the following command:
 

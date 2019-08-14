@@ -25,6 +25,9 @@ ms.author: "ronpet"
 
 The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.
 
+> [!NOTE]
+> Ngen.exe compiles native images for assemblies that target the .NET Framework only. The equivalent native image generator for .NET Core is [CrossGen](https://github.com/dotnet/coreclr/blob/master/Documentation/building/crossgen.md). 
+
 Changes to Ngen.exe in the .NET Framework 4:
 
 - Ngen.exe now compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
@@ -56,11 +59,11 @@ At the command prompt, type the following:
 
 ## Syntax
 
-```
+```console
 ngen action [options]
 ```
 
-```
+```console
 ngen /? | /help
 ```
 
@@ -423,7 +426,7 @@ You can then apply the attribute on a per-method basis. The following example in
 
 The following command generates a native image for `ClientApp.exe`, located in the current directory, and installs the image in the native image cache. If a configuration file exists for the assembly, Ngen.exe uses it. In addition, native images are generated for any .dll files that `ClientApp.exe` references.
 
-```
+```console
 ngen install ClientApp.exe
 ```
 
@@ -431,7 +434,7 @@ An image installed with Ngen.exe is also called a root. A root can be an applica
 
 The following command generates a native image for `MyAssembly.exe` with the specified path.
 
-```
+```console
 ngen install c:\myfiles\MyAssembly.exe
 ```
 
@@ -442,7 +445,7 @@ When locating assemblies and their dependencies, Ngen.exe uses the same probing 
 
 An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll,` using the configuration information from `MyApp.exe`.
 
-```
+```console
 ngen install c:\myfiles\MyLib.dll /ExeConfig:c:\myapps\MyApp.exe
 ```
 
@@ -450,20 +453,20 @@ Assemblies installed in this way are not removed when the application is removed
 
 To uninstall a dependency, use the same command-line options that were used to install it. The following command uninstalls the `MyLib.dll` from the previous example.
 
-```
+```console
 ngen uninstall c:\myfiles\MyLib.dll /ExeConfig:c:\myapps\MyApp.exe
 ```
 
 To create a native image for an assembly in the global assembly cache, use the display name of the assembly. For example:
 
-```
+```console
 ngen install "ClientApp, Version=1.0.0.0, Culture=neutral,
   PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL"
 ```
 
 NGen.exe generates a separate set of images for each scenario you install. For example, the following commands install a complete set of native images for normal operation, another complete set for debugging, and a third for profiling:
 
-```
+```console
 ngen install MyApp.exe
 ngen install MyApp.exe /debug
 ngen install MyApp.exe /profile
@@ -473,7 +476,7 @@ ngen install MyApp.exe /profile
 
 Once native images are installed in the cache, they can be displayed using Ngen.exe. The following command displays all native images in the native image cache.
 
-```
+```console
 ngen display
 ```
 
@@ -481,7 +484,7 @@ The `display` action lists all the root assemblies first, followed by a list of 
 
 Use the simple name of an assembly to display information only for that assembly. The following command displays all native images in the native image cache that match the partial name `MyAssembly`, their dependencies, and all roots that have a dependency on `MyAssembly`:
 
-```
+```console
 ngen display MyAssembly
 ```
 
@@ -489,13 +492,13 @@ Knowing what roots depend on a shared component assembly is useful in gauging th
 
 If you specify an assembly's file extension, you must either specify the path or execute Ngen.exe from the directory containing the assembly:
 
-```
+```console
 ngen display c:\myApps\MyAssembly.exe
 ```
 
 The following command displays all native images in the native image cache with the name `MyAssembly` and the version 1.0.0.0.
 
-```
+```console
 ngen display "myAssembly, version=1.0.0.0"
 ```
 
@@ -503,13 +506,13 @@ ngen display "myAssembly, version=1.0.0.0"
 
 Images are typically updated after a shared component has been upgraded. To update all native images that have changed, or whose dependencies have changed, use the `update` action with no arguments.
 
-```
+```console
 ngen update
 ```
 
 Updating all images can be a lengthy process. You can queue the updates for execution by the native image service by using the `/queue` option. For more information on the `/queue` option and installation priorities, see [Native Image Service](#native-image-service).
 
-```
+```console
 ngen update /queue
 ```
 
@@ -519,13 +522,13 @@ Ngen.exe maintains a list of dependencies, so that shared components are removed
 
 The following command uninstalls all scenarios for the root `ClientApp.exe`:
 
-```
+```console
 ngen uninstall ClientApp
 ```
 
 The `uninstall` action can be used to remove specific scenarios. The following command uninstalls all debug scenarios for `ClientApp.exe`:
 
-```
+```console
 ngen uninstall ClientApp /debug
 ```
 
@@ -534,13 +537,13 @@ ngen uninstall ClientApp /debug
 
 The following command uninstalls all scenarios for a specific version of `ClientApp.exe`:
 
-```
+```console
 ngen uninstall "ClientApp, Version=1.0.0.0"
 ```
 
 The following commands uninstall all scenarios for `"ClientApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL",` or just the debug scenario for that assembly:
 
-```
+```console
 ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
   PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL"
 ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
@@ -585,19 +588,19 @@ The service also interacts with the manual Ngen.exe command. Manual commands tak
 
 Before beginning an installation or upgrade, pausing the service is recommended. This ensures that the service does not execute while the installer is copying files or putting assemblies in the global assembly cache. The following Ngen.exe command line pauses the service:
 
-```
+```console
 ngen queue pause
 ```
 
 When all deferred operations have been queued, the following command allows the service to resume:
 
-```
+```console
 ngen queue continue
 ```
 
 To defer native image generation when installing a new application or when updating a shared component, use the `/queue` option with the `install` or `update` actions. The following Ngen.exe command lines install a native image for a shared component and perform an update of all roots that may have been affected:
 
-```
+```console
 ngen install MyComponent /queue
 ngen update /queue
 ```
@@ -606,7 +609,7 @@ The `update` action regenerates all native images that have been invalidated, no
 
 If your application consists of many roots, you can control the priority of the deferred actions. The following commands queue the installation of three roots. `Assembly1` is installed first, without waiting for idle time. `Assembly2` is also installed without waiting for idle time, but after all priority 1 actions have completed. `Assembly3` is installed when the service detects that the computer is idle.
 
-```
+```console
 ngen install Assembly1 /queue:1
 ngen install Assembly2 /queue:2
 ngen install Assembly3 /queue:3
@@ -614,7 +617,7 @@ ngen install Assembly3 /queue:3
 
 You can force queued actions to occur synchronously by using the `executeQueuedItems` action. If you supply the optional priority, this action affects only the queued actions that have equal or lower priority. The default priority is 3, so the following Ngen.exe command processes all queued actions immediately, and does not return until they are finished:
 
-```
+```console
 ngen executeQueuedItems
 ```
 

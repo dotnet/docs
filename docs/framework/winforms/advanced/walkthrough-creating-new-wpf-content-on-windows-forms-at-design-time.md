@@ -9,9 +9,9 @@ helpviewer_keywords:
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
 ---
-# Walkthrough: Creating New WPF Content on Windows Forms at Design Time
+# Walkthrough: Create new WPF content on Windows Forms at design time
 
-This topic shows you how to create a Windows Presentation Foundation (WPF) control for use in your Windows Forms-based applications.
+This article shows you how to create a Windows Presentation Foundation (WPF) control for use in your Windows Forms-based applications.
 
 In this walkthrough, you perform the following tasks:
 
@@ -25,23 +25,23 @@ In this walkthrough, you perform the following tasks:
 
 You need the following components to complete this walkthrough:
 
-- Visual Studio 2017
+- Visual Studio
 
-## Creating the Project
+## Create the project
 
 The first step is to create the Windows Forms project. Open Visual Studio and create a new **Windows Forms App (.NET Framework)** project in Visual Basic or Visual C# named `HostingWpf`.
 
 > [!NOTE]
 > When hosting WPF content, only C# and Visual Basic projects are supported.
 
-## Creating a New WPF Control
+## Create a new WPF control
 
 Creating a new WPF control and adding it to your project is as easy as adding any other item to your project. The Windows Forms Designer works with a particular kind of control named *composite control*, or *user control*. For more information about WPF user controls, see <xref:System.Windows.Controls.UserControl>.
 
 > [!NOTE]
 > The <xref:System.Windows.Controls.UserControl?displayProperty=nameWithType> type for WPF is distinct from the user control type provided by Windows Forms, which is also named <xref:System.Windows.Forms.UserControl?displayProperty=nameWithType>.
 
-### To create a new WPF control
+To create a new WPF control:
 
 1. In **Solution Explorer**, add a new **WPF User Control Library (.NET Framework)** project to the solution. Use the default name for the control library, `WpfControlLibrary1`. The default control name is `UserControl1.xaml`.
 
@@ -68,11 +68,11 @@ Creating a new WPF control and adding it to your project is as easy as adding an
 
 6. Build the project.
 
-## Adding a WPF Control to a Windows Form
+## Add a WPF control to a Windows Form
 
 Your new WPF control is ready for use on the form. Windows Forms uses the <xref:System.Windows.Forms.Integration.ElementHost> control to host WPF content.
 
-### To add a WPF control to a Windows Form
+To add a WPF control to a Windows Form:
 
 1. Open `Form1` in the Windows Forms Designer.
 
@@ -92,7 +92,7 @@ Your new WPF control is ready for use on the form. Windows Forms uses the <xref:
 
 5. Press **F5** to build and run the application.
 
-## Next Steps
+## Next steps
 
 Windows Forms and WPF are different technologies, but they are designed to interoperate closely. To provide richer appearance and behavior in your applications, try the following:
 

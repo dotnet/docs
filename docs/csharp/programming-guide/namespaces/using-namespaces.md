@@ -63,7 +63,7 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
   
  [!code-csharp[csProgGuideNamespaces#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#10)]  
   
- In general, use `::` to reference a namespace alias or `global::` to reference the global namespace and `.` to qualify types or members.  
+ In general, use the [namespace alias qualifier `::`](../../language-reference/operators/namespace-alias-qualifier.md) to reference a namespace alias or `global::` to reference the global namespace and `.` to qualify types or members.  
   
  It is an error to use `::` with an alias that references a type instead of a namespace. For example:  
   
@@ -84,9 +84,7 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
  [!code-csharp[csProgGuideNamespaces#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#15)]  
   
  This works, but if a type named `Alias` were to subsequently be introduced, `Alias.` would bind to that type instead. Using `Alias::Exception` ensures that `Alias` is treated as a namespace alias and not mistaken for a type.  
-  
- See the topic [How to: Use the Global Namespace Alias](../../../csharp/programming-guide/namespaces/how-to-use-the-global-namespace-alias.md) for more information regarding the `global` alias.  
-  
+
 ## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)

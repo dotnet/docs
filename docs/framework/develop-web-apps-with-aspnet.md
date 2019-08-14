@@ -25,7 +25,7 @@ ASP.NET Core is a redesign of ASP.NET 4.x. Some of the benefits ASP.NET Core pro
 - Leaner and more modular.
 - A unified story for building web UI and web APIs.
 
-See [Why use ASP.NET Core?](/aspnet/core#why-use-aspnet-core) for an expanded list of benefits.
+See [Why use ASP.NET Core?](/aspnet/core#why-choose-aspnet-core) for an expanded list of benefits.
 
 For more information on ASP.NET Core](/aspnet/core), see:
 

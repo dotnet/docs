@@ -16,7 +16,7 @@ helpviewer_keywords:
 ---
 # DateTime and DateTimeOffset support in System.Text.Json
 
-The System.Text.Json library offers flexible support for serializing and deserializing both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
+The System.Text.Json library offers flexible support for formatting and parsing both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
 
 ## Support for the ISO 8601-1:2019 format
 
@@ -33,7 +33,7 @@ They can also be deserialized with <xref:System.Text.Json.JsonSerializer>:
 [!code-csharp[example-deserializing-with-jsonserializer-valid](~/samples/snippets/standard/datetime/json/deserializing-with-jsonserializer-valid.cs)]
 
 With default options, input <xref:System.DateTime> and <xref:System.DateTimeOffset> text representations must conform to the extended ISO 8601-1:2019 profile.
-Attempting to deserialize representations that don't conform to the profile will cause <xref:System.Text.Json.JsonSerializer> to throw a <xref:System.Text.Json.JsonSerializer.JsonException>:
+Attempting to deserialize representations that don't conform to the profile will cause <xref:System.Text.Json.JsonSerializer> to throw a <xref:System.Text.Json.JsonException>:
 
 [!code-csharp[example-deserializing-with-jsonserializer-error](~/samples/snippets/standard/datetime/json/deserializing-with-jsonserializer-error.cs)]
 
@@ -52,7 +52,7 @@ The lower level <xref:System.Text.Json.Utf8JsonWriter> writes <xref:System.DateT
 
 [!code-csharp[example-writing-with-utf8jsonwriter](~/samples/snippets/standard/datetime/json/writing-with-utf8jsonwriter.cs)]
 
-To read with <xref:System.Text.Json.Utf8JsonReader>:
+<xref:System.Text.Json.Utf8JsonReader> parses <xref:System.DateTime> and <xref:System.DateTimeOffset> data:
 
 [!code-csharp[example-reading-with-utf8jsonreader-valid](~/samples/snippets/standard/datetime/json/reading-with-utf8jsonreader-valid.cs)]
 
@@ -60,7 +60,7 @@ Attempting to read non-compliant formats with <xref:System.Text.Json.Utf8JsonRea
 
 [!code-csharp[example-reading-with-utf8jsonreader-error](~/samples/snippets/standard/datetime/json/reading-with-utf8jsonreader-error.cs)]
 
-## Custom support for <xref:System.DateTime> and <xref:System.DateTimeOffset> in `JsonSerializer`
+## Custom support for <xref:System.DateTime> and <xref:System.DateTimeOffset> in <xref:System.Text.Json.JsonSerializer>
 
 If you want the serializer to perform custom parsing or formatting, you can implement
 [custom converters](https://docs.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1?view=netcore-3.0).
@@ -73,23 +73,23 @@ If you can't determine the formats of your input <xref:System.DateTime> or <xref
 <xref:System.DateTime> and <xref:System.DateTimeOffset> text formats, including non-ISO 8601 strings and ISO 8601 formats that don't conform to
 the extended ISO 8601-1:2019 profile. This approach is significantly less performant than using the serializer's native implementation.
 
-For serializing, you can use `DateTime(Offset).ToString` method in your converter write logic. This allows you to write <xref:System.DateTime>
+For serializing, you can use the `DateTime(Offset).ToString` method in your converter write logic. This allows you to write <xref:System.DateTime>
 and <xref:System.DateTimeOffset> values using any of the
 [standard date and time formats](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
-This approach is also significantly less performant than using the serializer's native implementation.
+This is also significantly less performant than using the serializer's native implementation.
 
 [!code-csharp[example-showing-datetime-parse](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example1/Program.cs)]
 
-[!NOTE]
-When implementing JsonConverter<DateTime>, the `typeToConvert` parameter will always be typeof(DateTime).
-The parameter is useful for polymorphic cases and when using generics to get typeof(T) in a performant way.
+> [!NOTE]
+> When implementing <xref:System.Text.Json.Serialization.JsonConverter%601>, and `T` is <xref:System.DateTime>, the `typeToConvert` parameter will always be `typeof(DateTime)`.
+The parameter is useful for handling polymorphic cases and when using generics to get `typeof(T)` in a performant way.
 
 ### Using <xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>
 
 You can used fast UTF-8-based parsing and formatting methods in your converter logic if your input <xref:System.DateTime> or <xref:System.DateTimeOffset>
 text representations are compliant with one of the "R", "l", "O", or "G"
 [standard date and time Format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings),
-or you want to write according to one of these formats. This is much faster than using `DateTime(Offset).Parse` and `DateTime(Offset).ToString
+or you want to write according to one of these formats. This is much faster than using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`
 
 This example shows a custom converter that serializes and deserializes <xref:System.DateTime> values according to
 [the "R" standard format](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-rfc1123-r-r-format-specifier):

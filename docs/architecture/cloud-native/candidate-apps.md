@@ -59,7 +59,30 @@ If you and your team believe a cloud-native approach is appropriate, it behooves
 
 The right migration strategy depends on the organizational priorities and the systems you're targeting. In many cases, it may be more cost effective to cloud-optimize a monolithic application or add coarse-grained services to an N-Tier app. In these cases, you can still make full use of cloud PaaS capabilities like the ones offered by Azure App Service.
 
+## Summary
+
+In this chapter, we introduced cloud-native computing. We provided a definition along with the key characteristics of cloud-native applications. We looked the types of applications that might justify this investment and effort.
+
+### References
+
+- [Cloud Native Computing Foundation](https://www.cncf.io/)
+
+- [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
+
+- [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
+
+- [Cloud Native Patterns by Cornelia Davis](https://www.manning.com/books/cloud-native-patterns)
+
+- [Beyond the Twelve-Factor Application](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
+
+- [What is Infrastructure as Code](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code)
+
+- [Uber Engineering’s Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
+
+- [How Netflix Deploys Code](https://www.infoq.com/news/2013/06/netflix/)
+
+- [Overload Control for Scaling WeChat Microservices](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf)
 
 >[!div class="step-by-step"]
 >[Previous](definition.md)
->[Next](azure-development-stack.md)
+>[Next](scale-dotnet-applications.md) <!-- Next Chapter -->

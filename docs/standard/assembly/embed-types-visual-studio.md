@@ -231,6 +231,6 @@ In this walkthrough, you will do the following:
 ## See also
 
 - [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [C# Programming Guide](../../csharp/programming-guide/index.md)
 - [Programming with Assemblies](programming.md)
-- [Assemblies in .NET](../../../../standard/assembly/index.md)
+- [Assemblies in .NET](index.md)

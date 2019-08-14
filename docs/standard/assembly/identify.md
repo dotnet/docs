@@ -63,5 +63,5 @@ class TestAssembly
 ## See also
 
 - <xref:System.Reflection.AssemblyName>
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
-- [Assemblies in .NET](../../../../standard/assembly/index.md)
+- [C# Programming Guide](../../csharp/programming-guide/index.md)
+- [Assemblies in .NET](index.md)

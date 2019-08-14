@@ -1,18 +1,18 @@
 ---
-title: Introduction to Cloud-Native .NET Applications
-description: Architecting Cloud-Native .NET Apps for Azure | Introduction to Cloud-Native .NET Applications
+title: Introduction to cloud-native applications
+description: Architecting Cloud-Native .NET Apps for Azure | Introduction to cloud-native applications
 author: robvet
-ms.date: 08/13/2019
+ms.date: 08/14/2019
 ---
-# Introduction to Cloud-Native .NET Applications
+# Introduction to Cloud-Native Applications
 
 Welcome to the world of Cloud-Native computing!
 
-You first thought might be, “What exactly does that mean?” Another industry buzzword concocted by cloud providers to sell more stuff?”
+You first thought might be, “What exactly does that mean?” Another industry buzzword concocted by software vendors to market more stuff?”
 
-Fortunately, it’s far different than that, and hopefully this book will help convince you.
+Fortunately it’s far different than that, and hopefully this book will help convince you.
 
-Within a short time, cloud native has become a driving trend in the software industry. It’s a new way to think about building large, complex systems. An approach that takes full advantage of modern software development practices, technologies, and cloud infrastructure. It changes the way you design, implement, deploy, and operationalize systems.
+Within a short time, cloud native has become a driving trend in the software industry. It’s a new way to think about building large, complex systems, an approach that takes full advantage of modern software development practices, technologies, and cloud infrastructure. It changes the way you design, implement, deploy, and operationalize systems.
 
 Unlike the constant hype that drives our industry, cloud native is “*for-real.”* Consider the [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF), a consortium of over 300 major corporations with a charter to make cloud-native computing ubiquitous across technology and cloud stacks. Arguably, one of the most influential open source groups, it serves as the home for many of the fastest-growing open source projects in GitHub, including [Kubernetes](https://kubernetes.io/), [Prometheus](https://prometheus.io/), [Helm](https://helm.sh/), [Envoy](https://www.envoyproxy.io/), and [gRPC](https://grpc.io/).
 

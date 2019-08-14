@@ -1,15 +1,15 @@
 ---
-title: The Azure Cloud-Native Development Stack
-description: Architecting Cloud Native .NET Apps for Azure | The Azure Cloud-Native Development Stack
+title: The Azure cloud-native development stack
+description: Architecting Cloud Native .NET Apps for Azure | The Azure cloud-native development stack
 author: robvet
-ms.date: 08/10/2019
+ms.date: 08/14/2019
 ---
 
 # The Azure Cloud-Native Development Stack
 
 The Azure cloud offers a tightly integrated, but full and open stack for constructing and managing cloud-native workloads.
 
-Working to embrace a wider range of developers, Microsoft is [making tremendous investments in open source](https://www.zdnet.com/article/why-microsoft-is-turning-into-an-open-source-company/) and cross-platform development tools.
+Working to embrace a wider range of developers, Microsoft is [making tremendous investments in open- source](https://www.zdnet.com/article/why-microsoft-is-turning-into-an-open-source-company/) and cross-platform development tools.
 
 ## The operating system becomes transparent
 
@@ -21,7 +21,7 @@ The explosive growth of containers further obscures the underlying operating sys
 
 ### Linux on Azure - Linux on Windows
 
-The Azure cloud openly embraces both Windows and Linux workloads. It's Linux, not Windows Server, that has become the most popular operating system in Azure. Many critical Azure services run on Linux. Consider, for example, Redis Cache, Sql Server on Linux, or the NoSql offerings. Azure features different kinds of Linux VMs supporting at least eight Linux distributions.
+The Azure cloud openly embraces both Windows and Linux workloads. It's Linux, not Windows Server, that has become the most popular operating system in Azure. Many critical Azure services run on Linux. Consider, for example, Redis Cache, SQL Server on Linux, or the NoSQL offerings. Azure features different kinds of Linux VMs supporting at least eight Linux distributions.
 
 [Windows Server 2019](https://cloudblogs.microsoft.com/windowsserver/2018/03/20/introducing-windows-server-2019-now-available-in-preview/) now features a subsystem for Linux that enables Windows and Linux environments to run simultaneously. 
 

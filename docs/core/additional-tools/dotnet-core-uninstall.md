@@ -172,7 +172,7 @@ The specified version to uninstall. You may list several versions, and response 
 
 * **`--all-previews-but-latest`**
 
-  Remove .NET Core SDKs or Runtimes that are marked as previews except the one with the highest version number.
+  Remove .NET Core SDKs or Runtimes that are marked as previews except the one highest preview.
 
 * **`--aspnet-runtime`**
 
@@ -214,7 +214,7 @@ The specified version to uninstall. You may list several versions, and response 
   Execute the command without requiring Y/n confirmation.
 
 Note:
-1. Exactly one of `--sdk` and `--runtime` is required.
+1. Exactly one of `--sdk`, `--runtime`, `--aspnet-runtime` and `--hosting-bundle` is required.
 2. `--all`, `--all-below`, `--all-but`, `--all-but-latest`, `--all-lower-patches`, `--all-previews`, `--all-previews-but-latest`, `--major-minor` and `[<VERSION>...]` are exclusive.
 3. If neither of `--x64` or `--x86` is specified, then both x64 and x86 will be removed.
 
@@ -248,17 +248,9 @@ Note:
 
   Remove .NET Core SDKs or Runtimes that are marked as previews except the one highest preview.
 
-* **`--aspnet-runtime`**
-
-  Remove ASP.NET Core Runtimes only.
-
 * **`--dry-run`**
 
   Display .NET Core SDKs and Runtimes that will be removed.
-
-* **`--hosting-bundle`**
-
-  Remove .NET Core Runtime & Hosting Bundles only.
 
 * **`--major-minor <MAJOR_MINOR>`**
 

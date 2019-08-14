@@ -318,6 +318,18 @@ Note:
   dotnet-core-uninstall --all --sdk
   ```
 
+* Remove all .NET Core SDKs specified in the response file `versions.rsp`
+
+  ```
+  dotnet-core-uninstall --sdk @versions.rsp
+  ```
+
+  The content of `versions.rsp` is as follows:
+  ```
+  2.2.300
+  2.1.700
+  ```
+
 ### Optional: deleting `NuGetFallbackFolder`
 
 In some cases, you no longer need the `NuGetFallbackFolder` and may wish to delete it. See this article on [Removing the NuGet Fallback Folder](../versions/remove-runtime-sdk-versions.md#removing-the-nuget-fallback-folder).

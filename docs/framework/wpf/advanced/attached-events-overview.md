@@ -58,15 +58,15 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  The pattern is as follows:  
   
-- A method **Add*EventName*Handler** with two parameters. The first parameter is the instance to which the event handler is added. The second parameter is the event handler to add. The method must be `public` and `static`, with no return value.  
+- A method **Add_EventName_Handler** with two parameters. The first parameter is the instance to which the event handler is added. The second parameter is the event handler to add. The method must be `public` and `static`, with no return value.  
   
-- A method **Remove*EventName*Handler** with two parameters. The first parameter is the instance from which the event handler is removed. The second parameter is the event handler to remove. The method must be `public` and `static`, with no return value.  
+- A method **Remove_EventName_Handler** with two parameters. The first parameter is the instance from which the event handler is removed. The second parameter is the event handler to remove. The method must be `public` and `static`, with no return value.  
   
- The **Add*EventName*Handler** accessor method facilitates the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processing when attached event handler attributes are declared on an element. The **Add*EventName*Handler** and **Remove*EventName*Handler** methods also enable code access to the event handler store for the attached event.  
+ The **Add_EventName_Handler** accessor method facilitates the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processing when attached event handler attributes are declared on an element. The **Add_EventName_Handler** and **Remove_EventName_Handler** methods also enable code access to the event handler store for the attached event.  
   
  This general pattern is not yet precise enough for practical implementation in a framework, because any given [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] reader implementation might have different schemes for identifying underlying events in the supporting language and architecture. This is one of the reasons that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] implements attached events as routed events; the identifier to use for an event (<xref:System.Windows.RoutedEvent>) is already defined by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system. Also, routing an event is a natural implementation extension on the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] language-level concept of an attached event.  
   
- The **Add*EventName*Handler** implementation for a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] attached event consists of calling the <xref:System.Windows.UIElement.AddHandler%2A> with the routed event and handler as arguments.  
+ The **Add_EventName_Handler** implementation for a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] attached event consists of calling the <xref:System.Windows.UIElement.AddHandler%2A> with the routed event and handler as arguments.  
   
  This implementation strategy and the routed event system in general restrict handling for attached events to either <xref:System.Windows.UIElement> derived classes or <xref:System.Windows.ContentElement> derived classes, because only those classes have <xref:System.Windows.UIElement.AddHandler%2A> implementations.  
   

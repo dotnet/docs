@@ -19,7 +19,7 @@ ms.assetid: 4c374c4c-4ca9-4a68-ac96-9dc3ab0f518a
 # How to: Create Access Keys for Windows Forms Controls Using the Designer
 An *access key* is an underlined character in the text of a menu, menu item, or the label of a control such as a button. It enables the user to "click" a button by pressing the ALT key in combination with the predefined access key. For example, if a button runs a procedure to print a form, and therefore its `Text` property is set to "Print," adding an ampersand (&) before the letter "P" causes the letter "P" to be underlined in the button text at run time. The user can run the command associated with the button by pressing ALT+P. You cannot have an access key for a control that cannot receive focus.
 
-### To create an access key for a control
+## To create an access key for a control
 
 1. In the **Properties** window, set the `Text` property to a string that includes an ampersand (&) before the letter that will be the access key. For example, to set the letter "P" as the access key, type **&Print** into the grid.
 

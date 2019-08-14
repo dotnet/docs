@@ -14,7 +14,7 @@ ms.assetid: a8a2fdd3-a848-48b0-a4cd-4e85ebded87e
 # How to: Span Rows and Columns in a TableLayoutPanel Control
 Controls in a <xref:System.Windows.Forms.TableLayoutPanel> control can span adjacent rows and columns.
 
-### To span columns and rows
+## To span columns and rows
 
 1. Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.
 

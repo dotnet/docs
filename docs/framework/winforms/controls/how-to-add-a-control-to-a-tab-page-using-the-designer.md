@@ -12,7 +12,7 @@ The use of the Windows Forms <xref:System.Windows.Forms.TabControl> is to displa
 
  The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.TabControl> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md).
 
-### To add a control using the designer
+## To add a control using the designer
 
 1. Click the appropriate tab page so that it appears on top.
 

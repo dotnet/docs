@@ -11,7 +11,7 @@ When you design the user interface (UI) of your Windows application, you can loc
 
  Additionally, you can lock and unlock all the controls on the form at once, which is helpful for forms with many controls, or you can unlock individual controls. Once you have placed all the controls where you want them on the form, lock them all in place to prevent erroneous movement.
 
-### To lock a control
+## To lock a control
 
 1. In the **Properties** window, click the **Locked** property and select `true`. (Double-clicking the name toggles the property setting.)
 

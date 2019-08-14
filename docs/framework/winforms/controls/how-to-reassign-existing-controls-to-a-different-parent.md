@@ -10,7 +10,7 @@ ms.assetid: 5a5723ff-34e0-4b6f-a57b-be4ebe35cb34
 # How to: Reassign Existing Controls to a Different Parent
 You can assign controls that exist on your form to a new container control.
 
-### To reassign existing controls to a different parent
+## To reassign existing controls to a different parent
 
 1. Drag three <xref:System.Windows.Forms.Button> controls from the **Toolbox** onto the form.
 

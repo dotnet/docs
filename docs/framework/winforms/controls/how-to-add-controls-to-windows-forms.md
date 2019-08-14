@@ -13,7 +13,7 @@ ms.assetid: 2af86001-9d62-4154-87fb-66db2c3cd9fd
 # How to: Add Controls to Windows Forms
 Most forms are designed by adding controls to the surface of the form to define a user interface (UI). A *control* is a component on a form used to display information or accept user input. For more information about controls, see [Windows Forms Controls](index.md).
 
-### To draw a control on a form
+## To draw a control on a form
 
 1. Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).
 

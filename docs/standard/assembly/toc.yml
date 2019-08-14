@@ -1,8 +1,6 @@
 - name: Assemblies in .NET
   href: index.md
   items:
-  - name: Friend assemblies
-    href: friend.md
   - name: .NET assembly file format
     href: file-format.md
   - name: "How to: Use and debug assembly unloadability in .NET Core"
@@ -68,20 +66,21 @@
       href: view-contents.md
     - name: Type forwarding in the Common Language Runtime
       href: type-forwarding.md
-    - name: Friend Assemblies
+    - name: Friend assemblies
+      href: friend.md
       items:
-      - name: "How to: Create Unsigned Friend Assemblies"
+      - name: "How to: Create unsigned friend assemblies"
         href: create-unsigned-friend.md
-      - name: "How to: Create Signed Friend Assemblies"
+      - name: "How to: Create signed friend assemblies"
         href: create-signed-friend.md
-    - name: "How to: Create and Use Assemblies Using the Command Line"
+    - name: "How to: Create and use assemblies using the command line"
       href: create-use-command-line.md
-    - name: "How to: Determine If a File Is an Assembly"
+    - name: "How to: Determine if a file is an assembly"
       href: identify.md
-    - name: "How to: Load and Unload Assemblies"
+    - name: "How to: Load and unload assemblies"
       href: load-unload.md
-    - name: "How to: Share an Assembly with Other Applications"
+    - name: "How to: Share an assembly with other applications"
       href: share-with-apps.md
-    - name: "Walkthrough: Embedding Types from Managed Assemblies in Visual Studio"
+    - name: "Walkthrough: Embed types from managed assemblies in Visual Studio"
       href: embed-types-visual-studio.md
 

@@ -14,7 +14,7 @@ When you place a <xref:System.Windows.Forms.TabControl> control on your form, it
 
  The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.TabControl> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md).
 
-### To add or remove a tab using the designer
+## To add or remove a tab using the designer
 
 - On the control's smart tag, click **Add Tab** or **Remove Tab**
 

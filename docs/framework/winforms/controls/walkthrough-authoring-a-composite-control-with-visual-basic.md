@@ -20,7 +20,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 ## Creating the Project
  When you create a new project, you specify its name to set the root namespace, assembly name, and project name, and ensure that the default component will be in the correct namespace.
 
-#### To create the ctlClockLib control library and the ctlClock control
+### To create the ctlClockLib control library and the ctlClock control
 
 1. On the **File** menu, point to **New**, and then click **Project** to open the **New Project** dialog box.
 
@@ -38,7 +38,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 ## Adding Windows Controls and Components to the Composite Control
  A visual interface is an essential part of your composite control. This visual interface is implemented by the addition of one or more Windows controls to the designer surface. In the following demonstration, you will incorporate Windows controls into your composite control and write code to implement functionality.
 
-#### To add a Label and a Timer to your composite control
+### To add a Label and a Timer to your composite control
 
 1. In Solution Explorer, right-click **ctlClock.vb**, and then click **View Designer**.
 
@@ -89,7 +89,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 ## Adding Properties to the Composite Control
  Your clock control now encapsulates a <xref:System.Windows.Forms.Label> control and a <xref:System.Windows.Forms.Timer> component, each with its own set of inherent properties. While the individual properties of these controls will not be accessible to subsequent users of your control, you can create and expose custom properties by writing the appropriate blocks of code. In the following procedure, you will add properties to your control that enable the user to change the color of the background and text.
 
-#### To add a property to your composite control
+### To add a property to your composite control
 
 1. In Solution Explorer, right-click **ctlClock.vb**, and then click **View Code**.
 
@@ -140,7 +140,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 ## Testing the Control
  Controls are not stand-alone projects; they must be hosted in a container. Test your control's run-time behavior and exercise its properties with the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).
 
-#### To test your control
+### To test your control
 
 1. Press F5 to build the project and run your control in the **UserControl Test Container**.
 
@@ -161,7 +161,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 
  The first step in creating an inherited control is to derive it from its parent. This action creates a new control that has all of the properties, methods, and graphical characteristics of the parent control, but can also act as a base for the addition of new or modified functionality.
 
-#### To create the inherited control
+### To create the inherited control
 
 1. In Solution Explorer, right-click **ctlClockLib**, point to **Add**, and then click **User Control**.
 
@@ -183,7 +183,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 ### Adding the Alarm Properties
  Properties are added to an inherited control in the same way they are added to a composite control. You will now use the property declaration syntax to add two properties to your control: `AlarmTime`, which will store the value of the date and time the alarm is to go off, and `AlarmSet`, which will indicate whether the alarm is set.
 
-##### To add properties to your composite control
+#### To add properties to your composite control
 
 1. In Solution Explorer, right-click **ctlAlarmClock**, and then click **View Code**.
 
@@ -215,7 +215,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 ### Adding to the Graphical Interface of the Control
  Your inherited control has a visual interface that is identical to the control it inherits from. It possesses the same constituent controls as its parent control, but the properties of the constituent controls will not be available unless they were specifically exposed. You may add to the graphical interface of an inherited composite control in the same manner as you would add to any composite control. To continue adding to your alarm clock's visual interface, you will add a label control that will flash when the alarm is sounding.
 
-##### To add the label control
+#### To add the label control
 
 1. In Solution Explorer, right-click **ctlAlarmClock**, and click **View Designer**.
 
@@ -243,7 +243,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 ### Adding the Alarm Functionality
  In the previous procedures, you added properties and a control that will enable alarm functionality in your composite control. In this procedure, you will add code to compare the current time to the alarm time and, if they are the same, to sound and flash an alarm. By overriding the `Timer1_Tick` method of `ctlClock` and adding additional code to it, you will extend the capability of `ctlAlarmClock` while retaining all of the inherent functionality of `ctlClock`.
 
-##### To override the Timer1_Tick method of ctlClock
+#### To override the Timer1_Tick method of ctlClock
 
 1. In Solution Explorer, right-click **ctlAlarmClock.vb**, and then click **View Code**.
 
@@ -296,7 +296,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 
      Your alarm clock control is almost complete. The only thing that remains is to implement a way to turn it off. To do this, you will add code to the `lblAlarm_Click` method.
 
-##### To implement the shutoff method
+#### To implement the shutoff method
 
 1. In Solution Explorer, right-click **ctlAlarmClock.vb**, and then click **View Designer**.
 
@@ -321,7 +321,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 
  To put your control to use, you will need to host it on a form. As with a standard composite control, an inherited composite control cannot stand alone and must be hosted in a form or other container. Since `ctlAlarmClock` has a greater depth of functionality, additional code is required to test it. In this procedure, you will write a simple program to test the functionality of `ctlAlarmClock`. You will write code to set and display the `AlarmTime` property of `ctlAlarmClock`, and will test its inherent functions.
 
-##### To build and add your control to a test form
+#### To build and add your control to a test form
 
 1. In Solution Explorer, right-click **ctlClockLib**, and then click **Build**.
 

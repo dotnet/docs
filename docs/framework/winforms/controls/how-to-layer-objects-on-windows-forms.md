@@ -16,13 +16,13 @@ ms.assetid: 1acc4281-2976-4715-86f4-bda68134baaf
 # How to: Layer Objects on Windows Forms
 When you create a complex user interface, or work with a multiple document interface (MDI) form, you will often want to layer both controls and child forms to create more complex user interfaces (UI). To move and keep track of controls and windows within the context of a group, you manipulate their z-order. *Z-order* is the visual layering of controls on a form along the form's z-axis (depth). The window at the top of the z-order overlaps all other windows. All other windows overlap the window at the bottom of the z-order.
 
-### To layer controls at design time
+## To layer controls at design time
 
 1. Select a control that you want to layer.
 
 2. On the **Format** menu, point to **Order**, and then click **Bring To Front** or **Send To Back**.
 
-### To layer controls programmatically
+## To layer controls programmatically
 
 - Use the <xref:System.Windows.Forms.Control.BringToFront%2A> and <xref:System.Windows.Forms.Control.SendToBack%2A> methods to manipulate the z-order of the controls.
 

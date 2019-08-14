@@ -14,7 +14,7 @@ ms.assetid: 71fa8e76-0472-414b-ad3c-0f90166e0ad7
 # How to: Set the Tab Order on Windows Forms
 The tab order is the order in which a user moves focus from one control to another by pressing the TAB key. Each form has its own tab order. By default, the tab order is the same as the order in which you created the controls. Tab-order numbering begins with zero.
 
-### To set the tab order of a control
+## To set the tab order of a control
 
 1. On the **View** menu, click **Tab Order**.
 
@@ -36,7 +36,7 @@ The tab order is the order in which a user moves focus from one control to anoth
 
  Finally, any control of the many on your form can be skipped in the tab order. Usually, pressing TAB successively at run time selects each control in the tab order. By turning off the <xref:System.Windows.Forms.Control.TabStop%2A> property, you can make a control be passed over in the tab order of the form.
 
-#### To remove a control from the tab order
+## To remove a control from the tab order
 
 1. Set the control's <xref:System.Windows.Forms.Control.TabStop%2A> property to `false` in the Properties window.
 

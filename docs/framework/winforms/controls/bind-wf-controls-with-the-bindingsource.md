@@ -16,7 +16,7 @@ After you have added controls to your form and determined the user interface for
 
  To complete the procedure, it is assumed that you will bind to a data source derived from a database. For more information on creating data sources from other stores of data, see [Add new data sources](/visualstudio/data-tools/add-new-data-sources).
 
-### To bind a control at design time
+## To bind a control at design time
 
 1. Drag a <xref:System.Windows.Forms.TextBox> control on to the form.
 

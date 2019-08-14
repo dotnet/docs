@@ -10,7 +10,7 @@ ms.assetid: 8f1b057e-3d8a-4f11-88df-935f7b29a836
 # How to: Hide ToolStripMenuItems Using the Designer
 Hiding menu items is a way to control the user interface (UI) of your application and restrict user commands. Often, you will want to hide an entire menu when all of the menu items on it are unavailable. This presents fewer distractions for the user. Furthermore, you might want to both hide and disable the menu or menu item, as hiding alone does not prevent the user from accessing a menu command by using a shortcut key. For more information on disabling menu items, see [How to: Disable ToolStripMenuItems Using the Designer](how-to-disable-toolstripmenuitems-using-the-designer.md).
 
-### To hide a top-level menu and its submenu items
+## To hide a top-level menu and its submenu items
 
 1. Select the top-level menu item and set its <xref:System.Windows.Forms.ToolStripItem.Visible%2A> or <xref:System.Windows.Forms.ToolStripItem.Available%2A> property to `false`.
 
@@ -19,7 +19,7 @@ Hiding menu items is a way to control the user interface (UI) of your applicatio
 > [!NOTE]
 >  You will rarely hide an entire menu except for multiple document interface (MDI) child menus in a merging scenario.
 
-### To hide a submenu item
+## To hide a submenu item
 
 1. Select the submenu item and set its <xref:System.Windows.Forms.ToolStripItem.Visible%2A> property to `false`.
 

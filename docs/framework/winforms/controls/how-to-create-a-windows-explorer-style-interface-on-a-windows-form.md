@@ -14,7 +14,7 @@ Windows Explorer is a common user-interface choice for applications because of i
 
  The following steps show how to arrange controls in a Windows Explorer-like form. They do not show how to add the file-browsing functionality of the Windows Explorer application.
 
-### To create a Windows Explorer-style Windows Form
+## To create a Windows Explorer-style Windows Form
 
 1. Create a new Windows Application project (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
 

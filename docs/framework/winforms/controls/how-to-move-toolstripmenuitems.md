@@ -15,7 +15,7 @@ ms.assetid: cab9e03e-4edd-4c25-b3e3-bd1edc602bd9
 # How to: Move ToolStripMenuItems
 At design time, you can move entire top-level menus and their menu items to a different place on the <xref:System.Windows.Forms.MenuStrip>. You can also move individual menu items between top-level menus or change the position of menu items within a menu.
 
-### To move a top-level menu and its menu items to another top-level location
+## To move a top-level menu and its menu items to another top-level location
 
 1. Click and hold down the left mouse button on the menu that you want to move.
 
@@ -23,7 +23,7 @@ At design time, you can move entire top-level menus and their menu items to a di
 
      The selected menu moves to the right of the insertion point.
 
-### To move a top-level menu and its menu items to a drop-down location
+## To move a top-level menu and its menu items to a drop-down location
 
 1. Left-click the menu that you want to move and press CTRL+X, or right-click the menu and select **Cut** from the shortcut menu.
 
@@ -31,7 +31,7 @@ At design time, you can move entire top-level menus and their menu items to a di
 
      The menu that you cut is inserted after the selected menu item.
 
-### To move a menu item within a menu using the Items Collection Editor
+## To move a menu item within a menu using the Items Collection Editor
 
 1. Right-click the menu that contains the menu item you want to move.
 
@@ -43,7 +43,7 @@ At design time, you can move entire top-level menus and their menu items to a di
 
 5. Click **OK**.
 
-### To move a menu item within a menu using the keyboard
+## To move a menu item within a menu using the keyboard
 
 1. Press and hold down the ALT key.
 
@@ -51,7 +51,7 @@ At design time, you can move entire top-level menus and their menu items to a di
 
 3. Drag the menu item to the new location and release the left mouse button.
 
-### To move a menu item to another menu
+## To move a menu item to another menu
 
 1. Left-click the menu item that you want to move and press CTRL+X, or right-click the menu item and choose **Cut** from the shortcut menu.
 

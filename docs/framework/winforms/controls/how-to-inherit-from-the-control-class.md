@@ -12,7 +12,7 @@ ms.assetid: 46ba0df3-5cf7-443c-a3b4-a72660172476
 # How to: Inherit from the Control Class
 If you want to create a completely custom control to use on a Windows Form, you should inherit from the <xref:System.Windows.Forms.Control> class. While inheriting from the <xref:System.Windows.Forms.Control> class requires that you perform more planning and implementation, it also provides you with the largest range of options. When inheriting from <xref:System.Windows.Forms.Control>, you inherit the very basic functionality that makes controls work. The functionality inherent in the <xref:System.Windows.Forms.Control> class handles user input through the keyboard and mouse, defines the bounds and size of the control, provides a windows handle, and provides message handling and security. It does not incorporate any painting, which in this case is the actual rendering of the graphical interface of the control, nor does it incorporate any specific user interaction functionality. You must provide all of these aspects through custom code.
 
-### To create a custom control
+## To create a custom control
 
 1. Create a new **Windows Application** or **Windows Control Library** project.
 

@@ -26,7 +26,7 @@ ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
 
  The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.DataGrid> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md). In Visual Studio 2005, the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox** by default. For information about adding it, see [How to: Add Items to the Toolbox](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100)). Additionally in Visual Studio 2005, you can use the **Data Sources** window for design-time data binding. For more information see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio).
 
-### To data-bind the DataGrid control to a single table in the designer
+## To data-bind the DataGrid control to a single table in the designer
 
 1. Set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to the object containing the data items you want to bind to.
 
@@ -52,7 +52,7 @@ ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
 
      If there are no table styles, you will see the table, but with minimal formatting and with all columns visible.
 
-### To data-bind the DataGrid control to multiple tables in a dataset in the designer
+## To data-bind the DataGrid control to multiple tables in a dataset in the designer
 
 1. Set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to the object containing the data items you want to bind to.
 

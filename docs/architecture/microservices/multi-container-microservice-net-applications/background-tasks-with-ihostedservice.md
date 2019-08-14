@@ -187,7 +187,7 @@ public class GracePeriodManagerService : BackgroundService
             _logger.LogDebug($"GracePeriod task doing background work.");
 
             // This eShopOnContainers method is querying a database table
-            // and publishing events into the Event Bus (RabbitMS / ServiceBus)
+            // and publishing events into the Event Bus (RabbitMQ / ServiceBus)
             CheckConfirmedGracePeriodOrders();
 
             await Task.Delay(_settings.CheckUpdateTime, stoppingToken);

@@ -30,7 +30,7 @@ Application domains provide a unit of isolation for the common language runtime.
  [How to: Load Assemblies into an Application Domain](../../../docs/framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)  
  Describes how to load an assembly into an application domain.  
   
- [How to: Obtain Type and Member Information from an Assembly](../../../docs/framework/app-domains/how-to-obtain-type-and-member-information-from-an-assembly.md)  
+ [How to: Obtain Type and Member Information from an Assembly](../../standard/assembly/get-type-member-information.md)  
  Describes how to retrieve information about an assembly.  
   
  [Shadow Copying Assemblies](../../../docs/framework/app-domains/shadow-copy-assemblies.md)  
@@ -39,7 +39,7 @@ Application domains provide a unit of isolation for the common language runtime.
  [How to: Receive First-Chance Exception Notifications](../../../docs/framework/app-domains/how-to-receive-first-chance-exception-notifications.md)  
  Explains how you can receive a notification that an exception has been thrown, before the common language runtime has begun searching for exception handlers.  
   
- [Resolving Assembly Loads](../../../docs/framework/app-domains/resolve-assembly-loads.md)  
+ [Resolving Assembly Loads](../../standard/assembly/resolve-loads.md)  
  Provides guidance on using the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event to resolve assembly load failures.  
   
 ## Reference  
@@ -47,10 +47,10 @@ Application domains provide a unit of isolation for the common language runtime.
  Represents an application domain. Provides methods for creating and controlling application domains.  
   
 ## Related Sections  
- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
+ [Assemblies in the Common Language Runtime](../../standard/assembly/assemblies-in-the-common-language-runtime.md)  
  Provides an overview of the functions performed by assemblies.  
   
- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  
+ [Programming with Assemblies](../../standard/assembly/programming.md)  
  Describes how to create, sign, and set attributes on assemblies.  
   
  [Emitting Dynamic Methods and Assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)  

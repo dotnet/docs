@@ -136,7 +136,7 @@ GetObject.exe
   
  To enable full assembly versioning support, we recommend that you deploy strong-named assemblies in the [global assembly cache](../../../docs/framework/app-domains/gac.md) and deploy assemblies that don't have strong names in the application directory. If you want to deploy strong-named assemblies in the application directory, you will not be able to increment a satellite assembly's version number when you update the assembly. Instead, you must perform an in-place update where you replace the existing code with the updated code and maintain the same version number. For example, if you want to update version 1.0.0.0 of a satellite assembly with the fully specified assembly name "myApp.resources, Version=1.0.0.0, Culture=de, PublicKeyToken=b03f5f11d50a3a", overwrite it with the updated myApp.resources.dll that has been compiled with the same, fully specified assembly name "myApp.resources, Version=1.0.0.0, Culture=de, PublicKeyToken=b03f5f11d50a3a". Note that using in-place updates on satellite assembly files makes it difficult for an app to accurately determine the version of a satellite assembly.  
   
- For more information about assembly versioning, see [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md) and [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
+ For more information about assembly versioning, see [Assembly Versioning](../../standard/assembly/versioning.md) and [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   
 <a name="from_file"></a>   
 ## Retrieving Resources from .resources Files  

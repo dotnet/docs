@@ -33,7 +33,7 @@ Specifies an assembly whose non-public types a .netmodule can access.
   
  For more information on building a .netmodule, see [-target:module (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md).  
   
- For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
+ For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).  
   
  This option is not available from within the development environment; it is only available when compiling from the command line.  
   

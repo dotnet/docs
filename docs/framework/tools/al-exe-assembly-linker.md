@@ -172,5 +172,5 @@ al t2.netmodule /target:exe /out:t2a.exe /main:MyClass.Main
 - [Tools](../../../docs/framework/tools/index.md)
 - [*Sn.exe* (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)
 - [*Gacutil.exe* (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)
-- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [Programming with Assemblies](../../standard/assembly/programming.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

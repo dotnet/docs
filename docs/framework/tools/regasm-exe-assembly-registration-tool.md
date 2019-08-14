@@ -32,7 +32,7 @@ regasm assemblyFile [options]
 
 |Option|Description|
 |------------|-----------------|
-|**/codebase**|Creates a Codebase entry in the registry. The Codebase entry specifies the file path for an assembly that is not installed in the global assembly cache. You should not specify this option if you will subsequently install the assembly that you are registering into the global assembly cache. The *assemblyFile* argument that you specify with the **/codebase** option must be a [strong-named assembly](../../../docs/framework/app-domains/strong-named-assemblies.md).|
+|**/codebase**|Creates a Codebase entry in the registry. The Codebase entry specifies the file path for an assembly that is not installed in the global assembly cache. You should not specify this option if you will subsequently install the assembly that you are registering into the global assembly cache. The *assemblyFile* argument that you specify with the **/codebase** option must be a [strong-named assembly](../../standard/assembly/strong-named.md).|
 |**/registered**|Specifies that this tool will only refer to type libraries that have already been registered.|
 |**/asmpath:directory**|Specifies a directory containing assembly references. Must be used with the **/regfile** option.|
 |**/nologo**|Suppresses the Microsoft startup banner display.|

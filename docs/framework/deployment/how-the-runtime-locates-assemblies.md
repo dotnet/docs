@@ -133,7 +133,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
   
 <a name="step2"></a>   
 ## Step 2: Checking for Previously Referenced Assemblies  
- If the requested assembly has also been requested in previous calls, the common language runtime uses the assembly that is already loaded. This can have ramifications when naming assemblies that make up an application. For more information about naming assemblies, see [Assembly Names](../../../docs/framework/app-domains/assembly-names.md).  
+ If the requested assembly has also been requested in previous calls, the common language runtime uses the assembly that is already loaded. This can have ramifications when naming assemblies that make up an application. For more information about naming assemblies, see [Assembly Names](../../standard/assembly/names.md).  
   
  If a previous request for the assembly failed, subsequent requests for the assembly are failed immediately without attempting to load the assembly. Starting with the .NET Framework version 2.0, assembly binding failures are cached, and the cached information is used to determine whether to attempt to load the assembly.  
   

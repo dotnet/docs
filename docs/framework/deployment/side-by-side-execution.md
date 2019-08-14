@@ -29,7 +29,7 @@ Side-by-side execution is the ability to run multiple versions of an application
   
 - Strong-named assemblies.  
   
-     Side-by-side execution uses strong-named assemblies to bind type information to a specific version of an assembly. This prevents an application or component from binding to an invalid version of an assembly. Strong-named assemblies also allow multiple versions of a file to exist on the same computer and to be used by applications. For more information, see [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md).  
+     Side-by-side execution uses strong-named assemblies to bind type information to a specific version of an assembly. This prevents an application or component from binding to an invalid version of an assembly. Strong-named assemblies also allow multiple versions of a file to exist on the same computer and to be used by applications. For more information, see [Strong-Named Assemblies](../../standard/assembly/strong-named.md).  
   
 - Version-aware code storage.  
   
@@ -110,7 +110,7 @@ publicKeyToken=...,
 |[How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)|Describes how to bind an application to a specific version of an assembly.|  
 |[Configuring Assembly Binding Redirection](../../../docs/framework/deployment/configuring-assembly-binding-redirection.md)|Explains how to redirect assembly binding references to a specific version of the .NET Framework assemblies.|  
 |[In-Process Side-by-Side Execution](../../../docs/framework/deployment/in-process-side-by-side-execution.md)|Discusses how you can use in-process side-by-side runtime host activation to run multiple versions of the CLR in a single process.|  
-|[Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)|Provides a conceptual overview of assemblies.|  
+|[Assemblies in the Common Language Runtime](../../standard/assembly/assemblies-in-the-common-language-runtime.md)|Provides a conceptual overview of assemblies.|  
 |[Application Domains](../../../docs/framework/app-domains/application-domains.md)|Provides a conceptual overview of application domains.|  
   
 ## Reference  

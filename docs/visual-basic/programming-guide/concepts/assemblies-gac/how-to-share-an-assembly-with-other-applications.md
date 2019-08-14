@@ -10,18 +10,18 @@ Assemblies can be private or shared: by default, most simple programs consist of
   
 ### Sharing an assembly  
   
-1. Create your assembly. For more information, see [Creating Assemblies](../../../../framework/app-domains/create-assemblies.md).  
+1. Create your assembly. For more information, see [Creating Assemblies](../../../../standard/assembly/create.md).  
   
-2. Assign a strong name to your assembly. For more information, see [How to: Sign an Assembly with a Strong Name](../../../../framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md).  
+2. Assign a strong name to your assembly. For more information, see [How to: Sign an Assembly with a Strong Name](../../../../standard/assembly/sign-strong-name.md).  
   
-3. Assign version information to your assembly. For more information, see [Assembly Versioning](../../../../framework/app-domains/assembly-versioning.md).  
+3. Assign version information to your assembly. For more information, see [Assembly Versioning](../../../../standard/assembly/versioning.md).  
   
-4. Add your assembly to the Global Assembly Cache. For more information, see [How to: Install an Assembly into the Global Assembly Cache](../../../../framework/app-domains/how-to-install-an-assembly-into-the-gac.md).  
+4. Add your assembly to the Global Assembly Cache. For more information, see [How to: Install an Assembly into the Global Assembly Cache](../../../../standard/assembly/install-into-gac.md).  
   
-5. Access the types contained in the assembly from the other applications. For more information, see [How to: Reference a Strong-Named Assembly](../../../../framework/app-domains/how-to-reference-a-strong-named-assembly.md).  
+5. Access the types contained in the assembly from the other applications. For more information, see [How to: Reference a Strong-Named Assembly](../../../../standard/assembly/reference-strong-named.md).  
   
 ## See also
 
 - [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
 - [Assemblies in .NET](../../../../standard/assembly/index.md)
-- [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)
+- [Programming with Assemblies](../../../../standard/assembly/programming.md)

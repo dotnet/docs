@@ -70,7 +70,7 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)  
  Provides a conceptual overview of common language runtime assemblies.  
   
- [Assembly Versioning](../../csharp/versioning.md)  
+ [Assembly Versioning](versioning.md)  
  Provides an overview of assembly binding and of the <xref:System.Reflection.AssemblyVersionAttribute> and <xref:System.Reflection.AssemblyInformationalVersionAttribute> attributes.  
   
  [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)  

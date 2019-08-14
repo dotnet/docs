@@ -44,4 +44,4 @@ In general, a static assembly can consist of four elements:
 
 - [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)
 - [Assembly Manifest](manifest.md)
-- [Assembly Security Considerations](../../framework/data/adonet/ef/security-considerations.md)
+- [Assembly Security Considerations](security-considerations.md)

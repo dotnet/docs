@@ -35,7 +35,7 @@ HRESULT LoadTypeLibWithResolver(
  [in] The file path of the type library.  
   
  `regkind`  
- [in] A [REGKIND enumeration](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/ne-oleauto-tagregkind) flag that controls how the type library is registered. Its possible values are:  
+ [in] A [REGKIND enumeration](https://docs.microsoft.com/windows/win32/api/oleauto/ne-oleauto-regkind) flag that controls how the type library is registered. Its possible values are:  
   
 - `REGKIND_DEFAULT`: Use default registration behavior.  
   

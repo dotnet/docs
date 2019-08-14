@@ -58,7 +58,7 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  The pattern is as follows:  
   
-- A method **Add_EventName_Handler** with two parameters. The first parameter is the instance to which the event handler is added. The second parameter is the event handler to add. The method must be `public` and `static`, with no return value.  
+- A method __Add*EventName*Handler__ with two parameters. The first parameter is the instance to which the event handler is added. The second parameter is the event handler to add. The method must be `public` and `static`, with no return value.  
   
 - A method **Remove_EventName_Handler** with two parameters. The first parameter is the instance from which the event handler is removed. The second parameter is the event handler to remove. The method must be `public` and `static`, with no return value.  
   

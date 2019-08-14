@@ -53,7 +53,7 @@ gacutil -i hello.dll
 
 ## See also
 
-- [Working with assemblies and the global assembly cache](working-with-assemblies-and-the-../../framework/app-domains/gac.md)
-- [How to: Remove an assembly from the global assembly cache](how-to-remove-an-assembly-from-the-../../framework/app-domains/gac.md)
+- [Working with assemblies and the global assembly cache](../../framework/app-domains/working-with-assemblies-and-the-gac.md)
+- [How to: Remove an assembly from the global assembly cache](../../framework/app-domains/how-to-remove-an-assembly-from-the-gac.md)
 - [Gacutil.exe (Global assembly cache tool)](../../framework/tools/gacutil-exe-gac-tool.md)
 - [How to: Sign an assembly with a strong name](sign-strong-name.md)

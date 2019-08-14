@@ -24,7 +24,7 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control must contain 
     > [!NOTE]
     >  You can modify column properties in the **Edit Columns** dialog box, which you can access from the control's smart tag.
 
-### To remove a column using the designer
+## To remove a column using the designer
 
 1. Choose **Edit Columns** from the control's smart tag.
 

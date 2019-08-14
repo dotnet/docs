@@ -52,7 +52,7 @@ ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
 
      If there are no table styles, you will see the table, but with minimal formatting and with all columns visible.
 
-### To data-bind the DataGrid control to multiple tables in a dataset in the designer
+## To data-bind the DataGrid control to multiple tables in a dataset in the designer
 
 1. Set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to the object containing the data items you want to bind to.
 

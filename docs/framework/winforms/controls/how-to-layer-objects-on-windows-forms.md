@@ -22,7 +22,7 @@ When you create a complex user interface, or work with a multiple document inter
 
 2. On the **Format** menu, point to **Order**, and then click **Bring To Front** or **Send To Back**.
 
-### To layer controls programmatically
+## To layer controls programmatically
 
 - Use the <xref:System.Windows.Forms.Control.BringToFront%2A> and <xref:System.Windows.Forms.Control.SendToBack%2A> methods to manipulate the z-order of the controls.
 

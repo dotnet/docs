@@ -26,7 +26,7 @@ Most forms are designed by adding controls to the surface of the form to define 
     > [!NOTE]
     >  Each control has a default size defined. You can add a control to your form in the control's default size by dragging it from the **Toolbox** to the form.
 
-### To drag a control to a form
+## To drag a control to a form
 
 1. Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).
 
@@ -42,7 +42,7 @@ Most forms are designed by adding controls to the surface of the form to define 
     > [!NOTE]
     >  The following procedure requires the existence of a form with a **Button** control, `Button1`, already placed on it.
 
-### To add a control to a form programmatically
+## To add a control to a form programmatically
 
 1. In the method that handles the button's `Click` event within your form's class, insert code similar to the following to add a reference to your control variable, set the control's `Location`, and add the control.
 

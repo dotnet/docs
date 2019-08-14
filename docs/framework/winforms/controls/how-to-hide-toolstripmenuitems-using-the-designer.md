@@ -19,7 +19,7 @@ Hiding menu items is a way to control the user interface (UI) of your applicatio
 > [!NOTE]
 >  You will rarely hide an entire menu except for multiple document interface (MDI) child menus in a merging scenario.
 
-### To hide a submenu item
+## To hide a submenu item
 
 1. Select the submenu item and set its <xref:System.Windows.Forms.ToolStripItem.Visible%2A> property to `false`.
 

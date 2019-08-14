@@ -36,7 +36,7 @@ The tab order is the order in which a user moves focus from one control to anoth
 
  Finally, any control of the many on your form can be skipped in the tab order. Usually, pressing TAB successively at run time selects each control in the tab order. By turning off the <xref:System.Windows.Forms.Control.TabStop%2A> property, you can make a control be passed over in the tab order of the form.
 
-#### To remove a control from the tab order
+## To remove a control from the tab order
 
 1. Set the control's <xref:System.Windows.Forms.Control.TabStop%2A> property to `false` in the Properties window.
 

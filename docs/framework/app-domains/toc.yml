@@ -1,25 +1,8 @@
 - name: Application Domains and Assemblies
   href: index.md
   items:
-  - name: Assemblies in the Common Language Runtime
-    href: assemblies-in-the-common-language-runtime.md
-    items:
-    - name: Assembly Contents
-      href: assembly-contents.md
-    - name: Assembly Manifest
-      href: assembly-manifest.md
-    - name: Global Assembly Cache
-      href: gac.md
-    - name: Strong-Named Assemblies
-      href: strong-named-assemblies.md
-    - name: Assembly Security Considerations
-      href: assembly-security-considerations.md
-    - name: Assembly Versioning
-      href: assembly-versioning.md
-    - name: Assembly Placement
-      href: assembly-placement.md
-    - name: Assemblies and Side-by-Side Execution
-      href: assemblies-and-side-by-side-execution.md
+  - name: Global Assembly Cache
+    href: gac.md
   - name: Application Domains
     href: application-domains.md
   - name: Application Domains and Assemblies How-to Topics
@@ -37,62 +20,18 @@
       href: retrieve-setup-information.md
     - name: "How to: Load Assemblies into an Application Domain"
       href: how-to-load-assemblies-into-an-application-domain.md
-    - name: "How to: Obtain Type and Member Information from an Assembly"
-      href: how-to-obtain-type-and-member-information-from-an-assembly.md
     - name: Shadow Copying Assemblies
       href: shadow-copy-assemblies.md
     - name: "How to: Receive First-Chance Exception Notifications"
       href: how-to-receive-first-chance-exception-notifications.md
-    - name: Resolving Assembly Loads
-      href: resolve-assembly-loads.md
-  - name: Programming with Assemblies
-    href: programming-with-assemblies.md
+  - name: Running Intranet Applications in Full Trust
+    href: running-intranet-applications-in-full-trust.md
+  - name: Working with Assemblies and the Global Assembly Cache
+    href: working-with-assemblies-and-the-gac.md
     items:
-    - name: Creating Assemblies
-      href: create-assemblies.md
-    - name: Assembly Names
-      href: assembly-names.md
-    - name: "How to: Determine an Assembly's Fully Qualified Name"
-      href: how-to-determine-assembly-fully-qualified-name.md
-    - name: Running Intranet Applications in Full Trust
-      href: running-intranet-applications-in-full-trust.md
-    - name: Assembly Location
-      href: assembly-location.md
-    - name: "How to: Build a Single-File Assembly"
-      href: how-to-build-a-single-file-assembly.md
-    - name: Multifile Assemblies
-      href: multifile-assemblies.md
-    - name: "How to: Build a Multifile Assembly"
-      href: how-to-build-a-multifile-assembly.md
-    - name: Setting Assembly Attributes
-      href: set-assembly-attributes.md
-    - name: Creating and Using Strong-Named Assemblies
-      href: create-and-use-strong-named-assemblies.md
-      items:
-      - name: "How to: Create a Public-Private Key Pair"
-        href: how-to-create-a-public-private-key-pair.md
-      - name: "How to: Sign an Assembly with a Strong Name"
-        href: how-to-sign-an-assembly-with-a-strong-name.md
-      - name: Enhanced Strong Naming
-        href: enhanced-strong-naming.md
-      - name: "How to: Reference a Strong-Named Assembly"
-        href: how-to-reference-a-strong-named-assembly.md
-      - name: "How to: Disable the Strong-Name Bypass Feature"
-        href: how-to-disable-the-strong-name-bypass-feature.md
-    - name: Delay Signing an Assembly
-      href: delay-sign-assembly.md
-    - name: Working with Assemblies and the Global Assembly Cache
-      href: working-with-assemblies-and-the-gac.md
-      items:
-      - name: "How to: Install an Assembly into the Global Assembly Cache"
-        href: how-to-install-an-assembly-into-the-gac.md
-      - name: "How to: View the Contents of the Global Assembly Cache"
-        href: how-to-view-the-contents-of-the-gac.md
-      - name: "How to: Remove an Assembly from the Global Assembly Cache"
-        href: how-to-remove-an-assembly-from-the-gac.md
-      - name: Using Serviced Components with the Global Assembly Cache
-        href: use-serviced-components-with-the-gac.md
-    - name: "How to: View Assembly Contents"
-      href: how-to-view-assembly-contents.md
-    - name: Type Forwarding in the Common Language Runtime
-      href: type-forwarding-in-the-common-language-runtime.md
+    - name: "How to: View the Contents of the Global Assembly Cache"
+      href: how-to-view-the-contents-of-the-gac.md
+    - name: "How to: Remove an Assembly from the Global Assembly Cache"
+      href: how-to-remove-an-assembly-from-the-gac.md
+    - name: Using Serviced Components with the Global Assembly Cache
+      href: use-serviced-components-with-the-gac.md

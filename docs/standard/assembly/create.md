@@ -42,7 +42,7 @@ Special considerations must be made when making common language runtime assembli
 
 ## See also
 
-- [Programming with Assemblies](../../csharp/programming-guide/classes-and-structs/programming.md)
+- [Programming with Assemblies](programming.md)
 - [Assembly Versioning](versioning.md)
 - [How to: Build a Single-File Assembly](build-single-file.md)
 - [How to: Build a Multifile Assembly](build-multifile.md)

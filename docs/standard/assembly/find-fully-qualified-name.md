@@ -38,7 +38,7 @@ To discover the fully qualified name of an assembly in the global assembly cache
   
 ## See also
 
-- [Assembly Names](../../csharp/programming-guide/inside-a-program/names.md)
+- [Assembly Names](names.md)
 - [Creating Assemblies](create.md)
 - [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)
 - [Global Assembly Cache](../../framework/app-domains/gac.md)

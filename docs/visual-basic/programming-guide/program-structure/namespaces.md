@@ -118,7 +118,7 @@ End Namespace
 - <xref:System.Windows.Forms.ListBox>
 - <xref:System.Windows.Forms?displayProperty=nameWithType>
 - [Assemblies in .NET](../../../standard/assembly/index.md)
-- [How to: Create and Use Assemblies Using the Command Line](../../../standard/assembly/create-use-command-line.md)
+- [How to: Create and Use Assemblies Using the Command Line](../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)
 - [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
 - [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
 - [Writing Code in Office Solutions](/visualstudio/vsto/writing-code-in-office-solutions)

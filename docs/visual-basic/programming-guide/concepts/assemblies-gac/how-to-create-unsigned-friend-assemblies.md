@@ -83,5 +83,5 @@ This example shows how to use friend assemblies with assemblies that are unsigne
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
 - [Assemblies in .NET](../../../../standard/assembly/index.md)
 - [Friend Assemblies](../../../../standard/assembly/friend.md)
-- [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../standard/assembly/create-signed-friend.md)
+- [How to: Create Signed Friend Assemblies (Visual Basic)](how-to-create-signed-friend-assemblies.md)
 - [Programming Guide Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

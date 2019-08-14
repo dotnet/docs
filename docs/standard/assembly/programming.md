@@ -20,7 +20,7 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [Creating Assemblies](create.md)  
  Provides an overview of single-file and multifile assemblies.  
   
- [Assembly Names](../../csharp/programming-guide/inside-a-program/names.md)  
+ [Assembly Names](names.md)  
  Provides an overview of assembly naming.  
   
  [How to: Determine an Assembly's Fully Qualified Name](find-fully-qualified-name.md)  
@@ -29,7 +29,7 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [Running Intranet Applications in Full Trust](../../framework/app-domains/running-intranet-applications-in-full-trust.md)  
  Describes how to specify legacy security policy for full-trust assemblies on an intranet share.  
   
- [Assembly Location](../../framework/configure-apps/location.md)  
+ [Assembly Location](location.md)  
  Provides an overview of where to locate assemblies.  
   
  [How to: Build a Single-File Assembly](build-single-file.md)  
@@ -76,5 +76,5 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)  
  Describes how the runtime determines which assembly to use to fulfill a binding request.  
   
- [Reflection](../../csharp/programming-guide/concepts/attributes/reflection.md)  
+ [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)   
  Describes how to use the **Reflection** class to obtain information about an assembly.

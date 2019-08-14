@@ -83,4 +83,4 @@ Assembly attributes are values that provide information about an assembly. The a
 ## See also
 
 - [Creating Assemblies](create.md)
-- [Programming with Assemblies](../../csharp/programming-guide/classes-and-structs/programming.md)
+- [Programming with Assemblies](programming.md)

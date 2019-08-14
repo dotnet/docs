@@ -80,11 +80,9 @@ This approach is also significantly less performant than using the serializer's 
 
 [!code-csharp[example-showing-datetime-parse](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example1/Program.cs)]
 
-```markdown
-> [!NOTE]
-> When implementing JsonConverter<DateTime>, the `typeToConvert` parameter will always be typeof(DateTime).
-> The parameter is useful for polymorphic cases and when using generics to get typeof(T) in a performant way.
-```
+[!NOTE]
+When implementing JsonConverter<DateTime>, the `typeToConvert` parameter will always be typeof(DateTime).
+The parameter is useful for polymorphic cases and when using generics to get typeof(T) in a performant way.
 
 ### Using <xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>
 
@@ -98,10 +96,8 @@ This example shows a custom converter that serializes and deserializes <xref:Sys
 
 [!code-csharp[example-showing-utf8-parser-and-formatter](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example2/Program.cs)]
 
-```markdown
 > [!NOTE]
 > The "R" standard format will always be 29 characters long.
-```
 
 ### Using `DateTime(Offset).Parse` as a fallback to the serializer's native parsing
 

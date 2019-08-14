@@ -41,4 +41,4 @@ Strong-naming an assembly creates a unique identity for the assembly, and can pr
 - [Global Assembly Cache](../../framework/app-domains/gac.md)
 - [How to: Sign an Assembly with a Strong Name](sign-strong-name.md)
 - [Sn.exe (Strong Name Tool)](../../framework/tools/sn-exe-strong-name-tool.md)
-- [Creating and Using Strong-Named Assemblies](strong-named.md)
+- [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)

@@ -129,4 +129,4 @@ A strong name signature is an identity mechanism in the .NET Framework for ident
   
 ## See also
 
-- [Creating and Using Strong-Named Assemblies](strong-named.md)
+- [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)

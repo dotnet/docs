@@ -51,4 +51,4 @@ Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), strong-name s
 
 - [Sn.exe (Strong Name Tool)](../../framework/tools/sn-exe-strong-name-tool.md)
 - [\<bypassTrustedAppStrongNames> Element](../../framework/configure-apps/file-schema/runtime/bypasstrustedappstrongnames-element.md)
-- [Creating and Using Strong-Named Assemblies](strong-named.md)
+- [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)

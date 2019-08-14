@@ -44,7 +44,7 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [Setting Assembly Attributes](set-attributes.md)  
  Describes assembly attributes and how to set them.  
   
- [Creating and Using Strong-Named Assemblies](strong-named.md)  
+ [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)  
  Describes how and why you sign an assembly with a strong name, and includes how-to topics.  
   
  [Delay Signing an Assembly](delay-sign.md)  

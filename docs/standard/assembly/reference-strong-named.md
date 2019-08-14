@@ -66,4 +66,4 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
   
 ## See also
 
-- [Creating and Using Strong-Named Assemblies](strong-named.md)
+- [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)

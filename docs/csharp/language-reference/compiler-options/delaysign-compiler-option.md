@@ -35,7 +35,7 @@ When you request a fully signed assembly, the compiler hashes the file that cont
 
 For example, using **-delaysign+** allows a tester to put the assembly in the global cache. After testing, you can fully sign the assembly by placing the private key in the assembly using the [Assembly Linker](../../../framework/tools/al-exe-assembly-linker.md) utility.
 
-For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/strong-named.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign.md).
+For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

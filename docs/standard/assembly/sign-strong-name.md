@@ -96,7 +96,7 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
   
 ## See also
 
-- [Creating and Using Strong-Named Assemblies](strong-named.md)
+- [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)
 - [How to: Create a Public-Private Key Pair](create-public-private-key-pair.md)
 - [Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md)
 - [Delay Signing an Assembly](delay-sign.md)

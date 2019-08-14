@@ -85,10 +85,10 @@ This example shows how to use friend assemblies with assemblies that have strong
 ## See also
 
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
-- [Assemblies in .NET](../../../../standard/assembly/index.md)
+- [Assemblies in .NET](index.md)
 - [Friend Assemblies](friend.md)
 - [How to: Create Unsigned Friend Assemblies (C#)](create-unsigned-friend.md)
 - [/keyfile](../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)
 - [Sn.exe (Strong Name Tool)](../../framework/tools/sn-exe-strong-name-tool.md)
 - [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [C# Programming Guide](../../csharp/programming-guide/index.md)

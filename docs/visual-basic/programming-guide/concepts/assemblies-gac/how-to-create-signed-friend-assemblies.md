@@ -86,5 +86,5 @@ This example shows how to use friend assemblies with assemblies that have strong
 - [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../standard/assembly/create-unsigned-friend.md)
 - [-keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)
 - [Sn.exe (Strong Name Tool)](../../../../framework/tools/sn-exe-strong-name-tool.md))
-- [Creating and Using Strong-Named Assemblies](../../../../standard/assembly/strong-named.md)
+- [Creating and Using Strong-Named Assemblies](../../../../standard/assembly/create-use-strong-named.md)
 - [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

@@ -67,7 +67,7 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [How to: Obtain Type and Member Information from an Assembly](get-type-member-information.md)  
  Describes how to programmatically obtain type and other information from an assembly.  
   
- [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)  
+ [Assemblies in .NET](index.md)  
  Provides a conceptual overview of common language runtime assemblies.  
   
  [Assembly Versioning](versioning.md)  

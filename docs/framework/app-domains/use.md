@@ -47,7 +47,7 @@ Application domains provide a unit of isolation for the common language runtime.
  Represents an application domain. Provides methods for creating and controlling application domains.  
   
 ## Related Sections  
- [Assemblies in the Common Language Runtime](../../standard/assembly/assemblies-in-the-common-language-runtime.md)  
+ [Assemblies in .NET](../../standard/assembly/index.md)  
  Provides an overview of the functions performed by assemblies.  
   
  [Programming with Assemblies](../../standard/assembly/program.md)  

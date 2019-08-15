@@ -110,5 +110,5 @@ ms.author: "ronpet"
 - [Security](../../docs/standard/security/index.md)
 - [Interoperating with Unmanaged Code](../../docs/framework/interop/index.md)
 - [Deployment](../../docs/framework/deployment/net-framework-applications.md)
-- [Assemblies in the Common Language Runtime](assembly/assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](assembly/index.md)
 - [Application Domains](../../docs/framework/app-domains/application-domains.md)

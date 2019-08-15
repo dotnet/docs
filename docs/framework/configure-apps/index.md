@@ -121,4 +121,4 @@ The .NET Framework, through configuration files, gives developers and administra
 - [ASP.NET Web Site Administration](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/6hy1xzbw(v=vs.90))
 - [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))
 - [Caspol.exe (Code Access Security Policy Tool)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)
-- [Assemblies in the Common Language Runtime](../../standard/assembly/assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](../../standard/assembly/index.md)

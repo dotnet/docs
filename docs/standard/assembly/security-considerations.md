@@ -59,5 +59,5 @@ ms.author: "ronpet"
 ## See also
 
 - [Strong-Named Assemblies](strong-named.md)
-- [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](index.md)
 - [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md)

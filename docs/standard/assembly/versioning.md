@@ -68,4 +68,4 @@ All versioning of assemblies that use the common language runtime is done at the
 - [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](../../../docs/framework/configure-apps/index.md)
 - [Setting Assembly Attributes](set-attributes.md)
-- [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](index.md)

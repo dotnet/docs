@@ -61,4 +61,4 @@ System.Console.WriteLine(info);
 ## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Assemblies in the Common Language Runtime](../../../standard/assembly/assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](../../../standard/assembly/index.md)

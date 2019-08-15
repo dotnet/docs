@@ -1,31 +1,28 @@
 - name: Assemblies in .NET
   href: index.md
   items:
-  - name: .NET assembly file format
+  - name: Assembly contents
+    href: contents.md
+  - name: Assembly manifest
+    href: manifest.md
+  - name: Strong-named assemblies
+    href: strong-named.md
+  - name: Assembly security considerations
+    href: security-considerations.md
+  - name: Assembly versioning
+    href: versioning.md
+  - name: Assembly placement
+    href: placement.md
+  - name: Assemblies and side-by-side execution
+    href: side-by-side-execution.md
+  - name: Assembly file format
     href: file-format.md
   - name: "How to: Use and debug assembly unloadability in .NET Core"
     href: unloadability.md
-  - name: Assemblies in the Common Language Runtime
-    href: assemblies-in-the-common-language-runtime.md
-    items:
-    - name: Assembly contents
-      href: contents.md
-    - name: Assembly manifest
-      href: manifest.md
-    - name: Strong-named assemblies
-      href: strong-named.md
-    - name: Assembly security considerations
-      href: security-considerations.md
-    - name: Assembly versioning
-      href: versioning.md
-    - name: Assembly placement
-      href: placement.md
-    - name: Assemblies and side-by-side execution
-      href: side-by-side-execution.md
-    - name: "How to: Obtain type and member information from an assembly"
-      href: get-type-member-information.md
-    - name: Resolve assembly loads
-      href: resolve-loads.md
+  - name: "How to: Obtain type and member information from an assembly"
+    href: get-type-member-information.md
+  - name: Resolve assembly loads
+    href: resolve-loads.md
   - name: Program with assemblies
     href: program.md
     items:

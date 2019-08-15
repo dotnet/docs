@@ -29,7 +29,7 @@ Hosts such as Microsoft Internet Explorer, ASP.NET, and the Windows shell load t
  [Emitting Dynamic Methods and Assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)  
  Describes how to create dynamic assemblies.  
   
- [Assemblies in the Common Language Runtime](../../standard/assembly/assemblies-in-the-common-language-runtime.md)  
+ [Assemblies in .NET](../../standard/assembly/index.md)  
  Provides a conceptual overview of assemblies.  
   
  [Application Domains](../../../docs/framework/app-domains/application-domains.md)  

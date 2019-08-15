@@ -18,4 +18,4 @@ Side-by-side execution is the ability to store and execute multiple versions of 
 ## See also
 
 - [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](index.md)

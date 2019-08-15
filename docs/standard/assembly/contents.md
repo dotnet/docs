@@ -42,6 +42,6 @@ In general, a static assembly can consist of four elements:
   
 ## See also
 
-- [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](index.md)
 - [Assembly Manifest](manifest.md)
 - [Assembly Security Considerations](security-considerations.md)

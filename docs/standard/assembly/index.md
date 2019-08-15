@@ -1,8 +1,21 @@
 ---
 title: "Assemblies in .NET"
-ms.date: 07/10/2018
+ms.date: 08/15/2019
 ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
+helpviewer_keywords: 
+  - "dynamic assemblies"
+  - "security [.NET Framework], boundaries"
+  - "boundaries of assemblies"
+  - "assemblies [.NET Framework], about"
+  - "assemblies [.NET Framework], boundaries"
+  - "reference scope boundaries"
+  - "assemblies [.NET Framework]"
+  - "version boundaries"
+  - "type boundaries"
+author: "rpetrusha"
+ms.author: "ronpet"
 ---
+
 # Assemblies in .NET
 
 Assemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. Assemblies take the form of executable (*.exe*) or dynamic link library (*.dll*) files, and are the building blocks of the .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations. You can think of an assembly as a collection of types and resources that form a logical unit of functionality and are built to work together.
@@ -95,7 +108,7 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 ## See also
 
 - [.NET assembly file format](file-format.md)
-- [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](index.md)
 - [Friend assemblies](friend.md)
 - [How to: Load and unload assemblies (C#)](load-unload.md)
 - [How to: Load and unload assemblies (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md)

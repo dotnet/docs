@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
 ---
 # Typography in WPF
-This topic introduces the major typographic features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. These features include improved quality and performance of text rendering, [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs).  
+This topic introduces the major typographic features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. These features include improved quality and performance of text rendering, OpenType typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs).  
   
 <a name="Improved_Quality_and_Performance_of_Text"></a>   
 ## Improved Quality and Performance of Text  

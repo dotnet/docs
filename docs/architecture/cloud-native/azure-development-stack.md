@@ -5,7 +5,7 @@ author: robvet
 ms.date: 08/14/2019
 ---
 
-# The Azure Cloud-Native Development Stack
+# The Azure cloud-native development stack
 
 The Azure cloud offers a tightly integrated, but full and open stack for constructing and managing cloud-native workloads.
 

@@ -4,7 +4,7 @@ description: Architecting Cloud-Native .NET Apps for Azure | Introduction to clo
 author: robvet
 ms.date: 08/14/2019
 ---
-# Introduction to Cloud-Native Applications
+# Introduction to cloud-native applications
 
 Another day, at your table, building the next big thing.
 
@@ -24,11 +24,11 @@ If you follow the guidance from past 15 years, you'll most likely build the syst
 
 **Figure 1-1**. Traditional monolithic design
 
-You construct a large core containing all of your business and domian logic. It include many modules, Billing, Payments, Passenger Management and more. The core app communicates with a large relational database and exposes functionality via REST API and, perhaps, HTML interfaces.
+You construct a large core containing all of your business and domian logic. It include many modules such as Billing, Payments, Passenger Management and more. The core app communicates with a large relational database and exposes functionality via REST API and, perhaps, HTML interfaces.
 
 Congratulations!  You just created a monolithic application.
 
-Not all is bad. Monoliths offers some distinct advantages. For example, they are straightforward to...
+Not all is bad. Monoliths offer some distinct advantages. For example, they are straightforward to...
 
 - build 
 - test
@@ -36,9 +36,9 @@ Not all is bad. Monoliths offers some distinct advantages. For example, they are
 - troubleshoot
 - scale
 
-Many successful apps which exist today were created as monoliths. The app is a hit and continues to grow and evolve, iteration after iteration, adding more and more functionality.
+Many successful apps which exist today were created as monoliths. The app is a hit and continues to evolve, iteration after iteration, adding more and more functionality.
 
-At some point, however, you being to feel uncomfortable. You find yourself losing control of the application and eventually enter a state known as the **Fear Cycle**.
+At some point, however, you being to feel uncomfortable. You find yourself losing control of the application. As time goes on, the feeling become more intense and you eventually enter a state known as the **Fear Cycle**.
 
 - The app has become so overwhelmingly complicated that no single person understands it.
 - You fear making changes - each change has unintended and costly side effects.
@@ -50,13 +50,13 @@ At some point, however, you being to feel uncomfortable. You find yourself losin
 - Architectural erosion sets in as the code base deteriorates with never-ending "special cases"
 - The consultants come in tell you to rewrite it
 
-Many organizations address the monolithic fear cycle by adopting a cloud-native approach. Figure 1-2 shows the same system built with cloud-native apporach.
+Many organizations address the monolithic fear cycle by adopting a cloud-native approach. Figure 1-2 shows the same system built applying cloud-native techniques and practices.
 
 ![Temporary monolithic design](media/microservice-design-temporary.png)
 
 **Figure 1-2**. Microservice based architecture
 
-Note in the previous image how the application is decomposed across a set of small isolated microservices. Each service is self-contained and includes its own code, data and dependencies. Each is deployed in a software container and managed buy a container orchestrator. Most importantly, the application takes full advanatage of the scalility and resiliencey features found in modern cloud platforms.
+Note how the application is decomposed across a set of small isolated microservices. Each service is self-contained and includes its own code, data and dependencies. Each is deployed in a software container and managed buy a container orchestrator. Most importantly, the application takes full advanatage of the scalility and resiliencey features found in modern cloud platforms.
 
 ### Cloud-native computing
 

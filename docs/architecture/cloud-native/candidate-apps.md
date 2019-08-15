@@ -4,7 +4,7 @@ description: Architecting Cloud-Native .NET Apps for Azure | Candidate apps for 
 author: robvet
 ms.date: 08/14/2019
 ---
-# Candidate Apps for Cloud Native
+# Candidate apps for cloud native
 
 Look at the apps in your portfolio. How many of them qualify for a cloud-native architecture? All of them? Perhaps some?
 

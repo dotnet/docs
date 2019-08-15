@@ -4,7 +4,7 @@ description: Architecting Cloud-Native .NET Apps for Azure | Defining Cloud Nati
 author: robvet
 ms.date: 08/13/2019
 ---
-# Defining Cloud Native
+# Defining cloud native
 
 Stop what you’re doing and ping 10 of your colleagues. Ask them to define the term “Cloud Native.” Good chance you’ll get eight different answers. Interestingly, six months from now, as cloud-native technologies and practices evolve, so will their definition.
 

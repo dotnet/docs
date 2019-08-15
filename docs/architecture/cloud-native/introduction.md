@@ -4,7 +4,7 @@ description: Architecting Cloud-Native .NET Apps for Azure | Introduction to clo
 author: robvet
 ms.date: 08/14/2019
 ---
-# Introduction to Cloud-Native Applications
+# Introduction to cloud-native applications
 
 Welcome to the world of Cloud-Native computing!
 

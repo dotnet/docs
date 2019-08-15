@@ -532,7 +532,7 @@ If you no longer need the Windows service app, you can remove it.
 
 Now that you've created the service, you can:
 
-- Create a standalone setup program for others to use to install your Windows service. Use the [WiX Toolset](http://wixtoolset.org/) to create an installer for a Windows service. For other ideas, see [Create an installer package](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
+- Create a standalone setup program for others to use to install your Windows service. Use the [WiX Toolset](https://wixtoolset.org/) to create an installer for a Windows service. For other ideas, see [Create an installer package](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
 
 - Explore the <xref:System.ServiceProcess.ServiceController> component, which enables you to send commands to the service you've installed.
 

@@ -43,4 +43,4 @@ To discover the fully qualified name of an assembly in the global assembly cache
 - [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)
 - [Global Assembly Cache](../../framework/app-domains/gac.md)
 - [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Programming with Assemblies](programming.md)
+- [Program with assemblies](program.md)

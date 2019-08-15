@@ -71,4 +71,4 @@ An organization can have a closely guarded key pair that developers do not have 
 - [Creating Assemblies](create.md)
 - [How to: Create a Public-Private Key Pair](create-public-private-key-pair.md)
 - [Sn.exe (Strong Name Tool)](../../framework/tools/sn-exe-strong-name-tool.md)
-- [Programming with Assemblies](programming.md)
+- [Program with assemblies](program.md)

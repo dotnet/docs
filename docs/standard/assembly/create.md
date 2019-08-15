@@ -42,7 +42,7 @@ Special considerations must be made when making common language runtime assembli
 
 ## See also
 
-- [Programming with Assemblies](programming.md)
+- [Program with assemblies](program.md)
 - [Assembly Versioning](versioning.md)
 - [How to: Build a Single-File Assembly](build-single-file.md)
 - [How to: Build a Multifile Assembly](build-multifile.md)

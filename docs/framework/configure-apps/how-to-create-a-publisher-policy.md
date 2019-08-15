@@ -96,7 +96,7 @@ Vendors of assemblies can state that applications should use a newer version of 
   
 ## See also
 
-- [Programming with Assemblies](../../standard/assembly/programming.md)
+- [Programming with Assemblies](../../standard/assembly/program.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps by using Configuration Files](../../../docs/framework/configure-apps/index.md)
 - [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)

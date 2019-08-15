@@ -50,7 +50,7 @@ Application domains provide a unit of isolation for the common language runtime.
  [Assemblies in the Common Language Runtime](../../standard/assembly/assemblies-in-the-common-language-runtime.md)  
  Provides an overview of the functions performed by assemblies.  
   
- [Programming with Assemblies](../../standard/assembly/programming.md)  
+ [Programming with Assemblies](../../standard/assembly/program.md)  
  Describes how to create, sign, and set attributes on assemblies.  
   
  [Emitting Dynamic Methods and Assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)  

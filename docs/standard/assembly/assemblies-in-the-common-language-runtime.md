@@ -50,7 +50,7 @@ Assemblies are the building blocks of .NET Framework applications; they form the
 |[Assembly Versioning](versioning.md)|Provides an overview of the .NET Framework versioning policy.|  
 |[Assembly Placement](placement.md)|Discusses where to locate assemblies.|  
 |[Assemblies and Side-by-Side Execution](side-by-side-execution.md)|Provides an overview of using multiple versions of the runtime or of an assembly simultaneously.|  
-|[Programming with Assemblies](programming.md)|Describes how to create, sign, and set attributes on assemblies.|  
+|[Program with assemblies](program.md)|Describes how to create, sign, and set attributes on assemblies.|  
 |[Emitting Dynamic Methods and Assemblies](../../framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)|Describes how to create dynamic assemblies.|  
 |[How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)|Describes how the .NET Framework resolves assembly references at run time.|  
   

@@ -24,4 +24,4 @@ Assemblies can be private or shared: by default, most simple programs consist of
 
 - [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
 - [Assemblies in .NET](../../../../standard/assembly/index.md)
-- [Programming with Assemblies](../../../../standard/assembly/programming.md)
+- [Programming with Assemblies](../../../../standard/assembly/program.md)

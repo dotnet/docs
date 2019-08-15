@@ -22,7 +22,7 @@ Hosts such as Microsoft Internet Explorer, ASP.NET, and the Windows shell load t
  [Using Application Domains](../../../docs/framework/app-domains/use.md)  
  Provides examples of creating, configuring, and using application domains.  
   
- [Programming with Assemblies](../../standard/assembly/programming.md)  
+ [Programming with Assemblies](../../standard/assembly/program.md)  
  Describes how to create, sign, and set attributes on assemblies.  
   
 ## Related Sections  

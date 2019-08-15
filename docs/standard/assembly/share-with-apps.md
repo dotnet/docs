@@ -23,4 +23,4 @@ Assemblies can be private or shared: by default, most simple programs consist of
 ## See also
 
 - [C# Programming Guide](../../csharp/programming-guide/index.md)
-- [Programming with Assemblies](programming.md)
+- [Program with assemblies](program.md)

@@ -65,5 +65,5 @@ If you intend to share an assembly among several applications, you can install i
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  Describes how the common language runtime locates and loads the assemblies that make up your application.  
   
- [Programming with Assemblies](../../standard/assembly/programming.md)  
+ [Programming with Assemblies](../../standard/assembly/program.md)  
  Describes assemblies, the building blocks of managed applications.

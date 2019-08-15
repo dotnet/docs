@@ -152,7 +152,7 @@ You can enable automatic binding redirection if your app targets older versions 
 - [\<bindingRedirect> Element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)
 - [Assembly Binding Redirection Security Permission](../../../docs/framework/configure-apps/assembly-binding-redirection-security-permission.md)
 - [Assemblies in the Common Language Runtime](../../standard/assembly/assemblies-in-the-common-language-runtime.md)
-- [Programming with Assemblies](../../standard/assembly/programming.md)
+- [Programming with Assemblies](../../standard/assembly/program.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](../../../docs/framework/configure-apps/index.md)
 - [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)

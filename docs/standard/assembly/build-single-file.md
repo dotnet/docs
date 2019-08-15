@@ -87,4 +87,4 @@ vbc -out:myCodeLibrary.dll -t:library myCode.vb
 - [Creating Assemblies](create.md)
 - [Multifile Assemblies](multifile.md)
 - [How to: Build a Multifile Assembly](build-multifile.md)
-- [Programming with Assemblies](programming.md)
+- [Program with assemblies](program.md)

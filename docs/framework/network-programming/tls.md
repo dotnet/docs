@@ -236,7 +236,7 @@ Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProv
 When it's enabled (by default, by an `AppContext` switch, or by the Windows Registry), the .NET Framework uses the `SCH_USE_STRONG_CRYPTO` flag when your app requests a TLS security protocol. The `SCH_USE_STRONG_CRYPTO` flag can be enabled by default, with the `AppContext` switch, or with the Registry. The OS passes the flag to `Schannel`to instruct it to disable known weak cryptographic algorithms, cipher suites, and TLS/SSL protocol versions that may be otherwise enabled for better interoperability. For more information, see:
 
 - [Secure Channel](/windows/desktop/SecAuthN/secure-channel)
-- [SCHANNEL_CRED structure](/windows/desktop/api/schannel/ns-schannel-_schannel_cred)
+- [SCHANNEL_CRED structure](/windows/win32/api/schannel/ns-schannel-schannel_cred)
 
 The `SCH_USE_STRONG_CRYPTO` flag is also passed to `Schannel` when you explicitly use the `Tls` (TLS 1.0), `Tls11`, or `Tls12` enumerated values of <xref:System.Net.SecurityProtocolType> or <xref:System.Security.Authentication.SslProtocols>.
 

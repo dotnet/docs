@@ -49,7 +49,7 @@ HRESULT ResolveTypeLib(
  [in] The minor version number of the type library. For example, for version *x.y*, the minor version number is *y*.  
   
  `syskind`  
- [in] A [SYSKIND](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/ne-oaidl-tagsyskind) flag that identifies the operating environment. Common values are SYS_WIN32 and SYS_WIN64.  
+ [in] A [SYSKIND](https://docs.microsoft.com/windows/win32/api/oaidl/ne-oaidl-syskind) flag that identifies the operating environment. Common values are SYS_WIN32 and SYS_WIN64.  
   
  `pbstrResolvedTlbName`  
  [out] A pointer to a [BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) that contains the full path of the type library named in the `bstrSimpleName` parameter.  

@@ -146,6 +146,6 @@ In addition, Model Builder outputs the code that generated the model, so that yo
 
 ## What's next?
 
-[Install](how-tos/install-model-builder.md) the Model Builder Visual Studio extension
+[Install](how-to-guides/install-model-builder.md) the Model Builder Visual Studio extension
 
 Try [price prediction or any regression scenario](tutorials/predict-prices-with-model-builder.md)

@@ -39,8 +39,6 @@ For scenarios that predict a category, or put your data into different buckets, 
 - where there are only 2 categories, or buckets: `binary classification`.
 - where there are three or more categories or buckets: `multiclass classification`.
 
-`Diagram`
-
 ### Which model type is right for me?
 
 Model Builder comes with templates for sentiment analysis, issue classification, price prediction, and custom scenarios. These templates can be used as a starting point for your specific scenario.
@@ -77,7 +75,7 @@ You can use the price prediction template for your scenario if you want to predi
 
 #### Custom scenario (choose your model type)
 
-The custom scenario allows you to manual choose your model type.
+The custom scenario allows you to manually choose your model type.
 
 ## Data
 

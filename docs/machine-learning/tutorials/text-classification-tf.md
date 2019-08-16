@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze website comments - text classification with TensorFlow'
 description: This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments using a pre-trained TensorFlow model and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio.
-ms.date: 08/31/2019
+ms.date: 08/20/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task using a pre-trained TensorFlow model so that I can understand how to use sentiment prediction to take appropriate action.
@@ -18,7 +18,7 @@ In this tutorial, you learn how to:
 > * Use the model to make a prediction
 > * See the results
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TextClassificationTF) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TextClassificationTF) repository. As you go through the tutorial, you may find steps where the code doesn't compile. It will compile by the end.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the the license terms for the package you choose. Repeat these steps for **Microsoft.ML.TensorFlow**.
 
 > [!NOTE]
-> The model for this tutorial is from the [dotnet/machinelearning-testdata](https://github.com/dotnet/machinelearning-testdata/tree/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model) GitHub repo. The model is in 'SavedModel' format. For further explanation on the `sentiment_model`, see [](https://github.com/dotnet/machinelearning-testdata/blob/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model/README.md)
+> The model for this tutorial is from the [dotnet/machinelearning-testdata](https://github.com/dotnet/machinelearning-testdata/tree/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model) GitHub repo. The model is in 'SavedModel' format.
 
 ### Prepare your data
 
@@ -82,7 +82,12 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### How the data was prepared
 
-The input dataset class, `IMDBSentiment`, has a `string` for user comments (`SentimentText`) and an `integer` array (`VariableLengthFeatures`)  In addition, the `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate the vector type.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
+The input dataset class, `IMDBSentiment`, has a `string` for user comments (`SentimentText`) and an `integer` array (`VariableLengthFeatures`)  In addition, the `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate the vector type.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations. The following example illustrates IMDBSentiment:
+
+|Property| Value|Type|
+|-------------|-----------------------|------|
+|SentimentText|this film is really bad|string|
+|VariableLengthFeatures|14,22,9,66,78,... |int[]|
 
 `IMDBPrediction` is the prediction class used after the model training. `IMDBPrediction` has a single `float` array (`Prediction`) and a `VectorType` attribute.
 
@@ -100,9 +105,16 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 ### Create an intermediate features class
 
-1. Create a utility class called `IntermediateFeatures` to hold intermediate data that will be used by the CustomMapping Estimator in a later step. Add this after the `Main()` method:
+1. Create a utility class called `IntermediateFeatures` to hold intermediate data that will be used by the CustomMapping Estimator to resize the variable length vector (VariableLengthFeatures) to a fixed length vector (Features) in a later step. The following example illustrates IntermediateFeatures:
 
-[!code-csharp[DeclareIntermediateFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareIntermediateFeatures)]
+|Property| Value|Type|
+|-------------|-----------------------|------|
+|SentimentText|this film is really bad|string|
+|Features|14,22,9,66,78,... |int[600]|
+
+   Add this after the `Main()` method:
+
+    [!code-csharp[DeclareIntermediateFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareIntermediateFeatures)]
 
 ## Reuse and tune pre-trained model
 
@@ -169,6 +181,8 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
     Name: Prediction/Softmax, Type: System.Int32, Shape: (-1, 600)
     ```
 
+The 600 is the max sentence length that you will be working with, and is what the model expects as input.
+
 1. Add an `Action` to resize the features as input to a `CustomMapping` transform with the next lines of code:
 
    [!code-csharp[ResizeFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ResizeFeatures)]
@@ -230,7 +244,11 @@ Pass the test comment data to the `Prediction Engine` by adding the following as
 
 [!code-csharp[Predict](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#Predict)]
 
-The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function makes a prediction on a single row of data.
+The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function makes a prediction on a single row of data. The following example illustrates IMDBSentimentPrediction:
+
+|Property| Value|Type|
+|-------------|-----------------------|------|
+|Prediction|0.5459937,0.454006255,...|float[]|
 
 Display sentiment prediction and confidence using the following code:
 

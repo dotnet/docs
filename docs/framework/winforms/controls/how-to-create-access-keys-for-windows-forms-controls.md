@@ -29,25 +29,25 @@ Controls that cannot receive focus can't have access keys.
 
 ## Programmatic
 
-1. Set the `Text` property to a string that includes an ampersand (&) before the letter that will be the shortcut.
+Set the `Text` property to a string that includes an ampersand (&) before the letter that will be the shortcut.
 
-    ```vb
-    ' Set the letter "P" as an access key.
-    Button1.Text = "&Print"
-    ```
+```vb
+' Set the letter "P" as an access key.
+Button1.Text = "&Print"
+```
 
-    ```csharp
-    // Set the letter "P" as an access key.
-    button1.Text = "&Print";
-    ```
+```csharp
+// Set the letter "P" as an access key.
+button1.Text = "&Print";
+```
 
-    ```cpp
-    // Set the letter "P" as an access key.
-    button1->Text = "&Print";
-    ```
+```cpp
+// Set the letter "P" as an access key.
+button1->Text = "&Print";
+```
 
-    > [!NOTE]
-    > To use an ampersand in a caption without creating an access key, include two ampersands (&&). A single ampersand is displayed in the caption and no characters are underlined.
+> [!NOTE]
+> To use an ampersand in a caption without creating an access key, include two ampersands (&&). A single ampersand is displayed in the caption and no characters are underlined.
 
 ## Designer
 

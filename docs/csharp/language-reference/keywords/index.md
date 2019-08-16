@@ -18,7 +18,7 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
   
 |||||  
 |---|---|---|---|  
-|[abstract](abstract.md)|[as](../operators/type-testing-and-conversion-operators.md#as-operator)|[base](base.md)|[bool](bool.md)|  
+|[abstract](abstract.md)|[as](../operators/type-testing-and-cast.md#as-operator)|[base](base.md)|[bool](bool.md)|  
 |[break](break.md)|[byte](../builtin-types/integral-numeric-types.md)|[case](switch.md)|[catch](try-catch.md)|  
 |[char](char.md)|[checked](checked.md)|[class](class.md)|[const](const.md)|  
 |[continue](continue.md)|[decimal](../builtin-types/floating-point-numeric-types.md)|[default](default.md)|[delegate](delegate.md)|  
@@ -34,7 +34,7 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[return](return.md)|[sbyte](../builtin-types/integral-numeric-types.md)|[sealed](sealed.md)|[short](../builtin-types/integral-numeric-types.md)||
 [sizeof](../operators/sizeof.md)|[stackalloc](../operators/stackalloc.md)|[static](static.md)|[string](string.md)|
 |[struct](struct.md)|[switch](switch.md)|[this](this.md)|[throw](throw.md)|
-|[true](true-literal.md)|[try](try-catch.md)|[typeof](../operators/type-testing-and-conversion-operators.md#typeof-operator)|[uint](../builtin-types/integral-numeric-types.md)|
+|[true](true-literal.md)|[try](try-catch.md)|[typeof](../operators/type-testing-and-cast.md#typeof-operator)|[uint](../builtin-types/integral-numeric-types.md)|
 |[ulong](../builtin-types/integral-numeric-types.md)|[unchecked](unchecked.md)|[unsafe](unsafe.md)|[ushort](../builtin-types/integral-numeric-types.md)|
 |[using](using.md)|[using static](using-static.md)|[virtual](virtual.md)|[void](void.md)|
 |[volatile](volatile.md)|[while](while.md)|

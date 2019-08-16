@@ -77,7 +77,7 @@ Giraffe g2 = (Giraffe) a;
   
  [!code-csharp[csProgGuideTypes#41](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#41)]  
   
- C# provides the [is](../../language-reference/operators/type-testing-and-conversion-operators.md#is-operator) operator to enable you to test for compatibility before actually performing a cast. For more information, see [How to: safely cast using pattern matching and the as and is operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).  
+ C# provides the [is](../../language-reference/operators/type-testing-and-cast.md#is-operator) operator to enable you to test for compatibility before actually performing a cast. For more information, see [How to: safely cast using pattern matching and the as and is operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).  
   
 ## C# language specification
 
@@ -87,7 +87,7 @@ For more information, see the [Conversions](~/_csharplang/spec/conversions.md) s
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Types](../../../csharp/programming-guide/types/index.md)
-- [() cast operator](../../../csharp/language-reference/operators/type-testing-and-conversion-operators.md#cast-operator-)
+- [() cast operator](../../../csharp/language-reference/operators/type-testing-and-cast.md#cast-operator-)
 - [User-defined conversion operators](../../../csharp/language-reference/operators/user-defined-conversion-operators.md)
 - [Generalized Type Conversion](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))
 - [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)

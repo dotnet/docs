@@ -85,7 +85,7 @@ return ref DecimalArray[0];
 
 In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [ref local](#ref-locals).
 
-The called method may also declare the return value as `readonly ref` to return the value by reference, and enforce that the calling code cannot modify the returned value. The calling method can avoid copying the returned valued by storing the value in a local [readonly ref](#readonly-ref-locals) variable.
+The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code cannot modify the returned value. The calling method can avoid copying the returned valued by storing the value in a local [ref readonly](#ref-readonly-locals) variable.
 
 For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example).
 
@@ -109,11 +109,11 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct;
 
 Note that in both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value."
 
-Beginning with C# 7.3, the iteration variable of the `foreach` statement can be ref local or readonly ref local variable. For more information, see the [foreach statement](foreach-in.md) article.
+Beginning with C# 7.3, the iteration variable of the `foreach` statement can be ref local or ref readonly local variable. For more information, see the [foreach statement](foreach-in.md) article.
 
-## Readonly ref locals
+## Ref readonly locals
 
-A readonly ref local is used to refer to values returned by the method or property that has `readonly ref` in its signature and uses `return ref`. A `readonly ref` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified. 
+A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified. 
 
 ## A ref returns and ref locals example
 

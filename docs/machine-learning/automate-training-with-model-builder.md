@@ -35,41 +35,39 @@ In Model Builder, you need to select a machine learning model type. The type of 
 
 For scenarios that predict a number, the machine learning model type is called `regression`.
 
-For scenarios that predict a category, or put your data into different buckets, the model type is `classification`. There are two types of classification:
-- where there are only 2 categories, or buckets: `binary classification`.
-- where there are three or more categories or buckets: `multiclass classification`.
+For scenarios that predict a category, the model type is `classification`. There are two types of classification:
+- where there are only 2 categories: `binary classification`.
+- where there are three or more categories: `multiclass classification`.
 
 ### Which model type is right for me?
 
-Model Builder comes with templates for sentiment analysis, issue classification, price prediction, and custom scenarios. These templates can be used as a starting point for your specific scenario.
+#### Predict a category (when there are only two categories)
 
-#### Sentiment analysis (binary classification)
-
-Sentiment analysis can be used to predict positive or negative sentiment of customer feedback. It is an example of a binary classification model type.
-
-Binary classification is used to categorize data into two classes (yes/no; pass/fail; true/false; positive/negative).
+Binary classification is used to categorize data into two categories (yes/no; pass/fail; true/false; positive/negative).
 
 ![Diagram showing examples of binary classification including fraud detection, risk mitigation, and application screening](media/binary-classification-examples.png)
 
+Sentiment analysis can be used to predict positive or negative sentiment of customer feedback. It is an example of a binary classification model type.
+
 If your scenario requires classification into two categories, you can use this template with your own dataset.
 
-#### Issue classification (multiclass classification)
-
-Issue classification can be used to categorize customer feedback (for example, on GitHub) issues using the issue title and description. It is an example of the multi-class classification model type.
+#### Predict a category (when there are three or more categories)
 
 Multiclass classification can be used to categorize data into three or more classes. 
 
 ![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png)
 
+Issue classification can be used to categorize customer feedback (for example, on GitHub) issues using the issue title and description. It is an example of the multi-class classification model type.
+
 You can use the issue classification template for your scenario if you want to categorize data into three or more categories.
 
-#### Price prediction (regression)
-
-Price prediction can be used to predict house prices using location, size, and other characteristics of the house. It is an example of a regression model type.
+#### Predict a number
 
 Regression is used to predict numbers.
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
+
+Price prediction can be used to predict house prices using location, size, and other characteristics of the house. It is an example of a regression model type.
 
 You can use the price prediction template for your scenario if you want to predict a numerical value with your own dataset.
 

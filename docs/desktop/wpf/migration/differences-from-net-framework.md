@@ -41,7 +41,9 @@ The following type was hollowed out moved from `System.Xaml.dll` to `System.Wind
 
 
 You can diff the two files below for an example of how the `MediaPermission` type has changed after hollowing out. 
+
 **Before:** 
 https://github.com/dotnet/wpf/blob/56ccaad970cefa576396e2aba8e19fa88d9b5f51/src/Microsoft.DotNet.Wpf/src/WindowsBase/System/Security/Permissions/MediaPermission.cs 
+
 **After:** 
 https://github.com/dotnet/corefx/blob/df5bb8e4509ca5166f83abbd4cfe4a063

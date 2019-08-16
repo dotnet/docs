@@ -18,6 +18,7 @@ Major
 The Windows Forms is continuing to improve how it works with accessibility technologies to better support Windows Forms customers. These include the following changes:
 - Changes in various areas of interaction with accessibility client applications including Narrator.
 - Changes in the Accessible hierarchy (improving navigation through the UI Automation tree).
+- Changes in keyboard navigation.
 
 - [x] The quirks which were used in .NET Framework 4.7.1 - 4.8 to opt-in/out new accessibility features have been removed, so previously quirked behavior is now enabled by default.
 
@@ -34,22 +35,20 @@ __Improved CheckedListBox Accessibility support__
 - Corrected CheckedListBox Bounds provided by accessibility properties for entries. Improved overall ListBox and CheckedListBox accessibility (corrected pproperty values and event model).
 
 __Improved ComboBox Accessibility support__
-- Updated the process of getting ComboBox items' accessibility objects to enable generating IDs for items instead of getting hash codes from items which maybe unsafe in case of GetHashCode function is overriden.
+- Updated the process of getting ComboBox items' accessibility objects to enable generating IDs for items instead of getting hash codes from items which may be unsafe in case of GetHashCode function is overriden.
 
 __Improved DataGridView Accessibility support__
-- Corrected DataGridView Bounds provided by accessibility properties for columns, rows, cells and corresponding headers, imroved performance of bounding rectangle calculation. For now all accessibility bounds are represented correctly taking into account the bounds of entire control, its viewport and scrolls.
+- Corrected DataGridView Bounds provided by accessibility properties for columns, rows, cells and corresponding headers, improved performance of bounding rectangle calculation. For now all accessibility bounds are represented correctly taking into account the bounds of entire control, its viewport and scrolls.
 - Corrected Value.IsReadOnly property value providing for accessible client applications. The property now shows correct IsReadOnly status for cells.
 - Fixed the issue with CellParsing event raising for the very first cell change. Cell value is now can be changed without any issues including the very first DataGridView control interaction.
 
 __Improved PropertyGrid Accessibility support__
-- Corrected PropertyGrid Bounds provided by accessibility properties for grid entries, imroved performance of bounding rectangle calculation. For now all accessibility bounds are represented correctly taking into account the bounds of entire control, its viewport and scrolls.
+- Corrected PropertyGrid Bounds provided by accessibility properties for grid entries, improved performance of bounding rectangle calculation. For now all accessibility bounds are represented correctly taking into account the bounds of entire control, its viewport and scrolls.
 - Corrected accessible names and descriptions of subcontrols to not include control type names and to avoid double announcement for control type names.
 
-__Improved Menu Accessibility support__
-- Improved Menu accessible navigation, corrected menu accessible control types for submenus to make submenus of type 'Menu' instead of 'MenuItem'.
-
 __Improved ToolStrip Accessibility support__
-- Improved navigation through <xref:System.Windows.Forms.ToolStrip> items. Corrected ToolStrip and Menu shift-tab navigation (back-looping the menu items when shift-tab up-arrow is pressed - navigate to the bottom menu element)
+- Improved navigation through ToolStrip items. Corrected ToolStrip and Menu shift-tab navigation (back-looping the menu items when shift-tab up-arrow is pressed - navigate to the bottom menu element)
+- Improved Menu accessible navigation, corrected menu accessible control types for submenus to make submenus of type 'Menu' instead of 'MenuItem'.
 
 __Improved PrintPreviewControl and PrintPreviewDialog Accessibility support__
 - Improved accessible navigation (including Narrator navigation) through menu items.

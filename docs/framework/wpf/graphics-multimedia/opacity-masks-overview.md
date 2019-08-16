@@ -82,7 +82,7 @@ DrawingBrush opacity masking example
  ![An object with an ImageBrush opacity mask](./media/wcpsdk-graphicsmm-imageasopacitymask.png "wcpsdk_graphicsmm_imageasopacitymask")  
 Opacity masking example  
   
- To use an image as an opacity mask, use an <xref:System.Windows.Media.ImageBrush> to contain the image. When creating an image to be used as an opacity mask, save the image in a format that supports multiple levels of transparency, such as [!INCLUDE[TLA#tla_png](../../../../includes/tlasharptla-png-md.md)]. The following example shows the code used to create the previous illustration.  
+ To use an image as an opacity mask, use an <xref:System.Windows.Media.ImageBrush> to contain the image. When creating an image to be used as an opacity mask, save the image in a format that supports multiple levels of transparency, such as Portable Network Graphics (PNG). The following example shows the code used to create the previous illustration.  
   
  [!code-xaml[OpacityMasksSnippet#UIElementOpacityMask](~/samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksSnippet/CS/ImageBrushExample.xaml#uielementopacitymask)]  
   

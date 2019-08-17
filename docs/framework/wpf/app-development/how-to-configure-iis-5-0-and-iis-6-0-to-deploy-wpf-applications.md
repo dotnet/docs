@@ -28,11 +28,11 @@ This topic describes how to configure Microsoft Internet Information Services (I
 
 ## Adjust the Content Expiration Setting
 
-You should adjust the content expiration setting to 1 minute. The following procedure outlines how to do this with [!INCLUDE[TLA2#tla_iis5](../../../../includes/tla2sharptla-iis5-md.md)].
+You should adjust the content expiration setting to 1 minute. The following procedure outlines how to do this with IIS.
 
 1. Click the **Start** menu, point to **Administrative Tools**, and click **Internet Information Services (IIS) Manager**. You can also launch this application from the command line with "%SystemRoot%\system32\inetsrv\iis.msc".
 
-2. Expand the [!INCLUDE[TLA2#tla_iis5](../../../../includes/tla2sharptla-iis5-md.md)] tree until you find the **Default Web site** node.
+2. Expand the IIS tree until you find the **Default Web site** node.
 
 3. Right-click **Default Web site** and select **Properties** from the context menu.
 
@@ -58,7 +58,7 @@ You must register several MIME types and file extensions so that the browser on 
 > [!NOTE]
 > You do not need to register MIME types or file extensions on client systems. They are registered automatically when you install Microsoft .NET Framework.
 
-The following Microsoft Visual Basic Scripting Edition (VBScript) sample automatically adds the necessary MIME types to [!INCLUDE[TLA2#tla_iis5](../../../../includes/tla2sharptla-iis5-md.md)]. To use the script, copy the code to a .vbs file on your server. Then, run the script by running the file from the command line or double-clicking the file in [!INCLUDE[TLA#tla_winexpl](../../../../includes/tlasharptla-winexpl-md.md)].
+The following Microsoft Visual Basic Scripting Edition (VBScript) sample automatically adds the necessary MIME types to IIS. To use the script, copy the code to a .vbs file on your server. Then, run the script by running the file from the command line or double-clicking the file in [!INCLUDE[TLA#tla_winexpl](../../../../includes/tlasharptla-winexpl-md.md)].
 
 ```vb
 ' This script adds the necessary Windows Presentation Foundation MIME types

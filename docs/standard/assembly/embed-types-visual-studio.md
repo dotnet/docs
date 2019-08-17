@@ -181,7 +181,8 @@ Next, create the type equivalence runtime class.
            p_UserInput = Console.ReadLine()
        End Sub
    End Class
-```
+   ```
+   
 1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
    
 1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Build**. The class library *.dll* file is compiled and saved to the specified build output path.

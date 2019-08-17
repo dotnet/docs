@@ -297,9 +297,9 @@
   - name: Member access operators
     href: operators/member-access-operators.md
     displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation"
-  - name: Type-testing and conversion operators
-    href: operators/type-testing-and-conversion-operators.md
-    displayName: "is operator, is keyword, as operator, as keyword, typeof, (), cast"
+  - name: Type-testing and cast operators
+    href: operators/type-testing-and-cast.md
+    displayName: "is operator, is keyword, as operator, as keyword, typeof, (), conversion"
   - name: User-defined conversion operators
     href: operators/user-defined-conversion-operators.md
     displayName: implicit, explicit

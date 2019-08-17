@@ -22,9 +22,6 @@ Represents a configuration element that contains a namespace to prefix mapping t
 </routing>
 ```  
   
-```csharp  
-```  
-  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

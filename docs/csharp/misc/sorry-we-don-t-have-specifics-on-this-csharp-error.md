@@ -899,10 +899,10 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Provides a forum for questions about and issues with Visual C#.  
   
  Also see:  
- [Additional Resources for Visual C# Programmers](../../csharp/getting-started/additional-resources.md)  
+ [Additional Resources for Visual C# Programmers](../getting-started/additional-resources.md)  
   
 ## See also
 
-- [C# Programming Guide](../../csharp/programming-guide/index.md)
-- [C# Reference](../../csharp/language-reference/index.md)
+- [C# Programming Guide](../programming-guide/index.md)
+- [C# Reference](../language-reference/index.md)
 - [Talk to Us](/visualstudio/ide/talk-to-us)

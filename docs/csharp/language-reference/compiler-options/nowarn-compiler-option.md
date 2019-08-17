@@ -47,6 +47,6 @@ The **-nowarn** option lets you suppress the compiler from displaying one or mor
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
-- [C# Compiler Errors](../../../csharp/language-reference/compiler-messages/index.md)
+- [C# Compiler Errors](../compiler-messages/index.md)

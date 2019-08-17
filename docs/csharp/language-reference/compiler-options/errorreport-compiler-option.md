@@ -57,4 +57,4 @@ This option provides a convenient way to report a C# internal compiler error to 
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)

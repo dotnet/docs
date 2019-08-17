@@ -37,15 +37,15 @@ The following topics are available:
 
 ## Related sections
 
-* [C# Programming Guide](../../csharp/programming-guide/index.md)
+* [C# Programming Guide](../programming-guide/index.md)
 
     Provides information about C# programming concepts, and describes how to perform various tasks in C#.
 
-* [C# Reference](../../csharp/language-reference/index.md)
+* [C# Reference](../language-reference/index.md)
 
     Provides detailed reference information about C# keywords, operators, preprocessor directives, compiler options, and compiler errors and warnings.
 
-* [Walkthroughs](../../csharp/walkthroughs.md)
+* [Walkthroughs](../walkthroughs.md)
 
     Provides links to programming walkthroughs that use C# and a brief description of each walkthrough.
 

@@ -1,8 +1,8 @@
 ---
 title: Introduction to cloud-native applications
-description: Architecting Cloud-Native .NET Apps for Azure | Introduction to cloud-native applications
+description: Learn about cloud native computing and the Cloud Native Computing Foundation which promotes the technologies that drive it
 author: robvet
-ms.date: 08/14/2019
+ms.date: 08/16/2019
 ---
 # Introduction to cloud-native applications
 

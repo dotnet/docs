@@ -1,8 +1,8 @@
 ---
 title: Defining Cloud Native
-description: Architecting Cloud-Native .NET Apps for Azure | Defining Cloud Native
+description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 08/13/2019
+ms.date: 08/16/2019
 ---
 # Defining cloud native
 
@@ -35,13 +35,13 @@ FOr example, here are some companies who have implemented these techniques. Thin
 
 As you can see, Netflix, Uber, WeChat, and Raygun expose systems that consist of hundreds of independent microservices. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application and individually scale those areas as needed.
 
-The speed and agility of cloud native derive from a number of ingredients. Foremost, the cloud platform and infrastructure. Additionally, six capabilities, or pillars, highlighted in yellow in Figure 1-1, drive cloud native.
+The speed and agility of cloud native derive from a number of factors. Foremost is  cloud infrastructure. Five addtional foundational pillars shown in Figure 1-1 also provide the bedrock for cloud-native systems.
 
-![Capabilities of cloud-native apps](media/capabilities-of-cloud-native-apps3.png)
+![Cloud native foundational pillars](media/cloud-native-foundational-pillars.png)
 
-**Figure 1-1**. Capabilities of cloud-native apps
+**Figure 1-1**. Cloud-native foundational pillars
 
-Let’s take some time to better understand the importance of each key capability.
+Let’s take some time to better understand the significance of each pillar.
 
 ## The cloud…
 

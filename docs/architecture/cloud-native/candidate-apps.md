@@ -1,8 +1,8 @@
 ---
 title: Candidate apps for cloud native
-description: Architecting Cloud-Native .NET Apps for Azure | Candidate apps for cloud native
+description: Learn which types of applications benefit the most from a cloud-native architecture
 author: robvet
-ms.date: 08/14/2019
+ms.date: 08/16/2019
 ---
 # Candidate apps for cloud native
 

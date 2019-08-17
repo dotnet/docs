@@ -43,7 +43,7 @@ COM developers can benefit from the following information about the managed type
 
 - Type library inclusion
 
-  Most types require a type library when consumed by a COM application. You can generate a type library or have COM developers perform this task. The Windows Software Development Kit (SDK) provides the following options for generating a type library:
+  Most types require a type library when consumed by a COM application. You can generate a type library or have COM developers perform this task. The Windows SDK provides the following options for generating a type library:
 
   - [Type Library Exporter](#cpconpackagingassemblyforcomanchor1)
 

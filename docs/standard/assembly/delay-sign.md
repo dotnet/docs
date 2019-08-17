@@ -22,7 +22,7 @@ An organization can have a closely guarded key pair that developers do not have 
   
  The following steps outline the process to delay sign an assembly:  
   
-1. Obtain the public key portion of the key pair from the organization that will do the eventual signing. Typically this key is in the form of an .snk file, which can be created using the [Strong Name tool (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) provided by the Windows Software Development Kit (SDK).  
+1. Obtain the public key portion of the key pair from the organization that will do the eventual signing. Typically this key is in the form of an .snk file, which can be created using the [Strong Name tool (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) provided by the Windows SDK.  
   
 2. Annotate the source code for the assembly with two custom attributes from <xref:System.Reflection>:  
   

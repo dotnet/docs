@@ -24,7 +24,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
   
 - An abstract class may contain abstract methods and accessors.  
   
-- It is not possible to modify an abstract class with the [sealed](../../../csharp/language-reference/keywords/sealed.md) modifier because the two modifiers have opposite meanings. The `sealed` modifier prevents a class from being inherited and the `abstract` modifier requires a class to be inherited.  
+- It is not possible to modify an abstract class with the [sealed](./sealed.md) modifier because the two modifiers have opposite meanings. The `sealed` modifier prevents a class from being inherited and the `abstract` modifier requires a class to be inherited.  
   
 - A non-abstract class derived from an abstract class must include actual implementations of all inherited abstract methods and accessors.  
   
@@ -42,17 +42,17 @@ The `abstract` modifier indicates that the thing being modified has a missing or
     public abstract void MyMethod();  
     ```  
   
-     The implementation is provided by a method [override](../../../csharp/language-reference/keywords/override.md), which is a member of a non-abstract class.  
+     The implementation is provided by a method [override](./override.md), which is a member of a non-abstract class.  
   
-- It is an error to use the [static](../../../csharp/language-reference/keywords/static.md) or [virtual](../../../csharp/language-reference/keywords/virtual.md) modifiers in an abstract method declaration.  
+- It is an error to use the [static](./static.md) or [virtual](./virtual.md) modifiers in an abstract method declaration.  
   
  Abstract properties behave like abstract methods, except for the differences in declaration and invocation syntax.  
   
 - It is an error to use the `abstract` modifier on a static property.  
   
-- An abstract inherited property can be overridden in a derived class by including a property declaration that uses the [override](../../../csharp/language-reference/keywords/override.md) modifier.  
+- An abstract inherited property can be overridden in a derived class by including a property declaration that uses the [override](./override.md) modifier.  
   
- For more information about abstract classes, see [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
+ For more information about abstract classes, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
   
  An abstract class must provide implementation for all interface members.  
   
@@ -78,9 +78,9 @@ You will get an error saying that the compiler cannot create an instance of the 
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)
-- [virtual](../../../csharp/language-reference/keywords/virtual.md)
-- [override](../../../csharp/language-reference/keywords/override.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [Modifiers](./modifiers.md)
+- [virtual](./virtual.md)
+- [override](./override.md)
+- [C# Keywords](./index.md)

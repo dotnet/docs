@@ -33,43 +33,43 @@ Only single inheritance is allowed in C#. In other words, a class can inherit im
 |None, implements two interfaces|`class ImplClass: IFace1, IFace2 { }`|
 |Single, implements one interface|`class ImplDerivedClass: BaseClass, IFace1 { }`|
 
-Classes that you declare directly within a namespace, not nested within other classes, can be either [public](../../../csharp/language-reference/keywords/public.md) or [internal](../../../csharp/language-reference/keywords/internal.md). Classes are `internal` by default.
+Classes that you declare directly within a namespace, not nested within other classes, can be either [public](./public.md) or [internal](./internal.md). Classes are `internal` by default.
 
 Class members, including nested classes, can be [public](public.md), [protected internal](protected-internal.md), [protected](protected.md), [internal](internal.md), [private](private.md), or [private protected](private-protected.md). Members are `private` by default.
 
-For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).
+For more information, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
 
-You can declare generic classes that have type parameters. For more information, see [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md).
+You can declare generic classes that have type parameters. For more information, see [Generic Classes](../../programming-guide/generics/generic-classes.md).
 
 A class can contain declarations of the following members:
 
-- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
+- [Constructors](../../programming-guide/classes-and-structs/constructors.md)
 
-- [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md)
+- [Constants](../../programming-guide/classes-and-structs/constants.md)
 
-- [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)
+- [Fields](../../programming-guide/classes-and-structs/fields.md)
 
-- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+- [Finalizers](../../programming-guide/classes-and-structs/destructors.md)
 
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [Methods](../../programming-guide/classes-and-structs/methods.md)
 
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [Properties](../../programming-guide/classes-and-structs/properties.md)
 
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)
+- [Indexers](../../programming-guide/indexers/index.md)
 
-- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)
+- [Operators](../../programming-guide/statements-expressions-operators/operators.md)
 
-- [Events](../../../csharp/programming-guide/events/index.md)
+- [Events](../../programming-guide/events/index.md)
 
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [Delegates](../../programming-guide/delegates/index.md)
 
-- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [Classes](../../programming-guide/classes-and-structs/classes.md)
 
-- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
+- [Interfaces](../../programming-guide/interfaces/index.md)
 
-- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)
+- [Structs](../../programming-guide/classes-and-structs/structs.md)
 
-- [Enumerations](../../../csharp/programming-guide/enumeration-types.md)
+- [Enumerations](../../programming-guide/enumeration-types.md)
 
 ## Example
 
@@ -97,7 +97,7 @@ Finally, notice that for the object created using the parameterless constructor 
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
+- [Reference Types](./reference-types.md)

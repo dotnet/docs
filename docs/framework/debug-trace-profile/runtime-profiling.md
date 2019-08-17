@@ -18,7 +18,7 @@ ms.author: "ronpet"
 Profiling is a method of gathering performance data in any development or deployment scenario. This section is for developers and system administrators who want to gather information about application performance.  
   
 ## Tracking Performance Using the Performance Monitor (Perfmon.exe)  
- The Performance Monitor is the easiest tool to use to profile your .NET Framework application. The Performance Monitor graphically represents data found in the .NET Framework performance counters that are installed with the common language runtime and the Windows Software Development Kit (SDK). These counters can be used to monitor everything from memory management to just-in-time (JIT) compiler performance. They tell you about the resources your application uses, which is an indirect measure of your application's performance. Use these counters to understand how your application works internally.  
+ The Performance Monitor is the easiest tool to use to profile your .NET Framework application. The Performance Monitor graphically represents data found in the .NET Framework performance counters that are installed with the common language runtime and the Windows SDK. These counters can be used to monitor everything from memory management to just-in-time (JIT) compiler performance. They tell you about the resources your application uses, which is an indirect measure of your application's performance. Use these counters to understand how your application works internally.  
   
 #### To run Perfmon.exe on Windows Vista and later versions  
   

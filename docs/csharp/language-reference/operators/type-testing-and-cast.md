@@ -1,5 +1,5 @@
 ---
-title: "Type-testing and conversion operators - C# reference"
+title: "Type-testing and cast operators - C# reference"
 description: "Learn about C# operators that you can use to check the type of an expression result and convert it to another type if necessary."
 ms.date: 06/21/2019
 author: pkulikov
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "() operator [C#]"
   - "typeof operator [C#]"
 ---
-# Type-testing and conversion operators (C# reference)
+# Type-testing and cast operators (C# reference)
 
 You can use the following operators to perform type checking or type conversion:
 

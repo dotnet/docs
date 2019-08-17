@@ -98,7 +98,7 @@ To make this combined use of *Ildasm.exe* and *Ilasm.exe* as accurate as possibl
 > [!NOTE]
 > *Ildasm.exe* only operates on files on disk. It does not operate on files installed in the global assembly cache.
 
-For more information about the grammar of IL, see the asmparse.grammar file in the Windows Software Development Kit (SDK).
+For more information about the grammar of IL, see the asmparse.grammar file in the Windows SDK.
 
 ## Version Information
 
@@ -131,7 +131,7 @@ Starting with the .NET Framework 4.5, you can specify an arbitrary marshal BLOB 
         Test(object A_1) cil managed
 ```
 
-For more information about the grammar of IL, see the asmparse.grammar file in the Windows Software Development Kit (SDK).
+For more information about the grammar of IL, see the asmparse.grammar file in the Windows SDK.
 
 ## Examples
 

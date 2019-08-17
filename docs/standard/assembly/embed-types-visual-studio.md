@@ -1,10 +1,10 @@
 ---
-title: "Embed types from managed assemblies in Visual Studio"
+title: "Walkthrough: Embed types from managed assemblies in Visual Studio"
 ms.date: 08/16/2019
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
 ---
 
-# Embed types from managed assemblies in Visual Studio
+# Walkthrough: Embed types from managed assemblies in Visual Studio
 
 Type embedding is frequently used with COM interop, such as an application that uses automation objects from Microsoft Office. Embedding type information enables the same build of a program to work with different versions of Microsoft Office on different computers. However, you can also use type embedding with fully managed solutions.
 
@@ -53,7 +53,7 @@ The first step is to create the type equivalence interface assembly.
    
 1. In **Solution Explorer**, right-click **TypeEquivalenceInterface**, and then select **Properties**. 
    
-1. Select **Build** on the left pane of the **Properties** screen. Set the **Output path** to a location on your computer, such as *C:\TypeEquivalenceSample*. You use the same location later in this walkthrough. 
+1. Select **Build** on the left pane of the **Properties** screen, and set the **Output path** to a location on your computer, such as *C:\TypeEquivalenceSample*. You use the same location throughout this walkthrough. 
    
 1. Select **Signing** on the left pane of the **Properties** screen, and then select the **Sign the assembly** check box. In the dropdown for **Choose a strong name key file**, select **New**. 
    
@@ -92,7 +92,7 @@ The first step is to create the type equivalence interface assembly.
    
 1. On the **Tools** menu, select **Create Guid**, and in the **Create GUID** dialog box, select **Registry Format**. Select **Copy**, and then select **Exit**.
    
-1. In the `Guid` attribute of your code, replace the sample GUID with the GUID you copied, and remove the braces ({}).
+1. In the `Guid` attribute of your code, replace the sample GUID with the GUID you copied, and remove the braces (**{ }**).
    
 1. In **Solution Explorer**, expand the **Properties** folder and select the *AssemblyInfo.cs* or *AssemblyInfo.vb* file. In the code editor, add the following attribute to the file:
    
@@ -102,8 +102,8 @@ The first step is to create the type equivalence interface assembly.
    ```
    
    # [Visual Basic](#tab/vb)
-```vb
-   <Assembly: ImportedFromTypeLib("")><Assembly: ImportedFromTypeLib("")>
+   ```vb
+   <Assembly: ImportedFromTypeLib("")>
    ```
    
 1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
@@ -163,7 +163,7 @@ Next, create the type equivalence runtime class.
    ```
    
    # [Visual Basic](#tab/vb)
-```vb
+   ```vb
    Imports TypeEquivalenceInterface
    
    Public Class SampleClass
@@ -236,7 +236,7 @@ Next, create a type equivalence client project that references the interface ass
    ```
    
    # [Visual Basic](#tab/vb)
-```vb
+   ```vb
    Imports TypeEquivalenceInterface
    Imports System.Reflection
    
@@ -279,7 +279,7 @@ Now, modify the interface assembly, and change its version.
    ```
    
    # [Visual Basic](#tab/vb)
-```vb
+   ```vb
    Function GetDate() As Date
    ```
    
@@ -310,7 +310,7 @@ Also modify the runtime class and update its version.
    ```
    
    # [Visual Basic](#tab/vb)
-```vb
+   ```vb
    Public Function GetDate() As DateTime Implements ISampleInterface.GetDate
        Return Now
    End Function

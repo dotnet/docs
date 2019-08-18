@@ -14,7 +14,7 @@ ms.author: "mairaw"
 
 Defines settings in a custom configuration section that is defined by a \<section> element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
+[**\<configuration>**](./configuration-element.md)   
 &nbsp;&nbsp;*\<sectionName>*
 
 ## Syntax
@@ -31,7 +31,7 @@ Attributes and attribute values are user defined.
 
 |     | Description |
 | --- | ----------- |
-| [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| [**\<configuration>**](./configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements
 
@@ -39,7 +39,7 @@ None
 
 ## Remarks
 
-The **\<sectionName>** element is a custom element defined by a [**\<section>**](~/docs/framework/configure-apps/file-schema/section-element.md) tag in the [**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.Configuration.GetSection(System.String)?displayProperty=nameWithType>.
+The **\<sectionName>** element is a custom element defined by a [**\<section>**](./section-element.md) tag in the [**\<configSections>**](./configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.Configuration.GetSection(System.String)?displayProperty=nameWithType>.
 
 ## Example
 
@@ -63,4 +63,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](./index.md)

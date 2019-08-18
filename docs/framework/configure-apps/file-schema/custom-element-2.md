@@ -14,7 +14,7 @@ ms.author: "mairaw"
 
 Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)\
+[**\<configuration>**](./configuration-element.md)\
 &nbsp;&nbsp;**\<sectionName>**
 
 ## Attributes
@@ -25,15 +25,15 @@ None
 
 |     | Description |
 | --- | ----------- |
-| [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| [**\<configuration>**](./configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements
 
 |     | Description |
 | --- | ----------- |
-| [**\<add>**](~/docs/framework/configure-apps/file-schema/add-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler>  | Adds custom application settings. |
-| [**\<remove>**](~/docs/framework/configure-apps/file-schema/remove-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> | Removes a previously defined setting. |
-| [**\<clear>**](~/docs/framework/configure-apps/file-schema/clear-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> | Clears all previously defined settings in a section. |
+| [**\<add>**](./add-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler>  | Adds custom application settings. |
+| [**\<remove>**](./remove-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> | Removes a previously defined setting. |
+| [**\<clear>**](./clear-element-for-custom-2.md) for <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> | Clears all previously defined settings in a section. |
 
 ## Remarks
 
@@ -77,4 +77,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](./index.md)

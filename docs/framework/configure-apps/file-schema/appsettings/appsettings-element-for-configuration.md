@@ -15,7 +15,7 @@ ms.author: "mairaw"
 
 Contains custom application settings. This is a predefined configuration section provided by the .NET Framework.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
+[**\<configuration>**](../configuration-element.md)   
 &nbsp;&nbsp;**\<appSettings>**
 
 ## Syntax
@@ -36,15 +36,15 @@ Contains custom application settings. This is a predefined configuration section
 
 |     | Description |
 | --- | ----------- |
-| [**\<configuration>** Element](~/docs/framework/configure-apps/file-schema/configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| [**\<configuration>** Element](../configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements
 
 |     | Description |
 | --- | ----------- |
-| [**\<add>**](~/docs/framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) | Adds a custom application setting. |
-| [**\<clear>**](~/docs/framework/configure-apps/file-schema/appsettings/clear-element-for-appsettings.md) | Clears all previously defined application settings. |
-| [**\<remove>**](~/docs/framework/configure-apps/file-schema/appsettings/remove-element-for-appsettings.md) | Removes a previously defined application setting. |
+| [**\<add>**](./add-element-for-appsettings.md) | Adds a custom application setting. |
+| [**\<clear>**](./clear-element-for-appsettings.md) | Clears all previously defined application settings. |
+| [**\<remove>**](./remove-element-for-appsettings.md) | Removes a previously defined application setting. |
 
 ## Remarks
 
@@ -81,4 +81,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](../index.md)

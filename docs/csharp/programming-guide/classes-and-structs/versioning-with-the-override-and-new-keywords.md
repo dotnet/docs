@@ -8,13 +8,13 @@ helpviewer_keywords:
 ms.assetid: 88247d07-bd0d-49e9-a619-45ccbbfdf0c5
 ---
 # Versioning with the Override and New Keywords (C# Programming Guide)
-The C# language is designed so that versioning between [base](../../../csharp/language-reference/keywords/base.md) and derived classes in different libraries can evolve and maintain backward compatibility. This means, for example, that the introduction of a new member in a base [class](../../../csharp/language-reference/keywords/class.md) with the same name as a member in a derived class is completely supported by C# and does not lead to unexpected behavior. It also means that a class must explicitly state whether a method is intended to override an inherited method, or whether a method is a new method that hides a similarly named inherited method.  
+The C# language is designed so that versioning between [base](../../language-reference/keywords/base.md) and derived classes in different libraries can evolve and maintain backward compatibility. This means, for example, that the introduction of a new member in a base [class](../../language-reference/keywords/class.md) with the same name as a member in a derived class is completely supported by C# and does not lead to unexpected behavior. It also means that a class must explicitly state whether a method is intended to override an inherited method, or whether a method is a new method that hides a similarly named inherited method.  
   
  In C#, derived classes can contain methods with the same name as base class methods.  
   
-- The base class method must be defined [virtual](../../../csharp/language-reference/keywords/virtual.md).  
+- The base class method must be defined [virtual](../../language-reference/keywords/virtual.md).  
   
-- If the method in the derived class is not preceded by [new](../../../csharp/language-reference/keywords/new-modifier.md) or [override](../../../csharp/language-reference/keywords/override.md) keywords, the compiler will issue a warning and the method will behave as if the `new` keyword were present.  
+- If the method in the derived class is not preceded by [new](../../language-reference/keywords/new-modifier.md) or [override](../../language-reference/keywords/override.md) keywords, the compiler will issue a warning and the method will behave as if the `new` keyword were present.  
   
 - If the method in the derived class is preceded with the `new` keyword, the method is defined as being independent of the method in the base class.  
   
@@ -71,11 +71,11 @@ The C# language is designed so that versioning between [base](../../../csharp/la
   
  [!code-csharp[csProgGuideInheritance#34](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#34)]  
   
- For more examples of `new` and `override`, see [Knowing When to Use Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md).  
+ For more examples of `new` and `override`, see [Knowing When to Use Override and New Keywords](./knowing-when-to-use-override-and-new-keywords.md).  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
-- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+- [C# Programming Guide](../index.md)
+- [Classes and Structs](./index.md)
+- [Methods](./methods.md)
+- [Inheritance](./inheritance.md)

@@ -11,10 +11,10 @@ ms.assetid: cc738f07-e8cd-4683-9585-9f40c0667c37
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. In C#, every executed instruction is performed in the context of a method. The Main method is the entry point for every C# application and it is called by the common language runtime (CLR) when the program is started.  
   
 > [!NOTE]
->  This topic discusses named methods. For information about anonymous functions, see [Anonymous Functions](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md).  
+>  This topic discusses named methods. For information about anonymous functions, see [Anonymous Functions](../statements-expressions-operators/anonymous-functions.md).  
   
 ## Method Signatures  
- Methods are declared in a [class](../../../csharp/language-reference/keywords/class.md) or [struct](../../../csharp/language-reference/keywords/struct.md) by specifying the access level such as `public` or `private`, optional modifiers such as `abstract` or `sealed`, the return value, the name of the method, and any method parameters. These parts together are the signature of the method.  
+ Methods are declared in a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/keywords/struct.md) by specifying the access level such as `public` or `private`, optional modifiers such as `abstract` or `sealed`, the return value, the name of the method, and any method parameters. These parts together are the signature of the method.  
   
 > [!NOTE]
 >  A return type of a method is not part of the signature of the method for the purposes of method overloading. However, it is part of the signature of the method when determining the compatibility between a delegate and the method that it points to.  
@@ -34,7 +34,7 @@ A method is a code block that contains a series of statements. A program causes 
  [!code-csharp[csProgGuideObjects#74](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#74)]  
   
 ## Passing by Reference vs. Passing by Value  
- By default, when a value type is passed to a method, a copy is passed instead of the object itself. Therefore, changes to the argument have no effect on the original copy in the calling method. You can pass a value-type by reference by using the ref keyword. For more information, see [Passing Value-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-value-type-parameters.md). For a list of built-in value types, see [Value Types Table](../../../csharp/language-reference/keywords/value-types-table.md).  
+ By default, when a value type is passed to a method, a copy is passed instead of the object itself. Therefore, changes to the argument have no effect on the original copy in the calling method. You can pass a value-type by reference by using the ref keyword. For more information, see [Passing Value-Type Parameters](./passing-value-type-parameters.md). For a list of built-in value types, see [Value Types Table](../../language-reference/keywords/value-types-table.md).  
   
  When an object of a reference type is passed to a method, a reference to the object is passed. That is, the method receives not the object itself but an argument that indicates the location of the object. If you change a member of the object by using this reference, the change is reflected in the argument in the calling method, even if you pass the object by value.  
   
@@ -48,7 +48,7 @@ A method is a code block that contains a series of statements. A program causes 
   
  The example does essentially the same thing as the previous example in that it passes an argument by value to a method. But, because a reference type is used, the result is different. The modification that is made in `ModifyObject` to the `value` field of the parameter, `obj`, also changes the `value` field of the argument, `rt`, in the `TestRefType` method. The `TestRefType` method displays 33 as the output.  
   
- For more information about how to pass reference types by reference and by value, see [Passing Reference-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md) and [Reference Types](../../../csharp/language-reference/keywords/reference-types.md).  
+ For more information about how to pass reference types by reference and by value, see [Passing Reference-Type Parameters](./passing-reference-type-parameters.md) and [Reference Types](../../language-reference/keywords/reference-types.md).  
   
 ## Return Values  
 Methods can return a value to the caller. If the return type, the type listed before the method name, is not `void`, the method can return the value by using the `return` keyword. A statement with the `return` keyword followed by a value that matches the return type will return that value to the method caller. 
@@ -102,12 +102,12 @@ public static void FillMatrix(int[,] matrix)
 }
 ```  
   
- For more information, see [return](../../../csharp/language-reference/keywords/return.md).  
+ For more information, see [return](../../language-reference/keywords/return.md).  
   
 ## Async Methods  
  By using the async feature, you can invoke asynchronous methods without using explicit callbacks or manually splitting your code across multiple methods or lambda expressions. 
   
- If you mark a method with the [async](../../../csharp/language-reference/keywords/async.md) modifier, you can use the [await](../../../csharp/language-reference/keywords/await.md) operator in the method. When control reaches an await expression in the async method, control returns to the caller, and progress in the method is suspended until the awaited task completes. When the task is complete, execution can resume in the method.  
+ If you mark a method with the [async](../../language-reference/keywords/async.md) modifier, you can use the [await](../../language-reference/keywords/await.md) operator in the method. When control reaches an await expression in the async method, control returns to the caller, and progress in the method is suspended until the awaited task completes. When the task is complete, execution can resume in the method.  
   
 > [!NOTE]
 >  An async method returns to the caller when either it encounters the first awaited object that’s not yet complete or it gets to the end of the async method, whichever occurs first.  
@@ -120,9 +120,9 @@ public static void FillMatrix(int[,] matrix)
   
  [!code-csharp[csAsyncMethod#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csasyncmethod/cs/mainwindow.xaml.cs#2)]  
   
- An async method can't declare any [ref](../../../csharp/language-reference/keywords/ref.md) or [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) parameters, but it can call methods that have such parameters.  
+ An async method can't declare any [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameters, but it can call methods that have such parameters.  
   
- For more information about async methods, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md), [Control Flow in Async Programs](../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../../csharp/programming-guide/concepts/async/async-return-types.md).  
+ For more information about async methods, see [Asynchronous Programming with async and await](../concepts/async/index.md), [Control Flow in Async Programs](../concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../concepts/async/async-return-types.md).  
   
 ## Expression Body Definitions  
  It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:  
@@ -139,27 +139,27 @@ public Customer this[long id] => store.LookupCustomer(id);
  If the method returns `void` or is an async method, then the body of the method must be a statement expression (same as with lambdas).  For properties and indexers, they must be read only, and you don't use the `get` accessor keyword.  
   
 ## Iterators  
- An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](../../../csharp/language-reference/keywords/yield.md) statement to return each element one at a time. When a [yield return](../../../csharp/language-reference/keywords/yield.md) statement is reached, the current location in code is remembered. Execution is restarted from that location when the iterator is called the next time.  
+ An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](../../language-reference/keywords/yield.md) statement to return each element one at a time. When a [yield return](../../language-reference/keywords/yield.md) statement is reached, the current location in code is remembered. Execution is restarted from that location when the iterator is called the next time.  
   
- You call an iterator from client code by using a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement.  
+ You call an iterator from client code by using a [foreach](../../language-reference/keywords/foreach-in.md) statement.  
   
  The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
   
- For more information, see [Iterators](../../../csharp/programming-guide/concepts/iterators.md).  
+ For more information, see [Iterators](../concepts/iterators.md).  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Programming Guide](../index.md)
 - [Classes and Structs](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Static Classes and Static Class Members](static-classes-and-static-class-members.md)
 - [Inheritance](inheritance.md)
 - [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md)
-- [params](../../../csharp/language-reference/keywords/params.md)
-- [return](../../../csharp/language-reference/keywords/return.md)
-- [out](../../../csharp/language-reference/keywords/out.md)
-- [ref](../../../csharp/language-reference/keywords/ref.md)
+- [params](../../language-reference/keywords/params.md)
+- [return](../../language-reference/keywords/return.md)
+- [out](../../language-reference/keywords/out.md)
+- [ref](../../language-reference/keywords/ref.md)
 - [Passing Parameters](passing-parameters.md)

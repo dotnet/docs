@@ -24,7 +24,7 @@ result = number1 Mod number2
   
 ## Parts  
  `result`
- Required. Any numeric expression.
+ Required. Any numeric variable or property.
 
  `number1`
  Required. Any numeric expression.

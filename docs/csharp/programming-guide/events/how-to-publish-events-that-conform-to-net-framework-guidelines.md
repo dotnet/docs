@@ -71,6 +71,6 @@ public delegate void EventHandler(object sender, EventArgs e);
 ## See also
 
 - <xref:System.Delegate>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Events](../../../csharp/programming-guide/events/index.md)
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [C# Programming Guide](../index.md)
+- [Events](./index.md)
+- [Delegates](../delegates/index.md)

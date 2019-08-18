@@ -40,17 +40,17 @@ The following example shows the complete query operation. The complete operation
 
 ## Next steps
 
-To learn more details about LINQ, start by becoming familiar with some basic concepts in [Query expression basics](../../../linq/query-expression-basics.md), and then read the documentation for the LINQ technology in which you are interested:   
+To learn more details about LINQ, start by becoming familiar with some basic concepts in [Query expression basics](../.././query-expression-basics.md), and then read the documentation for the LINQ technology in which you are interested:   
 - XML documents: [LINQ to XML](linq-to-xml.md)  
   
 - ADO.NET Entity Framework: [LINQ to entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md)  
   
 - .NET collections, files, strings and so on: [LINQ to objects](linq-to-objects.md)
 
-To gain a deeper understanding of LINQ in general, see [LINQ in C#](../../../linq/linq-in-csharp.md).
+To gain a deeper understanding of LINQ in general, see [LINQ in C#](../.././linq-in-csharp.md).
 
 To start working with LINQ in C#, see the tutorial [Working with LINQ](../../../tutorials/working-with-linq.md).
 
 ## See also
 
-- [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+- [Language-Integrated Query (LINQ) (C#)](./index.md)

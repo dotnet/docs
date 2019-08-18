@@ -13,7 +13,7 @@ This topic shows how to find all attributes of the siblings of the context node.
 ## Example  
  This example first finds a `Book` element, and then finds all sibling elements named `Book`, and then finds all attributes named `id`. The result is a collection of attributes.  
   
- This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).  
   
 ```csharp  
 XDocument books = XDocument.Load("Books.xml");  

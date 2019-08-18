@@ -63,22 +63,22 @@ result = string Like pattern
 ```  
   
 ## Parts
- `result`
+ `result`  
  Required. A `Boolean` value representing the result of the comparison.
 
- `expression1`, `expression2`
+ `expression1`, `expression2`  
  Required. Any expression.
 
- `comparisonoperator`
+ `comparisonoperator`  
  Required. Any relational comparison operator.
 
- `object1`, `object2`
+ `object1`, `object2`  
  Required. Any reference object names.
 
- `string`
+ `string`  
  Required. Any `String` expression.
 
- `pattern`
+ `pattern`  
  Required. Any `String` expression or range of characters.
 
 ## Remarks

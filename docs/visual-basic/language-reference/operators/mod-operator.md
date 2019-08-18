@@ -74,7 +74,7 @@ End Module
 ## Attempted division by zero
  If `number2` evaluates to zero, the behavior of the `Mod` operator depends on the data type of the operands:
  - An integral division throws a <xref:System.DivideByZeroException> exception if `number2` cannot be determined in compile-time and generates a compile-time error `BC30542	Division by zero occurred while evaluating this expression` if `number2` is evaluated to zero at compile-time.
- - A floating-point division returns <xref:System.Double.NaN>.
+ - A floating-point division returns <xref:System.Double.NaN?displayProperty=nameWithType>.
 
 ## Equivalent formula
  The expression `a Mod b` is equivalent to either of the following formulas:

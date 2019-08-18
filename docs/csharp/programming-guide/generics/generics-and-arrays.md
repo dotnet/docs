@@ -20,4 +20,4 @@ In C# 2.0 and later, single-dimensional arrays that have a lower bound of zero a
 - [C# Programming Guide](../index.md)
 - [Generics](./index.md)
 - [Arrays](../arrays/index.md)
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../standard/generics/index.md)

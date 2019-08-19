@@ -17,7 +17,7 @@ ms.author: "ronpet"
 # How to: Remove an Assembly from the Global Assembly Cache
 There are two ways to remove an assembly from the global assembly cache (GAC):  
   
-- By using the [Global Assembly Cache tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md). You can use this option to uninstall assemblies that you've placed in the GAC during development and testing.  
+- By using the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md). You can use this option to uninstall assemblies that you've placed in the GAC during development and testing.  
   
 - By using [Windows Installer](/windows/desktop/Msi/windows-installer-portal). You should use this option to uninstall assemblies when testing installation packages and for production systems.  
   
@@ -47,6 +47,6 @@ gacutil -u hello
   
 ## See also
 
-- [Working with Assemblies and the Global Assembly Cache](../../../docs/framework/app-domains/working-with-assemblies-and-the-gac.md)
-- [How to: Install an Assembly into the Global Assembly Cache](../../../docs/framework/app-domains/how-to-install-an-assembly-into-the-gac.md)
-- [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)
+- [Working with Assemblies and the Global Assembly Cache](working-with-assemblies-and-the-gac.md)
+- [How to: Install an Assembly into the Global Assembly Cache](how-to-install-an-assembly-into-the-gac.md)
+- [Gacutil.exe (Global Assembly Cache Tool)](../tools/gacutil-exe-gac-tool.md)

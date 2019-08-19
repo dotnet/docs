@@ -30,4 +30,4 @@ You can provide the common language runtime with configuration information for a
 ## See also
 
 - [Programming with Application Domains](application-domains.md#programming-with-application-domains)
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Using Application Domains](use.md)

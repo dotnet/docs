@@ -30,4 +30,4 @@ Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), applications 
   
 ## See also
 
-- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [Programming with Assemblies](programming-with-assemblies.md)

@@ -18,7 +18,7 @@ ms.author: "ronpet"
 ---
 # How to: Build a Single-File Assembly
 
-A single-file assembly, which is the simplest type of assembly, contains type information and implementation, as well as the [assembly manifest](../../../docs/framework/app-domains/assembly-manifest.md). You can use command-line compilers or Visual Studio to create a single-file assembly. By default, the compiler creates an assembly file with an .exe extension.
+A single-file assembly, which is the simplest type of assembly, contains type information and implementation, as well as the [assembly manifest](assembly-manifest.md). You can use command-line compilers or Visual Studio to create a single-file assembly. By default, the compiler creates an assembly file with an .exe extension.
 
 > [!NOTE]
 > Visual Studio for C# and Visual Basic can be used only to create single-file assemblies. If you want to create multifile assemblies, you must use command-line compilers or Visual C++.
@@ -84,7 +84,7 @@ vbc -out:myCodeLibrary.dll -t:library myCode.vb
 
 ## See also
 
-- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)
-- [Multifile Assemblies](../../../docs/framework/app-domains/multifile-assemblies.md)
-- [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)
-- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [Creating Assemblies](create-assemblies.md)
+- [Multifile Assemblies](multifile-assemblies.md)
+- [How to: Build a Multifile Assembly](how-to-build-a-multifile-assembly.md)
+- [Programming with Assemblies](programming-with-assemblies.md)

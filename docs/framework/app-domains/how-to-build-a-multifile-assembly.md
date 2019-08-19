@@ -75,7 +75,7 @@ This article explains how to create a multifile assembly and provides code that 
     >    [!code-csharp[Conceptual.Assembly.Multifile#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.assembly.multifile/cs/client.cs#6)]
     >    [!code-vb[Conceptual.Assembly.Multifile#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.assembly.multifile/vb/client.vb#6)]
 
-03. Use the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to create the output file that contains the assembly manifest. This file contains reference information for all modules or resources that are part of the assembly.
+03. Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create the output file that contains the assembly manifest. This file contains reference information for all modules or resources that are part of the assembly.
 
     At the command prompt, type the following command:
 
@@ -89,11 +89,11 @@ This article explains how to create a multifile assembly and provides code that 
     al Client.netmodule Stringer.netmodule /main:MainClientApp.Main /out:myAssembly.exe /target:exe
     ```
 
-    You can use the [MSIL Disassembler (Ildasm.exe)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of an assembly, or determine whether a file is an assembly or a module.
+    You can use the [MSIL Disassembler (Ildasm.exe)](../tools/ildasm-exe-il-disassembler.md) to examine the contents of an assembly, or determine whether a file is an assembly or a module.
 
 ## See also
 
-- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)
-- [How to: View Assembly Contents](../../../docs/framework/app-domains/how-to-view-assembly-contents.md)
-- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Multifile Assemblies](../../../docs/framework/app-domains/multifile-assemblies.md)
+- [Creating Assemblies](create-assemblies.md)
+- [How to: View Assembly Contents](how-to-view-assembly-contents.md)
+- [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
+- [Multifile Assemblies](multifile-assemblies.md)

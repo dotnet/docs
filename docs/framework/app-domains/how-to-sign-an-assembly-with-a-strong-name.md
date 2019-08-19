@@ -19,13 +19,13 @@ There are a number of ways to sign an assembly with a strong name:
   
 - By using the **Signing** tab in a project's **Properties** dialog box in Visual Studio. This is the easiest and most convenient way to sign an assembly with a strong name.  
   
-- By using the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to link a .NET Framework code module (a .netmodule file) with a key file.  
+- By using the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to link a .NET Framework code module (a .netmodule file) with a key file.  
   
 - By using assembly attributes to insert the strong name information into your code. You can use either the <xref:System.Reflection.AssemblyKeyFileAttribute> or the <xref:System.Reflection.AssemblyKeyNameAttribute> attribute, depending on where the key file to be used is located.  
   
 - By using compiler options.  
   
- You must have a cryptographic key pair to sign an assembly with a strong name. For more information about creating a key pair, see [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md).  
+ You must have a cryptographic key pair to sign an assembly with a strong name. For more information about creating a key pair, see [How to: Create a Public-Private Key Pair](how-to-create-a-public-private-key-pair.md).  
   
 ### To create and sign an assembly with a strong name by using Visual Studio  
   
@@ -38,11 +38,11 @@ There are a number of ways to sign an assembly with a strong name:
 4. In the **Choose a strong name key file** box, choose **\<Browse…>**, and then navigate to the key file. To create a new key file, choose **\<New…>** and enter its name in the **Create Strong Name Key** dialog box.  
   
 > [!NOTE]
->  In order to [delay sign an assembly](../../../docs/framework/app-domains/delay-sign-assembly.md), choose a public key file.  
+>  In order to [delay sign an assembly](delay-sign-assembly.md), choose a public key file.  
   
 ### To create and sign an assembly with a strong name by using the Assembly Linker  
   
-- At the [Developer Command Prompt for Visual Studio](../../../docs/framework/tools/developer-command-prompt-for-vs.md), type the following command:  
+- At the [Developer Command Prompt for Visual Studio](../tools/developer-command-prompt-for-vs.md), type the following command:  
   
      **al** **/out:**\<*assemblyName*> *\<moduleName>* **/keyfile:**\<*keyfileName*>  
   
@@ -63,7 +63,7 @@ There are a number of ways to sign an assembly with a strong name:
 al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk  
 ```  
   
- For more information about this tool, see [Assembly Linker](../../../docs/framework/tools/al-exe-assembly-linker.md).  
+ For more information about this tool, see [Assembly Linker](../tools/al-exe-assembly-linker.md).  
   
 #### To sign an assembly with a strong name by using attributes  
   
@@ -80,13 +80,13 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
  [!code-csharp[AssemblyName_KeyPair#21](../../../samples/snippets/csharp/VS_Snippets_CLR/AssemblyName_KeyPair/CS/keyfileattrib.cs#21)]
  [!code-vb[AssemblyName_KeyPair#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyName_KeyPair/VB/keyfileattrib.vb#21)]  
   
- You can also delay sign an assembly when compiling your source file. For more information, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).  
+ You can also delay sign an assembly when compiling your source file. For more information, see [Delay Signing an Assembly](delay-sign-assembly.md).  
   
 ### To sign an assembly with a strong name by using the compiler  
   
 - Compile your source code file or files with the `/keyfile` or `/delaysign` compiler option in C# and Visual Basic, or the `/KEYFILE` or `/DELAYSIGN` linker option in C++. After the option name, add a colon and the name of the key file. When using command-line compilers, you can copy the key file to the directory that contains your source code files.  
   
-     For information on delay signing, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).  
+     For information on delay signing, see [Delay Signing an Assembly](delay-sign-assembly.md).  
   
      The following example uses the C# compiler and signs the assembly `UtilityLibrary.dll` with a strong name by using the key file `sgKey.snk`.  
   
@@ -96,9 +96,9 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
   
 ## See also
 
-- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)
-- [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)
-- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
-- [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)
+- [Creating and Using Strong-Named Assemblies](create-and-use-strong-named-assemblies.md)
+- [How to: Create a Public-Private Key Pair](how-to-create-a-public-private-key-pair.md)
+- [Al.exe (Assembly Linker)](../tools/al-exe-assembly-linker.md)
+- [Delay Signing an Assembly](delay-sign-assembly.md)
 - [Managing Assembly and Manifest Signing](/visualstudio/ide/managing-assembly-and-manifest-signing)
 - [Signing Page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)

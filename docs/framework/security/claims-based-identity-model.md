@@ -21,9 +21,9 @@ When you build claims-aware applications, the user identity is represented in yo
   
  This topic provides the following information:  
   
-- [Introduction to Claims-Based Identity](../../../docs/framework/security/claims-based-identity-model.md#BKMK_1)  
+- [Introduction to Claims-Based Identity](claims-based-identity-model.md#BKMK_1)  
   
-- [Basic Scenario for a Claims-Based Identity Model](../../../docs/framework/security/claims-based-identity-model.md#BKMK_2)  
+- [Basic Scenario for a Claims-Based Identity Model](claims-based-identity-model.md#BKMK_2)  
   
 <a name="BKMK_1"></a>   
 ## Introduction to Claims-Based Identity  
@@ -63,7 +63,7 @@ When you build claims-aware applications, the user identity is represented in yo
 ## Basic Scenario for a Claims-Based Identity Model  
  The following is an example of a claims-based system.  
   
- ![Relying Partner Authentication Flow](../../../docs/framework/security/media/conc-relying-partner-processc.png "conc_relying_partner_processc")  
+ ![Relying Partner Authentication Flow](media/conc-relying-partner-processc.png "conc_relying_partner_processc")  
   
  This diagram shows a Web site (the relying party application, RP) that has been configured to use WIF for authentication and a client, a web browser, that wants to use that site.  
   

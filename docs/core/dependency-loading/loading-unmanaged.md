@@ -9,20 +9,21 @@ ms.author: stmaclea
 
 Unmanaged libraries are located and loaded with an algorithm involving various stages.
 
-## Algorithm
+The following algorithm describes how native libraries are loaded when through `PInvoke`.
 
-1. Determine the active <xref:System.Runtime.Loader.AssemblyLoadContext>.
+## `PInvoke` load unmanaged library algorithm
 
-    - Recommended APIs make the active <xref:System.Runtime.Loader.AssemblyLoadContext> explicit.
-    - Some APIs infer the active <xref:System.Runtime.Loader.AssemblyLoadContext>.For these APIs, the <xref:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext?displayProperty=nameWithType> property is used. If its value is `null`, then the current executing assembly's <xref:System.Runtime.Loader.AssemblyLoadContext> is used.
+1. Determine the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>. For unmanaged the `active` AssemblyLoadContext is the caller of the `PInvoke`.
 
-2. For the active <xref:System.Runtime.Loader.AssemblyLoadContext>, try to find the assembly. In priority order by:
+2. For the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>, try to find the assembly. In priority order by:
     * Checking its cache.
+
+    * Calling the current <xref:System.Runtime.InteropServices.DllImportResolver?displayProperty=nameWithType> delegate set by the <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType> function.
 
     * Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll%2A?displayProperty=nameWithType> function.
 
-    * Checking the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> class' cache and [trusted platform assemblies](trusted=platform-assemblies).
+    * Checking the <xref:System.AppDomain> instance's cache and running the [Unmanaged (native) library probing](default-probing.md#unmanaged-native-library-probing) logic.
 
-    * Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType> event.
+    * Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType> event for the `active` AssemblyLoadContext.
 
-3. If the unmanaged library is found, it's loaded, cached in the active <xref:System.Runtime.Loader.AssemblyLoadContext>, and the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.
+3. If the unmanaged library is newly loaded the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.

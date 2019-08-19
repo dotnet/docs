@@ -1,16 +1,16 @@
 ---
 title: "Walkthrough: Embed types from managed assemblies in Visual Studio"
-ms.date: 08/16/2019
+ms.date: 08/19/2019
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
 ---
 
 # Walkthrough: Embed types from managed assemblies in Visual Studio
 
-Type embedding is frequently used with COM interop, such as an application that uses automation objects from Microsoft Office. Embedding type information enables the same build of a program to work with different versions of Microsoft Office on different computers. However, you can also use type embedding with fully managed solutions.
-
 If you embed type information from a strong-named managed assembly, you can loosely couple types in an application to achieve version independence. That is, your program can be written to use types from multiple versions of a managed library without having to be recompiled for each version.
 
-After you specify the public interfaces that can be embedded, you can create runtime classes that implement those interfaces. A client program can embed the type information for those interfaces at design time by referencing the assembly that contains the public interfaces and setting the `Embed Interop Types` property of the reference to `True`. The client program can then load instances of your runtime objects typed as those interfaces. This is equivalent to using the command line compiler and referencing the assembly by using the `/link` compiler option. 
+Type embedding is frequently used with COM interop, such as an application that uses automation objects from Microsoft Office. Embedding type information enables the same build of a program to work with different versions of Microsoft Office on different computers. However, you can also use type embedding with fully managed solutions.
+
+After you specify the public interfaces that can be embedded, you create runtime classes that implement those interfaces. A client program can embed the type information for the interfaces at design time by referencing the assembly that contains the public interfaces and setting the `Embed Interop Types` property of the reference to `True`. The client program can then load instances of your runtime objects typed as those interfaces. This is equivalent to using the command line compiler and referencing the assembly by using the `/link` compiler option. 
 
 If you create a new version of your strong-named runtime assembly, the client program doesn't have to be recompiled. The client program continues to use whichever version of the runtime assembly is available to it, using the embedded type information for the public interfaces.
 
@@ -18,13 +18,13 @@ In this walkthrough, you:
 
 1. Create a strong-named assembly with a public interface containing type information that can be embedded.
 1. Create a strong-named runtime assembly that implements the public interface.
-1. Create a client program that embeds the type information from the public interface, and creates an instance of the class from the runtime assembly.
+1. Create a client program that embeds the type information from the public interface and creates an instance of the class from the runtime assembly.
 1. Modify and rebuild the runtime assembly.
 1. Run the client program to see that it uses the new version of the runtime assembly without having to be recompiled.
 
 [!INCLUDE[note_settings_general](../../../includes/note-settings-general-md.md)]
 
-## Overview
+## Conditions and limitations
 
 You can embed type information from an assembly under the following conditions: 
 
@@ -108,7 +108,7 @@ The first step is to create the type equivalence interface assembly.
    
 1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
    
-1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Build**. The class library *.dll* file is compiled and saved to the specified build output path, for example *C:\TypeEquivalenceSample*.
+1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Build**. The class library DLL file is compiled and saved to the specified build output path, for example *C:\TypeEquivalenceSample*.
 
 ## Create a runtime class
 
@@ -185,11 +185,11 @@ Next, create the type equivalence runtime class.
    
 1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
    
-1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Build**. The class library *.dll* file is compiled and saved to the specified build output path.
+1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Build**. The class library DLL file is compiled and saved to the specified build output path.
 
 ## Create a client project
 
-Next, create a type equivalence client project that references the interface assembly.
+Finally, create a type equivalence client program that references the interface assembly.
 
 1. In Visual Studio, select **File** > **New** > **Project**.
    
@@ -286,7 +286,7 @@ Now, modify the interface assembly, and change its version.
    
 1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
    
-1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Build**. A new version of the class library *.dll* file is compiled and saved to the build output path.
+1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Build**. A new version of the class library DLL file is compiled and saved to the build output path.
 
 ## Modify the runtime class
 
@@ -319,7 +319,7 @@ Also modify the runtime class and update its version.
    
 1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
    
-1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Build**. A new version of the class library *.dll* file is compiled and saved to the build output path.
+1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Build**. A new version of the class library DLL file is compiled and saved to the build output path.
 
 ## Run the updated client program 
 

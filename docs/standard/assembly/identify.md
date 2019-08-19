@@ -1,12 +1,13 @@
 ---
-title: "How to: Determine If a File Is an Assembly (C#)"
-ms.date: 07/20/2015
+title: "How to: Determine if a file is an assembly (C#)"
+ms.date: 08/19/2019
 ms.assetid: ea5186bb-5bff-4dcb-bde9-d6ba4e2edd00
 ---
-# How to: Determine If a File Is an Assembly (C#)
-A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](manifest.md).  
+# How to: Determine if a file is an assembly (C#)
+
+A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly manifest](manifest.md).  
   
-### How to manually determine if a file is an assembly  
+## How to manually determine if a file is an assembly  
   
 1. Start the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md).  
   
@@ -14,7 +15,7 @@ A file is an assembly if and only if it is managed, and contains an assembly ent
   
 3. If **ILDASM** reports that the file is not a portable executable (PE) file, then it is not an assembly. For more information, see the topic [How to: View Assembly Contents](view-contents.md).  
   
-### How to programmatically determine if a file is an assembly  
+## How to programmatically determine if a file is an assembly  
   
 1. Call the <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method, passing the full file path and name of the file you are testing.  
   
@@ -63,5 +64,5 @@ class TestAssembly
 ## See also
 
 - <xref:System.Reflection.AssemblyName>
-- [C# Programming Guide](../../csharp/programming-guide/index.md)
+- [C# programming guide](../../csharp/programming-guide/index.md)
 - [Assemblies in .NET](index.md)

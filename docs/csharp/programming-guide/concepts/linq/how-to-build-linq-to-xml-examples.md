@@ -30,4 +30,4 @@ using System.IO.Packaging;
   
 ## See also
 
-- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)
+- [LINQ to XML Programming Overview (C#)](./linq-to-xml-overview.md)

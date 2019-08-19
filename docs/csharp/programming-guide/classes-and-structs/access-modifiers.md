@@ -10,21 +10,21 @@ ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
 # Access Modifiers (C# Programming Guide)
 All types and type members have an accessibility level, which controls whether they can be used from other code in your assembly or other assemblies. You can use the following access modifiers to specify the accessibility of a type or member when you declare it:  
   
- [public](../../../csharp/language-reference/keywords/public.md)  
+ [public](../../language-reference/keywords/public.md)  
  The type or member can be accessed by any other code in the same assembly or another assembly that references it. 
   
- [private](../../../csharp/language-reference/keywords/private.md)  
+ [private](../../language-reference/keywords/private.md)  
  The type or member can be accessed only by code in the same class or struct.  
   
- [protected](../../../csharp/language-reference/keywords/protected.md)  
+ [protected](../../language-reference/keywords/protected.md)  
  The type or member can be accessed only by code in the same class, or in a class that is derived from that class.  
- [internal](../../../csharp/language-reference/keywords/internal.md)  
+ [internal](../../language-reference/keywords/internal.md)  
  The type or member can be accessed by any code in the same assembly, but not from another assembly.  
   
- [protected internal](../../../csharp/language-reference/keywords/protected-internal.md)
+ [protected internal](../../language-reference/keywords/protected-internal.md)
  The type or member can be accessed by any code in the assembly in which it is declared, or from within a derived class in another assembly. 
 
- [private protected](../../../csharp/language-reference/keywords/private-protected.md)
+ [private protected](../../language-reference/keywords/private-protected.md)
  The type or member can be accessed only within its declaring assembly, by code in the same class or in a type that is derived from that class.
   
  The following examples demonstrate how to specify access modifiers on a type and member:  
@@ -49,7 +49,7 @@ All types and type members have an accessibility level, which controls whether t
   
  The type of any member that is a field, property, or event must be at least as accessible as the member itself. Similarly, the return type and the parameter types of any member that is a method, indexer, or delegate must be at least as accessible as the member itself. For example, you cannot have a public method `M` that returns a class `C` unless `C` is also public. Likewise, you cannot have a protected property of type `A` if `A` is declared as private.  
   
- User-defined operators must always be declared as public and static. For more information, see [Operator overloading](../../../csharp/language-reference/operators/operator-overloading.md).  
+ User-defined operators must always be declared as public and static. For more information, see [Operator overloading](../../language-reference/operators/operator-overloading.md).  
   
  Finalizers cannot have accessibility modifiers.  
   
@@ -72,15 +72,15 @@ All types and type members have an accessibility level, which controls whether t
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
-- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
-- [private](../../../csharp/language-reference/keywords/private.md)
-- [public](../../../csharp/language-reference/keywords/public.md)
-- [internal](../../../csharp/language-reference/keywords/internal.md)
-- [protected](../../../csharp/language-reference/keywords/protected.md)
-- [protected internal](../../../csharp/language-reference/keywords/protected-internal.md)
-- [private protected](../../../csharp/language-reference/keywords/private-protected.md)
-- [class](../../../csharp/language-reference/keywords/class.md)
-- [struct](../../../csharp/language-reference/keywords/struct.md)
-- [interface](../../../csharp/language-reference/keywords/interface.md)
+- [C# Programming Guide](../index.md)
+- [Classes and Structs](./index.md)
+- [Interfaces](../interfaces/index.md)
+- [private](../../language-reference/keywords/private.md)
+- [public](../../language-reference/keywords/public.md)
+- [internal](../../language-reference/keywords/internal.md)
+- [protected](../../language-reference/keywords/protected.md)
+- [protected internal](../../language-reference/keywords/protected-internal.md)
+- [private protected](../../language-reference/keywords/private-protected.md)
+- [class](../../language-reference/keywords/class.md)
+- [struct](../../language-reference/keywords/struct.md)
+- [interface](../../language-reference/keywords/interface.md)

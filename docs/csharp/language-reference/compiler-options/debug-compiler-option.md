@@ -36,7 +36,7 @@ The **-debug** option causes the compiler to generate debugging information and 
   
  For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).  
   
- To change the location of the .pdb file, see [-pdb (C# Compiler Options)](../../../csharp/language-reference/compiler-options/pdb-compiler-option.md).  
+ To change the location of the .pdb file, see [-pdb (C# Compiler Options)](./pdb-compiler-option.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -59,5 +59,5 @@ csc -debug -pdb:app.pdb test.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

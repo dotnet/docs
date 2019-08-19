@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 6bbba495-a115-4c6d-90cc-1f4d7b5f39e2
 ---
 # Creating and Throwing Exceptions (C# Programming Guide)
-Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [throw](../../../csharp/language-reference/keywords/throw.md) keyword. The runtime then searches for the most compatible exception handler.  
+Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [throw](../../language-reference/keywords/throw.md) keyword. The runtime then searches for the most compatible exception handler.  
   
  Programmers should throw exceptions when one or more of the following conditions are true:  
   
@@ -62,7 +62,7 @@ For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) and [Th
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
+- [C# Programming Guide](../index.md)
+- [Exceptions and Exception Handling](./index.md)
 - [Exception Hierarchy](../../../standard/exceptions/index.md)
-- [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)
+- [Exception Handling](./exception-handling.md)

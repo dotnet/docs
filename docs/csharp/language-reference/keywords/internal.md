@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461
 ---
 # internal (C# Reference)
-The `internal` keyword is an [access modifier](../../../csharp/language-reference/keywords/access-modifiers.md) for types and type members. 
+The `internal` keyword is an [access modifier](./access-modifiers.md) for types and type members. 
   
  > This page covers `internal` access. The `internal` keyword is also part of the [`protected internal`](./protected-internal.md) access modifier.
   
@@ -25,7 +25,7 @@ public class BaseClass
 }  
 ```  
 
- For a comparison of `internal` with the other access modifiers, see [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md) and [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  
+ For a comparison of `internal` with the other access modifiers, see [Accessibility Levels](./accessibility-levels.md) and [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).  
   
  For more information about assemblies, see [Assemblies in .NET](../../../standard/assembly/index.md).  
   
@@ -88,12 +88,12 @@ For more information, see [Declared accessibility](~/_csharplang/spec/basic-conc
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)
-- [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md)
-- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)
-- [public](../../../csharp/language-reference/keywords/public.md)
-- [private](../../../csharp/language-reference/keywords/private.md)
-- [protected](../../../csharp/language-reference/keywords/protected.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
+- [Access Modifiers](./access-modifiers.md)
+- [Accessibility Levels](./accessibility-levels.md)
+- [Modifiers](./modifiers.md)
+- [public](./public.md)
+- [private](./private.md)
+- [protected](./protected.md)

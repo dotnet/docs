@@ -22,8 +22,8 @@ In C#, arrays are actually objects, and not just addressable regions of contiguo
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Arrays](../../../csharp/programming-guide/arrays/index.md)
-- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)
-- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
-- [Jagged Arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)
+- [C# Programming Guide](../index.md)
+- [Arrays](./index.md)
+- [Single-Dimensional Arrays](./single-dimensional-arrays.md)
+- [Multidimensional Arrays](./multidimensional-arrays.md)
+- [Jagged Arrays](./jagged-arrays.md)

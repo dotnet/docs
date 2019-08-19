@@ -45,7 +45,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
   
 - A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.  
   
- Like the [-reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) compiler option, the `-link` compiler option uses the Csc.rsp response file, which references frequently used .NET Framework assemblies. Use the [-noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) compiler option if you do not want the compiler to use the Csc.rsp file.  
+ Like the [-reference](./reference-compiler-option.md) compiler option, the `-link` compiler option uses the Csc.rsp response file, which references frequently used .NET Framework assemblies. Use the [-noconfig](./noconfig-compiler-option.md) compiler option if you do not want the compiler to use the Csc.rsp file.  
   
  The short form of `-link` is `-l`.  
   
@@ -77,9 +77,18 @@ csc -link:COMData1.dll,COMData2.dll -out:OfficeApp.exe OfficeApp.cs
   
 ## See also
 
+<<<<<<< HEAD
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md)
 - [-reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)
 - [-noconfig (C# Compiler Options)](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)
 - [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
 - [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)
+=======
+- [C# Compiler Options](./index.md)
+- [Walkthrough: Embedding Types from Managed Assemblies](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)
+- [-reference (C# Compiler Options)](./reference-compiler-option.md)
+- [-noconfig (C# Compiler Options)](./noconfig-compiler-option.md)
+- [Command-line Building With csc.exe](./command-line-building-with-csc-exe.md)
+- [Interoperability Overview](../../programming-guide/interop/interoperability-overview.md)
+>>>>>>> adbcb8dc1f483ec6564cdf29b438adef404ed066

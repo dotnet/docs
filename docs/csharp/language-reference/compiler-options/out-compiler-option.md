@@ -60,6 +60,11 @@ csc t.cs -out:mymodule.netmodule -target:module t2.cs
   
 ## See also
 
+<<<<<<< HEAD
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Friend Assemblies](../../../standard/assembly/friend.md)
+=======
+- [C# Compiler Options](./index.md)
+- [Friend Assemblies](../../../standard/assembly/friend-assemblies.md)
+>>>>>>> adbcb8dc1f483ec6564cdf29b438adef404ed066
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

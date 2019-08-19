@@ -13,7 +13,7 @@ You might want to find all siblings of a node that have a specific name. The res
 ## Example  
  This example first finds a `Book` element, and then finds all sibling elements named `Book`. The resulting collection includes the context node.  
   
- This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).  
   
 ```csharp  
 XDocument books = XDocument.Load("Books.xml");  

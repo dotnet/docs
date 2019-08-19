@@ -13,7 +13,7 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  [!code-csharp[csProgGuideArrays#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#4)]  
   
- This array contains the elements from `array[0]` to `array[4]`. The [new](../../../csharp/language-reference/operators/new-operator.md) operator is used to create the array and initialize the array elements to their default values. In this example, all the array elements are initialized to zero.  
+ This array contains the elements from `array[0]` to `array[4]`. The [new](../../language-reference/operators/new-operator.md) operator is used to create the array and initialize the array elements to their default values. In this example, all the array elements are initialized to zero.  
   
  An array that stores string elements can be declared in the same way. For example:  
   
@@ -39,7 +39,7 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  [!code-csharp[csProgGuideArrays#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#9)]  
   
- C# 3.0 introduces implicitly typed arrays. For more information, see [Implicitly Typed Arrays](../../../csharp/programming-guide/arrays/implicitly-typed-arrays.md).  
+ C# 3.0 introduces implicitly typed arrays. For more information, see [Implicitly Typed Arrays](./implicitly-typed-arrays.md).  
   
 ## Value Type and Reference Type Arrays
 
@@ -49,12 +49,12 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  The result of this statement depends on whether `SomeType` is a value type or a reference type. If it is a value type, the statement creates an array of 10 elements, each of which has the type `SomeType`. If `SomeType` is a reference type, the statement creates an array of 10 elements, each of which is initialized to a null reference.  
   
- For more information about value types and reference types, see [Types](../../../csharp/language-reference/keywords/types.md).  
+ For more information about value types and reference types, see [Types](../../language-reference/keywords/types.md).  
   
 ## See also
 
 - <xref:System.Array>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Arrays](../../../csharp/programming-guide/arrays/index.md)
-- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
-- [Jagged Arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)
+- [C# Programming Guide](../index.md)
+- [Arrays](./index.md)
+- [Multidimensional Arrays](./multidimensional-arrays.md)
+- [Jagged Arrays](./jagged-arrays.md)

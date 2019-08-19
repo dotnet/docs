@@ -1,9 +1,9 @@
 ---
-title: "How to: Create and Use Assemblies Using the Command Line (C#)"
-ms.date: 07/20/2015
+title: "How to: Create and use assemblies using the command line (C#)"
+ms.date: 08/19/2019
 ms.assetid: 408ddce3-89e3-4e12-8353-34a49beeb72b
 ---
-# How to: Create and Use Assemblies Using the Command Line (C#)
+# How to: Create and use assemblies using the command line (C#)
 An assembly, or a dynamic linking library (DLL), is linked to your program at run time. To demonstrate building and using a DLL, consider the following scenario:  
   
 - `MathLibrary.DLL`: The library file that contains the methods to be called at run time. In this example, the DLL contains two methods, `Add` and `Multiply`.  
@@ -99,6 +99,6 @@ UtilityMethods.MultiplyClass.Multiply(num1, num2);
   
 ## See also
 
-- [C# Programming Guide](../../csharp/programming-guide/index.md)
+- [C# programming guide](../../csharp/programming-guide/index.md)
 - [Assemblies in .NET](index.md)
-- [Creating a Class to Hold DLL Functions](../../framework/interop/creating-a-class-to-hold-dll-functions.md)
+- [Create a class to hold DLL functions](../../framework/interop/creating-a-class-to-hold-dll-functions.md)

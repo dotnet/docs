@@ -70,7 +70,7 @@ protected override void Finalize()
   
 - [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)  
   
-- [using Statement](../../../csharp/language-reference/keywords/using-statement.md)  
+- [using Statement](../../language-reference/keywords/using-statement.md)  
   
 ## Example  
  The following example creates three classes that make a chain of inheritance. The class `First` is the base class, `Second` is derived from `First`, and `Third` is derived from `Second`. All three have finalizers. In `Main`, an instance of the most-derived class is created. When the program runs, notice that the finalizers for the three classes are called automatically, and in order, from the most-derived to the least-derived.  
@@ -84,6 +84,6 @@ For more information, see the [Destructors](~/_csharplang/spec/classes.md#destru
 ## See also
 
 - <xref:System.IDisposable>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
+- [C# Programming Guide](../index.md)
+- [Constructors](./constructors.md)
 - [Garbage Collection](../../../standard/garbage-collection/index.md)

@@ -27,7 +27,7 @@ Use **-delaysign-** if you want a fully signed assembly. Use **-delaysign+** if 
 
 ## Remarks
 
-The **-delaysign** option has no effect unless used with [-keyfile](../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md) or [-keycontainer](../../../csharp/language-reference/compiler-options/keycontainer-compiler-option.md).
+The **-delaysign** option has no effect unless used with [-keyfile](./keyfile-compiler-option.md) or [-keycontainer](./keycontainer-compiler-option.md).
 
 The **-delaysign** and **-publicsign** options are mutually exclusive.
 

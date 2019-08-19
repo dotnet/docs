@@ -66,13 +66,13 @@ long num = Convert.ToInt64(s);
 > [!NOTE]
 >  When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
   
- For more examples about how to use command-line arguments, see [How to: Create and Use Assemblies Using the Command Line](../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).  
+ For more examples about how to use command-line arguments, see [How to: Create and Use Assemblies Using the Command Line](../concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).  
   
 ## See also
 
 - <xref:System.Environment?displayProperty=nameWithType>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)
-- [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
-- [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)
-- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [C# Programming Guide](../index.md)
+- [Main() and Command-Line Arguments](./index.md)
+- [How to: Display Command Line Arguments](./how-to-display-command-line-arguments.md)
+- [Main() Return Values](./main-return-values.md)
+- [Classes](../classes-and-structs/classes.md)

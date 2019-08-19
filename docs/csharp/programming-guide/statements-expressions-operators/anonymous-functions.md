@@ -28,7 +28,7 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
   
 ## See also
 
-- [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)
-- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [Statements, Expressions, and Operators](./index.md)
+- [Lambda Expressions](./lambda-expressions.md)
+- [Delegates](../delegates/index.md)
 - [Expression Trees (C#)](../concepts/expression-trees/index.md)

@@ -16,7 +16,7 @@ The topic describes methods to enable interoperability between C# managed code a
 ## Platform Invoke  
  *Platform invoke* is a service that enables managed code to call unmanaged functions that are implemented in dynamic link libraries (DLLs), such as those in the Microsoft Windows API. It locates and invokes an exported function and marshals its arguments (integers, strings, arrays, structures, and so on) across the interoperation boundary as needed.  
   
- For more information, see [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md) and [How to: Use Platform Invoke to Play a Wave File](../../../csharp/programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md).  
+ For more information, see [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md) and [How to: Use Platform Invoke to Play a Wave File](./how-to-use-platform-invoke-to-play-a-wave-file.md).  
   
 > [!NOTE]
 >  The [Common Language Runtime](../../../standard/clr.md) (CLR) manages access to system resources. Calling unmanaged code that is outside the CLR bypasses this security mechanism, and therefore presents a security risk. For example, unmanaged code might call resources in unmanaged code directly, bypassing CLR security mechanisms. For more information, see [Security in .NET](../../../standard/security/index.md).  
@@ -31,13 +31,13 @@ The topic describes methods to enable interoperability between C# managed code a
   
 2. Add to the project a reference to the COM component or type library.  
   
-     When you add the reference, Visual Studio uses the [Tlbimp.exe (Type Library Importer)](../../../../docs/framework/tools/tlbimp-exe-type-library-importer.md), which takes a type library as input, to output a .NET Framework interop assembly. The assembly, also named a runtime callable wrapper (RCW), contains managed classes and interfaces that wrap the COM classes and interfaces that are in the type library. Visual Studio adds to the project a reference to the generated assembly.  
+     When you add the reference, Visual Studio uses the [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md), which takes a type library as input, to output a .NET Framework interop assembly. The assembly, also named a runtime callable wrapper (RCW), contains managed classes and interfaces that wrap the COM classes and interfaces that are in the type library. Visual Studio adds to the project a reference to the generated assembly.  
   
 3. Create an instance of a class that is defined in the RCW. This, in turn, creates an instance of the COM object.  
   
 4. Use the object just as you use other managed objects. When the object is reclaimed by garbage collection, the instance of the COM object is also released from memory.  
   
- For more information, see [Exposing COM Components to the .NET Framework](../../../../docs/framework/interop/exposing-com-components.md).  
+ For more information, see [Exposing COM Components to the .NET Framework](../../../framework/interop/exposing-com-components.md).  
   
 ## Exposing C# to COM  
  COM clients can consume C# types that have been correctly exposed. The basic steps to expose C# types are as follows:  
@@ -48,15 +48,15 @@ The topic describes methods to enable interoperability between C# managed code a
   
 2. Generate a COM type library and register it for COM usage.  
   
-     You can modify Visual C# project properties to automatically register the C# assembly for COM interop. Visual Studio uses the [Regasm.exe (Assembly Registration Tool)](../../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
+     You can modify Visual C# project properties to automatically register the C# assembly for COM interop. Visual Studio uses the [Regasm.exe (Assembly Registration Tool)](../../../framework/tools/regasm-exe-assembly-registration-tool.md), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
   
- For more information, see [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md) and [Example COM Class](../../../csharp/programming-guide/interop/example-com-class.md).  
+ For more information, see [Exposing .NET Framework Components to COM](../../../framework/interop/exposing-dotnet-components-to-com.md) and [Example COM Class](./example-com-class.md).  
   
 ## See also
 
 - [Improving Interop Performance](https://docs.microsoft.com/previous-versions/msp-n-p/ff647812%28v=pandp.10%29)
 - [Introduction to Interoperability between COM and .NET](/office/client-developer/outlook/pia/introduction-to-interoperability-between-com-and-net)
-- [Introduction to COM Interop in Visual Basic](../../../../docs/visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)
-- [Marshaling between Managed and Unmanaged Code](../../../../docs/framework/interop/interop-marshaling.md)
-- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Introduction to COM Interop in Visual Basic](../../../visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)
+- [Marshaling between Managed and Unmanaged Code](../../../framework/interop/interop-marshaling.md)
+- [Interoperating with Unmanaged Code](../../../framework/interop/index.md)
+- [C# Programming Guide](../index.md)

@@ -166,7 +166,7 @@ The following example uses `dynamic` in several declarations. The `Main` method 
 
 - [C# Reference](../index.md)
 - [C# Keywords](../keywords/index.md)
-- [Events](../../../csharp/programming-guide/events/index.md)
+- [Events](../../programming-guide/events/index.md)
 - [Using Type dynamic](../../programming-guide/types/using-type-dynamic.md)
 - [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)
 - [Basic String Operations](../../../standard/base-types/basic-string-operations.md)

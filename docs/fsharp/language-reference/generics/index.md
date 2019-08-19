@@ -91,6 +91,6 @@ There are two kinds of type parameters that can be used in F# programs. The firs
 - [Language Reference](../index.md)
 - [Types](../fsharp-types.md)
 - [Statically Resolved Type Parameters](statically-resolved-type-parameters.md)
-- [Generics in the .NET Framework](../../../standard/generics/index.md)
+- [Generics](../../../standard/generics/index.md)
 - [Automatic Generalization](automatic-generalization.md)
 - [Constraints](constraints.md)

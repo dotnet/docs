@@ -9,11 +9,11 @@ ms.author: "mairaw"
 ---
 # How to debug CLR activation issues
 
-If you encounter problems in getting your application to run with the correct version of the common language runtime (CLR), you can view and debug CLR activation logs. These logs can be very useful in determining the root cause of an activation issue, when your application either loads a different CLR version than expected or doesn't load the CLR at all. The [.NET Framework Initialization Errors: Managing the User Experience](../../../docs/framework/deployment/initialization-errors-managing-the-user-experience.md) discusses the experience when no CLR is found for an application.
+If you encounter problems in getting your application to run with the correct version of the common language runtime (CLR), you can view and debug CLR activation logs. These logs can be very useful in determining the root cause of an activation issue, when your application either loads a different CLR version than expected or doesn't load the CLR at all. The [.NET Framework Initialization Errors: Managing the User Experience](initialization-errors-managing-the-user-experience.md) discusses the experience when no CLR is found for an application.
 
 CLR activation logging can be enabled system-wide by using an HKEY_LOCAL_MACHINE registry key or a system environment variable. The log will be generated until the registry entry or the environment variable is removed. Alternatively, you can use a user or process-local environment variable to enable logging with a different scope and duration.
 
-CLR activation logs shouldn't be confused with [assembly binding logs](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md), which are entirely different.
+CLR activation logs shouldn't be confused with [assembly binding logs](../tools/fuslogvw-exe-assembly-binding-log-viewer.md), which are entirely different.
 
 ## To enable CLR activation logging
 
@@ -100,13 +100,13 @@ In the following example of an activation log, the most useful information is hi
     532,205950.382,Installed Runtime: v4.0.30319. VERSION_ARCHITECTURE: 0
     ```
 
-- **built with version** is the version of the CLR that was used to build the binary that was provided to a method such as [ICLRMetaHostPolicy::GetRequestedRuntime](../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md).
+- **built with version** is the version of the CLR that was used to build the binary that was provided to a method such as [ICLRMetaHostPolicy::GetRequestedRuntime](../unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md).
 
     ```
     532,205950.382,C:\Tests\myapp.exe was built with version: v2.0.50727
     ```
 
-- **feature-on-demand installation** refers to enabling the .NET Framework 3.5 on Windows 8. See [.NET Framework Initialization Errors: Managing the User Experience](../../../docs/framework/deployment/initialization-errors-managing-the-user-experience.md) for more information about this scenario.
+- **feature-on-demand installation** refers to enabling the .NET Framework 3.5 on Windows 8. See [.NET Framework Initialization Errors: Managing the User Experience](initialization-errors-managing-the-user-experience.md) for more information about this scenario.
 
     ```
     532,205950.398,Launching feature-on-demand installation. CmdLine: C:\Windows\system32\fondue.exe /enable-feature:NetFx3
@@ -114,5 +114,5 @@ In the following example of an activation log, the most useful information is hi
 
 ## See also
 
-- [Deployment](../../../docs/framework/deployment/index.md)
-- [How to: Configure an app to support .NET Framework 4 or later versions](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
+- [Deployment](index.md)
+- [How to: Configure an app to support .NET Framework 4 or later versions](../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)

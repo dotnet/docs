@@ -8,4 +8,5 @@ ms.author: adegeo
 
 # Do something
 
-First paragraph
+TODO
+Welcome to the Desktop Guide!

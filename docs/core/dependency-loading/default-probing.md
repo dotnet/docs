@@ -13,7 +13,7 @@ The <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=n
 
 When the runtime is started, the runtime host provides a set of named probing properties that configure <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> probe paths.
 
-Each probing property is optional.  If present, each contains a ':' separated list of absolute paths.
+Each probing property is optional.  If present, each property contains a delimited list of absolute paths. The list is stored as a single string with a delimiter separating the paths.  The delimiter is ';' on Windows and ':' on all other platforms.
 
 |Property Name                 |Description  |
 |------------------------------|---------|
@@ -36,7 +36,7 @@ Additionally the `*.deps.json` files for any referenced frameworks are similarly
 
 Each property is available by calling the <xref:AppContext.GetData(string)?displayProperty=nameWithType> function with any Property Name from the table above.
 
-### How to I debug the probing properties' construction?
+### How do I debug the probing properties' construction?
 
 The .NET Core runtime host will output useful trace messages when certain environment variables are enabled:
 

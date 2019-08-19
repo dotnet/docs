@@ -15,8 +15,8 @@ ms.author: "mairaw"
 
 Clears all previously defined settings in a section.
 
-[**\<configuration>**](./configuration-element.md)   
-&nbsp;&nbsp;[**\<sectionName>**](./custom-element-2.md)   
+[**\<configuration>**](configuration-element.md)   
+&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax
@@ -33,7 +33,7 @@ None
 
 |     | Description |
 | --- | ------------|
-| [**\<sectionName>** Element](./custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+| [**\<sectionName>** Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements
 
@@ -79,4 +79,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](./index.md)
+- [Configuration file schema for the .NET Framework](index.md)

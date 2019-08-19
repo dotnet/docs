@@ -34,13 +34,13 @@ For information about the types, format, and location of configuration files, se
 
 ## In this section
 
-[**\<configuration>** Element](./configuration-element.md)
+[**\<configuration>** Element](configuration-element.md)
 Describes the `<configuration>` element, which is the top-level element for all configuration files.
 
-[**\<assemblyBinding>** Element](./assemblybinding-element-for-configuration.md)
+[**\<assemblyBinding>** Element](assemblybinding-element-for-configuration.md)
 Specifies assembly binding policy at the configuration level.
 
-[**\<linkedConfiguration>** Element](./linkedconfiguration-element.md)
+[**\<linkedConfiguration>** Element](linkedconfiguration-element.md)
 Specifies a configuration file to include.
 
 [Startup Settings Schema](./startup/index.md)
@@ -55,7 +55,7 @@ Describes the elements that specify how the .NET Framework connects to the Inter
 [Cryptography Settings Schema](./cryptography/index.md)
 Describes elements that map friendly algorithm names to classes that implement cryptography algorithms.
 
-[Configuration Sections Schema](./configuration-sections-schema.md)
+[Configuration Sections Schema](configuration-sections-schema.md)
 Describes the elements used to create and use configuration sections for custom settings.
 
 [Trace and Debug Settings Schema](./trace-debug/index.md)
@@ -64,7 +64,7 @@ Describes the elements that specify trace switches and listeners.
 [Compiler and Language Provider Settings Schema](./compiler/index.md)
 Describes the elements that specify compiler configuration for available language providers.
 
-[Application Settings Schema](./application-settings-schema.md)
+[Application Settings Schema](application-settings-schema.md)
 Describes the elements that enable a Windows Forms or ASP.NET application to store and retrieve application-scoped and user-scoped settings.
 
 [App Settings Schema](./appsettings/index.md)

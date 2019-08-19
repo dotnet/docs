@@ -25,9 +25,9 @@ This article provides links for installing all versions of the .NET Framework fr
 For more information about versions of the .NET Framework and how to determine which versions are installed on a computer, see [Versions and Dependencies](../migration-guide/versions-and-dependencies.md) and [How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md).
 
 > [!NOTE]
-> For information on the .NET Framework 3.5, see [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](./dotnet-35-windows-10.md).
+> For information on the .NET Framework 3.5, see [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](dotnet-35-windows-10.md).
 
-Use the following table for quick links, or read further for details. To view the system requirements for the .NET Framework before installation, see [System Requirements](../get-started/system-requirements.md). For help with troubleshooting, see [Troubleshooting](./troubleshoot-blocked-installations-and-uninstallations.md).
+Use the following table for quick links, or read further for details. To view the system requirements for the .NET Framework before installation, see [System Requirements](../get-started/system-requirements.md). For help with troubleshooting, see [Troubleshooting](troubleshoot-blocked-installations-and-uninstallations.md).
 
 |.NET Framework version|Developer installation|Redistributable installation|Platform support|
 |----------------------------|----------------------------|----------------------------------|----------------------|
@@ -141,7 +141,7 @@ Both web and offline installers are designed for x86-based and x64-based compute
 1. If you want to download resources for additional languages, follow the instructions in the next section to install one or more language packs.
 
 > [!NOTE]
-> If you encounter any problems during the installation, see [Troubleshooting](./troubleshoot-blocked-installations-and-uninstallations.md).
+> If you encounter any problems during the installation, see [Troubleshooting](troubleshoot-blocked-installations-and-uninstallations.md).
 
 **Installation notes:**
 
@@ -235,5 +235,5 @@ The following table lists the supported languages.
 
 - [Deployment Guide for Developers](../deployment/deployment-guide-for-developers.md)
 - [Deployment Guide for Administrators](../deployment/guide-for-administrators.md)
-- [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](./dotnet-35-windows-10.md)
-- [Troubleshoot Blocked .NET Framework Installations and Uninstallations](./troubleshoot-blocked-installations-and-uninstallations.md)
+- [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](dotnet-35-windows-10.md)
+- [Troubleshoot Blocked .NET Framework Installations and Uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)

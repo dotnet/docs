@@ -15,20 +15,20 @@ ms.author: "mairaw"
 
 # Configuration sections schema
 
-The configuration sections schema contains elements that define custom settings in configuration files. For general information on configuration files and schemas, see [Configuration file schema for the .NET Framework](./index.md).
+The configuration sections schema contains elements that define custom settings in configuration files. For general information on configuration files and schemas, see [Configuration file schema for the .NET Framework](index.md).
 
-[**\<configuration>**](./configuration-element.md)   
-[**\<configSections>**](./configsections-element-for-configuration.md)   
-[**\<clear>**](./clear-element-for-configsections.md)   
-[**\<remove>**](./remove-element-for-configsections.md)   
-[**\<section>**](./section-element.md)   
-[**\<sectionGroup>**](./sectiongroup-element-for-configsections.md)
+[**\<configuration>**](configuration-element.md)   
+[**\<configSections>**](configsections-element-for-configuration.md)   
+[**\<clear>**](clear-element-for-configsections.md)   
+[**\<remove>**](remove-element-for-configsections.md)   
+[**\<section>**](section-element.md)   
+[**\<sectionGroup>**](sectiongroup-element-for-configsections.md)
 
 |     | Description |
 | --- | ----------- |
-| [**\<clear>** for **\<configSections>**](./clear-element-for-configsections.md) | Clears all previously defined sections and section groups. |
-| [**\<clear>**](./clear-element-for-configsections.md) | Clears all previously defined sections and section groups. |
-| [**\<configSections>**](./configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
-| [**\<remove>** for **\<configSections>**](./remove-element-for-configsections.md) | Removes a predefined section or section group. |
-| [**\<section>** for **\<configSections>** and **\<sectionGroup>**](./section-element.md) | Contains a configuration section declaration. |
-| [**\<sectionGroup>** for **\<configSections>**](./sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
+| [**\<clear>** for **\<configSections>**](clear-element-for-configsections.md) | Clears all previously defined sections and section groups. |
+| [**\<clear>**](clear-element-for-configsections.md) | Clears all previously defined sections and section groups. |
+| [**\<configSections>**](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| [**\<remove>** for **\<configSections>**](remove-element-for-configsections.md) | Removes a predefined section or section group. |
+| [**\<section>** for **\<configSections>** and **\<sectionGroup>**](section-element.md) | Contains a configuration section declaration. |
+| [**\<sectionGroup>** for **\<configSections>**](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |

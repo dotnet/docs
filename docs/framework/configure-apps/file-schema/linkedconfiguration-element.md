@@ -17,8 +17,8 @@ ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
 
 Specifies a configuration file to include.
 
-[**\<configuration>**](./configuration-element.md)   
-&nbsp;&nbsp;[**\<assemblyBinding>**](./assemblybinding-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)   
+&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-configuration.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<linkedConfiguration>**
 
 ## Syntax
@@ -37,7 +37,7 @@ Specifies a configuration file to include.
 
 |     | Description |
 | --- | ----------- |
-| [**\<assemblyBinding>** Element](./assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level. |
+| [**\<assemblyBinding>** Element](assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level. |
 
 ## Child elements
 
@@ -78,5 +78,5 @@ The following example shows how to include configuration file from the local har
 
 ## See also
 
-- [**\<assemblyBinding>** Element](./assemblybinding-element-for-configuration.md)
-- [Configuration file schema for the .NET Framework](./index.md)
+- [**\<assemblyBinding>** Element](assemblybinding-element-for-configuration.md)
+- [Configuration file schema for the .NET Framework](index.md)

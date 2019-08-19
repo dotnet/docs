@@ -15,7 +15,7 @@ ms.author: "mairaw"
 
 Contains configuration section and namespace declarations.
 
-[**\<configuration>**](./configuration-element.md)   
+[**\<configuration>**](configuration-element.md)   
 &nbsp;&nbsp;**\<configSections>**
 
 ## Attributes
@@ -26,16 +26,16 @@ None
 
 |     | Description |
 | --- | ----------- |
-| [**\<configuration>**](./configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| [**\<configuration>**](configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements
 
 |     | Description |
 | --- | ----------- |
-| [**\<section>**](./section-element.md) | Contains a configuration section declaration. |
-| [**\<sectionGroup>**](./sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
-| [**\<remove>**](./remove-element-for-configsections.md) | Removes a predefined section or section group. |
-| [**\<clear>**](./clear-element-for-configsections.md) | Clears all previously defined sections and section groups. |
+| [**\<section>**](section-element.md) | Contains a configuration section declaration. |
+| [**\<sectionGroup>**](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
+| [**\<remove>**](remove-element-for-configsections.md) | Removes a predefined section or section group. |
+| [**\<clear>**](clear-element-for-configsections.md) | Clears all previously defined sections and section groups. |
 
 ## Remarks
 
@@ -63,4 +63,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](./index.md)
+- [Configuration file schema for the .NET Framework](index.md)

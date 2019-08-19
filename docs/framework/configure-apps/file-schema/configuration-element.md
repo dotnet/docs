@@ -36,13 +36,13 @@ None
 
 |     | Description |
 | --- | ----------- |
-| [**\<assemblyBinding>**](./assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level.|
+| [**\<assemblyBinding>**](assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level.|
 | [**\<startup>** Settings Schema](./startup/index.md) | All elements in the startup settings schema. |
 | [**\<runtime>** Settings Schema](./runtime/index.md) | All elements in the runtime settings schema. |
 | [**\<system.runtime.remoting>** Settings Schema](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/z415cf9a(v=vs.100)) | All elements in the remoting settings schema. |
 | [**\<system.Net>** Settings Schema](./network/index.md) | All elements in the network settings schema. |
 | [**\<cryptographySettings>** Settings Schema](./cryptography/index.md) | All elements in the crypto settings schema. |
-| [**\<configuration>** Sections Schema](./configuration-sections-schema.md) | All elements in the configuration section settings schema. |
+| [**\<configuration>** Sections Schema](configuration-sections-schema.md) | All elements in the configuration section settings schema. |
 | [Trace and Debug Settings Schema](./trace-debug/index.md) | All elements in the trace and debug settings schema. |
 | [ASP.NET Configuration Settings Schema](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)) | All elements in the ASP.NET configuration schema, which includes elements for configuring ASP.NET Web sites and applications. Used in *Web.config* files. |
 | [**\<webServices>** Settings Schema](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cctwteet(v=vs.100)) | All elements in the Web services settings schema. |
@@ -54,4 +54,4 @@ Each configuration file must contain exactly one **\<configuration>** element.
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](./index.md)
+- [Configuration file schema for the .NET Framework](index.md)

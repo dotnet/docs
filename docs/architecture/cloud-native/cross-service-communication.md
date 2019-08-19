@@ -79,6 +79,15 @@ A message queue is an intermediary construct through which a producer and consum
 
 The Azure cloud supports two types of queues: Azure Storage Queues and Azure Service Bus Queues.
 
+### Queue messaging in the Azure cloud
+
+
+
+
+
+
+
+
 ### Azure Storage Queues
 
 Azure storage queues offer a simple queueing infrastructure that is fast, affordable, and backed by Azure storage accounts.
@@ -149,6 +158,19 @@ In Figure 4-17, note how publishers send messages to the topic. But messages are
 
 The Azure cloud supports two types of topic mechanisms: Azure Service Bus Topics and Azure EventGrid.
 
+
+
+### Topic messaging in the Azure cloud
+
+
+
+
+
+
+
+
+
+
 ### Azure Service Bus Topics
 
 Sitting on top of the same robust brokered message model of Azure Service Bus queues are [Azure Service Bus Topics](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). A topic can receive messages from multiple independent publishers and can send messages to up to 2,000 subscribers. As well, subscriptions can be dynamically added or removed at runtime without stopping the system or recreating the topic.
@@ -179,6 +201,16 @@ A major difference between EventGrid and Service Bus is the underlying *message 
 Service Bus implements an older style *pull model* in which the downstream subscriber actively polls the topic subscription for new messages. On the upside, this approach gives the subscriber full control of the pace at which it processes messages as it controls when and how many messages it wants to process at any given time. Unread messages remain in the subscription until processed. A significant shortcoming of this approach is the latency between the time the event is generated and the polling operation that pulls that message to the subscriber for processing. Also, the overhead of constant polling for the next event needlessly consumes resources and money.
 
 EventGrid, however, is different. It implements a *push model* in which events are sent to the EventHandlers as received, giving you near real-time event delivery. It also reduces cost as code is triggered only when it's needed to consume an event – not continually as with polling. That said, an event handler must be able to handle the incoming load and provide throttling mechanisms to protect itself from becoming overwhelmed. Many Azure services that consume these events, such as Azure Functions, Logic Apps, and so on, support automatic autoscaling capabilities that can handle the required processing capacity.  Most interestingly, Event Grid is a fully managed serverless cloud service. It dynamically scales based on your traffic and charges you only for your actual usage, not pre-purchased capacity. The first 100,000 operations per month are free – operations being defined as event ingress (incoming event notifications), subscription delivery attempts, management calls, and filtering by subject. With 99.99% availability, EventGrid guarantees the delivery of an event within a 24-hour period, with built-in retry functionality for unsuccessful delivery. Undelivered messages can be moved to a "dead-letter" queue for resolution.  Unlike Azure Service Bus, Event Grid is tuned for fast performance and doesn't support features like ordered messaging, transactions, and sessions.
+
+
+
+
+
+### Streaming messages in the Azure cloud
+
+
+
+
 
 ### Azure Event Hubs
 

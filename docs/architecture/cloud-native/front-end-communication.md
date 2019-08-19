@@ -6,7 +6,14 @@ ms.date: 06/30/2019
 
 # Front-end client communication
 
-Cloud native applications expose channels to enable communication with front-end client applications, including mobile, web, or desktop applications.
+Front-end client applications (mobile, web, or desktop applications) require a channel to communication  
+
+
+
+
+Cloud native applications expose channels that enable communication with front-end client applications, including mobile, web, or desktop applications.
+
+There are two common approaches. 
 
 To keep things simple, a front-end client could directly communicate with back-end microservices, shown in Figure 4-2:
 

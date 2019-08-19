@@ -96,7 +96,7 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 |[Strong-named assemblies](strong-named.md)|Characteristics of strong-named assemblies.|  
 |[Assembly security considerations](security-considerations.md)|How security works with assemblies.|  
 |[Assembly versioning](versioning.md)|Overview of the .NET Framework versioning policy.|  
-|[Assembly placement](placement.md)|Where to locate assemblies.|  
+|[Assembly placement](../../framework/app-domains/assembly-placement.md)|Where to locate assemblies.|  
 |[Assemblies and side-by-side execution](side-by-side-execution.md)|Use multiple versions of the runtime or an assembly simultaneously.|  
 |[Program with assemblies](program.md)|How to create, sign, and set attributes on assemblies.|  
 |[Emit dynamic methods and assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)|How to create dynamic assemblies.|  

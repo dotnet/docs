@@ -46,4 +46,4 @@ The cryptography settings schema contains elements that specify how to map frien
 ## See also
 
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)

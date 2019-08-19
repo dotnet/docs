@@ -36,7 +36,7 @@ ms.author: "mairaw"
   
  You should consider explicitly enabling use by partially trusted code for the following types of code:  
   
-- Code that has been diligently tested for security vulnerabilities and is in compliance with the guidelines described in [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md).  
+- Code that has been diligently tested for security vulnerabilities and is in compliance with the guidelines described in [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md).  
   
 - Strong-named code libraries that are specifically written for partially trusted scenarios.  
   

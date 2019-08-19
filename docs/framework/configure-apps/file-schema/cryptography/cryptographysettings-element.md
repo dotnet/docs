@@ -74,4 +74,4 @@ Contains cryptography settings.
 
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)

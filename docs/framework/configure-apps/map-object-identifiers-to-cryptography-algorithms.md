@@ -37,4 +37,4 @@ Digital signatures ensure that data is not tampered with when it is sent from on
 ## See also
 
 - [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](../../standard/security/cryptographic-services.md)

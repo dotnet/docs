@@ -69,4 +69,4 @@ Specifies whether to enforce a computer configuration requirement that cryptogra
 
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Cryptography Model](../../../../../docs/standard/security/cryptography-model.md)
+- [Cryptography Model](../../../../standard/security/cryptography-model.md)

@@ -75,6 +75,6 @@ Contains a list of cryptography classes that have a mapping to a friendly name i
 - <xref:System.Security.Cryptography>
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
 - [System.Security.Cryptography.CryptoConfig.CreateFromName](Overload:System.Security.Cryptography.CryptoConfig.CreateFromName)
 - [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

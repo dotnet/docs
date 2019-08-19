@@ -56,7 +56,7 @@ The `remove` element removes regular expressions describing IP addresses or DNS 
 
 The value for the `address` attribute should be a regular expression that describes a set of IP addresses or host names.
 
-For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../../docs/standard/base-types/regular-expressions.md).
+For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../standard/base-types/regular-expressions.md).
 
 ## Configuration Files
 

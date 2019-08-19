@@ -50,5 +50,5 @@ public static string ReadData()
   
 ## See also
 
-- [Attributes](../../../docs/standard/attributes/index.md)
+- [Attributes](../../standard/attributes/index.md)
 - [Code Access Security](../../../docs/framework/misc/code-access-security.md)

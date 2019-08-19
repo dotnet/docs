@@ -32,7 +32,7 @@ This topic explains how to write libraries for .NET using cross-platform CLI too
 [Additions to the *csproj* format for .NET Core](../tools/csproj.md)   
 This article outlines the changes that were added to the project file as part of the move to *csproj* and MSBuild.
 
-[Porting to .NET Core - Analyzing your Third-Party Party Dependencies](./third-party-deps.md)   
+[Porting to .NET Core - Analyzing your Third-Party Party Dependencies](third-party-deps.md)   
 This topic discusses the portability of third-party dependencies and what to do when a NuGet package dependency doesn't run on .NET Core.
 
 ## Retargeting your .NET Framework code to .NET Framework 4.7.2

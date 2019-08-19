@@ -140,7 +140,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 <a name="LayoutSystem_whatsnext"></a>   
 ## What's Next  
- Understanding how elements are measured and arranged is the first step in understanding layout. For more information about the available <xref:System.Windows.Controls.Panel> elements, see [Panels Overview](../controls/panels-overview.md). To better understand the various positioning properties that can affect layout, see [Alignment, Margins, and Padding Overview](alignment-margins-and-padding-overview.md). For an example of a custom <xref:System.Windows.Controls.Panel> element, see [Custom Radial Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159982). When you are ready to put it all together in a lightweight application, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
+ Understanding how elements are measured and arranged is the first step in understanding layout. For more information about the available <xref:System.Windows.Controls.Panel> elements, see [Panels Overview](../controls/panels-overview.md). To better understand the various positioning properties that can affect layout, see [Alignment, Margins, and Padding Overview](alignment-margins-and-padding-overview.md). When you are ready to put it all together in a lightweight application, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
 ## See also
 

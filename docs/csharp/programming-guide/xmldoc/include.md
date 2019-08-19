@@ -86,5 +86,5 @@ The summary for this other type.
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+- [C# Programming Guide](../index.md)
+- [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md)

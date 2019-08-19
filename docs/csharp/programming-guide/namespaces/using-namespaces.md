@@ -87,8 +87,8 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
-- [. operator](../../../csharp/language-reference/operators/member-access-operators.md#member-access-operator-)
-- [:: operator](../../../csharp/language-reference/operators/namespace-alias-qualifier.md)
-- [extern alias](../../../csharp/language-reference/keywords/extern-alias.md)
+- [C# Programming Guide](../index.md)
+- [Namespaces](./index.md)
+- [. operator](../../language-reference/operators/member-access-operators.md#member-access-operator-)
+- [:: operator](../../language-reference/operators/namespace-alias-qualifier.md)
+- [extern alias](../../language-reference/keywords/extern-alias.md)

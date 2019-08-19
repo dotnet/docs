@@ -43,17 +43,17 @@ The C# language's exception handling features help you deal with any unexpected 
 ## Related Sections  
  See the following topics for more information about exceptions and exception handling:  
   
-- [Using Exceptions](../../../csharp/programming-guide/exceptions/using-exceptions.md)  
+- [Using Exceptions](./using-exceptions.md)  
   
-- [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)  
+- [Exception Handling](./exception-handling.md)  
   
-- [Creating and Throwing Exceptions](../../../csharp/programming-guide/exceptions/creating-and-throwing-exceptions.md)  
+- [Creating and Throwing Exceptions](./creating-and-throwing-exceptions.md)  
   
-- [Compiler-Generated Exceptions](../../../csharp/programming-guide/exceptions/compiler-generated-exceptions.md)  
+- [Compiler-Generated Exceptions](./compiler-generated-exceptions.md)  
   
-- [How to: Handle an Exception Using try/catch (C# Programming Guide)](../../../csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md)  
+- [How to: Handle an Exception Using try/catch (C# Programming Guide)](./how-to-handle-an-exception-using-try-catch.md)  
   
-- [How to: Execute Cleanup Code Using finally](../../../csharp/programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md)  
+- [How to: Execute Cleanup Code Using finally](./how-to-execute-cleanup-code-using-finally.md)  
   
 ## C# Language Specification  
 
@@ -62,10 +62,10 @@ For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) in the 
 ## See also
 
 - <xref:System.SystemException>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [throw](../../../csharp/language-reference/keywords/throw.md)
-- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)
-- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)
-- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)
+- [C# Programming Guide](../index.md)
+- [C# Keywords](../../language-reference/keywords/index.md)
+- [throw](../../language-reference/keywords/throw.md)
+- [try-catch](../../language-reference/keywords/try-catch.md)
+- [try-finally](../../language-reference/keywords/try-finally.md)
+- [try-catch-finally](../../language-reference/keywords/try-catch-finally.md)
 - [Exceptions](../../../standard/exceptions/index.md)

@@ -18,7 +18,7 @@ An important aspect of pure functional transformations is learning how to refact
   
  One way of transitioning to functional programming is to refactor existing code to eliminate unnecessary side effects and external dependencies. In this way, you can create pure function versions of existing code.  
   
- This topic discusses what a pure function is and what it is not. The [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md) tutorial shows how to manipulate a WordprocessingML document, and includes two examples of how to refactor using a pure function.  
+ This topic discusses what a pure function is and what it is not. The [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](./shape-of-wordprocessingml-documents.md) tutorial shows how to manipulate a WordprocessingML document, and includes two examples of how to refactor using a pure function.  
   
 ## Eliminating Side Effects and External Dependencies  
  The following examples contrast two non-pure functions and a pure function.  
@@ -104,9 +104,9 @@ class Program
 ## Standard Query Operators  
  An important characteristic of the standard query operators is that they are implemented as pure functions.  
   
- For more information, see [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md).  
+ For more information, see [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md).  
   
 ## See also
 
-- [Introduction to Pure Functional Transformations (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
-- [Functional Programming vs. Imperative Programming (C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md)
+- [Introduction to Pure Functional Transformations (C#)](./introduction-to-pure-functional-transformations.md)
+- [Functional Programming vs. Imperative Programming (C#)](./functional-programming-vs-imperative-programming.md)

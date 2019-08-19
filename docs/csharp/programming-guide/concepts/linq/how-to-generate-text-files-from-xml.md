@@ -7,9 +7,9 @@ ms.assetid: 9ad283f7-7cac-42ff-bf32-92aa866e6883
 This example shows how to generate a comma-separated values (CSV) file from an XML file.  
   
 ## Example  
- The C# version of this example uses method syntax and the `Aggregate` operator to generate a CSV file from an XML document in a single expression. For more information, see [Query Syntax and Method Syntax in LINQ](../../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md).  
+ The C# version of this example uses method syntax and the `Aggregate` operator to generate a CSV file from an XML document in a single expression. For more information, see [Query Syntax and Method Syntax in LINQ](./query-syntax-and-method-syntax-in-linq.md).  
   
- This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
+ This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](./sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
 ```csharp  
 XElement custOrd = XElement.Load("CustomersOrders.xml");  
@@ -49,4 +49,4 @@ LETSS,Let's Stop N Shop,Jaime Yorres,Owner,(415) 555-5938,87 Polk St. Suite 5,Sa
   
 ## See also
 
-- [Projections and Transformations (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+- [Projections and Transformations (LINQ to XML) (C#)](./projections-and-transformations-linq-to-xml.md)

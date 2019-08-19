@@ -29,12 +29,12 @@ ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
   
  The text for the \<param> tag will be displayed in IntelliSense, the Object Browser, and in the Code Comment Web Report.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
  [!code-csharp[csProgGuideDocComments#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#1)]  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+- [C# Programming Guide](../index.md)
+- [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md)

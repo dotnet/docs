@@ -13,22 +13,22 @@ ms.assetid: a18bbd8e-bbf7-49e7-992c-717d0eb1f76f
 # -target (C# Compiler Options)
 The **-target** compiler option can be specified in one of four forms:  
   
- [-target:appcontainerexe](../../../csharp/language-reference/compiler-options/target-appcontainerexe-compiler-option.md)  
+ [-target:appcontainerexe](./target-appcontainerexe-compiler-option.md)  
  To create an .exe file for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
   
- [-target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md)  
+ [-target:exe](./target-exe-compiler-option.md)  
  To create an .exe file.  
   
- [-target:library](../../../csharp/language-reference/compiler-options/target-library-compiler-option.md)  
+ [-target:library](./target-library-compiler-option.md)  
  To create a code library.  
   
- [-target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md)  
+ [-target:module](./target-module-compiler-option.md)  
  To create a module.  
   
- [-target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md)  
+ [-target:winexe](./target-winexe-compiler-option.md)  
  To create a Windows program.  
   
- [-target:winmdobj](../../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md)  
+ [-target:winmdobj](./target-winmdobj-compiler-option.md)  
  To create an intermediate .winmdobj file.  
   
  Unless you specify **-target:module**, **-target** causes a .NET Framework assembly manifest to be placed in an output file. For more information, see [Assemblies in the Common Language Runtime](../../../framework/app-domains/assemblies-in-the-common-language-runtime.md) and [Common Attributes](../../programming-guide/concepts/attributes/common-attributes.md).  
@@ -58,6 +58,6 @@ public class TestClass
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
-- [-subsystemversion (C# Compiler Options)](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)
+- [-subsystemversion (C# Compiler Options)](./subsystemversion-compiler-option.md)

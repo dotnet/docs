@@ -89,5 +89,5 @@ You can unbox the boxed value type to the corresponding nullable type, as the fo
 ## See also
 
 - [Nullable types](index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Programming Guide](../index.md)
 - [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)

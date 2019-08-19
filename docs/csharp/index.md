@@ -46,16 +46,16 @@ There are several sections in the C# Guide. You can read them in order, or jump 
   * The .NET Compiler Platform SDK enables you to write components that analyze code, and suggest or make improvements to that code. In this section, you'll learn how the APIs are organized, and how you can create code that enables rules and practices for your team. You'll also see samples, end-to-end scenarios, and links to other libraries with more examples using these APIs.
 -->
 
-* [C# Programming Guide](../csharp/programming-guide/index.md)
+* [C# Programming Guide](./programming-guide/index.md)
   * Provides information and practical examples about how to use C# language constructs.
 
-* [Walkthroughs](../csharp/walkthroughs.md)
+* [Walkthroughs](./walkthroughs.md)
   * Provides links to programming walkthroughs that use C# and a brief description of each walkthrough.
 
 * [Language Reference](language-reference/index.md)
   * This section contains the reference material on the C# language. This material helps you understand the syntax and semantics of C#. It also includes reference material on types, operators, attributes, preprocessor directives, compiler switches, compiler errors, and compiler warnings.
 
-* [C# Language Specification](../csharp/language-reference/language-specification/index.md)
+* [C# Language Specification](./language-reference/language-specification/index.md)
   * Links to the latest versions of the C# language specification.
 
 ## See also

@@ -38,9 +38,9 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  The following are additional C# resources:  
   
-- For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../../csharp/language-reference/language-specification/index.md).  
+- For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../language-reference/language-specification/index.md).  
   
-- For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
+- For detailed information about specific aspects of the C# language, see the [C# Reference](../language-reference/index.md).  
   
 - For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](../programming-guide/concepts/linq/index.md).  
 
@@ -62,5 +62,5 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 ## See also
 
-- [C#](../../csharp/index.md)
+- [C#](../index.md)
 - [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

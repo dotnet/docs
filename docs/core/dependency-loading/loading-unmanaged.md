@@ -11,9 +11,9 @@ Unmanaged libraries are located and loaded with an algorithm involving various s
 
 The following algorithm describes how native libraries are loaded when through `PInvoke`.
 
-## `PInvoke` load unmanaged library algorithm
+## `PInvoke` load library algorithm
 
-1. Determine the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>. For unmanaged the `active` AssemblyLoadContext is the caller of the `PInvoke`.
+1. Determine the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>. For unmanaged load library, the `active` AssemblyLoadContext is the caller of the `PInvoke`.
 
 2. For the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>, try to find the assembly. In priority order by:
     * Checking its cache.
@@ -26,4 +26,4 @@ The following algorithm describes how native libraries are loaded when through `
 
     * Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType> event for the `active` AssemblyLoadContext.
 
-3. If the unmanaged library is newly loaded the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.
+3. If the unmanaged library is newly loaded, the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.

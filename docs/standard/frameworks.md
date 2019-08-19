@@ -11,7 +11,7 @@ ms.technology: dotnet-standard
 
 When you target a framework in an app or library, you're specifying the set of APIs that you'd like to make available to the app or library. You specify the target framework in your project file using Target Framework Monikers (TFMs).
 
-An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET implementations. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across .NET Core and .NET Framework using the same codebase.
+An app or library can target a version of [.NET Standard](./net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET implementations. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across .NET Core and .NET Framework using the same codebase.
 
 An app or library can also target a specific .NET implementation to gain access to implementation-specific APIs. For example, an app that targets Xamarin.iOS (for example, `Xamarin.iOS10`) gets access to Xamarin-provided iOS API wrappers for iOS 10, or an app that targets the Universal Windows Platform (UWP, `uap10.0`) has access to APIs that compile for devices that run Windows 10.
 
@@ -21,7 +21,7 @@ For package-based target frameworks (for example, .NET Standard and .NET Core), 
 
 ## Latest target framework versions
 
-The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
+The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](./net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
 
 | Target Framework      | Latest <br/> Stable Version | Target Framework Moniker (TFM) | Implemented <br/> .NET Standard Version |
 | :-------------------: | :-------------------------: | :----------------------------: | :-------------------------------------: |

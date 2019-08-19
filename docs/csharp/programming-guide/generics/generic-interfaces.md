@@ -43,4 +43,4 @@ It is often useful to define interfaces either for generic collection classes, o
 - [C# Programming Guide](../index.md)
 - [Introduction to Generics](./index.md)
 - [interface](../../language-reference/keywords/interface.md)
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../standard/generics/index.md)

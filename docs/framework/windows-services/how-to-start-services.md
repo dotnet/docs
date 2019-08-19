@@ -21,7 +21,7 @@ After a service is installed, it must be started. Starting calls the <xref:Syste
   
 ### To specify how a service should start  
   
-1. After creating your service, add the necessary installers for it. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
+1. After creating your service, add the necessary installers for it. For more information, see [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md).  
   
 2. In the designer, click the service installer for the service you are working with.  
   
@@ -73,6 +73,6 @@ After a service is installed, it must be started. Starting calls the <xref:Syste
   
 ## See also
 
-- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
-- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
-- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
+- [Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)
+- [How to: Create Windows Services](how-to-create-windows-services.md)
+- [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md)

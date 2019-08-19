@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 3eecdced-3623-403a-a077-7595453a9221
 ---
 # Layout
-This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] layout system. Understanding how and when layout calculations occur is essential for creating user interfaces in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
+This topic describes the Windows Presentation Foundation (WPF) layout system. Understanding how and when layout calculations occur is essential for creating user interfaces in WPF.  
   
  This topic contains the following sections:  
   
@@ -31,7 +31,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 <a name="LayoutSystem_BoundingBox"></a>   
 ## Element Bounding Boxes  
- When thinking about layout in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], it is important to understand the bounding box that surrounds all elements. Each <xref:System.Windows.FrameworkElement> consumed by the layout system can be thought of as a rectangle that is slotted into the layout. The <xref:System.Windows.Controls.Primitives.LayoutInformation> class returns the boundaries of an element's layout allocation, or slot. The size of the rectangle is determined by calculating the available screen space, the size of any constraints, layout-specific properties (such as margin and padding), and the individual behavior of the parent <xref:System.Windows.Controls.Panel> element. Processing this data, the layout system is able to calculate the position of all the children of a particular <xref:System.Windows.Controls.Panel>. It is important to remember that sizing characteristics defined on the parent element, such as a <xref:System.Windows.Controls.Border>, affect its children.  
+ When thinking about layout in WPF, it is important to understand the bounding box that surrounds all elements. Each <xref:System.Windows.FrameworkElement> consumed by the layout system can be thought of as a rectangle that is slotted into the layout. The <xref:System.Windows.Controls.Primitives.LayoutInformation> class returns the boundaries of an element's layout allocation, or slot. The size of the rectangle is determined by calculating the available screen space, the size of any constraints, layout-specific properties (such as margin and padding), and the individual behavior of the parent <xref:System.Windows.Controls.Panel> element. Processing this data, the layout system is able to calculate the position of all the children of a particular <xref:System.Windows.Controls.Panel>. It is important to remember that sizing characteristics defined on the parent element, such as a <xref:System.Windows.Controls.Border>, affect its children.  
   
  The following illustration shows a simple layout.  
   
@@ -95,7 +95,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 <a name="LayoutSystem_PanelsCustom"></a>   
 ## Panel Elements and Custom Layout Behaviors  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes a group of elements that derive from <xref:System.Windows.Controls.Panel>. These <xref:System.Windows.Controls.Panel> elements enable many complex layouts. For example, stacking elements can easily be achieved by using the <xref:System.Windows.Controls.StackPanel> element, while more complex and free flowing layouts are possible by using a <xref:System.Windows.Controls.Canvas>.  
+WPF includes a group of elements that derive from <xref:System.Windows.Controls.Panel>. These <xref:System.Windows.Controls.Panel> elements enable many complex layouts. For example, stacking elements can easily be achieved by using the <xref:System.Windows.Controls.StackPanel> element, while more complex and free flowing layouts are possible by using a <xref:System.Windows.Controls.Canvas>.  
   
  The following table summarizes the available layout <xref:System.Windows.Controls.Panel> elements.  
   
@@ -108,7 +108,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
 |<xref:System.Windows.Controls.VirtualizingPanel>|Provides a framework for <xref:System.Windows.Controls.Panel> elements that virtualize their child data collection. This is an abstract class.|  
 |<xref:System.Windows.Controls.WrapPanel>|Positions child elements in sequential position from left to right, breaking content to the next line at the edge of the containing box. Subsequent ordering occurs sequentially from top to bottom or right to left, depending on the value of the <xref:System.Windows.Controls.WrapPanel.Orientation%2A> property.|  
   
- For applications that require a layout that is not possible by using any of the predefined <xref:System.Windows.Controls.Panel> elements, custom layout behaviors can be achieved by inheriting from <xref:System.Windows.Controls.Panel> and overriding the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods. For an example, see [Custom Radial Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159982).  
+ For applications that require a layout that is not possible by using any of the predefined <xref:System.Windows.Controls.Panel> elements, custom layout behaviors can be achieved by inheriting from <xref:System.Windows.Controls.Panel> and overriding the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods.  
   
 <a name="LayoutSystem_Performance"></a>   
 ## Layout Performance Considerations  
@@ -132,7 +132,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 <a name="LayoutSystem_LayoutRounding"></a>   
 ## Sub-pixel Rendering and Layout Rounding  
- The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's dots per inch (dpi) setting. This provides [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications proper scaling for different dpi settings and makes the application automatically dpi-aware.  
+ The WPF graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's dots per inch (dpi) setting. This provides WPF applications proper scaling for different dpi settings and makes the application automatically dpi-aware.  
   
  However, this dpi independence can create irregular edge rendering because of anti-aliasing. These artifacts, typically seen as blurry or semi-transparent edges, can occur when the location of an edge falls in the middle of a device pixel instead of between device pixels. The layout system provides a way to adjust for this with layout rounding. Layout rounding is where the layout system rounds any non-integral pixel values during the layout pass.  
   

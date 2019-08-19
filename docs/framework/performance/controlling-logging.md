@@ -79,7 +79,7 @@ To turn on logging, a user must specify three things:
 
 ## Viewing CLR ETW Events
 
-Use the commands listed below to view the CLR ETW events. For a description of the events, see [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md).
+Use the commands listed below to view the CLR ETW events. For a description of the events, see [CLR ETW Events](clr-etw-events.md).
 
 ### To view CLR ETW events using Tracerpt
 
@@ -108,4 +108,4 @@ Use the commands listed below to view the CLR ETW events. For a description of t
 ## See also
 
 - [Windows Performance Toolkit](/windows-hardware/test/wpt/)
-- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)
+- [ETW Events in the Common Language Runtime](etw-events-in-the-common-language-runtime.md)

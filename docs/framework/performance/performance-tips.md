@@ -11,7 +11,7 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # .NET Performance Tips
-The term *performance* generally refers to the execution speed of a program. You can sometimes increase execution speed by following certain basic rules in your source code. In some programs, it is important to examine code closely and use profilers to make sure that it is running as fast as possible. In other programs, you do not have to perform such optimization because the code is running acceptably fast as it is written. This article lists some common areas where performance can suffer and tips for improving it as well as links to additional performance topics. For more information about planning and measuring for performance, see [Performance](../../../docs/framework/performance/index.md)  
+The term *performance* generally refers to the execution speed of a program. You can sometimes increase execution speed by following certain basic rules in your source code. In some programs, it is important to examine code closely and use profilers to make sure that it is running as fast as possible. In other programs, you do not have to perform such optimization because the code is running acceptably fast as it is written. This article lists some common areas where performance can suffer and tips for improving it as well as links to additional performance topics. For more information about planning and measuring for performance, see [Performance](index.md)  
   
 ## Boxing and Unboxing  
  It is best to avoid using value types in situations where they must be boxed a high number of times, for example in non-generic collections classes such as <xref:System.Collections.ArrayList?displayProperty=nameWithType>. You can avoid boxing of value types by using generic collections such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Boxing and unboxing are computationally expensive processes. When a value type is boxed, an entirely new object must be created. This can take up to 20 times longer than a simple reference assignment. When unboxing, the casting process can take four times as long as an assignment. For more information, see [Boxing and Unboxing](~/docs/csharp/programming-guide/types/boxing-and-unboxing.md).  
@@ -38,6 +38,6 @@ The term *performance* generally refers to the execution speed of a program. You
   
 ## See also
 
-- [Performance](../../../docs/framework/performance/index.md)
+- [Performance](index.md)
 - [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)
 - [C# Programming Guide](../../csharp/programming-guide/index.md)

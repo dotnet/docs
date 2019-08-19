@@ -114,6 +114,6 @@ EVENT_DESCRIPTOR.Id = 1
 
 ## See also
 
-- [ETW Events in the .NET Framework](../../../docs/framework/performance/etw-events.md)
+- [ETW Events in the .NET Framework](etw-events.md)
 - [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
 - [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

@@ -75,17 +75,12 @@ The following examples show two uses for an empty statement:
   
  [!code-csharp[csProgGuideStatements#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#22)]  
   
-## Related Sections  
-  
-- [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)  
-  
-- [Expressions](../../../csharp/programming-guide/statements-expressions-operators/expressions.md)  
-  
-- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
-  
-## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+## C# language specification
+
+For more information, see the [Statements](~/_csharplang/spec/statements.md) section of the [C# language specification](../language-specification/index.md).
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Programming Guide](../index.md)
+- [Statement keywords](../../language-reference/keywords/statement-keywords.md)  
+- [Expressions](expressions.md)  

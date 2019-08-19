@@ -1,31 +1,38 @@
 ---
 title: "C# operators - C# reference"
-ms.date: 04/30/2019
+ms.date: 08/21/2019
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
-  - "boolean operators [C#]"
-  - "expressions [C#], operators"
-  - "logical operators [C#]"
   - "operators [C#]"
-  - "Visual C#, operators"
-  - "indirection operators [C#]"
-  - "assignment operators [C#]"
-  - "shift operators [C#]"
-  - "relational operators [C#]"
-  - "bitwise operators [C#]"
-  - "address operators [C#]"
-  - "keywords [C#], operators"
-  - "arithmetic operators [C#]"
+  - "operator precedence [C#]"
+  - "operator associativity [C#]"
+  - "expressions [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
 # C# operators (C# reference)
 
-C# provides a number of predefined operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with operands of built-in numeric types and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands.
+C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands. A user-defined type can [overload](operator-overloading.md) certain operators to define the corresponding operation for the operands of that type.
 
-A user-defined type can overload certain operators to define the corresponding behavior for the operands of that type. For more information, see [Operator overloading](operator-overloading.md).
+You use operators and operands to construct [expressions](../../programming-guide/statements-expressions-operators/expressions.md). In an expression, operator precedence and associativity determine the order in which the operations are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
 
-The following table lists the C# operators starting with the highest precedence to the lowest. The operators within each row share the same precedence level.
+## Operator precedence
+
+In an expression with multiple operators, the operators with higher precedence level are evaluated before the operators with lower precedence level. In the following example, the multiplication is performed first, because it has a higher precedence level than addition:
+
+```csharp-interactive
+var a = 2 + 2 * 2;
+Console.WriteLine(a); //  output: 6
+```
+
+Use parentheses to change the order of evaluation imposed by operator precedence:
+
+```csharp-interactive
+var a = (2 + 2) * 2;
+Console.WriteLine(a); //  output: 8
+```
+
+The following table lists the C# operators starting with the highest precedence level to the lowest one. The operators within each row share the same precedence level.
 
 | Operators | Category or name |
 | --------- | ---------------- |
@@ -45,7 +52,30 @@ The following table lists the C# operators starting with the highest precedence 
 | [c ? t : f](conditional-operator.md) | Conditional operator |
 | [x = y](assignment-operator.md), [x += y](arithmetic-operators.md#compound-assignment), [x -= y](arithmetic-operators.md#compound-assignment), [x *= y](arithmetic-operators.md#compound-assignment), [x /= y](arithmetic-operators.md#compound-assignment), [x %= y](arithmetic-operators.md#compound-assignment), [x &= y](boolean-logical-operators.md#compound-assignment), [x &#124;= y](boolean-logical-operators.md#compound-assignment), [x ^= y](boolean-logical-operators.md#compound-assignment), [x <<= y](bitwise-and-shift-operators.md#compound-assignment), [x >>= y](bitwise-and-shift-operators.md#compound-assignment), [=>](lambda-operator.md) | Assignment and lambda declaration |
 
+## Operator associativity
+
+For operators with the same precedence level, associativity of the operators determines the order in which the operations are performed:
+
+- *Left-associative* operators are evaluated from left to right. Except for the [assignment operators](assignment-operator.md) and the [null-coalescing operator](null-coalescing-operator.md), all binary operators are left-associative. For example, `a + b - c` is evaluated as `(a + b) - c`.
+- *Right-associative* operators are evaluated from right to left. The assignment operators, the null-coalescing operator, and the [conditional operator](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
+
+Use parentheses to change the order of evaluation imposed by operator associativity:
+
+```csharp-interactive
+int a = 13 / 5 / 2;
+int b = 13 / (5 / 2);
+Console.WriteLine($"a = {a}, b = {b}");  // output: a = 1, b = 6
+```
+
+## Order of operand evaluation
+
+Text.
+
+## C# language specification
+
+For more information, see the [Operators](~/_csharplang/spec/expressions.md#operators) section of the [C# language specification](../language-specification/index.md).
+
 ## See also
 
 - [C# reference](../index.md)
-- [Operators](../../programming-guide/statements-expressions-operators/operators.md)
+- [Expressions](../../programming-guide/statements-expressions-operators/expressions.md)

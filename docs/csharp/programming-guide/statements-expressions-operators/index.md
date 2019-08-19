@@ -23,8 +23,6 @@ The C# code that comprises an application consists of statements made up of keyw
 
   - [Expression-bodied members](expression-bodied-members.md)
 
-- [Operators](operators.md)
-
 - [Anonymous Functions](anonymous-functions.md)
 
 - [Equality Comparisons](equality-comparisons.md)

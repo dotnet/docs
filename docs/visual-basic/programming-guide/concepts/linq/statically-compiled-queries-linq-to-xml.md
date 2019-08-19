@@ -62,7 +62,7 @@ Next
 Dim reader = Xml.XmlReader.Create("PurchaseOrders.xml")  
 Dim doc As New Xml.XmlDocument()  
 doc.Load(reader)  
-Dim nl As Xml.XmlNodeList = doc.SelectNodes(".//Address[@Type='Shipping']")  
+Dim nl As Xml.XmlNodeList = doc.SelectNodes("./Address[@Type='Shipping']")  
 For Each n As Xml.XmlNode In nl  
     Console.WriteLine(n.OuterXml)  
 Next  

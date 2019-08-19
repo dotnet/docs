@@ -153,6 +153,7 @@ namespace BranchesAndLoops
                 Console.WriteLine("The answer is not greater than 10");
             }
 
+            int c = 4;
             if ((a + b + c > 10) && (a > b))
             {
                 Console.WriteLine("The answer is greater than 10");
@@ -226,7 +227,7 @@ following the `while`. The `do` ... `while` loop executes the
 code first, and then checks the condition. The do while loop is shown in the following code:
 
 ```csharp
-counter = 0;
+int counter = 0;
 do
 {
     Console.WriteLine($"Hello World! The counter is {counter}");
@@ -241,7 +242,7 @@ This `do` loop and the earlier `while` loop produce the same output.
 The **for** loop is commonly used in C#. Try this code in your Main() method:
 
 ```csharp
-for(int index = 0; index < 10; index++)
+for (int index = 0; index < 10; index++)
 {
     Console.WriteLine($"Hello World! The index is {index}");
 }

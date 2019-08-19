@@ -32,6 +32,8 @@ There are two main scenarios for populating the properties depending on whether 
 
 Additionally the `*.deps.json` files for any referenced frameworks are similarly parsed.
 
+Finally the environment variable `ADDITIONAL_DEPS` can be used to add additional dependencies.
+
 ### How do I see the probing properties from managed code?
 
 Each property is available by calling the <xref:AppContext.GetData(string)?displayProperty=nameWithType> function with any Property Name from the table above.

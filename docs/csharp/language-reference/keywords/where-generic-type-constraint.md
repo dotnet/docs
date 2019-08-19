@@ -50,9 +50,9 @@ Notice that the syntax to describe type parameter constraints on delegates is th
 
 [!code-csharp[where constraints with generic methods](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#8)]
 
-For information on generic delegates, see [Generic Delegates](../../../csharp/programming-guide/generics/generic-delegates.md).
+For information on generic delegates, see [Generic Delegates](../../programming-guide/generics/generic-delegates.md).
 
-For details on the syntax and use of constraints, see [Constraints on Type Parameters](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md).
+For details on the syntax and use of constraints, see [Constraints on Type Parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
 ## C# language specification
 
@@ -60,8 +60,8 @@ For details on the syntax and use of constraints, see [Constraints on Type Param
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Introduction to Generics](../../../csharp/programming-guide/generics/index.md)
-- [new Constraint](../../../csharp/language-reference/keywords/new-constraint.md)
-- [Constraints on Type Parameters](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [Introduction to Generics](../../programming-guide/generics/index.md)
+- [new Constraint](./new-constraint.md)
+- [Constraints on Type Parameters](../../programming-guide/generics/constraints-on-type-parameters.md)

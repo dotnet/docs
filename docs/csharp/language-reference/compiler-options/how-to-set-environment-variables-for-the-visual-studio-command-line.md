@@ -46,4 +46,4 @@ VsDevCmd.bat -help
 
 ## See also
 
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [Command-line Building With csc.exe](./command-line-building-with-csc-exe.md)

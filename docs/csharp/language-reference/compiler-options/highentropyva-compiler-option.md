@@ -20,7 +20,7 @@ The **-highentropyva** compiler option tells the Windows kernel whether a partic
   
 ## Arguments  
  `+` &#124; `-`  
- This option specifies that a 64-bit executable or an executable that is marked by the [-platform:anycpu](../../../csharp/language-reference/compiler-options/platform-compiler-option.md) compiler option supports a high entropy virtual address space. The option is disabled by default. Use **-highentropyva+** or **-highentropyva** to enable it.  
+ This option specifies that a 64-bit executable or an executable that is marked by the [-platform:anycpu](./platform-compiler-option.md) compiler option supports a high entropy virtual address space. The option is disabled by default. Use **-highentropyva+** or **-highentropyva** to enable it.  
   
 ## Remarks  
  The **-highentropyva** option enables compatible versions of the Windows kernel to use higher degrees of entropy when randomizing the address space layout of a process as part of ASLR. Using higher degrees of entropy means that a larger number of addresses can be allocated to memory regions such as stacks and heaps. As a result, it is more difficult to guess the location of a particular memory region.  

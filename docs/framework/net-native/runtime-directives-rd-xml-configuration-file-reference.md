@@ -32,97 +32,97 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
 
 The runtime directives file uses the `http://schemas.microsoft.com/netfx/2013/01/metadata` namespace.
 
-The root element is the [Directives](../../../docs/framework/net-native/directives-element-net-native.md) element. It can contain zero or more [Library](../../../docs/framework/net-native/library-element-net-native.md) elements, and zero or one [Application](../../../docs/framework/net-native/application-element-net-native.md) element, as shown in the following structure. The attributes of the [Application](../../../docs/framework/net-native/application-element-net-native.md) element can define application-wide runtime reflection policy, or it can serve as a container for child elements. The [Library](../../../docs/framework/net-native/library-element-net-native.md) element, on the other hand, is simply a container. The children of the [Application](../../../docs/framework/net-native/application-element-net-native.md) and [Library](../../../docs/framework/net-native/library-element-net-native.md) elements define the types, methods, fields, properties, and events that are available for reflection.
+The root element is the [Directives](directives-element-net-native.md) element. It can contain zero or more [Library](library-element-net-native.md) elements, and zero or one [Application](application-element-net-native.md) element, as shown in the following structure. The attributes of the [Application](application-element-net-native.md) element can define application-wide runtime reflection policy, or it can serve as a container for child elements. The [Library](library-element-net-native.md) element, on the other hand, is simply a container. The children of the [Application](application-element-net-native.md) and [Library](library-element-net-native.md) elements define the types, methods, fields, properties, and events that are available for reflection.
 
-For reference information, choose elements from the following structure or see [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md). In the following hierarchy, the ellipsis marks a recursive structure. The information in brackets indicates whether that element is optional or required, and if it is used, how many instances (one or many) are allowed.
+For reference information, choose elements from the following structure or see [Runtime Directive Elements](runtime-directive-elements.md). In the following hierarchy, the ellipsis marks a recursive structure. The information in brackets indicates whether that element is optional or required, and if it is used, how many instances (one or many) are allowed.
 
-[Directives](../../../docs/framework/net-native/directives-element-net-native.md) [1:1]
-[Application](../../../docs/framework/net-native/application-element-net-native.md) [0:1]
-[Assembly](../../../docs/framework/net-native/assembly-element-net-native.md) [0:M]
-[Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]
+[Directives](directives-element-net-native.md) [1:1]
+[Application](application-element-net-native.md) [0:1]
+[Assembly](assembly-element-net-native.md) [0:M]
+[Namespace](namespace-element-net-native.md) [0:M]
 . . .
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
+[Type](type-element-net-native.md) [0:M]
 . . .
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
 . . .
-[Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]
-[Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]
+[Namespace](namespace-element-net-native.md) [0:M]
+[Namespace](namespace-element-net-native.md) [0:M]
 . . .
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
+[Type](type-element-net-native.md) [0:M]
 . . .
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
 . . .
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
-[Subtypes](../../../docs/framework/net-native/subtypes-element-net-native.md) (subclasses of the containing type) [O:1]
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
+[Type](type-element-net-native.md) [0:M]
+[Subtypes](subtypes-element-net-native.md) (subclasses of the containing type) [O:1]
+[Type](type-element-net-native.md) [0:M]
 . . .
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
 . . .
-[AttributeImplies](../../../docs/framework/net-native/attributeimplies-element-net-native.md) (containing type is an attribute) [O:1]
-[GenericParameter](../../../docs/framework/net-native/genericparameter-element-net-native.md) [0:M]
-[Method](../../../docs/framework/net-native/method-element-net-native.md) [0:M]
-[Parameter](../../../docs/framework/net-native/parameter-element-net-native.md) [0:M]
-[TypeParameter](../../../docs/framework/net-native/typeparameter-element-net-native.md) [0:M]
-[GenericParameter](../../../docs/framework/net-native/genericparameter-element-net-native.md) [0:M]
-[MethodInstantiation](../../../docs/framework/net-native/methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
-[Property](../../../docs/framework/net-native/property-element-net-native.md) [0:M]
-[Field](../../../docs/framework/net-native/field-element-net-native.md) [0:M]
-[Event](../../../docs/framework/net-native/event-element-net-native.md) [0:M]
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
+[AttributeImplies](attributeimplies-element-net-native.md) (containing type is an attribute) [O:1]
+[GenericParameter](genericparameter-element-net-native.md) [0:M]
+[Method](method-element-net-native.md) [0:M]
+[Parameter](parameter-element-net-native.md) [0:M]
+[TypeParameter](typeparameter-element-net-native.md) [0:M]
+[GenericParameter](genericparameter-element-net-native.md) [0:M]
+[MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
+[Property](property-element-net-native.md) [0:M]
+[Field](field-element-net-native.md) [0:M]
+[Event](event-element-net-native.md) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[Type](type-element-net-native.md) [0:M]
 . . .
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
 . . .
-[Method](../../../docs/framework/net-native/method-element-net-native.md) [0:M]
-[Parameter](../../../docs/framework/net-native/parameter-element-net-native.md) [0:M]
-[TypeParameter](../../../docs/framework/net-native/typeparameter-element-net-native.md) [0:M]
-[GenericParameter](../../../docs/framework/net-native/genericparameter-element-net-native.md) [0:M]
-[MethodInstantiation](../../../docs/framework/net-native/methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
-[Property](../../../docs/framework/net-native/property-element-net-native.md) [0:M]
-[Field](../../../docs/framework/net-native/field-element-net-native.md) [0:M]
-[Event](../../../docs/framework/net-native/event-element-net-native.md) [0:M]
-[Library](../../../docs/framework/net-native/library-element-net-native.md) [0:M]
-[Assembly](../../../docs/framework/net-native/assembly-element-net-native.md) [0:M]
-[Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]
+[Method](method-element-net-native.md) [0:M]
+[Parameter](parameter-element-net-native.md) [0:M]
+[TypeParameter](typeparameter-element-net-native.md) [0:M]
+[GenericParameter](genericparameter-element-net-native.md) [0:M]
+[MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
+[Property](property-element-net-native.md) [0:M]
+[Field](field-element-net-native.md) [0:M]
+[Event](event-element-net-native.md) [0:M]
+[Library](library-element-net-native.md) [0:M]
+[Assembly](assembly-element-net-native.md) [0:M]
+[Namespace](namespace-element-net-native.md) [0:M]
 . . .
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
+[Type](type-element-net-native.md) [0:M]
 . . .
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
 . . .
-[Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]
-[Namespace](../../../docs/framework/net-native/namespace-element-net-native.md) [0:M]
+[Namespace](namespace-element-net-native.md) [0:M]
+[Namespace](namespace-element-net-native.md) [0:M]
 . . .
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
+[Type](type-element-net-native.md) [0:M]
 . . .
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
 . . .
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
-[Subtypes](../../../docs/framework/net-native/subtypes-element-net-native.md) (subclasses of the containing type) [O:1]
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
+[Type](type-element-net-native.md) [0:M]
+[Subtypes](subtypes-element-net-native.md) (subclasses of the containing type) [O:1]
+[Type](type-element-net-native.md) [0:M]
 . . .
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
 . . .
-[AttributeImplies](../../../docs/framework/net-native/attributeimplies-element-net-native.md) (containing type is an attribute) [O:1]
-[GenericParameter](../../../docs/framework/net-native/genericparameter-element-net-native.md) [0:M]
-[Method](../../../docs/framework/net-native/method-element-net-native.md) [0:M]
-[MethodInstantiation](../../../docs/framework/net-native/methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
-[Property](../../../docs/framework/net-native/property-element-net-native.md) [0:M]
-[Field](../../../docs/framework/net-native/field-element-net-native.md) [0:M]
-[Event](../../../docs/framework/net-native/event-element-net-native.md) [0:M]
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-[Type](../../../docs/framework/net-native/type-element-net-native.md) [0:M]
+[AttributeImplies](attributeimplies-element-net-native.md) (containing type is an attribute) [O:1]
+[GenericParameter](genericparameter-element-net-native.md) [0:M]
+[Method](method-element-net-native.md) [0:M]
+[MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
+[Property](property-element-net-native.md) [0:M]
+[Field](field-element-net-native.md) [0:M]
+[Event](event-element-net-native.md) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[Type](type-element-net-native.md) [0:M]
 . . .
-[TypeInstantiation](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
 . . .
-[Method](../../../docs/framework/net-native/method-element-net-native.md) [0:M]
-[MethodInstantiation](../../../docs/framework/net-native/methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
-[Property](../../../docs/framework/net-native/property-element-net-native.md) [0:M]
-[Field](../../../docs/framework/net-native/field-element-net-native.md) [0:M]
-[Event](../../../docs/framework/net-native/event-element-net-native.md) [0:M]
+[Method](method-element-net-native.md) [0:M]
+[MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
+[Property](property-element-net-native.md) [0:M]
+[Field](field-element-net-native.md) [0:M]
+[Event](event-element-net-native.md) [0:M]
 
-The [Application](../../../docs/framework/net-native/application-element-net-native.md) element can have no attributes, or it can have the policy attributes discussed in the [Runtime directive and policy section](#Directives).
+The [Application](application-element-net-native.md) element can have no attributes, or it can have the policy attributes discussed in the [Runtime directive and policy section](#Directives).
 
-A [Library](../../../docs/framework/net-native/library-element-net-native.md) element has a single attribute, `Name`, that specifies the name of a library or assembly, without its file extension. For example, the following [Library](../../../docs/framework/net-native/library-element-net-native.md) element applies to an assembly named Extensions.dll.
+A [Library](library-element-net-native.md) element has a single attribute, `Name`, that specifies the name of a library or assembly, without its file extension. For example, the following [Library](library-element-net-native.md) element applies to an assembly named Extensions.dll.
 
 ```xml
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
@@ -139,15 +139,15 @@ A [Library](../../../docs/framework/net-native/library-element-net-native.md) el
 
 ## Runtime directives and policy
 
-The [Application](../../../docs/framework/net-native/application-element-net-native.md) element itself and the child elements of the [Library](../../../docs/framework/net-native/library-element-net-native.md) and [Application](../../../docs/framework/net-native/application-element-net-native.md) elements express policy; that is, they define the way in which an app can apply reflection to a program element. The policy type is defined by an attribute of the element (for example, `Serialize`). The policy value is defined by the attribute’s value (for example, `Serialize="Required"`).
+The [Application](application-element-net-native.md) element itself and the child elements of the [Library](library-element-net-native.md) and [Application](application-element-net-native.md) elements express policy; that is, they define the way in which an app can apply reflection to a program element. The policy type is defined by an attribute of the element (for example, `Serialize`). The policy value is defined by the attribute’s value (for example, `Serialize="Required"`).
 
-Any policy specified by an attribute of an element applies to all child elements that don’t specify a value for that policy. For example, if a policy is specified by a [Type](../../../docs/framework/net-native/type-element-net-native.md) element, that policy applies to all contained types and members for which a policy is not explicitly specified.
+Any policy specified by an attribute of an element applies to all child elements that don’t specify a value for that policy. For example, if a policy is specified by a [Type](type-element-net-native.md) element, that policy applies to all contained types and members for which a policy is not explicitly specified.
 
-The policy that can be expressed by the [Application](../../../docs/framework/net-native/application-element-net-native.md), [Assembly](../../../docs/framework/net-native/assembly-element-net-native.md), [AttributeImplies](../../../docs/framework/net-native/attributeimplies-element-net-native.md), [Namespace](../../../docs/framework/net-native/namespace-element-net-native.md), [Subtypes](../../../docs/framework/net-native/subtypes-element-net-native.md), and [Type](../../../docs/framework/net-native/type-element-net-native.md) elements differs from the policy that can be expressed for individual members (by the [Method](../../../docs/framework/net-native/method-element-net-native.md), [Property](../../../docs/framework/net-native/property-element-net-native.md), [Field](../../../docs/framework/net-native/field-element-net-native.md), and [Event](../../../docs/framework/net-native/event-element-net-native.md) elements).
+The policy that can be expressed by the [Application](application-element-net-native.md), [Assembly](assembly-element-net-native.md), [AttributeImplies](attributeimplies-element-net-native.md), [Namespace](namespace-element-net-native.md), [Subtypes](subtypes-element-net-native.md), and [Type](type-element-net-native.md) elements differs from the policy that can be expressed for individual members (by the [Method](method-element-net-native.md), [Property](property-element-net-native.md), [Field](field-element-net-native.md), and [Event](event-element-net-native.md) elements).
 
 ### Specifying policy for assemblies, namespaces, and types
 
-The [Application](../../../docs/framework/net-native/application-element-net-native.md), [Assembly](../../../docs/framework/net-native/assembly-element-net-native.md), [AttributeImplies](../../../docs/framework/net-native/attributeimplies-element-net-native.md), [Namespace](../../../docs/framework/net-native/namespace-element-net-native.md), [Subtypes](../../../docs/framework/net-native/subtypes-element-net-native.md), and [Type](../../../docs/framework/net-native/type-element-net-native.md) elements support the following policy types:
+The [Application](application-element-net-native.md), [Assembly](assembly-element-net-native.md), [AttributeImplies](attributeimplies-element-net-native.md), [Namespace](namespace-element-net-native.md), [Subtypes](subtypes-element-net-native.md), and [Type](type-element-net-native.md) elements support the following policy types:
 
 - `Activate`. Controls runtime access to constructors, to enable activation of instances.
 
@@ -204,7 +204,7 @@ For example, the following runtime directives file defines policy for all types 
 
 ### Specifying policy for members
 
-The [Property](../../../docs/framework/net-native/property-element-net-native.md) and [Field](../../../docs/framework/net-native/field-element-net-native.md) elements support the following policy types:
+The [Property](property-element-net-native.md) and [Field](field-element-net-native.md) elements support the following policy types:
 
 - `Browse` - Controls querying for information about this member but does not enable any runtime access.
 
@@ -212,7 +212,7 @@ The [Property](../../../docs/framework/net-native/property-element-net-native.md
 
 - `Serialize` - Controls runtime access to the member to enable type instances to be serialized and deserialized by libraries such as the Newtonsoft JSON serializer. This policy can be applied to constructors, fields, and properties.
 
-The [Method](../../../docs/framework/net-native/method-element-net-native.md) and [Event](../../../docs/framework/net-native/event-element-net-native.md) elements support the following policy types:
+The [Method](method-element-net-native.md) and [Event](event-element-net-native.md) elements support the following policy types:
 
 - `Browse` - Controls querying for information about this member but doesn’t enable any runtime access.
 
@@ -230,9 +230,9 @@ The [Method](../../../docs/framework/net-native/method-element-net-native.md) an
 
 ## Runtime directives file semantics
 
-Policy can be defined simultaneously for both higher-level and lower-level elements. For example, policy can be defined for an assembly, and for some of the types contained in that assembly. If a particular lower-level element is not represented, it inherits the policy of its parent. For example, if an `Assembly` element is present but `Type` elements are not, the policy specified in the `Assembly` element applies to each type in the assembly. Multiple elements can also apply policy to the same program element. For example, separate [Assembly](../../../docs/framework/net-native/assembly-element-net-native.md) elements might define the same policy element for the same assembly differently. The following sections explain how the policy for a particular type is resolved in those cases.
+Policy can be defined simultaneously for both higher-level and lower-level elements. For example, policy can be defined for an assembly, and for some of the types contained in that assembly. If a particular lower-level element is not represented, it inherits the policy of its parent. For example, if an `Assembly` element is present but `Type` elements are not, the policy specified in the `Assembly` element applies to each type in the assembly. Multiple elements can also apply policy to the same program element. For example, separate [Assembly](assembly-element-net-native.md) elements might define the same policy element for the same assembly differently. The following sections explain how the policy for a particular type is resolved in those cases.
 
-A [Type](../../../docs/framework/net-native/type-element-net-native.md) or [Method](../../../docs/framework/net-native/method-element-net-native.md) element of a generic type or method applies its policy to all instantiations that do not have their own policy. For example, a `Type` element that specifies policy for <xref:System.Collections.Generic.List%601> applies to all constructed instances of that generic type, unless it's overridden for a particular constructed generic type (such as a `List<Int32>`) by a `TypeInstantiation` element. Otherwise, elements define policy for the program element named.
+A [Type](type-element-net-native.md) or [Method](method-element-net-native.md) element of a generic type or method applies its policy to all instantiations that do not have their own policy. For example, a `Type` element that specifies policy for <xref:System.Collections.Generic.List%601> applies to all constructed instances of that generic type, unless it's overridden for a particular constructed generic type (such as a `List<Int32>`) by a `TypeInstantiation` element. Otherwise, elements define policy for the program element named.
 
 When an element is ambiguous, the engine looks for matches, and if it finds an exact match, it will use it. If it finds multiple matches, there will be a warning or error.
 
@@ -468,9 +468,9 @@ Applying one of these policies to a type enables the type to be serialized with 
 
 These policies have no effect on methods or fields.
 
-For more information, see the "Differences in Serializers" section in [Migrating Your Windows Store App to .NET Native](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md).
+For more information, see the "Differences in Serializers" section in [Migrating Your Windows Store App to .NET Native](migrating-your-windows-store-app-to-net-native.md).
 
 ## See also
 
-- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
-- [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)
+- [Reflection and .NET Native](reflection-and-net-native.md)

@@ -19,32 +19,19 @@ An *expression* is a sequence of one or more operands and zero or more [operator
 System.Convert.ToInt32("35");  
 ```  
   
-<<<<<<< HEAD
 ## Expression values
 
- In most of the contexts in which expressions are used, for example in statements or method parameters, the expression is expected to evaluate to some value. If x and y are integers, the expression `x + y` evaluates to a numeric value. The expression `new MyClass()` evaluates to a reference to a new instance of a `MyClass` class. The expression `myClass.ToString()` evaluates to a string because that is the return type of the method. However, although a namespace name is classified as an expression, it does not evaluate to a value and therefore can never be the final result of any expression. You cannot pass a namespace name to a method parameter, or use it in a new expression, or assign it to a variable. You can only use it as a sub-expression in a larger expression. The same is true for types (as distinct from <xref:System.Type?displayProperty=nameWithType> objects), method group names (as distinct from specific methods), and event [add](../../../csharp/language-reference/keywords/add.md) and [remove](../../../csharp/language-reference/keywords/remove.md) accessors.  
-=======
-## Expression values  
  In most of the contexts in which expressions are used, for example in statements or method parameters, the expression is expected to evaluate to some value. If x and y are integers, the expression `x + y` evaluates to a numeric value. The expression `new MyClass()` evaluates to a reference to a new instance of a `MyClass` class. The expression `myClass.ToString()` evaluates to a string because that is the return type of the method. However, although a namespace name is classified as an expression, it does not evaluate to a value and therefore can never be the final result of any expression. You cannot pass a namespace name to a method parameter, or use it in a new expression, or assign it to a variable. You can only use it as a sub-expression in a larger expression. The same is true for types (as distinct from <xref:System.Type?displayProperty=nameWithType> objects), method group names (as distinct from specific methods), and event [add](../../language-reference/keywords/add.md) and [remove](../../language-reference/keywords/remove.md) accessors.  
->>>>>>> master
   
  Every value has an associated type. For example, if x and y are both variables of type `int`, the value of the expression `x + y` is also typed as `int`. If the value is assigned to a variable of a different type, or if x and y are different types, the rules of type conversion are applied. For more information about how such conversions work, see [Casting and Type Conversions](../types/casting-and-type-conversions.md).  
   
-<<<<<<< HEAD
 ## Overflows
 
- Numeric expressions may cause overflows if the value is larger than the maximum value of the value's type. For more information, see [Checked and Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md) and [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md).  
+ Numeric expressions may cause overflows if the value is larger than the maximum value of the value's type. For more information, see [Checked and Unchecked](../../language-reference/keywords/checked-and-unchecked.md) and [Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md).  
   
 ## Operator precedence and associativity
 
  The manner in which an expression is evaluated is governed by the rules of associativity and operator precedence. For more information, see [Operators](../../language-reference/operators/index.md).  
-=======
-## Overflows  
- Numeric expressions may cause overflows if the value is larger than the maximum value of the value's type. For more information, see [Checked and Unchecked](../../language-reference/keywords/checked-and-unchecked.md) and [Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md).  
-  
-## Operator precedence and associativity  
- The manner in which an expression is evaluated is governed by the rules of associativity and operator precedence. For more information, see [Operators](./operators.md).  
->>>>>>> master
   
  Most expressions, except assignment expressions and method invocation expressions, must be embedded in a statement. For more information, see [Statements](./statements.md).  
   

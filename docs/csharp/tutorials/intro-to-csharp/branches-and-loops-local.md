@@ -144,6 +144,7 @@ namespace BranchesAndLoops
         {
             int a = 5;
             int b = 3;
+            int c = 4;
             if (a + b > 10)
             {
                 Console.WriteLine("The answer is greater than 10");

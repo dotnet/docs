@@ -18,7 +18,6 @@ ms.assetid: 9e5e7721-19e2-4890-b273-a43589fe99ff
 
 One of the benefits of Visual Studio is the ability to create professional-looking Windows Forms applications in a short of amount of time. A common scenario is creating a user interface (UI) with <xref:System.Windows.Forms.ListView> and <xref:System.Windows.Forms.TreeView> controls that resembles the Windows Explorer feature of Windows operating systems. Windows Explorer displays a hierarchical structure of the files and folders on a user's computer.
 
-
 ### To create the form containing a ListView and TreeView control
 
 1. On the **File** menu, point to **New**, and then click **Project**.

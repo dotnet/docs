@@ -17,7 +17,6 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can specify compl
 
 The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.DataGridView> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md).
 
-
 ### Define styles for alternating rows
 
 1. Select the <xref:System.Windows.Forms.DataGridView> control in the designer.

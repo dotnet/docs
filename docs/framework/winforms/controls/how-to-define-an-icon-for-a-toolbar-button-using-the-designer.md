@@ -19,7 +19,6 @@ ms.assetid: d848f38e-67f2-49d4-8e88-01c845c06c02
 
 The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.ToolBar> control and an <xref:System.Windows.Forms.ImageList> component. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md).
 
-
 ### To set an icon for a toolbar button at design time
 
 1. Add images to the <xref:System.Windows.Forms.ImageList> component. For more information, see [How to: Add or Remove ImageList Images with the Designer](how-to-add-or-remove-imagelist-images-with-the-designer.md).

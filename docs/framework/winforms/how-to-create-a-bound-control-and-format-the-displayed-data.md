@@ -11,7 +11,6 @@ ms.assetid: d5a56228-899d-41d9-8af8-87b3f4ec2f94
 
 With Windows Forms data binding, you can format the data displayed in a data-bound control by using the **Formatting and Advanced Binding** dialog box.
 
-
 ### To bind a control and format the displayed data
 
 1. Connect to a data source.

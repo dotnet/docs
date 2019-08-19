@@ -8,7 +8,7 @@ This topic shows how to get an element selecting on an attribute that is referre
   
  The XPath expression is:  
   
- `./Customer[@CustomerID=/Root/Orders/Order[12]/CustomerID]`  
+ `.//Customer[@CustomerID=/Root/Orders/Order[12]/CustomerID]`  
   
 ## Example  
  This example finds the 12th `Order` element, and then finds the customer for that order.  
@@ -37,7 +37,7 @@ Dim customer2 As XElement = ( _
   
 ' XPath expression  
 Dim customer3 As XElement = co.XPathSelectElement _  
-    ("./Customer[@CustomerID=/Root/Orders/Order[12]/CustomerID]")  
+    (".//Customer[@CustomerID=/Root/Orders/Order[12]/CustomerID]")  
   
 If customer1 Is customer2 And customer1 Is customer3 Then  
     Console.WriteLine("Results are identical")  

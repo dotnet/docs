@@ -8,7 +8,7 @@ This topic shows how to get the descendant elements with a specified name, and w
   
  The XPath expression is:  
   
- `./Address[@Type='Shipping']`  
+ `.//Address[@Type='Shipping']`  
   
 ## Example  
  This example finds all descendants elements with the name of `Address`, and with a `Type` attribute with a value of "Shipping".  
@@ -26,7 +26,7 @@ Dim list1 As IEnumerable(Of XElement) = _
   
 ' XPath expression  
 Dim list2 As IEnumerable(Of XElement) = _  
-    po.XPathSelectElements("./Address[@Type='Shipping']")  
+    po.XPathSelectElements(".//Address[@Type='Shipping']")  
   
 If (list1.Count = list2.Count And _  
         list1.Intersect(list2).Count() = list1.Count()) Then  

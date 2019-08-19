@@ -113,6 +113,6 @@ Information about generic types is obtained in the same way as information about
 
 - <xref:System.Type>
 - <xref:System.Reflection.MethodInfo>
-- [Reflection and Generic Types](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)
-- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [Reflection and Generic Types](reflection-and-generic-types.md)
+- [Viewing Type Information](viewing-type-information.md)
 - [Generics](../../../docs/standard/generics/index.md)

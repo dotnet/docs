@@ -30,7 +30,7 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
   
 <a name="Dynamic_Assemblies"></a>   
 ## Dynamic Assemblies  
- Dynamic assemblies are created by using overloads of the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method. Most overloads of this method are deprecated in the .NET Framework 4, because of the elimination of machine-wide security policy. (See [Security Changes](../../../docs/framework/security/security-changes.md).) The remaining overloads can be executed by any code, regardless of trust level. These overloads fall into two groups: those that specify a list of attributes to apply to the dynamic assembly when it is created, and those that do not. If you do not specify the transparency model for the assembly, by applying the <xref:System.Security.SecurityRulesAttribute> attribute when you create it, the transparency model is inherited from the emitting assembly.  
+ Dynamic assemblies are created by using overloads of the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method. Most overloads of this method are deprecated in the .NET Framework 4, because of the elimination of machine-wide security policy. (See [Security Changes](../security/security-changes.md).) The remaining overloads can be executed by any code, regardless of trust level. These overloads fall into two groups: those that specify a list of attributes to apply to the dynamic assembly when it is created, and those that do not. If you do not specify the transparency model for the assembly, by applying the <xref:System.Security.SecurityRulesAttribute> attribute when you create it, the transparency model is inherited from the emitting assembly.  
   
 > [!NOTE]
 >  Attributes that you apply to the dynamic assembly after it is created, by using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method, do not take effect until the assembly has been saved to disk and loaded into memory again.  
@@ -133,7 +133,7 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
   
 <a name="Version_Information"></a>   
 ## Version Information  
- Starting with the .NET Framework 4, machine-wide security policy is eliminated and security transparency becomes the default enforcement mechanism. See [Security Changes](../../../docs/framework/security/security-changes.md).  
+ Starting with the .NET Framework 4, machine-wide security policy is eliminated and security transparency becomes the default enforcement mechanism. See [Security Changes](../security/security-changes.md).  
   
  Starting with the .NET Framework 2.0 Service Pack 1, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is no longer required when emitting dynamic assemblies and dynamic methods. This flag is required in all earlier versions of the .NET Framework.  
   
@@ -145,9 +145,9 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
  Finally, the .NET Framework 2.0 SP1 introduces anonymously hosted methods.  
   
 ### Obtaining Information on Types and Members  
- Starting with the .NET Framework 2.0, no permissions are required to obtain information about nonpublic types and members. Reflection is used to obtain information needed to emit dynamic methods. For example, <xref:System.Reflection.MethodInfo> objects are used to emit method calls. Earlier versions of the .NET Framework require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag. For more information, see [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
+ Starting with the .NET Framework 2.0, no permissions are required to obtain information about nonpublic types and members. Reflection is used to obtain information needed to emit dynamic methods. For example, <xref:System.Reflection.MethodInfo> objects are used to emit method calls. Earlier versions of the .NET Framework require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag. For more information, see [Security Considerations for Reflection](security-considerations-for-reflection.md).  
   
 ## See also
 
-- [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)
-- [Emitting Dynamic Methods and Assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)
+- [Security Considerations for Reflection](security-considerations-for-reflection.md)
+- [Emitting Dynamic Methods and Assemblies](emitting-dynamic-methods-and-assemblies.md)

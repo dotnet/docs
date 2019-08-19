@@ -27,13 +27,13 @@ This section describes a set of managed types in the <xref:System.Reflection.Emi
   
 - Define symbolic information for defined modules that can be used by tools such as debuggers and code profilers.  
   
- In addition to the managed types in the <xref:System.Reflection.Emit> namespace, there are unmanaged metadata interfaces which are described in the [Metadata Interfaces](../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md) reference documentation. Managed reflection emit provides stronger semantic error checking and a higher level of abstraction of the metadata than the unmanaged metadata interfaces.  
+ In addition to the managed types in the <xref:System.Reflection.Emit> namespace, there are unmanaged metadata interfaces which are described in the [Metadata Interfaces](../unmanaged-api/metadata/metadata-interfaces.md) reference documentation. Managed reflection emit provides stronger semantic error checking and a higher level of abstraction of the metadata than the unmanaged metadata interfaces.  
   
  Another useful resource for working with metadata and MSIL is the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online on [MSDN](https://go.microsoft.com/fwlink/?LinkID=65555) and at the [Ecma Web site](https://go.microsoft.com/fwlink/?LinkId=116487).  
   
 ## In This Section
   
-[Security issues in reflection emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)  
+[Security issues in reflection emit](security-issues-in-reflection-emit.md)  
 Describes security issues related to creating dynamic assemblies using reflection emit.  
 
 [How to: Define and execute dynamic methods](how-to-define-and-execute-dynamic-methods.md)   
@@ -62,8 +62,8 @@ Introduces collectible assemblies, which are dynamic assemblies that can be unlo
  Contains managed classes used to explore metadata and managed code.  
   
 ## Related Sections  
- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
+ [Reflection](reflection.md)  
  Explains how to explore metadata and managed code.  
   
- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
+ [Assemblies in the Common Language Runtime](../app-domains/assemblies-in-the-common-language-runtime.md)  
  Provides an overview of assemblies in .NET implementations.

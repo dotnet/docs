@@ -56,7 +56,7 @@ You can also comment out a block of text by enclosing it between the `/*` and `*
 
 A C# console application must contain a `Main` method, in which control starts and ends. The `Main` method is where you create objects and execute other methods.
 
-The `Main` method is a [static](../../../csharp/language-reference/keywords/static.md) method that resides inside a class or a struct. In the previous "Hello World!" example, it resides in a class named `Hello`. You can declare the `Main` method in one of the following ways:
+The `Main` method is a [static](../../language-reference/keywords/static.md) method that resides inside a class or a struct. In the previous "Hello World!" example, it resides in a class named `Hello`. You can declare the `Main` method in one of the following ways:
 
 - It can return `void`.
 
@@ -76,7 +76,7 @@ The `Main` method is a [static](../../../csharp/language-reference/keywords/stat
 
 The parameter of the `Main` method, `args`, is a `string` array that contains the command-line arguments used to invoke the program. Unlike in C++, the array does not include the name of the executable (exe) file.
 
-For more information about how to use command-line arguments, see the examples in [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md) and [How to: Create and Use Assemblies Using the Command Line](../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).
+For more information about how to use command-line arguments, see the examples in [Main() and Command-Line Arguments](../main-and-command-args/index.md) and [How to: Create and Use Assemblies Using the Command Line](../concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).
 
 The call to <xref:System.Console.ReadKey%2A> at the end of the `Main` method prevents the console window from closing before you have a chance to read the output when you run your program in debug mode, by pressing F5.
 
@@ -110,7 +110,7 @@ You can compile the "Hello World!" program by using the command line instead of 
 
     - Enable command-line builds from a standard Command Prompt window.
 
-         See [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md).
+         See [How to: Set Environment Variables for the Visual Studio Command Line](../../language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md).
 
 3. In the command-prompt window, navigate to the folder that contains your `Hello.cs` file.
 
@@ -124,14 +124,14 @@ You can compile the "Hello World!" program by using the command line instead of 
 
      `Hello`
 
- For more information about the C# compiler and its options, see [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md).
+ For more information about the C# compiler and its options, see [C# Compiler Options](../../language-reference/compiler-options/index.md).
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)
-- [Strings](../../../csharp/programming-guide/strings/index.md)
+- [C# Programming Guide](../index.md)
+- [Inside a C# Program](./index.md)
+- [Strings](../strings/index.md)
 - [Samples and tutorials](../../../samples-and-tutorials/index.md)
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)
+- [C# Reference](../../language-reference/index.md)
+- [Main() and Command-Line Arguments](../main-and-command-args/index.md)
 - [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

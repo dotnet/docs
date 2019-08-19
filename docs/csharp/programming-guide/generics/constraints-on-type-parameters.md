@@ -107,7 +107,7 @@ You could use it as shown in the following sample to create an enum and build a 
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Introduction to Generics](../../../csharp/programming-guide/generics/index.md)
-- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)
-- [new Constraint](../../../csharp/language-reference/keywords/new-constraint.md)
+- [C# Programming Guide](../index.md)
+- [Introduction to Generics](./index.md)
+- [Generic Classes](./generic-classes.md)
+- [new Constraint](../../language-reference/keywords/new-constraint.md)

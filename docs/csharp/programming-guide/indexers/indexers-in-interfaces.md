@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: e16b54bd-4a83-4f52-bd75-65819fca79e8
 ---
 # Indexers in Interfaces (C# Programming Guide)
-Indexers can be declared on an [interface](../../../csharp/language-reference/keywords/interface.md). Accessors of interface indexers differ from the accessors of [class](../../../csharp/language-reference/keywords/class.md) indexers in the following ways:  
+Indexers can be declared on an [interface](../../language-reference/keywords/interface.md). Accessors of interface indexers differ from the accessors of [class](../../language-reference/keywords/class.md) indexers in the following ways:  
   
 - Interface accessors do not use modifiers.  
   
@@ -55,7 +55,7 @@ string ICitizen.this[int index]
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
-- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
+- [C# Programming Guide](../index.md)
+- [Indexers](./index.md)
+- [Properties](../classes-and-structs/properties.md)
+- [Interfaces](../interfaces/index.md)

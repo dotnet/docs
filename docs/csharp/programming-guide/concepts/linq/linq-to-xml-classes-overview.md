@@ -9,7 +9,7 @@ This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
 ## LINQ to XML Classes  
   
 ### XAttribute Class  
- <xref:System.Xml.Linq.XAttribute> represents an XML attribute. For detailed information and examples, see [XAttribute Class Overview (C#)](../../../../csharp/programming-guide/concepts/linq/xattribute-class-overview.md).  
+ <xref:System.Xml.Linq.XAttribute> represents an XML attribute. For detailed information and examples, see [XAttribute Class Overview (C#)](./xattribute-class-overview.md).  
   
 ### XCData Class  
  <xref:System.Xml.Linq.XCData> represents a CDATA text node.  
@@ -28,16 +28,16 @@ This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
  <xref:System.Xml.Linq.XDeclaration> represents an XML declaration. An XML declaration is used to declare the XML version and the encoding of a document. In addition, an XML declaration specifies whether the XML document is stand-alone. If a document is stand-alone, there are no external markup declarations, either in an external DTD, or in an external parameter entity referenced from the internal subset.  
   
 ### XDocument Class  
- <xref:System.Xml.Linq.XDocument> represents an XML document. For detailed information and examples, see [XDocument Class Overview (C#)](../../../../csharp/programming-guide/concepts/linq/xdocument-class-overview.md).  
+ <xref:System.Xml.Linq.XDocument> represents an XML document. For detailed information and examples, see [XDocument Class Overview (C#)](./xdocument-class-overview.md).  
   
 ### XDocumentType Class  
  <xref:System.Xml.Linq.XDocumentType> represents an XML Document Type Definition (DTD).  
   
 ### XElement Class  
- <xref:System.Xml.Linq.XElement> represents an XML element. For detailed information and examples, see [XElement Class Overview (C#)](../../../../csharp/programming-guide/concepts/linq/xelement-class-overview.md).  
+ <xref:System.Xml.Linq.XElement> represents an XML element. For detailed information and examples, see [XElement Class Overview (C#)](./xelement-class-overview.md).  
   
 ### XName Class  
- <xref:System.Xml.Linq.XName> represents names of elements (<xref:System.Xml.Linq.XElement>) and attributes (<xref:System.Xml.Linq.XAttribute>). For detailed information and examples, see [XDocument Class Overview (C#)](../../../../csharp/programming-guide/concepts/linq/xdocument-class-overview.md).  
+ <xref:System.Xml.Linq.XName> represents names of elements (<xref:System.Xml.Linq.XElement>) and attributes (<xref:System.Xml.Linq.XAttribute>). For detailed information and examples, see [XDocument Class Overview (C#)](./xdocument-class-overview.md).  
   
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is designed to make XML names as straightforward as possible. Due to their complexity, XML names are often considered to be an advanced topic in XML. Arguably, this complexity comes not from namespaces, which developers use regularly in programming, but from namespace prefixes. Namespace prefixes can be useful to reduce the keystrokes required when you input XML, or to make XML easier to read. However, prefixes are often just a shortcut for using the full XML namespace, and are not required in most cases. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] simplifies XML names by resolving all prefixes to their corresponding XML namespace. Prefixes are available, if they are required, through the <xref:System.Xml.Linq.XElement.GetPrefixOfNamespace%2A> method.  
   
@@ -82,4 +82,4 @@ This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
   
 ## See also
 
-- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)
+- [LINQ to XML Programming Overview (C#)](./linq-to-xml-overview.md)

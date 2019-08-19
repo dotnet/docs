@@ -7,7 +7,7 @@ ms.assetid: c95d8d71-5a98-4bf0-aaf4-45fed2ebbacd
 
 You can write asynchronous programs more easily and intuitively by using async/await features. You can write asynchronous code that looks like synchronous code and let the compiler handle the difficult callback functions and continuations that asynchronous code usually entails.
 
-For more information about the Async feature, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).
+For more information about the Async feature, see [Asynchronous Programming with async and await (C#)](./index.md).
 
 This walkthrough starts with a synchronous Windows Presentation Foundation (WPF) application that sums the number of bytes in a list of websites. The walkthrough then converts the application to an asynchronous solution by using the new features.
 
@@ -231,7 +231,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
 2. `GetResponseAsync` returns a <xref:System.Threading.Tasks.Task%601>. In this case, the *task return variable*, `TResult`, has type <xref:System.Net.WebResponse>. The task is a promise to produce an actual `WebResponse` object after the requested data has been downloaded and the task has run to completion.
 
-     To retrieve the `WebResponse` value from the task, apply an [await](../../../../csharp/language-reference/keywords/await.md) operator to the call to `GetResponseAsync`, as the following code shows.
+     To retrieve the `WebResponse` value from the task, apply an [await](../../../language-reference/keywords/await.md) operator to the call to `GetResponseAsync`, as the following code shows.
 
     ```csharp
     using (WebResponse response = await webReq.GetResponseAsync())
@@ -248,9 +248,9 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
      The call to `webReq.GetResponseAsync` returns a `Task(Of WebResponse)` or `Task<WebResponse>`. Then an await operator is applied to the task to retrieve the `WebResponse` value.
 
-     If your async method has work to do that doesn’t depend on the completion of the task, the method can continue with that work between these two statements, after the call to the async method and before the `await` operator is applied. For examples, see [How to: Make Multiple Web Requests in Parallel by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) and [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
+     If your async method has work to do that doesn’t depend on the completion of the task, the method can continue with that work between these two statements, after the call to the async method and before the `await` operator is applied. For examples, see [How to: Make Multiple Web Requests in Parallel by Using async and await (C#)](./how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) and [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
 
-3. Because you added the `await` operator in the previous step, a compiler error occurs. The operator can be used only in methods that are marked with the [async](../../../../csharp/language-reference/keywords/async.md) modifier. Ignore the error while you repeat the conversion steps to replace the call to `CopyTo` with a call to `CopyToAsync`.
+3. Because you added the `await` operator in the previous step, a compiler error occurs. The operator can be used only in methods that are marked with the [async](../../../language-reference/keywords/async.md) modifier. Ignore the error while you repeat the conversion steps to replace the call to `CopyTo` with a call to `CopyToAsync`.
 
     - Change the name of the method that’s called to <xref:System.IO.Stream.CopyToAsync%2A>.
 
@@ -271,15 +271,15 @@ Notice that it takes a few seconds to display the counts. During that time, the 
         //await copyTask;
         ```
 
-4. All that remains to be done in `GetURLContents` is to adjust the method signature. You can use the `await` operator only in methods that are marked with the [async](../../../../csharp/language-reference/keywords/async.md) modifier. Add the modifier to mark the method as an *async method*, as the following code shows.
+4. All that remains to be done in `GetURLContents` is to adjust the method signature. You can use the `await` operator only in methods that are marked with the [async](../../../language-reference/keywords/async.md) modifier. Add the modifier to mark the method as an *async method*, as the following code shows.
 
     ```csharp
     private async byte[] GetURLContents(string url)
     ```
 
-5. The return type of an async method can only be <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `void` in C#. Typically, a return type of `void` is used only in an async event handler, where `void` is required. In other cases, you use `Task(T)` if the completed method has a [return](../../../../csharp/language-reference/keywords/return.md) statement that returns a value of type T, and you use `Task` if the completed method doesn’t return a meaningful value. You can think of the `Task` return type as meaning "Task(void)."
+5. The return type of an async method can only be <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `void` in C#. Typically, a return type of `void` is used only in an async event handler, where `void` is required. In other cases, you use `Task(T)` if the completed method has a [return](../../../language-reference/keywords/return.md) statement that returns a value of type T, and you use `Task` if the completed method doesn’t return a meaningful value. You can think of the `Task` return type as meaning "Task(void)."
 
-     For more information, see [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md).
+     For more information, see [Async Return Types (C#)](./async-return-types.md).
 
      Method `GetURLContents` has a return statement, and the statement returns a byte array. Therefore, the return type of the async version is Task(T), where T is a byte array. Make the following changes in the method signature:
 
@@ -367,7 +367,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
     startButton.IsEnabled = true;
     ```
 
-     For more information about reentrancy, see [Handling Reentrancy in Async Apps (C#)](../../../../csharp/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md).
+     For more information about reentrancy, see [Handling Reentrancy in Async Apps (C#)](./handling-reentrancy-in-async-apps.md).
 
 4. Finally, add the `async` modifier to the declaration so that the event handler can await `SumPagSizesAsync`.
 
@@ -685,10 +685,10 @@ namespace AsyncExampleWPF
 ## See also
 
 - [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
-- [async](../../../../csharp/language-reference/keywords/async.md)
-- [await](../../../../csharp/language-reference/keywords/await.md)
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
-- [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)
+- [async](../../../language-reference/keywords/async.md)
+- [await](../../../language-reference/keywords/await.md)
+- [Asynchronous Programming with async and await (C#)](./index.md)
+- [Async Return Types (C#)](./async-return-types.md)
 - [Task-based Asynchronous Programming (TAP)](https://www.microsoft.com/download/details.aspx?id=19957)
-- [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
-- [How to: Make Multiple Web Requests in Parallel by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)
+- [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+- [How to: Make Multiple Web Requests in Parallel by Using async and await (C#)](./how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)

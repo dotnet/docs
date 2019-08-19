@@ -11,7 +11,7 @@ This topic compares the XPath child element axis to the [!INCLUDE[sqltecxlinq](~
 ## Example  
  This example finds the child element `DeliveryNotes`.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument cpo = XDocument.Load("PurchaseOrders.xml");  

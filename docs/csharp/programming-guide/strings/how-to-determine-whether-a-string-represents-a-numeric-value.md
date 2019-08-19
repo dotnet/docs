@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: a4e84e10-ea0a-489f-a868-503dded9d85f
 ---
 # How to: Determine Whether a String Represents a Numeric Value (C# Programming Guide)
-To determine whether a string is a valid representation of a specified numeric type, use the static `TryParse` method that is implemented by all primitive numeric types and also by types such as <xref:System.DateTime> and <xref:System.Net.IPAddress>. The following example shows how to determine whether "108" is a valid [int](../../../csharp/language-reference/builtin-types/integral-numeric-types.md).  
+To determine whether a string is a valid representation of a specified numeric type, use the static `TryParse` method that is implemented by all primitive numeric types and also by types such as <xref:System.DateTime> and <xref:System.Net.IPAddress>. The following example shows how to determine whether "108" is a valid [int](../../language-reference/builtin-types/integral-numeric-types.md).  
   
 ```  
 int i = 0;   
@@ -35,8 +35,8 @@ bool result = int.TryParse(s, out i); //i now = 108
   
 ## See also
 
-- [How to: Convert a byte Array to an int](../../../csharp/programming-guide/types/how-to-convert-a-byte-array-to-an-int.md)
-- [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)
-- [How to: Convert Between Hexadecimal Strings and Numeric Types](../../../csharp/programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)
+- [How to: Convert a byte Array to an int](../types/how-to-convert-a-byte-array-to-an-int.md)
+- [How to: Convert a String to a Number](../types/how-to-convert-a-string-to-a-number.md)
+- [How to: Convert Between Hexadecimal Strings and Numeric Types](../types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)
 - [Parsing Numeric Strings](../../../standard/base-types/parsing-numeric.md)
 - [Formatting Types](../../../standard/base-types/formatting-types.md)

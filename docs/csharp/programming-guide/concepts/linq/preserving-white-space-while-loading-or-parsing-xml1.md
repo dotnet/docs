@@ -10,7 +10,7 @@ This topic describes how to control the white-space behavior of [!INCLUDE[sqltec
   
  Another common scenario is to read and modify XML that has already been intentionally indented. You might not want to change this indentation in any way. To do this in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], you preserve white space when you load or parse the XML and disable formatting when you serialize the XML.  
   
- This topic describes the white-space behavior of methods that populate XML trees. For information about controlling white space when you serialize XML trees, see [Preserving White Space While Serializing](../../../../csharp/programming-guide/concepts/linq/preserving-white-space-while-serializing.md).  
+ This topic describes the white-space behavior of methods that populate XML trees. For information about controlling white space when you serialize XML trees, see [Preserving White Space While Serializing](./preserving-white-space-while-serializing.md).  
   
 ## Behavior of Methods that Populate XML Trees  
  The following methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> classes populate an XML tree. You can populate an XML tree from a file, a <xref:System.IO.TextReader>, an <xref:System.Xml.XmlReader>, or a string:  

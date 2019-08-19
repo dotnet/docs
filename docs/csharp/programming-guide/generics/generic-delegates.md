@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: bdea509c-44c1-4309-aaa9-15c7aee009df
 ---
 # Generic Delegates (C# Programming Guide)
-A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define its own type parameters. Code that references the generic delegate can specify the type argument to create a closed constructed type, just like when instantiating a generic class or calling a generic method, as shown in the following example:  
+A [delegate](../../language-reference/keywords/delegate.md) can define its own type parameters. Code that references the generic delegate can specify the type argument to create a closed constructed type, just like when instantiating a generic class or calling a generic method, as shown in the following example:  
   
  [!code-csharp[csProgGuideGenerics#36](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#36)]  
   
@@ -31,10 +31,10 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Introduction to Generics](../../../csharp/programming-guide/generics/index.md)
-- [Generic Methods](../../../csharp/programming-guide/generics/generic-methods.md)
-- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)
-- [Generic Interfaces](../../../csharp/programming-guide/generics/generic-interfaces.md)
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [C# Programming Guide](../index.md)
+- [Introduction to Generics](./index.md)
+- [Generic Methods](./generic-methods.md)
+- [Generic Classes](./generic-classes.md)
+- [Generic Interfaces](./generic-interfaces.md)
+- [Delegates](../delegates/index.md)
 - [Generics](~/docs/standard/generics/index.md)

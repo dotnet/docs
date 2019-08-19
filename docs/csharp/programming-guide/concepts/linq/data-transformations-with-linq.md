@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
 ---
 # Data Transformations with LINQ (C#)
-[!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] is not only about retrieving data. It is also a powerful tool for transforming data. By using a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, you can use a source sequence as input and modify it in many ways to create a new output sequence. You can modify the sequence itself without modifying the elements themselves by sorting and grouping. But perhaps the most powerful feature of [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries is the ability to create new types. This is accomplished in the [select](../../../../csharp/language-reference/keywords/select-clause.md) clause. For example, you can perform the following tasks:  
+[!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] is not only about retrieving data. It is also a powerful tool for transforming data. By using a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, you can use a source sequence as input and modify it in many ways to create a new output sequence. You can modify the sequence itself without modifying the elements themselves by sorting and grouping. But perhaps the most powerful feature of [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries is the ability to create new types. This is accomplished in the [select](../../../language-reference/keywords/select-clause.md) clause. For example, you can perform the following tasks:  
   
 - Merge multiple input sequences into a single output sequence that has a new type.  
   
@@ -33,7 +33,7 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
   
  [!code-csharp[CSLinqGettingStarted#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#8)]  
   
- For more information, see [join clause](../../../../csharp/language-reference/keywords/join-clause.md) and [select clause](../../../../csharp/language-reference/keywords/select-clause.md).  
+ For more information, see [join clause](../../../language-reference/keywords/join-clause.md) and [select clause](../../../language-reference/keywords/select-clause.md).  
   
 ## Selecting a Subset of each Source Element  
  There are two primary ways to select a subset of each element in the source sequence:  
@@ -52,7 +52,7 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
                 select new {Name = cust.Name, City = cust.City};  
     ```  
   
- For more information, see [Object and Collection Initializers](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) and [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md).  
+ For more information, see [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md) and [Anonymous Types](../../classes-and-structs/anonymous-types.md).  
   
 ## Transforming in-Memory Objects into XML  
  [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries make it easy to transform data between in-memory data structures, SQL databases, ADO.NET Datasets and XML streams or documents. The following example transforms objects in an in-memory data structure into XML elements.  
@@ -81,7 +81,7 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
 </Root>  
 ```  
   
- For more information, see [Creating XML Trees in C# (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2.md).  
+ For more information, see [Creating XML Trees in C# (LINQ to XML)](./creating-xml-trees-linq-to-xml-2.md).  
   
 ## Performing Operations on Source Elements  
  An output sequence might not contain any elements or element properties from the source sequence. The output might instead be a sequence of values that is computed by using the source elements as input arguments. The following simple query, when it is executed, outputs a sequence of strings whose values represent a calculation based on the source sequence of elements of type `double`.  
@@ -93,9 +93,9 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
   
 ## See also
 
-- [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
-- [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)
+- [Language-Integrated Query (LINQ) (C#)](./index.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
-- [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)
-- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)
-- [select clause](../../../../csharp/language-reference/keywords/select-clause.md)
+- [LINQ to XML (C#)](./linq-to-xml-overview.md)
+- [LINQ Query Expressions](../../linq-query-expressions/index.md)
+- [select clause](../../../language-reference/keywords/select-clause.md)

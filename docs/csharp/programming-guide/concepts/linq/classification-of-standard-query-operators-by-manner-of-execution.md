@@ -84,6 +84,6 @@ The LINQ to Objects implementations of the standard query operator methods execu
 ## See also
 
 - <xref:System.Linq.Enumerable>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Query Expression Syntax for Standard Query Operators (C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)
-- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [Query Expression Syntax for Standard Query Operators (C#)](./query-expression-syntax-for-standard-query-operators.md)
+- [LINQ to Objects (C#)](./linq-to-objects.md)

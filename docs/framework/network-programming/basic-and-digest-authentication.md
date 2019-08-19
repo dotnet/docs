@@ -42,5 +42,5 @@ WReq.Credentials = new NetworkCredential(UserName, SecurelyStoredPassword);
   
 ## See also
 
-- [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)
-- [Internet Authentication](../../../docs/framework/network-programming/internet-authentication.md)
+- [NTLM and Kerberos Authentication](ntlm-and-kerberos-authentication.md)
+- [Internet Authentication](internet-authentication.md)

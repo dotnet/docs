@@ -59,4 +59,4 @@ ms.assetid: ec722dff-6009-4279-b86a-e18d3fa94ebf
   
 ## See also
 
-- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)
+- [Caching in UI Automation Clients](caching-in-ui-automation-clients.md)

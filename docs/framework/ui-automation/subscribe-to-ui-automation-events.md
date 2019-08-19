@@ -34,4 +34,4 @@ ms.assetid: b688effa-b3e8-4b05-944d-05ed89a245aa
 - <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>
 - <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>
 - <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>
-- [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)
+- [UI Automation Events Overview](ui-automation-events-overview.md)

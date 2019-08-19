@@ -68,8 +68,8 @@ ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
   
 ## See also
 
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
-- [Control Pattern Mapping for UI Automation Clients](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)
-- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
-- [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md)
-- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)
+- [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md)
+- [UI Automation Overview](ui-automation-overview.md)
+- [UI Automation Properties for Clients](ui-automation-properties-for-clients.md)
+- [UI Automation Events for Clients](ui-automation-events-for-clients.md)

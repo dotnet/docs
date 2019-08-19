@@ -16,14 +16,14 @@ ms.assetid: b51206f2-1281-4ad0-9820-ea39d88ae577
  This topic contains overviews and how-to topics to help you get started in programming for text elements in [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)].  
   
 ## In This Section  
- [UI Automation TextPattern Overview](../../../docs/framework/ui-automation/ui-automation-textpattern-overview.md)  
- [TextPattern and Embedded Objects Overview](../../../docs/framework/ui-automation/textpattern-and-embedded-objects-overview.md)  
- [How-to Topics](../../../docs/framework/ui-automation/ui-automation-text-pattern-how-to-topics.md)  
+ [UI Automation TextPattern Overview](ui-automation-textpattern-overview.md)  
+ [TextPattern and Embedded Objects Overview](textpattern-and-embedded-objects-overview.md)  
+ [How-to Topics](ui-automation-text-pattern-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Automation.Text>  
   
 ## See also
 
-- [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [UI Automation Control Patterns](ui-automation-control-patterns.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)

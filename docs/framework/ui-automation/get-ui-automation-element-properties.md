@@ -35,6 +35,6 @@ ms.assetid: 09576b1a-291f-435c-980e-dee32d899ae1
   
 ## See also
 
-- [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md)
-- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
-- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)
+- [UI Automation Properties for Clients](ui-automation-properties-for-clients.md)
+- [Use Caching in UI Automation](use-caching-in-ui-automation.md)
+- [Caching in UI Automation Clients](caching-in-ui-automation-clients.md)

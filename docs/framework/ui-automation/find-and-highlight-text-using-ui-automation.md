@@ -31,4 +31,4 @@ ms.assetid: b77693f5-87bb-4b29-a297-05ff882e2044
   
 ## See also
 
-- [Find and Highlight Text Using UI Automation](../../../docs/framework/ui-automation/find-and-highlight-text-using-ui-automation.md)
+- [Find and Highlight Text Using UI Automation](find-and-highlight-text-using-ui-automation.md)

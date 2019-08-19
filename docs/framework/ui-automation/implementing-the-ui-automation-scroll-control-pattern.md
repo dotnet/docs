@@ -15,10 +15,10 @@ ms.assetid: 73d64242-6cbb-424c-92dd-dc69530b7899
   
  The <xref:System.Windows.Automation.ScrollPattern> control pattern is used to support a control that acts as a scrollable container for a collection of child objects. The control is not required to use scrollbars to support the scrolling functionality, although it commonly does.  
   
- ![Scroll control without scrollbars.](../../../docs/framework/ui-automation/media/uia-scrollpattern-without-scrollbars.PNG "UIA_ScrollPattern_Without_Scrollbars")  
+ ![Scroll control without scrollbars.](media/uia-scrollpattern-without-scrollbars.PNG "UIA_ScrollPattern_Without_Scrollbars")  
 Example of a Scrolling Control that Does Not Use Scrollbars  
   
- For examples of controls that implement this control, see [Control Pattern Mapping for UI Automation Clients](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md).  
+ For examples of controls that implement this control, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>   
 ## Implementation Guidelines and Conventions  
@@ -66,8 +66,8 @@ Example of a Scrolling Control that Does Not Use Scrollbars
   
 ## See also
 
-- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
-- [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
-- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
-- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Support Control Patterns in a UI Automation Provider](support-control-patterns-in-a-ui-automation-provider.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)
+- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Use Caching in UI Automation](use-caching-in-ui-automation.md)

@@ -25,7 +25,7 @@ ms.assetid: f325f0d8-1715-41ea-85ca-45b82ffea8bc
   
 ## See also
 
-- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
-- [Register a Client-Side Provider Assembly](../../../docs/framework/ui-automation/register-a-client-side-provider-assembly.md)
-- [Create a Client-Side UI Automation Provider](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)
-- [Client-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/client-side-ui-automation-provider-implementation.md)
+- [UI Automation Providers Overview](ui-automation-providers-overview.md)
+- [Register a Client-Side Provider Assembly](register-a-client-side-provider-assembly.md)
+- [Create a Client-Side UI Automation Provider](create-a-client-side-ui-automation-provider.md)
+- [Client-Side UI Automation Provider Implementation](client-side-ui-automation-provider-implementation.md)

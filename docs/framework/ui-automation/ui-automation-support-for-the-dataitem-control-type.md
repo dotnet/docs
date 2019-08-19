@@ -19,7 +19,7 @@ ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
   
 <a name="Required_UI_Automation_Tree_Structure"></a>   
 ## Required UI Automation Tree Structure  
- The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to data item controls and describes what can be contained in each view. For more information about the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md).  
+ The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to data item controls and describes what can be contained in each view. For more information about the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Tree - Control View|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Tree - Content View|  
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|  
@@ -29,7 +29,7 @@ ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
   
 <a name="Required_UI_Automation_Properties"></a>   
 ## Required UI Automation Properties  
- The following table lists the properties whose value or definition is especially relevant to data item controls. For more information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md).  
+ The following table lists the properties whose value or definition is especially relevant to data item controls. For more information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
 |Property|Value|Notes|  
 |--------------|-----------|-----------|  
@@ -48,7 +48,7 @@ ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
   
 <a name="_Required_UI_Automation_Control_Patterns"></a>   
 ## Required UI Automation Control Patterns  
- The following table lists the [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] control patterns required to be supported by all data item controls. For more information about control patterns, see [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md).  
+ The following table lists the [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] control patterns required to be supported by all data item controls. For more information about control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
 |Control Pattern|Support|Notes|  
 |---------------------|-------------|-----------|  
@@ -68,7 +68,7 @@ ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
   
 <a name="Required_UI_Automation_Events"></a>   
 ## Required UI Automation Events  
- The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all data item controls. For more information about events, see [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md).  
+ The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all data item controls. For more information about events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Event|Support|Notes|  
 |---------------------------------------------------------------------------------|-------------|-----------|  
@@ -90,7 +90,7 @@ ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
 ## DataItem Control Type Example  
  The following image illustrates a DataItem control type in a List View control with support for rich information for the columns.  
   
- ![Graphic of a List View control with two data items](../../../docs/framework/ui-automation/media/uiauto-data-grid-detailed.GIF "uiauto_data_grid_detailed")  
+ ![Graphic of a List View control with two data items](media/uiauto-data-grid-detailed.GIF "uiauto_data_grid_detailed")  
   
  The Control View and the Content View of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to the data item control is displayed below. The control patterns for each automation element are shown in parentheses. The Group "Contoso" is also part of the grid of the Data Grid host control.  
   
@@ -103,5 +103,5 @@ ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
 ## See also
 
 - <xref:System.Windows.Automation.ControlType.DataItem>
-- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
-- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+- [UI Automation Control Types Overview](ui-automation-control-types-overview.md)
+- [UI Automation Overview](ui-automation-overview.md)

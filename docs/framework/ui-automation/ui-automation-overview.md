@@ -39,12 +39,12 @@ ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
   
 |Section|Subject matter|Audience|  
 |-------------|--------------------|--------------|  
-|[UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md) (this section)|Broad overviews of the concepts.|All.|  
-|[UI Automation Providers for Managed Code](../../../docs/framework/ui-automation/ui-automation-providers-for-managed-code.md)|Overviews and how-to topics to help you use the provider API.|Control developers.|  
-|[UI Automation Clients for Managed Code](../../../docs/framework/ui-automation/ui-automation-clients-for-managed-code.md)|Overviews and how-to topics to help you use the client API.|Client application developers.|  
-|[UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)|Information about how control patterns should be implemented by providers, and what functionality is available to clients.|All.|  
-|[UI Automation Text Pattern](../../../docs/framework/ui-automation/ui-automation-text-pattern.md)|Information about how the Text control pattern should be implemented by providers, and what functionality is available to clients.|All.|  
-|[UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)|Information about the properties and control patterns supported by different control types.|All.|  
+|[UI Automation Fundamentals](index.md) (this section)|Broad overviews of the concepts.|All.|  
+|[UI Automation Providers for Managed Code](ui-automation-providers-for-managed-code.md)|Overviews and how-to topics to help you use the provider API.|Control developers.|  
+|[UI Automation Clients for Managed Code](ui-automation-clients-for-managed-code.md)|Overviews and how-to topics to help you use the client API.|Client application developers.|  
+|[UI Automation Control Patterns](ui-automation-control-patterns.md)|Information about how control patterns should be implemented by providers, and what functionality is available to clients.|All.|  
+|[UI Automation Text Pattern](ui-automation-text-pattern.md)|Information about how the Text control pattern should be implemented by providers, and what functionality is available to clients.|All.|  
+|[UI Automation Control Types](ui-automation-control-types.md)|Information about the properties and control patterns supported by different control types.|All.|  
   
  The following table lists [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] namespaces, the DLLs that contain them, and the audience that uses them.  
   
@@ -64,14 +64,14 @@ ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
  In addition, elements expose control patterns that provide properties specific to their control types. Control patterns also expose methods that enable clients to get further information about the element and to provide input.  
   
 > [!NOTE]
->  There is not a one-to-one correspondence between control types and control patterns. A control pattern may be supported by multiple control types, and a control may support multiple control patterns, each of which exposes different aspects of its behavior. For example, a combo box has at least two control patterns: one that represents its ability to expand and collapse, and another that represents the selection mechanism. For specifics, see [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md).  
+>  There is not a one-to-one correspondence between control types and control patterns. A control pattern may be supported by multiple control types, and a control may support multiple control patterns, each of which exposes different aspects of its behavior. For example, a combo box has at least two control patterns: one that represents its ability to expand and collapse, and another that represents the selection mechanism. For specifics, see [UI Automation Control Types](ui-automation-control-types.md).  
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] also provides information to client applications through events. Unlike [!INCLUDE[TLA2#tla_winevents](../../../includes/tla2sharptla-winevents-md.md)], [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events are not based on a broadcast mechanism. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] clients register for specific event notifications and can request that specific [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties and control pattern information be passed into their event handlers. In addition, a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] event contains a reference to the element that raised it. Providers can improve performance by raising events selectively, depending on whether any clients are listening.  
   
 ## See also
 
-- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
-- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
-- [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)
-- [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)
-- [UI Automation Security Overview](../../../docs/framework/ui-automation/ui-automation-security-overview.md)
+- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [UI Automation Properties Overview](ui-automation-properties-overview.md)
+- [UI Automation Events Overview](ui-automation-events-overview.md)
+- [UI Automation Security Overview](ui-automation-security-overview.md)

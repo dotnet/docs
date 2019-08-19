@@ -19,7 +19,7 @@ ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
   
 <a name="Required_UI_Automation_Tree_Structure"></a>   
 ## Required UI Automation Tree Structure  
- The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to pane controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md).  
+ The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to pane controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
 |Control View|Content View|  
 |------------------|------------------|  
@@ -27,7 +27,7 @@ ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
   
 <a name="Required_UI_Automation_Properties"></a>   
 ## Required UI Automation Properties  
- The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to pane controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md).  
+ The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to pane controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Property|Value|Notes|  
 |------------------------------------------------------------------------------------|-----------|-----------|  
@@ -46,7 +46,7 @@ ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
   
 <a name="Required_UI_Automation_Control_Patterns"></a>   
 ## Required UI Automation Control Patterns  
- The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by all pane controls. For more information on control patterns, see [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md).  
+ The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by all pane controls. For more information on control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
 |Control Pattern|Support|Notes|  
 |---------------------|-------------|-----------|  
@@ -57,7 +57,7 @@ ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
   
 <a name="Required_UI_Automation_Events"></a>   
 ## Required UI Automation Events  
- The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all pane controls. For more information on events, see [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md).  
+ The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all pane controls. For more information on events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Event|Support/Value|Notes|  
 |---------------------------------------------------------------------------------|--------------------|-----------|  
@@ -81,7 +81,7 @@ ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
 ## Pane Control Type Example  
  The following image illustrates a control that implements the Pane control type.  
   
- ![Screenshot of applet window with two panes](../../../docs/framework/ui-automation/media/uiauto-pane.GIF "uiauto_pane")  
+ ![Screenshot of applet window with two panes](media/uiauto-pane.GIF "uiauto_pane")  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Tree - Control View|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Tree - Content View|  
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|  
@@ -90,5 +90,5 @@ ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
 ## See also
 
 - <xref:System.Windows.Automation.ControlType.Pane>
-- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
-- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+- [UI Automation Control Types Overview](ui-automation-control-types-overview.md)
+- [UI Automation Overview](ui-automation-overview.md)

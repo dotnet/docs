@@ -14,14 +14,14 @@ ms.assetid: d270ab45-542b-45c0-a240-e80aa4a61b95
  This section contains high-level overviews of the [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] API.  
   
 ## In This Section  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)  
- [UI Automation and Microsoft Active Accessibility](../../../docs/framework/ui-automation/ui-automation-and-microsoft-active-accessibility.md)  
- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)  
- [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)  
- [UI Automation Security Overview](../../../docs/framework/ui-automation/ui-automation-security-overview.md)  
- [Using UI Automation for Automated Testing](../../../docs/framework/ui-automation/using-ui-automation-for-automated-testing.md)  
+ [UI Automation Overview](ui-automation-overview.md)  
+ [UI Automation and Microsoft Active Accessibility](ui-automation-and-microsoft-active-accessibility.md)  
+ [UI Automation Tree Overview](ui-automation-tree-overview.md)  
+ [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)  
+ [UI Automation Properties Overview](ui-automation-properties-overview.md)  
+ [UI Automation Events Overview](ui-automation-events-overview.md)  
+ [UI Automation Security Overview](ui-automation-security-overview.md)  
+ [Using UI Automation for Automated Testing](using-ui-automation-for-automated-testing.md)  
   
 ## Reference  
  <xref:System.Windows.Automation>  

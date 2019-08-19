@@ -15,16 +15,16 @@ ms.assetid: e1ed1197-3e9e-4e78-8845-92e82787faed
  This section contains overviews and how-to topics to help you develop UI Automation clients.  
   
 ## In This Section  
- [UI Automation and Screen Scaling](../../../docs/framework/ui-automation/ui-automation-and-screen-scaling.md)  
- [UI Automation Support for Standard Controls](../../../docs/framework/ui-automation/ui-automation-support-for-standard-controls.md)  
- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)  
- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)  
- [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md)  
- [Control Pattern Mapping for UI Automation Clients](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)  
- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
- [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)  
- [UI Automation Threading Issues](../../../docs/framework/ui-automation/ui-automation-threading-issues.md)  
- [How-to Topics](../../../docs/framework/ui-automation/ui-automation-clients-for-managed-code-how-to-topics.md)  
+ [UI Automation and Screen Scaling](ui-automation-and-screen-scaling.md)  
+ [UI Automation Support for Standard Controls](ui-automation-support-for-standard-controls.md)  
+ [UI Automation Events for Clients](ui-automation-events-for-clients.md)  
+ [Caching in UI Automation Clients](caching-in-ui-automation-clients.md)  
+ [UI Automation Properties for Clients](ui-automation-properties-for-clients.md)  
+ [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md)  
+ [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)  
+ [Obtaining UI Automation Elements](obtaining-ui-automation-elements.md)  
+ [UI Automation Threading Issues](ui-automation-threading-issues.md)  
+ [How-to Topics](ui-automation-clients-for-managed-code-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Automation>

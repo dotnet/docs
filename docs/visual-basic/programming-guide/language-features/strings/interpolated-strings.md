@@ -28,7 +28,7 @@ where:
 
 - *field-width* is a signed integer that indicates the number of characters in the field. If it is positive, the field is right-aligned; if negative, left-aligned.
 
-- *format-string* is a format string appropriate for the type of object being formatted. For example, for a <xref:System.DateTime> value, it could be a [standard date and time format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) such as "D" or "d".
+- *format-string* is a format string appropriate for the type of object being formatted. For example, for a <xref:System.DateTime> value, it could be a [standard date and time format string](../../../../standard/base-types/standard-date-and-time-format-strings.md) such as "D" or "d".
 
 > [!IMPORTANT]
 > You cannot have any white space between the `$` and the `"` that starts the string. Doing so causes a compiler error.

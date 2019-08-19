@@ -1406,10 +1406,6 @@
             "redirect_url": "/dotnet/standard/assembly/names"
         },
         {
-            "source_path": "docs/framework/app-domains/assembly-placement.md",
-            "redirect_url": "/dotnet/standard/assembly/placement"
-        },
-        {
             "source_path": "docs/framework/app-domains/assembly-security-considerations.md",
             "redirect_url": "/dotnet/standard/assembly/security-considerations"
         },
@@ -3227,7 +3223,11 @@
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
+            "redirect_url": "/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md",
+            "redirect_url": "/dotnet/standard/assembly/embed-types-visual-studio"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",

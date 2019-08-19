@@ -53,7 +53,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Creating Custom Log Listeners](../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)  
  Demonstrates how to create a custom log listener and configure it to listen to the output of the `My.Application.Log` object.  
   
- [Embedding Types from Managed Assemblies](../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)  
+ [Embedding Types from Managed Assemblies](../../standard/assembly/embed-types-visual-studio.md)  
  Describes how to create an assembly and a client program that embeds types from it.  
   
  [Validating That Passwords Are Complex (Visual Basic)](../visual-basic/programming-guide/language-features/strings/walkthrough-validating-that-passwords-are-complex.md)  

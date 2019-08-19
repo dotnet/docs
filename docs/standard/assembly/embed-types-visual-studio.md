@@ -300,7 +300,7 @@ Also modify the runtime class and update its version.
    
 1. In the **Assembly Information** dialog box, change the **Assembly version** and **File version** values to *2.0.0.0*, and then select **OK**.
    
-1. Open the *SampleClass.cs* or *SampleClass.vb* file, and add the following line of code to the `SampleClass` class:
+1. Open the *SampleClass.cs* or *SampleClass.vb* file, and add the following code to the `SampleClass` class:
    
    # [C#](#tab/csharp)
    ```csharp

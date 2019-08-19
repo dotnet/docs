@@ -12,7 +12,7 @@ ms.author: "ronpet"
 # CorFlags.exe (CorFlags Conversion Tool)
 The CorFlags Conversion tool allows you to configure the CorFlags section of the header of a portable executable image.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -48,6 +48,6 @@ CorFlags.exe assembly [options]
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [64-bit Applications](../../../docs/framework/64-bit-apps.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [64-bit Applications](../64-bit-apps.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

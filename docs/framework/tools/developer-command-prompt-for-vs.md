@@ -86,5 +86,5 @@ For easier access, you can add the Visual Studio Developer Command Prompt, or an
 
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
+- [Tools](index.md)
 - [Managing External Tools](/visualstudio/ide/managing-external-tools)

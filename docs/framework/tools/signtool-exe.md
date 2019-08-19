@@ -11,7 +11,7 @@ ms.author: "ronpet"
 # SignTool.exe (Sign Tool)
 Sign Tool is a command-line tool that digitally signs files, verifies signatures in files, and time-stamps files.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -33,10 +33,10 @@ signtool [command] [options] [file_name | ...]
   
 |Command|Description|  
 |-------------|-----------------|  
-|`catdb`|Adds a catalog file to, or removes it from, a catalog database. Catalog databases are used for automatic lookup of catalog files and are identified by GUID. For a list of the options supported by the `catdb` command, see [catdb Command Options](../../../docs/framework/tools/signtool-exe.md#catdb).|  
-|`sign`|Digitally signs files. Digital signatures protect files from tampering, and enable users to verify the signer based on a signing certificate. For a list of the options supported by the `sign` command, see [sign Command Options](../../../docs/framework/tools/signtool-exe.md#sign).|  
-|`Timestamp`|Time-stamps files. For a list of the options supported by the `TimeStamp` command, see [TimeStamp Command Options](../../../docs/framework/tools/signtool-exe.md#TimeStamp).|  
-|`Verify`|Verifies the digital signature of files by determining whether the signing certificate was issued by a trusted authority, whether the signing certificate has been revoked, and, optionally, whether the signing certificate is valid for a specific policy. For a list of the options supported by the `Verify` command, see [Verify Command Options](../../../docs/framework/tools/signtool-exe.md#Verify).|  
+|`catdb`|Adds a catalog file to, or removes it from, a catalog database. Catalog databases are used for automatic lookup of catalog files and are identified by GUID. For a list of the options supported by the `catdb` command, see [catdb Command Options](signtool-exe.md#catdb).|  
+|`sign`|Digitally signs files. Digital signatures protect files from tampering, and enable users to verify the signer based on a signing certificate. For a list of the options supported by the `sign` command, see [sign Command Options](signtool-exe.md#sign).|  
+|`Timestamp`|Time-stamps files. For a list of the options supported by the `TimeStamp` command, see [TimeStamp Command Options](signtool-exe.md#TimeStamp).|  
+|`Verify`|Verifies the digital signature of files by determining whether the signing certificate was issued by a trusted authority, whether the signing certificate has been revoked, and, optionally, whether the signing certificate is valid for a specific policy. For a list of the options supported by the `Verify` command, see [Verify Command Options](signtool-exe.md#Verify).|  
   
  The following options apply to all Sign Tool commands.  
   
@@ -205,5 +205,5 @@ signtool verify /c MyCatalog.cat SystemFile.dll
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

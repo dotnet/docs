@@ -22,7 +22,7 @@ Extension objects are used to extend the functionality of style sheets. Extensio
   
  The data types returned from extension objects are one of the four basic XPath data types of `number`, `string`, `Boolean`, and `node set`.  
   
- Any method that is defined with the `params` keyword, which allows an unspecified number of parameters to be passed, is not currently supported by the <xref:System.Xml.Xsl.XslCompiledTransform> class. XSLT style sheets that utilize any method defined with the `params` keyword will not work correctly. For details, see [params](~/docs/csharp/language-reference/keywords/params.md).  
+ Any method that is defined with the `params` keyword, which allows an unspecified number of parameters to be passed, is not currently supported by the <xref:System.Xml.Xsl.XslCompiledTransform> class. XSLT style sheets that utilize any method defined with the `params` keyword will not work correctly. For details, see [params](../../../csharp/language-reference/keywords/params.md).  
   
 ### To use an XSLT extension object  
   

@@ -88,7 +88,8 @@ var index = names.IndexOf("Felipe");
 if (index == -1)
 {
     Console.WriteLine($"When an item is not found, IndexOf returns {index}");
-} else
+}
+else
 {
     Console.WriteLine($"The name {names[index]} is at index {index}");
 }
@@ -97,7 +98,8 @@ index = names.IndexOf("Not Found");
 if (index == -1)
 {
     Console.WriteLine($"When an item is not found, IndexOf returns {index}");
-} else
+}
+else
 {
     Console.WriteLine($"The name {names[index]} is at index {index}");
 
@@ -187,7 +189,7 @@ var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
 
 fibonacciNumbers.Add(previous + previous2);
 
-foreach(var item in fibonacciNumbers)
+foreach (var item in fibonacciNumbers)
     Console.WriteLine(item);
 ```
 

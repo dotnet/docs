@@ -84,7 +84,7 @@ The methods used most often for tracing are the methods for writing output to li
 - <xref:System.Diagnostics.Debug.WriteLineIf%2A?displayProperty=nameWithType>
 - <xref:System.Diagnostics.Trace.WriteIf%2A?displayProperty=nameWithType>
 - <xref:System.Diagnostics.Trace.WriteLineIf%2A?displayProperty=nameWithType>
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
-- [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)
-- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
-- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)
+- [How to: Create, Initialize and Configure Trace Switches](how-to-create-initialize-and-configure-trace-switches.md)
+- [Trace Switches](trace-switches.md)
+- [Trace Listeners](trace-listeners.md)

@@ -42,9 +42,9 @@ Contains custom application settings. This is a predefined configuration section
 
 |     | Description |
 | --- | ----------- |
-| [**\<add>**](./add-element-for-appsettings.md) | Adds a custom application setting. |
-| [**\<clear>**](./clear-element-for-appsettings.md) | Clears all previously defined application settings. |
-| [**\<remove>**](./remove-element-for-appsettings.md) | Removes a previously defined application setting. |
+| [**\<add>**](add-element-for-appsettings.md) | Adds a custom application setting. |
+| [**\<clear>**](clear-element-for-appsettings.md) | Clears all previously defined application settings. |
+| [**\<remove>**](remove-element-for-appsettings.md) | Removes a previously defined application setting. |
 
 ## Remarks
 

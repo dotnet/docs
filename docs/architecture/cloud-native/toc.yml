@@ -1,16 +1,14 @@
 - name: "Architecting Cloud Native .NET Apps for Azure"
   href: index.md
   items:
-  - name: Introduction to Cloud Native Applications
-    href: introduction.md
+  - name: Introduction to Cloud-Native Applications
+    href: introducing-cloud-native.md
     items:
     - name: Defining Cloud Native
-      href: definition.md
+      href: defining-cloud-native.md
     - name: Candidate Apps for Cloud Native
       href: candidate-apps.md
-    - name: The Azure Cloud Native Development Stack
-      href: azure-development-stack.md
-  - name: Scaling Cloud Native .NET Applications
+    - name: Scaling Cloud Native .NET Applications
     href: scale-dotnet-applications.md
     items:
     - name: Leveraging Containers and Orchestrators
@@ -34,7 +32,7 @@
       href: host-eshoponcontainers-application.md
     - name: Centralized Configuration
       href: centralized-configuration.md
-  - name: Cloud Native Communication Patterns
+  - name: Cloud-Native Communication Patterns
     href: communication-patterns.md
     items:
     - name: Communication Considerations
@@ -43,14 +41,14 @@
       href: front-end-communication.md
     - name: Cross-Service Communication
       href: cross-service-communication.md
-  - name: Distributed Data
+  - name: Cloud-Native Data Patterns
     href: distributed-data.md
     items:
-    - name: Cloud Native Data Patterns
+    - name: Cloud-Native Data Patterns
       href: data-patterns.md
     - name: Data Storage in Azure
       href: azure-data-storage.md
-  - name: Resiliency
+  - name: Cloud-Native Resiliency
     href: resiliency.md
     items:
     - name: Application Resiliency Patterns

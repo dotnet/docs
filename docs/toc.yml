@@ -1057,17 +1057,17 @@
       - name: Friend Assemblies
         items:
         - name: "How to: Create Unsigned Friend Assemblies"
-          href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md
+          href: standard/assembly/create-unsigned-friend.md
         - name: "How to: Create Signed Friend Assemblies"
-          href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md
+          href: standard/assembly/create-signed-friend.md
       - name: "How to: Create and Use Assemblies Using the Command Line"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md
+        href: standard/assembly/create-use-command-line.md
       - name: "How to: Determine If a File Is an Assembly"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md
+        href: standard/assembly/identify.md
       - name: "How to: Load and Unload Assemblies"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md
+        href: standard/assembly/load-unload.md
       - name: "How to: Share an Assembly with Other Applications"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-share-an-assembly-with-other-applications.md
+        href: standard/assembly/share-with-apps.md
       - name: "Walkthrough: Embedding Types from Managed Assemblies"
         href: standard/assembly/embed-types-visual-studio.md
     - name: Asynchronous Programming with Async and Await

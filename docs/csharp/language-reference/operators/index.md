@@ -82,7 +82,7 @@ Typically, all operator operands are evaluated. The operators that can skip eval
 
 ## C# language specification
 
-For more information, see the [Operators](~/_csharplang/spec/expressions.md#operators) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Operators](~/_csharplang/spec/expressions.md#operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 

@@ -11,4 +11,4 @@ This configuration section represents all the behaviors defined for a specific s
 
 - <xref:System.ServiceModel.Configuration.ServiceBehaviorElementCollection>
 - <xref:System.ServiceModel.Configuration.ServiceBehaviorElement>
-- [Specifying Service Run-Time Behavior](../../../../../docs/framework/wcf/specifying-service-run-time-behavior.md)
+- [Specifying Service Run-Time Behavior](../../../wcf/specifying-service-run-time-behavior.md)

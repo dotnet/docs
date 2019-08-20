@@ -41,7 +41,7 @@ A visual interface is an essential part of your composite control. This visual i
 
 ### To add a Label and a Timer to your composite control
 
-1. In Solution Explorer, right-click **ctlClock.cs**, and then click **View Designer**.
+1. In **Solution Explorer**, right-click **ctlClock.cs**, and then click **View Designer**.
 
 2. In the **Toolbox**, expand the **Common Controls** node, and then double-click **Label**.
 
@@ -92,7 +92,7 @@ Your clock control now encapsulates a <xref:System.Windows.Forms.Label> control 
 
 ### To add a property to your composite control
 
-1. In Solution Explorer, right-click **ctlClock.cs**, and then click **View Code**.
+1. In **Solution Explorer**, right-click **ctlClock.cs**, and then click **View Code**.
 
      The **Code Editor** for your control opens.
 
@@ -169,7 +169,7 @@ The first step in creating an inherited control is to derive it from its parent.
 
 ### To create the inherited control
 
-1. In Solution Explorer, right-click **ctlClockLib**, point to **Add**, and then click **User Control**.
+1. In **Solution Explorer**, right-click **ctlClockLib**, point to **Add**, and then click **User Control**.
 
      The **Add New Item** dialog box opens.
 
@@ -192,7 +192,7 @@ Properties are added to an inherited control in the same way they are added to a
 
 #### To add properties to your composite control
 
-1. In Solution Explorer, right-click **ctlAlarmClock**, and then click **View Code**.
+1. In **Solution Explorer**, right-click **ctlAlarmClock**, and then click **View Code**.
 
 2. Locate the `public class` statement. Note that your control inherits from `ctlClockLib.ctlClock`. Beneath the opening brace (`{)` statement, type the following code.
 
@@ -231,7 +231,7 @@ Your inherited control has a visual interface that is identical to the control i
 
 #### To add the label control
 
-1. In Solution Explorer, right-click **ctlAlarmClock**, and then click **View Designer**.
+1. In **Solution Explorer**, right-click **ctlAlarmClock**, and then click **View Designer**.
 
      The designer for `ctlAlarmClock` opens in the main window.
 
@@ -351,7 +351,7 @@ To put your control to use, you will need to host it on a form. As with a standa
 
 #### To build and add your control to a test form
 
-1. In Solution Explorer, right-click **ctlClockLib**, and then click **Build**.
+1. In **Solution Explorer**, right-click **ctlClockLib**, and then click **Build**.
 
 2. Add a new **Windows Application** project to the solution, and name it **Test**.
 

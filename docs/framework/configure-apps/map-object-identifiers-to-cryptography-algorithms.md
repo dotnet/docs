@@ -32,9 +32,9 @@ Digital signatures ensure that data is not tampered with when it is sent from on
 </configuration>  
 ```  
   
- The [\<oidEntry> element](../../../docs/framework/configure-apps/file-schema/cryptography/oidentry-element.md) contains two attributes. The **OID** attribute is the object identifier number. The **name** attribute is the value of the **name** attribute from the [\<nameEntry> element](../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md). There must be a mapping from an algorithm name to a class before an object identifier can be mapped to a simple name.  
+ The [\<oidEntry> element](./file-schema/cryptography/oidentry-element.md) contains two attributes. The **OID** attribute is the object identifier number. The **name** attribute is the value of the **name** attribute from the [\<nameEntry> element](./file-schema/cryptography/nameentry-element.md). There must be a mapping from an algorithm name to a class before an object identifier can be mapped to a simple name.  
   
 ## See also
 
-- [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+- [Configuring Cryptography Classes](configure-cryptography-classes.md)
 - [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

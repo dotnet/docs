@@ -32,7 +32,7 @@ Assemblies have the following properties:
 
 - You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](../../csharp/programming-guide/concepts/reflection.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
 
-- You can load an assembly just to inspect it by calling the method <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A?displayProperty=nameWithType>.
+- You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class.
 
 ## Assemblies in the common language runtime
 

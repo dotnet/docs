@@ -45,7 +45,7 @@ Example of a text stream with embedded objects and their range spans
   
 4. The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> endpoint by one requested <xref:System.Windows.Automation.Text.TextUnit> boundary.  
   
- ![Range adjustments by Move & ExpandToEnclosingUnit](media/uia-textpattern-moveandexpand-examples.png "UIA_TextPattern_MoveAndExpand_Examples")  
+ ![Range adjustments by Move & ExpandToEnclosingUnit](./media/uia-textpattern-moveandexpand-examples.png "UIA_TextPattern_MoveAndExpand_Examples")  
 Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()  
   
 <a name="Common_Scenarios"></a>   

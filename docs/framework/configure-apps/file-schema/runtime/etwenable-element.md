@@ -51,7 +51,7 @@ Specifies whether to enable event tracing for Windows (ETW) for common language 
  Beginning with Windows Vista, ETW is enabled by default. Use this element to disable ETW for an application. In earlier versions of Windows, use this element to enable ETW for an application.  
   
 > [!NOTE]
->  ETW can be enabled or disabled globally on a server by using a registry setting. See [Controlling .NET Framework Logging](../../../../../docs/framework/performance/controlling-logging.md).  
+> ETW can be enabled or disabled globally on a server by using a registry setting. See [Controlling .NET Framework Logging](../../../../../docs/framework/performance/controlling-logging.md).  
   
 ## Example  
  The following example shows how to enable ETW tracing for an application.  

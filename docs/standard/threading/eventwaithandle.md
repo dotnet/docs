@@ -15,7 +15,7 @@ ms.author: "ronpet"
 The <xref:System.Threading.EventWaitHandle> class allows threads to communicate with each other by signaling and by waiting for signals. Event wait handles (also referred to simply as events) are wait handles that can be signaled in order to release one or more waiting threads. After it is signaled, an event wait handle is reset either manually or automatically. The <xref:System.Threading.EventWaitHandle> class can represent either a local event wait handle (local event) or a named system event wait handle (named event or system event, visible to all processes).  
   
 > [!NOTE]
->  Event wait handles are not .NET [events](../events/index.md). There are no delegates or event handlers involved. The word "event" is used to describe them because they have traditionally been referred to as operating-system events, and because the act of signaling the wait handle indicates to waiting threads that an event has occurred.  
+> Event wait handles are not .NET [events](../events/index.md). There are no delegates or event handlers involved. The word "event" is used to describe them because they have traditionally been referred to as operating-system events, and because the act of signaling the wait handle indicates to waiting threads that an event has occurred.  
   
  Both local and named event wait handles use system synchronization objects, which are protected by <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> wrappers to ensure that the resources are released. You can use the <xref:System.Threading.WaitHandle.Dispose%2A> method to free the resources immediately when you have finished using the object.  
   
@@ -47,14 +47,14 @@ The <xref:System.Threading.EventWaitHandle> class allows threads to communicate 
  You can create an <xref:System.Threading.EventWaitHandle> object that represents a named system event by using one of the constructors that specifies an event name.  
   
 > [!NOTE]
->  Because named events are system wide, it is possible to have multiple <xref:System.Threading.EventWaitHandle> objects that represent the same named event. Each time you call a constructor, or the <xref:System.Threading.EventWaitHandle.OpenExisting%2A> method, a new <xref:System.Threading.EventWaitHandle> object is created. Specifying the same name repeatedly creates multiple objects that represent the same named event.  
+> Because named events are system wide, it is possible to have multiple <xref:System.Threading.EventWaitHandle> objects that represent the same named event. Each time you call a constructor, or the <xref:System.Threading.EventWaitHandle.OpenExisting%2A> method, a new <xref:System.Threading.EventWaitHandle> object is created. Specifying the same name repeatedly creates multiple objects that represent the same named event.  
   
  Caution is advised in using named events. Because they are system wide, another process that uses the same name can block your threads unexpectedly. Malicious code executing on the same computer could use this as the basis of a denial-of-service attack.  
   
  Use access control security to protect an <xref:System.Threading.EventWaitHandle> object that represents a named event, preferably by using a constructor that specifies an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object. You can also apply access control security using the <xref:System.Threading.EventWaitHandle.SetAccessControl%2A> method, but this leaves a window of vulnerability between the time the event wait handle is created and the time it is protected. Protecting events with access control security helps prevent malicious attacks, but it does not solve the problem of unintentional name collisions.  
   
 > [!NOTE]
->  Unlike the <xref:System.Threading.EventWaitHandle> class, the derived classes <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent> can represent only local wait handles. They cannot represent named system events.  
+> Unlike the <xref:System.Threading.EventWaitHandle> class, the derived classes <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent> can represent only local wait handles. They cannot represent named system events.  
   
 ## See also
 

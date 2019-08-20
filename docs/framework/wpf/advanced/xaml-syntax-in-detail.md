@@ -80,7 +80,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
  Attribute syntax is the XAML markup syntax that sets a value for a property by declaring an attribute on an existing object element. The attribute name must match the CLR member name of the property of the class that backs the relevant object element. The attribute name is followed by an assignment operator (=). The attribute value must be a string enclosed within quotes.  
   
 > [!NOTE]
->  You can use alternating quotes to place a literal quotation mark within an attribute. For instance you can use single quotes as a means to declare a string that contains a double quote character within it. Whether you use single or double quotes, you should use a matching pair for opening and closing the attribute value string. There are also escape sequences or other techniques available for working around character restrictions imposed by any particular XAML syntax. See [XML Character Entities and XAML](../../xaml-services/xml-character-entities-and-xaml.md).  
+> You can use alternating quotes to place a literal quotation mark within an attribute. For instance you can use single quotes as a means to declare a string that contains a double quote character within it. Whether you use single or double quotes, you should use a matching pair for opening and closing the attribute value string. There are also escape sequences or other techniques available for working around character restrictions imposed by any particular XAML syntax. See [XML Character Entities and XAML](../../xaml-services/xml-character-entities-and-xaml.md).  
   
  In order to be set through attribute syntax, a property must be public and must be writeable. The value of the property in the backing type system must be a value type, or must be a reference type that can be instantiated or referenced by a XAML processor when accessing the relevant backing type.  
   
@@ -163,7 +163,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
  An implicit collection element creates a member in the logical tree representation, even though it does not appear in the markup as an element. Usually the constructor of the parent type performs the instantiation for the collection that is one of its properties, and the initially empty collection becomes part of the object tree.  
   
 > [!NOTE]
->  The generic list and dictionary interfaces (<xref:System.Collections.Generic.IList%601> and <xref:System.Collections.Generic.IDictionary%602>) are not supported for collection detection. However, you can use the <xref:System.Collections.Generic.List%601> class as a base class, because it implements <xref:System.Collections.IList> directly, or <xref:System.Collections.Generic.Dictionary%602> as a base class, because it implements <xref:System.Collections.IDictionary> directly.  
+> The generic list and dictionary interfaces (<xref:System.Collections.Generic.IList%601> and <xref:System.Collections.Generic.IDictionary%602>) are not supported for collection detection. However, you can use the <xref:System.Collections.Generic.List%601> class as a base class, because it implements <xref:System.Collections.IList> directly, or <xref:System.Collections.Generic.Dictionary%602> as a base class, because it implements <xref:System.Collections.IDictionary> directly.  
   
  In the .NET Reference pages for collection types, this syntax with the deliberate omission of the object element for a collection is occasionally noted in the XAML syntax sections as Implicit Collection Syntax.  
   

@@ -15,7 +15,7 @@ This topic discusses how access is restricted on the types of resources that <xr
 - Full trust for durable resources, configuration management applications, and legacy interop applications.  
   
 > [!NOTE]
->  You should not call any of the enlistment interfaces with impersonated contexts.  
+> You should not call any of the enlistment interfaces with impersonated contexts.  
   
 ## Trust Levels  
   

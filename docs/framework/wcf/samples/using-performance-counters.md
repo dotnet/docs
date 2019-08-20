@@ -7,7 +7,7 @@ ms.assetid: 00a787af-1876-473c-a48d-f52b51e28a3f
 This sample demonstrates how to access Windows Communication Foundation (WCF) performance counters and how to create user-defined performance counters. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  In this sample, the client calls the four methods of the `ICalculator` service. The client continues to do this until it is interrupted by the user. The service remains unchanged.  
   

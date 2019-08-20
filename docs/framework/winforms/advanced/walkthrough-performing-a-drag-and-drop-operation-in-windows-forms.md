@@ -18,7 +18,7 @@ To perform drag-and-drop operations within Windows-based applications you must h
  In the following example, the <xref:System.Windows.Forms.Control.MouseDown> event is used to start the drag operation because it is the most intuitive (most drag-and-drop actions begin with the mouse button being depressed). However, remember that any event could be used to initiate a drag-and-drop procedure.  
   
 > [!NOTE]
->  Certain controls have custom drag-specific events. The <xref:System.Windows.Forms.ListView> and <xref:System.Windows.Forms.TreeView> controls, for example, have an <xref:System.Windows.Forms.TreeView.ItemDrag> event.  
+> Certain controls have custom drag-specific events. The <xref:System.Windows.Forms.ListView> and <xref:System.Windows.Forms.TreeView> controls, for example, have an <xref:System.Windows.Forms.TreeView.ItemDrag> event.  
   
 #### To start a drag operation  
   

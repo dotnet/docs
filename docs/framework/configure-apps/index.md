@@ -29,7 +29,7 @@ ms.assetid: 86bd26d3-737e-4484-9782-19b17f34cd1f
 The .NET Framework, through configuration files, gives developers and administrators control and flexibility over the way applications run. Configuration files are XML files that can be changed as needed. An administrator can control which protected resources an application can access, which versions of assemblies an application will use, and where remote applications and objects are located. Developers can put settings in configuration files, eliminating the need to recompile an application every time a setting changes. This section describes what can be configured and why configuring an application might be useful.  
   
 > [!NOTE]
->  Managed code can use the classes in the <xref:System.Configuration> namespace to read settings from the configuration files, but not to write settings to those files.  
+> Managed code can use the classes in the <xref:System.Configuration> namespace to read settings from the configuration files, but not to write settings to those files.  
   
  This topic describes the syntax of configuration files and provides information about the three types of configuration files: machine, application, and security.  
   
@@ -51,7 +51,7 @@ The .NET Framework, through configuration files, gives developers and administra
  The configuration system first looks in the machine configuration file for the [**\<appSettings>** element](~/docs/framework/configure-apps/file-schema/appsettings/index.md) and other configuration sections that a developer might define. It then looks in the application configuration file. To keep the machine configuration file manageable, it is best to put these settings in the application configuration file. However, putting the settings in the machine configuration file can make your system more maintainable. For example, if you have a third-party component that both your client and server application uses, it is easier to put the settings for that component in one place. In this case, the machine configuration file is the appropriate place for the settings, so you don't have the same settings in two different files.  
   
 > [!NOTE]
->  Deploying an application using XCOPY will not copy the settings in the machine configuration file.  
+> Deploying an application using XCOPY will not copy the settings in the machine configuration file.  
   
  For more information about how the common language runtime uses the machine configuration file for assembly binding, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   
@@ -84,7 +84,7 @@ The .NET Framework, through configuration files, gives developers and administra
  Security configuration files contain information about the code group hierarchy and permission sets associated with a policy level. We strongly recommend that you use the [Code Access Security Policy tool (Caspol.exe)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md) to modify security policy to ensure that policy changes do not corrupt the security configuration files.  
   
 > [!NOTE]
->  Starting with the .NET Framework 4, the security configuration files are present only if security policy has been changed.  
+> Starting with the .NET Framework 4, the security configuration files are present only if security policy has been changed.  
   
  The security configuration files are in the following locations:  
   

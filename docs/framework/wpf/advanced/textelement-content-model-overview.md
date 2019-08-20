@@ -60,7 +60,7 @@ This content model overview describes the supported content for a <xref:System.W
  You can manipulate (add or remove items) from these collections using the respective properties of **Inlines**, **Blocks**, and **ListItems**. The following examples show how to manipulate the contents of a Span using the **Inlines** property.  
   
 > [!NOTE]
->  Table uses several collections to manipulate its contents, but they are not covered here. For more information, see [Table Overview](table-overview.md).  
+> Table uses several collections to manipulate its contents, but they are not covered here. For more information, see [Table Overview](table-overview.md).  
   
  The following example creates a new <xref:System.Windows.Documents.Span> object, and then uses the `Add` method to add two text runs as content children of the <xref:System.Windows.Documents.Span>.  
   

@@ -9,7 +9,7 @@ This sample demonstrates how to use Windows Communication Foundation (WCF) to cr
  AJAX support in WCF is optimized for use with ASP.NET AJAX through the <xref:System.Web.UI.ScriptManager> control. For an example of using WCF with ASP.NET AJAX, see the [AJAX Samples](ajax.md).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The service in the following sample is a WCF service with no AJAX-specific code. Because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is not applied, the default HTTP verb ("POST") is used. The service has one operation, `DoMath`, which returns a complex type named `MathResult`. The complex type is a standard data contract type, which also contains no AJAX-specific code.  
 

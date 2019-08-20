@@ -59,7 +59,7 @@ End With
  Unless the block contains a loop, the statements run only once. You can nest different kinds of control structures. For more information, see [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md).  
   
 > [!NOTE]
->  You can use the `With` keyword in object initializers also. For more information and examples, see [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md) and [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).  
+> You can use the `With` keyword in object initializers also. For more information and examples, see [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md) and [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).  
 >   
 >  If you're using a `With` block only to initialize the properties or fields of an object that you've just instantiated, consider using an object initializer instead.  
   

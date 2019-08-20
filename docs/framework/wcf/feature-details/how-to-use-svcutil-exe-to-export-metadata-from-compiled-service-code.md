@@ -13,7 +13,7 @@ Svcutil.exe can export metadata for services, contracts, and data types in compi
 - To export all data contract types within a set of assemblies, use the `/dataContractOnly` option.  
   
 > [!NOTE]
->  Use the `/reference` option to specify the file paths to any dependent assemblies.  
+> Use the `/reference` option to specify the file paths to any dependent assemblies.  
   
 ### To export metadata for compiled service contracts  
   

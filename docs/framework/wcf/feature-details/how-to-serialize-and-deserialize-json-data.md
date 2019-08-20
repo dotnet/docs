@@ -11,7 +11,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
  Normally, JSON serialization and deserialization are handled automatically by Windows Communication Foundation (WCF) when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly.   
   
 > [!NOTE]
->  If an error occurs during serialization of an outgoing reply on the server or for some other reason, it may not get returned to the client as a fault.  
+> If an error occurs during serialization of an outgoing reply on the server or for some other reason, it may not get returned to the client as a fault.  
   
  This article is based on the [JSON serialization](../samples/json-serialization.md) sample.  
   
@@ -111,7 +111,7 @@ public static User ReadToObject(string json)
 ```  
   
 > [!NOTE]
->  The JSON serializer throws a serialization exception for data contracts that have multiple members with the same name, as shown in the following sample code.  
+> The JSON serializer throws a serialization exception for data contracts that have multiple members with the same name, as shown in the following sample code.  
   
 ```csharp  
 [DataContract]  

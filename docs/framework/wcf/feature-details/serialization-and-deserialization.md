@@ -163,7 +163,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
  Use the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods to write the end element, write the object contents, and close the wrapper element, respectively.  
   
 > [!NOTE]
->  There are no <xref:System.IO.Stream> overloads of these methods.  
+> There are no <xref:System.IO.Stream> overloads of these methods.  
   
  This step-by-step serialization has two common uses. One is to insert contents such as attributes or comments between `WriteStartObject` and `WriteObjectContent`,  as shown in the following example.  
   
@@ -194,7 +194,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
 ```  
   
 > [!NOTE]
->  Using step-by-step serialization may result in schema-invalid XML.  
+> Using step-by-step serialization may result in schema-invalid XML.  
   
 ## Deserialization  
  The following information applies to any class that inherits from the <xref:System.Runtime.Serialization.XmlObjectSerializer>, including the <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.NetDataContractSerializer> classes.  

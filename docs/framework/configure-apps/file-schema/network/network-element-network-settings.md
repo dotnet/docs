@@ -64,7 +64,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
  You can also use basic authentication (a user name and password) to authenticate yourself to the SMTP server. To use this option, you must specify a valid user name and password for the specified SMTP server.  
   
 > [!NOTE]
->  Basic authentication sends the `userName` and `password` values to the server unencrypted. Anyone monitoring network traffic can view your credentials and use them to connect to the server. You should consider using a more secure authentication mechanism, such as Kerberos or NT LAN Manager (NTLM.) If `defaultCredentials` is `true`, Kerberos or NTLM will be used if the server supports these protocols.  
+> Basic authentication sends the `userName` and `password` values to the server unencrypted. Anyone monitoring network traffic can view your credentials and use them to connect to the server. You should consider using a more secure authentication mechanism, such as Kerberos or NT LAN Manager (NTLM.) If `defaultCredentials` is `true`, Kerberos or NTLM will be used if the server supports these protocols.  
   
  The basic authentication and default network credentials options are mutually exclusive; if you set `defaultCredentials` to `true` and specify a user name and password, the default network credential is used, and the basic authentication data is ignored.  
   

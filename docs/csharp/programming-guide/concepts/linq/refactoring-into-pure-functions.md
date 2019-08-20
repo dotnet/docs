@@ -8,7 +8,7 @@ ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
 An important aspect of pure functional transformations is learning how to refactor code using pure functions.  
   
 > [!NOTE]
->  The common nomenclature in functional programming is that you refactor programs using pure functions. In Visual Basic and C++, this aligns with the use of functions in the respective languages. However, in C#, functions are called methods. For the purposes of this discussion, a pure function is implemented as a method in C#.  
+> The common nomenclature in functional programming is that you refactor programs using pure functions. In Visual Basic and C++, this aligns with the use of functions in the respective languages. However, in C#, functions are called methods. For the purposes of this discussion, a pure function is implemented as a method in C#.  
   
  As noted previously in this section, a pure function has two useful characteristics:  
   

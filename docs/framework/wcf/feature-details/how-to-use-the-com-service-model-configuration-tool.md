@@ -9,7 +9,7 @@ ms.assetid: 7e68cd8d-5fda-4641-b92f-290db874376e
 Once you have selected an appropriate hosting mode, use the COM+ Service Model Configuration command-line tool (ComSvcConfig.exe) to configure the application interfaces that will be exposed as Web services.  
   
 > [!NOTE]
->  You must be an administrator on the machine to perform any of the following tasks.  
+> You must be an administrator on the machine to perform any of the following tasks.  
   
  When using ComSvcConfig.exe on a Windows 7 machine to configure a web service to use the latest service model version (currently v4.5), perform the following steps:  
   

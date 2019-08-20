@@ -41,7 +41,7 @@ ms.assetid: 7a808b00-9c3c-479a-aa94-717280fefd71
  You can call <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> only on an object tracked by the <xref:System.Data.Linq.DataContext>. For an `Untracked` object, you must call <xref:System.Data.Linq.Table%601.Attach%2A> before you call <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A>. Calling <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> on an `Untracked` object throws an exception.  
   
 > [!NOTE]
->  Removing an object from a table tells [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] to generate a corresponding SQL `DELETE` command at the time of <xref:System.Data.Linq.DataContext.SubmitChanges%2A>. This action does not remove the object from the cache or propagate the deletion to related objects.  
+> Removing an object from a table tells [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] to generate a corresponding SQL `DELETE` command at the time of <xref:System.Data.Linq.DataContext.SubmitChanges%2A>. This action does not remove the object from the cache or propagate the deletion to related objects.  
 >   
 >  To reclaim the `id` of a deleted object, use a new <xref:System.Data.Linq.DataContext> instance. For cleanup of related objects, you can use the *cascade delete* feature of the database, or else manually delete the related objects.  
 >   

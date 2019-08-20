@@ -22,7 +22,7 @@ Markup files that are created in [!INCLUDE[TLA#tla_visualstu](../../../../includ
 |"|`&quot;`|Double quote symbol.|  
   
 > [!NOTE]
->  If you create a markup file using a text editor, such as [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Notepad, you must save the file in the [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] UTF-8 file format in order to preserve any encoded special characters.  
+> If you create a markup file using a text editor, such as [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Notepad, you must save the file in the [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] UTF-8 file format in order to preserve any encoded special characters.  
   
  The following example shows how you can use special characters in text when creating markup.  
   

@@ -15,7 +15,7 @@ ms.author: "ronpet"
 Starting with the .NET Framework version 2.0, the common language runtime allows most unhandled exceptions in threads to proceed naturally. In most cases this means that the unhandled exception causes the application to terminate.  
   
 > [!NOTE]
->  This is a significant change from the .NET Framework versions 1.0 and 1.1, which provide a backstop for many unhandled exceptions — for example, unhandled exceptions in thread pool threads. See [Change from Previous Versions](#ChangeFromPreviousVersions) later in this topic.  
+> This is a significant change from the .NET Framework versions 1.0 and 1.1, which provide a backstop for many unhandled exceptions — for example, unhandled exceptions in thread pool threads. See [Change from Previous Versions](#ChangeFromPreviousVersions) later in this topic.  
   
  The common language runtime provides a backstop for certain unhandled exceptions that are used for controlling program flow:  
   
@@ -30,7 +30,7 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
  If these exceptions are unhandled in the main thread, or in threads that entered the runtime from unmanaged code, they proceed normally, resulting in termination of the application.  
   
 > [!NOTE]
->  It is possible for the runtime to throw an unhandled exception before any managed code has had a chance to install an exception handler. Even though managed code had no chance to handle such an exception, the exception is allowed to proceed naturally.  
+> It is possible for the runtime to throw an unhandled exception before any managed code has had a chance to install an exception handler. Even though managed code had no chance to handle such an exception, the exception is allowed to proceed naturally.  
   
 ## Exposing Threading Problems During Development  
  When threads are allowed to fail silently, without terminating the application, serious programming problems can go undetected. This is a particular problem for services and other applications which run for extended periods. As threads fail, program state gradually becomes corrupted. Application performance may degrade, or the application might become unresponsive.  

@@ -11,7 +11,7 @@ The Default Message Contract sample demonstrates a service where a custom user-d
  The client is a console program (.exe) and the service library (.dll) is hosted by Internet Information Services (IIS). Client activity is visible in the console window.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  In the service, a single service operation is defined that accepts and returns custom messages of type `MyMessage`. Although in this sample the request and response messages are of the same type, they could of course be different message contracts if necessary.  
   

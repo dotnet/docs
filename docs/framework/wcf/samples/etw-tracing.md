@@ -7,7 +7,7 @@ ms.assetid: ac99a063-e2d2-40cc-b659-d23c2f783f92
 This sample demonstrates how to implement End-to-End (E2E) tracing using Event Tracing for Windows (ETW) and the `ETWTraceListener` that is provided with this sample. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) and includes ETW tracing.  
   
 > [!NOTE]
->  The set-up procedure and build instructions for this sample are located at the end of this topic.  
+> The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample assumes that you are familiar with [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md).  
   
@@ -44,7 +44,7 @@ This sample demonstrates how to implement End-to-End (E2E) tracing using Event T
  Before using this listener, an ETW Trace Session must be started. This session can be started by using Logman.exe or Tracelog.exe. A SetupETW.bat file is included with this sample so that you can set up the ETW Trace Session along with a CleanupETW.bat file for closing the session and completing the log file.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic. For more information about these tools, see <https://go.microsoft.com/fwlink/?LinkId=56580>  
+> The setup procedure and build instructions for this sample are located at the end of this topic. For more information about these tools, see <https://go.microsoft.com/fwlink/?LinkId=56580>  
   
  When using the ETWTraceListener, traces are logged in binary .etl files. With ServiceModel tracing turned on, all generated traces appear in the same file. Use [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) for viewing .etl and .svclog log files. The viewer creates an end-to-end view of the system that makes it possible to trace a message from its source to its destination and point of consumption.  
   

@@ -15,7 +15,7 @@ Microsoft SQL Server Express Edition (SQL Server Express) supports the user inst
  For more information, see "User Instances" in SQL Server Books Online.  
   
 > [!NOTE]
->  User instances are not needed for users who are already administrators on their own computers, or for scenarios involving multiple database users.  
+> User instances are not needed for users who are already administrators on their own computers, or for scenarios involving multiple database users.  
   
 ## Enabling User Instances  
  To generate user instances, a parent instance of SQL Server Express must be running. User instances are enabled by default when SQL Server Express is installed, and they can be explicitly enabled or disabled by a system administrator executing the **sp_configure** system stored procedure on the parent instance.  
@@ -52,7 +52,7 @@ Initial Catalog=InstanceDB;
 ```  
   
 > [!NOTE]
->  You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder><xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance%2A> and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename%2A> properties to build a connection string at run time.  
+> You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder><xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance%2A> and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename%2A> properties to build a connection string at run time.  
   
 ### Using the &#124;DataDirectory&#124; Substitution String  
  `AttachDbFileName` was extended in ADO.NET 2.0 with the introduction of the `|DataDirectory|` (enclosed in pipe symbols) substitution string. `DataDirectory` is used in conjunction with `AttachDbFileName` to indicate a relative path to a data file, allowing developers to create connection strings that are based on a relative path to the data source instead of being required to specify a full path.  
@@ -71,12 +71,12 @@ Initial Catalog=Northwind;
  If the connection string has an improperly formatted substitution string, an <xref:System.ArgumentException> will be thrown.  
   
 > [!NOTE]
->  <xref:System.Data.SqlClient> resolves the substitution strings into full paths against the local computer file system. Therefore, remote server, HTTP, and UNC path names are not supported. An exception is thrown when the connection is opened if the server is not located on the local computer.  
+> <xref:System.Data.SqlClient> resolves the substitution strings into full paths against the local computer file system. Therefore, remote server, HTTP, and UNC path names are not supported. An exception is thrown when the connection is opened if the server is not located on the local computer.  
   
  When the <xref:System.Data.SqlClient.SqlConnection> is opened, it is redirected from the default SQL Server Express instance to a run-time initiated instance running under the caller's account.  
   
 > [!NOTE]
->  It may be necessary to increase the <xref:System.Data.SqlClient.SqlConnection.ConnectionTimeout%2A> value since user instances may take longer to load than regular instances.  
+> It may be necessary to increase the <xref:System.Data.SqlClient.SqlConnection.ConnectionTimeout%2A> value since user instances may take longer to load than regular instances.  
   
  The following code fragment opens a new `SqlConnection`, displays the connection string in the console window, and then closes the connection when exiting the `using` code block.  
   
@@ -110,13 +110,13 @@ private static void OpenSqlConnection()
 ```  
   
 > [!NOTE]
->  User instances are not supported in common language runtime (CLR) code that is running inside of SQL Server. An <xref:System.InvalidOperationException> is thrown if `Open` is called on a <xref:System.Data.SqlClient.SqlConnection> that has `User Instance=true` in the connection string.  
+> User instances are not supported in common language runtime (CLR) code that is running inside of SQL Server. An <xref:System.InvalidOperationException> is thrown if `Open` is called on a <xref:System.Data.SqlClient.SqlConnection> that has `User Instance=true` in the connection string.  
   
 ## Lifetime of a User Instance Connection  
  Unlike versions of SQL Server that run as a service, SQL Server Express instances do not need to be manually started and stopped. Each time a user logs in and connects to a user instance, the user instance is started if it is not already running. User instance databases have the `AutoClose` option set so that the database is automatically shut down after a period of inactivity. The sqlservr.exe process that is started is kept running for a limited time-out period after the last connection to the instance is closed, so it does not need to be restarted if another connection is opened before the time-out has expired. The user instance automatically shuts down if no new connection opens before that time-out period has expired. A system administrator on the parent instance can set the duration of the time-out period for a user instance by using **sp_configure** to change the **user instance timeout** option. The default is 60 minutes.  
   
 > [!NOTE]
->  If `Min Pool Size` is used in the connection string with a value greater than zero, the connection pooler will always maintain a few opened connections, and the user instance will not automatically shut down.  
+> If `Min Pool Size` is used in the connection string with a value greater than zero, the connection pooler will always maintain a few opened connections, and the user instance will not automatically shut down.  
   
 ## How User Instances Work  
  The first time a user instance is generated for each user, the **master** and **msdb** system databases are copied from the Template Data folder to a path under the user's local application data repository directory for exclusive use by the user instance. This path is typically `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Microsoft SQL Server Data\SQLEXPRESS`. When a user instance starts up, the **tempdb**, log, and trace files are also written to this directory. A name is generated for the instance, which is guaranteed to be unique for each user.  
@@ -126,7 +126,7 @@ private static void OpenSqlConnection()
  Users must be granted both read and write permissions on the .mdf and .ldf files specified in the connection string.  
   
 > [!NOTE]
->  The .mdf and .ldf files represent the database and log files, respectively. These two files are a matched set, so care must be taken during backup and restore operations. The database file contains information about the exact version of the log file, and the database will not open if it is coupled with the wrong log file.  
+> The .mdf and .ldf files represent the database and log files, respectively. These two files are a matched set, so care must be taken during backup and restore operations. The database file contains information about the exact version of the log file, and the database will not open if it is coupled with the wrong log file.  
   
  To avoid data corruption, a database in the user instance is opened with exclusive access. If two different user instances share the same database on the same computer, the user on the first instance must close the database before it can be opened in a second instance.  
   

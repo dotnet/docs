@@ -41,14 +41,14 @@ match [NOT] LIKE pattern [ESCAPE escape]
 |[^]|Any single character not in the specified range ([^a-f]) or set ([^abcdef]).|`lastname like 'de[^l]%'` finds all last names that begin with "de" and do not include "l" as the following letter.|  
   
 > [!NOTE]
->  The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] LIKE operator and ESCAPE clause cannot be applied to `System.DateTime` or `System.Guid` values.  
+> The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] LIKE operator and ESCAPE clause cannot be applied to `System.DateTime` or `System.Guid` values.  
   
  LIKE supports ASCII pattern matching and Unicode pattern matching. When all parameters are ASCII characters, ASCII pattern matching is performed. If one or more of the arguments are Unicode, all arguments are converted to Unicode and Unicode pattern matching is performed. When you use Unicode with LIKE, trailing blanks are significant; however, for non-Unicode, trailing blanks are not significant. The pattern string syntax of [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is the same as that of Transact-SQL.  
   
  A pattern can include regular characters and wildcard characters. During pattern matching, regular characters must exactly match the characters specified in the character `string`. However, wildcard characters can be matched with arbitrary fragments of the character string. When it is used with wildcard characters, the LIKE operator is more flexible than the = and != string comparison operators.  
   
 > [!NOTE]
->  You may use provider-specific extensions if you target a specific provider. However, such constructs may be treated differently by other providers, for example. SqlServer supports [first-last] and [^first-last] patterns where the former matches exactly one character between first and last, and the latter matches exactly one character that is not between first and last.  
+> You may use provider-specific extensions if you target a specific provider. However, such constructs may be treated differently by other providers, for example. SqlServer supports [first-last] and [^first-last] patterns where the former matches exactly one character between first and last, and the latter matches exactly one character that is not between first and last.  
   
 ### Escape  
  By using the ESCAPE clause, you can search for character strings that include one or more of the special wildcard characters described in the table in the previous section. For example, assume several documents include the literal "100%" in the title and you want to search for all of those documents. Because the percent (%) character is a wildcard character, you must escape it using the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] ESCAPE clause to successfully execute the search. The following is an example of this filter.  

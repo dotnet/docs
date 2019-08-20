@@ -41,7 +41,7 @@ Windows Service applications are based on a class that inherits from the <xref:S
 |<xref:System.ServiceProcess.ServiceBase.OnPowerEvent%2A>|Indicate how the service should respond when a power management event is received, such as a low battery or suspended operation.|  
   
 > [!NOTE]
->  These methods represent states that the service moves through in its lifetime; the service transitions from one state to the next. For example, you will never get the service to respond to an <xref:System.ServiceProcess.ServiceBase.OnContinue%2A> command before <xref:System.ServiceProcess.ServiceBase.OnStart%2A> has been called.  
+> These methods represent states that the service moves through in its lifetime; the service transitions from one state to the next. For example, you will never get the service to respond to an <xref:System.ServiceProcess.ServiceBase.OnContinue%2A> command before <xref:System.ServiceProcess.ServiceBase.OnStart%2A> has been called.  
   
  There are several other properties and methods that are of interest. These include:  
   

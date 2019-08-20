@@ -22,7 +22,7 @@ By default, all Windows Service projects have the ability to interact with the A
  If you want to write to an event log other than the Application log, you must set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property to `false`, create your own custom event log within your services code, and register your service as a valid source of entries for that log. You must then write code to record entries to the log whenever an action you're interested in occurs.  
   
 > [!NOTE]
->  If you use a custom event log and configure your service application to write to it, you must not attempt to access the event log before setting the service's <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property in your code. The event log needs this property's value to register your service as a valid source of events.  
+> If you use a custom event log and configure your service application to write to it, you must not attempt to access the event log before setting the service's <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property in your code. The event log needs this property's value to register your service as a valid source of events.  
   
 ### To enable default event logging for your service  
   

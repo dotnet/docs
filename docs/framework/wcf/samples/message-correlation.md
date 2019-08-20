@@ -207,7 +207,7 @@ static void PlaceOrder()
  The MSMQ queue from which the order responses are received is specified in an appSettings section of the configuration file, as shown in the following sample configuration.
 
 > [!NOTE]
->  The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses "localhost" for the local computer. A properly formed format name follows msmq.formatname in the URI according to MSMQ guidelines.
+> The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses "localhost" for the local computer. A properly formed format name follows msmq.formatname in the URI according to MSMQ guidelines.
 
 ```xml
 <appSettings>
@@ -261,7 +261,7 @@ static void DisplayOrderStatus()
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client and sends a response back to the client. The client displays the response received from the service. Press ENTER in each console window to shut down the service and client.
 
 > [!NOTE]
->  This sample requires the installation of Message Queuing (MSMQ). See the MSMQ installation instructions in the See Also section.
+> This sample requires the installation of Message Queuing (MSMQ). See the MSMQ installation instructions in the See Also section.
 
 ### To setup, build, and run the sample
 

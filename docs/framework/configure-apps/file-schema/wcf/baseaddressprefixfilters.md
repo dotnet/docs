@@ -72,7 +72,7 @@ http://test2.fabrikam.com/Service.svc
  By default, when prefix is not specified, all addresses are passed through. Specifying the prefix only allows the matching base address for that scheme to be passed through.  
   
 > [!NOTE]
->  The filter does not support any wildcards. In addition, the baseAddresses supplied by IIS may have addresses bound to other schemes not present in the `baseAddressPrefixFilters` list. These addresses are not filtered out.  
+> The filter does not support any wildcards. In addition, the baseAddresses supplied by IIS may have addresses bound to other schemes not present in the `baseAddressPrefixFilters` list. These addresses are not filtered out.  
   
 ## See also
 

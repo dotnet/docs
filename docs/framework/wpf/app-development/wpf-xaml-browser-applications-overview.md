@@ -34,7 +34,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
  When you run the XBAP project, it opens in a browser window instead of a stand-alone window. When you debug the XBAP from Visual Studio, the application runs with Internet zone permission and will therefore throw security exceptions if those permissions are exceeded. For more information, see [Security](../security-wpf.md) and [WPF Partial Trust Security](../wpf-partial-trust-security.md).  
   
 > [!NOTE]
->  If you are not developing with Visual Studio or want to learn more about the project files, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
+> If you are not developing with Visual Studio or want to learn more about the project files, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
 <a name="deploying_a_xbap"></a>   
 ## Deploying an XBAP  
@@ -168,7 +168,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 |Internet|Fails with "Trust Not Granted"|Sign the XBAP with a certificate.|  
   
 > [!NOTE]
->  The behavior described in the previous table is for full-trust XBAPs that do not follow the ClickOnce Trusted Deployment model.  
+> The behavior described in the previous table is for full-trust XBAPs that do not follow the ClickOnce Trusted Deployment model.  
   
  It is recommended that you use the ClickOnce Trusted Deployment model for deploying a full-trust XBAP. This model allows your XBAP to be granted full trust automatically, regardless of the security zone, so that the user is not prompted. As part of this model, you must sign your application with a certificate from a trusted publisher. For more information, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and [Introduction to Code Signing](https://go.microsoft.com/fwlink/?LinkId=166327).  
   

@@ -26,7 +26,7 @@ The Windows Forms <xref:System.Windows.Forms.SplitContainer> control can be thou
  You can also restrict the size and movement of the <xref:System.Windows.Forms.SplitContainer> control. The <xref:System.Windows.Forms.SplitContainer.FixedPanel%2A> property determines which panel will remain the same size after the <xref:System.Windows.Forms.SplitContainer> control is resized, and the <xref:System.Windows.Forms.SplitContainer.IsSplitterFixed%2A> property determines if the splitter is movable by the keyboard or mouse.  
   
 > [!NOTE]
->  Even if the <xref:System.Windows.Forms.SplitContainer.IsSplitterFixed%2A> property is set to `true`, the splitter may still be moved programmatically; for example, by using the <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> property.  
+> Even if the <xref:System.Windows.Forms.SplitContainer.IsSplitterFixed%2A> property is set to `true`, the splitter may still be moved programmatically; for example, by using the <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> property.  
   
  Finally, each panel of the <xref:System.Windows.Forms.SplitContainer> control has properties to determine its individual size.  
   

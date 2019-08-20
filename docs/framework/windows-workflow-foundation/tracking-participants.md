@@ -41,7 +41,7 @@ Tracking participants are extensibility points that allow a workflow developer t
 ```  
   
 > [!NOTE]
->  If a `trackingProfile` name is not specified, such as just `<etwTracking/>` or `<etwTracking profileName=""/>`, then the default tracking profile installed with the [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in the Machine.config file is used.  
+> If a `trackingProfile` name is not specified, such as just `<etwTracking/>` or `<etwTracking profileName=""/>`, then the default tracking profile installed with the [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in the Machine.config file is used.  
   
  In the Machine.config file, the default tracking profile subscribes to workflow instance records and faults.  
   
@@ -71,7 +71,7 @@ Tracking participants are extensibility points that allow a workflow developer t
  Events that are written to an ETW session by the ETW tracking participant can be accessed through the Event Viewer (when using the default provider ID). This allows for rapidly viewing of tracking records that have been emitted by the workflow.  
   
 > [!NOTE]
->  Tracking record events emitted to an ETW session use event IDs in the range of 100 through 199.  
+> Tracking record events emitted to an ETW session use event IDs in the range of 100 through 199.  
   
 #### To enable viewing the Tracking Records in Event Viewer  
   

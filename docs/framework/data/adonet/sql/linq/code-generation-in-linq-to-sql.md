@@ -26,7 +26,7 @@ You can generate code to represent a database by using either the Object Relatio
  Distinguish this schema definition file from the schema definition file that is used to validate an external mapping file. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)).  
   
 > [!NOTE]
->  Visual Studio users will also find this XSD file in the XML Schemas dialog box as "DbmlSchema.xsd". To use the XSD file correctly for validating a DBML file, see [How to: Validate DBML and External Mapping Files](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md).  
+> Visual Studio users will also find this XSD file in the XML Schemas dialog box as "DbmlSchema.xsd". To use the XSD file correctly for validating a DBML file, see [How to: Validate DBML and External Mapping Files](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md).  
   
 ```  
 ﻿?<?xml version="1.0" encoding="utf-16"?>  

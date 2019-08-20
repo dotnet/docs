@@ -11,7 +11,7 @@ This sample demonstrates how to implement a data contract. Data contracts allow 
  In this sample, the service is hosted by Internet Information Services (IIS) and the client is a console application (.exe).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The service contract for this service uses complex numbers, as shown in the following sample code.  
   

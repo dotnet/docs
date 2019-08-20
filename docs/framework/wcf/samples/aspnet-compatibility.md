@@ -9,7 +9,7 @@ This sample demonstrates how to enable ASP.NET Compatibility mode in Windows Com
  In this sample, the client is a console application (an executable) and the service is hosted in Internet Information Services (IIS).  
   
 > [!NOTE]
->  The set-up procedure and build instructions for this sample are located at the end of this topic.  
+> The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
 This sample requires a [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] application pool in order to run. To create a new application pool, or to modify the default application pool, follow these steps.  
 

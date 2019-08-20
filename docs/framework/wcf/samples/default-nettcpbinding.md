@@ -9,7 +9,7 @@ ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
 This sample demonstrates the use of the <xref:System.ServiceModel.NetTcpBinding> binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. In this sample, the service is self-hosted. Both the client and service are console applications.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

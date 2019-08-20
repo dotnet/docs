@@ -7,7 +7,7 @@ ms.assetid: bb8c8293-5973-4aef-9b07-afeff5d3293c
 This sample demonstrates the use of data binding in a Windows Presentation Foundation (WPF) client. The sample uses a Windows Communication Foundation (WCF) service that randomly generates an array of albums to return to the client. Each album has a name, a price, and a list of album tracks. The album tracks have a name and duration. The information that is returned by the service is automatically bound to the user interface (UI) provided by the Windows Presentation Foundation (WPF) client.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  Data binding allows a data source to be automatically bound to a UI. This simplifies the programming model because it does not require that you programmatically update each UI element with the data from a data object or an array of data objects. You can bind an object to a single UI element or an array to a control that takes multiple inputs, such as a `ListBox`. The following code shows how to bind data to the `DataContext` of a UI element.  
   

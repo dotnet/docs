@@ -7,7 +7,7 @@ ms.assetid: 97ce4d3d-ca6f-45fa-b33b-2429bb84e65b
 The sample demonstrates how to create a binding that is designed to support streaming scenarios when the HTTP transport is used.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

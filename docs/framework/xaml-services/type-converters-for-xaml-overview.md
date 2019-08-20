@@ -20,7 +20,7 @@ Type converters supply logic for an object writer that converts from a string in
  In most cases, a XAML processor needs two pieces of information to process an attribute value. The first piece of information is the value type of the property that is being set. Any string that defines an attribute value and that is processed in XAML must ultimately be converted or resolved to a value of that type. If the value is a primitive that is understood by the XAML parser (such as a numeric value), a direct conversion of the string is attempted. If the value for the attribute references an enumeration, the supplied string is checked for a name match to a named constant in that enumeration. If the value is neither a parser-understood primitive nor a constant name from an enumeration, the applicable type must be able to provide a value or reference that is based on a converted string.  
   
 > [!NOTE]
->  XAML language directives do not use type converters.  
+> XAML language directives do not use type converters.  
   
 ### Type Converters and Markup Extensions  
  Markup extension usages must be handled by a XAML processor before it checks for property type and other considerations. For example, if a property being set as an attribute normally has a type conversion, but in a particular case is set by a markup extension usage, then the markup extension behavior processes first. One common situation where a markup extension is necessary is to make a reference to an object that already exists. For this scenario, a stateless type converter can only generate a new instance, which might not be desirable. For more information about markup extensions, see [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md).  
@@ -64,7 +64,7 @@ Type converters supply logic for an object writer that converts from a string in
  Each <xref:System.ComponentModel.TypeConverter> implementation can uniquely interpret what constitutes a valid string for a conversion, and it can also use or ignore the type description or culture contexts that are passed as parameters. However, the WPF XAML processing might not pass values to the type description context in all cases and also might not pass culture based on `xml:lang`.  
   
 > [!NOTE]
->  Do not use the braces ({}), specifically the opening brace ({), as an element of your string format. These characters are reserved as the entry and exit for a markup extension sequence.  
+> Do not use the braces ({}), specifically the opening brace ({), as an element of your string format. These characters are reserved as the entry and exit for a markup extension sequence.  
   
  It is appropriate to throw an exception when your type converter must have access to a XAML service from the .NET Framework XAML Services object writer, but the <xref:System.IServiceProvider.GetService%2A> call that is made against the context does not return that service.  
   

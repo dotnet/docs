@@ -7,7 +7,7 @@ ms.assetid: f8e03f47-9c4f-4dd5-8f85-429e6d876119
 The Windows Communication Foundation (WCF) Service Moniker allows COM applications to call WCF services. Most WCF services require the client to specify credentials for authentication and authorization. When calling a WCF service from a WCF client, you can specify these credentials in managed code or in an application configuration file. When calling a WCF service from a COM application, you can use the <xref:System.ServiceModel.ComIntegration.IChannelCredentials> interface to specify credentials. This topic will illustrate various ways to specify credentials using the <xref:System.ServiceModel.ComIntegration.IChannelCredentials> interface.  
   
 > [!NOTE]
->  <xref:System.ServiceModel.ComIntegration.IChannelCredentials> is an IDispatch-based interface and you will not get IntelliSense functionality in the Visual Studio environment.  
+> <xref:System.ServiceModel.ComIntegration.IChannelCredentials> is an IDispatch-based interface and you will not get IntelliSense functionality in the Visual Studio environment.  
   
  This article will use the WCF service defined in the [Message Security Sample](../../../../docs/framework/wcf/samples/message-security-sample.md).  
   
@@ -51,10 +51,10 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
     ```  
   
 > [!NOTE]
->  For this call to work, the client certificate needs to be trusted on the machine the client is running on.  
+> For this call to work, the client certificate needs to be trusted on the machine the client is running on.  
   
 > [!NOTE]
->  If the moniker is malformed or if the service is unavailable, the call to `GetObject` will return an error saying "Invalid Syntax." If you receive this error, make sure the moniker you are using is correct and the service is available.  
+> If the moniker is malformed or if the service is unavailable, the call to `GetObject` will return an error saying "Invalid Syntax." If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
 ### To specify user name and password  
   

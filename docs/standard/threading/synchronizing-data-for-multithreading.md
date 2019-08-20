@@ -45,7 +45,7 @@ When multiple threads can make calls to the properties and methods of a single o
  Both Visual Basic and C# support the marking of blocks of code with a particular language keyword, the `lock` statement in C# or the `SyncLock` statement in Visual Basic. When the code is executed by a thread, an attempt is made to acquire the lock. If the lock has already been acquired by another thread, the thread blocks until the lock becomes available. When the thread exits the synchronized block of code, the lock is released, no matter how the thread exits the block.  
   
 > [!NOTE]
->  The `lock` and `SyncLock` statements are implemented using <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>, so other methods of <xref:System.Threading.Monitor> can be used in conjunction with them within the synchronized region.  
+> The `lock` and `SyncLock` statements are implemented using <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>, so other methods of <xref:System.Threading.Monitor> can be used in conjunction with them within the synchronized region.  
   
  You can also decorate a method with a <xref:System.Runtime.CompilerServices.MethodImplAttribute> with a value of <xref:System.Runtime.CompilerServices.MethodImplOptions.Synchronized?displayProperty=nameWithType>, which has the same effect as using <xref:System.Threading.Monitor> or one of the compiler keywords to lock the entire body of the method.  
   

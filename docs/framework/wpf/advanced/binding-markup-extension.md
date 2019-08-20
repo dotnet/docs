@@ -106,7 +106,7 @@ Defers a property value to be a data-bound value, creating an intermediate expre
  Describing data binding at a basic level is not covered in this topic. See [Data Binding Overview](../data/data-binding-overview.md).  
   
 > [!NOTE]
->  <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding> do not support a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] extension syntax. You would instead use property elements. See reference topics for <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding>.  
+> <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding> do not support a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] extension syntax. You would instead use property elements. See reference topics for <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding>.  
   
  Boolean values for XAML are case insensitive. For example you could specify either `{Binding NotifyOnValidationError=true}` or `{Binding NotifyOnValidationError=True}`.  
   

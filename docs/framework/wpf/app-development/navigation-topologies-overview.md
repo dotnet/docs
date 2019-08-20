@@ -14,7 +14,7 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
 <a name="introduction"></a> This overview provides an introduction to navigation topologies in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]. Three common navigation topologies, with samples, are subsequently discussed.  
   
 > [!NOTE]
->  Before reading this topic, you should be familiar with the concept of structured navigation in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] using page functions. For more information on both of these topics, see [Structured Navigation Overview](structured-navigation-overview.md).  
+> Before reading this topic, you should be familiar with the concept of structured navigation in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] using page functions. For more information on both of these topics, see [Structured Navigation Overview](structured-navigation-overview.md).  
   
  This topic contains the following sections:  
   

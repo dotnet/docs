@@ -25,7 +25,7 @@ It is important to test the release builds of your Universal Windows Platform ap
 - Your code is heavily optimized. This means that inlining is used whenever possible. (Inlining moves code from external routines into the calling routine.)   The fact that .NET Native provides a specialized runtime and implements aggressive inlining  affects the call stack that is displayed when debugging.  For more information, see the [Runtime call stack](#CallStack) section.  
   
 > [!NOTE]
->  You can control whether the debug and release builds are compiled with the .NET Native tool chain by checking or unchecking the **Compile with .NET Native tool chain** box.   Note, however, that the Windows Store will always compile the production version of your app with the .NET Native tool chain.  
+> You can control whether the debug and release builds are compiled with the .NET Native tool chain by checking or unchecking the **Compile with .NET Native tool chain** box.   Note, however, that the Windows Store will always compile the production version of your app with the .NET Native tool chain.  
   
 <a name="Messages"></a>   
 ## Runtime exception messages  

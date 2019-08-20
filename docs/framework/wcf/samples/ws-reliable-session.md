@@ -22,7 +22,7 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
  In this sample, the service is hosted in Internet Information Services (IIS) and the client is a console application (.exe).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample uses the `wsHttpBinding`. The binding is specified in the configuration files for both the client and service. The binding type is specified in the endpoint element’s `binding` attribute as shown in the following sample configuration.  
   

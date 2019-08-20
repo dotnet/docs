@@ -79,7 +79,7 @@ Polymorphism is often referred to as the third pillar of object-oriented program
  For more information, see [base](../../language-reference/keywords/base.md).  
   
 > [!NOTE]
->  It is recommended that virtual members use `base` to call the base class implementation of that member in their own implementation. Letting the base class behavior occur enables the derived class to concentrate on implementing behavior specific to the derived class. If the base class implementation is not called, it is up to the derived class to make their behavior compatible with the behavior of the base class.  
+> It is recommended that virtual members use `base` to call the base class implementation of that member in their own implementation. Letting the base class behavior occur enables the derived class to concentrate on implementing behavior specific to the derived class. If the base class implementation is not called, it is up to the derived class to make their behavior compatible with the behavior of the base class.  
   
 ## In This Section  
   

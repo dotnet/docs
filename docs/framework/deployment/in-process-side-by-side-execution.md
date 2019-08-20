@@ -39,7 +39,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
     |4|Yes|Yes|Not applicable|  
   
 > [!NOTE]
->  .NET Framework versions 3.0 and 3.5 are built incrementally on version 2.0, and do not need to run side by side. These are inherently the same version.  
+> .NET Framework versions 3.0 and 3.5 are built incrementally on version 2.0, and do not need to run side by side. These are inherently the same version.  
   
 <a name="scenarios"></a>   
 ## Common Side-by-Side Hosting Scenarios  

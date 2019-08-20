@@ -12,7 +12,7 @@ ms.author: "ronpet"
 Specifies whether assemblies loaded from remote sources should be granted full trust in .NET Framework 4 and later.
   
 > [!NOTE]
->  If you were directed to this article because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
+> If you were directed to this article because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
   
  \<configuration>  
 \<runtime>  

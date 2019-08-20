@@ -132,7 +132,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
  When using tracing in a partial trust environment, ensure that the application has sufficient permissions to store the output of the trace listener. For example, when using the <xref:System.Diagnostics.TextWriterTraceListener> to write trace output to a text file, ensure that the application has the necessary FileIOPermission required to successfully write to the trace file.  
   
 > [!NOTE]
->  To avoid flooding the trace files with duplicate errors, WCF disables tracing of the resource or action after the first security failure. There is one exception trace for each failed resource access, the first time an attempt is made to access the resource or perform the action.  
+> To avoid flooding the trace files with duplicate errors, WCF disables tracing of the resource or action after the first security failure. There is one exception trace for each failed resource access, the first time an attempt is made to access the resource or perform the action.  
   
 ## WCF Service Host  
  WCF service host does not support partial trust. If you want to use a WCF service in partial trust, do not use the WCF Service Library Project template in Visual Studio to build your service. Instead, create a new Web site in Visual Studio by choosing the WCF service Web site template, which can host the service in a Web server on which WCF partial trust is supported.  

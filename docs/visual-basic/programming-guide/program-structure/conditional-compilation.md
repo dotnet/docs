@@ -18,7 +18,7 @@ In *conditional compilation*, particular blocks of code in a program are compile
  If you set the value of the `FrenchVersion` conditional compilation constant to `True` at compile time, the conditional code for the French version is compiled. If you set the value of the `GermanVersion` constant to `True`, the compiler uses the German version. If neither is set to `True`, the code in the last `Else` block runs.  
   
 > [!NOTE]
->  Autocompletion will not function when editing code and using conditional compilation directives if the code is not part of the current branch.  
+> Autocompletion will not function when editing code and using conditional compilation directives if the code is not part of the current branch.  
   
 ## Declaring Conditional Compilation Constants  
  You can set conditional compilation constants in one of three ways:  

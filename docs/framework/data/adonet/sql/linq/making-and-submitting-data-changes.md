@@ -7,7 +7,7 @@ ms.assetid: d68c2dc3-99b3-49ab-b547-2ca5b386429a
 The topics in this section describe how to make and transmit changes to the database and how to handle optimistic concurrency conflicts.  
   
 > [!NOTE]
->  You can override [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] default methods for `Insert`, `Update`, and `Delete` database operations. For more information, see [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md).  
+> You can override [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] default methods for `Insert`, `Update`, and `Delete` database operations. For more information, see [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md).  
 >   
 >  Developers using Visual Studio can use the Object Relational Designer to develop stored procedures for the same purpose.  
   

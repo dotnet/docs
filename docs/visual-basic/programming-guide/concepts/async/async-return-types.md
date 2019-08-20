@@ -9,7 +9,7 @@ Async methods have three possible return types: <xref:System.Threading.Tasks.Tas
  Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
   
 > [!NOTE]
->  To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
+> To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
 ## <a name="BKMK_TaskTReturnType"></a> Task(T) Return Type  
  The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [Return](../../../../visual-basic/language-reference/statements/return-statement.md) statement in which the operand has type `TResult`.  

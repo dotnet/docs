@@ -6,15 +6,15 @@ helpviewer_keywords:
   - "Windows Forms controls, data binding"
 ms.assetid: 3bcaded8-0f1a-4cc0-8830-f59be253bf4e
 ---
-# How to: Create a Simple-Bound Control on a Windows Form
+# How to: Create a simple-bound control on a Windows Form
 
 With *simple binding*, you can display a single data element, such as a column value from a dataset table, in a control. You can simple-bind any property of a control to a data value.
 
-### To simple-bind a control
+## To simple-bind a control
 
 1. Connect to a data source. For more information, see [Connecting to a Data Source](../data/adonet/connecting-to-a-data-source.md).
 
-2. In the form, select the control and display the **Properties** window.
+2. In Visual Studio, select the control on the form and display the **Properties** window.
 
 3. Expand the **(DataBindings)** property.
 

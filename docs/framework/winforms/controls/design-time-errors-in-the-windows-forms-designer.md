@@ -8,8 +8,11 @@ helpviewer_keywords:
   - "errors [Windows Forms Designer]"
   - "design-time errors [Windows Forms Designer]"
 ms.assetid: ad408380-825a-46d8-9a4a-531b130b88ce
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# Design-Time Errors in the Windows Forms Designer
+# Design-time errors in the Windows Forms Designer
 
 This topic explains the meaning and use of the design-time error list that appears in Visual Studio when the Windows Forms Designer fails to load. If this error list appears, you should not interpret it as a bug in the designer, but as an aid to correcting errors in your code.
 

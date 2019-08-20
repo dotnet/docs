@@ -8,6 +8,9 @@ helpviewer_keywords:
   - "UserControl Test Container"
   - "UserControl class [Windows Forms], run-time behavior"
 ms.assetid: 4e4d5c49-1346-40ac-9d96-40211b573583
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
 # How to: Test the run-time behavior of a UserControl
 
@@ -21,7 +24,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 
 ## Test the run-time behavior of a UserControl
 
-1. In Visual Studio, create a Windows control library project called **TestContainerExample**. For details, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).
+1. In Visual Studio, create a Windows control library project called **TestContainerExample**.
 
 2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto the control's design surface.
 
@@ -37,7 +40,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 
 8. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto the control's design surface.
 
-9. Press F5 to build the project and run the test container.
+9. Press **F5** to build the project and run the test container.
 
 10. Click the **Select User Control**<xref:System.Windows.Forms.ComboBox> to switch between the two user controls.
 
@@ -45,11 +48,11 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 
 You can test user controls from other projects in your current project's test container.
 
-1. Create a Windows control library project called **TestContainerExample2**. For details, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).
+1. In Visual Studio, create a Windows control library project called **TestContainerExample2**.
 
 2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.RadioButton> control from the **Toolbox** onto the control's design surface.
 
-3. Press F5 to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
+3. Press **F5** to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
 
 4. Click the **Load** button.
 

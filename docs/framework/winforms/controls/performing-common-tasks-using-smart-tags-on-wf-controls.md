@@ -6,8 +6,11 @@ helpviewer_keywords:
   - "smart tags"
   - "designer actions"
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls
+# Walkthrough: Perform Common Tasks Using Smart Tags
 
 As you construct forms and controls for your Windows Forms application, there are many tasks you will perform repeatedly. These are some of the commonly performed tasks you will encounter:
 
@@ -21,21 +24,11 @@ To speed development, many controls offer smart tags, which are context-sensitiv
 
 Smart tags remain attached to a control instance for its lifetime in the designer and are always available.
 
-Tasks illustrated in this walkthrough include:
-
-- Creating a Windows Forms project
-
-- Using smart tags
-
-- Enabling and Disabling Smart Tags
-
-When you are finished, you will have an understanding of the role played by these important layout features.
-
 ## Create the project
 
 The first step is to create the project and set up the form.
 
-1. In Visual Studio, create a Windows-based application project called "SmartTagsExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
+1. In Visual Studio, create a Windows-based application project called **SmartTagsExample**.
 
 2. Select the form in the **Windows Forms Designer**.
 

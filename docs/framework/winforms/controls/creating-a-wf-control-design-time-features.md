@@ -10,8 +10,11 @@ helpviewer_keywords:
   - "DocumentDesigner class [Windows Forms]"
   - "walkthroughs [Windows Forms], controls"
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features
+# Walkthrough: Create a control that takes advantage of design-time features
 
 The design-time experience for a custom control can be enhanced by authoring an associated custom designer.
 
@@ -21,57 +24,23 @@ The `MarqueeControl` type implements a display similar to a theater marquee, wit
 
 The designer for this control interacts with the design environment to provide a custom design-time experience. With the custom designer, you can assemble a custom `MarqueeControl` implementation with animated lights and flashing text in many combinations. You can use the assembled control on a form like any other Windows Forms control.
 
-Tasks illustrated in this walkthrough include:
-
-- Creating the Project
-
-- Creating a Control Library Project
-
-- Referencing the Custom Control Project
-
-- Defining a Custom Control and Its Custom Designer
-
-- Creating an Instance of Your Custom Control
-
-- Setting Up the Project for Design-Time Debugging
-
-- Implementing Your Custom Control
-
-- Creating a Child Control for Your Custom Control
-
-- Create the MarqueeBorder Child Control
-
-- Creating a Custom Designer to Shadow and Filter Properties
-
-- Handling Component Changes
-
-- Adding Designer Verbs to your Custom Designer
-
-- Creating a Custom UITypeEditor
-
-- Testing your Custom Control in the Designer
-
-When you are finished, your custom control will look something like the following:
+When you're finished with this walkthrough, your custom control will look something like the following:
 
 ![The app showing a marquee saying Text and a Start and Stop buttons.](./media/creating-a-wf-control-design-time-features/demo-marquee-control.gif)
 
-For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
+For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features]/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
 
 ## Prerequisites
 
 In order to complete this walkthrough, you'll need Visual Studio.
 
-## Creating the Project
+## Create the project
 
 The first step is to create the application project. You will use this project to build the application that hosts the custom control.
 
-Open Visual Studio and create a Windows Forms Application project called "MarqueeControlTest" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
+In Visual Studio, create a new Windows Forms Application project, and name it **MarqueeControlTest**.
 
-## Creating a Control Library Project
-
-The next step is to create the control library project. You will create a new custom control and its corresponding custom designer.
-
-### To create the control library project
+## Create the control library project
 
 1. Add a Windows Forms Control Library project to the solution. Name the project "MarqueeControlLibrary."
 
@@ -97,11 +66,12 @@ You will use the `MarqueeControlTest` project to test the custom control. The te
 - In the `MarqueeControlTest` project, add a project reference to the `MarqueeControlLibrary` assembly. Be sure to use the **Projects** tab in the **Add Reference** dialog box instead of referencing the `MarqueeControlLibrary` assembly directly.
 
 ## Defining a Custom Control and Its Custom Designer
- Your custom control will derive from the <xref:System.Windows.Forms.UserControl> class. This allows your control to contain other controls, and it gives your control a great deal of default functionality.
 
- Your custom control will have an associated custom designer. This allows you to create a unique design experience tailored specifically for your custom control.
+Your custom control will derive from the <xref:System.Windows.Forms.UserControl> class. This allows your control to contain other controls, and it gives your control a great deal of default functionality.
 
- You associate the control with its designer by using the <xref:System.ComponentModel.DesignerAttribute> class. Because you are developing the entire design-time behavior of your custom control, the custom designer will implement the <xref:System.ComponentModel.Design.IRootDesigner> interface.
+Your custom control will have an associated custom designer. This allows you to create a unique design experience tailored specifically for your custom control.
+
+You associate the control with its designer by using the <xref:System.ComponentModel.DesignerAttribute> class. Because you are developing the entire design-time behavior of your custom control, the custom designer will implement the <xref:System.ComponentModel.Design.IRootDesigner> interface.
 
 ### To define a custom control and its custom designer
 
@@ -133,7 +103,8 @@ You will use the `MarqueeControlTest` project to test the custom control. The te
      [!code-vb[System.Windows.Forms.Design.DocumentDesigner#540](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.DocumentDesigner/VB/marqueecontrolrootdesigner.vb#540)]
 
 ## Creating an Instance of Your Custom Control
- To observe the custom design-time behavior of your control, you will place an instance of your control on the form in `MarqueeControlTest` project.
+
+To observe the custom design-time behavior of your control, you will place an instance of your control on the form in `MarqueeControlTest` project.
 
 ### To create an instance of your custom control
 
@@ -183,7 +154,7 @@ You are now ready to debug the design-time behavior of your custom control. Once
 
 1. Open the `MarqueeControlRootDesigner` source file in the **Code Editor** and place a breakpoint on the <xref:System.Diagnostics.Trace.WriteLine%2A> statement.
 
-2. Press F5 to start the debugging session. Note that a new instance of Visual Studio is created.
+2. Press **F5** to start the debugging session. Note that a new instance of Visual Studio is created.
 
 3. In the new instance of Visual Studio, open the "MarqueeControlTest" solution. You can easily find the solution by selecting **Recent Projects** from the **File** menu. The "MarqueeControlTest.sln" solution file will be listed as the most recently used file.
 
@@ -393,7 +364,7 @@ The base class for `MarqueeBorderDesigner` is <xref:System.ComponentModel.Design
 
 - <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents%2A>
 
-When changing the public interface of a component using these methods, you must follow these rules:
+When changing the public interface of a component using these methods, follow these rules:
 
 - Add or remove items in the `PreFilter` methods only
 
@@ -434,13 +405,14 @@ The <xref:System.ComponentModel.Design.ComponentDesigner> class provides a dicti
     [!code-vb[System.Windows.Forms.Design.DocumentDesigner#440](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.DocumentDesigner/VB/marqueeborderdesigner.vb#440)]
 
 ## Handling Component Changes
- The `MarqueeControlRootDesigner` class provides the custom design-time experience for your `MarqueeControl` instances. Most of the design-time functionality is inherited from the <xref:System.Windows.Forms.Design.DocumentDesigner> class; your code will implement two specific customizations: handling component changes, and adding designer verbs.
 
- As users design their `MarqueeControl` instances, your root designer will track changes to the `MarqueeControl` and its child controls. The design-time environment offers a convenient service, <xref:System.ComponentModel.Design.IComponentChangeService>, for tracking changes to component state.
+The `MarqueeControlRootDesigner` class provides the custom design-time experience for your `MarqueeControl` instances. Most of the design-time functionality is inherited from the <xref:System.Windows.Forms.Design.DocumentDesigner> class; your code will implement two specific customizations: handling component changes, and adding designer verbs.
 
- You acquire a reference to this service by querying the environment with the <xref:System.ComponentModel.Design.ComponentDesigner.GetService%2A> method. If the query is successful, your designer can attach a handler for the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event and perform whatever tasks are required to maintain a consistent state at design time.
+As users design their `MarqueeControl` instances, your root designer will track changes to the `MarqueeControl` and its child controls. The design-time environment offers a convenient service, <xref:System.ComponentModel.Design.IComponentChangeService>, for tracking changes to component state.
 
- In the case of the `MarqueeControlRootDesigner` class, you will call the <xref:System.Windows.Forms.Control.Refresh%2A> method on each `IMarqueeWidget` object contained by the `MarqueeControl`. This will cause the `IMarqueeWidget` object to repaint itself appropriately when properties like its parent's <xref:System.Windows.Forms.Control.Size%2A> are changed.
+You acquire a reference to this service by querying the environment with the <xref:System.ComponentModel.Design.ComponentDesigner.GetService%2A> method. If the query is successful, your designer can attach a handler for the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event and perform whatever tasks are required to maintain a consistent state at design time.
+
+In the case of the `MarqueeControlRootDesigner` class, you will call the <xref:System.Windows.Forms.Control.Refresh%2A> method on each `IMarqueeWidget` object contained by the `MarqueeControl`. This will cause the `IMarqueeWidget` object to repaint itself appropriately when properties like its parent's <xref:System.Windows.Forms.Control.Size%2A> are changed.
 
 ### To handle component changes
 
@@ -618,9 +590,9 @@ private void stopButton_Click(object sender, System.EventArgs e)
 }
 ```
 
-1. Set the `MarqueeControlTest` project as the startup project and run it. You will see the form displaying your `DemoMarqueeControl`. Click the **Start** button to start the animation. You should see the text flashing and the lights moving around the border.
+13. Set the `MarqueeControlTest` project as the startup project and run it. You will see the form displaying your `DemoMarqueeControl`. Click the **Start** button to start the animation. You should see the text flashing and the lights moving around the border.
 
-## Next Steps
+## Next steps
 
 The `MarqueeControlLibrary` demonstrates a simple implementation of custom controls and associated designers. You can make this sample more sophisticated in several ways:
 

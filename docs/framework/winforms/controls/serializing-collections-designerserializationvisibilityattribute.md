@@ -11,8 +11,11 @@ helpviewer_keywords:
   - "collections [Windows Forms], serializing"
   - "collections [Windows Forms], standard types"
 ms.assetid: 020c9df4-fdc5-4dae-815a-963ecae5668c
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute
+# Walkthrough: Serialize collections of standard types
 
 Your custom controls will sometimes expose a collection as a property. This walkthrough demonstrates how to use the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> class to control how a collection is serialized at design time. Applying the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content> value to your collection property ensures that the property will be serialized.
 
@@ -26,7 +29,7 @@ You need Visual Studio to complete this walkthrough.
 
 The first step is to create a control that has a serializable collection as a property. You can edit the contents of this collection using the **Collection Editor**, which you can access from the **Properties** window.
 
-1. In Visual Studio, create a Windows Control Library project called `SerializationDemoControlLib`. For more information, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).
+1. In Visual Studio, create a Windows Control Library project, and name it **SerializationDemoControlLib**.
 
 2. Rename `UserControl1` to `SerializationDemoControl`. For more information, see [Rename a code symbol refactoring](/visualstudio/ide/reference/rename).
 
@@ -67,11 +70,9 @@ The first step is to create a control that has a serializable collection as a pr
    > [!NOTE]
    > The strings you typed appear in the <xref:System.Windows.Forms.TextBox> of the `SerializationDemoControl`.
 
-## Serializing a Collection Property
+## Serialize a collection property
 
 To test the serialization behavior of your control, you will place it on a form and change the contents of the collection with the **Collection Editor**. You can see the serialized collection state by looking at a special designer file into which the **Windows Forms Designer** emits code.
-
-### To serialize a collection
 
 1. Add a Windows Application project to the solution. Name the project `SerializationDemoControlTest`.
 
@@ -118,7 +119,7 @@ To test the serialization behavior of your control, you will place it on a form 
 > [!NOTE]
 > In this case, the **Windows Forms Designer** emits no assignment to the `Strings` property.
 
-## Next Steps
+## Next steps
 
 Once you know how to serialize a collection of standard types, consider integrating your custom controls more deeply into the design-time environment. The following topics describe how to enhance the design-time integration of your custom controls:
 

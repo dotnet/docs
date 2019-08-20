@@ -6,8 +6,11 @@ helpviewer_keywords:
   - "UserControl class [Windows Forms], Windows Forms"
   - "custom controls [Windows Forms], creating"
 ms.assetid: 7570e982-545b-4c3a-a7c7-55581d313400
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# How to: Author Controls for Windows Forms
+# How to: Author controls for Windows Forms
 
 A control represents a graphical link between the user and the program. A control can provide or process data, accept user input, respond to events, or perform any number of other functions that connect the user and the application. Because a control is essentially a component with a graphical interface, it can serve any function that a component does, as well as provide user interaction. Controls are created to serve specific purposes, and authoring controls is just another programming task. With that in mind, the following steps represent an overview of the control authoring process. Links provide additional information on the individual steps.
 

@@ -15,34 +15,21 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], debugging"
   - "design-time debugging"
 ms.assetid: 1fd83ccd-3798-42fc-85a3-6cba99467387
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# Walkthrough: Debugging Custom Windows Forms Controls at Design Time
+# Walkthrough: Debug Custom Windows Forms Controls at Design Time
 
 When you create a custom control, you will often find it necessary to debug its design-time behavior. This is especially true if you are authoring a custom designer for your custom control. For details, see [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md).
 
-You can debug your custom controls using Visual Studio, just as you would debug any other .NET Framework classes. The difference is that you will debug a separate instance of Visual Studio that is running your custom control's code
-
-Tasks illustrated in this walkthrough include:
-
-- Creating a Windows Forms project to host your custom control
-
-- Creating a control library project
-
-- Adding a property to your custom control
-
-- Adding your custom control to the host form
-
-- Setting up the project for design-time debugging
-
-- Debugging your custom control at design time
-
-When you are finished, you will have an understanding of the tasks necessary for debugging the design-time behavior of a custom control.
+You can debug your custom controls using Visual Studio, just as you would debug any other .NET Framework classes. The difference is that you will debug a separate instance of Visual Studio that is running your custom control's code.
 
 ## Create the project
 
 The first step is to create the application project. You will use this project to build the application that hosts the custom control.
 
-In Visual Studio, create a Windows Application project called "DebuggingExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
+In Visual Studio, create a Windows Application project, and name it **DebuggingExample**.
 
 ## Create the control library project
 

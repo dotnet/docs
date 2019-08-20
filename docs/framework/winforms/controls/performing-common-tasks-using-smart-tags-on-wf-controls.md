@@ -36,7 +36,7 @@ The first step is to create the project and set up the form.
 
 Smart tags are always available at design time on controls that offer them.
 
-1. Drag a <xref:System.Windows.Forms.TabControl> from the **Toolbox** onto your form. Note the smart-tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) that appears on the side of the <xref:System.Windows.Forms.TabControl>.
+1. Drag a <xref:System.Windows.Forms.TabControl> from the **Toolbox** onto your form. Note the smart-tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif)) that appears on the side of the <xref:System.Windows.Forms.TabControl>.
 
 2. Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Add Tab** item. Observe that a new tab page is added to the <xref:System.Windows.Forms.TabControl>.
 
@@ -54,4 +54,3 @@ Smart tags are always available at design time on controls that offer them.
 - <xref:System.Windows.Forms.TabControl>
 - <xref:System.Windows.Forms.SplitContainer>
 - <xref:System.ComponentModel.Design.DesignerActionList>
-- [Walkthrough: Adding Smart Tags to a Windows Forms Component](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171829(v=vs.120))

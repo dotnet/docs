@@ -35,9 +35,9 @@ In Visual Studio, create a Windows Application project, and name it **DebuggingE
 
 1. Add a **Windows Control Library** project to the solution.
 
-2. Add a new **UserControl** item to the DebugControlLibrary project. For details, see [How to: Add New Project Items](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)). Give the new source file a base name of "DebugControl".
+2. Add a new **UserControl** item to the DebugControlLibrary project. Name it **DebugControl**.
 
-3. Using the **Solution Explorer**, delete the project's default control by deleting the code file with a base name of "`UserControl1`". For details, see [How to: Remove, Delete, and Exclude Items](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/0ebzhwsk(v=vs.100)).
+3. In **Solution Explorer**, delete the project's default control by deleting the code file with a base name of UserControl1.
 
 4. Build the solution.
 
@@ -105,9 +105,9 @@ To debug your custom control's design-time behavior, you will debug a separate i
 
 2. In the **DebugControlLibrary** property sheet, select the **Debug** tab.
 
-     In the **Start Action** section, select **Start external program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![The Ellipsis button (...) in the Properties window of Visual Studio.](./media/visual-studio-ellipsis-button.png)) button to browse for the Visual Studio IDE. The name of the executable file is **devenv.exe**, and if you installed to the default location, its path is %programfiles%\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe.
+     In the **Start Action** section, select **Start external program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![The Ellipsis button (...) in the Properties window of Visual Studio](./media/visual-studio-ellipsis-button.png)) button to browse for the Visual Studio IDE. The name of the executable file is **devenv.exe**, and if you installed to the default location, its path is *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\\\<edition>\Common7\IDE*.
 
-3. Click **OK** to close the dialog box.
+3. Select **OK** to close the dialog box.
 
 4. Right-click the **DebugControlLibrary** project and select **Set as StartUp Project** to enable this debugging configuration.
 
@@ -117,21 +117,21 @@ Now you are ready to debug your custom control as it runs in design mode. When y
 
 1. Open the **DebugControl** source file in the **Code Editor** and place a breakpoint on the `Set` accessor of the `DemoString` property.
 
-2. Press F5 to start the debugging session. Note that a new instance of Visual Studio is created. You can distinguish between the instances in two ways:
+2. Press **F5** to start the debugging session. A new instance of Visual Studio is created. You can distinguish between the instances in two ways:
 
     - The debugging instance has the word **Running** in its title bar
 
     - The debugging instance has the **Start** button on its **Debug** toolbar disabled
 
-     Your breakpoint is set in the debugging instance.
+   Your breakpoint is set in the debugging instance.
 
 3. In the new instance of Visual Studio, open the "DebuggingExample" solution. You can easily find the solution by selecting **Recent Projects** from the **File** menu. The "DebuggingExample.sln" solution file will be listed as the most recently used file.
 
 4. Open Form1 in the **Forms Designer** and select the **DebugControl** control.
 
-5. Change the value of the `DemoString` property. Note that when you commit the change, the debugging instance of Visual Studio acquires focus and execution stops at your breakpoint. You can single-step through the property accessor just as your would any other code.
+5. Change the value of the `DemoString` property. When you commit the change, the debugging instance of Visual Studio acquires focus and execution stops at your breakpoint. You can single-step through the property accessor just as your would any other code.
 
-6. When you are finished with your debugging session, you can exit by dismissing the hosted instance of Visual Studio or by clicking the **Stop Debugging** button in the debugging instance.
+6. To stop debugging, exit the hosted instance of Visual Studio or select the **Stop Debugging** button in the debugging instance.
 
 ## Next steps
 
@@ -146,5 +146,3 @@ Now that you can debug your custom controls at design time, there are many possi
 ## See also
 
 - [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md)
-- [How to: Access Design-Time Services](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171822(v=vs.120))
-- [How to: Access Design-Time Support in Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171827(v=vs.120))

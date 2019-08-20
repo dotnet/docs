@@ -24,19 +24,19 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 
 ## Test the run-time behavior of a UserControl
 
-1. In Visual Studio, create a Windows control library project called **TestContainerExample**.
+1. In Visual Studio, create a Windows control library project, and name it **TestContainerExample**.
 
 2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto the control's design surface.
 
 3. Press **F5** to build the project and run the **UserControl Test Container**. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
 
-4. Select the <xref:System.Windows.Forms.Control.BackColor%2A> property displayed in the <xref:System.Windows.Forms.PropertyGrid> control to the right of the **Preview** pane. Change its value to `ControlDark`. Observe that the control changes to a darker color. Try changing other property values and observe the effect on your control.
+4. Select the <xref:System.Windows.Forms.Control.BackColor%2A> property displayed in the <xref:System.Windows.Forms.PropertyGrid> control to the right of the **Preview** pane. Change its value to **ControlDark**. Observe that the control changes to a darker color. Try changing other property values and observe the effect on your control.
 
 5. Click the **Dock Fill User Control** check box below the **Preview** pane. Observe that the control is resized to fill the pane. Resize the test container and observe that the control is resized with the pane.
 
 6. Close the test container.
 
-7. Add another user control to the **TestContainerExample** project. For details, see [How to: Add Existing Items to a Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/9f4t9t92(v=vs.100)).
+7. Add another user control to the **TestContainerExample** project.
 
 8. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto the control's design surface.
 
@@ -48,7 +48,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 
 You can test user controls from other projects in your current project's test container.
 
-1. In Visual Studio, create a Windows control library project called **TestContainerExample2**.
+1. In Visual Studio, create a Windows control library project, and name it **TestContainerExample2**.
 
 2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.RadioButton> control from the **Toolbox** onto the control's design surface.
 

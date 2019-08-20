@@ -91,7 +91,7 @@ Other custom controls and components are not stand-alone projects. They must be 
     MyNeatComponent Component1 = new MyNeatComponent();
     ```
 
-     You can now debug your control or component as usual.
+   You can now debug your control or component as usual.
 
 For more information about debugging, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio) and [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](walkthrough-debugging-custom-windows-forms-controls-at-design-time.md).
 

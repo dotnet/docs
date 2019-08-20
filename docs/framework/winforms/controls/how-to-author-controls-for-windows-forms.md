@@ -14,9 +14,6 @@ manager: jillfra
 
 A control represents a graphical link between the user and the program. A control can provide or process data, accept user input, respond to events, or perform any number of other functions that connect the user and the application. Because a control is essentially a component with a graphical interface, it can serve any function that a component does, as well as provide user interaction. Controls are created to serve specific purposes, and authoring controls is just another programming task. With that in mind, the following steps represent an overview of the control authoring process. Links provide additional information on the individual steps.
 
-> [!NOTE]
-> If you want to author a custom control to use on Web Forms, see [Developing Custom ASP.NET Server Controls](https://docs.microsoft.com/previous-versions/aspnet/zt27tfhy(v=vs.100)).
-
 ## To author a control
 
 1. Determine what you want your control to accomplish, or what part it will play in your application. Factors to consider are:

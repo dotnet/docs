@@ -100,13 +100,13 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 <a name="ConfiguringWindowForMSBuild"></a>   
 ## Configuring a Window Definition for MSBuild  
- How you implement your window determines how it is configured for [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]. For a window that is defined using both [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup and code-behind:  
+ How you implement your window determines how it is configured for MSBuild. For a window that is defined using both [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup and code-behind:  
   
-- [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup files are configured as [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]`Page` items.  
+- [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup files are configured as MSBuild`Page` items.  
   
-- Code-behind files are configured as [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]`Compile` items.  
+- Code-behind files are configured as MSBuild`Compile` items.  
   
- This is shown in the following [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] project file.  
+ This is shown in the following MSBuild project file.  
   
 ```xml  
 <Project ...  

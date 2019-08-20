@@ -23,7 +23,7 @@ ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
   
 - Controls that have ambiguous range values, such as progress bars or sliders, should have those values normalized.  
   
- ![Progress bar.](media/uia-rangevaluepattern-progress-bar.PNG "UIA_RangeValuePattern_Progress_Bar")  
+ ![Progress bar.](./media/uia-rangevaluepattern-progress-bar.PNG "UIA_RangeValuePattern_Progress_Bar")  
 Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum Property Values Are Normalized to 0 and 100, Respectively  
   
 <a name="Required_Members_for_the_IRangeValueProvider"></a>   

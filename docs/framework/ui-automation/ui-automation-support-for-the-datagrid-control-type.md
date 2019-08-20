@@ -88,7 +88,7 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
 ## Date Grid Control Type Example  
  The following image illustrates a List View control that implements the DataGrid control type.  
   
- ![Graphic of a List View control with two data items](media/uiauto-data-grid-detailed.GIF "uiauto_data_grid_detailed")  
+ ![Graphic of a List View control with two data items](./media/uiauto-data-grid-detailed.GIF "uiauto_data_grid_detailed")  
   
  The control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to the List View control is displayed below. The control patterns for each automation element are shown in parentheses.  
   

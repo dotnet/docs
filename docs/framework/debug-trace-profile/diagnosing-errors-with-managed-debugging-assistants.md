@@ -66,7 +66,7 @@ The following table lists the MDAs that ship with the .NET Framework:
 
 By default, the .NET Framework activates a subset of MDAs for all managed debuggers. You can view the default set in Visual Studio by choosing **Windows** > **Exception Settings** on the **Debug** menu, and then expanding the **Managed Debugging Assistants** list.
 
-![Exception Settings window in Visual Studio](media/diagnosing-errors-with-managed-debugging-assistants/exception-settings-mdas.png)
+![Exception Settings window in Visual Studio](./media/diagnosing-errors-with-managed-debugging-assistants/exception-settings-mdas.png)
 
 ## Enable and Disable MDAs
 

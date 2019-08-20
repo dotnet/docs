@@ -15,7 +15,7 @@ ms.assetid: ea3d2212-7c8e-4dd7-bf08-73141ca2d4fb
   
  The <xref:System.Windows.Automation.DockPattern> control pattern is used to expose the dock properties of a control within a docking container. A docking container is a control that allows you to arrange child elements horizontally and vertically, relative to each other. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
- ![Docking container with two docked children.](media/uia-dockpattern-dockingexample.PNG "UIA_DockPattern_DockingExample")  
+ ![Docking container with two docked children.](./media/uia-dockpattern-dockingexample.PNG "UIA_DockPattern_DockingExample")  
 Docking Example from Visual Studio Where "Class View" Window Is DockPosition.Right and "Error List" Window Is DockPosition.Bottom  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>   

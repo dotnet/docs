@@ -62,7 +62,7 @@ In this topic, you create a sample data service that uses WCF Data Services to e
 
 2. In the **Add New Item** dialog box, select the **WCF Data Service** item template from the **Web** category.
 
-   ![WCF Data Service item template in Visual Studio 2015](media/wcf-data-service-item-template.png)
+   ![WCF Data Service item template in Visual Studio 2015](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
    > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017.

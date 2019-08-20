@@ -51,7 +51,7 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 4. In the **Add New Item** dialog box, select the **WCF Data Service** template in the **Web** category.
 
-   ![WCF Data Service item template in Visual Studio 2015](media/wcf-data-service-item-template.png)
+   ![WCF Data Service item template in Visual Studio 2015](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
    > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017.

@@ -90,7 +90,7 @@ ms.assetid: 181708fd-2595-4c43-9abd-75811627d64c
 ## DataItem Control Type Example  
  The following image illustrates a DataItem control type in a List View control with support for rich information for the columns.  
   
- ![Graphic of a List View control with two data items](media/uiauto-data-grid-detailed.GIF "uiauto_data_grid_detailed")  
+ ![Graphic of a List View control with two data items](./media/uiauto-data-grid-detailed.GIF "uiauto_data_grid_detailed")  
   
  The Control View and the Content View of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to the data item control is displayed below. The control patterns for each automation element are shown in parentheses. The Group "Contoso" is also part of the grid of the Data Grid host control.  
   

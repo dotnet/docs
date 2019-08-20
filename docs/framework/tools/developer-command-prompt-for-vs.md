@@ -82,7 +82,7 @@ For easier access, you can add the Visual Studio Developer Command Prompt, or an
 
    The new menu item is added, and you can access the command prompt from the **Tools** menu.
 
-   ![Command prompt menu item in Visual Studio](media/command-prompt-vs-menu.png)
+   ![Command prompt menu item in Visual Studio](./media/command-prompt-vs-menu.png)
 
 ## See also
 

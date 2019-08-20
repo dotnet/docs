@@ -52,7 +52,7 @@ Windows Identity Foundation (WIF) includes support for federated authentication 
   
  The following diagram shows more detail on what happens when the user’s security tokens have been serialized into cookies and are intercepted by the <xref:System.IdentityModel.Services.SessionAuthenticationModule>:  
   
- ![SAM timing diagram showing sign&#45;in using controls](media/signinusingconrols-sam.gif "SignInUsingConrols_SAM")  
+ ![SAM timing diagram showing sign&#45;in using controls](./media/signinusingconrols-sam.gif "SignInUsingConrols_SAM")  
   
 ### Events  
  <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>, <xref:System.IdentityModel.Services.SessionAuthenticationModule>, and their parent class, <xref:System.IdentityModel.Services.HttpModuleBase>, raise events at various stages of processing of an HTTP request. You can handle these events in the `global.asax` file of your ASP.NET application.  

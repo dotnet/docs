@@ -23,7 +23,7 @@ Creates a definition for a method or global function with the specified signatur
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineMethod (      
     [in]  mdTypeDef         td,   
     [in]  LPCWSTR           szName,   

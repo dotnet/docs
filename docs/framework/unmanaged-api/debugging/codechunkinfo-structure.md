@@ -23,7 +23,7 @@ Represents a single chunk of code in memory.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _CodeChunkInfo {  
     CORDB_ADDRESS startAddr;  
     ULONG32       length;  

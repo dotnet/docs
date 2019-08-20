@@ -25,7 +25,7 @@ Enables unmanaged hosts to load the common language runtime (CLR) into a process
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindToRuntime (  
     [in]  LPCWSTR     pwszVersion,   
     [in]  LPCWSTR     pwszBuildFlavor,   

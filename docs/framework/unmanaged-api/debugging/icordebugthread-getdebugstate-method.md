@@ -23,7 +23,7 @@ Gets the current debug state of this ICorDebugThread object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDebugState (  
     [out] CorDebugThreadState   *pState  
 );  

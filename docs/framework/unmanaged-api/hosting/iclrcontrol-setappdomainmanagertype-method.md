@@ -23,7 +23,7 @@ Sets a type derived from <xref:System.AppDomainManager> as the type for applicat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAppDomainManagerType (  
     [in] LPCWSTR pwzAppDomainManagerAssembly,  
     [in] LPCWSTR pwzAppDomainManagerType  

@@ -23,7 +23,7 @@ Launches a process and its primary thread under the control of the debugger.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateProcess (  
     [in]  LPCWSTR                     lpApplicationName,  
     [in]  LPWSTR                      lpCommandLine,  

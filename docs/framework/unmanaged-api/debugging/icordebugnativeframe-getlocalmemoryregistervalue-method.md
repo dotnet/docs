@@ -23,7 +23,7 @@ Gets the value of an argument or local variable, of which the low word and high 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalMemoryRegisterValue (  
     [in] CORDB_ADDRESS      highWordAddress,  
     [in] CorDebugRegister   lowWordRegister,  

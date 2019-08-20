@@ -23,7 +23,7 @@ Sets the minimum number of threads that the host should allot to I/O completion.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMinThreads (  
     [in] DWORD dwMinIoCompletionThreads  
 );  

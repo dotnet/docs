@@ -23,7 +23,7 @@ Gets the name, row size, number of rows, number of columns, and key column index
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTableInfo (  
     [in]  ULONG       ixTbl,  
     [out] ULONG       *pcbRow,  

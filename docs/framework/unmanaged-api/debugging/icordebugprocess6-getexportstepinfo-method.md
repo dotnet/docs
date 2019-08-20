@@ -10,7 +10,7 @@ Provides information on runtime exported functions to help step through managed 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetExportStepInfo(  
     [in] LPCWSTR pszExportName,   
     [out] CorDebugCodeInvokeKind* pInvokeKind,   

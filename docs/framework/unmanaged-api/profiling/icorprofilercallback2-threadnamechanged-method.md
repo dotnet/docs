@@ -23,7 +23,7 @@ Notifies the code profiler that the name of a thread has changed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadNameChanged(  
     [in] ThreadID threadId,  
     [in] ULONG cchName,  

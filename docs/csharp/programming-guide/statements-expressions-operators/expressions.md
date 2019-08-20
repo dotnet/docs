@@ -19,24 +19,24 @@ System.Convert.ToInt32("35");
 ```  
   
 ## Expression values  
- In most of the contexts in which expressions are used, for example in statements or method parameters, the expression is expected to evaluate to some value. If x and y are integers, the expression `x + y` evaluates to a numeric value. The expression `new MyClass()` evaluates to a reference to a new instance of a `MyClass` class. The expression `myClass.ToString()` evaluates to a string because that is the return type of the method. However, although a namespace name is classified as an expression, it does not evaluate to a value and therefore can never be the final result of any expression. You cannot pass a namespace name to a method parameter, or use it in a new expression, or assign it to a variable. You can only use it as a sub-expression in a larger expression. The same is true for types (as distinct from <xref:System.Type?displayProperty=nameWithType> objects), method group names (as distinct from specific methods), and event [add](../../../csharp/language-reference/keywords/add.md) and [remove](../../../csharp/language-reference/keywords/remove.md) accessors.  
+ In most of the contexts in which expressions are used, for example in statements or method parameters, the expression is expected to evaluate to some value. If x and y are integers, the expression `x + y` evaluates to a numeric value. The expression `new MyClass()` evaluates to a reference to a new instance of a `MyClass` class. The expression `myClass.ToString()` evaluates to a string because that is the return type of the method. However, although a namespace name is classified as an expression, it does not evaluate to a value and therefore can never be the final result of any expression. You cannot pass a namespace name to a method parameter, or use it in a new expression, or assign it to a variable. You can only use it as a sub-expression in a larger expression. The same is true for types (as distinct from <xref:System.Type?displayProperty=nameWithType> objects), method group names (as distinct from specific methods), and event [add](../../language-reference/keywords/add.md) and [remove](../../language-reference/keywords/remove.md) accessors.  
   
- Every value has an associated type. For example, if x and y are both variables of type `int`, the value of the expression `x + y` is also typed as `int`. If the value is assigned to a variable of a different type, or if x and y are different types, the rules of type conversion are applied. For more information about how such conversions work, see [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md).  
+ Every value has an associated type. For example, if x and y are both variables of type `int`, the value of the expression `x + y` is also typed as `int`. If the value is assigned to a variable of a different type, or if x and y are different types, the rules of type conversion are applied. For more information about how such conversions work, see [Casting and Type Conversions](../types/casting-and-type-conversions.md).  
   
 ## Overflows  
- Numeric expressions may cause overflows if the value is larger than the maximum value of the value's type. For more information, see [Checked and Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md) and [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md).  
+ Numeric expressions may cause overflows if the value is larger than the maximum value of the value's type. For more information, see [Checked and Unchecked](../../language-reference/keywords/checked-and-unchecked.md) and [Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md).  
   
 ## Operator precedence and associativity  
- The manner in which an expression is evaluated is governed by the rules of associativity and operator precedence. For more information, see [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md).  
+ The manner in which an expression is evaluated is governed by the rules of associativity and operator precedence. For more information, see [Operators](./operators.md).  
   
- Most expressions, except assignment expressions and method invocation expressions, must be embedded in a statement. For more information, see [Statements](../../../csharp/programming-guide/statements-expressions-operators/statements.md).  
+ Most expressions, except assignment expressions and method invocation expressions, must be embedded in a statement. For more information, see [Statements](./statements.md).  
   
 ## Literals and simple names  
  The two simplest types of expressions are literals and simple names. A literal is a constant value that has no name. For example, in the following code example, both `5` and `"Hello World"` are literal values:  
   
  [!code-csharp[csProgGuideStatements#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#2)]  
   
- For more information on literals, see [Types](../../../csharp/language-reference/keywords/types.md).  
+ For more information on literals, see [Types](../../language-reference/keywords/types.md).  
   
  In the preceding example, both `i` and `s` are simple names that identify local variables. When those variables are used in an expression, the variable name evaluates to the value that is currently stored in the variable's location in memory. This is shown in the following example:  
   
@@ -48,13 +48,13 @@ System.Convert.ToInt32("35");
 DoWork();  
 ```  
   
- A method invocation requires the name of the method, either as a name as in the previous example, or as the result of another expression, followed by parenthesis and any method parameters. For more information, see [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md). A delegate invocation uses the name of a delegate and method parameters in parenthesis. For more information, see [Delegates](../../../csharp/programming-guide/delegates/index.md). Method invocations and delegate invocations evaluate to the return value of the method, if the method returns a value. Methods that return void cannot be used in place of a value in an expression.  
+ A method invocation requires the name of the method, either as a name as in the previous example, or as the result of another expression, followed by parenthesis and any method parameters. For more information, see [Methods](../classes-and-structs/methods.md). A delegate invocation uses the name of a delegate and method parameters in parenthesis. For more information, see [Delegates](../delegates/index.md). Method invocations and delegate invocations evaluate to the return value of the method, if the method returns a value. Methods that return void cannot be used in place of a value in an expression.  
 
 ## Query expressions  
- The same rules for expressions in general apply to query expressions. For more information, see [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md).  
+ The same rules for expressions in general apply to query expressions. For more information, see [LINQ Query Expressions](../linq-query-expressions/index.md).  
   
 ## Lambda expressions  
- Lambda expressions represent "inline methods" that have no name but can have input parameters and multiple statements. They are used extensively in LINQ to pass arguments to methods. Lambda expressions are compiled to either delegates or expression trees depending on the context in which they are used. For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
+ Lambda expressions represent "inline methods" that have no name but can have input parameters and multiple statements. They are used extensively in LINQ to pass arguments to methods. Lambda expressions are compiled to either delegates or expression trees depending on the context in which they are used. For more information, see [Lambda Expressions](./lambda-expressions.md).  
   
 ## Expression trees
 
@@ -69,9 +69,9 @@ C# supports *expression-bodied members*, which allow you to supply a concise exp
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
-- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)
-- [Types](../../../csharp/programming-guide/types/index.md)
-- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+- [C# Programming Guide](../index.md)
+- [Methods](../classes-and-structs/methods.md)
+- [Delegates](../delegates/index.md)
+- [Operators](./operators.md)
+- [Types](../types/index.md)
+- [LINQ Query Expressions](../linq-query-expressions/index.md)

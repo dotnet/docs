@@ -23,7 +23,7 @@ Gets the index for the table referenced by the specified token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTableIndex (  
     [in]  ULONG   token,  
     [out] ULONG   *pixTbl  

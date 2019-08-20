@@ -23,7 +23,7 @@ Closes the indicated enumeration and frees associated resources.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseEnum(  
     HALINKENUM hEnum  
 ) PURE;  

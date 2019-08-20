@@ -13,9 +13,10 @@ In this tutorial, you'll explore the creation of an **analyzer** and an accompan
 
 ## Prerequisites
 
-* [Visual Studio 2017](https://www.visualstudio.com/downloads)
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2017-and-other-products)
+* [Visual Studio 2019](https://www.visualstudio.com/downloads)
 
-You'll need to install the **.NET Compiler Platform SDK**:
+You'll need to install the **.NET Compiler Platform SDK** via the Visual Studio Intaller:
 
 [!INCLUDE[interactive-note](~/includes/roslyn-installation.md)]
 

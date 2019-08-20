@@ -24,7 +24,7 @@ Provides a handle for the enumeration of method instances for a given `IXCLRData
 
 ## Syntax
 
-```
+```cpp
 HRESULT StartEnumInstances(
     [in] IXCLRDataAppDomain* appDomain,
     [out] CLRDATA_ENUM *handle

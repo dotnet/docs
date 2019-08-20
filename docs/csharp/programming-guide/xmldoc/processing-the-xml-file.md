@@ -9,7 +9,7 @@ ms.assetid: 60c71193-9dac-4cd3-98c5-100bd0edcc42
 ---
 # Processing the XML File (C# Programming Guide)
 
-The compiler generates an ID string for each construct in your code that is tagged to generate documentation. (For information about how to tag your code, see [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md).) The ID string uniquely identifies the construct. Programs that process the XML file can use the ID string to identify the corresponding .NET Framework metadata/reflection item that the documentation applies to.
+The compiler generates an ID string for each construct in your code that is tagged to generate documentation. (For information about how to tag your code, see [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md).) The ID string uniquely identifies the construct. Programs that process the XML file can use the ID string to identify the corresponding .NET Framework metadata/reflection item that the documentation applies to.
 
  The XML file is not a hierarchical representation of your code; it is a flat list that has a generated ID for each element.
 
@@ -79,6 +79,6 @@ The following examples show how the ID strings for a class and its members would
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)
-- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/index.md)
+- [C# Programming Guide](../index.md)
+- [/doc (C# Compiler Options)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [XML Documentation Comments](./index.md)

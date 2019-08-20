@@ -23,7 +23,7 @@ Queues a function for execution, and specifies an object containing data to be u
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QueueUserWorkItem (  
     [in] LPTHREAD_START_ROUTINE Function,  
     [in] PVOID Context,  

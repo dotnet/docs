@@ -23,7 +23,7 @@ Gets metadata associated with the member referenced by the specified token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMemberRefProps (  
    [in]  mdMemberRef       mr,   
    [out] mdToken           *ptk,   

@@ -23,7 +23,7 @@ Gets the current frame in the [ICorDebugStackWalk](../../../../docs/framework/un
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFrame([out] ICorDebugFrame ** pFrame);  
 ```  
   

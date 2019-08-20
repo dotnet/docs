@@ -10,7 +10,7 @@ Indicates what kind of event this `ICorDebugDebugEvent` object represents.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEventKind(  
     [out]CorDebugDebugEventKind *pDebugEventKind  
 );  

@@ -23,7 +23,7 @@ Notifies the debugger that a common language runtime assembly has been unloaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadAssembly (  
     [in] IcorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugAssembly   *pAssembly  

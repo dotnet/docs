@@ -23,7 +23,7 @@ Establishes a new connection between the host and the debugger to associate a li
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginConnection (  
     [in] CONNID dwConnectionId,  
     [in, string] wchar_t* szConnectionName  

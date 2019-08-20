@@ -22,7 +22,7 @@ Retrieves the path of the application history directory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHistoryFileDirectory (  
     [in]      LPWSTR      wzDir,  
     [in,out]  LPCWSTR  *pdwsize,  

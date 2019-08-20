@@ -23,7 +23,7 @@ Gets the base memory address of the specified image.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageBase (  
     [in, string] LPCWSTR    imagePath,  
     [out] CLRDATA_ADDRESS   *baseAddress  

@@ -22,7 +22,7 @@ Indicates the version, build, culture, signature, and so on, of two assemblies t
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
   
     ASM_CMPF_NAME                   = 0x1,  

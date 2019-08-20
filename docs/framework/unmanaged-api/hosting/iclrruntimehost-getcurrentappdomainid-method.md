@@ -23,7 +23,7 @@ Gets the numeric identifier of the <xref:System.AppDomain> that is currently exe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentAppDomainId(  
     [out] DWORD* pdwAppDomainId  
 );  

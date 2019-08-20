@@ -8,7 +8,7 @@ ms.custom: ""
 
 # Telemetry collection by the ML.NET CLI
 
-The [ML.NET CLI](http://aka.ms/mlnet-cli) includes a telemetry feature that collects anonymous usage data that is aggregated for use by Microsoft.
+The [ML.NET CLI](https://aka.ms/mlnet-cli) includes a telemetry feature that collects anonymous usage data that is aggregated for use by Microsoft.
 
 ## How Microsoft uses the data
 
@@ -31,7 +31,7 @@ Telemetry *is enabled* when you run an [ML.NET CLI command](../reference/ml-net-
 
 The ML.NET CLI telemetry feature is enabled by default.
 
-Opt out of the telemetry feature by setting the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`. This environment variable applies globally to the .NET CLI tool.
+Opt out of the telemetry feature by setting the `MLDOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`. This environment variable applies globally to the .NET CLI tool.
 
 ## Data points collected
 

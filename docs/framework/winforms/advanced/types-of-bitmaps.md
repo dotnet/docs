@@ -47,7 +47,7 @@ A bitmap is an array of bits that specify the color of each pixel in a rectangul
  ![Bitmap sample](./media/aboutgdip03-art02.gif "AboutGdip03_Art02")  
   
 ## Graphics File Formats  
- There are many standard formats for saving bitmaps in disk files. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] supports the graphics file formats described in the following paragraphs.  
+ There are many standard formats for saving bitmaps in disk files. GDI+ supports the graphics file formats described in the following paragraphs.  
   
 ### BMP  
  BMP is a standard format used by Windows to store device-independent and application-independent images. The number of bits per pixel (1, 4, 8, 15, 24, 32, or 64) for a given BMP file is specified in a file header. BMP files with 24 bits per pixel are common. BMP files are usually not compressed and, therefore, are not well suited for transfer across the Internet.  

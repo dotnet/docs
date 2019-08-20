@@ -23,7 +23,7 @@ Gets the managed slot-index of a local variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSlotIndex(  
     [out] ULONG32 *pSlotIndex  
 );  

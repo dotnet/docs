@@ -27,7 +27,7 @@ Provides functionality for creating a native portable executable (PE) file. The 
   
 ## Syntax  
   
-```  
+```cpp  
 class ICeeFileGen {  
 public:  
     virtual HRESULT CreateCeeFile(HCEEFILE *ceeFile);  

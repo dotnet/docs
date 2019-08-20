@@ -28,4 +28,4 @@ You can provide a standard dialog box that shows progress on file operations in 
   
 ## See also
 
-- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+- [File System and the Registry (C# Programming Guide)](./index.md)

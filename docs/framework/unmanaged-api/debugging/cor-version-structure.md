@@ -22,7 +22,7 @@ Stores the standard four-part version number of the common language runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_VERSION {  
     DWORD dwMajor;  
     DWORD dwMinor;  

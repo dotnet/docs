@@ -23,7 +23,7 @@ Converts a type identifier to an ICorDebugType value.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeForTypeID(  
     [in] COR_TYPEID id, [  
     out] ICorDebugType **ppType  

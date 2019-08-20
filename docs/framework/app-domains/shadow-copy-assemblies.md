@@ -28,7 +28,7 @@ Shadow copying enables assemblies that are used in an application domain to be u
   
 - [Startup Performance](#StartupPerformance) describes the changes that are made to shadow copying in the .NET Framework 4 to improve startup performance, and how to revert to the behavior of earlier versions.  
   
-- [Obsolete Methods](#ObsoleteMethods) describes the changes that were made to the properties and methods that control shadow copying in the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)].  
+- [Obsolete Methods](#ObsoleteMethods) describes the changes that were made to the properties and methods that control shadow copying in the .NET Framework 2.0.  
   
 <a name="EnablingAndUsing"></a>   
 ## Enabling and Using Shadow Copying  

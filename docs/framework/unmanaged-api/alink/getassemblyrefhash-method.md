@@ -22,7 +22,7 @@ Retrieves a hash blob for a given assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyRefHash(  
     mdToken FileToken,  
     const void** ppvHash,  

@@ -23,7 +23,7 @@ Gets the size of a specified object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectSize(  
     [in]  ObjectID objectId,  
     [out] ULONG  *pcSize);  

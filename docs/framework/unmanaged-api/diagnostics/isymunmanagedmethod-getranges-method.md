@@ -23,7 +23,7 @@ Given a position in a document, returns an array of start and end offset pairs t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRanges(  
     [in]  ISymUnmanagedDocument* document,  
     [in]  ULONG32                line,  

@@ -16,7 +16,7 @@ Verifies the validity of an Authenticode XrML license.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CertVerifyAuthenticodeLicense (  
     [in]   PCRYPT_DATA_BLOB                   pLicenseBlob,  
     [in]   OPTIONAL DWORD                     dwFlags,  
@@ -29,7 +29,7 @@ HRESULT CertVerifyAuthenticodeLicense (
  `pLicenseBlob`  
  [in] The Authenticode XrML license to be verified.  
   
- See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
+ See the [CRYPTOAPI_BLOB](/windows/win32/api/dpapi/ns-dpapi-crypt_integer_blob) structure.  
   
  `dwFlags`  
  [in] Optional. A combination of following values:  

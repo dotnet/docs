@@ -23,7 +23,7 @@ Causes this ICorDebugStepper to single-step through its containing thread, and o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Step (  
     [in] BOOL   bStepIn  
 );  

@@ -23,7 +23,7 @@ Indicates that all custom attributes have been merged into the emit scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndMerge(  
     mdAssembly AssemblyID  
 ) PURE;  

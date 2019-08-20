@@ -25,7 +25,7 @@ Gets the public key from a private/public key pair. The key pair can be supplied
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameGetPublicKey (   
     [in]  LPCWSTR   szKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  

@@ -23,7 +23,7 @@ Gets the module in which this function is defined.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModule (  
     [out] ICorDebugModule **ppModule  
 );  

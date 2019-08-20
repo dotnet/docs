@@ -23,7 +23,7 @@ Gets an enumerator to the call stack embedded in an exception object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateExceptionCallStack(  
     [out] ICorDebugExceptionObjectCallStackEnum **ppCallStackEnum  
 );  

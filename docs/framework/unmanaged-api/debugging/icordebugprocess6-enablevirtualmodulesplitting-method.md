@@ -10,7 +10,7 @@ Enables or disables virtual module splitting.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableVirtualModuleSplitting(  
    BOOL enableSplitting  
 );  

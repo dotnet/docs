@@ -18,7 +18,7 @@ Provides additional information about debug events on the Windows platform.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugDecodeEventFlagsWindows {  
     IS_FIRST_CHANCE = 1,  
 } CorDebugDecodeEventFlagsWindows;  

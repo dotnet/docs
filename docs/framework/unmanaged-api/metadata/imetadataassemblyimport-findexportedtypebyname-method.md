@@ -23,7 +23,7 @@ Gets a pointer to an exported type, given its name and enclosing type.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindExportedTypeByName (  
     [in]  LPCWSTR           szName,   
     [in]  mdToken           mdtExportedType,   

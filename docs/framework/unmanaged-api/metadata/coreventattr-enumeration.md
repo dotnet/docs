@@ -22,7 +22,7 @@ Contains values that describe the metadata of an event.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorEventAttr {  
   
     evSpecialName           =   0x0200,  

@@ -22,7 +22,7 @@ Indicates whether the garbage collector is running on a workstation or a server.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugGCType {  
     CorDebugWorkstationGC  = 0,  
     CorDebugServerGC       = ( CorDebugWorkstationGC + 1 )  

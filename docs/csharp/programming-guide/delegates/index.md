@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 97de039b-c76b-4b9c-a27d-8c1e1c8d93da
 ---
 # Delegates (C# Programming Guide)
-A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type that represents references to methods with a particular parameter list and return type. When you instantiate a delegate, you can associate its instance with any method with a compatible signature and return type. You can invoke (or call) the method through the delegate instance.  
+A [delegate](../../language-reference/keywords/delegate.md) is a type that represents references to methods with a particular parameter list and return type. When you instantiate a delegate, you can associate its instance with any method with a compatible signature and return type. You can invoke (or call) the method through the delegate instance.  
   
  Delegates are used to pass methods as arguments to other methods. Event handlers are nothing more than methods that are invoked through delegates. You create a custom method, and a class such as a windows control can call your method when a certain event occurs. The following example shows a delegate declaration:  
   
@@ -32,25 +32,23 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
 - Delegates can be chained together; for example, multiple methods can be called on a single event.  
   
-- Methods do not have to match the delegate type exactly. For more information, see [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md).  
+- Methods do not have to match the delegate type exactly. For more information, see [Using Variance in Delegates](../concepts/covariance-contravariance/using-variance-in-delegates.md).  
   
-- C# version 2.0 introduced the concept of [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md), which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types. Together, these features are now known as anonymous functions. For more information about lambda expressions, see [Anonymous Functions](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md).  
+- C# version 2.0 introduced the concept of [anonymous methods](../../language-reference/operators/delegate-operator.md), which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types. Together, these features are now known as anonymous functions. For more information about lambda expressions, see [Lambda expressions](../statements-expressions-operators/lambda-expressions.md).
   
 ## In This Section  
   
-- [Using Delegates](../../../csharp/programming-guide/delegates/using-delegates.md)  
+- [Using Delegates](./using-delegates.md)  
   
 - [When to Use Delegates Instead of Interfaces (C# Programming Guide)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms173173(v=vs.100))  
   
-- [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)  
+- [Delegates with Named vs. Anonymous Methods](./delegates-with-named-vs-anonymous-methods.md)  
   
-- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
+- [Using Variance in Delegates](../concepts/covariance-contravariance/using-variance-in-delegates.md)  
   
-- [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md)  
+- [How to: Combine Delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)  
   
-- [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
-  
-- [How to: Declare, Instantiate, and Use a Delegate](../../../csharp/programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md)  
+- [How to: Declare, Instantiate, and Use a Delegate](./how-to-declare-instantiate-and-use-a-delegate.md)  
 
 ## C# Language Specification  
 
@@ -64,5 +62,5 @@ For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C
 ## See also
 
 - <xref:System.Delegate>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Events](../../../csharp/programming-guide/events/index.md)
+- [C# Programming Guide](../index.md)
+- [Events](../events/index.md)

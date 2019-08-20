@@ -23,7 +23,7 @@ Forces garbage collection to occur within the common language runtime (CLR).
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ForceGC();  
 ```  
   

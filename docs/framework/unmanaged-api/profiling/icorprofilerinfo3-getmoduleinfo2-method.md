@@ -23,7 +23,7 @@ Given a module ID, returns the file name of the module, the ID of the module's p
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleInfo2(  
     [in]  ModuleID   moduleId,  
     [out] LPCBYTE    *ppBaseLoadAddress,  

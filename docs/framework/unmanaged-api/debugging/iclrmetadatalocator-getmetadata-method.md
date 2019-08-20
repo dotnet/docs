@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) data access services to retrieve the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetadata(  
     [in]  LPCWSTR         imagePath,  
     [in]  ULONG32         imageTimestamp,  

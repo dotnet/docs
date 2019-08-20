@@ -23,7 +23,7 @@ Attaches the specified profiler to the specified process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AttachProfiler(  
   [in] DWORD dwProfileeProcessID,  
   [in] DWORD dwMillisecondsMax,                     // optional  

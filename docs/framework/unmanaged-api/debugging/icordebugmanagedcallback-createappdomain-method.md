@@ -23,7 +23,7 @@ Notifies the debugger that an application domain has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAppDomain (  
     [in] ICorDebugProcess   *pProcess,  
     [in] ICorDebugAppDomain *pAppDomain  

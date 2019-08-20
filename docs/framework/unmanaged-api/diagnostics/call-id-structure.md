@@ -22,7 +22,7 @@ Provides information to a debugger about a function that is being called. See th
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct tagCALL_ID  
 {  
     LPCOLESTR       szMachine;  

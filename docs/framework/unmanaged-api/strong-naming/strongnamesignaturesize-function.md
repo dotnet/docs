@@ -24,7 +24,7 @@ Returns the size of the strong name signature. `StrongNameSignatureSize` is typi
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameSignatureSize (   
     [in]  BYTE   *pbPublicKeyBlob,  
     [in]  ULONG  cbPublicKeyBlob,   

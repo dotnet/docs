@@ -23,7 +23,7 @@ Gets a pointer to the [FUSION_INSTALL_REFERENCE](../../../../docs/framework/unma
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReference (  
     [out] LPFUSION_INSTALL_REFERENCE *ppRefData,  
     [in]  DWORD dwFlags,  

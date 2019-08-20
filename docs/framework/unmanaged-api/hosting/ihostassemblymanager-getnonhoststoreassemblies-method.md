@@ -23,7 +23,7 @@ Gets an interface pointer to an [ICLRAssemblyReferenceList](../../../../docs/fra
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNonHostStoreAssemblies (  
     [out] ICLRAssemblyReferenceList **ppReferenceList  
 );  

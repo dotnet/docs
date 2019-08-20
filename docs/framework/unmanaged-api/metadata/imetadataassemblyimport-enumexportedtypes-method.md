@@ -23,7 +23,7 @@ Enumerates the exported types referenced in the assembly manifest in the current
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumExportedTypes (  
     [in, out] HCORENUM     *phEnum,   
     [out] mdExportedType   rExportedTypes[],   

@@ -28,7 +28,7 @@ Shuts down the current unmanaged process.
   
 ## Syntax  
   
-```  
+```cpp  
 void STDMETHODCALLTYPE CorExitProcess (   
   int  exitCode  
 );  

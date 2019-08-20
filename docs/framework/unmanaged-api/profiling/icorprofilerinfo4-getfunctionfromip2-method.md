@@ -23,7 +23,7 @@ Maps a managed code instruction pointer to the JIT-recompiled version of a funct
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromIP2(  
     [in]  LPCBYTE    ip,  
     [out] FunctionID *pFunctionId,  

@@ -24,7 +24,7 @@ Defines a transport buffer for a method's runtime information.
 
 ## Syntax
 
-```
+```cpp
 struct DacpMethodDescData
 {
     int             bHasNativeCode;

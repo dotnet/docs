@@ -23,7 +23,7 @@ Gets the metadata associated with the method referenced by the specified MethodD
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodProps (  
     [in]  mdMethodDef         mb,  
     [out] mdTypeDef           *pClass,  

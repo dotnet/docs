@@ -23,7 +23,7 @@ Gets an interface pointer to an [IHostAssemblyStore](../../../../docs/framework/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyStore (  
     [out] IHostAssemblyStore **ppAssemblyStore  
 );  

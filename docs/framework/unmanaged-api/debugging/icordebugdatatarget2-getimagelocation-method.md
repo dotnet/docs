@@ -10,7 +10,7 @@ Returns the path of a module from the module's base address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,  
     [in] ULONG32 cchName,  
     [out] ULONG32 *pcchName,  

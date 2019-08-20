@@ -23,7 +23,7 @@ Gets the value of the specified local variable in this Microsoft intermediate la
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalVariable (  
     [in] DWORD                  dwIndex,  
     [out] ICorDebugValue        **ppValue  

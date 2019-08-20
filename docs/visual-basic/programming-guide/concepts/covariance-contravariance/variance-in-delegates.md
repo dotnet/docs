@@ -208,5 +208,5 @@ Relaxed delegate conversion enables more flexibility in matching method signatur
 
 ## See also
 
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../../standard/generics/index.md)
 - [Using Variance for Func and Action Generic Delegates (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)

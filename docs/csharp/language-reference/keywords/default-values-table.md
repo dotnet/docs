@@ -1,70 +1,56 @@
 ---
-title: "Default values table - C# Reference"
+title: "Default values table - C# reference"
 ms.custom: seodec18
-
-description: Learn what are the default values of C# value types.
-ms.date: 08/23/2018
+description: Learn what are the default values of C# types.
+ms.date: 07/29/2019
 helpviewer_keywords: 
-  - "constructors [C#], return values"
-  - "keywords [C#], new"
+  - "default [C#]"
   - "parameterless constructor [C#]"
-  - "defaults [C#]"
-  - "value types [C#], initializing"
-  - "variables [C#], value types"
-  - "constructors [C#], parameterless constructor"
-  - "types [C#], parameterless constructor return values"
 ---
-# Default values table (C# Reference)
+# Default values table (C# reference)
 
-The following table shows the default values of [value types](value-types.md).
+The following table shows the default values of C# types:
 
-|Value type|Default value|
-|----------------|-------------------|
+|Type|Default value|
+|---------|------------------|
+|Any reference type|`null`|
+|Any [built-in integral numeric type](../builtin-types/integral-numeric-types.md)|0 (zero)|
+|Any [built-in floating-point numeric type](../builtin-types/floating-point-numeric-types.md)|0 (zero)|
 |[bool](bool.md)|`false`|
-|[byte](byte.md)|0|
-|[char](char.md)|'\0'|
-|[decimal](decimal.md)|0M|
-|[double](double.md)|0.0D|
+|[char](char.md)|`'\0'` (U+0000)|
 |[enum](enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
-|[float](float.md)|0.0F|
-|[int](int.md)|0|
-|[long](long.md)|0L|
-|[sbyte](sbyte.md)|0|
-|[short](short.md)|0|
 |[struct](struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|
-|[uint](uint.md)|0|
-|[ulong](ulong.md)|0|
-|[ushort](ushort.md)|0|
+|Any [nullable value type](../../programming-guide/nullable-types/index.md)|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined. That default value is also known as the *null* value of the nullable value type.|
 
-## Remarks
-
-You cannot use uninitialized variables in C#. You can initialize a variable with the default value of its type. You also can use the default value of a type to specify the default value of a method's [optional argument](../../programming-guide/classes-and-structs/named-and-optional-arguments.md#optional-arguments).
-
-Use the [default value expression](../../programming-guide/statements-expressions-operators/default-value-expressions.md) to produce the default value of a type, as the following example shows:
+Use the [default operator](../operators/default.md) to produce the default value of a type, as the following example shows:
 
 ```csharp
 int a = default(int);
 ```
 
-Beginning with C# 7.1, you can use the [`default` literal](../../programming-guide/statements-expressions-operators/default-value-expressions.md#default-literal-and-type-inference) to initialize a variable with the default value of its type:
+Beginning with C# 7.1, you can use the [`default` literal](../operators/default.md#default-literal) to initialize a variable with the default value of its type:
 
 ```csharp
 int a = default;
 ```
 
-You also can use the parameterless constructor or the implicit parameterless constructor to produce the default value of a value type, as the following example shows. For more information about constructors, see the [Constructors](../../programming-guide/classes-and-structs/constructors.md) article.
+For a value type, the implicit parameterless constructor also produces the default value of the type, as the following example shows:
 
-```csharp
-int a = new int();
+```csharp-interactive
+var n = new System.Numerics.Complex();
+Console.WriteLine(n);  // output: (0, 0)
 ```
 
-The default value of any [reference type](reference-types.md) is `null`. The default value of a [nullable type](../../programming-guide/nullable-types/index.md) is an instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined.
+## C# language specification
+
+For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+
+- [Default values](~/_csharplang/spec/variables.md#default-values)
+- [Default constructors](~/_csharplang/spec/types.md#default-constructors)
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [Value types](value-types.md)
-- [Value types table](value-types-table.md)
+- [C# reference](../index.md)
+- [C# keywords](index.md)
 - [Built-in types table](built-in-types-table.md)
+- [Constructors](../../programming-guide/classes-and-structs/constructors.md)

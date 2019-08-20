@@ -23,7 +23,7 @@ Gets the name, size, and contents of the metadata stream at the specified index.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataStreamInfo (  
    [in]  ULONG        ix,  
    [out] const char   **ppchName,  

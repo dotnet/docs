@@ -31,7 +31,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that specifies the name of the property that matches a single constructor argument.  
   
- <xref:System.Windows.Markup.ConstructorArgumentAttribute> specifies that an object can be initialized by using a non-default constructor syntax, and that a property of the specified name supplies construction information. This information is primarily for XAML serialization. For more information, see <xref:System.Windows.Markup.ConstructorArgumentAttribute>.  
+ <xref:System.Windows.Markup.ConstructorArgumentAttribute> specifies that an object can be initialized by using a non-parameterless constructor syntax, and that a property of the specified name supplies construction information. This information is primarily for XAML serialization. For more information, see <xref:System.Windows.Markup.ConstructorArgumentAttribute>.  
   
 ### ContentPropertyAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.ContentPropertyAttribute>  

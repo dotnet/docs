@@ -4,7 +4,7 @@ description: Supported macOS versions and .NET Core dependencies to develop, dep
 author: mairaw
 ms.author: adegeo
 ms.custom: "updateeachvsrelease"
-ms.date: 12/14/2018
+ms.date: 07/13/2019
 ---
 # Prerequisites for .NET Core on macOS
 
@@ -35,9 +35,9 @@ For download links and more information, see [.NET Core 1.1 downloads](https://w
 
 # [.NET Core 3.0](#tab/netcore30)
 
-.NET Core 3.0 Preview 3 is supported on the following versions of macOS:
+.NET Core 3.0 is supported on the following versions of macOS:
 
-* macOS 10.12 "Sierra" and later versions
+* macOS 10.13 "High Sierra" and later versions
 
 See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 

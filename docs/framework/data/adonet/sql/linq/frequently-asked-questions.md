@@ -47,7 +47,7 @@ The following sections answer some common issues that you might encounter when y
  A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides several tools for inspecting the SQL code it generates. One of the most important is <xref:System.Data.Linq.DataContext.Log%2A>. For more information, see [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md).  
   
 ## Unexpected Stored Procedure Results  
- Q. I have a stored procedure whose return value is calculated by `MAX()`. When I drag the stored procedure to the [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] surface, the return value is not correct.  
+ Q. I have a stored procedure whose return value is calculated by `MAX()`. When I drag the stored procedure to the O/R Designer surface, the return value is not correct.  
   
  A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides two ways to return database-generated values by way of stored procedures:  
   
@@ -101,7 +101,7 @@ The following sections answer some common issues that you might encounter when y
 ## Multiple DBML Files  
  Q. When I have multiple DBML files that share some tables in common, I get a compiler error.  
   
- A. Set the **Context Namespace** and **Entity Namespace** properties from the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to a distinct value for each DBML file. This approach eliminates the name/namespace collision.  
+ A. Set the **Context Namespace** and **Entity Namespace** properties from the Object Relational Designer to a distinct value for each DBML file. This approach eliminates the name/namespace collision.  
   
 ## Avoiding Explicit Setting of Database-Generated Values on Insert or Update  
  Q. I have a database table with a `DateCreated` column that defaults to SQL `Getdate()`. When I try to insert a new record by using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the value gets set to `NULL`. I would expect it to be set to the database default.  
@@ -126,19 +126,19 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 ```  
   
 ## Errors Using SQL Compact 3.5  
- Q. I get an error when I drag tables out of a [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] database.  
+ Q. I get an error when I drag tables out of a SQL Server Compact 3.5 database.  
   
- A. The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] does not support [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)], although the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime does. In this situation, you must create your own entity classes and add the appropriate attributes.  
+ A. The Object Relational Designer does not support SQL Server Compact 3.5, although the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime does. In this situation, you must create your own entity classes and add the appropriate attributes.  
   
 ## Errors in Inheritance Relationships  
- Q. I used the toolbox inheritance shape in the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to connect two entities, but I get errors.  
+ Q. I used the toolbox inheritance shape in the Object Relational Designer to connect two entities, but I get errors.  
   
  A. Creating the relationship is not enough. You must provide information such as the discriminator column, base class discriminator value, and derived class discriminator value.  
   
 ## Provider Model  
  Q. Is a public provider model available?  
   
- A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports SQL Server and [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] only.  
+ A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports SQL Server and SQL Server Compact 3.5 only.  
   
 ## SQL-Injection Attacks  
  Q. How is [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] protected from SQL-injection attacks?  
@@ -157,7 +157,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 3. Review the default <xref:System.Data.Linq.Mapping.UpdateCheck> value (<xref:System.Data.Linq.Mapping.UpdateCheck.Never>) to determine whether that is the correct value for your application.  
   
     > [!CAUTION]
-    >  If you are using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] in Visual Studio, your changes might be overwritten.  
+    >  If you are using the Object Relational Designer in Visual Studio, your changes might be overwritten.  
   
 ## APTCA  
  Q. Is System.Data.Linq marked for use by partially trusted code?  

@@ -23,7 +23,7 @@ Defines a name for a constant value.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineConstant2(  
     [in] const WCHAR  *name,  
     [in] VARIANT      value,  

@@ -23,7 +23,7 @@ Gets the type of the variable's native location.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocationType(  
     [out] VariableLocationType *pLocationType  
 );  

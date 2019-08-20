@@ -22,7 +22,7 @@ Represents an enumerator for the referenced assemblies installed in the global a
   
 ## Syntax  
   
-```  
+```cpp  
 interface IInstallReferenceEnum : IUnknown {  
     HRESULT GetNextInstallReferenceItem (  
         [out] IInstallReferenceItem **ppRefItem,  

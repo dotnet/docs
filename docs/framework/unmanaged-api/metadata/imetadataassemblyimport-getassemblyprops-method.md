@@ -23,7 +23,7 @@ Gets the set of properties for the assembly with the specified metadata signatur
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyProps (  
     [in]  mdAssembly          mda,  
     [out] const void          **ppbPublicKey,   

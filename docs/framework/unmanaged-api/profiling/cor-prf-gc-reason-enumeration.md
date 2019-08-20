@@ -22,7 +22,7 @@ Indicates the reason that garbage collection is occurring.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_GC_INDUCED = 1,  
     COR_PRF_GC_OTHER = 0  

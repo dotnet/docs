@@ -23,7 +23,7 @@ Enumerates methods that have the specified name and that are defined by the type
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMethodsWithName (  
    [in, out] HCORENUM    *phEnum,  
    [in]  mdTypeDef       cl,  

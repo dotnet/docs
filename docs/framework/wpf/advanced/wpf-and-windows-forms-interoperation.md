@@ -29,7 +29,7 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
   
 - It may host a master/detail form with a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] master and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] details.  
   
-- It may host one or more [!INCLUDE[TLA2#tla_actx](../../../../includes/tla2sharptla-actx-md.md)] controls.  
+- It may host one or more ActiveX controls.  
   
 - It may host one or more composite controls.  
   

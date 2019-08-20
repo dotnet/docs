@@ -11,7 +11,7 @@ This topic describes [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq
   
  You can add serialization code at design time by either of the following methods:  
   
-- In the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)], change the **Serialization Mode** property to **Unidirectional**.  
+- In the Object Relational Designer, change the **Serialization Mode** property to **Unidirectional**.  
   
 - On the SQLMetal command line, add the **/serialization** option. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md).  
   

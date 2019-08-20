@@ -2,22 +2,26 @@
 title: "How to: Implement a Lightweight Class with Auto-Implemented Properties - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
-helpviewer_keywords: 
+helpviewer_keywords:
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
 ---
 # How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)
-This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.  
-  
- You can make an immutable property in two ways.  You can declare the [set](../../../csharp/language-reference/keywords/set.md) accessor to be [private](../../../csharp/language-reference/keywords/private.md).  The property is only settable within the type, but it is immutable to consumers.  You can instead declare only the [get](../../../csharp/language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type’s constructor.  
-  
- When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.  
-  
-## Example  
- The following example shows two ways to implement an immutable class that has auto-implemented properties. Each way declares one of the properties with a private `set` and one of the properties with a `get` only.  The first class uses a constructor only to initialize the properties, and the second class uses a static factory method that calls a constructor.  
-  
-```csharp  
+
+This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.
+
+You can make an immutable property in two ways:
+- You can declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).  The property is only settable within the type, but it is immutable to consumers.
+
+  When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.
+- You can declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type’s constructor.
+
+## Example
+
+The following example shows two ways to implement an immutable class that has auto-implemented properties. Each way declares one of the properties with a private `set` and one of the properties with a `get` only.  The first class uses a constructor only to initialize the properties, and the second class uses a static factory method that calls a constructor.
+
+```csharp
 // This class is immutable. After an object is created,
 // it cannot be modified from outside the class. It uses a
 // constructor to initialize its properties.
@@ -96,20 +100,20 @@ public class Program
         Console.ReadKey();
     }
 }
-  
-/* Output:  
-    Terry Adams, 123 Main St.  
-    Fadi Fakhouri, 345 Cypress Ave.  
-    Hanying Feng, 678 1st Ave  
-    Cesar Garcia, 12 108th St.  
-    Debra Garcia, 89 E. 42nd St.  
-*/  
-```  
-  
- The compiler creates backing fields for each auto-implemented property. The fields are not accessible directly from source code.  
-  
+
+/* Output:
+    Terry Adams, 123 Main St.
+    Fadi Fakhouri, 345 Cypress Ave.
+    Hanying Feng, 678 1st Ave
+    Cesar Garcia, 12 108th St.
+    Debra Garcia, 89 E. 42nd St.
+*/
+```
+
+The compiler creates backing fields for each auto-implemented property. The fields are not accessible directly from source code.
+
 ## See also
 
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
-- [struct](../../../csharp/language-reference/keywords/struct.md)
-- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Properties](./properties.md)
+- [struct](../../language-reference/keywords/struct.md)
+- [Object and Collection Initializers](./object-and-collection-initializers.md)

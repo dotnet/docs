@@ -23,7 +23,7 @@ Gets an interface pointer to an "ICorDebugModule" that references the module in 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModule (  
     [out] ICorDebugModule   **ppModule  
 );  

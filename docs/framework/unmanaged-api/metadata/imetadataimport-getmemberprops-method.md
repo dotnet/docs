@@ -23,7 +23,7 @@ Gets information stored in the metadata for a specified member definition, inclu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMemberProps (  
    [in]  mdToken           mb,   
    [out] mdTypeDef         *pClass,  

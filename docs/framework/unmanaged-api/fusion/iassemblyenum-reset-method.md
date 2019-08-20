@@ -23,7 +23,7 @@ Resets this [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fusion/iass
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset (  
     void  
 );  

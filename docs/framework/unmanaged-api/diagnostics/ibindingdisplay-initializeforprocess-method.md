@@ -23,7 +23,7 @@ Initializes the [IBindingDisplay](../../../../docs/framework/unmanaged-api/diagn
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeForProcess (  
     [in] ULONG32   pid  
 );  

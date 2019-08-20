@@ -23,7 +23,7 @@ Retrieves assembly-level custom attributes.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumCustomAttributes(  
     HALINKENUM hEnum,  
     mdToken tkType,  

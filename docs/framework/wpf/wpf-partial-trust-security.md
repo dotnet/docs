@@ -17,9 +17,9 @@ helpviewer_keywords:
 ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 ---
 # WPF Partial Trust Security
-<a name="introduction"></a> In general, Internet applications should be restricted from having direct access to critical system resources, to prevent malicious damage. By default, [!INCLUDE[TLA#tla_html](../../../includes/tlasharptla-html-md.md)] and client-side scripting languages are not able to access critical system resources. Because Windows Presentation Foundation (WPF) browser-hosted applications can be launched from the browser, they should conform to a similar set of restrictions. To enforce these restrictions, [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] relies on both [!INCLUDE[TLA#tla_cas](../../../includes/tlasharptla-cas-md.md)] and [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] (see [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). By default, browser-hosted applications request the Internet zone [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] set of permissions, irrespective of whether they are launched from the Internet, the local intranet, or the local computer. Applications that run with anything less than the full set of permissions are said to be running with partial trust.  
+<a name="introduction"></a> In general, Internet applications should be restricted from having direct access to critical system resources, to prevent malicious damage. By default, HTML and client-side scripting languages are not able to access critical system resources. Because Windows Presentation Foundation (WPF) browser-hosted applications can be launched from the browser, they should conform to a similar set of restrictions. To enforce these restrictions, [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] relies on both Code Access Security (CAS) and ClickOnce (see [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). By default, browser-hosted applications request the Internet zone CAS set of permissions, irrespective of whether they are launched from the Internet, the local intranet, or the local computer. Applications that run with anything less than the full set of permissions are said to be running with partial trust.  
   
- [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] provides a wide variety of support to ensure that as much functionality as possible can be used safely in partial trust, and along with [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)], provides additional support for partial trust programming.  
+ [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] provides a wide variety of support to ensure that as much functionality as possible can be used safely in partial trust, and along with CAS, provides additional support for partial trust programming.  
   
  This topic contains the following sections:  
   
@@ -44,7 +44,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 |Editing|Spell Checking<br /><br /> RichTextBox<br /><br /> Plaintext and Ink Clipboard Support<br /><br /> User-Initiated Paste<br /><br /> Copying Selected Content|  
 |Controls|General Controls|  
   
- This table covers the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features at a high level. For more detailed information, the [!INCLUDE[TLA#tla_lhsdk](../../../includes/tlasharptla-lhsdk-md.md)] documents the permissions that are required by each member in [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
+ This table covers the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features at a high level. For more detailed information, the Windows SDK documents the permissions that are required by each member in [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
   
 - [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] (see [XAML Overview (WPF)](./advanced/xaml-overview-wpf.md)).  
   
@@ -83,7 +83,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 > [!NOTE]
 >  The behavior described in the previous table is for full trust XBAPs that do not follow the ClickOnce Trusted Deployment model.  
   
- In general, code that may exceed the allowed permissions is likely to be common code that is shared between both standalone and browser-hosted applications. [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] and [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] offer several techniques for managing this scenario.  
+ In general, code that may exceed the allowed permissions is likely to be common code that is shared between both standalone and browser-hosted applications. CAS and [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] offer several techniques for managing this scenario.  
   
 <a name="Detecting_Permissions_using_CAS"></a>   
 ### Detecting Permissions Using CAS  
@@ -107,11 +107,11 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
  In many cases, you should be able to find a partial trust alternative.  
   
- In a controlled environment, such as an intranet, custom managed frameworks can be installed across the client base into the [!INCLUDE[TLA#tla_gac](../../../includes/tlasharptla-gac-md.md)]. These libraries can execute code that requires full trust, and be referenced from applications that are only allowed partial trust by using <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (for more information, see [Security](security-wpf.md) and [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)).  
+ In a controlled environment, such as an intranet, custom managed frameworks can be installed across the client base into the global assembly cache (GAC). These libraries can execute code that requires full trust, and be referenced from applications that are only allowed partial trust by using <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (for more information, see [Security](security-wpf.md) and [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)).  
   
 <a name="Browser_Host_Detection"></a>   
 ### Browser Host Detection  
- Using [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] only runs within the Internet zone sandbox, you can use the <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)].  
+ Using CAS to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] only runs within the Internet zone sandbox, you can use the <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)].  
   
 > [!NOTE]
 >  <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A> only distinguishes whether an application is running in a browser, not which set of permissions an application is running with.  

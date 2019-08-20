@@ -24,7 +24,7 @@ Resets an enumerator back to the beginning of the enumeration.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginEnumeration (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr, 

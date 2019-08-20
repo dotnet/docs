@@ -22,7 +22,7 @@ Provides values to influence the type of `reloc` instruction emitted in a call t
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  {  
     srRelocAbsolute,  
     srRelocHighLow          = 3,  

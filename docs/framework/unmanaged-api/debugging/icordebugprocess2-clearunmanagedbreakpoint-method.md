@@ -23,7 +23,7 @@ Removes a previously set breakpoint at the given address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClearUnmanagedBreakpoint (  
     [in] CORDB_ADDRESS   address  
 );  

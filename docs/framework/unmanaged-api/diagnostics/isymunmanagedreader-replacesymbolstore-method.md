@@ -26,7 +26,7 @@ Replaces the existing symbol store with a delta symbol store. This method is sim
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReplaceSymbolStore (  
     [in] const WCHAR *filename,  
     [in] IStream *pIStream);  

@@ -23,7 +23,7 @@ Instructs the runtime to detach the profiler.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestProfilerDetach(  
    [in] DWORD    dwExpectedCompletionMilliseconds);  
 ```  

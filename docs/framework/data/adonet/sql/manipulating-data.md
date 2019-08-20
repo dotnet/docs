@@ -79,7 +79,7 @@ Module Module1
   
   Function GetConnectionString() As String  
     ' To avoid storing the connection string in your code,  
-    ' you can retrive it from a configuration file.  
+    ' you can retrieve it from a configuration file.  
     Return "Data Source=(local);Integrated Security=SSPI;" & _  
       "Initial Catalog=AdventureWorks; MultipleActiveResultSets=True"  
   End Function  
@@ -150,7 +150,7 @@ static void Main()
   private static string GetConnectionString()  
   {  
     // To avoid storing the connection string in your code,  
-    // you can retrive it from a configuration file.  
+    // you can retrieve it from a configuration file.  
     return "Data Source=(local);Integrated Security=SSPI;" +   
       "Initial Catalog=AdventureWorks;MultipleActiveResultSets=True";  
   }  
@@ -270,7 +270,7 @@ Module Module1
   
   Function GetConnectionString() As String  
     ' To avoid storing the connection string in your code,  
-    ' you can retrive it from a configuration file.  
+    ' you can retrieve it from a configuration file.  
     Return "Data Source=(local);Integrated Security=SSPI;" & _  
       "Initial Catalog=AdventureWorks;MultipleActiveResultSets=True"  
   End Function  
@@ -388,7 +388,7 @@ static void Main()
 private static string GetConnectionString()  
 {  
   // To avoid storing the connection string in your code,  
-  // you can retrive it from a configuration file.  
+  // you can retrieve it from a configuration file.  
   return "Data Source=(local);Integrated Security=SSPI;" +   
     "Initial Catalog=AdventureWorks;" +   
     "MultipleActiveResultSets=True";  

@@ -23,7 +23,7 @@ Gets the extents of native code associated with the JIT-recompiled version of th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeInfo3(  
     [in]  FunctionID functionID,  
     [in]  ReJITID reJitId,  

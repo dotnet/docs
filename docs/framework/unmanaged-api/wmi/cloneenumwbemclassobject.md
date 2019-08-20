@@ -24,7 +24,7 @@ Makes a logical copy of an enumerator, retaining its current position in an enum
 
 ## Syntax
 
-```
+```cpp
 HRESULT CloneEnumWbemClassObject (
    [out] IEnumWbemClassObject**  ppEnum, 
    [in] DWORD                    authLevel,

@@ -22,7 +22,7 @@ Contains details about the operating system for an assembly or module.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct {  
     DWORD   dwOSPlatformId;  
     DWORD   dwOSMajorVersion;   

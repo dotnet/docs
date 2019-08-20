@@ -23,7 +23,7 @@ Notifies the common language runtime (CLR) that the task that the current [ICLRT
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SwitchIn (  
     [in] HANDLE threadHandle  
 );  

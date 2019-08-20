@@ -148,7 +148,7 @@ Windows Communication Foundation (WCF) Test Client (WcfTestClient.exe) is a GUI 
   
 - Transaction.  
   
-- Security: [!INCLUDE[infocard](../../../includes/infocard-md.md)] , Certificate, and Username/Password.  
+- Security: CardSpace , Certificate, and Username/Password.  
   
 - Bindings: WSFederationbinding, any Context bindings and Https binding, WebHttpbinding (Json response message support).  
   

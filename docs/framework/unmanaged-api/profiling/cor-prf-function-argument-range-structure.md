@@ -22,7 +22,7 @@ Represents a block of function arguments stored contiguously in left-to-right or
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_PRF_FUNCTION_ARGUMENT_RANGE {  
     UINT_PTR startAddress;  
     ULONG length;  

@@ -22,7 +22,7 @@ Specifies constants used by [CoInitializeCor](../../../../docs/framework/unmanag
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum tagCOINITCOR  
 {  
     COINITCOR = 0x0  

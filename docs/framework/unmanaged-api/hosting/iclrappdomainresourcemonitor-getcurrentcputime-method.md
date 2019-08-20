@@ -23,7 +23,7 @@ Gets the total processor time that has been used by all threads while executing 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,  
                           [out] ULONGLONG* pMilliseconds);  
 ```  

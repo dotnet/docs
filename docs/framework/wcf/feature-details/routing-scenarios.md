@@ -2,7 +2,7 @@
 title: "Routing Scenarios"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
-  - "rounting [WCF], scenarios"
+  - "routing [WCF], scenarios"
 ms.assetid: ec22f308-665a-413e-9f94-7267cb665dab
 ---
 # Routing Scenarios

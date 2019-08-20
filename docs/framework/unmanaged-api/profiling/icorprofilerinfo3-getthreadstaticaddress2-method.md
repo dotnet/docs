@@ -23,7 +23,7 @@ Gets the address of the specified thread-static field that is in the scope of th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadStaticAddress2(  
                 [in] ClassID classId,  
                 [in] mdFieldDef fieldToken,  

@@ -24,7 +24,7 @@ Notifies the loader when the managed module images are unloaded.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI (VOID) _CorImageUnloading(   
    [in] PVOID* ImageBase  
 );  

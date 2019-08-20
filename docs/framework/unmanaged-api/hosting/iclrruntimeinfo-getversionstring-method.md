@@ -29,7 +29,7 @@ Gets common language runtime (CLR) version information associated with a given [
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionString(  
     [out, size_is(*pcchBuffer)] LPWSTR pwzBuffer,  
     [in, out]  DWORD *pcchBuffer);  

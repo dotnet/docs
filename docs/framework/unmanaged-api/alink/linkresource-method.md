@@ -22,7 +22,7 @@ Links in a resource.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LinkResource(  
     mdAssembly  AssemblyID,  
     LPCWSTR     pszFileName,  

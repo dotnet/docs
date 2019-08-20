@@ -23,7 +23,7 @@ Unregisters a previously registered callback pointer for the specified event.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnregisterActionOnEvent (  
     [in] EClrEvent event,  
     [in] IActionOnCLREvent *pAction  

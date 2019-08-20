@@ -23,7 +23,7 @@ Gets the second address field for this variable. Its meaning depends on the kind
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddressField2(  
     [out, retval] ULONG32* pRetVal);  
 ```  

@@ -23,7 +23,7 @@ Creates a copy of this ICorDebugEnum object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (  
     [out] ICorDebugEnum **ppEnum  
 );  

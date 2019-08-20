@@ -64,9 +64,9 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
 - a constant expression;  
   
-- an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../../csharp/language-reference/keywords/enum.md) or a [struct](../../../csharp/programming-guide/classes-and-structs/structs.md);  
+- an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../language-reference/keywords/enum.md) or a [struct](./structs.md);  
   
-- an expression of the form [default(ValType)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md),  where `ValType` is a value type.  
+- an expression of the form [default(ValType)](../../language-reference/operators/default.md),  where `ValType` is a value type.  
   
  Optional parameters are defined at the end of the parameter list, after any required parameters. If the caller provides an argument for any one of a succession of optional parameters, it must provide arguments for all preceding optional parameters. Comma-separated gaps in the argument list are not supported. For example, in the following code, instance method `ExampleMethod` is defined with one required and two optional parameters.  
   
@@ -107,7 +107,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
  [!code-csharp[csProgGuideNamedAndOptional#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/namedandoptcom.cs#13)]  
   
- For more information and examples, see [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to: Access Office Interop Objects by Using Visual C# Features](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md).  
+ For more information and examples, see [How to: Use Named and Optional Arguments in Office Programming](./how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to: Access Office Interop Objects by Using Visual C# Features](../interop/how-to-access-office-onterop-objects.md).  
   
 ## Overload Resolution  
  Use of named and optional arguments affects overload resolution in the following ways:  
@@ -123,7 +123,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
 ## See also
 
-- [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)
-- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)
-- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)
-- [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)
+- [How to: Use Named and Optional Arguments in Office Programming](./how-to-use-named-and-optional-arguments-in-office-programming.md)
+- [Using Type dynamic](../types/using-type-dynamic.md)
+- [Using Constructors](./using-constructors.md)
+- [Using Indexers](../indexers/using-indexers.md)

@@ -25,7 +25,7 @@ Loads a specified version of a DLL that is included in the .NET Framework redist
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadLibraryShim (  
     [in]  LPCWSTR  szDllName,  
     [in]  LPCWSTR  szVersion,  

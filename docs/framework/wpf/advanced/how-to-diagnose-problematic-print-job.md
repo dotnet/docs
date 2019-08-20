@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
 ---
 # How to: Diagnose Problematic Print Job
-Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of Microsoft .NET Framework provide a means for performing a rapid remote diagnosis of print jobs.  
+Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a rapid remote diagnosis of print jobs.  
   
 ## Example  
  The major steps for creating this kind of utility are as follows.  

@@ -23,7 +23,7 @@ Gets the address of this "ICorDebugValue" object, which is in the process of bei
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddress (  
     [out] CORDB_ADDRESS   *pAddress  
 );  

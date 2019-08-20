@@ -23,7 +23,7 @@ Gets the `ClassID` of a type by using the specified metadata token and the `Clas
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassFromTokenAndTypeArgs(  
     [in] ModuleID moduleID,  
     [in] mdTypeDef typeDef,  

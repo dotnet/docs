@@ -23,7 +23,7 @@ Requests explicitly that the common language runtime (CLR) create a new task.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateTask (  
     [out] ICLRTask **pTask  
 );  

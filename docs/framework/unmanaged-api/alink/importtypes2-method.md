@@ -22,7 +22,7 @@ Initiates the import of types. Call this method to begin importing types from ea
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImportTypes2(  
     mdAssembly AssemblyID,  
     mdToken FileToken,  

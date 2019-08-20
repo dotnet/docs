@@ -23,7 +23,7 @@ Enumerates TypeRef tokens defined in the current metadata scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumTypeRefs (  
    [in, out] HCORENUM    *phEnum,   
    [out] mdTypeRef       rTypeRefs[],  

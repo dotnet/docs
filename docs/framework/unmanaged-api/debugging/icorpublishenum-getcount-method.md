@@ -23,7 +23,7 @@ Gets the number of items in the enumeration.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (  
     [out] ULONG   *pcelt  
 );  

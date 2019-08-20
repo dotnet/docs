@@ -127,7 +127,7 @@ The following should be considered when using the **XmlSerializer** class:
 
 - Only public properties and fields can be serialized. Properties must have public accessors (get and set methods). If you must serialize non-public data, use the <xref:System.Runtime.Serialization.DataContractSerializer> class rather than XML serialization.
 
-- A class must have a default constructor to be serialized by **XmlSerializer**.
+- A class must have a parameterless constructor to be serialized by **XmlSerializer**.
 
 - Methods cannot be serialized.
 

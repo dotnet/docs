@@ -23,7 +23,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 - A Visual Basic code file generated from the Northwind database.  
   
-     You can generate this file by using either the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] or the SQLMetal tool. This walkthrough was written by using the SQLMetal tool with the following command line:  
+     You can generate this file by using either the Object Relational Designer or the SQLMetal tool. This walkthrough was written by using the SQLMetal tool with the following command line:  
   
      **sqlmetal /code:"c:\linqtest2\northwind.vb" /language:vb "C:\linqtest2\northwnd.mdf" /pluralize**  
   

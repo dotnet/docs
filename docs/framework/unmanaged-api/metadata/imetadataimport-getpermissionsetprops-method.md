@@ -23,7 +23,7 @@ Gets the metadata associated with the <xref:System.Security.PermissionSet?displa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPermissionSetProps (  
    [in]  mdPermission      pm,  
    [out] DWORD             *pdwAction,   

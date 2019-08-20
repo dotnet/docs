@@ -23,7 +23,7 @@ Notifies the profiler that an application domain is being created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AppDomainCreationStarted(  
     [in] AppDomainID appDomainId);  
 ```  

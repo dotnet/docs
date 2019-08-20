@@ -10,7 +10,7 @@ Returns the container assembly of this `ICorDebugAssembly3` object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContainerAssembly(  
     ICorDebugAssembly **ppAssembly  
 );  

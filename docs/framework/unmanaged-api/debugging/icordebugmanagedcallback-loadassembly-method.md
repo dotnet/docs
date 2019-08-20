@@ -23,7 +23,7 @@ Notifies the debugger that a common language runtime (CLR) assembly has been suc
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadAssembly (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugAssembly  *pAssembly  

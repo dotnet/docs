@@ -24,7 +24,7 @@ Deletes a specified qualifier by name.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_Delete (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr, 

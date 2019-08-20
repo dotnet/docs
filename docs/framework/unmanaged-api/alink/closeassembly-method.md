@@ -23,7 +23,7 @@ Finalizes assembly operations. Call this method before beginning a new assembly 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseAssembly(  
     mdAssembly AssemblyID  
 ) PURE;  

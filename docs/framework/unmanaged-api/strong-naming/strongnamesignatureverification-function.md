@@ -24,7 +24,7 @@ Gets a value indicating whether the assembly manifest at the supplied path conta
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameSignatureVerification (  
     [in]  LPCWSTR   wszFilePath,  
     [in]  DWORD     dwInFlags,  

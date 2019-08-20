@@ -23,7 +23,7 @@ Enumerates custom attribute-definition tokens associated with the specified type
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumCustomAttributes (   
    [in, out] HCORENUM      *phEnum,  
    [in]  mdToken            tk,   

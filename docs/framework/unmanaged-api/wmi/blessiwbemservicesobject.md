@@ -24,7 +24,7 @@ Indicates whether the user credentials permit access to a specified [IWbemServic
 
 ## Syntax
 
-```
+```cpp
 HRESULT BlessIWbemServicesObject (
    [in] IUnknown* pIUnknown,
    [in] BSTR strUser, 

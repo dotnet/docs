@@ -23,7 +23,7 @@ Notifies the debugger that the specified connection has been terminated.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DestroyConnection (  
     [in] ICorDebugProcess     *pProcess,  
     [in] CONNID               dwConnectionId  

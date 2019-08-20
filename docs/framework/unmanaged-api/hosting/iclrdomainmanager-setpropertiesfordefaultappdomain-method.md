@@ -21,7 +21,7 @@ Sets properties that will be used to initialize the default application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPropertiesForDefaultAppDomain(  
     [in] DWORD nProperties,  
     [in] LPCWSTR *pwszPropertyNames,  

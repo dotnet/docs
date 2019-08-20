@@ -22,7 +22,7 @@ Contains information about an assembly that is registered in the global assembly
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _ASSEMBLY_INFO {  
     ULONG           cbAssemblyInfo;  
     DWORD           dwAssemblyFlags;  

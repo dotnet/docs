@@ -16,7 +16,7 @@ Frees resources allocated for the [AXL_AUTHENTICODE_SIGNER_INFO](../../../../doc
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CertFreeAuthenticodeSignerInfo (  
     [in, out]  PAXL_AUTHENTICODE_SIGNER_INFO   pSignerInfo);  
 ```  

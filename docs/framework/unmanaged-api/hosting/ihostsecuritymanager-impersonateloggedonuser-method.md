@@ -23,7 +23,7 @@ Requests that code be executed using the credentials of the current user identit
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImpersonateLoggedOnUser (  
     [in] HANDLE hToken  
 );  

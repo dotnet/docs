@@ -23,7 +23,7 @@ Reports the layout of objects in the heap as a result of a non-compacting garbag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SurvivingReferences(  
     [in] ULONG  cSurvivingObjectIDRanges,  
     [in, size_is(cSurvivingObjectIDRanges)] ObjectID  

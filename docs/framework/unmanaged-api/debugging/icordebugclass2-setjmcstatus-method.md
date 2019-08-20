@@ -23,7 +23,7 @@ For each method of the class, sets a value that indicates whether the method is 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetJMCStatus (  
     [in] BOOL   bIsJustMyCode  
 );  

@@ -230,7 +230,7 @@ In this walkthrough, you will do the following:
 
 ## See also
 
-- [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [/link (C# Compiler Options)](../../../language-reference/compiler-options/link-compiler-option.md)
+- [C# Programming Guide](../../index.md)
 - [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)
 - [Assemblies in .NET](../../../../standard/assembly/index.md)

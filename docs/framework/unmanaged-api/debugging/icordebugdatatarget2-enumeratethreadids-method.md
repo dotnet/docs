@@ -10,7 +10,7 @@ Returns a list of active thread IDs.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateThreadIDs(  
     [in] ULONG32 cThreadIds,   
     [out] ULONG32 *pcThreadIds,   

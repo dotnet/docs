@@ -4,8 +4,6 @@ description: Learn unit test concepts for F# in .NET Core through an interactive
 author: billwagner
 ms.author: wiwagn
 ms.date: 08/30/2017
-dev_langs: 
-  - "fsharp"
 ms.custom: "seodec18"
 ---
 # Unit testing F# libraries in .NET Core using dotnet test and MSTest
@@ -119,9 +117,9 @@ member this.TestEvenSequence() =
 
 Notice that the `expected` sequence has been converted to a list. The MSTest library relies on many standard .NET types. That dependency means that your public interface and expected results support <xref:System.Collections.ICollection> rather than <xref:System.Collections.IEnumerable>.
 
-When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `Mathservice` class that works:
+When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the `Mathservice` class that works:
 
-```csharp
+```fsharp
 let squaresOfOdds xs =
     Seq.empty<int> |> Seq.toList
 ```

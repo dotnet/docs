@@ -23,7 +23,7 @@ Gets a pointer to the FieldDef token for the field that is enclosed by the speci
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindField (  
    [in]  mdTypeDef         td,  
    [in]  LPCWSTR           szName,  

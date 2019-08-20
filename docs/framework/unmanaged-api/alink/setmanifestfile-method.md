@@ -22,7 +22,7 @@ Enables you to specify or reset the manifest file that the linker uses when it c
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetManifestFile(  
     LPCWSTR pszFile  
 ) PURE;  

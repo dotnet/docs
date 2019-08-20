@@ -23,7 +23,7 @@ Gets a stepper that allows the debugger to perform stepping operations relative 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateStepper (  
     [out] ICorDebugStepper   **ppStepper  
 );  

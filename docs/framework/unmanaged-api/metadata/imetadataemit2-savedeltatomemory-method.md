@@ -23,7 +23,7 @@ Saves changes from the current edit-and-continue session to memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SaveDeltaToMemory (  
     [out] void        *pbData,   
     [in]  ULONG       cbData  

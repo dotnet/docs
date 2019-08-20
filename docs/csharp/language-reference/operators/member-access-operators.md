@@ -135,13 +135,13 @@ The following example demonstrates how to call a method, with or without argumen
 
 [!code-csharp-interactive[invocation with ()](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#Invocation)]
 
-You also use parentheses when you invoke a [constructor](../../programming-guide/classes-and-structs/constructors.md) with a [`new`](../keywords/new-operator.md) operator.
+You also use parentheses when you invoke a [constructor](../../programming-guide/classes-and-structs/constructors.md) with the [`new`](new-operator.md) operator.
 
 ### Other usages of ()
 
 You also use parentheses to specify the order in which to evaluate operations in an expression. For more information, see the [Adding parentheses](../../programming-guide/statements-expressions-operators/operators.md#adding-parentheses) section of the [Operators](../../programming-guide/statements-expressions-operators/operators.md) article. For the list of operators ordered by precedence level, see [C# operators](index.md).
 
-[Cast expressions](type-testing-and-conversion-operators.md#cast-operator-), which perform explicit type conversions, also use parentheses.
+[Cast expressions](type-testing-and-cast.md#cast-operator-), which perform explicit type conversions, also use parentheses.
 
 ## Operator overloadability
 
@@ -161,3 +161,4 @@ For more information, see the following sections of the [C# language specificati
 - [C# reference](../index.md)
 - [C# operators](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)
+- [:: operator](namespace-alias-qualifier.md)

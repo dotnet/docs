@@ -22,7 +22,7 @@ Provides interfaces for managing code execution by the runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 coclass CLRRuntimeHost {  
     [default] interface  ICLRRuntimeHost;  
     interface            ICLRValidator;  

@@ -23,7 +23,7 @@ Gets the element at the given position, treating the array as a zero-based, sing
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetElementAtPosition (  
     [in]  ULONG32          nPosition,  
     [out] ICorDebugValue   **ppValue  

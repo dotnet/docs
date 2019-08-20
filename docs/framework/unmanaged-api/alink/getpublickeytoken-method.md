@@ -22,7 +22,7 @@ Retrieves the public key token for a given keyfile or key container.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPublicKeyToken(  
     LPCWSTR pszKeyFile,  
     LPCWSTR pszKeyContainer,  

@@ -23,7 +23,7 @@ Allows updating the line information for a method that has not been recompiled, 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateMethodLines(  
     [in]  mdMethodDef  mdMethodToken,  
     [in, size_is(cDeltas)] INT32*  pDeltas,  

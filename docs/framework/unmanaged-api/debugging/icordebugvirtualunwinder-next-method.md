@@ -10,7 +10,7 @@ Advances to the caller's context.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next();  
 ```  
   

@@ -26,7 +26,7 @@ Terminates the `ICorDebug` object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Terminate ();  
 ```  
   

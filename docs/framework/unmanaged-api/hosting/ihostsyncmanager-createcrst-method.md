@@ -23,7 +23,7 @@ Creates a critical section object for synchronization.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateCrst (  
     [out] IHostCrst** ppCrst  
 );  

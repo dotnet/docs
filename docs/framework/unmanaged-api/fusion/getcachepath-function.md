@@ -24,7 +24,7 @@ Gets the path to the cached assembly, using the specified flags.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCachePath (  
     [in]      ASM_CACHE_FLAGS  dwCacheFlags,  
     [in]      LPWSTR           pwzCachePath,  

@@ -23,7 +23,7 @@ Gets a value that indicates whether the assembly manifest at the supplied path c
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameSignatureVerification (  
     [in]  LPCWSTR   wszFilePath,  
     [in]  DWORD     dwInFlags,  

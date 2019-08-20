@@ -16,7 +16,7 @@ Frees resources allocated for the [AXL_AUTHENTICODE_TIMESTAMPER_INFO](../../../.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CertFreeAuthenticodeTimestamperInfo (  
     [in, out]  PAXL_AUTHENTICODE_TIMESTAMPER_INFO   pTimestamperInfo  
 );  

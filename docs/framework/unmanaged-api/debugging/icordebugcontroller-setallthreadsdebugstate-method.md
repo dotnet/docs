@@ -23,7 +23,7 @@ Sets the debug state of all managed threads in the process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAllThreadsDebugState (  
     [in] CorDebugThreadState  state,  
     [in] ICorDebugThread      *pExceptThisThread  

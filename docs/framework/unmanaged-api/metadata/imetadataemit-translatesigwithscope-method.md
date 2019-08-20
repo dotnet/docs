@@ -23,7 +23,7 @@ Imports an assembly into the current scope and gets a new metadata signature for
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT TranslateSigWithScope (   
     [in]  IMetaDataAssemblyImport   *pAssemImport,   
     [in]  const void                *pbHashValue,   

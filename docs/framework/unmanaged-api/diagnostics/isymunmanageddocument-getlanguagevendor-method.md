@@ -23,7 +23,7 @@ Gets the language vendor of this document.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLanguageVendor(  
     [out, retval]  GUID*  pRetVal);  
 ```  

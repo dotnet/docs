@@ -23,7 +23,7 @@ Gets the `FunctionID` of a function by using the specified metadata token, conta
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromTokenAndTypeArgs(  
     [in] ModuleID moduleID,  
     [in] mdMethodDef funcDef,  

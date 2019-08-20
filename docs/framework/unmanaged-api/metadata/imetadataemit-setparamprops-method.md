@@ -23,7 +23,7 @@ Sets or changes features of a method parameter that was defined by a prior call 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetParamProps (   
     [in]  mdParamDef  pd,   
     [in]  LPCWSTR     szName,   

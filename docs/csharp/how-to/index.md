@@ -9,7 +9,7 @@ ms.date: 12/20/2017
 In the How to section of the C# Guide you can find quick answers
 to common questions. In some cases, articles may
 be listed in multiple sections. We wanted to make them easy to find
-for multiple search paths. 
+for multiple search paths.
 
 ## General C# concepts
 
@@ -17,9 +17,7 @@ There are several tips and tricks that are common C# developer practices.
 
 - [Initialize objects using an object initializer](../programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md).
 - [Learn the differences between passing a struct and a class to a method](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
-- [How to use lambda expressions](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md).
-- [Resolve type name conflicts by using the global namespace alias](../programming-guide/namespaces/how-to-use-the-global-namespace-alias.md).
-- [Use operator overloading](../language-reference/keywords/operator.md).
+- [Use operator overloading](../language-reference/operators/operator-overloading.md).
 - [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
 - Even C# programmers may want to [use the `My` namespace from VB](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
 - [Create a new method for an `enum` type using extension methods](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
@@ -64,7 +62,7 @@ You may need to convert an object to a different type.
 - [Convert a byte array to an int](../programming-guide/types/how-to-convert-a-byte-array-to-an-int.md).
 - [Convert a string to a number](../programming-guide/types/how-to-convert-a-string-to-a-number.md).
 - [Use pattern matching, the `as` and `is` operators to safely cast to a different type](../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).
-- [Define conversion operators for `struct` types](../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md).
+- [Define custom type conversions](../language-reference/operators/user-defined-conversion-operators.md).
 - [Determine if a type is a nullable value type](../programming-guide/nullable-types/how-to-identify-a-nullable-type.md).
 - [Convert between nullable and non-nullable value types](../programming-guide/nullable-types/using-nullable-types.md#conversion-from-a-nullable-type-to-an-underlying-type).
 
@@ -100,7 +98,6 @@ Events provide a mechanism to publish or subscribe to notifications.
 - [Implement events declared in interfaces](../programming-guide/events/how-to-implement-interface-events.md).
 - [Conform to .NET Framework guidelines when your code publishes events](../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).
 - [Raise events defined in base classes from derived classes](../programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md).
-- [Store event instances in a dictionary](../programming-guide/events/how-to-use-a-dictionary-to-store-event-instances.md).
 - [Implement custom event accessors](../programming-guide/events/how-to-implement-custom-event-accessors.md).
 
 ## LINQ practices

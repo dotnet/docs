@@ -23,7 +23,7 @@ Gets the boxed value.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObject (  
     [out] ICorDebugObjectValue **ppObject  
 );  

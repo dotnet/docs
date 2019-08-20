@@ -23,7 +23,7 @@ Gets an object that can be queried for the ICorDebugThread interface. This metho
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInprocInspectionIThisThread(  
     [out] IUnknown **ppicd);  
 ```  

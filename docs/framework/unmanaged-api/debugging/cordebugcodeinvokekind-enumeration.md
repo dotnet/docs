@@ -18,7 +18,7 @@ Describes how an exported function invokes managed code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugCodeInvokeKind  
 {  
     CODE_INVOKE_KIND_NONE,       

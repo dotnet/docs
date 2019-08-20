@@ -24,7 +24,7 @@ Determines whether the current class or instance derives from a specified parent
     
 ## Syntax  
   
-```
+```cpp
 HRESULT InheritsFrom (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr, 

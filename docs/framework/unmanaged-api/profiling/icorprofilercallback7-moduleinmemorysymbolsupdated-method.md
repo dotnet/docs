@@ -19,7 +19,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleInMemorySymbolsUpdated(  
      ModuleID moduleId  
 );  

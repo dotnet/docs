@@ -23,7 +23,7 @@ Gets a value identifying the nature of the code in the portable executable (PE) 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPEKind (  
    [out] DWORD *pdwPEKind,  
    [out] DWORD *pdwMachine  

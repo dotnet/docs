@@ -23,7 +23,7 @@ Gets a value that indicates whether this ICorDebugEval object is currently execu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsActive (  
     [out] BOOL              *pbActive  
 );  

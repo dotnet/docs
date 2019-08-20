@@ -49,7 +49,7 @@ a = (b = c);
 //(a = b) = c;  
 ```  
   
- As another example the ternary operator ([?:](../../../csharp/language-reference/operators/conditional-operator.md)) is right associative. Most binary operators are left associative.  
+ As another example the ternary operator ([?:](../../language-reference/operators/conditional-operator.md)) is right associative. Most binary operators are left associative.  
   
  Whether the operators in an expression are left associative or right associative, the operands of each expression are evaluated first, from left to right. The following examples illustrate the order of evaluation of operators and operands.  
   
@@ -74,7 +74,7 @@ a = (b = c);
   
 ## Operator overloading
 
-You can define the behavior of certain operators for custom classes and structs. This process is referred to as *operator overloading*. For more information, see [Overloadable operators](overloadable-operators.md) and the [operator](../../language-reference/keywords/operator.md) keyword article.
+You can define the behavior of certain operators for custom classes and structs. This process is referred to as *operator overloading*. For more information, see [Operator overloading](../../language-reference/operators/operator-overloading.md).
   
 ## See also
 

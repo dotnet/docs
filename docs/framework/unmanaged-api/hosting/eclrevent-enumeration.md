@@ -22,7 +22,7 @@ Describes the common language runtime (CLR) events for which the host can regist
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     Event_ClrDisabled,  
     Event_DomainUnload,  

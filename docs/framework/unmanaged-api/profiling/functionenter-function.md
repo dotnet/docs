@@ -25,7 +25,7 @@ Notifies the profiler that control is being passed to a function.
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionEnter (  
     [in]  FunctionID funcID  
 );  

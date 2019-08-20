@@ -23,7 +23,7 @@ Gets an enumerator for the domains in the current process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumDomains (  
     [out] HCORENUM *hEnum  
 );  

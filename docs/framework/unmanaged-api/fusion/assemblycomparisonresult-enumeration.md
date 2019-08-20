@@ -22,7 +22,7 @@ Indicates the equivalence of two assembly identities, as determined by the [Comp
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _tagAssemblyComparisonResult {  
     ACR_Unknown,   
     ACR_EquivalentFullMatch,  

@@ -14,7 +14,7 @@ public delegate void EventHandler(object sender, EventArgs e);
 ```  
   
 > [!NOTE]
->  The [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.  
+>  The .NET Framework 2.0 introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.  
   
  Although events in classes that you define can be based on any valid delegate type, even delegates that return a value, it is generally recommended that you base your events on the .NET Framework pattern by using <xref:System.EventHandler>, as shown in the following example.  
   
@@ -71,6 +71,6 @@ public delegate void EventHandler(object sender, EventArgs e);
 ## See also
 
 - <xref:System.Delegate>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Events](../../../csharp/programming-guide/events/index.md)
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [C# Programming Guide](../index.md)
+- [Events](./index.md)
+- [Delegates](../delegates/index.md)

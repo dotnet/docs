@@ -23,7 +23,7 @@ This method is not implemented in the current version of the .NET Framework.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeBase (  
     [in] ULONG32  cchName,  
     [out] ULONG32 *pcchName,  

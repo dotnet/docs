@@ -23,7 +23,7 @@ Notifies the host that it should switch out the current task.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SwitchToTask (  
     [in] DWORD option  
 );  

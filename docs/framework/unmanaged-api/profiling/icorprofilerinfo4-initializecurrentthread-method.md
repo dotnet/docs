@@ -23,7 +23,7 @@ Initializes the current thread in advance of subsequent profiler API calls on th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeCurrentThread ();  
 ```  
   

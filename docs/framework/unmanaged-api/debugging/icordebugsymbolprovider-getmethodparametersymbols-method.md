@@ -10,7 +10,7 @@ Gets a method's parameter symbols given the relative virtual address (RVA) of th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodParameterSymbols(  
    [in] ULONG32 nativeRVA,  
    [in] ULONG32 cRequestedSymbols,  

@@ -26,7 +26,7 @@ Initializes the symbol reader with the metadata importer interface that this rea
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Initialize (  
     [in]  IUnknown     *importer,  
     [in]  const WCHAR  *filename,  

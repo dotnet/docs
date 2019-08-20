@@ -23,7 +23,7 @@ Gets the per-thread statistics for garbage collection.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadStats (  
     [in] DWORD *pFiberCookie,  
     [in, out] COR_GC_THREAD_STATS *pStats  

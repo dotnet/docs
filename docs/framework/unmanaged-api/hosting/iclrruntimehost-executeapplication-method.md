@@ -23,7 +23,7 @@ Used in manifest-based ClickOnce deployment scenarios to specify the application
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExecuteApplication(  
     [in] LPCWSTR   pwzAppFullName,  
     [in] DWORD     dwManifestPaths,  

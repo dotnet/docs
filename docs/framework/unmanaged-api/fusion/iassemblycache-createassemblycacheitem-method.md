@@ -23,7 +23,7 @@ Gets a reference to a new [IAssemblyCacheItem](../../../../docs/framework/unmana
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAssemblyCacheItem (  
     [in]  DWORD dwFlags,  
     [in]  PVOID pvReserved,  

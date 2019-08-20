@@ -25,7 +25,7 @@ Adds a .reloc instruction to the code base.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddSectionReloc (  
    [in] HCEESECTION            section,  
    [in] ULONG                  offset,  

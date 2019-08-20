@@ -24,7 +24,7 @@ Returns a new object that is a complete clone of the current object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (
    [in] int                  vFunc, 
    [in] IWbemClassObject*    ptr, 

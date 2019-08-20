@@ -23,7 +23,7 @@ Requests that the common language runtime (CLR) abort the task that the current 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Abort ();  
 ```  
   

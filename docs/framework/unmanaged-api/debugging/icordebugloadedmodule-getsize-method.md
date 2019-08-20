@@ -10,7 +10,7 @@ Gets the size in bytes of the loaded module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize(  
    [out] ULONG32 *pcBytes  
 );  

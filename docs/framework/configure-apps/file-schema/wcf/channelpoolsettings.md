@@ -18,7 +18,7 @@ Specifies the channel pool settings for a custom binding.
 ```xml  
 <channelPoolSettings idleTimeout="TimeSpan"
                      leaseTimeout="TimeSpan"
-                     maxOutboundConnectionsPerEndpopint="Integer" />
+                     maxOutboundConnectionsPerEndpoint="Integer" />
 ```  
   
 ## Attributes and Elements  

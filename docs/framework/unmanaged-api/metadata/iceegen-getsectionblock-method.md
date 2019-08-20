@@ -25,7 +25,7 @@ Gets a section block of the code base.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSectionBlock (  
     [in]  HCEESECTION    section,     
     [in]  ULONG          len,  

@@ -23,7 +23,7 @@ Sets a value that specifies the types of events for which the profiler wants to 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetEventMask(  
     [in] DWORD dwEvents);  
 ```  

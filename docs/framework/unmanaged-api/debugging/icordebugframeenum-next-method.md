@@ -23,7 +23,7 @@ Gets the specified number of ICorDebugFrame instances, starting at the current p
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in] ULONG  celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  

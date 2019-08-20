@@ -24,7 +24,7 @@ Gets an interface pointer to an [IAssemblyName](../../../../docs/framework/unman
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAssemblyNameObject (  
     [out] LPASSEMBLYNAME  *ppAssemblyNameObj,  
     [in]  LPCWSTR         szAssemblyName,  

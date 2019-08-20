@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: eee3ccb8-2c0d-4f35-b38d-6892a46c14e5
 ---
 # Configuring Cryptography Classes
-The Windows Software Development Kit (SDK) allows computer administrators to configure the default cryptographic algorithms and algorithm implementations that the .NET Framework and appropriately written applications use.  For example, an enterprise that has its own implementation of a cryptographic algorithm can make that implementation the default instead of the implementation shipped in the Windows SDK. Although managed applications that use cryptography can always choose to explicitly bind to a particular implementation, it is recommended that they create cryptographic objects by using the crypto configuration system.  
+The Windows SDK allows computer administrators to configure the default cryptographic algorithms and algorithm implementations that the .NET Framework and appropriately written applications use.  For example, an enterprise that has its own implementation of a cryptographic algorithm can make that implementation the default instead of the implementation shipped in the Windows SDK. Although managed applications that use cryptography can always choose to explicitly bind to a particular implementation, it is recommended that they create cryptographic objects by using the crypto configuration system.  
   
 ## In This Section  
  [Mapping Algorithm Names to Cryptography Classes](../../../docs/framework/configure-apps/map-algorithm-names-to-cryptography-classes.md)  

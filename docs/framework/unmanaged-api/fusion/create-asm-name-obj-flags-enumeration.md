@@ -22,7 +22,7 @@ Specifies the attributes of an [IAssemblyName Interface](../../../../docs/framew
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
   
     CANOF_PARSE_DISPLAY_NAME            = 0x1,  

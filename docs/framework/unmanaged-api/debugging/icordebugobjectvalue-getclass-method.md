@@ -23,7 +23,7 @@ Gets the class of this object value.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClass (  
     [out] ICorDebugClass     **ppClass  
 );  

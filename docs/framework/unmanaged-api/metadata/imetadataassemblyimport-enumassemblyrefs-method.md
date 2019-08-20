@@ -23,7 +23,7 @@ Enumerates the `mdAssemblyRef` instances that are defined in the assembly manife
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumAssemblyRefs (  
     [in, out] HCORENUM        *phEnum,   
     [out]     mdAssemblyRef   rAssemblyRefs[],   

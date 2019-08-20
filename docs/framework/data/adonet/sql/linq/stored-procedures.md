@@ -6,7 +6,7 @@ ms.assetid: 4d23dd7a-a85f-44ff-a717-af7d0950c0fc
 # Stored Procedures
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] uses methods in your object model to represent stored procedures in the database. You designate methods as stored procedures by applying the <xref:System.Data.Linq.Mapping.FunctionAttribute> attribute and, where required, the <xref:System.Data.Linq.Mapping.ParameterAttribute> attribute. For more information, see [The LINQ to SQL Object Model](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md).  
   
- Developers using Visual Studio would typically use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to map stored procedures. The topics in this section show how to form and call these methods in your application if you write the code yourself.  
+ Developers using Visual Studio would typically use the Object Relational Designer to map stored procedures. The topics in this section show how to form and call these methods in your application if you write the code yourself.  
   
 ## In This Section  
  [How to: Return Rowsets](../../../../../../docs/framework/data/adonet/sql/linq/how-to-return-rowsets.md)  

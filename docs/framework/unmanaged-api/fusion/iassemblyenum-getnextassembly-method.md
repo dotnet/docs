@@ -23,7 +23,7 @@ Gets a pointer to the next [IAssemblyName](../../../../docs/framework/unmanaged-
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextAssembly (  
     [in]  LPVOID          pvReserved,  
     [out] IAssemblyName   **ppName,  

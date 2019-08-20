@@ -23,7 +23,7 @@ Sets the minimum number of idle threads that the host must maintain in anticipat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMinThreads (  
     [in] DWORD MinThreads  
 );  

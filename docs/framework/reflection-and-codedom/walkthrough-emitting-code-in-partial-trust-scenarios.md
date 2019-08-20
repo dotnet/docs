@@ -51,7 +51,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
  The following procedure creates a sandboxed application domain that runs your code with partial trust, to test scenarios in which emitted code can access only public members of public types. A subsequent procedure shows how to add <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess>, to test scenarios in which emitted code can access nonpublic types and members in assemblies that are granted equal or lesser permissions.  
   
-##### To create an application domain with partial trust  
+#### To create an application domain with partial trust  
   
 1. Create a permission set to grant to the assemblies in the sandboxed application domain. In this case, the permission set of the Internet zone is used.  
   
@@ -81,7 +81,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
 > [!NOTE]
 >  To prevent elevation of privilege, stack information for the emitting assembly is included when anonymously hosted dynamic methods are constructed. When the method is invoked, the stack information is checked. Thus, an anonymously hosted dynamic method that is invoked from fully trusted code is still limited to the trust level of the emitting assembly.  
   
-##### To create an application domain with partial trust plus RMA  
+#### To create an application domain with partial trust plus RMA  
   
 1. Create a new <xref:System.Security.Permissions.ReflectionPermission> object with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> (RMA) flag, and use the <xref:System.Security.PermissionSet.SetPermission%2A?displayProperty=nameWithType> method to add the permission to the grant set.  
   

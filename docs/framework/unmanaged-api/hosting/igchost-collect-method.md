@@ -23,7 +23,7 @@ Forces a collection to occur for the given generation, regardless of the state o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Collect (  
     [in] LONG Generation  
 );  

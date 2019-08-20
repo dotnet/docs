@@ -24,7 +24,7 @@ Clears the global assembly cache of downloaded assemblies.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClearDownloadCache ();  
 ```  
   

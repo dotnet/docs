@@ -24,7 +24,7 @@ Points to a function that notifies the host that a thread has started to execute
   
 ## Syntax  
   
-```  
+```cpp  
 typedef DWORD (__stdcall *LPTHREAD_START_ROUTINE) (  
     [in] LPVOID lpThreadParameter  
 );  

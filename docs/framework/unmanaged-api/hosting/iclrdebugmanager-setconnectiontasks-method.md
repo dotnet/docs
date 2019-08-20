@@ -23,7 +23,7 @@ Associates a list of [ICLRTask](../../../../docs/framework/unmanaged-api/hosting
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetConnectionTasks (  
     [in] CONNID id,  
     [in] DWORD dwCount,  

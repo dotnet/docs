@@ -23,7 +23,7 @@ Calls the specified method of the specified type in the specified managed assemb
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExecuteInDefaultAppDomain (  
     [in] LPCWSTR pwzAssemblyPath,  
     [in] LPCWSTR pwzTypeName,   
@@ -63,7 +63,7 @@ HRESULT ExecuteInDefaultAppDomain (
 ## Remarks  
  The invoked method must have the following signature:  
   
-```  
+```cpp  
 static int pwzMethodName (String pwzArgument)  
 ```  
   

@@ -10,7 +10,7 @@ Gets the simple name of the assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSimpleName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   

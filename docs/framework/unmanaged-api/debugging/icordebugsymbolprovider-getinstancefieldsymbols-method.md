@@ -10,7 +10,7 @@ Gets the instance field symbols that correspond to a typespec signature.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInstanceFieldSymbols(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  

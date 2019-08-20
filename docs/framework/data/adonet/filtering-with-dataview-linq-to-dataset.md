@@ -11,12 +11,12 @@ The ability to filter data using specific criteria and then present the data to 
   
  There are two ways to filter data using a <xref:System.Data.DataView>:  
   
-- Create a <xref:System.Data.DataView> from a [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query with a Where clause.  
+- Create a <xref:System.Data.DataView> from a LINQ to DataSet query with a Where clause.  
   
 - Use the existing, string-based filtering capabilities of <xref:System.Data.DataView>.  
   
 ## Creating DataView from a Query with Filtering Information  
- A <xref:System.Data.DataView> object can be created from a [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query. If that query contains a `Where` clause, the <xref:System.Data.DataView> is created with the filtering information from the query. The expression in the `Where` clause is used to determine which data rows will be included in the <xref:System.Data.DataView>, and is the basis for the filter.  
+ A <xref:System.Data.DataView> object can be created from a LINQ to DataSet query. If that query contains a `Where` clause, the <xref:System.Data.DataView> is created with the filtering information from the query. The expression in the `Where` clause is used to determine which data rows will be included in the <xref:System.Data.DataView>, and is the basis for the filter.  
   
  Expression-based filters offer more powerful and complex filtering than the simpler string-based filters. The string-based and expression-based filters are mutually exclusive. When the string-based <xref:System.Data.DataView.RowFilter%2A> is set after a <xref:System.Data.DataView> is created from a query, the expression based filter inferred from the query is cleared.  
   
@@ -53,14 +53,14 @@ The ability to filter data using specific criteria and then present the data to 
  [!code-vb[DP DataView Samples#SoundEx](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#soundex)]  
   
 ## Using the RowFilter Property  
- The existing string-based filtering functionality of <xref:System.Data.DataView> still works in the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] context. For more information about string-based <xref:System.Data.DataView.RowFilter%2A> filtering, see [Sorting and Filtering Data](../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md).  
+ The existing string-based filtering functionality of <xref:System.Data.DataView> still works in the LINQ to DataSet context. For more information about string-based <xref:System.Data.DataView.RowFilter%2A> filtering, see [Sorting and Filtering Data](../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md).  
   
  The following example creates a <xref:System.Data.DataView> from the Contact table and then sets the <xref:System.Data.DataView.RowFilter%2A> property to return rows where the contact's last name is "Zhu":  
   
  [!code-csharp[DP DataView Samples#LDVRowFilter](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS/Form1.cs#ldvrowfilter)]
  [!code-vb[DP DataView Samples#LDVRowFilter](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#ldvrowfilter)]  
   
- After a <xref:System.Data.DataView> has been created from a <xref:System.Data.DataTable> or [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query, you can use the <xref:System.Data.DataView.RowFilter%2A> property to specify subsets of rows based on their column values. The string-based and expression-based filters are mutually exclusive. Setting the <xref:System.Data.DataView.RowFilter%2A> property will clear the filter expression inferred from the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query, and the filter expression cannot be reset.  
+ After a <xref:System.Data.DataView> has been created from a <xref:System.Data.DataTable> or LINQ to DataSet query, you can use the <xref:System.Data.DataView.RowFilter%2A> property to specify subsets of rows based on their column values. The string-based and expression-based filters are mutually exclusive. Setting the <xref:System.Data.DataView.RowFilter%2A> property will clear the filter expression inferred from the LINQ to DataSet query, and the filter expression cannot be reset.  
   
  [!code-csharp[DP DataView Samples#LDVFromQueryWhereSetRowFilter](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS/Form1.cs#ldvfromquerywheresetrowfilter)]
  [!code-vb[DP DataView Samples#LDVFromQueryWhereSetRowFilter](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#ldvfromquerywheresetrowfilter)]  

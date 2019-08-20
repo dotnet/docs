@@ -40,7 +40,7 @@ A microservices architecture allows a mix of technologies across a service bound
 
 There are many infrastructure platforms available. [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) is designed for large and complex microservice systems. [Azure App Service](https://azure.microsoft.com/services/app-service/) is a good choice for stateless microservices. Microservices alternatives based on Docker fit any kind of microservices approach, as explained in the [Containers](#containers) section. All these platforms support .NET Core and make them ideal for hosting your microservices.
 
-For more information about microservices architecture, see [.NET Microservices. Architecture for Containerized .NET Applications](microservices-architecture/index.md).
+For more information about microservices architecture, see [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md).
 
 ### Containers
 
@@ -104,4 +104,4 @@ Some Microsoft or third-party platforms don’t support .NET Core. Some Azure se
 - [Porting from .NET Framework to .NET Core](../core/porting/index.md)
 - [Introduction to .NET and Docker](../core/docker/intro-net-docker.md)
 - [.NET Components Overview](components.md)
-- [.NET Microservices. Architecture for Containerized .NET Applications](microservices-architecture/index.md)
+- [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md)

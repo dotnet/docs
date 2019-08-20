@@ -23,7 +23,7 @@ Notifies the host that the thread that is making the call is about to block, per
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadIsBlockingForSuspension ( );  
 ```  
   

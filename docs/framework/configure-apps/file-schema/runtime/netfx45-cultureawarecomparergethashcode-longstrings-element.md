@@ -62,5 +62,5 @@ By default, the common language runtime allocates a variable amount of memory fo
 ## See also
 
 - <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

@@ -81,7 +81,7 @@ ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
 ## Pane Control Type Example  
  The following image illustrates a control that implements the Pane control type.  
   
- ![Screenshot of applet window with two panes](media/uiauto-pane.GIF "uiauto_pane")  
+ ![Screenshot of applet window with two panes](./media/uiauto-pane.GIF "uiauto_pane")  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Tree - Control View|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Tree - Content View|  
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|  

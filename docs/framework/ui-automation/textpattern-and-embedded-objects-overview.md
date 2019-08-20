@@ -106,7 +106,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
   
  **Example 2 - A text range that partially spans the content of a text container. The text container has an embedded image that is not part of the text range.**  
   
- {The image} ![Embedded Image Example](media/uia-textpattern-embedded-objects-overview-imageexample.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample") is embedded in text.  
+ {The image} ![Embedded Image Example](./media/uia-textpattern-embedded-objects-overview-imageexample.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample") is embedded in text.  
   
 |Method called|Result|  
 |-------------------|------------|  

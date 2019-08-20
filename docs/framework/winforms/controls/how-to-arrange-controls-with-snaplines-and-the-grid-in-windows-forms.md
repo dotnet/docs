@@ -33,7 +33,6 @@ For more information, see [Walkthrough: Arranging Controls on Windows Forms Usin
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
 - [Windows Forms Controls](index.md)
 - [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)
-- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
 - [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
 - [Windows Forms Controls by Function](windows-forms-controls-by-function.md)

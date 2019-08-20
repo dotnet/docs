@@ -23,7 +23,7 @@ ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
  ![Embedded Table with Image in a Text Container](./media/uia-textpattern-embedded-objects-overview-example1.png "UIA_TextPattern_Embedded_Objects_Overview_Example1")  
 Example of a Text Container with Table, Image, and Hyperlink Embedded Objects  
   
- ![Content view for the preceding example](media/uia-textpattern-embedded-objects-overview-example2.PNG "UIA_TextPattern_Embedded_Objects_Overview_Example2")  
+ ![Content view for the preceding example](./media/uia-textpattern-embedded-objects-overview-example2.PNG "UIA_TextPattern_Embedded_Objects_Overview_Example2")  
 Example of the Content View for a Portion of the Preceding Text Container  
   
 <a name="Expose_Embedded_Objects_Using_TextPattern_and"></a>   

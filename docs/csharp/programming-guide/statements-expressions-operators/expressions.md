@@ -79,7 +79,7 @@ C# supports *expression-bodied members*, which allow you to supply a concise exp
 
 ## C# language specification
 
-For more information, see the [Expressions](~/_csharplang/spec/expressions.md) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Expressions](~/_csharplang/spec/expressions.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 03db52ef-010e-44ea-b6fd-b9c900ecad50
 ---
 # \<cryptoClass> Element
-Contains a cryptography class that has a mapping to a friendly name in the [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) element.  
+Contains a cryptography class that has a mapping to a friendly name in the [\<nameEntry>](nameentry-element.md) element.  
   
  \<configuration>  
 \<mscorlib>  
@@ -32,7 +32,7 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`customClassName`|Required attribute.<br /><br /> Contains the information for the cryptography class. Use this attribute to provide a short name for your class. You must specify a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|`customClassName`|Required attribute.<br /><br /> Contains the information for the cryptography class. Use this attribute to provide a short name for your class. You must specify a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
   
 ### Child Elements  
  None.  
@@ -42,10 +42,10 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
 |Element|Description|  
 |-------------|-----------------|  
 |`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
-|`cryptoClasses`|Contains a list of cryptography classes that have a mapping to a friendly name in the [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) element.|  
+|`cryptoClasses`|Contains a list of cryptography classes that have a mapping to a friendly name in the [\<nameEntry>](nameentry-element.md) element.|  
 |`cryptographySettings`|Contains cryptography settings.|  
 |`cryptoNameMapping`|Contains mappings of classes to friendly names.|  
-|`mscorlib`|Contains the [\<cryptographySettings>](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptographysettings-element.md) element.|  
+|`mscorlib`|Contains the [\<cryptographySettings>](cryptographysettings-element.md) element.|  
   
 ## Example  
  The following example shows how use the **\<cryptoClass>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
@@ -71,7 +71,7 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
   
 ## See also
 
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Configuration File Schema](../index.md)
+- [Cryptography Settings Schema](index.md)
 - [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
-- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+- [Configuring Cryptography Classes](../../configure-cryptography-classes.md)

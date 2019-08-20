@@ -24,7 +24,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
          `sn -tp FriendAssemblies.publickey`  
   
-3. Create a C# or Visual Basic file named *friend_signed_A* that contains the following code. The code uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to declare `friend_signed_B` as a friend assembly.  
+3. Create a C# or Visual Basic file named *friend_signed_A* that contains the following code. The code uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to declare *friend_signed_B* as a friend assembly.  
    
    The Strong Name tool generates a new public key every time it runs. Therefore, you must replace the public key in the following code with the public key you just generated, as shown in the following example.  
    
@@ -130,7 +130,7 @@ This example shows how to use friend assemblies with assemblies that have strong
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
 - [Assemblies in .NET](index.md)
 - [Friend assemblies](friend.md)
-- [How to: Create unsigned friend assemblies (C#)](create-unsigned-friend.md)
+- [How to: Create unsigned friend assemblies](create-unsigned-friend.md)
 - [/keyfile (C#)](../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)
 - [-keyfile (Visual Basic)](../../visual-basic/reference/command-line-compiler/keyfile.md)
 - [Sn.exe (Strong Name tool)](../../framework/tools/sn-exe-strong-name-tool.md)

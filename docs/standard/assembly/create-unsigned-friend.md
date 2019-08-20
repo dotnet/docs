@@ -10,7 +10,7 @@ This example shows how to use friend assemblies with assemblies that are unsigne
   
 1. Open a command prompt.  
   
-2. Create a C# or Visual Basic file named *friend_unsigned_A* that contains the following code. The code uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to declare `friend_unsigned_B` as a friend assembly.  
+2. Create a C# or Visual Basic file named *friend_unsigned_A* that contains the following code. The code uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to declare *friend_unsigned_B* as a friend assembly.  
    
    # [C#](#tab/csharp)
    ```csharp  
@@ -148,5 +148,6 @@ This example shows how to use friend assemblies with assemblies that are unsigne
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
 - [Assemblies in .NET](index.md)
 - [Friend assemblies](friend.md)
-- [How to: Create signed friend assemblies (C#)](create-signed-friend.md)
+- [How to: Create signed friend assemblies](create-signed-friend.md)
 - [C# programming guide](../../csharp/programming-guide/index.md)
+- [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)

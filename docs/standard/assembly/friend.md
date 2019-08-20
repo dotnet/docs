@@ -13,10 +13,10 @@ A *friend assembly* is an assembly that can access another assembly's [internal]
 
 ## Remarks
 
-You can use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to identify one or more friend assemblies for a given assembly. The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute in `Assembly A` and specifies assembly `AssemblyB` as a friend assembly. This gives assembly `AssemblyB` access to all types and members in `Assembly A` that are marked as `internal` in C# or `Friend` in Visual Basic.
+You can use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to identify one or more friend assemblies for a given assembly. The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute in *Assembly A* and specifies assembly `AssemblyB` as a friend assembly. This gives assembly `AssemblyB` access to all types and members in *Assembly A* that are marked as `internal` in C# or `Friend` in Visual Basic.
 
 > [!NOTE]
-> When you compile an assembly (assembly `AssemblyB`) that will access internal types or internal members of another assembly (`assembly A`), you must explicitly specify the name of the output file (*.exe* or *.dll*) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [/out (C#)](../../csharp/language-reference/compiler-options/out-compiler-option.md) or [/out (Visual Basic)](../../visual-basic/reference/command-line-compiler/out.md).
+> When you compile an assembly (assembly `AssemblyB`) that will access internal types or internal members of another assembly (*Assembly A*), you must explicitly specify the name of the output file (*.exe* or *.dll*) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [/out (C#)](../../csharp/language-reference/compiler-options/out-compiler-option.md) or [/out (Visual Basic)](../../visual-basic/reference/command-line-compiler/out.md).
 
 # [C#](#tab/csharp)
 
@@ -70,23 +70,23 @@ End Class
 
 ---
 
-Only assemblies that you explicitly specify as friends can access `internal` (C#) or `Friend` (Visual Basic) types and members. For example, if `Assembly B` is a friend of `Assembly A` and `Assembly C` references `Assembly B`, `Assembly C` does not have access to `internal` (C#) or `Friend` (Visual Basic) types in `Assembly A`.
+Only assemblies that you explicitly specify as friends can access `internal` (C#) or `Friend` (Visual Basic) types and members. For example, if *Assembly B* is a friend of *Assembly A* and *Assembly C* references *Assembly B*, *Assembly C* does not have access to `internal` (C#) or `Friend` (Visual Basic) types in *Assembly A*.
 
-The compiler performs some basic validation of the friend assembly name passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute. If `Assembly A` declares `Assembly B` as a friend assembly, the validation rules are as follows:
+The compiler performs some basic validation of the friend assembly name passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute. If *Assembly A* declares *Assembly B* as a friend assembly, the validation rules are as follows:
 
-- If `Assembly A` is strong named, `Assembly B` must also be strong named. The friend assembly name that is passed to the attribute must consist of the assembly name and the public key of the strong-name key that is used to sign `Assembly B`.
+- If *Assembly A* is strong named, *Assembly B* must also be strong named. The friend assembly name that is passed to the attribute must consist of the assembly name and the public key of the strong-name key that is used to sign *Assembly B*.
 
-     The friend assembly name that is passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute cannot be the strong name of `Assembly B`. Do not include the assembly version, culture, architecture, or public key token.
+     The friend assembly name that is passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute cannot be the strong name of *Assembly B*. Do not include the assembly version, culture, architecture, or public key token.
 
-- If `Assembly A` is not strong named, the friend assembly name should consist of only the assembly name. For more information, see [How to: Create unsigned friend assemblies](create-unsigned-friend.md).
+- If *Assembly A* is not strong named, the friend assembly name should consist of only the assembly name. For more information, see [How to: Create unsigned friend assemblies](create-unsigned-friend.md).
 
-- If `Assembly B` is strong named, you must specify the strong-name key for `Assembly B` by using the project setting or the command-line `/keyfile` compiler option. For more information, see [How to: Create signed friend Assemblies](create-signed-friend.md).
+- If *Assembly B* is strong named, you must specify the strong-name key for *Assembly B* by using the project setting or the command-line `/keyfile` compiler option. For more information, see [How to: Create signed friend Assemblies](create-signed-friend.md).
 
  The <xref:System.Security.Permissions.StrongNameIdentityPermission> class also provides the ability to share types, with the following differences:
 
 - <xref:System.Security.Permissions.StrongNameIdentityPermission> applies to an individual type, while a friend assembly applies to the whole assembly.
 
-- If there are hundreds of types in `Assembly A` that you want to share with `Assembly B`, you have to add <xref:System.Security.Permissions.StrongNameIdentityPermission> to all of them. If you use a friend assembly, you only need to declare the friend relationship once.
+- If there are hundreds of types in *Assembly A* that you want to share with *Assembly B*, you have to add <xref:System.Security.Permissions.StrongNameIdentityPermission> to all of them. If you use a friend assembly, you only need to declare the friend relationship once.
 
 - If you use <xref:System.Security.Permissions.StrongNameIdentityPermission>, the types you want to share have to be declared as public. If you use a friend assembly, the shared types are declared as `internal` (C#) or `Friend` (Visual Basic).
 

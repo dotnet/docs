@@ -34,16 +34,16 @@ The following example creates an assembly named *myCode.exe* from a code module 
 
 # [C#](#tab/csharp)
 
-```
+```cmd
 csc myCode.cs
 ```
 
 # [Visual Basic](#tab/vb)
 
-```
+```cmd
 vbc myCode.vb
 ```
-
+---
 ## Create an assembly with an .exe extension and specify the output file name
 
 At the command prompt, type the following command:
@@ -56,16 +56,16 @@ The following example creates an assembly named *myAssembly.exe* from a code mod
 
 # [C#](#tab/csharp)
 
-```
+```cmd
 csc -out:myAssembly.exe myCode.cs
 ```
 
 # [Visual Basic](#tab/vb)
 
-```
+```cmd
 vbc -out:myAssembly.exe myCode.vb
 ```
-
+---
 ## Create library assemblies
  A library assembly is similar to a class library. It contains types that will be referenced by other assemblies, but it has no entry point to begin execution.
 
@@ -79,16 +79,16 @@ The following example creates a library assembly named *myCodeAssembly.dll* from
 
 # [C#](#tab/csharp)
 
-```
+```cmd
 csc -out:myCodeLibrary.dll -t:library myCode.cs
 ```
 
 # [Visual Basic](#tab/vb)
 
-```
+```cmd
 vbc -out:myCodeLibrary.dll -t:library myCode.vb
 ```
-
+---
 ## See also
 
 - [Create assemblies](create.md)

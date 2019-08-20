@@ -8,13 +8,15 @@ ms.topic: overview
 
 # What is Windows Presentation Foundation
 
-This article provides a basic overview of Windows Presentation Foundation (WPF) as it relates to .NET Core. WPF for .NET is a UI framework that creates desktop client applications. The WPF development platform supports a broad set of application development features, including an application model, controls, graphics, and data binding. WPF uses the Extensible Application Markup Language (XAML) to provide a declarative model for application programming.
+Welcome to the Desktop Guide for Windows Presentation Foundation (WPF). This article provides a basic overview of WPF for .NET Core. WPF is a UI framework that creates desktop client applications. The WPF development platform supports a broad set of application development features, including an application model, controls, graphics, and data binding. WPF uses the Extensible Application Markup Language (XAML) to provide a declarative model for application programming.
 
-[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-wpf-preview-note.md)]
+[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
+
+[!INCLUDE [desktop guide introduction](../../../includes/desktop-guide-intro.md)]
 
 Windows Presentation Foundation (WPF) is only available for the Windows operating system. There are two implementations of WPF.
 
-01. The new open-source implementation hosted on [GitHub](https://github.com/dotnet/wpf). This version runs on .NET Core 3.0. The WPF visual designer for XAML requires, at a minimum, [Visual Studio 2019 16.2 Preview 1](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide).
+01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/wpf). This version runs on .NET Core 3.0. The WPF visual designer for XAML requires, at a minimum, [Visual Studio 2019 16.2 Preview 1](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide).
 
 01. The .NET Framework implementation of WPF that is supported by Visual Studio 2019 and Visual Studio 2017.
 

@@ -15,9 +15,9 @@ Understanding .NET Core default assembly loading logic can help understanding an
 
 In some applications dependencies are dynamically determined at runtime. In these situations, it's critical to understand how managed assemblies and unmanaged dependencies are loaded.
 
-## [Understanding <xref:System.Runtime.Loader.AssemblyLoadContext>](understanding-assemblyloadcontext.md)
+## [Understanding AssemblyLoadContext](understanding-assemblyloadcontext.md)
 
-The <xref:System.Runtime.Loader.AssemblyLoadContext> API is central to the .NET Core loading design. This article provides a conceptual overview to the design.
+The <xref:System.Runtime.Loader.AssemblyLoadContext> API is central to the .NET Core loading design. The [Understanding AssemblyLoadContext](understanding-assemblyloadcontext.md) article provides a conceptual overview to the design.
 
 ## Loading details
 
@@ -30,3 +30,7 @@ The loading algorithm details are covered briefly in several articles:
 ## [Create a .NET Core application with plugins](../tutorials/creating-app-with-plugin-support.md)
 
 The tutorial on creating a .NET Core application with plugins describes how to create a custom AssemblyLoadContext. It uses an <xref:System.Runtime.Loader.AssemblyDependencyResolver> to resolve the dependencies of the plugin. The tutorial correctly isolates the plugin's dependencies from the hosting application.
+
+## [How to use and debug assembly unloadability in .NET Core](../../standard/assembly/unloadability-howto.md)
+
+The [How to use and debug assembly unloadability in .NET Core](../../standard/assembly/unloadability-howto.md) article is a step-by-step tutorial. It shows how to load a .NET Core application, execute, and then unload it. The article also provides debugging tips.

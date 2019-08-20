@@ -11,6 +11,9 @@ ms.assetid: 1eaf4e58-b305-4785-9e3d-e416b9c75598
 ---
 # ByVal (Visual Basic)
 Specifies that an argument is passed [by value](../../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md), so that the called procedure or property cannot change the value of a variable underlying the argument in the calling code. If no modifier is specified, ByVal is the default.
+
+> [!NOTE]
+> We don't recommend to explicitly specify `ByVal` for argument as it's the default. Explicitly specifying it makes the code looks noisy.
   
 ## Remarks  
  The `ByVal` modifier can be used in these contexts:  

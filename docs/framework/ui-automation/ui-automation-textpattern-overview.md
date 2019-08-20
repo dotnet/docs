@@ -129,7 +129,7 @@ There are two types of embedded objects in the [!INCLUDE[TLA2#tla_uiautomation](
 **Endpoint**\
 The absolute <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> or <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> point of a text range within a text container.
 
-![TextPatternRangeEndpoints &#40;start and end&#41;.](media/uia-textpattern-endpoints.PNG "UIA_TextPattern_Endpoints")
+![TextPatternRangeEndpoints &#40;start and end&#41;.](./media/uia-textpattern-endpoints.PNG "UIA_TextPattern_Endpoints")
 The following illustrates a set of start and end points.
 
 **TextRange**\

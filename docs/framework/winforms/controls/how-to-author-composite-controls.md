@@ -73,10 +73,8 @@ Composite controls can be employed in many ways. You can author them as part of 
 
 ## See also
 
-- [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
-- [Walkthrough: Authoring a Composite Control with Visual C#](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
-- [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
-- [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
+- [Walkthrough: Authoring a Composite Control](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
+- [Walkthrough: Inheriting from a Windows Forms Control](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
 - [Control Type Recommendations](control-type-recommendations.md)
 - [How to: Author Controls for Windows Forms](how-to-author-controls-for-windows-forms.md)
 - [Varieties of Custom Controls](varieties-of-custom-controls.md)

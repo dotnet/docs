@@ -36,7 +36,7 @@ A control represents a graphical link between the user and the program. A contro
 
 6. If your control inherits from <xref:System.Windows.Forms.UserControl>, you can test its runtime behavior by building the control project and running it in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).
 
-7. You can also test and debug your control by creating a new project, such as a Windows Application, and placing it into a container. This process is demonstrated as part of [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md).
+7. You can also test and debug your control by creating a new project, such as a Windows Application, and placing it into a container. This process is demonstrated as part of [Walkthrough: Authoring a Composite Control](walkthrough-authoring-a-composite-control-with-visual-csharp.md).
 
 8. As you add each feature, add features to your test project to exercise the new functionality.
 
@@ -46,8 +46,6 @@ A control represents a graphical link between the user and the program. A contro
 
 ## See also
 
-- [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
-- [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
 - [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
 - [How to: Inherit from the Control Class](how-to-inherit-from-the-control-class.md)
 - [How to: Inherit from Existing Windows Forms Controls](how-to-inherit-from-existing-windows-forms-controls.md)

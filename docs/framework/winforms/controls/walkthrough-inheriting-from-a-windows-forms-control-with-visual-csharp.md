@@ -8,8 +8,12 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], walkthroughs"
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 09476da0-8d4c-4a4c-b969-649519dfb438
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# Walkthrough: Inheriting from a Windows Forms Control with Visual C\#
+# Walkthrough: Inherit from a Windows Forms Control with C\#
+
 With Visual C#, you can create powerful custom controls through *inheritance*. Through inheritance you are able to create controls that retain all of the inherent functionality of standard Windows Forms controls but also incorporate custom functionality. In this walkthrough, you will create a simple inherited control called `ValueButton`. This button will inherit functionality from the standard Windows Forms <xref:System.Windows.Forms.Button> control, and will expose a custom property called `ButtonValue`.
 
 ## Creating the Project
@@ -17,26 +21,24 @@ With Visual C#, you can create powerful custom controls through *inheritance*. T
 
 ### To create the ValueButtonLib control library and the ValueButton control
 
-1. On the **File** menu, point to **New** and then click **Project** to open the **New Project** dialog box.
-
-2. Select the **Windows Forms Control Library** project template from the list of Visual C# Projects, and type `ValueButtonLib` in the **Name** box.
+1. In Visual Studio, create a new **Windows Forms Control Library** project, and name it **ValueButtonLib**.
 
      The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces](../../../csharp/programming-guide/namespaces/index.md).
 
-3. In **Solution Explorer**, right-click **UserControl1.cs**, then choose **Rename** from the shortcut menu. Change the file name to `ValueButton.cs`. Click the **Yes** button when you are asked if you want to rename all references to the code element '`UserControl1`'.
+2. In **Solution Explorer**, right-click **UserControl1.cs**, then choose **Rename** from the shortcut menu. Change the file name to `ValueButton.cs`. Click the **Yes** button when you are asked if you want to rename all references to the code element '`UserControl1`'.
 
-4. In **Solution Explorer**, right-click **ValueButton.cs** and select **View Code**.
+3. In **Solution Explorer**, right-click **ValueButton.cs** and select **View Code**.
 
-5. Locate the `class` statement line, `public partial class ValueButton`, and change the type from which this control inherits from <xref:System.Windows.Forms.UserControl> to <xref:System.Windows.Forms.Button>. This allows your inherited control to inherit all the functionality of the <xref:System.Windows.Forms.Button> control.
+4. Locate the `class` statement line, `public partial class ValueButton`, and change the type from which this control inherits from <xref:System.Windows.Forms.UserControl> to <xref:System.Windows.Forms.Button>. This allows your inherited control to inherit all the functionality of the <xref:System.Windows.Forms.Button> control.
 
-6. In **Solution Explorer**, open the **ValueButton.cs** node to display the designer-generated code file, **ValueButton.Designer.cs**. Open this file in the **Code Editor**.
+5. In **Solution Explorer**, open the **ValueButton.cs** node to display the designer-generated code file, **ValueButton.Designer.cs**. Open this file in the **Code Editor**.
 
-7. Locate the `InitializeComponent` method and remove the line that assigns the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property. This property does not exist in the <xref:System.Windows.Forms.Button> control.
+6. Locate the `InitializeComponent` method and remove the line that assigns the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property. This property does not exist in the <xref:System.Windows.Forms.Button> control.
 
-8. From the **File** menu, choose **Save All** to save the project.
+7. From the **File** menu, choose **Save All** to save the project.
 
     > [!NOTE]
-    >  A visual designer is no longer available. Because the <xref:System.Windows.Forms.Button> control does its own painting, you are unable to modify its appearance in the designer. Its visual representation will be exactly the same as that of the class it inherits from (that is, <xref:System.Windows.Forms.Button>) unless modified in the code. You can still add components, which have no UI elements, to the design surface.
+    > A visual designer is no longer available. Because the <xref:System.Windows.Forms.Button> control does its own painting, you are unable to modify its appearance in the designer. Its visual representation will be exactly the same as that of the class it inherits from (that is, <xref:System.Windows.Forms.Button>) unless modified in the code. You can still add components, which have no UI elements, to the design surface.
 
 ## Adding a Property to Your Inherited Control
  One possible use of inherited Windows Forms controls is the creation of controls that are identical in look and feel of standard Windows Forms controls, but expose custom properties. In this section, you will add a property called `ButtonValue` to your control.

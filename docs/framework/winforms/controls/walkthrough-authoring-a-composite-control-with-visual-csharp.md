@@ -1,6 +1,8 @@
 ---
 title: "Walkthrough: Authoring a Composite Control with Visual C#"
 ms.date: "03/30/2017"
+dev_langs:
+  - CSharp
 helpviewer_keywords:
   - "custom controls [C#]"
   - "user controls [Windows Forms], creating with Visual C#"
@@ -8,8 +10,11 @@ helpviewer_keywords:
   - "user controls [C#]"
   - "custom controls [Windows Forms], creating"
 ms.assetid: f88481a8-c746-4a36-9479-374ce5f2e91f
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# Walkthrough: Authoring a Composite Control with Visual C\#
+# Walkthrough: Author a Composite Control with C\#
 
 Composite controls provide a means by which custom graphical interfaces can be created and reused. A composite control is essentially a component with a visual representation. As such, it might consist of one or more Windows Forms controls, components, or blocks of code that can extend functionality by validating user input, modifying display properties, or performing other tasks required by the author. Composite controls can be placed on Windows Forms in the same manner as other controls. In the first part of this walkthrough, you create a simple composite control called `ctlClock`. In the second part of the walkthrough, you extend the functionality of `ctlClock` through inheritance.
 
@@ -19,18 +24,16 @@ When you create a new project, you specify its name to set the root namespace, a
 
 ### To create the ctlClockLib control library and the ctlClock control
 
-1. On the **File** menu, point to **New**, and then click **Project** to open the **New Project** dialog box.
-
-2. From the list of Visual C# projects, select the **Windows Forms Control Library** project template, type `ctlClockLib` in the **Name** box, and then click **OK**.
+1. In Visual Studio, create a new **Windows Forms Control Library** project, and name it **ctlClockLib**.
 
      The project name, `ctlClockLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ctlClock`, you can specify your `ctlClock` component using `ctlClockLib.ctlClock.`
 
-3. In Solution Explorer, right-click **UserControl1.cs**, and then click **Rename**. Change the file name to `ctlClock.cs`. Click the **Yes** button when you are asked if you want to rename all references to the code element "UserControl1".
+2. In **Solution Explorer**, right-click **UserControl1.cs**, and then click **Rename**. Change the file name to `ctlClock.cs`. Click the **Yes** button when you are asked if you want to rename all references to the code element "UserControl1".
 
     > [!NOTE]
     > By default, a composite control inherits from the <xref:System.Windows.Forms.UserControl> class provided by the system. The <xref:System.Windows.Forms.UserControl> class provides functionality required by all composite controls, and implements standard methods and properties.
 
-4. On the **File** menu, click **Save All** to save the project.
+3. On the **File** menu, click **Save All** to save the project.
 
 ## Adding Windows Controls and Components to the Composite Control
 

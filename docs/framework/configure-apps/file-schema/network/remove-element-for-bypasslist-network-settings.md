@@ -48,7 +48,7 @@ None.
 
 |**Element**|**Description**|
 |-----------------|---------------------|
-|[bypasslist](../../../../../docs/framework/configure-apps/file-schema/network/bypasslist-element-network-settings.md)|Provides a set of regular expressions that describe addresses that do not use a proxy.|
+|[bypasslist](bypasslist-element-network-settings.md)|Provides a set of regular expressions that describe addresses that do not use a proxy.|
 
 ## Remarks
 
@@ -82,4 +82,4 @@ The following example removes any previous definition for the adventure-works.co
 ## See also
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

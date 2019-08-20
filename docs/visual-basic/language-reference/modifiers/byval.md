@@ -14,25 +14,25 @@ Specifies that an argument is passed [by value](../../programming-guide/language
 
 > [!NOTE]
 > We don't recommend to explicitly specify `ByVal` for argument as it's the default. Explicitly specifying it makes the code looks noisy.
+
+## Remarks
+ The `ByVal` modifier can be used in these contexts:
+
+ [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
   
-## Remarks  
- The `ByVal` modifier can be used in these contexts:  
+ [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
   
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
+ [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
-  
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
-  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
-  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
-  
-## Example  
- The following example demonstrates the use of the `ByVal` parameter passing mechanism with a reference type argument. In the example, the argument is `c1`, an instance of class `Class1`. `ByVal` prevents the code in the procedures from changing the underlying value of the reference argument, `c1`, but does not protect the accessible fields and properties of `c1`.  
-  
- [!code-vb[VbVbalrKeywords#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class5.vb#10)]  
-  
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+
+## Example
+ The following example demonstrates the use of the `ByVal` parameter passing mechanism with a reference type argument. In the example, the argument is `c1`, an instance of class `Class1`. `ByVal` prevents the code in the procedures from changing the underlying value of the reference argument, `c1`, but does not protect the accessible fields and properties of `c1`.
+
+ [!code-vb[VbVbalrKeywords#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class5.vb#10)]
+
 ## See also
 
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

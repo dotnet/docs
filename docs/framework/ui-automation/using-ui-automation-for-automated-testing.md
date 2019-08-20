@@ -97,7 +97,7 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 ## Related Tools and Technologies  
  There are a number of related tools and technologies that support automated testing with [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].  
   
-- Inspect.exe is a graphical user interface (GUI) application that can be used to gather [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] information for both provider and client development and debugging. Inspect.exe is included in the [!INCLUDE[TLA#tla_winfxsdk](../../../includes/tlasharptla-winfxsdk-md.md)].  
+- Inspect.exe is a graphical user interface (GUI) application that can be used to gather [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] information for both provider and client development and debugging. Inspect.exe is included in the Windows SDK.  
   
 - MSAABridge exposes [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] information to Active Accessibility clients. The primary goal of bridging [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] to Active Accessibility is to allow existing Active Accessibility clients the ability to interact with any framework that has implemented [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].  
   

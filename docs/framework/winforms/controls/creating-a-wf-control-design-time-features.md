@@ -57,7 +57,6 @@ When you are finished, your custom control will look something like the followin
 
 For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
 
-
 ## Prerequisites
 
 In order to complete this walkthrough, you'll need Visual Studio.

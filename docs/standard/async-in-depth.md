@@ -25,7 +25,7 @@ Tasks expose an API protocol for monitoring, waiting upon and accessing the resu
 
 Using `await` allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done. Your code does not need to rely on callbacks or events to continue execution after the task has been completed. The language and task API integration does that for you. If you’re using `Task<T>`, the `await` keyword will additionally "unwrap" the value returned when the Task is complete.  The details of how this works are explained further below.
 
-You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP)](~/docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) topic.
+You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP)](./asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) topic.
 
 ## Deeper Dive into Tasks for an I/O-Bound Operation
 
@@ -141,7 +141,7 @@ Once `await` is encountered, the execution of `CalculateResult()` is yielded to 
 
 ## See also
 
-- [Asynchronous programming in C#](~/docs/csharp/async.md)
+- [Asynchronous programming in C#](../csharp/async.md)
 - [Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)
-- [Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
-- [Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)
+- [Async Programming in F#](../fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](../visual-basic/programming-guide/concepts/async/index.md)

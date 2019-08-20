@@ -25,7 +25,7 @@ Each computer where the Common Language Runtime is installed has a machine-wide 
   
 - Use an installer designed to work with the Global Assembly Cache. This is the preferred option for installing assemblies into the Global Assembly Cache.  
   
-- Use a developer tool called the [Global Assembly Cache tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md), provided by the Windows Software Development Kit (SDK).  
+- Use a developer tool called the [Global Assembly Cache tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md), provided by the Windows SDK.  
   
     > [!NOTE]
     >  In deployment scenarios, use Windows Installer to install assemblies into the Global Assembly Cache. Use the Global Assembly Cache tool only in development scenarios, because it does not provide assembly reference counting and other features provided when using the Windows Installer.  

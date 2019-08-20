@@ -31,7 +31,7 @@ By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWi
  If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic.  
   
 ## Building the Example  
- The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks (C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
+ The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
   
  To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelAListOfTasks** as the **StartUp Project**. Add the changes in this topic to that project.  
   
@@ -254,6 +254,6 @@ namespace CancelAfterOneTask
 ## See also
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
-- [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+- [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md)
+- [Asynchronous Programming with async and await (C#)](./index.md)
 - [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
 ---
 # Mapping Algorithm Names to Cryptography Classes
-There are four ways a developer can create a cryptography object using the Windows Software Development Kit (SDK):  
+There are four ways a developer can create a cryptography object using the Windows SDK:  
   
 - Create an object by using the **new** operator.  
   

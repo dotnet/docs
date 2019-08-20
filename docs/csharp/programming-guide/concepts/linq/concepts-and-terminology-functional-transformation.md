@@ -27,7 +27,7 @@ This topic introduces the concepts and terminology of pure functional transforma
   
  Historically, general-purpose functional programming languages, such as ML, Scheme, Haskell, and F#, have been primarily of interest to the academic community. Although it has always been possible to write pure functional transformations in C#, the difficulty of doing so has not made it an attractive option to most programmers. In recent versions of C#, however, new language constructs such as lambda expressions and type inference make it functional programming much easier and more productive.  
   
- For more information about functional programming, see [Functional Programming vs. Imperative Programming (C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md).  
+ For more information about functional programming, see [Functional Programming vs. Imperative Programming (C#)](./functional-programming-vs-imperative-programming.md).  
   
 #### Domain-Specific FP Languages  
  Although general functional programming languages have not been widely adopted, specific domain-specific functional programming languages have had better success. For example, Cascading Style Sheets (CSS) are used to determine the look and feel of many Web pages, and Extensible Stylesheet Language Transformations (XSLT) style sheets are used extensively in XML data manipulation. For more information about XSLT, see [XSLT Transformations](../../../../standard/data/xml/xslt-transformations.md).  
@@ -38,12 +38,12 @@ This topic introduces the concepts and terminology of pure functional transforma
  higher-order (first-class) function  
  A function that can be treated as a programmatic object. For example, a higher-order function can be passed to or returned from other functions. In C#c, delegates and lambda expressions are language features that support higher-order functions. To write a higher-order function, you declare one or more arguments to take delegates, and you often use lambda expressions when calling it. Many of the standard query operators are higher-order functions.  
   
- For more information, see [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md).  
+ For more information, see [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md).  
   
  lambda expression  
  Essentially, an inline anonymous function that can be used wherever a delegate type is expected. This is a simplified definition of lambda expressions, but it is adequate for the purposes of this tutorial.  
   
- For more information about, see [Lambda Expressions](../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
+ For more information about, see [Lambda Expressions](../../statements-expressions-operators/lambda-expressions.md).  
   
  collection  
  A structured set of data, usually of a uniform type. To be compatible with LINQ, a collection must implement the <xref:System.Collections.IEnumerable> interface or the <xref:System.Linq.IQueryable> interface (or one of their generic counterparts, <xref:System.Collections.Generic.IEnumerator%601> or <xref:System.Linq.IQueryable%601>).  
@@ -51,21 +51,21 @@ This topic introduces the concepts and terminology of pure functional transforma
  tuple (anonymous types)  
  A mathematical concept, a tuple is a finite sequence of objects, each of a specific type. A tuple is also known as an ordered list. Anonymous types are a language implementation of this concept, which enable an unnamed class type to be declared and an object of that type to be instantiated at the same time.  
   
- For more information, see [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md).  
+ For more information, see [Anonymous Types](../../classes-and-structs/anonymous-types.md).  
   
  type inference (implicit typing)  
  The ability of a compiler to determine the type of a variable in the absence of an explicit type declaration.  
   
- For more information, see [Implicitly Typed Local Variables](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
+ For more information, see [Implicitly Typed Local Variables](../../classes-and-structs/implicitly-typed-local-variables.md).  
   
  deferred execution and lazy evaluation  
  The delaying of evaluation of an expression until its resolved value is actually required. Deferred execution is supported in collections.  
   
- For more information, see [Introduction to LINQ Queries (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).  
+ For more information, see [Introduction to LINQ Queries (C#)](./introduction-to-linq-queries.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).  
   
  These language features will be used in code samples throughout this section.  
   
 ## See also
 
-- [Introduction to Pure Functional Transformations (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
-- [Functional Programming vs. Imperative Programming (C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md)
+- [Introduction to Pure Functional Transformations (C#)](./introduction-to-pure-functional-transformations.md)
+- [Functional Programming vs. Imperative Programming (C#)](./functional-programming-vs-imperative-programming.md)

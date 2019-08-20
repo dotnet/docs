@@ -73,13 +73,13 @@ reader.Close()
   
  However, the <xref:System.Xml.XmlDocument> approach generally does not perform as well as LINQ to XML, because the <xref:System.Xml.XmlNode.SelectNodes%2A> method must do the following internally every time it is called:  
   
-- It parses the string that contains the XPath expression, breaking the string into tokens.  
+-   It parses the string that contains the XPath expression, breaking the string into tokens.  
   
-- It validates the tokens to make sure that the XPath expression is valid.  
+-   It validates the tokens to make sure that the XPath expression is valid.  
   
-- It translates the expression into an internal expression tree.  
+-   It translates the expression into an internal expression tree.  
   
-- It iterates through the nodes, appropriately selecting the nodes for the result set based on the evaluation of the expression.  
+-   It iterates through the nodes, appropriately selecting the nodes for the result set based on the evaluation of the expression.  
   
  This is significantly more than the work done by the corresponding LINQ to XML query. The specific performance difference varies for different types of queries, but in general LINQ to XML queries do less work, and therefore perform better, than evaluating XPath expressions using <xref:System.Xml.XmlDocument>.  
   

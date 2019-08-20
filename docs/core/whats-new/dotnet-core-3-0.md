@@ -286,9 +286,9 @@ The .NET Core project file must specify the supported runtimes in the `<RuntimeI
 <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
 ```
 
-## WinForms HighDPI
+## WinForms high DPI
 
-.NET Core Windows Forms applications can set High DPI mode with <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)?displayProperty=nameWithType>. The `SetHighDpiMode` method sets the corresponding High DPI mode unless the setting has been set by other means like `App.Manifest` or P/Invoke before `Application.Run`.
+.NET Core Windows Forms applications can set high DPI mode with <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)?displayProperty=nameWithType>. The `SetHighDpiMode` method sets the corresponding high DPI mode unless the setting has been set by other means like `App.Manifest` or P/Invoke before `Application.Run`.
 
 The possible `highDpiMode` values, as expressed by the <xref:System.Windows.Forms.HighDpiMode?displayProperty=nameWithType> enum are:
 
@@ -298,7 +298,7 @@ The possible `highDpiMode` values, as expressed by the <xref:System.Windows.Form
 * `PerMonitorV2`
 * `DpiUnawareGdiScaled`
 
-For more information about High DPI modes, see [High DPI Desktop Application Development on Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows).
+For more information about high DPI modes, see [High DPI Desktop Application Development on Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows).
 
 ## Ranges and indices
 
@@ -497,9 +497,11 @@ The export methods produce DER-encoded binary data, and the import methods expec
 
 ## SerialPort for Linux
 
-.NET Core 3.0 supports <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> on Linux.
+.NET Core 3.0 provides basic support for <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> on Linux.
 
 Previously, .NET Core only supported using `SerialPort` on Windows.
+
+For more information about the limited support for the serial port on Linux, see [GitHub issue #33146](https://github.com/dotnet/corefx/issues/33146).
 
 ## Docker and cgroup memory Limits
 

@@ -42,6 +42,6 @@ To run this code, copy and paste the class into a C# console application  with a
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
-- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+- [C# Programming Guide](../index.md)
+- [Anonymous Types](./anonymous-types.md)
+- [LINQ Query Expressions](../linq-query-expressions/index.md)

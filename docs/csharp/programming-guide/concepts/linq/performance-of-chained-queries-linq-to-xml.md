@@ -47,6 +47,6 @@ This chained query provides the same performance profile as iterating through a 
 
 The iteration through `query2` is therefore directly proportional to the number of items in the source of the first query, in other words, linear time. A corresponding Visual Basic example would have the same performance profile.
 
-For more information on iterators, see [yield](../../../../csharp/language-reference/keywords/yield.md).
+For more information on iterators, see [yield](../../../language-reference/keywords/yield.md).
 
-For a more detailed tutorial on chaining queries together, see [Tutorial: Chaining Queries Together](../../../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).
+For a more detailed tutorial on chaining queries together, see [Tutorial: Chaining Queries Together](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).

@@ -51,4 +51,4 @@ The **-appconfig** compiler option enables a C# application to specify the locat
 ## See also
 
 - [\<supportPortability> Element](../../../framework/configure-apps/file-schema/runtime/supportportability-element.md)
-- [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)
+- [C# Compiler Options Listed Alphabetically](./listed-alphabetically.md)

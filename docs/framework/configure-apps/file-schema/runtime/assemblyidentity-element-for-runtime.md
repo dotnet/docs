@@ -115,6 +115,6 @@ culture="assembly culture"/>
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

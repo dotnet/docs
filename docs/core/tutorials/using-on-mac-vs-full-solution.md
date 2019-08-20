@@ -22,7 +22,7 @@ This tutorial shows you how to create an application that accepts a search word 
 - [.NET Core SDK 1.1 or later](https://www.microsoft.com/net/core#macos)
 - [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
 
-For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md). For the full system requirements of Visual Studio 2017 for Mac, see [Visual Studio 2017 for Mac Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-mac).
+For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../macos-prerequisites.md). For the full system requirements of Visual Studio 2017 for Mac, see [Visual Studio 2017 for Mac Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-mac).
 
 ## Building a library
 

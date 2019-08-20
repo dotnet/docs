@@ -7,7 +7,7 @@ ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
 
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.
 
-Arrays are most useful for creating and working with a fixed number of strongly-typed objects. For information about arrays, see [Arrays](../../../csharp/programming-guide/arrays/index.md).
+Arrays are most useful for creating and working with a fixed number of strongly-typed objects. For information about arrays, see [Arrays](../arrays/index.md).
 
 Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.
 
@@ -16,7 +16,7 @@ A collection is a class, so you must declare an instance of the class before you
 If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. A generic collection enforces type safety so that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it.
 
 > [!NOTE]
-> For the examples in this topic, include [using](../../../csharp/language-reference/keywords/using-directive.md) directives for the `System.Collections.Generic` and `System.Linq` namespaces.
+> For the examples in this topic, include [using](../../language-reference/keywords/using-directive.md) directives for the `System.Collections.Generic` and `System.Linq` namespaces.
 
  **In this topic**
 
@@ -46,7 +46,7 @@ If your collection contains elements of only one data type, you can use one of t
 
 The examples in this section use the generic <xref:System.Collections.Generic.List%601> class, which enables you to work with a strongly typed list of objects.
 
-The following example creates a list of strings and then iterates through the strings by using a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement.
+The following example creates a list of strings and then iterates through the strings by using a [foreach](../../language-reference/keywords/foreach-in.md) statement.
 
 ```csharp
 // Create a list of strings.
@@ -64,7 +64,7 @@ foreach (var salmon in salmons)
 // Output: chinook coho pink sockeye
 ```
 
-If the contents of a collection are known in advance, you can use a *collection initializer* to initialize the collection. For more information, see [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md).
+If the contents of a collection are known in advance, you can use a *collection initializer* to initialize the collection. For more information, see [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md).
 
 The following example is the same as the previous example, except a collection initializer is used to add elements to the collection.
 
@@ -81,7 +81,7 @@ foreach (var salmon in salmons)
 // Output: chinook coho pink sockeye
 ```
 
-You can use a [for](../../../csharp/language-reference/keywords/for.md) statement instead of a `foreach` statement to iterate through a collection. You accomplish this by accessing the collection elements by the index position. The index of the elements starts at 0 and ends at the element count minus 1.
+You can use a [for](../../language-reference/keywords/for.md) statement instead of a `foreach` statement to iterate through a collection. You accomplish this by accessing the collection elements by the index position. The index of the elements starts at 0 and ends at the element count minus 1.
 
 The following example iterates through the elements of a collection by using `for` instead of `foreach`.
 
@@ -116,7 +116,7 @@ foreach (var salmon in salmons)
 // Output: chinook pink sockeye
 ```
 
-The following example removes elements from a generic list. Instead of a `foreach` statement, a [for](../../../csharp/language-reference/keywords/for.md) statement that iterates in descending order is used. This is because the <xref:System.Collections.Generic.List%601.RemoveAt%2A> method causes elements after a removed element to have a lower index value.
+The following example removes elements from a generic list. Instead of a `foreach` statement, a [for](../../language-reference/keywords/for.md) statement that iterates in descending order is used. This is because the <xref:System.Collections.Generic.List%601.RemoveAt%2A> method causes elements after a removed element to have a lower index value.
 
 ```csharp
 var numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -345,7 +345,7 @@ private static void FindInDictionary2(string symbol)
 
 ## Using LINQ to Access a Collection
 
-LINQ (Language-Integrated Query) can be used to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see  [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md).
+LINQ (Language-Integrated Query) can be used to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see  [Getting Started with LINQ in C#](./linq/getting-started-with-linq.md).
 
 The following example runs a LINQ query against a generic `List`. The LINQ query returns a different collection that contains the results.
 
@@ -557,13 +557,13 @@ public class Color
 
 ## Iterators
 
-An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [yield return](../../../csharp/language-reference/keywords/yield.md) statement to return each element of the collection one at a time.
+An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [yield return](../../language-reference/keywords/yield.md) statement to return each element of the collection one at a time.
 
-You call an iterator by using a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.
+You call an iterator by using a [foreach](../../language-reference/keywords/foreach-in.md) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.
 
-For more information, see [Iterators (C#)](../../../csharp/programming-guide/concepts/iterators.md).
+For more information, see [Iterators (C#)](./iterators.md).
 
-The following example uses an iterator method. The iterator method has a `yield return` statement that is inside a [for](../../../csharp/language-reference/keywords/for.md) loop. In the `ListEvenNumbers` method, each iteration of the `foreach` statement body creates a call to the iterator method, which proceeds to the next `yield return` statement.
+The following example uses an iterator method. The iterator method has a `yield return` statement that is inside a [for](../../language-reference/keywords/for.md) loop. In the `ListEvenNumbers` method, each iteration of the `foreach` statement body creates a call to the iterator method, which proceeds to the next `yield return` statement.
 
 ```csharp
 private static void ListEvenNumbers()
@@ -592,10 +592,10 @@ private static IEnumerable<int> EvenSequence(
 
 ## See also
 
-- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
-- [Programming Concepts (C#)](../../../csharp/programming-guide/concepts/index.md)
+- [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
+- [Programming Concepts (C#)](./index.md)
 - [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
-- [LINQ to Objects (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ to Objects (C#)](./linq/linq-to-objects.md)
 - [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
 - [Collections and Data Structures](../../../standard/collections/index.md)
 - [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)

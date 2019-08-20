@@ -138,7 +138,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
   
 ## Switches in ASP.NET applications
 
-You can configure an ASP.NET application to use compatibility settings by adding an [\<Add>](../../../configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](../../../configure-apps/file-schema/appsettings/index.md) section of the web.config file. 
+You can configure an ASP.NET application to use compatibility settings by adding an [\<Add>](../appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](../appsettings/index.md) section of the web.config file. 
 
 The following example uses the `<add>` element to add two settings to the `<appSettings>` section of a web.config file:
 

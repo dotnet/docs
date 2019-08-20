@@ -30,13 +30,13 @@ HRESULT GetExceptionRecord(
   
 ## Parameters  
  `bufferSize`  
- [in] The input buffer size, in bytes. This must be equal to `sizeof(`[MINIDUMP_EXCEPTION](/windows/desktop/api/minidumpapiset/ns-minidumpapiset-_minidump_exception)`)`.  
+ [in] The input buffer size, in bytes. This must be equal to `sizeof(`[MINIDUMP_EXCEPTION](/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_exception)`)`.  
   
  `bufferUsed`  
  [out] A pointer to a `ULONG32` type that receives the number of bytes actually written to the buffer.  
   
  `buffer`  
- [out] A pointer to a memory buffer that receives a copy of the exception record. The exception record is returned as a [MINIDUMP_EXCEPTION](/windows/desktop/api/minidumpapiset/ns-minidumpapiset-_minidump_exception) type.  
+ [out] A pointer to a memory buffer that receives a copy of the exception record. The exception record is returned as a [MINIDUMP_EXCEPTION](/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_exception) type.  
   
 ## Return Value  
  The return value is `S_OK` on success, or a failure `HRESULT` code on failure. The `HRESULT` codes can include but are not limited to the following:  
@@ -48,7 +48,7 @@ HRESULT GetExceptionRecord(
 |`HRESULT_FROM_WIN32(ERROR_BAD_LENGTH)`|The input buffer size is not equal to `sizeof(MINIDUMP_EXCEPTION)`.|  
   
 ## Remarks  
- [MINIDUMP_EXCEPTION](/windows/desktop/api/minidumpapiset/ns-minidumpapiset-_minidump_exception) is a structure defined in dbghelp.h and imagehlp.h in the Windows SDK.  
+ [MINIDUMP_EXCEPTION](/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_exception) is a structure defined in dbghelp.h and imagehlp.h in the Windows SDK.  
   
  This method is implemented by the writer of the debugging application.  
   

@@ -20,6 +20,6 @@ The assemblies referenced by your program will automatically be loaded at build 
   
 ## See also
 
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [C# Programming Guide](../../index.md)
 - [Assemblies in .NET](../../../../standard/assembly/index.md)
 - [How to: Load Assemblies into an Application Domain](../../../../framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)

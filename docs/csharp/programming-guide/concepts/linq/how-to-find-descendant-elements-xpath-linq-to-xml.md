@@ -11,7 +11,7 @@ This topic shows how to get the descendant elements with a particular name.
 ## Example  
  This example finds all descendants named `Name`.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  

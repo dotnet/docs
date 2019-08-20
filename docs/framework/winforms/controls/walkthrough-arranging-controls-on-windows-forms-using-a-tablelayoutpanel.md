@@ -41,7 +41,6 @@ Tasks illustrated in this walkthrough include:
 
 When you are finished, you will have an understanding of the role played by these important layout features.
 
-
 ## Creating the Project
 
 The first step is to create the project and set up the form.

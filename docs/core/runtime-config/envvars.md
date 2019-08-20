@@ -29,13 +29,6 @@ The following sections list selected supported environment variables by category
 |`COMPlus_GCLatencyLevel`|see <xref:System.Runtime.GCLatencyMode>|Adjusts the intrusiveness of the garbage collector. The default value is 1 (<xref:System.Runtime.GCLatencyMode.Interactive?displayProperty=nameWithType>). For more information, see [Latency modes](../../standard/garbage-collection/latency.md).
 |`COMPlus_GCName`|*string_path*|Specifies a path to the library containing the GC that the runtime intends to load. For more information, see [Standalone GC Loader Design](https://github.com/dotnet/coreclr/blob/4c7c066d0bacdb86a2311333de1ca73d94ae5280/Documentation/design-docs/standalone-gc-loading.md).|
 
-## Interop
-
-|Variable name|Variable value|Description|
-|--|--|--|
-|`AllowDComReflection`|0 or 1|Enables (1) or disables (0, the default value) the ability to marshal blocked reflection types by out-of-process DCOM clients.|
-|`InteropLogArguments`|Enables (1) or disables (0, the default value) logging of all pinned arguments passed to an interop call.|
-
 ## Networking
 |Variable name|Variable value|Description|
 |--|--|--|

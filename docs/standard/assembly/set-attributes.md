@@ -37,10 +37,28 @@ Assembly attributes are values that provide information about an assembly. The a
   
  The following code example shows how to apply the version and culture attributes to an assembly.  
   
- [!code-cpp[AssemblyDelaySignAttribute#3](../../../samples/snippets/cpp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cpp/source2.cpp#3)]
- [!code-csharp[AssemblyDelaySignAttribute#3](../../../samples/snippets/csharp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cs/source2.cs#3)]
- [!code-vb[AssemblyDelaySignAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyDelaySignAttribute/vb/source2.vb#3)]  
-  
+# [C++](#tab/cpp)
+```cpp
+// Set version number for the assembly.
+[assembly:AssemblyVersionAttribute("4.3.2.1")];
+// Set culture as German.
+[assembly:AssemblyCultureAttribute("de")];
+```
+# [C#](#tab/csharp)
+```csharp
+// Set version number for the assembly.
+[assembly:AssemblyVersionAttribute("4.3.2.1")]
+// Set culture as German.
+[assembly:AssemblyCultureAttribute("de")]
+```
+# [Visual Basic](#tab/vb)
+```vb
+' Set version number for the assembly.
+<Assembly:AssemblyVersionAttribute("4.3.2.1")>
+' Set culture as German.
+<Assembly:AssemblyCultureAttribute("de")>
+```
+---
 ## Informational attributes  
  You can use informational attributes to provide additional company or product information for an assembly. The following table describes the informational attributes you can apply to an assembly.  
   
@@ -76,10 +94,23 @@ Assembly attributes are values that provide information about an assembly. The a
   
  The following code example shows the attributes to apply when using delay signing to create a strong-named assembly with a public key file called *myKey.snk*.  
   
- [!code-cpp[AssemblyDelaySignAttribute#4](../../../samples/snippets/cpp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cpp/source2.cpp#4)]
- [!code-csharp[AssemblyDelaySignAttribute#4](../../../samples/snippets/csharp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cs/source2.cs#4)]
- [!code-vb[AssemblyDelaySignAttribute#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyDelaySignAttribute/vb/source2.vb#4)]  
-  
+# [C++](#tab/cpp)
+```cpp
+[assembly:AssemblyKeyFileAttribute("myKey.snk")];
+[assembly:AssemblyDelaySignAttribute(true)];
+```
+# [C#](#tab/csharp)
+```csharp
+[assembly:AssemblyKeyFileAttribute("myKey.snk")]
+[assembly:AssemblyDelaySignAttribute(true)]
+```
+# [Visual Basic](#tab/vb)
+```vb
+<Assembly:AssemblyKeyFileAttribute("myKey.snk")>
+<Assembly:AssemblyDelaySignAttribute(True)>
+```
+---
+
 ## See also
 
 - [Create assemblies](create.md)

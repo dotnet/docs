@@ -63,13 +63,137 @@ The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayPr
  Multiple versions of the same assembly can be loaded into the same application domain. This practice is not recommended, because it can lead to type assignment problems. See [Best practices for assembly loading](../../framework/deployment/best-practices-for-assembly-loading.md).  
   
 ### What the event handler should not do  
- The primary rule for handling the <xref:System.AppDomain.AssemblyResolve> event is that you should not try to return an assembly you do not recognize. When you write the handler, you should know which assemblies might cause the event to be raised. Your handler should return null for other assemblies.  
-  
+The primary rule for handling the <xref:System.AppDomain.AssemblyResolve> event is that you should not try to return an assembly you do not recognize. When you write the handler, you should know which assemblies might cause the event to be raised. Your handler should return null for other assemblies.  
+
 > [!IMPORTANT]
 >  Beginning with the .NET Framework 4, the <xref:System.AppDomain.AssemblyResolve> event is raised for satellite assemblies. This change affects an event handler that was written for an earlier version of the .NET Framework, if the handler tries to resolve all assembly load requests. Event handlers that ignore assemblies they do not recognize are not affected by this change: They return null, and normal fallback mechanisms are followed.  
-  
- When loading an assembly, the event handler must not use any of the <xref:System.AppDomain.Load%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method overloads that can cause the <xref:System.AppDomain.AssemblyResolve> event to be raised recursively, because this can lead to a stack overflow. (See the list provided earlier in this topic.) This happens even if you provide exception handling for the load request, because no exception is thrown until all event handlers have returned. Thus, the following code results in a stack overflow if `MyAssembly` is not found:  
-  
+
+When loading an assembly, the event handler must not use any of the <xref:System.AppDomain.Load%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method overloads that can cause the <xref:System.AppDomain.AssemblyResolve> event to be raised recursively, because this can lead to a stack overflow. (See the list provided earlier in this topic.) This happens even if you provide exception handling for the load request, because no exception is thrown until all event handlers have returned. Thus, the following code results in a stack overflow if `MyAssembly` is not found:  
+
+# [C++](#tab/cpp)
+```cpp
+using namespace System;
+using namespace System::Reflection;
+
+ref class Example
+{
+internal:
+    static Assembly^ MyHandler(Object^ source, ResolveEventArgs^ e) 
+    {
+        Console::WriteLine("Resolving {0}", e->Name);
+        return Assembly::Load(e->Name);
+    }
+};
+
+void main()
+{
+    AppDomain^ ad = AppDomain::CreateDomain("Test");
+    ad->AssemblyResolve += gcnew ResolveEventHandler(&Example::MyHandler);
+
+    try
+    {
+        Object^ obj = ad->CreateInstanceAndUnwrap(
+            "MyAssembly, version=1.2.3.4, culture=neutral, publicKeyToken=null",
+            "MyType");
+    } 
+    catch (Exception^ ex)
+    {
+        Console::WriteLine(ex->Message);
+    }
+}
+
+/* This example produces output similar to the following:
+
+Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+...
+Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+
+Process is terminated due to StackOverflowException.
+ */
+```
+# [C#](#tab/csharp)
+```csharp
+using System;
+using System.Reflection;
+
+class BadExample
+{
+    static void Main()
+    {
+        AppDomain ad = AppDomain.CreateDomain("Test");
+        ad.AssemblyResolve += MyHandler;
+
+        try
+        {
+            object obj = ad.CreateInstanceAndUnwrap(
+                "MyAssembly, version=1.2.3.4, culture=neutral, publicKeyToken=null",
+                "MyType");
+        } 
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+
+    static Assembly MyHandler(object source, ResolveEventArgs e) 
+    {
+        Console.WriteLine("Resolving {0}", e.Name);
+        return Assembly.Load(e.Name);
+    }
+} 
+
+/* This example produces output similar to the following:
+
+Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+...
+Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+
+Process is terminated due to StackOverflowException.
+ */
+```
+# [Visual Basic](#tab/vb)
+```vb
+Imports System
+Imports System.Reflection
+
+Class BadExample
+
+    Shared Sub Main()
+    
+        Dim ad As AppDomain = AppDomain.CreateDomain("Test")
+        AddHandler ad.AssemblyResolve, AddressOf MyHandler
+
+        Try
+            Dim obj As object = ad.CreateInstanceAndUnwrap(
+                "MyAssembly, version=1.2.3.4, culture=neutral, publicKeyToken=null",
+                "MyType")
+        Catch ex As Exception
+            Console.WriteLine(ex.Message)
+        End Try
+    End Sub
+
+    Shared Function MyHandler(ByVal source As Object, _
+                              ByVal e As ResolveEventArgs) As Assembly
+        Console.WriteLine("Resolving {0}", e.Name)
+        Return Assembly.Load(e.Name)
+    End Function
+End Class
+
+' This example produces output similar to the following:
+'
+'Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+'Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+'...
+'Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+'Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
+'
+'Process is terminated due to StackOverflowException.
+```
+---
  [!code-cpp[AssemblyResolveRecursive#1](../../../samples/snippets/cpp/VS_Snippets_CLR/assemblyresolverecursive/cpp/example.cpp#1)]
  [!code-csharp[AssemblyResolveRecursive#1](../../../samples/snippets/csharp/VS_Snippets_CLR/assemblyresolverecursive/cs/example.cs#1)]
  [!code-vb[AssemblyResolveRecursive#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/assemblyresolverecursive/vb/example.vb#1)]  

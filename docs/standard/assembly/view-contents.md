@@ -26,18 +26,56 @@ To display the contents of an assembly using *Ildasm.exe*, type **ildasm** \<*as
 ildasm Hello.exe  
 ```  
 
-To view assembly manifest information, double-click the **MANIFEST** icon in the MSIL Disassembler window.  
+To view assembly manifest information, double-click the **Manifest** icon in the MSIL Disassembler window.  
   
 ## Example  
- The following example starts with a basic "Hello, World" program. After compiling the program, use *Ildasm.exe* to disassemble the *Hello.exe* assembly and view the assembly manifest.  
-  
- [!code-cpp[Conceptual.Assembly.Contents#1](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.assembly.contents/cpp/source.cpp#1)]
- [!code-csharp[Conceptual.Assembly.Contents#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.assembly.contents/cs/source.cs#1)]
- [!code-vb[Conceptual.Assembly.Contents#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.assembly.contents/vb/source.vb#1)]  
-  
- Running the command *ildasm.exe* on the *Hello.exe* assembly and double-clicking the MANIFEST icon in the IL DASM window produces the following output:  
-  
-```  
+The following example starts with a basic "Hello World" program. After compiling the program, use *Ildasm.exe* to disassemble the *Hello.exe* assembly and view the assembly manifest.  
+
+# [C++](#tab/cpp)
+```cpp
+using namespace System;
+
+class MainApp
+{
+public:
+    static void Main()
+    {
+        Console::WriteLine("Hello World using C++/CLI!");
+    }
+};
+
+int main()
+{
+    MainApp::Main();
+}
+```
+# [C#](#tab/csharp)
+```csharp
+using System;
+
+class MainApp
+{
+    public static void Main()
+    {
+        Console.WriteLine("Hello World using C#!");
+    }
+}
+```
+# [Visual Basic](#tab/vb)
+```vb
+Imports System
+
+Class MainApp
+    Public Shared Sub Main()
+        Console.WriteLine("Hello World using Visual Basic!")
+    End Sub
+End Class
+```
+---
+
+Running the command *ildasm.exe* on the *Hello.exe* assembly and double-clicking the **Manifest** icon in the MSIL Disassembler window produces the following output:  
+
+```cmd
 // Metadata version: v4.0.30319  
 .assembly extern mscorlib  
 {  

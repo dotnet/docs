@@ -27,40 +27,49 @@ To sign an assembly with a strong name, you must have a public/private key pair.
 
 ## Create a key pair
 
-1. At the command prompt, type the following command:
+To create a key pair, at a command prompt, type the following command:
 
-     **sn –k** \<*file name*>
+**sn –k** \<*file name*>
 
-     In this command, *file name* is the name of the output file containing the key pair.
+In this command, *file name* is the name of the output file containing the key pair.
 
- The following example creates a key pair called *sgKey.snk*.
+The following example creates a key pair called *sgKey.snk*.
 
 ```
 sn -k sgKey.snk
 ```
 
- If you intend to delay sign an assembly and you control the whole key pair (which is unlikely outside test scenarios), you can use the following commands to generate a key pair and then extract the public key from it into a separate file. First, create the key pair:
+If you intend to delay sign an assembly and you control the whole key pair (which is unlikely outside test scenarios), you can use the following commands to generate a key pair and then extract the public key from it into a separate file. First, create the key pair:
 
 ```
 sn -k keypair.snk
 ```
 
- Next, extract the public key from the key pair and copy it to a separate file:
+Next, extract the public key from the key pair and copy it to a separate file:
 
 ```
 sn -p keypair.snk public.snk
 ```
 
- Once you create the key pair, you must put the file where the strong name signing tools can find it.
+Once you create the key pair, you must put the file where the strong name signing tools can find it.
 
- When signing an assembly with a strong name, the [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md) looks for the key file relative to the current directory and to the output directory. When using command-line compilers, you can simply copy the key to the current directory containing your code modules.
+When signing an assembly with a strong name, the [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md) looks for the key file relative to the current directory and to the output directory. When using command-line compilers, you can simply copy the key to the current directory containing your code modules.
 
- If you are using an earlier version of Visual Studio that does not have a **Signing** tab in the project properties, the recommended key file location is the project directory with the file attribute specified as follows:
+If you are using an earlier version of Visual Studio that does not have a **Signing** tab in the project properties, the recommended key file location is the project directory with the file attribute specified as follows:
 
- [!code-cpp[AssemblyName_KeyPair#21](../../../samples/snippets/cpp/VS_Snippets_CLR/AssemblyName_KeyPair/CPP/keyfileattrib.cpp#21)]
- [!code-csharp[AssemblyName_KeyPair#21](../../../samples/snippets/csharp/VS_Snippets_CLR/AssemblyName_KeyPair/CS/keyfileattrib.cs#21)]
- [!code-vb[AssemblyName_KeyPair#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyName_KeyPair/VB/keyfileattrib.vb#21)]
-
+# [C++](#tab/cpp)
+```cpp
+[assembly:AssemblyKeyFileAttribute("keyfile.snk")];
+```
+# [C#](#tab/csharp)
+```csharp
+[assembly:AssemblyKeyFileAttribute("keyfile.snk")]
+```
+# [Visual Basic](#tab/vb)
+```vb
+<Assembly:AssemblyKeyFileAttribute("keyfile.snk")>
+```
+---
 ## See also
 
 - [Create and use strong-named assemblies](create-use-strong-named.md)

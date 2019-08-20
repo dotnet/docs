@@ -23,47 +23,60 @@ The process for referencing types or resources in a strong-named assembly is usu
 >  A strong-named assembly can only use types from other strong-named assemblies. Otherwise, the security of the strong-named assembly would be compromised.  
   
 ## Make a compile-time reference to a strong-named assembly  
-  
-1. At the command prompt, type the following command:  
-  
-     \<*compiler command*> **/reference:**\<*assembly name*>  
-  
-     In this command, *compiler command* is the compiler command for the language you are using, and *assembly name* is the name of the strong-named assembly being referenced. You can also use other compiler options, such as the **/t:library** option for creating a library assembly.  
-  
- The following example creates an assembly called *myAssembly.dll* that references a strong-named assembly called *myLibAssembly.dll* from a code module called *myAssembly.cs*.  
-  
+
+At a command prompt, type the following command:  
+
+\<*compiler command*> **/reference:**\<*assembly name*>  
+
+In this command, *compiler command* is the compiler command for the language you are using, and *assembly name* is the name of the strong-named assembly being referenced. You can also use other compiler options, such as the **/t:library** option for creating a library assembly.  
+
+The following example creates an assembly called *myAssembly.dll* that references a strong-named assembly called *myLibAssembly.dll* from a code module called *myAssembly.cs*.  
+
 ```cmd  
 csc /t:library myAssembly.cs /reference:myLibAssembly.dll  
 ```  
-  
+
 ## Make a run-time reference to a strong-named assembly  
   
-1. When you make a run-time reference to a strong-named assembly (for example, by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> method), you must use the display name of the referenced strong-named assembly. The syntax of a display name is as follows:  
-  
-     \<*assembly name*>**,** \<*version number*>**,** \<*culture*>**,** \<*public key token*>  
-  
-     For example:  
-  
-    ```  
-    myDll, Version=1.1.0.0, Culture=en, PublicKeyToken=03689116d3a4ae33   
-    ```  
-  
-     In this example, `PublicKeyToken` is the hexadecimal form of the public key token. If there is no culture value, use `Culture=neutral`.  
-  
- The following code example shows how to use this information with the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.  
-  
- [!code-cpp[Assembly.Load1#3](../../../samples/snippets/cpp/VS_Snippets_CLR/Assembly.Load1/CPP/load2.cpp#3)]
- [!code-csharp[Assembly.Load1#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Assembly.Load1/CS/load2.cs#3)]
- [!code-vb[Assembly.Load1#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Assembly.Load1/VB/load2.vb#3)]  
-  
- You can print the hexadecimal format of the public key and public key token for a specific assembly by using the following [Strong Name (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) command:  
-  
- **sn -Tp \<** *assembly* **>**  
-  
- If you have a public key file, you can use the following command instead (note the difference in case on the command-line option):  
-  
- **sn -tp \<** *public key file* **>**  
-  
+When you make a run-time reference to a strong-named assembly, for example by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> method, you must use the display name of the referenced strong-named assembly. The syntax of a display name is as follows:  
+
+\<*assembly name*>**,** \<*version number*>**,** \<*culture*>**,** \<*public key token*>  
+
+For example:  
+
+```  
+myDll, Version=1.1.0.0, Culture=en, PublicKeyToken=03689116d3a4ae33   
+```  
+
+In this example, `PublicKeyToken` is the hexadecimal form of the public key token. If there is no culture value, use `Culture=neutral`.  
+
+The following code example shows how to use this information with the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.  
+
+# [C++](#tab/cpp)
+```cpp
+Assembly^ myDll =
+    Assembly::Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1");
+```
+# [C#](#tab/csharp)
+```csharp
+Assembly myDll =
+    Assembly.Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1");
+```
+# [Visual Basic](#tab/vb)
+```vb
+Dim myDll As Assembly = _
+    Assembly.Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1")
+```
+---
+
+You can print the hexadecimal format of the public key and public key token for a specific assembly by using the following [Strong Name (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) command:  
+
+**sn -Tp \<** *assembly* **>**  
+
+If you have a public key file, you can use the following command instead (note the difference in case on the command-line option):  
+
+**sn -tp \<** *public key file* **>**  
+
 ## See also
 
 - [Create and use strong-named assemblies](create-use-strong-named.md)

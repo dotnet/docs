@@ -1,3 +1,3 @@
 
 > [!IMPORTANT]
-> The Desktop Guide documentation for WPF is under construction.
+> The Desktop Guide documentation is under construction.

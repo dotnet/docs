@@ -8,24 +8,17 @@ helpviewer_keywords:
   - "ElementHost control"
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
 # Walkthrough: Create new WPF content on Windows Forms at design time
 
 This article shows you how to create a Windows Presentation Foundation (WPF) control for use in your Windows Forms-based applications.
 
-In this walkthrough, you perform the following tasks:
-
-- Create the project.
-
-- Create a new WPF control.
-
-- Add the new WPF control to a Windows Form. The WPF control is hosted in an <xref:System.Windows.Forms.Integration.ElementHost> control.
-
 ## Prerequisites
 
-You need the following components to complete this walkthrough:
-
-- Visual Studio
+You need Visual Studio to complete this walkthrough.
 
 ## Create the project
 
@@ -45,17 +38,17 @@ To create a new WPF control:
 
 1. In **Solution Explorer**, add a new **WPF User Control Library (.NET Framework)** project to the solution. Use the default name for the control library, `WpfControlLibrary1`. The default control name is `UserControl1.xaml`.
 
-     Adding the new control has the following effects:
+   Adding the new control has the following effects:
 
-    - File UserControl1.xaml is added.
+   - File UserControl1.xaml is added.
 
-    - Either file UserControl1.xaml.cs or UserControl1.xaml.vb is added. This file contains the code-behind for event handlers and other implementation.
+   - File UserControl1.xaml.cs (or UserControl1.xaml.vb) is added. This file contains the code-behind for event handlers and other implementation.
 
-    - References to WPF assemblies are added.
+   - References to WPF assemblies are added.
 
-    - File UserControl1.xaml opens in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)].
+   - File UserControl1.xaml opens in the WPF Designer for Visual Studio.
 
-2. In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).
+2. In Design view, make sure that `UserControl1` is selected.
 
 3. In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to **200**.
 
@@ -63,8 +56,8 @@ To create a new WPF control:
 
 5. In the **Properties** window, set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content**.
 
-    > [!NOTE]
-    > In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control is used here for illustrative purposes only.
+   > [!NOTE]
+   > In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control is used here for illustrative purposes only.
 
 6. Build the project.
 

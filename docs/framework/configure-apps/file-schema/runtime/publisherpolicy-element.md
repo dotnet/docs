@@ -59,7 +59,7 @@ Specifies whether the runtime applies publisher policy.
   
  The default setting for the **apply** attribute is **yes**. Setting the **apply** attribute to **no** overrides any previous **yes** settings for an assembly.  
   
- Permission is required for an application to explicitly ignore publisher policy using the [\<publisherPolicy apply="no"/>](../../../../../docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md) element in the application configuration file. The permission is granted by setting the <xref:System.Security.Permissions.SecurityPermissionFlag> flag on the <xref:System.Security.Permissions.SecurityPermission>. For more information, see [Assembly Binding Redirection Security Permission](../../../../../docs/framework/configure-apps/assembly-binding-redirection-security-permission.md).  
+ Permission is required for an application to explicitly ignore publisher policy using the [\<publisherPolicy apply="no"/>](publisherpolicy-element.md) element in the application configuration file. The permission is granted by setting the <xref:System.Security.Permissions.SecurityPermissionFlag> flag on the <xref:System.Security.Permissions.SecurityPermission>. For more information, see [Assembly Binding Redirection Security Permission](../../assembly-binding-redirection-security-permission.md).  
   
 ## Example  
  The following example turns off publisher policy for the assembly, `myAssembly`.  
@@ -81,7 +81,7 @@ Specifies whether the runtime applies publisher policy.
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)
+- [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

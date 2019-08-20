@@ -89,7 +89,7 @@ The following example shows how to specify where the runtime can find an assembl
 
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Specifying an Assembly's Location](../../../../standard/assembly/location.md)
-- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Runtime settings schema](index.md)
+- [Configuration file schema](../index.md)
+- [Specify an assembly's location](../../../../standard/assembly/location.md)
+- [How the runtime locates assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

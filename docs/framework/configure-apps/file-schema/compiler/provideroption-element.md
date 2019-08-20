@@ -44,10 +44,10 @@ Specifies the compiler version attributes for a language provider.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|The root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
-|[\<system.codedom> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md)|Specifies compiler configuration settings for available language providers.|  
-|[\<compilers> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)|Container for compiler configuration elements; contains zero or more `<compiler>` elements.|  
-|[\<compiler> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)|Specifies the compiler configuration attributes for a language provider.|  
+|[\<configuration> Element](../configuration-element.md)|The root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
+|[\<system.codedom> Element](system-codedom-element.md)|Specifies compiler configuration settings for available language providers.|  
+|[\<compilers> Element](compilers-element.md)|Container for compiler configuration elements; contains zero or more `<compiler>` elements.|  
+|[\<compiler> Element](compiler-element.md)|Specifies the compiler configuration attributes for a language provider.|  
   
 ## Remarks  
  In the .NET Framework version 3.5, Code Document Object Model (CodeDOM) code providers can support provider-specific options by using the `<providerOption>` element.  
@@ -87,7 +87,7 @@ Specifies the compiler version attributes for a language provider.
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [\<compilers> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)
-- [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)
+- [Configuration File Schema](../index.md)
+- [\<compilers> Element](compilers-element.md)
+- [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md)
 - [compiler Element for compilers for compilation (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

@@ -10,7 +10,7 @@ ms.topic: overview
 
 This article provides a basic overview of Windows Presentation Foundation (WPF) as it relates to .NET Core. WPF for .NET is a UI framework that creates desktop client applications. The WPF development platform supports a broad set of application development features, including an application model, controls, graphics, and data binding. WPF uses the Extensible Application Markup Language (XAML) to provide a declarative model for application programming.
 
-[!INCLUDE [desktop guide under construction](../../../../includes/desktop-guide-wpf-preview-note.md)]
+[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-wpf-preview-note.md)]
 
 Windows Presentation Foundation (WPF) is only available for the Windows operating system. There are two implementations of WPF.
 

@@ -6,7 +6,7 @@ ms.assetid: c30e972b-1693-4e05-b115-c31831fdf9f2
 # How to: Share an assembly with other applications
 Assemblies can be private or shared: by default, most simple programs consist of a private assembly because they are not intended to be used by other applications.  
 
-In order to share an assembly with other applications, it must be placed in the [Global Assembly Cache (GAC)](../../framework/app-domains/gac.md).  
+In order to share an assembly with other applications, it must be placed in the [global assembly cache (GAC)](../../framework/app-domains/gac.md).  
   
 To share an assembly:
   
@@ -16,7 +16,7 @@ To share an assembly:
   
 3. Assign version information to your assembly. For more information, see [Assembly versioning](versioning.md).  
   
-4. Add your assembly to the Global Assembly Cache. For more information, see [How to: Install an assembly into the Global Assembly Cache](install-into-gac.md).  
+4. Add your assembly to the global assembly cache. For more information, see [How to: Install an assembly into the global assembly cache](install-into-gac.md).  
   
 5. Access the types contained in the assembly from other applications. For more information, see [How to: Reference a strong-named assembly](reference-strong-named.md).  
   

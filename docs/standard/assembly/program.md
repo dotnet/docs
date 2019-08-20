@@ -50,13 +50,13 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [Delay-sign an assembly](delay-sign.md)  
  Describes how to delay-sign an assembly.  
   
- [Work with assemblies and the Global Assembly Cache](../../framework/app-domains/working-with-assemblies-and-the-gac.md)  
+ [Work with assemblies and the global assembly cache](../../framework/app-domains/working-with-assemblies-and-the-gac.md)  
  Describes how and why you add assemblies to the global assembly cache, and includes how-to topics.  
   
  [How to: View assembly contents](view-contents.md)  
  Describes how to use the MSIL Disassembler (Ildasm.exe) to view assembly contents.  
   
- [Type forwarding in the Common Language Runtime](type-forwarding.md)  
+ [Type forwarding in the common language runtime](type-forwarding.md)  
  Describes how to use type forwarding to move a type into a different assembly without breaking existing applications.  
   
 ## Reference  

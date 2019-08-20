@@ -34,7 +34,7 @@ Assemblies have the following properties:
 
 - You can load an assembly just to inspect it by calling the method <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A?displayProperty=nameWithType>.
 
-## Assemblies in the Common Language Runtime
+## Assemblies in the common language runtime
 
 Assemblies provide the common language runtime with the information it needs to be aware of type implementations. To the runtime, a type does not exist outside the context of an assembly. 
 

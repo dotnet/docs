@@ -26,6 +26,6 @@ An assembly's location determines whether the common language runtime can locate
 ## See also
 
 - [Create assemblies](create.md)
-- [Global Assembly Cache](../../framework/app-domains/gac.md)
+- [Global assembly cache](../../framework/app-domains/gac.md)
 - [How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Program with assemblies](program.md)

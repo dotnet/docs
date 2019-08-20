@@ -1,5 +1,5 @@
 ---
-title: "Type forwarding in the Common Language Runtime"
+title: "Type forwarding in the common language runtime"
 ms.date: "08/20/2019"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ ms.assetid: 51f8ffa3-c253-4201-a3d3-c4fad85ae097
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Type forwarding in the Common Language Runtime
+# Type forwarding in the common language runtime
 Type forwarding allows you to move a type to another assembly without having to recompile applications that use the original assembly.  
   
  For example, suppose an application uses the `Example` class in an assembly named *Utility.dll*. The developers of *Utility.dll* might decide to refactor the assembly, and in the process they might move the `Example` class to another assembly. If the old version of *Utility.dll* is replaced by the new version of *Utility.dll* and its companion assembly, the application that uses the `Example` class fails because it cannot locate the `Example` class in the new version of *Utility.dll*.  
@@ -25,21 +25,22 @@ Type forwarding allows you to move a type to another assembly without having to 
  There are four steps to forwarding a type:  
   
 1. Move the source code for the type from the original assembly to the destination assembly.  
-  
+   
 2. In the assembly where the type used to be located, add a <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> for the type that was moved. The following code shows the attribute for a type named `Example` that was moved.  
-  
-# [C#](#tab/csharp)
-    ```csharp  
+   
+   # [C#](#tab/csharp)
+   ```csharp  
     [assembly:TypeForwardedToAttribute(typeof(Example))]  
-    ```  
-  
-# [C++](#tab/cpp)
-    ```cpp  
+   ```  
+   
+   # [C++](#tab/cpp)
+   ```cpp  
     [assembly:TypeForwardedToAttribute(Example::typeid)]  
-    ```  
-  
+   ```
+   ---
+   
 3. Compile the assembly that now contains the type.  
-  
+   
 4. Recompile the assembly where the type used to be located, with a reference to the assembly that now contains the type. For example, if you are compiling a C# file from the command line, use the [/reference (C# compiler options)](../../csharp/language-reference/compiler-options/reference-compiler-option.md) option to specify the assembly that contains the type. In C++, use the [#using](/cpp/preprocessor/hash-using-directive-cpp) directive in the source file to specify the assembly that contains the type.  
   
 ## See also

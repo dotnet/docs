@@ -22,7 +22,7 @@ Strong-naming an assembly creates a unique identity for the assembly, and can pr
 >  Do not rely on strong names for security. They provide a unique identity only.  
   
 ## Why strong-name your assemblies?  
- When you reference a strong-named assembly, you can expect certain benefits, such as versioning and naming protection. Strong-named assemblies can be installed in the Global Assembly Cache, which is required to enable some scenarios.  
+ When you reference a strong-named assembly, you can expect certain benefits, such as versioning and naming protection. Strong-named assemblies can be installed in the global assembly cache, which is required to enable some scenarios.  
   
  Strong-named assemblies are useful in the following scenarios:  
   
@@ -38,7 +38,7 @@ Strong-naming an assembly creates a unique identity for the assembly, and can pr
   
 ## See also
 
-- [Global Assembly Cache](../../framework/app-domains/gac.md)
+- [Global assembly cache](../../framework/app-domains/gac.md)
 - [How to: Sign an assembly with a strong name](sign-strong-name.md)
 - [Sn.exe (Strong Name tool)](../../framework/tools/sn-exe-strong-name-tool.md)
 - [Create and use strong-named assemblies](create-use-strong-named.md)

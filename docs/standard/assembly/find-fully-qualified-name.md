@@ -14,9 +14,9 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Determine an assembly's fully qualified name
-To discover the fully qualified name of an assembly in the global assembly cache (GAC), use the Global Assembly Cache Tool ([Gacutil.exe](../../framework/tools/gacutil-exe-gac-tool.md)). See [How to: View the contents of the Global Assembly Cache](../../framework/app-domains/how-to-view-the-contents-of-the-gac.md).  
+To discover the fully qualified name of an assembly in the global assembly cache, use the Global Assembly Cache tool ([Gacutil.exe](../../framework/tools/gacutil-exe-gac-tool.md)). See [How to: View the contents of the global assembly cache](../../framework/app-domains/how-to-view-the-contents-of-the-gac.md).  
   
- For assemblies that are not in the GAC, you can get the fully qualified assembly name in a number of ways: can use code to output the information to the console or to a variable, or you can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.  
+ For assemblies that are not in the global assembly cache, you can get the fully qualified assembly name in a number of ways: can use code to output the information to the console or to a variable, or you can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.  
   
 - If the assembly is already loaded by the application, you can retrieve the value of the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property to get the fully qualified name. You can use this approach whether or not the assembly is in the GAC. The example provides an illustration.  
   
@@ -41,6 +41,6 @@ To discover the fully qualified name of an assembly in the global assembly cache
 - [Assembly names](names.md)
 - [Create assemblies](create.md)
 - [Create and use strong-named assemblies](create-use-strong-named.md)
-- [Global Assembly Cache](../../framework/app-domains/gac.md)
+- [Global assembly cache](../../framework/app-domains/gac.md)
 - [How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Program with assemblies](program.md)

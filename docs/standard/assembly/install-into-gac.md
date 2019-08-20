@@ -14,20 +14,20 @@ ms.author: "ronpet"
 ---
 # How to: Install an assembly into the global assembly cache
 
-The global assembly cache (GAC) stores assemblies that several applications share. Install an assembly into the [global assembly cache](../../framework/app-domains/gac.md) with one of the following components: 
+The global assembly cache stores assemblies that several applications share. Install an assembly into the [global assembly cache](../../framework/app-domains/gac.md) with one of the following components: 
 - [Windows Installer](#windows-installer)
-- [Global assembly cache tool](#global-assembly-cache-tool)
+- [Global Assembly Cache tool](#global-assembly-cache-tool)
 
 > [!IMPORTANT]
-> You can install only strong-named assemblies into the GAC. For information about how to create a strong-named assembly, see [How to: Sign an assembly with a strong name](sign-strong-name.md).
+> You can install only strong-named assemblies into the global assembly cache. For information about how to create a strong-named assembly, see [How to: Sign an assembly with a strong name](sign-strong-name.md).
 
 ## Windows Installer
 
 [Windows Installer](/windows/desktop/Msi/installation-of-assemblies-to-the-global-assembly-cache), the Windows installation engine, is the recommended way to add assemblies to the global assembly cache. Windows Installer provides reference counting of assemblies in the global assembly cache and other benefits. To create an installer package for Windows Installer, use the [WiX toolset extension for Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
 
-## Global assembly cache tool
+## Global Assembly Cache tool
 
-You can use the [global assembly cache tool (gacutil.exe)](../../framework/tools/gacutil-exe-gac-tool.md) to add assemblies to the global assembly cache and to view the contents of the global assembly cache.
+You can use the [Global Assembly Cache tool (gacutil.exe)](../../framework/tools/gacutil-exe-gac-tool.md) to add assemblies to the global assembly cache and to view the contents of the global assembly cache.
 
    > [!NOTE]
    > *Gacutil.exe* is for development purposes only. Don't use it to install production assemblies into the global assembly cache.
@@ -55,5 +55,5 @@ gacutil -i hello.dll
 
 - [Work with assemblies and the global assembly cache](../../framework/app-domains/working-with-assemblies-and-the-gac.md)
 - [How to: Remove an assembly from the global assembly cache](../../framework/app-domains/how-to-remove-an-assembly-from-the-gac.md)
-- [Gacutil.exe (Global assembly cache tool)](../../framework/tools/gacutil-exe-gac-tool.md)
+- [Gacutil.exe (Global Assembly Cache tool)](../../framework/tools/gacutil-exe-gac-tool.md)
 - [How to: Sign an assembly with a strong name](sign-strong-name.md)

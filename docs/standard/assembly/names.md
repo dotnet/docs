@@ -56,6 +56,6 @@ System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e08
 - [How to: Determine an assembly's fully qualified name](find-fully-qualified-name.md)
 - [Create assemblies](create.md)
 - [Strong-named assemblies](strong-named.md)
-- [Global Assembly Cache](../../framework/app-domains/gac.md)
+- [Global assembly cache](../../framework/app-domains/gac.md)
 - [How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Program with assemblies](program.md)

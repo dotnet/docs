@@ -51,7 +51,7 @@ The first step is to create the type equivalence interface assembly.
    
 1. In **Solution Explorer**, right-click the *Class1.cs* or *Class1.vb* file, select **Rename**, and rename the file from *Class1* to *ISampleInterface*. Respond **Yes** to the prompt to also rename the class to `ISampleInterface`. This class represents the public interface for the class.
    
-1. In **Solution Explorer**, right-click **TypeEquivalenceInterface**, and then select **Properties**. 
+1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project, and then select **Properties**. 
    
 1. Select **Build** on the left pane of the **Properties** screen, and set the **Output path** to a location on your computer, such as *C:\TypeEquivalenceSample*. You use the same location throughout this walkthrough. 
    
@@ -122,7 +122,7 @@ Next, create the type equivalence runtime class.
    
 1. In **Solution Explorer**, right-click the *Class1.cs* or *Class1.vb* file, select **Rename**, and rename the file from *Class1* to *SampleClass*. Respond **Yes** to the prompt to also rename the class to `SampleClass`. This class implements the `ISampleInterface` interface.
    
-1. In **Solution Explorer**, right-click **TypeEquivalenceInterface** and select **Properties**. 
+1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Properties**. 
    
 1. Select **Build** on the left pane of the **Properties** screen, and then set the **Output path** to the same location you used for the TypeEquivalenceInterface project, for example, *C:\TypeEquivalenceSample*.
    
@@ -197,7 +197,7 @@ Finally, create a type equivalence client program that references the interface 
    
 1. In the **Configure your new project** dialog box, under **Project name**, type *TypeEquivalenceClient*, and then select **Create**. The new project is created.
    
-1. In **Solution Explorer**, right-click **TypeEquivalenceClient** and select **Properties**. 
+1. In **Solution Explorer**, right-click the **TypeEquivalenceClient** project and select **Properties**. 
    
 1. Select **Build** on the left pane of the **Properties** screen, and then set the **Output path** to the same location you used for the TypeEquivalenceInterface project, for example, *C:\TypeEquivalenceSample*.
    
@@ -266,7 +266,7 @@ Now, modify the interface assembly, and change its version.
 
 1. In Visual Studio, select **File** > **Open** > **Project/Solution**, and open the **TypeEquivalenceInterface** project.
    
-1. In **Solution Explorer**, right-click **TypeEquivalenceInterface** and select **Properties**. 
+1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Properties**. 
    
 1. Select **Application** on the left pane of the **Properties** screen, and then select **Assembly Information**. 
    
@@ -294,7 +294,7 @@ Also modify the runtime class and update its version.
 
 1. In Visual Studio, select **File** > **Open** > **Project/Solution**, and open the **TypeEquivalenceRuntime** project.
    
-1. In **Solution Explorer**, right-click **TypeEquivalenceRuntime** and select **Properties**. 
+1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Properties**. 
    
 1. Select **Application** on the left pane of the **Properties** screen, and then select **Assembly Information**. 
    

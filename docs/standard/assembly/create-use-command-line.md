@@ -17,7 +17,7 @@ An assembly, or a dynamic linking library (DLL), is linked to your program at ru
 ## Example  
 
 # [C#](#tab/csharp)
-```csharp  
+```csharp
 // File: Add.cs   
 namespace UtilityMethods  
 {  
@@ -77,10 +77,10 @@ class TestCode
     1234 + 5678 = 6912  
     1234 * 5678 = 7006652          
 */  
-```  
+```
 
 # [Visual Basic](#tab/vb)
-```vb  
+```vb
 ' File: Add.vb   
 Namespace UtilityMethods  
     Public Class AddClass  
@@ -135,39 +135,39 @@ End Module
 ' Calling methods from MathLibrary.DLL:  
 ' 1234 + 5678 = 6912  
 ' 1234 * 5678 = 7006652  
-```  
+```
 
 This file contains the algorithm that uses the DLL methods, `Add` and `Multiply`. It starts with parsing the arguments entered from the command line, `num1` and `num2`. Then it calculates the sum by using the `Add` method on the `AddClass` class, and the product by using the `Multiply` method on the `MultiplyClass` class.  
 
 Notice that the `using` directive (C#) or `Imports` statement (Visual Basic) at the beginning of the file enables you to use the unqualified class names to reference the DLL methods at compile time, as follows:  
 
 # [C#](#tab/csharp)
-```csharp  
+```csharp
 MultiplyClass.Multiply(num1, num2);  
-```  
+```
 
 # [Visual Basic](#tab/vb)
-```vb  
+```vb
 MultiplyClass.Multiply(num1, num2)  
-```  
+```
 
 Otherwise, you have to use the fully qualified names, as follows:  
 
 # [C#](#tab/csharp)
-```csharp  
+```csharp
 UtilityMethods.MultiplyClass.Multiply(num1, num2);  
-```  
+```
 
 # [Visual Basic](#tab/vb)
-```vb  
+```vb
 UtilityMethods.MultiplyClass.Multiply(num1, num2)  
-```  
+```
 
 ## Execution  
  To run the program, enter the name of the EXE file, followed by two numbers, as follows:  
-  
- `TestCode 1234 5678`  
-  
+
+`TestCode 1234 5678`  
+
 ## See also
 
 - [C# programming guide](../../csharp/programming-guide/index.md)

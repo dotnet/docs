@@ -36,12 +36,12 @@ The following procedures show how to create single-file assemblies using command
  The following example creates an assembly named *myCode.exe* from a code module called `myCode`.
 
 # [C#](#tab/csharp)
-```cmd
+```
 csc myCode.cs
 ```
 
 # [Visual Basic](#tab/vb)
-```cmd
+```
 vbc myCode.vb
 ```
 
@@ -56,12 +56,12 @@ vbc myCode.vb
  The following example creates an assembly named *myAssembly.exe* from a code module called `myCode`.
 
 # [C#](#tab/csharp)
-```cmd
+```
 csc -out:myAssembly.exe myCode.cs
 ```
 
 # [Visual Basic](#tab/vb)
-```cmd
+```
 vbc -out:myAssembly.exe myCode.vb
 ```
 
@@ -79,12 +79,12 @@ To create a library assembly:
  The following example creates a library assembly named *myCodeAssembly.dll* from a code module called `myCode`.
 
 # [C#](#tab/csharp)
-```cmd
+```
 csc -out:myCodeLibrary.dll -t:library myCode.cs
 ```
 
 # [Visual Basic](#tab/vb)
-```cmd
+```
 vbc -out:myCodeLibrary.dll -t:library myCode.vb
 ```
 

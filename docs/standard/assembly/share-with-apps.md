@@ -23,5 +23,5 @@ To share an assembly:
 ## See also
 
 - [C# programming guide](../../csharp/programming-guide/index.md)
-- [Programming concepts (Visual Basic)](../../../../visual-basic/programming-guide/concepts/index.md)
+- [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)
 - [Program with assemblies](program.md)

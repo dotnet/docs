@@ -70,7 +70,7 @@ ms.assetid: 14b05ccf-bcd8-4045-9bae-f7679cd98711
 ## SplitButton Control Example  
  The following image illustrates a SplitButton control type in a data grid control.  
   
- ![Split button](media/uiauto-splitbutton-detailed.gif "uiauto_splitbutton_detailed")  
+ ![Split button](./media/uiauto-splitbutton-detailed.gif "uiauto_splitbutton_detailed")  
   
  The Control View and the Content View of the UI Automation tree that pertains to the data grid and split button controls is displayed below. The control patterns for each automation element are shown in parentheses.  
   

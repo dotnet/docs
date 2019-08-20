@@ -32,7 +32,7 @@ An endpoint can be addressed by one or more SOAP headers in addition to its basi
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<endpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md)|Configures different types of endpoints.|  
+|[\<endpoint>](endpoint-of-client.md)|Configures different types of endpoints.|  
   
 ## Remarks  
  The optional headers provide more detailed addressing information to identify or interact with the endpoint. For example, headers can indicate how to process an incoming message, where the endpoint should send a reply message, or which instance of a service to use to process an incoming message from a particular user when multiple instances are available.  
@@ -43,4 +43,4 @@ An endpoint can be addressed by one or more SOAP headers in addition to its basi
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Headers%2A>
 - <xref:System.ServiceModel.Channels.AddressHeaderCollection>
-- [Endpoints: Addresses, Bindings, and Contracts](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+- [Endpoints: Addresses, Bindings, and Contracts](../../feature-details/endpoints-addresses-bindings-and-contracts.md)

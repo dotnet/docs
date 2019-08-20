@@ -34,7 +34,7 @@ Specifies the URI for which the transport channel should be created. For more in
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
 ## See also
 

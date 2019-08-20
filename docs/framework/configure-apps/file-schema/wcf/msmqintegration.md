@@ -71,17 +71,17 @@ Specifies a MSMQ transport for custom binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.MsmqIntegrationElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
-- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Transports](../../feature-details/transports.md)
+- [Queues in WCF](../../feature-details/queues-in-wcf.md)
+- [Choosing a Transport](../../feature-details/choosing-a-transport.md)
+- [Bindings](../../bindings.md)
+- [Extending Bindings](../../extending/extending-bindings.md)
+- [Custom Bindings](../../extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

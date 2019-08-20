@@ -37,20 +37,20 @@ endpointBehaviors section
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-scopedcertificates-element.md)|Adds an X.509 certificate to the collection of scoped certificates.|  
+|[\<add>](add-of-scopedcertificates-element.md)|Adds an X.509 certificate to the collection of scoped certificates.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<serviceCertificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)|Specifies a certificate to use when authenticating a service to the client.|  
+|[\<serviceCertificate>](servicecertificate-of-servicecredentials.md)|Specifies a certificate to use when authenticating a service to the client.|  
   
 ## Remarks  
  This collection enables the client to configure the service certificates to use based on the URL of the service it communicates with. This is especially useful in issued token scenarios where a client can be communicating to multiple services (the end service as well as intermediary security token services). For bindings that use certificate-based message security, this certificate is used to encrypt messages to the service, and is expected to be used by the service for signing replies to the client.  
   
  If a binding requires a certificate for the service and no specific certificate for the service URL is found in the ScopedCertificates, the default certificate is used.  
   
- For more information, see the "Scoped Certificates" section of [How to: Create a Federated Client](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md).  
+ For more information, see the "Scoped Certificates" section of [How to: Create a Federated Client](../../feature-details/how-to-create-a-federated-client.md).  
   
 ## Example  
  The following example specifies a service certificate for the client to use when communicating with endpoints whose domain name is `http://www.contoso.com` over the HTTP protocol.  
@@ -74,8 +74,8 @@ endpointBehaviors section
 - <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A>
-- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [How to: Create a Federated Client](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
-- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-scopedcertificates-element.md)
-- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Working with Certificates](../../feature-details/working-with-certificates.md)
+- [How to: Create a Federated Client](../../feature-details/how-to-create-a-federated-client.md)
+- [\<add>](add-of-scopedcertificates-element.md)
+- [Securing Clients](../../securing-clients.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)

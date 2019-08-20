@@ -31,14 +31,14 @@ This element enables the endpoint behavior that makes it possible to consume the
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies the set of endpoint behaviors.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies the set of endpoint behaviors.|  
   
 ## Remarks  
- This behavior should only be used in conjunction with either the [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) standard binding, or the [\<webMessageEncoding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webmessageencoding.md) binding element.  For more information on this behavior, see <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>.  
+ This behavior should only be used in conjunction with either the [\<webHttpBinding>](webhttpbinding.md) standard binding, or the [\<webMessageEncoding>](webmessageencoding.md) binding element.  For more information on this behavior, see <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>.  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.WebScriptEnablingElement>
 - <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>
-- [AJAX Integration and JSON Support](../../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md)
-- [\<webHttp>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttp.md)
+- [AJAX Integration and JSON Support](../../feature-details/ajax-integration-and-json-support.md)
+- [\<webHttp>](webhttp.md)

@@ -56,19 +56,19 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<allowAccounts>](../../../../../docs/framework/configure-apps/file-schema/wcf/allowaccounts.md)|A collection of configuration elements that contain a `securityIdentifier` attribute to specify user accounts for processes that host WCF services, and are granted connection access to the sharing service.|  
+|[\<allowAccounts>](allowaccounts.md)|A collection of configuration elements that contain a `securityIdentifier` attribute to specify user accounts for processes that host WCF services, and are granted connection access to the sharing service.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.serviceModel.activation>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel-activation.md)|Contains configuration settings for the listener process SMSvcHost.exe.|  
+|[\<system.serviceModel.activation>](system-servicemodel-activation.md)|Contains configuration settings for the listener process SMSvcHost.exe.|  
   
 ## Remarks  
- For more information on port sharing, see [Net.TCP Port Sharing](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md). To understand how to configure the port sharing service, see [Configuring the Net.TCP Port Sharing Service](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md).  
+ For more information on port sharing, see [Net.TCP Port Sharing](../../feature-details/net-tcp-port-sharing.md). To understand how to configure the port sharing service, see [Configuring the Net.TCP Port Sharing Service](../../feature-details/configuring-the-net-tcp-port-sharing-service.md).  
   
 ## See also
 
 - <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>
-- [Net.TCP Port Sharing](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)
-- [Configuring the Net.TCP Port Sharing Service](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)
+- [Net.TCP Port Sharing](../../feature-details/net-tcp-port-sharing.md)
+- [Configuring the Net.TCP Port Sharing Service](../../feature-details/configuring-the-net-tcp-port-sharing-service.md)

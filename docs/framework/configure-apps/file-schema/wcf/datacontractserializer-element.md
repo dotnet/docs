@@ -41,15 +41,15 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md)|A collection of settings for the behavior of a service.|  
-|[\<system.runtime.serialization>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-runtime-serialization.md)|Represents the root element for the <xref:System.Runtime.Serialization> namespace section and contains elements for setting options of the <xref:System.Runtime.Serialization.DataContractSerializer>.|  
+|[\<behavior>](behavior-of-servicebehaviors.md)|A collection of settings for the behavior of a service.|  
+|[\<system.runtime.serialization>](system-runtime-serialization.md)|Represents the root element for the <xref:System.Runtime.Serialization> namespace section and contains elements for setting options of the <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
 ## Remarks  
  As stated in the Introduction of this topic, this is the second hierarchy in which the \<X509Extension> element occurs.  
   
- [\<system.runtime.serialization>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-runtime-serialization.md)  
+ [\<system.runtime.serialization>](system-runtime-serialization.md)  
   
- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)  
+ [\<dataContractSerializer>](datacontractserializer-element.md)  
   
  For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
@@ -58,5 +58,5 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
 - <xref:System.ServiceModel.Configuration.DataContractSerializerElement>
-- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
-- [Data Transfer and Serialization](../../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)
+- [Data Contract Known Types](../../feature-details/data-contract-known-types.md)
+- [Data Transfer and Serialization](../../feature-details/data-transfer-and-serialization.md)

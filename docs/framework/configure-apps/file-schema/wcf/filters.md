@@ -40,5 +40,5 @@ The following is an example of how to configure a filter that records only messa
 - <xref:System.ServiceModel.Configuration.XPathMessageFilterElementCollection>
 - <xref:System.ServiceModel.Configuration.XPathMessageFilterElement>
 - <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>
-- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)
-- [\<messageLogging>](../../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)
+- [Configuring Message Logging](../../diagnostics/configuring-message-logging.md)
+- [\<messageLogging>](messagelogging.md)

@@ -43,7 +43,7 @@ Defines the security settings for a binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|binding|The binding element of the [\<netNamedPipeBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netnamedpipebinding.md).|  
+|binding|The binding element of the [\<netNamedPipeBinding>](netnamedpipebinding.md).|  
   
 ## See also
 
@@ -51,9 +51,9 @@ Defines the security settings for a binding.
 - <xref:System.ServiceModel.NetNamedPipeBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement>
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Selecting a Credential Type](../../feature-details/selecting-a-credential-type.md)
+- [Bindings](../../bindings.md)
+- [Configuring System-Provided Bindings](../../feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

@@ -42,10 +42,10 @@ Specifies authentication settings for peer certificate used by a message sender.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<peer>](../../../../../docs/framework/configure-apps/file-schema/wcf/peer-of-servicecredentials.md)|Specifies the current credentials for a peer node.|  
+|[\<peer>](peer-of-servicecredentials.md)|Specifies the current credentials for a peer node.|  
   
 ## Remarks  
- This element must be configured if message authentication is chosen. For output channels, each message is signed using the certificate provided by [\<certificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/certificate-element.md). All messages, before delivered to the application, are checked against the message credential using the validator specified by the `customCertificateValidatorType` attribute of this element. The validator can either accept or reject the credential.  
+ This element must be configured if message authentication is chosen. For output channels, each message is signed using the certificate provided by [\<certificate>](certificate-element.md). All messages, before delivered to the application, are checked against the message credential using the validator specified by the `customCertificateValidatorType` attribute of this element. The validator can either accept or reject the credential.  
   
 ## See also
 
@@ -53,8 +53,8 @@ Specifies authentication settings for peer certificate used by a message sender.
 - <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>
 - <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>
-- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
+- [Working with Certificates](../../feature-details/working-with-certificates.md)
+- [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md)
 - [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
 - [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
-- [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
+- [Securing Peer Channel Applications](../../feature-details/securing-peer-channel-applications.md)

@@ -25,15 +25,15 @@ The `comContracts` configuration section contains elements that allow you to spe
   
  When this section is empty, the service initialization applies a default namespace and contract name taken from the supporting COM interface ID.  
   
- In addition, you can use the [\<exposedMethod>](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) element to specify COM+ methods that are exposed when the interface on a COM+ component is exposed as a Web service. You can also use the [\<persistableTypes>](../../../../../docs/framework/configure-apps/file-schema/wcf/persistabletypes.md) to specify persistable types used in integration. Finally, you can use the [\<userDefinedType>](../../../../../docs/framework/configure-apps/file-schema/wcf/userdefinedtype.md) element to include User Defined Types (UDT) that are to be included in the service contract.  
+ In addition, you can use the [\<exposedMethod>](exposedmethod.md) element to specify COM+ methods that are exposed when the interface on a COM+ component is exposed as a Web service. You can also use the [\<persistableTypes>](persistabletypes.md) to specify persistable types used in integration. Finally, you can use the [\<userDefinedType>](userdefinedtype.md) element to include User Defined Types (UDT) that are to be included in the service contract.  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.ComContractElementCollection>
 - <xref:System.ServiceModel.Configuration.ComContractElement>
-- [\<exposedMethod>](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md)
-- [\<persistableTypes>](../../../../../docs/framework/configure-apps/file-schema/wcf/persistabletypes.md)
-- [\<userDefinedType>](../../../../../docs/framework/configure-apps/file-schema/wcf/userdefinedtype.md)
-- [\<comContract>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontract.md)
-- [Integrating with COM+ Applications](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)
-- [How to: Configure COM+ Service Settings](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
+- [\<exposedMethod>](exposedmethod.md)
+- [\<persistableTypes>](persistabletypes.md)
+- [\<userDefinedType>](userdefinedtype.md)
+- [\<comContract>](comcontract.md)
+- [Integrating with COM+ Applications](../../feature-details/integrating-with-com-plus-applications.md)
+- [How to: Configure COM+ Service Settings](../../feature-details/how-to-configure-com-service-settings.md)

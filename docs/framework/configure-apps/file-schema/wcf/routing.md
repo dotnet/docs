@@ -47,8 +47,8 @@ None
 
 |     | Description |
 | --- | ----------- |
-| [**\<filters>**](../../../../../docs/framework/configure-apps/file-schema/wcf/filters-of-routing.md) | Contains a set of routing filters that determine the type of Windows Communication Foundation (WCF) MessageFilter will be used when evaluating incoming messages. |
-| [**\<filterTables>**](../../../../../docs/framework/configure-apps/file-schema/wcf/filtertables.md) | Contains mappings between the routing filters and the target endpoints to specify which endpoint to use when the filter matches. |
+| [**\<filters>**](filters-of-routing.md) | Contains a set of routing filters that determine the type of Windows Communication Foundation (WCF) MessageFilter will be used when evaluating incoming messages. |
+| [**\<filterTables>**](filtertables.md) | Contains mappings between the routing filters and the target endpoints to specify which endpoint to use when the filter matches. |
 
 ### Parent elements
 

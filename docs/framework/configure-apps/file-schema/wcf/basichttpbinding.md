@@ -65,7 +65,7 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
 |`maxBufferSize`|An integer value that specifies the maximum size, in bytes, of a buffer that stores messages while they are processed for an endpoint configured with this binding. The default value is 65,536 bytes.|  
 |`maxReceivedMessageSize`|A positive integer that defines the maximum message size, in bytes, including headers, for a message that can be received on a channel configured with this binding. The sender receives a SOAP fault if the message is too large for the receiver. The receiver drops the message and creates an entry of the event in the trace log. The default is 65,536 bytes.|  
 |`messageEncoding`|Defines the encoder used to encode the SOAP message. Valid values include the following:<br /><br /> -   Text: Use a text message encoder.<br />-   Mtom: Use a Message Transmission Organization Mechanism 1.0 (MTOM) encoder.<br /><br /> The default is Text. This attribute is of type <xref:System.ServiceModel.WSMessageEncoding>.|  
-|`name`|A string that contains the configuration name of the binding. This value should be unique because it is used as an identification for the binding. Each binding has a `name` and `namespace` attribute that together uniquely identify it in the metadata of the service. In addition, this name is unique among bindings of the same type. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).|  
+|`name`|A string that contains the configuration name of the binding. This value should be unique because it is used as an identification for the binding. Each binding has a `name` and `namespace` attribute that together uniquely identify it in the metadata of the service. In addition, this name is unique among bindings of the same type. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../simplified-configuration.md) and [Simplified Configuration for WCF Services](../../samples/simplified-configuration-for-wcf-services.md).|  
 |`namespace`|Specifies the XML namespace of the binding. The default value is "http://tempuri.org/Bindings". Each binding has a `name` and `namespace` attribute that together uniquely identify it in the metadata of the service.|  
 |`openTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for an open operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
 |`proxyAddress`|A URI that contains the address of the HTTP proxy. If `useSystemWebProxy` is set to `true`, this setting must be `null`. The default is `null`.|  
@@ -79,19 +79,19 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement>.|  
+|[\<security>](security-of-basichttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement>.|  
 |[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
+|[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
  The BasicHttpBinding uses HTTP as the transport for sending SOAP 1.1 messages. A service can use this binding to expose endpoints that conform to WS-I BP 1.1, such as those that ASMX clients consume. Similarly, a client can use the BasicHttpBinding to communicate with services exposing endpoints that conform to WS-I BP 1.1, such as ASMX Web services or services configured with the BasicHttpBinding.  
   
- Security is turned off by default, but can be added setting the mode attribute of the [\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md) child element to a value other than `None`. It uses a "Text" message encoding and UTF-8 text encoding by default.  
+ Security is turned off by default, but can be added setting the mode attribute of the [\<security>](security-of-basichttpbinding.md) child element to a value other than `None`. It uses a "Text" message encoding and UTF-8 text encoding by default.  
   
 ## Example  
  The following example demonstrates the use of <xref:System.ServiceModel.BasicHttpBinding> that provides HTTP communication and maximum interoperability with first- and second-generation Web services. The binding is specified in the configuration files for the client and service. The binding type is specified using the `binding` attribute of the `<endpoint>` element. If you want to configure the basic binding and change some of its settings, it is necessary to define a binding configuration. The endpoint must reference the binding configuration by name by using the `bindingConfiguration` attribute of the `<endpoint>` element, as shown in the following configuration code for the service.  
@@ -165,7 +165,7 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
 </system.serviceModel>
 ```  
   
- For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+ For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../simplified-configuration.md) and [Simplified Configuration for WCF Services](../../samples/simplified-configuration-for-wcf-services.md).  
   
 ## See also
 
@@ -173,7 +173,7 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
 - <xref:System.ServiceModel.Channels.BindingElement>
 - <xref:System.ServiceModel.BasicHttpBinding>
 - <xref:System.ServiceModel.Configuration.BasicHttpBindingElement>
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Bindings](../../bindings.md)
+- [Configuring System-Provided Bindings](../../feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

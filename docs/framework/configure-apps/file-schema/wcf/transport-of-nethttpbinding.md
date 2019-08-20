@@ -74,7 +74,7 @@ Defines properties that control authentication parameters for the HTTP transport
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-nethttpbinding.md)|Defines the security capabilities for the [\<netHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nethttpbinding.md).|  
+|[\<security>](security-of-nethttpbinding.md)|Defines the security capabilities for the [\<netHttpBinding>](nethttpbinding.md).|  
   
 ## Example  
  The following example demonstrates the use of SSL transport security with the basic binding. By default, the basic binding supports HTTP communication.  
@@ -116,8 +116,8 @@ Defines properties that control authentication parameters for the HTTP transport
 - <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>
 - <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>
 - <xref:System.ServiceModel.HttpTransportSecurity>
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Bindings](../../bindings.md)
+- [Configuring System-Provided Bindings](../../feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

@@ -43,19 +43,19 @@ endpointBehaviors section
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<localIssuer>](../../../../../docs/framework/configure-apps/file-schema/wcf/localissuer.md)|Specifies the address of the local issuer of the token and the binding used to communicate with the endpoint.|  
-|[\<issuerChannelBehaviors>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuerchannelbehaviors-element.md)|Specifies the endpoint behaviors to use when contacting a local issuer.|  
+|[\<localIssuer>](localissuer.md)|Specifies the address of the local issuer of the token and the binding used to communicate with the endpoint.|  
+|[\<issuerChannelBehaviors>](issuerchannelbehaviors-element.md)|Specifies the endpoint behaviors to use when contacting a local issuer.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate a client to a service.|  
+|[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate a client to a service.|  
   
 ## Remarks  
- An issued token is a custom credential type used, for example, when authenticating with a Secure Token Service (STS) in a federated scenario. By default, the token is a SAML token. For more information, see [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md). and [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
+ An issued token is a custom credential type used, for example, when authenticating with a Secure Token Service (STS) in a federated scenario. By default, the token is a SAML token. For more information, see [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md). and [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md).  
   
- This section contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
+ This section contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../feature-details/how-to-configure-a-local-issuer.md).  
   
 ## See also
 
@@ -65,10 +65,10 @@ endpointBehaviors section
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement.IssuedToken%2A>
 - <xref:System.ServiceModel.Description.ClientCredentials.IssuedToken%2A>
 - <xref:System.ServiceModel.Security.IssuedTokenClientCredential>
-- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
-- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
-- [How to: Create a Federated Client](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
-- [How to: Configure a Local Issuer](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)
-- [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
+- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
+- [Securing Clients](../../securing-clients.md)
+- [How to: Create a Federated Client](../../feature-details/how-to-create-a-federated-client.md)
+- [How to: Configure a Local Issuer](../../feature-details/how-to-configure-a-local-issuer.md)
+- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)

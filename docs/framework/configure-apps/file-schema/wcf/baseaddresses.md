@@ -33,17 +33,17 @@ Represents a collection of `baseAddress` elements, which are base addresses for 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-baseaddresses.md)|A configuration element that specifies the base addresses used by the service host.|  
+|[\<add>](add-of-baseaddresses.md)|A configuration element that specifies the base addresses used by the service host.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<host>](../../../../../docs/framework/configure-apps/file-schema/wcf/host.md)|A configuration element that specifies settings for a service host.|  
+|[\<host>](host.md)|A configuration element that specifies settings for a service host.|  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
 - <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>
-- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [Hosting](../../feature-details/hosting.md)

@@ -35,17 +35,17 @@ Represents a collection of configuration elements that identify the type of a pa
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-transportconfigurationtype.md)|Adds a configuration element that identifies the type of a particular transport.|  
+|[\<add>](add-of-transportconfigurationtype.md)|Adds a configuration element that identifies the type of a particular transport.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<serviceHostingEnvironment>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|Defines the type the service hosting environment instantiates for a particular transport.|  
+|[\<serviceHostingEnvironment>](servicehostingenvironment.md)|Defines the type the service hosting environment instantiates for a particular transport.|  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection>
-- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [Hosting](../../feature-details/hosting.md)

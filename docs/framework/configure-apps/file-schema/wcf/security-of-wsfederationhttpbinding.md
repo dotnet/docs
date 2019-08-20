@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a8e5e854-b8dc-4921-843d-34b6a4a6a8ba
 ---
 # \<security> of \<wsFederationHttpBinding>
-Defines the security settings of the [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
+Defines the security settings of the [\<wsFederationHttpBinding>](wsfederationhttpbinding.md).  
   
  \<system.ServiceModel>  
 \<bindings>  
@@ -93,13 +93,13 @@ Defines the security settings of the [\<wsFederationHttpBinding>](../../../../..
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<message>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-wsfederationhttpbinding.md)|Defines the settings for the message-level security. This element is of type <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>.|  
+|[\<message>](message-element-of-wsfederationhttpbinding.md)|Defines the settings for the message-level security. This element is of type <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](wsdualhttpbinding.md).|  
   
 ## See also
 
@@ -107,10 +107,10 @@ Defines the security settings of the [\<wsFederationHttpBinding>](../../../../..
 - <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security%2A>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement>
-- [How to: Create a WSFederationHttpBinding](../../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [How to: Create a WSFederationHttpBinding](../../feature-details/how-to-create-a-wsfederationhttpbinding.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Selecting a Credential Type](../../feature-details/selecting-a-credential-type.md)
+- [Bindings](../../bindings.md)
+- [Configuring System-Provided Bindings](../../feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

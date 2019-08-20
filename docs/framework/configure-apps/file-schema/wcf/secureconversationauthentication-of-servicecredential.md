@@ -35,7 +35,7 @@ Specifies the settings for a secure conversation service.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<serviceCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation-related settings.|  
+|[\<serviceCredentials>](servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation-related settings.|  
   
 ## Remarks  
  Use this configuration element to specify a list of known claim types for the Security Context Token (SCT) cookies serialization, as well as an encoder to encode and secure cookies information. For more information on SCT, see <xref:System.ServiceModel.Security.SecureConversationServiceCredential>.  

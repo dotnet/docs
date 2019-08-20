@@ -43,19 +43,19 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<declaredTypes>](../../../../../docs/framework/configure-apps/file-schema/wcf/declaredtypes.md)|Contains the known types that the <xref:System.Runtime.Serialization.DataContractSerializer> uses when deserializing.<br /><br /> For more information about data contracts and known types, see [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).|  
+|[\<declaredTypes>](declaredtypes.md)|Contains the known types that the <xref:System.Runtime.Serialization.DataContractSerializer> uses when deserializing.<br /><br /> For more information about data contracts and known types, see [Data Contract Known Types](../../feature-details/data-contract-known-types.md).|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.runtime.serialization>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-runtime-serialization.md)|Represents the root element for the <xref:System.Runtime.Serialization> namespace section and contains elements for setting options of the <xref:System.Runtime.Serialization.DataContractSerializer>.|  
+|[\<system.runtime.serialization>](system-runtime-serialization.md)|Represents the root element for the <xref:System.Runtime.Serialization> namespace section and contains elements for setting options of the <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
 ## Remarks  
- For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer> and [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer> and [Data Contract Known Types](../../feature-details/data-contract-known-types.md).  
   
 ## See also
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
-- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [Data Contract Known Types](../../feature-details/data-contract-known-types.md)

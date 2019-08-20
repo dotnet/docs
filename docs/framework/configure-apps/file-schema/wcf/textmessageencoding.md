@@ -43,7 +43,7 @@ Specifies the character encoding and message versioning used for text-based XML 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. Windows Communication Foundation (WCF) includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
@@ -65,9 +65,9 @@ Specifies the character encoding and message versioning used for text-based XML 
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
 - <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>
-- [Choosing a Message Encoder](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
-- [Message Encoding](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Choosing a Message Encoder](../../feature-details/choosing-a-message-encoder.md)
+- [Message Encoding](message-encoding.md)
+- [Bindings](../../bindings.md)
+- [Extending Bindings](../../extending/extending-bindings.md)
+- [Custom Bindings](../../extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

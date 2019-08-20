@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9def5a35-475d-40d6-b716-ccdbd93863c7
 ---
 # \<message> of \<netHttpBinding>
-Defines the settings for message-level security of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
+Defines the settings for message-level security of the [\<basicHttpBinding>](basichttpbinding.md).  
   
  \<system.ServiceModel>  
 \<bindings>  
@@ -115,8 +115,8 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
   
 ## See also
 
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Bindings](../../bindings.md)
+- [Configuring System-Provided Bindings](../../feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

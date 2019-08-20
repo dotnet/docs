@@ -47,7 +47,7 @@ Defines the transport security settings.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md)|Defines the transport security settings for queued transports.|  
+|[\<security>](security-of-netmsmqbinding.md)|Defines the transport security settings for queued transports.|  
   
 ## See also
 
@@ -55,9 +55,9 @@ Defines the transport security settings.
 - <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Transport%2A>
 - <xref:System.ServiceModel.NetMsmqSecurity.Transport%2A>
 - <xref:System.ServiceModel.MsmqTransportSecurity>
-- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Queues in WCF](../../feature-details/queues-in-wcf.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Bindings](../../bindings.md)
+- [Configuring System-Provided Bindings](../../feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

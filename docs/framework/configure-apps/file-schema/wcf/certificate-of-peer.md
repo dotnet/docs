@@ -42,12 +42,12 @@ Specifies a certificate used by a peer.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<peer>](../../../../../docs/framework/configure-apps/file-schema/wcf/peer-of-servicecredentials.md)|Specifies the current credentials for a peer node.|  
+|[\<peer>](peer-of-servicecredentials.md)|Specifies the current credentials for a peer node.|  
   
 ## Remarks  
  This configuration element contains an `X509Certificate2` instance used when authenticating neighbors in the peer mesh.  
   
- For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
+ For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md).  
   
 ## See also
 
@@ -56,9 +56,9 @@ Specifies a certificate used by a peer.
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateElement>
 - <xref:System.ServiceModel.Security.PeerCredential.Certificate%2A>
 - <xref:System.ServiceModel.Security.PeerCredential>
-- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
+- [Working with Certificates](../../feature-details/working-with-certificates.md)
+- [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md)
 - [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
 - [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
-- [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Securing Peer Channel Applications](../../feature-details/securing-peer-channel-applications.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)

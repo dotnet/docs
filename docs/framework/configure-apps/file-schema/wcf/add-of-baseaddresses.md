@@ -38,11 +38,11 @@ Represents a configuration element that specifies the base addresses used by the
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<baseAddresses>](../../../../../docs/framework/configure-apps/file-schema/wcf/baseaddresses.md)|A collection of `baseAddress` elements.|  
+|[\<baseAddresses>](baseaddresses.md)|A collection of `baseAddress` elements.|  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
 - <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>
-- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [Hosting](../../feature-details/hosting.md)

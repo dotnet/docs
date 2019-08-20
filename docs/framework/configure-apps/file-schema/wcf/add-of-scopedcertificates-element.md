@@ -69,14 +69,14 @@ endpointBehaviors section
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<scopedCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/scopedcertificates-element.md)|Represents a collection of X.509 certificates provided by specific services (scoped) for authentication.|  
+|[\<scopedCertificates>](scopedcertificates-element.md)|Represents a collection of X.509 certificates provided by specific services (scoped) for authentication.|  
   
 ## Remarks  
  This element enables the client to configure a service certificate to use based on the URL of the service it communicates with. This is especially useful in issued token scenarios where a client can be communicating to multiple services (the end service as well as intermediary security token services). For bindings that use certificate-based message security, this certificate is used to encrypt messages to the service, and is expected to be used by the service for signing replies to the client.  
   
  If a binding requires a certificate for the service and no specific certificate for the service URL is found in the ScopedCertificates, the default certificate is used.  
   
- For more information, see the "Scoped Certificates" section of [How to: Create a Federated Client](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md).  
+ For more information, see the "Scoped Certificates" section of [How to: Create a Federated Client](../../feature-details/how-to-create-a-federated-client.md).  
   
 ## Example  
  The following example adds an X.509 certificate the collection.  
@@ -108,7 +108,7 @@ endpointBehaviors section
 - <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A>
-- [How to: Create a Federated Client](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
-- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [How to: Create a Federated Client](../../feature-details/how-to-create-a-federated-client.md)
+- [Working with Certificates](../../feature-details/working-with-certificates.md)
+- [Securing Clients](../../securing-clients.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)

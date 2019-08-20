@@ -36,7 +36,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
 ## Remarks  
  See the <xref:System.Runtime.Serialization.DataContractSerializer> documentation for more information about known types.  
@@ -49,5 +49,5 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
 - <xref:System.ServiceModel.Configuration.DataContractSerializerElement>
-- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
-- [Data Transfer and Serialization](../../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)
+- [Data Contract Known Types](../../feature-details/data-contract-known-types.md)
+- [Data Transfer and Serialization](../../feature-details/data-transfer-and-serialization.md)

@@ -6,7 +6,7 @@ ms.assetid: 4aeccaf7-8f23-495c-aa5f-5bd8b5d4a10c
 # \<certificate> for \<identity>
 Specifies an X.509 certificate used to validate a server to a client.  
   
- For more information about setting the element value, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+ For more information about setting the element value, see [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md).  
   
  \<identity>  
 \<certificate>  
@@ -33,7 +33,7 @@ Specifies an X.509 certificate used to validate a server to a client.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|Specifies the identity of the service to be authenticated by the client.|  
+|[\<identity>](identity.md)|Specifies the identity of the service to be authenticated by the client.|  
   
 ## Example  
  The following code specifies the encoded representation of a certificate used to validate a server to a client.  
@@ -50,5 +50,5 @@ Specifies an X.509 certificate used to validate a server to a client.
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>
 - <xref:System.ServiceModel.EndpointIdentity>
-- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
-- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)
+- [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md)
+- [\<identity>](identity.md)

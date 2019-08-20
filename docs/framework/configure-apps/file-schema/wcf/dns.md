@@ -6,7 +6,7 @@ ms.assetid: 81819dae-4825-43b7-bccd-f16d2d3d2f06
 # \<dns>
 Specifies the expected identity of the server. This identity is valid for X509 Certificate authentication mode if the server’s certificate contains a DNS with the same value. It is also valid for Windows authentication mode if the SPN has the same value.  
   
- For more information about setting the element value, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+ For more information about setting the element value, see [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md).  
   
  \<identity>  
 \<dns>  
@@ -33,7 +33,7 @@ Specifies the expected identity of the server. This identity is valid for X509 C
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|Specifies the identity of the service to be authenticated by the client.|  
+|[\<identity>](identity.md)|Specifies the identity of the service to be authenticated by the client.|  
   
 ## Example  
  The following configuration code specifies the DNS of an X.509 certificate that is used to authenticate a server.  
@@ -50,5 +50,5 @@ Specifies the expected identity of the server. This identity is valid for X509 C
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>
 - <xref:System.ServiceModel.DnsEndpointIdentity>
-- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
-- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)
+- [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md)
+- [\<identity>](identity.md)

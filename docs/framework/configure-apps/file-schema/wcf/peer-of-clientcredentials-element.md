@@ -33,18 +33,18 @@ Specifies credentials used when authenticating peer-to-peer clients.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<certificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/certificate-element.md)|Specifies an X.509 certificate to use for signing and encrypting messages for peer-to-peer clients. .|  
-|[\<peerAuthentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/peerauthentication-element.md)|Specifies authentication options for peer clients.|  
-|[\<messageSenderAuthentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/messagesenderauthentication-element.md)|Specifies authentication options for message senders.|  
+|[\<certificate>](certificate-element.md)|Specifies an X.509 certificate to use for signing and encrypting messages for peer-to-peer clients. .|  
+|[\<peerAuthentication>](peerauthentication-element.md)|Specifies authentication options for peer clients.|  
+|[\<messageSenderAuthentication>](messagesenderauthentication-element.md)|Specifies authentication options for message senders.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate a client to a service.|  
+|[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate a client to a service.|  
   
 ## Remarks  
- This configuration element specifies the credentials that a peer node uses to authenticate itself to other nodes in the mesh, as well as authentication settings that a peer node uses to authenticate other peer nodes. For more information, see [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90)) and [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md).  
+ This configuration element specifies the credentials that a peer node uses to authenticate itself to other nodes in the mesh, as well as authentication settings that a peer node uses to authenticate other peer nodes. For more information, see [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90)) and [Securing Peer Channel Applications](../../feature-details/securing-peer-channel-applications.md).  
   
 ## See also
 
@@ -55,9 +55,9 @@ Specifies credentials used when authenticating peer-to-peer clients.
 - <xref:System.ServiceModel.Description.ClientCredentials>
 - <xref:System.ServiceModel.Description.ClientCredentials.Peer%2A>
 - <xref:System.ServiceModel.Security.PeerCredential>
-- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
-- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
+- [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md)
+- [Securing Clients](../../securing-clients.md)
 - [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
 - [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
-- [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Securing Peer Channel Applications](../../feature-details/securing-peer-channel-applications.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)

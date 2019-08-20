@@ -6,7 +6,7 @@ ms.assetid: 68032f69-149e-4613-bae4-18314d4fd294
 # \<userPrincipalName>
 Specifies the User Principal Name (UPN) of a service to be authenticated by the client.  
   
- For more information about setting the UPN, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+ For more information about setting the UPN, see [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md).  
   
 \<identity>  
 \<userPrincipalName>  
@@ -33,7 +33,7 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|Specifies the identity of the service to be authenticated by the client.|  
+|[\<identity>](identity.md)|Specifies the identity of the service to be authenticated by the client.|  
   
 ## Remarks  
  A secure Windows Communication Foundation (WCF) client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
@@ -53,5 +53,5 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>
 - <xref:System.ServiceModel.UpnEndpointIdentity>
-- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
-- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)
+- [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md)
+- [\<identity>](identity.md)

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9d710389-d9d8-4454-9bf2-da4ccda31cec
 ---
 # \<message> element of \<wsFederationHttpBinding>
-Defines the settings for the message-level security for the [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
+Defines the settings for the message-level security for the [\<wsFederationHttpBinding>](wsfederationhttpbinding.md).  
   
  \<system.ServiceModel>  
 \<bindings>  
@@ -110,16 +110,16 @@ Defines the settings for the message-level security for the [\<wsFederationHttpB
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<claimTypeRequirements>](../../../../../docs/framework/configure-apps/file-schema/wcf/claimtyperequirements-element.md)|Specifies a collection of claim types for this binding. Each element is of type <xref:System.ServiceModel.Configuration.ClaimTypeElement>.|  
+|[\<claimTypeRequirements>](claimtyperequirements-element.md)|Specifies a collection of claim types for this binding. Each element is of type <xref:System.ServiceModel.Configuration.ClaimTypeElement>.|  
 |issuer|Specifies an endpoint that issues a security token. This element is of type <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>.|  
 |issuerMetadata|Specifies the endpoint address of the issuer.|  
-|[\<tokenRequestParameters>](../../../../../docs/framework/configure-apps/file-schema/wcf/tokenrequestparameters.md)|A collection of token request parameters. Each parameter is an XML element.|  
+|[\<tokenRequestParameters>](tokenrequestparameters.md)|A collection of token request parameters. Each parameter is an XML element.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsfederationhttpbinding.md)|Defines the security settings for a binding.|  
+|[\<security>](security-of-wsfederationhttpbinding.md)|Defines the security settings for a binding.|  
   
 ## See also
 
@@ -127,8 +127,8 @@ Defines the settings for the message-level security for the [\<wsFederationHttpB
 - <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>
 - <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A>
 - <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Bindings](../../bindings.md)
+- [Configuring System-Provided Bindings](../../feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

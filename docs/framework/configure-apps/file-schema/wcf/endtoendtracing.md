@@ -40,7 +40,7 @@ A configuration element that allows you to enable and disable different aspects 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md)|Defines WCF settings for runtime inspection and control for the administrator.|  
+|[\<diagnostics>](diagnostics.md)|Defines WCF settings for runtime inspection and control for the administrator.|  
   
 ## See also
 
@@ -48,4 +48,4 @@ A configuration element that allows you to enable and disable different aspects 
 - <xref:System.ServiceModel.Diagnostics>
 - <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing%2A>
 - <xref:System.ServiceModel.Configuration.EndToEndTracingElement>
-- [End-to-End Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing.md)
+- [End-to-End Tracing](../../diagnostics/tracing/end-to-end-tracing.md)

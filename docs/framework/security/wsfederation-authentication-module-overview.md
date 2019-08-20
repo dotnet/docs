@@ -48,7 +48,7 @@ Windows Identity Foundation (WIF) includes support for federated authentication 
   
  The following diagram shows more detail on what happens when the user has authenticated to the STS and their security tokens are processed by the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>:  
   
- ![Timing for token processing with passive redirect](media/signinusingpassiveredirect-tokenprocessing.gif "SignInUsingPassiveRedirect_TokenProcessing")  
+ ![Timing for token processing with passive redirect](./media/signinusingpassiveredirect-tokenprocessing.gif "SignInUsingPassiveRedirect_TokenProcessing")  
   
  The following diagram shows more detail on what happens when the user’s security tokens have been serialized into cookies and are intercepted by the <xref:System.IdentityModel.Services.SessionAuthenticationModule>:  
   

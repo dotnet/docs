@@ -1,9 +1,6 @@
 ---
 title: "How to: Build a single-file assembly"
 ms.date: "08/20/2019"
-dev_langs:
-  - "csharp"
-  - "vb"
 helpviewer_keywords:
   - "assembly manifest, single-file assemblies"
   - "library assemblies"
@@ -27,40 +24,44 @@ The following procedures show how to create single-file assemblies using command
 
 ## Create an assembly with an .exe extension
 
-1. At the command prompt, type the following command:
+At the command prompt, type the following command:
 
-     \<*compiler command*> \<*module name*>
+\<*compiler command*> \<*module name*>
 
-     In this command, *compiler command* is the compiler command for the language used in your code module, and *module name* is the name of the code module to compile into the assembly.
+In this command, *compiler command* is the compiler command for the language used in your code module, and *module name* is the name of the code module to compile into the assembly.
 
- The following example creates an assembly named *myCode.exe* from a code module called `myCode`.
+The following example creates an assembly named *myCode.exe* from a code module called `myCode`.
 
 # [C#](#tab/csharp)
+
 ```
 csc myCode.cs
 ```
 
 # [Visual Basic](#tab/vb)
+
 ```
 vbc myCode.vb
 ```
 
 ## Create an assembly with an .exe extension and specify the output file name
 
-1. At the command prompt, type the following command:
+At the command prompt, type the following command:
 
-     \<*compiler command*> **/out:**\<*file name*> \<*module name*>
+\<*compiler command*> **/out:**\<*file name*> \<*module name*>
 
-     In this command, *compiler command* is the compiler command for the language used in your code module, *file name* is the output file name, and *module name* is the name of the code module to compile into the assembly.
+In this command, *compiler command* is the compiler command for the language used in your code module, *file name* is the output file name, and *module name* is the name of the code module to compile into the assembly.
 
- The following example creates an assembly named *myAssembly.exe* from a code module called `myCode`.
+The following example creates an assembly named *myAssembly.exe* from a code module called `myCode`.
 
 # [C#](#tab/csharp)
+
 ```
 csc -out:myAssembly.exe myCode.cs
 ```
 
 # [Visual Basic](#tab/vb)
+
 ```
 vbc -out:myAssembly.exe myCode.vb
 ```
@@ -68,22 +69,22 @@ vbc -out:myAssembly.exe myCode.vb
 ## Create library assemblies
  A library assembly is similar to a class library. It contains types that will be referenced by other assemblies, but it has no entry point to begin execution.
 
-To create a library assembly:
+To create a library assembly, at the command prompt, type the following command:
 
-1. At the command prompt, type the following command:
+\<*compiler command*> **-t:library** \<*module name*>
 
-     \<*compiler command*> **-t:library** \<*module name*>
+In this command, *compiler command* is the compiler command for the language used in your code module, and *module name* is the name of the code module to compile into the assembly. You can also use other compiler options, such as the **-out:** option.
 
-     In this command, *compiler command* is the compiler command for the language used in your code module, and *module name* is the name of the code module to compile into the assembly. You can also use other compiler options, such as the **-out:** option.
-
- The following example creates a library assembly named *myCodeAssembly.dll* from a code module called `myCode`.
+The following example creates a library assembly named *myCodeAssembly.dll* from a code module called `myCode`.
 
 # [C#](#tab/csharp)
+
 ```
 csc -out:myCodeLibrary.dll -t:library myCode.cs
 ```
 
 # [Visual Basic](#tab/vb)
+
 ```
 vbc -out:myCodeLibrary.dll -t:library myCode.vb
 ```

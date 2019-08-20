@@ -17,6 +17,7 @@ An assembly, or a dynamic linking library (DLL), is linked to your program at ru
 ## Example  
 
 # [C#](#tab/csharp)
+
 ```csharp
 // File: Add.cs   
 namespace UtilityMethods  
@@ -80,6 +81,7 @@ class TestCode
 ```
 
 # [Visual Basic](#tab/vb)
+
 ```vb
 ' File: Add.vb   
 Namespace UtilityMethods  
@@ -142,11 +144,13 @@ This file contains the algorithm that uses the DLL methods, `Add` and `Multiply`
 Notice that the `using` directive (C#) or `Imports` statement (Visual Basic) at the beginning of the file enables you to use the unqualified class names to reference the DLL methods at compile time, as follows:  
 
 # [C#](#tab/csharp)
+
 ```csharp
 MultiplyClass.Multiply(num1, num2);  
 ```
 
 # [Visual Basic](#tab/vb)
+
 ```vb
 MultiplyClass.Multiply(num1, num2)  
 ```
@@ -154,11 +158,13 @@ MultiplyClass.Multiply(num1, num2)
 Otherwise, you have to use the fully qualified names, as follows:  
 
 # [C#](#tab/csharp)
+
 ```csharp
 UtilityMethods.MultiplyClass.Multiply(num1, num2);  
 ```
 
 # [Visual Basic](#tab/vb)
+
 ```vb
 UtilityMethods.MultiplyClass.Multiply(num1, num2)  
 ```

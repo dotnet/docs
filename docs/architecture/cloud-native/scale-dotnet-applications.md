@@ -9,30 +9,29 @@ One of the most-often touted advantages of moving to a cloud hosting environment
 
 ## The simple solution: scaling up
 
-The process of upgrading existing servers to give them more resources (CPU, memory, disk I/O speed, network I/O speed) is known as *scaling up*. In cloud native applications, scaling up doesn't typically refer to purchasing and installing actual hardware on physical machines so much as choosing a more capable plan from a list of options available. Figure 2-1 shows several options available for Azure App Service Plans.
+The process of upgrading existing servers to give them more resources (CPU, memory, disk I/O speed, network I/O speed) is known as *scaling up*. In cloud native applications, scaling up doesn't typically refer to purchasing and installing actual hardware on physical machines so much as choosing a more capable plan from a list of options available. Cloud native apps typically scale up by modifying the VM size used to host the individual nodes in their Kubernetes node pool. Azure supports a wide variety of VM sizes running both [Windows](https://docs.microsoft.com/azure/virtual-machines/windows/sizes?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json) and [Linux](https://docs.microsoft.com/azure/virtual-machines/linux/sizes). To vertically scale your application, create a new node pool with a larger node VM size and then migrate workloads to the new pool. This requires [multiple node pools for your AKS cluster](https://docs.microsoft.com/azure/aks/use-multiple-node-pools), which is currently in preview.
 
-![App Service Plans](./media/azure-app-service-plans.png)
-**Figure 2-1**. App Service Plans
+## Scaling out Cloud Native apps
 
-Note that even among these plans, the actual hardware involved is abstracted. Each plan specifies a number of Azure Compute Units (ACU) that are dedicated to the plan, not specific hardware CPUs or cores that will be made available. Scaling up can quickly improve performance of an application, and can often be sufficient to respond to a small surge in traffic, but once the maximum plan is in place, scaling up is no longer an option. From there, you must look to scaling *out*.
+Cloud Native apps support scaling out by adding additional nodes or pods to service requests. This can be accomplished manually by adjusting configuration settings for the app (for example, [scaling a node pool](https://docs.microsoft.com/azure/aks/use-multiple-node-pools#scale-a-node-pool-manually)), or through *autoscaling*. Autoscaling adjusts the resources used by an app in order to respond to demand, similar to how a thermostat responds to temperature by calling for additional heating or cooling. When using autoscaling, manual scaling is disabled.
 
-## Scaling out App Services
+AKS clusters can scale in one of two ways:
 
-Azure App Service plans can be configured to *scale out*, either manually when specified by an administrator or automatically using a feature called *autoscale*. Scaling out refers to increasing the number of (identical) instances used to support an application, such that incoming traffic is spread among the instances. Theoretically, there is no limit to the number of instances that can be added in support of a particular application. Figure 2-2 shows how to manually specify the number of instances that will support a given App Service plan.
+- The [cluster autoscaler](https://docs.microsoft.com/azure/aks/cluster-autoscaler) watches for pods that can't be scheduled on nodes because of resource constraints. It adds additional nodes as required.
+- The **horizontal pod autoscaler** uses the Metrics Server in a Kubernetes cluster to monitor the resource demands of pods. If a service needs more resources, the autoscaler increases the number of pods.
 
-![Scaling out an App Service plan.](./media/scaling-out-an-app-service-plan.png)
-**Figure 2-2**. Scaling out an App Service plan.
+Figure 2-1 shows the relationship between these two scaling services.
 
-Autoscale is an Azure feature that can be enabled for App Services and other plans. It allows plan administrators to configure rules that dictate when additional instances should be added to or removed from the plan. Figure 2-3 shows an example set of rules that add an additional instance whenever the average CPU of all current instances exceeds 70%. A separate rule removes an instance whenever the average CPU of all current instances drops below 40%. The plan also supports upper and lower limits to prevent the pool from climbing out of control or dropping to zero, and by default there's a 5-minute delay between alterations so the plan isn't constantly adding and then immediately removing instances. Essentially, you can use these rules to act as a kind of thermostat for your application, where instead of regulating temperature with heating or cooling, you try to maintain a constant level of load across your app nodes. Autoscale adds and removes nodes as necessary to maintain this level.
+![Scaling out an App Service plan.](./media/aks-cluster-autoscaler.png)
+**Figure 2-1**. Scaling out an App Service plan.
 
-![Configuring autoscale for an App Service plan.](./media/configuring-autoscale-in-app-service-plans.png)
-**Figure 2-3**. Configuring autoscale for an App Service plan.
-
-Although Azure App Service plans work for a wide variety of apps, many complex business apps benefit from leveraging containers that can be built and tested locally and then deployed to the cloud. Simple container-based apps can still leverage App Service plans using Web App for Containers, but once multiple containers are needed to work in concert with one another, it's likely time to look to more powerful deployment options.
+These services can also decrease the number of pods or nodes as needed. These two services can work together and are often deployed together in a cluster. When combined, the horizontal pod autoscaler is focused on running the number of pods required to meet application demand. The cluster autoscaler is focused on running the number of nodes required to support the scheduled pods.
 
 ## References
 
-- [Web App for Containers](https://azure.microsoft.com/services/app-service/containers/)
+- [AKS Multiple Node Pools](https://docs.microsoft.com/azure/aks/use-multiple-node-pools)
+- [AKS Cluster Autoscaler](https://docs.microsoft.com/azure/aks/cluster-autoscaler)
+- [Tutorial: Scale applications in AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale)
 
 >[!div class="step-by-step"]
 >[Previous](azure-development-stack.md)

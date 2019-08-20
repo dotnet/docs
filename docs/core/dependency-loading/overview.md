@@ -19,7 +19,7 @@ In some applications dependencies are dynamically determined at runtime. In thes
 
 The <xref:System.Runtime.Loader.AssemblyLoadContext> API is central to the .NET Core loading design. This article provides a conceptual overview to the design.
 
-## Custom loading details
+## Loading details
 
 The loading algorithm details are covered briefly in several articles:
 - [Managed assembly loading algorithm](loading-managed.md)

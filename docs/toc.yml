@@ -440,6 +440,23 @@
       href: core/porting/winforms.md
     - name: Port WPF projects
       href: core/porting/wpf.md
+  - name: Dependency loading
+    items:
+    - name: Overview
+      href: core/dependency-loading/overview.md
+    - name: Understanding AssemblyLoadContext
+    - name: Loading details
+      items:
+      - name: Default dependency probing
+        href: core/dependency-loading/default-probing.md
+      - name: Loading managed assemblies
+        href: core/dependency-loading/loading-managed.md
+      - name: Loading satellite assemblies
+        href: core/dependency-loading/loading-uresources.md
+      - name: Loading unmanaged libraries
+        href: core/dependency-loading/loading-unmanaged.md
+    - name: Create a .NET Core application with plugins
+      href: core/tutorials/creating-app-with-plugin-support.md
   - name: Build .NET Core from source
     href: core/build/index.md
     items:

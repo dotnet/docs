@@ -30,7 +30,7 @@ When you create a service, you can use a Visual Studio project template called *
   
 2. In the **Properties** window, set the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property for your service.  
   
-     ![Set the ServiceName property.](media/windowsservice-servicename.PNG "WindowsService_ServiceName")  
+     ![Set the ServiceName property.](./media/windowsservice-servicename.PNG "WindowsService_ServiceName")  
   
     > [!NOTE]
     >  The value of the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property must always match the name recorded in the installer classes. If you change this property, you must update the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property of installer classes as well.  

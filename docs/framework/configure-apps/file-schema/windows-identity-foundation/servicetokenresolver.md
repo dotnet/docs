@@ -44,7 +44,7 @@ Registers the service token resolver that is used by handlers in the token handl
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<securityTokenHandlerConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
+|[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
   
 ## Remarks  
  The service token resolver can be used to resolve the encryption token on incoming tokens and messages. It is used to retrieve the key that should be used to decrypt incoming tokens. You must specify the `type` attribute. The type specified can be either <xref:System.IdentityModel.Selectors.SecurityTokenResolver> or a custom type that derives from the <xref:System.IdentityModel.Selectors.SecurityTokenResolver> class.  
@@ -52,7 +52,7 @@ Registers the service token resolver that is used by handlers in the token handl
  Some token handlers allow you to specify service token resolver settings in configuration. Settings on individual token handlers override those specified on the security token handler collection.  
   
 > [!NOTE]
->  Specifying the `<serviceTokenResolver>` element as a child element of the [\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
+>  Specifying the `<serviceTokenResolver>` element as a child element of the [\<identityConfiguration>](identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
   
 ## Example  
   

@@ -32,13 +32,13 @@ Configures the X.509 certificate that is used to encrypt and decrypt tokens.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<certificateReference>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatereference.md)|Specifies settings that are used to find and validate an X.509 certificate in a certificate store.|  
+|[\<certificateReference>](certificatereference.md)|Specifies settings that are used to find and validate an X.509 certificate in a certificate store.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<federationConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
+|[\<federationConfiguration>](federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
   
 ## Example  
  The following XML shows the use of the \<serviceCertificate> element. The XML is taken from the `CustomToken` sample.  

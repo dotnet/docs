@@ -36,7 +36,7 @@ Finally the environment variable `ADDITIONAL_DEPS` can be used to add additional
 
 ### How do I see the probing properties from managed code?
 
-Each property is available by calling the <xref:AppContext.GetData(string)?displayProperty=nameWithType> function with any Property Name from the table above.
+Each property is available by calling the <xref:System.AppContext.GetData(System.String)?displayProperty=nameWithType> function with any Property Name from the table above.
 
 ### How do I debug the probing properties' construction?
 

@@ -33,7 +33,7 @@ Adds a listener to the **Listeners** collection.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|**type**|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|**type**|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
 |**initializeData**|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
 |**name**|Optional attribute.<br /><br /> Specifies the name of the listener.|  
   
@@ -41,7 +41,7 @@ Adds a listener to the **Listeners** collection.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<filter>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-listeners-for-trace.md)|Adds a filter to a listener in the `Listeners` collection for a trace.|  
+|[\<filter>](filter-element-for-add-for-listeners-for-trace.md)|Adds a filter to a listener in the `Listeners` collection for a trace.|  
   
 ### Parent Elements  
   
@@ -102,5 +102,5 @@ Adds a listener to the **Listeners** collection.
 - <xref:System.Diagnostics.EventLogTraceListener>
 - <xref:System.Diagnostics.ConsoleTraceListener>
 - <xref:System.Diagnostics.TextWriterTraceListener>
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
-- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [Trace and Debug Settings Schema](index.md)
+- [Trace Listeners](../../../debug-trace-profile/trace-listeners.md)

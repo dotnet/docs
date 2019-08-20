@@ -1,6 +1,6 @@
 ---
-title: Debug a .NET for Apache Spark application
-description: Learn how to debug your .NET for Apache Spark application.
+title: Debug a .NET for Apache Spark application on Windows
+description: Learn how to debug your .NET for Apache Spark application on Windows.
 ms.date: 08/15/2019
 ms.topic: how-to
 ms.custom: mvc
@@ -8,7 +8,7 @@ ms.custom: mvc
 
 # Debug a .NET for Apache Spark application
 
-This how-to provides the commands you need to run to debug your .NET for Apache Spark application and Scala code.
+This how-to provides the commands you need to run to debug your .NET for Apache Spark application and Scala code on Windows.
 
 ## Debug your application
 
@@ -48,3 +48,10 @@ spark-submit \
 ```
 
 After you run the command, attach a debugger to the running process using [Intellij](https://www.jetbrains.com/help/idea/attaching-to-local-process.html).
+
+## Next steps
+
+* [Get started with .NET for Apache Spark](../tutorials/get-started.md)
+* [Deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md)
+* [Deploy a .NET for Apache Spark application to Databricks](../tutorials/databricks-deployment.md)
+* [Deploy a .NET for Apache Spark application to Amazon EMR Spark](../tutorials/amazon-emr-spark-deployment.md)

@@ -32,7 +32,7 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
 |Attribute|Description|  
 |---------------|-----------------|  
 |**OID**|Required attribute.<br /><br /> Specifies the ASN.1 OID corresponding to the algorithm implemented by your class.|  
-|**name**|Required attribute.<br /><br /> Specifies the value for the **name** attribute in the [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) tag.|  
+|**name**|Required attribute.<br /><br /> Specifies the value for the **name** attribute in the [\<nameEntry>](nameentry-element.md) tag.|  
   
 ### Child Elements  
  None.  
@@ -74,8 +74,8 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
   
 ## See also
 
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Configuration File Schema](../index.md)
+- [Cryptography Settings Schema](index.md)
 - [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
-- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
-- [Mapping Object Identifiers to Cryptography Algorithms](../../../../../docs/framework/configure-apps/map-object-identifiers-to-cryptography-algorithms.md)
+- [Configuring Cryptography Classes](../../configure-cryptography-classes.md)
+- [Mapping Object Identifiers to Cryptography Algorithms](../../map-object-identifiers-to-cryptography-algorithms.md)

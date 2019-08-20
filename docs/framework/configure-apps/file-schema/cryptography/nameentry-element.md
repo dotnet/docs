@@ -32,7 +32,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 |Attribute|Description|  
 |---------------|-----------------|  
 |**name**|Required attribute.<br /><br /> Specifies the friendly name of the algorithm that the cryptography class implements.|  
-|**class**|Required attribute.<br /><br /> Specifies the value for the **name** attribute in the [\<cryptoClass>](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptoclass-element.md) element.|  
+|**class**|Required attribute.<br /><br /> Specifies the value for the **name** attribute in the [\<cryptoClass>](cryptoclass-element.md) element.|  
   
 ### Child Elements  
  None.  
@@ -71,7 +71,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
   
 ## See also
 
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Configuration File Schema](../index.md)
+- [Cryptography Settings Schema](index.md)
 - [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
-- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+- [Configuring Cryptography Classes](../../configure-cryptography-classes.md)

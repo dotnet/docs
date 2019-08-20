@@ -1,6 +1,6 @@
 ---
 title: "How to: Create Access Keys for Windows Forms Controls"
-ms.date: "03/30/2017"
+ms.date: 08/20/2019
 dev_langs:
   - "csharp"
   - "vb"

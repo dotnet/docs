@@ -1,6 +1,6 @@
 ---
 title: "C# operators - C# reference"
-ms.date: 08/21/2019
+ms.date: 08/20/2019
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
@@ -12,13 +12,13 @@ ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
 # C# operators (C# reference)
 
-C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands. A user-defined type can [overload](operator-overloading.md) certain operators to define the corresponding operation for the operands of that type.
+C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands. Certain operators can be [overloaded](operator-overloading.md). With operator overloading, you can specify the operator behavior for the operands of a user-defined type.
 
-You use operators and operands to construct [expressions](../../programming-guide/statements-expressions-operators/expressions.md). In an expression, operator precedence and associativity determine the order in which the operations are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
+In an [expression](../../programming-guide/statements-expressions-operators/expressions.md), operator precedence and associativity determine the order in which the operations are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
 
 ## Operator precedence
 
-In an expression with multiple operators, the operators with higher precedence level are evaluated before the operators with lower precedence level. In the following example, the multiplication is performed first, because it has a higher precedence level than addition:
+In an expression with multiple operators, the operators with higher precedence are evaluated before the operators with lower precedence. In the following example, the multiplication is performed first because it has higher precedence than addition:
 
 ```csharp-interactive
 var a = 2 + 2 * 2;
@@ -32,7 +32,7 @@ var a = (2 + 2) * 2;
 Console.WriteLine(a); //  output: 8
 ```
 
-The following table lists the C# operators starting with the highest precedence level to the lowest one. The operators within each row share the same precedence level.
+The following table lists the C# operators starting with the highest precedence to the lowest. The operators within each row have the same precedence.
 
 | Operators | Category or name |
 | --------- | ---------------- |
@@ -54,10 +54,10 @@ The following table lists the C# operators starting with the highest precedence 
 
 ## Operator associativity
 
-For operators with the same precedence level, associativity of the operators determines the order in which the operations are performed:
+When operators have the same precedence, associativity of the operators determines the order in which the operations are performed:
 
-- *Left-associative* operators are evaluated from left to right. Except for the [assignment operators](assignment-operator.md) and the [null-coalescing operator](null-coalescing-operator.md), all binary operators are left-associative. For example, `a + b - c` is evaluated as `(a + b) - c`.
-- *Right-associative* operators are evaluated from right to left. The assignment operators, the null-coalescing operator, and the [conditional operator](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
+- *Left-associative* operators are evaluated in order from left to right. Except for the [assignment operators](assignment-operator.md) and the [null-coalescing operator `??`](null-coalescing-operator.md), all binary operators are left-associative. For example, `a + b - c` is evaluated as `(a + b) - c`.
+- *Right-associative* operators are evaluated in order from right to left. The assignment operators, the null-coalescing operator `??`, and the [conditional operator `?:`](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
 
 Use parentheses to change the order of evaluation imposed by operator associativity:
 
@@ -67,9 +67,18 @@ int b = 13 / (5 / 2);
 Console.WriteLine($"a = {a}, b = {b}");  // output: a = 1, b = 6
 ```
 
-## Order of operand evaluation
+## Operand evaluation
 
-Text.
+Unrelated to operator precedence and associativity, operands in an expression are evaluated from left to right. The following examples demonstrate the order in which operators and operands are evaluated:
+
+| Expression | Order of evaluation |
+| ---------- | ------------------- |
+|`a + b`|a, b, +|
+|`a + b * c`|a, b, c, *, +|
+|`a / b + c * d`|a, b, /, c, d, *, +|
+|`a / (b + c) * d`|a, b, c, +, /, d, *|
+
+Typically, all operator operands are evaluated. The operators that can skip evaluation of some of its operands are the conditional logical [AND (`&&`)](boolean-logical-operators.md#conditional-logical-and-operator-) and [OR (`||`)](boolean-logical-operators.md#conditional-logical-or-operator-) operators, the [null-coalescing operator `??`](null-coalescing-operator.md), the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), and the [conditional operator `?:`](conditional-operator.md).
 
 ## C# language specification
 

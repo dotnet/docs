@@ -185,7 +185,7 @@ Once everything is set up, it's time to test the application.
 1. Open Powershell and enter the following code where PORT is the port your application is listening on.
 
     ```powershell
-    Invoke-RestMethod "https://localhost:<PORT>/api/predict" -Method Post -Body (@{Text="This was a very bad steak"} | ConvertTo-Json) -ContentType "application/json"
+    Invoke-RestMethod "https://localhost:<PORT>/api/predict" -Method Post -Body (@{SentimentText="This was a very bad steak"} | ConvertTo-Json) -ContentType "application/json"
     ```
 
     If successful, the output should look similar to the text below:

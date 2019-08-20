@@ -77,7 +77,7 @@ The following examples show two uses for an empty statement:
   
 ## C# language specification
 
-For more information, see the [Statements](~/_csharplang/spec/statements.md) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Statements](~/_csharplang/spec/statements.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
   
 ## See also
 

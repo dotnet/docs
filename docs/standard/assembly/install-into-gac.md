@@ -1,6 +1,6 @@
 ---
 title: "How to: Install an assembly into the global assembly cache"
-ms.date: 02/05/2019
+ms.date: 08/20/2019
 helpviewer_keywords:
   - "assemblies [.NET Framework], global assembly cache"
   - "Gacutil.exe"
@@ -34,17 +34,17 @@ You can use the [global assembly cache tool (gacutil.exe)](../../framework/tools
 
 The syntax for using *gacutil.exe* to install an assembly in the GAC is as follows:
 
-```console
+```cmd
 gacutil -i <assembly name>
 ```
 
 In this command, *\<assembly name>* is the name of the assembly to install in the global assembly cache.
 
-If *gacutil.exe* isn't in your system path, use the [Developer Command Prompt for VS *\<version>*](../../framework/tools/developer-command-prompt-for-vs.md).
+If *gacutil.exe* isn't in your system path, use the [Developer command prompt for VS *\<version>*](../../framework/tools/developer-command-prompt-for-vs.md).
 
 The following example installs an assembly with the file name *hello.dll* into the global assembly cache.
 
-```console
+```cmd
 gacutil -i hello.dll
 ```
 
@@ -53,7 +53,7 @@ gacutil -i hello.dll
 
 ## See also
 
-- [Working with assemblies and the global assembly cache](../../framework/app-domains/working-with-assemblies-and-the-gac.md)
+- [Work with assemblies and the global assembly cache](../../framework/app-domains/working-with-assemblies-and-the-gac.md)
 - [How to: Remove an assembly from the global assembly cache](../../framework/app-domains/how-to-remove-an-assembly-from-the-gac.md)
 - [Gacutil.exe (Global assembly cache tool)](../../framework/tools/gacutil-exe-gac-tool.md)
 - [How to: Sign an assembly with a strong name](sign-strong-name.md)

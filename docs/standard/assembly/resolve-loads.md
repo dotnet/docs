@@ -1,6 +1,6 @@
 ---
-title: "Resolving Assembly Loads"
-ms.date: "03/30/2017"
+title: "Resolve assembly loads"
+ms.date: "08/20/2019"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,13 +15,13 @@ ms.assetid: 5099e549-f4fd-49fb-a290-549edd456c6a
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Resolving Assembly Loads
+# Resolve assembly loads
 The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event for applications that require greater control over assembly loading. By handling this event, your application can load an assembly into the load context from outside the normal probing paths, select which of several assembly versions to load, emit a dynamic assembly and return it, and so on. This topic provides guidance for handling the <xref:System.AppDomain.AssemblyResolve> event.  
   
 > [!NOTE]
 >  For resolving assembly loads in the reflection-only context, use the <xref:System.AppDomain.ReflectionOnlyAssemblyResolve?displayProperty=nameWithType> event instead.  
   
-## How the AssemblyResolve Event Works  
+## How the AssemblyResolve event works  
  When you register a handler for the <xref:System.AppDomain.AssemblyResolve> event, the handler is invoked whenever the runtime fails to bind to an assembly by name. For example, calling the following methods from user code can cause the <xref:System.AppDomain.AssemblyResolve> event to be raised:  
   
 - An <xref:System.AppDomain.Load%2A?displayProperty=nameWithType> method overload or <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method overload whose first argument is a string that represents the display name of the assembly to load (that is, the string returned by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property).  
@@ -32,8 +32,8 @@ The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayPr
   
 - An <xref:System.AppDomain.CreateInstance%2A?displayProperty=nameWithType> or <xref:System.AppDomain.CreateInstanceAndUnwrap%2A?displayProperty=nameWithType> method overload that instantiates an object in another application domain.  
   
-### What the Event Handler Does  
- The handler for the <xref:System.AppDomain.AssemblyResolve> event receives the display name of the assembly to be loaded, in the <xref:System.ResolveEventArgs.Name%2A?displayProperty=nameWithType> property. If the handler does not recognize the assembly name, it returns null (`Nothing` in Visual Basic, `nullptr` in Visual C++).  
+### What the event handler does  
+ The handler for the <xref:System.AppDomain.AssemblyResolve> event receives the display name of the assembly to be loaded, in the <xref:System.ResolveEventArgs.Name%2A?displayProperty=nameWithType> property. If the handler does not recognize the assembly name, it returns `null` (C#), `Nothing` (Visual Basic), or `nullptr` (Visual C++).  
   
  If the handler recognizes the assembly name, it can load and return an assembly that satisfies the request. The following list describes some sample scenarios.  
   
@@ -60,9 +60,9 @@ The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayPr
   
  For information about contexts, see the <xref:System.Reflection.Assembly.LoadFrom%28System.String%29?displayProperty=nameWithType> method overload.  
   
- Multiple versions of the same assembly can be loaded into the same application domain. This practice is not recommended, because it can lead to type assignment problems. See [Best Practices for Assembly Loading](../../framework/deployment/best-practices-for-assembly-loading.md).  
+ Multiple versions of the same assembly can be loaded into the same application domain. This practice is not recommended, because it can lead to type assignment problems. See [Best practices for assembly loading](../../framework/deployment/best-practices-for-assembly-loading.md).  
   
-### What the Event Handler Should Not Do  
+### What the event handler should not do  
  The primary rule for handling the <xref:System.AppDomain.AssemblyResolve> event is that you should not try to return an assembly you do not recognize. When you write the handler, you should know which assemblies might cause the event to be raised. Your handler should return null for other assemblies.  
   
 > [!IMPORTANT]
@@ -76,5 +76,5 @@ The .NET Framework provides the <xref:System.AppDomain.AssemblyResolve?displayPr
   
 ## See also
 
-- [Best Practices for Assembly Loading](../../framework/deployment/best-practices-for-assembly-loading.md)
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Best practices for assembly loading](../../framework/deployment/best-practices-for-assembly-loading.md)
+- [Use application domains](../../framework/app-domains/use.md)

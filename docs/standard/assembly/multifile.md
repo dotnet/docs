@@ -1,6 +1,6 @@
 ---
-title: "Multifile Assemblies"
-ms.date: "03/30/2017"
+title: "Multifile assemblies"
+ms.date: "08/20/2019"
 helpviewer_keywords:
   - "assemblies [.NET Framework], multifile"
   - "entry point for assembly"
@@ -13,11 +13,11 @@ ms.assetid: 13509e73-db77-4645-8165-aad8dfaedff6
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Multifile Assemblies
+# Multifile assemblies
 
-You can create multifile assemblies using command-line compilers or Visual Studio with Visual C++. One file in the assembly must contain the assembly manifest. An assembly that starts an application must also contain an entry point, such as a Main or WinMain method.
+You can create multifile assemblies using command-line compilers or Visual Studio with Visual C++. One file in the assembly must contain the assembly manifest. An assembly that starts an application must also contain an entry point, such as a `Main` or `WinMain` method.
 
-For example, suppose you have an application that contains two code modules, Client.cs and Stringer.cs. Stringer.cs creates the `myStringer` namespace that is referenced by the code in Client.cs. Client.cs contains the `Main` method, which is the application's entry point. In this example, you compile the two code modules, and then create a third file that contains the assembly manifest, which launches the application. The assembly manifest references both the `Client` and `Stringer` modules.
+For example, suppose you have an application that contains two code modules, *Client.cs* and *Stringer.cs*. *Stringer.cs* creates the `myStringer` namespace that is referenced by the code in *Client.cs*. *Client.cs* contains the `Main` method, which is the application's entry point. In this example, you compile the two code modules, and then create a third file that contains the assembly manifest, which launches the application. The assembly manifest references both the *Client* and *Stringer* modules.
 
 > [!NOTE]
 > Multifile assemblies can have only one entry point, even if the assembly has multiple code modules.
@@ -33,9 +33,9 @@ There are several reasons you might want to create a multifile assembly:
 
 - To combine code modules written by several developers. Although each developer can compile each code module into an assembly, this can force some types to be exposed publicly that are not exposed if all modules are put into a multifile assembly.
 
-Once you create the assembly, you can sign the file that contains the assembly manifest (and hence the assembly), or you can give the file (and the assembly) a strong name and put it in the global assembly cache.
+Once you create the assembly, you can sign the file that contains the assembly manifest, and hence the assembly, or you can give the file and the assembly a strong name and put it in the global assembly cache.
 
 ## See also
 
-- [How to: Build a Multifile Assembly](build-multifile.md)
+- [How to: Build a multifile assembly](build-multifile.md)
 - [Program with assemblies](program.md)

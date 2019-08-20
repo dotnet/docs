@@ -1,6 +1,6 @@
 ---
-title: "Assembly Contents"
-ms.date: "03/30/2017"
+title: "Assembly contents"
+ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], multifile"
   - "assemblies [.NET Framework], single-file"
@@ -10,7 +10,7 @@ ms.assetid: 28116714-da77-45f7-826d-fa035d121948
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Assembly Contents
+# Assembly contents
 In general, a static assembly can consist of four elements:  
   
 - The [assembly manifest](manifest.md), which contains assembly metadata.  
@@ -43,5 +43,5 @@ In general, a static assembly can consist of four elements:
 ## See also
 
 - [Assemblies in .NET](index.md)
-- [Assembly Manifest](manifest.md)
-- [Assembly Security Considerations](security-considerations.md)
+- [Assembly manifest](manifest.md)
+- [Assembly security considerations](security-considerations.md)

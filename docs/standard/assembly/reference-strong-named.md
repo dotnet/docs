@@ -1,6 +1,6 @@
 ---
-title: "How to: Reference a Strong-Named Assembly"
-ms.date: "03/30/2017"
+title: "How to: Reference a strong-named assembly"
+ms.date: "08/20/2019"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,7 +14,7 @@ ms.assetid: 4c6a406a-b5eb-44fa-b4ed-4e95bb95a813
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# How to: Reference a Strong-Named Assembly
+# How to: Reference a strong-named assembly
 The process for referencing types or resources in a strong-named assembly is usually transparent. You can make the reference either at compile time (early binding) or at run time.  
   
  A compile-time reference occurs when you indicate to the compiler that your assembly explicitly references another assembly. When you use compile-time referencing, the compiler automatically gets the public key of the targeted strong-named assembly and places it in the assembly reference of the assembly being compiled.  
@@ -22,7 +22,7 @@ The process for referencing types or resources in a strong-named assembly is usu
 > [!NOTE]
 >  A strong-named assembly can only use types from other strong-named assemblies. Otherwise, the security of the strong-named assembly would be compromised.  
   
-### To make a compile-time reference to a strong-named assembly  
+## Make a compile-time reference to a strong-named assembly  
   
 1. At the command prompt, type the following command:  
   
@@ -30,13 +30,13 @@ The process for referencing types or resources in a strong-named assembly is usu
   
      In this command, *compiler command* is the compiler command for the language you are using, and *assembly name* is the name of the strong-named assembly being referenced. You can also use other compiler options, such as the **/t:library** option for creating a library assembly.  
   
- The following example creates an assembly called `myAssembly.dll` that references a strong-named assembly called `myLibAssembly.dll` from a code module called `myAssembly.cs`.  
+ The following example creates an assembly called *myAssembly.dll* that references a strong-named assembly called *myLibAssembly.dll* from a code module called *myAssembly.cs*.  
   
-```  
+```cmd  
 csc /t:library myAssembly.cs /reference:myLibAssembly.dll  
 ```  
   
-### To make a run-time reference to a strong-named assembly  
+## Make a run-time reference to a strong-named assembly  
   
 1. When you make a run-time reference to a strong-named assembly (for example, by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> method), you must use the display name of the referenced strong-named assembly. The syntax of a display name is as follows:  
   
@@ -66,4 +66,4 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
   
 ## See also
 
-- [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)
+- [Create and use strong-named assemblies](create-use-strong-named.md)

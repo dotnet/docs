@@ -1,6 +1,6 @@
 ---
-title: "Assembly Location"
-ms.date: "03/30/2017"
+title: "Assembly location"
+ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "locating assemblies"
   - "assemblies [.NET Framework], location"
@@ -8,7 +8,7 @@ ms.assetid: 9f1f41a7-2954-49d3-a2c0-62b6ef4d40ab
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Assembly Location
+# Assembly location
 An assembly's location determines whether the common language runtime can locate it when referenced, and can also determine whether the assembly can be shared with other assemblies. You can deploy an assembly in the following locations:  
   
 - The application's directory or subdirectories.  
@@ -25,7 +25,7 @@ An assembly's location determines whether the common language runtime can locate
   
 ## See also
 
-- [Creating Assemblies](create.md)
+- [Create assemblies](create.md)
 - [Global Assembly Cache](../../framework/app-domains/gac.md)
-- [How the Runtime Locates Assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
+- [How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Program with assemblies](program.md)

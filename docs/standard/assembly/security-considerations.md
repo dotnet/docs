@@ -1,6 +1,6 @@
 ---
-title: "Assembly Security Considerations"
-ms.date: "03/30/2017"
+title: "Assembly security considerations"
+ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], security"
   - "signcodes"
@@ -18,7 +18,7 @@ ms.assetid: 1b5439c1-f3d5-4529-bd69-01814703d067
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Assembly Security Considerations
+# Assembly security considerations
 <a name="top"></a> When you build an assembly, you can specify a set of permissions that the assembly requires to run. Whether certain permissions are granted or not granted to an assembly is based on evidence.  
   
  There are two distinct ways evidence is used:  
@@ -34,11 +34,11 @@ ms.author: "ronpet"
 - Do not use a permission request to obtain permissions your code might need, but be prepared to handle security exceptions if permissions are not granted.  
   
     > [!NOTE]
-    >  Security is a complex area, and you have many options to choose from. For more information, see [Key Security Concepts](../security/key-security-concepts.md).  
+    >  Security is a complex area, and you have many options to choose from. For more information, see [Key security concepts](../security/key-security-concepts.md).  
   
  At load time, the assembly's evidence is used as input to security policy. Security policy is established by the enterprise and the computer's administrator as well as by user policy settings, and determines the set of permissions that is granted to all managed code when executed. Security policy can be established for the publisher of the assembly (if it has a signing tool generated signature), for the Web site and zone (in Internet Explorer terms) the assembly was downloaded from, or for the assembly's strong name. For example, a computer's administrator can establish security policy that allows all code downloaded from a Web site and signed by a given software company to access a database on a computer, but does not grant access to write to the computer's disk.  
   
-## Strong-Named Assemblies and Signing Tools  
+## Strong-named assemblies and signing tools  
 
  > [!WARNING]
  > Do not rely on strong names for security. They provide a unique identity only.
@@ -58,6 +58,6 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Strong-Named Assemblies](strong-named.md)
+- [Strong-named assemblies](strong-named.md)
 - [Assemblies in .NET](index.md)
 - [SignTool.exe (Sign Tool)](../../framework/tools/signtool-exe.md)

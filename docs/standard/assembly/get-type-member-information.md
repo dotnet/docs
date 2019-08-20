@@ -1,6 +1,6 @@
 ---
-title: "How to: Obtain Type and Member Information from an Assembly"
-ms.date: "03/30/2017"
+title: "How to: Obtain type and member information from an assembly"
+ms.date: "08/20/2019"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -12,8 +12,8 @@ ms.assetid: 348ae651-ccda-4f13-8eda-19e8337e9438
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# How to: Obtain Type and Member Information from an Assembly
-The <xref:System.Reflection> namespace contains many methods for obtaining information from an assembly. This section demonstrates one of these methods. For additional information, see [Reflection Overview](../../framework/reflection-and-codedom/reflection.md).  
+# How to: Obtain type and member information from an assembly
+The <xref:System.Reflection> namespace contains many methods for obtaining information from an assembly. This section demonstrates one of these methods. For additional information, see [Reflection overview](../../framework/reflection-and-codedom/reflection.md).  
   
  The following example obtains type and member information from an assembly.  
   
@@ -24,6 +24,6 @@ The <xref:System.Reflection> namespace contains many methods for obtaining infor
   
 ## See also
 
-- [Programming with Application Domains](./../../framework/app-domains/application-domains.md#programming-with-application-domains)
+- [Program with application domains](../../framework/app-domains/application-domains.md#programming-with-application-domains)
 - [Reflection](../../framework/reflection-and-codedom/reflection.md)
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Use application domains](../../framework/app-domains/use.md)

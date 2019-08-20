@@ -1,6 +1,6 @@
 ---
-title: "Creating and Using Strong-Named Assemblies"
-ms.date: "08/01/2017"
+title: "Create and use strong-named ssemblies"
+ms.date: "08/19/2019"
 helpviewer_keywords:
   - "strong-name bypass feature"
   - "strong-named assemblies, about strong-named assemblies"
@@ -57,18 +57,18 @@ The bypass feature applies to any assembly that is signed with a strong name and
 
 - Not delay-signed.
 
-This feature can be disabled for individual applications or for a computer. See [How to: Disable the Strong-Name Bypass Feature](disable-strong-name-bypass-feature.md).
+This feature can be disabled for individual applications or for a computer. See [How to: Disable the strong-name bypass feature](disable-strong-name-bypass-feature.md).
 
 ## Related topics
 
 |Title|Description|
 |-----------|-----------------|
-|[How to: Create a Public-Private Key Pair](create-public-private-key-pair.md)|Describes how to create a cryptographic key pair for signing an assembly.|
-|[How to: Sign an Assembly with a Strong Name](sign-strong-name.md)|Describes how to create a strong-named assembly.|
-|[Enhanced Strong Naming](enhanced-strong-naming.md)|Describes enhancements to strong-names in the .NET Framework 4.5.|
-|[How to: Reference a Strong-Named Assembly](reference-strong-named.md)|Describes how to reference types or resources in a strong-named assembly at compile time or run time.|
-|[How to: Disable the Strong-Name Bypass Feature](disable-strong-name-bypass-feature.md)|Describes how to disable the feature that bypasses the validation of strong-name signatures. This feature can be disabled for all or for specific applications.|
-|[Creating Assemblies](create.md)|Provides an overview of single-file and multifile assemblies.|
-|[How to Delay Sign an Assembly in Visual Studio](/visualstudio/ide/managing-assembly-and-manifest-signing#how-to-sign-an-assembly-in-visual-studio)|Explains how to sign an assembly with a strong name after the assembly has been created.|
-|[Sn.exe (Strong Name Tool)](../../framework/tools/sn-exe-strong-name-tool.md)|Describes the tool included in the .NET Framework that helps create assemblies with strong names. This tool provides options for key management, signature generation, and signature verification.|
-|[Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md)|Describes the tool included in the .NET Framework that generates a file that has an assembly manifest from modules or resource files.|
+|[How to: Create a public-private key pair](create-public-private-key-pair.md)|Describes how to create a cryptographic key pair for signing an assembly.|
+|[How to: Sign an assembly with a strong name](sign-strong-name.md)|Describes how to create a strong-named assembly.|
+|[Enhanced strong naming](enhanced-strong-naming.md)|Describes enhancements to strong-names in the .NET Framework 4.5.|
+|[How to: Reference a strong-named assembly](reference-strong-named.md)|Describes how to reference types or resources in a strong-named assembly at compile time or run time.|
+|[How to: Disable the strong-name bypass feature](disable-strong-name-bypass-feature.md)|Describes how to disable the feature that bypasses the validation of strong-name signatures. This feature can be disabled for all or for specific applications.|
+|[Create assemblies](create.md)|Provides an overview of single-file and multifile assemblies.|
+|[How to delay sign an assembly in Visual Studio](/visualstudio/ide/managing-assembly-and-manifest-signing#how-to-sign-an-assembly-in-visual-studio)|Explains how to sign an assembly with a strong name after the assembly has been created.|
+|[Sn.exe (Strong Name tool)](../../framework/tools/sn-exe-strong-name-tool.md)|Describes the tool included in the .NET Framework that helps create assemblies with strong names. This tool provides options for key management, signature generation, and signature verification.|
+|[Al.exe (Assembly linker)](../../framework/tools/al-exe-assembly-linker.md)|Describes the tool included in the .NET Framework that generates a file that has an assembly manifest from modules or resource files.|

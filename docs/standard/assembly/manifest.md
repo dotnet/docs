@@ -1,6 +1,6 @@
 ---
-title: "Assembly Manifest"
-ms.date: "03/30/2017"
+title: "Assembly manifest"
+ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "assembly manifest"
   - "dynamic assemblies, assembly manifest"
@@ -11,8 +11,8 @@ ms.assetid: 8e40fab9-549d-4731-aec2-ffa47a382de0
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Assembly Manifest
-Every assembly, whether static or dynamic, contains a collection of data that describes how the elements in the assembly relate to each other. The assembly manifest contains this assembly metadata. An assembly manifest contains all the metadata needed to specify the assembly's version requirements and security identity, and all metadata needed to define the scope of the assembly and resolve references to resources and classes. The assembly manifest can be stored in either a PE file (an .exe or .dll) with Microsoft intermediate language (MSIL) code or in a standalone PE file that contains only assembly manifest information.  
+# Assembly manifest
+Every assembly, whether static or dynamic, contains a collection of data that describes how the elements in the assembly relate to each other. The assembly manifest contains this assembly metadata. An assembly manifest contains all the metadata needed to specify the assembly's version requirements and security identity, and all metadata needed to define the scope of the assembly and resolve references to resources and classes. The assembly manifest can be stored in either a PE file (an *.exe* or *.dll*) with Microsoft intermediate language (MSIL) code or in a standalone PE file that contains only assembly manifest information.  
   
  The following illustration shows the different ways the manifest can be stored.  
   
@@ -32,8 +32,8 @@ Every assembly, whether static or dynamic, contains a collection of data that de
   
 - Renders the assembly self-describing.  
   
-## Assembly Manifest Contents  
- The following table shows the information contained in the assembly manifest. The first four items—the assembly name, version number, culture, and strong name information—make up the assembly's identity.  
+## Assembly manifest contents  
+ The following table shows the information contained in the assembly manifest. The first four items: assembly name, version number, culture, and strong name information make up the assembly's identity.  
   
 |Information|Description|  
 |-----------------|-----------------|  
@@ -45,11 +45,11 @@ Every assembly, whether static or dynamic, contains a collection of data that de
 |Type reference information|Information used by the runtime to map a type reference to the file that contains its declaration and implementation. This is used for types that are exported from the assembly.|  
 |Information on referenced assemblies|A list of other assemblies that are statically referenced by the assembly. Each reference includes the dependent assembly's name, assembly metadata (version, culture, operating system, and so on), and public key, if the assembly is strong named.|  
   
- You can add or change some information in the assembly manifest by using assembly attributes in your code. You can change version information and informational attributes, including Trademark, Copyright, Product, Company, and Informational Version. For a complete list of assembly attributes, see [Setting Assembly Attributes](set-attributes.md).  
+ You can add or change some information in the assembly manifest by using assembly attributes in your code. You can change version information and informational attributes, including Trademark, Copyright, Product, Company, and Informational Version. For a complete list of assembly attributes, see [Set assembly attributes](set-attributes.md).  
   
 ## See also
 
-- [Assembly Contents](contents.md)
-- [Assembly Versioning](versioning.md)
-- [Creating Satellite Assemblies](../../framework/resources/creating-satellite-assemblies-for-desktop-apps.md)
-- [Strong-Named Assemblies](strong-named.md)
+- [Assembly contents](contents.md)
+- [Assembly versioning](versioning.md)
+- [Create satellite assemblies](../../framework/resources/creating-satellite-assemblies-for-desktop-apps.md)
+- [Strong-named assemblies](strong-named.md)

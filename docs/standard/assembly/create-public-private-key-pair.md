@@ -1,6 +1,6 @@
 ---
-title: "How to: Create a Public-Private Key Pair"
-ms.date: "03/30/2017"
+title: "How to: Create a public-private key pair"
+ms.date: "08/20/2019"
 dev_langs:
   - "csharp"
   - "vb"
@@ -18,14 +18,14 @@ ms.assetid: 05026813-f3bd-4d7c-9e0b-fc588eb3d114
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# How to: Create a Public-Private Key Pair
+# How to: Create a public-private key pair
 
-To sign an assembly with a strong name, you must have a public/private key pair. This public and private cryptographic key pair is used during compilation to create a strong-named assembly. You can create a key pair using the [Strong Name tool (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md). Key pair files usually have an .snk extension.
+To sign an assembly with a strong name, you must have a public/private key pair. This public and private cryptographic key pair is used during compilation to create a strong-named assembly. You can create a key pair using the [Strong Name tool (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md). Key pair files usually have an *.snk* extension.
 
 > [!NOTE]
-> In Visual Studio, the C# and Visual Basic project property pages include a **Signing** tab that enables you to select existing key files or to generate new key files without using Sn.exe. In Visual C++, you can specify the location of an existing key file in the **Advanced** property page in the **Linker** section of the **Configuration Properties** section of the **Property Pages** window. The use of the <xref:System.Reflection.AssemblyKeyFileAttribute> attribute to identify key file pairs has been made obsolete beginning with Visual Studio 2005.
+> In Visual Studio, the C# and Visual Basic project property pages include a **Signing** tab that enables you to select existing key files or to generate new key files without using *Sn.exe*. In Visual C++, you can specify the location of an existing key file in the **Advanced** property page in the **Linker** section of the **Configuration Properties** section of the **Property Pages** window. The use of the <xref:System.Reflection.AssemblyKeyFileAttribute> attribute to identify key file pairs was made obsolete beginning with Visual Studio 2005.
 
-## To create a key pair
+## Create a key pair
 
 1. At the command prompt, type the following command:
 
@@ -33,7 +33,7 @@ To sign an assembly with a strong name, you must have a public/private key pair.
 
      In this command, *file name* is the name of the output file containing the key pair.
 
- The following example creates a key pair called `sgKey.snk`.
+ The following example creates a key pair called *sgKey.snk*.
 
 ```
 sn -k sgKey.snk
@@ -63,4 +63,4 @@ sn -p keypair.snk public.snk
 
 ## See also
 
-- [Creating and Using Strong-Named Assemblies](create-use-strong-named.md)
+- [Create and use strong-named assemblies](create-use-strong-named.md)

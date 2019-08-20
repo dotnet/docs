@@ -304,4 +304,4 @@ Explore this content more in-depth on the GitHub wiki: <https://github.com/dotne
 
 > [!div class="step-by-step"]
 > [Previous](modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios.md)
-> [Next](conclusions.md)
+> [Next](conclusions.md) <!-- Next Chapter -->

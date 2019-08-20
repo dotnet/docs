@@ -37,4 +37,4 @@ A [delegate](../../language-reference/keywords/delegate.md) can define its own t
 - [Generic Classes](./generic-classes.md)
 - [Generic Interfaces](./generic-interfaces.md)
 - [Delegates](../delegates/index.md)
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../standard/generics/index.md)

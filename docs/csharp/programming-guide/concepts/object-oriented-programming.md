@@ -404,7 +404,7 @@ sampleObject.Field = "Sample string";
 
 For more information, see:
 
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../standard/generics/index.md)
 
 - [Generics](../generics/index.md)
 

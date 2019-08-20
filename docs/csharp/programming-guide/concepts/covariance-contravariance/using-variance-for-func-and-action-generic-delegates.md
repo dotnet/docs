@@ -78,4 +78,4 @@ class Program
 ## See also
 
 - [Covariance and Contravariance (C#)](./index.md)
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../../standard/generics/index.md)

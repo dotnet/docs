@@ -123,7 +123,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 |---------------------|--------------------|  
 |![Embedded Image Example](media/uia-textpattern-embedded-objects-overview-imageexample.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample")|X|  
 |![Embedded Image Example 2](media/uia-textpattern-embedded-objects-overview-imageexample2.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample2")|Y|  
-|![Embedded Image Example 3](media/uia-textpattern-embedded-objects-overview-imageexample3.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample3")<br /><br /> Image for Z|Z|  
+|![Embedded Image Example 3](./media/uia-textpattern-embedded-objects-overview-imageexample3.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample3")<br /><br /> Image for Z|Z|  
   
  **Example 1 - Get the text container from the content of a cell.**  
   

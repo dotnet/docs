@@ -22,7 +22,7 @@ This tutorial explains how to create a localized application by using the LocBam
   
 <a name="Requirements"></a>   
 ## Requirements  
- Over the course of this discussion, you will use [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)], which is a compiler that runs from the command line.  
+ Over the course of this discussion, you will use Microsoft build engine (MSBuild), which is a compiler that runs from the command line.  
   
  Also, you will be instructed to use a project file. For instructions on how to use [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] and project files, see [Build and Deploy](../app-development/building-and-deploying-wpf-applications.md).  
   

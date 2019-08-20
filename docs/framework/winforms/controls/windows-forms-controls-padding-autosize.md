@@ -55,13 +55,13 @@ You can set the default distance between your controls using the <xref:System.Wi
 
    Observe the snapline that appears between them. This distance is the sum of the two controls' <xref:System.Windows.Forms.Control.Margin%2A> values. The control you are moving snaps to this distance. For details, see [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md).
 
-3. Change the <xref:System.Windows.Forms.Control.Margin%2A> property of one of the controls by expanding the <xref:System.Windows.Forms.Control.Margin%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to 20.
+3. Change the <xref:System.Windows.Forms.Control.Margin%2A> property of one of the controls by expanding the <xref:System.Windows.Forms.Control.Margin%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to **20**.
 
 4. Select one of the <xref:System.Windows.Forms.Button> controls and move it close to the other.
 
    The snapline defining the sum of the margin values is longer and that the control snaps to a greater distance from the other control.
 
-5. Change the <xref:System.Windows.Forms.Control.Margin%2A> property of the selected control by expanding the <xref:System.Windows.Forms.Control.Margin%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.Top%2A> property to 5.
+5. Change the <xref:System.Windows.Forms.Control.Margin%2A> property of the selected control by expanding the <xref:System.Windows.Forms.Control.Margin%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.Top%2A> property to **5**.
 
 6. Move the selected control below the other control and observe that the snapline is shorter. Move the selected control to the left of the other control and observe that the snapline retains the value observed in step 4.
 

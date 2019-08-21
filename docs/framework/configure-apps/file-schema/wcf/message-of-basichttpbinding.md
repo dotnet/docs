@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 51cdd329-6461-471a-8747-56c2299b61e5
 ---
 # \<message> of \<basicHttpBinding>
-Defines the settings for message-level security of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
+Defines the settings for message-level security of the [\<basicHttpBinding>](basichttpbinding.md).  
   
  \<system.ServiceModel>  
 \<bindings>  
@@ -34,8 +34,8 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
   
 |Value|Description|  
 |-----------|-----------------|  
-|UserName|-   Requires the client be authenticated to the server with a UserName credential. This credential needs to be specified using the [\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md).<br />-   WCF does not support sending a password digest or deriving keys using passwords and using such keys for message security. Therefore, WCF enforces that the transport be secured when using UserName credentials. For the `basicHttpBinding`, this requires setting up an SSL channel.|  
-|Certificate|Requires that the client be authenticated to the server using a certificate. The client credential in this case needs to be specified using [\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) and the [\<clientCertificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md). In addition, when using message security mode, the client needs to be provisioned with the service certificate. The service credential in this case needs to be specified using <xref:System.ServiceModel.Description.ClientCredentials> class or `ClientCredentials` behavior element and specifying the service certificate using the [\<serviceCertificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).|  
+|UserName|-   Requires the client be authenticated to the server with a UserName credential. This credential needs to be specified using the [\<clientCredentials>](clientcredentials.md).<br />-   WCF does not support sending a password digest or deriving keys using passwords and using such keys for message security. Therefore, WCF enforces that the transport be secured when using UserName credentials. For the `basicHttpBinding`, this requires setting up an SSL channel.|  
+|Certificate|Requires that the client be authenticated to the server using a certificate. The client credential in this case needs to be specified using [\<clientCredentials>](clientcredentials.md) and the [\<clientCertificate>](clientcertificate-of-servicecredentials.md). In addition, when using message security mode, the client needs to be provisioned with the service certificate. The service credential in this case needs to be specified using <xref:System.ServiceModel.Description.ClientCredentials> class or `ClientCredentials` behavior element and specifying the service certificate using the [\<serviceCertificate>](servicecertificate-of-servicecredentials.md).|  
   
 ### Child Elements  
  None  
@@ -44,7 +44,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)|Defines the security capabilities for the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).|  
+|[\<security>](security-of-basichttpbinding.md)|Defines the security capabilities for the [\<basicHttpBinding>](basichttpbinding.md).|  
   
 ## Example  
  This sample demonstrates how to implement an application that uses the basicHttpBinding and message security. In the following configuration example for a service, the endpoint definition specifies the basicHttpBinding and references a binding configuration named `Binding1`. The certificate that the service uses to authenticate itself to the client is set in the `behaviors` section of the configuration file under the `serviceCredentials` element. The validation mode that applies to the certificate that the client uses to authenticate itself to the service is also set in the `behaviors` section under the `clientCertificate` element.  
@@ -119,8 +119,8 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
 - <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message%2A>
 - <xref:System.ServiceModel.BasicHttpSecurity.Message%2A>
 - <xref:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement>
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

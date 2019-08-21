@@ -46,13 +46,13 @@ A configuration section that specifies a list of contract type names, which are 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/contracttypenames.md)|A contract type name is a property that refers to the set of criteria typically used when searching for a service.|  
+|[\<add>](contracttypenames.md)|A contract type name is a property that refers to the set of criteria typically used when searching for a service.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<findCriteria>](../../../../../docs/framework/configure-apps/file-schema/wcf/findcriteria.md)|A configuration element that supplies a set of criteria used by a client application to search for a discovery service. Criteria can be grouped into search criteria (specifying what services you’re looking for) and find termination criteria (how long the search should last).|  
+|[\<findCriteria>](findcriteria.md)|A configuration element that supplies a set of criteria used by a client application to search for a discovery service. Criteria can be grouped into search criteria (specifying what services you’re looking for) and find termination criteria (how long the search should last).|  
   
 ## See also
 

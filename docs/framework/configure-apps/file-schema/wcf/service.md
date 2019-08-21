@@ -32,14 +32,14 @@ The `service` element contains the settings for a Windows Communication Foundati
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<endpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md)|A collection of `endpoint` elements that expose this service.|  
-|[\<host>](../../../../../docs/framework/configure-apps/file-schema/wcf/host.md)|Specifies the host of this service instance. This element is of type <xref:System.ServiceModel.Configuration.HostElement>.|  
+|[\<endpoint>](endpoint-element.md)|A collection of `endpoint` elements that expose this service.|  
+|[\<host>](host.md)|Specifies the host of this service instance. This element is of type <xref:System.ServiceModel.Configuration.HostElement>.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<services>](../../../../../docs/framework/configure-apps/file-schema/wcf/services.md)|The root element of all WCF configuration elements.|  
+|[\<services>](services.md)|The root element of all WCF configuration elements.|  
   
 ## Remarks  
  Services are defined in the `services` section of the configuration file. An assembly can contain any number of services. Each service has its own `service` configuration section. This section and its content define the service contract, behavior, and endpoints of the particular service.  
@@ -65,4 +65,4 @@ The `service` element contains the settings for a Windows Communication Foundati
 ## See also
 
 - <xref:System.ServiceModel.Configuration.ServiceElement>
-- [Configuring Services](../../../../../docs/framework/wcf/configuring-services.md)
+- [Configuring Services](../../../wcf/configuring-services.md)

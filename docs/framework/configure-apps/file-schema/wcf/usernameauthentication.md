@@ -47,7 +47,7 @@ Specifies a service's credentials based on user name and password.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<serviceCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation related settings.|  
+|[\<serviceCredentials>](servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation related settings.|  
   
 ## Remarks  
  If none of the bindings used by a service is configured for user name/password-based authentication, the attributes for this element are ignored. These include `customUserNamePasswordValidatorType`, `includeWindowsGroups`, `membershipProviderName`, and `userNamePasswordValidationMode`.  

@@ -50,8 +50,8 @@ When you compile an application, you can specify that it should run on a Windows
   
 |Compiler|Compiler option|  
 |--------------|---------------------|  
-|Visual Basic|[/platform (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/platform.md)|  
-|Visual C#|[/platform (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/platform-compiler-option.md)|  
+|Visual Basic|[/platform (Visual Basic)](../visual-basic/reference/command-line-compiler/platform.md)|  
+|Visual C#|[/platform (C# Compiler Options)](../csharp/language-reference/compiler-options/platform-compiler-option.md)|  
 |Visual C++|You can create platform-agnostic, Microsoft intermediate language (MSIL) applications by using **/clr:safe**. For more information, see [/clr (Common Language Runtime Compilation)](/cpp/build/reference/clr-common-language-runtime-compilation).<br /><br /> Visual C++ includes a separate compiler for each 64-bit operating system. For more information about how to use Visual C++ to create native applications that run on a 64-bit Windows operating system, see [64-bit Programming](/cpp/build/configuring-programs-for-64-bit-visual-cpp).|  
   
 ## Determining the Status of an .exe File or .dll File  

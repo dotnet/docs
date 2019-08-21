@@ -205,7 +205,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`[^<>]*`|Match zero or more characters that are not left or right angle brackets.|  
 |`(?'Open'<)`|Match a left angle bracket and assign it to a group named `Open`.|  
 |`[^<>]*`|Match zero or more characters that are not left or right angle brackets.|  
-|`((?'Open'<)[^<>]*) +`|Match one or more occurrences of a left angle bracket followed by zero or more characters that are not left or right angle brackets. This is the second capturing group.|  
+|`((?'Open'<)[^<>]*)+`|Match one or more occurrences of a left angle bracket followed by zero or more characters that are not left or right angle brackets. This is the second capturing group.|  
 |`(?'Close-Open'>)`|Match a right angle bracket, assign the substring between the `Open` group and the current group to the `Close` group, and delete the definition of the `Open` group.|  
 |`[^<>]*`|Match zero or more occurrences of any character that is neither a left  nor a right angle bracket.|  
 |`((?'Close-Open'>)[^<>]*)+`|Match one or more occurrences of a right angle bracket, followed by zero or more occurrences of any character that is neither a left nor a right angle bracket. When matching the right angle bracket, assign the substring between the `Open` group and the current group to the `Close` group, and delete the definition of the `Open` group. This is the third capturing group.|  

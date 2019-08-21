@@ -101,4 +101,4 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 >[!div class="step-by-step"]
 >[Previous](index.md)
->[Next](migrate-your-relational-databases-to-azure.md)
+>[Next](migrate-your-relational-databases-to-azure.md) <!-- Next Chapter -->

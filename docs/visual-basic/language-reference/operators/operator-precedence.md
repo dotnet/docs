@@ -44,7 +44,7 @@ When several operations occur in an expression, each part is evaluated and resol
 
  Integer division (`\`)
 
- Modulus arithmetic (`Mod`)
+ Modular arithmetic (`Mod`)
 
  Addition and subtraction (`+`, `–`)
 

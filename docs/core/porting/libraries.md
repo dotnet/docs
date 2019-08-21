@@ -23,16 +23,16 @@ You should also become familiar with the content of the following topics:
 [.NET Standard](../../standard/net-standard.md)\
 This topic describes the formal specification of .NET APIs that are intended to be available on all .NET implementations.
 
-[Packages, Metapackages and Frameworks](~/docs/core/packages.md)   
+[Packages, Metapackages and Frameworks](../packages.md)   
 This article discusses how .NET Core defines and uses packages and how packages support code running on multiple .NET implementations.
 
-[Developing Libraries with Cross Platform Tools](~/docs/core/tutorials/libraries.md)   
+[Developing Libraries with Cross Platform Tools](../tutorials/libraries.md)   
 This topic explains how to write libraries for .NET using cross-platform CLI tools.
 
-[Additions to the *csproj* format for .NET Core](~/docs/core/tools/csproj.md)   
+[Additions to the *csproj* format for .NET Core](../tools/csproj.md)   
 This article outlines the changes that were added to the project file as part of the move to *csproj* and MSBuild.
 
-[Porting to .NET Core - Analyzing your Third-Party Party Dependencies](~/docs/core/porting/third-party-deps.md)   
+[Porting to .NET Core - Analyzing your Third-Party Party Dependencies](third-party-deps.md)   
 This topic discusses the portability of third-party dependencies and what to do when a NuGet package dependency doesn't run on .NET Core.
 
 ## Retargeting your .NET Framework code to .NET Framework 4.7.2

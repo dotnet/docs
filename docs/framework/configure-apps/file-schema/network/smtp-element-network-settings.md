@@ -51,7 +51,7 @@ Configures the delivery format, delivery method, and from address for sending em
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[\<mailSettings> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md)|Configures mail sending options.|  
+|[\<mailSettings> Element (Network Settings)](mailsettings-element-network-settings.md)|Configures mail sending options.|  
   
 ## Example  
  The following example specifies the appropriate SMTP parameters to send email using the default network credentials.  
@@ -78,4 +78,4 @@ Configures the delivery format, delivery method, and from address for sending em
 - <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
 - <xref:System.Net.Mail.SmtpDeliveryFormat>
 - <xref:System.Net.Mail.SmtpDeliveryMethod>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

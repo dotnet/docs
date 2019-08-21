@@ -93,4 +93,4 @@ The DLR uses binders in call sites to communicate not only with the .NET Framewo
 - [Common Language Runtime](../../standard/clr.md)
 - [Expression Trees (C#)](../../csharp/programming-guide/concepts/expression-trees/index.md)
 - [Expression Trees (Visual Basic)](../../visual-basic/programming-guide/concepts/expression-trees/index.md)
-- [Walkthrough: Creating and Using Dynamic Objects](~/docs/csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)
+- [Walkthrough: Creating and Using Dynamic Objects](../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)

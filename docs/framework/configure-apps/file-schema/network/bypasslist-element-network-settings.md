@@ -34,15 +34,15 @@ Provides a set of regular expressions that describe addresses that do not use a 
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[add](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md)|Adds an IP address or DNS name to the proxy bypass list.|  
-|[clear](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-bypasslist-network-settings.md)|Clears the bypass list.|  
-|[remove](../../../../../docs/framework/configure-apps/file-schema/network/remove-element-for-bypasslist-network-settings.md)|Removes an IP address or DNS name from the proxy bypass list.|  
+|[add](add-element-for-bypasslist-network-settings.md)|Adds an IP address or DNS name to the proxy bypass list.|  
+|[clear](clear-element-for-bypasslist-network-settings.md)|Clears the bypass list.|  
+|[remove](remove-element-for-bypasslist-network-settings.md)|Removes an IP address or DNS name from the proxy bypass list.|  
   
 ### Parent Elements  
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[defaultProxy](../../../../../docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
+|[defaultProxy](defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
   
 ## Remarks  
  The bypass list contains regular expressions that describe URIs that <xref:System.Net.WebRequest> instances access directly instead of through the proxy server.  
@@ -73,4 +73,4 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ## See also
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

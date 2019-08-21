@@ -42,15 +42,15 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/runtime/add-element-for-namedcaches.md)|Adds a named cache to the `namedCaches` collection for a memory cache.|  
-|[\<clear>](../../../../../docs/framework/configure-apps/file-schema/runtime/clear-element-for-namedcaches.md)|Clears the `namedCaches` collection for a memory cache.|  
-|[\<remove>](../../../../../docs/framework/configure-apps/file-schema/runtime/remove-element-for-namedcaches.md)|Removes a named cache entry from the `namedCaches` collection for a memory cache.|  
+|[\<add>](add-element-for-namedcaches.md)|Adds a named cache to the `namedCaches` collection for a memory cache.|  
+|[\<clear>](clear-element-for-namedcaches.md)|Clears the `namedCaches` collection for a memory cache.|  
+|[\<remove>](remove-element-for-namedcaches.md)|Removes a named cache entry from the `namedCaches` collection for a memory cache.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<memoryCache>](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)|Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class.|  
+|[\<memoryCache>](memorycache-element-cache-settings.md)|Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class.|  
   
 ## Remarks  
  The memory cache configuration section of the Web.config file can contain `add`, `remove`, and `clear` attributes for the `namedCaches` collection. Each `namedCaches` entry is uniquely identified by the `name` attribute.  
@@ -83,4 +83,4 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 ## See also
 
-- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)
+- [\<memoryCache> Element (Cache Settings)](memorycache-element-cache-settings.md)

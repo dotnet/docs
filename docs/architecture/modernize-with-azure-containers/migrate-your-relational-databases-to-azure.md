@@ -121,4 +121,4 @@ To learn how to migrate databases by using Azure Database Migration Service, see
 
 > [!div class="step-by-step"]
 > [Previous](lift-and-shift-existing-apps-azure-iaas.md)
-> [Next](modernize-existing-apps-to-cloud-optimized/index.md)
+> [Next](modernize-existing-apps-to-cloud-optimized/index.md) <!-- Next Chapter -->

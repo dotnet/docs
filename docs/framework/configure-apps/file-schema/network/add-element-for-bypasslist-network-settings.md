@@ -44,7 +44,7 @@ Adds an IP address or DNS name to the proxy bypass list.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[bypasslist](../../../../../docs/framework/configure-apps/file-schema/network/bypasslist-element-network-settings.md)|Provides a set of regular expressions that describe addresses that do not use a proxy.|  
+|[bypasslist](bypasslist-element-network-settings.md)|Provides a set of regular expressions that describe addresses that do not use a proxy.|  
   
 ## Remarks  
  The `add` element inserts regular expressions describing IP addresses or DNS server names to the list of addresses that bypass a proxy server.  
@@ -77,4 +77,4 @@ Adds an IP address or DNS name to the proxy bypass list.
 ## See also
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

@@ -81,7 +81,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 |Internet|Fails with "Trust Not Granted"|Sign the XBAP with a certificate.|  
   
 > [!NOTE]
->  The behavior described in the previous table is for full trust XBAPs that do not follow the ClickOnce Trusted Deployment model.  
+> The behavior described in the previous table is for full trust XBAPs that do not follow the ClickOnce Trusted Deployment model.  
   
  In general, code that may exceed the allowed permissions is likely to be common code that is shared between both standalone and browser-hosted applications. CAS and [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] offer several techniques for managing this scenario.  
   
@@ -114,7 +114,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
  Using CAS to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] only runs within the Internet zone sandbox, you can use the <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)].  
   
 > [!NOTE]
->  <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A> only distinguishes whether an application is running in a browser, not which set of permissions an application is running with.  
+> <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A> only distinguishes whether an application is running in a browser, not which set of permissions an application is running with.  
   
 <a name="Managing_Permissions"></a>   
 ## Managing Permissions  
@@ -143,7 +143,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 |Web Browser|Safe frame navigation to HTML|Yes|Yes|  
   
 > [!NOTE]
->  Cut and Paste is only allowed in partial trust when user initiated.  
+> Cut and Paste is only allowed in partial trust when user initiated.  
   
  If you need to increase permissions, you need to change the project settings and the ClickOnce application manifest. For more information, see [WPF XAML Browser Applications Overview](./app-development/wpf-xaml-browser-applications-overview.md). The following documents may also be helpful.  
   

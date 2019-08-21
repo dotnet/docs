@@ -7,10 +7,10 @@ ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
 This sample demonstrates how to host applications in Windows Process Activation Service (WAS) that are read from a message queue. This sample uses the `netMsmqBinding` and is based on the [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md) sample. The service in this case is a Web-hosted application and the client is self-hosted and outputs to the console to observe the status of purchase orders submitted.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 > [!NOTE]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
 >  \<InstallDrive>:\WF_WCF_Samples  
 >   
@@ -79,7 +79,7 @@ public class OrderProcessorService : IOrderProcessor
  The MSMQ queue name is specified in an appSettings section of the configuration file. The endpoint for the service is defined in the System.serviceModel section of the configuration file.  
   
 > [!NOTE]
->  The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a net.msmq: scheme, uses "localhost" for the local computer, and uses forward slashes in its path. To read from a queue that is hosted on the remote computer, replace the "." and "localhost" to the remote computer name.  
+> The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a net.msmq: scheme, uses "localhost" for the local computer, and uses forward slashes in its path. To read from a queue that is hosted on the remote computer, replace the "." and "localhost" to the remote computer name.  
   
  A .svc file with the name of the class is used to host the service code in WAS.  
   

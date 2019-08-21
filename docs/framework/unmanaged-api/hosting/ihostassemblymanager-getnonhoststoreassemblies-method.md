@@ -59,7 +59,7 @@ HRESULT GetNonHostStoreAssemblies (
  If the host sets `ppReferenceList` to null, the CLR first probes the global assembly cache, calls `ProvideAssembly`, and then probes the application base to resolve an assembly reference.  
   
 > [!NOTE]
->  Upon initialization, the CLR calls `GetNonHostStoreAssemblies` only once. The method is not called again.  
+> Upon initialization, the CLR calls `GetNonHostStoreAssemblies` only once. The method is not called again.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

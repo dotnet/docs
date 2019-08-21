@@ -49,7 +49,7 @@ The following code example shows a custom control called `FlashTrackBar` that ca
 |`OnValueChanged`|The method that raises the `ValueChanged` event.|  
   
 > [!NOTE]
->  `FlashTrackBar` uses the <xref:System.EventArgs> class for event data and <xref:System.EventHandler> for the event delegate.  
+> `FlashTrackBar` uses the <xref:System.EventArgs> class for event data and <xref:System.EventHandler> for the event delegate.  
   
  To handle the corresponding *EventName* events, `FlashTrackBar` overrides the following methods that it inherits from <xref:System.Windows.Forms.Control?displayProperty=nameWithType>:  
   

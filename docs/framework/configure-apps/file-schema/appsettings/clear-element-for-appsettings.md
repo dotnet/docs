@@ -15,8 +15,8 @@ ms.author: "mairaw"
 
 Clears custom application settings.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md)   
+[**\<configuration>**](../configuration-element.md)   
+&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax
@@ -35,7 +35,7 @@ None
 
 |     | Description |
 | --- | ----------- |
-| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom application configuration information. |
+| [**\<appSettings>**](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom application configuration information. |
 
 ## Child elements
 
@@ -53,4 +53,4 @@ The following example shows how to clear custom configuration settings:
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](../index.md)

@@ -44,7 +44,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.Tokens.Member
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/add.md)|Adds the specified security token handler to the token handler collection.|  
+|[\<add>](add.md)|Adds the specified security token handler to the token handler collection.|  
   
 ## Remarks  
  The `<userNameSecurityTokenHandlerRequirement>` element sets the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider%2A> property when a <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> object is initialized from configuration.  

@@ -53,7 +53,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  where *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from one. The capture that is numbered zero is the text matched by the entire regular expression pattern.  
   
 > [!NOTE]
->  By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the matched subexpression is not captured.  
+> By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the matched subexpression is not captured.  
   
  You can access captured groups in four ways:  
   
@@ -102,7 +102,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  where *name* is a valid group name, and *subexpression* is any valid regular expression pattern. *name* must not contain any punctuation characters and cannot begin with a number.  
   
 > [!NOTE]
->  If the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.  
+> If the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.  
   
  You can access named captured groups in the following ways:  
   
@@ -184,7 +184,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  The balancing group definition uses *name2* as a stack. The beginning character of each nested construct is placed in the group and in its <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection. When the closing character is matched, its corresponding opening character is removed from the group, and the <xref:System.Text.RegularExpressions.Group.Captures%2A> collection is decreased by one. After the opening and closing characters of all nested constructs have been matched, *name2* is empty.  
   
 > [!NOTE]
->  After you modify the regular expression in the following example to use the appropriate opening and closing character of a nested construct, you can use it to handle most nested constructs, such as mathematical expressions or lines of program code that include multiple nested method calls.  
+> After you modify the regular expression in the following example to use the appropriate opening and closing character of a nested construct, you can use it to handle most nested constructs, such as mathematical expressions or lines of program code that include multiple nested method calls.  
   
  The following example uses a balancing group definition to match left and right angle brackets (<>) in an input string. The example defines two named groups, `Open` and `Close`, that are used like a stack to track matching pairs of angle brackets. Each captured left angle bracket is pushed into the capture collection of the `Open` group, and each captured right angle bracket is pushed into the capture collection of the `Close` group. The balancing group definition ensures that there is a matching right angle bracket for each left angle bracket. If there is not, the final subpattern, `(?(Open)(?!))`, is evaluated only if the `Open` group is not empty (and, therefore, if all nested constructs have not been closed). If the final subpattern is evaluated, the match fails, because the `(?!)` subpattern is a zero-width negative lookahead assertion that always fails.  
   
@@ -205,7 +205,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`[^<>]*`|Match zero or more characters that are not left or right angle brackets.|  
 |`(?'Open'<)`|Match a left angle bracket and assign it to a group named `Open`.|  
 |`[^<>]*`|Match zero or more characters that are not left or right angle brackets.|  
-|`((?'Open'<)[^<>]*) +`|Match one or more occurrences of a left angle bracket followed by zero or more characters that are not left or right angle brackets. This is the second capturing group.|  
+|`((?'Open'<)[^<>]*)+`|Match one or more occurrences of a left angle bracket followed by zero or more characters that are not left or right angle brackets. This is the second capturing group.|  
 |`(?'Close-Open'>)`|Match a right angle bracket, assign the substring between the `Open` group and the current group to the `Close` group, and delete the definition of the `Open` group.|  
 |`[^<>]*`|Match zero or more occurrences of any character that is neither a left  nor a right angle bracket.|  
 |`((?'Close-Open'>)[^<>]*)+`|Match one or more occurrences of a right angle bracket, followed by zero or more occurrences of any character that is neither a left nor a right angle bracket. When matching the right angle bracket, assign the substring between the `Open` group and the current group to the `Close` group, and delete the definition of the `Open` group. This is the third capturing group.|  
@@ -255,7 +255,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  where *subexpression* is any valid regular expression pattern. The noncapturing group construct is typically used when a quantifier is applied to a group, but the substrings captured by the group are of no interest.  
   
 > [!NOTE]
->  If a regular expression includes nested grouping constructs, an outer noncapturing group construct does not apply to the inner nested group constructs.  
+> If a regular expression includes nested grouping constructs, an outer noncapturing group construct does not apply to the inner nested group constructs.  
   
  The following example illustrates a regular expression that includes noncapturing groups. Note that the output does not include any captured groups.  
   
@@ -281,7 +281,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  where *subexpression* is any valid regular expression pattern. For example, `(?i-s:)` turns on case insensitivity and disables single-line mode. For more information about the inline options you can specify, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
   
 > [!NOTE]
->  You can specify options that apply to an entire regular expression rather than a subexpression by using a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or a static method. You can also specify inline options that apply after a specific point in a regular expression by using the `(?imnsx-imnsx)` language construct.  
+> You can specify options that apply to an entire regular expression rather than a subexpression by using a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or a static method. You can also specify inline options that apply after a specific point in a regular expression by using the `(?imnsx-imnsx)` language construct.  
   
  The group options construct is not a capturing group. That is, although any portion of a string that is captured by *subexpression* is included in the match, it is not included in a captured group nor used to populate the <xref:System.Text.RegularExpressions.GroupCollection> object.  
   

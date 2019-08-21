@@ -18,7 +18,7 @@ With the .NET Framework, you can develop and implement new controls. You can ext
  Deciding which kind of control to create can be confusing. This topic highlights the differences among the various kinds of controls from which you can inherit, and provides you with information about how to choose a particular kind of control for your project.  
   
 > [!NOTE]
->  For information about authoring a control to use on Web Forms, see [Developing Custom ASP.NET Server Controls](https://docs.microsoft.com/previous-versions/aspnet/zt27tfhy(v=vs.100)).  
+> For information about authoring a control to use on Web Forms, see [Developing Custom ASP.NET Server Controls](https://docs.microsoft.com/previous-versions/aspnet/zt27tfhy(v=vs.100)).  
   
 ## Base Control Class  
  The <xref:System.Windows.Forms.Control> class is the base class for Windows Forms controls. It provides the infrastructure required for visual display in Windows Forms applications.  

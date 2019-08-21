@@ -17,7 +17,7 @@ ms.assetid: 771bf895-3d5f-469b-a324-3528f343657e
 Common tasks in application development are adding controls to and removing controls from any container control on your forms (such as the <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.GroupBox> control, or even the form itself). At design time, controls can be dragged directly onto a panel or group box. At run time, these controls maintain a `Controls` collection, which keeps track of what controls are placed on them.  
   
 > [!NOTE]
->  The following code example applies to any control that maintains a collection of controls within it.  
+> The following code example applies to any control that maintains a collection of controls within it.  
   
 ### To add a control to a collection programmatically  
   
@@ -60,7 +60,7 @@ Common tasks in application development are adding controls to and removing cont
   
 ### To remove controls from a collection programmatically  
   
-1. Remove the event handler from the event. In Visual Basic, use the [RemoveHandler Statement](~/docs/visual-basic/language-reference/statements/removehandler-statement.md) keyword; in C#, use the [-= operator](~/docs/csharp/language-reference/operators/subtraction-operator.md).  
+1. Remove the event handler from the event. In Visual Basic, use the [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md) keyword; in C#, use the [-= operator](../../../csharp/language-reference/operators/subtraction-operator.md).  
   
 2. Use the `Remove` method to delete the desired control from the panel's `Controls` collection.  
   

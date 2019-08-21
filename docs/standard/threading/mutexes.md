@@ -29,7 +29,7 @@ You can use a <xref:System.Threading.Mutex> object to provide exclusive access t
  If a thread terminates without releasing a <xref:System.Threading.Mutex>, the mutex is said to be abandoned. This often indicates a serious programming error because the resource the mutex is protecting might be left in an inconsistent state. In the .NET Framework version 2.0, an <xref:System.Threading.AbandonedMutexException> is thrown in the next thread that acquires the mutex.  
   
 > [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, an abandoned <xref:System.Threading.Mutex> is set to the signaled state and the next waiting thread gets ownership. If no thread is waiting, the <xref:System.Threading.Mutex> remains in a signaled state. No exception is thrown.  
+> In the .NET Framework versions 1.0 and 1.1, an abandoned <xref:System.Threading.Mutex> is set to the signaled state and the next waiting thread gets ownership. If no thread is waiting, the <xref:System.Threading.Mutex> remains in a signaled state. No exception is thrown.  
   
  In the case of a system-wide mutex, an abandoned mutex might indicate that an application has been terminated abruptly (for example, by using Windows Task Manager).  
   

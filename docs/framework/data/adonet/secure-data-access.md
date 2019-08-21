@@ -49,8 +49,8 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Exception Handling Fundamentals](../../../../docs/standard/exceptions/exception-handling-fundamentals.md)|Describes the basic forms of try/catch/finally structured exception handling.|  
-|[Best Practices for Exceptions](../../../../docs/standard/exceptions/best-practices-for-exceptions.md)|Describes best practices for handling exceptions.|  
+|[Exception Handling Fundamentals](../../../standard/exceptions/exception-handling-fundamentals.md)|Describes the basic forms of try/catch/finally structured exception handling.|  
+|[Best Practices for Exceptions](../../../standard/exceptions/best-practices-for-exceptions.md)|Describes best practices for handling exceptions.|  
   
 ## Protecting Microsoft Access and Excel Data Sources  
  Microsoft Access and Microsoft Excel can act as a data store for an ADO.NET application when security requirements are minimal or nonexistent. Their security features are effective for deterrence, but should not be relied upon to do more than discourage meddling by uninformed users. The physical data files for Access and Excel exist on the file system, and must be accessible to all users. This makes them vulnerable to attacks that could result in theft or data loss since the files can be easily copied or altered. When robust security is required, use SQL Server or another server-based database where the physical data files are not readable from the file system.  

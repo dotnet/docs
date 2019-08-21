@@ -19,7 +19,7 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
 ## Remarks  
   
 > [!NOTE]
->  The `#define` directive cannot be used to declare constant values as is typically done in C and C++. Constants in C# are best defined as static members of a class or struct. If you have several such constants, consider creating a separate "Constants" class to hold them.  
+> The `#define` directive cannot be used to declare constant values as is typically done in C and C++. Constants in C# are best defined as static members of a class or struct. If you have several such constants, consider creating a separate "Constants" class to hold them.  
   
  Symbols can be used to specify conditions for compilation. You can test for the symbol with either [#if](./preprocessor-if.md) or [#elif](./preprocessor-elif.md). You can also use the <xref:System.Diagnostics.ConditionalAttribute> to perform conditional compilation.  
   

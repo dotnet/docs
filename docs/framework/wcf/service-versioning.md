@@ -82,7 +82,7 @@ After initial deployment, and potentially several times during their lifetime, s
  The same versioning principles apply when using the <xref:System.Xml.Serialization.XmlSerializer> class. When strict versioning is required, treat data contracts as immutable and create new data contracts with unique, qualified names for the new versions. When you are sure that lax versioning can be used, you can add new serializable members in new versions but not change or remove existing members.  
   
 > [!NOTE]
->  The <xref:System.Xml.Serialization.XmlSerializer> uses the <xref:System.Xml.Serialization.XmlAnyElementAttribute> and <xref:System.Xml.Serialization.XmlAnyAttributeAttribute> attributes to support round-tripping of unknown data.  
+> The <xref:System.Xml.Serialization.XmlSerializer> uses the <xref:System.Xml.Serialization.XmlAnyElementAttribute> and <xref:System.Xml.Serialization.XmlAnyAttributeAttribute> attributes to support round-tripping of unknown data.  
   
 ## Message Contract Versioning  
  The guidelines for message contract versioning are very similar to versioning data contracts. If strict versioning is required, you should not change your message body but instead create a new message contract with a unique qualified name. If you know that you can use lax versioning, you can add new message body parts but not change or remove existing ones. This guidance applies both to bare and wrapped message contracts.  
@@ -99,7 +99,7 @@ After initial deployment, and potentially several times during their lifetime, s
  Adding service operations exposed by the service is a nonbreaking change because existing clients need not be concerned about those new operations.  
   
 > [!NOTE]
->  Adding operations to a duplex callback contract is a breaking change.  
+> Adding operations to a duplex callback contract is a breaking change.  
   
 ### Changing Operation Parameter or Return Types  
  Changing parameter or return types generally is a breaking change unless the new type implements the same data contract implemented by the old type. To make such a change, add a new operation to the service contract or define a new service contract.  

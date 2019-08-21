@@ -22,7 +22,7 @@ EXECUTE AS USER = 'userName';
  You can use the EXECUTE AS clause in the definition header of a stored procedure, trigger, or user-defined function (except for inline table-valued functions). This causes the procedure to execute in the context of the user name or keyword specified in the EXECUTE AS clause. You can create a proxy user in the database that is not mapped to a login, granting it only the necessary permissions on the objects accessed by the procedure. Only the proxy user specified in the EXECUTE AS clause must have permissions on all objects accessed by the module.  
   
 > [!NOTE]
->  Some actions, such as TRUNCATE TABLE, do not have grantable permissions. By incorporating the statement within a procedure and specifying a proxy user who has ALTER TABLE permissions, you can extend the permissions to truncate the table to callers who have only EXECUTE permissions on the procedure.  
+> Some actions, such as TRUNCATE TABLE, do not have grantable permissions. By incorporating the statement within a procedure and specifying a proxy user who has ALTER TABLE permissions, you can extend the permissions to truncate the table to callers who have only EXECUTE permissions on the procedure.  
   
  The context specified in the EXECUTE AS clause is valid for the duration of the procedure, including nested procedures and triggers. Context reverts to the caller when execution is complete or the REVERT statement is issued.  
   
@@ -43,7 +43,7 @@ CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...
 ```  
   
 > [!NOTE]
->  Applications that require auditing can break because the original security context of the caller is not retained. Built-in functions that return the identity of the current user, such as SESSION_USER, USER, or USER_NAME, return the user associated with the EXECUTE AS clause, not the original caller.  
+> Applications that require auditing can break because the original security context of the caller is not retained. Built-in functions that return the identity of the current user, such as SESSION_USER, USER, or USER_NAME, return the user associated with the EXECUTE AS clause, not the original caller.  
   
 ### Using EXECUTE AS with REVERT  
  You can use the Transact-SQL REVERT statement to revert to the original execution context.  

@@ -7,7 +7,7 @@ ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
 *Properties* are the fundamental building blocks of [entity types](../../../../docs/framework/data/adonet/entity-type.md) and [complex types](../../../../docs/framework/data/adonet/complex-type.md). Properties define the shape and characteristics of data that an entity type instance or complex type instance will contain. Properties in a conceptual model are analogous to properties defined on a class. In the same way that properties on a class define the shape of the class and carry information about objects, properties in a conceptual model define the shape of an entity type and carry information about entity type instances.  
   
 > [!NOTE]
->  Properties, as described in this topic, are different from navigation properties. For more information, see [navigation properties](../../../../docs/framework/data/adonet/navigation-property.md).  
+> Properties, as described in this topic, are different from navigation properties. For more information, see [navigation properties](../../../../docs/framework/data/adonet/navigation-property.md).  
   
  A property definition contains the following information:  
   
@@ -20,7 +20,7 @@ ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
  A property can contain primitive data (such as a string, an integer, or a Boolean value), or structured data (such as a complex type). Properties that are of primitive type are also called scalar properties. For more information, see [Entity Data Model: Primitive Data Types](../../../../docs/framework/data/adonet/entity-data-model-primitive-data-types.md).  
   
 > [!NOTE]
->  A complex type can, itself, have properties that are complex types.  
+> A complex type can, itself, have properties that are complex types.  
   
 ## Example  
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`. Each entity type has several properties, although type information for each property is not conveyed in the diagram. Properties that are [entity keys](../../../../docs/framework/data/adonet/entity-key.md) are denoted with (Key).  

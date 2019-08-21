@@ -47,7 +47,7 @@ The following additional options are available for *.exe*, *.dll*, and *.winmd* 
 |**/linenum**|Includes references to original source lines.|
 |**/nobar**|Suppresses the disassembly progress indicator pop-up window.|
 |**/noca**|Suppresses the output of custom attributes.|
-|**/project**|Displays metadata the way it appears to managed code, instead of the way it appears in the native Windows Runtime. If `PEfilename` is not a Windows metadata (*.winmd*) file, this option has no effect. See [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md).|
+|**/project**|Displays metadata the way it appears to managed code, instead of the way it appears in the native Windows Runtime. If `PEfilename` is not a Windows metadata (*.winmd*) file, this option has no effect. See [.NET Framework Support for Windows Store Apps and Windows Runtime](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md).|
 |**/pubonly**|Disassembles only public types and members. Equivalent to **/visibility:PUB**.|
 |**/quoteallnames**|Includes all names in single quotes.|
 |**/raweh**|Shows exception handling clauses in raw form.|
@@ -182,5 +182,5 @@ A nested type must be preceded by its containing class, delimited by a forward s
 
 - [Tools](../../../docs/framework/tools/index.md)
 - [Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md)
-- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)
+- [Managed Execution Process](../../standard/managed-execution-process.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

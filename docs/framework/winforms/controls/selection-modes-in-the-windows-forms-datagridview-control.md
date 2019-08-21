@@ -20,7 +20,7 @@ Sometimes you want your application to perform actions based on user selections 
 |<xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect>|Default selection mode. Clicking a cell selects it. Clicking a row header selects the entire row.|  
   
 > [!NOTE]
->  Changing the selection mode at run time automatically clears the current selection.  
+> Changing the selection mode at run time automatically clears the current selection.  
   
  By default, users can select multiple rows, columns, or cells by dragging with the mouse, pressing CTRL or SHIFT while selecting to extend or modify a selection, or clicking the top-left header cell to select all cells in the control. To prevent this behavior, set the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property to `false`.  
   

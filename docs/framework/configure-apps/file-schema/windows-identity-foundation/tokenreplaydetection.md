@@ -33,7 +33,7 @@ Enables token replay detection and specifies the expiration time for tokens.
 |Attribute|Description|  
 |---------------|-----------------|  
 |enabled|A value that specifies whether token replay detection is enabled; "true" to enable token replay detection.|  
-|expirationPeriod|A <xref:System.TimeSpan> that specifies the maximum amount of time before an item is considered expired and removed from the cache.  For more information about how to specify <xref:System.TimeSpan> values, see [Timespan Values](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md).|  
+|expirationPeriod|A <xref:System.TimeSpan> that specifies the maximum amount of time before an item is considered expired and removed from the cache.  For more information about how to specify <xref:System.TimeSpan> values, see [Timespan Values](../windows-workflow-foundation/index.md).|  
   
 ### Child Elements  
  None  
@@ -42,10 +42,10 @@ Enables token replay detection and specifies the expiration time for tokens.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)|Specifies service-level identity settings.|  
-|[\<securityTokenHandlerConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
+|[\<identityConfiguration>](identityconfiguration.md)|Specifies service-level identity settings.|  
+|[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
   
 ## Remarks  
  A `<tokenReplayDetection>` element can be specified at the service level under the `<identityConfiguration>` element or on the security token handler collection level under the `<securityTokenHandlerConfiguration>` element. Settings on a token handler collection override those specified on the service.  
   
- The type of the token replay cache is specified by the [\<tokenReplayCache>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaycache.md) element.
+ The type of the token replay cache is specified by the [\<tokenReplayCache>](tokenreplaycache.md) element.

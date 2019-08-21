@@ -19,7 +19,7 @@ Opacity masks enable you to make portions of an element or visual either transpa
  An opacity mask works by mapping its contents to the element or visual. The alpha channel of each of the brush's pixels are then used to determine the resulting opacity of the element or visual's corresponding pixels; the actual color of the brush is ignored. If a given portion of the brush is transparent, the corresponding portion of the element or visual becomes transparent. If a given portion of the brush is opaque, the opacity of the corresponding portion of the element or visual is unchanged. The opacity specified by the opacity mask is combined with any opacity settings present in the element or visual. For example, if an element is 25 percent opaque and an opacity mask is applied that transitions from fully opaque to fully transparent, the result is an element that transitions from 25 percent opacity to fully transparent.  
   
 > [!NOTE]
->  Although the examples in this overview demonstrate the use of opacity masks on image elements, an opacity mask may be applied to any element or <xref:System.Windows.Media.Visual>, including panels and controls.  
+> Although the examples in this overview demonstrate the use of opacity masks on image elements, an opacity mask may be applied to any element or <xref:System.Windows.Media.Visual>, including panels and controls.  
   
  Opacity masks are used to create interesting visual effects, such as to create images or buttons that fade from view, to add textures to elements, or to combine gradients to produce glass-like surfaces. The following illustration demonstrates the use of an opacity mask. A checkered background is used to show the transparent portions of the mask.  
   

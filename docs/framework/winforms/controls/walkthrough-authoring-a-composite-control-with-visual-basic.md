@@ -31,7 +31,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 3. In Solution Explorer, right-click **UserControl1.vb**, and then click **Rename**. Change the file name to `ctlClock.vb`. Click the **Yes** button when you are asked if you want to rename all references to the code element "UserControl1".
 
     > [!NOTE]
-    >  By default, a composite control inherits from the <xref:System.Windows.Forms.UserControl> class provided by the system. The <xref:System.Windows.Forms.UserControl> class provides functionality required by all composite controls, and implements standard methods and properties.
+    > By default, a composite control inherits from the <xref:System.Windows.Forms.UserControl> class provided by the system. The <xref:System.Windows.Forms.UserControl> class provides functionality required by all composite controls, and implements standard methods and properties.
 
 4. On the **File** menu, click **Save All** to save the project.
 
@@ -178,7 +178,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
 5. In Solution Explorer, browse through the current projects.
 
     > [!NOTE]
-    >  A file called **ctlAlarmClock.vb** has been added to the current project.
+    > A file called **ctlAlarmClock.vb** has been added to the current project.
 
 ### Adding the Alarm Properties
  Properties are added to an inherited control in the same way they are added to a composite control. You will now use the property declaration syntax to add two properties to your control: `AlarmTime`, which will store the value of the date and time the alarm is to go off, and `AlarmSet`, which will indicate whether the alarm is set.
@@ -224,10 +224,10 @@ Composite controls provide a means by which custom graphical interfaces can be c
 2. Click `lblDisplay` (the display portion of the control), and view the Properties window.
 
     > [!NOTE]
-    >  While all the properties are displayed, they are dimmed. This indicates that these properties are native to `lblDisplay` and cannot be modified or accessed in the Properties window. By default, controls contained in a composite control are `Private`, and their properties are not accessible by any means.
+    > While all the properties are displayed, they are dimmed. This indicates that these properties are native to `lblDisplay` and cannot be modified or accessed in the Properties window. By default, controls contained in a composite control are `Private`, and their properties are not accessible by any means.
 
     > [!NOTE]
-    >  If you want subsequent users of your composite control to have access to its internal controls, declare them as `Public` or `Protected`. This will allow you to set and modify properties of controls contained within your composite control by using the appropriate code.
+    > If you want subsequent users of your composite control to have access to its internal controls, declare them as `Public` or `Protected`. This will allow you to set and modify properties of controls contained within your composite control by using the appropriate code.
 
 3. Add a <xref:System.Windows.Forms.Label> control to your composite control.
 
@@ -292,7 +292,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
      The addition of this code accomplishes several tasks. The `Overrides` statement directs the control to use this method in place of the method that was inherited from the base control. When this method is called, it calls the method it overrides by invoking the `MyBase.Timer1_Tick` statement, ensuring that all of the functionality incorporated in the original control is reproduced in this control. It then runs additional code to incorporate the alarm functionality. A flashing label control will appear when the alarm occurs, and an audible beep will be heard.
 
     > [!NOTE]
-    >  Because you are overriding an inherited event handler, you do not have to specify the event with the `Handles` keyword. The event is already hooked up. All you are overriding is the implementation of the handler.
+    > Because you are overriding an inherited event handler, you do not have to specify the event with the `Handles` keyword. The event is already hooked up. All you are overriding is the implementation of the handler.
 
      Your alarm clock control is almost complete. The only thing that remains is to implement a way to turn it off. To do this, you will add code to the `lblAlarm_Click` method.
 

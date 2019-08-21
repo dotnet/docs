@@ -7,7 +7,7 @@ ms.assetid: a8ae2965-6a49-4155-89b0-7fab2c488ab1
 The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation provides several walkthroughs. This topic addresses some general walkthrough issues (including troubleshooting), and provides links to several entry-level walkthroughs for learning about [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
 > [!NOTE]
->  The walkthroughs in this Getting Started section expose you to the basic code that supports [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology. In actual practice, you will typically use the Object Relational Designer and Windows Forms projects to implement your [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications. The O/R Designer documentation provides examples and walkthroughs for this purpose.  
+> The walkthroughs in this Getting Started section expose you to the basic code that supports [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology. In actual practice, you will typically use the Object Relational Designer and Windows Forms projects to implement your [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications. The O/R Designer documentation provides examples and walkthroughs for this purpose.  
   
 ## Getting Started Walkthroughs  
  Several walkthroughs are available in this section. These walkthroughs are based on the sample Northwind database, and present [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] features at a gentle pace with minimal complexities.  
@@ -29,7 +29,7 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
 - SQL engines: These walkthroughs are written to be implemented by using SQL Server Express. If you do not have SQL Server Express, you can download it free of charge. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
     > [!NOTE]
-    >  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthroughs use a file name as a connection string. Simply specifying a file name is a convenience that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for SQL Server Express users. Always pay attention to security issues. For more information, see [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md).  
+    > [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthroughs use a file name as a connection string. Simply specifying a file name is a convenience that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for SQL Server Express users. Always pay attention to security issues. For more information, see [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md).  
   
 - [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthroughs typically require the Northwind sample database. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   

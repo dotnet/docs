@@ -54,7 +54,7 @@ Classes and structs are two of the basic constructs of the common type system in
   
 - [Indexers](../indexers/index.md)  
   
-- [Operators](../statements-expressions-operators/operators.md)  
+- [Operators](../../language-reference/operators/index.md)  
   
 - [Nested Types](./nested-types.md)  
   

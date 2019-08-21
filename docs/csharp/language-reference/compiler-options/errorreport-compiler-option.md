@@ -13,7 +13,7 @@ ms.assetid: bd0e7493-b79d-4369-9c3f-ba26ebdfbedf
 This option provides a convenient way to report a C# internal compiler error to Microsoft.  
   
 > [!NOTE]
->  On Windows Vista and Windows Server 2008, the error reporting settings that you make for Visual Studio do not override the settings made through Windows Error Reporting (WER). WER settings always take precedence over Visual Studio error reporting settings.  
+> On Windows Vista and Windows Server 2008, the error reporting settings that you make for Visual Studio do not override the settings made through Windows Error Reporting (WER). WER settings always take precedence over Visual Studio error reporting settings.  
   
 ## Syntax  
   

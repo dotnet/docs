@@ -11,7 +11,7 @@ The .NET Framework is based on the common type system, which defines how types a
  Instead of relying on the inferred data type, you can use the typed accessor methods of the `DataReader` when you know the specific type of the value being returned. Typed accessor methods give you better performance by returning a value as a specific .NET Framework type, which eliminates the need for additional type conversion.  
   
 > [!NOTE]
->  Null values for .NET Framework data provider data types are represented by `DBNull.Value`.  
+> Null values for .NET Framework data provider data types are represented by `DBNull.Value`.  
   
 ## In This Section  
  [SQL Server Data Type Mappings](../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  
@@ -34,6 +34,6 @@ The .NET Framework is based on the common type system, which defines how types a
 - [SQL Server Data Types and ADO.NET](../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
 - [Configuring Parameters and Parameter Data Types](../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
 - [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
-- [Common Type System](../../../../docs/standard/base-types/common-type-system.md)
+- [Common Type System](../../../standard/base-types/common-type-system.md)
 - [Converting Types](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/t8s7t9bf(v=vs.90))
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

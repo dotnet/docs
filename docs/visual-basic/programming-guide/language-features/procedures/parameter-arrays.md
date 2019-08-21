@@ -37,7 +37,7 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
  In all cases, the code within the procedure treats the parameter array as a one-dimensional array with elements of the same data type as the `ParamArray` data type.  
   
 > [!IMPORTANT]
->  Whenever you deal with an array which can be indefinitely large, there is a risk of overrunning some internal capacity of your application. If you accept a parameter array, you should test for the size of the array that the calling code passed to it. Take appropriate steps if it is too large for your application. For more information, see [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+> Whenever you deal with an array which can be indefinitely large, there is a risk of overrunning some internal capacity of your application. If you accept a parameter array, you should test for the size of the array that the calling code passed to it. Take appropriate steps if it is too large for your application. For more information, see [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
 ## Example  
  The following example defines and calls the function `calcSum`. The `ParamArray` modifier for the parameter `args` enables the function to accept a variable number of arguments.  

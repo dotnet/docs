@@ -73,5 +73,5 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 
 - [Configuration File Schema](../index.md)
 - [Cryptography Settings Schema](index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../configure-cryptography-classes.md)

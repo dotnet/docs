@@ -23,7 +23,7 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
 |Method|Stored Procedure or Function|  
   
 > [!NOTE]
->  The following descriptions assume that you have a basic knowledge of the relational data model and rules.  
+> The following descriptions assume that you have a basic knowledge of the relational data model and rules.  
   
 ## LINQ to SQL Entity Classes and Database Tables  
  In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], a database table is represented by an *entity class*. An entity class is like any other class you might create except that you annotate the class by using special information that associates the class with a database table. You make this annotation by adding a custom attribute (<xref:System.Data.Linq.Mapping.TableAttribute>) to your class declaration, as in the following example:  
@@ -66,7 +66,7 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] maps stored procedures and functions to methods by using the <xref:System.Data.Linq.Mapping.FunctionAttribute> and <xref:System.Data.Linq.Mapping.ParameterAttribute> attributes. Methods representing stored procedures are distinguished from those representing user-defined functions by the <xref:System.Data.Linq.Mapping.FunctionAttribute.IsComposable%2A> property. If this property is set to `false` (the default), the method represents a stored procedure. If it is set to `true`, the method represents a database function.  
   
 > [!NOTE]
->  If you are using Visual Studio, you can use the Object Relational Designer to create methods mapped to stored procedures and user-defined functions.  
+> If you are using Visual Studio, you can use the Object Relational Designer to create methods mapped to stored procedures and user-defined functions.  
   
 ### Example  
  [!code-csharp[DLinqObjectModel#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqObjectModel/cs/northwind.cs#4)]

@@ -9,7 +9,7 @@ This sample demonstrates how to use Windows Communication Foundation (WCF) to cr
  AJAX support in WCF is optimized for use with ASP.NET AJAX through the `ScriptManager` control. For an example of using WCF with ASP.NET AJAX, see the [AJAX Samples](ajax.md).  
   
 > [!NOTE]
->  The set-up procedure and build instructions for this sample are located at the end of this topic.  
+> The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
  In the following code, the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is applied to the `Add` operation to ensure that the service responds to HTTP GET requests. The code uses GET for simplicity (you can construct an HTTP GET request from any Web browser). You can also use GET to enable caching. HTTP POST is the default in the absence of the `WebGetAttribute` attribute.  
 

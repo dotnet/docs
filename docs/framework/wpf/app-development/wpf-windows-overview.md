@@ -33,7 +33,7 @@ ms.assetid: 737d04ec-8861-46c3-8d44-fa11d3528d23
 Users interact with Windows Presentation Foundation (WPF) standalone applications through windows. The primary purpose of a window is to host content that visualizes data and enables users to interact with data. Standalone [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications provide their own windows by using the <xref:System.Windows.Window> class. This topic introduces <xref:System.Windows.Window> before covering the fundamentals of creating and managing windows in standalone applications.  
   
 > [!NOTE]
->  Browser-hosted [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, including [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] and loose [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] pages, don't provide their own windows. Instead, they are hosted in windows provided by Windows Internet Explorer. See [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
+> Browser-hosted [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, including [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] and loose [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] pages, don't provide their own windows. Instead, they are hosted in windows provided by Windows Internet Explorer. See [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
 
 <a name="TheWindowClass"></a>   
 ## The Window Class  
@@ -89,7 +89,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 - In code-behind, the <xref:System.Windows.Window> class must implement a constructor that calls the `InitializeComponent` method. `InitializeComponent` is implemented by the markup file's generated `partial` class to register events and set properties that are defined in markup.  
   
 > [!NOTE]
->  When you add a new <xref:System.Windows.Window> to your project by using [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], the <xref:System.Windows.Window> is implemented using both markup and code-behind, and includes the necessary configuration to create the association between the markup and code-behind files as described here.  
+> When you add a new <xref:System.Windows.Window> to your project by using [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], the <xref:System.Windows.Window> is implemented using both markup and code-behind, and includes the necessary configuration to create the association between the markup and code-behind files as described here.  
   
  With this configuration in place, you can focus on defining the appearance of the window in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup and implementing its behavior in code-behind. The following example shows a window with a button, implemented in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup, and an event handler for the button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event, implemented in code-behind.  
   
@@ -143,7 +143,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  A window that is opened by calling <xref:System.Windows.Window.Show%2A> is a modeless window, which means that the application operates in a mode that allows users to activate other windows in the same application.  
   
 > [!NOTE]
->  <xref:System.Windows.Window.ShowDialog%2A> is called to open windows such as dialog boxes modally. See [Dialog Boxes Overview](dialog-boxes-overview.md) for more information.  
+> <xref:System.Windows.Window.ShowDialog%2A> is called to open windows such as dialog boxes modally. See [Dialog Boxes Overview](dialog-boxes-overview.md) for more information.  
   
  When <xref:System.Windows.Window.Show%2A> is called, a window performs initialization work before it is shown to establish infrastructure that allows it to receive user input. When the window is initialized, the <xref:System.Windows.Window.SourceInitialized> event is raised and the window is shown.  
   
@@ -199,7 +199,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  When a window is first opened, it becomes the active window (unless it is shown with <xref:System.Windows.Window.ShowActivated%2A> set to `false`). The *active window* is the window that is currently capturing user input, such as key strokes and mouse clicks. When a window becomes active, it raises the <xref:System.Windows.Window.Activated> event.  
   
 > [!NOTE]
->  When a window is first opened, the <xref:System.Windows.FrameworkElement.Loaded> and <xref:System.Windows.Window.ContentRendered> events are raised only after the <xref:System.Windows.Window.Activated> event is raised. With this in mind, a window can effectively be considered opened when <xref:System.Windows.Window.ContentRendered> is raised.  
+> When a window is first opened, the <xref:System.Windows.FrameworkElement.Loaded> and <xref:System.Windows.Window.ContentRendered> events are raised only after the <xref:System.Windows.Window.Activated> event is raised. With this in mind, a window can effectively be considered opened when <xref:System.Windows.Window.ContentRendered> is raised.  
   
  After a window becomes active, a user can activate another window in the same application, or activate another application. When that happens, the currently active window becomes deactivated and raises the <xref:System.Windows.Window.Deactivated> event. Likewise, when the user selects a currently deactivated window, the window becomes active again and <xref:System.Windows.Window.Activated> is raised.  
   
@@ -215,7 +215,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  If a background task completes, a window may want to notify the user more urgently by calling <xref:System.Windows.Window.Activate%2A> method. If the user is interacting with another application activated when <xref:System.Windows.Window.Activate%2A> is called, the window's taskbar button flashes. If a user is interacting with the current application, calling <xref:System.Windows.Window.Activate%2A> will bring the window to the foreground.  
   
 > [!NOTE]
->  You can handle application-scope activation using the <xref:System.Windows.Application.Activated?displayProperty=nameWithType> and <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> events.  
+> You can handle application-scope activation using the <xref:System.Windows.Application.Activated?displayProperty=nameWithType> and <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> events.  
   
 <a name="Closing_a_Window"></a>   
 ### Closing a Window  
@@ -256,9 +256,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  If <xref:System.Windows.Window.Closing> is not handled, or it is handled but not canceled, the window will close. Just before a window actually closes, <xref:System.Windows.Window.Closed> is raised. At this point, a window cannot be prevented from closing.  
   
 > [!NOTE]
->  An application can be configured to shut down automatically when either the main application window closes (see <xref:System.Windows.Application.MainWindow%2A>) or the last window closes. For details, see <xref:System.Windows.Application.ShutdownMode%2A>.  
+> An application can be configured to shut down automatically when either the main application window closes (see <xref:System.Windows.Application.MainWindow%2A>) or the last window closes. For details, see <xref:System.Windows.Application.ShutdownMode%2A>.  
   
- While a window can be explicitly closed through mechanisms provided in the non-client and client areas, a window can also be implicitly closed as a result of behavior in other parts of the application or [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)], including the following:  
+ While a window can be explicitly closed through mechanisms provided in the non-client and client areas, a window can also be implicitly closed as a result of behavior in other parts of the application or Windows, including the following:  
   
 - A user logs off or shuts down Windows.  
   
@@ -269,7 +269,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 - <xref:System.Windows.Application.Shutdown%2A> is called.  
   
 > [!NOTE]
->  A window cannot be reopened after it is closed.  
+> A window cannot be reopened after it is closed.  
   
 <a name="Window_Lifetime_Events"></a>   
 ### Window Lifetime Events  
@@ -371,7 +371,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  A window with a *maximized* state expands to the maximum size it can be, which will only be as large as its <xref:System.Windows.FrameworkElement.MaxWidth%2A>, <xref:System.Windows.FrameworkElement.MaxHeight%2A>, and <xref:System.Windows.Window.SizeToContent%2A> properties dictate. Like a minimized window, a maximized window cannot be resized by using a resize grip or by dragging the border.  
   
 > [!NOTE]
->  The values of the <xref:System.Windows.Window.Top%2A>, <xref:System.Windows.Window.Left%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and <xref:System.Windows.FrameworkElement.Height%2A> properties of a window always represent the values for the normal state, even when the window is currently maximized or minimized.  
+> The values of the <xref:System.Windows.Window.Top%2A>, <xref:System.Windows.Window.Left%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and <xref:System.Windows.FrameworkElement.Height%2A> properties of a window always represent the values for the normal state, even when the window is currently maximized or minimized.  
   
  The state of a window can be configured by setting its <xref:System.Windows.Window.WindowState%2A> property, which can have one of the following <xref:System.Windows.WindowState> enumeration values:  
   

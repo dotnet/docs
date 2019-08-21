@@ -16,7 +16,7 @@ Arguments provided to an executable on the command-line are accessible through a
 |**executable.exe "one two" three**|"one two"<br /><br /> "three"|  
   
 > [!NOTE]
->  When you are running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
+> When you are running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
   
 ## Example  
  This example displays the command line arguments passed to a command-line application. The output shown is for the first entry in the table above.  

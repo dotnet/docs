@@ -11,13 +11,13 @@ ms.assetid: cc738f07-e8cd-4683-9585-9f40c0667c37
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. In C#, every executed instruction is performed in the context of a method. The Main method is the entry point for every C# application and it is called by the common language runtime (CLR) when the program is started.  
   
 > [!NOTE]
->  This topic discusses named methods. For information about anonymous functions, see [Anonymous Functions](../statements-expressions-operators/anonymous-functions.md).  
+> This topic discusses named methods. For information about anonymous functions, see [Anonymous Functions](../statements-expressions-operators/anonymous-functions.md).  
   
 ## Method Signatures  
  Methods are declared in a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/keywords/struct.md) by specifying the access level such as `public` or `private`, optional modifiers such as `abstract` or `sealed`, the return value, the name of the method, and any method parameters. These parts together are the signature of the method.  
   
 > [!NOTE]
->  A return type of a method is not part of the signature of the method for the purposes of method overloading. However, it is part of the signature of the method when determining the compatibility between a delegate and the method that it points to.  
+> A return type of a method is not part of the signature of the method for the purposes of method overloading. However, it is part of the signature of the method when determining the compatibility between a delegate and the method that it points to.  
   
  Method parameters are enclosed in parentheses and are separated by commas. Empty parentheses indicate that the method requires no parameters. This class contains four methods:  
   
@@ -110,7 +110,7 @@ public static void FillMatrix(int[,] matrix)
  If you mark a method with the [async](../../language-reference/keywords/async.md) modifier, you can use the [await](../../language-reference/keywords/await.md) operator in the method. When control reaches an await expression in the async method, control returns to the caller, and progress in the method is suspended until the awaited task completes. When the task is complete, execution can resume in the method.  
   
 > [!NOTE]
->  An async method returns to the caller when either it encounters the first awaited object that’s not yet complete or it gets to the end of the async method, whichever occurs first.  
+> An async method returns to the caller when either it encounters the first awaited object that’s not yet complete or it gets to the end of the async method, whichever occurs first.  
   
  An async method can have a return type of <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, or void. The void return type is used primarily to define event handlers, where a void return type is required. An async method that returns void can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws.  
   

@@ -24,7 +24,7 @@ The <xref:System.Windows.Forms.FlowLayoutPanel> control supports the <xref:Syste
 5. Set the <xref:System.Windows.Forms.Control.Dock%2A> property of the second button to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
     > [!NOTE]
-    >  The second button assumes the same width as the first button. It does not stretch across the width of the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
+    > The second button assumes the same width as the first button. It does not stretch across the width of the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
 6. Set the <xref:System.Windows.Forms.Control.Dock%2A> property of the second button to `None`. This causes the button to assume its original width.  
   

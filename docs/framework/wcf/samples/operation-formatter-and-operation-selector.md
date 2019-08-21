@@ -21,7 +21,7 @@ This sample demonstrates how Windows Communication Foundation (WCF) extensibilit
 - In this sample, both the client and the service are console applications (.exe).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 ## Key Concepts  
  `QueryStringFormatter` - The operation formatter is the component in WCF that is responsible for converting a message into an array of parameter objects and an array of parameter objects into a message. This is done on the client using the <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> interface and on the server with the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> interface. These interfaces enable users to get the request and response messages from the `Serialize` and `Deserialize` methods.  

@@ -7,7 +7,7 @@ ms.assetid: 7635168e-0566-4fdd-8391-7941b0d9f787
 The Entity Data Model (EDM) supports a set of abstract primitive data types (such as String, Boolean, Int32, and so on) that are used to define [properties](../../../../docs/framework/data/adonet/property.md) in a conceptual model. These primitive data types are proxies for actual primitive data types that are supported in the storage or hosting environment, such as a SQL Server database or the common language runtime (CLR). The EDM does not define the semantics of operations or conversions over primitive data types; these semantics are defined by the storage or hosting environment. Typically, primitive data types in the EDM are mapped to corresponding primitive data types in the storage or hosting environment. For information about how the Entity Framework maps primitive types in the EDM to SQL Server data types, see [SqlClient for Entity FrameworkTypes](../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-types.md).  
   
 > [!NOTE]
->  The EDM does not support collections of primitive data types.  
+> The EDM does not support collections of primitive data types.  
   
  For information about structured data types in the EDM, see [entity type](../../../../docs/framework/data/adonet/entity-type.md) and [complex type](../../../../docs/framework/data/adonet/complex-type.md).  
   

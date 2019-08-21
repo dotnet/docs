@@ -28,10 +28,10 @@ Bitmap effects enable designers and developers to apply visual effects to render
 - <xref:System.Windows.Media.Effects.EmbossBitmapEffect> creates a bump mapping of a <xref:System.Windows.Media.Visual> to give the impression of depth and texture from an artificial light source.  
   
 > [!NOTE]
->  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects are rendered in software mode. Any object that applies an effect will also be rendered in software. Performance is degraded the most when using Bitmap effects on large visuals or animating properties of a Bitmap effect. This is not to say that you should not use Bitmap effects in this way at all, but you should use caution and test thoroughly to ensure that your users are getting the experience you expect.  
+> [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects are rendered in software mode. Any object that applies an effect will also be rendered in software. Performance is degraded the most when using Bitmap effects on large visuals or animating properties of a Bitmap effect. This is not to say that you should not use Bitmap effects in this way at all, but you should use caution and test thoroughly to ensure that your users are getting the experience you expect.  
   
 > [!NOTE]
->  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects do not support partial trust execution. An application must have full trust permissions to use bitmap effects.  
+> [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects do not support partial trust execution. An application must have full trust permissions to use bitmap effects.  
   
 <a name="applyeffects"></a>   
 ## How to Apply an Effect  
@@ -46,7 +46,7 @@ Bitmap effects enable designers and developers to apply visual effects to render
  [!code-csharp[EffectsGallery_snip#CodeBehindBlurCodeBehindExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/EffectsGallery_snip/CSharp/blurcodebehindexample.xaml.cs#codebehindblurcodebehindexampleinline)]  
   
 > [!NOTE]
->  When a <xref:System.Windows.Media.Effects.BitmapEffect> is applied to a layout container, such as <xref:System.Windows.Controls.DockPanel> or <xref:System.Windows.Controls.Canvas>, the effect is applied to the visual tree of the element or visual, including all of its child elements.  
+> When a <xref:System.Windows.Media.Effects.BitmapEffect> is applied to a layout container, such as <xref:System.Windows.Controls.DockPanel> or <xref:System.Windows.Controls.Canvas>, the effect is applied to the visual tree of the element or visual, including all of its child elements.  
   
 <a name="customeffects"></a>   
 ## Creating Custom Effects  

@@ -18,7 +18,7 @@ You can provide the common language runtime with configuration information for a
  The **ApplicationBase** property defines the root directory of the application. When the runtime needs to satisfy a type request, it probes for the assembly containing the type in the directory specified by the **ApplicationBase** property.  
   
 > [!NOTE]
->  A new application domain inherits only the **ApplicationBase** property of the creator.  
+> A new application domain inherits only the **ApplicationBase** property of the creator.  
   
  The following example creates an instance of the **AppDomainSetup** class, uses this class to create a new application domain, writes the information to console, and then unloads the application domain.  
   

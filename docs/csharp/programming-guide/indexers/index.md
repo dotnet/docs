@@ -18,7 +18,7 @@ Indexers allow instances of a class or struct to be indexed just like arrays. Th
  [!code-csharp[indexers#1](../../../../samples/snippets/csharp/programming-guide/indexers/indexer-1.cs)]  
   
 > [!NOTE]
->  For more examples, see [Related Sections](./index.md#BKMK_RelatedSections).  
+> For more examples, see [Related Sections](./index.md#BKMK_RelatedSections).  
   
 ## Expression Body Definitions  
  

@@ -59,7 +59,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
  In addition to specifying the name of a switch to configure, you must also specify a value for the switch. This value is an Integer. For <xref:System.Diagnostics.BooleanSwitch>, a value of 0 corresponds to **Off**, and any nonzero value corresponds to **On**. For <xref:System.Diagnostics.TraceSwitch>, 0,1,2,3, and 4 correspond **Off**, **Error**, **Warning**, **Info**, and **Verbose**, respectively. Any number greater than 4 is treated as **Verbose**, and any number less than zero is treated as **Off**.  
   
 > [!NOTE]
->  In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, `true` for a <xref:System.Diagnostics.BooleanSwitch> or the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="myTraceSwitch" value="Error" />` is equivalent to `<add name="myTraceSwitch" value="1" />`.  
+> In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, `true` for a <xref:System.Diagnostics.BooleanSwitch> or the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="myTraceSwitch" value="Error" />` is equivalent to `<add name="myTraceSwitch" value="1" />`.  
   
  In order for end users to be able to configure an application's trace switches, you must provide detailed documentation on the switches in your application. You should detail which switches control what and how to turn them on and off. You should also provide your end user with a .config file that has appropriate Help in the comments.  
   

@@ -10,7 +10,7 @@ The WCF discovery feature enables components to announce their availability. If 
  When a service configured for announcements joins a network and becomes discoverable, it sends a Hello message announcing its availability to listening clients. The message contains discovery related information about the service, such as its contract, endpoint address and associated scopes. You can specify where the announcement message is sent with the <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> class. If the announcement endpoint is a <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> then the Hello and Bye are multicast appropriately, or if the announcement endpoint is unicast, the messages are sent directly to the specified endpoint.  
   
 > [!NOTE]
->  Announcements are sent when the service host opens and closes. If these calls do not finish properly the announcement message may not be sent out. For example if the service faults, then the Bye announcement message is not sent.  
+> Announcements are sent when the service host opens and closes. If these calls do not finish properly the announcement message may not be sent out. For example if the service faults, then the Bye announcement message is not sent.  
   
 > [!TIP]
 >  You can customize the announcement functionality, allowing you to send announcements whenever you choose.  

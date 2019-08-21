@@ -41,7 +41,7 @@ This Help page discusses how Visual Basic uses culture information to perform st
  [!code-vb[VbVbalrConcepts#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConcepts/VB/Class1.vb#1)]  
   
 > [!NOTE]
->  Date literals are always interpreted according to the English culture.  
+> Date literals are always interpreted according to the English culture.  
   
 ## Comparing Strings  
  There are two important situations where string comparisons are needed:  

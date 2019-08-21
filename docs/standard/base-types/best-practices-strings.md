@@ -204,7 +204,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
  These comparisons are still very fast.  
   
 > [!NOTE]
->  The string behavior of the file system, registry keys and values, and environment variables is best represented by <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>.  
+> The string behavior of the file system, registry keys and values, and environment variables is best represented by <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>.  
   
  Both <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> and <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> use the binary values directly, and are best suited for matching. When you are not sure about your comparison settings, use one of these two values. However, because they perform a byte-by-byte comparison, they do not sort by a linguistic sort order (like an English dictionary) but by a binary sort order. The results may look odd in most contexts if displayed to users.  
   

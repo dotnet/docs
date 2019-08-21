@@ -62,7 +62,7 @@ PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");
 6. Test access to the service in a browser by using the HTTPS address `https://localhost/servicemodelsamples/service.svc`.  
   
 > [!NOTE]
->  Because the test certificate you have just installed is not a trusted certificate, you may encounter additional Internet Explorer security warnings when browsing to local Web addresses secured with this certificate.  
+> Because the test certificate you have just installed is not a trusted certificate, you may encounter additional Internet Explorer security warnings when browsing to local Web addresses secured with this certificate.  
   
 ## Removing Certificates  
   

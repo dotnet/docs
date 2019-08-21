@@ -15,7 +15,7 @@ ms.author: "mairaw"
 Several of the protected operations for which the .NET Framework provides permissions can potentially allow the security system to be circumvented. These dangerous permissions should be given only to trustworthy code, and then only as necessary. There is usually no defense against malicious code if it is granted these permissions.  
   
 > [!NOTE]
->  In the .NET Framework 4, there have been important changes to the .NET Framework security model and terminology. For more information about these changes, see [Security Changes](../../../docs/framework/security/security-changes.md).  
+> In the .NET Framework 4, there have been important changes to the .NET Framework security model and terminology. For more information about these changes, see [Security Changes](../../../docs/framework/security/security-changes.md).  
   
  The dangerous permissions are explained in the following table.  
   

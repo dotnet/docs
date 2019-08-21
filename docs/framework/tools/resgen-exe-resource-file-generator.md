@@ -84,7 +84,7 @@ resgen filename.extension [outputDirectory]
  Text (.txt or .restext) files may contain only string resources. String resources are useful if you are writing an application that must have strings translated into several languages. For example, you can easily regionalize menu strings by using the appropriate string resource. Resgen.exe reads text files that contain name/value pairs, where the name is a string that describes the resource and the value is the resource string itself.  
   
 > [!NOTE]
->  For information about the format of .txt and .restext files, see the "Resources in Text Files" section of [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md).  
+> For information about the format of .txt and .restext files, see the "Resources in Text Files" section of [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md).  
   
  A text file that contains resources must be saved with UTF-8 or Unicode (UTF-16) encoding unless it contains only characters in the Basic Latin range (to U+007F). Resgen.exe removes extended ANSI characters when it processes a text file that is saved using ANSI encoding.  
   

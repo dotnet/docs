@@ -11,7 +11,7 @@ The .NET Framework is based on the common type system, which defines how types a
  Instead of relying on the inferred data type, you can use the typed accessor methods of the `DataReader` when you know the specific type of the value being returned. Typed accessor methods give you better performance by returning a value as a specific .NET Framework type, which eliminates the need for additional type conversion.  
   
 > [!NOTE]
->  Null values for .NET Framework data provider data types are represented by `DBNull.Value`.  
+> Null values for .NET Framework data provider data types are represented by `DBNull.Value`.  
   
 ## In This Section  
  [SQL Server Data Type Mappings](../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  

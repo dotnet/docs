@@ -44,7 +44,7 @@ This topic introduces the concept of markup extensions for XAML, including their
 - `x:Array` provides support for creation of general arrays in XAML syntax, for cases where the collection support provided by WPF base elements and control models is deliberately not used. For details, see [x:Array Markup Extension](../../xaml-services/x-array-markup-extension.md).  
   
 > [!NOTE]
->  The `x:` prefix is used for the typical XAML namespace mapping of the XAML language intrinsics, in the root element of a XAML file or production. For example, the Visual Studio templates for WPF applications initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML namespace for the XAML language, as opposed to the WPF default namespace or other XAML namespaces not related to a specific framework.  
+> The `x:` prefix is used for the typical XAML namespace mapping of the XAML language intrinsics, in the root element of a XAML file or production. For example, the Visual Studio templates for WPF applications initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML namespace for the XAML language, as opposed to the WPF default namespace or other XAML namespaces not related to a specific framework.  
   
 <a name="WPF_Specific_Markup_Extensions"></a>   
 ## WPF-Specific Markup Extensions  

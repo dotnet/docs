@@ -71,7 +71,7 @@ LOB.Customers
  The previous query expression processes a combination of every element of the collection on the left paired against every element of the collection on the right, where the `ON` condition is true. If the `ON` condition is false, the expression still processes one instance of the element on the left paired against the element on the right, with the value null. It also processes one instance of the element on the right paired against the element on the left, with the value null.  
   
 > [!NOTE]
->  To preserve compatibility with SQL-92, in Transact-SQL the OUTER keyword is optional. Therefore, `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN` are synonyms for `LEFT OUTER JOIN`, `RIGHT OUTER JOIN`, and `FULL OUTER JOIN`.  
+> To preserve compatibility with SQL-92, in Transact-SQL the OUTER keyword is optional. Therefore, `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN` are synonyms for `LEFT OUTER JOIN`, `RIGHT OUTER JOIN`, and `FULL OUTER JOIN`.  
   
 ### APPLY Clause Item  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports two kinds of `APPLY`: `CROSS APPLY` and `OUTER APPLY`.  
@@ -87,10 +87,10 @@ LOB.Customers
  `SELECT c, f FROM C AS c OUTER APPLY c.Assoc AS f`  
   
 > [!NOTE]
->  Unlike in Transact-SQL, there is no need for an explicit unnest step in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
+> Unlike in Transact-SQL, there is no need for an explicit unnest step in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
   
 > [!NOTE]
->  `CROSS` and `OUTER APPLY` operators were introduced in SQL Server 2005. In some cases, the query pipeline might produce Transact-SQL that contains `CROSS APPLY` and/or `OUTER APPLY` operators. Because some backend providers, including versions of SQL Server earlier than SQL Server 2005, do not support these operators, such queries cannot be executed on these backend providers.  
+> `CROSS` and `OUTER APPLY` operators were introduced in SQL Server 2005. In some cases, the query pipeline might produce Transact-SQL that contains `CROSS APPLY` and/or `OUTER APPLY` operators. Because some backend providers, including versions of SQL Server earlier than SQL Server 2005, do not support these operators, such queries cannot be executed on these backend providers.  
 >   
 >  Some typical scenarios that might lead to the presence of `CROSS APPLY` and/or `OUTER APPLY` operators in the output query are the following: a correlated subquery with paging; AnyElement over a correlated subquery or over a collection produced by navigation; LINQ queries that use grouping methods that accept an element selector; a query in which a `CROSS APPLY` or an `OUTER APPLY` are explicitly specified; a query that has a `DEREF` construct over a `REF` construct.  
   

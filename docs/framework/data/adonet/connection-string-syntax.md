@@ -37,7 +37,7 @@ Each .NET Framework data provider has a `Connection` object that inherits from <
 |`OracleClient`|`Integrated Security=yes;`|  
   
 > [!NOTE]
->  `Integrated Security=true` throws an exception when used with the `OleDb` provider.  
+> `Integrated Security=true` throws an exception when used with the `OleDb` provider.  
   
 ## SqlClient Connection Strings  
 The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is documented in the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType> property. You can use the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> property to get or set a connection string for a SQL Server database. If you need to connect to an earlier version of SQL Server, you must use the .NET Framework Data Provider for OleDb (<xref:System.Data.OleDb>). Most connection string keywords also map to properties in the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>.  
@@ -67,7 +67,7 @@ The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is
 When you connect to Azure SQL Database or to Azure SQL Data Warehouse and provide a login in the format `user@servername`, make sure that the `servername` value in the login matches the value provided for `Server=`.
 
 > [!NOTE]
->  Windows authentication takes precedence over SQL Server logins. If you specify both Integrated Security=true as well as a user name and password, the user name and password will be ignored and Windows authentication will be used.  
+> Windows authentication takes precedence over SQL Server logins. If you specify both Integrated Security=true as well as a user name and password, the user name and password will be ignored and Windows authentication will be used.  
 
 ### Connect to a named instance of SQL Server
 To connect to a named instance of SQL Server, use the *server name\instance name* syntax.  
@@ -94,7 +94,7 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 ```  
   
 > [!NOTE]
->  If `TrustServerCertificate` is set to `true` and encryption is turned on, the encryption level specified on the server will be used even if `Encrypt` is set to `false` in the connection string. The connection will fail otherwise.  
+> If `TrustServerCertificate` is set to `true` and encryption is turned on, the encryption level specified on the server will be used even if `Encrypt` is set to `false` in the connection string. The connection will fail otherwise.  
   
 ### Enabling Encryption  
  To enable encryption when a certificate has not been provisioned on the server, the **Force Protocol Encryption** and the **Trust Server Certificate** options must be set in SQL Server Configuration Manager. In this case, encryption will use a self-signed server certificate without validation if no verifiable certificate has been provisioned on the server.  

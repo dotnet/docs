@@ -10,7 +10,7 @@ ms.assetid: 6c0b353d-79ee-4e61-b348-be49ad0e9a16
 A custom binding is defined by an ordered list of discrete binding elements. This sample demonstrates how to configure a custom binding with various transport and message encoding elements.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample is based on the [Self-Host](../../../../docs/framework/wcf/samples/self-host.md), and has been modified to configure three endpoints to support HTTP, TCP, and NamedPipe transports with custom bindings. The client configuration was similarly modified, and the client code changed to communicate with each of the three endpoints.  
   
@@ -61,7 +61,7 @@ client.Close()
 ```  
   
 > [!NOTE]
->  If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.  
+> If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.  
   
 ### To set up, build, and run the sample  
   

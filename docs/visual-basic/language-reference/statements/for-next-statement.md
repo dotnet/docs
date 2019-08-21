@@ -54,7 +54,7 @@ Next [ counter ]
 |`Next`|Required. Terminates the definition of the `For` loop.|  
   
 > [!NOTE]
->  The `To` keyword is used in this statement to specify the range for the counter. You can also use this keyword in the [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md) and in array declarations. For more information about array declarations, see [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
+> The `To` keyword is used in this statement to specify the range for the counter. You can also use this keyword in the [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md) and in array declarations. For more information about array declarations, see [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
   
 ## Simple Examples  
  You use a `For`...`Next` structure when you want to repeat a set of statements a set number of times.  

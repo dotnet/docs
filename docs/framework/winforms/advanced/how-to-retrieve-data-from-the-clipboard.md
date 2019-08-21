@@ -19,7 +19,7 @@ The <xref:System.Windows.Forms.Clipboard> class provides methods that you can us
  To access data from the Clipboard by using versions earlier than .NET Framework 2.0, use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displayProperty=nameWithType> method and call the methods of the returned <xref:System.Windows.Forms.IDataObject>. To determine whether a particular format is available in the returned object, for example, call the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A> method.  
   
 > [!NOTE]
->  All Windows-based applications share the system Clipboard. Therefore, the contents are subject to change when you switch to another application.  
+> All Windows-based applications share the system Clipboard. Therefore, the contents are subject to change when you switch to another application.  
 >   
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
   

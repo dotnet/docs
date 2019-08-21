@@ -9,7 +9,7 @@ ms.assetid: bc5de6b6-1a63-42a3-919a-67d21bae24e0
 The Duplex sample demonstrates how to define and implement a duplex contract. Duplex communication occurs when a client establishes a session with a service and gives the service a channel on which the service can send messages back to the client. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). A duplex contract is defined as a pair of interfaces—a primary interface from the client to the service and a callback interface from the service to the client. In this sample, the `ICalculatorDuplex` interface allows the client to perform math operations, calculating the result over a session. The service returns results on the `ICalculatorDuplexCallback` interface. A duplex contract requires a session, because a context must be established to correlate the set of messages being sent between the client and the service.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS). The duplex contract is defined as follows:  
   

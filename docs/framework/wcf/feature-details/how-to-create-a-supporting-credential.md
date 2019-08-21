@@ -7,7 +7,7 @@ ms.assetid: d0952919-8bb4-4978-926c-9cc108f89806
 It is possible to have a custom security scheme that requires more than one credential. For example, a service may demand from the client not just a user name and password, but also a credential that proves the client is over the age of 18. The second credential is a *supporting credential*. This topic explains how to implement such credentials in an Windows Communication Foundation (WCF) client.  
   
 > [!NOTE]
->  The specification for supporting credentials is part of the WS-SecurityPolicy specification. For more information, see [Web Services Security Specifications](https://go.microsoft.com/fwlink/?LinkId=88537).  
+> The specification for supporting credentials is part of the WS-SecurityPolicy specification. For more information, see [Web Services Security Specifications](https://go.microsoft.com/fwlink/?LinkId=88537).  
   
 ## Supporting Tokens  
  In brief, when you use message security, a *primary credential* is always used to secure the message (for example, an X.509 certificate or a Kerberos ticket).  

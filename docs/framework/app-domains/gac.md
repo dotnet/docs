@@ -19,7 +19,7 @@ Each computer where the Common Language Runtime is installed has a machine-wide 
  You should share assemblies by installing them into the Global Assembly Cache only when you need to. As a general guideline, keep assembly dependencies private, and locate assemblies in the application directory unless sharing an assembly is explicitly required. In addition, it is not necessary to install assemblies into the Global Assembly Cache to make them accessible to COM interop or unmanaged code.  
   
 > [!NOTE]
->  There are scenarios where you explicitly do not want to install an assembly into the Global Assembly Cache. If you place one of the assemblies that make up an application in the Global Assembly Cache, you can no longer replicate or install the application by using the **xcopy** command to copy the application directory. You must move the assembly in the Global Assembly Cache as well.  
+> There are scenarios where you explicitly do not want to install an assembly into the Global Assembly Cache. If you place one of the assemblies that make up an application in the Global Assembly Cache, you can no longer replicate or install the application by using the **xcopy** command to copy the application directory. You must move the assembly in the Global Assembly Cache as well.  
   
  There are two ways to deploy an assembly into the Global Assembly Cache:  
   

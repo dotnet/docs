@@ -32,7 +32,7 @@ The **-debug** option causes the compiler to generate debugging information and 
  If you use **-debug:full**, be aware that there is some impact on the speed and size of JIT optimized code and a small impact on code quality with **-debug:full**. We recommend **-debug:pdbonly** or no PDB for generating release code.  
   
 > [!NOTE]
->  One difference between **-debug:pdbonly** and **-debug:full** is that with **-debug:full** the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use **-debug:full**.  
+> One difference between **-debug:pdbonly** and **-debug:full** is that with **-debug:full** the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use **-debug:full**.  
   
  For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).  
   

@@ -42,7 +42,7 @@ Represents a segment of a physical or logical call stack.
  The stack frames in a chain occupy contiguous stack space and share the same thread and context. A chain may represent either managed or unmanaged code chains. An empty `ICorDebugChain` instance represents an unmanaged code chain.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

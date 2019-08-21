@@ -10,7 +10,7 @@ ms.assetid: ccdc3777-b2c2-44e3-a627-abef8d79a555
 Use the <xref:System.Linq.Enumerable.First%2A> operator to return the first element in a sequence. Queries that use <xref:System.Linq.Enumerable.First%2A> are executed immediately.  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the <xref:System.Linq.Enumerable.Last%2A> operator.  
+> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the <xref:System.Linq.Enumerable.Last%2A> operator.  
   
 ## Example  
  The following code finds the first `Shipper` in a table:  

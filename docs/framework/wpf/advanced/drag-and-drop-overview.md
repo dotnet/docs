@@ -151,7 +151,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
  The `allowedEffects` parameter is used to specify what the drag source will allow the drop target to do with the transferred data. The common values for a drag source are <xref:System.Windows.DragDropEffects.Copy>, <xref:System.Windows.DragDropEffects.Move>, and <xref:System.Windows.DragDropEffects.All>.  
   
 > [!NOTE]
->  The drop target is also able to specify what effects it intends in response to the dropped data. For example, if the drop target does not recognize the data type to be dropped, it can refuse the data by setting its allowed effects to <xref:System.Windows.DragDropEffects.None>. It typically does this in its <xref:System.Windows.DragDrop.DragOver> event handler.  
+> The drop target is also able to specify what effects it intends in response to the dropped data. For example, if the drop target does not recognize the data type to be dropped, it can refuse the data by setting its allowed effects to <xref:System.Windows.DragDropEffects.None>. It typically does this in its <xref:System.Windows.DragDrop.DragOver> event handler.  
   
  A drag source can optionally handle the <xref:System.Windows.DragDrop.GiveFeedback> and <xref:System.Windows.DragDrop.QueryContinueDrag> events. These events have default handlers that are used unless you mark the events as handled. You will typically ignore these events unless you have a specific need to change their default behavior.  
   

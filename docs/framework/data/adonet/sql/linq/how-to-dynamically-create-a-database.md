@@ -20,7 +20,7 @@ In LINQ to SQL, an object model is mapped to a relational database. Mapping is e
  You can also use the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method with SQL Server by using an .mdf file or a catalog name, depending on your connection string. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] uses the connection string to define the database to be created and on which server the database is to be created.  
   
 > [!NOTE]
->  Whenever possible, use Windows Integrated Security to connect to the database so that passwords are not required in the connection string.  
+> Whenever possible, use Windows Integrated Security to connect to the database so that passwords are not required in the connection string.  
   
 ## Example  
  The following code provides an example of how to create a new database named MyDVDs.mdf.  

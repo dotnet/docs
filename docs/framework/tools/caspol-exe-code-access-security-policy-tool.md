@@ -25,7 +25,7 @@ The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and admini
 >  Starting with the .NET Framework 4, Caspol.exe does not affect CAS policy unless the [\<legacyCasPolicy> element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. Any settings shown or modified by CasPol.exe will only affect applications that opt into using CAS policy. For more information, see [Security Changes](../../../docs/framework/security/security-changes.md).  
   
 > [!NOTE]
->  64-bit computers include both 64-bit and 32-bit versions of security policy. To ensure that your policy changes apply to both 32-bit and 64-bit applications, run both the 32-bit and 64-bit versions of Caspol.exe.  
+> 64-bit computers include both 64-bit and 32-bit versions of security policy. To ensure that your policy changes apply to both 32-bit and 64-bit applications, run both the 32-bit and 64-bit versions of Caspol.exe.  
   
  The Code Access Security Policy tool is automatically installed with the .NET Framework and with Visual Studio. You can find Caspol.exe in %windir%\Microsoft.NET\Framework\\*version* on 32-bit systems or %windir%\Microsoft.NET\Framework64\\*version* on 64-bit systems. (For example, the location is %windir%\Microsoft.NET\Framework64\v4.030319\caspol.exe for the .NET Framework 4 on a 64-bit system.) Multiple versions of the tool might be installed if your computer is running multiple versions of the .NET Framework side by side. You can run the tool from the installation directory. However, we recommend that you use the [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md), which does not require you to navigate to the installation folder.  
   

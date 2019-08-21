@@ -11,7 +11,7 @@ ms.assetid: bc11f2e4-e90a-4830-b0e2-f43b6e2b8bec
 You can dock controls to the edges of your form or have them fill the control's container (either a form or a container control). For example, Windows Explorer docks its <xref:System.Windows.Forms.TreeView> control to the left side of the window and its <xref:System.Windows.Forms.ListView> control to the right side of the window. Use the <xref:System.Windows.Forms.Control.Dock%2A> property for all visible Windows Forms controls to define the docking mode.  
   
 > [!NOTE]
->  Controls are docked in reverse z-order.  
+> Controls are docked in reverse z-order.  
   
  The <xref:System.Windows.Forms.Control.Dock%2A> property interacts with the <xref:System.Windows.Forms.Control.AutoSize%2A> property. For more information, see [AutoSize Property Overview](autosize-property-overview.md).  
   

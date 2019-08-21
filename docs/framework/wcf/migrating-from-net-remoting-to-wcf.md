@@ -91,7 +91,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(WCFServer), baseAddress)
 ```  
   
 > [!NOTE]
->  TCP is used in both examples to keep them as similar as possible. Refer to the scenario walk-throughs later in this topic for examples using HTTP.  
+> TCP is used in both examples to keep them as similar as possible. Refer to the scenario walk-throughs later in this topic for examples using HTTP.  
   
  There are many ways to configure and to host WCF services. This is just one example, known as "self-hosted". For more information, see the following topics:  
   
@@ -311,7 +311,7 @@ catch (FaultException<CustomerServiceFault> fault)
 3. Client sends an object by-value to the server  
   
 > [!NOTE]
->  Sending an object by-reference from the client to the server is not allowed in WCF.  
+> Sending an object by-reference from the client to the server is not allowed in WCF.  
   
  When reading through these scenarios, assume our baseline interfaces for .NET Remoting look like the following example. The .NET Remoting implementation is not important here because we want to illustrate only how to use WCF to implement equivalent functionality.  
   

@@ -16,7 +16,7 @@ This sample demonstrates how to implement a custom UserNamePassword Validator. T
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\UserNamePasswordValidator`  
   
 > [!NOTE]
->  Because anyone can construct a Username credential that uses the username/password pairs that the custom validator accepts, the service is less secure than the default behavior provided by the standard UserNamePassword Validator. The standard UserNamePassword Validator attempts to map the provided username/password pair to a Windows account and fails authentication if this mapping fails. The custom UserNamePassword Validator in this sample MUST NOT be used in production code, it is for illustration purposes only.
+> Because anyone can construct a Username credential that uses the username/password pairs that the custom validator accepts, the service is less secure than the default behavior provided by the standard UserNamePassword Validator. The standard UserNamePassword Validator attempts to map the provided username/password pair to a Windows account and fails authentication if this mapping fails. The custom UserNamePassword Validator in this sample MUST NOT be used in production code, it is for illustration purposes only.
 
  In summary this sample demonstrates how:
 

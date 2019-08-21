@@ -59,7 +59,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
 |`Off`|All messages are blocked.|  
   
 > [!NOTE]
->  The `WriteEntry` and `WriteException` methods each have an overload that does not specify a severity level. The implicit severity level for the `WriteEntry` overload is "Information", and the implicit severity level for the `WriteException` overload is "Error".  
+> The `WriteEntry` and `WriteException` methods each have an overload that does not specify a severity level. The implicit severity level for the `WriteEntry` overload is "Information", and the implicit severity level for the `WriteException` overload is "Error".  
   
  This table explains the log output shown in the previous example: with the default `DefaultSwitch` setting of "Information", only the second call to the `WriteEntry` method and the call to the `WriteException` method produce log output.  
   

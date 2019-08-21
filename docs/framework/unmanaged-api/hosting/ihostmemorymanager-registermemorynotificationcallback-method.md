@@ -48,7 +48,7 @@ HRESULT RegisterMemoryNotificationCallback (
  Because the `ICLRMemoryNotificationCallback` interface defines only one method ([ICLRMemoryNotificationCallback::OnMemoryNotification](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-onmemorynotification-method.md)), and because `pCallback` is a pointer to an `ICLRMemoryNotificationCallback` instance provided by the CLR, the registration is effectively for the callback function itself. The host invokes `OnMemoryNotification` to report memory pressure conditions, rather than using the standard Win32 `CreateMemoryResourceNotification` function. For more information, see the Windows Platform documentation.  
   
 > [!NOTE]
->  Calls to `OnMemoryNotification` never block. They always return immediately.  
+> Calls to `OnMemoryNotification` never block. They always return immediately.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

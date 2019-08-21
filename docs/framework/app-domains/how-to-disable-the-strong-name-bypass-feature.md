@@ -45,7 +45,7 @@ Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), strong-name s
  You can restore the bypass feature for the application by removing the configuration file setting or by setting the attribute to "true".  
   
 > [!NOTE]
->  You can turn strong-name validation on and off for an application only if the bypass feature is enabled for the computer. If the bypass feature has been turned off for the computer, strong names are validated for all applications and you cannot bypass validation for a single application.  
+> You can turn strong-name validation on and off for an application only if the bypass feature is enabled for the computer. If the bypass feature has been turned off for the computer, strong names are validated for all applications and you cannot bypass validation for a single application.  
   
 ## See also
 

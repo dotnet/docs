@@ -10,7 +10,7 @@ ms.assetid: 5e7ff0be-3f23-4996-a92c-bd54d65c3836
 The simplest approach to performing a SQL Server bulk copy operation is to perform a single operation against a database. By default, a bulk copy operation is performed as an isolated operation: the copy operation occurs in a non-transacted way, with no opportunity for rolling it back.  
   
 > [!NOTE]
->  If you need to roll back all or part of the bulk copy when an error occurs, you can either use a <xref:System.Data.SqlClient.SqlBulkCopy>-managed transaction, or perform the bulk copy operation within an existing transaction. **SqlBulkCopy** will also work with <xref:System.Transactions> if the connection is enlisted (implicitly or explicitly) into a **System.Transactions** transaction.  
+> If you need to roll back all or part of the bulk copy when an error occurs, you can either use a <xref:System.Data.SqlClient.SqlBulkCopy>-managed transaction, or perform the bulk copy operation within an existing transaction. **SqlBulkCopy** will also work with <xref:System.Transactions> if the connection is enlisted (implicitly or explicitly) into a **System.Transactions** transaction.  
 >   
 >  For more information, see [Transaction and Bulk Copy Operations](../../../../../docs/framework/data/adonet/sql/transaction-and-bulk-copy-operations.md).  
   
@@ -46,7 +46,7 @@ The simplest approach to performing a SQL Server bulk copy operation is to perfo
  The following example illustrates how to use the <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A> method to execute the BULK INSERT statement.  
   
 > [!NOTE]
->  The file path for the data source is relative to the server. The server process must have access to that path in order for the bulk copy operation to succeed.  
+> The file path for the data source is relative to the server. The server process must have access to that path in order for the bulk copy operation to succeed.  
   
 ```vb  
 Using connection As SqlConnection = New SqlConnection(connectionString)  

@@ -7,7 +7,7 @@ ms.assetid: 11d11b59-acc4-48bf-8e4b-e97b516aa0a9
 .NET Framework 4.5 features better integration between web services and workflows in the form of contract-first workflow development. The contract-first workflow development tool allows you to design the contract in code first. The tool then automatically generates an activity template in the toolbox for the operations in the contract.  
   
 > [!NOTE]
->  This topic provides step-by-step guidance on creating a contract-first workflow service. For more information about contract-first workflow service development, see [Contract First Workflow Service Development](contract-first-workflow-service-development.md).  
+> This topic provides step-by-step guidance on creating a contract-first workflow service. For more information about contract-first workflow service development, see [Contract First Workflow Service Development](contract-first-workflow-service-development.md).  
   
 ### Creating the workflow project  
   

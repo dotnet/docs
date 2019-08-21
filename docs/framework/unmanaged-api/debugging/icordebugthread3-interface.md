@@ -31,7 +31,7 @@ Provides the entry point to the [ICorDebugStackWalk](../../../../docs/framework/
  `ICorDebugThread3` is a logical extension to the ICorDebugThread interface.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

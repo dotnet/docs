@@ -9,7 +9,7 @@ This sample demonstrates how to configure security by using a custom binding. It
  This sample consists of a client console program (EXE) and a service console program (EXE). The service implements a duplex contract. The contract is defined by the `ICalculatorDuplex` interface, which exposes math operations (Add, Subtract, Multiply, and Divide). The `ICalculatorDuplex` interface allows the client to perform math operations, calculating a running result over a session. Independently, the service may return results on the `ICalculatorDuplexCallback` interface. A duplex contract requires a session, because a context must be established to correlate the set of messages being sent between the client and the service. A custom binding is defined that supports duplex communication and is secure.
 
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this topic.
 
  The service configuration defines a custom binding that supports the following:
 

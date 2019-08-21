@@ -61,7 +61,7 @@ ms.author: "ronpet"
  Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that is common to all previous versions of the .NET Framework before the .NET Framework 4. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
   
 > [!NOTE]
->  <xref:System.TimeSpan> also supports the "t" and "T" standard format strings, which are identical in behavior to the "c" standard format string.  
+> <xref:System.TimeSpan> also supports the "t" and "T" standard format strings, which are identical in behavior to the "c" standard format string.  
   
  The following example instantiates two <xref:System.TimeSpan> objects, uses them to perform arithmetic operations, and displays the result. In each case, it uses composite formatting to display the <xref:System.TimeSpan> value by using the "c" format specifier.  
   

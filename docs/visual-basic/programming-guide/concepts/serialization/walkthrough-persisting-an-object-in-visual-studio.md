@@ -7,7 +7,7 @@ ms.assetid: f1d0b562-e349-4dce-ab5f-c05108467030
 Although you can set an object's properties to default values at design time, any values entered at run time are lost when the object is destroyed. You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.  
   
 > [!NOTE]
->  In Visual Basic, to store simple data, such as a name or number, you can use the `My.Settings` object. For more information, see [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md).  
+> In Visual Basic, to store simple data, such as a name or number, you can use the `My.Settings` object. For more information, see [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md).  
   
  In this walkthrough, you will create a simple `Loan` object and persist its data to a file. You will then retrieve the data from the file when you re-create the object.  
   
@@ -18,7 +18,7 @@ Although you can set an object's properties to default values at design time, an
 >  This example stores data in a binary. These formats should not be used for sensitive data, such as passwords or credit-card information.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
+> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Loan Object  
  The first step is to create a `Loan` class and a test application that uses the class.  

@@ -16,7 +16,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
  The .NET Framework provides classes that enable you to use caching in .NET Framework applications. These classes are located in the <xref:System.Runtime.Caching> namespace.
 
 > [!NOTE]
->  The <xref:System.Runtime.Caching> namespace is new in the .NET Framework 4. This namespace makes caching is available to all .NET Framework applications. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes.
+> The <xref:System.Runtime.Caching> namespace is new in the .NET Framework 4. This namespace makes caching is available to all .NET Framework applications. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes.
 
  This walkthrough shows you how to use the caching functionality that is available in the .NET Framework as part of a [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application. In the walkthrough, you cache the contents of a text file.
 
@@ -77,7 +77,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
  Therefore, the next step is to change the .NET Framework target and add a reference to the <xref:System.Runtime.Caching> namespace.
 
 > [!NOTE]
->  The procedure for changing the .NET Framework target is different in a Visual Basic project and in a Visual C# project.
+> The procedure for changing the .NET Framework target is different in a Visual Basic project and in a Visual C# project.
 
 #### To change the target .NET Framework in Visual Basic
 

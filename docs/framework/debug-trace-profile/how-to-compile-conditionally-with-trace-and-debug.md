@@ -87,7 +87,7 @@ Delete the compiler directive from your source code.
 Comment out the compiler directive.  
   
 > [!NOTE]
->  When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
+> When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
   
 ## See also
 

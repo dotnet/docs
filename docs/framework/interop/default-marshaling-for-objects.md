@@ -81,7 +81,7 @@ interface MarshalObject {
 ```  
   
 > [!NOTE]
->  The interop marshaler automatically frees any allocated object inside the variant after the call.  
+> The interop marshaler automatically frees any allocated object inside the variant after the call.  
   
  The following example shows a formatted value type.  
   

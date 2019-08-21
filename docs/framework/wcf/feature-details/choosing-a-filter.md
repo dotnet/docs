@@ -34,7 +34,7 @@ EndpointAddressMessageFilter address1 = new EndpointAddressMessageFilter(new End
 ```  
   
 > [!NOTE]
->  It is important to note that the host name portion of an address can differ based on whether the client uses the fully qualified domain name, NetBIOS name, IP address, or other name. Because differing values can refer to the same host, the default behavior for this comparison is to not use the host name portion of the address when performing matches.  
+> It is important to note that the host name portion of an address can differ based on whether the client uses the fully qualified domain name, NetBIOS name, IP address, or other name. Because differing values can refer to the same host, the default behavior for this comparison is to not use the host name portion of the address when performing matches.  
 >   
 >  This behavior can be modified to allow the comparison to evaluate the host name when configuring the Routing Service programmatically.  
   
@@ -52,7 +52,7 @@ PrefixEndpointAddressMessageFilter prefix1 = new PrefixEndpointAddressMessageFil
 ```  
   
 > [!NOTE]
->  It is important to note that the host name portion of an address can differ based on whether the client uses the fully qualified domain name, NetBIOS name, IP address, or other name. Because differing values can refer to the same host, the default behavior for this comparison is to not use the host name portion of the address when performing matches.  
+> It is important to note that the host name portion of an address can differ based on whether the client uses the fully qualified domain name, NetBIOS name, IP address, or other name. Because differing values can refer to the same host, the default behavior for this comparison is to not use the host name portion of the address when performing matches.  
   
  This filter should be used when routing incoming messages that share a common address prefix.  
   

@@ -6,7 +6,7 @@ dev_langs:
   - "vb"
 author: thraka
 ms.author: adegeo
-ms.date: 07/25/2019
+ms.date: 08/21/2019
 ---
 
 # What's new in .NET Core 3.0 (Preview 8)

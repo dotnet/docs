@@ -11,7 +11,7 @@ ms.author: "ronpet"
 This section explains how to create, configure, debug, secure, and deploy your .NET Framework apps. The section also provides information about technology areas such as dynamic programming, interoperability, extensibility, memory management, and threading.  
   
 ## In This Section  
- [Application Essentials](../../docs/standard/application-essentials.md)  
+ [Application Essentials](../standard/application-essentials.md)  
  Provides information about basic app development tasks, such as programming with app domains and assemblies, using attributes, formatting and parsing base types, using collections, handling events and exceptions, using files and data streams, and using generics.  
   
  [Data and Modeling](../../docs/framework/data/index.md)  
@@ -32,7 +32,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Windows Service Applications](../../docs/framework/windows-services/index.md)  
  Explains how you can use Visual Studio and the .NET Framework to create an app that is installed as a service, and start, stop, and otherwise control its behavior.  
   
- [Parallel Processing, Concurrency, and Async Programming in .NET](../../docs/standard/parallel-processing-and-concurrency.md)  
+ [Parallel Processing, Concurrency, and Async Programming in .NET](../standard/parallel-processing-and-concurrency.md)  
  Provides information about managed threading, parallel programming, and asynchronous programming design patterns.  
   
  [Network Programming in the .NET Framework](../../docs/framework/network-programming/index.md)  
@@ -44,13 +44,13 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Compiling Apps with .NET Native](../../docs/framework/net-native/index.md)  
  Explains how you can use the .NET Native precompilation technology to build and deploy Windows Store apps. .NET Native compiles apps that are written in managed code (C#) and that target the .NET Framework to native code.  
   
- [Security](../../docs/standard/security/index.md)  
+ [Security](../standard/security/index.md)  
  Provides information about the classes and services in the .NET Framework that facilitate secure app development.  
   
  [Debugging, Tracing, and Profiling](../../docs/framework/debug-trace-profile/index.md)  
  Explains how to test, optimize, and profile .NET Framework apps and the app environment. This section includes information for administrators as well as developers.  
   
- [Developing for Multiple Platforms](../../docs/standard/cross-platform/index.md)  
+ [Developing for Multiple Platforms](../standard/cross-platform/index.md)  
  Provides information about how you can use the .NET Framework to build assemblies that can be shared across multiple platforms and multiple devices such as phones, desktop, and web.  
   
  [Deployment](../../docs/framework/deployment/index.md)  

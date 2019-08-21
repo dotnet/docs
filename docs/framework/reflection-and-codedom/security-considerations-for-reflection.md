@@ -92,7 +92,7 @@ For example, suppose you grant an application domain Internet permissions plus <
 
 ## Serialization
 
-For serialization, <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> flag provides the ability to get and set members of serializable types, regardless of accessibility. This permission enables code to discover and change the private state of an instance. (In addition to being granted the appropriate permissions, the type must be [marked](../../../docs/standard/attributes/applying-attributes.md) as serializable in metadata.)
+For serialization, <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> flag provides the ability to get and set members of serializable types, regardless of accessibility. This permission enables code to discover and change the private state of an instance. (In addition to being granted the appropriate permissions, the type must be [marked](../../standard/attributes/applying-attributes.md) as serializable in metadata.)
 
 ## Parameters of Type MethodInfo
 
@@ -115,5 +115,5 @@ Avoid writing public members that take <xref:System.Reflection.MethodInfo> param
 - [Code Access Security](../../../docs/framework/misc/code-access-security.md)
 - [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)
 - [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
-- [Applying Attributes](../../../docs/standard/attributes/applying-attributes.md)
+- [Applying Attributes](../../standard/attributes/applying-attributes.md)
 - [Accessing Custom Attributes](../../../docs/framework/reflection-and-codedom/accessing-custom-attributes.md)

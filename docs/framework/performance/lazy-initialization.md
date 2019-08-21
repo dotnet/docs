@@ -134,7 +134,7 @@ ms.author: "ronpet"
  [!code-vb[Lazy#9](../../../samples/snippets/visualbasic/VS_Snippets_Misc/lazy/vb/lazy_vb.vb#9)]  
   
 ## Thread-Local Variables in Parallel.For and ForEach  
- When you use the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method or <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method to iterate over data sources in parallel, you can use the overloads that have built-in support for thread-local data. In these methods, the thread-locality is achieved by using local delegates to create, access, and clean up the data. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md) and [How to: Write a Parallel.ForEach Loop with Partition-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md).  
+ When you use the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method or <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method to iterate over data sources in parallel, you can use the overloads that have built-in support for thread-local data. In these methods, the thread-locality is achieved by using local delegates to create, access, and clean up the data. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../../standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md) and [How to: Write a Parallel.ForEach Loop with Partition-Local Variables](../../standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md).  
   
 ## Using Lazy Initialization for Low-Overhead Scenarios  
  In scenarios where you have to lazy-initialize a large number of objects, you might decide that wrapping each object in a <xref:System.Lazy%601> requires too much memory or too many computing resources. Or, you might have stringent requirements about how lazy initialization is exposed. In such cases, you can use the `static` (`Shared` in Visual Basic) methods of the <xref:System.Threading.LazyInitializer?displayProperty=nameWithType> class to lazy-initialize each object without wrapping it in an instance of <xref:System.Lazy%601>.  
@@ -148,7 +148,7 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)
-- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
-- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [Managed Threading Basics](../../standard/threading/managed-threading-basics.md)
+- [Threads and Threading](../../standard/threading/threads-and-threading.md)
+- [Task Parallel Library (TPL)](../../standard/parallel-programming/task-parallel-library-tpl.md)
 - [How to: Perform Lazy Initialization of Objects](../../../docs/framework/performance/how-to-perform-lazy-initialization-of-objects.md)

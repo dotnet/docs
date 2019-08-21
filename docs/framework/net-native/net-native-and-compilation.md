@@ -11,7 +11,7 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
 ## .NET Native: Generating native binaries  
  An application that targets the .NET Framework and that is not compiled by using the .NET Native tool chain consists of your application assembly, which includes the following:  
   
-- [Metadata](../../../docs/standard/metadata-and-self-describing-components.md) that describes the assembly, its dependencies, the types it contains, and their members. The metadata is used for reflection and late-bound access, and in some cases by compiler and build tools as well.  
+- [Metadata](../../standard/metadata-and-self-describing-components.md) that describes the assembly, its dependencies, the types it contains, and their members. The metadata is used for reflection and late-bound access, and in some cases by compiler and build tools as well.  
   
 - Implementation code. This consists of intermediate language (IL) opcodes. At runtime, the just-in-time (JIT) compiler translates it into native code for the target platform.  
   
@@ -44,7 +44,7 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
 - It replaces the full CLR with a refactored runtime that primarily contains the garbage collector. The refactored runtime is found in a library named mrt100_app.dll that is local to the app and is only a few hundred kilobytes in size. This is possible because static linking eliminates the need for many of the services performed by the common language runtime.  
   
     > [!NOTE]
-    >  .NET Native uses the same garbage collector as the standard common language runtime. In the .NET Native garbage collector, background garbage collection is enabled by default. For more information about garbage collection, see [Fundamentals of Garbage Collection](../../../docs/standard/garbage-collection/fundamentals.md).  
+    >  .NET Native uses the same garbage collector as the standard common language runtime. In the .NET Native garbage collector, background garbage collection is enabled by default. For more information about garbage collection, see [Fundamentals of Garbage Collection](../../standard/garbage-collection/fundamentals.md).  
   
 > [!IMPORTANT]
 > .NET Native compiles an entire application to a native application. It does not allow you to compile a single assembly that contains a class library to native code so that it can be called independently from managed code.  
@@ -96,7 +96,7 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
   
 ## See also
 
-- [Metadata and Self-Describing Components](../../../docs/standard/metadata-and-self-describing-components.md)
+- [Metadata and Self-Describing Components](../../standard/metadata-and-self-describing-components.md)
 - [Inside .NET Native (Channel 9 Video)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)
 - [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)
 - [.NET Native General Troubleshooting](../../../docs/framework/net-native/net-native-general-troubleshooting.md)

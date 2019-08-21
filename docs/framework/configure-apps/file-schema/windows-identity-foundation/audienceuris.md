@@ -52,7 +52,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<securityTokenHandlerConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
+|[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
   
 ## Remarks  
  By default, the collection is empty; use `<add>`, `<clear>`, and `<remove>` elements to modify the collection. <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> and <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> objects use the values in the audience URI collection to configure any allowed audience URI restrictions in <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> objects.  
@@ -60,7 +60,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
  The `<audienceUris>` element is represented by the <xref:System.IdentityModel.Configuration.AudienceUriElementCollection> class. An individual URI added to the collection is represented by the <xref:System.IdentityModel.Configuration.AudienceUriElement> class.  
   
 > [!NOTE]
-> The use of the `<audienceUris>` element as a child element of the [\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
+> The use of the `<audienceUris>` element as a child element of the [\<identityConfiguration>](identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
   
 ## Example  
  The following XML shows how to configure the acceptable audience URIs for an application. This example configures a single URI. Tokens scoped for this URI will be accepted, all others will be rejected.  

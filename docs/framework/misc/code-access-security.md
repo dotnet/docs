@@ -63,6 +63,6 @@ Security stack walk
 |[Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)|Describes code access security and its most common uses.|  
 |[Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)|Describes the security transparency model in the .NET Framework 4.|  
 |[Using Libraries from Partially Trusted Code](../../../docs/framework/misc/using-libraries-from-partially-trusted-code.md)|Describes how to enable libraries for use with unmanaged code and how to use libraries from unmanaged code.|  
-|[Key Security Concepts](../../../docs/standard/security/key-security-concepts.md)|Provides an overview of many of the key terms and concepts used in the .NET Framework security system.|  
-|[Role-Based Security](../../../docs/standard/security/role-based-security.md)|Describes how to incorporate security based on roles.|  
-|[Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)|Describes how to incorporate cryptography into your applications.|
+|[Key Security Concepts](../../standard/security/key-security-concepts.md)|Provides an overview of many of the key terms and concepts used in the .NET Framework security system.|  
+|[Role-Based Security](../../standard/security/role-based-security.md)|Describes how to incorporate security based on roles.|  
+|[Cryptographic Services](../../standard/security/cryptographic-services.md)|Describes how to incorporate cryptography into your applications.|

@@ -12,7 +12,7 @@ Applications typically consist of many parts that must all be protected from vul
 > [!IMPORTANT]
 > You must also validate user input at the data source as well as in the client application. An attacker may choose to circumvent your application and attack the data source directly.  
   
- [Security and User Input](../../../../docs/standard/security/security-and-user-input.md)  
+ [Security and User Input](../../../standard/security/security-and-user-input.md)  
  Describes how to handle subtle and potentially dangerous bugs involving user input.  
   
  [Validating User Input in ASP.NET Web Pages](https://docs.microsoft.com/previous-versions/aspnet/7kh55542(v=vs.100))  
@@ -21,7 +21,7 @@ Applications typically consist of many parts that must all be protected from vul
  [User Input in Windows Forms](../../../../docs/framework/winforms/user-input-in-windows-forms.md)  
  Provides links and information for validating mouse and keyboard input in a Windows Forms application.  
   
- [.NET Framework Regular Expressions](../../../../docs/standard/base-types/regular-expressions.md)  
+ [.NET Framework Regular Expressions](../../../standard/base-types/regular-expressions.md)  
  Describes how to use the <xref:System.Text.RegularExpressions.Regex> class to check the validity of user input.  
   
 ## Windows Applications  

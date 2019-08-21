@@ -65,7 +65,7 @@ Most data types have a common representation in both managed and unmanaged memor
 |[System.Valuetype](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0t2cwe11(v=vs.100))|Converts to a structure with a fixed memory layout.|  
 |[System.Szarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
   
- Class and object types are supported only by COM interop. For corresponding types in Visual Basic, C#, and C++, see the [Class Library Overview](../../../docs/standard/class-library-overview.md).  
+ Class and object types are supported only by COM interop. For corresponding types in Visual Basic, C#, and C++, see the [Class Library Overview](../../standard/class-library-overview.md).  
   
 ## See also
 

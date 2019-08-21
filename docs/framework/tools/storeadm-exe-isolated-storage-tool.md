@@ -57,5 +57,5 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
 ## See also
 
 - [Tools](../../../docs/framework/tools/index.md)
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- [Isolated Storage](../../standard/io/isolated-storage.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

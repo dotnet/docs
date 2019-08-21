@@ -7,7 +7,7 @@ ms.assetid: fd9b50ed-98a1-4518-836d-e4e02c670822
 # \<tracking>
 Represents a configuration section for defining tracking settings for a workflow service.  
   
- For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  
+ For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  
   
 \<system.serviceModel>  
 \<tracking>  
@@ -80,8 +80,8 @@ Represents a configuration section for defining tracking settings for a workflow
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<participants>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/participants.md)|A collection of configuration elements defining participants that subscribe to tracking records. The tracking participants contain the logic to process the payload from the tracking records (for example, they could choose to write to a file).|  
-|[\<trackingProfile>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/trackingprofile.md)|A tracking profile to filter tracking records emitted from a workflow instance.|  
+|[\<participants>](participants.md)|A collection of configuration elements defining participants that subscribe to tracking records. The tracking participants contain the logic to process the payload from the tracking records (for example, they could choose to write to a file).|  
+|[\<trackingProfile>](trackingprofile.md)|A tracking profile to filter tracking records emitted from a workflow instance.|  
   
 ### Parent Elements  
   
@@ -95,4 +95,4 @@ Represents a configuration section for defining tracking settings for a workflow
 ## See also
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection?displayProperty=nameWithType>
-- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)

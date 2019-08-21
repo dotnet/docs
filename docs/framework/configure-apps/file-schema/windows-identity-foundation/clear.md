@@ -38,4 +38,4 @@ Clears all security token handlers from the current token handler collection.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<securityTokenHandlers>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlers.md)|Specifies a collection of security token handlers that are registered with the endpoint.|
+|[\<securityTokenHandlers>](securitytokenhandlers.md)|Specifies a collection of security token handlers that are registered with the endpoint.|

@@ -192,5 +192,5 @@ Failed, as expected: Request failed.
 
 - [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Security in Native and .NET Framework Code](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))
-- [Role-Based Security](../../../../docs/standard/security/role-based-security.md)
+- [Role-Based Security](../../../standard/security/role-based-security.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -167,5 +167,5 @@ namespace LogUtil
 - <xref:System.Security.Permissions.SecurityPermission>
 - <xref:System.Security.Permissions.FileIOPermission>
 - <xref:System.Security.Permissions.SecurityAction>
-- [Attributes](../../../docs/standard/attributes/index.md)
+- [Attributes](../../standard/attributes/index.md)
 - [Code Access Security](../../../docs/framework/misc/code-access-security.md)

@@ -7,7 +7,7 @@ ms.assetid: 9096e812-626a-409a-9eda-c31a60b84c55
 # \<workflowInstanceQuery>
 Represents a query that tracks workflow instance life cycle changes such as a started or completed event.  
   
- For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
+ For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  
   
 \<system.serviceModel>  
 \<tracking>  
@@ -44,13 +44,13 @@ Represents a query that tracks workflow instance life cycle changes such as a st
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<states>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/states.md)|A collection of subscribed states from the tracked workflow instance when the tracking records are created.|  
+|[\<states>](states.md)|A collection of subscribed states from the tracked workflow instance when the tracking records are created.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<workflowInstanceQueries>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflowinstancequeries.md)|Represents a collection of configuration elements that track workflow instance life cycle changes such as a started or completed event.|  
+|[\<workflowInstanceQueries>](workflowinstancequeries.md)|Represents a collection of configuration elements that track workflow instance life cycle changes such as a started or completed event.|  
   
 ## Remarks  
  The <xref:System.Activities.Tracking.WorkflowInstanceQuery> is used to subscribe to the following <xref:System.Activities.Tracking.TrackingRecord> objects:  
@@ -82,5 +82,5 @@ Represents a query that tracks workflow instance life cycle changes such as a st
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
-- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
-- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+- [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)

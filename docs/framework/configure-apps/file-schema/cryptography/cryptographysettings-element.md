@@ -74,4 +74,4 @@ Contains cryptography settings.
 
 - [Configuration File Schema](../index.md)
 - [Cryptography Settings Schema](index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)

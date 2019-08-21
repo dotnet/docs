@@ -9,7 +9,7 @@ Some database operations, such as command executions, can take significant time 
  The .NET Framework provides several standard asynchronous design patterns that developers can use to take advantage of background threads and free the user interface or high-priority threads to complete other operations. ADO.NET supports these same design patterns in its <xref:System.Data.SqlClient.SqlCommand> class. Specifically, the <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery%2A>, <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A>, and <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> methods, paired with the <xref:System.Data.SqlClient.SqlCommand.EndExecuteNonQuery%2A>, <xref:System.Data.SqlClient.SqlCommand.EndExecuteReader%2A>, and <xref:System.Data.SqlClient.SqlCommand.EndExecuteXmlReader%2A> methods, provide the asynchronous support.  
   
 > [!NOTE]
-> Asynchronous programming is a core feature of the .NET Framework, and ADO.NET takes full advantage of the standard design patterns. For more information about the different asynchronous techniques available to developers, see [Calling Synchronous Methods Asynchronously](../../../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+> Asynchronous programming is a core feature of the .NET Framework, and ADO.NET takes full advantage of the standard design patterns. For more information about the different asynchronous techniques available to developers, see [Calling Synchronous Methods Asynchronously](../../../../standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
  Although using asynchronous techniques with ADO.NET features does not add any special considerations, it is likely that more developers will use asynchronous features in ADO.NET than in other areas of the .NET Framework. It is important to be aware of the benefits and pitfalls of creating multithreaded applications. The examples that follow in this section point out several important issues that developers will need to take into account when building applications that incorporate multithreaded functionality.  
   
@@ -26,5 +26,5 @@ Some database operations, such as command executions, can take significant time 
 ## See also
 
 - [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
-- [Calling Synchronous Methods Asynchronously](../../../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)
+- [Calling Synchronous Methods Asynchronously](../../../../standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

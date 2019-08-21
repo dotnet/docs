@@ -15,8 +15,8 @@ ms.author: "mairaw"
 
 Adds custom application settings. Each **\<add>** tag contains a key/value pair.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<sectionName>**](~/docs/framework/configure-apps/file-schema/custom-element-2.md)   
+[**\<configuration>**](configuration-element.md)   
+&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
 ## Syntax
@@ -36,7 +36,7 @@ Adds custom application settings. Each **\<add>** tag contains a key/value pair.
 
 | Element | Description |
 | ------- | ------------|
-| [**\<sectionName>** Element](~/docs/framework/configure-apps/file-schema/custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+| [**\<sectionName>** Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements
 
@@ -63,4 +63,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](index.md)

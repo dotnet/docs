@@ -18,7 +18,7 @@ This sample demonstrates how to implement a typical service and a typical client
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\wsHttp`  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample exposes the `ICalculator` contract using the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). The configuration of this binding has been expanded in the Web.config file.  
   

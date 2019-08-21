@@ -13,12 +13,12 @@ ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
 ---
 # How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component
 > [!NOTE]
->  Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
+> Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
   
  The <xref:System.Windows.Forms.NotifyIcon> component displays an icon in the status notification area of the taskbar. Commonly, applications enable you to right-click this icon to send commands to the application it represents. By associating a <xref:System.Windows.Forms.ContextMenu> component with the <xref:System.Windows.Forms.NotifyIcon> component, you can add this functionality to your applications.  
   
 > [!NOTE]
->  If you want your application to be minimized at startup while displaying an instance of the <xref:System.Windows.Forms.NotifyIcon> component in the taskbar, set the main form's <xref:System.Windows.Forms.Form.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState.Minimized> and be sure the <xref:System.Windows.Forms.NotifyIcon> component's <xref:System.Windows.Forms.NotifyIcon.Visible%2A> property is set to `true`.  
+> If you want your application to be minimized at startup while displaying an instance of the <xref:System.Windows.Forms.NotifyIcon> component in the taskbar, set the main form's <xref:System.Windows.Forms.Form.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState.Minimized> and be sure the <xref:System.Windows.Forms.NotifyIcon> component's <xref:System.Windows.Forms.NotifyIcon.Visible%2A> property is set to `true`.  
   
 ### To associate a shortcut menu with the NotifyIcon component at design time  
   
@@ -43,7 +43,7 @@ ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
      With this property set, the shortcut menu will be displayed when the icon on the taskbar is clicked.  
   
     > [!NOTE]
-    >  The following code example creates a basic menu structure. You will need to customize the menu choices to those that fit the application you are developing. Additionally, you will want to write code to handle the <xref:System.Windows.Forms.MenuItem.Click> events for these menu items.  
+    > The following code example creates a basic menu structure. You will need to customize the menu choices to those that fit the application you are developing. Additionally, you will want to write code to handle the <xref:System.Windows.Forms.MenuItem.Click> events for these menu items.  
   
     ```vb  
     Public ContextMenu1 As New ContextMenu  
@@ -113,7 +113,7 @@ public:
 ```  
   
 > [!NOTE]
->  You must initialize `notifyIcon1` and `contextMenu1,` which you can do by including the following statements in the constructor of your form:  
+> You must initialize `notifyIcon1` and `contextMenu1,` which you can do by including the following statements in the constructor of your form:  
   
 ```cpp  
 notifyIcon1 = gcnew System::Windows::Forms::NotifyIcon();  

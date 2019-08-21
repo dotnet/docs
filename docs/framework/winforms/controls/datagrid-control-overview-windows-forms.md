@@ -23,7 +23,7 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
 ---
 # DataGrid Control Overview (Windows Forms)
 > [!NOTE]
->  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
+> The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
  The Windows Forms <xref:System.Windows.Forms.DataGrid> control displays data in a series of rows and columns. The simplest case is when the grid is bound to a data source with a single table that contains no relationships. In that case, the data appears in simple rows and columns, as in a spreadsheet. For more information about binding data to other controls, see [Data Binding and Windows Forms](../data-binding-and-windows-forms.md).  
   
@@ -38,7 +38,7 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
  The display and manipulation of data are separate functions: The control handles the user interface, whereas data updates are handled by the Windows Forms data-binding architecture and by .NET Framework data providers. Therefore, multiple controls bound to the same data source will stay in sync.  
   
 > [!NOTE]
->  If you are familiar with the DataGrid control in Visual Basic 6.0, you will find some significant differences in the Windows Forms <xref:System.Windows.Forms.DataGrid> control.  
+> If you are familiar with the DataGrid control in Visual Basic 6.0, you will find some significant differences in the Windows Forms <xref:System.Windows.Forms.DataGrid> control.  
   
  When the grid is bound to a <xref:System.Data.DataSet>, the columns and rows are automatically created, formatted, and filled. For more information, see [Data Binding and Windows Forms](../data-binding-and-windows-forms.md). Following the generation of the <xref:System.Windows.Forms.DataGrid> control, you can add, delete, rearrange, and format columns and rows depending on your needs.  
   
@@ -123,7 +123,7 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
  Because you specify which columns are included in the data grid by assigning them a column style and no column style has been assigned to the columns, you can include columns of data in the dataset that are not displayed in the grid. However, because the data column is included in the dataset, you can programmatically edit the data that is not displayed.  
   
 > [!NOTE]
->  In general, create column styles and add them to the column styles collection before adding table styles to the table styles collection. When you add an empty table style to the collection, column styles are automatically generated for you. Consequently, an exception will be thrown if you try to add new column styles with duplicate <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> values to the column styles collection.  
+> In general, create column styles and add them to the column styles collection before adding table styles to the table styles collection. When you add an empty table style to the collection, column styles are automatically generated for you. Consequently, an exception will be thrown if you try to add new column styles with duplicate <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> values to the column styles collection.  
 >   
 >  Sometimes, you will want to just tweak one column among many columns; for example, the dataset contains 50 columns and you only want 49 of them. In this case, it is easier to import all 50 columns and programmatically remove one, rather than programmatically adding each of the 49 individual columns you want.  
   

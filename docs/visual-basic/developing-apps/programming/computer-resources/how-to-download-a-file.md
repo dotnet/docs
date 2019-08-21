@@ -25,7 +25,7 @@ The <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method can be u
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 > [!IMPORTANT]
->  Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a Visual Basic source file. Verify all inputs before using the data in your application. The contents of the file may not be what is expected, and methods to read from the file may fail.  
+> Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a Visual Basic source file. Verify all inputs before using the data in your application. The contents of the file may not be what is expected, and methods to read from the file may fail.  
   
 ### To download a file  
   

@@ -17,7 +17,7 @@ This sample contains example data in .csv format, together with methods that tra
  The data represents a subset of the Northwind database. Fifty (50) customer records are included, but not all fields. A subset of the rows from the Orders and corresponding Order_Detail data for every Customer is included. All Products are included.  
   
 > [!NOTE]
->  The data set is not large enough to demonstrate that PLINQ is faster than LINQ to Objects for queries that contain just basic `where` and `select` clauses. To observe speed increases for small data sets such as this, use queries that contain computationally expensive operations on every element in the data set.  
+> The data set is not large enough to demonstrate that PLINQ is faster than LINQ to Objects for queries that contain just basic `where` and `select` clauses. To observe speed increases for small data sets such as this, use queries that contain computationally expensive operations on every element in the data set.  
   
 ### To set up this sample  
   

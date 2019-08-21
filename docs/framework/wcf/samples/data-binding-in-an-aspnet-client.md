@@ -7,7 +7,7 @@ ms.assetid: 68b49fa6-94e7-4d4c-a34e-902a2b3770b6
 This sample demonstrates how to bind data returned by a typical Windows Communication Foundation (WCF) service in a Web Forms application.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample demonstrates a service that implements a contract that defines a request-reply communication pattern. The sample consists of a client Web Forms application accessible from a browser and a WCF service hosted by Internet Information Services (IIS).  
   

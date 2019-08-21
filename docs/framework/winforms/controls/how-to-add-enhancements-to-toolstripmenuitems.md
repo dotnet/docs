@@ -53,7 +53,7 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
 - Set the menu command's <xref:System.Windows.Forms.ToolStripItem.Image%2A> property to the name of the image. If the <xref:System.Windows.Forms.ToolStripItemDisplayStyle> property of this menu command is set to <xref:System.Windows.Forms.ToolStripItemDisplayStyle.Text> or <xref:System.Windows.Forms.ToolStripItemDisplayStyle.None>, the image cannot be displayed.  
   
 > [!NOTE]
->  The image margin can also show a check mark if you so choose. Also, you can set the <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property of the image to `true`, and the image will appear with a hatched border around it at run time.  
+> The image margin can also show a check mark if you so choose. Also, you can set the <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property of the image to `true`, and the image will appear with a hatched border around it at run time.  
   
 ### To display a shortcut key for a menu command  
   
@@ -70,7 +70,7 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
      To navigate to this menu command, press ALT to give focus to the <xref:System.Windows.Forms.MenuStrip>, and press the access key of the menu name. When the menu opens and shows items with access keys, you only need to press the access key to select the menu command.  
   
 > [!NOTE]
->  Avoid defining duplicate access keys, such as defining ALT+F twice in the same menu system. The selection order of duplicate access keys cannot be guaranteed.  
+> Avoid defining duplicate access keys, such as defining ALT+F twice in the same menu system. The selection order of duplicate access keys cannot be guaranteed.  
   
 ### To display a separator bar between menu commands  
   

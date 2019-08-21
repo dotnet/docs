@@ -7,7 +7,7 @@ ms.assetid: 1a4a4038-d8e6-41dd-99ea-93bd76286772
 Windows Workflow Foundation (WF) in .NET Framework 4.5 introduced many new features, including several enhancements to the workflow designer experience. This topic details which of these features are supported in the rehosted designer, and which ones are currently not supported.
 
 > [!NOTE]
->  For a list of all of the new Windows Workflow Foundation (WF) features introduced in .NET Framework 4.5, including those that are unrelated to designer rehosting, see [What's New in Windows Workflow Foundation in .NET 4.5](whats-new-in-wf-in-dotnet.md).
+> For a list of all of the new Windows Workflow Foundation (WF) features introduced in .NET Framework 4.5, including those that are unrelated to designer rehosting, see [What's New in Windows Workflow Foundation in .NET 4.5](whats-new-in-wf-in-dotnet.md).
 
 ## Activities
  The built-in activity library contains new activities and new features for existing activities. All of these new activities are supported in the rehosted designer. For more information on these new activities, see the [Activities](whats-new-in-wf-in-dotnet.md#BKMK_NewActivities) section of [What's New in Windows Workflow Foundation in .NET 4.5](whats-new-in-wf-in-dotnet.md).

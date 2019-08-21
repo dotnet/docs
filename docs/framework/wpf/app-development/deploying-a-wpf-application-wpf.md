@@ -90,7 +90,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 - *ApplicationName*.exe.manifest: The application manifest.  
   
 > [!NOTE]
->  For more information about deployment and application manifests, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
+> For more information about deployment and application manifests, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
  These files are produced when an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] is built. For more information, see [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)). Like markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages, [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are typically published to a Web server and viewed using Internet Explorer.  
   

@@ -13,7 +13,7 @@ A *model-declared function* is a function that is declared in a conceptual model
 - The type of the return value. (Optional)  
   
     > [!NOTE]
-    >  If no return value is specified, the return type is void.  
+    > If no return value is specified, the return type is void.  
   
 - Parameter information, including parameter name and type. (Optional)  
   

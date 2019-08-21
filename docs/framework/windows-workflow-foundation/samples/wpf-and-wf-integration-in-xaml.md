@@ -16,7 +16,7 @@ This sample demonstrates how to create an application that uses Windows Presenta
  The last point of interest in this sample is a <xref:System.Workflow.ComponentModel.Serialization.MarkupExtension> called `DelegateActivityExtension`. The `ProvideValue` method of this markup extension returns a delegate that invokes an embedded activity. This activity runs in an environment that includes the WPF data context and any `x:Name` values in scope. In the `GenericInvoke` method, this environment is provided to the activity through a <xref:System.Activities.Hosting.SymbolResolver> extension. This extension is added to a <xref:System.Activities.WorkflowInvoker> that is then used to invoke the embedded activity whenever the markup extension’s delegate is invoked.
 
 > [!NOTE]
->  The default designer does not support the ShowWindow activity; as such, the ShowWindow.Xaml file does not display correctly in the designer.
+> The default designer does not support the ShowWindow activity; as such, the ShowWindow.Xaml file does not display correctly in the designer.
 
 #### To use this sample
 

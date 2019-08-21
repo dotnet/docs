@@ -76,7 +76,7 @@ You can call the <xref:System.Data.Services.Client.DataServiceQuery%601.AddQuery
 Query options give you another way to express the syntactic components of a LINQ query. For more information, see [LINQ Considerations](../../../../docs/framework/data/wcf/linq-considerations-wcf-data-services.md).
 
 > [!NOTE]
->  The `$select` query option cannot be added to a query URI by using the <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method. We recommend that you use the LINQ <xref:System.Linq.Enumerable.Select%2A> method to have the client generate the `$select` query option in the request URI.
+> The `$select` query option cannot be added to a query URI by using the <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method. We recommend that you use the LINQ <xref:System.Linq.Enumerable.Select%2A> method to have the client generate the `$select` query option in the request URI.
 
 <a name="executingQueries"></a>
 

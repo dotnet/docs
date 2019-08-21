@@ -35,7 +35,7 @@ Removes a scheme setting for a scheme name.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<schemeSettings> Element (Uri Settings)](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
+|[\<schemeSettings> Element (Uri Settings)](schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
   
 ## Remarks  
  By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
@@ -76,4 +76,4 @@ Removes a scheme setting for a scheme name.
 - <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>
 - <xref:System.GenericUriParserOptions?displayProperty=nameWithType>
 - <xref:System.Uri?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

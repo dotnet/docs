@@ -23,4 +23,4 @@ This example illustrates how to navigate to entries in back navigation history.
  **CanGoBack** and **GoBack** are implemented by <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, and <xref:System.Windows.Navigation.NavigationService>.  
   
 > [!NOTE]
->  If you call **GoBack**, and there are no entries in back navigation history, an <xref:System.InvalidOperationException> is raised.
+> If you call **GoBack**, and there are no entries in back navigation history, an <xref:System.InvalidOperationException> is raised.

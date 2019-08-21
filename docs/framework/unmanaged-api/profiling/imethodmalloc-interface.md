@@ -21,7 +21,7 @@ ms.author: "mairaw"
 Provides a method to allocate memory for a new Microsoft intermediate language (MSIL) function body.  
   
 > [!NOTE]
->  The `IMethodMalloc` interface is a simple memory allocator. It allows you to allocate memory, but not to free it.  
+> The `IMethodMalloc` interface is a simple memory allocator. It allows you to allocate memory, but not to free it.  
   
 ## Methods  
   

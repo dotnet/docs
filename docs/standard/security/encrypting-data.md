@@ -37,7 +37,7 @@ CryptoStream cryptStream = new CryptoStream(myStream, rmCrypto.CreateEncryptor()
  The following example shows the entire process of creating a stream, encrypting the stream, writing to the stream, and closing the stream. This example creates a network stream that is encrypted using the **CryptoStream** class and the **RijndaelManaged** class. A message is written to the encrypted stream with the <xref:System.IO.StreamWriter> class.  
   
 > [!NOTE]
->  You can also use this example to write to a file. To do that, delete the <xref:System.Net.Sockets.TcpClient> reference and replace the <xref:System.Net.Sockets.NetworkStream> with a <xref:System.IO.FileStream>.  
+> You can also use this example to write to a file. To do that, delete the <xref:System.Net.Sockets.TcpClient> reference and replace the <xref:System.Net.Sockets.NetworkStream> with a <xref:System.IO.FileStream>.  
   
 ```vb  
 Imports System  

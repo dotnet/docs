@@ -7,7 +7,7 @@ ms.assetid: a7c11f0a-9e68-4f03-a6b1-39cf478d1a89
 This sample demonstrates how to integrate a Windows Communication Foundation (WCF) client application with an existing ASMX Web service.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample consists of a client console program (.exe) and a service library (.dll) hosted by Internet Information Services (IIS). The service is an ASMX Web Service that implements a contract that defines a request-reply communication pattern. The service exposes math operations (`Add`, `Subtract`, `Multiply`, and `Divide`). The client makes synchronous requests to a math operation and the service replies with the result. Client activity is visible in the console window.  
   

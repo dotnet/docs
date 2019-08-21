@@ -7,7 +7,7 @@ ms.assetid: 47d7c5c2-1e6f-4619-8003-a0ff67dcfbd6
 This sample demonstrates how to send and receive a set of related messages in queued communication over the Message Queuing (MSMQ) transport. This sample uses the `netMsmqBinding` binding. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -164,7 +164,7 @@ using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Requ
 ```
 
 > [!NOTE]
->  You can use only a single transaction for all messages in the session and all messages in the session must be sent before committing the transaction. Closing the client closes the session. Therefore, the client has to be closed before the transaction is completed to send all messages in the session to the queue.  
+> You can use only a single transaction for all messages in the session and all messages in the session must be sent before committing the transaction. Closing the client closes the session. Therefore, the client has to be closed before the transaction is completed to send all messages in the session to the queue.  
   
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages.  
   

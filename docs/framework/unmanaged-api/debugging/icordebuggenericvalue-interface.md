@@ -36,7 +36,7 @@ A subclass of "ICorDebugValue" that applies to all values. This interface provid
  This interface does not support being called remotely, either cross-machine or cross-process.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

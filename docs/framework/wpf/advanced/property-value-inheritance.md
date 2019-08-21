@@ -27,7 +27,7 @@ Property value inheritance is a feature of the [!INCLUDE[TLA#tla_winclient](../.
  Attached properties are conceptually similar to global properties; you can check for the value on any <xref:System.Windows.DependencyObject> and get a valid result. The typical scenario for attached properties is to set property values on child elements, and that scenario is more effective if the property in question is an attached property that is always implicitly present as an attached property on each element (<xref:System.Windows.DependencyObject>) in the tree.  
   
 > [!NOTE]
->  Although property value inheritance might appear to work for nonattached dependency properties, the inheritance behavior for a nonattached property through certain element boundaries in the run-time tree is undefined. Always use <xref:System.Windows.DependencyProperty.RegisterAttached%2A> to register properties where you specify <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> in the metadata.  
+> Although property value inheritance might appear to work for nonattached dependency properties, the inheritance behavior for a nonattached property through certain element boundaries in the run-time tree is undefined. Always use <xref:System.Windows.DependencyProperty.RegisterAttached%2A> to register properties where you specify <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> in the metadata.  
   
 <a name="InheritanceContext"></a>   
 ## Inheriting Property Values Across Tree Boundaries  

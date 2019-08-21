@@ -17,7 +17,7 @@ Hiding menu items is a way to control the user interface (UI) of your applicatio
      When you hide the top-level menu item, all menu items within that menu are also hidden. If you click somewhere other than on the <xref:System.Windows.Forms.MenuStrip> after setting <xref:System.Windows.Forms.ToolStripItem.Visible%2A> to `false`, the entire top-level menu item and its submenu items disappear from your form, thus showing you the run-time effect of your action. To display the hidden top-level menu item at design time, click on the <xref:System.Windows.Forms.MenuStrip> in the **Component Tray**, in **Document Outline**, or at the top of the property grid.
 
 > [!NOTE]
->  You will rarely hide an entire menu except for multiple document interface (MDI) child menus in a merging scenario.
+> You will rarely hide an entire menu except for multiple document interface (MDI) child menus in a merging scenario.
 
 ## To hide a submenu item
 

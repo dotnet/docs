@@ -35,7 +35,7 @@ The following sections describe attributes, child elements, and parent elements.
 |Value|Description|
 |-----------|-----------------|
 |`false`|The runtime does not distribute managed threads across multiple CPU groups. This is the default.|
-|`true`|The runtime distributes managed threads across multiple CPU groups, if the computer has multiple CPU groups and the [\<GCCpuGroup>](../../../../../docs/framework/configure-apps/file-schema/runtime/gccpugroup-element.md) element is enabled.|
+|`true`|The runtime distributes managed threads across multiple CPU groups, if the computer has multiple CPU groups and the [\<GCCpuGroup>](gccpugroup-element.md) element is enabled.|
 
 ### Child Elements
 
@@ -50,7 +50,7 @@ None.
 
 ## Remarks
 
-When a computer has multiple CPU groups, enabling this element causes the runtime to distribute managed threads across all CPU groups. To use this feature, you must also enable the [\<GCCpuGroup>](../../../../../docs/framework/configure-apps/file-schema/runtime/gccpugroup-element.md) element, which extends garbage collection to all CPU groups and takes all cores into account when creating and balancing heaps. Enabling the [\<GCCpuGroup>](../../../../../docs/framework/configure-apps/file-schema/runtime/gccpugroup-element.md) element requires enabling the [\<gcServer>](../../../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) element. If these elements are not enabled, enabling the `<Thread_UseAllCpuGroups>` element has no effect.
+When a computer has multiple CPU groups, enabling this element causes the runtime to distribute managed threads across all CPU groups. To use this feature, you must also enable the [\<GCCpuGroup>](gccpugroup-element.md) element, which extends garbage collection to all CPU groups and takes all cores into account when creating and balancing heaps. Enabling the [\<GCCpuGroup>](gccpugroup-element.md) element requires enabling the [\<gcServer>](gcserver-element.md) element. If these elements are not enabled, enabling the `<Thread_UseAllCpuGroups>` element has no effect.
 
 ## Example
 
@@ -68,6 +68,6 @@ The following example shows how to enable support for multiple CPU groups.
 
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [\<GCCpuGroup> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/gccpugroup-element.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [\<GCCpuGroup> Element](gccpugroup-element.md)

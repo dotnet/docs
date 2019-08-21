@@ -18,14 +18,14 @@ When you design the user interface (UI) of your Windows application, you can loc
      Alternatively, right-click the control and choose **Lock Controls**.
 
     > [!NOTE]
-    >  Locking controls prevents them from being dragged to a new size or location on the design surface. However, you can still change the size or location of controls by means of the **Properties** window or in code.
+    > Locking controls prevents them from being dragged to a new size or location on the design surface. However, you can still change the size or location of controls by means of the **Properties** window or in code.
 
 ## To lock all the controls on a form
 
 1. From the **Format** menu, choose **Lock Controls**.
 
     > [!NOTE]
-    >  This command locks the form's size as well, because a form is a control.
+    > This command locks the form's size as well, because a form is a control.
 
 ## To unlock all locked controls on a form
 

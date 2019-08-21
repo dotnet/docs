@@ -11,7 +11,7 @@ The Session sample demonstrates how to implement a contract that requires a sess
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  Setting the <xref:System.ServiceModel.SessionMode> of the contract to `Required` ensures that when the contract is exposed over a particular binding, the binding supports sessions. If the binding does not support sessions an exception is thrown. The `ICalculatorSession` interface is defined such that one or more operations can be called, which modifies a running result, as shown in the following sample code.  
   

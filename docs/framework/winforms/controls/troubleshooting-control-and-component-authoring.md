@@ -90,7 +90,7 @@ This topic lists the following common problems that arise when developing compon
  For more information about debugging, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio) and [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](walkthrough-debugging-custom-windows-forms-controls-at-design-time.md).  
   
 ## Event Is Raised Twice in Inherited Control or Component  
- This is likely due to a duplicated `Handles` clause. For more information, see [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md).  
+ This is likely due to a duplicated `Handles` clause. For more information, see [Troubleshooting Inherited Event Handlers in Visual Basic](../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md).  
   
 ## Design-Time Error: "Failed to Create Component 'Component Name'"  
  Your component or control must provide a parameterless constructor with no parameters. When the design environment creates an instance of your component or control, it does not attempt to provide any parameters to constructor overloads that take parameters.  

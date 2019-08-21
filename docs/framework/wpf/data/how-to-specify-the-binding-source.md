@@ -27,7 +27,7 @@ In data binding, the binding source object refers to the object you obtain your 
  [!code-vb[DirectionalBinding#DataObject](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DirectionalBinding/VisualBasic/NetIncome.vb#dataobject)]  
   
 > [!NOTE]
->  The above example instantiates the object in markup and uses it as a resource. If you want to bind to an object that has already been instantiated in code, you need to set the `DataContext` property programmatically. For an example, see [Make Data Available for Binding in XAML](how-to-make-data-available-for-binding-in-xaml.md).  
+> The above example instantiates the object in markup and uses it as a resource. If you want to bind to an object that has already been instantiated in code, you need to set the `DataContext` property programmatically. For an example, see [Make Data Available for Binding in XAML](how-to-make-data-available-for-binding-in-xaml.md).  
   
  Alternatively, if you want to specify the source on your individual bindings explicitly, you have the following options. These take precedence over the inherited data context.  
   

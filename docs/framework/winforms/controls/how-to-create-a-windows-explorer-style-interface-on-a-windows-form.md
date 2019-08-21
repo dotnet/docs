@@ -29,7 +29,7 @@ Windows Explorer is a common user-interface choice for applications because of i
 3. Select all three controls by pressing the CTRL key and clicking them in turn. When you select the <xref:System.Windows.Forms.SplitContainer> control, click the splitter bar, rather than the panels.
 
     > [!NOTE]
-    >  Do not use the **Select All** command on the **Edit** menu. If you do so, the property needed in the next step will not appear in the **Properties** window.
+    > Do not use the **Select All** command on the **Edit** menu. If you do so, the property needed in the next step will not appear in the **Properties** window.
 
 4. In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.
 
@@ -38,7 +38,7 @@ Windows Explorer is a common user-interface choice for applications because of i
      The form displays a two-part user interface, similar to that of the Windows Explorer.
 
     > [!NOTE]
-    >  When you drag the splitter, the panels resize themselves.
+    > When you drag the splitter, the panels resize themselves.
 
 ## See also
 

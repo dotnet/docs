@@ -38,7 +38,7 @@ ms.author: "ronpet"
  The only character that can appear either in a regular expression pattern or in a substitution is the `$` character, although it has a different meaning in each context. In a regular expression pattern, `$` is an anchor that matches the end of the string. In a replacement pattern, `$` indicates the beginning of a substitution.  
   
 > [!NOTE]
->  For functionality similar to a replacement pattern within a regular expression, use a backreference. For more information about backreferences, see [Backreference Constructs](../../../docs/standard/base-types/backreference-constructs-in-regular-expressions.md).  
+> For functionality similar to a replacement pattern within a regular expression, use a backreference. For more information about backreferences, see [Backreference Constructs](../../../docs/standard/base-types/backreference-constructs-in-regular-expressions.md).  
   
 <a name="Numbered"></a>   
 ## Substituting a Numbered Group  

@@ -141,7 +141,7 @@ Public class DbUpdate: AsyncCodeActivity
 - An overload group cannot be a subset or an equivalent set of another overload group.  
   
     > [!NOTE]
-    >  There is one exception to this rule. If an overload group is a subset of another overload group, and the subset contains only arguments where `RequiredArgument` is `false`, then the overload group is valid.  
+    > There is one exception to this rule. If an overload group is a subset of another overload group, and the subset contains only arguments where `RequiredArgument` is `false`, then the overload group is valid.  
   
 - Overload groups can overlap but it is an error if the intersection of the groups contains all the required arguments of one or both of the overload groups. In the previous example the `G2` and `G3` overload groups overlapped, but because the intersection did not contain all the arguments of one or both of the groups this was valid.  
   

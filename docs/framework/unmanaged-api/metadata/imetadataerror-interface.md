@@ -21,7 +21,7 @@ ms.author: "mairaw"
 Provides a callback mechanism for reporting errors during the metadata merge.  
   
 > [!NOTE]
->  The `IMetaDataError` interface must be implemented by the client.  
+> The `IMetaDataError` interface must be implemented by the client.  
   
 ## Methods  
   

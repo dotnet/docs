@@ -12,7 +12,7 @@ This sample demonstrates how service behavior settings can be configured. The sa
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The service class specifies behaviors with the <xref:System.ServiceModel.ServiceBehaviorAttribute> and the <xref:System.ServiceModel.OperationBehaviorAttribute> as shown in the following code sample. All values specified are the defaults.  
   

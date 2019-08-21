@@ -5,7 +5,7 @@ ms.assetid: 86161897-c20f-4ad8-9d7f-050c247251bf
 author: "BrucePerlerMS"
 ---
 # \<certificateValidator>
-Specifies a custom type for certificate validation. This type is used only if the `certificateValidationMode` attribute of the [\<certificateValidation>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md) element is set to "Custom".  
+Specifies a custom type for certificate validation. This type is used only if the `certificateValidationMode` attribute of the [\<certificateValidation>](certificatevalidation.md) element is set to "Custom".  
   
  \<system.identityModel>  
 \<identityConfiguration>  
@@ -32,7 +32,7 @@ Specifies a custom type for certificate validation. This type is used only if th
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|type|Specifies a custom type that derives from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. Set the `certificateValidationMode` attribute of the [\<certificateValidation>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md) element to "Custom" to use this type. For more information about how to specify the `type` attribute, see [Custom Type References](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md). Optional.|  
+|type|Specifies a custom type that derives from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. Set the `certificateValidationMode` attribute of the [\<certificateValidation>](certificatevalidation.md) element to "Custom" to use this type. For more information about how to specify the `type` attribute, see [Custom Type References](../windows-workflow-foundation/index.md). Optional.|  
   
 ### Child Elements  
  None  
@@ -41,7 +41,7 @@ Specifies a custom type for certificate validation. This type is used only if th
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<certificateValidation>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md)|Controls the settings that token handlers use to validate certificates.|  
+|[\<certificateValidation>](certificatevalidation.md)|Controls the settings that token handlers use to validate certificates.|  
   
 ## Example  
   

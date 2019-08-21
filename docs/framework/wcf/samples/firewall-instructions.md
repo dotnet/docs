@@ -81,4 +81,4 @@ You must enable several ports or programs in the firewall so that the Windows Co
 4. Click **OK** to close the firewall applet.  
   
 > [!NOTE]
->  Remove any firewall exceptions when you are finished working with the samples. To do so, open the **Windows Firewall Control Panel** applet and remove any programs or port entries that were added by the previous procedures.
+> Remove any firewall exceptions when you are finished working with the samples. To do so, open the **Windows Firewall Control Panel** applet and remove any programs or port entries that were added by the previous procedures.

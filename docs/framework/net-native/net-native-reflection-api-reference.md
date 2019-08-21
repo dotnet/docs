@@ -19,7 +19,7 @@ ms.author: "ronpet"
 - The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/method.html) for methods.  
   
 > [!NOTE]
->  This reference documents three exception types that are unique to .NET Native. For reference documentation for the .NET Framework core reflection API, see the <xref:System.Reflection>, <xref:System.Reflection.Context> and <xref:System.Reflection.Emit> namespaces. For reference documentation for the .NET Framework core interop API, see <xref:System.Runtime.InteropServices>.  
+> This reference documents three exception types that are unique to .NET Native. For reference documentation for the .NET Framework core reflection API, see the <xref:System.Reflection>, <xref:System.Reflection.Context> and <xref:System.Reflection.Emit> namespaces. For reference documentation for the .NET Framework core interop API, see <xref:System.Runtime.InteropServices>.  
   
 ## System.Reflection namespace  
  The <xref:System.Reflection> namespace contains the core types used for reflection in the .NET Framework. For .NET Native, it also includes two new exception types:  

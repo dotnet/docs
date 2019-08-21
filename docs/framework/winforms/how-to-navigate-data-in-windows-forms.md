@@ -20,7 +20,7 @@ In a Windows application, the easiest way to navigate through records in a data 
 1. Set the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the <xref:System.Windows.Forms.BindingSource> for your bound data to the record position to go to. The following example illustrates using the <xref:System.Windows.Forms.BindingSource.MoveNext%2A> method of the <xref:System.Windows.Forms.BindingSource> to increment the <xref:System.Windows.Forms.BindingSource.Position%2A> property when the `nextButton` is clicked. The <xref:System.Windows.Forms.BindingSource> is associated with the `Customers` table of a dataset `Northwind`.  
   
     > [!NOTE]
-    >  Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET Framework will not allow you to set the position to a value outside the bounds of the list. If it is important in your application to know whether you have gone past the first or last record, include logic to test whether you will exceed the data element count.  
+    > Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET Framework will not allow you to set the position to a value outside the bounds of the list. If it is important in your application to know whether you have gone past the first or last record, include logic to test whether you will exceed the data element count.  
   
      [!code-csharp[System.Windows.Forms.NavigatingData#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/CS/Form1.cs#4)]
      [!code-vb[System.Windows.Forms.NavigatingData#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/VB/Form1.vb#4)]  
@@ -32,7 +32,7 @@ In a Windows application, the easiest way to navigate through records in a data 
      The following example illustrates how you can test whether you have reached the last data element. In the example, if you are at the last element, the **Next** button on the form is disabled.  
   
     > [!NOTE]
-    >  Be aware that, should you change the list you are navigating in code, you should re-enable the **Next** button, so that users may browse the entire length of the new list. Additionally, be aware that the above <xref:System.Windows.Forms.BindingSource.PositionChanged> event for the specific <xref:System.Windows.Forms.BindingSource> you are working with needs to be associated with its event-handling method. The following is an example of a method for handling the <xref:System.Windows.Forms.BindingSource.PositionChanged> event:  
+    > Be aware that, should you change the list you are navigating in code, you should re-enable the **Next** button, so that users may browse the entire length of the new list. Additionally, be aware that the above <xref:System.Windows.Forms.BindingSource.PositionChanged> event for the specific <xref:System.Windows.Forms.BindingSource> you are working with needs to be associated with its event-handling method. The following is an example of a method for handling the <xref:System.Windows.Forms.BindingSource.PositionChanged> event:  
   
      [!code-csharp[System.Windows.Forms.NavigatingData#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/CS/Form1.cs#3)]
      [!code-vb[System.Windows.Forms.NavigatingData#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/VB/Form1.vb#3)]  

@@ -95,8 +95,8 @@ This configuration section contains all the workflow configuration elements.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behaviors-of-workflow.md)|This section defines the **serviceBehaviors** collection.  Each element in the collection defines behavior elements consumed by services. Each behavior element is identified by its unique **name** attribute.|  
-|[\<tracking>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/tracking.md)|Represents a configuration section for defining tracking settings for a workflow service.<br /><br /> For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).|  
+|[\<behaviors>](behaviors-of-workflow.md)|This section defines the **serviceBehaviors** collection.  Each element in the collection defines behavior elements consumed by services. Each behavior element is identified by its unique **name** attribute.|  
+|[\<tracking>](tracking.md)|Represents a configuration section for defining tracking settings for a workflow service.<br /><br /> For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../windows-workflow-foundation/configuring-tracking-for-a-workflow.md).|  
   
 ### Parent Elements  
   

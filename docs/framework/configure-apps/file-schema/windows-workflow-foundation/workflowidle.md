@@ -43,7 +43,7 @@ A service behavior that controls when idle workflow instances are unloaded and p
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
+|[\<behavior> of \<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
 ## See also
 

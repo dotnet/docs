@@ -41,7 +41,7 @@ A literal representing an <xref:System.Xml.Linq.XCData> object.
  You can assign an XML CDATA literal to a variable, or include it in an XML element literal.  
   
 > [!NOTE]
->  An XML literal can span multiple lines but does not use line continuation characters. This enables you to copy content from an XML document and paste it directly into a Visual Basic program.  
+> An XML literal can span multiple lines but does not use line continuation characters. This enables you to copy content from an XML document and paste it directly into a Visual Basic program.  
   
  The Visual Basic compiler converts the XML CDATA literal to a call to the <xref:System.Xml.Linq.XCData.%23ctor%2A> constructor.  
   

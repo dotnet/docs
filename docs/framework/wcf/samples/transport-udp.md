@@ -41,7 +41,7 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
  Each of these MEPs can also support sessions. The added functionality provided by a session-aware channel is that it correlates all messages sent and received on a channel. The Request-Response pattern is a stand-alone two-message session, as the request and reply are correlated. In contrast, the Request-Response pattern that supports sessions implies that all request/response pairs on that channel are correlated with each other. This gives you a total of six MEPs—Datagram, Request-Response, Duplex, Datagram with sessions, Request-Response with sessions, and Duplex with sessions—to choose from.  
   
 > [!NOTE]
->  For the UDP transport, the only MEP that is supported is Datagram, because UDP is inherently a "fire and forget" protocol.  
+> For the UDP transport, the only MEP that is supported is Datagram, because UDP is inherently a "fire and forget" protocol.  
   
 ### The ICommunicationObject and the WCF object lifecycle  
  WCF has a common state machine that is used for managing the lifecycle of objects like <xref:System.ServiceModel.Channels.IChannel>, <xref:System.ServiceModel.Channels.IChannelFactory>, and <xref:System.ServiceModel.Channels.IChannelListener> that are used for communication. There are five states in which these communication objects can exist. These states are represented by the <xref:System.ServiceModel.CommunicationState> enumeration, and are as follows:  

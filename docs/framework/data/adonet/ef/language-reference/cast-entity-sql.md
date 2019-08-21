@@ -42,7 +42,7 @@ CAST( e as T )
  The use of a cast expression is considered an explicit conversion. Explicit conversions might truncate data or lose precision.  
   
 > [!NOTE]
->  CAST is only supported over primitive types and enumeration member types.  
+> CAST is only supported over primitive types and enumeration member types.  
   
 ## Example  
  The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the CAST operator to cast an expression of one data type to another. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  

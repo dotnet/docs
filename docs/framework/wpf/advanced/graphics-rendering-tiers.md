@@ -42,7 +42,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 ### Rendering Tier 1 and Rendering Tier 2  
   
 > [!NOTE]
->  Starting in the .NET Framework 4, rendering tier 1 has been redefined to only include graphics hardware that supports DirectX 9.0 or greater. Graphics hardware that supports DirectX 7 or 8 is now defined as rendering tier 0.  
+> Starting in the .NET Framework 4, rendering tier 1 has been redefined to only include graphics hardware that supports DirectX 9.0 or greater. Graphics hardware that supports DirectX 7 or 8 is now defined as rendering tier 0.  
   
  A rendering tier value of 1 or 2 means that most of the graphics features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] will use hardware acceleration if the necessary system resources are available and have not been exhausted. This corresponds to a DirectX version that is greater than or equal to 9.0.  
   

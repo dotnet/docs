@@ -12,7 +12,7 @@ The Instancing sample demonstrates the instancing behavior setting, which contro
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The following instancing modes are available:  
   

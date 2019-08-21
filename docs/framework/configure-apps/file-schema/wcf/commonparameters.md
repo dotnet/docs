@@ -46,7 +46,7 @@ Represents a collection of parameters that are used globally across multiple ser
  The `<commonParameters>` element defines any parameters that are used globally across multiple services, for example `ConnectionString` when using the <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>.  
   
 > [!NOTE]
->  SQL Tracking service does not consistently use the `ConnectionString` value if it is specified in the `<commonParameters>` section. Some of its operations such as retrieving the `StateMachineWorkflowInstance.StateHistory` property may fail. To workaround this, specify the `ConnectionString` attribute in the configuration section for tracking provider, as indicated in the following example.  
+> SQL Tracking service does not consistently use the `ConnectionString` value if it is specified in the `<commonParameters>` section. Some of its operations such as retrieving the `StateMachineWorkflowInstance.StateHistory` property may fail. To workaround this, specify the `ConnectionString` attribute in the configuration section for tracking provider, as indicated in the following example.  
   
  `<add`  
   

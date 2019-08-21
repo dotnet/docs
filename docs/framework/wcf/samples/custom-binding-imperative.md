@@ -7,7 +7,7 @@ ms.assetid: 6e13bf96-5de0-4476-b646-5f150774418d
 The sample demonstrates how to write imperative code to define and use custom bindings without using a configuration file or a Windows Communication Foundation (WCF) generated client. This sample combines the features provided by the HTTP transport and the reliable session channel to create a reliable HTTP-based binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  On both the client and the service, a custom binding is created that contains two binding elements (Reliable Session and HTTP):  
 

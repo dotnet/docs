@@ -54,7 +54,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
  Because string comparison, sorting, and casing operations performed by the <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class in the .NET Framework 4 conform to the Unicode 5.1 standard, the results of string comparison methods such as <xref:System.String.Compare%28System.String%2CSystem.String%29?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> may differ from previous versions of the .NET Framework. If your application depends on legacy behavior, you can restore the string comparison and sorting rules used in the .NET Framework 3.5 and earlier versions by including the `<CompatSortNLSVersion>` element in your application's configuration file.  
   
 > [!IMPORTANT]
->  Restoring legacy string comparison and sorting rules also requires the sort00001000.dll dynamic link library to be available on the local system.  
+> Restoring legacy string comparison and sorting rules also requires the sort00001000.dll dynamic link library to be available on the local system.  
   
  You can also use legacy string sorting and comparison rules in a specific application domain by passing the string "NetFx40_Legacy20SortingBehavior" to the <xref:System.AppDomainSetup.SetCompatibilitySwitches%2A> method when you create the application domain.  
   
@@ -89,5 +89,5 @@ sta equals a in the sort order.
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

@@ -33,7 +33,7 @@ In the following procedure, you will create a multipane user interface that is s
      At this point, if you press F5 to run the application, the form displays a three-part user interface, similar to that of Microsoft Outlook.
 
     > [!NOTE]
-    >  When you put the mouse pointer over either of the splitters within the <xref:System.Windows.Forms.SplitContainer> controls, you can resize the internal dimensions.
+    > When you put the mouse pointer over either of the splitters within the <xref:System.Windows.Forms.SplitContainer> controls, you can resize the internal dimensions.
 
 At this point in application development, you have crafted a sophisticated user interface. The next step is proceeding with the programming of the application itself, perhaps by connecting the <xref:System.Windows.Forms.TreeView> control and <xref:System.Windows.Forms.ListView> controls to some kind of data source. For more information about connecting controls to data, see [Data Binding and Windows Forms](../data-binding-and-windows-forms.md).
 

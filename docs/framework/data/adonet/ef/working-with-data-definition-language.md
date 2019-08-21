@@ -20,7 +20,7 @@ Starting with the .NET Framework version 4, the [!INCLUDE[adonet_ef](../../../..
 - <xref:System.Data.Objects.ObjectContext.CreateDatabaseScript%2A>  
   
 > [!NOTE]
->  Executing the DDL commands assumes sufficient permissions.  
+> Executing the DDL commands assumes sufficient permissions.  
   
  The methods previously listed delegate most of the work to the underlying ADO.NET data provider. It is the provider’s responsibility to ensure that the naming convention used to generate database objects is consistent with conventions used for querying and updates.  
   

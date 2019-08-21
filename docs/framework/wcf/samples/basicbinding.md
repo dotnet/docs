@@ -7,7 +7,7 @@ ms.assetid: 86fbeb87-4d89-4b61-9577-867e0ac12945
 This sample demonstrates the use of `basicHttpBinding` that provides HTTP communication and maximum interoperability with first- and second-generation Web services.  
   
 > [!NOTE]
->  The set-up procedure and build instructions for this sample are located at the end of this topic.  
+> The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

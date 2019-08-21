@@ -18,7 +18,7 @@ You can delete rows in a database by removing the corresponding [!INCLUDE[vbtecd
  Otherwise, an exception is thrown. See the second code example later in this topic.  
   
 > [!NOTE]
->  You can override [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] default methods for `Insert`, `Update`, and `Delete` database operations. For more information, see [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md).  
+> You can override [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] default methods for `Insert`, `Update`, and `Delete` database operations. For more information, see [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md).  
 >   
 >  Developers using Visual Studio can use the Object Relational Designer to develop stored procedures for the same purpose.  
   

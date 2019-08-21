@@ -22,9 +22,9 @@ This tutorial explains how to create a localized application by using the LocBam
   
 <a name="Requirements"></a>   
 ## Requirements  
- Over the course of this discussion, you will use [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)], which is a compiler that runs from the command line.  
+ Over the course of this discussion, you will use Microsoft build engine (MSBuild), which is a compiler that runs from the command line.  
   
- Also, you will be instructed to use a project file. For instructions on how to use [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] and project files, see [Build and Deploy](../app-development/building-and-deploying-wpf-applications.md).  
+ Also, you will be instructed to use a project file. For instructions on how to use MSBuild and project files, see [Build and Deploy](../app-development/building-and-deploying-wpf-applications.md).  
   
  All the examples in this discussion use en-US (English-US) as the culture. This enables you to work through the steps of the examples without installing a different language.  
   
@@ -34,7 +34,7 @@ This tutorial explains how to create a localized application by using the LocBam
   
 1. Develop your application to the point where you want to start localization.  
   
-2. Specify the development language in the project file so that [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] generates a main assembly and a satellite assembly (a file with the .resources.dll extension) to contain the neutral language resources. The project file in the HelloApp sample is HelloApp.csproj. In that file, you will find the development language identified as follows:  
+2. Specify the development language in the project file so that MSBuild generates a main assembly and a satellite assembly (a file with the .resources.dll extension) to contain the neutral language resources. The project file in the HelloApp sample is HelloApp.csproj. In that file, you will find the development language identified as follows:  
   
      `<UICulture>en-US</UICulture>`  
   

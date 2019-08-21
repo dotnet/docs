@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
 author: "rpetrusha"
 ms.author: "ronpet"
+no-loc: []
 ---
 # Grouping Constructs in Regular Expressions
 Grouping constructs delineate the subexpressions of a regular expression and capture the substrings of an input string. You can use grouping constructs to do the following:  
@@ -48,20 +49,20 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Matched Subexpressions  
  The following grouping construct captures a matched subexpression:  
   
- `(` *subexpression* `)`  
+ `(` *:::no-loc text="subexpression":::* `)`  
   
- where *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from one. The capture that is numbered zero is the text matched by the entire regular expression pattern.  
+ where *:::no-loc text="subexpression":::* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from one. The capture that is numbered zero is the text matched by the entire regular expression pattern.  
   
 > [!NOTE]
-> By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the matched subexpression is not captured.  
+> By default, the `(`*:::no-loc text="subexpression":::*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the matched subexpression is not captured.  
   
  You can access captured groups in four ways:  
   
 - By using the backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\`*number*, where *number* is the ordinal number of the captured subexpression.  
   
-- By using the named backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\k<`*name*`>`, where *name* is the name of a capturing group, or `\k<`*number*`>`, where *number* is the ordinal number of a capturing group. A capturing group has a default name that is identical to its ordinal number. For more information, see [Named matched subexpressions](#named_matched_subexpression) later in this topic.  
+- By using the named backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\k<`*:::no-loc text="name":::*`>`, where *:::no-loc text="name":::* is the name of a capturing group, or `\k<`*:::no-loc text="number":::*`>`, where *:::no-loc text="number":::* is the ordinal number of a capturing group. A capturing group has a default name that is identical to its ordinal number. For more information, see [Named matched subexpressions](#named_matched_subexpression) later in this topic.  
   
-- By using the `$`*number* replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *number* is the ordinal number of the captured subexpression.  
+- By using the `$`*:::no-loc text="number":::* replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *:::no-loc text="number":::* is the ordinal number of the captured subexpression.  
   
 - Programmatically, by using the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. For more information, see the [Grouping Constructs and Regular Expression Objects](#Objects) section.  
   

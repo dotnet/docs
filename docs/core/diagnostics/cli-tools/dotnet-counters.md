@@ -1,17 +1,21 @@
+---
+title: dotnet-counters - .NET Core
+description: Installing and using the dotnet-counter command line tool.
+author: sdmaclea
+ms.author: stmaclea
+ms.date: 08/05/2019
+---
 # dotnet-counters
-
 
 ## Intro
 
 dotnet-counters is a performance monitoring tool for ad-hoc health monitoring or 1st level performance investigation. It can observe performance counter values that are published via `EventCounter` API (https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.tracing.eventcounter). For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application to see if there is anything suspiscious before diving into more serious performance investigation using PerfView or dotnet-trace.
-
 
 ## Install dotnet-counters
 
 ```
 dotnet tool install --global dotnet-counters --version 3.0.0-preview8.19412.1
 ```
-
 
 ## Using dotnet-counters
 

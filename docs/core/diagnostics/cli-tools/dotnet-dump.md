@@ -1,3 +1,10 @@
+---
+title: dotnet-dump - .NET Core
+description: Installing and using the dotnet-dump command line tool.
+author: sdmaclea
+ms.author: stmaclea
+ms.date: 08/05/2019
+---
 Dump collection and analysis utility (dotnet-dump)
 ==================================================
 

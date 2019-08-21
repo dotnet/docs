@@ -1,8 +1,8 @@
 ---
 title: Candidate apps for cloud native
-description: Learn which types of applications benefit the most from a cloud-native architecture
+description: Learn which types of applications benefit from a cloud-native approach
 author: robvet
-ms.date: 08/16/2019
+ms.date: 08/20/2019
 ---
 # Candidate apps for cloud native
 
@@ -31,7 +31,7 @@ The free Microsoft e-book [Modernize existing .NET applications with Azure cloud
 ![Strategies for migrating legacy workloads](media/strategies-for-migrating-legacy-workloads.png)
 **Figure 1-8**. Strategies for migrating legacy workloads
 
-Monolithic apps that are non-critical largely benefit from a quick lift-and-shift ([Cloud Infrastructure-Ready](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-azure-iaas)) migration. Here, the on-premises workload is rehosted to a cloud-based VM, without changes. This approach uses the [IaaS (Infrastructure as a Service) model](https://azure.microsoft.com/overview/what-is-iaas/). Azure includes several tools such as ([Azure Migrate](https://aka.ms/azuremigrate), [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/)) to make such a move easier. While this strategy can yield some cost savings, such applications typically were not architected to unlock and leverage the benefits of cloud computing. 
+Monolithic apps that are non-critical largely benefit from a quick lift-and-shift ([Cloud Infrastructure-Ready](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-azure-iaas)) migration. Here, the on-premises workload is rehosted to a cloud-based VM, without changes. This approach uses the [IaaS (Infrastructure as a Service) model](https://azure.microsoft.com/overview/what-is-iaas/). Azure includes several tools such as ([Azure Migrate](https://aka.ms/azuremigrate), [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/)) to make such a move easier. While this strategy can yield some cost savings, such applications typically weren't architected to unlock and leverage the benefits of cloud computing. 
 
 Monolithic apps that are critical to the business oftentimes benefit from an enhanced lift-and-shift (*Cloud Optimized*) migration. This approach includes deployment optimizations that enable key cloud services - without changing the core architecture of the application. For example, you might [containerize](https://docs.microsoft.com/virtualization/windowscontainers/about/) the application and deploy it to a container orchestrator, like [Azure Kubernetes Services](https://azure.microsoft.com/services/kubernetes-service/), discussed later in this book. Once in the cloud, the application could consume other cloud services such as databases, message queues, monitoring, and distributed caching.
 
@@ -53,11 +53,11 @@ If you and your team believe a cloud-native approach is appropriate, it behooves
 
 - Future-proof application investment?
 
-The right migration strategy depends on the organizational priorities and the systems you're targeting. In many cases, it may be more cost effective to cloud-optimize a monolithic application or add coarse-grained services to an N-Tier app. In these cases, you can still make full use of cloud PaaS capabilities like the ones offered by Azure App Service.
+The right migration strategy depends on organizational priorities and the systems you're targeting. For many, it may be more cost effective to cloud-optimize a monolithic application or add coarse-grained services to an N-Tier app. In these cases, you can still make full use of cloud PaaS capabilities like the ones offered by Azure App Service.
 
 ## Summary
 
-In this chapter, we introduced cloud-native computing. We provided a definition along with the key capabilties that drive a cloud-native applications. We looked the types of applications that might justify this investment and effort.
+In this chapter, we introduced cloud-native computing. We provided a definition along with the key capabilities that drive a cloud-native application. We looked the types of applications that might justify this investment and effort.
 
 With the introduction behind, we now dive into a much more detailed look at cloud native.
 
@@ -81,7 +81,7 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [Overload Control for Scaling WeChat Microservices](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf)
 
-- [Raygun - Case Study](https://raygun.com/case-study/ovation)
+- [RayGun - Case Study](https://raygun.com/case-study/ovation)
 
 >[!div class="step-by-step"]
 >[Previous](defining-cloud-native.md)

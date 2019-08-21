@@ -6,12 +6,7 @@ ms.date: 06/30/2019
 
 # Front-end client communication
 
-Front-end client applications (mobile, web, or desktop applications) require a channel to communication  
-
-
-
-
-Cloud native applications expose channels that enable communication with front-end client applications, including mobile, web, or desktop applications.
+Front-end client applications (mobile, web, and desktop applications) require a channel to communicate with backend microservices.  
 
 There are two common approaches. 
 
@@ -20,7 +15,7 @@ To keep things simple, a front-end client could directly communicate with back-e
 ![Direct client to service communication](media/direct-client-to-service-communication.png)
 **Figure 4-2**. Direct client to service communication
 
-While relatively simple to implement, direct front-end communication is rarely an acceptable practice. Doing so tightly couples the front end to core back-end services and opens the door for a number of potential issues, including:
+While relatively simple to implement, direct front-end communication is normally not an acceptable practice. It tightly couples the front-end client to core back-end services and opens the door for potential problems, including:
 
 - Client susceptibility to backend core service refactoring.
 
@@ -35,11 +30,11 @@ Instead, a widely accepted cloud design pattern is to implement an [API Gateway 
 ![API Gateway Pattern](media/api-gateway-pattern.png)
 **Figure 4-3.** API gateway pattern
 
-This pattern exposes a single point of entry (the API gateway) to enable front-end clients to communicate with backend services, insulating the front end from internal service partitioning and refactoring. Not only does the gateway act as a reverse proxy appropriately rerouting inbound traffic but also allows many of the cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling, to be offloaded from the backend core services to the gateway.
+This pattern exposes a single point of entry (the API gateway) to enable front-end communication with backend services. Importantly, it insulates the client from internal service partitioning and refactoring. The gateway act as a reverse proxy appropriately rerouting inbound traffic. It also implements cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the backend core services to the gateway, simplifying the back-end service and centralizing these concerns.
 
-Care must be taken to keep the API Gateway simple and fast. A single gateway risks becoming a bottleneck and eventually a monolith itself. In larger systems, it's considered a good practice to expose multiple API Gateways segmented on either client type (that is, mobile, web, desktop) or backend service categories. A popular pattern that provides guidance for multiple gateways is called the [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern.
+Care must be taken to keep the API Gateway simple and fast. A single gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems might expose multiple API Gateways segmented by client type (mobile, web, desktop) or backend functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) is a pattern that provides guidance for implementing multiple gateways.
 
-Without much effort, you could build your own API Gateway service. In fact, a quick search of GitHub will present you with many examples. However, there are several off-the-shelf options available.
+To start, you could build your own API Gateway service. A quick search of GitHub will present you with many examples. However, there are several off-the-shelf options available.
 
 ## Azure API Management
 

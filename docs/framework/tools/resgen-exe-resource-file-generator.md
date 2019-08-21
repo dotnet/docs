@@ -214,7 +214,7 @@ resgen /compile StringResources.txt TableResources.resx ImageResources.resx
  If you're developing a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app, you may want to use resources from an existing desktop app. However, the two kinds of applications support different file formats. In desktop apps, resources in text (.txt or .restext) or .resx files are compiled into binary .resources files. In [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, .resw files are compiled into binary package resource index (PRI) files. You can use Resgen.exe to bridge this gap by extracting resources from an executable or a satellite assembly and writing them to one or more .resw files that can be used when developing a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app.  
   
 > [!IMPORTANT]
->  Visual Studio automatically handles all conversions necessary for incorporating the resources in a portable library into a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app. Using Resgen.exe directly to convert the resources in an assembly to .resw file format is of interest only to developers who want to develop a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app outside of Visual Studio.  
+> Visual Studio automatically handles all conversions necessary for incorporating the resources in a portable library into a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app. Using Resgen.exe directly to convert the resources in an assembly to .resw file format is of interest only to developers who want to develop a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app outside of Visual Studio.  
   
  The syntax to generate .resw files from an assembly is:  
   
@@ -305,7 +305,7 @@ resgen inputFilename [outputFilename] /str:language[,namespace,[classname[,filen
  Makes the strongly typed resource class public rather than `internal` (in C#) or `Friend` (in Visual Basic). This allows the resources to be accessed from outside the assembly in which they are embedded.  
   
 > [!IMPORTANT]
->  When you create a strongly typed resource class, the name of your .resources file must match the namespace and class name of the generated code. However, Resgen.exe allows you to specify options that produce a .resources file that has an incompatible name. To work around this behavior, rename the output file after it has been generated.  
+> When you create a strongly typed resource class, the name of your .resources file must match the namespace and class name of the generated code. However, Resgen.exe allows you to specify options that produce a .resources file that has an incompatible name. To work around this behavior, rename the output file after it has been generated.  
   
  The strongly typed resource class has the following members:  
   

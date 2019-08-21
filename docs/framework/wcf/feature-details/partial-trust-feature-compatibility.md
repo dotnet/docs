@@ -94,7 +94,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
  The one exception is known-type configuration for serialization, as described in the Serialization section of this topic.  
   
 > [!IMPORTANT]
->  Configuration extensions are only supported when running under Full Trust.  
+> Configuration extensions are only supported when running under Full Trust.  
   
 ## Diagnostics  
   

@@ -87,7 +87,7 @@ ms.custom: serodec18
  The particular way in which you call regular expression matching methods can have a significant impact on your application. The following sections discuss when to use static method calls, interpreted regular expressions, and compiled regular expressions to improve your application's performance.  
   
 > [!IMPORTANT]
->  The form of the method call (static, interpreted, compiled) affects performance if the same regular expression is used repeatedly in method calls, or if an application makes extensive use of regular expression objects.  
+> The form of the method call (static, interpreted, compiled) affects performance if the same regular expression is used repeatedly in method calls, or if an application makes extensive use of regular expression objects.  
   
 ### Static Regular Expressions  
  Static regular expression methods are recommended as an alternative to repeatedly instantiating a regular expression object with the same regular expression. Unlike regular expression patterns used by regular expression objects, either the operation codes or the compiled Microsoft intermediate language (MSIL) from patterns used in instance method calls is cached internally by the regular expression engine.  

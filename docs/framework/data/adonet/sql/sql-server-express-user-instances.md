@@ -134,7 +134,7 @@ private static void OpenSqlConnection()
  User instances provide developers of database applications with a SQL Server data store that does not depend on developers having administrative accounts on their development computers. User instances are based on the Access/Jet model, where the database application simply connects to a file, and the user automatically has full permissions on all of the database objects without needing the intervention of a system administrator to grant permissions. It is intended to work in situations where the user is running under a least-privilege user account (LUA) and does not have administrative privileges on the server or local machine, yet needs to create database objects and applications. User instances allow users to create instances at run time that run under the user's own security context, and not in the security context of a more privileged system service.  
   
 > [!IMPORTANT]
->  User instances should only be used in scenarios where all the applications using it are fully trusted.  
+> User instances should only be used in scenarios where all the applications using it are fully trusted.  
   
  User instance scenarios include:  
   

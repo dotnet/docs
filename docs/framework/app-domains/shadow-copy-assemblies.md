@@ -13,14 +13,14 @@ ms.author: "ronpet"
 Shadow copying enables assemblies that are used in an application domain to be updated without unloading the application domain. This is particularly useful for applications that must be available continuously, such as ASP.NET sites.  
   
 > [!IMPORTANT]
->  Shadow copying is not supported in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
+> Shadow copying is not supported in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
   
  The common language runtime locks an assembly file when the assembly is loaded, so the file cannot be updated until the assembly is unloaded. The only way to unload an assembly from an application domain is by unloading the application domain, so under normal circumstances, an assembly cannot be updated on disk until all the application domains that are using it have been unloaded.  
   
  When an application domain is configured to shadow copy files, assemblies from the application path are copied to another location and loaded from that location. The copy is locked, but the original assembly file is unlocked and can be updated.  
   
 > [!IMPORTANT]
->  The only assemblies that can be shadow copied are those stored in the application directory or its subdirectories, specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties when the application domain is configured. Assemblies stored in the global assembly cache are not shadow copied.  
+> The only assemblies that can be shadow copied are those stored in the application directory or its subdirectories, specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties when the application domain is configured. Assemblies stored in the global assembly cache are not shadow copied.  
   
  This article contains the following sections:  
   

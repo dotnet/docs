@@ -39,8 +39,8 @@ Attempting to deserialize representations that don't conform to the profile will
 [!code-csharp[example-deserializing-with-jsonserializer-error](~/samples/snippets/standard/datetime/json/deserializing-with-jsonserializer-error.cs)]
 
 The <xref:System.Text.Json.JsonDocument> provides structured access to the contents of a JSON payload, including <xref:System.DateTime>
-and <xref:System.DateTimeOffset> representations. The example below shows how when given collection of temperatures, the average
-temperature on Monday's can be calculated:
+and <xref:System.DateTimeOffset> representations. The example below shows how, when given a collection of temperatures, the average
+temperature on Mondays can be calculated:
 
 [!code-csharp[example-computing-with-jsondocument-valid](~/samples/snippets/standard/datetime/json/computing-with-jsondocument-valid.cs)]
 
@@ -76,7 +76,8 @@ the extended ISO 8601-1:2019 profile. This approach is significantly less perfor
 
 For serializing, you can use the `DateTime(Offset).ToString` method in your converter write logic. This allows you to write <xref:System.DateTime>
 and <xref:System.DateTimeOffset> values using any of the
-[standard date and time formats](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
+[standard date and time formats](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings), and the
+[custom date and time formats](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
 This is also significantly less performant than using the serializer's native implementation.
 
 [!code-csharp[example-showing-datetime-parse](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example1/Program.cs)]
@@ -87,10 +88,10 @@ The parameter is useful for handling polymorphic cases and when using generics t
 
 ### Using <xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>
 
-You can used fast UTF-8-based parsing and formatting methods in your converter logic if your input <xref:System.DateTime> or <xref:System.DateTimeOffset>
+You can use fast UTF-8-based parsing and formatting methods in your converter logic if your input <xref:System.DateTime> or <xref:System.DateTimeOffset>
 text representations are compliant with one of the "R", "l", "O", or "G"
-[standard date and time Format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings),
-or you want to write according to one of these formats. This is much faster than using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`
+[standard date and time format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings),
+or you want to write according to one of these formats. This is much faster than using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
 
 This example shows a custom converter that serializes and deserializes <xref:System.DateTime> values according to
 [the "R" standard format](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-rfc1123-r-r-format-specifier):

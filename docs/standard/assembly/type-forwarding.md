@@ -1,9 +1,6 @@
 ---
 title: "Type forwarding in the common language runtime"
 ms.date: "08/20/2019"
-dev_langs: 
-  - "csharp"
-  - "cpp"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], type forwarding"
   - "type forwarding"

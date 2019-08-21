@@ -1,10 +1,6 @@
 ---
 title: "How to: Build a multifile assembly"
 ms.date: "08/20/2019"
-dev_langs: 
-  - "csharp"
-  - "vb"
-  - "cpp"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], multifile"
   - "entry point for assembly"

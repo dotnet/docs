@@ -1,10 +1,6 @@
 ---
 title: "Set assembly attributes"
 ms.date: "08/20/2019"
-dev_langs: 
-  - "csharp"
-  - "vb"
-  - "cpp"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], attributes"
   - "assembly binding, attributes"

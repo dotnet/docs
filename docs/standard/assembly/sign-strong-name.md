@@ -1,10 +1,6 @@
 ---
 title: "How to: Sign an assembly with a strong name"
 ms.date: "08/20/2019"
-dev_langs: 
-  - "csharp"
-  - "vb"
-  - "cpp"
 helpviewer_keywords: 
   - "strong-named assemblies, signing with strong names"
   - "signing assemblies"

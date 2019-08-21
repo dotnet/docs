@@ -1,10 +1,6 @@
 ---
 title: "Delay-sign an assembly"
 ms.date: "08/19/2019"
-dev_langs: 
-  - "csharp"
-  - "vb"
-  - "cpp"
 helpviewer_keywords: 
   - "deferring assembly signing"
   - "signing assemblies"

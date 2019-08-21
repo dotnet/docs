@@ -1,10 +1,6 @@
 ---
 title: "How to: View assembly contents"
 ms.date: "08/20/2019"
-dev_langs: 
-  - "csharp"
-  - "vb"
-  - "cpp"
 helpviewer_keywords: 
   - "assembly manifest, viewing information"
   - "Ildasm.exe"

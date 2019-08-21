@@ -1,10 +1,6 @@
 ---
 title: "How to: Create a public-private key pair"
 ms.date: "08/20/2019"
-dev_langs:
-  - "csharp"
-  - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "key pairs for strong-named assemblies"
   - "signing assemblies"

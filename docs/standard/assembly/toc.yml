@@ -17,7 +17,7 @@
     href: file-format.md
   - name: "How to: Use and debug assembly unloadability in .NET Core"
     href: unloadability.md
-  - name: "How to: Obtain type and member information from an assembly"
+  - name: "How to: Get type and member information from an assembly"
     href: get-type-member-information.md
   - name: Resolve assembly loads
     href: resolve-loads.md
@@ -28,7 +28,7 @@
       href: create.md
     - name: Assembly names
       href: names.md
-    - name: "How to: Determine an assembly's fully qualified name"
+    - name: "How to: Find an assembly's fully qualified name"
       href: find-fully-qualified-name.md
     - name: Assembly location
       href: location.md
@@ -53,7 +53,7 @@
         href: reference-strong-named.md
       - name: "How to: Disable the strong-name bypass feature"
         href: disable-strong-name-bypass-feature.md
-    - name: Delay signing an assembly
+    - name: Delay-sign an assembly
       href: delay-sign.md
     - name: "How to: Install an assembly into the global assembly cache"
       href: install-into-gac.md

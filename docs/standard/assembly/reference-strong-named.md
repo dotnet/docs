@@ -1,10 +1,6 @@
 ---
 title: "How to: Reference a strong-named assembly"
 ms.date: "08/20/2019"
-dev_langs: 
-  - "csharp"
-  - "vb"
-  - "cpp"
 helpviewer_keywords: 
   - "strong-named assemblies, compile-time references"
   - "compile-time assembly referencing"

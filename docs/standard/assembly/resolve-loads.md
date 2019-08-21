@@ -1,10 +1,6 @@
 ---
 title: "Resolve assembly loads"
 ms.date: "08/20/2019"
-dev_langs: 
-  - "csharp"
-  - "vb"
-  - "cpp"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], resolving loads"
   - "application domains, loading assemblies"

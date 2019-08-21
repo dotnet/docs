@@ -245,5 +245,5 @@ There's no cost to configuring many build pipelines, so it's advantageous to hav
 One drawback to using the Releases functionality is that it can't be defined in a checked-in `azure-pipelines.yml` file. There are many reasons you might want to do that from having per-branch release definitions to including a release skeleton in your project template. Fortunately, work is ongoing to shift some of the stages support into the Build component. This will be known as multi-stage build and the [first version is available now](https://devblogs.microsoft.com/devops/whats-new-with-azure-pipelines/)!
 
 >[!div class="step-by-step"]
->[Previous](azure-security-for-cloud-native.md)
+>[Previous](azure-security.md)
 >[Next](infrastructure-as-code.md)

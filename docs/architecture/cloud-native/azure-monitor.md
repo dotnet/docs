@@ -66,4 +66,4 @@ Azure Monitor automatically leverages machine learning to understand the normal 
 
 >[!div class="step-by-step"]
 >[Previous](logging.md)
->[Next](../index.md)
+>[Next](monitoring-azure-kubernetes.md)

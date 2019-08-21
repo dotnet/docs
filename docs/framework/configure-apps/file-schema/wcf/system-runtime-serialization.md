@@ -43,7 +43,7 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<configuration> Element](../../wcf/configuration-element.md)|The top level element for configuration.|  
+|[\<configuration> Element](../configuration-element.md)|The top level element for configuration.|  
   
 ## See also
 

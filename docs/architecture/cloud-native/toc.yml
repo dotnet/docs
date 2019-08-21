@@ -2,12 +2,12 @@
   href: index.md
   items:
   - name: Introduction to Cloud-Native Applications
-    href: introducing-cloud-native.md
+    href: introduction.md
     items:
     - name: Defining Cloud Native
-      href: defining-cloud-native.md
-    - name: Candidate Apps for Cloud Native
-      href: candidate-apps.md
+      href: definition.md
+  - name: Candidate Apps for Cloud Native
+    href: candidate-apps.md
     - name: Scaling Cloud Native .NET Applications
     href: scale-dotnet-applications.md
     items:
@@ -35,8 +35,6 @@
   - name: Cloud-Native Communication Patterns
     href: communication-patterns.md
     items:
-    - name: Communication Considerations
-      href: communication-considerations.md
     - name: Front-End Client Communication
       href: front-end-communication.md
     - name: Cross-Service Communication

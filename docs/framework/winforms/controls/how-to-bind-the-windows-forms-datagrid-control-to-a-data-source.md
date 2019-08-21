@@ -65,7 +65,7 @@ ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
 2. Call the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method, passing it the data source and a data member. If you do not need to explicitly pass a data member, pass an empty string.  
   
     > [!NOTE]
-    >  If you are binding the grid for the first time, you can set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties. However, you cannot reset these properties once they have been set. Therefore, it is recommended that you always use the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method.  
+    > If you are binding the grid for the first time, you can set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties. However, you cannot reset these properties once they have been set. Therefore, it is recommended that you always use the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method.  
   
      The following example shows how you can programmatically bind to the Customers table in a dataset called `DsCustomers1`:  
   

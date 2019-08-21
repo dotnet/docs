@@ -29,7 +29,7 @@ By default, all Windows Service projects have the ability to interact with the A
 - Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property for your component to `true`.  
   
     > [!NOTE]
-    >  By default, this property is set to `true`. You do not need to set this explicitly unless you are building more complex processing, such as evaluating a condition and then setting the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property based on the result of that condition.  
+    > By default, this property is set to `true`. You do not need to set this explicitly unless you are building more complex processing, such as evaluating a condition and then setting the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property based on the result of that condition.  
   
 ### To disable event logging for your service  
   
@@ -43,7 +43,7 @@ By default, all Windows Service projects have the ability to interact with the A
 1. Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property to `false`.  
   
     > [!NOTE]
-    >  You must set <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> to false in order to use a custom log.  
+    > You must set <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> to false in order to use a custom log.  
   
 2. Set up an instance of an <xref:System.Diagnostics.EventLog> component in your Windows Service application.  
   
@@ -56,7 +56,7 @@ By default, all Windows Service projects have the ability to interact with the A
      The following code shows how to set up logging to a custom log.  
   
     > [!NOTE]
-    >  In this code example, an instance of an <xref:System.Diagnostics.EventLog> component is named `eventLog1` (`EventLog1` in Visual Basic). If you created an instance with another name in step 2, change the code accordingly.  
+    > In this code example, an instance of an <xref:System.Diagnostics.EventLog> component is named `eventLog1` (`EventLog1` in Visual Basic). If you created an instance with another name in step 2, change the code accordingly.  
   
      [!code-csharp[VbRadconService#14](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#14)]
      [!code-vb[VbRadconService#14](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#14)]  

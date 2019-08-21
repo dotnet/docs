@@ -43,7 +43,7 @@ ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
      With this property set, the shortcut menu will be displayed when the icon on the taskbar is clicked.  
   
     > [!NOTE]
-    >  The following code example creates a basic menu structure. You will need to customize the menu choices to those that fit the application you are developing. Additionally, you will want to write code to handle the <xref:System.Windows.Forms.MenuItem.Click> events for these menu items.  
+    > The following code example creates a basic menu structure. You will need to customize the menu choices to those that fit the application you are developing. Additionally, you will want to write code to handle the <xref:System.Windows.Forms.MenuItem.Click> events for these menu items.  
   
     ```vb  
     Public ContextMenu1 As New ContextMenu  

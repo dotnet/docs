@@ -22,7 +22,7 @@ Often, within the context of [Multiple-Document Interface (MDI) Applications](mu
 1. Within a method, copy the text on the Clipboard to the active control of the active child form.  
   
     > [!NOTE]
-    >  This example assumes there is an MDI parent form (`Form1`) that has one or more MDI child windows containing a <xref:System.Windows.Forms.RichTextBox> control. For more information, see [Creating MDI Parent Forms](how-to-create-mdi-parent-forms.md).  
+    > This example assumes there is an MDI parent form (`Form1`) that has one or more MDI child windows containing a <xref:System.Windows.Forms.RichTextBox> control. For more information, see [Creating MDI Parent Forms](how-to-create-mdi-parent-forms.md).  
   
     ```vb  
     Public Sub mniPaste_Click(ByVal sender As Object, _  

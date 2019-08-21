@@ -36,7 +36,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
      Determine whether one of these <`issuedTokenParameters`> is preferable to the one already present in the configuration. For example, the client may prefer to authenticate to a security token service using a Windows CardSpace token rather than a user name/password pair.  
   
     > [!NOTE]
-    >  Where multiple security token services must be traversed before communicating with the service, it is possible for an intermediate security token service to direct the client to an incorrect security token service. Therefore, ensure that the endpoint for the security token service in the [\<issuedTokenParameters>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md) is the expected security token service and not an unknown security token service.  
+    > Where multiple security token services must be traversed before communicating with the service, it is possible for an intermediate security token service to direct the client to an incorrect security token service. Therefore, ensure that the endpoint for the security token service in the [\<issuedTokenParameters>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md) is the expected security token service and not an unknown security token service.  
   
 ### To configure an IssuedTokenClientCredential in code  
   
@@ -65,7 +65,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
      [!code-vb[c_CreateSTS#17](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#17)]  
   
     > [!NOTE]
-    >  If a <xref:System.ServiceModel.Channels.SecurityBindingElement> is present in a security token service or service binding, the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.DefaultKeyEntropyMode%2A> set on <xref:System.ServiceModel.Security.IssuedTokenClientCredential> is overridden by the <xref:System.ServiceModel.Channels.SecurityBindingElement.KeyEntropyMode%2A> property of the `SecurityBindingElement`.  
+    > If a <xref:System.ServiceModel.Channels.SecurityBindingElement> is present in a security token service or service binding, the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.DefaultKeyEntropyMode%2A> set on <xref:System.ServiceModel.Security.IssuedTokenClientCredential> is overridden by the <xref:System.ServiceModel.Channels.SecurityBindingElement.KeyEntropyMode%2A> property of the `SecurityBindingElement`.  
   
 6. Configure any issuer-specific endpoint behaviors by adding them to the collection returned by the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuerChannelBehaviors%2A> property.  
   

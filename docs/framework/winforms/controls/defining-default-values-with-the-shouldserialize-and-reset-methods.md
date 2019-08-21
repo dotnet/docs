@@ -19,7 +19,7 @@ ms.assetid: 7b6c5e00-3771-46b4-9142-5a80d5864a5e
 - The designer generates more efficient code.
 
     > [!NOTE]
-    >  Either apply the <xref:System.ComponentModel.DefaultValueAttribute> or provide `Reset`*PropertyName* and `ShouldSerialize`*PropertyName* methods. Do not use both.
+    > Either apply the <xref:System.ComponentModel.DefaultValueAttribute> or provide `Reset`*PropertyName* and `ShouldSerialize`*PropertyName* methods. Do not use both.
 
  The `Reset`*PropertyName* method sets a property to its default value, as shown in the following code fragment.
 

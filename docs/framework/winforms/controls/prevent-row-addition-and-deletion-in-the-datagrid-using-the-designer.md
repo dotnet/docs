@@ -15,7 +15,7 @@ Sometimes you will want to prevent users from entering new rows of data or delet
 - Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then clear the **Enable Adding** and **Enable Deleting** check boxes.
 
     > [!NOTE]
-    >  To make the control entirely read-only, clear the **Enable Editing** check box as well.
+    > To make the control entirely read-only, clear the **Enable Editing** check box as well.
 
 ## See also
 

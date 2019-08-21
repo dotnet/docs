@@ -56,7 +56,7 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
     |<xref:System.Windows.Forms.DataGrid.SelectionForeColor%2A>|When a row or cell is selected, this is the foreground color.|  
   
     > [!NOTE]
-    >  Keep in mind, when customizing the colors of controls, that it is possible to make the control inaccessible, due to poor color choice (for example, red and green). Use the colors available on the **System Colors** palette to avoid this issue.  
+    > Keep in mind, when customizing the colors of controls, that it is possible to make the control inaccessible, due to poor color choice (for example, red and green). Use the colors available on the **System Colors** palette to avoid this issue.  
   
      The following procedures assume your form has a <xref:System.Windows.Forms.DataGrid> control bound to a data table. For more information, see [Binding the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md).  
   

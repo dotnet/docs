@@ -33,14 +33,14 @@ ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
 5. Add a Windows Forms <xref:System.Windows.Forms.Timer> component to the form.  
   
     > [!NOTE]
-    >  The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
+    > The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
   
 6. Set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `true`.  
   
 7. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property of the <xref:System.Windows.Forms.Timer> to 30000.  
   
     > [!NOTE]
-    >  The <xref:System.Windows.Forms.Timer.Interval%2A> property of the <xref:System.Windows.Forms.Timer> component is set to 30 seconds (30,000 milliseconds) to ensure that an accurate time is reflected in the time displayed.  
+    > The <xref:System.Windows.Forms.Timer.Interval%2A> property of the <xref:System.Windows.Forms.Timer> component is set to 30 seconds (30,000 milliseconds) to ensure that an accurate time is reflected in the time displayed.  
   
 ### To implement the timer to update the status bar  
   
@@ -76,7 +76,7 @@ ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
 1. Debug the application and press F5 to run it. For details about debugging, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
   
     > [!NOTE]
-    >  It will take approximately 30 seconds for the clock to appear in the status bar. This is to get the most accurate time possible. Conversely, to make the clock appear sooner, you can reduce the value of the <xref:System.Windows.Forms.Timer.Interval%2A> property you set in step 7 in the previous procedure.  
+    > It will take approximately 30 seconds for the clock to appear in the status bar. This is to get the most accurate time possible. Conversely, to make the clock appear sooner, you can reduce the value of the <xref:System.Windows.Forms.Timer.Interval%2A> property you set in step 7 in the previous procedure.  
   
 ## See also
 

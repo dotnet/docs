@@ -17,10 +17,10 @@ Although Windows Forms have been optimized to host Windows Forms controls, you c
 - **Total Cost of Ownership** ActiveX controls added to a Windows Form are deployed with that Windows Form in their entirety, which can add significantly to the size of the file(s) created. Additionally, using ActiveX controls on Windows Forms requires writing to the registry. This is more invasive to a user's computer than Windows Forms controls, which do not require this.  
   
     > [!NOTE]
-    >  Working with an ActiveX control requires the use of a COM interop wrapper. For more information, see [COM Interoperability in Visual Basic and Visual C#](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
+    > Working with an ActiveX control requires the use of a COM interop wrapper. For more information, see [COM Interoperability in Visual Basic and Visual C#](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
   
     > [!NOTE]
-    >  If the name of a member of the ActiveX control matches a name defined in the .NET Framework, then the ActiveX Control Importer will prefix the member name with **Ctl** when it creates the <xref:System.Windows.Forms.AxHost> derived class. For example, if your ActiveX control has a member named **Layout**, it is renamed **CtlLayout** in the AxHost-derived class because the **Layout** event is defined within the .NET Framework.  
+    > If the name of a member of the ActiveX control matches a name defined in the .NET Framework, then the ActiveX Control Importer will prefix the member name with **Ctl** when it creates the <xref:System.Windows.Forms.AxHost> derived class. For example, if your ActiveX control has a member named **Layout**, it is renamed **CtlLayout** in the AxHost-derived class because the **Layout** event is defined within the .NET Framework.  
   
 ## See also
 

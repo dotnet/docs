@@ -648,7 +648,7 @@ public class RemotingServer : MarshalByRefObject
      The customer object will be serialized, and sent to the server, where it is deserialized into a new copy of that object.  
   
     > [!NOTE]
-    >  This code also illustrates sending a derived type (PremiumCustomer). The service interface expects a Customer object, but the [KnownType] attribute on the Customer class indicated PremiumCustomer was also allowed. WCF will fail any attempt to serialize or deserialize any other type through this service interface.  
+    > This code also illustrates sending a derived type (PremiumCustomer). The service interface expects a Customer object, but the [KnownType] attribute on the Customer class indicated PremiumCustomer was also allowed. WCF will fail any attempt to serialize or deserialize any other type through this service interface.  
   
  Normal WCF exchanges of data are by value. This guarantees that invoking methods on one of these data objects executes only locally – it will not invoke code on the other tier. While it is possible to achieve something like by-reference objects returned *from* the server, it is not possible for a client to pass a by-reference object *to* the server. A scenario that requires a conversation back and forth between client and server can be achieved in WCF using a duplex service. For more information, see [Duplex Services](./feature-details/duplex-services.md).  
   

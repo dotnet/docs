@@ -24,7 +24,7 @@ ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
      In the following code example, the path set for the location of the icon is the **My Documents** folder. This location is used because you can assume that most computers running the Windows operating system will include this folder. Choosing this location also allows users with minimal system access levels to safely run the application. The following example requires a form with a <xref:System.Windows.Forms.StatusBar> control already added.  
   
     > [!NOTE]
-    >  The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> is a zero-based collection, so code should proceed accordingly.  
+    > The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> is a zero-based collection, so code should proceed accordingly.  
   
     ```vb  
     Public Sub CreateStatusBarPanels()  

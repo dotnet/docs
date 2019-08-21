@@ -134,7 +134,7 @@ In this step, you actually execute the query. The query expressions you created 
 2. Press F5 to debug the application.
 
     > [!NOTE]
-    >  If your application generates a run-time error, see the Troubleshooting section of [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md).
+    > If your application generates a run-time error, see the Troubleshooting section of [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md).
 
      The query results in the console window should appear as follows:
 

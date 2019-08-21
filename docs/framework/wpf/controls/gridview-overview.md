@@ -78,7 +78,7 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
      Users can double-click the gripper to the right of a column header in order to resize a column to fit its content.  
   
     > [!NOTE]
-    >  You can set the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property to `Double.NaN` to produce the same effect.  
+    > You can set the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property to `Double.NaN` to produce the same effect.  
   
 - **Select row items.**  
   

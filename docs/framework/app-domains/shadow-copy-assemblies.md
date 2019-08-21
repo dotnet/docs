@@ -43,7 +43,7 @@ Shadow copying enables assemblies that are used in an application domain to be u
      The base path for the location is formed by concatenating the <xref:System.AppDomainSetup.ApplicationName%2A> property to the <xref:System.AppDomainSetup.CachePath%2A> property as a subdirectory. Assemblies are shadow copied to subdirectories of this path, not to the base path itself.  
   
     > [!NOTE]
-    >  If the <xref:System.AppDomainSetup.ApplicationName%2A> property is not set, the <xref:System.AppDomainSetup.CachePath%2A> property is ignored and the download cache is used. No exception is thrown.  
+    > If the <xref:System.AppDomainSetup.ApplicationName%2A> property is not set, the <xref:System.AppDomainSetup.CachePath%2A> property is ignored and the download cache is used. No exception is thrown.  
   
      If you specify a custom location, you are responsible for cleaning up the directories and copied files when they are no longer needed. They are not deleted automatically.  
   
@@ -54,7 +54,7 @@ Shadow copying enables assemblies that are used in an application domain to be u
      When you enable shadow copying for an application domain, the default is to copy all assemblies in the application path — that is, in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties. You can limit the copying to selected directories by creating a string that contains only those directories you want to shadow copy, and assigning the string to the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property. Separate the directories with semicolons. The only assemblies that are shadow copied are the ones in the selected directories.  
   
     > [!NOTE]
-    >  If you don’t assign a string to the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property, or if you set this property to `null`, all assemblies in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties are shadow copied.  
+    > If you don’t assign a string to the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property, or if you set this property to `null`, all assemblies in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties are shadow copied.  
   
     > [!IMPORTANT]
     >  Directory paths must not contain semicolons, because the semicolon is the delimiter character. There is no escape character for semicolons.  

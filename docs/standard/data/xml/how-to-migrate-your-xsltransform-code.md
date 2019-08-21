@@ -70,7 +70,7 @@ The new XSLT classes have been designed to be very similar to the existing class
 - Code using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
   
     > [!NOTE]
-    >  The <xref:System.Xml.Xsl.XslCompiledTransform> class does not have a method that returns the XSLT transformation results as an <xref:System.Xml.XmlReader> object. However, you can output to an XML file and load the XML file into another object.  
+    > The <xref:System.Xml.Xsl.XslCompiledTransform> class does not have a method that returns the XSLT transformation results as an <xref:System.Xml.XmlReader> object. However, you can output to an XML file and load the XML file into another object.  
   
      [!code-csharp[XML_Migration#20](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#20)]
      [!code-vb[XML_Migration#20](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#20)]  

@@ -13,7 +13,7 @@ This example demonstrates three ways to compare two file listings:
 - By querying for the set difference to retrieve the files that are in one folder but not the other.  
   
     > [!NOTE]
-    >  The techniques shown here can be adapted to compare sequences of objects of any type.  
+    > The techniques shown here can be adapted to compare sequences of objects of any type.  
   
  The `FileComparer` class shown here demonstrates how to use a custom comparer class together with the Standard Query Operators. The class is not intended for use in real-world scenarios. It just uses the name and length in bytes of each file to determine whether the contents of each folder are identical or not. In a real-world scenario, you should modify this comparer to perform a more rigorous equality check.  
   

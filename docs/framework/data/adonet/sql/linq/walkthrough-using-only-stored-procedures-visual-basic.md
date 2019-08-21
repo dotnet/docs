@@ -117,7 +117,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
      The toolbox opens.  
   
     > [!NOTE]
-    >  Click the **AutoHide** pushpin to keep the toolbox open while you perform the remaining steps in this section.  
+    > Click the **AutoHide** pushpin to keep the toolbox open while you perform the remaining steps in this section.  
   
 3. Drag two buttons, two text boxes, and two labels from the toolbox onto **Form1**.  
   

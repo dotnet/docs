@@ -30,7 +30,7 @@ ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
      The example below assumes a form with a <xref:System.Windows.Forms.ToolBar> control already added.  
   
     > [!NOTE]
-    >  The <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection is a zero-based collection, so code should proceed accordingly.  
+    > The <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection is a zero-based collection, so code should proceed accordingly.  
   
     ```vb  
     Public Sub CreateToolBarButtons()  

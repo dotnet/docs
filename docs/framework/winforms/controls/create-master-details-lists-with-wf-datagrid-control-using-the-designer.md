@@ -21,7 +21,7 @@ ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
 1. Add two <xref:System.Windows.Forms.DataGrid> controls to the form. For more information, see [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md). In Visual Studio 2005, the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox** by default. For more information, see [How to: Add Items to the Toolbox](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100)).
 
     > [!NOTE]
-    >  The following steps are not applicable to Visual Studio 2005, which uses the **Data Sources** window for design-time data binding. For more information, see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) and [How to: Display Related Data in a Windows Forms Application](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/57tx3hhe(v=vs.120)).
+    > The following steps are not applicable to Visual Studio 2005, which uses the **Data Sources** window for design-time data binding. For more information, see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) and [How to: Display Related Data in a Windows Forms Application](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/57tx3hhe(v=vs.120)).
 
 2. Drag two or more tables from **Server Explorer** to the form.
 

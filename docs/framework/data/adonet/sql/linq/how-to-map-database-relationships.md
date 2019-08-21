@@ -25,7 +25,7 @@ You can encode as property references in your entity class any data relationship
      For example, consider an `Employee`-`Project` many-to-many relationship formed by using link table `EmployeeProject`. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] requires that such a relationship be modeled by using three classes: `Employee`, `Project`, and `EmployeeProject`. In this case, changing the relationship between an `Employee` and a `Project` can appear to require an update of the primary key `EmployeeProject`. However, this situation is best modeled as deleting an existing `EmployeeProject` and the creating a new `EmployeeProject`.  
   
     > [!NOTE]
-    >  Relationships in relational databases are typically modeled as foreign key values that refer to primary keys in other tables. To navigate between them you explicitly associate the two tables by using a relational *join* operation.  
+    > Relationships in relational databases are typically modeled as foreign key values that refer to primary keys in other tables. To navigate between them you explicitly associate the two tables by using a relational *join* operation.  
     >   
     >  Objects in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], on the other hand, refer to each other by using property references or collections of references that you navigate by using *dot* notation.  
   

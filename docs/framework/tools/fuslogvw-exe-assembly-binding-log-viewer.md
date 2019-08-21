@@ -35,7 +35,7 @@ fuslogvw
 2. Select the **Custom** option button to view bind failures in a custom directory that you specify. You must specify the custom location where you want the runtime to store the logs by setting the custom log location in the **Log Settings** dialog to a valid directory name. This directory should be clean, and only contain files that the runtime generates. If it contains an executable that generates a failure to be logged, the failure will not be logged because the tool tries to create a directory with the same name as the executable. In addition, an attempt to run an executable from the log location will fail.  
   
     > [!NOTE]
-    >  The default bind location is preferable to the custom bind location. The runtime stores the default bind location in the wininet cache, and therefore automatically cleans it out. If you specify a custom bind location, you are responsible for cleaning it out.  
+    > The default bind location is preferable to the custom bind location. The runtime stores the default bind location in the wininet cache, and therefore automatically cleans it out. If you specify a custom bind location, you are responsible for cleaning it out.  
   
 ### To view details about a specific failure  
   
@@ -220,7 +220,7 @@ Discarding native image.
 2. Select the **Enable immersive logging** check box.  
   
     > [!NOTE]
-    >  This box is enabled only on Windows 8 or later.  
+    > This box is enabled only on Windows 8 or later.  
   
 ## See also
 

@@ -38,7 +38,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
      For information on how to view the application's debug output window, see [Output Window](/visualstudio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
   
     > [!NOTE]
-    >  By default, the application flushes the log-file output when the application closes.  
+    > By default, the application flushes the log-file output when the application closes.  
   
      In the example above, the second call to the <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A> method and the call to the <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A> method produces log output, while the first and last calls to the `WriteEntry` method do not. This is because the severity levels of `WriteEntry` and `WriteException` are "Information" and "Error", both of which are allowed by the `My.Application.Log` object's default log filtering. However, events with "Start" and "Stop" severity levels are prevented from producing log output.  
   
@@ -129,7 +129,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
 9. Change the value of the `value` attribute back to "Information".  
   
     > [!NOTE]
-    >  The `DefaultSwitch` switch setting controls only `My.Application.Log`. It does not change how the .NET Framework <xref:System.Diagnostics.Trace?displayProperty=nameWithType> and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> classes behave.  
+    > The `DefaultSwitch` switch setting controls only `My.Application.Log`. It does not change how the .NET Framework <xref:System.Diagnostics.Trace?displayProperty=nameWithType> and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> classes behave.  
   
 ## Individual Filtering For My.Application.Log Listeners  
  The previous example shows how to change the filtering for all `My.Application.Log` output. This example demonstrates how to filter an individual log listener. By default, an application has two listeners that write to the application's debug output and the log file.  

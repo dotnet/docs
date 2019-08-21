@@ -21,7 +21,7 @@ Behaviors enable you to modify default behavior and add custom extensions that i
 - Use the `ApplyDispatchBehavior` and `ApplyClientBehavior` methods to examine the description tree and modify the runtime for a particular scope on either the service or the client. You can also insert extension objects as well.  
   
     > [!NOTE]
-    >  Although a description tree is provided in these methods, it is for examination only. If a description tree is modified, the behavior is undefined.  
+    > Although a description tree is provided in these methods, it is for examination only. If a description tree is modified, the behavior is undefined.  
   
  The properties you can modify and the customization interfaces you can implement are accessed through the service and client runtime classes. The service types are the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and  <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes. The client types are the <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.ClientOperation> classes. The <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchRuntime> classes are the extensibility entry points to access client-wide and service-wide runtime properties and extension collections, respectively. Similarly, the <xref:System.ServiceModel.Dispatcher.ClientOperation> and  <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes expose client operation and service operation runtime properties and extension collections, respectively. You can, however, access the wider scoped runtime object from the operation runtime object and vice versa if need be.  
   

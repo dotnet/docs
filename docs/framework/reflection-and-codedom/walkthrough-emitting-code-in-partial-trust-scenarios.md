@@ -91,7 +91,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
      The <xref:System.Security.PermissionSet.AddPermission%2A> method adds the permission to the grant set if it is not already included. If the permission is already included in the grant set, the specified flags are added to the existing permission.  
   
     > [!NOTE]
-    >  RMA is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, the emitted code requires full trust.  
+    > RMA is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, the emitted code requires full trust.  
   
 2. Create the application domain, specifying the application domain setup information and the grant set.  
   
@@ -129,7 +129,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
      The <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method creates the object in the target application domain and returns a proxy that can be used to call the properties and methods of the object.  
   
     > [!NOTE]
-    >  If you use this code in Visual Studio, you must change the name of the class to include the namespace. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
+    > If you use this code in Visual Studio, you must change the name of the class to include the namespace. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
   
 6. Add code to call the `SimpleEmitDemo` method. The call is marshaled across the application domain boundary, and the code is executed in the sandboxed application domain.  
   
@@ -168,12 +168,12 @@ Reflection emit uses the same API set in full or partial trust, but some feature
      Anonymously hosted dynamic methods can use this restricted ability to skip JIT visibility checks only if the host application grants <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag. The demand for this permission is made when the method is invoked.  
   
     > [!NOTE]
-    >  Call stack information for the emitting assembly is included when the dynamic method is constructed. Therefore, the demand is made against the permissions of the emitting assembly instead of the assembly that invokes the method. This prevents the emitted code from being executed with elevated permissions.  
+    > Call stack information for the emitting assembly is included when the dynamic method is constructed. Therefore, the demand is made against the permissions of the emitting assembly instead of the assembly that invokes the method. This prevents the emitted code from being executed with elevated permissions.  
   
      The [complete code example](#Example) at the end of this walkthrough demonstrates the use and limitations of restricted member access. Its `Worker` class includes a method that can create anonymously hosted dynamic methods with or without the restricted ability to skip visibility checks, and the example shows the result of executing this method in application domains that have different trust levels.  
   
     > [!NOTE]
-    >  The restricted ability to skip visibility checks is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, they must be granted full trust.  
+    > The restricted ability to skip visibility checks is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, they must be granted full trust.  
   
 <a name="Example"></a>   
 ## Example  

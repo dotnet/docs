@@ -40,7 +40,7 @@ Resource files play a central role in localized applications. They enable an app
 - There must be a separate subdirectory in the application directory for each localized culture that stores that culture's resources. The subdirectory name must be the same as the culture name. Alternately, you can store your satellite assemblies in the global assembly cache. In this case, the culture information component of the assembly's strong name must indicate its culture. (See the [Installing Satellite Assemblies in the Global Assembly Cache](#SN) section later in this topic.)  
   
     > [!NOTE]
-    >  If your application includes resources for subcultures, place each subculture in a separate subdirectory under the application directory. Do not place subcultures in subdirectories under their main culture's directory.  
+    > If your application includes resources for subcultures, place each subculture in a separate subdirectory under the application directory. Do not place subcultures in subdirectories under their main culture's directory.  
   
 - The satellite assembly must have the same name as the application, and must use the file name extension ".resources.dll". For example, if an application is named Example.exe, the name of each satellite assembly should be Example.resources.dll. Note that the satellite assembly name does not indicate the culture of its resource files. However, the satellite assembly appears in a directory that does specify the culture.  
   

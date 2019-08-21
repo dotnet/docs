@@ -28,7 +28,7 @@ You can dock controls to the edges of your form or have them fill the control's 
      The control is automatically resized to fit the boundaries of the docked edge.  
   
     > [!NOTE]
-    >  Inherited controls must be `Protected` to be able to be docked. To change the access level of a control, set its **Modifier** property in the Properties window.  
+    > Inherited controls must be `Protected` to be able to be docked. To change the access level of a control, set its **Modifier** property in the Properties window.  
   
 ## See also
 

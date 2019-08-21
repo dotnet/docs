@@ -53,7 +53,7 @@ HRESULT GetHostOverlappedSize (
 > `GetHostOverlappedSize` is called only once. The host's custom data must be the same size for every I/O request.  
   
 > [!IMPORTANT]
->  The size of the `OVERLAPPED` object itself is not included in the value of `pcbSize`.  
+> The size of the `OVERLAPPED` object itself is not included in the value of `pcbSize`.  
   
  For more information about the `OVERLAPPED` structure, see the Windows Platform documentation.  
   

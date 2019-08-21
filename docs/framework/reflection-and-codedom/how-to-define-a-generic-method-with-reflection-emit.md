@@ -20,7 +20,7 @@ The first procedure shows how to create a simple generic method with two type pa
  The third procedure shows how to invoke the generic method.  
   
 > [!IMPORTANT]
->  A method is not generic just because it belongs to a generic type and uses the type parameters of that type. A method is generic only if it has its own type parameter list. A generic method can appear on a nongeneric type, as in this example. For an example of a nongeneric method on a generic type, see [How to: Define a Generic Type with Reflection Emit](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
+> A method is not generic just because it belongs to a generic type and uses the type parameters of that type. A method is generic only if it has its own type parameter list. A generic method can appear on a nongeneric type, as in this example. For an example of a nongeneric method on a generic type, see [How to: Define a Generic Type with Reflection Emit](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
 ### To define a generic method  
   

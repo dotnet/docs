@@ -151,7 +151,7 @@ ms.author: "ronpet"
  The <xref:System.Convert> class provides a language-neutral way to perform conversions between base types and is available to all languages that target the common language runtime. It provides a complete set of methods for both widening and narrowing conversions, and throws an <xref:System.InvalidCastException> for conversions that are not supported (such as the conversion of a <xref:System.DateTime> value to an integer value). Narrowing conversions are performed in a checked context, and an <xref:System.OverflowException> is thrown if the conversion fails.  
   
 > [!IMPORTANT]
->  Because the <xref:System.Convert> class includes methods to convert to and from each base type, it eliminates the need to call each base type's <xref:System.IConvertible> explicit interface implementation.  
+> Because the <xref:System.Convert> class includes methods to convert to and from each base type, it eliminates the need to call each base type's <xref:System.IConvertible> explicit interface implementation.  
   
  The following example illustrates the use of the <xref:System.Convert?displayProperty=nameWithType> class to perform several widening and narrowing conversions between .NET Framework base types.  
   

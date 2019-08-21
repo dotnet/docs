@@ -47,7 +47,7 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
     >  .NET Native uses the same garbage collector as the standard common language runtime. In the .NET Native garbage collector, background garbage collection is enabled by default. For more information about garbage collection, see [Fundamentals of Garbage Collection](../../../docs/standard/garbage-collection/fundamentals.md).  
   
 > [!IMPORTANT]
->  .NET Native compiles an entire application to a native application. It does not allow you to compile a single assembly that contains a class library to native code so that it can be called independently from managed code.  
+> .NET Native compiles an entire application to a native application. It does not allow you to compile a single assembly that contains a class library to native code so that it can be called independently from managed code.  
   
  The resulting app that is produced by the .NET Native tool chain is written to a directory named ilc.out in the Debug or Release directory of your project directory. It consists of the following files:  
   

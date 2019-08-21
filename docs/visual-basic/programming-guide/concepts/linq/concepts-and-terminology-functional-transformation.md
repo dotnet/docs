@@ -16,7 +16,7 @@ This topic introduces the concepts and terminology of pure functional transforma
 - *Stateless*, so that executing the same function or specific set of functions on the same input will always result in the same output. Pure transformations have no memory of their prior use.  
   
 > [!IMPORTANT]
->  In the rest of this tutorial, the term "pure function" is used in a general sense to indicate a programming approach, and not a specific language feature.  
+> In the rest of this tutorial, the term "pure function" is used in a general sense to indicate a programming approach, and not a specific language feature.  
 >   
 >  Note that pure functions must be implemented as functions in Visual Basic.  
 >   

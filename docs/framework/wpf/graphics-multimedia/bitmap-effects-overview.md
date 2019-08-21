@@ -9,7 +9,7 @@ ms.assetid: 23cb338e-4b59-4b52-b294-96431f9c9568
 Bitmap effects enable designers and developers to apply visual effects to rendered Windows Presentation Foundation (WPF) content. For example, bitmap effects allow you to easily apply a <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> effect or a blur effect to an image or a button.  
   
 > [!IMPORTANT]
->  In the .NET Framework 4 or later, the <xref:System.Windows.Media.Effects.BitmapEffect> class is obsolete. If you try to use the <xref:System.Windows.Media.Effects.BitmapEffect> class, you will get an obsolete exception. The non-obsolete alternative to the <xref:System.Windows.Media.Effects.BitmapEffect> class is the <xref:System.Windows.Media.Effects.Effect> class. In most situations, the <xref:System.Windows.Media.Effects.Effect> class is significantly faster.  
+> In the .NET Framework 4 or later, the <xref:System.Windows.Media.Effects.BitmapEffect> class is obsolete. If you try to use the <xref:System.Windows.Media.Effects.BitmapEffect> class, you will get an obsolete exception. The non-obsolete alternative to the <xref:System.Windows.Media.Effects.BitmapEffect> class is the <xref:System.Windows.Media.Effects.Effect> class. In most situations, the <xref:System.Windows.Media.Effects.Effect> class is significantly faster.  
 
 <a name="wpf_effects"></a>   
 ## WPF Bitmap Effects  

@@ -25,7 +25,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
 - Call the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to provide notification of cancellation.  
   
 > [!IMPORTANT]
->  The <xref:System.Threading.CancellationTokenSource> class implements the <xref:System.IDisposable> interface. You should be sure to call the <xref:System.Threading.CancellationTokenSource.Dispose%2A?displayProperty=nameWithType> method when you have finished using the cancellation token source to free any unmanaged resources it holds.  
+> The <xref:System.Threading.CancellationTokenSource> class implements the <xref:System.IDisposable> interface. You should be sure to call the <xref:System.Threading.CancellationTokenSource.Dispose%2A?displayProperty=nameWithType> method when you have finished using the cancellation token source to free any unmanaged resources it holds.  
   
  The following illustration shows the relationship between a token source and all the copies of its token.  
   

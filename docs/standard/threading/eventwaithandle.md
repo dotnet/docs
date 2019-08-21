@@ -25,7 +25,7 @@ The <xref:System.Threading.EventWaitHandle> class allows threads to communicate 
  Automatic reset events are usually used to provide exclusive access to a resource for a single thread at a time. A thread requests the resource by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method. If no other thread is holding the wait handle, the method returns `true` and the calling thread has control of the resource.  
   
 > [!IMPORTANT]
->  As with all synchronization mechanisms, you must ensure that all code paths wait on the appropriate wait handle before accessing a protected resource. Thread synchronization is cooperative.  
+> As with all synchronization mechanisms, you must ensure that all code paths wait on the appropriate wait handle before accessing a protected resource. Thread synchronization is cooperative.  
   
  If an automatic reset event is signaled when no threads are waiting, it remains signaled until a thread attempts to wait on it. The event releases the thread and immediately resets, blocking subsequent threads.  
   

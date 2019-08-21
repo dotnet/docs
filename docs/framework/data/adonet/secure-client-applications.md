@@ -10,7 +10,7 @@ Applications typically consist of many parts that must all be protected from vul
  When constructing an application that accesses data, you should assume that all user input is malicious until proven otherwise. Failure to do so can leave your application vulnerable to attack. The .NET Framework contains classes to help you enforce a domain of values for input controls, such as limiting the number of characters that can be entered. Event hooks allow you to write procedures to check the validity of values. User input data can be validated and strongly typed, limiting an application's exposure to script and SQL injection exploits.  
   
 > [!IMPORTANT]
->  You must also validate user input at the data source as well as in the client application. An attacker may choose to circumvent your application and attack the data source directly.  
+> You must also validate user input at the data source as well as in the client application. An attacker may choose to circumvent your application and attack the data source directly.  
   
  [Security and User Input](../../../standard/security/security-and-user-input.md)  
  Describes how to handle subtle and potentially dangerous bugs involving user input.  

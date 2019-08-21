@@ -29,7 +29,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
  In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> can participate in drag-and-drop. The events and methods required for drag-and-drop operations are defined in the <xref:System.Windows.DragDrop> class. The <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> classes contain aliases for the <xref:System.Windows.DragDrop> attached events so that the events appear in the class members list when a <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to these events are attached to the underlying <xref:System.Windows.DragDrop> attached event and receive the same event data instance. For more information, see the <xref:System.Windows.UIElement.Drop?displayProperty=nameWithType> event.  
   
 > [!IMPORTANT]
->  OLE drag-and-drop does not work while in the Internet zone.  
+> OLE drag-and-drop does not work while in the Internet zone.  
   
 <a name="Data_Transfer"></a>   
 ## Data Transfer  

@@ -101,7 +101,7 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 ## Remarks  
   
 > [!IMPORTANT]
->  In terms of dependency property precedence, a `Binding` expression is equivalent to a locally set value. If you set a local value for a property that previously had a `Binding` expression, the `Binding` is completely removed. For details, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).  
+> In terms of dependency property precedence, a `Binding` expression is equivalent to a locally set value. If you set a local value for a property that previously had a `Binding` expression, the `Binding` is completely removed. For details, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).  
   
  Describing data binding at a basic level is not covered in this topic. See [Data Binding Overview](../data/data-binding-overview.md).  
   

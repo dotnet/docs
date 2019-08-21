@@ -11,9 +11,9 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
  You apply the `Task.WhenAll` method to a collection of tasks. The application of `WhenAll` returns a single task that isn’t complete until every task in the collection is completed. The tasks appear to run in parallel, but no additional threads are created. The tasks can complete in any order.  
   
 > [!IMPORTANT]
->  The following procedures describe extensions to the async applications that are developed in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can develop the applications by either completing the walkthrough or downloading the code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).  
+> The following procedures describe extensions to the async applications that are developed in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can develop the applications by either completing the walkthrough or downloading the code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).  
 >   
->  To run the example, you must have Visual Studio 2012 or later installed on your computer.  
+> To run the example, you must have Visual Studio 2012 or later installed on your computer.  
   
 ### To add Task.WhenAll to your GetURLContentsAsync solution  
   

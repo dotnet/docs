@@ -11,7 +11,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
  For tracing settings recommendations in production or debugging environment, refer to [Recommended Settings for Tracing and Message Logging](../../../../../docs/framework/wcf/diagnostics/tracing/recommended-settings-for-tracing-and-message-logging.md).  
   
 > [!IMPORTANT]
->  On Windows 8 you must run your application elevated (Run as Administrator) in order for your application to generate trace logs.  
+> On Windows 8 you must run your application elevated (Run as Administrator) in order for your application to generate trace logs.  
   
 ## Enabling Tracing  
  Windows Communication Foundation (WCF) outputs the following data for diagnostic tracing:  

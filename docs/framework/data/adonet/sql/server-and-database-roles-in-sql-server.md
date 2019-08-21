@@ -10,7 +10,7 @@ All versions of SQL Server use role-based security, which allows you to assign p
  Fixed server roles have a fixed set of permissions and server-wide scope. They are intended for use in administering SQL Server and the permissions assigned to them cannot be changed. Logins can be assigned to fixed server roles without having a user account in a database.  
   
 > [!IMPORTANT]
->  The `sysadmin` fixed server role encompasses all other roles and has unlimited scope. Do not add principals to this role unless they are highly trusted. `sysadmin` role members have irrevocable administrative privileges on all server databases and resources.  
+> The `sysadmin` fixed server role encompasses all other roles and has unlimited scope. Do not add principals to this role unless they are highly trusted. `sysadmin` role members have irrevocable administrative privileges on all server databases and resources.  
   
  Be selective when you add users to fixed server roles. For example, the `bulkadmin` role allows users to insert the contents of any local file into a table, which could jeopardize data integrity. See SQL Server Books Online for the complete list of fixed server roles and permissions.  
   
@@ -46,7 +46,7 @@ All versions of SQL Server use role-based security, which allows you to assign p
  The `guest` account is a built-in account in all versions of SQL Server. By default, it is disabled in new databases. If it is enabled, you can disable it by revoking its CONNECT permission by executing the Transact-SQL REVOKE CONNECT FROM GUEST statement.  
   
 > [!IMPORTANT]
->  Avoid using the `guest` account; all logins without their own database permissions obtain the database permissions granted to this account. If you must use the `guest` account, grant it minimum permissions.  
+> Avoid using the `guest` account; all logins without their own database permissions obtain the database permissions granted to this account. If you must use the `guest` account, grant it minimum permissions.  
   
  For more information about SQL Server logins, users and roles, see the following resources.  
   

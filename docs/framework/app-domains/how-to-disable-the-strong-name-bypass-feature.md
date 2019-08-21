@@ -18,7 +18,7 @@ Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), strong-name s
  When you override the bypass feature, the strong name is validated only for correctness; it is not checked for a <xref:System.Security.Permissions.StrongNameIdentityPermission>. If you want to confirm a specific strong name, you have to perform that check separately.  
   
 > [!IMPORTANT]
->  The ability to force strong-name validation depends on a registry key, as described in the following procedure. If an application is running under an account that does not have access control list (ACL) permission to access that registry key, the setting is ineffective. You must ensure that ACL rights are configured for this key so that it can be read for all assemblies.  
+> The ability to force strong-name validation depends on a registry key, as described in the following procedure. If an application is running under an account that does not have access control list (ACL) permission to access that registry key, the setting is ineffective. You must ensure that ACL rights are configured for this key so that it can be read for all assemblies.  
   
 ### To disable the strong-name bypass feature for all applications  
   

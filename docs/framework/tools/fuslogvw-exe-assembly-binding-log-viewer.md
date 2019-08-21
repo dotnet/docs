@@ -16,7 +16,7 @@ ms.author: "ronpet"
 The Assembly Binding Log Viewer displays details for assembly binds. This information helps you diagnose why the .NET Framework cannot locate an assembly at run time. These failures are usually the result of an assembly deployed to the wrong location, a native image that is no longer valid, or a mismatch in version numbers or cultures. The common language runtime's failure to locate an assembly typically shows up as a <xref:System.TypeLoadException> in your application.  
   
 > [!IMPORTANT]
->  You must run fuslogvw.exe with administrator privileges.  
+> You must run fuslogvw.exe with administrator privileges.  
   
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7) with administrator credentials. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
@@ -200,7 +200,7 @@ Discarding native image.
      See the Important note regarding assemblies that are loaded as domain neutral.  
   
 > [!IMPORTANT]
->  When an assembly is loaded as domain neutral, for example by setting the <xref:System.AppDomainSetup.LoaderOptimization%2A> property to <xref:System.LoaderOptimization.MultiDomain?displayProperty=nameWithType> or <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=nameWithType>, turning on logging might leak memory in some cases. This can happen if a log entry is made when a domain-neutral module is loaded into an application domain, and later the application domain is unloaded. The log entry might not be released until the process ends. Some debuggers automatically turn on logging.  
+> When an assembly is loaded as domain neutral, for example by setting the <xref:System.AppDomainSetup.LoaderOptimization%2A> property to <xref:System.LoaderOptimization.MultiDomain?displayProperty=nameWithType> or <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=nameWithType>, turning on logging might leak memory in some cases. This can happen if a log entry is made when a domain-neutral module is loaded into an application domain, and later the application domain is unloaded. The log entry might not be released until the process ends. Some debuggers automatically turn on logging.  
   
 #### To enable a custom log path  
   

@@ -135,7 +135,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  The leading carat character (`^`) in a negative character group is mandatory and indicates the character group is a negative character group instead of a positive character group.  
   
 > [!IMPORTANT]
->  A negative character group in a larger regular expression pattern is not a zero-width assertion. That is, after evaluating the negative character group, the regular expression engine advances one character in the input string.  
+> A negative character group in a larger regular expression pattern is not a zero-width assertion. That is, after evaluating the negative character group, the regular expression engine advances one character in the input string.  
   
  Some common regular expression patterns that contain negative character groups are listed in the following table.  
   

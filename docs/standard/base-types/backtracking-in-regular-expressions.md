@@ -127,7 +127,7 @@ ms.custom: seodec18
  Starting with the .NET Framework 4.5, you can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value. By default, the time-out interval is set to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType> and the regular expression engine does not time out.  
   
 > [!IMPORTANT]
->  We recommend that you always set a time-out interval if your regular expression relies on backtracking.  
+> We recommend that you always set a time-out interval if your regular expression relies on backtracking.  
   
  A <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception indicates that the regular expression engine was unable to find a match within the specified time-out interval but does not indicate why the exception was thrown. The reason might be excessive backtracking, but it is also possible that the time-out interval was set too low given the system load at the time the exception was thrown. When you handle the exception, you can choose to abandon further matches with the input string or increase the time-out interval and retry the matching operation.  
   

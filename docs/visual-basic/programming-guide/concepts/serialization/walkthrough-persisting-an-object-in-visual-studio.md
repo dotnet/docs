@@ -12,10 +12,10 @@ Although you can set an object's properties to default values at design time, an
  In this walkthrough, you will create a simple `Loan` object and persist its data to a file. You will then retrieve the data from the file when you re-create the object.  
   
 > [!IMPORTANT]
->  This example creates a new file, if the file does not already exist. If an application must create a file, that application must `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it is more secure to create the file during deployment, and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
+> This example creates a new file, if the file does not already exist. If an application must create a file, that application must `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it is more secure to create the file during deployment, and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
   
 > [!IMPORTANT]
->  This example stores data in a binary. These formats should not be used for sensitive data, such as passwords or credit-card information.  
+> This example stores data in a binary. These formats should not be used for sensitive data, such as passwords or credit-card information.  
   
 > [!NOTE]
 > The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  

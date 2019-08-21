@@ -56,7 +56,7 @@ Specifies that an application can reference the same assembly in two different i
  One such scenario is an assembly that has to reference both the .NET Framework implementation and the .NET Framework for Silverlight implementation of a particular reference assembly. For example, a XAML designer written in Windows Presentation Foundation (WPF) might need to reference both the WPF Desktop implementation, for the designer's user interface, and the subset of WPF that is included in the Silverlight implementation. By default, the separate references cause a compiler error, because assembly binding sees the two assemblies as equivalent. This element disables the default behavior, and allows compilation to succeed.  
   
 > [!IMPORTANT]
->  In order for the compiler to pass the information to the common language runtime's assembly-binding logic, you must use the `/appconfig` compiler option to specify the location of the app.config file that contains this element.  
+> In order for the compiler to pass the information to the common language runtime's assembly-binding logic, you must use the `/appconfig` compiler option to specify the location of the app.config file that contains this element.  
   
 ## Example  
  The following example enables an application to have references to both the .NET Framework implementation and the .NET Framework for Silverlight implementation of any .NET Framework assembly that exists in both implementations. The `/appconfig` compiler option must be used to specify the location of this app.config file.  

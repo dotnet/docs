@@ -16,7 +16,7 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
  In some cases, compilation with the new 64-bit JIT compiler results in a runtime exception or in behavior that is not observed when executing code compiled by the older 64-bit JIT compiler. The known differences include the following:  
   
 > [!IMPORTANT]
->  All of these known issues have been addressed in the new 64-bit compiler released with the .NET Framework 4.6.2. Most have also been addressed in service releases of the .NET Framework 4.6 and 4.6.1 that are included with Windows Update. You can eliminate these issues by ensuring that your version of Windows is up to date, or by upgrading to the .NET Framework 4.6.2.  
+> All of these known issues have been addressed in the new 64-bit compiler released with the .NET Framework 4.6.2. Most have also been addressed in service releases of the .NET Framework 4.6 and 4.6.1 that are included with Windows Update. You can eliminate these issues by ensuring that your version of Windows is up to date, or by upgrading to the .NET Framework 4.6.2.  
   
 - Under certain conditions, an unboxing operation may throw a <xref:System.NullReferenceException> in Release builds with optimization turned on.  
   

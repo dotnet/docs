@@ -24,9 +24,6 @@ Represents a configuration element that defines a backup endpoint element.
 </routing>
 ```  
   
-```csharp  
-```  
-  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

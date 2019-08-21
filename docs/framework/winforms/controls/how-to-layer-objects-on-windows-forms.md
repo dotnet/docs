@@ -28,21 +28,21 @@ When you create a complex user interface, or work with a multiple document inter
 
 ## To layer controls programmatically
 
-- Use the <xref:System.Windows.Forms.Control.BringToFront%2A> and <xref:System.Windows.Forms.Control.SendToBack%2A> methods to manipulate the z-order of the controls.
+Use the <xref:System.Windows.Forms.Control.BringToFront%2A> and <xref:System.Windows.Forms.Control.SendToBack%2A> methods to manipulate the z-order of the controls.
 
-   For example, if a <xref:System.Windows.Forms.TextBox> control, `txtFirstName`, is underneath another control and you want to have it on top, use the following code:
+For example, if a <xref:System.Windows.Forms.TextBox> control, `txtFirstName`, is underneath another control and you want to have it on top, use the following code:
 
-   ```vb
-   txtFirstName.BringToFront()
-   ```
+```vb
+txtFirstName.BringToFront()
+```
 
-   ```csharp
-   txtFirstName.BringToFront();
-   ```
+```csharp
+txtFirstName.BringToFront();
+```
 
-   ```cpp
-   txtFirstName->BringToFront();
-   ```
+```cpp
+txtFirstName->BringToFront();
+```
 
 > [!NOTE]
 > Windows Forms supports *control containment*. Control containment involves placing a number of controls within a containing control, such as a number of <xref:System.Windows.Forms.RadioButton> controls within a <xref:System.Windows.Forms.GroupBox> control. You can then layer the controls within the containing control. Moving the group box moves the controls as well, because they are contained inside it.

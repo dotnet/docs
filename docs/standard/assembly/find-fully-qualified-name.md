@@ -22,7 +22,11 @@ To discover the fully qualified name of an assembly in the global assembly cache
   
 - If you know the assembly's file system path, you can call the `static` (C#) or `Shared` (Visual Basic) <xref:System.Reflection.AssemblyName.GetAssemblyName%2A?displayProperty=nameWithType> method to get the fully qualified assembly name. The following is a simple example.  
   
-  **C#**
+  # [C++](#tab/cpp)
+  ```
+     
+  ```
+  # [C#](#tab/csharp)
   ```csharp
   using System;
   using System.Reflection;
@@ -37,8 +41,7 @@ To discover the fully qualified name of an assembly in the global assembly cache
   // The example displays output like the following:
   //   UtilityLibrary, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
   ```
-  
-  **Visual Basic**
+  # [Visual Basic](#tab/vb)
   ```vb
   Imports System.Reflection
   
@@ -50,7 +53,7 @@ To discover the fully qualified name of an assembly in the global assembly cache
   ' The example displays output like the following:
   '   UtilityLibrary, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
   ```
-  
+  ---
 - You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.  
   
 For more information about setting assembly attributes such as version, culture, and assembly name, see [Set assembly attributes](set-attributes.md). For more information about giving an assembly a strong name, see [Create and use strong-named assemblies](create-use-strong-named.md).  

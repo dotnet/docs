@@ -29,52 +29,190 @@ This article explains how to create a multifile assembly and provides code that 
 ## Create a multifile assembly
 
 1. Compile all files that contain namespaces referenced by other modules in the assembly into code modules. The default extension for code modules is *.netmodule*.
-
-    For example, let's say the `Stringer` file has a namespace called `myStringer`, which includes a class called `Stringer`. The `Stringer` class contains a method called `StringerMethod` that writes a single line to the console.
-
-    [!code-cpp[Conceptual.Assembly.Multifile#1](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.assembly.multifile/cpp/stringer.cpp#1)]
-    [!code-csharp[Conceptual.Assembly.Multifile#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.assembly.multifile/cs/stringer.cs#1)]
-    [!code-vb[Conceptual.Assembly.Multifile#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.assembly.multifile/vb/stringer.vb#1)]
-
-    Use the following command to compile this code:
-
-    [!code-cpp[Conceptual.Assembly.Multifile#2](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.assembly.multifile/cpp/stringer.cpp#2)]
-    [!code-csharp[Conceptual.Assembly.Multifile#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.assembly.multifile/cs/stringer.cs#2)]
-    [!code-vb[Conceptual.Assembly.Multifile#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.assembly.multifile/vb/stringer.vb#2)]
-
-    Specifying the *module* parameter with the **/t:** compiler option indicates that the file should be compiled as a module rather than as an assembly. The compiler produces a module called *Stringer.netmodule*, which can be added to an assembly.
-
-2. Compile all other modules, using the necessary compiler options to indicate the other modules that are referenced in the code. This step uses the **/addmodule** compiler option.
-
-    In the following example, a code module called *Client* has an entry point `Main` method that references a method in the *Stringer.dll* module created in step 1.
-
-    [!code-cpp[Conceptual.Assembly.Multifile#3](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.assembly.multifile/cpp/client.cpp#3)]
-    [!code-csharp[Conceptual.Assembly.Multifile#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.assembly.multifile/cs/client.cs#3)]
-    [!code-vb[Conceptual.Assembly.Multifile#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.assembly.multifile/vb/client.vb#3)]
-
-    Use the following command to compile this code:
-
-    [!code-cpp[Conceptual.Assembly.Multifile#4](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.assembly.multifile/cpp/client.cpp#4)]
-    [!code-csharp[Conceptual.Assembly.Multifile#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.assembly.multifile/cs/client.cs#4)]
-    [!code-vb[Conceptual.Assembly.Multifile#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.assembly.multifile/vb/client.vb#4)]
-
-    Specify the **/t:module** option because this module will be added to an assembly in a future step. Specify the **/addmodule** option because the code in *Client* references a namespace created by the code in *Stringer.netmodule*. The compiler produces a module called *Client.netmodule* that contains a reference to another module, *Stringer.netmodule*.
-
-    >[!NOTE]
-    >The C# and Visual Basic compilers support directly creating multifile assemblies using the following two different syntaxes.
-    >
-    >- Two compilations create a two-file assembly:
-    >
-    >    [!code-cpp[Conceptual.Assembly.Multifile#5](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.assembly.multifile/cpp/client.cpp#5)]
-    >    [!code-csharp[Conceptual.Assembly.Multifile#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.assembly.multifile/cs/client.cs#5)]
-    >    [!code-vb[Conceptual.Assembly.Multifile#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.assembly.multifile/vb/client.vb#5)]
-    >
-    >- One compilation creates a two-file assembly:
-    >
-    >    [!code-cpp[Conceptual.Assembly.Multifile#6](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.assembly.multifile/cpp/client.cpp#6)]
-    >    [!code-csharp[Conceptual.Assembly.Multifile#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.assembly.multifile/cs/client.cs#6)]
-    >    [!code-vb[Conceptual.Assembly.Multifile#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.assembly.multifile/vb/client.vb#6)]
-
+   
+   For example, let's say the `Stringer` file has a namespace called `myStringer`, which includes a class called `Stringer`. The `Stringer` class contains a method called `StringerMethod` that writes a single line to the console.
+   
+   # [C++](#tab/cpp)
+   ```cpp
+   // Assembly building example in the .NET Framework.
+   using namespace System;
+   
+   namespace myStringer
+   {
+       public ref class Stringer
+       {
+       public:
+           void StringerMethod()
+           {
+               System::Console::WriteLine("This is a line from StringerMethod.");
+           }
+       };
+   }
+   ```
+   # [C#](#tab/csharp)
+   ```csharp
+   // Assembly building example in the .NET Framework.
+   using System;
+   
+   namespace myStringer
+   {
+       public class Stringer
+       {
+           public void StringerMethod()
+           {
+               System.Console.WriteLine("This is a line from StringerMethod.");
+           }
+       }
+   }
+   ```
+   # [Visual Basic](#tab/vb)
+   ```vb
+   ' Assembly building example in the .NET Framework.
+   Imports System
+   
+   Namespace myStringer
+       Public Class Stringer
+           Public Sub StringerMethod()
+               System.Console.WriteLine("This is a line from StringerMethod.")
+           End Sub
+       End Class
+   End Namespace
+   ```
+   ---
+   
+2. Use the following command to compile this code:
+   
+   # [C++](#tab/cpp)
+   ```cmd
+   cl /clr:pure /LN Stringer.cpp
+   ```
+   # [C#](#tab/csharp)
+   ```cmd
+   csc /t:module Stringer.cs
+   ```
+   # [Visual Basic](#tab/vb)
+   ```cmd
+   vbc /t:module Stringer.vb
+   ```
+   ---
+   
+   Specifying the *module* parameter with the **/t:** compiler option indicates that the file should be compiled as a module rather than as an assembly. The compiler produces a module called *Stringer.netmodule*, which can be added to an assembly.
+   
+3. Compile all other modules, using the necessary compiler options to indicate the other modules that are referenced in the code. This step uses the **/addmodule** compiler option.
+   
+   In the following example, a code module called *Client* has an entry point `Main` method that references a method in the *Stringer.dll* module created in step 1.
+   
+   # [C++](#tab/cpp)
+   ```cpp
+   #using "Stringer.netmodule"
+   
+   using namespace System;
+   using namespace myStringer; //The namespace created in Stringer.netmodule.
+   
+   ref class MainClientApp
+   {
+       // Static method Main is the entry point method.
+   public:
+       static void Main()
+       {
+           Stringer^ myStringInstance = gcnew Stringer();
+           Console::WriteLine("Client code executes");
+           myStringInstance->StringerMethod();
+       }
+   };
+   
+   int main()
+   {
+       MainClientApp::Main();
+   }
+   ```
+   # [C#](#tab/csharp)
+   ```csharp
+   using System;
+   using myStringer;
+   
+   class MainClientApp
+   {
+       // Static method Main is the entry point method.
+       public static void Main()
+       {
+           Stringer myStringInstance = new Stringer();
+           Console.WriteLine("Client code executes");
+           myStringInstance.StringerMethod();
+       }
+   }
+   ```
+   # [Visual Basic](#tab/vb)
+   ```vb
+   Imports System
+   Imports myStringer
+   
+   Class MainClientApp
+       ' Static method Main is the entry point method.
+       Public Shared Sub Main()
+           Dim myStringInstance As New Stringer()
+           Console.WriteLine("Client code executes")
+           myStringInstance.StringerMethod()
+       End Sub
+   End Class
+   ```
+   ---
+   
+4. Use the following command to compile this code:
+   
+   # [C++](#tab/cpp)
+   ```cmd
+   cl /clr:pure /FUStringer.netmodule /LN Client.cpp
+   ```
+   # [C#](#tab/csharp)
+   ```cmd
+   csc /addmodule:Stringer.netmodule /t:module Client.cs
+   ```
+   # [Visual Basic](#tab/vb)
+   ```cmd
+   vbc /addmodule:Stringer.netmodule /t:module Client.vb
+   ```
+   ---
+   
+   Specify the **/t:module** option because this module will be added to an assembly in a future step. Specify the **/addmodule** option because the code in *Client* references a namespace created by the code in *Stringer.netmodule*. The compiler produces a module called *Client.netmodule* that contains a reference to another module, *Stringer.netmodule*.
+   
+   >[!NOTE]
+   >The C# and Visual Basic compilers support directly creating multifile assemblies using the following two different syntaxes.
+   >
+   >- Two compilations create a two-file assembly:
+   >  
+   >  # [C++](#tab/cpp)
+   >  ```cmd
+   >  cl /clr:pure /LN Stringer.cpp
+   >  cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
+   >  ```
+   >  # [C#](#tab/csharp)
+   >  ```cmd
+   >  csc /t:module Stringer.cs
+   >  csc Client.cs /addmodule:Stringer.netmodule
+   >  ```
+   >  # [Visual Basic](#tab/vb)
+   >  ```cmd
+   >  vbc /t:module Stringer.vb
+   >  vbc Client.vb /addmodule:Stringer.netmodule
+   >  ```
+   >  ---
+   >- One compilation creates a two-file assembly:
+   >  # [C++](#tab/cpp)
+   >  ```cmd
+   >  cl /clr:pure /LN Stringer.cpp
+   >  cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
+   >  ```
+   >  # [C#](#tab/csharp)
+   >  ```cmd
+   >  csc /out:Client.exe Client.cs /out:Stringer.netmodule Stringer.cs
+   >  ```
+   >  # [Visual Basic](#tab/vb)
+   >  ```cmd
+   >  vbc /out:Client.exe Client.vb /out:Stringer.netmodule Stringer.vb
+   >  ```
+   >  ---
+   
 3. Use the [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md) to create the output file that contains the assembly manifest. This file contains reference information for all modules or resources that are part of the assembly.
 
     At the command prompt, type the following command:

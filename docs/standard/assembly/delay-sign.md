@@ -28,11 +28,26 @@ To delay sign an assembly:
    
    - <xref:System.Reflection.AssemblyKeyFileAttribute>, which passes the name of the file containing the public key as a parameter to its constructor.  
    
-   - <xref:System.Reflection.AssemblyDelaySignAttribute>, which indicates that delay signing is being used by passing **true** as a parameter to its constructor. For example:  
+   - <xref:System.Reflection.AssemblyDelaySignAttribute>, which indicates that delay signing is being used by passing **true** as a parameter to its constructor. 
    
-   [!code-cpp[AssemblyDelaySignAttribute#4](../../../samples/snippets/cpp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cpp/source2.cpp#4)]
-   [!code-csharp[AssemblyDelaySignAttribute#4](../../../samples/snippets/csharp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cs/source2.cs#4)]
-   [!code-vb[AssemblyDelaySignAttribute#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyDelaySignAttribute/vb/source2.vb#4)]  
+   For example:  
+   
+   # [C++](#tab/cpp)
+   ```cpp
+   [assembly:AssemblyKeyFileAttribute("myKey.snk")];
+   [assembly:AssemblyDelaySignAttribute(true)];
+   ```
+   # [C#](#tab/csharp)
+   ```csharp
+   [assembly:AssemblyKeyFileAttribute("myKey.snk")]
+   [assembly:AssemblyDelaySignAttribute(true)]
+   ```
+   # [Visual Basic](#tab/vb)
+   ```vb
+   <Assembly:AssemblyKeyFileAttribute("myKey.snk")>
+   <Assembly:AssemblyDelaySignAttribute(True)>
+   ```
+   ---
    
 3. The compiler inserts the public key into the assembly manifest and reserves space in the PE file for the full strong name signature. The real public key must be stored while the assembly is built so that other assemblies that reference this assembly can obtain the key to store in their own assembly reference.  
   

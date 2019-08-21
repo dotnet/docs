@@ -52,5 +52,5 @@ Specifies how service metadata can be processed.
 - <xref:System.ServiceModel.Configuration.WsdlImporterElementCollection>
 - <xref:System.ServiceModel.Description.MetadataImporter>
 - <xref:System.ServiceModel.Description.WsdlImporter>
-- [WCF Client Configuration](../../feature-details/client-configuration.md)
-- [Clients](../../feature-details/clients.md)
+- [WCF Client Configuration](../../../wcf/feature-details/client-configuration.md)
+- [Clients](../../../wcf/feature-details/clients.md)

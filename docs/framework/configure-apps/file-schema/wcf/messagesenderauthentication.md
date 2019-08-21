@@ -53,8 +53,8 @@ Specifies authentication settings for peer certificate used by a message sender.
 - <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>
 - <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
-- [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
 - [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
 - [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
-- [Securing Peer Channel Applications](../../feature-details/securing-peer-channel-applications.md)
+- [Securing Peer Channel Applications](../../../wcf/feature-details/securing-peer-channel-applications.md)

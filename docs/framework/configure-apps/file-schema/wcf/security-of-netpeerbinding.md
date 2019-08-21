@@ -63,9 +63,9 @@ Defines the security settings of the [\<netPeerTcpBinding>](netpeertcpbinding.md
 - <xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Security%2A>
 - <xref:System.ServiceModel.PeerSecuritySettings>
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
-- [Selecting a Credential Type](../../feature-details/selecting-a-credential-type.md)
-- [Bindings](../../bindings.md)
-- [Configuring System-Provided Bindings](../../feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../using-bindings-to-configure-services-and-clients.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Selecting a Credential Type](../../../wcf/feature-details/selecting-a-credential-type.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
 - [\<binding>](../../../misc/binding.md)

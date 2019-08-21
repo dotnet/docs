@@ -48,4 +48,4 @@ Represents a collection of configuration elements that identify the type of a pa
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection>
-- [Hosting](../../feature-details/hosting.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)

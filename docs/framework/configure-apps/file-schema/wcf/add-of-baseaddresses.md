@@ -45,4 +45,4 @@ Represents a configuration element that specifies the base addresses used by the
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
 - <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>
-- [Hosting](../../feature-details/hosting.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)

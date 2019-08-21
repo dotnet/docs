@@ -55,5 +55,5 @@ Specifies settings for a custom peer resolver service.
 - <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings>
 - <xref:System.ServiceModel.Configuration.PeerResolverElement.Custom%2A>
 - <xref:System.ServiceModel.Configuration.PeerCustomResolverElement>
-- [Peer Resolvers](../../feature-details/peer-resolvers.md)
+- [Peer Resolvers](../../../wcf/feature-details/peer-resolvers.md)
 - [Adding a Custom Resolver to a PeerChannel Application](https://docs.microsoft.com/previous-versions/ms730105(v=vs.90))

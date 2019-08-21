@@ -6,7 +6,7 @@ ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
 # \<messageSenderAuthentication> element
 Specifies authentication options for peer-to-peer message senders.  
   
- For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md).  
+ For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md).  
   
  \<system.ServiceModel>  
 \<behaviors>  
@@ -47,13 +47,13 @@ Specifies authentication options for peer-to-peer message senders.
   
 |Value|Description|  
 |-----------|-----------------|  
-|Enumeration|Optional. One of the following values: `None`, `PeerTrust`, `ChainTrust`, `PeerOrChainTrust`, `Custom`. The default is `ChainTrust`. The default is `ChainTrust`.<br /><br /> For more information, see [Working with Certificates](../../feature-details/working-with-certificates.md).|  
+|Enumeration|Optional. One of the following values: `None`, `PeerTrust`, `ChainTrust`, `PeerOrChainTrust`, `Custom`. The default is `ChainTrust`. The default is `ChainTrust`.<br /><br /> For more information, see [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md).|  
   
 ## revocationMode Attribute  
   
 |Value|Description|  
 |-----------|-----------------|  
-|Enumeration|One of the following values: `NoCheck`, `Online`, `Offline`. The default is `Online`.<br /><br /> For more information, see [Working with Certificates](../../feature-details/working-with-certificates.md).|  
+|Enumeration|One of the following values: `NoCheck`, `Online`, `Offline`. The default is `Online`.<br /><br /> For more information, see [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md).|  
   
 ## trustedStoreLocation Attribute  
   
@@ -100,8 +100,8 @@ Specifies authentication options for peer-to-peer message senders.
 - <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
-- [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
 - [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
 - [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
-- [Securing Peer Channel Applications](../../feature-details/securing-peer-channel-applications.md)
+- [Securing Peer Channel Applications](../../../wcf/feature-details/securing-peer-channel-applications.md)

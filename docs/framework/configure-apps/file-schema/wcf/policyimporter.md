@@ -49,5 +49,5 @@ Specifies a policy importer that controls the import of custom policy assertions
 - <xref:System.ServiceModel.Configuration.PolicyImporterElement>
 - <xref:System.ServiceModel.Configuration.MetadataElement>
 - <xref:System.ServiceModel.Description.MetadataImporter>
-- [WCF Client Configuration](../../feature-details/client-configuration.md)
-- [Clients](../../feature-details/clients.md)
+- [WCF Client Configuration](../../../wcf/feature-details/client-configuration.md)
+- [Clients](../../../wcf/feature-details/clients.md)

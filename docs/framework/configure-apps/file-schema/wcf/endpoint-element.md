@@ -83,5 +83,5 @@ Specifies binding, contract, and address properties for a service endpoint, whic
 - <xref:System.ServiceModel.Configuration.ServiceEndpointElement>
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.Description.ServiceEndpoint>
-- [Endpoints: Addresses, Bindings, and Contracts](../../feature-details/endpoints-addresses-bindings-and-contracts.md)
-- [How to: Create a Service Endpoint in Configuration](../../feature-details/how-to-create-a-service-endpoint-in-configuration.md)
+- [Endpoints: Addresses, Bindings, and Contracts](../../../wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+- [How to: Create a Service Endpoint in Configuration](../../../wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)

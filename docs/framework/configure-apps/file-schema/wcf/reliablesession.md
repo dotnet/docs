@@ -55,7 +55,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
   
  Each binding element represents a processing step when sending or receiving messages. At runtime, binding elements create the channel factories and listeners that are necessary to build outgoing and incoming channel stacks required to send and receive messages. The `reliableSession` provides an optional layer in the stack that can establish a reliable session between endpoints and configure the behavior of this session.  
   
- For more information, see [Reliable Sessions](../../feature-details/reliable-sessions.md).  
+ For more information, see [Reliable Sessions](../../../wcf/feature-details/reliable-sessions.md).  
   
 ## Example  
  The following example demonstrates how to configure a custom binding with various transport and message encoding elements, especially enabling reliable sessions, which maintains client state and specifies in-order delivery assurances. This feature is configured in the application configuration files for the client and service. The example show the service configuration.  
@@ -118,8 +118,8 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 - <xref:System.ServiceModel.Configuration.ReliableSessionElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>
-- [Reliable Sessions](../../feature-details/reliable-sessions.md)
-- [Bindings](../../bindings.md)
-- [Extending Bindings](../../extending/extending-bindings.md)
-- [Custom Bindings](../../extending/custom-bindings.md)
+- [Reliable Sessions](../../../wcf/feature-details/reliable-sessions.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)

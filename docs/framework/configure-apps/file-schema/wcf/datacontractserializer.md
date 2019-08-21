@@ -49,5 +49,5 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
 - <xref:System.ServiceModel.Configuration.DataContractSerializerElement>
-- [Data Contract Known Types](../../feature-details/data-contract-known-types.md)
-- [Data Transfer and Serialization](../../feature-details/data-transfer-and-serialization.md)
+- [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md)
+- [Data Transfer and Serialization](../../../wcf/feature-details/data-transfer-and-serialization.md)

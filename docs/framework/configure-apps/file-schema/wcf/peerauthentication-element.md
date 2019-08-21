@@ -6,7 +6,7 @@ ms.assetid: 09a8a9ff-e395-42f6-8ceb-9d44bdc1cbe1
 # \<peerAuthentication> Element
 Specifies authentication options for peer-to-peer clients.  
   
- For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md).  
+ For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md).  
   
  \<system.ServiceModel>  
 \<behaviors>  
@@ -47,13 +47,13 @@ Specifies authentication options for peer-to-peer clients.
   
 |Value|Description|  
 |-----------|-----------------|  
-|Enumeration|One of the following values: `None`, `PeerTrust`, `ChainTrust`, `PeerOrChainTrust`, `Custom`. The default is `ChainTrust`.<br /><br /> For more information, see [Working with Certificates](../../feature-details/working-with-certificates.md).|  
+|Enumeration|One of the following values: `None`, `PeerTrust`, `ChainTrust`, `PeerOrChainTrust`, `Custom`. The default is `ChainTrust`.<br /><br /> For more information, see [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md).|  
   
 ## revocationMode Attribute  
   
 |Value|Description|  
 |-----------|-----------------|  
-|Enumeration|One of the following values: `NoCheck`, `Online`, `Offline`. The default is `Online`.<br /><br /> For more information, see [Working with Certificates](../../feature-details/working-with-certificates.md).|  
+|Enumeration|One of the following values: `NoCheck`, `Online`, `Offline`. The default is `Online`.<br /><br /> For more information, see [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md).|  
   
 ## trustedStoreLocation Attribute  
   
@@ -101,8 +101,8 @@ Specifies authentication options for peer-to-peer clients.
 - <xref:System.ServiceModel.Security.PeerCredential.PeerAuthentication%2A>
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.PeerAuthentication%2A>
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
-- [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
 - [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
 - [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
-- [Securing Peer Channel Applications](../../feature-details/securing-peer-channel-applications.md)
+- [Securing Peer Channel Applications](../../../wcf/feature-details/securing-peer-channel-applications.md)

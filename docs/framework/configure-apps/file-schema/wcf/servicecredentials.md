@@ -64,4 +64,4 @@ Specifies the credential to be used in authenticating the service and the client
 
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>
 - <xref:System.ServiceModel.Description.ServiceCredentials>
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)

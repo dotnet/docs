@@ -42,4 +42,4 @@ Represents a configuration element that specifies the interval of time allowed f
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
-- [Hosting](../../feature-details/hosting.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)

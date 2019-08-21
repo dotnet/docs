@@ -43,7 +43,7 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
 |[\<serviceCredentials>](servicecredentials.md)|Specifies the credentials to be used in authenticating the service, and the client credential validation related settings.|  
   
 ## Remarks  
- This element is used when the service must have the client's certificate in advance to communicate securely with the client. This occurs when using the duplex communication pattern. In the more typical request/response pattern, the client includes its certificate in the request, which the service uses to encrypt and sign its response back to the client. In the duplex communication pattern, however, the service does not have a request from the client and therefore it needs the client's certificate in advance to secure the message to the client. Therefore you must obtain the client's certificate in an out-of-band negotiation, and specify the certificate using this element. For more information about duplex services, see [How to: Create a Duplex Contract](../../feature-details/how-to-create-a-duplex-contract.md).  
+ This element is used when the service must have the client's certificate in advance to communicate securely with the client. This occurs when using the duplex communication pattern. In the more typical request/response pattern, the client includes its certificate in the request, which the service uses to encrypt and sign its response back to the client. In the duplex communication pattern, however, the service does not have a request from the client and therefore it needs the client's certificate in advance to secure the message to the client. Therefore you must obtain the client's certificate in an out-of-band negotiation, and specify the certificate using this element. For more information about duplex services, see [How to: Create a Duplex Contract](../../../wcf/feature-details/how-to-create-a-duplex-contract.md).  
   
  The certificate set in this element is used to encrypt messages to the client only for bindings that are configured with `MutualCertificateDuplex` message security authentication mode.  
   
@@ -54,6 +54,6 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>
 - <xref:System.ServiceModel.Description.ServiceCredentials.ClientCertificate%2A>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential>
-- [How to: Create a Duplex Contract](../../feature-details/how-to-create-a-duplex-contract.md)
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
+- [How to: Create a Duplex Contract](../../../wcf/feature-details/how-to-create-a-duplex-contract.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)

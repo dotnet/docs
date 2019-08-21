@@ -35,5 +35,5 @@ The `comContracts` configuration section contains elements that allow you to spe
 - [\<persistableTypes>](persistabletypes.md)
 - [\<userDefinedType>](userdefinedtype.md)
 - [\<comContract>](comcontract.md)
-- [Integrating with COM+ Applications](../../feature-details/integrating-with-com-plus-applications.md)
-- [How to: Configure COM+ Service Settings](../../feature-details/how-to-configure-com-service-settings.md)
+- [Integrating with COM+ Applications](../../../wcf/feature-details/integrating-with-com-plus-applications.md)
+- [How to: Configure COM+ Service Settings](../../../wcf/feature-details/how-to-configure-com-service-settings.md)

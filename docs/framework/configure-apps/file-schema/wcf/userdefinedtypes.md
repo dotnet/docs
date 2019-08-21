@@ -12,5 +12,5 @@ This section contains a collection of `userDefinedType` elements.
 - <xref:System.ServiceModel.Configuration.ComUdtElementCollection>
 - <xref:System.ServiceModel.Configuration.ComUdtElement>
 - [\<comContracts>](comcontracts.md)
-- [Integrating with COM+ Applications](../../feature-details/integrating-with-com-plus-applications.md)
-- [How to: Configure COM+ Service Settings](../../feature-details/how-to-configure-com-service-settings.md)
+- [Integrating with COM+ Applications](../../../wcf/feature-details/integrating-with-com-plus-applications.md)
+- [How to: Configure COM+ Service Settings](../../../wcf/feature-details/how-to-configure-com-service-settings.md)

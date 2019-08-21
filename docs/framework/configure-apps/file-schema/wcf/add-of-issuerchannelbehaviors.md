@@ -58,12 +58,12 @@ None.
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement>
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection>
 - <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuerChannelBehaviors%2A>
-- [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md)
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
-- [Securing Clients](../../securing-clients.md)
-- [How to: Create a Federated Client](../../feature-details/how-to-create-a-federated-client.md)
-- [How to: Configure a Local Issuer](../../feature-details/how-to-configure-a-local-issuer.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
+- [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [How to: Create a Federated Client](../../../wcf/feature-details/how-to-create-a-federated-client.md)
+- [How to: Configure a Local Issuer](../../../wcf/feature-details/how-to-configure-a-local-issuer.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)
 - [\<issuerChannelBehaviors>](issuerchannelbehaviors-element.md)

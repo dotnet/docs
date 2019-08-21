@@ -58,7 +58,7 @@ Specifies debugging and help information features for a Windows Communication Fo
 > [!CAUTION]
 >  Returning managed exception information to clients can be a security risk because exception details expose information about the internal service implementation that could be used by unauthorized clients. Because of the security issues involved, it is strongly recommended that you only do so in controlled debugging scenarios. You should set `includeExceptionDetailInFaults` to `false` when deploying your application.  
   
- For details about the security issues related to managed exception, see [Specifying and Handling Faults in Contracts and Services](../../specifying-and-handling-faults-in-contracts-and-services.md). For a code sample, see [Service Debug Behavior](../../samples/service-debug-behavior.md).  
+ For details about the security issues related to managed exception, see [Specifying and Handling Faults in Contracts and Services](../../../wcf/specifying-and-handling-faults-in-contracts-and-services.md). For a code sample, see [Service Debug Behavior](../../../wcf/samples/service-debug-behavior.md).  
   
  You can also set `httpsHelpPageEnabled` and `httpsHelpPageUrl` to enable or disable the help page. Each service can optionally expose a help page that contains information about the service including the endpoint to get WSDL for the service. This can be enabled by setting `httpHelpPageEnabled` to `true`. This enables the help page to be returned to a GET request to the base address of the service. You can change this address by setting the `httpHelpPageUrl` attribute. In addition, you can make this secure by using HTTPS instead of HTTP.  
   
@@ -68,6 +68,6 @@ Specifies debugging and help information features for a Windows Communication Fo
 
 - <xref:System.ServiceModel.Configuration.ServiceDebugElement>
 - <xref:System.ServiceModel.Description.ServiceDebugBehavior>
-- [Specifying and Handling Faults in Contracts and Services](../../specifying-and-handling-faults-in-contracts-and-services.md)
-- [Handling Exceptions and Faults](../../extending/handling-exceptions-and-faults.md)
-- [Service Debug Behavior](../../samples/service-debug-behavior.md)
+- [Specifying and Handling Faults in Contracts and Services](../../../wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [Handling Exceptions and Faults](../../../wcf/extending/handling-exceptions-and-faults.md)
+- [Service Debug Behavior](../../../wcf/samples/service-debug-behavior.md)

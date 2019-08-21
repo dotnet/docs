@@ -50,7 +50,7 @@ Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityTo
   
  For more information, see <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>.  
   
- For more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../feature-details/how-to-configure-credentials-on-a-federation-service.md).  
+ For more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
   
 ## See also
 
@@ -63,6 +63,6 @@ Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityTo
 - <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.AllowedAudienceUris%2A>
 - [\<allowedAudienceUris>](allowedaudienceuris.md)
 - [\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md)
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
-- [How to: Configure Credentials on a Federation Service](../../feature-details/how-to-configure-credentials-on-a-federation-service.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)

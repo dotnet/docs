@@ -6,7 +6,7 @@ ms.assetid: 3f3b85d3-20f2-4cd8-8a6a-ee18befbd165
 # \<servicePrincipalName>
 Specifies the identity of a service by its Service Principal Name (SPN).  
   
- For more information about setting the SPN, see [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md).  
+ For more information about setting the SPN, see [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md).  
   
  \<identity>  
 \<servicePrincipalName>  
@@ -44,5 +44,5 @@ Specifies the identity of a service by its Service Principal Name (SPN).
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>
 - <xref:System.ServiceModel.SpnEndpointIdentity>
-- [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md)
+- [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
 - [\<identity>](identity.md)

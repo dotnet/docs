@@ -47,7 +47,7 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
 ## Remarks  
  This configuration element contains a X509Certificate2 instance used when authenticating neighbors in the peer mesh.  
   
- For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md).  
+ For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md).  
   
 ## Example  
  The following code specifies how to find the certificate used in a peer-to-peer scenario.  
@@ -74,8 +74,8 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.Certificate%2A>
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateElement>
 - <xref:System.ServiceModel.Security.PeerCredential.Certificate%2A>
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
-- [Peer-to-Peer Networking](../../feature-details/peer-to-peer-networking.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
 - [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
 - [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
-- [Securing Peer Channel Applications](../../feature-details/securing-peer-channel-applications.md)
+- [Securing Peer Channel Applications](../../../wcf/feature-details/securing-peer-channel-applications.md)

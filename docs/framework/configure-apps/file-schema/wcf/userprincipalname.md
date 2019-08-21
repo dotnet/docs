@@ -6,7 +6,7 @@ ms.assetid: 68032f69-149e-4613-bae4-18314d4fd294
 # \<userPrincipalName>
 Specifies the User Principal Name (UPN) of a service to be authenticated by the client.  
   
- For more information about setting the UPN, see [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md).  
+ For more information about setting the UPN, see [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md).  
   
 \<identity>  
 \<userPrincipalName>  
@@ -53,5 +53,5 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>
 - <xref:System.ServiceModel.UpnEndpointIdentity>
-- [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md)
+- [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
 - [\<identity>](identity.md)

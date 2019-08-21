@@ -48,6 +48,6 @@ Specifies the settings for a Windows credential to be used to represent the clie
 - <xref:System.ServiceModel.Description.ClientCredentials>
 - <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
-- [Securing Clients](../../securing-clients.md)
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

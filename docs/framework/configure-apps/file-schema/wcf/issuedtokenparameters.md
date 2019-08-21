@@ -70,13 +70,13 @@ Specifies the parameters for a security token issued in a Federated security sce
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>
 - <xref:System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters%2A>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Bindings](../../bindings.md)
-- [Extending Bindings](../../extending/extending-bindings.md)
-- [Custom Bindings](../../extending/custom-bindings.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
-- [How to: Create a Custom Binding Using the SecurityBindingElement](../../feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](../../samples/custom-binding-security.md)
-- [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
-- [Security Capabilities with Custom Bindings](../../feature-details/security-capabilities-with-custom-bindings.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)
+- [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)
+- [Security Capabilities with Custom Bindings](../../../wcf/feature-details/security-capabilities-with-custom-bindings.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)

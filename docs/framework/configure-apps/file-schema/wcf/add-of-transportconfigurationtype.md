@@ -57,4 +57,4 @@ This element is a key/value pair, which identifies the type of a particular tran
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../feature-details/hosting.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)

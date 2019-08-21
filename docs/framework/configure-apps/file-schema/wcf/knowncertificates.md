@@ -61,7 +61,7 @@ Represents a collection of X.509 certificates that are provided to authenticate 
   
  By default, the certificates must be obtained from a secure token service. These "known" certificates ensure that only legitimate clients can access a service.  
   
- To review conditions required for a client to be authenticated by a federated service, as well as more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../feature-details/how-to-configure-credentials-on-a-federation-service.md). For more information about federated scenarios, see [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md).  
+ To review conditions required for a client to be authenticated by a federated service, as well as more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md). For more information about federated scenarios, see [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md).  
   
  For an example that shows how to populate the collection in configuration, see [\<add>](add-of-knowncertificates.md).  
   
@@ -76,9 +76,9 @@ Represents a collection of X.509 certificates that are provided to authenticate 
 - <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A>
 - [\<add>](add-of-knowncertificates.md)
 - [\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md)
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
-- [How to: Configure Credentials on a Federation Service](../../feature-details/how-to-configure-credentials-on-a-federation-service.md)
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)
 - [\<add>](add-of-knowncertificates.md)
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

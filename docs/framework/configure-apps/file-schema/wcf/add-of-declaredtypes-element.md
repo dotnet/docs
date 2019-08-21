@@ -49,7 +49,7 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
 |[\<declaredTypes>](declaredtypes.md)|Contains the types that require known types during deserialization by the <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
 ## Remarks  
- For more information about known types, see [Data Contract Known Types](../../feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
+ For more information about known types, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  See the [\<dataContractSerializer>](datacontractserializer-element.md) for an example of using this element.  
   
@@ -72,6 +72,6 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
 ## See also
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
-- [Data Contract Known Types](../../feature-details/data-contract-known-types.md)
+- [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md)
 - [\<dataContractSerializer>](datacontractserializer-element.md)
 - [\<add> of \<declaredTypes>](add-of-declaredtypes-element.md)

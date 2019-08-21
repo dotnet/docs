@@ -44,7 +44,7 @@ Specify Windows stream security settings of the custom binding.
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - <xref:System.ServiceModel.Configuration.WindowsStreamSecurityElement>
 - <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>
-- [Bindings](../../bindings.md)
-- [Extending Bindings](../../extending/extending-bindings.md)
-- [Custom Bindings](../../extending/custom-bindings.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)

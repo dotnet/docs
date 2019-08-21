@@ -75,9 +75,9 @@ Specifies the types of required and optional claims expected to appear in the fe
 - <xref:System.ServiceModel.Configuration.ClaimTypeElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [\<claimTypeRequirements>](claimtyperequirements-element.md)
-- [Bindings](../../bindings.md)
-- [Extending Bindings](../../extending/extending-bindings.md)
-- [Custom Bindings](../../extending/custom-bindings.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
-- [How to: Create a Custom Binding Using the SecurityBindingElement](../../feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](../../samples/custom-binding-security.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)

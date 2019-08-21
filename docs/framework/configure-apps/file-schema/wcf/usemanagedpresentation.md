@@ -41,7 +41,7 @@ A binding element used to communicate with a CardSpace Security Token Service th
 - <xref:System.ServiceModel.Configuration.UseManagedPresentationElement>
 - <xref:System.ServiceModel.Channels.UseManagedPresentationBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Bindings](../../bindings.md)
-- [Extending Bindings](../../extending/extending-bindings.md)
-- [Custom Bindings](../../extending/custom-bindings.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)

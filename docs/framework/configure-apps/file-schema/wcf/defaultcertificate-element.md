@@ -97,7 +97,7 @@ endpointBehaviors section
 - <xref:System.ServiceModel.Configuration.X509DefaultServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.DefaultCertificate%2A>
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [\<authentication>](authentication-of-clientcertificate-element.md)
-- [Securing Clients](../../securing-clients.md)
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

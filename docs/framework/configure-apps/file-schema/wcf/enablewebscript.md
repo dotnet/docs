@@ -40,5 +40,5 @@ This element enables the endpoint behavior that makes it possible to consume the
 
 - <xref:System.ServiceModel.Configuration.WebScriptEnablingElement>
 - <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>
-- [AJAX Integration and JSON Support](../../feature-details/ajax-integration-and-json-support.md)
+- [AJAX Integration and JSON Support](../../../wcf/feature-details/ajax-integration-and-json-support.md)
 - [\<webHttp>](webhttp.md)

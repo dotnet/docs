@@ -47,7 +47,7 @@ Specifies the generic parameter when a declared type is a generic type.
 |[\<knownType>](knowntype.md)|Specifies a known type that can be returned by a field or property of the declared type.|  
   
 ## Remarks  
- For more information about known types, see [Data Contract Known Types](../../feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
+ For more information about known types, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  See the [\<dataContractSerializer>](datacontractserializer-element.md) for an example of using this element.  
   
@@ -56,6 +56,6 @@ Specifies the generic parameter when a declared type is a generic type.
 ## See also
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
-- [Data Contract Known Types](../../feature-details/data-contract-known-types.md)
+- [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md)
 - [\<dataContractSerializer>](datacontractserializer-element.md)
 - [\<add>](add-of-declaredtypes-element.md)

@@ -50,7 +50,7 @@ endpointBehaviors section
   
  If a binding requires a certificate for the service and no specific certificate for the service URL is found in the ScopedCertificates, the default certificate is used.  
   
- For more information, see the "Scoped Certificates" section of [How to: Create a Federated Client](../../feature-details/how-to-create-a-federated-client.md).  
+ For more information, see the "Scoped Certificates" section of [How to: Create a Federated Client](../../../wcf/feature-details/how-to-create-a-federated-client.md).  
   
 ## Example  
  The following example specifies a service certificate for the client to use when communicating with endpoints whose domain name is `http://www.contoso.com` over the HTTP protocol.  
@@ -74,8 +74,8 @@ endpointBehaviors section
 - <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A>
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
-- [How to: Create a Federated Client](../../feature-details/how-to-create-a-federated-client.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [How to: Create a Federated Client](../../../wcf/feature-details/how-to-create-a-federated-client.md)
 - [\<add>](add-of-scopedcertificates-element.md)
-- [Securing Clients](../../securing-clients.md)
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

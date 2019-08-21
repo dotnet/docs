@@ -78,4 +78,4 @@ http://test2.fabrikam.com/Service.svc
 - <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../feature-details/hosting.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)

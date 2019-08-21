@@ -65,8 +65,8 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
 - <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
 - <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>
 - [Message Encoding](message-encoding.md)
-- [Choosing a Message Encoder](../../feature-details/choosing-a-message-encoder.md)
-- [Bindings](../../bindings.md)
-- [Extending Bindings](../../extending/extending-bindings.md)
-- [Custom Bindings](../../extending/custom-bindings.md)
+- [Choosing a Message Encoder](../../../wcf/feature-details/choosing-a-message-encoder.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)

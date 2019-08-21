@@ -5,7 +5,7 @@ ms.assetid: b62cd369-5409-4030-8490-9759a462dd3a
 ---
 # \<bindings>
 
-You can use the `bindings` element to configure a collection of standard and custom bindings for Windows Communication Foundation (WCF). Each entry is a `binding` element that can be identified by its unique `name`. Services use bindings by linking them using the `name`. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../simplified-configuration.md) and [Simplified Configuration for WCF Services](../../samples/simplified-configuration-for-wcf-services.md).  
+You can use the `bindings` element to configure a collection of standard and custom bindings for Windows Communication Foundation (WCF). Each entry is a `binding` element that can be identified by its unique `name`. Services use bindings by linking them using the `name`. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 ## System-provided bindings
  
@@ -16,7 +16,7 @@ You can use the `bindings` element to configure a collection of standard and cus
  It isn't possible to add elements or attributes to a system-provided binding. To do so, you should implement a custom binding as described in the [Custom bindings](#custom-bindings) section. It's possible to define a custom binding that
   mimics a system-provided binding perfectly and adds a few settings the user application wants to have control over.  
   
- For a list of system-provided bindings, see [System-Provided Bindings](../../system-provided-bindings.md).  
+ For a list of system-provided bindings, see [System-Provided Bindings](../../../wcf/system-provided-bindings.md).  
   
 ## Custom bindings
 
@@ -34,14 +34,14 @@ You can use the `bindings` element to configure a collection of standard and cus
   
 5. Transport  
   
- Custom bindings are identified by their `name` attribute. For more information on custom bindings, see [Custom Bindings](../../extending/custom-bindings.md).  
+ Custom bindings are identified by their `name` attribute. For more information on custom bindings, see [Custom Bindings](../../../wcf/extending/custom-bindings.md).  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.BindingsSection?displayProperty=nameWithType>  
 - <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType>  
 - <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType>  
-- [Bindings](../../bindings.md)  
-- [Custom Bindings](../../extending/custom-bindings.md)  
+- [Bindings](../../../wcf/bindings.md)  
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)  
 - [\<customBinding>](custombinding.md)  
 - [\<binding>](../../../misc/binding.md)

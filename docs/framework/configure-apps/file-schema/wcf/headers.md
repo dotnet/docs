@@ -43,4 +43,4 @@ An endpoint can be addressed by one or more SOAP headers in addition to its basi
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Headers%2A>
 - <xref:System.ServiceModel.Channels.AddressHeaderCollection>
-- [Endpoints: Addresses, Bindings, and Contracts](../../feature-details/endpoints-addresses-bindings-and-contracts.md)
+- [Endpoints: Addresses, Bindings, and Contracts](../../../wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)

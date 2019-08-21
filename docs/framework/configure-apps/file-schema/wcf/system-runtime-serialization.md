@@ -43,10 +43,10 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<configuration> Element](../configuration-element.md)|The top level element for configuration.|  
+|[\<configuration> Element](../../wcf/configuration-element.md)|The top level element for configuration.|  
   
 ## See also
 
 - <xref:System.Runtime.Serialization>
-- [Using Data Contracts](../../feature-details/using-data-contracts.md)
-- [Data Contract Known Types](../../feature-details/data-contract-known-types.md)
+- [Using Data Contracts](../../../wcf/feature-details/using-data-contracts.md)
+- [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md)

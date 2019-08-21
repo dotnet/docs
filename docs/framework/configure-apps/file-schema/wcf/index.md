@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c282aeb5-91f0-4522-8e2f-704c1ef3651f
 ---
 # WCF Configuration Schema
-Windows Communication Foundation (WCF) configuration elements enable you to configure WCF service and client applications. You can use the [Configuration Editor Tool (SvcConfigEditor.exe)](../../configuration-editor-tool-svcconfigeditor-exe.md) to create and modify configuration files for clients and services. Since the configuration files are formatted as XML, you must be familiar with XML if you want to manually edit them using a text editor. Otherwise, you may run into issues such as an unfound XML element tag or attribute. This is because XML element tags and attributes are case-sensitive.  
+Windows Communication Foundation (WCF) configuration elements enable you to configure WCF service and client applications. You can use the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../wcf/configuration-editor-tool-svcconfigeditor-exe.md) to create and modify configuration files for clients and services. Since the configuration files are formatted as XML, you must be familiar with XML if you want to manually edit them using a text editor. Otherwise, you may run into issues such as an unfound XML element tag or attribute. This is because XML element tags and attributes are case-sensitive.  
   
  The WCF configuration system is based on the <xref:System.Configuration> namespace. Therefore, you can use all the standard features provided by the <xref:System.Configuration> namespace, such as configuration locking, encryption and merging to increase the security of your application and its configuration. For more information on these concepts, see the following topics.  
   
@@ -30,5 +30,5 @@ Windows Communication Foundation (WCF) configuration elements enable you to conf
  The top-level element for setting options when using serializers such as the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 ## Related Sections  
- [Configuring Windows Communication Foundation Applications](../../configuring-services.md)  
+ [Configuring Windows Communication Foundation Applications](../../../wcf/configuring-services.md)  
  Describes how to configure WCF services and clients.

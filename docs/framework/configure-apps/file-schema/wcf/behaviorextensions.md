@@ -48,4 +48,4 @@ Behavior extensions enable the user to create user-defined behavior elements. Th
 ## See also
 
 - <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>
-- [Configuring and Extending the Runtime with Behaviors](../../extending/configuring-and-extending-the-runtime-with-behaviors.md)
+- [Configuring and Extending the Runtime with Behaviors](../../../wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)

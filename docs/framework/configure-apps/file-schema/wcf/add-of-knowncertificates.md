@@ -89,7 +89,7 @@ Adds an X.509 certificate to the collection of known certificates.
   
  By default, the certificates must be obtained from a secure token service. These "known" certificates ensure that only legitimate clients can access a service.  
   
- To review conditions required for a client to be authenticated by a federated service, as well as more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../feature-details/how-to-configure-credentials-on-a-federation-service.md). For more information about federated scenarios, see [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md).  
+ To review conditions required for a client to be authenticated by a federated service, as well as more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md). For more information about federated scenarios, see [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md).  
   
 ## Example  
  The following example adds certificate to the repository for any STS certificates.  
@@ -121,7 +121,7 @@ Adds an X.509 certificate to the collection of known certificates.
 - <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement>
 - <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A>
 - [\<knownCertificates>](knowncertificates.md)
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
-- [How to: Configure Credentials on a Federation Service](../../feature-details/how-to-configure-credentials-on-a-federation-service.md)
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)
+- [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

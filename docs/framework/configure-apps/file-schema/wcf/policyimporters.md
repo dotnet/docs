@@ -12,5 +12,5 @@ This configuration element specifies all the policy importers that control the i
 - <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>
 - <xref:System.ServiceModel.Description.MetadataImporter>
 - [\<policyImporter>](policyimporter.md)
-- [WCF Client Configuration](../../feature-details/client-configuration.md)
-- [Clients](../../feature-details/clients.md)
+- [WCF Client Configuration](../../../wcf/feature-details/client-configuration.md)
+- [Clients](../../../wcf/feature-details/clients.md)

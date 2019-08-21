@@ -81,7 +81,7 @@ Specifies a custom token issued as a service credential.
   
  By default, the certificates must be obtained from a secure token service. These "known" certificates ensure that only legitimate clients can access a service.  
   
- For more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../feature-details/how-to-configure-credentials-on-a-federation-service.md).  
+ For more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
   
 ## See also
 
@@ -92,5 +92,5 @@ Specifies a custom token issued as a service credential.
 - <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement>
 - <xref:System.ServiceModel.Description.ServiceCredentials.IssuedTokenAuthentication%2A>
 - <xref:System.ServiceModel.Security.IssuedTokenServiceCredential>
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
-- [How to: Configure Credentials on a Federation Service](../../feature-details/how-to-configure-credentials-on-a-federation-service.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)

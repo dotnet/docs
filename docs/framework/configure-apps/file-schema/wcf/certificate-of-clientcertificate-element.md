@@ -45,7 +45,7 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 |[\<clientCertificate>](clientcertificate-of-servicecredentials.md)||  
   
 ## Remarks  
- The `<certificate>` element is used when the service must have the client's certificate in advance to communicate securely with the client. This occurs when using the duplex communication pattern. In the more typical request/response pattern, the client includes its certificate in the request, which the service uses to encrypt and sign its response back to the client. In the duplex communication pattern, however, the service does not have a request from the client and therefore it needs the client's certificate in advance to secure the message to the client. Therefore you must obtain the client's certificate in an out-of-band negotiation, and specify the certificate using this element. For more information about duplex services, see [How to: Create a Duplex Contract](../../feature-details/how-to-create-a-duplex-contract.md).  
+ The `<certificate>` element is used when the service must have the client's certificate in advance to communicate securely with the client. This occurs when using the duplex communication pattern. In the more typical request/response pattern, the client includes its certificate in the request, which the service uses to encrypt and sign its response back to the client. In the duplex communication pattern, however, the service does not have a request from the client and therefore it needs the client's certificate in advance to secure the message to the client. Therefore you must obtain the client's certificate in an out-of-band negotiation, and specify the certificate using this element. For more information about duplex services, see [How to: Create a Duplex Contract](../../../wcf/feature-details/how-to-create-a-duplex-contract.md).  
   
 ## Example  
  The following code specifies how to find an appropriate X.509 certificate and a custom validation type in the `<authentication>` element.  
@@ -73,6 +73,6 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Certificate%2A>
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Certificate%2A>
 - <xref:System.ServiceModel.Configuration.X509ClientCertificateCredentialsElement>
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
-- [How to: Create a Service that Employs a Custom Certificate Validator](../../extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [How to: Create a Service that Employs a Custom Certificate Validator](../../../wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)

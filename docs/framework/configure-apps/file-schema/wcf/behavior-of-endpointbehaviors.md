@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b90ca3bc-3c22-4174-b903-e3a39898bd27
 ---
 # \<behavior> of \<endpointBehaviors>
-The `behavior` element contains a collection of settings for the behavior of an endpoint. Each behavior is indexed by its `name`. Endpoints can link to each behavior through this name. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../simplified-configuration.md) and [Simplified Configuration for WCF Services](../../samples/simplified-configuration-for-wcf-services.md).  
+The `behavior` element contains a collection of settings for the behavior of an endpoint. Each behavior is indexed by its `name`. Endpoints can link to each behavior through this name. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).  
   
  \<system.ServiceModel>  
 \<behaviors>  
@@ -30,7 +30,7 @@ The `behavior` element contains a collection of settings for the behavior of an 
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|name|A unique string that contains the configuration name of the behavior. This value is a user-defined string that must be unique, since it acts as the identification string for the element. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../simplified-configuration.md) and [Simplified Configuration for WCF Services](../../samples/simplified-configuration-for-wcf-services.md).|  
+|name|A unique string that contains the configuration name of the behavior. This value is a user-defined string that must be unique, since it acts as the identification string for the element. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).|  
   
 ### Child Elements  
   

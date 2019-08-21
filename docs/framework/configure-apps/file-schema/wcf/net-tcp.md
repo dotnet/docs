@@ -65,10 +65,10 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 |[\<system.serviceModel.activation>](system-servicemodel-activation.md)|Contains configuration settings for the listener process SMSvcHost.exe.|  
   
 ## Remarks  
- For more information on port sharing, see [Net.TCP Port Sharing](../../feature-details/net-tcp-port-sharing.md). To understand how to configure the port sharing service, see [Configuring the Net.TCP Port Sharing Service](../../feature-details/configuring-the-net-tcp-port-sharing-service.md).  
+ For more information on port sharing, see [Net.TCP Port Sharing](../../../wcf/feature-details/net-tcp-port-sharing.md). To understand how to configure the port sharing service, see [Configuring the Net.TCP Port Sharing Service](../../../wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md).  
   
 ## See also
 
 - <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>
-- [Net.TCP Port Sharing](../../feature-details/net-tcp-port-sharing.md)
-- [Configuring the Net.TCP Port Sharing Service](../../feature-details/configuring-the-net-tcp-port-sharing-service.md)
+- [Net.TCP Port Sharing](../../../wcf/feature-details/net-tcp-port-sharing.md)
+- [Configuring the Net.TCP Port Sharing Service](../../../wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)

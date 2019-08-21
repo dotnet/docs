@@ -50,7 +50,7 @@ Specifies a digest type credential used when authenticating the client to a serv
 - <xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>
 - <xref:System.ServiceModel.Configuration.HttpDigestClientElement>
 - <xref:System.ServiceModel.Security.HttpDigestClientCredential>
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
-- [Securing Clients](../../securing-clients.md)
-- [Working with Certificates](../../feature-details/working-with-certificates.md)
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

@@ -34,7 +34,7 @@ Defines settings for message-level security of the [\<wsHttpBinding>](wshttpbind
 |---------------|-----------------|  
 |algorithmSuite|Sets the message encryption and key-wrap algorithms. The algorithms and the key sizes are determined by the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> class. These algorithms map to those specified in the Security Policy Language (WS-SecurityPolicy) specification.<br /><br /> The default value is `Basic256`.|  
 |clientCredentialType|Optional. Specifies the type of credential to be used when performing client authentication using the security mode is `Message` or `TransportWithMessageCredentials`. See the enumeration values below. The default is `Windows`.<br /><br /> This attribute is of type <xref:System.ServiceModel.MessageCredentialType>.|  
-|establishSecurityContext|A Boolean value that determines whether the security channel establishes a secure session. A secure session establishes a Security Context Token (SCT) before exchanging the application messages. When the SCT is established, the security channel offers a <xref:System.ServiceModel.Channels.ISession> interface to the upper channels. For more information about using secure sessions, see [How to: Create a Secure Session](../../feature-details/how-to-create-a-secure-session.md).<br /><br /> The default value is `true`.|  
+|establishSecurityContext|A Boolean value that determines whether the security channel establishes a secure session. A secure session establishes a Security Context Token (SCT) before exchanging the application messages. When the SCT is established, the security channel offers a <xref:System.ServiceModel.Channels.ISession> interface to the upper channels. For more information about using secure sessions, see [How to: Create a Secure Session](../../../wcf/feature-details/how-to-create-a-secure-session.md).<br /><br /> The default value is `true`.|  
 |negotiateServiceCredential|Optional. A Boolean value that specifies whether the service credential is provisioned at the client out of band, or is obtained from the service to the client through a process of negotiation. Such a negotiation is a precursor to the usual message exchange.<br /><br /> If the `clientCredentialType` attribute equals to None, Username, or Certificate, setting this attribute to `false` implies that the service certificate is available at the client out of band and that the client needs to specify the service certificate (using the [\<serviceCertificate>](servicecertificate-of-servicecredentials.md)) in the [\<serviceCredentials>](servicecredentials.md) service behavior. This mode is interoperable with SOAP stacks which implement WS-Trust and WS-SecureConversation.<br /><br /> If the `ClientCredentialType` attribute is set to `Windows`, setting this attribute to `false` specifies Kerberos based authentication. This means that the client and service must be part of the same Kerberos domain. This mode is interoperable with SOAP stacks which implement the Kerberos token profile (as defined at OASIS WSS TC) as well as WS-Trust and WS-SecureConversation.<br /><br /> When this attribute is `true`, it causes a .NET SOAP negotiation that tunnels SPNego exchange over SOAP messages.<br /><br /> The default is `true`.|  
   
 ## algorithmSuite Attribute  
@@ -83,8 +83,8 @@ Defines settings for message-level security of the [\<wsHttpBinding>](wshttpbind
 - <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>
 - <xref:System.ServiceModel.WSHttpSecurity.Message%2A>
 - <xref:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement>
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
-- [Bindings](../../bindings.md)
-- [Configuring System-Provided Bindings](../../feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../using-bindings-to-configure-services-and-clients.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
 - [\<binding>](../../../misc/binding.md)

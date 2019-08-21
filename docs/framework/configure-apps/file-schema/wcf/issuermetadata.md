@@ -61,7 +61,7 @@ ms.assetid: e7eae2c0-cc17-4281-af59-e4eb8d54f92a
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress%2A>
 - <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.IssuerMetadata%2A>
-- [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
-- [Security Capabilities with Custom Bindings](../../feature-details/security-capabilities-with-custom-bindings.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
+- [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)
+- [Security Capabilities with Custom Bindings](../../../wcf/feature-details/security-capabilities-with-custom-bindings.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)

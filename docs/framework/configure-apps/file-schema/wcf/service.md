@@ -65,4 +65,4 @@ The `service` element contains the settings for a Windows Communication Foundati
 ## See also
 
 - <xref:System.ServiceModel.Configuration.ServiceElement>
-- [Configuring Services](../../configuring-services.md)
+- [Configuring Services](../../../wcf/configuring-services.md)

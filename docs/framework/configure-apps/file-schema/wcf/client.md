@@ -70,5 +70,5 @@ The `client` element defines a list of endpoints that a client can connect to.
 
 - <xref:System.ServiceModel.Configuration.ClientSection>
 - <xref:System.ServiceModel.Configuration.MetadataElement>
-- [WCF Client Configuration](../../feature-details/client-configuration.md)
-- [Clients](../../feature-details/clients.md)
+- [WCF Client Configuration](../../../wcf/feature-details/client-configuration.md)
+- [Clients](../../../wcf/feature-details/clients.md)

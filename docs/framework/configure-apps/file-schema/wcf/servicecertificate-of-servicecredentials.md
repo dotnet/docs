@@ -46,7 +46,7 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
 ## Remarks  
  Use this element to specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode. If you are using a certificate that will be periodically renewed, then its thumbprint will change. In that case, use the subject name as the `x509FindType` because the certificate can be reissued with the same subject name.  
   
- For more information about using the element, see [How to: Specify Client Credential Values](../../how-to-specify-client-credential-values.md).  
+ For more information about using the element, see [How to: Specify Client Credential Values](../../../wcf/how-to-specify-client-credential-values.md).  
   
 ## See also
 
@@ -54,5 +54,5 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ServiceCertificate%2A>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
 - <xref:System.ServiceModel.Description.ServiceCredentials.ServiceCertificate%2A>
-- [How to: Specify Client Credential Values](../../how-to-specify-client-credential-values.md)
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
+- [How to: Specify Client Credential Values](../../../wcf/how-to-specify-client-credential-values.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)

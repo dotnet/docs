@@ -30,7 +30,7 @@ endpointBehaviors section
 |Attribute|Description|  
 |---------------|-----------------|  
 |address|Required string. Specifies the URI of the local issuer.|  
-|binding|Optional string. One of the system-provided bindings. For a list, see [System-Provided Bindings](../../system-provided-bindings.md).|  
+|binding|Optional string. One of the system-provided bindings. For a list, see [System-Provided Bindings](../../../wcf/system-provided-bindings.md).|  
 |bindingConfiguration|Optional string. Specifies a binding configuration found in the configuration file.|  
   
 ### Child Elements  
@@ -47,7 +47,7 @@ endpointBehaviors section
 |[\<issuedToken>](issuedtoken.md)|Specifies a custom token used to authenticate a client to a service.|  
   
 ## Remarks  
- When obtaining an issued token from a Security Token Service (STS), the client application must be configured with the address and binding to use to communicate with the STS. When the <xref:System.ServiceModel.WSFederationHttpBinding> does not supply a URL for the security token service, or when the issuer address of a federated binding is `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` or `null`, the client's Windows Communication Foundation (WCF) channel uses the values specified by `address` and `binding` to communicate with the STS to obtain the issued token. For more information on configuring a local issuer, see [How to: Configure a Local Issuer](../../feature-details/how-to-configure-a-local-issuer.md).  
+ When obtaining an issued token from a Security Token Service (STS), the client application must be configured with the address and binding to use to communicate with the STS. When the <xref:System.ServiceModel.WSFederationHttpBinding> does not supply a URL for the security token service, or when the issuer address of a federated binding is `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` or `null`, the client's Windows Communication Foundation (WCF) channel uses the values specified by `address` and `binding` to communicate with the STS to obtain the issued token. For more information on configuring a local issuer, see [How to: Configure a Local Issuer](../../../wcf/feature-details/how-to-configure-a-local-issuer.md).  
   
 ## Example  
  The following example sets the `address`, `binding`, and `bindingConfiguration` attributes of a `localIssuer` element.  
@@ -76,12 +76,12 @@ endpointBehaviors section
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>
 - <xref:System.ServiceModel.Security.IssuedTokenClientCredential>
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
-- [How to: Configure a Local Issuer](../../feature-details/how-to-configure-a-local-issuer.md)
-- [Service Identity and Authentication](../../feature-details/service-identity-and-authentication.md)
-- [Security Behaviors](../../feature-details/security-behaviors-in-wcf.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
-- [Securing Services and Clients](../../feature-details/securing-services-and-clients.md)
-- [Securing Clients](../../securing-clients.md)
-- [How to: Create a Federated Client](../../feature-details/how-to-create-a-federated-client.md)
-- [Federation and Issued Tokens](../../feature-details/federation-and-issued-tokens.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [How to: Configure a Local Issuer](../../../wcf/feature-details/how-to-configure-a-local-issuer.md)
+- [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [How to: Create a Federated Client](../../../wcf/feature-details/how-to-create-a-federated-client.md)
+- [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)

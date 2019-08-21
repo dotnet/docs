@@ -67,5 +67,5 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
 - <xref:System.ServiceModel.Configuration.ComMethodElementCollection>
 - <xref:System.ServiceModel.Configuration.ComMethodElement>
 - [\<comContracts>](comcontracts.md)
-- [Integrating with COM+ Applications](../../feature-details/integrating-with-com-plus-applications.md)
-- [How to: Configure COM+ Service Settings](../../feature-details/how-to-configure-com-service-settings.md)
+- [Integrating with COM+ Applications](../../../wcf/feature-details/integrating-with-com-plus-applications.md)
+- [How to: Configure COM+ Service Settings](../../../wcf/feature-details/how-to-configure-com-service-settings.md)

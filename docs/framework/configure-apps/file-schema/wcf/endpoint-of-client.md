@@ -72,5 +72,5 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 - <xref:System.ServiceModel.Configuration.ChannelEndpointElementCollection>
 - <xref:System.ServiceModel.Configuration.ClientSection.Endpoints%2A>
 - <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
-- [WCF Client Configuration](../../feature-details/client-configuration.md)
-- [Clients](../../feature-details/clients.md)
+- [WCF Client Configuration](../../../wcf/feature-details/client-configuration.md)
+- [Clients](../../../wcf/feature-details/clients.md)

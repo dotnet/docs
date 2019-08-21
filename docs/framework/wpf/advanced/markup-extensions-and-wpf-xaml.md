@@ -65,7 +65,7 @@ This topic introduces the concept of markup extensions for XAML, including their
 - `ComponentResourceKey` and `ThemeDictionary` support aspects of resource lookup, particularly for resources and themes that are packaged with custom controls. For more information, see [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md), [ThemeDictionary Markup Extension](themedictionary-markup-extension.md), or [Control Authoring Overview](../controls/control-authoring-overview.md).  
   
 <a name="StarExtension"></a>   
-## *Extension Classes  
+## \*Extension Classes  
  For both the general XAML language and WPF-specific markup extensions, the behavior of each markup extension is identified to a XAML processor through a `*Extension` class that derives from <xref:System.Windows.Markup.MarkupExtension>, and provides an implementation of the <xref:System.Windows.Markup.StaticExtension.ProvideValue%2A> method. This method on each extension provides the object that is returned when the markup extension is evaluated. The returned object is typically evaluated based on the various string tokens that are passed to the markup extension.  
   
  For example, the <xref:System.Windows.StaticResourceExtension> class provides the surface implementation of actual resource lookup so that its <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> implementation returns the object that is requested, with the input of that particular implementation being a string that is used to look up the resource by its `x:Key`. Much of this implementation detail is unimportant if you are using an existing markup extension.  

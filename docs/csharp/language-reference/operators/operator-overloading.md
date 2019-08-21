@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Operator overloading (C# reference)
 
-A user-defined type can overload a predefined C# operator. That is, a type can provide the custom implementation of an operation when one or both operands are of that type. The [Overloadable operators](#overloadable-operators) section shows which C# operators can be overloaded.
+A user-defined type can overload a predefined C# operator. That is, a type can provide the custom implementation of an operation when one or both of the operands are of that type. The [Overloadable operators](#overloadable-operators) section shows which C# operators can be overloaded.
 
 Use the `operator` keyword to declare an operator. An operator declaration must satisfy the following rules:
 

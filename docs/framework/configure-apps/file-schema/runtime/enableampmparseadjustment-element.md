@@ -77,5 +77,5 @@ Determines whether date and time parsing methods use an adjusted set of rules to
   
 ## See also
 
-- [\<runtime> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)
-- [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)
+- [\<runtime> Element](runtime-element.md)
+- [\<configuration> Element](../configuration-element.md)

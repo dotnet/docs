@@ -34,4 +34,4 @@ Several of the protected operations for which the .NET Framework provides permis
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

@@ -169,7 +169,7 @@ Application.Run(appForm)
 ## See also
 
 - [Members](index.md)
-- [Handling and Raising Events](../../../../docs/standard/events/index.md)
+- [Handling and Raising Events](../../../standard/events/index.md)
 - [Lambda Expressions: The `fun` Keyword](../functions/lambda-expressions-the-fun-keyword.md)
 - [Control.Event Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.event-module-%5bfsharp%5d)
 - [Control.Event&#60;'T&#62; Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.event%5b%27t%5d-class-%5bfsharp%5d)

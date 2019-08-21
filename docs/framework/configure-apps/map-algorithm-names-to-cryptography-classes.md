@@ -63,5 +63,5 @@ There are four ways a developer can create a cryptography object using the Windo
   
 ## See also
 
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](../../standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)

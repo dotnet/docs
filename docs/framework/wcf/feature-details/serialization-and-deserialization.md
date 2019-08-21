@@ -248,7 +248,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
   
 - The <xref:System.Runtime.Serialization.NetDataContractSerializer.Serialize%2A> and <xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize%2A> methods are aliases for the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> and <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> methods. These exist to provide a more consistent programming model with binary or SOAP serialization.  
   
- For more information about these features, see [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md).  
+ For more information about these features, see [Binary Serialization](../../../standard/serialization/binary-serialization.md).  
   
  The XML formats that the `NetDataContractSerializer` and the `DataContractSerializer` use are normally not compatible. That is, attempting to serialize with one of these serializers and deserialize with the other is not a supported scenario.  
   
@@ -259,5 +259,5 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.NetDataContractSerializer>
 - <xref:System.Runtime.Serialization.XmlObjectSerializer>
-- [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md)
+- [Binary Serialization](../../../standard/serialization/binary-serialization.md)
 - [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)

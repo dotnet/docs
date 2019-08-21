@@ -10,7 +10,7 @@ ms.assetid: 2996ce5e-81e9-49ae-881b-952db3dd1b7e
 <a name="introduction"></a>
 Windows Presentation Foundation (WPF) is a presentation framework that can be used to develop the following types of applications:  
   
-- Standalone Applications (traditional style [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] applications built as executable assemblies that are installed to and run from the client computer).  
+- Standalone Applications (traditional style Windows applications built as executable assemblies that are installed to and run from the client computer).  
   
 - [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] (applications composed of navigation pages that are built as executable assemblies and hosted by Web browsers such as Microsoft Internet Explorer or Mozilla Firefox).  
   

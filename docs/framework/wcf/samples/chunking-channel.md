@@ -9,7 +9,7 @@ When sending large messages using Windows Communication Foundation (WCF), it is 
  Chunking should always be employed only after the entire message to be sent has been constructed. A chunking channel should always be layered below a security channel and a reliable session channel.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

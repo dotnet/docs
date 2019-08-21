@@ -49,7 +49,7 @@ HRESULT GetAssemblyStore (
  `IHostAssemblyStore` provides methods that allow a host to bind to assemblies and modules independently of the CLR. Hosts typically provide assembly stores to allow assemblies to be loaded from formats other than the file system.  
   
 > [!NOTE]
->  If the host does not implement `IHostAssemblyStore`, `GetAssemblyStore` should return an HRESULT value of E_NOINTERFACE, and should set `ppAssemblyStore` to null.  
+> If the host does not implement `IHostAssemblyStore`, `GetAssemblyStore` should return an HRESULT value of E_NOINTERFACE, and should set `ppAssemblyStore` to null.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

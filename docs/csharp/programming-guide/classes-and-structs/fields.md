@@ -30,7 +30,7 @@ A *field* is a variable of any type that is declared directly in a [class](../..
  Fields are initialized immediately before the constructor for the object instance is called. If the constructor assigns the value of a field, it will overwrite any value given during field declaration. For more information, see [Using Constructors](./using-constructors.md).  
   
 > [!NOTE]
->  A field initializer cannot refer to other instance fields.  
+> A field initializer cannot refer to other instance fields.  
   
  Fields can be marked as [public](../../language-reference/keywords/public.md), [private](../../language-reference/keywords/private.md), [protected](../../language-reference/keywords/protected.md), [internal](../../language-reference/keywords/internal.md), [protected internal](../../language-reference/keywords/protected-internal.md) or [private protected](../../language-reference/keywords/private-protected.md). These access modifiers define how users of the class can access the fields. For more information, see [Access Modifiers](./access-modifiers.md).  
   

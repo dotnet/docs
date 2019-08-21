@@ -16,7 +16,7 @@ Type forwarding allows you to move a type to another assembly without having to 
  The developers of *Utility.dll* can avoid this by forwarding requests for the `Example` class, using the <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> attribute. If the attribute has been applied to the new version of *Utility.dll*, requests for the `Example` class are forwarded to the assembly that now contains the class. The existing application continues to function normally, without recompilation.  
   
 > [!NOTE]
->  In the .NET Framework version 2.0, you cannot forward types from assemblies written in Visual Basic. However, an application written in Visual Basic can consume forwarded types. That is, if the application uses an assembly coded in C# or C++, and a type from that assembly is forwarded to another assembly, the Visual Basic application can use the forwarded type.  
+> In the .NET Framework version 2.0, you cannot forward types from assemblies written in Visual Basic. However, an application written in Visual Basic can consume forwarded types. That is, if the application uses an assembly coded in C# or C++, and a type from that assembly is forwarded to another assembly, the Visual Basic application can use the forwarded type.  
   
 ## Forward types  
  There are four steps to forwarding a type:  

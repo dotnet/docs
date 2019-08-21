@@ -13,7 +13,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
  For more information, see [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md). For a list of the most commonly used elements, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 > [!IMPORTANT]
->  When deploying side by side scenarios where two different versions of a service are deployed, it is necessary to specify partial names of assemblies referenced in configuration files. This is because the configuration file is shared across all versions of a service and they could be running under different versions of the .NET Framework.  
+> When deploying side by side scenarios where two different versions of a service are deployed, it is necessary to specify partial names of assemblies referenced in configuration files. This is because the configuration file is shared across all versions of a service and they could be running under different versions of the .NET Framework.  
   
 ## System.Configuration: Web.config and App.config  
  WCF uses the System.Configuration configuration system of the .NET Framework.  
@@ -58,7 +58,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ```  
   
 > [!NOTE]
->  The bindings and behaviors sections are optional and are only included if required.  
+> The bindings and behaviors sections are optional and are only included if required.  
   
 ### The \<services> Element  
  The `services` element contains the specifications for all services the application hosts. Starting with the simplified configuration model in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], this section is optional.  

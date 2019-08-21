@@ -28,7 +28,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
      [!code-vb[C_HowTo_ConfigureServiceBinding#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_configureservicebinding/vb/source.vb#2)]  
   
     > [!NOTE]
-    >  Address or binding information is not specified inside the implementation of the service. Also, code does not have to be written to fetch that information from the configuration file.  
+    > Address or binding information is not specified inside the implementation of the service. Also, code does not have to be written to fetch that information from the configuration file.  
   
 3. Create a Web.config file to configure an endpoint for the `CalculatorService` that uses the <xref:System.ServiceModel.WSHttpBinding>.  
   

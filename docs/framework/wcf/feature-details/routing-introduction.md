@@ -144,7 +144,7 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), endpointList);
 ```  
   
 > [!NOTE]
->  By default, the Routing Service only evaluates the headers of the message. To allow the filters to access the message body, you must set <xref:System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly%2A> to `false`.  
+> By default, the Routing Service only evaluates the headers of the message. To allow the filters to access the message body, you must set <xref:System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly%2A> to `false`.  
   
  **Multicast**  
   
@@ -220,7 +220,7 @@ rc.FilterTable.Add(new EndpointAddressMessageFilter(new EndpointAddress(
  By default, the **SoapProcessingBehavior** is automatically added to the client endpoints by the <xref:System.ServiceModel.Routing.RoutingBehavior> when the service starts; however, you can control whether SOAP processing is added to all client endpoints by using the <xref:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled%2A> property. You can also add the behavior directly to a specific endpoint and enable or disable this behavior at the endpoint level if a more granular control of SOAP processing is required.  
   
 > [!NOTE]
->  If SOAP processing is disabled for an endpoint that requires a different MessageVersion than that of the original request message, you must provide a custom mechanism for performing any SOAP modifications that are required before sending the message to the destination endpoint.  
+> If SOAP processing is disabled for an endpoint that requires a different MessageVersion than that of the original request message, you must provide a custom mechanism for performing any SOAP modifications that are required before sending the message to the destination endpoint.  
   
  In the following examples, the **soapProcessingEnabled** property is used to prevent the **SoapProcessingBehavior** from being automatically added to all client endpoints.  
   
@@ -268,10 +268,10 @@ routerHost.routerHost.Extensions.Find<RoutingExtension>().ApplyConfiguration(rc2
 ```  
   
 > [!NOTE]
->  When updating the Routing Service in this manner it is only possible to pass a new configuration. It is not possible to modify only select elements of the current configuration or append new entries to the current configuration; you must create and pass a new configuration that replaces the existing one.  
+> When updating the Routing Service in this manner it is only possible to pass a new configuration. It is not possible to modify only select elements of the current configuration or append new entries to the current configuration; you must create and pass a new configuration that replaces the existing one.  
   
 > [!NOTE]
->  Any sessions opened using the previous configuration continue using the previous configuration. The new configuration is only used by new sessions.  
+> Any sessions opened using the previous configuration continue using the previous configuration. The new configuration is only used by new sessions.  
   
 ## Error Handling  
  If any <xref:System.ServiceModel.CommunicationException> is encountered while attempting to send a message, error handling take place. These exceptions typically indicate that a problem was encountered while attempting to communicate with the defined client endpoint, such as an <xref:System.ServiceModel.EndpointNotFoundException>, <xref:System.ServiceModel.ServerTooBusyException>, or <xref:System.ServiceModel.CommunicationObjectFaultedException>. The error handling-code will also catch and attempt to retry sending when a <xref:System.TimeoutException> occurs, which is another common exception that is not derived from **CommunicationException**.  
@@ -279,7 +279,7 @@ routerHost.routerHost.Extensions.Find<RoutingExtension>().ApplyConfiguration(rc2
  When one of the preceding exceptions occurs, the Routing Service fails over to a list of backup endpoints. If all backup endpoints fail with a communications failure, or if an endpoint returns an exception that indicates a failure within the destination service, the Routing Service returns a fault to the client application.  
   
 > [!NOTE]
->  The error-handling functionality captures and handles exceptions that occur when attempting to send a message and when attempting to close a channel. The error-handling code is not intended to detect or handle exceptions created by the application endpoints it is communicating with; a <xref:System.ServiceModel.FaultException> thrown by a service appears at the Routing Service as a **FaultMessage** and is flowed back to the client.  
+> The error-handling functionality captures and handles exceptions that occur when attempting to send a message and when attempting to close a channel. The error-handling code is not intended to detect or handle exceptions created by the application endpoints it is communicating with; a <xref:System.ServiceModel.FaultException> thrown by a service appears at the Routing Service as a **FaultMessage** and is flowed back to the client.  
 >   
 >  If an error occurs when the routing service tries to relay a message, you may  get a <xref:System.ServiceModel.FaultException> on the client side, rather than a <xref:System.ServiceModel.EndpointNotFoundException> you would normally get in the absence of the routing service. A routing service may thus mask exceptions and not provide full transparency unless you examine nested exceptions.  
   

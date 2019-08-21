@@ -9,7 +9,7 @@ This sample demonstrates the use of the channel extensibility model. In particul
  In this sample, both the client and the service are console programs (.exe). The client and service both make use of a common library (.dll) that contains the custom binding element and its associated run-time objects.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

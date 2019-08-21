@@ -71,7 +71,7 @@ DATETIMEOFFSET‘2006-12-25 01:01:00.0000000 -08:30’
 ```  
   
 > [!NOTE]
->  A valid Entity SQL literal value can fall outside the supported ranges for CLR or the data source. This might result in an exception  
+> A valid Entity SQL literal value can fall outside the supported ranges for CLR or the data source. This might result in an exception  
   
 ## Binary  
  A binary string literal is a sequence of hexadecimal digits delimited by single quotes following the keyword binary or the shortcut symbol `X` or `x`. The shortcut symbol `X` is case insensitive. A zero or more spaces are allowed between the keyword `binary` and the binary string value.  

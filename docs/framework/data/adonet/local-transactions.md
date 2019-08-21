@@ -21,7 +21,7 @@ Transactions in ADO.NET are used when you want to bind multiple tasks together s
  In ADO.NET, you control transactions with the `Connection` object. You can initiate a local transaction with the `BeginTransaction` method. Once you have begun a transaction, you can enlist a command in that transaction with the `Transaction` property of a `Command` object. You can then commit or roll back modifications made at the data source based on the success or failure of the components of the transaction.  
   
 > [!NOTE]
->  The `EnlistDistributedTransaction` method should not be used for a local transaction.  
+> The `EnlistDistributedTransaction` method should not be used for a local transaction.  
   
  The scope of the transaction is limited to the connection. The following example performs an explicit transaction that consists of two separate commands in the `try` block. The commands execute INSERT statements against the Production.ScrapReason table in the AdventureWorks SQL Server sample database, which are committed if no exceptions are thrown. The code in the `catch` block rolls back the transaction if an exception is thrown. If the transaction is aborted or the connection is closed before the transaction has completed, it is automatically rolled back.  
   

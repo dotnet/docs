@@ -19,7 +19,7 @@ Vendors of assemblies can state that applications should use a newer version of 
   
 3. Add the publisher policy assembly to the global assembly cache.  
   
- The schema for publisher policy is described in [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md). The following example shows a publisher policy file that redirects one version of `myAssembly` to another.  
+ The schema for publisher policy is described in [Redirecting Assembly Versions](redirect-assembly-versions.md). The following example shows a publisher policy file that redirects one version of `myAssembly` to another.  
   
 ```xml  
 <configuration>  
@@ -38,10 +38,10 @@ Vendors of assemblies can state that applications should use a newer version of 
 </configuration>  
 ```  
   
- To learn how to specify a code base, see [Specifying an Assembly's Location](../../standard/assembly/location.md).  
+ To learn how to specify a code base, see [Specifying an Assembly's Location](specify-assembly-location.md).  
   
 ## Creating the Publisher Policy Assembly  
- Use the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to create the publisher policy assembly.  
+ Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create the publisher policy assembly.  
   
 #### To create a publisher policy assembly  
   
@@ -62,7 +62,7 @@ Vendors of assemblies can state that applications should use a newer version of 
     - The *processorArchitecture* argument identifies the platform targeted by a processor-specific assembly.  
   
         > [!NOTE]
-        >  The ability to target a specific processor architecture is new in the .NET Framework version 2.0.  
+        > The ability to target a specific processor architecture is new in the .NET Framework version 2.0.  
   
      The following command creates a publisher policy assembly called `policy.1.0.myAssembly` from a publisher policy file called `pub.config`, assigns a strong name to the assembly using the key pair in the `sgKey.snk` file, and specifies that the assembly targets the x86 processor architecture.  
   
@@ -77,7 +77,7 @@ Vendors of assemblies can state that applications should use a newer version of 
      Another consequence is that the version 2.0 linker cannot be used to create a publisher policy assembly for an assembly compiled using earlier versions of the .NET Framework, because it always specifies processor architecture.  
   
 ## Adding the Publisher Policy Assembly to the Global Assembly Cache  
- Use the [Global Assembly Cache tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) to add the publisher policy assembly to the global assembly cache.  
+ Use the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to add the publisher policy assembly to the global assembly cache.  
   
 #### To add the publisher policy assembly to the global assembly cache  
   
@@ -97,8 +97,8 @@ Vendors of assemblies can state that applications should use a newer version of 
 ## See also
 
 - [Programming with Assemblies](../../standard/assembly/program.md)
-- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Configuring Apps by using Configuration Files](../../../docs/framework/configure-apps/index.md)
-- [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
-- [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
+- [Configuring Apps by using Configuration Files](index.md)
+- [Runtime Settings Schema](./file-schema/runtime/index.md)
+- [Configuration File Schema](./file-schema/index.md)
+- [Redirecting Assembly Versions](redirect-assembly-versions.md)

@@ -39,7 +39,7 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
 - Duplex with sessions  
   
 > [!NOTE]
->  For the UDP transport, the only MEP that is supported is datagram, because UDP is inherently a fire and forget protocol.  
+> For the UDP transport, the only MEP that is supported is datagram, because UDP is inherently a fire and forget protocol.  
   
 ## Sessions and Sessionful Channels  
  In the networking world, there are connection-oriented protocols (for example, TCP) and connection-less protocols (for example, UDP). WCF uses the term session to mean a connection-like logical abstraction. Sessionful WCF protocols are similar to connection-oriented network protocols and sessionless WCF protocols are similar to connection-less network protocols.  

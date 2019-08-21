@@ -51,7 +51,7 @@ This topic describes how you can protect sensitive data from being exposed in me
  Only when both settings are `true` is PII logging enabled. The combination of two switches allows the flexibility to log known PII for each application.  
   
 > [!IMPORTANT]
->  In [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] the `logEntireMessage` and `logKnownPii` flags must also be set to `true` in the Web.config file or the App.config file to enable PII logging, as show in the following example `<system.serviceModel><messageLogging logEntireMessage="true" logKnownPii="true" …`.  
+> In [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] the `logEntireMessage` and `logKnownPii` flags must also be set to `true` in the Web.config file or the App.config file to enable PII logging, as show in the following example `<system.serviceModel><messageLogging logEntireMessage="true" logKnownPii="true" …`.  
   
  You should be aware that if you specify two or more custom sources in a configuration file, only the attributes of the first source are read. The others are ignored. This means that, for the following App.config, file, PII is not logged for both sources even though PII logging is explicitly enabled for the second source.  
   

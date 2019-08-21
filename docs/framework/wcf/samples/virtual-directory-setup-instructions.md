@@ -7,7 +7,7 @@ ms.assetid: 3c62cab5-81a4-48b6-ac8c-9ce33a85a157
 The Windows Communication Foundation (WCF) samples are intended to share a common virtual directory named servicemodelsamples that is mapped to the %SystemDrive%\inetpub\wwwroot\servicemodelsamples folder.  
   
 > [!NOTE]
->  %SystemDrive% is usually C: or D:, depending on the drive location where Internet Information Services (IIS) is installed.  
+> %SystemDrive% is usually C: or D:, depending on the drive location where Internet Information Services (IIS) is installed.  
   
  You can run the Setupvroot.bat and Cleanupvroot.bat files from the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) to create the virtual directory. If you prefer to create the virtual directory manually, use the following procedures.  
   

@@ -22,7 +22,7 @@ By default, users can modify text and numerical data displayed in the Windows Fo
 3. In the **Column Properties** grid, set the <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> property to `true`.
 
     > [!NOTE]
-    >  You can also make a column read-only when you add it by selecting the **Read Only** check box in the **Add Column** dialog box.
+    > You can also make a column read-only when you add it by selecting the **Read Only** check box in the **Add Column** dialog box.
 
 ## See also
 

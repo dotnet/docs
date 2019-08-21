@@ -24,7 +24,7 @@ The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../st
  The Strong Name tool is automatically installed with Visual Studio. To start the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
 
 > [!NOTE]
->  On 64-bit computers, run the 32-bit version of Sn.exe by using the Developer Command Prompt for Visual Studio and the 64-bit version by using the Visual Studio x64 Win64 Command Prompt. 
+> On 64-bit computers, run the 32-bit version of Sn.exe by using the Developer Command Prompt for Visual Studio and the 64-bit version by using the Visual Studio x64 Win64 Command Prompt. 
   
  At the command prompt, type the following:  
   
@@ -71,13 +71,13 @@ sn [-quiet][option [parameter(s)]]
 |**-?**|Displays command syntax and options for the tool.|  
   
 > [!NOTE]
->  All Sn.exe options are case-sensitive and must be typed exactly as shown to be recognized by the tool.  
+> All Sn.exe options are case-sensitive and must be typed exactly as shown to be recognized by the tool.  
   
 ## Remarks  
  The **-R** and **–Rc** options are useful with assemblies that have been delay-signed. In this scenario, only the public key has been set at compile time and signing is performed later, when the private key is known.  
   
 > [!NOTE]
->  For parameters (for example, –**Vr)** that write to protected resources such as the registry, run SN.exe as an administrator.  
+> For parameters (for example, –**Vr)** that write to protected resources such as the registry, run SN.exe as an administrator.  
   
 The Strong Name tool assumes that public/private key pairs are generated with the `AT_SIGNATURE` algorithm identifier. Public/private key pairs generated with the `AT_KEYEXCHANGE` algorithm generate an error. 
 

@@ -11,7 +11,7 @@ ms.assetid: 7f71d652-1749-4379-945a-aa2e3994cb43
 Before administrators can deploy Microsoft .NET Framework applications on a system, they must first confirm that the .NET Framework runtime is present. This topic provides a script written in HTML/JavaScript that administrators can use to determine whether the .NET Framework is present on a system.  
   
 > [!NOTE]
->  For more detailed information on installing, deploying, and detecting the Microsoft .NET Framework, see the discussion in [Deploying Microsoft .NET Framework Version 3.0](https://go.microsoft.com/fwlink/?LinkId=96739).  
+> For more detailed information on installing, deploying, and detecting the Microsoft .NET Framework, see the discussion in [Deploying Microsoft .NET Framework Version 3.0](https://go.microsoft.com/fwlink/?LinkId=96739).  
   
 <a name="content_expiration"></a>   
 ## Detect the ".NET CLR" User-Agent String  

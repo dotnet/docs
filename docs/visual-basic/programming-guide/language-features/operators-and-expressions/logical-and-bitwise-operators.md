@@ -87,7 +87,7 @@ Logical operators compare `Boolean` expressions and return a `Boolean` result. T
  The `AndAlso` and `OrElse` operators do not support bitwise operations.  
   
 > [!NOTE]
->  Bitwise operations can be performed on integral types only. Floating-point values must be converted to integral types before bitwise operation can proceed.  
+> Bitwise operations can be performed on integral types only. Floating-point values must be converted to integral types before bitwise operation can proceed.  
   
 ## See also
 

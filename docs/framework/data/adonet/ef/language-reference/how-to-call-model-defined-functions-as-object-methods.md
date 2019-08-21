@@ -81,7 +81,7 @@ This topic describes how to call a model-defined function as a method on an <xre
  The next example demonstrates how to call a model-defined function as a static method on a custom class. The example uses the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).  
   
 > [!NOTE]
->  When you call a model-defined function as a static method on a custom class, the model-defined function must accept a collection and return an aggregation of values in the collection.  
+> When you call a model-defined function as a static method on a custom class, the model-defined function must accept a collection and return an aggregation of values in the collection.  
   
  Consider the conceptual model function below that returns product revenue for a SalesOrderDetail collection. (For information about adding the function to your conceptual model, see [How to: Define Custom Functions in the Conceptual Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).).  
   

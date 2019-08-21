@@ -15,7 +15,7 @@ ms.assetid: db15ee48-4d24-49f5-8b9d-a64460865286
 This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application.  
   
 > [!NOTE]
->  As with most types of software, font files are licensed, rather than sold. Licenses that govern the use of fonts vary from vendor to vendor but in general most licenses, including those covering the fonts [!INCLUDE[TLA#tla_ms#initcap](../../../../includes/tlasharptla-mssharpinitcap-md.md)] supplies with applications and [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)], do not allow the fonts to be embedded within applications or otherwise redistributed. Therefore, as a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
+> As with most types of software, font files are licensed, rather than sold. Licenses that govern the use of fonts vary from vendor to vendor but in general most licenses, including those covering the fonts [!INCLUDE[TLA#tla_ms#initcap](../../../../includes/tlasharptla-mssharpinitcap-md.md)] supplies with applications and [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)], do not allow the fonts to be embedded within applications or otherwise redistributed. Therefore, as a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
 
 <a name="introduction_to_packaging_fonts"></a>   
 ## Introduction to Packaging Fonts  
@@ -75,7 +75,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
 ```  
   
 > [!NOTE]
->  When you add fonts as resources to your application, make sure you are setting the `<Resource>` element, and not the `<EmbeddedResource>` element in your application's project file. The `<EmbeddedResource>` element for the build action is not supported.  
+> When you add fonts as resources to your application, make sure you are setting the `<Resource>` element, and not the `<EmbeddedResource>` element in your application's project file. The `<EmbeddedResource>` element for the build action is not supported.  
   
  The following markup example shows how to reference the application's font resources.  
   
@@ -146,7 +146,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
  [!code-xaml[OpenTypeFontsSample#OpenTypeFontsSample1](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontsSample/CS/Kootenay.xaml#opentypefontssample1)]  
   
 > [!NOTE]
->  This SDK contains a set of sample OpenType fonts that you can use with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. The fonts are defined in a resource-only library. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
+> This SDK contains a set of sample OpenType fonts that you can use with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. The fonts are defined in a resource-only library. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
 <a name="limitations_on_font_usage"></a>   
 ## Limitations on Font Usage  

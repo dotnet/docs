@@ -38,7 +38,7 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
  Use whatever approach works best for you.  
   
 > [!NOTE]
->  If you have not used C++/CLI before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in C++.  To learn more about the C++/CLI managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms) and [Hello, C++/CLI](https://go.microsoft.com/fwlink/?LinkId=98739).  
+> If you have not used C++/CLI before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in C++.  To learn more about the C++/CLI managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms) and [Hello, C++/CLI](https://go.microsoft.com/fwlink/?LinkId=98739).  
   
 <a name="hwnds"></a>   
 ## How WPF Uses Hwnds  
@@ -77,7 +77,7 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
 8. Communicate with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object by using the reference that you stored in the static field to set properties, call methods, etc.  
   
 > [!NOTE]
->  You can do some or all of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class definition for Step One in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] using the default partial class of the content class, if you produce a separate assembly and then reference it. Although you typically include an <xref:System.Windows.Application> object as part of compiling the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] into an assembly, you do not end up using that <xref:System.Windows.Application> as part of the interoperation, you just use one or more of the root classes for [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files referred to by the application and reference their partial classes. The remainder of the procedure is essentially similar to that outlined above.  
+> You can do some or all of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class definition for Step One in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] using the default partial class of the content class, if you produce a separate assembly and then reference it. Although you typically include an <xref:System.Windows.Application> object as part of compiling the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] into an assembly, you do not end up using that <xref:System.Windows.Application> as part of the interoperation, you just use one or more of the root classes for [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files referred to by the application and reference their partial classes. The remainder of the procedure is essentially similar to that outlined above.  
 >   
 >  Each of these steps is illustrated through code in the topic [Walkthrough: Hosting WPF Content in Win32](walkthrough-hosting-wpf-content-in-win32.md).  
   

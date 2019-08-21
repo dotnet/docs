@@ -29,7 +29,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
  In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> can participate in drag-and-drop. The events and methods required for drag-and-drop operations are defined in the <xref:System.Windows.DragDrop> class. The <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> classes contain aliases for the <xref:System.Windows.DragDrop> attached events so that the events appear in the class members list when a <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to these events are attached to the underlying <xref:System.Windows.DragDrop> attached event and receive the same event data instance. For more information, see the <xref:System.Windows.UIElement.Drop?displayProperty=nameWithType> event.  
   
 > [!IMPORTANT]
->  OLE drag-and-drop does not work while in the Internet zone.  
+> OLE drag-and-drop does not work while in the Internet zone.  
   
 <a name="Data_Transfer"></a>   
 ## Data Transfer  
@@ -151,7 +151,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
  The `allowedEffects` parameter is used to specify what the drag source will allow the drop target to do with the transferred data. The common values for a drag source are <xref:System.Windows.DragDropEffects.Copy>, <xref:System.Windows.DragDropEffects.Move>, and <xref:System.Windows.DragDropEffects.All>.  
   
 > [!NOTE]
->  The drop target is also able to specify what effects it intends in response to the dropped data. For example, if the drop target does not recognize the data type to be dropped, it can refuse the data by setting its allowed effects to <xref:System.Windows.DragDropEffects.None>. It typically does this in its <xref:System.Windows.DragDrop.DragOver> event handler.  
+> The drop target is also able to specify what effects it intends in response to the dropped data. For example, if the drop target does not recognize the data type to be dropped, it can refuse the data by setting its allowed effects to <xref:System.Windows.DragDropEffects.None>. It typically does this in its <xref:System.Windows.DragDrop.DragOver> event handler.  
   
  A drag source can optionally handle the <xref:System.Windows.DragDrop.GiveFeedback> and <xref:System.Windows.DragDrop.QueryContinueDrag> events. These events have default handlers that are used unless you mark the events as handled. You will typically ignore these events unless you have a specific need to change their default behavior.  
   

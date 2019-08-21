@@ -34,7 +34,7 @@ There are a number of ways to sign an assembly with a strong name:
 4. In the **Choose a strong name key file** box, choose **Browse**, and then navigate to the key file. To create a new key file, choose **New** and enter its name in the **Create Strong Name Key** dialog box.  
   
 > [!NOTE]
->  In order to [delay sign an assembly](delay-sign.md), choose a public key file.  
+> In order to [delay sign an assembly](delay-sign.md), choose a public key file.  
   
 ### Create and sign an assembly with a strong name by using the Assembly Linker  
   
@@ -65,7 +65,7 @@ For more information about this tool, see [Assembly Linker](../../framework/tool
 2. Compile the source code file normally.  
    
    > [!NOTE]
-   >  The C# and Visual Basic compilers issue compiler warnings (CS1699 and BC41008, respectively) when they encounter the <xref:System.Reflection.AssemblyKeyFileAttribute> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute in source code. You can ignore the warnings.  
+   > The C# and Visual Basic compilers issue compiler warnings (CS1699 and BC41008, respectively) when they encounter the <xref:System.Reflection.AssemblyKeyFileAttribute> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute in source code. You can ignore the warnings.  
 
 The following example uses the <xref:System.Reflection.AssemblyKeyFileAttribute> attribute with a key file called *keyfile.snk*, which is located in the directory where the assembly is compiled.  
 

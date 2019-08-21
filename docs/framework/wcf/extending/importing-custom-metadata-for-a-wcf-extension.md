@@ -40,7 +40,7 @@ In Windows Communication Foundation (WCF), metadata import is the process of gen
  The `wsp:Optional` attribute and nested policy expressions are not normalized, so policy import extensions must handle these policy constructs. Also, policy import extensions may be called multiple times with the same <xref:System.ServiceModel.Description.ContractDescription> and <xref:System.ServiceModel.Channels.BindingElement> objects, so policy import extensions should be robust to this behavior.  
   
 > [!IMPORTANT]
->  Invalid or improper metadata can be passed to the importer. Ensure that custom importers are robust to all forms of XML.  
+> Invalid or improper metadata can be passed to the importer. Ensure that custom importers are robust to all forms of XML.  
   
 ## See also
 

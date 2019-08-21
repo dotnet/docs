@@ -31,7 +31,7 @@ mefx /file:MyAddIn.dll /directory:Program\AddIns [action...]
 ```  
   
 > [!NOTE]
->  Each .dll or .exe should only be loaded one time. If a file is loaded multiple times, the tool may return incorrect information.  
+> Each .dll or .exe should only be loaded one time. If a file is loaded multiple times, the tool may return incorrect information.  
   
  After the list of files and directories, you must specify a command, and any options for that command.  
   
@@ -108,7 +108,7 @@ from: ClassLibrary1.ChainOne from: AssemblyCatalog (Assembly="ClassLibrary1, Ver
  Using the `/causes` action on the previous example would list only information for `ChainOne`, whose unfilled import is the root cause of the rejection of `AddIn`. The `/causes` action can be used in both normal and `/verbose` options.  
   
 > [!NOTE]
->  In most cases, Mefx will be able to diagnose the root cause of a cascading failure. However, in cases where parts are added programmatically to a container, cases involving hierarchical containers, or cases involving custom `ExportProvider` implementations, Mefx will not be able to diagnose the cause. In general, the previously described cases should be avoided where possible, as failures are generally difficult to diagnose.  
+> In most cases, Mefx will be able to diagnose the root cause of a cascading failure. However, in cases where parts are added programmatically to a container, cases involving hierarchical containers, or cases involving custom `ExportProvider` implementations, Mefx will not be able to diagnose the cause. In general, the previously described cases should be avoided where possible, as failures are generally difficult to diagnose.  
   
 <a name="white_lists"></a>   
 ## White Lists  

@@ -46,7 +46,7 @@ Registration-free COM interop activates a component without using the Windows re
      Registration-free activation is optional for COM components installed on Windows XP. For detailed instructions on adding a side-by-side assembly to an application, see [Using Side-by-side Assemblies](/windows/desktop/SbsCs/using-side-by-side-assemblies).  
   
     > [!NOTE]
-    >  Side-by-side execution is a .NET Framework feature that enables multiple versions of the runtime, and multiple versions of applications and components that use a version of the runtime, to run on the same computer at the same time. Side-by-side execution and side-by-side assemblies are different mechanisms for providing side-by-side functionality.  
+    > Side-by-side execution is a .NET Framework feature that enables multiple versions of the runtime, and multiple versions of applications and components that use a version of the runtime, to run on the same computer at the same time. Side-by-side execution and side-by-side assemblies are different mechanisms for providing side-by-side functionality.  
   
 ## See also
 

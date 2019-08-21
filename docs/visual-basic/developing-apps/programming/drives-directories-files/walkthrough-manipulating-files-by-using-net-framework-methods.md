@@ -60,7 +60,7 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
      [!code-vb[VbVbcnMyFileSystem#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#36)]  
   
 > [!NOTE]
->  The Visual Studio Integrated Development Environment (IDE) will return to the Code Editor and position the insertion point within the event handler where you should add the code.  
+> The Visual Studio Integrated Development Environment (IDE) will return to the Code Editor and position the insertion point within the event handler where you should add the code.  
   
 1. To write to the file, use the <xref:System.IO.StreamWriter.Write%2A> method of the <xref:System.IO.StreamWriter> class. Add the following code directly after `Dim fw As StreamWriter`. You do not need to worry that an exception will be thrown if the file is not found, because it will be created if it does not already exist.  
   

@@ -14,7 +14,7 @@ ms.assetid: f487bf4f-c943-4fca-851b-e540c83d9027
 You might have to reference two versions of assemblies that have the same fully-qualified type names. For example, you might have to use two or more versions of an assembly in the same application. By using an external assembly alias, the namespaces from each assembly can be wrapped inside root-level namespaces named by the alias, which enables them to be used in the same file.  
   
 > [!NOTE]
->  The [extern](./extern.md) keyword is also used as a method modifier, declaring a method written in unmanaged code.  
+> The [extern](./extern.md) keyword is also used as a method modifier, declaring a method written in unmanaged code.  
   
  To reference two assemblies with the same fully-qualified type names, an alias must be specified at a command prompt, as follows:  
   

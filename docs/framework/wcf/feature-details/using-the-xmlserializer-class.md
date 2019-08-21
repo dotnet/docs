@@ -50,7 +50,7 @@ Windows Communication Foundation (WCF) can use two different serialization techn
 ## Security Considerations  
   
 > [!NOTE]
->  It is important to be careful when switching serialization engines. The same type can serialize to XML differently depending on the serializer being used. If you accidentally use the wrong serializer, you might be disclosing information from the type that you did not intend to disclose.  
+> It is important to be careful when switching serialization engines. The same type can serialize to XML differently depending on the serializer being used. If you accidentally use the wrong serializer, you might be disclosing information from the type that you did not intend to disclose.  
   
  For example, the <xref:System.Runtime.Serialization.DataContractSerializer> class only serializes members marked with the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute when serializing data contract types. The <xref:System.Xml.Serialization.XmlSerializer> class serializes any public member. See the type in the following code.  
   
@@ -81,7 +81,7 @@ Windows Communication Foundation (WCF) can use two different serialization techn
  The <xref:System.ServiceModel.MessageHeaderArrayAttribute> attribute is not supported when using the <xref:System.Xml.Serialization.XmlSerializer>.  
   
 > [!NOTE]
->  In this case, the <xref:System.Xml.Serialization.XmlSerializer> throws the following exception, which is released prior to WCF: "An element declared at the top level of a schema cannot have `maxOccurs` > 1. Provide a wrapper element for 'more' by using `XmlArray` or `XmlArrayItem` instead of `XmlElementAttribute`, or by using the Wrapped parameter style."  
+> In this case, the <xref:System.Xml.Serialization.XmlSerializer> throws the following exception, which is released prior to WCF: "An element declared at the top level of a schema cannot have `maxOccurs` > 1. Provide a wrapper element for 'more' by using `XmlArray` or `XmlArrayItem` instead of `XmlElementAttribute`, or by using the Wrapped parameter style."  
 >   
 >  If you receive such an exception, investigate whether this situation applies.  
   
@@ -197,7 +197,7 @@ Windows Communication Foundation (WCF) can use two different serialization techn
 ```  
   
 > [!NOTE]
->  The `<xmlSerializer useLegacySerializerGeneration="true"/>` switch only works on a machine running .NET Framework 4.5 or later version. The above `appSettings` approach works on all .NET Framework versions.  
+> The `<xmlSerializer useLegacySerializerGeneration="true"/>` switch only works on a machine running .NET Framework 4.5 or later version. The above `appSettings` approach works on all .NET Framework versions.  
   
 ## See also
 

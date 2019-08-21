@@ -34,7 +34,7 @@ The <xref:System.Threading.Semaphore?displayProperty=nameWithType> class represe
  You can create a <xref:System.Threading.Semaphore> object that represents a named system semaphore by using one of the constructors that specifies a name.  
   
 > [!NOTE]
->  Because named semaphores are system wide, it is possible to have multiple <xref:System.Threading.Semaphore> objects that represent the same named semaphore. Each time you call a constructor or the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=nameWithType> method, a new <xref:System.Threading.Semaphore> object is created. Specifying the same name repeatedly creates multiple objects that represent the same named semaphore.  
+> Because named semaphores are system wide, it is possible to have multiple <xref:System.Threading.Semaphore> objects that represent the same named semaphore. Each time you call a constructor or the <xref:System.Threading.Semaphore.OpenExisting%2A?displayProperty=nameWithType> method, a new <xref:System.Threading.Semaphore> object is created. Specifying the same name repeatedly creates multiple objects that represent the same named semaphore.  
   
  Be careful when you use named semaphores. Because they are system wide, another process that uses the same name can enter your semaphore unexpectedly. Malicious code executing on the same computer could use this as the basis of a denial-of-service attack.  
   

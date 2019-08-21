@@ -178,7 +178,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
 4. Press Enter in the **Console** window to stop debugging.  
   
 > [!NOTE]
->  After you have added the new customer by submitting the changes, you cannot execute this solution again as is, because you cannot add the same customer again as is. To execute the solution again, change the value of the customer ID to be added.  
+> After you have added the new customer by submitting the changes, you cannot execute this solution again as is, because you cannot add the same customer again as is. To execute the solution again, change the value of the customer ID to be added.  
   
 ## See also
 

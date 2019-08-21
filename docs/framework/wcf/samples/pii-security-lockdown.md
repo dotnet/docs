@@ -81,7 +81,7 @@ This sample demonstrates how to control several security-related features of a W
 ```  
   
 > [!NOTE]
->  The Machine.config file has a default location: %WINDIR%\Microsoft.NET\Framework\v2.0.50727\CONFIG.  
+> The Machine.config file has a default location: %WINDIR%\Microsoft.NET\Framework\v2.0.50727\CONFIG.  
   
  If the `enableLoggingKnownPii` attribute is not present in Machine.config, logging of PII is not allowed.  
   
@@ -111,7 +111,7 @@ This sample demonstrates how to control several security-related features of a W
  PII is only logged if both `enableLoggingKnownPii` is set to `true`, and `logKnownPii` is set to `true`.  
   
 > [!NOTE]
->  System.Diagnostics ignores all attributes on all sources except the first one listed in the configuration file. Adding the `logKnownPii` attribute to the second source in the configuration file has no effect.  
+> System.Diagnostics ignores all attributes on all sources except the first one listed in the configuration file. Adding the `logKnownPii` attribute to the second source in the configuration file has no effect.  
   
 > [!IMPORTANT]
 >  To run this sample involves manual modification of Machine.config. Care should be taken when modifying Machine.config as incorrect values or syntax may prevent all .NET Framework applications from running.  

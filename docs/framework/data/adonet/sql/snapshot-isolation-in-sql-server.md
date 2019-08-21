@@ -98,7 +98,7 @@ SqlTransaction sqlTran =
 - It rolls back the first transaction and cleans up by deleting the **TestSnapshot** table and turning off snapshot isolation for the **AdventureWorks** database.  
   
 > [!NOTE]
->  The following examples use the same connection string with connection pooling turned off. If a connection is pooled, resetting its isolation level does not reset the isolation level at the server. As a result, subsequent connections that use the same pooled inner connection start with their isolation levels set to that of the pooled connection. An alternative to turning off connection pooling is to set the isolation level explicitly for each connection.  
+> The following examples use the same connection string with connection pooling turned off. If a connection is pooled, resetting its isolation level does not reset the isolation level at the server. As a result, subsequent connections that use the same pooled inner connection start with their isolation levels set to that of the pooled connection. An alternative to turning off connection pooling is to set the isolation level explicitly for each connection.  
   
  [!code-csharp[DataWorks SnapshotIsolation.Demo#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.Demo/CS/source.cs#1)]
  [!code-vb[DataWorks SnapshotIsolation.Demo#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.Demo/VB/source.vb#1)]  

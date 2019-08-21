@@ -93,7 +93,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
  The following example shows how to render an image 200 pixels wide using code.  
   
 > [!NOTE]
->  <xref:System.Windows.Media.Imaging.BitmapImage> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> to signal that initialization has completed. Once initialized, property changes are ignored.  
+> <xref:System.Windows.Media.Imaging.BitmapImage> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> to signal that initialization has completed. Once initialized, property changes are ignored.  
   
  [!code-csharp[ImageElementExample_snip#ImageSimpleExampleInlineCode1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml.cs#imagesimpleexampleinlinecode1)]
  [!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode1)]  
@@ -179,7 +179,7 @@ Image brushes can fill shapes, controls, text, and more
  For a sample of the extensibility API, see the [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052). This sample demonstrates how to create a decoder and encoder for a custom image format.  
   
 > [!NOTE]
->  The codec must be digitally signed for the system to recognize it.  
+> The codec must be digitally signed for the system to recognize it.  
   
 ## See also
 

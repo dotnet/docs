@@ -19,7 +19,7 @@ This sample demonstrates the use of SSL transport security with the basic bindin
  By default, the basic binding supports HTTP communication. The sample shows how to enable transport security for the basic binding. Before you run the sample, you must create a certificate and assign it by using the Web Server Certificate Wizard.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The program code in the sample is identical to that of the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) service. The endpoint definition and binding definition in the configuration file settings are modified to enable secure communication, as shown in the following sample configuration.  
   

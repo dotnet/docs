@@ -18,7 +18,7 @@ To successfully deploy your .NET Framework application, you must understand how 
  The common language runtime performs a number of steps when attempting to locate an assembly and resolve an assembly reference. Each step is explained in the following sections. The term probing is often used when describing how the runtime locates assemblies; it refers to the set of heuristics used to locate the assembly based on its name and culture.  
   
 > [!NOTE]
->  You can view binding information in the log file using the [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md), which is included in the Windows SDK.  
+> You can view binding information in the log file using the [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md), which is included in the Windows SDK.  
   
 ## Initiating the Bind  
  The process of locating and binding to an assembly begins when the runtime attempts to resolve a reference to another assembly. This reference can be either static or dynamic. The compiler records static references in the assembly manifest's metadata at build time. Dynamic references are constructed on the fly as a result of calling various methods, such as <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>.  
@@ -30,7 +30,7 @@ To successfully deploy your .NET Framework application, you must understand how 
  Finally, you can make a dynamic reference using a method such as <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> and provide only partial information; you then qualify the reference using the [\<qualifyAssembly>](../../../docs/framework/configure-apps/file-schema/runtime/qualifyassembly-element.md) element in the application configuration file. This element allows you to provide the full reference information (name, version, culture and, if applicable, the public key token) in your application configuration file instead of in your code. You would use this technique if you wanted to fully qualify a reference to an assembly outside the application directory, or if you wanted to reference an assembly in the global assembly cache but you wanted the convenience of specifying the full reference in the configuration file instead of in your code.  
   
 > [!NOTE]
->  This type of partial reference should not be used with assemblies that are shared among several applications. Because configuration settings are applied per application and not per assembly, a shared assembly using this type of partial reference would require each application using the shared assembly to have the qualifying information in its configuration file.  
+> This type of partial reference should not be used with assemblies that are shared among several applications. Because configuration settings are applied per application and not per assembly, a shared assembly using this type of partial reference would require each application using the shared assembly to have the qualifying information in its configuration file.  
   
  The runtime uses the following steps to resolve an assembly reference:  
   
@@ -39,7 +39,7 @@ To successfully deploy your .NET Framework application, you must understand how 
 2. [Checks whether the assembly name has been bound to before](#step2) and, if so, uses the previously loaded assembly. If a previous request to load the assembly failed, the request is failed immediately without attempting to load the assembly.  
   
     > [!NOTE]
-    >  The caching of assembly binding failures is new in the .NET Framework version 2.0.  
+    > The caching of assembly binding failures is new in the .NET Framework version 2.0.  
   
 3. [Checks the global assembly cache](#step3). If the assembly is found there, the runtime uses this assembly.  
   
@@ -67,7 +67,7 @@ To successfully deploy your .NET Framework application, you must understand how 
  These files follow the same syntax and provide information such as binding redirects, the location of code, and binding modes for particular assemblies. Each configuration file can contain an [\<assemblyBinding> element](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) that redirects the binding process. The child elements of the [\<assemblyBinding> element](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) include the [\<dependentAssembly> element](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md). The children of [\<dependentAssembly> element](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md) include the [\<assemblyIdentity> element](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment), the [\<bindingRedirect> element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md), and the [\<codeBase> element](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md).  
   
 > [!NOTE]
->  Configuration information can be found in the three configuration files; not all elements are valid in all configuration files. For example, binding mode and private path information can only be in the application configuration file. For a complete list of the information that is contained in each file, see [Configuring Apps by Using Configuration Files](../../../docs/framework/configure-apps/index.md).  
+> Configuration information can be found in the three configuration files; not all elements are valid in all configuration files. For example, binding mode and private path information can only be in the application configuration file. For a complete list of the information that is contained in each file, see [Configuring Apps by Using Configuration Files](../../../docs/framework/configure-apps/index.md).  
   
 ### Application Configuration File  
  First, the common language runtime checks the application configuration file for information that overrides the version information stored in the calling assembly's manifest. The application configuration file can be deployed with an application, but is not required for application execution. Usually the retrieval of this file is almost instantaneous, but in situations where the application base is on a remote computer, such as in an Internet Explorer Web-based scenario, the configuration file must be downloaded.  
@@ -117,7 +117,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
  `compatkey.dat` is a strong-name key file. This command creates a strong-named assembly you can place in the global assembly cache.  
   
 > [!NOTE]
->  Publisher policy affects all applications that use a shared component.  
+> Publisher policy affects all applications that use a shared component.  
   
  The publisher policy configuration file overrides version information that comes from the application (that is, from the assembly manifest or from the application configuration file). If there is no statement in the application configuration file to redirect the version specified in the assembly manifest, the publisher policy file overrides the version specified in the assembly manifest. However, if there is a redirecting statement in the application configuration file, publisher policy overrides that version rather than the one specified in the manifest.  
   
@@ -138,7 +138,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
  If a previous request for the assembly failed, subsequent requests for the assembly are failed immediately without attempting to load the assembly. Starting with the .NET Framework version 2.0, assembly binding failures are cached, and the cached information is used to determine whether to attempt to load the assembly.  
   
 > [!NOTE]
->  To revert to the behavior of the .NET Framework versions 1.0 and 1.1, which did not cache binding failures, include the [\<disableCachingBindingFailures> Element](../../../docs/framework/configure-apps/file-schema/runtime/disablecachingbindingfailures-element.md) in your configuration file.  
+> To revert to the behavior of the .NET Framework versions 1.0 and 1.1, which did not cache binding failures, include the [\<disableCachingBindingFailures> Element](../../../docs/framework/configure-apps/file-schema/runtime/disablecachingbindingfailures-element.md) in your configuration file.  
   
 <a name="step3"></a>   
 ## Step 3: Checking the Global Assembly Cache  
@@ -153,7 +153,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
 2. The runtime then probes for the referenced assembly using the rules specified later in this section.  
   
 > [!NOTE]
->  If you have multiple versions of an assembly in a directory and you want to reference a particular version of that assembly, you must use the [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element instead of the `privatePath` attribute of the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element. If you use the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element, the runtime stops probing the first time it finds an assembly that matches the simple assembly name referenced, whether it is a correct match or not. If it is a correct match, that assembly is used. If it is not a correct match, probing stops and binding fails.  
+> If you have multiple versions of an assembly in a directory and you want to reference a particular version of that assembly, you must use the [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element instead of the `privatePath` attribute of the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element. If you use the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element, the runtime stops probing the first time it finds an assembly that matches the simple assembly name referenced, whether it is a correct match or not. If it is a correct match, that assembly is used. If it is not a correct match, probing stops and binding fails.  
   
 ### Locating the Assembly through Codebases  
  Codebase information can be provided by using a [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element in a configuration file. This codebase is always checked before the runtime attempts to probe for the referenced assembly. If a publisher policy file containing the final version redirect also contains a [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element, that [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element is the one that is used. For example, if your application configuration file specifies a [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element, and a publisher policy file that is overriding the application information also specifies a [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element, the [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element in the publisher policy file is used.  
@@ -161,7 +161,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
  If no match is found at the location specified by the [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element, the bind request fails and no further steps are taken. If the runtime determines that an assembly matches the calling assembly's criteria, it uses that assembly. When the file specified by the given [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element is loaded, the runtime checks to make sure that the name, version, culture, and public key match the calling assembly's reference.  
   
 > [!NOTE]
->  Referenced assemblies outside the application's root directory must have strong names and must either be installed in the global assembly cache or specified using the [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element.  
+> Referenced assemblies outside the application's root directory must have strong names and must either be installed in the global assembly cache or specified using the [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element.  
   
 ### Locating the Assembly through Probing  
  If there is no [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element in the application configuration file, the runtime probes for the assembly using four criteria:  

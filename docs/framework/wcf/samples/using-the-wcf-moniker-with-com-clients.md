@@ -7,7 +7,7 @@ ms.assetid: e2799bfe-88bd-49d7-9d6d-ac16a9b16b04
 This sample demonstrates how to use the Windows Communication Foundation (WCF) service moniker to integrate Web services into COM-based development environments, such as Microsoft Office Visual Basic for Applications (Office VBA) or Visual Basic 6.0. This sample consists of a Windows Script Host client (.vbs), a supporting client library (.dll), and a service library (.dll) hosted by Internet Information Services (IIS). The service is a calculator service and the COM client calls math operations—Add, Subtract, Multiply, and Divide—on the service. Client activity is visible in the message box windows.  
   
 > [!NOTE]
->  The set-up procedure and build instructions for this sample are located at the end of this topic.  
+> The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
@@ -69,7 +69,7 @@ gacutil.exe /i client.dll
 ```  
   
 > [!NOTE]
->  The service moniker requires only the type registration and does not use the proxy to communicate with the service.  
+> The service moniker requires only the type registration and does not use the proxy to communicate with the service.  
   
  ComCalcClient.vbs client application uses the `GetObject` function to construct a proxy for the service, using the service moniker syntax to specify the address, binding, and contract for the service.  
   

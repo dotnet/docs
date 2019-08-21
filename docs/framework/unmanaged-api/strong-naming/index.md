@@ -17,7 +17,7 @@ The strong naming API enables a client to administer strong name signing for ass
 ## In This Section  
   
 > [!NOTE]
->  All of these functions have been deprecated starting with the .NET Framework 4. For suggested alternatives, see the [ICLRStrongName](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md) interface.  
+> All of these functions have been deprecated starting with the .NET Framework 4. For suggested alternatives, see the [ICLRStrongName](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md) interface.  
   
  [GetHashFromAssemblyFile Function](../../../../docs/framework/unmanaged-api/strong-naming/gethashfromassemblyfile-function.md)  
  Gets a hash of the specified assembly file, using the specified hash algorithm. Deprecated starting with the .NET Framework 4.  

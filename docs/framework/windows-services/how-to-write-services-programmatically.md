@@ -58,7 +58,7 @@ If you choose not to use the Windows Service project template, you can write you
 8. Build your project by selecting **Build Solution** from the **Build** menu.  
   
     > [!NOTE]
-    >  Do not press F5 to run your project — you cannot run a service project in this way.  
+    > Do not press F5 to run your project — you cannot run a service project in this way.  
   
 9. Create a setup project and the custom actions to install your service. For an example, see [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md).  
   

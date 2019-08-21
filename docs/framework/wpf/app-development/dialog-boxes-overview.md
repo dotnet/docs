@@ -75,7 +75,7 @@ Standalone applications typically have a main window that both displays the main
  For more information on the open file dialog box, see <xref:Microsoft.Win32.OpenFileDialog?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  <xref:Microsoft.Win32.OpenFileDialog> can be used to safely retrieve file names by applications running with partial trust (see [Security](../security-wpf.md)).  
+> <xref:Microsoft.Win32.OpenFileDialog> can be used to safely retrieve file names by applications running with partial trust (see [Security](../security-wpf.md)).  
   
 <a name="Save_File_Dialog"></a>   
 ### Save File dialog box  

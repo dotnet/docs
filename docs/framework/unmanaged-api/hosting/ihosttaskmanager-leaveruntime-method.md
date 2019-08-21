@@ -22,7 +22,7 @@ ms.author: "ronpet"
 Notifies the host that the currently executing task is about to leave the common language runtime (CLR) and enter unmanaged code.  
   
 > [!IMPORTANT]
->  A corresponding call to [IHostTaskManager::EnterRuntime](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-enterruntime-method.md) notifies the host that the currently executing task is reentering managed code.  
+> A corresponding call to [IHostTaskManager::EnterRuntime](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-enterruntime-method.md) notifies the host that the currently executing task is reentering managed code.  
   
 ## Syntax  
   

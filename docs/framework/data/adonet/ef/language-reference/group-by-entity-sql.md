@@ -20,7 +20,7 @@ Specifies groups into which objects returned by a query ([SELECT](../../../../..
  If aggregate functions are included in the SELECT clause \<select list>, GROUP BY calculates a summary value for each group. When GROUP BY is specified, either each property name in any nonaggregate expression in the select list should be included in the GROUP BY list, or the GROUP BY expression must exactly match the select list expression.  
   
 > [!NOTE]
->  If the ORDER BY clause is not specified, groups returned by the GROUP BY clause are not in any particular order. To specify a particular ordering of the data, we recommend that you always use the ORDER BY clause.  
+> If the ORDER BY clause is not specified, groups returned by the GROUP BY clause are not in any particular order. To specify a particular ordering of the data, we recommend that you always use the ORDER BY clause.  
   
  When a GROUP BY clause is specified, either explicitly or implicitly (for example, by a HAVING clause in the query), the current scope is hidden, and a new scope is introduced.  
   

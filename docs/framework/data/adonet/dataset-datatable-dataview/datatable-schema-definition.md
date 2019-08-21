@@ -11,7 +11,7 @@ The schema, or structure, of a table is represented by columns and constraints. 
  The case-sensitivity rule does not apply if only one column, relation, or constraint  with a particular name exists. That is, if no other column, relation, or constraint object in the table matches the name of that particular column, relation, or constraint object, you may reference the object by name using any case, and no exception is thrown. For example, if the table has only **Col1**, you can reference it using **my.Columns["COL1"]**.  
   
 > [!NOTE]
->  The <xref:System.Data.DataTable.CaseSensitive%2A> property of the **DataTable** does not affect this behavior. The **CaseSensitive** property applies to the data in a table and affects sorting, searching, filtering, enforcing constraints, and so on, but not to references to the columns, relations, and constraints.  
+> The <xref:System.Data.DataTable.CaseSensitive%2A> property of the **DataTable** does not affect this behavior. The **CaseSensitive** property applies to the data in a table and affects sorting, searching, filtering, enforcing constraints, and so on, but not to references to the columns, relations, and constraints.  
   
 ## In This Section  
  [Adding Columns to a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/adding-columns-to-a-datatable.md)  

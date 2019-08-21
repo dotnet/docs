@@ -7,7 +7,7 @@ ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
 This sample demonstrates the use of a configuration file to make a service discoverable.  
   
 > [!NOTE]
->  This sample implements discovery in configuration. For a sample that implements discovery in code, see [Basic](../../../../docs/framework/wcf/samples/basic-sample.md).  
+> This sample implements discovery in configuration. For a sample that implements discovery in code, see [Basic](../../../../docs/framework/wcf/samples/basic-sample.md).  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

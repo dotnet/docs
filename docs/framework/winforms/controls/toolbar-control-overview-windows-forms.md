@@ -10,7 +10,7 @@ ms.assetid: d426b203-0216-4dbe-b834-1641e50a9c29
 ---
 # ToolBar Control Overview (Windows Forms)
 > [!NOTE]
->  The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
+> The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   
  The Windows Forms <xref:System.Windows.Forms.ToolBar> control is used on forms as a control bar that displays a row of drop-down menus and bitmapped buttons that activate commands. Thus, clicking a toolbar button can be an equivalent to choosing a menu command. The buttons can be configured to appear and behave as pushbuttons, drop-down menus, or separators. Typically, a toolbar contains buttons and menus that correspond to items in an application's menu structure, providing quick access to an application's most frequently used functions and commands.  
   
@@ -18,7 +18,7 @@ ms.assetid: d426b203-0216-4dbe-b834-1641e50a9c29
  A <xref:System.Windows.Forms.ToolBar> control is usually "docked" along the top of its parent window, but it can also be docked to any side of the window. A toolbar can display tooltips when the user points the mouse pointer at a toolbar button. A ToolTip is a small pop-up window that briefly describes the button or menu's purpose. To display ToolTips, the <xref:System.Windows.Forms.ToolBar.ShowToolTips%2A> property must be set to `true`.  
   
 > [!NOTE]
->  Certain applications feature controls very similar to the toolbar that have the ability to "float" above the application window and be repositioned. The Windows Forms ToolBar control is not able to do these actions.  
+> Certain applications feature controls very similar to the toolbar that have the ability to "float" above the application window and be repositioned. The Windows Forms ToolBar control is not able to do these actions.  
   
  When the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property is set to <xref:System.Windows.Forms.ToolBarAppearance>, the toolbar buttons appear raised and three-dimensional. You can set the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property of the toolbar to <xref:System.Windows.Forms.ToolBarAppearance> to give the toolbar and its buttons a flat appearance. When the mouse pointer moves over a flat button, the button's appearance changes to three-dimensional. Toolbar buttons can be divided into logical groups by using separators. A separator is a toolbar button with the <xref:System.Windows.Forms.ToolBarButton.Style%2A> property set to <xref:System.Windows.Forms.ToolBarButtonStyle>. It appears as empty space on the toolbar. When the toolbar has a flat appearance, button separators appear as lines rather than spaces between the buttons.  
   

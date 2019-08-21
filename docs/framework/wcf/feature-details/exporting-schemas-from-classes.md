@@ -30,7 +30,7 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
      Multiple calls to the `Export` method results in multiple items being added to the same `XmlSchemaSet`. A type is not generated into the `XmlSchemaSet` if it already exists there. Therefore, calling `Export` multiple times on the same `XsdDataContractExporter` is preferable to creating multiple instances of the `XsdDataContractExporter` class. This avoids duplicate schema types from being generated.  
   
     > [!NOTE]
-    >  If there is a failure during export, the `XmlSchemaSet` will be in an unpredictable state.  
+    > If there is a failure during export, the `XmlSchemaSet` will be in an unpredictable state.  
   
 5. Access the <xref:System.Xml.Schema.XmlSchemaSet> through the <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas%2A> property.  
   

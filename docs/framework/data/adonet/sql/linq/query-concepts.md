@@ -26,5 +26,5 @@ This section describes key concepts for designing [!INCLUDE[vbteclinq](../../../
  [Object Identity](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)  
  Explains the concept of object identity in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
- [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)  
+ [Introduction to LINQ Queries (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)  
  Provides an introduction to query operations in [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)].

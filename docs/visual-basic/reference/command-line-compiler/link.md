@@ -37,7 +37,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
  The `-link` option embeds only interfaces, structures, and delegates. Embedding COM classes is not supported.  
   
 > [!NOTE]
->  When you create an instance of an embedded COM type in your code, you must create the instance by using the appropriate interface. Attempting to create an instance of an embedded COM type by using the CoClass causes an error.  
+> When you create an instance of an embedded COM type in your code, you must create the instance by using the appropriate interface. Attempting to create an instance of an embedded COM type by using the CoClass causes an error.  
   
  To set the `-link` option in Visual Studio, add an assembly reference and set the `Embed Interop Types` property to **true**. The default for the `Embed Interop Types` property is **false**.  
   

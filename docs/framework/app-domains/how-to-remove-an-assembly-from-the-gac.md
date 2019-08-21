@@ -43,7 +43,7 @@ gacutil -u hello
 1. From the **Programs and Features** app in **Control Panel**, select the app that you want to uninstall. If the installation package placed assemblies in the GAC, Windows Installer will remove them if they are not used by another application.  
   
     > [!NOTE]
-    >  Windows Installer maintains a reference count for assemblies installed in the GAC. An assembly is removed from the GAC only when its reference count reaches zero, which indicates that it is not used by any application installed by a Windows Installer package.  
+    > Windows Installer maintains a reference count for assemblies installed in the GAC. An assembly is removed from the GAC only when its reference count reaches zero, which indicates that it is not used by any application installed by a Windows Installer package.  
   
 ## See also
 

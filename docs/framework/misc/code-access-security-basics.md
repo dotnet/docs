@@ -47,7 +47,7 @@ Code access security does not eliminate the possibility of human error in writin
 
 ## Declarative Security
 
-Declarative security syntax uses [attributes](../../../docs/standard/attributes/index.md) to place security information into the [metadata](../../../docs/standard/metadata-and-self-describing-components.md) of your code. Attributes can be placed at the assembly, class, or member level, to indicate the type of request, demand, or override you want to use. Requests are used in applications that target the common language runtime to inform the runtime security system about the permissions that your application needs or does not want. Demands and overrides are used in libraries to help protect resources from callers or to override default security behavior.
+Declarative security syntax uses [attributes](../../standard/attributes/index.md) to place security information into the [metadata](../../standard/metadata-and-self-describing-components.md) of your code. Attributes can be placed at the assembly, class, or member level, to indicate the type of request, demand, or override you want to use. Requests are used in applications that target the common language runtime to inform the runtime security system about the permissions that your application needs or does not want. Demands and overrides are used in libraries to help protect resources from callers or to override default security behavior.
 
 > [!NOTE]
 > In the .NET Framework 4, there have been important changes to the .NET Framework security model and terminology. For more information about these changes, see [Security Changes](../../../docs/framework/security/security-changes.md).
@@ -162,5 +162,5 @@ If you want your application to perform an operation that requires accessing unm
 - [Assert](../../../docs/framework/misc/using-the-assert-method.md)
 - [Code Access Security](../../../docs/framework/misc/code-access-security.md)
 - [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)
-- [Attributes](../../../docs/standard/attributes/index.md)
-- [Metadata and Self-Describing Components](../../../docs/standard/metadata-and-self-describing-components.md)
+- [Attributes](../../standard/attributes/index.md)
+- [Metadata and Self-Describing Components](../../standard/metadata-and-self-describing-components.md)

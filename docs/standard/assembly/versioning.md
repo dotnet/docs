@@ -15,7 +15,7 @@ ms.author: "ronpet"
 All versioning of assemblies that use the common language runtime is done at the assembly level. The specific version of an assembly and the versions of dependent assemblies are recorded in the assembly's manifest. The default version policy for the runtime is that applications run only with the versions they were built and tested with, unless overridden by explicit version policy in configuration files (the application configuration file, the publisher policy file, and the computer's administrator configuration file).  
   
 > [!NOTE]
->  Versioning is done only on assemblies with strong names.  
+> Versioning is done only on assemblies with strong names.  
   
  The runtime performs several steps to resolve an assembly binding request:  
   
@@ -59,7 +59,7 @@ All versioning of assemblies that use the common language runtime is done at the
  The informational version is a string that attaches additional version information to an assembly for informational purposes only; this information is not used at run time. The text-based informational version corresponds to the product's marketing literature, packaging, or product name and is not used by the runtime. For example, an informational version could be "Common Language Runtime version 1.0" or "NET Control SP 2". On the Version tab of the file properties dialog in Microsoft Windows, this information appears in the item "Product Version".  
   
 > [!NOTE]
->  Although you can specify any text, a warning message appears on compilation if the string is not in the format used by the assembly version number, or if it is in that format but contains wildcards. This warning is harmless.  
+> Although you can specify any text, a warning message appears on compilation if the string is not in the format used by the assembly version number, or if it is in that format but contains wildcards. This warning is harmless.  
   
  The informational version is represented using the custom attribute <xref:System.Reflection.AssemblyInformationalVersionAttribute?displayProperty=nameWithType>. For more information about the informational version attribute, see [Set assembly attributes](set-attributes.md).  
   

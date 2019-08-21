@@ -23,7 +23,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
   
     - [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] as a device printer language.  
   
-    - [!INCLUDE[TLA#tla_mxdw](../../../../includes/tlasharptla-mxdw-md.md)].  
+    - Microsoft XPS Document Writer.  
   
     - Previous printer drivers, output from [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] applications to the fixed format.  
   

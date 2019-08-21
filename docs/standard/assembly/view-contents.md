@@ -75,7 +75,7 @@ End Class
 
 Running the command *ildasm.exe* on the *Hello.exe* assembly and double-clicking the **Manifest** icon in the MSIL Disassembler window produces the following output:  
 
-```cmd
+```output
 // Metadata version: v4.0.30319  
 .assembly extern mscorlib  
 {  

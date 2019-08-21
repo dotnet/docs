@@ -179,7 +179,7 @@ This article explains how to create a multifile assembly and provides code that 
    >[!NOTE]
    >The C# and Visual Basic compilers support directly creating multifile assemblies using the following two different syntaxes.
    >
-   >- Two compilations create a two-file assembly:
+   >Two compilations create a two-file assembly:
    >  
    >  # [C++](#tab/cpp)
    >  ```cmd
@@ -197,7 +197,7 @@ This article explains how to create a multifile assembly and provides code that 
    >  vbc Client.vb /addmodule:Stringer.netmodule
    >  ```
    >  ---
-   >- One compilation creates a two-file assembly:
+   >One compilation creates a two-file assembly:
    >  # [C++](#tab/cpp)
    >  ```cmd
    >  cl /clr:pure /LN Stringer.cpp

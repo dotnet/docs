@@ -1,5 +1,5 @@
 ---
-title: "Delay sign an assembly"
+title: "Delay-sign an assembly"
 ms.date: "08/19/2019"
 dev_langs: 
   - "csharp"
@@ -15,12 +15,12 @@ ms.assetid: 9d300e17-5bf1-4360-97da-2aa55efd9070
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Delay sign an assembly
+# Delay-sign an assembly
 An organization can have a closely guarded key pair that developers can't access on a daily basis. The public key is often available, but access to the private key is restricted to only a few individuals. When developing assemblies with strong names, each assembly that references the strong-named target assembly contains the token of the public key used to give the target assembly a strong name. This requires that the public key be available during the development process.  
 
 You can use delayed or partial signing at build time to reserve space in the portable executable (PE) file for the strong name signature, but defer the actual signing until some later stage, usually just before shipping the assembly.  
   
-To delay sign an assembly:  
+To delay-sign an assembly:  
   
 1. Get the public key portion of the key pair from the organization that will do the eventual signing. Typically this key is in the form of an *.snk* file, which can be created using the [Strong Name tool (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) provided by the Windows SDK.  
    
@@ -83,7 +83,7 @@ To delay sign an assembly:
   
 ## See also
 
-- [Creat assemblies](create.md)
+- [Create assemblies](create.md)
 - [How to: Create a public-private key pair](create-public-private-key-pair.md)
 - [Sn.exe (Strong Name tool)](../../framework/tools/sn-exe-strong-name-tool.md)
 - [Program with assemblies](program.md)

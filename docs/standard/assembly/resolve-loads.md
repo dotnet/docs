@@ -194,10 +194,7 @@ End Class
 'Process is terminated due to StackOverflowException.
 ```
 ---
- [!code-cpp[AssemblyResolveRecursive#1](../../../samples/snippets/cpp/VS_Snippets_CLR/assemblyresolverecursive/cpp/example.cpp#1)]
- [!code-csharp[AssemblyResolveRecursive#1](../../../samples/snippets/csharp/VS_Snippets_CLR/assemblyresolverecursive/cs/example.cs#1)]
- [!code-vb[AssemblyResolveRecursive#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/assemblyresolverecursive/vb/example.vb#1)]  
-  
+
 ## See also
 
 - [Best practices for assembly loading](../../framework/deployment/best-practices-for-assembly-loading.md)

@@ -52,9 +52,9 @@ There are four ways a developer can create a cryptography object using the Windo
 </configuration>  
 ```  
   
- You can specify the name of the attribute in the [<cryptoClass\> element](../../../docs/framework/configure-apps/file-schema/cryptography/cryptoclass-element.md) (the previous example names the attribute `MySHA1Hash`). The value of the attribute in the **\<cryptoClass>** element is a string that the common language runtime uses to find the class. You can use any string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).  
+ You can specify the name of the attribute in the [<cryptoClass\> element](./file-schema/cryptography/cryptoclass-element.md) (the previous example names the attribute `MySHA1Hash`). The value of the attribute in the **\<cryptoClass>** element is a string that the common language runtime uses to find the class. You can use any string that meets the requirements specified in [Specifying Fully Qualified Type Names](../reflection-and-codedom/specifying-fully-qualified-type-names.md).  
   
- Many algorithm names can map to the same class. The [\<nameEntry> element](../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) maps a class to one friendly algorithm name. The **name** attribute can be either a string that is used when calling the **System.Security.Cryptography.CryptoConfig.CreateFromName** method or the name of an abstract cryptography class in the <xref:System.Security.Cryptography> namespace. The value of the **class** attribute is the name of the attribute in the **\<cryptoClass>** element.  
+ Many algorithm names can map to the same class. The [\<nameEntry> element](./file-schema/cryptography/nameentry-element.md) maps a class to one friendly algorithm name. The **name** attribute can be either a string that is used when calling the **System.Security.Cryptography.CryptoConfig.CreateFromName** method or the name of an abstract cryptography class in the <xref:System.Security.Cryptography> namespace. The value of the **class** attribute is the name of the attribute in the **\<cryptoClass>** element.  
   
 > [!NOTE]
 > You can get an SHA1 algorithm by calling the <xref:System.Security.Cryptography.SHA1.Create%2A?displayProperty=nameWithType> or the **Security.CryptoConfig.CreateFromName("SHA1")** method. Each method guarantees only that it returns an object that implements the SHA1 algorithm. You do not have to map each friendly name of an algorithm to the same class in the configuration file.  
@@ -64,4 +64,4 @@ There are four ways a developer can create a cryptography object using the Windo
 ## See also
 
 - [Cryptographic Services](../../standard/security/cryptographic-services.md)
-- [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+- [Configuring Cryptography Classes](configure-cryptography-classes.md)

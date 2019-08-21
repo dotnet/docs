@@ -38,7 +38,7 @@ The .NET Framework, through configuration files, gives developers and administra
   
  As with all XML files, the syntax in configuration files is case-sensitive.  
   
- You specify configuration settings using predefined attributes, which are name/value pairs inside an element's start tag. The following example specifies two attributes (`version` and `href`) for the `<codeBase>` element, which specifies where the runtime can locate an assembly (for more information, see [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)).  
+ You specify configuration settings using predefined attributes, which are name/value pairs inside an element's start tag. The following example specifies two attributes (`version` and `href`) for the `<codeBase>` element, which specifies where the runtime can locate an assembly (for more information, see [Specifying an Assembly's Location](specify-assembly-location.md)).  
   
 ```xml  
 <codeBase version="2.0.0.0"  
@@ -53,7 +53,7 @@ The .NET Framework, through configuration files, gives developers and administra
 > [!NOTE]
 > Deploying an application using XCOPY will not copy the settings in the machine configuration file.  
   
- For more information about how the common language runtime uses the machine configuration file for assembly binding, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
+ For more information about how the common language runtime uses the machine configuration file for assembly binding, see [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md).  
   
 ## Application Configuration Files  
  An application configuration file contains settings that are specific to an app. This file includes configuration settings that the common language runtime reads (such as assembly binding policy, remoting objects, and so on), and settings that the app can read.  
@@ -66,7 +66,7 @@ The .NET Framework, through configuration files, gives developers and administra
   
      When you develop in Visual Studio, place the source configuration file for your app in the project directory and set its **Copy To Output Directory** property to **Copy always** or **Copy if newer**. The name of the configuration file is the name of the app with a .config extension. For example, an app called myApp.exe should have a source configuration file called myApp.exe.config.  
   
-     Visual Studio automatically copies the source configuration file to the directory where the compiled assembly is placed to create the output configuration file, which is deployed with the app. In some cases, Visual Studio may modify the output configuration file; for more information, see the [Redirecting assembly versions at the app level](../../../docs/framework/configure-apps/redirect-assembly-versions.md#BKMK_Redirectingassemblyversionsattheapplevel) section of the [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md) article.  
+     Visual Studio automatically copies the source configuration file to the directory where the compiled assembly is placed to create the output configuration file, which is deployed with the app. In some cases, Visual Studio may modify the output configuration file; for more information, see the [Redirecting assembly versions at the app level](redirect-assembly-versions.md#BKMK_Redirectingassemblyversionsattheapplevel) section of the [Redirecting Assembly Versions](redirect-assembly-versions.md) article.  
   
 - ASP.NET-hosted app.  
   
@@ -81,7 +81,7 @@ The .NET Framework, through configuration files, gives developers and administra
      In this tag, `location` is a URL to the configuration file. This sets the app base. The configuration file must be located on the same website as the app.  
   
 ## Security Configuration Files  
- Security configuration files contain information about the code group hierarchy and permission sets associated with a policy level. We strongly recommend that you use the [Code Access Security Policy tool (Caspol.exe)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md) to modify security policy to ensure that policy changes do not corrupt the security configuration files.  
+ Security configuration files contain information about the code group hierarchy and permission sets associated with a policy level. We strongly recommend that you use the [Code Access Security Policy tool (Caspol.exe)](../tools/caspol-exe-code-access-security-policy-tool.md) to modify security policy to ensure that policy changes do not corrupt the security configuration files.  
   
 > [!NOTE]
 > Starting with the .NET Framework 4, the security configuration files are present only if security policy has been changed.  
@@ -95,30 +95,30 @@ The .NET Framework, through configuration files, gives developers and administra
 - User policy configuration file: %USERPROFILE%\Application data\Microsoft\CLR security config\v*xx.xx*\Security.config  
   
 ## In This Section  
- [How to: Locate Assemblies by Using DEVPATH](../../../docs/framework/configure-apps/how-to-locate-assemblies-by-using-devpath.md)  
+ [How to: Locate Assemblies by Using DEVPATH](how-to-locate-assemblies-by-using-devpath.md)  
  Describes how to direct the runtime to use the DEVPATH environment variable when searching for assemblies.  
   
- [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)  
+ [Redirecting Assembly Versions](redirect-assembly-versions.md)  
  Describes how to specify the location of an assembly and which version of an assembly to use.  
   
- [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)  
+ [Specifying an Assembly's Location](specify-assembly-location.md)  
  Describes how to specify where the runtime should search for an assembly.  
   
- [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)  
+ [Configuring Cryptography Classes](configure-cryptography-classes.md)  
  Describes how to map an algorithm name to a cryptography class and an object identifier to a cryptography algorithm.  
   
- [How to: Create a Publisher Policy](../../../docs/framework/configure-apps/how-to-create-a-publisher-policy.md)  
+ [How to: Create a Publisher Policy](how-to-create-a-publisher-policy.md)  
  Describes when and how you should add a publisher policy file to specify assembly redirection and code base settings.  
   
- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
+ [Configuration File Schema](./file-schema/index.md)  
  Describes the schema hierarchy for startup, runtime, network, and other types of configuration settings.  
   
 ## See also
 
-- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
-- [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)
-- [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [Configuration File Schema](./file-schema/index.md)
+- [Specifying an Assembly's Location](specify-assembly-location.md)
+- [Redirecting Assembly Versions](redirect-assembly-versions.md)
 - [ASP.NET Web Site Administration](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/6hy1xzbw(v=vs.90))
 - [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))
-- [Caspol.exe (Code Access Security Policy Tool)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)
-- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Caspol.exe (Code Access Security Policy Tool)](../tools/caspol-exe-code-access-security-policy-tool.md)
+- [Assemblies in the Common Language Runtime](../app-domains/assemblies-in-the-common-language-runtime.md)

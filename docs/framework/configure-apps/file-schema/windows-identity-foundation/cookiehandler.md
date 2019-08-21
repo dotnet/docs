@@ -49,14 +49,14 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<chunkedCookieHandler>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/chunkedcookiehandler.md)|Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Default" or "Chunked".|  
-|[\<customCookieHandler>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/customcookiehandler.md)|Sets the custom cookie handler type. This element must be present if the `mode` attribute of the `<cookieHandler>` element is "Custom". It cannot be present for any other values of the `mode` attribute. The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.|  
+|[\<chunkedCookieHandler>](chunkedcookiehandler.md)|Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Default" or "Chunked".|  
+|[\<customCookieHandler>](customcookiehandler.md)|Sets the custom cookie handler type. This element must be present if the `mode` attribute of the `<cookieHandler>` element is "Custom". It cannot be present for any other values of the `mode` attribute. The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<federationConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
+|[\<federationConfiguration>](federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
   
 ## Remarks  
  The <xref:System.IdentityModel.Services.CookieHandler> is responsible for reading and writing raw cookies at the HTTP protocol level. You can configure either a <xref:System.IdentityModel.Services.ChunkedCookieHandler> or a custom cookie handler derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  

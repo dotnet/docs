@@ -43,7 +43,7 @@ Specifies configuration settings that are used by ASP.NET to manage process-wide
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.web>](../../../../../docs/framework/configure-apps/file-schema/web/system-web-element-web-settings.md)|Contains information about how ASP.NET interacts with a host application.|  
+|[\<system.web>](system-web-element-web-settings.md)|Contains information about how ASP.NET interacts with a host application.|  
   
 ## Remarks  
  When you run IIS 7.0 or a later version in Integrated mode, this element combination lets you configure how ASP.NET manages threads and queues requests when the application is hosted in an IIS application pool. If you run IIS 6 or you run IIS 7.0 in Classic mode or in ISAPI mode, these settings are ignored.  
@@ -90,4 +90,4 @@ Specifies configuration settings that are used by ASP.NET to manage process-wide
   
 ## See also
 
-- [\<system.web> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/system-web-element-web-settings.md)
+- [\<system.web> Element (Web Settings)](system-web-element-web-settings.md)

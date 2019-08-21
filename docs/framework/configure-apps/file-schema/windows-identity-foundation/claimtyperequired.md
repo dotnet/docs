@@ -32,10 +32,10 @@ Specifies the set of required claims for incoming security tokens.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<claimType>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/claimtype.md)|Specifies a single optional or required claim for incoming security tokens.|  
+|[\<claimType>](claimtype.md)|Specifies a single optional or required claim for incoming security tokens.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)|Specifies service-level identity settings.|
+|[\<identityConfiguration>](identityconfiguration.md)|Specifies service-level identity settings.|

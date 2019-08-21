@@ -51,7 +51,7 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
 3. In the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event handler, invoke the <xref:System.Windows.Forms.Form.Show%2A> method to open another form in the project, and set the <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> property to `true`.  
   
     > [!NOTE]
-    >  An instance of the <xref:System.Windows.Forms.LinkLabelLinkClickedEventArgs> class carries a reference to the <xref:System.Windows.Forms.LinkLabel> control that was clicked, so there is no need to cast the `sender` object.  
+    > An instance of the <xref:System.Windows.Forms.LinkLabelLinkClickedEventArgs> class carries a reference to the <xref:System.Windows.Forms.LinkLabel> control that was clicked, so there is no need to cast the `sender` object.  
   
     ```vb  
     Protected Sub LinkLabel1_LinkClicked(ByVal Sender As System.Object, _  

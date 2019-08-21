@@ -11,7 +11,7 @@ api_type:
 ms.assetid: 6b44b13c-7a23-4df2-8f9f-45e2b1430002
 ---
 # Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor
-Creates an instance of the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  
+Creates an instance of the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  
   
 ## Syntax  
   
@@ -36,4 +36,4 @@ public ClientActivityBuilder(OperationDescription operationDescription, string c
   
 ## See also
 
-- [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md)
+- [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](microsoft-visualstudio-activities-asr-clientactivitybuilder.md)

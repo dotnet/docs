@@ -52,7 +52,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
 2. Press F5 to debug your application.  
   
     > [!NOTE]
-    >  You can eliminate the SQL code in the Console window by commenting out `db.Log = Console.Out;`.  
+    > You can eliminate the SQL code in the Console window by commenting out `db.Log = Console.Out;`.  
   
 3. Press Enter in the Console window to stop debugging.  
   

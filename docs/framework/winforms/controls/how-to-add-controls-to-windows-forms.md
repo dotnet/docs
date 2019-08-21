@@ -24,7 +24,7 @@ Most forms are designed by adding controls to the surface of the form to define 
      The control is added to the form with the specified location and size.
 
     > [!NOTE]
-    >  Each control has a default size defined. You can add a control to your form in the control's default size by dragging it from the **Toolbox** to the form.
+    > Each control has a default size defined. You can add a control to your form in the control's default size by dragging it from the **Toolbox** to the form.
 
 ## To drag a control to a form
 
@@ -35,12 +35,12 @@ Most forms are designed by adding controls to the surface of the form to define 
      The control is added to the form at the specified location in its default size.
 
     > [!NOTE]
-    >  You can double-click a control in the **Toolbox** to add it to the upper-left corner of the form in its default size.
+    > You can double-click a control in the **Toolbox** to add it to the upper-left corner of the form in its default size.
 
      You can also add controls dynamically to a form at run time. In the following code example, a <xref:System.Windows.Forms.TextBox> control will be added to the form when a <xref:System.Windows.Forms.Button> control is clicked.
 
     > [!NOTE]
-    >  The following procedure requires the existence of a form with a **Button** control, `Button1`, already placed on it.
+    > The following procedure requires the existence of a form with a **Button** control, `Button1`, already placed on it.
 
 ## To add a control to a form programmatically
 
@@ -75,7 +75,7 @@ Most forms are designed by adding controls to the surface of the form to define 
     ```
 
     > [!NOTE]
-    >  You can also add code to initialize other properties of the control.
+    > You can also add code to initialize other properties of the control.
 
     > [!IMPORTANT]
     >  You might expose your local computer to a security risk through the network by referencing a malicious `UserControl`. This would only be a concern in the case of a malicious person creating a damaging custom control, followed by you mistakenly adding it to your project.

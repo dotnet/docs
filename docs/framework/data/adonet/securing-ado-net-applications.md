@@ -33,7 +33,7 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  [Security Considerations](../../../../docs/framework/data/adonet/ef/security-considerations.md)  
  Describes security for Entity Framework applications.  
   
- [Security](../../../../docs/standard/security/index.md)  
+ [Security](../../../standard/security/index.md)  
  Contains links to topics describing all aspects of security in .NET.  
   
  [Security Tools](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  

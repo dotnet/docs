@@ -27,7 +27,7 @@ This topic describes activity tracing for security processing, which happens in 
 |Secure Message Layer<br /><br /> (WSHTTP)|On first message received.|On the client:<br /><br /> -   "Setup Secure Session" out of "Process Action" of that first message, for each request/reply for RST/RSTR/SCT.<br />-   "Close Secure Session" for the CANCEL exchange, out of the "Close Proxy activity." This activity may happen out of some other ambient activity, depending on when the secure session is closed.<br /><br /> On the server:<br /><br /> -   One "Process Action" activity for each request/reply for RST/SCT/Cancel on the server. If `propagateActivity`=`true`, RST/RSTR/SCT activities are merged with "Set up Security Session", and Cancel is merged with the "Close" activity from the client.<br /><br /> There are two stages for "Set up Secure Session":<br /><br /> 1.  Authentication negotiation. This is optional if the client already has the proper credentials. This phase can be done through secure transport, or through message exchanges. In the latter case, 1 or 2 RST/RSTR exchanges can happen. For these exchanges, traces are emitted in new request/reply activities as previously designed.<br />2.  Secure session establishment (SCT), in which one RST/RSTR exchange happens here. This has the same ambient activities as described previously.|-   Exchange traces<br />-   Secure channel established<br />-   Share secrets obtained.|  
   
 > [!NOTE]
->  In mixed security mode, negotiation authentication happens in binary exchanges, but SCT happens in message exchange. In pure transport mode, negotiation happens only in transport with no additional activities.  
+> In mixed security mode, negotiation authentication happens in binary exchanges, but SCT happens in message exchange. In pure transport mode, negotiation happens only in transport with no additional activities.  
   
 ## Message Encryption and Decryption  
  The following table lists the activities and traces for message encryption/decryption, as well as signature authentication.  
@@ -39,7 +39,7 @@ This topic describes activity tracing for security processing, which happens in 
 |Traces|-   sendSecurityHeader (sender):<br />-   Sign message<br />-   Encrypt request data<br />-   receiveSecurityHeader (receiver):<br />-   Verify signature<br />-   Decrypt response data<br />-   Authentication|  
   
 > [!NOTE]
->  In pure transport mode, message encryption/decryption happens only in transport with no additional activities.  
+> In pure transport mode, message encryption/decryption happens only in transport with no additional activities.  
   
 ## Authorization and Verification  
  The following table lists the activities and traces for authorization.  

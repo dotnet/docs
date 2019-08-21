@@ -9,7 +9,7 @@ Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xre
  For code examples, see <xref:System.Data.Linq.Mapping.ColumnAttribute.Expression%2A>.  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support computed columns as primary keys.  
+> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support computed columns as primary keys.  
   
 ### To represent a computed column  
   

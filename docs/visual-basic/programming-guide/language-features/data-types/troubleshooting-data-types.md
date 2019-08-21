@@ -93,7 +93,7 @@ This page lists some common problems that can occur when you perform operations 
  When the type checking switch ([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)) is `On`, the compiler disallows all implicit narrowing conversions. This includes those involving `String`. Your code can still use conversion keywords such as `CStr` and [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), which direct the .NET Framework to attempt the conversion.  
   
 > [!NOTE]
->  The narrowing-conversion error is suppressed for conversions from the elements in a `For Each…Next` collection to the loop control variable. For more information and examples, see the "Narrowing Conversions" section in [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md).  
+> The narrowing-conversion error is suppressed for conversions from the elements in a `For Each…Next` collection to the loop control variable. For more information and examples, see the "Narrowing Conversions" section in [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md).  
   
 ### Narrowing Conversion Protection  
  The disadvantage of narrowing conversions is that they can fail at run time. For example, if a `String` variable contains anything other than "True" or "False," it cannot be converted to `Boolean`. If it contains punctuation characters, conversion to any numeric type fails. Unless you know that your `String` variable always holds values that the destination type can accept, you should not try a conversion.  

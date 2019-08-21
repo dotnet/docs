@@ -23,7 +23,7 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
 - Use the <xref:System.Security.Cryptography.RSACryptoServiceProvider>, an asymmetric algorithm, to encrypt and decrypt the key to the data encrypted by <xref:System.Security.Cryptography.RijndaelManaged>. Asymmetric algorithms are best used for smaller amounts of data, such as a key.  
   
     > [!NOTE]
-    >  If you want to protect data on your computer instead of exchanging encrypted content with other people, consider using the <xref:System.Security.Cryptography.ProtectedData> or <xref:System.Security.Cryptography.ProtectedMemory> classes.  
+    > If you want to protect data on your computer instead of exchanging encrypted content with other people, consider using the <xref:System.Security.Cryptography.ProtectedData> or <xref:System.Security.Cryptography.ProtectedMemory> classes.  
   
  The following table summarizes the cryptographic tasks in this topic.  
   

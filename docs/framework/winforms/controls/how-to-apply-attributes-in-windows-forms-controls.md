@@ -22,7 +22,7 @@ To develop components and controls that interact correctly with the design envir
  [!code-vb[System.ComponentModel.AttributesDemoControl#110](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/form1.vb#110)]  
   
 > [!NOTE]
->  Because `LogEntry` is parameterized by an arbitrary type, it must use reflection to operate on the parameter type. For the threshold feature to work, the parameter type `T` must implement the <xref:System.IComparable> interface.  
+> Because `LogEntry` is parameterized by an arbitrary type, it must use reflection to operate on the parameter type. For the threshold feature to work, the parameter type `T` must implement the <xref:System.IComparable> interface.  
   
  The form that hosts the `AttributesDemoControl` queries a performance counter periodically. Each value is packaged in a `LogEntry` of the appropriate type and added to the form's <xref:System.Windows.Forms.BindingSource>. The `AttributesDemoControl` receives the value through its data binding and displays the value in a <xref:System.Windows.Forms.DataGridView> control.  
   

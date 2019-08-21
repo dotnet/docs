@@ -7,7 +7,7 @@ ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
 This sample demonstrates how to use a custom behavior to validate services on a computer to ensure they meet specific criteria. In this sample, services are validated by the custom behavior by scanning through each endpoint on the service and checking to see whether they contain secure binding elements. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 ## Endpoint Validation Custom Behavior  
  By adding user code to the `Validate` method contained in the <xref:System.ServiceModel.Description.IServiceBehavior> interface, custom behavior can be given to a service or endpoint to perform user-defined actions. The following code is used to loop through each endpoint contained in a service, which searches through their binding collections for secure bindings.  
@@ -69,7 +69,7 @@ public void Validate(ServiceDescription serviceDescription,
  Behaviors and their extensions that are added to the Web.config file apply behavior to individual services, while when added to the Machine.config file apply behavior to every service active on the computer.  
   
 > [!NOTE]
->  When adding behavior to all services, it is suggested to backup the Machine.config file before making any change.  
+> When adding behavior to all services, it is suggested to backup the Machine.config file before making any change.  
   
  Now run the client provided in the client\bin directory of this sample. An exception has occurs with the following message: "The requested service, 'http://localhost/servicemodelsamples/service.svc' could not be activated." This is expected because an endpoint is considered insecure by the endpoint validating behavior and prevents the service from being started. The behavior also throws an internal exception that describes which endpoint is insecure and writes a message to the system Event Viewer under the "System.ServiceModel 4.0.0.0" source and the "WebHost" category. It is also possible to turn on tracing on the service in this sample. This allows the user to view the exceptions thrown by endpoint validating behavior by opening the resulting service traces using the Service Trace Viewer tool.  
   

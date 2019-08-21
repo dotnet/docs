@@ -7,7 +7,7 @@ ms.assetid: 27442435-dfb2-4062-8c59-e2960833a638
 Application roles provide a way to assign permissions to an application instead of a database role or user. Users can connect to the database, activate the application role, and assume the permissions granted to the application. The permissions granted to the application role are in force for the duration of the connection.  
   
 > [!IMPORTANT]
->  Application roles are activated when a client application supplies an application role name and a password in the connection string. They present a security vulnerability in a two-tier application because the password must be stored on the client computer. In a three-tier application, you can store the password so that it cannot be accessed by users of the application.  
+> Application roles are activated when a client application supplies an application role name and a password in the connection string. They present a security vulnerability in a two-tier application because the password must be stored on the client computer. In a three-tier application, you can store the password so that it cannot be accessed by users of the application.  
   
 ## Application Role Features  
  Application roles have the following features:  

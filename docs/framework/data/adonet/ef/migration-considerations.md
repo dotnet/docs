@@ -23,7 +23,7 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
  The path to migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] depends both on the type of application and on the existing data access strategy. However, you must always perform the following tasks when you migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
   
 > [!NOTE]
->  All of these tasks are performed automatically when you use the Entity Data Model tools starting with Visual Studio 2008. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
+> All of these tasks are performed automatically when you use the Entity Data Model tools starting with Visual Studio 2008. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
   
 1. Upgrade the application.  
   
@@ -36,7 +36,7 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
      Types that are defined in the storage model must match the name of objects in the data source. If the existing application exposes data as objects, you must ensure that the entities and properties that are defined in the conceptual model match the names of these existing data classes and properties. For more information, see [How to: Customize Modeling and Mapping Files to Work with Custom Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738625(v=vs.100)).  
   
     > [!NOTE]
-    >  The Entity Data Model Designer can be used to rename entities in the conceptual model to match existing objects. For more information, see [Entity Data Model Designer](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)).  
+    > The Entity Data Model Designer can be used to rename entities in the conceptual model to match existing objects. For more information, see [Entity Data Model Designer](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)).  
   
 3. Define the connection string.  
   

@@ -28,7 +28,7 @@ public class MyClass {}
  To refer to XML elements (for example, your function processes specific XML elements that you want to describe in an XML documentation comment), you can use the standard quoting mechanism (`<` and `>`).  To refer to generic identifiers in code reference (`cref`) elements, you can use either the escape characters (for example, `cref="List&lt;T&gt;"`) or braces (`cref="List{T}"`).  As a special case, the compiler parses the braces as angle brackets to make the documentation comment less cumbersome to author when referring to generic identifiers.  
   
 > [!NOTE]
->  The XML documentation comments are not metadata; they are not included in the compiled assembly and therefore they are not accessible through reflection.  
+> The XML documentation comments are not metadata; they are not included in the compiled assembly and therefore they are not accessible through reflection.  
   
 ## In This Section  
   

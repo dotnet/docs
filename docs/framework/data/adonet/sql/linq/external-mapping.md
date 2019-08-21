@@ -29,7 +29,7 @@ ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
  Distinguish this schema definition file from the schema definition file that is used to validate a DBML file. For more information, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)).  
   
 > [!NOTE]
->  Visual Studio users will also find this XSD file in the XML Schemas dialog box as "LinqToSqlMapping.xsd". To use this file correctly for validating an external mapping file, see [How to: Validate DBML and External Mapping Files](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md).  
+> Visual Studio users will also find this XSD file in the XML Schemas dialog box as "LinqToSqlMapping.xsd". To use this file correctly for validating an external mapping file, see [How to: Validate DBML and External Mapping Files](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md).  
   
 ```  
 ?<?xml version="1.0" encoding="utf-16"?>  

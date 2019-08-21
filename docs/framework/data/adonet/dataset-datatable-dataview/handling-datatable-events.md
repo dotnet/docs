@@ -24,7 +24,7 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
 |<xref:System.ComponentModel.MarshalByValueComponent.Disposed>|Occurs when the `DataTable` is `Disposed`. Inherited from <xref:System.ComponentModel.MarshalByValueComponent>.|  
   
 > [!NOTE]
->  Most operations that add or delete rows do not raise the `ColumnChanged` and `ColumnChanging` events. However, the `ReadXml` method does raise `ColumnChanged` and `ColumnChanging` events, unless the `XmlReadMode` is set to `DiffGram` or is set to `Auto` when the XML document being read is a `DiffGram`.  
+> Most operations that add or delete rows do not raise the `ColumnChanged` and `ColumnChanging` events. However, the `ReadXml` method does raise `ColumnChanged` and `ColumnChanging` events, unless the `XmlReadMode` is set to `DiffGram` or is set to `Auto` when the XML document being read is a `DiffGram`.  
   
 > [!WARNING]
 >  Data corruption can occur if data is modified in a `DataSet` from which the `RowChanged` event is raised. No exception will be raised if such data corruption occurs.  
@@ -62,7 +62,7 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
 10. Check constraints on expression columns.  
   
 > [!NOTE]
->  Changes to expression columns never raise `DataTable` events. Changes to expression columns only raise `DataView` and `DataRowView` events. Expression columns can have dependencies on multiple other columns, and can be evaluated multiple times during a single `DataRow` operation. Each expression evaluation raises events, and a single `DataRow` operation can raise multiple `ListChanged` and `PropertyChanged` events when expression columns are affected, possibly including multiple events for the same expression column.  
+> Changes to expression columns never raise `DataTable` events. Changes to expression columns only raise `DataView` and `DataRowView` events. Expression columns can have dependencies on multiple other columns, and can be evaluated multiple times during a single `DataRow` operation. Each expression evaluation raises events, and a single `DataRow` operation can raise multiple `ListChanged` and `PropertyChanged` events when expression columns are affected, possibly including multiple events for the same expression column.  
   
 > [!WARNING]
 >  Do not throw a <xref:System.NullReferenceException> within the `RowChanged` event handler. If a <xref:System.NullReferenceException> is thrown within the `RowChanged` event of a `DataTable`, then the `DataTable` will be corrupted.  

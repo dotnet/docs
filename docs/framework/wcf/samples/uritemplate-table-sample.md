@@ -21,7 +21,7 @@ The <xref:System.UriTemplateTable> class provides a dictionary-like associative 
 2. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   

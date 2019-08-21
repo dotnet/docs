@@ -634,6 +634,6 @@ In the .NET Framework version 2.0, the only interaction with the native image se
 ## See also
 
 - [Tools](../../../docs/framework/tools/index.md)
-- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)
+- [Managed Execution Process](../../standard/managed-execution-process.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

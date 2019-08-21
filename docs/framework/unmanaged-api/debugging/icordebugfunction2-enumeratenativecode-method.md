@@ -22,7 +22,7 @@ ms.author: "ronpet"
 Gets an interface pointer to an ICorDebugCodeEnum object that contains the native code statements in the function referenced by this ICorDebugFunction2 object.  
   
 > [!NOTE]
->  `EnumerateNativeCode` is not implemented in the current version of the .NET Framework.  
+> `EnumerateNativeCode` is not implemented in the current version of the .NET Framework.  
   
 ## Syntax  
   

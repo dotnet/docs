@@ -85,7 +85,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
  ![Screenshot showing IntelliSense quick info for the ExampleMethod method.](./media/named-and-optional-arguments/optional-examplemethod-parameters.png)  
   
 > [!NOTE]
->  You can also declare optional parameters by using the .NET <xref:System.Runtime.InteropServices.OptionalAttribute> class. `OptionalAttribute` parameters do not require a default value.  
+> You can also declare optional parameters by using the .NET <xref:System.Runtime.InteropServices.OptionalAttribute> class. `OptionalAttribute` parameters do not require a default value.  
   
 ## Example  
  In the following example, the constructor for `ExampleClass` has one parameter, which is optional. Instance method `ExampleMethod` has one required parameter, `required`, and two optional parameters, `optionalstr` and `optionalint`. The code in `Main` shows the different ways in which the constructor and method can be invoked.  

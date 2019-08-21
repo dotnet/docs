@@ -7,7 +7,7 @@ ms.assetid: 98dd0af8-fce6-4255-ac32-42eb547eea67
 This sample demonstrates how to replace the message filters that Windows Communication Foundation (WCF) uses to dispatch messages to endpoints.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  When the first message on a channel arrives at the server, the server must determine which (if any) of the endpoints associated with that URI should receive the message. This process is controlled by the <xref:System.ServiceModel.Dispatcher.MessageFilter> objects attached to the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher>.  
   

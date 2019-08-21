@@ -13,7 +13,7 @@ A *model-defined function* is a function that is defined in a conceptual model. 
 - The type of the return value. (Optional)  
   
     > [!NOTE]
-    >  If no return type is specified, the return value is void.  
+    > If no return type is specified, the return value is void.  
   
 - Parameter information. (Optional)  
   

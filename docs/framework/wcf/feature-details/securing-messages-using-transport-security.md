@@ -7,7 +7,7 @@ ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8
 This section discusses Message Queuing (MSMQ) transport security that you can use to secure messages sent to a queue.  
   
 > [!NOTE]
->  Before reading through this topic, it is recommended that you read [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md).  
+> Before reading through this topic, it is recommended that you read [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md).  
   
  The following illustration provides a conceptual model of queued communication using Windows Communication Foundation (WCF). This illustration and terminology is used to explain transport security concepts.  
   
@@ -47,7 +47,7 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
  The choice of using Windows security requires Active Directory integration. <xref:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain> is the default transport security mode. When this is set, the WCF channel attaches the Windows SID to the MSMQ message and uses its internal certificate obtained from Active Directory. MSMQ uses this internal certificate to secure the message. The receiving queue manager uses Active Directory to search and find a matching certificate to authenticate the client and checks that the SID also matches that of the client. This authentication step is executed if a certificate, either internally generated in the case of `WindowsDomain` authentication mode or externally generated in the case of `Certificate` authentication mode, is attached to the message even if the target queue is not marked as requiring authentication.  
   
 > [!NOTE]
->  When creating a queue, you can mark the queue as an authenticated queue to indicate that the queue requires authentication of the client sending messages to the queue. This ensures that no unauthenticated messages are accepted in the queue.  
+> When creating a queue, you can mark the queue as an authenticated queue to indicate that the queue requires authentication of the client sending messages to the queue. This ensures that no unauthenticated messages are accepted in the queue.  
   
  The SID attached with the message is also used to check against the target queue's ACL to ensure that the client has the authority to send messages to the queue.  
   
@@ -70,13 +70,13 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
  In addition to signing the message, the MSMQ message is encrypted using the public key of the certificate obtained from Active Directory that belongs to the receiving queue manager that hosts the target queue. The sending queue manager ensures that the MSMQ message is encrypted in transit. The receiving queue manager decrypts the MSMQ message using the private key of its internal certificate and stores the message in the queue (if authenticated and authorized) in clear text.  
   
 > [!NOTE]
->  To encrypt the message, Active Directory access is required (`UseActiveDirectory` property of <xref:System.ServiceModel.NetMsmqBinding> must be set to `true`) and can be used with both <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate> and <xref:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain>.  
+> To encrypt the message, Active Directory access is required (`UseActiveDirectory` property of <xref:System.ServiceModel.NetMsmqBinding> must be set to `true`) and can be used with both <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate> and <xref:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain>.  
   
 #### None Protection Level  
  This is implied when <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> is set to <xref:System.Net.Security.ProtectionLevel.None>. This cannot be a valid value for any other authentication modes.  
   
 > [!NOTE]
->  If the MSMQ message is signed, MSMQ checks whether the message is signed with the attached certificate (internal or external) independent of the state of the queue, that is, authenticated queue or not.  
+> If the MSMQ message is signed, MSMQ checks whether the message is signed with the attached certificate (internal or external) independent of the state of the queue, that is, authenticated queue or not.  
   
 ### MSMQ Encryption Algorithm  
  The encryption algorithm specifies the algorithm to use to encrypt the MSMQ message on the wire. This property is used only if <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> is set to <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  

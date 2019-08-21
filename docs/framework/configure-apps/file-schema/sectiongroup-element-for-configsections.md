@@ -15,8 +15,8 @@ ms.author: "mairaw"
 
 Defines a namespace for configuration sections.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)   
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<sectionGroup>**
 
 ## Syntax
@@ -37,13 +37,13 @@ Defines a namespace for configuration sections.
 
 |     | Description |
 | --- | ----------- |
-| [**\<configSections>** Element](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| [**\<configSections>** Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
 ## Child elements
 
 |     | Description |
 | --- | ----------- |
-| [**\<section>**](~/docs/framework/configure-apps/file-schema/section-element.md) | Contains a configuration section declaration. |
+| [**\<section>**](section-element.md) | Contains a configuration section declaration. |
 
 ## Remarks
 
@@ -75,4 +75,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](index.md)

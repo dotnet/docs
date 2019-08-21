@@ -51,7 +51,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
      Change the value of the `customlocation` attribute to the log directory.  
   
     > [!NOTE]
-    >  To set the value of a listener property, use an attribute that has the same name as the property, with all letters in the name lowercase. For example, the `location` and `customlocation` attributes set the values of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> and <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> properties.  
+    > To set the value of a listener property, use an attribute that has the same name as the property, with all letters in the name lowercase. For example, the `location` and `customlocation` attributes set the values of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> and <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> properties.  
   
 ### To write event information to the file log  
   

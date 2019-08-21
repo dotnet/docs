@@ -31,12 +31,12 @@ A DiffGram is an XML format that identifies current and original versions of dat
 2. Process the second or the **\<before>** section that contains the original row version of modified and deleted rows.  
   
     > [!NOTE]
-    >  If a row is marked deleted, the delete operation can delete the row's descendants as well, depending on the `Cascade` property of the current <xref:System.Data.DataSet>.  
+    > If a row is marked deleted, the delete operation can delete the row's descendants as well, depending on the `Cascade` property of the current <xref:System.Data.DataSet>.  
   
 3. Process the **\<errors>** section. Set the error information for the specified row and column for each item in this section.  
   
 > [!NOTE]
->  If you set the <xref:System.Data.XmlWriteMode> to Diffgram, the content of the target <xref:System.Data.DataSet> and the original <xref:System.Data.DataSet> may differ.  
+> If you set the <xref:System.Data.XmlWriteMode> to Diffgram, the content of the target <xref:System.Data.DataSet> and the original <xref:System.Data.DataSet> may differ.  
   
 ## DiffGram Format  
  The DiffGram format is divided into three sections: the current data, the original (or "before") data, and an errors section, as shown in the following example.  

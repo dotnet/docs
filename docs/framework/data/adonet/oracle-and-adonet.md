@@ -8,7 +8,7 @@ ms.assetid: 8ee8e389-53cf-45cf-80bd-1df63ef34f2e
 ---
 # Oracle and ADO.NET
 > [!NOTE]
->  The types in <xref:System.Data.OracleClient> are deprecated. The types remain supported in the current version of.NET Framework but will be removed in a future release. Microsoft recommends that you use a third-party Oracle provider.  
+> The types in <xref:System.Data.OracleClient> are deprecated. The types remain supported in the current version of.NET Framework but will be removed in a future release. Microsoft recommends that you use a third-party Oracle provider.  
   
  This section describes features and behaviors that are specific to the .NET Framework Data Provider for Oracle.  
   

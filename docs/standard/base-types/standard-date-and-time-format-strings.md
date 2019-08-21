@@ -73,7 +73,7 @@ Standard date and time format strings can be used with both <xref:System.DateTim
      [!code-vb[System.DateTime.Conceptual.Formatting#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Conceptual.Formatting/vb/StandardFormats1.vb#3)]  
   
 > [!NOTE]
->  For information about customizing the patterns or strings used in formatting date and time values, see the <xref:System.Globalization.NumberFormatInfo> class topic.  
+> For information about customizing the patterns or strings used in formatting date and time values, see the <xref:System.Globalization.NumberFormatInfo> class topic.  
   
  In some cases, the standard format string serves as a convenient abbreviation for a longer custom format string that is invariant. Four standard format strings fall into this category: "O" (or "o"), "R" (or "r"), "s", and "u". These strings correspond to custom format strings defined by the invariant culture. They produce string representations of date and time values that are intended to be identical across cultures. The following table provides information on these four standard date and time format strings.  
   

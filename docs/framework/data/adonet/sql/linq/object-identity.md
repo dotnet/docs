@@ -20,7 +20,7 @@ Objects in the runtime have unique identities. Two variables that refer to the s
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] uses this approach to manage the integrity of local objects in order to support optimistic updates. Because the only changes that occur after the object is at first created are those made by the application, the intent of the application is clear. If changes by an outside party have occurred in the interim, they are identified at the time `SubmitChanges()` is called.  
   
 > [!NOTE]
->  If the object requested by the query is easily identifiable as one already retrieved, no query is executed. The identity table acts as a cache of all previously retrieved objects.  
+> If the object requested by the query is easily identifiable as one already retrieved, no query is executed. The identity table acts as a cache of all previously retrieved objects.  
   
 ## Examples  
   

@@ -12,7 +12,7 @@ The Concurrency sample demonstrates using the <xref:System.ServiceModel.ServiceB
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  There are three concurrency modes available:  
   

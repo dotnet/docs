@@ -22,7 +22,7 @@ This example shows how to add XML documentation comments to your code.
 3. Add descriptive information between the appropriate tags.  
   
     > [!NOTE]
-    >  If you add additional lines within the XML documentation block, each line must begin with `'''`.  
+    > If you add additional lines within the XML documentation block, each line must begin with `'''`.  
   
 4. Add additional code that uses the type or member with the new XML documentation comments.  
   

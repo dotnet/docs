@@ -13,7 +13,7 @@ An *association type* (also called an association) is the fundamental building b
 - Two [association ends](../../../../docs/framework/data/adonet/association-end.md), one for each entity type in the relationship. (Required)  
   
     > [!NOTE]
-    >  An association cannot represent a relationship among more than two entity types. An association can, however, define a self-relationship by specifying the same entity type for each of its association ends.  
+    > An association cannot represent a relationship among more than two entity types. An association can, however, define a self-relationship by specifying the same entity type for each of its association ends.  
   
 - A [referential integrity constraint](../../../../docs/framework/data/adonet/referential-integrity-constraint.md). (Optional)  
   

@@ -48,7 +48,7 @@ HRESULT SuspensionEnding (
  The CLR calls `SuspensionEnding` after it performs a garbage collection, to inform the host that the thread is resuming execution.  
   
 > [!IMPORTANT]
->  Do not reschedule the thread the method call was made from.  
+> Do not reschedule the thread the method call was made from.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

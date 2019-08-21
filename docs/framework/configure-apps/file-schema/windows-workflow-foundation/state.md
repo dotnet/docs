@@ -7,7 +7,7 @@ ms.assetid: 619414f2-61c2-4427-9977-d05009e343db
 # \<state>
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  
   
- For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
+ For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  
   
 \<system.serviceModel>  
 \<tracking>  
@@ -52,7 +52,7 @@ Represents a collection of subscribed states from the tracked workflow instance 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<states>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/states.md)|A collection of subscribed states from the tracked workflow instance when the tracking records are created.|  
+|[\<states>](states.md)|A collection of subscribed states from the tracked workflow instance when the tracking records are created.|  
   
 ## Remarks  
  The returned records are filtered by the states in this collection.  
@@ -93,5 +93,5 @@ Represents a collection of subscribed states from the tracked workflow instance 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
-- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
-- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+- [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)

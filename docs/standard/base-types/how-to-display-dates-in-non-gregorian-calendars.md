@@ -33,7 +33,7 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
 4. Assign the calendar object to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property.  
   
     > [!NOTE]
-    >  The <xref:System.Globalization.CultureInfo> class also has a <xref:System.Globalization.CultureInfo.Calendar%2A> property. However, it is read-only and constant; it does not change to reflect the new default calendar assigned to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property.  
+    > The <xref:System.Globalization.CultureInfo> class also has a <xref:System.Globalization.CultureInfo.Calendar%2A> property. However, it is read-only and constant; it does not change to reflect the new default calendar assigned to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property.  
   
 5. Call either the <xref:System.DateTime.ToString%2A> or the <xref:System.DateTime.ToString%2A> method, and pass it the <xref:System.Globalization.CultureInfo> object whose default calendar was modified in the previous step.  
   

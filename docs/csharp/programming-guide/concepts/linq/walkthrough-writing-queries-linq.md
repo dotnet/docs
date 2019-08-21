@@ -14,7 +14,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
 ## Create a C# Project  
   
 > [!NOTE]
->  The following instructions are for Visual Studio. If you are using a different development environment, create a console project with a reference to System.Core.dll and a `using` directive for the <xref:System.Linq?displayProperty=nameWithType> namespace.  
+> The following instructions are for Visual Studio. If you are using a different development environment, create a console project with a reference to System.Core.dll and a `using` directive for the <xref:System.Linq?displayProperty=nameWithType> namespace.  
   
 #### To create a project in Visual Studio  
   

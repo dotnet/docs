@@ -14,7 +14,7 @@ In a multiuser environment, there are two models for updating data in a database
  Therefore, in a pessimistic concurrency model, a user who updates a row establishes a lock. Until the user has finished the update and released the lock, no one else can change that row. For this reason, pessimistic concurrency is best implemented when lock times will be short, as in programmatic processing of records. Pessimistic concurrency is not a scalable option when users are interacting with data and causing records to be locked for relatively large periods of time.  
   
 > [!NOTE]
->  If you need to update multiple rows in the same operation, then creating a transaction is a more scalable option than using pessimistic locking.  
+> If you need to update multiple rows in the same operation, then creating a transaction is a more scalable option than using pessimistic locking.  
   
  By contrast, users who use optimistic concurrency do not lock a row when reading it. When a user wants to update a row, the application must determine whether another user has changed the row since it was read. Optimistic concurrency is generally used in environments with a low contention for data. Optimistic concurrency improves performance because no locking of records is required, and locking of records requires additional server resources. Also, in order to maintain record locks, a persistent connection to the database server is required. Because this is not the case in an optimistic concurrency model, connections to the server are free to serve a larger number of clients in less time.  
   

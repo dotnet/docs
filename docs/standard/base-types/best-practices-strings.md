@@ -179,7 +179,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
  Strings in .NET can contain embedded null characters. One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string. These characters are ignored when you use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.Equals%2A?displayProperty=nameWithType> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture). As a result, in culture-sensitive comparisons, strings that contain embedded null characters can be considered equal to strings that do not.  
   
 > [!IMPORTANT]
->  Although string comparison methods disregard embedded null characters, string search methods such as <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.EndsWith%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType>, and <xref:System.String.StartsWith%2A?displayProperty=nameWithType> do not.  
+> Although string comparison methods disregard embedded null characters, string search methods such as <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.EndsWith%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType>, and <xref:System.String.StartsWith%2A?displayProperty=nameWithType> do not.  
   
  The following example performs a culture-sensitive comparison of the string "Aa" with a similar string that contains several embedded null characters between "A" and "a", and shows how the two strings are considered equal.  
   
@@ -204,7 +204,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
  These comparisons are still very fast.  
   
 > [!NOTE]
->  The string behavior of the file system, registry keys and values, and environment variables is best represented by <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>.  
+> The string behavior of the file system, registry keys and values, and environment variables is best represented by <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>.  
   
  Both <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> and <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> use the binary values directly, and are best suited for matching. When you are not sure about your comparison settings, use one of these two values. However, because they perform a byte-by-byte comparison, they do not sort by a linguistic sort order (like an English dictionary) but by a binary sort order. The results may look odd in most contexts if displayed to users.  
   

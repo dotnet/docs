@@ -44,7 +44,7 @@ Customers (CustomerID , CompanyName, Phone)
  The data type of each column in the table is derived from the XML Schema type of the corresponding element or attribute specified.  
   
 > [!NOTE]
->  If the element `customers` is of a simple XML Schema data type such as **integer**, no table is generated. Tables are only created for the top-level elements that are complex types.  
+> If the element `customers` is of a simple XML Schema data type such as **integer**, no table is generated. Tables are only created for the top-level elements that are complex types.  
   
  In the following XML Schema, the **Schema** element has two element children, `InStateCustomers` and `OutOfStateCustomers`.  
   

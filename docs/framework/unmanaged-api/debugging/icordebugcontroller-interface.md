@@ -40,7 +40,7 @@ Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:Syste
  If `ICorDebugController` is controlling a process, the scope includes all threads of the process. If `ICorDebugController` is controlling an application domain, the scope includes only the threads of that particular application domain.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

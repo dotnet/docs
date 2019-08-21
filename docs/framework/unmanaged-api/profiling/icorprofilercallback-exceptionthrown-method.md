@@ -22,7 +22,7 @@ ms.author: "mairaw"
 Notifies the profiler that an exception has been thrown.  
   
 > [!NOTE]
->  This function is called only if the exception reaches managed code.  
+> This function is called only if the exception reaches managed code.  
   
 ## Syntax  
   

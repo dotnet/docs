@@ -128,7 +128,7 @@ This sample demonstrates how to enable Windows Workflow Foundation (WF) tracking
 ## Known Issue
 
 > [!NOTE]
->  There is a known issue in the Event Viewer where it may fail to decode ETW events. You may see an error message that looks like the following.
+> There is a known issue in the Event Viewer where it may fail to decode ETW events. You may see an error message that looks like the following.
 >
 >  The description for Event ID \<id> from source Microsoft-Windows-Application Server-Applications cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
 >

@@ -7,10 +7,10 @@ ms.assetid: ff664f33-ad02-422c-9041-bab6d993f9cc
 This sample demonstrates how to handle and process messages that have failed delivery. It is based on the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding` binding. The service is a self-hosted console application to enable you to observe the service receiving queued messages.
 
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this topic.
 
 > [!NOTE]
->  This sample demonstrates each application dead letter queue that is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. The sample can be modified to use the default system-wide queues for MSMQ 3.0 on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
+> This sample demonstrates each application dead letter queue that is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. The sample can be modified to use the default system-wide queues for MSMQ 3.0 on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
 
  In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.
 
@@ -105,7 +105,7 @@ class Client
  The client's configuration specifies a short duration for the message to reach the service. If the message cannot be transmitted within the duration specified, the message expires and is moved to the dead-letter queue.
 
 > [!NOTE]
->  It is possible for the client to deliver the message to the service queue within the specified time. To ensure you see the dead-letter service in action, you should run the client before starting the service. The message times out and is delivered to the dead-letter service.
+> It is possible for the client to deliver the message to the service queue within the specified time. To ensure you see the dead-letter service in action, you should run the client before starting the service. The message times out and is delivered to the dead-letter service.
 
  The application must define which queue to use as its dead-letter queue. If no queue is specified, the default system-wide transactional dead-letter queue is used to queue dead messages. In this example, the client application specifies its own application dead-letter queue.
 
@@ -143,7 +143,7 @@ class Client
  The dead-letter message service reads messages from the dead-letter queue. The dead-letter message service implements the `IOrderProcessor` contract. Its implementation however is not to process orders. The dead-letter message service is a client service and does not have the facility to process orders.
 
 > [!NOTE]
->  The dead-letter queue is a client queue and is local to the client queue manager.
+> The dead-letter queue is a client queue and is local to the client queue manager.
 
  The dead-letter message service implementation checks for the reason a message failed delivery and takes corrective measures. The reason for a message failure is captured in two enumerations, <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> and <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryStatus%2A>. You can retrieve the <xref:System.ServiceModel.Channels.MsmqMessageProperty> from the <xref:System.ServiceModel.OperationContext> as shown in the following sample code:
 
@@ -262,7 +262,7 @@ public class PurchaseOrderDLQService : IOrderProcessor
  In running the sample, there are 3 executables to run to see how the dead-letter queue works for each application; the client, service and a dead-letter service that reads from the dead-letter queue for each application and resends the message to the service. All are console applications with output in console windows.
 
 > [!NOTE]
->  Because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages. You should start the service and shut it down so that the queue can be created.
+> Because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages. You should start the service and shut it down so that the queue can be created.
 
  When running the client, the client displays the message:
 

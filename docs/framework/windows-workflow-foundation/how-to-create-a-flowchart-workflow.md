@@ -10,10 +10,10 @@ ms.assetid: 185d7aea-68a6-4bd8-adde-45050f33170a
 Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.Flowchart> activity, and the custom activities from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
   
 > [!NOTE]
->  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).  
+> Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).  
   
 > [!NOTE]
->  To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
+> To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ### To create the workflow  
   
@@ -61,7 +61,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 1. Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and hover it over the **Start** node, which is at the top of the flowchart. When the **Assign** activity is over the **Start** node, three triangles will appear around the **Start** node. Drop the **Assign** activity on the triangle that is directly below the **Start** node. This will link the two items together and designates the **Assign** activity as the first activity in the flowchart.  
   
     > [!NOTE]
-    >  Activities can also be indicated as the starting activity in the workflow by manually linking them activity to the start node. To do this, hover the mouse over the **Start** node, click one of the rectangles that appear when the mouse is over the **Start** node, and drag the connecting line down to the desired activity and drop it on one of the rectangles that appear. You can also designate an activity as the starting activity by right-clicking the it and choosing **Set as Start Node**.  
+    > Activities can also be indicated as the starting activity in the workflow by manually linking them activity to the start node. To do this, hover the mouse over the **Start** node, click one of the rectangles that appear when the mouse is over the **Start** node, and drag the connecting line down to the desired activity and drop it on one of the rectangles that appear. You can also designate an activity as the starting activity by right-clicking the it and choosing **Set as Start Node**.  
   
 2. Type `Target` into the **To** box and the following expression into the **Enter a C# Expression** or **Enter a VB expression** box.  
   

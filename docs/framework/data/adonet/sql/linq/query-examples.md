@@ -7,7 +7,7 @@ ms.assetid: 137f8677-494c-4d49-95ce-c17742f2d01f
 This section provides Visual Basic and C# examples of typical [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries. Developers using Visual Studio can find many more examples in a sample solution available in the Samples section. For more information, see [Samples](../../../../../../docs/framework/data/adonet/sql/linq/samples.md).  
   
 > [!IMPORTANT]
->  *db* is often used in code examples in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation. *db* is assumed to be an instance of a *Northwind* class, which inherits from <xref:System.Data.Linq.DataContext>.  
+> *db* is often used in code examples in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation. *db* is assumed to be an instance of a *Northwind* class, which inherits from <xref:System.Data.Linq.DataContext>.  
   
 ## In This Section  
  [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)  

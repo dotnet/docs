@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of Windows. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
 
 <a name="types_of_documents"></a>   
 ## Types of Documents  
@@ -35,7 +35,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ### Flow Document Controls  
 
 > [!NOTE]
->  For more detailed information on flow document features and how to create them, see [Flow Document Overview](flow-document-overview.md).  
+> For more detailed information on flow document features and how to create them, see [Flow Document Overview](flow-document-overview.md).  
   
  Display of flow document content is supported by three controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   

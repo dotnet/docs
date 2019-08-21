@@ -7,7 +7,7 @@ ms.assetid: fd7eea9b-218a-4988-8c9a-8abcc6031c66
 Stored procedures are routines that cannot be used in scalar expressions. They can return tabular results and messages to the client, invoke data definition language (DDL) and data manipulation language (DML) statements, and return output parameters.  
   
 > [!NOTE]
->  Microsoft Visual Basic does not support output parameters in the same way that Microsoft Visual C# does. You must specify to pass the parameter by reference and apply the \<Out()> attribute to represent an output parameter, as in the following:  
+> Microsoft Visual Basic does not support output parameters in the same way that Microsoft Visual C# does. You must specify to pass the parameter by reference and apply the \<Out()> attribute to represent an output parameter, as in the following:  
   
 ```vb
 Public Shared Sub ExecuteToClient( <Out()> ByRef number As Integer)  

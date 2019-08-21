@@ -32,11 +32,11 @@ This topic provides an overview of the sample OpenType fonts that are distribute
  The sample fonts are supplied under license from Ascender Corporation. Ascender is a provider of advanced font products. To license extended or custom versions of the sample fonts, see [Ascender Corporation's Web site](https://go.microsoft.com/fwlink/?LinkId=182627).  
   
 > [!NOTE]
->  As a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
+> As a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
   
 <a name="installing_the_fonts"></a>   
 ## Installing the Fonts  
- You have the option of installing the sample OpenType fonts to the default [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Fonts directory, **\WINDOWS\Fonts**. Use the Fonts control panel to install the fonts. Once these fonts are on your computer, they are accessible to all applications that reference default [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] fonts. You can display a representative set of characters in several font sizes by doubling-clicking the font file. The following screenshot shows the Lindsey font file, Linds.ttf.  
+ You have the option of installing the sample OpenType fonts to the default Windows Fonts directory, **\WINDOWS\Fonts**. Use the Fonts control panel to install the fonts. Once these fonts are on your computer, they are accessible to all applications that reference default Windows fonts. You can display a representative set of characters in several font sizes by doubling-clicking the font file. The following screenshot shows the Lindsey font file, Linds.ttf.  
   
  ![Lindsey font &#40;OpenType&#41;](./media/typographyinwpf-04.png "TypographyInWPF_04")  
 Displaying the Lindsey font  

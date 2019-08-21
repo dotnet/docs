@@ -13,7 +13,7 @@ The C# compiler processes documentation comments in your code and formats them a
  Tags are processed on code constructs such as types and type members.  
   
 > [!NOTE]
->  Documentation comments cannot be applied to a namespace.  
+> Documentation comments cannot be applied to a namespace.  
   
  The compiler will process any tag that is valid XML. The following tags provide generally used functionality in user documentation.  
   

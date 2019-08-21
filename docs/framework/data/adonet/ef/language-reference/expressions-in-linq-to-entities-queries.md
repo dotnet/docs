@@ -17,7 +17,7 @@ An expression is a fragment of code that can be evaluated to a single value, obj
  [!code-vb[DP L2E Conceptual Examples#WhereExpression](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#whereexpression)]  
   
 > [!NOTE]
->  Specific language constructs, such as C# `unchecked`, have no meaning in LINQ to Entities.  
+> Specific language constructs, such as C# `unchecked`, have no meaning in LINQ to Entities.  
   
 ## In This Section  
  [Constant Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/constant-expressions.md)  

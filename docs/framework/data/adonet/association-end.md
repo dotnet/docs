@@ -11,7 +11,7 @@ An *association end* identifies the [entity type](../../../../docs/framework/dat
 - One of the entity types involved in the association. (Required)  
   
     > [!NOTE]
-    >  For a given association, the entity type specified for each association end can be the same. This creates a self-association.  
+    > For a given association, the entity type specified for each association end can be the same. This creates a self-association.  
   
 - An [association end multiplicity](../../../../docs/framework/data/adonet/association-end-multiplicity.md) that indicates the number of entity type instances that can be at one end of the association. An association end multiplicity can have a value of one (1), zero or one (0..1), or many (\*).  
   

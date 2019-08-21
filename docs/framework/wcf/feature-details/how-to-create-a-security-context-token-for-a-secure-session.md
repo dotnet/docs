@@ -10,13 +10,13 @@ ms.assetid: 640676b6-c75a-4ff7-aea4-b1a1524d71b2
 By using a stateful security context token (SCT) in a secure session, the session can withstand the service being recycled. For instance, when a stateless SCT is used in a secure session and Internet Information Services (IIS) is reset, then the session data that is associated with the service is lost. This session data includes an SCT token cache. So, the next time a client sends the service a stateless SCT, an error is returned, because the key that is associated with the SCT cannot be retrieved. If, however, a stateful SCT is used, then the key that is associated with the SCT is contained within the SCT. Because the key is contained within the SCT and thus contained within the message, the secure session is not affected by the service being recycled. By default, Windows Communication Foundation (WCF) uses stateless SCTs in a secure session. This topic details how to use stateful SCTs in a secure session.  
   
 > [!NOTE]
->  Stateful SCTs cannot be used in a secure session that involves a contract that derives from <xref:System.ServiceModel.Channels.IDuplexChannel>.  
+> Stateful SCTs cannot be used in a secure session that involves a contract that derives from <xref:System.ServiceModel.Channels.IDuplexChannel>.  
   
 > [!NOTE]
->  For applications that use stateful SCTs in a secure session, the thread identity for the service must be a user account that has an associated user profile. When the service is run under an account that does not have a user profile, such as `Local Service`, an exception may be thrown.  
+> For applications that use stateful SCTs in a secure session, the thread identity for the service must be a user account that has an associated user profile. When the service is run under an account that does not have a user profile, such as `Local Service`, an exception may be thrown.  
   
 > [!NOTE]
->  When impersonation is required on Windows XP, use a secure session without a stateful SCT. When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. For more information, see [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
+> When impersonation is required on Windows XP, use a secure session without a stateful SCT. When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. For more information, see [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
   
 ### To use stateful SCTs in a secure session  
   

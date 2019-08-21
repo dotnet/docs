@@ -18,7 +18,7 @@ You can resize individual controls, and you can resize multiple controls of the 
 1. Click the control to be resized and drag one of the eight sizing handles.  
   
     > [!NOTE]
-    >  Select the control and press the ARROW keys while holding down the SHIFT key to resize the control one pixel at a time. Press the DOWN or RIGHT arrow keys while holding down the SHIFT and CTRL keys to resize the control in large increments.  
+    > Select the control and press the ARROW keys while holding down the SHIFT key to resize the control one pixel at a time. Press the DOWN or RIGHT arrow keys while holding down the SHIFT and CTRL keys to resize the control in large increments.  
   
 ### To resize multiple controls on a form  
   

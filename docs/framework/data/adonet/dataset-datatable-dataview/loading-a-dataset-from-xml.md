@@ -23,7 +23,7 @@ The contents of an ADO.NET <xref:System.Data.DataSet> can be created from an XML
 |**Fragment**|Continues reading multiple XML fragments until the end of the stream is reached. Fragments that match the <xref:System.Data.DataSet> schema are appended to the appropriate tables. Fragments that do not match the <xref:System.Data.DataSet> schema are discarded.|  
   
 > [!NOTE]
->  If you pass an **XmlReader** to **ReadXml** that is positioned part of the way into an XML document, **ReadXml** will read to the next element node and will treat that as the root element, reading until the end of the element node only. This does not apply if you specify **XmlReadMode.Fragment**.  
+> If you pass an **XmlReader** to **ReadXml** that is positioned part of the way into an XML document, **ReadXml** will read to the next element node and will treat that as the root element, reading until the end of the element node only. This does not apply if you specify **XmlReadMode.Fragment**.  
   
 ## DTD Entities  
  If your XML contains entities defined in a document type definition (DTD) schema, an exception will be thrown if you attempt to load a <xref:System.Data.DataSet> by passing a file name, stream, or non-validating **XmlReader** to **ReadXml**. Instead, you must create an **XmlValidatingReader**, with **EntityHandling** set to **EntityHandling.ExpandEntities**, and pass your **XmlValidatingReader** to **ReadXml**. The **XmlValidatingReader** will expand the entities prior to being read by the <xref:System.Data.DataSet>.  
@@ -67,7 +67,7 @@ dataSet.ReadXml(xmlSR, XmlReadMode.IgnoreSchema);
 ```  
   
 > [!NOTE]
->  If you call **ReadXml** to load a very large file, you may encounter slow performance. To ensure best performance for **ReadXml**, on a large file, call the <xref:System.Data.DataTable.BeginLoadData%2A> method for each table in the <xref:System.Data.DataSet>, and then call **ReadXml**. Finally, call <xref:System.Data.DataTable.EndLoadData%2A> for each table in the <xref:System.Data.DataSet>, as shown in the following example.  
+> If you call **ReadXml** to load a very large file, you may encounter slow performance. To ensure best performance for **ReadXml**, on a large file, call the <xref:System.Data.DataTable.BeginLoadData%2A> method for each table in the <xref:System.Data.DataSet>, and then call **ReadXml**. Finally, call <xref:System.Data.DataTable.EndLoadData%2A> for each table in the <xref:System.Data.DataSet>, as shown in the following example.  
   
 ```vb  
 Dim dataTable As DataTable  
@@ -94,7 +94,7 @@ foreach (DataTable dataTable in dataSet.Tables)
 ```  
   
 > [!NOTE]
->  If the XSD schema for your <xref:System.Data.DataSet> includes a **targetNamespace**, data may not be read, and you may encounter exceptions, when calling **ReadXml** to load the <xref:System.Data.DataSet> with XML that contains elements with no qualifying namespace. To read unqualified elements in this case, set **elementFormDefault** equal to "qualified" in your XSD schema. For example:  
+> If the XSD schema for your <xref:System.Data.DataSet> includes a **targetNamespace**, data may not be read, and you may encounter exceptions, when calling **ReadXml** to load the <xref:System.Data.DataSet> with XML that contains elements with no qualifying namespace. To read unqualified elements in this case, set **elementFormDefault** equal to "qualified" in your XSD schema. For example:  
   
 ```xml  
 <xsd:schema id="customDataSet"   

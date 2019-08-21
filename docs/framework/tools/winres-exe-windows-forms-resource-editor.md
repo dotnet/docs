@@ -140,4 +140,4 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 - <xref:System.Resources.ResourceWriter>
 - [Tools](../../../docs/framework/tools/index.md)
 - [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
+- [Globalization and Localization](../../standard/globalization-localization/index.md)

@@ -21,7 +21,7 @@ ms.author: "mairaw"
 Indicates the result of a cached function search.  
   
 > [!NOTE]
->  `COR_PRF_CACHED_FUNCTION_FOUND` has a value of zero, so `COR_PRF_JIT_CACHE` cannot be used as a Boolean surrogate.  
+> `COR_PRF_CACHED_FUNCTION_FOUND` has a value of zero, so `COR_PRF_JIT_CACHE` cannot be used as a Boolean surrogate.  
   
 ## Syntax  
   

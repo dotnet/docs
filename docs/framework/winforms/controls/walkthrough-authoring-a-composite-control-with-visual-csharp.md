@@ -181,7 +181,7 @@ The first step in creating an inherited control is to derive it from its parent.
 5. In Solution Explorer, browse through the current projects.
 
     > [!NOTE]
-    >  A file called **ctlAlarmClock.cs** has been added to the current project.
+    > A file called **ctlAlarmClock.cs** has been added to the current project.
 
 ### Adding the Alarm Properties
 

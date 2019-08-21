@@ -46,7 +46,7 @@ Provides methods to enable the debugger to execute code within the context of th
  If a deadlocked or infinite looping situation arises, the user code may never complete. In such a case, you must call [ICorDebugEval::Abort](../../../../docs/framework/unmanaged-api/debugging/icordebugeval-abort-method.md) before resuming the program.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -19,7 +19,7 @@ There are two ways to create a <xref:System.Data.DataView> in the LINQ to DataSe
  A <xref:System.Data.DataView> object can be created from the results of a LINQ to DataSet query, where the results are a projection of <xref:System.Data.DataRow> objects. The newly created <xref:System.Data.DataView> inherits the filtering and sorting information from the query it is created from.  
   
 > [!NOTE]
->  In most cases, the expressions used for filtering and sorting should not have side effects and must be deterministic. Also, the expressions should not contain any logic that depend on a set number of executions, as the sorting and filtering operations may be executed any number of times.  
+> In most cases, the expressions used for filtering and sorting should not have side effects and must be deterministic. Also, the expressions should not contain any logic that depend on a set number of executions, as the sorting and filtering operations may be executed any number of times.  
   
  Creating a <xref:System.Data.DataView> from a query that returns anonymous types or queries that perform join operations is not supported.  
   

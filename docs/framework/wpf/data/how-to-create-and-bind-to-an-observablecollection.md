@@ -130,7 +130,7 @@ End Class
  The definition of `NameItemTemplate` is not shown here.  
   
 > [!NOTE]
->  The objects in your collection must satisfy the requirements described in the [Binding Sources Overview](binding-sources-overview.md). In particular, if you are using <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> (for example, you want your [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] to update when the source properties change dynamically), you must implement a suitable property changed notification mechanism such as the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
+> The objects in your collection must satisfy the requirements described in the [Binding Sources Overview](binding-sources-overview.md). In particular, if you are using <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> (for example, you want your [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] to update when the source properties change dynamically), you must implement a suitable property changed notification mechanism such as the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
   
  For more information, see the Binding to Collections section in the [Data Binding Overview](data-binding-overview.md).  
   

@@ -81,7 +81,7 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
 - `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` are both non-reentrant.  
   
 > [!NOTE]
->  Host applications must not call `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` outside the scope of the `pCallbackFunction` parameter.  
+> Host applications must not call `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` outside the scope of the `pCallbackFunction` parameter.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

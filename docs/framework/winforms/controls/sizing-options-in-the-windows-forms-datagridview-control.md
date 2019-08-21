@@ -60,7 +60,7 @@ ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
  You can also configure rows, columns, and headers to automatically adjust their sizes to fit their cell contents. In this case, size adjustment occurs whenever cell contents change.  
   
 > [!NOTE]
->  If you maintain cell values in a custom data cache using virtual mode, automatic sizing occurs when the user edits a cell value but does not occur when you alter a cached value outside of a <xref:System.Windows.Forms.DataGridView.CellValuePushed> event handler. In this case, call the <xref:System.Windows.Forms.DataGridView.UpdateCellValue%2A> method to force the control to update the cell display and apply the current automatic sizing modes.  
+> If you maintain cell values in a custom data cache using virtual mode, automatic sizing occurs when the user edits a cell value but does not occur when you alter a cached value outside of a <xref:System.Windows.Forms.DataGridView.CellValuePushed> event handler. In this case, call the <xref:System.Windows.Forms.DataGridView.UpdateCellValue%2A> method to force the control to update the cell display and apply the current automatic sizing modes.  
   
  If content-based automatic sizing is enabled for one dimension only—that is, for rows but not columns, or for columns but not rows—and <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is also enabled, size adjustment also occurs whenever the other dimension changes. For example, if rows but not columns are configured for automatic sizing and <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is enabled, users can drag column dividers to change the width of a column and row heights will automatically adjust so that cell contents are still fully displayed.  
   

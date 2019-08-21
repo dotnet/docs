@@ -51,12 +51,12 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
 ## Remarks  
   
 > [!NOTE]
->  In the .NET Framework 4 and later, this element has no effect on assembly load times. For more information, see the "Security Policy Simplification" section in [Security Changes](../../../security/security-changes.md).  
+> In the .NET Framework 4 and later, this element has no effect on assembly load times. For more information, see the "Security Policy Simplification" section in [Security Changes](../../../security/security-changes.md).  
   
  The common language runtime (CLR) tries to verify the Authenticode signature at load time to create <xref:System.Security.Policy.Publisher> evidence for the assembly. However, by default, most applications do not need <xref:System.Security.Policy.Publisher> evidence. Standard CAS policy does not rely on the <xref:System.Security.Policy.PublisherMembershipCondition>. You should avoid the unnecessary startup cost associated with verifying the publisher signature unless your application executes on a computer with custom CAS policy, or is intending to satisfy demands for <xref:System.Security.Permissions.PublisherIdentityPermission> in a partial-trust environment. (Demands for identity permissions always succeed in a full-trust environment.)  
   
 > [!NOTE]
->  We recommend that services use the `<generatePublisherEvidence>` element to improve startup performance.  Using this element can also help avoid delays that can cause a time-out and the cancellation of the service startup.  
+> We recommend that services use the `<generatePublisherEvidence>` element to improve startup performance.  Using this element can also help avoid delays that can cause a time-out and the cancellation of the service startup.  
   
 ## Configuration File  
  This element can be used only in the application configuration file.  

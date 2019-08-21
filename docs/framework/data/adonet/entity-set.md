@@ -17,7 +17,7 @@ An *entity set* is a logical container for instances of an [entity type](../../.
 - The instance does not exist in any other entity set.  
   
     > [!NOTE]
-    >  Multiple entity sets can be defined using the same entity type, but an instance of a given entity type can only exist in one entity set.  
+    > Multiple entity sets can be defined using the same entity type, but an instance of a given entity type can only exist in one entity set.  
   
  You do not have to define an entity set for each entity type in a conceptual model.  
   

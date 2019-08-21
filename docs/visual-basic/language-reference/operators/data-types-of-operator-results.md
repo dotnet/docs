@@ -71,7 +71,7 @@ Visual Basic determines the result data type of an operation based on the data t
  Note that the result data type might not be the same as either operand data type.  
   
 > [!NOTE]
->  The result data type is not always large enough to hold all possible values resulting from the operation. An <xref:System.OverflowException> exception can occur if the value is too large for the result data type.  
+> The result data type is not always large enough to hold all possible values resulting from the operation. An <xref:System.OverflowException> exception can occur if the value is too large for the result data type.  
   
 ### Unary + and – Operators  
  The following table shows the result data types for the two unary operators, `+` and `–`.  

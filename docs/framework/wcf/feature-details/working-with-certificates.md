@@ -54,7 +54,7 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
  Digital certificates are used to authenticate an entity by relying on this hierarchy, also called a *chain of trust*. You can view any certificate's chain using the MMC snap-in by double-clicking any certificate, then clicking the **Certificate Path** tab. For more information about importing certificate chains for a Certification authority, see [How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures](specify-the-certificate-authority-chain-verify-signatures-wcf.md).  
   
 > [!NOTE]
->  Any issuer can be designated a trusted root authority by placing the issuer's certificate in the trusted root authority certificate store.  
+> Any issuer can be designated a trusted root authority by placing the issuer's certificate in the trusted root authority certificate store.  
   
 ### Disabling Chain Trust  
  When creating a new service, you may be using a certificate that is not issued by a trusted root certificate, or the issuing certificate itself may not be in the Trusted Root Certification Authorities store. For development purposes only, you can temporarily disable the mechanism that checks the chain of trust for a certificate. To do this, set the `CertificateValidationMode` property to either `PeerTrust` or `PeerOrChainTrust`. Either mode specifies that the certificate can either be self-issued (peer trust) or part of a chain of trust. You can set the property on any of the following classes.  

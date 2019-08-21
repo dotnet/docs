@@ -22,7 +22,7 @@ Sometimes you will want to change the type of a column that has already been add
 3. In the **Column Properties** grid, set the `ColumnType` property to the new column type.
 
     > [!NOTE]
-    >  The `ColumnType` property is a design-time-only property that indicates the class representing the column type. It is not an actual property defined in a column class.
+    > The `ColumnType` property is a design-time-only property that indicates the class representing the column type. It is not an actual property defined in a column class.
 
 ## See also
 

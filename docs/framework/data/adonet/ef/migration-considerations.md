@@ -23,7 +23,7 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
  The path to migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] depends both on the type of application and on the existing data access strategy. However, you must always perform the following tasks when you migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
   
 > [!NOTE]
->  All of these tasks are performed automatically when you use the Entity Data Model tools starting with Visual Studio 2008. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
+> All of these tasks are performed automatically when you use the Entity Data Model tools starting with Visual Studio 2008. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
   
 1. Upgrade the application.  
   

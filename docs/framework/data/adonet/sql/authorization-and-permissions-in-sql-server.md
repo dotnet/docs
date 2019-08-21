@@ -34,7 +34,7 @@ When you create database objects, you must explicitly grant permissions to make 
 - The GRANT statement can assign permissions to a group or role that can be inherited by database users. However, the DENY statement takes precedence over all other permission statements. Therefore, a user who has been denied a permission cannot inherit it from another role.  
   
 > [!NOTE]
->  Members of the `sysadmin` fixed server role and object owners cannot be denied permissions.  
+> Members of the `sysadmin` fixed server role and object owners cannot be denied permissions.  
   
 ## Ownership Chains  
  SQL Server ensures that only principals that have been granted permission can access objects. When multiple database objects access each other, the sequence is known as a chain. When SQL Server is traversing the links in the chain, it evaluates permissions differently than it would if it were accessing each item separately. When an object is accessed through a chain, SQL Server first compares the object's owner to the owner of the calling object (the previous link in the chain). If both objects have the same owner, permissions on the referenced object are not checked. Whenever an object accesses another object that has a different owner, the ownership chain is broken and SQL Server must check the caller's security context.  
@@ -43,7 +43,7 @@ When you create database objects, you must explicitly grant permissions to make 
  Suppose that a user is granted execute permissions on a stored procedure that selects data from a table. If the stored procedure and the table have the same owner, the user doesn't need to be granted any permissions on the table and can even be denied permissions. However, if the stored procedure and the table have different owners, SQL Server must check the user's permissions on the table before allowing access to the data.  
   
 > [!NOTE]
->  Ownership chaining does not apply in the case of dynamic SQL statements. To call a procedure that executes an SQL statement, the caller must be granted permissions on the underlying tables, leaving your application vulnerable to SQL Injection attack. SQL Server provides new mechanisms, such as impersonation and signing modules with certificates, that do not require granting permissions on the underlying tables. These can also be used with CLR stored procedures.  
+> Ownership chaining does not apply in the case of dynamic SQL statements. To call a procedure that executes an SQL statement, the caller must be granted permissions on the underlying tables, leaving your application vulnerable to SQL Injection attack. SQL Server provides new mechanisms, such as impersonation and signing modules with certificates, that do not require granting permissions on the underlying tables. These can also be used with CLR stored procedures.  
   
 ## External Resources  
  For more information, see the following resources.  

@@ -21,7 +21,7 @@ ms.assetid: d14c6092-04b2-4a07-8ddf-0dd11277ff5f
  To program the [StatusBar Control](statusbar-control-windows-forms.md) control to respond to user clicks, use a case statement within the <xref:System.Windows.Forms.StatusBar.PanelClick> event. The event contains an argument (the panel argument), which contains a reference to the clicked <xref:System.Windows.Forms.StatusBarPanel>. Using this reference, you can determine the index of the clicked panel, and program accordingly.  
   
 > [!NOTE]
->  Ensure that the <xref:System.Windows.Forms.StatusBar> control's <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property is set to `true`.  
+> Ensure that the <xref:System.Windows.Forms.StatusBar> control's <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property is set to `true`.  
   
 ### To determine which panel was clicked  
   

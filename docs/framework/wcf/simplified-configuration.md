@@ -46,7 +46,7 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
 >  Changing default configuration elements, such as bindings or behaviors, might affect services defined in lower levels of the configuration hierarchy, since they might be using these default bindings and behaviors. Thus, whoever changes default bindings and behaviors needs to be aware that these changes might affect other services in the hierarchy.  
   
 > [!NOTE]
->  Services hosted under Internet Information Services (IIS) or Windows Process Activation Service (WAS) use the virtual directory as their base address.  
+> Services hosted under Internet Information Services (IIS) or Windows Process Activation Service (WAS) use the virtual directory as their base address.  
   
 ```xml  
 <protocolMapping>  

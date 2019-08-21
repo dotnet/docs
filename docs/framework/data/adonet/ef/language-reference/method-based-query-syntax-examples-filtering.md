@@ -51,7 +51,7 @@ The examples in this topic demonstrate how to use the `Where` and `Where…Conta
  [!code-vb[DP L2E ArraysAndListsInQueries#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e arraysandlistsinqueries/vb/module1.vb#3)]  
   
 > [!NOTE]
->  As part of the predicate in a `Where…Contains` clause, you can use an <xref:System.Array>, a <xref:System.Collections.Generic.List%601>, or a collection of any type that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. You can also declare and initialize a collection within a LINQ to Entities query. See the next example for more information.  
+> As part of the predicate in a `Where…Contains` clause, you can use an <xref:System.Array>, a <xref:System.Collections.Generic.List%601>, or a collection of any type that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. You can also declare and initialize a collection within a LINQ to Entities query. See the next example for more information.  
   
 ### Example  
  The following example declares and initializes arrays in a `Where…Contains` clause to find all products that have a `ProductModelID` or a `Size` that matches a value in the arrays.  

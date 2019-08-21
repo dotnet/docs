@@ -63,5 +63,5 @@ HRESULT CreateCrst (
 - [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
 - [IHostSemaphore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md)
-- [Mutexes](../../../../docs/standard/threading/mutexes.md)
-- [Semaphore and SemaphoreSlim](../../../../docs/standard/threading/semaphore-and-semaphoreslim.md)
+- [Mutexes](../../../standard/threading/mutexes.md)
+- [Semaphore and SemaphoreSlim](../../../standard/threading/semaphore-and-semaphoreslim.md)

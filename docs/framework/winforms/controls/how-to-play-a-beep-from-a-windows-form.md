@@ -31,7 +31,7 @@ public void onePing()
 ```  
   
 > [!NOTE]
->  The sound played in the C# code sample is determined by the <xref:System.Media.SystemSounds.Beep%2A> system sound setting. For more information, see <xref:System.Media.SystemSounds>.  
+> The sound played in the C# code sample is determined by the <xref:System.Media.SystemSounds.Beep%2A> system sound setting. For more information, see <xref:System.Media.SystemSounds>.  
   
 ## Compiling the Code  
  For C#, this example requires  a reference to the <xref:System.Media?displayProperty=nameWithType> namespace.  

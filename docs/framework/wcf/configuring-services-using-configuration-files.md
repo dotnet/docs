@@ -58,7 +58,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ```  
   
 > [!NOTE]
->  The bindings and behaviors sections are optional and are only included if required.  
+> The bindings and behaviors sections are optional and are only included if required.  
   
 ### The \<services> Element  
  The `services` element contains the specifications for all services the application hosts. Starting with the simplified configuration model in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], this section is optional.  

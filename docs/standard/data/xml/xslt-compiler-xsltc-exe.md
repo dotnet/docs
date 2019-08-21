@@ -41,7 +41,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
  XSLT solutions can consist of multiple style sheet modules. The xsltc.exe tool generates assemblies from style sheets. The assemblies can then be passed into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method. This can help decrease performance costs in some XSLT deployment scenarios.  
   
 > [!NOTE]
->  You must also include the compiled assembly as a reference in your application.  
+> You must also include the compiled assembly as a reference in your application.  
   
  The xsltc.exe tool does not validate the class (`/class:`*name*) or assembly (`/out:`*assemblyName*) names. Errors are thrown by the common language runtime if the names are not valid.  
   

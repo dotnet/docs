@@ -26,7 +26,7 @@ ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
  When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.  
   
 > [!NOTE]
->  To find warning numbers in Visual Studio, build your project and then look for the warning numbers in the **Output** window.  
+> To find warning numbers in Visual Studio, build your project and then look for the warning numbers in the **Output** window.  
   
 ## Example  
   

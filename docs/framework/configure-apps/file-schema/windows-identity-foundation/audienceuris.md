@@ -60,7 +60,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
  The `<audienceUris>` element is represented by the <xref:System.IdentityModel.Configuration.AudienceUriElementCollection> class. An individual URI added to the collection is represented by the <xref:System.IdentityModel.Configuration.AudienceUriElement> class.  
   
 > [!NOTE]
->  The use of the `<audienceUris>` element as a child element of the [\<identityConfiguration>](identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
+> The use of the `<audienceUris>` element as a child element of the [\<identityConfiguration>](identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
   
 ## Example  
  The following XML shows how to configure the acceptable audience URIs for an application. This example configures a single URI. Tokens scoped for this URI will be accepted, all others will be rejected.  

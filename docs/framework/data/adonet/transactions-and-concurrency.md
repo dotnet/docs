@@ -9,7 +9,7 @@ A transaction consists of a single command or a group of commands that execute a
  A transaction must conform to the ACID properties—atomicity, consistency, isolation, and durability—in order to guarantee data consistency. Most relational database systems, such as Microsoft SQL Server, support transactions by providing locking, logging, and transaction management facilities whenever a client application performs an update, insert, or delete operation.  
   
 > [!NOTE]
->  Transactions that involve multiple resources can lower concurrency if locks are held too long. Therefore, keep transactions as short as possible.  
+> Transactions that involve multiple resources can lower concurrency if locks are held too long. Therefore, keep transactions as short as possible.  
   
  If a transaction involves multiple tables in the same database or server, then explicit transactions in stored procedures often perform better. You can create transactions in SQL Server stored procedures by using the Transact-SQL `BEGIN TRANSACTION`, `COMMIT TRANSACTION`, and `ROLLBACK TRANSACTION` statements. For more information, see SQL Server Books Online.  
   

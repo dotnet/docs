@@ -17,7 +17,7 @@ Data type(s) of the type parameter(s) cannot be inferred from these arguments. S
  This error occurs when overload resolution has failed. It occurs as a subordinate message that states why a particular overload candidate has been eliminated. The error message explains that the compiler cannot use type inference to find data types for the type parameters.  
   
 > [!NOTE]
->  When specifying arguments is not an option (for example, for query operators in query expressions), the error message appears without the second sentence.  
+> When specifying arguments is not an option (for example, for query operators in query expressions), the error message appears without the second sentence.  
   
  The following code demonstrates the error.  
   

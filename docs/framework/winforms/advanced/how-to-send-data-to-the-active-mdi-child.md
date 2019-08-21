@@ -15,7 +15,7 @@ ms.assetid: 1047d2fe-1235-46db-aad9-563aea1d743b
 Often, within the context of [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md), you will need to send data to the active child window, such as when the user pastes data from the Clipboard into an MDI application.  
   
 > [!NOTE]
->  For information about verifying which child window has focus and sending its contents to the Clipboard, see [Determining the Active MDI Child](how-to-determine-the-active-mdi-child.md).  
+> For information about verifying which child window has focus and sending its contents to the Clipboard, see [Determining the Active MDI Child](how-to-determine-the-active-mdi-child.md).  
   
 ### To send data to the active MDI child window from the Clipboard  
   

@@ -23,7 +23,7 @@ With Visual Basic, you can create powerful custom controls through *inheritance*
 
 2. Select the **Windows Forms Control Library** project template from the list of Visual Basic projects, and type `ValueButtonLib` in the **Name** box.
 
-     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces in Visual Basic](~/docs/visual-basic/programming-guide/program-structure/namespaces.md).
+     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md).
 
 3. In **Solution Explorer**, right-click **UserControl1.vb**, then choose **Rename** from the shortcut menu. Change the file name to `ValueButton.vb`. Click the **Yes** button when you are asked if you want to rename all references to the code element 'UserControl1'.
 
@@ -40,7 +40,7 @@ With Visual Basic, you can create powerful custom controls through *inheritance*
      Note that a visual designer is no longer available. Because the <xref:System.Windows.Forms.Button> control does its own painting, you are unable to modify its appearance in the designer. Its visual representation will be exactly the same as that of the class it inherits from (that is, <xref:System.Windows.Forms.Button>) unless modified in the code.
 
 > [!NOTE]
->  You can still add components, which have no UI elements, to the design surface.
+> You can still add components, which have no UI elements, to the design surface.
 
 ## Adding a Property to Your Inherited Control
  One possible use of inherited Windows Forms controls is the creation of controls that are identical in appearance and behavior (look and feel) to standard Windows Forms controls, but expose custom properties. In this section, you will add a property called `ButtonValue` to your control.
@@ -142,4 +142,4 @@ With Visual Basic, you can create powerful custom controls through *inheritance*
 - [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
 - [How to: Display a Control in the Choose Toolbox Items Dialog Box](how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
 - [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
-- [Inheritance basics (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [Inheritance basics (Visual Basic)](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)

@@ -16,7 +16,7 @@ This topic describes how you can view message logs.
  In the Service Trace Viewer, messages are listed in the **Message** tab. Messages that have caused, or are related to, a processing error are highlighted in yellow (warning level) or red (error level), depending on the severity of the error. Double-clicking on the message brings up the message trace in the context of the processing request.  
   
 > [!NOTE]
->  If a message has no header, no `<header/>` tag is logged.  
+> If a message has no header, no `<header/>` tag is logged.  
   
 ## Viewing Messages Logged by a Client, a Relay, and a Service  
  Your environment may contain a client, which sends a message to a relay, that subsequently forwards the message to the service. When message logging is enabled on all three locations, and all three message logs are viewed in [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) simultaneously, the message log exchanges will be incorrectly rendered. This is because the `CorrelationId` and `ActivityId` in the Message header are not unique for every send-receive pair.  

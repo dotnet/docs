@@ -56,5 +56,5 @@ Arithmetic and comparison operators work as expected in the common language runt
 ## See also
 
 - [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
-- [C# Operators](../../../../../../docs/csharp/language-reference/operators/index.md)
+- [C# Operators](../../../../../csharp/language-reference/operators/index.md)
 - [Operators](../../../../../visual-basic/language-reference/operators/index.md)

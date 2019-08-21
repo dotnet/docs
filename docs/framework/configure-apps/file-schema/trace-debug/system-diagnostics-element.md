@@ -49,7 +49,7 @@ Specifies trace listeners that collect, store, and route messages and the level 
  The following example shows how to embed a trace switch and a trace listener inside the **\<system.diagnostics>** element. The `General` trace switch is set to the <xref:System.Diagnostics.TraceLevel> level. The trace listener `myListener` creates a file called `MyListener.log` and writes the output to the file.  
   
 > [!NOTE]
->  In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, you can specify `true` for a <xref:System.Diagnostics.BooleanSwitch> or use the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="myTraceSwitch" value="Error" />` is equivalent to `<add name="myTraceSwitch" value="1" />`.  
+> In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, you can specify `true` for a <xref:System.Diagnostics.BooleanSwitch> or use the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="myTraceSwitch" value="Error" />` is equivalent to `<add name="myTraceSwitch" value="1" />`.  
   
 ```xml  
 <configuration>  

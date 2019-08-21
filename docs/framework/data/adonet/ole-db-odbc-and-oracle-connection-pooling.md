@@ -42,7 +42,7 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
   
  If a connection exists to a server that has disappeared, this connection can be drawn from the pool if the connection pooler has not detected the severed connection and marked it as invalid. When this occurs, an exception is generated. However, you must still close the connection in order to release it back into the pool.  
   
- Do not call `Close` or `Dispose` on a `Connection`, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../../docs/standard/garbage-collection/index.md).  
+ Do not call `Close` or `Dispose` on a `Connection`, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../standard/garbage-collection/index.md).  
   
 ### Transaction Support  
  Connections are drawn from the pool and assigned based on transaction context. The context of the requesting thread and the assigned connection must match. Therefore, each connection pool is actually subdivided into connections with no transaction context associated with them, and into *N* subdivisions that each contain connections with a particular transaction context.  

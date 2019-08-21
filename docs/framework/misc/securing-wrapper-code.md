@@ -97,4 +97,4 @@ ms.author: "mairaw"
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

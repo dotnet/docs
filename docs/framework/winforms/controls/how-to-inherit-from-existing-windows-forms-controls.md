@@ -80,6 +80,6 @@ If you want to extend the functionality of an existing control, you can create a
 - [How to: Inherit from the Control Class](how-to-inherit-from-the-control-class.md)
 - [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
 - [How to: Author Controls for Windows Forms](how-to-author-controls-for-windows-forms.md)
-- [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
+- [Troubleshooting Inherited Event Handlers in Visual Basic](../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
 - [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
 - [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)

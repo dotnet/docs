@@ -21,7 +21,7 @@ The Windows SDK allows computer administrators to configure the default cryptogr
  Describes how to map an object identifier to a cryptography algorithm.  
   
 ## Related Sections  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
+ [Cryptographic Services](../../standard/security/cryptographic-services.md)  
  Provides an overview of cryptographic services provided by the Windows SDK.  
   
  [Cryptography Settings Schema](./file-schema/cryptography/index.md)  

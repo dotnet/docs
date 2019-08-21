@@ -21,7 +21,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
  A <xref:System.Windows.Media.Transform> defines how to map, or transform, points from one coordinate space to another coordinate space. This mapping is described by a transformation <xref:System.Windows.Media.Matrix>, which is a collection of three rows with three columns of <xref:System.Double> values.  
   
 > [!NOTE]
->  Windows Presentation Foundation (WPF) uses row-major matrices. Vectors are expressed as row-vectors, not column vectors.  
+> Windows Presentation Foundation (WPF) uses row-major matrices. Vectors are expressed as row-vectors, not column vectors.  
   
  The following table shows the structure of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] matrix.  
   

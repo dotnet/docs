@@ -78,7 +78,7 @@ This topic introduces the purpose of type conversion from string as a general XA
  Each <xref:System.ComponentModel.TypeConverter> implementation can have its own interpretation of what constitutes a valid string for a conversion, and can also use or ignore the type description or culture contexts passed as parameters. However, the WPF XAML processing might not pass values to the type description context in all cases, and also might not pass culture based on `xml:lang`.  
   
 > [!NOTE]
->  Do not use the curly brace characters, particularly {, as a possible element of your string format. These characters are reserved as the entry and exit for a markup extension sequence.  
+> Do not use the curly brace characters, particularly {, as a possible element of your string format. These characters are reserved as the entry and exit for a markup extension sequence.  
   
 ### Implementing ConvertTo  
  <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> is potentially used for serialization support. Serialization support through <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> for your custom type and its type converter is not an absolute requirement. However, if you are implementing a control, or using serialization of as part of the features or design of your class, you should implement <xref:System.ComponentModel.TypeConverter.ConvertTo%2A>.  

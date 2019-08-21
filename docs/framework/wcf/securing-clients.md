@@ -118,12 +118,12 @@ In Windows Communication Foundation (WCF), the service dictates the security req
 ```
   
 > [!NOTE]
->  Some of the client credential values cannot be set using application configuration files, for example, user name and password, or Windows user and password values. Such credential values can be specified only in code.  
+> Some of the client credential values cannot be set using application configuration files, for example, user name and password, or Windows user and password values. Such credential values can be specified only in code.  
   
  For more information about setting the client credential, see [How to: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 > [!NOTE]
->  `ClientCredentialType` is ignored when `SecurityMode` is set to `"TransportWithMessageCredential",` as shown in the following sample configuration.  
+> `ClientCredentialType` is ignored when `SecurityMode` is set to `"TransportWithMessageCredential",` as shown in the following sample configuration.  
   
 ```xml  
 <wsHttpBinding>  

@@ -43,7 +43,7 @@ Adds an authentication module to the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[authenticationModules](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
  The `add` element adds an authentication module to the end of the list of registered authentication modules. Authentication modules are called in the order in which they were added to the list.  
@@ -79,4 +79,4 @@ Adds an authentication module to the application.
 
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

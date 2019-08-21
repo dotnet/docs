@@ -9,7 +9,7 @@ This sample demonstrates how to implement a service that accepts message objects
  In this sample, the client is a console application (.exe) and the service is hosted in IIS.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample demonstrates message dispatch based on the body content. The built-in Windows Communication Foundation (WCF) service model message dispatch mechanism is based on message Actions. However, there are many existing Web services that define all of their operations with Action="". It is impossible to build a service based on WSDL that keeps dispatching request messages based on Action information. This sample demonstrates a service contract that is based on WSDL (the WSDL is contained in Service.wsdl that is included with the sample). The service contract is Calculator, similar to the one used in [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). However the `[OperationContract]` specifies `Action=""` for all operations.  
   

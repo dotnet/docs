@@ -41,7 +41,7 @@ When you create a complex user interface, or work with a multiple document inter
     ```
 
 > [!NOTE]
->  Windows Forms supports *control containment*. Control containment involves placing a number of controls within a containing control, such as a number of <xref:System.Windows.Forms.RadioButton> controls within a <xref:System.Windows.Forms.GroupBox> control. You can then layer the controls within the containing control. Moving the group box moves the controls as well, because they are contained inside it.
+> Windows Forms supports *control containment*. Control containment involves placing a number of controls within a containing control, such as a number of <xref:System.Windows.Forms.RadioButton> controls within a <xref:System.Windows.Forms.GroupBox> control. You can then layer the controls within the containing control. Moving the group box moves the controls as well, because they are contained inside it.
 
 ## See also
 

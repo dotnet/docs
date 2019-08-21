@@ -17,7 +17,7 @@ The .NET Framework offers role-based security as well as code access security (C
  The CLR allows code to perform only those operations that the code has permission to perform. Code can request permissions, and those requests are honored based on the security policy set by an administrator.  
   
 > [!NOTE]
->  Code executing in the CLR cannot grant permissions to itself. For example, code can request and be granted fewer permissions than a security policy allows, but it will never be granted more permissions. When granting permissions, start with no permissions at all and then add the narrowest permissions for the particular task being performed. Starting with all permissions and then denying individual ones leads to insecure applications that may contain unintentional security holes from granting more permissions than required. For more information, see [Configuring Security Policy](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7c9c2y1w(v=vs.100)) and [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100)).  
+> Code executing in the CLR cannot grant permissions to itself. For example, code can request and be granted fewer permissions than a security policy allows, but it will never be granted more permissions. When granting permissions, start with no permissions at all and then add the narrowest permissions for the particular task being performed. Starting with all permissions and then denying individual ones leads to insecure applications that may contain unintentional security holes from granting more permissions than required. For more information, see [Configuring Security Policy](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7c9c2y1w(v=vs.100)) and [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100)).  
   
  There are three types of code access permissions:  
   
@@ -192,5 +192,5 @@ Failed, as expected: Request failed.
 
 - [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Security in Native and .NET Framework Code](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))
-- [Role-Based Security](../../../../docs/standard/security/role-based-security.md)
+- [Role-Based Security](../../../standard/security/role-based-security.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

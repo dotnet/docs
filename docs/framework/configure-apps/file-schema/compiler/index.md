@@ -17,19 +17,19 @@ Compiler and language provider settings specify compiler configuration elements 
   
  The .NET Framework defines the initial compiler settings in the machine configuration file (Machine.config). Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider> implementation. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.  
   
- [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)  
+ [\<configuration> Element](../configuration-element.md)  
   
- [\<system.codedom>](../../../../../docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md)  
+ [\<system.codedom>](system-codedom-element.md)  
   
- [\<compilers>](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)  
+ [\<compilers>](compilers-element.md)  
   
- [\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)  
+ [\<compiler>](compiler-element.md)  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.codedom>](../../../../../docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md)|Specifies compiler configuration settings for available language providers.|  
-|[\<compilers>](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)|Container for compiler configuration elements; contains zero or more [\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) elements.|  
-|[\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)|Specifies the compiler configuration attributes for a language provider.|  
+|[\<system.codedom>](system-codedom-element.md)|Specifies compiler configuration settings for available language providers.|  
+|[\<compilers>](compilers-element.md)|Container for compiler configuration elements; contains zero or more [\<compiler>](compiler-element.md) elements.|  
+|[\<compiler>](compiler-element.md)|Specifies the compiler configuration attributes for a language provider.|  
   
 ## Example  
  The following example illustrates a typical compiler configuration element.  
@@ -54,5 +54,5 @@ Compiler and language provider settings specify compiler configuration elements 
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [\<compiler> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)
+- [Configuration File Schema](../index.md)
+- [\<compiler> Element](compiler-element.md)

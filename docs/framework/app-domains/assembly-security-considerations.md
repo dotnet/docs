@@ -34,7 +34,7 @@ ms.author: "ronpet"
 - Do not use a permission request to obtain permissions your code might need, but be prepared to handle security exceptions if permissions are not granted.  
   
     > [!NOTE]
-    >  Security is a complex area, and you have many options to choose from. For more information, see [Key Security Concepts](../../../docs/standard/security/key-security-concepts.md).  
+    >  Security is a complex area, and you have many options to choose from. For more information, see [Key Security Concepts](../../standard/security/key-security-concepts.md).  
   
  At load time, the assembly's evidence is used as input to security policy. Security policy is established by the enterprise and the computer's administrator as well as by user policy settings, and determines the set of permissions that is granted to all managed code when executed. Security policy can be established for the publisher of the assembly (if it has a signing tool generated signature), for the Web site and zone (in Internet Explorer terms) the assembly was downloaded from, or for the assembly's strong name. For example, a computer's administrator can establish security policy that allows all code downloaded from a Web site and signed by a given software company to access a database on a computer, but does not grant access to write to the computer's disk.  
   
@@ -50,7 +50,7 @@ ms.author: "ronpet"
  You can give both a strong name and a digital signature created using [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md) to an assembly, or you can use either alone. The two signing tools can sign only one file at a time; for a multifile assembly, you sign the file that contains the assembly manifest. A strong name is stored in the file containing the assembly manifest, but a signature created using [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md) is stored in a reserved slot in the portable executable (PE) file containing the assembly manifest. Signing of an assembly using [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md) can be used (with or without a strong name) when you already have a trust hierarchy that relies on [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md) generated signatures, or when your policy uses only the key portion and does not check a chain of trust.  
   
 > [!NOTE]
->  When using both a strong name and a signing tool signature on an assembly, the strong name must be assigned first.  
+> When using both a strong name and a signing tool signature on an assembly, the strong name must be assigned first.  
   
  The common language runtime also performs a hash verification; the assembly manifest contains a list of all files that make up the assembly, including a hash of each file as it existed when the manifest was built. As each file is loaded, its contents are hashed and compared with the hash value stored in the manifest. If the two hashes do not match, the assembly fails to load.  
   

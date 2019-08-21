@@ -29,7 +29,7 @@ Specifies that one or more declared programming elements are accessible only fro
  For a comparison of `Friend` and the other access modifiers, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 > [!NOTE]
->  You can specify that another assembly is a friend assembly, which allows it to access all types and members that are marked as `Friend`. For more information, see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
+> You can specify that another assembly is a friend assembly, which allows it to access all types and members that are marked as `Friend`. For more information, see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
   
 ## Example  
  The following class uses the `Friend` modifier to allow other programming elements within the same assembly to access certain members.  

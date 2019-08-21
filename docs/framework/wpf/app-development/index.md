@@ -19,7 +19,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
 - Class Libraries (non-executable assemblies that contain reusable classes).  
   
 > [!NOTE]
->  Using WPF types in a Windows service is strongly discouraged. If you attempt to use these features in a Windows service, they may not work as expected.  
+> Using WPF types in a Windows service is strongly discouraged. If you attempt to use these features in a Windows service, they may not work as expected.  
   
  To build this set of applications, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implements a host of services. This topic provides an overview of these services and where to find more information.  
 

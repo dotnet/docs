@@ -21,7 +21,7 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
  In managed threading, <xref:System.Threading.Thread.GetHashCode%2A?displayProperty=nameWithType> is the stable managed thread identification. For the lifetime of your thread, it will not collide with the value from any other thread, regardless of the application domain from which you obtain this value.  
   
 > [!NOTE]
->  An operating-system **ThreadId** has no fixed relationship to a managed thread, because an unmanaged host can control the relationship between managed and unmanaged threads. Specifically, a sophisticated host can use the Fiber API to schedule many managed threads against the same operating system thread, or to move a managed thread among different operating system threads.  
+> An operating-system **ThreadId** has no fixed relationship to a managed thread, because an unmanaged host can control the relationship between managed and unmanaged threads. Specifically, a sophisticated host can use the Fiber API to schedule many managed threads against the same operating system thread, or to move a managed thread among different operating system threads.  
   
 ## Mapping from Win32 threading to managed threading
 

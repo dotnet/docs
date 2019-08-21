@@ -12,7 +12,7 @@ ms.assetid: 3f40f9c1-20ad-4331-b9b5-b0127eb36eb3
 The Windows Forms <xref:System.Windows.Forms.DomainUpDown> control is essentially a combination of a text box and a pair of buttons for moving up or down through a list. The control displays and sets a text string from a list of choices. The user can select the string by clicking up and down buttons to move through a list, by pressing the UP and DOWN ARROW keys, or by typing a string that matches an item in the list. One possible use for this control is for selecting items from an alphabetically sorted list of names.  
   
 > [!NOTE]
->  To sort the list, set the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property to `true`.  
+> To sort the list, set the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property to `true`.  
   
  The function of this control is very similar to the list box or combo box, but it takes up very little space.  
   

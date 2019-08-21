@@ -112,7 +112,7 @@ Operating systems and runtime environments typically provide some form of isolat
 |<xref:System.AppDomain.Unload%2A>|Performs a graceful shutdown of the domain. The application domain is not unloaded until all threads running in the domain have either stopped or are no longer in the domain.|  
   
 > [!NOTE]
->  The common language runtime does not support serialization of global methods, so delegates cannot be used to execute global methods in other application domains.  
+> The common language runtime does not support serialization of global methods, so delegates cannot be used to execute global methods in other application domains.  
   
  The unmanaged interfaces described in the common language runtime Hosting Interfaces Specification also provide access to application domains. Runtime hosts can use interfaces from unmanaged code to create and gain access to the application domains within a process.  
   

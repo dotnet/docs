@@ -40,7 +40,7 @@ There are two ways to specify an assembly's location:
  The **version** attribute is required for all strong-named assemblies but should be omitted for assemblies that are not strong-named. The **\<codeBase>** element requires the **href** attribute. You cannot specify version ranges in the **\<codeBase>** element.  
   
 > [!NOTE]
->  If you are supplying a code base hint for an assembly that is not strong-named, the hint must point to the application base or a subdirectory of the application base directory.  
+> If you are supplying a code base hint for an assembly that is not strong-named, the hint must point to the application base or a subdirectory of the application base directory.  
   
 ## Using the \<probing> Element  
  The runtime locates assemblies that do not have a code base by probing. For more information about probing, see [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md).  

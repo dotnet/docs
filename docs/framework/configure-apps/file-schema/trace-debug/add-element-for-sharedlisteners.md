@@ -57,7 +57,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
  The listener classes shipped with the .NET Framework derive from the <xref:System.Diagnostics.TraceListener> class. The value for the `name` attribute is used to add the shared listener to a `Listeners` collection for either a trace or a trace source. The value for the `initializeData` attribute depends on the type of listener you create. Not all trace listeners require that you specify `initializeData`.  
   
 > [!NOTE]
->  When you use the `initializeData` attribute, you may get the compiler warning "The 'initializeData' attribute is not declared." This warning occurs because the configuration settings are validated against the abstract base class <xref:System.Diagnostics.TraceListener>, which does not recognize the `initializeData` attribute. Typically, you can ignore this warning for trace listener implementations that have a constructor that takes a parameter.  
+> When you use the `initializeData` attribute, you may get the compiler warning "The 'initializeData' attribute is not declared." This warning occurs because the configuration settings are validated against the abstract base class <xref:System.Diagnostics.TraceListener>, which does not recognize the `initializeData` attribute. Typically, you can ignore this warning for trace listener implementations that have a constructor that takes a parameter.  
   
  The following table shows the trace listeners that are included with the .NET Framework and describes the value of their `initializeData` attributes.  
   

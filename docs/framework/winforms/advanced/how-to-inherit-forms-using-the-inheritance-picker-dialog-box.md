@@ -51,7 +51,7 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
 
 ## See also
 
-- [Inherits Statement](~/docs/visual-basic/language-reference/statements/inherits-statement.md)
-- [using](~/docs/csharp/language-reference/keywords/using.md)
+- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
+- [using](../../../csharp/language-reference/keywords/using.md)
 - [Effects of Modifying a Base Form's Appearance](effects-of-modifying-base-form-appearance.md)
 - [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)

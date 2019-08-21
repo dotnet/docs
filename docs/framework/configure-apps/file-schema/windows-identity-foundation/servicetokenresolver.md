@@ -52,7 +52,7 @@ Registers the service token resolver that is used by handlers in the token handl
  Some token handlers allow you to specify service token resolver settings in configuration. Settings on individual token handlers override those specified on the security token handler collection.  
   
 > [!NOTE]
->  Specifying the `<serviceTokenResolver>` element as a child element of the [\<identityConfiguration>](identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
+> Specifying the `<serviceTokenResolver>` element as a child element of the [\<identityConfiguration>](identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
   
 ## Example  
   

@@ -7,7 +7,7 @@ ms.assetid: fb64192d-b3ea-4e02-9fb3-46a508d26c60
 This sample demonstrates how to perform transacted two-way queued communication over MSMQ. This sample uses the `netMsmqBinding` binding. In this case, the service is a self-hosted console application that allows you to observe the service receiving queued messages.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample is based on the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md).  
   
@@ -67,7 +67,7 @@ public void SubmitPurchaseOrder(PurchaseOrder po, string reportOrderStatusTo)
  The MSMQ queue name is specified in an appSettings section of the configuration file. The endpoint for the service is defined in the System.ServiceModel section of the configuration file.  
   
 > [!NOTE]
->  The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local machine and backslash separators in its path. The Windows Communication Foundation (WCF) endpoint address specifies a net.msmq: scheme, uses "localhost" for the local machine, and uses forward slashes in its path. To read from a queue that is hosted on the remote machine, replace the "." and "localhost" to the remote machine name.  
+> The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local machine and backslash separators in its path. The Windows Communication Foundation (WCF) endpoint address specifies a net.msmq: scheme, uses "localhost" for the local machine, and uses forward slashes in its path. To read from a queue that is hosted on the remote machine, replace the "." and "localhost" to the remote machine name.  
   
  The service is self hosted. When using the MSMQ transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service checks for the existence of the queue and creates it, if necessary. The queue name is read from the configuration file. The base address is used by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the proxy to the service.  
 

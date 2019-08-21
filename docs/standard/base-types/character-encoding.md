@@ -54,7 +54,7 @@ Characters are abstract entities that can be represented in many different ways.
 - Call the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> method, which returns any standard, code page, or DBCS encoding available in .NET. Overloads let you specify a fallback object for both the encoder and the decoder.  
   
 > [!NOTE]
->  The Unicode Standard assigns a code point (a number) and a name to each character in every supported script. For example, the character "A" is represented by the code point U+0041 and the name "LATIN CAPITAL LETTER A". The Unicode Transformation Format (UTF) encodings define ways to encode that code point into a sequence of one or more bytes. A Unicode encoding scheme simplifies world-ready application development because it allows characters from any character set to be represented in a single encoding. Application developers no longer have to keep track of the encoding scheme that was used to produce characters for a specific language or writing system, and data can be shared among systems internationally without being corrupted.  
+> The Unicode Standard assigns a code point (a number) and a name to each character in every supported script. For example, the character "A" is represented by the code point U+0041 and the name "LATIN CAPITAL LETTER A". The Unicode Transformation Format (UTF) encodings define ways to encode that code point into a sequence of one or more bytes. A Unicode encoding scheme simplifies world-ready application development because it allows characters from any character set to be represented in a single encoding. Application developers no longer have to keep track of the encoding scheme that was used to produce characters for a specific language or writing system, and data can be shared among systems internationally without being corrupted.  
 >   
 >  .NET supports three encodings defined by the Unicode standard: UTF-8, UTF-16, and UTF-32. For more information, see The Unicode Standard at the [Unicode home page](https://www.unicode.org/).  
   
@@ -138,12 +138,12 @@ Characters are abstract entities that can be represented in many different ways.
  When a character does not have an exact match in the target encoding, the encoder can try to map it to a similar character. (Best-fit fallback is mostly an encoding rather than a decoding issue. There are very few code pages that contain characters that cannot be successfully mapped to Unicode.) Best-fit fallback is the default for code page and double-byte character set encodings that are retrieved by the <xref:System.Text.Encoding.GetEncoding%28System.Int32%29?displayProperty=nameWithType> and <xref:System.Text.Encoding.GetEncoding%28System.String%29?displayProperty=nameWithType> overloads.  
   
 > [!NOTE]
->  In theory, the Unicode encoding classes provided in .NET (<xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, and <xref:System.Text.UTF32Encoding>) support every character in every character set, so they can be used to eliminate best-fit fallback issues.  
+> In theory, the Unicode encoding classes provided in .NET (<xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, and <xref:System.Text.UTF32Encoding>) support every character in every character set, so they can be used to eliminate best-fit fallback issues.  
   
  Best-fit strategies vary for different code pages. For example, for some code pages, full-width Latin characters map to the more common half-width Latin characters. For other code pages, this mapping is not made. Even under an aggressive best-fit strategy, there is no imaginable fit for some characters in some encodings. For example, a Chinese ideograph has no reasonable mapping to code page 1252. In this case, a replacement string is used. By default, this string is just a single QUESTION MARK (U+003F).  
   
 > [!NOTE]
->  Best-fit strategies are not documented in detail. However, several code pages are documented at the [Unicode Consortium's](https://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WindowsBestFit/) website. Please review the **readme.txt** file in that folder for a description of how to interpret the mapping files.
+> Best-fit strategies are not documented in detail. However, several code pages are documented at the [Unicode Consortium's](https://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WindowsBestFit/) website. Please review the **readme.txt** file in that folder for a description of how to interpret the mapping files.
   
  The following example uses code page 1252 (the Windows code page for Western European languages) to illustrate best-fit mapping and its drawbacks. The <xref:System.Text.Encoding.GetEncoding%28System.Int32%29?displayProperty=nameWithType> method is used to retrieve an encoding object for code page 1252. By default, it uses a best-fit mapping for Unicode characters that it does not support. The example instantiates a string that contains three non-ASCII characters - CIRCLED LATIN CAPITAL LETTER S (U+24C8), SUPERSCRIPT FIVE (U+2075), and INFINITY (U+221E) - separated by spaces. As the output from the example shows, when the string is encoded, the three original non-space characters are replaced by QUESTION MARK (U+003F), DIGIT FIVE (U+0035), and DIGIT EIGHT (U+0038). DIGIT EIGHT is a particularly poor replacement for the unsupported INFINITY character, and QUESTION MARK indicates that no mapping was available for the original character.  
   
@@ -153,7 +153,7 @@ Characters are abstract entities that can be represented in many different ways.
  Best-fit mapping is the default behavior for an <xref:System.Text.Encoding> object that encodes Unicode data into code page data, and there are legacy applications that rely on this behavior. However, most new applications should avoid best-fit behavior for security reasons. For example, applications should not put a domain name through a best-fit encoding.  
   
 > [!NOTE]
->  You can also implement a custom best-fit fallback mapping for an encoding. For more information, see the [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) section.  
+> You can also implement a custom best-fit fallback mapping for an encoding. For more information, see the [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) section.  
   
  If best-fit fallback is the default for an encoding object, you can choose another fallback strategy when you retrieve an <xref:System.Text.Encoding> object by calling the <xref:System.Text.Encoding.GetEncoding%28System.Int32%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> or <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> overload. The following section includes an example that replaces each character that cannot be mapped to code page 1252 with an asterisk (*).  
   
@@ -173,7 +173,7 @@ Characters are abstract entities that can be represented in many different ways.
  [!code-vb[Conceptual.Encoding#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/bestfit1a.vb#3)]  
   
 > [!NOTE]
->  You can also implement a replacement class for an encoding. For more information, see the [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) section.  
+> You can also implement a replacement class for an encoding. For more information, see the [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) section.  
   
  In addition to QUESTION MARK (U+003F), the Unicode REPLACEMENT CHARACTER (U+FFFD) is commonly used as a replacement string, particularly when decoding byte sequences that cannot be successfully translated into Unicode characters. However, you are free to choose any replacement string, and it can contain multiple characters.  
   
@@ -185,7 +185,7 @@ Characters are abstract entities that can be represented in many different ways.
  [!code-vb[Conceptual.Encoding#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/exceptionascii.vb#4)]  
   
 > [!NOTE]
->  You can also implement a custom exception handler for an encoding operation. For more information, see the [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) section.  
+> You can also implement a custom exception handler for an encoding operation. For more information, see the [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) section.  
   
  The <xref:System.Text.EncoderFallbackException> and <xref:System.Text.DecoderFallbackException> objects provide the following information about the condition that caused the exception:  
   

@@ -109,7 +109,7 @@ public class AsyncExample
  If you use the multiple-invocation overloads, your code will need to keep track of the `userState` objects (task IDs) for pending tasks. For each call to `Method1Async(string param, object userState)`, you will typically generate a new, unique `userState` object and add it to a collection. When the task corresponding to this `userState` object raises the completion event, your completion method implementation will examine <xref:System.ComponentModel.AsyncCompletedEventArgs.UserState%2A?displayProperty=nameWithType> and remove it from your collection. Used this way, the `userState` parameter takes the role of a task ID.  
   
 > [!NOTE]
->  You must be careful to provide a unique value for `userState` in your calls to multiple-invocation overloads. Non-unique task IDs will cause the asynchronous class throw an <xref:System.ArgumentException>.  
+> You must be careful to provide a unique value for `userState` in your calls to multiple-invocation overloads. Non-unique task IDs will cause the asynchronous class throw an <xref:System.ArgumentException>.  
   
 ### Canceling Pending Operations  
  It is important to be able to cancel asynchronous operations at any time before their completion. Classes that implement the Event-based Asynchronous Pattern will have a `CancelAsync` method (if there is only one asynchronous method) or a _MethodName_**AsyncCancel** method (if there are multiple asynchronous methods).  

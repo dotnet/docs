@@ -20,7 +20,7 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
  This tutorial assumes a basic familiarity with both [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programming. For a basic introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] programming, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md). For an introduction to [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
   
 > [!NOTE]
->  This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995).  
+> This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995).  
   
 <a name="creating_the_host_win32_window"></a>   
 ## Creating the Host Win32 Window  
@@ -32,7 +32,7 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
  [!code-vb[VisualsHitTesting#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsHitTesting/VisualBasic/MyWindow.vb#101)]  
   
 > [!NOTE]
->  The value of the <xref:System.Windows.Interop.HwndSourceParameters.ExtendedWindowStyle%2A> property cannot be set to WS_EX_TRANSPARENT. This means that the host [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window cannot be transparent. For this reason, the background color of the host [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window is set to the same background color as its parent window.  
+> The value of the <xref:System.Windows.Interop.HwndSourceParameters.ExtendedWindowStyle%2A> property cannot be set to WS_EX_TRANSPARENT. This means that the host [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window cannot be transparent. For this reason, the background color of the host [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window is set to the same background color as its parent window.  
   
 <a name="adding_visual_objects_to_the_host_win32_window"></a>   
 ## Adding Visual Objects to the Host Win32 Window  
@@ -41,7 +41,7 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
  The following example shows the code for creating the <xref:System.Windows.Interop.HwndSource> object and adding visual objects to it.  
   
 > [!NOTE]
->  The <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property of the <xref:System.Windows.Interop.HwndSource> object is set to the first visual object added to the host [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. The root visual object defines the top-most node of the visual object tree. Any subsequent visual objects added to the host [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window are added as child objects.  
+> The <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property of the <xref:System.Windows.Interop.HwndSource> object is set to the first visual object added to the host [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. The root visual object defines the top-most node of the visual object tree. Any subsequent visual objects added to the host [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window are added as child objects.  
   
  [!code-csharp[VisualsHitTesting#100](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsHitTesting/CSharp/MyWindow.cs#100)]
  [!code-vb[VisualsHitTesting#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsHitTesting/VisualBasic/MyWindow.vb#100)]  

@@ -164,7 +164,7 @@ After the initial architecture and patterns explanation sections, the next secti
 
 ## Additional resources
 
-- **Charles Richardson. Pattern: API Gateway / Backend for Front-End** \
+- **Chris  Richardson. Pattern: API Gateway / Backend for Front-End** \
   <https://microservices.io/patterns/apigateway.html>
 
 - **API Gateway pattern** \

@@ -86,14 +86,14 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
 4. **Create an inner rectangle:** Now, create another rectangle (name it "innerRectangle") and position it symmetrically on the inside of **outerRectangle** . For this kind of work, you will probably want to zoom to make the button larger in the editing area.  
   
     > [!NOTE]
-    >  Your rectangle might look different than the one in the figure (for example, it might have rounded corners).  
+    > Your rectangle might look different than the one in the figure (for example, it might have rounded corners).  
   
      ![How to create a rectangle inside another rectangle](./media/custom-button-blend-innerrectangleproperties.png "custom_button_blend_innerRectangleProperties")  
   
 5. **Move ContentPresenter to the top:** At this point, it is possible that the text "Button" will not be visible any longer. If this is so, this is because **innerRectangle** is on top of the **myContentPresenter**. To fix this, drag **myContentPresenter** below **innerRectangle**. Reposition rectangles and **myContentPresenter** to look similar to below.  
   
     > [!NOTE]
-    >  Alternatively, you can also position **myContentPresenter** on top by right-clicking it and pressing **Send Forward**.  
+    > Alternatively, you can also position **myContentPresenter** on top by right-clicking it and pressing **Send Forward**.  
   
      ![How to move one button on top of another button](./media/custom-button-blend-innerrectangle2.png "custom_button_blend_innerRectangle2")  
   
@@ -161,7 +161,7 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
      ![How to blur the content of a button](./media/custom-button-blend-propertytriggerwithbitmapeffect.png "custom_button_blend_PropertyTriggerWithBitMapEffect")  
   
     > [!NOTE]
-    >  To return the **Properties panel** back to what it was before you did the search for <xref:System.Windows.Media.Effects.BitmapEffect>, clear the text from the **Search box**.  
+    > To return the **Properties panel** back to what it was before you did the search for <xref:System.Windows.Media.Effects.BitmapEffect>, clear the text from the **Search box**.  
   
      At this point, we have used a property trigger with several associated actions to create highlighting behavior for when the mouse pointer enters and leaves the button area. Another typical behavior for a button is to highlight when it has focus (as after it is clicked). We can add such behavior by adding another property trigger for the <xref:System.Windows.UIElement.IsFocused%2A> property.  
   
@@ -186,7 +186,7 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
      After you press **OK** to create a new timeline, a **Timeline Panel** appears and "Timeline recording is on" is visible in the design panel. This means we can start recording property changes in the timeline (animate property changes).  
   
     > [!NOTE]
-    >  You may need to resize your window and/or panels to see the display.  
+    > You may need to resize your window and/or panels to see the display.  
   
      ![The timeline panel](./media/custom-button-blend-mouseovereventtrigger3.png "custom_button_blend_MouseOverEventTrigger3")  
   

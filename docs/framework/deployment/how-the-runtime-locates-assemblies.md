@@ -39,7 +39,7 @@ To successfully deploy your .NET Framework application, you must understand how 
 2. [Checks whether the assembly name has been bound to before](#step2) and, if so, uses the previously loaded assembly. If a previous request to load the assembly failed, the request is failed immediately without attempting to load the assembly.  
   
     > [!NOTE]
-    >  The caching of assembly binding failures is new in the .NET Framework version 2.0.  
+    > The caching of assembly binding failures is new in the .NET Framework version 2.0.  
   
 3. [Checks the global assembly cache](#step3). If the assembly is found there, the runtime uses this assembly.  
   

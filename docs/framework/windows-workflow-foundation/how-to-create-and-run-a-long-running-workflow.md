@@ -42,7 +42,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
 1. Open SQL Server Management Studio and connect to the local server, for example **.\SQLEXPRESS**. Right-click the **Databases** node on the local server, and select **New Database**. Name the new database **WF45GettingStartedTutorial**, accept all other values, and select **OK**.  
   
     > [!NOTE]
-    >  Ensure that you have **Create Database** permission on the local server before creating the database.  
+    > Ensure that you have **Create Database** permission on the local server before creating the database.  
   
 2. Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\v4.0.30319\sql\en`  
   
@@ -97,7 +97,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     |**GroupBox**|Location: 13, 67<br /><br /> Size: 358, 287<br /><br /> Text: Game|  
   
     > [!NOTE]
-    >  When adding the following controls, put them into the GroupBox.  
+    > When adding the following controls, put them into the GroupBox.  
   
     |Control|Property: Value|  
     |-------------|---------------------|  
@@ -153,7 +153,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     ```  
   
     > [!NOTE]
-    >  If your connection string is different, update `connectionString` to refer to your database.  
+    > If your connection string is different, update `connectionString` to refer to your database.  
   
 4. Add a `WorkflowInstanceId` property to the `WorkflowFormHost` class.  
   

@@ -56,7 +56,7 @@ A service must be run from within the context of the Services Control Manager ra
 9. Choose the appropriate options, and then choose **OK** to close the dialog box.  
   
     > [!NOTE]
-    >  You are now in debug mode.  
+    > You are now in debug mode.  
   
 10. Set any breakpoints you want to use in your code.  
   

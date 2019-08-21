@@ -55,7 +55,7 @@ This topic describes how to create a long-running workflow service. Long running
 5. Select the **Sequential Service** activity and click the **Variables** link and add the variables shown in the following illustration. Doing this adds some variables that will be used later on in the workflow service.
 
     > [!NOTE]
-    >  If CorrelationHandle is not in the Variable Type drop-down, select **Browse for types** from the drop-down. Type CorrelationHandle in the **Type name** box, select CorrelationHandle from the listbox and click **OK**.
+    > If CorrelationHandle is not in the Variable Type drop-down, select **Browse for types** from the drop-down. Type CorrelationHandle in the **Type name** box, select CorrelationHandle from the listbox and click **OK**.
 
      ![Add Variables](./media/creating-a-long-running-workflow-service/add-variables-sequential-service-activity.gif "Add variables to the Sequential Service activity.")
 

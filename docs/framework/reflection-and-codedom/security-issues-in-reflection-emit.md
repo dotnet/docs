@@ -107,7 +107,7 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
 - If you associate the dynamic method with a type or module in another assembly, the constructor demands two things: <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag, and the grant set of the assembly that contains the other module. That is, your call stack must include all the permissions in the grant set of the target module, plus <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType>.  
   
     > [!NOTE]
-    >  For backward compatibility, if the demand for the target grant set plus <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> fails, the constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag.  
+    > For backward compatibility, if the demand for the target grant set plus <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> fails, the constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag.  
   
  Although the items in this list are described in terms of the grant set of the emitting assembly, remember that the demands are made against the full call stack, including the application domain boundary.  
   

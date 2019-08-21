@@ -44,7 +44,7 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
 - It replaces the full CLR with a refactored runtime that primarily contains the garbage collector. The refactored runtime is found in a library named mrt100_app.dll that is local to the app and is only a few hundred kilobytes in size. This is possible because static linking eliminates the need for many of the services performed by the common language runtime.  
   
     > [!NOTE]
-    >  .NET Native uses the same garbage collector as the standard common language runtime. In the .NET Native garbage collector, background garbage collection is enabled by default. For more information about garbage collection, see [Fundamentals of Garbage Collection](../../standard/garbage-collection/fundamentals.md).  
+    > .NET Native uses the same garbage collector as the standard common language runtime. In the .NET Native garbage collector, background garbage collection is enabled by default. For more information about garbage collection, see [Fundamentals of Garbage Collection](../../standard/garbage-collection/fundamentals.md).  
   
 > [!IMPORTANT]
 > .NET Native compiles an entire application to a native application. It does not allow you to compile a single assembly that contains a class library to native code so that it can be called independently from managed code.  

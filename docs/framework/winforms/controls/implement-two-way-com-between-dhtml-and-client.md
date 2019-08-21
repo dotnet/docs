@@ -43,7 +43,7 @@ The <xref:System.Windows.Forms.WebBrowser> control lets you implement two-way co
      The following code uses the form class itself for the scripting object.
 
     > [!NOTE]
-    >  Component Object Model (COM) must be able to access the scripting object. To make your form visible to COM, add the <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute to your form class.
+    > Component Object Model (COM) must be able to access the scripting object. To make your form visible to COM, add the <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute to your form class.
 
      [!code-csharp[System.Windows.Forms.WebBrowser.ObjectForScripting#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/CS/form1.cs#4)]
      [!code-vb[System.Windows.Forms.WebBrowser.ObjectForScripting#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/vb/form1.vb#4)]

@@ -36,7 +36,7 @@ After a service is installed, it must be started. Starting calls the <xref:Syste
     >  To prevent your service from being started at all, you can set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to **Disabled**. You might do this if you are going to reboot a server several times and want to save time by preventing the services that would normally start from starting up.  
   
     > [!NOTE]
-    >  These and other properties can be changed after your service is installed.  
+    > These and other properties can be changed after your service is installed.  
   
      There are several ways you can start a service that has its <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> process set to **Manual** — from **Server Explorer**, from the **Windows Services Control Manager**, or from code. It is important to note that not all of these methods actually start the service in the context of the **Services Control Manager**; **Server Explorer** and programmatic methods of starting the service actually manipulate the controller.  
   

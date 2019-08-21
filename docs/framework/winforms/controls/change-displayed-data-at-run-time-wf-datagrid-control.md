@@ -22,7 +22,7 @@ ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
 1. Specify the desired table from the <xref:System.Data.DataSet> object and the desired row and field from the table and set the cell equal to the new value.  
   
     > [!NOTE]
-    >  To specify the first table of the <xref:System.Data.DataSet> or the first row of the table, use 0.  
+    > To specify the first table of the <xref:System.Data.DataSet> or the first row of the table, use 0.  
   
      The following example shows how to change the second entry of the first row of the first table of a dataset by clicking `Button1`. The <xref:System.Data.DataSet> (`ds`) and Tables (`0` and `1`) were previously created.  
   

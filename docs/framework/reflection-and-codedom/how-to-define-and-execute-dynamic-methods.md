@@ -32,7 +32,7 @@ The following procedures show how to define and execute a simple dynamic method 
 3. Create a <xref:System.Reflection.Emit.DynamicMethod>. In this example the method is named `SquareIt`.  
   
     > [!NOTE]
-    >  It is not necessary to give dynamic methods names, and they cannot be invoked by name. Multiple dynamic methods can have the same name. However, the name appears in call stacks and can be useful for debugging.  
+    > It is not necessary to give dynamic methods names, and they cannot be invoked by name. Multiple dynamic methods can have the same name. However, the name appears in call stacks and can be useful for debugging.  
   
      The type of the return value is specified as `long`. The method is associated with the module that contains the `Example` class, which contains the example code. Any loaded module could be specified. The dynamic method acts like a module-level `static` method (`Shared` in Visual Basic).  
   
@@ -85,7 +85,7 @@ The following procedures show how to define and execute a simple dynamic method 
 5. Create an instance of the delegate (declared in step 1) that represents the dynamic method by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%28System.Type%2CSystem.Object%29> method overload. Creating the delegate completes the method, and any further attempts to change the method — for example, adding more MSIL — are ignored.  
   
     > [!NOTE]
-    >  You can call the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> method multiple times to create delegates bound to other instances of the target type.  
+    > You can call the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> method multiple times to create delegates bound to other instances of the target type.  
   
      The following code binds the method to a new instance of the `Example` class whose private test field is set to 42. That is, each time the delegate is invoked the instance of `Example` is passed to the first parameter of the method.  
   

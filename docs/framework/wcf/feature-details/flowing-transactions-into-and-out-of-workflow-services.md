@@ -89,7 +89,7 @@ Workflow services and clients can participate in transactions.  For a service op
      ![Adding variables to the TransactedReceiveScope](./media/flowing-transactions-into-and-out-of-workflow-services/add-transactedreceivescope-variables.jpg)  
   
     > [!NOTE]
-    >  You can delete the data variable that is there by default. You can also use the existing handle variable.  
+    > You can delete the data variable that is there by default. You can also use the existing handle variable.  
   
 6. Drag and drop a <xref:System.ServiceModel.Activities.Receive> activity within the **Request** section of the <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity. Set the following properties:  
   

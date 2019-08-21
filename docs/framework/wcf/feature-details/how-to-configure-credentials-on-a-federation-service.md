@@ -27,7 +27,7 @@ In Windows Communication Foundation (WCF), creating a federated service consists
 3. Populate the collection returned by the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> property with instances of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class. Each instance represents an issuer from which the service will authenticate tokens.  
   
     > [!NOTE]
-    >  Unlike the client-side collection returned by the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property, the known certificates collection is not a keyed collection. The service accepts the tokens that the specified certificates issue regardless of the address of the client that sent the message containing the issued token (subject to the further constraints, which are described later in this topic).  
+    > Unlike the client-side collection returned by the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property, the known certificates collection is not a keyed collection. The service accepts the tokens that the specified certificates issue regardless of the address of the client that sent the message containing the issued token (subject to the further constraints, which are described later in this topic).  
   
 4. Set the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> property to one of the <xref:System.ServiceModel.Security.X509CertificateValidationMode> enumeration values. This can be done only in code. The default is <xref:System.IdentityModel.Selectors.X509CertificateValidator.ChainTrust%2A>.  
   

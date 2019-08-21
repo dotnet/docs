@@ -28,10 +28,10 @@ After developing some new WCF services, you may decide that you want to be able 
 3. Run the Visual Basic application or script.  
   
     > [!NOTE]
-    >  The service you are calling must expose a Mex endpoint for the moniker to be able to read the metadata from the service. For more information, see [How to: Publish Metadata for a Service Using a Configuration File](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md).  
+    > The service you are calling must expose a Mex endpoint for the moniker to be able to read the metadata from the service. For more information, see [How to: Publish Metadata for a Service Using a Configuration File](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md).  
   
     > [!NOTE]
-    >  If the moniker is malformed or if the service is unavailable, the call to `GetObject` will return an error saying "Invalid Syntax."  If you receive this error, make sure the moniker you are using is correct and the service is available.  
+    > If the moniker is malformed or if the service is unavailable, the call to `GetObject` will return an error saying "Invalid Syntax."  If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
 ## See also
 

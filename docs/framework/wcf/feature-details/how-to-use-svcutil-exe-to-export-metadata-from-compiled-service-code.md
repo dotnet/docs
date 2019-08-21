@@ -22,7 +22,7 @@ Svcutil.exe can export metadata for services, contracts, and data types in compi
 2. Run Svcutil.exe on the compiled assemblies.  
   
     > [!NOTE]
-    >  You might need to use the `/reference` switch to specify the file path to any dependent assemblies.  
+    > You might need to use the `/reference` switch to specify the file path to any dependent assemblies.  
   
     ```  
     svcutil.exe Contracts.dll  
@@ -50,7 +50,7 @@ Svcutil.exe can export metadata for services, contracts, and data types in compi
 3. Run Svcutil.exe on the compiled service executable using the `/serviceName` switch to specify the configuration name of the service.  
   
     > [!NOTE]
-    >  You might need to use the `/reference` switch to specify the file path to any dependent assemblies.  
+    > You might need to use the `/reference` switch to specify the file path to any dependent assemblies.  
   
     ```  
     svcutil.exe /serviceName:MyService Service.exe /reference:path/Contracts.dll  
@@ -63,7 +63,7 @@ Svcutil.exe can export metadata for services, contracts, and data types in compi
 2. Run Svcutil.exe on the compiled assemblies using the `/dataContract` switch to specify that only metadata for data contracts should be generated.  
   
     > [!NOTE]
-    >  You might need to use the `/reference` switch to specify the file path to any dependent assemblies.  
+    > You might need to use the `/reference` switch to specify the file path to any dependent assemblies.  
   
     ```  
     svcutil.exe /dataContractOnly Contracts.dll  

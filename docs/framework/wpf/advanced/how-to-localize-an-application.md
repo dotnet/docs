@@ -102,7 +102,7 @@ This tutorial explains how to create a localized application by using the LocBam
     - **verbose:** Displays verbose mode information.  
   
     > [!NOTE]
-    >  If you need a list of the options when you are running the tool, type     **LocBaml.exe** and press ENTER.  
+    > If you need a list of the options when you are running the tool, type     **LocBaml.exe** and press ENTER.  
   
 <a name="parse_dll"></a>   
 ## Use LocBaml to Parse a File  
@@ -115,7 +115,7 @@ This tutorial explains how to create a localized application by using the LocBam
      **LocBaml.exe /parse HelloApp.resources.dll /out:Hello.csv**  
   
     > [!NOTE]
-    >  If the input file, HelloApp.resources.dll, is not in the same directory as LocBaml.exe move one of the files so that both files are in the same directory.  
+    > If the input file, HelloApp.resources.dll, is not in the same directory as LocBaml.exe move one of the files so that both files are in the same directory.  
   
 3. When you run LocBaml to parse files, the output consists of seven fields delimited by commas (.csv files) or tabs (.txt files). The following shows the parsed .csv file for the HelloApp.resources.dll:
 
@@ -166,7 +166,7 @@ This tutorial explains how to create a localized application by using the LocBam
      **LocBaml.exe /generate HelloApp.resources.dll /trans:Hello.csv /out:c:\ /cul:en-US**  
   
     > [!NOTE]
-    >  If the input file, Hello.csv, is not in the same directory as the executable, LocBaml.exe, move one of the files so that both files are in the same directory.  
+    > If the input file, Hello.csv, is not in the same directory as the executable, LocBaml.exe, move one of the files so that both files are in the same directory.  
   
 2. Replace the old HelloApp.resources.dll file in the C:\HelloApp\Bin\Debug\en-US\HelloApp.resources.dll directory with your newly created HelloApp.resources.dll file.  
   

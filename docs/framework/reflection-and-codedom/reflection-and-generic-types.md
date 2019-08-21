@@ -26,7 +26,7 @@ ms.author: "ronpet"
 - The type parameters of generic type definitions and generic method definitions are represented by instances of the <xref:System.Type> class.  
   
     > [!NOTE]
-    >  Many properties and methods of <xref:System.Type> have different behavior when a <xref:System.Type> object represents a generic type parameter. These differences are documented in the property and method topics. For example, see <xref:System.Type.IsAutoClass%2A> and <xref:System.Type.DeclaringType%2A>. In addition, some members are valid only when a <xref:System.Type> object represents a generic type parameter. For example, see <xref:System.Type.GetGenericTypeDefinition%2A>.  
+    > Many properties and methods of <xref:System.Type> have different behavior when a <xref:System.Type> object represents a generic type parameter. These differences are documented in the property and method topics. For example, see <xref:System.Type.IsAutoClass%2A> and <xref:System.Type.DeclaringType%2A>. In addition, some members are valid only when a <xref:System.Type> object represents a generic type parameter. For example, see <xref:System.Type.GetGenericTypeDefinition%2A>.  
   
 - If an instance of <xref:System.Type> represents a generic type, then it includes an array of types that represent the type parameters (for generic type definitions) or the type arguments (for constructed types). The same is true of an instance of the <xref:System.Reflection.MethodInfo> class that represents a generic method.  
   

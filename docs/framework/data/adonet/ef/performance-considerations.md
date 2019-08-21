@@ -52,7 +52,7 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
 - Queries against a conceptual model that seem simple may result in the execution of more complex queries against the data source. This can occur because the Entity Framework translates a query against a conceptual model into an equivalent query against the data source. When a single entity set in the conceptual model maps to more than one table in the data source, or when a relationship between entities is mapped to a join table, the query command executed against the data source query may require one or more joins.  
   
     > [!NOTE]
-    >  Use the <xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method of the <xref:System.Data.Objects.ObjectQuery%601> or <xref:System.Data.EntityClient.EntityCommand> classes to view the commands that are executed against the data source for a given query. For more information, see [How to: View the Store Commands](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896348(v=vs.100)).  
+    > Use the <xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method of the <xref:System.Data.Objects.ObjectQuery%601> or <xref:System.Data.EntityClient.EntityCommand> classes to view the commands that are executed against the data source for a given query. For more information, see [How to: View the Store Commands](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896348(v=vs.100)).  
   
 - Nested Entity SQL queries may create joins on the server and can return a large number of rows.  
   

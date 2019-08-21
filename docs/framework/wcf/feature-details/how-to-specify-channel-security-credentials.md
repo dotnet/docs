@@ -81,7 +81,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 4. Run the Visual Basic application and verify the results. The Visual Basic application will display a message box with the result from calling Add(3, 4).  
   
     > [!NOTE]
-    >  The binding specified in the service moniker in this sample has been changed to WSHttpBinding_ICalculator. Also note that you must supply a valid user name and password in the call to <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetUserNameCredential%28System.String%2CSystem.String%29>.  
+    > The binding specified in the service moniker in this sample has been changed to WSHttpBinding_ICalculator. Also note that you must supply a valid user name and password in the call to <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetUserNameCredential%28System.String%2CSystem.String%29>.  
   
 ### To specify Windows Credentials  
   
@@ -105,7 +105,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 3. Run the Visual Basic application and verify the results. The Visual Basic application will display a message box with the result from calling Add(3, 4).  
   
     > [!NOTE]
-    >  You must replace "domain", "userID", and "password" with valid values.  
+    > You must replace "domain", "userID", and "password" with valid values.  
   
 ### To specify an issue token  
   

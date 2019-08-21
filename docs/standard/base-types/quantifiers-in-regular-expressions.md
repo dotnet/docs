@@ -179,7 +179,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\(??`|Match zero or one occurrence of the opening parenthesis.|  
   
 ### Match Exactly n Times (Lazy Match): {n}?  
- The `{`*n*`}?` quantifier matches the preceding element exactly `n` times, where *n* is any integer. It is the lazy counterpart of the greedy quantifier `{`*n*`}+`.  
+ The `{`*n*`}?` quantifier matches the preceding element exactly `n` times, where *n* is any integer. It is the lazy counterpart of the greedy quantifier `{`*n*`}`.  
   
  In the following example, the regular expression `\b(\w{3,}?\.){2}?\w{3,}?\b` is used to identify a Web site address. Note that it matches "www.microsoft.com" and "msdn.microsoft.com", but does not match "mywebsite" or "mycompany.com".  
   

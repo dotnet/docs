@@ -79,7 +79,7 @@ The following sections explain how to construct pack [!INCLUDE[TLA2#tla_uri#plur
 
 ## Resource File Pack URIs
 
-Resource files are configured as MSBuild`Resource` items and are compiled into assemblies. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] supports the construction of pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that can be used to identify resource files that are either compiled into the local assembly or compiled into an assembly that is referenced from the local assembly.
+Resource files are configured as MSBuild `Resource` items and are compiled into assemblies. WPF supports the construction of pack URIs that can be used to identify resource files that are either compiled into the local assembly or compiled into an assembly that is referenced from the local assembly.
 
 <a name="Local_Assembly_Resource_File"></a>
 
@@ -180,7 +180,7 @@ The following example shows the pack [!INCLUDE[TLA2#tla_uri](../../../../include
 
 ## Page Files
 
-[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files that are configured as MSBuild`Page` items are compiled into assemblies in the same way as resource files. Consequently, MSBuild`Page` items can be identified using pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] for resource files.
+XAML files that are configured as MSBuild `Page` items are compiled into assemblies in the same way as resource files. Consequently, MSBuild `Page` items can be identified using pack URIs for resource files.
 
 The types of [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files that are commonly configured as MSBuild`Page` items have one of the following as their root element:
 

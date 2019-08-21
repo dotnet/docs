@@ -54,7 +54,7 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
  See the [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) for an example of using this element.  
   
 > [!NOTE]
->  If you add the <xref:System.Object> type as a `<declaredType>`, a <xref:System.Configuration.ConfigurationErrorsException> is thrown. This is because the <xref:System.Object> type cannot be used as a declared type in configuration.  
+> If you add the <xref:System.Object> type as a `<declaredType>`, a <xref:System.Configuration.ConfigurationErrorsException> is thrown. This is because the <xref:System.Object> type cannot be used as a declared type in configuration.  
   
 ## Example  
   

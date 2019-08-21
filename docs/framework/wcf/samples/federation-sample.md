@@ -76,7 +76,7 @@ This sample demonstrates federated security.
  See the following instructions about how to set up and run this sample.  
   
 > [!NOTE]
->  You must have Write permissions to the **wwwroot** directory to run this sample.  
+> You must have Write permissions to the **wwwroot** directory to run this sample.  
   
 #### To set up, build, and run the sample  
   

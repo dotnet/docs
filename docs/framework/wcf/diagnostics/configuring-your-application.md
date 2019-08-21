@@ -21,7 +21,7 @@ Windows Communication Foundation (WCF) uses the .NET configuration system and al
  To edit the configuration file of a WCF service project in Visual Studio, right click it in **Solution Explorer** and choose the **Edit WCF Config** context menu item. This launches the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md).  
   
 > [!NOTE]
->  If you edit the configuration file of a WCF Web Service project in Visual Studio by right-clicking it in **Solution Explorer**, notice that the **Edit WCF Config** context menu item is missing. To workaround this issue, click the **Tools** menu, and choose **WCF Service Config Editor**. After that, you can right-click a configuration file and use the **Edit WCF Config** context menu item.  
+> If you edit the configuration file of a WCF Web Service project in Visual Studio by right-clicking it in **Solution Explorer**, notice that the **Edit WCF Config** context menu item is missing. To workaround this issue, click the **Tools** menu, and choose **WCF Service Config Editor**. After that, you can right-click a configuration file and use the **Edit WCF Config** context menu item.  
   
 ## See also
 

@@ -20,7 +20,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 ```  
   
 > [!NOTE]
->  Logins are distinct from database users. You must map logins or Windows groups to database users or roles in a separate operation. You then grant permissions to users or roles to access database objects.  
+> Logins are distinct from database users. You must map logins or Windows groups to database users or roles in a separate operation. You then grant permissions to users or roles to access database objects.  
   
 ## Authentication Scenarios  
  Windows authentication is usually the best choice in the following situations:  
@@ -40,7 +40,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 - Internet applications, such as ASP.NET.  
   
 > [!NOTE]
->  Specifying Windows authentication does not disable SQL Server logins. Use the ALTER LOGIN DISABLE Transact-SQL statement to disable highly-privileged SQL Server logins.  
+> Specifying Windows authentication does not disable SQL Server logins. Use the ALTER LOGIN DISABLE Transact-SQL statement to disable highly-privileged SQL Server logins.  
   
 ## Login Types  
  SQL Server supports three types of logins:  
@@ -52,7 +52,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 - SQL Server login. SQL Server stores both the username and a hash of the password in the master database, by using internal authentication methods to verify login attempts.  
   
 > [!NOTE]
->  SQL Server provides logins created from certificates or asymmetric keys that are used only for code signing. They cannot be used to connect to SQL Server.  
+> SQL Server provides logins created from certificates or asymmetric keys that are used only for code signing. They cannot be used to connect to SQL Server.  
   
 ## Mixed Mode Authentication  
  If you must use mixed mode authentication, you must create SQL Server logins, which are stored in SQL Server. You then have to supply the SQL Server user name and password at run time.  

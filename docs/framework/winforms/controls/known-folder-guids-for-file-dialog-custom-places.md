@@ -11,7 +11,7 @@ ms.assetid: d8d8b544-8b4d-4da5-ba3a-b05e93244778
 You use a <xref:System.Guid> to specify a [!INCLUDE[wiprlhext](../../../../includes/wiprlhext-md.md)] Known Folder when you add folders to a <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> collection. Known Folder GUIDs are not case sensitive and are defined in the KnownFolders.h file in the Windows SDK.  
   
 > [!NOTE]
->  In some cases, a Known Folder added to the <xref:System.Windows.Forms.FileDialogCustomPlacesCollection> will not be shown in the **Favorite Links** area. For example, if the specified Known Folder is not present on the computer that is running the application, the Known Folder is not shown.  
+> In some cases, a Known Folder added to the <xref:System.Windows.Forms.FileDialogCustomPlacesCollection> will not be shown in the **Favorite Links** area. For example, if the specified Known Folder is not present on the computer that is running the application, the Known Folder is not shown.  
   
 ## List of GUIDs  
  The following table lists [!INCLUDE[wiprlhext](../../../../includes/wiprlhext-md.md)] Known Folders and their associated <xref:System.Guid>.  

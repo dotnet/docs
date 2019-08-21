@@ -94,7 +94,7 @@ End Try
 ```  
   
 > [!NOTE]
->  The code inside the `Using` block should not assign the object in `resourcename` to another variable. When you exit the `Using` block, the resource is disposed, and the other variable cannot access the resource to which it points.  
+> The code inside the `Using` block should not assign the object in `resourcename` to another variable. When you exit the `Using` block, the resource is disposed, and the other variable cannot access the resource to which it points.  
   
 ## Example  
  The following example creates a file that is named log.txt and writes two lines of text to the file. The example also reads that same file and displays the lines of text.  

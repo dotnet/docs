@@ -21,10 +21,10 @@ ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
 5. On the **Build** menu, click **Build Solution**.  
   
 > [!NOTE]
->  The first five steps in this list are optional. The .NET Framework runtime will automatically generate the Web service the first time the service is requested.  
+> The first five steps in this list are optional. The .NET Framework runtime will automatically generate the Web service the first time the service is requested.  
   
 > [!NOTE]
->  The following steps are required to build the sample.  
+> The following steps are required to build the sample.  
   
 1. Open File Explorer and navigate to the \CS subdirectory.  
   

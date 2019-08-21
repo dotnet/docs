@@ -32,7 +32,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  Primitive types, as well as certain types treated as primitives (for example, <xref:System.DateTime> and <xref:System.Xml.XmlElement>) are always "known" and never have to be added through this mechanism. However, arrays of primitive types have to be added explicitly. Most collections are considered equivalent to arrays. (Non-generic collections are considered equivalent to arrays of <xref:System.Object>). For an example of the using primitives, primitive arrays, and primitive collections, see Example 4.  
   
 > [!NOTE]
->  Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types.  
+> Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types.  
   
 ## Examples  
  The following examples show the <xref:System.Runtime.Serialization.KnownTypeAttribute> class in use.  

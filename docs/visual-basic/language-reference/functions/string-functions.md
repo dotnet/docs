@@ -71,7 +71,7 @@ The following table lists the functions that Visual Basic provides to search and
  This example shows various uses of the `Format` function to format values using both `String` formats and user-defined formats. For the date separator (`/`), time separator (`:`), and the AM/PM indicators (`t` and `tt`), the actual formatted output displayed by your system depends on the locale settings the code is using. When times and dates are displayed in the development environment, the short time format and short date format of the code locale are used.  
   
 > [!NOTE]
->  For locales that use a 24-hour clock, the AM/PM indicators (`t` and `tt`) display nothing.  
+> For locales that use a 24-hour clock, the AM/PM indicators (`t` and `tt`) display nothing.  
   
  [!code-vb[VbVbalrStrings#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#27)]  
   

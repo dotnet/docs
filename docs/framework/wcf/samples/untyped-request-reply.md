@@ -7,7 +7,7 @@ ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
 This sample demonstrates how to define operation contracts that use the Message class.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). The service contract defines one operation that takes in a message type as an argument and returns a message. The operation collects all required data to compute the sum from the message body and then sends the sum as body in the return message.  
   

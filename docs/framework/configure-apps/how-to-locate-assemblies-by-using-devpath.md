@@ -18,7 +18,7 @@ Developers might want to make sure that a shared assembly they are building work
  The shared assembly must be discoverable by the runtime.  To specify a private directory for resolving assembly references use the [\<codeBase> Element](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) or [\<probing> Element](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) in a configuration file, as described in [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md).  You can also put the assembly in a subdirectory of the application directory. For more information, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   
 > [!NOTE]
->  This is an advanced feature, intended only for development.  
+> This is an advanced feature, intended only for development.  
   
  The following example shows how to cause the runtime to search for assemblies in directories specified by the DEVPATH environment variable.  
   
@@ -35,7 +35,7 @@ Developers might want to make sure that a shared assembly they are building work
  This setting defaults to false.  
   
 > [!NOTE]
->  Use this setting only at development time. The runtime does not check the versions on strong-named assemblies found in the DEVPATH. It simply uses the first assembly it finds.  
+> Use this setting only at development time. The runtime does not check the versions on strong-named assemblies found in the DEVPATH. It simply uses the first assembly it finds.  
   
 ## See also
 

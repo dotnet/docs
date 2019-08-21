@@ -14,7 +14,7 @@ ms.assetid: 5001227e-9326-48a4-9dcd-ba1b89ee6653
 This tutorial explains how to create a localized application by using the LocBaml tool.  
   
 > [!NOTE]
->  The LocBaml tool is not a production-ready application. It is presented as a sample that uses some of the localization APIs and illustrates how you might write a localization tool.  
+> The LocBaml tool is not a production-ready application. It is presented as a sample that uses some of the localization APIs and illustrates how you might write a localization tool.  
   
 <a name="Introduction"></a>   
 ## Overview  

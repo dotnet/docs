@@ -9,7 +9,7 @@ You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] q
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates the queries you write into equivalent SQL queries and sends them to the server for processing. More specifically, your application uses the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] API to request query execution. The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provider then transforms the query into SQL text and delegates execution to the ADO provider. The ADO provider returns query results as a `DataReader`. The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provider translates the ADO results to an <xref:System.Linq.IQueryable> collection of user objects.  
   
 > [!NOTE]
->  Most methods and operators on .NET Framework built-in types have direct translations to SQL. Those that [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] cannot translate generate run-time exceptions. For more information, see [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md).  
+> Most methods and operators on .NET Framework built-in types have direct translations to SQL. Those that [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] cannot translate generate run-time exceptions. For more information, see [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md).  
   
  The following table shows the similarities and differences between [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query items.  
   

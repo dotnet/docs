@@ -56,7 +56,7 @@ aximp [options]{file.dll | file.ocx}
  Windows Forms proxy for ActiveX controls (where Ax signifies ActiveX): Ax*progid*.dll  
   
 > [!NOTE]
->  If the name of a member of the ActiveX control matches a name defined in the .NET Framework, Aximp.exe will prefix the member name with "Ctl" when it creates the AxHost derived class. For example, if your ActiveX control has a member named "Layout," it is renamed "CtlLayout" in the AxHost derived class because the Layout event is defined within the .NET Framework.  
+> If the name of a member of the ActiveX control matches a name defined in the .NET Framework, Aximp.exe will prefix the member name with "Ctl" when it creates the AxHost derived class. For example, if your ActiveX control has a member named "Layout," it is renamed "CtlLayout" in the AxHost derived class because the Layout event is defined within the .NET Framework.  
   
  You can examine these generated files with tools such as [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md).  
   

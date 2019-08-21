@@ -33,7 +33,7 @@ Return expression
  You can include as many `Return` statements as appropriate in the same procedure.  
   
 > [!NOTE]
->  The code in a `Finally` block runs after a `Return` statement in a `Try` or `Catch` block is encountered, but before that `Return` statement executes. A `Return` statement cannot be included in a `Finally` block.  
+> The code in a `Finally` block runs after a `Return` statement in a `Try` or `Catch` block is encountered, but before that `Return` statement executes. A `Return` statement cannot be included in a `Finally` block.  
   
 ## Example  
  The following example uses the `Return` statement several times to return to the calling code when the procedure does not have to do anything else.  

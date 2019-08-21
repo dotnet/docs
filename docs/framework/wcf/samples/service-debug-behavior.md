@@ -9,7 +9,7 @@ This sample demonstrates how service debug behavior settings can be configured. 
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The Web.config file for the server defines the service debug behavior to enable the help page and exception handling as shown in the following sample.  
   

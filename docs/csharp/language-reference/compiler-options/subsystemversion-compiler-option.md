@@ -8,7 +8,7 @@ ms.assetid: a99fce81-9d92-4813-9874-bee777041445
 Specifies the minimum version of the subsystem on which the generated executable file can run, thereby determining the versions of Windows on which the executable file can run. Most commonly, this option ensures that the executable file can leverage particular security features that aren’t available with older versions of Windows.
 
 > [!NOTE]
->  To specify the subsystem itself, use the [-target](./target-compiler-option.md) compiler option.
+> To specify the subsystem itself, use the [-target](./target-compiler-option.md) compiler option.
 
 ## Syntax
 

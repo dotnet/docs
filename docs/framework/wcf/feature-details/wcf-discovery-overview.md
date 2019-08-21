@@ -154,4 +154,4 @@ class Client
  A discovery proxy can be used to communicate on behalf of the WCF service when the service is not running. The proxy can listen for probe or resolve messages and respond to the client. The client can then send messages directly to the service. When the client sends a message to the service it will be instantiated to respond to the message. For more information about implementing a discovery proxy see, [Implementing a Discovery Proxy](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md).  
   
 > [!NOTE]
->  For WCF Discovery to work correctly, all NICs (Network Interface Controller) should only have 1 IP address.
+> For WCF Discovery to work correctly, all NICs (Network Interface Controller) should only have 1 IP address.

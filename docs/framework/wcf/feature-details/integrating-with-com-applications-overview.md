@@ -9,7 +9,7 @@ ms.assetid: 02c5697f-6e2e-47d6-b715-f3a28aebfbd5
 Windows Communication Foundation (WCF) provides the managed code developer with a rich environment for creating connected applications. However, if you have a substantial investment in unmanaged COM-based code and do not want to migrate, you can still integrate WCF Web services directly into your existing code by using the WCF service moniker. The service moniker can be used from a wide range of COM-based development environments, such as Office VBA, Visual Basic 6.0, or Visual C++ 6.0.  
   
 > [!NOTE]
->  The service moniker uses a WCF communication channel for all communication. The security and identity mechanisms for that channel differ from those used in standard COM and DCOM proxies. In addition, because the service moniker uses a WCF communication channel the default timeout period is one minute for all calls.  
+> The service moniker uses a WCF communication channel for all communication. The security and identity mechanisms for that channel differ from those used in standard COM and DCOM proxies. In addition, because the service moniker uses a WCF communication channel the default timeout period is one minute for all calls.  
   
  The service moniker is used with the `GetObject` function to provide the unmanaged developer with a strongly-typed, COM-specific approach for calling WCF Web services. This requires a local, COM-visible definition of the WCF Web service contract and the binding that is to be used. Like other WCF clients, the service moniker must construct a typed channel to the service, though this channel construction occurs transparently to the COM programmer on the first method call.  
   
@@ -45,7 +45,7 @@ Windows Communication Foundation (WCF) provides the managed code developer with 
 |`serializer`|Specify the use of either the "xml" or "datacontract" serializer.|  
   
 > [!NOTE]
->  Even when used with entirely COM-based clients, the service moniker requires WCF and the supporting .NET Framework 2.0 to be installed on the client computer. It is also critical that client applications that use the service moniker load the appropriate version of the .NET Framework runtime. When using the moniker within Office applications, a configuration file may be required to ensure that the correct framework version is loaded. For example, with Excel, the following text should be placed in a file called Excel.exe.config in the same directory as the Excel.exe file:  
+> Even when used with entirely COM-based clients, the service moniker requires WCF and the supporting .NET Framework 2.0 to be installed on the client computer. It is also critical that client applications that use the service moniker load the appropriate version of the .NET Framework runtime. When using the moniker within Office applications, a configuration file may be required to ensure that the correct framework version is loaded. For example, with Excel, the following text should be placed in a file called Excel.exe.config in the same directory as the Excel.exe file:  
 >   
 >  `<?xml version="1.0" encoding="utf-8"?>`  
 >   

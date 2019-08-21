@@ -11,7 +11,7 @@ You can access your computer's serial ports through the .NET Framework classes i
  The simplest way to create a <xref:System.IO.Ports.SerialPort> object is through the <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A> method.  
   
 > [!NOTE]
->  You cannot use .NET Framework classes to directly access other types of ports, such as parallel ports, USB ports, and so on.  
+> You cannot use .NET Framework classes to directly access other types of ports, such as parallel ports, USB ports, and so on.  
   
 ## Enumerations  
  This table lists and describes the main enumerations used for accessing a serial port:  

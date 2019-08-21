@@ -18,7 +18,7 @@ An event is an action which you can respond to, or "handle," in code. Events can
  The types of events raised by an object vary, but many types are common to most controls. For example, most objects will handle a <xref:System.Windows.Forms.Control.Click> event. If a user clicks a form, code in the form's <xref:System.Windows.Forms.Control.Click> event handler is executed.
 
 > [!NOTE]
->  Many events occur in conjunction with other events. For example, in the course of the <xref:System.Windows.Forms.Control.DoubleClick> event occurring, the <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseUp>, and <xref:System.Windows.Forms.Control.Click> events occur.
+> Many events occur in conjunction with other events. For example, in the course of the <xref:System.Windows.Forms.Control.DoubleClick> event occurring, the <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseUp>, and <xref:System.Windows.Forms.Control.Click> events occur.
 
  For information about how to raise and consume an event, see [Events](../../standard/events/index.md).
 

@@ -42,7 +42,7 @@ This sample demonstrates unwrapped messages. By default, the message body is for
  The unwrapped message does not wrap the `n1` and `n2` parameters in a containing element, they are direct children of the soap body element.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  In this sample, an unwrapped message is created by applying the <xref:System.ServiceModel.MessageContractAttribute> to the service operation parameter type and return value type as shown in the following sample code.  
   

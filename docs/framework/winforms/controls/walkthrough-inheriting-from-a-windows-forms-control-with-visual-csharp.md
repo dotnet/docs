@@ -36,7 +36,7 @@ With Visual C#, you can create powerful custom controls through *inheritance*. T
 8. From the **File** menu, choose **Save All** to save the project.
 
     > [!NOTE]
-    >  A visual designer is no longer available. Because the <xref:System.Windows.Forms.Button> control does its own painting, you are unable to modify its appearance in the designer. Its visual representation will be exactly the same as that of the class it inherits from (that is, <xref:System.Windows.Forms.Button>) unless modified in the code. You can still add components, which have no UI elements, to the design surface.
+    > A visual designer is no longer available. Because the <xref:System.Windows.Forms.Button> control does its own painting, you are unable to modify its appearance in the designer. Its visual representation will be exactly the same as that of the class it inherits from (that is, <xref:System.Windows.Forms.Button>) unless modified in the code. You can still add components, which have no UI elements, to the design surface.
 
 ## Adding a Property to Your Inherited Control
  One possible use of inherited Windows Forms controls is the creation of controls that are identical in look and feel of standard Windows Forms controls, but expose custom properties. In this section, you will add a property called `ButtonValue` to your control.

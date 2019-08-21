@@ -9,12 +9,12 @@ A *complex type* is a template for defining rich, structured properties on [enti
 - A unique name. (Required)  
   
     > [!NOTE]
-    >  The name of a complex type cannot be the same as an entity type name within the same namespace.  
+    > The name of a complex type cannot be the same as an entity type name within the same namespace.  
   
 - Data in the form of one or more [properties](../../../../docs/framework/data/adonet/property.md). (Optional.)  
   
     > [!NOTE]
-    >  A property of a complex type can be another complex type.  
+    > A property of a complex type can be another complex type.  
   
  A complex type is similar to an entity type in that a complex type can carry a data payload in the form of primitive type properties or other complex types. However, there are some key differences between complex types and entity types:  
   

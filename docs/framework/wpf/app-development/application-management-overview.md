@@ -68,7 +68,7 @@ All applications tend to share a common set of functionality that applies to app
 - In code-behind, the class must be a `partial` class with the same name that is specified by the `x:Class` attribute in markup and must derive from <xref:System.Windows.Application>. This allows the code-behind file to be associated with the `partial` class that is generated for the markup file when the application is built (see [Building a WPF Application](building-a-wpf-application-wpf.md)).  
   
 > [!NOTE]
->  When you create a new WPF Application project or WPF Browser Application project using Visual Studio, an application definition is included by default and is defined using both markup and code-behind.  
+> When you create a new WPF Application project or WPF Browser Application project using Visual Studio, an application definition is included by default and is defined using both markup and code-behind.  
   
  This code is the minimum that is required to implement an application definition. However, an additional MSBuild configuration needs to be made to the application definition before building and running the application.  
   
@@ -142,7 +142,7 @@ All applications tend to share a common set of functionality that applies to app
  [!code-vb[AppShowWindowHardSnippets#StartupEventCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/AppShowWindowHardSnippets/VisualBasic/Application.xaml.vb#startupeventcodebehind)]  
   
 > [!NOTE]
->  The first <xref:System.Windows.Window> to be instantiated in a standalone application becomes the main application window by default. This <xref:System.Windows.Window> object is referenced by the <xref:System.Windows.Application.MainWindow%2A?displayProperty=nameWithType> property. The value of the <xref:System.Windows.Application.MainWindow%2A> property can be changed programmatically if a different window than the first instantiated <xref:System.Windows.Window> should be the main window.  
+> The first <xref:System.Windows.Window> to be instantiated in a standalone application becomes the main application window by default. This <xref:System.Windows.Window> object is referenced by the <xref:System.Windows.Application.MainWindow%2A?displayProperty=nameWithType> property. The value of the <xref:System.Windows.Application.MainWindow%2A> property can be changed programmatically if a different window than the first instantiated <xref:System.Windows.Window> should be the main window.  
   
  When an XBAP first starts, it will most likely navigate to a <xref:System.Windows.Controls.Page>. This is shown in the following code.  
   
@@ -164,7 +164,7 @@ All applications tend to share a common set of functionality that applies to app
  This markup has the same effect as the previous code for opening a window.  
   
 > [!NOTE]
->  For more information on navigation, see [Navigation Overview](navigation-overview.md).  
+> For more information on navigation, see [Navigation Overview](navigation-overview.md).  
   
  You need to handle the <xref:System.Windows.Application.Startup> event to open a <xref:System.Windows.Window> if you need to instantiate it using a non-parameterless constructor, or you need to set its properties or subscribe to its events before showing it, or you need to process any command-line arguments that were supplied when the application was launched.  
   
@@ -213,7 +213,7 @@ All applications tend to share a common set of functionality that applies to app
  A <xref:System.Windows.Window> can also be activated and deactivated. See <xref:System.Windows.Window.Activated?displayProperty=nameWithType> and <xref:System.Windows.Window.Deactivated?displayProperty=nameWithType> for more information.  
   
 > [!NOTE]
->  Neither <xref:System.Windows.Application.Activated?displayProperty=nameWithType> nor <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> is raised for XBAPs.  
+> Neither <xref:System.Windows.Application.Activated?displayProperty=nameWithType> nor <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> is raised for XBAPs.  
   
 <a name="Application_Shutdown"></a>   
 ### Application Shutdown  
@@ -230,7 +230,7 @@ All applications tend to share a common set of functionality that applies to app
  To help you manage application shutdown, <xref:System.Windows.Application> provides the <xref:System.Windows.Application.Shutdown%2A> method, the <xref:System.Windows.Application.ShutdownMode%2A> property, and the <xref:System.Windows.Application.SessionEnding> and <xref:System.Windows.Application.Exit> events.  
   
 > [!NOTE]
->  <xref:System.Windows.Application.Shutdown%2A> can only be called from applications that have <xref:System.Security.Permissions.UIPermission>. Standalone WPF applications always have this permission. However, XBAPs running in the Internet zone partial-trust security sandbox do not.  
+> <xref:System.Windows.Application.Shutdown%2A> can only be called from applications that have <xref:System.Security.Permissions.UIPermission>. Standalone WPF applications always have this permission. However, XBAPs running in the Internet zone partial-trust security sandbox do not.  
   
 #### Shutdown Mode  
  Most applications shut down either when all the windows are closed or when the main window is closed. Sometimes, however, other application-specific conditions may determine when an application shuts down. You can specify the conditions under which your application will shut down by setting <xref:System.Windows.Application.ShutdownMode%2A> with one of the following <xref:System.Windows.ShutdownMode> enumeration values:  
@@ -248,7 +248,7 @@ All applications tend to share a common set of functionality that applies to app
  When you have application-specific shutdown conditions, you set <xref:System.Windows.Application.ShutdownMode%2A> to <xref:System.Windows.ShutdownMode.OnExplicitShutdown>. In this case, it is your responsibility to shut an application down by explicitly calling the <xref:System.Windows.Application.Shutdown%2A> method; otherwise, your application will continue running even if all the windows are closed. Note that <xref:System.Windows.Application.Shutdown%2A> is called implicitly when the <xref:System.Windows.Application.ShutdownMode%2A> is either <xref:System.Windows.ShutdownMode.OnLastWindowClose> or <xref:System.Windows.ShutdownMode.OnMainWindowClose>.  
   
 > [!NOTE]
->  <xref:System.Windows.Application.ShutdownMode%2A> can be set from an XBAP, but it is ignored; an XBAP is always shut down when it is navigated away from in a browser or when the browser that hosts the XBAP is closed. For more information, see [Navigation Overview](navigation-overview.md).  
+> <xref:System.Windows.Application.ShutdownMode%2A> can be set from an XBAP, but it is ignored; an XBAP is always shut down when it is navigated away from in a browser or when the browser that hosts the XBAP is closed. For more information, see [Navigation Overview](navigation-overview.md).  
   
 #### Session Ending  
  The shutdown conditions that are described by the <xref:System.Windows.Application.ShutdownMode%2A> property are specific to an application. In some cases, though, an application may shut down as a result of an external condition. The most common external condition occurs when a user ends the Windows session by the following actions:  
@@ -271,7 +271,7 @@ All applications tend to share a common set of functionality that applies to app
  In this example, the code inspects the <xref:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding%2A> property to determine how the Windows session is ending. It uses this value to display a confirmation message to the user. If the user does not want the session to end, the code sets <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> to `true` to prevent the Windows session from ending.  
   
 > [!NOTE]
->  <xref:System.Windows.Application.SessionEnding> is not raised for XBAPs.
+> <xref:System.Windows.Application.SessionEnding> is not raised for XBAPs.
 
 #### Exit  
  When an application shuts down, it may need to perform some final processing, such as persisting application state. For these situations, you can handle the <xref:System.Windows.Application.Exit> event, as the `App_Exit` event handler does in the following example. It is defined as an event handler in the *App.xaml* file. Its implementation is highlighted in the *App.xaml.cs* and *Application.xaml.vb* files.
@@ -295,7 +295,7 @@ All applications tend to share a common set of functionality that applies to app
  Applications are mostly launched by the operating system in response to a user request. However, an application can be launched by another application to perform some specific task. When the launched application shuts down, the launching application may want to know the condition under which the launched application shut down. In these situations, Windows allows applications to return an application exit code on shutdown. By default, WPF applications return an exit code value of 0.  
   
 > [!NOTE]
->  When you debug from Visual Studio, the application exit code is displayed in the **Output** window when the application shuts down, in a message that looks like the following:  
+> When you debug from Visual Studio, the application exit code is displayed in the **Output** window when the application shuts down, in a message that looks like the following:  
 >   
 >  `The program '[5340] AWPFApp.vshost.exe: Managed' has exited with code 0 (0x0).`  
 >   
@@ -309,7 +309,7 @@ All applications tend to share a common set of functionality that applies to app
  You can detect the value of the exit code, and change it, by handling the <xref:System.Windows.Application.Exit> event. The <xref:System.Windows.Application.Exit> event handler is passed an <xref:System.Windows.ExitEventArgs> which provides access to the exit code with the <xref:System.Windows.ExitEventArgs.ApplicationExitCode%2A> property. For more information, see <xref:System.Windows.Application.Exit>.  
   
 > [!NOTE]
->  You can set the exit code in both standalone applications and XBAPs. However, the exit code value is ignored for XBAPs.  
+> You can set the exit code in both standalone applications and XBAPs. However, the exit code value is ignored for XBAPs.  
   
 <a name="Unhandled_Exceptions"></a>   
 ### Unhandled Exceptions  

@@ -54,7 +54,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
  The MSMQ queue name is specified in an appSettings section of the configuration file, as shown in the following sample configuration.
 
 > [!NOTE]
->  The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses localhost for the local computer. The address of the queue for each MSMQ Format Name addressing guidelines follows the msmq.formatname scheme.
+> The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses localhost for the local computer. The address of the queue for each MSMQ Format Name addressing guidelines follows the msmq.formatname scheme.
 
 ```xml
 <appSettings>

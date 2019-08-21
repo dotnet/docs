@@ -48,7 +48,7 @@ None.
 
 |**Element**|**Description**|
 |-----------------|---------------------|
-|[bypasslist](../../../../../docs/framework/configure-apps/file-schema/network/bypasslist-element-network-settings.md)|Provides a set of regular expressions that describe addresses that do not use a proxy.|
+|[bypasslist](bypasslist-element-network-settings.md)|Provides a set of regular expressions that describe addresses that do not use a proxy.|
 
 ## Remarks
 
@@ -56,7 +56,7 @@ The `remove` element removes regular expressions describing IP addresses or DNS 
 
 The value for the `address` attribute should be a regular expression that describes a set of IP addresses or host names.
 
-For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../../docs/standard/base-types/regular-expressions.md).
+For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../standard/base-types/regular-expressions.md).
 
 ## Configuration Files
 
@@ -82,4 +82,4 @@ The following example removes any previous definition for the adventure-works.co
 ## See also
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

@@ -132,13 +132,13 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`System.Xml.`<br /><br /> `IgnoreEmptyKeySequences`|Controls whether empty key sequences in compound keys are ignored by XSD schema validation. For more information, see [Mitigation: XML Schema Validation](../../../migration-guide/mitigation-xml-schema-validation.md).|.NET Framework 4.6|  
   
 > [!NOTE]
->  Instead of adding an `AppContextSwitchOverrides` element to an application configuration file, you can also set the switches programmatically by calling the `static` (in C#) or `Shared` (in Visual Basic) <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.  
+> Instead of adding an `AppContextSwitchOverrides` element to an application configuration file, you can also set the switches programmatically by calling the `static` (in C#) or `Shared` (in Visual Basic) <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.  
   
  Library developers can also define custom switches to allow callers to opt out of changed functionality introduced  in later versions of their libraries. For more information, see the <xref:System.AppContext> class.  
   
 ## Switches in ASP.NET applications
 
-You can configure an ASP.NET application to use compatibility settings by adding an [\<Add>](../../../configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](../../../configure-apps/file-schema/appsettings/index.md) section of the web.config file. 
+You can configure an ASP.NET application to use compatibility settings by adding an [\<Add>](../appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](../appsettings/index.md) section of the web.config file. 
 
 The following example uses the `<add>` element to add two settings to the `<appSettings>` section of a web.config file:
 

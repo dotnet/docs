@@ -52,7 +52,7 @@ Windows Communication Foundation (WCF) Test Client (WcfTestClient.exe) is a GUI 
  The service's response appears below the test parameters.  
   
 > [!NOTE]
->  If the expected return value is a string, the result will be displayed as a quoted string even though the input provided was not in quotes.  
+> If the expected return value is a string, the result will be displayed as a quoted string even though the input provided was not in quotes.  
   
  If you specified a particular operation as one-way when you created the contract for the service, no service response is displayed. As soon as the message is queued for delivery, a dialog box pops up to notify you that the message was successfully sent.  
   

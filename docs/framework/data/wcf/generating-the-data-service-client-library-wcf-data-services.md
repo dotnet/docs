@@ -13,7 +13,7 @@ A data service that implements the [!INCLUDE[ssODataFull](../../../../includes/s
 - Requests the service metadata document from the data service and interprets the returned metadata.  
   
     > [!NOTE]
-    >  The returned metadata is stored in the client project as an .edmx file. This .edmx file cannot be opened by using the Entity Data Model designer because it does not have the same format an .edmx file used by the Entity Framework. You can view this metadata file by using the XML editor or any text editor. For more information, see the [\[MC-EDMX\]: Entity Data Model for Data Services Packaging Format](https://go.microsoft.com/fwlink/?LinkID=178833) specification  
+    > The returned metadata is stored in the client project as an .edmx file. This .edmx file cannot be opened by using the Entity Data Model designer because it does not have the same format an .edmx file used by the Entity Framework. You can view this metadata file by using the XML editor or any text editor. For more information, see the [\[MC-EDMX\]: Entity Data Model for Data Services Packaging Format](https://go.microsoft.com/fwlink/?LinkID=178833) specification  
   
 - Generates a representation of the service as an entity container class that inherits from <xref:System.Data.Services.Client.DataServiceContext>. This generated entity container class resembles the entity container that the Entity Data Model tools generate. For more information, see [Object Services Overview (Entity Framework)](https://docs.microsoft.com/previous-versions/bb386871(v=vs.100)).  
   

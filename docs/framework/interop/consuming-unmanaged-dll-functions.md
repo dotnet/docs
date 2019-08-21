@@ -59,7 +59,7 @@ Platform invoke is a service that enables managed code to call unmanaged functio
 3. Locates the address of the function in memory and pushes its arguments onto the stack, marshaling data as required.  
   
     > [!NOTE]
-    >  Locating and loading the DLL, and locating the address of the function in memory occur only on the first call to the function.  
+    > Locating and loading the DLL, and locating the address of the function in memory occur only on the first call to the function.  
   
 4. Transfers control to the unmanaged function.  
   

@@ -32,7 +32,7 @@ This topic provides an overview of the sample OpenType fonts that are distribute
  The sample fonts are supplied under license from Ascender Corporation. Ascender is a provider of advanced font products. To license extended or custom versions of the sample fonts, see [Ascender Corporation's Web site](https://go.microsoft.com/fwlink/?LinkId=182627).  
   
 > [!NOTE]
->  As a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
+> As a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
   
 <a name="installing_the_fonts"></a>   
 ## Installing the Fonts  

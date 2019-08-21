@@ -7,7 +7,7 @@ ms.assetid: 91c1b477-a96e-4bf5-9330-5e9312113371
 This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHttpBinding>, a standard binding that you can use to build federated scenarios that support version 1.3 of the WS-Trust specification.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample consists of a console-based client program (Client.exe), a console-based security token service program (Securitytokenservice.exe), and a console-based service program (Service.exe). The service implements a contract that defines a request/reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (`Add`, `Subtract`, `Multiply`, and `Divide`). The client obtains a security token from the Security Token Service (STS) and makes synchronous requests to the service for a given math operation. The service then replies with the result. Client activity is visible in the console window.  
   

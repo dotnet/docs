@@ -30,9 +30,6 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
 </routing>
 ```  
   
-```csharp  
-```  
-  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

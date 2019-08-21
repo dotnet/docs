@@ -40,7 +40,7 @@ Operating systems and runtime environments typically provide some form of isolat
 - Individual applications can be stopped without stopping the entire process. Using application domains enables you to unload the code running in a single application.  
   
     > [!NOTE]
-    >  You cannot unload individual assemblies or types. Only a complete domain can be unloaded.  
+    > You cannot unload individual assemblies or types. Only a complete domain can be unloaded.  
   
 - Code running in one application cannot directly access code or resources from another application. The common language runtime enforces this isolation by preventing direct calls between objects in different application domains. Objects that pass between domains are either copied or accessed by proxy. If the object is copied, the call to the object is local. That is, both the caller and the object being referenced are in the same application domain. If the object is accessed through a proxy, the call to the object is remote. In this case, the caller and the object being referenced are in different application domains. Cross-domain calls use the same remote call infrastructure as calls between two processes or between two machines. As such, the metadata for the object being referenced must be available to both application domains to allow the method call to be JIT-compiled properly. If the calling domain does not have access to the metadata for the object being called, the compilation might fail with an exception of type <xref:System.IO.FileNotFoundException>. For more information, see [Remote Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100)). The mechanism for determining how objects can be accessed across domains is determined by the object. For more information, see <xref:System.MarshalByRefObject?displayProperty=nameWithType>.  
   
@@ -112,7 +112,7 @@ Operating systems and runtime environments typically provide some form of isolat
 |<xref:System.AppDomain.Unload%2A>|Performs a graceful shutdown of the domain. The application domain is not unloaded until all threads running in the domain have either stopped or are no longer in the domain.|  
   
 > [!NOTE]
->  The common language runtime does not support serialization of global methods, so delegates cannot be used to execute global methods in other application domains.  
+> The common language runtime does not support serialization of global methods, so delegates cannot be used to execute global methods in other application domains.  
   
  The unmanaged interfaces described in the common language runtime Hosting Interfaces Specification also provide access to application domains. Runtime hosts can use interfaces from unmanaged code to create and gain access to the application domains within a process.  
   

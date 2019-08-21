@@ -32,7 +32,7 @@ ms.assetid: fd1db082-a7bb-4c4b-9331-6ad74a0682d0
      `-debug c:\example.xbap`
 
 > [!NOTE]
->  This is the default configuration for solutions that are created with the Visual Studio 2005 [!INCLUDE[TLA#tla_wpfbrowserappproj](../../../../includes/tlasharptla-wpfbrowserappproj-md.md)] project template.
+> This is the default configuration for solutions that are created with the Visual Studio 2005 [!INCLUDE[TLA#tla_wpfbrowserappproj](../../../../includes/tlasharptla-wpfbrowserappproj-md.md)] project template.
 
 1. With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.
 

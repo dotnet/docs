@@ -13,7 +13,7 @@ ms.assetid: 06176e2d-bbf7-4a37-afaa-a86ad21ee99f
 Represents the default value of any data type. For reference types, the default value is the `null` reference. For value types, the default value depends on whether the value type is nullable.  
   
 > [!NOTE]
->  For non-nullable value types, `Nothing` in Visual Basic differs from `null` in C#. In Visual Basic, if you set a variable of a non-nullable value type to `Nothing`, the variable is set to the default value for its declared type. In C#, if you assign a variable of a non-nullable value type to `null`, a compile-time error occurs.  
+> For non-nullable value types, `Nothing` in Visual Basic differs from `null` in C#. In Visual Basic, if you set a variable of a non-nullable value type to `Nothing`, the variable is set to the default value for its declared type. In C#, if you assign a variable of a non-nullable value type to `null`, a compile-time error occurs.  
   
 ## Remarks  
  `Nothing` represents the default value of a data type. The default value depends on whether the variable is of a value type or of a reference type.  

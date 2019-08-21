@@ -31,7 +31,7 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
      The example assumes your form has a <xref:System.Windows.Forms.Button> control with its <xref:System.Windows.Forms.ButtonBase.Image%2A> property set to a file of type .gif, .jpeg, or .bmp.  
   
     > [!NOTE]
-    >  The <xref:System.Windows.Forms.FileDialog> class's <xref:System.Windows.Forms.FileDialog.FilterIndex%2A> property (which, due to inheritance, is part of the <xref:System.Windows.Forms.SaveFileDialog> class) uses a one-based index. This is important if you are writing code to save data in a specific format (for example, saving a file in plain text versus binary format). This property is featured in the example below.  
+    > The <xref:System.Windows.Forms.FileDialog> class's <xref:System.Windows.Forms.FileDialog.FilterIndex%2A> property (which, due to inheritance, is part of the <xref:System.Windows.Forms.SaveFileDialog> class) uses a one-based index. This is important if you are writing code to save data in a specific format (for example, saving a file in plain text versus binary format). This property is featured in the example below.  
   
     ```vb  
     Private Sub Button2_Click(ByVal sender As System.Object, _  
@@ -169,7 +169,7 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
      For more information about writing file streams, see <xref:System.IO.FileStream.BeginWrite%2A> and <xref:System.IO.FileStream.Write%2A>.  
   
     > [!NOTE]
-    >  Certain controls, such as the <xref:System.Windows.Forms.RichTextBox> control, have the ability to save files. For more information, see the "SaveFileDialog Component" section of the MSDN Online Library technical article, [Essential Code for Windows Forms Dialog Boxes](https://go.microsoft.com/fwlink/?LinkID=102575).  
+    > Certain controls, such as the <xref:System.Windows.Forms.RichTextBox> control, have the ability to save files. For more information, see the "SaveFileDialog Component" section of the MSDN Online Library technical article, [Essential Code for Windows Forms Dialog Boxes](https://go.microsoft.com/fwlink/?LinkID=102575).  
   
 ## See also
 

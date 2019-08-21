@@ -136,7 +136,7 @@ This topic describes how the Application Settings architecture works, and explor
  A provider may be called from multiple threads simultaneously, but it will always write to the same storage location; therefore, the Application Settings architecture will only ever instantiate a single instance of your provider class.
 
 > [!IMPORTANT]
->  You should ensure that your provider is thread-safe, and only allows one thread at a time to write to the configuration files.
+> You should ensure that your provider is thread-safe, and only allows one thread at a time to write to the configuration files.
 
  Your provider does not need to support all of the settings attributes defined in the <xref:System.Configuration?displayProperty=nameWithType> namespace, though it must at a minimum support <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute>, and should also support <xref:System.Configuration.DefaultSettingValueAttribute>. For those attributes that it does not support, your provider should just fail without notification; it should not throw an exception. If the settings class uses an invalid combination of attributes, however — such as applying <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute> to the same setting — your provider should throw an exception and cease operation.
 

@@ -13,11 +13,11 @@ ms.author: "ronpet"
 
 Writing a .NET type and consuming that type from unmanaged code are distinct activities for developers. This section describes several tips for writing managed code that interoperates with COM clients:
 
-- [Qualifying .NET types for interoperation](../../../docs/standard/native-interop/qualify-net-types-for-interoperation.md).
+- [Qualifying .NET types for interoperation](../../standard/native-interop/qualify-net-types-for-interoperation.md).
 
      All managed types, methods, properties, fields, and events that you want to expose to COM must be public. Types must have a public parameterless constructor, which is the only constructor that can be invoked through COM.
 
-- [Applying interop attributes](../../../docs/standard/native-interop/apply-interop-attributes.md).
+- [Applying interop attributes](../../standard/native-interop/apply-interop-attributes.md).
 
      Custom attributes within managed code can enhance the interoperability of a component.
 

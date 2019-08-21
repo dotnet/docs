@@ -83,5 +83,5 @@ pCLRGCManager->GetStats(&GCStats);
 ## See also
 
 - [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
-- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)
-- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
+- [Automatic Memory Management](../../../standard/automatic-memory-management.md)
+- [Garbage Collection](../../../standard/garbage-collection/index.md)

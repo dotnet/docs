@@ -21,7 +21,7 @@ ms.author: "ronpet"
 Reflection emit uses the same API set in full or partial trust, but some features require special permissions in partially trusted code. In addition, reflection emit has a feature, anonymously hosted dynamic methods, that is designed to be used with partial trust and by security-transparent assemblies.  
   
 > [!NOTE]
->  Before .NET Framework 3.5, emitting code required <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. This permission is included by default in the `FullTrust` and `Intranet` named permission sets, but not in the `Internet` permission set. Therefore, a library could be used from partial trust only if it had the <xref:System.Security.SecurityCriticalAttribute> attribute and also executed an <xref:System.Security.PermissionSet.Assert%2A> method for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The .NET Framework 3.5 allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This enables libraries that emit code to be security-transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, so that writing a secure library does not require such a thorough security review.  
+> Before .NET Framework 3.5, emitting code required <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. This permission is included by default in the `FullTrust` and `Intranet` named permission sets, but not in the `Internet` permission set. Therefore, a library could be used from partial trust only if it had the <xref:System.Security.SecurityCriticalAttribute> attribute and also executed an <xref:System.Security.PermissionSet.Assert%2A> method for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The .NET Framework 3.5 allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This enables libraries that emit code to be security-transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, so that writing a secure library does not require such a thorough security review.  
   
  This walkthrough illustrates the following tasks:  
   
@@ -79,7 +79,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
  For example, a host might grant Internet applications Internet permissions plus RMA, so that an Internet application can emit code that accesses private data in its own assemblies. Because the access is limited to assemblies of equal or lesser trust, an Internet application cannot access members of fully trusted assemblies such as .NET Framework assemblies.  
   
 > [!NOTE]
->  To prevent elevation of privilege, stack information for the emitting assembly is included when anonymously hosted dynamic methods are constructed. When the method is invoked, the stack information is checked. Thus, an anonymously hosted dynamic method that is invoked from fully trusted code is still limited to the trust level of the emitting assembly.  
+> To prevent elevation of privilege, stack information for the emitting assembly is included when anonymously hosted dynamic methods are constructed. When the method is invoked, the stack information is checked. Thus, an anonymously hosted dynamic method that is invoked from fully trusted code is still limited to the trust level of the emitting assembly.  
   
 #### To create an application domain with partial trust plus RMA  
   
@@ -91,7 +91,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
      The <xref:System.Security.PermissionSet.AddPermission%2A> method adds the permission to the grant set if it is not already included. If the permission is already included in the grant set, the specified flags are added to the existing permission.  
   
     > [!NOTE]
-    >  RMA is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, the emitted code requires full trust.  
+    > RMA is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, the emitted code requires full trust.  
   
 2. Create the application domain, specifying the application domain setup information and the grant set.  
   
@@ -129,7 +129,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
      The <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method creates the object in the target application domain and returns a proxy that can be used to call the properties and methods of the object.  
   
     > [!NOTE]
-    >  If you use this code in Visual Studio, you must change the name of the class to include the namespace. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
+    > If you use this code in Visual Studio, you must change the name of the class to include the namespace. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
   
 6. Add code to call the `SimpleEmitDemo` method. The call is marshaled across the application domain boundary, and the code is executed in the sandboxed application domain.  
   
@@ -141,7 +141,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
  Anonymously hosted dynamic methods are associated with a transparent assembly that is provided by the system. Therefore, the code they contain is transparent. Ordinary dynamic methods, on the other hand, must be associated with an existing module (whether directly specified or inferred from an associated type), and take their security level from that module.  
   
 > [!NOTE]
->  The only way to associate a dynamic method with the assembly that provides anonymous hosting is to use the constructors that are described in the following procedure. You cannot explicitly specify a module in the anonymous hosting assembly.  
+> The only way to associate a dynamic method with the assembly that provides anonymous hosting is to use the constructors that are described in the following procedure. You cannot explicitly specify a module in the anonymous hosting assembly.  
   
  Ordinary dynamic methods have access to the internal members of the module they are associated with, or to the private members of the type they are associated with. Because anonymously hosted dynamic methods are isolated from other code, they do not have access to private data. However, they do have a restricted ability to skip JIT visibility checks to gain access to private data. This ability is limited to assemblies that have trust levels equal to or less than the trust level of the assembly that emits the code.  
   
@@ -168,12 +168,12 @@ Reflection emit uses the same API set in full or partial trust, but some feature
      Anonymously hosted dynamic methods can use this restricted ability to skip JIT visibility checks only if the host application grants <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag. The demand for this permission is made when the method is invoked.  
   
     > [!NOTE]
-    >  Call stack information for the emitting assembly is included when the dynamic method is constructed. Therefore, the demand is made against the permissions of the emitting assembly instead of the assembly that invokes the method. This prevents the emitted code from being executed with elevated permissions.  
+    > Call stack information for the emitting assembly is included when the dynamic method is constructed. Therefore, the demand is made against the permissions of the emitting assembly instead of the assembly that invokes the method. This prevents the emitted code from being executed with elevated permissions.  
   
      The [complete code example](#Example) at the end of this walkthrough demonstrates the use and limitations of restricted member access. Its `Worker` class includes a method that can create anonymously hosted dynamic methods with or without the restricted ability to skip visibility checks, and the example shows the result of executing this method in application domains that have different trust levels.  
   
     > [!NOTE]
-    >  The restricted ability to skip visibility checks is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, they must be granted full trust.  
+    > The restricted ability to skip visibility checks is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, they must be granted full trust.  
   
 <a name="Example"></a>   
 ## Example  

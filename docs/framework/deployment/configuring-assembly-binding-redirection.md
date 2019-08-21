@@ -14,7 +14,7 @@ By default, applications use the set of .NET Framework assemblies that shipped w
  The **appliesTo** attribute was introduced in the .NET Framework version 1.1; it is ignored by the .NET Framework version 1.0. This means that all **\<assemblyBinding>** elements are applied when using the .NET Framework version 1.0, even if an **appliesTo** attribute is specified.  
   
 > [!NOTE]
->  Use the **appliesTo** attribute to limit assembly binding redirection to a specific version of the runtime.  
+> Use the **appliesTo** attribute to limit assembly binding redirection to a specific version of the runtime.  
   
  For example, to redirect assembly binding for a .NET Framework version 1.0 assembly, you would include the following XML code in your application configuration file.  
   

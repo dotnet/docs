@@ -16,7 +16,7 @@ ms.author: "mairaw"
 The `invalidOverlappedToPinvoke` managed debugging assistant (MDA) is activated when an overlapped pointer that was not created on the garbage collection heap is passed to specific Win32 functions.  
   
 > [!NOTE]
->  By default, this MDA is activated only if the platform invoke call is defined in your code and the debugger reports the JustMyCode status of each method. A debugger that does not understand JustMyCode (such as MDbg.exe with no extensions) will not activate this MDA. This MDA can be enabled for those debuggers by using a configuration file and explicitly settting `justMyCode="false"` in the .mda.config file `(<invalidOverlappedToPinvoke enable="true" justMyCode="false"/>`).  
+> By default, this MDA is activated only if the platform invoke call is defined in your code and the debugger reports the JustMyCode status of each method. A debugger that does not understand JustMyCode (such as MDbg.exe with no extensions) will not activate this MDA. This MDA can be enabled for those debuggers by using a configuration file and explicitly settting `justMyCode="false"` in the .mda.config file `(<invalidOverlappedToPinvoke enable="true" justMyCode="false"/>`).  
   
 ## Symptoms  
  Crashes or unexplainable heap corruptions.  

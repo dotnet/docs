@@ -9,7 +9,7 @@ A *facet* is used to add detail to a primitive type property definition. A [prop
  The table below describes the facets that are supported in the EDM.  
   
 > [!NOTE]
->  The exact values and behaviors of facets are determined by the run-time environment that uses an EDM implementation.  
+> The exact values and behaviors of facets are determined by the run-time environment that uses an EDM implementation.  
   
 |Facet|Description|Applies to|  
 |-----------|-----------------|----------------|  

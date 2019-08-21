@@ -48,7 +48,7 @@ When using Windows authentication as a security mechanism, the Security Support 
 - Domain Machine: A process with machine identity running on a machine joined to a Windows domain. For example: `MachineName\Network Service`.  
   
 > [!NOTE]
->  The service credential is captured when the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method of the <xref:System.ServiceModel.ServiceHost> class is called. The client credential is read whenever the client sends a message.  
+> The service credential is captured when the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method of the <xref:System.ServiceModel.ServiceHost> class is called. The client credential is read whenever the client sends a message.  
   
 ## Common Windows Authentication Problems  
  This section discusses some common Windows authentication problems and possible remedies.  

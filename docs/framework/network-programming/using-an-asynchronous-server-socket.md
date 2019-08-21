@@ -266,5 +266,5 @@ public static void ReadCallback(IAsyncResult ar)
 
 - [Using a Synchronous Server Socket](using-a-synchronous-server-socket.md)
 - [Asynchronous Server Socket Example](asynchronous-server-socket-example.md)
-- [Threading](../../../docs/standard/threading/index.md)
+- [Threading](../../standard/threading/index.md)
 - [Listening with Sockets](listening-with-sockets.md)

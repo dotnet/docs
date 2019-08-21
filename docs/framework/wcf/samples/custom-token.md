@@ -7,7 +7,7 @@ ms.assetid: e7fd8b38-c370-454f-ba3e-19759019f03d
 This sample demonstrates how to add a custom token implementation into a Windows Communication Foundation (WCF) application. The example uses a `CreditCardToken` to securely pass information about client credit cards to the service. The token is passed in the WS-Security message header and is signed and encrypted using the symmetric security binding element along with message body and other message headers. This is useful in cases where the built-in tokens are not sufficient. This sample demonstrates how to provide a custom security token to a service instead of using one of the built-in tokens. The service implements a contract that defines a request-reply communication pattern.
 
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this topic.
 
  To summarize, this sample demonstrates the following:
 
@@ -578,7 +578,7 @@ string GetCallerCreditCardNumber()
     ```
 
 > [!NOTE]
->  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
+> The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
 
 #### To set up and build the sample
 
@@ -591,7 +591,7 @@ string GetCallerCreditCardNumber()
 1. Open a Visual Studio 2012 Command Prompt window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.Make sure that the path includes the folder where Makecert.exe is located.
 
 > [!NOTE]
->  Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
+> Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
   
 1. Launch Client.exe from client\bin directory. Client activity is displayed on the client console application.  
   

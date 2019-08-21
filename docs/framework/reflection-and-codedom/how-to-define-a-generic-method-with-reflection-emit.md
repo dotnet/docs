@@ -20,7 +20,7 @@ The first procedure shows how to create a simple generic method with two type pa
  The third procedure shows how to invoke the generic method.  
   
 > [!IMPORTANT]
->  A method is not generic just because it belongs to a generic type and uses the type parameters of that type. A method is generic only if it has its own type parameter list. A generic method can appear on a nongeneric type, as in this example. For an example of a nongeneric method on a generic type, see [How to: Define a Generic Type with Reflection Emit](how-to-define-a-generic-type-with-reflection-emit.md).  
+> A method is not generic just because it belongs to a generic type and uses the type parameters of that type. A method is generic only if it has its own type parameter list. A generic method can appear on a nongeneric type, as in this example. For an example of a nongeneric method on a generic type, see [How to: Define a Generic Type with Reflection Emit](how-to-define-a-generic-type-with-reflection-emit.md).  
   
 ### To define a generic method  
   
@@ -149,7 +149,7 @@ The first procedure shows how to create a simple generic method with two type pa
  When the code is executed, the dynamic assembly is saved as DemoGenericMethod1.dll, and can be examined using the [Ildasm.exe (IL Disassembler)](../tools/ildasm-exe-il-disassembler.md).  
   
 > [!NOTE]
->  A good way to learn how to emit code is to write a Visual Basic, C#, or Visual C++ program that performs the task you are trying to emit, and use the disassembler to examine the MSIL produced by the compiler.  
+> A good way to learn how to emit code is to write a Visual Basic, C#, or Visual C++ program that performs the task you are trying to emit, and use the disassembler to examine the MSIL produced by the compiler.  
   
  The code example includes source code that is equivalent to the emitted method. The emitted method is invoked late-bound and also by using a generic delegate declared in the code example.  
   

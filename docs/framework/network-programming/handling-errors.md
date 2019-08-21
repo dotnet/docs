@@ -163,5 +163,5 @@ End Try
   
 ## See also
 
-- [Exception Handling Fundamentals](../../../docs/standard/exceptions/exception-handling-fundamentals.md)
+- [Exception Handling Fundamentals](../../standard/exceptions/exception-handling-fundamentals.md)
 - [Requesting Data](requesting-data.md)

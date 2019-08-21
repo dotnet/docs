@@ -38,7 +38,7 @@ End Module
 ## Custom Binding  
  In addition to being used implicitly by compilers for late binding, reflection can be used explicitly in code to accomplish late binding.  
   
- The [common language runtime](../../../docs/standard/clr.md) supports multiple programming languages, and the binding rules of these languages differ. In the early-bound case, code generators can completely control this binding. However, in late binding through reflection, binding must be controlled by customized binding. The <xref:System.Reflection.Binder> class provides custom control of member selection and invocation.  
+ The [common language runtime](../../standard/clr.md) supports multiple programming languages, and the binding rules of these languages differ. In the early-bound case, code generators can completely control this binding. However, in late binding through reflection, binding must be controlled by customized binding. The <xref:System.Reflection.Binder> class provides custom control of member selection and invocation.  
   
  Using custom binding, you can load an assembly at run time, obtain information about types in that assembly, specify the type that you want, and then invoke methods or access fields or properties on that type. This technique is useful if you do not know an object's type at compile time, such as when the object type is dependent on user input.  
   
@@ -73,7 +73,7 @@ End Module
   
  In Case 3 of the code example, an actual argument of type **String** with a value of "5.5" is passed to a method with a formal argument of type **Double**. For the invocation to succeed, the string value "5.5" must be converted to a double value. **ChangeType** performs this conversion.  
   
- **ChangeType** performs only lossless or [widening coercions](../../../docs/standard/base-types/type-conversion.md), as shown in the following table.  
+ **ChangeType** performs only lossless or [widening coercions](../../standard/base-types/type-conversion.md), as shown in the following table.  
   
 |Source type|Target type|  
 |-----------------|-----------------|  
@@ -98,4 +98,4 @@ End Module
 - <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
 - [Viewing Type Information](viewing-type-information.md)
-- [Type Conversion in the .NET Framework](../../../docs/standard/base-types/type-conversion.md)
+- [Type Conversion in the .NET Framework](../../standard/base-types/type-conversion.md)

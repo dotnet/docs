@@ -35,7 +35,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ### Flow Document Controls  
 
 > [!NOTE]
->  For more detailed information on flow document features and how to create them, see [Flow Document Overview](flow-document-overview.md).  
+> For more detailed information on flow document features and how to create them, see [Flow Document Overview](flow-document-overview.md).  
   
  Display of flow document content is supported by three controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   

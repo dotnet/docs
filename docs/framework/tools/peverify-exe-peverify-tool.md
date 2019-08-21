@@ -51,7 +51,7 @@ peverify filename [options]
 |**/?**|Displays command syntax and options for the tool.|  
   
 ## Remarks  
- The common language runtime relies on the type-safe execution of application code to help enforce security and isolation mechanisms. Normally, code that is not [verifiably type safe](../../../docs/standard/security/key-security-concepts.md#type-safety-and-security) cannot run, although you can set security policy to allow the execution of trusted but unverifiable code.  
+ The common language runtime relies on the type-safe execution of application code to help enforce security and isolation mechanisms. Normally, code that is not [verifiably type safe](../../standard/security/key-security-concepts.md#type-safety-and-security) cannot run, although you can set security policy to allow the execution of trusted but unverifiable code.  
   
  If neither the **/md** nor **/il** options are specified, Peverify.exe performs both types of checks. Peverify.exe performs **/md** checks first. If there are no errors, **/il** checks are made. If you specify both **/md** and **/il**, **/il** checks are made even if there are errors in the metadata. Thus, if there are no metadata errors, **peverify** *filename* is equivalent to **peverify** *filename* **/md** **/il**.  
   
@@ -118,5 +118,5 @@ peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp
 
 - [Tools](index.md)
 - [Writing Verifiably Type-Safe Code](../misc/code-access-security-basics.md#typesafe_code)
-- [Type Safety and Security](../../../docs/standard/security/key-security-concepts.md#type-safety-and-security)
+- [Type Safety and Security](../../standard/security/key-security-concepts.md#type-safety-and-security)
 - [Command Prompts](developer-command-prompt-for-vs.md)

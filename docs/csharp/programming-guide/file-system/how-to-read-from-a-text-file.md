@@ -17,7 +17,7 @@ This example reads the contents of a text file by using the static methods <xref
  For an example that uses <xref:System.IO.StreamReader>, see [How to: Read a Text File One Line at a Time](./how-to-read-a-text-file-one-line-at-a-time.md).  
   
 > [!NOTE]
->  The files that are used in this example are created in the topic [How to: Write to a Text File](./how-to-write-to-a-text-file.md).  
+> The files that are used in this example are created in the topic [How to: Write to a Text File](./how-to-write-to-a-text-file.md).  
   
 ## Example  
  [!code-csharp[csFilesandFolders#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#4)]  

@@ -24,7 +24,7 @@ When users view data displayed in a Windows Forms <xref:System.Windows.Forms.Dat
 3. In the **Column Properties** grid, set the <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A> property to `true`.
 
     > [!NOTE]
-    >  You can also freeze a column when adding it by selecting the **Frozen** box in the **Add Column** dialog box.
+    > You can also freeze a column when adding it by selecting the **Frozen** box in the **Add Column** dialog box.
 
 ## See also
 

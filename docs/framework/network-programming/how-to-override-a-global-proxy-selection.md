@@ -24,7 +24,7 @@ req.Proxy = New WebProxy("http://alternateproxy:80/")
 ## Compiling the Code  
  This example requires:  
   
-- A [`using` directive](~/docs/csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.  
+- A [`using` directive](../../csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.  
   
 ## See also
 

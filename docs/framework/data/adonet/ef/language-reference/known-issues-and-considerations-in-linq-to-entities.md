@@ -52,7 +52,7 @@ This section provides information about known issues with LINQ to Entities queri
  Referencing a non-scalar variables, such as an entity, in a query is not supported. When such a query executes, a <xref:System.NotSupportedException> exception is thrown with a message that states "Unable to create a constant value of type `EntityType`. Only primitive types ('such as Int32, String, and Guid') are supported in this context."  
   
 > [!NOTE]
->  Referencing a collection of scalar variables is supported.  
+> Referencing a collection of scalar variables is supported.  
   
  [!code-csharp[DP L2E Conceptual Examples#SBUDT555877](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#sbudt555877)]
  [!code-vb[DP L2E Conceptual Examples#SBUDT555877](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#sbudt555877)]  

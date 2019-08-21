@@ -21,7 +21,7 @@ The <xref:System.Windows.Forms.Clipboard> class provides methods that you can us
  In .NET Framework 2.0, you can add data directly to the Clipboard by using new methods designed to make basic Clipboard tasks easier. Use these methods when you work with data in a single, common format such as text.  
   
 > [!NOTE]
->  All Windows-based applications share the Clipboard. Therefore, the contents are subject to change when you switch to another application.  
+> All Windows-based applications share the Clipboard. Therefore, the contents are subject to change when you switch to another application.  
 >   
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
 >   

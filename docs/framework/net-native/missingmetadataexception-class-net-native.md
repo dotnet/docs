@@ -69,7 +69,7 @@ The `MissingMetadataException` class has the following members:
 
 The `MissingMetadataException` exception is thrown when reflection is used to access metadata that isn’t available in an assembly.
 
-The metadata that is available to an app at run time is defined by the runtime directives (XML configuration) file, *.rd.xml. To prevent your app from throwing this exception, you must modify \*.rd.xml to define the metadata that must be present at run time. For information about the format of the \*.rd.xml file, see [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md).
+The metadata that is available to an app at run time is defined by the runtime directives (XML configuration) file, \*.rd.xml. To prevent your app from throwing this exception, you must modify \*.rd.xml to define the metadata that must be present at run time. For information about the format of the \*.rd.xml file, see [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md).
 
 > [!IMPORTANT]
 > Because this exception indicates that metadata needed by your application isn’t available at run time, you shouldn’t handle this exception in a `try`/`catch` block. Instead, you should diagnose the cause of the exception and eliminate it by using a runtime directives file. To get the entry that you can add to your runtime directives file that eliminates the exception, you can use one of two troubleshooters:

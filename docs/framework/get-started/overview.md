@@ -70,7 +70,7 @@ For example, the .NET Framework collection classes implement a set of interfaces
 
 As you would expect from an object-oriented class library, the .NET Framework types enable you to accomplish a range of common programming tasks, including tasks such as string management, data collection, database connectivity, and file access. In addition to these common tasks, the class library includes types that support a variety of specialized development scenarios. Use the .NET Framework to develop the following types of apps and services:
 
-- Console apps. See [Building Console Applications](../../../docs/standard/building-console-apps.md).
+- Console apps. See [Building Console Applications](../../standard/building-console-apps.md).
 
 - Windows GUI apps (Windows Forms). See [Windows Forms](../winforms/index.md).
 

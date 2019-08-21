@@ -19,17 +19,17 @@ Web settings specify CPU and execution-level ASP.NET settings that apply to proc
   
  Web settings are not used in any other configuration files such as the machine.config file, the root Web.config, or application-level Web.config files.  
   
- [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)  
+ [\<configuration> Element](../configuration-element.md)  
   
- [\<system.web> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/system-web-element-web-settings.md)  
+ [\<system.web> Element (Web Settings)](system-web-element-web-settings.md)  
   
- [\<applicationPool> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)  
+ [\<applicationPool> Element (Web Settings)](applicationpool-element-web-settings.md)  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.web>](../../../../../docs/framework/configure-apps/file-schema/web/system-web-element-web-settings.md)|Contains information that the ASP.NET hosting layer uses.|  
-|[\<applicationPool>](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)|Specifies CPU and execution-level ASP.NET settings that apply to process-wide behavior managed by the ASP.NET hosting layer.|  
+|[\<system.web>](system-web-element-web-settings.md)|Contains information that the ASP.NET hosting layer uses.|  
+|[\<applicationPool>](applicationpool-element-web-settings.md)|Specifies CPU and execution-level ASP.NET settings that apply to process-wide behavior managed by the ASP.NET hosting layer.|  
   
 ## See also
 
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Configuration File Schema](../index.md)

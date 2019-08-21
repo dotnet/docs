@@ -70,7 +70,7 @@ ms.author: "mairaw"
 - [LinkDemand](../../../docs/framework/misc/link-demands.md) happens at just-in-time (JIT) compilation time and checks only the immediate caller. This security check does not check the caller's caller. Once this check passes, there is no additional security overhead no matter how many times the caller might call. However, there is also no protection from luring attacks. With **LinkDemand**, any code that passes the test and can reference your code can potentially break security by allowing malicious code to call using the authorized code. Therefore, do not use **LinkDemand** unless all the possible weaknesses can be thoroughly avoided.  
   
     > [!NOTE]
-    >  In the .NET Framework 4, link demands have been replaced by the <xref:System.Security.SecurityCriticalAttribute> attribute in <xref:System.Security.SecurityRuleSet.Level2> assemblies. The <xref:System.Security.SecurityCriticalAttribute> is equivalent to a link demand for full trust; however, it also affects inheritance rules. For more information about this change, see [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md).  
+    > In the .NET Framework 4, link demands have been replaced by the <xref:System.Security.SecurityCriticalAttribute> attribute in <xref:System.Security.SecurityRuleSet.Level2> assemblies. The <xref:System.Security.SecurityCriticalAttribute> is equivalent to a link demand for full trust; however, it also affects inheritance rules. For more information about this change, see [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md).  
   
  The extra precautions required when using **LinkDemand** must be programmed individually; the security system can help with enforcement. Any mistake opens a security weakness. All authorized code that uses your code must be responsible for implementing additional security by doing the following:  
   
@@ -97,4 +97,4 @@ ms.author: "mairaw"
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

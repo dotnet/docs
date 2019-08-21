@@ -12,7 +12,7 @@ Table-valued parameters provide an easy way to marshal multiple rows of data fro
  Column values in table-valued parameters can be accessed using standard Transact-SQL SELECT statements. Table-valued parameters are strongly typed and their structure is automatically validated. The size of table-valued parameters is limited only by server memory.  
   
 > [!NOTE]
->  You cannot return data in a table-valued parameter. Table-valued parameters are input-only; the OUTPUT keyword is not supported.  
+> You cannot return data in a table-valued parameter. Table-valued parameters are input-only; the OUTPUT keyword is not supported.  
   
  For more information about table-valued parameters, see the following resources.  
   
@@ -168,7 +168,7 @@ End Using
  The following example demonstrates how to insert data into the dbo.Categories table by using an INSERT statement with a SELECT subquery that has a table-valued parameter as the data source. When passing a table-valued parameter to a parameterized SQL statement, you must specify a type name for the table-valued parameter by using the new <xref:System.Data.SqlClient.SqlParameter.TypeName%2A> property of a <xref:System.Data.SqlClient.SqlParameter>. This `TypeName` must match the name of a compatible type previously created on the server. The code in this example uses the `TypeName` property to reference the type structure defined in dbo.CategoryTableType.  
   
 > [!NOTE]
->  If you supply a value for an identity column in a table-valued parameter, you must issue the SET IDENTITY_INSERT statement for the session.  
+> If you supply a value for an identity column in a table-valued parameter, you must issue the SET IDENTITY_INSERT statement for the session.  
   
 ```csharp  
 // Assumes connection is an open SqlConnection.  

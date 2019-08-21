@@ -22,7 +22,7 @@ Sometimes you will want to display only some of the columns that are available i
 3. In the **Column Properties** grid, set the <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property to `false`.
 
     > [!NOTE]
-    >  You can also hide a column when adding it by clearing the **Visible** check box in the **Add Column** dialog box.
+    > You can also hide a column when adding it by clearing the **Visible** check box in the **Add Column** dialog box.
 
 ## See also
 

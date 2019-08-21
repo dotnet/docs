@@ -25,7 +25,7 @@ name="assembly!Namespace.Class::myChar
 ```  
   
 ## Configuration  
- The MDA configuration allows you to filter the reported marshaling information based on the involved field or method names.  The following example shows the use of the `methodFilter`, `fieldFilter`, and `match` elements to specify filters.  Setting the `name` attribute to an asterisk (*) will match everything.  
+ The MDA configuration allows you to filter the reported marshaling information based on the involved field or method names.  The following example shows the use of the `methodFilter`, `fieldFilter`, and `match` elements to specify filters.  Setting the `name` attribute to an asterisk (\*) will match everything.  
   
 ```xml  
 <mdaConfig>  

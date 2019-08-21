@@ -15,7 +15,7 @@ This article describes what is new in .NET Core 3.0 (through preview 8). One of 
 
 .NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use the [latest release of Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+preview), or Visual Studio Code with the OmniSharp extension.
 
-[Download and get started with .NET Core 3.0 preview 8](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
+[Download and get started with .NET Core 3.0 preview 8](https://aka.ms/netcore3download) right now on Windows, macOS, or Linux.
 
 For more information about each preview release, see the following announcements:
 

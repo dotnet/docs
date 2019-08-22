@@ -5,7 +5,7 @@ author: rpetrusha
 ms.author: ronpet
 ms.date: 08/21/2019
 ---
-# Breaking chnages in .NET Core, ASP.NET Core, and EF Core
+# Breaking changes in .NET Core, ASP.NET Core, and EF Core
 
 The following sections list breaking changes introduced in a specific product version. The individual links lead to a filtered view of individual breaking change issues in one of the GitHub repos.
 
@@ -23,5 +23,4 @@ The following sections list breaking changes introduced in a specific product ve
 
 ## Breaking changes in Entity Framework Core
 
-[Version]
 [Version 3.0](https://github.com/aspnet/EntityFramework.Docs/blob/master/entity-framework/core/what-is-new/ef-core-3.0/breaking-changes.md)

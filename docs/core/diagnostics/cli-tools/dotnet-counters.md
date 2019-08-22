@@ -25,25 +25,31 @@ For details and other options, see [Installing the diagnostics tools](installing
 
 *SYNOPSIS*
 
-    dotnet-counters [--version]
-                    [-h, --help]
-                    <command> [<args>]
+```
+dotnet-counters [--version]
+                [-h, --help]
+                <command> [<args>]
+```
 
 *OPTIONS*
 
+```
     --version
         Display the version of the dotnet-counters utility.
-
     -h, --help
         Show command line help
+```
 
 *COMMANDS*
 
+```
     list      Display a list of counter names and descriptions
     monitor   Display periodically refreshing values of selected counters
+```
 
 *LIST*
 
+```
     dotnet-counters list [-h|--help]
 
     Display a list of counter names and descriptions, grouped by provider.
@@ -63,9 +69,11 @@ For details and other options, see [Installing the diagnostics tools](installing
         gen-1-gc-count               Number of Gen 1 GCs / sec
         gen-2-gc-count               Number of Gen 2 GCs / sec
         exception-count              Number of Exceptions / sec
+```
 
 *MONITOR*
 
+```
     ### Examples:
 
     1. Monitoring all counters from `System.Runtime` at a refresh interval of 3 seconds:
@@ -82,7 +90,7 @@ For details and other options, see [Installing the diagnostics tools](installing
         Gen 1 GC / Second                              1
         Number of Exceptions / sec                     4
 
-    2. Monitoring just CPU usage and GC heap size from `System.Runtime` at a refresh interval of 5 seconds:
+    1. Monitoring just CPU usage and GC heap size from `System.Runtime` at a refresh interval of 5 seconds:
 
       > dotnet-counters monitor --process-id 1902 System.Runtime[cpu-usage,gc-heap-size,exception-count]
 
@@ -92,34 +100,35 @@ For details and other options, see [Installing the diagnostics tools](installing
         GC Heap Size (MB)                            811
         Number of Exceptions / sec                     4
 
-    3. Monitoring EventCounter values from user-defined EventSource: (see https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md on how to do this.0)
+    1. Monitoring EventCounter values from user-defined EventSource: (see https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md on how to do this.0)
 
       > dotnet-counters monitor --process-id 1902 Samples-EventCounterDemos-Minimal
 
     Press p to pause, r to resume, q to quit.
         request                                      100
+```
 
+### Syntax:
 
-    ### Syntax:
-
+```
     dotnet-counters monitor [-h||--help]
                             [-p|--process-id <pid>]
                             [--refreshInterval <sec>]
                             counter_list
-    
+
     Display periodically refreshing values of selected counters
-    
+
     -h, --help
         Show command line help
-    
+
     -p,--process-id
         The ID of the process that will be monitored
 
     --refresh-interval
         The number of seconds to delay between updating the displayed counters
-    
+
     counter_list
         A space separated list of counters. Counters can be specified provider_name[:counter_name]. If the
         provider_name is used without a qualifying counter_name then all counters will be shown. To discover
         provider and counter names, use the list command.
-
+```

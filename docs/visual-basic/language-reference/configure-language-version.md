@@ -41,6 +41,7 @@ The value `latest` uses the latest minor version of the Visual Basic language. V
 |15|The compiler accepts only syntax that is included in Visual Basic 15.0 or lower.|
 |15.3|The compiler accepts only syntax that is included in Visual Basic 15.3 or lower.|
 |15.5|The compiler accepts only syntax that is included in Visual Basic 15.5 or lower.|
+|16|The compiler accepts only syntax that is included in Visual Basic 16 or lower.|
 |latest|The compiler accepts all valid language syntax that it can support.|
 
 The special strings `default` and `latest` resolve to the latest major

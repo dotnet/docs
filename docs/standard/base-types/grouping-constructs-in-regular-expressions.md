@@ -453,16 +453,16 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  [!code-csharp[RegularExpressions.Language.Grouping#4](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.grouping/cs/objectmodel1.cs#4)]
  [!code-vb[RegularExpressions.Language.Grouping#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.grouping/vb/objectmodel1.vb#4)]  
   
- The regular expression pattern `\b(\w+)\W+)+` extracts individual words from a string. It is defined as shown in the following table.  
+ The regular expression pattern `(\b(\w+)\W+)+` extracts individual words from a string. It is defined as shown in the following table.  
   
 |Pattern|Description|  
 |-------------|-----------------|  
 |`\b`|Begin the match at a word boundary.|  
 |`(\w+)`|Match one or more word characters. Together, these characters form a word. This is the second capturing group.|  
 |`\W+`|Match one or more non-word characters.|  
-|`(\w+)\W+)+`|Match the pattern of one or more word characters followed by one or more non-word characters one or more times. This is the first capturing group.|  
+|`(\b(\w+)\W+)`|Match the pattern of one or more word characters followed by one or more non-word characters one or more times. This is the first capturing group.|  
   
- The first capturing group matches each word of the sentence. The second capturing group matches each word along with the punctuation and white space that follow the word. The <xref:System.Text.RegularExpressions.Group> object whose index is 2 provides information about the text matched by the second capturing group. The complete set of words captured by the capturing group are available from the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
+ The second capturing group matches each word of the sentence. The first capturing group matches each word along with the punctuation and white space that follow the word. The <xref:System.Text.RegularExpressions.Group> object whose index is 2 provides information about the text matched by the second capturing group. The complete set of words captured by the capturing group are available from the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
   
 ## See also
 

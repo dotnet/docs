@@ -37,7 +37,7 @@ Specifies the settings for a Windows credential to be used to represent the clie
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate the client to the service.|  
+|[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate the client to the service.|  
   
 ## See also
 
@@ -48,6 +48,6 @@ Specifies the settings for a Windows credential to be used to represent the clie
 - <xref:System.ServiceModel.Description.ClientCredentials>
 - <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
-- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
-- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

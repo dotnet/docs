@@ -45,14 +45,14 @@ Defines the security settings for a binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<transport>](../../../../../docs/framework/configure-apps/file-schema/wcf/transport-of-nettcpbinding.md)|Defines the security settings for the transport. This element is of type <xref:System.ServiceModel.Configuration.TcpTransportSecurityElement>.|  
-|[\<message>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-nettcpbinding.md)|Defines the security settings for the message. This element is of type <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>.|  
+|[\<transport>](transport-of-nettcpbinding.md)|Defines the security settings for the transport. This element is of type <xref:System.ServiceModel.Configuration.TcpTransportSecurityElement>.|  
+|[\<message>](message-element-of-nettcpbinding.md)|Defines the security settings for the message. This element is of type <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|binding|The binding element of the [\<netTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md).|  
+|binding|The binding element of the [\<netTcpBinding>](nettcpbinding.md).|  
   
 ## Remarks  
  Each of the standard bindings provides parameters for controlling the transfer security requirements. These parameters typically include the security mode that specified whether message-level or transport-level security is used and the choice of client credential type. Based on the choice of options these parameters present, a channel stack is constructed with appropriate security.  
@@ -67,8 +67,8 @@ Defines the security settings for a binding.
 - <xref:System.ServiceModel.NetTcpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetTcpBindingElement.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

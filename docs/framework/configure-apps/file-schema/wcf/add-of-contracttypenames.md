@@ -52,7 +52,7 @@ A configuration element that specifies the contract name of the services being s
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<contractTypeNames>](../../../../../docs/framework/configure-apps/file-schema/wcf/contracttypenames.md)|A collection of contract type names.|  
+|[\<contractTypeNames>](contracttypenames.md)|A collection of contract type names.|  
   
 ## See also
 

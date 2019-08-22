@@ -37,13 +37,13 @@ Represents a configuration section for defining routing tables that contain mapp
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<filters>](../../../../../docs/framework/configure-apps/file-schema/wcf/filters-of-routing.md)|A routing table that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.|  
+|[\<filters>](filters-of-routing.md)|A routing table that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing filters and routing tables.|  
+|[\<routing>](routing.md)|A configuration section that contains routing filters and routing tables.|  
   
 ## See also
 

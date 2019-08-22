@@ -46,13 +46,13 @@ This configuration element defines a standard endpoint that contains information
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<discoveryClientSettings>](../../../../../docs/framework/configure-apps/file-schema/wcf/discoveryclientsettings.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
+|[\<discoveryClientSettings>](discoveryclientsettings.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
+|[\<standardEndpoints>](standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
 ## See also
 

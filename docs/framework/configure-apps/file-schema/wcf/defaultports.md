@@ -34,13 +34,13 @@ A collection of default ports listing the default communications endpoints that 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add> of \<defaultPorts>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-defaultports.md)|A default communications endpoint that the client application listens to.|  
+|[\<add> of \<defaultPorts>](add-of-defaultports.md)|A default communications endpoint that the client application listens to.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<useRequestHeadersForMetadataAddress>](../../../../../docs/framework/configure-apps/file-schema/wcf/userequestheadersformetadataaddress.md)|A list of default ports.|  
+|[\<useRequestHeadersForMetadataAddress>](userequestheadersformetadataaddress.md)|A list of default ports.|  
   
 ## See also
 

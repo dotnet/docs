@@ -11,7 +11,7 @@ author: "ghogen"
 When you create a service, you can use a Visual Studio project template called **Windows Service**. This template automatically does much of the work for you by referencing the appropriate classes and namespaces, setting up the inheritance from the base class for services, and overriding several of the methods you're likely to want to override.  
   
 > [!WARNING]
->  The Windows Services project template is not available in the Express edition of Visual Studio.  
+> The Windows Services project template is not available in the Express edition of Visual Studio.  
   
  At a minimum, to create a functional service you must:  
   

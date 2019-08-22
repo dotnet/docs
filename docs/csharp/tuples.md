@@ -367,7 +367,7 @@ public class Point
 ```
 
 > [!WARNING]
->  You cannot mix existing declarations with declarations inside the parentheses. For instance, the following is not allowed: `(var x, y) = MyMethod();`. This produces error CS8184 because *x* is declared inside the parentheses and *y* is previously declared elsewhere.
+> You cannot mix existing declarations with declarations inside the parentheses. For instance, the following is not allowed: `(var x, y) = MyMethod();`. This produces error CS8184 because *x* is declared inside the parentheses and *y* is previously declared elsewhere.
 
 ### Deconstructing user-defined types
 

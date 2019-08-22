@@ -7,7 +7,7 @@ ms.assetid: 8cab2a9a-c51f-4283-bb60-2ad0c274fd46
 Represents a collection of configuration elements that specify pass through filters, which provide a mechanism to pick the appropriate Internet Information Services (IIS) bindings when hosting the Windows Communication Foundation (WCF) application in IIS.  
   
 > [!WARNING]
->  \<baseAddressPrefixFilters> does not recognize "localhost", use the fully qualified machine name instead.  
+> \<baseAddressPrefixFilters> does not recognize "localhost", use the fully qualified machine name instead.  
   
  \<system.ServiceModel>  
 \<ServiceHostingEnvironment>  
@@ -32,13 +32,13 @@ Represents a collection of configuration elements that specify pass through filt
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-baseaddressprefixfilter.md)|Adds a configuration element that specifies a prefix filter for the base addresses used by the service host.|  
+|[\<add>](add-of-baseaddressprefixfilter.md)|Adds a configuration element that specifies a prefix filter for the base addresses used by the service host.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<serviceHostingEnvironment>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|Defines the type the service hosting environment instantiates for a particular transport.|  
+|[\<serviceHostingEnvironment>](servicehostingenvironment.md)|Defines the type the service hosting environment instantiates for a particular transport.|  
   
 ## Remarks  
  A prefix filter provides a way for shared hosting providers to specify which URIs are to be used by the service. It enables shared hosts to host multiple applications with different base addresses for the same scheme on the same site.  
@@ -79,4 +79,4 @@ http://test2.fabrikam.com/Service.svc
 - <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)

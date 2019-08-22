@@ -29,11 +29,11 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
 <a name="XPS_print_path_intro"></a>   
 ## XPS Print Path  
- The XML Paper Specification (XPS) print path is a new [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] feature that redefines how printing is handled in Windows applications. Because [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] can replace a document presentation language (such as RTF), a print spooler format (such as WMF), and a page description language (such as PCL or Postscript); the new print path maintains the XPS format from application publication to the final processing in the print driver or device.  
+ The XML Paper Specification (XPS) print path is a new Windows feature that redefines how printing is handled in Windows applications. Because [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] can replace a document presentation language (such as RTF), a print spooler format (such as WMF), and a page description language (such as PCL or Postscript); the new print path maintains the XPS format from application publication to the final processing in the print driver or device.  
   
  The XPS print path is built upon the XPS printer driver model (XPSDrv), which provides several benefits for developers such as [!INCLUDE[TLA#tla_wys](../../../../includes/tlasharptla-wys-md.md)] printing, improved color support, and significantly improved print performance. (For more on XPSDrv, see the [Windows Driver Kit documentation](/windows-hardware/drivers/).)  
   
- The operation of the print spooler for XPS documents is essentially the same as in previous versions of Windows. However, it has been enhanced to support the XPS print path in addition to the existing GDI print path. The new print path natively consumes an XPS spool file. While user-mode printer drivers written for previous versions of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] will continue to work, an XPS printer driver (XPSDrv) is required in order to use the XPS print path.  
+ The operation of the print spooler for XPS documents is essentially the same as in previous versions of Windows. However, it has been enhanced to support the XPS print path in addition to the existing GDI print path. The new print path natively consumes an XPS spool file. While user-mode printer drivers written for previous versions of Windows will continue to work, an XPS printer driver (XPSDrv) is required in order to use the XPS print path.  
   
  The benefits of the XPS print path are significant, and include:  
   

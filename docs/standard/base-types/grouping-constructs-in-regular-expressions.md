@@ -228,13 +228,13 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |7|`[^<>]*`|Looks for non-angle bracket characters after the right angle bracket; finds no matches.|  
 |8|`)+`|The value of the third captured group is ">".<br /><br /> The next character in the input string is not a right angle bracket, so the regular expression engine does not loop back to the `((?'Close-Open'>)[^<>]*)` subpattern.|  
 |9|`)*`|The value of the first captured group is "\<abc>".<br /><br /> The next character in the input string is a left  angle bracket, so the regular expression engine loops back to the `(((?'Open'<)` subpattern.|  
-|10|`(((?'Open'<)`|Matches the left angle bracket in "\<mno>" and assigns it to the `Open` group. Its <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection now has a single value, "<".|  
+|10|`(((?'Open'<)`|Matches the left angle bracket in "\<mno" and assigns it to the `Open` group. Its <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection now has a single value, "<".|  
 |11|`[^<>]*`|Matches "mno".|  
 |12|`)+`|"<mno" is the value of the second captured group.<br /><br /> The next character in the input string is an left angle bracket, so the regular expression engine loops back to the `(?'Open'<)[^<>]*)` subpattern.|  
-|13|`(((?'Open'<)`|Matches the left angle bracket in "\<xyz>" and assigns it to the `Open` group. The <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection of the `Open` group now includes two captures: the left angle bracket from "\<mno>", and the left angle bracket from "\<xyz>".|  
+|13|`(((?'Open'<)`|Matches the left angle bracket in "\<xyz>" and assigns it to the `Open` group. The <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection of the `Open` group now includes two captures: the left angle bracket from "\<mno", and the left angle bracket from "\<xyz>".|  
 |14|`[^<>]*`|Matches "xyz".|  
 |15|`)+`|"<xyz" is the value of the second captured group.<br /><br /> The next character in the input string is not a left angle bracket, so the regular expression engine does not loop back to the `(?'Open'<)[^<>]*)` subpattern.|  
-|16|`((?'Close-Open'>)`|Matches the right angle bracket in "\<xyz>". "xyz", assigns the substring between the `Open` group and the right angle bracket to the `Close` group, and deletes the current value of the `Open` group. The value of the previous capture (the left angle bracket in "\<mno>") becomes the current value of the `Open` group. The <xref:System.Text.RegularExpressions.Group.Captures%2A> collection of the `Open` group now includes a single capture, the left angle bracket from "\<xyz>".|  
+|16|`((?'Close-Open'>)`|Matches the right angle bracket in "\<xyz>". "xyz", assigns the substring between the `Open` group and the right angle bracket to the `Close` group, and deletes the current value of the `Open` group. The value of the previous capture (the left angle bracket in "\<mno") becomes the current value of the `Open` group. The <xref:System.Text.RegularExpressions.Group.Captures%2A> collection of the `Open` group now includes a single capture, the left angle bracket from "\<xyz>".|  
 |17|`[^<>]*`|Looks for non-angle bracket characters; finds no matches.|  
 |18|`)+`|The value of the third captured group is ">".<br /><br /> The next character in the input string is a right angle bracket, so the regular expression engine loops back to the `((?'Close-Open'>)[^<>]*)` subpattern.|  
 |19|`((?'Close-Open'>)`|Matches the final right angle bracket in "xyz>>", assigns "mno\<xyz>" (the substring between the `Open` group and the right angle bracket) to the `Close` group, and deletes the current value of the `Open` group. The `Open` group is now empty.|  
@@ -390,7 +390,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  where *subexpression* is any regular expression pattern. For a match to be successful, *subexpression* must not occur at the input string to the left of the current position. However, any substring that does not match `subexpression` is not included in the match result.  
   
- Zero-width negative lookbehind assertions are typically used at the beginning of regular expressions. The pattern that they define precludes a match in the string that follows. They are also used to limit backtracking when the last character or characters in a captured group must not be one or more of the characters that match that group's regular expression pattern. For example, if a group captures all consecutive word characters, you can use a zero-width positive lookbehind assertion to require that the last character not be an underscore (_).  
+ Zero-width negative lookbehind assertions are typically used at the beginning of regular expressions. The pattern that they define precludes a match in the string that follows. They are also used to limit backtracking when the last character or characters in a captured group must not be one or more of the characters that match that group's regular expression pattern. For example, if a group captures all consecutive word characters, you can use a zero-width positive lookbehind assertion to require that the last character not be an underscore (\_).  
   
  The following example matches the date for any day of the week that is not a weekend (that is, that is neither Saturday nor Sunday).  
   
@@ -453,16 +453,16 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  [!code-csharp[RegularExpressions.Language.Grouping#4](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.grouping/cs/objectmodel1.cs#4)]
  [!code-vb[RegularExpressions.Language.Grouping#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.grouping/vb/objectmodel1.vb#4)]  
   
- The regular expression pattern `\b(\w+)\W+)+` extracts individual words from a string. It is defined as shown in the following table.  
+ The regular expression pattern `(\b(\w+)\W+)+` extracts individual words from a string. It is defined as shown in the following table.  
   
 |Pattern|Description|  
 |-------------|-----------------|  
 |`\b`|Begin the match at a word boundary.|  
 |`(\w+)`|Match one or more word characters. Together, these characters form a word. This is the second capturing group.|  
 |`\W+`|Match one or more non-word characters.|  
-|`(\w+)\W+)+`|Match the pattern of one or more word characters followed by one or more non-word characters one or more times. This is the first capturing group.|  
+|`(\b(\w+)\W+)`|Match the pattern of one or more word characters followed by one or more non-word characters one or more times. This is the first capturing group.|  
   
- The first capturing group matches each word of the sentence. The second capturing group matches each word along with the punctuation and white space that follow the word. The <xref:System.Text.RegularExpressions.Group> object whose index is 2 provides information about the text matched by the second capturing group. The complete set of words captured by the capturing group are available from the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
+ The second capturing group matches each word of the sentence. The first capturing group matches each word along with the punctuation and white space that follow the word. The <xref:System.Text.RegularExpressions.Group> object whose index is 2 provides information about the text matched by the second capturing group. The complete set of words captured by the capturing group are available from the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
   
 ## See also
 

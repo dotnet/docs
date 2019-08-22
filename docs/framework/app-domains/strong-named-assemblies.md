@@ -19,7 +19,7 @@ Strong-naming an assembly creates a unique identity for the assembly, and can pr
  When a strong-named assembly is created, it contains the simple text name of the assembly, the version number, optional culture information, a digital signature, and the public key that corresponds to the private key used for signing.  
   
 > [!WARNING]
->  Do not rely on strong names for security. They provide a unique identity only.  
+> Do not rely on strong names for security. They provide a unique identity only.  
   
 ## Why strong-name your assemblies?  
  When you reference a strong-named assembly, you can expect certain benefits, such as versioning and naming protection. Strong-named assemblies can be installed in the Global Assembly Cache, which is required to enable some scenarios.  

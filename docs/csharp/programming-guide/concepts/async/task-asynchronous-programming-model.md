@@ -32,7 +32,7 @@ The async-based approach adds the equivalent of an automatic transmission to the
 
 ## <a name="BKMK_HowtoWriteanAsyncMethod"></a> Async methods are easier to write
 
-The [async](../../../language-reference/keywords/async.md) and [await](../../../language-reference/keywords/await.md) keywords in C# are the heart of async programming. By using those two keywords, you can use resources in the .NET Framework, .NET Core, or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using the `async` keyword are referred to as *async methods*.
+The [async](../../../language-reference/keywords/async.md) and [await](../../../language-reference/operators/await.md) keywords in C# are the heart of async programming. By using those two keywords, you can use resources in the .NET Framework, .NET Core, or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using the `async` keyword are referred to as *async methods*.
 
 The following example shows an async method. Almost everything in the code should look completely familiar to you.
 
@@ -150,7 +150,7 @@ The async-based approach to asynchronous programming is preferable to existing a
 
 If you specify that a method is an async method by using the [async](../../../language-reference/keywords/async.md) modifier, you enable the following two capabilities.
 
-- The marked async method can use [await](../../../language-reference/keywords/await.md) to designate suspension points. The `await` operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.
+- The marked async method can use [await](../../../language-reference/operators/await.md) to designate suspension points. The `await` operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.
 
      The suspension of an async method at an `await` expression doesn't constitute an exit from the method, and `finally` blocks don’t run.
 
@@ -162,7 +162,7 @@ An async method typically contains one or more occurrences of an `await` operato
 
 - [async](../../../language-reference/keywords/async.md)
 
-- [await](../../../language-reference/keywords/await.md)
+- [await](../../../language-reference/operators/await.md)
 
 ## <a name="BKMK_ReturnTypesandParameters"></a> Return types and parameters
 
@@ -337,6 +337,7 @@ namespace AsyncFirstExample
 ## See also
 
 - [async](../../../language-reference/keywords/async.md)
-- [await](../../../language-reference/keywords/await.md)
+- [await](../../../language-reference/operators/await.md)
 - [Asynchronous programming](../../../async.md)
 - [Async overview](../../../../standard/async.md)
+ 

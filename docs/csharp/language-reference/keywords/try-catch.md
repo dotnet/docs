@@ -126,7 +126,7 @@ static void Main()
 For more information about catch, see [try-catch-finally](try-catch-finally.md).
 
 ## Exceptions in Async Methods
-An async method is marked  by an  [async](async.md) modifier and usually contains one or more await expressions or statements. An await expression applies the [await](await.md) operator to a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
+An async method is marked  by an  [async](async.md) modifier and usually contains one or more await expressions or statements. An await expression applies the [await](../operators/await.md) operator to a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 
 When control reaches an `await` in the async method, progress in the method is suspended until the awaited task completes. When the task  is complete, execution can resume in the method. For more information, see [Asynchronous Programming with async and await](../../programming-guide/concepts/async/index.md) and [Control Flow in Async Programs](../../programming-guide/concepts/async/control-flow-in-async-programs.md).
 

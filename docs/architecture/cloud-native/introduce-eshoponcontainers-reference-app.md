@@ -52,6 +52,8 @@ Because it leverages microservices, the eShopOnContainers app includes quite a f
 ![Projects in Visual Studio solution.](./media/projects-in-visual-studio-solution.png)
 **Figure 3-4**. Projects in Visual Studio solution.
 
+The code is organized to support the different microservices, and within each microservice, the code is broken up into domain logic, infrastructure concerns, and user interface or service endpoint. In many cases, each service's dependencies can be fulfilled by Azure services in production, as well as alternative options for local development. Let's examine how the application's requirements map to Azure services.
+
 >[!div class="step-by-step"]
 >[Previous](implement-app.md)
 >[Next](map-eshoponcontainers-azure-services.md)

@@ -5,7 +5,7 @@ ms.date: 06/30/2019
 ---
 # Implementing a Cloud Native app
 
-Before starting this chapter, we recommend that you download the eShopOnContainers reference application. If you do so, it should be easier for you to follow along with the information presented.
+Before starting this chapter, we recommend that you download the [eShopOnContainers reference application](https://github.com/dotnet-architecture/eShopOnContainers). If you do so, it should be easier for you to follow along with the information presented.
 
 ## References
 

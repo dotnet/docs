@@ -3,7 +3,7 @@ title: dotnet-counters - .NET Core
 description: Installing and using the dotnet-counter command-line tool.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 08/05/2019
+ms.date: 08/21/2019
 ---
 # dotnet-counters
 

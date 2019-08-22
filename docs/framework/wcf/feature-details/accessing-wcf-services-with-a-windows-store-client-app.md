@@ -13,7 +13,7 @@ Windows 8 introduces a new type of application called Windows Store applications
 > Use the WinRT syndication APIs instead of those exposed by WCF. For more information see, [WinRT Syndication API](https://go.microsoft.com/fwlink/?LinkId=236265)  
   
 > [!WARNING]
->  Using Add Service Reference to add a web service reference to a Windows Runtime Component isn’t supported.  
+> Using Add Service Reference to add a web service reference to a Windows Runtime Component isn’t supported.  
   
 ### Supported Bindings  
  The following WCF bindings are supported in Windows Store Applications:  
@@ -98,7 +98,7 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
 3. XmlSerializer  
   
 > [!WARNING]
->  XmlDictionaryWriter.Write(DateTime) now writes the DateTime object as a string.  
+> XmlDictionaryWriter.Write(DateTime) now writes the DateTime object as a string.  
   
 ### Security  
 
@@ -148,7 +148,7 @@ The following client credential types are supported in Windows Store application
  We recommend only defining asynchronous service operations using the task-based async pattern. This ensures Windows Store applications remain responsive while calling a service operation.  
   
 > [!WARNING]
->  While no exception will be thrown if you define a synchronous operation, it is strongly recommended to only define asynchronous operations.  
+> While no exception will be thrown if you define a synchronous operation, it is strongly recommended to only define asynchronous operations.  
   
 ### Calling WCF Services from Windows Store Applications  
  As mentioned before all configuration must be done in code in the GetBindingForEndpoint method in the generated proxy class. Calling a service operation is done the same as calling any task-based asynchronous method as shown in the following code snippet.  

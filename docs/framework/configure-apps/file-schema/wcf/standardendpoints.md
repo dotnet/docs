@@ -45,4 +45,4 @@ This configuration section allows you to define a collection of standard endpoin
   
 ## See also
 
-- [Standard Endpoints](../../../../../docs/framework/wcf/feature-details/standard-endpoints.md)
+- [Standard Endpoints](../../../wcf/feature-details/standard-endpoints.md)

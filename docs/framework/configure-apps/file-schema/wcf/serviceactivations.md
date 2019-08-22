@@ -35,13 +35,13 @@ None.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-serviceactivations.md)|Adds a configuration element that specifies the activation of a service application.|
+|[\<add>](add-of-serviceactivations.md)|Adds a configuration element that specifies the activation of a service application.|
 
 ### Parent Elements
 
 |Element|Description|
 |-------------|-----------------|
-|[\<serviceHostingEnvironment>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|Defines the type the service hosting environment instantiates for a particular transport.|
+|[\<serviceHostingEnvironment>](servicehostingenvironment.md)|Defines the type the service hosting environment instantiates for a particular transport.|
 
 ## Remarks
 

@@ -389,7 +389,7 @@ using (ServiceHost serviceHost =
  Impersonation with the routing service requires either the use of ASP.NET impersonation while in ASP.NET compatibility mode or the use of Windows credentials that have been configured to allow impersonation. For more information about ASP.NET compatibility mode, see [WCF Services and ASP.NET](wcf-services-and-aspnet.md).  
   
 > [!WARNING]
->  The WCF Routing Service does not support impersonation with basic authentication.  
+> The WCF Routing Service does not support impersonation with basic authentication.  
   
  To use ASP.NET impersonation with the routing service, enable ASP.NET compatibility mode on the service hosting environment. The routing service has already been marked as allowing ASP.NET compatibility mode and impersonation will automatically be enabled. Impersonation is the only supported use of ASP.NET integration with the routing service.  
   

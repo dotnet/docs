@@ -37,4 +37,4 @@ This section enables the use of a user defined binding from a machine or applica
   
 ## See also
 
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)

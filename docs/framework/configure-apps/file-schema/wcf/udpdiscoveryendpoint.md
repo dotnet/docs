@@ -42,13 +42,13 @@ This configuration element defines a standard endpoint that is pre-configured fo
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<udpTransportSettings>](../../../../../docs/framework/configure-apps/file-schema/wcf/udptransportsettings.md)|A collection of settings that allow you to configure UDP transport for the UDP endpoint.|  
+|[\<udpTransportSettings>](udptransportsettings.md)|A collection of settings that allow you to configure UDP transport for the UDP endpoint.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
+|[\<standardEndpoints>](standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
 ## Example  
  The following example demonstrates a service listening for discovery messages over a UDP multicast transport.  

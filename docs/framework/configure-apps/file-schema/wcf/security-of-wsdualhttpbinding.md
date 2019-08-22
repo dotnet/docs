@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 869c05e7-4ebe-467d-95ab-c8f8de4e6b9e
 ---
 # \<security> of \<wsDualHttpBinding>
-Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).  
+Defines the security capabilities of the [\<wsDualHttpBinding>](wsdualhttpbinding.md).  
   
  \<system.ServiceModel>  
 \<bindings>  
@@ -42,13 +42,13 @@ Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../d
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<message>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-of-wsdualhttpbinding.md)|Defines the settings for the message-level security. This element is of type <xref:System.ServiceModel.MessageSecurityOverHttp>.|  
+|[\<message>](message-of-wsdualhttpbinding.md)|Defines the settings for the message-level security. This element is of type <xref:System.ServiceModel.MessageSecurityOverHttp>.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](wsdualhttpbinding.md).|  
   
 ## Remarks  
  A dual binding exposes the IP address of the client to the service. The client should use security to ensure that it only connects to services it trusts.  
@@ -57,8 +57,8 @@ Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../d
 
 - <xref:System.ServiceModel.WSDualHttpSecurity>
 - <xref:System.ServiceModel.BasicHttpSecurity>
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

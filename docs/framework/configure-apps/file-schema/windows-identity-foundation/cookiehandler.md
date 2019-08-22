@@ -71,7 +71,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
  The following XML shows a `<cookieHandler>` element. In this example, because the `mode` attribute is not specified, the default cookie handler will be used by the SAM. This is an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class. Because the `<chunkedCookieHandler>` child element is not specified, the default chunk size will be used. HTTPS will not be required because the `requireSsl` attribute is set `false`.  
   
 > [!WARNING]
->  In this example, HTTPS is not required to write session cookies. This is because the `requireSsl` attribute on the `<cookieHandler>` element is set to `false`. This setting is not recommended for most production environments as it may present a security risk.  
+> In this example, HTTPS is not required to write session cookies. This is because the `requireSsl` attribute on the `<cookieHandler>` element is set to `false`. This setting is not recommended for most production environments as it may present a security risk.  
   
 ```xml  
 <cookieHandler requireSsl="false" />  

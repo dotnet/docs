@@ -40,7 +40,7 @@ Since style sheets can determine the output format using an `<xsl:output>` state
 - indent  
   
     > [!NOTE]
-    > *the encoding attribute is ignored when the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method is sending its output to a <xref:System.IO.TextWriter>. The encoding property on the <xref:System.IO.TextWriter> is used instead.  
+    > \*The encoding attribute is ignored when the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method is sending its output to a <xref:System.IO.TextWriter>. The encoding property on the <xref:System.IO.TextWriter> is used instead. 
   
  The following attribute is ignored when the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method output is a <xref:System.IO.Stream>:  
   

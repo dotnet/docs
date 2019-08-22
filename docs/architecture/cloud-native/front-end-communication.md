@@ -15,60 +15,86 @@ To keep things simple, a front-end client could directly communicate with back-e
 ![Direct client to service communication](media/direct-client-to-service-communication.png)
 **Figure 4-2**. Direct client to service communication
 
-While relatively simple to implement, direct front-end communication is normally not an acceptable practice. It tightly couples the front-end client to core back-end services and opens the door for potential problems, including:
+With this approach, each microservice has a public endpoint. In a production environment, you would typically place a load balancer in front of your microservices, routing traffic proportionately.
 
-- Client susceptibility to backend core service refactoring.
+While relatively simple to implement, direct front-end communication wouldn't be acceptable for enterprise microservie applications. It tightly couples the frontend client to core backend services, opening the door for a number of potential problems, including:
 
-- A widening attack surface as core backend services are directly exposed.
+- Client susceptibility to backend service refactoring.
 
-- Duplication of cross-cutting concerns.
+- Wider attack surface as core backend services are directly exposed.
+
+- Duplication of cross-cutting concerns across each microservice.
 
 - Overly complex client code.
 
-Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the frontend applications and backend services, shown in Figure 4-3:
+Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the frontend applications and backend services. The pattern is shown in Figure 4-3:
 
 ![API Gateway Pattern](media/api-gateway-pattern.png)
 **Figure 4-3.** API gateway pattern
 
-This pattern exposes a single point of entry (the API gateway) to enable front-end communication with backend services. Importantly, it insulates the client from internal service partitioning and refactoring. The gateway act as a reverse proxy appropriately rerouting inbound traffic. It also implements cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the backend core services to the gateway, simplifying the back-end service and centralizing these concerns.
+This pattern exposes a single point of entry (the API gateway) to enable front-end communication with backend services. Clients aren't aware of the backend services, only the gateway. The gateway acts as a reverse proxy appropriately rerouting inbound traffic. The gateway insulates the client from internal service partitioning and refactoring. If we make a change to a service, we can accommodate for it in the gateway without breaking the client. THe gateway also implements cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the backend core services to the gateway, centralizing these concerns and simplifying the back-end services.
 
 Care must be taken to keep the API Gateway simple and fast. A single gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems might expose multiple API Gateways segmented by client type (mobile, web, desktop) or backend functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern provides guidance for implementing multiple gateways.
 
-To start, you could build your own API Gateway service. A quick search of GitHub will present you with many examples. However, there are several off-the-shelf options available.
+To start, you could build your own API Gateway service. A quick search of GitHub will provide many examples. However, there are several commercial options.
 
 ## Azure API Management
 
-Azure hosts a cloud-based, fully managed and full-featured API Gateway solution that is a great candidate for many mediums to large-scale cloud native systems. The service provides built-in gateway management functionality along with a developer and publisher portal, shown in Figure 4-4.
+Azure hosts a cloud-based API Management service that not only solves your API Gateway needs but provides rich developer and administrative features.
+
+Shown in Figure 4-4, [Azure API Management](https://azure.microsoft.com/services/api-management/) is a great solution for medium- to large-scale cloud native systems. 
 
 ![Azure API Management](media/azure-api-management.png)
 **Figure 4-4**. Azure API Management
 
-[Azure API Management](https://azure.microsoft.com/services/api-management/) enables you to access backend services hosted anywhere – in the cloud or on-premises in your data center. It supports both REST and SOAP APIs across any development platform (.NET, Java, Golang, and so on). Even other Azure services can be exposed through API Management, letting you put a managed API on top of Azure backing services like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
+> https://www.reply.com/solidsoft-reply/en/content/azure-api-management
 
-As shown above in Figure 4-4, the API Gateway feature creates a façade over the backend microservices. Clients (that is, front end, other cloud services) invoke the façade with HTTP requests. Each call is eventually routed to a backend service, allowing API Management to add configurable services to the call.
+> Robust Cloud Integration with Azure
 
-Azure API Management supports many features, including:
 
-- Throttle calls from a single source, if necessary.
+In the previous figure, note how Azure API Management abstracts your backend microservices with a façade. Service consumers (front-end clients and other services) invoke the API façade with HTTP requests. Note also that a developer and publisher portal is exposed. 
 
-- Enforce authentication.
+The developer portal enables access to the API, its documentation, and sample code on how to invoke the API across a number of different programming languages. Developers can access Swagger/Open API metadata for their services and log issues. 
 
-- Block calls from specific IP addresses.
+The publisher portal exposes an management dashboard where administrators 
+can create APIs and configure how they behave. Access can be granted, service health monitored, and behavior and rules configured.
 
-- Enable caching.
 
-- Convert requests from SOAP to REST.
+Here, API Policies can be applied to each call. Policies are a collection of pre-built statements that execute sequentially for the request and response of each call, enabling you to change the behavior of the API through configuration (that is, not code). The product ships with a large number of prebuilt [policies](https://docs.microsoft.com/azure/api-management/api-management-policies) that can be executed on the inbound call, backend processing, outbound call, and upon an error.
 
-- Convert between different data formats, such as from XML to JSON.
 
-API Management provides an extension, the Publisher Portal, where administrators can create APIs and configure how they behave. Here, API Policies can be applied to each call. Policies are a collection of pre-built statements that execute sequentially for the request and response of each call, enabling you to change the behavior of the API through configuration (that is, not code). The product ships with a large number of prebuilt [policies](https://docs.microsoft.com/azure/api-management/api-management-policies) that can be executed on the inbound call, backend processing, outbound call, and upon an error.
 
-Additionally, API Management also provides a Developer Portal, as previously shown in Figure x, which enables access to the API, its documentation, and sample code to invoke the API across a number of different programming languages.
+
+
+Each call is routed to a backend service. Additional rules can be configured, including:
+
+- Throttling calls from a single source, if necessary.
+
+- Enforcing authentication.
+
+- Blocking calls from specific IP addresses.
+
+- Enabling caching.
+
+- Converting requests from SOAP to REST.
+
+- Converting between different data formats, such as from XML to JSON.
+
+
+
+
+
+
+
+
 
 The Azure API Management service provides a tremendous amount of functionality, shown in Figure 4-5.
 
 ![Azure API Management functionality](media/azure-api-management-functionality.png)
 **Figure 4-5**. Azure API Management functionality
+
+Azure API Management can access backend services hosted anywhere – including services in the cloud and in your data center. It supports both REST and SOAP APIs and works across any development platform (.NET, Java, Golang, and so on). Even other Azure services can be exposed through API Management. You could place a managed API on top of an Azure backing service like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
+
 
 Azure API Management is available across [four different pricing tiers](https://azure.microsoft.com/pricing/details/api-management/):
 

@@ -37,7 +37,7 @@ ms.author: "ronpet"
 .NET includes the <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, and <xref:System.TimeZoneInfo> types, all of which can be used to build applications that work with dates and times.
 
 > [!NOTE]
-> This topic does not discuss a fourth type, <xref:System.TimeZone>, because its functionality is almost entirely incorporated in the <xref:System.TimeZoneInfo> class. Whenever possible, developers should use the <xref:System.TimeZoneInfo> class instead of the <xref:System.TimeZone> class.
+> This topic doesn't discuss <xref:System.TimeZone> because its functionality is almost entirely incorporated in the <xref:System.TimeZoneInfo> class. Whenever possible, use the <xref:System.TimeZoneInfo> class instead of the <xref:System.TimeZone> class.
 
 ## The DateTime structure
 

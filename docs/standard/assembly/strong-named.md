@@ -42,3 +42,4 @@ Strong-naming an assembly creates a unique identity for the assembly, and can pr
 - [How to: Sign an assembly with a strong name](sign-strong-name.md)
 - [Sn.exe (Strong Name tool)](../../framework/tools/sn-exe-strong-name-tool.md)
 - [Create and use strong-named assemblies](create-use-strong-named.md)
+

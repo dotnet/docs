@@ -52,6 +52,7 @@ Collecting to file: <Full-Path-To-Trace>/trace.nettrace
 If you're trying to use `EventCounter` for basic health monitoring in  performance-sensitive settings like production environments and you want to collect traces instead of watching them in real time, you can do that with `dotnet-trace` as well.
 
 For example, if you want to collect runtime performance counter values, you can use the following command:
+
 ```bash
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1
 ```
@@ -59,6 +60,7 @@ dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCoun
 This command will tell the runtime counters to be reported once every second for lightweight health monitoring. Replacing `EventCounterIntervalSec=1` with a higher value (say 60) will allow you to collect a smaller trace with less granularity in the counter data.
 
 If you want to disable runtime events to reduce the overhead (and trace size) even further, you can use the following command to disable runtime events and managed stack profiler.
+
 ```bash
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1,Microsoft-Windows-DotNETRuntime:0:1,Microsoft-DotNETCore-SampleProfiler:0:1
 ```

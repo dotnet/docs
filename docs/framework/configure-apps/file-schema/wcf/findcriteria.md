@@ -51,15 +51,15 @@ A configuration element that supplies a set of criteria used by a client applica
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<contractTypeNames>](../../../../../docs/framework/configure-apps/file-schema/wcf/contracttypenames.md)|A collection of configuration elements that contain the names of workflow service contract types.|  
+|[\<contractTypeNames>](contracttypenames.md)|A collection of configuration elements that contain the names of workflow service contract types.|  
 |\<extensions> of \<findCriteria>|A collection of XML element objects that provide extensions.|  
-|[\<scopes>](../../../../../docs/framework/configure-apps/file-schema/wcf/scopes.md)|A collection of objects that contain absolute URIs that are used during a find operation to locate a specific service or services.<br /><br /> If the specific service is found, a successful match has been made between the service URI and the Scope URI, sometimes with the help of scope rules that handle complications of matching.|  
+|[\<scopes>](scopes.md)|A collection of objects that contain absolute URIs that are used during a find operation to locate a specific service or services.<br /><br /> If the specific service is found, a successful match has been made between the service URI and the Scope URI, sometimes with the help of scope rules that handle complications of matching.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
+|[\<standardEndpoints>](standardendpoints.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
   
 ## See also
 

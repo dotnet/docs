@@ -40,7 +40,7 @@ Specifies settings for X.509 certificate validation. A secure Windows Communicat
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|Specifies settings that enable the authentication of an endpoint by other endpoints exchanging messages with it.|  
+|[\<identity>](identity.md)|Specifies settings that enable the authentication of an endpoint by other endpoints exchanging messages with it.|  
   
 ## See also
 

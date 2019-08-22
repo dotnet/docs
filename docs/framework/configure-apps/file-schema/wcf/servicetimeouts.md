@@ -37,7 +37,7 @@ Specifies the timeout for a service.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## See also
 

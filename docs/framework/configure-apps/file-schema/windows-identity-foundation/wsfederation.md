@@ -79,7 +79,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
  The following XML shows a `<wsFederation>` element that specifies settings for the WSFAM.  
   
 > [!WARNING]
->  In this example, the WSFAM is not required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element is set `false`. This setting is not recommended for most production environments as it may present a security risk.  
+> In this example, the WSFAM is not required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element is set `false`. This setting is not recommended for most production environments as it may present a security risk.  
   
 ```xml
 <wsFederation passiveRedirectEnabled="true"   

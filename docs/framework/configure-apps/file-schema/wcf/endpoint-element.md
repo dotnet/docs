@@ -53,14 +53,14 @@ Specifies binding, contract, and address properties for a service endpoint, whic
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<headers>](../../../../../docs/framework/configure-apps/file-schema/wcf/headers.md)|A collection of address headers.|  
-|[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|An identity that enables the authentication of an endpoint by other endpoints exchanging messages with it.|  
+|[\<headers>](headers.md)|A collection of address headers.|  
+|[\<identity>](identity.md)|An identity that enables the authentication of an endpoint by other endpoints exchanging messages with it.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|A configuration section that defines a list of endpoints that a client can connect to.|  
+|[\<service>](service.md)|A configuration section that defines a list of endpoints that a client can connect to.|  
   
 ## Example  
  This is an example of a service endpoint configuration.  
@@ -83,5 +83,5 @@ Specifies binding, contract, and address properties for a service endpoint, whic
 - <xref:System.ServiceModel.Configuration.ServiceEndpointElement>
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.Description.ServiceEndpoint>
-- [Endpoints: Addresses, Bindings, and Contracts](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
-- [How to: Create a Service Endpoint in Configuration](../../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)
+- [Endpoints: Addresses, Bindings, and Contracts](../../../wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+- [How to: Create a Service Endpoint in Configuration](../../../wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)

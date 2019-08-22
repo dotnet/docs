@@ -39,13 +39,13 @@ A routing entry that contain mappings between the routing filters and the target
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<filters>](../../../../../docs/framework/configure-apps/file-schema/wcf/filters-of-routing.md)|Maps a filter to a client endpoint that was previously defined. Messages matching this filter will be sent to this destination.|  
+|[\<filters>](filters-of-routing.md)|Maps a filter to a client endpoint that was previously defined. Messages matching this filter will be sent to this destination.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains a routing table.|  
+|[\<routing>](routing.md)|A configuration section that contains a routing table.|  
   
 ## See also
 

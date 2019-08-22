@@ -8,8 +8,11 @@ helpviewer_keywords:
   - "Windows Forms, grid options in designer"
   - "Windows Forms Designer"
 ms.assetid: 36967466-1dfd-4fae-a7f1-7bf2cbc94048
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# How to: Set Grid Options for All Windows Forms
+# How to: Set grid options for all Windows Forms
 
 As you become used to working in the Visual Studio development environment, you can set preferences for all the forms and projects you work with in the Windows Forms Designer.
 
@@ -23,13 +26,4 @@ As you become used to working in the Visual Studio development environment, you 
 
 ## See also
 
-- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100))
-- [Windows Forms Controls](index.md)
-- [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)
-- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
-- [How to: Set the Tab Order on Windows Forms](how-to-set-the-tab-order-on-windows-forms.md)
-- [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
-- [Putting Controls on Windows Forms](putting-controls-on-windows-forms.md)
-- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
-- [Windows Forms Controls by Function](windows-forms-controls-by-function.md)
+- [Options: Windows Forms Designer](/visualstudio/ide/reference/options-windows-forms-designer)

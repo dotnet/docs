@@ -6,7 +6,7 @@ ms.assetid: 9af4ec79-cdef-457e-9dca-09d5eb821594
 
 # \<ws2007FederationHttpBinding>
 
-A secure and interoperable binding that derives from [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and supports federated security.
+A secure and interoperable binding that derives from [\<wsFederationHttpBinding>](wsfederationhttpbinding.md) and supports federated security.
 
 ```xml
 <system.ServiceModel>
@@ -67,7 +67,7 @@ The following sections describe attributes, child elements, and parent elements.
 |`maxBufferPoolSize`|The maximum buffer pool size for this binding. The default is 524,288 bytes (512 * 1024). Many parts of Windows Communication Foundation (WCF) use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.|
 |`maxReceivedMessageSize`|The maximum message size, in bytes, including headers, that can be received on a channel configured with this binding. The sender of a message that exceeds this limit receives a SOAP fault. The receiver drops the message and creates an entry of the event in the trace log. The default is 65536.|
 |`messageEncoding`|Defines the encoder used to encode the message. Valid values include the following:<br /><br /> -   Text: Use a text message encoder.<br />-   Mtom: Use a Message Transmission Organization Mechanism 1.0 (MTOM) encoder.<br /><br /> The default is Text.<br /><br /> This attribute is of type <xref:System.ServiceModel.WSMessageEncoding>.|
-|`name`|The configuration name of the binding. This value should be unique because it is used as an identification for the binding. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).|
+|`name`|The configuration name of the binding. This value should be unique because it is used as an identification for the binding. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).|
 |`openTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for an open operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
 |`privacyNoticeAt`|A URI at which the privacy notice is located.|
 |`privacyNoticeVersion`|The version of the current privacy notice.|
@@ -82,7 +82,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsfederationhttpbinding.md)|Defines the security settings for the message. This element is of type <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement>.|
+|[\<security>](security-of-wsfederationhttpbinding.md)|Defines the security settings for the message. This element is of type <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement>.|
 |[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|
 |[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies whether reliable sessions are established between channel endpoints.|
 
@@ -90,11 +90,11 @@ The following sections describe attributes, child elements, and parent elements.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|
+|[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|
 
 ## Remarks
 
-Federation is the ability to share identities across multiple enterprises or trust domains for authentication and authorization. It uses the WS-Trust protocol to map the identity representation from one trust domain to another. Federated HTTP binding supports SOAP security as well as mixed-mode security, but it does not support transport security. Services configured with this binding must use the HTTP transport. For more information, see [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).
+Federation is the ability to share identities across multiple enterprises or trust domains for authentication and authorization. It uses the WS-Trust protocol to map the identity representation from one trust domain to another. Federated HTTP binding supports SOAP security as well as mixed-mode security, but it does not support transport security. Services configured with this binding must use the HTTP transport. For more information, see [\<wsFederationHttpBinding>](wsfederationhttpbinding.md).
 
 ## Example
 
@@ -133,8 +133,8 @@ Federation is the ability to share identities across multiple enterprises or tru
 
 - <xref:System.ServiceModel.WS2007FederationHttpBinding>
 - <xref:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement>
-- [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [\<wsFederationHttpBinding>](wsfederationhttpbinding.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

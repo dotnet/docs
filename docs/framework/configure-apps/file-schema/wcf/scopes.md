@@ -39,13 +39,13 @@ Contains a collection of configuration elements that specify custom scope Uris t
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-scopes.md)|Adds the scope information for the endpoint that can be used in matching criteria for finding services.|  
+|[\<add>](add-of-scopes.md)|Adds the scope information for the endpoint that can be used in matching criteria for finding services.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<endpointDiscovery>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpointdiscovery.md)|Specifies the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata.|  
+|[\<endpointDiscovery>](endpointdiscovery.md)|Specifies the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata.|  
   
 ## See also
 

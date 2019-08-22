@@ -84,5 +84,5 @@ With the introduction behind, we now dive into a much more detailed look at clou
 - [RayGun - Case Study](https://raygun.com/case-study/ovation)
 
 >[!div class="step-by-step"]
->[Previous](defining-cloud-native.md)
+>[Previous](definition.md)
 >[Next](scale-dotnet-applications.md) <!-- Next Chapter -->

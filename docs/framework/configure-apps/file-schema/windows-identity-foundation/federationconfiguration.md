@@ -68,7 +68,7 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
  The following XML shows a `<federationConfiguration>` element that specifies settings for the WSFAM and specifies that the default cookie handler (an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class) be used by the SAM.  
   
 > [!WARNING]
->  In this example, neither the cookie handler nor WSFAM are required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element and the `requireSsl` attribute on the `<cookieHandlerElement>` are `false`. These settings are not recommended for most production environments as they may present a security risk.  
+> In this example, neither the cookie handler nor WSFAM are required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element and the `requireSsl` attribute on the `<cookieHandlerElement>` are `false`. These settings are not recommended for most production environments as they may present a security risk.  
   
 ```xml  
 <system.identityModel.services>  

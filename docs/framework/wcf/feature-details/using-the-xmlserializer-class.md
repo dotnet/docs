@@ -91,7 +91,7 @@ Windows Communication Foundation (WCF) can use two different serialization techn
  Types that implement the `IXmlSerializable` interface are fully supported by the `DataContractSerializer`. The <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute should always be applied to these types to control their schema.  
   
 > [!WARNING]
->  If you are serializing polymorphic types you must apply the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> to the type to ensure the correct type is serialized.  
+> If you are serializing polymorphic types you must apply the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> to the type to ensure the correct type is serialized.  
   
  There are three varieties of types that implement `IXmlSerializable`: types that represent arbitrary content, types that represent a single element, and legacy <xref:System.Data.DataSet> types.  
   

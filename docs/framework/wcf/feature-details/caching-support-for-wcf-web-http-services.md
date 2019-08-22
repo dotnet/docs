@@ -34,7 +34,7 @@ public class Service
 ```
   
 > [!WARNING]
->  If ASP.NET compatibility mode is not turned on and the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> is used an exception is thrown.  
+> If ASP.NET compatibility mode is not turned on and the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> is used an exception is thrown.  
   
  The cache profile name specified by the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> identifies a cache profile that is added to your Web.config configuration file. The cache profile is defined with in a <`outputCacheSetting`> element as shown in the following configuration example.  
   

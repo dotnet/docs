@@ -110,5 +110,5 @@ In addition to Docker support, you can also add Container Orchestration Support,
 - [Visual Studio Tools for Docker](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
 
 >[!div class="step-by-step"]
->[Previous](scale-dotnet-applications.md)
+>[Previous](scale-applications.md)
 >[Next](leverage-serverless-functions.md)

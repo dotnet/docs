@@ -139,4 +139,4 @@ In this chapter, we flew over cloud native computing at 5,000 feet, providing a 
 
 >[!div class="step-by-step"]
 >[Previous](candidate-apps.md)
->[Next](scale-dotnet-applications.md) <!-- Next Chapter -->
+>[Next](scale-applications.md) <!-- Next Chapter -->

@@ -23,7 +23,7 @@ The identity element allows a client developer to specify at design time the exp
   <dns value="String" />
   <rsa value="String" />
   <servicePrincipalName value="String" />
-  <usePrincipalName value="String" />
+  <userPrincipalName value="String" />
 </identity>
 ```  
   

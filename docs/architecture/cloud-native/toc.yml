@@ -6,9 +6,9 @@
     items:
     - name: Defining Cloud Native
       href: definition.md
-  - name: Candidate Apps for Cloud Native
-    href: candidate-apps.md
-    - name: Scaling Cloud Native .NET Applications
+    - name: Candidate Apps for Cloud Native
+      href: candidate-apps.md
+  - name: Scaling Cloud Native .NET Applications
     href: scale-dotnet-applications.md
     items:
     - name: Leveraging Containers and Orchestrators
@@ -39,7 +39,7 @@
       href: front-end-communication.md
     - name: Cross-Service Communication
       href: cross-service-communication.md
-  - name: Cloud-Native Data Patterns
+  - name: Distributed Data
     href: distributed-data.md
     items:
     - name: Cloud-Native Data Patterns

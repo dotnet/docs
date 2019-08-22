@@ -11,7 +11,7 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 ---
 # How to: Set the Value Displayed by the Windows Forms ProgressBar Control
 > [!IMPORTANT]
->  The <xref:System.Windows.Forms.ToolStripProgressBar> control replaces and adds functionality to the <xref:System.Windows.Forms.ProgressBar> control; however, the <xref:System.Windows.Forms.ProgressBar> control is retained for both backward compatibility and future use, if you choose.  
+> The <xref:System.Windows.Forms.ToolStripProgressBar> control replaces and adds functionality to the <xref:System.Windows.Forms.ProgressBar> control; however, the <xref:System.Windows.Forms.ProgressBar> control is retained for both backward compatibility and future use, if you choose.  
   
  The .NET Framework gives you several different ways to display a given value within the <xref:System.Windows.Forms.ProgressBar> control. Which approach you choose will depend on the task at hand or the problem you are solving. The following table shows the approaches you can choose.  
   
@@ -30,7 +30,7 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 2. In code, set the control's <xref:System.Windows.Forms.ProgressBar.Value%2A> property to an integer value between the minimum and maximum values you have established.  
   
     > [!NOTE]
-    >  If you set the <xref:System.Windows.Forms.ProgressBar.Value%2A> property outside the boundaries established by the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties, the control throws an <xref:System.ArgumentException> exception.  
+    > If you set the <xref:System.Windows.Forms.ProgressBar.Value%2A> property outside the boundaries established by the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties, the control throws an <xref:System.ArgumentException> exception.  
   
      The following code example illustrates how to set the <xref:System.Windows.Forms.ProgressBar> value directly. The code reads records from a data source and updates the progress bar and label every time a data record is read. This example requires that your form has a <xref:System.Windows.Forms.Label> control, a <xref:System.Windows.Forms.ProgressBar> control, and a data table with a row called `CustomerRow` with `FirstName` and `LastName` fields.  
   

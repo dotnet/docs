@@ -47,7 +47,7 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
  [!code-vb[Astoria Streaming Client#GetReadStreamClient](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_streaming_client/vb/customerphotowindow.xaml.vb#getreadstreamclient)]  
   
 > [!NOTE]
->  The Content-Length header in the response message that contains the binary steam is not set by the data service. This value may not reflect the actual length of the binary data stream.  
+> The Content-Length header in the response message that contains the binary steam is not set by the data service. This value may not reflect the actual length of the binary data stream.  
   
 ### Uploading a Media Resource as a Stream  
  To insert or update a media resource, call the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> instance that is tracking the entity. This method sends a request to the data service that contains the media resource read from the supplied stream. The following example shows how to call the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method to send an image to the data service:  
@@ -58,7 +58,7 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
  In this example, the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method is called by supplying a value of `true` for the `closeStream` parameter. This guarantees that the <xref:System.Data.Services.Client.DataServiceContext> closes the stream after the binary data is uploaded to the data service.  
   
 > [!NOTE]
->  When you call <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A>, the stream is not sent to the data service until <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called.  
+> When you call <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A>, the stream is not sent to the data service until <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called.  
   
 ## See also
 

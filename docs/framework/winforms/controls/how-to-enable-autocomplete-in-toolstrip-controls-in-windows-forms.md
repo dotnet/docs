@@ -17,7 +17,7 @@ ms.assetid: fd66d085-1af1-45d4-930a-cde944da2e16
 The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> with a <xref:System.Windows.Forms.ToolStripComboBox> that can be dropped down to show a list of items, such as recently visited Web sites. If the user types a character that matches the first character of one of the items in the list, the item is immediately displayed.  
   
 > [!NOTE]
->  Automatic completion works with `ToolStrip` controls in the same way that it works with traditional controls such as <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.TextBox>.  
+> Automatic completion works with `ToolStrip` controls in the same way that it works with traditional controls such as <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.TextBox>.  
   
 ### To enable AutoComplete in a ToolStrip control  
   

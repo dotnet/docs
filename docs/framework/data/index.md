@@ -26,7 +26,7 @@ This section provides information on how to access data using ADO.NET, Language 
  [WCF Data Services 4.5](../../../docs/framework/data/wcf/index.md)  
  Provides information about how to use WCF Data Services to deploy data services on the Web or an intranet.  
   
- [XML Documents and Data](../../../docs/standard/data/xml/index.md)  
+ [XML Documents and Data](../../standard/data/xml/index.md)  
  Provides an overview to a comprehensive and integrated set of classes that work with XML documents and data in the .NET Framework.  
   
  [XML Standards Reference](https://msdn.microsoft.com/library/79c78508-c9d0-423a-a00f-672e855de401)  
@@ -39,5 +39,5 @@ This section provides information on how to access data using ADO.NET, Language 
  [Development Guide](../../../docs/framework/development-guide.md)  
  Provides a guide to all key technology areas and tasks for application development, including creating, configuring, debugging, securing, and deploying your application, and information about dynamic programming, interoperability, extensibility, memory management, and threading.  
   
- [Security](../../../docs/standard/security/index.md)  
+ [Security](../../standard/security/index.md)  
  Provides links to more information on the classes and services in the common language runtime and the .NET Framework that facilitate secure application development.

@@ -44,7 +44,7 @@ This topic describes how you can configure message logging for different scenari
  You can use `add` to specify the name and type of the listener you want to use. In the example configuration, the Listener is named "messages" and adds the standard .NET Framework trace listener (`System.Diagnostics.XmlWriterTraceListener`) as the type to use. If you use `System.Diagnostics.XmlWriterTraceListener`, you must specify the output file location and name in the configuration file. This is done by setting `initializeData` to the name of the log file. Otherwise, the system throws an exception. You can also implement a custom listener that emits logs to a default file.  
   
 > [!NOTE]
->  Because message logging accesses disk space, you should limit the number of messages that are written to disk for a particular service. When the message limit is reached, a trace at the Information level is produced and all message logging activities stop.  
+> Because message logging accesses disk space, you should limit the number of messages that are written to disk for a particular service. When the message limit is reached, a trace at the Information level is produced and all message logging activities stop.  
   
  The logging level, as well as the additional options, are discussed in the Logging Level and Options section.  
   

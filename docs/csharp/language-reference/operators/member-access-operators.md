@@ -139,7 +139,7 @@ You also use parentheses when you invoke a [constructor](../../programming-guide
 
 ### Other usages of ()
 
-You also use parentheses to specify the order in which to evaluate operations in an expression. For more information, see the [Adding parentheses](../../programming-guide/statements-expressions-operators/operators.md#adding-parentheses) section of the [Operators](../../programming-guide/statements-expressions-operators/operators.md) article. For the list of operators ordered by precedence level, see [C# operators](index.md).
+You also use parentheses to adjust the order in which to evaluate operations in an expression. For more information, see [C# operators](index.md).
 
 [Cast expressions](type-testing-and-cast.md#cast-operator-), which perform explicit type conversions, also use parentheses.
 

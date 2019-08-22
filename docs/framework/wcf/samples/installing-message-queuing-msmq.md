@@ -7,7 +7,7 @@ ms.assetid: 7ddcd497-3e04-427e-bc04-3610ad98b01e
 The following procedures show how to install Message Queuing 4.0 and Message Queuing 3.0.  
   
 > [!NOTE]
->  Message Queuing 4.0 is not available in [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)].  
+> Message Queuing 4.0 is not available in [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)].  
   
 #### To install Message Queuing 4.0 on Windows Server 2008 or Windows Server 2008 R2  
   

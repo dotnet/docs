@@ -76,6 +76,6 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
 
 - [Configuration File Schema](../index.md)
 - [Cryptography Settings Schema](index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../configure-cryptography-classes.md)
 - [Mapping Object Identifiers to Cryptography Algorithms](../../map-object-identifiers-to-cryptography-algorithms.md)

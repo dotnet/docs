@@ -7,7 +7,7 @@ ms.assetid: 11c11108-8eb4-4d49-95a0-83285a812262
 The OperationContextScope sample demonstrates how to send extra information on a Windows Communication Foundation (WCF) call using headers. In this sample, both the server and client are console applications.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample demonstrates how a client can send additional information as a <xref:System.ServiceModel.Channels.MessageHeader> using <xref:System.ServiceModel.OperationContextScope>. An <xref:System.ServiceModel.OperationContextScope> object is created by scoping it to a channel. Headers that must be translated to the remote service can be added to the <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders%2A> collection. Headers added to this collection can be retrieved on the service by accessing <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A>. Its calls are made on multiple channels and then the headers added to the client only apply to the channel that was used to create the <xref:System.ServiceModel.OperationContextScope>.  
   

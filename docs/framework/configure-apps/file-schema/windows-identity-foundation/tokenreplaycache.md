@@ -41,10 +41,10 @@ Registers a token replay cache with a service or a security token handler collec
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<caches>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/caches.md)|Registers the caches used by a service or a security token handler collection.|  
+|[\<caches>](caches.md)|Registers the caches used by a service or a security token handler collection.|  
   
 ## Remarks  
- The token replay cache is used to detect replayed tokens. Token replay detection is enabled by the [\<tokenReplayDetection>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaydetection.md) element, which also specifies the maximum expiration time for tokens.  
+ The token replay cache is used to detect replayed tokens. Token replay detection is enabled by the [\<tokenReplayDetection>](tokenreplaydetection.md) element, which also specifies the maximum expiration time for tokens.  
   
 ## Example  
  The following XML shows the configuration of a custom cache for detecting replayed tokens.  
@@ -59,4 +59,4 @@ Registers a token replay cache with a service or a security token handler collec
 ## See also
 
 - <xref:System.IdentityModel.Tokens.TokenReplayCache>
-- [\<tokenReplayDetection>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaydetection.md)
+- [\<tokenReplayDetection>](tokenreplaydetection.md)

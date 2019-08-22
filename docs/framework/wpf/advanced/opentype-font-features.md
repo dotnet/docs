@@ -31,7 +31,7 @@ This topic provides an overview of some of the key features of OpenType font tec
 - Broader support for advanced typographic control.  
   
 > [!NOTE]
->  The Windows SDK contains a set of sample OpenType fonts that you can use with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. These fonts provide most of the features illustrated in the rest of this topic. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
+> The Windows SDK contains a set of sample OpenType fonts that you can use with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. These fonts provide most of the features illustrated in the rest of this topic. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
  See the [OpenType Specification](https://go.microsoft.com/fwlink/?LinkId=96731) for details of the OpenType font format.  
   

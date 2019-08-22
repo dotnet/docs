@@ -6,7 +6,7 @@ ms.assetid: 3f3b85d3-20f2-4cd8-8a6a-ee18befbd165
 # \<servicePrincipalName>
 Specifies the identity of a service by its Service Principal Name (SPN).  
   
- For more information about setting the SPN, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+ For more information about setting the SPN, see [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md).  
   
  \<identity>  
 \<servicePrincipalName>  
@@ -33,7 +33,7 @@ Specifies the identity of a service by its Service Principal Name (SPN).
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|Specifies the identity of the service to be authenticated by the client.|  
+|[\<identity>](identity.md)|Specifies the identity of the service to be authenticated by the client.|  
   
 ## Remarks  
  A secure Windows Communication Foundation (WCF) client that connects to an endpoint with this identity uses the SPN when performing SSPI authentication with the endpoint.  
@@ -44,5 +44,5 @@ Specifies the identity of a service by its Service Principal Name (SPN).
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>
 - <xref:System.ServiceModel.SpnEndpointIdentity>
-- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
-- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)
+- [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
+- [\<identity>](identity.md)

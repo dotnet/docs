@@ -15,7 +15,7 @@ Interfaces describe the characteristics of properties, methods, and events, but 
  This walkthrough demonstrates how to declare and implement an interface.  
   
 > [!NOTE]
->  This walkthrough doesn't provide information about how to create a user interface.  
+> This walkthrough doesn't provide information about how to create a user interface.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   

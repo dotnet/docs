@@ -34,19 +34,19 @@ Represents a collection of parameters that are used globally across multiple ser
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-commonparameters.md)|Adds a name-value pair of common parameters used by services to the collection.|  
+|[\<add>](add-of-commonparameters.md)|Adds a name-value pair of common parameters used by services to the collection.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<workflowRuntime>](../../../../../docs/framework/configure-apps/file-schema/wcf/workflowruntime.md)|Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based Windows Communication Foundation (WCF) services.|  
+|[\<workflowRuntime>](workflowruntime.md)|Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based Windows Communication Foundation (WCF) services.|  
   
 ## Remarks  
  The `<commonParameters>` element defines any parameters that are used globally across multiple services, for example `ConnectionString` when using the <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>.  
   
 > [!NOTE]
->  SQL Tracking service does not consistently use the `ConnectionString` value if it is specified in the `<commonParameters>` section. Some of its operations such as retrieving the `StateMachineWorkflowInstance.StateHistory` property may fail. To workaround this, specify the `ConnectionString` attribute in the configuration section for tracking provider, as indicated in the following example.  
+> SQL Tracking service does not consistently use the `ConnectionString` value if it is specified in the `<commonParameters>` section. Some of its operations such as retrieving the `StateMachineWorkflowInstance.StateHistory` property may fail. To workaround this, specify the `ConnectionString` attribute in the configuration section for tracking provider, as indicated in the following example.  
   
  `<add`  
   
@@ -106,4 +106,4 @@ config.Save();
 - <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService>
 - <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>
 - [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
-- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-commonparameters.md)
+- [\<add>](add-of-commonparameters.md)

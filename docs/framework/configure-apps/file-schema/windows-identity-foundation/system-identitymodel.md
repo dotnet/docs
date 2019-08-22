@@ -26,7 +26,7 @@ Provides configuration for enabling Windows Identity Foundation (WIF) options in
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)|Specifies service-level identity settings.|  
+|[\<identityConfiguration>](identityconfiguration.md)|Specifies service-level identity settings.|  
   
 ### Parent Elements  
   

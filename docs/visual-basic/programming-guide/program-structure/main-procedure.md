@@ -27,7 +27,7 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
  There are four ways to declare the `Main` procedure. It can take arguments or not, and it can return a value or not.
 
 > [!NOTE]
->  If you declare `Main` in a class, you must use the `Shared` keyword. In a module, `Main` does not need to be `Shared`.
+> If you declare `Main` in a class, you must use the `Shared` keyword. In a module, `Main` does not need to be `Shared`.
 
 - The simplest way is to declare a `Sub` procedure that does not take arguments or return a value.
 

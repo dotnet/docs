@@ -23,7 +23,7 @@ Dependency properties should generally be considered to be public properties. Th
  For a custom dependency property, you can register your property as a read-only dependency property, and this does provide an effective means of preventing a property being set by anyone that does not hold a reference to the <xref:System.Windows.DependencyPropertyKey> for that property. For more information, see [Read-Only Dependency Properties](read-only-dependency-properties.md).  
   
 > [!NOTE]
->  Declaring a <xref:System.Windows.DependencyProperty> identifier field private is not forbidden, and it can conceivably be used to help reduce the immediately exposed namespace of a custom class, but such a property should not be considered "private" in the same sense as the common language runtime (CLR) language definitions define that access level, for reasons described in the next section.  
+> Declaring a <xref:System.Windows.DependencyProperty> identifier field private is not forbidden, and it can conceivably be used to help reduce the immediately exposed namespace of a custom class, but such a property should not be considered "private" in the same sense as the common language runtime (CLR) language definitions define that access level, for reasons described in the next section.  
   
 <a name="PropertySystemExposure"></a>   
 ## Property System Exposure of Dependency Properties  

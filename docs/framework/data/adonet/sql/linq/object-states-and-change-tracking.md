@@ -25,7 +25,7 @@ ms.assetid: 7a808b00-9c3c-479a-aa94-717280fefd71
  For classes in an inheritance hierarchy, <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>(`o`) also sets the value of the member designated as the *discriminator* to match the type of the object `o`. In the case of a type matching the default discriminator value, this action causes the discriminator value to be overwritten with the default value. For more information, see [Inheritance Support](../../../../../../docs/framework/data/adonet/sql/linq/inheritance-support.md).  
   
 > [!IMPORTANT]
->  An object added to a `Table` is not in the identity cache. The identity cache reflects only what is retrieved from the database. After a call to <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>, the added entity does not appear in queries against the database until <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is successfully completed.  
+> An object added to a `Table` is not in the identity cache. The identity cache reflects only what is retrieved from the database. After a call to <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>, the added entity does not appear in queries against the database until <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is successfully completed.  
   
 ## Deleting Objects  
  You mark a tracked object `o` for deletion by calling <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A>(o) on the appropriate <xref:System.Data.Linq.Table%601>. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] considers the removal of an object from an <xref:System.Data.Linq.EntitySet%601> as an update operation, and the corresponding foreign key value is set to null. The target of the operation (`o`) is not deleted from its table. For example, `cust.Orders.DeleteOnSubmit(ord)` indicates an update where the relationship between `cust` and `ord` is severed by setting the foreign key `ord.CustomerID` to null. It does not cause the deletion of the row corresponding to `ord`.  
@@ -41,7 +41,7 @@ ms.assetid: 7a808b00-9c3c-479a-aa94-717280fefd71
  You can call <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> only on an object tracked by the <xref:System.Data.Linq.DataContext>. For an `Untracked` object, you must call <xref:System.Data.Linq.Table%601.Attach%2A> before you call <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A>. Calling <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> on an `Untracked` object throws an exception.  
   
 > [!NOTE]
->  Removing an object from a table tells [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] to generate a corresponding SQL `DELETE` command at the time of <xref:System.Data.Linq.DataContext.SubmitChanges%2A>. This action does not remove the object from the cache or propagate the deletion to related objects.  
+> Removing an object from a table tells [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] to generate a corresponding SQL `DELETE` command at the time of <xref:System.Data.Linq.DataContext.SubmitChanges%2A>. This action does not remove the object from the cache or propagate the deletion to related objects.  
 >   
 >  To reclaim the `id` of a deleted object, use a new <xref:System.Data.Linq.DataContext> instance. For cleanup of related objects, you can use the *cascade delete* feature of the database, or else manually delete the related objects.  
 >   

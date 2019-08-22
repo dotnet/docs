@@ -76,7 +76,7 @@ The common type system defines how types are declared, used, and managed in the 
 |exported or not exported|Indicates whether a class is visible outside the assembly in which it is defined. This characteristic applies only to top-level classes and not to nested classes.|  
   
 > [!NOTE]
->  A class can also be nested in a parent class or structure. Nested classes also have member characteristics. For more information, see [Nested Types](#NestedTypes).  
+> A class can also be nested in a parent class or structure. Nested classes also have member characteristics. For more information, see [Nested Types](#NestedTypes).  
   
  Class members that have no implementation are abstract members. A class that has one or more abstract members is itself abstract; new instances of it cannot be created. Some languages that target the runtime let you mark a class as abstract even if none of its members are abstract. You can use an abstract class when you want to encapsulate a basic set of functionality that derived classes can inherit or override when appropriate. Classes that are not abstract are referred to as concrete classes.  
   
@@ -109,7 +109,7 @@ The common type system defines how types are declared, used, and managed in the 
 - They cannot be generic, unless they are generic only because they are nested within a generic type. That is, an enumeration cannot have type parameters of its own.  
   
     > [!NOTE]
-    >  Nested types (including enumerations) created with Visual Basic, C#, and C++ include the type parameters of all enclosing generic types, and are therefore generic even if they do not have type parameters of their own. For more information, see "Nested Types" in the <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> reference topic.  
+    > Nested types (including enumerations) created with Visual Basic, C#, and C++ include the type parameters of all enclosing generic types, and are therefore generic even if they do not have type parameters of their own. For more information, see "Nested Types" in the <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> reference topic.  
   
  The <xref:System.FlagsAttribute> attribute denotes a special kind of enumeration called a bit field. The runtime itself does not distinguish between traditional enumerations and bit fields, but your language might do so. When this distinction is made, bitwise operators can be used on bit fields, but not on enumerations, to generate unnamed values. Enumerations are generally used for lists of unique elements, such as days of the week, country or region names, and so on. Bit fields are generally used for lists of qualities or quantities that might occur in combination, such as `Red And Big And Fast`.  
   
@@ -151,14 +151,14 @@ The common type system defines how types are declared, used, and managed in the 
  Because delegates inherit from <xref:System.MulticastDelegate>, a delegate has an invocation list, which is a list of methods that the delegate represents and that are executed when the delegate is invoked. All methods in the list receive the arguments supplied when the delegate is invoked.  
   
 > [!NOTE]
->  The return value is not defined for a delegate that has more than one method in its invocation list, even if the delegate has a return type.  
+> The return value is not defined for a delegate that has more than one method in its invocation list, even if the delegate has a return type.  
   
  In many cases, such as with callback methods, a delegate represents only one method, and the only actions you have to take are creating the delegate and invoking it.  
   
  For delegates that represent multiple methods, .NET provides methods of the <xref:System.Delegate> and <xref:System.MulticastDelegate> delegate classes to support operations such as adding a method to a delegate's invocation list (the <xref:System.Delegate.Combine%2A?displayProperty=nameWithType> method), removing a method (the <xref:System.Delegate.Remove%2A?displayProperty=nameWithType> method), and getting the invocation list (the <xref:System.Delegate.GetInvocationList%2A?displayProperty=nameWithType> method).  
   
 > [!NOTE]
->  It is not necessary to use these methods for event-handler delegates in C#, C++, and Visual Basic, because these languages provide syntax for adding and removing event handlers.  
+> It is not necessary to use these methods for event-handler delegates in C#, C++, and Visual Basic, because these languages provide syntax for adding and removing event handlers.  
 
 <a name="type_definitions"></a>   
 ## Type Definitions  
@@ -301,7 +301,7 @@ The common type system defines how types are declared, used, and managed in the 
  Each type member has a unique signature. Method signatures consist of the method name and a parameter list (the order and types of the method's arguments). Multiple methods with the same name can be defined within a type as long as their signatures differ. When two or more methods with the same name are defined, the method is said to be overloaded. For example, in <xref:System.Char?displayProperty=nameWithType>, the <xref:System.Char.IsDigit%2A> method is overloaded. One method takes a <xref:System.Char>. The other method takes a <xref:System.String> and an <xref:System.Int32>.  
   
 > [!NOTE]
->  The return type is not considered part of a method's signature. That is, methods cannot be overloaded if they differ only by return type.  
+> The return type is not considered part of a method's signature. That is, methods cannot be overloaded if they differ only by return type.  
   
 ### Inheriting, Overriding, and Hiding Members  
  A derived type inherits all members of its base type; that is, these members are defined on, and available to, the derived type. The behavior or qualities of inherited members can be modified in two ways:  

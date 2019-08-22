@@ -16,7 +16,7 @@ ms.assetid: 81d64ee4-50f9-4d6c-a8dc-257c348d2eea
 Inheritance, together with encapsulation and polymorphism, is one of the three primary characteristics of object-oriented programming. Inheritance enables you to create new classes that reuse, extend, and modify the behavior that is defined in other classes. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. A derived class can have only one direct base class. However, inheritance is transitive. If ClassC is derived from ClassB, and ClassB is derived from ClassA, ClassC inherits the members declared in ClassB and ClassA.  
   
 > [!NOTE]
->  Structs do not support inheritance, but they can implement interfaces. For more information, see [Interfaces](../interfaces/index.md).  
+> Structs do not support inheritance, but they can implement interfaces. For more information, see [Interfaces](../interfaces/index.md).  
   
  Conceptually, a derived class is a specialization of the base class. For example, if you have a base class `Animal`, you might have one derived class that is named `Mammal` and another derived class that is named `Reptile`. A `Mammal` is an `Animal`, and a `Reptile` is an `Animal`, but each derived class represents different specializations of the base class.  
   

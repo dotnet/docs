@@ -18,7 +18,7 @@ Statement blocks are made up of lines of code delimited by colons. Lines of code
  Labels have their own declaration space and do not interfere with other identifiers. A label's scope is the body of the method. Label declaration takes precedence in any ambiguous situation.  
   
 > [!NOTE]
->  Labels can be used only on executable statements inside methods.  
+> Labels can be used only on executable statements inside methods.  
   
 ### To label a line of code  
   

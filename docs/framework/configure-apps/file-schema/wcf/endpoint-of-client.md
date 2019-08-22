@@ -44,14 +44,14 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<headers>](../../../../../docs/framework/configure-apps/file-schema/wcf/headers.md)|A collection of address headers.|  
-|[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|An identity that enables the authentication of an endpoint by other endpoints exchanging messages with it.|  
+|[\<headers>](headers.md)|A collection of address headers.|  
+|[\<identity>](identity.md)|An identity that enables the authentication of an endpoint by other endpoints exchanging messages with it.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<client>](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|A configuration section that defines a list of endpoints that a client can connect to.|  
+|[\<client>](client.md)|A configuration section that defines a list of endpoints that a client can connect to.|  
   
 ## Example  
  This is an example of a channel endpoint configuration.  
@@ -72,5 +72,5 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 - <xref:System.ServiceModel.Configuration.ChannelEndpointElementCollection>
 - <xref:System.ServiceModel.Configuration.ClientSection.Endpoints%2A>
 - <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
-- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
-- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)
+- [WCF Client Configuration](../../../wcf/feature-details/client-configuration.md)
+- [Clients](../../../wcf/feature-details/clients.md)

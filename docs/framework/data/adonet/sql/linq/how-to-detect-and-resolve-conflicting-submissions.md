@@ -13,7 +13,7 @@ ms.assetid: 91e27206-01fb-4c7a-8afc-1383a6ac5067
  The following example shows a `try`/`catch` block that catches a <xref:System.Data.Linq.ChangeConflictException> exception. Entity and member information for each conflict is displayed in the console window.  
   
 > [!NOTE]
->  You must include the `using System.Reflection` directive (`Imports System.Reflection` in Visual Basic) to support the information retrieval. For more information, see <xref:System.Reflection>.  
+> You must include the `using System.Reflection` directive (`Imports System.Reflection` in Visual Basic) to support the information retrieval. For more information, see <xref:System.Reflection>.  
   
  [!code-csharp[DLinqSubmittingChanges#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSubmittingChanges/cs/Program.cs#2)]
  [!code-vb[DLinqSubmittingChanges#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb/Module1.vb#2)]  

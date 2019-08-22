@@ -7,7 +7,7 @@ ms.assetid: 5540e185-ce8e-4db3-83b0-2b9f5bf71829
 This topic lists all the activities defined by Windows Communication Foundation (WCF).  
   
 > [!NOTE]
->  You can also define activities programmatically to group user traces. For more information, see [Emitting User-Code Traces](../../../../../docs/framework/wcf/diagnostics/tracing/emitting-user-code-traces.md).  
+> You can also define activities programmatically to group user traces. For more information, see [Emitting User-Code Traces](../../../../../docs/framework/wcf/diagnostics/tracing/emitting-user-code-traces.md).  
   
 ## ServiceModel Activities  
  The following table lists all activities for major usage scenarios.  

@@ -17,7 +17,7 @@ The ASP.NET membership provider is a feature that enables ASP.NET developers to 
  Windows Communication Foundation (WCF) developers can take advantage of these features for security purposes. When integrated into an WCF application, users must supply a user name/password combination to the WCF client application. To transfer the data to the WCF service, use a binding that supports user name/password credentials, such as the <xref:System.ServiceModel.WSHttpBinding> (in configuration, the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)) and set the client credential type to `UserName`. On the service, WCF security authenticates the user based on the user name and password, and also assigns the role specified by the ASP.NET role.  
   
 > [!NOTE]
->  WCF does not provide methods to populate the database with user name/password combinations or other user information.  
+> WCF does not provide methods to populate the database with user name/password combinations or other user information.  
   
 ### To configure the membership provider  
   

@@ -109,7 +109,7 @@ For information about supported explicit conversions, see the [Explicit conversi
 
 You also use parentheses to [call a method or invoke a delegate](member-access-operators.md#invocation-operator-).
 
-Other use of parentheses is to specify the order in which to evaluate operations in an expression. For more information, see the [Adding parentheses](../../programming-guide/statements-expressions-operators/operators.md#adding-parentheses) section of the [Operators](../../programming-guide/statements-expressions-operators/operators.md) article. For the list of operators ordered by precedence level, see [C# operators](index.md).
+Other use of parentheses is to adjust the order in which to evaluate operations in an expression. For more information, see [C# operators](index.md).
 
 ## typeof operator
 

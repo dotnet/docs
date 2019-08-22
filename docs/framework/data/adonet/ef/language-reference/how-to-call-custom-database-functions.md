@@ -33,7 +33,7 @@ This topic describes how to call custom functions that are defined in the databa
  The following code adds the `AvgStudentGrade` function to the School sample database.  
   
 > [!NOTE]
->  The steps for calling a custom database function are the same regardless of the database server. However, the code below is specific to creating a function in a SQL Server database. The code for creating a custom function in other database servers might differ.  
+> The steps for calling a custom database function are the same regardless of the database server. However, the code below is specific to creating a function in a SQL Server database. The code for creating a custom function in other database servers might differ.  
   
  [!code-sql[DP L2E MapToDBFunction#1](../../../../../../samples/snippets/tsql/VS_Snippets_Data/dp l2e maptodbfunction/tsql/create_avgstudentgrade.sql#1)]  
   

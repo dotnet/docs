@@ -8,7 +8,7 @@ ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
 An important aspect of pure functional transformations is learning how to refactor code using pure functions.  
   
 > [!NOTE]
->  The common nomenclature in functional programming is that you refactor programs using pure functions. In Visual Basic and C++, this aligns with the use of functions in the respective languages. However, in C#, functions are called methods. For the purposes of this discussion, a pure function is implemented as a method in C#.  
+> The common nomenclature in functional programming is that you refactor programs using pure functions. In Visual Basic and C++, this aligns with the use of functions in the respective languages. However, in C#, functions are called methods. For the purposes of this discussion, a pure function is implemented as a method in C#.  
   
  As noted previously in this section, a pure function has two useful characteristics:  
   
@@ -75,7 +75,7 @@ public class Program
  This version of the program produces the same output as the first version, because the `HyphenatedConcat` function has changed the value (state) of its first parameter by invoking the <xref:System.Text.StringBuilder.Append%2A> member function. Note that this alteration occurs despite that fact that `HyphenatedConcat` uses call-by-value parameter passing.  
   
 > [!IMPORTANT]
->  For reference types, if you pass a parameter by value, it results in a copy of the reference to an object being passed. This copy is still associated with the same instance data as the original reference (until the reference variable is assigned to a new object). Call-by-reference is not necessarily required for a function to modify a parameter.  
+> For reference types, if you pass a parameter by value, it results in a copy of the reference to an object being passed. This copy is still associated with the same instance data as the original reference (until the reference variable is assigned to a new object). Call-by-reference is not necessarily required for a function to modify a parameter.  
   
 ### Pure Function  
 This next version of the program shows how to implement the `HyphenatedConcat` function as a pure function.  

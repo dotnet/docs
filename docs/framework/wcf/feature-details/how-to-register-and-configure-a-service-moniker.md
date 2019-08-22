@@ -26,7 +26,7 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
 5. Use the Global Assembly Cache (Gacutil.exe) tool to add the assembly to the global assembly cache.  
   
     > [!NOTE]
-    >  Signing the assembly and adding it to the Global Assembly Cache are optional steps, but they can simplify the process of loading the assembly from the correct location at runtime.  
+    > Signing the assembly and adding it to the Global Assembly Cache are optional steps, but they can simplify the process of loading the assembly from the correct location at runtime.  
   
 ### To configure the COM application and the moniker with the required binding configuration  
   
@@ -78,10 +78,10 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
      In this example, the definition for the binding configuration `Binding1` is stored in a suitably named configuration file for the client application, such as vb6appname.exe.config.  
   
     > [!NOTE]
-    >  You can use similar code in a C#, a C++, or any other .NET Language application.  
+    > You can use similar code in a C#, a C++, or any other .NET Language application.  
   
     > [!NOTE]
-    >  : If the moniker is malformed or if the service is unavailable, the call to `GetObject` returns an error of "Invalid Syntax". If you receive this error, make sure the moniker you are using is correct and the service is available.  
+    > : If the moniker is malformed or if the service is unavailable, the call to `GetObject` returns an error of "Invalid Syntax". If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
      Although this topic focuses on using the service moniker from VB 6.0 code, you can use a service moniker from other languages. When using a moniker from C++ code the Svcutil.exe generated assembly should be imported with "no_namespace named_guids raw_interfaces_only" as shown in the following code.  
   

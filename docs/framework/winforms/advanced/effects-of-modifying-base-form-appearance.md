@@ -19,6 +19,6 @@ Modifications made to the base form at run time have no affect on inherited form
 
 ## See also
 
-- [base](~/docs/csharp/language-reference/keywords/base.md)
+- [base](../../../csharp/language-reference/keywords/base.md)
 - [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)
 - [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)

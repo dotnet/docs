@@ -172,7 +172,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
  A. You can create a view in a database and map the entity to the view. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] generates the same SQL for views as it does for tables.  
   
 > [!NOTE]
->  The use of views in this scenario has limitations. This approach works most safely when the operations performed on <xref:System.Data.Linq.Table%601> are supported by the underlying view. Only you know which operations are intended. For example, most applications are read-only, and another sizeable number perform `Create`/`Update`/`Delete` operations only by using stored procedures against views.  
+> The use of views in this scenario has limitations. This approach works most safely when the operations performed on <xref:System.Data.Linq.Table%601> are supported by the underlying view. Only you know which operations are intended. For example, most applications are read-only, and another sizeable number perform `Create`/`Update`/`Delete` operations only by using stored procedures against views.  
   
 ## Connection Pooling  
  Q. Is there a construct that can help with <xref:System.Data.Linq.DataContext> pooling?  

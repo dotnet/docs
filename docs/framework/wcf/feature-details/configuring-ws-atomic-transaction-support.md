@@ -76,7 +76,7 @@ This topic describes how you can configure WS-AtomicTransaction (WS-AT) support 
 2. Configure machine B's settings. For "Endpoint Certificate", select certB. For "Authorized Certificates", select the certA.  
   
 > [!NOTE]
->  When one machine sends a message to the other machine, the sender attempts to verify that the subject name of the recipient’s certificate and the name of the recipient’s machine match. If they do not match, certificate verification fails and the two machines cannot communicate.  
+> When one machine sends a message to the other machine, the sender attempts to verify that the subject name of the recipient’s certificate and the name of the recipient’s machine match. If they do not match, certificate verification fails and the two machines cannot communicate.  
 >   
 >  For a machine joined to a domain, the name is the fully qualified domain name. By default, the name of a machine on a workgroup is the machine’s NetBIOS name. However, the name can also include a Domain Name System (DNS) suffix if one is present for the connection being used between the two machines.  
 >   

@@ -12,7 +12,7 @@ ms.author: "ronpet"
 Each version of the .NET Framework contains the common language runtime (CLR), the base class libraries, and other managed libraries. This topic describes the key features of the .NET Framework by version, provides information about the underlying CLR versions and associated development environments, and identifies the versions that are installed by the Windows operating system.  
   
 > [!NOTE]
->  For information on downloading and installing the .NET Framework, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).  
+> For information on downloading and installing the .NET Framework, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).  
   
  The following table summarizes .NET Framework version history and correlates each version with Visual Studio, Windows, and Windows Server. Note that Visual Studio provides multi-targeting, so you are not limited to the version of the .NET Framework that is listed.  
   

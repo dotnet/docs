@@ -49,6 +49,6 @@ Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the
  If the .NET Framework 4 is installed, the registry change also affects applications that were developed using earlier versions of the .NET Framework. These appear in Perfmon.exe as *application_*`p`*processID*, where *application* is the application name and *processID* is the process identifier. For example, if the performance counters of two applications named myapp.exe are monitored, one might appear as myapp_p23900 and the other as myapp_p24908.  
   
 > [!NOTE]
->  The process identifier eliminates the ambiguity of resolving two applications with the same name that use earlier versions of the runtime. A runtime identifier is not required for previous versions, because previous versions of the common language runtime do not support side-by-side scenarios.  
+> The process identifier eliminates the ambiguity of resolving two applications with the same name that use earlier versions of the runtime. A runtime identifier is not required for previous versions, because previous versions of the common language runtime do not support side-by-side scenarios.  
   
  If the .NET Framework 4 is not present or was uninstalled, setting the registry key has no effect. This means that two applications with the same name will continue to appear in Perfmon.exe as *application* and *application#1* (for example, as **myapp** and **myapp#1**).

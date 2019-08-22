@@ -12,7 +12,7 @@ You perform `Insert`, `Update`, and `Delete` operations in [!INCLUDE[vbtecdlinq]
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] offers maximum flexibility in manipulating and persisting changes that you made to your objects. As soon as entity objects are available (either by retrieving them through a query or by constructing them anew), you can change them as typical objects in your application. That is, you can change their values, you can add them to your collections, and you can remove them from your collections. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tracks your changes and is ready to transmit them back to the database when you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A>.  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support or recognize cascade-delete operations. If you want to delete a row in a table that has constraints against it, you must either set the `ON DELETE CASCADE` rule in the foreign-key constraint in the database, or use your own code to first delete the child objects that prevent the parent object from being deleted. Otherwise, an exception is thrown. For more information, see [How to: Delete Rows From the Database](../../../../../../docs/framework/data/adonet/sql/linq/how-to-delete-rows-from-the-database.md).  
+> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support or recognize cascade-delete operations. If you want to delete a row in a table that has constraints against it, you must either set the `ON DELETE CASCADE` rule in the foreign-key constraint in the database, or use your own code to first delete the child objects that prevent the parent object from being deleted. Otherwise, an exception is thrown. For more information, see [How to: Delete Rows From the Database](../../../../../../docs/framework/data/adonet/sql/linq/how-to-delete-rows-from-the-database.md).  
   
  The following excerpts use the `Customer` and `Order` classes from the Northwind sample database. Class definitions are not shown for brevity.  
   
@@ -22,7 +22,7 @@ You perform `Insert`, `Update`, and `Delete` operations in [!INCLUDE[vbtecdlinq]
  When you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A>, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] automatically generates and executes the SQL commands that it must have to transmit your changes back to the database.  
   
 > [!NOTE]
->  You can override this behavior by using your own custom logic, typically by way of a stored procedure. For more information, see [Responsibilities of the Developer In Overriding Default Behavior](../../../../../../docs/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior.md).  
+> You can override this behavior by using your own custom logic, typically by way of a stored procedure. For more information, see [Responsibilities of the Developer In Overriding Default Behavior](../../../../../../docs/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior.md).  
 >   
 >  Developers using Visual Studio can use the Object Relational Designer to develop stored procedures for this purpose.  
   

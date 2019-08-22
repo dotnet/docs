@@ -59,7 +59,7 @@ HRESULT ProvideLibrary(
  The debugger may use any available means to locate or procure the debugging module.  
   
 > [!IMPORTANT]
->  This feature allows the API caller to provide modules that contain executable, and possibly malicious, code. As a security precaution, the caller should not use `ProvideLibrary` to distribute any code that it is not willing to execute itself.  
+> This feature allows the API caller to provide modules that contain executable, and possibly malicious, code. As a security precaution, the caller should not use `ProvideLibrary` to distribute any code that it is not willing to execute itself.  
 >   
 >  If a serious security issue is discovered in an already released library, such as mscordbi.dll or mscordacwks.dll, the shim can be patched to recognize the bad versions of the files. The shim can then issue requests for the patched versions of the files and reject the bad versions if they are provided in response to any request. This can occur only if the user has patched to a new version of the shim. Unpatched versions will remain vulnerable.  
   

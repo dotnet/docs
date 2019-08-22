@@ -65,7 +65,7 @@ tlbimp tlbFile [options]
 |**/?**|Displays command syntax and options for the tool.|  
   
 > [!NOTE]
->  The command-line options for Tlbimp.exe are case-insensitive and can be supplied in any order. You only need to specify enough of the option to uniquely identify it. Therefore, **/n** is equivalent to **/nologo** and **/ou:** *outfile.dll* is equivalent to **/out:** *outfile.dll*.  
+> The command-line options for Tlbimp.exe are case-insensitive and can be supplied in any order. You only need to specify enough of the option to uniquely identify it. Therefore, **/n** is equivalent to **/nologo** and **/ou:** *outfile.dll* is equivalent to **/out:** *outfile.dll*.  
   
 ## Remarks  
  Tlbimp.exe performs conversions on an entire type library at one time. You cannot use the tool to generate type information for a subset of the types defined within a single type library.  

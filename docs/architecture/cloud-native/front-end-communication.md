@@ -32,13 +32,13 @@ Instead, a widely accepted cloud design pattern is to implement an [API Gateway 
 
 This pattern exposes a single point of entry (the API gateway) to enable front-end communication with backend services. Importantly, it insulates the client from internal service partitioning and refactoring. The gateway act as a reverse proxy appropriately rerouting inbound traffic. It also implements cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the backend core services to the gateway, simplifying the back-end service and centralizing these concerns.
 
-Care must be taken to keep the API Gateway simple and fast. A single gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems might expose multiple API Gateways segmented by client type (mobile, web, desktop) or backend functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) is a pattern that provides guidance for implementing multiple gateways.
+Care must be taken to keep the API Gateway simple and fast. A single gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems might expose multiple API Gateways segmented by client type (mobile, web, desktop) or backend functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern provides guidance for implementing multiple gateways.
 
 To start, you could build your own API Gateway service. A quick search of GitHub will present you with many examples. However, there are several off-the-shelf options available.
 
 ## Azure API Management
 
-Azure hosts a cloud-based, fully managed and full-featured API Gateway solution that is a great candidate for many medium to large-scale cloud native systems. The service provides built-in gateway management functionality along with a developer and publisher portal, shown in Figure 4-4.
+Azure hosts a cloud-based, fully managed and full-featured API Gateway solution that is a great candidate for many mediums to large-scale cloud native systems. The service provides built-in gateway management functionality along with a developer and publisher portal, shown in Figure 4-4.
 
 ![Azure API Management](media/azure-api-management.png)
 **Figure 4-4**. Azure API Management

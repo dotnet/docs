@@ -18,18 +18,18 @@ The following table shows the predefined explicit conversions between .NET numer
 
 |From|To|  
 |----------|--------|  
-|[sbyte](sbyte.md)|`byte`, `ushort`, `uint`, `ulong`, or `char`|  
-|[byte](byte.md)|`sbyte` or `char`|  
-|[short](short.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `char`|  
-|[ushort](ushort.md)|`sbyte`, `byte`, `short`, or `char`|  
-|[int](int.md)|`sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`,or `char`|  
-|[uint](uint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, or `char`|  
-|[long](long.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `char`|  
-|[ulong](ulong.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `char`|  
+|[sbyte](../builtin-types/integral-numeric-types.md)|`byte`, `ushort`, `uint`, `ulong`, or `char`|  
+|[byte](../builtin-types/integral-numeric-types.md)|`sbyte` or `char`|  
+|[short](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `char`|  
+|[ushort](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `short`, or `char`|  
+|[int](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`,or `char`|  
+|[uint](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, or `char`|  
+|[long](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `char`|  
+|[ulong](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `char`|  
 |[char](char.md)|`sbyte`, `byte`, or `short`|  
-|[float](float.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`,or `decimal`|  
-|[double](double.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`,or `decimal`|  
-|[decimal](decimal.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, or `double`|  
+|[float](../builtin-types/floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`,or `decimal`|  
+|[double](../builtin-types/floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`,or `decimal`|  
+|[decimal](../builtin-types/floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, or `double`|  
   
 ## Remarks  
   
@@ -64,7 +64,7 @@ The following table shows the predefined explicit conversions between .NET numer
 - [C# reference](../index.md)
 - [Casting and type conversions](../../programming-guide/types/casting-and-type-conversions.md)
 - [() operator](../operators/type-testing-and-conversion-operators.md#cast-operator-)
-- [Integral types table](integral-types-table.md)
-- [Floating-point types table](floating-point-types-table.md)
+- [Integral types](../builtin-types/integral-numeric-types.md)
+- [Floating-point types table](../builtin-types/floating-point-numeric-types.md)
 - [Built-in types table](built-in-types-table.md)
 - [Implicit numeric conversions table](implicit-numeric-conversions-table.md)

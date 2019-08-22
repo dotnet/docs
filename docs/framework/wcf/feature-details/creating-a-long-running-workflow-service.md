@@ -99,7 +99,7 @@ This topic describes how to create a long-running workflow service. Long running
 
     2. Select the **Receive** activity and set the properties shown in the following illustration:
 
-         ![Set the Receive acitivity properties](./media/creating-a-long-running-workflow-service/set-receive-activities-properties.png "Set the Receive activities properties.")
+         ![Set the Receive activity properties](./media/creating-a-long-running-workflow-service/set-receive-activities-properties.png "Set the Receive activities properties.")
          
          > [!NOTE]
          >  Don't forget to change **ServiceContractName** field with `../IAddItem`.

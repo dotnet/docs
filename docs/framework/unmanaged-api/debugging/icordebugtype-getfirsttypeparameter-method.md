@@ -23,7 +23,7 @@ Gets an interface pointer to an ICorDebugType that represents the first <xref:Sy
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFirstTypeParameter (  
     [out] ICorDebugType   **value  
 );  

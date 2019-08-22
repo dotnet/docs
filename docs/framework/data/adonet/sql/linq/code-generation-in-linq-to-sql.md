@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07
 ---
 # Code Generation in LINQ to SQL
-You can generate code to represent a database by using either the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] or the SQLMetal command-line tool. In either case, end-to-end code generation occurs in three stages:  
+You can generate code to represent a database by using either the Object Relational Designer or the SQLMetal command-line tool. In either case, end-to-end code generation occurs in three stages:  
   
 1. The *DBML Extractor* extracts schema information from the database and reassembles the information into an XML-formatted DBML file.  
   
@@ -12,7 +12,7 @@ You can generate code to represent a database by using either the [!INCLUDE[vs_o
   
 3. If no validation errors appear, the file is passed to the Code Generator.  
   
- For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md). Developers using Visual Studio can also use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to generate code. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
+ For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md). Developers using Visual Studio can also use the Object Relational Designer to generate code. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
   
 ## DBML Extractor  
  The DBML Extractor is a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] component that takes database metadata as input and produces a DBML file as output.  

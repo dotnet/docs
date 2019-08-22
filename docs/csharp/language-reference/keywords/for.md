@@ -45,7 +45,7 @@ The statements in the *initializer* section are executed only once, before enter
 
   - prefix or postfix [decrement](../operators/arithmetic-operators.md#decrement-operator---) expression, such as `--i` or `i--`
 
-  - creation of an object by using [new](new-operator.md) keyword
+  - creation of an object by using the [new](../operators/new-operator.md) operator
 
   - [await](await.md) expression
 
@@ -77,7 +77,7 @@ The *iterator* section defines what happens after each iteration of the body of 
 
 - prefix or postfix [decrement](../operators/arithmetic-operators.md#decrement-operator---) expression, such as `--i` or `i--`
 
-- creation of an object by using [new](new-operator.md) keyword
+- creation of an object by using the [new](../operators/new-operator.md) operator
 
 - [await](await.md) expression
 

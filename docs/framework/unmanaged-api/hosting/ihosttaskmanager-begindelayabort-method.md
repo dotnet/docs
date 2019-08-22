@@ -23,7 +23,7 @@ Notifies the host that managed code is entering a period in which the current ta
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginDelayAbort ();  
 ```  
   

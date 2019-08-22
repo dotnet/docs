@@ -23,7 +23,7 @@ Gets the operating system (OS) thread ID of the debugger's internal helper threa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHelperThreadID (  
     [out] DWORD *pThreadID  
 );  

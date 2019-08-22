@@ -18,7 +18,7 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
   
 ```xml  
 <namedCaches>  
-    <add name="default" />  
+    <add name="Default" />  
       <!-- child elements -->  
  </namedCaches>  
 ```  
@@ -59,7 +59,7 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
   <system.runtime.caching>  
     <memoryCache>  
       <namedCaches>  
-          <add name="default"   
+          <add name="Default"   
                cacheMemoryLimitMegabytes="0"   
                physicalMemoryPercentage="0"  
                pollingInterval="00:02:00" />  

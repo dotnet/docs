@@ -23,7 +23,7 @@ Gets a pointer to the property referenced by the specified property identifier.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProperty (  
     [in]      DWORD    PropertyId,  
     [out]     LPVOID   pvProperty,  

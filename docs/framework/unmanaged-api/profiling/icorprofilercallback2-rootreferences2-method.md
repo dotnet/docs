@@ -23,7 +23,7 @@ Notifies the profiler about root references after a garbage collection has occur
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RootReferences2(  
     [in] ULONG  cRootRefs,  
     [in, size_is(cRootRefs)] ObjectID rootRefIds[],  

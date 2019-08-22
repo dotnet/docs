@@ -23,7 +23,7 @@ Gets the document type of this document.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocumentType(  
     [out, retval] GUID*  pRetVal);  
 ```  

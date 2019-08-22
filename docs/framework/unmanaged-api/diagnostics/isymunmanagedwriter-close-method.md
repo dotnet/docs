@@ -23,7 +23,7 @@ Closes the symbol writer after committing the symbols to the symbol store.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Close();  
 ```  
   

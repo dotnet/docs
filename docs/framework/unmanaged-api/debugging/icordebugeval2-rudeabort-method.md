@@ -23,7 +23,7 @@ Aborts the computation that this `ICorDebugEval2` is currently performing.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RudeAbort ();  
 ```  
   

@@ -17,7 +17,7 @@ Indexers are like properties. Except for the differences shown in the following 
 |Can be a static or an instance member.|Must be an instance member.|  
 |A [get](../../../csharp/language-reference/keywords/get.md) accessor of a property has no parameters.|A `get` accessor of an indexer has the same formal parameter list as the indexer.|  
 |A [set](../../../csharp/language-reference/keywords/set.md) accessor of a property contains the implicit `value` parameter.|A `set` accessor of an indexer has the same formal parameter list as the indexer, and also to the [value](../../../csharp/language-reference/keywords/value.md) parameter.|  
-|Supports shortened syntax with [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).|Does not support shortened syntax.|  
+|Supports shortened syntax with [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).|Supports expression bodied members for get only indexers.|  
   
 ## See also
 

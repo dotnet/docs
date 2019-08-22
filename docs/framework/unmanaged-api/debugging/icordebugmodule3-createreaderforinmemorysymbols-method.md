@@ -23,7 +23,7 @@ Creates a debug symbol reader for a dynamic module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateReaderForInMemorySymbols (  
       [in] REFIID riid,  
       [out][iid_is(riid)] void **    ppObj  

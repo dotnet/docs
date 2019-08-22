@@ -25,7 +25,7 @@ Retrieves the specified property value if it exists.
 
 ## Syntax
 
-```
+```cpp
 HRESULT Get (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr, 

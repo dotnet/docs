@@ -23,7 +23,7 @@ Gets the one-based number that identifies the version of the code that this "ICo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionNumber (  
     [out] ULONG32    *nVersion  
 );  

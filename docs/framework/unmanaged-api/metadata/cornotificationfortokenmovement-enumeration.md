@@ -22,7 +22,7 @@ Specifies the notifications that will be sent to the metadata API client when a 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorNotificationForTokenMovement {  
   
     MDNotifyDefault             = 0x0000000f,  

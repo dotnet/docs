@@ -24,7 +24,7 @@ Retrieves the next method in an enumeration that begins with a call to [BeginMet
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NextMethod (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 

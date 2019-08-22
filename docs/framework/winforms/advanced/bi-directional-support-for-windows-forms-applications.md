@@ -76,7 +76,7 @@ You can use Visual Studio to create Windows-based applications that support bi-d
  Windows Forms support Unicode, so you can include any character set when you create your bi-directional applications. However, not all Windows Forms controls support Unicode on all platforms. For more information, see [Encoding and Windows Forms Globalization](encoding-and-windows-forms-globalization.md).  
   
 ## GDI+  
- You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] to draw text with right-to-left reading order. The <xref:System.Drawing.Graphics.DrawString%2A> method, which is used to draw text, supports a `StringFormat` parameter that you can set to the <xref:System.Drawing.StringFormatFlags.DirectionRightToLeft> member of the <xref:System.Drawing.StringFormatFlags> enumeration in order to reverse the point of origin for the text.  
+ You can use GDI+ to draw text with right-to-left reading order. The <xref:System.Drawing.Graphics.DrawString%2A> method, which is used to draw text, supports a `StringFormat` parameter that you can set to the <xref:System.Drawing.StringFormatFlags.DirectionRightToLeft> member of the <xref:System.Drawing.StringFormatFlags> enumeration in order to reverse the point of origin for the text.  
   
 ## Common Dialog Boxes  
  System tools such as the File Open dialog box are under the control of Windows. They inherit language elements from the operating system. If you are using a version of Windows with the correct language settings, these dialog boxes will work correctly with bi-directional languages.  

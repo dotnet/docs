@@ -20,15 +20,15 @@ When you define custom types that are business objects or are types that do not 
  You can still provide object values for types that do not meet these criteria, if you enable a value converter. For more information, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).  
   
 ### Structures  
- Structures are always able to be constructed in XAML, by CLR definition. This is because a CLR compiler implicitly creates a default constructor for a structure. This constructor initializes all property values to their defaults.  
+ Structures are always able to be constructed in XAML, by CLR definition. This is because a CLR compiler implicitly creates a parameterless constructor for a structure. This constructor initializes all property values to their defaults.  
   
- In some cases, the default construction behavior for a structure is not desirable. This might be because the structure is intended to fill values and function conceptually as a union. As a union, the contained values might have mutually exclusive interpretations, and therefore, none of its properties are settable. An example of such a structure in the WPF vocabulary is <xref:System.Windows.GridLength>. Such structures should implement a type converter so that the values can be expressed in attribute form, by using string conventions that create the different interpretations or modes of the structure values. The structure should also expose similar behavior for code construction through a non-default constructor.  
+ In some cases, the default construction behavior for a structure is not desirable. This might be because the structure is intended to fill values and function conceptually as a union. As a union, the contained values might have mutually exclusive interpretations, and therefore, none of its properties are settable. An example of such a structure in the WPF vocabulary is <xref:System.Windows.GridLength>. Such structures should implement a type converter so that the values can be expressed in attribute form, by using string conventions that create the different interpretations or modes of the structure values. The structure should also expose similar behavior for code construction through a non-parameterless constructor.  
   
 ### Interfaces  
  Interfaces can be used as underlying types of members. The XAML type system checks the assignable list and expects that the object that is provided as the value can be assigned to the interface. There is no concept of how the interface must be presented as a XAML type as long as a relevant assignable type supports the XAML construction requirements.  
   
 ### Factory Methods  
- Factory methods are a XAML 2009 feature. They modify the XAML principle that objects must have default constructors. Factory methods are not documented in this topic. See [x:FactoryMethod Directive](x-factorymethod-directive.md).  
+ Factory methods are a XAML 2009 feature. They modify the XAML principle that objects must have parameterless constructors. Factory methods are not documented in this topic. See [x:FactoryMethod Directive](x-factorymethod-directive.md).  
   
 ## Enumerations  
  Enumerations have XAML native type conversion behavior. Enumeration constant names specified in XAML are resolved against the underlying enumeration type, and return the enumeration value to a XAML object writer.  

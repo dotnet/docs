@@ -23,7 +23,7 @@ Gets the requested data about the specified assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QueryAssemblyInfo (  
     [in] DWORD dwFlags,  
     [in] LPCWSTR pszAssemblyName,  

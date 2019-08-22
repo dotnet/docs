@@ -18,7 +18,7 @@ Specifies additional connection pool settings for a Named Pipe binding.
 ```xml  
 <connectionPoolSettings groupName="String"
                         idleTimeout="TimeSpan"
-                        maxOutboundConnectionsPerEndpopint="Integer" />
+                        maxOutboundConnectionsPerEndpoint="Integer" />
 ```  
   
 ## Attributes and Elements  

@@ -28,7 +28,7 @@ Starting with the .NET Framework version 4, the [!INCLUDE[adonet_ef](../../../..
   
 ## Procedures  
   
-#### To define a database based on the existing model  
+### To define a database based on the existing model  
   
 1. Create a console application.  
   

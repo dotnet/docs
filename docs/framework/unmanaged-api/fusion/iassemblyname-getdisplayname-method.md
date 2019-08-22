@@ -23,7 +23,7 @@ Gets the human-readable name of the assembly referenced by this [IAssemblyName](
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDisplayName (  
         [out]      LPOLESTR  szDisplayName,  
         [in, out]  LPDWORD   pccDisplayName,  

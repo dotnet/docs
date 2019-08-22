@@ -16,7 +16,7 @@ Verifies the validity of an Authenticode XrML license.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CertVerifyAuthenticodeLicense (  
     [in]   PCRYPT_DATA_BLOB                   pLicenseBlob,  
     [in]   OPTIONAL DWORD                     dwFlags,  

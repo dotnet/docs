@@ -24,7 +24,7 @@ You perform `Insert`, `Update`, and `Delete` operations in [!INCLUDE[vbtecdlinq]
 > [!NOTE]
 >  You can override this behavior by using your own custom logic, typically by way of a stored procedure. For more information, see [Responsibilities of the Developer In Overriding Default Behavior](../../../../../../docs/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior.md).  
 >   
->  Developers using Visual Studio can use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to develop stored procedures for this purpose.  
+>  Developers using Visual Studio can use the Object Relational Designer to develop stored procedures for this purpose.  
   
 ## See also
 

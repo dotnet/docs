@@ -23,7 +23,7 @@ Gets a reference pointer to the specified managed object that has a garbage coll
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReferenceValueFromGCHandle (  
     [in]  UINT_PTR                 handle,  
     [out] ICorDebugReferenceValue  **pOutValue  

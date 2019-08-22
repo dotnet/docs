@@ -23,7 +23,7 @@ Notifies the host that an application domain has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAppDomainManager (  
     [in] DWORD     dwAppDomainID,  
     [in] IUnknown* pUnkAppDomainManager  

@@ -10,7 +10,7 @@ Returns the module base address and size from an address in that module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageFromPointer(  
    [in] CORDB_ADDRESS addr,   
    [out] CORDB_ADDRESS *pImageBase,   

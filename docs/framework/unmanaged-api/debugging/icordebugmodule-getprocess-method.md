@@ -23,7 +23,7 @@ Gets the containing process of this module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess (  
     [out] ICorDebugProcess **ppProcess  
 );  

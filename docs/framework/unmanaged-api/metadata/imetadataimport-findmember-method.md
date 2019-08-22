@@ -23,7 +23,7 @@ Gets a pointer to the MemberDef token for field or method that is enclosed by th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindMember (  
    [in]  mdTypeDef         td,  
    [in]  LPCWSTR           szName,   

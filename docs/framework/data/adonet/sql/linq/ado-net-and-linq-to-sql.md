@@ -30,7 +30,7 @@ ms.assetid: 49ac6da0-f2e1-46fa-963e-1b6dcb63fef7
  [!code-csharp[DLinqAdoNet#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqAdoNet/cs/Program.cs#2)]
  [!code-vb[DLinqAdoNet#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqAdoNet/vb/Module1.vb#2)]  
   
- You cannot use this approach for all databases. For example, the SqlClient connection cannot promote system transactions when it works against a [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] server. Instead, it automatically enlists to a full, distributed transaction whenever it sees a transaction scope being used.  
+ You cannot use this approach for all databases. For example, the SqlClient connection cannot promote system transactions when it works against a SQL Server 2000 server. Instead, it automatically enlists to a full, distributed transaction whenever it sees a transaction scope being used.  
   
 ## Direct SQL Commands  
  At times you can encounter situations where the ability of the <xref:System.Data.Linq.DataContext> to query or submit changes is insufficient for the specialized task you want to perform. In these circumstances you can use the <xref:System.Data.Linq.DataContext.ExecuteQuery%2A> method to issue SQL commands to the database and convert the query results to objects.  

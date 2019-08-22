@@ -23,7 +23,7 @@ Sets a timeout value for the specified operation, and specifies the policy actio
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTimeoutAndAction (  
     [in] EClrOperation operation,  
     [in] DWORD dwMilliseconds,  

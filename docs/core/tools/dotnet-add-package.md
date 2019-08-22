@@ -1,7 +1,7 @@
 ---
 title: dotnet add package command
 description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
-ms.date: 04/24/2019
+ms.date: 06/26/2019
 ---
 # dotnet add package
 
@@ -68,7 +68,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 * **`--interactive`**
 
-  Allows the command to stop and wait for user input or action (for example to complete authentication). Available since .NET Core 2.1 SDK, version 2.1.400 or later.
+  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 2.1 SDK, version 2.1.400 or later.
 
 * **`-n|--no-restore`**
 
@@ -76,7 +76,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 * **`--package-directory <PACKAGE_DIRECTORY>`**
 
-  The directory where to restore the packages.
+  The directory where to restore the packages. The default package restore location is `%userprofile%\.nuget\packages` on Windows and `~/.nuget/packages` on macOS and Linux. For more information, see [Managing the global packages, cache, and temp folders in NuGet](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
 
 * **`-s|--source <SOURCE>`**
 
@@ -105,3 +105,8 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
   ```console
   dotnet add package Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
   ```
+
+## See also
+
+- [Managing the global packages, cache, and temp folders in NuGet](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders)
+- [NuGet package versioning](https://docs.microsoft.com/nuget/reference/package-versioning)

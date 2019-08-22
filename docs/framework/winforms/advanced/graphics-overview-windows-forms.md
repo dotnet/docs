@@ -10,33 +10,33 @@ helpviewer_keywords:
 ms.assetid: 94084509-2c6f-477d-923b-d25d37a36b1c
 ---
 # Graphics Overview (Windows Forms)
-[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is a Graphics Device Interface that enables programmers to write device-independent applications. The services of [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] are exposed through a set of managed classes.  
+GDI+ is a Graphics Device Interface that enables programmers to write device-independent applications. The services of GDI+ are exposed through a set of managed classes.  
   
 ## In This Section  
  [Overview of Graphics](overview-of-graphics.md)  
- Provides a general introduction to [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)].  
+ Provides a general introduction to GDI+.  
   
  [Three Categories of Graphics Services](three-categories-of-graphics-services.md)  
- Describes the three categories that make up programming with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)].  
+ Describes the three categories that make up programming with GDI+.  
   
  [Structure of the Graphics Interface](structure-of-the-graphics-interface.md)  
- Describes the managed class interface of [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)].  
+ Describes the managed class interface of GDI+.  
   
 ## Reference  
  <xref:System.Drawing>  
- Provides access to [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] basic graphics functionality.  
+ Provides access to GDI+ basic graphics functionality.  
   
  <xref:System.Drawing.Drawing2D>  
  Provides advanced two-dimensional and vector graphics functionality.  
   
  <xref:System.Drawing.Imaging>  
- Provides advanced [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] imaging functionality.  
+ Provides advanced GDI+ imaging functionality.  
   
  <xref:System.Drawing.Text>  
- Provides advanced [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] typography functionality.  
+ Provides advanced GDI+ typography functionality.  
   
  <xref:System.Drawing.Printing>  
  Provides print-related services.  
   
  <xref:System.Windows.Forms.TextRenderer>  
- Provides [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] text drawing and measuring functionality.
+ Provides GDI text drawing and measuring functionality.

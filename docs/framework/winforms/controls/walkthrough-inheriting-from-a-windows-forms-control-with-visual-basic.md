@@ -20,7 +20,7 @@ With Visual Basic, you can create powerful custom controls through *inheritance*
 ## Creating the Project  
  When you create a new project, you specify its name in order to set the root namespace, assembly name, and project name, and to ensure that the default component will be in the correct namespace.  
   
-#### To create the ValueButtonLib control library and the ValueButton control  
+### To create the ValueButtonLib control library and the ValueButton control  
   
 1. On the **File** menu, point to **New** and then click **Project** to open the **New Project** dialog box.  
   
@@ -48,7 +48,7 @@ With Visual Basic, you can create powerful custom controls through *inheritance*
 ## Adding a Property to Your Inherited Control  
  One possible use of inherited Windows Forms controls is the creation of controls that are identical in appearance and behavior (look and feel) to standard Windows Forms controls, but expose custom properties. In this section, you will add a property called `ButtonValue` to your control.  
   
-#### To add the Value property  
+### To add the Value property  
   
 1. In **Solution Explorer**, right-click **ValueButton.vb**, and then click **View Code** from the shortcut menu.  
   
@@ -78,13 +78,13 @@ With Visual Basic, you can create powerful custom controls through *inheritance*
 ## Testing Your Control  
  Controls are not stand-alone projects; they must be hosted in a container. In order to test your control, you must provide a test project for it to run in. You must also make your control accessible to the test project by building (compiling) it. In this section, you will build your control and test it in a Windows Form.  
   
-#### To build your control  
+### To build your control  
   
 1. On the **Build** menu, click **Build Solution**.  
   
      The build should be successful with no compiler errors or warnings.  
   
-#### To create a test project  
+### To create a test project  
   
 1. On the **File** menu, point to **Add** and then click **New Project** to open the **Add New Project** dialog box.  
   
@@ -102,7 +102,7 @@ With Visual Basic, you can create powerful custom controls through *inheritance*
   
 8. In **Solution Explorer,** right-click **Test** and select **Build**.  
   
-#### To add your control to the form  
+### To add your control to the form  
   
 1. In **Solution Explorer**, right-click **Form1.vb** and choose **View Designer** from the shortcut menu.  
   

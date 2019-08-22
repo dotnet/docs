@@ -23,7 +23,7 @@ Enumerates MethodDef tokens representing methods of the specified type.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMethods (  
    [in, out] HCORENUM   *phEnum,   
    [in]  mdTypeDef      cl,   

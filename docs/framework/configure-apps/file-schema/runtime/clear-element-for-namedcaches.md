@@ -18,7 +18,7 @@ Clears all `namedCache` entries in the `namedCaches` collection for a memory cac
   
 ```xml  
 <namedCaches>  
-    <clear name="default" />  
+    <clear name="Default" />  
     <!-- child elements -->  
  </namedCaches>  
 ```  

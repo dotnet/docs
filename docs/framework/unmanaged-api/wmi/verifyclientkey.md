@@ -24,7 +24,7 @@ Ensures that the client key has the correct security.
   
 ## Syntax  
   
-```  
+```cpp  
 LONG VerifyClientKey(); 
 ```  
 

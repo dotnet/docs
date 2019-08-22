@@ -22,7 +22,7 @@ Assigns assembly-level properties.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyProps(  
     mdAssembly      AssemblyID,  
     mdToken         FileToken,  

@@ -35,7 +35,7 @@ DataSet Object Model
  The **DataSet**, **DataTable**, and **DataColumn** all have an **ExtendedProperties** property. **ExtendedProperties** is a **PropertyCollection** where you can place custom information, such as the SELECT statement that was used to generate the result set, or the time when the data was generated. The **ExtendedProperties** collection is persisted with the schema information for the **DataSet**.  
   
 ## LINQ to DataSet  
- [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] provides language-integrated querying capabilities for disconnected data stored in a DataSet. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] uses standard [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] syntax and provides compile-time syntax checking, static typing, and IntelliSense support when you are using the Visual Studio IDE.  
+ LINQ to DataSet provides language-integrated querying capabilities for disconnected data stored in a DataSet. LINQ to DataSet uses standard [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] syntax and provides compile-time syntax checking, static typing, and IntelliSense support when you are using the Visual Studio IDE.  
   
  For more information, see [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md).  
   

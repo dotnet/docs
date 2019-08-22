@@ -23,7 +23,7 @@ Notifies the common language runtime (CLR) of the status of an I/O request that 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnComplete (  
     [in] DWORD dwErrorCode,  
     [in] DWORD NumberOfBytesTransferred,  

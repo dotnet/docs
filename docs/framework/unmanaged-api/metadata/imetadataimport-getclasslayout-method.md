@@ -23,7 +23,7 @@ Gets layout information for the class referenced by the specified TypeDef token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassLayout  (   
    [in]  mdTypeDef          td,   
    [out] DWORD              *pdwPackSize,  

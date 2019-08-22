@@ -23,7 +23,7 @@ Gets information about the layout of an object in memory based on its type ident
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeLayout(    [in] COR_TYPEID id,     [out] COR_TYPE_LAYOUT *pLayout);  
 ```  
   

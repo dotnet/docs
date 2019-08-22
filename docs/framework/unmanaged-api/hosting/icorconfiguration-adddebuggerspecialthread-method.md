@@ -23,7 +23,7 @@ Indicates to the debugging services that a particular thread should be allowed t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddDebuggerSpecialThread (  
     [in] DWORD dwSpecialThreadId  
 );  

@@ -23,7 +23,7 @@ Provides a status notification during the exception unwinding process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwind (  
     [in] ICorDebugAppDomain                  *pAppDomain,  
     [in] ICorDebugThread                     *pThread,  

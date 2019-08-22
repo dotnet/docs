@@ -23,7 +23,7 @@ Gets the segment of the heap that contains the specified object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectGeneration(  
     [in] ObjectID objectId,  
     [out] COR_PRF_GC_GENERATION_RANGE *range);  

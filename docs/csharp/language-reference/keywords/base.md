@@ -1,7 +1,6 @@
 ---
 title: "base keyword - C# Reference"
 ms.custom: seodec18
-
 description: Learn about the base keyword, which is used to access members of the base class from within a derived class in C#.
 ms.date: 07/20/2015
 f1_keywords: 
@@ -32,7 +31,7 @@ In this example, both the base class, `Person`, and the derived class, `Employee
 
 [!code-csharp[csrefKeywordsAccess#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsAccess/CS/csrefKeywordsAccess.cs#1)]
 
-For additional examples, see [new](../../../csharp/language-reference/keywords/new.md), [virtual](../../../csharp/language-reference/keywords/virtual.md), and [override](../../../csharp/language-reference/keywords/override.md).
+For additional examples, see [new](new-modifier.md), [virtual](virtual.md), and [override](override.md).
 
 ## Example
 

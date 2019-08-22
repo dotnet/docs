@@ -23,7 +23,7 @@ Sets or updates the metadata signature of the inherited method implementation th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMethodImplFlags (   
     [in]  mdMethodDef   md,   
     [in]  DWORD         dwImplFlags   

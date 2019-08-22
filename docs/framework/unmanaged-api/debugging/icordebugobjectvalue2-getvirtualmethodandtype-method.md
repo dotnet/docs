@@ -23,7 +23,7 @@ This method is not yet implemented.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVirtualMethodAndType (  
     [in] mdMemberRef          memberRef,  
     [out] ICorDebugFunction   **ppFunction,  

@@ -10,7 +10,7 @@ Gets information about the managed code at a particular code address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode(  
     [in] CORDB_ADDRESS codeAddress,   
     [out] ICorDebugCode **ppCode);  

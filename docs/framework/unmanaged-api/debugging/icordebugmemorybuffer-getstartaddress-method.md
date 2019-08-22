@@ -10,7 +10,7 @@ Gets the starting address of the memory buffer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStartAddress(  
    [out] LPCVOID *address  
 );  

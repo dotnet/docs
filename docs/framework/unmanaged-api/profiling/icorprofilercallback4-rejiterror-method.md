@@ -23,7 +23,7 @@ Notifies the profiler that the just-in-time (JIT) compiler encountered an error 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReJITError(  
     [in] ModuleID    moduleId,  
     [in] mdMethodDef methodId,  

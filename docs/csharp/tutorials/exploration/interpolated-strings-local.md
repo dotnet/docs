@@ -48,7 +48,7 @@ In the following example, we first define a [class](../../programming-guide/clas
 public Vegetable(string name) => Name = name;
 ```
 
-Then we create an instance of the `Vegetable` class named `item` by using the [`new` keyword](../../language-reference/keywords/new-operator.md) and providing a name for the constructor `Vegetable`:
+Then we create an instance of the `Vegetable` class named `item` by using the [`new` operator](../../language-reference/operators/new-operator.md) and providing a name for the constructor `Vegetable`:
 
 ```csharp
 var item = new Vegetable("eggplant");

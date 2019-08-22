@@ -119,7 +119,7 @@ ms.custom: seodec18
 |`\b`|Start at a word boundary.|  
 |`(?<n2>\d{2}-)?`|Match zero or one occurrence of two digits followed by a hyphen. Name this capturing group `n2`.|  
 |`(?(n2)`|Test whether `n2` was matched in the input string.|  
-|`)\d{7}`|If `n2` was matched, match seven decimal digits.|  
+|`\d{7}`|If `n2` was matched, match seven decimal digits.|  
 |<code>&#124;\d{3}-\d{2}-\d{4}</code>|If `n2` was not matched, match three decimal digits, a hyphen, two decimal digits, another hyphen, and four decimal digits.|  
 |`\b`|Match a word boundary.|  
   

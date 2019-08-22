@@ -23,7 +23,7 @@ Determines whether the specified class is an array class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsArrayClass(  
     [in]  ClassID        classId,  
     [out] CorElementType *pBaseElemType,  

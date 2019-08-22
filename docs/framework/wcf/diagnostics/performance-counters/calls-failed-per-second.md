@@ -13,7 +13,7 @@ Counter Name: Calls Failed Per Second
   
  (N 1 - N 0 ) / ( (D 1 -D 0 ) / F)  
   
- This counter is incremented everytime there is an unhandled exception in this operation.  
+ This counter is incremented every time there is an unhandled exception in this operation.  
   
 ## See also
 

@@ -17,7 +17,7 @@ Converts a Modulus and Exponent to a strong name public key token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _AxlRSAKeyValueToPublicKeyToken (  
     [in]  PCRYPT_DATA_BLOB pModulusBlob,  
     [in]  PCRYPT_DATA_BLOB pExponentBlob,  

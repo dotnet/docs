@@ -22,7 +22,7 @@ Retrieves the actual FileDef token used in metadata (as opposed to the token ass
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFileDef(  
     mdAssembly AssemblyID,  
     mdFile TargetFile,  

@@ -21,7 +21,7 @@ Specifies the type, derived from the <xref:System.AppDomainManager?displayProper
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAppDomainManagerType(  
     [in] LPCWSTR wszAppDomainManagerAssembly,  
     [in] LPCWSTR wszAppDomainManagerType,  

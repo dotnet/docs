@@ -18,7 +18,7 @@ ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
   
 - Implementing the Windows Forms host application.  
   
- For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a WPF Composite Control in Windows Forms Sample](https://go.microsoft.com/fwlink/?LinkID=159996).  
+ For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a WPF Composite Control in Windows Forms Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WindowsFormsHostingWpfControl).  
   
 ## Prerequisites  
 

@@ -1,0 +1,11 @@
+- name: Assemblies in .NET
+  href: index.md
+  items:
+  - name: Friend assemblies
+    items:
+    - name: Overview
+      href: friend-assemblies.md
+  - name: .NET assembly file format
+    href: file-format.md
+  - name: "How to use and debug assembly unloadability in .NET Core"
+    href: unloadability-howto.md

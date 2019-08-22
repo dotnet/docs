@@ -24,7 +24,7 @@ Retrieves the next qualifier in an enumeration that started with a call to the [
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_Next (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr, 

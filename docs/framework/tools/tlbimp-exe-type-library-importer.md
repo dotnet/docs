@@ -72,8 +72,10 @@ tlbimp tlbFile [options]
   
  It is often useful or necessary to be able to assign [strong names](../app-domains/strong-named-assemblies.md) to assemblies. Therefore, Tlbimp.exe includes options for supplying the information necessary to generate strongly named assemblies. Both the **/keyfile:** and **/keycontainer:** options sign assemblies with strong names. Therefore, it is logical to supply only one of these options at a time.  
   
- You can specify multiple reference assemblies by using the **/reference** option multiple times.  
-  
+ You can specify multiple reference assemblies by using the **/reference** option multiple times.
+ 
+ Due to the way in which Tlbimp.exe generates assemblies, it is not possible to retarget an assembly to a different `mscorlib` version. For example, if you desire to generate an assembly that targets .NET Framework 2.0, the Tlbimp.exe shipped with the .NET Framework 2.0/3.0/3.5 SDK must be used. In order to target .NET Framework 4.x, the Tlbimp.exe shipped with a .NET Framework 4.x SDK should be used.
+ 
  A resource ID can optionally be appended to a type library file when importing a type library from a module containing multiple type libraries. Tlbimp.exe is able to locate this file only if it is in the current directory or if you specify the full path. See the example later in this topic.  
   
 ## Examples  

@@ -166,7 +166,7 @@ All applications tend to share a common set of functionality that applies to app
 > [!NOTE]
 >  For more information on navigation, see [Navigation Overview](navigation-overview.md).  
   
- You need to handle the <xref:System.Windows.Application.Startup> event to open a <xref:System.Windows.Window> if you need to instantiate it using a non-default constructor, or you need to set its properties or subscribe to its events before showing it, or you need to process any command-line arguments that were supplied when the application was launched.  
+ You need to handle the <xref:System.Windows.Application.Startup> event to open a <xref:System.Windows.Window> if you need to instantiate it using a non-parameterless constructor, or you need to set its properties or subscribe to its events before showing it, or you need to process any command-line arguments that were supplied when the application was launched.  
   
 <a name="Processing_Command_Line_Arguments"></a>   
 ### Processing Command-Line Arguments  
@@ -287,7 +287,7 @@ All applications tend to share a common set of functionality that applies to app
   
 - An XBAP is navigated away from.  
   
-- In [!INCLUDE[TLA2#tla_ie7](../../../../includes/tla2sharptla-ie7-md.md)], when the tab that is hosting the XBAP is closed.  
+- In Internet Explorer, when the tab that is hosting the XBAP is closed.  
   
 - When the browser is closed.  
   

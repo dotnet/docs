@@ -22,7 +22,7 @@ Contains the offsets that are used to map Microsoft intermediate language (MSIL)
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_DEBUG_IL_TO_NATIVE_MAP {  
     ULONG32  ilOffset;  
     ULONG32  nativeStartOffset;  

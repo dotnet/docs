@@ -23,7 +23,7 @@ Instructs the common language runtime (CLR) to associate the specified identifie
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTaskIdentifier (  
     [in] DWORD Asked  
 );  

@@ -23,7 +23,7 @@ Delays new thread abort requests from resulting in thread aborts on the current 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginPreventAsyncAbort();  
 ```  
   

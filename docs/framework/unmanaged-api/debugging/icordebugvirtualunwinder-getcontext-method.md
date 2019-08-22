@@ -10,7 +10,7 @@ Gets the current context of this unwinder.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContext(  
    [in] ULONG32 contextFlags,  
    [in] ULONG32 cbContextBuf,  

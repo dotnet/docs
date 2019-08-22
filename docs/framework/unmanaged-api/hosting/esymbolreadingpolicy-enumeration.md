@@ -22,7 +22,7 @@ Contains values that set the policy for reading program database (PDB) files.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eSymbolReadingNever,  
     eSymbolReadingAlways,  

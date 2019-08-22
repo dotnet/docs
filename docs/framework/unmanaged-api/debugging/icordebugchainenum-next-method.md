@@ -23,7 +23,7 @@ Gets the specified number of ICorDebugChain instances from the enumeration, star
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in] ULONG  celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  

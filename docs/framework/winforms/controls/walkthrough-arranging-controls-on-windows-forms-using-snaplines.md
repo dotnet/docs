@@ -47,7 +47,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Creating the Project  
  The first step is to create the project and set up the form.  
   
-#### To create the project  
+### To create the project  
   
 1. Create a Windows-based application project called "SnaplineExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
@@ -56,7 +56,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Spacing and Aligning Controls Using Snaplines  
  Snaplines give you an accurate and intuitive way to align controls on your form. They appear when you are moving a selected control or controls near a position that would align with another control or set of controls. Your selection will "snap" to the suggested position as you move it past the other controls.  
   
-#### To arrange controls using snaplines  
+### To arrange controls using snaplines  
   
 1. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto your form.  
   
@@ -79,7 +79,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Aligning to Form and Container Margins  
  Snaplines help you to align your controls to form and container margins in a consistent manner.  
   
-#### To align controls to form and container margins  
+### To align controls to form and container margins  
   
 1. Select one of the <xref:System.Windows.Forms.Button> controls and move it close to the right border of the form until a snapline appears. The snapline's distance from the right border is the sum of the control's <xref:System.Windows.Forms.Control.Margin%2A> property and the form's <xref:System.Windows.Forms.Control.Padding%2A> property values.  
   
@@ -101,7 +101,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Aligning to Grouped Controls  
  You can use snaplines to align grouped controls as well as controls within a <xref:System.Windows.Forms.GroupBox> control.  
   
-#### To align to grouped controls  
+### To align to grouped controls  
   
 1. Select two of the controls on your form. Move the selection around and note the snaplines that appear between your selection and the other controls.  
   
@@ -114,7 +114,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Using Snaplines to Place a Control by Outlining Its Size  
  Snaplines help you align controls when you first place them on a form.  
   
-#### To use snaplines to place a control by outlining its size  
+### To use snaplines to place a control by outlining its size  
   
 1. In the **Toolbox**, click the <xref:System.Windows.Forms.Button> control icon. Do not drag it onto the form.  
   
@@ -131,7 +131,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Using Snaplines When Dragging a Control from the Toolbox  
  Snaplines help you align controls when you drag them from the **Toolbox** onto your form.  
   
-#### To use snaplines when dragging a control from the Toolbox  
+### To use snaplines when dragging a control from the Toolbox  
   
 1. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto your form, but do not release the mouse button.  
   
@@ -144,7 +144,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Resizing Controls Using Snaplines  
  Snaplines help you align controls as you resize them.  
   
-#### To resize a control using snaplines  
+### To resize a control using snaplines  
   
 1. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto your form.  
   
@@ -157,7 +157,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Aligning a Label to a Control's Text  
  Some controls offer a snapline for aligning other controls to displayed text.  
   
-#### To align a label to a control's text  
+### To align a label to a control's text  
   
 1. Drag a <xref:System.Windows.Forms.TextBox> control from the **Toolbox** onto your form. When you drop the <xref:System.Windows.Forms.TextBox> control onto the form, click the smart-tag glyph and select the **Set text to textBox1** option. For details, see [Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](performing-common-tasks-using-smart-tags-on-wf-controls.md).  
   
@@ -172,7 +172,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Using Snaplines with Keyboard Navigation  
  Snaplines help you align controls when you are arranging them using the keyboard's arrow keys.  
   
-#### To use snaplines with keyboard navigation  
+### To use snaplines with keyboard navigation  
   
 1. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto your form. Place it in the upper-left corner of the form.  
   
@@ -193,7 +193,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Snaplines and Layout Panels  
  Snaplines are disabled within layout panels.  
   
-#### To selectively disable snaplines  
+### To selectively disable snaplines  
   
 1. Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.  
   
@@ -208,13 +208,13 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Disabling Snaplines  
  Snaplines are turned on by default. You can disable snaplines selectively, or you can disable them in the design environment.  
   
-#### To selectively disable snaplines  
+### To selectively disable snaplines  
   
 - Press the ALT key and while moving a control around the form.  
   
      Note that no snaplines appear and the control does not snap to any potential alignment positions.  
   
-#### To disable snaplines in the design environment  
+### To disable snaplines in the design environment  
   
 1. From the **Tools** menu, open the **Options** dialog box. Open the Windows Forms Designer dialog box. For details, see [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100)).  
   

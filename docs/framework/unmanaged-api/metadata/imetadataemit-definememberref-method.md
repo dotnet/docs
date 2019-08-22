@@ -23,7 +23,7 @@ Defines a reference to a member of a module outside the current scope, and gets 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineMemberRef (   
     [in]  mdToken           tkImport,   
     [in]  LPCWSTR           szName,   

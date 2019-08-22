@@ -32,10 +32,10 @@ Specifies authentication options for peer-to-peer message senders.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|customCertificateValidatorType|A type and assembly used to validate a custom type. This attribute must be set when `certificateValidationMode` is set to `Custom`.|  
-|certifcateValidationMode|Specifies one of three modes used to validate credentials. If set to `Custom`, then a `customCertificateValidator` must also be supplied.|  
-|revocationMode|One of the modes used to check for a revoked certificate lists (CRL).|  
-|trustedStoreLocation|One of the two system store locations: `LocalMachine` or `CurrentUser`. This value is used when a service certificate is negotiated to the client. Validation is performed against the **Trusted People** store in the specified store location.|  
+|`customCertificateValidatorType`|A type and assembly used to validate a custom type. This attribute must be set when `certificateValidationMode` is set to `Custom`.|  
+|`certificateValidationMode`|Specifies one of three modes used to validate credentials. If set to `Custom`, then a `customCertificateValidator` must also be supplied.|  
+|`revocationMode`|One of the modes used to check for a revoked certificate lists (CRL).|  
+|`trustedStoreLocation`|One of the two system store locations: `LocalMachine` or `CurrentUser`. This value is used when a service certificate is negotiated to the client. Validation is performed against the **Trusted People** store in the specified store location.|  
   
 ## customCertificateValidatorType Attribute  
   

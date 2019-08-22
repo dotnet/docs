@@ -24,7 +24,7 @@ Gets a pointer to a new [IAssemblyCache](../../../../docs/framework/unmanaged-ap
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAssemblyCache (  
     [out] IAssemblyCache  **ppAsmCache,  
     [in]  DWORD           dwReserved  

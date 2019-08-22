@@ -23,7 +23,7 @@ Gets a symbol reader method, given a method token and an edit-and-continue versi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodByVersionPreRemap(  
     [in]  mdMethodDef token,  
     [in]  int version,  

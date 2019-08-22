@@ -23,7 +23,7 @@ Gets the "ICorDebugFunction" associated with this "ICorDebugCode".
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunction (  
     [out] ICorDebugFunction **ppFunction  
 );  

@@ -106,7 +106,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
 |<xref:System.Collections.IEnumerable> instance|An <xref:System.ComponentModel.IBindingList> containing the <xref:System.Collections.IEnumerable> items|  
 |List instance containing type "T"|An <xref:System.ComponentModel.IBindingList> instance containing type "T".|  
   
- Additionally, <xref:System.Windows.Forms.BindingSource.DataSource%2A> can be set to other list types, such as <xref:System.ComponentModel.IListSource> and <xref:System.ComponentModel.ITypedList>, and the <xref:System.Windows.Forms.BindingSource> will handle them appropriately. In this case, the type that is contained in the list should have a default constructor.  
+ Additionally, <xref:System.Windows.Forms.BindingSource.DataSource%2A> can be set to other list types, such as <xref:System.ComponentModel.IListSource> and <xref:System.ComponentModel.ITypedList>, and the <xref:System.Windows.Forms.BindingSource> will handle them appropriately. In this case, the type that is contained in the list should have a parameterless constructor.  
   
 ### BindingSource as an IBindingList  
  The <xref:System.Windows.Forms.BindingSource> component provides members for accessing and manipulating the underlying data as an <xref:System.ComponentModel.IBindingList>. The following table describes some of these members.  

@@ -22,7 +22,7 @@ Defines an object that is blocking a thread and the specific reason that the thr
   
 ## Syntax  
   
-```  
+```cpp  
 Typedef struct CorDebugBlockingObject  
 {  
 ICorDebugValue pBlockingObject;  

@@ -35,7 +35,7 @@ Registration-free COM interop activates a component without using the Windows re
   
      The Windows Server 2003 family also supports registration-free COM interop for .NET-based assemblies.  
   
-     For a .NET-based class to be compatible with registry-free activation from COM, the class must have a default constructor and must be public.  
+     For a .NET-based class to be compatible with registry-free activation from COM, the class must have a parameterless constructor and must be public.  
   
 ### Configuring COM components for registration-free activation  
   

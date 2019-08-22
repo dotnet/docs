@@ -23,7 +23,7 @@ Gets a pointer to an `ITypeLib` instance that represents the type library that h
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeLibFromMetaData (  
     [in]  BSTR     strModule,   
     [in]  BSTR     strTlbName,   

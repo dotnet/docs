@@ -23,7 +23,7 @@ Notifies the debugger that an evaluation has been completed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EvalComplete (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *pThread,  

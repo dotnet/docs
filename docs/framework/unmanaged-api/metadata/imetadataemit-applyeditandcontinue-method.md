@@ -23,7 +23,7 @@ Updates the current assembly scope with the changes made in the specified metada
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ApplyEditAndContinue (   
     [in]  IUnknown    *pImport  
 );  

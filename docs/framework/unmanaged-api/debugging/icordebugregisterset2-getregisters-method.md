@@ -23,7 +23,7 @@ Gets the value of each register (for the platform on which code is currently exe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisters (  
     [in] ULONG32 maskCount,  
     [in, size_is(maskCount)] BYTE mask[],  

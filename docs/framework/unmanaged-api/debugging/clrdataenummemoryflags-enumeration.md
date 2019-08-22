@@ -22,7 +22,7 @@ Indicates which memory regions a call to the [ICLRDataEnumMemoryRegions::EnumMem
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CLRDataEnumMemoryFlags {  
     CLRDATA_ENUM_MEM_DEFAULT  = 0x0,  
     CLRDATA_ENUM_MEM_MINI     = CLRDATA_ENUM_MEM_DEFAULT,  

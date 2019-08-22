@@ -24,7 +24,7 @@ Terminates the enumeration begun with a call to the [QualifierSet_BeginEnumerati
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_EndEnumeration (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr

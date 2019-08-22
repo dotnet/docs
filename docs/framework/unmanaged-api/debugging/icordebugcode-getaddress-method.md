@@ -23,7 +23,7 @@ Gets the relative virtual address (RVA) of the code segment that this "ICorDebug
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddress (  
     [out] CORDB_ADDRESS *pStart  
 );  

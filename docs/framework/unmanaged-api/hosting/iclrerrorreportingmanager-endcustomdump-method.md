@@ -23,7 +23,7 @@ Removes the custom stack dump configuration that was specified in an earlier cal
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndCustomDump ();  
 ```  
   

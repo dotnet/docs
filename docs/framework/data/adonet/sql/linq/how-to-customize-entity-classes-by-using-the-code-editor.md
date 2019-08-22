@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ec28332f-9f3c-4e0a-baca-60f9141a68c0
 ---
 # How to: Customize Entity Classes by Using the Code Editor
-Developers using Visual Studio can use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to create or customize their entity classes.  
+Developers using Visual Studio can use the Object Relational Designer to create or customize their entity classes.  
   
  You can also use the Visual Studio code editor to write your own mapping code or to customize code that has already been generated. For more information, see [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md).  
   

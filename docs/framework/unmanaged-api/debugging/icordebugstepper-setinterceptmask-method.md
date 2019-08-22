@@ -23,7 +23,7 @@ Sets a value that specifies the types of code that are stepped into.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetInterceptMask (  
     [in] CorDebugIntercept    mask  
 );  

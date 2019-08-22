@@ -14,7 +14,7 @@ ms.assetid: cdcc8e3d-e2aa-4c5e-a580-bdf581a66709
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
- This event is emitted when the message was read by encorder.  
+ This event is emitted when the message was read by the encoder.  
   
 ## Message  
  A message with size '%1' bytes was read by the encoder.  

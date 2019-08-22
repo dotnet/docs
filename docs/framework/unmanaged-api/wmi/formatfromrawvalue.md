@@ -24,7 +24,7 @@ Converts one raw performance data value to the specified format, or two raw perf
 
 ## Syntax
 
-```
+```cpp
 int FormatFromRawValue (
    [in] uint                    dwCounterType, 
    [in] uint                    dwFormat, 

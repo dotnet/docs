@@ -22,7 +22,7 @@ Returns information about the specified type library by examining its [TLIBATTR]
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeLibInfo(  
     [in]   LPWSTR     szFile,  
     [out]  GUID      *pTypeLibID,  

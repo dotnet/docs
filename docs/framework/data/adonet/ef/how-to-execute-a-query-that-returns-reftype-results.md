@@ -19,7 +19,7 @@ This topic shows how to execute a command against a conceptual model by using an
      [!code-vb[DP EntityServices Concepts#Namespaces](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#namespaces)]  
   
 ## Example  
- This example executes a query that returns <xref:System.Data.Metadata.Edm.RefType> results. If you pass the following query as an argument to the `ExectueRefTypeQuery` function, the function returns a reference to the entity:  
+ This example executes a query that returns <xref:System.Data.Metadata.Edm.RefType> results. If you pass the following query as an argument to the `ExecuteRefTypeQuery` function, the function returns a reference to the entity:  
   
  [!code-csharp[DP EntityServices Concepts 2#REF2](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#ref2)]  
   

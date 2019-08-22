@@ -1,7 +1,7 @@
 ---
 title: Get started with .NET for Apache Spark
 description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows.
-ms.date: 06/07/2019
+ms.date: 06/27/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.
@@ -108,10 +108,10 @@ git clone https://github.com/dotnet/spark.git c:\github\dotnet-spark
 
    ```powershell
     spark-submit `
-    --class org.apache.spark.deploy.DotnetRunner `
+    --class org.apache.spark.deploy.dotnet.DotnetRunner `
     --master local `
     microsoft-spark-2.4.x-<version>.jar `
-    HelloSpark
+    dotnet HelloSpark.dll
     ```
 
 Congratulations! You successfully authored and ran a .NET for Apache Spark app.

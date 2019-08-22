@@ -23,7 +23,7 @@ Gets the number of dimensions in the array.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRank (  
     [out] ULONG32   *pnRank  
 );  

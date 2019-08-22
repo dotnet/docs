@@ -24,7 +24,7 @@ Gets the post-policy display name for an assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT PreBindAssemblyEx (  
     [in]  IApplicationContext *pAppCtx,  
     [in]  IAssemblyName       *pName,  

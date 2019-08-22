@@ -10,7 +10,7 @@ Gets the assembly's public key.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPublicKey(  
    [in] ULONG32 cbPublicKey,   
    [out] ULONG32 *pcbPublicKey,   

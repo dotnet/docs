@@ -22,7 +22,7 @@ Points to a function that creates an interface object for the specified target i
   
 ## Syntax  
   
-```  
+```cpp  
 typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (  
     [in]  REFIID           iid,  
     [in]  ICLRDataTarget  *target,  

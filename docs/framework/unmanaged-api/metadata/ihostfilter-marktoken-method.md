@@ -23,7 +23,7 @@ Indicates that the specified metadata token will be processed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MarkToken (  
     [in]  mdToken         tk  
 );  

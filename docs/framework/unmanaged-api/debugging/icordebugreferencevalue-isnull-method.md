@@ -23,7 +23,7 @@ Gets a value that indicates whether this ICorDebugReferenceValue is a null value
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsNull (  
     [out] BOOL   *pbNull  
 );  

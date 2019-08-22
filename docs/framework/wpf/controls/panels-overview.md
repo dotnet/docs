@@ -46,7 +46,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
  <xref:System.Windows.Controls.Panel> also defines the <xref:System.Windows.Controls.Panel.OnRender%2A> method, which can be used to override the default presentation behavior of a <xref:System.Windows.Controls.Panel>.  
   
 #### Attached Properties  
- Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] property "wrapper". Attached properties have a specialized syntax in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], which can be seen in several of the examples that follow.  
+ Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional common language runtime (CLR) property "wrapper". Attached properties have a specialized syntax in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], which can be seen in several of the examples that follow.  
   
  One purpose of an attached property is to allow child elements to store unique values of a property that is actually defined by a parent element. An application of this functionality is having child elements inform the parent how they wish to be presented in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], which is extremely useful for application layout. For more information, see [Attached Properties Overview](../advanced/attached-properties-overview.md).  
   

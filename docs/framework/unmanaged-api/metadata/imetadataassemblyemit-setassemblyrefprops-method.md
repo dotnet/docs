@@ -23,7 +23,7 @@ Modifies the specified `AssemblyRef` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyRefProps (  
     [in] mdAssemblyRef              ar,  
     [in] const void                 *pbPublicKeyOrToken,  

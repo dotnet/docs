@@ -23,7 +23,7 @@ Gets the canonical assembly identity data for the assembly in the specified stre
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBindingIdentityFromStream (  
     [in] IStream    *pStream,  
     [in] DWORD       dwFlags,  

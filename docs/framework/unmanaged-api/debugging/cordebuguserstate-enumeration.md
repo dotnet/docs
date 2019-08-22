@@ -22,7 +22,7 @@ Indicates the user state of a thread.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugUserState {  
     USER_STOP_REQUESTED     =  0x01,  
     USER_SUSPEND_REQUESTED  =  0x02,  

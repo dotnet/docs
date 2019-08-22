@@ -1,7 +1,6 @@
 ---
 title: "Value types - C# Reference"
 ms.custom: seodec18
-
 ms.date: 11/26/2018
 f1_keywords: 
   - "cs.valuetypes"
@@ -35,11 +34,11 @@ Each value type has an implicit parameterless constructor that initializes the d
 
 The *simple types* are a set of predefined struct types provided by C# and comprise the following types:
 
-- [Integral types](integral-types-table.md): integer numeric types and the [char](char.md) type
-- [Floating-point types](floating-point-types-table.md)
+- [Integral types](../builtin-types/integral-numeric-types.md): integer numeric types and the [char](char.md) type
+- [Floating-point types](../builtin-types/floating-point-numeric-types.md)
 - [bool](bool.md)
 
-The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](int.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
+The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](../builtin-types/integral-numeric-types.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
 
 The simple types differ from other struct types in that they permit certain additional operations:
 
@@ -83,17 +82,17 @@ int myInt = new int();
 int myInt = 0;
 ```
 
-Using the [new](new.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling default constructors, see [Default values table](default-values-table.md).
+Using the [new](../operators/new-operator.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling parameterless constructors, see [Default values table](default-values-table.md).
 
-With user-defined types, use [new](new.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
+With user-defined types, use [new](../operators/new-operator.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
 
 ```csharp
-Point p = new Point(); // Invoke parameterless constructor for the struct.
+var p = new Point(); // Invoke parameterless constructor for the struct.
 ```
 
 After this call, the struct is considered to be definitely assigned; that is, all its members are initialized to their default values.
 
-For more information about the `new` operator, see [new](new.md).
+For more information about the `new` operator, see [new](../operators/new-operator.md).
 
 For information about formatting the output of numeric types, see [Formatting numeric results table](formatting-numeric-results-table.md).
 

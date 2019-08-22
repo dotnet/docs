@@ -22,7 +22,7 @@ Indicates the source of an assembly that is represented by [IAssemblyCacheItem](
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     ASM_CACHE_ZAP       = 0x01,  
     ASM_CACHE_GAC       = 0x02,  

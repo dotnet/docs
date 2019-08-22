@@ -23,7 +23,7 @@ Requests the host to change the limits of virtual memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestVirtualMemLimit (  
     [in] SIZE_T       sztMaxVirtualMemMB,  
     [in, out] SIZE_T* psztNewMaxVirtualMemMB  

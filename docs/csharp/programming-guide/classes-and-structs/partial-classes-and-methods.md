@@ -99,7 +99,7 @@ There are several rules to follow when you are working with partial class defini
 
   - base class
 
-  - [new](../../../csharp/language-reference/keywords/new.md) modifier (nested parts)
+  - [new](../../../csharp/language-reference/keywords/new-modifier.md) modifier (nested parts)
 
   - generic constraints
 

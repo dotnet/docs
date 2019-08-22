@@ -32,7 +32,7 @@ Generic collections can be useful for general .NET Framework programming, and ca
 
 In .NET Framework programming, it is a common design pattern to make any property that holds a value of a collection as a read-only collection. This pattern permits the instance that owns the collection property to better control what happens to the collection.. Specifically, the pattern prevents accidental replacement of the entire pre-existing collection by setting the property. In this pattern, any access to the collection by callers should instead be made by calling methods or properties as supported by the collection type and/or the relevant collection interfaces such as <xref:System.Collections.IList>.
 
-Using this pattern implies that any class that exposes a read-only collection property must first initialize that property to hold an empty collection. Typically the initialization is performed as part of the construction behavior for the class. To be useful for XAML, it is important that such logic is always referenced by the default constructor, because XAML generally calls the default constructor prior to processing the properties (collection properties or otherwise).
+Using this pattern implies that any class that exposes a read-only collection property must first initialize that property to hold an empty collection. Typically the initialization is performed as part of the construction behavior for the class. To be useful for XAML, it is important that such logic is always referenced by the parameterless constructor, because XAML generally calls the parameterless constructor prior to processing the properties (collection properties or otherwise).
 
 ## XAML Type System Support and Collections
 

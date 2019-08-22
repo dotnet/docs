@@ -17,7 +17,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
 ## Configuring a Site with Non-HTTP bindings  
  To use a non-HTTP binding with WAS, the site binding must be added to the WAS configuration. The configuration store for WAS is the applicationHost.config file, located in the %windir%\system32\inetsrv\config directory. This configuration store is shared by both WAS and IIS 7.0.  
   
- applicationHost.config is an XML text file that can be opened with any standard text editor (such as Notepad). However, the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] command-line configuration tool (appcmd.exe) is the preferred way to add non-HTTP site bindings.  
+ applicationHost.config is an XML text file that can be opened with any standard text editor (such as Notepad). However, the IIS 7.0 command-line configuration tool (appcmd.exe) is the preferred way to add non-HTTP site bindings.  
   
  The following command adds a net.tcp site binding to the default Web site using appcmd.exe (this command is entered as a single line).  
   

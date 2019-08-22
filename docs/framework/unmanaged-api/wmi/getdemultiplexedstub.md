@@ -24,7 +24,7 @@ Creates an object forwarder sink to assist a client in receiving asynchronous ca
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDemultiplexedStub (
    [in] IUnknown*    pObject, 
    [in] boolean      isLocal, 

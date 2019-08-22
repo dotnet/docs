@@ -24,7 +24,7 @@ Determines the class in which a method is declared.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodOrigin (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 

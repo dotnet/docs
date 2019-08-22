@@ -23,7 +23,7 @@ Returns the uniform resource locator (URL) for this document.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetURL(  
     [in]  ULONG32  cchUrl,  
     [out] ULONG32  *pcchUrl,  

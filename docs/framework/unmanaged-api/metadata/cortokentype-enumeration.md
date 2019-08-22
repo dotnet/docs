@@ -22,7 +22,7 @@ Indicates the type of a metadata token.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorTokenType {  
   
     mdtModule                       = 0x00000000,  

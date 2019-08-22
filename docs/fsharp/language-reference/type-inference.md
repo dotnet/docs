@@ -19,7 +19,7 @@ The return type of a function is determined by the type of the last expression i
 
 For example, in the following code, the parameter types `a` and `b` and the return type are all inferred to be `int` because the literal `100` is of type `int`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-3/snippet301.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet301.fs)]
 
 You can influence type inference by changing the literals. If you make the `100` a `uint32` by appending the suffix `u`, the types of `a`, `b`, and the return value are inferred to be `uint32`.
 
@@ -27,15 +27,15 @@ You can also influence type inference by using other constructs that imply restr
 
 Also, you can apply explicit type annotations to function or method parameters or to variables in expressions, as shown in the following examples. Errors result if conflicts occur between different constraints.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-3/snippet302.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet302.fs)]
 
 You can also explicitly specify the return value of a function by providing a type annotation after all the parameters.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-3/snippet303.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet303.fs)]
 
 A common case where a type annotation is useful on a parameter is when the parameter is an object type and you want to use a member.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-3/snippet304.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet304.fs)]
 
 ## Automatic Generalization
 
@@ -43,7 +43,7 @@ If the function code is not dependent on the type of a parameter, the compiler c
 
 For example, the following function combines two parameters of any type into a tuple.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-3/snippet305.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet305.fs)]
 
 The type is inferred to be
 
@@ -57,4 +57,4 @@ Type inference is described in more detail in the F# Language Specification.
 
 ## See also
 
-- [Automatic Generalization](generics/automatic-generalization.md)
+- [Automatic Generalization](./generics/automatic-generalization.md)

@@ -24,7 +24,7 @@ Retrieves the qualifier set for a class instance or a class definition.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetQualifierSet (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 

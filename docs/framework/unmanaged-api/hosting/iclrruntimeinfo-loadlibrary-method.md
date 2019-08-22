@@ -25,7 +25,7 @@ Loads a .NET Framework library from the common language runtime (CLR) represente
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadLibrary(  
      [in]  LPCWSTR pwzDllName,  
      [out, retval] HMODULE *phndModule);  

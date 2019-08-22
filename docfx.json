@@ -109,6 +109,23 @@
       "apiPlatform": "dotnet",
       "ms.prod":"dotnet",
       "ms.topic": "conceptual",
+      "_op_documentIdPathDepotMapping": {
+	"docs/architecture/containerized-lifecycle/": { 
+	   "folder_relative_path_in_docset": "docs/standard/containerized-lifecycle-architecture/"
+	},
+	"docs/architecture/microservices/": { 
+	   "folder_relative_path_in_docset": "docs/standard/microservices-architecture/"
+	},
+	"docs/architecture/modern-web-apps-azure/": { 
+	   "folder_relative_path_in_docset": "docs/standard/modern-web-apps-azure-architecture/"
+	},
+	"docs/architecture/modernize-with-azure-containers/": { 
+	   "folder_relative_path_in_docset": "docs/standard/modernize-with-azure-and-containers/"
+	},
+	"docs/architecture/serverless/": { 
+	   "folder_relative_path_in_docset": "docs/standard/serverless-architecture/"
+	}
+      },
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs",
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
@@ -123,7 +140,8 @@
         "docs/framework/data/adonet/**/**.md": "None"
       },
       "feedback_product_url": {
-        "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp"
+        "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp",
+        "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning"
       },
       "ms.prod": {
         "_csharplang/**/*.md": "dotnet-csharp",
@@ -157,6 +175,7 @@
         "docs/visual-basic/**/**.md": "vb"
       },
       "author": {
+        "docs/architecture/**/**.md": "nishanil",
         "docs/core/**/**.md": "mairaw",
         "docs/core/docker/**.md": "Thraka",
         "docs/csharp/**/**.md": "billwagner",
@@ -169,15 +188,13 @@
         "docs/framework/wcf/**/**.md": "HongGit",
         "docs/fsharp/**/**.md": "cartermp",
         "docs/machine-learning/**/**.md": "JRAlexander",
-        "docs/standard/containerized-lifecycle-architecture/**/**.md": "nishanil",
-        "docs/standard/microservices-architecture/**/**.md": "nishanil",
-        "docs/standard/modernize-with-azure-and-containers/**/**.md": "nishanil",
         "docs/visual-basic/**/**.md": "KathleenDollard",
         "docs/spark/**/**.md": "mamccrea"
       },
-      "ms.author": {
+      "ms.author": {        
         "_csharplang/**/*.md": "wiwagn",
         "_vblang/spec/*.md": "wiwagn",
+        "docs/architecture/**/**.md": "nanil",
         "docs/core/**/**.md": "mairaw",
         "docs/core/docker/**.md": "adegeo",
         "docs/csharp/**/**.md": "wiwagn",
@@ -190,9 +207,6 @@
         "docs/framework/wcf/**/**.md": "wcfsrvt",
         "docs/fsharp/**/**.md": "phcart",
         "docs/machine-learning/**/**.md": "johalex",
-        "docs/standard/containerized-lifecycle-architecture/**/**.md": "nanil",
-        "docs/standard/microservices-architecture/**/**.md": "nanil",
-        "docs/standard/modernize-with-azure-and-containers/**/**.md": "nanil",
         "docs/visual-basic/**/**.md": "kdollard",
         "docs/spark/**/**.md": "mamccrea"
       },
@@ -208,6 +222,7 @@
       "ms.technology": {
         "_csharplang/**/*.md": "csharp-spec",
         "_vblang/spec/*.md": "vb-spec",
+        "docs/architecture/**/**.md": "dotnet-ebooks",        
         "docs/csharp/roslyn-sdk/**/**.md": "csharp-roslyn",
         "docs/csharp/language-reference/compiler-messages/**/**.md": "csharp-diagnostics",
         "docs/csharp/misc/**/**.md": "csharp-diagnostics",
@@ -226,11 +241,6 @@
         "docs/framework/winforms/**/**.md": "dotnet-winforms",
         "docs/framework/wpf/**/**.md": "dotnet-wpf",
         "docs/framework/xaml-services/**/**.md": "dotnet-wpf",
-        "docs/standard/containerized-lifecycle-architecture/**/**.md": "dotnet-ebooks",
-        "docs/standard/microservices-architecture/**/**.md": "dotnet-ebooks",
-        "docs/standard/modern-web-apps-azure-architecture/**/**.md": "dotnet-ebooks",
-        "docs/standard/modernize-with-azure-and-containers/**/**.md": "dotnet-ebooks",
-        "docs/standard/serverless-architecture/**/**.md": "dotnet-ebooks",
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       },

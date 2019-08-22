@@ -23,7 +23,7 @@ Enumerates the assembly options.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _AssemblyOptions {  
     optAssemTitle = 0,  
     optAssemDescription,  

@@ -23,7 +23,7 @@ Defines a source document. GUIDs are provided for known languages, vendors, and 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineDocument(  
     [in]  const WCHAR  *url,  
     [in]  const GUID   *language,  

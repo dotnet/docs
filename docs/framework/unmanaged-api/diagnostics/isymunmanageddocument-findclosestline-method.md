@@ -23,7 +23,7 @@ Returns the closest line that is a sequence point, given a line in this document
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindClosestLine(  
     [in]  ULONG32  line,  
     [out, retval] ULONG32*  pRetVal);  

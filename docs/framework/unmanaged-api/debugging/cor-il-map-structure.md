@@ -22,7 +22,7 @@ Specifies changes in the relative offset of a function.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_IL_MAP {  
     ULONG32 oldOffset;   
     ULONG32 newOffset;   

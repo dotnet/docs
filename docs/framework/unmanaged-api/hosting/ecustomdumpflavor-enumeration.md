@@ -22,7 +22,7 @@ Contains values that indicate which items to include in a custom subset of a hea
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     DUMP_FLAVOR_Mini            = 1,  
     DUMP_FLAVOR_NonHeapCLRState = 2  

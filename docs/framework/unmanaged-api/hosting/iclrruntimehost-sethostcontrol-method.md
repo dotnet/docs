@@ -23,7 +23,7 @@ Sets the interface pointer that the common language runtime (CLR) can use to get
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetHostControl(  
     [in] IHostControl* pHostControl  
 );  

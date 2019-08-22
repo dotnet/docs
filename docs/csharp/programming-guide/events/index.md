@@ -39,8 +39,6 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
   
 - [How to:  Implement Interface Events](../../../csharp/programming-guide/events/how-to-implement-interface-events.md)  
   
-- [How to: Use a Dictionary to Store Event Instances](../../../csharp/programming-guide/events/how-to-use-a-dictionary-to-store-event-instances.md)  
-  
 - [How to: Implement Custom Event Accessors](../../../csharp/programming-guide/events/how-to-implement-custom-event-accessors.md)  
   
 ## C# Language Specification  

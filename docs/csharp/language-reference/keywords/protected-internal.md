@@ -25,7 +25,7 @@ class TestAccess
 {
     void Access()
     {
-        BaseClass baseObject = new BaseClass();
+        var baseObject = new BaseClass();
         baseObject.myValue = 5;
     }
 }
@@ -38,8 +38,8 @@ class DerivedClass : BaseClass
 {
     static void Main()
     {
-        BaseClass baseObject = new BaseClass();
-        DerivedClass derivedObject = new DerivedClass();
+        var baseObject = new BaseClass();
+        var derivedObject = new DerivedClass();
 
         // Error CS1540, because myValue can only be accessed by
         // classes derived from BaseClass.

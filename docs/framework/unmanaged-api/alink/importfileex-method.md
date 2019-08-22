@@ -22,7 +22,7 @@ Imports indicated assembly or unbound module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImportFileEx(  
     LPCWSTR pszFilename,  
     LPCWSTR pszTargetName,  

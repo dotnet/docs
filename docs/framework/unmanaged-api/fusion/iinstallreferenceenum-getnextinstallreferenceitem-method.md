@@ -23,7 +23,7 @@ Gets a pointer to the next [IInstallReferenceItem](../../../../docs/framework/un
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextInstallReferenceItem (  
     [out] IInstallReferenceItem **ppRefItem,  
     [in]  DWORD dwFlags,  

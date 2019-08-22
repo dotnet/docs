@@ -10,7 +10,7 @@ Gets the method start address and size given a relative virtual address (RVA) in
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeRange(  
    [in] ULONG32 codeRva,   
    [out] ULONG32* pCodeStartAddress,   

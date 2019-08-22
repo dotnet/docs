@@ -24,7 +24,7 @@ Fills the specified buffer with the binary representation of the executable file
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameGetBlob (  
     [in]  LPCWSTR    wszFilePath,  
     [in]  BYTE       *pbBlob,  

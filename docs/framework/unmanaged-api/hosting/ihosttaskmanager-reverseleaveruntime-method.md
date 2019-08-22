@@ -23,7 +23,7 @@ Notifies the host that control is leaving the common language runtime (CLR) and 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReverseLeaveRuntime ();  
 ```  
   

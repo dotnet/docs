@@ -23,7 +23,7 @@ Provides the on-disk file name of the symbol store.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymbolStoreFileName (  
     [in]  ULONG32 cchName,  
     [out] ULONG32 *pcchName,  

@@ -9,7 +9,7 @@ ms.assetid: 1f41d787-accb-4a10-bfc6-a807671d1581
 # How to: Import Custom Policy Assertions
 Policy assertions describe the capabilities and requirements of a service endpoint.  Client applications can use policy assertions in service metadata to configure the client binding or to customize the service contract for a service endpoint.  
   
- Custom policy assertions are imported by implementing the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface and passing that object to the metadata system or by registering the implementation type in your application configuration file.  Implementations of the <xref:System.ServiceModel.Description.IPolicyImportExtension> interface must provide a default constructor.  
+ Custom policy assertions are imported by implementing the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface and passing that object to the metadata system or by registering the implementation type in your application configuration file.  Implementations of the <xref:System.ServiceModel.Description.IPolicyImportExtension> interface must provide a parameterless constructor.  
   
 ### To import custom policy assertions  
   

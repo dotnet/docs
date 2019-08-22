@@ -22,7 +22,7 @@ Provides values that indicate the type linked in native code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum   
 {  
     nltNone       = 1,  

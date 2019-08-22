@@ -23,7 +23,7 @@ Sets the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetContext([in] CorDebugSetContextFlag flag,  
                    [in] ULONG32 contextSize,  
                    [in, size_is(contextSize)] BYTE context[]);  

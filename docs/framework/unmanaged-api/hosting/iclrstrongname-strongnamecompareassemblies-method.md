@@ -23,7 +23,7 @@ Determines whether two assemblies differ only by their strong name signatures.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameCompareAssemblies (  
     [in]  LPCWSTR   wszAssembly1,  
     [in]  LPCWSTR   wszAssembly2,  

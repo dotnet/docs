@@ -23,7 +23,7 @@ Gets the metadata token for the local variable signature of the function that is
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalVarSigToken (  
     [out] mdSignature *pmdSig  
 );  

@@ -23,7 +23,7 @@ Notifies the debugger that a common language runtime module (DLL) has been unloa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadModule (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugModule     *pModule  

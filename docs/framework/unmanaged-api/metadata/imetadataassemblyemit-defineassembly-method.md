@@ -23,7 +23,7 @@ Creates an `Assembly` structure containing metadata for the specified assembly a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineAssembly (  
     [in]  void                 *pbPublicKey,  
     [in]  ULONG                cbPublicKey,  

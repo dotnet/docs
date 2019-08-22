@@ -23,7 +23,7 @@ Notifies the profiler that a search has finished for a function that was compile
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITCachedFunctionSearchFinished(  
     [in] FunctionID        functionId,  
     [in] COR_PRF_JIT_CACHE result);  

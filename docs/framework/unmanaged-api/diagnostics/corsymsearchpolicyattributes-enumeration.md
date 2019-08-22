@@ -25,7 +25,7 @@ Specifies the policy to be used when doing a search for a symbol reader. These c
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSymSearchPolicyAttributes  
 {  
     AllowRegistryAccess      = 0x1,       

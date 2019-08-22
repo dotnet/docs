@@ -23,7 +23,7 @@ Gets the attribute flags for this variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAttributes(  
     [out, retval] ULONG32* pRetVal);  
 ```  

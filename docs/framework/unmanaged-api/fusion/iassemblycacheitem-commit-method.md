@@ -23,7 +23,7 @@ Commits the cached assembly reference to memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Commit (  
     [in] DWORD dwFlags,   
     [out, optional] ULONG *pulDisposition  

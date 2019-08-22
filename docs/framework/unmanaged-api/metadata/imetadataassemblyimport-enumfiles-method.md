@@ -23,7 +23,7 @@ Enumerates the files referenced in the current assembly manifest.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumFiles (  
     [in, out] HCORENUM    *phEnum,   
     [out] mdFile          rFiles[],   

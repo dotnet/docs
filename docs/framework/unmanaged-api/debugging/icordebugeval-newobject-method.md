@@ -25,7 +25,7 @@ Allocates a new object instance and calls the specified constructor method.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewObject (  
     [in] ICorDebugFunction  *pConstructor,  
     [in] ULONG32            nArgs,  

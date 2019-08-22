@@ -23,7 +23,7 @@ Gets the metadata associated with the generic parameter represented by the speci
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGenericParamProps (  
    [in]  mdGenericParam  gp,  
    [out] ULONG           *pulParamSeq,  

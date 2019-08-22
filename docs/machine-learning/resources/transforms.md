@@ -8,7 +8,12 @@ ms.date: 04/02/2019
 
 # Data transformations
 
-Data transformations are used to prepare data for model training. The transformations in this guide return classes that implement the [IEstimator](xref:Microsoft.ML.IEstimator%601) interface. Data transformations can be chained together. Each transformation both expects and produces data of specific types and formats, which are specified in the linked reference documentation.
+Data transformations are used to:
+- prepare data for model training
+- apply an imported model in TensorFlow or ONNX format
+- post-process data after it has been passed through a model
+
+The transformations in this guide return classes that implement the [IEstimator](xref:Microsoft.ML.IEstimator%601) interface. Data transformations can be chained together. Each transformation both expects and produces data of specific types and formats, which are specified in the linked reference documentation.
 
 Some data transformations require training data to calculate their parameters. For example: the <xref:Microsoft.ML.NormalizationCatalog.NormalizeMeanVariance%2A> transformer calculates the mean and variance of the training data during the `Fit()` operation, and uses those parameters in the `Transform()` operation. 
 
@@ -54,7 +59,7 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.TextCatalog.FeaturizeText*> | Transform a text column into a float array of normalized ngrams and char-grams counts | 
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoWords*> | Split one or more text columns into individual words |
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoCharactersAsKeys*> | Split one or more text columns into individual characters floats over a set of topics |
-| <xref:Microsoft.ML.TextCatalog.NormalizeText*> | Change case, remove diacritical marks, punctuation marks and numbers |
+| <xref:Microsoft.ML.TextCatalog.NormalizeText*> | Change case, remove diacritical marks, punctuation marks, and numbers |
 | <xref:Microsoft.ML.TextCatalog.ProduceNgrams*> | Transform text column into a bag of counts of ngrams (sequences of consecutive words)|
 | <xref:Microsoft.ML.TextCatalog.ProduceWordBags*> | Transform text column into a bag of counts of ngrams vector |
 | <xref:Microsoft.ML.TextCatalog.ProduceHashedNgrams*> | Transform text column into a vector of hashed ngram counts |
@@ -73,13 +78,25 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.ExtractPixels*> | Convert pixels from input image into a vector of numbers |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages*> | Load images from a folder into memory |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.ResizeImages*> | Resize images |
+| <xref:Microsoft.ML.OnnxCatalog.DnnFeaturizeImage*> | Applies a pre-trained deep neural network (DNN) model to transform an input image into a feature vector |
 
 ## Categorical data transformations
 
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding*> | Convert one or more text columns into [one-hot](https://en.wikipedia.org/wiki/One-hot) encoded vectors |
-| <xref:Microsoft.ML.CategoricalCatalog.OneHotHashEncoding*> | Convert one more text columns into hash-based one-hot encoded vectors |
+| <xref:Microsoft.ML.CategoricalCatalog.OneHotHashEncoding*> | Convert one or more text columns into hash-based one-hot encoded vectors |
+
+## Time series data transformations
+
+| Transform | Definition |
+| --- | --- |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectAnomalyBySrCnn*> | Detect anomalies in the input time series data using the Spectral Residual (SR) algorithm |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectChangePointBySsa*> | Detect change points in time series data using singular spectrum analysis (SSA) |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectIidChangePoint*> | Detect change points in independent and identically distributed (IID) time series data using adaptive kernel density estimations and martingale scores |
+| <xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa*> | Forecast time series data using singular spectrum analysis (SSA) |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectSpikeBySsa*> | Detect spikes in time series data using singular spectrum analysis (SSA) |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectIidSpike*> | Detect spikes in independent and identically distributed (IID) time series data using adaptive kernel density estimations and martingale scores |
 
 ## Missing values
 
@@ -94,6 +111,35 @@ Other data transformations don't require training data. For example: the <xref:M
 | --- | --- |
 | <xref:Microsoft.ML.FeatureSelectionCatalog.SelectFeaturesBasedOnCount*> | Select features whose non-default values are greater than a threshold |
 | <xref:Microsoft.ML.FeatureSelectionCatalog.SelectFeaturesBasedOnMutualInformation*> | Select the features on which the data in the label column is most dependent |
+
+## Feature transformations
+
+| Transform | Definition |
+| --- | --- |
+| <xref:Microsoft.ML.KernelExpansionCatalog.ApproximatedKernelMap*> | Map each input vector onto a lower dimensional feature space, where inner products approximate a kernel function, so that the features can be used as inputs to the linear algorithms |
+| <xref:Microsoft.ML.PcaCatalog.ProjectToPrincipalComponents*> | Reduce the dimensions of the input feature vector by applying the Principal Component Analysis algorithm |
+
+## Explainability transformations
+
+| Transform | Definition |
+| --- | --- |
+| <xref:Microsoft.ML.ExplainabilityCatalog.CalculateFeatureContribution*> | Calculate contribution scores for each element of a feature vector |
+
+## Calibration transformations
+
+| Transform | Definition |
+| --- | --- |
+|<xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Platt%28System.String%2CSystem.String%2CSystem.String%29> | Transforms a binary classifier raw score into a class probability using logistic regression with parameters estimated using the training data |
+| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Platt%28System.Double%2CSystem.Double%2CSystem.String%29> | Transforms a binary classifier raw score into a class probability using logistic regression with fixed parameters |
+| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Naive*> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, and calculating the probability based on the distribution among the bins |
+| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Isotonic*> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, where the position of boundaries and the size of bins are estimated using the training data  |
+
+## Deep learning transformations
+
+| Transform | Definition |
+| --- | --- |
+| <xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel*> | Transform the input data with an imported ONNX model |
+| <xref:Microsoft.ML.TensorflowCatalog.LoadTensorFlowModel*> | Transform the input data with an imported TensorFlow model |
 
 ## Custom transformations
 

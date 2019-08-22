@@ -23,7 +23,7 @@ Gets the simple, unencrypted name of the assembly referenced by this [IAssemblyN
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName (  
     [in, out] LPDWORD lpcwBuffer,  
     [out]     WCHAR *pwzName  

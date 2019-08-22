@@ -23,7 +23,7 @@ Gets the signature of this variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSignature(  
     [in]  ULONG32  cSig,  
     [out] ULONG32  *pcSig,  

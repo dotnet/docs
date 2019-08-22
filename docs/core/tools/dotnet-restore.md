@@ -37,13 +37,29 @@ The `dotnet restore` command uses NuGet to restore dependencies as well as proje
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *NuGet.config* configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own *NuGet.config* file in the project directory. You also specify additional feeds per invocation at a command prompt.
+To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *nuget.config* configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own *nuget.config* file in the project directory. You also specify additional feeds per invocation at a command prompt.
 
 For dependencies, you specify where the restored packages are placed during the restore operation using the `--packages` argument. If not specified, the default NuGet package cache is used, which is found in the `.nuget/packages` directory in the user's home directory on all operating systems. For example, */home/user1* on Linux or *C:\Users\user1* on Windows.
 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 
-The behavior of the `dotnet restore` command is affected by some of the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](/nuget/schema/nuget-config-file).
+### nuget.config differences
+
+The behavior of the `dotnet restore` command is affected by the settings in the *nuget.config* file, if present. For example, setting the `globalPackagesFolder` in *nuget.config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [nuget.config reference](/nuget/schema/nuget-config-file).
+
+There are three specific settings that `dotnet restore` ignores:
+
+* [bindingRedirects](/nuget/schema/nuget-config-file#bindingredirects-section)
+
+  Binding redirects don't work with `<PackageReference>` elements and .NET Core only supports `<PackageReference>` elements for NuGet packages.
+
+* [solution](/nuget/schema/nuget-config-file#solution-section)
+
+  This setting is Visual Studio specific and doesn't apply to .NET Core. .NET Core doesn't use a `packages.config` file and instead uses `<PackageReference>` elements for NuGet packages.
+
+* [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
+
+  This setting isn't applicable as [NuGet doesn't yet support cross-platform verification](https://github.com/NuGet/Home/issues/7939) of trusted packages.
 
 ## Implicit `dotnet restore`
 
@@ -73,7 +89,7 @@ Optional path to the project file to restore.
 
 `--configfile <FILE>`
 
-The NuGet configuration file (*NuGet.config*) to use for the restore operation.
+The NuGet configuration file (*nuget.config*) to use for the restore operation.
 
 `--disable-parallel`
 
@@ -109,7 +125,7 @@ Specifies a runtime for the package restore. This is used to restore packages fo
 
 `-s|--source <SOURCE>`
 
-Specifies a NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *NuGet.config* files. Multiple sources can be provided by specifying this option multiple times.
+Specifies a NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
 
 `--verbosity <LEVEL>`
 
@@ -123,7 +139,7 @@ Allows the command to stop and wait for user input or action (for example to com
 
 `--configfile <FILE>`
 
-The NuGet configuration file (*NuGet.config*) to use for the restore operation.
+The NuGet configuration file (*nuget.config*) to use for the restore operation.
 
 `--disable-parallel`
 
@@ -155,7 +171,7 @@ Specifies a runtime for the package restore. This is used to restore packages fo
 
 `-s|--source <SOURCE>`
 
-Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* files. Multiple sources can be provided by specifying this option multiple times.
+Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
 
 `--verbosity <LEVEL>`
 

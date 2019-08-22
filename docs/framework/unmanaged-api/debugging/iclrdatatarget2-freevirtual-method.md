@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) data access services to free memory 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FreeVirtual(  
     [in] CLRDATA_ADDRESS addr,  
     [in] ULONG32 size,  

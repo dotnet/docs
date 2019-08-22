@@ -26,7 +26,7 @@ Notifies the host that the currently executing task is about to leave the common
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LeaveRuntime (  
     [in] SIZE_T target  
 );  

@@ -23,7 +23,7 @@ Gets an enumerator for the memory ranges of the managed heap.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateHeapRegions(  
    [out] ICorDebugHeapSegmentEnum **ppRegions  
 );  

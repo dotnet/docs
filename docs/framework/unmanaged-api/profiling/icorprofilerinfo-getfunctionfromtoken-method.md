@@ -23,7 +23,7 @@ Gets the ID of a function. This method is obsolete in the .NET Framework version
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromToken(  
     [in]  ModuleID   moduleId,  
     [in]  mdToken    token,  

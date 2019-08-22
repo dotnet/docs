@@ -24,7 +24,7 @@ Creates a newly derived class object from a specified object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SpawnDerivedClass (
    [in] int                  vFunc, 
    [in] IWbemClassObject*    ptr, 

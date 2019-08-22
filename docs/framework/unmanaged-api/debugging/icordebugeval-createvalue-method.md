@@ -25,7 +25,7 @@ Creates a value of the specified type, with an initial value of zero or null.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateValue (  
     [in] CorElementType     elementType,  
     [in] ICorDebugClass     *pElementClass,  

@@ -23,7 +23,7 @@ Gets the ID of the application domain in which the specified thread is currently
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadAppDomain(  
     [in]  ThreadID threadId,  
     [out] AppDomainID *pAppDomainId);  

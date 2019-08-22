@@ -9,10 +9,10 @@ Containers provide many benefits, one of which is portability. You can easily ta
 
 ## Azure Container Registry
 
-Azure Container Registry lets you build, store, and manage images for all of your container deployments. You can [create a container registry using the Azure Portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) or [using the Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli) or [PowerShell tools](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Creating a new container registry just requires an Azure subscription, a resource group, and a unique name. Figure 2-x shows the basic options for creating a registry, which will be hosted at *registryname*.azurecr.io.
+Azure Container Registry lets you build, store, and manage images for all of your container deployments. You can [create a container registry using the Azure Portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) or [using the Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli) or [PowerShell tools](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Creating a new container registry just requires an Azure subscription, a resource group, and a unique name. Figure 2-13 shows the basic options for creating a registry, which will be hosted at *registryname*.azurecr.io.
 
-![Create container registry](media/create-container-registry.png)
-**Figure 2-x**. Create container registry
+![Create container registry](media/create-container-registry.png) \
+**Figure 2-13**. Create container registry
 
 Once you've created a registry, you'll need to authenticate with it before you can use it. Typically, you'll log into the registry using the Azure CLI command:
 
@@ -40,10 +40,10 @@ docker rmi myregistry.azurecr.io/mycontainer:v1
 
 ### Integrating Azure DevOps
 
-Ideally, developers will rarely push directly from their machines to a container registry. Instead, developers should build and test locally, and then commit their code into a source control repository like GitHub or Azure DevOps. From there, a continuous integration process will run a build to ensure the code compiles and passes a suite of automated tests. Assuming these conditions are met, a release pipeline will create a new container instance, tag it, and deploy it automatically to a container registry. Figure 2-x demonstrates a development process that takes advantage of Azure DevOps for Continuous Integration (CI) and Continuous Deployment (CD) to a variety of Azure container hosting options.
+Ideally, developers will rarely push directly from their machines to a container registry. Instead, developers should build and test locally, and then commit their code into a source control repository like GitHub or Azure DevOps. From there, a continuous integration process will run a build to ensure the code compiles and passes a suite of automated tests. Assuming these conditions are met, a release pipeline will create a new container instance, tag it, and deploy it automatically to a container registry. Figure 2-14 demonstrates a development process that takes advantage of Azure DevOps for Continuous Integration (CI) and Continuous Deployment (CD) to a variety of Azure container hosting options.
 
 ![Azure DevOps Container Deployment](media/azure-devops-container-deployment.png)
-**Figure 2-x**. Azure DevOps Container Deployment
+**Figure 2-14**. Azure DevOps Container Deployment
 
 ## Azure Kubernetes Service
 
@@ -68,10 +68,10 @@ This information is sufficient to get started. As part of the creation process i
 - Monitoring
 - Tags
 
-Figure 2-x shows the basic form requirements in the Azure Portal to create a new Kubernetes cluster.
+Figure 2-15 shows the basic form requirements in the Azure Portal to create a new Kubernetes cluster.
 
-![Create Kubernetes cluster](media/create-kubernetes-cluster.png)
-**Figure 2-x**. Create Kubernetes cluster
+![Create Kubernetes cluster](media/create-kubernetes-cluster.png) \
+**Figure 2-15**. Create Kubernetes cluster
 
 ## Azure Dev Spaces
 
@@ -96,10 +96,10 @@ All of these steps can be performed using the Azure CLI and new  `azds` command 
 az aks use-dev-spaces -g my-aks-resource-group -n MyAKSCluster
 ```
 
-Next, you can use the `azds prep` command to generate the necessary Docker and Helm chart assets for running the application. Then you run your code in AKS using `azds up`. The first time you run this command, the Helm chart will be installed, and the container(s) will be built and deployed according to your instructions. This may take a few minutes the first time it's run. However, after you make changes, you can connect to your own child dev space using `azds space select` and then deploy and debug your updates in your isolated child dev space. Once you have your dev space up and running, you can send updates to it by re-issuing the `azds up` command or you can use built-in tooling in Visual Studio or Visual Studio Code. With VS Code, you use the command palette to connect to your dev space. Figure 2-x shows how to launch your web application using Azure Dev Spaces in Visual Studio.
+Next, you can use the `azds prep` command to generate the necessary Docker and Helm chart assets for running the application. Then you run your code in AKS using `azds up`. The first time you run this command, the Helm chart will be installed, and the container(s) will be built and deployed according to your instructions. This may take a few minutes the first time it's run. However, after you make changes, you can connect to your own child dev space using `azds space select` and then deploy and debug your updates in your isolated child dev space. Once you have your dev space up and running, you can send updates to it by re-issuing the `azds up` command or you can use built-in tooling in Visual Studio or Visual Studio Code. With VS Code, you use the command palette to connect to your dev space. Figure 2-16 shows how to launch your web application using Azure Dev Spaces in Visual Studio.
 
 ![Connect to Azure Dev Spaces in Visual Studio](media/azure-dev-spaces-visual-studio-launchsettings.png)
-**Figure 2-x**. Connect to Azure Dev Spaces in Visual Studio
+**Figure 2-16**. Connect to Azure Dev Spaces in Visual Studio
 
 ## References
 

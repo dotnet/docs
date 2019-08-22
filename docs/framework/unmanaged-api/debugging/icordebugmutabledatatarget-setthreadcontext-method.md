@@ -10,7 +10,7 @@ Sets the context (register values) for a thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetThreadContext(  
    [in] DWORD dwThreadID,  
    [in] ULONG32 contextSize,   [in, size_is(contextSize)] const BYTE * pContext);  

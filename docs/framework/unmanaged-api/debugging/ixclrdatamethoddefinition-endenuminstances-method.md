@@ -24,7 +24,7 @@ Releases the resources used by internal iterators used during instance enumerati
 
 ## Syntax
 
-```
+```cpp
 HRESULT EndEnumInstances(
     [in] CLRDATA_ENUM handle
 );

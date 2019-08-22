@@ -23,7 +23,7 @@ Gets the operating system identifier for the current thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentThreadID (  
     [out] ULONG32    *threadID  
 );  

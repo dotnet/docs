@@ -22,7 +22,7 @@ Provides values that specify attributes of a section for use by the [ICeeGen](..
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  {  
     sdNone      = 0,  
     sdReadOnly  = IMAGE_SCN_CNT_INITIALIZED_DATA |  

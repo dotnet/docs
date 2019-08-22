@@ -23,7 +23,7 @@ Gets a handle to the process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandle([out] HPROCESS *phProcessHandle);  
 ```  
   

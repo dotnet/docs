@@ -23,7 +23,7 @@ Modifies the specified `File` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFileProps (  
     [in] mdFile        file,  
     [in] const void    *pbHashValue,   

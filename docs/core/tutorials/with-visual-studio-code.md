@@ -62,7 +62,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 3. To open the Debug view, click on the Debugging icon on the left side menu.
 
-    ![Open the Debug tab in Visual Studio Codee](media/with-visual-studio-code/open-debug-tab.png)
+    ![Open the Debug tab in Visual Studio Code](media/with-visual-studio-code/open-debug-tab.png)
 
 4. Locate the green arrow at the top of the pane. Make sure the drop-down next to it has `.NET Core Launch (console)` selected.
 

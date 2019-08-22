@@ -22,7 +22,7 @@ Provides statistics about the garbage collection mechanism of the common languag
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_GC_STATS {  
     ULONG   Flags;   
     SIZE_T  ExplicitGCCount;  
@@ -65,7 +65,7 @@ typedef struct _COR_GC_STATS {
   
  An example of the usage is as follows:  
   
-```  
+```cpp  
 COR_GC_STATS GCStats;  
 GCStats.Flags = COR_GC_COUNTS | COR_GC_MEMORYUSAGE;  
 pCLRGCManager->GetStats(&GCStats);  

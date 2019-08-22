@@ -23,7 +23,7 @@ Gets the metadata token for this function.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetToken (  
     [out] mdMethodDef *pMethodDef  
 );  

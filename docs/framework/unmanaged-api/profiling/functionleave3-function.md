@@ -22,7 +22,7 @@ Notifies the profiler that control is being returned from a function.
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);  
 ```  
   

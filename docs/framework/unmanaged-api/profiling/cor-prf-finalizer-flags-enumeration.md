@@ -22,7 +22,7 @@ Describes the finalizer for an object.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_FINALIZER_CRITICAL = 0x1  
 } COR_PRF_FINALIZER_FLAGS;  

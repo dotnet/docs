@@ -23,19 +23,19 @@ XML doc comments can be declared above a namespace, but they're ignored. Compile
 
 Namespaces can be declared explicitly with the namespace keyword, or implicitly when declaring a module. To declare a namespace explicitly, use the namespace keyword followed by the namespace name. The following example shows a code file that declares a namespace `Widgets` with a type and a module included in that namespace.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6406.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6406.fs)]
 
 If the entire contents of the file are in one module, you can also declare namespaces implicitly by using the `module` keyword and providing the new namespace name in the fully qualified module name. The following example shows a code file that declares a namespace `Widgets` and a module `WidgetsModule`, which contains a function.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6401.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6401.fs)]
 
 The following code is equivalent to the preceding code, but the module is a local module declaration. In that case, the namespace must appear on its own line.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/namespaces/snippet6402.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/namespaces/snippet6402.fs)]
 
 If more than one module is required in the same file in one or more namespaces, you must use local module declarations. When you use local module declarations, you cannot use the qualified namespace in the module declarations. The following code shows a file that has a namespace declaration and two local module declarations. In this case, the modules are contained directly in the namespace; there is no implicitly created module that has the same name as the file. Any other code in the file, such as a `do` binding, is in the namespace but not in the inner modules, so you need to qualify the module member `widgetFunction` by using the module name.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6403.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6403.fs)]
 
 The output of this example is as follows.
 
@@ -52,7 +52,7 @@ When you create a nested namespace, you must fully qualify it. Otherwise, you cr
 
 The following example shows how to declare a nested namespace.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6404.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6404.fs)]
 
 ## Namespaces in Files and Assemblies
 
@@ -62,11 +62,11 @@ Namespaces can span multiple files in a single project or compilation. The term 
 
 You use the predefined namespace `global` to put names in the .NET top-level namespace.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6407.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6407.fs)]
 
 You can also use global to reference the top-level .NET namespace, for example, to resolve name conflicts with other namespaces.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6408.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6408.fs)]
 
 ## Recursive namespaces
 

@@ -1,4 +1,4 @@
-### ConcurrentQueue\<T>.TryPeek can return an erroneous null via its out parameter
+### ConcurrentQueue&lt;T&gt;.TryPeek can return an erroneous null via its out parameter
 
 |   |   |
 |---|---|

@@ -22,7 +22,7 @@ It is sometimes necessary to compare two values for equality. In some cases, you
 
 ## Value equality
 
- Value equality means that two objects contain the same value or values. For primitive value types such as [int](../../../csharp/language-reference/keywords/int.md) or [bool](../../../csharp/language-reference/keywords/bool.md), tests for value equality are straightforward. You can use the [==](../../../csharp/language-reference/operators/equality-operators.md#equality-operator-) operator, as shown in the following example.  
+ Value equality means that two objects contain the same value or values. For primitive value types such as [int](../../../csharp/language-reference/builtin-types/integral-numeric-types.md) or [bool](../../../csharp/language-reference/keywords/bool.md), tests for value equality are straightforward. You can use the [==](../../../csharp/language-reference/operators/equality-operators.md#equality-operator-) operator, as shown in the following example.  
   
 ```csharp  
 int a = GetOriginalValue();  
@@ -41,7 +41,7 @@ if( b == a)
   
 ### Value equality for floating-point values
 
- Equality comparisons of floating-point values ([double](../../../csharp/language-reference/keywords/double.md) and [float](../../../csharp/language-reference/keywords/float.md)) are problematic because of the imprecision of floating-point arithmetic on binary computers. For more information, see the remarks in the topic <xref:System.Double?displayProperty=nameWithType>.  
+ Equality comparisons of floating-point values ([double](../../../csharp/language-reference/builtin-types/floating-point-numeric-types.md) and [float](../../../csharp/language-reference/builtin-types/floating-point-numeric-types.md)) are problematic because of the imprecision of floating-point arithmetic on binary computers. For more information, see the remarks in the topic <xref:System.Double?displayProperty=nameWithType>.  
   
 ## Related topics  
   

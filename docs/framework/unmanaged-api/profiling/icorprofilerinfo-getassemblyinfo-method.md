@@ -23,7 +23,7 @@ Accepts an assembly ID, and returns the assembly's name and the ID of its manife
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyInfo(  
     [in]  AssemblyID  assemblyId,  
     [in]  ULONG       cchName,  

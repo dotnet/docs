@@ -10,7 +10,7 @@ Defines the Authenticode signer information.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {  
     DWORD cbSize;  
     HRESULT dwError;  

@@ -22,7 +22,7 @@ Retrieves Win32 resource blob. Call this method after setting assembly options.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetWin32ResBlob(  
     mdAssembly    AssemblyID,  
     mdToken       FileToken,  

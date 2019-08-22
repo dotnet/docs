@@ -22,7 +22,7 @@ Notifies the profiler that the currently executing function is about to perform 
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionTailcall3WithInfo(  
                [in] FunctionIDOrClientID functionIDOrClientID,  
                [in] COR_PRF_ELT_INFO eltInfo);  

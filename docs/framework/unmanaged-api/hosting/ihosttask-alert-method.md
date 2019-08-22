@@ -23,7 +23,7 @@ Requests that the host wake the task represented by the current [IHostTask](../.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Alert ();  
 ```  
   

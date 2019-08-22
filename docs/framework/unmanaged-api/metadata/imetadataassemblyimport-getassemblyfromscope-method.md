@@ -23,7 +23,7 @@ Gets a pointer to the assembly in the current scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyFromScope (  
     [out] mdAssembly  *ptkAssembly  
 );  

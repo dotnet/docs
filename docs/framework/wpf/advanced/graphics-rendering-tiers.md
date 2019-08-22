@@ -28,29 +28,29 @@ A rendering tier defines a level of graphics hardware capability and performance
 ## Rendering Tier Definitions  
  The features of the graphics hardware determine the rendering capability of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] system defines three rendering tiers:  
   
-- **Rendering Tier 0** No graphics hardware acceleration. All graphics features use software acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is less than version 9.0.  
+- **Rendering Tier 0** No graphics hardware acceleration. All graphics features use software acceleration. The DirectX version level is less than version 9.0.  
   
-- **Rendering Tier 1** Some graphics features use graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 9.0.  
+- **Rendering Tier 1** Some graphics features use graphics hardware acceleration. The DirectX version level is greater than or equal to version 9.0.  
   
-- **Rendering Tier 2** Most graphics features use graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 9.0.  
+- **Rendering Tier 2** Most graphics features use graphics hardware acceleration. The DirectX version level is greater than or equal to version 9.0.  
   
  The <xref:System.Windows.Media.RenderCapability.Tier%2A?displayProperty=nameWithType> property allows you to retrieve the rendering tier at application run time. You use the rendering tier to determine whether the device supports certain hardware-accelerated graphics features. Your application can then take different code paths at run time depending on the rendering tier supported by the device.  
   
 ### Rendering Tier 0  
- A rendering tier value of 0 means that there is no graphics hardware acceleration available for the application on the device. At this tier level, you should assume that all graphics will be rendered by software with no hardware acceleration. This tier's functionality corresponds to a [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version that is less than 9.0.  
+ A rendering tier value of 0 means that there is no graphics hardware acceleration available for the application on the device. At this tier level, you should assume that all graphics will be rendered by software with no hardware acceleration. This tier's functionality corresponds to a DirectX version that is less than 9.0.  
   
 ### Rendering Tier 1 and Rendering Tier 2  
   
 > [!NOTE]
->  Starting in the .NET Framework 4, rendering tier 1 has been redefined to only include graphics hardware that supports [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 9.0 or greater. Graphics hardware that supports [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] 7 or 8 is now defined as rendering tier 0.  
+>  Starting in the .NET Framework 4, rendering tier 1 has been redefined to only include graphics hardware that supports DirectX 9.0 or greater. Graphics hardware that supports DirectX 7 or 8 is now defined as rendering tier 0.  
   
- A rendering tier value of 1 or 2 means that most of the graphics features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] will use hardware acceleration if the necessary system resources are available and have not been exhausted. This corresponds to a [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version that is greater than or equal to 9.0.  
+ A rendering tier value of 1 or 2 means that most of the graphics features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] will use hardware acceleration if the necessary system resources are available and have not been exhausted. This corresponds to a DirectX version that is greater than or equal to 9.0.  
   
  The following table shows the differences in graphics hardware requirements for rendering tier 1 and rendering tier 2:  
   
 |Feature|Tier 1|Tier 2|  
 |-------------|------------|------------|  
-|[!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version|Must be greater than or equal to 9.0.|Must be greater than or equal to 9.0.|  
+|DirectX version|Must be greater than or equal to 9.0.|Must be greater than or equal to 9.0.|  
 |Video RAM|Must be greater than or equal to 60MB.|Must be greater than or equal to 120MB.|  
 |Pixel shader|Version level must greater than or equal to 2.0.|Version level must greater than or equal to 2.0.|  
 |Vertex shader|No requirement.|Version level must greater than or equal to 2.0.|  
@@ -95,14 +95,14 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Setting|Description|  
 |-------------|-----------------|  
 |**Disable Hardware Acceleration Option**|Specifies whether hardware acceleration should be enabled.|  
-|**Maximum Multisample Value**|Specifies the degree of multisampling for antialiasing [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] content.|  
+|**Maximum Multisample Value**|Specifies the degree of multisampling for antialiasing 3-D content.|  
 |**Required Video Driver Date Setting**|Specifies whether the system disables hardware acceleration for drivers released before November 2004.|  
 |**Use Reference Rasterizer Option**|Specifies whether [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] should use the reference rasterizer.|  
   
  These settings can be accessed by any external configuration utility that knows how to reference the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] registry settings. These settings can also be created or modified by accessing the values directly by using the [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Registry Editor. For more information, see [Graphics Rendering Registry Settings](../graphics-multimedia/graphics-rendering-registry-settings.md).  
   
 ### WPF Performance Profiling Tools  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a suite of performance profiling tools that allow you to analyze the run-time behavior of your application and determine the types of performance optimizations you can apply. The following table lists the performance profiling tools that are included in the [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)] tool, WPF Performance Suite:  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a suite of performance profiling tools that allow you to analyze the run-time behavior of your application and determine the types of performance optimizations you can apply. The following table lists the performance profiling tools that are included in the Windows SDK tool, WPF Performance Suite:  
   
 |Tool|Description|  
 |----------|-----------------|  
@@ -112,11 +112,11 @@ A rendering tier defines a level of graphics hardware capability and performance
  The WPF Performance Suite provides a rich, graphical view of performance data. For more information about WPF performance tools, see [WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100)).  
   
 ### DirectX Diagnostic Tool  
- The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] Diagnostic Tool, Dxdiag.exe, is designed to help you troubleshoot [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)]-related issues. The default installation folder for the [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] Diagnostic Tool is:  
+ The DirectX Diagnostic Tool, Dxdiag.exe, is designed to help you troubleshoot DirectX-related issues. The default installation folder for the DirectX Diagnostic Tool is:  
   
  `~\Windows\System32`  
   
- When you run the [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] Diagnostic Tool, the main window contains a set of tabs that allow you to display and diagnose [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)]-related information. For example, the **System** tab provides system information about your computer and specifies the version of [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] that is installed on your computer.  
+ When you run the DirectX Diagnostic Tool, the main window contains a set of tabs that allow you to display and diagnose DirectX-related information. For example, the **System** tab provides system information about your computer and specifies the version of DirectX that is installed on your computer.  
   
  ![Screenhot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
 DirectX Diagnostic Tool main window  

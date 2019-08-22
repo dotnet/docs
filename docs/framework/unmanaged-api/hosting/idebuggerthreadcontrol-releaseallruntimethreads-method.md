@@ -23,7 +23,7 @@ Notifies the host that the debugging services are about to release all threads t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReleaseAllRuntimeThreads ( );  
 ```  
   

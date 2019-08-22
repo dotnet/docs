@@ -23,7 +23,7 @@ Writes data from the specified buffer to the specified virtual memory address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WriteVirtual (  
     [in] CLRDATA_ADDRESS    address,  
     [in, size_is(bytesRequested)]   

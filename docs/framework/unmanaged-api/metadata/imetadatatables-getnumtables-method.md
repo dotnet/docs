@@ -23,7 +23,7 @@ Gets the number of tables in the scope of the current `IMetaDataTables` instance
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNumTables (  
     [out]  ULONG   *pcTables  
 );  

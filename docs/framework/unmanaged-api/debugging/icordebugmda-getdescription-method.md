@@ -23,7 +23,7 @@ Gets a string containing the description of the managed debugging assistant (MDA
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDescription (  
     [in] ULONG32   cchName,  
     [out] ULONG32  *pcchName,  

@@ -14,7 +14,7 @@ The following table shows reference topics that provide tables of keywords, symb
 |Title|Description|
 |-----|-----------|
 |[Keyword Reference](keyword-reference.md)|Contains links to information about all F# language keywords.|
-|[Symbol and Operator Reference](symbol-and-operator-reference/index.md)|Contains a table of symbols and operators that are used in the F# language.|
+|[Symbol and Operator Reference](./symbol-and-operator-reference/index.md)|Contains a table of symbols and operators that are used in the F# language.|
 |[Literals](literals.md)|Describes the syntax for literal values in F# and how to specify type information for F# literals.|
 
 ## F# Language Concepts
@@ -23,12 +23,12 @@ The following table shows reference topics available that describe language conc
 
 |Title|Description|
 |-----|-----------|
-|[Functions](functions/index.md)|Functions are the fundamental unit of program execution in any programming language. As in other languages, an F# function has a name, can have parameters and take arguments, and has a body. F# also supports functional programming constructs such as treating functions as values, using unnamed functions in expressions, composition of functions to form new functions, curried functions, and the implicit definition of functions by way of the partial application of function arguments.|
+|[Functions](./functions/index.md)|Functions are the fundamental unit of program execution in any programming language. As in other languages, an F# function has a name, can have parameters and take arguments, and has a body. F# also supports functional programming constructs such as treating functions as values, using unnamed functions in expressions, composition of functions to form new functions, curried functions, and the implicit definition of functions by way of the partial application of function arguments.|
 |[F# Types](fsharp-types.md)|Describes the types that are used in F# and how F# types are named and described.|
 |[Type Inference](type-inference.md)|Describes how the F# compiler infers the types of values, variables, parameters and return values.|
-|[Automatic Generalization](generics/automatic-generalization.md)|Describes generic constructs in F#.|
+|[Automatic Generalization](./generics/automatic-generalization.md)|Describes generic constructs in F#.|
 |[Inheritance](inheritance.md)|Describes inheritance, which is used to model the "is-a" relationship, or subtyping, in object-oriented programming.|
-|[Members](members/index.md)|Describes members of F# object types.|
+|[Members](./members/index.md)|Describes members of F# object types.|
 |[Parameters and Arguments](Parameters-and-Arguments.md)|Describes language support for defining parameters and passing arguments to functions, methods, and properties. It includes information about how to pass by reference.|
 |[Operator Overloading](operator-overloading.md)|Describes how to overload arithmetic operators in a class or record type, and at the global level.|
 |[Casting and Conversions](casting-and-conversions.md)|Describes support for type conversions in F#.|
@@ -36,7 +36,7 @@ The following table shows reference topics available that describe language conc
 |[Pattern Matching](pattern-matching.md)|Describes patterns, which are rules for transforming input data that are used throughout the F# language to extract compare data with a pattern, decompose data into constituent parts, or extract information from data in various ways.|
 |[Active Patterns](active-patterns.md)|Describes active patterns. Active patterns enable you to define named partitions that subdivide input data. You can use active patterns to decompose data in a customized manner for each partition.|
 |[Assertions](assertions.md)|Describes the `assert` expression, which is a debugging feature that you can use to test an expression. Upon failure in Debug mode, an assertion generates a system error dialog box.|
-|[Exception Handling](exception-handling/index.md)|Contains information about exception handling support in the F# language.|
+|[Exception Handling](/.exception-handling/index.md)|Contains information about exception handling support in the F# language.|
 |[attributes](attributes.md)|Describes attributes, which enable metadata to be applied to a programming construct.|
 |[Resource Management: The `use` Keyword](resource-management-the-use-keyword.md)|Describes the keywords `use` and `using`, which can control the initialization and release of resources|
 |[namespaces](namespaces.md)|Describes namespace support in F#. A namespace lets you organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.|
@@ -52,7 +52,7 @@ The following table shows reference topics available that describe types support
 
 |Title|Description|
 |-----|-----------|
-|[values](values/index.md)|Describes values, which are immutable quantities that have a specific type; values can be integral or floating point numbers, characters or text, lists, sequences, arrays, tuples, discriminated unions, records, class types, or function values.|
+|[values](./values/index.md)|Describes values, which are immutable quantities that have a specific type; values can be integral or floating point numbers, characters or text, lists, sequences, arrays, tuples, discriminated unions, records, class types, or function values.|
 |[Basic Types](basic-types.md)|Describes the fundamental basic types that are used in the F# language. It also provides the corresponding .NET types and the minimum and maximum values for each type.|
 |[Unit Type](unit-type.md)|Describes the `unit` type, which is a type that indicates the absence of a specific value; the `unit` type has only a single value, which acts as a placeholder when no other value exists or is needed.|
 |[Strings](strings.md)|Describes strings in F#. The `string` type represents immutable text, as a sequence of Unicode characters. `string` is an alias for `System.String` in the .NET Framework.|

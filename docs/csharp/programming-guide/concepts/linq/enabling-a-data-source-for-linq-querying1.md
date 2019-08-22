@@ -1,5 +1,5 @@
 ---
-title: "Enabling a Data Source for LINQ Querying1"
+title: "Enabling a Data Source for LINQ Querying"
 ms.date: 07/20/2015
 ms.assetid: d2ef04a5-31a6-45cb-af9a-a5ce7732662c
 ---

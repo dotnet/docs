@@ -23,7 +23,7 @@ Gets the operating system (OS) thread identifier upon which the managed debuggin
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetOSThreadId (  
     [out] DWORD    *pOsTid  
 );  

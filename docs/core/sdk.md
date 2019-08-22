@@ -1,7 +1,7 @@
 ---
 title: .NET Core SDK overview
 description: Find out about the .NET Core SDK, which is a set of libraries and tools used to create .NET Core projects.
-ms.date: 05/13/2019
+ms.date: 07/31/2019
 ms.technology: dotnet-cli
 ---
 # .NET Core SDK overview
@@ -11,7 +11,7 @@ and libraries. It contains the following components that are used to build and r
 
 - The .NET Core CLI tools.
 - .NET Core libraries and runtime.
-- The `dotnet` [driver](/tools/index.md#driver).
+- The `dotnet` [driver](tools/index.md#driver).
 
 ## Acquiring the .NET Core SDK
 
@@ -33,11 +33,11 @@ caveat above). You can find more information in the [install script reference](t
 interested in how to set up the SDK on your CI build server, see the [Using .NET Core SDK and tools in Continuous Integration (CI)](tools/using-ci-with-cli.md) article.
 
 By default, the SDK installs in a "side-by-side" (SxS) manner, which means multiple versions of the CLI tools 
-can coexist at any given time on a single machine. How the version gets picked when you're running CLI commands is explained in more detail in the [Select the .NET Core version to use](/versions/selection.md) article.
+can coexist at any given time on a single machine. How the version gets picked when you're running CLI commands is explained in more detail in the [Select the .NET Core version to use](versions/selection.md) article.
 
 ## See also
 
 - [.NET Core CLI](tools/index.md)
-- [.NET Core versioning overview](/versions/index.md)
+- [.NET Core versioning overview](versions/index.md)
 - [How to remove the .NET Core runtime and SDK](versions/remove-runtime-sdk-versions.md)
-- [Select the .NET Core version to use](/versions/selection.md)
+- [Select the .NET Core version to use](versions/selection.md)

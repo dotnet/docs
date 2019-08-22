@@ -23,7 +23,7 @@ You can perform physical paging by using the SKIP sub-clause in the ORDER BY cla
 >  An [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query is invalid if both the TOP modifier and the SKIP sub-clause are present in the same query expression. The query should be rewritten by changing the TOP expression to the LIMIT expression.  
   
 > [!NOTE]
->  In [!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)], using SKIP with ORDER BY on non-key columns might return incorrect results. More than the specified number of rows might be skipped if the non-key column has duplicate data in it. This is due to how SKIP is translated for [!INCLUDE[ssVersion2000](../../../../../../includes/ssversion2000-md.md)]. For example, in the following code more than five rows might be skipped if `E.NonKeyColumn` has duplicate values:  
+>  In SQL Server 2000, using SKIP with ORDER BY on non-key columns might return incorrect results. More than the specified number of rows might be skipped if the non-key column has duplicate data in it. This is due to how SKIP is translated for SQL Server 2000. For example, in the following code more than five rows might be skipped if `E.NonKeyColumn` has duplicate values:  
 >   
 >  `SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP 5L`  
   

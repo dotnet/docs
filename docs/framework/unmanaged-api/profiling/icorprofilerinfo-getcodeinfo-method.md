@@ -25,7 +25,7 @@ Gets the extent of native code associated with the specified function ID.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeInfo(  
     [in]  FunctionID functionId,  
     [out] LPCBYTE    *pStart,  

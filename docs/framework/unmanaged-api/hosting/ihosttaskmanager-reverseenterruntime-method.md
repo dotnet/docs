@@ -23,7 +23,7 @@ Notifies the host that a call is being made into the common language runtime (CL
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReverseEnterRuntime ();  
 ```  
   

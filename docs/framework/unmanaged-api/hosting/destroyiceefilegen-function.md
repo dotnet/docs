@@ -26,7 +26,7 @@ Destroys an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceef
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DestroyICeeFileGen (  
     [in] ICeeFileGen  **ceeFileGen  
 );  

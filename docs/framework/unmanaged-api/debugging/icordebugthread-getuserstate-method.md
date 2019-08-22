@@ -23,7 +23,7 @@ Gets the current user state of this ICorDebugThread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserState (  
     [out] CorDebugUserState   *pState  
 );  

@@ -9,6 +9,71 @@
             "redirect_url": "/dotnet/standard/components"
         },
         {
+            "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
+            "redirect_url": "/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/deploy-existing-net-apps-as-windows-containers.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/deploy-existing-net-apps-as-windows-containers"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/how-to-deploy-existing-net-apps-to-azure-app-service.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-instances-ACI"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/index.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/index"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-with-monitoring-and-telemetry.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/what-about-cloud-optimized-applications.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/what-about-cloud-native-applications"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-not-to-deploy-to-windows-containers.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-not-to-deploy-to-windows-containers"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers//modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-service-fabric.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-service-fabric"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/microsoft-technologies-in-cloud-devops-ready-applications.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
+        },
+        {
             "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
             "redirect_url": "/dotnet/core/tools/dotnet-nuget-delete"
         },
@@ -241,8 +306,12 @@
             "redirect_url": "/dotnet/core/tutorials"
         },
         {
+            "source_path": "docs/core/tutorials/create-custom-template.md",
+            "redirect_url": "/dotnet/core/tutorials/cli-templates-create-item-template"
+        },
+        {
             "source_path": "docs/core/tutorials/libraries-with-vs.md",
-            "redirect_url": "/dotnet/csharp/getting-started/library-with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
         },
         {
             "source_path": "docs/core/tutorials/target-dotnetcore-with-msbuild.md",
@@ -337,7 +406,7 @@
         },
         {
             "source_path": "docs/csharp/getting-started/library-with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/getting-started/library-with-visual-studio",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio",
             "redirect_document_id": true
         },
         {
@@ -415,12 +484,36 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-conversion-operators#as-operator"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/byte.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/conversion-keywords.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/explicit"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/decimal.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/delegate.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/double.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/dynamic.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/exception-handling-statements.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/statement-keywords"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/explicit.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/false.md",
@@ -429,6 +522,30 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/false-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/float.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/floating-point-types-table.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/global.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/namespace-alias-qualifier"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/implicit.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/int.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/integral-types-table.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/interpolated-strings.md",
@@ -447,12 +564,36 @@
             "redirect_url": "/dotnet/csharp/language-reference/keywords/null"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/long.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/modifiers.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/nameof.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/nameof"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/namespace-keywords.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/namespace"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/new.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/new-operator"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/new-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/new-operator"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/object.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/operator-overloading"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/operator-keywords.md",
@@ -463,12 +604,28 @@
             "redirect_url": "/dotnet/csharp/language-reference/keywords"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/sbyte.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/selection-statements.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/statement-keywords"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/short.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/sizeof.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/sizeof"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/stackalloc.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/stackalloc"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/string.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true.md",
@@ -476,6 +633,10 @@
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true-false-operators.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/true-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
         },
         {
@@ -487,8 +648,16 @@
             "redirect_url": "/dotnet/csharp/language-reference/keywords"
         },
         {
-            "source_path": "docs/csharp/language-reference/keywords/true-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
+            "source_path": "docs/csharp/language-reference/keywords/uint.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/ushort.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/ulong.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
         },
         {
             "source_path": "docs/csharp/language-reference/language-specification/index.md",
@@ -621,6 +790,10 @@
         {
             "source_path": "docs/csharp/language-reference/operators/multiplication-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#multiplication-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/namespace-alias-qualifer.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/namespace-alias-qualifier"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/not-equal-operator.md",
@@ -829,6 +1002,10 @@
             "redirect_url": "/dotnet/api/system.componentmodel.backgroundworker"
         },
         {
+            "source_path": "docs/csharp/programming-guide/events/how-to-use-a-dictionary-to-store-event-instances.md",
+            "redirect_url": "/dotnet/standard/events/how-to-handle-multiple-events-using-event-properties"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/exceptions/exceptions-and-exception-handling.md",
             "redirect_url": "/dotnet/csharp/programming-guide/exceptions/index"
         },
@@ -839,7 +1016,7 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/default",
             "redirect_document_id": true
         },
         {
@@ -947,8 +1124,36 @@
             "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
         },
         {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/delegate-operator"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/conversion-operators.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/default-value-expressions.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/default"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/operator-overloading"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/overloadable-operators.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/operator-overloading#overloadable-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
         },
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-compare-strings.md",
@@ -1101,6 +1306,10 @@
         {
             "source_path": "docs/csharp/roslyn/index.md",
             "redirect_url": "/dotnet/csharp/roslyn-sdk/"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/exploration/csharp-7.yml",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
         },
         {
             "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings-local.md",
@@ -1265,6 +1474,31 @@
         {
             "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
             "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
+        },
+        {
+            "source_path" : "docs/framework/interop/com-wrappers.md",
+            "redirect_url": "/dotnet/standard/native-interop/com-wrappers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path" : "docs/framework/interop/com-callable-wrapper.md",
+            "redirect_url": "/dotnet/standard/native-interop/com-callable-wrapper",
+            "redirect_document_id": true
+        },
+        {
+            "source_path" : "docs/framework/interop/runtime-callable-wrapper.md",
+            "redirect_url": "/dotnet/standard/native-interop/runtime-callable-wrapper",
+            "redirect_document_id": true
+        },
+        {
+            "source_path" : "docs/framework/interop/applying-interop-attributes.md",
+            "redirect_url": "/dotnet/standard/native-interop/apply-interop-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path" : "docs/framework/interop/qualifying-net-types-for-interoperation.md",
+            "redirect_url": "/dotnet/standard/native-interop/qualify-net-types-for-interoperation",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
@@ -2454,74 +2688,14 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/standard/guidance-architecture.md",
+            "redirect_url": "/dotnet/architecture/index",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/library.md",
             "redirect_url": "/dotnet/standard/net-standard",
             "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/standard/microservices-architecture/architect-microservice-container-applications/communication-between-microservices.md",
-            "redirect_url": "/dotnet/standard/microservices-architecture/architect-microservice-container-applications/communication-in-microservice-architecture",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/deploy-existing-net-apps-as-windows-containers.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/deploy-existing-net-apps-as-windows-containers"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/how-to-deploy-existing-net-apps-to-azure-app-service.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-instances-ACI"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/index.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/index"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-with-monitoring-and-telemetry.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/what-about-cloud-optimized-applications.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/what-about-cloud-native-applications"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-not-to-deploy-to-windows-containers.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-not-to-deploy-to-windows-containers"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers//modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-service-fabric.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-service-fabric"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containerslift-and-shift-existing-apps-devops/microsoft-technologies-in-cloud-devops-ready-applications.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
         },
         {
             "source_path": "docs/standard/native-interop.md",
@@ -2608,6 +2782,10 @@
         {
             "source_path": "docs/tutorials/index.md",
             "redirect_url": "/dotnet/samples-and-tutorials/"
+        },
+        {
+            "source_path": "docs/visual-basic/sample-applications.md",
+            "redirect_url": "https://github.com/dotnet/samples/tree/master/snippets/visualbasic"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/customizing-extending-my/customizing-projects-and-extending-my.md",

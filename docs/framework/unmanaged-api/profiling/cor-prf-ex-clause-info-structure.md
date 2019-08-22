@@ -22,7 +22,7 @@ Stores information about a specific exception clause instance and its associated
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_PRF_EX_CLAUSE_INFO {  
     COR_PRF_CLAUSE_TYPE clauseType;  
     UINT_PTR programCounter;  

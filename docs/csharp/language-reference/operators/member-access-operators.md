@@ -135,7 +135,7 @@ The following example demonstrates how to call a method, with or without argumen
 
 [!code-csharp-interactive[invocation with ()](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#Invocation)]
 
-You also use parentheses when you invoke a [constructor](../../programming-guide/classes-and-structs/constructors.md) with a [`new`](../keywords/new-operator.md) operator.
+You also use parentheses when you invoke a [constructor](../../programming-guide/classes-and-structs/constructors.md) with the [`new`](new-operator.md) operator.
 
 ### Other usages of ()
 
@@ -161,3 +161,4 @@ For more information, see the following sections of the [C# language specificati
 - [C# reference](../index.md)
 - [C# operators](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)
+- [:: operator](namespace-alias-qualifier.md)

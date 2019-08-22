@@ -22,7 +22,7 @@ Gets an import scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetScope2(  
     mdAssembly AssemblyID,  
     mdToken FileToken,  

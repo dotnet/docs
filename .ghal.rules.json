@@ -1,41 +1,64 @@
 {
-  "labels": {
-    "defaults": [ ":watch: Not Triaged" ],
-    "product": {
-      "(?i).*": "Source - Docs.ms",
-      "(?i)dotnet-csharp$": ":books: Area - C# Guide",
-      "(?i)dotnet-visualbasic$": ":books: Area - Visual Basic Guide",
-      "(?i)dotnet-core$": ":books: Area - .NET Core Guide",
-      "(?i)dotnet-framework$": ":books: Area - .NET Framework Guide",
-      "(?i)dotnet-fsharp$": ":books: Area - F# Guide",
-      "(?i)dotnet-ml$": ":books: Area - ML.NET Guide",
-      "(?i)dotnet-spark": ":books: Area - .NET for Apache Spark Guide",
-      "(?i)dotnet$": ":books: Area - .NET Guide",
-      "(?i)dotnet-ml-api$": ":books: Area - API Reference,:file_folder: Repo - ml-api-docs",
-      "(?i)dotnet-roslyn-api$": ":books: Area - Roslyn API Reference,:file_folder: Repo - roslyn-api-docs",
-    },
-    "contentsource": {
-      "(?i).*master\/docs\/core\/tools.*": ":card_file_box: Technology - CLI",
-      "(?i).*master\/docs\/core\/docker.*": ":card_file_box: Technology - Docker",
-      "(?i).*master\/docs\/framework\/configure-apps\/file-schema\/network.*": ":card_file_box: Technology - NCL",
-      "(?i).*master\/docs\/framework\/configure-apps\/file-schema\/wcf.*": ":card_file_box: Technology - WCF",
-      "(?i).*master\/docs\/framework\/data\/adonet.*": ":card_file_box: Technology - Data Access",
-      "(?i).*master\/docs\/framework\/data\/wcf.*": ":card_file_box: Technology - WCF",
-      "(?i).*master\/docs\/framework\/docker.*": ":card_file_box: Technology - Docker",
-      "(?i).*master\/docs\/framework\/install.*": ":card_file_box: Technology - Installers",
-      "(?i).*master\/docs\/framework\/migration-guide.*": ":card_file_box: Technology - AppCompat",
-      "(?i).*master\/docs\/framework\/network-programming.*": ":card_file_box: Technology - NCL",
-      "(?i).*master\/docs\/framework\/windows-workflow-foundation.*": ":card_file_box: Technology - WF",
-      "(?i).*master\/docs\/framework\/wpf.*": ":card_file_box: Technology - WPF",
-      "(?i).*master\/docs\/framework\/wcf.*": ":card_file_box: Technology - WCF",
-      "(?i).*master\/docs\/framework\/winforms.*": ":card_file_box: Technology - WinForms",
-      "(?i).*master\/docs\/standard\/containerized-lifecycle-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Docker lifecycle",
-      "(?i).*master\/docs\/standard\/microservices-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: guide - .NET Microservices",
-      "(?i).*master\/docs\/standard\/modern-web-apps-azure-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: guide - ASP.NET Core web apps",
-      "(?i).*master\/docs\/standard\/modernize-with-azure-and-containers.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Modernizing w/ Windows containers",
-      "(?i).*master\/docs\/standard\/security.*": ":card_file_box: Technology - Security",
-      "(?i).*master\/docs\/standard\/serverless-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Serverless apps",
-      "(?i).*master\/docs\/standard\/standard\/design-guidelines\/.*": ":book: guide - Framework Design Guidelines"
+  "version": 2,
+  "issue": {
+    "action": {
+      "opened": {
+        "default": {
+          "labels-add": [ ":watch: Not Triaged" ]
+        },
+        "processor-custom-meta": {
+          "labels-add": {
+            "issuetype": {
+              "(?i)breaking-change$": "breaking-change"
+            }
+          }
+        },
+        "processor-docs": {
+          "labels-add": {
+            "product": {
+              "(?i).*": "Source - Docs.ms",
+              "(?i)dotnet-csharp$": ":books: Area - C# Guide",
+              "(?i)dotnet-visualbasic$": ":books: Area - Visual Basic Guide",
+              "(?i)dotnet-core$": ":books: Area - .NET Core Guide",
+              "(?i)dotnet-framework$": ":books: Area - .NET Framework Guide",
+              "(?i)dotnet-fsharp$": ":books: Area - F# Guide",
+              "(?i)dotnet-ml$": ":books: Area - ML.NET Guide",
+              "(?i)dotnet-spark": ":books: Area - .NET for Apache Spark Guide",
+              "(?i)dotnet$": ":books: Area - .NET Guide",
+              "(?i)dotnet-ml-api$": ":books: Area - API Reference,:file_folder: Repo - ml-api-docs",
+              "(?i)dotnet-roslyn-api$": ":books: Area - Roslyn API Reference,:file_folder: Repo - roslyn-api-docs"
+            },
+            "contentsource": {
+              "(?i).*master\/docs\/architecture\/containerized-lifecycle.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Docker lifecycle",
+              "(?i).*master\/docs\/architecture\/microservices.*": ":card_file_box: Technology - .NET Architecture,:book: guide - .NET Microservices",
+              "(?i).*master\/docs\/architecture\/modern-web-apps-azure.*": ":card_file_box: Technology - .NET Architecture,:book: guide - ASP.NET Core web apps",
+              "(?i).*master\/docs\/architecture\/modernize-with-azure-containers.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Modernizing w/ Windows containers",
+              "(?i).*master\/docs\/architecture\/serverless.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Serverless apps",
+              "(?i).*master\/docs\/core\/tools.*": ":card_file_box: Technology - CLI",
+              "(?i).*master\/docs\/core\/docker.*": ":card_file_box: Technology - Docker",
+              "(?i).*master\/docs\/framework\/configure-apps\/file-schema\/network.*": ":card_file_box: Technology - NCL",
+              "(?i).*master\/docs\/framework\/configure-apps\/file-schema\/wcf.*": ":card_file_box: Technology - WCF",
+              "(?i).*master\/docs\/framework\/data\/adonet.*": ":card_file_box: Technology - Data Access",
+              "(?i).*master\/docs\/framework\/data\/wcf.*": ":card_file_box: Technology - WCF",
+              "(?i).*master\/docs\/framework\/docker.*": ":card_file_box: Technology - Docker",
+              "(?i).*master\/docs\/framework\/install.*": ":card_file_box: Technology - Installers",
+              "(?i).*master\/docs\/framework\/migration-guide.*": ":card_file_box: Technology - AppCompat",
+              "(?i).*master\/docs\/framework\/network-programming.*": ":card_file_box: Technology - NCL",
+              "(?i).*master\/docs\/framework\/windows-workflow-foundation.*": ":card_file_box: Technology - WF",
+              "(?i).*master\/docs\/framework\/wpf.*": ":card_file_box: Technology - WPF",
+              "(?i).*master\/docs\/framework\/wcf.*": ":card_file_box: Technology - WCF",
+              "(?i).*master\/docs\/framework\/winforms.*": ":card_file_box: Technology - WinForms",
+              "(?i).*master\/docs\/standard\/security.*": ":card_file_box: Technology - Security",
+              "(?i).*master\/docs\/standard\/standard\/design-guidelines\/.*": ":book: guide - Framework Design Guidelines"
+            }
+          }
+        }
+      },
+      "closed": {
+        "default": {
+          "labels-remove": [ "in-progress" ]
+        }
+      }
     }
   }
 }

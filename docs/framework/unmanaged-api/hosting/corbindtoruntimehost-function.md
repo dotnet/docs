@@ -24,7 +24,7 @@ Enables hosts to load a specified version of the common language runtime (CLR) i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindToRuntimeHost (  
     [in] LPCWSTR       pwszVersion,   
     [in] LPCWSTR       pwszBuildFlavor,   

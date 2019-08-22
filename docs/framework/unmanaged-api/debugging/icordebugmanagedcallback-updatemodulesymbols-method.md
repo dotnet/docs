@@ -23,7 +23,7 @@ Notifies the debugger that the symbols for a common language runtime module have
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateModuleSymbols (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugModule    *pModule,  

@@ -23,7 +23,7 @@ Gets the token for the table entry for this module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetToken(  
     [out] mdModule *pToken  
 );  

@@ -60,7 +60,7 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
 
   The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] provides many of the same functionalities provided by DataSet, including in-memory persistence, change tracking, data binding, and serializing objects as XML data. For more information, see [Working with Objects](../../../../../docs/framework/data/adonet/ef/working-with-objects.md).  
   
-  If the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not provide the functionality of DataSet needed by your application, you can still take advantage of the benefits of LINQ queries by using [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)]. For more information, see [LINQ to DataSet](../../../../../docs/framework/data/adonet/linq-to-dataset.md).  
+  If the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not provide the functionality of DataSet needed by your application, you can still take advantage of the benefits of LINQ queries by using LINQ to DataSet. For more information, see [LINQ to DataSet](../../../../../docs/framework/data/adonet/linq-to-dataset.md).  
   
 ## Considerations for Applications that Bind Data to Controls  
  The .NET Framework lets you encapsulate data in a data source, such as a DataSet or an ASP.NET data source control, and then bind user interface elements to those data controls. The following list describes considerations for binding controls to Entity Framework data.  

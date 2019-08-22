@@ -23,7 +23,7 @@ Gets the parent class and metadata token for the specified function.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionInfo(  
     [in]  FunctionID functionId,  
     [out] ClassID    *pClassId,  

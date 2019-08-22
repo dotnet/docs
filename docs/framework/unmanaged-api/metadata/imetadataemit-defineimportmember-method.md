@@ -23,7 +23,7 @@ Creates a reference to the specified member of a type or module that is defined 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineImportMember (   
     [in]  IMetaDataAssemblyImport  *pAssemImport,   
     [in]  const void               *pbHashValue,   

@@ -23,7 +23,7 @@ Gets the minimum number of idle threads that the host maintains in the thread po
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMinThreads (  
     [out] DWORD *MinThreads  
 );  

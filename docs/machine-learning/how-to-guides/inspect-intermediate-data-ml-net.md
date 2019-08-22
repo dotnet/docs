@@ -1,18 +1,18 @@
 ---
-title: Inspect intermediate data values during ML.NET processing
-description: Learn how to inspect actual intermediate data values during ML.NET machine learning pipeline processing
-ms.date: 04/29/2019
+title: Inspect intermediate data during ML.NET processing
+description: Learn how to inspect intermediate data during ML.NET machine learning pipeline loading, processing and model training steps in ML.NET.
+ms.date: 06/25/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.custom: mvc, how-to
-#Customer intent: As a developer, I want to inspect actual intermediate data values during ML.NET machine learning pipeline processing so that I can make sure that I'm getting the results I expect.
+ms.custom: mvc, how-to, title-hack-0625
+#Customer intent: As a developer, I want to inspect intermediate data during ML.NET machine learning loading, processing and model training steps so that I can make sure that I'm getting the results I expect.
 ---
 
-# Inspect intermediate data values during processing
+# Inspect intermediate data during processing
 
-Learn how to inspect values during loading, processing and training steps in ML.NET.
+Learn how to inspect intermediate data during loading, processing, and model training steps in ML.NET. Intermediate data is the output of each stage in the machine learning pipeline.
 
-Data like the one represented below which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView) can be inspected in various ways in ML.NET.
+Intermediate data like the one represented below which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView) can be inspected in various ways in ML.NET.
  
 ```csharp
 HousingData[] housingData = new HousingData[]
@@ -58,9 +58,9 @@ HousingData[] housingData = new HousingData[]
 
 ## Convert IDataView to IEnumerable
 
-One of the quickest ways to inspect the values of an [`IDataView`](xref:Microsoft.ML.IDataView) is to convert it to an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601). To convert an [`IDataView`](xref:Microsoft.ML.IDataView) to [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) use the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) method. 
+One of the quickest ways to inspect an [`IDataView`](xref:Microsoft.ML.IDataView) is to convert it to an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601). To convert an [`IDataView`](xref:Microsoft.ML.IDataView) to [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) use the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) method. 
 
-To optimize performance, set the value of `reuseRowObject` to `true`. Doing so will lazily populate the same object with the data of the current row as it's being evaluated as opposed to creating a new object for each row in the dataset.
+To optimize performance, set `reuseRowObject` to `true`. Doing so will lazily populate the same object with the data of the current row as it's being evaluated as opposed to creating a new object for each row in the dataset.
 
 ```csharp
 // Create an IEnumerable of HousingData objects from IDataView
@@ -74,6 +74,8 @@ foreach (HousingData row in housingDataEnumerable)
     Console.WriteLine(row.Size);
 }
 ```
+
+## Accessing specific indices with IEnumerable
 
 If you only need access to a portion of the data or specific indices, use [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) and set the `reuseRowObject` parameter value to `false` so a new object is created for each of the requested rows in the dataset. Then, convert the [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) to an array or list.
 

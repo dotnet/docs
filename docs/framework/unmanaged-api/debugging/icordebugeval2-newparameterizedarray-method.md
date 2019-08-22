@@ -23,7 +23,7 @@ Allocates a new array of the specified element type and dimensions.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewParameterizedArray(  
     [in] ICorDebugType          *pElementType,  
     [in] ULONG32                rank,  

@@ -23,7 +23,7 @@ Gets the version information for the assembly referenced by this [IAssemblyName]
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersion (  
     [out] LPDWORD pdwVersionHi,  
     [out] LPDWORD pdwVersionLow  

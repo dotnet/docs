@@ -23,7 +23,7 @@ Gets the count of sequence points within this method.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSequencePointCount(  
     [out, retval] ULONG32* pRetVal);  
 ```  

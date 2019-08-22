@@ -26,7 +26,7 @@ Stops the execution of code by the common language runtime (CLR).
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Stop();  
 ```  
   

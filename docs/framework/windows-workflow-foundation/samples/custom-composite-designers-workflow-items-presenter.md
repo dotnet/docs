@@ -39,7 +39,7 @@ The code for this sample shows the following:
   - <xref:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel?displayProperty=nameWithType> is a template that can be provided to determine the layout of the items in the collection. In this case, a horizontal stack panel is used.
 
   This following example code shows this.
-  
+
   ```xaml
   <sad:WorkflowItemsPresenter HintText="Drop Activities Here"
                                 Items="{Binding Path=ModelItem.Branches}">
@@ -58,7 +58,7 @@ The code for this sample shows the following:
 
 - Perform an association of the `DesignerAttribute` to the `Parallel` type and then output the attributes reported.
 
-    - First, register all of the default designers.
+  - First, register all of the default designers.
 
     The following is the code example.
 
@@ -76,7 +76,7 @@ The code for this sample shows the following:
     RegisterCustomMetadata()
     ```
 
-    - Then, override the parallel in `RegisterCustomMetadata` method.
+  - Then, override the parallel in `RegisterCustomMetadata` method.
 
     The following code shows this in C# and Visual Basic.
 

@@ -23,7 +23,7 @@ Notifies the debugger that a class has been loaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadClass (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugClass     *c  

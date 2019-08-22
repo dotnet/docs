@@ -46,7 +46,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
  A resource key may be any string defined in the [XamlName Grammar](../../xaml-services/xamlname-grammar.md). A resource key may also be other object types, such as a <xref:System.Type>. A <xref:System.Type> key is fundamental to how controls can be styled by themes. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).  
   
- [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] for lookup of resource values, such as <xref:System.Windows.FrameworkElement.FindResource%2A>, follow the same resource lookup logic as used by `DynamicResource`.  
+ APIs for lookup of resource values, such as <xref:System.Windows.FrameworkElement.FindResource%2A>, follow the same resource lookup logic as used by `DynamicResource`.  
   
  The alternative declarative means of referencing a resource is as a [StaticResource Markup Extension](staticresource-markup-extension.md).  
   

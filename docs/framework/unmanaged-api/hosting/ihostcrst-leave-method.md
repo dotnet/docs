@@ -23,7 +23,7 @@ Leaves the critical section that is represented by the current instance of [IHos
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Leave ();  
 ```  
   

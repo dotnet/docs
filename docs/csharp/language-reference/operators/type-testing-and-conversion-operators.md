@@ -103,7 +103,7 @@ The following example demonstrates explicit numeric and reference conversions:
 
 [!code-csharp-interactive[cast expression](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#Cast)]
 
-For information about supported explicit conversions, see the [Explicit conversions](~/_csharplang/spec/conversions.md#explicit-conversions) section of the [C# language specification](~/_csharplang/spec/introduction.md). For information about how to define a custom explicit or implicit type conversion, see the [explicit](../keywords/explicit.md) or [implicit](../keywords/implicit.md) keyword article, respectively.
+For information about supported explicit conversions, see the [Explicit conversions](~/_csharplang/spec/conversions.md#explicit-conversions) section of the [C# language specification](~/_csharplang/spec/introduction.md). For information about how to define a custom explicit or implicit type conversion, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
 ### Other usages of ()
 
@@ -113,7 +113,7 @@ Other use of parentheses is to specify the order in which to evaluate operations
 
 ## typeof operator
 
-The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type. An argument of the `typeof` operator must be the name of a type or a type parameter, as the following example shows:
+The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type. The argument to the `typeof` operator must be the name of a type or a type parameter, as the following example shows:
 
 [!code-csharp-interactive[typeof operator](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#TypeOf)]
 
@@ -133,7 +133,7 @@ Use the `typeof` operator to check if the runtime type of the expression result 
 
 The `is`, `as`, and `typeof` operators are not overloadable.
 
-A user-defined type cannot overload the `()` operator, but can define custom type conversions that can be performed by a cast expression. For more information, see the [explicit](../keywords/explicit.md) and [implicit](../keywords/implicit.md) keyword articles.
+A user-defined type cannot overload the `()` operator, but can define custom type conversions that can be performed by a cast expression. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
 ## C# language specification
 

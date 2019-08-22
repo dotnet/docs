@@ -148,7 +148,7 @@ Notice that the `expected` sequence has been converted to a list. The NUnit fram
 
 When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the *Library.fs* class in your MathService project that works:
 
-```csharp
+```fsharp
 let squaresOfOdds xs =
     Seq.empty<int>
 ```

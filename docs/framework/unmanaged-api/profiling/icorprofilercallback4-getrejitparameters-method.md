@@ -23,7 +23,7 @@ Allows the code profiler to set alternate code generation flags for a new recomp
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReJITParameters(     [in] ModuleID moduleId,     [in] mdMethodDef methodId,     [in] ICorProfilerFunctionControl *pFunctionControl);  
 ```  
   

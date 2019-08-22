@@ -23,7 +23,7 @@ Indicates that a custom debugger notification has been raised.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CustomNotification(ICorDebugThread *    pThread,  
                            ICorDebugAppDomain * pAppDomain);  
 ```  

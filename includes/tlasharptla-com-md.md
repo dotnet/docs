@@ -1,1 +1,0 @@
-Component Object Model (COM)

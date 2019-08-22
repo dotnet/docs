@@ -23,7 +23,7 @@ Gets an ICorDebugClass object that represents the class this function is a membe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClass (  
     [out] ICorDebugClass **ppClass  
 );  

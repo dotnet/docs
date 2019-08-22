@@ -23,7 +23,7 @@ Clears the current unmanaged exception on the given thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClearCurrentException([in] DWORD threadID);  
 ```  
   

@@ -25,7 +25,7 @@ Gets the version number of the common language runtime (CLR) requested by the sp
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRequestedRuntimeVersion (  
     [in]  LPWSTR  pExe,   
     [out] LPWSTR  pVersion,   

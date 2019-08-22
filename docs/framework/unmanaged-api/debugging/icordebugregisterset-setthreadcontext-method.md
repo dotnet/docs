@@ -26,7 +26,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetThreadContext (  
     [in] ULONG32 contextSize,  
     [in, length_is(contextSize),  

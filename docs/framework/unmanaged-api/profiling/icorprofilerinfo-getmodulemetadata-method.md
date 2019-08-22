@@ -23,7 +23,7 @@ Gets a metadata interface instance that maps to the specified module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleMetaData(  
     [in]  ModuleID moduleId,  
     [in]  DWORD    dwOpenFlags,  

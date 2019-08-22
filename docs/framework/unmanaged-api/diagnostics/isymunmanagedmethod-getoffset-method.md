@@ -23,7 +23,7 @@ Returns the offset within this method that corresponds to a given position withi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetOffset(  
     [in]  ISymUnmanagedDocument*  document,  
     [in]  ULONG32                 line,  

@@ -33,7 +33,7 @@ You can encode as property references in your entity class any data relationship
  In the following one-to-many example, the `Customer` class has a property that declares the relationship between customers and their orders.  The `Orders` property is of type <xref:System.Data.Linq.EntitySet%601>. This type signifies that this relationship is one-to-many (one customer to many orders). The <xref:System.Data.Linq.Mapping.AssociationAttribute.OtherKey%2A> property is used to describe how this association is accomplished, namely, by specifying the name of the property in the related class to be compared with this one. In this example, the `CustomerID` property is compared, just as a database *join* would compare that column value.  
   
 > [!NOTE]
->  If you are using Visual Studio, you can use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to create an association between classes.  
+>  If you are using Visual Studio, you can use the Object Relational Designer to create an association between classes.  
   
  [!code-csharp[DlinqCustomize#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#3)]
  [!code-vb[DlinqCustomize#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb/Module1.vb#3)]  

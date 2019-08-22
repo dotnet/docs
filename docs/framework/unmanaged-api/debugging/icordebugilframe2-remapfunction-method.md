@@ -23,7 +23,7 @@ Remaps an edited function by specifying the new Microsoft intermediate language 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemapFunction (  
     [in] ULONG32      newILOffset  
 );  

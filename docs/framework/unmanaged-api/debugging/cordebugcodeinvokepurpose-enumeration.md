@@ -18,7 +18,7 @@ Describes why an exported function calls managed code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugCodeInvokePurpose  
 {  
     CODE_INVOKE_PURPOSE_NONE,  

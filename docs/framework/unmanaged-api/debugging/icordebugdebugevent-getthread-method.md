@@ -10,7 +10,7 @@ Gets the thread on which the event occurred.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread(  
         [out]ICorDebugThread **ppThread  
 );  

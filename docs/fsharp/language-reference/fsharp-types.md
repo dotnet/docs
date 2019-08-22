@@ -56,11 +56,11 @@ The following table shows aspects of the type syntax for F# types.
 |[Sequences](sequences.md)|Describes the sequence type, which represents a logical series of values; individual values are computed only as necessary.|
 |[Records](records.md)|Describes the record type, a small aggregate of named values.|
 |[Discriminated Unions](discriminated-unions.md)|Describes the discriminated union type, a type whose values can be any one of a set of possible types.|
-|[Functions](functions/index.md)|Describes function values.|
+|[Functions](./functions/index.md)|Describes function values.|
 |[Classes](classes.md)|Describes the class type, an object type that corresponds to a .NET reference type. Class types can contain members, properties, implemented interfaces, and a base type.|
 |[Structures](structures.md)|Describes the `struct` type, an object type that corresponds to a .NET value type. The `struct` type usually represents a small aggregate of data.|
 |[Interfaces](interfaces.md)|Describes interface types, which are types that represent a set of members that provide certain functionality but that contain no data. An interface type must be implemented by an object type to be useful.|
 |[Delegates](delegates.md)|Describes the delegate type, which represents a function as an object.|
 |[Enumerations](enumerations.md)|Describes enumeration types, whose values belong to a set of named values.|
 |[Attributes](attributes.md)|Describes attributes, which are used to specify metadata for another type.|
-|[Exception Types](exception-handling/exception-types.md)|Describes exceptions, which specify error information.|
+|[Exception Types](./exception-handling/exception-types.md)|Describes exceptions, which specify error information.|

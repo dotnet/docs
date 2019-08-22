@@ -22,7 +22,7 @@ Specifies the registers associated with a given processor architecture.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugRegister {  
   
     REGISTER_INSTRUCTION_POINTER = 0,  

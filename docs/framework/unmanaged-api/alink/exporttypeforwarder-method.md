@@ -22,7 +22,7 @@ Adds a type forwarder to the type table of the given assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExportTypeForwarder(  
     mdAssemblyRef   tkAssemblyRef,  
     LPCWSTR         pszTypename,  

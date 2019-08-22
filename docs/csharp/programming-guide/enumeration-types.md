@@ -15,7 +15,7 @@ An enumeration type (also named an enumeration or an enum) provides an efficient
 
 [!code-csharp[csProgGuideEnums#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#1)]
 
-By default the underlying type of each element in the enum is [int](../../csharp/language-reference/keywords/int.md). You can specify another integral numeric type by using a colon, as shown in the previous example. For a full list of possible types, see [enum (C# Reference)](../../csharp/language-reference/keywords/enum.md).
+By default the underlying type of each element in the enum is [int](../../csharp/language-reference/builtin-types/integral-numeric-types.md). You can specify another integral numeric type by using a colon, as shown in the previous example. For a full list of possible types, see [enum (C# Reference)](../../csharp/language-reference/keywords/enum.md).
 
 You can verify the underlying numeric values by casting  to the underlying type, as the following example shows.
 

@@ -22,7 +22,7 @@ Assigns the name of the assembly to be built. Not for use when producing unbound
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyFile(  
     LPCWSTR pszFilename,  
     IMetaDataEmit* pEmitter,  

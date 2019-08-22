@@ -23,7 +23,7 @@ Gets the chunks of code that this code object is composed of.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeChunks (  
     [in]  ULONG32     cbufSize,  
     [out] ULONG32     *pcnumChunks,  

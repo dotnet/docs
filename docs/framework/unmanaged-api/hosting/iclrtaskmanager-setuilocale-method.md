@@ -23,7 +23,7 @@ Notifies the common language runtime (CLR) that the host has modified the user i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUILocale (  
     [in] LCID lcid  
 );  

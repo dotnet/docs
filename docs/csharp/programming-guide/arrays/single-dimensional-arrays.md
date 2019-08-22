@@ -13,7 +13,7 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  [!code-csharp[csProgGuideArrays#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#4)]  
   
- This array contains the elements from `array[0]` to `array[4]`. The [new](../../../csharp/language-reference/keywords/new.md) operator is used to create the array and initialize the array elements to their default values. In this example, all the array elements are initialized to zero.  
+ This array contains the elements from `array[0]` to `array[4]`. The [new](../../../csharp/language-reference/operators/new-operator.md) operator is used to create the array and initialize the array elements to their default values. In this example, all the array elements are initialized to zero.  
   
  An array that stores string elements can be declared in the same way. For example:  
   

@@ -48,4 +48,4 @@ Namespaces have the following properties:
 - [How to: Use the My Namespace](how-to-use-the-my-namespace.md)
 - [Identifier names](../inside-a-program/identifier-names.md)
 - [using Directive](../../language-reference/keywords/using-directive.md)
-- [:: Operator](../../language-reference/operators/namespace-alias-qualifer.md)
+- [:: Operator](../../language-reference/operators/namespace-alias-qualifier.md)

@@ -102,6 +102,8 @@ Collecting to file: <Full-Path-To-Trace>/trace.nettrace
   Recording trace 721.025 (KB)
 ```
 
+- Finally, stop collection by pressing the `<Enter>` key, and `dotnet-trace` will finish logging events to *trace.nettrace* file.
+
 ## Viewing the trace captured from `dotnet-trace`
 
 On Windows, `.nettrace` files can be viewed on [PerfView](https://github.com/microsoft/perfview) for analysis, just like traces collected with ETW or LTTng. For traces collected on Linux, you can either move the trace to a Windows machine to be viewed on PerfView.
@@ -109,7 +111,6 @@ On Windows, `.nettrace` files can be viewed on [PerfView](https://github.com/mic
 You may also view the trace on a Linux machine by changing the output format of `dotnet-trace` to `speedscope`. You can change the output file format using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` to produce a `speedscope` file. You can currently choose between `nettrace` (the default option) and `speedscope`. `Speedscope` files can be opened at https://www.speedscope.app.
 
 Note: The .NET Core runtime generates traces in the `nettrace` format, and they're converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.
-- Finally, stop collection by pressing the \<Enter> key, and `dotnet-trace` will finish logging events to *trace.nettrace* file.
 
 ## Using `dotnet-trace` to collect counter values over time
 

@@ -1,62 +1,66 @@
 ---
 title: "How to: Provide a Toolbox Bitmap for a Control"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Toolbox [Windows Forms], adding bitmaps for custom controls"
   - "custom controls [Windows Forms], Toolbox bitmaps"
   - "bitmaps [Windows Forms], custom controls"
 ms.assetid: 0ed0840a-616d-41ba-a27d-3573241932ad
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
 # How to: Provide a Toolbox Bitmap for a Control
-If you want to have a special icon for your control appear in the **Toolbox**, you can specify a particular image by using the <xref:System.Drawing.ToolboxBitmapAttribute>. This class is an *attribute*, a special kind of class you can attach to other classes. For more information about attributes, see [Attributes overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/index.md) for Visual Basic or [Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/index.md) for C#.  
-  
- Using the <xref:System.Drawing.ToolboxBitmapAttribute>, you can specify a string that indicates the path and file name for a 16 by 16 pixel bitmap. This bitmap then appears next to your control when added to the **Toolbox**. You can also specify a <xref:System.Type>, in which case the bitmap associated with that type is loaded. If you specify both a <xref:System.Type> and a string, the control searches for an image resource with the name specified by the string parameter in the assembly containing the type specified by the <xref:System.Type> parameter.  
-  
-### To specify a Toolbox bitmap for your control  
-  
-1. Add the <xref:System.Drawing.ToolboxBitmapAttribute> to the class declaration of your control before the `Class` keyword for visual Basic, and above the class declaration for Visual C#.  
-  
-    ```vb  
-    ' Specifies the bitmap associated with the Button type.  
-    <ToolboxBitmap(GetType(Button))> Class MyControl1  
-    ' Specifies a bitmap file.  
-    End Class  
-    <ToolboxBitmap("C:\Documents and Settings\Joe\MyPics\myImage.bmp")> _  
-       Class MyControl2  
-    End Class  
-    ' Specifies a type that indicates the assembly to search, and the name   
-    ' of an image resource to look for.  
-    <ToolboxBitmap(GetType(MyControl), "MyControlBitmap")> Class MyControl  
-    End Class  
-    ```  
-  
-    ```csharp  
-    // Specifies the bitmap associated with the Button type.  
-    [ToolboxBitmap(typeof(Button))]  
-    class MyControl1 : UserControl  
-    {  
-    }  
-    // Specifies a bitmap file.  
-    [ToolboxBitmap(@"C:\Documents and Settings\Joe\MyPics\myImage.bmp")]  
-    class MyControl2 : UserControl  
-    {  
-    }  
-    // Specifies a type that indicates the assembly to search, and the name   
-    // of an image resource to look for.  
-    [ToolboxBitmap(typeof(MyControl), "MyControlBitmap")]  
-    class MyControl : UserControl  
-    {  
-    }  
-    ```  
-  
-2. Rebuild the project.  
-  
+
+If you want to have a special icon for your control appear in the **Toolbox** of Visual Studio, you can specify a particular image by using the <xref:System.Drawing.ToolboxBitmapAttribute>. This class is an *attribute*, a special kind of class you can attach to other classes. For more information about attributes, see [Attributes overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/index.md) for Visual Basic or [Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/index.md) for C#.
+
+Using the <xref:System.Drawing.ToolboxBitmapAttribute>, you can specify a string that indicates the path and file name for a 16 by 16 pixel bitmap. This bitmap then appears next to your control when added to the **Toolbox**. You can also specify a <xref:System.Type>, in which case the bitmap associated with that type is loaded. If you specify both a <xref:System.Type> and a string, the control searches for an image resource with the name specified by the string parameter in the assembly containing the type specified by the <xref:System.Type> parameter.
+
+## To specify a Toolbox bitmap for your control
+
+1. Add the <xref:System.Drawing.ToolboxBitmapAttribute> to the class declaration of your control before the `Class` keyword for visual Basic, and above the class declaration for Visual C#.
+
+    ```vb
+    ' Specifies the bitmap associated with the Button type.
+    <ToolboxBitmap(GetType(Button))> Class MyControl1
+    ' Specifies a bitmap file.
+    End Class
+    <ToolboxBitmap("C:\Documents and Settings\Joe\MyPics\myImage.bmp")> _
+       Class MyControl2
+    End Class
+    ' Specifies a type that indicates the assembly to search, and the name
+    ' of an image resource to look for.
+    <ToolboxBitmap(GetType(MyControl), "MyControlBitmap")> Class MyControl
+    End Class
+    ```
+
+    ```csharp
+    // Specifies the bitmap associated with the Button type.
+    [ToolboxBitmap(typeof(Button))]
+    class MyControl1 : UserControl
+    {
+    }
+    // Specifies a bitmap file.
+    [ToolboxBitmap(@"C:\Documents and Settings\Joe\MyPics\myImage.bmp")]
+    class MyControl2 : UserControl
+    {
+    }
+    // Specifies a type that indicates the assembly to search, and the name
+    // of an image resource to look for.
+    [ToolboxBitmap(typeof(MyControl), "MyControlBitmap")]
+    class MyControl : UserControl
+    {
+    }
+    ```
+
+2. Rebuild the project.
+
     > [!NOTE]
-    > The bitmap does not appear in the Toolbox for autogenerated controls and components. To see the bitmap, reload the control by using the **Choose Toolbox Items** dialog box. For more information, see [Walkthrough: Automatically Populating the Toolbox with Custom Components](walkthrough-automatically-populating-the-toolbox-with-custom-components.md).  
-  
+    > The bitmap does not appear in the Toolbox for autogenerated controls and components. To see the bitmap, reload the control by using the **Choose Toolbox Items** dialog box. For more information, see [Walkthrough: Automatically Populating the Toolbox with Custom Components](walkthrough-automatically-populating-the-toolbox-with-custom-components.md).
+
 ## See also
 
 - <xref:System.Drawing.ToolboxBitmapAttribute>

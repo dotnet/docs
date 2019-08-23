@@ -7,15 +7,19 @@ helpviewer_keywords:
   - "user controls [Windows Forms], creating"
   - "composite controls [Windows Forms], creating"
 ms.assetid: 67713625-e2e4-4f6a-bce7-0855ee5043d9
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
 # How to: Inherit from the UserControl Class
+
 To combine the functionality of one or more Windows Forms controls with custom code, you can create a *user control*. User controls combine rapid control development, standard Windows Forms control functionality, and the versatility of custom properties and methods. When you begin creating a user control, you are presented with a visible designer, upon which you can place standard Windows Forms controls. These controls retain all of their inherent functionality, as well as the appearance and behavior (look and feel) of standard controls. Once these controls are built into the user control, however, they are no longer available to you through code. The user control does its own painting and also handles all of the basic functionality associated with controls.
 
 ## To create a user control
 
-1. Create a new **Windows Control Library** project.
+1. Create a new **Windows Control Library** project in Visual Studio.
 
-     A new project is created with a blank user control.
+   A new project is created with a blank user control.
 
 2. Drag controls from the **Windows Forms** tab of the **Toolbox** onto your designer.
 
@@ -23,7 +27,7 @@ To combine the functionality of one or more Windows Forms controls with custom c
 
 4. Implement any custom methods or properties that your control will incorporate.
 
-5. Press F5 to build the project and run your control in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).
+5. Press **F5** to build the project and run your control in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).
 
 ## See also
 
@@ -31,5 +35,5 @@ To combine the functionality of one or more Windows Forms controls with custom c
 - [How to: Inherit from the Control Class](how-to-inherit-from-the-control-class.md)
 - [How to: Inherit from Existing Windows Forms Controls](how-to-inherit-from-existing-windows-forms-controls.md)
 - [How to: Author Controls for Windows Forms](how-to-author-controls-for-windows-forms.md)
-- [Troubleshooting Inherited Event Handlers in Visual Basic](../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
+- [Troubleshoot Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
 - [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md)

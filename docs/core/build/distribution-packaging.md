@@ -112,7 +112,7 @@ The following lists the recommended packages:
   * **Contains:** (6),(7)
   * **Dependencies:** `dotnet-runtime-[major].[minor]`
 
-* `dotnet-runtime-deps-[major].[minor]` - Installs the dependencies for running self-contained applications
+* `dotnet-runtime-deps-[major].[minor]` _(Optional)_ - Installs the dependencies for running self-contained applications
   * **Version:** \<runtime version>
   * **Example:** dotnet-runtime-deps-2.1
   * **Dependencies:** _distro specific dependencies_
@@ -149,6 +149,8 @@ The following lists the recommended packages:
 * `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version
   * **Version:** \<netstandard version>
   * **Contains:** (15)
+
+The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 
 Most distributions require all artifacts to be built from source. This has some impact on the packages:
 

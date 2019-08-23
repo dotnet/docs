@@ -5,22 +5,22 @@ ms.date: 08/09/2019
 author: sdmaclea
 ms.author: stmaclea
 ---
-# Understanding <xref:System.Runtime.Loader.AssemblyLoadContext>
+# Understanding System.Runtime.Loader.AssemblyLoadContext
 
-The <xref:System.Runtime.Loader.AssemblyLoadContext> class is unique to .NET Core. This article attempts to supplement the API docs <xref:System.Runtime.Loader.AssemblyLoadContext> with conceptual information.
+The <xref:System.Runtime.Loader.AssemblyLoadContext> class is unique to .NET Core. This article attempts to supplement the <xref:System.Runtime.Loader.AssemblyLoadContext> API documentation with conceptual information.
 
 This article is relevant to developers implementing dynamic loading, especially dynamic loading framework developers.
 
-## What is the <xref:System.Runtime.Loader.AssemblyLoadContext>?
+## What is the AssemblyLoadContext?
 
 Every .NET Core application implicitly uses the <xref:System.Runtime.Loader.AssemblyLoadContext>.
-It's the runtime's provider for locating and loading dependencies. Whenever a dependency is loaded an <xref:System.Runtime.Loader.AssemblyLoadContext> instance is invoked to locate it.
+It's the runtime's provider for locating and loading dependencies. Whenever a dependency is loaded, an <xref:System.Runtime.Loader.AssemblyLoadContext> instance is invoked to locate it.
 
 - It provides a service of locating, loading, and caching managed assemblies and other dependencies.
 
-To support dynamic code loading and unloading, it creates an isolated context for loading code and its dependencies, in their own <xref:System.Runtime.Loader.AssemblyLoadContext> instance.
+- To support dynamic code loading and unloading, it creates an isolated context for loading code and its dependencies in their own <xref:System.Runtime.Loader.AssemblyLoadContext> instance.
 
-## When do you need multiple <xref:System.Runtime.Loader.AssemblyLoadContext> instances?
+## When do you need multiple AssemblyLoadContext instances?
 
 A single <xref:System.Runtime.Loader.AssemblyLoadContext> instance is limited to loading exactly one version of an <xref:System.Reflection.Assembly> per simple assembly name, <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType>.
 
@@ -30,13 +30,13 @@ To support dynamically loading code, the <xref:System.Runtime.Loader.AssemblyLoa
 
 It also provides a convenient mechanism for grouping dependencies related to a code module for later unload.
 
-## What is special about the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance?
+## What is special about the AssemblyLoadContext.Default instance?
 
 The <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance is automatically populated by the runtime at startup.  It uses [default probing](default-probing.md) to locate and find all static dependencies.
 
 It solves the most common dependency loading scenarios.
 
-## How does <xref:System.Runtime.Loader.AssemblyLoadContext> support dynamic dependencies?
+## How does AssemblyLoadContext support dynamic dependencies?
 
 <xref:System.Runtime.Loader.AssemblyLoadContext> has various events and virtual functions that can be overridden.
 
@@ -45,13 +45,13 @@ The <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=name
 The articles
 [Managed assembly loading algorithm](loading-managed.md),
 [Satellite assembly loading algorithm](loading-resources.md), and
-[Unmanaged (native) library loading algorithm](loading-unmanaged.md) refer to all the available events and virtual functions.  The articles show each event and functions relative position in the loading algorithms. This article won't reproduce that information.
+[Unmanaged (native) library loading algorithm](loading-unmanaged.md) refer to all the available events and virtual functions.  The articles show each event and function's relative position in the loading algorithms. This article doesn't reproduce that information.
 
-This section will cover the general principles for the relevant events and functions.
+This section covers the general principles for the relevant events and functions.
 
-- **Be repeatable**. It's required that a query for a specific dependency will always result in the same response. The same loaded dependency instance must be returned. This requirement is fundamental  for cache consistency. For managed assemblies in particular, we're creating a <xref:System.Reflection.Assembly> cache. The cache key is a simple assembly name, <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType>.
-- **Typically don't throw**.  It's expected that these functions return `null` rather than throw when unable to find the requested dependency. Throwing will prematurely end the search and be propagated to the caller. Throwing should be restricted to unexpected errors like a corrupt assembly or out of memory.
-- **Avoid recursion**. Beware that these functions and handlers are implementing the loading rules for locating dependencies. Your implementation shouldn't call APIs that trigger recursion. Your code should typically be calling **AssemblyLoadContext** load functions that require a specific path or memory reference argument.
+- **Be repeatable**. A query for a specific dependency must always result in the same response. The same loaded dependency instance must be returned. This requirement is fundamental  for cache consistency. For managed assemblies in particular, we're creating a <xref:System.Reflection.Assembly> cache. The cache key is a simple assembly name, <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType>.
+- **Typically don't throw**.  It's expected that these functions return `null` rather than throw when unable to find the requested dependency. Throwing will prematurely end the search and be propagate an exception to the caller. Throwing should be restricted to unexpected errors like a corrupted assembly or an out of memory condition.
+- **Avoid recursion**. Be aware that these functions and handlers implement the loading rules for locating dependencies. Your implementation shouldn't call APIs that trigger recursion. Your code should typically call **AssemblyLoadContext** load functions that require a specific path or memory reference argument.
 - **Load into the correct AssemblyLoadContext**. The choice of where to load dependencies is application-specific.  The choice is implemented by these events and functions. When your code calls **AssemblyLoadContext** load-by-path functions call them on the instance where you want the code loaded. Sometime returning `null` and letting the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> handle the load may be the simplest option.
 - **Be aware of thread races**. Loading can be triggered by multiple threads. The AssemblyLoadContext handles thread races by atomically adding assemblies to its cache. The race loser's instance is discarded. In your implementation logic, don't add extra logic that doesn't handle multiple threads properly.
 
@@ -62,8 +62,9 @@ Each <xref:System.Runtime.Loader.AssemblyLoadContext> instance represents a uniq
 There's no binary isolation between these dependencies. They're only isolated by not finding each other by name.
 
 In each <xref:System.Runtime.Loader.AssemblyLoadContext>:
-    - <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> may refer to a different <xref:System.Reflection.Assembly> instance.
-    - <xref:System.Type.GetType%2A?displayProperty=nameWithType> may return a different type instance for the same type `name`.
+
+- <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> may refer to a different <xref:System.Reflection.Assembly> instance.
+- <xref:System.Type.GetType%2A?displayProperty=nameWithType> may return a different type instance for the same type `name`.
 
 ## How are dependencies shared?
 

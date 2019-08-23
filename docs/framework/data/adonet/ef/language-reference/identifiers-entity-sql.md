@@ -42,7 +42,7 @@ Identifiers are used in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 
   
  `SELECT t from ts as t WHERE t.[abc]]] == 2`  
   
- For quoted identifier comparison semantics, see [Input Character Set](../../../../../../docs/framework/data/adonet/ef/language-reference/input-character-set-entity-sql.md).  
+ For quoted identifier comparison semantics, see [Input Character Set](input-character-set-entity-sql.md).  
   
 ## Aliasing Rules  
  We recommend specifying aliases in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries whenever needed, including the following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] constructs:  
@@ -116,6 +116,6 @@ SELECT 1 AS X, 2 AS X …
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
-- [Input Character Set](../../../../../../docs/framework/data/adonet/ef/language-reference/input-character-set-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Entity SQL Overview](entity-sql-overview.md)
+- [Input Character Set](input-character-set-entity-sql.md)

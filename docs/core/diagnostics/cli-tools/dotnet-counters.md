@@ -74,43 +74,6 @@ dotnet-counters [--version]
 *MONITOR*
 
 ```
-    ### Examples:
-
-    1. Monitoring all counters from `System.Runtime` at a refresh interval of 3 seconds:
-
-      > dotnet-counters monitor --process-id 1902 System.Runtime
-
-    Press p to pause, r to resume, q to quit.
-      System.Runtime:
-        CPU Usage (%)                                 24
-        Working Set (MB)                            1982
-        GC Heap Size (MB)                            811
-        Gen 0 GC / second                             20
-        Gen 1 GC / second                              4
-        Gen 1 GC / Second                              1
-        Number of Exceptions / sec                     4
-
-    1. Monitoring just CPU usage and GC heap size from `System.Runtime` at a refresh interval of 5 seconds:
-
-      > dotnet-counters monitor --process-id 1902 System.Runtime[cpu-usage,gc-heap-size,exception-count]
-
-    Press p to pause, r to resume, q to quit.
-      System.Runtime:
-        CPU Usage (%)                                 24
-        GC Heap Size (MB)                            811
-        Number of Exceptions / sec                     4
-
-    1. Monitoring EventCounter values from user-defined EventSource: (see https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md on how to do this.0)
-
-      > dotnet-counters monitor --process-id 1902 Samples-EventCounterDemos-Minimal
-
-    Press p to pause, r to resume, q to quit.
-        request                                      100
-```
-
-### Syntax:
-
-```
     dotnet-counters monitor [-h||--help]
                             [-p|--process-id <pid>]
                             [--refreshInterval <sec>]
@@ -131,4 +94,36 @@ dotnet-counters [--version]
         A space separated list of counters. Counters can be specified provider_name[:counter_name]. If the
         provider_name is used without a qualifying counter_name then all counters will be shown. To discover
         provider and counter names, use the list command.
+
+    Examples:
+
+    1. Monitoring all counters from `System.Runtime` at a refresh interval of 3 seconds:
+
+      > dotnet-counters monitor --process-id 1902  --refresh-interval 3 System.Runtime
+
+    Press p to pause, r to resume, q to quit.
+      System.Runtime:
+        CPU Usage (%)                                 24
+        Working Set (MB)                            1982
+        GC Heap Size (MB)                            811
+        Gen 0 GC / second                             20
+        Gen 1 GC / second                              4
+        Gen 2 GC / second                              1
+        Number of Exceptions / sec                     4
+
+    2. Monitoring just CPU usage and GC heap size from `System.Runtime`:
+
+      > dotnet-counters monitor --process-id 1902 System.Runtime[cpu-usage,gc-heap-size]
+
+    Press p to pause, r to resume, q to quit.
+      System.Runtime:
+        CPU Usage (%)                                 24
+        GC Heap Size (MB)                            811
+
+    2. Monitoring EventCounter values from user-defined EventSource: (see https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md on how to do this.)
+
+      > dotnet-counters monitor --process-id 1902 Samples-EventCounterDemos-Minimal
+
+    Press p to pause, r to resume, q to quit.
+        request                                      100
 ```

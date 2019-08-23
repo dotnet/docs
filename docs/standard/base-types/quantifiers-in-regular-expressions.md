@@ -203,7 +203,7 @@ Quantifiers specify how many instances of a character, group, or character class
 ### Match Between n and m Times (Lazy Match): {n,m}?  
  The `{`*n*`,`*m*`}?` quantifier matches the preceding element between `n` and `m` times, where *n* and *m* are integers, but as few times as possible. It is the lazy counterpart of the greedy quantifier `{`*n*`,`*m*`}`.  
   
- In the following example, the regular expression `\b[A-Z](\w*\s+){1,10}?[.!?]` matches sentences that contain between one and ten words. It matches all the sentences in the input string except for one sentence that contains 18 words.  
+ In the following example, the regular expression `\b[A-Z](\w*?\s*?){1,10}[.!?]` matches sentences that contain between one and ten words. It matches all the sentences in the input string except for one sentence that contains 18 words.  
   
  [!code-csharp[RegularExpressions.Quantifiers#12](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#12)]
  [!code-vb[RegularExpressions.Quantifiers#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#12)]  
@@ -214,8 +214,8 @@ Quantifiers specify how many instances of a character, group, or character class
 |-------------|-----------------|  
 |`\b`|Start at a word boundary.|  
 |`[A-Z]`|Match an uppercase character from A to Z.|  
-|`(\w*\s+)`|Match zero or more word characters, followed by one or more white-space characters. This is the first capture group.|  
-|`{1,10}?`|Match the previous pattern between 1 and 10 times, but as few times as possible.|  
+|`(\w*?\s*?)`|Match zero or more word characters, followed by one or more white-space characters, but as few times as possible. This is the first capture group.|  
+|`{1,10}`|Match the previous pattern between 1 and 10 times.|  
 |`[.!?]`|Match any one of the punctuation characters ".", "!", or "?".|  
   
 <a name="Greedy"></a>   

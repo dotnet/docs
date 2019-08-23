@@ -13,7 +13,7 @@ Most of the Windows Workflow Foundation (WF) samples use workflows that are host
  Using IIS 7.0 alone is not recommended, as there are management and monitoring tools available with AppFabric that facilitate maintenance of running applications. Workflows should only be hosted in IIS 7.0 alone if there are infrastructure concerns with moving to AppFabric.  
   
 > [!WARNING]
->  IIS 7.0 recycles application pools periodically for various reasons. When an application pool is recycled, IIS stops accepting messages to the old pool, and instantiates a new application pool to accept new requests. If a workflow continues working after sending a response, IIS 7.0 will not be aware of the work being done, and may recycle the hosting application pool. If this happens, the workflow will abort, and tracking services will record a [1004 - WorkflowInstanceAborted](1004-workflowinstanceaborted.md) message with an empty Reason field.  
+> IIS 7.0 recycles application pools periodically for various reasons. When an application pool is recycled, IIS stops accepting messages to the old pool, and instantiates a new application pool to accept new requests. If a workflow continues working after sending a response, IIS 7.0 will not be aware of the work being done, and may recycle the hosting application pool. If this happens, the workflow will abort, and tracking services will record a [1004 - WorkflowInstanceAborted](1004-workflowinstanceaborted.md) message with an empty Reason field.  
 >   
 >  If persistence is used, the host must explicitly restart aborted instances from the last persistence point.  
 >   

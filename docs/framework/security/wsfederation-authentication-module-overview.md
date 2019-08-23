@@ -93,7 +93,7 @@ Windows Identity Foundation (WIF) includes support for federated authentication 
  The following XML shows a configuration of an ASP.NET relying party (RP) application. The <xref:System.IdentityModel.Configuration.SystemIdentityModelSection> and <xref:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection> configuration sections are added under the `<configSections>` element. The SAM and WS-FAM are added to the HTTP Modules under the `<system.webServer>`/`<modules>` element. Finally the WIF components are configured under the `<system.identityModel>`/`<identityConfiguration>` and `<system.identityModel.services>`/`<federationConfiguration>` elements. This configuration specifies the chunked cookie handler as it is the default cookie handler and there is not a cookie handler type specified in the `<cookieHandler>` element.  
   
 > [!WARNING]
->  In the following example, both the `requireHttps` attribute of the `<wsFederation>` element and the `requireSsl` attribute of the `<cookieHandler>` element are `false`. This presents a potential security threat. In production, both these values should be set `true`.  
+> In the following example, both the `requireHttps` attribute of the `<wsFederation>` element and the `requireSsl` attribute of the `<cookieHandler>` element are `false`. This presents a potential security threat. In production, both these values should be set `true`.  
   
 ```xml  
 <configuration>  

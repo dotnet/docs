@@ -83,7 +83,6 @@ Most forms are designed by adding controls to the surface of the form to define 
 ## See also
 
 - [Windows Forms Controls](index.md)
-- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
 - [How to: Resize Controls on Windows Forms](how-to-resize-controls-on-windows-forms.md)
 - [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

@@ -26,4 +26,4 @@ This shows how to execute a command against a conceptual model by using an <xref
   
 ## See also
 
-- [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)
+- [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md)

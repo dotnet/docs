@@ -27,4 +27,4 @@ This topic shows how to execute an [!INCLUDE[esql](../../../../../includes/esql-
 ## See also
 
 - [How to: Execute a Parameterized Query](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738521(v=vs.100))
-- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+- [Entity SQL Language](./language-reference/entity-sql-language.md)

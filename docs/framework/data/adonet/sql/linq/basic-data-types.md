@@ -18,5 +18,5 @@ Because LINQ to SQL queries translate to Transact-SQL before they are executed o
   
 ## See also
 
-- [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)
-- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
+- [SQL-CLR Type Mapping](sql-clr-type-mapping.md)
+- [Data Types and Functions](data-types-and-functions.md)

@@ -1,44 +1,60 @@
-# Installing the diagnostics tools
+---
+title: Installing dotnet diagnostic tools - .NET Core
+description: Installing dotnet diagnostic command-line tools.
+author: sdmaclea
+ms.author: stmaclea
+ms.date: 08/21/2019
+---
+# Installing the `dotnet` diagnostic command-line tools
 
-Depending on the diagnostics scenario you will use one or more of the tools below to get to root cause. By default, these tools are installed to ~/.dotnet/tools. 
+Depending on the diagnostics scenario, you can use one or more tools to get to root cause.
 
-### dotnet-counters
-In the .NET full/Windows world, we have a myriad of performance counters that can be used to triage and diagnose production issues. For .Net core we have a similar and cross platform story centered around a tool called dotnet-counters. To install the tool, run the following command:
+These tools are implemented as [.NET Core Global Tools](../../tools/global-tools.md). They're installed, upgraded, and uninstalled using the `dotnet tool` commands:
+- [dotnet tool install](../../tools/dotnet-tool-install.md).
+- [dotnet tool update](../../tools/dotnet-tool-update.md).
+- [dotnet tool uninstall](../../tools/dotnet-tool-uninstall.md).
 
-> ```bash
-> dotnet tool install --global dotnet-counters --version 3.0.0-preview8.19412.1
-> ```
+## Using prerelease versions
 
+As tools are developed, we initially release them with a pre-release version.
 
-### dotnet-trace
-.NET core includes what is called the 'EventPipe' through which diagnostics data is exposed. The dotnet-trace tool allows you to consume interesting profiling data from your app that can help in scenarios where you need to root cause apps running slow. To install the tool, run the following command:
+### Finding available pre-release versions
 
-> ```bash
-> dotnet tool install --global dotnet-trace --version 3.0.0-preview8.19412.1 
-> ```
+The pre-release packages are published on [NuGet package](https://www.nuget.org/). You can search for each package by name. Releases are listed on each packages page. For instance:
+- [dotnet-counters](https://www.nuget.org/packages/dotnet-counters)
+- [dotnet-dump](https://www.nuget.org/packages/dotnet-dump)
+- [dotnet-trace](https://www.nuget.org/packages/dotnet-trace)
 
+### Install
 
-### dotnet-dump
-In order to generate core dumps for .net core apps, you can use the dotnet-dump tool. To install the tool, run the following command:
+These prerelease versions can't be installed without an explicit `--version` option to the [dotnet tool install](../../tools/dotnet-tool-install.md) command. For instance:
 
-> ```bash
-> dotnet tool install --global dotnet-dump --version 3.0.0-preview8.19412.1
-> ```
+```bash
+dotnet tool install --global dotnet-dump --version 3.0.0-preview8.19412.1
+```
 
+### Upgrade
 
-### dotnet-symbol
-In order to debug core dumps, the correct symbols need to be available. The dotnet-symbol tool allows you to point to a core dump and it will automatically download the symbols for you. To install the tool, run:
+To upgrade from or to a prerelease version, [dotnet tool uninstall](../../tools/dotnet-tool-uninstall.md) the previous version of the tool before upgrade. Preview versions can't be automatically updated. For instance:
 
-> ```bash
-> dotnet tool install -g dotnet-symbol
-> ```
+```bash
+dotnet tool uninstall --global dotnet-dump
+dotnet tool install --global dotnet-dump --version 3.0.0-preview8.19412.1
+```
 
-### perfcollect
-Thet .NET core runtime is instrumented for both perf and LTTng. To facilitate easier collection of both tracing technologies there is a tool called perfcollect. Perfcollect will output the joint trace data into a nettrace file that can be analyzed using PerfView on Windows. To install the tool run the following commands:
+## Handling common install problems
 
-> ```
-> curl -OL http://aka.ms/perfcollect
-> chmod +x perfcollect
-> sudo ./perfcollect install
-> ```
+### "Tool already installed"
 
+If you see the error message `Tool 'dotnet-...' is already installed`, you can either:
+- [Uninstall](../../tools/dotnet-tool-uninstall.md) the global tool before reinstalling the tool.
+- Install to a different path.
+
+### "Specified command or file was not found"
+
+If this install is the first global tool or you get message `Could not execute because the specified command or file was not found.`, you need to add the global tools directory to your path.
+
+| OS          | Default global tool path      |
+|-------------|-------------------------------|
+| Linux/macOS | `$HOME/.dotnet/tools`         |
+| Windows     | `%USERPROFILE%\.dotnet\tools` |

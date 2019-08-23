@@ -25,4 +25,4 @@ When an [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query has multip
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Overview](entity-sql-overview.md)

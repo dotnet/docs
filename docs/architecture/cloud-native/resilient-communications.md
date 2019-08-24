@@ -75,4 +75,4 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 
 >[!div class="step-by-step"]
 >[Previous](infrastructure-resiliency-azure.md)
->[Next](monitoring-health.md) <!-- Next Chapter -->
+>[Next](distributed-data.md) <!-- Next Chapter -->

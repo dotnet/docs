@@ -10,7 +10,7 @@ Front-end client applications (mobile, web, and desktop applications) require a 
 
 To keep things simple, a front-end client could *directly communicate* with the backend microservices, shown in Figure 4-2.
 
-![Direct client to service communication](media/direct-client-to-service-communication.png)
+![Direct client to service communication](./media/direct-client-to-service-communication.png)
 **Figure 4-2**. Direct client to service communication
 
 With this approach, each microservice has a public endpoint and is accessible by the front-end client. In a production environment, you'd go a step further and place a load balancer in front of your microservices, routing traffic proportionately.
@@ -27,7 +27,7 @@ While simple to implement, direct client communication would be acceptable only 
 
 Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the frontend applications and backend services. The pattern is shown in Figure 4-3.
 
-![API Gateway Pattern](media/api-gateway-pattern.png)
+![API Gateway Pattern](./media/api-gateway-pattern.png)
 
 **Figure 4-3.** API gateway pattern
 
@@ -37,7 +37,7 @@ The gateway insulates the client from internal service partitioning and refactor
 
 Care must be taken to keep the API Gateway simple and fast. Typically, business logic is kept out of the gateway. A complex gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems often expose multiple API Gateways segmented by client type (mobile, web, desktop) or backend functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern provides direction for implementing multiple gateways. The pattern is shown in Figure 4-4.
 
-![API Gateway Pattern](media/backend-for-frontend-pattern.png)
+![API Gateway Pattern](./media/backend-for-frontend-pattern.png)
 
 **Figure 4-4.** Backend for frontend pattern
 
@@ -50,7 +50,7 @@ For simple .NET cloud-native applications, you might consider the [Ocelot Gatewa
 
 Like any API Gateway, its primary functionality is to forward incoming HTTP requests to downstream services. Additionally, it supports a wide variety of capabilities that are configurable as a .NET Core middleware pipeline. Its feature set is shown in Figure 4-5.
 
-![Ocelot Features](media/ocelot-features.png)
+![Ocelot Features](./media/ocelot-features.png)
 
 **Figure 4-5**. Ocelot Features
 
@@ -58,7 +58,7 @@ Each Ocelot gateway specifies the upstream and downstream addresses and configur
 
 Shown in Figure 4-6, The client sends an HTTP request to the Ocelot gateway. Once received, Ocelot then passes the HttpRequest object through its pipeline manipulating it into the state specified by its configuration. At the end of pipeline, Ocelot creates a new HTTPResponseObject and passed it to the downstream service. For the response, Ocelot reverses the pipeline, sending the response back to client.
 
-![Basic Ocelot implementation](media/basic-ocelot-implementation.png)
+![Basic Ocelot implementation](./media/basic-ocelot-implementation.png)
 
 **Figure 4-6**. Basic Ocelot implementation
 
@@ -70,7 +70,7 @@ Ocelot is extensible and supports many modern platforms, including Azure Kuberne
 
 For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a rich developer and administrative experience. API Management is shown in Figure 4-4. 
 
-![Azure API Management](media/azure-api-management.png)
+![Azure API Management](./media/azure-api-management.png)
 **Figure 4-4**. Azure API Management
 
 To start, API Management exposes a gateway server that sits in front of backend services and manages access to them. 
@@ -134,7 +134,7 @@ Azure SignalR abstracts the transport technologies that create real-time connect
 
 Figure 4-6 shows a set of HTTP Clients connecting to a Cloud App with Azure SignalR enabled.
 
-![Azure SignalR](media/azure-signalr-service.png)
+![Azure SignalR](./media/azure-signalr-service.png)
 
 **Figure 4-6**. Azure SignalR
 

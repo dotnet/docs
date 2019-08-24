@@ -58,7 +58,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
  To enable the use of XPSDrv-based printers by [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and Windows Forms applications, the XPS printer driver (XPSDrv) supports conversion of GDI to XPS format. The XPSDrv model also provides a converter for XPS to GDI format so that [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] applications can print [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] Documents. For [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, conversion of XPS to GDI format is done automatically by the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter> class whenever the target print queue of the write operation does not have an XPSDrv driver. (Windows Forms applications cannot print [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] Documents.)  
   
- The following illustration depicts the print subsystem and defines the portions provided by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)], and the portions defined by software and hardware vendors:  
+ The following illustration depicts the print subsystem and defines the portions provided by Microsoft, and the portions defined by software and hardware vendors:  
   
  ![Screenshot shows the XPS print system.](./media/printing-overview/xml-paper-specification-print-system.png)  
   

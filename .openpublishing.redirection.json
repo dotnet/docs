@@ -870,7 +870,7 @@
         {
             "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/index.md",
             "redirect_url": "/dotnet/standard/assembly",
-            "redirect_document_id":true
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
@@ -1628,27 +1628,27 @@
             "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
         },
         {
-            "source_path" : "docs/framework/interop/com-wrappers.md",
+            "source_path": "docs/framework/interop/com-wrappers.md",
             "redirect_url": "/dotnet/standard/native-interop/com-wrappers",
             "redirect_document_id": true
         },
         {
-            "source_path" : "docs/framework/interop/com-callable-wrapper.md",
+            "source_path": "docs/framework/interop/com-callable-wrapper.md",
             "redirect_url": "/dotnet/standard/native-interop/com-callable-wrapper",
             "redirect_document_id": true
         },
         {
-            "source_path" : "docs/framework/interop/runtime-callable-wrapper.md",
+            "source_path": "docs/framework/interop/runtime-callable-wrapper.md",
             "redirect_url": "/dotnet/standard/native-interop/runtime-callable-wrapper",
             "redirect_document_id": true
         },
         {
-            "source_path" : "docs/framework/interop/applying-interop-attributes.md",
+            "source_path": "docs/framework/interop/applying-interop-attributes.md",
             "redirect_url": "/dotnet/standard/native-interop/apply-interop-attributes",
             "redirect_document_id": true
         },
         {
-            "source_path" : "docs/framework/interop/qualifying-net-types-for-interoperation.md",
+            "source_path": "docs/framework/interop/qualifying-net-types-for-interoperation.md",
             "redirect_url": "/dotnet/standard/native-interop/qualify-net-types-for-interoperation",
             "redirect_document_id": true
         },
@@ -1728,7 +1728,6 @@
             "source_path": "docs/framework/migration-guide/net-compatibility-diagnostics.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
-
         {
             "source_path": "docs/framework/migration-guide/release-keys-and-os-versions.md",
             "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
@@ -2536,10 +2535,9 @@
             "redirect_document_id": true
         },
         {
-
             "source_path": "docs/machine-learning/how-to-guides/determine-global-feature-importance-in-model.md",
             "redirect_url": "/dotnet/machine-learning/how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net",
-            "redirect_document_id":true
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md",
@@ -3357,6 +3355,26 @@
             "source_path": "docs/visual-basic/reference/vb6-support.md",
             "redirect_url": "/visualstudio/vb6/vb6-support",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/docker/index.md",
+            "redirect_url": "/dotnet/core/docker/intro-net-docker",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md",
+            "redirect_url": "/dotnet/fsharp/using-fsharp-on-azure/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/index.md",
+            "redirect_url": "/dotnet/fsharp/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/asynchronous-and-concurrent-programming/index.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async",
+            "redirect_document_id": false
         }
     ]
 }

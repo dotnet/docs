@@ -16,7 +16,7 @@ Cloud-native systems implement a microservice-based architecture with many small
 
 A cluster represents a pool of virtual machines that are federated together to form a highly available environment. They're managed with an orchestration tool, which is responsible for deploying and managing the containerized microservices. Figure 4-1 shows a Kubernetes cluster deployed in the Azure cloud with the fully managed [Azure Kubernetes Services](https://docs.microsoft.com/azure/aks/intro-kubernetes).
 
-![A Kubernetes cluster in Azure](media/kubernetes-cluster-in-azure.png)
+![A Kubernetes cluster in Azure](./media/kubernetes-cluster-in-azure.png)
 
 **Figure 4-1**. A Kubernetes cluster in Azure
 

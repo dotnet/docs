@@ -12,6 +12,7 @@ Front-end client applications (mobile, web, and desktop applications) require a 
 To keep things simple, a front-end client could *directly communicate* with the backend microservices, shown in Figure 4-2.
 
 ![Direct client to service communication](./media/direct-client-to-service-communication.png)
+
 **Figure 4-2**. Direct client to service communication
 
 With this approach, each microservice has a public endpoint and is accessible by the front-end client. In a production environment, you'd go a step further and place a load balancer in front of your microservices, routing traffic proportionately.
@@ -62,13 +63,7 @@ Like any API Gateway, its primary functionality is to forward incoming HTTP requ
 | Correlation Pass-Through | Custom Middleware |
 | Quality of Service | Retry Policies |
 
-Each Ocelot gateway specifies the upstream and downstream addresses and configurable features in a JSON configuration file. 
-
-Shown in Figure 4-5, the client sends an HTTP request to the Ocelot gateway. Once received, Ocelot passes the HttpRequest object through its pipeline manipulating it into the state specified by its configuration. At the end of pipeline, Ocelot creates a new HTTPResponseObject and passes it to the downstream service. For the response, Ocelot reverses the pipeline, sending the response back to client.
-
-![Basic Ocelot implementation](./media/basic-ocelot-implementation.png)
-
-**Figure 4-5**. Basic Ocelot implementation
+Each Ocelot gateway specifies the upstream and downstream addresses and configurable features in a JSON configuration file. The client sends an HTTP request to the Ocelot gateway. Once received, Ocelot passes the HttpRequest object through its pipeline manipulating it into the state specified by its configuration. At the end of pipeline, Ocelot creates a new HTTPResponseObject and passes it to the downstream service. For the response, Ocelot reverses the pipeline, sending the response back to client.
 
 Ocelot is available as a NuGet package. It targets the NET Standard 2.0, making it compatible with both .NET Core 2.0+ and .NET Framework 4.6.1+ runtimes. Ocelot integrates with anything that speaks HTTP and runs on the platforms which .NET Core supports: Linux, macOS, and Windows. Ocelot is extensible and supports many modern platforms, including Docker containers, Azure Kubernetes Services, or other public clouds.  Ocelot integrates with open-source packages like Consul, GraphQL, and Netflix’s Eureka. 
 
@@ -76,10 +71,10 @@ Consider Ocelot for simple cloud-native applications that don’t require the ri
 
 ## Azure API Management
 
-For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a rich developer and administrative experience. API Management is shown in Figure 4-6. 
+For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a rich developer and administrative experience. API Management is shown in Figure 4-5. 
 
 ![Azure API Management](./media/azure-api-management.png)
-**Figure 4-6**. Azure API Management
+**Figure 4-5**. Azure API Management
 
 To start, API Management exposes a gateway server that allows controlled access to backend services based upon configurable rules and policies. 
 
@@ -143,33 +138,17 @@ The new pricing tier is a great choice for cloud-native systems that expose serv
 
 ## SignalR Services
 
+Another option for frontend communication with cloud-native applications is that of push and real-time communication. Many applications, such as stock-tickers, dashboards, and job progress updates, require two-way communication across HTTP-based applications. These systems often come with high-frequency data flows and many concurrent connections between the client and server. Manually implementing real-time connectivity in your cloud-native systems would require complex infrastructure to ensure reliable messaging to connected clients. 
 
-https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture
+[Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/) is a fully managed Azure service that enables you to build real-time experiences into your cloud-native applications. Technical implementation details like capacity provisioning, scaling, and persistent connections are abstracted away, freeing you to focus on application features, not infrastructure plumbing. 
 
-https://github.com/Azure-Samples/Serverless-microservices-reference-architecture/blob/master/documentation/services-intercommunication.md
+Once enabled, a cloud-based HTTP service can push content updates directly to connected clients, including browser, mobile and desktop applications. As a result, clients are updated without the need to poll the server. Azure SignalR abstracts the transport technologies that create real-time connectivity, including WebSockets, Server-Side Events, and Long Polling. Developers focus on sending messages to all or specific subsets of connected clients.
 
-
-https://altkomsoftware.pl/en/blog/building-microservices-on-net-core-1/
-
-https://piotrgankiewicz.com/2018/07/09/net-core-microservices-theory-dshop-solution-structure/
-
-https://github.com/devmentors/DNC-DShop.Api
-
-
-
-As companies accelerate their digital transformation journey, they look to construct systems that make decisions in near-real-time. These systems often come with high-frequency data flows and many concurrent connections between the client and server. Two-way communication across HTTP-based applications becomes essential. However, manually implementing real-time connectivity in your cloud-native systems would require complex infrastructure to ensure reliable messaging to connected clients. 
-
-Instead, [Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/) is a fully managed Azure service that enables you to build real-time experiences such as chat, stock tickers,and live dashboards into your cloud-native applications. Technical implementation details like capacity provisioning, scaling, and persistent connections are abstracted away, freeing you to focus on application features, not infrastructure plumbing. 
-
-Once enabled, a cloud-based HTTP service can push content updates directly to connected clients, including browser, mobile and desktop applications. As a result, clients are updated without the need to poll the server. Applications that require high frequency updates such as chat, gaming, and financial apps are great candidates for this service.
-
-Azure SignalR abstracts the transport technologies that create real-time connectivity, including WebSockets, Server-Side Events, and Long Polling. Developers focus on sending messages to all or specific subsets of connected clients.
-
-Figure 4-7 shows a set of HTTP Clients connecting to a Cloud-native application with Azure SignalR enabled.
+Figure 4-6 shows a set of HTTP Clients connecting to a Cloud-native application with Azure SignalR enabled.
 
 ![Azure SignalR](./media/azure-signalr-service.png)
 
-**Figure 4-7**. Azure SignalR
+**Figure 4-6**. Azure SignalR
 
 Azure SignalR Service can be integrated with other Azure services opening up many possibilities for your cloud-native applications.
 

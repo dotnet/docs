@@ -21,6 +21,7 @@ For new features, see [Visual Basic 16](#visual-basic-16)
 
 
 ## Previous versions
+
 Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
 For new features, see [Visual Basic 15.5](#visual-basic-155)
 

@@ -202,7 +202,7 @@ In addition to the built-in support for Areas, you can also use your own folder 
 ASP.NET Core uses built-in convention types to control its behavior. You can modify or replace these conventions. For example, you can create a convention that will automatically get the feature name for a given controller based on its namespace (which typically correlates to the folder in which the controller is located):
 
 ```csharp
-FeatureConvention : IControllerModelConvention
+public class FeatureConvention : IControllerModelConvention
 {
     public void Apply(ControllerModel controller)
     {
@@ -468,7 +468,7 @@ public class Program
     public static void Main(string[] args)
     {
         StartConnectionAsync();
-        _connection.On("receiveMessage", (arguments) =>;
+        _connection.On("receiveMessage", (arguments) =>
         {
             Console.WriteLine(\$"{arguments\[0\]} said: {arguments\[1\]}");
         });

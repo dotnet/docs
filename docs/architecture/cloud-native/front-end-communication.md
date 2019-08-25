@@ -7,9 +7,9 @@ ms.date: 08/24/2019
 
 # Front-end client communication
 
-Front-end client applications (mobile, web, and desktop applications) require a communication channel to interact  with backend microservices that are part of a cloud-native system.  
+Front-end client applications (mobile, web, and desktop applications) require a communication channel to interact  with back-end microservices that are part of a cloud-native system.  
 
-To keep things simple, a front-end client could *directly communicate* with the backend microservices, shown in Figure 4-2.
+To keep things simple, a front-end client could *directly communicate* with the back-end microservices, shown in Figure 4-2.
 
 ![Direct client to service communication](./media/direct-client-to-service-communication.png)
 
@@ -17,17 +17,17 @@ To keep things simple, a front-end client could *directly communicate* with the 
 
 With this approach, each microservice has a public endpoint and is accessible by the front-end client. In a production environment, you'd go a step further and place a load balancer in front of your microservices, routing traffic proportionately.
 
-While simple to implement, direct client communication would be acceptable only for simple microservice applications. This pattern tightly couples the frontend client to the core backend services, opening the door for a number of potential problems, including:
+While simple to implement, direct client communication would be acceptable only for simple microservice applications. This pattern tightly couples the front-end client to the core back-end services, opening the door for a number of potential problems, including:
 
-- Client susceptibility to backend service refactoring.
+- Client susceptibility to back-end service refactoring.
 
-- A wider attack surface as core backend services are directly exposed.
+- A wider attack surface as core back-end services are directly exposed.
 
 - Duplication of cross-cutting concerns across each microservice.
 
 - Overly complex client code.
 
-Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the frontend applications and backend services. The pattern is shown in Figure 4-3.
+Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the front-end applications and backend services. The pattern is shown in Figure 4-3.
 
 ![API Gateway Pattern](./media/api-gateway-pattern.png)
 
@@ -35,9 +35,9 @@ Instead, a widely accepted cloud design pattern is to implement an [API Gateway 
 
 In the previous figure, note how the API Gateway service abstracts the backend core microservices. Implemented as a simple .NET Core API application (in this case), it acts as a *reverse proxy*, routing incoming routing traffic to the internal microservices. 
 
-The gateway insulates the client from internal service partitioning and refactoring. If you make a change to a backend service, you can accommodate for it in the gateway without breaking the client. It also acts as your first line of defense for implementing cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the backend core services to the gateway, centralizing these concerns and simplifying the back-end services.
+The gateway insulates the client from internal service partitioning and refactoring. If you make a change to a back-end service, you can accommodate for it in the gateway without breaking the client. It also acts as your first line of defense for implementing cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the back-end core services to the gateway, centralizing these concerns and simplifying the back-end services.
 
-Care must be taken to keep the API Gateway simple and fast. Typically, business logic is kept out of the gateway. A complex gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems often expose multiple API Gateways segmented by client type (mobile, web, desktop) or backend functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern provides direction for implementing multiple gateways. The pattern is shown in Figure 4-4.
+Care must be taken to keep the API Gateway simple and fast. Typically, business logic is kept out of the gateway. A complex gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems often expose multiple API Gateways segmented by client type (mobile, web, desktop) or back-end functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern provides direction for implementing multiple gateways. The pattern is shown in Figure 4-4.
 
 ![API Gateway Pattern](./media/backend-for-frontend-pattern.png)
 
@@ -76,7 +76,7 @@ For moderate to large-scale cloud-native systems, you may consider [Azure API Ma
 ![Azure API Management](./media/azure-api-management.png)
 **Figure 4-5**. Azure API Management
 
-To start, API Management exposes a gateway server that allows controlled access to backend services based upon configurable rules and policies. 
+To start, API Management exposes a gateway server that allows controlled access to back-end services based upon configurable rules and policies. 
 
 For developers, API Management offers a developer portal that provides access to services, documentation, and sample code for invoking them. Developers can use Swagger/Open API to inspect service endpoints and log and track issues. API Management works across any development platform (.NET, Java, Golang, and so on). 
 
@@ -98,7 +98,7 @@ Here are examples of how policies can affect the behavior of your cloud-native s
 
 - Convert requests from SOAP to REST or between different data formats, such as from XML to JSON.
 
-Azure API Management can expose backend services that are hosted anywhere – in the cloud or your data center. For legacy services that you may expose in your cloud-native systems, it supports both REST and SOAP APIs. Even other Azure services can be exposed through API Management. You could place a managed API on top of an Azure backing service like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
+Azure API Management can expose back-end services that are hosted anywhere – in the cloud or your data center. For legacy services that you may expose in your cloud-native systems, it supports both REST and SOAP APIs. Even other Azure services can be exposed through API Management. You could place a managed API on top of an Azure backing service like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
 
 Azure API Management is available across [four different pricing tiers](https://azure.microsoft.com/pricing/details/api-management/):
 
@@ -138,7 +138,7 @@ The new pricing tier is a great choice for cloud-native systems that expose serv
 
 ## SignalR Services
 
-Another option for frontend communication with cloud-native applications is that of push and real-time communication. Many applications, such as stock-tickers, dashboards, and job progress updates, require two-way communication across HTTP-based applications. These systems often come with high-frequency data flows and many concurrent connections between the client and server. Manually implementing real-time connectivity in your cloud-native systems would require complex infrastructure to ensure reliable messaging to connected clients. 
+Another option for front-end communication with cloud-native applications is that of push and real-time communication. Many applications, such as stock-tickers, dashboards, and job progress updates, require two-way communication across HTTP-based applications. These systems often come with high-frequency data flows and many concurrent connections between the client and server. Manually implementing real-time connectivity in your cloud-native systems would require complex infrastructure to ensure reliable messaging to connected clients. 
 
 [Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/) is a fully managed Azure service that enables you to build real-time experiences into your cloud-native applications. Technical implementation details like capacity provisioning, scaling, and persistent connections are abstracted away, freeing you to focus on application features, not infrastructure plumbing. 
 

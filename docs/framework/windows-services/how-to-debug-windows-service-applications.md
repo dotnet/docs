@@ -14,7 +14,7 @@ author: "ghogen"
 A service must be run from within the context of the Services Control Manager rather than from within Visual Studio. For this reason, debugging a service is not as straightforward as debugging other Visual Studio application types. To debug a service, you must start the service and then attach a debugger to the process in which it is running. You can then debug your application by using all of the standard debugging functionality of Visual Studio.  
   
 > [!CAUTION]
->  You should not attach to a process unless you know what the process is and understand the consequences of attaching to and possibly killing that process. For example, if you attach to the WinLogon process and then stop debugging, the system will halt because it can’t operate without WinLogon.  
+> You should not attach to a process unless you know what the process is and understand the consequences of attaching to and possibly killing that process. For example, if you attach to the WinLogon process and then stop debugging, the system will halt because it can’t operate without WinLogon.  
   
  You can attach the debugger only to a running service. The attachment process interrupts the current functioning of your service; it doesn’t actually stop or pause the service's processing. That is, if your service is running when you begin debugging, it is still technically in the Started state as you debug it, but its processing has been suspended.  
   

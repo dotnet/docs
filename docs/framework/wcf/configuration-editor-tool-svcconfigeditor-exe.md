@@ -23,7 +23,7 @@ The Windows Communication Foundation (WCF) Service Configuration Editor (SvcConf
  The editor supports IntelliSense and enforces schema compliance. The resulting output is guaranteed to comply with the schema of the configuration file and to have syntactically correct data values. However, the editor does not guarantee that the configuration file is semantically valid. In other words, the editor does not guarantee that the configuration file can work with the service it configures.  
   
 > [!CAUTION]
->  The editor cannot purge a configuration element from the configuration file once you have modified the element. For example, if you use the editor to set the endpoint name to a non-empty string and save it, the configuration file has the following content, as shown in the following example.  
+> The editor cannot purge a configuration element from the configuration file once you have modified the element. For example, if you use the editor to set the endpoint name to a non-empty string and save it, the configuration file has the following content, as shown in the following example.  
 >   
 >  `<endpoint binding="basicHttpBinding" name="somename" />`  
 >   

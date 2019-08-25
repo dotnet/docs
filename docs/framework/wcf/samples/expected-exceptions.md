@@ -42,7 +42,7 @@ catch (CommunicationException exception)
  If an expected exception occurs, the client may or may not be usable afterwards. To determine if the client is still usable, check that the `State` property is `CommunicationState`.Opened. If it is still opened, then it is still usable. Otherwise you should abort the client and release all references to it.  
   
 > [!CAUTION]
->  You may observe that clients that have a session are often no longer usable after an exception, and clients that do not have a session are often still usable after an exception. However, neither of these is guaranteed, so if you want to try to continue using the client after an exception your application should check the `State` property to verify the client is still opened.  
+> You may observe that clients that have a session are often no longer usable after an exception, and clients that do not have a session are often still usable after an exception. However, neither of these is guaranteed, so if you want to try to continue using the client after an exception your application should check the `State` property to verify the client is still opened.  
   
  When you run the sample, the operation responses and exceptions are displayed in the client console window.  
   

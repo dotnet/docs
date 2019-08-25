@@ -91,7 +91,7 @@ Windows Communication Foundation (WCF) Test Client (WcfTestClient.exe) is a GUI 
  However, you might need to edit the configuration file to make it consistent with the regenerated proxy. If the regenerated proxy and configuration file are mismatched due to an updated service, errors will occur when the service is invoked.  
   
 > [!CAUTION]
->  If you have modified the client configuration file and select to reuse it in the future, you can find the file in the following location:  
+> If you have modified the client configuration file and select to reuse it in the future, you can find the file in the following location:  
 >   
 >  \Documents and Settings\\[User Account]\My Documents\Test Client Projects.  
 >   

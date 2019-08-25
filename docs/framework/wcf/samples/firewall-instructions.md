@@ -15,7 +15,7 @@ You must enable several ports or programs in the firewall so that the Windows Co
  If you are unsure of which procedure to use, choose the first option. If you are running a firewall from another vendor, you might need to make similar changes.  
   
 > [!IMPORTANT]
->  Changing your firewall configuration affects your security. It is recommended that you record the changes you make and remove them when you are finished working with the samples.  
+> Changing your firewall configuration affects your security. It is recommended that you record the changes you make and remove them when you are finished working with the samples.  
   
 ### To enable samples programs in advance  
   

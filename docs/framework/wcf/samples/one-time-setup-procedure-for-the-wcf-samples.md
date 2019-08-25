@@ -4,25 +4,26 @@ ms.date: "03/30/2017"
 ms.assetid: a5848ffd-3eb5-432d-812e-bd948ccb6bca
 ---
 # One-Time Setup Procedure for the Windows Communication Foundation Samples
+
 Most of the Windows Communication Foundation (WCF) samples are hosted in Internet Information Services (IIS) and run from a common virtual directory. This one-time setup procedure creates a folder on the disk; it also adds a virtual directory to IIS named **ServiceModelSamples**.
 
- The **ServiceModelSamples** virtual directory is used for building and running all samples that use an IIS-hosted service. This is the only virtual directory that is required to run the samples. Building a sample will replace any previously deployed service at this virtual directory; only the most recently built sample will be deployed and available in this virtual directory.
+The **ServiceModelSamples** virtual directory is used for building and running all samples that use an IIS-hosted service. This is the only virtual directory that is required to run the samples. Building a sample will replace any previously deployed service at this virtual directory; only the most recently built sample will be deployed and available in this virtual directory.
 
 > [!NOTE]
-> You must run all commands under a local administrator account. If you are using Windows 7, [!INCLUDE[windowsver](../../../../includes/windowsver-md.md)], or Windows Server 2008 R2, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, and then click **Run as administrator**. All commands in this topic must be run in a command prompt that has the appropriate path settings.  The easiest way to ensure this is by using the Visual Studio Command Prompt. To open this prompt, click **Start**, select **All Programs**, scroll down to **Visual Studio 2010**, select **Visual Studio Tools**, right-click **Visual Studio Command Prompt (2010)**, and then click **Run as administrator**. If you have one of the Visual Studio Express editions installed, this command prompt is not available, and you will have to add "C:\Windows\Microsoft.Net\Framework\v4.0" to the system path.  
-  
-### One-time setup procedure for WCF samples  
-  
-1. Ensure that ASP.NET is set up. For more information about how to set up ASP.NET, see [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md).  
-  
-2. Ensure that [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**  
-  
-3. If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).  
-  
-4. Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752252(v=vs.90)).  
-  
+> You must run all commands under a local administrator account. If you are using Windows 7, [!INCLUDE[windowsver](../../../../includes/windowsver-md.md)], or Windows Server 2008 R2, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, and then click **Run as administrator**. All commands in this topic must be run in a command prompt that has the appropriate path settings.  The easiest way to ensure this is by using the Visual Studio Command Prompt. To open this prompt, click **Start**, select **All Programs**, scroll down to **Visual Studio 2010**, select **Visual Studio Tools**, right-click **Visual Studio Command Prompt (2010)**, and then click **Run as administrator**. If you have one of the Visual Studio Express editions installed, this command prompt is not available, and you will have to add "C:\Windows\Microsoft.Net\Framework\v4.0" to the system path.
+
+### One-time setup procedure for WCF samples
+
+1. Ensure that ASP.NET is set up. For more information about how to set up ASP.NET, see [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md).
+
+2. Ensure that [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
+
+3. If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).
+
+4. Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752252(v=vs.90)).
+
     > [!WARNING]
-    >  If IIS is reinstalled, the following commands will need to be run again.
+    > If IIS is reinstalled, the following commands will need to be run again.
 
     ```
     "%WINDIR%\Microsoft.Net\Framework\v4.0.30319\aspnet_regiis" –i –enable
@@ -30,24 +31,24 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
     ```
 
     > [!WARNING]
-    >  Running the command `aspnet_regiis –i –enable` will make the Default App Pool run using [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], which may produce incompatibility issues for other applications on the same computer.  
-  
-5. Follow the [Firewall Instructions](../../../../docs/framework/wcf/samples/firewall-instructions.md) for enabling the ports used by the samples.  
-  
-6. Check for the following default directory: \<InstallDrive>:**\WF_WCF_Samples**. If the samples were previously installed, this is the default directory.  
-  
-7. If the samples are not installed, install them from the samples download location for [Visual C#](https://go.microsoft.com/fwlink/?LinkId=190939) or [Visual Basic](https://go.microsoft.com/fwlink/?LinkID=193373).  
-  
-8. After installing the samples, go to : \<InstallDrive>:**\WF_WCF_Samples\WCF\Setup\\**  
-  
-9. Run the **Setupvroot.bat** batch file. The following steps are performed:  
-  
-    - A virtual directory is created in IIS named ServiceModelSamples.  
-  
-    - New disk directories are created named %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples and %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples\bin.  
-  
-     If you prefer to set up these directories manually, see the [Virtual Directory Setup Instructions](../../../../docs/framework/wcf/samples/virtual-directory-setup-instructions.md). To revert all changes done in this step, run cleanupvroot.bat after you finish using the samples.  
-  
+    > Running the command `aspnet_regiis –i –enable` will make the Default App Pool run using [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], which may produce incompatibility issues for other applications on the same computer.
+
+5. Follow the [Firewall Instructions](../../../../docs/framework/wcf/samples/firewall-instructions.md) for enabling the ports used by the samples.
+
+6. Check for the following default directory: \<InstallDrive>:**\WF_WCF_Samples**. If the samples were previously installed, this is the default directory.
+
+7. If the samples are not installed, install them from the samples download location for [Visual C#](https://go.microsoft.com/fwlink/?LinkId=190939) or [Visual Basic](https://go.microsoft.com/fwlink/?LinkID=193373).
+
+8. After installing the samples, go to : \<InstallDrive>:**\WF_WCF_Samples\WCF\Setup\\**
+
+9. Run the **Setupvroot.bat** batch file. The following steps are performed:
+
+    - A virtual directory is created in IIS named ServiceModelSamples.
+
+    - New disk directories are created named %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples and %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples\bin.
+
+    If you prefer to set up these directories manually, see the [Virtual Directory Setup Instructions](../../../../docs/framework/wcf/samples/virtual-directory-setup-instructions.md). To revert all changes done in this step, run cleanupvroot.bat after you finish using the samples.
+
     > [!NOTE]
     > This procedure must be performed only once on a computer, unless cleanupvroot.bat is run.
 
@@ -66,7 +67,7 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
 
     - Copy the new FindPrivateKey tool to this directory.
 
-     This tool is required by samples that use certificates and are hosted in IIS.
+    This tool is required by samples that use certificates and are hosted in IIS.
 
     > [!NOTE]
     > For security purposes, remember to remove the virtual directory definition and permissions granted in the setup steps above by running the batch file named Cleanupvroot.bat after you are finished with the samples.

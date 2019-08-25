@@ -22,7 +22,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
 2. Right-click the **WF45GettingStartedTutorial** solution in **Solution Explorer** and select **Add**, **New Project**.  
   
     > [!TIP]
-    >  If the **Solution Explorer** window is not displayed, select **Solution Explorer** from the **View** menu.
+    > If the **Solution Explorer** window is not displayed, select **Solution Explorer** from the **View** menu.
 
 3. In the **Installed** node, select **Visual C#**, **Workflow** (or **Visual Basic**, **Workflow**).
 
@@ -40,7 +40,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
 1. Double-click **Program.cs** or **Module1.vb** in **Solution Explorer** to display the code.
 
     > [!TIP]
-    >  If the **Solution Explorer** window is not displayed, select **Solution Explorer** from the **View** menu.
+    > If the **Solution Explorer** window is not displayed, select **Solution Explorer** from the **View** menu.
 
      Because this project was created by using the **Workflow Console Application** template, **Program.cs** or **Module1.vb** contains the following basic workflow hosting code.
 

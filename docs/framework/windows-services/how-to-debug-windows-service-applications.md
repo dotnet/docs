@@ -49,7 +49,7 @@ A service must be run from within the context of the Services Control Manager ra
 8. In the **Available Processes** section, choose the process for your service, and then choose **Attach**.  
   
     > [!TIP]
-    >  The process will have the same name as the executable file for your service.  
+    > The process will have the same name as the executable file for your service.  
   
      The **Attach to Process** dialog box appears.  
   

@@ -101,7 +101,7 @@ Press ENTER to terminate client.
 4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
     > [!NOTE]
-    >  Because the server is self-hosted, you must specify an identity in the client's App.config file to run the sample in a cross-machine configuration.  
+    > Because the server is self-hosted, you must specify an identity in the client's App.config file to run the sample in a cross-machine configuration.  
   
     ```xml  
     <client>  

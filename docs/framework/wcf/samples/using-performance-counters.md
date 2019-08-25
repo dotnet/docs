@@ -38,14 +38,14 @@ This sample demonstrates how to access Windows Communication Foundation (WCF) pe
 1. Start the Performance Monitor Tool by clicking **Start**, **Run…**, enter `perfmon` and click **OK,** or from Control Panel, select **Administrative Tools** and double-click **Performance**.  
   
     > [!NOTE]
-    >  You cannot add counters until the sample code is running.  
+    > You cannot add counters until the sample code is running.  
   
 2. Remove the performance counters that are listed by selecting them and pressing the Delete key.  
   
 3. Add WCF counters by right-clicking the graph pane and selecting **Add Counters**. In the **Add Counters** dialog box, select **ServiceModelOperation 3.0.0.0, ServiceModelEndpoint 3.0.0.0, or ServiceModelService 3.0.0.0** in the Performance object drop down list box. Select the counters you want to view from the list.  
   
     > [!NOTE]
-    >  There are no WCF performance counters for a service if there are no WCF services running on the computer.  
+    > There are no WCF performance counters for a service if there are no WCF services running on the computer.  
   
 ### To use the Configuration Editor to enable counters  
   

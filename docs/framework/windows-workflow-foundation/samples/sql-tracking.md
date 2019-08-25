@@ -13,7 +13,7 @@ This sample demonstrates how to write a custom SQL tracking participant, that wr
 2. Create the SQL Server tracking database by running Trackingsetup.cmd in the scripts directory (\WF\Basic\Tracking\SqlTracking\CS\Scripts). This creates a database called TrackingSample.
 
     > [!NOTE]
-    >  The script creates the database on the default instance of SQL Express. If you want to install it on a different database instance, edit the Trackingsetup.cmd script.  
+    > The script creates the database on the default instance of SQL Express. If you want to install it on a different database instance, edit the Trackingsetup.cmd script.  
   
 3. Open SqlTrackingSample.sln in Visual Studio 2010.  
   
@@ -42,7 +42,7 @@ This sample demonstrates how to write a custom SQL tracking participant, that wr
 1. Run theTrackingcleanup.cmd script in the sample directory (\WF\Basic\Tracking\SqlTracking).  
   
     > [!NOTE]
-    >  The Trackingcleanup.cmd attempts to delete the database in your local computer SQL Express. If you are using another SQL server instance, edit Trackingcleanup.cmd.
+    > The Trackingcleanup.cmd attempts to delete the database in your local computer SQL Express. If you are using another SQL server instance, edit Trackingcleanup.cmd.
 
 > [!IMPORTANT]
 > The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

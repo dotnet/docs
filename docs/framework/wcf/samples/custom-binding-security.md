@@ -95,7 +95,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
     ```
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2010 Command Prompt. It requires that the MSSDK environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Visual Studio 2010 Command Prompt.
+    > The Setup.bat batch file is designed to be run from a Visual Studio 2010 Command Prompt. It requires that the MSSDK environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Visual Studio 2010 Command Prompt.
 
 ### To set up, build, and run the sample
 
@@ -110,7 +110,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 1. Open a Developer Command Prompt for Visual Studio window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
 2. Launch Service.exe from \service\bin.  
   

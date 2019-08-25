@@ -49,12 +49,12 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
      If you prefer to set up these directories manually, see the [Virtual Directory Setup Instructions](../../../../docs/framework/wcf/samples/virtual-directory-setup-instructions.md). To revert all changes done in this step, run cleanupvroot.bat after you finish using the samples.  
   
     > [!NOTE]
-    >  This procedure must be performed only once on a computer, unless cleanupvroot.bat is run.
+    > This procedure must be performed only once on a computer, unless cleanupvroot.bat is run.
 
 10. You must grant permission to modify for %SystemDrive%\inetpub\wwwroot to the account under which you are building the samples and the Network Service user. While building, some Web-hosted samples might attempt to copy the compiled binaries to the previously mentioned location, and if you have not set the appropriate permissions, the build will break. Alternatively, you can leave the permissions as they are and run the SDK command prompt or Visual Studio Command Prompt (2012) as Administrator, or build the samples in Visual Studio 2012, also run as Administrator.
 
     > [!NOTE]
-    >  If this step is not completed, all IIS-hosted samples will fail while building. Ensure that you set the permissions correctly, or run both the SDK command prompt and Visual Studio Command Prompt (2012) as Administrator.
+    > If this step is not completed, all IIS-hosted samples will fail while building. Ensure that you set the permissions correctly, or run both the SDK command prompt and Visual Studio Command Prompt (2012) as Administrator.
 
 11. Create a C:\logs directory on the computer; some samples might be expecting it. Make sure that the appropriate account has write access granted to this folder. For Windows 7, [!INCLUDE[wv](../../../../includes/wv-md.md)], and Windows Server 2008 R2, this account is **Network Service**. For  [!INCLUDE[lserver](../../../../includes/lserver-md.md)], the account is NT Authority\Network Service. For [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], the account is ASPNET.
 
@@ -69,13 +69,13 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
      This tool is required by samples that use certificates and are hosted in IIS.
 
     > [!NOTE]
-    >  For security purposes, remember to remove the virtual directory definition and permissions granted in the setup steps above by running the batch file named Cleanupvroot.bat after you are finished with the samples.
+    > For security purposes, remember to remove the virtual directory definition and permissions granted in the setup steps above by running the batch file named Cleanupvroot.bat after you are finished with the samples.
 
 13. Samples that are self-hosted (not hosted in IIS) require permission to register HTTP addresses on the computer for listening. The permission for an HTTP namespace reservation comes from the user account used to run the sample. By default, administrator accounts have the permission to register any HTTP address. Non-administrator accounts must be granted permission for the HTTP namespaces used by the samples. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](../../../../docs/framework/wcf/feature-details/configuring-http-and-https.md).
 
 14. Some samples require Message Queuing. See [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md) for installation instructions.
 
     > [!NOTE]
-    >  Ensure that you start the MSMQ service before you run any samples that require Message Queuing.
+    > Ensure that you start the MSMQ service before you run any samples that require Message Queuing.
 
 15. Some samples require certificates. See [Internet Information Services (IIS) Server Certificate Installation Instructions](../../../../docs/framework/wcf/samples/iis-server-certificate-installation-instructions.md).

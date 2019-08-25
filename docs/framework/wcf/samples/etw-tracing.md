@@ -79,7 +79,7 @@ Logman stop Wcf
 2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
     > [!NOTE]
-    >  To use the RegisterProvider.bat, SetupETW.bat and CleanupETW.bat commands, you must run under a local administrator account. If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)] or later, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, then click **Run as administrator**.  
+    > To use the RegisterProvider.bat, SetupETW.bat and CleanupETW.bat commands, you must run under a local administrator account. If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)] or later, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, then click **Run as administrator**.  
   
 3. Before running the sample, run RegisterProvider.bat on the client and server. This sets up the resulting ETWTracingSampleLog.etl file to generate traces that can be read by the Service Trace Viewer. This file can be found in the C:\logs folder. If this folder does not exist, it must be created or no traces are generated. Then, run SetupETW.bat on the client and server computers to begin the ETW Trace Session. The SetupETW.bat file can be found under the CS\Client folder.  
   

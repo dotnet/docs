@@ -92,7 +92,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
 4. Click the **Activation** tab of the user interface application "WasNetActivator.exe". Click the **Start** button to start the listener adapter. Now you are ready to run the program.  
   
     > [!NOTE]
-    >  When you are finished with this sample, you must run Cleanup.bat to remove the net.udp binding from the "Default Web Site".  
+    > When you are finished with this sample, you must run Cleanup.bat to remove the net.udp binding from the "Default Web Site".  
   
 ## Sample Usage  
  After compilation, there are four different binaries generated:  

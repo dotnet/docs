@@ -62,7 +62,7 @@ calcClient.ChannelFactory.Endpoint.Behaviors.Add(
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
     > [!NOTE]
-    >  For cross-machine, you must replace localhost in the Client.cs file with the name of the service machine.  
+    > For cross-machine, you must replace localhost in the Client.cs file with the name of the service machine.  
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

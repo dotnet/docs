@@ -16,6 +16,7 @@ ms.author: ronpet
 This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the lastest version of the language.
   
 ## Current version
+
 Visual Basic 16 / Visual Studio 2019 Version 16.0  
 For new features, see [Visual Basic 16](#visual-basic-16)
 

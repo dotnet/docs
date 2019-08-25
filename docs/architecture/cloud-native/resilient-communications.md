@@ -69,7 +69,10 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 
 (add summary here)
 
-## Additional resources
+### References 
+
+- [Azure SignalR Service, a fully-managed service to add real-time functionality](https://azure.microsoft.com/blog/azure-signalr-service-a-fully-managed-service-to-add-real-time-functionality/)
+
 
 (add references here)
 

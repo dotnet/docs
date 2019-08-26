@@ -63,6 +63,7 @@ Once deployed to production, the eShopOnContainers application would be able to 
 - [Azure Cache for Redis](https://azure.microsoft.com/services/cache/)
 - [Azure Cosmos DB's API for MongoDB](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)
 - [Azure Service Bus](https://docs.microsoft.comazure/service-bus-messaging/service-bus-messaging-overview)
+- [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/overview)
 
 >[!div class="step-by-step"]
 >[Previous](introduce-eshoponcontainers-reference-app.md)

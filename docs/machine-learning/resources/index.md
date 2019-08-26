@@ -11,5 +11,5 @@ The following  [ML.NET](../index.yml) resources may be helpful to build custom A
 - [Machine learning glossary](glossary.md): contains important machine learning term definitions.
 - [Machine learning basics](basics.md): provides links to learning resources to get started with machine learning.
 - [Machine learning tasks](tasks.md): describes various machine learning usage scenarios supported by ML.NET.
-- [IDataView Type System](https://xadupre.github.io/machinelearningext/mlnetdocs/idataviewtypesystem.html): provides an in-depth explanation of the [IDataView](xref:Microsoft.ML.IDataView) interface and its type system.
+- [IDataView type system](https://xadupre.github.io/machinelearningext/mlnetdocs/idataviewtypesystem.html): provides an in-depth explanation of the [IDataView](xref:Microsoft.ML.IDataView) interface and its type system.
 - [Data transforms](transforms.md): provides the overview of data transforms supported by ML.NET.

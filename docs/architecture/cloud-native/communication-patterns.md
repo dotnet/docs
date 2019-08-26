@@ -38,7 +38,8 @@ While they provide many benefits, microservices are no free lunch. Local in proc
 
 The book [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/standard/microservices-architecture/) provides an in-depth coverage of communication patterns for microservice applications. In this chapter, we provide a high-level overview of these patterns along with implementation options available in the Azure cloud.
 
-In this chapter, we'll first address communication between front-end applications and back-end microservices and then to microservice-to-microservice communication.
+In this chapter, we'll first address communication between front-end applications and back-end microservices and then to microservice-to-microservice communication. We'll see how the Azure cloud provides a variety of *backing services* to support cloud-native communication.  
+
 
 >[!div class="step-by-step"]
 >[Previous](other-deployment-options.md)

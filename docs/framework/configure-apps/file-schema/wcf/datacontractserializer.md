@@ -42,7 +42,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
  See the <xref:System.Runtime.Serialization.DataContractSerializer> documentation for more information about known types.  
   
 > [!CAUTION]
->  The `<dataContractSerializer>` behavior element (if present) should always appear before the `<enableWebScript>` behavior element in the configuration file. Otherwise, the resulting behavior is undefined.  
+> The `<dataContractSerializer>` behavior element (if present) should always appear before the `<enableWebScript>` behavior element in the configuration file. Otherwise, the resulting behavior is undefined.  
   
 ## See also
 

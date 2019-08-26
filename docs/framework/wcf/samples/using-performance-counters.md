@@ -38,14 +38,14 @@ This sample demonstrates how to access Windows Communication Foundation (WCF) pe
 1. Start the Performance Monitor Tool by clicking **Start**, **Run…**, enter `perfmon` and click **OK,** or from Control Panel, select **Administrative Tools** and double-click **Performance**.  
   
     > [!NOTE]
-    >  You cannot add counters until the sample code is running.  
+    > You cannot add counters until the sample code is running.  
   
 2. Remove the performance counters that are listed by selecting them and pressing the Delete key.  
   
 3. Add WCF counters by right-clicking the graph pane and selecting **Add Counters**. In the **Add Counters** dialog box, select **ServiceModelOperation 3.0.0.0, ServiceModelEndpoint 3.0.0.0, or ServiceModelService 3.0.0.0** in the Performance object drop down list box. Select the counters you want to view from the list.  
   
     > [!NOTE]
-    >  There are no WCF performance counters for a service if there are no WCF services running on the computer.  
+    > There are no WCF performance counters for a service if there are no WCF services running on the computer.  
   
 ### To use the Configuration Editor to enable counters  
   
@@ -62,13 +62,13 @@ This sample demonstrates how to access Windows Communication Foundation (WCF) pe
 6. Save the configuration file and exit the editor.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\PerfCounters`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\PerfCounters`  
   
 ## See also
 

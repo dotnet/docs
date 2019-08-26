@@ -172,43 +172,43 @@ This article explains how to create a multifile assembly and provides code that 
    
    Specify the **/t:module** option because this module will be added to an assembly in a future step. Specify the **/addmodule** option because the code in *Client* references a namespace created by the code in *Stringer.netmodule*. The compiler produces a module called *Client.netmodule* that contains a reference to another module, *Stringer.netmodule*.
    
-   >[!NOTE]
-   >The C# and Visual Basic compilers support directly creating multifile assemblies using the following two different syntaxes.
-   >
-   >Two compilations create a two-file assembly:
-   >  
-   >  # [C++](#tab/cpp)
-   >  ```cmd
-   >  cl /clr:pure /LN Stringer.cpp
-   >  cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
-   >  ```
-   >  # [C#](#tab/csharp)
-   >  ```cmd
-   >  csc /t:module Stringer.cs
-   >  csc Client.cs /addmodule:Stringer.netmodule
-   >  ```
-   >  # [Visual Basic](#tab/vb)
-   >  ```cmd
-   >  vbc /t:module Stringer.vb
-   >  vbc Client.vb /addmodule:Stringer.netmodule
-   >  ```
-   >  ---
-   >One compilation creates a two-file assembly:
-   >  # [C++](#tab/cpp)
-   >  ```cmd
-   >  cl /clr:pure /LN Stringer.cpp
-   >  cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
-   >  ```
-   >  # [C#](#tab/csharp)
-   >  ```cmd
-   >  csc /out:Client.exe Client.cs /out:Stringer.netmodule Stringer.cs
-   >  ```
-   >  # [Visual Basic](#tab/vb)
-   >  ```cmd
-   >  vbc /out:Client.exe Client.vb /out:Stringer.netmodule Stringer.vb
-   >  ```
-   >  ---
-   
+   > [!NOTE]
+   > The C# and Visual Basic compilers support directly creating multifile assemblies using the following two different syntaxes.
+   > 
+   > Two compilations create a two-file assembly:
+   >   
+   >   # [C++](#tab/cpp)
+   >   ```cmd
+   >   cl /clr:pure /LN Stringer.cpp
+   >   cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
+   >   ```
+   >   # [C#](#tab/csharp)
+   >   ```cmd
+   >   csc /t:module Stringer.cs
+   >   csc Client.cs /addmodule:Stringer.netmodule
+   >   ```
+   >   # [Visual Basic](#tab/vb)
+   >   ```cmd
+   >   vbc /t:module Stringer.vb
+   >   vbc Client.vb /addmodule:Stringer.netmodule
+   >   ```
+   >   ---
+   > One compilation creates a two-file assembly:
+   >   # [C++](#tab/cpp)
+   >   ```cmd
+   >   cl /clr:pure /LN Stringer.cpp
+   >   cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
+   >   ```
+   >   # [C#](#tab/csharp)
+   >   ```cmd
+   >   csc /out:Client.exe Client.cs /out:Stringer.netmodule Stringer.cs
+   >   ```
+   >   # [Visual Basic](#tab/vb)
+   >   ```cmd
+   >   vbc /out:Client.exe Client.vb /out:Stringer.netmodule Stringer.vb
+   >   ```
+   >   ---
+    
 3. Use the [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md) to create the output file that contains the assembly manifest. This file contains reference information for all modules or resources that are part of the assembly.
 
     At the command prompt, type the following command:

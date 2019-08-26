@@ -49,7 +49,7 @@ While you are debugging an application during development, both your tracing and
      For C#: **csc -r:System.dll -d:TRACE -d:DEBUG=FALSE MyApplication.cs**  
   
     > [!TIP]
-    >  To compile more than one application file, leave a blank space between the file names, for example, **MyApplication1.vb MyApplication2.vb MyApplication3.vb** or **MyApplication1.cs MyApplication2.cs MyApplication3.cs**.  
+    > To compile more than one application file, leave a blank space between the file names, for example, **MyApplication1.vb MyApplication2.vb MyApplication3.vb** or **MyApplication1.cs MyApplication2.cs MyApplication3.cs**.  
   
      The meaning of the conditional-compilation directives used in the above examples is as follows:  
   

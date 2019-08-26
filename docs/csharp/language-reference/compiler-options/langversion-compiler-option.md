@@ -41,7 +41,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 |ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0) <sup id="TISO2">[ISO2](#FISO2)</sup>|
 |ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.2) <sup id="TISO1">[ISO1](#FISO1)</sup>|  
 
-The default language version depends on the target framework for your application Those rules are defined in the article on [configuring the language version](../configure-language-version.md#defaults)
+The default language version depends on the target framework for your application. Those rules are defined in the article on [configuring the language version](../configure-language-version.md#defaults)
 
 ## Remarks
 

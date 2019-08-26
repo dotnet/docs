@@ -1,6 +1,6 @@
 ---
 title: "-langversion (C# Compiler Options)"
-ms.date: 05/14/2018
+ms.date: 08/23/2019
 f1_keywords: 
   - "/langversion"
 helpviewer_keywords: 
@@ -40,6 +40,8 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 |3|The compiler accepts only syntax that is included in C# 3.0 or lower <sup id="TCS3">[CS3](#FCS3)</sup>|
 |ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0) <sup id="TISO2">[ISO2](#FISO2)</sup>|
 |ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.2) <sup id="TISO1">[ISO1](#FISO1)</sup>|  
+
+The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in the article on [configuring the language version](../configure-language-version.md#defaults)
 
 ## Remarks
 

@@ -104,7 +104,7 @@ The following lists the recommended packages:
   * **Version:** \<runtime version>
   * **Example:** dotnet-sdk-2.1
   * **Contains:** (3),(4)
-  * **Dependencies:** `aspnetcore-runtime-[major].[minor]`, `dotnet-netcoreapp-targeting-pack[major].[minor]`, `dotnet-aspnetcore-targeting-pack[major].[minor]`, `dotnet-netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`
+  * **Dependencies:** `aspnetcore-runtime-[major].[minor]`, `dotnet-netcoreapp-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`
 
 * `aspnetcore-runtime-[major].[minor]` - Installs specific ASP.NET Core runtime
   * **Version:** \<aspnetcore runtime version>

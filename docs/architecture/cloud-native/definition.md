@@ -150,7 +150,7 @@ Note how microservices promote the "One Codebase, One Application" principle fro
 
 ### Why microservices?
 
-Microservcies provide agility.
+Microservices provide agility.
 
 Earlier in the chapter, we compared an eCommerce application built as a monolith to that with microservices. In the example, we saw some clear benefits: 
 

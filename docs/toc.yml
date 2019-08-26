@@ -273,8 +273,6 @@
       href: core/diagnostics/logging-tracing.md
     - name: .NET Core CLI global tools
       items:
-      - name: Overview
-        href: core/diagnostics/cli-tools/overview.md
       - name: Install
         href: core/diagnostics/cli-tools/install.md
       - name: dotnet-counters
@@ -342,7 +340,7 @@
       - name: Troubleshoot tool usage issues
         href: core/tools/troubleshoot-usage-issues.md
       - name: Diagnostics global tools
-        href: core/diagnostics/cli-tools/overview.md
+        href: core/diagnostics/index.md#net-core-dotnet-diagnostic-global-command-line-tools
     - name: Elevated access
       href: core/tools/elevated-access.md
     - name: Extensibility Model

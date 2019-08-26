@@ -128,7 +128,7 @@ dotnet-counters [--version]
         CPU Usage (%)                                 24
         GC Heap Size (MB)                            811
 
-    2. Monitoring EventCounter values from user-defined EventSource: (see https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md on how to do this.)
+    3. Monitoring EventCounter values from user-defined EventSource: (see https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md on how to do this.)
 
       > dotnet-counters monitor --process-id 1902 Samples-EventCounterDemos-Minimal
 

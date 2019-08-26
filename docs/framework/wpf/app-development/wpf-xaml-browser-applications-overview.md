@@ -117,7 +117,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
      The changes will take effect after you restart Internet Explorer.  
   
 > [!CAUTION]
->  Enabling active content in Internet Explorer may put your computer at risk. If you do not want to change your Internet Explorer security settings, you can launch the HTML page from a server and attach the Visual Studio debugger to the process.  
+> Enabling active content in Internet Explorer may put your computer at risk. If you do not want to change your Internet Explorer security settings, you can launch the HTML page from a server and attach the Visual Studio debugger to the process.  
   
 <a name="xbap_security_considerations"></a>   
 ## XBAP Security Considerations  

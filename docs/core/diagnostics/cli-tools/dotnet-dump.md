@@ -17,12 +17,18 @@ The `dotnet-dump` CLI global tool is a way to collect and analyze Windows and Li
 To install the latest release version of the `dotnet-dump` [NuGet package](https://www.nuget.org/packages/dotnet-dump):
 
 ```bash
-$ dotnet tool install -g dotnet-dump
-You can invoke the tool using the following command: dotnet-dump
-Tool 'dotnet-dump' (version '3.0.0') was successfully installed.
+dotnet tool install -g dotnet-dump
 ```
 
 For details and other options, see [Installing the diagnostics tools](installing.md).
+
+> [!NOTE]
+> At the time of this writing, the `dotnet-dump` tool has not been released. The prerelease version can be installed using:
+>
+> ```
+> dotnet tool install --global dotnet-dump --version 3.0.0-preview8.19412.1
+> ```
+>
 
 ## Using `dotnet-dump`
 

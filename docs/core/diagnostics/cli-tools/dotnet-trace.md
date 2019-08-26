@@ -22,6 +22,14 @@ dotnet tool install --global dotnet-trace
 
 For details and other options, see [Installing the diagnostics tools](installing.md).
 
+> [!NOTE]
+> At the time of this writing, the `dotnet-trace` tool has not been released. The prerelease version can be installed using:
+>
+> ```
+> dotnet tool install --global dotnet-trace --version 3.0.0-preview8.19412.1
+> ```
+>
+
 ## `dotnet-trace` help
 
 ```bash

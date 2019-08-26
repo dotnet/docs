@@ -21,6 +21,14 @@ dotnet tool install --global dotnet-counters
 
 For details and other options, see [Installing the diagnostics tools](installing.md).
 
+> [!NOTE]
+> At the time of this writing, the `dotnet-counters` tool has not been released. The prerelease version can be installed using:
+>
+> ```
+> dotnet tool install --global dotnet-counters --version 3.0.0-preview8.19412.1
+> ```
+>
+
 ## Using dotnet-counters
 
 *SYNOPSIS*

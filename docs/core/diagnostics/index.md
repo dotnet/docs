@@ -13,20 +13,23 @@ Software doesn't always behave as you would expect, but .NET Core has tools and 
 
 This article helps you find the various tools you need.
 
-## [Managed debuggers](managed-debuggers.md)
-Managed debuggers allow you to interact with your program. Pausing, incrementally executing, examining,  and resuming gives you insight into the behavior of your code. A debugger is the first choice for diagnosing functional problems that can be easily reproduced.
+## Managed debuggers
 
-## [Logging and tracing](logging-tracing.md)
-Logging and tracing are related techniques. They refer to instrumenting code to create log files. The files record the details of what a program does. These details can be used to diagnose the most complex problems. When combined with time stamps, these techniques are also valuable in performance investigations.
+[Managed debuggers](managed-debuggers.md) allow you to interact with your program. Pausing, incrementally executing, examining,  and resuming gives you insight into the behavior of your code. A debugger is the first choice for diagnosing functional problems that can be easily reproduced.
 
-## [Unit testing](../testing/index.md)
-Unit testing is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
+## Logging and tracing
+
+[Logging and tracing](logging-tracing.md) are related techniques. They refer to instrumenting code to create log files. The files record the details of what a program does. These details can be used to diagnose the most complex problems. When combined with time stamps, these techniques are also valuable in performance investigations.
+
+## Unit testing
+
+[Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
 
 ## .NET Core dotnet diagnostic global command-line tools
 
 ### dotnet-counters
 
-[dotnet-counters](cli-tools/dotnet-counters.md)is a performance monitoring tool for ad-hoc health monitoring or first-level performance investigation. It can observe performance counter values that are published via the `EventCounter` [API](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventcounter). For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application.
+[dotnet-counters](cli-tools/dotnet-counters.md) is a performance monitoring tool for ad-hoc health monitoring or first-level performance investigation. It can observe performance counter values that are published via the `EventCounter` [API](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventcounter). For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application.
 
 ### dotnet-dump
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
   - "user controls [Windows Forms], inheriting from"
   - "composite controls [Windows Forms], creating"
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# How to: Author Composite Controls
+# How to: Author composite controls
 
 Composite controls can be employed in many ways. You can author them as part of a Windows desktop application project, and use them only on forms in the project. Or you can author them in a Windows Control Library project, compile the project into an assembly, and use the controls in other projects. You can even inherit from them and use visual inheritance to customize them quickly for special purposes.
 
-> [!NOTE]
-> If you want to author a composite control to use on Web Forms, see [Developing Custom ASP.NET Server Controls](https://docs.microsoft.com/previous-versions/aspnet/zt27tfhy(v=vs.100)).
-
 ## To author a composite control
 
-1. In Visual Studio, create a new **Windows Application** project called `DemoControlHost`.
+1. In Visual Studio, create a new **Windows Application** project, and name it **DemoControlHost**.
 
 2. On the **Project** menu, click **Add User Control**.
 
@@ -73,10 +73,8 @@ Composite controls can be employed in many ways. You can author them as part of 
 
 ## See also
 
-- [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
-- [Walkthrough: Authoring a Composite Control with Visual C#](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
-- [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
-- [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
+- [Walkthrough: Authoring a Composite Control](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
+- [Walkthrough: Inheriting from a Windows Forms Control](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
 - [Control Type Recommendations](control-type-recommendations.md)
 - [How to: Author Controls for Windows Forms](how-to-author-controls-for-windows-forms.md)
 - [Varieties of Custom Controls](varieties-of-custom-controls.md)

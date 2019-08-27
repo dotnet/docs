@@ -22,7 +22,7 @@ You need Visual Studio to complete this walkthrough.
 
 ## Create the project
 
-The first step is to create the Windows Forms project. Open Visual Studio and create a new **Windows Forms App (.NET Framework)** project in Visual Basic or Visual C# named `HostingWpf`.
+Open Visual Studio and create a new **Windows Forms App (.NET Framework)** project in Visual Basic or Visual C# named `HostingWpf`.
 
 > [!NOTE]
 > When hosting WPF content, only C# and Visual Basic projects are supported.

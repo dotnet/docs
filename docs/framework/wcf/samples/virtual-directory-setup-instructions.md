@@ -30,10 +30,10 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
 7. Click **OK**. The Web application is now created for the WCF samples.  
   
     > [!NOTE]
-    >  This task must be performed only once, because all of the WCF samples use the same servicemodelsamples Web application.  
+    > This task must be performed only once, because all of the WCF samples use the same servicemodelsamples Web application.  
   
     > [!NOTE]
-    >  For the purpose of this documentation, the term `virtual directory` is synonymous with `Web application`.  
+    > For the purpose of this documentation, the term `virtual directory` is synonymous with `Web application`.  
   
      In addition to creating the virtual directory, you must also set its properties to enable WCF services to run. See below for details.  
   
@@ -60,7 +60,7 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
 8. Click **Next**, and then click **Finish** to complete the wizard.  
   
     > [!NOTE]
-    >  This task must be performed only once because all of the WCF samples use the same servicemodelsamples virtual directory.  
+    > This task must be performed only once because all of the WCF samples use the same servicemodelsamples virtual directory.  
   
 #### To set additional virtual directory properties in IIS 7.0 or 7.5  
   

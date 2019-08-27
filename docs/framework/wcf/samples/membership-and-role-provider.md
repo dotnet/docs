@@ -117,10 +117,10 @@ The Membership and Role Provider sample demonstrates how a service can use the A
 2. Ensure that you have configured the [ASP.NET Application Services Database](https://go.microsoft.com/fwlink/?LinkId=94997).  
   
     > [!NOTE]
-    >  If you are running SQL Server Express Edition, your server name is .\SQLEXPRESS. This server should be used when configuring the ASP.NET Application Services Database as well as in the Web.config connection string.  
+    > If you are running SQL Server Express Edition, your server name is .\SQLEXPRESS. This server should be used when configuring the ASP.NET Application Services Database as well as in the Web.config connection string.  
   
     > [!NOTE]
-    >  The ASP.NET worker process account must have permissions on the database that is created in this step. Use the sqlcmd utility or SQL Server Management Studio to do this.  
+    > The ASP.NET worker process account must have permissions on the database that is created in this step. Use the sqlcmd utility or SQL Server Management Studio to do this.  
   
 3. To run the sample in a single- or cross-computer configuration, use the following instructions.  
   

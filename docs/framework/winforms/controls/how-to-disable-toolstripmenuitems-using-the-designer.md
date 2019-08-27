@@ -16,7 +16,7 @@ You can limit or broaden the commands a user may make by enabling and disabling 
 1. With the menu item selected on the form, set the <xref:System.Windows.Forms.ToolStripMenuItem.Enabled%2A> property to `false`.
 
     > [!TIP]
-    >  Disabling the first or top-level menu item in a menu disables all the menu items contained within the menu. Likewise, disabling a menu item that has submenu items disables the submenu items. If all the commands on a given menu are unavailable to the user, it is considered good programming practice to both hide and disable the entire menu, as this presents a clean user interface. You should both hide and disable the menu, as hiding alone does not prevent access to a menu command via a shortcut key. Set the <xref:System.Windows.Forms.ToolStripItem.Visible%2A> property of a top-level menu item to `false` to hide the entire menu.
+    > Disabling the first or top-level menu item in a menu disables all the menu items contained within the menu. Likewise, disabling a menu item that has submenu items disables the submenu items. If all the commands on a given menu are unavailable to the user, it is considered good programming practice to both hide and disable the entire menu, as this presents a clean user interface. You should both hide and disable the menu, as hiding alone does not prevent access to a menu command via a shortcut key. Set the <xref:System.Windows.Forms.ToolStripItem.Visible%2A> property of a top-level menu item to `false` to hide the entire menu.
 
 ## See also
 

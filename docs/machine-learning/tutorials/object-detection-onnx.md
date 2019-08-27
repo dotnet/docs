@@ -567,7 +567,7 @@ Now it's time for the post-processing step. Create an instance of `YoloOutputPar
 
 Once the model output has been processed, it's time to draw the bounding boxes on the images. 
 
-### Draw bounding boxes
+### Visualize predictions
 
 After the model has scored the images and the outputs have been processed, the bounding boxes have to be drawn on the image. To do so, add a method called `DrawBoundingBox` below the `GetAbsolutePath` method inside of *Program.cs*.
 

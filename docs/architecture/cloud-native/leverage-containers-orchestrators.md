@@ -1,11 +1,11 @@
 ---
 title: Leveraging containers and orchestrators
-description: Architecting Cloud Native .NET Apps for Azure | Leveraging Containers and Orchestrators
+description: Architecting Cloud-native .NET Apps for Azure | Leveraging Containers and Orchestrators
 ms.date: 06/30/2019
 ---
 # Leveraging containers and orchestrators
 
-Docker is the most popular container management and imaging platform and allows you to quickly work with containers on Linux and Windows. Containers provide separate but reproducible application environments that run the same way on any system. This makes them perfect for hosting and scaling applications and app components in cloud native applications. Containers are isolated from one another, so two containers on the same host hardware can have completely different versions of software and even operating system installed, without the dependencies causing conflicts.
+Docker is the most popular container management and imaging platform and allows you to quickly work with containers on Linux and Windows. Containers provide separate but reproducible application environments that run the same way on any system. This makes them perfect for hosting and scaling applications and app components in cloud-native applications. Containers are isolated from one another, so two containers on the same host hardware can have completely different versions of software and even operating system installed, without the dependencies causing conflicts.
 
 What’s more, containers are completely defined by simple files that can be checked into source control. Unlike full servers, even virtual machines, which frequently require manual work to apply updates or install additional services, container infrastructure can easily be version-controlled. Thus, apps built to run in containers can be developed, tested, and deployed using automated tools as part of a build pipeline.
 
@@ -19,7 +19,7 @@ Multi-tier architectures are nothing new, but with container-based applications 
 ![Breaking up a monolithic app to use microservices in the backend.](./media/breaking-up-monolith-with-backend-microservices.png)
 **Figure 2-5**. Breaking up a monolithic app to use microservices in the backend.
 
-Once you start to have multiple containers that need to work together, it can be worthwhile to organize them at a higher level. By design containers only know about themselves. Organizing large numbers of containers and their shared dependencies, such as network configuration, is where orchestration tools come in to save the day! Kubernetes is a container orchestration platform designed to automate deployment, scaling, and management of containerized applications. It creates an abstraction layer on top of groups of containers, which it organized into what it calls *pods*. Pods run on worker machines referred to as *nodes*. The whole organized group is referred to as a *cluster*. Figure 2-6 shows the different components of a Kubernetes cluster.
+Once you start to have multiple containers that need to work together, it can be worthwhile to organize them at a higher level. By design containers only know about themselves. Organizing large numbers of containers and their shared dependencies, such as network configuration, is where orchestration tools come in to save the day! Kubernetes is a container orchestration platform designed to automate deployment, scaling, and management of containerized applications. It creates an abstraction layer on top of groups of containers and organizes them into *pods*. Pods run on worker machines referred to as *nodes*. The whole organized group is referred to as a *cluster*. Figure 2-6 shows the different components of a Kubernetes cluster.
 
 ![Kubernetes cluster components.](./media/kubernetes-cluster-components.png)
 **Figure 2-6**. Kubernetes cluster components.
@@ -110,5 +110,5 @@ In addition to Docker support, you can also add Container Orchestration Support,
 - [Visual Studio Tools for Docker](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
 
 >[!div class="step-by-step"]
->[Previous](scale-dotnet-applications.md)
+>[Previous](scale-applications.md)
 >[Next](leverage-serverless-functions.md)

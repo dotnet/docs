@@ -181,7 +181,7 @@ Press <ENTER> to terminate client.
     ```  
   
     > [!NOTE]
-    >  If you are using a non-U.S. English edition of Windows you must edit the Setup.bat file and replace the `NT AUTHORITY\NETWORK SERVICE` account name with your regional equivalent.  
+    > If you are using a non-U.S. English edition of Windows you must edit the Setup.bat file and replace the `NT AUTHORITY\NETWORK SERVICE` account name with your regional equivalent.  
   
 ### To set up, build, and run the sample  
   
@@ -196,7 +196,7 @@ Press <ENTER> to terminate client.
 2. Run Setup.bat from the sample install folder in a Developer Command Prompt for Visual Studio opened with administrator privileges. This installs all the certificates required for running the sample.  
   
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Developer Command Prompt for Visual Studio. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Developer Command Prompt for Visual Studio.  
+    > The Setup.bat batch file is designed to be run from a Developer Command Prompt for Visual Studio. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Developer Command Prompt for Visual Studio.  
   
 3. Verify access to the service using a browser by entering the address `http://localhost/servicemodelsamples/service.svc`.
   
@@ -231,4 +231,4 @@ Press <ENTER> to terminate client.
 - Run Cleanup.bat in the samples folder after you have finished running the sample.  
   
     > [!NOTE]
-    >  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+    > This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  

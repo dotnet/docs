@@ -139,7 +139,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
  You can also configure a trace listener programmatically. For more information, see [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239).  
   
 > [!CAUTION]
->  Because `System.Diagnostics.XmlWriterTraceListener` is not thread-safe, the trace source may lock resources exclusively when outputting traces. When many threads output traces to a trace source configured to use this listener, resource contention may occur, which results in a significant performance issue. To resolve this problem, you should implement a custom listener that is thread-safe.  
+> Because `System.Diagnostics.XmlWriterTraceListener` is not thread-safe, the trace source may lock resources exclusively when outputting traces. When many threads output traces to a trace source configured to use this listener, resource contention may occur, which results in a significant performance issue. To resolve this problem, you should implement a custom listener that is thread-safe.  
   
 ## Trace Level  
  The tracing level is controlled by the `switchValue` setting of the trace source. The available tracing levels are described in the following table.  
@@ -158,7 +158,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
  The levels from Verbose to Critical are stacked on top of each other, that is, each trace level includes all levels above it except the Off level. For example, a listener listening at the Warning level receives Critical, Error, and Warning traces. The All level includes events from Verbose to Critical and Activity tracing events.  
   
 > [!CAUTION]
->  The Information, Verbose, and ActivityTracing levels generate a lot of traces, which may negatively impact message throughput if you have used up all available resources on the machine.  
+> The Information, Verbose, and ActivityTracing levels generate a lot of traces, which may negatively impact message throughput if you have used up all available resources on the machine.  
   
 ## Configuring Activity Tracing and Propagation for Correlation  
  The `activityTracing` value specified for the `switchValue` attribute is used to enable activity tracing, which emits traces for activity boundaries and transfers within endpoints.  

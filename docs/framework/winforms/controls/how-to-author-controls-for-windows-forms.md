@@ -6,13 +6,13 @@ helpviewer_keywords:
   - "UserControl class [Windows Forms], Windows Forms"
   - "custom controls [Windows Forms], creating"
 ms.assetid: 7570e982-545b-4c3a-a7c7-55581d313400
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# How to: Author Controls for Windows Forms
+# How to: Author controls for Windows Forms
 
 A control represents a graphical link between the user and the program. A control can provide or process data, accept user input, respond to events, or perform any number of other functions that connect the user and the application. Because a control is essentially a component with a graphical interface, it can serve any function that a component does, as well as provide user interaction. Controls are created to serve specific purposes, and authoring controls is just another programming task. With that in mind, the following steps represent an overview of the control authoring process. Links provide additional information on the individual steps.
-
-> [!NOTE]
-> If you want to author a custom control to use on Web Forms, see [Developing Custom ASP.NET Server Controls](https://docs.microsoft.com/previous-versions/aspnet/zt27tfhy(v=vs.100)).
 
 ## To author a control
 
@@ -36,7 +36,7 @@ A control represents a graphical link between the user and the program. A contro
 
 6. If your control inherits from <xref:System.Windows.Forms.UserControl>, you can test its runtime behavior by building the control project and running it in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).
 
-7. You can also test and debug your control by creating a new project, such as a Windows Application, and placing it into a container. This process is demonstrated as part of [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md).
+7. You can also test and debug your control by creating a new project, such as a Windows Application, and placing it into a container. This process is demonstrated as part of [Walkthrough: Authoring a Composite Control](walkthrough-authoring-a-composite-control-with-visual-csharp.md).
 
 8. As you add each feature, add features to your test project to exercise the new functionality.
 
@@ -46,8 +46,6 @@ A control represents a graphical link between the user and the program. A contro
 
 ## See also
 
-- [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
-- [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
 - [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
 - [How to: Inherit from the Control Class](how-to-inherit-from-the-control-class.md)
 - [How to: Inherit from Existing Windows Forms Controls](how-to-inherit-from-existing-windows-forms-controls.md)

@@ -132,7 +132,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
 - This feature may cause the serialization and deserialization process to run slower. Although data does not have to be replicated, extra object comparisons must be performed in this mode.  
   
 > [!CAUTION]
->  When the `preserveObjectReferences` mode is enabled, it is especially important to set the `maxItemsInObjectGraph` value to the correct quota. Due to the way arrays are handled in this mode, it is easy for an attacker to construct a small malicious message that results in large memory consumption limited only by the `maxItemsInObjectGraph` quota.  
+> When the `preserveObjectReferences` mode is enabled, it is especially important to set the `maxItemsInObjectGraph` value to the correct quota. Due to the way arrays are handled in this mode, it is easy for an attacker to construct a small malicious message that results in large memory consumption limited only by the `maxItemsInObjectGraph` quota.  
   
 ### Specifying a Data Contract Surrogate  
  Some `DataContractSerializer` constructor overloads have a `dataContractSurrogate` parameter, which may be set to `null`. Otherwise, you can use it to specify a *data contract surrogate*, which is a type that implements the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface. You can then use the interface to customize the serialization and deserialization process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md).  

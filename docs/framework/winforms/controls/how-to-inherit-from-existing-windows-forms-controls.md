@@ -8,13 +8,17 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 1e1fc8ea-c615-4cf0-a356-16d6df7444ab
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
 # How to: Inherit from Existing Windows Forms Controls
+
 If you want to extend the functionality of an existing control, you can create a control derived from an existing control through inheritance. When inheriting from an existing control, you inherit all of the functionality and visual properties of that control. For example, if you were creating a control that inherited from <xref:System.Windows.Forms.Button>, your new control would look and act exactly like a standard <xref:System.Windows.Forms.Button> control. You could then extend or modify the functionality of your new control through the implementation of custom methods and properties. In some controls, you can also change the visual appearance of your inherited control by overriding its <xref:System.Windows.Forms.Control.OnPaint%2A> method.
 
 ## To create an inherited control
 
-1. Create a new **Windows Forms Application** project.
+1. In Visual Studio, create a new **Windows Forms Application** project.
 
 2. From the **Project** menu, choose **Add New Item**.
 
@@ -24,9 +28,10 @@ If you want to extend the functionality of an existing control, you can create a
 
      A new custom control is added to your project.
 
-4. If you using Visual Basic, at the top of **Solution Explorer**, click **Show All Files**. Expand CustomControl1.vb and then open CustomControl1.Designer.vb in the Code Editor.
+4. If you using:
 
-5. If you are using C#, open CustomControl1.cs in the Code Editor.
+   - Visual Basic, at the top of **Solution Explorer**, click **Show All Files**. Expand CustomControl1.vb and then open CustomControl1.Designer.vb in the Code Editor.
+   - C#, open CustomControl1.cs in the Code Editor.
 
 6. Locate the class declaration, which inherits from <xref:System.Windows.Forms.Control>.
 
@@ -80,6 +85,5 @@ If you want to extend the functionality of an existing control, you can create a
 - [How to: Inherit from the Control Class](how-to-inherit-from-the-control-class.md)
 - [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
 - [How to: Author Controls for Windows Forms](how-to-author-controls-for-windows-forms.md)
-- [Troubleshooting Inherited Event Handlers in Visual Basic](../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
-- [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
-- [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
+- [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
+- [Walkthrough: Inheriting from a Windows Forms Control](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)

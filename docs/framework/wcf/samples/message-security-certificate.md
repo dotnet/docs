@@ -260,19 +260,19 @@ Press <ENTER> to terminate client.
     ```  
   
     > [!NOTE]
-    >  If you are using a non-U.S. English edition of Windows, you must edit the Setup.bat file and replace the "NT AUTHORITY\NETWORK SERVICE" account name with your regional equivalent.  
+    > If you are using a non-U.S. English edition of Windows, you must edit the Setup.bat file and replace the "NT AUTHORITY\NETWORK SERVICE" account name with your regional equivalent.  
   
 > [!NOTE]
 > The tools used in this batch file are located in either C:\Program Files\Microsoft Visual Studio 8\Common7\tools or C:\Program Files\Microsoft SDKs\Windows\v6.0\bin. One of these directories must be in your system path. If you have Visual Studio installed, the easiest way to get this directory in your path is to open the Developer Command Prompt for Visual Studio. Click **Start**, and then select **All Programs**, **Visual Studio 2012**, **Tools**. This command prompt has the appropriate paths already configured. Otherwise you must add the appropriate directory to your path manually.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing:  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing:  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory:  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory:  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\MessageSecurity`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\MessageSecurity`  
   
 ### To set up, build, and run the sample  
   
@@ -285,7 +285,7 @@ Press <ENTER> to terminate client.
 1. Open a Developer Command Prompt for Visual Studio  with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.  
   
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Developer Command Prompt for Visual Studio. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Developer Command Prompt for Visual Studio (2010).  
+    > The Setup.bat batch file is designed to be run from a Developer Command Prompt for Visual Studio. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Developer Command Prompt for Visual Studio (2010).  
   
 2. Verify access to the service using a browser by entering the address `http://localhost/servicemodelsamples/service.svc`.  
   
@@ -326,4 +326,4 @@ Press <ENTER> to terminate client.
 - Run Cleanup.bat in the samples folder after you have finished running the sample.  
   
     > [!NOTE]
-    >  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+    > This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  

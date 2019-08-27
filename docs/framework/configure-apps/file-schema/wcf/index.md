@@ -17,7 +17,7 @@ Windows Communication Foundation (WCF) configuration elements enable you to conf
  ![Diagram that shows the WCF configuration schema.](./media/index/windows-communication-foundation-configuration-schema.gif)  
   
 > [!CAUTION]
->  You should protect WCF configuration sections in your application configuration files (app.config) with appropriate Access Control Lists (ACL) to prevent any potential security threats.  For example, you should make sure that only the appropriate people can access or modify the security settings on application bindings, or the service model section of the configuration file for a service.  
+> You should protect WCF configuration sections in your application configuration files (app.config) with appropriate Access Control Lists (ACL) to prevent any potential security threats.  For example, you should make sure that only the appropriate people can access or modify the security settings on application bindings, or the service model section of the configuration file for a service.  
   
 ## In This Section  
  [\<system.serviceModel>](system-servicemodel.md)  

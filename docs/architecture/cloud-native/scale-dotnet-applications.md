@@ -35,5 +35,5 @@ Although Azure App Service plans work for a wide variety of apps, many complex b
 - [Web App for Containers](https://azure.microsoft.com/services/app-service/containers/)
 
 >[!div class="step-by-step"]
->[Previous](azure-development-stack.md)
+>[Previous](candidate-apps.md)
 >[Next](leverage-containers-orchestrators.md)

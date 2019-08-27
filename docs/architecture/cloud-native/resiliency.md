@@ -34,5 +34,5 @@ In a small-scale distributed system, failure will be less frequent, but as a sys
 Therefore, your application and infrastructure must be resilient. In the following sections, we'll explore defensive techniques that you can add to your application and built-in cloud features that you can leverage to help bullet-proof your user's experience.
 
 >[!div class="step-by-step"]
->[Previous]()
+>[Previous](azure-data-storage.md)
 >[Next](application-resiliency-patterns.md)

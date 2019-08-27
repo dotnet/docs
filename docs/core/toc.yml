@@ -136,6 +136,18 @@
       href: diagnostics/dotnet-dump.md
     - name: dotnet-trace
       href: diagnostics/dotnet-trace.md
+  - name: .NET Core diagnostics walk throughs
+    items:
+    - name: Overview
+      href: core/diagnostics/diagnostic-scenarios.md
+    - name: DiagnosticScenarios sample debug target
+      href: core/diagnostics/sample-debug-target.md
+    - name: Debugging a memory leak
+      href: core/diagnostics/app_is_leaking_memory_eventual_crash.md
+    - name: Debugging high CPU usage
+      href: core/diagnostics/app_running_slow_highcpu.md
+    - name: Debugging deadlock
+      href: core/diagnostics/hung_app.md
 - name: Unit Testing
   href: testing/index.md
   items:

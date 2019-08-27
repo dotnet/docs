@@ -38,3 +38,7 @@ The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows a
 ### dotnet-trace
 
 .NET Core includes what is called the `EventPipe` through which diagnostics data is exposed. The [dotnet-trace](dotnet-trace.md) tool allows you to consume interesting profiling data from your app that can help in scenarios where you need to root cause apps running slow.
+
+## .NET Core diagnostics walk throughs
+
+The [.NET Core diagnostics walk throughs](diagnostic-scenarios.md) are designed to highlight key use cases.

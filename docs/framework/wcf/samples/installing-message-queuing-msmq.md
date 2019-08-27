@@ -48,7 +48,7 @@ The following procedures show how to install Message Queuing 4.0 and Message Que
 3. Select Message Queuing and click **Details**.  
   
     > [!NOTE]
-    >  If you are running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], select Application Server to access Message Queuing.  
+    > If you are running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], select Application Server to access Message Queuing.  
   
 4. Ensure that the option MSMQ HTTP Support is selected on the details page.  
   

@@ -12,7 +12,8 @@ The Protobuf wire format itself is a binary encoding, which uses some clever tri
 
 Let's look at a simple example of a Protobuf message, defining a `Stock` message.
 
-```protobuf  
+```protobuf
+[]
 syntax "proto3";
 
 message Stock {
@@ -31,11 +32,13 @@ Next we write the `Person` message definition, specifying three fields, each wit
 
 ### Field numbers
 
-Field numbers are a very important part of Protobuf. They are used to identify fields in the binary encoded data, which means they can't change from version to version of your service. In the binary format, the field number is combined with a type identifier. Field numbers from 1 to 15 can be encoded with their type as a single byte; numbers from 16 to 2047 take two bytes. You can go higher if you need to.
+Field numbers are a very important part of Protobuf. They are used to identify fields in the binary encoded data, which means they can't change from version to version of your service. The advantage is that backward and forward compatibility is possible. Clients and services will simply ignore field numbers they don't know about, as long as the possibility of missing values is handled.
 
-If you delete a field from your message in a future update, and then another developer uses that same field number for a different field, it will break backward compatibility. You can avoid this by marking deleted field numbers as `reserved` in your message. Here is the `Stock` message with the `price` and `name` fields removed:
+In the binary format, the field number is combined with a type identifier. Field numbers from 1 to 15 can be encoded with their type as a single byte; numbers from 16 to 2047 take two bytes. You can go higher if you need more than 2047 fields on a message for any reason. The single byte identifiers for field numbers 1 to 15 offer better performance, so you should use them for the most basic, frequently-used fields.
 
-```protobuf  
+If you delete a field from your message definition in a future update, and then another developer uses that same field number for a different field, it will break backward compatibility. You can avoid this by marking deleted field numbers as `reserved` in your message. Here is the `Stock` message with the `price` and `name` fields removed:
+
+```protobuf
 syntax "proto3";
 
 message Stock {
@@ -44,7 +47,7 @@ message Stock {
     int32 id = 1;
     string symbol = 2;
 
-}  
+}
 ```
 
 ### The generated code
@@ -69,7 +72,6 @@ Note that the Protobuf compiler applied `PascalCase` to the property names altho
 
 Protobuf supports a range of native scalar value types. This table lists them all with their equivalent C# type.
 
-
 | Protobuf Type | C# Type    | Notes |
 | ------------- | ---------- | ----- |
 | double        | double     |       |
@@ -88,7 +90,6 @@ Protobuf supports a range of native scalar value types. This table lists them al
 | string        | string     | 3     |
 | bytes         | ByteString | 4     |
 
-
 ### Notes
 
 1. The standard encoding for `int32` and `int64` is inefficient when working with signed values. If your field is likely to contain negative numbers, use `sint32` or `sint64` instead. Both types map to the C# `int` and `long` types respectively.
@@ -96,7 +97,9 @@ Protobuf supports a range of native scalar value types. This table lists them al
 3. Protobuf strings are UTF-8 (or 7-bit ASCII) encoded, and the encoded length cannot be greater than 2<sup>32</sup>.
 4. The Protobuf runtime provides a `ByteString` type that maps easily to and from C# `byte[]` arrays.
 
-## Dates and Times
+## Other .NET primitive types
+
+### Dates and Times
 
 The native scalar types do not provide for date and time values, equivalent to C#'s `DateTimeOffset`, `DateTime` and `TimeSpan`. These types can be specified using some of Google's "Well Known Types" extensions, which provide code generation and runtime support for more complex field types across the supported platforms. To use them, you need to import them in your `.proto` file, like this:
 
@@ -115,7 +118,11 @@ message Meeting {
 }  
 ```
 
-## Nullable Types
+### System.Guid
+
+The `Guid` type, known as `UUID` on other platforms, is not directly supported by Protobuf and there is no well-known type for it. The best approach is to handle `Guid` values as `string` fields, using the standard `8-4-4-4-12` hexadecimal format (e.g. `45a9fda3-bd01-47a9-8460-c1cd7484b0b3`) which can be parsed by all languages and platforms. You should not use a `bytes` field for `Guid` values, as problems with endianness can result in erratic behavior when interacting with other platforms, such as Java.
+
+### Nullable Types
 
 The Protobuf code generation for C# will use the native types, such as `int` for `int32`. This means that the values are always included and can't be null. For values that require explicit null, where you would use e.g. `int?` in your C# code, Protobuf's "Well Known Types" include wrappers that are compiled to nullable C# types. To use them, import `wrappers.proto` into your `.proto` file, like this:
 
@@ -131,6 +138,8 @@ message Person {
 
 }
 ```
+
+Protobuf will use the simple `T?` (e.g. `int?`) for the generated message property.
 
 Here is the complete list of wrapper types with their equivalent C# type:
 
@@ -300,7 +309,7 @@ Setting any field that is part of a `oneof` set will automatically clear any oth
 
 Protobuf supports enumerations and compiles them to C# `enum` types. Because Protobuf is designed for use with a variety of languages, the naming conventions for enumerations are different from what you might be used to with C#, but the code generator is clever and converts the names to traditional C# case: if the Pascal-case equivalent of the field name starts with the enumeration name, then it is removed.
 
-For example, in this Protobuf enumeration the fields are prefixed with `ACCOUNT_STATUS` which is equivalent to `AccountStatus`.
+For example, in this Protobuf enumeration the fields are prefixed with `ACCOUNT_STATUS`, which is equivalent to the Pascal case enum name: `AccountStatus`.
 
 ```protobuf
 enum AccountStatus {

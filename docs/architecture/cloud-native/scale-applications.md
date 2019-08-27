@@ -34,5 +34,5 @@ These services can also decrease the number of pods or nodes as needed. These tw
 - [Tutorial: Scale applications in AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale)
 
 >[!div class="step-by-step"]
->[Previous](azure-development-stack.md)
+>[Previous](candidate-apps.md)
 >[Next](leverage-containers-orchestrators.md)

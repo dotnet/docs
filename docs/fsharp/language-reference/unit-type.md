@@ -18,7 +18,7 @@ The `unit` type is a type that indicates the absence of a specific value; the `u
 
 Every F# expression must evaluate to a value. For expressions that do not generate a value that is of interest, the value of type `unit` is used. The `unit` type resembles the `void` type in languages such as C# and C++.
 
-The `unit` type has a single value, and that value is indicated by the token `()`.
+The `unit` type has a single value, and that value is indicated by the token `()`. As its literal appearance suggests, `unit` can essentially be thought of as the empty tuple.
 
 The value of the `unit` type is often used in F# programming to hold the place where a value is required by the language syntax, but when no value is needed or desired. An example might be the return value of a `printf` function. Because the important actions of the `printf` operation occur in the function, the function does not have to return an actual value. Therefore, the return value is of type `unit`.
 

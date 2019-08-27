@@ -1,15 +1,15 @@
-- name: "Architecting Cloud Native .NET Apps for Azure"
+- name: "Architecting Cloud-Native .NET Apps for Azure"
   href: index.md
   items:
   - name: Introduction to Cloud-Native Applications
     href: introduction.md
     items:
-    - name: Defining Cloud Native
+    - name: Defining Cloud-Native
       href: definition.md
-    - name: Candidate Apps for Cloud Native
+    - name: Candidate Apps for Cloud-Native
       href: candidate-apps.md
-  - name: Scaling Cloud Native .NET Applications
-    href: scale-dotnet-applications.md
+  - name: Scaling Cloud-Native .NET Applications
+    href: scale-applications.md
     items:
     - name: Leveraging Containers and Orchestrators
       href: leverage-containers-orchestrators.md
@@ -21,7 +21,7 @@
       href: deploy-containers-azure.md
     - name: Other Deployment Options
       href: other-deployment-options.md
-  - name: Implementing a Cloud Native App
+  - name: Implementing a Cloud-Native App
     href: implement-app.md
     items:
     - name: Introducing the eShopOnContainers Reference App
@@ -69,7 +69,7 @@
   - name: Identity
     href: identity.md
     items:
-    - name: Authentication and Authorization in Cloud Native Apps
+    - name: Authentication and Authorization in Cloud-Native Apps
       href: authentication-authorization.md
     - name: Azure Active Directory
       href: azure-active-directory.md
@@ -78,12 +78,12 @@
   - name: Security
     href: security.md
     items:
-    - name: Azure Security for Cloud Native Apps
+    - name: Azure Security for Cloud-Native Apps
       href: azure-security.md
-  - name: Cloud Native DevOps
+  - name: Cloud-Native DevOps
     href: devops.md
     items:
     - name: Infrastructure as Code
       href: infrastructure-as-code.md
-    - name: Cloud Native Application Bundles
+    - name: Cloud-Native Application Bundles
       href: application-bundles.md

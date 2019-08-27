@@ -41,7 +41,7 @@ makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exc
 3. Add the following line of code to the client program.  
   
 > [!IMPORTANT]
->  This code is only required for test certificates such as those created by Makecert.exe. It is not recommended for production code.  
+> This code is only required for test certificates such as those created by Makecert.exe. It is not recommended for production code.  
   
 ```  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  

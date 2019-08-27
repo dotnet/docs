@@ -65,7 +65,7 @@ ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
      [!code-vb[UIAClient_snip#185](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#185)]  
   
 > [!CAUTION]
->  Do not use <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType>. The behavior of this property outside client windows in a scaled environment is undefined.  
+> Do not use <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType>. The behavior of this property outside client windows in a scaled environment is undefined.  
   
  If your application performs direct cross-process communication with non- dpi-aware applications, you may have convert between logical and physical coordinates by using the [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] functions `PhysicalToLogicalPoint` and `LogicalToPhysicalPoint`.  
   

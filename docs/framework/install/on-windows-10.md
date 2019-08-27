@@ -18,7 +18,7 @@ You may have arrived on this page after trying to run an application and seeing 
 
 The .NET Framework 4.8 is included with:
 
-* [Windows 10 May 2019 Update](https://support.microsoft.com/help/4028685/windows-10-get-the-update)
+- [Windows 10 May 2019 Update](https://support.microsoft.com/help/4028685/windows-10-get-the-update)
 
 > [!div class="button"]
 > [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
@@ -27,20 +27,20 @@ The .NET Framework 4.8 is included with:
 
 You can install [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) on:
 
-* Windows 10 October 2018 Update (version 1809)
-* Windows 10 April 2018 Update (version 1803)
-* Windows 10 Fall Creators Update (version 1709)
-* Windows 10 Creators Update (version 1703)
-* Windows 10 Anniversary Update (version 1607)
-* Windows Server 2019
-* Windows Server, version 1809
-* Windows Server, version 1803
-* Windows Server 2016
+- Windows 10 October 2018 Update (version 1809)
+- Windows 10 April 2018 Update (version 1803)
+- Windows 10 Fall Creators Update (version 1709)
+- Windows 10 Creators Update (version 1703)
+- Windows 10 Anniversary Update (version 1607)
+- Windows Server 2019
+- Windows Server, version 1809
+- Windows Server, version 1803
+- Windows Server 2016
 
 The .NET Framework 4.8 is not supported on:
 
-* Windows 10 1507
-* Windows 10 1511
+- Windows 10 1507
+- Windows 10 1511
 
 If you're using Windows 10 1507 or 1511 and you want to install the .NET Framework 4.8, you first need to upgrade to a later Windows 10 version.
 

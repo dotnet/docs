@@ -17,15 +17,15 @@ configuration element to select the compiler language version.
 
 The new language features in this release are:
 
-* [Techniques for writing safe efficient code](#safe-efficient-code-enhancements)
+- [Techniques for writing safe efficient code](#safe-efficient-code-enhancements)
   - A combination of syntax improvements that enable working with value types using reference semantics.
-* [Non-trailing named arguments](#non-trailing-named-arguments)
+- [Non-trailing named arguments](#non-trailing-named-arguments)
   - Named arguments can be followed by positional arguments.
-* [Leading underscores in numeric literals](#leading-underscores-in-numeric-literals)
+- [Leading underscores in numeric literals](#leading-underscores-in-numeric-literals)
   - Numeric literals can now have leading underscores before any printed digits.
-* [`private protected` access modifier](#private-protected-access-modifier)
+- [`private protected` access modifier](#private-protected-access-modifier)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
-* [Conditional `ref` expressions](#conditional-ref-expressions)
+- [Conditional `ref` expressions](#conditional-ref-expressions)
   - The result of a conditional expression (`?:`) can now be a reference.
 
 The remainder of this article provides an overview of each feature. For each feature,

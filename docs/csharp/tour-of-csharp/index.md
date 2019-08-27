@@ -46,28 +46,28 @@ The output of the program is produced by the `WriteLine` method of the `Console`
 
 There's a lot more to learn about C#.  The following topics provide an overview of the elements of the C# language. These overviews will provide basic information about all elements of the language and give you the information necessary to dive deeper into elements of the C# language:
 
-* [Program Structure](program-structure.md)
+- [Program Structure](program-structure.md)
   - Learn the key organizational concepts in the C# language: ***programs***, ***namespaces***, ***types***, ***members***, and ***assemblies***.
-* [Types and Variables](types-and-variables.md)
+- [Types and Variables](types-and-variables.md)
   - Learn about ***value types***, ***reference types***, and ***variables*** in the C# language.
-* [Expressions](expressions.md)
+- [Expressions](expressions.md)
   - ***Expressions*** are constructed from ***operands*** and ***operators***. Expressions produce a value.
-* [Statements](statements.md)
+- [Statements](statements.md)
   - You use ***statements*** to express the actions of a program.
-* [Classes and objects](classes-and-objects.md)
+- [Classes and objects](classes-and-objects.md)
   - ***Classes*** are the most fundamental of C#'s types. ***Objects*** are instances of a class. Classes are built using ***members***, which are also covered in this topic.
-* [Structs](structs.md)
+- [Structs](structs.md)
   - ***Structs*** are data structures that, unlike classes, are value types.
-* [Arrays](arrays.md)
+- [Arrays](arrays.md)
   - An ***array*** is a data structure that contains a number of variables that are accessed through computed indices.
-* [Interfaces](interfaces.md)
+- [Interfaces](interfaces.md)
   - An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface does not provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
-* [Enums](enums.md)
+- [Enums](enums.md)
   - An ***enum type*** is a distinct value type with a set of named constants.
-* [Delegates](delegates.md)
+- [Delegates](delegates.md)
   - A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
-* [Attributes](attributes.md)
-  * ***Attributes*** enable programs to specify additional declarative information about types, members, and other entities.
+- [Attributes](attributes.md)
+  - ***Attributes*** enable programs to specify additional declarative information about types, members, and other entities.
 
 > [!div class="step-by-step"]
 > [Next](program-structure.md)

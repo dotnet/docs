@@ -95,8 +95,8 @@ At a minimum, individual web applications should strive to be their own bounded 
 
 ## Additional resources
 
-* [JAVA Design Patterns: Principles](https://java-design-patterns.com/principles/)
-* [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html)
+- [JAVA Design Patterns: Principles](https://java-design-patterns.com/principles/)
+- [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html)
 
 >[!div class="step-by-step"]
 >[Previous](choose-between-traditional-web-and-single-page-apps.md)

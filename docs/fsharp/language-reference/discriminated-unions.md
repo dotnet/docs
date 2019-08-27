@@ -194,10 +194,10 @@ type Shape =
 
 The following attributes are commonly seen in discriminated unions:
 
-* `[<RequireQualifiedAccess>]`
-* `[<NoEquality>]`
-* `[<NoComparison>]`
-* `[<Struct>]`
+- `[<RequireQualifiedAccess>]`
+- `[<NoEquality>]`
+- `[<NoComparison>]`
+- `[<Struct>]`
 
 ## See also
 

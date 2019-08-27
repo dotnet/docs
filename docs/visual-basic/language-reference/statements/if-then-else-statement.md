@@ -46,9 +46,9 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 
 This article includes several examples that illustrate uses of the `If`...`Then`...`Else` statement:
 
-* [Multiline syntax example](#multi-line)
-* [Nested syntax example](#nested)
-* [Single-line syntax example](#single-line)
+- [Multiline syntax example](#multi-line)
+- [Nested syntax example](#nested)
+- [Single-line syntax example](#single-line)
 
 ## Parts
 

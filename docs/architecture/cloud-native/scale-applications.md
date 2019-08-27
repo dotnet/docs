@@ -1,6 +1,6 @@
 ---
 title: Scaling cloud native applications
-description: Architecting Cloud Native .NET Apps for Azure | Scaling Cloud Native Applications Up and Out
+description: Architecting Cloud Native .NET Apps for Azure | Scaling cloud native applications with Azure Kubernetes Service to meet user demand by increasing individual machine resources or increasing the number of machines in an application cluster.
 ms.date: 06/30/2019
 ---
 # Scaling cloud native applications

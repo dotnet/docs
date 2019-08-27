@@ -1,11 +1,11 @@
 ---
 title: Leveraging containers and orchestrators
-description: Architecting Cloud Native .NET Apps for Azure | Leveraging Containers and Orchestrators
+description: Architecting Cloud-native .NET Apps for Azure | Leveraging Containers and Orchestrators
 ms.date: 06/30/2019
 ---
 # Leveraging containers and orchestrators
 
-Docker is the most popular container management and imaging platform and allows you to quickly work with containers on Linux and Windows. Containers provide separate but reproducible application environments that run the same way on any system. This makes them perfect for hosting and scaling applications and app components in cloud native applications. Containers are isolated from one another, so two containers on the same host hardware can have completely different versions of software and even operating system installed, without the dependencies causing conflicts.
+Docker is the most popular container management and imaging platform and allows you to quickly work with containers on Linux and Windows. Containers provide separate but reproducible application environments that run the same way on any system. This makes them perfect for hosting and scaling applications and app components in cloud-native applications. Containers are isolated from one another, so two containers on the same host hardware can have completely different versions of software and even operating system installed, without the dependencies causing conflicts.
 
 What’s more, containers are completely defined by simple files that can be checked into source control. Unlike full servers, even virtual machines, which frequently require manual work to apply updates or install additional services, container infrastructure can easily be version-controlled. Thus, apps built to run in containers can be developed, tested, and deployed using automated tools as part of a build pipeline.
 

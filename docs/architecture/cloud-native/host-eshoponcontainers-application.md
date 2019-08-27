@@ -1,6 +1,6 @@
 ---
 title: Hosting the eShopOnContainers application
-description: Architecting Cloud Native .NET Apps for Azure | Hosting the eShopOnContainers Application
+description: Architecting Cloud-native .NET Apps for Azure | Hosting the eShopOnContainers Application
 ms.date: 06/30/2019
 ---
 # Hosting the eShopOnContainers application
@@ -15,14 +15,14 @@ Once the cluster has been created and configured, you can deploy the application
 
 ## Helm Deployment
 
-Basic deployments to AKS may use custom CLI scripts or simple deployment files, but more complex applications should use a dependency management tool like Helm. Helm is maintained by the Cloud Native Computing Foundation and helps you define, install, and upgrade Kubernetes applications. Helm is composed of a command line client, helm, which uses helm charts, and an in-cluster component, Tiller. Helm Charts use standard YAML-formatted files to describe a related set of Kubernetes resources, and are typically versioned alongside the application they describe. Helm Charts range from extremely simple to very complex depending on the requirements of the installation they describe.
+Basic deployments to AKS may use custom CLI scripts or simple deployment files, but more complex applications should use a dependency management tool like Helm. Helm is maintained by the Cloud-native Computing Foundation and helps you define, install, and upgrade Kubernetes applications. Helm is composed of a command line client, helm, which uses helm charts, and an in-cluster component, Tiller. Helm Charts use standard YAML-formatted files to describe a related set of Kubernetes resources, and are typically versioned alongside the application they describe. Helm Charts range from extremely simple to very complex depending on the requirements of the installation they describe.
 
 You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 3-X shows how the different components of the application are organized into a folder structure used by helm to define and managed deployments.
 
 ![eShopOnContainers Architecture](media/eshoponcontainers-helm-folder.png)
 **Figure 3-X**. The eShopOnContainers helm folder.
 
-Each individual component is installed using a `helm install` command. These commands is easily scripted, and eShopOnContainers provides a "deploy all" script that loops through the different components and installs them using their respective helm charts. The result is a repeatable process, versioned with the application in source control, that anyone on the team can deploy to an AKS cluster with a one line script command. Especially when combined with DevSpaces, this makes it very easy for developers to diagnose and test their individual changes to their microservice-based cloud native apps.
+Each individual component is installed using a `helm install` command. These commands is easily scripted, and eShopOnContainers provides a "deploy all" script that loops through the different components and installs them using their respective helm charts. The result is a repeatable process, versioned with the application in source control, that anyone on the team can deploy to an AKS cluster with a one line script command. Especially when combined with DevSpaces, this makes it very easy for developers to diagnose and test their individual changes to their microservice-based cloud-native apps.
 
 ## DevSpaces for Kubernetes
 

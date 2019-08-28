@@ -165,11 +165,15 @@ To make a single prediction, use [`PredictionEngine`](xref:Microsoft.ML.Predicti
     using SentimentRazorML.Model.DataModels;
     ```
 
+    [!code-csharp [StartupUsings](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L12-L14)]        
+
 1. Create a global variable to store the location of the trained model file.
 
     ```csharp
     private readonly string _modelPath;
     ```
+
+    [!code-csharp [ModelPath](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L20)]
 
 1. The model file is stored in the build directory alongside the assembly files of your application. To make it easier to access, create a helper method called `GetAbsolutePath` after the `Configure` method
 
@@ -184,17 +188,24 @@ To make a single prediction, use [`PredictionEngine`](xref:Microsoft.ML.Predicti
     }
     ```
 
+    [!code-csharp [GetAbsolutePathMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L66-L73)]
+
+
 1. Use the `GetAbsolutePath` method in the `Startup` class constructor to set the `_modelPath`.
 
     ```csharp
     _modelPath = GetAbsolutePath("MLModel.zip");
     ```
 
+    [!code-csharp [InitModelPath](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L25)]
+
 1. Configure the `PredictionEnginePool` for your application in the `ConfigureServices` method:
 
     ```csharp
     services.AddPredictionEnginePool<ModelInput, ModelOutput>().FromFile(_modelPath);
     ```
+
+    [!code-csharp [InitPredEnginePool](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L42)]
 
 ### Create sentiment analysis handler
 
@@ -207,6 +218,8 @@ Predictions will be made inside the main page of the application. Therefore, a m
     using SentimentRazorML.Model.DataModels;
     ```
 
+    [!code-csharp [IndexUsings](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L7-L8)]
+
     In order to use the `PredictionEnginePool` configured in the `Startup` class, you have to inject it into the constructor of the model where you want to use it. 
 
 1. Add a variable to reference the `PredictionEnginePool` inside the `IndexModel` class.
@@ -214,6 +227,8 @@ Predictions will be made inside the main page of the application. Therefore, a m
     ```csharp
     private readonly PredictionEnginePool<ModelInput, ModelOutput> _predictionEnginePool;
     ```
+
+    [!code-csharp [PredEnginePool](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L14)]
 
 1. Create a constructor in the `IndexModel` class and inject the `PredictionEnginePool` service into it.
 
@@ -223,6 +238,8 @@ Predictions will be made inside the main page of the application. Therefore, a m
         _predictionEnginePool = predictionEnginePool;
     }
     ```
+
+    [!code-csharp [IndexConstructor](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L16-L19)]
 
 1. Create a method handler that uses the `PredictionEnginePool` to make predictions from user input received from the web page.
 
@@ -239,13 +256,17 @@ Predictions will be made inside the main page of the application. Therefore, a m
 
         ```csharp
         var input = new ModelInput { Comment = text };
-        ``` 
+        ```
+
+        [!code-csharp [InitInput](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L28)] 
 
     1. Use the `PredictionEnginePool` to predict sentiment.
 
         ```csharp
         var prediction = _predictionEnginePool.Predict(input);
         ```
+
+        [!code-csharp [MakePrediction](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L29)] 
 
     1. Convert the predicted `bool` value into positive or negative with the following code.
 
@@ -254,11 +275,15 @@ Predictions will be made inside the main page of the application. Therefore, a m
         var sentiment = Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative";
         ```
 
+        [!code-csharp [ConvertPrediction](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L30)]
+
     1. Finally, return the sentiment back to the web page.
 
         ```csharp
         return Content(sentiment);
         ```
+
+        [!code-csharp [ReturnSentiment](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L31)]
 
 ### Configure the web page
 
@@ -291,6 +316,8 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
         </div>
     </div>
     ```
+
+    [!code-csharp [IndexPage](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml)]
 
 1. Next, add css styling code to the end of the *site.css* page in the *wwwroot\css* directory:
 
@@ -342,6 +369,8 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
     }
     ```
 
+    [!code-csharp [CssStyling](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/css/site.css#L61-L105)]
+
 1. After that, add code to send inputs from the web page to the `OnGetAnalyzeSentiment` handler.
 
     1. In the *site.js* file located in the *wwwroot\js* directory, create a function called `getSentiment` to make a GET HTTP request with the user input to the `OnGetAnalyzeSentiment` handler.
@@ -355,6 +384,8 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
         }
         ```
 
+        [!code-csharp [GetSentimentMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/js/site.js#L5-L10)]
+
     1. Below that, add another function called `updateMarker` to dynamically update the position of the marker on the web page as sentiment is predicted.
 
         ```js
@@ -363,6 +394,8 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
             $("#markerValue").text(sentiment);
         }
         ```
+
+        [!code-csharp [UpdateMarkerMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/js/site.js#L12-L15)]
 
     1. Create an event handler function called `updateSentiment` to get the input from the user, send it to the `OnGetAnalyzeSentiment` function using the `getSentiment` function and update the marker with the `updateMarker` function.
 
@@ -387,11 +420,15 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
         }
         ```
 
+        [!code-csharp [UpdateSentimentMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/js/site.js#L17-L34)]
+
     1. Finally, register the event handler and bind it to the `textarea` element with the `id=Message` attribute.
 
         ```js
         $("#Message").on('change input paste', updateSentiment)
         ```
+
+        [!code-csharp [UpdateSentimentEvtHandler](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/js/site.js#L36)]
 
 ## Run the application
 

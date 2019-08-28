@@ -47,11 +47,13 @@ This example demonstrates how delegates can be used with methods that have param
 
 - A <xref:System.Windows.Forms.KeyEventHandler> delegate that defines the signature of the [Button.KeyDown](xref:System.Windows.Forms.Control.KeyDown) event. Its signature is:
 
-   ```csharp
+   ```vb
    Public Delegate Sub KeyEventHandler(sender As Object, e As KeyEventArgs)
    ```
+
 - A <xref:System.Windows.Forms.MouseEventHandler> delegate that defines the signature of the [Button.MouseClick](xref:System.Windows.Forms.Control.MouseDown) event. Its signature is:
-   ```csharp
+
+   ```vb
    Public Delegate Sub MouseEventHandler(sender As Object, e As MouseEventArgs)
    ```
 

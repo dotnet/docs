@@ -26,7 +26,7 @@ While creating such applications was possible prior to the existence of WCF, WCF
 
 ## Features of WCF
 
-WCF includes the following set of features. For more information, see [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md).
+WCF includes the following set of features. For more information, see [WCF Feature Details](./feature-details/index.md).
 
 - **Service Orientation**
 
@@ -34,39 +34,39 @@ WCF includes the following set of features. For more information, see [WCF Featu
 
 - **Interoperability**
 
-     WCF implements modern industry standards for Web service interoperability. For more information about the supported standards, see [Interoperability and Integration](../../../docs/framework/wcf/feature-details/interoperability-and-integration.md).
+     WCF implements modern industry standards for Web service interoperability. For more information about the supported standards, see [Interoperability and Integration](./feature-details/interoperability-and-integration.md).
 
 - **Multiple Message Patterns**
 
-     Messages are exchanged in one of several patterns. The most common pattern is the request/reply pattern, where one endpoint requests data from a second endpoint. The second endpoint replies. There are other patterns such as a one-way message in which a single endpoint sends a message without any expectation of a reply. A more complex pattern is the duplex exchange pattern where two endpoints establish a connection and send data back and forth, similar to an instant messaging program. For more information about how to implement different message exchange patterns using WCF see [Contracts](../../../docs/framework/wcf/feature-details/contracts.md).
+     Messages are exchanged in one of several patterns. The most common pattern is the request/reply pattern, where one endpoint requests data from a second endpoint. The second endpoint replies. There are other patterns such as a one-way message in which a single endpoint sends a message without any expectation of a reply. A more complex pattern is the duplex exchange pattern where two endpoints establish a connection and send data back and forth, similar to an instant messaging program. For more information about how to implement different message exchange patterns using WCF see [Contracts](./feature-details/contracts.md).
 
 - **Service Metadata**
 
-     WCF supports publishing service metadata using formats specified in industry standards such as WSDL, XML Schema and WS-Policy. This metadata can be used to automatically generate and configure clients for accessing WCF services. Metadata can be published over HTTP and HTTPS or using the Web Service Metadata Exchange standard. For more information, see [Metadata](../../../docs/framework/wcf/feature-details/metadata.md).
+     WCF supports publishing service metadata using formats specified in industry standards such as WSDL, XML Schema and WS-Policy. This metadata can be used to automatically generate and configure clients for accessing WCF services. Metadata can be published over HTTP and HTTPS or using the Web Service Metadata Exchange standard. For more information, see [Metadata](./feature-details/metadata.md).
 
 - **Data Contracts**
 
-     Because WCF is built using the .NET Framework, it also includes code-friendly methods of supplying the contracts you want to enforce. One of the universal types of contracts is the data contract. In essence, as you code your service using Visual C# or Visual Basic, the easiest way to handle data is by creating classes that represent a data entity with properties that belong to the data entity. WCF includes a comprehensive system for working with data in this easy manner. Once you have created the classes that represent data, your service automatically generates the metadata that allows clients to comply with the data types you have designed. For more information, see [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+     Because WCF is built using the .NET Framework, it also includes code-friendly methods of supplying the contracts you want to enforce. One of the universal types of contracts is the data contract. In essence, as you code your service using Visual C# or Visual Basic, the easiest way to handle data is by creating classes that represent a data entity with properties that belong to the data entity. WCF includes a comprehensive system for working with data in this easy manner. Once you have created the classes that represent data, your service automatically generates the metadata that allows clients to comply with the data types you have designed. For more information, see [Using Data Contracts](./feature-details/using-data-contracts.md)
 
 - **Security**
 
-     Messages can be encrypted to protect privacy and you can require users to authenticate themselves before being allowed to receive messages. Security can be implemented using well-known standards such as SSL or WS-SecureConversation. For more information, see [Security](../../../docs/framework/wcf/feature-details/security.md).
+     Messages can be encrypted to protect privacy and you can require users to authenticate themselves before being allowed to receive messages. Security can be implemented using well-known standards such as SSL or WS-SecureConversation. For more information, see [Security](./feature-details/security.md).
 
 - **Multiple Transports and Encodings**
 
-     Messages can be sent on any of several built-in transport protocols and encodings. The most common protocol and encoding is to send text encoded SOAP messages using the HyperText Transfer Protocol (HTTP) for use on the World Wide Web. Alternatively, WCF allows you to send messages over TCP, named pipes, or MSMQ. These messages can be encoded as text or using an optimized binary format.  Binary data can be sent efficiently using the MTOM standard. If none of the provided transports or encodings suit your needs you can create your own custom transport or encoding. For more information about transports and encodings supported by WCF see [Transports](../../../docs/framework/wcf/feature-details/transports.md).
+     Messages can be sent on any of several built-in transport protocols and encodings. The most common protocol and encoding is to send text encoded SOAP messages using the HyperText Transfer Protocol (HTTP) for use on the World Wide Web. Alternatively, WCF allows you to send messages over TCP, named pipes, or MSMQ. These messages can be encoded as text or using an optimized binary format.  Binary data can be sent efficiently using the MTOM standard. If none of the provided transports or encodings suit your needs you can create your own custom transport or encoding. For more information about transports and encodings supported by WCF see [Transports](./feature-details/transports.md).
 
 - **Reliable and Queued Messages**
 
-     WCF supports reliable message exchange using reliable sessions implemented over WS-Reliable Messaging and using MSMQ. For more information about reliable and queued messaging support in WCF see [Queues and Reliable Sessions](../../../docs/framework/wcf/feature-details/queues-and-reliable-sessions.md).
+     WCF supports reliable message exchange using reliable sessions implemented over WS-Reliable Messaging and using MSMQ. For more information about reliable and queued messaging support in WCF see [Queues and Reliable Sessions](./feature-details/queues-and-reliable-sessions.md).
 
 - **Durable Messages**
 
-     A durable message is one that is never lost due to a disruption in the communication. The messages in a durable message pattern are always saved to a database. If a disruption occurs, the database allows you to resume the message exchange when the connection is restored. You can also create a durable message using the Windows Workflow Foundation (WF). For more information, see [Workflow Services](../../../docs/framework/wcf/feature-details/workflow-services.md).
+     A durable message is one that is never lost due to a disruption in the communication. The messages in a durable message pattern are always saved to a database. If a disruption occurs, the database allows you to resume the message exchange when the connection is restored. You can also create a durable message using the Windows Workflow Foundation (WF). For more information, see [Workflow Services](./feature-details/workflow-services.md).
 
 - **Transactions**
 
-     WCF also supports transactions using one of three transaction models: WS-AtomicTransactions, the APIs in the <xref:System.Transactions> namespace, and Microsoft Distributed Transaction Coordinator. For more information about transaction support in WCF see [Transactions](../../../docs/framework/wcf/feature-details/transactions-in-wcf.md).
+     WCF also supports transactions using one of three transaction models: WS-AtomicTransactions, the APIs in the <xref:System.Transactions> namespace, and Microsoft Distributed Transaction Coordinator. For more information about transaction support in WCF see [Transactions](./feature-details/transactions-in-wcf.md).
 
 - **AJAX and REST Support**
 
@@ -74,7 +74,7 @@ WCF includes the following set of features. For more information, see [WCF Featu
 
 - **Extensibility**
 
-     The WCF architecture has a number of extensibility points. If extra capability is required, there are a number of entry points that allow you to customize the behavior of a service. For more information about available extensibility points see [Extending WCF](../../../docs/framework/wcf/extending/index.md).
+     The WCF architecture has a number of extensibility points. If extra capability is required, there are a number of entry points that allow you to customize the behavior of a service. For more information about available extensibility points see [Extending WCF](./extending/index.md).
 
 ## WCF Integration with Other Microsoft Technologies
 
@@ -91,10 +91,10 @@ The hosting features of Windows Server AppFabric application server are specific
 ## See also
 
 - <xref:System.ServiceModel>
-- [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)
-- [Windows Communication Foundation Architecture](../../../docs/framework/wcf/architecture.md)
-- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)
-- [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md)
-- [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)
-- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
+- [Fundamental Windows Communication Foundation Concepts](fundamental-concepts.md)
+- [Windows Communication Foundation Architecture](architecture.md)
+- [Guidelines and Best Practices](guidelines-and-best-practices.md)
+- [Getting Started Tutorial](getting-started-tutorial.md)
+- [Guide to the Documentation](guide-to-the-documentation.md)
+- [Basic WCF Programming](basic-wcf-programming.md)
 - [Windows Communication Foundation Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751514%28v=vs.90%29)

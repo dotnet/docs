@@ -7,12 +7,12 @@ dev_langs:
 ms.assetid: 5c5450ea-6af1-4b75-a267-613d0ac54707
 ---
 # Specifying Service Run-Time Behavior
-Once you have designed a service contract ([Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)) and implemented your service contract ([Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)) you can configure the operation behavior of the service runtime. This topic discusses system-provided service and operation behaviors and describes where to find more information to create new behaviors. While some behaviors are applied as attributes, many are applied using an application configuration file or programmatically. For more information about configuring your service application, see [Configuring Services](../../../docs/framework/wcf/configuring-services.md).  
+Once you have designed a service contract ([Designing Service Contracts](designing-service-contracts.md)) and implemented your service contract ([Implementing Service Contracts](implementing-service-contracts.md)) you can configure the operation behavior of the service runtime. This topic discusses system-provided service and operation behaviors and describes where to find more information to create new behaviors. While some behaviors are applied as attributes, many are applied using an application configuration file or programmatically. For more information about configuring your service application, see [Configuring Services](configuring-services.md).  
   
 ## Overview  
  The contract defines the inputs, outputs, data types, and capabilities of a service of that type. Implementing a service contract creates a class that, when configured with a binding at an address, fulfills the contract it implements. Contractual, binding, and address information are all known by the client; without them, the client cannot make use of the service.  
   
- However, operation specifics, such as threading issues or instance management, are opaque to clients. Once you have implemented your service contract, you can configure a large number of operation characteristics by using *behaviors*. Behaviors are objects that modify the Windows Communication Foundation (WCF) runtime by either setting a runtime property or by inserting a customization type into the runtime. For more information about modifying the runtime by creating user-defined behaviors, see [Extending ServiceHost and the Service Model Layer](../../../docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
+ However, operation specifics, such as threading issues or instance management, are opaque to clients. Once you have implemented your service contract, you can configure a large number of operation characteristics by using *behaviors*. Behaviors are objects that modify the Windows Communication Foundation (WCF) runtime by either setting a runtime property or by inserting a customization type into the runtime. For more information about modifying the runtime by creating user-defined behaviors, see [Extending ServiceHost and the Service Model Layer](./extending/extending-servicehost-and-the-service-model-layer.md).  
   
  The <xref:System.ServiceModel.ServiceBehaviorAttribute?displayProperty=nameWithType> and <xref:System.ServiceModel.OperationBehaviorAttribute?displayProperty=nameWithType> attributes are the most widely useful behaviors and expose the most commonly requested operation features. Because they are attributes, you apply them to the service or operation implementation. Other behaviors, such as the <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior?displayProperty=nameWithType>, are typically applied using an application configuration file, although you can use them programmatically.  
   
@@ -116,5 +116,5 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
   
 ## See also
 
-- [Configuring Services](../../../docs/framework/wcf/configuring-services.md)
-- [How to: Control Service Instancing](../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)
+- [Configuring Services](configuring-services.md)
+- [How to: Control Service Instancing](./feature-details/how-to-control-service-instancing.md)

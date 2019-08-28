@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
 ---
 # How to: Secure a Service with Windows Credentials
-This topic shows how to enable transport security on a Windows Communication Foundation (WCF) service that resides in a Windows domain and is called by clients in the same domain. For more information about this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
+This topic shows how to enable transport security on a Windows Communication Foundation (WCF) service that resides in a Windows domain and is called by clients in the same domain. For more information about this scenario, see [Transport Security with Windows Authentication](./feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](./samples/wshttpbinding.md) sample.  
   
  This topic assumes you have an existing contract interface and implementation already defined, and adds on to that. You can also modify an existing service and client.  
   
@@ -38,7 +38,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
      [!code-vb[c_SecureWindowsService#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb/secureservice.vb#1)]  
   
 ### Using the Binding in a Service  
- This is the second procedure, which shows how to use the binding in a self-hosted service. For more information about hosting services see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
+ This is the second procedure, which shows how to use the binding in a self-hosted service. For more information about hosting services see [Hosting Services](hosting-services.md).  
   
 ##### To use a binding in a service  
   
@@ -60,7 +60,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
      [!code-vb[c_SecureWindowsService#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb/secureservice.vb#2)]  
   
 ### Using the Binding in a Client  
- This procedure shows how to generate a proxy that communicates with the service. The proxy is generated with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) which uses the service metadata to create the proxy.  
+ This procedure shows how to generate a proxy that communicates with the service. The proxy is generated with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) which uses the service metadata to create the proxy.  
   
  This procedure also creates an instance of the <xref:System.ServiceModel.WSHttpBinding> class to communicate with the service, and then calls the service.  
   
@@ -68,7 +68,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 ##### To use a binding in a client with code  
   
-1. Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a WCF service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
+1. Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a WCF service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
   
 2. This procedure's code is inserted at the beginning of the `Main` method of the client program.  
   
@@ -88,13 +88,13 @@ This topic shows how to enable transport security on a Windows Communication Fou
 ## Using the Configuration File  
  Instead of creating the binding with procedural code, you can use the following code shown for the bindings section of the configuration file.  
   
- If you do not already have a service defined, see [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md), and [Configuring Services](../../../docs/framework/wcf/configuring-services.md).  
+ If you do not already have a service defined, see [Designing and Implementing Services](designing-and-implementing-services.md), and [Configuring Services](configuring-services.md).  
   
  **Note** This configuration code is used in both the service and client configuration files.  
   
 #### To enable transfer security on a service in a Windows domain using configuration  
   
-1. Add a [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element to the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element section of the configuration file.  
+1. Add a [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) element to the [\<bindings>](../configure-apps/file-schema/wcf/bindings.md) element section of the configuration file.  
   
 2. Add a <`binding`> element to the <`WSHttpBinding`> element and set the `configurationName` attribute to a value appropriate to your application.  
   
@@ -102,7 +102,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 4. Add a <`message`> element and set the `clientCredentialType` attribute to Windows.  
   
-5. In the service's configuration file, replace the `<bindings>` section with the following code. If you do not already have a service configuration file, see [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md).  
+5. In the service's configuration file, replace the `<bindings>` section with the following code. If you do not already have a service configuration file, see [Using Bindings to Configure Services and Clients](using-bindings-to-configure-services-and-clients.md).  
   
     ```xml  
     <bindings>  
@@ -121,9 +121,9 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 ##### To use a binding in a client with configuration  
   
-1. Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
+1. Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. For more information, see [How to: Create a Client](how-to-create-a-wcf-client.md).  
   
-2. Replace the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) section of the generated configuration file with the configuration code from the preceding section.  
+2. Replace the [\<bindings>](../configure-apps/file-schema/wcf/bindings.md) section of the generated configuration file with the configuration code from the preceding section.  
   
 3. Procedural code is inserted at the beginning of the `Main` method of the client program.  
   
@@ -144,7 +144,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
 ## See also
 
 - <xref:System.ServiceModel.WSHttpBinding>
-- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
-- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
-- [Securing Services](../../../docs/framework/wcf/securing-services.md)
-- [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [How to: Create a Client](how-to-create-a-wcf-client.md)
+- [Securing Services](securing-services.md)
+- [Security Overview](./feature-details/security-overview.md)

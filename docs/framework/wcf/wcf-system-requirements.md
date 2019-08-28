@@ -17,7 +17,7 @@ Windows Communication Foundation (WCF) is a communication infrastructure that is
   
 ## See also
 
-- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)
-- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
-- [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)
-- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)
+- [Conceptual Overview](conceptual-overview.md)
+- [Basic WCF Programming](basic-wcf-programming.md)
+- [WCF Feature Details](./feature-details/index.md)
+- [Guidelines and Best Practices](guidelines-and-best-practices.md)

@@ -52,7 +52,7 @@ After initial deployment, and potentially several times during their lifetime, s
   
  It is easy to mistakenly believe that adding a new member will not break existing clients. If you are unsure that all clients can handle lax versioning, the recommendation is to use the strict versioning guidelines and treat data contracts as immutable.  
   
- For detailed guidelines for both lax and strict versioning of data contracts, see [Best Practices: Data Contract Versioning](../../../docs/framework/wcf/best-practices-data-contract-versioning.md).  
+ For detailed guidelines for both lax and strict versioning of data contracts, see [Best Practices: Data Contract Versioning](best-practices-data-contract-versioning.md).  
   
 ### Distinguishing Between Data Contract and .NET Types  
  A .NET class or structure can be projected as a data contract by applying the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the class. The .NET type and its data contract projections are two distinct matters. It is possible to have multiple .NET types with the same data contract projection. This distinction is especially useful in allowing you to change the .NET type while maintaining the projected data contract, thereby maintaining compatibility with existing clients even in the strict sense of the word. There are two things you should always do to maintain this distinction between .NET type and data contract:  
@@ -119,7 +119,7 @@ After initial deployment, and potentially several times during their lifetime, s
  Changes to endpoint address and binding are breaking changes unless clients are capable of dynamically discovering the new endpoint address or binding. One mechanism for implementing this capability is by using a Universal Discovery Description and Integration (UDDI) registry and the UDDI Invocation Pattern where a client attempts to communicate with an endpoint and, upon failure, queries a well-known UDDI registry for the current endpoint metadata. The client then uses the address and binding from this metadata to communicate with the endpoint. If this communication succeeds, the client caches the address and binding information for future use.  
   
 ## Routing Service and Versioning  
- If the changes made to a service are breaking changes and you need to have two or more different versions of a service running simultaneously you can use the WCF Routing Service to route messages to the appropriate service instance. The WCF Routing Service uses content-based routing, in other words, it uses information within the message to determine where to route the message. For more information about the WCF Routing Service see [Routing Service](../../../docs/framework/wcf/feature-details/routing-service.md). For an example of how to use the WCF Routing Service for service versioning see [How To: Service Versioning](../../../docs/framework/wcf/feature-details/how-to-service-versioning.md).  
+ If the changes made to a service are breaking changes and you need to have two or more different versions of a service running simultaneously you can use the WCF Routing Service to route messages to the appropriate service instance. The WCF Routing Service uses content-based routing, in other words, it uses information within the message to determine where to route the message. For more information about the WCF Routing Service see [Routing Service](./feature-details/routing-service.md). For an example of how to use the WCF Routing Service for service versioning see [How To: Service Versioning](./feature-details/how-to-service-versioning.md).  
   
 ## Appendix  
  The general data contract versioning guidance when strict versioning is needed is to treat data contracts as immutable and create new ones when changes are required. A new class needs to be created for each new data contract, so a mechanism is needed to avoid having to take existing code that was written in terms of the old data contract class and rewrite it in terms of the new data contract class.  
@@ -181,5 +181,5 @@ public class PurchaseOrderV2 : IPurchaseOrderV1, IPurchaseOrderV2
 - <xref:System.Runtime.Serialization.ExtensionDataObject>
 - <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>
 - <xref:System.Xml.Serialization.XmlSerializer>
-- [Data Contract Equivalence](../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)
-- [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)
+- [Data Contract Equivalence](./feature-details/data-contract-equivalence.md)
+- [Version-Tolerant Serialization Callbacks](./feature-details/version-tolerant-serialization-callbacks.md)

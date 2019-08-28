@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: c00c84f1-962d-46a7-b07f-ebc4f80fbfc1
 ---
 # Defining and Specifying Faults
-SOAP faults convey error condition information from a service to a client and, in the duplex case, from a client to a service in an interoperable way. This topic discusses when and how to define custom fault content and specify which operations can return them. For more information about how a service, or duplex client, can send those faults and how a client or service application handles these faults, see [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md). For an overview of error handling in Windows Communication Foundation (WCF) applications, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
+SOAP faults convey error condition information from a service to a client and, in the duplex case, from a client to a service in an interoperable way. This topic discusses when and how to define custom fault content and specify which operations can return them. For more information about how a service, or duplex client, can send those faults and how a client or service application handles these faults, see [Sending and Receiving Faults](sending-and-receiving-faults.md). For an overview of error handling in Windows Communication Foundation (WCF) applications, see [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md).  
   
 ## Overview  
  Declared SOAP faults are those in which an operation has a <xref:System.ServiceModel.FaultContractAttribute?displayProperty=nameWithType> that specifies a custom SOAP fault type. Undeclared SOAP faults are those that are not specified in the contract for an operation. This topic helps you identify those error conditions and create a fault contract for your service that clients can use to properly handle those error conditions when notified by custom SOAP faults. The basic tasks are, in order:  
@@ -60,7 +60,7 @@ End Class
  [!code-csharp[Faults#2](../../../samples/snippets/csharp/VS_Snippets_CFX/faults/cs/service.cs#2)]
  [!code-vb[Faults#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faults/vb/service.vb#2)]  
   
- For more information about how to ensure your data is serializable, see [Specifying Data Transfer in Service Contracts](../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md). For a list of the serialization support that <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType> provides, see [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+ For more information about how to ensure your data is serializable, see [Specifying Data Transfer in Service Contracts](./feature-details/specifying-data-transfer-in-service-contracts.md). For a list of the serialization support that <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType> provides, see [Types Supported by the Data Contract Serializer](./feature-details/types-supported-by-the-data-contract-serializer.md).  
   
 ### Mark Operations to Establish the Fault Contract  
  Once a serializable data structure that is returned as part of a custom SOAP fault is defined, the last step is to mark your operation contract as throwing a SOAP fault of that type. To do this, use the <xref:System.ServiceModel.FaultContractAttribute?displayProperty=nameWithType> attribute and pass the type of the custom data type that you have constructed. The following code example shows how to use the <xref:System.ServiceModel.FaultContractAttribute> attribute to specify that the `Divide` operation can return a SOAP fault of type `MathFault`. Other math-based operations can now also specify that they can return a `MathFault`.  
@@ -70,7 +70,7 @@ End Class
   
  An operation can specify that it returns more than one custom fault by marking that operation with more than one <xref:System.ServiceModel.FaultContractAttribute> attribute.  
   
- The next step, to implement the fault contract in your operation implementation, is described in the topic [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md).  
+ The next step, to implement the fault contract in your operation implementation, is described in the topic [Sending and Receiving Faults](sending-and-receiving-faults.md).  
   
 #### SOAP, WSDL, and Interoperability Considerations  
  In some circumstances, especially when interoperating with other platforms, it may be important to control the way a fault appears in a SOAP message or the way it is described in the WSDL metadata.  
@@ -86,9 +86,9 @@ End Class
 - <xref:System.ServiceModel.FaultContractAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
-- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
-- [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md)
-- [How to: Declare Faults in Service Contracts](../../../docs/framework/wcf/how-to-declare-faults-in-service-contracts.md)
-- [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)
-- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)
-- [Specifying Data Transfer in Service Contracts](../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+- [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md)
+- [Sending and Receiving Faults](sending-and-receiving-faults.md)
+- [How to: Declare Faults in Service Contracts](how-to-declare-faults-in-service-contracts.md)
+- [Understanding Protection Level](understanding-protection-level.md)
+- [How to: Set the ProtectionLevel Property](how-to-set-the-protectionlevel-property.md)
+- [Specifying Data Transfer in Service Contracts](./feature-details/specifying-data-transfer-in-service-contracts.md)

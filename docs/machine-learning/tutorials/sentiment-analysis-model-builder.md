@@ -63,7 +63,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. Download [UCI Sentiment Labeled Sentences dataset ZIP file](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) anywhere on your computer, and unzip it.
 1. Open PowerShell and navigate to the unzipped folder in the previous step
-1. By default, the file does not have column names. To add column names to the training data, use the following PowerShell Commands:
+1. By default, the file does not have column names. To add column names to the training data, use the following PowerShell commands:
 
     ```powershell
     echo "Comment`tSentiment" | sc yelp_labelled_columns.tsv; cat yelp_labelled.tsv | sc yelp_labelled_columns.tsv

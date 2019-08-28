@@ -27,8 +27,8 @@ The rest of this document examines those four scenarios.
 
 SDK commands include `dotnet new` and `dotnet run`. The .NET Core CLI must choose an SDK version for every `dotnet` command. It uses the latest SDK installed on the machine by default, even if:
 
-* The project targets an earlier version of the .NET Core runtime.
-* The latest version of the .NET Core SDK is a preview version.
+- The project targets an earlier version of the .NET Core runtime.
+- The latest version of the .NET Core SDK is a preview version.
 
 You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
 

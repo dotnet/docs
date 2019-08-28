@@ -60,10 +60,10 @@ type S(count1: Span<int>, count2: Span<int>) =
 
 A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated on the managed heap. A `byref`-like struct is useful for high-performance programming, as it is enforced with set of strong checks about lifetime and non-capture. The rules are:
 
-* They can be used as function parameters, method parameters, local variables, method returns.
-* They cannot be static or instance members of a class or normal struct.
-* They cannot be captured by any closure construct (`async` methods or lambda expressions).
-* They cannot be used as a generic parameter.
+- They can be used as function parameters, method parameters, local variables, method returns.
+- They cannot be static or instance members of a class or normal struct.
+- They cannot be captured by any closure construct (`async` methods or lambda expressions).
+- They cannot be used as a generic parameter.
 
 Although these rules very strongly restrict usage, they do so to fulfill the promise of high-performance computing in a safe manner.
 

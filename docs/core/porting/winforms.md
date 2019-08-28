@@ -295,7 +295,7 @@ Once Visual Studio 2019 supports the Windows Forms Designer, you can copy/paste 
  
 ## Next steps
 
-* Read more about the [Windows Compatibility Pack][compat-pack].
-* Watch a [video on porting](https://www.youtube.com/watch?v=upVQEUc_KwU) your .NET Framework Windows Forms project to .NET Core.
+- Read more about the [Windows Compatibility Pack][compat-pack].
+- Watch a [video on porting](https://www.youtube.com/watch?v=upVQEUc_KwU) your .NET Framework Windows Forms project to .NET Core.
 
 [compat-pack]: windows-compat-pack.md

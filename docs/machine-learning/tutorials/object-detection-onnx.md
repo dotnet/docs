@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects using deep learning with ONNX and ML.NET'
 description: This tutorial illustrates how to use a pre-trained ONNX deep learning model in ML.NET to detect objects in images.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 08/01/2019
+ms.date: 08/27/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use a pre-trained model in an object detection scenario to detect objects in images using ONNX.
@@ -17,11 +17,11 @@ Training an object detection model from scratch requires setting millions of par
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Understand the problem
-> * Learn what ONNX is and how it works with ML.NET
-> * Understand the model
-> * Reuse the pre-trained model
-> * Detect objects with a loaded model
+> - Understand the problem
+> - Learn what ONNX is and how it works with ML.NET
+> - Understand the model
+> - Reuse the pre-trained model
+> - Detect objects with a loaded model
 
 ## Pre-requisites
 
@@ -113,7 +113,7 @@ Now that you have a general understanding of what ONNX is and how Tiny YOLOv2 wo
 
 Open the *Program.cs* file and add the following additional `using` statements to the top of the file:
 
-[!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L1-L9)]
+[!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L1-L7)]
 
 Next, define the paths of the various assets. 
 
@@ -121,7 +121,7 @@ Next, define the paths of the various assets.
 
     [!code-csharp [GetAbsolutePath](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L66-L74)]
 
-1. Then, inside the `Main` method, create fields to store the location of your assets:
+1. Then, inside the `Main` method, create fields to store the location of your assets.
 
     [!code-csharp [AssetDefinition](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L17-L21)]
 
@@ -174,76 +174,6 @@ Initialize the `mlContext` variable with a new instance of `MLContext` by adding
 
 [!code-csharp [InitMLContext](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L24)]
 
-### Add Helper Methods
-
-After the model has made a prediction, commonly referred to as scoring, and the outputs have been processed, the bounding boxes have to be drawn on the image. To do so, add a method called `DrawBoundingBox` below the `GetAbsolutePath` method insode of *Program.cs*.
-
-```csharp
-private static void DrawBoundingBox(string inputImageLocation, string outputImageLocation, string imageName, IList<YoloBoundingBox> filteredBoundingBoxes)
-{
-
-}
-```
-
-First, load the image and get the height and width dimensions in the `DrawBoundingBox` method.
-
-[!code-csharp [LoadImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L78-L81)]
-
-Then, create a for-each loop to iterate over each of the bounding boxes detected by the model.
-
-```csharp
-foreach (var box in filteredBoundingBoxes)
-{
-
-}
-```
-
-Inside of the for-each loop, get the dimensions of the bounding box.
-
-[!code-csharp [GetBBoxDimensions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L86-L89)]
-
-Because the dimensions of the bounding box correspond to the model input of `416 x 416`, scale the bounding box dimensions to match the actual size of the image.
-
-[!code-csharp [ScaleImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L92-L95)]
-
-Then, define a template for text that will apear above each bounding box. The text will contain the class of the object inside of the respective bounding box as well as the confidence.
-
-[!code-csharp [DefineBBoxText](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L98)]
-
-In order to draw on the image, convert it to a [`Graphics`](xref:System.Drawing.Graphics) object.
-
-```csharp
-using (Graphics thumbnailGraphic = Graphics.FromImage(image))
-{
-    
-}
-```
-
-Inside the `using` code block, tune the graphic's [`Graphics`](xref:System.Drawing.Graphics) object settings.
-
-[!code-csharp [TuneGraphicSettings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L102-L104)]
-
-Below that, set the font and color options for the text and bounding box.
-
-[!code-csharp [SetColorOptions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L106-L114)]
-
-Create and fill a rectangle above the bounding box to contain the text using the [`FillRectangle`](xref:System.Drawing.Graphics.FillRectangle*) method. This will help contrast the text and improve readability.
-
-[!code-csharp [DrawTextBackground](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L117)]
-
-Then, Draw the text and bounding box on the image using the [`DrawString`](xref:System.Drawing.Graphics.DrawString*) and [`DrawRectangle`](xref:System.Drawing.Graphics.DrawRectangle*) methods.
-
-[!code-csharp [DrawClassAndBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L118-L121)]
-
-Outside of the for-each loop, add code to save the images in the `outputDirectory`.
-
-[!code-csharp [SaveImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L125-L130)]
-
-To get additional feedback that the application is making predictions as expected at runtime, add a method called `LogDetectedObjects` below the `DrawBoundingBox` method in the *Program.cs* file to output the detected objects to the console.
-
-[!code-csharp [LogOuptuts](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L133-L143)]
-
-Both of these methods will be useful when the model has produced outputs and those have been processed. First though, create the functionality to process the model outputs.
 
 ## Create a parser to post-process model outputs
 
@@ -340,7 +270,7 @@ Now that the classes for dimensions and bounding boxes are created, it's time to
     - `CELL_HEIGHT` is the height of one cell in the image grid.
     - `channelStride` is the starting position of the current cell in the grid.
 
-    When the model scores an image, it divides the `416px x 416px`input into a grid of cells the size of `13 x 13`. Each cell contains is `32px x 32px`. Within each cell, there are 5 bounding boxes each containing 5 features (x, y, width, height, confidence). In addition, each bounding box contains the probability of each of the classes which in this case is 20. Therefore, each cell contains 125 pieces of information (5 features + 20 class probabilities). 
+    When the model makes a prediction, also known as scoring, it divides the `416px x 416px` input image into a grid of cells the size of `13 x 13`. Each cell contains is `32px x 32px`. Within each cell, there are 5 bounding boxes each containing 5 features (x, y, width, height, confidence). In addition, each bounding box contains the probability of each of the classes which in this case is 20. Therefore, each cell contains 125 pieces of information (5 features + 20 class probabilities). 
 
 Create a list of anchors below `channelStride` for all 5 bounding boxes:
 
@@ -556,7 +486,7 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
 
     [!code-csharp [LoadModelLog](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L47-L49)]
 
-    ML.NET pipelines typically expect data to operate on when the [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit*) method is called. In this case, a process similar to training will be used. However, because no actual training is happening, it is acceptable to use an empty [`IDataView`](xref:Microsoft.ML.IDataView). Create a new [`IDataView`](xref:Microsoft.ML.IDataView) for the pipeline from an empty list.
+    ML.NET pipelines need to know the data schema to operate on when the [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit*) method is called. In this case, a process similar to training will be used. However, because no actual training is happening, it is acceptable to use an empty [`IDataView`](xref:Microsoft.ML.IDataView). Create a new [`IDataView`](xref:Microsoft.ML.IDataView) for the pipeline from an empty list.
 
     [!code-csharp [LoadEmptyIDV](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L52)]    
 
@@ -604,7 +534,13 @@ Almost there! Now it's time to put it all to use.
 
 ## Detect objects
 
-Now that all of the setup is complete, it's time to detect some objects. Inside the `Main` method of your *Program.cs* class, add a try-catch statement.
+Now that all of the setup is complete, it's time to detect some objects. Start off by adding references to the scorer and parser in your *Program.cs* class.
+
+[!code-csharp [ReferenceScorerParser](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L8-L9)]
+
+### Score and parse model outputs
+
+Inside the `Main` method of your *Program.cs* class, add a try-catch statement.
 
 ```csharp
 try
@@ -629,7 +565,78 @@ Now it's time for the post-processing step. Create an instance of `YoloOutputPar
 
 [!code-csharp [ParsePredictions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L39-L44)]
 
-Once the model output has been processed, it's time to draw the bounding boxes on the images. Create a for-loop to iterate over each of the scored images.
+Once the model output has been processed, it's time to draw the bounding boxes on the images. 
+
+### Visualize predictions
+
+After the model has scored the images and the outputs have been processed, the bounding boxes have to be drawn on the image. To do so, add a method called `DrawBoundingBox` below the `GetAbsolutePath` method inside of *Program.cs*.
+
+```csharp
+private static void DrawBoundingBox(string inputImageLocation, string outputImageLocation, string imageName, IList<YoloBoundingBox> filteredBoundingBoxes)
+{
+
+}
+```
+
+First, load the image and get the height and width dimensions in the `DrawBoundingBox` method.
+
+[!code-csharp [LoadImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L78-L81)]
+
+Then, create a for-each loop to iterate over each of the bounding boxes detected by the model.
+
+```csharp
+foreach (var box in filteredBoundingBoxes)
+{
+
+}
+```
+
+Inside of the for-each loop, get the dimensions of the bounding box.
+
+[!code-csharp [GetBBoxDimensions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L86-L89)]
+
+Because the dimensions of the bounding box correspond to the model input of `416 x 416`, scale the bounding box dimensions to match the actual size of the image.
+
+[!code-csharp [ScaleImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L92-L95)]
+
+Then, define a template for text that will apear above each bounding box. The text will contain the class of the object inside of the respective bounding box as well as the confidence.
+
+[!code-csharp [DefineBBoxText](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L98)]
+
+In order to draw on the image, convert it to a [`Graphics`](xref:System.Drawing.Graphics) object.
+
+```csharp
+using (Graphics thumbnailGraphic = Graphics.FromImage(image))
+{
+    
+}
+```
+
+Inside the `using` code block, tune the graphic's [`Graphics`](xref:System.Drawing.Graphics) object settings.
+
+[!code-csharp [TuneGraphicSettings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L102-L104)]
+
+Below that, set the font and color options for the text and bounding box.
+
+[!code-csharp [SetColorOptions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L106-L114)]
+
+Create and fill a rectangle above the bounding box to contain the text using the [`FillRectangle`](xref:System.Drawing.Graphics.FillRectangle*) method. This will help contrast the text and improve readability.
+
+[!code-csharp [DrawTextBackground](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L117)]
+
+Then, Draw the text and bounding box on the image using the [`DrawString`](xref:System.Drawing.Graphics.DrawString*) and [`DrawRectangle`](xref:System.Drawing.Graphics.DrawRectangle*) methods.
+
+[!code-csharp [DrawClassAndBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L118-L121)]
+
+Outside of the for-each loop, add code to save the images in the `outputDirectory`.
+
+[!code-csharp [SaveImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L125-L130)]
+
+For additional feedback that the application is making predictions as expected at runtime, add a method called `LogDetectedObjects` below the `DrawBoundingBox` method in the *Program.cs* file to output the detected objects to the console.
+
+[!code-csharp [LogOuptuts](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L133-L143)]
+
+Now that you have helper methods to create visual feedback from the predictions, add a for-loop to iterate over each of the scored images.
 
 ```csharp
 for (var i = 0; i < images.Count(); i++)
@@ -646,7 +653,7 @@ Below that, use the `DrawBoundingBox` method to draw the bounding boxes on the i
 
 [!code-csharp [DrawBBoxes](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L52)]
 
-Lastly, add some logging logic with the `LogDetectedObjects` method.
+Lastly, use the `LogDetectedObjects` method to output predictions to the console.
 
 [!code-csharp [LogPredictionsOutput](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L54)]
 
@@ -700,11 +707,11 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
-> * Understand the problem
-> * Learn what ONNX is and how it works with ML.NET
-> * Understand the model
-> * Reuse the pre-trained model
-> * Detect objects with a loaded model
+> - Understand the problem
+> - Learn what ONNX is and how it works with ML.NET
+> - Understand the model
+> - Reuse the pre-trained model
+> - Detect objects with a loaded model
 
 Check out the Machine Learning samples GitHub repository to explore an expanded object detection sample.
 > [!div class="nextstepaction"]

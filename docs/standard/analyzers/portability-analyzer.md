@@ -12,11 +12,11 @@ Want to make your libraries support multi-platform? Want to see how much work is
 
 ## Common targets
 
-* [.NET Core](../../core/index.md): Has a modular design, employs side-by-side, and targets cross-platform scenarios. Side-by-side allows you to adopt new .NET Core versions without breaking other apps. If your goal is to port your app to .NET Core supporting cross-platforms, this is the recommended target. 
-* .[NET Standard](../../standard/net-standard.md): Includes the .NET Standard APIs available on all .NET implementations. If your goal is to make your library to run on all .NET supported platforms, this is recommended target.  
-* [ASP.NET Core](/aspnet/core): A modern web-framework built on .NET Core. If your goal is to port your web app to .NET Core to support multiple platforms, this is the recommended target.
-* .NET Core + [Platform Extensions](../../core/porting/windows-compat-pack.md): Includes the .NET Core APIs in addition to the Windows Compatibility Pack, which provides many of the .NET Framework available technologies. This is a recommended target for porting your app from .NET Framework to .NET Core on Windows.
-* .NET Standard + [Platform Extensions](../../core/porting/windows-compat-pack.md): Includes the .NET Standard APIs in addition to the Windows Compatibility Pack, which provides many of the .NET Framework available technologies. This is a recommended target for porting your library from .NET Framework to .NET Core on Windows.
+- [.NET Core](../../core/index.md): Has a modular design, employs side-by-side, and targets cross-platform scenarios. Side-by-side allows you to adopt new .NET Core versions without breaking other apps. If your goal is to port your app to .NET Core supporting cross-platforms, this is the recommended target. 
+- .[NET Standard](../../standard/net-standard.md): Includes the .NET Standard APIs available on all .NET implementations. If your goal is to make your library to run on all .NET supported platforms, this is recommended target.  
+- [ASP.NET Core](/aspnet/core): A modern web-framework built on .NET Core. If your goal is to port your web app to .NET Core to support multiple platforms, this is the recommended target.
+- .NET Core + [Platform Extensions](../../core/porting/windows-compat-pack.md): Includes the .NET Core APIs in addition to the Windows Compatibility Pack, which provides many of the .NET Framework available technologies. This is a recommended target for porting your app from .NET Framework to .NET Core on Windows.
+- .NET Standard + [Platform Extensions](../../core/porting/windows-compat-pack.md): Includes the .NET Standard APIs in addition to the Windows Compatibility Pack, which provides many of the .NET Framework available technologies. This is a recommended target for porting your library from .NET Framework to .NET Core on Windows.
 
 ## How to use the .NET Portability Analyzer
 
@@ -33,9 +33,9 @@ To analyze your entire project in Visual Studio, right-click on your project in 
 
 You can also use the [ApiPort console app](https://aka.ms/apiportdownload). 
 
-* Type the following command to analyze the current directory: `ApiPort.exe analyze -f .`
-* To analyze a specific list of .dll files, type the following command: `ApiPort.exe analyze -f first.dll -f second.dll -f third.dll`
-* Run `ApiPort.exe -?` to get more help
+- Type the following command to analyze the current directory: `ApiPort.exe analyze -f .`
+- To analyze a specific list of .dll files, type the following command: `ApiPort.exe analyze -f first.dll -f second.dll -f third.dll`
+- Run `ApiPort.exe -?` to get more help
 
 It is recommended that you include all the related exe and dll files that you own and want to port, and exclude the files that your app depends on, but you don't own and can't port. This will give you most relevant portability report.  
 

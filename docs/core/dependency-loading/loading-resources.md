@@ -26,8 +26,8 @@ The .NET Core resource fallback process involves the following steps:
 1. Determine the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> instance. In all cases, the `active` instance is the executing assembly's <xref:System.Runtime.Loader.AssemblyLoadContext>.
 
 2. The `active` instance attempts to load a satellite assembly for the requested culture in priority order by:
-    * Checking its cache.
-    * Checking the directory of the currently executing assembly for a subdirectory that matches the requested <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> (for example `es-MX`).
+    - Checking its cache.
+    - Checking the directory of the currently executing assembly for a subdirectory that matches the requested <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> (for example `es-MX`).
 
         > [!NOTE]
         > This feature was not implemented in .NET Core before 3.0.
@@ -37,13 +37,13 @@ The .NET Core resource fallback process involves the following steps:
         > - Exactly match case.
         > - Be in lower case.
 
-    * If `active` is the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance, by running the [default satellite (resource) assembly probing](default-probing.md#satellite-resource-assembly-probing) logic.
+    - If `active` is the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance, by running the [default satellite (resource) assembly probing](default-probing.md#satellite-resource-assembly-probing) logic.
 
-    * Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
+    - Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
 
-    * Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event.
+    - Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event.
 
-    * Raising the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
+    - Raising the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
 
 3. If a satellite assembly is loaded:
    - The <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.

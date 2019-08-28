@@ -11,10 +11,10 @@ C# 8 introduces **nullable reference types**, which complement reference types t
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Incorporate nullable and non-nullable reference types into your designs
-> * Enable nullable reference type checks throughout your code.
-> * Write code where the compiler enforces those design decisions.
-> * Use the nullable reference feature in your own designs
+> - Incorporate nullable and non-nullable reference types into your designs
+> - Enable nullable reference type checks throughout your code.
+> - Write code where the compiler enforces those design decisions.
+> - Use the nullable reference feature in your own designs
 
 ## Prerequisites
 

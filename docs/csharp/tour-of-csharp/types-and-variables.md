@@ -13,31 +13,31 @@ C#’s value types are further divided into *simple types*, *enum types*, *struc
 
 The following provides an overview of C#’s type system.
 
-* [Value types][ValueTypes]
+- [Value types][ValueTypes]
   - [Simple types][SimpleTypes]
-    * Signed integral: `sbyte`, `short`, `int`, `long`
-    * Unsigned integral: `byte`, `ushort`, `uint`, `ulong`
-    * Unicode characters: `char`
-    * IEEE binary floating-point: `float`, `double`
-    * High-precision decimal floating-point: `decimal`
-    * Boolean: `bool`
+    - Signed integral: `sbyte`, `short`, `int`, `long`
+    - Unsigned integral: `byte`, `ushort`, `uint`, `ulong`
+    - Unicode characters: `char`
+    - IEEE binary floating-point: `float`, `double`
+    - High-precision decimal floating-point: `decimal`
+    - Boolean: `bool`
   - [Enum types][EnumTypes]
-    * User-defined types of the form `enum E {...}`
+    - User-defined types of the form `enum E {...}`
   - [Struct types][StructTypes]
-    * User-defined types of the form `struct S {...}`
+    - User-defined types of the form `struct S {...}`
   - [Nullable value types][NullableTypes]
-    * Extensions of all other value types with a `null` value
-* [Reference types][ReferenceTypes]
+    - Extensions of all other value types with a `null` value
+- [Reference types][ReferenceTypes]
   - [Class types][ClassTypes]
-    * Ultimate base class of all other types: `object`
-    * Unicode strings: `string`
-    * User-defined types of the form `class C {...}`
+    - Ultimate base class of all other types: `object`
+    - Unicode strings: `string`
+    - User-defined types of the form `class C {...}`
   - [Interface types][InterfaceTypes]
-    * User-defined types of the form `interface I {...}`
+    - User-defined types of the form `interface I {...}`
   - [Array types][ArrayTypes]
-    * Single- and multi-dimensional, for example, `int[]` and `int[,]`
+    - Single- and multi-dimensional, for example, `int[]` and `int[,]`
   - [Delegate types][DelegateTypes]
-    * User-defined types of the form `delegate int D(...)`
+    - User-defined types of the form `delegate int D(...)`
 
 [ValueTypes]: ../language-reference/keywords/value-types-table.md
 [SimpleTypes]: ../language-reference/keywords/value-types.md#simple-types
@@ -84,19 +84,19 @@ C#’s unified type system effectively means that value types can become objects
 
 There are several kinds of *variables* in C#, including fields, array elements, local variables, and parameters. Variables represent storage locations, and every variable has a type that determines what values can be stored in the variable, as shown below.
 
-* Non-nullable value type
+- Non-nullable value type
   - A value of that exact type
-* Nullable value type
+- Nullable value type
   - A `null` value or a value of that exact type
-* object
+- object
   - A `null` reference, a reference to an object of any reference type, or a reference to a boxed value of any value type
-* Class type
+- Class type
   - A `null` reference, a reference to an instance of that class type, or a reference to an instance of a class derived from that class type
-* Interface type
+- Interface type
   - A `null` reference, a reference to an instance of a class type that implements that interface type, or a reference to a boxed value of a value type that implements that interface type
-* Array type
+- Array type
   - A `null` reference, a reference to an instance of that array type, or a reference to an instance of a compatible array type
-* Delegate type
+- Delegate type
   - A `null` reference or a reference to an instance of a compatible delegate type
 
 > [!div class="step-by-step"]

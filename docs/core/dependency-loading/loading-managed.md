@@ -42,20 +42,20 @@ The following algorithm describes how the runtime loads a managed assembly.
     - See table above.
 
 2. For the `Load-by-name` methods, the active <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly. In priority order by:
-    * Checking its `cache-by-name`.
+    - Checking its `cache-by-name`.
 
-    * Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
+    - Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
 
-    * Checking the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instances' cache and running [managed assembly default probing](default-probing.md#managed-assembly-default-probing) logic.
+    - Checking the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instances' cache and running [managed assembly default probing](default-probing.md#managed-assembly-default-probing) logic.
 
-    * Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event for the active AssemblyLoadContext.
+    - Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event for the active AssemblyLoadContext.
 
-    * Raising the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
+    - Raising the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
 
 3. For the other types of loads, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly. In priority order by:
-    * Checking its `cache-by-name`.
+    - Checking its `cache-by-name`.
 
-    * Loading from the specified path or raw assembly object.
+    - Loading from the specified path or raw assembly object.
 
 4. In either case, if an assembly is newly loaded, then:
    - The <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.

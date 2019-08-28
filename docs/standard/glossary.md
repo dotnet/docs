@@ -79,9 +79,9 @@ The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its
 In general, a comprehensive collection of APIs that facilitates development and deployment of applications that are based on a particular technology. In this general sense, ASP.NET Core and Windows Forms are examples of application frameworks. See also [library](#library).
 
 The word "framework" has a more specific technical meaning in the following terms:
-* [.NET Framework](#net-framework)
-* [target framework](#target-framework)
-* [TFM (target framework moniker)](#tfm)
+- [.NET Framework](#net-framework)
+- [target framework](#target-framework)
+- [TFM (target framework moniker)](#tfm)
 
 In the existing documentation, "framework" sometimes refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET Core a framework. We plan to eliminate this confusing usage from the documentation.
 

@@ -182,9 +182,9 @@ See [Understanding Block Blobs, Page Blobs, and Append Blobs](https://msdn.micro
 
 To support concurrent access to a blob from multiple clients or multiple process instances, you can use **ETags** or **leases**.
 
-* **Etag** - provides a way to detect that the blob or container has been modified by another process
+- **Etag** - provides a way to detect that the blob or container has been modified by another process
 
-* **Lease** - provides a way to obtain exclusive, renewable, write or delete access to a blob for a period of time
+- **Lease** - provides a way to obtain exclusive, renewable, write or delete access to a blob for a period of time
 
 For more information, see [Managing Concurrency in Microsoft Azure Storage](https://azure.microsoft.com/blog/managing-concurrency-in-microsoft-azure-storage-2/).
 

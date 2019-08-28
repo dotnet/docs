@@ -157,7 +157,7 @@ The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro spe
 
 When package content is under a versioned folder, the package name `[major].[minor]` match the versioned folder name. For all packages, except the `netstandard-targeting-pack-[major].[minor]`, this also matches with the .NET Core version.
 
-Dependencies between packages should use a _equal or greater than_ version requirement. For example, `dotnet-sdk-2.2:2.2.6` requires `aspnetcore-runtime-2.2 >= 2.2.6`. This makes it possible for the user to upgrade their installation via a root package (e.g. `dnf update dotnet-sdk-2.2`).
+Dependencies between packages should use a _equal or greater than_ version requirement. For example, `dotnet-sdk-2.2:2.2.401` requires `aspnetcore-runtime-2.2 >= 2.2.6`. This makes it possible for the user to upgrade their installation via a root package (e.g. `dnf update dotnet-sdk-2.2`).
 
 Most distributions require all artifacts to be built from source. This has some impact on the packages:
 

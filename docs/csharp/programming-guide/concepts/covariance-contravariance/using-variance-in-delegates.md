@@ -51,13 +51,13 @@ This example demonstrates how delegates can be used with methods that have param
 - A <xref:System.Windows.Forms.KeyEventHandler> delegate that defines the signature of the [Button.KeyDown](xref:System.Windows.Forms.Control.KeyDown) event. Its signature is:
 
    ```csharp
-   Public Delegate Sub KeyEventHandler(object sender, KeyEventArgs e)
+   public delegate void KeyEventHandler(object sender, KeyEventArgs e)
    ```
 
 - A <xref:System.Windows.Forms.MouseEventHandler> delegate that defines the signature of the [Button.MouseClick](xref:System.Windows.Forms.Control.MouseDown) event. Its signature is:
 
    ```csharp
-   Public Delegate Sub MouseEventHandler(object sender, MouseEventArgs e)
+   public delegate void MouseEventHandler(object sender, MouseEventArgs e)
    ```
 
 The example defines an event handler with an <xref:System.EventArgs> parameter and uses it to handle both the `Button.KeyDown` and `Button.MouseClick` events. It can do this because <xref:System.EventArgs> is a base type of both <xref:System.Windows.Forms.KeyEventArgs>  and <xref:System.Windows.Forms.MouseEventArgs>. 

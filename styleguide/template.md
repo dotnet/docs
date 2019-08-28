@@ -59,12 +59,12 @@ Markdown uses special characters such as \*, \`, and \# for formatting. If you w
 
 File names use the following rules:
 
-* Contain only lowercase letters, numbers, and hyphens.
-* No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
-* Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
-* No small words - don't include a, and, the, in, or, etc.
-* Must be in Markdown and use the .md file extension.
-* Keep file names reasonably short. They are part of the URL for your articles.
+- Contain only lowercase letters, numbers, and hyphens.
+- No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
+- Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
+- No small words - don't include a, and, the, in, or, etc.
+- Must be in Markdown and use the .md file extension.
+- Keep file names reasonably short. They are part of the URL for your articles.
 
 ## Headings
 
@@ -246,22 +246,22 @@ You can include the code using the following syntax:
 [!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
 
-* `-<language>` (*optional* but *recommended*)
-  * Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
+- `-<language>` (*optional* but *recommended*)
+  - Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
 
-* `<name>` (*optional*)
-  * Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source.
+- `<name>` (*optional*)
+  - Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source.
 
-* `<pathToFile>` (*mandatory*)
-  * Relative path in the file system that indicates the code snippet file to reference.
+- `<pathToFile>` (*mandatory*)
+  - Relative path in the file system that indicates the code snippet file to reference.
 
-* `<queryoption>` and `<queryoptionvalue>` (*optional*)
-  * Used together to specify how the code should be retrieved from the file:
-    * `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
+- `<queryoption>` and `<queryoptionvalue>` (*optional*)
+  - Used together to specify how the code should be retrieved from the file:
+    - `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
     We discourage the use of line numbers because they are very brittle. Tag name is the preferred way of referencing code snippets.
-    * `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
-    * `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
-    * `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
+    - `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
+    - `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
+    - `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
 
 We recommend using the tag name option whenever possible. The tag name is the name of a region or of a code comment in the format of `Snippettagname` present in the source code. The following example shows how to refer to the tag name `1`:
 
@@ -453,11 +453,11 @@ You can embed the Markdown of one file into another using an include.
 A custom style is available for lists. You can render lists with green check marks.
 
 > [!div class="checklist"]
-> * How to create a .NET Core app
-> * How to add a reference to the Microsoft.XmlSerializer.Generator package
-> * How to edit your MyApp.csproj to add dependencies
-> * How to add a class and an XmlSerializer
-> * How to build and run the application
+> - How to create a .NET Core app
+> - How to add a reference to the Microsoft.XmlSerializer.Generator package
+> - How to edit your MyApp.csproj to add dependencies
+> - How to add a class and an XmlSerializer
+> - How to build and run the application
 
 You can see an example of checked lists in action in the [.NET Core docs](https://docs.microsoft.com/dotnet/core/additional-tools/xml-serializer-generator).
 

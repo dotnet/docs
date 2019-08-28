@@ -57,13 +57,13 @@ To handle the absence of a required time zone, the <xref:System.TimeZoneInfo> cl
 
 Because each time zone is characterized by a base offset from UTC, as well as by an offset from UTC that reflects any existing adjustment rules, a time in one time zone can be easily converted to the time in another time zone. For this purpose, the <xref:System.TimeZoneInfo> object includes several conversion methods, including:
 
-* <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A>, which converts UTC to the time in a designated time zone.
+- <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A>, which converts UTC to the time in a designated time zone.
 
-* <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A>, which converts the time in a designated time zone to UTC.
+- <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A>, which converts the time in a designated time zone to UTC.
 
-* <xref:System.TimeZoneInfo.ConvertTime%2A>, which converts the time in one designated time zone to the time in another designated time zone.
+- <xref:System.TimeZoneInfo.ConvertTime%2A>, which converts the time in one designated time zone to the time in another designated time zone.
 
-* <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A>, which uses time zone identifiers (instead of <xref:System.TimeZoneInfo> objects) as parameters to convert the time in one designated time zone to the time in another designated time zone.
+- <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A>, which uses time zone identifiers (instead of <xref:System.TimeZoneInfo> objects) as parameters to convert the time in one designated time zone to the time in another designated time zone.
 
 For details on converting times between time zones, see [Converting times between time zones](../../../docs/standard/datetime/converting-between-time-zones.md).
 

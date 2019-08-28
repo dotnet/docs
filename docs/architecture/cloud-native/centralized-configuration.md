@@ -1,6 +1,6 @@
 ---
 title: Centralized configuration
-description: Architecting Cloud Native .NET Apps for Azure | Centralized Configuration
+description: Centralized configuration using Azure Key Vault can make it easier to manage cloud-native apps.
 ms.date: 06/30/2019
 ---
 # Centralized configuration

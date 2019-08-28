@@ -1,6 +1,6 @@
 ---
 title: Hosting the eShopOnContainers application
-description: Architecting Cloud Native .NET Apps for Azure | Hosting the eShopOnContainers Application
+description: Hosting the eShopOnContainers application using Azure Kubernetes Service, Helm, and DevSpaces.
 ms.date: 06/30/2019
 ---
 # Hosting the eShopOnContainers application

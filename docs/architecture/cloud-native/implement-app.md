@@ -1,9 +1,9 @@
 ---
-title: Implementing a Cloud Native app
-description: Architecting Cloud Native .NET Apps for Azure | Implementing a Cloud Native App
+title: Implementing a Cloud-native app
+description: Architecting Cloud-native .NET Apps for Azure | Implementing a Cloud-native App
 ms.date: 06/30/2019
 ---
-# Implementing a Cloud Native app
+# Implementing a Cloud-native app
 
 Before starting this chapter, we recommend that you download the [eShopOnContainers reference application](https://github.com/dotnet-architecture/eShopOnContainers). If you do so, it should be easier for you to follow along with the information presented.
 

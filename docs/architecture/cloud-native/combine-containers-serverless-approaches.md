@@ -1,6 +1,6 @@
 ---
 title: Combining containers and serverless approaches
-description: Architecting Cloud Native .NET Apps for Azure | Combining Containers and Serverless Approaches
+description: Architecting Cloud-native .NET Apps for Azure | Combining Containers and Serverless Approaches
 ms.date: 06/30/2019
 ---
 # Combining containers and serverless approaches
@@ -19,7 +19,6 @@ Azure functions scale automatically to meet demand based on the rate of events t
 
 - [Run Azure Functions in a Docker Container](https://markheath.net/post/azure-functions-docker)
 - [Azure Functions with Kubernetes Event Driven Autoscaling](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda)
-
 
 >[!div class="step-by-step"]
 >[Previous](leverage-serverless-functions.md)

@@ -92,5 +92,5 @@ As with Resource Manager templates, there are command-line tools that can be use
 In the event that the Terraform or Resource Manager template outputs interesting values such as the connection string to a newly created database they can be captured in the build pipeline and used in subsequent tasks.
 
 >[!div class="step-by-step"]
->[Previous](cloud-native-devops.md)
+>[Previous](devops.md)
 >[Next](application-bundles.md)

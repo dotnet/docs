@@ -107,7 +107,6 @@ Next, you can use the `azds prep` command to generate the necessary Docker and H
 - [Azure Dev Spaces with VS Code](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore)
 - [Azure Dev Spaces with Visual Studio](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio)
 
-
 >[!div class="step-by-step"]
 >[Previous](combine-containers-serverless-approaches.md)
 >[Next](other-deployment-options.md)

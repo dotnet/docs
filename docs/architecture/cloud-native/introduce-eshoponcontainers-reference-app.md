@@ -1,11 +1,11 @@
 ---
 title: Introducing eShopOnContainers reference app
-description: Architecting Cloud Native .NET Apps for Azure | Introducing eShopOnContainers Reference App
+description: Architecting Cloud-native .NET Apps for Azure | Introducing eShopOnContainers Reference App
 ms.date: 06/30/2019
 ---
 # Introducing eShopOnContainers reference app
 
-Microsoft, in partnership with leading community experts, has produced a full-featured cloud native microservices reference application, eShopOnContainers. This application is built to showcase using .NET Core and Docker, and optionally Azure, Kubernetes, and Visual Studio, to build an online storefront.
+Microsoft, in partnership with leading community experts, has produced a full-featured cloud-native microservices reference application, eShopOnContainers. This application is built to showcase using .NET Core and Docker, and optionally Azure, Kubernetes, and Visual Studio, to build an online storefront.
 
 ![eShopOnContainers Sample App Screenshot.](./media/eshoponcontainers-sample-app-screenshot.png)
 **Figure 3-1**. eShopOnContainers Sample App Screenshot.

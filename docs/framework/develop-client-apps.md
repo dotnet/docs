@@ -18,9 +18,9 @@ ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
 
 There are several ways to develop Windows-based applications with the .NET Framework. You can use any of these tools and frameworks: 
 
-* [Universal Windows Platform (UWP)](https://developer.microsoft.com/windows/apps)
-* [Windows Presentation Foundation (WPF)](./wpf/index.md)
-* [Windows Forms](./winforms/index.md)
+- [Universal Windows Platform (UWP)](https://developer.microsoft.com/windows/apps)
+- [Windows Presentation Foundation (WPF)](./wpf/index.md)
+- [Windows Forms](./winforms/index.md)
 
 This section contains topics that describe how to create Windows-based applications by using Windows Presentation Foundation or by using Windows Forms. However, you can also create web applications using the .NET Framework, and client applications for computers or devices that you make available through the Microsoft Store.
  

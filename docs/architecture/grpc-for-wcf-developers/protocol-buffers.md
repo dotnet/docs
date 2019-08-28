@@ -1,9 +1,11 @@
 ﻿# Protocol Buffers
+
 gRPC services send and receive data as *Protocol Buffer (Protobuf)  messages*, similar to WCF's Data Contracts. Protobuf is a very efficient way of serializing structured data for machines to read and write, without the overhead that human-readable formats like XML or JSON incur.
 
 This chapter provides an overview of Protobuf, how it enables cross-platform message passing, and how to define your own Protobuf messages.
 
 ## How Protobuf works
+
 Unlike most other .NET object serialization techniques, which work by using reflection to analyze the object structure at run-time, Protobuf requires you to define the structure up front using a dedicated language (*Protocol Buffer Language*) in a `.proto` file. This is then used to generate code for any of the supported platforms, including .NET, Java, C/C++, JavaScript and many more. The Protobuf compiler, `protoc`, is maintained by Google, although alternative implementations are available. The generated code is very efficient and optimized for fast serialization/deserialization of data.
 
 The Protobuf wire format itself is a binary encoding, which uses some clever tricks to minimize the number of bytes used to represent messages. Knowledge of the binary encoding format is not necessary to use Protobuf, but if you are interested you can learn more about it on [the Protocol Buffers web site](https://developers.google.com/protocol-buffers/docs/encoding).
@@ -54,7 +56,7 @@ message Stock {
 
 When you build your application, Protobuf will create classes for each of your messages, mapping its native types to C# types. The generated `Stock` type would have this signature:
 
-```c#
+```csharp
 public class Stock
 {
     public int Id { get; set; }
@@ -120,7 +122,7 @@ message Meeting {
 
 ### System.Guid
 
-The `Guid` type, known as `UUID` on other platforms, is not directly supported by Protobuf and there is no well-known type for it. The best approach is to handle `Guid` values as `string` fields, using the standard `8-4-4-4-12` hexadecimal format (e.g. `45a9fda3-bd01-47a9-8460-c1cd7484b0b3`) which can be parsed by all languages and platforms. You should not use a `bytes` field for `Guid` values, as problems with endianness can result in erratic behavior when interacting with other platforms, such as Java.
+The `Guid` type, known as `UUID` on other platforms, is not directly supported by Protobuf and there is no well-known type for it. The best approach is to handle `Guid` values as `string` fields, using the standard `8-4-4-4-12` hexadecimal format (e.g. `45a9fda3-bd01-47a9-8460-c1cd7484b0b3`) which can be parsed by all languages and platforms. You should not use a `bytes` field for `Guid` values, as problems with endian-ness can result in erratic behavior when interacting with other platforms, such as Java.
 
 ### Nullable Types
 
@@ -152,9 +154,9 @@ Here is the complete list of wrapper types with their equivalent C# type:
 | uint?   | google.protobuf.UInt32Value |
 | ulong?  | google.protobuf.UInt64Value |
 
-## ??? Decimals ???
+## ??? Decimals
 
-> Protobuf doesn't natively support the `decimal` type, just `double` and `float`. Given the target audience, is a discusson of how to create a custom `Decimal` message worthwhile?
+> Protobuf doesn't natively support the `decimal` type, just `double` and `float`. Given the target audience, is a discussion of how to create a custom `Decimal` message worthwhile?
 
 ## Nested types
 
@@ -171,7 +173,7 @@ message Outer {
 
 In the generated C# code, the `Inner` type will be declared in a nested static `Types` class within the `HelloRequest` class.
 
-```c#
+```csharp
 var inner = new Outer.Types.Inner { Text = "Hello" };
 ```
 
@@ -240,7 +242,7 @@ message Incident {
 
 In the C# code, the `Any` type provides methods for setting the field, extracting the message and checking the type.
 
-```C#
+```csharp
 public void FormatVehicleData(Incident incident)
 {
     if (incident.Vehicle.Is(Car.Descriptor))
@@ -284,7 +286,7 @@ message Incident {
 
 When you use `oneof`, the generated C# includes an `enum` that specifies which of the fields has been set. You can use test the `enum` to find which field is set. Fields that are not set will return `null` or the default value, rather than throwing an exception.
 
-```C#
+```csharp
 public void FormatVehicleData(Incident incident)
 {
     switch (incident.VehicleCase)
@@ -323,7 +325,7 @@ enum AccountStatus {
 
 So the generator creates a C# `enum` equivalent to the following code.
 
-```C#
+```csharp
 public enum AccountStatus
 {
     Unknown = 0,

@@ -155,6 +155,8 @@ The following lists the recommended packages:
 
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 
+When package content is under a versioned folder, the package name `[major].[minor]` match the versioned folder name. For all packages, except the `netstandard-targeting-pack-[major].[minor]`, this also matches with the .NET Core version.
+
 Most distributions require all artifacts to be built from source. This has some impact on the packages:
 
 - The third-party libraries under `shared/Microsoft.AspNetCore.All` can't be easily built from source. So that folder is omitted from the `aspnetcore-runtime` package.

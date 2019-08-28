@@ -38,13 +38,15 @@ When installed, .NET Core consists of several components that are laid out as fo
 │   │   └── <desktop ref version>        (14)
 │   └── NETStandard.Library.Ref
 │       └── <netstandard version>        (15)
-└── shared
-    ├── Microsoft.NETCore.App
-    │   └── <runtime version>    (5)
-    ├── Microsoft.AspNetCore.App
-    │   └── <aspnetcore version> (6)
-    └── Microsoft.AspNetCore.All
-        └── <aspnetcore version> (7)
+├── shared
+│   ├── Microsoft.NETCore.App
+│   │   └── <runtime version>    (5)
+│   ├── Microsoft.AspNetCore.App
+│   │   └── <aspnetcore version> (6)
+│   └── Microsoft.AspNetCore.All
+│       └── <aspnetcore version> (7)
+└── templates
+│   └── <templates version>      (17)
 /
 ├── etc/dotnet
 │       └── install_location     (16)
@@ -83,6 +85,8 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 - (15) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
 
 - (16) **/etc/dotnet/install_location** file that contains the full path to the folder that contains the `dotnet` host binary. The path may be terminated with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
+
+- (17) **templates** templates used by the sdk.
 
 ## Recommended packages
 
@@ -143,6 +147,10 @@ The following lists the recommended packages:
 
 * `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version
   * **Version:** \<netstandard version>
+  * **Contains:** (15)
+
+* `dotnet-templates-[major].[minor]`
+  * **Version:** \<templates version>
   * **Contains:** (15)
 
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.

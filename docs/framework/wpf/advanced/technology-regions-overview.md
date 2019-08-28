@@ -48,7 +48,7 @@ If multiple presentation technologies are used in an application, such as WPF, W
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layered windows have different capabilities on different operating systems. This is because [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses DirectX to render, and layered windows were primarily designed for GDI rendering, not DirectX rendering.  
   
-- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] supports hardware accelerated layered windows on Windows Vista and later. Hardware accelerated layered windows on [!INCLUDE[TLA2#tla_winxp](../../../../includes/tla2sharptla-winxp-md.md)] require support from Microsoft DirectX, so the capabilities will depend on the version of Microsoft DirectX on that machine.  
+- WPF supports hardware accelerated layered windows.  
   
 - [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] does not support transparency color keys, because [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] cannot guarantee to render the exact color you requested, particularly when rendering is hardware-accelerated.  
   

@@ -134,23 +134,23 @@ The following lists the recommended packages:
   * **Contains:** (1),(8),(9),(10),(16)
 
 * `dotnet-apphost-pack-[major].[minor]` - dependency
-  * **Version:** \<runtime version>
+  * **Version:** \<sdk version>
   * **Contains:** (13)
 
 * `dotnet-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
-  * **Version:** \<runtime version>
+  * **Version:** \<sdk version>
   * **Contains:** (12)
 
 * `aspnetcore-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
-  * **Version:** \<aspnetcore runtime version>
+  * **Version:** \<sdk version>
   * **Contains:** (11)
 
 * `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version
-  * **Version:** \<netstandard version>
+  * **Version:** \<sdk version>
   * **Contains:** (15)
 
 * `dotnet-templates-[major].[minor]`
-  * **Version:** \<templates version>
+  * **Version:** \<sdk version>
   * **Contains:** (15)
 
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.

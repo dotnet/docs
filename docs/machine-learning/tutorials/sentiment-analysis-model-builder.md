@@ -277,5 +277,5 @@ In this tutorial, you learned how to:
 To learn more about topics mentioned in this tutorial, visit the following resources:
 
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
-- [Binary Classification](../resources/glossary#binary-classification)
+- [Binary Classification](../resources/glossary.md#binary-classification)
 - [Binary Classification Model Metrics](../resources/metrics.md#metrics-for-binary-classification)

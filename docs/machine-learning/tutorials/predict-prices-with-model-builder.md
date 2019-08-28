@@ -17,12 +17,12 @@ The Model Builder price prediction template can be used for any scenario requiri
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Prepare and understand the data
-> * Choose a scenario
-> * Load the data
-> * Train the model
-> * Evaluate the model
-> * Use the model for predictions
+> - Prepare and understand the data
+> - Choose a scenario
+> - Load the data
+> - Train the model
+> - Evaluate the model
+> - Use the model for predictions
 
 > [!NOTE]
 > Model Builder is currently in Preview.
@@ -55,13 +55,13 @@ Each row in the `taxi-fare-train.csv` data set contains details of trips made by
 
     The provided data set contains the following columns:
 
-    * **vendor_id:** The ID of the taxi vendor is a feature.
-    * **rate_code:** The rate type of the taxi trip is a feature.
-    * **passenger_count:** The number of passengers on the trip is a feature.
-    * **trip_time_in_secs:** The amount of time the trip took.
-    * **trip_distance:** The distance of the trip is a feature.
-    * **payment_type:** The payment method (cash or credit card) is a feature.
-    * **fare_amount:** The total taxi fare paid is the label.
+    - **vendor_id:** The ID of the taxi vendor is a feature.
+    - **rate_code:** The rate type of the taxi trip is a feature.
+    - **passenger_count:** The number of passengers on the trip is a feature.
+    - **trip_time_in_secs:** The amount of time the trip took.
+    - **trip_distance:** The distance of the trip is a feature.
+    - **payment_type:** The payment method (cash or credit card) is a feature.
+    - **fare_amount:** The total taxi fare paid is the label.
 
 The `label` is the column you want to predict. When performing a regression task, the goal is to predict a numerical value. In this price prediction scenario, the cost of a taxi ride is being predicted. Therefore, the **fare_amount** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the rest of the columns are used as features or inputs to predict the fare amount.
 
@@ -186,12 +186,12 @@ If you need to reference the generated projects at a later time inside of anothe
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
-> * Prepare and understand the data
-> * Choose a scenario
-> * Load the data
-> * Train the model
-> * Evaluate the model
-> * Use the model for predictions
+> - Prepare and understand the data
+> - Choose a scenario
+> - Load the data
+> - Train the model
+> - Evaluate the model
+> - Use the model for predictions
 
 ### Additional Resources
 

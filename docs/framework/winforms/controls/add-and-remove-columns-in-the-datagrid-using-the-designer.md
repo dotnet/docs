@@ -22,7 +22,7 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control must contain 
 3. Click the **Add** button to add the column, causing it to appear in the designer if the existing columns do not already fill the control display area.
 
     > [!NOTE]
-    >  You can modify column properties in the **Edit Columns** dialog box, which you can access from the control's smart tag.
+    > You can modify column properties in the **Edit Columns** dialog box, which you can access from the control's smart tag.
 
 ## To remove a column using the designer
 

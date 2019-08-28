@@ -54,7 +54,7 @@ End Class
 ```  
   
 > [!NOTE]
->  If your attribute class contains a property, that property must be read-write.  
+> If your attribute class contains a property, that property must be read-write.  
   
 ## See also
 

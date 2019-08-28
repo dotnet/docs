@@ -7,51 +7,27 @@ helpviewer_keywords:
   - "SnapLine class [Windows Forms], walkthroughs"
   - "Windows Forms controls, arranging"
 ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# Walkthrough: Arranging Controls on Windows Forms Using Snaplines
+# Walkthrough: Arrange controls on Windows Forms using snaplines
+
 Precise placement of controls on your form is a high priority for many applications. The Windows Forms Designer gives you many layout tools to accomplish this. One of the most important is the <xref:System.Windows.Forms.Design.Behavior.SnapLine> feature.
 
- Snaplines show you precisely where to line up controls with other controls. They also show you the recommended distances for margins between controls, as specified by the Windows User Interface Guidelines. For details, see [User Interface Design and Development](https://go.microsoft.com/FWLink/?LinkId=83878).
+Snaplines show you precisely where to line up controls with other controls. They also show you the recommended distances for margins between controls, as specified by the [Windows User Interface guidelines](/windows/win32/uxguide/guidelines).
 
- Snaplines make it easy to align your controls, for crisp, professional appearance and behavior (look and feel).
+Snaplines make it easy to align your controls, for crisp, professional appearance and behavior (look and feel).
 
- Tasks illustrated in this walkthrough include:
+## Create the project
 
-- Creating a Windows Forms project
-
-- Spacing and Aligning Controls Using Snaplines
-
-- Aligning to Form and Container Margins
-
-- Aligning to Grouped Controls
-
-- Using Snaplines to Place a Control by Outlining Its Size
-
-- Using Snaplines When Dragging a Control from the Toolbox
-
-- Resizing Controls Using Snaplines
-
-- Aligning a Label to a Control's Text
-
-- Using Snaplines with Keyboard Navigation
-
-- Snaplines and Layout Panels
-
-- Disabling Snaplines
-
- When you are finished, you will have an understanding of the layout role played by the snaplines feature.
-
-## Creating the Project
- The first step is to create the project and set up the form.
-
-### To create the project
-
-1. Create a Windows-based application project called "SnaplineExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
+1. In Visual Studio, create a Windows-based application project called "SnaplineExample".
 
 2. Select the form in the Forms Designer.
 
-## Spacing and Aligning Controls Using Snaplines
- Snaplines give you an accurate and intuitive way to align controls on your form. They appear when you are moving a selected control or controls near a position that would align with another control or set of controls. Your selection will "snap" to the suggested position as you move it past the other controls.
+## Space and align controls
+
+Snaplines give you an accurate and intuitive way to align controls on your form. They appear when you are moving a selected control or controls near a position that would align with another control or set of controls. Your selection will "snap" to the suggested position as you move it past the other controls.
 
 ### To arrange controls using snaplines
 
@@ -73,32 +49,30 @@ Precise placement of controls on your form is a high priority for many applicati
 
 9. Move one of the <xref:System.Windows.Forms.Panel> controls until it is nearly level with the first. Note the snaplines that appear along the top and bottom edges of both controls, and note that the control you are moving snaps to a position that is exactly level with the other control.
 
-## Aligning to Form and Container Margins
- Snaplines help you to align your controls to form and container margins in a consistent manner.
+## Align to form and container margins
 
-### To align controls to form and container margins
+Snaplines help you to align your controls to form and container margins in a consistent manner.
 
 1. Select one of the <xref:System.Windows.Forms.Button> controls and move it close to the right border of the form until a snapline appears. The snapline's distance from the right border is the sum of the control's <xref:System.Windows.Forms.Control.Margin%2A> property and the form's <xref:System.Windows.Forms.Control.Padding%2A> property values.
 
-> [!NOTE]
->  If the form's <xref:System.Windows.Forms.Control.Padding%2A> property is set to 0,0,0,0, the Windows Forms Designer gives the form a shadowed <xref:System.Windows.Forms.Control.Padding%2A> value of 9,9,9,9. To override this behavior, assign a value other than 0,0,0,0.
+   > [!NOTE]
+   > If the form's <xref:System.Windows.Forms.Control.Padding%2A> property is set to 0,0,0,0, the Windows Forms Designer gives the form a shadowed <xref:System.Windows.Forms.Control.Padding%2A> value of 9,9,9,9. To override this behavior, assign a value other than 0,0,0,0.
 
-1. Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Margin%2A> property by expanding the <xref:System.Windows.Forms.Control.Margin%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to 0. For details, see [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](windows-forms-controls-padding-autosize.md).
+2. Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Margin%2A> property by expanding the <xref:System.Windows.Forms.Control.Margin%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to 0. For details, see [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](windows-forms-controls-padding-autosize.md).
 
-2. Move the <xref:System.Windows.Forms.Button> control close to the right border of the form until a snapline appears. This distance is now given by the value of the form's <xref:System.Windows.Forms.Control.Padding%2A> property.
+3. Move the <xref:System.Windows.Forms.Button> control close to the right border of the form until a snapline appears. This distance is now given by the value of the form's <xref:System.Windows.Forms.Control.Padding%2A> property.
 
-3. Drag a <xref:System.Windows.Forms.GroupBox> control from the **Toolbox** onto your form.
+4. Drag a <xref:System.Windows.Forms.GroupBox> control from the **Toolbox** onto your form.
 
-4. Change the value of the <xref:System.Windows.Forms.GroupBox> control's <xref:System.Windows.Forms.Control.Padding%2A> property by expanding the <xref:System.Windows.Forms.Control.Padding%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to 10.
+5. Change the value of the <xref:System.Windows.Forms.GroupBox> control's <xref:System.Windows.Forms.Control.Padding%2A> property by expanding the <xref:System.Windows.Forms.Control.Padding%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to 10.
 
-5. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the <xref:System.Windows.Forms.GroupBox> control.
+6. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the <xref:System.Windows.Forms.GroupBox> control.
 
-6. Move the <xref:System.Windows.Forms.Button> control close to the right border of the <xref:System.Windows.Forms.GroupBox> control until a snapline appears. Move the <xref:System.Windows.Forms.Button> control within the <xref:System.Windows.Forms.GroupBox> control and note where the snaplines appear.
+7. Move the <xref:System.Windows.Forms.Button> control close to the right border of the <xref:System.Windows.Forms.GroupBox> control until a snapline appears. Move the <xref:System.Windows.Forms.Button> control within the <xref:System.Windows.Forms.GroupBox> control and note where the snaplines appear.
 
-## Aligning to Grouped Controls
- You can use snaplines to align grouped controls as well as controls within a <xref:System.Windows.Forms.GroupBox> control.
+## Align to grouped controls
 
-### To align to grouped controls
+You can use snaplines to align grouped controls as well as controls within a <xref:System.Windows.Forms.GroupBox> control.
 
 1. Select two of the controls on your form. Move the selection around and note the snaplines that appear between your selection and the other controls.
 
@@ -108,10 +82,7 @@ Precise placement of controls on your form is a high priority for many applicati
 
 4. Select one of the <xref:System.Windows.Forms.Button> controls and move it around the <xref:System.Windows.Forms.GroupBox> control. Note the snaplines that appear at the edges of the <xref:System.Windows.Forms.GroupBox> control. Also note the snaplines that appear at the edges of the <xref:System.Windows.Forms.Button> control that is contained by the <xref:System.Windows.Forms.GroupBox> control. Controls that are children of a container control also support snaplines.
 
-## Using Snaplines to Place a Control by Outlining Its Size
- Snaplines help you align controls when you first place them on a form.
-
-### To use snaplines to place a control by outlining its size
+## Use snaplines to place a control by outlining its size
 
 1. In the **Toolbox**, click the <xref:System.Windows.Forms.Button> control icon. Do not drag it onto the form.
 
@@ -125,10 +96,7 @@ Precise placement of controls on your form is a high priority for many applicati
 
 6. Release the mouse button. The control is created at the position and size indicated by the outline.
 
-## Using Snaplines When Dragging a Control from the Toolbox
- Snaplines help you align controls when you drag them from the **Toolbox** onto your form.
-
-### To use snaplines when dragging a control from the Toolbox
+## Use snaplines when dragging a control from the Toolbox
 
 1. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto your form, but do not release the mouse button.
 
@@ -138,10 +106,7 @@ Precise placement of controls on your form is a high priority for many applicati
 
 4. Release the mouse button. The control is created at the position indicated by the snaplines.
 
-## Resizing Controls Using Snaplines
- Snaplines help you align controls as you resize them.
-
-### To resize a control using snaplines
+## Resize a control using snaplines
 
 1. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto your form.
 
@@ -151,10 +116,7 @@ Precise placement of controls on your form is a high priority for many applicati
 
 4. Resize the <xref:System.Windows.Forms.Button> control in different directions and align the sizing handle to different controls. Note how the snaplines appear in various orientations to indicate alignment.
 
-## Aligning a Label to a Control's Text
- Some controls offer a snapline for aligning other controls to displayed text.
-
-### To align a label to a control's text
+## Align a label to a control's text
 
 1. Drag a <xref:System.Windows.Forms.TextBox> control from the **Toolbox** onto your form. When you drop the <xref:System.Windows.Forms.TextBox> control onto the form, click the smart-tag glyph and select the **Set text to textBox1** option. For details, see [Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](performing-common-tasks-using-smart-tags-on-wf-controls.md).
 
@@ -166,31 +128,25 @@ Precise placement of controls on your form is a high priority for many applicati
 
 5. Move the <xref:System.Windows.Forms.Label> control slightly upward, until the <xref:System.Windows.Forms.Label> text and the <xref:System.Windows.Forms.TextBox> text are aligned. Note the differently styled snapline that appears, indicating when the text fields of both controls are aligned.
 
-## Using Snaplines with Keyboard Navigation
- Snaplines help you align controls when you are arranging them using the keyboard's arrow keys.
-
-### To use snaplines with keyboard navigation
+## Use snaplines with keyboard navigation
 
 1. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto your form. Place it in the upper-left corner of the form.
 
-2. Press CTRL+DOWN ARROW. Note that the control moves down the form to the first available horizontal alignment position.
+2. Press **Ctrl**+**down arrow**. Note that the control moves down the form to the first available horizontal alignment position.
 
-3. Press CTRL+DOWN ARROW until the control reaches the bottom of the form. Note the positions it occupies as it moves down the form.
+3. Press **Ctrl**+**down arrow** until the control reaches the bottom of the form. Note the positions it occupies as it moves down the form.
 
-4. Press CTRL+RIGHT ARROW. Note that the control moves across the form to the first available vertical alignment position.
+4. Press **Ctrl**+**right arrow**. Note that the control moves across the form to the first available vertical alignment position.
 
-5. Press CTRL+RIGHT ARROW until the control reaches the side of the form. Note the positions it occupies as it moves across the form.
+5. Press **Ctrl**+**right arrow** until the control reaches the side of the form. Note the positions it occupies as it moves across the form.
 
 6. Move the control around the form with a combination of arrow keys. Note the positions the control occupies and the snaplines that accompany them.
 
-7. Press SHIFT+any arrow key to resize the <xref:System.Windows.Forms.Button> control by increments of one pixel.
+7. Press **Shift**+**arrow keys** to resize the <xref:System.Windows.Forms.Button> control by increments of one pixel.
 
-8. Press CTRL+SHIFT+any arrow key to resize the <xref:System.Windows.Forms.Button> control in snapline increments.
+8. Press **Ctrl**+**Shift**+**arrow keys** to resize the <xref:System.Windows.Forms.Button> control in snapline increments.
 
-## Snaplines and Layout Panels
- Snaplines are disabled within layout panels.
-
-### To selectively disable snaplines
+## Selectively disable snaplines
 
 1. Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.
 
@@ -202,33 +158,29 @@ Precise placement of controls on your form is a high priority for many applicati
 
 5. Drag the <xref:System.Windows.Forms.Button> control out of the <xref:System.Windows.Forms.TableLayoutPanel> control and move it around the <xref:System.Windows.Forms.TableLayoutPanel> control. Note that snaplines appear again.
 
-## Disabling Snaplines
- Snaplines are turned on by default. You can disable snaplines selectively, or you can disable them in the design environment.
+## Disable snaplines
 
-### To selectively disable snaplines
+Press the **Alt** key and while moving a control around the form.
 
-- Press the ALT key and while moving a control around the form.
-
-     Note that no snaplines appear and the control does not snap to any potential alignment positions.
+No snaplines appear and the control does not snap to any potential alignment positions.
 
 ### To disable snaplines in the design environment
 
-1. From the **Tools** menu, open the **Options** dialog box. Open the Windows Forms Designer dialog box. For details, see [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100)).
+1. From the **Tools** menu, open the **Options** dialog box. Select **Windows Forms Designer**.
 
 2. Select the **General** node. In the **Layout Mode** section, change the selection from **SnapLines** to **SnapToGrid**.
 
-3. Click OK to apply the setting.
+3. Select **OK** to apply the setting.
 
 4. Select a control on your form and move it around the other controls. Note that snaplines do not appear.
 
-## Next Steps
- Snaplines offer an intuitive means of aligning controls on your form. Suggestions for more exploration include:
+## Next steps
+
+Snaplines offer an intuitive means of aligning controls on your form. Suggestions for more exploration include:
 
 - Try nesting a <xref:System.Windows.Forms.GroupBox> control within another <xref:System.Windows.Forms.GroupBox> control. Place a <xref:System.Windows.Forms.Button> control within the child <xref:System.Windows.Forms.GroupBox> control, and another within the parent <xref:System.Windows.Forms.GroupBox> control. Move the <xref:System.Windows.Forms.Button> controls around to see how the snaplines cross container boundaries.
 
 - Create a column of <xref:System.Windows.Forms.TextBox> controls and a corresponding column of <xref:System.Windows.Forms.Label> controls. Set the value of the <xref:System.Windows.Forms.Label> controls' <xref:System.Windows.Forms.Control.AutoSize%2A> property to `true`. Use snaplines to move the <xref:System.Windows.Forms.Label> controls so their displayed text is aligned with the text in the <xref:System.Windows.Forms.TextBox> controls.
-
- For information about Windows user interface design, see the book *Microsoft Windows User Experience, Official Guidelines for User Interface Developers and Designers* Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1).
 
 ## See also
 
@@ -236,4 +188,3 @@ Precise placement of controls on your form is a high priority for many applicati
 - [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
 - [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](windows-forms-controls-padding-autosize.md)
-- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)

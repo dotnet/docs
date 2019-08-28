@@ -17,7 +17,7 @@ When you use the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] cli
  The following example registers a handler for the <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> event and then executes a query against the data service.  
   
 > [!NOTE]
->  When a data service requires you to manually set the message header for every request, consider registering the handler for the <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> event by overriding the `OnContextCreated` partial method in the entity container that represents the data service, which in this case is `NorthwindEntities`.  
+> When a data service requires you to manually set the message header for every request, consider registering the handler for the <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> event by overriding the `OnContextCreated` partial method in the entity container that represents the data service, which in this case is `NorthwindEntities`.  
   
 [!code-csharp[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#registerheadersquery)]   
 [!code-vb[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#registerheadersquery)]

@@ -34,7 +34,7 @@ Specifies the name of the assembly that this module will be a part of.
  For more information about creating a module, see [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md). For more information about friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
   
 > [!NOTE]
->  The `-moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
+> The `-moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
   
 ## See also
 

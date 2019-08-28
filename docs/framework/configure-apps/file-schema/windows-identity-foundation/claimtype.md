@@ -42,4 +42,4 @@ Specifies a single optional or required claim for incoming security tokens.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<claimTypeRequired>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/claimtyperequired.md)|Specifies the set of required claims for incoming security tokens.|
+|[\<claimTypeRequired>](claimtyperequired.md)|Specifies the set of required claims for incoming security tokens.|

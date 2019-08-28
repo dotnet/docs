@@ -57,7 +57,7 @@ A class can contain declarations of the following members:
 
 - [Indexers](../../programming-guide/indexers/index.md)
 
-- [Operators](../../programming-guide/statements-expressions-operators/operators.md)
+- [Operators](../operators/index.md)
 
 - [Events](../../programming-guide/events/index.md)
 

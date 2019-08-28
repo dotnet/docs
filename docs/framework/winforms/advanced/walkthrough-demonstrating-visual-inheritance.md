@@ -29,19 +29,19 @@ Ultimately, this walkthrough will demonstrate the difference between private and
 > [!CAUTION]
 > Not all controls support visual inheritance from a base form. The following controls do not support the scenario described in this walkthrough:
 >
->  <xref:System.Windows.Forms.WebBrowser>
+> - <xref:System.Windows.Forms.WebBrowser>
 >
->  <xref:System.Windows.Forms.ToolStrip>
+> - <xref:System.Windows.Forms.ToolStrip>
 >
->  <xref:System.Windows.Forms.ToolStripPanel>
+> - <xref:System.Windows.Forms.ToolStripPanel>
 >
->  <xref:System.Windows.Forms.TableLayoutPanel>
+> - <xref:System.Windows.Forms.TableLayoutPanel>
 >
->  <xref:System.Windows.Forms.FlowLayoutPanel>
+> - <xref:System.Windows.Forms.FlowLayoutPanel>
 >
->  <xref:System.Windows.Forms.DataGridView>
+> - <xref:System.Windows.Forms.DataGridView>
 >
->  These controls in the inherited form are always read-only regardless of the modifiers you use (`private`, `protected`, or `public`).
+> These controls in the inherited form are always read-only regardless of the modifiers you use (`private`, `protected`, or `public`).
 
 ## Create a class library project containing a base form
 
@@ -55,7 +55,7 @@ Ultimately, this walkthrough will demonstrate the difference between private and
 
 5. From the **File** menu, choose **Save All** to save the project and files to the default location.
 
- The next two procedures add buttons to the base form. To demonstrate visual inheritance, you will give the buttons different access levels by setting their `Modifiers` properties.
+The next two procedures add buttons to the base form. To demonstrate visual inheritance, you will give the buttons different access levels by setting their `Modifiers` properties.
 
 ## Add a button that inheritors of the base form can modify
 
@@ -129,7 +129,7 @@ Ultimately, this walkthrough will demonstrate the difference between private and
 
 5. Open the inherited form (**Form2**) in the designer by double-clicking it, if it is not already open.
 
-     In the designer, the inherited buttons have a symbol (![Screenshot of the Visual Basic inheritance symbol.](./media/walkthrough-demonstrating-visual-inheritance/visual-basic-inheritance-glyph.gif)) in their upper corner, indicating they are inherited.
+    In the designer, the inherited buttons have a symbol (![Screenshot of the Visual Basic inheritance symbol.](./media/walkthrough-demonstrating-visual-inheritance/visual-basic-inheritance-glyph.gif)) in their upper corner, indicating they are inherited.
 
 6. Select the **Say Hello** button and observe the resize handles. Because this button is protected, the inheritors can move it, resize it, change its caption, and make other modifications.
 

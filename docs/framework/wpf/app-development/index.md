@@ -10,7 +10,7 @@ ms.assetid: 2996ce5e-81e9-49ae-881b-952db3dd1b7e
 <a name="introduction"></a>
 Windows Presentation Foundation (WPF) is a presentation framework that can be used to develop the following types of applications:  
   
-- Standalone Applications (traditional style [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] applications built as executable assemblies that are installed to and run from the client computer).  
+- Standalone Applications (traditional style Windows applications built as executable assemblies that are installed to and run from the client computer).  
   
 - [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] (applications composed of navigation pages that are built as executable assemblies and hosted by Web browsers such as Microsoft Internet Explorer or Mozilla Firefox).  
   
@@ -19,7 +19,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
 - Class Libraries (non-executable assemblies that contain reusable classes).  
   
 > [!NOTE]
->  Using WPF types in a Windows service is strongly discouraged. If you attempt to use these features in a Windows service, they may not work as expected.  
+> Using WPF types in a Windows service is strongly discouraged. If you attempt to use these features in a Windows service, they may not work as expected.  
   
  To build this set of applications, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implements a host of services. This topic provides an overview of these services and where to find more information.  
 

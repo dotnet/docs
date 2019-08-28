@@ -29,11 +29,11 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
 <a name="XPS_print_path_intro"></a>   
 ## XPS Print Path  
- The XML Paper Specification (XPS) print path is a new [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] feature that redefines how printing is handled in Windows applications. Because [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] can replace a document presentation language (such as RTF), a print spooler format (such as WMF), and a page description language (such as PCL or Postscript); the new print path maintains the XPS format from application publication to the final processing in the print driver or device.  
+ The XML Paper Specification (XPS) print path is a new Windows feature that redefines how printing is handled in Windows applications. Because [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] can replace a document presentation language (such as RTF), a print spooler format (such as WMF), and a page description language (such as PCL or Postscript); the new print path maintains the XPS format from application publication to the final processing in the print driver or device.  
   
  The XPS print path is built upon the XPS printer driver model (XPSDrv), which provides several benefits for developers such as [!INCLUDE[TLA#tla_wys](../../../../includes/tlasharptla-wys-md.md)] printing, improved color support, and significantly improved print performance. (For more on XPSDrv, see the [Windows Driver Kit documentation](/windows-hardware/drivers/).)  
   
- The operation of the print spooler for XPS documents is essentially the same as in previous versions of Windows. However, it has been enhanced to support the XPS print path in addition to the existing GDI print path. The new print path natively consumes an XPS spool file. While user-mode printer drivers written for previous versions of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] will continue to work, an XPS printer driver (XPSDrv) is required in order to use the XPS print path.  
+ The operation of the print spooler for XPS documents is essentially the same as in previous versions of Windows. However, it has been enhanced to support the XPS print path in addition to the existing GDI print path. The new print path natively consumes an XPS spool file. While user-mode printer drivers written for previous versions of Windows will continue to work, an XPS printer driver (XPSDrv) is required in order to use the XPS print path.  
   
  The benefits of the XPS print path are significant, and include:  
   
@@ -58,7 +58,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
  To enable the use of XPSDrv-based printers by [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and Windows Forms applications, the XPS printer driver (XPSDrv) supports conversion of GDI to XPS format. The XPSDrv model also provides a converter for XPS to GDI format so that [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] applications can print [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] Documents. For [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, conversion of XPS to GDI format is done automatically by the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter> class whenever the target print queue of the write operation does not have an XPSDrv driver. (Windows Forms applications cannot print [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] Documents.)  
   
- The following illustration depicts the print subsystem and defines the portions provided by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)], and the portions defined by software and hardware vendors:  
+ The following illustration depicts the print subsystem and defines the portions provided by Microsoft, and the portions defined by software and hardware vendors:  
   
  ![Screenshot shows the XPS print system.](./media/printing-overview/xml-paper-specification-print-system.png)  
   

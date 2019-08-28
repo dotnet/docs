@@ -36,17 +36,17 @@ Specifies settings for a service host.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<baseAddresses>](../../../../../docs/framework/configure-apps/file-schema/wcf/baseaddresses.md)|A collection of `baseAddress` elements that specifies the base addresses used by the service host.|  
-|[\<timeOuts>](../../../../../docs/framework/configure-apps/file-schema/wcf/timeouts.md)|A configuration element that specifies the interval of time allowed for the service host to open or close.|  
+|[\<baseAddresses>](baseaddresses.md)|A collection of `baseAddress` elements that specifies the base addresses used by the service host.|  
+|[\<timeOuts>](timeouts.md)|A configuration element that specifies the interval of time allowed for the service host to open or close.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|Specifies the settings for a Windows Communication Foundation (WCF) service.|  
+|[\<service>](service.md)|Specifies the settings for a Windows Communication Foundation (WCF) service.|  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
-- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)

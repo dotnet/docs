@@ -21,7 +21,7 @@ ms.author: "mairaw"
 Provides mapping capabilities between assemblies.  
   
 > [!NOTE]
->  The `IMapToken` interface must be implemented by the client.  
+> The `IMapToken` interface must be implemented by the client.  
   
 ## Methods  
   

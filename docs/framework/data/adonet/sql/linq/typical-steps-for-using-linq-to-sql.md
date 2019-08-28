@@ -37,7 +37,7 @@ To implement a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md
      By using this approach, you can keep the mapping metadata out of your application code. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
   
     > [!NOTE]
-    >  The O/R Designer does not support the generation of external mapping files. You must use the SQLMetal tool to implement this feature.  
+    > The O/R Designer does not support the generation of external mapping files. You must use the SQLMetal tool to implement this feature.  
   
 - A DBML file, which you can modify before generating a final code file.  
   

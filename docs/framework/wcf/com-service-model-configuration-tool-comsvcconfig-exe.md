@@ -18,7 +18,7 @@ ComSvcConfig.exe /install | /uninstall | /list [/application:<ApplicationID | Ap
 ## Remarks  
   
 > [!NOTE]
->  You must be an administrator on the local computer to use ComSvcConfig.exe.  
+> You must be an administrator on the local computer to use ComSvcConfig.exe.  
   
  The tool can be found in the following location  
   

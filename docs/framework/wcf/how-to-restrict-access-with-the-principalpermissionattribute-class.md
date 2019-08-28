@@ -41,7 +41,7 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
      [!code-vb[c_PrincipalPermissionAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_principalpermissionattribute/vb/source.vb#1)]  
   
     > [!NOTE]
-    >  If you apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to a contract a <xref:System.Security.SecurityException> will be thrown. You can only apply the attribute at the method level.  
+    > If you apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to a contract a <xref:System.Security.SecurityException> will be thrown. You can only apply the attribute at the method level.  
   
 ## Using a Certificate to Control Access to a Method  
  You can also use the `PrincipalPermissionAttribute` class to control access to a method if the client credential type is a certificate. To do this, you must have the certificate's subject and thumbprint.  

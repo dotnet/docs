@@ -9,7 +9,7 @@ This topic outlines the basic steps required to create a Windows Process Activat
  This hosting option requires that WAS activation components are properly installed and configured, but it does not require any hosting code to be written as part of the application. For more information about installing and configuring WAS, see [How to: Install and Configure WCF Activation Components](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md).  
   
 > [!WARNING]
->  WAS activation is not supported if the web server’s request processing pipeline is set to Classic mode. The web server’s request processing pipeline must be set to Integrated mode if WAS activation is to be used.  
+> WAS activation is not supported if the web server’s request processing pipeline is set to Classic mode. The web server’s request processing pipeline must be set to Integrated mode if WAS activation is to be used.  
   
  When a WCF service is hosted in WAS, the standard bindings are used in the usual way. However, when using the <xref:System.ServiceModel.NetTcpBinding> and the <xref:System.ServiceModel.NetNamedPipeBinding> to configure a WAS-hosted service, a constraint must be satisfied. When different endpoints use the same transport, the binding settings have to match on the following seven properties:  
   

@@ -7,7 +7,7 @@ ms.assetid: ac99a063-e2d2-40cc-b659-d23c2f783f92
 This sample demonstrates how to implement End-to-End (E2E) tracing using Event Tracing for Windows (ETW) and the `ETWTraceListener` that is provided with this sample. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) and includes ETW tracing.  
   
 > [!NOTE]
->  The set-up procedure and build instructions for this sample are located at the end of this topic.  
+> The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample assumes that you are familiar with [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md).  
   
@@ -44,7 +44,7 @@ This sample demonstrates how to implement End-to-End (E2E) tracing using Event T
  Before using this listener, an ETW Trace Session must be started. This session can be started by using Logman.exe or Tracelog.exe. A SetupETW.bat file is included with this sample so that you can set up the ETW Trace Session along with a CleanupETW.bat file for closing the session and completing the log file.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic. For more information about these tools, see <https://go.microsoft.com/fwlink/?LinkId=56580>  
+> The setup procedure and build instructions for this sample are located at the end of this topic. For more information about these tools, see <https://go.microsoft.com/fwlink/?LinkId=56580>  
   
  When using the ETWTraceListener, traces are logged in binary .etl files. With ServiceModel tracing turned on, all generated traces appear in the same file. Use [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) for viewing .etl and .svclog log files. The viewer creates an end-to-end view of the system that makes it possible to trace a message from its source to its destination and point of consumption.  
   
@@ -79,7 +79,7 @@ Logman stop Wcf
 2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
     > [!NOTE]
-    >  To use the RegisterProvider.bat, SetupETW.bat and CleanupETW.bat commands, you must run under a local administrator account. If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)] or later, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, then click **Run as administrator**.  
+    > To use the RegisterProvider.bat, SetupETW.bat and CleanupETW.bat commands, you must run under a local administrator account. If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)] or later, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, then click **Run as administrator**.  
   
 3. Before running the sample, run RegisterProvider.bat on the client and server. This sets up the resulting ETWTracingSampleLog.etl file to generate traces that can be read by the Service Trace Viewer. This file can be found in the C:\logs folder. If this folder does not exist, it must be created or no traces are generated. Then, run SetupETW.bat on the client and server computers to begin the ETW Trace Session. The SetupETW.bat file can be found under the CS\Client folder.  
   
@@ -92,13 +92,13 @@ Logman stop Wcf
 7. Open the newly created .svclog file from within the Service Trace Viewer to view the ETW and ServiceModel traces.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\AnalyticTrace`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\AnalyticTrace`  
   
 ## See also
 

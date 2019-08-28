@@ -72,5 +72,5 @@ Contains mappings of classes to friendly names.
 
 - [Configuration File Schema](../index.md)
 - [Cryptography Settings Schema](index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../configure-cryptography-classes.md)

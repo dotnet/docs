@@ -11,7 +11,7 @@ author: "ghogen"
 When you create a service, you can use a Visual Studio project template called **Windows Service**. This template automatically does much of the work for you by referencing the appropriate classes and namespaces, setting up the inheritance from the base class for services, and overriding several of the methods you're likely to want to override.  
   
 > [!WARNING]
->  The Windows Services project template is not available in the Express edition of Visual Studio.  
+> The Windows Services project template is not available in the Express edition of Visual Studio.  
   
  At a minimum, to create a functional service you must:  
   
@@ -26,14 +26,14 @@ When you create a service, you can use a Visual Studio project template called *
 1. Create a **Windows Service** project.  
   
     > [!NOTE]
-    >  For instructions on writing a service without using the template, see [How to: Write Services Programmatically](../../../docs/framework/windows-services/how-to-write-services-programmatically.md).  
+    > For instructions on writing a service without using the template, see [How to: Write Services Programmatically](../../../docs/framework/windows-services/how-to-write-services-programmatically.md).  
   
 2. In the **Properties** window, set the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property for your service.  
   
      ![Set the ServiceName property.](../../../docs/framework/windows-services/media/windowsservice-servicename.PNG "WindowsService_ServiceName")  
   
     > [!NOTE]
-    >  The value of the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property must always match the name recorded in the installer classes. If you change this property, you must update the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property of installer classes as well.  
+    > The value of the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property must always match the name recorded in the installer classes. If you change this property, you must update the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property of installer classes as well.  
   
 3. Set any of the following properties to determine how your service will function.  
   
@@ -46,7 +46,7 @@ When you create a service, you can use a Visual Studio project template called *
     |<xref:System.ServiceProcess.ServiceBase.AutoLog%2A>|`True` to write informational entries to the Application event log when your service performs an action; `false` to disable this functionality. For more information, see [How to: Log Information About Services](../../../docs/framework/windows-services/how-to-log-information-about-services.md). **Note:**  By default, <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> is set to `true`.|  
   
     > [!NOTE]
-    >  When <xref:System.ServiceProcess.ServiceBase.CanStop%2A> or <xref:System.ServiceProcess.ServiceBase.CanPauseAndContinue%2A> are set to `false`, the **Service Control Manager** will disable the corresponding menu options to stop, pause, or continue the service.  
+    > When <xref:System.ServiceProcess.ServiceBase.CanStop%2A> or <xref:System.ServiceProcess.ServiceBase.CanPauseAndContinue%2A> are set to `false`, the **Service Control Manager** will disable the corresponding menu options to stop, pause, or continue the service.  
   
 4. Access the Code Editor and fill in the processing you want for the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> procedures.  
   
@@ -57,7 +57,7 @@ When you create a service, you can use a Visual Studio project template called *
 7. Build your project by selecting **Build Solution** from the **Build** menu.  
   
     > [!NOTE]
-    >  Do not press F5 to run your project — you cannot run a service project in this way.  
+    > Do not press F5 to run your project — you cannot run a service project in this way.  
   
 8. Install the service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
   

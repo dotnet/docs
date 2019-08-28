@@ -41,7 +41,7 @@ makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exc
 3. Add the following line of code to the client program.  
   
 > [!IMPORTANT]
->  This code is only required for test certificates such as those created by Makecert.exe. It is not recommended for production code.  
+> This code is only required for test certificates such as those created by Makecert.exe. It is not recommended for production code.  
   
 ```  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
@@ -62,7 +62,7 @@ PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");
 6. Test access to the service in a browser by using the HTTPS address `https://localhost/servicemodelsamples/service.svc`.  
   
 > [!NOTE]
->  Because the test certificate you have just installed is not a trusted certificate, you may encounter additional Internet Explorer security warnings when browsing to local Web addresses secured with this certificate.  
+> Because the test certificate you have just installed is not a trusted certificate, you may encounter additional Internet Explorer security warnings when browsing to local Web addresses secured with this certificate.  
   
 ## Removing Certificates  
   

@@ -76,4 +76,4 @@ The following example shows how to enable garbage collection for multiple CPU gr
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [To disable concurrent garbage collection](gcconcurrent-element.md#to-disable-background-garbage-collection)
-- [Workstation and server garbage collection](../../../../../docs/standard/garbage-collection/fundamentals.md#workstation-and-server-garbage-collection)
+- [Workstation and server garbage collection](../../../../standard/garbage-collection/fundamentals.md#workstation_and_server_garbage_collection)

@@ -12,7 +12,7 @@ ms.assetid: 91580b89-a0a8-4889-aecb-fddf8e63175f
 A resource is an object that can be reused in different places in your application. Examples of resources include brushes and styles. This overview describes how to use resources in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. You can also create and access resources by using code, or interchangeably between code and [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. For more information, see [Resources and Code](resources-and-code.md).  
   
 > [!NOTE]
->  The resource files described in this topic are different than the resource files described in [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md) and different than the embedded or linked resources described in [Manage Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
+> The resource files described in this topic are different than the resource files described in [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md) and different than the embedded or linked resources described in [Manage Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
 
 <a name="usingresources"></a>   
 ## Using Resources in XAML  

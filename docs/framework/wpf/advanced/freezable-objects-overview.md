@@ -35,7 +35,7 @@ This topic describes how to effectively use and create <xref:System.Windows.Free
  A freezable's <xref:System.Windows.Freezable.Freeze%2A> method enables you to disable this self-updating ability. You can use this method to make the brush become "frozen," or unmodifiable.  
   
 > [!NOTE]
->  Not every Freezable object can be frozen. To avoid throwing an <xref:System.InvalidOperationException>, check the value of the Freezable object's <xref:System.Windows.Freezable.CanFreeze%2A> property to determine whether it can be frozen before attempting to freeze it.  
+> Not every Freezable object can be frozen. To avoid throwing an <xref:System.InvalidOperationException>, check the value of the Freezable object's <xref:System.Windows.Freezable.CanFreeze%2A> property to determine whether it can be frozen before attempting to freeze it.  
   
  [!code-csharp[freezablesample_procedural#FrozenExamplePart2](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#frozenexamplepart2)]
  [!code-vb[freezablesample_procedural#FrozenExamplePart2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#frozenexamplepart2)]  
@@ -43,7 +43,7 @@ This topic describes how to effectively use and create <xref:System.Windows.Free
  When you no longer need to modify a freezable, freezing it provides performance benefits. If you were to freeze the brush in this example, the graphics system would no longer need to monitor it for changes. The graphics system can also make other optimizations, because it knows the brush won't change.  
   
 > [!NOTE]
->  For convenience, freezable objects remain unfrozen unless you explicitly freeze them.  
+> For convenience, freezable objects remain unfrozen unless you explicitly freeze them.  
   
 <a name="frozenfreezables"></a>   
 ## Using Freezables  
@@ -108,7 +108,7 @@ mc:Ignorable="PresentationOptions"
  [!code-vb[freezablesample_procedural#CloneExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#cloneexample)]  
   
 > [!NOTE]
->  Regardless of which clone method you use, animations are never copied to the new <xref:System.Windows.Freezable>.  
+> Regardless of which clone method you use, animations are never copied to the new <xref:System.Windows.Freezable>.  
   
  The <xref:System.Windows.Freezable.Clone%2A> and <xref:System.Windows.Freezable.CloneCurrentValue%2A> methods produce deep copies of the freezable. If the freezable contains other frozen freezable objects, they are also cloned and made modifiable. For example, if you clone a frozen <xref:System.Windows.Media.PathGeometry> to make it modifiable, the figures and segments it contains are also copied and made modifiable.  
   
@@ -151,7 +151,7 @@ mc:Ignorable="PresentationOptions"
  If your class contains non-dependency-property data members that are <xref:System.Windows.DependencyObject> objects, you must also call the <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> method each time you change one of their values, even if you're setting the member to `null`.  
   
 > [!NOTE]
->  It's very important that you begin each <xref:System.Windows.Freezable> method you override with a call to the base implementation.  
+> It's very important that you begin each <xref:System.Windows.Freezable> method you override with a call to the base implementation.  
   
  For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981).  
   

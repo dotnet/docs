@@ -15,7 +15,7 @@ ms.assetid: d411db70-4df7-487d-82bc-95a7c1b2e7f8
 This example shows one way to apply an animation to a property without using a <xref:System.Windows.Media.Animation.Storyboard>.  
   
 > [!NOTE]
->  This functionality is not available in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. For information about animating a property in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md).  
+> This functionality is not available in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. For information about animating a property in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md).  
   
  To apply a local animation to a property, use the <xref:System.Windows.UIElement.BeginAnimation%2A> method. This method takes two parameters: a <xref:System.Windows.DependencyProperty> that specifies the property to animate, and the animation to apply to that property.  
   

@@ -46,7 +46,7 @@ A <xref:System.Data.DataSet> is made up of a collection of tables, relationships
  <xref:System.Data.DataTable>  
  Provides reference information about the **DataTable** object.  
   
- [Class Library Overview](../../../../../docs/standard/class-library-overview.md)  
+ [Class Library Overview](../../../../standard/class-library-overview.md)  
  Provides an overview of the .NET Framework class library, including the **System** namespace as well as its second-level namespace, **System.Data**.  
   
 ## See also

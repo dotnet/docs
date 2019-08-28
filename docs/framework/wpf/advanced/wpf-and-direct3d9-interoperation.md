@@ -12,7 +12,7 @@ ms.assetid: 1b14b823-69c4-4e8d-99e4-f6dade58f89a
 You can include Direct3D9 content in a Windows Presentation Foundation (WPF) application. This topic describes how to create Direct3D9 content so that it efficiently interoperates with WPF.  
   
 > [!NOTE]
->  When using Direct3D9 content in WPF, you also need to think about performance. For more information about how to optimize for performance, see [Performance Considerations for Direct3D9 and WPF Interoperability](performance-considerations-for-direct3d9-and-wpf-interoperability.md).  
+> When using Direct3D9 content in WPF, you also need to think about performance. For more information about how to optimize for performance, see [Performance Considerations for Direct3D9 and WPF Interoperability](performance-considerations-for-direct3d9-and-wpf-interoperability.md).  
   
 ## Display Buffers  
  The <xref:System.Windows.Interop.D3DImage> class manages two display buffers, which are called the *back buffer* and the *front buffer*. The back buffer is your Direct3D9 surface. Changes to the back buffer are copied forward to the front buffer when you call the <xref:System.Windows.Interop.D3DImage.Unlock%2A> method.  
@@ -115,7 +115,7 @@ You can include Direct3D9 content in a Windows Presentation Foundation (WPF) app
 4. If the adapter is not the same as the adapter with the back buffer, create a new back buffer on the new monitor and assign it to the <xref:System.Windows.Interop.D3DImage> back buffer.  
   
 > [!NOTE]
->  If the <xref:System.Windows.Interop.D3DImage> straddles monitors, performance will be slow, except in the case of WDDM and `IDirect3D9Ex` on the same adapter. There is no way to improve performance in this situation.  
+> If the <xref:System.Windows.Interop.D3DImage> straddles monitors, performance will be slow, except in the case of WDDM and `IDirect3D9Ex` on the same adapter. There is no way to improve performance in this situation.  
   
  The following code example shows how to find the current monitor.  
   
@@ -139,7 +139,7 @@ You can include Direct3D9 content in a Windows Presentation Foundation (WPF) app
  You can also implement your own software rendering instead of calling the base implementation.  
   
 > [!NOTE]
->  If WPF is rendering completely in software, <xref:System.Windows.Interop.D3DImage> is not shown because WPF does not have a front buffer.  
+> If WPF is rendering completely in software, <xref:System.Windows.Interop.D3DImage> is not shown because WPF does not have a front buffer.  
   
 ## See also
 

@@ -18,7 +18,7 @@ A <xref:System.Data.DataTable>, which represents one table of in-memory relation
  You are not required to supply a value for the <xref:System.Data.DataTable.TableName%2A> property when you create a **DataTable**; you can specify the property at another time, or you can leave it empty. However, when you add a table without a **TableName** value to a **DataSet**, the table will be given an incremental default name of Table*N*, starting with "Table" for Table0.  
   
 > [!NOTE]
->  We recommend that you avoid the "Table*N*" naming convention when you supply a **TableName** value, because the name you supply may conflict with an existing default table name in the **DataSet**. If the supplied name already exists, an exception is thrown.  
+> We recommend that you avoid the "Table*N*" naming convention when you supply a **TableName** value, because the name you supply may conflict with an existing default table name in the **DataSet**. If the supplied name already exists, an exception is thrown.  
   
  The following example creates an instance of a **DataTable** object and assigns it the name "Customers."  
   

@@ -16,7 +16,7 @@ The Supporting Tokens sample demonstrates how to add additional tokens to a mess
 - How the server's X.509 certificate is used to protect the symmetric key used for message encryption and signature.
 
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this topic.
 
 ## Client Authenticates with Username Token and Supporting X.509 Security Token
  The service exposes a single endpoint for communicating that is programmatically created using the `BindingHelper` and `EchoServiceHost` classes. The endpoint consists of an address, a binding, and a contract. The binding is configured with a custom binding using `SymmetricSecurityBindingElement` and `HttpTransportBindingElement`. This sample sets the `SymmetricSecurityBindingElement` to use a service X.509 certificate to protect the symmetric key during transmission and to pass a `UserNameToken` along with the supporting `X509SecurityToken` in a WS-Security message header. The symmetric key is used to encrypt the message body and the username security token. The supporting token is passed as an additional binary security token in the WS-Security message header. The authenticity of the supporting token is proved by signing part of the message with the private key associated with the supporting X.509 security token.
@@ -419,7 +419,7 @@ iisreset
 1. Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script. Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
+    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script. Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
   
 2. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
@@ -458,4 +458,4 @@ iisreset
 - Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
 > [!NOTE]
->  This script does not remove service certificates on a client when running this sample across machines. If you have run WCF samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.
+> This script does not remove service certificates on a client when running this sample across machines. If you have run WCF samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.

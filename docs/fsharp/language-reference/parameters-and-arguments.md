@@ -157,9 +157,9 @@ In this case, the compiler generates a warning and will ignore both attributes a
 
 Passing an F# value by reference involves [byrefs](byrefs.md), which are managed pointer types. Guidance for which type to use is as follows:
 
-* Use `inref<'T>` if you only need to read the pointer.
-* Use `outref<'T>` if you only need to write to the pointer.
-* Use `byref<'T>` if you need to both read from and write to the pointer.
+- Use `inref<'T>` if you only need to read the pointer.
+- Use `outref<'T>` if you only need to write to the pointer.
+- Use `byref<'T>` if you need to both read from and write to the pointer.
 
 ```fsharp
 let example1 (x: inref<int>) = printfn "It's %d" x

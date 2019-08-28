@@ -49,7 +49,7 @@ The masked text box control is an enhanced text box control that supports a decl
 3. (Optional) Type a new mask in the **Mask** box. That is, you do not have to use one of the predefined masks.  
   
     > [!NOTE]
-    >  The Preview box displays the characters that the user sees in the <xref:System.Windows.Forms.MaskedTextBox>. These characters are a guide to help the user enter the data correctly.  
+    > The Preview box displays the characters that the user sees in the <xref:System.Windows.Forms.MaskedTextBox>. These characters are a guide to help the user enter the data correctly.  
   
 4. Select or clear the **Use ValidatingType** check box. The **Use ValidatingType** check box specifies whether a data type is used to verify the data input by the user. For more information, see the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property.  
   

@@ -13,13 +13,13 @@ This sample demonstrates how to control several security-related features of a W
 - Controlling the logging of Personally Identifiable Information (PII) in trace and message logs.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
   
 ## Discussion  
  Each of these features can be used separately or together to control aspects of a service's security. This is not a definitive guide to securing a WCF service.  
@@ -81,7 +81,7 @@ This sample demonstrates how to control several security-related features of a W
 ```  
   
 > [!NOTE]
->  The Machine.config file has a default location: %WINDIR%\Microsoft.NET\Framework\v2.0.50727\CONFIG.  
+> The Machine.config file has a default location: %WINDIR%\Microsoft.NET\Framework\v2.0.50727\CONFIG.  
   
  If the `enableLoggingKnownPii` attribute is not present in Machine.config, logging of PII is not allowed.  
   
@@ -111,10 +111,10 @@ This sample demonstrates how to control several security-related features of a W
  PII is only logged if both `enableLoggingKnownPii` is set to `true`, and `logKnownPii` is set to `true`.  
   
 > [!NOTE]
->  System.Diagnostics ignores all attributes on all sources except the first one listed in the configuration file. Adding the `logKnownPii` attribute to the second source in the configuration file has no effect.  
+> System.Diagnostics ignores all attributes on all sources except the first one listed in the configuration file. Adding the `logKnownPii` attribute to the second source in the configuration file has no effect.  
   
 > [!IMPORTANT]
->  To run this sample involves manual modification of Machine.config. Care should be taken when modifying Machine.config as incorrect values or syntax may prevent all .NET Framework applications from running.  
+> To run this sample involves manual modification of Machine.config. Care should be taken when modifying Machine.config as incorrect values or syntax may prevent all .NET Framework applications from running.  
   
  It is also possible to encrypt configuration file elements using DPAPI and RSA. For more information, see the following links:  
   

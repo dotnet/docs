@@ -52,7 +52,7 @@ HRESULT Bind (
  An I/O completion port is created by using a call to `CreateIoCompletionPort`. The CLR calls `Bind` to bind a handle to that port.  
   
 > [!NOTE]
->  When an I/O request completes, the host must call the [ICLRIoCompletionManager::OnComplete](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-oncomplete-method.md) method.  
+> When an I/O request completes, the host must call the [ICLRIoCompletionManager::OnComplete](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-oncomplete-method.md) method.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

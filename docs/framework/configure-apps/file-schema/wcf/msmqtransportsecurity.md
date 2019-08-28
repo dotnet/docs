@@ -42,22 +42,22 @@ Specifies MSMQ transport security settings for a custom binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<msmqIntegration>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegration.md)|Specifies settings required for interaction with a Message Queuing (MSMQ) sender or receiver.|  
-|[\<msmqTransport>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqtransport.md)|Specifies the queuing communication properties for a Windows Communication Foundation (WCF) service that uses the native MSMQ protocol.|  
+|[\<msmqIntegration>](msmqintegration.md)|Specifies settings required for interaction with a Message Queuing (MSMQ) sender or receiver.|  
+|[\<msmqTransport>](msmqtransport.md)|Specifies the queuing communication properties for a Windows Communication Foundation (WCF) service that uses the native MSMQ protocol.|  
   
 ## Remarks  
- For more information on transport security, see [Transport Security](../../../../../docs/framework/wcf/feature-details/transport-security.md).  
+ For more information on transport security, see [Transport Security](../../../wcf/feature-details/transport-security.md).  
   
 ## See also
 
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>
 - <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
-- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
-- [Transport Security](../../../../../docs/framework/wcf/feature-details/transport-security.md)
+- [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)
+- [Transports](../../../wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)
+- [Transport Security](../../../wcf/feature-details/transport-security.md)

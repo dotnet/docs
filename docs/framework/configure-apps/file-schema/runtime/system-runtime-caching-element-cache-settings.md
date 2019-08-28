@@ -49,7 +49,7 @@ The following sections describe attributes, child elements, and parent elements.
 The classes in this namespace provide a way to use caching facilities like those in ASP.NET, but without a dependency on the `System.Web` assembly. For more information, see [Caching in .NET Framework Applications](../../../performance/caching-in-net-framework-applications.md).  
   
 > [!NOTE]
->  The output caching functionality and types in the <xref:System.Runtime.Caching> namespace are new in .NET Framework 4.  
+> The output caching functionality and types in the <xref:System.Runtime.Caching> namespace are new in .NET Framework 4.  
   
 ## Example
 

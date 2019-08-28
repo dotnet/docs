@@ -10,10 +10,10 @@ ms.assetid: 79038efa-15bf-464a-83e2-35fe145252ce
 The <xref:System.Data.Objects.SqlClient.SqlFunctions> class contains methods that expose SQL Server functions to use in LINQ to Entities queries. When you use <xref:System.Data.Objects.SqlClient.SqlFunctions> methods in LINQ to Entities queries, the corresponding database functions are executed in the database.  
   
 > [!NOTE]
->  Database functions that perform a calculation on a set of values and return a single value (also known as aggregate database functions) can be directly invoked. Other canonical functions can only be called as part of a LINQ to Entities query. To call an aggregate function directly, you must pass an <xref:System.Data.Objects.ObjectQuery%601> to the function. For more information, see the second example below.  
+> Database functions that perform a calculation on a set of values and return a single value (also known as aggregate database functions) can be directly invoked. Other canonical functions can only be called as part of a LINQ to Entities query. To call an aggregate function directly, you must pass an <xref:System.Data.Objects.ObjectQuery%601> to the function. For more information, see the second example below.  
   
 > [!NOTE]
->  The methods in the <xref:System.Data.Objects.SqlClient.SqlFunctions> class are specific to SQL Server functions. Similar classes that expose database functions may be available through other providers.  
+> The methods in the <xref:System.Data.Objects.SqlClient.SqlFunctions> class are specific to SQL Server functions. Similar classes that expose database functions may be available through other providers.  
   
 ## Example  
  The following example uses the [AdventureWorks Sales Model](https://archive.codeplex.com/?p=msftdbprodsamples). The example executes a LINQ to Entities query that uses the <xref:System.Data.Objects.SqlClient.SqlFunctions.CharIndex%2A> method to return all contacts whose last name starts with "Si":  

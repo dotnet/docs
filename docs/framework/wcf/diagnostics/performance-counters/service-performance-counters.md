@@ -15,4 +15,4 @@ ServiceName@ServiceBaseAddress
   
 ## See also
 
-- [Performance Counters](../../../../../docs/framework/wcf/diagnostics/performance-counters/index.md)
+- [Performance Counters](index.md)

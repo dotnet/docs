@@ -128,11 +128,11 @@ Model Builder splits the training data into a training set and a test set. The t
 
 If your model performance score is not as good as you want it to be, you can:
 
-* Train for a longer period of time. With more time, the automated machine learning engine to try more algorithms and settings.
+- Train for a longer period of time. With more time, the automated machine learning engine to try more algorithms and settings.
 
-* Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model.
+- Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model.
 
-* Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have four classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
+- Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have four classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
 
 ## Code
 

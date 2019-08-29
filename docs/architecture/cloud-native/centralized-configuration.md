@@ -18,5 +18,5 @@ Azure Key Vault provides secure storage of tokens, passwords, certificates, API 
 With centralized configuration, settings that apply to the entire application, such as the centralized logging endpoint, can be set once and used by every part of the distributed application. Although microservices should be independent of one another, there will typically still be some shared dependencies whose configuration details can benefit from a centralized configuration store.
 
 >[!div class="step-by-step"]
->[Previous](host-eshoponcontainers-application.md)
+>[Previous](deploy-eshoponcontainers-azure.md)
 >[Next](communication-patterns.md) <!-- Next Chapter -->

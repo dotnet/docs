@@ -1,16 +1,16 @@
 ---
 title: Mapping eShopOnContainers to Azure Services
-description: Architecting Cloud-native .NET Apps for Azure | Mapping eShopOnContainers to Azure Services
+description: Mapping eShopOnContainers to Azure Services like Azure Kubernetes Service, API Gateway, and Azure Service Bus.
 ms.date: 06/30/2019
 ---
 # Mapping eShopOnContainers to Azure Services
 
 Although not required, Azure is very well-suited to supporting the eShopOnContainers because the project was built to be a cloud-native application. The application is built with .NET Core, so it's capable of running on Linux or Windows containers depending on the Docker host. The application is made up of multiple autonomous microservices, each with its own data. The different microservices showcase different approaches, ranging from simple CRUD operations to more complex DDD and CQRS patterns. Microservices communicate with clients over HTTP and with one another via message-based communication. The application supports multiple platforms for clients as well, since it leverages HTTP as a standard communication protocol and includes ASP.NET Core apps as well as Xamarin mobile apps that run on Android, iOS, and Windows platforms.
 
-The application's architecture is shown in Figure 3-X. On the left are the client apps, broken up into mobile, traditional Web, and Web Single Page Application (SPA) flavors. On the right are the server-side side components that make up the system, each of which can be hosted in Docker containers and Kubernetes clusters. The traditional web app is powered by the ASP.NET Core MVC application shown in yellow. This app and the mobile and web SPA applications, communicates with the individual microservices through one or more API gateways. The API gateways follow the "backends for front ends" (BFF) pattern, meaning that each gateway is designed to support a given front end client. The individual microservices are listed to the right of the API gateways, and include both business logic and some kind of persistence store. The different services make use of SQL Server databases, Redis cache instances, and MongoDB/CosmosDB stores. On the far right is the system's Event Bus, which is used for communication between the microservices.
+The application's architecture is shown in Figure 3-5. On the left are the client apps, broken up into mobile, traditional Web, and Web Single Page Application (SPA) flavors. On the right are the server-side side components that make up the system, each of which can be hosted in Docker containers and Kubernetes clusters. The traditional web app is powered by the ASP.NET Core MVC application shown in yellow. This app and the mobile and web SPA applications, communicates with the individual microservices through one or more API gateways. The API gateways follow the "backends for front ends" (BFF) pattern, meaning that each gateway is designed to support a given front end client. The individual microservices are listed to the right of the API gateways, and include both business logic and some kind of persistence store. The different services make use of SQL Server databases, Redis cache instances, and MongoDB/CosmosDB stores. On the far right is the system's Event Bus, which is used for communication between the microservices.
 
 ![eShopOnContainers Architecture](media/eshoponcontainers-architecture.png)
-**Figure 3-X**. The eShopOnContainers Architecture.
+**Figure 3-5**. The eShopOnContainers Architecture.
 
 The server-side components of this architecture all map easily to Azure services.
 
@@ -67,4 +67,4 @@ Once deployed to production, the eShopOnContainers application would be able to 
 
 >[!div class="step-by-step"]
 >[Previous](introduce-eshoponcontainers-reference-app.md)
->[Next](host-eshoponcontainers-application.md)
+>[Next](deploy-eshoponcontainers-azure.md)

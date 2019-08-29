@@ -1,6 +1,6 @@
 ---
 title: Introducing eShopOnContainers reference app
-description: Architecting Cloud-native .NET Apps for Azure | Introducing eShopOnContainers Reference App
+description: Introducing the eShopOnContainers Cloud Native Microservices Reference App for ASP.NET Core and Azure.
 ms.date: 06/30/2019
 ---
 # Introducing eShopOnContainers reference app
@@ -9,6 +9,8 @@ Microsoft, in partnership with leading community experts, has produced a full-fe
 
 ![eShopOnContainers Sample App Screenshot.](./media/eshoponcontainers-sample-app-screenshot.png)
 **Figure 3-1**. eShopOnContainers Sample App Screenshot.
+
+Before starting this chapter, we recommend that you download the [eShopOnContainers reference application](https://github.com/dotnet-architecture/eShopOnContainers). If you do so, it should be easier for you to follow along with the information presented.
 
 ## Features and requirements
 
@@ -55,5 +57,5 @@ Because it leverages microservices, the eShopOnContainers app includes quite a f
 The code is organized to support the different microservices, and within each microservice, the code is broken up into domain logic, infrastructure concerns, and user interface or service endpoint. In many cases, each service's dependencies can be fulfilled by Azure services in production, as well as alternative options for local development. Let's examine how the application's requirements map to Azure services.
 
 >[!div class="step-by-step"]
->[Previous](implement-app.md)
+>[Previous](other-deployment-options.md)
 >[Next](map-eshoponcontainers-azure-services.md)

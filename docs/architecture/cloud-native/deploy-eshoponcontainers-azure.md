@@ -1,6 +1,6 @@
 ---
-title: Hosting the eShopOnContainers application
-description: Hosting the eShopOnContainers application using Azure Kubernetes Service, Helm, and DevSpaces.
+title: Deploying eShopOnContainers to Azure
+description: Deploying the eShopOnContainers application using Azure Kubernetes Service, Helm, and DevSpaces.
 ms.date: 06/30/2019
 ---
 # Deploying eShopOnContainers to Azure
@@ -17,10 +17,10 @@ Once the cluster has been created and configured, you can deploy the application
 
 Basic deployments to AKS may use custom CLI scripts or simple deployment files, but more complex applications should use a dependency management tool like Helm. Helm is maintained by the Cloud-native Computing Foundation and helps you define, install, and upgrade Kubernetes applications. Helm is composed of a command-line client, helm, which uses helm charts, and an in-cluster component, Tiller. Helm Charts use standard YAML-formatted files to describe a related set of Kubernetes resources and are typically versioned alongside the application they describe. Helm Charts range from simple to complex depending on the requirements of the installation they describe.
 
-You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 3-X shows how the different components of the application are organized into a folder structure used by helm to define and managed deployments.
+You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 3-6 shows how the different components of the application are organized into a folder structure used by helm to define and managed deployments.
 
 ![eShopOnContainers Architecture](media/eshoponcontainers-helm-folder.png)
-**Figure 3-X**. The eShopOnContainers helm folder.
+**Figure 3-6**. The eShopOnContainers helm folder.
 
 Each individual component is installed using a `helm install` command. These commands are easily scripted, and eShopOnContainers provides a "deploy all" script that loops through the different components and installs them using their respective helm charts. The result is a repeatable process, versioned with the application in source control, that anyone on the team can deploy to an AKS cluster with a one-line script command. Especially when combined with Azure Dev Spaces, this makes it easy for developers to diagnose and test their individual changes to their microservice-based cloud-native apps.
 

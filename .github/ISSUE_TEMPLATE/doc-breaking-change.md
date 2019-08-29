@@ -19,7 +19,7 @@ Text in brackets are placeholders; replace the text with the requested informati
 
 ### Version introduced
 
-[Version in which the breaking change first occurred (e.g., 3.0 for .NET Core 3.0)]
+[Version in which the breaking change first occurred (for example, 3.0 for .NET Core 3.0)]
 
 ### Old behavior
 

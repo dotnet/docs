@@ -56,6 +56,10 @@ Because it leverages microservices, the eShopOnContainers app includes quite a f
 
 The code is organized to support the different microservices, and within each microservice, the code is broken up into domain logic, infrastructure concerns, and user interface or service endpoint. In many cases, each service's dependencies can be fulfilled by Azure services in production, as well as alternative options for local development. Let's examine how the application's requirements map to Azure services.
 
+## Understanding microservices
+
+This book focuses on cloud native applications built using Azure technology. To learn more about microservices best practices and how to architect microservice-based applications, please read the companion book, [.NET Micrososervices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/learn/aspnet/microservices-architecture). The book is available online or in PDF or eReader formats.
+
 >[!div class="step-by-step"]
 >[Previous](other-deployment-options.md)
 >[Next](map-eshoponcontainers-azure-services.md)

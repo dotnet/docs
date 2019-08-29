@@ -26,7 +26,7 @@ You can create a custom numeric format string, which consists of one or more cus
 Custom numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the <xref:System.Int32.ToString%28System.String%29> and <xref:System.Int32.ToString%28System.String%2CSystem.IFormatProvider%29> methods of the <xref:System.Int32> type. Custom numeric format strings are also supported by the .NET [composite formatting feature](../../../docs/standard/base-types/composite-formatting.md), which is used by some `Write` and `WriteLine` methods of the <xref:System.Console> and <xref:System.IO.StreamWriter> classes, the <xref:System.String.Format%2A?displayProperty=nameWithType> method, and the <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> method. [String interpolation](../../csharp/language-reference/tokens/interpolated.md) feature also supports custom numeric format strings.
 
 > [!TIP]
-> You can download the [Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either numeric or date and time values and displays the result string.
+> You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs) and [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb).
 
 <a name="table"></a> The following table describes the custom numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#NotesCustomFormatting) section for additional information about using custom numeric format strings, and the [Example](#example) section for a comprehensive illustration of their use.
 
@@ -287,4 +287,5 @@ The following example demonstrates two custom numeric format strings. In both ca
 - [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
 - [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)
 - [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)
-- [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+- [Sample: .NET Core WinForms Formatting Utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)
+- [Sample: .NET Core WinForms Formatting Utility (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb)

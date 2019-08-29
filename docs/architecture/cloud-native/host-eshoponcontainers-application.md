@@ -24,7 +24,7 @@ You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 3-
 
 Each individual component is installed using a `helm install` command. These commands are easily scripted, and eShopOnContainers provides a "deploy all" script that loops through the different components and installs them using their respective helm charts. The result is a repeatable process, versioned with the application in source control, that anyone on the team can deploy to an AKS cluster with a one-line script command. Especially when combined with Azure Dev Spaces, this makes it easy for developers to diagnose and test their individual changes to their microservice-based cloud-native apps.
 
-## DevSpaces for Kubernetes
+## Azure Dev Spaces
 
 Azure Dev Spaces helps individual developers host their own unique version of AKS clusters in Azure during development. This minimize local machine requirements and allows team members to quickly see how their changes will behave in a real AKS environment. Azure Dev Spaces offers a CLI for developers to use to manage their dev spaces and to deploy to a specific child dev space as needed. Each child dev space is referenced using a unique URL subdomain, allowing side-by-side deployments of modified clusters so that individual developers can avoid conflicting with each other's work in progress.
 

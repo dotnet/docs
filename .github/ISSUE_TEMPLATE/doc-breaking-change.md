@@ -19,15 +19,13 @@ Text in brackets are placeholders; replace the text with the requested informati
 
 ### Version introduced
 
-[Version in which the breaking change first occurred (e.g., 3.0 for .NET Core 3.0)]
+[Version in which the breaking change first occurred (for example, 3.0 for .NET Core 3.0)]
 
-### Change description
+### Old behavior
 
-#### Old behavior
+### New behavior
 
-#### New behavior
-
-#### Reason for change
+### Reason for change
 
 ### Recommended action
 
@@ -40,14 +38,12 @@ Text in brackets are placeholders; replace the text with the requested informati
 
 [Choose a category from one of the following:
 
-- ASP.NET Core
 - C#
 - Core
 - CoreFx
 - Data
 - Debugger
 - Deployment for .NET Core
-- EF Core
 - Globalization
 - interop
 - JIT

@@ -3,7 +3,7 @@ title: Asynchronous programming in C#
 description: An overview of the C# language support for asynchronous programming using async, await, Task, and Task<T>
 ms.date: 03/18/2019
 ---
-# The asynchronous programming with async and await
+# Asynchronous programming with async and await
 
 The Task asynchronous programming model (TAP) provides an abstraction over asynchronous code. You write code as a sequence of statements, just like always. You can read that code as though each statement completes before the next begins. The compiler performs a number of transformations because some of those statements may start work and return a <xref:System.Threading.Tasks.Task> that represents the ongoing work.
 

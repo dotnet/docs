@@ -79,7 +79,7 @@ When users enter data into your application, you may want to verify that the dat
   
 - By calling the <xref:System.Windows.Forms.Form.Close%2A> method programmatically.  
   
- However, in some cases, you might want to let the user close the form regardless of whether the values in the controls are valid. You can override validation and close a form that still contains invalid data by creating a handler for the form's <xref:System.Windows.Forms.Form.Closing> event. In the event, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `false`. This forces the form to close. For more information and an example, see <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType>.  
+ However, in some cases, you might want to let the user close the form regardless of whether the values in the controls are valid. You can override validation and close a form that still contains invalid data by creating a handler for the form's <xref:System.Windows.Forms.Form.Closing> event. In the event, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `false`. This forces the form to close. For more information and an example, see <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType>.  
   
 > [!NOTE]
 > If you force the form to close in this manner, any data in the form's controls that has not already been saved is lost. In addition, modal forms do not validate the contents of controls when they are closed. You can still use control validation to lock focus to a control, but you do not have to be concerned about the behavior associated with closing the form.  

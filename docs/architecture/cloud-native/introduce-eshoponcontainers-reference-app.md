@@ -1,14 +1,16 @@
 ---
 title: Introducing eShopOnContainers reference app
-description: Architecting Cloud Native .NET Apps for Azure | Introducing eShopOnContainers Reference App
+description: Introducing the eShopOnContainers Cloud Native Microservices Reference App for ASP.NET Core and Azure.
 ms.date: 06/30/2019
 ---
 # Introducing eShopOnContainers reference app
 
-Microsoft, in partnership with leading community experts, has produced a full-featured cloud native microservices reference application, eShopOnContainers. This application is built to showcase using .NET Core and Docker, and optionally Azure, Kubernetes, and Visual Studio, to build an online storefront.
+Microsoft, in partnership with leading community experts, has produced a full-featured cloud-native microservices reference application, eShopOnContainers. This application is built to showcase using .NET Core and Docker, and optionally Azure, Kubernetes, and Visual Studio, to build an online storefront.
 
 ![eShopOnContainers Sample App Screenshot.](./media/eshoponcontainers-sample-app-screenshot.png)
 **Figure 3-1**. eShopOnContainers Sample App Screenshot.
+
+Before starting this chapter, we recommend that you download the [eShopOnContainers reference application](https://github.com/dotnet-architecture/eShopOnContainers). If you do so, it should be easier for you to follow along with the information presented.
 
 ## Features and requirements
 
@@ -52,6 +54,12 @@ Because it leverages microservices, the eShopOnContainers app includes quite a f
 ![Projects in Visual Studio solution.](./media/projects-in-visual-studio-solution.png)
 **Figure 3-4**. Projects in Visual Studio solution.
 
+The code is organized to support the different microservices, and within each microservice, the code is broken up into domain logic, infrastructure concerns, and user interface or service endpoint. In many cases, each service's dependencies can be fulfilled by Azure services in production, as well as alternative options for local development. Let's examine how the application's requirements map to Azure services.
+
+## Understanding microservices
+
+This book focuses on cloud native applications built using Azure technology. To learn more about microservices best practices and how to architect microservice-based applications, please read the companion book, [.NET Micrososervices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/learn/aspnet/microservices-architecture). The book is available online or in PDF or eReader formats.
+
 >[!div class="step-by-step"]
->[Previous](implement-app.md)
+>[Previous](other-deployment-options.md)
 >[Next](map-eshoponcontainers-azure-services.md)

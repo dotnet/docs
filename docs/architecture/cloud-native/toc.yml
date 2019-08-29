@@ -21,15 +21,13 @@
       href: deploy-containers-azure.md
     - name: Other Deployment Options
       href: other-deployment-options.md
-  - name: Implementing a Cloud-Native App
-    href: implement-app.md
+  - name: Introducing the eShopOnContainers Reference App
+    href: introduce-eshoponcontainers-reference-app.md
     items:
-    - name: Introducing the eShopOnContainers Reference App
-      href: introduce-eshoponcontainers-reference-app.md
     - name: Mapping eShopOnContainers to Azure Services
       href: map-eshoponcontainers-azure-services.md
-    - name: Hosting the eShopOnContainers Application
-      href: host-eshoponcontainers-application.md
+    - name: Deploying eShopOnContainers to Azure
+      href: deploy-eshoponcontainers-azure.md
     - name: Centralized Configuration
       href: centralized-configuration.md
   - name: Cloud-Native Communication Patterns

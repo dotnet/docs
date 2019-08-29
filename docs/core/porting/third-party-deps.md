@@ -33,7 +33,7 @@ The easiest way to inspect NuGet Package folders is to use the [NuGet Package Ex
 
 Look for a folder with any of the following names:
 
-```
+```console
 netstandard1.0
 netstandard1.1
 netstandard1.2

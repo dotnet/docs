@@ -17,7 +17,7 @@ Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to cre
 makes it easier to manage both the class library and the unit test project.
 Inside the solution directory, create a *MathService* directory. The directory and file structure thus far is shown below:
 
-```
+```console
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService
@@ -37,7 +37,7 @@ to add the class library project to the solution.
 
 Next, create the *MathService.Tests* directory. The following outline shows the directory structure:
 
-```
+```console
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService
@@ -58,7 +58,7 @@ Make the *MathService.Tests* directory the current directory and create a new pr
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added MSTest and the MSTest runner. Now, add the `MathService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```
+```console
 dotnet add reference ../MathService/MathService.fsproj
 ```
 
@@ -66,7 +66,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 You have the following final solution layout:
 
-```
+```console
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService

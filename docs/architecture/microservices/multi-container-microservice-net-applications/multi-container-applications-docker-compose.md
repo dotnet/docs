@@ -401,7 +401,7 @@ Environment variables are created and initialized in different ways, depending o
 
 The following example shows an .env file like the [.env](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/.env) file for the eShopOnContainers application.
 
-```
+```console
 # .env file
 
 ESHOP_EXTERNAL_DNS_NAME_OR_IP=localhost

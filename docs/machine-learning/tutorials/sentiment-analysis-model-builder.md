@@ -1,7 +1,7 @@
 ---
-title: 'Tutorial: Analyze website comments - binary classification'
+title: 'Tutorial: Analyze sentiment - binary classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses Model Builder in Visual Studio.
-ms.date: 08/28/2019
+ms.date: 08/29/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
@@ -9,7 +9,7 @@ ms.custom: mvc
 #Customer intent: As a developer, I want to use Model Builder to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
 ---
 
-# Tutorial: Analyze website comments in a web application
+# Tutorial: Analyze sentiment of website comments in a web application using ML.NET Model Builder
 
 Learn how to analyze sentiment from comments in real-time inside a web application.
 
@@ -46,15 +46,6 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
     - The **Create a directory for solution** checkbox should be checked by default. If that's not the case, check it. 
     - Select the **OK** button.
     - Choose **Web Application** in the window that displays the different types of ASP.NET Core Projects, and then select the **OK** button.
-
-1. Install the *Microsoft.Extensions.ML* NuGet package:
-
-    - In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. 
-    - Choose "nuget.org" as the Package source. 
-    - Select the **Browse** tab and search for **Microsoft.Extensions.ML**. 
-    - Select the package in the list, and select the **Install** button. 
-    - Select the **OK** button on the **Preview Changes** dialog
-    - Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. 
 
 ## Prepare and understand the data
 
@@ -155,6 +146,15 @@ To make a single prediction, use [`PredictionEngine`](xref:Microsoft.ML.Predicti
 
 > [!WARNING]
 > [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. For improved performance and thread safety, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of `PredictionEngine` objects for application use. Read the following blog post to learn more about [creating and using `PredictionEngine` object pools in ASP.NET Core](https://devblogs.microsoft.com/cesardelatorre/how-to-optimize-and-run-ml-net-models-on-scalable-asp-net-core-webapis-or-web-apps/). 
+
+1. Install the *Microsoft.Extensions.ML* NuGet package:
+
+    - In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. 
+    - Choose "nuget.org" as the Package source. 
+    - Select the **Browse** tab and search for **Microsoft.Extensions.ML**. 
+    - Select the package in the list, and select the **Install** button. 
+    - Select the **OK** button on the **Preview Changes** dialog
+    - Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. 
 
 1. Open the *Startup.cs* file in the *SentimentRazor* project.
 1. Add the following using statements to reference the *Microsoft.Extensions.ML* NuGet package and *SentimentRazorML.Model* project:

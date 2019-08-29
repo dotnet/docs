@@ -17,7 +17,7 @@ Compiler and language provider settings specify compiler configuration elements 
   
 The .NET Framework defines the initial compiler settings in the machine configuration file (Machine.config). Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider> implementation. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.  
   
-[**\<configuration>**](../configuration-element.md)   
+[**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<compilers>**](compilers-element.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<compiler>**](compiler-element.md)  

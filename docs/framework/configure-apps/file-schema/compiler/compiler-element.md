@@ -15,7 +15,7 @@ ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
 
 Specifies the compiler configuration attributes for a language provider.
 
-[**\<configuration>**](../configuration-element.md)   
+[**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<compilers>**](compilers-element.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<compiler>**  

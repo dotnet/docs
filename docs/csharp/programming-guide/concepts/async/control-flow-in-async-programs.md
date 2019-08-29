@@ -7,7 +7,7 @@ ms.assetid: fc92b08b-fe1d-4d07-84ab-5192fafe06bb
 
 You can write and maintain asynchronous programs more easily by using the `async` and `await` keywords. However, the results might surprise you if you don't understand how your program operates. This topic traces the flow of control through a simple async program to show you when control moves from one method to another and what information is transferred each time.
 
-In general, you mark methods that contain asynchronous code with the [async (C#)](../../../language-reference/keywords/async.md) modifier. In a method that's marked with an async modifier, you can use an [await (C#)](../../../language-reference/keywords/await.md) operator to specify where the method pauses to wait for a called asynchronous process to complete. For more information, see [Asynchronous Programming with async and await (C#)](./index.md).
+In general, you mark methods that contain asynchronous code with the [async (C#)](../../../language-reference/keywords/async.md) modifier. In a method that's marked with an async modifier, you can use an [await (C#)](../../../language-reference/operators/await.md) operator to specify where the method pauses to wait for a called asynchronous process to complete. For more information, see [Asynchronous Programming with async and await (C#)](./index.md).
 
 The following example uses async methods to download the contents of a specified website as a string and to display the length of the string. The example contains the following two methods.
 

@@ -12,11 +12,11 @@ ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
 # \<providerOption> Element
 Specifies the compiler version attributes for a language provider.  
   
- \<configuration Element>  
-\<system.codedom Element>  
-\<compilers Element>  
-\<compiler> Element  
-\<providerOption> Element  
+[**\<configuration>**](../configuration-element.md)   
+&nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<compilers>**](compilers-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<compiler>**](compiler-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<providerOption>  
   
 ## Syntax  
   

@@ -13,15 +13,15 @@ To deploy to [Azure App Service for Containers](https://azure.microsoft.com/serv
 
 ## Azure Container Instances
 
-To deploy to [Azure Container Instances (ACI)](https://docs.microsoft.com/azure/container-instances/), you need to have configured an Azure Container Registry (ACR) and credentials for accessing it. You must also have previously pushed your container image to the registry, so it's available to pull into ACI. You can work with ACI using the Azure CLI or through the portal. Azure Container Registries make it easy to deploy individual container instances to ACI directly from within the registry, as shown in Figure 2-17.
+To deploy to [Azure Container Instances (ACI)](https://docs.microsoft.com/azure/container-instances/), you need to have configured an Azure Container Registry (ACR) and credentials for accessing it. You must also have previously pushed your container image to the registry, so it's available to pull into ACI. You can work with ACI using the Azure CLI or through the portal. Azure Container Registries make it easy to deploy individual container instances to ACI directly from within the registry, as shown in Figure 3-17.
 
 ![Azure Container Registry Run Instance](./media/acr-runinstance-contextmenu.png)
-**Figure 2-17**. Azure Container Registry Run Instance
+**Figure 3-17**. Azure Container Registry Run Instance
 
-Creating a container instance from the registry just requires specifying the usual Azure settings (name, subscription, resource group, and location) as well as how much memory to allocate to the container and which port it should listen on. Figure 2-18 shows the Azure Portal form used to create the new instance.
+Creating a container instance from the registry just requires specifying the usual Azure settings (name, subscription, resource group, and location) as well as how much memory to allocate to the container and which port it should listen on. Figure 3-18 shows the Azure Portal form used to create the new instance.
 
 ![ACR Run Instance Create container instance](./media/acr-create-deeplink.png) \
-**Figure 2-18**. ACR Run Instance Create container instance
+**Figure 3-18**. ACR Run Instance Create container instance
 
 Once the deployment completes, you can find the newly deployed container's IP address and communicate with it over the port you specified.
 
@@ -34,4 +34,4 @@ Azure Container Instances offers the fastest, simplest way to run a container in
 
 >[!div class="step-by-step"]
 >[Previous](deploy-containers-azure.md)
->[Next](introduce-eshoponcontainers-reference-app.md) <!-- Next Chapter -->
+>[Next](communication-patterns.md) <!-- Next Chapter -->

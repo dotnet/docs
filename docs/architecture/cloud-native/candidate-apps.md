@@ -85,4 +85,4 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 >[!div class="step-by-step"]
 >[Previous](definition.md)
->[Next](scale-applications.md) <!-- Next Chapter -->
+>[Next](introduce-eshoponcontainers-reference-app.md) <!-- Next Chapter -->

@@ -61,5 +61,5 @@ The code is organized to support the different microservices, and within each mi
 This book focuses on cloud native applications built using Azure technology. To learn more about microservices best practices and how to architect microservice-based applications, please read the companion book, [.NET Micrososervices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/learn/aspnet/microservices-architecture). The book is available online or in PDF or eReader formats.
 
 >[!div class="step-by-step"]
->[Previous](other-deployment-options.md)
+>[Previous](candidate-apps.md)
 >[Next](map-eshoponcontainers-azure-services.md)

@@ -39,5 +39,5 @@ While such an approach enables each microservice to evolve, deploy, and scale in
 In this module, we'll first address communication between front-end applications and back-end microservices and then to microservice-to-microservice communication.
 
 >[!div class="step-by-step"]
->[Previous](centralized-configuration.md)
+>[Previous](other-deployment-options.md)
 >[Next](front-end-communication.md)

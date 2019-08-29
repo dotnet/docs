@@ -34,4 +34,4 @@ Azure Container Instances offers the fastest, simplest way to run a container in
 
 >[!div class="step-by-step"]
 >[Previous](deploy-containers-azure.md)
->[Next](introduce-eshoponcontainers-reference-app.md) <!-- Next Chapter -->
+>[Next](communication-patterns.md) <!-- Next Chapter -->

@@ -16,18 +16,18 @@ Constraints inform the compiler about the capabilities a type argument must have
 |----------------|-----------------|
 |`where T : struct`|The type argument must be a value type. Any value type except <xref:System.Nullable%601> can be specified. For more information about nullable types, see [Nullable types](../nullable-types/index.md).|
 |`where T : class`|The type argument must be a reference type. This constraint applies also to any class, interface, delegate, or array type.|
-|`where T : notnull`|The type argument must be a non-nullable type. This can be a non-nullable reference type in C# 8.0 or later, or not nullable value type. This constraint applies also to any class, interface, delegate, or array type.|
+|`where T : notnull`|The type argument must be a non-nullable type. The argument can be a non-nullable reference type in C# 8.0 or later, or not nullable value type. This constraint applies also to any class, interface, delegate, or array type.|
 |`where T : unmanaged`|The type argument must be an [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md).|
 |`where T : new()`|The type argument must have a public parameterless constructor. When used together with other constraints, the `new()` constraint must be specified last.|
 |`where T :` *\<base class name>*|The type argument must be or derive from the specified base class.|
 |`where T :` *\<interface name>*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic.|
 |`where T : U`|The type argument supplied for T must be or derive from the argument supplied for U.|
 
-Some of the constraints are mutually exclusive. All value types must have an accessible parameterless constructor. The `struct` constraint implies the `new()` constraint and the `new()` constraint cannot be combined with the `struct` constraint. The `unmanaged` constraint implies the `struct` constraint. The `unmanaged` constraint cannot be combined with either the `struct` or `new()` constraints.
+Some of the constraints are mutually exclusive. All value types must have an accessible parameterless constructor. The `struct` constraint implies the `new()` constraint and the `new()` constraint can't be combined with the `struct` constraint. The `unmanaged` constraint implies the `struct` constraint. The `unmanaged` constraint can't be combined with either the `struct` or `new()` constraints.
 
 ## Why use constraints
 
-By constraining the type parameter, you increase the number of allowable operations and method calls to those supported by the constraining type and all types in its inheritance hierarchy. When you design generic classes or methods, if you will be performing any operation on the generic members beyond simple assignment or calling any methods not supported by <xref:System.Object?displayProperty=nameWithType>, you will have to apply constraints to the type parameter. For example, the base class constraint tells the compiler that only objects of this type or derived from this type will be used as type arguments. Once the compiler has this guarantee, it can allow methods of that type to be called in the generic class. The following code example demonstrates the functionality you can add to the `GenericList<T>` class (in [Introduction to Generics](introduction-to-generics.md)) by applying a base class constraint.
+By constraining the type parameter, you increase the number of allowable operations and method calls to those supported by the constraining type and all types in its inheritance hierarchy. When you design generic classes or methods, if you'll be performing any operation on the generic members beyond simple assignment or calling any methods not supported by <xref:System.Object?displayProperty=nameWithType>, you'll have to apply constraints to the type parameter. For example, the base class constraint tells the compiler that only objects of this type or derived from this type will be used as type arguments. Once the compiler has this guarantee, it can allow methods of that type to be called in the generic class. The following code example demonstrates the functionality you can add to the `GenericList<T>` class (in [Introduction to Generics](introduction-to-generics.md)) by applying a base class constraint.
 
 [!code-csharp[using the class and struct constraints](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#9)]
 
@@ -53,7 +53,7 @@ You can apply constraints to multiple parameters, and multiple constraints to a 
 
  Type parameters that have no constraints, such as T in public class `SampleClass<T>{}`, are called unbounded type parameters. Unbounded type parameters have the following rules:
 
-- The `!=` and `==` operators cannot be used because there is no guarantee that the concrete type argument will support these operators.
+- The `!=` and `==` operators can't be used because there's no guarantee that the concrete type argument will support these operators.
 - They can be converted to and from `System.Object` or explicitly converted to any interface type.
 - You can compare them to [null](../../language-reference/keywords/null.md). If an unbounded parameter is compared to `null`, the comparison will always return false if the type argument is a value type.
 
@@ -73,9 +73,9 @@ The usefulness of type parameters as constraints with generic classes is limited
 
 ## NotNull constraint
 
-Beginning with C# 8.0, you can use the `notnull` constraint to specify that the type parameter must be a non-nullable value type or non-nullable reference type. The `notnull` constraint can only be used in a `nullable enable` context. The compiler generates a warning if you add the `notnull` constraint in a nullable oblivious context. 
+Beginning with C# 8.0, you can use the `notnull` constraint to specify that the type argument must be a non-nullable value type or non-nullable reference type. The `notnull` constraint can only be used in a `nullable enable` context. The compiler generates a warning if you add the `notnull` constraint in a nullable oblivious context. 
 
-Unlike other constraints, when a type parameter violates the `notnull` constraint, the compiler generates a warning when that code is compiled in a `nullable enable` context. If the code is compiled in a nullable oblivious context, the compiler does not generate any warnings or errors.
+Unlike other constraints, when a type argument violates the `notnull` constraint, the compiler generates a warning when that code is compiled in a `nullable enable` context. If the code is compiled in a nullable oblivious context, the compiler doesn't generate any warnings or errors.
 
 ## Unmanaged constraint
 
@@ -87,7 +87,7 @@ The preceding method must be compiled in an `unsafe` context because it uses the
 
 ## Delegate constraints
 
-Also beginning with C# 7.3, you can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.MulticastDelegate?displayProperty=nameWithType> as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. The `System.Delegate` constraint enables you to write code that works with delegates in a type-safe manner. The following code defines an extension method that combines two delegates provided they are the same type:
+Also beginning with C# 7.3, you can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.MulticastDelegate?displayProperty=nameWithType> as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. The `System.Delegate` constraint enables you to write code that works with delegates in a type-safe manner. The following code defines an extension method that combines two delegates provided they're the same type:
 
 [!code-csharp[using the delegate constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#16)]
 
@@ -95,7 +95,7 @@ You can use the above method to combine delegates that are the same type:
 
 [!code-csharp[using the unmanaged constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#17)]
 
-If you uncomment the last line, it won't compile. Both `first` and `test` are delegate types, but they are different delegate types.
+If you uncomment the last line, it won't compile. Both `first` and `test` are delegate types, but they're different delegate types.
 
 ## Enum constraints
 

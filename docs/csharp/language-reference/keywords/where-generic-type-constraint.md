@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # where (generic type constraint) (C# Reference)
 
-The `where` clause in a generic definition specifies constraints on the types that are used as arguments for type parameters in a generic type, method, delegate, or local function. Constraints can specify interfaces, base classes, or require a generic type to be a reference, value or unmanaged type. They declare capabilities that the type argument must possess.
+The `where` clause in a generic definition specifies constraints on the types that are used as arguments for type parameters in a generic type, method, delegate, or local function. Constraints can specify interfaces, base classes, or require a generic type to be a reference, value, or unmanaged type. They declare capabilities that the type argument must possess.
 
 For example, you can declare a generic class, `MyGenericClass`, such that the type parameter `T` implements the <xref:System.IComparable%601> interface:
 
@@ -28,12 +28,12 @@ The `where` clause can specify that the type is a `class` or a `struct`. The `st
 
 [!code-csharp[using the class and struct constraints](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#3)]
 
-The `where` clause may include the `notnull` constraint. The `notnull` constraint limits the type parameter to non-nullable types. That type may be a [value type](struct.md) or a non-nullable reference type. The `notnull` constraint is available starting in C# 8.0 for code compiled in a `nullable enable` context. Unlike other constraints, if a type parameter violates the `notnull` constraint, the compiler generates a warning instead of an error. Warnings are only generated in a `nullable enable` context. 
+The `where` clause may include the `notnull` constraint. The `notnull` constraint limits the type parameter to non-nullable types. That type may be a [value type](struct.md) or a non-nullable reference type. The `notnull` constraint is available starting in C# 8.0 for code compiled in a `nullable enable` context. Unlike other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error. Warnings are only generated in a `nullable enable` context. 
 
 > [!IMPORTANT]
 > Generic declarations that include the `notnull` constraint can be used in a nullable oblivious context, but compiler does not enforce the constraint.
 
-[!code-csharp[using the nonnull constraing](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#NotNull)]
+[!code-csharp[using the nonnull constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#NotNull)]
 
 The `where` clause may also include an `unmanaged` constraint. The `unmanaged` constraint limits the type parameter to types known as [unmanaged types](../builtin-types/unmanaged-types.md). The `unmanaged` constraint makes it easier to write low-level interop code in C#. This constraint enables reusable routines across all unmanaged types. The `unmanaged` constraint can't be combined with the `class` or `struct` constraint. The `unmanaged` constraint enforces that the type must be a `struct`:
 

@@ -100,7 +100,7 @@ The time required for the model to train is proportionate to the amount of data.
 500 - 1 Gb    | Numeric and Text   | 60 min
 1 Gb+         | Numeric and Text   | 3 hour+
 
-1. Although the training data file is less than 10 MB, use 30 seconds as the value for **Time to train (seconds)**. Training for a longer period of time allows model builder to explore a larger number of algorithms and combination of parameters in search of the best model.
+1. Although the training data file is less than 10 MB, use 30 seconds as the value for **Time to train (seconds)**. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
 1. Select **Start Training**.
 
     Throughout the training process, progress data is displayed in the `Progress` section of the train step.

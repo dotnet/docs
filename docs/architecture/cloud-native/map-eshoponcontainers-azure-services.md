@@ -32,7 +32,9 @@ The Azure portal is where you define the API schema and package different APIs i
 
 The developer portal serves as the main resource for developers. It provides developers with API documentation, an interactive test console, and reports on their own usage. Developers also use the portal to create and manage their own accounts, including subscription and API key support.
 
-Using APIM, the eShopOnContainers application exposes several different products of services, each providing a backend for a particular front end client.
+Using APIM, applications can expose several different groups of services, each providing a backend for a particular front end client. APIM is recommended for complex scenarios. For simpler needs, the lightweight API Gateway Ocelot can be used. The eShopOnContainers app uses Ocelot because of its simplicity and because it can be deployed into the same application environment as the application itself. [Learn more about eShopOnContainers, APIM, and Ocelot.](https://docs.microsoft.com/dotnet/architecture/microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern#azure-api-management)
+
+Another option if your application is using AKS is to deploy the Azure Gateway Ingress Controller as a pod within your AKS cluster. This allows your cluster to integrate with an Azure Application Gateway, allowing the gateway to load-balance traffic to the AKS pods. [Learn more about the Azure Gateway Ingress Controller for AKS](https://github.com/Azure/application-gateway-kubernetes-ingress).
 
 ## Data
 

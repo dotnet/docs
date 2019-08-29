@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
 ---
 # Globalization for WPF
-This topic introduces issues that you should be aware of when writing [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications for the global market. The globalization programming elements are defined in Microsoft .NET in `System.Globalization`.
+This topic introduces issues that you should be aware of when writing [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications for the global market. The globalization programming elements are defined in .NET in the <xref:System.Globalization> namespace.
 
 <a name="xaml_globalization"></a>
 ## XAML Globalization

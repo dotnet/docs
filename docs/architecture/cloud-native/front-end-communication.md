@@ -76,9 +76,9 @@ For moderate to large-scale cloud-native systems, you may consider [Azure API Ma
 ![Azure API Management](./media/azure-api-management.png)
 **Figure 4-5**. Azure API Management
 
-To start, API Management exposes a gateway server that allows controlled access to back-end services based upon configurable rules and policies. 
+To start, API Management exposes a gateway server that allows controlled access to back-end services based upon configurable rules and policies. Your microservices are completely abstracted from front-end clients. API keys and JWT tokens determine who can do what. All traffic is logged for analytical purposes. 
 
-For developers, API Management offers a developer portal that provides access to services, documentation, and sample code for invoking them. Developers can use Swagger/Open API to inspect service endpoints and log and track issues. API Management works across any development platform (.NET, Java, Golang, and so on). 
+For developers, API Management offers a developer portal that provides access to services, documentation, and sample code for invoking them. Developers can use Swagger/Open API to inspect service endpoints and analyze their usage. the service works across the major development platforms: .NET, Java, Golang, and more. 
 
 The publisher portal exposes a management dashboard where administrators expose APIs and manage their behavior. Service access can be granted, service health monitored, and service telemetry gathered. Administrators apply *policies* to each endpoint to affect behavior. [Policies](https://docs.microsoft.com/azure/api-management/api-management-howto-policies) are pre-built statements that execute sequentially for service each call.  Policies are configured for an inbound call, outbound call, or invoked upon an error. Policies can be applied at different service scopes as to enable deterministic ordering when combining policies. The product ships with a large number of prebuilt [policies](https://docs.microsoft.com/azure/api-management/api-management-policies). 
 

@@ -4,6 +4,35 @@ description: Architecting Cloud Native .NET Apps for Azure | Cross-Service Commu
 ms.date: 06/30/2019
 ---
 
+
+
+
+
+
+
+>> Stuff to do:
+>> 1 - CNCF gateways
+>> 2 - B/E service traffic through GW???
+>> 3 - LB on APIM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Cross-service communication
 
 Moving from the front-end client, we now address communication across the backend core microservices, or microservice-to-microservice communication.
@@ -133,25 +162,25 @@ In the previous figure, note the point-to-point relationship. Two instances of t
 
 ## Events
 
-Message queuing is an effective way to implement command communication where a producer can asynchronously send a consumer a message. However, what happens when many different consumers are interested in the same message? A dedicated message queue for each consumer wouldn't scale well and could get expensive. 
+Message queuing is an effective way to implement communication where a producer can asynchronously send a consumer a message. However, what happens when *many different consumers* are interested in the same message? A dedicated message queue for each consumer wouldn't scale well and could get expensive. 
 
-The third type of communication interaction is an *event*. When an action occurs, one microservice may announce the event. Other microservices, if interested, can react to the event accordingly. 
+To address this scenairo, we move to the third type of message interaction, the *event*. One microservice announces that an action had occured. Other microservices, if interested, can react to the event accordingly. 
 
-Eventing is a two-step process. For a given state change, a microservice raises an event, publishes it to a message broker, and makes it available to any interested microservice. An interested microservcie can ask to be notified by subscribing to the event in the message broker. You use the [Publish/Subscribe](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber) pattern to implement [event-based communication](https://docs.microsoft.com/dotnet/standard/microservices-architecture/multi-container-microservice-net-applications/integration-event-based-microservice-communications).
+Eventing is a two-step process. For a given state change, a microservice raises an event, publishes it to a message broker, making it available to any interested microservice. An interested microservcie is notified by subscribing to the event in the message broker. You use the [Publish/Subscribe](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber) pattern to implement [event-based communication](https://docs.microsoft.com/dotnet/standard/microservices-architecture/multi-container-microservice-net-applications/integration-event-based-microservice-communications).
 
-Figure 4-16 shows Microservice \#1 publishing an event to an *EventBus*, with Microservices \#2 and \#3 subscribing to and receiving the event.
+Figure 4-16 shows Microservice \#1 publishing an event with Microservices \#2 and \#3 subscribing to and acting upon the event.
 
 ![Event-Driven messaging](./media/event-driven-messaging.png)
 **Figure 4-16**. Event-Driven messaging
 
-The *event bus* is a generic component used to encapsulate the message broker and decouple it from the underlying application. In the above figure, microservices \#2 and \#3 independently receive and operate on an event with no knowledge of each other, nor of Microservice \#1. They  wait for a registered event to be published to the event bus and then act upon it.
+In the previous figure, note the *event bus* component that sits in the middle of the communication channel. It is a custom class that encapsulates the message broker and  decouples it from the underlying application. In the above figure, microservices \#2 and \#3 independently receive and operate on an event with no knowledge of each other, nor of Microservice \#1. They  wait for a registered event to be published to the event bus and then act upon it.
 
 With eventing, we move from queuing technology to *topics*. A [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) is similar to a queue, but supports a one-to-many messaging pattern where a multiple subscribers choose to receive a message that is sent by a publisher. Figure 4-17 shows a topic architecture.
 
 ![Topic architecture](./media/top-architecture.png)
 **Figure 4-17**. Topic architecture
 
-Note how publishers send messages to the topic. But messages aren't received directly from the topic. Instead, the topic is responsible for forwarding messages to the subscriptions for each registered subscriber. Each subscriber then receives messages from its corresponding subscription. Think of each subscription as a standalone queue. An important component at work is the *Rule (dark blue boxes)*. It acts as a filter determining the messages that are forwarded to a specific subscription, enabling a subscription to listen only for messages that are important to it. In the previous figure, if an "OrderCreated" event is published, the topic would send it to Subscription \#1 and Subscription \#3, but not to Subscription \#2 as the message isn't a "QuoteSent".
+Note the topic plubming in the previous figure. Publishers send messages to the topic. Subscribers, on the other end, receive messages from subscripptions. Think of each subscription as a standalone queue. In the middle, the topic forwards messages to the subscriptions based on a set of *rules*, shown in dark blue boxes. Rules act as a filter that determine the messages that are forwarded to a specific subscription, enabling a subscription to listen only for messages that are important to it. In the previous figure, if an "OrderCreated" event is published, the topic would send it to Subscription \#1 and Subscription \#3, but not to Subscription \#2 as the message isn't a "QuoteSent".
 
 The Azure cloud supports two different topic services: Azure Service Bus Topics and Azure EventGrid.
 
@@ -159,9 +188,9 @@ The Azure cloud supports two different topic services: Azure Service Bus Topics 
 
 Sitting on top of the same robust brokered message model of Azure Service Bus queues are [Azure Service Bus Topics](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). A topic can receive messages from multiple independent publishers and can send messages to up to 2,000 subscribers. As well, subscriptions can be dynamically added or removed at runtime without stopping the system or recreating the topic.
 
-Many of the advanced features from Azure Service Bus that we saw for queues are also available for topics, including [Duplicate Detection](https://docs.microsoft.com/azure/service-bus-messaging/duplicate-detection), [Transaction support](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions), and [Partitioning](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning). [Scheduled Message Delivery](https://docs.microsoft.com/azure/service-bus-messaging/message-sequencing) is a feature where a message is tagged with a specific time for processing and won't appear in the topic before then. Finally, [Message Deferral](https://docs.microsoft.com/azure/service-bus-messaging/message-deferral) is an option where you can defer retrieval of a message to a later time. Typically used in workflow processing scenarios where operations are processed in a particular order, you can postpone processing of received messages until prior work has been completed.
+Many of the advanced features that we saw for Azure Service Bus queues are also available for topics, including [Duplicate Detection](https://docs.microsoft.com/azure/service-bus-messaging/duplicate-detection), [Transaction support](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions), and [Partitioning](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning). [Scheduled Message Delivery](https://docs.microsoft.com/azure/service-bus-messaging/message-sequencing) is a feature where a message is tagged with a specific time for processing and won't appear in the topic before then. Finally, [Message Deferral](https://docs.microsoft.com/azure/service-bus-messaging/message-deferral) is an option where you can defer retrieval of a message to a later time. Typically used in workflow processing scenarios where operations are processed in a particular order, you can postpone processing of received messages until prior work has been completed.
 
-A conventional Service Bus topic (or queue) is handled by a single message broker and stored in a single messaging store. However, [Service Bus Partitioning](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning) enables topics and queues to be partitioned across multiple message  brokers and message stores. Partitioning means that the overall throughput of a partitioned entity is no longer limited by the performance of a single message broker or messaging store. In addition, a temporary outage of a messaging store doesn't render a partitioned queue or topic unavailable. Partitioned queues and topics can contain all advanced Service Bus features, such as support for transactions and sessions.
+A conventional Service Bus topic is handled by a single message broker and stored in a single message store. However, [Service Bus Partitioning](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning) enables a topic to be spread across many message brokers and message stores. With this feature enabled, the overall throughput of the topic increases as it is no longer limited by the performance of a single message broker or messaging store. In addition, a temporary outage of a messaging store doesn't render a partitioned queue or topic unavailable. Partitioned queues and topics can contain all advanced Service Bus features, such as support for transactions and sessions.
 
 ### Azure Event Grid
 
@@ -169,38 +198,30 @@ While Azure Service Bus is a battle-tested messaging broker, supporting both tra
 
 At first glance, Event Grid may look like just another topic-based messaging system. However, it's different in many ways. Focused on event-driven workloads, it enables real-time event processing, deep Azure integration, and an open-platform - all on serverless infrastructure. It's designed for contemporary cloud native and serverless applications
 
-As a centralized *eventing backplane*, or pipe, Event Grid lets you react to events originating inside Azure resources as well as those events from your own services and applications.
+As a centralized *eventing backplane*, or pipe, Event Grid lets you react to events originating inside Azure resources as well as events from your own services and applications.
 
 Event notifications are published to an Event Grid Topic, which, in turn, routes each event to a Subscription. Subscribers map to subscriptions and consume the events. Similar to Service Bus, Event Grid supports a *filtered subscriber model* wherein a Subscription can set rules as to what events it wishes to receive. Event Grid provides fast throughput with a guarantee of 10 million events per second enabling near real-time delivery - far more than what Azure Service Bus can generate.
 
 One of the sweet spots for Event Grid is its deep integration into the fabric of Azure infrastructure. An Azure resource, such as Cosmos DB, can directly publish built-in events to other interested Azure resources without the need for custom code. Event Grid can publish events from Azure resources at the Subscription, Resource Group, or Service levels allowing developers to gain fine-grained control over the lifecycle of cloud resources. However, Event Grid isn't limited to Azure. It's an open platform that can consume custom HTTP events published from applications or third-party services and route events to external subscribers.
 
-When publishing and subscribing to native events from Azure resources, no coding is required. With simple configuration, you can integrate events from one Azure resource to another leveraging built-in Topics and Subscriptions as plumbing. Figure 4-18 shows the anatomy of Event Grid.
+When publishing and subscribing to native events from Azure resources, no coding is required. With simple configuration, you can integrate events from one Azure resource to another leveraging built-in plumbing for Topics and Subscriptions. Figure 4-18 shows the anatomy of Event Grid.
 
 ![Event Grid anatomy](./media/event-grid-anatomy.png)
 **Figure 4-18**. Event Grid anatomy
 
 A major difference between EventGrid and Service Bus is the underlying *message exchange pattern*.
 
-Service Bus implements an older style *pull model* in which the downstream subscriber actively polls the topic subscription for new messages. On the upside, this approach gives the subscriber full control of the pace at which it processes messages as it controls when and how many messages it wants to process at any given time. Unread messages remain in the subscription until processed. A significant shortcoming of this approach is the latency between the time the event is generated and the polling operation that pulls that message to the subscriber for processing. Also, the overhead of constant polling for the next event needlessly consumes resources and money.
+Service Bus implements an older style *pull model* in which the downstream subscriber actively polls the topic subscription for new messages. On the upside, this approach gives the subscriber full control of the pace at which it processes messages. It controls when and how many messages to process at any given time. Unread messages remain in the subscription until processed. A significant shortcoming of this approach is the latency between the time the event is generated and the polling operation that pulls that message to the subscriber for processing. Also, the overhead of constant polling for the next event needlessly consumes resources and money.
 
-EventGrid, however, is different. It implements a *push model* in which events are sent to the EventHandlers as received, giving you near real-time event delivery. It also reduces cost as code is triggered only when it's needed to consume an event – not continually as with polling. That said, an event handler must be able to handle the incoming load and provide throttling mechanisms to protect itself from becoming overwhelmed. Many Azure services that consume these events, such as Azure Functions, Logic Apps, and so on, support automatic autoscaling capabilities that can handle the required processing capacity.  Most interestingly, Event Grid is a fully managed serverless cloud service. It dynamically scales based on your traffic and charges you only for your actual usage, not pre-purchased capacity. The first 100,000 operations per month are free – operations being defined as event ingress (incoming event notifications), subscription delivery attempts, management calls, and filtering by subject. With 99.99% availability, EventGrid guarantees the delivery of an event within a 24-hour period, with built-in retry functionality for unsuccessful delivery. Undelivered messages can be moved to a "dead-letter" queue for resolution.  Unlike Azure Service Bus, Event Grid is tuned for fast performance and doesn't support features like ordered messaging, transactions, and sessions.
+EventGrid, however, is different. It implements a *push model* in which events are sent to the EventHandlers as received, giving you near real-time event delivery. It also reduces cost as code is triggered only when it's needed to consume an event – not continually as with polling. That said, an event handler must be able to handle the incoming load and provide throttling mechanisms to protect itself from becoming overwhelmed. Many Azure services that consume these events, such as Azure Functions, Logic Apps, and so on, support automatic autoscaling capabilities that can handle the required processing capacity.  
 
-
-
-
+Event Grid is a fully managed serverless cloud service. It dynamically scales based on your traffic and charges you only for your actual usage, not pre-purchased capacity. The first 100,000 operations per month are free – operations being defined as event ingress (incoming event notifications), subscription delivery attempts, management calls, and filtering by subject. With 99.99% availability, EventGrid guarantees the delivery of an event within a 24-hour period, with built-in retry functionality for unsuccessful delivery. Undelivered messages can be moved to a "dead-letter" queue for resolution.  Unlike Azure Service Bus, Event Grid is tuned for fast performance and doesn't support features like ordered messaging, transactions, and sessions.
 
 ### Streaming messages in the Azure cloud
 
+Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events (that is, a new document has been inserted into the underlying Cosmos DB). But, what is the best way to process a *stream of related events*? [Event streams](https://msdn.microsoft.com/magazine/dn904671.aspx?f=255&MSPPError=-2147217396) are more complex as they're typically time-ordered, interrelated and must be processed as a group.
 
-
-
-
-### Azure Event Hubs
-
-While Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events (that is, a new document has been inserted into the underlying Cosmos DB), what is the best way to process a *stream of related events*? [Event streams](https://msdn.microsoft.com/magazine/dn904671.aspx?f=255&MSPPError=-2147217396) are more complex as they're typically time-ordered, interrelated and must be processed as a group.
-
-Azure Event Hub is a data streaming platform and event ingestion service that collects, transforms, and stores events. Fine-tuned to capture streaming data, such as continuous event notifications emitted from a telemetry context, it's highly scalable and can store and [process millions of events per second](https://docs.microsoft.com/azure/event-hubs/event-hubs-about). It typically plays the role of the front door for an event pipeline, decoupling the ingest of the event stream from the consumption of those events, shown in Figure 4-19.
+[Azure Event Hub](https://azure.microsoft.com/services/event-hubs/) is a data streaming platform and event ingestion service that collects, transforms, and stores events. Fine-tuned to capture streaming data, such as continuous event notifications emitted from a telemetry context, it's highly scalable and can store and [process millions of events per second](https://docs.microsoft.com/azure/event-hubs/event-hubs-about). It typically plays the role of the front door for an event pipeline, decoupling the ingest of the event stream from the consumption of those events, shown in Figure 4-19.
 
 ![Azure Event Hub](./media/azure-event-hub.png)
 
@@ -218,7 +239,7 @@ Event Hubs implement message streaming through a [partitioned consumer model](ht
 
 Instead of reading from the same resource, each consumer group reads across a subset, or partition, of the message stream. 
 
-For applications that must stream numbers of events, Azure Event Hub can be a robust and affordable solution.
+For cloud-native applications that must stream large numbers of events, Azure Event Hub can be a robust and affordable solution.
 
 ## Summary
 

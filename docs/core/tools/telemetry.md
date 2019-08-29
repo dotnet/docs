@@ -13,7 +13,7 @@ The collected data is anonymous and published in aggregate under the [Creative C
 
 ## Scope
 
-`dotnet` has two functionalities: to run apps or execute the CLI commands. Telemetry *isn't collected* when using `dotnet` to start an application in the following format:
+`dotnet` has two functions: to run apps, and to execute CLI commands. Telemetry *isn't collected* when using `dotnet` to start an application in the following format:
 
 - `dotnet [path-to-app].dll`
 
@@ -57,10 +57,10 @@ The telemetry feature collects the following data:
 | All          | Operating system and version. |
 | All          | Runtime ID (RID) the SDK is running on. |
 | All          | .NET Core SDK version. |
-| All          | Telemetry profile - optional value only used with explicit user opt-in and used internally at Microsoft. |
-| >=2.0        | Command arguments and options: several arguments and options are collected (not arbitrary strings) see [collected options](#collected-options). Hashed after 2.1.300. |
+| All          | Telemetry profile: an optional value only used with explicit user opt-in and used internally at Microsoft. |
+| >=2.0        | Command arguments and options: several arguments and options are collected (not arbitrary strings). See [collected options](#collected-options). Hashed after 2.1.300. |
 | >=2.0         | Whether the SDK is running in a container. |
-| >=2.0         | Target frameworks (from the `TargetFramework` event) hashed starting in 2.1. |
+| >=2.0         | Target frameworks (from the `TargetFramework` event), hashed starting in 2.1. |
 | >=2.0         | Hashed Media Access Control (MAC) address: a cryptographically (SHA256) anonymous and unique ID for a machine. |
 | >=2.0         | Hashed current working directory. |
 | >=2.0         | Install success report, with hashed installer exe filename. |
@@ -83,7 +83,7 @@ Certain commands send additional data. A subset of commands sends the first argu
 | `dotnet sln <arg>`    | The word `add`, `list`, or `remove`.    |
 | `dotnet nuget <arg>`  | The word `delete`, `locals`, or `push`. |
 
-A subset of commands sends selected options if they're used and their values:
+A subset of commands sends selected options if they're used, along with their values:
 
 | Option                  | Commands                                                                                       |
 |-------------------------|------------------------------------------------------------------------------------------------|

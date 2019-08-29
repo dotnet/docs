@@ -16,7 +16,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 |----------------|-----------------|
 |`where T : struct`|The type argument must be a value type. Any value type except <xref:System.Nullable%601> can be specified. For more information about nullable types, see [Nullable types](../nullable-types/index.md).|
 |`where T : class`|The type argument must be a reference type. This constraint applies also to any class, interface, delegate, or array type.|
-|`where T : notnull`|The type argument must be a non nullable type. This can be a non nullable reference in C# 8 or later, or a non nullable value type. This constraint applies also to any class, interface, delegate, or array type.|
+|`where T : notnull`|The type argument must be a non-nullable type. This can be a non-nullable reference type in C# 8.0 or later, or not nullable value type. This constraint applies also to any class, interface, delegate, or array type.|
 |`where T : unmanaged`|The type argument must be an [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md).|
 |`where T : new()`|The type argument must have a public parameterless constructor. When used together with other constraints, the `new()` constraint must be specified last.|
 |`where T :` *\<base class name>*|The type argument must be or derive from the specified base class.|
@@ -75,7 +75,7 @@ The usefulness of type parameters as constraints with generic classes is limited
 
 Beginning with C# 8.0, you can use the `notnull` constraint to specify that the type parameter must be a non-nullable value type or non-nullable reference type. The `notnull` constraint can only be used in a `nullable enable` context. The compiler generates a warning if you add the `notnull` constraint in a nullable oblivious context. 
 
-Unlike other constraints, when a type parameter violates the `notnull` constraint, the compiler generates a warning when that code is compiled in a `nullable enable` context.  If the code is compiled in a nullable oblivious context, the compiler does not generate any warnings or errors.
+Unlike other constraints, when a type parameter violates the `notnull` constraint, the compiler generates a warning when that code is compiled in a `nullable enable` context. If the code is compiled in a nullable oblivious context, the compiler does not generate any warnings or errors.
 
 ## Unmanaged constraint
 

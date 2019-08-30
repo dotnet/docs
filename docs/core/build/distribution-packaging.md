@@ -134,15 +134,15 @@ The following lists the recommended packages:
   * **Contains:** (1),(8),(9),(10),(16)
 
 * `dotnet-apphost-pack-[major].[minor]` - dependency
-  * **Version:** \<sdk version>
+  * **Version:** \<runtime version>
   * **Contains:** (13)
 
 * `dotnet-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
-  * **Version:** \<sdk version>
+  * **Version:** \<runtime version>
   * **Contains:** (12)
 
 * `aspnetcore-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
-  * **Version:** \<sdk version>
+  * **Version:** \<aspnetcore runtime version>
   * **Contains:** (11)
 
 * `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version

@@ -6,12 +6,9 @@ ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec
 # \<idn> Element (Uri Settings)
 Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain name.  
   
-## Schema Hierarchy  
- [\<configuration> Element](../configuration-element.md)  
-  
- [\<Uri> Element (Uri Settings)](uri-element-uri-settings.md)  
-  
- [\<idn>](idn-element-uri-settings.md)  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<idn>**  
   
 ## Syntax  
   

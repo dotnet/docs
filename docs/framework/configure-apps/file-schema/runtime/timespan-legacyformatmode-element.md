@@ -15,9 +15,9 @@ ms.author: "ronpet"
 
 Determines whether the runtime preserves legacy behavior in formatting operations with <xref:System.TimeSpan?displayProperty=nameWithType> values.
 
-\<configuration>\
-\<runtime>\
-\<TimeSpan_LegacyFormatMode>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<TimeSpan_LegacyFormatMode>**  
 
 ## Syntax
 

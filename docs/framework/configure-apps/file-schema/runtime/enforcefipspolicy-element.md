@@ -13,9 +13,9 @@ ms.author: "ronpet"
 # \<enforceFIPSPolicy> Element
 Specifies whether to enforce a computer configuration requirement that cryptographic algorithms must comply with the Federal Information Processing Standards (FIPS).  
   
- \<configuration> Element  
-\<runtime> Element  
-\<enforceFIPSPolicy> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<enforceFIPSPolicy>**  
   
 ## Syntax  
   

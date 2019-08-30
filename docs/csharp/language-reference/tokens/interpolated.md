@@ -28,7 +28,7 @@ To identify a string literal as an interpolated string, prepend it with the `$` 
 
 The structure of an item with an interpolation expression is as follows:
 
-```
+```csharp-interactive
 {<interpolationExpression>[,<alignment>][:<formatString>]}
 ```
 

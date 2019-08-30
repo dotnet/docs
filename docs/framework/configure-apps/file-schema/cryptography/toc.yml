@@ -3,17 +3,22 @@
   items:
   - name: <mscorlib> Element for Cryptography Settings
     href: mscorlib-element-for-cryptography-settings.md
+    items:
     - name: <cryptographySettings> Element
       href: cryptographysettings-element.md
+      items:
       - name: <cryptoNameMapping> Element
         href: cryptonamemapping-element.md
+        items:
         - name: <cryptoClasses> Element
           href: cryptoclasses-element.md
+          items:
           - name: <cryptoClass> Element
             href: cryptoclass-element.md
         - name: <nameEntry> Element
           href: nameentry-element.md
       - name: <oidMap> Element
         href: oidmap-element.md
+        items:
         - name: <oidEntry> Element
           href: oidentry-element.md

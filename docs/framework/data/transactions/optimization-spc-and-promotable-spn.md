@@ -29,7 +29,7 @@ If the <xref:System.Transactions> transaction needs to be escalated (e.g., to su
 > [!NOTE]
 > The **TransactionCommitted** traces (that are generated when a Commit is invoked on the escalated transaction) contain the activity ID of the DTC transaction.
 
-For more information on management escalation, see [Transaction Management Escalation](../../../../docs/framework/data/transactions/transaction-management-escalation.md).
+For more information on management escalation, see [Transaction Management Escalation](transaction-management-escalation.md).
 
 ## Transaction Management Escalation Scenario
 
@@ -61,5 +61,5 @@ If there is only one volatile enlistment and no durable enlistment, the volatile
 
 ## See also
 
-- [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)
-- [Committing a Transaction in Single-Phase and Multi-Phase](../../../../docs/framework/data/transactions/committing-a-transaction-in-single-phase-and-multi-phase.md)
+- [Enlisting Resources as Participants in a Transaction](enlisting-resources-as-participants-in-a-transaction.md)
+- [Committing a Transaction in Single-Phase and Multi-Phase](committing-a-transaction-in-single-phase-and-multi-phase.md)

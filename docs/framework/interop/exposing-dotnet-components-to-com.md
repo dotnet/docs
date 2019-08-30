@@ -1,5 +1,5 @@
 ---
-title: "Exposing .NET Framework Components to COM"
+title: "Exposing .NET components to COM"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "exposing .NET Framework components to COM"
@@ -9,7 +9,7 @@ ms.assetid: e42a65f7-1e61-411f-b09a-aca1bbce24c6
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Exposing .NET Framework Components to COM
+# Exposing .NET components to COM
 
 Writing a .NET type and consuming that type from unmanaged code are distinct activities for developers. This section describes several tips for writing managed code that interoperates with COM clients:
 

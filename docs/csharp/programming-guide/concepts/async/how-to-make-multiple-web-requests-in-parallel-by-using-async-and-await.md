@@ -4,7 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 19745899-f97a-4499-a7c7-e813d1447580
 ---
 # How to: Make Multiple Web Requests in Parallel by Using async and await (C#)
-In an async method, tasks are started when they’re created. The [await](../../../language-reference/keywords/await.md) operator is applied to the task at the point in the method where processing can’t continue until the task finishes. Often a task is awaited as soon as it’s created, as the following example shows.  
+In an async method, tasks are started when they’re created. The [await](../../../language-reference/operators/await.md) operator is applied to the task at the point in the method where processing can’t continue until the task finishes. Often a task is awaited as soon as it’s created, as the following example shows.  
   
 ```csharp  
 var result = await someWebAccessMethodAsync(url);  

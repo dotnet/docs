@@ -1,8 +1,8 @@
 ---
-title: "Reflection in the .NET Framework"
+title: "Reflection in .NET"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
-  - "assemblies [.NET Framework], reflection"
+  - "assemblies [.NET], reflection"
   - "EventInfo class, reflection"
   - "common language runtime, reflection"
   - "FieldInfo class, reflection"
@@ -24,7 +24,7 @@ ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Reflection in the .NET Framework
+# Reflection in .NET
 The classes in the <xref:System.Reflection> namespace, together with <xref:System.Type?displayProperty=nameWithType>, enable you to obtain information about loaded [assemblies](../app-domains/assemblies-in-the-common-language-runtime.md) and the types defined within them, such as [classes](../../standard/base-types/common-type-system.md#classes), [interfaces](../../standard/base-types/common-type-system.md#interfaces), and [value types](../../csharp/language-reference/keywords/value-types.md). You can also use reflection to create type instances at run time, and to invoke and access them. For topics about specific aspects of reflection, see [Related Topics](#related_topics) at the end of this overview.
   
 The [common language runtime](../../standard/clr.md) loader manages [application domains](../app-domains/application-domains.md), which constitute defined boundaries around objects that have the same application scope. This management includes loading each assembly into the appropriate application domain and controlling the memory layout of the type hierarchy within each assembly.  
@@ -56,9 +56,9 @@ Reflection can also be used to create applications called type browsers, which e
 There are other uses for reflection. Compilers for languages such as JScript use reflection to construct symbol tables. The classes in the <xref:System.Runtime.Serialization> namespace use reflection to access data and to determine which fields to persist. The classes in the <xref:System.Runtime.Remoting> namespace use reflection indirectly through serialization.  
   
 ## Runtime Types in Reflection  
-Reflection provides classes, such as <xref:System.Type> and <xref:System.Reflection.MethodInfo>, to represent types, members, parameters, and other code entities. However, when you use reflection you don't work directly with these classes, most of which are abstract (`MustInherit` in Visual Basic). Instead, you work with types provided by the common language runtime (CLR).  
+Reflection provides classes, such as <xref:System.Type> and <xref:System.Reflection.MethodInfo>, to represent types, members, parameters, and other code entities. However, when you use reflection, you don't work directly with these classes, most of which are abstract (`MustInherit` in Visual Basic). Instead, you work with types provided by the common language runtime (CLR).  
   
-For example, when you use the C# `typeof` operator (`GetType` in Visual Basic) to obtain a <xref:System.Type> object, the object is really a `RuntimeType`. `RuntimeType` derives from <xref:System.Type>, and provides implementations of all the abstract methods.  
+For example, when you use the C# `typeof` operator (`GetType` in Visual Basic) to obtain a <xref:System.Type> object, the object is really a `RuntimeType`. `RuntimeType` derives from <xref:System.Type> and provides implementations of all the abstract methods.  
   
 These runtime classes are `internal` (`Friend` in Visual Basic). They are not documented separately from their base classes, because their behavior is described by the base class documentation.  
   

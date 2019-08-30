@@ -164,7 +164,7 @@ signtool sign /f MyCert.pfx /p MyPassword MyFile.exe
  The following command digitally signs and time-stamps a file. The certificate used to sign the file is stored in a PFX file.  
   
 ```  
-signtool sign /f MyCert.pfx /t http://timestamp.verisign.com/scripts/timstamp.dll MyFile.exe  
+signtool sign /f MyCert.pfx /t http://timestamp.digicert.com MyFile.exe  
 ```  
   
  The following command signs a file by using a certificate located in the `My` store that has a subject name of `My Company Certificate`.  
@@ -182,7 +182,7 @@ Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl
  The following command time-stamps a file that has already been digitally signed.  
   
 ```  
-signtool timestamp /t http://timestamp.verisign.com/scripts/timstamp.dll MyFile.exe  
+signtool timestamp /t http://timestamp.digicert.com MyFile.exe  
 ```  
   
  The following command verifies that a file has been signed.  

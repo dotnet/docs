@@ -71,10 +71,5 @@ This guide begins by defining cloud-native and introducing a reference applicati
 
 This guide is available both in PDF form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the tradeoffs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
 
-## References
-
-- **Choosing between .NET Core and .NET Framework for server apps**  
-  <https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
-
 >[!div class="step-by-step"]
-<!-->[Next](introduction-to-cloud-native-applications.md)-->
+>[Next](introduction-to-cloud-native-applications.md)

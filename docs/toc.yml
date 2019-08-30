@@ -160,8 +160,6 @@
       href: core/tutorials/with-visual-studio.md
     - name: Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017
       href: core/tutorials/vb-with-visual-studio.md
-    - name: Create a .NET Core application with plugins
-      href: core/tutorials/creating-app-with-plugin-support.md
     - name: Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio 2017
       href: core/tutorials/debugging-with-visual-studio.md
     - name: Publish your Hello World application with Visual Studio 2017
@@ -219,10 +217,12 @@
       href: core/tutorials/testing-with-cli.md
     - name: Developing Libraries with Cross Platform Tools
       href: core/tutorials/libraries.md
+    - name: Create a .NET Core application with plugins
+      href: core/tutorials/creating-app-with-plugin-support.md      
     - name: Developing ASP.NET Core applications
       href: core/tutorials/aspnet-core.md
     - name: Hosting .NET Core from native code
-      href: core/tutorials/netcore-hosting.md
+      href: core/tutorials/netcore-hosting.md      
   - name: Native Interoperability
     items:
     - name: Exposing .NET Core Components to COM

@@ -25,7 +25,7 @@ foreach (decimal ex in extensions)
   
  This code produces the following output:  
   
-```  
+```output  
 55.92  
 73.50  
 89.99  
@@ -53,7 +53,7 @@ foreach (decimal ex in extensions)
   
  This code produces the following output:  
   
-```  
+```output  
 55.92  
 73.50  
 89.99  

@@ -40,7 +40,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 ToUpper: source abc  
 Main: str ABC  
 ToUpper: source def  

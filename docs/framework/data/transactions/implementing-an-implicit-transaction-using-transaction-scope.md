@@ -162,7 +162,7 @@ using(TransactionScope scope1 = new TransactionScope())
  When using nested <xref:System.Transactions.TransactionScope> objects, all nested scopes must be configured to use exactly the same isolation level if they want to join the ambient transaction. If a nested <xref:System.Transactions.TransactionScope> object tries to join the ambient transaction yet it specifies a different isolation level, an <xref:System.ArgumentException> is thrown.  
   
 ## Interop with COM+  
- When you create a new <xref:System.Transactions.TransactionScope> instance, you can use the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration in one of the constructors to specify how to interact with COM+. For more information on this, see [Interoperability with Enterprise Services and COM+ Transactions](../../../../docs/framework/data/transactions/interoperability-with-enterprise-services-and-com-transactions.md).  
+ When you create a new <xref:System.Transactions.TransactionScope> instance, you can use the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration in one of the constructors to specify how to interact with COM+. For more information on this, see [Interoperability with Enterprise Services and COM+ Transactions](interoperability-with-enterprise-services-and-com-transactions.md).  
   
 ## See also
 

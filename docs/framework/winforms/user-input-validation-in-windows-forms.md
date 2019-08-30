@@ -88,6 +88,6 @@ When users enter data into your application, you may want to verify that the dat
 
 - <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType>
-- <xref:System.ComponentModel.CancelEventArgs?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.FormClosingEventArgs?displayProperty=nameWithType>
 - [MaskedTextBox Control](./controls/maskedtextbox-control-windows-forms.md)
 - [Regular Expression Examples](../../standard/base-types/regular-expression-examples.md)

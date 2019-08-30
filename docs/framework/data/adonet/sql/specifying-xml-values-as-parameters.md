@@ -13,7 +13,7 @@ If a query requires a parameter whose value is an XML string, developers can sup
  The following console application creates a new table in the **AdventureWorks** database. The new table includes a column named **SalesID** and an XML column named **SalesInfo**.  
   
 > [!NOTE]
->  The **AdventureWorks** sample database is not installed by default when you install SQL Server. You can install it by running SQL Server Setup.  
+> The **AdventureWorks** sample database is not installed by default when you install SQL Server. You can install it by running SQL Server Setup.  
   
  The example prepares a <xref:System.Data.SqlClient.SqlCommand> object to insert a row in the new table. A saved file provides the XML data needed for the **SalesInfo** column.  
   

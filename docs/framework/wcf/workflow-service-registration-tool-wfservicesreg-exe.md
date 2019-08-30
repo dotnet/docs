@@ -59,7 +59,7 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
  On 64-bit machines, three sets of handlers are registered (regardless of the state of the `Enable32BitAppOnWin64` switch): one for Integrated mode, one for WOW Classic mode and one for native 64-bit Classic mode.  
   
 > [!NOTE]
->  Unlike ServiceModelreg.exe, WFServicesReg.exe does not allow adding, removing, or repairing scriptmaps or handlers for a particular Web site. For a workaround to this issue, see the "Repairing the Scriptmaps" section.  
+> Unlike ServiceModelreg.exe, WFServicesReg.exe does not allow adding, removing, or repairing scriptmaps or handlers for a particular Web site. For a workaround to this issue, see the "Repairing the Scriptmaps" section.  
   
 ## Usage Scenarios  
   

@@ -41,7 +41,7 @@ Configures the characteristics of the script used to discover Web proxies.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
+|[settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
   
@@ -50,4 +50,4 @@ Configures the characteristics of the script used to discover Web proxies.
   
 ## See also
 
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

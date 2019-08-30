@@ -10,10 +10,10 @@ ms.assetid: 3ec60e8f-fad4-493e-a426-e7962d7aee8c
 Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.StateMachine> activity, and the custom activities from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
   
 > [!NOTE]
->  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).  
+> Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).  
   
 > [!NOTE]
->  To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
+> To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ### To create the workflow  
   
@@ -46,7 +46,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 9. Click **Create Variable**.  
   
     > [!TIP]
-    >  If no **Create Variable** box is displayed, click the <xref:System.Activities.Statements.StateMachine> activity on the workflow designer surface to select it.  
+    > If no **Create Variable** box is displayed, click the <xref:System.Activities.Statements.StateMachine> activity on the workflow designer surface to select it.  
   
 10. Type `Guess` into the **Name** box, select **Int32** from the **Variable type** drop-down list, and then press ENTER to save the variable.  
   
@@ -61,7 +61,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 1. Click **State1** to select it. In the **Properties Window**, change the **DisplayName** to `Initialize Target`.  
   
     > [!TIP]
-    >  If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
+    > If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
   
 2. Double-click the newly renamed **Initialize Target** state in the workflow designer to expand it.  
   
@@ -76,7 +76,7 @@ Workflows can be constructed from built-in activities as well as from custom act
     ```  
   
     > [!TIP]
-    >  If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
+    > If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
   
 4. Return to the overall state machine view in the workflow designer by clicking **StateMachine** in the breadcrumb display at the top of the workflow designer.  
   
@@ -125,15 +125,15 @@ Workflows can be constructed from built-in activities as well as from custom act
 18. Return to the overall state machine view in the workflow designer by clicking **StateMachine** in the breadcrumb display at the top of the workflow designer.  
   
     > [!NOTE]
-    >  A transition occurs when the trigger event is received and the <xref:System.Activities.Statements.Transition.Condition%2A>, if present, evaluates to `True`. For this transition, if the user’s `Guess` matches the randomly generated `Target`, then control passes to the **FinalState** and the workflow completes.  
+    > A transition occurs when the trigger event is received and the <xref:System.Activities.Statements.Transition.Condition%2A>, if present, evaluates to `True`. For this transition, if the user’s `Guess` matches the randomly generated `Target`, then control passes to the **FinalState** and the workflow completes.  
   
 19. Depending on whether the guess is correct, the workflow should transition either to the **FinalState** or back to the **Enter Guess** state for another try. Both transitions share the same trigger of waiting for the user’s guess to be received via the **ReadInt** activity. This is called a shared transition. To create a shared transition, click the circle that indicates the start of the **Guess Correct** transition and drag it to the desired state. In this case the transition is a self-transition, so drag the start point of the **Guess Correct** transition and drop it back onto the bottom of the **Enter Guess** state. After creating the transition, select it in the workflow designer and set its **DisplayName** property to **Guess Incorrect**.  
   
     > [!NOTE]
-    >  Shared transitions can also be created from within the transition designer by clicking **Add shared trigger transition** at the bottom of the transition designer, and then selecting the desired target state from the **Available states to connect** drop-down.  
+    > Shared transitions can also be created from within the transition designer by clicking **Add shared trigger transition** at the bottom of the transition designer, and then selecting the desired target state from the **Available states to connect** drop-down.  
   
     > [!NOTE]
-    >  Note that if the <xref:System.Activities.Statements.Transition.Condition%2A> of a transition evaluates to `false` (or all of the conditions of a shared trigger transition evaluate to `false`), the transition will not occur and all triggers for all the transitions from the state will be rescheduled. In this tutorial, this situation cannot happen because of the way the conditions are configured (we have specific actions for whether the guess is correct or incorrect).  
+    > Note that if the <xref:System.Activities.Statements.Transition.Condition%2A> of a transition evaluates to `false` (or all of the conditions of a shared trigger transition evaluate to `false`), the transition will not occur and all triggers for all the transitions from the state will be rescheduled. In this tutorial, this situation cannot happen because of the way the conditions are configured (we have specific actions for whether the guess is correct or incorrect).  
   
 20. Double-click the **Guess Incorrect** transition in the workflow designer to expand it. Note that the **Trigger** is already set to the same **ReadInt** activity that was used by the **Guess Correct** transition.  
   

@@ -32,7 +32,7 @@ The following scenario outlines the process of signing an assembly with a strong
 
     - Using a development environment that supports creating strong names, such as Visual Studio.
 
-    - Creating a cryptographic key pair using the [Strong Name tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) and assigning that key pair to the assembly using either a command-line compiler or the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). The Windows Software Development Kit (SDK) provides both Sn.exe and Al.exe.
+    - Creating a cryptographic key pair using the [Strong Name tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) and assigning that key pair to the assembly using either a command-line compiler or the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). The Windows SDK provides both Sn.exe and Al.exe.
 
 2. The development environment or tool signs the hash of the file containing the assembly's manifest with the developer's private key. This digital signature is stored in the portable executable (PE) file that contains Assembly A's manifest.
 

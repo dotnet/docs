@@ -47,7 +47,7 @@ The following additional options are available for *.exe*, *.dll*, and *.winmd* 
 |**/linenum**|Includes references to original source lines.|
 |**/nobar**|Suppresses the disassembly progress indicator pop-up window.|
 |**/noca**|Suppresses the output of custom attributes.|
-|**/project**|Displays metadata the way it appears to managed code, instead of the way it appears in the native Windows Runtime. If `PEfilename` is not a Windows metadata (*.winmd*) file, this option has no effect. See [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md).|
+|**/project**|Displays metadata the way it appears to managed code, instead of the way it appears in the native Windows Runtime. If `PEfilename` is not a Windows metadata (*.winmd*) file, this option has no effect. See [.NET Framework Support for Windows Store Apps and Windows Runtime](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md).|
 |**/pubonly**|Disassembles only public types and members. Equivalent to **/visibility:PUB**.|
 |**/quoteallnames**|Includes all names in single quotes.|
 |**/raweh**|Shows exception handling clauses in raw form.|
@@ -94,7 +94,7 @@ The text file produced by *Ildasm.exe* can be used as input to the IL Assembler 
 > [!NOTE]
 > Currently, you cannot use this technique with PE files that contain embedded native code (for example, PE files produced by Visual C++).  
 
-You can use the default GUI in the IL Disassembler to view the metadata and disassembled code of any existing PE file in a hierarchical tree view. To use the GUI, type **ildasm** at the command line without supplying the *PEfilename* argument or any options. From the **File** menu, you can navigate to the PE file that you want to load into *Ildasm.exe*. To save the metadata and disassembled code displayed for the selected PE, select the **Dump** command from the **File** menu. To save the hierarchical tree view only, select the **Dump Treeview** command from the **File** menu. For a detailed guide to loading a file into *Ildasm.exe* and interpreting the output, see the *Ildasm.exe* Tutorial, located in the Samples folder that ships with the Windows Software Development Kit (SDK).
+You can use the default GUI in the IL Disassembler to view the metadata and disassembled code of any existing PE file in a hierarchical tree view. To use the GUI, type **ildasm** at the command line without supplying the *PEfilename* argument or any options. From the **File** menu, you can navigate to the PE file that you want to load into *Ildasm.exe*. To save the metadata and disassembled code displayed for the selected PE, select the **Dump** command from the **File** menu. To save the hierarchical tree view only, select the **Dump Treeview** command from the **File** menu. For a detailed guide to loading a file into *Ildasm.exe* and interpreting the output, see the *Ildasm.exe* Tutorial, located in the Samples folder that ships with the Windows SDK.
 
 If you provide *Ildasm.exe* with a *PEfilename* argument that contains embedded resources, the tool produces multiple output files: a text file that contains IL code and, for each embedded managed resource, a .resources file produced using the resource's name from metadata. If an unmanaged resource is embedded in *PEfilename*, a .res file is produced using the filename specified for IL output by the **/output** option.
 
@@ -182,5 +182,5 @@ A nested type must be preceded by its containing class, delimited by a forward s
 
 - [Tools](../../../docs/framework/tools/index.md)
 - [Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md)
-- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)
+- [Managed Execution Process](../../standard/managed-execution-process.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

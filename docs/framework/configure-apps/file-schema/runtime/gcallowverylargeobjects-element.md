@@ -58,7 +58,7 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 - The maximum size for strings and other non-array objects is unchanged.  
   
 > [!CAUTION]
->  Before enabling this feature, ensure that your application does not include unsafe code that assumes that all arrays are smaller than 2 GB in size. For example, unsafe code that uses arrays as buffers might be susceptible to buffer overruns if it is written on the assumption that arrays will not exceed 2 GB.  
+> Before enabling this feature, ensure that your application does not include unsafe code that assumes that all arrays are smaller than 2 GB in size. For example, unsafe code that uses arrays as buffers might be susceptible to buffer overruns if it is written on the assumption that arrays will not exceed 2 GB.  
   
 ## Example  
  The following example shows how to enable this feature for an application.  
@@ -77,5 +77,5 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

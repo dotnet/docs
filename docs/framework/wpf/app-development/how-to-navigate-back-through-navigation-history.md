@@ -13,7 +13,7 @@ ms.assetid: 9343234b-d864-441d-b8a7-d895cba80a87
 This example illustrates how to navigate to entries in back navigation history.  
   
 ## Example  
- Code that is running from content that is hosted in a <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame> using <xref:System.Windows.Navigation.NavigationService>, or [!INCLUDE[TLA#tla_iegeneric](../../../../includes/tlasharptla-iegeneric-md.md)] can navigate back through navigation history, one entry at a time.  
+ Code that is running from content that is hosted in a <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame> using <xref:System.Windows.Navigation.NavigationService>, or Internet Explorer can navigate back through navigation history, one entry at a time.  
   
  Navigating back one entry requires first checking that there are entries in back navigation history, by inspecting the **CanGoBack** property, before navigating back one entry, by calling the **GoBack** method. This is illustrated in the following example:  
   
@@ -23,4 +23,4 @@ This example illustrates how to navigate to entries in back navigation history.
  **CanGoBack** and **GoBack** are implemented by <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, and <xref:System.Windows.Navigation.NavigationService>.  
   
 > [!NOTE]
->  If you call **GoBack**, and there are no entries in back navigation history, an <xref:System.InvalidOperationException> is raised.
+> If you call **GoBack**, and there are no entries in back navigation history, an <xref:System.InvalidOperationException> is raised.

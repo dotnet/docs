@@ -20,7 +20,7 @@ Applications that host [!INCLUDE[TLA#tla_winclient](../../../../includes/tlashar
 - Query the host application for custom progress and error user interfaces.  
   
 > [!NOTE]
->  This API is only intended and supported for use on the local client machine  
+> This API is only intended and supported for use on the local client machine  
   
 ## Members  
   

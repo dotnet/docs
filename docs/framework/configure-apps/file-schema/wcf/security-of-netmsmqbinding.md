@@ -38,14 +38,14 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<message>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-of-netmsmqbinding.md)|Defines the SOAP message security settings. This element is of type <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>.|  
-|[\<transport>](../../../../../docs/framework/configure-apps/file-schema/wcf/transport-of-netmsmqbinding.md)|Defines the security settings for the MSMQ transport. This element is of type <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>.|  
+|[\<message>](message-of-netmsmqbinding.md)|Defines the SOAP message security settings. This element is of type <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>.|  
+|[\<transport>](transport-of-netmsmqbinding.md)|Defines the security settings for the MSMQ transport. This element is of type <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|binding|The binding element of the [\<netMsmqBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)|  
+|binding|The binding element of the [\<netMsmqBinding>](netmsmqbinding.md)|  
   
 ## See also
 
@@ -53,9 +53,9 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
 - <xref:System.ServiceModel.NetMsmqBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security%2A>
 - <xref:System.ServiceModel.NetMsmqSecurity>
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
-- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)
+- [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)

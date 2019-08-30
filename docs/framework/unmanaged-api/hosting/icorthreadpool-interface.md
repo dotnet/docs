@@ -21,7 +21,7 @@ ms.author: "ronpet"
 Provides methods for accessing the thread pool.  
   
 > [!NOTE]
->  This interface is reserved for internal use only.  
+> This interface is reserved for internal use only.  
   
 ## Methods  
   

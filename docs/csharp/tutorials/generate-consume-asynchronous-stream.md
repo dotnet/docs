@@ -11,9 +11,9 @@ C# 8.0 introduces **async streams**, which model a streaming source of data when
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Create a data source that generates a sequence of data elements asynchronously.
-> * Consume that data source asynchronously.
-> * Recognize when the new interface and data source are preferred to earlier synchronous data sequences.
+> - Create a data source that generates a sequence of data elements asynchronously.
+> - Consume that data source asynchronously.
+> - Recognize when the new interface and data source are preferred to earlier synchronous data sequences.
 
 ## Prerequisites
 

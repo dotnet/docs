@@ -32,13 +32,13 @@ Contains information about how the ASP.NET hosting layer manages process-wide be
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<applicationPool>](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)|Specifies configuration settings for IIS application pools in an aspnet.config file.|  
+|[\<applicationPool>](applicationpool-element-web-settings.md)|Specifies configuration settings for IIS application pools in an aspnet.config file.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<configuration>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
+|[\<configuration>](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
   
 ## Remarks  
  The `system.web` element and its child `applicationPool` element were added to the .NET Framework as of .NET Framework 3.5 SP1. When you run IIS 7.0 or later versions in Integrated mode, this element combination lets you configure how ASP.NET manages threads and how it queues requests when ASP.NET is hosted in an IIS application pool. If you run IIS 7.0 or later versions in Classic or ISAPI mode, these settings are ignored.  
@@ -68,4 +68,4 @@ Contains information about how the ASP.NET hosting layer manages process-wide be
   
 ## See also
 
-- [\<applicationPool> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)
+- [\<applicationPool> Element (Web Settings)](applicationpool-element-web-settings.md)

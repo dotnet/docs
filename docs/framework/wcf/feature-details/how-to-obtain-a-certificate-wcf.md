@@ -19,7 +19,7 @@ To use any of the Windows Communication Foundation (WCF) features of that use X.
     - Set up your own certificate service and do not have the certificates signed.  
   
     > [!NOTE]
-    >  Whichever approach you take, the recipient of the SOAP request that contains the X.509 certificate must trust the X.509 certificate. This means that the X.509 certificate or an issuer in the certificate chain is in the Trusted People certificate store and that the X.509 certificate is not in the Untrusted Certificates store.  
+    > Whichever approach you take, the recipient of the SOAP request that contains the X.509 certificate must trust the X.509 certificate. This means that the X.509 certificate or an issuer in the certificate chain is in the Trusted People certificate store and that the X.509 certificate is not in the Untrusted Certificates store.  
   
 ## See also
 

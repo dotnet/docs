@@ -13,7 +13,7 @@ You can use the <xref:System.Data.Linq.MemberChangeConflict> class to retrieve i
  The following code iterates through the <xref:System.Data.Linq.ObjectChangeConflict> objects. For each object, it then iterates through the <xref:System.Data.Linq.MemberChangeConflict> objects.  
   
 > [!NOTE]
->  Include <xref:System.Reflection> in order to provide <xref:System.Data.Linq.MemberChangeConflict.Member%2A> information.  
+> Include <xref:System.Reflection> in order to provide <xref:System.Data.Linq.MemberChangeConflict.Member%2A> information.  
   
  [!code-csharp[System.Data.Linq.MemberChangeConflict#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.memberchangeconflict/cs/program.cs#1)]
  [!code-vb[System.Data.Linq.MemberChangeConflict#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.memberchangeconflict/vb/module1.vb#1)]  

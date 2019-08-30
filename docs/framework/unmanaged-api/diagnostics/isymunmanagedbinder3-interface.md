@@ -21,7 +21,7 @@ ms.author: "mairaw"
 Extends the symbol binder interface. Obtain this interface by calling `QueryInterface` on an object that implements the `ISymUnmanagedBinder` interface.  
   
 > [!IMPORTANT]
->  It is a security risk to open a program database (PDB) file from an untrusted source.  
+> It is a security risk to open a program database (PDB) file from an untrusted source.  
   
 ## Methods  
   

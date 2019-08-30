@@ -11,7 +11,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
  For tracing settings recommendations in production or debugging environment, refer to [Recommended Settings for Tracing and Message Logging](../../../../../docs/framework/wcf/diagnostics/tracing/recommended-settings-for-tracing-and-message-logging.md).  
   
 > [!IMPORTANT]
->  On Windows 8 you must run your application elevated (Run as Administrator) in order for your application to generate trace logs.  
+> On Windows 8 you must run your application elevated (Run as Administrator) in order for your application to generate trace logs.  
   
 ## Enabling Tracing  
  Windows Communication Foundation (WCF) outputs the following data for diagnostic tracing:  
@@ -47,7 +47,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
 ```  
   
 > [!NOTE]
->  To edit the configuration file of a WCF service project in Visual Studio, right click the application’s configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted application in **Solution Explorer**. Then choose the **Edit WCF Configuration** context menu item. This launches the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md), which enables you to modify configuration settings for WCF services using a graphical user interface.  
+> To edit the configuration file of a WCF service project in Visual Studio, right click the application’s configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted application in **Solution Explorer**. Then choose the **Edit WCF Configuration** context menu item. This launches the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md), which enables you to modify configuration settings for WCF services using a graphical user interface.  
   
 ## Configuring Trace Sources to Emit Traces  
  WCF defines a trace source for each assembly. Traces generated within an assembly are accessed by the listeners defined for that source. The following trace sources are defined:  
@@ -139,7 +139,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
  You can also configure a trace listener programmatically. For more information, see [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239).  
   
 > [!CAUTION]
->  Because `System.Diagnostics.XmlWriterTraceListener` is not thread-safe, the trace source may lock resources exclusively when outputting traces. When many threads output traces to a trace source configured to use this listener, resource contention may occur, which results in a significant performance issue. To resolve this problem, you should implement a custom listener that is thread-safe.  
+> Because `System.Diagnostics.XmlWriterTraceListener` is not thread-safe, the trace source may lock resources exclusively when outputting traces. When many threads output traces to a trace source configured to use this listener, resource contention may occur, which results in a significant performance issue. To resolve this problem, you should implement a custom listener that is thread-safe.  
   
 ## Trace Level  
  The tracing level is controlled by the `switchValue` setting of the trace source. The available tracing levels are described in the following table.  
@@ -158,13 +158,13 @@ This topic describes how you can enable tracing, configure trace sources to emit
  The levels from Verbose to Critical are stacked on top of each other, that is, each trace level includes all levels above it except the Off level. For example, a listener listening at the Warning level receives Critical, Error, and Warning traces. The All level includes events from Verbose to Critical and Activity tracing events.  
   
 > [!CAUTION]
->  The Information, Verbose, and ActivityTracing levels generate a lot of traces, which may negatively impact message throughput if you have used up all available resources on the machine.  
+> The Information, Verbose, and ActivityTracing levels generate a lot of traces, which may negatively impact message throughput if you have used up all available resources on the machine.  
   
 ## Configuring Activity Tracing and Propagation for Correlation  
  The `activityTracing` value specified for the `switchValue` attribute is used to enable activity tracing, which emits traces for activity boundaries and transfers within endpoints.  
   
 > [!NOTE]
->  When you use certain extensibility features in WCF, you might get a <xref:System.NullReferenceException> when activity tracing is enabled. To fix this problem, check your application's configuration file and ensure that the `switchValue` attribute for your trace source is not set to `activityTracing`.  
+> When you use certain extensibility features in WCF, you might get a <xref:System.NullReferenceException> when activity tracing is enabled. To fix this problem, check your application's configuration file and ensure that the `switchValue` attribute for your trace source is not set to `activityTracing`.  
   
  The `propagateActivity` attribute indicates whether the activity should be propagated to other endpoints that participate in the message exchange. By setting this value to `true`, you can take trace files generated by any two endpoints and observe how a set of traces on one endpoint flowed to a set of traces on another endpoint.  
   

@@ -52,7 +52,7 @@ ms.custom: seodec18
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Begin the match at the beginning of the input string (or the beginning of the line if the method is called with the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option).|  
-|`((\w+(\s?)){2,}`|Match one or more word characters followed either by zero or by one space exactly two times. This is the first capturing group. This expression also defines a second and third capturing group: The second consists of the captured word, and the third consists of the captured spaces.|  
+|`((\w+(\s?)){2,}`|Match one or more word characters followed either by zero or by one space at least two times. This is the first capturing group. This expression also defines a second and third capturing group: The second consists of the captured word, and the third consists of the captured white space.|  
 |`,\s`|Match a comma followed by a white-space character.|  
 |`(\w+\s\w+)`|Match one or more word characters followed by a space, followed by one or more word characters. This is the fourth capturing group.|  
 |`,`|Match a comma.|  

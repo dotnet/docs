@@ -7,7 +7,7 @@ ms.assetid: b0188f3c-00a9-4cf0-a887-a2284c8fb014
 This sample demonstrates how processes like serialization, deserialization, schema export, and schema import can be customized using a data contract surrogate class. This sample shows how to use a surrogate in a client and server scenario where data is serialized and transmitted between a Windows Communication Foundation (WCF) client and service.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample uses the following service contract:  
   
@@ -244,7 +244,7 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
  When you run the sample, the client calls AddEmployee followed by a GetEmployee call to check if the first call was successful. The result of the GetEmployee operation request is displayed in the client console window. The GetEmployee operation must succeed in finding the employee and print "found".  
   
 > [!NOTE]
->  This sample shows how to plug in a surrogate for serialize, deserialize and metadata generation. It does not show how to plug in a surrogate for code generation from metadata. To see a sample of how a surrogate can be used to plug into client code generation, see the [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md) sample.  
+> This sample shows how to plug in a surrogate for serialize, deserialize and metadata generation. It does not show how to plug in a surrogate for code generation from metadata. To see a sample of how a surrogate can be used to plug into client code generation, see the [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md) sample.  
   
 ### To set up, build, and run the sample  
   
@@ -255,10 +255,10 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\DataContract`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\DataContract`  

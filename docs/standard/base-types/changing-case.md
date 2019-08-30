@@ -28,7 +28,7 @@ If you write an application that accepts input from a user, you can never be sur
 |<xref:System.Globalization.TextInfo.ToTitleCase%2A?displayProperty=nameWithType>|Converts a string to title case.|  
   
 > [!WARNING]
->  Note that the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> and <xref:System.String.ToLower%2A?displayProperty=nameWithType> methods should not be used to convert strings in order to compare them or test them for equality. For more information, see the [Comparing strings of mixed case](#Comparing) section.  
+> Note that the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> and <xref:System.String.ToLower%2A?displayProperty=nameWithType> methods should not be used to convert strings in order to compare them or test them for equality. For more information, see the [Comparing strings of mixed case](#Comparing) section.  
   
 <a name="Comparing"></a>   
 ## Comparing strings of mixed case  

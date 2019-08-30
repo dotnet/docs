@@ -20,7 +20,7 @@ A "From/To/By" or "basic animation" creates a transition between two target valu
 |<xref:System.Windows.Media.Animation.DoubleAnimation.By%2A>|The animation progresses from the base value of the property being animated or a previous animation's output value to the sum of that value and the value specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property.|  
   
 > [!NOTE]
->  Do not set both the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property and the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property on the same animation.  
+> Do not set both the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property and the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property on the same animation.  
   
  To use other interpolation methods or animate between more than two target values, use a key frame animation. See [Key-Frame Animations Overview](key-frame-animations-overview.md) for more information.  
   

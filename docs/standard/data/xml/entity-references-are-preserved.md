@@ -24,7 +24,7 @@ Tree structure for entity references that are preserved
  The child nodes of the **XmlEntityReference** are copies of all the child nodes created from the **XmlEntity** node when the entity declaration was encountered.  
   
 > [!NOTE]
->  The nodes copied from the **XmlEntity** are not always exact copies once placed under the entity reference node. There can be namespaces that are in scope at the entity reference node, and that affects the final configuration of the child nodes.  
+> The nodes copied from the **XmlEntity** are not always exact copies once placed under the entity reference node. There can be namespaces that are in scope at the entity reference node, and that affects the final configuration of the child nodes.  
   
  By default, general entities like `&abc;` are preserved and **XmlEntityReference** nodes always created.  
   

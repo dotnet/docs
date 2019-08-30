@@ -15,10 +15,10 @@ ms.author: "mairaw"
 # Security-Transparent Code, Level 1
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
- Transparency helps developers write more secure .NET Framework libraries that expose functionality to partially trusted code. Level 1 transparency was introduced in the .NET Framework version 2.0 and was primarily used only within Microsoft. Starting with the .NET Framework 4, you can use [level 2 transparency](../../../docs/framework/misc/security-transparent-code-level-2.md). However, level 1 transparency has been retained so that you can identify legacy code that must run with the earlier security rules.  
+ Transparency helps developers write more secure .NET Framework libraries that expose functionality to partially trusted code. Level 1 transparency was introduced in the .NET Framework version 2.0 and was primarily used only within Microsoft. Starting with the .NET Framework 4, you can use [level 2 transparency](security-transparent-code-level-2.md). However, level 1 transparency has been retained so that you can identify legacy code that must run with the earlier security rules.  
   
 > [!IMPORTANT]
->  You should specify level 1 transparency for compatibility only; that is, specify level 1 only for code that was developed with the .NET Framework 3.5 or earlier that uses the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> or does not use the transparency model. For example, use level 1 transparency for .NET Framework 2.0 assemblies that allow calls from partially trusted callers (APTCA). For code that is developed for the .NET Framework 4, always use level 2 transparency.  
+> You should specify level 1 transparency for compatibility only; that is, specify level 1 only for code that was developed with the .NET Framework 3.5 or earlier that uses the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> or does not use the transparency model. For example, use level 1 transparency for .NET Framework 2.0 assemblies that allow calls from partially trusted callers (APTCA). For code that is developed for the .NET Framework 4, always use level 2 transparency.  
   
  This topic contains the following sections:  
   
@@ -47,7 +47,7 @@ ms.author: "mairaw"
  You have to apply transparency explicitly. The majority of your code that handles data manipulation and logic can typically be marked as security-transparent, whereas the lesser amount of code that performs elevations of privileges is marked as security-critical or security-safe-critical.  
   
 > [!IMPORTANT]
->  Level 1 transparency is limited to assembly scope; it is not enforced between assemblies. Level 1 transparency was primarily used within Microsoft for security audit purposes. Security-critical types and members within a level 1 assembly can be accessed by security-transparent code in other assemblies. It is important that you perform link demands for full trust in all your level 1 security-critical types and members. Security-safe-critical types and members must also confirm that callers have permissions for protected resources that are accessed by the type or member.  
+> Level 1 transparency is limited to assembly scope; it is not enforced between assemblies. Level 1 transparency was primarily used within Microsoft for security audit purposes. Security-critical types and members within a level 1 assembly can be accessed by security-transparent code in other assemblies. It is important that you perform link demands for full trust in all your level 1 security-critical types and members. Security-safe-critical types and members must also confirm that callers have permissions for protected resources that are accessed by the type or member.  
   
  For backward compatibility with earlier versions of the .NET Framework, all members that are not annotated with transparency attributes are considered to be security-safe-critical. All types that are not annotated are considered to be transparent. There are no static analysis rules to validate transparency. Therefore, you may need to debug transparency errors at run time.  
   
@@ -126,5 +126,5 @@ public class B
   
 ## See also
 
-- [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)
-- [Security Changes](../../../docs/framework/security/security-changes.md)
+- [Security-Transparent Code, Level 2](security-transparent-code-level-2.md)
+- [Security Changes](../security/security-changes.md)

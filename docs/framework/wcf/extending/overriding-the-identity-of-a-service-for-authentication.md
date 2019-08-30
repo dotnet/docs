@@ -19,7 +19,7 @@ Typically, you do not have to set the identity on a service because the selectio
  You can also use the Setspn.exe tool to register an additional SPN with a service's account in a domain. You can then use the SPN as the identity of the service. To download the tool, see [Windows 2000 Resource Kit Tool : Setspn.exe](https://go.microsoft.com/fwlink/?LinkId=91752). For more information about the tool, see [Setspn Overview](https://go.microsoft.com/fwlink/?LinkId=61374).  
   
 > [!NOTE]
->  To use the Windows credential type without negotiation, the service's user account must have access to the SPN that is registered with the Active Directory domain. You can do this in the following ways:  
+> To use the Windows credential type without negotiation, the service's user account must have access to the SPN that is registered with the Active Directory domain. You can do this in the following ways:  
   
 - Use the NetworkService or LocalSystem account to run your service. Because those accounts have access to the machine SPN that is established when the machine joins the Active Directory domain, WCF automatically generates the proper SPN element inside the service's endpoint in the service's metadata (WSDL).  
   

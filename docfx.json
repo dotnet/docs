@@ -122,7 +122,7 @@
 	"docs/architecture/modernize-with-azure-containers/": { 
 	   "folder_relative_path_in_docset": "docs/standard/modernize-with-azure-and-containers/"
 	},
-	"dotnet/architecture/serverless/": { 
+	"docs/architecture/serverless/": { 
 	   "folder_relative_path_in_docset": "docs/standard/serverless-architecture/"
 	}
       },
@@ -140,7 +140,8 @@
         "docs/framework/data/adonet/**/**.md": "None"
       },
       "feedback_product_url": {
-        "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp"
+        "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp",
+        "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning"
       },
       "ms.prod": {
         "_csharplang/**/*.md": "dotnet-csharp",
@@ -186,7 +187,7 @@
         "docs/framework/network-programming/**/**.md": "karelz",
         "docs/framework/wcf/**/**.md": "HongGit",
         "docs/fsharp/**/**.md": "cartermp",
-        "docs/machine-learning/**/**.md": "JRAlexander",
+        "docs/machine-learning/**/**.md": "natke",
         "docs/visual-basic/**/**.md": "KathleenDollard",
         "docs/spark/**/**.md": "mamccrea"
       },
@@ -205,7 +206,7 @@
         "docs/framework/network-programming/**/**.md": "ncldev",
         "docs/framework/wcf/**/**.md": "wcfsrvt",
         "docs/fsharp/**/**.md": "phcart",
-        "docs/machine-learning/**/**.md": "johalex",
+        "docs/machine-learning/**/**.md": "nakersha",
         "docs/visual-basic/**/**.md": "kdollard",
         "docs/spark/**/**.md": "mamccrea"
       },

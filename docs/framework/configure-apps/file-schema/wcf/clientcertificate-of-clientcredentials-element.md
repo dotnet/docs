@@ -41,10 +41,10 @@ Defines an X.509 certificate used to authenticate a client to a service.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate the client to a service.|  
+|[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate the client to a service.|  
   
 ## Remarks  
- This configuration element specifies the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
+ This configuration element specifies the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../wcf/how-to-specify-client-credential-values.md).  
   
 ## See also
 
@@ -54,8 +54,8 @@ Defines an X.509 certificate used to authenticate a client to a service.
 - <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A>
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>
-- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
-- [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)
-- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
-- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [How to: Specify Client Credential Values](../../../wcf/how-to-specify-client-credential-values.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

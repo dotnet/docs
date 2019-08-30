@@ -1,7 +1,7 @@
 ---
 title: Train a machine learning model using cross validation
 description: Learn how to use cross validation to build more robust machine learning models in ML.NET. Cross-validation is a training and model evaluation technique that splits the data into several partitions and trains multiple algorithms on these partitions.
-ms.date: 06/25/2019
+ms.date: 08/29/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to,title-hack-0625
@@ -26,7 +26,7 @@ Size (Sq. ft.), HistoricalPrice1 ($), HistoricalPrice2 ($), HistoricalPrice3 ($)
 1120.00, 47504.98, 45129.73, 43775.84, 46792.41
 ```
 
-The data can be modeled by a class like `HousingData`:
+The data can be modeled by a class like `HousingData` and loaded into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ```csharp
 public class HousingData
@@ -43,8 +43,6 @@ public class HousingData
     public float CurrentPrice { get; set; }
 }
 ```
-
-Load the data in into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ## Prepare the data
 

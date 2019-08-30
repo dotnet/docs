@@ -6,7 +6,9 @@ ms.date: 07/10/2019
 
 # C# language versioning
 
-The C# compiler determines a default language version based on your project's target framework or frameworks. This is because the C# language may have features that rely on types or runtime components that are not available in every .NET implementation. This also ensures that for whatever target your project is built against, you get the highest compatible language version by default.
+The latest C# compiler determines a default language version based on your project's target framework or frameworks. This is because the C# language may have features that rely on types or runtime components that are not available in every .NET implementation. This also ensures that for whatever target your project is built against, you get the highest compatible language version by default.
+
+The rules in this article apply to the compiler delivered with Visual Studio 2019, or the .NET Core 3.0 SDK. The C# compilers that are part of the Visual Studio 2017 installation or earlier .NET Core SDK versions target C# 7.0 by default. 
 
 ## Defaults
 
@@ -23,7 +25,7 @@ The compiler determines a default based on these rules:
 
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. This ensures that you can use the latest features that are guaranteed to work with that preview in any environment without affecting your projects that target a released .NET Core version.
 
-## Overriding a default
+## Override a default
 
 If you must specify your C# version explicitly, you can do so in several ways:
 
@@ -33,7 +35,7 @@ If you must specify your C# version explicitly, you can do so in several ways:
 
 ### Edit the project file
 
-You can set the language version in your project file. For example, if you explicitly wanted access to preview features, you could do add an element like this:
+You can set the language version in your project file. For example, if you explicitly want access to preview features, add an element like this:
 
 ```xml
 <PropertyGroup>
@@ -41,7 +43,7 @@ You can set the language version in your project file. For example, if you expli
 </PropertyGroup>
 ```
 
-The value `preview` uses the latest available preview C# language that your compiler supports.
+The value `preview` uses the latest available preview C# language version that your compiler supports.
 
 ### Configure multiple projects
 

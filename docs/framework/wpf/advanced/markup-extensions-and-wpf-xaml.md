@@ -44,7 +44,7 @@ This topic introduces the concept of markup extensions for XAML, including their
 - `x:Array` provides support for creation of general arrays in XAML syntax, for cases where the collection support provided by WPF base elements and control models is deliberately not used. For details, see [x:Array Markup Extension](../../xaml-services/x-array-markup-extension.md).  
   
 > [!NOTE]
->  The `x:` prefix is used for the typical XAML namespace mapping of the XAML language intrinsics, in the root element of a XAML file or production. For example, the Visual Studio templates for WPF applications initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML namespace for the XAML language, as opposed to the WPF default namespace or other XAML namespaces not related to a specific framework.  
+> The `x:` prefix is used for the typical XAML namespace mapping of the XAML language intrinsics, in the root element of a XAML file or production. For example, the Visual Studio templates for WPF applications initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML namespace for the XAML language, as opposed to the WPF default namespace or other XAML namespaces not related to a specific framework.  
   
 <a name="WPF_Specific_Markup_Extensions"></a>   
 ## WPF-Specific Markup Extensions  
@@ -65,7 +65,7 @@ This topic introduces the concept of markup extensions for XAML, including their
 - `ComponentResourceKey` and `ThemeDictionary` support aspects of resource lookup, particularly for resources and themes that are packaged with custom controls. For more information, see [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md), [ThemeDictionary Markup Extension](themedictionary-markup-extension.md), or [Control Authoring Overview](../controls/control-authoring-overview.md).  
   
 <a name="StarExtension"></a>   
-## *Extension Classes  
+## \*Extension Classes  
  For both the general XAML language and WPF-specific markup extensions, the behavior of each markup extension is identified to a XAML processor through a `*Extension` class that derives from <xref:System.Windows.Markup.MarkupExtension>, and provides an implementation of the <xref:System.Windows.Markup.StaticExtension.ProvideValue%2A> method. This method on each extension provides the object that is returned when the markup extension is evaluated. The returned object is typically evaluated based on the various string tokens that are passed to the markup extension.  
   
  For example, the <xref:System.Windows.StaticResourceExtension> class provides the surface implementation of actual resource lookup so that its <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> implementation returns the object that is requested, with the input of that particular implementation being a string that is used to look up the resource by its `x:Key`. Much of this implementation detail is unimportant if you are using an existing markup extension.  
@@ -82,7 +82,7 @@ This topic introduces the concept of markup extensions for XAML, including their
 - If the individual separated tokens do not contain any equals signs, each token is treated as a constructor argument. Each constructor parameter must be given as the type expected by that signature, and in the proper order expected by that signature.  
   
     > [!NOTE]
-    >  A XAML processor must call the constructor that matches the argument count of the number of pairs. For this reason, if you are implementing a custom markup extension, do not provide multiple constructors with the same argument count. The behavior for how a XAML processor behaves if more than one markup extension constructor path with the same parameter count exists is not defined, but you should anticipate that a XAML processor is permitted to throw an exception on usage if this situation exists in the markup extension type definitions.  
+    > A XAML processor must call the constructor that matches the argument count of the number of pairs. For this reason, if you are implementing a custom markup extension, do not provide multiple constructors with the same argument count. The behavior for how a XAML processor behaves if more than one markup extension constructor path with the same parameter count exists is not defined, but you should anticipate that a XAML processor is permitted to throw an exception on usage if this situation exists in the markup extension type definitions.  
   
 - If the individual separated tokens contain equals signs, then a XAML processor first calls the parameterless constructor for the markup extension. Then, each name=value pair is interpreted as a property name that exists on the markup extension, and a value to assign to that property.  
   

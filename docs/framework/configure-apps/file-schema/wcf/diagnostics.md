@@ -48,8 +48,8 @@ The `diagnostics` element defines settings that can be used by an administrator 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<endToEndTracing>](../../../../../docs/framework/configure-apps/file-schema/wcf/endtoendtracing.md)|A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.|  
-|[\<messageLogging>](../../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)|Describes the settings for WCF message logging.|  
+|[\<endToEndTracing>](endtoendtracing.md)|A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.|  
+|[\<messageLogging>](messagelogging.md)|Describes the settings for WCF message logging.|  
   
 ### Parent Elements  
   

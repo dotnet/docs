@@ -20,7 +20,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
     ```
 
     > [!NOTE]
-    >  You must replace the value supplied to the `/uri:` parameter with the URI of your instance of the Northwind sample data service.
+    > You must replace the value supplied to the `/uri:` parameter with the URI of your instance of the Northwind sample data service.
 
 ### To generate Visual Basic classes that support data binding
 
@@ -31,7 +31,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
     ```
 
     > [!NOTE]
-    >  You must replace value supplied to the `/uri:` parameter with the URI of your instance of the Northwind sample data service.
+    > You must replace value supplied to the `/uri:` parameter with the URI of your instance of the Northwind sample data service.
 
 ### To generate C# classes based on the service URI
 
@@ -42,7 +42,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
     ```
 
     > [!NOTE]
-    >  You must replace the value supplied to the `/uri:` parameter with the URI of your instance of the Northwind sample data service.
+    > You must replace the value supplied to the `/uri:` parameter with the URI of your instance of the Northwind sample data service.
 
 ### To generate Visual Basic classes based on the service URI
 
@@ -53,7 +53,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
     ```
 
     > [!NOTE]
-    >  You must replace value supplied to the `/uri:` parameter with the URI of your instance of the Northwind sample data service.
+    > You must replace value supplied to the `/uri:` parameter with the URI of your instance of the Northwind sample data service.
 
 ### To generate C# classes based on the conceptual model file (CSDL)
 

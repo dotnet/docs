@@ -15,33 +15,33 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
 ## In This Section  
 
  [Accessing the Web by Using Async and Await](./programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- Shows how to create an asynchronous solution by using [async](../csharp/language-reference/keywords/async.md) and [await](../csharp/language-reference/keywords/await.md).  
+ Shows how to create an asynchronous solution by using [async](./language-reference/keywords/async.md) and [await](./language-reference/operators/await.md).  
   
  [Creating a Windows Runtime Component in C# or Visual Basic and Calling it from JavaScript](/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript)  
  Shows how to create a Windows Runtime type, package it in a Windows Runtime component, and then call the component from a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app that's built for Windows by using JavaScript.  
   
- [Office Programming (C# and Visual Basic)](../csharp/programming-guide/interop/walkthrough-office-programming.md)  
+ [Office Programming (C# and Visual Basic)](./programming-guide/interop/walkthrough-office-programming.md)  
  Shows how to create an Excel workbook and a Word document by using C# and Visual Basic.  
   
- [Creating and Using Dynamic Objects (C# and Visual Basic)](../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)  
+ [Creating and Using Dynamic Objects (C# and Visual Basic)](./programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)  
  Shows how to create a custom object that dynamically exposes the contents of a text file, and how to create a project that uses the `IronPython` library.  
    
- [Authoring a Composite Control with Visual C#](../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)  
+ [Authoring a Composite Control with Visual C#](../framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)  
  Demonstrates creating a simple composite control and extending its functionality through inheritance.  
   
- [Creating a Windows Forms Control that Takes Advantage of Visual Studio Design-Time Features](../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)  
+ [Creating a Windows Forms Control that Takes Advantage of Visual Studio Design-Time Features](../framework/winforms/controls/creating-a-wf-control-design-time-features.md)  
  Illustrates how to create a custom designer for a custom control.  
   
- [Inheriting from a Windows Forms Control with Visual C#](../../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)  
+ [Inheriting from a Windows Forms Control with Visual C#](../framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)  
  Demonstrates creating a simple inherited button control. This button inherits functionality from the standard Windows Forms button and exposes a custom member.  
   
- [Debugging Custom Windows Forms Controls at Design Time](../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)  
+ [Debugging Custom Windows Forms Controls at Design Time](../framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)  
  Describes how to debug the design-time behavior of your custom control.
 
- [Performing Common Tasks Using Smart Tags on Windows Forms Controls](../../docs/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md)  
+ [Performing Common Tasks Using Smart Tags on Windows Forms Controls](../framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md)  
  Demonstrates some of the commonly performed tasks such as adding or removing a tab on a `TabControl`, docking a control to its parent, and changing the orientation of a `SplitContainer` control.  
   
- [Writing Queries in C# (LINQ)](../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
+ [Writing Queries in C# (LINQ)](./programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
  Demonstrates the C# language features that are used to write [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions.  
   
  [Manipulating Data (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp.md)  
@@ -65,5 +65,5 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
   
 ## See also
 
-- [C# Programming Guide](../csharp/programming-guide/index.md)
+- [C# Programming Guide](./programming-guide/index.md)
 - [Visual Studio Samples](/visualstudio/ide/visual-studio-samples)

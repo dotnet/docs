@@ -64,7 +64,7 @@ In a distributed system containing interconnected services, it is necessary to d
     ```
 
     > [!NOTE]
-    >  All events with the same GUID in the ActivityID are related to one request. This can be used to correlate messages from a specific client to a specific service. If the client called another service, then the same client could be identified by ActivityID.
+    > All events with the same GUID in the ActivityID are related to one request. This can be used to correlate messages from a specific client to a specific service. If the client called another service, then the same client could be identified by ActivityID.
 
 11. In some cases, the ActivityID can change from the original GUID to a new ActivityID. In that case, a transfer event is emitted. This event ID is 499, and the event will contain the following data in the header.
 
@@ -81,4 +81,4 @@ In a distributed system containing interconnected services, it is necessary to d
     ```
 
     > [!NOTE]
-    >  The transfer event records the change of the active ActivityID from the GUID specified as the ActivityID to the GUID specified as RelatedActivityID. After the transfer event is emitted, all events will contain the new GUID as the ActivityID.
+    > The transfer event records the change of the active ActivityID from the GUID specified as the ActivityID to the GUID specified as RelatedActivityID. After the transfer event is emitted, all events will contain the new GUID as the ActivityID.

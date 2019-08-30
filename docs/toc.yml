@@ -267,6 +267,14 @@
       href: core/docker/build-container.md
     - name: Container Tools in Visual Studio
       href: /visualstudio/containers/overview
+  - name: Diagnostic tools
+    items:
+    - name: Overview
+      href: core/diagnostics/index.md
+    - name: Managed debuggers
+      href: core/diagnostics/managed-debuggers.md
+    - name: Logging and tracing
+      href: core/diagnostics/logging-tracing.md
   - name: Unit Testing
     href: core/testing/index.md
     items:
@@ -432,6 +440,28 @@
       href: core/porting/winforms.md
     - name: Port WPF projects
       href: core/porting/wpf.md
+  - name: Dependency loading
+    items:
+    - name: Overview
+      href: core/dependency-loading/overview.md
+    - name: Understanding AssemblyLoadContext
+      href: core/dependency-loading/understanding-assemblyloadcontext.md
+    - name: Loading details
+      items:
+      - name: Default dependency probing
+        href: core/dependency-loading/default-probing.md
+      - name: Loading managed assemblies
+        href: core/dependency-loading/loading-managed.md
+      - name: Loading satellite assemblies
+        href: core/dependency-loading/loading-resources.md
+      - name: Loading unmanaged libraries
+        href: core/dependency-loading/loading-unmanaged.md
+    - name: Tutorials
+      items:
+      - name: Create a .NET Core application with plugins
+        href: core/tutorials/creating-app-with-plugin-support.md
+      - name: How to use and debug assembly unloadability in .NET Core
+        href: standard/assembly/unloadability-howto.md
   - name: Build .NET Core from source
     href: core/build/index.md
     items:
@@ -595,14 +625,16 @@
     items:
     - name: C# Type system
       href: csharp/programming-guide/types/index.md
+    - name: Nullable reference types
+      href: csharp/nullable-references.md
+    - name: Describe nullable APIs using attributes and constraints
+      href: csharp/nullable-attributes.md
     - name: Namespaces
       href: csharp/programming-guide/namespaces/index.md
     - name: Basic Types
       href: csharp/basic-types.md
     - name: Classes
       href: csharp/programming-guide/classes-and-structs/classes.md
-    - name: Nullable reference types
-      href: csharp/nullable-references.md
     - name: Structs
       href: csharp/structs.md
     - name: Tuples

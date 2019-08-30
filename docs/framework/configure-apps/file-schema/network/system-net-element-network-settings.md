@@ -32,22 +32,22 @@ Contains settings that specify how the .NET Framework connects to the network.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[authenticationModules](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate Internet requests.|  
-|[connectionManagement](../../../../../docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to an Internet host.|  
-|[defaultProxy](../../../../../docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
-|[mailSettings](../../../../../docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
-|[requestCaching](../../../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)|Controls the caching mechanism for network requests.|  
-|[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for classes in the <xref:System.Net> and related child namespaces.|  
-|[webRequestModules](../../../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from Internet hosts.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate Internet requests.|  
+|[connectionManagement](connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to an Internet host.|  
+|[defaultProxy](defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
+|[mailSettings](mailsettings-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
+|[requestCaching](requestcaching-element-network-settings.md)|Controls the caching mechanism for network requests.|  
+|[settings](settings-element-network-settings.md)|Configures basic network options for classes in the <xref:System.Net> and related child namespaces.|  
+|[webRequestModules](webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from Internet hosts.|  
   
 ### Parent Elements  
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[configuration](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|Contains settings for all namespaces.|  
+|[configuration](../configuration-element.md)|Contains settings for all namespaces.|  
   
 ## Remarks  
- The [\<system.net>](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md) element contains settings for classes in the <xref:System.Net> and related child namespaces. The settings configure authentication modules, connection management, mail settings, the proxy server, and Internet request modules for receiving information from Internet hosts.  
+ The [\<system.net>](system-net-element-network-settings.md) element contains settings for classes in the <xref:System.Net> and related child namespaces. The settings configure authentication modules, connection management, mail settings, the proxy server, and Internet request modules for receiving information from Internet hosts.  
   
 ## Example  
  The following example shows a typical configuration used by <xref:System.Net> classes.  
@@ -88,4 +88,4 @@ Contains settings that specify how the .NET Framework connects to the network.
   
 ## See also
 
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

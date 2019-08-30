@@ -34,7 +34,7 @@ Access control is subject to the following rules:
 
 - Accessibility for individual cases in a discriminated union is determined by the accessibility of the discriminated union itself. That is, a particular union case is no less accessible than the union itself.
 
-- Accessibility for individual fields of a record type cannot is determined by the accessibility of the record itself. That is, a particular record label is no less accessible than the record itself.
+- Accessibility for individual fields of a record type is determined by the accessibility of the record itself. That is, a particular record label is no less accessible than the record itself.
 
 ## Example
 

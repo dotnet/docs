@@ -32,13 +32,13 @@ Quantifiers specify how many instances of a character, group, or character class
  The quantities `n` and `m` are integer constants. Ordinarily, quantifiers are greedy; they cause the regular expression engine to match as many occurrences of particular patterns as possible. Appending the `?` character to a quantifier makes it lazy; it causes the regular expression engine to match as few occurrences as possible. For a complete description of the difference between greedy and lazy quantifiers, see the section [Greedy and Lazy Quantifiers](#Greedy) later in this topic.  
   
 > [!IMPORTANT]
->  Nesting quantifiers (for example, as the regular expression pattern `(a*)*` does) can increase the number of comparisons that the regular expression engine must perform, as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md).  
+> Nesting quantifiers (for example, as the regular expression pattern `(a*)*` does) can increase the number of comparisons that the regular expression engine must perform, as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md).  
   
 ## Regular Expression Quantifiers  
  The following sections list the quantifiers supported by .NET regular expressions.  
   
 > [!NOTE]
->  If the *, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](../../../docs/standard/base-types/character-classes-in-regular-expressions.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("\*") character.  
+> If the *, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](../../../docs/standard/base-types/character-classes-in-regular-expressions.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("\*") character.  
   
 ### Match Zero or More Times: *  
  The `*` quantifier matches the preceding element zero or more times. It is equivalent to the `{0,}` quantifier. `*` is a greedy quantifier whose lazy equivalent is `*?`.  
@@ -179,7 +179,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\(??`|Match zero or one occurrence of the opening parenthesis.|  
   
 ### Match Exactly n Times (Lazy Match): {n}?  
- The `{`*n*`}?` quantifier matches the preceding element exactly `n` times, where *n* is any integer. It is the lazy counterpart of the greedy quantifier `{`*n*`}+`.  
+ The `{`*n*`}?` quantifier matches the preceding element exactly `n` times, where *n* is any integer. It is the lazy counterpart of the greedy quantifier `{`*n*`}`.  
   
  In the following example, the regular expression `\b(\w{3,}?\.){2}?\w{3,}?\b` is used to identify a Web site address. Note that it matches "www.microsoft.com" and "msdn.microsoft.com", but does not match "mywebsite" or "mycompany.com".  
   
@@ -203,7 +203,7 @@ Quantifiers specify how many instances of a character, group, or character class
 ### Match Between n and m Times (Lazy Match): {n,m}?  
  The `{`*n*`,`*m*`}?` quantifier matches the preceding element between `n` and `m` times, where *n* and *m* are integers, but as few times as possible. It is the lazy counterpart of the greedy quantifier `{`*n*`,`*m*`}`.  
   
- In the following example, the regular expression `\b[A-Z](\w*\s+){1,10}?[.!?]` matches sentences that contain between one and ten words. It matches all the sentences in the input string except for one sentence that contains 18 words.  
+ In the following example, the regular expression `\b[A-Z](\w*?\s*?){1,10}[.!?]` matches sentences that contain between one and ten words. It matches all the sentences in the input string except for one sentence that contains 18 words.  
   
  [!code-csharp[RegularExpressions.Quantifiers#12](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#12)]
  [!code-vb[RegularExpressions.Quantifiers#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#12)]  
@@ -214,8 +214,8 @@ Quantifiers specify how many instances of a character, group, or character class
 |-------------|-----------------|  
 |`\b`|Start at a word boundary.|  
 |`[A-Z]`|Match an uppercase character from A to Z.|  
-|`(\w*\s+)`|Match zero or more word characters, followed by one or more white-space characters. This is the first capture group.|  
-|`{1,10}?`|Match the previous pattern between 1 and 10 times, but as few times as possible.|  
+|`(\w*?\s*?)`|Match zero or more word characters, followed by one or more white-space characters, but as few times as possible. This is the first capture group.|  
+|`{1,10}`|Match the previous pattern between 1 and 10 times.|  
 |`[.!?]`|Match any one of the punctuation characters ".", "!", or "?".|  
   
 <a name="Greedy"></a>   

@@ -27,59 +27,59 @@ ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
 
 Configuration files are standard XML files that you can use to change settings and set policies for your apps. The .NET Framework configuration schema consists of elements that you can use in configuration files to control the behavior of your apps. The table of contents for this section reflects the schema hierarchy for startup, runtime, network, and other types of configuration settings.
 
-For information about the types, format, and location of configuration files, see the article [Configuring Apps](~/docs/framework/configure-apps/index.md). Familiarize yourself with XML if you want to edit the configuration files directly.
+For information about the types, format, and location of configuration files, see the article [Configuring Apps](../index.md). Familiarize yourself with XML if you want to edit the configuration files directly.
 
 > [!IMPORTANT]
 > XML tags and attributes in configuration files are case-sensitive.
 
 ## In this section
 
-[**\<configuration>** Element](~/docs/framework/configure-apps/file-schema/configuration-element.md)
+[**\<configuration>** Element](configuration-element.md)
 Describes the `<configuration>` element, which is the top-level element for all configuration files.
 
-[**\<assemblyBinding>** Element](~/docs/framework/configure-apps/file-schema/assemblybinding-element-for-configuration.md)
+[**\<assemblyBinding>** Element](assemblybinding-element-for-configuration.md)
 Specifies assembly binding policy at the configuration level.
 
-[**\<linkedConfiguration>** Element](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md)
+[**\<linkedConfiguration>** Element](linkedconfiguration-element.md)
 Specifies a configuration file to include.
 
-[Startup Settings Schema](~/docs/framework/configure-apps/file-schema/startup/index.md)
+[Startup Settings Schema](./startup/index.md)
 Describes the elements that specify which version of the common language runtime to use.
 
-[Runtime Settings Schema](~/docs/framework/configure-apps/file-schema/runtime/index.md)
+[Runtime Settings Schema](./runtime/index.md)
 Describes the elements that configure assembly binding and runtime behavior.
 
-[Network Settings Schema](~/docs/framework/configure-apps/file-schema/network/index.md)
+[Network Settings Schema](./network/index.md)
 Describes the elements that specify how the .NET Framework connects to the Internet.
 
-[Cryptography Settings Schema](~/docs/framework/configure-apps/file-schema/cryptography/index.md)
+[Cryptography Settings Schema](./cryptography/index.md)
 Describes elements that map friendly algorithm names to classes that implement cryptography algorithms.
 
-[Configuration Sections Schema](~/docs/framework/configure-apps/file-schema/configuration-sections-schema.md)
+[Configuration Sections Schema](configuration-sections-schema.md)
 Describes the elements used to create and use configuration sections for custom settings.
 
-[Trace and Debug Settings Schema](~/docs/framework/configure-apps/file-schema/trace-debug/index.md)
+[Trace and Debug Settings Schema](./trace-debug/index.md)
 Describes the elements that specify trace switches and listeners.
 
-[Compiler and Language Provider Settings Schema](~/docs/framework/configure-apps/file-schema/compiler/index.md)
+[Compiler and Language Provider Settings Schema](./compiler/index.md)
 Describes the elements that specify compiler configuration for available language providers.
 
-[Application Settings Schema](~/docs/framework/configure-apps/file-schema/application-settings-schema.md)
+[Application Settings Schema](application-settings-schema.md)
 Describes the elements that enable a Windows Forms or ASP.NET application to store and retrieve application-scoped and user-scoped settings.
 
-[App Settings Schema](~/docs/framework/configure-apps/file-schema/appsettings/index.md)
+[App Settings Schema](./appsettings/index.md)
 Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application.
 
-[Web Settings Schema](~/docs/framework/configure-apps/file-schema/web/index.md)
+[Web Settings Schema](./web/index.md)
 All elements in the Web settings schema, which includes elements for configuring how ASP.NET works with a host application such as IIS. Used in *Aspnet.config* files.
 
 [Windows Forms Configuration Schema](winforms/index.md)
 All elements in the Windows Forms application configuration section, which includes customizations such as multi-monitor and high DPI support.
 
-[WCF Configuration Schema](~/docs/framework/configure-apps/file-schema/wcf/index.md)
+[WCF Configuration Schema](./wcf/index.md)
 All elements that enable you to configure WCF service and client applications.
 
-[WCF Directive Syntax](~/docs/framework/configure-apps/file-schema/wcf-directive/index.md)
+[WCF Directive Syntax](./wcf-directive/index.md)
 Describes the `@ServiceHost` directive, which defines page-specific attributes used by the .svc compiler.
 
 [WIF Configuration Schema](windows-identity-foundation/index.md)

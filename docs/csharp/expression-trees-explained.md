@@ -42,11 +42,11 @@ Visually, the entire statement is a tree: You could start at the root node, and 
 each node in the tree to see the code that makes up the statement:
 
 - Variable declaration statement with assignment (`var sum = 1 + 2;`)
-  * Implicit variable type declaration (`var sum`)
+  - Implicit variable type declaration (`var sum`)
     - Implicit var keyword (`var`)
     - Variable name declaration (`sum`)
-  * Assignment operator (`=`)
-  * Binary addition expression (`1 + 2`)
+  - Assignment operator (`=`)
+  - Binary addition expression (`1 + 2`)
     - Left operand (`1`)
     - Addition operator (`+`)
     - Right operand (`2`)

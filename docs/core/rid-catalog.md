@@ -50,7 +50,7 @@ The above RID specifies that `osx.10.12-x64` imports `osx.10.11-x64`. So, when N
 
 The following example shows a slightly bigger RID graph also defined in the *runtime.json*  file:
 
-```console
+```
     win7-x64    win7-x86
        |   \   /    |
        |   win7     |

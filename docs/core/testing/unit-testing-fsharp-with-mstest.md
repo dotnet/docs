@@ -17,7 +17,7 @@ Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to cre
 makes it easier to manage both the class library and the unit test project.
 Inside the solution directory, create a *MathService* directory. The directory and file structure thus far is shown below:
 
-```console
+```filesystem
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService
@@ -66,7 +66,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 You have the following final solution layout:
 
-```console
+```filesystem
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService

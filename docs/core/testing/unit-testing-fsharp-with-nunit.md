@@ -27,7 +27,7 @@ dotnet new sln
 
 Next, create a *MathService* directory. The following outline shows the directory and file structure so far:
 
-```console
+```filesystem
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService
@@ -56,7 +56,7 @@ dotnet sln add .\MathService\MathService.fsproj
 
 Next, create the *MathService.Tests* directory. The following outline shows the directory structure:
 
-```console
+```filesystem
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService
@@ -91,7 +91,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 You have the following final solution layout:
 
-```console
+```filesystem
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService

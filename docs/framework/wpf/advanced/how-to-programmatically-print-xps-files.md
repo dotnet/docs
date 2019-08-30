@@ -10,11 +10,11 @@ helpviewer_keywords:
 ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
 ---
 # How to: Programmatically Print XPS Files
-You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> method to print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files without opening a <xref:System.Windows.Controls.PrintDialog> or, in principle, any [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] at all.  
+You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> method to print XML Paper Specification (XPS) files without opening a <xref:System.Windows.Controls.PrintDialog> or, in principle, any [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] at all.  
   
- You can also print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files using the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90)).  
+ You can also print XML Paper Specification (XPS) files using the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90)).  
   
- Another way of printing [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] is to use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> or <xref:System.Windows.Controls.PrintDialog.PrintVisual%2A> methods of the <xref:System.Windows.Controls.PrintDialog> control. See [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md).  
+ Another way of printing XML Paper Specification (XPS) is to use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> or <xref:System.Windows.Controls.PrintDialog.PrintVisual%2A> methods of the <xref:System.Windows.Controls.PrintDialog> control. See [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md).  
   
 ## Example  
  The main steps to using the three-parameter <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method are as follows. The example below gives details.  

@@ -57,7 +57,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Package architecture serves as the foundation for a number of key technologies:  
   
-- [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents conforming to the [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)].  
+- [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents conforming to the XML Paper Specification (XPS).  
   
 - Microsoft Office "12" open XML format documents (.docx).  
   
@@ -119,7 +119,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
 <a name="XPS_Documents"></a>   
 ## XPS Documents  
- [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] document is a package that contains one or more fixed-documents along with all the resources and information required for rendering.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] is also the native [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] print spool file format.  An <xref:System.Windows.Xps.Packaging.XpsDocument> is stored in standard ZIP dataset, and can include a combination of XML and binary components, such as image and font files. [PackageRelationships](#PackageRelationships) are used to define the dependencies between the content and the resources required to fully render the document.  The <xref:System.Windows.Xps.Packaging.XpsDocument> design provides a single, high-fidelity document solution that supports multiple uses:  
+ XML Paper Specification (XPS) document is a package that contains one or more fixed-documents along with all the resources and information required for rendering.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] is also the native [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] print spool file format.  An <xref:System.Windows.Xps.Packaging.XpsDocument> is stored in standard ZIP dataset, and can include a combination of XML and binary components, such as image and font files. [PackageRelationships](#PackageRelationships) are used to define the dependencies between the content and the resources required to fully render the document.  The <xref:System.Windows.Xps.Packaging.XpsDocument> design provides a single, high-fidelity document solution that supports multiple uses:  
   
 - Reading, writing, and storing fixed-document content and resources as a single, portable, and easy-to-distribute file.  
   

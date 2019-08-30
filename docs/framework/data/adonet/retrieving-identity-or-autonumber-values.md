@@ -539,4 +539,4 @@ class Program {
 - [AcceptChanges and RejectChanges](./dataset-datatable-dataview/acceptchanges-and-rejectchanges.md)
 - [Merging DataSet Contents](./dataset-datatable-dataview/merging-dataset-contents.md)
 - [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

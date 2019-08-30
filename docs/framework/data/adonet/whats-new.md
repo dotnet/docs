@@ -53,4 +53,4 @@ The .NET Framework 4.5 adds APIs that enable new scenarios when working with the
 - [ADO.NET Overview](ado-net-overview.md)
 - [SQL Server and ADO.NET](./sql/index.md)
 - [What's New in WCF Data Services 5.0](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

@@ -29,4 +29,4 @@ After establishing a connection to a data source, you can execute commands and r
 - [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
 - [DataSets, DataTables, and DataViews](./dataset-datatable-dataview/index.md)
 - [Connecting to a Data Source](connecting-to-a-data-source.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

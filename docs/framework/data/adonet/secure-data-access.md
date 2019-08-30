@@ -88,4 +88,4 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 - [Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))
 - [Protecting Connection Information](protecting-connection-information.md)
 - [Connection String Builders](connection-string-builders.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

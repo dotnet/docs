@@ -62,4 +62,3 @@ SET NOCOUNT OFF;
 
 - [ADO.NET Overview](ado-net-overview.md)
 - [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)
-- [ADO.NET Overview](ado-net-overview.md)

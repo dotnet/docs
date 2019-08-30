@@ -39,24 +39,24 @@ The <xref:System.Transactions.TransactionScope> class provides a simple way to m
  Transaction scope can be nested by calling a method that uses a <xref:System.Transactions.TransactionScope> from within a method that uses its own scope, as is the case with the `RootMethod` method in the following example,  
   
 ```csharp  
-void RootMethod()  
-{  
-     using(TransactionScope scope = new TransactionScope())  
-     {  
-          /* Perform transactional work here */  
-          SomeMethod();  
-          scope.Complete();  
-     }  
-}  
-  
-void SomeMethod()  
-{  
-     using(TransactionScope scope = new TransactionScope())  
-     {  
-          /* Perform transactional work here */  
-          scope.Complete();  
-     }  
-}  
+void RootMethod()
+{
+    using(TransactionScope scope = new TransactionScope())
+    {
+        /* Perform transactional work here */
+        SomeMethod();
+        scope.Complete();
+    }
+}
+
+void SomeMethod()
+{
+    using(TransactionScope scope = new TransactionScope())
+    {
+        /* Perform transactional work here */
+        scope.Complete();
+    }
+}
 ```  
   
  The top-most transaction scope is referred to as the root scope.  
@@ -93,26 +93,24 @@ void SomeMethod()
  The following example shows a <xref:System.Transactions.TransactionScope> object that creates three nested scope objects, each instantiated with a different <xref:System.Transactions.TransactionScopeOption> value.  
   
 ```csharp  
-using(TransactionScope scope1 = new TransactionScope())   
-//Default is Required   
-{   
-     using(TransactionScope scope2 = new   
-      TransactionScope(TransactionScopeOption.Required))   
-     {  
-     ...  
-     }   
+using(TransactionScope scope1 = new TransactionScope())
+//Default is Required
+{
+    using(TransactionScope scope2 = new TransactionScope(TransactionScopeOption.Required))
+    {
+        //...
+    }
+
+    using(TransactionScope scope3 = new TransactionScope(TransactionScopeOption.RequiresNew))   
+    {
+        //...  
+    }
   
-     using(TransactionScope scope3 = new TransactionScope(TransactionScopeOption.RequiresNew))   
-     {  
-     ...  
-     }   
-  
-     using(TransactionScope scope4 = new   
-        TransactionScope(TransactionScopeOption.Suppress))   
-    {  
-     ...  
-    }   
-}  
+    using(TransactionScope scope4 = new TransactionScope(TransactionScopeOption.Suppress))
+    {
+        //...  
+    }
+}
 ```  
   
  The example shows a code block without any ambient transaction creating a new scope (`scope1`) with <xref:System.Transactions.TransactionScopeOption.Required>. The scope `scope1` is a root scope as it creates a new transaction (Transaction A) and makes Transaction A the ambient transaction. `Scope1` then creates three more objects, each with a different <xref:System.Transactions.TransactionScopeOption> value. For example, `scope2` is created with <xref:System.Transactions.TransactionScopeOption.Required>, and since there is an ambient transaction, it joins the first transaction created by `scope1`. Note that `scope3` is the root scope of a new transaction, and that `scope4` has no ambient transaction.  
@@ -124,22 +122,21 @@ using(TransactionScope scope1 = new TransactionScope())
  <xref:System.Transactions.TransactionScopeOption.Suppress> is useful when you want to preserve the operations performed by the code section, and do not want to abort the ambient transaction if the operations fail. For example, when you want to perform logging or audit operations, or when you want to publish events to subscribers regardless of whether your ambient transaction commits or aborts. This value allows you to have a non-transactional code section inside a transaction scope, as shown in the following example.  
   
 ```csharp  
-using(TransactionScope scope1 = new TransactionScope())  
-{  
-     try  
-     {  
-          //Start of non-transactional section   
-          using(TransactionScope scope2 = new  
-             TransactionScope(TransactionScopeOption.Suppress))  
-          {  
-               //Do non-transactional work here  
-          }  
-          //Restores ambient transaction here  
-   }  
-     catch  
-     {}  
-   //Rest of scope1  
-}  
+using(TransactionScope scope1 = new TransactionScope())
+{
+    try
+    {
+        //Start of non-transactional section
+        using(TransactionScope scope2 = new
+            TransactionScope(TransactionScopeOption.Suppress))  
+        {  
+            //Do non-transactional work here  
+        }  
+        //Restores ambient transaction here
+   }
+   catch {}  
+   //Rest of scope1
+}
 ```  
   
 ### Voting inside a nested scope  

@@ -61,6 +61,7 @@ One option for implementing this scenario is for the calling microservice to mak
 
 
 ![Direct HTTP communication](./media/direct-http-communication.png)
+
 **Figure 4-9**. Direct HTTP communication
 
 While direct HTTP calls between microservices are relatively simple to implement, care should be taken to minimize this practice. Because what were once self-contained, independent services, able to evolve independently and deploy frequently, now become coupled to each other. As coupling among microservices increase, their architectural benefits diminish.
@@ -68,6 +69,7 @@ While direct HTTP calls between microservices are relatively simple to implement
 While executing an infrequent request that makes a single synchronous HTTP network call might be acceptable, high-volume calls that invoke multiple services aren't advisable. They can increase latency and negatively impact the performance, scalability, and availability of your system. Even worse, a long series of direct HTTP communication can lead to deep and complex chains of synchronous microservices calls, shown in Figure 4-10:
 
 ![Chaining HTTP queries](./media/chaining-http-queries.png)
+
 **Figure 4-10**. Chaining HTTP queries
 
 While exaggerated, you can certainly imagine the risk in the design shown in the previous image. What happens if Step \#3 fails? Or Step \#8 fails? How do you recover? What if Step \#6 is slow because the underlying service is busy? How do you continue? Even if all works correctly, think of the latency this call would incur, which is the sum of the latency of each step.
@@ -83,6 +85,7 @@ One option for reducing microservice coupling is implementing the [Materialized 
 Another option for such a workflow orchestration is a [Aggregator Service](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-11.
 
 ![Aggregator service](./media/aggregator-service.png)
+
 **Figure 4-11**. Aggregator service
 
 The Aggregator service isolates an operation that makes calls to multiple backend services, centralizing its logic into an orchestration. In the previous figure, the purple Checkout Aggregator Microservice orchestrates the workflow for the Checkout operation, which includes calls to multiple services in a sequenced order. Data from the workflow can be aggregated together and returned to the caller.
@@ -177,7 +180,7 @@ In the previous figure, note the *event bus* component that sits in the middle o
 
 With eventing, we move from queuing technology to *topics*. A [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) is similar to a queue, but supports a one-to-many messaging pattern where a multiple subscribers choose to receive a message that is sent by a publisher. Figure 4-17 shows a topic architecture.
 
-![Topic architecture](./media/top-architecture.png)
+![Topic architecture](./media/topic-architecture.png)
 **Figure 4-17**. Topic architecture
 
 Note the topic plubming in the previous figure. Publishers send messages to the topic. Subscribers, on the other end, receive messages from subscripptions. Think of each subscription as a standalone queue. In the middle, the topic forwards messages to the subscriptions based on a set of *rules*, shown in dark blue boxes. Rules act as a filter that determine the messages that are forwarded to a specific subscription, enabling a subscription to listen only for messages that are important to it. In the previous figure, if an "OrderCreated" event is published, the topic would send it to Subscription \#1 and Subscription \#3, but not to Subscription \#2 as the message isn't a "QuoteSent".

@@ -43,13 +43,13 @@ Author:
 
 Participants and Reviewers:
 
-> **Cesar de la Torre**, Sr. PM, .NET product team, Microsoft Corp.
+> **Cesar De la Torre**, Principal Program Manager, .NET team, Microsoft
 >
 > **Nish Anil**, Sr. Program Manager, .NET team, Microsoft
 
 Editors:
 
-> **Maira Wenzel**, Content Developer, .NET team, Microsoft
+> **Maira Wenzel**, Sr. Content Developer, .NET team, Microsoft
 
 ## Who should use this guide
 
@@ -59,7 +59,7 @@ A secondary audience is technical decision-makers who plan to choose whether to 
 
 ## How you can use this guide
 
-This guide begins by defining cloud-native and introducing a reference application built using cloud-native principles and technologies. Beyond these first two chapters, the rest of the book is broken up into specific chapters focused on topics common to most cloud-native applications. You can jump to any of these chapters to learn about cloud-native approaches to:
+This guide begins by defining cloud native and introducing a reference application built using cloud-native principles and technologies. Beyond these first two chapters, the rest of the book is broken up into specific chapters focused on topics common to most cloud-native applications. You can jump to any of these chapters to learn about cloud-native approaches to:
 
 - Data and data access
 - Communication patterns
@@ -69,7 +69,7 @@ This guide begins by defining cloud-native and introducing a reference applicati
 - Identity and security
 - DevOps
 
-This guide is available both in PDF form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the tradeoffs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
+This guide is available both in PDF form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
 
 >[!div class="step-by-step"]
 >[Next](introduction-to-cloud-native-applications.md)

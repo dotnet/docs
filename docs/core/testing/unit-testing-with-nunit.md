@@ -24,7 +24,7 @@ dotnet new sln
  
 Next, create a *PrimeService* directory. The following outline shows the directory and file structure so far:
 
-```
+```console
 /unit-testing-using-nunit
     unit-testing-using-nunit.sln
     /PrimeService
@@ -63,7 +63,7 @@ dotnet sln add PrimeService/PrimeService.csproj
 
 Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
-```
+```console
 /unit-testing-using-nunit
     unit-testing-using-nunit.sln
     /PrimeService
@@ -92,7 +92,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 The following outline shows the final solution layout:
 
-```
+```console
 /unit-testing-using-nunit
     unit-testing-using-nunit.sln
     /PrimeService

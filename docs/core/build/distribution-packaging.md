@@ -9,8 +9,8 @@ ms.custom: "seodec18"
 
 As .NET Core becomes available on more and more platforms, it's useful to learn how to package, name, and version it. This way, package maintainers can help ensure a consistent experience no matter where users choose to run .NET. This article is useful for users that are:
 
-* Attempting to build .NET Core from source.
-* Wanting to make changes to the .NET Core CLI that could impact the resulting layout or packages produced.
+- Attempting to build .NET Core from source.
+- Wanting to make changes to the .NET Core CLI that could impact the resulting layout or packages produced.
 
 ## Disk layout
 

@@ -41,8 +41,8 @@ Let's do a quick walkthrough:
 
    The project file specifies everything that's needed to restore dependencies and build the program.
 
-   * The `OutputType` tag specifies that we're building an executable, in other words a console application.
-   * The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 2.1.
+   - The `OutputType` tag specifies that we're building an executable, in other words a console application.
+   - The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 2.1.
 
    `Program.cs`:
 

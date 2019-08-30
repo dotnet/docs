@@ -59,7 +59,7 @@ Path containing probing policy and assemblies to probe.
 
 Path to a *deps.json* file.
 
-A *deps.json* file contains a list of dependencies, compilation dependencies and version information used to address assembly conflicts. For more details on this file, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
+A *deps.json* file contains a list of dependencies, compilation dependencies and version information used to address assembly conflicts. For more information about this file, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
 
 `-d|--diagnostics`
 
@@ -98,7 +98,7 @@ Defines behavior when the required shared framework is not available. `N` can be
 
 Path to a *runtimeconfig.json* file.
 
-A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more details, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
+A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
 
 `-v|--verbosity <LEVEL>`
 
@@ -386,3 +386,7 @@ Specifies the location of the servicing index to use by the shared host when loa
 Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
 
 ---
+
+## See also
+
+- [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md)

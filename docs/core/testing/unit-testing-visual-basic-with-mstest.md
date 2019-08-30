@@ -17,7 +17,7 @@ Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to cre
 makes it easier to manage both the class library and the unit test project.
 Inside the solution directory, create a *PrimeService* directory. You have the following directory and file structure thus far:
 
-```
+```console
 /unit-testing-vb-mstest
     unit-testing-vb-mstest.sln
     /PrimeService
@@ -44,7 +44,7 @@ to add the class library project to the solution.
 
 Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
-```
+```console
 /unit-testing-vb-mstest
     unit-testing-vb-mstest.sln
     /PrimeService
@@ -65,7 +65,7 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added MSTest and the MSTest runner. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```
+```console
 dotnet add reference ../PrimeService/PrimeService.vbproj
 ```
 
@@ -73,7 +73,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 You have the following final solution layout:
 
-```
+```console
 /unit-testing-vb-mstest
     unit-testing-vb-mstest.sln
     /PrimeService

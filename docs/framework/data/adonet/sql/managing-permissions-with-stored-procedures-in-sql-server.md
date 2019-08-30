@@ -59,4 +59,4 @@ One method of creating multiple lines of defense around your database is to impl
 - [Signing Stored Procedures in SQL Server](signing-stored-procedures-in-sql-server.md)
 - [Customizing Permissions with Impersonation in SQL Server](customizing-permissions-with-impersonation-in-sql-server.md)
 - [Modifying Data with Stored Procedures](../modifying-data-with-stored-procedures.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

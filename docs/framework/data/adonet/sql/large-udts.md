@@ -131,4 +131,4 @@ End Using
 - [Retrieving Database Schema Information](../retrieving-database-schema-information.md)
 - [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md)
 - [SQL Server Binary and Large-Value Data](sql-server-binary-and-large-value-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

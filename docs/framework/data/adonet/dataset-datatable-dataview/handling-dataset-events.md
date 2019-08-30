@@ -54,4 +54,4 @@ private static void DataSetMergeFailed(
 - [DataSets, DataTables, and DataViews](index.md)
 - [Validating Data](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/t3b36awf(v=vs.120))
 - [Retrieving and Modifying Data in ADO.NET](../retrieving-and-modifying-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

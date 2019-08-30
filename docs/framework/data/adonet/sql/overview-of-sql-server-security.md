@@ -38,4 +38,4 @@ A defense-in-depth strategy, with overlapping layers of security, is the best wa
 - [Securing ADO.NET Applications](../securing-ado-net-applications.md)
 - [SQL Server Security](sql-server-security.md)
 - [Application Security Scenarios in SQL Server](application-security-scenarios-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

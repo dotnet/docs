@@ -7,7 +7,7 @@ ms.date: 03/07/2019
 
 # Architecting Cloud Native .NET Applications for Azure
 
-![cover image](./media/cover-preview.png)
+![cover image](./media/cover.png)
 
 PUBLISHED BY
 

@@ -102,4 +102,4 @@ This configuration section contains all the workflow configuration elements.
   
 |Element|Description|  
 |-------------|-----------------|  
-|\<configuration>|The root element for all configuration elements in a .NET configuration file.|
+|[\<configuration>](../configuration-element.md)|The root element for all configuration elements in a .NET configuration file.|

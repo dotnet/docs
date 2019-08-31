@@ -20,7 +20,7 @@ To identify a string literal as an interpolated string, prepend it with the `$` 
 
 As the example shows, you include an expression in an interpolated string by enclosing it with braces:
 
-```
+```csharp
 {<interpolationExpression>}
 ```
 
@@ -30,7 +30,7 @@ Interpolated strings support all the capabilities of the [string composite forma
 
 You specify a format string that is supported by the type of the expression result by following the interpolation expression with a colon (":") and the format string:
 
-```
+```csharp
 {<interpolationExpression>:<formatString>}
 ```
 
@@ -44,7 +44,7 @@ For more information, see the [Format String Component](../../standard/base-type
 
 You specify the minimum field width and the alignment of the formatted expression result by following the interpolation expression with a comma (",") and the constant expression:
 
-```
+```csharp
 {<interpolationExpression>,<alignment>}
 ```
 
@@ -52,7 +52,7 @@ If the *alignment* value is positive, the formatted expression result is right-a
 
 If you need to specify both alignment and a format string, start with the alignment component:
 
-```
+```csharp
 {<interpolationExpression>,<alignment>:<formatString>}
 ```
 
@@ -68,7 +68,7 @@ For more information, see the [Alignment Component](../../standard/base-types/co
 
 Interpolated strings support all escape sequences that can be used in ordinary string literals. For more information, see [String escape sequences](../programming-guide/strings/index.md#string-escape-sequences).
 
-To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. A verbatim interpolated string starts with the `$` character followed by the `@` character.
+To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the `$` character followed by the `@` character. Starting with C# 8.0, you can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
 
 To include a brace, "{" or "}", in a result string, use two braces, "{{" or "}}". For more information, see the [Escaping Braces](../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic.
 

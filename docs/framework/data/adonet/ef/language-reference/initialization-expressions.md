@@ -42,4 +42,4 @@ An initialization expression initializes a new object. Most initialization expre
   
 ## See also
 
-- [Expressions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)
+- [Expressions in LINQ to Entities Queries](expressions-in-linq-to-entities-queries.md)

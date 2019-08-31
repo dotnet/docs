@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ff3e3048-0d5d-4502-ae5c-9187fcbd0514
 ---
 # FROM (Entity SQL)
-Specifies the collection used in [SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md) statements.
+Specifies the collection used in [SELECT](select-entity-sql.md) statements.
 
 ## Syntax
 
@@ -161,6 +161,6 @@ select {1} from {2, 3}
 
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Query Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
-- [Nullable Structured Types](../../../../../../docs/framework/data/adonet/ef/language-reference/nullable-structured-types-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Query Expressions](query-expressions-entity-sql.md)
+- [Nullable Structured Types](nullable-structured-types-entity-sql.md)

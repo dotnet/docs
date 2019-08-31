@@ -26,6 +26,6 @@ This topic describes how [!INCLUDE[esql](../../../../../../includes/esql-md.md)]
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
-- [Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Entity SQL Overview](entity-sql-overview.md)
+- [Functions](functions-entity-sql.md)

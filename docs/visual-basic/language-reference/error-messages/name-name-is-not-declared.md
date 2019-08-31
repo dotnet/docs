@@ -29,11 +29,11 @@ A statement refers to a programming element, but the compiler cannot find an ele
 
    For example, the following example fails to compile because the <xref:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger%2A?displayProperty=fullName> method cannot be found. It is not embedded in the subset of the Visual Basic Runtime included with your application.  
 
-   [!code-xml[BC30451](~/samples/snippets/visualbasic/language-reference/error-messages/bc30451/program1.vb)]
+   [!code-vb[BC30451](~/samples/snippets/visualbasic/language-reference/error-messages/bc30451/program1.vb)]
 
    To address this error, add the `<VBRuntime>Default</VBRuntime>` element to the projects `<PropertyGroup>` section, as the following Visual Basic project file shows.
 
-   [!code-vb[BC30451](~/samples/snippets/visualbasic/language-reference/error-messages/bc30451/vbruntime.vbproj?highlight=6)]
+   [!code-xml[BC30451](~/samples/snippets/visualbasic/language-reference/error-messages/bc30451/vbruntime.vbproj?highlight=6)]
 
 ## See also
 

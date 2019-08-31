@@ -136,7 +136,7 @@ ms.date: "08/30/2019"
                         </ul>
                     </li>
                     <li>
-                        <a href="#dotnetguides">.Net Guides</a>
+                        <a href="#dotnetguides">.NET Guides</a>
                         <ul id="dotnetguides" class="cardsF">
                             <li>
                                 <div class="cardSize">

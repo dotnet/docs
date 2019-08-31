@@ -53,7 +53,7 @@ APIs from the following technology areas:
 * Windows Runtime Caching
 * Windows Services
 
-For more information, see the [spec of the compatibility pack](https://github.com/dotnet/designs/blob/master/accepted/compat-pack/compat-pack.md).
+For more information, see the [specification of the compatibility pack](https://github.com/dotnet/designs/blob/master/accepted/compat-pack/compat-pack.md).
 
 ## Get started
 
@@ -65,7 +65,7 @@ For more information, see the [spec of the compatibility pack](https://github.co
 3. If you want to stay on Windows, you're all set.
 
 4. If you want to run the .NET Core application or .NET Standard library on
-   Linux or macOS, use the [API Analyzer](https://devblogs.microsoft.com/dotnet/introducing-api-analyzer/)
+   Linux or macOS, use the [API Analyzer](../../standard/analyzers/api-analyzer.md)
    to find usage of APIs that won't work cross-platform.
 
 5. Either remove the usages of those APIs, replace them with cross-platform

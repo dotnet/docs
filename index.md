@@ -73,9 +73,71 @@ ms.date: "12/04/2018"
             <li>
                 <a data-default="true" href="#docs">Docs</a>
                 <ul id="docs">
-                    <li>
+                     <li>
                         <a href="#getstarted">Get Started</a>
-                        <ul id="getstarted" class="cardsF">
+                        <ul id="getstarted" class="cardsC">
+                            <li>
+                                <a href="/dotnet/csharp/tutorials/intro-to-csharp/hello-world">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/csharp-icon.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>C# introduction</h3>
+                                                    <p>A quick interactive start.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dotnet/core/get-started">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/dotnet-core.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Build your first .NET Core app</h3>
+                                                    <p>Learn how to build your first .NET Core console app.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.asp.net/get-started">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/net-docs-web-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Build your first web app</h3>
+                                                    <p>Learn how to build your first ASP.NET Core web app.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#dotnetguide">.Net Guide</a>
+                        <ul id="dotnetguide" class="cardsF">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
@@ -88,6 +150,7 @@ ms.date: "12/04/2018"
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/standard/">.NET Guide</a></h3>
                                                 <p><a href="/dotnet/standard/get-started">Get Started</a></p>
+                                                <p><a href="https://docs.microsoft.com/en-us/learn/browse/?roles=developer&products=dotnet">Hands-on Learn Modules</a></p>
                                                 <p><a href="/dotnet/standard/tour">Tour of .NET</a></p>
                                                 <p><a href="/dotnet/standard/components">.NET Architectural Concepts</a></p>
                                             </div>
@@ -275,7 +338,7 @@ ms.date: "12/04/2018"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Build Your first web app</h3>
+                                                    <h3>Build your first web app</h3>
                                                     <p>Learn how to build your first ASP.NET Core web app.</p>
                                                 </div>
                                             </div>

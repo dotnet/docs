@@ -115,7 +115,7 @@ ms.date: "08/30/2019"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.asp.net/get-started">
+                                <a href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

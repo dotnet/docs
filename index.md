@@ -83,7 +83,7 @@ ms.date: "08/30/2019"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/dotnet/images/hub/csharp-icon.svg" alt="" />
+                                                        <img src="/dotnet/images/hub/net-docs-csharp.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -102,7 +102,7 @@ ms.date: "08/30/2019"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/dotnet/images/hub/dotnet-core.svg" alt="" />
+                                                        <img src="/dotnet/images/hub/net-docs-dotnet-core.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

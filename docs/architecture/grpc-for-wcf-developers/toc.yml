@@ -3,7 +3,92 @@
   items:
   - name: Introduction
     href: introduction.md
-  - name: Introduction to gRPC
+    items:
+    - name: Distributed Applications, Microservices, etc.
+      href: distributed-applications.md
+    - name: Remote Procedure Calls
+      href: remote-procedure-calls.md
+    - name: WCF In A Nutshell
+      href: wcf-in-a-nutshell.md
+    - name: gRPC In A Nutshell
+      href: grpc-in-a-nutshell.md
+  - name: Overview of gRPC
     href: grpc-overview.md
+    items:
+    - name: History
+      href: history.md
+    - name: Approach
+      href: approach.md
+    - name: Interface Definition Language
+      href: interface-definition-language.md
+    - name: Network protocols
+      href: network-protocols.md
+    - name: Hello gRPC
+      href: hello-grpc.md
   - name: Protocol Buffers
     href: protocol-buffers.md
+    items:
+    - name: Messages
+      href: protobuf-messages.md
+    - name: Data Types
+      href: protobuf-data-types.md
+    - name: Nested Types
+      href: protobuf-nested-types.md
+    - name: Repeated
+      href: protobuf-repeated.md
+    - name: Reserved
+      href: protobuf-reserved.md
+    - name: Any and OneOf
+      href: protobuf-any-oneof.md
+    - name: Enumerations
+      href: protobuf-enums.md
+    - name: Maps
+      href: protobuf-maps.md
+  - name: Comparing WCF services to gRPC
+    href: comparing-wcf-services-to-grpc.md
+    items:
+    - name: WCF Endpoints and gRPC methods
+      href: wcf-endpoints-and-grpc-methods.md
+    - name: Types of RPC
+      href: types-of-rpc.md
+  - name: Converting a WCF solution to gRPC
+    href: converting-wcf-to-grpc.md
+    items:
+    - name: Sample Stock Trading WCF solution
+      href: sample-wcf-solution.md
+    - name: Converting DataContracts to Protobuf messages
+      href: datacontract-to-protobuf.md
+    - name: Converting ServiceContracts to gRPC services
+      href: servicecontract-to-grpc.md
+    - name: Implementing services in ASP.NET Core 3.0
+      href: implementing-services.md
+    - name: Streaming vs Repeated
+      href: streaming-vs-repeated.md
+    - name: Client libraries
+      href: client-libraries.md
+  - name: Authentication
+    href: authentication.md
+    items:
+    - name: Channel credentials
+      href: channel-credentials.md
+    - name: Call credentials
+      href: call-credentials.md
+    - name: Extending gRPC Authentication
+      href: extending-authentication.md
+  - name: gRPC in Production
+    href: grpc-in-production.md
+    items:
+    - name: Self-hosted applications
+      href: self-hosted.md
+    - name: Docker
+      href: docker.md
+    - name: Kubernetes
+      href: kubernetes.md
+    - name: gRPC and Service Mesh
+      href: service-mesh.md
+    - name: Load-balancing
+      href: load-balancing.md
+    - name: Application Performance Management
+      href: apm.md
+  - name: Appendix
+    href: appendix.md

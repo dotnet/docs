@@ -1,16 +1,10 @@
-# Introduction to gRPC
+---
+title: Overview of gRPC
+description: gRPC for WCF Developers | gRPC Overview
+ms.date: 08/30/2019
+---
 
-## History
-
-## Approach
-
-### How gRPC and Protobuf compare to WCF and SOAP
-
-## gRPC Interface Definition Language
-
-### How IDL compares to ServiceContracts and DataContracts
-
-## Hello gRPC Example
+# Overview of gRPC
 
 >[!div class="step-by-step"]
-<!-->[Next](protocol-buffers.md)-->
+<!-->[Next](history.md)-->

@@ -1,10 +1,10 @@
+---
+title: Introduction
+description: gRPC for WCF Developers | Introduction
+ms.date: 08/30/2019
+---
+
 # Introduction
 
-## Distributed Applications and Microservices
-
-## Remote Procedure Calls
-
-## Comparing gRPC to WCF
-
 >[!div class="step-by-step"]
-<!-->[Next](grpc-overview.md)-->
+<!-->[Next](distributed-applications.md)-->

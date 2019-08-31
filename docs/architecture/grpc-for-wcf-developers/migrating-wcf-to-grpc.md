@@ -16,3 +16,5 @@ The sample WCF application is a minimal stub of set of Stock trading services, u
 
 The completed gRPC application is available [here](https://github.com/somewhere/TraderSysGRPC).
 
+>[!div class="step-by-step"]
+<!-->[Next](grpc-overview.md)-->

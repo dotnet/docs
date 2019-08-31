@@ -5,7 +5,7 @@ hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
 ms.custom: "updateeachrelease"
-ms.date: "12/04/2018"
+ms.date: "08/30/2019"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -136,8 +136,8 @@ ms.date: "12/04/2018"
                         </ul>
                     </li>
                     <li>
-                        <a href="#dotnetguide">.Net Guide</a>
-                        <ul id="dotnetguide" class="cardsF">
+                        <a href="#dotnetguides">.Net Guides</a>
+                        <ul id="dotnetguides" class="cardsF">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">

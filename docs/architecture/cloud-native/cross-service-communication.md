@@ -2,7 +2,7 @@
 title: Cross-service communication
 description: Architecting Cloud Native .NET Apps for Azure | Cross-Service Communication
 author: robvet
-ms.date: 08/30/2019
+ms.date: 08/31/2019
 ---
 
 # Cross-service communication

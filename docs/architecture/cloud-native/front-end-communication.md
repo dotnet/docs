@@ -2,7 +2,7 @@
 title: Front-end client communication
 description: Learn how front-end clients communicate with cloud-native applications
 author: robvet
-ms.date: 08/30/2019
+ms.date: 08/31/2019
 ---
 
 # Front-end client communication

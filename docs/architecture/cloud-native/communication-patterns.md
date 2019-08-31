@@ -2,7 +2,7 @@
 title: Cloud native communication patterns
 description: Learn about key service communication concerns in cloud-native applications
 author: robvet
-ms.date: 08/16/2019
+ms.date: 08/30/2019
 ---
 # Cloud-native communication patterns
 
@@ -10,11 +10,11 @@ When constructing a cloud native system, communication across services is a sign
 
 ## Communication considerations
 
-In a traditional monolithic application, functionality is implemented in a single code base. The code executes in the same executable space (process) within the operating system. This approach can have performance advantages as everything runs together in shared memory, but results in tightly coupled code that becomes difficult to maintain, evolve, and scale.
+In a monolithic application, functionality is implemented in a single code base. The code executes in the same executable space (process) within the operating system. This approach can have performance advantages as everything runs together in shared memory, but results in tightly coupled code that becomes difficult to maintain, evolve, and scale.
 
 Cloud-native systems implement a microservice-based architecture with many small, independent services. Each service executes in a separate process and is typically deployed in a container that runs inside a *cluster*. 
 
-A cluster represents a pool of virtual machines that are federated together to form a highly available environment. They're managed with an orchestration tool, which is responsible for deploying and managing the containerized microservices. Figure 4-1 shows a Kubernetes cluster deployed in the Azure cloud with the fully managed [Azure Kubernetes Services](https://docs.microsoft.com/azure/aks/intro-kubernetes).
+A cluster groups a pool of virtual machines that are federated together to form a highly available environment. They're managed with an orchestration tool, which is responsible for deploying and managing the containerized microservices. Figure 4-1 shows a Kubernetes cluster deployed in the Azure cloud with the fully managed [Azure Kubernetes Services](https://docs.microsoft.com/azure/aks/intro-kubernetes).
 
 ![A Kubernetes cluster in Azure](./media/kubernetes-cluster-in-azure.png)
 
@@ -38,7 +38,8 @@ While they provide many benefits, microservices are no free lunch. Local in proc
 
 The book [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/standard/microservices-architecture/) provides an in-depth coverage of communication patterns for microservice applications. In this chapter, we provide a high-level overview of these patterns along with implementation options available in the Azure cloud.
 
-In this chapter, we'll first address communication between front-end applications and back-end microservices and then to microservice-to-microservice communication. We'll see how the Azure cloud provides a variety of *backing services* to support cloud-native communication.  
+In this chapter, we'll first address communication between front-end applications and back-end microservices. We'll then look at microservice-to-microservice communication. 
+Finally, we'll look new innovations with service mesh technology. We'll also see how the Azure cloud provides different kinds of *backing services* to support cloud-native communication.  
 
 
 >[!div class="step-by-step"]

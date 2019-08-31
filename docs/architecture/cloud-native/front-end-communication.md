@@ -2,7 +2,7 @@
 title: Front-end client communication
 description: Learn how front-end clients communicate with cloud-native applications
 author: robvet
-ms.date: 08/24/2019
+ms.date: 08/30/2019
 ---
 
 # Front-end client communication
@@ -76,7 +76,7 @@ For moderate to large-scale cloud-native systems, you may consider [Azure API Ma
 ![Azure API Management](./media/azure-api-management.png)
 **Figure 4-5**. Azure API Management
 
-To start, API Management exposes a gateway server that allows controlled access to back-end services based upon configurable rules and policies. Your microservices are completely abstracted from front-end clients. API keys and JWT tokens determine who can do what. All traffic is logged for analytical purposes. 
+To start, API Management exposes a gateway server that allows controlled access to back-end services based upon configurable rules and policies. Your microservices are abstracted from front-end clients. API keys and JWT tokens determine who can do what. All traffic is logged for analytical purposes. 
 
 For developers, API Management offers a developer portal that provides access to services, documentation, and sample code for invoking them. Developers can use Swagger/Open API to inspect service endpoints and analyze their usage. the service works across the major development platforms: .NET, Java, Golang, and more. 
 
@@ -98,7 +98,7 @@ Here are examples of how policies can affect the behavior of your cloud-native s
 
 - Convert requests from SOAP to REST or between different data formats, such as from XML to JSON.
 
-Azure API Management can expose back-end services that are hosted anywhere – in the cloud or your data center. For legacy services that you may expose in your cloud-native systems, it supports both REST and SOAP APIs. Even other Azure services can be exposed through API Management. You could place a managed API on top of an Azure backing service like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
+Azure API Management can expose back-end services that are hosted anywhere – in the cloud or your data center. For legacy services that you may expose in your cloud-native systems, it supports both REST and SOAP APIs. Even other Azure services can be exposed through API Management. You could place a managed API on top of an Azure backing service like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/). Azure API Management doesn't include built-in load-balancing support and should be used in conjunction with a load-balancing service.
 
 Azure API Management is available across [four different pricing tiers](https://azure.microsoft.com/pricing/details/api-management/):
 
@@ -140,7 +140,7 @@ The new pricing tier is a great choice for cloud-native systems that expose serv
 
 Another option for front-end communication with cloud-native applications is that of push and real-time communication. Many applications, such as stock-tickers, dashboards, and job progress updates, require two-way communication across HTTP-based applications. These systems often come with high-frequency data flows and many concurrent connections between the client and server. Manually implementing real-time connectivity in your cloud-native systems would require complex infrastructure to ensure reliable messaging to connected clients. 
 
-[Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/) is a fully managed Azure service that enables you to build real-time experiences into your cloud-native applications. Technical implementation details like capacity provisioning, scaling, and persistent connections are abstracted away, freeing you to focus on application features, not infrastructure plumbing. 
+[Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/) is a fully managed Azure service that enables you to build real-time communication into your cloud-native applications. Technical implementation details like capacity provisioning, scaling, and persistent connections are abstracted away. You focus on application features, not infrastructure plumbing. 
 
 Once enabled, a cloud-based HTTP service can push content updates directly to connected clients, including browser, mobile and desktop applications. As a result, clients are updated without the need to poll the server. Azure SignalR abstracts the transport technologies that create real-time connectivity, including WebSockets, Server-Side Events, and Long Polling. Developers focus on sending messages to all or specific subsets of connected clients.
 

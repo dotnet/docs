@@ -1,7 +1,8 @@
 ---
 title: Resilient communication
-description: Architecting Cloud Native .NET Apps for Azure | Resilient Communication
-ms.date: 06/30/2019
+description: Learn service mesh technologies are streamlining cloud-native microservice communication.
+author: robvet
+ms.date: 08/31/2019
 ---
 # Resilient communications
 
@@ -18,19 +19,19 @@ While these concerns can be addressed with various libraries and frameworks, imp
 
 ## Service mesh
 
-A better approach is to consider a new and rapidly evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and many of the challenges mentioned above. It decouples these concerns from your business code and moves them into a service proxy, an instance of which accompanies each of your services. Often referred to as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), the service mesh proxy is deployed into a separate process to provide isolation and encapsulation from your business code. However, the proxy is closely linked to the service being created along with it and sharing its lifecycle. Figure 6-9 depicts this scenario.
+A better approach is to consider a new and rapidly evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and many of the challenges mentioned above. It decouples these concerns from your business code and moves them into a service proxy, an instance of which accompanies each of your services. Often referred to as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), the service mesh proxy is deployed into a separate process to provide isolation and encapsulation from your business code. However, the proxy is closely linked to the service being created along with it and sharing its lifecycle. Figure 4-19 depicts this scenario.
 
 ![Service mesh with a side car](media/service-mesh-with-side-car.png)
 
-**Figure 6-9**. Service mesh with a side car
+**Figure 4-19**. Service mesh with a side car
 
 In the previous figure, note how the proxy intercepts and manages communication among the microservices and the cluster.
 
-A service mesh is logically split into two disparate components: A [data plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc) and [control plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc). Figure 6-10 shows these components and their responsibilities.
+A service mesh is logically split into two disparate components: A [data plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc) and [control plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc). Figure 4-20 shows these components and their responsibilities.
 
 ![Service mesh control and data plane](media/istio-control-and-data-plane.png)
 
-**Figure 6-10.** Service mesh control and data plane
+**Figure 4-20.** Service mesh control and data plane
 
 Once configured, a service mesh is highly functional. It can retrieve a corresponding pool of instances from a service discovery endpoint. It can then send a request to a specific instance, recording the latency and response type of the result. A mesh can choose the instance most likely to return a fast response based on a variety of factors, including its observed latency for recent requests.
 
@@ -77,5 +78,5 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 (add references here)
 
 >[!div class="step-by-step"]
->[Previous](infrastructure-resiliency-azure.md)
+>[Previous](cross-service-communication.md)
 >[Next](distributed-data.md) <!-- Next Chapter -->

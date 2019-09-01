@@ -355,7 +355,12 @@ public override async Task<GetAllResponse> GetAll(GetAllRequest request, ServerC
 
 We have successfully migrated our WCF application to gRPC. Now let's look at creating a client for it from the `.proto` file.
 
+### Generating Client code
+
 We'll create a class library in the same solution to contain the client. This is primarily as an example of creating client code, but such a library could be packaged using NuGet and distributed on an internal repository for other .NET teams to consume. Go ahead and add a new .NET Standard Class Library called `TraderSys.Portfolios.Client` to the solution and delete the `Class1.cs` file.
+
+> [!CAUTION]
+> The latest `Grpc.Net` NuGet packages (0.2.23 or later) require .NET Standard 2.1. You might need to change your Target Framework to `netstandard2.1` for the new class library.
 
 In Visual Studio 2019, you can add references to gRPC services much like you could add Service References to WCF projects in earlier versions of VS. Service References and Connected Services are all managed under the same UI now, which you can access by right-clicking the *Dependencies* node in the `TraderSys.Portfolios.Client` project in Solution Explorer and selecting *Add Connected Service*. In the tool window that appears, select the *Service References* section and click *Add new gRPC service reference*.
 
@@ -378,7 +383,7 @@ When using the Visual Studio *Add Connected Service* feature, the `portfolios.pr
 
 ### Using the client
 
-Here is a very brief example of using the generated client in a console application. A more detailed exploration of the gRPC client will be in the next chapter.
+Here is a very brief example of using the generated client in a console application. A more detailed exploration of the gRPC client code is at the end of this chapter.
 
 ```csharp
 public class Program
@@ -407,4 +412,4 @@ public class Program
 ```
 
 >[!div class="step-by-step"]
-<!-->[Next](grpc-overview.md)-->
+<!-->[Next](migrating-duplex-services.md)-->

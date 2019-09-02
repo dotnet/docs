@@ -10,7 +10,7 @@ This example shows how to merge files that contain lines of text and then sort t
   
 1. Copy these names into a text file that is named names1.txt and save it in your project folder:  
   
-    ```  
+    ```text  
     Bankov, Peter  
     Holm, Michael  
     Garcia, Hugo  
@@ -25,7 +25,7 @@ This example shows how to merge files that contain lines of text and then sort t
   
 2. Copy these names into a text file that is named names2.txt and save it in your project folder. Note that the two files have some names in common.  
   
-    ```  
+    ```text  
     Liu, Jinghao  
     Bankov, Peter  
     Holm, Michael  

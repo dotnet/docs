@@ -15,7 +15,7 @@ ms.date: 05/29/2018
 
 # [.NET Core 2.1](#tab/netcore21)
 
-```
+```console
 dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [--no-build] [--no-dependencies]
     [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
 dotnet publish [-h|--help]
@@ -23,7 +23,7 @@ dotnet publish [-h|--help]
 
 # [.NET Core 2.0](#tab/netcore20)
 
-```
+```console
 dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [--no-dependencies]
     [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
 dotnet publish [-h|--help]
@@ -31,7 +31,7 @@ dotnet publish [-h|--help]
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```
+```console
 dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [-o|--output] [-r|--runtime] [-v|--verbosity]
     [--version-suffix]
 dotnet publish [-h|--help]

@@ -20,16 +20,16 @@ An expression is a fragment of code that can be evaluated to a single value, obj
 > Specific language constructs, such as C# `unchecked`, have no meaning in LINQ to Entities.  
   
 ## In This Section  
- [Constant Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/constant-expressions.md)  
+ [Constant Expressions](constant-expressions.md)  
   
- [Comparison Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/comparison-expressions.md)  
+ [Comparison Expressions](comparison-expressions.md)  
   
- [Null Comparisons](../../../../../../docs/framework/data/adonet/ef/language-reference/null-comparisons.md)  
+ [Null Comparisons](null-comparisons.md)  
   
- [Initialization Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/initialization-expressions.md)  
+ [Initialization Expressions](initialization-expressions.md)  
   
  [Relationships, navigation properties and foreign keys](/ef/ef6/fundamentals/relationships)  
   
 ## See also
 
-- [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)
+- [ADO.NET Entity Framework](../index.md)

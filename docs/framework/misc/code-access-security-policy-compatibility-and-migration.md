@@ -21,7 +21,7 @@ You can avoid the warnings and errors by either:
 
    \- or -
 
-- Using the [\<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) to opt into the legacy CAS policy behavior.
+- Using the [\<NetFx40_LegacySecurityPolicy> configuration element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) to opt into the legacy CAS policy behavior.
 
 This topic contains the following sections:
 
@@ -121,7 +121,7 @@ CAS policy is often used to determine an assembly’s or application domain’s 
 
 ### Application Domain Sandboxing
 
-The <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=nameWithType> method is typically used for sandboxing the assemblies in an application domain. The .NET Framework 4 exposes members that do not have to use <xref:System.Security.Policy.PolicyLevel> for this purpose. For more information, see [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).
+The <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=nameWithType> method is typically used for sandboxing the assemblies in an application domain. The .NET Framework 4 exposes members that do not have to use <xref:System.Security.Policy.PolicyLevel> for this purpose. For more information, see [How to: Run Partially Trusted Code in a Sandbox](how-to-run-partially-trusted-code-in-a-sandbox.md).
 
 ### Determining a Safe or Reasonable Permission Set for Partially Trusted Code
 
@@ -137,7 +137,7 @@ If you want to sandbox an assembly, use the <xref:System.AppDomain.CreateDomain%
 
 ## Compatibility: Using the CAS Policy Legacy Option
 
-The [\<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) lets you specify that a process or library uses legacy CAS policy. When you enable this element, the policy and evidence overloads will work as they did in previous versions of the framework.
+The [\<NetFx40_LegacySecurityPolicy> configuration element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) lets you specify that a process or library uses legacy CAS policy. When you enable this element, the policy and evidence overloads will work as they did in previous versions of the framework.
 
 > [!NOTE]
 > CAS policy behavior is specified on a runtime version basis, so modifying CAS policy for one runtime version does not affect the CAS policy of another version.
@@ -152,5 +152,5 @@ The [\<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framew
 
 ## See also
 
-- [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [How to: Run Partially Trusted Code in a Sandbox](how-to-run-partially-trusted-code-in-a-sandbox.md)
 - [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

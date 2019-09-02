@@ -57,7 +57,7 @@ dotnet tool install -g <package-name> --version <version-number>
 
 If installation is successful, a message is displayed showing the command used to call the tool and the version installed, similar to the following example:
 
-```
+```output
 You can invoke the tool using the following command: dotnetsay
 Tool 'dotnetsay' (version '2.0.0') was successfully installed.
 ```

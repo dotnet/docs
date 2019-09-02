@@ -46,5 +46,5 @@ You can customize Visual Basic and C# generated code in your [!INCLUDE[vbtecdlin
   
 ## See also
 
-- [Making and Submitting Data Changes](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)
-- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)
+- [Making and Submitting Data Changes](making-and-submitting-data-changes.md)
+- [Customizing Insert, Update, and Delete Operations](customizing-insert-update-and-delete-operations.md)

@@ -15,7 +15,7 @@ Use an anonymous type in a query expression when both of these conditions apply:
   
  If you only want to return one property or field from each source element, then you can just use the dot operator in the `select` clause. For example, to return only the `ID` of each `student`, write the `select` clause as follows:  
   
-```  
+```csharp  
 select student.ID;  
 ```  
   
@@ -26,7 +26,7 @@ select student.ID;
   
  Note that the anonymous type uses the source element's names for its properties if no names are specified. To give new names to the properties in the anonymous type, write the `select` statement as follows:  
   
-```  
+```csharp  
 select new { First = student.FirstName, Last = student.LastName };  
 ```  
   

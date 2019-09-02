@@ -34,4 +34,4 @@ The examples in this topic demonstrate how to use the `GroupBy` method to query 
   
 ## See also
 
-- [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
+- [Queries in LINQ to Entities](queries-in-linq-to-entities.md)

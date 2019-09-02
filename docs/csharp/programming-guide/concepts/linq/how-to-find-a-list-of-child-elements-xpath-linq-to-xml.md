@@ -34,7 +34,7 @@ foreach (XElement el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Name>Ellen Adams</Name>  
 <Street>123 Maple Street</Street>  

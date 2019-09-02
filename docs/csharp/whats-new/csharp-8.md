@@ -443,9 +443,4 @@ You can explore more about indices and ranges in the tutorial on [indices and ra
 
 ## Enhancement of interpolated verbatim strings
 
-Order of the `$` and `@` tokens in [interpolated](../language-reference/tokens/interpolated.md) verbatim strings can be any:
-
-```csharp
-Console.WriteLine($@"Valid\in\C#6.0\and\later");  // output: Valid\in\C#6.0\and\later
-Console.WriteLine(@$"Valid\in\C#8.0\and\later");  // output: Valid\in\C#8.0\and\later
-```
+Order of the `$` and `@` tokens in [interpolated](../language-reference/tokens/interpolated.md) verbatim strings can be any: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. In earlier C# versions, the `$` token must appear before the `@` token.

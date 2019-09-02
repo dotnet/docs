@@ -6,9 +6,10 @@ ms.assetid: 193412fa-3260-414c-92c6-b32ed3b94a34
 # \<mexNamedPipeBinding>
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over named pipe.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<mexNamedPipeBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<mexNamedPipeBinding>**  
   
 ## Syntax  
   

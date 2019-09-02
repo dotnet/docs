@@ -6,9 +6,10 @@ ms.assetid: 01baba8d-d784-4255-9ea2-7afff1482bf0
 # \<mexTcpBinding>
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over TCP.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<mexTcpBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<mexTcpBinding>**  
   
 ## Syntax  
   

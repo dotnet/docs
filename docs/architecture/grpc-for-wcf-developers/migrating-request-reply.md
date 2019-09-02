@@ -80,7 +80,7 @@ public class PortfolioService : IPortfolioService
 
 ## Converting the DataContracts to gRPC Messages
 
-We'll start with the `PortfolioItem` class as the `Portfolio` class depends on it. The class is very simple, and three of the properties map directly to gRPC data types. The `Cost` property, representing the price paid for the shares at purchase, is a `decimal` field, and gRPC only supports `float` or `double` for real numbers, so we'll use `double`.
+The `PortfolioItem` class will be converted to a Protobuf message first, as the `Portfolio` class depends on it. The class is very simple, and three of the properties map directly to gRPC data types. The `Cost` property, representing the price paid for the shares at purchase, is a `decimal` field, and gRPC only supports `float` or `double` for real numbers, so this field type will be `double`.
 
 > [!NOTE]
 > Remember to use `camelCase` for field names in your `.proto` file; the C# code generator will convert them to `PascalCase` for you, and users of other languages will thank you for respecting their different coding standards.
@@ -94,7 +94,7 @@ message PortfolioItem {
 }
 ```
 
-The `Portfolio` class is a little more complicated. In the WCF code, the developer used a `Guid` for the `TraderId` property, and contains a `List<PortfolioItem>`. In Protobuf, which doesn't have a first-class `UUID` type, we'll use a `string` for the `traderId` field and parse it in our own code. For the list of items, we'll use the `repeated` keyword on the field.
+The `Portfolio` class is a little more complicated. In the WCF code, the developer used a `Guid` for the `TraderId` property, and contains a `List<PortfolioItem>`. In Protobuf, which doesn't have a first-class `UUID` type, you should use a `string` for the `traderId` field and parse it in your own code. For the list of items, use the `repeated` keyword on the field.
 
 ```protobuf
 message Portfolio {
@@ -106,11 +106,11 @@ message Portfolio {
 
 ## Converting the ServiceContract to a gRPC Service
 
-The WCF `Get` method takes two parameters: `Guid traderId` and `int portfolioId`. gRPC service methods take a single parameter, so we have to create a message to hold the two values. It's common to name these request objects with the same name as the method and the suffix `Request`. Again, we're using a string for the `traderId` field instead of `Guid`.
+The WCF `Get` method takes two parameters: `Guid traderId` and `int portfolioId`. gRPC service methods take a single parameter, so a message must be created to hold the two values. It's common to name these request objects with the same name as the method and the suffix `Request`. Again, `string` is being used for the `traderId` field instead of `Guid`.
 
-We could just return a `Portfolio` message directly, but again, this could impact backward compatibility in the future. It's a good practice to define separate `Request` and `Response` messages for every method in a service, even if many of them are the same right now.
+The service could just return a `Portfolio` message directly, but again, this could impact backward compatibility in the future. It's a good practice to define separate `Request` and `Response` messages for every method in a service, even if many of them are the same right now.
 
-We can now declare the gRPC service method using this `GetRequest` message.
+Here is the declaration of the gRPC service method using this `GetRequest` message.
 
 ```protobuf
 message GetRequest {
@@ -127,9 +127,9 @@ service Portfolios {
 }
 ```
 
-The WCF `GetAll` method only takes a single parameter, `traderId`, so it might seem that we could specify `string` as the parameter type, but gRPC requires a defined message type. This requirement helps to enforce the practice of using custom messages for all inputs and outputs, for future backward compatibility.
+The WCF `GetAll` method only takes a single parameter, `traderId`, so it might seem that one could specify `string` as the parameter type, but gRPC requires a defined message type. This requirement helps to enforce the practice of using custom messages for all inputs and outputs, for future backward compatibility.
 
-The WCF method also returned a `List<Portfolio>`, but for the same reason it doesn't allow simple parameter types, gRPC won't allow `repeated Portfolio` as a return type. Instead we'll create a `GetAllResponse` type to wrap the list.
+The WCF method also returned a `List<Portfolio>`, but for the same reason it doesn't allow simple parameter types, gRPC won't allow `repeated Portfolio` as a return type. Instead, create a `GetAllResponse` type to wrap the list.
 
 > [!WARNING]
 > You may be tempted to create a `PortfolioList` message or similar and use it across multiple service methods, but you should resist this temptation. It's impossible to know how the various methods on a service may evolve in the future, so keep their messages specific and cleanly separated.
@@ -151,7 +151,7 @@ service Portfolios {
 
 If you save your project with these changes, the gRPC build target will run in the background and generate all the Protobuf message types, and a base class you can inherit to implement the service.
 
-Open up the `Services/GreeterService.cs` class and delete the example code. Now we can add the Portfolio service implementation. The generated base class will be in the `Protos` namespace, and is actually generated as a nested class. gRPC creates a static class with the same name as the service in the `.proto` file, and then a base class with the suffix `Base` inside that static class, so the full identifier for the base type is `TraderSys.Portfolios.Protos.Portfolios.PortfoliosBase`.
+Open up the `Services/GreeterService.cs` class and delete the example code. Now you can add the Portfolio service implementation. The generated base class will be in the `Protos` namespace, and is actually generated as a nested class. gRPC creates a static class with the same name as the service in the `.proto` file, and then a base class with the suffix `Base` inside that static class, so the full identifier for the base type is `TraderSys.Portfolios.Protos.Portfolios.PortfoliosBase`.
 
 ```csharp
 namespace TraderSys.Portfolios.Services
@@ -162,15 +162,15 @@ namespace TraderSys.Portfolios.Services
 }
 ```
 
-The base class declares `virtual` methods for `Get` and `GetAll` that we can override to implement the service. The methods are `virtual` rather than `abstract` so that if you don't implement them, the service can return an explicit gRPC `Unimplemented` status code, much like you might throw a `NotImplementedException` in regular C# code.
+The base class declares `virtual` methods for `Get` and `GetAll` that can be overridden to implement the service. The methods are `virtual` rather than `abstract` so that if you don't implement them, the service can return an explicit gRPC `Unimplemented` status code, much like you might throw a `NotImplementedException` in regular C# code.
 
-The signature for all gRPC service methods in ASP.NET Core is consistent. There are two parameters: the first is the message type declared in the `.proto` file, and the second is a `ServerCallContext` that works similarly to the `HttpContext` from ASP.NET Core. (In fact, there is an extension method `GetHttpContext` on the `ServerCallContext` type that you can use to get the underlying `HttpContext`, although you shouldn't need to use it very often.) We'll look at `ServerCallContext` later in the chapter, and also in the chapter on authentication.
+The signature for all gRPC service methods in ASP.NET Core is consistent. There are two parameters: the first is the message type declared in the `.proto` file, and the second is a `ServerCallContext` that works similarly to the `HttpContext` from ASP.NET Core. (In fact, there is an extension method `GetHttpContext` on the `ServerCallContext` type that you can use to get the underlying `HttpContext`, although you shouldn't need to use it very often.) There will be a look at `ServerCallContext` later in the chapter, and also in the chapter on authentication.
 
 The method's return type is a `Task<T>` where `T` is the response message type. All gRPC service methods are asynchronous.
 
 ## Migrating the PortfolioData library to .NET Core
 
-At this point we need the Portfolio repository and models contained in the `TraderSys.PortfolioData` class library in the WCF solution. The easiest way to bring them across is to create a new class library using either the Visual Studio *New project* dialog with the *Class Library (.NET Standard)* template, or from the command line using the `dotnet` CLI, running the following commands from the directory containing the `TraderSys.sln` file.
+At this point the project needs the Portfolio repository and models contained in the `TraderSys.PortfolioData` class library in the WCF solution. The easiest way to bring them across is to create a new class library using either the Visual Studio *New project* dialog with the *Class Library (.NET Standard)* template, or from the command line using the `dotnet` CLI, running the following commands from the directory containing the `TraderSys.sln` file.
 
 ```console
 dotnet new classlib -o src/TraderSys.PortfolioData
@@ -206,14 +206,14 @@ public class PortfolioItem
 
 ## Dependency Injection
 
-Now we can add a reference to this library to the gRPC application project and consume our `PortfolioRepository` class using dependency injection in the gRPC service implementation. In our WCF application, dependency injection was provided by the Autofac IoC container. ASP.NET Core has dependency injection baked in; we can register our repository in the `ConfigureServices` method in the `Startup` class.
+Now you can add a reference to this library to the gRPC application project and consume the `PortfolioRepository` class using dependency injection in the gRPC service implementation. In the WCF application, dependency injection was provided by the Autofac IoC container. ASP.NET Core has dependency injection baked in; the repository can be registered in the `ConfigureServices` method in the `Startup` class.
 
 ```csharp
 public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {
-        // Register our repository class as a scoped service (instance per request)
+        // Register the repository class as a scoped service (instance per request)
         services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 
         services.AddGrpc();
@@ -223,7 +223,7 @@ public class Startup
 }
 ```
 
-We can now request this dependency as a constructor parameter in the `PortfolioService` class.
+The `IPortfolioRepository` implementation can now be specified as a constructor parameter in the `PortfolioService` class.
 
 ```csharp
 public class PortfolioService : Protos.Portfolios.PortfoliosBase
@@ -248,7 +248,7 @@ public override Task<GetResponse> Get(GetRequest request, ServerCallContext cont
 }
 ```
 
-The first issue is that `request.TraderId` is a string, and our service requires a `Guid`. Although we will certainly have documented somewhere that the string should be a properly formatted `UUID`, we have to deal with the possibility that a caller has sent an invalid value and respond accordingly. We can respond with errors by throwing an `RpcException`, and use the standard `InvalidArgument` status code to express our discontent.
+The first issue is that `request.TraderId` is a string, and the service requires a `Guid`. Although it will certainly be documented somewhere that the string should be a properly formatted `UUID`, the code has to deal with the possibility that a caller has sent an invalid value and respond accordingly. The service can respond with errors by throwing an `RpcException`, and use the standard `InvalidArgument` status code to express the problem.
 
 ```csharp
 public override Task<GetResponse> Get(GetRequest request, ServerCallContext context)
@@ -262,7 +262,7 @@ public override Task<GetResponse> Get(GetRequest request, ServerCallContext cont
 }
 ```
 
-Once we have a proper `Guid` value for `traderId`, we can use the repository to retrieve the Portfolio and return it to the client.
+Once there is a proper `Guid` value for `traderId`, the repository can be used to retrieve the Portfolio and return it to the client.
 
 ```csharp
     var response = new GetResponse
@@ -271,7 +271,9 @@ Once we have a proper `Guid` value for `traderId`, we can use the repository to 
     };
 ```
 
-Except we can't do this, because the repository is returning its own POCO `Portfolio`, but gRPC needs *its* own Protobuf message `Portfolio`. Much like mapping Entity Framework types to data transfer types, the best solution is just to provide conversion between the two. A good place to put the code for this is in the Protobuf-generated class, which is declared as `partial` precisely so we can extend it.
+### Mapping internal models to gRPC messages
+
+The above code doesn't actually work, because the repository is returning its own POCO `Portfolio`, but gRPC needs *its* own Protobuf message `Portfolio`. Much like mapping Entity Framework types to data transfer types, the best solution is just to provide conversion between the two. A good place to put the code for this is in the Protobuf-generated class, which is declared as `partial` precisely so it can be extended.
 
 ```csharp
 namespace TraderSys.Portfolios.Protos
@@ -315,7 +317,7 @@ namespace TraderSys.Portfolios.Protos
 > [!NOTE]
 > You could use a library like [AutoMapper](https://automapper.org/) to handle this conversion from internal model classes to Protobuf types, as long as you configure the lower-level type conversions like `string`/`Guid` or `decimal`/`double` and the list mapping.
 
-With the conversion code in place, we can complete our `Get` method implementation.
+With the conversion code in place, the `Get` method implementation can be completed.
 
 ```csharp
 public override async Task<GetResponse> Get(GetRequest request, ServerCallContext context)
@@ -354,11 +356,11 @@ public override async Task<GetAllResponse> GetAll(GetAllRequest request, ServerC
 }
 ```
 
-We have successfully migrated our WCF application to gRPC. Now let's look at creating a client for it from the `.proto` file.
+Having successfully migrated the WCF application to gRPC, let's look at creating a client for it from the `.proto` file.
 
 ## Generating Client code
 
-We'll create a class library in the same solution to contain the client. This is primarily as an example of creating client code, but such a library could be packaged using NuGet and distributed on an internal repository for other .NET teams to consume. Go ahead and add a new .NET Standard Class Library called `TraderSys.Portfolios.Client` to the solution and delete the `Class1.cs` file.
+Create a .NET Standard class library in the same solution to contain the client. This is primarily as an example of creating client code, but such a library could be packaged using NuGet and distributed on an internal repository for other .NET teams to consume. Go ahead and add a new .NET Standard Class Library called `TraderSys.Portfolios.Client` to the solution and delete the `Class1.cs` file.
 
 > [!CAUTION]
 > The latest `Grpc.Net` NuGet packages (0.2.23 or later) require .NET Standard 2.1. You might need to change your Target Framework to `netstandard2.1` for the new class library.

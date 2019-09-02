@@ -15,7 +15,7 @@ As a WCF developer you are probably used to dealing with the following types of 
   - One way Duplex with Session
   - Full Duplex
 
-It is possible to map these RPC types fairly naturally to existing gRPC concepts and we will look at each of these areas in turn. Similar examples will be explored in much greater depth in Chapter 5.
+It is possible to map these RPC types fairly naturally to existing gRPC concepts and this chapter will look at each of these areas in turn. Similar examples will be explored in much greater depth in Chapter 5.
 
 | WCF | gRPC |
 | --- | ---- |

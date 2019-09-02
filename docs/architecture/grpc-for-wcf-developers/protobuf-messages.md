@@ -23,7 +23,7 @@ message Stock {
 }  
 ```
 
-The first line declares the syntax version that we are using. Version 3 of the language was released in 2016 and is the recommended version for gRPC services.
+The first line declares the syntax version being used. Version 3 of the language was released in 2016 and is the recommended version for gRPC services.
 
 The `Stock` message definition specifies four fields, each with a type, a name and a field number.
 

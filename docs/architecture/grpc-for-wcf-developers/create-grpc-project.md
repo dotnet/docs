@@ -26,7 +26,7 @@ Click *Next* to proceed to the *New gRPC project* dialog.
 
 ![New gRPC Project dialog](images/vs2019-create-new-grpc-service.png)
 
-At present there are limited options for the service creation. We'll introduce Docker later in the book, so leave that checkbox unchecked for now and just click *Create*.
+At present there are limited options for the service creation. Docker will be introduced later in the book, so leave that checkbox unchecked for now and just click *Create*.
 
 ## Using the `dotnet` CLI
 
@@ -57,11 +57,11 @@ dotnet sln add src/TraderSys.Portfolios
 ```
 
 > [!TIP]
-> Since the given directory only contains a single `.csproj` file, we can get away with specifying just the directory to save typing.
+> Since the given directory only contains a single `.csproj` file, you can get away with specifying just the directory to save typing.
 
 You can now open this solution in Visual Studio 2019, Visual Studio Code, or whatever editor you prefer. Screenshots that follow are from Visual Studio 2019.
 
-The gRPC template has helpfully created an example service for us, which we reviewed earlier in the book. Go ahead and rename the `Protos/greet.proto` file to `Protos/portfolios.proto` and open it in your editor, and delete everything after the `package` line, then change the `option csharp_namespace` and `package` as shown below.
+The gRPC template has helpfully created an example service for us, which was reviewed earlier in the book. Go ahead and rename the `Protos/greet.proto` file to `Protos/portfolios.proto` and open it in your editor, and delete everything after the `package` line, then change the `option csharp_namespace` and `package` as shown below.
 
 ```protobuf
 syntax = "proto3";

@@ -9,7 +9,7 @@ ms.date: 09/02/2019
 
 ## Introduction
 
-The previous chapter should have given you a good look at Protobuf and how we handle messages in gRPC.  Before we work through a detailed conversion from WCF to gRPC, it is important to look at how the range of features currently available in WCF are replicated in gRPC and what workarounds you can use when there does not appear to be a gRPC equivalent.
+The previous chapter should have given you a good look at Protobuf and how messages are handled in gRPC.  Before working through a detailed conversion from WCF to gRPC, it is important to look at how the range of features currently available in WCF are replicated in gRPC and what workarounds you can use when there does not appear to be a gRPC equivalent.
 
 ## gRPC Example
 

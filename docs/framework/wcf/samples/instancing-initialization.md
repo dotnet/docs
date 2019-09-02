@@ -24,7 +24,7 @@ This sample extends the [Pooling](../../../../docs/framework/wcf/samples/pooling
 ## The Object Pool  
  The `ObjectPoolInstanceProvider` class contains the implementation for the object pool. This class implements the <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface to interact with the service model layer. When the EndpointDispatcher calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method, instead of creating a new instance, the custom implementation looks for an existing object in an in-memory pool. If one is available, it is returned. Otherwise, `ObjectPoolInstanceProvider` checks whether the `ActiveObjectsCount` property (number of objects returned from the pool) has reached the maximum pool size. If not, a new instance is created and returned to the caller and `ActiveObjectsCount` is subsequently incremented. Otherwise an object creation request is queued for a configured period of time. The implementation for `GetObjectFromThePool` is shown in the following sample code.  
   
-```  
+```csharp
 private object GetObjectFromThePool()  
 {  
     bool didNotTimeout =   
@@ -68,7 +68,7 @@ ResourceHelper.GetString("ExObjectCreationTimeout"));
   
  The custom `ReleaseInstance` implementation adds the released instance back to the pool and decrements the `ActiveObjectsCount` value. The EndpointDispatcher can call these methods from different threads, and therefore synchronized access to the class level members in the `ObjectPoolInstanceProvider` class is required.  
   
-```  
+```csharp
 public void ReleaseInstance(InstanceContext instanceContext, object instance)  
 {  
     lock (poolLock)  
@@ -156,7 +156,7 @@ if (activeObjectsCount == 0)
   
  In the custom <xref:System.ServiceModel.Description.IServiceBehavior> implementation, a new instance of `ObjectPoolInstanceProvider` is instantiated and assigned to the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> property in each <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> that is attached to the <xref:System.ServiceModel.ServiceHostBase>.  
   
-```  
+```csharp
 public void ApplyDispatchBehavior(ServiceDescription description, ServiceHostBase serviceHostBase)  
 {  
     if (enabled)  

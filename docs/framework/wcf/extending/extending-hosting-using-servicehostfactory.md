@@ -8,7 +8,7 @@ The standard <xref:System.ServiceModel.ServiceHost> API for hosting services in 
   
  In the self-host environment, you do not have to create a custom <xref:System.ServiceModel.ServiceHost> because you write the code that instantiates the host and then call <xref:System.ServiceModel.ICommunicationObject.Open> on it after you instantiate it. Between those two steps you can do whatever you want. You could, for example, add a new <xref:System.ServiceModel.Description.IServiceBehavior>:  
   
-```  
+```csharp
 public static void Main()  
 {  
    ServiceHost host = new ServiceHost( typeof( MyService ) );  
@@ -23,7 +23,7 @@ public static void Main()
   
  However, a slight variation of the example can also be used to solve this problem. One approach is to move the code that adds the ServiceBehavior out of `Main()` and into the <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A> method of a custom derivative of <xref:System.ServiceModel.ServiceHost>:  
   
-```  
+```csharp
 public class DerivedHost : ServiceHost  
 {  
    public DerivedHost( Type t, params Uri baseAddresses ) :  
@@ -38,7 +38,7 @@ public class DerivedHost : ServiceHost
   
  Then, inside of `Main()` you can use:  
   
-```  
+```csharp
 public static void Main()  
 {  
    ServiceHost host = new DerivedHost( typeof( MyService ) );  
@@ -56,7 +56,7 @@ public static void Main()
   
  The intent is that for basic cases, implementing your own factory should be a straight forward exercise. For example, here is a custom <xref:System.ServiceModel.Activation.ServiceHostFactory> that returns a derived <xref:System.ServiceModel.ServiceHost>:  
   
-```  
+```csharp
 public class DerivedFactory : ServiceHostFactory  
 {  
    public override ServiceHost CreateServiceHost( Type t, Uri[] baseAddresses )  

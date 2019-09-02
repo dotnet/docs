@@ -38,7 +38,7 @@ This sample demonstrates the use of the channel extensibility model. In particul
   
  These classes take an inner factory and listener, and delegate all but the `OnCreateChannel` and `OnAcceptChannel` calls to the inner factory and listener.  
   
-```  
+```csharp
 class InterceptingChannelFactory<TChannel> : ChannelFactoryBase<TChannel>  
 { ... }  
 class InterceptingChannelListener<TChannel> : ListenerFactoryBase<TChannel>  
@@ -48,14 +48,14 @@ class InterceptingChannelListener<TChannel> : ListenerFactoryBase<TChannel>
 ## Adding a Binding Element  
  The sample defines a custom binding element: `InterceptingBindingElement`. `InterceptingBindingElement` takes a `ChannelMessageInterceptor` as an input, and uses this `ChannelMessageInterceptor` to manipulate messages that pass through it. This is the only class that must be public. The factory, listener, and channels can all be internal implementations of the public run-time interfaces.  
   
-```  
+```csharp
 public class InterceptingBindingElement : BindingElement  
 ```  
   
 ## Adding Configuration Support  
  To integrate with binding configuration, the library defines a configuration section handler as a binding element extension section. The client and server configuration files must register the binding element extension with the configuration system. Implementers that want to expose their binding element to the configuration system can derive from this class.  
   
-```  
+```csharp
 public abstract class InterceptingElement : BindingElementExtensionElement { ... }  
 ```  
   
@@ -65,7 +65,7 @@ public abstract class InterceptingElement : BindingElementExtensionElement { ...
 ## Example: Droppable Message Inspector  
  Included in the sample is an example implementation of `ChannelMessageInspector` which drops messages.  
   
-```  
+```csharp
 class DroppingServerElement : InterceptingElement  
 {  
     protected override ChannelMessageInterceptor CreateMessageInterceptor()  

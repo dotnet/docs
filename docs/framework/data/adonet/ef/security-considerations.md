@@ -114,7 +114,7 @@ This topic describes security considerations that are specific to developing, de
   
 - A consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could call methods on the result that expose secure data or increase the size of the result set. For example, consider the following method signature:  
   
-    ```  
+    ```csharp
     public IQueryable<Customer> GetCustomer(int customerId)  
     ```  
   

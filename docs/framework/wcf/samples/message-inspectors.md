@@ -13,7 +13,7 @@ This sample demonstrates how to implement and configure client and service messa
 ## Message Inspector  
  Client message inspectors implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> interface and service message inspectors implement the <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector> interface. The implementations can be combined into a single class to form a message inspector that works for both sides. This sample implements such a combined message inspector. The inspector is constructed passing in a set of schemas against which incoming and outgoing messages are validated and allows the developer to specify whether incoming or outgoing messages are validated and whether the inspector is in dispatch or client mode, which affects the error handling as discussed later in this topic.  
   
-```  
+```csharp
 public class SchemaValidationMessageInspector : IClientMessageInspector, IDispatchMessageInspector  
 {  
     XmlSchemaSet schemaSet;  
@@ -200,7 +200,7 @@ void ValidateMessageBody(ref System.ServiceModel.Channels.Message message, bool 
   
  The following `SchemaValidationBehavior` class is the behavior used to add this sample's message inspector to the client or dispatch runtime. The implementation is rather basic in both cases. In <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%2A> and <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior%2A>, the message inspector is created and added to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> collection of the respective runtime.  
   
-```  
+```csharp
 public class SchemaValidationBehavior : IEndpointBehavior  
 {  
     XmlSchemaSet schemaSet;   
@@ -293,7 +293,7 @@ public class SchemaValidationBehavior : IEndpointBehavior
   
  The overridden `CreateBehavior` method turns the configuration data into a behavior object when the runtime evaluates the configuration data as it builds a client or an endpoint.  
   
-```  
+```csharp
 public class SchemaValidationBehaviorExtensionElement : BehaviorExtensionElement  
 {  
     public SchemaValidationBehaviorExtensionElement()  

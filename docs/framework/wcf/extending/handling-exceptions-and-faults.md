@@ -42,7 +42,7 @@ SOAP 1.2 Fault (left) and SOAP 1.1 Fault (right). Note that in SOAP 1.1 only the
   
  SOAP defines a fault message as a message that contains only a fault element (an element whose name is `<env:Fault>`) as a child of `<env:Body>`. The contents of the fault element differ slightly between SOAP 1.1 and SOAP 1.2 as shown in figure 1. However, the <xref:System.ServiceModel.Channels.MessageFault?displayProperty=nameWithType> class normalizes these differences into one object model:  
   
-```  
+```csharp
 public abstract class MessageFault  
 {  
     protected MessageFault();  
@@ -68,7 +68,7 @@ public abstract class MessageFault
   
  You should create new fault subcodes (or new fault codes if using SOAP 1.1) if it is interesting to programmatically distinguish a fault. This is analogous to creating a new exception type. You should avoid using the dot notation with SOAP 1.1 fault codes. (The [WS-I Basic Profile](https://go.microsoft.com/fwlink/?LinkId=95177) also discourages the use of the fault code dot notation.)  
   
-```  
+```csharp
 public class FaultCode  
 {  
     public FaultCode(string name);  
@@ -90,7 +90,7 @@ public class FaultCode
   
  The `Reason` property corresponds to the `env:Reason` (or `faultString` in SOAP 1.1) a human-readable description of the error condition analogous to an exception’s message. The `FaultReason` class (and SOAP `env:Reason/faultString`) has built-in support for having multiple translations in the interest of globalization.  
   
-```  
+```csharp
 public class FaultReason  
 {  
     public FaultReason(FaultReasonText translation);  
@@ -112,7 +112,7 @@ public class FaultReason
   
  When generating a fault, the custom channel should not send the fault directly, rather, it should throw an exception and let the layer above decide whether to convert that exception to a fault and how to send it. To aid in this conversion, the channel should provide a `FaultConverter` implementation that can convert the exception thrown by the custom channel to the appropriate fault. `FaultConverter` is defined as:  
   
-```  
+```csharp
 public class FaultConverter  
 {  
     public static FaultConverter GetDefaultFaultConverter(  
@@ -128,7 +128,7 @@ public class FaultConverter
   
  Each channel that generates custom faults must implement `FaultConverter` and return it from a call to `GetProperty<FaultConverter>`. The custom `OnTryCreateFaultMessage` implementation must either convert the exception to a fault or delegate to the inner channel’s `FaultConverter`. If the channel is a transport it must either convert the exception or delegate to the encoder’s `FaultConverter` or the default `FaultConverter` provided in WCF . The default `FaultConverter` converts errors corresponding to fault messages specified by WS-Addressing and SOAP. Here is an example `OnTryCreateFaultMessage` implementation.  
   
-```  
+```csharp
 public override bool OnTryCreateFaultMessage(Exception exception,   
                                              out Message message)  
 {  
@@ -198,7 +198,7 @@ public override bool OnTryCreateFaultMessage(Exception exception,
   
  The following object model supports converting messages to exceptions:  
   
-```  
+```csharp
 public class FaultConverter  
 {  
     public static FaultConverter GetDefaultFaultConverter(  
@@ -218,7 +218,7 @@ public class FaultConverter
   
  A typical implementation looks like this:  
   
-```  
+```csharp
 public override bool OnTryCreateException(  
                             Message message,   
                             MessageFault fault,   
@@ -284,7 +284,7 @@ public override bool OnTryCreateException(
   
  If your protocol channel sends a custom header with MustUnderstand=true and receives a `mustUnderstand` fault, it must figure out whether that fault is due to the header it sent. There are two members on the `MessageFault` class that are useful for this:  
   
-```  
+```csharp
 public class MessageFault  
 {  
     ...  
@@ -316,10 +316,10 @@ public class MessageFault
   
  Once you have a trace source, you call its <xref:System.Diagnostics.TraceSource.TraceData%2A>, <xref:System.Diagnostics.TraceSource.TraceEvent%2A>, or <xref:System.Diagnostics.TraceSource.TraceInformation%2A> methods to write trace entries to the trace listeners. For each trace entry you write, you need to classify the type of event as one of the event types defined in <xref:System.Diagnostics.TraceEventType>. This classification and the trace level setting in configuration determine whether the trace entry is output to the listener. For example, setting the trace level in configuration to `Warning` allows `Warning`, `Error` and `Critical` trace entries to be written but blocks Information and Verbose entries. Here is an example of instantiating a trace source and writing out an entry at Information level:  
   
-```  
+```csharp
 using System.Diagnostics;  
 //...  
-TraceSource udpSource=new TraceSource("Microsoft.Samples.Udp");  
+TraceSource udpSource = new TraceSource("Microsoft.Samples.Udp");  
 //...  
 udpsource.TraceInformation("UdpInputChannel received a message");  
 ```  

@@ -10,41 +10,41 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
   
 1. Implement <xref:System.ServiceModel.Description.IWsdlImportExtension>. Implement the <xref:System.ServiceModel.Description.IWsdlImportExtension.BeforeImport%28System.Web.Services.Description.ServiceDescriptionCollection%2CSystem.Xml.Schema.XmlSchemaSet%2CSystem.Collections.Generic.ICollection%7BSystem.Xml.XmlElement%7D%29> method to modify the metadata before it is imported. Implement the <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29> and <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> methods to modify contracts and endpoints imported from the metadata. To access the imported contract or endpoint, use the corresponding context object (<xref:System.ServiceModel.Description.WsdlContractConversionContext> or <xref:System.ServiceModel.Description.WsdlEndpointConversionContext>):  
   
-    ```  
-    public class WsdlDocumentationImporter : IWsdlImportExtension  
-       {  
-          public void ImportContract(WsdlImporter importer, WsdlContractConversionContext context)  
-    {  
-            // Contract documentation  
-         if (context.WsdlPortType.Documentation != null)  
-         {  
-               context.Contract.Behaviors.Add(new WsdlDocumentationImporter(context.WsdlPortType.Documentation));  
-    }  
-    // Operation documentation  
-    foreach (Operation operation in context.WsdlPortType.Operations)  
-    {  
-    if (operation.Documentation != null)  
-    {  
-    OperationDescription operationDescription = context.Contract.Operations.Find(operation.Name);  
-    if (operationDescription != null)  
-    {  
-                            operationDescription.Behaviors.Add(new WsdlDocumentationImporter(operation.Documentation));  
-    }  
-    }  
-    }  
-    }  
-  
-    public void BeforeImport(ServiceDescriptionCollection wsdlDocuments, XmlSchemaSet xmlSchemas, ICollection<XmlElement> policy)   
-            {  
-                Console.WriteLine("BeforeImport called.");  
-            }  
-  
-    public void ImportEndpoint(WsdlImporter importer, WsdlEndpointConversionContext context)   
-            {  
-                Console.WriteLine("ImportEndpoint called.");  
-            }  
-       }  
-    ```  
+    ```csharp
+    public class WsdlDocumentationImporter : IWsdlImportExtension
+    {
+        public void ImportContract(WsdlImporter importer, WsdlContractConversionContext context)
+        {
+            // Contract documentation
+            if (context.WsdlPortType.Documentation != null)
+            {
+                context.Contract.Behaviors.Add(new WsdlDocumentationImporter(context.WsdlPortType.Documentation));
+            }
+            // Operation documentation
+            foreach (Operation operation in context.WsdlPortType.Operations)
+            {
+                if (operation.Documentation != null)
+                {
+                    OperationDescription operationDescription = context.Contract.Operations.Find(operation.Name);
+                    if (operationDescription != null)
+                    {
+                        operationDescription.Behaviors.Add(new WsdlDocumentationImporter(operation.Documentation));
+                    }
+                }
+            }
+        }
+
+        public void BeforeImport(ServiceDescriptionCollection wsdlDocuments, XmlSchemaSet xmlSchemas, ICollection<XmlElement> policy)
+        {
+            Console.WriteLine("BeforeImport called.");
+        }
+
+        public void ImportEndpoint(WsdlImporter importer, WsdlEndpointConversionContext context)
+        {
+            Console.WriteLine("ImportEndpoint called.");
+        }
+    }
+    ```
   
 2. Configure the client application to use the custom WSDL importer. Note that if you are using Svcutil.exe, you should add this configuration to the configuration file for Svcutil.exe (Svcutil.exe.config):  
   
@@ -67,8 +67,9 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
   
 3. Create a new <xref:System.ServiceModel.Description.WsdlImporter> instance (passing in the <xref:System.ServiceModel.Description.MetadataSet> instance that contains the WSDL documents that you want to import), and call <xref:System.ServiceModel.Description.WsdlImporter.ImportAllContracts%2A>:  
   
-    ```  
-    WsdlImporter importer = new WsdlImporter(metaDocs);          System.Collections.ObjectModel.Collection<ContractDescription> contracts  = importer.ImportAllContracts();  
+    ```csharp
+    WsdlImporter importer = new WsdlImporter(metaDocs);
+	System.Collections.ObjectModel.Collection<ContractDescription> contracts = importer.ImportAllContracts();  
     ```  
   
 ## See also

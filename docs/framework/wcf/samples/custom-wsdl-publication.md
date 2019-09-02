@@ -65,43 +65,46 @@ public interface ICalculator
   
  In this sample, depending upon whether the export context object has a <xref:System.ServiceModel.Description.ContractDescription> or an <xref:System.ServiceModel.Description.OperationDescription>, a comment is extracted from the attribute using the text property and is added to the WSDL annotation element as shown in the following code.  
   
-```  
-public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext context)  
-{  
-    if (contractDescription != null)  
-    {  
-        // Inside this block it is the contract-level comment attribute.  
-        // This.Text returns the string for the contract attribute.  
-        // Set the doc element; if this isn't done first, there is no XmlElement in the   
-        // DocumentElement property.  
-        context.WsdlPortType.Documentation = string.Empty;  
-        // Contract comments.  
-        XmlDocument owner = context.WsdlPortType.DocumentationElement.OwnerDocument;  
-        XmlElement summaryElement = owner.CreateElement("summary");  
-        summaryElement.InnerText = this.Text;  
-        context.WsdlPortType.DocumentationElement.AppendChild(summaryElement);  
-    }  
-    else  
-    {  
-        Operation operation = context.GetOperation(operationDescription);  
-        if (operation != null)  
-        {  
-            // We are dealing strictly with the operation here.  
-            // This.Text returns the string for the operation-level attributes.  
-            // Set the doc element; if this isn't done first, there is no XmlElement in the   
-            // DocumentElement property.  
-            operation.Documentation = String.Empty;  
-  
-            // Operation C# triple comments.  
-            XmlDocument owner = operation.DocumentationElement.OwnerDocument;  
-            XmlElement newSummaryElement = owner.CreateElement("summary");  
-            newSummaryElement.InnerText = this.Text;  
-            operation.DocumentationElement.AppendChild(newSummaryElement);  
+```csharp
+public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext context)
+{
+    if (contractDescription != null)
+    {
+        // Inside this block it is the contract-level comment attribute.
+        // This.Text returns the string for the contract attribute.
+        // Set the doc element; if this isn't done first, there is no XmlElement in the
+        // DocumentElement property.
+        context.WsdlPortType.Documentation = string.Empty;
+        // Contract comments.
+        XmlDocument owner = context.WsdlPortType.DocumentationElement.OwnerDocument;
+        XmlElement summaryElement = owner.CreateElement("summary");
+        summaryElement.InnerText = this.Text;
+        context.WsdlPortType.DocumentationElement.AppendChild(summaryElement);
+    }
+    else
+    {
+        Operation operation = context.GetOperation(operationDescription);
+        if (operation != null)
+        {
+            // We are dealing strictly with the operation here.
+            // This.Text returns the string for the operation-level attributes.
+            // Set the doc element; if this isn't done first, there is no XmlElement in the
+            // DocumentElement property.
+            operation.Documentation = String.Empty;
+
+            // Operation C# triple comments.
+            XmlDocument owner = operation.DocumentationElement.OwnerDocument;
+            XmlElement newSummaryElement = owner.CreateElement("summary");
+            newSummaryElement.InnerText = this.Text;
+            operation.DocumentationElement.AppendChild(newSummaryElement);
+	    }
+	}
+}
 ```  
   
  If an operation is being exported, the sample uses reflection to obtain any `WsdlParamOrReturnDocumentationAttribute` values for parameters and return values and adds them to the WSDL annotation elements for that operation as follows.  
   
-```  
+```csharp
 // Get returns information  
 ParameterInfo returnValue = operationDescription.SyncMethod.ReturnParameter;  
 object[] returnAttrs = returnValue.GetCustomAttributes(typeof(WsdlParamOrReturnDocumentationAttribute), false);  
@@ -168,7 +171,7 @@ for (int i = 0; i < args.Length; i++)
   
  First, in the <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> method, the sample determines whether the WSDL annotation is at the contract or operation level, and adds itself as a behavior at the appropriate scope, passing the imported annotation text to its constructor.  
   
-```  
+```csharp
 public void ImportContract(WsdlImporter importer, WsdlContractConversionContext context)  
 {  
     // Contract Documentation  
@@ -195,7 +198,7 @@ public void ImportContract(WsdlImporter importer, WsdlContractConversionContext 
   
  Then, when the code is generated, the system invokes the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> and <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%28System.ServiceModel.Description.OperationContractGenerationContext%29> methods, passing the appropriate context information. The sample formats the custom WSDL annotations and inserts them as comments into the CodeDom.  
   
-```  
+```csharp
 public void GenerateContract(ServiceContractGenerationContext context)  
 {  
     Debug.WriteLine("In generate contract.");  
@@ -227,7 +230,7 @@ public void GenerateOperation(OperationContractGenerationContext context)
   
  Once the custom importer has been specified, the WCF metadata system loads the custom importer into any <xref:System.ServiceModel.Description.WsdlImporter> created for that purpose. This sample uses the <xref:System.ServiceModel.Description.MetadataExchangeClient> to download the metadata, the <xref:System.ServiceModel.Description.WsdlImporter> properly configured to import the metadata using the custom importer the sample creates, and the <xref:System.ServiceModel.Description.ServiceContractGenerator> to compile the modified contract information into both Visual Basic and C# client code that can be used in Visual Studio to support Intellisense or compiled into XML documentation.  
   
-```  
+```csharp
 /// From WSDL Documentation:  
 ///   
 /// <summary>The ICalculator contract performs basic calculation   

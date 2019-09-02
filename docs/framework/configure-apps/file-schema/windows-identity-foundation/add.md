@@ -54,7 +54,7 @@ Adds the specified security token handler to the token handler collection.
 ## Remarks  
  The `<add>` element can take a single child element that specifies the configuration for the token handler. This is dependent on whether the handler class referenced through the `type` attribute of the `<add>` element provides support for this feature. Token handler classes that provide this feature must expose a constructor that takes an <xref:System.Xml.XmlElement> object.  
   
-```  
+```csharp
 public class CustomTokenHandler : Microsoft.IdentityModel.Tokens.SecurityTokenHandler  
 {  
     public CustomTokenHandler( XmlElement customConfig )  

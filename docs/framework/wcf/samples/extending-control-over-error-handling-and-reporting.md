@@ -15,37 +15,37 @@ This sample demonstrates how to extend control over error handling and error rep
   
  <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method, the `CalculatorErrorHandler` writes a log of the error to an Error.txt text file in c:\logs. Note that the sample logs the fault and does not suppress it, allowing it to be reported back to the client.  
   
-```  
-public class CalculatorErrorHandler : IErrorHandler  
-{  
-        // Provide a fault. The Message fault parameter can be replaced, or set to  
-        // null to suppress reporting a fault.  
-  
-        public void ProvideFault(Exception error, MessageVersion version, ref Message fault)  
-        {  
-        }  
-  
-        // HandleError. Log an error, then allow the error to be handled as usual.  
-        // Return true if the error is considered as already handled  
-  
-        public bool HandleError(Exception error)  
-        {  
-            using (TextWriter tw = File.AppendText(@"c:\logs\error.txt"))  
-            {  
-                if (error != null)  
-                {  
-                    tw.WriteLine("Exception: " + error.GetType().Name + " - " + error.Message);  
-                }  
-                tw.Close();  
-            }  
-            return true;  
-        }  
-    }  
+```csharp
+public class CalculatorErrorHandler : IErrorHandler
+{
+    // Provide a fault. The Message fault parameter can be replaced, or set to
+    // null to suppress reporting a fault.
+
+    public void ProvideFault(Exception error, MessageVersion version, ref Message fault)
+    {
+    }
+
+    // HandleError. Log an error, then allow the error to be handled as usual.
+    // Return true if the error is considered as already handled
+
+    public bool HandleError(Exception error)
+    {
+        using (TextWriter tw = File.AppendText(@"c:\logs\error.txt"))
+        {
+            if (error != null)
+            {
+                tw.WriteLine("Exception: " + error.GetType().Name + " - " + error.Message);
+            }
+            tw.Close();
+        }
+        return true;
+    }
+}  
 ```  
   
  The `ErrorBehaviorAttribute` exists as a mechanism to register an error handler with a service. This attribute takes a single type parameter. That type should implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface and should have a public, empty constructor. The attribute then instantiates an instance of that error handler type and installs it into the service. It does this by implementing the <xref:System.ServiceModel.Description.IServiceBehavior> interface and then using the <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> method to add instances of the error handler to the service.  
   
-```  
+```csharp
 // This attribute can be used to install a custom error handler for a service.  
 public class ErrorBehaviorAttribute : Attribute, IServiceBehavior  
 {  
@@ -92,8 +92,8 @@ public class ErrorBehaviorAttribute : Attribute, IServiceBehavior
   
  The sample implements a calculator service. The client deliberately causes two errors to occur on the service by providing parameters with illegal values. The `CalculatorErrorHandler` uses the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface to log the errors to a local file and then allows them to be reported back to the client. The client forces a divide by zero and an argument-out-of-range condition.  
   
-```  
-try  
+```csharp
+try
 {  
     Console.WriteLine("Forcing an error in Divide");  
     // Call the Divide service operation - trigger a divide by 0 error.  

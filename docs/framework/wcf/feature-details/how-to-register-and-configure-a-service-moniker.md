@@ -63,7 +63,7 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
   
      You can use either of these moniker strings from within a Visual Basic 6.0 application, after adding a reference to the assembly that contains the `IMathService` types, as shown in the following sample code.  
   
-    ```  
+    ```vb
     Dim MathProxy As IMathService  
     Dim result As Integer  
   

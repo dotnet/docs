@@ -1,5 +1,5 @@
 ---
-title: "How to: use SpinLock for low-level synchronization"
+title: "How to: Use SpinLock for low-level synchronization"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -11,7 +11,7 @@ ms.assetid: a9ed3e4e-4f29-4207-b730-ed0a51ecbc19
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# How to: use SpinLock for low-level synchronization
+# How to: Use SpinLock for low-level synchronization
 
 The following example demonstrates how to use a <xref:System.Threading.SpinLock>. In this example, the critical section performs a minimal amount of work, which makes it a good candidate for a <xref:System.Threading.SpinLock>. Increasing the work a small amount increases the performance of the <xref:System.Threading.SpinLock> compared to a standard lock. However, there is a point at which a SpinLock becomes more expensive than a standard lock. You can use the concurrency profiling functionality in the profiling tools to see which type of lock provides better performance in your program. For more information, see [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer).  
   

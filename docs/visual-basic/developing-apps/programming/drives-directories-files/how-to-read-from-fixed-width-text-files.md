@@ -1,5 +1,5 @@
 ---
-title: "How to: read from fixed-width text Files in Visual Basic"
+title: "How to: Read from fixed-width text Files in Visual Basic"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "fixed-width text file"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "text files [Visual Basic], reading"
 ms.assetid: 99be5692-967a-4e85-993e-cd18139a5a69
 ---
-# How to: read from fixed-width text files in Visual Basic
+# How to: Read from fixed-width text files in Visual Basic
 The `TextFieldParser` object provides a way to easily and efficiently parse structured text files, such as logs.  
   
  The `TextFieldType` property defines whether the parsed file is a delimited file or one that has fixed-width fields of text. In a fixed-width text file, the field at the end can have a variable width. To specify that the field at the end has a variable width, define it to have a width less than or equal to zero.  

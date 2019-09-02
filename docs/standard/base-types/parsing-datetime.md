@@ -1,5 +1,5 @@
 ---
-title: "How to: convert strings to DateTime"
+title: "How to: Convert strings to DateTime"
 description: "Learn techniques to parse strings that represent dates and times to create a DateTime from the date and time string."
 ms.date: "02/15/2018"
 ms.technology: dotnet-standard

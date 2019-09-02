@@ -1,5 +1,5 @@
 ---
-title: "How to: read from comma-delimited text files in Visual Basic"
+title: "How to: Read from comma-delimited text files in Visual Basic"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [Visual Basic], parsing"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "text files [Visual Basic], reading"
 ms.assetid: a8413fe4-0dba-49c8-8692-44fb67a9ec4f
 ---
-# How to: read from comma-delimited text files in Visual Basic
+# How to: Read from comma-delimited text files in Visual Basic
 The `TextFieldParser` object provides a way to easily and efficiently parse structured text files, such as logs. The `TextFieldType` property defines whether it is a delimited file or one with fixed-width fields of text.  
   
 ### To parse a comma delimited text file  

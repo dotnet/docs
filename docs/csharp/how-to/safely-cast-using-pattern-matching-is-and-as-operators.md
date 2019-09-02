@@ -1,5 +1,5 @@
 ---
-title: "How to: safely cast by using pattern matching and the is and as operators"
+title: "How to: Safely cast by using pattern matching and the is and as operators"
 description: Learn to use pattern matching techniques to safely cast variables to a different type. You can use pattern matching as well as the is and as operators to safely convert types.
 ms.date: 09/05/2018
 helpviewer_keywords: 
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "as operator [C#]"
   - "is operator [C#]"
 ---
-# How to: safely cast by using pattern matching and the is and as operators
+# How to: Safely cast by using pattern matching and the is and as operators
 
 Because objects are polymorphic, it's possible for a variable of a base class type to hold a derived [type](../programming-guide/types/index.md). To access the derived type's instance members, it's necessary to [cast](../programming-guide/types/casting-and-type-conversions.md) the value back to the derived type. However, a cast creates the risk of throwing an <xref:System.InvalidCastException>. C# provides [pattern matching](../pattern-matching.md) statements that perform a cast conditionally only when it will succeed. C# also provides the [is](../language-reference/operators/type-testing-and-cast.md#is-operator) and [as](../language-reference/operators/type-testing-and-cast.md#as-operator) operators to test if a value is of a certain type.
 

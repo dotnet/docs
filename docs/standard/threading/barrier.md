@@ -20,7 +20,7 @@ A <xref:System.Threading.Barrier?displayProperty=nameWithType> is a synchronizat
  [!code-csharp[CDS_Barrier#02](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_barrier/cs/barrier.cs#02)]
  [!code-vb[CDS_Barrier#02](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_barrier/vb/barrier_vb.vb#02)]  
   
- For a complete example, see [How to: synchronize concurrent operations with a Barrier](how-to-synchronize-concurrent-operations-with-a-barrier.md).  
+ For a complete example, see [How to: Synchronize concurrent operations with a Barrier](how-to-synchronize-concurrent-operations-with-a-barrier.md).  
   
 ## Adding and removing participants
 
@@ -51,4 +51,4 @@ A <xref:System.Threading.Barrier?displayProperty=nameWithType> is a synchronizat
 ## See also
 
 - [Threading objects and features](threading-objects-and-features.md)
-- [How to: synchronize concurrent operations with a Barrier](how-to-synchronize-concurrent-operations-with-a-barrier.md)
+- [How to: Synchronize concurrent operations with a Barrier](how-to-synchronize-concurrent-operations-with-a-barrier.md)

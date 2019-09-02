@@ -62,7 +62,7 @@ The following example demonstrates the usage of the `-=` operator:
 
 [!code-csharp-interactive[-= examples](~/samples/csharp/language-reference/operators/SubtractionOperator.cs#SubtractAndAssign)]
 
-You also use the `-=` operator to specify an event handler method to remove when you unsubscribe from an [event](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+You also use the `-=` operator to specify an event handler method to remove when you unsubscribe from an [event](../keywords/event.md). For more information, see [How to: Subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 ## Operator overloadability
 

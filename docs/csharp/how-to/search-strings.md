@@ -1,5 +1,5 @@
 ---
-title: "How to: search strings (C# Guide)"
+title: "How to: Search strings (C# Guide)"
 ms.date: 02/21/2018
 helpviewer_keywords: 
   - "searching strings [C#]"
@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
 ---
 
-# How to: search strings
+# How to: Search strings
 
 You can use two main strategies to search for text in strings. Methods of the <xref:System.String> class search for specific text. Regular expressions search for patterns in text.
 

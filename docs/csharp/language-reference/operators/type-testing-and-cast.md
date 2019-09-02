@@ -148,4 +148,4 @@ For more information, see the following sections of the [C# language specificati
 
 - [C# reference](../index.md)
 - [C# operators](index.md)
-- [How to: safely cast by using pattern matching and the is and as operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md)
+- [How to: Safely cast by using pattern matching and the is and as operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md)

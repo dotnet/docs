@@ -1,5 +1,5 @@
 ---
-title: "How to: chunk serialized data"
+title: "How to: Chunk serialized data"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "binary serialization, examples"
 ms.assetid: 22f1b818-7e0d-428a-8680-f17d6ebdd185
 ---
-# How to: chunk serialized data
+# How to: Chunk serialized data
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
 

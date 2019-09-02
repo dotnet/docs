@@ -164,7 +164,7 @@ A query clause may itself contain a query expression, which is sometimes referre
 
 [!code-csharp[csrefQueryExpBasics#63](~/samples/snippets/csharp/concepts/linq/query-expression-basics_19.cs)]
 
-For more information, see [How to: perform a subquery on a grouping operation](perform-a-subquery-on-a-grouping-operation.md).
+For more information, see [How to: Perform a subquery on a grouping operation](perform-a-subquery-on-a-grouping-operation.md).
 
 ## See also
 

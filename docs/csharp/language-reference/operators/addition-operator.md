@@ -61,7 +61,7 @@ The following example demonstrates the usage of the `+=` operator:
 
 [!code-csharp-interactive[+= examples](~/samples/csharp/language-reference/operators/AdditionOperator.cs#AddAndAssign)]
 
-You also use the `+=` operator to specify an event handler method when you subscribe to an [event](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+You also use the `+=` operator to specify an event handler method when you subscribe to an [event](../keywords/event.md). For more information, see [How to: Subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 ## Operator overloadability
 
@@ -76,7 +76,7 @@ For more information, see the [Unary plus operator](~/_csharplang/spec/expressio
 - [C# reference](../index.md)
 - [C# operators](index.md)
 - [String interpolation](../tokens/interpolated.md)
-- [How to: concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
+- [How to: Concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
 - [Delegates](../../programming-guide/delegates/index.md)
 - [Events](../../programming-guide/events/index.md)
 - [Arithmetic operators](arithmetic-operators.md)

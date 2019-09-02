@@ -32,7 +32,7 @@ The structure of an item with an interpolation expression is as follows:
 {<interpolationExpression>[,<alignment>][:<formatString>]}
 ```
 
-Elements in square brackets are optional. The following table describes each element:    
+Elements in square brackets are optional. The following table describes each element:
 
 |Element|Description|
 |-------------|-----------------|

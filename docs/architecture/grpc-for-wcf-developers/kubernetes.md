@@ -1,8 +1,11 @@
 ---
 title: Kubernetes
 description: gRPC for WCF Developers | Kubernetes
-ms.date: 08/31/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
+
+# Kubernetes
 
 >[!div class="step-by-step"]
 <!-->[Next](service-mesh.md)-->

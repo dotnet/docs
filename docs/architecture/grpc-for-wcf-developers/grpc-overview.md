@@ -1,16 +1,17 @@
 ---
 title: Overview of gRPC
 description: gRPC for WCF Developers | gRPC Overview
-ms.date: 08/30/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
 # gRPC Overview
 
-In Chapter one we looked in more detail at the genesis of both WCF and gRPC. Now we are going to move forward to consider some of the key features of gRPC and how they compare to WCF.
+Chapter 1 looked at the genesis of both WCF and gRPC. This chapter will consider some of the key features of gRPC and how they compare to WCF.
 
 ## Key Principles
 
-As we discussed in Chapter one, Google wanted to utilize the introduction of HTTP/2 and SPDY, to rework Stubby, their internal, general purpose RPC infrastructure. Stubby, renamed gRPC, would now be able to take advantage of standardization and would extend its applicability to mobile technology, Cloud and the Internet of Things.
+As discussed in Chapter one, Google wanted to utilize the introduction of HTTP/2 to rework Stubby, their internal, general purpose RPC infrastructure. Stubby, renamed gRPC, would now be able to take advantage of standardization and would extend its applicability to mobile technology, Cloud and the Internet of Things.
 
 In order to achieve this, Google established a set of principles which would govern gRPC. The most relevant ones are covered below and are mainly concerned with maximizing access and usability:
 

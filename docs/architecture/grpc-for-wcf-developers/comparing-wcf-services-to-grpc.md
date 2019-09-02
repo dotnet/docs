@@ -1,7 +1,8 @@
 ---
 title: Comparing WCF Services to gRPC
 description: gRPC for WCF Developers | Comparing WCF Services to gRPC
-ms.date: 08/30/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
 # Comparing WCF Services to gRPC

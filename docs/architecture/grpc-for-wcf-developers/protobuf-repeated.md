@@ -1,10 +1,11 @@
 ---
 title: Repeated fields
 description: gRPC for WCF Developers | Repeated fields
-ms.date: 08/31/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
-## Lists
+# Lists
 
 Lists are specified in Protobuf using the `repeated` prefix keyword.
 

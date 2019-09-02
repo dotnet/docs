@@ -1,7 +1,8 @@
 ---
 title: Enumerations
 description: gRPC for WCF Developers | Enumerations
-ms.date: 08/31/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
 # Enumerations

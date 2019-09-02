@@ -1,8 +1,11 @@
 ---
 title: Appendix
 description: gRPC for WCF Developers | Appendix
-ms.date: 08/31/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
+# Appendix
+
 >[!div class="step-by-step"]
-<!-->[Next](grpc-overview.md)-->
+<!-->[Next](introduction.md)-->

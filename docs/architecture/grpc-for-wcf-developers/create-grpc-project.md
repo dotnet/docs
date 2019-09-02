@@ -1,14 +1,15 @@
 ---
 title: Migrating from WCF to gRPC
 description: gRPC for WCF Developers | Create a new ASP.NET Core gRPC project
-ms.date: 08/30/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
-## Create a new ASP.NET Core gRPC project
+# Create a new ASP.NET Core gRPC project
 
 .NET Core comes with a powerful CLI tool, `dotnet`, which enables you to create and manage projects and solutions from the command line. The tool is closely integrated with Visual Studio 2019, so everything is also available through the familiar GUI interface. This guide will show both ways to create a new ASP.NET Core gRPC project.
 
-### Using Visual Studio 2019
+## Using Visual Studio 2019
 
 > [!IMPORTANT]
 > To work with any .NET Core 3.0 code, you will need at least Visual Studio 2019.3.
@@ -27,9 +28,7 @@ Click *Next* to proceed to the *New gRPC project* dialog.
 
 At present there are limited options for the service creation. We'll introduce Docker later in the book, so leave that checkbox unchecked for now and just click *Create*.
 
-
-
-### Using the `dotnet` CLI
+## Using the `dotnet` CLI
 
 Create a directory called `TraderSys` and `cd` into it, then use the `dotnet` command to create a new solution.
 
@@ -85,6 +84,5 @@ There is a `Protobuf` item element included in the gRPC build targets that lets 
 </ItemGroup>
 ```
 
-
 >[!div class="step-by-step"]
-<!-->[Next](grpc-overview.md)-->
+<!-->[Next](migrating-request-reply.md)-->

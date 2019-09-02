@@ -1,10 +1,11 @@
 ---
 title: Migrating a Request-Reply service to gRPC
 description: gRPC for WCF Developers | Migrating a Request-Reply service to gRPC
-ms.date: 08/30/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
-## Request-Reply Services
+# Request-Reply Services
 
 The TraderSys solution includes a simple Request-Reply Portfolio service to download a single Portfolio, or all Portfolios for a given Trader. The service is defined in the `interface IPortfolioService` with a `ServiceContract` attribute:
 
@@ -77,7 +78,7 @@ public class PortfolioService : IPortfolioService
 }
 ```
 
-### Converting the DataContracts to gRPC Messages
+## Converting the DataContracts to gRPC Messages
 
 We'll start with the `PortfolioItem` class as the `Portfolio` class depends on it. The class is very simple, and three of the properties map directly to gRPC data types. The `Cost` property, representing the price paid for the shares at purchase, is a `decimal` field, and gRPC only supports `float` or `double` for real numbers, so we'll use `double`.
 
@@ -103,7 +104,7 @@ message Portfolio {
 }
 ```
 
-### Converting the ServiceContract to a gRPC Service
+## Converting the ServiceContract to a gRPC Service
 
 The WCF `Get` method takes two parameters: `Guid traderId` and `int portfolioId`. gRPC service methods take a single parameter, so we have to create a message to hold the two values. It's common to name these request objects with the same name as the method and the suffix `Request`. Again, we're using a string for the `traderId` field instead of `Guid`.
 
@@ -167,7 +168,7 @@ The signature for all gRPC service methods in ASP.NET Core is consistent. There 
 
 The method's return type is a `Task<T>` where `T` is the response message type. All gRPC service methods are asynchronous.
 
-### Migrating the PortfolioData library to .NET Core
+## Migrating the PortfolioData library to .NET Core
 
 At this point we need the Portfolio repository and models contained in the `TraderSys.PortfolioData` class library in the WCF solution. The easiest way to bring them across is to create a new class library using either the Visual Studio *New project* dialog with the *Class Library (.NET Standard)* template, or from the command line using the `dotnet` CLI, running the following commands from the directory containing the `TraderSys.sln` file.
 
@@ -203,7 +204,7 @@ public class PortfolioItem
 }
 ```
 
-### Dependency Injection
+## Dependency Injection
 
 Now we can add a reference to this library to the gRPC application project and consume our `PortfolioRepository` class using dependency injection in the gRPC service implementation. In our WCF application, dependency injection was provided by the Autofac IoC container. ASP<span>.</span>NET Core has dependency injection baked in; we can register our repository in the `ConfigureServices` method in the `Startup` class.
 
@@ -236,7 +237,7 @@ public class PortfolioService : Protos.Portfolios.PortfoliosBase
 }
 ```
 
-### Implementing the gRPC service
+## Implementing the gRPC service
 
 Let's start by implementing the `Get` method. The default override looks like this:
 
@@ -355,7 +356,7 @@ public override async Task<GetAllResponse> GetAll(GetAllRequest request, ServerC
 
 We have successfully migrated our WCF application to gRPC. Now let's look at creating a client for it from the `.proto` file.
 
-### Generating Client code
+## Generating Client code
 
 We'll create a class library in the same solution to contain the client. This is primarily as an example of creating client code, but such a library could be packaged using NuGet and distributed on an internal repository for other .NET teams to consume. Go ahead and add a new .NET Standard Class Library called `TraderSys.Portfolios.Client` to the solution and delete the `Class1.cs` file.
 
@@ -381,7 +382,7 @@ When using the Visual Studio *Add Connected Service* feature, the `portfolios.pr
 </Protobuf>
 ```
 
-### Using the client
+## Using the client
 
 Here is a very brief example of using the generated client in a console application. A more detailed exploration of the gRPC client code is at the end of this chapter.
 

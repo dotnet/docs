@@ -1,7 +1,8 @@
 ---
 title: Nested Types
 description: gRPC for WCF Developers | Nested Types
-ms.date: 08/31/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
 # Nested types

@@ -1,7 +1,8 @@
 ---
 title: Approach
 description: gRPC for WCF Developers | Approach
-ms.date: 08/31/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
 # Approach

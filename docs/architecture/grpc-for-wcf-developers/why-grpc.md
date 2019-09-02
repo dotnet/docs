@@ -1,14 +1,15 @@
 ---
 title: Why gRPC is recommended for WCF developers
 description: gRPC for WCF Developers | Why gRPC is recommended for WCF developers
-ms.date: 08/31/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
 # Why gRPC is recommended for WCF developers
 
-Before we dive deeply into the language and techniques of gRPC it is worth pulling together some ideas about why, given there are alternatives available, gRPC is the right solution for WCF developers who want to migrate to .NetCore.
+Before diving deeply into the language and techniques of gRPC it is worth pulling together some ideas about why, given there are alternatives available, gRPC is the right solution for WCF developers who want to migrate to .NetCore.
 
-Mark to provide text about similarities
+[Mark to provide text about similarities]
 
 ## Benefits of gRPC
 
@@ -16,7 +17,7 @@ Additional reasons why gRPC stands above other solutions are:
 
 ### Performance
 
-As we have already discussed, using HTTP/2 rather than HTTP/1 removes the requirement for human-readability code and instead use the smaller faster binary protocol. This is more efficient for computers to parse. HTTP/2 also supports multiplexing requests over a single connection enabling responses to be sent as soon as they are ready without the need to wait in a queue.  Fewer resources are needed when using gRPC which makes it a good solution to use for mobile devices and over slower networks. [Mark to check]
+As already discussed, using HTTP/2 rather than HTTP/1 removes the requirement for human-readability code and instead use the smaller faster binary protocol. This is more efficient for computers to parse. HTTP/2 also supports multiplexing requests over a single connection enabling responses to be sent as soon as they are ready without the need to wait in a queue.  Fewer resources are needed when using gRPC which makes it a good solution to use for mobile devices and over slower networks. [Mark to check]
 
 ### Simplicity and Productivity
 
@@ -27,4 +28,4 @@ Streaming – gRPC has full bi-directional streaming, which is very similar to W
 Security. HTTP/2 is a fundamentally more secure transport method than HTTP/1. SSL/TLS encrypted connections are required by the protocol, removing the need for complex encryption configuration at the service level.
 
 >[!div class="step-by-step"]
-<!-->[Next](why-grpc.md)-->
+<!-->[Next](protocol-buffers.md)-->

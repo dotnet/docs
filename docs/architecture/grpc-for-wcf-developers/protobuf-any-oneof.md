@@ -1,10 +1,11 @@
 ---
-title: Any and OneOf
-description: gRPC for WCF Developers | Any and OneOf
-ms.date: 08/31/2019
+title: Any and OneOf for variant types
+description: gRPC for WCF Developers | Any and OneOf for variant types
+author: markrendle
+ms.date: 09/02/2019
 ---
 
-# Variant Types
+# Any and OneOf for variant types
 
 Protobuf provides two options for dealing with values that may be of more than one type. The `Any` type can represent any known Protobuf message type, while the `oneOf` keyword allows you to specify that only one of a range of fields can be set in any given message.
 

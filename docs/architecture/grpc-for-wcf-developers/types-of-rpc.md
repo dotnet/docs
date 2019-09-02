@@ -1,7 +1,8 @@
 ---
 title: Types of RPC
 description: gRPC for WCF Developers | Types of RPC
-ms.date: 08/31/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
 # Types of RPC
@@ -256,4 +257,4 @@ public class Chat : IAsyncDisposable
 ```
 
 >[!div class="step-by-step"]
-<!-->[Next](converting-wcf-to-grpc.md)-->
+<!-->[Next](migrating-wcf-to-grpc.md)-->

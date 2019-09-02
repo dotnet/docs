@@ -1,7 +1,8 @@
 ---
 title: Migrating from WCF to gRPC
 description: gRPC for WCF Developers | How to migrate different types of WCF service to gRPC
-ms.date: 08/30/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
 # Migrating from WCF to gRPC
@@ -17,4 +18,4 @@ The sample WCF application is a minimal stub of set of Stock trading services, u
 The completed gRPC application is available [here](https://github.com/somewhere/TraderSysGRPC).
 
 >[!div class="step-by-step"]
-<!-->[Next](migrating-request-reply.md)-->
+<!-->[Next](create-grpc-project.md)-->

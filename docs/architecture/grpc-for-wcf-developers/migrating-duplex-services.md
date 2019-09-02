@@ -1,7 +1,8 @@
 ---
 title: Migrating Duplex Services to gRPC
 description: gRPC for WCF Developers | Migrating Duplex Services to gRPC
-ms.date: 08/30/2019
+author: markrendle
+ms.date: 09/02/2019
 ---
 
 # Duplex Services
@@ -429,4 +430,4 @@ private async Task HandleResponsesAsync(CancellationToken token)
 ```
 
 >[!div class="step-by-step"]
-<!-->[Next](client-libraries.md)-->
+<!-->[Next](streaming-vs-repeated.md)-->

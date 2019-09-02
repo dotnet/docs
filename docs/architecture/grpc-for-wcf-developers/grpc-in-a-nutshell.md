@@ -5,7 +5,7 @@ author: markrendle
 ms.date: 09/02/2019
 ---
 
-# gRPC in a Nutshell
+# gRPC in a nutshell
 
 >[!div class="step-by-step"]
 <!-->[Next](grpc-overview.md)-->

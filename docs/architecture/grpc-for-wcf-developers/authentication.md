@@ -5,7 +5,7 @@ author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Authentication and Authorization
+# Authentication and authorization
 
 >[!div class="step-by-step"]
 <!-->[Next](channel-credentials.md)-->

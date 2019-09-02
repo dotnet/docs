@@ -5,7 +5,7 @@ author: markrendle
 ms.date: 09/02/2019
 ---
 
-# gRPC Overview
+# gRPC overview
 
 Chapter 1 looked at the genesis of both WCF and gRPC. This chapter will consider some of the key features of gRPC and how they compare to WCF.
 

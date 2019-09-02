@@ -412,19 +412,43 @@ private async Task HandleResponsesAsync(CancellationToken token)
 {
     var stream = _duplexStream.ResponseStream;
 
-    while (await stream.MoveNext(token))
+    try
     {
-        var update = stream.Current;
-        var price = Prices.FirstOrDefault(p => p.Symbol.Equals(update.Symbol));
-        if (price == null)
+        while (await stream.MoveNext(token))
         {
-            price = new PriceViewModel(this) {Symbol = update.Symbol, Price = Convert.ToDecimal(update.Price)};
-            Prices.Add(price);
+            var update = stream.Current;
+            var price = Prices.FirstOrDefault(p => p.Symbol.Equals(update.Symbol));
+            if (price == null)
+            {
+                price = new PriceViewModel(this) {Symbol = update.Symbol, Price = Convert.ToDecimal(update.Price)};
+                Prices.Add(price);
+            }
+            else
+            {
+                price.Price = Convert.ToDecimal(update.Price);
+            }
         }
-        else
-        {
-            price.Price = Convert.ToDecimal(update.Price);
-        }
+    }
+    catch (OperationCancelledException) { }
+}
+```
+
+### Client clean-up
+
+When the window is closed and the `MainWindowViewModel` is disposed (from the `Closed` event of `MainWindow`), it is a good idea to properly clean up and dispose the `AsyncDuplexStreamingCall` object. In particular, the `CompleteAsync` method on the `RequestStream` should be called to gracefully close the stream on the server. This is the `DisposeAsync` method from the sample view-model.
+
+```csharp
+public ValueTask DisposeAsync()
+{
+    _cancellationTokenSource.Cancel();
+    try
+    {
+        await _duplexStream.RequestStream.CompleteAsync().ConfigureAwait(false);
+        await _responseTask.ConfigureAwait(false);
+    }
+    finally
+    {
+        _duplexStream.Dispose();
     }
 }
 ```

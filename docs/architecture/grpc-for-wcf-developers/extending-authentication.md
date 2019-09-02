@@ -5,7 +5,7 @@ author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Extending Authentication
+# Extending authentication
 
 >[!div class="step-by-step"]
 <!-->[Next](grpc-in-production.md)-->

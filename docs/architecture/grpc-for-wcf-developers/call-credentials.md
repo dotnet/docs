@@ -5,7 +5,7 @@ author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Call Credentials
+# Call credentials
 
 >[!div class="step-by-step"]
 <!-->[Next](extending-authentication.md)-->

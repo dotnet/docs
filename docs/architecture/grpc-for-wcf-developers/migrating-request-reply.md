@@ -206,7 +206,7 @@ public class PortfolioItem
 
 ## Dependency Injection
 
-Now we can add a reference to this library to the gRPC application project and consume our `PortfolioRepository` class using dependency injection in the gRPC service implementation. In our WCF application, dependency injection was provided by the Autofac IoC container. ASP<span>.</span>NET Core has dependency injection baked in; we can register our repository in the `ConfigureServices` method in the `Startup` class.
+Now we can add a reference to this library to the gRPC application project and consume our `PortfolioRepository` class using dependency injection in the gRPC service implementation. In our WCF application, dependency injection was provided by the Autofac IoC container. ASP.NET Core has dependency injection baked in; we can register our repository in the `ConfigureServices` method in the `Startup` class.
 
 ```csharp
 public class Startup

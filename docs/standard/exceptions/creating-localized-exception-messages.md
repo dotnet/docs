@@ -7,7 +7,7 @@ ms.date: 09/02/2019
 
 Written by [Youssef Victor](https://github.com/Youssef1313).
 
-# Create custom exceptions
+## Create custom exceptions
 The .NET Framework contains many different exceptions that are likely to happen. However, in some cases we need to create our own custom exceptions.
 Let's assume you want to create a `StudentNotFoundException` that contains a `StudentName` property.
 To create our custom exception, we follow these steps:
@@ -74,7 +74,7 @@ public class StudentNotFoundException : Exception
 }
 ```
 
-# Create localized exception messages
+## Create localized exception messages
 We have created our custom exception and we can throw it anywhere in our code like the following:
 
 ```csharp

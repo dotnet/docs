@@ -9,8 +9,10 @@ Represents a collection of configuration elements that specify pass through filt
 > [!WARNING]
 > \<baseAddressPrefixFilters> does not recognize "localhost", use the fully qualified machine name instead.  
   
- \<system.ServiceModel>  
-\<ServiceHostingEnvironment>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceHostingEnvironment>**](servicehostingenvironment.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<baseAddressPrefixFilters>**  
   
 ## Syntax  
   

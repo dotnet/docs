@@ -5,7 +5,7 @@ title: [ARTICLE TITLE]
 description:
 author: [GITHUB USERNAME]
 ms.author: [MICROSOFT ALIAS OF INTERNAL OWNER]
-ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
+ms.date: [CREATION/UPDATE DATE - MM/dd/yyyy]
 ms.topic: [TOPIC TYPE]
 ms.prod: [PRODUCT VALUE]
 helpviewer_keywords: [OFFLINE BOOK INDEX ENTRIES]

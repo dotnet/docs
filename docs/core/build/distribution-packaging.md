@@ -16,7 +16,7 @@ As .NET Core becomes available on more and more platforms, it's useful to learn 
 
 When installed, .NET Core consists of several components that are laid out as follows in the filesystem:
 
-```filelayout
+```
 .
 ├── dotnet                       (1)
 ├── LICENSE.txt                  (8)

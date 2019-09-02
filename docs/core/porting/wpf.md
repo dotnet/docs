@@ -65,7 +65,7 @@ When porting a .NET Framework WPF application, there are a few things you must c
 
 The new .NET Core 3.0 project you create must be in a different directory from your .NET Framework project. If they're both in the same directory, you may run into conflicts with the files that are generated in the **obj** directory. In this example, you'll create a directory named **MyWPFAppCore** in the **SolutionFolder** directory:
 
-```filesystem
+```
 SolutionFolder
 ├───MyApps.sln
 ├───MyWPFApp
@@ -95,7 +95,7 @@ dotnet new wpf -o MyWPFAppCore -n MyWPFCore
 
 After you create the **MyWPFCore.csproj**, your directory structure should look like the following:
 
-```filesystem
+```
 SolutionFolder
 ├───MyApps.sln
 ├───MyWPFApp

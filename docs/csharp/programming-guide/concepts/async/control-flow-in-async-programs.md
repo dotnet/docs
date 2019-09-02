@@ -54,7 +54,7 @@ public partial class MainWindow : Window
 
 Each of the labeled locations, "ONE" through "SIX," displays information about the current state of the program. The following output is produced:
 
-```text
+```output
 ONE:   Entering startButton_Click.
            Calling AccessTheWebAsync.
 
@@ -234,7 +234,7 @@ To run the project, perform the following steps:
 
     The following output appears:
 
-    ```text
+    ```output
     ONE:   Entering startButton_Click.
                Calling AccessTheWebAsync.
 
@@ -286,7 +286,7 @@ Task<string> getStringTask = client.GetStringAsync("https://msdn.microsoft.com")
 
  You can think of the task as a promise by `client.GetStringAsync` to produce an actual string eventually. In the meantime, if `AccessTheWebAsync` has work to do that doesn't depend on the promised string from `client.GetStringAsync`, that work can continue while  `client.GetStringAsync` waits. In the example, the following lines of output, which are labeled "THREE," represent the opportunity to do independent work
 
-```
+```output
 THREE: Back in AccessTheWebAsync.
            Task getStringTask is started.
            About to await getStringTask & return a Task<int> to startButton_Click.
@@ -321,7 +321,7 @@ Task<int> getLengthTask = AccessTheWebAsync();
 
  As in `AccessTheWebAsync`, `startButton_Click` can continue with work that doesn’t depend on the results of the asynchronous task (`getLengthTask`) until the task is awaited. The following output lines represent that work.
 
-```
+```output
 FOUR:  Back in startButton_Click.
            Task getLengthTask is started.
            About to await getLengthTask -- no caller to return to.
@@ -341,7 +341,7 @@ int contentLength = await getLengthTask;
 
 When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing.
 
-```
+```output
 FIVE:  Back in AccessTheWebAsync.
            Task getStringTask is complete.
            Processing the return statement.
@@ -362,7 +362,7 @@ When `AccessTheWebAsync` signals that it’s complete, processing can continue p
 
 The following lines of output represent the resumption of processing in `startButton_Async`:
 
-```
+```output
 SIX:   Back in startButton_Click.
            Task getLengthTask is finished.
            Result from AccessTheWebAsync is stored in contentLength.

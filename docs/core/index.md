@@ -34,7 +34,7 @@ dotnet run
 
 You should see the following output:
 
-```console
+```output
 Hello World!
 ```
 

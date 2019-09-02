@@ -86,4 +86,4 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
   
 ## See also
 
-- [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
+- [Queries in LINQ to Entities](queries-in-linq-to-entities.md)

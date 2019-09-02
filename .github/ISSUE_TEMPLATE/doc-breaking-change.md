@@ -38,6 +38,7 @@ Text in brackets are placeholders; replace the text with the requested informati
 
 [Choose a category from one of the following:
 
+- ASP.NET Core
 - C#
 - Core
 - CoreFx

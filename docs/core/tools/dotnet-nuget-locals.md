@@ -18,7 +18,7 @@ ms.date: 06/26/2019
 
 ## Synopsis
 
-```
+```console
 dotnet nuget locals <CACHE_LOCATION> [(-c|--clear)|(-l|--list)] [--force-english-output]
 dotnet nuget locals [-h|--help]
 ```

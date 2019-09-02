@@ -6,8 +6,9 @@ ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
 # \<net.pipe>
 Specifies configuration settings for the Named Pipe Activation Service, which manages the lifetime of the named pipe connection, and handles activation requests that arrive over named pipes.  
   
- \<system.serviceModel.activation>  
-\<net.pipe>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel.activation>**](system-servicemodel-activation.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<net.pipe>**  
   
 ## Syntax  
   

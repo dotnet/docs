@@ -162,7 +162,7 @@ Redis provides a Docker image with Redis. That image is available from Docker Hu
 You can directly run a Docker Redis container by executing the following Docker CLI command in your command prompt:
 
 ```console
-  docker run --name some-redis -d redis
+docker run --name some-redis -d redis
 ```
 
 The Redis image includes expose:6379 (the port used by Redis), so standard container linking will make it automatically available to the linked containers.

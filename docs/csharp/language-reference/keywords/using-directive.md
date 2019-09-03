@@ -70,8 +70,6 @@ Create a `using` directive to use the types in a namespace without having to spe
 
 Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET API Browser](../../../../api/index.md).
 
-For examples on referencing methods in other assemblies, see [Create and Use Assemblies Using the Command Line](../../../standard/assembly/create-use-command-line.md).
-
 ## Example 1
 
 The following example shows how to define and use a `using` alias for a namespace:

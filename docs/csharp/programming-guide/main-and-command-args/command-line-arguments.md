@@ -66,8 +66,6 @@ long num = Convert.ToInt64(s);
 > [!NOTE]
 > When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
   
- For more examples about how to use command-line arguments, see [How to: Create and Use Assemblies Using the Command Line](../../../standard/assembly/create-use-command-line.md).  
-  
 ## See also
 
 - <xref:System.Environment?displayProperty=nameWithType>

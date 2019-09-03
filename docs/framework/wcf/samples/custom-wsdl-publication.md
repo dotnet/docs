@@ -97,8 +97,8 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
             XmlElement newSummaryElement = owner.CreateElement("summary");
             newSummaryElement.InnerText = this.Text;
             operation.DocumentationElement.AppendChild(newSummaryElement);
-	    }
-	}
+        }
+    }
 }
 ```  
   

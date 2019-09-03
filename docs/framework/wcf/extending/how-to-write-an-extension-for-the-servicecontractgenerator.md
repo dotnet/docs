@@ -76,7 +76,7 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
   
     ```csharp
     WsdlImporter importer = new WsdlImporter(metaDocs);
-	System.Collections.ObjectModel.Collection<ContractDescription> contracts = importer.ImportAllContracts();  
+    System.Collections.ObjectModel.Collection<ContractDescription> contracts = importer.ImportAllContracts();  
     ```  
   
 6. Create a `ServiceContractGenerator` and call `GenerateServiceContractType` for each contract.  

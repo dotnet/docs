@@ -69,7 +69,7 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
   
     ```csharp
     WsdlImporter importer = new WsdlImporter(metaDocs);
-	System.Collections.ObjectModel.Collection<ContractDescription> contracts = importer.ImportAllContracts();  
+    System.Collections.ObjectModel.Collection<ContractDescription> contracts = importer.ImportAllContracts();  
     ```  
   
 ## See also

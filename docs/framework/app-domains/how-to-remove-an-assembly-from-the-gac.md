@@ -35,7 +35,7 @@ There are two ways to remove an assembly from the global assembly cache (GAC):
 
  The following example removes an assembly named `hello.dll` from the global assembly cache.
 
-```
+```console
 gacutil -u hello
 ```
 

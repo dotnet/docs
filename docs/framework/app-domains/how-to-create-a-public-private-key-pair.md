@@ -35,19 +35,19 @@ To sign an assembly with a strong name, you must have a public/private key pair.
 
  The following example creates a key pair called `sgKey.snk`.
 
-```
+```console
 sn -k sgKey.snk
 ```
 
  If you intend to delay sign an assembly and you control the whole key pair (which is unlikely outside test scenarios), you can use the following commands to generate a key pair and then extract the public key from it into a separate file. First, create the key pair:
 
-```
+```console
 sn -k keypair.snk
 ```
 
  Next, extract the public key from the key pair and copy it to a separate file:
 
-```
+```console
 sn -p keypair.snk public.snk
 ```
 

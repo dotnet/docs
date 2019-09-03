@@ -40,15 +40,15 @@ An organization can have a closely guarded key pair that developers do not have 
   
      The following example turns off verification for an assembly called `myAssembly.dll`.  
   
-    ```  
-    sn –Vr myAssembly.dll  
-    ```  
+```console  
+sn –Vr myAssembly.dll  
+```  
   
      To turn off verification on platforms where you can’t run the Strong Name tool, such as Advanced RISC Machine (ARM) microprocessors, use the **–Vk** option to create a registry file. Import the registry file into the registry on the computer where you want to turn off verification. The following example creates a registry file for `myAssembly.dll`.  
   
-    ```  
-    sn –Vk myRegFile.reg myAssembly.dll  
-    ```  
+```console  
+sn –Vk myRegFile.reg myAssembly.dll  
+```  
   
      With either the **–Vr** or **–Vk** option, you can optionally include an .snk file for test key signing.  
   
@@ -62,9 +62,9 @@ An organization can have a closely guarded key pair that developers do not have 
   
      The following example signs an assembly called `myAssembly.dll` with a strong name using the `sgKey.snk` key pair.  
   
-    ```  
-    sn -R myAssembly.dll sgKey.snk  
-    ```  
+```console  
+sn -R myAssembly.dll sgKey.snk  
+```  
   
 ## See also
 

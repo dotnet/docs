@@ -59,7 +59,7 @@ There are a number of ways to sign an assembly with a strong name:
   
  The following example signs the assembly `MyAssembly.dll` with a strong name by using the key file `sgKey.snk`.  
   
-```  
+```console  
 al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk  
 ```  
   
@@ -90,9 +90,9 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
   
      The following example uses the C# compiler and signs the assembly `UtilityLibrary.dll` with a strong name by using the key file `sgKey.snk`.  
   
-    ```  
-    csc /t:library UtilityLibrary.cs /keyfile:sgKey.snk  
-    ```  
+```console  
+csc /t:library UtilityLibrary.cs /keyfile:sgKey.snk  
+```  
   
 ## See also
 

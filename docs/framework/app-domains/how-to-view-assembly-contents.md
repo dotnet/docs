@@ -24,9 +24,9 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
   
 1. Type **ildasm** \<*assembly name*> at the command prompt. For example, the following command disassembles the `Hello.exe` assembly.  
   
-    ```  
-    ildasm Hello.exe  
-    ```  
+```console  
+ildasm Hello.exe  
+```  
   
 ### To view assembly manifest information  
   
@@ -41,7 +41,7 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
   
  Running the command ildasm.exe on the Hello.exe assembly and double-clicking the MANIFEST icon in the IL DASM window produces the following output:  
   
-```  
+```output  
 // Metadata version: v4.0.30319  
 .assembly extern mscorlib  
 {  

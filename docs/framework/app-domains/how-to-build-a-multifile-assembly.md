@@ -84,7 +84,7 @@ This article explains how to create a multifile assembly and provides code that 
 
     In the following example, Al.exe creates an assembly that is a console application executable called `myAssembly.exe`. The application consists of two modules called `Client.netmodule` and `Stringer.netmodule`, and the executable file called `myAssembly.exe,` which contains only assembly metadata. The entry point of the assembly is the `Main` method in the class `MainClientApp`, which is located in `Client.dll`.
 
-    ```
+    ```console
     al Client.netmodule Stringer.netmodule /main:MainClientApp.Main /out:myAssembly.exe /target:exe
     ```
 

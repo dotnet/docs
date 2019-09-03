@@ -32,7 +32,7 @@ The process for referencing types or resources in a strong-named assembly is usu
   
  The following example creates an assembly called `myAssembly.dll` that references a strong-named assembly called `myLibAssembly.dll` from a code module called `myAssembly.cs`.  
   
-```  
+```console  
 csc /t:library myAssembly.cs /reference:myLibAssembly.dll  
 ```  
   
@@ -44,9 +44,9 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
   
      For example:  
   
-    ```  
-    myDll, Version=1.1.0.0, Culture=en, PublicKeyToken=03689116d3a4ae33   
-    ```  
+```text  
+myDll, Version=1.1.0.0, Culture=en, PublicKeyToken=03689116d3a4ae33   
+```  
   
      In this example, `PublicKeyToken` is the hexadecimal form of the public key token. If there is no culture value, use `Culture=neutral`.  
   

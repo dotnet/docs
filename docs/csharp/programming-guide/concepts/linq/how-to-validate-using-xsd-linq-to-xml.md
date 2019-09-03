@@ -60,7 +60,7 @@ Console.WriteLine("doc2 {0}", errors ? "did not validate" : "validated");
   
  This example produces the following output:  
   
-```  
+```output  
 Validating doc1  
 doc1 validated  
   
@@ -105,7 +105,7 @@ Console.WriteLine("custOrdDoc {0}", errors ? "did not validate" : "validated");
   
  This example produces the following output:  
   
-```  
+```output  
 Attempting to validate  
 custOrdDoc validated  
   

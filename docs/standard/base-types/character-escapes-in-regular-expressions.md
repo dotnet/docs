@@ -43,11 +43,11 @@ The backslash (\\) in a regular expression indicates one of the following:
 |`\f`|Matches a form feed, `\u000C`.|  
 |`\n`|Matches a new line, `\u000A`.|  
 |`\e`|Matches an escape, `\u001B`.|  
-|`\` *nnn*|Matches an ASCII character, where *nnn* consists of two or three digits that represent the octal character code. For example, `\040` represents a space character. This construct is interpreted as a backreference if it has only one digit (for example, `\2`) or if it corresponds to the number of a capturing group. (See [Backreference Constructs](../../../docs/standard/base-types/backreference-constructs-in-regular-expressions.md).)|  
+|`\ ` *nnn*|Matches an ASCII character, where *nnn* consists of two or three digits that represent the octal character code. For example, `\040` represents a space character. This construct is interpreted as a backreference if it has only one digit (for example, `\2`) or if it corresponds to the number of a capturing group. (See [Backreference Constructs](../../../docs/standard/base-types/backreference-constructs-in-regular-expressions.md).)|  
 |`\x` *nn*|Matches an ASCII character, where *nn* is a two-digit hexadecimal character code.|  
 |`\c` *X*|Matches an ASCII control character, where X is the letter of the control character. For example, `\cC` is CTRL-C.|  
 |`\u` *nnnn*|Matches a UTF-16 code unit whose value is *nnnn* hexadecimal. **Note:**  The Perl 5 character escape that is used to specify Unicode is not supported by .NET. The Perl 5 character escape has the form `\x{`*####*`…}`, where *####*`…` is a series of hexadecimal digits. Instead, use `\u`*nnnn*.|  
-|`\`|When followed by a character that is not recognized as an escaped character, matches that character. For example, `\*` matches an asterisk (*) and is the same as `\x2A`.|  
+|`\ `|When followed by a character that is not recognized as an escaped character, matches that character. For example, `\*` matches an asterisk (*) and is the same as `\x2A`.|  
   
 ## An Example  
  The following example illustrates the use of character escapes in a regular expression. It parses a string that contains the names of the world's largest cities and their populations in 2009. Each city name is separated from its population by a tab (`\t`) or a vertical bar (&#124; or `\u007c`). Individual cities and their populations are separated from each other by a carriage return and line feed.  

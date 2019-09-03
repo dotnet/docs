@@ -18,7 +18,7 @@ ms.author: "ronpet"
 
 # Assemblies in .NET
 
-Assemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. Assemblies take the form of executable (*.exe*) or dynamic link library (*.dll*) files, and are the building blocks of .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations. You can think of an assembly as a collection of types and resources that form a logical unit of functionality and are built to work together.
+Assemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. Assemblies take the form of executable (*.exe*) or dynamic link library (*.dll*) files, and are the building blocks of .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations. You can think of an assembly as a collection of types and resources that form a logical unit of functionality and are built to work together.
 
 In .NET Core and .NET Framework, you can build an assembly from one or more source code files. In .NET Framework, assemblies can contain one or more modules. This allows larger projects to be planned so that several developers can work on separate source code files or modules, which are combined to create a single assembly. For more information about modules, see [How to: Build a multifile assembly](../../framework/app-domains/build-multifile-assembly.md).
 
@@ -32,7 +32,7 @@ Assemblies have the following properties:
 
 - You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](../../csharp/programming-guide/concepts/reflection.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
 
-- You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class.
+- You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class in .NET Core and the <xref:System.Reflection.Assembly.ReflectionOnlyLoad?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A?displayProperty=nameWithType> method in .NET Core and .NET Framework.
 
 ## Assemblies in the common language runtime
 
@@ -40,13 +40,13 @@ Assemblies provide the common language runtime with the information it needs to 
 
 An assembly defines the following information:  
   
-- Code that the common language runtime executes. Microsoft intermediate language (MSIL) code in a portable executable (PE) file won't be executed unless it has an associated [assembly manifest](#assembly-manifest). Note that each assembly can have only one entry point: `DllMain`, `WinMain`, or `Main`.  
+- Code that the common language runtime executes. Note that each assembly can have only one entry point: `DllMain`, `WinMain`, or `Main`.
   
 - Security boundary. An assembly is the unit at which permissions are requested and granted. For more information about security boundaries in assemblies, see [Assembly security considerations](security-considerations.md).  
   
 - Type boundary. Every type's identity includes the name of the assembly in which it resides. A type called `MyType` that is loaded in the scope of one assembly is not the same as a type called `MyType` that is loaded in the scope of another assembly. 
   
-- Reference scope boundary. The [assembly manifest](#assembly-manifest) has metadata that is used for resolving types and satisfying resource requests. The manifest specifies the types and resources to expose outside the assembly, and enumerates other assemblies on which it depends.  
+- Reference scope boundary. The [assembly manifest](#assembly-manifest) has metadata that is used for resolving types and satisfying resource requests. The manifest specifies the types and resources to expose outside the assembly, and enumerates other assemblies on which it depends. Microsoft intermediate language (MSIL) code in a portable executable (PE) file won't be executed unless it has an associated [assembly manifest](#assembly-manifest).
   
 - Version boundary. The assembly is the smallest versionable unit in the common language runtime. All types and resources in the same assembly are versioned as a unit. The [assembly manifest](#assembly-manifest) describes the version dependencies you specify for any dependent assemblies. For more information about versioning, see [Assembly versioning](versioning.md).  
   

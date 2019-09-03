@@ -20,7 +20,7 @@ ms.author: "ronpet"
 This article explains how to create a multifile assembly and provides code that illustrates each step in the procedure.
 
 > [!NOTE]
-> The Visual Studio IDE for C# and Visual Basic can only be used to create single-file assemblies. If you want to create multifile assemblies, you must use the command-line compilers or Visual Studio with Visual C++.
+> The Visual Studio IDE for C# and Visual Basic can only be used to create single-file assemblies. If you want to create multifile assemblies, you must use the command-line compilers or Visual Studio with Visual C++. Multifile assemblies are supported by .NET Framework only.
 
 ## Create a multifile assembly
 

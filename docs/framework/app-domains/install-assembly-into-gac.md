@@ -14,7 +14,7 @@ ms.author: "ronpet"
 ---
 # How to: Install an assembly into the global assembly cache
 
-The global assembly cache stores assemblies that several applications share. Install an assembly into the [global assembly cache](gac.md) with one of the following components: 
+The global assembly cache (GAC) stores assemblies that several applications share. Install an assembly into the [global assembly cache](gac.md) with one of the following components: 
 - [Windows Installer](#windows-installer)
 - [Global Assembly Cache tool](#global-assembly-cache-tool)
 
@@ -27,7 +27,7 @@ The global assembly cache stores assemblies that several applications share. Ins
 
 ## Global Assembly Cache tool
 
-You can use the [Global Assembly Cache tool (gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to add assemblies to the global assembly cache and to view the contents of the global assembly cache.
+You can use the [.NET Global Assembly Cache utility (gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to add assemblies to the global assembly cache and to view the contents of the global assembly cache.
 
    > [!NOTE]
    > *Gacutil.exe* is for development purposes only. Don't use it to install production assemblies into the global assembly cache.

@@ -1,19 +1,19 @@
 ---
-title: "How to: Get type and member information from an assembly"
-ms.date: "08/20/2019"
+title: "How to: Get type and member information by using reflection"
+ms.date: "09/03/2019"
 helpviewer_keywords: 
-  - "obtaining assembly information"
-  - "assemblies [.NET Framework], obtaining information from"
+  - "reflection, obtaining member information"
+  - "types [.NET Framework], obtaining member information from"
 ms.assetid: 348ae651-ccda-4f13-8eda-19e8337e9438
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# How to: Get type and member information from an assembly
-The <xref:System.Reflection> namespace contains many methods for obtaining information from an assembly. This article demonstrates one of these methods. For additional information, see [Reflection overview](reflection.md).  
+# How to: Get type and member information by using reflection
+The <xref:System.Reflection> namespace contains many methods for obtaining information about types and their members. This article demonstrates one of these methods, <xref:System.Type.GetMembers%2A?displayProperty=nameWithType>. For additional information, see [Reflection overview](reflection.md).
   
 ## Example
 
- The following example obtains type and member information from an assembly:  
+The following example obtains type and member information by using reflection:
 
 # [C++](#tab/cpp)
 ```cpp
@@ -85,7 +85,6 @@ class Asminfo1
 
 # [Visual Basic](#tab/vb)
 ```vb
-Imports System
 Imports System.Reflection
 
 Class Asminfo1

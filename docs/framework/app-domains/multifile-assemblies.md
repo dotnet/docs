@@ -15,7 +15,7 @@ ms.author: "ronpet"
 ---
 # Multifile assemblies
 
-You can create multifile assemblies using command-line compilers or Visual Studio with Visual C++. One file in the assembly must contain the assembly manifest. An assembly that starts an application must also contain an entry point, such as a `Main` or `WinMain` method.
+You can create multifile assemblies that target the .NET Framework using command-line compilers or Visual Studio with Visual C++. One file in the assembly must contain the assembly manifest. An assembly that starts an application must also contain an entry point, such as a `Main` or `WinMain` method.
 
 For example, suppose you have an application that contains two code modules, *Client.cs* and *Stringer.cs*. *Stringer.cs* creates the `myStringer` namespace that is referenced by the code in *Client.cs*. *Client.cs* contains the `Main` method, which is the application's entry point. In this example, you compile the two code modules, and then create a third file that contains the assembly manifest, which launches the application. The assembly manifest references both the *Client* and *Stringer* modules.
 

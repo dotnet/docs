@@ -122,7 +122,7 @@ This example shows how to use friend assemblies with assemblies that have strong
    
    The program outputs the string **Class1.Test**.  
   
-## .NET Framework security  
+## .NET security  
  There are similarities between the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute and the <xref:System.Security.Permissions.StrongNameIdentityPermission> class. The main difference is that <xref:System.Security.Permissions.StrongNameIdentityPermission> can demand security permissions to run a particular section of code, whereas the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute controls the visibility of `internal` (C#) or `Friend` (Visual Basic) types and members.  
   
 ## See also

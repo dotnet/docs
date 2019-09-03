@@ -10,11 +10,13 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Find an assembly's fully qualified name
-To discover the fully qualified name of an assembly in the global assembly cache, use the Global Assembly Cache tool ([Gacutil.exe](../../framework/tools/gacutil-exe-gac-tool.md)). See [How to: View the contents of the global assembly cache](../../framework/app-domains/how-to-view-the-contents-of-the-gac.md).  
+To discover the fully qualified name of a .NET Framework assembly in the global assembly cache, use the Global Assembly Cache tool ([Gacutil.exe](../../framework/tools/gacutil-exe-gac-tool.md)). See [How to: View the contents of the global assembly cache](../../framework/app-domains/how-to-view-the-contents-of-the-gac.md).  
   
- For assemblies that are not in the global assembly cache, you can get the fully qualified assembly name in a number of ways: can use code to output the information to the console or to a variable, or you can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.  
+For .NET Core assemblies, and for .NET Framework assemblies that aren't in the global assembly cache, you can get the fully qualified assembly name in a number of ways: 
+
+- You can use code to output the information to the console or to a variable, or you can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.  
   
-- If the assembly is already loaded by the application, you can retrieve the value of the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property to get the fully qualified name. You can use this approach whether or not the assembly is in the global assembly cache. The example provides an illustration.  
+- If the assembly is already loaded by the application, you can retrieve the value of the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property to get the fully qualified name. You can use the <xref:System.Type.Assembly> property of a <xref:System.Type> defined in that assembly to retrieve a reference to the <xref:System.Reflection.Assembly> object. The example provides an illustration.
   
 - If you know the assembly's file system path, you can call the `static` (C#) or `Shared` (Visual Basic) <xref:System.Reflection.AssemblyName.GetAssemblyName%2A?displayProperty=nameWithType> method to get the fully qualified assembly name. The following is a simple example.  
   
@@ -51,7 +53,7 @@ To discover the fully qualified name of an assembly in the global assembly cache
 For more information about setting assembly attributes such as version, culture, and assembly name, see [Set assembly attributes](set-attributes.md). For more information about giving an assembly a strong name, see [Create and use strong-named assemblies](create-use-strong-named.md).  
   
 ## Example  
-The following code example shows how to display the fully qualified name of an assembly containing a specified class to the console. Because it retrieves the name of an assembly that the app has already loaded, it doesn't matter whether the assembly is in the global assembly cache.  
+The following example shows how to display the fully qualified name of an assembly containing a specified class to the console. It uses the <xref:System.Type.Assembly?displayProperty=nameWithType> property to retrieve a reference to an assembly from a type that's defined in that assembly.
 
 # [C++](#tab/cpp)
 ```cpp

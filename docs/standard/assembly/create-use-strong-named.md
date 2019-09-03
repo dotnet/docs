@@ -24,6 +24,9 @@ A strong name consists of the assembly's identity—its simple text name, versio
 
 A strong-named assembly can only use types from other strong-named assemblies. Otherwise, the integrity of the strong-named assembly would be compromised.
 
+> [!NOTE]
+> Although .NET Core supports strong-named assemblies, and all assemblies in the .NET Core library are signed, the majority of third-party assemblies do not need strong names. For more information, see [Strong Name Signing](https://github.com/dotnet/corefx/blob/master/Documentation/project-docs/strong-name-signing.md) on GitHub.
+
 ## Strong name scenario
 
 The following scenario outlines the process of signing an assembly with a strong name and later referencing it by that name.

@@ -30,13 +30,13 @@ In classes, encapsulation is achieved by limiting outside access to the class's 
 
 The direction of dependency within the application should be in the direction of abstraction, not implementation details. Most applications are written such that compile-time dependency flows in the direction of runtime execution. This produces a direct dependency graph. That is, if module A calls a function in module B, which calls a function in module C, then at compile time A will depend on B which will depend on C, as shown in Figure 4-1.
 
-![](./media/image4-1.png)
+![Direct dependency graph](./media/image4-1.png)
 
 **Figure 4-1.** Direct dependency graph.
 
 Applying the dependency inversion principle allows A to call methods on an abstraction that B implements, making it possible for A to call B at runtime, but for B to depend on an interface controlled by A at compile time (thus, *inverting* the typical compile-time dependency). At run time, the flow of program execution remains unchanged, but the introduction of interfaces means that different implementations of these interfaces can easily be plugged in.
 
-![](./media/image4-2.png)
+![Inverted dependency graph](./media/image4-2.png)
 
 **Figure 4-2.** Inverted dependency graph.
 

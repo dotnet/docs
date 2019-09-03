@@ -66,7 +66,7 @@ Once you have installed EF Core, created a DbContext child type, and configured 
 
 You can see the queries EF Core is executing by configuring a logger and ensuring its level is set to at least Information, as shown in Figure 8-1.
 
-![](./media/image8-1.png)
+![Logging EF Core queries to the console](./media/image8-1.png)
 
 Figure 8-1 Logging EF Core queries to the console
 

@@ -170,7 +170,7 @@ By default, ASP.NET Core applications organize their folder structure to include
 
 ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create separate sets of Controllers and Views folders (as well as any associated models) in each Area folder. Figure 7-1 shows an example folder structure, using Areas.
 
-![](./media/image7-1.png)
+![Sample Area Organization](./media/image7-1.png)
 
 Figure 7-1 Sample Area Organization
 
@@ -328,7 +328,7 @@ ASP.NET Core Identity is a membership system you can use to support login functi
 
 ASP.NET Core Identity is included in new project templates if the Individual User Accounts option is selected. This template includes support for registration, login, external logins, forgotten passwords, and additional functionality.
 
-![](./media/image7-3.png)
+![Select Individual User Accounts to have Identity preconfigured](./media/image7-3.png)
 
 Figure 7-3 Select Individual User Accounts to have Identity preconfigured.
 
@@ -561,7 +561,7 @@ Figure 7-5 ASP.NET hosted in Kestrel behind a reverse proxy server
 
 Another scenario in which a reverse proxy can be helpful is to secure multiple applications using SSL/HTTPS. In this case, only the reverse proxy would need to have SSL configured. Communication between the reverse proxy server and Kestrel could take place over HTTP, as shown in Figure 7-6.
 
-![](./media/image7-6.png)
+![ASP.NET hosted behind an HTTPS-secured reverse proxy server](./media/image7-6.png)
 
 Figure 7-6 ASP.NET hosted behind an HTTPS-secured reverse proxy server
 

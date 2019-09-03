@@ -1,7 +1,7 @@
 ---
-title: "How to: Create localized exception messages"
-description: "The article demonstrates how to create custom exceptions and localized exception messages"
-author: "Youssef1313"
+title: How to: Create localized exception messages
+description: The article demonstrates how to create custom exceptions and localized exception messages
+author: Youssef1313
 ms.date: 09/02/2019
 ---
 # How to: Create custom exceptions and localized exception messages
@@ -9,9 +9,9 @@ ms.date: 09/02/2019
 Written by [Youssef Victor](https://github.com/Youssef1313).
 
 ## Create custom exceptions
-The .NET Framework contains many different exceptions that are likely to happen. However, in some cases we need to create our own custom exceptions.
+The .NET Framework contains many different exceptions that are likely to meet your needs. However, in some cases when none of them meets your needs, you can create your own custom exceptions.
 Let's assume you want to create a `StudentNotFoundException` that contains a `StudentName` property.
-To create our custom exception, we follow these steps:
+To create custom exceptions, Follow these steps:
 
 - Create a serializable class that inherits from `Exception`. The class name is preferred to end in "Exception".
 
@@ -76,14 +76,14 @@ public class StudentNotFoundException : Exception
 ```
 
 ## Create localized exception messages
-We have created our custom exception and we can throw it anywhere in our code like the following:
+You have created our custom exception and you can throw it anywhere in code like the following:
 
 ```csharp
 throw new StudentNotFoundException("The student cannot be found.", "John");
 ```
 
-The previous line looks good, but its only problem is that `The student cannot be found.` is just a constant string, we want to have different messages depending on user culture.
-We will do that by using [Satellite Assemblies](https://docs.microsoft.com/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
+The previous line looks good, but its only problem is that `The student cannot be found.` is just a constant string, you want to have different messages depending on user culture.
+[Satellite Assemblies](https://docs.microsoft.com/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps) is the good way to do that.
 
 A satellite assembly is a `.dll` that contains resources for a specific language. When you ask for a specific resources at runtime, the CLR finds that resource depending on user culture. If no satellite assembly is found for that culture, the default resources file is used.
 

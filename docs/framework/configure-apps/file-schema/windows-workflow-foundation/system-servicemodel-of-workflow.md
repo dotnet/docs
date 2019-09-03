@@ -6,6 +6,9 @@ ms.assetid: 6a8eb2bf-f925-40e1-ba5c-a49b1d3a3ac6
 ---
 # \<system.serviceModel> of workflow
 This configuration section contains all the workflow configuration elements.  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.ServiceModel>**  
   
 ## Syntax  
   

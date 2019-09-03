@@ -17,4 +17,4 @@ Use <xref:System.Linq.Enumerable.ToArray%2A> to create an array from a sequence.
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Query Examples](query-examples.md)

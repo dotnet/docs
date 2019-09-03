@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<gcServer> Element
 Specifies whether the common language runtime runs server garbage collection.  
   
- \<configuration>  
-\<runtime>  
-\<gcServer>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<gcServer>**  
   
 ## Syntax  
   

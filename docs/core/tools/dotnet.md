@@ -15,23 +15,24 @@ ms.date: 06/04/2018
 
 # [.NET Core 2.1](#tab/netcore21)
 
-```
-dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
-    [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
+```console
+dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
+    [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [--runtimeconfig] [-v|--verbosity] [--version]
 ```
 
 # [.NET Core 2.0](#tab/netcore20)
 
-```
-dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics]
-    [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
+```console
+dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
+    [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx]
+    [--runtimeconfig] [-v|--verbosity] [--version]
 ```
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```
-dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
-    [-h|--help] [--info] [-v|--verbosity] [--version]
+```console
+dotnet [command] [arguments] [--additionalprobingpath] [--depsfile] [-d|--diagnostics]
+    [--fx-version] [-h|--help] [--info] [--runtimeconfig] [-v|--verbosity] [--version]
 ```
 
 ---
@@ -48,11 +49,17 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--additional-deps <PATH>`
 
-Path to additional *.deps.json* file.
+Path to an additional *.deps.json* file.
 
 `--additionalprobingpath <PATH>`
 
 Path containing probing policy and assemblies to probe.
+
+`--depsfile`
+
+Path to a *deps.json* file.
+
+A *deps.json* file contains a list of dependencies, compilation dependencies and version information used to address assembly conflicts. For more information about this file, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
 
 `-d|--diagnostics`
 
@@ -87,6 +94,12 @@ Defines behavior when the required shared framework is not available. `N` can be
 
  For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
+`--runtimeconfig`
+
+Path to a *runtimeconfig.json* file.
+
+A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
+
 `-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
@@ -99,11 +112,17 @@ Prints out the version of the .NET Core SDK in use.
 
 `--additional-deps <PATH>`
 
-Path to additional *.deps.json* file.
+Path to an additional *.deps.json* file.
 
 `--additionalprobingpath <PATH>`
 
 Path containing probing policy and assemblies to probe.
+
+`--depsfile`
+
+Path to a *deps.json* file.
+
+A *deps.json* file contains a list of dependencies, compilation dependencies and version information used to address assembly conflicts. For more details on this file, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
 
 `-d|--diagnostics`
 
@@ -125,6 +144,12 @@ Prints out detailed information about a .NET Core installation and the machine e
 
  Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
+`--runtimeconfig`
+
+Path to a *runtimeconfig.json* file.
+
+A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more details, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
+
 `-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
@@ -138,6 +163,12 @@ Prints out the version of the .NET Core SDK in use.
 `--additionalprobingpath <PATH>`
 
 Path containing probing policy and assemblies to probe.
+
+`--depsfile`
+
+Path to a *deps.json* file.
+
+A *deps.json* file contains a list of dependencies, compilation dependencies and version information used to address assembly conflicts. For more details on this file, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
 
 `-d|--diagnostics`
 
@@ -154,6 +185,12 @@ Prints out documentation for a given command, such as `dotnet build --help`. `do
 `--info`
 
 Prints out detailed information about a .NET Core installation and the machine environment, such as the current operating system, and commit SHA of the .NET Core version.
+
+`--runtimeconfig`
+
+Path to a *runtimeconfig.json* file.
+
+A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more details, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
 
 `-v|--verbosity <LEVEL>`
 
@@ -349,3 +386,7 @@ Specifies the location of the servicing index to use by the shared host when loa
 Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
 
 ---
+
+## See also
+
+- [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md)

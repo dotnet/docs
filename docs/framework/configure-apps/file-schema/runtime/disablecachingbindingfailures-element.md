@@ -16,9 +16,9 @@ ms.author: "ronpet"
 # \<disableCachingBindingFailures> Element
 Specifies whether to disable the caching of binding failures that occur because the assembly was not found by probing.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<disableCachingBindingFailures>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<disableCachingBindingFailures>**  
   
 ## Syntax  
   

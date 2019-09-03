@@ -19,4 +19,4 @@ Use <xref:System.Linq.Enumerable.AsEnumerable%2A> to return the argument typed a
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Query Examples](query-examples.md)

@@ -7,7 +7,7 @@ ms.assetid: 306b204a-ade5-47ef-95b5-c785d2da4a7e
 A type definition is used in the declaration statement of an [!INCLUDE[esql](../../../../../../includes/esql-md.md)] Inline function.  
   
 ## Remarks  
- The declaration statement for an inline function consists of the [FUNCTION](../../../../../../docs/framework/data/adonet/ef/language-reference/function-entity-sql.md) keyword followed by the identifier representing the function name (for example, "MyAvg") followed by a parameter definition list in parenthesis (for example, "dues Collection(Decimal)").  
+ The declaration statement for an inline function consists of the [FUNCTION](function-entity-sql.md) keyword followed by the identifier representing the function name (for example, "MyAvg") followed by a parameter definition list in parenthesis (for example, "dues Collection(Decimal)").  
   
  The parameter definition list consists of zero or more parameter definitions. Each parameter definition consists of an identifier (the name of the parameter to the function, for example, "dues") followed by a type definition (for example, "Collection(Decimal)").  
   
@@ -82,5 +82,5 @@ select Ref(x) from AdventureWorksEntities.SalesOrderHeaders as x
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Overview](entity-sql-overview.md)
+- [Entity SQL Reference](entity-sql-reference.md)

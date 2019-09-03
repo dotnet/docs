@@ -15,7 +15,7 @@ Remoting allows you to set up transparent calling between application domains, p
   
  Any class that is remotable (derived from a <xref:System.MarshalByRefObject> class) needs to take responsibility for security. Either the code should be used only in closed environments where the calling code can be implicitly trusted, or remoting calls should be designed so that they do not subject protected code to outside entry that could be used maliciously.  
   
- Generally, you should never expose methods, properties, or events that are protected by declarative [LinkDemand](../../../docs/framework/misc/link-demands.md) and <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> security checks. With remoting, these checks are not enforced. Other security checks, such as <xref:System.Security.Permissions.SecurityAction.Demand>, [Assert](../../../docs/framework/misc/using-the-assert-method.md), and so on, work between application domains within a process but do not work in cross-process or cross-machine scenarios.  
+ Generally, you should never expose methods, properties, or events that are protected by declarative [LinkDemand](link-demands.md) and <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> security checks. With remoting, these checks are not enforced. Other security checks, such as <xref:System.Security.Permissions.SecurityAction.Demand>, [Assert](using-the-assert-method.md), and so on, work between application domains within a process but do not work in cross-process or cross-machine scenarios.  
   
 ## Protected objects  
  Some objects hold security state in themselves. These objects should not be passed to untrusted code, which would then acquire security authorization beyond its own permissions.  

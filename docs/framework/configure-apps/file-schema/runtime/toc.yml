@@ -26,12 +26,14 @@
           href: bindingredirect-element.md
         - name: <codeBase> Element
           href: codebase-element.md
+        - name: <publisherPolicy> Element
+          href: publisherpolicy-element.md
       - name: <probing> Element
         href: probing-element.md
-      - name: <publisherPolicy> Element
-        href: publisherpolicy-element.md
       - name: <qualifyAssembly> Element
         href: qualifyassembly-element.md
+      - name: <supportPortability> Element
+        href: supportportability-element.md
     - name: <bypassTrustedAppStrongNames> Element
       href: bypasstrustedappstrongnames-element.md
     - name: <CompatSortNLSVersion> Element
@@ -82,23 +84,6 @@
       href: relativebindforresources-element.md
     - name: <shadowCopyVerifyByTimestamp> Element
       href: shadowcopyverifybytimestamp-element.md
-    - name: <supportPortability> Element
-      href: supportportability-element.md
-    - name: <system.runtime.caching> Element (Cache Settings)
-      href: system-runtime-caching-element-cache-settings.md
-      items:
-      - name: <memoryCache> Element (Cache Settings)
-        href: memorycache-element-cache-settings.md
-        items:
-        - name: <namedCaches> Element (Cache Settings)
-          href: namedcaches-element-cache-settings.md
-          items:
-          - name: <add> Element for <namedCaches>
-            href: add-element-for-namedcaches.md
-          - name: <clear> Element for <namedCaches>
-            href: clear-element-for-namedcaches.md
-          - name: <remove> Element for <namedCaches>
-            href: remove-element-for-namedcaches.md
     - name: <Thread_UseAllCpuGroups> Element
       href: thread-useallcpugroups-element.md
     - name: <ThrowUnobservedTaskExceptions> Element
@@ -111,3 +96,18 @@
       href: userandomizedstringhashalgorithm-element.md
     - name: <UseSmallInternalThreadStacks> Element
       href: usesmallinternalthreadstacks-element.md
+  - name: <system.runtime.caching> Element (Cache Settings)
+    href: system-runtime-caching-element-cache-settings.md
+    items:
+    - name: <memoryCache> Element (Cache Settings)
+      href: memorycache-element-cache-settings.md
+      items:
+      - name: <namedCaches> Element (Cache Settings)
+        href: namedcaches-element-cache-settings.md
+        items:
+        - name: <add> Element for <namedCaches>
+          href: add-element-for-namedcaches.md
+        - name: <clear> Element for <namedCaches>
+          href: clear-element-for-namedcaches.md
+        - name: <remove> Element for <namedCaches>
+          href: remove-element-for-namedcaches.md

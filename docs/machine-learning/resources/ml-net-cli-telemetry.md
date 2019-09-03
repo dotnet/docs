@@ -31,7 +31,7 @@ Telemetry *is enabled* when you run an [ML.NET CLI command](../reference/ml-net-
 
 The ML.NET CLI telemetry feature is enabled by default.
 
-Opt out of the telemetry feature by setting the `MLDOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`. This environment variable applies globally to the .NET CLI tool.
+Opt out of the telemetry feature by setting the `MLDOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`. This environment variable applies globally to the ML.NET CLI tool.
 
 ## Data points collected
 

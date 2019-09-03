@@ -231,7 +231,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
 2. `GetResponseAsync` returns a <xref:System.Threading.Tasks.Task%601>. In this case, the *task return variable*, `TResult`, has type <xref:System.Net.WebResponse>. The task is a promise to produce an actual `WebResponse` object after the requested data has been downloaded and the task has run to completion.
 
-     To retrieve the `WebResponse` value from the task, apply an [await](../../../language-reference/keywords/await.md) operator to the call to `GetResponseAsync`, as the following code shows.
+     To retrieve the `WebResponse` value from the task, apply an [await](../../../language-reference/operators/await.md) operator to the call to `GetResponseAsync`, as the following code shows.
 
     ```csharp
     using (WebResponse response = await webReq.GetResponseAsync())
@@ -686,7 +686,7 @@ namespace AsyncExampleWPF
 
 - [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
 - [async](../../../language-reference/keywords/async.md)
-- [await](../../../language-reference/keywords/await.md)
+- [await](../../../language-reference/operators/await.md)
 - [Asynchronous Programming with async and await (C#)](./index.md)
 - [Async Return Types (C#)](./async-return-types.md)
 - [Task-based Asynchronous Programming (TAP)](https://www.microsoft.com/download/details.aspx?id=19957)

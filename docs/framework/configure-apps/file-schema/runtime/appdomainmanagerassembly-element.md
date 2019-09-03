@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<appDomainManagerAssembly> Element
 Specifies the assembly that provides the application domain manager for the default application domain in the process.  
   
- \<configuration>  
-\<runtime>  
-\<appDomainManagerAssembly>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainManagerAssembly>**  
   
 ## Syntax  
   

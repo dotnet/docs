@@ -30,7 +30,7 @@ catch (System.Xml.XmlException e)
   
  When you run this code, it throws the following exception:  
   
-```  
+```console  
 The 'Contacts' start tag on line 1 does not match the end tag of 'Contcts'. Line 5, position 13.  
 ```  
   

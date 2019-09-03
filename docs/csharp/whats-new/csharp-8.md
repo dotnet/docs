@@ -1,25 +1,26 @@
 ---
 title: What's New in C# 8.0 - C# Guide
 description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
-ms.date: 02/12/2019
+ms.date: 09/02/2019
 ---
 # What's new in C# 8.0
 
-There are many enhancements to the C# language that you can try out already. 
+There are many enhancements to the C# language that you can try out already.
 
 - [Readonly members](#readonly-members)
 - [Default interface members](#default-interface-members)
 - [Pattern matching enhancements](#more-patterns-in-more-places):
-  * [Switch expressions](#switch-expressions)
-  * [Property patterns](#property-patterns)
-  * [Tuple patterns](#tuple-patterns)
-  * [Positional patterns](#positional-patterns)
+  - [Switch expressions](#switch-expressions)
+  - [Property patterns](#property-patterns)
+  - [Tuple patterns](#tuple-patterns)
+  - [Positional patterns](#positional-patterns)
 - [Using declarations](#using-declarations)
 - [Static local functions](#static-local-functions)
 - [Disposable ref structs](#disposable-ref-structs)
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
 - [Indices and ranges](#indices-and-ranges)
+- [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
 
 > [!NOTE]
 > This article was last updated for C# 8.0 preview 5.
@@ -370,7 +371,8 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
 
-This language support relies on two new types, and two new operators.
+This language support relies on two new types, and two new operators:
+
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
 - The `^` operator, which specifies that an index is relative to the end of the sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
@@ -438,3 +440,7 @@ var text = words[phrase];
 ```
 
 You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).
+
+## Enhancement of interpolated verbatim strings
+
+Order of the `$` and `@` tokens in [interpolated](../language-reference/tokens/interpolated.md) verbatim strings can be any: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. In earlier C# versions, the `$` token must appear before the `@` token.

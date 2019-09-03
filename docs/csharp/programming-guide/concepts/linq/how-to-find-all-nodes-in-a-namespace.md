@@ -31,7 +31,7 @@ foreach (XElement el in awElements)
   
  This code produces the following output:  
   
-```  
+```output  
 Nodes in the http://www.adventure-works.com namespace  
 {http://www.adventure-works.com}Child3  
 {http://www.adventure-works.com}GrandChild2  

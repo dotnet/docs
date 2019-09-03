@@ -15,11 +15,11 @@ ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
 
 Specifies where the common language runtime can find an assembly.
 
-\<configuration>
-\<runtime>
-\<assemblyBinding>
-\<dependentAssembly>
-\<codeBase>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<codeBase>**
 
 ## Syntax
 

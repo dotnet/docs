@@ -42,4 +42,4 @@ Navigation properties in the [!INCLUDE[adonet_ef](../../../../../../includes/ado
   
 ## See also
 
-- [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
+- [Queries in LINQ to Entities](queries-in-linq-to-entities.md)

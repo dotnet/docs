@@ -60,7 +60,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 ToUpper: source >abc<  
 ToUpper: source >def<  
 ToUpper: source >ghi<  
@@ -78,8 +78,8 @@ Main: str >GHI!!!<
   
  Standard query operators can also be chained together. The final topic in this tutorial illustrates this.  
   
-- [Chaining Standard Query Operators Together (C#)](../../../../csharp/programming-guide/concepts/linq/chaining-standard-query-operators-together.md)  
+- [Chaining Standard Query Operators Together (C#)](./chaining-standard-query-operators-together.md)  
   
 ## See also
 
-- [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)
+- [Tutorial: Chaining Queries Together (C#)](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)

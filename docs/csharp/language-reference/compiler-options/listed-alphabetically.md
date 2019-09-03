@@ -72,7 +72,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
 |[-target](target-compiler-option.md)|Specifies the format of the output file by using one of four options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md),  [-target:winmdobj](target-winmdobj-compiler-option.md).|
-|[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../../../csharp/language-reference/keywords/unsafe.md) code.|
+|[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../keywords/unsafe.md) code.|
 |[-utf8output](utf8output-compiler-option.md)|Outputs compiler messages in UTF-8 encoding.|
 |-version|Display the compiler version number and exit.|
 |[-warn](warn-compiler-option.md)|Sets the warning level (0-4).|

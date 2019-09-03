@@ -48,7 +48,7 @@ config.Save();
  To view data captured by the performance counters, you can use the Performance Monitor (Perfmon.exe) that comes with Windows. You can launch this tool by going to **Start**, and click **Run** and type `perfmon.exe` in the dialog box.  
   
 > [!NOTE]
->  Performance counter instances may be released before the last messages have been processed by the endpoint dispatcher. This can result in performance data not being captured for a few messages.  
+> Performance counter instances may be released before the last messages have been processed by the endpoint dispatcher. This can result in performance data not being captured for a few messages.  
   
 ## Increasing Memory Size for Performance Counters  
  WCF uses separate shared memory for its performance counter categories.  
@@ -101,7 +101,7 @@ ServiceName@ServiceBaseAddress
  A counter in an endpoint scope is aggregated from counters in a collection of operations.  
   
 > [!NOTE]
->  If two endpoints have identical contract names and addresses, they are mapped to the same counter instance.  
+> If two endpoints have identical contract names and addresses, they are mapped to the same counter instance.  
   
 ### Operation performance counters  
  Operation performance counters are found under the `ServiceModelOperation 4.0.0.0` performance object when viewing with the Performance Monitor. Each operation has an individual instance. That is, if a given contract has 10 operations, 10 operation counter instances are associated with that contract. The object instances are named using the following pattern:  
@@ -115,7 +115,7 @@ ServiceName@ServiceBaseAddress
  When counters are visible at multiple scopes, data gathered from a higher scope are aggregated with data from lower scopes. For example, `Calls` at an endpoint represents the sum of all operation calls within the endpoint; `Calls` at a service represents the sum of all calls to all endpoints within the service.  
   
 > [!NOTE]
->  If you have duplicate operation names on a contract, you only get one counter instances for both operations.  
+> If you have duplicate operation names on a contract, you only get one counter instances for both operations.  
   
 ## Programming the WCF Performance Counters  
  Several files are installed in the SDK install folder so that you can access the WCF performance counters programmatically. These files are listed as follows.  

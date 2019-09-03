@@ -21,4 +21,4 @@ Never use read-only public array fields from managed libraries to define the bou
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

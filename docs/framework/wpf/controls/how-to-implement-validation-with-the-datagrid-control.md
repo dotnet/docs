@@ -63,7 +63,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
  The following example provides a complete demonstration for cell and row validation. The `Course` class provides a sample data object that implements <xref:System.ComponentModel.IEditableObject> to support transactions. The <xref:System.Windows.Controls.DataGrid> control interacts with <xref:System.ComponentModel.IEditableObject> to enable users to revert changes by pressing ESC.  
   
 > [!NOTE]
->  If you are using Visual Basic, in the first line of MainWindow.xaml, replace `x:Class="DataGridValidation.MainWindow"` with `x:Class="MainWindow"`.  
+> If you are using Visual Basic, in the first line of MainWindow.xaml, replace `x:Class="DataGridValidation.MainWindow"` with `x:Class="MainWindow"`.  
   
  To test the validation, try the following:  
   

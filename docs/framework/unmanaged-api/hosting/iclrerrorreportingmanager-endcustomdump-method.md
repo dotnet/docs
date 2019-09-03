@@ -42,7 +42,7 @@ HRESULT EndCustomDump ();
  The `EndCustomDump` method clears the custom stack dump configuration set by an earlier call to the `BeginCustomDump` method and frees any associated state. It should be called after the custom stack dump is complete.  
   
 > [!IMPORTANT]
->  Failure to call `EndCustomDump` causes memory to leak.  
+> Failure to call `EndCustomDump` causes memory to leak.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

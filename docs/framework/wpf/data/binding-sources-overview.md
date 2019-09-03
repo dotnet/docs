@@ -36,7 +36,7 @@ In data binding, the binding source object refers to the object you obtain data 
 ### Other Characteristics  
  The following list provides other important points to note:  
   
-- If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a parameterless constructor. In some [!INCLUDE[TLA2#tla_net](../../../../includes/tla2sharptla-net-md.md)] languages, such as C#, the parameterless constructor might be created for you.  
+- If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a parameterless constructor. In some .NET languages, such as C#, the parameterless constructor might be created for you.  
   
 - The properties you use as binding source properties for a binding must be public properties of your class. Explicitly defined interface properties cannot be accessed for binding purposes, nor can protected, private, internal, or virtual properties that have no base implementation.  
   
@@ -82,7 +82,7 @@ In data binding, the binding source object refers to the object you obtain data 
   
  The permission requirement for [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] binding is similar. In a partial-trust sandbox, <xref:System.Windows.Data.XmlDataProvider> fails when it does not have permissions to access the specified data.  
   
- Objects with an anonymous type are internal. You can bind to properties of anonymous types only when running in full trust. For more information about anonymous types, see [Anonymous Types (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/anonymous-types.md) or [Anonymous Types (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md) (Visual Basic).  
+ Objects with an anonymous type are internal. You can bind to properties of anonymous types only when running in full trust. For more information about anonymous types, see [Anonymous Types (C# Programming Guide)](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md) or [Anonymous Types (Visual Basic)](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md) (Visual Basic).  
   
  For more information about partial-trust security, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).  
   

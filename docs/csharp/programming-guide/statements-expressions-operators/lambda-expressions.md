@@ -1,7 +1,7 @@
 ---
 title: "Lambda expressions - C# Programming Guide"
 ms.custom: seodec18
-ms.date: 03/14/2019
+ms.date: 07/29/2019
 helpviewer_keywords: 
   - "lambda expressions [C#]"
   - "outer variables [C#]"
@@ -12,29 +12,35 @@ ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
 ---
 # Lambda expressions (C# Programming Guide)
 
-A *lambda expression* is a block of code (an expression or a statement block) that is treated as an object. It can be passed as an argument to methods, and it can also be returned by method calls. Lambda expressions are used extensively for:
+A *lambda expression* is an expression of any of the following two forms:
 
-- Passing the code that is to be executed to asynchronous methods, such as <xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=nameWithType>.
+- [Expression lambda](#expression-lambdas) that has an expression as its body:
 
-- Writing [LINQ query expressions](../../linq/index.md).
+  ```csharp
+  (input-parameters) => expression
+  ```
 
-- Creating [expression trees](../concepts/expression-trees/index.md).
+- [Statement lambda](#statement-lambdas) that has a statement block as its body:
 
-Lambda expressions are code that can be represented either as a delegate, or as an expression tree that compiles to a delegate. The specific delegate type of a lambda expression depends on its parameters and return value. Lambda expressions that don't return a value correspond to a specific `Action` delegate, depending on its number of parameters. Lambda expressions that return a value correspond to a specific `Func` delegate, depending on its number of parameters. For example, a lambda expression that has two parameters but returns no value corresponds to an <xref:System.Action%602> delegate. A lambda expression that has one parameter and returns a value corresponds to <xref:System.Func%602> delegate.
+  ```csharp  
+  (input-parameters) => { <sequence-of-statements> }
+  ```
 
-A lambda expression uses `=>`, the [lambda declaration operator](../../language-reference/operators/lambda-operator.md), to separate the lambda's parameter list from its executable code. To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator, and you put the expression or statement block on the other side. For example, the single-line lambda expression `x => x * x` specifies a parameter that’s named `x` and returns the value of `x` squared. You can assign this expression to a delegate type, as the following example shows:
+Use the [lambda declaration operator `=>`](../../language-reference/operators/lambda-operator.md) to separate the lambda's parameter list from its body. To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator and an expression or a statement block on the other side.
+
+Any lambda expression can be converted to a [delegate](../../language-reference/builtin-types/reference-types.md#the-delegate-type) type. The delegate type to which a lambda expression can be converted is defined by the types of its parameters and return value. If a lambda expression doesn't return a value, it can be converted to one of the `Action` delegate types; otherwise, it can be converted to one of the `Func` delegate types. For example, a lambda expression that has two parameters and returns no value can be converted to an <xref:System.Action%602> delegate. A lambda expression that has one parameter and returns a value can be converted to a <xref:System.Func%602> delegate. In the following example, the lambda expression `x => x * x`, which specifies a parameter that’s named `x` and returns the value of `x` squared, is assigned to a variable of a delegate type:
 
 [!code-csharp-interactive[lambda is delegate](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Delegate)]
 
-You also can assign a lambda expression to an expression tree type:
+Expression lambdas also can be converted to the [expression tree](../concepts/expression-trees/index.md) types, as the following example shows:
 
 [!code-csharp-interactive[lambda is expression tree](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#ExpressionTree)]
 
-Or you can pass it directly as a method argument:
+You can use lambda expressions in any code that requires instances of delegate types or expression trees, for example as an argument to the <xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=nameWithType> method to pass the code that should be executed in the background. You also can use lambda expressions when you write [LINQ query expressions](../../linq/index.md), as the following example shows:
 
-[!code-csharp-interactive[lambda is argument](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Argument)]
+[!code-csharp-interactive[lambda is argument in LINQ](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Argument)]
 
-When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> class (as you do in LINQ to Objects and LINQ to XML) the parameter is a delegate type <xref:System.Func%602?displayProperty=nameWithType>. A lambda expression is the most convenient way to create that delegate. When you call the <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Queryable?displayProperty=nameWithType> class (as you do in LINQ to SQL) the parameter type is an expression tree type [`Expression<Func<TSource,TResult>>`](<xref:System.Linq.Expressions.Expression%601>). Again, a lambda expression is just a very concise way to construct that expression tree. The lambdas allow the `Select` calls to look similar although in fact the type of object created from the lambda is different.
+When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> class, for example in LINQ to Objects and LINQ to XML, the parameter is a delegate type <xref:System.Func%602?displayProperty=nameWithType>. When you call the <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Queryable?displayProperty=nameWithType> class, for example in LINQ to SQL, the parameter type is an expression tree type [`Expression<Func<TSource,TResult>>`](<xref:System.Linq.Expressions.Expression%601>). In both cases you can use the same lambda expression to specify the parameter value. That makes the two `Select` calls to look similar although in fact the type of objects created from the lambdas is different.
   
 ## Expression lambdas
 
@@ -67,7 +73,7 @@ The body of an expression lambda can consist of a method call. However, if you a
 A statement lambda resembles an expression lambda except that the statement(s) is enclosed in braces:
 
 ```csharp  
-(input-parameters) => { statement; }
+(input-parameters) => { <sequence-of-statements> }
 ```
 
 The body of a statement lambda can consist of any number of statements; however, in practice there are typically no more than two or three.
@@ -78,7 +84,7 @@ Statement lambdas cannot be used to create expression trees.
   
 ## Async lambdas
 
-You can easily create lambda expressions and statements that incorporate asynchronous processing by using the [async](../../language-reference/keywords/async.md) and [await](../../language-reference/keywords/await.md) keywords. For example, the following Windows Forms example contains an event handler that calls and awaits an async method, `ExampleMethodAsync`.
+You can easily create lambda expressions and statements that incorporate asynchronous processing by using the [async](../../language-reference/keywords/async.md) and [await](../../language-reference/operators/await.md) keywords. For example, the following Windows Forms example contains an event handler that calls and awaits an async method, `ExampleMethodAsync`.
 
 ```csharp
 public partial class Form1 : Form

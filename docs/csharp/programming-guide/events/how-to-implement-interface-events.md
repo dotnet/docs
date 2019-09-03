@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 63527447-9535-4880-8e95-35e2075827df
 ---
 # How to: Implement Interface Events (C# Programming Guide)
-An [interface](../../../csharp/language-reference/keywords/interface.md) can declare an [event](../../../csharp/language-reference/keywords/event.md). The following example shows how to implement interface events in a class. Basically the rules are the same as when you implement any interface method or property.  
+An [interface](../../language-reference/keywords/interface.md) can declare an [event](../../language-reference/keywords/event.md). The following example shows how to implement interface events in a class. Basically the rules are the same as when you implement any interface method or property.  
   
 ## To implement interface events in a class  
   
@@ -54,8 +54,8 @@ By providing your own accessors, you can specify whether the two events are repr
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Events](../../../csharp/programming-guide/events/index.md)
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
-- [Explicit Interface Implementation](../../../csharp/programming-guide/interfaces/explicit-interface-implementation.md)
-- [How to: Raise Base Class Events in Derived Classes](../../../csharp/programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md)
+- [C# Programming Guide](../index.md)
+- [Events](./index.md)
+- [Delegates](../delegates/index.md)
+- [Explicit Interface Implementation](../interfaces/explicit-interface-implementation.md)
+- [How to: Raise Base Class Events in Derived Classes](./how-to-raise-base-class-events-in-derived-classes.md)

@@ -22,7 +22,7 @@ For more information about the default output locations, see [Working with Appli
 1. Locate the assembly's configuration file. If you are developing the assembly, you can access the app.config in Visual Studio from the **Solution Explorer**. Otherwise, the configuration file name is the assembly's name appended with ".config", and it is located in the same directory as the assembly.
 
     > [!NOTE]
-    >  Not every assembly has a configuration file.
+    > Not every assembly has a configuration file.
 
     The configuration file is an XML file.
 

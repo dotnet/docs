@@ -9,31 +9,34 @@ helpviewer_keywords:
 ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
 ---
 # XAML in WPF
-[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] is a markup language for declarative application programming. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] implements aXAML processor implementation, and provides XAML language support. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] types are implemented such that they can provide the required type backing for a XAML representation. In general, you can create the majority of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application UI in XAML markup.  
+
+[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] is a markup language for declarative application programming. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] implements a XAML processor implementation and provides XAML language support. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] types are implemented such that they can provide the required type backing for a XAML representation. In general, you can create the majority of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application UI in XAML markup.  
   
 ## In This Section  
- [XAML Overview (WPF)](xaml-overview-wpf.md)  
- [XAML Syntax In Detail](xaml-syntax-in-detail.md)  
- [Code-Behind and XAML in WPF](code-behind-and-xaml-in-wpf.md)  
- [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)  
- [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)  
- [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
- [WPF XAML Namescopes](wpf-xaml-namescopes.md)  
- [Inline Styles and Templates](inline-styles-and-templates.md)  
- [White-space Processing in XAML](../../xaml-services/whitespace-processing-in-xaml.md)  
- [TypeConverters and XAML](typeconverters-and-xaml.md)  
- [XML Character Entities and XAML](../../xaml-services/xml-character-entities-and-xaml.md)  
- [XAML Namespace (x:) Language Features](../../xaml-services/xaml-namespace-x-language-features.md)  
- [WPF XAML Extensions](wpf-xaml-extensions.md)  
- [Markup Compatibility (mc:) Language Features](markup-compatibility-mc-language-features.md)  
+
+[XAML Overview (WPF)](xaml-overview-wpf.md)  
+[XAML Syntax In Detail](xaml-syntax-in-detail.md)  
+[Code-Behind and XAML in WPF](code-behind-and-xaml-in-wpf.md)  
+[XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)  
+[Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)  
+[XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
+[WPF XAML Namescopes](wpf-xaml-namescopes.md)  
+[Inline Styles and Templates](inline-styles-and-templates.md)  
+[White-space Processing in XAML](../../xaml-services/whitespace-processing-in-xaml.md)  
+[TypeConverters and XAML](typeconverters-and-xaml.md)  
+[XML Character Entities and XAML](../../xaml-services/xml-character-entities-and-xaml.md)  
+[XAML Namespace (x:) Language Features](../../xaml-services/xaml-namespace-x-language-features.md)  
+[WPF XAML Extensions](wpf-xaml-extensions.md)  
+[Markup Compatibility (mc:) Language Features](markup-compatibility-mc-language-features.md)  
   
 ## Related Sections  
- [WPF Architecture](wpf-architecture.md)  
-  [Base Elements](base-elements.md)  
-  [Element Tree and Serialization](element-tree-and-serialization.md)  
-  [Properties](properties-wpf.md)  
-  [Events](events-wpf.md)  
-  [Input](input-wpf.md)  
-  [Resources](resources-wpf.md)  
-  [Styling and Templating](../controls/styling-and-templating.md)  
-  [Threading Model](threading-model.md)
+
+[WPF Architecture](wpf-architecture.md)  
+[Base Elements](base-elements.md)  
+[Element Tree and Serialization](element-tree-and-serialization.md)  
+[Properties](properties-wpf.md)  
+[Events](events-wpf.md)  
+[Input](input-wpf.md)  
+[Resources](resources-wpf.md)  
+[Styling and Templating](../controls/styling-and-templating.md)  
+[Threading Model](threading-model.md)

@@ -20,7 +20,7 @@ You might sometimes want to create a procedure that runs at specific time interv
  This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
   
 > [!NOTE]
->  There are some limitations when using the <xref:System.Windows.Forms.Timer> component. For more information, see [Limitations of the Windows Forms Timer Component's Interval Property](limitations-of-the-timer-component-interval-property.md).  
+> There are some limitations when using the <xref:System.Windows.Forms.Timer> component. For more information, see [Limitations of the Windows Forms Timer Component's Interval Property](limitations-of-the-timer-component-interval-property.md).  
   
 ## To run a procedure at set intervals with the Timer component  
   
@@ -29,7 +29,7 @@ You might sometimes want to create a procedure that runs at specific time interv
 2. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
   
     > [!NOTE]
-    >  The more often a timer event occurs, the more processor time is used in responding to the event. This can slow down overall performance. Do not set a smaller interval than you need.  
+    > The more often a timer event occurs, the more processor time is used in responding to the event. This can slow down overall performance. Do not set a smaller interval than you need.  
   
 3. Write appropriate code in the <xref:System.Windows.Forms.Timer.Tick> event handler. The code you write in this event will run at the interval specified in the <xref:System.Windows.Forms.Timer.Interval%2A> property.  
   

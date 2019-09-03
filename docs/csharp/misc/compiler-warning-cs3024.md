@@ -51,4 +51,4 @@ public class Test
   
 ## See also
 
-- [Constraints on Type Parameters](../../csharp/programming-guide/generics/constraints-on-type-parameters.md)
+- [Constraints on Type Parameters](../programming-guide/generics/constraints-on-type-parameters.md)

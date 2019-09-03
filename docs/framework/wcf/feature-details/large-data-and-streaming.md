@@ -113,7 +113,7 @@ class MyData
  The effect on the MTOM encoding is the same whether you use an explicit data contract, as shown in the preceding example, use a parameter list in an operation, have nested data contracts, or transfer a data contract object inside a collection. Byte arrays are always candidates for optimization and are optimized if the optimization thresholds are being met.  
   
 > [!NOTE]
->  You should not be using <xref:System.IO.Stream?displayProperty=nameWithType> derived types inside of data contracts. Stream data should be communicated using the streaming model, explained in the following "Streaming Data" section.  
+> You should not be using <xref:System.IO.Stream?displayProperty=nameWithType> derived types inside of data contracts. Stream data should be communicated using the streaming model, explained in the following "Streaming Data" section.  
   
 ## Streaming Data  
  When you have a large amount of data to transfer, the streaming transfer mode in WCF is a feasible alternative to the default behavior of buffering and processing messages in memory in their entirety.  
@@ -149,7 +149,7 @@ class MyData
  You may get unexpected behavior when streaming calls with a session-based binding. All streaming calls are made through a single channel (the datagram channel) that does not support sessions even if the binding being used is configured to use sessions. If multiple clients make streaming calls to the same service object over a session-based binding and the service object's concurrency mode is set to single and its instance context mode is set to PerSession, all calls must go through the datagram channel and so only one call is processed at a time. One or more clients may then time out. You can work around this issue by either setting the service object's Instance Context Mode to PerCall or Concurrency to Multiple.  
   
 > [!NOTE]
->  MaxConcurrentSessions has no effect in this case because there is only one "session" available.  
+> MaxConcurrentSessions has no effect in this case because there is only one "session" available.  
   
 ### Enabling Streaming  
  You can enable streaming in the following ways:  
@@ -230,7 +230,7 @@ public class UploadStreamMessage
  It is also important to understand that this quota only limits the buffering done by WCF and cannot protect you against any buffering that you do in your own service or client implementation. For more information about additional security considerations, see [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
 > [!NOTE]
->  The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection or to proxy servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a WCF client to a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
+> The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection or to proxy servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a WCF client to a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
   
 ## See also
 

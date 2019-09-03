@@ -14,17 +14,17 @@ This topic describes migration issues between the .NET Framework version 3.5 Ser
 
 This topic describes notable changes in the following areas:
 
-* [ASP.NET and Web](#aspnet-and-web)
+- [ASP.NET and Web](#aspnet-and-web)
 
-* [Core](#core)
+- [Core](#core)
 
-* [Data](#data)
+- [Data](#data)
 
-* [Windows Communication Foundation (WCF)](#windows-communication-foundation-wcf)
+- [Windows Communication Foundation (WCF)](#windows-communication-foundation-wcf)
 
-* [Windows Presentation Foundation (WPF)](#windows-presentation-foundation-wpf)
+- [Windows Presentation Foundation (WPF)](#windows-presentation-foundation-wpf)
 
-* [XML](#xml)
+- [XML](#xml)
 
 For an higher-level overview of the issues in this topic, see the [Migration Guide to the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ff657133%28v=vs.100%29).
 

@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<etwEnable> Element
 Specifies whether to enable event tracing for Windows (ETW) for common language runtime events.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<etwEnabled>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<etwEnabled>**  
   
 ## Syntax  
   
@@ -51,7 +51,7 @@ Specifies whether to enable event tracing for Windows (ETW) for common language 
  Beginning with Windows Vista, ETW is enabled by default. Use this element to disable ETW for an application. In earlier versions of Windows, use this element to enable ETW for an application.  
   
 > [!NOTE]
->  ETW can be enabled or disabled globally on a server by using a registry setting. See [Controlling .NET Framework Logging](../../../../../docs/framework/performance/controlling-logging.md).  
+> ETW can be enabled or disabled globally on a server by using a registry setting. See [Controlling .NET Framework Logging](../../../performance/controlling-logging.md).  
   
 ## Example  
  The following example shows how to enable ETW tracing for an application.  
@@ -66,6 +66,6 @@ Specifies whether to enable event tracing for Windows (ETW) for common language 
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Controlling .NET Framework Logging](../../../../../docs/framework/performance/controlling-logging.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [Controlling .NET Framework Logging](../../../performance/controlling-logging.md)

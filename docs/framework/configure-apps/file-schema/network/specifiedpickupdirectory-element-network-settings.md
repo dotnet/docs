@@ -42,7 +42,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<smtp> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
+|[\<smtp> Element (Network Settings)](smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
   
 ## Remarks  
  The `specifiedPickupDirectory` attribute sets the directory where applications save mail messages to be processed by the SMTP server.  
@@ -69,4 +69,4 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 - <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

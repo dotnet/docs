@@ -39,6 +39,6 @@ This topic describes how to call functions that are defined in the conceptual mo
 ## See also
 
 - [.edmx File Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
-- [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
-- [Calling Functions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/calling-functions-in-linq-to-entities-queries.md)
-- [How to: Call Model-Defined Functions as Object Methods](../../../../../../docs/framework/data/adonet/ef/language-reference/how-to-call-model-defined-functions-as-object-methods.md)
+- [Queries in LINQ to Entities](queries-in-linq-to-entities.md)
+- [Calling Functions in LINQ to Entities Queries](calling-functions-in-linq-to-entities-queries.md)
+- [How to: Call Model-Defined Functions as Object Methods](how-to-call-model-defined-functions-as-object-methods.md)

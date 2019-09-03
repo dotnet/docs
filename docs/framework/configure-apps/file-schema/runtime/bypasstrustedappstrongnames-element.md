@@ -13,9 +13,9 @@ ms.author: "ronpet"
 # \<bypassTrustedAppStrongNames> Element
 Specifies whether to bypass the validation of strong names on full-trust assemblies that are loaded into a full-trust <xref:System.AppDomain>.  
   
- \<configuration>  
-\<runtime>  
-\<bypassTrustedAppStrongNames>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<bypassTrustedAppStrongNames>**  
   
 ## Syntax  
   
@@ -64,7 +64,7 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
 - Not delay-signed.  
   
 > [!NOTE]
->  If the bypass feature has been turned off for all applications on the computer by using a registry key, this configuration file setting has no effect. For more information, see [How to: Disable the Strong-Name Bypass Feature](../../../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md).  
+> If the bypass feature has been turned off for all applications on the computer by using a registry key, this configuration file setting has no effect. For more information, see [How to: Disable the Strong-Name Bypass Feature](../../../app-domains/how-to-disable-the-strong-name-bypass-feature.md).  
   
 ## Example  
  The following example shows how to specify the behavior that validates the strong-name signature on full-trust assemblies.  
@@ -79,6 +79,6 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [How to: Disable the Strong-Name Bypass Feature](../../../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [How to: Disable the Strong-Name Bypass Feature](../../../app-domains/how-to-disable-the-strong-name-bypass-feature.md)

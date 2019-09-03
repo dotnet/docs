@@ -60,7 +60,7 @@ The Clipboard can be used to store data, such as text and images. Because the Cl
  [!code-vb[VbResourceTasks#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#5)]  
   
 > [!IMPORTANT]
->  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
+> Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
   
 ## See also
 

@@ -8,7 +8,7 @@ This topic provides links to the Visual Basic and C# solutions that contain [!IN
   
 ## In This Section  
  Visual Basic version of the SampleQueries solution  
- [Sample Queries (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+ [Sample Queries (Visual Basic)](../../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   
  C# version of the SampleQueries solution  
  [Sample Queries](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb397972(v=vs.90))  

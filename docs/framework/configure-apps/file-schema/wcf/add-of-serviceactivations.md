@@ -42,7 +42,7 @@ None.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<serviceHostingEnvironment>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|A configuration section that describes activation settings.|
+|[\<serviceHostingEnvironment>](servicehostingenvironment.md)|A configuration section that describes activation settings.|
 
 ## Remarks
 

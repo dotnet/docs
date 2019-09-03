@@ -91,7 +91,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(WCFServer), baseAddress)
 ```  
   
 > [!NOTE]
->  TCP is used in both examples to keep them as similar as possible. Refer to the scenario walk-throughs later in this topic for examples using HTTP.  
+> TCP is used in both examples to keep them as similar as possible. Refer to the scenario walk-throughs later in this topic for examples using HTTP.  
   
  There are many ways to configure and to host WCF services. This is just one example, known as "self-hosted". For more information, see the following topics:  
   
@@ -311,7 +311,7 @@ catch (FaultException<CustomerServiceFault> fault)
 3. Client sends an object by-value to the server  
   
 > [!NOTE]
->  Sending an object by-reference from the client to the server is not allowed in WCF.  
+> Sending an object by-reference from the client to the server is not allowed in WCF.  
   
  When reading through these scenarios, assume our baseline interfaces for .NET Remoting look like the following example. The .NET Remoting implementation is not important here because we want to illustrate only how to use WCF to implement equivalent functionality.  
   
@@ -460,7 +460,7 @@ public class RemotingServer : MarshalByRefObject
    ```  
   
     > [!TIP]
-    >  Notice that the sessionful object is marked with [ServiceContract], making it a normal WCF service interface. Setting the SessionMode property indicates it will be a sessionful service. In WCF, a session is a way of correlating multiple messages sent between two endpoints. This means that once a client obtains a connection to this service, a session will be established between the client and the server. The client will use a single unique instance of the server-side object for all its interactions within this single session.  
+    > Notice that the sessionful object is marked with [ServiceContract], making it a normal WCF service interface. Setting the SessionMode property indicates it will be a sessionful service. In WCF, a session is a way of correlating multiple messages sent between two endpoints. This means that once a client obtains a connection to this service, a session will be established between the client and the server. The client will use a single unique instance of the server-side object for all its interactions within this single session.  
   
 2. Next, we need to provide the implementation of this service interface. By denoting it with [ServiceBehavior] and setting the InstanceContextMode, we tell WCF we want to use a unique instance of this type for an each session.  
   
@@ -648,7 +648,7 @@ public class RemotingServer : MarshalByRefObject
      The customer object will be serialized, and sent to the server, where it is deserialized into a new copy of that object.  
   
     > [!NOTE]
-    >  This code also illustrates sending a derived type (PremiumCustomer). The service interface expects a Customer object, but the [KnownType] attribute on the Customer class indicated PremiumCustomer was also allowed. WCF will fail any attempt to serialize or deserialize any other type through this service interface.  
+    > This code also illustrates sending a derived type (PremiumCustomer). The service interface expects a Customer object, but the [KnownType] attribute on the Customer class indicated PremiumCustomer was also allowed. WCF will fail any attempt to serialize or deserialize any other type through this service interface.  
   
  Normal WCF exchanges of data are by value. This guarantees that invoking methods on one of these data objects executes only locally – it will not invoke code on the other tier. While it is possible to achieve something like by-reference objects returned *from* the server, it is not possible for a client to pass a by-reference object *to* the server. A scenario that requires a conversation back and forth between client and server can be achieved in WCF using a duplex service. For more information, see [Duplex Services](./feature-details/duplex-services.md).  
   

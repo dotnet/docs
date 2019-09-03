@@ -135,9 +135,8 @@ class Program
   
  If you open `SampleDoc.docx` after running this program, you can see that this program converted the first paragraph in the document to upper case.  
   
- When run with the sample Open XML document described in [Creating the Source Office Open XML Document (C#)](../../../../csharp/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md), this example produces the following output:  
+ When run with the sample Open XML document described in [Creating the Source Office Open XML Document (C#)](./creating-the-source-office-open-xml-document.md), this example produces the following output:  
   
-```  
+```output  
 New first paragraph: >PARSING WORDPROCESSINGML WITH LINQ TO XML<  
 ```  
-  

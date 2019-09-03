@@ -27,13 +27,13 @@ COM developers can benefit from the following information about the managed type
 
   Some managed types are invisible to COM; some are visible but not creatable; and some are both visible and creatable. An assembly can comprise any combination of invisible, visible, not creatable, and creatable types. For completeness, identify the types in an assembly that you intend to expose to COM, especially when those types are a subset of the types exposed to the .NET Framework.
 
-  For additional information, see [Qualifying .NET Types for Interoperation](../../../docs/standard/native-interop/qualify-net-types-for-interoperation.md).
+  For additional information, see [Qualifying .NET Types for Interoperation](../../standard/native-interop/qualify-net-types-for-interoperation.md).
 
 - Versioning instructions
 
   Managed classes that implement the class interface (a COM interop-generated interface) are subject to versioning restrictions.
 
-  For guidelines on using the class interface, see [Introducing the class interface](../../../docs/standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface).
+  For guidelines on using the class interface, see [Introducing the class interface](../../standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface).
 
 - Deployment instructions
 
@@ -43,7 +43,7 @@ COM developers can benefit from the following information about the managed type
 
 - Type library inclusion
 
-  Most types require a type library when consumed by a COM application. You can generate a type library or have COM developers perform this task. The Windows Software Development Kit (SDK) provides the following options for generating a type library:
+  Most types require a type library when consumed by a COM application. You can generate a type library or have COM developers perform this task. The Windows SDK provides the following options for generating a type library:
 
   - [Type Library Exporter](#cpconpackagingassemblyforcomanchor1)
 
@@ -88,8 +88,8 @@ The [.NET Services Installation Tool (Regsvcs.exe)](../tools/regsvcs-exe-net-ser
 - <xref:System.Runtime.InteropServices.TypeLibConverter>
 - <xref:System.Runtime.InteropServices.ITypeLibConverter>
 - [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
-- [Qualifying .NET Types for Interoperation](../../../docs/standard/native-interop/qualify-net-types-for-interoperation.md)
-- [Introducing the class interface](../../../docs/standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface)
+- [Qualifying .NET Types for Interoperation](../../standard/native-interop/qualify-net-types-for-interoperation.md)
+- [Introducing the class interface](../../standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface)
 - [Assembly Security Considerations](../app-domains/assembly-security-considerations.md)
 - [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)
 - [Registering Assemblies with COM](registering-assemblies-with-com.md)

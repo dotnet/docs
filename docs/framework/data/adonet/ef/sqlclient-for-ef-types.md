@@ -46,4 +46,4 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provider manifest fi
   
 ## See also
 
-- [CSDL, SSDL, and MSL Specifications](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+- [CSDL, SSDL, and MSL Specifications](./language-reference/csdl-ssdl-and-msl-specifications.md)

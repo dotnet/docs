@@ -169,7 +169,7 @@ void New3(ref String ar);
  When marshaling arrays from unmanaged code to managed code, the marshaler checks the **MarshalAsAttribute** associated with the parameter to determine the array size. If the array size is not specified, only one element is marshaled.  
   
 > [!NOTE]
->  The **MarshalAsAttribute** has no effect on marshaling managed arrays to unmanaged code. In that direction, the array size is determined by examination. There is no way to marshal a subset of a managed array.  
+> The **MarshalAsAttribute** has no effect on marshaling managed arrays to unmanaged code. In that direction, the array size is determined by examination. There is no way to marshal a subset of a managed array.  
   
  The interop marshaler uses the **CoTaskMemAlloc** and **CoTaskMemFree** methods to allocate and retrieve memory. Memory allocation performed by unmanaged code must also use these methods.  
   

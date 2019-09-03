@@ -34,7 +34,7 @@ ms.author: "mairaw"
   
 - Require derived classes that override specific methods to have a specified identity or permission.  
   
- The following example shows how to help protect a public class for limited access by requiring that callers be signed with a particular strong name. This example uses the <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> with a **Demand** for the strong name. For task-based information on how to sign an assembly with a strong name, see [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md).  
+ The following example shows how to help protect a public class for limited access by requiring that callers be signed with a particular strong name. This example uses the <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> with a **Demand** for the strong name. For task-based information on how to sign an assembly with a strong name, see [Creating and Using Strong-Named Assemblies](../app-domains/create-and-use-strong-named-assemblies.md).  
   
 ```vb  
 <StrongNameIdentityPermissionAttribute(SecurityAction.Demand, PublicKey := "…hex…", Name := "App1", Version := "0.0.0.0")>  _  
@@ -54,9 +54,9 @@ public class Class1
  Use the declarations shown in this section to prevent specific classes and methods, as well as properties and events, from being used by partially trusted code. By applying these declarations to a class, you apply the protection to all its methods, properties, and events; however, note that field access is not affected by declarative security. Note also that link demands help protect against only the immediate callers and might still be subject to luring attacks.  
   
 > [!NOTE]
->  A new transparency model has been introduced in the .NET Framework 4. The [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md) model identifies secure code with the <xref:System.Security.SecurityCriticalAttribute> attribute. Security-critical code requires both callers and inheritors to be fully trusted. Assemblies that are running under the code access security rules from earlier .NET Framework versions can call level 2 assemblies. In this case, the security-critical attributes will be treated as link demands for full trust.  
+> A new transparency model has been introduced in the .NET Framework 4. The [Security-Transparent Code, Level 2](security-transparent-code-level-2.md) model identifies secure code with the <xref:System.Security.SecurityCriticalAttribute> attribute. Security-critical code requires both callers and inheritors to be fully trusted. Assemblies that are running under the code access security rules from earlier .NET Framework versions can call level 2 assemblies. In this case, the security-critical attributes will be treated as link demands for full trust.  
   
- In strong-named assemblies, a [LinkDemand](../../../docs/framework/misc/link-demands.md) is applied to all publicly accessible methods, properties, and events therein to restrict their use to fully trusted callers. To disable this feature, you must apply the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute. Thus, explicitly marking classes to exclude untrusted callers is necessary only for unsigned assemblies or assemblies with this attribute; you can use these declarations to mark a subset of types therein that are not intended for untrusted callers.  
+ In strong-named assemblies, a [LinkDemand](link-demands.md) is applied to all publicly accessible methods, properties, and events therein to restrict their use to fully trusted callers. To disable this feature, you must apply the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute. Thus, explicitly marking classes to exclude untrusted callers is necessary only for unsigned assemblies or assemblies with this attribute; you can use these declarations to mark a subset of types therein that are not intended for untrusted callers.  
   
  The following examples show how to prevent classes and members from being used by untrusted code.  
   
@@ -228,7 +228,7 @@ class Implemented : ICanCastToMe
 ## Virtual Internal Overrides or Overloads Overridable Friend  
   
 > [!NOTE]
->  This section warns about a security issue when declaring a method as both `virtual` and `internal` (`Overloads` `Overridable` `Friend` in Visual Basic). This warning applies only to the .NET Framework versions 1.0 and 1.1, it does not apply to later versions.  
+> This section warns about a security issue when declaring a method as both `virtual` and `internal` (`Overloads` `Overridable` `Friend` in Visual Basic). This warning applies only to the .NET Framework versions 1.0 and 1.1, it does not apply to later versions.  
   
  In the .NET Framework versions 1.0 and 1.1, you must be aware of a nuance of the type system accessibility when confirming that your code is unavailable to other assemblies. A method that is declared **virtual** and **internal** (**Overloads Overridable Friend** in Visual Basic) can override the parent class's vtable entry and can be used only from within the same assembly because it is internal. However, the accessibility for overriding is determined by the **virtual** keyword, and this can be overridden from another assembly as long as that code has access to the class itself. If the possibility of an override presents a problem, use declarative security to fix it, or remove the **virtual** keyword if it is not strictly required.  
   
@@ -236,4 +236,4 @@ class Implemented : ICanCastToMe
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

@@ -53,7 +53,7 @@ Next
  This example produces exactly the same results as the previous two examples. This illustrates the fact that queries are effectively compiled into statically linked method calls. This, combined with the deferred execution semantics of iterators, improves performance. For more information about the deferred execution semantics of iterators, see [Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).  
   
 > [!NOTE]
->  These examples are representative of the code that the compiler might write. The actual implementation might differ slightly from these examples, but the performance will be the same or similar to these examples.  
+> These examples are representative of the code that the compiler might write. The actual implementation might differ slightly from these examples, but the performance will be the same or similar to these examples.  
   
 ## Executing XPath Expressions with XmlDocument  
  The following example uses <xref:System.Xml.XmlDocument> to accomplish the same results as the previous examples:  
@@ -73,13 +73,13 @@ reader.Close()
   
  However, the <xref:System.Xml.XmlDocument> approach generally does not perform as well as LINQ to XML, because the <xref:System.Xml.XmlNode.SelectNodes%2A> method must do the following internally every time it is called:  
   
-- It parses the string that contains the XPath expression, breaking the string into tokens.  
+-   It parses the string that contains the XPath expression, breaking the string into tokens.  
   
-- It validates the tokens to make sure that the XPath expression is valid.  
+-   It validates the tokens to make sure that the XPath expression is valid.  
   
-- It translates the expression into an internal expression tree.  
+-   It translates the expression into an internal expression tree.  
   
-- It iterates through the nodes, appropriately selecting the nodes for the result set based on the evaluation of the expression.  
+-   It iterates through the nodes, appropriately selecting the nodes for the result set based on the evaluation of the expression.  
   
  This is significantly more than the work done by the corresponding LINQ to XML query. The specific performance difference varies for different types of queries, but in general LINQ to XML queries do less work, and therefore perform better, than evaluating XPath expressions using <xref:System.Xml.XmlDocument>.  
   

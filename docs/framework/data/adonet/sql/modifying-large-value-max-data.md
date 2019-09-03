@@ -67,7 +67,7 @@ FROM OPENROWSET
 |`@Length` is NULL|The update operation removes all data from `@Offset` to the end of the `column_name` value.|  
   
 > [!NOTE]
->  Neither `@Offset` nor `@Length` can be a negative number.  
+> Neither `@Offset` nor `@Length` can be a negative number.  
   
 ## Example  
  This Transact-SQL example updates a partial value in DocumentSummary, an `nvarchar(max)` column in the Document table in the AdventureWorks database. The word 'components' is replaced by the word 'features' by specifying the replacement word, the beginning location (offset) of the word to be replaced in the existing data, and the number of characters to be replaced (length). The example includes SELECT statements before and after the UPDATE statement to compare results.  

@@ -21,11 +21,11 @@ The **-target:library** option causes the compiler to create a dynamic-link libr
 ## Remarks  
  The DLL will be created with the .dll extension.  
   
- Unless otherwise specified with the [-out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the first input file.  
+ Unless otherwise specified with the [-out](./out-compiler-option.md) option, the output file name takes the name of the first input file.  
   
  When specified at the command line, all files up to the next **-out** or **-target:module** option are used to create the .dll file.  
   
- When building a .dll file, a [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method is not required.  
+ When building a .dll file, a [Main](../../programming-guide/main-and-command-args/index.md) method is not required.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -46,5 +46,5 @@ csc -target:library in.cs
   
 ## See also
 
-- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [-target (C# Compiler Options)](./target-compiler-option.md)
+- [C# Compiler Options](./index.md)

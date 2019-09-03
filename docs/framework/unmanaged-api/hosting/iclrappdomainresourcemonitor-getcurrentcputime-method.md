@@ -59,5 +59,5 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
 
 - [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)
+- [Application Domain Resource Monitoring](../../../standard/garbage-collection/app-domain-resource-monitoring.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

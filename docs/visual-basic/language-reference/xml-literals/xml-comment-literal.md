@@ -40,7 +40,7 @@ A literal representing an <xref:System.Xml.Linq.XComment> object.
  You can assign an XML comment literal to a variable, or you can include it in an XML element literal.  
   
 > [!NOTE]
->  An XML literal can span multiple lines without using line continuation characters. This feature enables you to copy content from an XML document and paste it directly into a Visual Basic program.  
+> An XML literal can span multiple lines without using line continuation characters. This feature enables you to copy content from an XML document and paste it directly into a Visual Basic program.  
   
  The Visual Basic compiler converts the XML comment literal to a call to the <xref:System.Xml.Linq.XComment.%23ctor%2A> constructor.  
   

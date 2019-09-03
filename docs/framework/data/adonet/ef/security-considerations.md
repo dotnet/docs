@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 84758642-9b72-4447-86f9-f831fef46962
 ---
 # Security Considerations (Entity Framework)
-This topic describes security considerations that are specific to developing, deploying, and running [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] applications. You should also follow recommendations for creating secure .NET Framework applications. For more information, see [Security Overview](../../../../../docs/framework/data/adonet/security-overview.md).  
+This topic describes security considerations that are specific to developing, deploying, and running [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] applications. You should also follow recommendations for creating secure .NET Framework applications. For more information, see [Security Overview](../security-overview.md).  
   
 ## General Security Considerations  
  The following security considerations apply to all applications that use the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
@@ -40,9 +40,9 @@ This topic describes security considerations that are specific to developing, de
   
 - Use connection string builders when dynamically creating connections.  
   
-     If you must construct connection strings at runtime, use the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class. This string builder class helps prevent connection string injection attacks by validating and escaping invalid input information. For more information, see [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md). Also use the appropriate string builder class to construct the data source connection string that is part of the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] connection string. For information about connection string builders for ADO.NET providers, see [Connection String Builders](../../../../../docs/framework/data/adonet/connection-string-builders.md).  
+     If you must construct connection strings at runtime, use the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class. This string builder class helps prevent connection string injection attacks by validating and escaping invalid input information. For more information, see [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md). Also use the appropriate string builder class to construct the data source connection string that is part of the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] connection string. For information about connection string builders for ADO.NET providers, see [Connection String Builders](../connection-string-builders.md).  
   
- For more information, see [Protecting Connection Information](../../../../../docs/framework/data/adonet/protecting-connection-information.md).  
+ For more information, see [Protecting Connection Information](../protecting-connection-information.md).  
   
 #### Do not expose an EntityConnection to untrusted users.  
  An <xref:System.Data.EntityClient.EntityConnection> object exposes the connection string of the underlying connection. A user with access to an <xref:System.Data.EntityClient.EntityConnection> object can also change the <xref:System.Data.ConnectionState> of the underlying connection. The <xref:System.Data.EntityClient.EntityConnection> class is not thread safe.  
@@ -69,7 +69,7 @@ This topic describes security considerations that are specific to developing, de
   
 - Permission to open a database connection and execute commands against the database, such as <xref:System.Data.SqlClient.SqlClientPermission> for a SQL Server database.  
   
- For more information, see [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md).  
+ For more information, see [Code Access Security and ADO.NET](../code-access-security.md).  
   
 #### Do not install untrusted applications.  
  The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not enforce any security permissions and will invoke any user-supplied data object code in process regardless of whether it is trusted or not. Ensure that authentication and authorization of the client is performed by the data store and by your application.  
@@ -107,7 +107,7 @@ This topic describes security considerations that are specific to developing, de
   
 - In nested [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries.  
   
- When accepting user input, you must make sure that the input cannot cause result sets to become larger than what the system can handle. You can also use the <xref:System.Linq.Queryable.Take%2A> method in LINQ to Entities or the [LIMIT](../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md) operator in [!INCLUDE[esql](../../../../../includes/esql-md.md)] to limit the size of the result set.  
+ When accepting user input, you must make sure that the input cannot cause result sets to become larger than what the system can handle. You can also use the <xref:System.Linq.Queryable.Take%2A> method in LINQ to Entities or the [LIMIT](./language-reference/limit-entity-sql.md) operator in [!INCLUDE[esql](../../../../../includes/esql-md.md)] to limit the size of the result set.  
   
 #### Avoid Returning IQueryable Results When Exposing Methods to Potentially Untrusted Callers.  
  Avoid returning <xref:System.Linq.IQueryable%601> types from methods that are exposed to potentially untrusted callers for the following reasons:  
@@ -158,6 +158,6 @@ ADO.NET metadata service components do not log any private information. If there
   
 ## See also
 
-- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)
-- [Migration Considerations](../../../../../docs/framework/data/adonet/ef/migration-considerations.md)
+- [Securing ADO.NET Applications](../securing-ado-net-applications.md)
+- [Deployment Considerations](deployment-considerations.md)
+- [Migration Considerations](migration-considerations.md)

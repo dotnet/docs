@@ -85,7 +85,7 @@ ms.author: "ronpet"
 - Alter the main thread by setting the client thread to STA or MTA. For example, if your C# client calls many STA COM components, you can avoid cross-apartment marshaling by setting the main thread to STA.  
   
     > [!NOTE]
-    >  Once the thread of a C# client is set to STA, calls to MTA COM components will require cross-apartment marshaling.  
+    > Once the thread of a C# client is set to STA, calls to MTA COM components will require cross-apartment marshaling.  
   
  For instructions on explicitly selecting an apartment model, see [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100)).  
   
@@ -115,7 +115,7 @@ ms.author: "ronpet"
 - A managed client gets a reference to a managed object from a COM object that gets this reference from a remote host. The remoting mechanism is DCOM.  
   
     > [!NOTE]
-    >  The exported type library of the managed server must be registered.  
+    > The exported type library of the managed server must be registered.  
   
  The number of process boundaries between caller and callee is irrelevant; the same direct referencing occurs for in-process and out-of-process calls.  
   

@@ -11,7 +11,7 @@ The first set of examples in this topic shows a typical way that XML in a defaul
 
 The second set of examples show the necessary corrections so that you can query XML in a namespace.
 
-For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).
+For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).
 
 ## Example
 

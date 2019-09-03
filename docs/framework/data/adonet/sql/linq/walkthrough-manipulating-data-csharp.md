@@ -153,7 +153,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
 4. Press Enter in the **Console** window to close the application.  
   
 > [!NOTE]
->  After you have added the new customer by submitting the changes, you cannot execute this solution again as is. To execute the solution again, change the name of the customer and customer ID to be added.  
+> After you have added the new customer by submitting the changes, you cannot execute this solution again as is. To execute the solution again, change the name of the customer and customer ID to be added.  
   
 ## See also
 

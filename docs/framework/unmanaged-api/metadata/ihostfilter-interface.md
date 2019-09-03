@@ -21,7 +21,7 @@ ms.author: "mairaw"
 Provides a method to indicate that a specified token will be processed.  
   
 > [!NOTE]
->  The `IHostFilter` interface must be implemented by the client.  
+> The `IHostFilter` interface must be implemented by the client.  
   
 ## Methods  
   

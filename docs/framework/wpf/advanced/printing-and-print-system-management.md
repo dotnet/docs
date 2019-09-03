@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 637911b3-0c78-4493-a4fb-91db56d767cd
 ---
 # Printing and Print System Management
-[!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] and Microsoft .NET Framework introduce a new print path — an alternative to [!INCLUDE[TLA#tla_gdi](../../../../includes/tlasharptla-gdi-md.md)] printing — and a vastly expanded set of print system management APIs.  
+[!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] and Microsoft .NET Framework introduce a new print path — an alternative to Microsoft Windows Graphics Device Interface (GDI) printing — and a vastly expanded set of print system management APIs.  
   
 ## In This Section  
  [Printing Overview](printing-overview.md)  

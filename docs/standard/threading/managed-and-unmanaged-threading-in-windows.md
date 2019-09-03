@@ -21,7 +21,7 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
  In managed threading, <xref:System.Threading.Thread.GetHashCode%2A?displayProperty=nameWithType> is the stable managed thread identification. For the lifetime of your thread, it will not collide with the value from any other thread, regardless of the application domain from which you obtain this value.  
   
 > [!NOTE]
->  An operating-system **ThreadId** has no fixed relationship to a managed thread, because an unmanaged host can control the relationship between managed and unmanaged threads. Specifically, a sophisticated host can use the Fiber API to schedule many managed threads against the same operating system thread, or to move a managed thread among different operating system threads.  
+> An operating-system **ThreadId** has no fixed relationship to a managed thread, because an unmanaged host can control the relationship between managed and unmanaged threads. Specifically, a sophisticated host can use the Fiber API to schedule many managed threads against the same operating system thread, or to move a managed thread among different operating system threads.  
   
 ## Mapping from Win32 threading to managed threading
 
@@ -51,7 +51,7 @@ A managed thread can be marked to indicate that it will host a [single-threaded]
  If the apartment state is not set before the thread is started, the thread is initialized as a multithreaded apartment (MTA). The finalizer thread and all threads controlled by <xref:System.Threading.ThreadPool> are MTA.  
   
 > [!IMPORTANT]
->  For application startup code, the only way to control apartment state is to apply the <xref:System.MTAThreadAttribute> or the <xref:System.STAThreadAttribute> to the entry point procedure. In the .NET Framework 1.0 and 1.1, the <xref:System.Threading.Thread.ApartmentState%2A> property can be set as the first line of code. This is not permitted in the .NET Framework 2.0.  
+> For application startup code, the only way to control apartment state is to apply the <xref:System.MTAThreadAttribute> or the <xref:System.STAThreadAttribute> to the entry point procedure. In the .NET Framework 1.0 and 1.1, the <xref:System.Threading.Thread.ApartmentState%2A> property can be set as the first line of code. This is not permitted in the .NET Framework 2.0.  
   
  Managed objects that are exposed to COM behave as if they had aggregated the free-threaded marshaler. In other words, they can be called from any COM apartment in a free-threaded manner. The only managed objects that do not exhibit this free-threaded behavior are those objects that derive from <xref:System.EnterpriseServices.ServicedComponent> or <xref:System.Runtime.InteropServices.StandardOleMarshalObject>.  
   

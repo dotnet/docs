@@ -41,7 +41,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 ![SQL Server to SQL CLR data type mapping table](media/sql-clr-type-mapping.png)
 
 > [!NOTE]
->  Some type mappings may result in overflow or data loss exceptions while translating to or from the database.  
+> Some type mappings may result in overflow or data loss exceptions while translating to or from the database.  
   
 ### Custom Type Mapping  
  With LINQ to SQL, you are not limited to the default type mappings used by the O/R Designer, SQLMetal, and the <xref:System.Data.Linq.DataContext.CreateDatabase%2A> method. You can create custom type mappings by explicitly specifying them in a DBML file. Then you can use that DBML file to create the object model code and mapping file. For more information, see [SQL-CLR Custom Type Mappings](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-custom-type-mappings.md).  
@@ -71,7 +71,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
      When you map a CLR <xref:System.Enum?displayProperty=nameWithType> type to a SQL text type, the SQL database value is mapped to the names of the CLR <xref:System.Enum?displayProperty=nameWithType> members. For example, if a <xref:System.Enum?displayProperty=nameWithType> named `DaysOfWeek` contains a member named `Tue` with an underlying integer value of 3, that member maps to a database value of `Tue`.  
   
 > [!NOTE]
->  When mapping SQL text types to a CLR <xref:System.Enum?displayProperty=nameWithType>, include only the names of the <xref:System.Enum> members in the mapped SQL column. Other values are not supported in the <xref:System.Enum>-mapped SQL column.  
+> When mapping SQL text types to a CLR <xref:System.Enum?displayProperty=nameWithType>, include only the names of the <xref:System.Enum> members in the mapped SQL column. Other values are not supported in the <xref:System.Enum>-mapped SQL column.  
   
  The O/R Designer and SQLMetal command-line tool cannot automatically map a SQL type to a CLR <xref:System.Enum> class. You must explicitly configure this mapping by customizing a DBML file for use by the O/R Designer and SQLMetal. For more information about custom type mapping, see [SQL-CLR Custom Type Mappings](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-custom-type-mappings.md).  
   
@@ -162,7 +162,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
  If a class implements `Parse()` and `ToString()`, you can map the object to any SQL text type (`CHAR`, `NCHAR`, `VARCHAR`, `NVARCHAR`, `TEXT`, `NTEXT`, `XML`). The object is stored in the database by sending the value returned by `ToString()` to the mapped database column. The object is reconstructed by invoking `Parse()` on the string returned by the database.  
   
 > [!NOTE]
->  LINQ to SQL does not support serialization by using <xref:System.Xml.Serialization.IXmlSerializable?displayProperty=nameWithType>.  
+> LINQ to SQL does not support serialization by using <xref:System.Xml.Serialization.IXmlSerializable?displayProperty=nameWithType>.  
   
 <a name="DateMapping"></a>   
 ## Date and Time Mapping  
@@ -188,7 +188,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
  There are many other date and time mappings you can choose, but some may result in overflow or data loss exceptions while translating to or from the database. For more information, see the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix).  
   
 > [!NOTE]
->  The SQL Server types `DATETIME2`, `DATETIMEOFFSET`, `DATE`, and `TIME` are available starting with Microsoft SQL Server 2008. LINQ to SQL supports mapping to these new types starting with the .NET Framework version 3.5 SP1.  
+> The SQL Server types `DATETIME2`, `DATETIMEOFFSET`, `DATE`, and `TIME` are available starting with Microsoft SQL Server 2008. LINQ to SQL supports mapping to these new types starting with the .NET Framework version 3.5 SP1.  
   
 ### System.Datetime  
  The range and precision of the CLR <xref:System.DateTime?displayProperty=nameWithType> type is greater than the range and precision of the SQL Server `DATETIME` type, which is the default type mapping for the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method. To help avoid exceptions related to dates outside the range of `DATETIME`, use `DATETIME2`, which is available starting with Microsoft SQL Server 2008. `DATETIME2` can match the range and precision of the CLR <xref:System.DateTime?displayProperty=nameWithType>.  

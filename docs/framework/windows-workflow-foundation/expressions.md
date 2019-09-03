@@ -1,5 +1,5 @@
 ---
-title: "Expressions1"
+title: "Expressions - WF"
 ms.date: "03/30/2017"
 ms.assetid: c42341a9-43a1-462c-bffb-c5de004aa428
 ---
@@ -10,7 +10,7 @@ A Windows Workflow Foundation (WF) expression is any activity that returns a res
  Workflow designer uses <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> and <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> for all expressions in Visual Basic projects, and <xref:Microsoft.CSharp.Activities.CSharpValue%601> and <xref:Microsoft.CSharp.Activities.CSharpReference%601> for expressions in C# workflow projects.  
   
 > [!NOTE]
->  Support for C# expressions in workflow projects was introduced in .NET Framework 4.5. For more information, see [C# Expressions](csharp-expressions.md).  
+> Support for C# expressions in workflow projects was introduced in .NET Framework 4.5. For more information, see [C# Expressions](csharp-expressions.md).  
   
  Workflows produced by designer are saved in XAML, where expressions appear enclosed in square brackets, as in the following example.  
   

@@ -145,7 +145,7 @@ by concatenating the first and last names:
 
 [!code-csharp[A computed property](../../samples/snippets/csharp/properties/Person.cs#10)]
 
-The example above uses the [string interpolation](../csharp/language-reference/tokens/interpolated.md) feature to create
+The example above uses the [string interpolation](./language-reference/tokens/interpolated.md) feature to create
 the formatted string for the full name.
 
 You can also use an *expression-bodied member*, which provides a more

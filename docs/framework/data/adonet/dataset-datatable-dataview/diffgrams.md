@@ -6,7 +6,7 @@ ms.assetid: 037f3991-7bbc-424b-b52e-8b03585d3e34
 # DiffGrams
 A DiffGram is an XML format that identifies current and original versions of data elements. The <xref:System.Data.DataSet> uses the DiffGram format to load and persist its contents, and to serialize its contents for transport across a network connection. When a <xref:System.Data.DataSet> is written as a DiffGram, it populates the DiffGram with all the necessary information to accurately recreate the contents, though not the schema, of the <xref:System.Data.DataSet>, including column values from both the **Original** and **Current** row versions, row error information, and row order.  
   
- When sending and retrieving a <xref:System.Data.DataSet> from an XML Web service, the DiffGram format is implicitly used. Additionally, when loading the contents of a <xref:System.Data.DataSet> from XML using the **ReadXml** method, or when writing the contents of a <xref:System.Data.DataSet> in XML using the **WriteXml** method, you can specify that the contents be read or written as a DiffGram. For more information, see [Loading a DataSet from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md) and [Writing DataSet Contents as XML Data](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/writing-dataset-contents-as-xml-data.md).  
+ When sending and retrieving a <xref:System.Data.DataSet> from an XML Web service, the DiffGram format is implicitly used. Additionally, when loading the contents of a <xref:System.Data.DataSet> from XML using the **ReadXml** method, or when writing the contents of a <xref:System.Data.DataSet> in XML using the **WriteXml** method, you can specify that the contents be read or written as a DiffGram. For more information, see [Loading a DataSet from XML](loading-a-dataset-from-xml.md) and [Writing DataSet Contents as XML Data](writing-dataset-contents-as-xml-data.md).  
   
  While the DiffGram format is primarily used by the .NET Framework as a serialization format for the contents of a <xref:System.Data.DataSet>, you can also use DiffGrams to modify data in tables in a Microsoft SQL Server database.  
   
@@ -31,12 +31,12 @@ A DiffGram is an XML format that identifies current and original versions of dat
 2. Process the second or the **\<before>** section that contains the original row version of modified and deleted rows.  
   
     > [!NOTE]
-    >  If a row is marked deleted, the delete operation can delete the row's descendants as well, depending on the `Cascade` property of the current <xref:System.Data.DataSet>.  
+    > If a row is marked deleted, the delete operation can delete the row's descendants as well, depending on the `Cascade` property of the current <xref:System.Data.DataSet>.  
   
 3. Process the **\<errors>** section. Set the error information for the specified row and column for each item in this section.  
   
 > [!NOTE]
->  If you set the <xref:System.Data.XmlWriteMode> to Diffgram, the content of the target <xref:System.Data.DataSet> and the original <xref:System.Data.DataSet> may differ.  
+> If you set the <xref:System.Data.XmlWriteMode> to Diffgram, the content of the target <xref:System.Data.DataSet> and the original <xref:System.Data.DataSet> may differ.  
   
 ## DiffGram Format  
  The DiffGram format is divided into three sections: the current data, the original (or "before") data, and an errors section, as shown in the following example.  
@@ -127,8 +127,8 @@ A DiffGram is an XML format that identifies current and original versions of dat
   
 ## See also
 
-- [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
-- [Loading a DataSet from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md)
-- [Writing DataSet Contents as XML Data](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/writing-dataset-contents-as-xml-data.md)
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [Using XML in a DataSet](using-xml-in-a-dataset.md)
+- [Loading a DataSet from XML](loading-a-dataset-from-xml.md)
+- [Writing DataSet Contents as XML Data](writing-dataset-contents-as-xml-data.md)
+- [DataSets, DataTables, and DataViews](index.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

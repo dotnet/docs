@@ -10,16 +10,16 @@ ms.assetid: 2996ce5e-81e9-49ae-881b-952db3dd1b7e
 <a name="introduction"></a>
 Windows Presentation Foundation (WPF) is a presentation framework that can be used to develop the following types of applications:  
   
-- Standalone Applications (traditional style [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] applications built as executable assemblies that are installed to and run from the client computer).  
+- Standalone Applications (traditional style Windows applications built as executable assemblies that are installed to and run from the client computer).  
   
-- [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] (applications composed of navigation pages that are built as executable assemblies and hosted by Web browsers such as [!INCLUDE[TLA#tla_ie](../../../../includes/tlasharptla-ie-md.md)] or Mozilla Firefox).  
+- [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] (applications composed of navigation pages that are built as executable assemblies and hosted by Web browsers such as Microsoft Internet Explorer or Mozilla Firefox).  
   
 - Custom Control Libraries (non-executable assemblies containing reusable controls).  
   
 - Class Libraries (non-executable assemblies that contain reusable classes).  
   
 > [!NOTE]
->  Using WPF types in a Windows service is strongly discouraged. If you attempt to use these features in a Windows service, they may not work as expected.  
+> Using WPF types in a Windows service is strongly discouraged. If you attempt to use these features in a Windows service, they may not work as expected.  
   
  To build this set of applications, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implements a host of services. This topic provides an overview of these services and where to find more information.  
 
@@ -103,7 +103,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 <a name="Hosting"></a>   
 ## Hosting  
- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] can be hosted in [!INCLUDE[TLA#tla_ie](../../../../includes/tlasharptla-ie-md.md)] or Firefox. Each hosting model has its own set of considerations and constraints that are covered in [Hosting](hosting-wpf-applications.md).  
+ [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] can be hosted in Microsoft Internet Explorer or Firefox. Each hosting model has its own set of considerations and constraints that are covered in [Hosting](hosting-wpf-applications.md).  
   
 <a name="Build_and_Deploy"></a>   
 ## Build and Deploy  

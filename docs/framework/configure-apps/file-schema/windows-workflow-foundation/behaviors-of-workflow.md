@@ -28,17 +28,17 @@ This element contains the **serviceBehaviors** collection.  Each element in the 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/servicebehaviors-of-workflow.md)|This configuration section represents all the behaviors defined for a specific workflow service.|  
+|[\<serviceBehaviors>](servicebehaviors-of-workflow.md)|This configuration section represents all the behaviors defined for a specific workflow service.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.serviceModel>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)|The root element of all workflow configuration elements.|  
+|[\<system.serviceModel>](../wcf/system-servicemodel.md)|The root element of all workflow configuration elements.|  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.BehaviorsSection>
 - <xref:System.ServiceModel.Configuration.ServiceBehaviorElementCollection>
 - <xref:System.ServiceModel.Configuration.ServiceBehaviorElement>
-- [Configuring and Extending the Runtime with Behaviors](../../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)
+- [Configuring and Extending the Runtime with Behaviors](../../../wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)

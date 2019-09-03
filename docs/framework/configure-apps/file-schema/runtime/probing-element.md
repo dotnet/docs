@@ -15,10 +15,10 @@ ms.author: "ronpet"
 # \<probing> Element
 Specifies application base subdirectories for the common language runtime to search when loading assemblies.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<probing>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<probing>**  
   
 ## Syntax  
   
@@ -36,7 +36,8 @@ Specifies application base subdirectories for the common language runtime to sea
 |`privatePath`|Required attribute.<br /><br /> Specifies subdirectories of the application's base directory that might contain assemblies. Delimit each subdirectory with a semicolon.|  
   
 ### Child Elements  
- None.  
+
+None.  
   
 ### Parent Elements  
   
@@ -61,7 +62,7 @@ Specifies application base subdirectories for the common language runtime to sea
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Specifying an Assembly's Location](../../../../../docs/framework/configure-apps/specify-assembly-location.md)
-- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [Specifying an Assembly's Location](../../specify-assembly-location.md)
+- [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

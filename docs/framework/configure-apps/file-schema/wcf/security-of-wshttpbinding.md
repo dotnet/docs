@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8658b162-2ddf-4162-a869-aa517a42288a
 ---
 # \<security> of \<wsHttpBinding>
-Represents the security capabilities of the [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
+Represents the security capabilities of the [\<wsHttpBinding>](wshttpbinding.md).  
   
  \<system.ServiceModel>  
 \<bindings>  
@@ -43,7 +43,7 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
 |Value|Description|  
 |-----------|-----------------|  
 |None|Security is disabled.|  
-|Transport|Security is provided using HTTPS. The service needs to be configured with SSL certificates. The message is entirely secured using HTTPS and is authenticated by the client using the service’s SSL certificate. The client authentication is controlled through the `ClientCredentials` attribute. of the [\<transport>](../../../../../docs/framework/configure-apps/file-schema/wcf/transport-of-wshttpbinding.md).|  
+|Transport|Security is provided using HTTPS. The service needs to be configured with SSL certificates. The message is entirely secured using HTTPS and is authenticated by the client using the service’s SSL certificate. The client authentication is controlled through the `ClientCredentials` attribute. of the [\<transport>](transport-of-wshttpbinding.md).|  
 |Message|Security is provided using SOAP message security. By default, the SOAP body is Encrypted and Signed. This mode offers a variety of features, such as whether the service credentials are available at the client out of band, the algorithm suite to use, and what level of protection to apply to the message body through the Security.Message property. Client authentication is performed once per session and the results of authentication are cached for the duration of the session.|  
 |TransportWithMessageCredential|In this mode, HTTPS provides integrity, confidentiality, and server authentication, and SOAP message security provides client authentication. By default, client authentication is performed once per session and the results of authentication are cached for the duration of the session.|  
   
@@ -51,14 +51,14 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<transport>](../../../../../docs/framework/configure-apps/file-schema/wcf/transport-of-wshttpbinding.md)|Defines the transport security settings. This element corresponds to the <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement> type.|  
-|[\<message>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-of-wshttpbinding.md)|Defines the security settings for the message. This element corresponds to the <xref:System.ServiceModel.Configuration.MessageSecurityOverHttpElement> type.|  
+|[\<transport>](transport-of-wshttpbinding.md)|Defines the transport security settings. This element corresponds to the <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement> type.|  
+|[\<message>](message-of-wshttpbinding.md)|Defines the security settings for the message. This element corresponds to the <xref:System.ServiceModel.Configuration.MessageSecurityOverHttpElement> type.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)|A secure binding for HTTP transport applications.|  
+|[\<wsHttpBinding>](wshttpbinding.md)|A secure binding for HTTP transport applications.|  
   
 ## Remarks  
  The WSHttpBinding class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS.  
@@ -69,8 +69,8 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
 - <xref:System.ServiceModel.WSHttpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security%2A>
 - <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

@@ -36,18 +36,18 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
 ## Remarks  
  See the <xref:System.Runtime.Serialization.DataContractSerializer> documentation for more information about known types.  
   
 > [!CAUTION]
->  The `<dataContractSerializer>` behavior element (if present) should always appear before the `<enableWebScript>` behavior element in the configuration file. Otherwise, the resulting behavior is undefined.  
+> The `<dataContractSerializer>` behavior element (if present) should always appear before the `<enableWebScript>` behavior element in the configuration file. Otherwise, the resulting behavior is undefined.  
   
 ## See also
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
 - <xref:System.ServiceModel.Configuration.DataContractSerializerElement>
-- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
-- [Data Transfer and Serialization](../../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)
+- [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md)
+- [Data Transfer and Serialization](../../../wcf/feature-details/data-transfer-and-serialization.md)

@@ -76,14 +76,14 @@ This sample demonstrates federated security.
  See the following instructions about how to set up and run this sample.  
   
 > [!NOTE]
->  You must have Write permissions to the **wwwroot** directory to run this sample.  
+> You must have Write permissions to the **wwwroot** directory to run this sample.  
   
 #### To set up, build, and run the sample  
   
 1. Open the SDK command window. In the sample path, run Setup.bat. This creates the virtual directories required for the sample and installs the required certificates with appropriate permissions.  
   
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Windows SDK Command Prompt. It requires that the MSSDK environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Windows SDK Command Prompt. On [!INCLUDE[wv](../../../../includes/wv-md.md)], you must ensure that IIS 6.0 Management Compatibility is installed because the set up uses IIS administrator scripts. Running the set-up script on [!INCLUDE[wv](../../../../includes/wv-md.md)] requires administrator privileges.  
+    > The Setup.bat batch file is designed to be run from a Windows SDK Command Prompt. It requires that the MSSDK environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Windows SDK Command Prompt. On [!INCLUDE[wv](../../../../includes/wv-md.md)], you must ensure that IIS 6.0 Management Compatibility is installed because the set up uses IIS administrator scripts. Running the set-up script on [!INCLUDE[wv](../../../../includes/wv-md.md)] requires administrator privileges.  
   
 2. Open FederationSample.sln in Visual Studio and select **Build Solution** from the **Build** menu. This builds the common project files, Bookstore service, Bookstore STS, HomeRealm STS, and deploys them in IIS. This also builds the Bookstore client application and places the executable BookStoreClient.exe in the FederationSample\BookStoreClient\bin\Debug folder.  
   
@@ -96,17 +96,17 @@ This sample demonstrates federated security.
      The sample is configured to allow users to purchase books that cost $15 or less. Attempting to buy books that cost more than $15 results in the client getting an Access Denied message from the Book Store Service.  
   
     > [!NOTE]
-    >  The sample does not update the user’s credit limit after a purchase. You can repeatedly purchase books within the user’s (fixed) credit limit.  
+    > The sample does not update the user’s credit limit after a purchase. You can repeatedly purchase books within the user’s (fixed) credit limit.  
   
 #### To clean up  
   
 1. Run Cleanup.bat. This deletes the virtual directories that were created during set up and also removes the certificates installed during setup.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\Federation`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\Federation`  

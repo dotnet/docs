@@ -25,7 +25,7 @@ HRESULT _AxlGetIssuerPublicKeyHash (
   
 ## Parameters  
  `pChainContext`  
- [in] The CSP public key blob. See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
+ [in] The CSP public key blob. See the [CRYPTOAPI_BLOB](/windows/win32/api/dpapi/ns-dpapi-crypt_integer_blob) structure.  
   
  `ppwszPublicKeyHash`  
  [out] A pointer to WCHAR * to receive the hex-encoded public key token.  

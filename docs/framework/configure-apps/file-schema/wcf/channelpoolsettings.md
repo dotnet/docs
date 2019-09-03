@@ -39,7 +39,7 @@ Specifies the channel pool settings for a custom binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<oneWay>](../../../../../docs/framework/configure-apps/file-schema/wcf/oneway.md)|Enables packet routing for a custom binding.|  
+|[\<oneWay>](oneway.md)|Enables packet routing for a custom binding.|  
   
 ## Remarks  
  Quotas are used as a policy mechanism to prevent the consumption of excessive resources. They prevent Denial of Service (DOS) attacks that are either malicious or unintentional. Use this element when setting channel quotas on a custom channel.  
@@ -59,8 +59,8 @@ Specifies the channel pool settings for a custom binding.
 - <xref:System.ServiceModel.Configuration.OneWayElement.ChannelPoolSettings%2A>
 - <xref:System.ServiceModel.Configuration.ChannelPoolSettingsElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [\<oneWay>](../../../../../docs/framework/configure-apps/file-schema/wcf/oneway.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [\<oneWay>](oneway.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

@@ -47,7 +47,7 @@ None.
 
 | Element | Description |  
 | ------- | ----------- |  
-| [\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md) | A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed. |  
+| [\<standardEndpoints>](standardendpoints.md) | A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed. |  
   
 ## Example
 

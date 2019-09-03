@@ -72,7 +72,7 @@ Console.WriteLine(root);
 ### Comments  
  This code produces the following output:  
   
-```  
+```output  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XText Remove  

@@ -21,7 +21,7 @@ The `#Region` directive enables you to collapse and hide sections of code in Vis
      The `#Region` block can be used multiple times in a code file; thus, users can define their own blocks of procedures and classes that can, in turn, be collapsed. `#Region` blocks can also be nested within other `#Region` blocks.  
   
     > [!NOTE]
-    >  Hiding code does not prevent it from being compiled and does not affect `#If...#End If` statements.  
+    > Hiding code does not prevent it from being compiled and does not affect `#If...#End If` statements.  
   
 ## See also
 

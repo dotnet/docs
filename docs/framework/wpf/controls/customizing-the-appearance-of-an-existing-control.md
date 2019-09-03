@@ -138,7 +138,7 @@ Two buttons with different background colors
  You add <xref:System.Windows.VisualState> objects to <xref:System.Windows.VisualStateGroup> objects. You add <xref:System.Windows.VisualStateGroup> objects to the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType> attached property. The following example defines the <xref:System.Windows.VisualState> objects for the `Normal`, `MouseOver`, and `Pressed` states, which are all in the `CommonStates` group. The <xref:System.Windows.VisualState.Name%2A> of each <xref:System.Windows.VisualState> matches the name in the preceding table. The `Disabled` state and the states in the `FocusStates` group are omitted to keep the example short, but they are included in the entire example at the end of this topic.  
   
 > [!NOTE]
->  Be sure to set the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType> attached property on the root <xref:System.Windows.FrameworkElement> of the <xref:System.Windows.Controls.ControlTemplate>.  
+> Be sure to set the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType> attached property on the root <xref:System.Windows.FrameworkElement> of the <xref:System.Windows.Controls.ControlTemplate>.  
   
  [!code-xaml[VSMButtonTemplate#VisualStates](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#visualstates)]  
   

@@ -26,13 +26,13 @@ Contains a collection of configuration elements that specify user accounts for p
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-allowaccounts.md)|Adds a user account for processes that host WCF services, and are granted connection access to the sharing service|  
+|[\<add>](add-of-allowaccounts.md)|Adds a user account for processes that host WCF services, and are granted connection access to the sharing service|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<net.pipe>](../../../../../docs/framework/configure-apps/file-schema/wcf/net-pipe.md) or [\<net.tcp>](../../../../../docs/framework/configure-apps/file-schema/wcf/net-tcp.md)|Specifies configuration settings for the Net Pipe or TCP sharing services.|  
+|[\<net.pipe>](net-pipe.md) or [\<net.tcp>](net-tcp.md)|Specifies configuration settings for the Net Pipe or TCP sharing services.|  
   
 ## See also
 

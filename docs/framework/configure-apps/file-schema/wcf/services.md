@@ -29,13 +29,13 @@ Services are defined in the `services` section of the configuration file. Each s
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|Define the service contract, behavior, and endpoints of the particular service.|  
+|[\<service>](service.md)|Define the service contract, behavior, and endpoints of the particular service.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.serviceModel>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)|The root element of all Windows Communication Foundation (WCF) configuration elements.|  
+|[\<system.serviceModel>](system-servicemodel.md)|The root element of all Windows Communication Foundation (WCF) configuration elements.|  
   
 ## See also
 

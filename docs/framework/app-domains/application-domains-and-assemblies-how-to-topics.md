@@ -21,7 +21,7 @@ The following sections contain links to all How-to topics found in the conceptua
   
 - [How to: Load Assemblies into an Application Domain](../../../docs/framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)  
   
-- [How to: Obtain Type and Member Information from an Assembly](../../standard/assembly/get-type-member-information.md)  
+- [How to: Obtain Type and Member Information from an Assembly](../reflection-and-codedom/get-type-member-information.md)  
   
  **Assemblies**  
   

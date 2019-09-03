@@ -30,7 +30,7 @@ Application domains provide a unit of isolation for the common language runtime.
  [How to: Load Assemblies into an Application Domain](../../../docs/framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)  
  Describes how to load an assembly into an application domain.  
   
- [How to: Obtain Type and Member Information from an Assembly](../../standard/assembly/get-type-member-information.md)  
+ [How to: Obtain Type and Member Information from an Assembly](../reflection-and-codedom/get-type-member-information.md)  
  Describes how to retrieve information about an assembly.  
   
  [Shadow Copying Assemblies](../../../docs/framework/app-domains/shadow-copy-assemblies.md)  

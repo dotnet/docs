@@ -64,7 +64,7 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  The .NET Framework class that represents an assembly.  
   
 ## Related sections  
- [How to: Obtain type and member information from an assembly](get-type-member-information.md)  
+ [How to: Obtain type and member information from an assembly](../../framework/reflection-and-codedom/get-type-member-information.md)  
  Describes how to programmatically obtain type and other information from an assembly.  
   
  [Assemblies in .NET](index.md)  

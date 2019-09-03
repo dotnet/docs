@@ -6,7 +6,9 @@ ms.assetid: 53a59fb6-dede-47ec-9384-b3c2e8f0c1fa
 # \<extensions> section
 This configuration section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.  
   
-\<system.ServiceModel>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;\<extensions>  
   
 ## Syntax  
   

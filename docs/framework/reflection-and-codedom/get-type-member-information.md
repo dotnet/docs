@@ -9,7 +9,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Get type and member information from an assembly
-The <xref:System.Reflection> namespace contains many methods for obtaining information from an assembly. This article demonstrates one of these methods. For additional information, see [Reflection overview](../../csharp/programming-guide/concepts/attributes/reflection.md).  
+The <xref:System.Reflection> namespace contains many methods for obtaining information from an assembly. This article demonstrates one of these methods. For additional information, see [Reflection overview](reflection.md).  
   
 ## Example
 
@@ -115,5 +115,5 @@ End Class
 ## See also
 
 - [Program with application domains](../app-domains/application-domains.md#programming-with-application-domains)
-- [Reflection](../../csharp/programming-guide/concepts/attributes/reflection.md)
-- [Use application domains](../../csharp/language-reference/keywords/use.md)
+- [Reflection](reflection.md)
+- [Use application domains](../app-domains/use.md)

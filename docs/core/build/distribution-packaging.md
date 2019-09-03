@@ -78,15 +78,15 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of an `x.y` version of .NET Core and ASP.NET Core respectively. These packs are used when compiling for those target versions.
 
-- (13) **Microsoft.NETCore.App.Host.\<rid>** contains a native binary for platform `rid`. This binary as a template when compiling a .NET Core application into a native binary for that platform.
+- (13) **Microsoft.NETCore.App.Host.\<rid>** contains a native binary for platform `rid`. This binary is a template when compiling a .NET Core application into a native binary for that platform.
 
 - (14) **Microsoft.WindowsDesktop.App.Ref** describes the API of `x.y` version of Windows Desktop applications. These files are used when compiling for that target. This isn't provided on non-Windows platforms.
 
 - (15) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
 
-- (16) **/etc/dotnet/install_location** file that contains the full path to the folder that contains the `dotnet` host binary. The path may be terminated with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
+- (16) **/etc/dotnet/install_location** is a file that contains the full path to the folder that contains the `dotnet` host binary. The path may be terminated with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
 
-- (17) **templates** templates used by the sdk.
+- (17) **templates** contains the templates used by the SDK. For example, `dotnet new` finds project templates here.
 
 ## Recommended packages
 
@@ -103,9 +103,9 @@ The following lists the recommended packages:
   * **Version:** \<runtime version>
   * **Example:** dotnet-sdk-2.1
   * **Contains:** (3),(4)
-  * **Dependencies:** `aspnetcore-runtime-[major].[minor]`, `dotnet-netcoreapp-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`
+  * **Dependencies:** `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
 
-* `aspnetcore-runtime-[major].[minor]` - Installs specific ASP.NET Core runtime
+* `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime
   * **Version:** \<aspnetcore runtime version>
   * **Example:** aspnetcore-runtime-2.1
   * **Contains:** (6),(7)

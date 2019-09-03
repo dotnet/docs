@@ -23,7 +23,7 @@ foreach (XElement el in tests)
   
  This code produces the following output:  
   
-```  
+```output  
 0002  
 0006  
 ```  
@@ -46,7 +46,7 @@ foreach (XElement el in tests)
   
  This code produces the following output:  
   
-```  
+```output  
 0002  
 0006  
 ```  

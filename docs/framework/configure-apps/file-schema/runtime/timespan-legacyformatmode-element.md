@@ -71,13 +71,13 @@ The following example instantiates a <xref:System.TimeSpan> object and attempts 
 
 When you run the example on the .NET Framework 3.5 or on an earlier version, it displays the following output:
 
-```
+```output
 12:30:45
 ```
 
 This differs markedly from the output if you run the example on the .NET Framework 4 or later version:
 
-```
+```output
 Invalid Format
 ```
 

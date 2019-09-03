@@ -49,7 +49,7 @@ Represents a collection of configuration elements that specify pass through filt
   
  For example, your site can contain the following base addresses.  
   
-```  
+```text  
 http://testl.fabrikam.com/Service.svc  
 http://test2.fabrikam.com/Service.svc  
 ```  

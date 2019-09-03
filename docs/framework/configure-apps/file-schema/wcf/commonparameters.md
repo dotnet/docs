@@ -47,12 +47,13 @@ Represents a collection of parameters that are used globally across multiple ser
   
 > [!NOTE]
 > SQL Tracking service does not consistently use the `ConnectionString` value if it is specified in the `<commonParameters>` section. Some of its operations such as retrieving the `StateMachineWorkflowInstance.StateHistory` property may fail. To workaround this, specify the `ConnectionString` attribute in the configuration section for tracking provider, as indicated in the following example.  
-  
- `<add`  
-  
- `type="System.Workflow.Runtime.Tracking.SqlTrackingService, System.Workflow.Runtime, Version=3.0.00000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"`  
-  
- `ConnectionString="Data Source=localhost;Initial Catalog=Partner20WFTP;Integrated Security=True;" />`  
+
+```xml  
+<add
+type="System.Workflow.Runtime.Tracking.SqlTrackingService, System.Workflow.Runtime, Version=3.0.00000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" 
+
+ConnectionString="Data Source=localhost;Initial Catalog=Partner20WFTP;Integrated Security=True;" />
+```  
   
  For services that commit work batches to persistence stores, such as <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> and <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>, you can enable them to retry their transaction by using the `EnableRetries` parameter as shown in the following example:  
   
@@ -77,7 +78,7 @@ Represents a collection of parameters that are used globally across multiple ser
   
  The following sample code shows how to change the common parameters programmatically.  
   
-```  
+```csharp  
 Configuration config=WebConfigurationManager.OpenWebConfiguration("/Workflow", "Default Web Site", null, "localhost");  
 WorkflowRuntimeSection wfruntime=config.GetSection("WorkflowRuntime") as WorkflowRuntimeSection;  
 NameValueConfigurationCollection commonParameters=wfruntime.CommonParameters;  

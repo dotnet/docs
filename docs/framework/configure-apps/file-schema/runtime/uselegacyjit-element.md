@@ -63,7 +63,7 @@ Instead of using a configuration file setting, you can enable the legacy 64-bit 
 
   Set the `COMPLUS_useLegacyJit` environment variable to either `0` (use the new 64-bit JIT compiler) or `1` (use the older 64-bit JIT compiler):
   
-  ```  
+  ```env  
   COMPLUS_useLegacyJit=0|1  
   ```  
   

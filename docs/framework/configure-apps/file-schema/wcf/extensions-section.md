@@ -8,7 +8,7 @@ This configuration section contains a collection of extensions, which enable the
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;\<extensions>  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<extensions>**  
   
 ## Syntax  
   

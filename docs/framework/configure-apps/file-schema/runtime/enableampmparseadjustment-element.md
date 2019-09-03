@@ -8,9 +8,9 @@ ms.author: "ronpet"
 # \<EnableAmPmParseAdjustment> Element
 Determines whether date and time parsing methods use an adjusted set of rules to parse date strings that contain a day, month, hour, and AM/PM designator.  
   
- \<configuration>  
- \<runtime>  
-\<EnableAmPmParseAdjustment>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<EnableAmPmParseAdjustment>**  
   
 ## Syntax  
   

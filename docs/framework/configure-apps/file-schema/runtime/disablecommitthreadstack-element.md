@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<disableCommitThreadStack> Element
 Specifies whether the full thread stack is committed when a thread is started.  
   
- \<configuration>  
-\<runtime>  
-\<disableCommitThreadStack>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<disableCommitThreadStack>**  
   
 ## Syntax  
   

@@ -56,7 +56,7 @@ dotnet new console -o app -n myapp
 
 Your folder tree will look like the following:
 
-```console
+```
 docker-working
 │   global.json
 │
@@ -180,7 +180,7 @@ The `FROM` command tells Docker to pull down the image tagged **2.2** from the *
 
 Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been cut to save space in the article:
 
-```console
+```
 docker-working
 │   Dockerfile
 │   global.json

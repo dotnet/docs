@@ -27,9 +27,9 @@ The following sections contain links to all How-to topics found in the conceptua
   
 - [How to: Determine an Assembly's Fully Qualified Name](../../standard/assembly/find-fully-qualified-name.md)  
   
-- [How to: Build a Single-File Assembly](../../standard/assembly/build-single-file.md)  
+- [How to: Build a Single-File Assembly](build-single-file-assembly.md)  
   
-- [How to: Build a Multifile Assembly](../../standard/assembly/build-multifile.md)  
+- [How to: Build a Multifile Assembly](build-multifile-assembly.md)  
   
 - [How to: Create a Public-Private Key Pair](../../standard/assembly/create-public-private-key-pair.md)  
   
@@ -39,7 +39,7 @@ The following sections contain links to all How-to topics found in the conceptua
   
 - [How to: Disable the Strong-Name Bypass Feature](../../standard/assembly/disable-strong-name-bypass-feature.md)  
   
-- [How to: Install an Assembly into the Global Assembly Cache](../../standard/assembly/install-into-gac.md)  
+- [How to: Install an Assembly into the Global Assembly Cache](install-assembly-into-gac.md)  
   
 - [How to: View the Contents of the Global Assembly Cache](../../../docs/framework/app-domains/how-to-view-the-contents-of-the-gac.md)  
   

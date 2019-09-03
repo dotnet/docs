@@ -9,6 +9,12 @@
     href: application-domains.md
   - name: Application Domains and Assemblies How-to Topics
     href: application-domains-and-assemblies-how-to-topics.md
+  - name: "How to: Build a single-file assembly"
+    href: build-single-file-assembly.md
+  - name: Multifile assemblies
+    href: multifile-assemblies.md
+  - name: "How to: Build a multifile assembly"
+    href: build-multifile-assembly.md
   - name: Using Application Domains
     href: use.md
     items:
@@ -33,6 +39,8 @@
     items:
     - name: "How to: View the Contents of the Global Assembly Cache"
       href: how-to-view-the-contents-of-the-gac.md
+    - name: "How to: Install an assembly into the global assembly cache"
+      href: install-assembly-into-gac.md
     - name: "How to: Remove an Assembly from the Global Assembly Cache"
       href: how-to-remove-an-assembly-from-the-gac.md
     - name: Using Serviced Components with the Global Assembly Cache

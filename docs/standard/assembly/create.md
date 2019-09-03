@@ -44,7 +44,7 @@ There are special considerations when making common language runtime assemblies 
 
 - [Program with assemblies](program.md)
 - [Assembly versioning](versioning.md)
-- [How to: Build a single-file assembly](build-single-file.md)
-- [How to: Build a multifile assembly](build-multifile.md)
+- [How to: Build a single-file assembly](../../framework/app-domains/build-single-file-assembly.md)
+- [How to: Build a multifile assembly](../../framework/app-domains/build-multifile-assembly.md)
 - [How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Multifile assemblies](multifile.md)
+- [Multifile assemblies](../../framework/app-domains/multifile-assemblies.md)

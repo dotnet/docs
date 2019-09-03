@@ -32,13 +32,13 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [Assembly location](location.md)  
  Provides an overview of where to locate assemblies.  
   
- [How to: Build a single-file assembly](build-single-file.md)  
+ [How to: Build a single-file assembly](../../framework/app-domains/build-single-file-assembly.md)  
  Describes how to create a single-file assembly.  
   
- [Multifile assemblies](multifile.md)  
+ [Multifile assemblies](../../framework/app-domains/multifile-assemblies.md)  
  Describes reasons for creating multifile assemblies.  
   
- [How to: Build a multifile assembly](build-multifile.md)  
+ [How to: Build a multifile assembly](../../framework/app-domains/build-multifile-assembly.md)  
  Describes how to create a multifile assembly.  
   
  [Set assembly attributes](set-attributes.md)  

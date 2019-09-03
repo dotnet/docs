@@ -209,7 +209,7 @@ This article explains how to create a multifile assembly and provides code that 
    >   ```
    >   ---
     
-3. Use the [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md) to create the output file that contains the assembly manifest. This file contains reference information for all modules or resources that are part of the assembly.
+3. Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create the output file that contains the assembly manifest. This file contains reference information for all modules or resources that are part of the assembly.
 
     At the command prompt, type the following command:
 
@@ -223,11 +223,11 @@ This article explains how to create a multifile assembly and provides code that 
     al Client.netmodule Stringer.netmodule /main:MainClientApp.Main /out:myAssembly.exe /target:exe
     ```
 
-    You can use the [MSIL Disassembler (Ildasm.exe)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of an assembly, or determine whether a file is an assembly or a module.
+    You can use the [MSIL Disassembler (Ildasm.exe)](../tools/ildasm-exe-il-disassembler.md) to examine the contents of an assembly, or determine whether a file is an assembly or a module.
 
 ## See also
 
-- [Create assemblies](create.md)
-- [How to: View assembly contents](view-contents.md)
-- [How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Multifile assemblies](multifile.md)
+- [Create assemblies](../../standard/assembly/create.md)
+- [How to: View assembly contents](../../standard/assembly/view-contents.md)
+- [How the runtime locates assemblies](../deployment/how-the-runtime-locates-assemblies.md)
+- [Multifile assemblies](multifile-assemblies.md)

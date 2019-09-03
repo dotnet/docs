@@ -40,7 +40,7 @@ If you intend to share an assembly among several applications, you can install i
  Note that there are scenarios where you explicitly do not want to install an assembly into the global assembly cache. If you place one of the assemblies that make up an application into the global assembly cache, you can no longer replicate or install the application by using XCOPY to copy the application directory. In this case, you must also move the assembly into the global assembly cache.  
   
 ## In This Section  
- [How to: Install an Assembly into the Global Assembly Cache](../../standard/assembly/install-into-gac.md)  
+ [How to: Install an Assembly into the Global Assembly Cache](install-assembly-into-gac.md)  
  Describes the ways to install an assembly into the global assembly cache.  
   
  [How to: View the Contents of the Global Assembly Cache](../../../docs/framework/app-domains/how-to-view-the-contents-of-the-gac.md)  

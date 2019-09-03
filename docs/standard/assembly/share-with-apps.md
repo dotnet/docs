@@ -16,7 +16,7 @@ To share an assembly:
   
 3. Assign version information to your assembly. For more information, see [Assembly versioning](versioning.md).  
   
-4. Add your assembly to the global assembly cache. For more information, see [How to: Install an assembly into the global assembly cache](install-into-gac.md).  
+4. Add your assembly to the global assembly cache. For more information, see [How to: Install an assembly into the global assembly cache](../../framework/app-domains/install-assembly-into-gac.md).  
   
 5. Access the types contained in the assembly from other applications. For more information, see [How to: Reference a strong-named assembly](reference-strong-named.md).  
   

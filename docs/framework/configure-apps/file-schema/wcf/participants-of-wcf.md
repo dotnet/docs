@@ -10,7 +10,7 @@ For more information in workflow tracking and tracking participants, see [Workfl
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<tracking>**](tracking-of-wcf.md)\  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<tracking>**](tracking-of-wcf.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<participants>**  
   
 ## Syntax  

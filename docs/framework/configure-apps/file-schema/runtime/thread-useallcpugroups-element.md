@@ -9,9 +9,9 @@ ms.author: "ronpet"
 
 Specifies whether the runtime distributes managed threads across all CPU groups.
 
-\<configuration>\
-\<runtime>\
-\<Thread_UseAllCpuGroups>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<Thread_UseAllCpuGroups>**  
 
 ## Syntax
 

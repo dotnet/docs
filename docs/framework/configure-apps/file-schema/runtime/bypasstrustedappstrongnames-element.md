@@ -13,9 +13,9 @@ ms.author: "ronpet"
 # \<bypassTrustedAppStrongNames> Element
 Specifies whether to bypass the validation of strong names on full-trust assemblies that are loaded into a full-trust <xref:System.AppDomain>.  
   
- \<configuration>  
-\<runtime>  
-\<bypassTrustedAppStrongNames>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<bypassTrustedAppStrongNames>**  
   
 ## Syntax  
   

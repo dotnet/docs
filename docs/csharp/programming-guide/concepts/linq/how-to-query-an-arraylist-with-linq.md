@@ -8,7 +8,7 @@ When using LINQ to query non-generic <xref:System.Collections.IEnumerable> colle
   
 ```csharp  
 var query = from Student s in arrList  
-...  
+//...
 ```  
   
  By specifying the type of the range variable, you are casting each item in the <xref:System.Collections.ArrayList> to a `Student`.  

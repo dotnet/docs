@@ -20,17 +20,17 @@ ms.author: "ronpet"
 # How to: View Assembly Contents
 You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) information in a file. If the file being examined is an assembly, this information can include the assembly's attributes, as well as references to other modules and assemblies. This information can be helpful in determining whether a file is an assembly or part of an assembly, and whether the file has references to other modules or assemblies.  
   
-### To display the contents of an assembly using Ildasm.exe  
+## To display the contents of an assembly using Ildasm.exe  
   
-1. Type **ildasm** \<*assembly name*> at the command prompt. For example, the following command disassembles the `Hello.exe` assembly.  
+Type **ildasm** \<*assembly name*> at the command prompt. For example, the following command disassembles the `Hello.exe` assembly.  
   
 ```console  
 ildasm Hello.exe  
 ```  
   
-### To view assembly manifest information  
+## To view assembly manifest information  
   
-1. Double-click the MANIFEST icon in the MSIL Disassembler window.  
+Double-click the MANIFEST icon in the MSIL Disassembler window.  
   
 ## Example  
  The following example starts with a basic "Hello, World" program. After compiling the program, use Ildasm.exe to disassemble the Hello.exe assembly and view the assembly manifest.  

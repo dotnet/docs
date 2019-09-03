@@ -3,12 +3,16 @@
 - name: Overview
   expanded: true
   items:
-  - name: The ML.NET API
-    href: how-does-mldotnet-work.md
-  - name: The ML.NET Model Builder tool
-    href: automate-training-with-model-builder.md
-  - name: The ML.NET Command Line interface
-    href: automate-training-with-cli.md
+  - name: API
+    items:
+    - name: The ML.NET API
+      href: how-does-mldotnet-work.md
+  - name: Tools
+    items:
+    - name: The ML.NET Model Builder tool
+      href: automate-training-with-model-builder.md
+    - name: The ML.NET Command Line interface
+      href: automate-training-with-cli.md
 - name: Tutorials
   items:
   - name: API

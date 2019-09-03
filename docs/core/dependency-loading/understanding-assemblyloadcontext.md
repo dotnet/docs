@@ -84,7 +84,7 @@ When two <xref:System.Runtime.Loader.AssemblyLoadContext> instances contain type
 
 To complicate matters, exception messages about these mismatched types can be confusing. The types are referred to in the exception messages by their simple type names. The common exception message in this case would be of the form:
 
-```
+```Output
 Object of type 'IsolatedType' cannot be converted to type 'IsolatedType'.
 ```
 

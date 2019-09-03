@@ -271,7 +271,7 @@ Here is the complete list of [SPDX license identifiers](https://spdx.org/license
 
 The exact syntax of the license expressions is described below in [ABNF](https://tools.ietf.org/html/rfc5234).
 
-```cli
+```dotnetcli
 license-id            = <short form license identifier from https://spdx.org/spdx-specification-21-web-version#h.luq9dgcle9mo>
 
 license-exception-id  = <short form license exception identifier from https://spdx.org/spdx-specification-21-web-version#h.ruv3yl8g6czd>

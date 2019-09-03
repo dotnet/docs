@@ -142,7 +142,7 @@ The [dotnet-install scripts](./tools/dotnet-install-script.md) are used to perfo
 
 The script defaults to installing the latest "LTS" version, which is currently .NET Core 1.1. To install .NET Core 2.1, run the script with the following switch:
 
-```console
+```bash
 ./dotnet-install.sh -c Current
 ```
 

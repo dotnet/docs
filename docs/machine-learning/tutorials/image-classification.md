@@ -97,7 +97,7 @@ Your layer uses a [multinomial logistic regression algorithm](https://en.wikiped
 There are two data sources: the `.tsv` file, and the image files.  The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
 
 <!-- markdownlint-disable MD010 -->
-```tsv
+```tags.tsv
 broccoli.jpg	food
 pizza.jpg	food
 pizza2.jpg	food
@@ -246,7 +246,7 @@ The `ReadFromTsv()` method executes the following tasks:
 * Adds the file path to the image file name.
 * Loads the file data into an IEnumerable`ImageData` object.
 
-Create the `ReadFromTsv()` method, just after the `PairAndDisplayResults()` method, using the following code:
+Create the `ReadFromTsv()` method, just after the `DisplayResults()` method, using the following code:
 
 ```csharp
 public static IEnumerable<ImageData> ReadFromTsv(string file, string folder)
@@ -388,7 +388,7 @@ The `ClassifyImages()` method executes the following tasks:
 * Reads .TSV file into `IEnumerable`.
 * Predicts image classifications based on test data.
 
-Create the `ClassifyImages()` method, just after the `ReuseAndTuneInceptionModel()` method and just before the `PairAndDisplayResults()` method, using the following code:
+Create the `ClassifyImages()` method, just after the `ReuseAndTuneInceptionModel()` method and just before the `DisplayResults()` method, using the following code:
 
 ```csharp
 public static void ClassifyImages(MLContext mlContext, string dataLocation, string imagesFolder, string outputModelLocation, ITransformer model)
@@ -420,7 +420,7 @@ The `ClassifySingleImage()` method executes the following tasks:
 * Loads an `ImageData` instance.
 * Predicts image classification based on test data.
 
-Create the `ClassifySingleImage()` method, just after the `ClassifyImages()` method and just before the `PairAndDisplayResults()` method, using the following code:
+Create the `ClassifySingleImage()` method, just after the `ClassifyImages()` method and just before the `DisplayResults()` method, using the following code:
 
 ```csharp
 public static void ClassifySingleImage(MLContext mlContext, string imagePath, string outputModelLocation, ITransformer model)

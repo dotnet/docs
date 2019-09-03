@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<disableFusionUpdatesFromADManager> Element
 Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<disableFusionUpdatesFromADManager>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<disableFusionUpdatesFromADManager>**  
   
 ## Syntax  
   

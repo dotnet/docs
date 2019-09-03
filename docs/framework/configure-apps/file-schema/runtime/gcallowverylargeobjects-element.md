@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<gcAllowVeryLargeObjects> Element
 On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<gcAllowVeryLargeObjects> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<gcAllowVeryLargeObjects>**  
   
 ## Syntax  
   

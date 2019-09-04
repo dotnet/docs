@@ -20,13 +20,13 @@ It is possible to map these RPC types fairly naturally to existing gRPC concepts
 | WCF | gRPC |
 | --- | ---- |
 | Regular request/reply | Unary |
-| Duplex Service with OneWay operations on client callback interface | Server-streaming |
-| OneWay operation with Session | Client-streaming |
+| Duplex Service with OneWay operations on client callback interface | Server streaming |
+| OneWay operation with Session | Client streaming |
 | Full Duplex Service | Bi-directional streaming |
 
 ## Request/Reply
 
-For simple request/reply methods that take and return small amounts of data, use the simplest gRPC pattern, the Unary RPC.
+For simple request/reply methods that take and return small amounts of data, use the simplest gRPC pattern, the unary RPC.
 
 ```protobuf
 service Things {
@@ -53,7 +53,7 @@ public async Task ShowThing(int thingId)
 }
 ```
 
-As you can see, implementing a gRPC Unary RPC service method is very similar to implementing a WCF operation, except that with gRPC you override a base class method instead of implementing an interface. Note that on the server, gRPC base methods always return a `Task<T>`, although the client provides both async and blocking methods to call the service.
+As you can see, implementing a gRPC unary RPC service method is very similar to implementing a WCF operation, except that with gRPC you override a base class method instead of implementing an interface. Note that on the server, gRPC base methods always return a `Task<T>`, although the client provides both async and blocking methods to call the service.
 
 ## WCF Duplex, one-way to client
 
@@ -61,7 +61,7 @@ WCF applications (with certain bindings) can create a persistent connection betw
 
 gRPC services can work with streams of messages, in either or both directions. This does not map exactly to WCF Duplex, but the same result can be achieved.
 
-Here is an example of a server-streaming RPC.
+Here is an example of a server streaming RPC.
 
 ```protobuf
 service ThingStreamer {
@@ -101,11 +101,11 @@ public async Task GetThingsAsync(CancellationToken token)
 }
 ```
 
-Server-streaming RPCs are useful for subscription-style services, and also for sending very large datasets when it would be inefficient or impossible to build the entire dataset in memory. However, note that streaming responses is not as fast as sending `repeated` fields in a single message, so as a rule streaming should not be used for small datasets.
+Server streaming RPCs are useful for subscription-style services, and also for sending very large datasets when it would be inefficient or impossible to build the entire dataset in memory. However, note that streaming responses is not as fast as sending `repeated` fields in a single message, so as a rule streaming should not be used for small datasets.
 
 ### Differences to WCF
 
-A WCF duplex service uses a client callback interface that can have multiple methods. A gRPC server-streaming service can only send messages over a single stream. If you need multiple methods, use a message type with either an Any field or a oneof field to send different messages and code the client to handle them.
+A WCF duplex service uses a client callback interface that can have multiple methods. A gRPC server streaming service can only send messages over a single stream. If you need multiple methods, use a message type with either an Any field or a oneof field to send different messages and code the client to handle them.
 
 In WCF, the one-way method called from the client returns immediately, but the `ServiceContract` class with the session is kept alive until the connection is terminated. In gRPC, the Task returned by the implementation method should not complete until the connection is closed.
 
@@ -174,7 +174,7 @@ public class ThingLogger : IAsyncDisposable
 }
 ```
 
-Again, client-streaming RPCs can be used for fire-and-forget messaging as shown above, but also for sending very large datasets to the server. The same caveat regarding performance applies: you should used `repeated` fields in regular messages for smaller datasets.
+Again, client streaming RPCs can be used for fire-and-forget messaging as shown above, but also for sending very large datasets to the server. The same caveat regarding performance applies: you should used `repeated` fields in regular messages for smaller datasets.
 
 ## WCF Full Duplex
 

@@ -9,51 +9,19 @@ ms.date: 09/02/2019
 
 It is not strictly necessary to distribute client libraries for a gPRC application. You can create a shared library of `.proto` files within your organization, and other teams can use those to generate client code in their own projects. But if you have a private NuGet repository, and many other teams are using .NET Core, creating and publishing client NuGet packages as part of your service project may be the best way of sharing and promoting your service.
 
-Another advantage of distributing a client library is that you can enhance the generated gRPC and Protobuf classes. In the client code, as in the server, all the classes are declared as `partial` so you can extend them without editing the generated code. This means it is easy to add constructors, methods, calculated properties and more to the basic types.
+One advantage of distributing a client library is that you can enhance the generated gRPC and Protobuf classes. In the client code, as in the server, all the classes are declared as `partial` so you can extend them without editing the generated code. This means it is easy to add constructors, methods, calculated properties and more to the basic types.
 
 > [!CAUTION]
 > You should **not** use custom code to provide essential functionality, as this would mean that functionality would be restricted to .NET teams using the shared library, and not to teams using other languages or platforms such as Python or Java.
+
+> [!IMPORTANT]
+> In a multi-platform environment where different teams frequently use different programming languages and frameworks, or where your API is externally accessible, simply sharing `.proto` files so developers can generate their own clients is the best way to ensure as many teams as possible can access your gRPC service.
 
 ## Useful extensions
 
 There are two commonly-used interface in .NET for dealing with streams of objects: `IEnumerable<T>` and `IObservable<T>`. As of .NET Core 3.0 and C# 8.0, there is an `IAsyncEnumerable<T>` interface for processing streams asynchronously, and an `await foreach` syntax for using the interface. This section presents reusable code for applying these interfaces to gRPC streams.
 
-### IAsyncEnumerable
-
-gRPC's `IAsyncStreamReader<T>` type is very similar to C# 8.0's new `IAsyncEnumerable<T>` type, although for broader compatibility reasons it does not implement it. It is trivial to implement in your own extension method, though.
-
-```csharp
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Threading;
-
-namespace Grpc.Core
-{
-    public static class AsyncStreamReaderEnumerableExtensions
-    {
-        public static async IAsyncEnumerable<T> AsAsyncEnumerable<T>(this IAsyncStreamReader<T> reader,
-            [EnumeratorCancellation] CancellationToken token = default)
-        {
-            while (await reader.MoveNext(token))
-            {
-                yield return reader.Current;
-            }
-        }
-    }
-}
-```
-
-With this extension method, you can use the new `await foreach` syntax in .NET Core 3.0 applications with C# 8.0.
-
-```csharp
-private async Task ProcessStreamAsync(IAsyncStreamReader<Message> messages, CancellationToken cancellationToken)
-{
-    await foreach (var message in messages.AsAsyncEnumerable(cancellationToken))
-    {
-        // Do something with message...
-    }
-}
-```
+With the .NET Core gRPC client libraries, there is a `ReadAllAsync` extension method for `IAsyncStreamReader<T>` that creates an `IAsyncEnumerable<T>`. For developers using reactive programming, an equivalent extension method to create an `IObservable<T>` might look like this.
 
 ### IObservable
 

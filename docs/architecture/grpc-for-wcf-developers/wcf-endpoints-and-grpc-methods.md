@@ -19,12 +19,12 @@ The `OperationContract` attribute has properties to control or refine how it wor
 | ---------------------------- | ------------------------------------------------ |
 | Action                       | SOAP-related, no meaning in gRPC                 |
 | AsyncPattern                 | All gRPC service methods return Tasks            |
-| HasProtectionLevel           | gRPC traffic is encrypted because it uses HTTP/2 |
+| HasProtectionLevel           | No message encryption; encryption handled at the transport layer (TLS over HTTP/2) |
 | IsInitiating                 | See gRPC Streaming                               |
 | IsOneWay                     | One-way gRPC methods return Empty results        |
 | IsTerminating                | See gRPC Streaming                               |
 | Name                         | SOAP-related, no meaning in gRPC                 |
-| ProtectionLevel              | gRPC traffic is encrypted because it uses HTTP/2 |
+| ProtectionLevel              | No message encryption; encryption handled at the transport layer (TLS over HTTP/2) |
 | ReplyAction                  | SOAP-related, no meaning in gRPC                 |
 
 >[!div class="step-by-step"]

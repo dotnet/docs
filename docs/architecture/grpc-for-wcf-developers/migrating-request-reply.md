@@ -164,7 +164,7 @@ namespace TraderSys.Portfolios.Services
 
 The base class declares `virtual` methods for `Get` and `GetAll` that can be overridden to implement the service. The methods are `virtual` rather than `abstract` so that if you don't implement them, the service can return an explicit gRPC `Unimplemented` status code, much like you might throw a `NotImplementedException` in regular C# code.
 
-The signature for all gRPC service methods in ASP.NET Core is consistent. There are two parameters: the first is the message type declared in the `.proto` file, and the second is a `ServerCallContext` that works similarly to the `HttpContext` from ASP.NET Core. (In fact, there is an extension method `GetHttpContext` on the `ServerCallContext` type that you can use to get the underlying `HttpContext`, although you shouldn't need to use it very often.) There will be a look at `ServerCallContext` later in the chapter, and also in the chapter on authentication.
+The signature for all gRPC unary service methods in ASP.NET Core is consistent. There are two parameters: the first is the message type declared in the `.proto` file, and the second is a `ServerCallContext` that works similarly to the `HttpContext` from ASP.NET Core. (In fact, there is an extension method `GetHttpContext` on the `ServerCallContext` type that you can use to get the underlying `HttpContext`, although you shouldn't need to use it very often.) There will be a look at `ServerCallContext` later in the chapter, and also in the chapter on authentication.
 
 The method's return type is a `Task<T>` where `T` is the response message type. All gRPC service methods are asynchronous.
 
@@ -363,7 +363,7 @@ Having successfully migrated the WCF application to gRPC, let's look at creating
 Create a .NET Standard class library in the same solution to contain the client. This is primarily as an example of creating client code, but such a library could be packaged using NuGet and distributed on an internal repository for other .NET teams to consume. Go ahead and add a new .NET Standard Class Library called `TraderSys.Portfolios.Client` to the solution and delete the `Class1.cs` file.
 
 > [!CAUTION]
-> The latest `Grpc.Net` NuGet packages (0.2.23 or later) require .NET Standard 2.1. You might need to change your Target Framework to `netstandard2.1` for the new class library.
+> The [Grpc.Net.Client](https://www.nuget.org/packages/Grpc.Net.Client) package requires .NET Core 3.0 (or another .NET Standard 2.1 compliant runtime). Earlier versions of .NET and .NET Core are supported by the [Grpc.Core](https://www.nuget.org/packages/Grpc.Core) package.
 
 In Visual Studio 2019, you can add references to gRPC services much like you could add Service References to WCF projects in earlier versions of VS. Service References and Connected Services are all managed under the same UI now, which you can access by right-clicking the *Dependencies* node in the `TraderSys.Portfolios.Client` project in Solution Explorer and selecting *Add Connected Service*. In the tool window that appears, select the *Service References* section and click *Add new gRPC service reference*.
 

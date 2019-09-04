@@ -89,9 +89,68 @@ Here is the complete list of wrapper types with their equivalent C# type:
 | uint?   | google.protobuf.UInt32Value |
 | ulong?  | google.protobuf.UInt64Value |
 
-## ??? Decimals
+## Decimals
 
-??? Protobuf doesn't natively support the `decimal` type, just `double` and `float`. Given the target audience, is a discussion of how to create a custom `Decimal` message worthwhile?
+Protobuf doesn't natively support the .NET `decimal` type, just `double` and `float`. There is an ongoing discussion in the Protobuf project about the possibility of adding a standard `Decimal` type to the well-known types, with platform support for languages and frameworks that support it, but nothing has been implemented yet.
+
+It is possible to create a message definition to represent the `decimal` type that would work for safe serialization between .NET clients and servers, but developers on other platforms would have to understand the format being used and implement their own handling for it.
+
+A very simple implementation could be similar to the non-standard `Money` type used by some Google APIs, without the `currency` field.
+
+```protobuf
+package CustomTypes;
+
+// Example: 12345.6789 -> { units = 12345, nanos = 678900000 }
+message Decimal {
+
+    // Whole units part of the amount
+    int64 units = 1;
+
+    // Nano units of the amount (10^-9)
+    // Must be same sign as units
+    sfixed32 nanos = 2;
+}
+```
+
+The `nanos` field represents values from `0.999_999_999` to `-0.999_999_999`. For example, the `decimal` value `1.5m` would be represented as `{ units = 1, nanos = 500_000_000 }` (this is why the `nanos` field in this example uses the `sfixed32` type, which encodes more efficiently than `int32` for larger values). If the `units` field is negative, the `nanos` field should also be negative.
+
+> [!NOTE]
+> There are multiple algorithms for encoding `decimal` values as byte strings, but this message is much easier to understand than any of them, and the values are not affected by *[endianness](https://en.wikipedia.org/wiki/Endianness)* on different platforms.
+
+Conversion between this type and the BCL `decimal` type could be implemented in C# like this.
+
+```csharp
+namespace CustomTypes
+{
+    public partial class Decimal
+    {
+        private const decimal NanoFactor = 1_000_000_000;
+        public GrpcDecimal(long units, int nanos)
+        {
+            Units = units;
+            Nanos = nanos;
+        }
+
+        public long Units { get; }
+        public int Nanos { get; }
+
+        public static implicit operator decimal(CustomTypes.Decimal grpcDecimal)
+        {
+            return grpcDecimal.Units + grpcDecimal.Nanos / NanoFactor;
+        }
+
+        public static implicit operator CustomTypes.Decimal(decimal value)
+        {
+            var units = decimal.ToInt64(value);
+            var nanos = decimal.ToInt32((value - units) * NanoFactor);
+            return new CustomTypes.Decimal(units, nanos);
+        }
+    }
+}
+```
+
+> [!IMPORTANT]
+> Whenever you use custom utility message types like this, you **must** document them with comments in the `.proto` so that other developers can implement conversion to and from the equivalent type in their own language or framework.
 
 >[!div class="step-by-step"]
 <!-->[Next](protobuf-nested-types.md)-->

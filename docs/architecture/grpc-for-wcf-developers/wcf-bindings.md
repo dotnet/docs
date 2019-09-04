@@ -25,7 +25,7 @@ Outside Windows, the functionality provided by Named Pipes is instead generally 
 
 ## MSMQ
 
-MSMQ is a proprietary Windows message queue. WCF's binding to MSMQ enables "fire and forget" requests from clients that may be processed at any time in the future. gRPC does not natively provide any message queue functionality. The best alternative would be to directly use a messaging system like Azure Service Bus, RabbitMQ, Kafka, etc. This could be implemented with the client placing messages directly onto the queue, or a gRPC client-streaming service that enqueues the messages.
+MSMQ is a proprietary Windows message queue. WCF's binding to MSMQ enables "fire and forget" requests from clients that may be processed at any time in the future. gRPC does not natively provide any message queue functionality. The best alternative would be to directly use a messaging system like Azure Service Bus, RabbitMQ, Kafka, etc. This could be implemented with the client placing messages directly onto the queue, or a gRPC client streaming service that enqueues the messages.
 
 ## WCF ReST
 

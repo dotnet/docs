@@ -13,6 +13,8 @@ gRPC uses the Interface Definition Language (IDL) from Protocol Buffers. The Pro
 
 One of the advantages of the Protobuf IDL is that as a custom language it enables gRPC to be completely language and platform agnostic, not favoring any technology over another.
 
+The Protobuf IDL is also much easier for humans to both read and write than WSDL. Changing the WSDL of a WCF service typically requires making the changes to the service code itself, running the service and regenerating the WSDL file from the server. By contrast, with a `.proto` file, changes are simple to apply and automatically flow through the generated code immediately.
+
 When compared with XML, messages encoded using Protocol buffers have numerous advantages:
 
 - They can be up to 10x smaller

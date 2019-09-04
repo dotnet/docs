@@ -7,11 +7,11 @@ ms.date: 09/02/2019
 
 # Duplex Services
 
-There are multiple ways to use Duplex services in WCF. Some services are initiated by the client and then stream data from the server; other "Full Duplex" services might involve more ongoing two-way communication like the classic "Calculator" example from the WCF documentation. This chapter will take two possible WCF "Stock Ticker" implementations and migrate them to gRPC, one using a Server-streaming RPC, and one a Bi-directional Streaming RPC.
+There are multiple ways to use Duplex services in WCF. Some services are initiated by the client and then stream data from the server; other "Full Duplex" services might involve more ongoing two-way communication like the classic "Calculator" example from the WCF documentation. This chapter will take two possible WCF "Stock Ticker" implementations and migrate them to gRPC, one using a Server streaming RPC, and one a Bi-directional Streaming RPC.
 
-## Server-streaming RPC
+## Server streaming RPC
 
-In the server-streaming WCF example, *SimpleStockPriceTicker*, there is a Duplex service where the client initiates the connection with a list of stock symbols, and the server uses the *callback interface* to send updates as they become available. The client implements that interface and does whatever it does with the stream of real-time information.
+In the server streaming WCF example, *SimpleStockPriceTicker*, there is a Duplex service where the client initiates the connection with a list of stock symbols, and the server uses the *callback interface* to send updates as they become available. The client implements that interface and does whatever it does with the stream of real-time information.
 
 ### The WCF solution
 
@@ -212,9 +212,8 @@ static async Task DisplayAsync(IAsyncStreamReader<StockTickerUpdate> stream, Can
 {
     try
     {
-        while (await stream.MoveNext(token))
+        await foreach (var update in stream.ReadAllAsync(token))
         {
-            var update = stream.Current;
             Console.WriteLine($"{update.Symbol}: {update.Price}");
         }
     }
@@ -232,16 +231,16 @@ static async Task DisplayAsync(IAsyncStreamReader<StockTickerUpdate> stream, Can
 }
 ```
 
-The `IAsyncStreamReader<T>` type works much like an `IEnumerator<T>`: there is a `MoveNext` method that will return true as long as there is more data, and a `Current` property that returns the latest value. The only difference is that the `MoveNext` method returns a `Task<bool>` instead of just a `bool`.
+The `IAsyncStreamReader<T>` type works much like an `IEnumerator<T>`: there is a `MoveNext` method that will return true as long as there is more data, and a `Current` property that returns the latest value. The only difference is that the `MoveNext` method returns a `Task<bool>` instead of just a `bool`. The `ReadAllAsync` extension method wraps the stream in a standard C# 8 `IAsyncEnumerable` that can be used with the new `await foreach` syntax.
 
 > [!TIP]
-> In the section at the end of the chapter, there will be a look at how to add extension methods to wrap `IAsyncStreamReader<T>` in C# 8's new `IAsyncEnumerable<T>` type, as well as an `IObservable<T>` for Reactive programming.
+> In the section at the end of the chapter, there will be a look at how to add an extension method and classes to wrap `IAsyncStreamReader<T>` in an `IObservable<T>` for developers using reactive programming patterns.
 
 Again, be careful to catch exceptions here because of the possibility of network failure (as well as the `OperationCanceledException` that will inevitably be thrown because the code is using a `CancellationToken` to break the loop). The `RpcException` type has a lot of useful information about gRPC runtime errors, including the `StatusCode` (see [Chapter X section Y]()).
 
 ## Bi-directional Streaming
 
-A WCF Full Duplex service allows for asynchronous, real-time messaging in both directions. In the server-streaming example, the client simply initiates a request, then receives a stream of updates. A better version of that service would allow the client to add and remove stocks from the list without needing to stop and create a new subscription. That functionality has been implemented in the [FullStockTickerServer](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/FullStockTickerSample/wcf/FullStockTicker) sample.
+A WCF Full Duplex service allows for asynchronous, real-time messaging in both directions. In the server streaming example, the client simply initiates a request, then receives a stream of updates. A better version of that service would allow the client to add and remove stocks from the list without needing to stop and create a new subscription. That functionality has been implemented in the [FullStockTickerServer](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/FullStockTickerSample/wcf/FullStockTicker) sample.
 
 The `IFullStockTickerService` interface provides three methods:
 
@@ -306,7 +305,7 @@ public override async Task Subscribe(IAsyncStreamReader<ActionMessage> requestSt
         await WriteUpdateAsync(responseStream, args.Symbol, args.Price);
 
     var actionsTask = HandleActions(requestStream, subscriber, context.CancellationToken);
-    
+
     _logger.LogInformation("Subscription started.");
     await AwaitCancellation(context.CancellationToken);
 
@@ -331,9 +330,8 @@ The property `ActionCase` on the `ActionMessage` object can be used with a `swit
 ```csharp
 private async Task HandleActions(IAsyncStreamReader<ActionMessage> requestStream, IFullStockPriceSubscriber subscriber, CancellationToken token)
 {
-    while (await requestStream.MoveNext(token))
+    await foreach (var action in requestStream.ReadAllAsync(token))
     {
-        var action = requestStream.Current;
         switch (action.ActionCase)
         {
             case ActionMessage.ActionOneofCase.None:
@@ -414,9 +412,8 @@ private async Task HandleResponsesAsync(CancellationToken token)
 
     try
     {
-        while (await stream.MoveNext(token))
+        await foreach (var update in stream.ReadAllAsync(token))
         {
-            var update = stream.Current;
             var price = Prices.FirstOrDefault(p => p.Symbol.Equals(update.Symbol));
             if (price == null)
             {

@@ -280,26 +280,43 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 
 |Name|Markdown label|
 |-----|-------|
+|.NET Console|dotnetcli|
 |ASP.NET with C#|aspx-csharp|
 |ASP.NET with VB|aspx-vb|
 |Azure CLI|azurecli|
 |AzCopy|azcopy|
+|Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
+|C++/CX|cppcx|
+|C++/WinRT|cppwinrt|
 |C#|csharp|
 |C# in browser|csharp-interactive|
 |Console|console|
+|CSHTML|cshtml|
+|DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
+|Go|go|
+|HTML|html|
+|HTTP|http|
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto Query Language|kusto|
+|Markdown|md|
 |NodeJS|nodejs|
 |Objective-C|objc|
+|OData|odata|
 |PHP|php|
+|PowerApps (dot decimal separator)|powerapps-dot|
+|PowerApps (comma decimal separator)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
+|TypeScript|typescript|
 |VB|vb|
 |XAML|xaml|
 |XML|xml|

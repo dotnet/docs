@@ -23,7 +23,11 @@ using System.Text.Json;
 
 ## How to serialize
 
-Call [JsonSerializer.Serialize](xref:System.Text.Json.JsonSerializer.Serialize*):
+Call [JsonSerializer.Serialize](xref:System.Text.Json.JsonSerializer.Serialize*), using a generic type parameter or generic type inference:
+
+```csharp
+string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
+```
 
 ```csharp
 WeatherForecast weatherForecast;

@@ -313,6 +313,8 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |PowerApps (comma decimal separator)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
+|Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|

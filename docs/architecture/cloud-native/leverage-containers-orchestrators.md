@@ -5,24 +5,58 @@ ms.date: 06/30/2019
 ---
 # Leveraging containers and orchestrators
 
-Docker is the most popular container management and imaging platform and allows you to quickly work with containers on Linux and Windows. Containers provide separate but reproducible application environments that run the same way on any system. This makes them perfect for hosting and scaling applications and app components in cloud-native applications. Containers are isolated from one another, so two containers on the same host hardware can have completely different versions of software and even operating system installed, without the dependencies causing conflicts.
+Containers and orchestrators are designed to solve problems common to monolithic deployment approaches.
 
-What’s more, containers are completely defined by simple files that can be checked into source control. Unlike full servers, even virtual machines, which frequently require manual work to apply updates or install additional services, container infrastructure can easily be version-controlled. Thus, apps built to run in containers can be developed, tested, and deployed using automated tools as part of a build pipeline.
+## Challenges with monolithic deployments
 
-Containers are immutable. Once you have the definition of a container, you can recreate that container and it will run exactly the same way. This immutability lends itself to component-based design. If some parts of an application don’t change as often as others, why redeploy the entire app when you can just deploy the parts that change most frequently? A typical monolithic application is deployed as a single unit, despite typically being composed of several modules or assemblies, as shown in Figure 3-4.
+Traditionally, most applications have been deployed as a single unit. Such applications are referred to as a monoliths. This general approach of deploying applications as single units even if they are composed of multiple modules or assemblies is known as monolithic architecture, as shown in Figure 3-4.
 
 ![Monolithic architecture.](./media/monolithic-architecture.png)
 **Figure 3-4**. Monolithic architecture.
 
-Multi-tier architectures are nothing new, but with container-based applications it may make sense at a minimum to separate different tiers into separate containers, or to split an app into different containers based on features or cross-cutting concerns. Figure 3-5 shows how a monolithic app can take advantage of containers and microservices by delegating certain features or functionality. The remaining functionality in the app itself has also been containerized.
+Although they have the benefit of simplicity, monolithic architectures face a number of challenges:
+
+### Deployments
+
+Deploying to monolithic applications typically requires restarting the entire application, even if only one small module is being replaced. Depending on the number of machines hosting the application, this can result in downtime during deployments.
+
+### Hosting
+
+Monolithic applications are hosted entirely on a single machine instance. This may require higher-capability hardware than any module in a distributed application would need. Also, if any part of the app becomes a bottleneck, the entire application must be deployed to additional machine nodes in order to scale out.
+
+### Environment
+
+Monolithic applications are typically deployed into an existing hosting environment (operating system, installed frameworks, etc.). This environment may not match the environment in which the application was developed or tested. Inconsistencies in the application's environment are a common source of problems for monolithic deployments.
+
+### Coupling
+
+Monolithic applications are quite likely to have a great deal of coupling between different parts of the application, and between the application and its environment. This can make it difficult to factor out a particular service or concern later, in order to increase its scalability or swap in an alternative implementation. This coupling also leads to much larger potential impacts for changes to the system, requiring extensive testing in larger applications.
+
+### Technology choice
+
+Monolithic applications are built and deployed as a unit. This offers simplicity and uniformity but can be a barrier to innovation. Although a new feature or module in the system might be better-suited to a more modern platform or framework, it's likely to be built using the application's current approach for the sake of consistency as well as ease of development and deployment.
+
+## What are the benefits of containers and orchestrators?
+
+Docker is the most popular container management and imaging platform and allows you to quickly work with containers on Linux and Windows. Containers provide separate but reproducible application environments that run the same way on any system. This makes them perfect for developing and hosting applications and app components in cloud-native applications. Containers are isolated from one another, so two containers on the same host hardware can have completely different versions of software and even operating system installed, without the dependencies causing conflicts.
+
+What’s more, containers are completely defined by simple files that can be checked into source control. Unlike full servers, even virtual machines, which frequently require manual work to apply updates or install additional services, container infrastructure can easily be version-controlled. Thus, apps built to run in containers can be developed, tested, and deployed using automated tools as part of a build pipeline.
+
+Containers are immutable. Once you have the definition of a container, you can recreate that container and it will run exactly the same way. This immutability lends itself to component-based design. If some parts of an application don’t change as often as others, why redeploy the entire app when you can just deploy the parts that change most frequently? Different features and cross-cutting concerns of an app can be broken up into separate units. Figure 3-5 shows how a monolithic app can take advantage of containers and microservices by delegating certain features or functionality. The remaining functionality in the app itself has also been containerized.
 
 ![Breaking up a monolithic app to use microservices in the backend.](./media/breaking-up-monolith-with-backend-microservices.png)
 **Figure 3-5**. Breaking up a monolithic app to use microservices in the backend.
 
-Once you start to have multiple containers that need to work together, it can be worthwhile to organize them at a higher level. By design containers only know about themselves. Organizing large numbers of containers and their shared dependencies, such as network configuration, is where orchestration tools come in to save the day! Kubernetes is a container orchestration platform designed to automate deployment, scaling, and management of containerized applications. It creates an abstraction layer on top of groups of containers and organizes them into *pods*. Pods run on worker machines referred to as *nodes*. The whole organized group is referred to as a *cluster*. Figure 3-6 shows the different components of a Kubernetes cluster.
+Cloud-native apps built using separate containers benefit from the ability to deploy as much or as little of an application as needed. Individual services can be hosted on nodes with resources appropriate to each service. The environment each service runs in is immutable, can be shared between dev, test, and production, and can easily be versioned. Coupling between different areas of the application occurs explicitly as calls or messages between services, not compile-time dependencies within the monolith. And any given part of the overall app can choose the technology that makes the most sense for that feature or capability without requiring changes to the rest of the app.
+
+## What are the scaling benefits?
+
+Services built on containers can leverage scaling benefits provided by orchestration tools like Kubernetes. By design containers only know about themselves. Once you start to have multiple containers that need to work together, it can be worthwhile to organize them at a higher level. Organizing large numbers of containers and their shared dependencies, such as network configuration, is where orchestration tools come in to save the day! Kubernetes is a container orchestration platform designed to automate deployment, scaling, and management of containerized applications. It creates an abstraction layer on top of groups of containers and organizes them into *pods*. Pods run on worker machines referred to as *nodes*. The whole organized group is referred to as a *cluster*. Figure 3-6 shows the different components of a Kubernetes cluster.
 
 ![Kubernetes cluster components.](./media/kubernetes-cluster-components.png)
 **Figure 3-6**. Kubernetes cluster components.
+
+Kubernetes has built-in support for 
 
 ## Local Kubernetes Development
 

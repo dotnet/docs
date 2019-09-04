@@ -172,7 +172,7 @@ ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create se
 
 ![Sample Area Organization](./media/image7-1.png)
 
-Figure 7-1 Sample Area Organization
+**Figure 7-1**. Sample Area Organization
 
 When using Areas, you must use attributes to decorate your controllers with the name of the area to which they belong:
 
@@ -239,7 +239,7 @@ As applications grow, it becomes increasingly important to factor out cross-cutt
 
 ![The request is processed through Authorization Filters, Resource Filters, Model Binding, Action Filters, Action Execution and Action Result Conversion, Exception Filters, Result Filters, and Result Execution. On the way out, the request is only processed by Result Filters and Resource Filters before becoming a response sent to the client.](./media/image7-2.png)
 
-Figure 7-2 Request execution through filters and request pipeline.
+**Figure 7-2**. Request execution through filters and request pipeline.
 
 Filters are usually implemented as attributes, so you can apply them to controllers or actions (or even globally). When added in this fashion, filters specified at the action level override or build upon filters specified at the controller level, which themselves override global filters. For example, the \[Route\] attribute can be used to build up routes between controllers and actions. Likewise, authorization can be configured at the controller level, and then overridden by individual actions, as the following sample demonstrates:
 
@@ -330,7 +330,7 @@ ASP.NET Core Identity is included in new project templates if the Individual Use
 
 ![Select Individual User Accounts to have Identity preconfigured](./media/image7-3.png)
 
-Figure 7-3 Select Individual User Accounts to have Identity preconfigured.
+**Figure 7-3**. Select Individual User Accounts to have Identity preconfigured.
 
 Identity support is configured in Startup, both in ConfigureServices and Configure:
 
@@ -557,13 +557,13 @@ In addition to a process manager, ASP.NET Core applications hosted in the Kestre
 
 ![Kestrel to Internet](./media/image7-5.png)
 
-Figure 7-5 ASP.NET hosted in Kestrel behind a reverse proxy server
+**Figure 7-5**. ASP.NET hosted in Kestrel behind a reverse proxy server
 
 Another scenario in which a reverse proxy can be helpful is to secure multiple applications using SSL/HTTPS. In this case, only the reverse proxy would need to have SSL configured. Communication between the reverse proxy server and Kestrel could take place over HTTP, as shown in Figure 7-6.
 
 ![ASP.NET hosted behind an HTTPS-secured reverse proxy server](./media/image7-6.png)
 
-Figure 7-6 ASP.NET hosted behind an HTTPS-secured reverse proxy server
+**Figure 7-6**. ASP.NET hosted behind an HTTPS-secured reverse proxy server
 
 An increasingly popular approach is to host your ASP.NET Core application in a Docker container, which then can be hosted locally or deployed to Azure for cloud-based hosting. The Docker container could contain your application code, running on Kestrel, and would be deployed behind a reverse proxy server, as shown above.
 

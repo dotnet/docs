@@ -47,7 +47,7 @@ Significant improvements in agility, portability, and control ultimately lead to
 
 ![Docker deploys containers at all layers of the hybrid cloud](./media/image6.png)
 
-> **Figure 4-6.** Docker deploys containers at all layers of the hybrid cloud
+**Figure 4-6.** Docker deploys containers at all layers of the hybrid cloud
 
 To someone familiar with virtual machines, containers might appear to be remarkably similar. A container runs an operating system, has a file system, and can be accessed over a network, just like a physical or virtual computer system. However, the technology and concepts behind containers are vastly different from virtual machines. From a developer point of view, a container must be treated more like a single process. In fact, a container has a single entry point for one process.
 
@@ -79,7 +79,7 @@ Figure 4-7 shows OS versions that you can target, depending on the app's version
 
 ![Operating systems to target based on .NET Framework version](./media/image7.png)
 
-> **Figure 4-7.** Operating systems to target based on .NET Framework version
+**Figure 4-7.** Operating systems to target based on .NET Framework version
 
 In migration scenarios for existing or legacy applications that are based on .NET Framework applications, the main dependencies are on Windows and IIS. Your only option is to use Docker images based on Windows Server Core and the .NET Framework.
 
@@ -134,7 +134,7 @@ However, when thinking about the production deployment environment or even QA an
 
 ![The container ecosystem in Azure](./media/image7.5.png)
 
-> **Figure 4-7.5.** The container ecosystem in Azure
+**Figure 4-7.5.** The container ecosystem in Azure
 
 From the container ecosystem in Azure, the following products supporting containers that are considered infrastructure:
 - **Azure Container Instances (ACI)**

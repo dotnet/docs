@@ -68,7 +68,7 @@ You can see the queries EF Core is executing by configuring a logger and ensurin
 
 ![Logging EF Core queries to the console](./media/image8-1.png)
 
-Figure 8-1 Logging EF Core queries to the console
+**Figure 8-1**. Logging EF Core queries to the console
 
 ### Fetching and storing Data
 

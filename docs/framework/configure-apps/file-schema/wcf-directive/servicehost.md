@@ -8,13 +8,14 @@ Associates the factory used to produce the service host with the service to be h
   
 ## Syntax  
   
-```  
-<% @ServiceHost   
-Service = "Service, ServiceNamespace"   
+```xml  
+<% @ServiceHost
+Service = "Service, ServiceNamespace"
 Factory = "Factory, FactoryNamespace"  
 Debug = "Debug"  
-Language = "Language"   
-CodeBehind = "CodeBehind"%>  
+Language = "Language"
+CodeBehind = "CodeBehind"
+%>  
 ```  
   
 ## Attributes  
@@ -51,8 +52,8 @@ CodeBehind = "CodeBehind"%>
   
 ## Example  
   
-```  
-<% @ServiceHost   
+```xml  
+<% @ServiceHost
 Service="MyService"  
 Language="C#"  
 Debug="true"  

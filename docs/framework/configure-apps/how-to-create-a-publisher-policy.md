@@ -57,7 +57,7 @@ Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create
 
     - The *publisherPolicyAssemblyFile* argument is the name of the publisher policy assembly that results from this command. The assembly file name must follow the format:
 
-      **policy.** *majorNumber* **.** *minorNumber* **.** *mainAssemblyName* **.dll**
+        **policy.** *majorNumber* **.** *minorNumber* **.** *mainAssemblyName* **.dll**
 
     - The *keyPairFile* argument is the name of the file containing the key pair. You must sign the assembly and publisher policy assembly with the same key pair.
 
@@ -66,17 +66,17 @@ Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create
       > [!NOTE]
       > The ability to target a specific processor architecture is new in the .NET Framework version 2.0.
 
-    The following command creates a publisher policy assembly called `policy.1.0.myAssembly` from a publisher policy file called `pub.config`, assigns a strong name to the assembly using the key pair in the `sgKey.snk` file, and specifies that the assembly targets the x86 processor architecture.
+The following command creates a publisher policy assembly called `policy.1.0.myAssembly` from a publisher policy file called `pub.config`, assigns a strong name to the assembly using the key pair in the `sgKey.snk` file, and specifies that the assembly targets the x86 processor architecture.
 
-    ```
-    al /link:pub.config /out:policy.1.0.myAssembly.dll /keyfile:sgKey.snk /platform:x86
-    ```
+```console
+al /link:pub.config /out:policy.1.0.myAssembly.dll /keyfile:sgKey.snk /platform:x86
+```
 
-    The publisher policy assembly must match the processor architecture of the assembly that it applies to. Thus, if your assembly has a <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A> value of <xref:System.Reflection.ProcessorArchitecture.MSIL>, the publisher policy assembly for that assembly must be created with `/platform:anycpu`. You must provide a separate publisher policy assembly for each processor-specific assembly.
+The publisher policy assembly must match the processor architecture of the assembly that it applies to. Thus, if your assembly has a <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A> value of <xref:System.Reflection.ProcessorArchitecture.MSIL>, the publisher policy assembly for that assembly must be created with `/platform:anycpu`. You must provide a separate publisher policy assembly for each processor-specific assembly.
 
-    A consequence of this rule is that in order to change the processor architecture for an assembly, you must change the major or minor component of the version number, so that you can supply a new publisher policy assembly with the correct processor architecture. The old publisher policy assembly cannot service your assembly once your assembly has a different processor architecture.
+A consequence of this rule is that in order to change the processor architecture for an assembly, you must change the major or minor component of the version number, so that you can supply a new publisher policy assembly with the correct processor architecture. The old publisher policy assembly cannot service your assembly once your assembly has a different processor architecture.
 
-    Another consequence is that the version 2.0 linker cannot be used to create a publisher policy assembly for an assembly compiled using earlier versions of the .NET Framework, because it always specifies processor architecture.
+Another consequence is that the version 2.0 linker cannot be used to create a publisher policy assembly for an assembly compiled using earlier versions of the .NET Framework, because it always specifies processor architecture.
 
 ## Adding the Publisher Policy Assembly to the Global Assembly Cache
 
@@ -90,12 +90,12 @@ Use the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool
 
     The following command adds `policy.1.0.myAssembly.dll` to the global assembly cache.
 
-    ```
-    gacutil /i policy.1.0.myAssembly.dll
-    ```
+```console
+gacutil /i policy.1.0.myAssembly.dll
+```
 
-    > [!IMPORTANT]
-    > The publisher policy assembly cannot be added to the global assembly cache unless the original publisher policy file is located in the same directory as the assembly.
+> [!IMPORTANT]
+> The publisher policy assembly cannot be added to the global assembly cache unless the original publisher policy file is located in the same directory as the assembly.
 
 ## See also
 

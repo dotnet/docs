@@ -37,8 +37,8 @@ This section provides an overview of how the relational schema of a `DataSet` is
   
  In the preceding example, the element `customers` is a complex type element. Therefore, the complex type definition is parsed, and the mapping process creates the following table.  
   
-```  
-Customers (CustomerID , CompanyName, Phone)  
+```text  
+Customers (CustomerID, CompanyName, Phone)  
 ```  
   
  The data type of each column in the table is derived from the XML Schema type of the corresponding element or attribute specified.  
@@ -71,9 +71,9 @@ Customers (CustomerID , CompanyName, Phone)
   
  Both the `InStateCustomers` and the `OutOfStateCustomers` child elements are complex type elements (`customerType`). Therefore, the mapping process generates the following two identical tables in the `DataSet`.  
   
-```  
-InStateCustomers (CustomerID , CompanyName, Phone)  
-OutOfStateCustomers (CustomerID , CompanyName, Phone)  
+```text  
+InStateCustomers (CustomerID, CompanyName, Phone)  
+OutOfStateCustomers (CustomerID, CompanyName, Phone)  
 ```  
   
 ## In This Section  

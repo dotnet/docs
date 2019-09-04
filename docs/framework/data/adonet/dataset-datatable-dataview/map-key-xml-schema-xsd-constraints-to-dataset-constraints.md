@@ -50,13 +50,13 @@ In a schema, you can specify a key constraint on an element or attribute using t
   
  The **key** element specifies that the values of the **CustomerID** child element of the **Customers** element must have unique values and cannot have null values. In translating the XML Schema definition language (XSD) schema, the mapping process creates the following table:  
   
-```  
+```text  
 Customers(CustomerID, CompanyName, Phone)  
 ```  
   
  The XML Schema mapping also creates a **UniqueConstraint** on the **CustomerID** column, as shown in the following <xref:System.Data.DataSet>. (For simplicity, only relevant properties are shown.)  
   
-```  
+```text  
       DataSetName: MyDataSet  
 TableName: customers  
   ColumnName: CustomerID  

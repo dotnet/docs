@@ -48,7 +48,7 @@ The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is
 ### Windows authentication with SqlClient 
  Each of the following forms of syntax uses Windows Authentication to connect to the **AdventureWorks** database on a local server.  
   
-```  
+```csharp  
 "Persist Security Info=False;Integrated Security=true;  
     Initial Catalog=AdventureWorks;Server=MSSQL1"  
 "Persist Security Info=False;Integrated Security=SSPI;  
@@ -60,7 +60,7 @@ The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is
 ### SQL Server authentication with SqlClient   
  Windows Authentication is preferred for connecting to SQL Server. However, if SQL Server Authentication is required, use the following syntax to specify a user name and password. In this example, asterisks are used to represent a valid user name and password.  
   
-```  
+```csharp  
 "Persist Security Info=False;User ID=*****;Password=*****;Initial Catalog=AdventureWorks;Server=MySqlServer"  
 ```  
 
@@ -72,7 +72,7 @@ When you connect to Azure SQL Database or to Azure SQL Data Warehouse and provid
 ### Connect to a named instance of SQL Server
 To connect to a named instance of SQL Server, use the *server name\instance name* syntax.  
   
-```  
+```csharp  
 Data Source=MySqlServer\MSSQL1;"  
 ```  
  
@@ -89,8 +89,8 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 ## Using TrustServerCertificate  
  The `TrustServerCertificate` keyword is valid only when connecting to a SQL Server instance with a valid certificate. When `TrustServerCertificate` is set to `true`, the transport layer will use SSL to encrypt the channel and bypass walking the certificate chain to validate trust.  
   
-```  
-"TrustServerCertificate=true;"   
+```csharp  
+"TrustServerCertificate=true;"
 ```  
   
 > [!NOTE]
@@ -121,13 +121,13 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 ### OleDb Connection String Syntax  
  You must specify a provider name for an <xref:System.Data.OleDb.OleDbConnection> connection string. The following connection string connects to a Microsoft Access database using the Jet provider. Note that the `User ID` and `Password` keywords are optional if the database is unsecured (the default).  
   
-```   
-Provider=Microsoft.Jet.OLEDB.4.0; Data Source=d:\Northwind.mdb;User ID=Admin;Password=;   
+```csharp
+Provider=Microsoft.Jet.OLEDB.4.0; Data Source=d:\Northwind.mdb;User ID=Admin;Password=;
 ```  
   
  If the Jet database is secured using user-level security, you must provide the location of the workgroup information file (.mdw). The workgroup information file is used to validate the credentials presented in the connection string.  
   
-```  
+```csharp
 Provider=Microsoft.Jet.OLEDB.4.0;Data Source=d:\Northwind.mdb;Jet OLEDB:System Database=d:\NorthwindSystem.mdw;User ID=*****;Password=*****;  
 ```  
   
@@ -137,7 +137,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=d:\Northwind.mdb;Jet OLEDB:System D
 ### Using DataDirectory to Connect to Access/Jet  
  `DataDirectory` is not exclusive to `SqlClient`. It can also be used with the <xref:System.Data.OleDb> and <xref:System.Data.Odbc> .NET data providers. The following sample <xref:System.Data.OleDb.OleDbConnection> string demonstrates the syntax required to connect to the Northwind.mdb located in the application's app_data folder. The system database (System.mdw) is also stored in that location.  
   
-```  
+```csharp  
 "Provider=Microsoft.Jet.OLEDB.4.0;  
 Data Source=|DataDirectory|\Northwind.mdb;  
 Jet OLEDB:System Database=|DataDirectory|\System.mdw;"  
@@ -149,7 +149,7 @@ Jet OLEDB:System Database=|DataDirectory|\System.mdw;"
 ### Connecting to Excel  
  The Microsoft Jet provider is used to connect to an Excel workbook. In the following connection string, the `Extended Properties` keyword sets properties that are specific to Excel. "HDR=Yes;" indicates that the first row contains column names, not data, and "IMEX=1;" tells the driver to always read "intermixed" data columns as text.  
   
-```  
+```csharp 
 Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\MyExcel.xls;Extended Properties=""Excel 8.0;HDR=Yes;IMEX=1""  
 ```  
   
@@ -158,7 +158,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\MyExcel.xls;Extended Properties=
 ### Data Shape Provider Connection String Syntax  
  Use both the `Provider` and the `Data Provider` keywords when using the Microsoft Data Shape provider. The following example uses the Shape provider to connect to a local instance of SQL Server.  
   
-```  
+```csharp  
 "Provider=MSDataShape;Data Provider=SQLOLEDB;Data Source=(local);Initial Catalog=pubs;Integrated Security=SSPI;"   
 ```  
   
@@ -167,14 +167,14 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\MyExcel.xls;Extended Properties=
   
  The following connection string uses the Microsoft Text Driver.  
   
-```  
+```csharp  
 Driver={Microsoft Text Driver (*.txt; *.csv)};DBQ=d:\bin  
 ```  
   
 ### Using DataDirectory to Connect to Visual FoxPro  
  The following <xref:System.Data.Odbc.OdbcConnection> connection string sample demonstrates using `DataDirectory` to connect to a Microsoft Visual FoxPro file.  
   
-```  
+```csharp  
 "Driver={Microsoft Visual FoxPro Driver};  
 SourceDB=|DataDirectory|\MyData.DBC;SourceType=DBC;"  
 ```  
@@ -182,7 +182,7 @@ SourceDB=|DataDirectory|\MyData.DBC;SourceType=DBC;"
 ## Oracle Connection Strings  
  The <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> property of a <xref:System.Data.OracleClient.OracleConnection> allows you to get or set a connection string for an OLE DB data source. Oracle connection strings are also supported by the <xref:System.Data.OracleClient.OracleConnectionStringBuilder> .  
   
-```  
+```csharp 
 Data Source=Oracle9i;User ID=*****;Password=*****;  
 ```  
   

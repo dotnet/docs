@@ -56,9 +56,29 @@ Services built on containers can leverage scaling benefits provided by orchestra
 ![Kubernetes cluster components.](./media/kubernetes-cluster-components.png)
 **Figure 3-6**. Kubernetes cluster components.
 
-Kubernetes has built-in support for 
+Kubernetes has built-in support for scaling clusters to meet demand. Combined with containerized micro-services, this provides cloud-native applications with the ability to quickly and efficiently respond to spikes in demand with additional resources when and where they are needed.
 
-## Local Kubernetes Development
+## What scenarios are ideal for containers and orchestrators?
+
+The following scenarios are ideal for using containers and orchestrators.
+
+### Applications requiring high uptime and scalability
+
+Individual applications that have high uptime and scalability requirements are ideal candidates for cloud-native architectures using microservices, containers, and orchestrators. These applications can be developed in containers using versioned environments, can be extensively tested before going to production, and can be deployed to production with zero downtime. The use of Kubernetes clusters ensures such apps can also scale on demand and recover automatically from node failures.
+
+### Large numbers of applications
+
+Organizations that deploy and must subsequently maintain large numbers of applications benefit from containers and orchestrators. The up front effort of setting up containerized environments and Kubernetes clusters is primarily a fixed cost. Deploying, maintaining, and updating individual applications has a cost that varies with the number of applications that must be maintained. Beyond a certain fairly small number of applications, the complexity of maintaining custom applications manually exceeds the cost of implementing a solution using containers and orchestrators.
+
+## When should you avoid using containers and orchestrators?
+
+If you're unwilling or unable to build your application following 12 Factor App principles, you'll probably be better off avoiding containers and orchestrators. In these cases, it may be best to move forward with a VM-based hosting platform, or possibly some hybrid system in which you're able to spin off certain pieces of functionality into separate containers or even serverless functions.
+
+## Development resources
+
+Below you will find a short list of development resources that may help you get started using containers and orchestrators for your next application. If you're looking for guidance on how to design your cloud-native microservices architecture app, please read this book's companion, [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+
+### Local Kubernetes Development
 
 Kubernetes deployments provide great value in production environments, but you can also run them locally. Although much of the time it's good to be able to work on individual apps or microservices independently, sometimes it's good to be able to run the whole system locally just as it will run when deployed to production. There are several ways to achieve this, two of which are Minikube and Docker Desktop. Visual Studio also provides tooling for Docker development.
 
@@ -85,7 +105,7 @@ You can also work with Kubernetes directly from Docker Desktop on Windows. This 
 
 Docker Desktop is already the most popular tool for configuring and running containerized apps locally. When you work with Docker Desktop, you can develop locally against the exact same set of Docker container images that you'll deploy to production. Docker Desktop is designed to "build, test, and ship" containerized apps locally. Once the images have been shipped to an image registry like Azure Container Registry or Docker Hub, then services like Azure Kubernetes Service (AKS) manage the application in production.
 
-## Visual Studio Docker Tooling
+### Visual Studio Docker Tooling
 
 Visual Studio supports Docker development for web applications. When you create a new ASP.NET Core application, you're given the option to configure it with Docker support as part of the project creation process, as shown in Figure 3-8.
 

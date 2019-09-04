@@ -17,7 +17,11 @@ Beginning with C# 7.3, you can use the [`unmanaged` constraint](../../programmin
 
 Beginning with C# 8.0, a *constructed* struct type that contains fields of unmanaged types only is also unmanaged, as the following example shows:
 
-[!code-csharp[unmanaged constructed types](~/samples/csharp/language-reference/builtin-types/UnmanagedTypes.cs)]
+[!code-csharp[unmanaged constructed types](~/samples/csharp/language-reference/builtin-types/UnmanagedTypes.cs#ProgramExample)]
+
+With the definition of the `Coords<T>` type given in the preceding example, the `Coords<object>` type is not unmanaged type, because it has the fields of the `object` type, which is not unmanaged. If you want *any* constructed type to be an unmanaged type, use the `unmanaged` constraint in the definition of the generic type:
+
+[!code-csharp[unmanaged constructed types](~/samples/csharp/language-reference/builtin-types/UnmanagedTypes.cs#AlwaysUnmanaged)]
 
 ## C# language specification
 

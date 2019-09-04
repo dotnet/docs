@@ -467,6 +467,8 @@ Span<Coords<int>> coordinates = stackalloc[]
 };
 ```
 
+For more information, see [Unmanaged types](../language-reference/builtin-types/unmanaged-types.md).
+
 ## Enhancement of interpolated verbatim strings
 
 Order of the `$` and `@` tokens in [interpolated](../language-reference/tokens/interpolated.md) verbatim strings can be any: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. In earlier C# versions, the `$` token must appear before the `@` token.

@@ -11,7 +11,7 @@ ms.assetid: 4d1111c0-9447-4231-a997-96a2b74b3453
 
 # How to serialize JSON in .NET
 
-This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON). The directions and sample code use the library directly, not through a framework such as ASP.NET Core.
+This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON). The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
 ## Using directive
 
@@ -26,6 +26,8 @@ using System.Text.Json;
 Call [JsonSerializer.Serialize](xref:System.Text.Json.JsonSerializer.Serialize*):
 
 ```csharp
+WeatherForecast weatherForecast;
+//...
 string json = JsonSerializer.Serialize(weatherForecast);
 ```
 
@@ -205,13 +207,12 @@ Set [JsonSerializerOptions.PropertyNamingPolicy](xref:System.Text.Json.JsonSeria
 ```csharp
 var options = new JsonSerializerOptions
 {
-    WriteIndented = true,
     PropertyNamingPolicy = JsonNamingPolicy.CamelCase
 };
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example class to be serialized:
+Example class to be serialized and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -223,8 +224,6 @@ class WeatherForecast
     public int WindSpeed { get; set; }
 }
 ```
-
-Example JSON output:
 
 ```json
 {
@@ -254,18 +253,17 @@ class UpperCaseNamingPolicy : JsonNamingPolicy
 }
 ```
 
-Set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=fullName> to an instance of your naming policy class:
+Set [JsonSerializerOptions.PropertyNamingPolicy](xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy) to an instance of your naming policy class:
 
 ```csharp
 var options = new JsonSerializerOptions
 {
-    WriteIndented = true,
     PropertyNamingPolicy = new UpperCaseNamingPolicy()
 };
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example class to serialize:
+Example class to serialize and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -277,8 +275,6 @@ class WeatherForecast
     public int WindSpeed { get; set; }
 }
 ```
-
-Example JSON output:
 
 ```json
 {
@@ -307,6 +303,7 @@ class WeatherForecast
     [JsonIgnore]
     public int WindSpeed { get; set; }
 }
+```
 
 Example JSON output:
 
@@ -325,13 +322,12 @@ Set [JsonSerializerOptions.IgnoreReadOnlyProperties](xref:System.Text.Json.JsonS
 ```csharp
 var options = new JsonSerializerOptions
 {
-    WriteIndented = true,
     IgnoreReadOnlyProperties = true
 };
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example class to serialize:
+Example class to serialize and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -342,8 +338,6 @@ class WeatherForecast
     public int WindSpeed { get; private set; }
 }
 ```
-
-Example JSON output:
 
 ```json
 {
@@ -360,21 +354,18 @@ Set [JsonSerializerOptions.IgnoreNullValues](xref:System.Text.Json.JsonSerialize
 ```csharp
 var options = new JsonSerializerOptions
 {
-    WriteIndented = true,
     IgnoreNullValues = true
 };
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example object to serialize:
+Example object to serialize and JSON output:
 
 |Property |Value  |
 |---------|---------|
 | Date    | 8/1/2019 12:00:00 AM -07:00|
-| TemperatureC| 0 |
+| TemperatureC| 25 |
 | Summary| null|
-
-JSON output:
 
 ```json
 {
@@ -418,11 +409,7 @@ Resulting object property values after matching camel case to Pascal case proper
 Call the overload of `Serialize` that lets you specify the type at runtime:
 
 ```csharp
-var options = new JsonSerializerOptions
-{
-    WriteIndented = true,
-};
-json = JsonSerializer.Serialize(weatherForecast, weatherForecast.GetType(), options);            
+json = JsonSerializer.Serialize(weatherForecast, weatherForecast.GetType());
 ```
 
 To explain why this overload is necessary, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
@@ -452,7 +439,7 @@ WeatherForecast weatherForecast;
 json = JsonSerializer.Serialize(weatherForecast);
 ```
 
-In this scenario, the `WindSpeed` property is not serialized even if the weatherForecast object is actually a `WeatherForecastWithWind`. Only the base class properties are serialized:
+In this scenario, the `WindSpeed` property is not serialized even if the weatherForecast object is actually a `WeatherForecastWithWind` object. Only the base class properties are serialized:
 
 ```json
 {
@@ -462,7 +449,69 @@ In this scenario, the `WindSpeed` property is not serialized even if the weather
 }
 ```
 
-This behavior is intended to help prevent accidental data exposure of a derived runtime-created type.
+This behavior is intended to help prevent accidental exposure of data in a derived runtime-created type.
+
+## Use Utf8JsonWriter directly
+
+The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter> class directly.
+
+```csharp
+var options = new JsonWriterOptions
+{
+    Indented = true
+};
+
+using (var stream = new MemoryStream())
+{
+    using (var writer = new Utf8JsonWriter(stream, options))
+    {
+        writer.WriteStartObject();
+        writer.WriteString("date", DateTimeOffset.UtcNow);
+        writer.WriteNumber("temp", 42);
+        writer.WriteEndObject();
+    }
+
+    string json = Encoding.UTF8.GetString(stream.ToArray());
+    Console.WriteLine(json);
+}
+```
+
+## Use Utf8JsonReader directly
+
+The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class directly. The code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON.
+
+```csharp
+Utf8JsonReader reader = new Utf8JsonReader(jsonUtf8, isFinalBlock: true, state: default);
+
+while (reader.Read())
+{
+    Console.Write(reader.TokenType);
+
+    switch (reader.TokenType)
+    {
+        case JsonTokenType.PropertyName:
+        case JsonTokenType.String:
+            {
+                string text = reader.GetString();
+                Console.Write(" ");
+                Console.Write(text);
+                break;
+            }
+
+        case JsonTokenType.Number:
+            {
+                int value = reader.GetInt32();
+                Console.Write(" ");
+                Console.Write(value);
+                break;
+            }
+
+            // Other token types elided for brevity
+    }
+
+    Console.WriteLine();
+}
+```
 
 ## Additional resources
 

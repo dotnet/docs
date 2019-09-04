@@ -15,7 +15,7 @@ This article shows how to use the <xref:System.Text.Json> namespace to serialize
 
 ## How to get the library
 
-* For apps and libraries that target .NET Core 3.0, `System.Text.Json` is included in the shared framework.
+* For apps and libraries that target .NET Core 3.0, the `System.Text.Json` library is included in the shared framework.
 * For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package:
   * .NET Standard
   * .NET Framework
@@ -31,13 +31,13 @@ using System.Text.Json;
 
 ## How to serialize
 
-Call [JsonSerialization.Serialize(Object)](xref:System.Text.Json.JsonSerializer.Serialize*).
+Call [JsonSerializer.Serialize](xref:System.Text.Json.JsonSerializer.Serialize*):
 
 ```csharp
 string json = JsonSerializer.Serialize(weatherForecast);
 ```
 
-Example type and JSON output:
+Example type to be serialized and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -60,10 +60,10 @@ Notes:
 
 ## How to deserialize
 
-Call [JsonSerialization.Deserialize\<T>(String)](xref:System.Text.Json.JsonSerializer.Deserialize*).
+Call [JsonSerializer.Deserialize](xref:System.Text.Json.JsonSerializer.Deserialize*):
 
 ```csharp
-WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
+var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
 ```
 
 Example JSON input:
@@ -88,17 +88,17 @@ Resulting property and field values:
 
 Comments or trailing commas in the json trigger exceptions.
 
-## Serialize to UTF8
+## Serialize to UTF-8
 
-Call [JsonSerialization.SerializeToUTF8Bytes\<T>(String)](xref:System.Text.Json.JsonSerializer.SerializeToUTF8Bytes*).
+Call [JsonSerializer.SerializeToUtf8Bytes)](xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*).
 
 ```csharp
-string json = JsonSerializer.SerializeToUTF8Bytes<WeatherForecast>((weatherForecast));
+string json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
 ```
 
-A JSON output example is in the [How to serialize](#how-to-serialize) section earlier in this article.
+The JSON output is the same as shown in the [How to serialize](#how-to-serialize) section earlier in this article.
 
-Serializing to UTF-8 is about 5-10% faster than using the string-based methods because the bytes (as UTF-8) don't need to be converted to or from strings (UTF-16).
+Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to or from strings (UTF-16).
 
 ## Serialize to formatted JSON
 
@@ -112,7 +112,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example type and JSON output:
+Example type to be serialized and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -120,7 +120,6 @@ class WeatherForecast
     public DateTimeOffset Date { get; set; }
     public int TemperatureC { get; set; }
     public string Summary { get; set; }
-    public string SummaryField;
 }
 ```
 
@@ -134,7 +133,7 @@ class WeatherForecast
 
 ## Allow comments
 
-Set [JsonSerializerOptions.ReadCommentHandling](xref:System.Text.Json.JsonSerializerOptions.WriteIndented) to `Skip`:
+Set [JsonSerializerOptions.ReadCommentHandling](xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling) to `Skip`:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -156,7 +155,7 @@ Example JSON with comments:
 
 ## Allow trailing commas
 
-Set [JsonSerializerOptions.AllowTrailingCommas](xref:System.Text.Json.JsonSerializerOptions.WriteIndented) to true:
+Set [JsonSerializerOptions.AllowTrailingCommas](xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas) to true:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -166,7 +165,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example JSON with trailing commas:
+Example JSON with a trailing comma:
 
 ```json
 {
@@ -178,7 +177,7 @@ Example JSON with trailing commas:
 
 ## Specify JSON property names
 
-To set the name in JSON of individual properties, use [[JsonPropertyNameAttribute]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute). For example:
+To set the name of individual properties, use the [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attribute:
 
 ```csharp
 class WeatherForecast
@@ -206,9 +205,9 @@ The property name set by this attribute:
 * Works in both directions, for serialization and deserialization.
 * Takes precedence over property naming policies.
 
-## camelCase JSON property names
+## Camel case JSON property names
 
-To set all JSON property names to camel case, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=fullName> to `JsonNamingPolicy.CamelCase`:
+Set [JsonSerializerOptions.PropertyNamingPolicy](xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy) to `JsonNamingPolicy.CamelCase`:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -219,7 +218,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example class:
+Example class to be serialized:
 
 ```csharp
 class WeatherForecast
@@ -244,7 +243,7 @@ JSON output:
 
 The camel case property naming policy:
 
-* Works in both directions, for serialization and deserialization.
+* Works for serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes.
 
 ## Use custom JSON naming policy
@@ -284,7 +283,7 @@ class WeatherForecast
     public int WindSpeed { get; set; }
 }
 
-JSON output:
+Example JSON output:
 
 ```json
 {
@@ -297,12 +296,12 @@ JSON output:
 
 The JSON property naming policy:
 
-* Works in both directions, for serialization and deserialization.
+* Works for serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes.
 
 ## Exclude selected properties
 
-To exclude individual properties from serialization and deserialization, use [[JsonIgnoreAttribute]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute). For example:
+Use the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute:
 
 ```csharp
 class WeatherForecast
@@ -314,7 +313,7 @@ class WeatherForecast
     public int WindSpeed { get; set; }
 }
 
-JSON output:
+Example JSON output:
 
 ```json
 {
@@ -326,7 +325,7 @@ JSON output:
 
 ## Exclude read-only properties
 
-Set <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=fullName> to true:
+Set [JsonSerializerOptions.IgnoreReadOnlyProperties](xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties) to true:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -347,8 +346,9 @@ class WeatherForecast
     public string Summary { get; set; }
     public int WindSpeed { get; private set; }
 }
+```
 
-JSON output:
+Example JSON output:
 
 ```json
 {
@@ -360,7 +360,7 @@ JSON output:
 
 ## Exclude null value properties
 
-Set <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=fullName> to true:
+Set [JsonSerializerOptions.IgnoreNullValues](xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues) to true:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -397,10 +397,10 @@ var options = new JsonSerializerOptions
 {
     PropertyNameCaseInsensitive = true,
 };
-json = JsonSerializer.Serialize(weatherForecast, options);
+var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(weatherForecast, options);
 ```
 
-Example of camel case JSON:
+Example JSON with camel case property names:
 
 ```json
 {
@@ -418,13 +418,7 @@ Resulting object property values after matching camel case to Pascal case proper
 | TemperatureC| 25 |
 | Summary| Hot|
 
-### Exclude properties of derived classes
-
-Include a type parameter when calling the [Serialize](xref:System.Text.Json.JsonSerializer.Serialize*) method:
-
-```csharp
-string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
-```
+### Include properties of derived classes
 
 Suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
 

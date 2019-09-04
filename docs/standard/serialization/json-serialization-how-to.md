@@ -30,7 +30,7 @@ string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
 ```
 
 ```csharp
-WeatherForecast weatherForecast;
+WeatherForecast weatherForecast = ... ;
 //...
 string json = JsonSerializer.Serialize(weatherForecast);
 ```
@@ -84,11 +84,11 @@ Resulting property and field values:
 | Summary| Hot||
 | SummaryField| null |Fields are excluded from deserialization.|
 
-Comments or trailing commas in the json trigger exceptions.
+Comments or trailing commas in the JSON trigger exceptions.
 
 ## Serialize to UTF-8
 
-Call [JsonSerializer.SerializeToUtf8Bytes)](xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*).
+Call [JsonSerializer.SerializeToUtf8Bytes)](xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*):
 
 ```csharp
 string json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
@@ -138,7 +138,7 @@ var options = new JsonSerializerOptions
 {
     ReadCommentHandling = JsonCommentHandling.Skip,
 };
-json = JsonSerializer.Serialize(weatherForecast, options);
+var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
 ```
 
 Example JSON with comments:
@@ -160,7 +160,7 @@ var options = new JsonSerializerOptions
 {
     AllowTrailingCommas = true,
 };
-json = JsonSerializer.Serialize(weatherForecast, options);
+var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
 ```
 
 Example JSON with a trailing comma:
@@ -243,7 +243,7 @@ The camel case property naming policy:
 * Works for serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes.
 
-## Use custom JSON naming policy
+## Use custom JSON property naming policy
 
 Derive from <xref:System.Text.Json.JsonNamingPolicy> and override <xref:System.Text.Json.JsonNamingPolicy.ConvertName*>:
 
@@ -377,6 +377,41 @@ Example object to serialize and JSON output:
   "TemperatureC": 25
 }
 ```
+
+## Camel case dictionary keys
+
+IF a property of an object to be serialized is of type `Dictionary<string,Tvalue>`, the `string` keys can be converted to camel case. To do that, set [JsonSerializerOptions.DictionaryKeyPolicy](xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy) to `JsonNamingPolicy.CamelCase`:
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    DictionaryKeyPolicy = JsonNamingPolicy.CamelCase
+};
+json = JsonSerializer.Serialize(weatherForecast, options);
+```
+
+Example object to serialize and JSON output:
+
+|Property |Value  |
+|---------|---------|
+| Date    | 8/1/2019 12:00:00 AM -07:00|
+| TemperatureC| 25 |
+| Summary| Hot|
+| TemperatureRanges | Cold, 20<br>Hot, 40|
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureC": 25,
+  "Summary": "Hot",
+  "TemperatureRanges": {
+    "cold": 20,
+    "hot": 40
+  }
+}
+```
+
+The camel case property naming policy works for serialization only.
 
 ## Case-insensitive property matching
 
@@ -521,3 +556,4 @@ while (reader.Read())
 
 * [System.Text.Json overview](json-serialization-overview.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
+* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)

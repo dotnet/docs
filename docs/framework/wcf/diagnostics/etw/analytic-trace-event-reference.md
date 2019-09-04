@@ -103,7 +103,6 @@ The following table defines the event levels, identifiers, and messages associat
 |[1431 - ConcurrentCallsRatio](../../../../../docs/framework/wcf/diagnostics/etw/1431-concurrentcallsratio.md)|Verbose|Concurrent sessions ratio: %1/%2|Quota|  
 |[1432 - ConcurrentSessionsRatio](../../../../../docs/framework/wcf/diagnostics/etw/1432-concurrentsessionsratio.md)|Verbose|Concurrent sessions ratio: %1/%2|Quota|  
 |[1433 - OutboundConnectionsPerEndpointRatio](../../../../../docs/framework/wcf/diagnostics/etw/1433-outboundconnectionsperendpointratio.md)|Verbose|Outbound connections per endpoint ratio: %1/%2|Quota|  
-|[1433 - OutboundConnectionsPerEndpointRatio](../../../../../docs/framework/wcf/diagnostics/etw/1433-outboundconnectionsperendpointratio.md)|Verbose|Outbound connections per endpoint ratio: %1/%2|Quota|  
 |[1436 - PendingMessagesPerChannelRatio](../../../../../docs/framework/wcf/diagnostics/etw/1436-pendingmessagesperchannelratio.md)|Verbose|Pending messages per channel ratio: %1/%2|Quota|  
 |[1438 - ConcurrentInstancesRatio](../../../../../docs/framework/wcf/diagnostics/etw/1438-concurrentinstancesratio.md)|Verbose|Concurrent instances ratio: %1/%2|Quota|  
 |[1439 - PendingAcceptsAtZero](../../../../../docs/framework/wcf/diagnostics/etw/1439-pendingacceptsatzero.md)|Information|Zero pending accepts left|Quota|  

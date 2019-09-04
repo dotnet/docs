@@ -33,7 +33,7 @@ Console.WriteLine(el1.Name);
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 PurchaseOrders  
 ```  

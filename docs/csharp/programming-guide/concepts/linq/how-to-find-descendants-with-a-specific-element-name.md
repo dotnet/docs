@@ -41,7 +41,7 @@ Console.WriteLine(str);
   
  This code produces the following output:  
   
-```  
+```output  
 Some text that is broken up into multiple segments.  
 ```  
   
@@ -81,7 +81,7 @@ Console.WriteLine(str);
   
  This code produces the following output:  
   
-```  
+```output  
 Some text that is broken up into multiple segments.  
 ```  
   

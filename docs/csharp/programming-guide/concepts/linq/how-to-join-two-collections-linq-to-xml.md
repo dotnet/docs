@@ -70,7 +70,7 @@ if (!errors)
   
  This code produces the following output:  
   
-```  
+```output  
 Attempting to validate, custOrdDoc validated  
 <Root>  
   <Order>  

@@ -7,9 +7,10 @@ author: "BrucePerlerMS"
 # \<certificateValidation>
 Controls the settings that token handlers use to validate certificates. These settings are overridden if a specific handler is configured with its own validator.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<certificateValidation>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<certificateValidation>**  
   
 ## Syntax  
   

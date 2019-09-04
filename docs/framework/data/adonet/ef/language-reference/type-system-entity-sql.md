@@ -15,23 +15,23 @@ ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
  This section discusses the anonymous types that are not defined in the schema explicitly but are supported by Entity SQL. For information on primitive and nominal types, see [Conceptual Model Types (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl).  
   
 ## Rows  
- The structure of a row depends on the sequence of typed and named members that the row consists of. A row type has no identity and cannot be inherited from. Instances of the same row type are equivalent if the members are respectively equivalent. Rows have no behavior beyond their structural equivalence and have no equivalent in the common language runtime. Queries can result in structures that contain rows or collections of rows. The API binding between the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries and the host language defines how rows are realized in the query that produced the result. For information on how to construct a row instance, see [Constructing Types](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md).  
+ The structure of a row depends on the sequence of typed and named members that the row consists of. A row type has no identity and cannot be inherited from. Instances of the same row type are equivalent if the members are respectively equivalent. Rows have no behavior beyond their structural equivalence and have no equivalent in the common language runtime. Queries can result in structures that contain rows or collections of rows. The API binding between the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries and the host language defines how rows are realized in the query that produced the result. For information on how to construct a row instance, see [Constructing Types](constructing-types-entity-sql.md).  
   
 ## Collections  
- Collection types represent zero or more instances of other objects. For information on how to construct collection, see [Constructing Types](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md).  
+ Collection types represent zero or more instances of other objects. For information on how to construct collection, see [Constructing Types](constructing-types-entity-sql.md).  
   
 ## References  
  A reference is a logical pointer to a specific entity in a specific entity set.  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports the following operators to construct, deconstruct, and navigate through references:  
   
-- [REF](../../../../../../docs/framework/data/adonet/ef/language-reference/ref-entity-sql.md)  
+- [REF](ref-entity-sql.md)  
   
-- [CREATEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/createref-entity-sql.md)  
+- [CREATEREF](createref-entity-sql.md)  
   
-- [KEY](../../../../../../docs/framework/data/adonet/ef/language-reference/key-entity-sql.md)  
+- [KEY](key-entity-sql.md)  
   
-- [DEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/deref-entity-sql.md)  
+- [DEREF](deref-entity-sql.md)  
   
  You can navigate through a reference by using the member access (dot) operator(`.`). The following snippet extracts the Id property (of Order) by navigating through the r (reference) property.  
   
@@ -44,7 +44,7 @@ from (select ref(o) as r from LOB.Orders as o) as o2
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [CAST](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)
-- [CSDL, SSDL, and MSL Specifications](../../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+- [Entity SQL Overview](entity-sql-overview.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [CAST](cast-entity-sql.md)
+- [CSDL, SSDL, and MSL Specifications](csdl-ssdl-and-msl-specifications.md)

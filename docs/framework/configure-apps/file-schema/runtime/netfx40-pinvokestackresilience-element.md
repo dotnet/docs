@@ -12,9 +12,9 @@ ms.author: "ronpet"
 
 Specifies whether the runtime automatically fixes incorrect platform invoke declarations at run time, at the cost of slower transitions between managed and unmanaged code.
 
-\<configuration>\
-\<runtime>\
-\<NetFx40_PInvokeStackResilience>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_PInvokeStackResilience>**  
 
 ## Syntax
 

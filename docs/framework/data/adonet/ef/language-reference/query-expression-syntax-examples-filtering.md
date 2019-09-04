@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: c27cb89c-1c1d-4988-9f38-950eda3cb275
 ---
 # Query Expression Syntax Examples: Filtering
-The examples in this topic demonstrate how to use the `Where` and `Where…Contains` methods to query the [AdventureWorks Sales Model](https://archive.codeplex.com/?p=msftdbprodsamples) using query expression syntax. Note, Where…`Contains` cannot be used as a part of a [compiled query](../../../../../../docs/framework/data/adonet/ef/language-reference/compiled-queries-linq-to-entities.md).  
+The examples in this topic demonstrate how to use the `Where` and `Where…Contains` methods to query the [AdventureWorks Sales Model](https://archive.codeplex.com/?p=msftdbprodsamples) using query expression syntax. Note, Where…`Contains` cannot be used as a part of a [compiled query](compiled-queries-linq-to-entities.md).  
   
  The AdventureWorks Sales model used in these examples is built from the Contact, Address, Product, SalesOrderHeader, and SalesOrderDetail tables in the AdventureWorks sample database.  
   
@@ -61,4 +61,4 @@ The examples in this topic demonstrate how to use the `Where` and `Where…Conta
   
 ## See also
 
-- [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
+- [Queries in LINQ to Entities](queries-in-linq-to-entities.md)

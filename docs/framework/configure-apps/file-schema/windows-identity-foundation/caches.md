@@ -7,9 +7,10 @@ author: "BrucePerlerMS"
 # \<caches>
 Registers the caches used for session tokens and token replay detection.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<caches>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<caches>**  
   
 ## Syntax  
   

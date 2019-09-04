@@ -62,5 +62,5 @@ WHERE p IS OF (NamespaceName.Employee)
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Nullable Structured Types](../../../../../../docs/framework/data/adonet/ef/language-reference/nullable-structured-types-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Nullable Structured Types](nullable-structured-types-entity-sql.md)

@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<appDomainManagerType> Element
 Specifies the type that serves as the application domain manager for the default application domain.  
   
- \<configuration>  
-\<runtime>  
-\<appDomainManagerType>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainManagerType>**  
   
 ## Syntax  
   

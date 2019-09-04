@@ -281,8 +281,8 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |Name|Markdown label|
 |-----|-------|
 |.NET Console|dotnetcli|
-|ASP.NET with C#|aspx-csharp|
-|ASP.NET with VB|aspx-vb|
+|ASP.NET (C#)|aspx-csharp|
+|ASP.NET (VB)|aspx-vb|
 |Azure CLI|azurecli|
 |AzCopy|azcopy|
 |Azure PowerShell|azurepowershell|

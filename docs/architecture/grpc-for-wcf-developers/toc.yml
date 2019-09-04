@@ -50,16 +50,14 @@
     - name: Types of RPC
       href: types-of-rpc.md
   - name: Converting a WCF solution to gRPC
-    href: converting-wcf-to-grpc.md
+    href: migrating-wcf-to-grpc.md
     items:
-    - name: Sample Stock Trading WCF solution
-      href: sample-wcf-solution.md
-    - name: Converting DataContracts to Protobuf messages
-      href: datacontract-to-protobuf.md
-    - name: Converting ServiceContracts to gRPC services
-      href: servicecontract-to-grpc.md
-    - name: Implementing services in ASP.NET Core 3.0
-      href: implementing-services.md
+    - name: Create a gRPC project
+      href: create-grpc-project.md
+    - name: Migrating request-reply services
+      href: migrating-request-reply.md
+    - name: Migrating duplex services
+      href: migrating-duplex-services.md
     - name: Streaming vs Repeated
       href: streaming-vs-repeated.md
     - name: Client libraries

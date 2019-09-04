@@ -19,7 +19,7 @@ Additional reasons why gRPC stands above other solutions are:
 
 ### Performance
 
-As already discussed, using HTTP/2 rather than HTTP/1 removes the requirement for human-readability code and instead use the smaller faster binary protocol. This is more efficient for computers to parse. HTTP/2 also supports multiplexing requests over a single connection enabling responses to be sent as soon as they are ready without the need to wait in a queue.  Fewer resources are needed when using gRPC which makes it a good solution to use for mobile devices and over slower networks. [Mark to check]
+As already discussed, using HTTP/2 rather than HTTP/1.1 removes the requirement for human-readability code and instead use the smaller faster binary protocol. This is more efficient for computers to parse. HTTP/2 also supports multiplexing requests over a single connection enabling responses to be sent as soon as they are ready without the need to wait in a queue.  Fewer resources are needed when using gRPC which makes it a good solution to use for mobile devices and over slower networks. [Mark to check]
 
 ### Interoperability
 
@@ -31,7 +31,7 @@ gRPC is a comprehensive RPC solution. It has thoroughly addressed the full range
 
 gRPC has full bi-directional streaming, which is very similar to WCF's Full Duplex services but without the dependency on complicated network bindings and transports. gRPC streaming can operate over regular internet connections, load balancers and service meshes.
 
-gRPC is implicitly secure. HTTP/2 is a fundamentally more secure transport method than HTTP/1. SSL/TLS encrypted connections are required by the protocol, removing the need for complex encryption configuration at the service level.
+gRPC is implicitly secure when using HTTP/2 over an SSL/TLS end-to-end encrypted connection. Support for Client Certificate authentication (see chapter 6) further increases security and trust between client and server.
 
 >[!div class="step-by-step"]
 <!-->[Next](protocol-buffers.md)-->

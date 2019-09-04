@@ -7,9 +7,9 @@ ms.date: 09/02/2019
 
 # Network protocols
 
-Unlike WCF, gRPC uses HTTP/2 as a base for its networking. This offers significant advantages over WCF and SOAP which only operate on HTTP/1. Given that, for developers wanting to use gRPC, there is no alternative to HTTP/2 it would seem to be the optimum moment to explore HTTP/2 in more detail. This will in turn help to identify additional benefits to using gRPC.
+Unlike WCF, gRPC uses HTTP/2 as a base for its networking. This offers significant advantages over WCF and SOAP which only operate on HTTP/1.1. Given that, for developers wanting to use gRPC, there is no alternative to HTTP/2 it would seem to be the optimum moment to explore HTTP/2 in more detail. This will in turn help to identify additional benefits to using gRPC.
 
-HTTP/2, released by Internet Engineering Task Force in 2015 was derived from the experimental SPDY protocol which was already being used by Google. It was specifically designed to be simpler, faster and more secure than HTTP/1.
+HTTP/2, released by Internet Engineering Task Force in 2015 was derived from the experimental SPDY protocol which was already being used by Google. It was specifically designed to be simpler, faster and more secure than HTTP/1.1.
 
 [probably a diagram here]
 

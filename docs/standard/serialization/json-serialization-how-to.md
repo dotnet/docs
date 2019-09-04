@@ -13,14 +13,6 @@ ms.assetid: 4d1111c0-9447-4231-a997-96a2b74b3453
 
 This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON). The directions and sample code use the library directly, not through a framework such as ASP.NET Core.
 
-## How to get the library
-
-* For apps and libraries that target .NET Core 3.0, the `System.Text.Json` library is included in the shared framework.
-* For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package:
-  * .NET Standard
-  * .NET Framework
-  * .NET Core 2.x
-
 ## Using directive
 
 The code examples in this article require a `using` directive for `System.Text.Json`:
@@ -84,7 +76,7 @@ Resulting property and field values:
 | Date    | 8/1/2019 12:00:00 AM -07:00||
 | TemperatureC| 0 |Property name matching is case-sensitive.|
 | Summary| Hot||
-| SummaryField| null |Fields are excluded.|
+| SummaryField| null |Fields are excluded from deserialization.|
 
 Comments or trailing commas in the json trigger exceptions.
 
@@ -188,8 +180,9 @@ class WeatherForecast
     [JsonPropertyName("Wind")]
     public int WindSpeed { get; set; }
 }
+```
 
-JSON output:
+Example JSON output:
 
 ```json
 {
@@ -229,8 +222,9 @@ class WeatherForecast
     [JsonPropertyName("Wind")]
     public int WindSpeed { get; set; }
 }
+```
 
-JSON output:
+Example JSON output:
 
 ```json
 {
@@ -282,6 +276,7 @@ class WeatherForecast
     [JsonPropertyName("Wind")]
     public int WindSpeed { get; set; }
 }
+```
 
 Example JSON output:
 
@@ -418,9 +413,19 @@ Resulting object property values after matching camel case to Pascal case proper
 | TemperatureC| 25 |
 | Summary| Hot|
 
-### Include properties of derived classes
+## Include properties of derived classes
 
-Suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
+Call the overload of `Serialize` that lets you specify the type at runtime:
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    WriteIndented = true,
+};
+json = JsonSerializer.Serialize(weatherForecast, weatherForecast.GetType(), options);            
+```
+
+To explain why this overload is necessary, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
 
 ```csharp
 class WeatherForecast
@@ -435,18 +440,19 @@ class WeatherForecastWithWind : WeatherForecast
 }
 ```
 
-If the type of the `weatherForecast` object is `WeatherForecastWithWind`, Serialize(weatherForecast) produces JSON with the extra property:
+And suppose the type passed to, or inferred by, the `Serialize` method at compile time is `WeatherForecast`:
 
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
-  "Summary": "Hot",
-  "WindSpeed": 35
-}
+```csharp
+json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
 ```
 
-Serialize<WeatherForecast>(weatherForecast) omits the extra property:
+```csharp
+WeatherForecast weatherForecast;
+//...
+json = JsonSerializer.Serialize(weatherForecast);
+```
+
+In this scenario, the `WindSpeed` property is not serialized even if the weatherForecast object is actually a `WeatherForecastWithWind`. Only the base class properties are serialized:
 
 ```json
 {
@@ -456,6 +462,9 @@ Serialize<WeatherForecast>(weatherForecast) omits the extra property:
 }
 ```
 
+This behavior is intended to help prevent accidental data exposure of a derived runtime-created type.
+
 ## Additional resources
 
 * [System.Text.Json overview](json-serialization-overview.md)
+* [System.Text.Json API reference](xref:System.Text.Json)

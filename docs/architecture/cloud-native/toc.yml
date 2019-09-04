@@ -1,0 +1,87 @@
+- name: "Architecting Cloud-Native .NET Apps for Azure"
+  href: index.md
+  items:
+  - name: Introduction to Cloud-Native Applications
+    href: introduction.md
+    items:
+    - name: Defining Cloud Native
+      href: definition.md
+    - name: Candidate Apps for Cloud Native
+      href: candidate-apps.md
+  - name: Introducing the eShopOnContainers Reference App
+    href: introduce-eshoponcontainers-reference-app.md
+    items:
+    - name: Mapping eShopOnContainers to Azure Services
+      href: map-eshoponcontainers-azure-services.md
+    - name: Deploying eShopOnContainers to Azure
+      href: deploy-eshoponcontainers-azure.md
+    - name: Centralized Configuration
+      href: centralized-configuration.md
+  - name: Scaling Cloud-Native .NET Applications
+    href: scale-applications.md
+    items:
+    - name: Leveraging Containers and Orchestrators
+      href: leverage-containers-orchestrators.md
+    - name: Leveraging Serverless Functions
+      href: leverage-serverless-functions.md
+    - name: Combining Containers and Serverless Approaches
+      href: combine-containers-serverless-approaches.md
+    - name: Deploying Containers in Azure
+      href: deploy-containers-azure.md
+    - name: Other Deployment Options
+      href: other-deployment-options.md
+  - name: Cloud-Native Communication Patterns
+    href: communication-patterns.md
+    items:
+    - name: Front-End Client Communication
+      href: front-end-communication.md
+    - name: Cross-Service Communication
+      href: cross-service-communication.md
+  - name: Distributed Data
+    href: distributed-data.md
+    items:
+    - name: Cloud-Native Data Patterns
+      href: data-patterns.md
+    - name: Data Storage in Azure
+      href: azure-data-storage.md
+  - name: Cloud-Native Resiliency
+    href: resiliency.md
+    items:
+    - name: Application Resiliency Patterns
+      href: application-resiliency-patterns.md
+    - name: Cloud infrastructure Resiliency with Azure
+      href: infrastructure-resiliency-azure.md
+    - name: Resilient Communication
+      href: resilient-communications.md
+  - name: Monitoring and Health
+    href: monitoring-health.md
+    items:
+    - name: Observability Patterns
+      href: observability-patterns.md
+    - name: Logging
+      href: logging.md
+    - name: Azure Monitor
+      href: azure-monitor.md
+    - name: Monitoring in Azure Kubernetes Services
+      href: monitoring-azure-kubernetes.md
+  - name: Identity
+    href: identity.md
+    items:
+    - name: Authentication and Authorization in Cloud-Native Apps
+      href: authentication-authorization.md
+    - name: Azure Active Directory
+      href: azure-active-directory.md
+    - name: Identity Server
+      href: identity-server.md
+  - name: Security
+    href: security.md
+    items:
+    - name: Azure Security for Cloud-Native Apps
+      href: azure-security.md
+  - name: Cloud-Native DevOps
+    href: devops.md
+    items:
+    - name: Infrastructure as Code
+      href: infrastructure-as-code.md
+    - name: Cloud-Native Application Bundles
+      href: application-bundles.md

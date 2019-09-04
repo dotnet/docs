@@ -10,7 +10,7 @@ ms.date: 09/02/2019
 This chapter will look at how to convert different types of WCF service to the gRPC equivalent.
 
 - Simple Request-Reply operations to gRPC unary RPC
-- One-way operations to gRPC client Streaming RPC
+- One-way operations to gRPC client streaming RPC
 - Full Duplex services to gRPC bi-directional Streaming RPC
 
 The sample WCF application is a minimal stub of set of Stock trading services, using the open-source IoC container library *Autofac* for dependency injection. It includes three services, one for each WCF service type. The services will be discussed in more detail in the following sections. The solution can be downloaded from [GitHub](https://github.com/somewhere/TraderSysWCF). The data for the services is faked to minimize external dependencies.

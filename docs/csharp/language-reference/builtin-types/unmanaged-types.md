@@ -6,7 +6,7 @@ helpviewer_keywords:
 ---
 # Unmanaged types (C# reference)
 
-An **unmanaged type** is one of the following:
+A type is an **unmanaged type** if it's any of the following types:
 
 - `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal`, or `bool`
 - Any [enum](../keywords/enum.md) type

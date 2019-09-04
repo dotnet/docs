@@ -65,12 +65,10 @@
   - name: Authentication
     href: authentication.md
     items:
-    - name: Channel credentials
-      href: channel-credentials.md
     - name: Call credentials
       href: call-credentials.md
-    - name: Extending gRPC Authentication
-      href: extending-authentication.md
+    - name: Channel credentials
+      href: channel-credentials.md
   - name: gRPC in Production
     href: grpc-in-production.md
     items:

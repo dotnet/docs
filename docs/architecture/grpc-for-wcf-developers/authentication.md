@@ -24,7 +24,7 @@ For more information see the [Authentication and authorization documentation on 
 > [!NOTE]
 > When using gRPC over an SSL/TLS encrypted connection, all traffic between clients and servers is already encrypted, even if you don't use channel-level authentication.
 
-## Channel credentials
+This chapter will show how to apply call credentials and channel credentials to a gRPC service, and how to use credentials from a .NET Core gRPC client to authenticate with the service.
 
 >[!div class="step-by-step"]
-<!-->[Next](channel-credentials.md)-->
+<!-->[Next](call-credentials.md)-->

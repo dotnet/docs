@@ -91,7 +91,7 @@ The first project that you create in this walkthrough defines a custom dynamic o
   
 2. Copy the following text to the TextFile1.txt file.  
   
-    ```  
+    ```text  
     List of customers and suppliers  
   
     Supplier: Lucerne Publishing (https://www.lucernepublishing.com/)  

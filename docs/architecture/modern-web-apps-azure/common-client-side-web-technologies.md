@@ -22,9 +22,9 @@ HTML (HyperText Markup Language) is the standard markup language used to create 
 
 CSS (Cascading Style Sheets) is used to control the look and layout of HTML elements. CSS styles can be applied directly to an HTML element, defined separately on the same page, or defined in a separate file and referenced by the page. Styles cascade based on how they are used to select a given HTML element. For instance, a style might apply to an entire document, but would be overridden by a style that applied to a particular element. Likewise, an element-specific style would be overridden by a style that applied to a CSS class that was applied to the element, which in turn would be overridden by a style targeting a specific instance of that element (via its id). Figure 6-1
 
-**Figure 6-1.** CSS Specificity rules, in order.
+![CSS Specificity rules](./media/image6-1.png)
 
-![](./media/image6-1.png)
+**Figure 6-1.** CSS Specificity rules, in order.
 
 It's best to keep styles in their own separate stylesheet files, and to use selection-based cascading to implement consistent and reusable styles within the application. Placing style rules within HTML should be avoided, and applying styles to specific individual elements (rather than whole classes of elements, or elements that have had a particular CSS class applied to them) should be the exception, not the rule.
 

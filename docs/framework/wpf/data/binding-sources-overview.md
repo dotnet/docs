@@ -36,7 +36,7 @@ In data binding, the binding source object refers to the object you obtain data 
 ### Other Characteristics  
  The following list provides other important points to note:  
   
-- If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a parameterless constructor. In some [!INCLUDE[TLA2#tla_net](../../../../includes/tla2sharptla-net-md.md)] languages, such as C#, the parameterless constructor might be created for you.  
+- If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a parameterless constructor. In some .NET languages, such as C#, the parameterless constructor might be created for you.  
   
 - The properties you use as binding source properties for a binding must be public properties of your class. Explicitly defined interface properties cannot be accessed for binding purposes, nor can protected, private, internal, or virtual properties that have no base implementation.  
   

@@ -27,4 +27,4 @@ This topic provides an example of how to build an <xref:System.Data.EntityClient
 ## See also
 
 - [How to: Use EntityConnection with an Object Context](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738461(v=vs.100))
-- [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)
+- [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md)

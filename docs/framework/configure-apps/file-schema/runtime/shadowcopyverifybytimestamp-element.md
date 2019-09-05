@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<shadowCopyVerifyByTimestamp> Element
 Specifies whether shadow copying uses the default startup behavior introduced in the .NET Framework 4, or reverts to the startup behavior of earlier versions of the .NET Framework.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<shadowCopyVerifyByTimestamp> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<shadowCopyVerifyByTimestamp>**  
   
 ## Syntax  
   

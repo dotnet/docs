@@ -138,25 +138,25 @@ supported when parsing and formatting <xref:System.DateTime> and <xref:System.Da
 The following levels of granularity are defined for parsing:
 
 1. 'Full date'
-	1. "yyyy'-'MM'-'dd"
+    1. "yyyy'-'MM'-'dd"
 
 2. "'Full date''T''Hour'':''Minute'"
-	1. "yyyy'-'MM'-'dd'T'HH':'mm"
+    1. "yyyy'-'MM'-'dd'T'HH':'mm"
 
 3. "'Full date''T''Partial time'"
-	1. "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
-	([The Sortable ("s") Format Specifier](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-sortable-s-format-specifier))
-	2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF"
+    1. "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
+    ([The Sortable ("s") Format Specifier](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-sortable-s-format-specifier))
+    2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF"
 
 4. "'Full date''T''Time hour'':''Minute''Time offset'"
-	1. "yyyy'-'MM'-'dd'T'HH':'mmZ"
-	2. "yyyy'-'MM'-'dd'T'HH':'mm('+'/'-')HH':'mm"
+    1. "yyyy'-'MM'-'dd'T'HH':'mmZ"
+    2. "yyyy'-'MM'-'dd'T'HH':'mm('+'/'-')HH':'mm"
 
 5. 'Date time'
-	1. "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"
-	2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ"
-	3. "yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm"
-	4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
+    1. "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"
+    2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ"
+    3. "yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm"
+    4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
 
 If there are decimal fractions for seconds, there must be at least one digit; `2019-07-26T00:00:00.` is not allowed.
 While up to 16 fractional digits are allowed, only the first seven are parsed. Anything beyond that is considered a zero.
@@ -170,28 +170,28 @@ Leap seconds are not supported.
 The following levels of granularity are defined for formatting:
 
 1. "'Full date''T''Partial time'"
-	1. "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
-		([The Sortable ("s") Format Specifier](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-sortable-s-format-specifier))
+    1. "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
+        ([The Sortable ("s") Format Specifier](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-sortable-s-format-specifier))
 
-		Used to format a <xref:System.DateTime> without fractional seconds and without offset information.
+        Used to format a <xref:System.DateTime> without fractional seconds and without offset information.
 
-	2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF"
+    2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF"
 
-		Used to format a <xref:System.DateTime> with fractional seconds but without offset information.
+        Used to format a <xref:System.DateTime> with fractional seconds but without offset information.
 
 2. 'Date time'
-	1. "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"
+    1. "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"
 
-		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a UTC offset.
+        Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a UTC offset.
 
-	2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ"
+    2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ"
 
-		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a UTC offset.
+        Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a UTC offset.
 
-	3. "yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm"
+    3. "yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm"
 
-		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a local offset.
+        Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a local offset.
 
-	4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
+    4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
 
-		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a local offset.
+        Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a local offset.

@@ -92,6 +92,6 @@ custDS.Tables["Customers"].Constraints.Add(custUnique);
 - <xref:System.Data.DataTable>
 - <xref:System.Data.ForeignKeyConstraint>
 - <xref:System.Data.UniqueConstraint>
-- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [DataTable Schema Definition](datatable-schema-definition.md)
+- [DataSets, DataTables, and DataViews](index.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

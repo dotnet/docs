@@ -9,9 +9,9 @@ This topic describes [!INCLUDE[esql](../../../../../../includes/esql-md.md)] sup
 ## Null  
  The null literal is used to represent the value null for any type. A null literal is compatible with any type.  
   
- Typed nulls can be created by a cast over a null literal. For more information, see [CAST](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md).  
+ Typed nulls can be created by a cast over a null literal. For more information, see [CAST](cast-entity-sql.md).  
   
- For rules about where free floating null literals can be used, see [Null Literals and Type Inference](../../../../../../docs/framework/data/adonet/ef/language-reference/null-literals-and-type-inference-entity-sql.md).  
+ For rules about where free floating null literals can be used, see [Null Literals and Type Inference](null-literals-and-type-inference-entity-sql.md).  
   
 ## Boolean  
  Boolean literals are represented by the keywords `true` and `false`.  
@@ -97,4 +97,4 @@ GUID  '1AFC7F5C-FFA0-4741-81CF-F12EAAB822BF'
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Overview](entity-sql-overview.md)

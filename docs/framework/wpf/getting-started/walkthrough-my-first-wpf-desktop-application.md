@@ -138,7 +138,7 @@ In this section, you'll add two pages and an image to the application.
 
 1. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - Home`".
 
-1. Set the `DesignHeight` and `DesignWidth` element values to 300 pixels.
+1. Set the `DesignHeight` to 350 pixels and the `DesignWidth` to 500 pixels.
 
     The XAML now appears as follows for Visual Basic:
 
@@ -179,7 +179,7 @@ In this section, you'll add two pages and an image to the application.
 
 1. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - View Expense`".
 
-1. Set the `DesignHeight` and `DesignWidth` element values to 300 pixels.
+1. Set the `DesignHeight` to 350 pixels and the `DesignWidth` to 500 pixels. 
 
     *ExpenseReportPage.xaml* now looks like the following in Visual Basic:
 

@@ -14,8 +14,8 @@ ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
 
 Provides information used by the common language runtime to configure applications.
 
-\<configuration>\
-\<runtime>
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;**\<runtime>**  
 
 ## Syntax
 

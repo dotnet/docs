@@ -150,7 +150,7 @@ class Program
   
  This example produces the same output as before the refactoring:  
   
-```  
+```output  
 StyleName:Heading1 >Parsing WordprocessingML with LINQ to XML<  
 StyleName:Normal ><  
 StyleName:Normal >The following example prints to the console.<  

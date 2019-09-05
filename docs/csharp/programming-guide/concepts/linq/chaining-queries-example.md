@@ -58,7 +58,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 ToUpper: source >abc<  
 AppendString: source >ABC<  
 Main: str >ABC!!!<  

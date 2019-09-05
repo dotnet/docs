@@ -15,7 +15,7 @@ Figure 4-10 shows an example of how Application Insights monitors your applicati
 
 ![Application Insights monitoring dashboard](./media/image10.png)
 
-> **Figure 4-10.** Application Insights monitoring dashboard
+**Figure 4-10.** Application Insights monitoring dashboard
 
 ## Monitor your Docker infrastructure with Log Analytics and its Container Monitoring solution
 
@@ -39,7 +39,7 @@ Figure 4-11 shows the relationships between various container hosts and agents a
 
 ![Log Analytics Container Monitoring solution](./media/image11.png)
 
-> **Figure 4-11.** Log Analytics Container Monitoring solution
+**Figure 4-11.** Log Analytics Container Monitoring solution
 
 You can use the Log Analytics Container Monitoring solution to:
 

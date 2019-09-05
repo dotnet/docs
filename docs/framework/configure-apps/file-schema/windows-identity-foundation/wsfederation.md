@@ -7,9 +7,10 @@ author: "BrucePerlerMS"
 # \<wsFederation>
 Provides configuration for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM).  
   
-\<system.identityModel.services>  
-\<federationConfiguration>  
-\<wsFederation>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<wsFederation>**  
   
 ## Syntax  
   

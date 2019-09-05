@@ -48,6 +48,7 @@ The [`LoadColumn`](xref:Microsoft.ML.Data.LoadColumnAttribute) attribute specifi
 > [`LoadColumn`](xref:Microsoft.ML.Data.LoadColumnAttribute) is only required when loading data from a file.
 
 Load columns as: 
+
 - Individual columns like `Size` and `CurrentPrices` in the `HousingData` class.
 - Multiple columns at a time in the form of a vector like `HistoricalPrices` in the `HousingData` class.
 

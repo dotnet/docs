@@ -92,8 +92,9 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 
 > [!IMPORTANT]
 > It's possible to use Visual Studio 2015 for .NET Core 1.x development, but it's not recommended for the following reasons:
-  > * The .NET Core tooling is a preview version, which is not supported.
-  > * The projects are project.json-based, which is deprecated.
+>
+> * The .NET Core tooling is a preview version, which is not supported.
+> * The projects are project.json-based, which is deprecated.
 >
 > For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
 

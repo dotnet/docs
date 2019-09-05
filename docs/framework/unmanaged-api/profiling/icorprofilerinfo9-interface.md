@@ -21,4 +21,5 @@ A subclass of [ICorProfilerInfo8](../../../../docs/framework/unmanaged-api/profi
 **Header:** CorProf.idl, CorProf.h  
 **.NET Versions:** [!INCLUDE[net_core](../../../../includes/net-core-22-md.md)]  
 ## See also
+
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

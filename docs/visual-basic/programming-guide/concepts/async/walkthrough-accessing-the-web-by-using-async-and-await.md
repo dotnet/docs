@@ -16,6 +16,7 @@ If you don't want to build the applications yourself, you can download "Async Sa
 In this walkthrough, you complete the following tasks:
 
 > [!div class="checklist"]
+>
 > - [Create a WPF application](#create-a-wpf-application)
 > - [Design a simple WPF MainWindow](#design-a-simple-wpf-mainwindow)
 > - [Add a reference](#add-a-reference)

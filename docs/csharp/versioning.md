@@ -43,8 +43,9 @@ will have to be updated. This is a huge breaking change and is strongly discoura
 * Method signatures: When updating a method behaviour requires you to change its signature as well, you should instead create an overload so that code calling into that method will still work.
 You can always manipulate the old method signature to call into the new method signature so that implementation remains consistent.
 * [Obsolete attribute](programming-guide/concepts/attributes/common-attributes.md#Obsolete): You can use this attribute in your code to specify classes or class members that are deprecated and likely to be removed in future versions.
-This ensures developers utilizing your library are better prepared for breaking changes.
+  This ensures developers utilizing your library are better prepared for breaking changes.
 * Optional Method Arguments: When you make previously optional method arguments compulsory or change their default value then all code that does not supply those arguments will need to be updated.
+
 > [!NOTE]
 > Making compulsory arguments optional should have very little effect especially if it doesn't change the method's behaviour.
 
@@ -122,3 +123,4 @@ The `override` modifier is evaluated at compile time and the compiler will throw
 
 Your knowledge of the discussed techniques as well as your understanding of what situations to use them will go a long way to boost the ease
 of transition between versions of a library.
+ 

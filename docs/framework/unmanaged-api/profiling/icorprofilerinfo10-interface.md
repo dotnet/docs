@@ -24,4 +24,5 @@ A subclass of [ICorProfilerInfo9](../../../../docs/framework/unmanaged-api/profi
 **Header:** CorProf.idl, CorProf.h  
 **.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)] 
 ## See also
+
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

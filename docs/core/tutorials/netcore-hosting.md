@@ -38,6 +38,7 @@ The following steps detail how to use the `nethost` and `hostfxr` libraries to s
 ### Step 1 - Load HostFxr and get exported hosting functions
 
 The `nethost` library provides the `get_hostfxr_path` function for locating the `hostfxr` library. The `hostfxr` library exposes functions for hosting the .NET Core runtime. The full list of functions can be found in [`hostfxr.h`](https://github.com/dotnet/core-setup/blob/master/src/corehost/cli/hostfxr.h) and the [native hosting design document](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/native-hosting.md). The sample and this tutorial use the following:
+
 * `hostfxr_initialize_for_runtime_config`: Initializes a host context and prepares for initialization of the .NET Core runtime using the specified runtime configuration.
 * `hostfxr_get_runtime_delegate`: Gets a delegate for runtime functionality.
 * `hostfxr_close`: Closes a host context.

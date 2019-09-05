@@ -18,6 +18,7 @@ In [Build a .NET Standard library with C# and .NET Core in Visual Studio 2017](l
 To create the unit test project, do the following:
 
 # [C#](#tab/csharp)
+
 1. In **Solution Explorer**, open the context menu for the **ClassLibraryProjects** solution node and select **Add** > **New Project**.
 
 1. In the **Add New Project** dialog, select the **Visual C#** node. Then select the **.NET Core** node followed by the **MSTest Test Project (.NET Core)** project template. In the **Name** text box, enter "StringLibraryTest" as the name of the project. Select **OK** to create the unit test project.
@@ -46,7 +47,9 @@ To create the unit test project, do the following:
 1. In the **Reference Manager** dialog, expand the **Projects** node and check the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly allows the compiler to find **StringLibrary** methods. Select the **OK** button. This adds a reference to your class library project, `StringLibrary`.
 
    ![Visual Studio add project reference dialog](./media/testing-library-with-visual-studio/project-reference-manager.png)
-# [Visual Basic](#tab/vb) 
+
+# [Visual Basic](#tab/vb)
+
 1. In **Solution Explorer**, open the context menu for the **ClassLibraryProjects** solution node and select **Add** > **New Project**.
 
 1. In the **Add New Project** dialog, select the **Visual Basic** node. Then select the **.NET Core** node followed by the **MSTest Test Project (.NET Core)** project template. In the **Name** text box, enter "StringLibraryTest" as the name of the project. Select **OK** to create the unit test project.
@@ -75,6 +78,7 @@ To create the unit test project, do the following:
 1. In the **Reference Manager** dialog, expand the **Projects** node and check the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly allows the compiler to find **StringLibrary** methods. Select the **OK** button. This adds a reference to your class library project, `StringLibrary`.
 
    ![Visual Studio add project reference dialog - Visual Basic](./media/testing-library-with-visual-studio/project-reference-manager.png)
+
 ---
 
 ## Adding and running unit test methods
@@ -100,7 +104,8 @@ You'll define three methods, each of which calls its <xref:Microsoft.VisualStudi
 
 To create the test methods:
 
-# [C#](#tab/csharp) 
+# [C#](#tab/csharp)
+
 1. In the *UnitTest1.cs* code window, replace the code with the following code:
 
    [!CODE-csharp[Test#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/testlib1.cs)]
@@ -110,7 +115,9 @@ To create the test methods:
 1. On the menu bar, select **File** > **Save UnitTest1.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
    ![Visual Studio Save File As dialog - C#](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
-# [Visual Basic](#tab/vb) 
+
+# [Visual Basic](#tab/vb)
+
 1. In the *UnitTest1.vb* code window, replace the code with the following code:
 
     [!CODE-vb[Test#1](../../../samples/snippets/core/tutorials/vb-library-with-visual-studio/testlib.vb)]
@@ -120,6 +127,7 @@ To create the test methods:
 1. On the menu bar, select **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
    ![Visual Studio Save File As dialog - Visual Basic](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
+
 ---
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.

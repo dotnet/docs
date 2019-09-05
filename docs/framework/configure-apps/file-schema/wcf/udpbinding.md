@@ -6,9 +6,10 @@ ms.assetid: fa291901-8340-45c6-9c44-5d9281c70bc3
 # \<udpBinding>
 A configuration element used to configure the <xref:System.ServiceModel.UdpBinding> binding.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<udpBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<udpBinding>**  
   
 ## Syntax  
   

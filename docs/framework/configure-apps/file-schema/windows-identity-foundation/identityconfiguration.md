@@ -9,8 +9,9 @@ author: "BrucePerlerMS"
 
 Specifies service-level identity settings.
 
- \<system.identityModel>\
-\<identityConfiguration>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<identityConfiguration>**  
 
 ## Syntax
 

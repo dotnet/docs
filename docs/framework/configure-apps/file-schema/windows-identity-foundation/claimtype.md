@@ -7,10 +7,11 @@ author: "BrucePerlerMS"
 # \<claimType>
 Specifies a single optional or required claim for incoming security tokens.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<claimTypeRequired>  
-\<claimType>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<claimTypeRequired>**](claimtyperequired.md)\  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<claimType>**  
   
 ## Syntax  
   

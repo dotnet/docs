@@ -33,14 +33,14 @@ Console.WriteLine(i);
   
  The following code, however, causes a compiler error because it does not use `new`, and because it tries to use an object that has not been initialized:  
   
-```  
+```csharp  
 int i;  
 Console.WriteLine(i);  
 ```  
   
  Alternatively, objects based on `structs` (including all built-in numeric types) can be initialized or assigned and then used as in the following example:  
   
-```  
+```csharp  
 int a = 44;  // Initialize the value type...  
 int b;  
 b = 33;      // Or assign it before using it.  

@@ -28,4 +28,4 @@ This topic shows how to execute a parameterized stored procedure by using the <x
   
 ## See also
 
-- [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)
+- [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md)

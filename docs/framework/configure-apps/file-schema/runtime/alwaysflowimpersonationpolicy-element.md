@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<alwaysFlowImpersonationPolicy> Element
 Specifies that the Windows identity always flows across asynchronous points, regardless of how impersonation was performed.  
   
- \<configuration>  
-\<runtime>  
-\<alwaysFlowImpersonationPolicy>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<alwaysFlowImpersonationPolicy>**\  
   
 ## Syntax  
   

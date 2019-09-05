@@ -16,11 +16,11 @@ ms.author: "ronpet"
 # \<publisherPolicy> Element
 Specifies whether the runtime applies publisher policy.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<dependentAssembly>  
-\<publisherPolicy>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<publisherPolicy>**  
   
 ## Syntax  
   
@@ -45,13 +45,16 @@ Specifies whether the runtime applies publisher policy.
 |`no`|Does not apply publisher policy.|  
   
 ### Child Elements  
- None.  
+
+None.  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
+|`assemblyBinding`|Contains information about assembly version redirection and the locations of assemblies.|  
 |`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
+|`dependentAssembly`|Encapsulates binding policy and assembly location for each assembly. Use one `<dependentAssembly>` element for each assembly.|  
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  

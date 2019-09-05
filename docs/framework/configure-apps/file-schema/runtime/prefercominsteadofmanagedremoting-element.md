@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<PreferComInsteadOfManagedRemoting> Element
 Specifies whether the runtime will use COM interop instead of remoting for all calls across application domain boundaries.  
   
- \<configuration>  
-\<runtime>  
-\<PreferComInsteadOfManagedRemoting>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<PreferComInsteadOfManagedRemoting>**  
   
 ## Syntax  
   

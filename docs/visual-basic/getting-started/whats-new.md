@@ -16,11 +16,13 @@ ms.author: ronpet
 This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the lastest version of the language.
   
 ## Current version
+
 Visual Basic 16 / Visual Studio 2019 Version 16.0  
 For new features, see [Visual Basic 16](#visual-basic-16)
 
 
 ## Previous versions
+
 Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
 For new features, see [Visual Basic 15.5](#visual-basic-155)
 
@@ -53,7 +55,9 @@ Bit-shift operators, loop variable declaration
 
 Visual Basic / Visual Studio .NET 2002   
 The first release of Visual Basic .NET
+
 ## Visual Basic 16
+
 In Visual Basic 15. and Earlier comment are only allowed on blank lines before a statement, at the end of a statement or in specific places within a statement where an implicit line continuation is allowed.
 
 Starting is Visual Basic 16 comments are also allowed after Explicit Line Continuation and within a statement on a line beginning with a space followed by an underscore.

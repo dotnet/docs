@@ -20,6 +20,7 @@ A subclass of [ICorProfilerInfo8](../../../../docs/framework/unmanaged-api/profi
 **Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).  
 **Header:** CorProf.idl, CorProf.h  
 **.NET Versions:** [!INCLUDE[net_core](../../../../includes/net-core-22-md.md)]  
+
 ## See also
 
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

@@ -9,7 +9,7 @@ ms.date: 09/05/2019
 
 Applications that are developed for the .NET Framework typically require that a specific version of the .NET Framework be installed on your system. In some cases, you may attempt to run an application without either an installed version or the expected version of the .NET Framework present. This often produces an error dialog box like the following:
 
-![This application could not be started](media/this-application-could-not-be-started.png)
+![This application could not be started](media/app-could-not-be-started.png)
 
 This typically indicates one of the following conditions:
 

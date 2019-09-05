@@ -50,7 +50,7 @@ Because the <xref:System.Data.Services.Client.DataServiceQuery%601> class implem
 
 This LINQ query is translated into the following query URI that is executed against the Northwind-based [quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md) data service:
 
-```
+```http
 http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight gt 30
 ```
 

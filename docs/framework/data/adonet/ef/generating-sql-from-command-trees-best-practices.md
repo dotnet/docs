@@ -26,7 +26,7 @@ A possible translation of a query command tree into a SQL SELECT statement would
 
 As an example, consider the following query command tree
 
-```
+```csharp
 Project (
 a.x,
    a = Filter(
@@ -63,7 +63,7 @@ One case of aggregating multiple nodes into a single SQL SELECT statement is agg
 
 Left spine joins, (joins that appear as a left child of another join) can be more easily flattened into a single SQL SELECT statement. For example, consider the following query command tree:
 
-```
+```csharp
 InnerJoin(
    a = LeftOuterJoin(
    b = Extent("TableA")
@@ -85,7 +85,7 @@ INNER JOIN TableC as d ON b.y = d.z
 
 However, non-left spine joins cannot easily be flattened, and you should not try to flatten them. For example, the joins in the following query command tree:
 
-```
+```csharp
 InnerJoin(
    a = Extent("TableA")
    b = LeftOuterJoin(

@@ -8,7 +8,7 @@ Adds two numbers.
   
 ## Syntax  
   
-```  
+```csharp  
 expression + expression  
 ```  
   

@@ -19,7 +19,7 @@ This typically indicates one of the following conditions:
 
 To address this issue so that you can run your application, do the following:
 
-1. Download the [.NET Framework Repair Tool (NetFxRepairTool.exe)](https://www.microsoft.com/en-us/download/details.aspx?id=30135). The tool runs automatically when the download completes.
+1. Download the [.NET Framework Repair Tool (NetFxRepairTool.exe)](https://www.microsoft.com/download/details.aspx?id=30135). The tool runs automatically when the download completes.
 
 1. If the .NET Framework Repair Tool recommends any additional action, such as those shown in the following figure, select **Next**.
 
@@ -36,10 +36,9 @@ To address this issue so that you can run your application, do the following:
    |Windows version|.NET Framework installation|
    |---|---|
    |Windows 10 Anniversary Update and later versions|[.NET Framework 4.8 Runtime](https://dotnet.microsoft.com/download/dotnet-framework/net48)|
-   |Windows 10 November Update|[.NET Framework 4.6.2](https://www.microsoft.com/en-us/download/details.aspx?id=53345)|
-   |Windows 10|[.NET Framework 4.6.2](https://www.microsoft.com/en-us/download/details.aspx?id=53345)|
+   |Windows 10, Windows 10 November Update|[.NET Framework 4.6.2](https://www.microsoft.com/download/details.aspx?id=53345)|
    |Windows 8.1|[.NET Framework 4.8 Runtime](https://dotnet.microsoft.com/download/dotnet-framework/net48)|
-   |Windows 8|[.NET Framework 4.6.1](https://www.microsoft.com/en-us/download/details.aspx?id=49981)|
+   |Windows 8|[.NET Framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49981)|
    |Windows 7 SP1|[.NET Framework 4.8 Runtime](https://dotnet.microsoft.com/download/dotnet-framework/net48)|
    |Windows Vista SP2|[.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130)|
 

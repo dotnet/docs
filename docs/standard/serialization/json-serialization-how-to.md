@@ -35,26 +35,50 @@ WeatherForecast weatherForecast = ... ;
 string json = JsonSerializer.Serialize(weatherForecast);
 ```
 
-Example type to be serialized and JSON output:
+Example type to be serialized:
 
 ```csharp
-class WeatherForecast
+class WeatherForecast1
 {
     public DateTimeOffset Date { get; set; }
     public int TemperatureC { get; set; }
     public string Summary { get; set; }
-    public string SummaryField;
-}
-```
+    public IList<DateTimeOffset> DatesAvailable { get; set;}
+    public Dictionary<string, int> TemperatureRanges { get; set; }
+    public string [] SummaryWords { get; set; }
+}```
+
+The JSON output is minified by default ([see formatted sample](#serialize-to-formatted-json)):
 
 ```json
-{"Date":"2019-08-01T00:00:00-07:00","TemperatureC":25,"Summary":"Hot"}
+{"Date":"2019-08-01T00:00:00-07:00","TemperatureC":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"cold":20,"hot":40},"SummaryWords":["Cool","Windy","Humid"]}
 ```
 
-Notes:
+Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize to a `Stream`, and async versions of the `Stream` overloads are available.
 
-* The JSON is minified by default. [How to write formatted JSON](#serialize-to-formatted-json) is shown later in this article.
+### Default serialization behavior
+
+* All public properties are serialized. You can Exclude [selected](#exclude-selected-properties), [read-only](#exclude-read-only-properties), and [null value](#exclude-null-value-properties) properties.
 * Fields are excluded.
+* Supported types include:
+  * .NET primitives that map to JavaScript primitives.
+  * User-defined [Plain Old CLR Objects (POCOs)](https://stackoverflow.com/questions/250001/poco-definition).
+  * One-dimensional and jagged arrays (`ArrayName[][]`).
+  * Types that implement `IList` or `IEnumerable`.
+  * `Dictionary<string,TValue>`
+* The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) (number of nested types) is 64.
+
+### Serialize to UTF-8
+
+Call [JsonSerializer.SerializeToUtf8Bytes)](xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*):
+
+```csharp
+string json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
+```
+
+As an alternative, a <xref:System.Text.Json.JsonSerializer.Serialize*> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is available.
+
+Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to or from strings (UTF-16).
 
 ## How to deserialize
 
@@ -68,10 +92,23 @@ Example JSON input:
 
 ```json
 {
-  "Date":"2019-08-01T00:00:00-07:00",
-  "temperatureC":25,
-  "Summary":"Hot",
-  "SummaryField":"Hot"
+  "Date": "2019-08-01T00:00:00-07:00",
+  "temperatureC": 25,
+  "Summary": "Hot",
+  "SummaryField": "Hot",
+  "DatesAvailable": [
+    "2019-08-01T00:00:00-07:00",
+    "2019-08-02T00:00:00-07:00"
+  ],
+  "TemperatureRanges": {
+    "Cold": 20,
+    "Hot": 40
+  },
+  "SummaryWords": [
+    "Cool",
+    "Windy",
+    "Humid"
+  ]
 }
 ```
 
@@ -83,20 +120,11 @@ Resulting property and field values:
 | TemperatureC| 0 |Property name matching is case-sensitive.|
 | Summary| Hot||
 | SummaryField| null |Fields are excluded from deserialization.|
+| DatesAvailable | 8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 ||
+| TemperatureRanges | Cold, 20<br>Hot, 40||
+| SummaryWords | Cool<br>Windy<br>Humid ||
 
 Comments or trailing commas in the JSON trigger exceptions.
-
-## Serialize to UTF-8
-
-Call [JsonSerializer.SerializeToUtf8Bytes)](xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*):
-
-```csharp
-string json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
-```
-
-The JSON output is the same as shown in the [How to serialize](#how-to-serialize) section earlier in this article.
-
-Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to or from strings (UTF-16).
 
 ## Serialize to formatted JSON
 

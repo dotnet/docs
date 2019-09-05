@@ -1,6 +1,6 @@
 ---
 title: "Unmanaged types - C# reference"
-ms.date: 09/04/2019
+ms.date: 09/06/2019
 helpviewer_keywords: 
   - "unmanaged type [C#]"
 ---
@@ -19,7 +19,7 @@ Beginning with C# 8.0, a *constructed* struct type that contains fields of unman
 
 [!code-csharp[unmanaged constructed types](~/samples/csharp/language-reference/builtin-types/UnmanagedTypes.cs#ProgramExample)]
 
-With the definition of the `Coords<T>` type given in the preceding example, the `Coords<object>` type is not an unmanaged type because it has the fields of the `object` type, which is not unmanaged. If you want *any* constructed type to be an unmanaged type, use the `unmanaged` constraint in the definition of the generic type:
+A generic struct may be the source of both unmanaged and not unmanaged constructed types. The preceding example defines a generic struct `Coords<T>` and presents the examples of unmanaged constructed types. The example of not an unmanaged type is `Coords<object>`. It's not unmanaged because it has the fields of the `object` type, which is not unmanaged. If you want *any* constructed type to be an unmanaged type, use the `unmanaged` constraint in the definition of a generic struct:
 
 [!code-csharp[unmanaged constraint in type definition](~/samples/csharp/language-reference/builtin-types/UnmanagedTypes.cs#AlwaysUnmanaged)]
 

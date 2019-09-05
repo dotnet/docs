@@ -1,25 +1,25 @@
 ---
-title: Cross-service communication
+title: Microservice-to-microservice communication
 description: Learn how back-end cloud-native microservices communicate with other back-end microservices.
 author: robvet
 ms.date: 08/31/2019
 ---
 
-# Cross-service communication
+# Microservice-to-microservice communication
 
 Moving from the front-end client, we now address backend microservice-to-microservice communication.
 
-When constructing a cloud native application, you'll want to be sensitive to how backend services communicate with each other. Ideally, the less cross-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete an operation.
+When constructing a cloud native application, you'll want to be sensitive to how backend services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete an operation.
 
 There are several widely accepted approaches to implementing cross-service communication. The *type of communication interaction* will often determine the best approach.
 
 Consider the following interaction types:
 
-- *Query* – when a calling microservice requires a response from a called microservice, such as, "Hey, give me the number of customer orders for a given date range."
+- *Query* – when a calling microservice requires a response from a called microservice, such as, "Hey, give me the buyer information for a given customer Id."
 
 - *Command* – when the calling microservice needs another microservice to execute an action but doesn't require a response, such as, "Hey, just ship this order."
 
-- *Event* – when one microservice, called the publisher, raises an event of a state change or notification that an action has occurred. Other microservices, called subscribers, who are interested, can react to the event appropriately. The publisher and the subscribers aren't aware of each other.
+- *Event* – when one microservice, called the publisher, raises an event that state has changed or an action has occurred. Other microservices, called subscribers, who are interested, can react to the event appropriately. The publisher and the subscribers aren't aware of each other.
 
 Microservice systems typically use a combination of these interaction types when executing operations that require cross-service interaction. Let's take a close look at each and how you might implement them.
 
@@ -36,7 +36,7 @@ One option for implementing this scenario is for the calling back-end microservi
 
 **Figure 4-7**. Direct HTTP communication
 
-While direct HTTP calls between microservices are relatively simple to implement, care should be taken to minimize this practice. Because what were once self-contained, independent services, able to evolve independently and deploy frequently, now become coupled to each other. As coupling among microservices increase, their architectural benefits diminish.
+While direct HTTP calls between microservices are relatively simple to implement, care should be taken to minimize this practice. To start, these calls are always *synchronous* and will block the operation until a result is returned or the request times outs. What were once self-contained, independent services, able to evolve independently and deploy frequently, now become coupled to each other. As coupling among microservices increase, their architectural benefits diminish.
 
 Executing an infrequent request that makes a single direct HTTP call to another microservice might be acceptable for some systems. However, high-volume calls that invoke direct HTTP calls to multiple microservices aren't advisable. They can increase latency and negatively impact the performance, scalability, and availability of your system. Even worse, a long series of direct HTTP communication can lead to deep and complex chains of synchronous microservices calls, shown in Figure 4-8:
 
@@ -50,17 +50,17 @@ The large degree of coupling in the previous image suggests the services weren't
 
 ### Materialized View pattern
 
-A popular option for reducing microservice coupling is implementing the [Materialized View pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view). With this pattern, a microservice stores its own local, denormalized copy of the data that's owned by other services. Instead of the Shopping Basket calling the Product Catalog and Pricing microservices, it has its own local copy of that data. This pattern removes unnecessary coupling while improving response time and reliability. We explore this pattern and other data concerns in Chapter 5.
+A popular option for removing microservice coupling is the [Materialized View pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view). With this pattern, a microservice stores its own local, denormalized copy of data that's owned by other services. Instead of the Shopping Basket microservice querying the Product Catalog and Pricing microservices, it maintains its own local copy of that data. This pattern eliminates unnecessary coupling and improves reliability and response time. The entire opeation executes inside a single process. We explore this pattern and other data concerns in Chapter 5.
 
 ### Service Aggregator Pattern
 
-Another option for such a workflow orchestration is a [Aggregator Service](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-9.
+Another option for eliminiating microservice-to-micrservice coupling is an [Aggregator microservice](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-9. 
 
 ![Aggregator service](./media/aggregator-service.png)
 
 **Figure 4-9**. Aggregator microservice
 
-The Aggregator microservice isolates an operation that makes calls to multiple backend microservices, centralizing its logic into an orchestration. The purple checkout aggregator microservice in the previous figure orchestrates the workflow for the Checkout operation. It includes calls to several backend microservices in a sequenced order. Data from the workflow is aggregated and returned to the caller.
+The pattern isolates an operation that makes calls to multiple backend microservices, centralizing its logic into a specialized microservice.  The purple checkout aggregator microservice in the previous figure orchestrates the workflow for the Checkout operation. It includes calls to several backend microservices in a sequenced order. Data from the workflow is aggregated and returned to the caller. While it still implements direct HTTP calls, the aggregator microservices reduces direct dependencies among back-end microservices. 
 
 ### Request/Reply Pattern
 
@@ -125,7 +125,7 @@ Two more enterprise features are partitioning and sessions. A conventional Servi
 
 [Service Bus Sessions](https://codingcanvas.com/azure-service-bus-sessions/) provide a way to group related messages. Imagine a workflow scenario where messages must be processed together and the operation completed at the end. To take advantage, sessions must be explicitly enabled for the queue and each related messaged must contain the same session ID.
 
-However, there are some important caveats: Service Bus queues size is limited to 80 GB, which is much smaller than what's available from store queues. Additionally, Service Bus queues are more expensive incurring a base cost and charge per operation.
+However, there are some important caveats: Service Bus queues size is limited to 80 GB, which is much smaller than what's available from store queues. Additionally, Service Bus queues incur a base cost and charge per operation.
 
 Figure 4-13 outlines the high-level architecture of a Service Bus queue.
 
@@ -136,7 +136,7 @@ In the previous figure, note the point-to-point relationship. Two instances of t
 
 ## Events
 
-Message queuing is an effective way to implement communication where a producer can asynchronously send a consumer a message. However, what happens when *many different consumers* are interested in the same message? A dedicated message queue for each consumer wouldn't scale well and could get expensive. 
+Message queuing is an effective way to implement communication where a producer can asynchronously send a consumer a message. However, what happens when *many different consumers* are interested in the same message? A dedicated message queue for each consumer wouldn't scale well and would become difficult to manage. 
 
 To address this scenario, we move to the third type of message interaction, the *event*. One microservice announces that an action had occurred. Other microservices, if interested, react to the action, or event. 
 

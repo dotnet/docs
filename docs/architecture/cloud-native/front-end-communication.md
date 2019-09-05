@@ -1,8 +1,8 @@
 ---
 title: Front-end client communication
-description: Learn how front-end clients communicate with cloud-native applications
+description: Learn how front-end clients communicate with cloud-native systems
 author: robvet
-ms.date: 08/31/2019
+ms.date: 09/04/2019
 ---
 
 # Front-end client communication
@@ -15,7 +15,7 @@ To keep things simple, a front-end client could *directly communicate* with the 
 
 ![Direct client to service communication](./media/direct-client-to-service-communication.png)
 
-**Figure 4-2**. Direct client to service communication
+**Figure 4-2.** Direct client to service communication
 
 With this approach, each microservice has a public endpoint that is accessible by the front-end client. In a production environment, you'd go a step further and place a load balancer in front of your microservices, routing traffic proportionately.
 
@@ -76,7 +76,7 @@ Consider Ocelot for simple cloud-native applications that don’t require the ri
 For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a rich developer and administrative experience. API Management is shown in Figure 4-5. 
 
 ![Azure API Management](./media/azure-api-management.png)
-**Figure 4-5**. Azure API Management
+**Figure 4-5.** Azure API Management
 
 To start, API Management exposes a gateway server that allows controlled access to back-end services based upon configurable rules and policies. These services can be in the Azure cloud, your on-prem data center, or other public clouds. API keys and JWT tokens determine who can do what. All traffic is logged for analytical purposes. 
 
@@ -102,7 +102,7 @@ Here are examples of how policies can affect the behavior of your cloud-native s
 
 Azure API Management can expose back-end services that are hosted anywhere – in the cloud or your data center. For legacy services that you may expose in your cloud-native systems, it supports both REST and SOAP APIs. Even other Azure services can be exposed through API Management. You could place a managed API on top of an Azure backing service like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/). Azure API Management doesn't include built-in load-balancing support and should be used in conjunction with a load-balancing service.
 
-Azure API Management is available across [four different pricing tiers](https://azure.microsoft.com/pricing/details/api-management/):
+Azure API Management is available across [four different tiers](https://azure.microsoft.com/pricing/details/api-management/):
 
 - Developer
 
@@ -132,13 +132,13 @@ The consumption tier uses the same underlying service API Management components,
 
 - Automatic scaling.
 
-- Pricing based on actual usage. 
+- Cost is based on actual usage. 
   
-The new pricing tier is a great choice for cloud-native systems that expose serverless resources as APIs. 
+The new consumption tier is a great choice for cloud-native systems that expose serverless resources as APIs. 
 
-> At the time of writing, the consumption pricing tier is in preview in the Azure cloud.
+> At the time of writing, the consumption tier is in preview in the Azure cloud.
 
-## SignalR Services
+## Real-time communication
 
 Push and real-time communication are another option for front-end communication with cloud-native systems. Many applications, such as stock-tickers, dashboards, and job progress updates, require two-way communication across HTTP-based applications. These systems often come with high-frequency data flows and many concurrent connections between the client and server. Manually implementing real-time connectivity in your cloud-native systems would require complex infrastructure to ensure reliable messaging to connected clients. 
 
@@ -150,7 +150,7 @@ Figure 4-6 shows a set of HTTP Clients connecting to a Cloud-native application 
 
 ![Azure SignalR](./media/azure-signalr-service.png)
 
-**Figure 4-6**. Azure SignalR
+**Figure 4-6.** Azure SignalR
 
 Azure SignalR Service can be integrated with other Azure services opening up many possibilities for your cloud-native applications.
 

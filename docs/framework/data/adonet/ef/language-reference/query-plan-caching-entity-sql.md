@@ -44,4 +44,4 @@ Whenever an attempt to execute a query is made, the query pipeline looks up its 
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Overview](entity-sql-overview.md)

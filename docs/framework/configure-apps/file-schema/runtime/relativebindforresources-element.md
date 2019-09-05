@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<relativeBindForResources> Element
 Optimizes the probe for satellite assemblies.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<relativeBindForResources> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<relativeBindForResources>**  
   
 ## Syntax  
   

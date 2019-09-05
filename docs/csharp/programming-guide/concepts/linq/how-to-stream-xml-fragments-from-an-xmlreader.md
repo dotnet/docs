@@ -69,7 +69,7 @@ static void Main(string[] args)
   
  This example produces the following output:  
   
-```  
+```output  
 bbb  
 ccc  
 ```  

@@ -70,7 +70,7 @@ The following function types can be passed:
 
 - User-defined functions.
 
-Canonical functions (see [Canonical Functions](../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md) for more information) are specified as part of the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], and providers should supply implementations for canonical functions based on those specifications. Store functions are based on the specifications in the corresponding provider manifest. User defined functions are based on specifications in the SSDL.
+Canonical functions (see [Canonical Functions](./language-reference/canonical-functions.md) for more information) are specified as part of the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], and providers should supply implementations for canonical functions based on those specifications. Store functions are based on the specifications in the corresponding provider manifest. User defined functions are based on specifications in the SSDL.
 
 Also, functions having the NiladicFunction attribute have no arguments and should be translated without the parenthesis at the end.  That is, to *\<functionName>* instead of *\<functionName>()*.
 
@@ -114,4 +114,4 @@ When primitive types are referenced in output command trees, they are typically 
 
 ## See also
 
-- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)
+- [SQL Generation](sql-generation.md)

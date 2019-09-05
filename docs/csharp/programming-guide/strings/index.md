@@ -101,7 +101,7 @@ For more information on formatting .NET types see [Formatting Types in .NET](../
 ## Null Strings and Empty Strings  
  An empty string is an instance of a <xref:System.String?displayProperty=nameWithType> object that contains zero characters. Empty strings are used often in various programming scenarios to represent a blank text field. You can call methods on empty strings because they are valid <xref:System.String?displayProperty=nameWithType> objects. Empty strings are initialized as follows:  
   
-```  
+```csharp  
 string s = String.Empty;  
 ```  
   

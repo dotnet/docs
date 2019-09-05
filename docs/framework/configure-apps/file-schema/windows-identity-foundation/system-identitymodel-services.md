@@ -7,7 +7,8 @@ author: "BrucePerlerMS"
 # \<system.identityModel.services>
 Configuration section for authentication using the WS-Federation protocol.  
   
- \<system.identityModel.services>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.identityModel.services>**  
   
 ## Syntax  
   

@@ -9,11 +9,7 @@ One of the most important performance benefits LINQ to XML, as opposed to <xref:
 ## Statically Compiled Queries vs. XPath  
  The following example shows how to get the descendant elements with a specified name, and with an attribute with a specified value.  
   
- The following is the equivalent XPath expression:  
-  
-```  
-//Address[@Type='Shipping']  
-```  
+ The following is the equivalent XPath expression: `//Address[@Type='Shipping']`
   
 ```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
@@ -86,4 +82,3 @@ reader.Close();
 - It iterates through the nodes, appropriately selecting the nodes for the result set based on the evaluation of the expression.  
   
  This is significantly more than the work done by the corresponding LINQ to XML query. The specific performance difference varies for different types of queries, but in general LINQ to XML queries do less work, and therefore perform better, than evaluating XPath expressions using <xref:System.Xml.XmlDocument>.  
-  

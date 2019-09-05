@@ -7,7 +7,8 @@ author: "BrucePerlerMS"
 # \<system.identityModel>
 Provides configuration for enabling Windows Identity Foundation (WIF) options in applications.  
   
- \<system.identityModel>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.identityModel>**  
   
 ## Syntax  
   

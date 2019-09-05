@@ -45,9 +45,9 @@ Significant improvements in agility, portability, and control ultimately lead to
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) that automates the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology. The company works in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
-![](./media/image6.png)
+![Docker deploys containers at all layers of the hybrid cloud](./media/image6.png)
 
-> **Figure 4-6.** Docker deploys containers at all layers of the hybrid cloud
+**Figure 4-6.** Docker deploys containers at all layers of the hybrid cloud
 
 To someone familiar with virtual machines, containers might appear to be remarkably similar. A container runs an operating system, has a file system, and can be accessed over a network, just like a physical or virtual computer system. However, the technology and concepts behind containers are vastly different from virtual machines. From a developer point of view, a container must be treated more like a single process. In fact, a container has a single entry point for one process.
 
@@ -77,9 +77,9 @@ For Linux, multiple distros are available and supported in official .NET Docker 
 
 Figure 4-7 shows OS versions that you can target, depending on the app's version of the .NET Framework.
 
-![](./media/image7.png)
+![Operating systems to target based on .NET Framework version](./media/image7.png)
 
-> **Figure 4-7.** Operating systems to target based on .NET Framework version
+**Figure 4-7.** Operating systems to target based on .NET Framework version
 
 In migration scenarios for existing or legacy applications that are based on .NET Framework applications, the main dependencies are on Windows and IIS. Your only option is to use Docker images based on Windows Server Core and the .NET Framework.
 
@@ -132,9 +132,9 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 In previous sections, it’s been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.
 However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides an open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application’s needs, you should choose one or another Azure product.
 
-![](./media/image7.5.png)
+![The container ecosystem in Azure](./media/image7.5.png)
 
-> **Figure 4-7.5.** The container ecosystem in Azure
+**Figure 4-7.5.** The container ecosystem in Azure
 
 From the container ecosystem in Azure, the following products supporting containers that are considered infrastructure:
 - **Azure Container Instances (ACI)**

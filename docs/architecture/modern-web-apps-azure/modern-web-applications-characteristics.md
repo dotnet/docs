@@ -19,9 +19,9 @@ ASP.NET Core is optimized for modern web applications and cloud-based hosting sc
 
 This guidance includes a reference application, _eShopOnWeb_, that demonstrates some of the principles and recommendations. The application is a simple online store which supports browsing through a catalog of shirts, coffee mugs, and other marketing items. The reference application is deliberately simple in order to make it easy to understand.
 
-**Figure 2-1.** eShopOnWeb
+![eShopOnWeb](./media/image2-1.png)
 
-![](./media/image2-1.png)
+**Figure 2-1.** eShopOnWeb
 
 > ### Reference Application
 >

@@ -7,10 +7,11 @@ author: "BrucePerlerMS"
 # \<customCookieHandler>
 Sets the custom cookie handler type. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Custom". The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
   
- \<system.identityModel.services>  
-\<federationConfiguration>  
-\<cookieHandler>  
-\<customCookieHandler>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cookieHandler>**](cookiehandler.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<customCookieHandler>**  
   
 ## Syntax  
   

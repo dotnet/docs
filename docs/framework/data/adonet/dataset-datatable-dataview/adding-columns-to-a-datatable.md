@@ -38,7 +38,7 @@ workTable.Columns.Add("CustFName", typeof(String));
 workTable.Columns.Add("Purchases", typeof(Double));  
 ```  
   
- In the example, notice that the properties for the **CustID** column are set to not allow **DBNull** values and to constrain values to be unique. However, if you define the **CustID** column as the primary key column of the table, the **AllowDBNull** property will automatically be set to **false** and the **Unique** property will automatically be set to **true**. For more information, see [Defining Primary Keys](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/defining-primary-keys.md).  
+ In the example, notice that the properties for the **CustID** column are set to not allow **DBNull** values and to constrain values to be unique. However, if you define the **CustID** column as the primary key column of the table, the **AllowDBNull** property will automatically be set to **false** and the **Unique** property will automatically be set to **true**. For more information, see [Defining Primary Keys](defining-primary-keys.md).  
   
 > [!CAUTION]
 > If a column name is not supplied for a column, the column is given an incremental default name of Column*N,* starting with "Column1", when it is added to the **DataColumnCollection**. We recommend that you avoid the naming convention of "Column*N*" when you supply a column name, because the name you supply may conflict with an existing default column name in the **DataColumnCollection**. If the supplied name already exists, an exception is thrown.  
@@ -50,6 +50,6 @@ workTable.Columns.Add("Purchases", typeof(Double));
 - <xref:System.Data.DataColumn>
 - <xref:System.Data.DataColumnCollection>
 - <xref:System.Data.DataTable>
-- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)
-- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
+- [DataTable Schema Definition](datatable-schema-definition.md)
+- [DataTables](datatables.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

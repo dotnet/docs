@@ -11,7 +11,7 @@ One approach to processing a text file is to write an extension method that stre
 ## Example  
  The following text file, People.txt, is the source for this example.  
   
-```  
+```text  
 #This is a comment  
 1,Tai,Yee,Writer  
 2,Nikolay,Grachev,Programmer  

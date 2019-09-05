@@ -77,17 +77,17 @@ OutOfStateCustomers (CustomerID , CompanyName, Phone)
 ```  
   
 ## In This Section  
- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
+ [Mapping XML Schema (XSD) Constraints to DataSet Constraints](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Describes the XML Schema elements used to create unique and foreign key constraints in a `DataSet`.  
   
- [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)  
+ [Generating DataSet Relations from XML Schema (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)  
  Describes the XML Schema elements used to create relations between table columns in a `DataSet`.  
   
- [XML Schema Constraints and Relationships](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/xml-schema-constraints-and-relationships.md)  
+ [XML Schema Constraints and Relationships](xml-schema-constraints-and-relationships.md)  
  Describes how relations are created implicitly when using XML Schema elements to create constraints in a `DataSet`.  
   
 ## Related Sections  
- [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)  
+ [Using XML in a DataSet](using-xml-in-a-dataset.md)  
  Describes how to load and persist the relational structure and data in a `DataSet` as XML data.  
   
 ## See also

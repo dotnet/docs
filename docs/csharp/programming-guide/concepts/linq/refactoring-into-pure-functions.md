@@ -46,7 +46,7 @@ public class Program
   
  This code produces the following output:  
   
-```  
+```output  
 StringOne-StringTwo  
 ```  
   

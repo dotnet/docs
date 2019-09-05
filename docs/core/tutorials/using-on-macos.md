@@ -50,7 +50,7 @@ The *library.csproj* file contains the following information:
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -66,7 +66,7 @@ This adds `Newtonsoft.Json` and its dependencies to the library project. Alterna
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+  <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
 </ItemGroup>
 ```
 

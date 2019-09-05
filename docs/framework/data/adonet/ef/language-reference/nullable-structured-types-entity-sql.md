@@ -84,4 +84,4 @@ A `null` instance of a structured type is an instance that does not exist. This 
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Overview](entity-sql-overview.md)

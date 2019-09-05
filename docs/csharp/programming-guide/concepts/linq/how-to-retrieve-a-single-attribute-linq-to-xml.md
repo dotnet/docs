@@ -31,7 +31,7 @@ foreach (XElement el in elList)
   
  This code produces the following output:  
   
-```  
+```output  
 home  
 work  
 ```  
@@ -57,7 +57,7 @@ foreach (XElement el in elList)
   
  This code produces the following output:  
   
-```  
+```output  
 home  
 work  
 ```  
@@ -86,7 +86,7 @@ foreach (XElement el in elList)
   
  This code produces the following output:  
   
-```  
+```output  
 home  
 work  
 ```  

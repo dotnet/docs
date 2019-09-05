@@ -32,7 +32,7 @@ Console.WriteLine(grandChild3);
   
  This code produces the following output:  
   
-```  
+```output  
 GC3 Value  
 ```  
   
@@ -63,6 +63,6 @@ Console.WriteLine(grandChild3);
   
  This code produces the following output:  
   
-```  
+```output  
 GC3 Value  
 ```  

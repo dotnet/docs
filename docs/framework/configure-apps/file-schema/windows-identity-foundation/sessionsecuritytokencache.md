@@ -7,10 +7,11 @@ author: "BrucePerlerMS"
 # \<sessionSecurityTokenCache>
 Registers a cache for session tokens with a service or a security token handler collection.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<caches>  
-\<sessionSecurityTokenCache>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<caches>**](caches.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<sessionSecurityTokenCache>**  
   
 ## Syntax  
   

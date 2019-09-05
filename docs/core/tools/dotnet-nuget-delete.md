@@ -18,7 +18,7 @@ ms.date: 06/26/2019
 
 ## Synopsis
 
-```
+```console
 dotnet nuget delete [<PACKAGE_NAME> <PACKAGE_VERSION>] [--force-english-output] [--interactive] [-k|--api-key] [--no-service-endpoint]
     [--non-interactive] [-s|--source]
 dotnet nuget delete [-h|--help]

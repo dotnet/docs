@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<generatePublisherEvidence> Element
 Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> evidence for code access security (CAS).  
   
- \<configuration>  
-\<runtime>  
-\<generatePublisherEvidence>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<generatePublisherEvidence>**  
   
 ## Syntax  
   

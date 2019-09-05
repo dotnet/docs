@@ -15,10 +15,10 @@ ms.author: "ronpet"
 # \<dependentAssembly> Element
 Encapsulates binding policy and assembly location for each assembly. Use one `dependentAssembly` element for each assembly.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<dependentAssembly>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dependentAssembly>**  
   
 ## Syntax  
   

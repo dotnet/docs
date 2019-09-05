@@ -65,4 +65,4 @@ The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp]
 
 If you are using .NET Core or .NET Framework via the .NET SDK, you simply need to install the .NET SDK on your build server. It has everything you need.
 
-If you are using .NET Framework and you are **not** using the .NET SDK, then you will need to install the [Visual Studio Build Tools SKU](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) onto your Windows Server. In the installer, select **.NET desktop build tools** and then select the **F# compiler** component on the right-hand side of the installer menu.
+If you are using .NET Framework and you are **not** using the .NET SDK, then you will need to install the [Visual Studio Build Tools SKU](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) onto your Windows Server. In the installer, select **.NET desktop build tools** and then select the **F# compiler** component on the right side of the installer menu.

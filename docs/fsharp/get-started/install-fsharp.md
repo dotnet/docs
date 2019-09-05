@@ -1,7 +1,7 @@
 ---
 title: Install F#
 description: Learn how to install F# based on your environment.
-ms.date: 08/28/2018
+ms.date: 09/05/2019
 ---
 
 # Install F\#
@@ -60,3 +60,9 @@ You will then need [Visual Studio Code](https://code.visualstudio.com) installed
 Next, click the Extensions icon and search for "Ionide":
 
 The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp). However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) to get [FAKE](https://fsharp.github.io/FAKE/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support. FAKE and Paket are additional F# community tools for building projects and managing dependencies, respectively.
+
+## Install F# on a Build Server
+
+If you are using .NET Core or .NET Framework via the .NET SDK, you simply need to install the .NET SDK on your build server. It has everything you need.
+
+If you are using .NET Framework and you are **not** using the .NET SDK, then you will need to install the [Visual Studio Build Tools SKU](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) onto your Windows Server. In the installer, select **.NET desktop build tools** and then select the **F# compiler** component on the right-hand side of the installer menu.

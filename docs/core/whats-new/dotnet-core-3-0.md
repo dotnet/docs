@@ -9,16 +9,17 @@ ms.author: adegeo
 ms.date: 08/21/2019
 ---
 
-# What's new in .NET Core 3.0 (Preview 8)
+# What's new in .NET Core 3.0 (Preview 9)
 
-This article describes what is new in .NET Core 3.0 (through preview 8). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
+This article describes what is new in .NET Core 3.0 (through preview 9). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
 
-.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use the [latest release of Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+preview), or Visual Studio Code with the OmniSharp extension.
+.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use [Visual Studio 2019 16.3 Preview 3](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+preview), [Visual Studio for Mac 8.3](https://docs.microsoft.com/visualstudio/mac/install-preview?view=vsmac-2019), or [Visual Studio Code](https://code.visualstudio.com/) with the **C# extension**.
 
-[Download and get started with .NET Core 3.0 preview 8](https://aka.ms/netcore3download) right now on Windows, macOS, or Linux.
+[Download and get started with .NET Core 3.0 preview 9](https://aka.ms/netcore3download) right now on Windows, macOS, or Linux.
 
 For more information about each preview release, see the following announcements:
 
+- [.NET Core 3.0 Preview 9 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-9/)
 - [.NET Core 3.0 Preview 8 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-8/)
 - [.NET Core 3.0 Preview 7 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-7/)
 - [.NET Core 3.0 Preview 6 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-6/)
@@ -30,9 +31,9 @@ For more information about each preview release, see the following announcements
 
 ## Production supported preview
 
-.NET Core Preview 8 is considered production ready by Microsoft and is fully supported. Starting with preview 7, releases will focus on polishing .NET Core 3.0 instead of adding new features. For more information about what has changed in preview 8, see the [preview 8 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-8/).
+.NET Core Preview 9 is considered production ready by Microsoft and is fully supported. Starting with preview 7, releases will focus on polishing .NET Core 3.0 instead of adding new features. For more information about what has changed in preview 9, see the [preview 9 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-9/).
 
-If you're using a previous preview release, you must move to Preview 8 for continued "Go Live" support.
+If you're using a previous preview release, you must move to Preview 9 for continued "Go Live" support.
 
 ## .NET Core SDK Windows Installer
 

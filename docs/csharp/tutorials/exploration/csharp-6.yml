@@ -84,7 +84,12 @@ items:
     You're not limited to a single variable in these expressions. Let's start with a new example and modify it to demonstrate other expressions you can use with string interpolation. Paste the following code into the interactive window in the `Main` method:
 
     [!code-csharp[Phrases](../../../../samples/csharp/tutorials/exploration/csharp6-finished/Program.cs#Phrases)]  
-    
+    That uses LINQ, so you'll need to add the following using statement to the top of the interactive windwo:
+
+    ```csharp
+    using System.Linq;
+    ```
+
     You can remove the local variable `average` and perform that calculation as part of the interpolated string expression. Replace the last two lines with the following:
 
     ```csharp

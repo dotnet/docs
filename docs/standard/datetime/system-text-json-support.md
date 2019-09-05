@@ -119,8 +119,8 @@ If you want to write a custom <xref:System.DateTime> or <xref:System.DateTimeOff
 you can format your custom representation to a <xref:System.String>, `ReadOnlySpan<Byte>`, `ReadOnlySpan<Char>`, or <xref:System.Text.Json.JsonEncodedText>,
 then pass it to the corresponding <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue> method.
 
-The following example shows how the writer writes <xref:System.DateTime> values by default, and how a custom <xref:System.DateTime> format is created with
-<xref:System.DateTime.ToString(System.String,System.IFormatProvider)>, then written with the <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.String)> method:
+The following example shows how a custom <xref:System.DateTime> format can be created with <xref:System.DateTime.ToString(System.String,System.IFormatProvider)>,
+then written with the <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.String)> method:
 
 [!code-csharp[example-custom-writing-with-utf8jsonwriter](~/samples/snippets/standard/datetime/json/custom-writing-with-utf8jsonwriter.cs)]
 
@@ -130,9 +130,8 @@ If you want to read a custom <xref:System.DateTime> or <xref:System.DateTimeOffs
 you can get the value of the current JSON token as a <xref:System.String> using <xref:System.Text.Json.Utf8JsonReader.GetString>, then parse the value
 using custom logic.
 
-The following example shows how, after failing to parse a custom <xref:System.DateTimeOffset> text representation with
-<xref:System.Text.Json.Utf8JsonReader.GetDateTimeOffset>, the representation is retrieved using
-<xref:System.Text.Json.Utf8JsonReader.GetString>, then parsed using <xref:System.DateTimeOffset.ParseExact(System.String, System.String, System.Globalization.IFormatProvider)>:
+The following example shows how a custom <xref:System.DateTimeOffset> text representation can be retrieved using <xref:System.Text.Json.Utf8JsonReader.GetString>,
+then parsed using <xref:System.DateTimeOffset.ParseExact(System.String, System.String, System.Globalization.IFormatProvider)>:
 
 [!code-csharp[example-custom-reading-with-utf8jsonreader](~/samples/snippets/standard/datetime/json/custom-reading-with-utf8jsonreader.cs)]
 

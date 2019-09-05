@@ -24,7 +24,7 @@ It is possible to map these RPC types fairly naturally to existing gRPC concepts
 | OneWay operation with Session | Client streaming |
 | Full Duplex Service | Bi-directional streaming |
 
-## Request/Reply
+## Request/reply
 
 For simple request/reply methods that take and return small amounts of data, use the simplest gRPC pattern, the unary RPC.
 
@@ -55,7 +55,7 @@ public async Task ShowThing(int thingId)
 
 As you can see, implementing a gRPC unary RPC service method is very similar to implementing a WCF operation, except that with gRPC you override a base class method instead of implementing an interface. Note that on the server, gRPC base methods always return a `Task<T>`, although the client provides both async and blocking methods to call the service.
 
-## WCF Duplex, one-way to client
+## WCF duplex, one-way to client
 
 WCF applications (with certain bindings) can create a persistent connection between client and server, and the server can asynchronously send data to the client until the connection is closed, using a *callback interface*.
 
@@ -109,7 +109,7 @@ A WCF duplex service uses a client callback interface that can have multiple met
 
 In WCF, the one-way method called from the client returns immediately, but the `ServiceContract` class with the session is kept alive until the connection is terminated. In gRPC, the Task returned by the implementation method should not complete until the connection is closed.
 
-## WCF One-Way Operations and gRPC Client Streaming
+## WCF one-way operations and gRPC client streaming
 
 WCF provides One-Way operations (marked with `[OperationContract(IsOneWay = true)]`) that the client can call without waiting for a response. gRPC service methods always return a response, even if it is empty, and the client should always `await` that response. For "fire-and-forget" style messaging in gRPC, you can create a Client Streaming service.
 
@@ -143,7 +143,7 @@ public class ThingLogService : Protos.ThingLog.ThingLogBase
 }
 ```
 
-### ThingLog Client example
+### ThingLog client example
 
 ```csharp
 public class ThingLogger : IAsyncDisposable
@@ -176,9 +176,9 @@ public class ThingLogger : IAsyncDisposable
 
 Again, client streaming RPCs can be used for fire-and-forget messaging as shown above, but also for sending very large datasets to the server. The same caveat regarding performance applies: you should used `repeated` fields in regular messages for smaller datasets.
 
-## WCF Full Duplex
+## WCF full duplex services
 
-WCF Duplex binding supports multiple one-way operations on both the service interface and the client callback interface, allowing ongoing conversations between client and server. gRPC supports something similar with Bi-directional Streaming RPCs, where both parameters are marked with the `stream` modifier.
+WCF duplex binding supports multiple one-way operations on both the service interface and the client callback interface, allowing ongoing conversations between client and server. gRPC supports something similar with Bi-directional Streaming RPCs, where both parameters are marked with the `stream` modifier.
 
 ### chat.proto
 

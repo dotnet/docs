@@ -1,11 +1,11 @@
 ---
-title: Authentication and authorization - gRPC for WCF developers
+title: gRPC authentication and authorization - gRPC for WCF developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Authentication and authorization
+# gRPC authentication and authorization
 
 gRPC authentication works on two levels. Call-level authentication is usually handled using tokens which are applied in metadata when the call is made. Channel-level authentication adds Client Certificate authentication which is applied at the connection level, and can also include call-level authentication credentials to be applied to every call on the channel automatically. You can use either or both of these mechanisms to secure your service.
 

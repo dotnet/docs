@@ -1,11 +1,11 @@
 ---
-title: Client libraries - gRPC for WCF Developers
+title: Create gRPC client libraries - gRPC for WCF Developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Client libraries
+# Create gRPC client libraries
 
 It is not strictly necessary to distribute client libraries for a gPRC application. You can create a shared library of `.proto` files within your organization, and other teams can use those to generate client code in their own projects. But if you have a private NuGet repository, and many other teams are using .NET Core, creating and publishing client NuGet packages as part of your service project may be the best way of sharing and promoting your service.
 

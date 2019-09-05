@@ -4,43 +4,45 @@
   - name: Introduction
     href: introduction.md
     items:
-    - name: Distributed Applications, Microservices, etc.
+    - name: Distributed applications, microservices, etc.
       href: distributed-applications.md
-    - name: Remote Procedure Calls
+    - name: Remote procedure calls
       href: remote-procedure-calls.md
-    - name: WCF In A Nutshell
+    - name: WCF in a nutshell
       href: wcf-in-a-nutshell.md
-    - name: gRPC In A Nutshell
+    - name: gRPC in a nutshell
       href: grpc-in-a-nutshell.md
   - name: Overview of gRPC
     href: grpc-overview.md
     items:
-    - name: Approach
+    - name: How gRPC approaches RPC
       href: approach.md
     - name: Interface Definition Language
       href: interface-definition-language.md
     - name: Network protocols
       href: network-protocols.md
-    - name: Why gRPC
+    - name: WCF bindings and transports
+      href: wcf-bindings.md
+    - name: Why gRPC is recommended for WCF developers
       href: Why-grpc.md
   - name: Protocol Buffers
     href: protocol-buffers.md
     items:
-    - name: Messages
+    - name: Protobuf messages
       href: protobuf-messages.md
-    - name: Data Types
+    - name: Protobuf scalar data types
       href: protobuf-data-types.md
-    - name: Nested Types
+    - name: Protobuf nested types
       href: protobuf-nested-types.md
-    - name: Repeated
+    - name: Repeated fields for lists and arrays
       href: protobuf-repeated.md
-    - name: Reserved
+    - name: Protobuf reserved fields
       href: protobuf-reserved.md
-    - name: Any and OneOf
+    - name: Protobuf Any and OneOf fields for variant types
       href: protobuf-any-oneof.md
-    - name: Enumerations
+    - name: Protobuf enumerations
       href: protobuf-enums.md
-    - name: Maps
+    - name: Protobuf maps for dictionaries
       href: protobuf-maps.md
   - name: Comparing WCF services to gRPC
     href: comparing-wcf-services-to-grpc.md
@@ -49,27 +51,27 @@
       href: wcf-endpoints-and-grpc-methods.md
     - name: Types of RPC
       href: types-of-rpc.md
-  - name: Converting a WCF solution to gRPC
+  - name: Migrating a WCF solution to gRPC
     href: migrating-wcf-to-grpc.md
     items:
-    - name: Create a gRPC project
+    - name: Create a new ASP.NET Core gRPC project
       href: create-grpc-project.md
-    - name: Migrating request-reply services
+    - name: Migrate a WCF request-reply service to gRPC
       href: migrating-request-reply.md
-    - name: Migrating duplex services
+    - name: Migrate WCF duplex services to gRPC
       href: migrating-duplex-services.md
-    - name: Streaming vs Repeated
+    - name: gRPC streaming services vs repeated fields
       href: streaming-vs-repeated.md
     - name: Client libraries
       href: client-libraries.md
-  - name: Authentication
+  - name: gRPC authentication and authorization
     href: authentication.md
     items:
     - name: Call credentials
       href: call-credentials.md
     - name: Channel credentials
       href: channel-credentials.md
-  - name: gRPC in Production
+  - name: gRPC in production
     href: grpc-in-production.md
     items:
     - name: Self-hosted applications

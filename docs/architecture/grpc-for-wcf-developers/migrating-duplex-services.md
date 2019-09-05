@@ -1,11 +1,11 @@
 ---
-title: Migrating duplex services to gRPC - gRPC for WCF Developers
+title: Migrate WCF duplex services to gRPC - gRPC for WCF Developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Duplex services
+# Migrate WCF duplex services to gRPC
 
 There are multiple ways to use Duplex services in WCF. Some services are initiated by the client and then stream data from the server; other "Full Duplex" services might involve more ongoing two-way communication like the classic "Calculator" example from the WCF documentation. This chapter will take two possible WCF "Stock Ticker" implementations and migrate them to gRPC, one using a Server streaming RPC, and one a Bi-directional Streaming RPC.
 

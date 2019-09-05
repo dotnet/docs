@@ -1,11 +1,11 @@
 ---
-title: Data types - gRPC for WCF Developers
+title: Protobuf scalar data types - gRPC for WCF Developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Scalar data types
+# Protobuf scalar data types
 
 Protobuf supports a range of native scalar value types. This table lists them all with their equivalent C# type.
 

@@ -1,11 +1,11 @@
 ---
-title: Migrating from WCF to gRPC - gRPC for WCF Developers
+title: Migrate a WCF solution to gRPC - gRPC for WCF Developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Migrating from WCF to gRPC
+# Migrate a WCF solution to gRPC
 
 This chapter will look at how to convert different types of WCF service to the gRPC equivalent.
 

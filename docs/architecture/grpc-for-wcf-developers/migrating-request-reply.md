@@ -1,11 +1,11 @@
 ---
-title: Migrating a request-reply service to gRPC - gRPC for WCF Developers
+title: Migrate a WCF request-reply service to gRPC - gRPC for WCF Developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Migrating a request-reply service to gRPC
+# Migrate a WCF request-reply service to gRPC
 
 The TraderSys solution includes a simple Request-Reply Portfolio service to download a single portfolio, or all portfolios for a given Trader. The service is defined in the `interface IPortfolioService` with a `ServiceContract` attribute:
 

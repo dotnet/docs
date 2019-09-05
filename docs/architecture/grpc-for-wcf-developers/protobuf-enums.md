@@ -1,11 +1,11 @@
 ---
-title: Enumerations - gRPC for WCF Developers
+title: Protobuf enumerations - gRPC for WCF Developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Enumerations
+# Protobuf enumerations
 
 Protobuf supports enumerations and compiles them to C# `enum` types. Because Protobuf is designed for use with a variety of languages, the naming conventions for enumerations are different from what you might be used to with C#, but the code generator is clever and converts the names to traditional C# case: if the Pascal-case equivalent of the field name starts with the enumeration name, then it is removed.
 

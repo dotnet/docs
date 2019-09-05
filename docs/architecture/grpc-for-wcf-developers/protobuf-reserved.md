@@ -1,11 +1,11 @@
 ---
-title: Reserved fields - gRPC for WCF Developers
+title: Protobuf reserved fields - gRPC for WCF Developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Reserved fields
+# Protobuf reserved fields
 
 Protobuf's backward-compatibility guarantees rest on field numbers always representing the same data item. If a field is removed from a message in a new version of the service, that field number should never be reused. This can be enforced using the `reserved` keyword.
 

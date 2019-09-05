@@ -1,11 +1,11 @@
 ---
-title: Approach - gRPC for WCF Developers
+title: How gRPC approaches RPC - gRPC for WCF Developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Approach
+# How gRPC approaches RPC
 
 The following table sets out how the key features of WCF relate to gRPC and where you can find more detailed explanations in the rest of the Book.
 

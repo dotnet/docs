@@ -1,6 +1,6 @@
 ---
-title: Define XAML resources for WPF - .NET Core
-description: Learn about XAML resources in WPF for .NET Core. Examples on how to define XAML resources are provided. This article is part of the .NET Core Desktop Guide.
+title: Define XAML resources for WPF - .NET Core Desktop Guide
+description: Learn about XAML resources in WPF for .NET Core. Understand the types of XAML resources and learn how to define XAML resources.
 author: thraka
 ms.author: adegeo
 ms.date: 08/21/2019
@@ -8,10 +8,10 @@ ms.date: 08/21/2019
 
 # Overview of XAML Resources
 
-A resource is an object that can be reused in different places in your application. Examples of resources include brushes and styles. This overview describes how to use resources in Extensible Application Markup Language (XAML). You can also create and access resources by using code, or interchangeably between code and XAML.
+A resource is an object that can be reused in different places in your application. Examples of resources include brushes and styles. This overview describes how to use resources in Extensible Application Markup Language (XAML). You can also create and access resources by using code.
 
 > [!NOTE]
-> The resources described in this article are different from resource files added to an application, such as content, data, or embedded files, which are collectively referred to as *application resources*.
+> XAML resources described in this article are different from *application resources* which are generally made up files added to an application, such as content, data, or embedded files.
 
 <!-- TODO: File redirect from docs\framework\wpf\advanced\xaml-resources.md -->
 
@@ -61,6 +61,8 @@ Static resource references work best for the following circumstances:
 - You want to change the underlying resource for all consumers, or you want to maintain separate writable instances for each consumer by using the [x:Shared Attribute](../../framework/xaml-services/x-shared-attribute.md).
 
 ### Static resource lookup behavior
+
+The following describes the lookup process that automatically happens when a static resource is referenced by a property or element.
 
 01. The lookup process checks for the requested key within the resource dictionary defined by the element that sets the property.
 
@@ -124,11 +126,11 @@ Dynamic resource references have some notable restrictions. At least one of the 
 
 - The property being set must be a property on a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. That property must be backed by a <xref:System.Windows.DependencyProperty>.
 
-- The reference is for a value within a <xref:System.Windows.Style><xref:System.Windows.Setter>.
+- The reference is for a value within a `StyleSetter`.
 
 - The property being set must be a property on a <xref:System.Windows.Freezable> that is provided as a value of either a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> property, or a <xref:System.Windows.Setter> value.
 
-Because the property being set must be a <xref:System.Windows.DependencyProperty> or <xref:System.Windows.Freezable> property, most property changes can propagate to the UI because a property change (the changed dynamic resource value) is acknowledged by the property system. Most controls include logic that will force another layout of a control if a <xref:System.Windows.DependencyProperty> changes and that property might affect layout. However, not all properties that have a [DynamicResource Markup Extension](../../framework/wpf/advanced/dynamicresource-markup-extension.md) as their value are guaranteed to provide the value in such a way that they update in real time in the UI. That functionality still might vary depending on the property, as well as depending on the type that owns the property, or even the logical structure of your application.
+Because the property being set must be a <xref:System.Windows.DependencyProperty> or <xref:System.Windows.Freezable> property, most property changes can propagate to the UI because a property change (the changed dynamic resource value) is acknowledged by the property system. Most controls include logic that will force another layout of a control if a <xref:System.Windows.DependencyProperty> changes and that property might affect layout. However, not all properties that have a [DynamicResource Markup Extension](../../framework/wpf/advanced/dynamicresource-markup-extension.md) as their value are guaranteed to provide real time updates in the UI. That functionality still might vary depending on the property, as well as depending on the type that owns the property, or even the logical structure of your application.
 
 ## Styles / DataTemplates / Implicit Keys
 
@@ -151,10 +153,10 @@ Implicit keys for styles do not apply on a control if <xref:System.Windows.Frame
 ## See also
 
 - <xref:System.Windows.ResourceDictionary>
-- [Application Resources](optimizing-performance-application-resources.md)
-- [Resources and Code](resources-and-code.md)
-- [Define and Reference a Resource](how-to-define-and-reference-a-resource.md)
-- [Application Management Overview](../app-development/application-management-overview.md)
-- [x:Type Markup Extension](../../xaml-services/x-type-markup-extension.md)
-- [StaticResource Markup Extension](staticresource-markup-extension.md)
-- [DynamicResource Markup Extension](dynamicresource-markup-extension.md)
+- [Application Resources](../../framework/wpf/advanced/optimizing-performance-application-resources.md)
+- [Resources and Code](../../framework/wpf/advanced/resources-and-code.md)
+- [Define and Reference a Resource](../../framework/wpf/advanced/how-to-define-and-reference-a-resource.md)
+- [Application Management Overview](../../framework/wpf/app-development/application-management-overview.md)
+- [x:Type Markup Extension](../../framework/xaml-services/x-type-markup-extension.md)
+- [StaticResource Markup Extension](../../framework/wpf/advanced/staticresource-markup-extension.md)
+- [DynamicResource Markup Extension](../../framework/wpf/advanced/dynamicresource-markup-extension.md)

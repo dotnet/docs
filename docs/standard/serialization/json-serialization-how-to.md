@@ -58,7 +58,7 @@ Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize
 
 ### Default serialization behavior
 
-* All public properties are serialized. You can Exclude [selected](#exclude-selected-properties), [read-only](#exclude-read-only-properties), and [null value](#exclude-null-value-properties) properties.
+* All public properties are serialized. You can exclude [selected](#exclude-selected-properties), [read-only](#exclude-read-only-properties), and [null value](#exclude-null-value-properties) properties.
 * Fields are excluded.
 * Supported types include:
   * .NET primitives that map to JavaScript primitives.
@@ -117,12 +117,12 @@ Resulting property and field values:
 |Property |Value  |Notes  |
 |---------|---------|---------|
 | Date    | 8/1/2019 12:00:00 AM -07:00||
-| TemperatureC| 0 |Property name matching is case-sensitive.|
+| TemperatureC| 0 | Not set because property name matching is case-sensitive.|
 | Summary| Hot||
-| SummaryField| null |Fields are excluded from deserialization.|
-| DatesAvailable | 8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 ||
-| TemperatureRanges | Cold, 20<br>Hot, 40||
-| SummaryWords | Cool<br>Windy<br>Humid ||
+| SummaryField| null | Not set because it's a field, not a property.|
+| DatesAvailable | 8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 | `IList<T>` and `IEnumerable<T>` implementations are supported. |
+| TemperatureRanges | Cold, 20<br>Hot, 40| `Dictionary<string,TValue>` is supported. |
+| SummaryWords | Cool<br>Windy<br>Humid | Arrays are supported. |
 
 Comments or trailing commas in the JSON trigger exceptions.
 

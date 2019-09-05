@@ -100,7 +100,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 
 ## Serialize to formatted JSON
 
-Set [JsonSerializerOptions.WriteIndented](xref:System.Text.Json.JsonSerializerOptions.WriteIndented) to true:
+Set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented> to true:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -131,7 +131,7 @@ class WeatherForecast
 
 ## Allow comments
 
-Set [JsonSerializerOptions.ReadCommentHandling](xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling) to `Skip`:
+Set <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling> to `JsonCommentHandling.Skip`:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -153,7 +153,7 @@ Example JSON with comments:
 
 ## Allow trailing commas
 
-Set [JsonSerializerOptions.AllowTrailingCommas](xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas) to true:
+Set <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas> to true:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -206,7 +206,7 @@ The property name set by this attribute:
 
 ## Camel case JSON property names
 
-Set [JsonSerializerOptions.PropertyNamingPolicy](xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy) to `JsonNamingPolicy.CamelCase`:
+Set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> to `JsonNamingPolicy.CamelCase`:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -257,7 +257,7 @@ class UpperCaseNamingPolicy : JsonNamingPolicy
 }
 ```
 
-Set [JsonSerializerOptions.PropertyNamingPolicy](xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy) to an instance of your naming policy class:
+Set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> to an instance of your naming policy class:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -321,7 +321,7 @@ Example JSON output:
 
 ## Exclude read-only properties
 
-Set [JsonSerializerOptions.IgnoreReadOnlyProperties](xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties) to true:
+Set <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties> to true:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -353,7 +353,7 @@ class WeatherForecast
 
 ## Exclude null value properties
 
-Set [JsonSerializerOptions.IgnoreNullValues](xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues) to true:
+Set <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> to true:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -380,7 +380,7 @@ Example object to serialize and JSON output:
 
 ## Camel case dictionary keys
 
-IF a property of an object to be serialized is of type `Dictionary<string,Tvalue>`, the `string` keys can be converted to camel case. To do that, set [JsonSerializerOptions.DictionaryKeyPolicy](xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy) to `JsonNamingPolicy.CamelCase`:
+IF a property of an object to be serialized is of type `Dictionary<string,Tvalue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -415,7 +415,7 @@ The camel case property naming policy works for serialization only.
 
 ## Case-insensitive property matching
 
-Set [JsonSerializerOptions.PropertyNameCaseInsensitive](xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive) to true:
+Set <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> to true:
 
 ```csharp
 var options = new JsonSerializerOptions

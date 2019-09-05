@@ -19,7 +19,7 @@ The WS-AtomicTransaction Configuration MMC Snap-in is used to configure a portio
   
  The registration can be done by the following command.  
   
-```output  
+```console
 regasm.exe /codebase WsatUI.dll  
 ```  
   

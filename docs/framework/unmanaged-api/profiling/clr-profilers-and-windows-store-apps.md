@@ -148,7 +148,7 @@ There are a couple of items you'll need to get right:
 
 - `debuggerCommandLine` is a bit more interesting. In order to pass the custom environment block to the Windows Store app, you need to write your own, simplistic dummy debugger. Windows spawns the Windows Store app suspended and then attaches your debugger by launching your debugger with a command line like in this example:
 
-    ```output
+    ```console
     MyDummyDebugger.exe -p 1336 -tid 1424
     ```
 

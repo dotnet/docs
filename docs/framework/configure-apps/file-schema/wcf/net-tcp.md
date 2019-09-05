@@ -6,8 +6,9 @@ ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
 # \<net.tcp>
 Specifies configuration settings for the NET.TCP Port Sharing Service, which allows multiple processes to share the same TCP port.  
   
- \<system.serviceModel.activation>  
-\<net.tcp>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel.activation>**](system-servicemodel-activation.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<net.tcp>**  
   
 ## Syntax  
   

@@ -1,7 +1,7 @@
 ---
 title: What's New in C# 8.0 - C# Guide
 description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
-ms.date: 09/02/2019
+ms.date: 09/04/2019
 ---
 # What's new in C# 8.0
 
@@ -20,6 +20,7 @@ There are many enhancements to the C# language that you can try out already.
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
 - [Indices and ranges](#indices-and-ranges)
+- [Unmanaged constructed types](#unmanaged-constructed-types)
 - [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
 
 > [!NOTE]
@@ -440,6 +441,33 @@ var text = words[phrase];
 ```
 
 You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).
+
+## Unmanaged constructed types
+
+In C# 7.3 and earlier, a constructed type (a type that includes at least one type argument) cannot be an [unmanaged type](../language-reference/builtin-types/unmanaged-types.md). Starting with C# 8.0, a constructed value type is unmanaged if it contains fields of unmanaged types only.
+
+For example, given the following definition of the generic `Coords<T>` type:
+
+```csharp
+public struct Coords<T>
+{
+    public T X;
+    public T Y;
+}
+```
+
+the `Coords<int>` type is an unmanaged type in C# 8.0 and later. Like for any unmanaged type, you can create a pointer to a variable of this type or [allocate a block of memory on the stack](../language-reference/operators/stackalloc.md) for instances of this type:
+
+```csharp
+Span<Coords<int>> coordinates = stackalloc[]
+{
+    new Coords<int> { X = 0, Y = 0 },
+    new Coords<int> { X = 0, Y = 3 },
+    new Coords<int> { X = 4, Y = 0 }
+};
+```
+
+For more information, see [Unmanaged types](../language-reference/builtin-types/unmanaged-types.md).
 
 ## Enhancement of interpolated verbatim strings
 

@@ -6,11 +6,12 @@ ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1
 # \<namedPipeTransport>
 Defines a transport that causes a channel to transfer messages using named pipes when it is included in a custom binding.  
   
-\<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<namePipeTransport>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<namedPipeTransport>**  
   
 ## Syntax  
   

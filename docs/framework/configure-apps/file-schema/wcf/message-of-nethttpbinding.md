@@ -4,14 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: 9def5a35-475d-40d6-b716-ccdbd93863c7
 ---
 # \<message> of \<netHttpBinding>
-Defines the settings for message-level security of the [\<basicHttpBinding>](basichttpbinding.md).  
+Defines the settings for message-level security of the [\<netHttpBinding>](nethttpbinding.md).  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<netHttpBinding>  
-\<binding>  
-\<security>  
-\<message>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netHttpBinding>**](nethttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-nethttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
 ## Syntax  
   

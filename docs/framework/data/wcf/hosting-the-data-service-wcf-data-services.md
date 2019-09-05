@@ -34,7 +34,7 @@ By using WCF Data Services, you can create a service that exposes data as an [!I
 
 When you use the **Add New Item** dialog in Visual Studio 2015 to define a data service in an ASP.NET application, the tool generates two new files in the project. The first file has a `.svc` extension and instructs the WCF runtime how to instantiate the data service. The following is an example of this file for the Northwind sample data service created when you complete the [quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md):
 
-```text
+```aspx-csharp
 <%@ ServiceHost Language="C#"
     Factory="System.Data.Services.DataServiceHostFactory,
             System.Data.Services, Version=4.0.0.0,

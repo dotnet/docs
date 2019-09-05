@@ -61,13 +61,13 @@ In a multiuser environment, there are two models for updating data in a database
   
  Another technique for testing for an optimistic concurrency violation is to verify that all the original column values in a row still match those found in the database. For example, consider the following query:  
   
-```csharp
+```sql
 SELECT Col1, Col2, Col3 FROM Table1  
 ```  
   
  To test for an optimistic concurrency violation when updating a row in **Table1**, you would issue the following UPDATE statement:  
   
-```csharp
+```sql
 UPDATE Table1 Set Col1 = @NewCol1Value,  
               Set Col2 = @NewCol2Value,  
               Set Col3 = @NewCol3Value  
@@ -82,7 +82,7 @@ WHERE Col1 = @OldCol1Value AND
   
  If a column at your data source allows nulls, you may need to extend your WHERE clause to check for a matching null reference in your local table and at the data source. For example, the following UPDATE statement verifies that a null reference in the local row still matches a null reference at the data source, or that the value in the local row still matches the value at the data source.  
   
-```csharp
+```sql
 UPDATE Table1 Set Col1 = @NewVal1  
   WHERE (@OldVal1 IS NULL AND Col1 IS NULL) OR Col1 = @OldVal1  
 ```  

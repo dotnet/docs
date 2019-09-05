@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<assemblyBinding> Element for \<runtime>
 Contains information about assembly version redirection and the locations of assemblies.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<assemblyBinding>**  
   
 ## Syntax  
   

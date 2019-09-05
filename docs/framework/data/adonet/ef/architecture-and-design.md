@@ -13,7 +13,7 @@ The nodes of the tree are processed from the bottom up. First, an intermediate s
 
 - To rename aliases, you must identify all used aliases to avoid collisions during renaming. To defer the renaming choices in SqlBuilder, use Symbol objects to represent the columns that are candidates for renaming.
 
-![Diagram](../../../../../docs/framework/data/adonet/ef/media/de1ca705-4f7c-4d2d-ace5-afefc6d3cefa.gif "de1ca705-4f7c-4d2d-ace5-afefc6d3cefa")
+![Diagram](./media/de1ca705-4f7c-4d2d-ace5-afefc6d3cefa.gif "de1ca705-4f7c-4d2d-ace5-afefc6d3cefa")
 
 In the first phase, while visiting the expression tree, expressions are grouped into SqlSelectStatements, joins are flattened, and join aliases are flattened. During this pass, Symbol objects represent columns or input aliases that may be renamed.
 
@@ -221,7 +221,7 @@ The IsParentAJoin property helps determine whether a given join can be flattened
 
 Input alias redirecting is accomplished with the symbol table.
 
-To explain input alias redirecting, refer to the first example in [Generating SQL from Command Trees - Best Practices](../../../../../docs/framework/data/adonet/ef/generating-sql-from-command-trees-best-practices.md).  There "a" needed to be redirected to "b" in the projection.
+To explain input alias redirecting, refer to the first example in [Generating SQL from Command Trees - Best Practices](generating-sql-from-command-trees-best-practices.md).  There "a" needed to be redirected to "b" in the projection.
 
 When a SqlSelectStatement object is created, the extent that is the input to the node is put in the From property of the SqlSelectStatement. A Symbol (\<symbol_b>) is created based on the input binding name ("b") to represent that extent and "AS  " + \<symbol_b> is appended to the From Clause.  The symbol is also added to the FromExtents property.
 
@@ -441,4 +441,4 @@ To produce unique names both for extent aliases and for columns, use \<existing_
 
 ## See also
 
-- [SQL Generation in the Sample Provider](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)
+- [SQL Generation in the Sample Provider](sql-generation-in-the-sample-provider.md)

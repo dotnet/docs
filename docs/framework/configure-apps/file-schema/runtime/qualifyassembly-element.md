@@ -15,10 +15,10 @@ ms.author: "ronpet"
 # \<qualifyAssembly> Element
 Specifies the full name of the assembly that should be dynamically loaded when a partial name is used.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<qualifyAssembly>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<qualifyAssembly>**  
   
 ## Syntax  
   

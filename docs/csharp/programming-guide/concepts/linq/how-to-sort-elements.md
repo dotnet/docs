@@ -22,7 +22,7 @@ foreach (decimal el in prices)
   
  This code produces the following output:  
   
-```  
+```output  
 0.99  
 4.95  
 6.99  
@@ -51,7 +51,7 @@ foreach (decimal el in prices)
   
  This code produces the following output:  
   
-```  
+```output  
 0.99  
 4.95  
 6.99  

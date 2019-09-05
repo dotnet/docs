@@ -161,7 +161,7 @@ private static int Aggregate(Expression exp)
 
 Running it on the same expression yields the following output:
 
-```
+```output
 10
 Found Addition Expression
 Computing Left node
@@ -200,7 +200,7 @@ Expression<Func<int> sum1 = () => 1 + (2 + (3 + 4));
 
 Here's the output from examining this expression:
 
-```
+```output
 Found Addition Expression
 Computing Left node
 Found Constant: 1

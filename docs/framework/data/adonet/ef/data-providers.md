@@ -7,10 +7,10 @@ ms.assetid: 5252e639-ff11-4818-82e7-07221ed6ae23
 This section provides information on data providers that support the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
   
 ## In This Section  
- [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)  
+ [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md)  
  Describes the EntityClient data provider. This provider transforms queries against a data model into a canonical command tree. The command tree can then be consumed by a .NET Framework data provider for the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
   
- [SqlClient for the Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)  
+ [SqlClient for the Entity Framework](sqlclient-for-the-entity-framework.md)  
  Describes the .NET Framework data provider that supports the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] for use with a SQL Server database.  
   
 ## Related Sections  
@@ -22,4 +22,4 @@ This section provides information on data providers that support the [!INCLUDE[a
   
 ## See also
 
-- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)
+- [Working with Data Providers](working-with-data-providers.md)

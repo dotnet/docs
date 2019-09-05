@@ -16,13 +16,13 @@ ms.author: "mairaw"
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
 > [!NOTE]
-> This topic addresses the behavior of strong-named assemblies and applies only to [Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md) assemblies. [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md) assemblies in the .NET Framework 4 or later are not affected by strong names. For more information about changes to the security system, see [Security Changes](../../../docs/framework/security/security-changes.md).  
+> This topic addresses the behavior of strong-named assemblies and applies only to [Level 1](security-transparent-code-level-1.md) assemblies. [Security-Transparent Code, Level 2](security-transparent-code-level-2.md) assemblies in the .NET Framework 4 or later are not affected by strong names. For more information about changes to the security system, see [Security Changes](../security/security-changes.md).  
   
- Applications that receive less than full trust from their host or sandbox are not allowed to call shared managed libraries unless the library writer specifically allows them to through the use of the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute. Therefore, application writers must be aware that some libraries will not be available to them from a partially trusted context. By default, all code that executes in a partial-trust [sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md) and is not in the list of full-trust assemblies is partially trusted. If you do not expect your code to be executed from a partially trusted context or to be called by partially trusted code, you do not have to be concerned about the information in this section. However, if you write code that must interact with partially trusted code or operate from a partially trusted context, you should consider the following factors:  
+ Applications that receive less than full trust from their host or sandbox are not allowed to call shared managed libraries unless the library writer specifically allows them to through the use of the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute. Therefore, application writers must be aware that some libraries will not be available to them from a partially trusted context. By default, all code that executes in a partial-trust [sandbox](how-to-run-partially-trusted-code-in-a-sandbox.md) and is not in the list of full-trust assemblies is partially trusted. If you do not expect your code to be executed from a partially trusted context or to be called by partially trusted code, you do not have to be concerned about the information in this section. However, if you write code that must interact with partially trusted code or operate from a partially trusted context, you should consider the following factors:  
   
 - Libraries must be signed with a strong name in order to be shared by multiple applications. Strong names allow your code to be placed in the global assembly cache or added to the full-trust list of a sandboxing <xref:System.AppDomain>, and allow consumers to verify that a particular piece of mobile code actually originates from you.  
   
-- By default, strong-named [Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md) shared libraries perform an implicit [LinkDemand](../../../docs/framework/misc/link-demands.md) for full trust automatically, without the library writer having to do anything.  
+- By default, strong-named [Level 1](security-transparent-code-level-1.md) shared libraries perform an implicit [LinkDemand](link-demands.md) for full trust automatically, without the library writer having to do anything.  
   
 - If a caller does not have full trust but still tries to call such a library, the runtime throws a <xref:System.Security.SecurityException> and the caller is not allowed to link to the library.  
   
@@ -47,4 +47,4 @@ ms.author: "mairaw"
   
 ## See also
 
-- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+- [Code Access Security](code-access-security.md)

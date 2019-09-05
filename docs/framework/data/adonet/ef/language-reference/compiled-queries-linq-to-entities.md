@@ -64,6 +64,6 @@ When you have an application that executes structurally similar queries many tim
   
 ## See also
 
-- [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)
-- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
+- [ADO.NET Entity Framework](../index.md)
+- [LINQ to Entities](linq-to-entities.md)
 - [Entity Framework Merge Options and Compiled Queries](https://go.microsoft.com/fwlink/?LinkId=199591)

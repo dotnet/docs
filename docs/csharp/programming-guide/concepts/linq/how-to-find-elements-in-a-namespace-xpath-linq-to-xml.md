@@ -37,7 +37,7 @@ foreach (XElement el in list2)
 
 This example produces the following output:
 
-```
+```output
 Results are identical
 <aw:PurchaseOrder PONumber="11223" Date="2000-01-15" xmlns:aw="http://www.adventure-works.com">
     <aw:ShippingAddress>

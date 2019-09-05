@@ -13,8 +13,8 @@ ms.author: "ronpet"
 
 Provides configuration for the default in-memory <xref:System.Runtime.Caching.ObjectCache> implementation through the `memoryCache` entry in the configuration file.  
   
- \<configuration>  
-\<system.runtime.caching>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.runtime.caching>**  
   
 ## Syntax  
   

@@ -68,6 +68,5 @@ Starting with C# 7.0, `throw` can be used as an expression as well as a statemen
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [try-catch](try-catch.md)
-- [The try, catch, and throw Statements in C++](try-catch.md)
 - [C# Keywords](index.md)
 - [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)

@@ -24,4 +24,4 @@ ms.assetid: 13d291d3-e6bc-4719-b953-758b61a590b6
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Overview](entity-sql-overview.md)

@@ -22,7 +22,7 @@ Whether you prefer a full and powerful IDE or a lightweight and agile editor, Mi
 
 **Visual Studio 2017.** If you're using *Visual Studio 2017* you can build ASP.NET Core applications as long as you have the *.NET Core cross-platform development* workload installed. Figure 10-1 shows the required workload in the Visual Studio 2017 setup dialog.
 
-![](./media/image10-1.png)
+![Installing the .NET Core workload in Visual Studio 2017](./media/image10-1.png)
 
 **Figure 10-1.** Installing the .NET Core workload in Visual Studio 2017.
 

@@ -10,34 +10,34 @@ Entity SQL is a storage-independent query language that is similar to SQL. Entit
   
 - When you want to define a query as part of the model definition. Only Entity SQL is supported in a data model. For more information, see [QueryView Element (MSL)](/ef/ef6/modeling/designer/advanced/edmx/msl-spec#queryview-element-msl)  
   
-- When using EntityClient to return read-only entity data as rowsets using a <xref:System.Data.EntityClient.EntityDataReader>. For more information, see [EntityClient Provider for the Entity Framework](../../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).  
+- When using EntityClient to return read-only entity data as rowsets using a <xref:System.Data.EntityClient.EntityDataReader>. For more information, see [EntityClient Provider for the Entity Framework](../entityclient-provider-for-the-entity-framework.md).  
   
 - If you are already an expert in SQL-based query languages, Entity SQL may seem the most natural to you.  
   
 ## Using Entity SQL with the EntityClient provider  
  If you want to use Entity SQL with the EntityClient provider, see the following topics for more information:  
   
- [EntityClient Provider for the Entity Framework](../../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)  
+ [EntityClient Provider for the Entity Framework](../entityclient-provider-for-the-entity-framework.md)  
   
- [How to: Build an EntityConnection Connection String](../../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
+ [How to: Build an EntityConnection Connection String](../how-to-build-an-entityconnection-connection-string.md)  
   
- [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md)  
+ [How to: Execute a Query that Returns PrimitiveType Results](../how-to-execute-a-query-that-returns-primitivetype-results.md)  
   
- [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md)  
+ [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md)  
   
- [How to: Execute a Query that Returns RefType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-reftype-results.md)  
+ [How to: Execute a Query that Returns RefType Results](../how-to-execute-a-query-that-returns-reftype-results.md)  
   
- [How to: Execute a Query that Returns Complex Types](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-complex-types.md)  
+ [How to: Execute a Query that Returns Complex Types](../how-to-execute-a-query-that-returns-complex-types.md)  
   
- [How to: Execute a Query that Returns Nested Collections](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-nested-collections.md)  
+ [How to: Execute a Query that Returns Nested Collections](../how-to-execute-a-query-that-returns-nested-collections.md)  
   
- [How to: Execute a Parameterized Entity SQL Query Using EntityCommand](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-entity-sql-query-using-entitycommand.md)  
+ [How to: Execute a Parameterized Entity SQL Query Using EntityCommand](../how-to-execute-a-parameterized-entity-sql-query-using-entitycommand.md)  
   
- [How to: Execute a Parameterized Stored Procedure Using EntityCommand](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-parameterized-stored-procedure-using-entitycommand.md)  
+ [How to: Execute a Parameterized Stored Procedure Using EntityCommand](../how-to-execute-a-parameterized-stored-procedure-using-entitycommand.md)  
   
- [How to: Execute a Polymorphic Query](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-polymorphic-query.md)  
+ [How to: Execute a Polymorphic Query](../how-to-execute-a-polymorphic-query.md)  
   
- [How to: Navigate Relationships with the Navigate Operator](../../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
+ [How to: Navigate Relationships with the Navigate Operator](../how-to-navigate-relationships-with-the-navigate-operator.md)  
   
 ## Using Entity SQL with object queries  
  If you want to use Entity SQL with object queries, see the following topics for more information:  
@@ -69,11 +69,11 @@ Entity SQL is a storage-independent query language that is similar to SQL. Entit
  [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))  
   
 ## In This Section  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
+ [Entity SQL Overview](entity-sql-overview.md)  
   
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
+ [Entity SQL Reference](entity-sql-reference.md)  
   
 ## See also
 
-- [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)
-- [Language Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/index.md)
+- [ADO.NET Entity Framework](../index.md)
+- [Language Reference](index.md)

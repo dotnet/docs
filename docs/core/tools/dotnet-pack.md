@@ -15,7 +15,7 @@ ms.date: 12/04/2018
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-```
+```console
 dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies]
     [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
@@ -23,7 +23,7 @@ dotnet pack [-h|--help]
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```
+```console
 dotnet pack [<PROJECT>] [-c|--configuration] [--include-source] [--include-symbols] [--no-build] [-o|--output]
     [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]

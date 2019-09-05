@@ -52,4 +52,4 @@ expression IS [ NOT ] OF ( [ ONLY ] type )
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Reference](entity-sql-reference.md)

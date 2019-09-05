@@ -27,13 +27,13 @@ You must be familiar with the following code access security concepts in order t
 
 - **Secure class libraries**: A secure class library uses security demands to ensure that the library's callers have permission to access the resources that the library exposes. For example, a secure class library might have a method for creating files that would demand that its callers have permissions to create files. The .NET Framework consists of secure class libraries. You should be aware of the permissions required to access any library that your code uses. For more information, see the [Using Secure Class Libraries](#secure_library) section later in this topic.
 
-- **Transparent code**: Starting with the .NET Framework 4, in addition to identifying specific permissions, you must also determine whether your code should run as security-transparent. Security-transparent code cannot call types or members that are identified as security-critical. This rule applies to full-trust applications as well as partially trusted applications. For more information, see [Security-Transparent Code](../../../docs/framework/misc/security-transparent-code.md).
+- **Transparent code**: Starting with the .NET Framework 4, in addition to identifying specific permissions, you must also determine whether your code should run as security-transparent. Security-transparent code cannot call types or members that are identified as security-critical. This rule applies to full-trust applications as well as partially trusted applications. For more information, see [Security-Transparent Code](security-transparent-code.md).
 
 <a name="typesafe_code"></a>
 
 ## Writing Verifiably Type-Safe Code
 
-Just-in-time (JIT) compilation performs a verification process that examines code and tries to determine whether the code is type-safe. Code that is proven during verification to be type-safe is called *verifiably type-safe code*. Code can be type-safe, yet might not be verifiably type-safe because of the limitations of the verification process or of the compiler. Not all languages are type-safe, and some language compilers, such as Microsoft Visual C++, cannot generate verifiably type-safe managed code. To determine whether the language compiler you use generates verifiably type-safe code, consult the compiler's documentation. If you use a language compiler that generates verifiably type-safe code only when you avoid certain language constructs, you might want to use the [PEVerify tool](../../../docs/framework/tools/peverify-exe-peverify-tool.md) to determine whether your code is verifiably type-safe.
+Just-in-time (JIT) compilation performs a verification process that examines code and tries to determine whether the code is type-safe. Code that is proven during verification to be type-safe is called *verifiably type-safe code*. Code can be type-safe, yet might not be verifiably type-safe because of the limitations of the verification process or of the compiler. Not all languages are type-safe, and some language compilers, such as Microsoft Visual C++, cannot generate verifiably type-safe managed code. To determine whether the language compiler you use generates verifiably type-safe code, consult the compiler's documentation. If you use a language compiler that generates verifiably type-safe code only when you avoid certain language constructs, you might want to use the [PEVerify tool](../tools/peverify-exe-peverify-tool.md) to determine whether your code is verifiably type-safe.
 
 Code that is not verifiably type-safe can attempt to execute if security policy allows the code to bypass verification. However, because type safety is an essential part of the runtime's mechanism for isolating assemblies, security cannot be reliably enforced if code violates the rules of type safety. By default, code that is not type-safe is allowed to run only if it originates from the local computer. Therefore, mobile code should be type-safe.
 
@@ -50,7 +50,7 @@ Code access security does not eliminate the possibility of human error in writin
 Declarative security syntax uses [attributes](../../standard/attributes/index.md) to place security information into the [metadata](../../standard/metadata-and-self-describing-components.md) of your code. Attributes can be placed at the assembly, class, or member level, to indicate the type of request, demand, or override you want to use. Requests are used in applications that target the common language runtime to inform the runtime security system about the permissions that your application needs or does not want. Demands and overrides are used in libraries to help protect resources from callers or to override default security behavior.
 
 > [!NOTE]
-> In the .NET Framework 4, there have been important changes to the .NET Framework security model and terminology. For more information about these changes, see [Security Changes](../../../docs/framework/security/security-changes.md).
+> In the .NET Framework 4, there have been important changes to the .NET Framework security model and terminology. For more information about these changes, see [Security Changes](../security/security-changes.md).
 
 In order to use declarative security calls, you must initialize the state data of the permission object so that it represents the particular form of permission you need. Every built-in permission has an attribute that is passed a <xref:System.Security.Permissions.SecurityAction> enumeration to describe the type of security operation you want to perform. However, permissions also accept their own parameters that are exclusive to them.
 
@@ -100,7 +100,7 @@ Imperative security syntax issues a security call by creating a new instance of 
 
 Before you make the security call, you must initialize the state data of the permission object so that it represents the particular form of the permission you need. For example, when creating a <xref:System.Security.Permissions.FileIOPermission> object, you can use the constructor to initialize the **FileIOPermission** object so that it represents either unrestricted access to all files or no access to files. Or, you can use a different **FileIOPermission** object, passing parameters that indicate the type of access you want the object to represent (that is, read, append, or write) and what files you want the object to protect.
 
-In addition to using imperative security syntax to invoke a single security object, you can use it to initialize a group of permissions in a permission set. For example, this technique is the only way to reliably perform [assert](../../../docs/framework/misc/using-the-assert-method.md) calls on multiple permissions in one method. Use the <xref:System.Security.PermissionSet> and <xref:System.Security.NamedPermissionSet> classes to create a group of permissions and then call the appropriate method to invoke the desired security call.
+In addition to using imperative security syntax to invoke a single security object, you can use it to initialize a group of permissions in a permission set. For example, this technique is the only way to reliably perform [assert](using-the-assert-method.md) calls on multiple permissions in one method. Use the <xref:System.Security.PermissionSet> and <xref:System.Security.NamedPermissionSet> classes to create a group of permissions and then call the appropriate method to invoke the desired security call.
 
 You can use imperative syntax to perform demands and overrides, but not requests. You might use imperative syntax for demands and overrides instead of declarative syntax when information that you need in order to initialize the permission state becomes known only at run time. For example, if you want to ensure that callers have permission to read a certain file, but you do not know the name of that file until run time, use an imperative demand. You might also choose to use imperative checks instead of declarative checks when you need to determine at run time whether a condition holds and, based on the result of the test, make a security demand (or not).
 
@@ -159,8 +159,8 @@ If you want your application to perform an operation that requires accessing unm
 - <xref:System.Security.Permissions.FileIOPermission>
 - <xref:System.Security.NamedPermissionSet>
 - <xref:System.Security.Permissions.SecurityAction>
-- [Assert](../../../docs/framework/misc/using-the-assert-method.md)
-- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
-- [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)
+- [Assert](using-the-assert-method.md)
+- [Code Access Security](code-access-security.md)
+- [Code Access Security Basics](code-access-security-basics.md)
 - [Attributes](../../standard/attributes/index.md)
 - [Metadata and Self-Describing Components](../../standard/metadata-and-self-describing-components.md)

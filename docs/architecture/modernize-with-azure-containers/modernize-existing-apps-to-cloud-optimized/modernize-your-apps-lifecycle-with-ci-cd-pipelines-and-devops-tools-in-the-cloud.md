@@ -23,7 +23,7 @@ Figure 4-12 shows a continuous deployment pipeline that deploys to a Kubernetes 
 
 ![Azure DevOps Services continuous deployment pipeline, deploying to a Kubernetes cluster](./media/image12.png)
 
-> **Figure 4-12.** Azure DevOps Services continuous deployment pipeline, deploying to a Kubernetes cluster
+**Figure 4-12.** Azure DevOps Services continuous deployment pipeline, deploying to a Kubernetes cluster
 
 >[!div class="step-by-step"]
 >[Previous](modernize-your-apps-with-monitoring-and-telemetry.md)

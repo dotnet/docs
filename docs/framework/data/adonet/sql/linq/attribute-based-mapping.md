@@ -6,12 +6,12 @@ ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
 # Attribute-Based Mapping
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] maps a SQL Server database to a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object model by either applying attributes or by using an external mapping file. This topic outlines the attribute-based approach.  
   
- In its most elementary form, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] maps a database to a <xref:System.Data.Linq.DataContext>, a table to a class, and columns and relationships to properties on those classes. You can also use attributes to map an inheritance hierarchy in your object model. For more information, see [How to: Generate the Object Model in Visual Basic or C#](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md).  
+ In its most elementary form, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] maps a database to a <xref:System.Data.Linq.DataContext>, a table to a class, and columns and relationships to properties on those classes. You can also use attributes to map an inheritance hierarchy in your object model. For more information, see [How to: Generate the Object Model in Visual Basic or C#](how-to-generate-the-object-model-in-visual-basic-or-csharp.md).  
   
- Developers using Visual Studio typically perform attribute-based mapping by using the Object Relational Designer. You can also use the SQLMetal command-line tool, or you can hand-code the attributes yourself. For more information, see [How to: Generate the Object Model in Visual Basic or C#](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md).  
+ Developers using Visual Studio typically perform attribute-based mapping by using the Object Relational Designer. You can also use the SQLMetal command-line tool, or you can hand-code the attributes yourself. For more information, see [How to: Generate the Object Model in Visual Basic or C#](how-to-generate-the-object-model-in-visual-basic-or-csharp.md).  
   
 > [!NOTE]
-> You can also map by using an external XML file. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
+> You can also map by using an external XML file. For more information, see [External Mapping](external-mapping.md).  
   
  The following sections describe attribute-based mapping in more detail. For more information, see the <xref:System.Data.Linq.Mapping> namespace.  
   
@@ -58,7 +58,7 @@ ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
 > AssociationAttribute and ColumnAttribute Storage property values are case sensitive. For example, ensure that values used in the attribute for the AssociationAttribute.Storage property match the case for the corresponding property names used elsewhere in the code. This applies to all .NET programming languages, even those which are not typically case sensitive, including Visual Basic. For more information about the Storage property, see <xref:System.Data.Linq.Mapping.DataAttribute.Storage%2A?displayProperty=nameWithType>.  
   
 ## AssociationAttribute Attribute  
- Use this attribute to designate a property to represent an association in the database, such as a foreign key to primary key relationship. For more information about relationships, see [How to: Map Database Relationships](../../../../../../docs/framework/data/adonet/sql/linq/how-to-map-database-relationships.md).  
+ Use this attribute to designate a property to represent an association in the database, such as a foreign key to primary key relationship. For more information about relationships, see [How to: Map Database Relationships](how-to-map-database-relationships.md).  
   
  The following table describes properties of this attribute.  
   
@@ -138,4 +138,4 @@ ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
   
 ## See also
 
-- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [Reference](reference.md)

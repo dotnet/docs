@@ -23,12 +23,12 @@ SET ( expression )
 SELECT VALUE DISTINCT c FROM c  
 ```  
   
- `SET` is one of the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators. All [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators are evaluated from left to right. See [EXCEPT](../../../../../../docs/framework/data/adonet/ef/language-reference/except-entity-sql.md) for precedence information for the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators.  
+ `SET` is one of the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators. All [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators are evaluated from left to right. See [EXCEPT](except-entity-sql.md) for precedence information for the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators.  
   
 ## Example  
  The following Entity SQL query uses the SET expression to convert a collection of objects into a set. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
@@ -36,4 +36,4 @@ SELECT VALUE DISTINCT c FROM c
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Reference](entity-sql-reference.md)

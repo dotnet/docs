@@ -39,7 +39,7 @@ foreach (XElement el in list2)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <CompanyName>Great Lakes Food Market</CompanyName>  
 <ContactName>Howard Snyder</ContactName>  

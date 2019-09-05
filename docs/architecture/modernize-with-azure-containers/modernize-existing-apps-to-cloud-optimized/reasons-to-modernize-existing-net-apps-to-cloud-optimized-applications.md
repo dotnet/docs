@@ -35,9 +35,9 @@ The following list describes the main tenets or practices for Cloud-Optimized ap
 
 Figure 4-2 shows the main optional pillars of a Cloud-Optimized application. The more pillars you implement, the readier your application will be to succeed in meeting your customers' expectations.
 
-> ![Main pillars of a Cloud-Optimized application](./media/image2.png)
->
-> **Figure 4-2.** Main pillars of a Cloud-Optimized application
+![Main pillars of a Cloud-Optimized application](./media/image2.png)
+
+**Figure 4-2.** Main pillars of a Cloud-Optimized application
 
 To summarize, a Cloud-Optimized application is an approach to building and managing applications that takes advantage of the cloud computing model, while using a combination of containers, managed cloud infrastructure, resilient application techniques, monitoring, continuous delivery, and DevOps, all without the need to rearchitect and recode your existing applications.
 

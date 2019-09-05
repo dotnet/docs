@@ -29,7 +29,7 @@ Indexers can be declared on an [interface](../../language-reference/keywords/int
   
  In the preceding example, you could use the explicit interface member implementation by using the fully qualified name of the interface member. For example:  
   
-```  
+```csharp  
 string ISomeInterface.this[int index]   
 {   
 }   
@@ -37,7 +37,7 @@ string ISomeInterface.this[int index]
   
  However, the fully qualified name is only needed to avoid ambiguity when the class is implementing more than one interface with the same indexer signature. For example, if an `Employee` class is implementing two interfaces, `ICitizen` and `IEmployee`, and both interfaces have the same indexer signature, the explicit interface member implementation is necessary. That is, the following indexer declaration:  
   
-```  
+```csharp  
 string IEmployee.this[int index]   
 {   
 }   
@@ -45,7 +45,7 @@ string IEmployee.this[int index]
   
  implements the indexer on the `IEmployee` interface, while the following declaration:  
   
-```  
+```csharp  
 string ICitizen.this[int index]
 {   
 }   

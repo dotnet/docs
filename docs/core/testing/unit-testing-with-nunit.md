@@ -9,6 +9,8 @@ ms.custom: "seodec18"
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-nunit/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
+[!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
+
 ## Prerequisites
 
 - [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) or later versions.
@@ -24,7 +26,7 @@ dotnet new sln
  
 Next, create a *PrimeService* directory. The following outline shows the directory and file structure so far:
 
-```
+```console
 /unit-testing-using-nunit
     unit-testing-using-nunit.sln
     /PrimeService
@@ -63,7 +65,7 @@ dotnet sln add PrimeService/PrimeService.csproj
 
 Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
-```
+```console
 /unit-testing-using-nunit
     unit-testing-using-nunit.sln
     /PrimeService
@@ -92,7 +94,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 The following outline shows the final solution layout:
 
-```
+```console
 /unit-testing-using-nunit
     unit-testing-using-nunit.sln
     /PrimeService

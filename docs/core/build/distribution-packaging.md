@@ -103,59 +103,59 @@ The rest of the version isn't included in the version name. This allows the OS p
 
 The following lists the recommended packages:
 
-* `dotnet-sdk-[major].[minor]` - Installs the latest sdk for specific runtime
-  * **Version:** \<runtime version>
-  * **Example:** dotnet-sdk-2.1
-  * **Contains:** (3),(4)
-  * **Dependencies:** `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
+- `dotnet-sdk-[major].[minor]` - Installs the latest sdk for specific runtime
+  - **Version:** \<runtime version>
+  - **Example:** dotnet-sdk-2.1
+  - **Contains:** (3),(4)
+  - **Dependencies:** `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
 
-* `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime
-  * **Version:** \<aspnetcore runtime version>
-  * **Example:** aspnetcore-runtime-2.1
-  * **Contains:** (6)
-  * **Dependencies:** `dotnet-runtime-[major].[minor]`
+- `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime
+  - **Version:** \<aspnetcore runtime version>
+  - **Example:** aspnetcore-runtime-2.1
+  - **Contains:** (6)
+  - **Dependencies:** `dotnet-runtime-[major].[minor]`
 
-* `dotnet-runtime-deps-[major].[minor]` _(Optional)_ - Installs the dependencies for running self-contained applications
-  * **Version:** \<runtime version>
-  * **Example:** dotnet-runtime-deps-2.1
-  * **Dependencies:** _distro specific dependencies_
+- `dotnet-runtime-deps-[major].[minor]` _(Optional)_ - Installs the dependencies for running self-contained applications
+  - **Version:** \<runtime version>
+  - **Example:** dotnet-runtime-deps-2.1
+  - **Dependencies:** _distro specific dependencies_
 
-* `dotnet-runtime-[major].[minor]` - Installs a specific runtime
-  * **Version:** \<runtime version>
-  * **Example:** dotnet-runtime-2.1
-  * **Contains:** (5)
-  * **Dependencies:** `dotnet-hostfxr:<runtime version>+`, `dotnet-runtime-deps-[major].[minor]`
+- `dotnet-runtime-[major].[minor]` - Installs a specific runtime
+  - **Version:** \<runtime version>
+  - **Example:** dotnet-runtime-2.1
+  - **Contains:** (5)
+  - **Dependencies:** `dotnet-hostfxr:<runtime version>+`, `dotnet-runtime-deps-[major].[minor]`
 
-* `dotnet-hostfxr` - dependency
-  * **Version:** \<runtime version>
-  * **Example:** dotnet-hostfxr
-  * **Contains:** (2)
-  * **Dependencies:** `host:<runtime version>+`
+- `dotnet-hostfxr` - dependency
+  - **Version:** \<runtime version>
+  - **Example:** dotnet-hostfxr
+  - **Contains:** (2)
+  - **Dependencies:** `host:<runtime version>+`
 
-* `dotnet-host` - dependency
-  * **Version:** \<runtime version>
-  * **Example:** dotnet-host
-  * **Contains:** (1),(8),(9),(10),(16)
+- `dotnet-host` - dependency
+  - **Version:** \<runtime version>
+  - **Example:** dotnet-host
+  - **Contains:** (1),(8),(9),(10),(16)
 
-* `dotnet-apphost-pack-[major].[minor]` - dependency
-  * **Version:** \<runtime version>
-  * **Contains:** (13)
+- `dotnet-apphost-pack-[major].[minor]` - dependency
+  - **Version:** \<runtime version>
+  - **Contains:** (13)
 
-* `dotnet-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
-  * **Version:** \<runtime version>
-  * **Contains:** (12)
+- `dotnet-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
+  - **Version:** \<runtime version>
+  - **Contains:** (12)
 
-* `aspnetcore-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
-  * **Version:** \<aspnetcore runtime version>
-  * **Contains:** (11)
+- `aspnetcore-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
+  - **Version:** \<aspnetcore runtime version>
+  - **Contains:** (11)
 
-* `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version
-  * **Version:** \<sdk version>
-  * **Contains:** (15)
+- `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version
+  - **Version:** \<sdk version>
+  - **Contains:** (15)
 
-* `dotnet-templates-[major].[minor]`
-  * **Version:** \<sdk version>
-  * **Contains:** (15)
+- `dotnet-templates-[major].[minor]`
+  - **Version:** \<sdk version>
+  - **Contains:** (15)
 
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 

@@ -19,7 +19,7 @@ The common language runtime (CLR) is the heart of the Microsoft .NET Framework a
 ## Enabling CLR Integration  
  The common language runtime (CLR) integration feature is off by default in Microsoft SQL Server, and must be enabled in order to use objects that are implemented using CLR integration. To enable CLR integration using Transact-SQL, use the `clr enabled` option of the `sp_configure` stored procedure as shown:  
   
-```  
+```sql  
 sp_configure 'clr enabled', 1  
 GO  
 RECONFIGURE  

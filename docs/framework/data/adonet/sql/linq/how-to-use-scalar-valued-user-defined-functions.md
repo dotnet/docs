@@ -15,7 +15,7 @@ You can map a client method defined on a class to a user-defined function by usi
 ## Example  
  The following SQL code presents a scalar-valued user-defined function `ReverseCustName()`.  
   
-```  
+```sql  
 CREATE FUNCTION ReverseCustName(@string varchar(100))  
 RETURNS varchar(100)  
 AS  

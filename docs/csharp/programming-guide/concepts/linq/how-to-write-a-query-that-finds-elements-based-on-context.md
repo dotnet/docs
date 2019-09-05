@@ -43,7 +43,7 @@ foreach (XElement e in items)
   
  This code produces the following output:  
   
-```  
+```output  
 id = 1  
 id = 3  
 id = 6  
@@ -86,7 +86,7 @@ foreach (XElement e in items)
   
  This code produces the following output:  
   
-```  
+```output  
 id = 1  
 id = 3  
 id = 6  

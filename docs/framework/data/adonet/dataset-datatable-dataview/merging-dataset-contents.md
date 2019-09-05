@@ -30,7 +30,7 @@ If the table receiving new data from a merge does not have a primary key, new ro
 
 ## PreserveChanges
 
-When you pass a `DataSet`, `DataTable`, or `DataRow` array to the `Merge` method, you can include optional parameters that specify whether or not to preserve changes in the existing `DataSet`, and how to handle new schema elements found in the incoming data. The first of these parameters after the incoming data is a Boolean flag, <xref:System.Data.LoadOption.PreserveChanges>, which specifies whether or not to preserve the changes in the existing `DataSet`. If the `PreserveChanges` flag is set to `true`, incoming values do not overwrite existing values in the `Current` row version of the existing row. If the `PreserveChanges` flag is set to `false`, incoming values do overwrite the existing values in the `Current` row version of the existing row. If the `PreserveChanges` flag is not specified, it is set to `false` by default. For more information about row versions, see [Row States and Row Versions](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md).
+When you pass a `DataSet`, `DataTable`, or `DataRow` array to the `Merge` method, you can include optional parameters that specify whether or not to preserve changes in the existing `DataSet`, and how to handle new schema elements found in the incoming data. The first of these parameters after the incoming data is a Boolean flag, <xref:System.Data.LoadOption.PreserveChanges>, which specifies whether or not to preserve the changes in the existing `DataSet`. If the `PreserveChanges` flag is set to `true`, incoming values do not overwrite existing values in the `Current` row version of the existing row. If the `PreserveChanges` flag is set to `false`, incoming values do overwrite the existing values in the `Current` row version of the existing row. If the `PreserveChanges` flag is not specified, it is set to `false` by default. For more information about row versions, see [Row States and Row Versions](row-states-and-row-versions.md).
 
 When `PreserveChanges` is `true`, the data from the existing row is maintained in the <xref:System.Data.DataRowVersion.Current> row version of the existing row, while the data from the <xref:System.Data.DataRowVersion.Original> row version of the existing row is overwritten with the data from the `Original` row version of the incoming row. The <xref:System.Data.DataRow.RowState%2A> of the existing row is set to <xref:System.Data.DataRowState.Modified>. The following exceptions apply:
 
@@ -64,7 +64,7 @@ With the `Merge` method, constraints are not checked until all new data has been
 Consider a case where an existing row in a `DataSet` is an `Unchanged` row with a primary key value of 1. During a merge operation with a `Modified` incoming row with an `Original` primary key value of 2 and a `Current` primary key value of 1, the existing row and the incoming row are not considered matching because the `Original` primary key values differ. However, when the merge is completed and constraints are checked, an exception will be thrown because the `Current` primary key values violate the unique constraint for the primary key column.
 
 > [!NOTE]
-> When rows are inserted into a database table containing an auto incrementing column such as an identity column, the identity column value returned by the insert may not match the value in the `DataSet`, causing the returned rows to be appended instead of merged. For more information, see [Retrieving Identity or Autonumber Values](../../../../../docs/framework/data/adonet/retrieving-identity-or-autonumber-values.md).
+> When rows are inserted into a database table containing an auto incrementing column such as an identity column, the identity column value returned by the insert may not match the value in the `DataSet`, causing the returned rows to be appended instead of merged. For more information, see [Retrieving Identity or Autonumber Values](../retrieving-identity-or-autonumber-values.md).
 
 The following code example merges two `DataSet` objects with different schemas into one `DataSet` with the combined schemas of the two incoming `DataSet` objects.
 
@@ -81,9 +81,9 @@ The following code example takes an existing `DataSet` with updates and passes t
 
 ## See also
 
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [Row States and Row Versions](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md)
-- [DataAdapters and DataReaders](../../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [Retrieving Identity or Autonumber Values](../../../../../docs/framework/data/adonet/retrieving-identity-or-autonumber-values.md)
+- [DataSets, DataTables, and DataViews](index.md)
+- [Row States and Row Versions](row-states-and-row-versions.md)
+- [DataAdapters and DataReaders](../dataadapters-and-datareaders.md)
+- [Retrieving and Modifying Data in ADO.NET](../retrieving-and-modifying-data.md)
+- [Retrieving Identity or Autonumber Values](../retrieving-identity-or-autonumber-values.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

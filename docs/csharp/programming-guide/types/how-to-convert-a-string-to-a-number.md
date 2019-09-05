@@ -53,4 +53,4 @@ The following table lists some of the methods from the <xref:System.Convert> cla
 
 - [Types](./index.md)
 - [How to: Determine Whether a String Represents a Numeric Value](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)
-- [.NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+- [Sample: .NET Core WinForms Formatting Utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)

@@ -41,7 +41,7 @@ finally
 
 Since the code uses a [try...finally](try-finally.md) block, the lock is released even if an exception is thrown within the body of a `lock` statement.
 
-You can't use the [await](await.md) keyword in the body of a `lock` statement.
+You can't use the [await operator](../operators/await.md) in the body of a `lock` statement.
 
 ## Remarks
 

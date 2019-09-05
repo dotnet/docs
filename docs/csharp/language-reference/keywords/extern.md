@@ -77,7 +77,7 @@ This example illustrates a C# program that calls into a C library (a native DLL)
 
 5. Run `cm.exe`. The `SampleMethod` method passes the value 5 to the DLL file, which returns the value multiplied by 10.  The program produces the following output:
 
-    ```
+    ```output
     SampleMethod() returns 50.
     ```
 

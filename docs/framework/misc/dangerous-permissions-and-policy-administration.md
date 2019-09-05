@@ -15,7 +15,7 @@ ms.author: "mairaw"
 Several of the protected operations for which the .NET Framework provides permissions can potentially allow the security system to be circumvented. These dangerous permissions should be given only to trustworthy code, and then only as necessary. There is usually no defense against malicious code if it is granted these permissions.  
   
 > [!NOTE]
-> In the .NET Framework 4, there have been important changes to the .NET Framework security model and terminology. For more information about these changes, see [Security Changes](../../../docs/framework/security/security-changes.md).  
+> In the .NET Framework 4, there have been important changes to the .NET Framework security model and terminology. For more information about these changes, see [Security Changes](../security/security-changes.md).  
   
  The dangerous permissions are explained in the following table.  
   
@@ -26,7 +26,7 @@ Several of the protected operations for which the .NET Framework provides permis
 |<xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification>|Without verification, the code can do anything.|  
 |<xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence>|Invalidated evidence can fool security policy.|  
 |<xref:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy>|The ability to modify security policy can disable security.|  
-|<xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter>|The use of serialization can circumvent accessibility mechanisms. For details, see [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md).|  
+|<xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter>|The use of serialization can circumvent accessibility mechanisms. For details, see [Security and Serialization](security-and-serialization.md).|  
 |<xref:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal>|The ability to set the current principal can trick role-based security.|  
 |<xref:System.Security.Permissions.SecurityPermissionFlag.ControlThread>|Manipulation of threads is dangerous because of the security state associated with threads.|  
 |<xref:System.Security.Permissions.ReflectionPermission>||  

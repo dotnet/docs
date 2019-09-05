@@ -41,7 +41,7 @@ Console.WriteLine(el1);
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Child3 />  
 ```  

@@ -75,4 +75,4 @@ This section provides information about known issues with LINQ to Entities queri
   
 ## See also
 
-- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
+- [LINQ to Entities](linq-to-entities.md)

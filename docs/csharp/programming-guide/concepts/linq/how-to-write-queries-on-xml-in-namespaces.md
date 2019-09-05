@@ -33,7 +33,7 @@ foreach (XElement el in c1)
   
  This example produces the following output:  
   
-```  
+```output  
 1  
 2  
 3  
@@ -64,7 +64,7 @@ foreach (XElement el in c1)
   
  This example produces the following output:  
   
-```  
+```output  
 1  
 2  
 3  

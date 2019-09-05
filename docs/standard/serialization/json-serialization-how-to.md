@@ -35,7 +35,7 @@ WeatherForecast weatherForecast = ... ;
 string json = JsonSerializer.Serialize(weatherForecast);
 ```
 
-Example type to be serialized:
+Example types to be serialized, with collections and nested classes:
 
 ```csharp
 class WeatherForecast1
@@ -44,17 +44,66 @@ class WeatherForecast1
     public int TemperatureC { get; set; }
     public string Summary { get; set; }
     public IList<DateTimeOffset> DatesAvailable { get; set;}
-    public Dictionary<string, int> TemperatureRanges { get; set; }
+    public Dictionary<string, HighLowTemperatures> TemperatureRanges { get; set; }
     public string [] SummaryWords { get; set; }
-}```
+}
 
-The JSON output is minified by default ([see formatted sample](#serialize-to-formatted-json)):
+public class HighLowTemperatures
+{
+    public Temperature High { get; set; }
+    public Temperature Low { get; set; }
+}
 
-```json
-{"Date":"2019-08-01T00:00:00-07:00","TemperatureC":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"cold":20,"hot":40},"SummaryWords":["Cool","Windy","Humid"]}
+public class Temperature
+{
+    public int DegreesCelsius { get; set; }
+}
 ```
 
-Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize to a `Stream`, and async versions of the `Stream` overloads are available.
+The JSON output is minified by default: 
+
+```json
+{"Date":"2019-08-01T00:00:00-07:00","TemperatureC":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":{"DegreesCelsius":20},"Low":{"DegreesCelsius":-10}},"Hot":{"High":{"DegreesCelsius":60},"Low":{"DegreesCelsius":20}}},"SummaryWords":["Cool","Windy","Humid"]}
+```
+
+The following example shows the same JSON formatted:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureC": 25,
+  "Summary": "Hot",
+  "DatesAvailable": [
+    "2019-08-01T00:00:00-07:00",
+    "2019-08-02T00:00:00-07:00"
+  ],
+  "TemperatureRanges": {
+    "Cold": {
+      "High": {
+        "DegreesCelsius": 20
+      },
+      "Low": {
+        "DegreesCelsius": -10
+      }
+    },
+    "Hot": {
+      "High": {
+        "DegreesCelsius": 60
+      },
+      "Low": {
+        "DegreesCelsius": 20
+      }
+    }
+  },
+  "SummaryWords": [
+    "Cool",
+    "Windy",
+    "Humid"
+  ]
+}
+```
+
+Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize to a `Stream`.  Async versions of the `Stream` overloads are available.
 
 ### Default serialization behavior
 
@@ -66,7 +115,7 @@ Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize
   * One-dimensional and jagged arrays (`ArrayName[][]`).
   * Types that implement `IList` or `IEnumerable`.
   * `Dictionary<string,TValue>`
-* The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) (number of nested types) is 64.
+* The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
 ### Serialize to UTF-8
 
@@ -78,7 +127,7 @@ string json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForeca
 
 As an alternative, a <xref:System.Text.Json.JsonSerializer.Serialize*> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is available.
 
-Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to or from strings (UTF-16).
+Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
 
 ## How to deserialize
 
@@ -93,16 +142,29 @@ Example JSON input:
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "temperatureC": 25,
+  "TemperatureC": 25,
   "Summary": "Hot",
-  "SummaryField": "Hot",
   "DatesAvailable": [
     "2019-08-01T00:00:00-07:00",
     "2019-08-02T00:00:00-07:00"
   ],
   "TemperatureRanges": {
-    "Cold": 20,
-    "Hot": 40
+    "Cold": {
+      "High": {
+        "DegreesCelsius": 20
+      },
+      "Low": {
+        "DegreesCelsius": -10
+      }
+    },
+    "Hot": {
+      "High": {
+        "DegreesCelsius": 60
+      },
+      "Low": {
+        "DegreesCelsius": 20
+      }
+    }
   },
   "SummaryWords": [
     "Cool",
@@ -121,10 +183,14 @@ Resulting property and field values:
 | Summary| Hot||
 | SummaryField| null | Not set because it's a field, not a property.|
 | DatesAvailable | 8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 | `IList<T>` and `IEnumerable<T>` implementations are supported. |
-| TemperatureRanges | Cold, 20<br>Hot, 40| `Dictionary<string,TValue>` is supported. |
+| TemperatureRanges | Cold, 20 High -10 Low<br>Hot, 60 High 20 Low| `Dictionary<string,TValue>` is supported. |
 | SummaryWords | Cool<br>Windy<br>Humid | Arrays are supported. |
 
-Comments or trailing commas in the JSON trigger exceptions.
+### Default deserialization behavior
+
+* If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
+* Deserialization of reference types without a parameterless constructor isn't supported.
+* Comments or trailing commas in the JSON trigger exceptions.
 
 ## Serialize to formatted JSON
 
@@ -229,7 +295,7 @@ Example JSON output:
 
 The property name set by this attribute:
 
-* Works in both directions, for serialization and deserialization.
+* Applies in both directions, for serialization and deserialization.
 * Takes precedence over property naming policies.
 
 ## Camel case JSON property names
@@ -268,7 +334,7 @@ class WeatherForecast
 
 The camel case property naming policy:
 
-* Works for serialization and deserialization.
+* Applies to serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes.
 
 ## Use custom JSON property naming policy
@@ -319,7 +385,7 @@ class WeatherForecast
 
 The JSON property naming policy:
 
-* Works for serialization and deserialization.
+* Applies to serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes.
 
 ## Exclude selected properties
@@ -439,7 +505,7 @@ Example object to serialize and JSON output:
 }
 ```
 
-The camel case property naming policy works for serialization only.
+The camel case property naming policy applies to serialization only.
 
 ## Case-insensitive property matching
 

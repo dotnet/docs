@@ -23,7 +23,7 @@ The following example defines a <xref:System.Windows.Media.SolidColorBrush> as a
 
 Every framework-level element (<xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) has a <xref:System.Windows.FrameworkElement.Resources%2A> property, which is a <xref:System.Windows.ResourceDictionary> type, that contains defined resources. You can define resources on any element, such as a <xref:System.Windows.Controls.Button>. However, resources are most often defined on the root element, which is <xref:System.Windows.Controls.Page> in the example.
 
-Each resource in a resource dictionary must have a unique key. When you define resources in markup, you assign the unique key through the [x:Key Directive](../../xaml-services/x-key-directive.md). Typically, the key is a string; however, you can also set it to other object types by using the appropriate markup extensions. Non-string keys for resources are used by certain feature areas in WPF, notably for styles, component resources, and data styling.
+Each resource in a resource dictionary must have a unique key. When you define resources in markup, you assign the unique key through the [x:Key Directive](../../framework/xaml-services/x-key-directive.md). Typically, the key is a string; however, you can also set it to other object types by using the appropriate markup extensions. Non-string keys for resources are used by certain feature areas in WPF, notably for styles, component resources, and data styling.
 
 You can use a defined resource with the resource markup extension syntax that specifies the key name of the resource. For example, use the resource as the value of a property on another element:
 

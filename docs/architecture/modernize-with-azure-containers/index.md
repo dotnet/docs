@@ -66,7 +66,7 @@ Figure 1-1 shows the possible paths you can take when you move existing .NET app
 
  ![Modernization paths for existing .NET applications and services](./media/image1-1.png)
 
-> **Figure 1-1**. Modernization paths for existing .NET applications and services
+**Figure 1-1**. Modernization paths for existing .NET applications and services
 
 Each migration approach has different benefits and reasons for using it. You can choose a single approach when you migrate apps to the cloud, or choose certain components from multiple approaches. Individual applications aren't limited to a single approach or maturity state. For instance, a common hybrid approach would have certain on-premises components plus other components in the cloud.
 
@@ -105,7 +105,7 @@ Figure 1-2 shows the primary technologies and architecture styles used at each o
 
 ![Primary technologies for each maturity level for modernizing existing .NET web applications](./media/image1-2.png)
 
-> **Figure 1-2.** Primary technologies for each maturity level for modernizing existing .NET web applications
+**Figure 1-2.** Primary technologies for each maturity level for modernizing existing .NET web applications
 
 Figure 1-2 highlights the most common scenarios, but many hybrid and mixed variations are possible when it comes to architecture. For example, the maturity models apply not only to monolithic architectures in existing web apps, but also to service orientation, N-Tier, and other architecture style variations. The higher focus or percentage on one or another architecture type and related technologies determines the overall maturity level of your applications.
 
@@ -124,7 +124,7 @@ Figure 1-3 shows the internal technologies that you can use for each maturity le
 
 ![Internal technologies for each modernization maturity level](./media/image1-3.png)
 
-> **Figure 1-3.** Internal technologies for each modernization maturity level
+**Figure 1-3.** Internal technologies for each modernization maturity level
 
 ## Lift and shift scenario
 
@@ -132,7 +132,7 @@ For lift and shift migrations, keep in mind that you can use many different vari
 
 ![Example of a pure IaaS scenario in the cloud](./media/image1-4.png)
 
-> **Figure 1-4**. Example of a pure IaaS scenario in the cloud
+**Figure 1-4**. Example of a pure IaaS scenario in the cloud
 
 ## Modernization scenarios
 
@@ -140,13 +140,13 @@ For modernization scenarios, you might have a pure Cloud-Optimized application t
 
 ![Example "pick and choose" scenario, with database on IaaS, DevOps, and containerization assets](./media/image1-5.png)
 
-> **Figure 1-5.** Example "pick and choose" scenario, with database on IaaS, DevOps, and containerization assets
+**Figure 1-5.** Example "pick and choose" scenario, with database on IaaS, DevOps, and containerization assets
 
 Next, as the ideal scenario for many existing .NET Framework applications to migrate, you could migrate to a Cloud-Optimized application, to get significant benefits from little work. This approach also sets you up for Cloud-Native as a possible future evolution. Figure 1-6 shows an example.
 
 ![Example Cloud-Optimized apps scenario, with Windows Containers and managed services](./media/image1-6.png)
 
-> **Figure 1-6.** Example Cloud-Optimized apps scenario, with Windows Containers and managed services
+**Figure 1-6.** Example Cloud-Optimized apps scenario, with Windows Containers and managed services
 
 Going even further, you could extend your existing Cloud-Optimized application by adding a few microservices for specific scenarios. This would move you partially to the level of Cloud-Native model, which is not the main focus of the present guidance.
 
@@ -156,7 +156,7 @@ This guide covers a specific subset of the example scenarios, as shown in Figure
 
 ![Cloud-Native is not covered in this guide](./media/image1-7.png)
 
-> **Figure 1-7.** Cloud-Native is not covered in this guide
+**Figure 1-7.** Cloud-Native is not covered in this guide
 
 The focus of this guide is specific. It shows you the path you can take to achieve a lift and shift of your existing .NET applications, without rearchitecting, and with no code changes. Ultimately, it shows you how to make your application Cloud-Optimized.
 

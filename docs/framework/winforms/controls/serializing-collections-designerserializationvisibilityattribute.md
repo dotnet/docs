@@ -84,8 +84,8 @@ To test the serialization behavior of your control, you will place it on a form 
 
 5. Type several strings in the **String Collection Editor**. Separate them by pressing **Enter** at the end of each string. Click **OK** when you are finished entering strings.
 
-> [!NOTE]
-> The strings you typed appear in the <xref:System.Windows.Forms.TextBox> of the `SerializationDemoControl`.
+    > [!NOTE]
+    > The strings you typed appear in the <xref:System.Windows.Forms.TextBox> of the `SerializationDemoControl`.
 
 6. In **Solution Explorer**, click the **Show All Files** button.
 

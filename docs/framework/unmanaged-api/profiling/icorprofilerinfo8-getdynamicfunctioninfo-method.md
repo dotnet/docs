@@ -65,7 +65,7 @@ This API can be used to retrieve information about dynamic methods, including a 
 
 **Library:** CorGuids.lib
 
-**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
 ## See also
 

@@ -18,8 +18,6 @@ The <xref:System.ServiceModel.Description.ClientCredentials> and <xref:System.Se
 
 - Perform as a factory for <xref:System.IdentityModel.Selectors.SecurityTokenManager> implementations.
 
-Both the <xref:System.ServiceModel.Description.ClientCredentials> and the <xref:System.ServiceModel.Description.ServiceCredentials> classes inherit from the abstract <xref:System.ServiceModel.Security.SecurityCredentialsManager> class that defines the contract for returning the <xref:System.IdentityModel.Selectors.SecurityTokenManager>.
-
 The default implementations provided in WCF support the system-provided credential types and create a security token manager that is capable of handling those credentials types.
 
 ## Reasons to Customize

@@ -23,18 +23,18 @@ This section discusses how to write an [!INCLUDE[adonet_ef](../../../../../inclu
   
 - Exposes metadata (tables and views, for example) via a conceptual model.  
   
- ![b42a7a5c&#45;0ac0&#45;4911&#45;86be&#45;0460a78760ba](../../../../../docs/framework/data/adonet/ef/media/b42a7a5c-0ac0-4911-86be-0460a78760ba.gif "b42a7a5c-0ac0-4911-86be-0460a78760ba")  
+ ![b42a7a5c&#45;0ac0&#45;4911&#45;86be&#45;0460a78760ba](./media/b42a7a5c-0ac0-4911-86be-0460a78760ba.gif "b42a7a5c-0ac0-4911-86be-0460a78760ba")  
   
 ## Sample  
  See the [Entity Framework Sample Provider](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0) for a sample of an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] provider that supports a data source other than SQL Server.  
   
 ## In This Section  
- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)  
+ [SQL Generation](sql-generation.md)  
   
- [Modification SQL Generation](../../../../../docs/framework/data/adonet/ef/modification-sql-generation.md)  
+ [Modification SQL Generation](modification-sql-generation.md)  
   
- [Provider Manifest Specification](../../../../../docs/framework/data/adonet/ef/provider-manifest-specification.md)  
+ [Provider Manifest Specification](provider-manifest-specification.md)  
   
 ## See also
 
-- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)
+- [Working with Data Providers](working-with-data-providers.md)

@@ -60,7 +60,7 @@ Console.WriteLine(customer1);
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Customer CustomerID="HUNGC">  
   <CompanyName>Hungry Coyote Import Store</CompanyName>  

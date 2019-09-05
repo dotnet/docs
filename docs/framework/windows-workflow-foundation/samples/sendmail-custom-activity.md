@@ -41,7 +41,7 @@ This sample demonstrates how to create a custom activity that derives from <xref
 ### Sending an email using tokens specified in the body  
  This code snippet demonstrates how you can send email with tokens in the body. Notice how the tokens are provided in the body property. Values for those tokens are provided to the tokens property.  
   
-```html  
+```csharp  
 IDictionary<string, string> tokens = new Dictionary<string, string>();  
 tokens.Add("@name", "John Doe");  
 tokens.Add("@date", DateTime.Now.ToString());  

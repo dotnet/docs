@@ -40,11 +40,13 @@ When installed, .NET Core consists of several components that are laid out as fo
 │       └── <netstandard version>        (15)
 ├── shared
 │   ├── Microsoft.NETCore.App
-│   │   └── <runtime version>    (5)
+│   │   └── <runtime version>     (5)
 │   ├── Microsoft.AspNetCore.App
-│   │   └── <aspnetcore version> (6)
-│   └── Microsoft.AspNetCore.All
-│       └── <aspnetcore version> (7)
+│   │   └── <aspnetcore version>  (6)
+│   ├── Microsoft.AspNetCore.All
+│   │   └── <aspnetcore version>  (6)
+│   └── Microsoft.WindowsDesktop.App
+│       └── <desktop app version> (7)
 └── templates
 │   └── <templates version>      (17)
 /
@@ -70,7 +72,9 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (5) **shared/Microsoft.NETCore.App/\<runtime version>** This framework contains the .NET Core runtime and supporting managed libraries.
 
-- (6,7) **shared/Microsoft.AspNetCore.{App,All}/\<aspnetcore version>** contains the ASP.NET Core libraries. The libraries under `Microsoft.AspNetCore.App` are developed and supported as part of the .NET Core project. The libraries under `Microsoft.AspNetCore.All` are a superset that also contains third-party libraries.
+- (6) **shared/Microsoft.AspNetCore.{App,All}/\<aspnetcore version>** contains the ASP.NET Core libraries. The libraries under `Microsoft.AspNetCore.App` are developed and supported as part of the .NET Core project. The libraries under `Microsoft.AspNetCore.All` are a superset that also contains third-party libraries.
+
+- (7) **shared/Microsoft.Desktop.App/\<desktop app version>** contains the Windows desktop libraries. This isn't included on non-Windows platforms.
 
 - (8) **LICENSE.txt,ThirdPartyNotices.txt** are the .NET Core license and licenses of third-party libraries used in .NET Core, respectively.
 
@@ -108,7 +112,7 @@ The following lists the recommended packages:
 * `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime
   * **Version:** \<aspnetcore runtime version>
   * **Example:** aspnetcore-runtime-2.1
-  * **Contains:** (6),(7)
+  * **Contains:** (6)
   * **Dependencies:** `dotnet-runtime-[major].[minor]`
 
 * `dotnet-runtime-deps-[major].[minor]` _(Optional)_ - Installs the dependencies for running self-contained applications

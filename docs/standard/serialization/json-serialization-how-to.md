@@ -445,6 +445,8 @@ class WeatherForecast
 }
 ```
 
+This option applies only to serialization. During deserialization, read-only properties are ignored by default. A property is read-only if it contains a public getter but not a public setter.
+
 ## Exclude null value properties
 
 Set <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> to true:
@@ -457,7 +459,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example object to serialize and JSON output:
+Example object to serialize:
 
 |Property |Value  |
 |---------|---------|
@@ -465,12 +467,16 @@ Example object to serialize and JSON output:
 | TemperatureC| 25 |
 | Summary| null|
 
+`Summary` is omitted from the JSON output:
+
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
   "TemperatureC": 25
 }
 ```
+
+This setting applies to serialization and deserialization.
 
 ## Camel case dictionary keys
 
@@ -539,7 +545,7 @@ Resulting object property values after matching camel case to Pascal case proper
 
 ## Include properties of derived classes
 
-Call the overload of `Serialize` that lets you specify the type at runtime:
+Call an overload of `Serialize` that lets you specify the type at runtime:
 
 ```csharp
 json = JsonSerializer.Serialize(weatherForecast, weatherForecast.GetType());
@@ -583,6 +589,17 @@ In this scenario, the `WindSpeed` property is not serialized even if the weather
 ```
 
 This behavior is intended to help prevent accidental exposure of data in a derived runtime-created type.
+
+When you call a `Serialize` overload with `GetType()`, the `WindSpeed` property is included:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureC": 25,
+  "Summary": "Hot",
+  "Wind": 35
+}
+```
 
 ## Use Utf8JsonWriter directly
 

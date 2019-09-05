@@ -11,6 +11,9 @@ ms.assetid: 78519531-ad7a-40d3-b3e7-42f1103d8854
 ---
 # \<system.serviceModel>
 This configuration section contains all the Windows Communication Foundation (WCF) ServiceModel configuration elements.  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.serviceModel>**  
   
 ## Syntax  
   

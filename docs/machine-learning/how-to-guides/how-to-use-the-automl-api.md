@@ -21,7 +21,7 @@ Example:
 ```csharp
 using Microsoft.ML;
 using Microsoft.ML.AutoML;
-    ...
+    // ...
     MLContext mlContext = new MLContext();
     IDataView trainDataView = mlContext.Data.LoadFromTextFile<SentimentIssue>("my-data-file.csv", hasHeader: true);
 ```

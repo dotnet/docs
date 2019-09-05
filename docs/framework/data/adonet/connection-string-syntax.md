@@ -73,9 +73,9 @@ When you connect to Azure SQL Database or to Azure SQL Data Warehouse and provid
 To connect to a named instance of SQL Server, use the *server name\instance name* syntax.  
   
 ```csharp  
-Data Source=MySqlServer\MSSQL1;"  
+"Data Source=MySqlServer\MSSQL1;"  
 ```  
- 
+
 You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource%2A> property of the `SqlConnectionStringBuilder` to the instance name when building a connection string. The <xref:System.Data.SqlClient.SqlConnection.DataSource%2A> property of a <xref:System.Data.SqlClient.SqlConnection> object is read-only.  
   
 ### Type System Version Changes  

@@ -22,7 +22,7 @@ The globally unique identifier (GUID) data type in SQL Server is represented by 
   
  This example produces the following results.  
   
-```  
+```output  
 Unsorted Guids:  
 3aaaaaaa-bbbb-cccc-dddd-2eeeeeeeeeee  
 2aaaaaaa-bbbb-cccc-dddd-1eeeeeeeeeee  

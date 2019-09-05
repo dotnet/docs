@@ -33,19 +33,19 @@ A null value in a relational database is used when the value in a column is unkn
   
  The ANSI SQL-92 standard does not support *columnName* = NULL in a WHERE clause. In SQL Server, the ANSI_NULLS option controls both default nullability in the database and evaluation of comparisons against null values. If ANSI_NULLS is turned on (the default), the IS NULL operator must be used in expressions when testing for null values. For example, the following comparison always yields unknown when ANSI_NULLS is on:  
   
-```  
+```sql
 colname > NULL  
 ```  
   
  Comparison to a variable containing a null value also yields unknown:  
   
-```  
+```sql
 colname > @MyVariable  
 ```  
   
  Use the IS NULL or IS NOT NULL predicate to test for a null value. This can add complexity to the WHERE clause. For example, the TerritoryID column in the AdventureWorks Customer table allows null values. If a SELECT statement is to test for null values in addition to others, it must include an IS NULL predicate:  
   
-```  
+```sql
 SELECT CustomerID, AccountNumber, TerritoryID  
 FROM AdventureWorks.Sales.Customer  
 WHERE TerritoryID IN (1, 2, 3)  
@@ -106,7 +106,7 @@ WHERE TerritoryID IN (1, 2, 3)
   
  This example displays the following results:  
   
-```  
+```output
 isColumnNull=False, ID=123, Description=Side Mirror  
 isColumnNull=True, ID=Null, Description=Null  
 ```  
@@ -121,7 +121,7 @@ isColumnNull=True, ID=Null, Description=Null
   
  The code produces the following output:  
   
-```  
+```output
 SqlString.Equals shared/static method:  
   Two nulls=Null  
   

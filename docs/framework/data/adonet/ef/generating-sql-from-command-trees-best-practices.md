@@ -144,4 +144,4 @@ When mapping conceptual (EDM) types to provider types, you should map to the wid
 
 ## See also
 
-- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)
+- [SQL Generation](sql-generation.md)

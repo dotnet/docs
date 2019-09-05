@@ -98,4 +98,4 @@ WHERE p1 != REF(p2)
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Overview](entity-sql-overview.md)

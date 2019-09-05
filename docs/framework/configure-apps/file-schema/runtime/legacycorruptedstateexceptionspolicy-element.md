@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<legacyCorruptedStateExceptionsPolicy> Element
 Specifies whether the common language runtime allows managed code to catch access violations and other corrupted state exceptions.  
   
- \<configuration>  
-\<runtime>  
-\<legacyCorruptedStateExceptionsPolicy>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<legacyCorruptedStateExceptionsPolicy>**  
   
 ## Syntax  
   

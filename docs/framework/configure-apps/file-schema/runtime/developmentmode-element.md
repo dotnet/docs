@@ -15,9 +15,9 @@ ms.author: "ronpet"
 # \<developmentMode> Element
 Specifies whether the runtime searches for assemblies in directories specified by the DEVPATH environment variable.  
   
- \<configuration>  
-\<runtime>  
-\<developmentMode>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<developmentMode>**  
   
 ## Syntax  
   

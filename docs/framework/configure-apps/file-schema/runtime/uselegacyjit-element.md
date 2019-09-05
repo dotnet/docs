@@ -10,9 +10,9 @@ ms.author: "ronpet"
 
 Determines whether the common language runtime uses the legacy 64-bit JIT compiler for just-in-time compilation.  
   
-\<configuration>  
-\<runtime>  
-\<useLegacyJit>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<useLegacyJit>**  
   
 ## Syntax  
   

@@ -1,7 +1,6 @@
 ---
 title: "try-catch-finally - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "catch-finally_CSharpKeyword"
@@ -23,7 +22,7 @@ A common usage of `catch` and `finally` together is to obtain and use resources 
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The try statement](~/_csharplang/spec/statements.md#the-try-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 

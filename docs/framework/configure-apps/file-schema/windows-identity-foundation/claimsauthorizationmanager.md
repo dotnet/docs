@@ -7,9 +7,10 @@ author: "BrucePerlerMS"
 # \<claimsAuthorizationManager>
 Registers a claims authorization manager for the incoming claims.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<claimsAuthorizationManager>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<claimsAuthorizationManager>**  
   
 ## Syntax  
   

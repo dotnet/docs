@@ -24,7 +24,7 @@ foreach (XAttribute a in listOfAttributes)
   
  This code produces the following output:  
   
-```  
+```output  
 ID="1243"  
 Type="int"  
 ConvertableTo="double"  

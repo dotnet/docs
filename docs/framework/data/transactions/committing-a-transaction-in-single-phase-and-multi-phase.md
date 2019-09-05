@@ -7,13 +7,13 @@ dev_langs:
 ms.assetid: 694ea153-e4db-41ae-96ac-9ac66dcb69a9
 ---
 # Committing a Transaction in Single-Phase and Multi-Phase
-Each resource used in a transaction is managed by a resource manager (RM), whose actions are coordinated by a transaction manager (TM). The [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md) topic discusses how a resource (or multiple resources) can be enlisted in a transaction. This topic discusses how transaction commitment can be coordinated among enlisted resources.  
+Each resource used in a transaction is managed by a resource manager (RM), whose actions are coordinated by a transaction manager (TM). The [Enlisting Resources as Participants in a Transaction](enlisting-resources-as-participants-in-a-transaction.md) topic discusses how a resource (or multiple resources) can be enlisted in a transaction. This topic discusses how transaction commitment can be coordinated among enlisted resources.  
   
  At the end of the transaction, the application requests the transaction to be either committed or rolled back. The transaction manager must eliminate risks like some resource managers voting to commit while others voting to roll back the transaction.  
   
  If your transaction involves more than one resource, you must perform a two-phase commit (2PC). The two-phase commit protocol (the prepare phase and the commit phase) ensures that when the transaction ends, all changes to all resources are either totally committed or fully rolled back. All the participants are then informed of the final result. For a detailed discussion of the two-phase commit protocol, please consult the book "*Transaction Processing : Concepts and Techniques (Morgan Kaufmann Series in Data Management Systems) ISBN:1558601902*" by Jim Gray.  
   
- You can also optimize your transaction's performance by taking part in the Single Phase Commit protocol. For more information, see [Optimization using Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md).  
+ You can also optimize your transaction's performance by taking part in the Single Phase Commit protocol. For more information, see [Optimization using Single Phase Commit and Promotable Single Phase Notification](optimization-spc-and-promotable-spn.md).  
   
  If you just want to be informed of a transaction's outcome, and do not want to participate in voting, you should register for the <xref:System.Transactions.Transaction.TransactionCompleted> event.  
   
@@ -101,9 +101,9 @@ public void InDoubt (Enlistment enlistment)
 ```  
   
 ## Single Phase Commit Optimization  
- The Single Phase Commit protocol is more efficient at run time because all updates are done without any explicit coordination. For more information on this protocol, see [Optimization using Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md).  
+ The Single Phase Commit protocol is more efficient at run time because all updates are done without any explicit coordination. For more information on this protocol, see [Optimization using Single Phase Commit and Promotable Single Phase Notification](optimization-spc-and-promotable-spn.md).  
   
 ## See also
 
-- [Optimization using Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)
-- [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)
+- [Optimization using Single Phase Commit and Promotable Single Phase Notification](optimization-spc-and-promotable-spn.md)
+- [Enlisting Resources as Participants in a Transaction](enlisting-resources-as-participants-in-a-transaction.md)

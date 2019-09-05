@@ -71,7 +71,7 @@ The instance-expression must be an entity/ref type.
 
 The following Entity SQL query uses the NAVIGATE operator to navigate over the relationship established between Address and SalesOrderHeader entity types. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:
 
-1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).
 
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:
 
@@ -79,5 +79,5 @@ The following Entity SQL query uses the NAVIGATE operator to navigate over the r
 
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [How to: Navigate Relationships with Navigate Operator](../../../../../../docs/framework/data/adonet/ef/language-reference/navigate-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [How to: Navigate Relationships with Navigate Operator](navigate-entity-sql.md)

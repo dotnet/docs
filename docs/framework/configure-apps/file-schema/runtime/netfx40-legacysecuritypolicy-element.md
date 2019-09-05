@@ -12,9 +12,9 @@ ms.author: "ronpet"
 
 Specifies whether the runtime uses legacy code access security (CAS) policy.
 
-\<configuration>\
-\<runtime>\
-\<NetFx40_LegacySecurityPolicy>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_LegacySecurityPolicy>**  
 
 ## Syntax
 

@@ -19,5 +19,5 @@ The <xref:System.Data.DataTableReader> obtains the contents of one or more <xref
   
 ## See also
 
-- [DataTableReaders](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatablereaders.md)
+- [DataTableReaders](datatablereaders.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

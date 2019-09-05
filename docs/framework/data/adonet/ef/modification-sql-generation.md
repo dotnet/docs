@@ -8,7 +8,7 @@ ms.assetid: 2188a39d-46ed-4a8b-906a-c9f15e6fefd1
 
 This section discusses how to develop a modification SQL generation module for your (SQL:1999-compliant database) provider. This module is responsible for translating a modification command tree into the appropriate SQL INSERT, UPDATE or DELETE statements.
 
-For information about SQL generation for select statements, see [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md).
+For information about SQL generation for select statements, see [SQL Generation](sql-generation.md).
 
 ## Overview of Modification Command Trees
 
@@ -24,7 +24,7 @@ A DbModificationCommandTree is an object model representation of a modification 
 
 DbModificationCommandTree and its implementations that are produced by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] always represent a single row operation. This section describes these types with their constraints in the .NET Framework version 3.5.
 
-![Diagram](../../../../../docs/framework/data/adonet/ef/media/558ba7b3-dd19-48d0-b91e-30a76415bf5f.gif "558ba7b3-dd19-48d0-b91e-30a76415bf5f")
+![Diagram](./media/558ba7b3-dd19-48d0-b91e-30a76415bf5f.gif "558ba7b3-dd19-48d0-b91e-30a76415bf5f")
 
 DbModificationCommandTree has a Target property that represents the target set for the modification operation. The Target’s Expression property, which defines the input set is always DbScanExpression.  A DbScanExpression can either represent a table or a view, or a set of data defined with a query if the metadata property "Defining Query" of its Target is non-null.
 
@@ -297,4 +297,4 @@ where ([CategoryID] = @p0)
 
 ## See also
 
-- [Writing an Entity Framework Data Provider](../../../../../docs/framework/data/adonet/ef/writing-an-ef-data-provider.md)
+- [Writing an Entity Framework Data Provider](writing-an-ef-data-provider.md)

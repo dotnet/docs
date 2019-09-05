@@ -31,7 +31,7 @@ foreach (var i in query2)
 
 This example produces the following output:
 
-```
+```output
 4
 ```
 

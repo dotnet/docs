@@ -10,10 +10,10 @@ ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
 # \<namedCaches> Element (Cache Settings)
 Specifies a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances. The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file.  
   
- \<configuration>  
-\< system.runtime.caching>  
-\<memoryCache>  
-\<namedCaches>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.caching>**](system-runtime-caching-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<memoryCache>**](memorycache-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<namedCaches>**  
   
 ## Syntax  
   
@@ -50,7 +50,9 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 |Element|Description|  
 |-------------|-----------------|  
+|[\<configuration>](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
 |[\<memoryCache>](memorycache-element-cache-settings.md)|Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class.|  
+|[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Contains types that let you implement output caching in applications that are built into the .NET Framework.|  
   
 ## Remarks  
  The memory cache configuration section of the Web.config file can contain `add`, `remove`, and `clear` attributes for the `namedCaches` collection. Each `namedCaches` entry is uniquely identified by the `name` attribute.  

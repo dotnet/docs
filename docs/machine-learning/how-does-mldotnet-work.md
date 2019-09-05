@@ -1,7 +1,7 @@
 ---
 title: What is ML.NET and how does it work?
 description: ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network to use ML.NET. This article explains the basics of machine learning in ML.NET. 
-ms.date: 07/17/2019
+ms.date: 08/26/2019
 ms.topic: overview
 ms.custom: mvc
 ms.author: nakersha
@@ -225,7 +225,7 @@ The `CreatePredictionEngine()` method takes an input class and an output class. 
 
 At the core of an ML.NET machine learning pipeline are [DataView](xref:Microsoft.ML.IDataView) objects.
 
-Each transformation in the pipeline has an input schema (data names, types, and sizes that the transform expects to see on its input); and an output schema (data names, types, and sizes that the transform produces after the transformation). 
+Each transformation in the pipeline has an input schema (data names, types, and sizes that the transform expects to see on its input); and an output schema (data names, types, and sizes that the transform produces after the transformation). The following document provides an in-depth explanation of the [IDataView interface and its type system](https://xadupre.github.io/machinelearningext/mlnetdocs/idataviewtypesystem.html).
 
 If the output schema from one transform in the pipeline doesn't match the input schema of the next transform, ML.NET will throw an exception.
 

@@ -9,7 +9,7 @@ ms.assetid: 8f5eec26-b809-4aca-8778-7e202356d856
 # DataRows and DataRowViews
 A <xref:System.Data.DataView> exposes an enumerable collection of <xref:System.Data.DataRowView> objects. The **DataRowView** objects expose values as object arrays that are indexed by either the name or the ordinal reference of the column in the underlying table. You can access the <xref:System.Data.DataRow> that is exposed by the **DataRowView** by using the <xref:System.Data.DataRowView.Row%2A> property of the **DataRowView**.  
   
- When you view values by using a **DataRowView**, the <xref:System.Data.DataView.RowStateFilter%2A> property of the **DataView** determines which row version of the underlying **DataRow** is exposed. For information about accessing different row versions using a **DataRow**, see [Row States and Row Versions](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md).  
+ When you view values by using a **DataRowView**, the <xref:System.Data.DataView.RowStateFilter%2A> property of the **DataView** determines which row version of the underlying **DataRow** is exposed. For information about accessing different row versions using a **DataRow**, see [Row States and Row Versions](row-states-and-row-versions.md).  
   
  The following code example displays all the current and original values in a table.  
   
@@ -59,5 +59,5 @@ public static void WriteView(DataView thisDataView)
 - <xref:System.Data.DataViewRowState>
 - <xref:System.Data.DataView>
 - <xref:System.Data.DataRowView>
-- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)
+- [DataViews](dataviews.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

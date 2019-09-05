@@ -32,7 +32,7 @@ foreach (var r in sortedElements)
 
 This code produces the following output:
 
-```
+```output
 CustomerID:LETSS EmployeeID:1 ShipPostalCode:94117 OrderDate:6/25/1997
 CustomerID:LETSS EmployeeID:8 ShipPostalCode:94117 OrderDate:10/27/1997
 CustomerID:LETSS EmployeeID:6 ShipPostalCode:94117 OrderDate:11/10/1997
@@ -84,7 +84,7 @@ foreach (var r in sortedElements)
 
 This code produces the following output:
 
-```
+```output
 CustomerID:LETSS EmployeeID:1 ShipPostalCode:94117 OrderDate:6/25/1997
 CustomerID:LETSS EmployeeID:8 ShipPostalCode:94117 OrderDate:10/27/1997
 CustomerID:LETSS EmployeeID:6 ShipPostalCode:94117 OrderDate:11/10/1997

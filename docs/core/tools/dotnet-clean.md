@@ -17,7 +17,7 @@ ms.date: 06/26/2019
 
 ## Synopsis
 
-```
+```console
 dotnet clean [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--interactive] 
     [--nologo] [-o|--output] [-r|--runtime] [-v|--verbosity]
 dotnet clean [-h|--help]

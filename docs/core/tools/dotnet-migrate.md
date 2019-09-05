@@ -20,7 +20,7 @@ ms.date: 06/26/2019
 
 ## Synopsis
 
-```
+```console
 dotnet migrate [<SOLUTION_FILE|PROJECT_DIR>] [--format-report-file-json] [-r|--report-file] [-s|--skip-project-references] [--skip-backup] [-t|--template-file] [-v|--sdk-package-version] [-x|--xproj-file]
 dotnet migrate [-h|--help]
 ```

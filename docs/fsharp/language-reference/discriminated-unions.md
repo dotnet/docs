@@ -81,7 +81,7 @@ Normally, the case identifiers can be used without qualifying them with the name
 In F# Discriminated Unions are often used in domain-modeling for wrapping a single type. It's easy to extract the underlying value via pattern matching as well. You don't need to use a match expression for a single case:
 
 ```fsharp
-let ([UnionCaseName] [values]) = [UnionValue]
+let ([UnionCaseIdentifier] [values]) = [UnionValue]
 ```
 
 The following example demonstrates this:
@@ -194,10 +194,10 @@ type Shape =
 
 The following attributes are commonly seen in discriminated unions:
 
-* `[<RequireQualifiedAccess>]`
-* `[<NoEquality>]`
-* `[<NoComparison>]`
-* `[<Struct>]`
+- `[<RequireQualifiedAccess>]`
+- `[<NoEquality>]`
+- `[<NoComparison>]`
+- `[<Struct>]`
 
 ## See also
 

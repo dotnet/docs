@@ -19,4 +19,4 @@ Boolean operators work as expected in the common language runtime (CLR), except 
   
 ## See also
 
-- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
+- [Data Types and Functions](data-types-and-functions.md)

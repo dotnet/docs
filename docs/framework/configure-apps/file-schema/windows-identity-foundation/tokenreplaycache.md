@@ -7,10 +7,11 @@ author: "BrucePerlerMS"
 # \<tokenReplayCache>
 Registers a token replay cache with a service or a security token handler collection.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<caches>  
-\<tokenReplayCache>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<caches>**](caches.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<tokenReplayCache>**  
   
 ## Syntax  
   

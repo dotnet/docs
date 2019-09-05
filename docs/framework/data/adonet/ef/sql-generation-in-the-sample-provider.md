@@ -11,10 +11,10 @@ The [Entity Framework Sample Provider](https://code.msdn.microsoft.com/windowsde
 ## In This Section  
  This section includes the following topics:  
   
- [Architecture and Design](../../../../../docs/framework/data/adonet/ef/architecture-and-design.md)  
+ [Architecture and Design](architecture-and-design.md)  
   
- [Walkthrough: SQL Generation](../../../../../docs/framework/data/adonet/ef/walkthrough-sql-generation.md)  
+ [Walkthrough: SQL Generation](walkthrough-sql-generation.md)  
   
 ## See also
 
-- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)
+- [SQL Generation](sql-generation.md)

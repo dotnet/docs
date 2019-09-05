@@ -22,19 +22,19 @@ You can send arguments to the `Main` method by defining the method in one of the
   
  You can also convert the string arguments to numeric types by using the <xref:System.Convert> class or the `Parse` method. For example, the following statement converts the `string` to a `long` number by using the <xref:System.Int64.Parse%2A> method:  
   
-```  
+```csharp  
 long num = Int64.Parse(args[0]);  
 ```  
   
  It is also possible to use the C# type `long`, which aliases `Int64`:  
   
-```  
+```csharp  
 long num = long.Parse(args[0]);  
 ```  
   
  You can also use the `Convert` class method `ToInt64` to do the same thing:  
   
-```  
+```csharp  
 long num = Convert.ToInt64(s);  
 ```  
   

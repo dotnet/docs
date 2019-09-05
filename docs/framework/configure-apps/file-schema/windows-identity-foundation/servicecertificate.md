@@ -7,9 +7,10 @@ author: "BrucePerlerMS"
 # \<serviceCertificate>
 Configures the X.509 certificate that is used to encrypt and decrypt tokens.  
   
- \<system.identityModel.services>  
-\<federationConfiguration>  
-\<serviceCertificate>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceCertificate>**  
   
 ## Syntax  
   

@@ -47,7 +47,7 @@ The statements in the *initializer* section are executed only once, before enter
 
   - creation of an object by using the [new](../operators/new-operator.md) operator
 
-  - [await](await.md) expression
+  - [await](../operators/await.md) expression
 
 The *initializer* section in the example above declares and initializes the local loop variable `i`:
 
@@ -79,7 +79,7 @@ The *iterator* section defines what happens after each iteration of the body of 
 
 - creation of an object by using the [new](../operators/new-operator.md) operator
 
-- [await](await.md) expression
+- [await](../operators/await.md) expression
 
 The *iterator* section in the example above increments the local loop variable:
 

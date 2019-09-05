@@ -9,10 +9,11 @@ ms.assetid: ce2a63a8-c829-4742-a6ea-72ee5d89f169
 # \<add> Element for \<namedCaches>
 Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.  
   
- \<system.runtime.caching>  
-\<memoryCache>  
-\<namedCaches>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.caching>**](system-runtime-caching-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<memoryCache>**](memorycache-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<namedCaches>**](namedcaches-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   

@@ -1,6 +1,6 @@
 ---
-title: Authentication and Authorization
-description: gRPC for WCF Developers | Authentication and Authorization
+title: Authentication and authorization - gRPC for WCF developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -19,7 +19,7 @@ The ASP.NET Core implementation of gRPC supports authentication using most of th
 - OpenID Connect
 - WS-Federation
 
-For more information see the [Authentication and authorization documentation on Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/grpc/authn-and-authz?view=aspnetcore-3.0).
+For more information see the [Authentication and authorization documentation on Microsoft Docs](https://docs.microsoft.com/aspnet/core/grpc/authn-and-authz?view=aspnetcore-3.0).
 
 > [!NOTE]
 > When using gRPC over an SSL/TLS encrypted connection, all traffic between clients and servers is already encrypted, even if you don't use channel-level authentication.

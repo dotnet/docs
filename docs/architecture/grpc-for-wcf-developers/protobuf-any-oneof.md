@@ -1,6 +1,6 @@
 ---
-title: Any and OneOf for variant types
-description: gRPC for WCF Developers | Any and OneOf for variant types
+title: Any and OneOf for variant types - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

@@ -1,6 +1,6 @@
 ---
-title: Load-balancing gRPC
-description: gRPC for WCF Developers | Load-balancing gRPC
+title: Load-balancing gRPC - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

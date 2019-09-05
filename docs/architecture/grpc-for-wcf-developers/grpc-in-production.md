@@ -1,6 +1,6 @@
 ---
-title: gRPC in Production
-description: gRPC for WCF Developers | gRPC in Production
+title: gRPC in production - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

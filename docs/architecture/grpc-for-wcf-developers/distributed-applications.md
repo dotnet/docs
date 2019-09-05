@@ -1,6 +1,6 @@
 ---
-title: Distributed Applications and Microservices
-description: gRPC for WCF Developers | Distributed Applications, Microservices, etc.
+title: Distributed applications and microservices - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

@@ -1,11 +1,11 @@
 ---
-title: WCF Bindings and Transports
-description: gRPC for WCF Developers | WCF Bindings and Transports
+title: WCF bindings and transports - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# WCF Bindings and Transports
+# WCF bindings and transports
 
 WCF has lots of different built in *bindings* specifying different network protocols, wire formats and other implementation details. gRPC effectively has just one network protocol and one wire format. However, you are still likely to discover that gRPC offers the best solution in most cases. What follows is a short discussion about the most relevant WCF Bindings and how they compare to their equivalent in gRPC.
 

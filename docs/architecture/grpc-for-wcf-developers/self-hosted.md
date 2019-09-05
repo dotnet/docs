@@ -1,6 +1,6 @@
 ---
-title: Self-hosted gRPC applications
-description: gRPC for WCF Developers | Self-hosted gRPC applications
+title: Self-hosted gRPC applications - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

@@ -1,6 +1,6 @@
 ---
-title: Why gRPC is recommended for WCF developers
-description: gRPC for WCF Developers | Why gRPC is recommended for WCF developers
+title: Why gRPC is recommended for WCF developers - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -25,7 +25,7 @@ As already discussed, using HTTP/2 rather than HTTP/1.1 removes the requirement 
 
 There are gRPC tools and libraries for all major programming languages and platforms, including .NET, Java, Python, Go, C++, Node.js, Swift, Dart, Ruby, and PHP. Thanks to the Protocol Buffers binary wire format and the efficient code generation for each platform, developers can achieve performance better than WCF's NetTCP bindings while still enjoying full cross-platform support.
 
-### Simplicity and Productivity
+### Simplicity and productivity
 
 gRPC is a comprehensive RPC solution. It has thoroughly addressed the full range of connectivity issues. gRPC works consistently across multiple languages. gRPC is simple with much of the boilerplate auto-generated. Therefore more developer time is freed up to focus on Business Logic.
 

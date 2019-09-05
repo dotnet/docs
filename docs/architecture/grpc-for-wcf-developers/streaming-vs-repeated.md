@@ -1,11 +1,11 @@
 ---
-title: Streaming vs Repeated
-description: gRPC for WCF Developers | Streaming vs Repeated
+title: Stream vs repeated - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Streaming vs Repeated
+# Stream vs repeated
 
 gRPC services provide two ways of returning data-sets, or lists of objects. The Protocol Buffers message specification uses the `repeated` keyword for declaring lists or arrays of messages within another message. The gRPC service specification uses the `stream` keyword to declare a long-running persistent connection over which multiple messages are sent, and can be processed, individually. The `stream` feature can also be used for long-running temporal data such as notifications or log messages, but this chapter will consider its use for returning a single data-set.
 

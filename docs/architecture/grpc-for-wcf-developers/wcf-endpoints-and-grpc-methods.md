@@ -1,6 +1,6 @@
 ---
-title: WCF Bindings and Transports
-description: gRPC for WCF Developers | WCF Bindings and Transports
+title: WCF endpoints and gRPC methods - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

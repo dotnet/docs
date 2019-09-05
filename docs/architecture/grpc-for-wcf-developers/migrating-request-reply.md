@@ -1,13 +1,13 @@
 ---
-title: Migrating a Request-Reply service to gRPC
-description: gRPC for WCF Developers | Migrating a Request-Reply service to gRPC
+title: Migrating a request-reply service to gRPC - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Request-Reply Services
+# Migrating a request-reply service to gRPC
 
-The TraderSys solution includes a simple Request-Reply Portfolio service to download a single Portfolio, or all Portfolios for a given Trader. The service is defined in the `interface IPortfolioService` with a `ServiceContract` attribute:
+The TraderSys solution includes a simple Request-Reply Portfolio service to download a single portfolio, or all portfolios for a given Trader. The service is defined in the `interface IPortfolioService` with a `ServiceContract` attribute:
 
 ```csharp
 [ServiceContract]
@@ -54,7 +54,7 @@ public class PortfolioItem
 }
 ```
 
-The `ServiceContract` implementation uses a repository class provided via Dependency Injection that returns instances of the `DataContract` types.
+The `ServiceContract` implementation uses a repository class provided via dependency injection that returns instances of the `DataContract` types.
 
 ```csharp
 public class PortfolioService : IPortfolioService
@@ -78,7 +78,7 @@ public class PortfolioService : IPortfolioService
 }
 ```
 
-## Converting the DataContracts to gRPC Messages
+## Converting the DataContracts to gRPC messages
 
 The `PortfolioItem` class will be converted to a Protobuf message first, as the `Portfolio` class depends on it. The class is very simple, and three of the properties map directly to gRPC data types. The `Cost` property, representing the price paid for the shares at purchase, is a `decimal` field, and gRPC only supports `float` or `double` for real numbers, so this field type will be `double`.
 
@@ -104,7 +104,7 @@ message Portfolio {
 }
 ```
 
-## Converting the ServiceContract to a gRPC Service
+## Converting the ServiceContract to a gRPC service
 
 The WCF `Get` method takes two parameters: `Guid traderId` and `int portfolioId`. gRPC service methods take a single parameter, so a message must be created to hold the two values. It's common to name these request objects with the same name as the method and the suffix `Request`. Again, `string` is being used for the `traderId` field instead of `Guid`.
 
@@ -204,7 +204,7 @@ public class PortfolioItem
 }
 ```
 
-## Dependency Injection
+## Dependency injection
 
 Now you can add a reference to this library to the gRPC application project and consume the `PortfolioRepository` class using dependency injection in the gRPC service implementation. In the WCF application, dependency injection was provided by the Autofac IoC container. ASP.NET Core has dependency injection baked in; the repository can be registered in the `ConfigureServices` method in the `Startup` class.
 
@@ -358,7 +358,7 @@ public override async Task<GetAllResponse> GetAll(GetAllRequest request, ServerC
 
 Having successfully migrated the WCF application to gRPC, let's look at creating a client for it from the `.proto` file.
 
-## Generating Client code
+## Generating client code
 
 Create a .NET Standard class library in the same solution to contain the client. This is primarily as an example of creating client code, but such a library could be packaged using NuGet and distributed on an internal repository for other .NET teams to consume. Go ahead and add a new .NET Standard Class Library called `TraderSys.Portfolios.Client` to the solution and delete the `Class1.cs` file.
 

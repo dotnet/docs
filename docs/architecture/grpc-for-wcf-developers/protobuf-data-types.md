@@ -1,11 +1,11 @@
 ---
-title: Data Types
-description: gRPC for WCF Developers | Data Types
+title: Data types - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Scalar Data Types
+# Scalar data types
 
 Protobuf supports a range of native scalar value types. This table lists them all with their equivalent C# type.
 
@@ -36,7 +36,7 @@ Protobuf supports a range of native scalar value types. This table lists them al
 
 ## Other .NET primitive types
 
-### Dates and Times
+### Dates and times
 
 The native scalar types do not provide for date and time values, equivalent to C#'s `DateTimeOffset`, `DateTime` and `TimeSpan`. These types can be specified using some of Google's "Well Known Types" extensions, which provide code generation and runtime support for more complex field types across the supported platforms. To use them, you need to import them in your `.proto` file, like this:
 
@@ -59,7 +59,7 @@ message Meeting {
 
 The `Guid` type, known as `UUID` on other platforms, is not directly supported by Protobuf and there is no well-known type for it. The best approach is to handle `Guid` values as `string` fields, using the standard `8-4-4-4-12` hexadecimal format (e.g. `45a9fda3-bd01-47a9-8460-c1cd7484b0b3`) which can be parsed by all languages and platforms. You should not use a `bytes` field for `Guid` values, as problems with endian-ness can result in erratic behavior when interacting with other platforms, such as Java.
 
-### Nullable Types
+### Nullable types
 
 The Protobuf code generation for C# will use the native types, such as `int` for `int32`. This means that the values are always included and can't be null. For values that require explicit null, where you would use e.g. `int?` in your C# code, Protobuf's "Well Known Types" include wrappers that are compiled to nullable C# types. To use them, import `wrappers.proto` into your `.proto` file, like this:
 

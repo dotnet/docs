@@ -1,6 +1,6 @@
 ---
-title: Approach
-description: gRPC for WCF Developers | Approach
+title: Approach - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

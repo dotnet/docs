@@ -1,6 +1,6 @@
 ---
-title: Reserved fields
-description: gRPC for WCF Developers | Reserved fields
+title: Reserved fields - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

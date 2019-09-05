@@ -1,11 +1,11 @@
 ---
-title: Messages
-description: gRPC for WCF Developers | Messages
+title: Protobuf messages - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Protobuf Messages
+# Protobuf messages
 
 Let's look at a simple example of a Protobuf message, defining a `Stock` message.
 

@@ -1,6 +1,6 @@
 ---
-title: Channel Credentials
-description: gRPC for WCF Developers | Channel Credentials
+title: Channel credentials - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -11,11 +11,11 @@ Channel credentials are, as the name implies, attached to the underlying gRPC ch
 
 Channel credentials can be combined with call credentials to provide comprehensive security for a gRPC service.
 
-Certificate authentication works for gRPC the same way it works for ASP.NET Core. The configuration process will be summarized here, but more information is available in the [Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/certauth?view=aspnetcore-3.0).
+Client certificate authentication works for gRPC the same way it works for ASP.NET Core. The configuration process will be summarized here, but more information is available in the [Microsoft Docs](https://docs.microsoft.com/aspnet/core/security/authentication/certauth?view=aspnetcore-3.0).
 
 For development purposes you can use a self-signed certificate, but for production you should use a proper HTTPS certificate signed by a trusted authority.
 
-## Adding Certificate authentication to the server
+## Adding certificate authentication to the server
 
 Certificate authentication needs to be configured both at the host level, for example on the Kestrel server, and in the ASP.NET Core pipeline.
 
@@ -46,7 +46,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 
 The `ClientCertificateMode.RequireCertificate` setting will cause Kestrel to immediately reject any connection request that does not provide a client certificate, but it will not validate the certificate. Adding the `ClientCertificateValidation` callback enables Kestrel to validate the client certificate (in this case, ensuring that it was issued by the same Certificate Authority as the server certificate) at the point the connection is made, before the ASP.NET Core pipeline is engaged.
 
-### Adding ASP.NET Core Certificate authentication
+### Adding ASP.NET Core certificate authentication
 
 Certificate authentication is provided by the Microsoft.AspNetCore.Authentication.Certificate package ([www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Certificate](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Certificate)).
 
@@ -79,10 +79,10 @@ public class Startup
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
+        app.UseRouting();
+
         app.UseAuthentication();
         app.UseAuthorization();
-
-        app.UseRouting();
 
         app.UseEndpoints(endpoints => { endpoints.MapGrpcService<GreeterService>(); });
     }

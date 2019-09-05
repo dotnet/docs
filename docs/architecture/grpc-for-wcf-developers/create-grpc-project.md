@@ -1,6 +1,6 @@
 ---
-title: Migrating from WCF to gRPC
-description: gRPC for WCF Developers | Create a new ASP.NET Core gRPC project
+title: Migrating from WCF to gRPC - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

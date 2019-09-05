@@ -1,6 +1,6 @@
 ---
-title: gRPC in a Nutshell
-description: gRPC for WCF Developers | gRPC in a Nutshell
+title: gRPC in a nutshell - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

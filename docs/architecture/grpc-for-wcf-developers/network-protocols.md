@@ -1,6 +1,6 @@
 ---
-title: Network Protocols
-description: gRPC for WCF Developers | Network Protocols
+title: Network protocols - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -21,7 +21,7 @@ Some of the key features and advantages of HTTP/2 are discussed below.
 
 Request/response cycles no longer needs text commands. This simplifies and speeds up implementation of commands. Specifically, parsing data is faster and uses less memory, network latency is reduced with obvious related improvements to speed and there is an overall better utilization of network resources.
 
-### Server Push
+### Server push
 
 Servers are now able to send data to the client without receiving a request. Another efficiency saving. This further increases the efficient utilization of network resources by anticipating additional information which has not yet been requested and push it at the same time as the original request thereby freeing up future TCP connections.
 

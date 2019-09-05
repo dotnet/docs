@@ -1,11 +1,11 @@
 ---
-title: Maps
-description: gRPC for WCF Developers | Maps
+title: Maps for dictionaries - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Map and Dictionary
+# Maps for dictionaries
 
 Protobuf's equivalent of the .NET `Dictionary<TKey, TValue>` type is `map<key_type, value_type>`.
 

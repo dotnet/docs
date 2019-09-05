@@ -1,11 +1,11 @@
 ---
-title: Migrating Duplex Services to gRPC
-description: gRPC for WCF Developers | Migrating Duplex Services to gRPC
+title: Migrating duplex services to gRPC - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Duplex Services
+# Duplex services
 
 There are multiple ways to use Duplex services in WCF. Some services are initiated by the client and then stream data from the server; other "Full Duplex" services might involve more ongoing two-way communication like the classic "Calculator" example from the WCF documentation. This chapter will take two possible WCF "Stock Ticker" implementations and migrate them to gRPC, one using a Server streaming RPC, and one a Bi-directional Streaming RPC.
 
@@ -30,7 +30,7 @@ public interface ISimpleStockTickerService
 
 The service has a single method with no return type, because it will be using the callback interface `ISimpleStockTickerCallback` to send data to the client in real time.
 
-#### The Callback interface
+#### The callback interface
 
 ```csharp
 [ServiceContract]
@@ -43,7 +43,7 @@ public interface ISimpleStockTickerCallback
 
 The implementations of these interfaces can be found in the solution, along with faked external dependencies to provide test data.
 
-### gRPC Streaming
+### gRPC streaming
 
 The gRPC way of handling real time data is different. A call from client to server can create a persistent stream, which can be monitored for messages arriving asynchronously. Despite the difference, streams can be a more intuitive way of dealing with this data, and are more relevant in modern programming with the emphasis on LINQ, Reactive Streams, functional programming and so on.
 
@@ -79,7 +79,7 @@ message StockTickerUpdate {
 
 Reuse the `StockPriceSubscriber` fake from the WCF project by copying the three classes from the `TraderSys.StockMarket` class library into a new .NET Standard class library in the target solution. To better follow best practices, add a `Factory` type to create instances of it and register the `IStockPriceSubscribeFactory` with ASP.NET Core's dependency injection services.
 
-#### The Factory implementation
+#### The factory implementation
 
 ```csharp
 public interface IStockPriceSubscriberFactory
@@ -96,7 +96,7 @@ public class StockPriceSubscriberFactory : IStockPriceSubscriberFactory
 }
 ```
 
-#### Registering the Factory
+#### Registering the factory
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)

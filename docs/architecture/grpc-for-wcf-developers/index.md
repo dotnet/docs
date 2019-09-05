@@ -1,6 +1,6 @@
 ---
-title: ASP.NET Core gRPC for WCF Developers
-description: A guide for building cloud native applications and microservices using gRPC, for WCF developers seeking to modernize their solutions.
+title: ASP.NET Core gRPC for WCF Developers - gRPC for WCF Developers
+description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---

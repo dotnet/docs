@@ -79,4 +79,4 @@ command.ExecuteNonQuery();
 ## See also
 
 - [Bulk Copy Operations in SQL Server](bulk-copy-operations-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -56,4 +56,4 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
 ## See also
 
 - [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

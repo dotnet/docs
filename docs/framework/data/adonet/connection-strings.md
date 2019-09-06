@@ -71,4 +71,4 @@ Demonstrates techniques for protecting information used to connect to a data sou
 ## See also
 
 - [Connecting to a Data Source](/cpp/data/odbc/connecting-to-a-data-source)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

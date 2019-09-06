@@ -22,4 +22,4 @@ SQL Server supports the `xml` data type, and developers can retrieve result sets
 
 - <xref:System.Data.SqlTypes.SqlXml>
 - [XML Data in SQL Server](xml-data-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

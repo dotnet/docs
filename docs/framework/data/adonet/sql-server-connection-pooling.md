@@ -128,4 +128,4 @@ using (SqlConnection connection = new SqlConnection(
 - [Connection Pooling](connection-pooling.md)
 - [SQL Server and ADO.NET](./sql/index.md)
 - [Performance Counters](performance-counters.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

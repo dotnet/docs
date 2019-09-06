@@ -58,4 +58,4 @@ A primary function of any database application is connecting to a data source an
 - [DataSets, DataTables, and DataViews](./dataset-datatable-dataview/index.md)
 - [Securing ADO.NET Applications](securing-ado-net-applications.md)
 - [SQL Server and ADO.NET](./sql/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

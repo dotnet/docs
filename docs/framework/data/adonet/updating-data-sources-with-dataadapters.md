@@ -369,4 +369,4 @@ class Program {
 - [AcceptChanges and RejectChanges](./dataset-datatable-dataview/acceptchanges-and-rejectchanges.md)
 - [Merging DataSet Contents](./dataset-datatable-dataview/merging-dataset-contents.md)
 - [Retrieving Identity or Autonumber Values](retrieving-identity-or-autonumber-values.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

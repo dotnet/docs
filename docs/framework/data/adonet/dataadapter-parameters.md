@@ -165,4 +165,4 @@ adapter.Fill(customers, "Customers");
 - [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md)
 - [Modifying Data with Stored Procedures](modifying-data-with-stored-procedures.md)
 - [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

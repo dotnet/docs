@@ -35,4 +35,4 @@ A transaction consists of a single command or a group of commands that execute a
 - [Commands and Parameters](commands-and-parameters.md)
 - [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
 - [DbProviderFactories](dbproviderfactories.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

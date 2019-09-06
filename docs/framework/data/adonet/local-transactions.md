@@ -46,4 +46,4 @@ Transactions in ADO.NET are used when you want to bind multiple tasks together s
 - [Transactions and Concurrency](transactions-and-concurrency.md)
 - [Distributed Transactions](distributed-transactions.md)
 - [System.Transactions Integration with SQL Server](system-transactions-integration-with-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

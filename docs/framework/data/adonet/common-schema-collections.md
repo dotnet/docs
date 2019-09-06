@@ -8,7 +8,7 @@ The common schema collections are the schema collections that are implemented by
   
  If a provider is unable to determine the value of a required column, it will return null.  
   
- For more information about using the **GetSchema** methods, see [GetSchema and Schema Collections](../../../../docs/framework/data/adonet/getschema-and-schema-collections.md).  
+ For more information about using the **GetSchema** methods, see [GetSchema and Schema Collections](getschema-and-schema-collections.md).  
   
 ## MetaDataCollections  
  This schema collection exposes information about all of the schema collections supported by the .NET Framework managed provider that is currently used to connect to the database.  
@@ -90,6 +90,6 @@ The common schema collections are the schema collections that are implemented by
   
 ## See also
 
-- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
-- [GetSchema and Schema Collections](../../../../docs/framework/data/adonet/getschema-and-schema-collections.md)
+- [Retrieving Database Schema Information](retrieving-database-schema-information.md)
+- [GetSchema and Schema Collections](getschema-and-schema-collections.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

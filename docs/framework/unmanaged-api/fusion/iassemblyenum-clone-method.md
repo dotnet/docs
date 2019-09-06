@@ -19,7 +19,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # IAssemblyEnum::Clone Method
-Creates a shallow copy of this [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md) object.  
+Creates a shallow copy of this [IAssemblyEnum](iassemblyenum-interface.md) object.  
   
 ## Syntax  
   
@@ -34,7 +34,7 @@ HRESULT Clone (
  [out] A pointer to the copy.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -42,4 +42,4 @@ HRESULT Clone (
   
 ## See also
 
-- [IAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md)
+- [IAssemblyEnum Interface](iassemblyenum-interface.md)

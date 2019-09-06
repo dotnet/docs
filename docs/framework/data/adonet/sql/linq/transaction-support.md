@@ -19,5 +19,5 @@ ms.assetid: 8cceb26e-8d36-4365-8967-58e2e89e0187
   
 ## See also
 
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
-- [How to: Bracket Data Submissions by Using Transactions](../../../../../../docs/framework/data/adonet/sql/linq/how-to-bracket-data-submissions-by-using-transactions.md)
+- [Background Information](background-information.md)
+- [How to: Bracket Data Submissions by Using Transactions](how-to-bracket-data-submissions-by-using-transactions.md)

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0f502ca1-6a8e-4607-ba15-59198c0e6146
 ---
 # Choosing a Message Exchange Pattern
-The first step in writing a custom transport is to decide which *message exchange patterns* (or MEPs) are required for the channel you are developing. This topic describes the options available and discusses the various requirements. This is the first task in the channel development task list described in [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
+The first step in writing a custom transport is to decide which *message exchange patterns* (or MEPs) are required for the channel you are developing. This topic describes the options available and discusses the various requirements. This is the first task in the channel development task list described in [Developing Channels](developing-channels.md).  
   
 ## Six Message Exchange Patterns  
  There are three MEPs to choose from:  
@@ -21,7 +21,7 @@ The first step in writing a custom transport is to decide which *message exchang
   
      The duplex MEP allows an arbitrary number of messages to be sent by a client and received in any order. The duplex MEP is like a phone conversation, where each word being spoken is a message. Because both sides can send and receive in this MEP, the interface implemented by the client and service channels is <xref:System.ServiceModel.Channels.IDuplexChannel>.  
   
- ![Choosing a message exchange pattern](../../../../docs/framework/wcf/extending/media/wcfc-basicthreemepsc.gif "wcfc_BasicThreeMEPsc")  
+ ![Choosing a message exchange pattern](./media/wcfc-basicthreemepsc.gif "wcfc_BasicThreeMEPsc")  
 The three basic message exchange patterns. Top to bottom: datagram, request-response, and duplex.  
   
  Each of these MEPs can also support *sessions*. A session (and implementation of <xref:System.ServiceModel.Channels.ISessionChannel%601?displayProperty=nameWithType> of type <xref:System.ServiceModel.Channels.ISession?displayProperty=nameWithType>) correlates all messages sent and received on a channel. The request-response pattern is a stand-alone two-message session, as the request and reply are correlated. In contrast, the request-response pattern that supports sessions implies that all request/response pairs on that channel are correlated with each other. This gives you a total of six MEPs to choose from:  
@@ -46,7 +46,7 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
   
  In the channel object model, each logical session manifests as an instance of a sessionful channel. Therefore every new session created by the client, and accepted on the service, corresponds to a new sessionful channel on each side. The following diagram shows, on the top, the structure of sessionless channels, and on the bottom, the structure of sessionful channels.  
   
- ![Choosing a message exchange pattern](../../../../docs/framework/wcf/extending/media/wcfc-sessionandsessionlesschannelsc.gif "wcfc_SessionAndSessionlessChannelsc")  
+ ![Choosing a message exchange pattern](./media/wcfc-sessionandsessionlesschannelsc.gif "wcfc_SessionAndSessionlessChannelsc")  
   
  A client creates a new sessionful channel and sends a message. On the service side, the channel listener receives this message and detects that it belongs to a new session so it creates a new sessionful channel and hands it to the application (in response to the application calling AcceptChannel on the channel listener). The application then receives this message and all subsequent messages sent in the same session through the same sessionful channel.  
   
@@ -88,4 +88,4 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
   
 ## See also
 
-- [Channel Model Overview](../../../../docs/framework/wcf/extending/channel-model-overview.md)
+- [Channel Model Overview](channel-model-overview.md)

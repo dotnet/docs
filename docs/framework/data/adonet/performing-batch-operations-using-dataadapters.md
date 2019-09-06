@@ -137,7 +137,7 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
   
 ## See also
 
-- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)
-- [Handling DataAdapter Events](../../../../docs/framework/data/adonet/handling-dataadapter-events.md)
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
+- [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md)
+- [Handling DataAdapter Events](handling-dataadapter-events.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

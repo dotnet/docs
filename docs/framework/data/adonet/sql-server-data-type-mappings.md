@@ -52,8 +52,8 @@ For more information about SQL Server data types, see [Data types (Transact-SQL)
   
 ## See also
 
-- [SQL Server Data Types and ADO.NET](../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
-- [SQL Server Binary and Large-Value Data](../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
-- [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)
-- [Configuring Parameters and Parameter Data Types](../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
+- [SQL Server Data Types and ADO.NET](./sql/sql-server-data-types.md)
+- [SQL Server Binary and Large-Value Data](./sql/sql-server-binary-and-large-value-data.md)
+- [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md)
+- [Configuring Parameters and Parameter Data Types](configuring-parameters-and-parameter-data-types.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

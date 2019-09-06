@@ -15,7 +15,7 @@ The following table lists the possible states for [!INCLUDE[vbtecdlinq](../../..
 |-----------|-----------------|
 |`Untracked`|An object not tracked by [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Examples include the following:<br /><br /> -   An object not queried through the current <xref:System.Data.Linq.DataContext> (such as a newly created object).<br />-   An object created through deserialization<br />-   An object queried through a different <xref:System.Data.Linq.DataContext>.|
 |`Unchanged`|An object retrieved by using the current <xref:System.Data.Linq.DataContext> and not known to have been modified since it was created.|
-|`PossiblyModified`|An object which is *attached* to a <xref:System.Data.Linq.DataContext>. For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../../../../../../docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md).|
+|`PossiblyModified`|An object which is *attached* to a <xref:System.Data.Linq.DataContext>. For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](data-retrieval-and-cud-operations-in-n-tier-applications.md).|
 |`ToBeInserted`|An object not retrieved by using the current <xref:System.Data.Linq.DataContext>. This causes a database `INSERT` during <xref:System.Data.Linq.DataContext.SubmitChanges%2A>.|
 |`ToBeUpdated`|An object known to have been modified since it was retrieved. This causes a database `UPDATE` during <xref:System.Data.Linq.DataContext.SubmitChanges%2A>.|
 |`ToBeDeleted`|An object marked for deletion, causing a database `DELETE` during <xref:System.Data.Linq.DataContext.SubmitChanges%2A>.|
@@ -25,7 +25,7 @@ The following table lists the possible states for [!INCLUDE[vbtecdlinq](../../..
 
 You can explicitly request `Inserts` by using <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>. Alternatively, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] can infer `Inserts` by finding objects connected to one of the known objects that must be updated. For example, if you add an `Untracked` object to an <xref:System.Data.Linq.EntitySet%601> or set an <xref:System.Data.Linq.EntityRef%601> to an `Untracked` object, you make the `Untracked` object reachable by way of tracked objects in the graph. While processing <xref:System.Data.Linq.DataContext.SubmitChanges%2A>, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] traverses the tracked objects and discovers any reachable persistent objects that are not tracked. Such objects are candidates for insertion into the database.
 
-For classes in an inheritance hierarchy, <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>(`o`) also sets the value of the member designated as the *discriminator* to match the type of the object `o`. In the case of a type matching the default discriminator value, this action causes the discriminator value to be overwritten with the default value. For more information, see [Inheritance Support](../../../../../../docs/framework/data/adonet/sql/linq/inheritance-support.md).
+For classes in an inheritance hierarchy, <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>(`o`) also sets the value of the member designated as the *discriminator* to match the type of the object `o`. In the case of a type matching the default discriminator value, this action causes the discriminator value to be overwritten with the default value. For more information, see [Inheritance Support](inheritance-support.md).
 
 > [!IMPORTANT]
 > An object added to a `Table` is not in the identity cache. The identity cache reflects only what is retrieved from the database. After a call to <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>, the added entity does not appear in queries against the database until <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is successfully completed.
@@ -63,5 +63,5 @@ If you update both the required reference and the corresponding foreign key, you
 
 ## See also
 
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
-- [Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/insert-update-and-delete-operations.md)
+- [Background Information](background-information.md)
+- [Insert, Update, and Delete Operations](insert-update-and-delete-operations.md)

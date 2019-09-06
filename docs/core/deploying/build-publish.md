@@ -1,4 +1,4 @@
----
+ï»¿---
 title: Build and Publish your Application
 description: Build and Publish your Application
 author: jamshedd
@@ -21,7 +21,7 @@ You can create various types of deployments for .NET Core applications:
   Unlike Framework Dependent Deployment (FDD), a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable (such as app.exe on Windows platforms for an application named app), which is a renamed version of the platform-specific .NET Core host, and a .dll file (such as app.dll), which is the actual application.
 
 - **Framework-Dependent Executables (FDE)**  
-  Produces an executable that runs on a target platform. Similar to FDDs, framework-dependent executables (FDE) aren’t self-contained. These deployments still rely on the presence of a shared system-wide version of .NET Core to run. Unlike an SCD, your app only contains your code and any third-party dependencies that are outside of the .NET Core libraries. FDEs produce an executable that runs on the target platform.
+  Produces an executable that runs on a target platform. Similar to FDDs, framework-dependent executables (FDE) arenâ€™t self-contained. These deployments still rely on the presence of a shared system-wide version of .NET Core to run. Unlike an SCD, your app only contains your code and any third-party dependencies that are outside of the .NET Core libraries. FDEs produce an executable that runs on the target platform.
 
 - **Self-contained Executables (SCE)**  
   Produces an executable that runs on a target platform. Similar to SCDs, a self-contained executable (SCE) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications
@@ -46,7 +46,7 @@ There are also a few disadvantages:
 
 - It's possible for the .NET Core runtime and libraries to change without your knowledge in future releases. In rare cases, this may change the behavior of your app.
 
-Framework dependent deployment is available for Windows Client, Windows Server, Mac and Linux platforms through native installers – MSI on Windows Client and Server, PKG on Mac and various native package managers for Linux. 
+Framework dependent deployment is available for Windows Client, Windows Server, Mac and Linux platforms through native installers â€“ MSI on Windows Client and Server, PKG on Mac and various native package managers for Linux. 
 
 To create a self-contained deployment you would use the following command line:
 
@@ -151,6 +151,15 @@ dotnet publish -c Release -r win10-x64 --self-contained true /p:PublishSingleFil
 ```
 Both Framework Dependent Deployment and Self-Contained Deployment have their own pros and cons. To summarize,
 
+| Attribute	                                                | Framework Dependent Deployment | Self Contained Deployment | Framework Dependent Executable | Self Contained Deployment |
+| --------------------------------------------------------- | ------------------------------ | ------------------------- | ------------------------------ | ------------------------- |
+| Need machine wide Core Runtime                            | Yes                            | No                        | Yes                            | No                        |    
+| Small Package                                             | Yes                            | No                        | Yes                            | No                        |  
+| Target Machine specific publish                           | No                             | Yes                       | No                             | Yes                       |  
+| Need target machine native dependencies installed         | Yes                            | Yes                       | Yes                            | Yes                       |  
+| Share Core Runtime across multiple apps (reduce footprint)| Yes                            | No                        | Yes                            | No                        |  
+| Isolated from changes to shared runtime                   | No                             | Yes                       | No                             | Yes                       |  
+| Trimming Available                                        | No                             | No                        | Yes                            | Yes                        |  
 
 
 ## See also

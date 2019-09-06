@@ -18,7 +18,9 @@ The following procedure and example demonstrate how a managed application, using
   
 1. Look at the signature for the **EnumWindows** function before going further with the implementation. **EnumWindows** has the following signature:  
   
-    `BOOL EnumWindows(WNDENUMPROC lpEnumFunc, LPARAM lParam)`  
+    ```csharp
+    BOOL EnumWindows(WNDENUMPROC lpEnumFunc, LPARAM lParam)
+    ```
   
      One clue that this function requires a callback is the presence of the **lpEnumFunc** argument. It is common to see the **lp** (long pointer) prefix combined with the **Func** suffix in the name of arguments that take a pointer to a callback function. For documentation about Win32 functions, see the Microsoft Platform SDK.  
   

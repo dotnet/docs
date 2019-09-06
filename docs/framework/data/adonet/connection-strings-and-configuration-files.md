@@ -170,4 +170,4 @@ Embedding connection strings in your application's code can lead to security vul
 - [Using the Configuration Classes](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms228063(v=vs.90))
 - [Configuring Apps](../../configure-apps/index.md)
 - [ASP.NET Web Site Administration](https://docs.microsoft.com/previous-versions/aspnet/6hy1xzbw(v=vs.100))
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

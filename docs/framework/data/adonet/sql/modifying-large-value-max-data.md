@@ -248,4 +248,4 @@ WHERE   DocumentID=@DocumentID
 - [SQL Server Binary and Large-Value Data](sql-server-binary-and-large-value-data.md)
 - [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md)
 - [SQL Server Data Operations in ADO.NET](sql-server-data-operations.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

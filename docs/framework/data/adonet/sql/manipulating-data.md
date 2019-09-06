@@ -399,4 +399,4 @@ private static string GetConnectionString()
 ## See also
 
 - [Multiple Active Result Sets (MARS)](multiple-active-result-sets-mars.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

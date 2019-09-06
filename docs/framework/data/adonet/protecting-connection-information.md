@@ -38,4 +38,4 @@ Protecting access to your data source is one of the most important goals when se
 - [Securing ADO.NET Applications](securing-ado-net-applications.md)
 - [Encrypting Configuration Information Using Protected Configuration](https://docs.microsoft.com/previous-versions/aspnet/53tyfkaw(v=vs.100))
 - [Security in .NET](../../../standard/security/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

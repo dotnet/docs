@@ -53,4 +53,3 @@ ADO.NET architecture
 ## See also
 
 - [ADO.NET Overview](ado-net-overview.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

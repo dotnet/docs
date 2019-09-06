@@ -13,27 +13,27 @@ ms.author: "ronpet"
 This section describes the unmanaged enumerations that the fusion API uses.  
   
 ## In This Section  
- [ASM_CACHE_FLAGS Enumeration](../../../../docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md)  
- Indicates the source of an assembly represented by [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) in the global assembly cache.  
+ [ASM_CACHE_FLAGS Enumeration](asm-cache-flags-enumeration.md)  
+ Indicates the source of an assembly represented by [IAssemblyCacheItem](iassemblycacheitem-interface.md) in the global assembly cache.  
   
- [ASM_CMP_FLAGS Enumeration](../../../../docs/framework/unmanaged-api/fusion/asm-cmp-flags-enumeration.md)  
- Indicates the version, build, culture, signature, and so on, of two assemblies to be compared by the [IAssemblyName::IsEqual](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-isequal-method.md) method.  
+ [ASM_CMP_FLAGS Enumeration](asm-cmp-flags-enumeration.md)  
+ Indicates the version, build, culture, signature, and so on, of two assemblies to be compared by the [IAssemblyName::IsEqual](iassemblyname-isequal-method.md) method.  
   
- [ASM_DISPLAY_FLAGS Enumeration](../../../../docs/framework/unmanaged-api/fusion/asm-display-flags-enumeration.md)  
- Indicates the version, build, culture, signature, and so on, of the assembly whose display name will be retrieved by the [IAssemblyName::GetDisplayName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-getdisplayname-method.md) method.  
+ [ASM_DISPLAY_FLAGS Enumeration](asm-display-flags-enumeration.md)  
+ Indicates the version, build, culture, signature, and so on, of the assembly whose display name will be retrieved by the [IAssemblyName::GetDisplayName](iassemblyname-getdisplayname-method.md) method.  
   
- [ASM_NAME Enumeration](../../../../docs/framework/unmanaged-api/fusion/asm-name-enumeration.md)  
- Indicates the version, build, culture, signature, and so on, of the assembly whose properties will be retrieved or set by [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) methods.  
+ [ASM_NAME Enumeration](asm-name-enumeration.md)  
+ Indicates the version, build, culture, signature, and so on, of the assembly whose properties will be retrieved or set by [IAssemblyName](iassemblyname-interface.md) methods.  
   
- [AssemblyComparisonResult Enumeration](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md)  
- Indicates the equivalence of two assembly identities, as determined by the [CompareAssemblyIdentity](../../../../docs/framework/unmanaged-api/fusion/compareassemblyidentity-function.md) function.  
+ [AssemblyComparisonResult Enumeration](assemblycomparisonresult-enumeration.md)  
+ Indicates the equivalence of two assembly identities, as determined by the [CompareAssemblyIdentity](compareassemblyidentity-function.md) function.  
   
- [CREATE_ASM_NAME_OBJ_FLAGS Enumeration](../../../../docs/framework/unmanaged-api/fusion/create-asm-name-obj-flags-enumeration.md)  
- Specifies the attributes of an `IAssemblyName` object when it is constructed by the [CreateAssemblyNameObject](../../../../docs/framework/unmanaged-api/fusion/createassemblynameobject-function.md) function.  
+ [CREATE_ASM_NAME_OBJ_FLAGS Enumeration](create-asm-name-obj-flags-enumeration.md)  
+ Specifies the attributes of an `IAssemblyName` object when it is constructed by the [CreateAssemblyNameObject](createassemblynameobject-function.md) function.  
   
 ## Related Sections  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
+ [Fusion Interfaces](fusion-interfaces.md)  
   
- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)  
+ [Fusion Global Static Functions](fusion-global-static-functions.md)  
   
- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
+ [Fusion Structures](fusion-structures.md)

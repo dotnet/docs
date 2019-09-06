@@ -150,7 +150,7 @@ ms.date: "08/30/2019"
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/standard/">.NET Guide</a></h3>
                                                 <p><a href="/dotnet/standard/get-started">Get Started</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/learn/browse/?roles=developer&products=dotnet">Hands-on Learn Modules</a></p>
+                                                <p><a href="https://docs.microsoft.com/learn/browse/?roles=developer&products=dotnet">Hands-on Learn Modules</a></p>
                                                 <p><a href="/dotnet/standard/tour">Tour of .NET</a></p>
                                                 <p><a href="/dotnet/standard/components">.NET Architectural Concepts</a></p>
                                             </div>

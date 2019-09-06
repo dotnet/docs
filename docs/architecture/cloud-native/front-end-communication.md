@@ -37,7 +37,7 @@ Instead, a widely accepted cloud design pattern is to implement an [API Gateway 
 
 In the previous figure, note how the API Gateway service abstracts the backend core microservices. Implemented as a web API, it acts as a *reverse proxy*, routing incoming traffic to the internal microservices. 
 
-The gateway insulates the client from internal service partitioning and refactoring. If you make a change to a back-end service, you can accommodate for it in the gateway without breaking the client. It also acts as your first line of defense for implementing cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the back-end core services to the gateway, simplifying the back-end services.
+The gateway insulates the client from internal service partitioning and refactoring. If you change a back-end service, you accommodate for it in the gateway without breaking the client. It also acts as your first line of defense for implementing cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the back-end core services to the gateway, simplifying the back-end services.
 
 Care must be taken to keep the API Gateway simple and fast. Typically, business logic is kept out of the gateway. A complex gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems often expose multiple API Gateways segmented by client type (mobile, web, desktop) or back-end functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern provides direction for implementing multiple gateways. The pattern is shown in Figure 4-4.
 
@@ -154,17 +154,19 @@ The new consumption tier is a great choice for cloud-native systems that expose 
 
 ## Real-time communication
 
-Push and real-time communication are another option for front-end communication with cloud-native systems. Many applications, such as stock-tickers, dashboards, and job progress updates, require two-way communication across HTTP-based applications. These systems often come with high-frequency data flows and many concurrent connections between the client and server. Manually implementing real-time connectivity in your cloud-native systems would require complex infrastructure to ensure reliable messaging to connected clients. 
+Real-time, or push, communication is another option for clients that communicate with cloud-native systems. Applications, such as stock-tickers, dashboards, and job progress updates, require two-way communication across HTTP connections. These systems are characterized by high-frequency data flows and large numbers of concurrent client connections. Manually implementing real-time connectivity can quickly become complex and expensive. 
 
-[Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/) is a fully managed Azure service that enables you to build real-time communication into your cloud-native applications. Technical implementation details like capacity provisioning, scaling, and persistent connections are abstracted away. You focus on application features, not infrastructure plumbing. 
+[Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/) is a fully managed Azure service that simplifies real-time communication for your cloud-native applications. Technical implementation details like capacity provisioning, scaling, and persistent connections are abstracted away. They're handled for you with a 99.9% service-level agreement. You focus on application features, not infrastructure plumbing. 
 
-Once enabled, a cloud-based HTTP service can push content updates directly to connected clients, including browser, mobile and desktop applications. As a result, clients are updated without the need to poll the server. Azure SignalR abstracts the transport technologies that create real-time connectivity, including WebSockets, Server-Side Events, and Long Polling. Developers focus on sending messages to all or specific subsets of connected clients.
+Once enabled, a cloud-based HTTP service can push content updates directly to connected clients, including browser, mobile and desktop applications. Clients are updated without the need to poll the server. Azure SignalR abstracts the transport technologies that create real-time connectivity, including WebSockets, Server-Side Events, and Long Polling. Developers focus on sending messages to all or specific subsets of connected clients.
 
 Figure 4-7 shows a set of HTTP Clients connecting to a Cloud-native application with Azure SignalR enabled.
 
 ![Azure SignalR](./media/azure-signalr-service.png)
 
 **Figure 4-7.** Azure SignalR
+
+Another advantage of Azure SignalR Service comes with implementing Serverless cloud-native services. Perhaps your code is executed on demand with Azure Functions triggers. This scenario can be tricky because your code doesn't maintain long connections with clients. Azure SignalR Service can handle this situation since the service already manages connections for you.
 
 Azure SignalR Service can be integrated with other Azure services opening up many possibilities for your cloud-native applications.
 

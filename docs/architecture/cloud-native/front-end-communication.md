@@ -17,9 +17,9 @@ To keep things simple, a front-end client could *directly communicate* with the 
 
 **Figure 4-2.** Direct client to service communication
 
-With this approach, each microservice has a public endpoint that is accessible by the front-end client. In a production environment, you'd go a step further and place a load balancer in front of your microservices, routing traffic proportionately.
+With this approach, each microservice has a public endpoint that is accessible by front-end clients. In a production environment, you'd place a load balancer in front of the microservices, routing traffic proportionately.
 
-While simple to implement, direct client communication would be acceptable only for simple microservice applications. This pattern tightly couples the front-end client to the core back-end services, opening the door for a number of potential problems, including:
+While simple to implement, direct client communication would be acceptable only for simple microservice applications. This pattern tightly couples front-end clients to core back-end services, opening the door for a number of problems, including:
 
 - Client susceptibility to back-end service refactoring.
 
@@ -27,7 +27,7 @@ While simple to implement, direct client communication would be acceptable only 
 
 - Duplication of cross-cutting concerns across each microservice.
 
-- Overly complex client code - clients must keep track of mulitple endpoints and handle failures in a resilient way.
+- Overly complex client code - clients must keep track of multiple endpoints and handle failures in a resilient way.
 
 Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the front-end applications and backend services. The pattern is shown in Figure 4-3.
 
@@ -35,9 +35,9 @@ Instead, a widely accepted cloud design pattern is to implement an [API Gateway 
 
 **Figure 4-3.** API gateway pattern
 
-In the previous figure, note how the API Gateway service abstracts the backend core microservices. Implemented as a simple .NET Core API application (in this case), it acts as a *reverse proxy*, routing incoming traffic to the internal microservices. 
+In the previous figure, note how the API Gateway service abstracts the backend core microservices. Implemented as a web API, it acts as a *reverse proxy*, routing incoming traffic to the internal microservices. 
 
-The gateway insulates the client from internal service partitioning and refactoring. If you make a change to a back-end service, you can accommodate for it in the gateway without breaking the client. It also acts as your first line of defense for implementing cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the back-end core services to the gateway, centralizing them and simplifying the back-end services.
+The gateway insulates the client from internal service partitioning and refactoring. If you make a change to a back-end service, you can accommodate for it in the gateway without breaking the client. It also acts as your first line of defense for implementing cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the back-end core services to the gateway, simplifying the back-end services.
 
 Care must be taken to keep the API Gateway simple and fast. Typically, business logic is kept out of the gateway. A complex gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems often expose multiple API Gateways segmented by client type (mobile, web, desktop) or back-end functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern provides direction for implementing multiple gateways. The pattern is shown in Figure 4-4.
 
@@ -73,23 +73,24 @@ Consider Ocelot for simple cloud-native applications that don’t require the ri
 
 ## Azure Application Gateway
 
-For simple gateway requirements, you may consider [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview). It's an Azure [PaaS service](https://azure.microsoft.com/overview/what-is-paas/) 
-that includes basic gateway features such as SSL/TLS termination, autoscaling, and a Web Application Firewall (WAF) to help protect services from common exploits and vulnerabilities. The service supports [Layer-7 load balancing](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) capabilites. With Layer 7 support, you can route requests based on the actual content of the HTTP message, not just low-level TCP network packets.  
+For simple gateway requirements, you may consider [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview). Available as an Azure [PaaS service](https://azure.microsoft.com/overview/what-is-paas/), it includes basic gateway features such as URL routing, SSL termination, and a Web Application Firewall. The service supports [Layer-7 load balancing](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) capabilities. With Layer 7, you can route requests based on the actual content of an HTTP message, not just low-level TCP network packets. 
 
-The [Application Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/) allows Azure Application Gateway to route traffic to containerized microservices located in an [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) cluster. Figure 4.5 shows the architecture.
+Throughout this book, we evangelize hosting cloud-native systems in [Kubernetes](https://www.infoworld.com/article/3268073/what-is-kubernetes-your-next-application-platform.html). A container orchestrator, Kubernetes automates the deployment, scaling, and operational concerns of containerized workloads. Azure Application Gateway can be configured as an API gateway for [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) cluster.
+
+The [Application Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/) enables Azure Application Gateway to work directly with [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). Figure 4.5 shows the architecture.
 
 ![Application Gateway Ingress Controller](./media/application-gateway-ingress-controller.png)
 
 **Figure 4-5.** Application Gateway Ingress Controller
 
-Kuberentes maintains a set of *ingress rules* that define how the containerized microservices are exposed to the outside world. The ingress controller, shown in blue in the previous image, interprets the ingress rules and creates a configuration file for the Azure Application Gateway. This allows Azure Gateway to act as an API gateway services for the AKS cluster. Based on those rules, the Application Gateway can route traffic to microservices running inside AKS. The ingress controller listens for changes to ingress rules and makes the appropriate adjustements to the the load balancers policies. 
+Kuberentes includes a built-in feature that supports HTTP (Level 7) load balancing, called [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/). Ingress defines a set of rules for how microservice instances inside AKS can be exposed to the outside world. In the previous image, the ingress controller interprets the ingress rules and automatically configures the Azure Application Gateway for the AKS cluster. Based on those rules, the Application Gateway routes traffic to microservices running inside AKS. The ingress controller listens for changes to ingress rules and makes the appropriate changes to the Azure Application Gateway.
 
 ## Azure API Management
 
-For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a rich developer and administrative experience. API Management is shown in Figure 4-5. 
+For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a full-featured developer and administrative experience. API Management is shown in Figure 4-6. 
 
 ![Azure API Management](./media/azure-api-management.png)
-**Figure 4-5.** Azure API Management
+**Figure 4-6.** Azure API Management
 
 To start, API Management exposes a gateway server that allows controlled access to back-end services based upon configurable rules and policies. These services can be in the Azure cloud, your on-prem data center, or other public clouds. API keys and JWT tokens determine who can do what. All traffic is logged for analytical purposes. 
 
@@ -159,11 +160,11 @@ Push and real-time communication are another option for front-end communication 
 
 Once enabled, a cloud-based HTTP service can push content updates directly to connected clients, including browser, mobile and desktop applications. As a result, clients are updated without the need to poll the server. Azure SignalR abstracts the transport technologies that create real-time connectivity, including WebSockets, Server-Side Events, and Long Polling. Developers focus on sending messages to all or specific subsets of connected clients.
 
-Figure 4-6 shows a set of HTTP Clients connecting to a Cloud-native application with Azure SignalR enabled.
+Figure 4-7 shows a set of HTTP Clients connecting to a Cloud-native application with Azure SignalR enabled.
 
 ![Azure SignalR](./media/azure-signalr-service.png)
 
-**Figure 4-6.** Azure SignalR
+**Figure 4-7.** Azure SignalR
 
 Azure SignalR Service can be integrated with other Azure services opening up many possibilities for your cloud-native applications.
 

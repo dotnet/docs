@@ -21,19 +21,19 @@ Libraries/frameworks in your codebase can address these concerns, but they add c
 
 A better approach centers around a new and rapidly evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and the networking challenges mentioned above. It decouples networking concerns and moves them out of your business code. Your microservices are unaware of the underlying network.
 
-A key component of a service mesh is a proxy. In a cloud-native application, an instance of a proxy is typically colocated with each microservice. While they execute in separate processes, the two are closely linked and share the same lifecycle. This pattern, known as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), and is shown in Figure 4-19.
+A key component of a service mesh is a proxy. In a cloud-native application, an instance of a proxy is typically colocated with each microservice. While they execute in separate processes, the two are closely linked and share the same lifecycle. This pattern, known as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), and is shown in Figure 4-20.
 
 ![Service mesh with a side car](media/service-mesh-with-side-car.png)
 
-**Figure 4-19**. Service mesh with a side car
+**Figure 4-20**. Service mesh with a side car
 
 Note in the previous figure how inbound/outbound traffic is intercepted by a proxy that runs alongside each microservice. Each proxy can be configured with traffic rules specific to the microservice.  
 
-A service mesh is logically split into two disparate components: A [data plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc) and [control plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc). Figure 4-20 shows these components and their responsibilities.
+A service mesh is logically split into two disparate components: A [data plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc) and [control plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc). Figure 4-21 shows these components and their responsibilities.
 
 ![Service mesh control and data plane](media/service-mesh-control-and-data-plane.png)
 
-**Figure 4-20.** Service mesh control and data plane
+**Figure 4-21.** Service mesh control and data plane
 
 The control plane defines the service mesh. It exposes a central point of management for the service proxies that make up the data plane. You can configure security, telemetry, and resilience here. 
 
@@ -88,7 +88,12 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [Azure SignalR Service, a fully managed service to add real-time functionality](https://azure.microsoft.com/blog/azure-signalr-service-a-fully-managed-service-to-add-real-time-functionality/)
 - [Azure API Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/)
+- [About Ingress in Azure Kubernetes Service (AKS)](https://vincentlauzon.com/2018/10/10/about-ingress-in-azure-kubernetes-service-aks/)
 - [Istio in Action](https://www.manning.com/books/istio-in-action)
+[Add Cesar's microservices book]
+
+
+
 
 >[!div class="step-by-step"]
 >[Previous](cross-service-communication.md)

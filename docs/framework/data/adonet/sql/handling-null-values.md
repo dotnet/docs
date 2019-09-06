@@ -29,7 +29,7 @@ A null value in a relational database is used when the value in a column is unkn
  ![Truth Table](../../../../../docs/framework/data/adonet/sql/media/truthtable-bpuedev11.gif "TruthTable_bpuedev11")  
   
 ### Understanding the ANSI_NULLS Option  
- <xref:System.Data.SqlTypes> provides the same semantics as when the ANSI_NULLS option is set on in SQL Server. All arithmetic operators (+, -, *, /, %), bitwise operators (~, &, &#124;), and most functions return null if any of the operands or arguments is null, except for the property `IsNull`.  
+ <xref:System.Data.SqlTypes> provides the same semantics as when the ANSI_NULLS option is set on in SQL Server. All arithmetic operators (+, -, \*, /, %), bitwise operators (~, &, &#124;), and most functions return null if any of the operands or arguments is null, except for the property `IsNull`.  
   
  The ANSI SQL-92 standard does not support *columnName* = NULL in a WHERE clause. In SQL Server, the ANSI_NULLS option controls both default nullability in the database and evaluation of comparisons against null values. If ANSI_NULLS is turned on (the default), the IS NULL operator must be used in expressions when testing for null values. For example, the following comparison always yields unknown when ANSI_NULLS is on:  
   

@@ -41,7 +41,11 @@ As a dev-ops engineer managing a CI/CD environment or an IT admin responsible fo
 
 ## See also
 
+- [.NET Core Acquisition Experiences](acquisition-experiences.md)
+- [.NET Core Deployment Experiences](deployment-experiences.md)
+- [Build and Publish your Application](build-publish.md)
 - [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
 - [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
-- [Packages, Metapackages and Frameworks](../packages.md)
 - [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Trimming](trimming.md)
+- [Packages, Metapackages and Frameworks](../packages.md)

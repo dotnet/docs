@@ -138,7 +138,7 @@ DatabaseLoader loader = mlContext.Data.CreateDatabaseLoader<HouseData>();
 Define your connection string as well as the SQL command to be executed on the database and create a DatabaseSource instance.
 
 ```csharp
-string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\luquinta.REDMOND\source\repos\MLNetDbLoaderSample\MLNetDbLoaderSample\Db\housing.mdf;Database=Housing;Integrated Security=True;Connect Timeout=30";
+string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=<YOUR-DB-FILE>;Database=<YOUR-DB-NAME>;Integrated Security=True;Connect Timeout=30";
 
 string sqlCommand = "SELECT Size,Price FROM House";
 

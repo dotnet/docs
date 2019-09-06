@@ -54,4 +54,4 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
 ## See also
 
 - [Query Notifications in SQL Server](query-notifications-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

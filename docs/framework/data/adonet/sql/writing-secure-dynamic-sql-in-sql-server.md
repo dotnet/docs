@@ -68,4 +68,4 @@ SQL Injection is the process by which a malicious user enters Transact-SQL state
 - [Managing Permissions with Stored Procedures in SQL Server](managing-permissions-with-stored-procedures-in-sql-server.md)
 - [Signing Stored Procedures in SQL Server](signing-stored-procedures-in-sql-server.md)
 - [Customizing Permissions with Impersonation in SQL Server](customizing-permissions-with-impersonation-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

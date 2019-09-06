@@ -282,7 +282,7 @@ You can test whether a specific language pack is installed by checking the HKEY_
 
 For example, to detect whether the full Japanese language pack (LCID=1041) is installed, check for the following values in the registry:
 
-```text
+```
 Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\1041
 Name: Release
 Type: DWORD

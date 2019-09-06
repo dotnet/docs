@@ -9,9 +9,9 @@ ms.assetid: f8b97862-e8bb-470d-8b96-07733c21fe26
 # How to: Customize a System-Provided Binding
 Windows Communication Foundation (WCF) includes several system-provided bindings that allow you to configure some of the properties of the underlying binding elements, but not all of the properties. This topic demonstrates how to set properties on the binding elements to create a custom binding.  
   
- For more information about how to directly create and configure binding elements without using the system-provided bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
+ For more information about how to directly create and configure binding elements without using the system-provided bindings, see [Custom Bindings](custom-bindings.md).  
   
- For more information about creating and extending custom bindings, see [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md).  
+ For more information about creating and extending custom bindings, see [Extending Bindings](extending-bindings.md).  
   
  In WCF all bindings are made up of *binding elements*. Each binding element derives from the <xref:System.ServiceModel.Channels.BindingElement> class. System-provided bindings such as <xref:System.ServiceModel.BasicHttpBinding> create and configure their own binding elements. This topic shows you how to access and change the properties of these binding elements, which are not directly exposed on the binding; specifically, the <xref:System.ServiceModel.BasicHttpBinding> class.  
   
@@ -49,4 +49,4 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
 - <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
 - <xref:System.ServiceModel.BasicHttpBinding>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [Custom Bindings](custom-bindings.md)

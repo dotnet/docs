@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # StrongNameCompareAssemblies Function
 Determines whether two assemblies differ only by their strong name signatures.  
   
- This function has been deprecated. Use the [ICLRStrongName::StrongNameCompareAssemblies](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamecompareassemblies-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::StrongNameCompareAssemblies](../hosting/iclrstrongname-strongnamecompareassemblies-method.md) method instead.  
   
 ## Syntax  
   
@@ -52,7 +52,7 @@ BOOLEAN StrongNameCompareAssemblies (
  `true` on successful completion; otherwise, `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -63,9 +63,9 @@ BOOLEAN StrongNameCompareAssemblies (
 ## Remarks  
  The strong name signature of an assembly consists of the assembly's text name, version, culture, and public key token.  
   
- If the `StrongNameCompareAssemblies` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.  
+ If the `StrongNameCompareAssemblies` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## See also
 
-- [StrongNameCompareAssemblies Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamecompareassemblies-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [StrongNameCompareAssemblies Method](../hosting/iclrstrongname-strongnamecompareassemblies-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

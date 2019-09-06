@@ -73,7 +73,7 @@ ms.date: "09/04/2019"
             <li>
                 <a data-default="true" href="#docs">Docs</a>
                 <ul id="docs">
-                     <li>
+                    <li>
                         <a href="#getstarted">Get Started</a>
                         <ul id="getstarted" class="cardsC">
                             <li>

@@ -26,7 +26,7 @@ The License Compiler reads text files that contain licensing information and pro
   
 ## Syntax  
   
-```  
+```console
       lc /target:  
       targetPE /complist:filename [/outdir:path]  
 /i:modules [/nologo] [/v]  
@@ -48,32 +48,32 @@ The License Compiler reads text files that contain licensing information and pro
   
 1. If you are using a licensed control `MyCompany.Samples.LicControl1` contained in `Samples.DLL` in an application called `HostApp.exe`*,* you can create `HostAppLic.txt` that contains the following.  
   
-    ```  
+    ```text
     MyCompany.Samples.LicControl1, Samples.DLL  
     ```  
   
 2. Create the .licenses file called `HostApp.exe.licenses` using the following command.  
   
-    ```  
+    ```console  
     lc /target:HostApp.exe /complist:hostapplic.txt /i:Samples.DLL /outdir:c:\bindir  
     ```  
   
 3. Build `HostApp.exe` including the .licenses file as a resource. If you were building a C# application you would use the following command to build your application.  
   
-    ```  
+    ```console
     csc /res:HostApp.exe.licenses /out:HostApp.exe *.cs  
     ```  
   
  The following command compiles `myApp.licenses` from the lists of licensed components specified by `hostapplic.txt`, `hostapplic2.txt` and `hostapplic3.txt`. The `modulesList` argument specifies the modules that contain the licensed components.  
   
-```  
+```console  
 lc /target:myApp /complist:hostapplic.txt /complist:hostapplic2.txt /complist: hostapplic3.txt /i:modulesList  
 ```  
   
 ## Response File Example  
  The following listing shows an example of a response file, `response.rsp`. For more information on response files, see [Response Files](/visualstudio/msbuild/msbuild-response-files).  
   
-```  
+```text  
 /target:hostapp.exe  
 /complist:hostapplic.txt   
 /i:WFCPrj.dll   
@@ -82,7 +82,7 @@ lc /target:myApp /complist:hostapplic.txt /complist:hostapplic2.txt /complist: h
   
  The following command line uses the `response.rsp` file.  
   
-```  
+```console  
 lc @response.rsp  
 ```  
   

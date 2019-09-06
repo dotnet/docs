@@ -22,7 +22,7 @@ At the command prompt, type the following:
 
 ## Syntax
 
-```
+```console
 ildasm [options] [PEfilename] [options]
 ```
 
@@ -111,14 +111,14 @@ Starting with the .NET Framework 4.5, *Ildasm.exe* handles an unrecognized marsh
 public void Test([MarshalAs((short)70)] int test) { }
 ```
 
-```
+```il
 // IL from Ildasm.exe output
 .method public hidebysig instance void Test(int32  marshal({ 46 }) test) cil managed
 ```
 
 Starting with the .NET Framework 4.5, *Ildasm.exe* displays attributes that are applied to interface implementations, as shown in the following excerpt from *Ildasm.exe* output:
 
-```
+```output
 .class public auto ansi beforefieldinit MyClass
   extends [mscorlib]System.Object
   implements IMyInterface

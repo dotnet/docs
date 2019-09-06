@@ -55,7 +55,7 @@ var filename = "PurchaseOrder.xml";
 var currentDirectory = Directory.GetCurrentDirectory();
 var purchaseOrderFilepath = Path.Combine(currentDirectory, filename);
 
-XElement purchaseOrder = XElement.Load($"{purchaseOrderFilepath}");
+XElement purchaseOrder = XElement.Load(purchaseOrderFilepath);
 
 IEnumerable<XElement> pricesByPartNos =  from item in purchaseOrder.Descendants("Item")
                                  where (int) item.Element("Quantity") * (decimal) item.Element("USPrice") > 100

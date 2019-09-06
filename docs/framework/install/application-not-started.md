@@ -57,6 +57,6 @@ To address this issue so that you can run your application, do the following:
 
 ## See also
 
-- [.NET Framework System Requirements](../get-started/system.requirements.md)
-- [.NET Framework installation guide](install.md)
+- [.NET Framework System Requirements](../get-started/system-requirements.md)
+- [.NET Framework installation guide](index.md)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)

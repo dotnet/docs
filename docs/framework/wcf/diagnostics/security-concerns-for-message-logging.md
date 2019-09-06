@@ -101,9 +101,9 @@ This topic describes how you can protect sensitive data from being exposed in me
   
 - Log Known PII Not Allowed: This event is emitted when logging of known PII is not allowed. This happens when the `logKnownPii` attribute of the `source` element in either the App.config or Web.config file is set to `true`, but the `enableLoggingKnownPii` attribute in the `machineSettings` element of the Machine.config file is set to `false`. No exception is thrown.  
   
- These events can be viewed in the Event Viewer tool that comes with Windows. For more information on this, see [Event Logging](../../../../docs/framework/wcf/diagnostics/event-logging/index.md).  
+ These events can be viewed in the Event Viewer tool that comes with Windows. For more information on this, see [Event Logging](./event-logging/index.md).  
   
 ## See also
 
-- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)
-- [Security Concerns and Useful Tips for Tracing](../../../../docs/framework/wcf/diagnostics/tracing/security-concerns-and-useful-tips-for-tracing.md)
+- [Message Logging](message-logging.md)
+- [Security Concerns and Useful Tips for Tracing](./tracing/security-concerns-and-useful-tips-for-tracing.md)

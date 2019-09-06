@@ -22,6 +22,6 @@ Once mapped in the object model or external mapping file, LINQ to SQL allows you
   
 ## See also
 
-- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
-- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
-- [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)
+- [Query Concepts](query-concepts.md)
+- [Creating the Object Model](creating-the-object-model.md)
+- [SQL-CLR Type Mapping](sql-clr-type-mapping.md)

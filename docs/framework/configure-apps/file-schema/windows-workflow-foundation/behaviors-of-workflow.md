@@ -7,7 +7,9 @@ ms.assetid: 3c6017b6-0c4f-4192-bd67-9515f5d1ec82
 # \<behaviors> of workflow
 This element contains the **serviceBehaviors** collection.  Each element in the collection defines behavior elements consumed by workflow services. Each behavior element is identified by its unique **name** attribute.  
   
- \<system.ServiceModel>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.ServiceModel>**](system-servicemodel-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<behaviors>**  
   
 ## Syntax  
   

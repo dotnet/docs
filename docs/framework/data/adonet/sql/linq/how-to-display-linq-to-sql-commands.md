@@ -44,4 +44,4 @@ Connection: System.Data.SqlClient.SqlConnection
   
 ## See also
 
-- [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)
+- [Debugging Support](debugging-support.md)

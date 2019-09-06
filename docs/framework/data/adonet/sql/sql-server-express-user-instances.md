@@ -146,7 +146,7 @@ private static void OpenSqlConnection()
   
 ## See also
 
-- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
-- [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)
-- [Connecting to a Data Source](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [SQL Server and ADO.NET](index.md)
+- [Connection Strings](../connection-strings.md)
+- [Connecting to a Data Source](../connecting-to-a-data-source.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

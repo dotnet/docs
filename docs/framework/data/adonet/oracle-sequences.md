@@ -14,7 +14,7 @@ The .NET Framework Data Provider for Oracle provides support for retrieving the 
   
  When you create a sequence in an Oracle database, you can define its initial value and the increment between its values. You can also query the sequence for new values before submitting new rows. That means your code can recognize the key values for new rows before you insert them into the database.  
   
- For more information about creating auto-increment columns by using SQL Server and ADO.NET, see [Retrieving Identity or Autonumber Values](../../../../docs/framework/data/adonet/retrieving-identity-or-autonumber-values.md) and [Creating AutoIncrement Columns](../../../../docs/framework/data/adonet/dataset-datatable-dataview/creating-autoincrement-columns.md).  
+ For more information about creating auto-increment columns by using SQL Server and ADO.NET, see [Retrieving Identity or Autonumber Values](retrieving-identity-or-autonumber-values.md) and [Creating AutoIncrement Columns](./dataset-datatable-dataview/creating-autoincrement-columns.md).  
   
 ## Example  
  The following C# example demonstrates how you can retrieve new sequence values from Oracle database. The example references the sequence in the INSERT INTO query used to submit the new rows, and then returns the sequence value generated using the RETURNING clause introduced in Oracle10g. The example adds a series of pending new rows in a <xref:System.Data.DataTable> by using ADO.NET’s auto-increment functionality to generate "placeholder" primary key values. Note that the increment value ADO.NET generated for the new row is just a "placeholder". That means the database might generate different values from the ones ADO.NET generates.  
@@ -94,5 +94,5 @@ public void OracleSequence(String connectionString)
   
 ## See also
 
-- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
+- [Oracle and ADO.NET](oracle-and-adonet.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

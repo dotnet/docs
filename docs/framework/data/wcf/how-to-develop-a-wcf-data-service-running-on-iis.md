@@ -12,14 +12,14 @@ ms.assetid: f6f768c5-4989-49e3-a36f-896ab4ded86e
 ---
 # How to: Develop a WCF data service running on IIS
 
-This topic shows how to use WCF Data Services to create a data service that is based on the Northwind sample database that is hosted by an ASP.NET Web application that is running on Internet Information Services (IIS). For an example of how to create the same Northwind data service as an ASP.NET Web application that runs on the ASP.NET Development Server, see the [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md).
+This topic shows how to use WCF Data Services to create a data service that is based on the Northwind sample database that is hosted by an ASP.NET Web application that is running on Internet Information Services (IIS). For an example of how to create the same Northwind data service as an ASP.NET Web application that runs on the ASP.NET Development Server, see the [WCF Data Services quickstart](quickstart-wcf-data-services.md).
 
 > [!NOTE]
 > To create the Northwind data service, you must have installed the Northwind sample database on the local computer. To download this sample database, see the download page, [Sample Databases for SQL Server](https://go.microsoft.com/fwlink/?linkid=24758).
 
-This topic shows how to create a data service by using the Entity Framework provider. Other data services providers are available. For more information, see [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md).
+This topic shows how to create a data service by using the Entity Framework provider. Other data services providers are available. For more information, see [Data Services Providers](data-services-providers-wcf-data-services.md).
 
-After you create the service, you must explicitly provide access to data service resources. For more information, see [How to: Enable Access to the Data Service](../../../../docs/framework/data/wcf/how-to-enable-access-to-the-data-service-wcf-data-services.md).
+After you create the service, you must explicitly provide access to data service resources. For more information, see [How to: Enable Access to the Data Service](how-to-enable-access-to-the-data-service-wcf-data-services.md).
 
 ## Create the ASP.NET web application that runs on IIS
 
@@ -158,4 +158,4 @@ After you create the service, you must explicitly provide access to data service
 
 ## See also
 
-- [Exposing Your Data as a Service](../../../../docs/framework/data/wcf/exposing-your-data-as-a-service-wcf-data-services.md)
+- [Exposing Your Data as a Service](exposing-your-data-as-a-service-wcf-data-services.md)

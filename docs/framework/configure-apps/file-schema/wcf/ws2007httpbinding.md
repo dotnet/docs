@@ -6,9 +6,10 @@ ms.assetid: 8586ecc9-bdaa-44d6-8d4d-7038e4ea1741
 # \<ws2007HttpBinding>
 Defines an interoperable binding that provides support for the correct versions of the <xref:System.ServiceModel.WSHttpBinding.Security%2A>, <xref:System.ServiceModel.ReliableSession>, and <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> binding elements.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<ws2007HttpBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<ws2007HttpBinding>**  
   
 ## Syntax  
   

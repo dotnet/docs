@@ -6,9 +6,10 @@ ms.assetid: f2ed3774-78b9-4a15-b79b-655f1ad68b86
 # \<mexHttpsBinding>
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over HTTPS.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<mexHttpsBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<mexHttpsBinding>**  
   
 ## Syntax  
   

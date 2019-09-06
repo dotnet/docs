@@ -103,7 +103,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 * **`--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Option available since .NET Core x.x SDK.
+  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Option available since .NET Core 2.0 SDK.
 
 * **`-s|--serviceable`**
 

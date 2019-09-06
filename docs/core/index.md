@@ -13,15 +13,15 @@ See [About .NET Core](about.md) to learn more about .NET Core, including its cha
 
 Check out [.NET Core Tutorials](tutorials/index.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running. If you want to try .NET Core in your browser, look at the [Numbers in C#](../csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml) online tutorial.
 
-## Download .NET Core 2.2
+## Download .NET Core
 
-Download the [.NET Core  2.2 SDK](https://www.microsoft.com/net/download) to try .NET Core on your Windows, macOS, or Linux machine. Visit [dotnet/core](https://hub.docker.com/_/microsoft-dotnet-core/) if you prefer to use Docker containers.
+Download the [.NET Core SDK](https://www.microsoft.com/net/download) to try .NET Core on your Windows, macOS, or Linux machine. Visit [dotnet/core](https://hub.docker.com/_/microsoft-dotnet-core/) if you prefer to use Docker containers.
 
 All .NET Core versions are available at [.NET Core Downloads](https://www.microsoft.com/net/download/archives) if you're looking for another .NET Core version.
 
-## .NET Core 2.2
+## .NET Core 3.0
 
-The latest version is [.NET Core 2.2](whats-new/dotnet-core-2-2.md). New features include: framework-dependent deployments, startup hooks, AAD authentication with Azure SQL, and support for Windows ARM32.
+The latest version is [.NET Core 3.0](whats-new/dotnet-core-3-0.md). New features include: ...
 
 ## Create your first application
 

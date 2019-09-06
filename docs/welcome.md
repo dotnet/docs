@@ -3,7 +3,7 @@ title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 author: mairaw
 ms.author: mairaw
-ms.date: 05/06/2019
+ms.date: 09/06/2019
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -23,10 +23,10 @@ For news about .NET, check the following blogs:
 
 Also follow the latest .NET events:
 
-- [Microsoft Connect()](https://www.microsoft.com/connectevent)
-- [Microsoft Build 2018](https://channel9.msdn.com/Events/Build/2018)
+- [Microsoft Build](https://www.microsoft.com/build)
 - [.NET Conf](https://www.dotnetconf.net/)
-
+- [Microsoft Connect()](https://www.microsoft.com/connectevent)
+- 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
 - [What's new in .NET Core](core/whats-new/index.md)
@@ -46,6 +46,7 @@ This documentation covers the breadth of .NET across platforms and languages. Yo
 - [Visual Basic Guide](visual-basic/index.md)
 - [ML.NET Guide](machine-learning/index.yml)
 - [.NET for Apache Spark](spark/index.yml)
+- [.NET Application Architecture](architecture/index.yml)
 
 Additionally, you can browse the [.NET API reference](/dotnet/api).
 

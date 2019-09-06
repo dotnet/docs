@@ -105,7 +105,7 @@ tlbimp TestLib.dll /transform:dispret /out:myTestLib.dll
   
  The type library `TestLib.dll`, in the preceding example, includes a dispinterface method named `SomeMethod` that returns void and has an [out, retval] parameter. The following code is the input type library method signature for `SomeMethod` in `TestLib.dll`.  
   
-```console  
+```cpp  
 void SomeMethod([out, retval] VARIANT_BOOL*);  
 ```  
   

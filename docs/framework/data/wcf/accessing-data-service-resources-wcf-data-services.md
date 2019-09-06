@@ -70,7 +70,7 @@ http://services.odata.org/Northwind/Northwind.svc/Orders?$filter=not endswith(Sh
   
 |Query Option|Description|  
 |------------------|-----------------|  
-|`$orderby`|Defines a default sort order for entities in the returned feed. The following query orders the returned customers feed by county and city:<br /><br /> `http://services.odata.org/Northwind/Northwind.svc/Customers?$orderby=Country,City`<br /><br />|  
+|`$orderby`|Defines a default sort order for entities in the returned feed. The following query orders the returned customers feed by county and city:<br /><br /> <https://services.odata.org/Northwind/Northwind.svc/Customers?$orderby=Country,City><br /><br />|  
 |`$top`|Specifies the number of entities to include in the returned feed. The following example skips the first 10 customers and then returns the next 10:<br /><br /> `http://services.odata.org/Northwind/Northwind.svc/Customers?$skip=10&$top=10`<br /><br />|  
 |`$skip`|Specifies the number of entities to skip before starting to return entities in the feed. The following example skips the first 10 customers and then returns the next 10:<br /><br /> `http://services.odata.org/Northwind/Northwind.svc/Customers?$skip=10&$top=10`<br /><br />|  
 |`$filter`|Defines an expression that filters the entities returned in the feed based on specific criteria. This query option supports a set of logical comparison operators, arithmetic operators, and predefined query functions that are used to evaluate the filter expression. The following example returns all orders the postal codes of which do not end in 100:<br /><br /> `http://services.odata.org/Northwind/Northwind.svc/Orders?$filter=not endswith(ShipPostalCode,'100')`<br /><br />|  
@@ -87,7 +87,7 @@ For more information, see `4. Query String Options` at [OData: URI Conventions](
 http://services.odata.org/Northwind/Northwind.svc/Orders(10643)/$links/Shipper  
 ```  
   
- For more information, see ` 3.2. Addressing Links between Entries` at [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+ For more information, see section `3.2. Addressing Links between Entries` at [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
   
 ## Consuming the Returned Feed  
  The URI of an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] resource enables you to address entity data exposed by the service. When you enter a URI into the address field of a Web browser, a [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed representation of the requested resource is returned. For more information, see the [WCF Data Services Quickstart](quickstart-wcf-data-services.md). Although a Web browser may be useful for testing that a data service resource returns the expected data, production data services that can also create, update, and delete data are generally accessed by application code or scripting languages in a Web page. For more information, see [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md).  

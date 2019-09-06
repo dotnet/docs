@@ -79,7 +79,7 @@ The debugger will assume that each old offset refers to an MSIL offset within th
 
   - A new offset of 20 or higher will be mapped to old offset 9.
 
-Before .NET Framework 4.0, `rgILMapEntries` array should have been allocated using the [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) method and the profiler shouldn't have attempt to free this memory.
+In the .NET Framework 3.5 and previous versions, you allocate the `rgILMapEntries` array by calling the [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) method. Because the runtime takes ownership of this memory, the profiler should not attempt to free it.
 
 ## Requirements
 

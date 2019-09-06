@@ -15,7 +15,7 @@ The XPath expression is:
 
 This example first finds an `Author` element. It then finds the `id` attribute of the parent element.
 
-This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).
+This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).
 
 ```csharp
 XDocument books = XDocument.Load("Books.xml");
@@ -44,7 +44,7 @@ Console.WriteLine(att1);
 
 This example produces the following output:
 
-```
+```output
 Results are identical
 id="bk101"
 ```

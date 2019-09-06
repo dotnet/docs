@@ -56,7 +56,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<smtp> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
+|[\<smtp> Element (Network Settings)](smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
   
 ## Remarks  
  Some SMTP servers require that you authenticate yourself to the server before use. If you want to authenticate yourself using the default network credentials on your host, set the `defaultCredentials` attribute to `true`. The <xref:System.Net.Configuration.SmtpNetworkElement.DefaultCredentials%2A?displayProperty=nameWithType> property can be used to get the current value of the `defaultCredentials` attribute from applicable configuration files.  
@@ -64,7 +64,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
  You can also use basic authentication (a user name and password) to authenticate yourself to the SMTP server. To use this option, you must specify a valid user name and password for the specified SMTP server.  
   
 > [!NOTE]
->  Basic authentication sends the `userName` and `password` values to the server unencrypted. Anyone monitoring network traffic can view your credentials and use them to connect to the server. You should consider using a more secure authentication mechanism, such as Kerberos or NT LAN Manager (NTLM.) If `defaultCredentials` is `true`, Kerberos or NTLM will be used if the server supports these protocols.  
+> Basic authentication sends the `userName` and `password` values to the server unencrypted. Anyone monitoring network traffic can view your credentials and use them to connect to the server. You should consider using a more secure authentication mechanism, such as Kerberos or NT LAN Manager (NTLM.) If `defaultCredentials` is `true`, Kerberos or NTLM will be used if the server supports these protocols.  
   
  The basic authentication and default network credentials options are mutually exclusive; if you set `defaultCredentials` to `true` and specify a user name and password, the default network credential is used, and the basic authentication data is ignored.  
   
@@ -108,4 +108,4 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 - <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
 - <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

@@ -1,6 +1,6 @@
 ---
 title: "-langversion (C# Compiler Options)"
-ms.date: 05/14/2018
+ms.date: 08/23/2019
 f1_keywords: 
   - "/langversion"
 helpviewer_keywords: 
@@ -41,6 +41,8 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 |ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0) <sup id="TISO2">[ISO2](#FISO2)</sup>|
 |ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.2) <sup id="TISO1">[ISO1](#FISO1)</sup>|  
 
+The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in the article on [configuring the language version](../configure-language-version.md#defaults)
+
 ## Remarks
 
  Metadata referenced by your C# application is not subject to **-langversion** compiler option.  
@@ -49,7 +51,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 
  Additionally, while C# version updates generally coincide with major .NET Framework releases, the new syntax and features are not necessarily tied to that specific framework version. While the new features definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
   
- Regardless of which **-langversion** setting you use, you will use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [-moduleassemblyname (C# Compiler Option)](../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md), which work under **-langversion:ISO-1**.  
+ Regardless of which **-langversion** setting you use, you will use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [-moduleassemblyname (C# Compiler Option)](./moduleassemblyname-compiler-option.md), which work under **-langversion:ISO-1**.  
 
  For other ways to specify the C# language version, see the [Select the C# language version](../configure-language-version.md) topic.
   

@@ -9,15 +9,15 @@ SQL Server provides the `max` specifier, which expands the storage capacity of t
  SQL Server 2008 introduces the FILESTREAM attribute, which is not a data type, but rather an attribute that can be defined on a column, allowing large-value data to be stored on the file system instead of in the database.  
   
 ## In This Section  
- [Modifying Large-Value (max) Data in ADO.NET](../../../../../docs/framework/data/adonet/sql/modifying-large-value-max-data.md)  
+ [Modifying Large-Value (max) Data in ADO.NET](modifying-large-value-max-data.md)  
  Describes how to work with the large-value data types.  
   
- [FILESTREAM Data](../../../../../docs/framework/data/adonet/sql/filestream-data.md)  
+ [FILESTREAM Data](filestream-data.md)  
  Describes how to work with large-value data stored in SQL Server 2008 with the FILESTREAM attribute.  
   
 ## See also
 
-- [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
-- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)
-- [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [SQL Server Data Types and ADO.NET](sql-server-data-types.md)
+- [SQL Server Data Operations in ADO.NET](sql-server-data-operations.md)
+- [Retrieving and Modifying Data in ADO.NET](../retrieving-and-modifying-data.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

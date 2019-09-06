@@ -30,9 +30,6 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
 </routing>
 ```  
   
-```csharp  
-```  
-  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -52,7 +49,7 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing mapping entries.|  
+|[\<routing>](routing.md)|A configuration section that contains routing mapping entries.|  
   
 ## See also
 

@@ -13,7 +13,7 @@ Operation performance counters are found under the `ServiceModelOperation 4.0.0.
  This counter enables you to measure how the call is being used and how well the operation is performing.  
   
 > [!CAUTION]
->  There is a limit on the length of a performance counter instance's name. When a Windows Communication Foundation (WCF) counter instance name exceeds the maximum length, WCF replaces a portion of the instance name with a hash value.  
+> There is a limit on the length of a performance counter instance's name. When a Windows Communication Foundation (WCF) counter instance name exceeds the maximum length, WCF replaces a portion of the instance name with a hash value.  
   
 ## See also
 

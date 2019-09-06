@@ -25,7 +25,7 @@ ms.author: "mairaw"
  <xref:System.Security.CodeAccessPermission.Assert%2A> is a method that can be called on code access permission classes and on the <xref:System.Security.PermissionSet> class. You can use **Assert** to enable your code (and downstream callers) to perform actions that your code has permission to do but its callers might not have permission to do. A security assertion changes the normal process that the runtime performs during a security check. When you assert a permission, it tells the security system not to check the callers of your code for the asserted permission.  
   
 > [!CAUTION]
->  Use assertions carefully because they can open security holes and undermine the runtime's mechanism for enforcing security restrictions.  
+> Use assertions carefully because they can open security holes and undermine the runtime's mechanism for enforcing security restrictions.  
   
  Assertions are useful in situations in which a library calls into unmanaged code or makes a call that requires a permission that is not obviously related to the library's intended use. For example, all managed code that calls into unmanaged code must have **SecurityPermission** with the **UnmanagedCode** flag specified. Code that does not originate from the local computer, such as code that is downloaded from the local intranet, will not be granted this permission by default. Therefore, in order for code that is downloaded from the local intranet to be able to call a library that uses unmanaged code, it must have the permission asserted by the library. Additionally, some libraries might make calls that are unseen to callers and require special permissions.  
   
@@ -60,7 +60,7 @@ ms.author: "mairaw"
  For example, suppose your highly trusted library class has a method that deletes files. It accesses the file by calling an unmanaged Win32 function. A caller invokes your code's **Delete** method, passing in the name of the file to be deleted, C:\Test.txt. Within the **Delete** method, your code creates a <xref:System.Security.Permissions.FileIOPermission> object representing write access to C:\Test.txt. (Write access is required to delete a file.) Your code then invokes an imperative security check by calling the **FileIOPermission** object's **Demand** method. If one of the callers in the call stack does not have this permission, a <xref:System.Security.SecurityException> is thrown. If no exception is thrown, you know that all callers have the right to access C:\Test.txt. Because you believe that most of your callers will not have permission to access unmanaged code, your code then creates a <xref:System.Security.Permissions.SecurityPermission> object that represents the right to call unmanaged code and calls the object's **Assert** method. Finally, it calls the unmanaged Win32 function to delete C:\Text.txt and returns control to the caller.  
   
 > [!CAUTION]
->  You must be sure that your code does not use assertions in situations where your code can be used by other code to access a resource that is protected by the permission you are asserting. For example, in code that writes to a file whose name is specified by the caller as a parameter, you would not assert the **FileIOPermission** for writing to files because your code would be open to misuse by a third party.  
+> You must be sure that your code does not use assertions in situations where your code can be used by other code to access a resource that is protected by the permission you are asserting. For example, in code that writes to a file whose name is specified by the caller as a parameter, you would not assert the **FileIOPermission** for writing to files because your code would be open to misuse by a third party.  
   
  When you use the imperative security syntax, calling the **Assert** method on multiple permissions in the same method causes a security exception to be thrown. Instead, you should create a **PermissionSet** object, pass it the individual permissions you want to invoke, and then call the **Assert** method on the **PermissionSet** object. You can call the **Assert** method more than once when you use the declarative security syntax.  
   
@@ -167,5 +167,5 @@ namespace LogUtil
 - <xref:System.Security.Permissions.SecurityPermission>
 - <xref:System.Security.Permissions.FileIOPermission>
 - <xref:System.Security.Permissions.SecurityAction>
-- [Attributes](../../../docs/standard/attributes/index.md)
-- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+- [Attributes](../../standard/attributes/index.md)
+- [Code Access Security](code-access-security.md)

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a8e1061e-0028-4a6f-8f19-b9f48e96c4b8
 ---
 # WHERE (Entity SQL)
-The WHERE clause is applied directly after the [FROM](../../../../../../docs/framework/data/adonet/ef/language-reference/from-entity-sql.md) clause.  
+The WHERE clause is applied directly after the [FROM](from-entity-sql.md) clause.  
   
 ## Syntax  
   
@@ -29,5 +29,5 @@ select c from cs as c where e
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Query Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Query Expressions](query-expressions-entity-sql.md)

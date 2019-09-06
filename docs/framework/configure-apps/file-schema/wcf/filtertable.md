@@ -41,13 +41,13 @@ Represents a routing table that contains a list of filters to evaluate messages 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<filters>](../../../../../docs/framework/configure-apps/file-schema/wcf/filters-of-routing.md)|Mappings between the routing filters and the target endpoints to send messages to when the filter matches.|  
+|[\<filters>](filters-of-routing.md)|Mappings between the routing filters and the target endpoints to send messages to when the filter matches.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing tables.|  
+|[\<routing>](routing.md)|A configuration section that contains routing tables.|  
   
 ## See also
 

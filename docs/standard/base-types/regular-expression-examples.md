@@ -14,7 +14,7 @@ ms.author: "ronpet"
 This section contains code examples that illustrate the use of regular expressions in common applications.  
   
 > [!NOTE]
->  The <xref:System.Web.RegularExpressions> namespace contains a number of regular expression objects that implement predefined regular expression patterns for parsing strings from HTML, XML, and ASP.NET documents. For example, the <xref:System.Web.RegularExpressions.TagRegex> class identifies start tags in a string and the <xref:System.Web.RegularExpressions.CommentRegex> class identifies ASP.NET comments in a string.  
+> The <xref:System.Web.RegularExpressions> namespace contains a number of regular expression objects that implement predefined regular expression patterns for parsing strings from HTML, XML, and ASP.NET documents. For example, the <xref:System.Web.RegularExpressions.TagRegex> class identifies start tags in a string and the <xref:System.Web.RegularExpressions.CommentRegex> class identifies ASP.NET comments in a string.  
   
 ## In This Section  
  [Example: Scanning for HREFs](../../../docs/standard/base-types/regular-expression-example-scanning-for-hrefs.md)  

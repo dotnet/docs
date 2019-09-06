@@ -44,7 +44,7 @@ typedef enum CorDebugDebugEventKind {
  A member of the `CorDebugDebugEventKind` enumeration is returned by calling the [ICorDebugDebugEvent::GetEventKind](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-geteventkind-method.md) method.  
   
 > [!NOTE]
->  This enumeration is intended for use in .NET Native debugging scenarios only.  
+> This enumeration is intended for use in .NET Native debugging scenarios only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

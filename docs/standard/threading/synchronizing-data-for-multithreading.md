@@ -45,17 +45,17 @@ When multiple threads can make calls to the properties and methods of a single o
  Both Visual Basic and C# support the marking of blocks of code with a particular language keyword, the `lock` statement in C# or the `SyncLock` statement in Visual Basic. When the code is executed by a thread, an attempt is made to acquire the lock. If the lock has already been acquired by another thread, the thread blocks until the lock becomes available. When the thread exits the synchronized block of code, the lock is released, no matter how the thread exits the block.  
   
 > [!NOTE]
->  The `lock` and `SyncLock` statements are implemented using <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>, so other methods of <xref:System.Threading.Monitor> can be used in conjunction with them within the synchronized region.  
+> The `lock` and `SyncLock` statements are implemented using <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>, so other methods of <xref:System.Threading.Monitor> can be used in conjunction with them within the synchronized region.  
   
  You can also decorate a method with a <xref:System.Runtime.CompilerServices.MethodImplAttribute> with a value of <xref:System.Runtime.CompilerServices.MethodImplOptions.Synchronized?displayProperty=nameWithType>, which has the same effect as using <xref:System.Threading.Monitor> or one of the compiler keywords to lock the entire body of the method.  
   
  <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> can be used to break a thread out of blocking operations such as waiting for access to a synchronized region of code. **Thread.Interrupt** is also used to break threads out of operations like <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType>.  
   
 > [!IMPORTANT]
->  Do not lock the type — that is, `typeof(MyType)` in C#, `GetType(MyType)` in Visual Basic, or `MyType::typeid` in C++ — in order to protect `static` methods (`Shared` methods in Visual Basic). Use a private static object instead. Similarly, do not use `this` in C# (`Me` in Visual Basic) to lock instance methods. Use a private object instead. A class or instance can be locked by code other than your own, potentially causing deadlocks or performance problems.  
+> Do not lock the type — that is, `typeof(MyType)` in C#, `GetType(MyType)` in Visual Basic, or `MyType::typeid` in C++ — in order to protect `static` methods (`Shared` methods in Visual Basic). Use a private static object instead. Similarly, do not use `this` in C# (`Me` in Visual Basic) to lock instance methods. Use a private object instead. A class or instance can be locked by code other than your own, potentially causing deadlocks or performance problems.  
   
 ### Compiler support  
- Both Visual Basic and C# support a language keyword that uses <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> to lock the object. Visual Basic supports the [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) statement; C# supports the [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement.  
+ Both Visual Basic and C# support a language keyword that uses <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> to lock the object. Visual Basic supports the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement; C# supports the [lock](../../csharp/language-reference/keywords/lock-statement.md) statement.  
   
  In both cases, if an exception is thrown in the code block, the lock acquired by the **lock** or **SyncLock** is released automatically. The C# and Visual Basic compilers emit a **try**/**finally** block with **Monitor.Enter** at the beginning of the try, and **Monitor.Exit** in the **finally** block. If an exception is thrown inside the **lock** or **SyncLock** block, the **finally** handler runs to allow you to do any clean-up work.  
   
@@ -68,5 +68,5 @@ In .NET Framework and Xamarin applications only, you can use the <xref:System.Ru
 - <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>
 - [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
 - [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)
-- [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md)
-- [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md)
+- [SyncLock Statement](../../visual-basic/language-reference/statements/synclock-statement.md)
+- [lock Statement](../../csharp/language-reference/keywords/lock-statement.md)

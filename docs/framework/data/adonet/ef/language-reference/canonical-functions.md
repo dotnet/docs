@@ -20,30 +20,30 @@ This section discusses canonical functions that are supported by all data provid
  The namespace for canonical function is <xref:System.Data.Metadata.Edm>. The <xref:System.Data.Metadata.Edm> namespace is automatically included in all queries. However, if another namespace is imported that contains a function with the same name as a canonical function (in the <xref:System.Data.Metadata.Edm> namespace), you must specify the namespace.  
   
 ## In This Section  
- [Aggregate Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/aggregate-canonical-functions.md)  
+ [Aggregate Canonical Functions](aggregate-canonical-functions.md)  
  Discusses aggregate [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions.  
   
- [Math Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/math-canonical-functions.md)  
+ [Math Canonical Functions](math-canonical-functions.md)  
  Discusses math [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions.  
   
- [String Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/string-canonical-functions.md)  
+ [String Canonical Functions](string-canonical-functions.md)  
  Discusses string [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions.  
   
- [Date and Time Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md)  
+ [Date and Time Canonical Functions](date-and-time-canonical-functions.md)  
  Discusses date and time [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions.  
   
- [Bitwise Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/bitwise-canonical-functions.md)  
+ [Bitwise Canonical Functions](bitwise-canonical-functions.md)  
  Discusses bitwise [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions.  
   
- [Spatial Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/spatial-functions.md)  
+ [Spatial Functions](spatial-functions.md)  
  Discusses Spatial [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions.  
   
- [Other Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/other-canonical-functions.md)  
+ [Other Canonical Functions](other-canonical-functions.md)  
  Discusses functions not classified as bitwise, date/time, string, math, or aggregate.  
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Conceptual Model Canonical to SQL Server Functions Mapping](../../../../../../docs/framework/data/adonet/ef/conceptual-model-canonical-to-sql-server-functions-mapping.md)
-- [User-Defined Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/user-defined-functions-entity-sql.md)
+- [Entity SQL Overview](entity-sql-overview.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Conceptual Model Canonical to SQL Server Functions Mapping](../conceptual-model-canonical-to-sql-server-functions-mapping.md)
+- [User-Defined Functions](user-defined-functions-entity-sql.md)

@@ -35,7 +35,7 @@ In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFeder
  You can also set other properties, including the type of key used as a proof key in the issued token, the algorithm suite to use between the client and the service, whether to negotiate or explicitly specify the service credential, any specific claims the service expects the issued token to contain, and any additional XML elements that must be added to the request the client sends to the security token service.
 
 > [!NOTE]
->  The `NegotiateServiceCredential` property is only relevant when the `SecurityMode` is set to `Message`. If `SecurityMode` is set to `TransportWithMessageCredential`, then the `NegotiateServiceCredential` property is ignored.
+> The `NegotiateServiceCredential` property is only relevant when the `SecurityMode` is set to `Message`. If `SecurityMode` is set to `TransportWithMessageCredential`, then the `NegotiateServiceCredential` property is ignored.
 
 ## To configure a WSFederationHttpBinding in code
 

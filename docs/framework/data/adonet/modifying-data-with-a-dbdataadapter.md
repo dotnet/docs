@@ -34,11 +34,11 @@ The <xref:System.Data.Common.DbProviderFactory.CreateDataAdapter%2A> method of a
  The factory model is not helpful for creating parameterized `DbCommand` and `DbDataAdapter` objects. You will need to branch in your code to create parameters that are tailored to your data provider.  
   
 > [!IMPORTANT]
->  Avoiding provider-specific parameters altogether by using string concatenation to construct direct SQL statements is not recommended for security reasons. Using string concatenation instead of parameters leaves your application vulnerable to SQL injection attacks.  
+> Avoiding provider-specific parameters altogether by using string concatenation to construct direct SQL statements is not recommended for security reasons. Using string concatenation instead of parameters leaves your application vulnerable to SQL injection attacks.  
   
 ## See also
 
-- [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)
-- [Obtaining a DbProviderFactory](../../../../docs/framework/data/adonet/obtaining-a-dbproviderfactory.md)
-- [DbConnection, DbCommand and DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)
+- [DbProviderFactories](dbproviderfactories.md)
+- [Obtaining a DbProviderFactory](obtaining-a-dbproviderfactory.md)
+- [DbConnection, DbCommand and DbException](dbconnection-dbcommand-and-dbexception.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

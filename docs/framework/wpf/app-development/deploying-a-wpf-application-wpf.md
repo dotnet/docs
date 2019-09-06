@@ -7,11 +7,11 @@ helpviewer_keywords:
 ms.assetid: 12cadca0-b32c-4064-9a56-e6a306dcc76d
 ---
 # Deploying a WPF Application (WPF)
-After Windows Presentation Foundation (WPF) applications are built, they need to be deployed. [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] and the .NET Framework include several deployment technologies. The deployment technology that is used to deploy a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application depends on the application type. This topic provides a brief overview of each deployment technology, and how they are used in conjunction with the deployment requirements of each [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application type.  
+After Windows Presentation Foundation (WPF) applications are built, they need to be deployed. Windows and the .NET Framework include several deployment technologies. The deployment technology that is used to deploy a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application depends on the application type. This topic provides a brief overview of each deployment technology, and how they are used in conjunction with the deployment requirements of each [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application type.  
 
 <a name="Deployment_Technologies"></a>   
 ## Deployment Technologies  
- [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] and the .NET Framework include several deployment technologies, including:  
+ Windows and the .NET Framework include several deployment technologies, including:  
   
 - XCopy deployment.  
   
@@ -33,7 +33,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 <a name="Windows_Installer"></a>   
 ### Windows Installer  
- [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] allows applications to be packaged as self-contained executables that can be easily distributed to clients and run. Furthermore, [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] is installed with [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] and enables integration with the desktop, the Start menu, and the Programs control panel.  
+ [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] allows applications to be packaged as self-contained executables that can be easily distributed to clients and run. Furthermore, [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] is installed with Windows and enables integration with the desktop, the Start menu, and the Programs control panel.  
   
  [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] simplifies the installation and uninstallation of applications, but it does not provide facilities for ensuring that installed applications are kept up-to-date from a versioning standpoint.  
   
@@ -90,7 +90,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 - *ApplicationName*.exe.manifest: The application manifest.  
   
 > [!NOTE]
->  For more information about deployment and application manifests, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
+> For more information about deployment and application manifests, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
  These files are produced when an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] is built. For more information, see [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)). Like markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages, [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are typically published to a Web server and viewed using Internet Explorer.  
   
@@ -108,7 +108,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 ## Installing the .NET Framework  
  To run a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application, the Microsoft .NET Framework must be installed on the client. Internet Explorer automatically detects whether clients are installed with .NET Framework when [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications are viewed. If the .NET Framework is not installed, Internet Explorer prompts users to install it.  
   
- To detect whether the .NET Framework is installed, Internet Explorer includes a bootstrapper application that is registered as the fallback [!INCLUDE[TLA#tla_mime](../../../../includes/tlasharptla-mime-md.md)] handler for content files with the following extensions: .xaml, .xps, .xbap, and .application. If you navigate to these file types and the .NET Framework is not installed on the client, the bootstrapper application requests permission to install it. If permission is not provided, neither the .NET Framework nor the application is installed.  
+ To detect whether the .NET Framework is installed, Internet Explorer includes a bootstrapper application that is registered as the fallback Multipurpose Internet Mail Extensions (MIME) handler for content files with the following extensions: .xaml, .xps, .xbap, and .application. If you navigate to these file types and the .NET Framework is not installed on the client, the bootstrapper application requests permission to install it. If permission is not provided, neither the .NET Framework nor the application is installed.  
   
  If permission is granted, Internet Explorer downloads and installs the .NET Framework using the Microsoft Background Intelligent Transfer Service (BITS). After successful installation of the .NET Framework, the originally requested file is opened in a new browser window.  
   

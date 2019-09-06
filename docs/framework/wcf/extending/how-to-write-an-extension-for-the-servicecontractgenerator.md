@@ -94,5 +94,5 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
   
 ## See also
 
-- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
-- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)
+- [Metadata](../feature-details/metadata.md)
+- [How to: Import Custom WSDL](how-to-import-custom-wsdl.md)

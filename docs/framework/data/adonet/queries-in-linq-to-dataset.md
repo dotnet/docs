@@ -25,7 +25,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
 ### Query Expression Syntax  
  Query expressions are a declarative query syntax. This syntax enables a developer to write queries in C# or Visual Basic in a format similar to SQL. By using query expression syntax, you can perform even complex filtering, ordering, and grouping operations on data sources with minimal code. For more information, see [LINQ Query Expressions](../../../csharp/linq/index.md#query-expression-overview) and [Basic Query Operations (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
   
- The .NET Framework common language runtime (CLR) cannot read the query expression syntax itself. Therefore, at compile time, query expressions are translated to something that the CLR does understand: method calls. These methods are referred to as the *standard query operators*. As a developer, you have the option of calling them directly by using method syntax, instead of using query syntax. For more information, see [Query Syntax and Method Syntax in LINQ](~/docs/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md). For more information about the standard query operators, see [Standard Query Operators Overview](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md).  
+ The .NET Framework common language runtime (CLR) cannot read the query expression syntax itself. Therefore, at compile time, query expressions are translated to something that the CLR does understand: method calls. These methods are referred to as the *standard query operators*. As a developer, you have the option of calling them directly by using method syntax, instead of using query syntax. For more information, see [Query Syntax and Method Syntax in LINQ](../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md). For more information about the standard query operators, see [Standard Query Operators Overview](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
  The following example uses <xref:System.Linq.Enumerable.Select%2A> to return all the rows from `Product` table and display the product names.  
   
@@ -33,7 +33,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
  [!code-vb[DP LINQ to DataSet Examples#SelectSimple1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#selectsimple1)]  
   
 ### Method-Based Query Syntax  
- The other way to formulate LINQ to DataSet queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
+ The other way to formulate LINQ to DataSet queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
  This example uses <xref:System.Linq.Enumerable.Select%2A> to return all the rows from `Product` and display the product names.  
   
@@ -55,7 +55,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
   
 ## See also
 
-- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
-- [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)
-- [Getting Started with LINQ in C#](~/docs/csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
-- [Getting Started with LINQ in Visual Basic](~/docs/visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [Programming Guide](programming-guide-linq-to-dataset.md)
+- [Querying DataSets](querying-datasets-linq-to-dataset.md)
+- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [Getting Started with LINQ in Visual Basic](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)

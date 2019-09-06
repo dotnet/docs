@@ -39,7 +39,7 @@ Console.WriteLine("End of result set");
 ### Comments  
  This example produces the following result:  
   
-```  
+```output  
 Result set follows:  
 End of result set  
 ```  
@@ -74,7 +74,7 @@ Console.WriteLine("End of result set");
 ### Comments  
  This example produces the following result:  
   
-```  
+```output  
 Result set follows:  
 1  
 2  

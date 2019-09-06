@@ -66,7 +66,7 @@ public static void ProcessOrder(Object source,
 ```
 
 > [!NOTE]
->  The queue name uses a dot (.) for the local computer and backslash separators in its path.
+> The queue name uses a dot (.) for the local computer and backslash separators in its path.
 
  The client creates a purchase order and submits the purchase order within the scope of a transaction, as shown in the following sample code.
 
@@ -124,7 +124,7 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. For example, you could run the client, shut it down, and then start up the service and it would still receive its messages.
 
 > [!NOTE]
->  This sample requires the installation of Message Queuing. See the installation instructions in [Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94968).  
+> This sample requires the installation of Message Queuing. See the installation instructions in [Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94968).  
   
 ### To setup, build, and run the sample  
   
@@ -159,13 +159,13 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 5. On the client computer, launch Client.exe from a command prompt.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\WcfToMsmq`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\WcfToMsmq`  
   
 ## See also
 

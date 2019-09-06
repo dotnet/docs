@@ -23,7 +23,7 @@ ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
  Resolution of this conflict includes discovering which members of the object are in conflict, and then deciding what you want to do about it.  
   
 > [!NOTE]
->  Only members mapped as <xref:System.Data.Linq.Mapping.UpdateCheck.Always> or <xref:System.Data.Linq.Mapping.UpdateCheck.WhenChanged> participate in optimistic concurrency checks. No check is performed for members marked <xref:System.Data.Linq.Mapping.UpdateCheck.Never>. For more information, see <xref:System.Data.Linq.Mapping.UpdateCheck>.  
+> Only members mapped as <xref:System.Data.Linq.Mapping.UpdateCheck.Always> or <xref:System.Data.Linq.Mapping.UpdateCheck.WhenChanged> participate in optimistic concurrency checks. No check is performed for members marked <xref:System.Data.Linq.Mapping.UpdateCheck.Never>. For more information, see <xref:System.Data.Linq.Mapping.UpdateCheck>.  
   
 ## Example  
  For example, in the following scenario, User1 starts to prepare an update by querying the database for a row. User1 receives a row with values of Alfreds, Maria, and Sales.  
@@ -38,26 +38,26 @@ ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
 |User1|Alfred||Marketing|  
 |User2||Mary|Service|  
   
- You can resolve conflicts such as this in different ways. For more information, see [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md).  
+ You can resolve conflicts such as this in different ways. For more information, see [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md).  
   
 ## Conflict Detection and Resolution Checklist  
  You can detect and resolve conflicts at any level of detail. At one extreme, you can resolve all conflicts in one of three ways (see <xref:System.Data.Linq.RefreshMode>) without additional consideration. At the other extreme, you can designate a specific action for each type of conflict on every member in conflict.  
   
 - Specify or revise <xref:System.Data.Linq.Mapping.UpdateCheck> options in your object model.  
   
-     For more information, see [How to: Specify Which Members are Tested for Concurrency Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-specify-which-members-are-tested-for-concurrency-conflicts.md).  
+     For more information, see [How to: Specify Which Members are Tested for Concurrency Conflicts](how-to-specify-which-members-are-tested-for-concurrency-conflicts.md).  
   
 - In the try/catch block of your call to <xref:System.Data.Linq.DataContext.SubmitChanges%2A>, specify at what point you want exceptions to be thrown.  
   
-     For more information, see [How to: Specify When Concurrency Exceptions are Thrown](../../../../../../docs/framework/data/adonet/sql/linq/how-to-specify-when-concurrency-exceptions-are-thrown.md).  
+     For more information, see [How to: Specify When Concurrency Exceptions are Thrown](how-to-specify-when-concurrency-exceptions-are-thrown.md).  
   
 - Determine how much conflict detail you want to retrieve, and include code in your try/catch block accordingly.  
   
-     For more information, see [How to: Retrieve Entity Conflict Information](../../../../../../docs/framework/data/adonet/sql/linq/how-to-retrieve-entity-conflict-information.md) and [How to: Retrieve Member Conflict Information](../../../../../../docs/framework/data/adonet/sql/linq/how-to-retrieve-member-conflict-information.md).  
+     For more information, see [How to: Retrieve Entity Conflict Information](how-to-retrieve-entity-conflict-information.md) and [How to: Retrieve Member Conflict Information](how-to-retrieve-member-conflict-information.md).  
   
 - Include in your `try`/`catch` code how you want to resolve the various conflicts you discover.  
   
-     For more information, see [How to: Resolve Conflicts by Retaining Database Values](../../../../../../docs/framework/data/adonet/sql/linq/how-to-resolve-conflicts-by-retaining-database-values.md), [How to: Resolve Conflicts by Overwriting Database Values](../../../../../../docs/framework/data/adonet/sql/linq/how-to-resolve-conflicts-by-overwriting-database-values.md), and [How to: Resolve Conflicts by Merging with Database Values](../../../../../../docs/framework/data/adonet/sql/linq/how-to-resolve-conflicts-by-merging-with-database-values.md).  
+     For more information, see [How to: Resolve Conflicts by Retaining Database Values](how-to-resolve-conflicts-by-retaining-database-values.md), [How to: Resolve Conflicts by Overwriting Database Values](how-to-resolve-conflicts-by-overwriting-database-values.md), and [How to: Resolve Conflicts by Merging with Database Values](how-to-resolve-conflicts-by-merging-with-database-values.md).  
   
 ## LINQ to SQL Types That Support Conflict Discovery and Resolution  
  Classes and features to support the resolution of conflicts in optimistic concurrency in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] include the following:  
@@ -84,4 +84,4 @@ ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
   
 ## See also
 
-- [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)
+- [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md)

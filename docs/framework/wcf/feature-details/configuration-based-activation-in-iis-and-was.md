@@ -12,7 +12,7 @@ Normally when hosting a Windows Communication Foundation (WCF) service under Int
 Configuration-based activation takes the metadata that used to be placed in the .svc file and places it in the Web.config file. Within the<`serviceHostingEnvironment`> element there is a <`serviceActivations`> element. Within the <`serviceActivations`> element are one or more <`add`> elements, one for each hosted service. The <`add`> element contains attributes that let you set the relative address for the service and the service type or a service host factory. The following configuration example code shows how this section is used.
 
 > [!NOTE]
->  Each <`add`> element must specify a service or a factory attribute. Specifying both service and factory attributes is allowed.
+> Each <`add`> element must specify a service or a factory attribute. Specifying both service and factory attributes is allowed.
 
 ```xml
 <serviceHostingEnvironment>

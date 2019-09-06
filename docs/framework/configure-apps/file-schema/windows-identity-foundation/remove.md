@@ -7,10 +7,11 @@ author: "BrucePerlerMS"
 # \<remove>
 Removes the specified security token handler from the token handler collection.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<securityTokenHandlers>  
-\<remove>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlers>**](securitytokenhandlers.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
 ## Syntax  
   
@@ -41,7 +42,7 @@ Removes the specified security token handler from the token handler collection.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<securityTokenHandlers>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlers.md)|Specifies a collection of security token handlers that are registered with the endpoint.|  
+|[\<securityTokenHandlers>](securitytokenhandlers.md)|Specifies a collection of security token handlers that are registered with the endpoint.|  
   
 ## Example  
  The following XML shows the use of the `<add>` and `<remove>` elements to replace the default session token handler with a custom session token handler. The XML is taken from the `ClaimsAwareWebFarm` sample.  

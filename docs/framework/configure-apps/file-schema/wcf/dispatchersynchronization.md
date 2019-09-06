@@ -8,10 +8,12 @@ ms.assetid: cc030f9c-4e38-4b14-94dc-9a0e41ec8e2d
   
 Specifies an endpoint behavior that enables a service to send replies asynchronously.  
   
-\<system.serviceModel>  
-\<behaviors>  
-\<endpointBehaviors>  
-\<behavior>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dispatcherSynchronization>**  
   
 ## Syntax  
   
@@ -43,7 +45,7 @@ None.
 
 | Element | Description |  
 | ------- | ----------- |  
-| [\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior. |
+| [\<behavior>](behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior. |
 
 ## See also
 

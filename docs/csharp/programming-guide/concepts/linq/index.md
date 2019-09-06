@@ -53,4 +53,4 @@ To start working with LINQ in C#, see the tutorial [Working with LINQ](../../../
 
 ## See also
 
-- [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+- [Language-Integrated Query (LINQ) (C#)](./index.md)

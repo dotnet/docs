@@ -67,7 +67,7 @@ FROM OPENROWSET
 |`@Length` is NULL|The update operation removes all data from `@Offset` to the end of the `column_name` value.|  
   
 > [!NOTE]
->  Neither `@Offset` nor `@Length` can be a negative number.  
+> Neither `@Offset` nor `@Length` can be a negative number.  
   
 ## Example  
  This Transact-SQL example updates a partial value in DocumentSummary, an `nvarchar(max)` column in the Document table in the AdventureWorks database. The word 'components' is replaced by the word 'features' by specifying the replacement word, the beginning location (offset) of the word to be replaced in the existing data, and the number of characters to be replaced (length). The example includes SELECT statements before and after the UPDATE statement to compare results.  
@@ -245,7 +245,7 @@ WHERE   DocumentID=@DocumentID
   
 ## See also
 
-- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
-- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
-- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)
+- [SQL Server Binary and Large-Value Data](sql-server-binary-and-large-value-data.md)
+- [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md)
+- [SQL Server Data Operations in ADO.NET](sql-server-data-operations.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

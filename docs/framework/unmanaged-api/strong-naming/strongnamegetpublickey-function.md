@@ -21,7 +21,7 @@ ms.author: "ronpet"
 # StrongNameGetPublicKey Function
 Gets the public key from a private/public key pair. The key pair can be supplied either as a key container name within a cryptographic service provider (CSP) or as a raw collection of bytes.  
   
- This function has been deprecated. Use the [ICLRStrongName::StrongNameGetPublicKey](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetpublickey-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::StrongNameGetPublicKey](../hosting/iclrstrongname-strongnamegetpublickey-method.md) method instead.  
   
 ## Syntax  
   
@@ -50,7 +50,7 @@ BOOLEAN StrongNameGetPublicKey (
  [in] The size, in bytes, of `pbKeyBlob`.  
   
  `ppbPublicKeyBlob`  
- [out] The returned public key BLOB. The `ppbPublicKeyBlob` parameter is allocated by the common language runtime and returned to the caller. The caller must free the memory by using the [StrongNameFreeBuffer](../../../../docs/framework/unmanaged-api/strong-naming/strongnamefreebuffer-function.md) function.  
+ [out] The returned public key BLOB. The `ppbPublicKeyBlob` parameter is allocated by the common language runtime and returned to the caller. The caller must free the memory by using the [StrongNameFreeBuffer](strongnamefreebuffer-function.md) function.  
   
  `pcbPublicKeyBlob`  
  [out] The size of the returned public key BLOB.  
@@ -59,12 +59,12 @@ BOOLEAN StrongNameGetPublicKey (
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
- The public key is contained in a [PublicKeyBlob](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md) structure.  
+ The public key is contained in a [PublicKeyBlob](publickeyblob-structure.md) structure.  
   
- If the `StrongNameGetPublicKey` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.  
+ If the `StrongNameGetPublicKey` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -74,7 +74,7 @@ BOOLEAN StrongNameGetPublicKey (
   
 ## See also
 
-- [StrongNameGetPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetpublickey-method.md)
-- [StrongNameTokenFromPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfrompublickey-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
-- [PublicKeyBlob Structure](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)
+- [StrongNameGetPublicKey Method](../hosting/iclrstrongname-strongnamegetpublickey-method.md)
+- [StrongNameTokenFromPublicKey Method](../hosting/iclrstrongname-strongnametokenfrompublickey-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)
+- [PublicKeyBlob Structure](publickeyblob-structure.md)

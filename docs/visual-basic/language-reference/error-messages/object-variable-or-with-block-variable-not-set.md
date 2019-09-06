@@ -13,7 +13,7 @@ An invalid object variable is being referenced.   This error can occur for sever
     For example, a variable declared with `Dim x` would be of type `Object;` a variable declared with `Dim x As String` would be of type `String`.
 
     > [!TIP]
-    >  The `Option Strict` statement disallows implicit typing that results in an `Object` type. If you omit the type, a compile-time error will occur. See [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md).
+    > The `Option Strict` statement disallows implicit typing that results in an `Object` type. If you omit the type, a compile-time error will occur. See [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md).
 
 - You are attempting to reference an object that has been set to `Nothing`.
 

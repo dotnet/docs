@@ -23,4 +23,4 @@ Some operators can take only one argument. If your argument must include more th
   
 ## See also
 
-- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+- [Query Concepts](query-concepts.md)

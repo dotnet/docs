@@ -13,13 +13,13 @@ There are two ways to create a <xref:System.Data.DataView> in the LINQ to DataSe
   
  <xref:System.Data.DataView> constructs an index, which significantly increases the performance of operations that can use the index, such as filtering and sorting. The index for a <xref:System.Data.DataView> is built both when the <xref:System.Data.DataView> is created and when any of the sorting or filtering information is modified. Creating a <xref:System.Data.DataView> and then setting the sorting or filtering information later causes the index to be built at least twice: once when the <xref:System.Data.DataView> is created, and again when any of the sort or filter properties are modified.  
   
- For more information about filtering and sorting with <xref:System.Data.DataView>, see [Filtering with DataView](../../../../docs/framework/data/adonet/filtering-with-dataview-linq-to-dataset.md) and [Sorting with DataView](../../../../docs/framework/data/adonet/sorting-with-dataview-linq-to-dataset.md).  
+ For more information about filtering and sorting with <xref:System.Data.DataView>, see [Filtering with DataView](filtering-with-dataview-linq-to-dataset.md) and [Sorting with DataView](sorting-with-dataview-linq-to-dataset.md).  
   
 ## Creating DataView from a LINQ to DataSet Query  
  A <xref:System.Data.DataView> object can be created from the results of a LINQ to DataSet query, where the results are a projection of <xref:System.Data.DataRow> objects. The newly created <xref:System.Data.DataView> inherits the filtering and sorting information from the query it is created from.  
   
 > [!NOTE]
->  In most cases, the expressions used for filtering and sorting should not have side effects and must be deterministic. Also, the expressions should not contain any logic that depend on a set number of executions, as the sorting and filtering operations may be executed any number of times.  
+> In most cases, the expressions used for filtering and sorting should not have side effects and must be deterministic. Also, the expressions should not contain any logic that depend on a set number of executions, as the sorting and filtering operations may be executed any number of times.  
   
  Creating a <xref:System.Data.DataView> from a query that returns anonymous types or queries that perform join operations is not supported.  
   
@@ -66,6 +66,6 @@ There are two ways to create a <xref:System.Data.DataView> in the LINQ to DataSe
   
 ## See also
 
-- [Data Binding and LINQ to DataSet](../../../../docs/framework/data/adonet/data-binding-and-linq-to-dataset.md)
-- [Filtering with DataView](../../../../docs/framework/data/adonet/filtering-with-dataview-linq-to-dataset.md)
-- [Sorting with DataView](../../../../docs/framework/data/adonet/sorting-with-dataview-linq-to-dataset.md)
+- [Data Binding and LINQ to DataSet](data-binding-and-linq-to-dataset.md)
+- [Filtering with DataView](filtering-with-dataview-linq-to-dataset.md)
+- [Sorting with DataView](sorting-with-dataview-linq-to-dataset.md)

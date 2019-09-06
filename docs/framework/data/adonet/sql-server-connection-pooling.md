@@ -18,7 +18,7 @@ Connecting to a database server typically consists of several time-consuming ste
  Pooling connections can significantly enhance the performance and scalability of your application. By default, connection pooling is enabled in ADO.NET. Unless you explicitly disable it, the pooler optimizes the connections as they are opened and closed in your application. You can also supply several connection string modifiers to control connection pooling behavior. For more information, see "Controlling Connection Pooling with Connection String Keywords" later in this topic.  
   
 > [!NOTE]
->  When connection pooling is enabled, and if a timeout error or other login error occurs, an exception will be thrown and subsequent connection attempts will fail for the next five seconds, the "blocking period". If the application attempts to connect within the blocking period, the first exception will be thrown again. Subsequent failures after a blocking period ends will result in a new blocking periods that is twice as long as the previous blocking period, up to a maximum of one minute.  
+> When connection pooling is enabled, and if a timeout error or other login error occurs, an exception will be thrown and subsequent connection attempts will fail for the next five seconds, the "blocking period". If the application attempts to connect within the blocking period, the first exception will be thrown again. Subsequent failures after a blocking period ends will result in a new blocking periods that is twice as long as the previous blocking period, up to a maximum of one minute.  
   
 ## Pool Creation and Assignment  
  When a connection is first opened, a connection pool is created based on an exact matching algorithm that associates the pool with the connection string in the connection. Each connection pool is associated with a distinct connection string. When a new connection is opened, if the connection string is not an exact match to an existing pool, a new pool is created. Connections are pooled per process, per application domain, per connection string and when integrated security is used, per Windows identity. Connection strings must also be an exact match; keywords supplied in a different order for the same connection will be pooled separately.  
@@ -51,7 +51,7 @@ using (SqlConnection connection = new SqlConnection(
  If `MinPoolSize` is either not specified in the connection string or is specified as zero, the connections in the pool will be closed after a period of inactivity. However, if the specified `MinPoolSize` is greater than zero, the connection pool is not destroyed until the `AppDomain` is unloaded and the process ends. Maintenance of inactive or empty pools involves minimal system overhead.  
   
 > [!NOTE]
->  The pool is automatically cleared when a fatal error occurs, such as a failover.  
+> The pool is automatically cleared when a fatal error occurs, such as a failover.  
   
 ## Adding Connections  
  A connection pool is created for each unique connection string. When a pool is created, multiple connection objects are created and added to the pool so that the minimum pool size requirement is satisfied. Connections are added to the pool as needed, up to the maximum pool size specified (100 is the default). Connections are released back into the pool when they are closed or disposed.  
@@ -61,10 +61,10 @@ using (SqlConnection connection = new SqlConnection(
  The connection pooler satisfies requests for connections by reallocating connections as they are released back into the pool. If the maximum pool size has been reached and no usable connection is available, the request is queued. The pooler then tries to reclaim any connections until the time-out is reached (the default is 15 seconds). If the pooler cannot satisfy the request before the connection times out, an exception is thrown.  
   
 > [!CAUTION]
->  We strongly recommend that you always close the connection when you are finished using it so that the connection will be returned to the pool. You can do this using either the `Close` or `Dispose` methods of the `Connection` object, or by opening all connections inside a `using` statement in C#, or a `Using` statement in Visual Basic. Connections that are not explicitly closed might not be added or returned to the pool. For more information, see [using Statement](~/docs/csharp/language-reference/keywords/using-statement.md) or [How to: Dispose of a System Resource](~/docs/visual-basic/programming-guide/language-features/control-flow/how-to-dispose-of-a-system-resource.md) for Visual Basic.  
+> We strongly recommend that you always close the connection when you are finished using it so that the connection will be returned to the pool. You can do this using either the `Close` or `Dispose` methods of the `Connection` object, or by opening all connections inside a `using` statement in C#, or a `Using` statement in Visual Basic. Connections that are not explicitly closed might not be added or returned to the pool. For more information, see [using Statement](../../../csharp/language-reference/keywords/using-statement.md) or [How to: Dispose of a System Resource](../../../visual-basic/programming-guide/language-features/control-flow/how-to-dispose-of-a-system-resource.md) for Visual Basic.  
   
 > [!NOTE]
->  Do not call `Close` or `Dispose` on a `Connection`, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../../docs/standard/garbage-collection/index.md).  
+> Do not call `Close` or `Dispose` on a `Connection`, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../standard/garbage-collection/index.md).  
   
 For more info about the events associated with opening and closing connections, see [Audit Login Event Class](/sql/relational-databases/event-classes/audit-login-event-class) and [Audit Logout Event Class](/sql/relational-databases/event-classes/audit-logout-event-class) in the SQL Server documentation.  
   
@@ -121,11 +121,11 @@ using (SqlConnection connection = new SqlConnection(
  After a SQL Server application role has been activated by calling the `sp_setapprole` system stored procedure, the security context of that connection cannot be reset. However, if pooling is enabled, the connection is returned to the pool, and an error occurs when the pooled connection is reused. For more information, see the Knowledge Base article, "[SQL application role errors with OLE DB resource pooling](https://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
   
 ### Application Role Alternatives  
- We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md).  
+ We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](./sql/creating-application-roles-in-sql-server.md).  
   
 ## See also
 
-- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)
-- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
-- [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)
+- [Connection Pooling](connection-pooling.md)
+- [SQL Server and ADO.NET](./sql/index.md)
+- [Performance Counters](performance-counters.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -15,7 +15,7 @@ ms.author: "ronpet"
 If you intend to share an assembly among several applications, you can install it into the global assembly cache. Each computer where the common language runtime is installed has this machine-wide code cache. The global assembly cache stores assemblies specifically designated to be shared by several applications on the computer. An assembly must have a strong name to be installed in the global assembly cache.  
   
 > [!NOTE]
->  Assemblies placed in the global assembly cache must have the same assembly name and file name (not including the file name extension). For example, an assembly with the assembly name of myAssembly must have a file name of either myAssembly.exe or myAssembly.dll.  
+> Assemblies placed in the global assembly cache must have the same assembly name and file name (not including the file name extension). For example, an assembly with the assembly name of myAssembly must have a file name of either myAssembly.exe or myAssembly.dll.  
   
  You should share assemblies by installing them into the global assembly cache only when necessary. As a general guideline, keep assembly dependencies private and locate assemblies in the application directory unless sharing an assembly is explicitly required. In addition, you do not have to install assemblies into the global assembly cache to make them accessible to COM interop or unmanaged code.  
   

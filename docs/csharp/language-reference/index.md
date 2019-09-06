@@ -13,22 +13,22 @@ ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
 This section provides reference material about C# keywords, operators, special characters, preprocessor directives, compiler options, and compiler errors and warnings.  
   
 ## In This Section  
- [C# Keywords](../../csharp/language-reference/keywords/index.md)  
+ [C# Keywords](./keywords/index.md)  
  Provides links to information about C# keywords and syntax.  
   
- [C# Operators](../../csharp/language-reference/operators/index.md)  
+ [C# Operators](./operators/index.md)  
  Provides links to information about C# operators and syntax.  
 
- [C# Special Characters](../../csharp/language-reference/tokens/index.md)  
+ [C# Special Characters](./tokens/index.md)  
  Provides links to information about special contextual characters in C# and their usage.  
 
- [C# Preprocessor Directives](../../csharp/language-reference/preprocessor-directives/index.md)  
+ [C# Preprocessor Directives](./preprocessor-directives/index.md)  
  Provides links to information about compiler commands for embedding in C# source code.  
   
- [C# Compiler Options](../../csharp/language-reference/compiler-options/index.md)  
+ [C# Compiler Options](./compiler-options/index.md)  
  Includes information about compiler options and how to use them.  
   
- [C# Compiler Errors](../../csharp/language-reference/compiler-messages/index.md)  
+ [C# Compiler Errors](./compiler-messages/index.md)  
  Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
   
  [C# Language Specification](../../../_csharplang/spec/introduction.md)  
@@ -53,11 +53,11 @@ The features that have been implemented in C# versions after 6.0 are represented
   
 ## Related Sections  
 
- [C# Guide](../../csharp/index.md)  
+ [C# Guide](../index.md)  
  Provides a portal to Visual C# documentation.  
   
  [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
  Provides links to conceptual and task topics that describe the IDE and Editor.  
   
- [C# Programming Guide](../../csharp/programming-guide/index.md)  
+ [C# Programming Guide](../programming-guide/index.md)  
  Includes information about how to use the C# programming language.

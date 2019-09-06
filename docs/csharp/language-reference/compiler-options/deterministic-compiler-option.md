@@ -16,7 +16,7 @@ Causes the compiler to produce an assembly whose byte-for-byte output is identic
 
 ## Syntax
 
-```
+```console
 -deterministic
 ```
 
@@ -50,5 +50,5 @@ When sources are publicly available, deterministic compilation can be used for e
 
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

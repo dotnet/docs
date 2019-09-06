@@ -46,10 +46,10 @@ In this example, you enter a character from the keyboard and the program checks 
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [Integral types](../../../csharp/language-reference/builtin-types/integral-numeric-types.md)
-- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)
-- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)
-- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
+- [Integral types](../builtin-types/integral-numeric-types.md)
+- [Built-In Types Table](./built-in-types-table.md)
+- [Implicit Numeric Conversions Table](./implicit-numeric-conversions-table.md)
+- [Explicit Numeric Conversions Table](./explicit-numeric-conversions-table.md)

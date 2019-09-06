@@ -7,7 +7,7 @@ ms.assetid: 27442435-dfb2-4062-8c59-e2960833a638
 Application roles provide a way to assign permissions to an application instead of a database role or user. Users can connect to the database, activate the application role, and assume the permissions granted to the application. The permissions granted to the application role are in force for the duration of the connection.  
   
 > [!IMPORTANT]
->  Application roles are activated when a client application supplies an application role name and a password in the connection string. They present a security vulnerability in a two-tier application because the password must be stored on the client computer. In a three-tier application, you can store the password so that it cannot be accessed by users of the application.  
+> Application roles are activated when a client application supplies an application role name and a password in the connection string. They present a security vulnerability in a two-tier application because the password must be stored on the client computer. In a three-tier application, you can store the password so that it cannot be accessed by users of the application.  
   
 ## Application Role Features  
  Application roles have the following features:  
@@ -41,9 +41,9 @@ Application roles provide a way to assign permissions to an application instead 
   
  You may want to consider the following alternatives.  
   
-- Use context switching with the EXECUTE AS statement with its NO REVERT and WITH COOKIE clauses. You can create a user account in a database that is not mapped to a login. You then assign permissions to this account. Using EXECUTE AS with a login-less user is more secure because it is permission-based, not password-based. For more information, see [Customizing Permissions with Impersonation in SQL Server](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md).  
+- Use context switching with the EXECUTE AS statement with its NO REVERT and WITH COOKIE clauses. You can create a user account in a database that is not mapped to a login. You then assign permissions to this account. Using EXECUTE AS with a login-less user is more secure because it is permission-based, not password-based. For more information, see [Customizing Permissions with Impersonation in SQL Server](customizing-permissions-with-impersonation-in-sql-server.md).  
   
-- Sign stored procedures with certificates, granting only permission to execute the procedures. For more information, see [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md).  
+- Sign stored procedures with certificates, granting only permission to execute the procedures. For more information, see [Signing Stored Procedures in SQL Server](signing-stored-procedures-in-sql-server.md).  
   
 ## External Resources  
  For more information, see the following resources.  
@@ -54,7 +54,7 @@ Application roles provide a way to assign permissions to an application instead 
   
 ## See also
 
-- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
-- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
+- [Securing ADO.NET Applications](../securing-ado-net-applications.md)
+- [Overview of SQL Server Security](overview-of-sql-server-security.md)
+- [Application Security Scenarios in SQL Server](application-security-scenarios-in-sql-server.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

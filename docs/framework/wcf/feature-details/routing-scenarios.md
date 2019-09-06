@@ -21,7 +21,7 @@ While the Routing Service is highly customizable, it can be a challenge to desig
 |Error Handling|You need to provide resilience to network outages and communication failures|  
   
 > [!NOTE]
->  While many of the scenarios presented are specific to certain business needs or processing requirements, planning to support dynamic updates and utilizing error handling can often be considered as best practices as they allow you to modify routing logic at runtime and recover from transient network and communication failures.  
+> While many of the scenarios presented are specific to certain business needs or processing requirements, planning to support dynamic updates and utilizing error handling can often be considered as best practices as they allow you to modify routing logic at runtime and recover from transient network and communication failures.  
   
 ### Service Versioning  
  When introducing a new version of a service, you must often maintain the previous version until all clients have transitioned to the new service. This is especially critical if the service is a long-running process that takes days, weeks, or even months to complete. Usually this requires implementing a new endpoint address for the new service while maintaining the original endpoint for the previous version.  

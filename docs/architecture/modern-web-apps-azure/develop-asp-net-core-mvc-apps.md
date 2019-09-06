@@ -37,7 +37,7 @@ At its heart, ASP.NET Core apps map incoming requests to outgoing responses. At 
 ASP.NET Core MVC apps can use conventional routes, attribute routes, or both. Conventional routes are defined in code, specifying routing _conventions_ using syntax like in the example below:
 
 ```csharp
-app.UseMvc(routes =>;
+app.UseMvc(routes =>
 {
     routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
 });
@@ -61,7 +61,7 @@ public class HomeController : Controller
 Routes can be specified on [HttpGet] and similar attributes, avoiding the need to add separate [Route] attributes. Attribute routes can also use tokens to reduce the need to repeat controller or action names, as shown below:
 
 ```csharp
-[Route("[controller\]")]
+[Route("[controller]")]
 public class ProductsController : Controller
 {
     [Route("")] // Matches 'Products'
@@ -125,7 +125,7 @@ public class Startup
         var builder = new ConfigurationBuilder()
         .SetBasePath(env.ContentRootPath)
         .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-        .AddJsonFile(\$"appsettings.{env.EnvironmentName}.json", optional: true);
+        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
     }
 }
 ```
@@ -170,9 +170,9 @@ By default, ASP.NET Core applications organize their folder structure to include
 
 ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create separate sets of Controllers and Views folders (as well as any associated models) in each Area folder. Figure 7-1 shows an example folder structure, using Areas.
 
-![](./media/image7-1.png)
+![Sample Area Organization](./media/image7-1.png)
 
-Figure 7-1 Sample Area Organization
+**Figure 7-1**. Sample Area Organization
 
 When using Areas, you must use attributes to decorate your controllers with the name of the area to which they belong:
 
@@ -202,7 +202,7 @@ In addition to the built-in support for Areas, you can also use your own folder 
 ASP.NET Core uses built-in convention types to control its behavior. You can modify or replace these conventions. For example, you can create a convention that will automatically get the feature name for a given controller based on its namespace (which typically correlates to the folder in which the controller is located):
 
 ```csharp
-FeatureConvention : IControllerModelConvention
+public class FeatureConvention : IControllerModelConvention
 {
     public void Apply(ControllerModel controller)
     {
@@ -239,7 +239,7 @@ As applications grow, it becomes increasingly important to factor out cross-cutt
 
 ![The request is processed through Authorization Filters, Resource Filters, Model Binding, Action Filters, Action Execution and Action Result Conversion, Exception Filters, Result Filters, and Result Execution. On the way out, the request is only processed by Result Filters and Resource Filters before becoming a response sent to the client.](./media/image7-2.png)
 
-Figure 7-2 Request execution through filters and request pipeline.
+**Figure 7-2**. Request execution through filters and request pipeline.
 
 Filters are usually implemented as attributes, so you can apply them to controllers or actions (or even globally). When added in this fashion, filters specified at the action level override or build upon filters specified at the controller level, which themselves override global filters. For example, the \[Route\] attribute can be used to build up routes between controllers and actions. Likewise, authorization can be configured at the controller level, and then overridden by individual actions, as the following sample demonstrates:
 
@@ -328,9 +328,9 @@ ASP.NET Core Identity is a membership system you can use to support login functi
 
 ASP.NET Core Identity is included in new project templates if the Individual User Accounts option is selected. This template includes support for registration, login, external logins, forgotten passwords, and additional functionality.
 
-![](./media/image7-3.png)
+![Select Individual User Accounts to have Identity preconfigured](./media/image7-3.png)
 
-Figure 7-3 Select Individual User Accounts to have Identity preconfigured.
+**Figure 7-3**. Select Individual User Accounts to have Identity preconfigured.
 
 Identity support is configured in Startup, both in ConfigureServices and Configure:
 
@@ -468,9 +468,9 @@ public class Program
     public static void Main(string[] args)
     {
         StartConnectionAsync();
-        _connection.On("receiveMessage", (arguments) =>;
+        _connection.On("receiveMessage", (arguments) =>
         {
-            Console.WriteLine(\$"{arguments\[0\]} said: {arguments\[1\]}");
+            Console.WriteLine($"{arguments[0]} said: {arguments[1]}");
         });
         Console.ReadLine();
         StopConnectionAsync();
@@ -557,13 +557,13 @@ In addition to a process manager, ASP.NET Core applications hosted in the Kestre
 
 ![Kestrel to Internet](./media/image7-5.png)
 
-Figure 7-5 ASP.NET hosted in Kestrel behind a reverse proxy server
+**Figure 7-5**. ASP.NET hosted in Kestrel behind a reverse proxy server
 
 Another scenario in which a reverse proxy can be helpful is to secure multiple applications using SSL/HTTPS. In this case, only the reverse proxy would need to have SSL configured. Communication between the reverse proxy server and Kestrel could take place over HTTP, as shown in Figure 7-6.
 
-![](./media/image7-6.png)
+![ASP.NET hosted behind an HTTPS-secured reverse proxy server](./media/image7-6.png)
 
-Figure 7-6 ASP.NET hosted behind an HTTPS-secured reverse proxy server
+**Figure 7-6**. ASP.NET hosted behind an HTTPS-secured reverse proxy server
 
 An increasingly popular approach is to host your ASP.NET Core application in a Docker container, which then can be hosted locally or deployed to Azure for cloud-based hosting. The Docker container could contain your application code, running on Kestrel, and would be deployed behind a reverse proxy server, as shown above.
 

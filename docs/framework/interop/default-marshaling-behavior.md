@@ -18,7 +18,7 @@ Interop marshaling operates on rules that dictate how data associated with metho
  This section identifies the default behavioral characteristics of the interop marshaling service. It presents detailed information on marshaling arrays, Boolean types, char types, delegates, classes, objects, strings, and structures.  
   
 > [!NOTE]
->  Marshaling of generic types is not supported. For more information see, [Interoperating Using Generic Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100)).  
+> Marshaling of generic types is not supported. For more information see, [Interoperating Using Generic Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100)).  
   
 ## Memory management with the interop marshaler  
  The interop marshaler always attempts to free memory allocated by unmanaged code. This behavior complies with COM memory management rules, but differs from the rules that govern native C++.  
@@ -111,7 +111,7 @@ interface DelegateTest : IDispatch {
 In this example, when the two delegates are marshaled as <xref:System.Runtime.InteropServices.UnmanagedType.FunctionPtr?displayProperty=nameWithType>, the result is an `int` and a pointer to an `int`. Because delegate types are being marshaled, `int` here represents a pointer to a void (`void*`), which is the address of the delegate in memory. In other words, this result is specific to 32-bit Windows systems, since `int` here represents the size of the function pointer.
 
 > [!NOTE]
->  A reference to the function pointer to a managed delegate held by unmanaged code does not prevent the common language runtime from performing garbage collection on the managed object.  
+> A reference to the function pointer to a managed delegate held by unmanaged code does not prevent the common language runtime from performing garbage collection on the managed object.  
   
  For example, the following code is incorrect because the reference to the `cb` object, passed to the `SetChangeHandler` method, does not keep `cb` alive beyond the life of the `Test` method. Once the `cb` object is garbage collected, the function pointer passed to `SetChangeHandler` is no longer valid.  
   
@@ -240,12 +240,12 @@ internal static class NativeMethods
  The `Rect` value type must be passed by reference because the unmanaged API is expecting a pointer to a `RECT` to be passed to the function. The `Point` value type is passed by value because the unmanaged API expects the `POINT` to be passed on the stack. This subtle difference is very important. References are passed to unmanaged code as pointers. Values are passed to unmanaged code on the stack.  
   
 > [!NOTE]
->  When a formatted type is marshaled as a structure, only the fields within the type are accessible. If the type has methods, properties, or events, they are inaccessible from unmanaged code.  
+> When a formatted type is marshaled as a structure, only the fields within the type are accessible. If the type has methods, properties, or events, they are inaccessible from unmanaged code.  
   
  Classes can also be marshaled to unmanaged code as C-style structures, provided they have fixed member layout. The member layout information for a class is also provided with the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute. The main difference between value types with fixed layout and classes with fixed layout is the way in which they are marshaled to unmanaged code. Value types are passed by value (on the stack) and consequently any changes made to the members of the type by the callee are not seen by the caller. Reference types are passed by reference (a reference to the type is passed on the stack); consequently, all changes made to blittable-type members of a type by the callee are seen by the caller.  
   
 > [!NOTE]
->  If a reference type has members of non-blittable types, conversion is required twice: the first time when an argument is passed to the unmanaged side and the second time on return from the call. Due to this added overhead, In/Out parameters must be explicitly applied to an argument if the caller wants to see changes made by the callee.  
+> If a reference type has members of non-blittable types, conversion is required twice: the first time when an argument is passed to the unmanaged side and the second time on return from the call. Due to this added overhead, In/Out parameters must be explicitly applied to an argument if the caller wants to see changes made by the callee.  
   
  In the following example, the `SystemTime` class has sequential member layout and can be passed to the Windows API **GetSystemTime** function.  
   
@@ -345,7 +345,7 @@ interface _Graphics {
  The same rules used to marshal values and references to platform invoke calls are used when marshaling through COM interfaces. For example, when an instance of the `Point` value type is passed from the .NET Framework to COM, the `Point` is passed by value. If the `Point` value type is passed by reference, a pointer to a `Point` is passed on the stack. The interop marshaler does not support higher levels of indirection (**Point** \*\*) in either direction.  
   
 > [!NOTE]
->  Structures having the <xref:System.Runtime.InteropServices.LayoutKind> enumeration value set to **Explicit** cannot be used in COM interop because the exported type library cannot express an explicit layout.  
+> Structures having the <xref:System.Runtime.InteropServices.LayoutKind> enumeration value set to **Explicit** cannot be used in COM interop because the exported type library cannot express an explicit layout.  
   
 ### System Value Types  
  The <xref:System> namespace has several value types that represent the boxed form of the runtime primitive types. For example, the value type <xref:System.Int32?displayProperty=nameWithType> structure represents the boxed form of **ELEMENT_TYPE_I4**. Instead of marshaling these types as structures, as other formatted types are, you marshal them in the same way as the primitive types they box. **System.Int32** is therefore marshaled as **ELEMENT_TYPE_I4** instead of as a structure containing a single member of type **long**. The following table contains a list of the value types in the **System** namespace that are boxed representations of primitive types.  

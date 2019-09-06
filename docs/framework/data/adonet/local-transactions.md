@@ -21,7 +21,7 @@ Transactions in ADO.NET are used when you want to bind multiple tasks together s
  In ADO.NET, you control transactions with the `Connection` object. You can initiate a local transaction with the `BeginTransaction` method. Once you have begun a transaction, you can enlist a command in that transaction with the `Transaction` property of a `Command` object. You can then commit or roll back modifications made at the data source based on the success or failure of the components of the transaction.  
   
 > [!NOTE]
->  The `EnlistDistributedTransaction` method should not be used for a local transaction.  
+> The `EnlistDistributedTransaction` method should not be used for a local transaction.  
   
  The scope of the transaction is limited to the connection. The following example performs an explicit transaction that consists of two separate commands in the `try` block. The commands execute INSERT statements against the Production.ScrapReason table in the AdventureWorks SQL Server sample database, which are committed if no exceptions are thrown. The code in the `catch` block rolls back the transaction if an exception is thrown. If the transaction is aborted or the connection is closed before the transaction has completed, it is automatically rolled back.  
   
@@ -43,7 +43,7 @@ Transactions in ADO.NET are used when you want to bind multiple tasks together s
   
 ## See also
 
-- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)
-- [Distributed Transactions](../../../../docs/framework/data/adonet/distributed-transactions.md)
-- [System.Transactions Integration with SQL Server](../../../../docs/framework/data/adonet/system-transactions-integration-with-sql-server.md)
+- [Transactions and Concurrency](transactions-and-concurrency.md)
+- [Distributed Transactions](distributed-transactions.md)
+- [System.Transactions Integration with SQL Server](system-transactions-integration-with-sql-server.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

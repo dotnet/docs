@@ -43,7 +43,7 @@ Removes a custom Web request module from the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[webRequestModules](../../../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
+|[webRequestModules](webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
   
 ## Remarks  
  The `remove` element removes the registered Web request module for the specified URI prefix.  
@@ -74,4 +74,4 @@ The following example removes the existing Web request module for HTTP and then 
 ## See also
 
 - <xref:System.Net.WebRequest>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

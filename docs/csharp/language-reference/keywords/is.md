@@ -11,7 +11,7 @@ ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
 ---
 # is (C# Reference)
 
-The `is` operator checks if the result of an expression is compatible with a given type, or (starting with C# 7.0) tests an expression against a pattern. For information about the type-testing `is` operator see the [is operator](../operators/type-testing-and-conversion-operators.md#is-operator) section of the [Type-testing and conversion operators](../operators/type-testing-and-conversion-operators.md) article.
+The `is` operator checks if the result of an expression is compatible with a given type, or (starting with C# 7.0) tests an expression against a pattern. For information about the type-testing `is` operator see the [is operator](../operators/type-testing-and-cast.md#is-operator) section of the [Type-testing and cast operators](../operators/type-testing-and-cast.md) article.
 
 ## Pattern matching with `is`
 
@@ -122,4 +122,4 @@ For more information, see [The is operator](~/_csharplang/spec/expressions.md#th
 
 - [C# reference](../index.md)
 - [C# keywords](index.md)
-- [Type-testing and conversion operators](../operators/type-testing-and-conversion-operators.md)
+- [Type-testing and cast operators](../operators/type-testing-and-cast.md)

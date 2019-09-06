@@ -15,7 +15,7 @@ Figure 2-1 positions Cloud Infrastructure-Ready applications in the modernizatio
 
 ![Positioning Cloud Infrastructure-Ready applications](./media/image2-1.png)
 
-> **Figure 2-1.** Positioning Cloud Infrastructure-Ready applications
+**Figure 2-1.** Positioning Cloud Infrastructure-Ready applications
 
 ## Why migrate existing .NET web applications to Azure IaaS
 
@@ -59,7 +59,7 @@ Figure 2-2 shows you the built-in dependency mapping for all server and applicat
 
 ![Positioning Cloud Infrastructure-Ready applications](./media/image2-2.png)
 
-> **Figure 2-2.** Positioning Cloud Infrastructure-Ready applications
+**Figure 2-2.** Positioning Cloud Infrastructure-Ready applications
 
 ## Use Azure Site Recovery to migrate your existing VMs to Azure VMs
 
@@ -71,7 +71,7 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 ![Positioning Cloud Infrastructure-Ready applications](./media/image2-3.png)
 
-> **Figure 2-3.** Positioning Cloud Infrastructure-Ready applications
+**Figure 2-3.** Positioning Cloud Infrastructure-Ready applications
 
 ### Additional resources
 
@@ -101,4 +101,4 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 >[!div class="step-by-step"]
 >[Previous](index.md)
->[Next](migrate-your-relational-databases-to-azure.md)
+>[Next](migrate-your-relational-databases-to-azure.md) <!-- Next Chapter -->

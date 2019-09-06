@@ -55,7 +55,7 @@ HRESULT Get (
 [out] If the function returns successfully, contains the value of the `wszName` property. The `pval` argument is assigned the correct type and value for the qualifier.
 
 `pvtType`\
-[out] If the function returns successfully, contains a [CIM-type constant](/windows/desktop/api/wbemcli/ne-wbemcli-tag_cimtype_enumeration) that indicates the property type. Its value can also be `null`. 
+[out] If the function returns successfully, contains a [CIM-type constant](/windows/win32/api/wbemcli/ne-wbemcli-cimtype_enumeration) that indicates the property type. Its value can also be `null`. 
 
 `plFlavor`\
 [out] If the function returns successfully, receives information about the origin of the property. Its value can be `null`, or one of the following WBEM_FLAVOR_TYPE constants defined in the *WbemCli.h* header file: 
@@ -88,7 +88,7 @@ The `pVal` argument is assigned the correct type and value for the qualifier and
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** WMINet_Utils.idl
 

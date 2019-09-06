@@ -17,9 +17,9 @@ When the `SelectCommand` property is dynamically specified at run time, such as 
   
  When associated with a `DataAdapter`, the <xref:System.Data.Common.DbCommandBuilder> automatically generates the `InsertCommand`, `UpdateCommand`, and `DeleteCommand` properties of the `DataAdapter` if they are null references. If a `Command` already exists for a property, the existing `Command` is used.  
   
- Database views that are created by joining two or more tables together are not considered a single database table. In this instance you cannot use the <xref:System.Data.Common.DbCommandBuilder> to automatically generate commands; you must specify your commands explicitly. For information about explicitly setting commands to resolve updates to a `DataSet` back to the data source, see [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md).  
+ Database views that are created by joining two or more tables together are not considered a single database table. In this instance you cannot use the <xref:System.Data.Common.DbCommandBuilder> to automatically generate commands; you must specify your commands explicitly. For information about explicitly setting commands to resolve updates to a `DataSet` back to the data source, see [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md).  
   
- You might want to map output parameters back to the updated row of a `DataSet`. One common task would be retrieving the value of an automatically generated identity field or time stamp from the data source. The <xref:System.Data.Common.DbCommandBuilder> will not map output parameters to columns in an updated row by default. In this instance you must specify your command explicitly. For an example of mapping an automatically generated identity field back to a column of an inserted row, see [Retrieving Identity or Autonumber Values](../../../../docs/framework/data/adonet/retrieving-identity-or-autonumber-values.md).  
+ You might want to map output parameters back to the updated row of a `DataSet`. One common task would be retrieving the value of an automatically generated identity field or time stamp from the data source. The <xref:System.Data.Common.DbCommandBuilder> will not map output parameters to columns in an updated row by default. In this instance you must specify your command explicitly. For an example of mapping an automatically generated identity field back to a column of an inserted row, see [Retrieving Identity or Autonumber Values](retrieving-identity-or-autonumber-values.md).  
   
 ## Rules for Automatically Generated Commands  
  The following table shows the rules for how automatically generated commands are generated.  
@@ -108,7 +108,7 @@ adapter.Fill(custDS, "Customers");
   
 ## See also
 
-- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
-- [Executing a Command](../../../../docs/framework/data/adonet/executing-a-command.md)
-- [DbConnection, DbCommand and DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)
+- [Commands and Parameters](commands-and-parameters.md)
+- [Executing a Command](executing-a-command.md)
+- [DbConnection, DbCommand and DbException](dbconnection-dbcommand-and-dbexception.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -87,6 +87,7 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 ### References 
 
 - [Azure SignalR Service, a fully managed service to add real-time functionality](https://azure.microsoft.com/blog/azure-signalr-service-a-fully-managed-service-to-add-real-time-functionality/)
+- [Azure API Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/)
 - [Istio in Action](https://www.manning.com/books/istio-in-action)
 
 >[!div class="step-by-step"]

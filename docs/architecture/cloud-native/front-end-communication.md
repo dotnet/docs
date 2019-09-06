@@ -27,7 +27,7 @@ While simple to implement, direct client communication would be acceptable only 
 
 - Duplication of cross-cutting concerns across each microservice.
 
-- Overly complex client code.
+- Overly complex client code - clients must keep track of mulitple endpoints and handle failures in a resilient way.
 
 Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the front-end applications and backend services. The pattern is shown in Figure 4-3.
 
@@ -70,6 +70,19 @@ Each Ocelot gateway specifies the upstream and downstream addresses and configur
 Ocelot is available as a NuGet package. It targets the NET Standard 2.0, making it compatible with both .NET Core 2.0+ and .NET Framework 4.6.1+ runtimes. Ocelot integrates with anything that speaks HTTP and runs on the platforms which .NET Core supports: Linux, macOS, and Windows. Ocelot is extensible and supports many modern platforms, including Docker containers, Azure Kubernetes Services, or other public clouds.  Ocelot integrates with open-source packages like [Consul](https://www.consul.io), [GraphQL](https://graphql.org), and Netflix’s [Eureka](https://github.com/Netflix/eureka). 
 
 Consider Ocelot for simple cloud-native applications that don’t require the rich feature-set of a commercial API gateway.
+
+## Azure Application Gateway
+
+For simple gateway requirements, you may consider [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview). It's an Azure [PaaS service](https://azure.microsoft.com/overview/what-is-paas/) 
+that includes basic gateway features such as SSL/TLS termination, autoscaling, and a Web Application Firewall (WAF) to help protect services from common exploits and vulnerabilities. The service supports [Layer-7 load balancing](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) capabilites. With Layer 7 support, you can route requests based on the actual content of the HTTP message, not just low-level TCP network packets.  
+
+The [Application Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/) allows Azure Application Gateway to route traffic to containerized microservices located in an [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) cluster. Figure 4.5 shows the architecture.
+
+![Application Gateway Ingress Controller](./media/application-gateway-ingress-controller.png)
+
+**Figure 4-5.** Application Gateway Ingress Controller
+
+Kuberentes maintains a set of *ingress rules* that define how the containerized microservices are exposed to the outside world. The ingress controller, shown in blue in the previous image, interprets the ingress rules and creates a configuration file for the Azure Application Gateway. This allows Azure Gateway to act as an API gateway services for the AKS cluster. Based on those rules, the Application Gateway can route traffic to microservices running inside AKS. The ingress controller listens for changes to ingress rules and makes the appropriate adjustements to the the load balancers policies. 
 
 ## Azure API Management
 

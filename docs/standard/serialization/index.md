@@ -21,7 +21,7 @@ Serialization is the process of converting the state of an object into a form th
   
 - [XML and SOAP serialization](xml-and-soap-serialization.md) serializes only public properties and fields and does not preserve type fidelity. This is useful when you want to provide or consume data without restricting the application that uses the data. Because XML is an open standard, it is an attractive choice for sharing data across the Web. SOAP is likewise an open standard, which makes it an attractive choice.  
   
-- [JSON serialization](xml-and-soap-serialization.md) serializes only public properties and does not preserve type fidelity. JSON is an open standard that is an attractive choice for sharing data across the Web.
+- [JSON serialization](json-serialization-overview.md) serializes only public properties and does not preserve type fidelity. JSON is an open standard that is an attractive choice for sharing data across the Web.
 
 ## Reference
 

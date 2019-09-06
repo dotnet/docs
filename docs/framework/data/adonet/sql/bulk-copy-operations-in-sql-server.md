@@ -20,19 +20,19 @@ Microsoft SQL Server includes a popular command-line utility named **bcp** for q
 > When using .NET Framework version 1.1 or earlier (which does not support the <xref:System.Data.SqlClient.SqlBulkCopy> class), you can execute the SQL Server Transact-SQL **BULK INSERT** statement using the <xref:System.Data.SqlClient.SqlCommand> object.  
   
 ## In This Section  
- [Bulk Copy Example Setup](../../../../../docs/framework/data/adonet/sql/bulk-copy-example-setup.md)  
+ [Bulk Copy Example Setup](bulk-copy-example-setup.md)  
  Describes the tables used in the bulk copy examples and provides SQL scripts for creating the tables in the AdventureWorks database.  
   
- [Single Bulk Copy Operations](../../../../../docs/framework/data/adonet/sql/single-bulk-copy-operations.md)  
+ [Single Bulk Copy Operations](single-bulk-copy-operations.md)  
  Describes how to do a single bulk copy of data into an instance of SQL Server using the <xref:System.Data.SqlClient.SqlBulkCopy> class, and how to perform the bulk copy operation using Transact-SQL statements and the <xref:System.Data.SqlClient.SqlCommand> class.  
   
- [Multiple Bulk Copy Operations](../../../../../docs/framework/data/adonet/sql/multiple-bulk-copy-operations.md)  
+ [Multiple Bulk Copy Operations](multiple-bulk-copy-operations.md)  
  Describes how to do multiple bulk copy operations of data into an instance of SQL Server using the <xref:System.Data.SqlClient.SqlBulkCopy> class.  
   
- [Transaction and Bulk Copy Operations](../../../../../docs/framework/data/adonet/sql/transaction-and-bulk-copy-operations.md)  
+ [Transaction and Bulk Copy Operations](transaction-and-bulk-copy-operations.md)  
  Describes how to perform a bulk copy operation within a transaction, including how to commit or rollback the transaction.  
   
 ## See also
 
-- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [SQL Server and ADO.NET](index.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

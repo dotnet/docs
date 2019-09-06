@@ -26,7 +26,7 @@ A null value in a relational database is used when the value in a column is unkn
 ## Nulls and SqlBoolean  
  Comparison between any <xref:System.Data.SqlTypes> will return a <xref:System.Data.SqlTypes.SqlBoolean>. The `IsNull` function for each `SqlType` returns a <xref:System.Data.SqlTypes.SqlBoolean> and can be used to check for null values. The following truth tables show how the AND, OR, and NOT operators function in the presence of a null value. (T=true, F=false, and U=unknown, or null.)  
   
- ![Truth Table](../../../../../docs/framework/data/adonet/sql/media/truthtable-bpuedev11.gif "TruthTable_bpuedev11")  
+ ![Truth Table](./media/truthtable-bpuedev11.gif "TruthTable_bpuedev11")  
   
 ### Understanding the ANSI_NULLS Option  
  <xref:System.Data.SqlTypes> provides the same semantics as when the ANSI_NULLS option is set on in SQL Server. All arithmetic operators (+, -, \*, /, %), bitwise operators (~, &, \|), and most functions return null if any of the operands or arguments is null, except for the property `IsNull`.  
@@ -137,5 +137,5 @@ String.Equals instance method:
   
 ## See also
 
-- [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
+- [SQL Server Data Types and ADO.NET](sql-server-data-types.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

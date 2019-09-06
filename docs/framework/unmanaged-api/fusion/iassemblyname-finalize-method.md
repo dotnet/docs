@@ -19,7 +19,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # IAssemblyName::Finalize Method
-Allows this [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) object to release resources and perform other cleanup operations before its destructor is called.  
+Allows this [IAssemblyName](iassemblyname-interface.md) object to release resources and perform other cleanup operations before its destructor is called.  
   
 ## Syntax  
   
@@ -28,7 +28,7 @@ HRESULT Finalize ();
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -36,4 +36,4 @@ HRESULT Finalize ();
   
 ## See also
 
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)

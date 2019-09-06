@@ -11,14 +11,14 @@ Using a .NET Framework data provider, you can execute stored procedures or data 
  Although rows are not returned by the **ExecuteNonQuery** method, input and output parameters and return values can be passed and returned via the **Parameters** collection of the **Command** object.  
   
 ## In This Section  
- [Updating Data in a Data Source](../../../../docs/framework/data/adonet/updating-data-in-a-data-source.md)  
+ [Updating Data in a Data Source](updating-data-in-a-data-source.md)  
  Describes how to execute commands or stored procedures that modify data in a database.  
   
- [Performing Catalog Operations](../../../../docs/framework/data/adonet/performing-catalog-operations.md)  
+ [Performing Catalog Operations](performing-catalog-operations.md)  
  Describes how to execute commands that modify database schema.  
   
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)
+- [Commands and Parameters](commands-and-parameters.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

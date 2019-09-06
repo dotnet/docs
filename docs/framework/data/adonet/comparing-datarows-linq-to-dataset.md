@@ -35,5 +35,5 @@ ms.assetid: 8fe0eadf-297b-487c-8d4b-7816753c2883
 ## See also
 
 - <xref:System.Data.DataRowComparer>
-- [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)
-- [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)
+- [Loading Data Into a DataSet](loading-data-into-a-dataset.md)
+- [LINQ to DataSet Examples](linq-to-dataset-examples.md)

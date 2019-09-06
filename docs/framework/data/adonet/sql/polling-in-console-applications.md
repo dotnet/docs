@@ -186,5 +186,5 @@ class Class1
   
 ## See also
 
-- [Asynchronous Operations](../../../../../docs/framework/data/adonet/sql/asynchronous-operations.md)
+- [Asynchronous Operations](asynchronous-operations.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

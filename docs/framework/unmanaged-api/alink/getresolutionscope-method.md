@@ -39,7 +39,7 @@ HRESULT GetResolutionScope(
  File that is in need of a reference.  
   
  `TargetFile`  
- Token of file that type is defined in, usually retrieved with [ImportFile Method](../../../../docs/framework/unmanaged-api/alink/importfile-method.md).  
+ Token of file that type is defined in, usually retrieved with [ImportFile Method](importfile-method.md).  
   
  `pScope`  
  Receives the assembly or module reference.  
@@ -52,6 +52,6 @@ HRESULT GetResolutionScope(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

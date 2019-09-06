@@ -18,7 +18,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ASM_DISPLAY_FLAGS Enumeration
-Indicates the version, build, culture, signature, and so on, of the assembly whose display name will be retrieved by the [IAssemblyName::GetDisplayName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-getdisplayname-method.md) method.  
+Indicates the version, build, culture, signature, and so on, of the assembly whose display name will be retrieved by the [IAssemblyName::GetDisplayName](iassemblyname-getdisplayname-method.md) method.  
   
 ## Syntax  
   
@@ -46,10 +46,10 @@ typedef enum {
 ```  
   
 ## Remarks  
- `ASM_DISPLAYF_FULL` reflects any changes made to the version of the [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) object. Do not assume that the returned value is immutable.  
+ `ASM_DISPLAYF_FULL` reflects any changes made to the version of the [IAssemblyName](iassemblyname-interface.md) object. Do not assume that the returned value is immutable.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -59,5 +59,5 @@ typedef enum {
   
 ## See also
 
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
-- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)
+- [Fusion Enumerations](fusion-enumerations.md)

@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 37df2641-661e-407a-a3fb-7bf9540f01e8
 ---
 # Connection Strings and Configuration Files
-Embedding connection strings in your application's code can lead to security vulnerabilities and maintenance problems. Unencrypted connection strings compiled into an application's source code can be viewed using the [Ildasm.exe (IL Disassembler)](../../../../docs/framework/tools/ildasm-exe-il-disassembler.md) tool. Moreover, if the connection string ever changes, your application must be recompiled. For these reasons, we recommend storing connection strings in an application configuration file.  
+Embedding connection strings in your application's code can lead to security vulnerabilities and maintenance problems. Unencrypted connection strings compiled into an application's source code can be viewed using the [Ildasm.exe (IL Disassembler)](../../tools/ildasm-exe-il-disassembler.md) tool. Moreover, if the connection string ever changes, your application must be recompiled. For these reasons, we recommend storing connection strings in an application configuration file.  
   
 ## Working with Application Configuration Files  
  Application configuration files contain settings that are specific to a particular application. For example, an ASP.NET application can have one or more **web.config** files, and a Windows application can have an optional **app.config** file. Configuration files share common elements, although the name and location of a configuration file vary depending on the application's host.  
@@ -30,7 +30,7 @@ Embedding connection strings in your application's code can lead to security vul
 ```  
   
 > [!NOTE]
-> You can save part of a connection string in a configuration file and use the <xref:System.Data.Common.DbConnectionStringBuilder> class to complete it at run time. This is useful in scenarios where you do not know elements of the connection string ahead of time, or when you do not want to save sensitive information in a configuration file. For more information, see [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md).  
+> You can save part of a connection string in a configuration file and use the <xref:System.Data.Common.DbConnectionStringBuilder> class to complete it at run time. This is useful in scenarios where you do not know elements of the connection string ahead of time, or when you do not want to save sensitive information in a configuration file. For more information, see [Connection String Builders](connection-string-builders.md).  
   
 ### Using External Configuration Files  
  External configuration files are separate files that contain a fragment of a configuration file consisting of a single section. The external configuration file is then referenced by the main configuration file. Storing the **connectionStrings** section in a physically separate file is useful in situations where connection strings may be edited after the application is deployed. For example, the standard ASP.NET behavior is to restart an application domain when configuration files are modified, which results in state information being lost. However, modifying an external configuration file does not cause an application restart. External configuration files are not limited to ASP.NET; they can also be used by Windows applications. In addition, file access security and permissions can be used to restrict access to external configuration files. Working with external configuration files at run time is transparent, and requires no special coding.  
@@ -165,9 +165,9 @@ Embedding connection strings in your application's code can lead to security vul
   
 ## See also
 
-- [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)
-- [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)
+- [Connection String Builders](connection-string-builders.md)
+- [Protecting Connection Information](protecting-connection-information.md)
 - [Using the Configuration Classes](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms228063(v=vs.90))
-- [Configuring Apps](../../../../docs/framework/configure-apps/index.md)
+- [Configuring Apps](../../configure-apps/index.md)
 - [ASP.NET Web Site Administration](https://docs.microsoft.com/previous-versions/aspnet/6hy1xzbw(v=vs.100))
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

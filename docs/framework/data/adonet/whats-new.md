@@ -13,13 +13,13 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 - The ConnectRetryCount and ConnectRetryInterval connection string keywords (<xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>) let you control the idle connection resiliency feature.
 
-- Streaming support from SQL Server to an application supports scenarios where data on the server is unstructured.  See [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md) for more information.
+- Streaming support from SQL Server to an application supports scenarios where data on the server is unstructured.  See [SqlClient Streaming Support](sqlclient-streaming-support.md) for more information.
 
-- Support has been added for asynchronous programming.  See [Asynchronous Programming](../../../../docs/framework/data/adonet/asynchronous-programming.md) for more information.
+- Support has been added for asynchronous programming.  See [Asynchronous Programming](asynchronous-programming.md) for more information.
 
-- Connection failures will now be logged in the extended events log. For more information, see [Data Tracing in ADO.NET](../../../../docs/framework/data/adonet/data-tracing.md).
+- Connection failures will now be logged in the extended events log. For more information, see [Data Tracing in ADO.NET](data-tracing.md).
 
-- SqlClient now has support for SQL Server's high availability, disaster recovery feature, AlwaysOn. For more information, see [SqlClient Support for High Availability, Disaster Recovery](../../../../docs/framework/data/adonet/sql/sqlclient-support-for-high-availability-disaster-recovery.md).
+- SqlClient now has support for SQL Server's high availability, disaster recovery feature, AlwaysOn. For more information, see [SqlClient Support for High Availability, Disaster Recovery](./sql/sqlclient-support-for-high-availability-disaster-recovery.md).
 
 - A password can be passed as a <xref:System.Security.SecureString> when using SQL Server Authentication. See <xref:System.Data.SqlClient.SqlCredential> for more information.
 
@@ -35,11 +35,11 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 - SqlClient supports Extended Protection. For more information about Extended Protection, see [Connecting to the Database Engine Using Extended Protection](https://go.microsoft.com/fwlink/?LinkId=219978).
 
-- SqlClient supports connections to LocalDB databases. For more information, see [SqlClient Support for LocalDB](../../../../docs/framework/data/adonet/sql/sqlclient-support-for-localdb.md).
+- SqlClient supports connections to LocalDB databases. For more information, see [SqlClient Support for LocalDB](./sql/sqlclient-support-for-localdb.md).
 
 - `Type System Version=SQL Server 2012;` is new value to pass to the `Type System Version` connection property. The `Type System Version=Latest;` value is now obsolete and has been made equivalent to `Type System Version=SQL Server 2008;`. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
 
-- SqlClient provides additional support for sparse columns, a feature that was added in SQL Server 2008. If your application already accesses data in a table that uses sparse columns, you should see an increase in performance. The IsColumnSet column of <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indicates if a column is a sparse column that is a member of a column set. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> indicates if a column is a sparse column (see [SQL Server Schema Collections](../../../../docs/framework/data/adonet/sql-server-schema-collections.md) for more information). For more information about sparse columns, see [Using Sparse Columns](https://go.microsoft.com/fwlink/?LinkId=224244).
+- SqlClient provides additional support for sparse columns, a feature that was added in SQL Server 2008. If your application already accesses data in a table that uses sparse columns, you should see an increase in performance. The IsColumnSet column of <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indicates if a column is a sparse column that is a member of a column set. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> indicates if a column is a sparse column (see [SQL Server Schema Collections](sql-server-schema-collections.md) for more information). For more information about sparse columns, see [Using Sparse Columns](https://go.microsoft.com/fwlink/?LinkId=224244).
 
 - The assembly Microsoft.SqlServer.Types.dll, which contains the spatial data types, has been upgraded from version 10.0 to version 11.0. Applications that reference this assembly may fail. For more information, see [Breaking Changes to Database Engine Features](https://go.microsoft.com/fwlink/?LinkId=224367).
 
@@ -49,8 +49,8 @@ The .NET Framework 4.5 adds APIs that enable new scenarios when working with the
 
 ## See also
 
-- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
-- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
-- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
+- [ADO.NET](index.md)
+- [ADO.NET Overview](ado-net-overview.md)
+- [SQL Server and ADO.NET](./sql/index.md)
 - [What's New in WCF Data Services 5.0](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

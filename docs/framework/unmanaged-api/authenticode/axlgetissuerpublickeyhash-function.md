@@ -35,4 +35,4 @@ HRESULT _AxlGetIssuerPublicKeyHash (
   
 ## See also
 
-- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [Authenticode](index.md)

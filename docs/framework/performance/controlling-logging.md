@@ -17,7 +17,7 @@ You can use event tracing for Windows (ETW) to record common language runtime (C
 
 To capture CLR event information, the CLR provider must be installed on your computer. To confirm that the provider is installed, type `logman query providers` at the command prompt. A list of providers is displayed. This list should contain an entry for the CLR provider, as follows.
 
-```
+```output
 Provider                                 GUID
 -------------------------------------------------------------------------------
 .NET Common Language Runtime    {E13C0D23-CCBC-4E12-931B-D9CC2EEE27E4}.

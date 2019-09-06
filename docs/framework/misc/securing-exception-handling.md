@@ -47,7 +47,7 @@ void Sub()
   
  This code prints the following.  
   
-```  
+```output
 Throw  
 Filter  
 Finally  

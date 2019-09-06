@@ -38,9 +38,9 @@ In some cases, when an app uses two or more app domains with different applicati
   
 2. Identify the place in the app where no objects are added to the logical call context and add the following code:  
   
-    ```  
+    ```csharp
     System.Configuration.ConfigurationManager.GetSection("system.xml/xmlReader");  
-    ```  
+    ```
   
 ## See also
 

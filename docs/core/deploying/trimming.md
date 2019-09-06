@@ -1,0 +1,31 @@
+---
+title: Trimming Self-Contained Deployments and Executables 
+description: Trimming Self-Contained Deployments and Executables 
+author: jamshedd
+ms.author: jamshedd
+ms.date: 09/06/2019
+ms.custom: 
+---
+
+# Trimming Self-Contained Deployments and Executables 
+
+When it comes to deploying your application, size is often a critical factor – keeping the size of the package application as small as possible is a typical goal for application developers.
+
+The dotnet publish verb now supports trimming i.e. removing of unused .NET Core assemblies from the final deployment. Trimming is available to both Self-Contained Deployments (SCD) as well as Self-Contained Executables (SCE).
+
+_Caveats: Trimming is an experimental feature in .NET Core 3.0. Trimming is not available for Framework Dependent Deployments (FDD) and Framework Dependent Executables (FDE) since these do not include .NET Core assemblies._  
+
+
+```dotnetcli
+dotnet publish -c Release -r win10-x64 --self-contained true /p:PublishSingleFile=false /p:PublishTrimmed=true
+```
+
+There are some risks in trimming executables. For example, programs may use reflection and types loaded through reflection may get trimmed which would be undesirable. It is important to take such factors into consideration before deciding to trim your self-contained deployment or executable.
+
+Note: when a type is being referenced through reflection and you do not want that type trimmed away by the linker you can provide a hint to the linker as follows: 
+
+```xml
+<ItemGroup>
+    <TrimmerRootAssembly Include="System.Security" />
+</ItemGroup>
+```

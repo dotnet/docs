@@ -55,7 +55,7 @@ http://services.odata.org/Northwind/Northwind.svc/Orders(10643)/Customer
 http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders?$filter=ShippedDate gt datetime'1997-09-22T00:00:00'  
 ```  
   
- For more information, see [OData: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=185564).  
+ For more information, see [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
   
 ## System Query Options  
  [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] defines a set of system query options that you can use to perform traditional query operations against resources, such as filtering, sorting, and paging. For example, the following URI returns the set of all the `Order` entities, along with related `Order_Detail` entities, the postal codes of which do not end in `100`:  
@@ -78,7 +78,7 @@ http://services.odata.org/Northwind/Northwind.svc/Orders?$filter=not endswith(Sh
 |`$select`|Specifies a projection that defines the properties of the entity are returned in the projection. By default, all properties of an entity are returned in a feed. The following query returns only three properties of the `Customer` entity:<br /><br /> `http://services.odata.org/Northwind/Northwind.svc/Customers?$select=CustomerID,CompanyName,City`<br /><br />|  
 |`$inlinecount`|Requests that a count of the number of entities returned in the feed be included with the feed.|  
   
-For more information, see `4. Query String Options` at [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
+For more information, see `4. Query String Options` at [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## Addressing Relationships  
  In addition to addressing entity sets and entity instances, [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] also enables you to address the associations that represent relationships between entities. This functionality is required to be able to create or change a relationship between two entity instances, such as the shipper that is related to a given order in the Northwind sample database. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] supports a `$link` operator to specifically address the associations between entities. For example, the following URI is specified in an HTTP PUT request message to change the shipper for the specified order to a new shipper.  
@@ -87,11 +87,11 @@ For more information, see `4. Query String Options` at [OData: URI Conventions](
 http://services.odata.org/Northwind/Northwind.svc/Orders(10643)/$links/Shipper  
 ```  
   
- For more information, see [OData: Addressing Links between Entries](https://go.microsoft.com/fwlink/?LinkId=187351).  
+ For more information, see ` 3.2. Addressing Links between Entries` at [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
   
 ## Consuming the Returned Feed  
  The URI of an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] resource enables you to address entity data exposed by the service. When you enter a URI into the address field of a Web browser, a [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed representation of the requested resource is returned. For more information, see the [WCF Data Services Quickstart](quickstart-wcf-data-services.md). Although a Web browser may be useful for testing that a data service resource returns the expected data, production data services that can also create, update, and delete data are generally accessed by application code or scripting languages in a Web page. For more information, see [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md).  
   
 ## See also
 
-- [Open Data Protocol Web site](https://go.microsoft.com/fwlink/?LinkID=182204)
+- [Open Data Protocol Web site](https://www.odata.org/)

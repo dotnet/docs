@@ -77,7 +77,7 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
 |`\1`|Match the substring that is equal to the group named `\1`.|  
 |`\b`|Match a word boundary.|  
   
- The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method is called with regular expression options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>. Therefore, the match operation is case-insensitive, and the example identifies the substring "This this" as a duplication.  
+The <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> method is called with regular expression options set to <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType>. Therefore, the match operation is case-insensitive, and the example identifies the substring "This this" as a duplication.
   
  Note that the input string includes the substring "this? This". However, because of the intervening punctuation mark, it is not identified as a duplication.  
   

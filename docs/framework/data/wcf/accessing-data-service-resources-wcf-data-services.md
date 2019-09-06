@@ -78,7 +78,7 @@ http://services.odata.org/Northwind/Northwind.svc/Orders?$filter=not endswith(Sh
 |`$select`|Specifies a projection that defines the properties of the entity are returned in the projection. By default, all properties of an entity are returned in a feed. The following query returns only three properties of the `Customer` entity:<br /><br /> `http://services.odata.org/Northwind/Northwind.svc/Customers?$select=CustomerID,CompanyName,City`<br /><br />|  
 |`$inlinecount`|Requests that a count of the number of entities returned in the feed be included with the feed.|  
   
-For more information, see `4. Query String Options` at [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+For more information, see section `4. Query String Options` at [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## Addressing Relationships  
  In addition to addressing entity sets and entity instances, [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] also enables you to address the associations that represent relationships between entities. This functionality is required to be able to create or change a relationship between two entity instances, such as the shipper that is related to a given order in the Northwind sample database. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] supports a `$link` operator to specifically address the associations between entities. For example, the following URI is specified in an HTTP PUT request message to change the shipper for the specified order to a new shipper.  

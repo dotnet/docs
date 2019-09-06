@@ -52,7 +52,7 @@ The following table lists Oracle data types and their mappings to the <xref:Syst
 |**NUMBER**|**VarNumeric**|**Number**||  
 |**NVARCHAR2**|**String**|**NVarChar**||  
 |**RAW**|**Binary**|**Raw**||  
-|**REF CURSOR**||**Cursor**|For more information, see [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md).|  
+|**REF CURSOR**||**Cursor**|For more information, see [Oracle REF CURSORs](oracle-ref-cursors.md).|  
 |**ROWID**|**AnsiString**|**Rowid**||  
 |**TIMESTAMP**|**DateTime**|**Timestamp**|<xref:System.Data.OracleClient.OracleType> is only available when using both Oracle 9i client and server software.|  
 |**TIMESTAMP WITH LOCAL TIME ZONE**|**DateTime**|**TimestampLocal**|<xref:System.Data.OracleClient.OracleType> is only available when using both Oracle 9i client and server software.|  
@@ -64,5 +64,5 @@ The following table lists Oracle data types and their mappings to the <xref:Syst
   
 ## See also
 
-- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
+- [Oracle and ADO.NET](oracle-and-adonet.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

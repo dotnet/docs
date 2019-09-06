@@ -82,7 +82,7 @@ You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by 
   
 |Property|Description|  
 |--------------|-----------------|  
-|<xref:System.Data.SqlClient.SqlParameter.IsNullable%2A>|Gets or sets whether a value is nullable. When you send a null parameter value to the server, you must specify <xref:System.DBNull>, rather than `null` (`Nothing` in Visual Basic). For more information about database nulls, see [Handling Null Values](../../../../../docs/framework/data/adonet/sql/handling-null-values.md).|  
+|<xref:System.Data.SqlClient.SqlParameter.IsNullable%2A>|Gets or sets whether a value is nullable. When you send a null parameter value to the server, you must specify <xref:System.DBNull>, rather than `null` (`Nothing` in Visual Basic). For more information about database nulls, see [Handling Null Values](handling-null-values.md).|  
 |<xref:System.Data.SqlClient.SqlParameter.Precision%2A>|Gets or sets the maximum number of digits used to represent the value. This setting is ignored for date and time data types.|  
 |<xref:System.Data.SqlClient.SqlParameter.Scale%2A>|Gets or sets the number of decimal places to which the time portion of the value is resolved for `Time`, `DateTime2`,and `DateTimeOffset`. The default value is 0, which means that the actual scale is inferred from the value and sent to the server.|  
 |<xref:System.Data.SqlClient.SqlParameter.Size%2A>|Ignored for date and time data types.|  
@@ -95,7 +95,7 @@ You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by 
 ### Creating Parameters  
  You can create a <xref:System.Data.SqlClient.SqlParameter> object by using its constructor, or by adding it to a <xref:System.Data.SqlClient.SqlCommand><xref:System.Data.SqlClient.SqlCommand.Parameters%2A> collection by calling the `Add` method of the <xref:System.Data.SqlClient.SqlParameterCollection>. The `Add` method will take as input either constructor arguments or an existing parameter object.  
   
- The next sections in this topic provide examples of how to specify date and time parameters. For additional examples of working with parameters, see [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md) and [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md).  
+ The next sections in this topic provide examples of how to specify date and time parameters. For additional examples of working with parameters, see [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md) and [DataAdapter Parameters](../dataadapter-parameters.md).  
   
 ### Date Example  
  The following code fragment demonstrates how to specify a `date` parameter.  
@@ -235,7 +235,7 @@ command.Parameters.AddWithValue( _
   
 ## See also
 
-- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
-- [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
-- [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
+- [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md)
+- [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md)
+- [SQL Server Data Types and ADO.NET](sql-server-data-types.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

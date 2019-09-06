@@ -25,7 +25,7 @@ The following are the detailed changes:
 
 In general, applications should depend on the recommended techniques for detecting such things as the runtime version of the .NET Framework and the installation directory:
 
-- To detect the runtime version of the .NET Framework, see [How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md).
+- To detect the runtime version of the .NET Framework, see [How to: Determine Which .NET Framework Versions Are Installed](how-to-determine-which-versions-are-installed.md).
 
 - To determine the installation path for the .NET Framework, use the value of the `InstallPath` entry in the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full` key.
 
@@ -38,4 +38,4 @@ In general, applications should depend on the recommended techniques for detecti
 
 ## See also
 
-- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)
+- [Runtime Changes](runtime-changes-in-the-net-framework-4-6.md)

@@ -22,6 +22,6 @@ When you do not intend to change the data, you can increase the performance of q
   
 ## See also
 
-- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
-- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)
-- [Deferred versus Immediate Loading](../../../../../../docs/framework/data/adonet/sql/linq/deferred-versus-immediate-loading.md)
+- [Query Concepts](query-concepts.md)
+- [Querying the Database](querying-the-database.md)
+- [Deferred versus Immediate Loading](deferred-versus-immediate-loading.md)

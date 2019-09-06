@@ -37,4 +37,4 @@ You can disable this change and revert to the previous behavior of clipping a WP
 
 ## See also
 
-- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)
+- [Runtime Changes](runtime-changes-in-the-net-framework-4-6.md)

@@ -13,25 +13,25 @@ Obtaining schema information from a database is accomplished with the process of
  The .NET Framework Data Provider for OLE DB also exposes schema information by using the <xref:System.Data.OleDb.OleDbConnection.GetOleDbSchemaTable%2A> method of the <xref:System.Data.OleDb.OleDbConnection> object. As arguments, **GetOleDbSchemaTable** takes an <xref:System.Data.OleDb.OleDbSchemaGuid> that identifies the schema information to return, and an array of restrictions on those returned columns. **GetOleDbSchemaTable** returns a <xref:System.Data.DataTable> populated with the requested schema information.  
   
 ## In This Section  
- [GetSchema and Schema Collections](../../../../docs/framework/data/adonet/getschema-and-schema-collections.md)  
+ [GetSchema and Schema Collections](getschema-and-schema-collections.md)  
  Describes the **GetSchema** method and how it can be used to retrieve and restrict schema information from a database.  
   
  Schema Restrictions  
  Describes schema restrictions that can be used with **GetSchema**.  
   
- [Common Schema Collections](../../../../docs/framework/data/adonet/common-schema-collections.md)  
+ [Common Schema Collections](common-schema-collections.md)  
  Describes all of the common schema collections supported by all of the .NET Framework managed providers.  
   
- [SQL Server Schema Collections](../../../../docs/framework/data/adonet/sql-server-schema-collections.md)  
+ [SQL Server Schema Collections](sql-server-schema-collections.md)  
  Describes the schema collection supported by the .NET Framework provider for SQL Server.  
   
- [Oracle Schema Collections](../../../../docs/framework/data/adonet/oracle-schema-collections.md)  
+ [Oracle Schema Collections](oracle-schema-collections.md)  
  Describes the schema collection supported by the .NET Framework provider for Oracle.  
   
- [ODBC Schema Collections](../../../../docs/framework/data/adonet/odbc-schema-collections.md)  
+ [ODBC Schema Collections](odbc-schema-collections.md)  
  Describes the schema collections for ODBC drivers.  
   
- [OLE DB Schema Collections](../../../../docs/framework/data/adonet/ole-db-schema-collections.md)  
+ [OLE DB Schema Collections](ole-db-schema-collections.md)  
  Describes the schema collections for OLE DB providers.  
   
 ## Reference  
@@ -67,5 +67,5 @@ Obtaining schema information from a database is accomplished with the process of
   
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

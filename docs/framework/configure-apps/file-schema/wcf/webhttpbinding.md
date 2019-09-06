@@ -6,9 +6,10 @@ ms.assetid: 84179d77-825d-44b9-895a-ab08e7aa044d
 # \<webHttpBinding>
 Defines a binding element that is used to configure endpoints for Windows Communication Foundation (WCF) Web services that respond to HTTP requests instead of SOAP messages.  
   
-\<system.ServiceModel>  
-\<bindings>  
-\<webHttpBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webHttpBinding>**  
   
 ## Syntax  
   

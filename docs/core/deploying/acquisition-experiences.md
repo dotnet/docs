@@ -10,19 +10,19 @@ ms.custom:
 # .NET Core Acquisition Experiences
 
 There are a variety of Acquisition options for .NET Core - 
-* Visual Studio and Visual Studio Code
-* https://dot.net (.NET portal)
-* dotnet-install.ps1/.sh
-* Docker
-* Linux package managers
-* Azure DevOps pipeline Installer Task
-* Snap store
-* .NET Core on GitHub
+* [Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)
+* [https://dot.net (Microsoft .NET site)](#https://dot.net-(Microsoft-.NET-site))
+* [Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1/.sh-Scripts)
+* [Docker](#Docker)
+* [Linux Package Managers](#Linux-Package-Managers)
+* [Azure DevOps pipeline Installer Task](#Azure-DevOps--Installer-Task)
+* [Snap store](#Snap-store)
+* [.NET Core on GitHub](#.NET-Core-on-GitHub)
 
 
 ## Visual Studio and Visual Studio Code
 
-Developers often acquire and update the .NET Core tools and runtime by installing Visual Studio and Visual Studio for Mac. 
+Developers often acquire and update the .NET Core tools and runtime by installing Visual Studio or Visual Studio for Mac. 
 
 ### Visual Studio for Windows
 Each version of Visual Studio installs the latest .NET Core SDK tools, and one or more runtimes so you can target your app to run on the .NET Core runtime version of your choice.
@@ -62,7 +62,7 @@ The [Microsoft .NET](https://dot.net/) site is your one stop shop for all things
 This site provides downloads for the native installers (MSI for Windows, PKG for MacOS), and tar.gz files for download, installation and redistribution with your app.
 
 
-## Dotnet-install.ps1/.sh
+## Dotnet-install.ps1/.sh Scripts
 
 The dotnet-install scripts are used to perform a non-admin installation of the .NET Core SDK, which includes the .NET Core CLI tools and the shared runtime.
 

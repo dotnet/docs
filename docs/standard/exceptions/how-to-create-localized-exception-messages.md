@@ -54,7 +54,7 @@ To create custom exceptions, Follow these steps:
             : base(message, inner) { }
 	
         public StudentNotFoundException(string message, string studentName)
-            : base(message)
+            : this(message)
         {
             StudentName = studentName;
         }
@@ -70,7 +70,7 @@ throw new StudentNotFoundException("The student cannot be found.", "John");
 ```
 
 The problem with the previous line is that "The student cannot be found." is just a constant string. In a localized application, you want to have different messages depending on user culture.
-[Satellite Assemblies](https://docs.microsoft.com/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps) are a good way to do that.
+[Satellite Assemblies](../../framework/resources/creating-satellite-assemblies-for-desktop-apps.md) are a good way to do that.
 
 A satellite assembly is a .dll that contains resources for a specific language. When you ask for a specific resources at run time, the CLR finds that resource depending on user culture. If no satellite assembly is found for that culture, the resources of the default culture are used.
 
@@ -103,3 +103,5 @@ To create the localized exception messages:
 
 - [How to create user-defined exceptions](how-to-create-user-defined-exceptions.md)
 - [Creating Satellite Assemblies for Desktop Apps](../../framework/resources/creating-satellite-assemblies-for-desktop-apps.md)
+- [base (C# Reference)](../../csharp/language-reference/keywords/base)
+- [this (C# Reference)](../../csharp/language-reference/keywords/this.md)

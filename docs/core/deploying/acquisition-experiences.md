@@ -11,13 +11,14 @@ ms.custom:
 
 There are a variety of Acquisition options for .NET Core - 
 * [Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)
-* [https://dot.net (Microsoft .NET site)](#https://dot.net-(Microsoft-.NET-site))
-* [Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1/.sh-Scripts)
+* [https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)
+* [Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)
 * [Docker](#Docker)
 * [Linux Package Managers](#Linux-Package-Managers)
-* [Azure DevOps pipeline Installer Task](#Azure-DevOps--Installer-Task)
+* [Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)
 * [Snap store](#Snap-store)
-* [.NET Core on GitHub](#.NET-Core-on-GitHub)
+* [.NET Core on GitHub](#NET-Core-on-GitHub)
+* [Update Notifications](#Update-Notifications)
 
 
 ## Visual Studio and Visual Studio Code

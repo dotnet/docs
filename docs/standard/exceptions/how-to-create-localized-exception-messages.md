@@ -14,7 +14,7 @@ In this article, you will learn how to create user-defined exceptions that are i
 .NET contains many different exceptions that you can use. However, in some cases when none of them meets your needs, you can create your own custom exceptions.
 
 Let's assume you want to create a `StudentNotFoundException` that contains a `StudentName` property.
-To create custom exceptions, Follow these steps:
+To create a custom exception, follow these steps:
 
 - Create a serializable class that inherits from <xref:System.Exception>. The class name should end in "Exception":
 
@@ -39,7 +39,7 @@ To create custom exceptions, Follow these steps:
     }
     ```
 
-- Add properties and more constructors, depending on your needs:
+- If you need, define additional properties and constructors:
 
     ```csharp
     [Serializable]
@@ -105,5 +105,5 @@ To create the localized exception messages:
 
 - [How to create user-defined exceptions](how-to-create-user-defined-exceptions.md)
 - [Creating Satellite Assemblies for Desktop Apps](../../framework/resources/creating-satellite-assemblies-for-desktop-apps.md)
-- [base (C# Reference)](../../csharp/language-reference/keywords/base)
+- [base (C# Reference)](../../csharp/language-reference/keywords/base.md)
 - [this (C# Reference)](../../csharp/language-reference/keywords/this.md)

@@ -1,11 +1,11 @@
 ---
-title: How to: create custom exceptions and localized exception messages
-description: Learn how to create custom exceptions and localized exception messages
+title: How to: create user-defined exceptions with localized exception messages
+description: Learn how to create user-defined exceptions with localized exception messages
 author: Youssef1313
 ms.author: ronpet
 ms.date: 09/02/2019
 ---
-# How to: create custom exceptions and localized exception messages
+# How to: create user-defined exceptions with localized exception messages
 
 Written by [Youssef Victor](https://github.com/Youssef1313).
 

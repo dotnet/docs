@@ -26,9 +26,10 @@ Developers often acquire and update the .NET Core tools and runtime by installin
 
 ### Visual Studio for Windows
 Each version of Visual Studio installs the latest .NET Core SDK tools, and one or more runtimes so you can target your app to run on the .NET Core runtime version of your choice.
+
 Selecting any of the managed workloads for Web, Desktop or Azure development will install the .NET Core development tools and runtime.
 
-![alt text](./install-vs-windows.png "Install Visual Studio for Windows")
+![Install Visual Studio for Windows](media/install-vs-windows.png "Install Visual Studio for Windows")
 
 In recent previews of Visual Studio 2019 Update 3 we have made changes to the installation experience for .NET Core to make this more streamlined and efficient. More details about this can be found in the blog post [Improving .NET Core installation in Visual Studio and on Windows](https://devblogs.microsoft.com/dotnet/improving-net-core-installation-in-visual-studio-and-on-windows/). 
 
@@ -36,7 +37,9 @@ In recent previews of Visual Studio 2019 Update 3 we have made changes to the in
 
 ### Visual Studio for MacOS
 
-NET Core 2.1 is automatically installed when you install Visual Studio for Mac, so to get started with .NET Core development on MacOS you can start with the [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/en-us/visualstudio/mac/installation?view=vsmac-2019) guide. 
+NET Core 2.1 is installed when you install Visual Studio for Mac and select the .NET Core workload, to get started with .NET Core development on MacOS you can start with the [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/en-us/visualstudio/mac/installation?view=vsmac-2019) guide.
+
+![Install Visual Studio for Mac](media/install-vs-mac.png "Install Visual Studio for Mac")
 
 Note: .NET Core 2.x development is supported on MacOS 10.12 “Sierra” and later. 
 

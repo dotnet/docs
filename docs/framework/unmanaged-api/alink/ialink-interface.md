@@ -13,64 +13,64 @@ ms.author: "mairaw"
 Helps in constructing .NET Framework assemblies. Among other things, the interface contains methods that assist in writing assembly manifests for multi-module assemblies, signing assemblies with strong names, and creating netmodules.  
   
 ## In This Section  
- [AddFile Method](../../../../docs/framework/unmanaged-api/alink/addfile-method.md)  
+ [AddFile Method](addfile-method.md)  
   
- [AddImport Method](../../../../docs/framework/unmanaged-api/alink/addimport-method.md)  
+ [AddImport Method](addimport-method.md)  
   
- [CloseAssembly Method](../../../../docs/framework/unmanaged-api/alink/closeassembly-method.md)  
+ [CloseAssembly Method](closeassembly-method.md)  
   
- [CloseEnum Method](../../../../docs/framework/unmanaged-api/alink/closeenum-method.md)  
+ [CloseEnum Method](closeenum-method.md)  
   
- [EmbedResource Method](../../../../docs/framework/unmanaged-api/alink/embedresource-method.md)  
+ [EmbedResource Method](embedresource-method.md)  
   
- [EmitAssemblyCustomAttribute Method](../../../../docs/framework/unmanaged-api/alink/emitassemblycustomattribute-method.md)  
+ [EmitAssemblyCustomAttribute Method](emitassemblycustomattribute-method.md)  
   
- [EmitManifest Method](../../../../docs/framework/unmanaged-api/alink/emitmanifest-method.md)  
+ [EmitManifest Method](emitmanifest-method.md)  
   
- [EndMerge Method](../../../../docs/framework/unmanaged-api/alink/endmerge-method.md)  
+ [EndMerge Method](endmerge-method.md)  
   
- [EnumCustomAttributes Method](../../../../docs/framework/unmanaged-api/alink/enumcustomattributes-method.md)  
+ [EnumCustomAttributes Method](enumcustomattributes-method.md)  
   
- [EnumImportTypes Method](../../../../docs/framework/unmanaged-api/alink/enumimporttypes-method.md)  
+ [EnumImportTypes Method](enumimporttypes-method.md)  
   
- [ExportNestedType Method](../../../../docs/framework/unmanaged-api/alink/exportnestedtype-method.md)  
+ [ExportNestedType Method](exportnestedtype-method.md)  
   
- [ExportNestedTypeForwarder Method](../../../../docs/framework/unmanaged-api/alink/exportnestedtypeforwarder-method.md)  
+ [ExportNestedTypeForwarder Method](exportnestedtypeforwarder-method.md)  
   
- [ExportType Method](../../../../docs/framework/unmanaged-api/alink/exporttype-method.md)  
+ [ExportType Method](exporttype-method.md)  
   
- [ExportTypeForwarder Method](../../../../docs/framework/unmanaged-api/alink/exporttypeforwarder-method.md)  
+ [ExportTypeForwarder Method](exporttypeforwarder-method.md)  
   
- [FreeWin32ResBlob Method](../../../../docs/framework/unmanaged-api/alink/freewin32resblob-method.md)  
+ [FreeWin32ResBlob Method](freewin32resblob-method.md)  
   
- [GetAssemblyRefHash Method](../../../../docs/framework/unmanaged-api/alink/getassemblyrefhash-method.md)  
+ [GetAssemblyRefHash Method](getassemblyrefhash-method.md)  
   
- [GetResolutionScope Method](../../../../docs/framework/unmanaged-api/alink/getresolutionscope-method.md)  
+ [GetResolutionScope Method](getresolutionscope-method.md)  
   
- [GetScope Method](../../../../docs/framework/unmanaged-api/alink/getscope-method.md)  
+ [GetScope Method](getscope-method.md)  
   
- [GetWin32ResBlob Method](../../../../docs/framework/unmanaged-api/alink/getwin32resblob-method.md)  
+ [GetWin32ResBlob Method](getwin32resblob-method.md)  
   
- [ImportFile Method](../../../../docs/framework/unmanaged-api/alink/importfile-method.md)  
+ [ImportFile Method](importfile-method.md)  
   
- [ImportFile2 Method](../../../../docs/framework/unmanaged-api/alink/importfile2-method.md)  
+ [ImportFile2 Method](importfile2-method.md)  
   
- [ImportTypes Method](../../../../docs/framework/unmanaged-api/alink/importtypes-method.md)  
+ [ImportTypes Method](importtypes-method.md)  
   
  "Init Method"  
   
- [LinkResource Method](../../../../docs/framework/unmanaged-api/alink/linkresource-method.md)  
+ [LinkResource Method](linkresource-method.md)  
   
- [PreCloseAssembly Method](../../../../docs/framework/unmanaged-api/alink/precloseassembly-method.md)  
+ [PreCloseAssembly Method](precloseassembly-method.md)  
   
- [SetAssemblyFile Method](../../../../docs/framework/unmanaged-api/alink/setassemblyfile-method.md)  
+ [SetAssemblyFile Method](setassemblyfile-method.md)  
   
- [SetAssemblyProps Method](../../../../docs/framework/unmanaged-api/alink/setassemblyprops-method.md)  
+ [SetAssemblyProps Method](setassemblyprops-method.md)  
   
- [SetNonAssemblyFlags Method](../../../../docs/framework/unmanaged-api/alink/setnonassemblyflags-method.md)  
+ [SetNonAssemblyFlags Method](setnonassemblyflags-method.md)  
   
 ## See also
 
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [ALink API](index.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [Al.exe (Assembly Linker)](../../tools/al-exe-assembly-linker.md)

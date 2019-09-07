@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9f9ba96d-9f89-4f65-bb2f-6860879f4393
 ---
 # Side-by-Side Execution in ADO.NET
-Side-by-side execution in the .NET Framework is the ability to execute an application on a computer that has multiple versions of the .NET Framework installed, exclusively using the version for which the application was compiled. For detailed information about configuring side-by-side execution, see [Side-by-Side Execution](../../../../docs/framework/deployment/side-by-side-execution.md).  
+Side-by-side execution in the .NET Framework is the ability to execute an application on a computer that has multiple versions of the .NET Framework installed, exclusively using the version for which the application was compiled. For detailed information about configuring side-by-side execution, see [Side-by-Side Execution](../../deployment/side-by-side-execution.md).  
   
  An application compiled by using one version of the .NET Framework can run on a different version of the .NET Framework. However, we recommend that you compile a version of the application for each installed version of the .NET Framework, and run them separately. In either scenario, you should be aware of changes in ADO.NET between releases that can affect the forward compatibility or backward compatibility of your application.  
   
@@ -28,7 +28,7 @@ Side-by-side execution in the .NET Framework is the ability to execute an applic
 ## Code Access Security  
  The .NET Framework data providers in the .NET Framework version 1.0 (<xref:System.Data.SqlClient>, <xref:System.Data.OleDb>) are required to run with FullTrust permission. Any attempt to use the .NET Framework k data providers from the .NET Framework version 1.0 in a zone with less than FullTrust permission causes a <xref:System.Security.SecurityException>.  
   
- However, starting with the .NET Framework version 2.0, all of the .NET Framework data providers can be used in partially trusted zones. In addition, a new security feature was added to the .NET Framework data providers in the .NET Framework version 1.1. This feature enables you to restrict what connection strings can be used in a particular security zone. You can also disable the use of blank passwords for a particular security zone. For more information, see [Code Access Security and ADO.NET](../../../../docs/framework/data/adonet/code-access-security.md).  
+ However, starting with the .NET Framework version 2.0, all of the .NET Framework data providers can be used in partially trusted zones. In addition, a new security feature was added to the .NET Framework data providers in the .NET Framework version 1.1. This feature enables you to restrict what connection strings can be used in a particular security zone. You can also disable the use of blank passwords for a particular security zone. For more information, see [Code Access Security and ADO.NET](code-access-security.md).  
   
  Because each installation of the .NET Framework has a separate Security.config file, there are no compatibility issues with security settings. However, if your application depends on the additional security capabilities of ADO.NET included in the .NET Framework version 1.1 and later, you will not be able to distribute it to a version 1.0 system.  
   
@@ -60,6 +60,5 @@ SET NOCOUNT OFF;
   
 ## See also
 
-- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)

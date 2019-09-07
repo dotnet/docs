@@ -41,6 +41,6 @@ command.ExecuteNonQuery();
   
 ## See also
 
-- [Using Commands to Modify Data](../../../../docs/framework/data/adonet/using-commands-to-modify-data.md)
-- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Using Commands to Modify Data](using-commands-to-modify-data.md)
+- [Commands and Parameters](commands-and-parameters.md)
+- [ADO.NET Overview](ado-net-overview.md)

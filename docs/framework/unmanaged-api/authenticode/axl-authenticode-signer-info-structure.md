@@ -36,4 +36,4 @@ typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {
   
 ## See also
 
-- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [Authenticode](index.md)

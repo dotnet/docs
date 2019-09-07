@@ -11,7 +11,7 @@ This topic describes how you can view message logs.
   
  Since the output of message logging has no relationship to the transfer format of the message, message logging always outputs the decoded message. If you have configured message logging properly, any logged message should be in plain text. For example, the format (plain text) of the logged messages is not affected by the usage of a binary message encoder.  
   
- The output of the XmlWriterTraceListener is a file that contains a sequence of XML fragments. You should be aware that the file is not a valid XML file. It is recommended that you use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) to view the message log files. For more information on how to use this tool, see [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md).  
+ The output of the XmlWriterTraceListener is a file that contains a sequence of XML fragments. You should be aware that the file is not a valid XML file. It is recommended that you use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) to view the message log files. For more information on how to use this tool, see [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](./tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md).  
   
  In the Service Trace Viewer, messages are listed in the **Message** tab. Messages that have caused, or are related to, a processing error are highlighted in yellow (warning level) or red (error level), depending on the severity of the error. Double-clicking on the message brings up the message trace in the context of the processing request.  
   
@@ -19,13 +19,13 @@ This topic describes how you can view message logs.
 > If a message has no header, no `<header/>` tag is logged.  
   
 ## Viewing Messages Logged by a Client, a Relay, and a Service  
- Your environment may contain a client, which sends a message to a relay, that subsequently forwards the message to the service. When message logging is enabled on all three locations, and all three message logs are viewed in [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) simultaneously, the message log exchanges will be incorrectly rendered. This is because the `CorrelationId` and `ActivityId` in the Message header are not unique for every send-receive pair.  
+ Your environment may contain a client, which sends a message to a relay, that subsequently forwards the message to the service. When message logging is enabled on all three locations, and all three message logs are viewed in [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) simultaneously, the message log exchanges will be incorrectly rendered. This is because the `CorrelationId` and `ActivityId` in the Message header are not unique for every send-receive pair.  
   
  You can use either one of the following methods to resolve this problem.  
   
-- Only view two of the three message logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) at any time.  
+- Only view two of the three message logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) at any time.  
   
-- If you must view all three logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) at the same time, you can modify the relay service by creating a new <xref:System.ServiceModel.Channels.Message> instance. This instance should be a copy of the body of the incoming message, plus all the headers except for the `ActivityId` and `Action` headers. The following example code demonstrates how to do this.  
+- If you must view all three logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) at the same time, you can modify the relay service by creating a new <xref:System.ServiceModel.Channels.Message> instance. This instance should be a copy of the body of the incoming message, plus all the headers except for the `ActivityId` and `Action` headers. The following example code demonstrates how to do this.  
   
 ```csharp
 Message outgoingMessage = Message.CreateMessage(incomingMessage.Version, incomingMessage.Headers.Action, incomingMessage.GetReaderAtBodyContents());  
@@ -56,6 +56,6 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
   
 ## See also
 
-- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
-- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
-- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)
+- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](./tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [Message Logging](message-logging.md)

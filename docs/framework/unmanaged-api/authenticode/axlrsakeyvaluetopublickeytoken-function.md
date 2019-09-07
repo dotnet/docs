@@ -40,4 +40,4 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
   
 ## See also
 
-- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [Authenticode](index.md)

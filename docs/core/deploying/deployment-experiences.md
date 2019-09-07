@@ -14,10 +14,15 @@ ms.custom:
 
 ## Side by Side installs versus in-place updates
 Prior to .NET Core 3.0, all .NET Core releases including servicing updates were fully side by side installs i.e. if you have a major/minor version installed and then install another major/minor release or even a patch release for the major/minor both the first and patch versions would always be installed in discrete install locations. 
+
 For example, installing 2.2.14 when you already have 2.2.13 installed will result in both 2.2.13 and 2.2.14 being present on the computer. 
+
 As multiple updates shipped and were installed customer feedback strongly suggested that the older experience was not desirable, so changes have been made to the installer in .NET Core 3.0.
+
 Starting with .NET Core 3.0, new major/minor releases will continue to install side by side with earlier major/minor versions, but patch versions for a previously released major/minor version will upon successful installation remove any earlier patches for the same major minor. 
+
 For example installing 3.0.2 when you already have 3.0.1 installed will result in 3.0.2 replacing 3.0.1.
+
 
 ## Roll Forward
 Starting with Core 2.1, .NET Core updates support patch roll forward. When you create a self-contained deployment, .NET Core tools automatically include the latest serviced runtime of the .NET Core version that your application targets (this is downloaded automatically from NuGet.org).
@@ -40,5 +45,7 @@ Roll forward to highest minor version, even if requested minor version is presen
 Roll forward to highest major and highest minor version, even if requested major is present. Intended for component hosting scenarios.
 * Disable  
 Don't roll forward. Only bind to specified version. This policy isn't recommended for general use because it disables the ability to roll forward to the latest patches. This value is only recommended for testing.
+
 Besides the Disable setting, all settings will use the highest available patch version.
-For more information about roll forward at run time refer to the document Self-contained deployment runtime roll forward.
+
+For more information about roll forward at run time refer to the document [Self-contained deployment runtime roll forward](https://docs.microsoft.com/en-us/dotnet/core/deploying/runtime-patch-selection).

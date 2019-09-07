@@ -100,7 +100,7 @@ Both SCD and FDD deployments for your app can be created for your app through ei
 
 For more information on using Visual Studio to create you app deployment you can refer to the guide [Deploy .NET Core apps with Visual Studio](deploy-with-vs.md).
 
-For more information on using the CLI to create you app deployment you can refer to the guide Publish [.NET Core apps with the CLI](deploy-with-cli.md).
+For more information on using the CLI to create you app deployment you can refer to the guide Publish [Deploy .NET Core apps with the CLI](deploy-with-cli.md).
 
 
 ## Framework-Dependent Executables (FDE)

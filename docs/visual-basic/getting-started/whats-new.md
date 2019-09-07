@@ -56,7 +56,7 @@ Bit-shift operators, loop variable declaration
 Visual Basic / Visual Studio .NET 2002
 The first release of Visual Basic .NET
 
-## Visual Basic 16
+## Visual Basic 16.0
 
 In Visual Basic 15. and Earlier comment are only allowed on blank lines before a statement, at the end of a statement or in specific places within a statement where an implicit line continuation is allowed.
 

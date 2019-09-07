@@ -16,65 +16,65 @@ To create custom exceptions, Follow these steps:
 
 - Create a serializable class that inherits from `Exception`. The class name should end in "Exception":
 
-```csharp
-[Serializable]
-public class StudentNotFoundException : Exception
-{
+    ```csharp
+    [Serializable]
+    public class StudentNotFoundException : Exception
+    {
     
-}
-```
+    }
+    ```
 
 - Add the default constructors:
 
-```csharp
-[Serializable]
-public class StudentNotFoundException : Exception
-{
-    public StudentNotFoundException()
+    ```csharp
+    [Serializable]
+    public class StudentNotFoundException : Exception
     {
-    }
+        public StudentNotFoundException()
+        {
+        }
 
-    public StudentNotFoundException(string message)
-        : base(message)
-    {
-    }
+        public StudentNotFoundException(string message)
+            : base(message)
+        {
+        }
 
-    public StudentNotFoundException(string message, Exception inner)
-        : base(message, inner)
-    {
+        public StudentNotFoundException(string message, Exception inner)
+            : base(message, inner)
+        {
+        }
     }
-}
-```
+    ```
 
 - Add properties and more constructors, depending on your needs:
 
-```csharp
-[Serializable]
-public class StudentNotFoundException : Exception
-{
-    public string StudentName { get; }
-
-    public StudentNotFoundException()
+    ```csharp
+    [Serializable]
+    public class StudentNotFoundException : Exception
     {
-    }
+        public string StudentName { get; }
 
-    public StudentNotFoundException(string message)
-        : base(message)
-    {
-    }
+        public StudentNotFoundException()
+        {
+        }
 
-    public StudentNotFoundException(string message, Exception inner)
-        : base(message, inner)
-    {
-    }
+        public StudentNotFoundException(string message)
+            : base(message)
+        {
+        }
+
+        public StudentNotFoundException(string message, Exception inner)
+            : base(message, inner)
+        {
+        }
 	
-    public StudentNotFoundException(string message, string studentName)
-        : base(message)
-    {
-        StudentName = studentName;
+        public StudentNotFoundException(string message, string studentName)
+            : base(message)
+        {
+            StudentName = studentName;
+        }
     }
-}
-```
+    ```
 
 ## Create localized exception messages
 You have created a custom exception, and you can throw it anywhere with code like the following:
@@ -105,10 +105,10 @@ To create the localized exception messages:
 
 - You throw the exception with code like the following:
 
-```csharp
-var resourceManager = new ResourceManager("FULLY_QIALIFIED_NAME_OF_RESOURCE_FILE", Assembly.GetExecutingAssembly());
-throw new StudentNotFoundException(resourceManager.GetString("StudentNotFound"), "John")
-```
+    ```csharp
+    var resourceManager = new ResourceManager("FULLY_QIALIFIED_NAME_OF_RESOURCE_FILE", Assembly.GetExecutingAssembly());
+    throw new StudentNotFoundException(resourceManager.GetString("StudentNotFound"), "John")
+    ```
 
 > [!NOTE]
 > If our project name is `TestProject` and our resource file is *ExceptionMessages.resx* and is in a folder named *Resources* in the project, the fully qualified name of the resource file is `TestProject.Resources.ExceptionMessages`.

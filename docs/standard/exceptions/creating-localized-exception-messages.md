@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 ---
 # How to: create user-defined exceptions with localized exception messages
 
-Written by [Youssef Victor](https://github.com/Youssef1313).
-
 ## Create custom exceptions
 .NET contains many different exceptions that you can use. However, in some cases when none of them meets your needs, you can create your own custom exceptions.
 Let's assume you want to create a `StudentNotFoundException` that contains a `StudentName` property.
@@ -94,12 +92,12 @@ To create the localized exception messages:
 - Add a new resource file to it. To do that in Visual Studio, right-click the folder in **Solution Explorer**, and select **Add** -> **New Item** -> **Resources File**. Name the file *ExceptionMessages.resx*. This is the default resources file.
 - Add a name/value pair for your exception message, like the following image shows:
 
-![image](https://user-images.githubusercontent.com/31348972/64120930-ca5a8400-cd9d-11e9-984a-789c5f582513.png)
+![Add resources to the default culture](media/add-resources-to-default-culture.jpg)
 
 - Add a new resource file for French. Name it *ExceptionMessages.fr-FR.resx*.
 - Add a name/value pair for the exception message again, but with a French value:
 
-![image](https://user-images.githubusercontent.com/31348972/64120995-ee1dca00-cd9d-11e9-9728-07b971bb6409.png)
+![Add resources to the fr-FR culture](media/add-resources-to-fr-culture)
 
 - If you build the project and go to the *bin/Debug* folder, you'll find a folder named *fr-FR* containing a .dll file; this is the satellite assembly.
 
@@ -107,7 +105,7 @@ To create the localized exception messages:
 
     ```csharp
     var resourceManager = new ResourceManager("FULLY_QIALIFIED_NAME_OF_RESOURCE_FILE", Assembly.GetExecutingAssembly());
-    throw new StudentNotFoundException(resourceManager.GetString("StudentNotFound"), "John")
+    throw new StudentNotFoundException(resourceManager.GetString("StudentNotFound"), "John");
     ```
 
 > [!NOTE]

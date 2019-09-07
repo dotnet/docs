@@ -98,7 +98,7 @@ To create the localized exception messages:
 - Add a new resource file for French. Name it *ExceptionMessages.fr-FR.resx*.
 - Add a name/value pair for the exception message again, but with a French value:
 
-![Add resources to the fr-FR culture](media/add-resources-to-fr-culture)
+![Add resources to the fr-FR culture](media/add-resources-to-fr-culture.jpg)
 
 - If you build the project and go to the *bin/Debug* folder, you'll find a folder named *fr-FR* containing a .dll file; this is the satellite assembly.
 

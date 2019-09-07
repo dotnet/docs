@@ -7,7 +7,7 @@ ms.date: 09/02/2019
 ---
 # How to: create user-defined exceptions with localized exception messages
 
-In this article, you will how to create user-defined exceptions that are inherited from the base <xref:System.Exception> class with localized exception messages using satellite assemblies.
+In this article, you will learn how to create user-defined exceptions that are inherited from the base <xref:System.Exception> class with localized exception messages using satellite assemblies.
 
 ## Create custom exceptions
 

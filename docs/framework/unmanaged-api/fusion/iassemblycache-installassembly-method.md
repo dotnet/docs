@@ -43,10 +43,10 @@ HRESULT InstallAssembly (
  [in] The path to the manifest for the assembly to install.  
   
  `pRefData`  
- [in] A [FUSION_INSTALL_REFERENCE](../../../../docs/framework/unmanaged-api/fusion/fusion-install-reference-structure.md) structure that contains data for the installation.  
+ [in] A [FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md) structure that contains data for the installation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -54,4 +54,4 @@ HRESULT InstallAssembly (
   
 ## See also
 
-- [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
+- [IAssemblyCache Interface](iassemblycache-interface.md)

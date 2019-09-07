@@ -28,7 +28,7 @@ Conditionally executes a group of statements, depending on the value of an expre
 
 ## Syntax
 
-```
+```vb
 ' Multiline syntax:
 If condition [ Then ]
     [ statements ]
@@ -46,16 +46,16 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 
 This article includes several examples that illustrate uses of the `If`...`Then`...`Else` statement:
 
-* [Multiline syntax example](#multi-line)
-* [Nested syntax example](#nested)
-* [Single-line syntax example](#single-line)
+- [Multiline syntax example](#multi-line)
+- [Nested syntax example](#nested)
+- [Single-line syntax example](#single-line)
 
 ## Parts
 
 `condition` \
 Required. Expression. Must evaluate to `True` or `False`, or to a data type that is implicitly convertible to `Boolean`.
 
-If the expression is a [Nullable](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md) `Boolean` variable that evaluates to [Nothing](../../../visual-basic/language-reference/nothing.md), the condition is treated as if the expression is `False` and the `Else` block is executed.
+If the expression is a [Nullable](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md) `Boolean` variable that evaluates to [Nothing](../../../visual-basic/language-reference/nothing.md), the condition is treated as if the expression is `False`, and the `ElseIf` blocks are evaluated if they exist, or the `Else` block is executed if it exists.
 
 `Then` \
 Required in the single-line syntax; optional in the multiline syntax.

@@ -168,4 +168,4 @@ namespace LogUtil
 - <xref:System.Security.Permissions.FileIOPermission>
 - <xref:System.Security.Permissions.SecurityAction>
 - [Attributes](../../standard/attributes/index.md)
-- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+- [Code Access Security](code-access-security.md)

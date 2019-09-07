@@ -20,7 +20,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CreateAssemblyNameObject Function
-Gets an interface pointer to an [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) instance that represents the unique identity of the assembly with the specified name.  
+Gets an interface pointer to an [IAssemblyName](iassemblyname-interface.md) instance that represents the unique identity of the assembly with the specified name.  
   
 ## Syntax  
   
@@ -47,7 +47,7 @@ HRESULT CreateAssemblyNameObject (
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -57,5 +57,5 @@ HRESULT CreateAssemblyNameObject (
   
 ## See also
 
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

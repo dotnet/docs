@@ -55,5 +55,5 @@ SELECT c, (SELECT c, (SELECT c FROM AdventureWorksModel.Vendor AS c  ) As Inner2
   
 ## See also
 
-- [SqlClient for the Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)
-- [Known Issues and Considerations in LINQ to Entities](../../../../../docs/framework/data/adonet/ef/language-reference/known-issues-and-considerations-in-linq-to-entities.md)
+- [SqlClient for the Entity Framework](sqlclient-for-the-entity-framework.md)
+- [Known Issues and Considerations in LINQ to Entities](./language-reference/known-issues-and-considerations-in-linq-to-entities.md)

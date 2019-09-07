@@ -22,7 +22,7 @@ foreach(XElement prdName in items)
   
  This code produces the following output:  
   
-```  
+```output  
 ProductName:Lawnmower  
 ProductName:Baby Monitor  
 ```  
@@ -60,7 +60,7 @@ foreach (XElement prdName in items)
   
  This code produces the following output:  
   
-```  
+```output  
 {http://www.adventure-works.com}ProductName:Lawnmower  
 {http://www.adventure-works.com}ProductName:Baby Monitor  
 ```  

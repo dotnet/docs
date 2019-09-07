@@ -14,7 +14,7 @@ This document provides the steps and workflow to create a .NET Core solution for
 
 ## Prerequisites
 
-Install the [.NET Core SDK](https://www.microsoft.com/net/core). The .NET Core SDK includes the latest release of the .NET Core framework and runtime.
+Install the [.NET Core SDK](https://dotnet.microsoft.com/download). The .NET Core SDK includes the latest release of the .NET Core framework and runtime.
 
 Install [Visual Studio Code](https://code.visualstudio.com). During the course of this article, you also install Visual Studio Code extensions that improve the .NET Core development experience.
 
@@ -50,7 +50,7 @@ The *library.csproj* file contains the following information:
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -66,7 +66,7 @@ This adds `Newtonsoft.Json` and its dependencies to the library project. Alterna
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+  <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
 </ItemGroup>
 ```
 

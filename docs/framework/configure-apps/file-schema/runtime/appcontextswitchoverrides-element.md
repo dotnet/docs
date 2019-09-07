@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<AppContextSwitchOverrides> Element
 Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.  
   
- \<configuration>  
- \<runtime>  
-\<AppContextSwitchOverrides>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<AppContextSwitchOverrides>**  
   
 ## Syntax  
   

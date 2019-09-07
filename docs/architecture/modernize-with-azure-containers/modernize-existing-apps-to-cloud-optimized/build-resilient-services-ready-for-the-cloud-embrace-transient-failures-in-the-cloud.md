@@ -23,7 +23,7 @@ A resilient application like the one shown in Figure 4-9 should implement techni
 
 ![Partial failures handled by retries with exponential backoff](./media/image9.png)
 
-> **Figure 4-9.** Partial failures handled by retries with exponential backoff
+**Figure 4-9.** Partial failures handled by retries with exponential backoff
 
 You can use these techniques both in HTTP resources and in database resources. In Figure 4-9, the application is based on a 3-tier architecture, so you need these techniques at the services level (HTTP) and at the data tier level (TCP). In a monolithic application that uses only a single app tier in addition to the database (no additional services or microservices), handling transient failures at the database connection level might be enough. In that scenario, just a particular configuration of the database connection is required.
 

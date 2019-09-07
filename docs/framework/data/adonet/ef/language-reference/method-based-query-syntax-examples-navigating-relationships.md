@@ -49,4 +49,4 @@ Navigation properties in the [!INCLUDE[adonet_ef](../../../../../../includes/ado
 ## See also
 
 - [Relationships, navigation properties and foreign keys](/ef/ef6/fundamentals/relationships)
-- [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
+- [Queries in LINQ to Entities](queries-in-linq-to-entities.md)

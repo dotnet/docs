@@ -21,7 +21,7 @@ Figure 4-13 shows an overview of the true hybrid cloud platform that Microsoft o
 
 ![Microsoft hybrid cloud platform with Azure Stack and Azure](./media/image13.jpg)
 
-> **Figure 4-13.** Microsoft hybrid cloud platform with Azure Stack and Azure
+**Figure 4-13.** Microsoft hybrid cloud platform with Azure Stack and Azure
 
 Azure Stack is offered in two deployment options, to meet your needs:
 

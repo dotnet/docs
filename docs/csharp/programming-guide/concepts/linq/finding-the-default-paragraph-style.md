@@ -73,7 +73,7 @@ Console.WriteLine("The default style is: {0}", defaultStyle);
 ### Comments  
  This example produces the following output:  
   
-```  
+```output  
 The default style is: Normal  
 ```  
   
@@ -81,4 +81,3 @@ The default style is: Normal
  In the next example, you'll create a similar query that finds all the paragraphs in a document and their styles:  
   
 - [Retrieving the Paragraphs and Their Styles (C#)](./retrieving-the-paragraphs-and-their-styles.md)  
-  

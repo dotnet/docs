@@ -43,4 +43,4 @@ AS p1 INNER JOIN Products AS p2 ON p1.ProductID = p2.ProductID
   
 ## See also
 
-- [User-Defined Functions](../../../../../../docs/framework/data/adonet/sql/linq/user-defined-functions.md)
+- [User-Defined Functions](user-defined-functions.md)

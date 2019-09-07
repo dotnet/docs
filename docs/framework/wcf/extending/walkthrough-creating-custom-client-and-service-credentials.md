@@ -18,8 +18,6 @@ The <xref:System.ServiceModel.Description.ClientCredentials> and <xref:System.Se
 
 - Perform as a factory for <xref:System.IdentityModel.Selectors.SecurityTokenManager> implementations.
 
-Both the <xref:System.ServiceModel.Description.ClientCredentials> and the <xref:System.ServiceModel.Description.ServiceCredentials> classes inherit from the abstract <xref:System.ServiceModel.Security.SecurityCredentialsManager> class that defines the contract for returning the <xref:System.IdentityModel.Selectors.SecurityTokenManager>.
-
 The default implementations provided in WCF support the system-provided credential types and create a security token manager that is capable of handling those credentials types.
 
 ## Reasons to Customize
@@ -38,11 +36,11 @@ This topic describes how to implement custom client and service credentials and 
 
 Creating a custom credentials class is only the first step, because the reason for customizing credentials is to change WCF behavior regarding credentials provisioning, security token serialization, or authentication. Other topics in this section describe how to create custom serializers and authenticators. In this regard, creating custom credential class is the first topic in the series. Subsequent actions (creating custom serializers and authenticators) can be done only after creating custom credentials. Additional topics that build upon this topic include:
 
-- [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)
+- [How to: Create a Custom Security Token Provider](how-to-create-a-custom-security-token-provider.md)
 
-- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
+- [How to: Create a Custom Security Token Authenticator](how-to-create-a-custom-security-token-authenticator.md)
 
-- [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md).
+- [How to: Create a Custom Token](how-to-create-a-custom-token.md).
 
 ## Procedures
 
@@ -66,11 +64,11 @@ Creating a custom credentials class is only the first step, because the reason f
 
 1. Define a new class derived from <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>.
 
-2. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenProvider> implementation must be created. For more information about custom security token providers, see [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md).
+2. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenProvider> implementation must be created. For more information about custom security token providers, see [How to: Create a Custom Security Token Provider](how-to-create-a-custom-security-token-provider.md).
 
-3. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator%28System.IdentityModel.Selectors.SecurityTokenRequirement%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%40%29> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> implementation must be created. For more information about custom security token authenticators, see [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md).
+3. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator%28System.IdentityModel.Selectors.SecurityTokenRequirement%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%40%29> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> implementation must be created. For more information about custom security token authenticators, see [How to: Create a Custom Security Token Authenticator](how-to-create-a-custom-security-token-authenticator.md).
 
-4. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenSerializer%2A> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> must be created. For more information about custom security tokens and custom security token serializers, see [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md).
+4. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenSerializer%2A> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> must be created. For more information about custom security tokens and custom security token serializers, see [How to: Create a Custom Token](how-to-create-a-custom-token.md).
 
     [!code-csharp[c_CustomCredentials#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customcredentials/cs/source.cs#2)]
     [!code-vb[c_CustomCredentials#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customcredentials/vb/client/client.vb#2)]
@@ -154,11 +152,11 @@ Once you have the configuration handler class, it can be integrated into the WCF
 
 1. Define a new class derived from the <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager> class.
 
-2. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider%2A> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenProvider> implementation must be created. For more information about custom security token providers, see [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md).
+2. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider%2A> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenProvider> implementation must be created. For more information about custom security token providers, see [How to: Create a Custom Security Token Provider](how-to-create-a-custom-security-token-provider.md).
 
-3. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator%2A> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> implementation must be created. For more information about custom security token authenticators, see [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md) topic.
+3. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator%2A> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> implementation must be created. For more information about custom security token authenticators, see [How to: Create a Custom Security Token Authenticator](how-to-create-a-custom-security-token-authenticator.md) topic.
 
-4. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenSerializer%28System.IdentityModel.Selectors.SecurityTokenVersion%29> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> must be created. For more information about custom security tokens and custom security token serializers, see [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md).
+4. Optional. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenSerializer%28System.IdentityModel.Selectors.SecurityTokenVersion%29> method if a custom <xref:System.IdentityModel.Selectors.SecurityTokenSerializer> must be created. For more information about custom security tokens and custom security token serializers, see [How to: Create a Custom Token](how-to-create-a-custom-token.md).
 
     [!code-csharp[c_CustomCredentials#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customcredentials/cs/source.cs#5)]
     [!code-vb[c_CustomCredentials#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customcredentials/vb/service/service.vb#5)]
@@ -184,6 +182,6 @@ Add support for configuration using the steps described previously in the proced
 - <xref:System.IdentityModel.Selectors.SecurityTokenManager>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>
-- [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)
-- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
-- [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)
+- [How to: Create a Custom Security Token Provider](how-to-create-a-custom-security-token-provider.md)
+- [How to: Create a Custom Security Token Authenticator](how-to-create-a-custom-security-token-authenticator.md)
+- [How to: Create a Custom Token](how-to-create-a-custom-token.md)

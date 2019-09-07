@@ -1,6 +1,6 @@
 ---
-title: Create a WPF application in Visual Studio
-ms.date: 03/20/2019
+title: 'Tutorial: Create your first WPF application in Visual Studio 2019 - .NET Framework'
+ms.date: 09/06/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -8,39 +8,36 @@ helpviewer_keywords:
   - "getting started [WPF], WPF"
   - "WPF [WPF], getting started"
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
+ms.topic: tutorial
+ms.custom: mvc
 author: mairaw
 ms.author: mairaw
 ms.custom: vs-dotnet
 ---
-
-# Walkthrough: My first WPF desktop application
+# Tutorial: Create your first WPF application in Visual Studio 2019
 
 This article shows you how to develop a Windows Presentation Foundation (WPF) desktop application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles. To develop the application, you'll use Visual Studio. 
 
-This walkthrough includes the following steps:
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> - Create a WPF project.
+> - Use XAML to design the appearance of the application's user interface (UI).
+> - Write code to build the application's behavior.
+> - Create an application definition to manage the application.
+> - Add controls and create the layout to compose the application UI.
+> - Create styles for a consistent appearance throughout the application's UI.
+> - Bind the UI to data, both to populate the UI from data and to keep the data and UI synchronized.
 
-- Use XAML to design the appearance of the application's user interface (UI).
-
-- Write code to build the application's behavior.
-
-- Create an application definition to manage the application.
-
-- Add controls and create the layout to compose the application UI.
-
-- Create styles for a consistent appearance throughout the application's UI.
-
-- Bind the UI to data, both to populate the UI from data and to keep the data and UI synchronized.
-
-By the end of the walkthrough, you'll have built a standalone Windows application that allows users to view expense reports for selected people. The application is composed of several WPF pages that are hosted in a browser-style window.
+By the end of the tutorial, you'll have built a standalone Windows application that allows users to view expense reports for selected people. The application is composed of several WPF pages that are hosted in a browser-style window.
 
 > [!TIP]
-> The sample code that is used to build this walkthrough is available for both Visual Basic and C# at [Walkthrough WPF App Sample Code](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/WalkthroughFirstWPFApp).
+> The sample code that is used in this tutorial is available for both Visual Basic and C# at [Tutorial WPF App Sample Code](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/WalkthroughFirstWPFApp).
 >
-> You can toggle the code language of the sample code between C# and Visual Basic by using the **\</>** drop-down on the upper right side of this article.
+> You can toggle the code language of the sample code between C# and Visual Basic by using the language selector on top of this page.
 
 ## Prerequisites
 
-- Visual Studio 2017 or later (this article uses Visual Studio 2019)
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET desktop development** workload installed.
 
    For more information about installing the latest version of Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
@@ -138,7 +135,7 @@ In this section, you'll add two pages and an image to the application.
 
 1. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - Home`".
 
-1. Set the `DesignHeight` and `DesignWidth` element values to 300 pixels.
+1. Set the `DesignHeight` to 350 pixels and the `DesignWidth` to 500 pixels.
 
     The XAML now appears as follows for Visual Basic:
 
@@ -179,7 +176,7 @@ In this section, you'll add two pages and an image to the application.
 
 1. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - View Expense`".
 
-1. Set the `DesignHeight` and `DesignWidth` element values to 300 pixels.
+1. Set the `DesignHeight` to 350 pixels and the `DesignWidth` to 500 pixels. 
 
     *ExpenseReportPage.xaml* now looks like the following in Visual Basic:
 
@@ -205,7 +202,7 @@ In this section, you'll add two pages and an image to the application.
 
     [!code-vb[ExpenseIt#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseReportPage.xaml.vb#5)]
 
-1. Add an image named *watermark.png* to the project. You can create your own image, copy the file from the sample code, or get it [here](https://raw.githubusercontent.com/microsoft/WPF-Samples/master/Getting%20Started/WalkthroughFirstWPFApp/csharp/watermark.png).
+1. Add an image named *watermark.png* to the project. You can create your own image, copy the file from the sample code, or get it from the [microsoft/WPF-Samples](https://raw.githubusercontent.com/microsoft/WPF-Samples/master/Getting%20Started/WalkthroughFirstWPFApp/csharp/watermark.png) GitHub repository.
 
     1. Right-click on the project node and select **Add** > **Existing Item**, or press **Shift**+**Alt**+**A**.
 
@@ -470,11 +467,8 @@ The following illustration shows both pages of the `ExpenseIt` application with 
 > This sample demonstrates a specific feature of WPF and doesn't follow all best practices for things like security, localization, and accessibility. For comprehensive coverage of WPF and the .NET app development best practices, see the following topics:
 >
 > - [Accessibility](../../ui-automation/accessibility-best-practices.md)
->
 > - [Security](../security-wpf.md)
->
 > - [WPF globalization and localization](../advanced/wpf-globalization-and-localization-overview.md)
->
 > - [WPF performance](../advanced/optimizing-wpf-application-performance.md)
 
 ## Next steps

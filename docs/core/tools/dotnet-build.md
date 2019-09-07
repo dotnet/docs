@@ -88,7 +88,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Marks the build as unsafe for incremental build. This flag turns off incremental compilation and forces a clean rebuild of the project's dependency graph.
 
-* **`--no-logo`**
+* **`--nologo`**
 
   Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
 

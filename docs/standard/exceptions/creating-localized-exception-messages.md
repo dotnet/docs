@@ -1,6 +1,6 @@
 ---
-title: How to: create user-defined exceptions with localized exception messages
-description: Learn how to create user-defined exceptions with localized exception messages
+title: "How to: create user-defined exceptions with localized exception messages"
+description: "Learn how to create user-defined exceptions with localized exception messages"
 author: Youssef1313
 ms.author: ronpet
 ms.date: 09/02/2019
@@ -111,7 +111,7 @@ To create the localized exception messages:
 > [!NOTE]
 > If our project name is `TestProject` and our resource file is *ExceptionMessages.resx* and is in a folder named *Resources* in the project, the fully qualified name of the resource file is `TestProject.Resources.ExceptionMessages`.
 
-# See Also
+## See also
 
-[]()
-[]()
+[How to create user-defined exceptions](how-to-create-user-defined-exceptions.md)
+[Creating Satellite Assemblies for Desktop Apps](../../framework/resources/creating-satellite-assemblies-for-desktop-apps.md)

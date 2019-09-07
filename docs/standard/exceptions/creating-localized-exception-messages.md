@@ -5,7 +5,6 @@ author: Youssef1313
 ms.author: ronpet
 ms.date: 09/02/2019
 ---
-
 # How to: create user-defined exceptions with localized exception messages
 
 ## Create custom exceptions
@@ -111,3 +110,8 @@ To create the localized exception messages:
 
 > [!NOTE]
 > If our project name is `TestProject` and our resource file is *ExceptionMessages.resx* and is in a folder named *Resources* in the project, the fully qualified name of the resource file is `TestProject.Resources.ExceptionMessages`.
+
+# See Also
+
+[]()
+[]()

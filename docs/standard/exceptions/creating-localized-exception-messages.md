@@ -5,6 +5,7 @@ author: Youssef1313
 ms.author: ronpet
 ms.date: 09/02/2019
 ---
+
 # How to: create user-defined exceptions with localized exception messages
 
 ## Create custom exceptions

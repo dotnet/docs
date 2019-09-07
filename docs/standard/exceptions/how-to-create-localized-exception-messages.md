@@ -18,10 +18,7 @@ To create custom exceptions, Follow these steps:
 
     ```csharp
     [Serializable]
-    public class StudentNotFoundException : Exception
-    {
-    
-    }
+    public class StudentNotFoundException : Exception { }
     ```
 
 - Add the default constructors:
@@ -30,19 +27,13 @@ To create custom exceptions, Follow these steps:
     [Serializable]
     public class StudentNotFoundException : Exception
     {
-        public StudentNotFoundException()
-        {
-        }
+        public StudentNotFoundException() { }
 
         public StudentNotFoundException(string message)
-            : base(message)
-        {
-        }
+            : base(message) { }
 
         public StudentNotFoundException(string message, Exception inner)
-            : base(message, inner)
-        {
-        }
+            : base(message, inner) { }
     }
     ```
 
@@ -54,19 +45,13 @@ To create custom exceptions, Follow these steps:
     {
         public string StudentName { get; }
 
-        public StudentNotFoundException()
-        {
-        }
+        public StudentNotFoundException() { }
 
         public StudentNotFoundException(string message)
-            : base(message)
-        {
-        }
+            : base(message) { }
 
         public StudentNotFoundException(string message, Exception inner)
-            : base(message, inner)
-        {
-        }
+            : base(message, inner) { }
 	
         public StudentNotFoundException(string message, string studentName)
             : base(message)

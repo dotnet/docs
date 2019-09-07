@@ -57,7 +57,9 @@ Visual Basic / Visual Studio .NET 2002
 The first release of Visual Basic .NET
 
 ## Visual Basic 16.0
+Visual Basic 16.0 focuses on supplying more of the features of the Visual Basic Runtime (microsoft.visualbasic.dll) to .NET Core and is the first version of Visual Basic focused on .NET Core. Many portions of the Visual Basic Runtime depend on WinForms and these will be added in a later version of Visual Basic. 
 
+**Comments allowed in more places within statements**
 In Visual Basic 15.8 and earlier versions, comments are only allowed on blank lines, at the end of a statement, or in specific places within a statement where an implicit line continuation is allowed. Starting with Visual Basic 16.0, comments are also allowed after explicit line continuations and within a statement on a line beginning with a space followed by an underscore.
 
 ```vb

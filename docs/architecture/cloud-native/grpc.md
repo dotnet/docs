@@ -5,69 +5,57 @@ author: robvet
 ms.date: 09/04/2019
 ---
 
-# gRPC
+# REST and gRPC
 
-So far, we’ve focused on REST-based communication for cloud-native systems. While widely popular, REST does present challenges. One of which is the limited number of available HTTP verbs. This can become challenging when designing REST APIs that support multiple insert and update operations. Equally problematic is the fact that REST transmits raw text over the wire.
+So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication for cloud-native applications. REST is widely popular. It's a flexible architectural style for service design. However, a newer communication technology, entitled gRPC, is rapidly gaining popularity.
+
+## REST
+
+REST, which uses HTTP 1.1 as its transport protocol, defines a set of conventions that promote interoperability between distributed computer systems across the web. REST exposes application state as *resources*, which typically represent application entities, such as customers, products, or orders. Clients interact with representations of these resources across HTTP, embracing HTTP URLs, status codes, headers, and verbs. A fully qualified HTTP URL identifies a particular resource while the HTTP verbs perform operations against it. The verbs map to database [CRUD operations that are shown in the following table: 
+
+|  HTTP Verb | Database Operation | Behavior |
+| :--------: | :--------: | :-------- |
+| GET | Select | Retrieve a resource |
+| POST | Insert |  Store a resource |
+| PUT | Update | Update a resource |
+| PATCH | Update | Partially update a resource |
+| DELETE | Delete | Remove a resource  |
+
+While simple and widely used, REST does present challenges. One is the limited number of available HTTP verbs. This can become challenging when designing microservices that support multiple insert and update operations. Equally problematic is the fact that REST transmits raw text over the wire. 
+
+## gRPC
+
+gRPC, which stands for “Google Remote Procedure Call," is built upon the time-enduring [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) model, popular in distributed computing. A local client program exposes what appears to be an in-process method to complete an operation. Under-the-hood, an out-of-process network call is made to a microservice to execute the actual code. To the developer, it appears the method is executed on the client. The RPC platform abstracts the point-to-point networking communication, serialization, and execution.
+
+gRPC is a binary message-based protocol. At the lowest level, it uses HTTP/2 for its transport protocol. Unlike HTTP 1.1, which requires each message to be returned in full in the order requested, HTTP/2 features multiplexing capabilities. It can support many parallel requests over the same connection. It also supports bidirectional communication where both client and server and can communicate at the same time. The client can be uploading request data at the same time the server is sending back response data. Streaming is built into HTTP/2 meaning that both requests and responses can send huge amounts of information. support streaming. gRPC is open source and supported across most popular platforms, including Java, C#, Golang and NodeJS. 
+
+## Protocol Buffers
+
+gRPC embraces an open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) to define and serialize structured data communicated across services. Protocol Buffers can also be used to generate client stubs that can invoke the services. RESTFul messages must be serialized and deserialized on both the client and server side. With gRPC, each message is wrapped in a strongly-typed service contract and serialized in a standard Protobuf representation.
+
+## gRPC support in .NET
 
 
-REST provides a set of common standards that operate on top of HTTP to help deliver global interoperability between computer systems on the web.  
+## Usage
 
-EST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.
-
-gRPC, which stands for “Google Remote Procedure Call,” is a binary message-based protocol. It is open source and supported across most popular platforms, including Java, C#, Golang and NodeJS. 
-
-It excels at providing high performance and ease of use, to greatly simplify the construction of all types of distributed systems.
-
-Built on the age-old model of RPC or Remote Procedure Calls, where a client exposes a method that invokes a call to a server and where the method is actually executed. To the developer, it appears as if the method is executed on the client, when in actuality, plumbing is provided that makes a calls to a back-end server. The point-to-point communication, serialization, and exection is handled by the underlying framework.
-
-## Communication considerations
-
-REST message typically are expressed in JSON. While easy to read and write, it is text-based. gRPC works with Protobuf messages which are strongly typed and serailized in a binary format. gRPC is built upon HTTP/2. HTTP/2 protocol is binary. It uses multiplexed streams which means that multiple requests can be sent at the same time without the need to establish TCP connections for each. gRPC lets *stream* information both from the client, server, and bidirectionally. 
-
-RESTFul messages must be serialized and deserialized on both the client and server side. With gRPC, each message is wrapped in a strongly-typed service contract and serialized in a standard Protobuf representation.
-
-At the time of the writing of this book, most browsers have limited support for gRPC. Instead, gRPC is typically used for internal microservice to microservice communication. Figure x.x shows usage.
+At the time, of the writing of this book, most browsers have limited support for gRPC. Instead, gRPC is typically used for internal microservice to microservice communication. Figure x.x shows usage.
 
 [Place figure here that shows external calls with HTTP and internal calls with gRPC]
 
-## Protocl Buffers
+In the world of cloud-native applications, gRPC could well play a major role. The performance benefits and ease of development are too good to pass up. However, make no mistake, REST will still be around for a long time. It still excels for publicly exposed APIs and for backward compatibility reasons. 
 
-Using gRPC we define our service once in a .proto file and implement clients and servers in any of gRPC’s supported languages. The complexity of communication between different languages and environments is handled for you by gRPC. We also get all the advantages of working with protocol buffers, including efficient serialization, a simple IDL, and easy interface updating.
+
+
+
+## OLD
+
+gRPC works with Protobuf messages that are strongly typed and serialized in a binary format. gRPC is built upon HTTP/2. HTTP/2 protocol is binary. It uses multiplexed streams that means that multiple requests can be sent at the same time without the need to establish TCP connections for each. gRPC lets *stream* information both from the client, server, and bidirectionally. 
 
 Protocol buffers are a flexible, efficient, automated mechanism for serializing structured data – think XML, but smaller, faster, and simpler. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages. You can even update your data structure without breaking deployed programs that are compiled against the "old" format.
 
-
-	Protocol buffers have many advantages over XML for serializing structured data. Protocol buffers:
-		○ are simpler
-		○ are 3 to 10 times smaller
-		○ are 20 to 100 times faster
-		○ are less ambiguous
-		○ generate data access classes that are easier to use programmatically
-	For example, let's say you want to model a person with a name and an email. In XML, you need to do:
-	
-	<person>
-    <name>John Doe</name>
-    <email>jdoe@example.com</email>
-  </person>
-	while the corresponding protocol buffer message (in protocol buffer text format) is:
-	
-	# Textual representation of a protocol buffer.
-# This is *not* the binary format used on the wire.
-person {
-  name: "John Doe"
-  email: "jdoe@example.com"
-}
-	When this message is encoded to the protocol buffer binary format (the text format above is just a convenient human-readable representation for debugging and editing), it would probably be 28 bytes long and take around 100-200 nanoseconds to parse. The XML version is at least 69 bytes if you remove whitespace, and would take around 5,000-10,000 nanoseconds to parse.
-	Also, manipulating a protocol buffer is much easier:
-	  cout << "Name: " << person.name() << endl;
-	  cout << "E-mail: " << person.email() << endl;
+It excels at providing high performance and ease of use, to greatly simplify the construction of all types of distributed systems.
 
 
-
-
-
-
-In the world of cloud-native applications, gRPC could very well play a major role . The performance benefits and ease of development are just too good to pass up. However, make no mistake, REST will still be around for a long time. It still excels for publicly exposed APIs and for backward compatibility reasons. 
 
 
 

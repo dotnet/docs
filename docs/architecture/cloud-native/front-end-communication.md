@@ -154,7 +154,9 @@ The new consumption tier is a great choice for cloud-native systems that expose 
 
 ## Real-time communication
 
-Real-time, or push, communication is another option for clients that communicate with cloud-native systems. Applications, such as stock-tickers, dashboards, and job progress updates, require two-way communication across HTTP connections. These systems are characterized by high-frequency data flows and large numbers of concurrent client connections. Manually implementing real-time connectivity can quickly become complex and expensive. 
+Real-time, or push, communication is another option for front-end applications that communicate with back-end cloud-native systems over HTTP. Applications, such as financial-tickers, online games, online education, and job-progress updates, require instantaneous, real-time responses from the back-end. With normal HTTP communication, there's no way for the client to know when new data is available. The client must continually *poll* or send requests to the server. With *real-time* communication, the server can push new data at any time to the front-end application. 
+
+Real-time systems are often characterized by high-frequency data flows and large numbers of concurrent client connections. Manually implementing real-time connectivity and scaling it across thousands of clients can become complex and expensive. 
 
 [Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/) is a fully managed Azure service that simplifies real-time communication for your cloud-native applications. Technical implementation details like capacity provisioning, scaling, and persistent connections are abstracted away. They're handled for you with a 99.9% service-level agreement. You focus on application features, not infrastructure plumbing. 
 
@@ -168,7 +170,7 @@ Figure 4-7 shows a set of HTTP Clients connecting to a Cloud-native application 
 
 Another advantage of Azure SignalR Service comes with implementing Serverless cloud-native services. Perhaps your code is executed on demand with Azure Functions triggers. This scenario can be tricky because your code doesn't maintain long connections with clients. Azure SignalR Service can handle this situation since the service already manages connections for you.
 
-Azure SignalR Service can be integrated with other Azure services opening up many possibilities for your cloud-native applications.
+Azure SignalR Service closely integrates with other Azure services, such as Azure SQL Database, Service Bus, or Redis Cache, opening up many possibilities for your cloud-native applications.
 
 >[!div class="step-by-step"]
 >[Previous](communication-patterns.md)

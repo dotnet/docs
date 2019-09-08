@@ -7,7 +7,7 @@ ms.date: 09/04/2019
 
 # REST and gRPC
 
-So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication for cloud-native applications. REST is widely popular. It's a flexible architectural style for service design. However, a newer communication technology, entitled gRPC, is rapidly gaining popularity.
+So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication. It's flexible architectural style for service design has been the defacto standard for cloud-native applications. A newer communication technology, entitled gRPC, however, is rapidly gaining popularity and making its way into the cloud-native world.
 
 ## REST
 

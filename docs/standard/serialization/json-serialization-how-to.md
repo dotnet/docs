@@ -143,7 +143,7 @@ Example JSON input:
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "temperatureC": 25,
   "Summary": "Hot",
   "DatesAvailable": [
     "2019-08-01T00:00:00-07:00",

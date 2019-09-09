@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<UseRandomizedStringHashAlgorithm> Element
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  
   
- \<configuration>  
-\<runtime>  
-\<UseRandomizedStringHashAlgorithm>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<UseRandomizedStringHashAlgorithm>**  
   
 ## Syntax  
   

@@ -11,7 +11,7 @@ ms.assetid: 41ade767-eeab-437d-9121-9797e8fb8045
 This is the final task of the WCF Data Services quickstart. In this task, you will add a console application to the solution, add a reference to the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed into this new client application, and access the OData feed from the client application by using the generated client data service classes and client libraries.
 
 > [!NOTE]
-> A .NET Framework-based client application is not required to access a data feed. The data service can be accessed by any application component that consumes an OData feed. For more information, see [Using a Data Service in a Client Application](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md).
+> A .NET Framework-based client application is not required to access a data feed. The data service can be accessed by any application component that consumes an OData feed. For more information, see [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md).
 
 ## To create the client application by using Visual Studio
 
@@ -78,9 +78,9 @@ This is the final task of the WCF Data Services quickstart. In this task, you wi
 
 You have successfully created the client application that accesses the sample Northwind OData feed. You've also completed the WCF Data Services quickstart!
 
-For more information about accessing an OData feed from a .NET Framework application, see [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md).
+For more information about accessing an OData feed from a .NET Framework application, see [WCF Data Services Client Library](wcf-data-services-client-library.md).
 
 ## See also
 
-- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
-- [Resources](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)
+- [Getting Started](getting-started-with-wcf-data-services.md)
+- [Resources](wcf-data-services-resources.md)

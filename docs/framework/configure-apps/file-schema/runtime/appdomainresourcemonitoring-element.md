@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<appDomainResourceMonitoring> Element
 Instructs the runtime to collect statistics on all application domains in the process for the life of the process.  
   
- \<configuration>  
-\<runtime>  
-\<appDomainResourceMonitoring>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainResourceMonitoring>**  
   
 ## Syntax  
   

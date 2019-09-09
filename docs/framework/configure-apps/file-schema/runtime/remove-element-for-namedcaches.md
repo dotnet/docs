@@ -9,10 +9,11 @@ ms.assetid: 24211ea5-163e-4fe5-aed8-004d8499760c
 # \<remove> Element for \<namedCaches>
 Removes a named cache entry from the `namedCaches` collection for a memory cache.  
   
- \<system.runtime.caching>  
-\<memoryCache>  
-\<namedCaches>  
-\<remove>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.caching>**](system-runtime-caching-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<memoryCache>**](memorycache-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<namedCaches>**](namedcaches-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
 ## Syntax  
   

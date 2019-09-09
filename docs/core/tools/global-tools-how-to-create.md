@@ -169,7 +169,7 @@ The `--add-source` parameter tells the .NET Core CLI to temporarily use the `./n
 
 If installation is successful, a message is displayed showing the command used to call the tool and the version installed, similar to the following example:
 
-```
+```output
 You can invoke the tool using the following command: botsay
 Tool 'botsay' (version '1.0.0') was successfully installed.
 ```

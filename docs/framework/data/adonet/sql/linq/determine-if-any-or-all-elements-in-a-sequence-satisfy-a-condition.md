@@ -29,4 +29,4 @@ The <xref:System.Linq.Enumerable.All%2A> operator returns `true` if all elements
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Query Examples](query-examples.md)

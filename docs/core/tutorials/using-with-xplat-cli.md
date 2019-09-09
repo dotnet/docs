@@ -15,7 +15,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Prerequisites
 
-- [.NET Core SDK 2.1](https://www.microsoft.com/net/download/core).
+- [.NET Core SDK 2.1](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Hello, Console App!
@@ -41,8 +41,8 @@ Let's do a quick walkthrough:
 
    The project file specifies everything that's needed to restore dependencies and build the program.
 
-   * The `OutputType` tag specifies that we're building an executable, in other words a console application.
-   * The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 2.1.
+   - The `OutputType` tag specifies that we're building an executable, in other words a console application.
+   - The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 2.1.
 
    `Program.cs`:
 

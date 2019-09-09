@@ -121,11 +121,11 @@ using (SqlConnection connection = new SqlConnection(
  After a SQL Server application role has been activated by calling the `sp_setapprole` system stored procedure, the security context of that connection cannot be reset. However, if pooling is enabled, the connection is returned to the pool, and an error occurs when the pooled connection is reused. For more information, see the Knowledge Base article, "[SQL application role errors with OLE DB resource pooling](https://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
   
 ### Application Role Alternatives  
- We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md).  
+ We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](./sql/creating-application-roles-in-sql-server.md).  
   
 ## See also
 
-- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)
-- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
-- [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Connection Pooling](connection-pooling.md)
+- [SQL Server and ADO.NET](./sql/index.md)
+- [Performance Counters](performance-counters.md)
+- [ADO.NET Overview](ado-net-overview.md)

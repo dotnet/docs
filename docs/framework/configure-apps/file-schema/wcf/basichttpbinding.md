@@ -8,9 +8,10 @@ ms.assetid: 85cf1a4f-26c2-48c7-bda6-6c960d5d3fb3
 # \<basicHttpBinding>
 Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate with ASMX-based Web services and clients and other services that conform to the WS-I Basic Profile 1.1.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<basicHttpBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<basicHttpBinding>**  
   
 ## Syntax  
   

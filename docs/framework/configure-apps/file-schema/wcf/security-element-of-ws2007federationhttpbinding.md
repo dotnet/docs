@@ -6,11 +6,12 @@ ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
 # \<security> element of \<ws2007FederationHttpBinding>
 Defines the security settings of the [\<ws2007FederationHttpBinding>](ws2007federationhttpbinding.md) element.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<ws2007FederationHttpBinding>  
-\<binding>  
-\<security>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<ws2007FederationHttpBinding>**](ws2007federationhttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
 ## Syntax  
   

@@ -17,11 +17,11 @@ In each of the cases, the developer is burdened with implementing communication 
 
 A more modern approach to microservice communication centers around a new and rapidly evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication, resiliency, and many cross-cutting concerns. It decouples these concerns, moves them out of your application code and into the service mesh technology. Communication is abstracted away from your microservices.
 
-A key component of a service mesh is a proxy. In a cloud-native application, an instance of a proxy is typically colocated with each microservice. While they execute in separate processes, the two are closely linked and share the same lifecycle. This pattern, known as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), and is shown in Figure 4-22.
+A key component of a service mesh is a proxy. In a cloud-native application, an instance of a proxy is typically colocated with each microservice. While they execute in separate processes, the two are closely linked and share the same lifecycle. This pattern, known as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), and is shown in Figure 4-23.
 
 ![Service mesh with a side car](media/service-mesh-with-side-car.png)
 
-**Figure 4-22**. Service mesh with a side car
+**Figure 4-23**. Service mesh with a side car
 
 Note in the previous figure how messages are intercepted by a proxy that runs alongside each microservice. Each proxy can be configured with traffic rules specific to the microservice. It understands messages and can route them across your services and the outside world.
 

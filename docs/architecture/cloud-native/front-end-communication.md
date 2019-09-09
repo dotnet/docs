@@ -90,6 +90,7 @@ Kuberentes includes a built-in feature that supports HTTP (Level 7) load balanci
 For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a full-featured developer and administrative experience. API Management is shown in Figure 4-6. 
 
 ![Azure API Management](./media/azure-api-management.png)
+
 **Figure 4-6.** Azure API Management
 
 To start, API Management exposes a gateway server that allows controlled access to back-end services based upon configurable rules and policies. These services can be in the Azure cloud, your on-prem data center, or other public clouds. API keys and JWT tokens determine who can do what. All traffic is logged for analytical purposes. 

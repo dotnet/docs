@@ -31,19 +31,19 @@ Many object serialization techniques reflect across the structure of data object
 
 ## gRPC support in .NET
 
-The Microsoft .NET Core framework 3.0 includes tooling and native support for gRPC. Figure x.x shows the Visual Studio 2019 template that scaffolds a gRPC skeleton project for a gRPC service. Note how .NET Core supports the Windows, Linux, macOS platforms.
+The Microsoft .NET Core framework 3.0 includes tooling and native support for gRPC. Figure 4.20 shows the Visual Studio 2019 template that scaffolds a gRPC skeleton project for a gRPC service. Note how .NET Core supports the Windows, Linux, macOS platforms.
 
 ![gRPC Support in Visual Studio 2019](./media/visual-studio-2019-grpc-template.png)
 
-**Figure 4-19**. gRPC support in Visual Studio 2019
+**Figure 4-20**. gRPC support in Visual Studio 2019
 
 .NET Core 3.0 seamlessly integrates gRPC into its framework, including endpoint routing, built-in IoC support, and logging. The open-source Kestrel web server fully supports HTTP/2 connections. 
 
-Figure 4.20 shows structure of a gRPC service in Visual Studio 2019. Note how the folder structure includes folders for the proto files and service code.
+Figure 4.21 shows structure of a gRPC service in Visual Studio 2019. Note how the folder structure includes folders for the proto files and service code.
 
 ![gRPC project in Visual Studio 2019](./media/grpc-project.png  )
 
-**Figure 4-20**. gRPC project in Visual Studio 2019
+**Figure 4-21**. gRPC project in Visual Studio 2019
 
 ## gPRC Usage
 
@@ -54,11 +54,11 @@ gRPC is well suited for the following scenarios:
 - Polyglot environments – gRPC tooling supports most popular development languages, making it a good choice for multi-language environments.
 - Network constrained environments – gRPC messages are serialized with Protobuf, a lightweight message format. A gRPC message is always smaller than an equivalent JSON message.
 
-At of the writing of this book, most browsers have limited support for gRPC. gRPC heavily uses HTTP/2 features and no browser provides the level of control required over web requests to support a gRPC client. gRPC is typically used for internal microservice to microservice communication. Figure 4.21 shows a simple, but common usage pattern.
+At of the writing of this book, most browsers have limited support for gRPC. gRPC heavily uses HTTP/2 features and no browser provides the level of control required over web requests to support a gRPC client. gRPC is typically used for internal microservice to microservice communication. Figure 4.22 shows a simple, but common usage pattern.
 
-![gRPC Usage Patterns](./media/grpc-usage.png  )
+![gRPC Usage Patterns](./media/grpc-usage.png)
 
-**Figure 4-21**. gRPC usage patterns
+**Figure 4-22**. gRPC usage patterns
 
 Note in the previous figure how front-end traffic is invoked with HTTP while back-end microservice to microservice uses gRPC.
 

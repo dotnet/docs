@@ -280,7 +280,7 @@ The .NET Framework installer writes registry keys when installation is successfu
 
 You can test whether a specific language pack is installed by checking the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\\*LCID* folder in the registry for a DWORD value named `Release`. (Note that "NET Framework Setup" doesn't begin with a period.) *LCID* specifies a locale identifier; see [supported languages](#supported-languages) for a list of these.
 
-For example, to detect whether the full Japanese language pack (LCID=1041) is installed, check for the following values in the registry:
+For example, to detect whether the full Japanese language pack (LCID=1041) is installed, retrieve the following named value from the registry:
 
 | | |
 |-|-|

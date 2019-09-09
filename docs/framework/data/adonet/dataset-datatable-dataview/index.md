@@ -75,4 +75,4 @@ The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of da
 ## See also
 
 - [ADO.NET](../index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

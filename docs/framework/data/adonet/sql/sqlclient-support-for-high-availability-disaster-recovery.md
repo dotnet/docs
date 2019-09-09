@@ -92,5 +92,5 @@ This topic discusses SqlClient support (added in .NET Framework 4.5) for high-av
   
 ## See also
 
-- [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [SQL Server Features and ADO.NET](sql-server-features-and-adonet.md)
+- [ADO.NET Overview](../ado-net-overview.md)

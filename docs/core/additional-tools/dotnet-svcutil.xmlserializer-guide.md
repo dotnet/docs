@@ -10,7 +10,7 @@ The `dotnet-svcutil.xmlserializer` NuGet package can pre-generate a serializatio
 
 ## Prerequisites
 
-* [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) or later
+* [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later
 * Your favorite code editor
 
 You can use the command `dotnet --info` to check which versions of .NET Core SDK and runtime you already have installed.

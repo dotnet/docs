@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb
 ---
 # How to: Retrieve Metadata Over a non-MEX Binding
-This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX binding. The code in this sample is based on the [Custom Secure Metadata Endpoint](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md) sample.  
+This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX binding. The code in this sample is based on the [Custom Secure Metadata Endpoint](../samples/custom-secure-metadata-endpoint.md) sample.  
   
 ### To retrieve metadata over a non-MEX binding  
   
@@ -115,8 +115,8 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
     ServiceEndpointCollection endpoints = importer.ImportAllEndpoints();  
     ```  
   
-5. At this point, you have a collection of service endpoints. For more information about importing metadata, see [How to: Import Metadata into Service Endpoints](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md).  
+5. At this point, you have a collection of service endpoints. For more information about importing metadata, see [How to: Import Metadata into Service Endpoints](../feature-details/how-to-import-metadata-into-service-endpoints.md).  
   
 ## See also
 
-- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
+- [Metadata](../feature-details/metadata.md)

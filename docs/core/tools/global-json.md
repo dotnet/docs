@@ -45,13 +45,13 @@ The following example shows the contents of a *global.json* file:
 
 ## global.json and the .NET Core CLI
 
-It's helpful to know which versions are available in order to set one in the *global.json* file. You can find the full list of supported available SDKs at the [.NET Downloads](https://www.microsoft.com/net/download/all) site. Starting with .NET Core 2.1 SDK, you can run the following command to verify which SDK versions are already installed on your machine:
+It's helpful to know which versions are available in order to set one in the *global.json* file. You can find the full list of supported available SDKs at the [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core) page. Starting with .NET Core 2.1 SDK, you can run the following command to verify which SDK versions are already installed on your machine:
 
 ```console
 dotnet --list-sdks
 ```
 
-To install additional .NET Core SDK versions on your machine, visit the [.NET Downloads](https://www.microsoft.com/net/download/all) site.
+To install additional .NET Core SDK versions on your machine, visit the [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core) page.
 
 You can create a new the *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
 

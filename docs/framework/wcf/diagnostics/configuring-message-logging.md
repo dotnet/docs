@@ -41,7 +41,7 @@ The following example shows how to enable logging and specify additional options
 </system.serviceModel>
 ```
 
-For more information about message logging settings, see [Recommended Settings for Tracing and Message Logging](../../../../docs/framework/wcf/diagnostics/tracing/recommended-settings-for-tracing-and-message-logging.md).
+For more information about message logging settings, see [Recommended Settings for Tracing and Message Logging](./tracing/recommended-settings-for-tracing-and-message-logging.md).
 
 You can use `add` to specify the name and type of the listener you want to use. In the example configuration, the Listener is named "messages" and adds the standard .NET Framework trace listener (`System.Diagnostics.XmlWriterTraceListener`) as the type to use. If you use `System.Diagnostics.XmlWriterTraceListener`, you must specify the output file location and name in the configuration file. This is done by setting `initializeData` to the name of the log file. Otherwise, the system throws an exception. You can also implement a custom listener that emits logs to a default file.
 
@@ -56,7 +56,7 @@ The `switchValue` attribute of a `source` is only valid for tracing. If you spec
 <source name="System.ServiceModel.MessageLogging" switchValue="Verbose">
 ```
 
-If you want to disable the trace source, you should use the `logMessagesAtServiceLevel`, `logMalformedMessages`, and `logMessagesAtTransportLevel` attributes of the `messageLogging` element instead. You should set all these attributes to `false`. This can be done by using the configuration file in the previous code example, through the Configuration Editor UI interface, or using WMI. For more information about the Configuration Editor tool, see [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md). For more information about WMI, see [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md).
+If you want to disable the trace source, you should use the `logMessagesAtServiceLevel`, `logMalformedMessages`, and `logMessagesAtTransportLevel` attributes of the `messageLogging` element instead. You should set all these attributes to `false`. This can be done by using the configuration file in the previous code example, through the Configuration Editor UI interface, or using WMI. For more information about the Configuration Editor tool, see [Configuration Editor Tool (SvcConfigEditor.exe)](../configuration-editor-tool-svcconfigeditor-exe.md). For more information about WMI, see [Using Windows Management Instrumentation for Diagnostics](./wmi/index.md).
 
 ## Logging Levels and Options
 
@@ -95,7 +95,7 @@ In addition to the logging levels, the user can specify the following options:
 
 If no trace listener is defined in the configuration file, no logging output is generated regardless of the specified logging level.
 
-Message logging options, such as the attributes described in this section, can be changed at runtime using Windows Management Instrumentation (WMI). This can be done by accessing the [AppDomainInfo](../../../../docs/framework/wcf/diagnostics/wmi/appdomaininfo.md) instance, which exposes these Boolean properties: `LogMessagesAtServiceLevel`, `LogMessagesAtTransportLevel`, and `LogMalformedMessages`. Therefore, if you configure a trace listener for message logging, but set these options to `false` in configuration, you can later change them to `true` when the application is running. This effectively enables message logging at runtime. Similarly, if you enable message logging in your configuration file, you can disable it at runtime using WMI. For more information, see [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md).
+Message logging options, such as the attributes described in this section, can be changed at runtime using Windows Management Instrumentation (WMI). This can be done by accessing the [AppDomainInfo](./wmi/appdomaininfo.md) instance, which exposes these Boolean properties: `LogMessagesAtServiceLevel`, `LogMessagesAtTransportLevel`, and `LogMalformedMessages`. Therefore, if you configure a trace listener for message logging, but set these options to `false` in configuration, you can later change them to `true` when the application is running. This effectively enables message logging at runtime. Similarly, if you enable message logging in your configuration file, you can disable it at runtime using WMI. For more information, see [Using Windows Management Instrumentation for Diagnostics](./wmi/index.md).
 
 The `source` field in a message log specifies in which context the message is logged: when sending/receiving a request message, for a request-reply or 1-way request, at service model or transport layer, or in the case of a malformed message.
 
@@ -168,6 +168,6 @@ You should be aware that the `type` attribute should be set to a qualified assem
 
 ## See also
 
-- [\<messageLogging>](../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)
-- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)
-- [Recommended Settings for Tracing and Message Logging](../../../../docs/framework/wcf/diagnostics/tracing/recommended-settings-for-tracing-and-message-logging.md)
+- [\<messageLogging>](../../configure-apps/file-schema/wcf/messagelogging.md)
+- [Message Logging](message-logging.md)
+- [Recommended Settings for Tracing and Message Logging](./tracing/recommended-settings-for-tracing-and-message-logging.md)

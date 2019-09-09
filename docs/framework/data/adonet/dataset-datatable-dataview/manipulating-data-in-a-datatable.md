@@ -35,4 +35,4 @@ After creating a <xref:System.Data.DataTable> in a <xref:System.Data.DataSet>, y
 
 - [DataTables](datatables.md)
 - [Handling DataTable Events](handling-datatable-events.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

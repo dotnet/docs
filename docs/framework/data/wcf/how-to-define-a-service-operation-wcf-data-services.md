@@ -11,9 +11,9 @@ ms.assetid: dfcd3cb1-2f07-4d0b-b16a-6b056c4f45fa
 ---
 # How to: Define a Service Operation (WCF Data Services)
 
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] expose methods that are defined on the server as service operations. Service operations allow a data service to provide access through a URI to a method that is defined on the server. To define a service operation, apply the [`WebGet]` or `[WebInvoke]` attribute to the method. To support query operators, the service operation must return an <xref:System.Linq.IQueryable%601> instance. Service operations may access the underlying data source through the <xref:System.Data.Services.DataService%601.CurrentDataSource%2A> property on the <xref:System.Data.Services.DataService%601>. For more information, see [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md).
+[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] expose methods that are defined on the server as service operations. Service operations allow a data service to provide access through a URI to a method that is defined on the server. To define a service operation, apply the [`WebGet]` or `[WebInvoke]` attribute to the method. To support query operators, the service operation must return an <xref:System.Linq.IQueryable%601> instance. Service operations may access the underlying data source through the <xref:System.Data.Services.DataService%601.CurrentDataSource%2A> property on the <xref:System.Data.Services.DataService%601>. For more information, see [Service Operations](service-operations-wcf-data-services.md).
 
-The example in this topic defines a service operation named `GetOrdersByCity` that returns a filtered <xref:System.Linq.IQueryable%601> instance of `Orders` and related `Order_Details` objects. The example accesses the <xref:System.Data.Objects.ObjectContext> instance that is the data source for the Northwind sample data service. This service is created when you complete the [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md).
+The example in this topic defines a service operation named `GetOrdersByCity` that returns a filtered <xref:System.Linq.IQueryable%601> instance of `Orders` and related `Order_Details` objects. The example accesses the <xref:System.Data.Objects.ObjectContext> instance that is the data source for the Northwind sample data service. This service is created when you complete the [WCF Data Services quickstart](quickstart-wcf-data-services.md).
 
 ### To define a service operation in the Northwind data service
 
@@ -51,4 +51,4 @@ The following example implements a service operation named `GetOrderByCity` on t
 
 ## See also
 
-- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [Defining WCF Data Services](defining-wcf-data-services.md)

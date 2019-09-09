@@ -34,4 +34,4 @@ FROM [Customers] AS [t0]
   
 ## See also
 
-- [User-Defined Functions](../../../../../../docs/framework/data/adonet/sql/linq/user-defined-functions.md)
+- [User-Defined Functions](user-defined-functions.md)

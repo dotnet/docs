@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
 ---
 # How to: Configure a Custom WS-Metadata Exchange Binding
-This topic will explain how to configure a custom WS-Metadata exchange binding. Windows Communication Foundation (WCF) includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This topic will show you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
+This topic will explain how to configure a custom WS-Metadata exchange binding. Windows Communication Foundation (WCF) includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This topic will show you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../samples/getting-started-sample.md).  
   
 ### Using a configuration file  
   
@@ -109,8 +109,8 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 ## See also
 
-- [Metadata Publishing Behavior](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)
-- [Retrieve Metadata](../../../../docs/framework/wcf/samples/retrieve-metadata.md)
-- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
-- [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)
-- [Publishing Metadata Endpoints](../../../../docs/framework/wcf/publishing-metadata-endpoints.md)
+- [Metadata Publishing Behavior](../samples/metadata-publishing-behavior.md)
+- [Retrieve Metadata](../samples/retrieve-metadata.md)
+- [Metadata](../feature-details/metadata.md)
+- [Publishing Metadata](../feature-details/publishing-metadata.md)
+- [Publishing Metadata Endpoints](../publishing-metadata-endpoints.md)

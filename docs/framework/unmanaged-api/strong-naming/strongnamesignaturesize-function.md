@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # StrongNameSignatureSize Function
 Returns the size of the strong name signature. `StrongNameSignatureSize` is typically used by compilers to determine how much space to reserve in the file when creating a delay-signed assembly.  
   
- This function has been deprecated. Use the [ICLRStrongName::StrongNameSignatureSize](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturesize-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::StrongNameSignatureSize](../hosting/iclrstrongname-strongnamesignaturesize-method.md) method instead.  
   
 ## Syntax  
   
@@ -34,7 +34,7 @@ BOOLEAN StrongNameSignatureSize (
   
 ## Parameters  
  `pbPublicKeyBlob`  
- [in] A structure of type [PublicKeyBlob](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md) that contains the public portion of the key pair used to generate the strong name signature.  
+ [in] A structure of type [PublicKeyBlob](publickeyblob-structure.md) that contains the public portion of the key pair used to generate the strong name signature.  
   
  `cbPublicKeyBlob`  
  [in] The size, in bytes, of `pbPublicKeyBlob`.  
@@ -46,10 +46,10 @@ BOOLEAN StrongNameSignatureSize (
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
- If the `StrongNameSignatureSize` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.  
+ If the `StrongNameSignatureSize` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -59,5 +59,5 @@ BOOLEAN StrongNameSignatureSize (
   
 ## See also
 
-- [StrongNameSignatureSize Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturesize-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [StrongNameSignatureSize Method](../hosting/iclrstrongname-strongnamesignaturesize-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

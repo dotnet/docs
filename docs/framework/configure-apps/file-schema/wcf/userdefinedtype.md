@@ -6,10 +6,12 @@ ms.assetid: 0f70ec06-8249-4f0c-9f49-b4df59985fb8
 # \<userDefinedType>
 Represents a User Defined Type (UDT) that is to be included in the service contract.  
   
- \<system.ServiceModel>  
-\<comContracts>  
-\<comContract>  
-\<userDefinedTypes>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<comContracts>**](comcontracts.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<comContract>**](comcontract.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<userDefinedTypes>**](userdefinedtypes.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<userDefinedType>**  
   
 ## Syntax  
   

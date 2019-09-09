@@ -9,7 +9,7 @@ ms.assetid: d70b502f-6a15-4120-b4fe-500b173ad9cc
 # Expressions in LINQ to Entities Queries
 An expression is a fragment of code that can be evaluated to a single value, object, method, or namespace. Expressions can contain a literal value, a method call, an operator and its operands, or a simple name. Simple names can be the name of a variable, type member, method parameter, namespace or type. Expressions can use operators that in turn use other expressions as parameters, or method calls whose parameters are in turn other method calls. Therefore, expressions can range from simple to very complex.  
   
- In LINQ to Entities queries, expressions can contain anything allowed by the types within the <xref:System.Linq.Expressions> namespace, including lambda expressions. The expressions that can be used in LINQ to Entities queries are a superset of the expressions that can be used to query the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)].  Expressions that are part of queries against the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] are limited to operations supported by `ObjectQuery<T>` and the underlying data source.  
+ In LINQ to Entities queries, expressions can contain anything allowed by the types within the <xref:System.Linq.Expressions> namespace, including lambda expressions. The expressions that can be used in LINQ to Entities queries are a superset of the expressions that can be used to query the Entity Framework.Expressions that are part of queries against the Entity Framework are limited to operations supported by `ObjectQuery<T>` and the underlying data source.  
   
  In the following example, the comparison in the `Where` clause is an expression:  
   

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 20dfae4d-e95a-4264-9540-f5ad23b462d3
 ---
 # How to: Make Model and Mapping Files Embedded Resources
-The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you to deploy model and mapping files as embedded resources of an application. The assembly with the embedded model and mapping files must be loaded in the same application domain as the entity connection. For more information, see [Connection Strings](connection-strings.md). By default, the Entity Data Model tools embed the model and mapping files. When you manually define the model and mapping files, use this procedure to ensure that the files are deployed as embedded resources together with an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
+The Entity Framework enables you to deploy model and mapping files as embedded resources of an application. The assembly with the embedded model and mapping files must be loaded in the same application domain as the entity connection. For more information, see [Connection Strings](connection-strings.md). By default, the Entity Data Model tools embed the model and mapping files. When you manually define the model and mapping files, use this procedure to ensure that the files are deployed as embedded resources together with an Entity Framework application.  
   
 > [!NOTE]
 > To maintain embedded resources, you must repeat this procedure whenever the model and mapping files are modified.  

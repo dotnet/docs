@@ -88,7 +88,7 @@ In chapter 1, we talked about *backing services*. Backing services are ancillary
 
 Azure storage queues offer a simple queueing infrastructure that is fast, affordable, and backed by Azure storage accounts.
 
-Azure Storage Queues feature a REST-based queuing mechanism with reliable and persistent messaging. They provide a minimal feature set, but are inexpensive and store millions of messages. Their capacity ranges up to 500 TB. A single message can be up to 64 KB in size.
+[Azure Storage Queues](https://docs.microsoft.com/azure/storage/queues/storage-queues-introduction) feature a REST-based queuing mechanism with reliable and persistent messaging. They provide a minimal feature set, but are inexpensive and store millions of messages. Their capacity ranges up to 500 TB. A single message can be up to 64 KB in size.
 
 You can access messages from anywhere in the world via authenticated calls using HTTP or HTTPS. Storage queues can scale out to large numbers of concurrent clients to handle traffic spikes.
 
@@ -170,7 +170,7 @@ Service Bus topics are a robust and proven technology for enabling publish/suscr
 
 ### Azure Event Grid
 
-While Azure Service Bus is a battle-tested messaging broker with a full set of enterprise features, Azure Event Grid is the new kid on the block.
+While Azure Service Bus is a battle-tested messaging broker with a full set of enterprise features, [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview) is the new kid on the block.
 
 At first glance, Event Grid may look like just another topic-based messaging system. However, it's different in many ways. Focused on event-driven workloads, it enables real-time event processing, deep Azure integration, and an open-platform - all on serverless infrastructure. It's designed for contemporary cloud native and serverless applications
 

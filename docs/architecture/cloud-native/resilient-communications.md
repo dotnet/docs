@@ -21,11 +21,11 @@ Libraries/frameworks in your codebase can address these concerns, but they add c
 
 A better approach centers around a new and rapidly evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and the networking challenges mentioned above. It decouples networking concerns and moves them out of your business code. Your microservices are unaware of the underlying network.
 
-A key component of a service mesh is a proxy. In a cloud-native application, an instance of a proxy is typically colocated with each microservice. While they execute in separate processes, the two are closely linked and share the same lifecycle. This pattern, known as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), and is shown in Figure 4-20.
+A key component of a service mesh is a proxy. In a cloud-native application, an instance of a proxy is typically colocated with each microservice. While they execute in separate processes, the two are closely linked and share the same lifecycle. This pattern, known as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), and is shown in Figure 4-22.
 
 ![Service mesh with a side car](media/service-mesh-with-side-car.png)
 
-**Figure 4-20**. Service mesh with a side car
+**Figure 4-22**. Service mesh with a side car
 
 Note in the previous figure how inbound/outbound traffic is intercepted by a proxy that runs alongside each microservice. Each proxy can be configured with traffic rules specific to the microservice.  
 
@@ -92,9 +92,14 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 - [Istio in Action](https://www.manning.com/books/istio-in-action)
 [Add Cesar's microservices book]
 
+- [Comparing gRPC Services with HTTP APIs](https://docs.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-3.0)
+[Add Cesar's microservices book]
+
+
+
 
 
 
 >[!div class="step-by-step"]
->[Previous](cross-service-communication.md)
+>[Previous](grpc.md)
 >[Next](distributed-data.md) <!-- Next Chapter -->

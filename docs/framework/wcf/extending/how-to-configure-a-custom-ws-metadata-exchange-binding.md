@@ -48,7 +48,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 5. In the client's Main() method, create a new <xref:System.ServiceModel.Description.MetadataExchangeClient> instance, set its <xref:System.ServiceModel.Description.MetadataExchangeClient.ResolveMetadataReferences%2A> property to `true`, call <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> and then iterate through the collection of metadata returned:  
   
-    ```  
+    ```csharp
     string mexAddress = "http://localhost:8000/servicemodelsamples/service/mex";  
   
     MetadataExchangeClient mexClient = new MetadataExchangeClient("MyMexEndpoint");  
@@ -62,19 +62,19 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 1. Create a <xref:System.ServiceModel.WSHttpBinding> binding instance:  
   
-    ```  
+    ```csharp  
     WSHttpBinding binding = new WSHttpBinding();  
     ```  
   
 2. Create a <xref:System.ServiceModel.ServiceHost> instance:  
   
-    ```  
+    ```csharp  
     ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress);  
     ```  
   
 3. Add a service endpoint and add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance:  
   
-    ```  
+    ```csharp  
     serviceHost.AddServiceEndpoint(typeof(ICalculator), binding, baseAddress);  
     ServiceMetadataBehavior smb = new ServiceMetadataBehavior();  
     smb.HttpGetEnabled = true;  
@@ -83,7 +83,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 4. Add a metadata exchange endpoint, specifying the <xref:System.ServiceModel.WSHttpBinding> created earlier:  
   
-    ```  
+    ```csharp  
     serviceHost.AddServiceEndpoint(typeof(IMetadataExchange), binding, mexAddress);  
     ```  
   
@@ -97,7 +97,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 6. In the client's Main() method, create a new <xref:System.ServiceModel.Description.MetadataExchangeClient> instance, set the <xref:System.ServiceModel.Description.MetadataExchangeClient.ResolveMetadataReferences%2A> property to `true`, call <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> and then iterate through the collection of metadata returned:  
   
-    ```  
+    ```csharp  
     string mexAddress = "http://localhost:8000/servicemodelsamples/service/mex";  
   
     MetadataExchangeClient mexClient = new MetadataExchangeClient("MyMexEndpoint");  

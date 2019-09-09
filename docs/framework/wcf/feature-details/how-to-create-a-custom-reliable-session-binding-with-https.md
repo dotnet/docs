@@ -28,7 +28,7 @@ For the source copy of this example, see [Custom Binding Reliable Session over H
 
 1. Create a *Service.svc* file that contains the line:
 
-   ```
+   ```svc
    <%@ServiceHost language=c# Service="CalculatorService" %>
    ```
 

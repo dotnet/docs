@@ -14,7 +14,7 @@ When an application interface is added or removed by using the COM+ Service Conf
 ## Example  
  Consider a component that implements the following interface:  
   
-```  
+```csharp
 [Guid("C551FBA9-E3AA-4272-8C2A-84BD8D290AC7")]  
 public interface IFinances  
 {  
@@ -25,7 +25,7 @@ public interface IFinances
   
  If the component is exposed as a Web service, the corresponding service contract that is exposed, and that clients would need to conform to, is as follows:  
   
-```  
+```csharp
 [ServiceContract(Session = true,  
 Namespace = "http://tempuri.org/C551FBA9-E3AA-4272-8C2A-84BD8D290AC7",  
 Name = "IFinances")]  

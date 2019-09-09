@@ -31,7 +31,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 3. Add a new class called `PrintTransactionInfo` to the `Common` project. This class is derived from <xref:System.Activities.NativeActivity> and overloads the <xref:System.Activities.NativeActivity.Execute%2A> method.  
   
-    ```  
+    ```csharp
     using System;  
     using System;  
     using System.Activities;  
@@ -217,7 +217,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 2. Open the generated Program.cs file and the following code:  
   
-    ```  
+    ```csharp
     static void Main()  
           {  
               Console.WriteLine("Building the server.");  
@@ -257,7 +257,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 2. Open the program.cs file and add the following code.  
   
-    ```  
+    ```csharp
     class Program  
         {  
   

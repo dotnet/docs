@@ -18,7 +18,7 @@ attributes that are built into .NET Core.
 
 ## Prerequisites
 You’ll need to setup your machine to run .NET core. You can find the
-installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
 page.
 You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container. 
 You’ll need to install your favorite code editor. The descriptions below

@@ -152,7 +152,7 @@ ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
   
  The following code shows how to configure the service.  
   
-```  
+```csharp
 // Create a binding that sets a certificate as the client credential type.  
 WSHttpBinding b = new WSHttpBinding();  
 b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;  

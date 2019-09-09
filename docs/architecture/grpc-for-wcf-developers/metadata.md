@@ -7,7 +7,7 @@ ms.date: 09/02/2019
 
 # Metadata
 
-It is possible to add generic key/value headers to WCF messages using an [OperationContextScope](https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.operationcontextscope?view=netframework-4.8) and the [OperationContext.OutgoingMessageHeaders](https://docs.microsoft.com/en-us/dotnet/api/system.servicemodel.operationcontext.outgoingmessageheaders?view=netframework-4.8) property.
+It is possible to add generic key/value headers to WCF messages using an [OperationContextScope](https://docs.microsoft.com/dotnet/api/system.servicemodel.operationcontextscope?view=netframework-4.8) and the [OperationContext.OutgoingMessageHeaders](https://docs.microsoft.com/dotnet/api/system.servicemodel.operationcontext.outgoingmessageheaders?view=netframework-4.8) property.
 
 gRPC calls and responses can also include metadata similar to HTTP headers. These are invisible to gRPC itself and are just passed through. Metadata is represented as Key/Value Pairs where the key is a string and the value is either a string or binary data. You don’t need to specify metadata in the .proto file.
 

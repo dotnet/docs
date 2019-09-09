@@ -22,7 +22,7 @@ Defines a custom interface attribute that specifies the managed namespace name f
   
 ## Syntax  
   
-```csharp
+```idl
 [  
    custom(GUID_ManagedName, value)  
 ]  

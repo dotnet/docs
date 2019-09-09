@@ -2,7 +2,7 @@
 title: Protobuf enumerations - gRPC for WCF Developers
 description: Declaring and using enumerations in Protobuf
 author: markrendle
-ms.date: 09/02/2019
+ms.date: 09/09/2019
 ---
 
 # Protobuf enumerations

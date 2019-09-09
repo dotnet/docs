@@ -2,7 +2,7 @@
 title: Protobuf nested types - gRPC for WCF Developers
 description: Nested message types in Protobuf and gRPC and how they are generated in C#
 author: markrendle
-ms.date: 09/02/2019
+ms.date: 09/09/2019
 ---
 
 # Protobuf nested types

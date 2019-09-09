@@ -2,7 +2,7 @@
 title: Protobuf scalar data types - gRPC for WCF Developers
 description: The basic and well-known data types supported by Protobuf and gRPC in .NET Core
 author: markrendle
-ms.date: 09/02/2019
+ms.date: 09/09/2019
 ---
 
 # Protobuf scalar data types

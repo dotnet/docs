@@ -1,17 +1,15 @@
 ---
-title: Resilient communication
+title: Service Mesh
 description: Learn about how service mesh technologies streamline cloud-native microservice communication
 author: robvet
-ms.date: 09/08/2019
+ms.date: 09/09/2019
 ---
 
-# Resilient communications
+# Service mesh
 
 Throughout this chapter, we've explored the challenges of microservice communication. We said that development teams need to be sensitive to how backend services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete operations.
 
 We explored different approaches for implementing synchronous HTTP communication and asynchronous messaging. In each of the cases, the developer is burdened with implementing communication code. Communication code is complex and time intensive. Incorrect decisions can lead to significant performance issues.
-
-## Service mesh
 
 A more modern approach to microservice communication centers around a new and rapidly evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service-to-service communication, resiliency, and many cross-cutting concerns. It moves the responsibility for these concerns out of the microservices and into service mesh layer. Communication is abstracted away from your microservices.
 

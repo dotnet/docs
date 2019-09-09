@@ -175,4 +175,4 @@ Azure SignalR Service closely integrates with other Azure services, such as Azur
 
 >[!div class="step-by-step"]
 >[Previous](communication-patterns.md)
->[Next](cross-service-communication.md)
+>[Next](service-to-service-communication.md)

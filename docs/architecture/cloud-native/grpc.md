@@ -11,7 +11,7 @@ So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/
 
 ## gRPC
 
-gRPC, or “Google Remote Procedure Call," is an open-source communication that originates from Google. It's built upon the [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) model, popular in distributed computing. Following this model, a local client program exposes an in-process method to execute an operation. Behind the scenes, that call is invoked on an out-of-process microservice across a distributed network. The developer codes the operation as a local procedure call. The underlying platform abstracts the point-to-point networking communication, serialization, and execution.
+gRPC is an open-source communication that originates from Google. It's built upon the [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) model, popular in distributed computing. Following this model, a local client program exposes an in-process method to execute an operation. Behind the scenes, that call is invoked on an out-of-process microservice across a distributed network. The developer codes the operation as a local procedure call. The underlying platform abstracts the point-to-point networking communication, serialization, and execution.
 
 gRPC is a modern RPC framework that is lightweight and highly performant. It uses HTTP/2 for its transport protocol. While compatible with HTTP 1.1, HTTP/2 features many advanced capabilities:
 
@@ -25,7 +25,7 @@ gRPC is supported across most popular platforms, including Java, C#, Golang and 
 
 ## Protocol Buffers
 
-gRPC embraces another open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) or Protobuf messages to send and receive data. Similar to a [WCF Data Contract](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/using-data-contracts), Protobuf serializes structured data for systems to read and write. It reduces the overhead that human-readable formats like XML or JSON incur.
+gRPC embraces another open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) or Protobuf messages to send and receive data. Similar to a [WCF Data Contract](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/using-data-contracts), Protobuf serializes structured data for systems to read and write. It reduces the overhead that human-readable formats like XML or JSON incur.
 
 Many object serialization techniques reflect across the structure of data objects at run-time. Protobuf requires you to define the structure up front with a platform-agnostic language (Protocol Buffer Language). Each definition is stored in a ".proto" file. Then using Protobuf compiler, "Proton," you generate client and server code for any of the supported platforms. The generated code is optimized for fast serialization/deserialization of data. At runtime, each message is wrapped in the strongly-typed service contract and serialized in a standard Protobuf representation.
 
@@ -65,6 +65,6 @@ Note in the previous figure how front-end traffic is invoked with HTTP while bac
 Looking ahead, gRPC could play a major role in dethroning the dominance of REST for cloud-native systems. The performance benefits and ease of development are too good to pass up. However, make no mistake, REST will still be around for a long time. It still excels for publicly exposed APIs and for backward compatibility reasons. 
 
 >[!div class="step-by-step"]
->[Previous](cross-service-communication.md)
->[Next](resilient-communications.md)
+>[Previous](service-to-service-communication.md)
+>[Next](service-mesh.md)
 

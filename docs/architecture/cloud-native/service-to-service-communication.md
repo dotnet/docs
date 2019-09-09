@@ -1,13 +1,13 @@
 ---
-title: Microservice-to-microservice communication
+title: Service-to-service communication
 description: Learn how back-end cloud-native microservices communicate with other back-end microservices.
 author: robvet
 ms.date: 08/31/2019
 ---
 
-# Microservice-to-microservice communication
+# Service-to-service communication
 
-Moving from the front-end client, we now address backend microservice-to-microservice communication.
+Moving from the front-end client, we now address backend microservcies communicate with each other.
 
 When constructing a cloud native application, you'll want to be sensitive to how backend services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete an operation.
 
@@ -19,7 +19,7 @@ Consider the following interaction types:
 
 - *Command* – when the calling microservice needs another microservice to execute an action but doesn't require a response, such as, "Hey, just ship this order."
 
-- *Event* – when one microservice, called the publisher, raises an event that state has changed or an action has occurred. Other microservices, called subscribers, who are interested, can react to the event appropriately. The publisher and the subscribers aren't aware of each other.
+- *Event* – when a microservice, called the publisher, raises an event that state has changed or an action has occurred. Other microservices, called subscribers, who are interested, can react to the event appropriately. The publisher and the subscribers aren't aware of each other.
 
 Microservice systems typically use a combination of these interaction types when executing operations that require cross-service interaction. Let's take a close look at each and how you might implement them.
 
@@ -50,17 +50,17 @@ The large degree of coupling in the previous image suggests the services weren't
 
 ### Materialized View pattern
 
-A popular option for removing microservice coupling is the [Materialized View pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view). With this pattern, a microservice stores its own local, denormalized copy of data that's owned by other services. Instead of the Shopping Basket microservice querying the Product Catalog and Pricing microservices, it maintains its own local copy of that data. This pattern eliminates unnecessary coupling and improves reliability and response time. The entire opeation executes inside a single process. We explore this pattern and other data concerns in Chapter 5.
+A popular option for removing microservice coupling is the [Materialized View pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view). With this pattern, a microservice stores its own local, denormalized copy of data that's owned by other services. Instead of the Shopping Basket microservice querying the Product Catalog and Pricing microservices, it maintains its own local copy of that data. This pattern eliminates unnecessary coupling and improves reliability and response time. The entire operation executes inside a single process. We explore this pattern and other data concerns in Chapter 5.
 
 ### Service Aggregator Pattern
 
-Another option for eliminiating microservice-to-micrservice coupling is an [Aggregator microservice](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-10. 
+Another option for eliminating microservice-to-micrservice coupling is an [Aggregator microservice](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-10. 
 
 ![Aggregator service](./media/aggregator-service.png)
 
 **Figure 4-10**. Aggregator microservice
 
-The pattern isolates an operation that makes calls to multiple backend microservices, centralizing its logic into a specialized microservice.  The purple checkout aggregator microservice in the previous figure orchestrates the workflow for the Checkout operation. It includes calls to several backend microservices in a sequenced order. Data from the workflow is aggregated and returned to the caller. While it still implements direct HTTP calls, the aggregator microservices reduces direct dependencies among back-end microservices. 
+The pattern isolates an operation that makes calls to multiple backend microservices, centralizing its logic into a specialized microservice.  The purple checkout aggregator microservice in the previous figure orchestrates the workflow for the Checkout operation. It includes calls to several backend microservices in a sequenced order. Data from the workflow is aggregated and returned to the caller. While it still implements direct HTTP calls, the aggregator microservice reduces direct dependencies among back-end microservices. 
 
 ### Request/Reply Pattern
 
@@ -123,7 +123,7 @@ Service Bus provides a rich set of features, including [transaction support](htt
 
 Two more enterprise features are partitioning and sessions. A conventional Service Bus queue is handled by a single message broker and stored in a single message store. But, [Service Bus Partitioning](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning) spreads the queue across multiple message brokers and message stores. The overall throughput is no longer limited by the performance of a single message broker or messaging store. A temporary outage of a messaging store doesn't render a partitioned queue unavailable.
 
-[Service Bus Sessions](https://codingcanvas.com/azure-service-bus-sessions/) provide a way to group related messages. Imagine a workflow scenario where messages must be processed together and the operation completed at the end. To take advantage, sessions must be explicitly enabled for the queue and each related messaged must contain the same session ID.
+[Service Bus Sessions](https://codingcanvas.com/azure-service-bus-sessions/) provide a way to group-related messages. Imagine a workflow scenario where messages must be processed together and the operation completed at the end. To take advantage, sessions must be explicitly enabled for the queue and each related messaged must contain the same session ID.
 
 However, there are some important caveats: Service Bus queues size is limited to 80 GB, which is much smaller than what's available from store queues. Additionally, Service Bus queues incur a base cost and charge per operation.
 
@@ -207,7 +207,7 @@ Event Hub supports low latency and configurable time retention. Unlike queues an
 
 Event Hub supports common event publishing protocols including HTTPS and AMQP. It also supports Kafka 1.0. [Existing Kafka applications can communicate with Event Hub](https://docs.microsoft.com/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview) using the Kafka protocol providing an alternative to managing large Kafka clusters. Many open-source cloud-native systems embrace Kafka.
 
-Event Hubs implement message streaming through a [partitioned consumer model](https://docs.microsoft.com/azure/event-hubs/event-hubs-features) in which each consumer only reads a specific subset, or partition, of the message stream. This pattern enables tremendous horizontal scale for event processing and provides other stream-focused features that are unavailable in queues and topics. A partition is an ordered sequence of events that is held in an event hub. As newer events arrive, they're added to the end of this sequence. Figure 4-19 shows partitioning in an Event Hub.
+Event Hubs implements message streaming through a [partitioned consumer model](https://docs.microsoft.com/azure/event-hubs/event-hubs-features) in which each consumer only reads a specific subset, or partition, of the message stream. This pattern enables tremendous horizontal scale for event processing and provides other stream-focused features that are unavailable in queues and topics. A partition is an ordered sequence of events that is held in an event hub. As newer events arrive, they're added to the end of this sequence. Figure 4-19 shows partitioning in an Event Hub.
 
 ![Event Hub partitioning](./media/event-hub-partitioning.png)
 
@@ -216,12 +216,6 @@ Event Hubs implement message streaming through a [partitioned consumer model](ht
 Instead of reading from the same resource, each consumer group reads across a subset, or partition, of the message stream. 
 
 For cloud-native applications that must stream large numbers of events, Azure Event Hub can be a robust and affordable solution.
-
-## Summary
-
-## Additional resources
-
-    https://aka.ms/liftandshiftwithcontainersebook
 
 >[!div class="step-by-step"]
 >[Previous](front-end-communication.md)

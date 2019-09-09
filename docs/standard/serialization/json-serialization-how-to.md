@@ -223,51 +223,39 @@ class WeatherForecast
 }
 ```
 
-## Allow comments
+## Allow comments and trailing commas
 
-Set <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling> to `JsonCommentHandling.Skip`:
+Set <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling> to `JsonCommentHandling.Skip`, and set <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas> to true:
 
 ```csharp
 var options = new JsonSerializerOptions
 {
     ReadCommentHandling = JsonCommentHandling.Skip,
+    AllowTrailingCommas = true
 };
 var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
 ```
 
-Example JSON with comments:
+Example JSON with comments and a trailing comma:
 
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
   "TemperatureC": 25, // Fahrenheit 77
-  "Summary": "Hot" /* Zharko */
+  "Summary": "Hot", /* Zharko */
 }
 ```
 
-## Allow trailing commas
+## Customize JSON names
 
-Set <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas> to true:
+This section explains how to:
 
-```csharp
-var options = new JsonSerializerOptions
-{
-    AllowTrailingCommas = true,
-};
-var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
-```
+* Customize individual property names
+* Convert all property names to camel case
+* Implement a custom property naming policy
+* Convert dictionary keys to camel case
 
-Example JSON with a trailing comma:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
-  "Summary": "Hot",
-}
-```
-
-## Specify JSON property names
+### Customize individual property names
 
 To set the name of individual properties, use the [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attribute:
 
@@ -298,7 +286,7 @@ The property name set by this attribute:
 * Applies in both directions, for serialization and deserialization.
 * Takes precedence over property naming policies.
 
-## Camel case JSON property names
+### Use camel case for all JSON property names
 
 Set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> to `JsonNamingPolicy.CamelCase`:
 
@@ -337,7 +325,7 @@ The camel case property naming policy:
 * Applies to serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes.
 
-## Use custom JSON property naming policy
+### Use a custom JSON property naming policy
 
 Derive from <xref:System.Text.Json.JsonNamingPolicy> and override <xref:System.Text.Json.JsonNamingPolicy.ConvertName*>:
 
@@ -388,7 +376,50 @@ The JSON property naming policy:
 * Applies to serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes.
 
-## Exclude selected properties
+### Camel case dictionary keys
+
+IF a property of an object to be serialized is of type `Dictionary<string,Tvalue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`:
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    DictionaryKeyPolicy = JsonNamingPolicy.CamelCase
+};
+json = JsonSerializer.Serialize(weatherForecast, options);
+```
+
+Example object to serialize and JSON output:
+
+|Property |Value  |
+|---------|---------|
+| Date    | 8/1/2019 12:00:00 AM -07:00|
+| TemperatureC| 25 |
+| Summary| Hot|
+| TemperatureRanges | Cold, 20<br>Hot, 40|
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureC": 25,
+  "Summary": "Hot",
+  "TemperatureRanges": {
+    "cold": 20,
+    "hot": 40
+  }
+}
+```
+
+The camel case naming policy applies to serialization only.
+
+## Exclude properties
+
+This section explains how to exclude:
+
+* Individual properties
+* All read-only properties
+* All null-value properties 
+
+### Exclude individual properties
 
 Use the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute:
 
@@ -413,7 +444,7 @@ Example JSON output:
 }
 ```
 
-## Exclude read-only properties
+### Exclude all read-only properties
 
 Set <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties> to true:
 
@@ -447,7 +478,7 @@ class WeatherForecast
 
 This option applies only to serialization. During deserialization, read-only properties are ignored by default. A property is read-only if it contains a public getter but not a public setter.
 
-## Exclude null value properties
+### Exclude all null value properties
 
 Set <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> to true:
 
@@ -478,40 +509,6 @@ Example object to serialize:
 
 This setting applies to serialization and deserialization.
 
-## Camel case dictionary keys
-
-IF a property of an object to be serialized is of type `Dictionary<string,Tvalue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`:
-
-```csharp
-var options = new JsonSerializerOptions
-{
-    DictionaryKeyPolicy = JsonNamingPolicy.CamelCase
-};
-json = JsonSerializer.Serialize(weatherForecast, options);
-```
-
-Example object to serialize and JSON output:
-
-|Property |Value  |
-|---------|---------|
-| Date    | 8/1/2019 12:00:00 AM -07:00|
-| TemperatureC| 25 |
-| Summary| Hot|
-| TemperatureRanges | Cold, 20<br>Hot, 40|
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
-  "Summary": "Hot",
-  "TemperatureRanges": {
-    "cold": 20,
-    "hot": 40
-  }
-}
-```
-
-The camel case property naming policy applies to serialization only.
 
 ## Case-insensitive property matching
 

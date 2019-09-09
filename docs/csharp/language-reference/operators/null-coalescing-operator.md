@@ -4,9 +4,12 @@ ms.custom: seodec18
 ms.date: 09/09/2019
 f1_keywords: 
   - "??_CSharpKeyword"
+  - "??=_CSharpKeyword"
 helpviewer_keywords: 
   - "null-coalescing operator [C#]"
   - "?? operator [C#]"
+  - "null-coalescing assignment [C#]"
+  - "??= operator [C#]"
 ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
 ---
 # ?? and ??= operators (C# reference)

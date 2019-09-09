@@ -1,9 +1,9 @@
 ---
 title: Prerequisites for .NET Core on Linux
 description: Supported Linux versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on Linux machines.
-author: thraka
-ms.author: adegeo
-ms.date: 12/14/2018
+author: leecow
+ms.author: 
+ms.date: 09/09/2019
 ---
 # Prerequisites for .NET Core on Linux
 
@@ -55,24 +55,24 @@ For download links and more information, see [.NET Core 1.1 downloads](https://d
 
 See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems, out of support OS versions, and lifecycle policy links.
 
-# [.NET Core 3.0 Preview 1](#tab/netcore30)
+# [.NET Core 3.0 Preview 9](#tab/netcore30)
 
-.NET Core 3.0 Preview 1 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions. 
+.NET Core 3.0 Preview 9 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions. 
 
 For download links and more information, see [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
-.NET Core 3.0 Preview 1 is supported on the following Linux distributions/versions. 
+.NET Core 3.0 Preview 9 is supported on the following Linux distributions/versions. 
 
 OS                            | Version               | Architectures  
 ------------------------------|-----------------------|----------------
 Red Hat Enterprise Linux      | 6                     | x64
 Red Hat Enterprise Linux<br>CentOS<br>Oracle Linux  | 7                     | x64
-Fedora                        | 28                    | x64
-Debian                        | 9                     | x64, ARM32\*, ARM64\*
-Ubuntu                        | 16.04+, 18.04+        | x64, ARM32\*, ARM64\*
+Fedora                        | 28, 29, 30            | x64
+Debian                        | 9, 10                 | x64, ARM32\*, ARM64\*
+Ubuntu                        | 16.04+, 18.04+, 19.04+ | x64, ARM32\*, ARM64\*
 Linux Mint                    | 18                    | x64
-openSUSE                      | 42.3+                 | x64
-SUSE Enterprise Linux (SLES)  | 12 SP2+               | x64
+OpenSUSE Leap                 | 42.3+                 | x64
+SUSE Enterprise Linux (SLES)  | 12 SP2+, 15           | x64
 Alpine Linux                  | 3.8+                  | x64, ARM64
 
 \* ARM32 and ARM64 support starts with Debian 9 and Ubuntu 16.04. Earlier versions of those distros are not supported on ARM chips.

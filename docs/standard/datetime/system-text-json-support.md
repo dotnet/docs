@@ -219,6 +219,6 @@ The following levels of granularity are defined for formatting:
 
     4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
 
-		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a local offset.
+        Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a local offset.
 
 If present, a maximum of 7 fractional digits are written. This aligns with the <xref:System.DateTime> implementation, which is limited to this resolution.

@@ -6,11 +6,12 @@ ms.assetid: b0d03456-546f-44bb-ab12-1b2ce7f98fca
 # \<policyImporter>
 Specifies a policy importer that controls the import of custom policy assertions about bindings.  
   
- \<system.ServiceModel>  
-\<client>  
-\<metadata>  
-\<policyImporters>  
-\<policyImporter>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<client>**](client.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<metadata>**](metadata.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<policyImporters>**](policyimporters.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<policyImporter>**  
   
 ## Syntax  
   

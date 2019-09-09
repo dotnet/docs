@@ -6,11 +6,12 @@ ms.assetid: 7fccd436-b326-48ec-8de1-c16817a09e0d
 # \<timeOuts>
 Represents a configuration element that specifies the interval of time allowed for the service host to open or close.  
   
- \<system.ServiceModel>  
-\<client>  
-\<endpoint>  
-\<host>  
-\<timeOuts>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<services>**](services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<service>**](service.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<host>**](host.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<timeOuts>**  
   
 ## Syntax  
   

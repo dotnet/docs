@@ -49,7 +49,7 @@ You can install a specific version using the `--version` argument. The version m
   - Two-part version in X.Y format representing a specific release (for example, `2.0` or `1.0`).
   - Branch name. For example, `release/2.0.0`, `release/2.0.0-preview2`, or `master` (for nightly releases).
 
-  The default value is `LTS`. For more information on .NET support channels, see the [.NET Support Policy](https://www.microsoft.com/net/platform/support-policy#dotnet-core) page.
+  The default value is `LTS`. For more information on .NET support channels, see the [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) page.
 
 - **`-Version <VERSION>`**
 

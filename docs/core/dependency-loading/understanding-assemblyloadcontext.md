@@ -96,7 +96,7 @@ Given a pair of mismatched types it's important to also know:
 
 Given two objects `a` and `b`, evaluating the following in the debugger will be helpful:
 
-```C#
+```csharp
 // In debugger look at each assembly's instance, Location, and FullName
 a.GetType().Assembly
 b.GetType().Assembly

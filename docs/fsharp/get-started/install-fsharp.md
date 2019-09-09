@@ -34,7 +34,7 @@ You must have [git installed](https://git-scm.com/download) and available on you
 brew install mono
 ```
 
-Also install the [.NET Core SDK](https://www.microsoft.com/net/download).
+Also install the [.NET Core SDK](https://dotnet.microsoft.com/download).
 
 ### [Linux](#tab/linux)
 
@@ -45,13 +45,13 @@ sudo apt-get update
 sudo apt-get install mono-complete fsharp
 ```
 
-Also install the [.NET Core SDK](https://www.microsoft.com/net/download).
+Also install the [.NET Core SDK](https://dotnet.microsoft.com/download).
 
 ### [Windows](#tab/windows)
 
 Install [Visual Studio with F# support](#install-f-with-visual-studio). This installs all the necessary components to write, compile, and execute F# code.
 
-Also install the [.NET Core SDK](https://www.microsoft.com/net/download/).
+Also install the [.NET Core SDK](https://dotnet.microsoft.com/download).
 
 ---
 

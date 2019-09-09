@@ -24,17 +24,17 @@ Provides methods for describing and working with an assembly's unique identity.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Clone Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-clone-method.md)|Creates a shallow copy of this `IAssemblyName` object.|  
-|[Finalize Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-finalize-method.md)|Allows this `IAssemblyName` object to release resources and perform other cleanup operations before its destructor is called.|  
-|[GetDisplayName Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-getdisplayname-method.md)|Gets the human-readable name of the assembly referenced by this `IAssemblyName` object.|  
-|[GetName Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-getname-method.md)|Gets the simple, unencrypted name of the assembly referenced by this `IAssemblyName` object.|  
-|[GetProperty Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-getproperty-method.md)|Gets a pointer to the property referenced by the specified `PropertyId`.|  
-|[GetVersion Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-getversion-method.md)|Gets the version information for the assembly referenced by this `IAssemblyName` object.|  
-|[IsEqual Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-isequal-method.md)|Determines whether a specified `IAssemblyName` object is equal to this `IAssemblyName`, based on the specified comparison flags.|  
-|[SetProperty Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-setproperty-method.md)|Sets the value of the property referenced by the specified `PropertyId`.|  
+|[Clone Method](iassemblyname-clone-method.md)|Creates a shallow copy of this `IAssemblyName` object.|  
+|[Finalize Method](iassemblyname-finalize-method.md)|Allows this `IAssemblyName` object to release resources and perform other cleanup operations before its destructor is called.|  
+|[GetDisplayName Method](iassemblyname-getdisplayname-method.md)|Gets the human-readable name of the assembly referenced by this `IAssemblyName` object.|  
+|[GetName Method](iassemblyname-getname-method.md)|Gets the simple, unencrypted name of the assembly referenced by this `IAssemblyName` object.|  
+|[GetProperty Method](iassemblyname-getproperty-method.md)|Gets a pointer to the property referenced by the specified `PropertyId`.|  
+|[GetVersion Method](iassemblyname-getversion-method.md)|Gets the version information for the assembly referenced by this `IAssemblyName` object.|  
+|[IsEqual Method](iassemblyname-isequal-method.md)|Determines whether a specified `IAssemblyName` object is equal to this `IAssemblyName`, based on the specified comparison flags.|  
+|[SetProperty Method](iassemblyname-setproperty-method.md)|Sets the value of the property referenced by the specified `PropertyId`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -42,5 +42,5 @@ Provides methods for describing and working with an assembly's unique identity.
   
 ## See also
 
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
-- [IAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md)
+- [Fusion Interfaces](fusion-interfaces.md)
+- [IAssemblyEnum Interface](iassemblyenum-interface.md)

@@ -25,7 +25,7 @@ This tutorial has multiple steps. After each step, you can run the application a
 
 ## Prerequisites
 
-You’ll need to setup your machine to run .NET core. You can find the installation instructions on the [.NET Core](https://www.microsoft.com/net/core) page. You can run this application on Windows, Ubuntu Linux, OS X or in a Docker container. You’ll need to install your favorite code editor. The descriptions below use [Visual Studio Code](https://code.visualstudio.com/) which is an open source, cross platform editor. However, you can use whatever tools you are comfortable with.
+You’ll need to setup your machine to run .NET core. You can find the installation instructions on the [.NET Core Download](https://dotnet.microsoft.com/download) page. You can run this application on Windows, Ubuntu Linux, OS X or in a Docker container. You’ll need to install your favorite code editor. The descriptions below use [Visual Studio Code](https://code.visualstudio.com/) which is an open source, cross platform editor. However, you can use whatever tools you are comfortable with.
 
 ## Create the Application
 

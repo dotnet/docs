@@ -10,13 +10,13 @@ ms.assetid: 252ed666-0679-4eea-b71b-2f14117ef443
 
 The following sections answer some common issues that you might encounter when you implement [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)].
 
-Additional issues are addressed in [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md).
+Additional issues are addressed in [Troubleshooting](troubleshooting.md).
 
 ## Cannot Connect
 
 Q. I cannot connect to my database.
 
-A. Make sure your connection string is correct and that your SQL Server instance is running. Note also that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] requires the Named Pipes protocol to be enabled. For more information, see [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md).
+A. Make sure your connection string is correct and that your SQL Server instance is running. Note also that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] requires the Named Pipes protocol to be enabled. For more information, see [Learning by Walkthroughs](learning-by-walkthroughs.md).
 
 ## Changes to Database Lost
 
@@ -34,7 +34,7 @@ The exact details of connection usage depend on the following:
 
 - Connection status if the <xref:System.Data.Linq.DataContext> is constructed with a connection object.
 
-- Connection string settings (for example, enabling Multiple Active Result Sets (MARS). For more information, see [Multiple Active Result Sets (MARS)](../../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md).
+- Connection string settings (for example, enabling Multiple Active Result Sets (MARS). For more information, see [Multiple Active Result Sets (MARS)](../multiple-active-result-sets-mars.md).
 
 ## Updating Without Querying
 
@@ -50,7 +50,7 @@ A. Although [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 
 
 Q. My query is returning unexpected results. How can I inspect what is occurring?
 
-A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides several tools for inspecting the SQL code it generates. One of the most important is <xref:System.Data.Linq.DataContext.Log%2A>. For more information, see [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md).
+A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides several tools for inspecting the SQL code it generates. One of the most important is <xref:System.Data.Linq.DataContext.Log%2A>. For more information, see [Debugging Support](debugging-support.md).
 
 ## Unexpected Stored Procedure Results
 
@@ -104,13 +104,13 @@ select nax(i) AS MaxResult from t where name like 'hello'
 end
 ```
 
-For more information, see [Customizing Operations By Using Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures.md).
+For more information, see [Customizing Operations By Using Stored Procedures](customizing-operations-by-using-stored-procedures.md).
 
 ## Serialization Errors
 
 Q. When I try to serialize, I get the following error: "Type 'System.Data.Linq.ChangeTracker+StandardChangeTracker' ... is not marked as serializable."
 
-A. Code generation in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports <xref:System.Runtime.Serialization.DataContractSerializer> serialization. It does not support <xref:System.Xml.Serialization.XmlSerializer> or <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. For more information, see [Serialization](../../../../../../docs/framework/data/adonet/sql/linq/serialization.md).
+A. Code generation in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports <xref:System.Runtime.Serialization.DataContractSerializer> serialization. It does not support <xref:System.Xml.Serialization.XmlSerializer> or <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. For more information, see [Serialization](serialization.md).
 
 ## Multiple DBML Files
 
@@ -204,13 +204,13 @@ Q. Is there a construct that can help with <xref:System.Data.Linq.DataContext> p
 
 A. Do not try to reuse instances of <xref:System.Data.Linq.DataContext>. Each <xref:System.Data.Linq.DataContext> maintains state (including an identity cache) for one particular edit/query session. To obtain new instances based on the current state of the database, use a new <xref:System.Data.Linq.DataContext>.
 
-You can still use underlying ADO.NET connection pooling. For more information, see [SQL Server Connection Pooling (ADO.NET)](../../../../../../docs/framework/data/adonet/sql-server-connection-pooling.md).
+You can still use underlying ADO.NET connection pooling. For more information, see [SQL Server Connection Pooling (ADO.NET)](../../sql-server-connection-pooling.md).
 
 ## Second DataContext Is Not Updated
 
 Q. I used one instance of <xref:System.Data.Linq.DataContext> to store values in the database. However, a second <xref:System.Data.Linq.DataContext> on the same database does not reflect the updated values. The second <xref:System.Data.Linq.DataContext> instance seems to return cached values.
 
-A. This behavior is by design. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] continues to return the same instances/values that you saw in the first instance. When you make updates, you use optimistic concurrency. The original data is used to check against the current database state to assert that it is in fact still unchanged. If it has changed, a conflict occurs and your application must resolve it. One option of your application is to reset the original state to the current database state and to try the update again. For more information, see [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md).
+A. This behavior is by design. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] continues to return the same instances/values that you saw in the first instance. When you make updates, you use optimistic concurrency. The original data is used to check against the current database state to assert that it is in fact still unchanged. If it has changed, a conflict occurs and your application must resolve it. One option of your application is to reset the original state to the current database state and to try the update again. For more information, see [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md).
 
 You can also set <xref:System.Data.Linq.DataContext.ObjectTrackingEnabled%2A> to false, which turns off caching and change tracking. You can then retrieve the latest values every time that you query.
 
@@ -222,6 +222,6 @@ A. Read-only mode turns off the ability of the context to track changes.
 
 ## See also
 
-- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
-- [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)
-- [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md)
+- [Reference](reference.md)
+- [Troubleshooting](troubleshooting.md)
+- [Security in LINQ to SQL](security-in-linq-to-sql.md)

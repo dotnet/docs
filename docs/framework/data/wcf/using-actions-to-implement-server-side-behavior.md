@@ -76,7 +76,7 @@ context.Execute(new Uri("http://MyServer/MoviesService.svc/Movies(1)/Rate"), "PO
   
 ## See also
 
-- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)
-- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
-- [Developing and Deploying WCF Data Services](../../../../docs/framework/data/wcf/developing-and-deploying-wcf-data-services.md)
-- [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)
+- [WCF Data Services 4.5](index.md)
+- [Defining WCF Data Services](defining-wcf-data-services.md)
+- [Developing and Deploying WCF Data Services](developing-and-deploying-wcf-data-services.md)
+- [Custom Data Service Providers](custom-data-service-providers-wcf-data-services.md)

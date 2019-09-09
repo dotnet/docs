@@ -228,4 +228,4 @@ public class Sample
 ## See also
 
 - [DataSet and XmlDataDocument Synchronization](dataset-and-xmldatadocument-synchronization.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

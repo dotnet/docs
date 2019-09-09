@@ -17,7 +17,7 @@ This tutorial shows you how to:
 
 ## Prerequisites
 
-- Install the [.NET Core 3.0 Preview 2 SDK](https://www.microsoft.com/net/core) or a newer version.
+- Install the [.NET Core 3.0 Preview 2 SDK](https://dotnet.microsoft.com/download) or a newer version.
 
 ## Create the application
 

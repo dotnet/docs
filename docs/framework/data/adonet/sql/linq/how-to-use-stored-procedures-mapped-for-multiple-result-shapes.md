@@ -9,7 +9,7 @@ ms.assetid: c2b84dfe-7fec-489a-92de-45215cec4518
 # How to: Use Stored Procedures Mapped for Multiple Result Shapes
 When a stored procedure can return multiple result shapes, the return type cannot be strongly typed to a single projection shape. Although [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] can generate all possible projection types, it cannot know the order in which they will be returned.  
   
- Contrast this scenario with stored procedures that produce multiple result shapes sequentially. For more information, see [How to: Use Stored Procedures Mapped for Sequential Result Shapes](../../../../../../docs/framework/data/adonet/sql/linq/how-to-use-stored-procedures-mapped-for-sequential-result-shapes.md).  
+ Contrast this scenario with stored procedures that produce multiple result shapes sequentially. For more information, see [How to: Use Stored Procedures Mapped for Sequential Result Shapes](how-to-use-stored-procedures-mapped-for-sequential-result-shapes.md).  
   
  The <xref:System.Data.Linq.Mapping.ResultTypeAttribute> attribute is applied to stored procedures that return multiple result types to specify the set of types the procedure can return.  
   
@@ -39,4 +39,4 @@ else if(@shape = 2)
   
 ## See also
 
-- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)
+- [Stored Procedures](stored-procedures.md)

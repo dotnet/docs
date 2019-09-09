@@ -107,7 +107,8 @@ Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize
 
 ### Default serialization behavior
 
-* All public properties are serialized. You can exclude [selected](#exclude-individual-properties), [read-only](#exclude-all-read-only-properties), and [null value](#exclude-all-null-value-properties) properties.
+* All public properties are serialized. You can [specify properties to exclude](#exclude-properties).
+* Casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
 * Fields are excluded.
 * Supported types include:
   * .NET primitives that map to JavaScript primitives.

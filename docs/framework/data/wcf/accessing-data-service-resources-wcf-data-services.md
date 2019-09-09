@@ -16,43 +16,43 @@ ms.assetid: 9665ff5b-3e3a-495d-bf83-d531d5d060ed
  In [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)], you address any data exposed by the data model by using a URI. For example, the following URI returns a feed that is the Customers entity set, which contains entries for all instances of the Customer entity type:  
   
 ```http
-http://services.odata.org/Northwind/Northwind.svc/Customers  
+https://services.odata.org/Northwind/Northwind.svc/Customers  
 ```  
   
  Entities have special properties called entity keys. An entity key is used to uniquely identify a single entity in an entity set. This enables you to address a specific instance of an entity type in the entity set. For example, the following URI returns an entry for a specific instance of the Customer entity type that has a key value of `ALFKI`:  
   
 ```http  
-http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')  
+https://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')  
 ```  
   
  Primitive and complex properties of an entity instance can also be individually addressed. For example, the following URI returns an XML element that contains the `ContactName` property value for a specific Customer:  
   
 ```http  
-http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/ContactName  
+https://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/ContactName  
 ```  
   
  When you include the `$value` endpoint in the previous URI, only the value of the primitive property is returned in the response message. The following example returns only the string "Maria Anders" without the XML element:  
   
 ```http  
-http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/ContactName/$value  
+https://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/ContactName/$value  
 ```  
   
  Relationships between entities are defined in the data model by associations. These associations enable you to address related entities by using navigation properties of an entity instance. A navigation property can return either a single related entity, in the case of a many-to-one relationship, or a set of related entities, in the case of a one-to-many relationship. For example, the following URI returns a feed that is the set of all the Orders that are related to a specific Customer:  
   
 ```http  
-http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders  
+https://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders  
 ```  
   
  Relationships, which are usually bi-directional, are represented by a pair of navigation properties. As the reverse of the relationship shown in the previous example, the following URI returns a reference to the Customer entity to which a specific Order entity belongs:  
   
 ```http  
-http://services.odata.org/Northwind/Northwind.svc/Orders(10643)/Customer  
+https://services.odata.org/Northwind/Northwind.svc/Orders(10643)/Customer  
 ```  
   
  [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] also enables you to address resources based on the results of query expressions. This makes it possible to filter sets of resources based on an evaluated expression. For example, the following URI filters the resources to return only the Orders for the specified Customer that have shipped since September 22, 1997:  
   
 ```http  
-http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders?$filter=ShippedDate gt datetime'1997-09-22T00:00:00'  
+https://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders?$filter=ShippedDate gt datetime'1997-09-22T00:00:00'  
 ```  
   
  For more information, see [OData: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=185564).  
@@ -61,7 +61,7 @@ http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/Orders?$fil
  [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] defines a set of system query options that you can use to perform traditional query operations against resources, such as filtering, sorting, and paging. For example, the following URI returns the set of all the `Order` entities, along with related `Order_Detail` entities, the postal codes of which do not end in `100`:  
   
 ```http  
-http://services.odata.org/Northwind/Northwind.svc/Orders?$filter=not endswith(ShipPostalCode,'100')&$expand=Order_Details&$orderby=ShipCity  
+https://services.odata.org/Northwind/Northwind.svc/Orders?$filter=not endswith(ShipPostalCode,'100')&$expand=Order_Details&$orderby=ShipCity  
 ```  
   
  The entries in the returned feed are also ordered by the value of the ShipCity property of the orders.  
@@ -82,7 +82,7 @@ http://services.odata.org/Northwind/Northwind.svc/Orders?$filter=not endswith(Sh
  In addition to addressing entity sets and entity instances, [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] also enables you to address the associations that represent relationships between entities. This functionality is required to be able to create or change a relationship between two entity instances, such as the shipper that is related to a given order in the Northwind sample database. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] supports a `$link` operator to specifically address the associations between entities. For example, the following URI is specified in an HTTP PUT request message to change the shipper for the specified order to a new shipper.  
   
 ```http 
-http://services.odata.org/Northwind/Northwind.svc/Orders(10643)/$links/Shipper  
+https://services.odata.org/Northwind/Northwind.svc/Orders(10643)/$links/Shipper  
 ```  
   
  For more information, see [OData: Addressing Links between Entries](https://go.microsoft.com/fwlink/?LinkId=187351).  

@@ -13,7 +13,7 @@ The .NET Guide provides a large amount of information about .NET.  Depending on 
 
 ## New to .NET
 
-If you want a high-level overview about .NET, check out [What is .NET?](https://www.microsoft.com/net/learn/what-is-dotnet).
+If you want a high-level overview about .NET, check out [What is .NET?](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet).
 
 If you're new to .NET, check out the [Get Started](get-started.md) article.
 

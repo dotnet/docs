@@ -23,7 +23,7 @@ Like the [Xml Serializer Generator (sgen.exe)](../../standard/serialization/xml-
 
 To complete this tutorial:
 
-* [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) or later
+* [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later
 * Your favorite code editor.
 
 > [!TIP]

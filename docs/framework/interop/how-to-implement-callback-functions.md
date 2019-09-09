@@ -18,7 +18,7 @@ The following procedure and example demonstrate how a managed application, using
   
 1. Look at the signature for the **EnumWindows** function before going further with the implementation. **EnumWindows** has the following signature:  
   
-    ```csharp
+    ```cpp
     BOOL EnumWindows(WNDENUMPROC lpEnumFunc, LPARAM lParam)
     ```
   

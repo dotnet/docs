@@ -78,7 +78,7 @@ Error message: "Another editor has '\<document name>' open in an incompatible mo
 
 This error arises if you try to open a file that is already opened in another editor. The editor that already has the file open is shown. To correct this error, close the editor that has the file open, and try again.
 
-## Another editor has made changes to '\<document name>'
+### Another editor has made changes to '\<document name>'
 
 Close and reopen the designer for the changes to take effect. Normally, Visual Studio automatically reloads a designer after changes are made. However, other designers, such as third-party component designers, may not support reload behavior. In this case, Visual Studio prompts you to close and reopen the designer manually.
 

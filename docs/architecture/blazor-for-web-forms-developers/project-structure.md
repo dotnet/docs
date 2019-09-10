@@ -228,12 +228,3 @@ To run the Blazor Server app simply hit F5 in Visual Studio. Because Blazor apps
 
 To run the Blazor WebAssembly app you can either run the client project directly using the dev server, or run the server project when hosting the app with ASP.NET Core. Blazor WebAssembly apps do not support debugging using Visual Studio, so to run the app use Ctrl-F5 instead of F5. You can instead debug Blazor WebAssembly apps directly in the browser. See [Debug ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/debug) for details.
 
-
-
-
-
-
-
-
-
-

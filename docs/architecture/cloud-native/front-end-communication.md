@@ -60,7 +60,7 @@ Like any API Gateway, its primary functionality is to forward incoming HTTP requ
 | Routing | Authentication |
 | Request Aggregation | Authorization |
 | Service Discovery (with Consul and Eureka) | Throttling |
-| Lad Balancing | Logging, Tracing |
+| Load Balancing | Logging, Tracing |
 | Caching | Headers/Query String Transformation |
 | Correlation Pass-Through | Custom Middleware |
 | Quality of Service | Retry Policies |

@@ -8,7 +8,7 @@ ms.date: 09/11/2019
 
 # Architecture comparison of ASP.NET Web Forms and Blazor
 
-While ASP.NET Web Forms and Blazor have many similar concepts, they also have differences in how they work. Here we will take a look at the innerworkings and architecture of ASP.NET Web Forms and Blazor to see how they compare.
+While ASP.NET Web Forms and Blazor have many similar concepts, they also have differences in how they work. Here, we'll examine the inner workings and architecture of ASP.NET Web Forms and Blazor to see how they compare.
 
 ## ASP.NET Web Forms
 
@@ -16,7 +16,7 @@ TODO
 
 ## Blazor
 
-Blazor is client-side web UI framework similar in nature to JavaScript front-end frameworks like Angular or React. Blazor handles user interactions and renders UI updates accordingly. Blazor is *not* based on a request-reply model. User interactions are handled as events that are not in the context of any particular HTTP request.
+Blazor is client-side web UI framework similar in nature to JavaScript front-end frameworks like Angular or React. Blazor handles user interactions and renders UI updates accordingly. Blazor is *not* based on a request-reply model. User interactions are handled as events that aren't in the context of any particular HTTP request.
 
 Blazor apps consist of one or more root components that are rendered on an HTML page.
 

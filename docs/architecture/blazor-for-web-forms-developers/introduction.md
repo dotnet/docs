@@ -29,7 +29,7 @@ Will ASP.NET Web Forms benefit from this move to open source and cross-platform 
 
 Does this mean ASP.NET Web Forms is *dead* and should no longer be used? Of course not! As long as the .NET Framework continues to ship as part of Windows, it will be a supported framework. If you don't have a requirement for cross-platform support or open source or any of the other new features in .NET Core or .NET 5, then sticking with ASP.NET Web Forms on Windows is just fine. ASP.NET Web Forms development will be alive and well for many years to come.
 
-But there is another trend worth considering, and that is the shift to the client.
+But there's another trend worth considering, and that's the shift to the client.
 
 ## Client-side web development
 

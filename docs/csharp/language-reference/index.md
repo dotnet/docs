@@ -32,7 +32,7 @@ This section provides reference material about C# keywords, operators, special c
  Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
   
  [C# Language Specification](../../../_csharplang/spec/introduction.md)  
- The C# 6.0 language specification. This is a draft proposal for the C# 6.0 language. Version 5.0 has been released in December 2017 as the [Standard ECMA-334 5th Edition](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf) document. This document will be refined through work with the ECMA C# standards committee.
+ The C# 6.0 language specification. This is a draft proposal for the C# 6.0 language. This document will be refined through work with the ECMA C# standards committee. Version 5.0 has been released in December 2017 as the [Standard ECMA-334 5th Edition](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf) document.
 
 The features that have been implemented in C# versions after 6.0 are represented in language specification proposals. These documents describe the deltas to the language spec in order to add these new features. These are in draft proposal form. These specifications will be refined and submitted to the ECMA standards committee for formal review and incorporation into a future version of the C# Standard.
 

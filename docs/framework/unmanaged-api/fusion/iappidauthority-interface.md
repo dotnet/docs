@@ -24,8 +24,8 @@ Provides methods that generate and compare keys for application identities and r
   
 |Method|Description|  
 |------------|-----------------|  
-|`IAppIdAuthority::AreDefinitionsEqual`|Gets a value that indicates whether the two specified [IDefinitionAppId](../../../../docs/framework/unmanaged-api/fusion/idefinitionappid-interface.md) instances are equal. You can pass the flag value IAPPIDAUTHORITY_ARE_DEFINITIONS_EQUAL_FLAG_IGNORE_VERSION to ignore their respective version information.|  
-|`IAppIdAuthority::AreReferencesEqual`|Gets a value that indicates whether the two specified [IReferenceAppId](../../../../docs/framework/unmanaged-api/fusion/ireferenceappid-interface.md) instances are equal. You can pass the flag value IAPPIDAUTHORITY_ARE_REFERENCES_EQUAL_FLAG_IGNORE_VERSION to ignore their respective version information.|  
+|`IAppIdAuthority::AreDefinitionsEqual`|Gets a value that indicates whether the two specified [IDefinitionAppId](idefinitionappid-interface.md) instances are equal. You can pass the flag value IAPPIDAUTHORITY_ARE_DEFINITIONS_EQUAL_FLAG_IGNORE_VERSION to ignore their respective version information.|  
+|`IAppIdAuthority::AreReferencesEqual`|Gets a value that indicates whether the two specified [IReferenceAppId](ireferenceappid-interface.md) instances are equal. You can pass the flag value IAPPIDAUTHORITY_ARE_REFERENCES_EQUAL_FLAG_IGNORE_VERSION to ignore their respective version information.|  
 |`IAppIdAuthority::AreTextualDefinitionsEqual`|Gets a value that indicates whether the two specified string definitions are equal. You can pass the flag value IAPPIDAUTHORITY_ARE_DEFINITIONS_EQUAL_FLAG_IGNORE_VERSION to ignore their respective version information.|  
 |`IAppIdAuthority::AreTextualReferencesEqual`|Gets a value that indicates whether the two specified string references are equal. You can pass the flag value IAPPIDAUTHORITY_ARE_REFERENCES_EQUAL_FLAG_IGNORE_VERSION to ignore their respective version information.|  
 |`IAppIdAuthority::CreateDefinition`|Gets an interface pointer to a newly generated `IDefinitionAppId` instance that represents the assembly in the current scope.|  
@@ -42,7 +42,7 @@ Provides methods that generate and compare keys for application identities and r
 |`IAppIdAuthority::TextToReference`|Gets an interface pointer to an `IReferenceAppId` instance that represents the assembly referenced by the specified string key.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   
@@ -50,4 +50,4 @@ Provides methods that generate and compare keys for application identities and r
   
 ## See also
 
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
+- [Fusion Interfaces](fusion-interfaces.md)

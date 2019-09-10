@@ -67,7 +67,7 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
 4. In the client code, create a `MetadataExchangeClient` and call `GetMetadata`.  
   
     ```csharp
-    MetadataExchangeClient mexClient = new MetadataExchangeClient(metadataAddress);  
+    var mexClient = new MetadataExchangeClient(metadataAddress);  
     mexClient.ResolveMetadataReferences = true;  
     MetadataSet metaDocs = mexClient.GetMetadata();  
     ```  
@@ -75,14 +75,14 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
 5. Create a `WsdlImporter` and call `ImportAllContracts`.  
   
     ```csharp
-    WsdlImporter importer = new WsdlImporter(metaDocs);
+    var importer = new WsdlImporter(metaDocs);
     System.Collections.ObjectModel.Collection<ContractDescription> contracts = importer.ImportAllContracts();  
     ```  
   
 6. Create a `ServiceContractGenerator` and call `GenerateServiceContractType` for each contract.  
   
     ```csharp
-    ServiceContractGenerator generator = new ServiceContractGenerator();  
+    var generator = new ServiceContractGenerator();  
     foreach (ContractDescription contract in contracts)  
     {  
        generator.GenerateServiceContractType(contract);  
@@ -95,5 +95,5 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
   
 ## See also
 
-- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
-- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)
+- [Metadata](../feature-details/metadata.md)
+- [How to: Import Custom WSDL](how-to-import-custom-wsdl.md)

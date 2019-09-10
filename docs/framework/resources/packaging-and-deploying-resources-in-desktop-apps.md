@@ -171,13 +171,13 @@ You can optionally remove resources from the main assembly and specify that the 
 
 The following .NET Framework example uses the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to store an application's fallback resources in a satellite assembly for the French (`fr`) language. The example has two text-based resource files that define a single string resource named `Greeting`. The first, resources.fr.txt, contains a French language resource.
 
-```
+```text
 Greeting=Bon jour!
 ```
 
 The second, resources,ru.txt, contains a Russian language resource.
 
-```
+```text
 Greeting=Добрый день
 ```
 
@@ -218,7 +218,7 @@ Because there are no resources embedded in the main assembly, you do not have to
 
 When you run the example from a system whose language is anything other than Russian, it displays the following output:
 
-```
+```output
 Bon jour!
 ```
 

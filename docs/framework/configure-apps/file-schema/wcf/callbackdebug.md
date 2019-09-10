@@ -6,11 +6,12 @@ ms.assetid: 4073feda-1857-4be4-9947-227afb847ced
 # \<callbackDebug>
 Specifies service debugging for a Windows Communication Foundation (WCF) callback object.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<endpointBehaviors>  
-\<behavior>  
-\<callbackDebug>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<callbackDebug>**  
   
 ## Syntax  
   

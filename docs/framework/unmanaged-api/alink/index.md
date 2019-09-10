@@ -13,26 +13,26 @@ ms.author: "mairaw"
 Supports creating .NET Framework assemblies and unbound modules.  
   
 ## In This Section  
- [AssemblyAttributesGoHere](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgohere.md)  
+ [AssemblyAttributesGoHere](assemblyattributesgohere.md)  
   
- [AssemblyAttributesGoHereM](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoherem.md)  
+ [AssemblyAttributesGoHereM](assemblyattributesgoherem.md)  
   
- [AssemblyAttributesGoHereS](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoheres.md)  
+ [AssemblyAttributesGoHereS](assemblyattributesgoheres.md)  
   
- [AssemblyAttributesGoHereSM](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoheresm.md)  
+ [AssemblyAttributesGoHereSM](assemblyattributesgoheresm.md)  
   
- [AssemblyOptions Enumeration](../../../../docs/framework/unmanaged-api/alink/assemblyoptions-enumeration.md)  
+ [AssemblyOptions Enumeration](assemblyoptions-enumeration.md)  
   
- [CreateALink Function](../../../../docs/framework/unmanaged-api/alink/createalink-function.md)  
+ [CreateALink Function](createalink-function.md)  
   
- [GetALinkMessageDll Function](../../../../docs/framework/unmanaged-api/alink/getalinkmessagedll-function.md)  
+ [GetALinkMessageDll Function](getalinkmessagedll-function.md)  
   
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink Interface](ialink-interface.md)  
   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
+ [IALink2 Interface](ialink2-interface.md)  
   
- [IALink3 Interface](../../../../docs/framework/unmanaged-api/alink/ialink3-interface.md)  
+ [IALink3 Interface](ialink3-interface.md)  
   
 ## See also
 
-- [Unmanaged API Reference](../../../../docs/framework/unmanaged-api/index.md)
+- [Unmanaged API Reference](../index.md)

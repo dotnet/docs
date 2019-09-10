@@ -20,7 +20,7 @@ Console.WriteLine(str);
   
  This example produces the following output:  
   
-```  
+```output  
 <Root Attr="abcde" />  
 abcde  
 ```  
@@ -39,7 +39,7 @@ Console.WriteLine(str);
   
  This example produces the following output:  
   
-```  
+```output  
 abcde  
 ```  
   

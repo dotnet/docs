@@ -68,10 +68,8 @@ public class DerivedFactory : ServiceHostFactory
   
  To use this factory instead of the default factory, provide the type name in the @ServiceHost directive as follows:  
   
-```  
-<% @ServiceHost Factory="DerivedFactory" Service="MyService" %>  
-```  
+`<% @ServiceHost Factory="DerivedFactory" Service="MyService" %>`  
   
- While there is no technical limit on doing what you want to the <xref:System.ServiceModel.ServiceHost> you return from <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%2A>, we suggest that you keep your factory implementations as simple as possible. If you have lots of custom logic, it is better to put that logic inside of you host instead of inside the factory so that it can be reusable.  
+ While there is no technical limit on doing what you want to the <xref:System.ServiceModel.ServiceHost> you return from <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%2A>, we suggest that you keep your factory implementations as simple as possible. If you have lots of custom logic, it is better to put that logic inside of your host instead of inside the factory so that it can be reusable.  
   
  There is one more layer to the hosting API that should be mentioned here. WCF also has <xref:System.ServiceModel.ServiceHostBase> and <xref:System.ServiceModel.Activation.ServiceHostFactoryBase>, from which <xref:System.ServiceModel.ServiceHost> and <xref:System.ServiceModel.Activation.ServiceHostFactory> respectively derive. Those exist for more advanced scenarios where you must swap out large parts of the metadata system with your own customized creations.

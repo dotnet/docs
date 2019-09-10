@@ -22,7 +22,7 @@ Use .NET Framework for your server application when:
 - Your app currently uses .NET Framework (recommendation is to extend instead of migrating).
 - Your app uses third-party .NET libraries or NuGet packages not available for .NET Core.
 - Your app uses .NET technologies that aren't available for .NET Core.
-- Your app uses a platform that doesn’t support .NET Core.
+- Your app uses a platform that doesn’t support .NET Core. Windows, macOS, and Linux support .NET Core.
 
 ## When to choose .NET Core
 
@@ -102,6 +102,6 @@ Some Microsoft or third-party platforms don’t support .NET Core. Some Azure se
 - [Target frameworks](frameworks.md)
 - [.NET Core Guide](../core/index.md)
 - [Porting from .NET Framework to .NET Core](../core/porting/index.md)
-- [Introduction to .NET and Docker](../core/docker/intro-net-docker.md)
+- [Introduction to .NET and Docker](../core/docker/introduction.md)
 - [.NET Components Overview](components.md)
 - [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md)

@@ -30,5 +30,5 @@ When you have an application that executes structurally similar queries many tim
 ## See also
 
 - <xref:System.Data.Linq.CompiledQuery>
-- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
-- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)
+- [Query Concepts](query-concepts.md)
+- [Querying the Database](querying-the-database.md)

@@ -17,7 +17,7 @@ Even so, with the rapid pace of innovation and change in software development, a
 1. The shift to open source and cross-platform
 2. The shift to the client
 
-## An open source and cross-platform .NET
+## An open-source and cross-platform .NET
 
 When .NET and ASP.NET Web Forms first shipped, the platform ecosystem looked very different than it does today. The desktop and server markets were strongly dominated by Windows, with alternative platforms like macOS and Linux still struggling to get traction. ASP.NET Web Forms ships with the .NET Framework as a Windows-only component, which means ASP.NET Web Forms apps can only run on Windows Server machines. Many modern environments now use a variety of platforms for servers and development machines such that cross-platform support for many users is an absolute requirement.
 

@@ -81,17 +81,9 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 The machine learning task used to train the price prediction model in this tutorial is binary classification. During the model training process, Model Builder trains separate models using different binary classification algorithms and settings to find the best performing model for your dataset.
 
-The time required for the model to train is proportionate to the amount of data. Use this chart as guidance to select an adequate value for the **Time to train (seconds)** field:
+The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source. 
 
-*Dataset Size  | Dataset Type       | Avg. Time to train*
-------------- | ------------------ | --------------
-0 - 10 Mb     | Numeric and Text   | 10 sec
-10 - 100 Mb   | Numeric and Text   | 10 min
-100 - 500 Mb  | Numeric and Text   | 30 min
-500 - 1 Gb    | Numeric and Text   | 60 min
-1 Gb+         | Numeric and Text   | 3 hour+
-
-1. Although the training data file is less than 10 MB, use 30 seconds as the value for **Time to train (seconds)**. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
+1. Although Model Builder sets the value of **Time to train (seconds)** to 10 seconds, increase it to 30 seconds. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
 1. Select **Start Training**.
 
     Throughout the training process, progress data is displayed in the `Progress` section of the train step.

@@ -49,7 +49,7 @@ But just being able to run .NET code in a browser doesn't give you an end-to-end
 
 Blazor shares a lot in common with ASP.NET Web Forms. Both frameworks are component-based, event-driven, stateful UI programming models. The main architectural difference is that ASP.NET Web Forms runs on the server, while Blazor can run on the client in the browser. But if you're coming from an ASP.NET Web Forms background, there's a lot in Blazor that will feel very familiar. Blazor is a natural solution for ASP.NET Web Forms developers looking for a way to take advantage of client-side development and the open-source, cross-platform future of .NET.
 
-This book gives an introduction to Blazor that is catered specifically to ASP.NET Web Forms developers. Each Blazor concept is presented in the context of analogous ASP.NET Web Forms features and practices. By the end of this book, you should have a solid understanding of how to build Blazor apps, how Blazor works, how it ties in with .NET Core, and also some reasonable strategies for migrating existing ASP.NET Web Forms apps to Blazor where appropriate.
+This book provides an introduction to Blazor that is catered specifically to ASP.NET Web Forms developers. Each Blazor concept is presented in the context of analogous ASP.NET Web Forms features and practices. By the end of this book, you should have a solid understanding of how to build Blazor apps, how Blazor works, how it ties in with .NET Core, and also some reasonable strategies for migrating existing ASP.NET Web Forms apps to Blazor where appropriate.
 
 ## Getting started with Blazor
 

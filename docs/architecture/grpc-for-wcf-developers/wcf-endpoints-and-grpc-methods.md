@@ -30,4 +30,4 @@ The `OperationContract` attribute has properties to control or refine how it wor
 See [chapter 6](authentication.md) for more information on gRPC security and encryption.
 
 >[!div class="step-by-step"]
-<!-->[Next](types-of-rpc.md)-->
+<!-->[Next](wcf-bindings.md)-->

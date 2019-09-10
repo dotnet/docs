@@ -64,4 +64,4 @@ catch (RpcException) // Handle any other error type ...
 Looking ahead, Google has developed a [richer error model](https://cloud.google.com/apis/design/errors#error_model) that is more like WCF's `FaultContract`, which is not yet supported in C#. Currently, it is only available for Go, Java, Python and C++ but is expected to be supported in C# within the next year.
 
 >[!div class="step-by-step"]
-<!-->[Next](migrating-wcf-to-grpc.md)-->
+<!-->[Next](ws-protocols.md)-->

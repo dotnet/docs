@@ -41,7 +41,7 @@ But having to bridge two different platforms and ecosystems (.NET and JavaScript
 
 ## WebAssembly to the rescue!
 
-In 2015 the major browser vendors joined forces in a W3C Community Group to create a new open web standard called WebAssembly. WebAssembly is a byte code for the Web. The idea is that if you can compile your code to WebAssembly, it can then run on any browser on any platform at near native speed. Initial efforts focused on C/C++, resulting in some pretty dramatic demonstrations of getting native 3D graphics engines running directly in the browser without any plugins. WebAssembly has since been standardized and implemented by all major browsers. Work on running .NET on WebAssembly was announced in late 2017 and is expected to ship in 2020, including support from .NET 5. The ability to run .NET code directly in the browser enables full-stack web development with .NET.
+In 2015, the major browser vendors joined forces in a W3C Community Group to create a new open web standard called WebAssembly. WebAssembly is a byte code for the Web. The idea is that if you can compile your code to WebAssembly, it can then run on any browser on any platform at near native speed. Initial efforts focused on C/C++, resulting in some pretty dramatic demonstrations of getting native 3D graphics engines running directly in the browser without any plugins. WebAssembly has since been standardized and implemented by all major browsers. Work on running .NET on WebAssembly was announced in late 2017 and is expected to ship in 2020, including support from .NET 5. The ability to run .NET code directly in the browser enables full-stack web development with .NET.
 
 ## Blazor: full-stack web development with .NET
 

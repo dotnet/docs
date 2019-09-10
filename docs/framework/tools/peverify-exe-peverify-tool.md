@@ -22,7 +22,7 @@ The PEVerify tool helps developers who generate Microsoft intermediate language 
   
 ## Syntax  
   
-```  
+```console  
 peverify filename [options]  
 ```  
   
@@ -62,25 +62,25 @@ peverify filename [options]
 ## Examples  
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`.  
   
-```  
+```console  
 peverify myAssembly.exe /md /il  
 ```  
   
  Upon successful completion of the above request, Peverify.exe displays the following message.  
   
-```  
+```output
 All classes and methods in myAssembly.exe Verified  
 ```  
   
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`. The tool displays the time required to perform these checks.  
   
-```  
+```console  
 peverify myAssembly.exe /md /il /clock  
 ```  
   
  Upon successful completion of the above request, Peverify.exe displays the following message.  
   
-```  
+```output
 All classes and methods in myAssembly.exe Verified  
 Timing: Total run     320 msec  
         MD Val.cycle  40 msec  
@@ -91,25 +91,25 @@ Timing: Total run     320 msec
   
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`. Peverify.exe stops, however, when it reaches the maximum error count of 100. The tool also ignores the specified error codes.  
   
-```  
+```console  
 peverify myAssembly.exe /break=100 /ignore=0x12345678,0xABCD1234  
 ```  
   
  The following command produces the same result as the above previous example, but specifies the error codes to ignore in the response file `ignoreErrors.rsp`.  
   
-```  
+```console  
 peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp  
 ```  
   
  The response file can contain a comma-separated list of error codes.  
   
-```  
+```text
 0x12345678, 0xABCD1234  
 ```  
   
  Alternatively, the response file can be formatted with one error code per line.  
   
-```  
+```text
 0x12345678  
 0xABCD1234  
 ```  

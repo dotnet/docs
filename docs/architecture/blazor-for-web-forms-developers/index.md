@@ -73,4 +73,4 @@ You can find the official Blazor home page and documentation at https://blazor.n
 This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
->[Next](intro.md)
+>[Next](introduction.md)

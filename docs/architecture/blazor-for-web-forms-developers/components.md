@@ -1,12 +1,12 @@
 ---
-title: Building reusable UI components with ASP.NET Web Forms and Blazor
-description: Building reusable UI components with ASP.NET Web Forms and Blazor.
+title: Building reusable UI components with Blazor
+description: Building reusable UI components with Blazor.
 author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019
 ---
 
-# Building reusable UI components with ASP.NET Web Forms and Blazor
+# Building reusable UI components with Blazor
 
 - Event handling
 - Post backs

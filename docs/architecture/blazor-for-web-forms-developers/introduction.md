@@ -15,7 +15,7 @@ Over the years, Microsoft has introduced new ASP.NET-based web frameworks to add
 Even so, with the rapid pace of innovation and change in software development, all software developers have a need to stay abreast of new technologies and trends, and this is true for ASP.NET Web Forms developers as well. Two trends in particular are worth examining: 
 
 1. The shift to open source and cross-platform.
-2. The shift to the client.
+2. The shift of application logic to the client.
 
 ## An open-source and cross-platform .NET
 

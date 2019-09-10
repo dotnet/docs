@@ -1,6 +1,6 @@
 ---
-title: "Design-Time Errors in the Windows Forms Designer"
-ms.date: "03/30/2017"
+title: Design-time errors in the Windows Forms Designer
+ms.date: 09/09/2019
 f1_keywords:
   - "DTELErrorList"
   - "WhyDTELPage"
@@ -12,44 +12,31 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ---
-# Design-time errors in the Windows Forms Designer
+# Windows Forms Designer error page
 
-This topic explains the meaning and use of the design-time error list that appears in Visual Studio when the Windows Forms Designer fails to load. If this error list appears, you should not interpret it as a bug in the designer, but as an aid to correcting errors in your code.
+If the Windows Forms Designer fails to load due to an error in your code, you'll see an error page instead of the designer. This error page does not signify a bug in the designer but rather somewhere in the code-behind page that's named \<your-form-name>.Designer.cs. Errors appear in collapsible, yellow  bars with a link to jump to the location of the error on the code page.
 
-A basic understanding of this error list will help you debug your applications by providing detailed information about the errors and suggesting possible solutions.
+![Windows Forms Designer error page](media/windows-forms-designer-error-page-collapsed.png)
 
-## The design-time error list interface
+You can choose to ignore the errors and continue loading the designer by clicking **Ignore and Continue**. This action may result in unexpected behavior, for example, controls may not appear on the design surface.
 
-If the Windows Forms Designer fails to load, an error list appears in the designer. The errors are grouped into categories. For example, if you have four instances of undeclared variables, these will be grouped into the same error category. Each error category includes a brief description that summarizes the error.
+## Instances of this error
 
-You can expand or collapse an error category by either clicking on the error category heading or by clicking the expand/collapse chevron. When you expand an error category, the following additional help is displayed:
+When the yellow error bar is expanded, each instance of the error is listed. Many error types include an exact location in the following format: *[Project Name]* *[Form Name]* Line:*[Line Number]* Column:*[Column Number]*. If a call stack is associated with the error, you can click the **Show Call Stack** link to see it. Examining the call stack may further help you resolve the error.
 
-- Instances of this error.
-
-- Help with this error.
-
-- Forum posts about this error.
-
-### Instances of this error
-
-The additional help list all instances of the error in your current project. Many errors include an exact location in the following format: *[Project Name]* *[Form Name]* Line:*[Line Number]* Column:*[Column Number]*. The **Go to code** link takes you to the location in your code where the error occurs.
-
-If a call stack is associated with the error, you can click the **Show Call Stack** link, which further expands the error to show the call stack. Examining the stack can provide valuable debugging information. For example, you can track the functions that were called before the error occurred. The call stack is selectable so that you can copy and save it.
+![Windows Forms Designer expanded error](media/windows-forms-designer-error-page-expanded.png)
 
 > [!NOTE]
-> In Visual Basic, the design-time error list does not display more than one error, but it may display multiple instances of the same error. In Visual C++, the errors do not have goto code links/line number links.
+> - For Visual Basic apps, the design-time error page does not display more than one error, but it may display multiple instances of the same error.
+> - For C++ apps, errors don't have code location links.
 
-### Forum posts about this error
+## Help with this error
 
-The additional help includes a link to forum posts related to the error. The forums are searched based on the string of the error message. You can also try searching on the following forums:
+If a help topic for the error is available, click the **MSDN Help** link to navigate directly to the help page on docs.microsoft.com.
 
-- [Windows Forms Designer forum](https://social.msdn.microsoft.com/Forums/windows/home?forum=winformsdesigner)
+## Forum posts about this error
 
-- [Windows Forms forum](https://social.msdn.microsoft.com/Forums/windows/home?category=windowsforms)
-
-### Ignore and continue
-
-You can choose to ignore the error condition and continue loading the designer. Choosing this action may result in unexpected behavior. For example, controls may not appear on the design surface.
+Click the **Search the MSDN Forums for posts related to this error** link to navigate to the Microsoft Developer Network forums. You may want to specifically search the [Windows Forms Designer](https://social.msdn.microsoft.com/Forums/windows/home?forum=winformsdesigner) or [Windows Forms](https://social.msdn.microsoft.com/Forums/windows/home?category=windowsforms) forums.
 
 ## See also
 

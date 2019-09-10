@@ -7,7 +7,24 @@ ms.date: 09/09/2019
 
 # Protobuf messages
 
-Let's look at a simple example of a Protobuf message, defining a `Stock` message.
+In WCF, a `Stock` class for a stock market trading application might be defined like this.
+
+```csharp
+[DataContract]
+public class Stock
+{
+    [DataMember]
+    public int Id { get; set;}
+    [DataMember]
+    public string Symbol { get; set;}
+    [DataMember]
+    public decimal Price { get; set;}
+    [DataMember]
+    public string DisplayName { get; set;}
+}
+```
+
+To implement the equivalent class in Protobuf, it must be declared in the `.proto` file. The `protoc` compiler will then generate the .NET class as part of the build process.
 
 ```protobuf
 syntax "proto3";
@@ -32,6 +49,13 @@ Field numbers are a very important part of Protobuf. They are used to identify f
 
 In the binary format, the field number is combined with a type identifier. Field numbers from 1 to 15 can be encoded with their type as a single byte; numbers from 16 to 2047 take two bytes. You can go higher if you need more than 2047 fields on a message for any reason. The single byte identifiers for field numbers 1 to 15 offer better performance, so you should use them for the most basic, frequently-used fields.
 
+## Types
+
+The type declarations are using Protobuf's native scalar data types, which are discussed in more detail in [the next section](protobuf-data-types.md). The remainder of this chapter will cover Protobuf's built-in types, and show how they relate to common .NET types.
+
+> [!NOTE]
+> Protobuf doesn't natively support a `decimal` type, so double is used instead. For applications that require full decimal precision, refer to the [section on Decimals](protobuf-data-types.md#Decimals) in the next part of this chapter.
+
 ## The generated code
 
 When you build your application, Protobuf will create classes for each of your messages, mapping its native types to C# types. The generated `Stock` type would have this signature:
@@ -48,7 +72,9 @@ public class Stock
 
 (The actual code generated is far more complicated than this, because each class contains all the code necessary to serialize and deserialize itself to the binary wire format.)
 
-Note that the Protobuf compiler applied `PascalCase` to the property names although they were `camelCase` in the `.proto` file. It is best to use `camelCase` in the message definition so that the code generation for other platforms produces the expected case for those conventions.
+### Property names
+
+Note that the Protobuf compiler applied `PascalCase` to the property names although they were `camelCase` in the `.proto` file. It is best to use `camelCase` in the message definition so that the code generation for other platforms produces the expected case for their conventions.
 
 >[!div class="step-by-step"]
 <!-->[Next](protobuf-data-types.md)-->

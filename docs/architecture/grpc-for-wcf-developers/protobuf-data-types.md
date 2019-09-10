@@ -95,6 +95,8 @@ Protobuf doesn't natively support the .NET `decimal` type, just `double` and `fl
 
 It is possible to create a message definition to represent the `decimal` type that would work for safe serialization between .NET clients and servers, but developers on other platforms would have to understand the format being used and implement their own handling for it.
 
+### Creating a custom Decimal type for Protobuf
+
 A very simple implementation could be similar to the non-standard `Money` type used by some Google APIs, without the `currency` field.
 
 ```protobuf

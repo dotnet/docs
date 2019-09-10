@@ -7,7 +7,7 @@ ms.date: 09/09/2019
 
 # Protobuf nested types
 
-You can nest message definitions within other messages:
+Just like C# allows you to declare classes inside other classes, Protobuf allows you to nest message definitions within other messages.
 
 ```protobuf
 message Outer {

@@ -7,7 +7,9 @@ ms.date: 09/09/2019
 
 # Protobuf Any and OneOf fields for variant types
 
-Protobuf provides two options for dealing with values that may be of more than one type. The `Any` type can represent any known Protobuf message type, while the `oneOf` keyword allows you to specify that only one of a range of fields can be set in any given message.
+Handling dynamic property types (i.e. properties of type `object`) in WCF is complicated. Serializers must be specified, `[KnownType]` attributes must be provided, and so on.
+
+Protobuf provides two simpler options for dealing with values that may be of more than one type. The `Any` type can represent any known Protobuf message type, while the `oneOf` keyword allows you to specify that only one of a range of fields can be set in any given message.
 
 ## Any
 

@@ -7,7 +7,7 @@ ms.date: 09/09/2019
 
 # Protobuf enumerations
 
-Protobuf supports enumerations and compiles them to C# `enum` types. Because Protobuf is designed for use with a variety of languages, the naming conventions for enumerations are different from what you might be used to with C#, but the code generator is clever and converts the names to traditional C# case: if the Pascal-case equivalent of the field name starts with the enumeration name, then it is removed.
+Protobuf supports enumeration types, as seen in the previous section where an `enum` was used to determine the type of a `oneof` field. You can define your own enumeration types and Protobuf will compile them to C# `enum` types. Because Protobuf is designed for use with a variety of languages, the naming conventions for enumerations are different from what you might be used to with C#, but the code generator is clever and converts the names to traditional C# case; if the Pascal-case equivalent of the field name starts with the enumeration name, then it is removed.
 
 For example, in this Protobuf enumeration the fields are prefixed with `ACCOUNT_STATUS`, which is equivalent to the Pascal case enum name: `AccountStatus`.
 

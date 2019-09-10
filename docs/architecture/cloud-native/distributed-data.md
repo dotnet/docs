@@ -34,5 +34,5 @@ This model enables each microservice to evolve independently without having to c
 Note how in the previous figure the product catalog and inventory microservices adopt relational databases, the ordering microservice, a NoSql document database and the shopping cart microservice, an external key-value store. While relational databases remain relevant for microservices with complex data, NoSQL databases have gained considerable popularity, providing adaptability, fast lookup, and high availability. Their schemaless nature allows developers to move away from an architecture of typed data classes and ORMs that make change expensive and time-consuming.
 
 >[!div class="step-by-step"]
->[Previous](cross-service-communication.md)
+>[Previous](service-mesh-communication-infrastructure.md)
 >[Next](data-patterns.md)

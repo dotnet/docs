@@ -1,11 +1,11 @@
 ---
-title: Service Mesh
+title: Service Mesh communication infrastructure
 description: Learn about how service mesh technologies streamline cloud-native microservice communication
 author: robvet
 ms.date: 09/09/2019
 ---
 
-# Service mesh
+# Service Mesh communication infrastructure
 
 Throughout this chapter, we've explored the challenges of microservice communication. We said that development teams need to be sensitive to how backend services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete operations.
 

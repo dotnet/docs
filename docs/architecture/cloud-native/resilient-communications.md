@@ -28,7 +28,7 @@ In the previous figure, note how the proxy intercepts and manages communication 
 
 A service mesh is logically split into two disparate components: A [data plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc) and [control plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc). Figure 6-10 shows these components and their responsibilities.
 
-![Service mesh control and data plane](media/istio-control-and-data-plane.png)
+<!-- ![Service mesh control and data plane](media/istio-control-and-data-plane.png) -->
 
 **Figure 6-10.** Service mesh control and data plane
 

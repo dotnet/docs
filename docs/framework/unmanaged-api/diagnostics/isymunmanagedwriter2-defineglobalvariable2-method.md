@@ -23,7 +23,7 @@ Defines a single global variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineGlobalVariable2(  
     [in] const WCHAR  *name,  
     [in] ULONG32      attributes,  

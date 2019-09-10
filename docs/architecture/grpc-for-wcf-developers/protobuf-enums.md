@@ -37,8 +37,8 @@ public enum AccountStatus
 Protobuf enumeration definitions **must** have a zero constant as their first field. As in C#, you can declare multiple fields with the same value, but you have to explicitly enable this option using the `allow_alias` option in the enum:
 
 ```protobuf
-enum PhotoType {
-    option allow_alias = true;
+enum AccountStatus {
+  option allow_alias = true;
   ACCOUNT_STATUS_UNKNOWN = 0;
   ACCOUNT_STATUS_PENDING = 1;
   ACCOUNT_STATUS_ACTIVE = 2;

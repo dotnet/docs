@@ -18,36 +18,36 @@ syntax "proto3"
 
 import "google/protobuf/any.proto"
 
-message Car {
-    // Car-specific data
+message Stock {
+    // Stock-specific data
 }
 
-message Motorcycle {
-    // Bike-specific data
+message Currency {
+    // Currency-specific data
 }
 
-message Incident {
+message ChangeNotification {
     int32 id = 1;
-    google.protobuf.Any vehicle = 2;
+    google.protobuf.Any instrument = 2;
 }
 ```
 
 In the C# code, the `Any` type provides methods for setting the field, extracting the message and checking the type.
 
 ```csharp
-public void FormatVehicleData(Incident incident)
+public void FormatChangeNotification(ChangeNotification change)
 {
-    if (incident.Vehicle.Is(Car.Descriptor))
+    if (change.Instrument.Is(Stock.Descriptor))
     {
-        FormatCarData(incident.Vehicle.Unpack<Car>());
+        FormatStock(change.Instrument.Unpack<Stock>());
     }
-    else if (incident.Vehicle.Is(Motorcycle.Descriptor))
+    else if (change.Instrument.Is(Currency.Descriptor))
     {
-        FormatMotorcycleData(incident.Vehicle.Unpack<Motorcycle>());
+        FormatCurrency(change.Instrument.Unpack<Currency>());
     }
     else
     {
-        throw new ArgumentException("Unknown vehicle type");
+        throw new ArgumentException("Unknown instrument type");
     }
 }
 ```
@@ -56,22 +56,22 @@ The `Descriptor` static field on each generated type is used by Protobuf's inter
 
 ## OneOf
 
-Whereas `Any` is a well-known type, `oneof` is a Protobuf language keyword. Using `oneof` to specify the `Incident` message might look like this:
+Whereas `Any` is a well-known type, `oneof` is a Protobuf language keyword. Using `oneof` to specify the `ChangeNotification` message might look like this:
 
 ```protobuf
-message Car {
-    // Car-specific data
+message Stock {
+    // Stock-specific data
 }
 
-message Motorcycle {
-    // Bike-specific data
+message Currency {
+    // Currency-specific data
 }
 
-message Incident {
+message ChangeNotification {
   int32 id = 1;
-  oneof vehicle {
-    Car car = 2;
-    Motorcycle motorcycle = 3;
+  oneof instrument {
+    Stock stock = 2;
+    Currency currency = 3;
   }
 }
 ```
@@ -79,20 +79,20 @@ message Incident {
 When you use `oneof`, the generated C# includes an `enum` that specifies which of the fields has been set. You can use test the `enum` to find which field is set. Fields that are not set will return `null` or the default value, rather than throwing an exception.
 
 ```csharp
-public void FormatVehicleData(Incident incident)
+public void FormatChangeNotification(ChangeNotification change)
 {
-    switch (incident.VehicleCase)
+    switch (change.InstrumentCase)
     {
-        case Incident.VehicleOneofCase.None:
+        case ChangeNotification.InstrumentOneofCase.None:
             return;
-        case Incident.VehicleOneofCase.Car:
-            FormatCarData(incident.Car);
+        case ChangeNotification.InstrumentOneofCase.Stock:
+            FormatStock(change.Stock);
             break;
-        case Incident.VehicleOneofCase.Motorcycle:
-            FormatMotorcycleData(incident.Motorcycle);
+        case ChangeNotification.InstrumentOneofCase.Currency:
+            FormatCurrency(change.Currency);
             break;
         default:
-            throw new ArgumentException("Unknown vehicle type");
+            throw new ArgumentException("Unknown instrument type");
     }
 }
 ```

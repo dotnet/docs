@@ -108,12 +108,14 @@ The following lists the recommended packages:
   - **Example:** dotnet-sdk-2.1
   - **Contains:** (3),(4)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
+  - **Provides shared directory:** `{dotnet_root}/sdk`, `{dotnet_root}/sdk/NuGetFallbackFolder`
 
 - `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime
   - **Version:** \<aspnetcore runtime version>
   - **Example:** aspnetcore-runtime-2.1
   - **Contains:** (6)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`
+  - **Provides shared directory:** `{dotnet_root}/shared/Microsoft.AspNetCore.App`, `{dotnet_root}/shared/Microsoft.AspNetCore.All`
 
 - `dotnet-runtime-deps-[major].[minor]` _(Optional)_ - Installs the dependencies for running self-contained applications
   - **Version:** \<runtime version>
@@ -125,37 +127,50 @@ The following lists the recommended packages:
   - **Example:** dotnet-runtime-2.1
   - **Contains:** (5)
   - **Dependencies:** `dotnet-hostfxr-[major].[minor]:<runtime version>`, `dotnet-runtime-deps-[major].[minor]`
+  - **Provides shared directory:** `{dotnet_root}/shared`, `{dotnet_root}/shared/Microsoft.NETCore.App`
 
 - `dotnet-hostfxr-[major].[minor]` - dependency
   - **Version:** \<runtime version>
   - **Example:** dotnet-hostfxr-3.0
   - **Contains:** (2)
   - **Dependencies:** `dotnet-host:<runtime version>`
+  - **Provides shared directory:** `{dotnet_root}/host/fxr`
 
 - `dotnet-host` - dependency
   - **Version:** \<runtime version>
   - **Example:** dotnet-host
   - **Contains:** (1),(8),(9),(10),(16)
+  - **Provides shared directory:** `{dotnet_root}`, `{dotnet_root}/host`
 
 - `dotnet-apphost-pack-[major].[minor]` - dependency
   - **Version:** \<runtime version>
   - **Contains:** (13)
+  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
+  - **Provides shared directory:** `{dotnet_root}/packs`, `{dotnet_root}/packs/Microsoft.NETCore.App.Host.<rid>`
 
 - `dotnet-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
   - **Version:** \<runtime version>
   - **Contains:** (12)
+  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
+  - **Provides shared directory:** `{dotnet_root}/packs`, `{dotnet_root}/packs/Microsoft.NETCore.App.Ref`
 
 - `aspnetcore-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
   - **Version:** \<aspnetcore runtime version>
   - **Contains:** (11)
+  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
+  - **Provides shared directory:** `{dotnet_root}/packs`, `{dotnet_root}/packs/Microsoft.AspNetCore.App.Ref`
 
 - `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version
   - **Version:** \<sdk version>
   - **Contains:** (15)
+  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
+  - **Provides shared directory:** `{dotnet_root}/packs`, `{dotnet_root}/packs/NETStandard.Library.Ref`
 
 - `dotnet-templates-[major].[minor]`
   - **Version:** \<sdk version>
   - **Contains:** (15)
+  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
+  - **Provides shared directory:** `{dotnet_root}/templates`
 
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 

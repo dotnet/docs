@@ -1,7 +1,7 @@
 ---
 title: "= operator - C# reference"
 ms.custom: seodec18
-ms.date: 09/09/2019
+ms.date: 09/10/2019
 f1_keywords: 
   - "=_CSharpKeyword"
 helpviewer_keywords: 
@@ -58,7 +58,7 @@ Compound assignment is supported by [arithmetic](arithmetic-operators.md#compoun
 
 ## Null-coalescing assignment
 
-Beginning with C# 8.0, you can use the null-coalescing assignment operator `??=` to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand is null. For more information, see the [?? and ??= operators](null-coalescing-operator.md) article.
+Beginning with C# 8.0, you can use the null-coalescing assignment operator `??=` to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. For more information, see the [?? and ??= operators](null-coalescing-operator.md) article.
 
 ## Operator overloadability
 

@@ -1,7 +1,7 @@
 ---
 title: What's New in C# 8.0 - C# Guide
 description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
-ms.date: 09/09/2019
+ms.date: 09/10/2019
 ---
 # What's new in C# 8.0
 
@@ -445,7 +445,7 @@ You can explore more about indices and ranges in the tutorial on [indices and ra
 
 ## Null-coalescing assignment
 
-C# 8.0 introduces the null-coalescing assignment operator `??=`. You can use the `??=` operator to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand is null.
+C# 8.0 introduces the null-coalescing assignment operator `??=`. You can use the `??=` operator to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`.
 
 ```csharp
 List<int> numbers = null;

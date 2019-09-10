@@ -13,7 +13,7 @@ This chapter covers how Protobuf works, and how to define your own Protobuf mess
 
 ## How Protobuf works
 
-Most .NET object serialization techniques, including WCF's DataContracts, work by using reflection to analyze the object structure at run-time. By contrast, Protobuf requires you to define the structure up front using a dedicated language (*Protocol Buffer Language*) in a `.proto` file. This is then used to generate code for any of the supported platforms, including .NET, Java, C/C++, JavaScript and many more. The Protobuf compiler, `protoc`, is maintained by Google, although alternative implementations are available. The generated code is very efficient and optimized for fast serialization/deserialization of data.
+Most .NET object serialization techniques, including WCF's DataContracts, work by using reflection to analyze the object structure at run-time. By contrast, most Protobuf libraries require you to define the structure up front using a dedicated language (*Protocol Buffer Language*) in a `.proto` file. This is then used by a compiler to generate code for any of the supported platforms, including .NET, Java, C/C++, JavaScript and many more. The Protobuf compiler, `protoc`, is maintained by Google, although alternative implementations are available. The generated code is very efficient and optimized for fast serialization/deserialization of data.
 
 The Protobuf wire format itself is a binary encoding, which uses some clever tricks to minimize the number of bytes used to represent messages. Knowledge of the binary encoding format is not necessary to use Protobuf, but if you are interested you can learn more about it on [the Protocol Buffers web site](https://developers.google.com/protocol-buffers/docs/encoding).
 

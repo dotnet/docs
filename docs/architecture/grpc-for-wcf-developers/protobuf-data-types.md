@@ -38,7 +38,13 @@ Protobuf supports a range of native scalar value types. This table lists them al
 
 ### Dates and times
 
-The native scalar types do not provide for date and time values, equivalent to C#'s `DateTimeOffset`, `DateTime` and `TimeSpan`. These types can be specified using some of Google's "Well Known Types" extensions, which provide code generation and runtime support for more complex field types across the supported platforms. To use them, you need to import them in your `.proto` file, like this:
+The native scalar types do not provide for date and time values, equivalent to C#'s `DateTimeOffset`, `DateTime` and `TimeSpan`. These types can be specified using some of Google's "Well Known Types" extensions, which provide code generation and runtime support for more complex field types across the supported platforms. The date and time types are as follows
+
+| C# type | Protobuf well-known type |
+| ------- | ------------------------ |
+| DateTimeOffset | google.protobuf.Timestamp |
+| DateTime | google.protobuf.Timestamp |
+| TimeSpan | google.protobuf.Duration |
 
 ```protobuf  
 syntax = "proto3"
@@ -54,6 +60,24 @@ message Meeting {
 
 }  
 ```
+
+The generated properties in the C# class are not the .NET date and time types. The properties use the `Timestamp` and `Duration` classes in the `Google.Protobuf.WellKnownTypes` namespace, which provide methods for converting to and from `DateTimeOffset`, `DateTime` and `TimeSpan`.
+
+```csharp
+// Creating from .NET types
+var meeting = new Meeting
+{
+    Time = Timestamp.FromDateTimeOffset(meetingTime), // also FromDateTime()
+    Duration = Duration.FromTimeSpan(meetingLength)
+};
+
+// Converting to .NET types
+DateTimeOffset time = meeting.Time.ToDateTimeOffset();
+TimeSpan? duration = meeting.Duration?.ToTimeSpan();
+```
+
+> [!NOTE]
+> The `Timestamp` type works with UTC times; `DateTimeOffset` values will always have an offset of zero, and `DateTime` will have a Kind of UTC.
 
 ### System.Guid
 
@@ -89,6 +113,8 @@ Here is the complete list of wrapper types with their equivalent C# type:
 | uint?   | google.protobuf.UInt32Value |
 | ulong?  | google.protobuf.UInt64Value |
 
+The well-known types `Timestamp` and `Duration` are represented in .NET as classes so there is no need for a nullable version, but it is important to check for null on properties of those types when converting to `DateTimeOffset` or `TimeSpan`.
+
 ## Decimals
 
 Protobuf doesn't natively support the .NET `decimal` type, just `double` and `float`. There is an ongoing discussion in the Protobuf project about the possibility of adding a standard `Decimal` type to the well-known types, with platform support for languages and frameworks that support it, but nothing has been implemented yet.
@@ -117,14 +143,14 @@ message Decimal {
 The `nanos` field represents values from `0.999_999_999` to `-0.999_999_999`. For example, the `decimal` value `1.5m` would be represented as `{ units = 1, nanos = 500_000_000 }` (this is why the `nanos` field in this example uses the `sfixed32` type, which encodes more efficiently than `int32` for larger values). If the `units` field is negative, the `nanos` field should also be negative.
 
 > [!NOTE]
-> There are multiple algorithms for encoding `decimal` values as byte strings, but this message is much easier to understand than any of them, and the values are not affected by *[endianness](https://en.wikipedia.org/wiki/Endianness)* on different platforms.
+> There are multiple other algorithms for encoding `decimal` values as byte strings, but this message is much easier to understand than any of them, and the values are not affected by *[endianness](https://en.wikipedia.org/wiki/Endianness)* on different platforms.
 
 Conversion between this type and the BCL `decimal` type could be implemented in C# like this.
 
 ```csharp
 namespace CustomTypes
 {
-    public partial class Decimal
+    public partial class GrpcDecimal
     {
         private const decimal NanoFactor = 1_000_000_000;
         public GrpcDecimal(long units, int nanos)

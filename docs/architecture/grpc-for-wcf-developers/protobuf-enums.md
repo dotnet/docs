@@ -50,5 +50,25 @@ enum AccountStatus {
 
 You can declare enumerations at the top level in a `.proto` file, or nested within a message definition. Nested enumerations&mdash;like nested messages&mdash;will be declared within the `.Types` static class in the generated message class.
 
+There is no way to apply the [`[Flags] attribute`](https://docs.microsoft.com/dotnet/api/system.flagsattribute?view=netcore-3.0) to a Protobuf-generated enum, and Protobuf does not understand bitwise enum combinations. Take the following example.
+
+```protobuf
+enum Region {
+  REGION_NONE = 0;
+  REGION_NORTH_AMERICA = 1;
+  REGION_SOUTH_AMERICA = 2;
+  REGION_EMEA = 4;
+  REGION_APAC = 8;
+}
+
+message Product {
+  Region availableIn = 1;
+}
+```
+
+If you set `product.AvailableIn` to `Region.NorthAmerica | Region.SouthAmerica` it will be serialized as the integer value `3`. When a client or server tries to deserialize the value, it will not find a match in the enum definition for `3` and the result will be `Region.None`.
+
+The best way to work with multiple enum values in Protobuf is to use a `repeated` field of the enum type.
+
 >[!div class="step-by-step"]
 <!-->[Next](protobuf-maps.md)-->

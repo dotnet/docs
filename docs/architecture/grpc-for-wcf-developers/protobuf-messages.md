@@ -18,9 +18,9 @@ public class Stock
     [DataMember]
     public string Symbol { get; set;}
     [DataMember]
-    public decimal Price { get; set;}
-    [DataMember]
     public string DisplayName { get; set;}
+    [DataMember]
+    public int MarketId { get; set; }
 }
 ```
 
@@ -33,8 +33,8 @@ message Stock {
 
     int32 id = 1;
     string symbol = 2;
-    double price = 3;
-    string displayName = 4;
+    string displayName = 3;
+    int32 marketId = 4;
 
 }  
 ```
@@ -65,8 +65,8 @@ public class Stock
 {
     public int Id { get; set; }
     public string Symbol { get; set; }
-    public double Price { get; set; }
     public string DisplayName { get; set; }
+    public int MarketId { get; set; }
 }
 ```
 

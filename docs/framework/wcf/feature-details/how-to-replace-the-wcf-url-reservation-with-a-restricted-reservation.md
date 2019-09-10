@@ -10,7 +10,7 @@ A URL reservation allows you to restrict who can receive messages from a URL or 
   
  On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)] you can view all of the HTTP URL reservations from an elevated command prompt by typing `netsh http show urlacl`.  The following example shows what a WCF URL reservation should resemble.  
   
-```  
+```console
 Reserved URL : http://+:80/Temporary_Listen_Addresses/  
         User: \Everyone  
             Listen: Yes  

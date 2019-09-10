@@ -60,9 +60,7 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
 4. Create a Service.svc file that contains the following code.  
   
-    ```  
-    <%@ServiceHost language=c# Service="CalculatorService" %>   
-    ```  
+    `<%@ServiceHost language=c# Service="CalculatorService" %>`  
   
 5. Place the Service.svc file in your IIS virtual directory.  
   
@@ -70,8 +68,8 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
 1. Use [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) from the command line to generate code from service metadata.  
   
-    ```  
-    Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>   
+    ```console
+    Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
     ```  
   
 2. The client that is generated contains the `ICalculator` interface that defines the service contract that the client implementation must satisfy.  

@@ -1,7 +1,7 @@
 ---
 title: "?? and ??= operators - C# reference"
 ms.custom: seodec18
-ms.date: 09/09/2019
+ms.date: 09/11/2019
 f1_keywords: 
   - "??_CSharpKeyword"
   - "??=_CSharpKeyword"
@@ -16,33 +16,29 @@ ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
 
 The null-coalescing operator `??` returns the value of its left-hand operand if it isn't `null`; otherwise, it evaluates the right-hand operand and returns its result. The `??` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
 
-The null-coalescing operator is right-associative, that is, an expression of the form
-
-```csharp
-a ?? b ?? c
-```
-
-is evaluated as
-
-```csharp
-a ?? (b ?? c)
-```
-
-In C# 7.3 and earlier, the type of the left-hand operand must be either a reference type or a [nullable value type](../../programming-guide/nullable-types/index.md). Beginning with C# 8.0, that requirement is replaced with the following: the type of the left-hand operand cannot be a non-nullable value type. In particular, you can use the null-coalescing operator with unconstrained type parameters:
-
-[!code-csharp[unconstrained type parameter](~/samples/csharp/language-reference/operators/NullCoalescingOperator.cs#UnconstrainedType)]
-
-## Null-coalescing assignment
-
-Available in C# 8.0 and later, the null-coalescing assignment operator `??=` assigns the value of its right-hand operand to its left-hand operand only if the left-hand operand is null. The `??=` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
+Available in C# 8.0 and later, the null-coalescing assignment operator `??=` assigns the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. The `??=` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
 
 [!code-csharp[null-coalescing assignment](~/samples/csharp/language-reference/operators/NullCoalescingOperator.cs#Assignment)]
 
-Unlike with [compound assignment operators](assignment-operator.md#compound-assignment), the type of the result of the `??=` operator may differ from the type of its left-hand operand. For expression `a ??= b`, if `a` is of a nullable value type `T?` and `b` is implicitly convertible to the corresponding underlying type `T`, the type of the result of `a ??= b` is `T`. The null-coalescing operator `??` also behaves that way.
+The left-hand operand of the `??=` operator must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md), or an [indexer](../../programming-guide/indexers/index.md) element. For more information about null-coalescing assignment, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md).
 
-[!code-csharp[type of null-coalescing assignment](~/samples/csharp/language-reference/operators/NullCoalescingOperator.cs#TypeOfResult)]
+In C# 7.3 and earlier, the type of the left-hand operand of the `??` operator must be either a reference type or a [nullable value type](../../programming-guide/nullable-types/index.md). Beginning with C# 8.0, that requirement is replaced with the following: the type of the left-hand operand of the `??` and `??=` operators cannot be a non-nullable value type. In particular, you can use the null-coalescing operators with unconstrained type parameters:
 
-For more information, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md).
+[!code-csharp[unconstrained type parameter](~/samples/csharp/language-reference/operators/NullCoalescingOperator.cs#UnconstrainedType)]
+
+The null-coalescing operators are right-associative. That is, expressions of the form
+
+```csharp
+a ?? b ?? c
+d ??= e ??= f
+```
+
+are evaluated as
+
+```csharp
+a ?? (b ?? c)
+d ??= (e ??= f)
+```
 
 ## Use cases
 
@@ -85,7 +81,7 @@ The operators `??` and `??=` cannot be overloaded.
 
 ## C# language specification
 
-For more information, see [The null coalescing operator](~/_csharplang/spec/expressions.md#the-null-coalescing-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information about the `??` operator, see [The null coalescing operator](~/_csharplang/spec/expressions.md#the-null-coalescing-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 

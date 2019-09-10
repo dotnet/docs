@@ -1,6 +1,6 @@
 ---
 title: Templates and Styles in WPF - .NET Core Desktop Guide
-description: Learn about XAML resources in WPF for .NET Core. Understand the types of XAML resources and learn how to define XAML resources.
+description: Learn about XAML resources in Windows Presentation Foundation (WPF) for .NET Core. Understand the types of XAML resources related to styles and themes.
 author: thraka
 ms.author: adegeo
 ms.date: 09/09/2019
@@ -8,7 +8,7 @@ ms.date: 09/09/2019
 
 # Styling and Templating
 
-Windows Presentation Foundation (WPF) styling and templating refer to a suite of features (styles, templates, triggers, and storyboards) that allow developers and designers to create visually compelling effects and to create a consistent appearance for their product. Although developers and or designers can customize the appearance extensively on an application-by-application basis, a strong styling and templating model is necessary to allow maintenance and sharing of the appearance within and among applications. Windows Presentation Foundation (WPF) provides that model.
+Windows Presentation Foundation (WPF) styling and templating refer to a suite of features that allow developers and designers to create visually compelling effects along with consistent appearance for their product. Although developers and designers can customize the appearance of an application, a strong styling and templating model is necessary to allow maintenance and sharing of the appearance within and among applications. Windows Presentation Foundation (WPF) provides that model.
 
 Another feature of the WPF styling model is the separation of presentation and logic. Meaning, designers can work on the appearance of an application by using only XAML at the same time that developers work on the programming logic by using C# or Visual Basic.
 
@@ -32,7 +32,7 @@ You can think of a <xref:System.Windows.Style> as a convenient way to apply a se
 
 [!code-xaml[StylingIntroSample_snippet#TextBlocks](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#textblocks)]
 
-![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbefore.PNG "StylingIntro_TextBlocksBefore")
+![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbefore.png "StylingIntro_TextBlocksBefore")
 
 You can change the default appearance by setting properties, such as <xref:System.Windows.Controls.Control.FontSize%2A> and <xref:System.Windows.Controls.Control.FontFamily%2A>, on each <xref:System.Windows.Controls.TextBlock> element directly. However, if you want your <xref:System.Windows.Controls.TextBlock> elements to share some properties, you can create a <xref:System.Windows.Style> in the `Resources` section of your XAML file, as shown here:
 
@@ -42,7 +42,7 @@ When you set the <xref:System.Windows.Style.TargetType%2A> of your style to the 
 
 Now the <xref:System.Windows.Controls.TextBlock> elements appear as follows:
 
-![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbasestyle.PNG "StylingIntro_TextBlocksBaseStyle")
+![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbasestyle.png "StylingIntro_TextBlocksBaseStyle")
 
 ### Extending Styles
 
@@ -78,18 +78,18 @@ In addition, you can find more information about styles and resources in [Shared
 
 ### Setting Styles Programmatically
 
-To assign a named style to an element programmatically, get the style from the resources collection and assign it to the element's <xref:System.Windows.FrameworkElement.Style%2A> property. Note that the items in a resources collection are of type <xref:System.Object>. Therefore, you must cast the retrieved style to a <xref:System.Windows.Style> before assigning it to the <xref:System.Windows.FrameworkElement.Style%2A> property. For example, to set the defined `TitleText` style on a <xref:System.Windows.Controls.TextBlock> named `textblock1`, do the following:
+To assign a named style to an element programmatically, get the style from the resources collection and assign it to the element's <xref:System.Windows.FrameworkElement.Style%2A> property. The items in a resources collection are of type <xref:System.Object>. Therefore, you must cast the retrieved style to a <xref:System.Windows.Style> before assigning it to the <xref:System.Windows.FrameworkElement.Style%2A> property. For example, to set the defined `TitleText` style on a <xref:System.Windows.Controls.TextBlock> named `textblock1`, do the following:
 
 [!code-csharp[StylingIntroSample_snippet#Code](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml.cs#code)]
 [!code-vb[StylingIntroSample_snippet#Code](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylingIntroSample_snippet/visualbasic/window1.xaml.vb#code)]
 
-Note that once a style has been applied, it is sealed and cannot be changed. If you want to dynamically change a style that has already been applied, you must create a new style to replace the existing one. For more information, see the <xref:System.Windows.Style.IsSealed%2A> property.
+Once a style has been applied, it is sealed and cannot be changed. If you want to dynamically change a style that has already been applied, you must create a new style to replace the existing one. For more information, see the <xref:System.Windows.Style.IsSealed%2A> property.
 
 You can create an object that chooses a style to apply based on custom logic. For an example, see the example provided for the <xref:System.Windows.Controls.StyleSelector> class.
 
 ### Bindings, Dynamic Resources, and Event Handlers
 
-Note that you can use the `Setter.Value` property to specify a [Binding Markup Extension](../../framework/wpf/advanced/binding-markup-extension.md) or a [DynamicResource Markup Extension](../../framework/wpf/advanced/dynamicresource-markup-extension.md). For more information, see the examples provided for the <xref:System.Windows.Setter.Value%2A?displayProperty=nameWithType> property.
+You can use the `Setter.Value` property to specify a [Binding Markup Extension](../../framework/wpf/advanced/binding-markup-extension.md) or a [DynamicResource Markup Extension](../../framework/wpf/advanced/dynamicresource-markup-extension.md). For more information, see the examples provided for the <xref:System.Windows.Setter.Value%2A?displayProperty=nameWithType> property.
 
 So far, this overview only discusses the use of setters to set property value. You can also specify event handlers in a style. For more information, see <xref:System.Windows.EventSetter>.
 
@@ -111,7 +111,7 @@ For the photos to appear as images, you create a <xref:System.Windows.DataTempla
 
 [!code-xaml[StylingIntroSnippet#DataTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#datatemplate)]
 
-Notice that the <xref:System.Windows.DataTemplate.DataType%2A> property is very similar to the <xref:System.Windows.Style.TargetType%2A> property of the <xref:System.Windows.Style>. If your <xref:System.Windows.DataTemplate> is in the resources section, when you specify the <xref:System.Windows.DataTemplate.DataType%2A> property to a type and omit an `x:Key`, the <xref:System.Windows.DataTemplate> is applied whenever that type appears. You always have the option to assign the <xref:System.Windows.DataTemplate> with an `x:Key` and then set it as a `StaticResource` for properties that take <xref:System.Windows.DataTemplate> types, such as the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property or the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property.
+Notice that the <xref:System.Windows.DataTemplate.DataType%2A> property is similar to the <xref:System.Windows.Style.TargetType%2A> property of the <xref:System.Windows.Style>. If your <xref:System.Windows.DataTemplate> is in the resources section, when you specify the <xref:System.Windows.DataTemplate.DataType%2A> property to a type and omit an `x:Key`, the <xref:System.Windows.DataTemplate> is applied whenever that type appears. You always have the option to assign the <xref:System.Windows.DataTemplate> with an `x:Key` and then set it as a `StaticResource` for properties that take <xref:System.Windows.DataTemplate> types, such as the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property or the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property.
 
 Essentially, the <xref:System.Windows.DataTemplate> in the above example defines that whenever there is a `Photo` object, it should appear as an <xref:System.Windows.Controls.Image> within a <xref:System.Windows.Controls.Border>. With this <xref:System.Windows.DataTemplate>, our application now looks like this:
 
@@ -121,7 +121,7 @@ The data templating model provides other features. For example, if you are displ
 
 ## Control Templates
 
-In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> for the control. In many cases, this gives you enough flexibility so that you do not have to write your own custom controls. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).
+In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> for the control. In many cases, this gives you enough flexibility so that you do not have to write your own custom controls. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).
 
 ## Triggers
 
@@ -162,27 +162,27 @@ In addition to <xref:System.Windows.Trigger> and <xref:System.Windows.EventTrigg
 
 A typical Windows Presentation Foundation (WPF) application might have multiple user interface (UI) resources that are applied throughout the application. Collectively, this set of resources can be considered the theme for the application. WPF provides support for packaging user interface (UI) resources as a theme by using a resource dictionary that is encapsulated as the <xref:System.Windows.ResourceDictionary> class.
 
-WPF themes are defined by using the styling and templating mechanism that WPF exposes for customizing the visuals of any element.  
+WPF themes are defined by using the styling and templating mechanism that WPF exposes for customizing the visuals of any element.
 
-WPF theme resources are stored in embedded resource dictionaries. These resource dictionaries must be embedded within a signed assembly, and can either be embedded in the same assembly as the code itself or in a side-by-side assembly. In the case of PresentationFramework.dll, the assembly which contains WPF controls, theme resources are in a series of side-by-side assemblies.  
+WPF theme resources are stored in embedded resource dictionaries. These resource dictionaries must be embedded within a signed assembly, and can either be embedded in the same assembly as the code itself or in a side-by-side assembly. For PresentationFramework.dll, the assembly that contains WPF controls, theme resources are in a series of side-by-side assemblies.
 
-The theme becomes the last place to look when searching for the style of an element. Typically, the search will begin by walking up the element tree searching for an appropriate resource, then look in the application resource collection and finally query the system. This gives application developers a chance to redefine the style for any object at the tree or application level before reaching the theme.  
+The theme becomes the last place to look when searching for the style of an element. Typically, the search will begin by walking up the element tree searching for an appropriate resource, then look in the application resource collection and finally query the system. This gives application developers a chance to redefine the style for any object at the tree or application level before reaching the theme.
 
-You can define resource dictionaries as individual files that enable you to reuse a theme across multiple applications. You can also create swappable themes by defining multiple resource dictionaries that provide the same types of resources but with different values. Redefining these styles or other resources at the application level is the recommended approach for skinning an application.  
+You can define resource dictionaries as individual files that enable you to reuse a theme across multiple applications. You can also create swappable themes by defining multiple resource dictionaries that provide the same types of resources but with different values. Redefining these styles or other resources at the application level is the recommended approach for skinning an application.
 
 To share a set of resources, including styles and templates, across applications, you can create a XAML file and define a <xref:System.Windows.ResourceDictionary>. For example, take a look at the following illustration that shows part of the [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating):
 
-![Control Template Examples](./media/styles-and-templates-overview/stylingintro-controltemplateexamples.png "StylingIntro_ControlTemplateExamples")  
+![Control Template Examples](./media/styles-and-templates-overview/stylingintro-controltemplateexamples.png "StylingIntro_ControlTemplateExamples")
 
-If you look at the XAML files in the sample, you will notice that the files all have the following:  
+If you look at the XAML files in the sample, you will notice that the files all have the following:
 
-[!code-xaml[ControlTemplateExamples#MergedDictionaries](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/button.xaml#mergeddictionaries)]  
+[!code-xaml[ControlTemplateExamples#MergedDictionaries](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/button.xaml#mergeddictionaries)]
 
-It is the sharing of `shared.xaml`, which defines a <xref:System.Windows.ResourceDictionary> that contains a set of style and brush resources that enables the controls in the sample to have a consistent look.  
+It is the sharing of `shared.xaml`, which defines a <xref:System.Windows.ResourceDictionary> that contains a set of style and brush resources that enables the controls in the sample to have a consistent look.
 
-For more information, see [Merged Resource Dictionaries](../../framework/wpf/advanced/merged-resource-dictionaries.md).  
+For more information, see [Merged Resource Dictionaries](../../framework/wpf/advanced/merged-resource-dictionaries.md).
 
-If you are creating a theme for you custom control, see the External Control Library section of the [Control Authoring Overview](control-authoring-overview.md).  
+If you are creating a theme for your custom control, see the External Control Library section of the [Control Authoring Overview](../../framework/wpf/controls/control-authoring-overview.md).
 
 ## See also
 

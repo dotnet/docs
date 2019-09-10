@@ -6,9 +6,10 @@ ms.assetid: 13123dd6-c4a9-4a04-a984-df184b851788
 # \<service>
 The `service` element contains the settings for a Windows Communication Foundation (WCF) service. It also contains endpoints that expose the service.  
   
- \<system.ServiceModel>  
-\<services>  
-\<service>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<services>**](services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<service>**  
   
 ## Syntax  
   

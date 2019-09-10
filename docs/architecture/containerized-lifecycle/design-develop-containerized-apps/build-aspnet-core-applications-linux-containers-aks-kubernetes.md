@@ -37,7 +37,7 @@ Verify that you've selected ASP.NET Core 2.2 as the framework. .NET Core 2.2 is 
 
 **Figure 4-37**. Selecting ASP.NET CORE 2.2 and Web API project type
 
-If you have any previous version of .NET Core, you can download and install the 2.2 version from <https://www.microsoft.com/net/download/core#/sdk>.
+If you have any previous version of .NET Core, you can download and install the 2.2 version from <https://dotnet.microsoft.com/download>.
 
 You can add Docker support when creating the project or afterwards, so you can "Dockerize" your project at any time. To add Docker support after project creation, right-click on the project node in Solution Explorer and select **Add** > **Docker support** on the context menu.
 

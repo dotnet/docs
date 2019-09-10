@@ -15,7 +15,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-- [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) or later versions.
+- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Creating the source project

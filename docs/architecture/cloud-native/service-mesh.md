@@ -66,5 +66,5 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 - [Comparing gRPC Services with HTTP APIs](https://docs.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-3.0)
 
 >[!div class="step-by-step"]
->[Previous](grpc.md)
+>[Previous](rest-and-grpc.md)
 >[Next](distributed-data.md) <!-- Next Chapter -->

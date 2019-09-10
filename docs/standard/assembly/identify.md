@@ -17,7 +17,7 @@ A file is an assembly if and only if it is managed, and contains an assembly ent
   
 ## How to programmatically determine if a file is an assembly  
   
-1. Call the <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method, passing the full file path and name of the file you are testing.  
+1. Call the <xref:System.Reflection.AssemblyName.GetAssemblyName%2A?displayProperty=nameWithType> method, passing the full file path and name of the file you are testing.  
   
 2. If a <xref:System.BadImageFormatException> exception is thrown, the file is not an assembly.  
   

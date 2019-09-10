@@ -49,7 +49,7 @@ System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e08
  To avoid this problem, make sure the assemblies that make up your application do not have the same assembly name or place assemblies with the same name in different directories.  
   
 > [!NOTE]
-> If you put a strong-named assembly in the global assembly cache, the assembly's file name must match the assembly name, not including the file name extension, such as *.exe* or *.dll*. For example, if the file name of an assembly is *myAssembly.dll*, the assembly name must be `myAssembly`. Private assemblies deployed only in the root application directory can have an assembly name that is different from the file name.  
+> In the .NET Framework, if you put a strong-named assembly in the global assembly cache, the assembly's file name must match the assembly name, not including the file name extension, such as *.exe* or *.dll*. For example, if the file name of an assembly is *myAssembly.dll*, the assembly name must be `myAssembly`. Private assemblies deployed only in the root application directory can have an assembly name that is different from the file name.  
   
 ## See also
 

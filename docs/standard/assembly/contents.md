@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], single-file"
   - "assemblies [.NET Core]"
   - "single-file assemblies"
-  - "multifile assemblies"
+  - "multifile assemblies [.NET Framework]"
 ms.assetid: 28116714-da77-45f7-826d-fa035d121948
 author: "rpetrusha"
 ms.author: "ronpet"

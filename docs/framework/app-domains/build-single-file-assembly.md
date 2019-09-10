@@ -1,5 +1,5 @@
 ---
-title: "How to: Build a single-file assembly"
+title: "How to: Build a .NET Framework single-file assembly"
 ms.date: "08/20/2019"
 helpviewer_keywords:
   - "assembly manifest, single-file assemblies"
@@ -13,9 +13,9 @@ ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# How to: Build a single-file assembly
+# How to: Build a .NET Framework single-file assembly
 
-A single-file assembly, which is the simplest type of assembly, contains type information and implementation, as well as the [assembly manifest](../../standard/assembly/manifest.md). You can use command-line compilers or Visual Studio to create a single-file assembly. By default, the compiler creates an assembly file with an *.exe* extension.
+A single-file assembly, which is the simplest type of assembly, contains type information and implementation, as well as the [assembly manifest](../../standard/assembly/manifest.md). You can use command-line compilers or Visual Studio to create a single-file assembly that targets the .NET Framework. By default, the compiler creates an assembly file with an *.exe* extension.
 
 > [!NOTE]
 > Visual Studio for C# and Visual Basic can be used only to create single-file assemblies. If you want to create multifile assemblies, you must use command-line compilers or Visual C++.

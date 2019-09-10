@@ -22,7 +22,7 @@ Strong-naming an assembly creates a unique identity for the assembly, and can pr
 > Do not rely on strong names for security. They provide a unique identity only.  
   
 ## Why strong-name your assemblies?  
- When you reference a strong-named assembly, you can expect certain benefits, such as versioning and naming protection. Strong-named assemblies can be installed in the global assembly cache, which is required to enable some scenarios.  
+ When you reference a strong-named assembly, you can expect certain benefits, such as versioning and naming protection. In the .NET Framework, strong-named assemblies can be installed in the global assembly cache, which is required to enable some scenarios.  
   
  Strong-named assemblies are useful in the following scenarios:  
   
@@ -32,7 +32,7 @@ Strong-naming an assembly creates a unique identity for the assembly, and can pr
   
 - You do not want to negatively affect performance of apps using your assembly, so you want the assembly to be domain neutral. This requires strong-naming because a domain-neutral assembly must be installed in the global assembly cache.  
   
-- You want to centralize servicing for your app by applying publisher policy, which means the assembly must be installed in the  global assembly cache.  
+- You want to centralize servicing for your app by applying publisher policy, which means the assembly must be installed in the global assembly cache. 
   
  If you are an open-source developer and you want the identity benefits of a strong-named assembly, consider checking in the private key associated with an assembly to your source control system.  
   

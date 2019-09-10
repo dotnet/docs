@@ -2,7 +2,7 @@
   href: index.md
   items:
   - name: Introduction
-    href: intro.md
+    href: introduction.md
   - name: Architecture comparison
     href: architecture-comparison.md
   - name: Project structure
@@ -10,13 +10,13 @@
   - name: Hosting models
     href: hosting-models.md
   - name: Startup
-    href: startup.md
+    href: app-startup.md
   - name: Components
     href: components.md
   - name: Pages and routing
-    href: pages-and-routing.md
+    href: pages-routing.md
   - name: Layout
-    href: layout.md
+    href: page-layout.md
   - name: State management
     href: state-management.md
   - name: Dealing with data
@@ -26,7 +26,7 @@
   - name: Configuration
     href: config.md
   - name: Security
-    href: security.md
+    href: security-authentication-authorization.md
   - name: Migration
     href: migration.md
 

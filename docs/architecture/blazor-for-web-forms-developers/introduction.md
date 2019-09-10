@@ -12,7 +12,7 @@ ASP.NET Web Forms has been a staple of .NET web development since the .NET Frame
 
 Over the years, Microsoft has introduced new ASP.NET-based web frameworks to address new trends in web development, such as ASP.NET MVC, ASP.NET Web Pages, and more recently ASP.NET Core. With each new framework, some have predicted the imminent decline of ASP.NET Web Forms and criticized it as an outdated and outmoded web framework. Despite these predictions, many .NET web developers continue to find ASP.NET Web Forms a simple, stable, and productive way to get their work done. At the time of this writing, almost half a million web developers use ASP.NET Web Forms every month. ASP.NET Web Forms is stable to the point that docs, samples, books, and blog posts from a decade ago remain useful and relevant. For many .NET web developers, "ASP.NET" is still virtually synonymous with "ASP.NET Web Forms" as it was when .NET was first conceived. Arguments on the pros and cons of ASP.NET Web Forms compared to the other new .NET web frameworks may rage on, but ASP.NET Web Forms development remains a popular way to write web apps.
 
-Even so, with the rapid pace of innovation and change in software development, all software developers have a need to stay abreast of new technologies and trends, and this is true for ASP.NET Web Forms developers as well. Two trends in particular are worth examining: 
+Even so, with the rapid pace of innovation and change in software development, all software developers need to stay abreast of new technologies and trends, and this is true for ASP.NET Web Forms developers as well. Two trends in particular are worth considering: 
 
 1. The shift to open-source and cross-platform.
 2. The shift of application logic to the client.

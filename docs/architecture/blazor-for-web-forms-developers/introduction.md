@@ -53,7 +53,7 @@ This book gives an introduction to Blazor that is catered specifically to ASP.NE
 
 ## Getting started with Blazor
 
-Getting started with Blazor is easy. Simply go to https://blazor.net and then follow the links to install the appropriate .NET Core SDK and Blazor project templates. You'll also find instructions for getting set up with the Blazor tooling in Visual Studio or Visual Studio Code.
+Getting started with Blazor is easy. Go to <https://blazor.net> and follow the links to install the appropriate .NET Core SDK and Blazor project templates. You'll also find instructions for setting up the Blazor tooling in Visual Studio or Visual Studio Code.
 
 
 

@@ -50,33 +50,33 @@ This error indicates that a field, method, event, or object is improperly named.
 
 Error message: "'\<name>' already exists in '\<project name>'. Please enter a unique name."
 
-You have specified a name for an inherited form that already exists in the project. To correct this error, give the inherited form a unique name.
+You've specified a name for an inherited form that already exists in the project. To correct this error, give the inherited form a unique name.
 
 ### '\<Toolbox tab name>' is not a toolbox category
 
-A third-party designer has tried to access a tab on the Toolbox that does not exist. To correct this error, note the exact text of the error message and contact the component vendor.
+A third-party designer has tried to access a tab on the Toolbox that does not exist. Please contact the component vendor.
 
 ### A requested language parser is not installed
 
 Error message: "A requested language parser is not installed. The language parser name is '{0}'."
 
-Visual Studio attempted to a load a designer that was registered for the file type, but could not load it. This is most likely because of an error that occurred during setup. To correct this error, note the exact text of the error message, and contact the vendor of the language you're using for a fix.
+Visual Studio attempted to a load a designer that was registered for the file type but could not. This is most likely because of an error that occurred during setup. Please contact the vendor of the language you're using for a fix.
 
 ### A service required for generating and parsing source code is missing
 
-This is a problem with a third-party component. To correct this error, note the exact text of the error message and contact the component vendor.
+This is a problem with a third-party component. Please contact the component vendor.
 
 ### An exception occurred while trying to create an instance of '\<object name>'
 
 Error message: "An exception occurred while trying to create an instance of '\<object name>'. The exception was "\<exception string\>".
 
-A third-party designer requested that Visual Studio create an object, but the object raised an error. To correct this error, note the exact text of the error message and contact the component vendor.
+A third-party designer requested that Visual Studio create an object, but the object raised an error. Contact the component vendor.
 
 ### Another editor has '\<document name>' open in an incompatible mode
 
 Error message: "Another editor has '\<document name>' open in an incompatible mode. Please close the editor and try this operation again."
 
-This error arises if you try to open a file that is already opened in another editor. The editor that already has the file open will be shown. To correct this error, close the editor that has the file open, and try again.
+This error arises if you try to open a file that is already opened in another editor. The editor that already has the file open is shown. To correct this error, close the editor that has the file open, and try again.
 
 ## Another editor has made changes to '\<document name>'
 
@@ -90,23 +90,21 @@ This message is similar to "Another editor has '\<document name>' open in an inc
 
 ### Array rank '\<rank in array>' is too high
 
-Visual Studio only supports single-dimension arrays in the code block that is parsed by the designer. Multidimensional arrays are valid outside this area.
+Visual Studio only supports single-dimension arrays in the code block that's parsed by the designer. Multidimensional arrays are valid outside this area.
 
 ### Assembly '\<assembly name>' could not be opened
 
 Error message: "Assembly '\<assembly name>' could not be opened. Verify that the file still exists."
 
-This error message arises when you try to open a file that could not be opened. To correct this error, verify that the file exists and is a valid assembly.
+This error message arises when you try to open a file that could not be opened. Verify that the file exists and is a valid assembly.
 
 ### Bad element type. This serializer expects an element of type '\<type name>'
 
-This is a problem with a third-party component. To correct this error, note the exact text of the error message and contact the component vendor.
+This is a problem with a third-party component. Contact the component vendor.
 
 ### Cannot access the Visual Studio Toolbox at this time
 
-Visual Studio made a call to the Toolbox, which was not available.
-
-Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+Visual Studio made a call to the Toolbox, which was not available. Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Cannot bind an event handler to the '\<event name>' event because it is read-only
 
@@ -114,13 +112,11 @@ This error most often arises when you've tried to connect an event to a control 
 
 ### Cannot create a method name for the requested component because it is not a member of the design container
 
-Visual Studio has tried to add an event handler to a component that does not have a member variable in the designer. To correct this error, note the exact text of the error message and contact the component vendor.
+Visual Studio has tried to add an event handler to a component that does not have a member variable in the designer. Contact the component vendor.
 
 ### Cannot name the object '\<name>' because it is already named '\<name>'
 
-This is an internal error in the Visual Studio serializer. It indicates that the serializer has tried to name an object twice, which is not supported.
-
-Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+This is an internal error in the Visual Studio serializer. It indicates that the serializer has tried to name an object twice, which is not supported. Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Cannot remove or destroy inherited component '\<component name>'
 
@@ -128,11 +124,11 @@ Inherited controls are under the ownership of their inheriting class. Changes to
 
 ### Category '\<Toolbox tab name>' does not have a tool for class '\<class name>'
 
-The designer tried to reference a class on a particular Toolbox tab, but the class does not exist. To correct this error, note the exact text of the error message, and contact the component vendor.
+The designer tried to reference a class on a particular Toolbox tab, but the class does not exist. Contact the component vendor.
 
 ### Class '\<class name>' has no matching constructor
 
-A third-party designer has asked Visual Studio to create an object with particular parameters in the constructor that does not exist. To correct this error, note the exact text of the error message and contact the component vendor.
+A third-party designer has asked Visual Studio to create an object with particular parameters in the constructor that does not exist. Contact the component vendor.
 
 ### Code generation for property '\<property name>' failed
 
@@ -142,7 +138,7 @@ This is a generic wrapper for an error. The error string that accompanies this m
 
 This is an error in the component you just placed on the form or loaded. It indicates that the component did not add itself to its container control (whether that was another control or a form). The designer will continue to work, but there may be problems with the component at run time.
 
-To correct this error, note the exact text of the error message and contact the component vendor. Or, if it is a component you created, call the `IContainer.Add` method in the component's constructor.
+To correct the error, contact the component vendor. Or, if it is a component you created, call the `IContainer.Add` method in the component's constructor.
 
 ### Component name cannot be empty
 
@@ -176,7 +172,7 @@ Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-
 
 Visual Studio has tried to create an event handler, but there is something wrong with the event type. This can happen if the event was created by a non-CLS-compliant language.
 
-To correct this error, note the exact text of the error message and contact the component vendor.
+Contact the component vendor.
 
 ### Duplicate declaration of member '\<member name>'
 
@@ -228,7 +224,7 @@ This error is similar to "The type '\<type name>' could not be found", but this 
 
 A component has requested a particular assembly, but the name provided by the component is not a valid assembly name.
 
-To correct this error, note the exact text of the error message and contact the component vendor.
+Contact the component vendor.
 
 ### The base class '\<class name>' cannot be designed
 
@@ -334,9 +330,7 @@ This error occurs when Visual Studio is unable to edit a file due to disk space 
 
 ### The Toolbox enumerator object only supports retrieving one item at a time
 
-The Toolbox enumerator only supports retrieving one item at a time.
-
-Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### The Toolbox item for '\<component name>' could not be retrieved from the Toolbox
 
@@ -349,6 +343,88 @@ The component in question threw an exception when Visual Studio accessed it. Not
 Error message: "The Toolbox item for '\<Toolbox item name>' could not be retrieved from the Toolbox. Try removing the item from the Toolbox and adding it back."
 
 This error occurs if the data within the Toolbox item becomes corrupted or the version of the component has changed. Try removing the item from the Toolbox and adding it back again.
+
+### The type '\<type name>' could not be found
+
+Error message: "The type '\<type name>' could not be found. Ensure that the assembly containing the type is referenced. If the assembly is part of the current development project, ensure that the project has been built."
+
+While loading the designer, Visual Studio failed to find a type. Ensure that the assembly containing the type is referenced. If the assembly is part of the current development project, ensure that the project has been built.
+
+### The type resolution service may only be called from the main application thread
+
+Visual Studio attempted to access required resources from the wrong thread. This error is displayed when the code used to create the designer has called the type resolution service from a thread other than the main application thread.
+
+To correct this error, call the service from the correct thread or contact the component vendor.
+
+### The variable '\<variable name>' is either undeclared or was never assigned
+
+The source code has a reference to a variable, such as `Button1`, that wasn't declared or assigned. If it was not assigned, this message appears as a warning, not an error.
+
+### There is already a command handler for the menu command '\<menu command name>'
+
+This error arises if a third-party designer adds a command that already has a handler to the command table. Note the exact text of the error message and contact the component vendor.
+
+### There is already a component named '\<component name>'
+
+Error message: "There is already a component named '\<component name>'. Components must have unique names, and names must not be case-sensitive. A name also cannot conflict with the name of any component in an inherited class."
+
+This error message arises when there has been a change to the name of a component in the Properties window. To correct this error, ensure that all component names are unique, are not case-sensitive, and do not conflict with the names of any components in the inherited classes.
+
+### There is already a Toolbox item creator registered for the format '\<format name>'
+
+A third-party component made a callback to an item on a Toolbox tab, but the item already contained a callback. Note the exact text of the error message and contact the component vendor.
+
+### This language engine does not support a CodeModel with which to load a designer
+
+This message is similar to "The language for this file does not support the necessary code parsing and generation services", but this message involves an internal registration problem. If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+
+### Type '\<type name\>' does not have a constructor with parameters of types '\<parameter type names>'
+
+Visual Studio could not find a [constructor](/dotnet/csharp/programming-guide/classes-and-structs/constructors) that had matching parameters. This may be the result of supplying a constructor with types other than those that are required. For example, a `Point` constructor might take two integers. If you provided floats, this error is raised.
+
+To correct this error, use a different constructor or explicitly cast the parameter types such that they match those provided by the constructor.
+
+### Unable to add reference '\<reference name>' to the current application
+
+Error message: "Unable to add reference '\<reference name>' to the current application. Check that a different version of '\<reference name>' is not already referenced."
+
+Visual Studio was unable to add a reference. To correct this error, check that a different version of the reference is not already referenced.
+
+### Unable to check out the current file
+
+Error message: "Unable to check out the current file. The file may be locked, or you may need to check out the file manually."
+
+This error arises when a change is made to a file that's currently checked in to source-code control. Usually, Visual Studio presents the file checkout dialog box so that the user can check out the file. This time, the file was not checked out, perhaps because of a merge conflict during checkout.
+
+To correct this error, ensure that the file is not locked, and then try to check out the file manually.
+
+### Unable to find page named '\<Options dialog box tab name>'
+
+This error arises when a component designer requests access to a page from the Options dialog box by using a name that does not exist. Contact the component vendor.
+
+### Unable to find property '\<property name>' on page '\<Options dialog box tab name>'
+
+This error arises when a component designer requests access to a particular value on a page from the Options dialog box, but that value does not exist. Contact the component vendor.
+
+### Visual Studio cannot open a designer for the file because the class within it does not inherit from a class that can be visually designed
+
+Visual Studio loaded the class, but the designer for that class could not be loaded. Visual Studio requires that designers use the first class in a file.
+
+To correct this error, move the class code so that it is the first class in the file, and then load the designer again.
+
+### Visual Studio cannot save or load instances of the type '\<type name>'
+
+This is a problem with a third-party component. Please contact the component vendor.
+
+### Visual Studio is unable to open '\<document name>' in Design view
+
+Error message: "Visual Studio is unable to open '\<document name>' in Design view. No parser is installed for the file type."
+
+This error indicates that the language of the project does not support a designer and arises when you attempt to open a file in the Open File dialog box or from Solution Explorer. Instead, edit the file in Code view.
+
+### Visual Studio was unable to find a designer for classes of type '\<type name>'
+
+Visual Studio loaded the class, but the class cannot be designed. Instead, edit the class in Code view by right-clicking the class and choosing **View Code**.
 
 ## See also
 

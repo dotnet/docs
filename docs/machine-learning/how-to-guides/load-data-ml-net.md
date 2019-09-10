@@ -1,7 +1,7 @@
 ---
 title: Load data from files and other sources
 description: This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
-ms.date: 09/06/2019
+ms.date: 09/10/2019
 ms.custom: mvc,how-to, title-hack-0625
 #Customer intent: As a developer I want to know how to load data from file and other data sources.
 ---
@@ -101,9 +101,9 @@ IDataView data = textLoader.Load("DataFolder/SubFolder1/1.txt", "DataFolder/SubF
 ## Load data from a relational database
 
 > [!NOTE]
-> DatabaseLoader is currently in preview. It can be used by referencing Microsoft.ML.Experimental and System.Data NuGet packages. 
+> DatabaseLoader is currently in preview. It can be used by referencing [Microsoft.ML.Experimental](https://www.nuget.org/packages/Microsoft.ML.Experimental/0.16.0-preview) and [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/4.6.1) NuGet packages. 
 
-ML.NET support loading data from a variaety of relational databases supported by `System.Data` that include SQL Server, Azure SQL Database, Oracle, SQLite, PostgreSQL, Progress, IBM DB2, and many more.
+ML.NET support loading data from a variety of relational databases supported by [`System.Data`](xref:System.Data) that include SQL Server, Azure SQL Database, Oracle, SQLite, PostgreSQL, Progress, IBM DB2, and many more.
 
 Given a database with a table named `House` and the following schema:
 
@@ -127,7 +127,7 @@ public class HouseData
 }
 ```
 
-Then, inside of your application, create a DatabaseLoader.
+Then, inside of your application, create a `DatabaseLoader`.
 
 ```csharp
 MLContext mlContext = new MLContext();
@@ -135,17 +135,17 @@ MLContext mlContext = new MLContext();
 DatabaseLoader loader = mlContext.Data.CreateDatabaseLoader<HouseData>();
 ```
 
-Define your connection string as well as the SQL command to be executed on the database and create a DatabaseSource instance.
+Define your connection string as well as the SQL command to be executed on the database and create a `DatabaseSource` instance. This sample uses a LocalDB SQL Server database with a file path. However, DatabaseLoader supports any other valid connection string for databases on-premises and in the cloud.  
 
 ```csharp
-string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=<YOUR-DB-FILE>;Database=<YOUR-DB-NAME>;Integrated Security=True;Connect Timeout=30";
+string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=<YOUR-DB-FILEPATH>;Database=<YOUR-DB-NAME>;Integrated Security=True;Connect Timeout=30";
 
 string sqlCommand = "SELECT Size,Price FROM House";
 
 DatabaseSource dbSource = new DatabaseSource(SqlClientFactory.Instance,connectionString,sqlCommand);
 ```
 
-Finally, use the `Load` method to load the data into an IDataView
+Finally, use the `Load` method to load the data into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ```csharp
 IDataView data = loader.Load(dbSource);

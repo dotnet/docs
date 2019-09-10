@@ -170,15 +170,11 @@ The theme becomes the last place to look when searching for the style of an elem
 
 You can define resource dictionaries as individual files that enable you to reuse a theme across multiple applications. You can also create swappable themes by defining multiple resource dictionaries that provide the same types of resources but with different values. Redefining these styles or other resources at the application level is the recommended approach for skinning an application.
 
-To share a set of resources, including styles and templates, across applications, you can create a XAML file and define a <xref:System.Windows.ResourceDictionary>. For example, take a look at the following illustration that shows part of the [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating):
-
-![Control Template Examples](./media/styles-and-templates-overview/stylingintro-controltemplateexamples.png "StylingIntro_ControlTemplateExamples")
-
-If you look at the XAML files in the sample, you will notice that the files all have the following:
+To share a set of resources, including styles and templates, across applications, you can create a XAML file and define a <xref:System.Windows.ResourceDictionary> that includes reference to a `shared.xaml` file:
 
 [!code-xaml[ControlTemplateExamples#MergedDictionaries](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/button.xaml#mergeddictionaries)]
 
-It is the sharing of `shared.xaml`, which defines a <xref:System.Windows.ResourceDictionary> that contains a set of style and brush resources that enables the controls in the sample to have a consistent look.
+It is the sharing of `shared.xaml`, which itself defines a <xref:System.Windows.ResourceDictionary> that contains a set of style and brush resources, that enables the controls in an application to have a consistent look.
 
 For more information, see [Merged Resource Dictionaries](../../framework/wpf/advanced/merged-resource-dictionaries.md).
 

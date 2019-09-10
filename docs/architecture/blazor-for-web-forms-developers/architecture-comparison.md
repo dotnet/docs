@@ -30,4 +30,8 @@ After a component handles an event, Blazor renders the component and keeps track
 
 ![Blazor DOM interaction](./media/architecture-comparison/blazor-dom-interaction.png)
 
-Components can also manually indicate that they should be rendered if their state changes outside of a normal UI event.Blazor uses a `SynchronizationContext` to enforce a single logical thread of execution. A component's lifecycle methods and any event callbacks that are raised by Blazor are executed on this `SynchronizationContext`.
+Components can also manually indicate that they should be rendered if their state changes outside of a normal UI event. Blazor uses a `SynchronizationContext` to enforce a single logical thread of execution. A component's lifecycle methods and any event callbacks that are raised by Blazor are executed on this `SynchronizationContext`.
+
+>[!div class="step-by-step"]
+>[Previous](intro.md)
+>[Next](hosting-models.md)

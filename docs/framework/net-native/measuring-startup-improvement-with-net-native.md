@@ -55,7 +55,7 @@ ms.author: "ronpet"
   
  You can also invoke PerfView from the command line. To log only the events from your provider, open the Command Prompt window and enter the command:  
   
-```  
+```console
 perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFile   
 ```  
   

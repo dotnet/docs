@@ -1,5 +1,5 @@
 ---
-title: "Data and modeling in the .NET Framework"
+title: "Data and modeling - .NET"
 ms.date: "09/09/2019"
 helpviewer_keywords: 
   - ".NET Framework, data access"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "data [.NET Framework], accessing"
 ms.assetid: 8c37635d-e2c1-4b64-a258-61d9e87405e6
 ---
-# Data and modeling in the .NET Framework
+# Data and modeling in .NET
 
 This section provides information on how to access data in the .NET Framework.  
   
@@ -20,7 +20,7 @@ This section provides information on how to access data in the .NET Framework.
  Describes the ADO.NET architecture and how to use the ADO.NET classes to manage application data and interact with data sources, including Microsoft SQL Server, OLE DB data sources, and XML.  
   
  [Transaction Processing](./transactions/index.md)  
- Discusses the .NET Framework support for transactions.  
+ Discusses the .NET support for transactions.  
   
 ## Related sections
 

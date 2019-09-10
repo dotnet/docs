@@ -14,7 +14,7 @@ manager: jillfra
 ---
 # Windows Forms Designer error page
 
-If the Windows Forms Designer fails to load due to an error in your code or elsewhere, you'll see an error page instead of the designer. This error page does not necessarily signify a bug in the designer. The bug may be somewhere in the code-behind page that's named \<your-form-name>.Designer.cs. Errors appear in collapsible, yellow bars with a link to jump to the location of the error on the code page.
+If the Windows Forms Designer fails to load due to an error in your code, in a third-party component, or elsewhere, you'll see an error page instead of the designer. This error page does not necessarily signify a bug in the designer. The bug may be somewhere in the code-behind page that's named \<your-form-name>.Designer.cs. Errors appear in collapsible, yellow bars with a link to jump to the location of the error on the code page.
 
 ![Windows Forms Designer error page](media/windows-forms-designer-error-page-collapsed.png)
 
@@ -54,17 +54,17 @@ You've specified a name for an inherited form that already exists in the project
 
 ### '\<Toolbox tab name>' is not a toolbox category
 
-A third-party designer has tried to access a tab on the Toolbox that does not exist. Please contact the component vendor.
+A third-party designer has tried to access a tab on the Toolbox that does not exist. Contact the component vendor.
 
 ### A requested language parser is not installed
 
 Error message: "A requested language parser is not installed. The language parser name is '{0}'."
 
-Visual Studio attempted to a load a designer that was registered for the file type but could not. This is most likely because of an error that occurred during setup. Please contact the vendor of the language you're using for a fix.
+Visual Studio attempted to a load a designer that's registered for the file type but could not. This is most likely because of an error that occurred during setup. Contact the vendor of the language you're using for a fix.
 
 ### A service required for generating and parsing source code is missing
 
-This is a problem with a third-party component. Please contact the component vendor.
+This is a problem with a third-party component. Contact the component vendor.
 
 ### An exception occurred while trying to create an instance of '\<object name>'
 
@@ -104,7 +104,7 @@ This is a problem with a third-party component. Contact the component vendor.
 
 ### Cannot access the Visual Studio Toolbox at this time
 
-Visual Studio made a call to the Toolbox, which was not available. Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+Visual Studio made a call to the Toolbox, which was not available. If you see this error, If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Cannot bind an event handler to the '\<event name>' event because it is read-only
 
@@ -116,7 +116,7 @@ Visual Studio has tried to add an event handler to a component that does not hav
 
 ### Cannot name the object '\<name>' because it is already named '\<name>'
 
-This is an internal error in the Visual Studio serializer. It indicates that the serializer has tried to name an object twice, which is not supported. Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+This is an internal error in the Visual Studio serializer. It indicates that the serializer has tried to name an object twice, which is not supported. If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Cannot remove or destroy inherited component '\<component name>'
 
@@ -136,7 +136,7 @@ This is a generic wrapper for an error. The error string that accompanies this m
 
 ### Component '\<component name>' did not call Container.Add() in its constructor
 
-This is an error in the component you just placed on the form or loaded. It indicates that the component did not add itself to its container control (whether that was another control or a form). The designer will continue to work, but there may be problems with the component at run time.
+This is an error in the component you just loaded or placed on the form. It indicates that the component did not add itself to its container control (whether that is another control or a form). The designer will continue to work, but there may be problems with the component at run time.
 
 To correct the error, contact the component vendor. Or, if it is a component you created, call the `IContainer.Add` method in the component's constructor.
 
@@ -164,15 +164,11 @@ Visual Studio attempted to wire up an event-handling method and could not find o
 
 ### Could not locate the project item templates for inherited components
 
-The templates for inherited forms in Visual Studio are not available.
-
-Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+The templates for inherited forms in Visual Studio are not available. If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Delegate class '\<class name>' has no invoke method. Is this class a delegate?
 
-Visual Studio has tried to create an event handler, but there is something wrong with the event type. This can happen if the event was created by a non-CLS-compliant language.
-
-Contact the component vendor.
+Visual Studio has tried to create an event handler, but there is something wrong with the event type. This can happen if the event was created by a non-CLS-compliant language. Contact the component vendor.
 
 ### Duplicate declaration of member '\<member name>'
 
@@ -202,7 +198,7 @@ To correct this error:
 
 Error message: "Failed to parse method '\<method name>'. The parser reported the following error: '\<error string>'. Please look in the Task List for potential errors."
 
-This is a general error message for problems that arise during parsing. These errors are generally due to syntax errors. See the Task List for specific messages related to the error.
+This is a general error message for problems that arise during parsing. These errors are often due to syntax errors. See the Task List for specific messages related to the error.
 
 ### Invalid component name: '\<component name>'
 
@@ -210,7 +206,7 @@ You've tried to rename a component to an invalid value for that language. To cor
 
 ### The type '\<class name>' is made of several partial classes in the same file
 
-When you define a class in multiple files by using the partial keyword, you can only have one partial definition in each file.
+When you define a class in multiple files by using the [partial](/dotnet/csharp/language-reference/keywords/partial-type) keyword, you can only have one partial definition in each file.
 
 To correct this error, remove all but one of the partial definitions of your class from the file.
 
@@ -222,25 +218,19 @@ This error is similar to "The type '\<type name>' could not be found", but this 
 
 ### The assembly name '\<assembly name>' is invalid
 
-A component has requested a particular assembly, but the name provided by the component is not a valid assembly name.
-
-Contact the component vendor.
+A component has requested a particular assembly, but the name provided by the component is not a valid assembly name. Contact the component vendor.
 
 ### The base class '\<class name>' cannot be designed
 
-Visual Studio loaded the class, but the class cannot be designed because the implementer of the class did not provide a designer.
-
-If the class supports a designer, make sure there are no problems that would cause issues with displaying it in a designer, such as compiler errors. Also, make sure that all references to the class are correct and all class names are correctly spelled.
-
-Otherwise, if the class is not designable, edit it in Code view.
+Visual Studio loaded the class, but the class cannot be designed because the implementer of the class did not provide a designer. If the class supports a designer, make sure there are no problems that would cause issues with displaying it in a designer, such as compiler errors. Also, make sure that all references to the class are correct and all class names are correctly spelled. Otherwise, if the class is not designable, edit it in Code view.
 
 ### The base class '\<class name>' could not be loaded
 
-The class was not referenced in the project, so Visual Studio could not load it. To correct this error, add a reference to the class in the project, and close and reopen the Windows Forms Designer window.
+The class is not referenced in the project, so Visual Studio can't load it. To correct this error, add a reference to the class in the project, and close and reopen the Windows Forms Designer window.
 
 ### The class '\<class name>' cannot be designed in this version of Visual Studio
 
-The designer for this control or component does not support the same types that Visual Studio does. Note the exact text of the error message and contact the component vendor.
+The designer for this control or component does not support the same types that Visual Studio does. Contact the component vendor.
 
 ### The class name is not a valid identifier for this language
 
@@ -256,19 +246,15 @@ This error occurs when the file in the editor is marked as read-only. Ensure tha
 
 ### The designer could not be shown for this file because none of the classes within it can be designed
 
-This error occurs when Visual Studio cannot find a base class that satisfies designer requirements. Examples include: Visual Studio cannot find a designer for the base class; the base class is a class that could not be found or loaded.
-
-Forms and controls must derive from a base class that supports designers. If you're deriving from an inherited form or control, make sure the project has been built.
+This error occurs when Visual Studio cannot find a base class that satisfies designer requirements. Forms and controls must derive from a base class that supports designers. If you're deriving from an inherited form or control, make sure the project has been built.
 
 ### The designer for base class '\<class name>' is not installed
 
-Visual Studio could not load the designer for the class.
-
-Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+Visual Studio could not load the designer for the class. If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### The designer must create an instance of type '\<type name>', but it can't because the type is declared as abstract
 
-This error occurred because the base class of the object being passed to the designer is abstract, which is not allowed.
+This error occurred because the base class of the object being passed to the designer is [abstract](/dotnet/csharp/language-reference/keywords/abstract), which is not allowed.
 
 ### The file could not be loaded in the designer
 
@@ -282,61 +268,53 @@ This error most likely resulted from opening a file that's in a project that doe
 
 ### The language parser class '\<class name>' is not implemented properly
 
-Error message: "The language parser class '\<class name>' is not implemented properly. Please contact the vendor for an updated parser module."
+Error message: "The language parser class '\<class name>' is not implemented properly. Contact the vendor for an updated parser module."
 
-The language in use has registered a designer class in the Registry that does not derive from the correct base class. Note the exact text of the error message, and contact the vendor of the language you are using.
+The language in use has registered a designer class that doesn't derive from the correct base class. Contact the vendor of the language you're using.
 
 ### The name '\<name>' is already used by another object
 
-This is an internal error in the Visual Studio serializer.
-
-Please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+This is an internal error in the Visual Studio serializer. If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### The object '\<object name>' does not implement the IComponent interface
 
-Visual Studio tried to create a component, but the object created does not implement the IComponent interface.
-
-Note the exact text of the error message and contact the component vendor for a fix.
+Visual Studio tried to create a component, but the object created does not implement the <xref:System.ComponentModel.IComponent> interface. Contact the component vendor for a fix.
 
 ### The object '\<object name>' returned null for the property '\<property name>' but this is not allowed
 
-There are some properties in the .NET Framework that should always return an object. For example, the Controls collection of a form should always return an object, even when there are no controls in it.
+There are some .NET properties that should always return an object. For example, the **Controls** collection of a form should always return an object, even when there are no controls in it.
 
 To correct this error, ensure that the property specified in the error is not null.
 
 ### The serialization data object is not of the proper type
 
-A data object offered by the serializer is not an instance of a type that matches the current serializer being used.
-
-Note the exact text of the error message and contact the component vendor.
+A data object offered by the serializer is not an instance of a type that matches the current serializer being used. Contact the component vendor.
 
 ### The service '\<service name>' is required, but could not be located
 
 Error message: "The service '\<service name>' is required, but could not be located. There may be a problem with your Visual Studio installation."
 
-A service required by Visual Studio was unavailable. If you were trying to force a designer to load a project that does not support that designer, use the Code Editor to make the changes you require. Otherwise, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+A service required by Visual Studio is unavailable. If you were trying to load a project that does not support that designer, use the Code Editor to make the changes you require. Otherwise, If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### The service instance must derive from or implement '\<interface name>'
 
-This error indicates that a component or component designer has called the AddService method, which requires an interface and object, but the object specified does not implement the interface specified.
-
-Note the exact text of the error message and contact the component vendor.
+This error indicates that a component or component designer has called the **AddService** method, which requires an interface and object, but the object specified does not implement the interface specified. Contact the component vendor.
 
 ### The text in the code window could not be modified
 
 Error message: "The text in the code window could not be modified. Check that the file is not read-only and there is sufficient disk space."
 
-This error occurs when Visual Studio is unable to edit a file due to disk space or memory problems. Another cause may be that the file is read-only.
+This error occurs when Visual Studio is unable to edit a file due to disk space or memory problems, or the file is marked read-only.
 
 ### The Toolbox enumerator object only supports retrieving one item at a time
 
-If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+If you see this error, If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### The Toolbox item for '\<component name>' could not be retrieved from the Toolbox
 
 Error message: "The Toolbox item for '\<component name>' could not be retrieved from the Toolbox. Make sure the assembly that contains the Toolbox item is correctly installed. The Toolbox item raised the following error: \<error string>."
 
-The component in question threw an exception when Visual Studio accessed it. Note the exact text of the error message and contact the component vendor.
+The component in question threw an exception when Visual Studio accessed it. Contact the component vendor.
 
 ### The Toolbox item for '\<Toolbox item name>' could not be retrieved from the Toolbox
 
@@ -352,17 +330,15 @@ While loading the designer, Visual Studio failed to find a type. Ensure that the
 
 ### The type resolution service may only be called from the main application thread
 
-Visual Studio attempted to access required resources from the wrong thread. This error is displayed when the code used to create the designer has called the type resolution service from a thread other than the main application thread.
-
-To correct this error, call the service from the correct thread or contact the component vendor.
+Visual Studio attempted to access required resources from the wrong thread. This error is displayed when the code used to create the designer has called the type resolution service from a thread other than the main application thread. To correct this error, call the service from the correct thread or contact the component vendor.
 
 ### The variable '\<variable name>' is either undeclared or was never assigned
 
-The source code has a reference to a variable, such as `Button1`, that wasn't declared or assigned. If it was not assigned, this message appears as a warning, not an error.
+The source code has a reference to a variable, such as **Button1**, that isn't declared or assigned. If the variable has not been assigned, this message appears as a warning, not an error.
 
 ### There is already a command handler for the menu command '\<menu command name>'
 
-This error arises if a third-party designer adds a command that already has a handler to the command table. Note the exact text of the error message and contact the component vendor.
+This error arises if a third-party designer adds a command that already has a handler to the command table. Contact the component vendor.
 
 ### There is already a component named '\<component name>'
 
@@ -372,15 +348,15 @@ This error message arises when there has been a change to the name of a componen
 
 ### There is already a Toolbox item creator registered for the format '\<format name>'
 
-A third-party component made a callback to an item on a Toolbox tab, but the item already contained a callback. Note the exact text of the error message and contact the component vendor.
+A third-party component made a callback to an item on a Toolbox tab, but the item already contained a callback. Contact the component vendor.
 
 ### This language engine does not support a CodeModel with which to load a designer
 
-This message is similar to "The language for this file does not support the necessary code parsing and generation services", but this message involves an internal registration problem. If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+This message is similar to "The language for this file does not support the necessary code parsing and generation services", but this message involves an internal registration problem. If you see this error, If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Type '\<type name\>' does not have a constructor with parameters of types '\<parameter type names>'
 
-Visual Studio could not find a [constructor](/dotnet/csharp/programming-guide/classes-and-structs/constructors) that had matching parameters. This may be the result of supplying a constructor with types other than those that are required. For example, a `Point` constructor might take two integers. If you provided floats, this error is raised.
+Visual Studio could not find a [constructor](/dotnet/csharp/programming-guide/classes-and-structs/constructors) that had matching parameters. This may be the result of supplying a constructor with types other than those that are required. For example, a **Point** constructor might take two integers. If you provided floats, this error is raised.
 
 To correct this error, use a different constructor or explicitly cast the parameter types such that they match those provided by the constructor.
 
@@ -388,15 +364,13 @@ To correct this error, use a different constructor or explicitly cast the parame
 
 Error message: "Unable to add reference '\<reference name>' to the current application. Check that a different version of '\<reference name>' is not already referenced."
 
-Visual Studio was unable to add a reference. To correct this error, check that a different version of the reference is not already referenced.
+Visual Studio is unable to add a reference. To correct this error, check that a different version of the reference is not already referenced.
 
 ### Unable to check out the current file
 
 Error message: "Unable to check out the current file. The file may be locked, or you may need to check out the file manually."
 
-This error arises when a change is made to a file that's currently checked in to source-code control. Usually, Visual Studio presents the file checkout dialog box so that the user can check out the file. This time, the file was not checked out, perhaps because of a merge conflict during checkout.
-
-To correct this error, ensure that the file is not locked, and then try to check out the file manually.
+This error arises when you change a file that's currently checked in to source-code control. Usually, Visual Studio presents the file checkout dialog box so that the user can check out the file. This time, the file was not checked out, perhaps because of a merge conflict during checkout. To correct this error, ensure that the file is not locked, and then try to check out the file manually.
 
 ### Unable to find page named '\<Options dialog box tab name>'
 
@@ -408,13 +382,11 @@ This error arises when a component designer requests access to a particular valu
 
 ### Visual Studio cannot open a designer for the file because the class within it does not inherit from a class that can be visually designed
 
-Visual Studio loaded the class, but the designer for that class could not be loaded. Visual Studio requires that designers use the first class in a file.
-
-To correct this error, move the class code so that it is the first class in the file, and then load the designer again.
+Visual Studio loaded the class, but the designer for that class could not be loaded. Visual Studio requires that designers use the first class in a file. To correct this error, move the class code so that it is the first class in the file, and then load the designer again.
 
 ### Visual Studio cannot save or load instances of the type '\<type name>'
 
-This is a problem with a third-party component. Please contact the component vendor.
+This is a problem with a third-party component. Contact the component vendor.
 
 ### Visual Studio is unable to open '\<document name>' in Design view
 

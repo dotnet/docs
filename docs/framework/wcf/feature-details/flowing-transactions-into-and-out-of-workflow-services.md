@@ -218,7 +218,7 @@ Workflow services and clients can participate in transactions.  For a service op
 2. Open the generated Program.cs file and the following code:  
   
     ```csharp
-    static void Main()  
+          static void Main()  
           {  
               Console.WriteLine("Building the server.");  
               using (WorkflowServiceHost host = new WorkflowServiceHost(new DeclarativeServiceWorkflow(), new Uri("net.tcp://localhost:8000/TransactedReceiveService/Declarative")))  
@@ -258,7 +258,7 @@ Workflow services and clients can participate in transactions.  For a service op
 2. Open the program.cs file and add the following code.  
   
     ```csharp
-    class Program  
+        class Program  
         {  
   
             private static AutoResetEvent syncEvent = new AutoResetEvent(false);  

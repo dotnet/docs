@@ -61,7 +61,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
 
      This sample demonstrates how to host a Web-Style service with a console application. You can also host such a service within IIS. To do this, specify the <xref:System.ServiceModel.Activation.WebServiceHostFactory> class in a .svc file as the following code demonstrates.
 
-    ```svc
+    ```text
     <%ServiceHost
         language=c#
         Debug="true"

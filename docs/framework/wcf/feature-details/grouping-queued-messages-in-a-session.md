@@ -18,25 +18,25 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
   
 #### To set up a service contract to use sessions  
   
-1. Define a service contract that requires a session. Do this with the <xref:System.ServiceModel.OperationContractAttribute> attribute and by specifying:  
+1. Define a service contract that requires a session. Do this with the <xref:System.ServiceModel.ServiceContractAttribute> attribute by specifying:  
   
     ```csharp
     SessionMode=SessionMode.Required  
     ```  
   
-2. Mark the operations in the contract as one-way, because these methods do not return anything. This is done with the <xref:System.ServiceModel.OperationContractAttribute> attribute and by specifying:  
+2. Mark the operations in the contract as one-way, because these methods do not return anything. This is done with the <xref:System.ServiceModel.OperationContractAttribute> attribute by specifying:  
   
     ```csharp  
     [OperationContract(IsOneWay = true)]  
     ```  
   
-3. Implement the service contract and specify an `InstanceContextMode` of `PerSession`. This instantiates the service only once for each session.  
+3. Implement the service contract and specify an <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode> of <xref:System.ServiceModel.InstanceContextMode.PerSession?displayProperty=nameWithType>. This instantiates the service only once for each session.  
   
     ```csharp  
     [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]  
     ```  
   
-4. Each service operation requires a transaction. Specify this with the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute. The operation that completes the transaction should also set `TransactionAutoComplete` to `true`.  
+4. Each service operation requires a transaction. Specify this with the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute. The operation that completes the transaction should also set <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete> to `true`.  
   
     ```csharp  
     [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]   

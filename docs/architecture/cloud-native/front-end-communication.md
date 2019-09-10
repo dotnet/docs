@@ -1,74 +1,123 @@
 ---
 title: Front-end client communication
-description: Architecting Cloud Native .NET Apps for Azure | Front-End Client Communication
-ms.date: 06/30/2019
+description: Learn how front-end clients communicate with cloud-native systems
+author: robvet
+ms.date: 09/08/2019
 ---
 
 # Front-end client communication
 
-Cloud native applications expose channels to enable communication with front-end client applications, including mobile, web, or desktop applications.
+In a cloud-native system, front-end clients (mobile, web, and desktop applications) require a communication channel to interact with independent back-end microservices.  
 
-To keep things simple, a front-end client could directly communicate with back-end microservices, shown in Figure 4-2:
+What are the options?
 
-![Direct client to service communication](media/direct-client-to-service-communication.png)
-**Figure 4-2**. Direct client to service communication
+To keep things simple, a front-end client could *directly communicate* with the back-end microservices, shown in Figure 4-2.
 
-While relatively simple to implement, direct front-end communication is rarely an acceptable practice. Doing so tightly couples the front end to core back-end services and opens the door for a number of potential issues, including:
+![Direct client to service communication](./media/direct-client-to-service-communication.png)
 
-- Client susceptibility to backend core service refactoring.
+**Figure 4-2.** Direct client to service communication
 
-- A widening attack surface as core backend services are directly exposed.
+With this approach, each microservice has a public endpoint that is accessible by front-end clients. In a production environment, you'd place a load balancer in front of the microservices, routing traffic proportionately.
 
-- Duplication of cross-cutting concerns.
+While simple to implement, direct client communication would be acceptable only for simple microservice applications. This pattern tightly couples front-end clients to core back-end services, opening the door for a number of problems, including:
 
-- Overly complex client code.
+- Client susceptibility to back-end service refactoring.
 
-Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the frontend applications and backend services, shown in Figure 4-3:
+- A wider attack surface as core back-end services are directly exposed.
 
-![API Gateway Pattern](media/api-gateway-pattern.png)
+- Duplication of cross-cutting concerns across each microservice.
+
+- Overly complex client code - clients must keep track of multiple endpoints and handle failures in a resilient way.
+
+Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the front-end applications and backend services. The pattern is shown in Figure 4-3.
+
+![API Gateway Pattern](./media/api-gateway-pattern.png)
+
 **Figure 4-3.** API gateway pattern
 
-This pattern exposes a single point of entry (the API gateway) to enable front-end clients to communicate with backend services, insulating the front end from internal service partitioning and refactoring. Not only does the gateway act as a reverse proxy appropriately rerouting inbound traffic but also allows many of the cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling, to be offloaded from the backend core services to the gateway.
+In the previous figure, note how the API Gateway service abstracts the backend core microservices. Implemented as a web API, it acts as a *reverse proxy*, routing incoming traffic to the internal microservices. 
 
-Care must be taken to keep the API Gateway simple and fast. A single gateway risks becoming a bottleneck and eventually a monolith itself. In larger systems, it's considered a good practice to expose multiple API Gateways segmented on either client type (that is, mobile, web, desktop) or backend service categories. A popular pattern that provides guidance for multiple gateways is called the [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern.
+The gateway insulates the client from internal service partitioning and refactoring. If you change a back-end service, you accommodate for it in the gateway without breaking the client. It's also your first line of defense for cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the back-end core services to the gateway, simplifying the back-end services.
 
-Without much effort, you could build your own API Gateway service. In fact, a quick search of GitHub will present you with many examples. However, there are several off-the-shelf options available.
+Care must be taken to keep the API Gateway simple and fast. Typically, business logic is kept out of the gateway. A complex gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems often expose multiple API Gateways segmented by client type (mobile, web, desktop) or back-end functionality. The [Backend for Frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) pattern provides direction for implementing multiple gateways. The pattern is shown in Figure 4-4.
+
+![API Gateway Pattern](./media/backend-for-frontend-pattern.png)
+
+**Figure 4-4.** Backend for frontend pattern
+
+Note in the previous figure how incoming traffic is sent to a specific API gateway - based upon client type: web, mobile, or desktop app. This approach makes sense as the capabilities of each device differ significantly across form factor, performance, and display limitations. Typically mobile applications expose less functionality than a browser or desktop applications. Each gateway can be optimized to match the capabilities and functionality of the corresponding device.
+
+To start, you could build your own API Gateway service. A quick search of GitHub will provide many examples. However, there are several frameworks and commercial gateway products available.
+
+## Ocelot Gateway
+
+For simple .NET cloud-native applications, you might consider the [Ocelot Gateway](https://github.com/ThreeMammals/Ocelot). Ocelot is an Open Source API Gateway created for .NET microservices that require a unified point of entry into their system. It's lightweight, fast, scalable. 
+
+Like any API Gateway, its primary functionality is to forward incoming HTTP requests to downstream services. Additionally, it supports a wide variety of capabilities that are configurable in a .NET Core middleware pipeline. Its feature set is presented in following table.
+
+|Ocelot Features  | |
+| :-------- | :-------- |
+| Routing | Authentication |
+| Request Aggregation | Authorization |
+| Service Discovery (with Consul and Eureka) | Throttling |
+| Load Balancing | Logging, Tracing |
+| Caching | Headers/Query String Transformation |
+| Correlation Pass-Through | Custom Middleware |
+| Quality of Service | Retry Policies |
+
+Each Ocelot gateway specifies the upstream and downstream addresses and configurable features in a JSON configuration file. The client sends an HTTP request to the Ocelot gateway. Once received, Ocelot passes the HttpRequest object through its pipeline manipulating it into the state specified by its configuration. At the end of pipeline, Ocelot creates a new HTTPResponseObject and passes it to the downstream service. For the response, Ocelot reverses the pipeline, sending the response back to client.
+
+Ocelot is available as a NuGet package. It targets the NET Standard 2.0, making it compatible with both .NET Core 2.0+ and .NET Framework 4.6.1+ runtimes. Ocelot integrates with anything that speaks HTTP and runs on the platforms which .NET Core supports: Linux, macOS, and Windows. Ocelot is extensible and supports many modern platforms, including Docker containers, Azure Kubernetes Services, or other public clouds.  Ocelot integrates with open-source packages like [Consul](https://www.consul.io), [GraphQL](https://graphql.org), and Netflix’s [Eureka](https://github.com/Netflix/eureka). 
+
+Consider Ocelot for simple cloud-native applications that don’t require the rich feature-set of a commercial API gateway.
+
+## Azure Application Gateway
+
+For simple gateway requirements, you may consider [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview). Available as an Azure [PaaS service](https://azure.microsoft.com/overview/what-is-paas/), it includes basic gateway features such as URL routing, SSL termination, and a Web Application Firewall. The service supports [Layer-7 load balancing](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) capabilities. With Layer 7, you can route requests based on the actual content of an HTTP message, not just low-level TCP network packets. 
+
+Throughout this book, we evangelize hosting cloud-native systems in [Kubernetes](https://www.infoworld.com/article/3268073/what-is-kubernetes-your-next-application-platform.html). A container orchestrator, Kubernetes automates the deployment, scaling, and operational concerns of containerized workloads. Azure Application Gateway can be configured as an API gateway for [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) cluster.
+
+The [Application Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/) enables Azure Application Gateway to work directly with [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). Figure 4.5 shows the architecture.
+
+![Application Gateway Ingress Controller](./media/application-gateway-ingress-controller.png)
+
+**Figure 4-5.** Application Gateway Ingress Controller
+
+Kuberentes includes a built-in feature that supports HTTP (Level 7) load balancing, called [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/). Ingress defines a set of rules for how microservice instances inside AKS can be exposed to the outside world. In the previous image, the ingress controller interprets the ingress rules configured for the cluster and automatically configures the Azure Application Gateway. Based on those rules, the Application Gateway routes traffic to microservices running inside AKS. The ingress controller listens for changes to ingress rules and makes the appropriate changes to the Azure Application Gateway.
 
 ## Azure API Management
 
-Azure hosts a cloud-based, fully managed and full-featured API Gateway solution that is a great candidate for many medium to large-scale cloud native systems. The service provides built-in gateway management functionality along with a developer and publisher portal, shown in Figure 4-4.
+For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a full-featured developer and administrative experience. API Management is shown in Figure 4-6. 
 
-![Azure API Management](media/azure-api-management.png)
-**Figure 4-4**. Azure API Management
+![Azure API Management](./media/azure-api-management.png)
 
-[Azure API Management](https://azure.microsoft.com/services/api-management/) enables you to access backend services hosted anywhere – in the cloud or on-premises in your data center. It supports both REST and SOAP APIs across any development platform (.NET, Java, Golang, and so on). Even other Azure services can be exposed through API Management, letting you put a managed API on top of Azure backing services like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
+**Figure 4-6.** Azure API Management
 
-As shown above in Figure 4-4, the API Gateway feature creates a façade over the backend microservices. Clients (that is, front end, other cloud services) invoke the façade with HTTP requests. Each call is eventually routed to a backend service, allowing API Management to add configurable services to the call.
+To start, API Management exposes a gateway server that allows controlled access to back-end services based upon configurable rules and policies. These services can be in the Azure cloud, your on-prem data center, or other public clouds. API keys and JWT tokens determine who can do what. All traffic is logged for analytical purposes. 
 
-Azure API Management supports many features, including:
+For developers, API Management offers a developer portal that provides access to services, documentation, and sample code for invoking them. Developers can use Swagger/Open API to inspect service endpoints and analyze their usage. The service works across the major development platforms: .NET, Java, Golang, and more. 
 
-- Throttle calls from a single source, if necessary.
+The publisher portal exposes a management dashboard where administrators expose APIs and manage their behavior. Service access can be granted, service health monitored, and service telemetry gathered. Administrators apply *policies* to each endpoint to affect behavior. [Policies](https://docs.microsoft.com/azure/api-management/api-management-howto-policies) are pre-built statements that execute sequentially for each service call.  Policies are configured for an inbound call, outbound call, or invoked upon an error. Policies can be applied at different service scopes as to enable deterministic ordering when combining policies. The product ships with a large number of prebuilt [policies](https://docs.microsoft.com/azure/api-management/api-management-policies). 
+
+Here are examples of how policies can affect the behavior of your cloud-native services:  
+
+- Restrict service access.
 
 - Enforce authentication.
-
-- Block calls from specific IP addresses.
+  
+- Throttle calls from a single source, if necessary.
 
 - Enable caching.
 
-- Convert requests from SOAP to REST.
+- Block calls from specific IP addresses.
 
-- Convert between different data formats, such as from XML to JSON.
+- Control the flow of the service.
 
-API Management provides an extension, the Publisher Portal, where administrators can create APIs and configure how they behave. Here, API Policies can be applied to each call. Policies are a collection of pre-built statements that execute sequentially for the request and response of each call, enabling you to change the behavior of the API through configuration (that is, not code). The product ships with a large number of prebuilt [policies](https://docs.microsoft.com/azure/api-management/api-management-policies) that can be executed on the inbound call, backend processing, outbound call, and upon an error.
+- Convert requests from SOAP to REST or between different data formats, such as from XML to JSON.
 
-Additionally, API Management also provides a Developer Portal, as previously shown in Figure x, which enables access to the API, its documentation, and sample code to invoke the API across a number of different programming languages.
+Azure API Management can expose back-end services that are hosted anywhere – in the cloud or your data center. For legacy services that you may expose in your cloud-native systems, it supports both REST and SOAP APIs. Even other Azure services can be exposed through API Management. You could place a managed API on top of an Azure backing service like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/). Azure API Management doesn't include built-in load-balancing support and should be used in conjunction with a load-balancing service.
 
-The Azure API Management service provides a tremendous amount of functionality, shown in Figure 4-5.
-
-![Azure API Management functionality](media/azure-api-management-functionality.png)
-**Figure 4-5**. Azure API Management functionality
-
-Azure API Management is available across [four different pricing tiers](https://azure.microsoft.com/pricing/details/api-management/):
+Azure API Management is available across [four different tiers](https://azure.microsoft.com/pricing/details/api-management/):
 
 - Developer
 
@@ -78,47 +127,52 @@ Azure API Management is available across [four different pricing tiers](https://
 
 - Premium
 
-The Developer tier is meant for non-production workloads and evaluation. The other tiers offer progressively more power, features, and service level agreements (SLAs) with the Premium tier providing Azure Virtual Network and multi-region support. All tiers have a fixed price per hour. 
+The Developer tier is meant for non-production workloads and evaluation. The other tiers offer progressively more power, features, and higher service level agreements (SLAs). The Premium tier provides [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) and [multi-region support](https://docs.microsoft.com/azure/api-management/api-management-howto-deploy-multi-region). All tiers have a fixed price per hour. 
 
-Recently, Microsoft announced a [consumption pricing tier that is currently in preview. Unlike the “pre-allocated” pricing tiers previously shown, the consumption tier provides “serverless” functionality with instant provisioning and pay-per-Action pricing.
+Recently, Microsoft announced a [API Management serverless tier](https://azure.microsoft.com/blog/announcing-azure-api-management-for-serverless-architectures/) for Azure API Management. Referred to as the *consumption pricing tier*, the service is a variant of API Management designed around the serverless computing model. Unlike the “pre-allocated” pricing tiers previously shown, the consumption tier provides  instant provisioning and pay-per-action pricing.
 
-## SignalR Services
+It enables API Gateway features for the following use cases:
 
-What was once a popular ASP.NET library to start two-way communication has now become a fully fledged Azure service. Azure SignalR Service makes real-time, two-way communication for HTTP-based applications easier. Once enabled, a cloud-based HTTP application or service can push content updates directly to connected clients, including browser, mobile and desktop applications. As a result, clients are updated without the need to poll the server. Applications that require high frequency updates such as chat, gaming, and financial apps are great candidates for this service.
+- Microservices implemented using serverless technologies such as [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) and [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
+- Azure backing service resources such as Service Bus queues and topics, Azure storage, and others.
+- Microservices where traffic has occasional large spikes but remains low the majority of the time. 
 
-Manually implementing real-time connectivity can quickly become complex, requiring non-trivial infrastructure to ensure scalability and reliable messaging to connected clients. You could easily find yourself managing your own instance of Azure Redis Cache along with a set of load balancers configured with sticky sessions for client affinity. Instead, these concerns are pre-configured and fully managed by Azure SignalR Service, freeing you up to focus on application features, not infrastructure plumbing.
+The consumption tier uses the same underlying service API Management components, but employs an entirely different architecture based on dynamically allocated resources. It aligns perfectly with the serverless computing model:
 
-Under the hood, SignalR abstracts the transport technologies that create real-time connectivity, including WebSockets, Server-Side Events, and Long Polling, depending on the capabilities of the client. Developers focus on sending messages to all or specific subsets of connected clients.
+- No infrastructure to manage.
 
-Figure 4-6 shows a set of HTTP Clients connecting to a Cloud App with Azure SignalR enabled.
+- No idle capacity.
 
-![Azure SignalR](media/azure-signalr-service.png)
+- High-availability.
 
-**Figure 4-6**. Azure SignalR
+- Automatic scaling.
 
-Azure SignalR Service can be integrated with other Azure services opening up many possibilities.
+- Cost is based on actual usage. 
+  
+The new consumption tier is a great choice for cloud-native systems that expose serverless resources as APIs. 
 
-## Ocelot Gateway
+> At the time of writing, the consumption tier is in preview in the Azure cloud.
 
-For less complex cloud native applications, you might consider the open-source [Ocelot Gateway](https://github.com/ThreeMammals/Ocelot). Implemented as a set of configurable middleware, Ocelot is lightweight and scalable, and it exposes many gateway features. It's a good solution for simple microservice applications that don’t require the rich feature set of the Azure API Management gateway.
+## Real-time communication
 
-Available as a NuGet package, it targets NET Standard 2.0, making it compatible with both .NET Core 2.0+ and the .NET Framework 4.6.1+ runtimes. However, Ocelot integrates with anything that speaks HTTP and runs on the platforms which .NET Core supports: Linux, macOS, and Windows. It can be hosted in Azure and other public clouds.
+Real-time, or push, communication is another option for front-end applications that communicate with back-end cloud-native systems over HTTP. Applications, such as financial-tickers, online education, gaming, and job-progress updates, require instantaneous, real-time responses from the back-end. With normal HTTP communication, there's no way for the client to know when new data is available. The client must continually *poll* or send requests to the server. With *real-time* communication, the server can push new data to the client at any time. 
 
-Its primary functionality is to forward incoming HTTP requests to downstream services. But, it also supports a variety of configurable gateway capabilities, shown in Figure 4-7.
+Real-time systems are often characterized by high-frequency data flows and large numbers of concurrent client connections. Manually implementing real-time connectivity can quickly become complex, requiring non-trivial infrastructure to ensure scalability and reliable messaging to connected clients. You could find yourself managing an  instance of Azure Redis Cache and a set of load balancers configured with sticky sessions for client affinity. 
 
-![Ocelot Features](media/ocelot-features.png)
-**Figure 4-7**. Ocelot Features
+[Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/) is a fully managed Azure service that simplifies real-time communication for your cloud-native applications. Technical implementation details like capacity provisioning, scaling, and persistent connections are abstracted away. They're handled for you with a 99.9% service-level agreement. You focus on application features, not infrastructure plumbing. 
 
-Each Ocelot gateway instance includes a simple JSON configuration file that specifies the upstream and downstream addresses and configurable features, shown in Figure 4-8.
+Once enabled, a cloud-based HTTP service can push content updates directly to connected clients, including browser, mobile and desktop applications. Clients are updated without the need to poll the server. Azure SignalR abstracts the transport technologies that create real-time connectivity, including WebSockets, Server-Side Events, and Long Polling. Developers focus on sending messages to all or specific subsets of connected clients.
 
-![Basic Ocelot implementation](media/basic-ocelot-implementation.png)
+Figure 4-7 shows a set of HTTP Clients connecting to a Cloud-native application with Azure SignalR enabled.
 
-**Figure 4-8**. Basic Ocelot implementation
+![Azure SignalR](./media/azure-signalr-service.png)
 
-In Figure 4-8, the client sends an HTTP request to the Ocelot gateway. Once received, Ocelot manipulates the HttpRequest object into a state specified by its configuration. At the end of pipeline, Ocelot creates a new HttpRequestMessage that is passed to the downstream service. In reverse, Ocelot receives the HTTP response and sends it back to the client.
+**Figure 4-7.** Azure SignalR
 
-Ocelot is extensible and can support many modern platforms, including Azure Kubernetes Services and Service Fabric, as well as integration with open-source packages like Consul, GraphQL, Netflix’s Eureka, web sockets, and SignalR.
+Another advantage of Azure SignalR Service comes with implementing Serverless cloud-native services. Perhaps your code is executed on demand with Azure Functions triggers. This scenario can be tricky because your code doesn't maintain long connections with clients. Azure SignalR Service can handle this situation since the service already manages connections for you.
+
+Azure SignalR Service closely integrates with other Azure services, such as Azure SQL Database, Service Bus, or Redis Cache, opening up many possibilities for your cloud-native applications.
 
 >[!div class="step-by-step"]
 >[Previous](communication-patterns.md)
->[Next](cross-service-communication.md)
+>[Next](service-to-service-communication.md)

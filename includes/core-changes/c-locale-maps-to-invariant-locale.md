@@ -16,7 +16,6 @@ dMapping "C" to en_US_POSIX culture caused customer confusion, because en_US_POS
 
 Nothing specific more than the awareness of this change. This change only applications that use the "C" locale mapping.
 
-
 ### Category
 
 Globalization 

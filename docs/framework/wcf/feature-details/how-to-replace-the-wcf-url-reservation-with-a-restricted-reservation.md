@@ -20,7 +20,7 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
   
  The reservation consists of a URL template used when a WCF application is using an HTTP dual binding for duplex communication. URLs of this form are used for a WCF service to send messages back to the WCF client when communicating over a HTTP dual binding. Everyone is given permission to listen on the URL but not to delegate listening to another process. Finally, the ACL is described in Security Descriptor Definition Language (SSDL). For more information about SSDL, see [SSDL](https://go.microsoft.com/fwlink/?LinkId=136789)  
   
-### To delete the WCF URL reservation  
+## To delete the WCF URL reservation  
   
 1. Click **Start**, point to **All Programs**, click **Accessories**, right-click **Command Prompt** and click **Run as Administrator** on the context menu that comes up. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
   
@@ -31,7 +31,7 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
 ## Creating a New Security Group and New Restricted URL Reservation  
  To replace the WCF URL reservation with a restricted reservation you must first create a new security group. You can do this in one of two ways: from a command prompt or from the computer management console. You only have to do one.  
   
-#### To create a new security group from a command prompt  
+### To create a new security group from a command prompt  
   
 1. Click **Start**, point to **All Programs**, click **Accessories**, right-click **Command Prompt** and click **Run as Administrator** on the context menu that comes up. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
   
@@ -39,13 +39,13 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
   
 3. If the security group is created successfully, the following message is displayed. **The command completed successfully.**  
   
-#### To create a new security group from the computer management console  
+### To create a new security group from the computer management console  
   
 1. Click **Start**, click **Control Panel**, click **Administrative Tools**, and click **Computer Management** to open up the Computer Management Console. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
   
 2. Click **System Tools**, click **Local Users and Groups**, right-click **Groups** folder and click **New Group** on the context menu that comes up. Type in the desired **Group Name**, **Description** and other details of this new security group and click the **Create** button to create the security group.  
   
-#### To create the restricted URL reservation  
+### To create the restricted URL reservation  
   
 1. Click **Start**, point to **All Programs**, click **Accessories**, right-click **Command Prompt** and click **Run as Administrator** on the context menu that comes up. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
   

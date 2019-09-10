@@ -49,9 +49,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Prepare and understand the data
 
-1. Download [Wikipedia detox dataset](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv).
-    
-    When the webpage opens, right-click anywhere on the page, select **Save As** and save the file anywhere on your computer. 
+Download [Wikipedia detox dataset](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv). When the webpage opens, right-click on the page, select **Save As** and save the file anywhere on your computer. 
 
 Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a different review left by a user on Wikipedia. The first column represents the sentiment of the text (0 is non-toxic, 1 is toxic), and the second column represents the comment left by the user. The columns are separated by tabs. The data looks like the following:
 

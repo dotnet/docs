@@ -126,14 +126,14 @@ The following lists the recommended packages:
   - **Version:** \<runtime version>
   - **Example:** dotnet-runtime-2.1
   - **Contains:** (5)
-  - **Dependencies:** `dotnet-hostfxr-[major].[minor]:<runtime version>`, `dotnet-runtime-deps-[major].[minor]`
+  - **Dependencies:** `dotnet-hostfxr-[major].[minor]`, `dotnet-runtime-deps-[major].[minor]`
   - **Provides shared directory:** `{dotnet_root}/shared`, `{dotnet_root}/shared/Microsoft.NETCore.App`
 
 - `dotnet-hostfxr-[major].[minor]` - dependency
   - **Version:** \<runtime version>
   - **Example:** dotnet-hostfxr-3.0
   - **Contains:** (2)
-  - **Dependencies:** `dotnet-host:<runtime version>`
+  - **Dependencies:** `dotnet-host`
   - **Provides shared directory:** `{dotnet_root}/host/fxr`
 
 - `dotnet-host` - dependency

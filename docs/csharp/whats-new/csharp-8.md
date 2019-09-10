@@ -459,7 +459,7 @@ Console.WriteLine(string.Join(' ', numbers));  // output: 17 17
 Console.WriteLine(i);  // output: 17
 ```
 
-For more information, see the [Null-coalescing assignment](../language-reference/operators/null-coalescing-operator.md#null-coalescing-assignment) section of the [?? and ??= operators](../language-reference/operators/null-coalescing-operator.md) article.
+For more information, see the [?? and ??= operators](../language-reference/operators/null-coalescing-operator.md) article.
 
 ## Unmanaged constructed types
 

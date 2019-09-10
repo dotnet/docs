@@ -10,7 +10,6 @@ ms.date: 09/09/2019
 Let's look at a simple example of a Protobuf message, defining a `Stock` message.
 
 ```protobuf
-[]
 syntax "proto3";
 
 message Stock {
@@ -49,7 +48,7 @@ public class Stock
 
 (The actual code generated is far more complicated than this, because each class contains all the code necessary to serialize and deserialize itself to the binary wire format.)
 
-Note that the Protobuf compiler applied `PascalCase` to the property names although they were `camelCase` in the `.proto` file.
+Note that the Protobuf compiler applied `PascalCase` to the property names although they were `camelCase` in the `.proto` file. It is best to use `camelCase` in the message definition so that the code generation for other platforms produces the expected case for those conventions.
 
 >[!div class="step-by-step"]
 <!-->[Next](protobuf-data-types.md)-->

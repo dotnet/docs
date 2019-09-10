@@ -39,9 +39,12 @@ Protobuf enumeration definitions **must** have a zero constant as their first fi
 ```protobuf
 enum PhotoType {
     option allow_alias = true;
-    COLOR = 0;
-    MONOCHROME = 1;
-    BLACK_AND_WHITE = 1;
+  ACCOUNT_STATUS_UNKNOWN = 0;
+  ACCOUNT_STATUS_PENDING = 1;
+  ACCOUNT_STATUS_ACTIVE = 2;
+  ACCOUNT_STATUS_SUSPENDED = 3;
+  ACCOUNT_STATUS_CLOSED = 4;
+  ACCOUNT_STATUS_CANCELLED = 4;
 }
 ```
 

@@ -46,43 +46,43 @@ An array is a reference type in managed code that contains one or more elements 
   
 - **TestArrayOfInts** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp
     int TestArrayOfInts(int* pArray, int pSize);  
     ```  
   
 - **TestRefArrayOfInts** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp
     int TestRefArrayOfInts(int** ppArray, int* pSize);  
     ```  
   
 - **TestMatrixOfInts** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp
     int TestMatrixOfInts(int pMatrix[][COL_DIM], int row);  
     ```  
   
 - **TestArrayOfStrings** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp
     int TestArrayOfStrings(char** ppStrArray, int size);  
     ```  
   
 - **TestArrayOfStructs** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp
     int TestArrayOfStructs(MYPOINT* pPointArray, int size);  
     ```  
   
 - **TestArrayOfStructs2** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp
     int TestArrayOfStructs2 (MYPERSON* pPersonArray, int size);  
     ```  
   
  [PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains implementations for the previously listed functions and two structure variables, **MYPOINT** and **MYPERSON**. The structures contain the following elements:  
   
-```  
+```cpp
 typedef struct _MYPOINT  
 {  
    int x;   

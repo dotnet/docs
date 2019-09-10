@@ -54,7 +54,7 @@ Workflow services hosted in a managed .NET Framework application or a managed Wi
 
 To host a workflow service in IIS or WAS, place the .xamlx file that contains the workflow service definition into a virtual directory. A default endpoint (using <xref:System.ServiceModel.BasicHttpBinding>) is created automatically For more information, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md). You can also place a Web.config file in the virtual directory to specify your own endpoints. If your workflow definition is in an assembly you can place a .svc file in the virtual directory and the workflow assembly in the App_Code directory. The .svc file must specify the service host factory and the class that implements the workflow service. The following example shows how to specify the service host factory and specify the class that implements the workflow service.
 
-```
+```xaml
 <%@ServiceHost Factory=" System.ServiceModel.Activities.Activation.WorkflowServiceHostFactory
 Service="EchoService"%>
 ```

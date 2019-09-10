@@ -18,7 +18,7 @@ To connect to and communicate with a Windows Communication Foundation (WCF) serv
 ## Example  
  This example shows the use of the service moniker with a MEX contract. A service with the following contract is exposed with a wsHttpBinding.  
   
-```  
+```csharp
 using System.ServiceModel;  
   
 ...  
@@ -39,7 +39,7 @@ public interface IAffiliate
   
  To construct a WCF client for the remote service the following example moniker string can be used.  
   
-```  
+```csharp
 service4:mexAddress="http://servername/Affiliates/service.svc/mex",  
 address="http://servername/Affiliates/service.svc",  
 contract=IAffiliate, contractNamespace=http://Microsoft.ServiceModel.Demo,  

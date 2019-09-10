@@ -10,7 +10,7 @@ Sometimes developers must have full control of how data is returned from a servi
   
 1. Define the service contract. The contract is called `IImageServer` and has one method called `GetImage` that returns a <xref:System.IO.Stream>.  
   
-    ```  
+    ```csharp  
     [ServiceContract]  
         public interface IImageServer  
         {  
@@ -23,7 +23,7 @@ Sometimes developers must have full control of how data is returned from a servi
   
 2. Implement the service contract. The contract has only one operation (`GetImage`). This method generates a bitmap and then save it to a <xref:System.IO.MemoryStream> in .jpg format. The operation then returns that stream to the caller.  
   
-    ```  
+    ```csharp
     public class Service : IImageServer  
        {  
            public Stream GetImage(int width, int height)  
@@ -53,7 +53,7 @@ Sometimes developers must have full control of how data is returned from a servi
   
 1. Create a console application to host the service.  
   
-    ```  
+    ```csharp
     class Program  
     {  
         static void Main(string[] args)  
@@ -64,31 +64,31 @@ Sometimes developers must have full control of how data is returned from a servi
   
 2. Create a variable to hold the base address for the service within the `Main` method.  
   
-    ```  
+    ```csharp
     string baseAddress = "http://" + Environment.MachineName + ":8000/Service";  
     ```  
   
 3. Create a <xref:System.ServiceModel.ServiceHost> instance for the service specifying the service class and the base address.  
   
-    ```  
+    ```csharp
     ServiceHost host = new ServiceHost(typeof(Service), new Uri(baseAddress));  
     ```  
   
 4. Add an endpoint using the <xref:System.ServiceModel.WebHttpBinding> and the <xref:System.ServiceModel.Description.WebHttpBehavior>.  
   
-    ```  
+    ```csharp  
     host.AddServiceEndpoint(typeof(IImageServer), new WebHttpBinding(), "").Behaviors.Add(new WebHttpBehavior());  
     ```  
   
 5. Open the service host.  
   
-    ```  
-    host.Open()  
+    ```csharp  
+    host.Open();  
     ```  
   
 6. Wait until the user presses ENTER to terminate the service.  
   
-    ```  
+    ```csharp
     Console.WriteLine("Service is running");  
     Console.Write("Press ENTER to close the host");  
     Console.ReadLine();  
@@ -104,7 +104,7 @@ Sometimes developers must have full control of how data is returned from a servi
 ## Example  
  The following is a complete listing of the code for this topic.  
   
-```  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Text;  

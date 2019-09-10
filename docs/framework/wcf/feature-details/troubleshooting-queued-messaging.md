@@ -97,7 +97,7 @@ A. Check your service contract. You may have forgotten to put "IsOneWay=`true`" 
 
 2. If the `NetMsmqActivator` is monitoring queues on a remote machine, ensure that `NetMsmqActivator` does not run under a restricted token. To run the `NetMsmqActivator` with an unrestricted token:
 
-    ```
+    ```console
     sc sidtype NetMsmqActivator unrestricted
     ```
 
@@ -115,7 +115,7 @@ For non-security related Web host issues refer to: [Web Hosting a Queued Applica
 
 **A:** There is a fundamental difference in the way queued session messages and queued datagram messages are composed. Because of this, a service that is expecting to read a queued session message cannot receive a queued datagram message and a service expecting to read a queued datagram message cannot receive a session message. Attempting to read both types of messages from the same queue throws the following exception:
 
-```
+```console
 System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a poison message. This occurred because the message exceeded the maximum number of delivery attempts or because the channel detected a fundamental problem with the message. The inner exception may contain additional information.
 ---> System.ServiceModel.ProtocolException: An incoming MSMQ message contained invalid or unexpected .NET Message Framing information in its body. The message cannot be received. Ensure that the sender is using a compatible service contract with a matching SessionMode.
 ```

@@ -249,6 +249,8 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
 
 Now that your application is set up, run the application which should launch in your browser.
 
+When the application launches, enter *Model Builder is cool!* into the text area. The predicted sentiment displayed should be *Not Toxic*.
+
 ![](./media/sentiment-analysis-model-builder/web-app.png)
 
 If you need to reference the Model Builder generated projects at a later time inside of another solution, you can find them inside the `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.

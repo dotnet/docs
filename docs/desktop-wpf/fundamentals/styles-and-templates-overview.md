@@ -74,8 +74,6 @@ Also note that many WPF controls consist of a combination of other WPF controls.
 
 You can use a style on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. The most common way to declare a style is as a resource in the `Resources` section in a XAML file. Because styles are resources, they obey the same scoping rules that apply to all resources; where you declare a style affects where the style can be applied. For example, if you declare the style in the root element of your application definition XAML file, the style can be used anywhere in your application. If you create a navigation application and declare the style in one of the application's XAML files, the style can be used only in that XAML file. For more information about scoping rules for resources, see [XAML Resources](../../framework/wpf/advanced/xaml-resources.md).
 
-In addition, you can find more information about styles and resources in [Shared Resources and Themes](#styling_themes) later in this overview.
-
 ### Setting Styles Programmatically
 
 To assign a named style to an element programmatically, get the style from the resources collection and assign it to the element's <xref:System.Windows.FrameworkElement.Style%2A> property. The items in a resources collection are of type <xref:System.Object>. Therefore, you must cast the retrieved style to a <xref:System.Windows.Style> before assigning it to the <xref:System.Windows.FrameworkElement.Style%2A> property. For example, to set the defined `TitleText` style on a <xref:System.Windows.Controls.TextBlock> named `textblock1`, do the following:

@@ -28,5 +28,9 @@ message Order {
 }
 ```
 
+## Further reading
+
+More information on Protobuf is available in the [official Protobuf documentation](https://developers.google.com/protocol-buffers/docs/overview).
+
 >[!div class="step-by-step"]
 <!-->[Next](comparing-wcf-services-to-grpc.md)-->

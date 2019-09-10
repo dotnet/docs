@@ -110,11 +110,11 @@ Configuration in ASP.NET Web Forms apps is typically handled using one or more *
 }
 ```
 
-We'll learn more about configuration in ASP.NET Core projects in the [Configuration](./configuration) section. .
+We'll learn more about configuration in ASP.NET Core projects in the [Configuration](./configuration) section.
 
 ## Razor components
 
-Most of the rest of the files in the Blazor projects are *.razor* files. Razor is a templating language based on HTML and C# that is used to dynamically generate web UI. The *.razor* files define components that make up the UI of the app, and for the most part they are exactly the same for both the Blazor Server and Blazor WebAssembly apps. Components in Blazor are analogous to UI controls in ASP.NET Web Forms.
+The majority of the files in the Blazor projects are *.razor* files. Razor is a templating language based on HTML and C# that is used to dynamically generate web UI. The *.razor* files define components that make up the UI of the app, and for the most part they are exactly the same for both the Blazor Server and Blazor WebAssembly apps. Components in Blazor are analogous to UI controls in ASP.NET Web Forms.
 
 Each Razor component file is compiled into a .NET class when the project is built. The generated class captures the component's state, rendering logic, lifecycle methods, event handlers, and other logic. We'll look at authoring components in the [Building reusable UI components with Blazor](./components) section.
 
@@ -228,3 +228,6 @@ To run the Blazor Server app simply hit F5 in Visual Studio. Because Blazor apps
 
 To run the Blazor WebAssembly app you can either run the client project directly using the dev server, or run the server project when hosting the app with ASP.NET Core. Blazor WebAssembly apps do not support debugging using Visual Studio, so to run the app use Ctrl-F5 instead of F5. You can instead debug Blazor WebAssembly apps directly in the browser. See [Debug ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/debug) for details.
 
+>[!div class="step-by-step"]
+>[Previous](hosting-models.md)
+>[Next](startup.md)

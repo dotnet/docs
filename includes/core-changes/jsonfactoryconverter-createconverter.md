@@ -18,7 +18,7 @@ namespace System.Text.Json.Serialization
 
 In .NET Core 3.0 Preview 8 and later versions, it is:
 
-``` C#
+```csharp
 namespace System.Text.Json.Serialization
 {
     public abstract class JsonConverterFactory : JsonConverter

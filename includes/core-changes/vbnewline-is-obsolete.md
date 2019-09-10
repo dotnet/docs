@@ -1,82 +1,34 @@
-﻿Public Class Reflectors
-    Public Const bf As System.Reflection.BindingFlags = _
-        System.Reflection.BindingFlags.DeclaredOnly Or _
-        System.Reflection.BindingFlags.Public Or _
-        System.Reflection.BindingFlags.NonPublic Or _
-        System.Reflection.BindingFlags.Instance
+﻿### Microsoft.VisualBasic.Constants.vbNewLine is obsolete
 
-    Shared Function InstantiateIt(t As Type, ParamArray args() As Object) As Object
-        Try
-            Dim ret As Object = t.InvokeMember(Nothing,
-                       bf Or System.Reflection.BindingFlags.CreateInstance,
-                       Nothing, Nothing, args)
-            Return ret
-        Catch ex As Exception
-            '          MsgBox(ex.ToString)
-            Return Nothing
-        End Try
-    End Function
+The <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> constant is marked [Obsolete](xref:System.ObsoleteAttribute) in .NET Framework, but the attribute was missing previously in the .NET Core 3.0 library.
 
-    Shared Function InvokeMethod(obj As Object, method As String, ParamArray args() As Object) As Object
-        Try
-            Dim ret As Object = obj.GetType.InvokeMember(method,
-                bf Or System.Reflection.BindingFlags.InvokeMethod,
-                Nothing, obj, args)
-            Return ret
-        Catch ex As Exception
-            '            MsgBox(ex.ToString)
-            Return Nothing
-        End Try
-    End Function
+#### Version introduced
 
-    Shared Function GetProperty(obj As Object, method As String, ParamArray args() As Object) As Object
-        Dim ret As Object = obj.GetType.InvokeMember(method,
-            bf Or System.Reflection.BindingFlags.GetProperty,
-            Nothing, obj, args)
-        Return ret
-    End Function
+.NET Core 3.0 Preview 8
 
-    Shared Function GetField(obj As Object, field As String) As Object
-        Dim ret As Object = obj.GetType.InvokeMember(field,
-            bf Or System.Reflection.BindingFlags.GetField,
-            Nothing, obj, Nothing)
-        Return ret
-    End Function
+#### Details
 
-    Shared Function ListMembers(obj As Object) As String
-        Dim ret As String = ""
-        For Each m As System.Reflection.MemberInfo In obj.GetType.GetMembers(bf)
-            ret &= m.Name & "    " & m.ToString & vbCrLf
-        Next
-        Return ret
-    End Function
-    Shared Function GetProperties(obj As Object) As String
-        Dim ret As String = "type = " & obj.GetType.ToString & vbCrLf
+Starting with .NET Core 3.0 Preview 8, the [Obsolete](xref:System.ObsoleteAttribute) attribute has been applied to the <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> constant to conform to `vbNewLine` in the .NET Framework. Use of the `vbNewLine` constant produces a compiler warning. 
 
-        For Each m As System.Reflection.PropertyInfo In obj.GetType.GetProperties(bf Or Reflection.BindingFlags.GetProperty)
-            Dim s As String
-            '   Dim gm As System.Reflection.MethodInfo = m.GetGetMethod
-            '  Dim ps As System.Reflection.ParameterInfo() = gm.GetParameters
-            ' Dim c As Integer = ps.Length
+In previous versions of .NET Core, `vbNewLine` did not produce a compiler warning.
 
+#### Recommended action
 
-            '   If m.GetGetMethod.GetParameters Is Nothing Then
-            Try
-                Dim o As Object = GetProperty(obj, m.Name)
-                If o Is Nothing Then
-                    s = "Nothing"
-                Else
-                    s = o.ToString
-                End If
-            Catch ex As Exception
-                s = "<got error>"
-            End Try
-            '  Else
-            '     o = "<Cannot get value; requires parameters>"
-            'End If
-            '     If o Is Nothing Then o = "<NOTHING>"
-            ret &= m.Name & "    " & s & vbCrLf
-        Next
-        Return ret
-    End Function
-End Class
+The [Obsolete](xref:System.ObsoleteAttribute) attribute message for `vbNewLine` includes the following recommendation:
+
+> For a carriage return and line feed, use [vbCrLf](xref:Microsoft.VisualBasic.Constants.vbCrLf). For the current platform's newline, use <xref:System.Environment.NewLine?displayProperty=NameWithType>.
+
+#### Category
+Visual Basic
+
+#### Affected APIs
+- <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName>
+
+<!--
+
+### Affected APIs
+
+- `F:Microsoft.VisualBasic.Constants.vbNewLine`
+
+-- >
+

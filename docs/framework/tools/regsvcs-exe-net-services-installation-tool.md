@@ -27,7 +27,7 @@ The .NET Services Installation tool performs the following actions:
   
 ## Syntax  
   
-```  
+```console  
       regsvcs [/c | /fc | /u] [/tlb:typeLibraryFile] [/extlb]  
 [/reconfig] [/componly] [/appname:applicationName]  
 [/nologo] [/quiet]assemblyFile.dll   
@@ -70,13 +70,13 @@ The .NET Services Installation tool performs the following actions:
 ## Examples  
  The following command adds all public classes contained in `myTest.dll` to `myTargetApp` (an existing COM+ application) and produces the `myTest.tlb` type library.  
   
-```  
+```console  
 regsvcs /appname:myTargetApp myTest.dll  
 ```  
   
  The following command adds all public classes contained in `myTest.dll` to `myTargetApp` (an existing COM+ application) and produces the `newTest.tlb` type library.  
   
-```  
+```console  
 regsvcs /appname:myTargetApp /tlb:newTest.tlb myTest.dll  
 ```  
   

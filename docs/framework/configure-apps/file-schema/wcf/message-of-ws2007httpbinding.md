@@ -6,12 +6,13 @@ ms.assetid: 9ffd8db6-84a8-4b38-a9fe-2cb1a87a1c97
 # \<message> of \<ws2007HttpBinding>
 Defines settings for message-level security of the [\<ws2007HttpBinding>](ws2007httpbinding.md) element.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<ws2007HttpBinding>  
-\<binding>  
-\<security>  
-\<message>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<ws2007HttpBinding>**](ws2007httpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-ws2007httpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
 ## Syntax  
   

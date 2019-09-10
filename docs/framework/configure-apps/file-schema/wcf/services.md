@@ -6,7 +6,9 @@ ms.assetid: 80d76ba9-2058-48ad-9b91-5e4be7e5c113
 # \<services>
 Services are defined in the `services` section of the configuration file. Each service has its own `service` configuration section.  
   
- \<system.ServiceModel>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<services>**  
   
 ## Syntax  
   

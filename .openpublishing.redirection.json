@@ -107,6 +107,16 @@
             "redirect_url": "/aspnet/core/host-and-deploy/docker/building-net-docker-images"
         },
         {
+            "source_path": "docs/core/docker/index.md",
+            "redirect_url": "/dotnet/core/docker/introduction",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/core/docker/intro-net-docker.md",
+            "redirect_url": "/dotnet/core/docker/introduction",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/core/getting-started.md",
             "redirect_url": "/dotnet/core/get-started",
             "redirect_document_id": true
@@ -331,7 +341,7 @@
         },
         {
             "source_path": "docs/core/versions/lts-current.md",
-            "redirect_url": "https://www.microsoft.com/net/Support/Policy"
+            "redirect_url": "https://dotnet.microsoft.com/platform/support/policy"
         },
         {
             "source_path": "docs/core/versions/servicing.md",
@@ -3355,11 +3365,6 @@
             "source_path": "docs/visual-basic/reference/vb6-support.md",
             "redirect_url": "/visualstudio/vb6/vb6-support",
             "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/core/docker/index.md",
-            "redirect_url": "/dotnet/core/docker/intro-net-docker",
-            "redirect_document_id": false
         },
         {
             "source_path": "docs/fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md",

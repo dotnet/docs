@@ -5,8 +5,9 @@ ms.assetid: a8cebf4c-06d2-4667-8f5b-c3e1fc90df6f
 ---
 # \<system.runtime.serialization>
 Represents the root element for the <xref:System.Runtime.Serialization> namespace section and contains elements for setting options of the <xref:System.Runtime.Serialization.DataContractSerializer>.  
-  
- system.runtime.serialization  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.runtime.serialization>**  
   
 ## Syntax  
   
@@ -50,3 +51,4 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
 - <xref:System.Runtime.Serialization>
 - [Using Data Contracts](../../../wcf/feature-details/using-data-contracts.md)
 - [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md)
+ 

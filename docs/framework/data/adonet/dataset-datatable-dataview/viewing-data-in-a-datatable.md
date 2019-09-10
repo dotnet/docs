@@ -110,4 +110,4 @@ DataRow[] custRows = workTable.Select("CustID > 5", "CustLName ASC");
 - <xref:System.Data.DataViewRowState>
 - [Manipulating Data in a DataTable](manipulating-data-in-a-datatable.md)
 - [Row States and Row Versions](row-states-and-row-versions.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

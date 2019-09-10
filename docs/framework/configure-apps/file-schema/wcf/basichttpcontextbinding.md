@@ -6,9 +6,10 @@ ms.assetid: 39b16b82-4ec6-4eff-8031-67e026870961
 # \<basicHttpContextBinding>
 Specifying a binding that provides context for the <xref:System.ServiceModel.BasicHttpBinding> to be exchanged by enabling HTTP cookies as the exchange mechanism.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<basicHttpContextBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<basicHttpContextBinding>**  
   
 ## Syntax  
   

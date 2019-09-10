@@ -4,14 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: 63efbd23-11d4-4871-bc88-ad01b9837553
 ---
 # complex type
-A *complex type* is a template for defining rich, structured properties on [entity types](../../../../docs/framework/data/adonet/entity-type.md) or on other complex types. Each template contains the following:  
+A *complex type* is a template for defining rich, structured properties on [entity types](entity-type.md) or on other complex types. Each template contains the following:  
   
 - A unique name. (Required)  
   
     > [!NOTE]
     > The name of a complex type cannot be the same as an entity type name within the same namespace.  
   
-- Data in the form of one or more [properties](../../../../docs/framework/data/adonet/property.md). (Optional.)  
+- Data in the form of one or more [properties](property.md). (Optional.)  
   
     > [!NOTE]
     > A property of a complex type can be another complex type.  
@@ -20,10 +20,10 @@ A *complex type* is a template for defining rich, structured properties on [enti
   
 - Complex types do not have identities and therefore cannot exist independently. Complex types can only exist as properties on entity types or other complex types.  
   
-- Complex types cannot participate in [associations](../../../../docs/framework/data/adonet/association-type.md). Neither end of an association can be a complex type, and therefore [navigation properties](../../../../docs/framework/data/adonet/navigation-property.md) cannot be defined on complex types.  
+- Complex types cannot participate in [associations](association-type.md). Neither end of an association can be a complex type, and therefore [navigation properties](navigation-property.md) cannot be defined on complex types.  
   
 ## Example  
- The [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines a complex type, Address, with the primitive type properties `StreetAddress`, `City`, `StateOrProvince`, `Country`, and `PostalCode`.  
+ The [ADO.NET Entity Framework](./ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](./ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines a complex type, Address, with the primitive type properties `StreetAddress`, `City`, `StateOrProvince`, `Country`, and `PostalCode`.  
   
  [!code-xml[EDM_Example_Model#ComplexTypeExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books2.edmx#complextypeexample)]  
   
@@ -33,5 +33,5 @@ A *complex type* is a template for defining rich, structured properties on [enti
   
 ## See also
 
-- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
-- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+- [Entity Data Model Key Concepts](entity-data-model-key-concepts.md)
+- [Entity Data Model](entity-data-model.md)

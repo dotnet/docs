@@ -131,4 +131,4 @@ A DiffGram is an XML format that identifies current and original versions of dat
 - [Loading a DataSet from XML](loading-a-dataset-from-xml.md)
 - [Writing DataSet Contents as XML Data](writing-dataset-contents-as-xml-data.md)
 - [DataSets, DataTables, and DataViews](index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -40,23 +40,33 @@ This sample demonstrates the use of the channel extensibility model. In particul
   
 ```  
 class InterceptingChannelFactory<TChannel> : ChannelFactoryBase<TChannel>  
-{ ... }  
+{ 
+    //... 
+}
+
 class InterceptingChannelListener<TChannel> : ListenerFactoryBase<TChannel>  
-{ ... }  
+{ 
+    //...
+}  
 ```  
   
 ## Adding a Binding Element  
  The sample defines a custom binding element: `InterceptingBindingElement`. `InterceptingBindingElement` takes a `ChannelMessageInterceptor` as an input, and uses this `ChannelMessageInterceptor` to manipulate messages that pass through it. This is the only class that must be public. The factory, listener, and channels can all be internal implementations of the public run-time interfaces.  
   
 ```  
-public class InterceptingBindingElement : BindingElement  
+public class InterceptingBindingElement : BindingElement 
+{
+}
 ```  
   
 ## Adding Configuration Support  
  To integrate with binding configuration, the library defines a configuration section handler as a binding element extension section. The client and server configuration files must register the binding element extension with the configuration system. Implementers that want to expose their binding element to the configuration system can derive from this class.  
   
 ```  
-public abstract class InterceptingElement : BindingElementExtensionElement { ... }  
+public abstract class InterceptingElement : BindingElementExtensionElement 
+{ 
+    //... 
+}
 ```  
   
 ## Adding Policy  
@@ -139,7 +149,7 @@ Dangerous wind detected! Reported speed (70) is greater than 64 kph.
 5 wind speed reports have been received.  
 ```  
   
-#### To set up, build, and run the sample  
+### To set up, build, and run the sample  
   
 1. Install ASP.NET 4.0 using the following command.  
   

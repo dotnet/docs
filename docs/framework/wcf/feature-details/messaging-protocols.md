@@ -411,7 +411,7 @@ The following sequence of steps describes the MTOM-specific encoding process:
 
     6. Add an `href` attribute to the `xop:Include` element with the value cid: uri derived from Content-ID header value generated in step 4b. Remove the enclosing "\<" and ">" characters, URL-escape the remaining string, and add the prefix `cid:`. The following minimum character set is required to be escaped by RFC1738 and RFC2396. Other characters can be escaped.
 
-        ```xml
+        ```
         Hexadecimal 00-1F , 7F, 20, "<" | ">" | "#" | "%" | <">
         "{" | "}" | "|" | "\" | "^" | "[" | "]" | "`" | "~" | "^"
         ```
@@ -456,7 +456,7 @@ While the requirement to use double quotation marks is not explicit in RFC 2387,
 
 - R4136: HTTP Content-Type header for a SOAP 1.x MTOM-encoded message must have the boundary parameter with the value (enclosed in double quotation marks) that matches the MIME boundary BNF defined in RFC 2046, section 5.1.1
 
-    ```xml
+    ```
     boundary := 0*69<bchars> bcharsnospace 
     bchars := bcharsnospace / " " 
     bcharsnospace :=    DIGIT / ALPHA / "'" / "(" / ")" / "+" 
@@ -467,19 +467,19 @@ While the requirement to use double quotation marks is not explicit in RFC 2387,
 
      CORRECT
 
-    ```xml
+    ```
     Content-Type: multipart/related; type="application/xop+xml";start=" <part0@tempuri.org>";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1";start-info="text/xml"
     ```
 
      CORRECT
 
-    ```xml
+    ```
     Content-Type: Multipart/Related; type="application/xop+xml";start-info="text/xml";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1"
     ```
 
      INCORRECT
 
-    ```xml
+    ```
     Content-Type: Multipart/Related; type=application/xop+xml;start=" <part0@tempuri.org>";start-info="text/xml";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1" 
     ```
 
@@ -492,13 +492,13 @@ The SOAP 1.x Envelope is encapsulated as a root part of the XOP MIME package and
 
 The format of the Content-ID header is defined by RFC 2045 as
 
-```xml
+```
 "Content-ID" ":" msg-id
 ```
 
 where `msg-id` is defined in RFC 2822 (that supersedes RFC 822, referenced in RFC 2045) as:
 
-```xml
+```
 msg-id    =       [CFWS] "<" id-left "@" id-right ">" [CFWS]
 ```
 
@@ -508,13 +508,13 @@ R4143: The value of the Content-ID header for the Infoset MIME part must follow 
 
 A number of MIME implementations relaxed requirements for the value enclosed within "\<" and ">" to be an email address and used `absoluteURI` enclosed in "\<" , ">" in addition to the email address. This version of WCF uses values of the Content-ID MIME header of the form:
 
-```xml
+```
 Content-ID: <http://tempuri.org/0> 
 ```
 
 R4144: MTOM processors should accept Content-ID header values that match the following relaxed `msg-id`.
 
-```xml
+```
 msg-id-relaxed =     [CFWS] "<" (absoluteURI | mail-address) ">" [CFWS]
 mail-address   =     id-left "@" id-right
 ```
@@ -531,14 +531,14 @@ MIME (RFC 2045) provides the Content-Transfer-Encoding header to communicate enc
 
 - R4148: SOAP1.1 Infoset part must contain Content-Type header with media type application/xop+xml and parameters type="text/xml" and charset
 
-    ```xml
+    ```
     Content-Type: application/xop+xml;
                   charset=utf-8;type="text/xml"
     ```
 
 - R4149: The SOAP 1.2 Infoset part must contain the Content-Type header with media type `application/xop+xml` and parameters type="`application/soap+xml`" and `charset`.
 
-    ```xml
+    ```
     Content-Type: application/xop+xml;
                   charset=utf-8;type="application/soap+xml"
     ```

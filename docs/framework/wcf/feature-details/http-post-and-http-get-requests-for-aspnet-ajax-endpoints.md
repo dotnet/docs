@@ -69,7 +69,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
 3. Create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. Specify that the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> is to be used in the [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive to automatically configure an ASP.NET AJAX endpoint.  
   
-    ```text
+    ```
     <%@ServiceHost   
         language=c#   
         Debug="true"   

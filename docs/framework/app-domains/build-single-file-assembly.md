@@ -32,18 +32,15 @@ In this command, *compiler command* is the compiler command for the language use
 
 The following example creates an assembly named *myCode.exe* from a code module called `myCode`.
 
-# [C#](#tab/csharp)
 
-```cmd
+```csharp
 csc myCode.cs
 ```
 
-# [Visual Basic](#tab/vb)
-
-```cmd
+```vb
 vbc myCode.vb
 ```
----
+
 ## Create an assembly with an .exe extension and specify the output file name
 
 At the command prompt, type the following command:
@@ -54,18 +51,14 @@ In this command, *compiler command* is the compiler command for the language use
 
 The following example creates an assembly named *myAssembly.exe* from a code module called `myCode`.
 
-# [C#](#tab/csharp)
-
-```cmd
+```csharp
 csc -out:myAssembly.exe myCode.cs
 ```
 
-# [Visual Basic](#tab/vb)
-
-```cmd
+```vb
 vbc -out:myAssembly.exe myCode.vb
 ```
----
+
 ## Create library assemblies
  A library assembly is similar to a class library. It contains types that will be referenced by other assemblies, but it has no entry point to begin execution.
 
@@ -77,18 +70,13 @@ In this command, *compiler command* is the compiler command for the language use
 
 The following example creates a library assembly named *myCodeAssembly.dll* from a code module called `myCode`.
 
-# [C#](#tab/csharp)
-
-```cmd
+```csharp
 csc -out:myCodeLibrary.dll -t:library myCode.cs
 ```
 
-# [Visual Basic](#tab/vb)
-
-```cmd
+```vb
 vbc -out:myCodeLibrary.dll -t:library myCode.vb
 ```
----
 ## See also
 
 - [Create assemblies](../../standard/assembly/create.md)

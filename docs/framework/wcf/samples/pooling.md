@@ -27,7 +27,7 @@ This sample demonstrates how to extend Windows Communication Foundation (WCF) to
 ## The Object Pool  
  A custom <xref:System.ServiceModel.Dispatcher.IInstanceProvider> implementation provides the required object pooling semantics for a service. Therefore, this sample has an `ObjectPoolingInstanceProvider` type that provides custom implementation of <xref:System.ServiceModel.Dispatcher.IInstanceProvider> for pooling. When the `Dispatcher` calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%28System.ServiceModel.InstanceContext%2CSystem.ServiceModel.Channels.Message%29> method, instead of creating a new instance, the custom implementation looks for an existing object in an in-memory pool. If one is available, it is returned. Otherwise, a new object is created. The implementation for `GetInstance` is shown in the following sample code.  
   
-```  
+```csharp  
 object IInstanceProvider.GetInstance(InstanceContext instanceContext, Message message)  
 {  
     object obj = null;  
@@ -55,7 +55,7 @@ object IInstanceProvider.GetInstance(InstanceContext instanceContext, Message me
   
  The custom `ReleaseInstance` implementation adds the released instance back to the pool and decrements the `ActiveObjectsCount` value. The `Dispatcher` can call these methods from different threads, and therefore synchronized access to the class level members in the `ObjectPoolingInstanceProvider` class is required.  
   
-```  
+```csharp  
 void IInstanceProvider.ReleaseInstance(InstanceContext instanceContext, object instance)  
 {  
     lock (poolLock)  
@@ -103,7 +103,7 @@ void IInstanceProvider.ReleaseInstance(InstanceContext instanceContext, object i
   
  In the custom <xref:System.ServiceModel.Description.IServiceBehavior> implementation a new instance of `ObjectPoolingInstanceProvider` is instantiated and assigned to the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> property in each <xref:System.ServiceModel.Dispatcher.DispatchRuntime> in the ServiceHostBase.  
   
-```  
+```csharp  
 void IServiceBehavior.ApplyDispatchBehavior(ServiceDescription description, ServiceHostBase serviceHostBase)  
 {  
     // Create an instance of the ObjectPoolInstanceProvider.  
@@ -174,7 +174,7 @@ InvalidOperationException(ResourceHelper.GetString("ExNullThrottle"));
   
  The object pooling behavior can now be added to a WCF service by annotating the service implementation with the newly created custom `ObjectPooling` attribute.  
   
-```  
+```csharp  
 [ObjectPooling(MaxPoolSize=1024, MinPoolSize=10, CreationTimeout=30000)]      
 public class PoolService : IPoolService  
 {  
@@ -187,7 +187,7 @@ public class PoolService : IPoolService
   
  The service application implements two services -- `WorkService` and `ObjectPooledWorkService`. Both services share the same implementation -- they both require expensive initialization and then expose a `DoWork()` method that is relatively cheap. The only difference is that the `ObjectPooledWorkService` has object pooling configured:  
   
-```  
+```csharp  
 [ObjectPooling(MinPoolSize = 0, MaxPoolSize = 5)]  
 public class ObjectPooledWorkService : IDoWork  
 {  
@@ -206,7 +206,7 @@ public class ObjectPooledWorkService : IDoWork
   
  When you run the client, it times calling the `WorkService` 5 times. It then times calling the `ObjectPooledWorkService` 5 times. The difference in time is then displayed:  
   
-```  
+```console
 Press <ENTER> to start the client.  
   
 Calling WorkService:  

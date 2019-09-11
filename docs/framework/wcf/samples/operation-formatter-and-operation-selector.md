@@ -67,7 +67,7 @@ This sample demonstrates how Windows Communication Foundation (WCF) extensibilit
   
  This must be done before calling `CreateChannel`.  
   
-```  
+```csharp  
 void ReplaceFormatterBehavior(OperationDescription operationDescription, EndpointAddress address)  
 {  
     // Remove the DataContract behavior if it is present.  

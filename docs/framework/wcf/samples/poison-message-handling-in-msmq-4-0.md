@@ -227,7 +227,7 @@ public class OrderProcessorService : IOrderProcessor
 
  The service starts running, processing orders and at random starts to terminate processing. If the message indicates it has processed the order, you can run the client again to send another message until you see the service has actually terminated a message. Based on the configured poison settings, the message is tried once for processing before moving it to the final poison queue.
 
-```
+```console
 The service is ready.
 Press <ENTER> to terminate service.
 
@@ -252,7 +252,7 @@ Aborting transaction, cannot process purchase order: 23e0b991-fbf9-4438-a0e2-20a
 
  Start up the poison message service to read the poisoned message from the poison queue. In this example, the poison message service reads the message and processes it. You could see that the purchase order that was terminated and poisoned is read by the poison message service.
 
-```
+```console
 The service is ready.
 Press <ENTER> to terminate service.
 

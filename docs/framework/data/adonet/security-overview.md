@@ -100,4 +100,4 @@ Securing an application is an ongoing process. There will never be a point where
 - [Securing ADO.NET Applications](securing-ado-net-applications.md)
 - [Security in .NET](../../../standard/security/index.md)
 - [SQL Server Security](./sql/sql-server-security.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

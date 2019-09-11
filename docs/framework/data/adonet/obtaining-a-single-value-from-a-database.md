@@ -19,4 +19,4 @@ You may need to return database information that is simply a single value rather
 - [Commands and Parameters](commands-and-parameters.md)
 - [Executing a Command](executing-a-command.md)
 - [DbConnection, DbCommand and DbException](dbconnection-dbcommand-and-dbexception.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

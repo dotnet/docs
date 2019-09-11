@@ -20,7 +20,7 @@ The Software Publisher Certificate Test tool creates a Software Publisher's Cert
   
 ## Syntax  
   
-```  
+```console  
 cert2spc cert1.cer | crl1.crl [... certN.cer | crlN.crl] outputSPCfile.spc  
 ```  
   
@@ -39,13 +39,13 @@ cert2spc cert1.cer | crl1.crl [... certN.cer | crlN.crl] outputSPCfile.spc
 ## Examples  
  The following command creates an SPC from `myCertificate.cer` and places it in `mySPCFile.spc`.  
   
-```  
+```console
 cert2spc myCertificate.cer mySPCFile.spc  
 ```  
   
  The following command creates an SPC from `oneCertificate.cer` and `twoCertificate.cer`, and places it in `mySPCFile.spc`.  
   
-```  
+```console
 cert2spc oneCertificate.cer twoCertificate.cer mySPCFile.spc  
 ```  
   

@@ -33,4 +33,4 @@ Microsoft SQL Server Express Edition (SQL Server Express) is based on Microsoft 
 
 - [SQL Server Security](sql-server-security.md)
 - [SQL Server Express User Instances](sql-server-express-user-instances.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

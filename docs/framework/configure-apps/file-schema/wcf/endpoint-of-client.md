@@ -6,9 +6,10 @@ ms.assetid: de6238ae-bbf8-48e9-a1b5-e24c0bea8afa
 # \<endpoint> of \<client>
 Specifies contract, binding, and address properties of the channel endpoint, which is used by clients to connect to service endpoints on the server.  
   
- \<system.ServiceModel>  
-\<client>  
-\<endpoint>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<client>**](client.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endpoint>**  
   
 ## Syntax  
   

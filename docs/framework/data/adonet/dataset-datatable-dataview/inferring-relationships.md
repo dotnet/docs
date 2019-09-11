@@ -71,4 +71,4 @@ If an element that is inferred as a table has a child element that is also infer
 - [Nesting DataRelations](nesting-datarelations.md)
 - [Using XML in a DataSet](using-xml-in-a-dataset.md)
 - [DataSets, DataTables, and DataViews](index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

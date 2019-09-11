@@ -14,7 +14,7 @@ ms.date: 08/01/2018
 - **Flexible deployment:** Can be included in your app or installed side-by-side (user-wide or system-wide installations). Can be used with [Docker containers](docker/index.md).
 - **Compatible:** .NET Core is compatible with .NET Framework, Xamarin and Mono, via [.NET Standard](../standard/net-standard.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. .NET Core is a [.NET Foundation](https://dotnetfoundation.org/) project.
-- **Supported by Microsoft:** .NET Core is supported by Microsoft, per [.NET Core Support](https://www.microsoft.com/net/core/support/).
+- **Supported by Microsoft:** .NET Core is supported by Microsoft, per [.NET Core Support](https://dotnet.microsoft.com/platform/support/policy).
 
 ## Languages
 
@@ -51,9 +51,9 @@ Multiple frameworks have been built on top of .NET Core:
 
 These components are distributed in the following ways:
 
-- [.NET Core Runtime](https://www.microsoft.com/net/download/dotnet-core/2.1) -- includes the .NET Core runtime and framework libraries.
-- [ASP.NET Core Runtime](https://www.microsoft.com/net/download/dotnet-core/2.1) -- includes ASP.NET Core and .NET Core runtime and framework libraries.
-- [.NET Core SDK](https://www.microsoft.com/net/download/dotnet-core/2.1) -- includes the .NET CLI Tools, ASP.NET Core runtime, and .NET Core runtime and framework.
+- [.NET Core Runtime](https://dotnet.microsoft.com/download) -- includes the .NET Core runtime and framework libraries.
+- [ASP.NET Core Runtime](https://dotnet.microsoft.com/download) -- includes ASP.NET Core and .NET Core runtime and framework libraries.
+- [.NET Core SDK](https://dotnet.microsoft.com/download) -- includes the .NET CLI Tools, ASP.NET Core runtime, and .NET Core runtime and framework.
 
 ### Open source
 

@@ -20,4 +20,4 @@ The <xref:System.Data.DataTableReader> obtains the contents of one or more <xref
 ## See also
 
 - [DataTableReaders](datatablereaders.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

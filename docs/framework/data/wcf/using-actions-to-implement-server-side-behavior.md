@@ -51,7 +51,7 @@ OData Actions provide a way to implement a behavior that acts upon a resource re
   
  Movies(1) specifies the movie you wish to rate and Rate specifies the Rate action. The actual value of the rating will be in the body of the HTTP request as shown in the following example:  
   
-```  
+```http
 POST http://MovieServer/MoviesService.svc/Movies(1)/Rate HTTP/1.1   
 Content-Type: application/json   
 Content-Length: 20   

@@ -57,4 +57,4 @@ Application roles provide a way to assign permissions to an application instead 
 - [Securing ADO.NET Applications](../securing-ado-net-applications.md)
 - [Overview of SQL Server Security](overview-of-sql-server-security.md)
 - [Application Security Scenarios in SQL Server](application-security-scenarios-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

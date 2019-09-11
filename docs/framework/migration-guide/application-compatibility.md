@@ -101,6 +101,6 @@ To begin, select the type of compatibility change below:
 
 ## See also
 
-- [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
-- [What's New](../../../docs/framework/whats-new/index.md)
-- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
+- [Versions and Dependencies](versions-and-dependencies.md)
+- [What's New](../whats-new/index.md)
+- [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md)

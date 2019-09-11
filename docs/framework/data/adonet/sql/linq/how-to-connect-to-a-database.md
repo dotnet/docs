@@ -12,7 +12,7 @@ The <xref:System.Data.Linq.DataContext> is the main conduit by which you connect
  The purpose of the <xref:System.Data.Linq.DataContext> is to translate your requests for objects into SQL queries to be made against the database, and then to assemble objects out of the results. The <xref:System.Data.Linq.DataContext> enables [!INCLUDE[vbteclinqext](../../../../../../includes/vbteclinqext-md.md)] by implementing the same operator pattern as the Standard Query Operators, such as `Where` and `Select`.  
   
 > [!IMPORTANT]
-> Maintaining a secure connection is of the highest importance. For more information, see [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md).  
+> Maintaining a secure connection is of the highest importance. For more information, see [Security in LINQ to SQL](security-in-linq-to-sql.md).  
   
 ## Example  
  In the following example, the <xref:System.Data.Linq.DataContext> is used to connect to the Northwind sample database and to retrieve rows of customers whose city is London.  
@@ -35,4 +35,4 @@ The <xref:System.Data.Linq.DataContext> is the main conduit by which you connect
   
 ## See also
 
-- [Communicating with the Database](../../../../../../docs/framework/data/adonet/sql/linq/communicating-with-the-database.md)
+- [Communicating with the Database](communicating-with-the-database.md)

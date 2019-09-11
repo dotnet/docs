@@ -86,4 +86,4 @@ The following code example takes an existing `DataSet` with updates and passes t
 - [DataAdapters and DataReaders](../dataadapters-and-datareaders.md)
 - [Retrieving and Modifying Data in ADO.NET](../retrieving-and-modifying-data.md)
 - [Retrieving Identity or Autonumber Values](../retrieving-identity-or-autonumber-values.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

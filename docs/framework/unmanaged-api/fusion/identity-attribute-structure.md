@@ -18,7 +18,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # IDENTITY_ATTRIBUTE Structure
-Contains metadata attribute information about an [IDefinitionIdentity](../../../../docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md) instance.  
+Contains metadata attribute information about an [IDefinitionIdentity](idefinitionidentity-interface.md) instance.  
   
 ## Syntax  
   
@@ -41,10 +41,10 @@ typedef struct _IDENTITY_ATTRIBUTE {
 ## Remarks  
  The `IDENTITY_ATTRIBUTE` structure contains three pointers to null-terminated character strings. These three strings describe one attribute.  
   
- An instance of an `IDENTITY_ATTRIBUTE` structure is associated with an instance of an [IDENTITY_ATTRIBUTE_BLOB](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-blob-structure.md) structure. The `IDENTITY_ATTRIBUTE` structure contains the actual strings, and the corresponding `IDENTITY_ATTRIBUTE_BLOB` structure lists the offsets to the three strings listed in the `IDENTITY_ATTRIBUTE` structure.  
+ An instance of an `IDENTITY_ATTRIBUTE` structure is associated with an instance of an [IDENTITY_ATTRIBUTE_BLOB](identity-attribute-blob-structure.md) structure. The `IDENTITY_ATTRIBUTE` structure contains the actual strings, and the corresponding `IDENTITY_ATTRIBUTE_BLOB` structure lists the offsets to the three strings listed in the `IDENTITY_ATTRIBUTE` structure.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   
@@ -52,6 +52,6 @@ typedef struct _IDENTITY_ATTRIBUTE {
   
 ## See also
 
-- [IDefinitionIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md)
-- [IDENTITY_ATTRIBUTE_BLOB Structure](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-blob-structure.md)
-- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
+- [IDefinitionIdentity Interface](idefinitionidentity-interface.md)
+- [IDENTITY_ATTRIBUTE_BLOB Structure](identity-attribute-blob-structure.md)
+- [Fusion Structures](fusion-structures.md)

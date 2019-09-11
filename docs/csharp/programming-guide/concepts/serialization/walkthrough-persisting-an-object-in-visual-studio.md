@@ -16,7 +16,7 @@ In this walkthrough, you will create a basic `Loan` object and persist its data 
 
 ## Prerequisites
 
-- To build and run, install the [.NET Core SDK](https://www.microsoft.com/net/core).
+- To build and run, install the [.NET Core SDK](https://dotnet.microsoft.com/download).
 
 - Install your favorite code editor, if you haven't already.
 

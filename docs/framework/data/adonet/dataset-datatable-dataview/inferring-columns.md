@@ -66,4 +66,4 @@ After ADO.NET has determined from an XML document which elements to infer as tab
 - [Loading DataSet Schema Information from XML](loading-dataset-schema-information-from-xml.md)
 - [Using XML in a DataSet](using-xml-in-a-dataset.md)
 - [DataSets, DataTables, and DataViews](index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -20,7 +20,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # IDENTITY_ATTRIBUTE_BLOB Structure
-Contains information about a single attribute in an assembly, and consists of three `DWORD`s. Each `DWORD` is an offset into a character buffer produced by the `CurrentIntoBuffer` method of the [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md) interface  
+Contains information about a single attribute in an assembly, and consists of three `DWORD`s. Each `DWORD` is an offset into a character buffer produced by the `CurrentIntoBuffer` method of the [IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md) interface  
   
 ## Syntax  
   
@@ -43,9 +43,9 @@ typedef struct _IDENTITY_ATTRIBUTE_BLOB {
 ## Sample  
  The following example illustrates several basic steps, which eventually result in a populated `IDENTITY_ATTRIBUTE_BLOB` structure:  
   
-1. Obtain an [IReferenceIdentity](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md) for the assembly.  
+1. Obtain an [IReferenceIdentity](ireferenceidentity-interface.md) for the assembly.  
   
-2. Call the `IReferenceIdentity::EnumAttributes` method, and obtain an [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md).  
+2. Call the `IReferenceIdentity::EnumAttributes` method, and obtain an [IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md).  
   
 3. Create a character buffer, and cast it as an `IDENTITY_ATTRIBUTE_BLOB` structure.  
   
@@ -230,7 +230,7 @@ Exit:
  Version = 2.0.0.0  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   
@@ -238,7 +238,7 @@ Exit:
   
 ## See also
 
-- [IReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)
-- [IEnumIDENTITY_ATTRIBUTE Interface](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)
-- [IDENTITY_ATTRIBUTE Structure](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-structure.md)
-- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
+- [IReferenceIdentity Interface](ireferenceidentity-interface.md)
+- [IEnumIDENTITY_ATTRIBUTE Interface](ienumidentity-attribute-interface.md)
+- [IDENTITY_ATTRIBUTE Structure](identity-attribute-structure.md)
+- [Fusion Structures](fusion-structures.md)

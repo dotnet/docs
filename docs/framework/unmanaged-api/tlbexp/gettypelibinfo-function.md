@@ -53,12 +53,12 @@ HRESULT GetTypeLibInfo(
  [out] The minor version number of the type library. For example, for version *x.y*, the minor version number is *y*.  
   
 ## Remarks  
- The `GetTypeLibInfo` function is called by the [Tlbexp.exe (Type Library Exporter)](../../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md). This tool generates a type library that describes the types in a common language runtime (CLR) assembly.  
+ The `GetTypeLibInfo` function is called by the [Tlbexp.exe (Type Library Exporter)](../../tools/tlbexp-exe-type-library-exporter.md). This tool generates a type library that describes the types in a common language runtime (CLR) assembly.  
   
  If any parameter is null, the function returns an `HRESULT` of `E_POINTER`. Otherwise, it returns `S_OK`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** TlbRef.h  
   
@@ -68,5 +68,5 @@ HRESULT GetTypeLibInfo(
   
 ## See also
 
-- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)
+- [Tlbexp Helper Functions](index.md)
 - [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

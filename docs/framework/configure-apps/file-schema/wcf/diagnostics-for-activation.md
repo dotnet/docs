@@ -6,8 +6,9 @@ ms.assetid: 1486e0eb-fe2a-46c3-b584-c924889477dd
 # \<diagnostics> for Activation
 Configures Windows Communication Foundation (WCF) listener's diagnostics functionalities.  
   
- \<system.serviceModel.activation>  
-\<diagnostics>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel.activation>**](system-servicemodel-activation.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<diagnostics>**  
   
 ## Syntax  
   

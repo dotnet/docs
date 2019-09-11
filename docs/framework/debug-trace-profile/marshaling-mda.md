@@ -19,7 +19,7 @@ The `marshaling` managed debugging assistant (MDA) is activated when the CLR set
 ## Output  
  The MDA displays the type of the parameter or field in the managed and unmanaged contexts, and the structure or method containing the type.  The following is an example of the output for a field:  
   
-```  
+```output
 Marshaling from 'Char' to 'ANSI char'  
 name="assembly!Namespace.Class::myChar  
 ```  

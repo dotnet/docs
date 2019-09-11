@@ -8,7 +8,7 @@ ms.assetid: d0ad15ac-fa12-4f27-80e8-7ac2271e5985
 # Extending Dispatchers
 Dispatchers are responsible for pulling incoming messages out of the underlying channels, translating them into method invocations in application code, and sending the results back to the caller. Dispatcher extensions allow you to modify this processing.  You can implement message or parameter inspectors that inspect or modify the contents of messages or parameters.  You can change the way messages are routed to operations or provide some other functionality.
 
-This topic describes how to use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes in a Windows Communication Foundation (WCF) service application to modify the default execution behavior of a dispatcher or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about the equivalent client runtime message processing, see [Extending Clients](../../../../docs/framework/wcf/extending/extending-clients.md). To understand the role that <xref:System.ServiceModel.IExtensibleObject%601> types play in accessing shared state between various runtime customization objects, see [Extensible Objects](../../../../docs/framework/wcf/extending/extensible-objects.md).
+This topic describes how to use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes in a Windows Communication Foundation (WCF) service application to modify the default execution behavior of a dispatcher or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about the equivalent client runtime message processing, see [Extending Clients](extending-clients.md). To understand the role that <xref:System.ServiceModel.IExtensibleObject%601> types play in accessing shared state between various runtime customization objects, see [Extensible Objects](extensible-objects.md).
 
 ## Dispatchers
 
@@ -16,11 +16,11 @@ The service model layer performs the conversion between the developer’s progra
 
 The channel dispatcher (and companion <xref:System.ServiceModel.Channels.IChannelListener>) pulls messages out of the underling channel and passes the messages to their respective endpoint dispatchers. Each endpoint dispatcher has a <xref:System.ServiceModel.Dispatcher.DispatchRuntime> that routes messages to the appropriate <xref:System.ServiceModel.Dispatcher.DispatchOperation>, which is responsible for calling the method that implements the operation. Various optional and required extension classes are invoked along the way. This topic explains how these pieces fit together, and how you might modify properties and plug your own code in to extend the base functionality.
 
-Dispatcher properties and modified customization objects are inserted by using service, endpoint, contract, or operation behavior objects. This topic does not describe how to use behaviors. For more information about the types used to insert dispatcher modifications, see [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).
+Dispatcher properties and modified customization objects are inserted by using service, endpoint, contract, or operation behavior objects. This topic does not describe how to use behaviors. For more information about the types used to insert dispatcher modifications, see [Configuring and Extending the Runtime with Behaviors](configuring-and-extending-the-runtime-with-behaviors.md).
 
 The following graphic provides a high-level view of the architectural items in a service.
 
-![The dispatch runtime architecture](../../../../docs/framework/wcf/extending/media/wcfc-dispatchruntimearchc.gif "wcfc_DispatchRuntimeArchc")
+![The dispatch runtime architecture](./media/wcfc-dispatchruntimearchc.gif "wcfc_DispatchRuntimeArchc")
 
 ### Channel Dispatchers
 
@@ -38,30 +38,30 @@ Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to acquire the 
 
 There a number of reasons to extend the dispatcher:
 
-- Custom Message Validation. Users can enforce that a message is valid for a certain schema. This can be done by implementing the message interceptor interfaces. For an example, see [Message Inspectors](../../../../docs/framework/wcf/samples/message-inspectors.md).
+- Custom Message Validation. Users can enforce that a message is valid for a certain schema. This can be done by implementing the message interceptor interfaces. For an example, see [Message Inspectors](../samples/message-inspectors.md).
 
 - Custom Message Logging. Users can inspect and log some set of application messages that flow through an endpoint. This can also be accomplished with the message interceptor interfaces.
 
 - Custom Message Transformations. Users can apply certain transformations to the message in the runtime (for example, for versioning). This can be accomplished, again, with the message interceptor interfaces.
 
-- Custom Data Model. Users can have a data serialization model other than those supported by default in WCF (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and raw messages). This can be done by implement the message formatter interfaces. For an example, see [Operation Formatter and Operation Selector](../../../../docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).
+- Custom Data Model. Users can have a data serialization model other than those supported by default in WCF (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and raw messages). This can be done by implement the message formatter interfaces. For an example, see [Operation Formatter and Operation Selector](../samples/operation-formatter-and-operation-selector.md).
 
 - Custom Parameter Validation. Users can enforce that typed parameters are valid (as opposed to XML). This can be done using the parameter inspector interfaces.
 
-- Custom Operation Dispatching. Users can implement dispatching on something other than action – for example, on the body element, or on a custom message property. This can be done using the <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> interface. For an example, see [Operation Formatter and Operation Selector](../../../../docs/framework/wcf/samples/operation-formatter-and-operation-selector.md).
+- Custom Operation Dispatching. Users can implement dispatching on something other than action – for example, on the body element, or on a custom message property. This can be done using the <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> interface. For an example, see [Operation Formatter and Operation Selector](../samples/operation-formatter-and-operation-selector.md).
 
-- Object Pooling. Users can pool instances rather than allocating a new one for every call. This can be implemented using the instance provider interfaces. For an example, see [Pooling](../../../../docs/framework/wcf/samples/pooling.md).
+- Object Pooling. Users can pool instances rather than allocating a new one for every call. This can be implemented using the instance provider interfaces. For an example, see [Pooling](../samples/pooling.md).
 
 - Instance Leasing. Users can implement a leasing pattern for instance lifetime, similar to that of .NET Framework Remoting. This can be done using the instance context lifetime interfaces.
 
 - Custom Error Handling. Users can control how both local errors are processed and how faults are communicated back to clients. This can be implemented using the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interfaces.
 
-- Custom Authorization Behaviors. Users can implement custom access control by extending the Contract or Operation run-time pieces and adding security checks based upon the tokens present in the message. This can be accomplished using either the message interceptor or parameter interceptor interfaces. For examples, see [Security Extensibility](../../../../docs/framework/wcf/samples/security-extensibility.md).
+- Custom Authorization Behaviors. Users can implement custom access control by extending the Contract or Operation run-time pieces and adding security checks based upon the tokens present in the message. This can be accomplished using either the message interceptor or parameter interceptor interfaces. For examples, see [Security Extensibility](../samples/security-extensibility.md).
 
   > [!CAUTION]
   > Because altering security properties has the potential to compromise the security of WCF applications, it is strongly recommended that you undertake security-related modifications with care and test thoroughly prior to deployment.
 
-- Custom WCF Runtime Validators. You can install custom validators that examine services, contracts, and bindings to enforce enterprise-level policies with respect to WCF applications. (For example, see [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md).)
+- Custom WCF Runtime Validators. You can install custom validators that examine services, contracts, and bindings to enforce enterprise-level policies with respect to WCF applications. (For example, see [How to: Lock Down Endpoints in the Enterprise](how-to-lock-down-endpoints-in-the-enterprise.md).)
 
 ### Using the DispatchRuntime Class
 
@@ -131,6 +131,6 @@ The following properties control runtime execution at the operation level:
 
 - <xref:System.ServiceModel.Dispatcher.DispatchRuntime>
 - <xref:System.ServiceModel.Dispatcher.DispatchOperation>
-- [How to: Inspect and Modify Messages on the Service](../../../../docs/framework/wcf/extending/how-to-inspect-and-modify-messages-on-the-service.md)
-- [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md)
-- [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md)
+- [How to: Inspect and Modify Messages on the Service](how-to-inspect-and-modify-messages-on-the-service.md)
+- [How to: Inspect or Modify Parameters](how-to-inspect-or-modify-parameters.md)
+- [How to: Lock Down Endpoints in the Enterprise](how-to-lock-down-endpoints-in-the-enterprise.md)

@@ -9,6 +9,10 @@ helpviewer_keywords:
 ms.assetid: 4c6a406a-b5eb-44fa-b4ed-4e95bb95a813
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 ---
 # How to: Reference a strong-named assembly
 The process for referencing types or resources in a strong-named assembly is usually transparent. You can make the reference either at compile time (early binding) or at run time.  
@@ -28,7 +32,7 @@ In this command, *compiler command* is the compiler command for the language you
 
 The following example creates an assembly called *myAssembly.dll* that references a strong-named assembly called *myLibAssembly.dll* from a code module called *myAssembly.cs*.  
 
-```cmd  
+```cmd
 csc /t:library myAssembly.cs /reference:myLibAssembly.dll  
 ```  
 
@@ -40,7 +44,7 @@ When you make a run-time reference to a strong-named assembly, for example by us
 
 For example:  
 
-```  
+```console
 myDll, Version=1.1.0.0, Culture=en, PublicKeyToken=03689116d3a4ae33   
 ```  
 
@@ -52,12 +56,12 @@ The following code example shows how to use this information with the <xref:Syst
 Assembly^ myDll =
     Assembly::Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1");
 ```
-   
+
 ```csharp
 Assembly myDll =
     Assembly.Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1");
 ```
-   
+
 ```vb
 Dim myDll As Assembly = _
     Assembly.Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1")

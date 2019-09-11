@@ -9,6 +9,10 @@ helpviewer_keywords:
 ms.assetid: 2c30799a-a826-46b4-a25d-c584027a6c67
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 ---
 # How to: Sign an assembly with a strong name
 
@@ -56,7 +60,7 @@ Where:
 
 The following example signs the assembly *MyAssembly.dll* with a strong name by using the key file *sgKey.snk*.  
 
-```  
+```console
 al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk  
 ```  
   

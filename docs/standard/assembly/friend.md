@@ -2,6 +2,9 @@
 title: "Friend assemblies"
 ms.date: 08/20/2019
 ms.assetid: b65ea7de-0801-477a-a39c-e914c2cc107c
+dev_langs: 
+  - "csharp"
+  - "vb"
 ---
 # Friend assemblies
 

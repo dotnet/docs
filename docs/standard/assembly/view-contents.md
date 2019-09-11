@@ -12,6 +12,10 @@ helpviewer_keywords:
 ms.assetid: fb7baaab-4c0d-47ad-8fd3-4591cf834709
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 ---
 # How to: View assembly contents
 You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) information in a file. If the file being examined is an assembly, this information can include the assembly's attributes, as well as references to other modules and assemblies. This information can be helpful in determining whether a file is an assembly or part of an assembly, and whether the file has references to other modules or assemblies.  

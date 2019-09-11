@@ -8,6 +8,10 @@ helpviewer_keywords:
 ms.assetid: 009dae23-e1f6-4a64-9a9a-32e4c34802b0
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 ---
 # How to: Find an assembly's fully qualified name
 To discover the fully qualified name of a .NET Framework assembly in the global assembly cache, use the Global Assembly Cache tool ([Gacutil.exe](../../framework/tools/gacutil-exe-gac-tool.md)). See [How to: View the contents of the global assembly cache](../../framework/app-domains/how-to-view-the-contents-of-the-gac.md).  
@@ -34,6 +38,7 @@ For .NET Core assemblies, and for .NET Framework assemblies that aren't in the g
   // The example displays output like the following:
   //   UtilityLibrary, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
   ```
+  
   ```vb
   Imports System.Reflection
   
@@ -77,7 +82,7 @@ int main()
     asmname::Main();
 }
 ```
-   
+
 ```csharp
 using System;
 using System.Reflection;
@@ -93,7 +98,7 @@ class asmname
     }
 }
 ```
-   
+
 ```vb
 Imports System
 Imports System.Reflection

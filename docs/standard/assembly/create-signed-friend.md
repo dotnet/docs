@@ -2,6 +2,9 @@
 title: "How to: Create signed friend assemblies"
 ms.date: 08/19/2019
 ms.assetid: bab62063-61e6-453f-905f-77673df9534e
+dev_langs: 
+  - "csharp"
+  - "vb"
 ---
 # How to: Create signed friend assemblies
 This example shows how to use friend assemblies with assemblies that have strong names. Both assemblies must be strong named. Although both assemblies in this example use the same keys, you could use different keys for two assemblies.  

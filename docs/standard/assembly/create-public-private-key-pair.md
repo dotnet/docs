@@ -13,6 +13,10 @@ helpviewer_keywords:
 ms.assetid: 05026813-f3bd-4d7c-9e0b-fc588eb3d114
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 ---
 # How to: Create a public-private key pair
 

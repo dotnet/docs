@@ -10,6 +10,10 @@ helpviewer_keywords:
 ms.assetid: 9d300e17-5bf1-4360-97da-2aa55efd9070
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 ---
 # Delay-sign an assembly
 An organization can have a closely guarded key pair that developers can't access on a daily basis. The public key is often available, but access to the private key is restricted to only a few individuals. When developing assemblies with strong names, each assembly that references the strong-named target assembly contains the token of the public key used to give the target assembly a strong name. This requires that the public key be available during the development process.  

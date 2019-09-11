@@ -2,6 +2,9 @@
 title: "How to: Determine if a file is an assembly"
 ms.date: 08/19/2019
 ms.assetid: ea5186bb-5bff-4dcb-bde9-d6ba4e2edd00
+dev_langs: 
+  - "csharp"
+  - "vb"
 ---
 # How to: Determine if a file is an assembly
 

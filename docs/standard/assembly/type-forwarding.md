@@ -7,6 +7,9 @@ helpviewer_keywords:
 ms.assetid: 51f8ffa3-c253-4201-a3d3-c4fad85ae097
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "csharp"
+  - "cpp"
 ---
 # Type forwarding in the common language runtime
 Type forwarding allows you to move a type to another assembly without having to recompile applications that use the original assembly.  

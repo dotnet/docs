@@ -2,6 +2,9 @@
 title: "How to: Create unsigned friend assemblies"
 ms.date: 08/19/2019
 ms.assetid: 78cbc4f0-b021-4141-a4ff-eb4edbd814ca
+dev_langs: 
+  - "csharp"
+  - "vb"
 ---
 # How to: Create unsigned friend assemblies
 This example shows how to use friend assemblies with assemblies that are unsigned.  

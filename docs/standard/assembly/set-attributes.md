@@ -8,6 +8,10 @@ helpviewer_keywords:
 ms.assetid: 36a98a81-b5b5-4c19-912a-11f91eff7f4e
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 ---
 # Set assembly attributes
 Assembly attributes are values that provide information about an assembly. The attributes are divided into the following sets of information:  

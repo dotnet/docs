@@ -10,6 +10,10 @@ helpviewer_keywords:
 ms.assetid: 5099e549-f4fd-49fb-a290-549edd456c6a
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 ---
 # Resolve assembly loads
 .NET provides the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event for applications that require greater control over assembly loading. By handling this event, your application can load an assembly into the load context from outside the normal probing paths, select which of several assembly versions to load, emit a dynamic assembly and return it, and so on. This topic provides guidance for handling the <xref:System.AppDomain.AssemblyResolve> event.  
@@ -108,7 +112,7 @@ Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
 Process is terminated due to StackOverflowException.
  */
 ```
-   
+
 ```csharp
 using System;
 using System.Reflection;
@@ -150,7 +154,7 @@ Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
 Process is terminated due to StackOverflowException.
  */
 ```
-   
+
 ```vb
 Imports System
 Imports System.Reflection

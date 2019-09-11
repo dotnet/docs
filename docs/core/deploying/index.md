@@ -80,21 +80,21 @@ This document on [.NET Core Packaging](packaging.md) covers packaging your app a
 ### Step 4: Deploy your app
 
 
-#### Pre-requisites for deploying your Framework Dependent Deployment (FDD) app
+#### **Pre-requisites for deploying your Framework Dependent Deployment (FDD) app**
 
 If you chose to create a Framework Dependent Deployment (FDD) for your app during the publish step then you need to ensure the .NET Core Runtime is installed on the target computer. There are several options for acquiring the .NET Core runtime, please refer to the [.NET Core Acquisition Experiences](acquisition-experiences.md) guide to select the option that works best for you.
 
 If you chose to create a Self-Contained Deployment (CDD) during the publish step then there's nothing else to do since the latest .NET Core runtime is already included with your application.
 
 
-##### Deploying your app without Packaging/an Installer
+#### **Deploying your app without Packaging/an Installer**
 
 If you chose to forgo packaging your app in the previous step then you can simply xcopy over the publish folder to the target computer. 
 
 _Note: If you created a single file executable during publish then instead of multiple files in the publish older you will only have that single executable to copy over to the target computer.__
 
 
-##### Deploying your app with Packaging/an Installer
+#### **Deploying your app with Packaging/an Installer**
 
 If you have created an installer then you need to copy the installer to the target machine and run the installer. 
 

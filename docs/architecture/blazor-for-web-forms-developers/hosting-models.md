@@ -12,9 +12,9 @@ Blazor apps can be hosted in IIS just like ASP.NET Web Forms apps. But Blazor ap
 
 ## Blazor WebAssembly apps
 
-Blazor WebAssembly apps execute directly in the browser on a WebAssembly based .NET runtime. Blazor WebAssembly apps function in a very similar way to front-end JavaScript frameworks like Angular or React, but instead of writing JavaScript you write C#. The .NET runtime is download with the app along with the app assembly and any required dependencies. No browser plugins or extensions are required. 
+Blazor WebAssembly apps execute directly in the browser on a WebAssembly-based .NET runtime. Blazor WebAssembly apps function in a very similar way to front-end JavaScript frameworks like Angular or React, but instead of writing JavaScript you write C#. The .NET runtime is downloaded with the app along with the app assembly and any required dependencies. No browser plugins or extensions are required. 
 
-The downloaded assemblies are normal .NET assemblies, like you would use in any other .NET app. The runtime supports .NET Standard, so you can use existing .NET Standard libraries with your Blazor WebAssembly app. However, these assemblies will still execute inside of the browser security sandbox, so some functionality may throw a <xref:System.PlatformNotSupportedException>, like trying to access the filesystem or opening arbitrary network connections. 
+The downloaded assemblies are normal .NET assemblies, like you would use in any other .NET app. The runtime supports .NET Standard, so you can use existing .NET Standard libraries with your Blazor WebAssembly app. However, these assemblies will still execute inside of the browser security sandbox, so some functionality may throw a <xref:System.PlatformNotSupportedException>, like trying to access the file system or opening arbitrary network connections. 
 
 When the app loads, the .NET runtime is started and pointed at the app assembly. The app startup logic runs, and the root components are rendered. Blazor calculates the UI updates based on the rendered output from the components and updates the DOM accordingly.
 
@@ -38,7 +38,7 @@ The Blazor Server hosting model may sound familiar if you've used ASP.NET AJAX a
 
 As described in the [Blazor hosting model docs](https://docs.microsoft.com/aspnet/core/blazor/hosting-models#server-side), the different Blazor hosting models have different tradeoffs.
 
-The Blazor WebAssembly hosting model has these benefits:
+The Blazor WebAssembly hosting model has the following benefits:
 
 * There's no .NET server-side dependency. The app is fully functioning after downloaded to the client.
 * Client resources and capabilities are fully leveraged.
@@ -52,10 +52,10 @@ The downsides of the Blazor WebAssembly hosting model are:
 * Download size is larger, and apps take longer to load.
 * .NET runtime and tooling support is less mature. For example, limitations exist in [.NET Standard](../../standard/net-standard.md) support and debugging.
 
-Conversely, the Blazor Server hosting model offers these benefits:
+Conversely, the Blazor Server hosting model offers the following benefits:
 
 * Download size is significantly smaller than a client-side app, and the app loads much faster.
-* The app takes full advantage of server capabilities, including use of any .NET Core compatible APIs.
+* The app takes full advantage of server capabilities, including use of any .NET Core-compatible APIs.
 * .NET Core on the server is used to run the app, so existing .NET tooling, such as debugging, works as expected.
 * Thin clients are supported. For example, server-side apps work with browsers that don't support WebAssembly and on resource-constrained devices.
 * The app's .NET/C# code base, including the app's component code, isn't served to clients.
@@ -67,7 +67,7 @@ The downsides to the Blazor Server hosting model are:
 * Scalability is challenging for apps with many users. The server must manage multiple client connections and handle client state.
 * An ASP.NET Core server is required to serve the app. Serverless deployment scenarios aren't possible (for example, serving the app from a CDN).
 
-While these trade-offs may seem daunting, the good news is that you can always change your mind later. Regardless of which Blazor hosting model you choose, the component model is *the same*. This means that the same components can in principle be used with either hosting model. Your app code can stay the same. While it is possible to author components that can only run on the server or in the browser, it's generally good practice to put appropriate abstractions in place so that your components stay hosting model agnostic. That way, you can easily switch your app to use a different hosting model if needed.
+While these trade-offs may seem daunting, the good news is that you can always change your mind later. Regardless of which Blazor hosting model you choose, the component model is *the same*. This means that the same components can, in principle, be used with either hosting model. Your app code can stay the same. While it is possible to author components that can only run on the server or in the browser, it's generally good practice to put appropriate abstractions in place so that your components stay hosting model agnostic. That way, you can easily switch your app to use a different hosting model if needed.
 
 ## Deploy your app
 

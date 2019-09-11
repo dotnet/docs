@@ -80,15 +80,15 @@ This article explains how to create a multifile assembly and provides code that 
    
 2. Use the following command to compile this code:
    
-   ```cmd
+   ```cpp
    cl /clr:pure /LN Stringer.cpp
    ```
    
-   ```cmd
+   ```csharp
    csc /t:module Stringer.cs
    ```
    
-   ```cmd
+   ```vb
    vbc /t:module Stringer.vb
    ```
    

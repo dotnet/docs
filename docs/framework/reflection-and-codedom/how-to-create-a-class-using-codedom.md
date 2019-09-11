@@ -101,7 +101,7 @@ The following procedures illustrate how to create and compile a CodeDOM graph th
   
  The generated source code produces the following output when compiled and executed.  
   
-```  
+```output
 The object:  
  width = 5.3,  
  height = 6.9,  

@@ -59,4 +59,4 @@ When you create database objects, you must explicitly grant permissions to make 
 - [Authentication in SQL Server](authentication-in-sql-server.md)
 - [Server and Database Roles in SQL Server](server-and-database-roles-in-sql-server.md)
 - [Ownership and User-Schema Separation in SQL Server](ownership-and-user-schema-separation-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

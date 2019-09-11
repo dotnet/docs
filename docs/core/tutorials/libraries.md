@@ -11,7 +11,7 @@ This article covers how to write libraries for .NET using cross-platform CLI too
 
 ## Prerequisites
 
-You need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core) installed on your machine.
+You need [the .NET Core SDK and CLI](https://dotnet.microsoft.com/download) installed on your machine.
 
 For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](https://dotnet.microsoft.com) installed on a Windows machine.
 

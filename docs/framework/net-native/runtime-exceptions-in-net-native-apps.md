@@ -31,7 +31,7 @@ It is important to test the release builds of your Universal Windows Platform ap
 ## Runtime exception messages  
  To minimize application executable size, .NET Native does not include the full text of exception messages. As a result, runtime exceptions thrown in release builds may not display the full text of exception messages. Instead, the text may consist of a substring along with a link to follow for more information. For example, the exception information may appear as:  
   
-```  
+```output
 Exception thrown: '$16_System.AggregateException' in Unknown Module.  
   
 Additional information: AggregateException_ctor_DefaultMessage  
@@ -41,7 +41,7 @@ If there is a handler for this exception, the program may be safely continued.
   
  If you need the complete exception message,  run the debug build instead. For example, the previous exception information  from the release build might appear as follows in the debug build:  
   
-```  
+```output
 Exception thrown: 'System.AggregateException' in NativeApp.exe.  
   
 Additional information: Value does not fall within the expected range.  

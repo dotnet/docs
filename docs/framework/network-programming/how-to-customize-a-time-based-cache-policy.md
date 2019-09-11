@@ -39,7 +39,7 @@ When creating a time-based cache policy, you can customize caching behavior by s
   
  The output is similar to the following:  
   
-```  
+```output
 When: 1/14/2004 8:07:30 AM  
 Level:Default CacheSyncDate:1/14/2004 8:07:30 AM  
 ```  
@@ -68,11 +68,13 @@ Level:Default CacheSyncDate:1/14/2004 8:07:30 AM
   
  For the following invocation:  
   
-```  
+```csharp
 CreateMinFreshPolicy(new TimeSpan(1,0,0));  
 ```  
+
+ The output is:
   
-```  
+```output
 Level:Default MinFresh:3600  
 ```  
   
@@ -100,11 +102,13 @@ Level:Default MinFresh:3600
   
  For the following invocation:  
   
-```  
+```csharp
 CreateFreshAndAgePolicy(new TimeSpan(5,0,0), new TimeSpan(10,0,0));  
 ```  
+
+The output is:
   
-```  
+```output
 Level:Default MaxAge:36000 MinFresh:18000  
 ```  
   

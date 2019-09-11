@@ -37,13 +37,13 @@ The Resource File Generator (Resgen.exe) converts text (.txt or .restext) files 
   
  To get help with Resgen,exe, you can use the following command, with no options specified, to display the command syntax and options for Resgen.exe:  
   
-```  
+```console  
 resgen  
 ```  
   
  You can also use the `/?` switch:  
   
-```  
+```console  
 resgen /?  
 ```  
   
@@ -55,11 +55,11 @@ resgen /?
   
 ## Syntax  
   
-```  
+```console  
 resgen  [/define:symbol1[,symbol2,...]] [/useSourcePath] filename.extension  | /compile filename.extension... [outputFilename.extension] [/r:assembly] [/str:lang[,namespace[,class[,file]]] [/publicclass]]   
 ```  
   
-```  
+```console  
 resgen filename.extension [outputDirectory]  
 ```  
   
@@ -128,7 +128,7 @@ resgen filename.extension [outputDirectory]
   
  The syntax to compile a resource file is:  
   
-```  
+```console  
 resgen inputFilename [outputFilename]   
 ```  
   
@@ -144,19 +144,19 @@ resgen inputFilename [outputFilename]
   
  The following command reads the name/value pairs in Resources.txt and writes a binary .resources file named Resources.resources. Because the output file name is not specified explicitly, it receives the same name as the input file by default.  
   
-```  
+```console  
 resgen Resources.txt   
 ```  
   
  The following command reads the name/value pairs in Resources.restext and writes a binary resources file named StringResources.resources.  
   
-```  
+```console  
 resgen Resources.restext StringResources.resources  
 ```  
   
  The following command reads an XML-based input file named Resources.resx and writes a binary .resources file named Resources.resources.  
   
-```  
+```console  
 resgen Resources.resx Resources.resources  
 ```  
   
@@ -178,19 +178,19 @@ resgen Resources.resx Resources.resources
   
  The following command reads a binary resources file Resources.resources and writes an XML-based output file named Resources.resx.  
   
-```  
+```console  
 resgen Resources.resources Resources.resx  
 ```  
   
  The following command reads a text-based resources file named StringResources.txt and writes an XML-based resources file named LibraryResources.resx. In addition to containing string resources, the .resx file could also be used to store non-string resources.  
   
-```  
+```console  
 resgen StringResources.txt LibraryResources.resx  
 ```  
   
  The following two commands read an XML-based resources file named Resources.resx and write text files named Resources.txt and Resources.restext. Note that if the .resx file contains any embedded objects, they will not be accurately converted into the text files.  
   
-```  
+```console  
 resgen Resources.resx Resources.txt  
 resgen Resources.resx Resources.restext  
 ```  
@@ -199,13 +199,13 @@ resgen Resources.resx Resources.restext
 ### Compiling or Converting Multiple Files  
  You can use the `/compile` switch to convert a list of resource files from one format to another in a single operation. The syntax is:  
   
-```  
+```console  
 resgen /compile filename.extension [filename.extension...]  
 ```  
   
  The following command compiles three files, StringResources.txt, TableResources.resw, and ImageResources.resw, into separate .resources files named StringResources.resources, TableResources.resources, and ImageResources.resources.  
   
-```  
+```console  
 resgen /compile StringResources.txt TableResources.resx ImageResources.resx  
 ```  
   
@@ -218,7 +218,7 @@ resgen /compile StringResources.txt TableResources.resx ImageResources.resx
   
  The syntax to generate .resw files from an assembly is:  
   
-```  
+```console  
 resgen filename.extension  [outputDirectory]  
 ```  
   
@@ -232,7 +232,7 @@ resgen filename.extension  [outputDirectory]
   
  The following command creates a .resw file in the Win8Resources directory for each .resources file embedded in MyApp.exe:  
   
-```  
+```console  
 resgen MyApp.exe Win8Resources  
 ```  
   
@@ -244,7 +244,7 @@ resgen MyApp.exe Win8Resources
   
  For example, the following file named UIResources.rext includes a string resource named `AppTitle` that can take one of three values, depending on whether symbols named `PRODUCTION`, `CONSULT`, or `RETAIL` are defined.  
   
-```  
+```text
 #ifdef PRODUCTION  
 AppTitle=My Software Company Project Manager   
 #endif  
@@ -259,7 +259,7 @@ FileMenuName=File
   
  The file can then be compiled into a binary .resources file with the following command:  
   
-```  
+```console  
 resgen /define:CONSULT UIResources.restext  
 ```  
   
@@ -271,7 +271,7 @@ resgen /define:CONSULT UIResources.restext
   
  The syntax to create a strongly typed resource is:  
   
-```  
+```console  
 resgen inputFilename [outputFilename] /str:language[,namespace,[classname[,filename]]] [/publicClass]  
 ```  
   
@@ -319,7 +319,7 @@ resgen inputFilename [outputFilename] /str:language[,namespace,[classname[,filen
   
  For example, the following command compiles a resource file named StringResources.txt into StringResources.resources and generates a class named `StringResources` in a Visual Basic source code file named StringResources.vb that can be used to access the Resource Manager.  
   
-```  
+```console  
 resgen StringResources.txt /str:vb,,StringResources   
 ```  
   

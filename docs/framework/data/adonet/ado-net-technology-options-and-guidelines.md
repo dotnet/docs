@@ -37,4 +37,3 @@ The ADO.NET Data Platform is a multi-release strategy to decrease the amount of 
 
 - [ADO.NET Overview](ado-net-overview.md)
 - [What's New in ADO.NET](whats-new.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

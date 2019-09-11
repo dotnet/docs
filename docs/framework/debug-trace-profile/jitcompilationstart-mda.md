@@ -28,7 +28,7 @@ The `jitCompilationStart` managed debugging assistant (MDA) is activated to repo
 ## Output  
  The following code sample shows sample output. In this case the output shows that in assembly Test the method "m" on class "ns2.CO" was JIT-compiled.  
   
-```  
+```output
 method name="Test!ns2.C0::m"  
 ```  
   

@@ -239,7 +239,7 @@ In this step you will test your WIF-enabled WCF application and verify that clai
 
 2. Press **Enter**, and the following claims information should appear in the console:
 
-    ```
+    ```output
     Computed by Service1
     Input received from client: Hello World
     Client Name: Terry

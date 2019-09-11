@@ -29,7 +29,7 @@ The `virtualCERCall` managed debugging assistant (MDA) is activated as a warning
   
 ## Output  
   
-```  
+```output
 Method 'MethodWithCer', while executing within a constrained execution region, makes a call  
 at IL offset 0x0024 to 'VirtualMethod', which is virtual and cannot be prepared automatically  
 at compile time. The caller must ensure this method is prepared explicitly at  

@@ -92,7 +92,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |`^`|Begin the match at the beginning of a line.|  
     |`(?<Pvt>\<PRIVATE\>\s)?`|Match zero or one occurrence of the string `<PRIVATE>` followed by a white-space character. Assign the match to a capturing group named `Pvt`.|  
     |`(?(Pvt)((\w+\p{P}?\s)+)`|If the `Pvt` capturing group exists, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the first capturing group.|  
-    |<code>&#124;((\w+\p{P}?\s)+))<code>|If the `Pvt` capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the third capturing group.|  
+    |<code>&#124;((\w+\p{P}?\s)+))</code>|If the `Pvt` capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the third capturing group.|  
     |`\r?$`|Match the end of a line or the end of the string.|  
   
      For more information about conditional evaluation, see [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md).  

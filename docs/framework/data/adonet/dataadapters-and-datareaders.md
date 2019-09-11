@@ -44,4 +44,4 @@ You can use the ADO.NET **DataReader** to retrieve a read-only, forward-only str
 - [Commands and Parameters](commands-and-parameters.md)
 - [Transactions and Concurrency](transactions-and-concurrency.md)
 - [DataSets, DataTables, and DataViews](./dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

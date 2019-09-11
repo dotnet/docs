@@ -17,15 +17,13 @@ The .NET Framework 4.5 is a redistributable runtime. If you develop apps for thi
 
 - **Invocation**. To call .NET Framework 4.5 setup and receive progress information from the MMIO section, your setup program must do the following:
 
-    1. Call the .NET Framework 4.5redistributable program:
+    1. Call the .NET Framework 4.5 redistributable program:
 
-        ```
-        dotNetFx45_Full_x86_x64.exe /q /norestart /pipe section-name
-        ```
+        `dotNetFx45_Full_x86_x64.exe /q /norestart /pipe section-name`
 
         Where *section name* is any name you want to use to identify your app. .NET Framework setup reads and writes to the MMIO section asynchronously, so you might find it convenient to use events and messages during that time. In the example, the .NET Framework setup process is created by a constructor that both allocates the MMIO section (`TheSectionName`) and defines an event (`TheEventName`):
 
-        ```
+        ```cpp
         Server():ChainerSample::MmioChainer(L"TheSectionName", L"TheEventName")
         ```
 

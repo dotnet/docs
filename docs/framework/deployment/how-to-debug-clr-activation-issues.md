@@ -41,7 +41,7 @@ Activation logging remains enabled until you remove the string value.
 
     For example, to store activation logs in the c:\clrloadlogs directory with process-level scope, open a Command Prompt window and type the following before you run the application:
 
-    ```
+    ```console
     set COMPLUS_CLRLoadLogDir=c:\clrloadlogs
     ```
 
@@ -59,7 +59,7 @@ The log reflects the order in which the CLR hosting APIs were called. It also in
 
 In the following example of an activation log, the most useful information is highlighted and described after the log.
 
-```
+```output
 532,205950.367,CLR Loading log for C:\Tests\myapp.exe
 532,205950.367,Log started at 4:26:12 PM on 10/6/2011
 532,205950.367,-----------------------------------
@@ -90,25 +90,25 @@ In the following example of an activation log, the most useful information is hi
 
 - **CLR Loading log** provides the path to the executable that started the process that loaded managed code. Note that this could be a native host.
 
-    ```
+    ```output
     532,205950.367,CLR Loading log for C:\Tests\myapp.exe
     ```
 
 - **Installed Runtime** is the set of CLR versions installed on the computer that are candidates for the activation request.
 
-    ```
+    ```output
     532,205950.382,Installed Runtime: v4.0.30319. VERSION_ARCHITECTURE: 0
     ```
 
 - **built with version** is the version of the CLR that was used to build the binary that was provided to a method such as [ICLRMetaHostPolicy::GetRequestedRuntime](../unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md).
 
-    ```
+    ```output
     532,205950.382,C:\Tests\myapp.exe was built with version: v2.0.50727
     ```
 
 - **feature-on-demand installation** refers to enabling the .NET Framework 3.5 on Windows 8. See [.NET Framework Initialization Errors: Managing the User Experience](initialization-errors-managing-the-user-experience.md) for more information about this scenario.
 
-    ```
+    ```output
     532,205950.398,Launching feature-on-demand installation. CmdLine: C:\Windows\system32\fondue.exe /enable-feature:NetFx3
     ```
 

@@ -30,7 +30,7 @@ The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../app-d
   
 ## Syntax  
   
-```  
+```console  
 sn [-quiet][option [parameter(s)]]  
 ```  
   
@@ -84,37 +84,37 @@ The Strong Name tool assumes that public/private key pairs are generated with th
 ## Examples  
  The following command creates a new, random key pair and stores it in `keyPair.snk`.  
   
-```  
+```console  
 sn -k keyPair.snk  
 ```  
   
  The following command stores the key in `keyPair.snk` in the container `MyContainer` in the strong name CSP.  
   
-```  
+```console  
 sn -i keyPair.snk MyContainer  
 ```  
   
  The following command extracts the public key from `keyPair.snk` and stores it in `publicKey.snk`.  
   
-```  
+```console  
 sn -p keyPair.snk publicKey.snk  
 ```  
   
  The following command displays the public key and the token for the public key contained in `publicKey.snk`.  
   
-```  
+```console  
 sn -tp publicKey.snk  
 ```  
   
  The following command verifies the assembly `MyAsm.dll`.  
   
-```  
+```console  
 sn -v MyAsm.dll  
 ```  
   
  The following command deletes `MyContainer` from the default CSP.  
   
-```  
+```console  
 sn -d MyContainer  
 ```  
   

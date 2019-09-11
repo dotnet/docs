@@ -64,4 +64,4 @@ The following example describes how to configure row-level filtering based on a 
 - [Application Security Scenarios in SQL Server](application-security-scenarios-in-sql-server.md)
 - [Managing Permissions with Stored Procedures in SQL Server](managing-permissions-with-stored-procedures-in-sql-server.md)
 - [Writing Secure Dynamic SQL in SQL Server](writing-secure-dynamic-sql-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

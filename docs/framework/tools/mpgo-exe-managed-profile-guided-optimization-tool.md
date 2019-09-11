@@ -23,7 +23,7 @@ This tool is automatically installed with Visual Studio. To run the tool, use th
   
 For desktop apps:  
   
-```  
+```console  
 mpgo –Scenario <command> [-Import <directory>] –AssemblyList <assembly1>  <assembly2> ... -OutDir <directory> [options]  
 ```  
   
@@ -31,7 +31,7 @@ For [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app
   
 ## Syntax  
   
-```  
+```console  
 mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>  
 ```  
   
@@ -104,19 +104,19 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
 ## Examples  
  The following Mpgo.exe command from a Developer Command Prompt for Visual Studio optimizes a tax application:  
   
-```  
+```console  
 mpgo –scenario "C:\MyApp\MyTax.exe /params par" –AssemblyList Mytax.dll MyTaxUtil2011.dll –OutDir C:\Optimized –TimeOut 15  
 ```  
   
  The following Mpgo.exe command optimizes a sound application:  
   
-```  
+```console  
 mpgo –scenario "C:\MyApp\wav2wma.exe –input song1.wav –output song1.wma" –AssemblyList transcode.dll –OutDir C:\Optimized –TimeOut 15  
 ```  
   
  The following Mpgo.exe command uses data from previously optimized assemblies to optimize newer versions of the assemblies:  
   
-```  
+```console  
 mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyTaxUtil2011.dll" -outdir C:\ReOptimized  
 ```  
   

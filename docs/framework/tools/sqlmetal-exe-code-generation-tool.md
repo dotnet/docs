@@ -28,7 +28,7 @@ The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbte
   
 ## Syntax  
   
-```  
+```console  
 sqlmetal [options] [<input file>]  
 ```  
   

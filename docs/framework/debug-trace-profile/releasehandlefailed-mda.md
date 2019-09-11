@@ -49,7 +49,7 @@ The `releaseHandleFailed` managed debugging assistant (MDA) is activated is to n
 ## Output  
  A message indicating that a <xref:System.Runtime.InteropServices.SafeHandle> or a <xref:System.Runtime.InteropServices.CriticalHandle> failed to properly release the handle. For example:  
   
-```  
+```output
 "A SafeHandle or CriticalHandle of type 'MyBrokenSafeHandle'   
 failed to properly release the handle with value 0x0000BEEF. This   
 usually indicates that the handle was released incorrectly via   

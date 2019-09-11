@@ -19,7 +19,7 @@ The Windows Runtime Metadata Export Tool (Winmdexp.exe) transforms a .NET Framew
   
 ## Syntax  
   
-```  
+```console  
 winmdexp [options] winmdmodule  
 ```  
   

@@ -23,7 +23,7 @@ This tool is automatically installed with Visual Studio. To run the tool, use th
 
 At the command prompt, type the following:
 
-```
+```console
 fuslogvw
 ```
 
@@ -60,7 +60,7 @@ The viewer displays an entry for each failed assembly bind. For each failure, th
 
 The following sample log entry shows detailed information about a failed assembly bind.
 
-```
+```output
 *** Assembly Binder Log Entry  (3/5/2007 @ 12:54:20 PM) ***
 
 The operation failed.
@@ -124,7 +124,7 @@ By default, Fuslogvw.exe logs normal assembly bind requests. Alternatively, you 
 
 The following log shows a failure caused by a dependency that did not exist when the native image was created for the application. If the dependencies at run time differ from the dependencies when Ngen.exe is run, binding to a native image is not allowed.
 
-```
+```output
 *** Assembly Binder Log Entry  (12/8/2006 @ 5:22:07 PM) ***
 
 The operation failed.
@@ -148,7 +148,7 @@ LOG: Bind to native image assembly did not succeed. Use IL image.
 
 The following log shows a native image binding failure that occurred because the security settings on the computer when the application was run were different from the security settings at the time the native image was created.
 
-```
+```output
 *** Assembly Binder Log Entry  (12/8/2006 @ 5:29:09 PM) ***
 
 The operation failed.

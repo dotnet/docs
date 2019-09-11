@@ -68,7 +68,7 @@ HelpMenuName=Help
 
  Empty strings (that is, a resource whose value is <xref:System.String.Empty?displayProperty=nameWithType>) are permitted in text files. For example:
 
-```
+```text
 EmptyString=
 ```
 
@@ -125,7 +125,7 @@ vbc greeting.vb -resource:GreetingResources.resources
 
  If you are using C#, and the source code file is named Greeting.cs, the following command creates an executable file that includes the embedded .resources file:
 
- ```console
+```console
 csc greeting.cs -resource:GreetingResources.resources
 ```
 

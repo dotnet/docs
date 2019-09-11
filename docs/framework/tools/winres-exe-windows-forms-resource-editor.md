@@ -22,7 +22,7 @@ Winres.exe is installed with Visual Studio. To run the tool, use the Developer C
 
 ## Syntax
 
-```
+```console
 winres resourceFile
 winres /?
 ```
@@ -110,13 +110,13 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 
      The following command starts Winres.exe and loads the form associated with `TestApp.resx` in the Form Designer.
 
-    ```
+    ```console
     winres TestApp.resx
     ```
 
      The following command starts Winres.exe and loads the form associated with `TestApp.resources` in the Form Designer.
 
-    ```
+    ```console
     winres TestApp.resources
     ```
 

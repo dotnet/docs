@@ -116,7 +116,7 @@ The following is an example of a Publisher Policy configuration file:
 
 To create an assembly, you can use the [Al.exe (Assembly Linker)](../tools/al-exe-assembly-linker.md) tool with a command such as the following:
 
-```
+```console
 Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v:3.0.0.0
 ```
 

@@ -141,4 +141,4 @@ nwindConn.Open();
 - [Connecting to a Data Source](connecting-to-a-data-source.md)
 - [Connection Strings](connection-strings.md)
 - [OLE DB, ODBC, and Oracle Connection Pooling](ole-db-odbc-and-oracle-connection-pooling.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

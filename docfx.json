@@ -151,6 +151,7 @@
       "ms.prod": {
         "_csharplang/**/*.md": "dotnet-csharp",
         "_vblang/spec/*.md": "dotnet-visualbasic",
+        "docs/architecture/**/**.md": "dotnet-architecture",
         "docs/core/**/**.md": "dotnet-core",
         "docs/csharp/**/**.md": "dotnet-csharp",
         "docs/csharp/**/**.yml": "dotnet-csharp",
@@ -165,6 +166,7 @@
       "ms.topic": {
         "_csharplang/**/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
+        "docs/csharp/language-reference/**/**.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
         "docs/fsharp/language-reference/**/**.md": "language-reference"
@@ -221,13 +223,17 @@
         "_csharplang/proposals/csharp-7.1/*.md": "02/16/2018",
         "_csharplang/proposals/csharp-7.2/*.md": "01/19/2019",
         "_csharplang/proposals/csharp-7.3/*.md": "11/25/2018",
-        "_csharplang/proposals/csharp-8.0/*.md": "02/25/2019",
+        "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
         "_vblang/spec/*.md": "07/21/2017"
       },
       "ms.technology": {
         "_csharplang/**/*.md": "csharp-spec",
         "_vblang/spec/*.md": "vb-spec",
-        "docs/architecture/**/**.md": "dotnet-ebooks",        
+        "docs/architecture/containerized-lifecycle/**/**.md": "containerized-lifecycle",
+        "docs/architecture/microservices/**/**.md": "microservices",
+        "docs/architecture/modernize-with-azure-containers/**/**.md": "modernize-with-azure-containers",
+        "docs/architecture/modern-web-apps-azure/**/**.md": "modern-web-apps-azure",
+        "docs/architecture/serverless/**/**.md": "serverless",
         "docs/csharp/roslyn-sdk/**/**.md": "csharp-roslyn",
         "docs/csharp/language-reference/compiler-messages/**/**.md": "csharp-diagnostics",
         "docs/csharp/misc/**/**.md": "csharp-diagnostics",

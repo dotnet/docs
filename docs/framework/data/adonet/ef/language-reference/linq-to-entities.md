@@ -53,7 +53,7 @@ LINQ to Entities provides Language-Integrated Query (LINQ) support that enables 
   
 - A collection of zero or more typed entity objects or a projection of complex types defined in the conceptual model.  
   
-- CLR types that are supported by the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)].  
+- CLR types that are supported by the Entity Framework.  
   
 - Inline collections.  
   

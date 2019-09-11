@@ -17,6 +17,7 @@ First, let’s review some basic terminology we will be using throughout this guid
 
 **_Deployment_** is about packaging the application and delivering the application and runtime to the target machine. 
 
+<br/>
 
 ## For Developers: Building and Deploying your .NET Core app
 
@@ -72,7 +73,7 @@ This document on [.NET Core Packaging](packaging.md) covers packaging your app a
 
 
 
-### Deploying your app
+### Deploy your app
 
 
 #### Pre-requisites for deploying your Framework Dependent Deployment (FDD) app
@@ -82,14 +83,14 @@ If you chose to create a Framework Dependent Deployment (FDD) for your app durin
 If you chose to create a Self-Contained Deployment (CDD) during the publish step then there's nothing else to do since the latest .NET Core runtime is already included with your application.
 
 
-##### Deploying your app without any Packaging/Installer
+##### Deploying your app without Packaging/an Installer
 
 If you chose to forgo packaging your app in the previous step then you can simply xcopy over the publish folder to the target computer. 
 
 _Note: If you created a single file executable during publish then instead of multiple files in the publish older you will only have that single executable to copy over to the target computer.__
 
 
-##### Deploying your app with a Package/Installer
+##### Deploying your app with Packaging/an Installer
 
 If you have created an installer then you need to copy the installer to the target machine and run the installer. 
 
@@ -99,6 +100,9 @@ a) [Enable Developer mode](https://docs.microsoft.com/en-us/windows/uwp/get-star
 
 b) Import the test certificate on the target computer (Tursted Root Certification Authorities) folder
 
+
+<br/>
+<br/>
 
 
 

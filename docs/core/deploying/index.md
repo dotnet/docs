@@ -66,13 +66,13 @@ More information about each of these configurations can be found in the document
 
 ### Step 3: Package your app for deployment
 
-Packaging your app while usually preferred, is optional. You could always choose to xcopy the publish folder of your app to a folder on the target computer where you want to run this. 
+Packaging your app while usually preferred, is optional. You can always choose to xcopy the publish folder of your app to a folder on the target computer where you want to run this. 
 
 If rather than use an xcopy based deployment you would prefer to package your app with a more professional installer experience, you have a couple of options. 
 
 At a high level, you can choose to package your app using one of the deployment technologies built into Visual Studio (MSIX and MSI), or use a third party installer of your choise.
 
-This document on [.NET Core Packaging](packaging.md) covers packaging your app as either an MSIX or MSI in further detail.
+This document on [.NET Core Packaging](packaging.md) covers packaging your app as either an MSIX or MSI in further detail. You may also want to review the guide on [Packaging a desktop app using third party installers](https://docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-third-party-installer). 
 
 
 <br/>

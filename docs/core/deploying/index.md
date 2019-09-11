@@ -22,10 +22,9 @@ First, let’s review some basic terminology we will be using throughout this guid
 
 As a developer, your workflow will typically look like this:
 
-Step 1 | | Step 2 || Step 3 || Step 4|
----|---|---|
+Step 1 | | Step 2 | | Step 3 | | Step 4 |
+|---|---|---|---|---|---|---|
  [Build your App](#Build-your-app) | --> | [Publish your app](#publish-your-app) | --> | [Package your app for deployment](#Package-your-app-for-deployment) | --> | [Deploy your app](#Deploy-your-app) | 
-
 
 
 ### Build your app

@@ -70,7 +70,7 @@ message SubscribeRequest {
 
 message StockTickerUpdate {
   string symbol = 1;
-  double price = 2;
+  int32 priceCents = 2;
   google.protobuf.Timestamp time = 3;
 }
 ```
@@ -137,7 +137,7 @@ public class StockTickerService : Protos.SimpleStockTicker.SimpleStockTickerBase
             await stream.WriteAsync(new StockTickerUpdate
             {
                 Symbol = symbol,
-                Price = Convert.ToDouble(price),
+                PriceCents = (int)(price * 100),
                 Time = Timestamp.FromDateTimeOffset(DateTimeOffset.UtcNow)
             });
         }
@@ -417,12 +417,12 @@ private async Task HandleResponsesAsync(CancellationToken token)
             var price = Prices.FirstOrDefault(p => p.Symbol.Equals(update.Symbol));
             if (price == null)
             {
-                price = new PriceViewModel(this) {Symbol = update.Symbol, Price = Convert.ToDecimal(update.Price)};
+                price = new PriceViewModel(this) {Symbol = update.Symbol, Price = update.PriceCents / 100m};
                 Prices.Add(price);
             }
             else
             {
-                price.Price = Convert.ToDecimal(update.Price);
+                price.Price = update.PriceCents / 100m;
             }
         }
     }

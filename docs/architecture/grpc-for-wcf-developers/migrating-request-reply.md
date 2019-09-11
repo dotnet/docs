@@ -80,7 +80,7 @@ public class PortfolioService : IPortfolioService
 
 ## Converting the DataContracts to gRPC messages
 
-The `PortfolioItem` class will be converted to a Protobuf message first, as the `Portfolio` class depends on it. The class is very simple, and three of the properties map directly to gRPC data types. The `Cost` property, representing the price paid for the shares at purchase, is a `decimal` field, and gRPC only supports `float` or `double` for real numbers, so this field type will be `double`.
+The `PortfolioItem` class will be converted to a Protobuf message first, as the `Portfolio` class depends on it. The class is very simple, and three of the properties map directly to gRPC data types. The `Cost` property, representing the price paid for the shares at purchase, is a `decimal` field, and gRPC only supports `float` or `double` for real numbers, which are not suitable for currency. Since share prices vary by a minimum of one cent, the cost can be expressed as an `int32` of cents.
 
 > [!NOTE]
 > Remember to use `camelCase` for field names in your `.proto` file; the C# code generator will convert them to `PascalCase` for you, and users of other languages will thank you for respecting their different coding standards.
@@ -90,7 +90,7 @@ message PortfolioItem {
     int32 id = 1;
     int32 shareId = 2;
     int32 holding = 3;
-    double cost = 4;
+    int32 costCents = 4;
 }
 ```
 
@@ -289,7 +289,7 @@ namespace TraderSys.Portfolios.Protos
                 Id = source.Id,
                 ShareId = source.ShareId,
                 Holding = source.Holding,
-                Cost = Convert.ToDouble(source.Cost)
+                CostCents = (int)(source.Cost * 100)
             };
         }
     }

@@ -1,5 +1,5 @@
 ---
-title: XAML overview (WPF) - .NET Core
+title: XAML overview (WPF) - .NET Core Desktop
 description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET Core.
 author: thraka
 ms.date: 08/08/2019
@@ -165,7 +165,7 @@ There is more to events and XAML in WPF than just this example of the attribute 
 In general, XAML is case-sensitive. For purposes of resolving backing types, WPF XAML is case-sensitive by the same rules that the CLR is case-sensitive. Object elements, property elements, and attribute names must all be specified by using the sensitive casing when compared by name to the underlying type in the assembly, or to a member of a type. XAML language keywords and primitives are also case-sensitive. Values are not always case-sensitive. Case sensitivity for values will depend on the type converter behavior associated with the property that takes the value, or the property value type. For example, properties that take the <xref:System.Boolean> type can take either `true` or `True` as equivalent values, but only because the native WPF XAML parser type conversion for string to <xref:System.Boolean> already permits these as equivalents.
 
 WPF XAML processors and serializers will ignore or drop all nonsignificant white space, and will normalize any significant white space. This is consistent with the default white-space behavior recommendations of the XAML specification. This behavior is only of consequence when you specify strings within XAML content properties. In simplest terms, XAML converts space, linefeed and tab characters into spaces, and then preserves one space if found at either end of a contiguous string. The full explanation of XAML white-space handling is not covered in this article.
-<!--TODO For details, see [White space processing in XAML](../../../framework/xaml-services/whitespace-processing-in-xaml.md).-->
+<!--TODO For details, see [White space processing in XAML](../../framework/xaml-services/whitespace-processing-in-xaml.md).-->
 
 ## Markup extensions
 
@@ -182,7 +182,7 @@ For example, the following markup sets the value of the <xref:System.Windows.Fra
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources3](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources3)]
 
 <!-- TODO 
-For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Core XAML implementations, see [XAML Namespace (x:) Language Features](../../../framework/xaml-services/xaml-namespace-x-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). -->
+For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Core XAML implementations, see [XAML Namespace (x:) Language Features](../../framework/xaml-services/xaml-namespace-x-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). -->
 
 ## Type converters
 
@@ -220,17 +220,17 @@ The WPF implementation of its XAML processor includes an infrastructure that has
 
 In the previous root element example, the prefix `x:` was used to map the XAML namespace `http://schemas.microsoft.com/winfx/2006/xaml`, which is the dedicated XAML namespace that supports XAML language constructs. This `x:` prefix is used for mapping this XAML namespace in the templates for projects, in examples, and in documentation throughout this SDK. The XAML namespace for the XAML language contains several programming constructs that you will use frequently in your XAML. The following is a listing of the most common `x:` prefix programming constructs you will use:
 
-- [x:Key](../../../framework/xaml-services/x-key-directive.md): Sets a unique key for each resource in a <xref:System.Windows.ResourceDictionary> (or similar dictionary concepts in other frameworks). `x:Key` will probably account for 90% of the `x:` usages you will see in a typical WPF application's markup.
+- [x:Key](../../framework/xaml-services/x-key-directive.md): Sets a unique key for each resource in a <xref:System.Windows.ResourceDictionary> (or similar dictionary concepts in other frameworks). `x:Key` will probably account for 90% of the `x:` usages you will see in a typical WPF application's markup.
 
-- [x:Class](../../../framework/xaml-services/x-class-directive.md): Specifies the CLR namespace and class name for the class that provides code-behind for a XAML page. You must have such a class to support code-behind per the WPF programming model, and therefore you almost always see `x:` mapped, even if there are no resources.
+- [x:Class](../../framework/xaml-services/x-class-directive.md): Specifies the CLR namespace and class name for the class that provides code-behind for a XAML page. You must have such a class to support code-behind per the WPF programming model, and therefore you almost always see `x:` mapped, even if there are no resources.
 
-- [x:Name](../../../framework/xaml-services/x-name-directive.md): Specifies a run-time object name for the instance that exists in run-time code after an object element is processed. In general, you will frequently use a WPF-defined equivalent property for [x:Name](../../../framework/xaml-services/x-name-directive.md). Such properties map specifically to a CLR backing property and are thus more convenient for application programming, where you frequently use run-time code to find the named elements from initialized XAML. The most common such property is <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>. You might still use [x:Name](../../../framework/xaml-services/x-name-directive.md) when the equivalent WPF framework-level <xref:System.Windows.FrameworkElement.Name%2A> property is not supported in a particular type. This occurs in certain animation scenarios.
+- [x:Name](../../framework/xaml-services/x-name-directive.md): Specifies a run-time object name for the instance that exists in run-time code after an object element is processed. In general, you will frequently use a WPF-defined equivalent property for [x:Name](../../framework/xaml-services/x-name-directive.md). Such properties map specifically to a CLR backing property and are thus more convenient for application programming, where you frequently use run-time code to find the named elements from initialized XAML. The most common such property is <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>. You might still use [x:Name](../../framework/xaml-services/x-name-directive.md) when the equivalent WPF framework-level <xref:System.Windows.FrameworkElement.Name%2A> property is not supported in a particular type. This occurs in certain animation scenarios.
 
-- [x:Static](../../../framework/xaml-services/x-static-markup-extension.md): Enables a reference that returns a static value that is not otherwise a XAML-compatible property.
+- [x:Static](../../framework/xaml-services/x-static-markup-extension.md): Enables a reference that returns a static value that is not otherwise a XAML-compatible property.
 
-- [x:Type](../../../framework/xaml-services/x-type-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../../../framework/xaml-services/x-type-markup-extension.md) markup extension usage is optional.
+- [x:Type](../../framework/xaml-services/x-type-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../../framework/xaml-services/x-type-markup-extension.md) markup extension usage is optional.
 
-There are additional programming constructs in the `x:` prefix/XAML namespace, which are not as common. For details, see [XAML Namespace (x:) Language Features](../../../framework/xaml-services/xaml-namespace-x-language-features.md).
+There are additional programming constructs in the `x:` prefix/XAML namespace, which are not as common. For details, see [XAML Namespace (x:) Language Features](../../framework/xaml-services/xaml-namespace-x-language-features.md).
 
 ## Custom prefixes and custom types in XAML
 
@@ -278,7 +278,7 @@ A particular event feature that is fundamental to WPF is a routed event. Routed 
 
 ## XAML named elements
 
-By default, the object instance that is created in an object graph by processing a XAML object element does not possess a unique identifier or object reference. In contrast, if you call a constructor in code, you almost always use the constructor result to set a variable to the constructed instance, so that you can reference the instance later in your code. In order to provide standardized access to objects that were created through a markup definition, XAML defines the [x:Name attribute](../../../framework/xaml-services/x-name-directive.md). You can set the value of the `x:Name` attribute on any object element. In your code-behind, the identifier you choose is equivalent to an instance variable that refers to the constructed instance. In all respects, named elements function as if they were object instances (the name references that instance), and your code-behind can reference the named elements to handle run-time interactions within the application. This connection between instances and variables is accomplished by the WPF XAML markup compiler, and more specifically involve features and patterns such as <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> that will not be discussed in detail in this article.
+By default, the object instance that is created in an object graph by processing a XAML object element does not possess a unique identifier or object reference. In contrast, if you call a constructor in code, you almost always use the constructor result to set a variable to the constructed instance, so that you can reference the instance later in your code. In order to provide standardized access to objects that were created through a markup definition, XAML defines the [x:Name attribute](../../framework/xaml-services/x-name-directive.md). You can set the value of the `x:Name` attribute on any object element. In your code-behind, the identifier you choose is equivalent to an instance variable that refers to the constructed instance. In all respects, named elements function as if they were object instances (the name references that instance), and your code-behind can reference the named elements to handle run-time interactions within the application. This connection between instances and variables is accomplished by the WPF XAML markup compiler, and more specifically involve features and patterns such as <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> that will not be discussed in detail in this article.
 
 WPF framework-level XAML elements inherit a <xref:System.Windows.FrameworkElement.Name%2A> property, which is equivalent to the XAML defined `x:Name` attribute. Certain other classes also provide property-level equivalents for `x:Name`, which is also generally defined as a `Name` property. Generally speaking, if you cannot find a `Name` property in the members table for your chosen element/type, use `x:Name` instead. The `x:Name` values will provide an identifier to a XAML element that can be used at run-time, either by specific subsystems or by utility methods such as <xref:System.Windows.FrameworkElement.FindName%2A>.
 
@@ -290,7 +290,7 @@ The following example sets <xref:System.Windows.FrameworkElement.Name%2A> on a <
 [!code-csharp[XAMLOvwSupport#NameCode](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml.cs#namecode)]
 [!code-vb[XAMLOvwSupport#NameCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XAMLOvwSupport/VisualBasic/Page1.xaml.vb#namecode)]
 
-Just like a variable, the XAML name for an instance is governed by a concept of scope, so that names can be enforced to be unique within a certain scope that is predictable. The primary markup that defines a page denotes one unique XAML namescope, with the XAML namescope boundary being the root element of that page. However, other markup sources can interact with a page at run-time, such as styles or templates within styles, and such markup sources often have their own XAML namescopes that do not necessarily connect with the XAML namescope of the page. For more information on `x:Name` and XAML namescopes, see <xref:System.Windows.FrameworkElement.Name%2A>, [x:Name Directive](../../../framework/xaml-services/x-name-directive.md). <!-- TODO , or [WPF XAML Namescopes](wpf-xaml-namescopes.md).-->
+Just like a variable, the XAML name for an instance is governed by a concept of scope, so that names can be enforced to be unique within a certain scope that is predictable. The primary markup that defines a page denotes one unique XAML namescope, with the XAML namescope boundary being the root element of that page. However, other markup sources can interact with a page at run-time, such as styles or templates within styles, and such markup sources often have their own XAML namescopes that do not necessarily connect with the XAML namescope of the page. For more information on `x:Name` and XAML namescopes, see <xref:System.Windows.FrameworkElement.Name%2A>, [x:Name Directive](../../framework/xaml-services/x-name-directive.md). <!-- TODO , or [WPF XAML Namescopes](wpf-xaml-namescopes.md).-->
 
 ## Attached properties and attached events
 
@@ -341,7 +341,7 @@ WPF uses a particular application model that is based on the <xref:System.Window
 
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)
 - [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)
-- [XAML Namespace (x:) Language Features](../../../framework/xaml-services/xaml-namespace-x-language-features.md)
+- [XAML Namespace (x:) Language Features](../../framework/xaml-services/xaml-namespace-x-language-features.md)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)
 - [Base Elements Overview](base-elements-overview.md)
 - [Trees in WPF](trees-in-wpf.md)

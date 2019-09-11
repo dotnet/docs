@@ -1,5 +1,5 @@
 ---
-title: Auto generate a binary classifier using the ML.NET CLI 
+title: Analyze sentiment using the ML.NET CLI
 description: Automatically generate an ML model and related C# code from a sample dataset 
 author: cesardl
 ms.author: cesardl
@@ -9,7 +9,7 @@ ms.topic: tutorial
 #Customer intent: As a developer, I want to automatically generate an ML model and related C# code from my own data.
 ---
 
-# Auto generate a binary classifier using the CLI
+# Analyze sentiment using the ML.NET CLI
 
 Learn how to use ML.NET CLI to automatically generate an ML.NET model and underlying C# code. You provide your dataset and the machine learning task you want to implement, and the CLI uses the AutoML engine to create model generation and deployment source code, as well as the binary model.
 
@@ -22,7 +22,7 @@ In this tutorial, you will do the following steps:
 > - Explore the generated C# code that was used to train the model
 
 > [!NOTE]
-> This topic refers to the ML.NET CLI tool, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+> This topic refers to the ML.NET CLI tool, which is currently in Preview, and material may be subject to change. For more information, visit the [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) page.
 
 The ML.NET CLI is part of ML.NET and its main goal is to "democratize" ML.NET for .NET developers when learning ML.NET so you don't need to code from scratch to get started.
 

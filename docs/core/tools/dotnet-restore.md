@@ -15,7 +15,7 @@ ms.date: 05/29/2018
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-```
+```console
 dotnet restore [<ROOT>] [--configfile] [--disable-parallel] [--force] [--ignore-failed-sources] [--no-cache]
     [--no-dependencies] [--packages] [-r|--runtime] [-s|--source] [-v|--verbosity] [--interactive]
 dotnet restore [-h|--help]
@@ -23,7 +23,7 @@ dotnet restore [-h|--help]
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```
+```console
 dotnet restore [<ROOT>] [--configfile] [--disable-parallel] [--ignore-failed-sources] [--no-cache]
     [--no-dependencies] [--packages] [-r|--runtime] [-s|--source] [-v|--verbosity]
 dotnet restore [-h|--help]
@@ -171,7 +171,7 @@ Specifies a runtime for the package restore. This is used to restore packages fo
 
 `-s|--source <SOURCE>`
 
-Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
+Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *nuget.config* files, effectively reading the *nuget.config* file as if the `<packageSource>` element was not there. Multiple sources can be provided by specifying this option multiple times.
 
 `--verbosity <LEVEL>`
 

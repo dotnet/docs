@@ -16,7 +16,7 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 
 ## Syntax
 
-```shell
+```console
 ![command] [options]
 ```
 
@@ -99,7 +99,7 @@ You can also use the SOS Debugging Extension by loading it into the [WinDbg.exe 
 
 To load the SOS Debugging Extension into the WinDbg.exe debugger, run the following command in the tool:
 
-```
+```console
 .loadby sos clr
 ```
 
@@ -109,7 +109,7 @@ To use a dump file created on another computer, make sure that the Mscorwks.dll 
 
 To load a specific version of SOS.dll, type the following command into the Windows Debugger:
 
-```
+```console
 .load <full path to sos.dll>
 ```
 
@@ -117,85 +117,85 @@ To load a specific version of SOS.dll, type the following command into the Windo
 
 The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
 
-```
+```console
 !dumparray -start 2 -length 5 -detail 00ad28d0
 ```
 
 The following command displays the contents of an assembly at the address `1ca248`.
 
-```
+```console
 !dumpassembly 1ca248
 ```
 
 The following command displays information about the garbage collector heap.
 
-```
+```console
 !dumpheap
 ```
 
 The following command writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
 
-```
+```console
 !DumpLog
 ```
 
 The following command displays the `MethodDesc` structure at the address `902f40`.
 
-```
+```console
 !dumpmd 902f40
 ```
 
 The following command displays information about a module at the address `1caa50`.
 
-```
+```console
 !dumpmodule 1caa50
 ```
 
 The following command displays information about an object at the address `a79d40`.
 
-```
+```console
 !DumpObj a79d40
 ```
 
 The following command displays the fields of a value class at the address `00a79d9c` using the method table at the address `0090320c`.
 
-```
+```console
 !DumpVC 0090320c 00a79d9c
 ```
 
 The following command displays the process memory used by the garbage collector.
 
-```
+```console
 !eeheap -gc
 ```
 
 The following command displays all objects scheduled for finalization.
 
-```
+```console
 !finalizequeue
 ```
 
 The following command determines the application domain of an object at the address `00a79d98`.
 
-```
+```console
 !findappdomain 00a79d98
 ```
 
 The following command displays all garbage collector handles in the current process.
 
-```
+```console
 !gcinfo 5b68dbb8
 ```
 
 The following command displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
 
-```
+```console
 !name2ee unittest.exe MainClass.Main
 ```
 
 The following command displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
 
-```
+```console
 !token2ee unittest.exe 02000003
 ```
 

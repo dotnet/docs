@@ -6,11 +6,12 @@ ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e
 # \<security> of \<msmqIntegrationBinding>
 Defines the transport security settings for the Message Queuing (MSMQ) integration channel.  
   
- \<system.ServiceModel>  
-\<bindings>  
-msmqIntegrationBinding  
-\<binding>  
-\<security>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<msmqIntegrationBinding>**](msmqintegrationbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
 ## Syntax  
   

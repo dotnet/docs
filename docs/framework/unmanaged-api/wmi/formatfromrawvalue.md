@@ -84,7 +84,7 @@ This function wraps a call to the [FormatFromRawValue](https://docs.microsoft.co
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Library:** PerfCounter.dll
 

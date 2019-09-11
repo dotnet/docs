@@ -37,7 +37,7 @@ SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP
 ```  
   
 ## Targeting the Correct SQL Server Version  
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] targets the Transact-SQL query based on the SQL Server version that is specified in the `ProviderManifestToken` attribute of the Schema element in the storage model (.ssdl) file. This version might differ from the version of the actual SQL Server you are connected to. For example, if you are using SQL Server 2005, but your `ProviderManifestToken` attribute is set to 2008, the generated Transact-SQL query might not execute on the server. For example, a query that uses the new date time types that were introduced in SQL Server 2008 will not execute on earlier versions of the SQL Server. If you are using SQL Server 2005, but your `ProviderManifestToken` attribute is set to 2000, the generated Transact-SQL query might be less optimized, or you might get an exception that says that the query is not supported. For more information, see the CROSS and OUTER APPLY Operators section, earlier in this topic.  
+ The Entity Framework targets the Transact-SQL query based on the SQL Server version that is specified in the `ProviderManifestToken` attribute of the Schema element in the storage model (.ssdl) file. This version might differ from the version of the actual SQL Server you are connected to. For example, if you are using SQL Server 2005, but your `ProviderManifestToken` attribute is set to 2008, the generated Transact-SQL query might not execute on the server. For example, a query that uses the new date time types that were introduced in SQL Server 2008 will not execute on earlier versions of the SQL Server. If you are using SQL Server 2005, but your `ProviderManifestToken` attribute is set to 2000, the generated Transact-SQL query might be less optimized, or you might get an exception that says that the query is not supported. For more information, see the CROSS and OUTER APPLY Operators section, earlier in this topic.  
   
  Certain database behaviors depend on the compatibility level set to the database. If your `ProviderManifestToken` attribute is set to 2005 and your SQL Server version is 2005, but the compatibility level of a database is set to "80" (SQL Server 2000), the generated Transact-SQL will be targeting SQL Server 2005, but might not execute as expected due to the compatibility level setting. For example, you might lose ordering information if a column name in the ORDER BY list matches a column name in the selector.  
   
@@ -51,9 +51,9 @@ SELECT c, (SELECT c, (SELECT c FROM AdventureWorksModel.Vendor AS c  ) As Inner2
 ```  
   
 ## Server Generated GUID Identity Values  
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports server-generated GUID type identity values, but the provider must support returning the server-generated identity value after a row was inserted. Starting with SQL Server 2005, you can return the server-generated GUID type in a SQL Server database through the [OUTPUT clause](https://go.microsoft.com/fwlink/?LinkId=169400) .  
+ The Entity Framework supports server-generated GUID type identity values, but the provider must support returning the server-generated identity value after a row was inserted. Starting with SQL Server 2005, you can return the server-generated GUID type in a SQL Server database through the [OUTPUT clause](https://go.microsoft.com/fwlink/?LinkId=169400) .  
   
 ## See also
 
-- [SqlClient for the Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)
-- [Known Issues and Considerations in LINQ to Entities](../../../../../docs/framework/data/adonet/ef/language-reference/known-issues-and-considerations-in-linq-to-entities.md)
+- [SqlClient for the Entity Framework](sqlclient-for-the-entity-framework.md)
+- [Known Issues and Considerations in LINQ to Entities](./language-reference/known-issues-and-considerations-in-linq-to-entities.md)

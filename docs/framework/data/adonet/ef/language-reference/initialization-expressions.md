@@ -11,7 +11,7 @@ An initialization expression initializes a new object. Most initialization expre
   
 - A collection of zero or more typed entity objects or a projection of complex types that are defined in the conceptual model.  
   
-- CLR types supported by the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)].  
+- CLR types supported by the Entity Framework.
   
 - Inline collections.  
   
@@ -42,4 +42,4 @@ An initialization expression initializes a new object. Most initialization expre
   
 ## See also
 
-- [Expressions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)
+- [Expressions in LINQ to Entities Queries](expressions-in-linq-to-entities-queries.md)

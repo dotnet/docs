@@ -18,7 +18,7 @@ Probabilistic programming allows you to create statistical models of real-world 
 
 - Local development environment setup
 
-  This how-to guide expects you to have a machine you can use for development. The .NET [Get Started in 10 minutes](https://www.microsoft.com/net/core) tutorial has instructions for setting up your local development environment on Mac, PC, or Linux.
+  This how-to guide expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on macOS, Windows, or Linux.
 
 ## Create your app
 

@@ -20,7 +20,7 @@ At the command prompt, type the following:
 
 ## Syntax
 
-```
+```console
 regasm assemblyFile [options]
 ```
 
@@ -62,19 +62,19 @@ After registering an assembly using Regasm.exe, you can install it in the [globa
 
 The following command registers all public classes contained in `myTest.dll`.
 
-```
+```console
 regasm myTest.dll
 ```
 
 The following command generates the file `myTest.reg`, which contains all the necessary registry entries. This command does not update the registry.
 
-```
+```console
 regasm myTest.dll /regfile:myTest.reg
 ```
 
 The following command registers all public classes contained in `myTest.dll`, and generates and registers the type library `myTest.tlb`, which contains definitions of all the public types defined in `myTest.dll`.
 
-```
+```console
 regasm myTest.dll /tlb:myTest.tlb
 ```
 

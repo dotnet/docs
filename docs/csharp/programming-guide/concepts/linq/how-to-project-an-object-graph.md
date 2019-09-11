@@ -212,7 +212,7 @@ class Program {
   
  The example produces the following output:  
   
-```  
+```output  
 PurchaseOrderNumber: 99503  
 OrderDate: 10/20/1999  
   

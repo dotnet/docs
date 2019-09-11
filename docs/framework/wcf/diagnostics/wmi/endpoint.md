@@ -31,7 +31,7 @@ class Endpoint
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetOperationCounterInstanceName](../../../../../docs/framework/wcf/diagnostics/wmi/getoperationcounterinstancename.md)|Retrieves the operation performance counter instance name|  
+|[GetOperationCounterInstanceName](getoperationcounterinstancename.md)|Retrieves the operation performance counter instance name|  
   
 ## Properties  
  The Endpoint class has the following properties:  

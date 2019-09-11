@@ -22,7 +22,7 @@ The Type Library Importer converts the type definitions found within a COM type 
   
 ## Syntax  
   
-```  
+```console  
 tlbimp tlbFile [options]  
 ```  
   
@@ -81,31 +81,31 @@ tlbimp tlbFile [options]
 ## Examples  
  The following command generates an assembly with the same name as the type library found in `myTest.tlb` and with the .dll extension.  
   
-```  
+```console  
 tlbimp myTest.tlb   
 ```  
   
  The following command generates an assembly with the name `myTest.dll`.  
   
-```  
+```console  
 tlbimp  myTest.tlb  /out:myTest.dll  
 ```  
   
  The following command generates an assembly with the same name as the type library specified by `MyModule.dll\1` and with the .dll extension. `MyModule.dll\1` must be located in the current directory.  
   
-```  
+```console  
 tlbimp MyModule.dll\1  
 ```  
   
  The following command generates an assembly with the name `myTestLib.dll` for the type library `TestLib.dll`. The **/transform:dispret** option transforms any [out, retval] parameters of methods on dispinterfaces in the type library into return values in the managed library.  
   
-```  
+```console  
 tlbimp TestLib.dll /transform:dispret /out:myTestLib.dll  
 ```  
   
  The type library `TestLib.dll`, in the preceding example, includes a dispinterface method named `SomeMethod` that returns void and has an [out, retval] parameter. The following code is the input type library method signature for `SomeMethod` in `TestLib.dll`.  
   
-```  
+```cpp  
 void SomeMethod([out, retval] VARIANT_BOOL*);  
 ```  
   

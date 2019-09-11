@@ -13,7 +13,7 @@ Partially modernizing an app doesn’t necessarily mean a full migration and rea
 
 ![Positioning Cloud-Optimized applications](./media/image1.png)
 
-> **Figure 4-1.** Positioning Cloud-Optimized applications
+**Figure 4-1.** Positioning Cloud-Optimized applications
 
 >[!div class="step-by-step"]
 >[Previous](../migrate-your-relational-databases-to-azure.md)

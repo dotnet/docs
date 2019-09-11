@@ -134,7 +134,7 @@ client.Close();
 
 When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages.
 
-```
+```console
 The service is ready.
 Press <ENTER> to terminate service.
 

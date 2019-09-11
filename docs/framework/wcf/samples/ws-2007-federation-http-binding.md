@@ -92,7 +92,7 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
   
  When you run the sample, the request for the security token is shown in the STS console window. The operation's requests and responses are displayed in the client and service console windows. Press ENTER in any of the console windows to shut down the application.  
 
-```
+```console
 Add(100,15.99) = 115.99
 Subtract(145,76.54) = 68.46
 Multiply(9,81.25) = 731.25

@@ -32,13 +32,13 @@ This sample demonstrates how to gather data from Windows Communication Foundatio
   
  Start the sample to create a running instance of a WCF service. While the service is running, run each Java script by using the following command at the command prompt:  
   
-```  
+```console  
 cscript EnumerateServices.js  
 ```  
   
  The script accesses the instrumentation contained in the service and produces the following output:  
   
-```  
+```console  
 Microsoft (R) Windows Script Host Version 5.6  
 Copyright © Microsoft Corporation 1996-2001. All rights reserved.  
   
@@ -96,13 +96,13 @@ Copyright © Microsoft Corporation 1996-2001. All rights reserved.
   
  Next, run the second Java Script to display the user-defined WMI data:  
   
-```  
+```console  
 cscript EnumerateCustomObjects.js  
 ```  
   
  The script accesses the user-defined instrumentation contained in the services and produces the following output:  
   
-```  
+```console 
 1 WMIObject(s) found.  
 |-PID:           30285bfd-9d66-4c4e-9be2-310499c5cef5  
 |-InstanceId:    3839  

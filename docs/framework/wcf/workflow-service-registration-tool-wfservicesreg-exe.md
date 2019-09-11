@@ -8,7 +8,7 @@ Workflow Services Registration tool (WFServicesReg.exe) is a stand-alone tool th
   
 ## Syntax  
   
-```  
+```console  
 WFServicesReg.exe [-c | -r | -v | -m | -i]  
 ```  
   

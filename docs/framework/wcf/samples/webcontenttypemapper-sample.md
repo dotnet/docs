@@ -12,7 +12,7 @@ This sample demonstrates how to map new content types to Windows Communication F
   
  In some scenarios (for example, push-style APIs), the service developer does not control the content type returned by the client. For example, clients might return JSON as `text/javascript` instead of `application/json`. In this case, the service developer must provide a type that derives from <xref:System.ServiceModel.Channels.WebContentTypeMapper> to handle the given content type correctly, as shown in the following sample code.  
   
-```  
+```csharp  
 public class JsonContentTypeMapper : WebContentTypeMapper  
 {  
     public override WebContentFormat  

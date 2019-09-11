@@ -30,13 +30,13 @@ For the complete sample, see [Introduction to Styling and Templating Sample](htt
 
 You can think of a <xref:System.Windows.Style> as a convenient way to apply a set of property values to more than one element. For example, consider the following <xref:System.Windows.Controls.TextBlock> elements and their default appearance:
 
-[!code-xaml[TextBlocks](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#SnippetTextBlocks)]
+[!code-xaml[TextBlocks](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#TextBlocks)]
 
 ![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbefore.png "StylingIntro_TextBlocksBefore")
 
 You can change the default appearance by setting properties, such as <xref:System.Windows.Controls.Control.FontSize%2A> and <xref:System.Windows.Controls.Control.FontFamily%2A>, on each <xref:System.Windows.Controls.TextBlock> element directly. However, if you want your <xref:System.Windows.Controls.TextBlock> elements to share some properties, you can create a <xref:System.Windows.Style> in the `Resources` section of your XAML file, as shown here:
 
-[!code-xaml[DefaultTextBlockStyle](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#SnippetDefaultTextBlockStyle)]
+[!code-xaml[DefaultTextBlockStyle](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#DefaultTextBlockStyle)]
 
 When you set the <xref:System.Windows.Style.TargetType%2A> of your style to the <xref:System.Windows.Controls.TextBlock> type, the style is applied to all the <xref:System.Windows.Controls.TextBlock> elements in the window.
 
@@ -48,11 +48,11 @@ Now the <xref:System.Windows.Controls.TextBlock> elements appear as follows:
 
 Perhaps you want your two <xref:System.Windows.Controls.TextBlock> elements to share some property values, such as the <xref:System.Windows.Controls.Control.FontFamily%2A> and the centered <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, but you also want the text "My Pictures" to have some additional properties. You can do that by creating a new style that is based on the first style, as shown here:
 
-[!code-xaml[DefaultTextBlockStyleBasedOn](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetDefaultTextBlockStyleBasedOn)]
+[!code-xaml[DefaultTextBlockStyleBasedOn](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#DefaultTextBlockStyleBasedOn)]
 
 Notice that the previous style is given an `x:Key`. To apply the style, you set the <xref:System.Windows.FrameworkElement.Style%2A> property on your <xref:System.Windows.Controls.TextBlock> to the `x:Key` value, as shown here:
 
-[!code-xaml[TextBlocksExplicit](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetTextBlocksExplicit)]
+[!code-xaml[TextBlocksExplicit](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#TextBlocksExplicit)]
 
 This <xref:System.Windows.Controls.TextBlock> style now has a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value of <xref:System.Windows.HorizontalAlignment.Center>, a <xref:System.Windows.Controls.TextBlock.FontFamily%2A> value of `Comic Sans MS`, a <xref:System.Windows.Controls.TextBlock.FontSize%2A> value of 26, and a <xref:System.Windows.Controls.TextBlock.Foreground%2A> value set to the <xref:System.Windows.Media.LinearGradientBrush> shown in the example. Notice that it overrides the <xref:System.Windows.Controls.Control.FontSize%2A> value of the base style. If there is more than one <xref:System.Windows.Setter> setting the same property in a <xref:System.Windows.Style>, the <xref:System.Windows.Setter> that is declared last takes precedence.
 
@@ -78,8 +78,8 @@ You can use a style on any element that derives from <xref:System.Windows.Framew
 
 To assign a named style to an element programmatically, get the style from the resources collection and assign it to the element's <xref:System.Windows.FrameworkElement.Style%2A> property. The items in a resources collection are of type <xref:System.Object>. Therefore, you must cast the retrieved style to a <xref:System.Windows.Style> before assigning it to the <xref:System.Windows.FrameworkElement.Style%2A> property. For example, to set the defined `TitleText` style on a <xref:System.Windows.Controls.TextBlock> named `textblock1`, do the following:
 
-[!code-csharp[SetStyleCode](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml.cs#SnippetSetStyleCode)]
-[!code-vb[SetStyleCode](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/vb/MainWindow.xaml.vb#SnippetSetStyleCode)]
+[!code-csharp[SetStyleCode](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml.cs#SetStyleCode)]
+[!code-vb[SetStyleCode](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/vb/MainWindow.xaml.vb#SetStyleCode)]
 
 Once a style has been applied, it is sealed and cannot be changed. If you want to dynamically change a style that has already been applied, you must create a new style to replace the existing one. For more information, see the <xref:System.Windows.Style.IsSealed%2A> property.
 
@@ -95,7 +95,7 @@ So far, this overview only discusses the use of setters to set property value. Y
 
 In this sample application, there is a <xref:System.Windows.Controls.ListBox> control that is bound to a list of photos:
 
-[!code-xaml[ListBox](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window3.xaml#SnippetListBox)]
+[!code-xaml[ListBox](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window3.xaml#ListBox)]
 
 This <xref:System.Windows.Controls.ListBox> currently looks like the following:
 
@@ -107,7 +107,7 @@ In our sample application, each custom `Photo` object has a `Source` property of
 
 For the photos to appear as images, you create a <xref:System.Windows.DataTemplate> as a resource:
 
-[!code-xaml[DataTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window4.xaml#SnippetDataTemplate)]
+[!code-xaml[DataTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window4.xaml#DataTemplate)]
 
 Notice that the <xref:System.Windows.DataTemplate.DataType%2A> property is similar to the <xref:System.Windows.Style.TargetType%2A> property of the <xref:System.Windows.Style>. If your <xref:System.Windows.DataTemplate> is in the resources section, when you specify the <xref:System.Windows.DataTemplate.DataType%2A> property to a type and omit an `x:Key`, the <xref:System.Windows.DataTemplate> is applied whenever that type appears. You always have the option to assign the <xref:System.Windows.DataTemplate> with an `x:Key` and then set it as a `StaticResource` for properties that take <xref:System.Windows.DataTemplate> types, such as the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property or the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property.
 
@@ -131,7 +131,7 @@ A <xref:System.Windows.Trigger> that sets property values or starts actions base
 
 To demonstrate how to use property triggers, you can make each <xref:System.Windows.Controls.ListBoxItem> partially transparent unless it is selected. The following style sets the <xref:System.Windows.UIElement.Opacity%2A> value of a <xref:System.Windows.Controls.ListBoxItem> to `0.5`. When the <xref:System.Windows.Controls.ListBoxItem.IsSelected%2A> property is `true`, however, the <xref:System.Windows.UIElement.Opacity%2A> is set to `1.0`:
 
-[!code-xaml[PropertyTrigger](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window5.xaml#SnippetPropertyTrigger)]
+[!code-xaml[PropertyTrigger](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window5.xaml#PropertyTrigger)]
 
 This example uses a <xref:System.Windows.Trigger> to set a property value, but note that the <xref:System.Windows.Trigger> class also has the <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> properties that enable a trigger to perform actions.
 
@@ -143,7 +143,7 @@ Notice that the <xref:System.Windows.FrameworkElement.MaxHeight%2A> property of 
 
 Another type of trigger is the <xref:System.Windows.EventTrigger>, which starts a set of actions based on the occurrence of an event. For example, the following <xref:System.Windows.EventTrigger> objects specify that when the mouse pointer enters the <xref:System.Windows.Controls.ListBoxItem>, the <xref:System.Windows.FrameworkElement.MaxHeight%2A> property animates to a value of `90` over a `0.2` second period. When the mouse moves away from the item, the property returns to the original value over a period of `1` second. Note how it is not necessary to specify a <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> value for the <xref:System.Windows.ContentElement.MouseLeave> animation. This is because the animation is able to keep track of the original value.
 
-[!code-xaml[StyleEventTriggers](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window6.xaml#SnippetStyleEventTriggers)]
+[!code-xaml[StyleEventTriggers](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window6.xaml#StyleEventTriggers)]
 
 For more information, see the [Storyboards Overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
 

@@ -183,7 +183,7 @@ SELECT C2.FirstName, C2.LastName
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not (yet) provide support for analytic functions.  
   
  Built-in Functions, Operators  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports a subset of Transact-SQL's built in functions and operators. These operators and functions are likely to be supported by the major store providers. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] uses the store-specific functions declared in a provider manifest. Additionally, the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] allows you to declare built-in and user-defined existing store functions, for [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to use.  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports a subset of Transact-SQL's built in functions and operators. These operators and functions are likely to be supported by the major store providers. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] uses the store-specific functions declared in a provider manifest. Additionally, the Entity Framework allows you to declare built-in and user-defined existing store functions, for [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to use.  
   
  Hints  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not provide mechanisms for query hints.  

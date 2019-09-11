@@ -55,7 +55,7 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
 |<xref:System.Windows.Forms.Button>|`buttonExportPublicKey`|Export Public Key|  
 |<xref:System.Windows.Forms.Button>|`buttonImportPublicKey`|Import Public Key|  
 |<xref:System.Windows.Forms.Button>|`buttonGetPrivateKey`|Get Private Key|  
-|<xref:System.Windows.Forms.Label>|`label1`||  
+|<xref:System.Windows.Forms.Label>|`label1`|Key not set|  
 |<xref:System.Windows.Forms.OpenFileDialog>|`openFileDialog1`||  
 |<xref:System.Windows.Forms.OpenFileDialog>|`openFileDialog2`||  
   

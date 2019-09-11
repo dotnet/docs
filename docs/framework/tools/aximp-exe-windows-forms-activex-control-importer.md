@@ -24,7 +24,7 @@ The ActiveX Control Importer converts type definitions in a COM type library for
   
 ## Syntax  
   
-```  
+```console  
 aximp [options]{file.dll | file.ocx}  
 ```  
   
@@ -69,7 +69,7 @@ aximp [options]{file.dll | file.ocx}
 ## Example  
  The following command generates MediaPlayer.dll and AxMediaPlayer.dll for the Media Player control `msdxm.ocx`.  
   
-```  
+```console 
 aximp c:\systemroot\system32\msdxm.ocx  
 ```  
   

@@ -53,7 +53,7 @@ This sample demonstrates how to implement a service with a secure metadata endpo
 ## Svcutil client  
  When using the default binding to host your `IMetadataExchange` endpoint, you can run Svcutil.exe with the address of that endpoint:  
   
-```  
+```console  
 svcutil http://localhost/servicemodelsamples/service.svc/mex  
 ```  
   
@@ -71,7 +71,7 @@ svcutil http://localhost/servicemodelsamples/service.svc/mex
   
  The endpoint name must be the name of the scheme of the address where the metadata is hosted and the endpoint contract must be `IMetadataExchange`. Thus, when Svcutil.exe is run with a command-line such as the following:  
   
-```  
+```console  
 svcutil http://localhost/servicemodelsamples/service.svc/mex  
 ```  
   
@@ -79,7 +79,7 @@ svcutil http://localhost/servicemodelsamples/service.svc/mex
   
  In order for Svcutil.exe to pick up the configuration in Svcutil.exe.config, Svcutil.exe must be in the same directory as the configuration file. As a result, you must copy Svcutil.exe from its install location to the directory that contains the Svcutil.exe.config file. Then from that directory, run the following command:  
   
-```  
+```console  
 .\svcutil.exe http://localhost/servicemodelsamples/service.svc/mex  
 ```  
   
@@ -90,7 +90,7 @@ svcutil http://localhost/servicemodelsamples/service.svc/mex
   
  The same binding and certificate information that appeared in Svcutil.exe.config can be specified imperatively on the `MetadataExchangeClient`:  
   
-```  
+```csharp  
 // Specify the Metadata Exchange binding and its security mode  
 WSHttpBinding mexBinding = new WSHttpBinding(SecurityMode.Message);  
 mexBinding.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;  
@@ -99,27 +99,27 @@ mexBinding.Security.Message.ClientCredentialType = MessageCredentialType.Certifi
 MetadataExchangeClient mexClient = new MetadataExchangeClient(mexBinding);  
 mexClient.SoapCredentials.ClientCertificate.SetCertificate(    StoreLocation.CurrentUser, StoreName.My,  
     X509FindType.FindBySubjectName, "client.com");  
-mexClient.SoapCredentials.ServiceCertificate.Authentication.    CertificateValidationMode =    X509CertificateValidationMode.PeerOrChainTrust;  
+mexClient.SoapCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.PeerOrChainTrust;  
 mexClient.SoapCredentials.ServiceCertificate.SetDefaultCertificate(    StoreLocation.CurrentUser, StoreName.TrustedPeople,  
     X509FindType.FindBySubjectName, "localhost");  
 ```  
   
  With the `mexClient` configured, we can enumerate the contracts we are interested in, and use `MetadataResolver` to fetch a list of endpoints with those contracts:  
   
-```  
+```csharp  
 // The contract we want to fetch metadata for  
-Collection<ContractDescription> contracts =    new Collection<ContractDescription>();  
-ContractDescription contract =    ContractDescription.GetContract(typeof(ICalculator));  
+Collection<ContractDescription> contracts = new Collection<ContractDescription>();  
+ContractDescription contract = ContractDescription.GetContract(typeof(ICalculator));  
 contracts.Add(contract);  
 // Find endpoints for that contract  
-EndpointAddress mexAddress = new    EndpointAddress(ConfigurationManager.AppSettings["mexAddress"]);  
-ServiceEndpointCollection endpoints =    MetadataResolver.Resolve(contracts, mexAddress, mexClient);  
+EndpointAddress mexAddress = new EndpointAddress(ConfigurationManager.AppSettings["mexAddress"]);  
+ServiceEndpointCollection endpoints = MetadataResolver.Resolve(contracts, mexAddress, mexClient);  
 ```  
   
  Finally we can use the information from those endpoints to initialize the binding and address of a `ChannelFactory` used to create channels to communicate with the application endpoints.  
   
-```  
-ChannelFactory<ICalculator> cf = new    ChannelFactory<ICalculator>(endpoint.Binding, endpoint.Address);  
+```csharp  
+ChannelFactory<ICalculator> cf = new ChannelFactory<ICalculator>(endpoint.Binding, endpoint.Address);  
 ```  
   
  The key point of this sample client is to demonstrate that, if you are using `MetadataResolver`, and you must specify custom bindings or behaviors for the metadata exchange communication, you can use a `MetadataExchangeClient` to specify those custom settings.  

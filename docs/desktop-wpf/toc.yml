@@ -7,9 +7,9 @@
   - name: Getting started
     items:
     - name: Create a WPF application
-      href: getting-started/how-to-create-an-application.md
+      href: getting-started/how-to-create-application.md
     - name: Create a control library
-      href: getting-started/how-to-create-a-control-library.md
+      href: getting-started/how-to-create-control-library.md
   - name: Migration
     items:
     - name: Differences from .NET Framework
@@ -25,29 +25,29 @@
     - name: Styles and templates
       items:
       - name: Overview
-        href: fundamentals/styles-and-templates-overview.md
+        href: fundamentals/styles-templates-overview.md
       - name: Create and apply a style
-        href: fundamentals/styles-and-templates-create-apply-style.md
+        href: fundamentals/styles-templates-create-apply-style.md
       - name: Create and apply a template
-        href: fundamentals/styles-and-templates-create-apply-template.md
+        href: fundamentals/styles-templates-create-apply-template.md
     - name: Accessibility overview
       href: fundamentals/accessibility.md
     - name: Localize your app
-      href: fundamentals/localize-your-app.md
+      href: fundamentals/localize-app.md
     - name: Draw shapes
       href: fundamentals/draw-shapes.md
     - name: Display a dialog popup
-      href: fundamentals/display-a-dialog-popup.md
+      href: fundamentals/display-dialog-popup.md
   - name: Working with data
     items:
-    - name: Add a data source to your project
-      href: working-with-data/add-data-source-to-project.md
+    - name: Add a data source to project
+      href: working-with-data/add-data-source.md
     - name: Add data binding to a control
-      href: working-with-data/databind-to-control.md
+      href: working-with-data/databind-control.md
     - name: Add validation to a control
       href: working-with-data/validate-control-input.md
     - name: Display data in a grid control
-      href: working-with-data/use-the-datagrid-control.md
+      href: working-with-data/use-datagrid-control.md
   - name: Package and distribute
     items:
     - name: Package your app with MSIX

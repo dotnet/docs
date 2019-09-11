@@ -40,7 +40,7 @@ a ?? (b ?? c)
 d ??= (e ??= f)
 ```
 
-## Use cases
+## Examples
 
 The `??` and `??=` operators can be useful in the following scenarios:
 

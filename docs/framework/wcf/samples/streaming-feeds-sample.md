@@ -15,7 +15,7 @@ This sample demonstrates how to manage syndication feeds that contain large numb
 ## Service  
  The service implements a basic <xref:System.ServiceModel.Web.WebGetAttribute> contract that consists of one operation, as shown in the following code.  
   
-```  
+```csharp  
 [ServiceContract]  
 interface IStreamingFeedService  
 {  
@@ -27,7 +27,7 @@ interface IStreamingFeedService
   
  The service implements this contract by using an `ItemGenerator` class to create a potentially infinite stream of <xref:System.ServiceModel.Syndication.SyndicationItem> instances using an iterator, as shown in the following code.  
   
-```  
+```csharp  
 class ItemGenerator  
 {  
     public IEnumerable<SyndicationItem> GenerateItems()  
@@ -45,7 +45,7 @@ class ItemGenerator
   
  When the service implementation creates the feed, the output of `ItemGenerator.GenerateItems()` is used instead of a buffered collection of items.  
   
-```  
+```csharp  
 public Atom10FeedFormatter StreamedFeed()  
 {  
     SyndicationFeed feed = new SyndicationFeed("Streamed feed", "Feed to test streaming", null);  
@@ -64,7 +64,7 @@ public Atom10FeedFormatter StreamedFeed()
 ## Client  
  The client in this sample uses a custom <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> implementation that delays the materialization of individual items in the feed instead of buffering them into memory. The custom `StreamedAtom10FeedFormatter` instance is used as follows.  
   
-```  
+```csharp  
 XmlReader reader = XmlReader.Create("http://localhost:8000/Service/Feeds/StreamedFeed");  
 StreamedAtom10FeedFormatter formatter = new StreamedAtom10FeedFormatter(counter);  
   
@@ -73,7 +73,7 @@ SyndicationFeed feed = formatter.ReadFrom(reader);
   
  Normally, a call to <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter.ReadFrom%28System.Xml.XmlReader%29> does not return until the entire contents of the feed have been read from the network and buffered into memory. However, the `StreamedAtom10FeedFormatter` object overrides <xref:System.ServiceModel.Syndication.Atom10FeedFormatter.ReadItems%28System.Xml.XmlReader%2CSystem.ServiceModel.Syndication.SyndicationFeed%2CSystem.Boolean%40%29> to return an iterator instead of a buffered collection, as shown in the following code.  
   
-```  
+```csharp  
 protected override IEnumerable<SyndicationItem> ReadItems(XmlReader reader, SyndicationFeed feed, out bool areAllItemsRead)  
 {  
     areAllItemsRead = false;  

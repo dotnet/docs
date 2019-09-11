@@ -76,7 +76,7 @@ The client process runs three scenarios, each of which attempts to call `Divide`
 
 The expected output from the client process is:
 
-```
+```console
 =
 = Demonstrating problem:  closing brace of using statement can throw.
 =

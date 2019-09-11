@@ -49,6 +49,8 @@ RUN dotnet publish -c Release -o /published src/TraderSys.Portfolios/TraderSys.P
 # Runtime image creation
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
 
+ENV ASPNETCORE_URLS=https://+:443
+
 WORKDIR /app
 
 COPY --from=builder /published .

@@ -26,7 +26,7 @@ Blazor Server apps are .NET Core projects. The project file for the Blazor Serve
 </Project>
 ```
 
-The project file for a Blazor WebAssembly looks slightly more involved (exact version numbers may vary):
+The project file for a Blazor WebAssembly app looks slightly more involved (exact version numbers may vary):
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
@@ -52,7 +52,7 @@ The project file for a Blazor WebAssembly looks slightly more involved (exact ve
 </Project>
 ```
 
-Blazor WebAssembly projects target .NET Standard instead of .NET Core because they run in the browser on a WebAssembly-based .NET runtime. And since you can't install .NET into a web browser like you can on a server or developer machine, the project references the Blazor framework using individual package references.
+Blazor WebAssembly projects target .NET Standard instead of .NET Core because they run in the browser on a WebAssembly-based .NET runtime. Since you can't install .NET into a web browser like you can on a server or developer machine, the project references the Blazor framework using individual package references.
 
 By comparison, a default ASP.NET Web Forms project comes with almost 300 lines of XML in its .csproj file, most of which is explicitly listing the various code and content files in the project. Many of the simplifications in the .NET Core- and .NET Standard-based projects come from the default targets and properties imported by referencing the `Microsoft.NET.Sdk.Web` SDK, often referred to as simply the "Web SDK". The Web SDK includes wildcards and other conveniences that simplify inclusion of code and content files in the project so they don't need to be listed explicitly. When targeting .NET Core, the Web SDK also adds framework references to both the .NET Core and ASP.NET Core shared frameworks, which is visible from the *Dependencies > Frameworks* node in the Solution Explorer window. These shared frameworks are collections of assemblies that were installed on the machine when installing .NET Core.
 
@@ -150,7 +150,7 @@ We'll look in greater detail at routing in Blazor in the [Pages and routing](./p
 
 In ASP.NET Web Forms apps, common page layout is handled using master pages (*Site.Master*). In Blazor apps, page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page layout](./page-layout) section.
 
-## Bootstrapping Blazor
+## Bootstrap Blazor
 
 To bootstrap Blazor, the apps must specify where on the page the root component (*App.Razor*) should be rendered and add the corresponding Blazor framework script.
 
@@ -202,7 +202,7 @@ In the Blazor WebAssembly app, the host page is a simple static HTML file under 
 </html>
 ```
 
-The specific component to render is configured in the app's `Startup.Configure` method with a corresponding CSS selector for where the component should be rendered.
+The specific component to render is configured in the app's `Startup.Configure` method with a corresponding CSS selector indicating where the component should be rendered.
 
 ```csharp
     public class Startup
@@ -222,9 +222,9 @@ The specific component to render is configured in the app's `Startup.Configure` 
 
 When the Blazor projects are built, all of the Razor component files are compiled along with the project code into a single assembly. Unlike ASP.NET Web Forms projects, Blazor doesn't support runtime compilation of the UI logic.
 
-## Running the app
+## Run the app
 
-To run the Blazor Server app simply hit F5 in Visual Studio. Because Blazor apps do not support runtime compilation, to see the results of code changes, including component markup changes, you typically need to rebuild and restart the app when running under the debugger. If you don't run under the debugger (Ctrl+F5), Visual Studio watches for file changes and restarts the app as changes are made. You simply refresh the browser as changes are made.
+To run the Blazor Server app, press `F5` in Visual Studio. Because Blazor apps do not support runtime compilation, to see the results of code changes, including component markup changes, you typically need to rebuild and restart the app when running under the debugger. If you don't run under the debugger (`Ctrl+F5`), Visual Studio watches for file changes and restarts the app as changes are made. You simply refresh the browser as changes are made.
 
 To run the Blazor WebAssembly app, either run the client project directly using the development server or run the server project when hosting the app with ASP.NET Core. Blazor WebAssembly apps do not support debugging using Visual Studio. To run the app, use `Ctrl+F5` instead of `F5`. You can instead debug Blazor WebAssembly apps directly in the browser. See [Debug ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/debug) for details.
 

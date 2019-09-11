@@ -43,9 +43,7 @@ Note that IIS 6.0 and later versions periodically restart an isolated object-ori
 
 WCF services hosted in IIS are represented as special content files (.svc files) inside the IIS application. This model is similar to the way ASMX pages are represented inside of an IIS application as .asmx files. A .svc file contains a WCF-specific processing directive ([\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)) that allows the WCF hosting infrastructure to activate hosted services in response to incoming messages. The most common syntax for a .svc file is in the following statement.
 
-```svc
-<% @ServiceHost Service="MyNamespace.MyServiceImplementationTypeName" %>
-```
+`<% @ServiceHost Service="MyNamespace.MyServiceImplementationTypeName" %>`
 
 It consists of the [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive and a single attribute, `Service`. The value of the `Service` attribute is the common language runtime (CLR) type name of the service implementation. Using this directive is basically equivalent to creating a service host using the following code.
 

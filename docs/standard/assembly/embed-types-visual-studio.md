@@ -61,7 +61,6 @@ The first step is to create the type equivalence interface assembly.
    
 1. Open the *ISampleInterface* class file in the code editor, and replace its contents with the following code to create the `ISampleInterface` interface:
    
-   # [C#](#tab/csharp)
    ```csharp
    using System;
    using System.Runtime.InteropServices;
@@ -78,7 +77,6 @@ The first step is to create the type equivalence interface assembly.
    }
    ```
    
-   # [Visual Basic](#tab/vb)
    ```vb
    Imports System.Runtime.InteropServices
    
@@ -96,12 +94,10 @@ The first step is to create the type equivalence interface assembly.
    
 1. In **Solution Explorer**, expand the **Properties** folder and select the *AssemblyInfo.cs* or *AssemblyInfo.vb* file. In the code editor, add the following attribute to the file:
    
-   # [C#](#tab/csharp)
    ```csharp
    [assembly: ImportedFromTypeLib("")]
    ```
    
-   # [Visual Basic](#tab/vb)
    ```vb
    <Assembly: ImportedFromTypeLib("")>
    ```
@@ -138,7 +134,6 @@ Next, create the type equivalence runtime class.
    
 1. Open the *SampleClass* class file in the code editor, and replace its contents with the following code to create the `SampleClass` class:
    
-   # [C#](#tab/csharp)
    ```csharp
    using System;
    using System.Collections.Generic;
@@ -162,7 +157,6 @@ Next, create the type equivalence runtime class.
    }
    ```
    
-   # [Visual Basic](#tab/vb)
    ```vb
    Imports TypeEquivalenceInterface
    
@@ -209,7 +203,6 @@ Finally, create a type equivalence client program that references the interface 
    
 1. Open the *Program.cs* or *Module1.vb* file in the code editor, and replace its contents with the following code to create the client program:
    
-   # [C#](#tab/csharp)
    ```csharp
    using System;
    using System.Collections.Generic;
@@ -236,7 +229,6 @@ Finally, create a type equivalence client program that references the interface 
    }
    ```
    
-   # [Visual Basic](#tab/vb)
    ```vb
    Imports TypeEquivalenceInterface
    Imports System.Reflection
@@ -274,12 +266,10 @@ Now, modify the interface assembly, and change its version.
    
 1. Open the *SampleInterface.cs* or *SampleInterface.vb* file, and add the following line of code to the `ISampleInterface` interface:
    
-   # [C#](#tab/csharp)
    ```csharp
    DateTime GetDate();
    ```
    
-   # [Visual Basic](#tab/vb)
    ```vb
    Function GetDate() As Date
    ```
@@ -302,7 +292,6 @@ Also modify the runtime class and update its version.
    
 1. Open the *SampleClass.cs* or *SampleClass.vb* file, and add the following code to the `SampleClass` class:
    
-   # [C#](#tab/csharp)
    ```csharp
     public DateTime GetDate()
     {
@@ -310,7 +299,6 @@ Also modify the runtime class and update its version.
     }
    ```
    
-   # [Visual Basic](#tab/vb)
    ```vb
    Public Function GetDate() As DateTime Implements ISampleInterface.GetDate
        Return Now

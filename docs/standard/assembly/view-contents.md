@@ -27,7 +27,6 @@ To view assembly manifest information, double-click the **Manifest** icon in the
 ## Example  
 The following example starts with a basic "Hello World" program. After compiling the program, use *Ildasm.exe* to disassemble the *Hello.exe* assembly and view the assembly manifest.  
 
-# [C++](#tab/cpp)
 ```cpp
 using namespace System;
 
@@ -45,7 +44,7 @@ int main()
     MainApp::Main();
 }
 ```
-# [C#](#tab/csharp)
+
 ```csharp
 using System;
 
@@ -57,7 +56,7 @@ class MainApp
     }
 }
 ```
-# [Visual Basic](#tab/vb)
+
 ```vb
 Imports System
 
@@ -67,7 +66,6 @@ Class MainApp
     End Sub
 End Class
 ```
----
 
 Running the command *ildasm.exe* on the *Hello.exe* assembly and double-clicking the **Manifest** icon in the MSIL Disassembler window produces the following output:  
 

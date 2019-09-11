@@ -20,7 +20,6 @@ For .NET Core assemblies, and for .NET Framework assemblies that aren't in the g
   
 - If you know the assembly's file system path, you can call the `static` (C#) or `Shared` (Visual Basic) <xref:System.Reflection.AssemblyName.GetAssemblyName%2A?displayProperty=nameWithType> method to get the fully qualified assembly name. The following is a simple example.  
   
-  # [C#](#tab/csharp1)
   ```csharp
   using System;
   using System.Reflection;
@@ -35,7 +34,6 @@ For .NET Core assemblies, and for .NET Framework assemblies that aren't in the g
   // The example displays output like the following:
   //   UtilityLibrary, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
   ```
-  # [Visual Basic](#tab/vb1)
   ```vb
   Imports System.Reflection
   
@@ -55,7 +53,6 @@ For more information about setting assembly attributes such as version, culture,
 ## Example  
 The following example shows how to display the fully qualified name of an assembly containing a specified class to the console. It uses the <xref:System.Type.Assembly?displayProperty=nameWithType> property to retrieve a reference to an assembly from a type that's defined in that assembly.
 
-# [C++](#tab/cpp)
 ```cpp
 #using <System.dll>
 #using <System.Data.dll>
@@ -80,7 +77,7 @@ int main()
     asmname::Main();
 }
 ```
-# [C#](#tab/csharp)
+   
 ```csharp
 using System;
 using System.Reflection;
@@ -96,7 +93,7 @@ class asmname
     }
 }
 ```
-# [Visual Basic](#tab/vb)
+   
 ```vb
 Imports System
 Imports System.Reflection
@@ -110,7 +107,6 @@ Class asmname
     End Sub
 End Class
 ```
----
 ## See also
 
 - [Assembly names](names.md)

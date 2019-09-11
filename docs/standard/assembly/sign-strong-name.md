@@ -73,19 +73,17 @@ For more information about this tool, see [Assembly Linker](../../framework/tool
 
 The following example uses the <xref:System.Reflection.AssemblyKeyFileAttribute> attribute with a key file called *keyfile.snk*, which is located in the directory where the assembly is compiled.  
 
-# [C++](#tab/cpp)
 ```cpp
 [assembly:AssemblyKeyFileAttribute("keyfile.snk")];
 ```
-# [C#](#tab/csharp)
+
 ```csharp
 [assembly:AssemblyKeyFileAttribute("keyfile.snk")]
 ```
-# [Visual Basic](#tab/vb)
+
 ```vb
 <Assembly:AssemblyKeyFileAttribute("keyfile.snk")>
 ```
----
 
 You can also delay sign an assembly when compiling your source file. For more information, see [Delay-sign an assembly](delay-sign.md).  
 
@@ -97,10 +95,10 @@ For information on delay signing, see [Delay-sign an assembly](delay-sign.md).
 
 The following example uses the C# compiler and signs the assembly *UtilityLibrary.dll* with a strong name by using the key file *sgKey.snk*.  
 
-```  
+```cmd
 csc /t:library UtilityLibrary.cs /keyfile:sgKey.snk  
 ```  
-  
+
 ## See also
 
 - [Create and use strong-named assemblies](create-use-strong-named.md)

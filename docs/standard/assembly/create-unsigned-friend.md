@@ -12,7 +12,6 @@ This example shows how to use friend assemblies with assemblies that are unsigne
   
 2. Create a C# or Visual Basic file named *friend_unsigned_A* that contains the following code. The code uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to declare *friend_unsigned_B* as a friend assembly.  
    
-   # [C#](#tab/csharp)
    ```csharp  
    // friend_unsigned_A.cs  
    // Compile with:   
@@ -41,7 +40,6 @@ This example shows how to use friend assemblies with assemblies that are unsigne
    }  
    ```  
    
-   # [Visual Basic](#tab/vb)
    ```vb  
    ' friend_unsigned_A.vb  
    ' Compile with:   
@@ -68,19 +66,15 @@ This example shows how to use friend assemblies with assemblies that are unsigne
    
 3. Compile and sign *friend_unsigned_A* by using the following command:  
    
-   # [C#](#tab/csharp)
-   ```cmd  
+   ```csharp  
    csc /target:library friend_unsigned_A.cs  
    ```  
    
-   
-   # [Visual Basic](#tab/vb)
-   ```cmd
+   ```vb
    vbc -target:library friend_unsigned_A.vb  
    ```  
 4. Create a C# or Visual Basic file named *friend_unsigned_B* that contains the following code. Because *friend_unsigned_A* specifies *friend_unsigned_B* as a friend assembly, the code in *friend_unsigned_B* can access `internal` (C#) or `Friend` (Visual Basic) types and members from *friend_unsigned_A*.  
    
-   # [C#](#tab/csharp)
    ```csharp  
    // friend_unsigned_B.cs  
    // Compile with:   
@@ -102,7 +96,6 @@ This example shows how to use friend assemblies with assemblies that are unsigne
    }  
    ```  
    
-   # [Visual Basic](#tab/vb)
    ```vb  
    ' friend_unsigned_B.vb  
    ' Compile with:   
@@ -124,13 +117,11 @@ This example shows how to use friend assemblies with assemblies that are unsigne
    
 5. Compile *friend_unsigned_B* by using the following command.  
    
-   # [C#](#tab/csharp)
-   ```cmd  
+   ```csharp
    csc /r:friend_unsigned_A.dll /out:friend_unsigned_B.exe friend_unsigned_B.cs  
    ```  
    
-   # [Visual Basic](#tab/vb)
-    ```cmd
+    ```vb
    vbc -r:friend_unsigned_A.dll friend_unsigned_B.vb  
    ```
    

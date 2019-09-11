@@ -66,7 +66,6 @@ The primary rule for handling the <xref:System.AppDomain.AssemblyResolve> event 
 
 When loading an assembly, the event handler must not use any of the <xref:System.AppDomain.Load%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method overloads that can cause the <xref:System.AppDomain.AssemblyResolve> event to be raised recursively, because this can lead to a stack overflow. (See the list provided earlier in this topic.) This happens even if you provide exception handling for the load request, because no exception is thrown until all event handlers have returned. Thus, the following code results in a stack overflow if `MyAssembly` is not found:  
 
-# [C++](#tab/cpp)
 ```cpp
 using namespace System;
 using namespace System::Reflection;
@@ -109,7 +108,7 @@ Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
 Process is terminated due to StackOverflowException.
  */
 ```
-# [C#](#tab/csharp)
+   
 ```csharp
 using System;
 using System.Reflection;
@@ -151,7 +150,7 @@ Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
 Process is terminated due to StackOverflowException.
  */
 ```
-# [Visual Basic](#tab/vb)
+   
 ```vb
 Imports System
 Imports System.Reflection
@@ -189,7 +188,6 @@ End Class
 '
 'Process is terminated due to StackOverflowException.
 ```
----
 
 ## See also
 

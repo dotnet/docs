@@ -25,16 +25,13 @@ Type forwarding allows you to move a type to another assembly without having to 
    
 2. In the assembly where the type used to be located, add a <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> for the type that was moved. The following code shows the attribute for a type named `Example` that was moved.  
    
-   # [C#](#tab/csharp)
-   ```csharp  
-    [assembly:TypeForwardedToAttribute(typeof(Example))]  
-   ```  
-   
-   # [C++](#tab/cpp)
    ```cpp  
     [assembly:TypeForwardedToAttribute(Example::typeid)]  
    ```
-   ---
+   
+   ```csharp  
+    [assembly:TypeForwardedToAttribute(typeof(Example))]  
+   ```  
    
 3. Compile the assembly that now contains the type.  
    

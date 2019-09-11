@@ -53,19 +53,17 @@ When signing an assembly with a strong name, the [Assembly Linker (Al.exe)](../.
 
 If you are using an earlier version of Visual Studio that does not have a **Signing** tab in the project properties, the recommended key file location is the project directory with the file attribute specified as follows:
 
-# [C++](#tab/cpp)
 ```cpp
 [assembly:AssemblyKeyFileAttribute("keyfile.snk")];
 ```
-# [C#](#tab/csharp)
+
 ```csharp
 [assembly:AssemblyKeyFileAttribute("keyfile.snk")]
 ```
-# [Visual Basic](#tab/vb)
+
 ```vb
 <Assembly:AssemblyKeyFileAttribute("keyfile.snk")>
 ```
----
 ## See also
 
 - [Create and use strong-named assemblies](create-use-strong-named.md)

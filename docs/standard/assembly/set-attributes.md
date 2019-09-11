@@ -30,31 +30,29 @@ Assembly attributes are values that provide information about an assembly. The a
 |<xref:System.Reflection.AssemblyCultureAttribute>|Enumerated field indicating the culture that the assembly supports. An assembly can also specify culture independence, indicating that it contains the resources for the default culture. **Note:**  The runtime treats any assembly that does not have the culture attribute set to null as a satellite assembly. Such assemblies are subject to satellite assembly binding rules. For more information, see [How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md).|  
 |<xref:System.Reflection.AssemblyFlagsAttribute>|Value that sets assembly attributes, such as whether the assembly can be run side by side.|  
 |<xref:System.Reflection.AssemblyVersionAttribute>|Numeric value in the format *major*.*minor*.*build*.*revision* (for example, 2.4.0.0). The common language runtime uses this value to perform binding operations in strong-named assemblies. **Note:**  If the <xref:System.Reflection.AssemblyInformationalVersionAttribute> attribute is not applied to an assembly, the version number specified by the <xref:System.Reflection.AssemblyVersionAttribute> attribute is used by the <xref:System.Windows.Forms.Application.ProductVersion%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Application.UserAppDataRegistry%2A?displayProperty=nameWithType> properties.|  
-  
- The following code example shows how to apply the version and culture attributes to an assembly.  
-  
-# [C++](#tab/cpp)
+
+The following code example shows how to apply the version and culture attributes to an assembly.  
+
 ```cpp
 // Set version number for the assembly.
 [assembly:AssemblyVersionAttribute("4.3.2.1")];
 // Set culture as German.
 [assembly:AssemblyCultureAttribute("de")];
 ```
-# [C#](#tab/csharp)
+
 ```csharp
 // Set version number for the assembly.
 [assembly:AssemblyVersionAttribute("4.3.2.1")]
 // Set culture as German.
 [assembly:AssemblyCultureAttribute("de")]
 ```
-# [Visual Basic](#tab/vb)
+
 ```vb
 ' Set version number for the assembly.
 <Assembly:AssemblyVersionAttribute("4.3.2.1")>
 ' Set culture as German.
 <Assembly:AssemblyCultureAttribute("de")>
 ```
----
 ## Informational attributes  
  You can use informational attributes to provide additional company or product information for an assembly. The following table describes the informational attributes you can apply to an assembly.  
   
@@ -87,25 +85,23 @@ Assembly attributes are values that provide information about an assembly. The a
 |<xref:System.Reflection.AssemblyDelaySignAttribute>|Boolean value indicating that delay signing is being used.|  
 |<xref:System.Reflection.AssemblyKeyFileAttribute>|String value indicating the name of the file that contains either the public key (if using delay signing) or both the public and private keys passed as a parameter to the constructor of this attribute. Note that the file name is relative to the output file path (the *.exe* or *.dll*), not the source file path.|  
 |<xref:System.Reflection.AssemblyKeyNameAttribute>|Indicates the key container that contains the key pair passed as a parameter to the constructor of this attribute.|  
-  
- The following code example shows the attributes to apply when using delay signing to create a strong-named assembly with a public key file called *myKey.snk*.  
-  
-# [C++](#tab/cpp)
+
+The following code example shows the attributes to apply when using delay signing to create a strong-named assembly with a public key file called *myKey.snk*.  
+
 ```cpp
 [assembly:AssemblyKeyFileAttribute("myKey.snk")];
 [assembly:AssemblyDelaySignAttribute(true)];
 ```
-# [C#](#tab/csharp)
+
 ```csharp
 [assembly:AssemblyKeyFileAttribute("myKey.snk")]
 [assembly:AssemblyDelaySignAttribute(true)]
 ```
-# [Visual Basic](#tab/vb)
+
 ```vb
 <Assembly:AssemblyKeyFileAttribute("myKey.snk")>
 <Assembly:AssemblyDelaySignAttribute(True)>
 ```
----
 
 ## See also
 

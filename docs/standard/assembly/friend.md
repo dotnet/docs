@@ -18,8 +18,6 @@ You can use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribut
 > [!NOTE]
 > When you compile an assembly like *AssemblyB* that will access internal types or internal members of another assembly like *Assembly A*, you must explicitly specify the name of the output file (*.exe* or *.dll*) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [/out (C#)](../../csharp/language-reference/compiler-options/out-compiler-option.md) or [/out (Visual Basic)](../../visual-basic/reference/command-line-compiler/out.md).
 
-# [C#](#tab/csharp)
-
 ```csharp
 using System.Runtime.CompilerServices;
 using System;
@@ -46,8 +44,6 @@ public class ClassWithFriendMethod
 }
 ```
 
-# [Visual Basic](#tab/vb)
-
 ```vb
 Imports System.Runtime.CompilerServices
 Imports System
@@ -67,8 +63,6 @@ Public Class ClassWithFriendMethod
     End Sub
 End Class
 ```
-
----
 
 Only assemblies that you explicitly specify as friends can access `internal` (C#) or `Friend` (Visual Basic) types and members. For example, if *AssemblyB* is a friend of *Assembly A* and *Assembly C* references *AssemblyB*, *Assembly C* does not have access to `internal` (C#) or `Friend` (Visual Basic) types in *Assembly A*.
 

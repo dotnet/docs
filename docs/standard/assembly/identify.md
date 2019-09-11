@@ -22,9 +22,8 @@ A file is an assembly if and only if it is managed, and contains an assembly ent
 2. If a <xref:System.BadImageFormatException> exception is thrown, the file is not an assembly.  
   
 ## Example  
- This example tests a DLL to see if it is an assembly.  
+This example tests a DLL to see if it is an assembly.  
 
-   # [C#](#tab/csharp)
 ```csharp
 class TestAssembly  
 {  
@@ -60,7 +59,6 @@ class TestAssembly
 */  
 ```  
 
-# [Visual Basic](#tab/vb)
 ```vb  
 Module Module1  
     Sub Main()  

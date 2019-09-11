@@ -48,22 +48,20 @@ In this example, `PublicKeyToken` is the hexadecimal form of the public key toke
 
 The following code example shows how to use this information with the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.  
 
-# [C++](#tab/cpp)
 ```cpp
 Assembly^ myDll =
     Assembly::Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1");
 ```
-# [C#](#tab/csharp)
+   
 ```csharp
 Assembly myDll =
     Assembly.Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1");
 ```
-# [Visual Basic](#tab/vb)
+   
 ```vb
 Dim myDll As Assembly = _
     Assembly.Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1")
 ```
----
 
 You can print the hexadecimal format of the public key and public key token for a specific assembly by using the following [Strong Name (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) command:  
 

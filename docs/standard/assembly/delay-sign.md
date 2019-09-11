@@ -28,17 +28,16 @@ To delay-sign an assembly:
    
    For example:  
    
-   # [C++](#tab/cpp)
    ```cpp
    [assembly:AssemblyKeyFileAttribute("myKey.snk")];
    [assembly:AssemblyDelaySignAttribute(true)];
    ```
-   # [C#](#tab/csharp)
+   
    ```csharp
    [assembly:AssemblyKeyFileAttribute("myKey.snk")]
    [assembly:AssemblyDelaySignAttribute(true)]
    ```
-   # [Visual Basic](#tab/vb)
+   
    ```vb
    <Assembly:AssemblyKeyFileAttribute("myKey.snk")>
    <Assembly:AssemblyDelaySignAttribute(True)>

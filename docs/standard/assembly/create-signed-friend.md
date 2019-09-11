@@ -28,7 +28,6 @@ This example shows how to use friend assemblies with assemblies that have strong
    
    The Strong Name tool generates a new public key every time it runs. Therefore, you must replace the public key in the following code with the public key you just generated, as shown in the following example.  
    
-   # [C#](#tab/csharp)
    ```csharp  
    // friend_signed_A.cs  
    // Compile with:   
@@ -46,7 +45,6 @@ This example shows how to use friend assemblies with assemblies that have strong
    }  
    ```  
    
-   # [Visual Basic](#tab/vb)
    ```vb  
    ' friend_signed_A.vb  
    ' Compile with:   
@@ -64,19 +62,16 @@ This example shows how to use friend assemblies with assemblies that have strong
    
 4. Compile and sign *friend_signed_A* by using the following command.  
    
-   # [C#](#tab/csharp)
-   ```cmd  
+   ```csharp
    csc /target:library /keyfile:FriendAssemblies.snk friend_signed_A.cs  
    ```  
    
-   # [Visual Basic](#tab/vb)
-   ```cmd  
+   ```vb
    Vbc -target:library -keyfile:FriendAssemblies.snk friend_signed_A.vb  
    ```  
    
 5. Create a C# or Visual Basic file named *friend_signed_B* that contains the following code. Because *friend_signed_A* specifies *friend_signed_B* as a friend assembly, the code in *friend_signed_B* can access `internal` (C#) or `Friend` (Visual Basic) types and members from *friend_signed_A*. The file contains the following code.  
    
-   # [C#](#tab/csharp)
    ```csharp  
    // friend_signed_B.cs  
    // Compile with:   
@@ -91,7 +86,6 @@ This example shows how to use friend assemblies with assemblies that have strong
    }  
    ```  
    
-   # [Visual Basic](#tab/vb)
    ```vb  
    ' friend_signed_B.vb  
    ' Compile with:   
@@ -106,13 +100,11 @@ This example shows how to use friend assemblies with assemblies that have strong
    
 6. Compile and sign *friend_signed_B* by using the following command.  
    
-   # [C#](#tab/csharp)
-   ```cmd  
+   ```csharp
    csc /keyfile:FriendAssemblies.snk /r:friend_signed_A.dll /out:friend_signed_B.exe friend_signed_B.cs  
    ```  
    
-   # [Visual Basic](#tab/vb)
-   ```cmd
+   ```vb
    vbc -keyfile:FriendAssemblies.snk -r:friend_signed_A.dll friend_signed_B.vb  
    ```  
    

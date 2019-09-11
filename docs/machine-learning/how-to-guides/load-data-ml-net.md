@@ -1,7 +1,9 @@
 ---
 title: Load data from files and other sources
 description: This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
-ms.date: 09/10/2019
+ms.date: 09/11/2019
+author: luisquintanilla
+ms.author: luquinta
 ms.custom: mvc,how-to, title-hack-0625
 #Customer intent: As a developer I want to know how to load data from file and other data sources.
 ---

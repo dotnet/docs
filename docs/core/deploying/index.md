@@ -20,22 +20,73 @@ First, let’s review some basic terminology we will be using throughout this guid
 
 ## For Developers: Building and Deploying your .NET Core app
 
-As a developer, you will want to think about the following questions when building and deploying your .NET Core app:
+As a developer, your workflow will typically look like this:
 
-1.	Determine whether you will use an IDE like Visual Studio or the Command Line Interface (CLI) to build your app.
+Step 1 | | Step 2 || Step 3 || Step 4|
+---|---|---|
+ [Build your App](#Build-your-app) | --> | [Publish your app](#publish-your-app) | --> | [Package your app for deployment](#Package-your-app-for-deployment) | --> | [Deploy your app](#Deploy-your-app) | 
 
-2.	Determine whether you will build a Framework Dependent Deployment (FDD) or Self-Contained Deployment (SCD)
 
-3.	Determine whether you will publish the app as a set of assemblies or whether you will publish a single file executable
 
-4.	Determine how your app will be packaged and deployed to the target computer
+### Build your app
+
+When it comes to creating and building your app you have two choices - you can work with either an IDE like Visual Studio or the Command Line Interface (CLI).
+
+[Acquire the .NET Core tools through Visual Studio]()
+
+[Acquire the .NET Core CLI tools]()
+
+_There are several other ways to acquire the .NET Core SDK and Runtime, these options are covered in the [.NET Core Acquisition Experiences](acquisition-experiences.md) guide._
+
+
+Once you have acquired the tools, you're ready to build your app. You would use the approach that corresponds to whether in the previous step you chose to use an IDE like Visual Studio or Visual Studio for Mac or the CLI.
+
+[Build your first .NET Core app using Visual Studio](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio)
+ 
+[Build your first .NET Core app using the Command Line Interface (CLI)](../tutorials/using-with-xplat-cli.md)
+
+
+Either choice will allow you to create various types of .NET Core applications including ASP.NET Core, WPF and Windows Forms applications.
+
+
+
+
+### Publish your app
+
+You can publish your app in one of two configurations - as a [Framework Dependent Deployment (FDD)]() or as a [Self-Contained Deployment (SCD)]().
+
+Within each of these configurations, you also have the choice of publishing the app as a set of loose assemblies which you then either xcopy or package up for deployment, or alternatively as a single file executable.
+
+More information about each of these configurations can be found in the document on how to [Publish your app](publish.md).
+
+
+
+### Package your app for deployment
+
+Packaging your app while usually preferred, is optional. You could always choose to xcopy the publish folder of your app to a folder on the target computer where you want to run this. 
+
+If rather than use an xcopy based deployment you would prefer to package your app with a more professional installer experience, you have a couple of options. 
+
+At a high level, you can choose to package your app using one of the deployment technologies built into Visual Studio (MSIX and MSI), or use a third party installer of your choise.
+
+This document on [.NET Core Packaging](packaging.md) covers packaging your app as either an MSIX or MSI in further detail.
+
+
+
+
+### Deploy your app
+
+Deploy your app the target computer as an MSIX, MSI or something else  
+
+
 
 
 ## For DevOps Engineers/IT Admins: Deploying .NET Apps and the .NET Core runtime
 
-As a dev-ops engineer managing a CI/CD environment or an IT admin responsible for deploying software in an organization, you will want to think about the following questions:
-1.	Determine how you will acquire and deploy the .NET Core runtime necessary for the app to run 
-2.	Determine how you will deploy the app
+As a dev-ops engineer managing a CI/CD environment or an IT admin responsible for deploying software in an organization, you will want to think about the following choices:
+
+1.	Pick an option to acquire and deploy the .NET Core runtime necessary for the app to run 
+2.	Determine how you will deploy your app
 
 
 
@@ -43,7 +94,7 @@ As a dev-ops engineer managing a CI/CD environment or an IT admin responsible fo
 
 - [.NET Core Acquisition Experiences](acquisition-experiences.md)
 - [.NET Core Deployment Experiences](deployment-experiences.md)
-- [Build and Publish your Application](build-publish.md)
+- [Publish your Application](publish.md)
 - [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
 - [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
 - [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

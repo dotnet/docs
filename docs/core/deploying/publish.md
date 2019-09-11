@@ -1,13 +1,13 @@
 ﻿---
-title: Build and Publish your Application
-description: Build and Publish your Application
+title: Publish your Application
+description: Publish your Application
 author: jamshedd
 ms.author: jamshedd
 ms.date: 09/06/2019
 ms.custom: 
 ---
 
-# Build and Publish your Application
+# Publish your Application
 
 ## Framework Dependent Deployment and Self-Contained Deployment
 

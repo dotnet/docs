@@ -15,9 +15,9 @@ The <xref:System.Reflection> namespace contains many methods for obtaining infor
 
 The following example obtains type and member information by using reflection:
 
-[!code-cpp[Get type members](~/samples/snippets/standard/reflection/memberinfo/gettypemembers.cpp)]
-[!code-csharp[Get type members](~/samples/snippets/standard/reflection/memberinfo/gettypemembers.cs)]
-[!code-vb[Get type members](~/samples/snippets/standard/reflection/memberinfo/gettypemembers.vb)]
+[!code-cpp[Get type members](../../../samples/snippets/standard/reflection/memberinfo/gettypemembers.cpp)]
+[!code-csharp[Get type members](../../../samples/snippets/standard/reflection/memberinfo/gettypemembers.cs)]
+[!code-vb[Get type members](../../../samples/snippets/standard/reflection/memberinfo/gettypemembers.vb)]
 
 ## See also
 

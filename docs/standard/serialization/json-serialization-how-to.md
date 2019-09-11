@@ -639,7 +639,7 @@ And the JSON to be deserialized is this:
 }
 ```
 
-If you deserialize the JSON shown into the type shown, the `DatesAvailable` and `SummaryWords` properties have nowhere to go and are lost. To capture extra data such as these properties, use the [[JsonExtensionData]](xref:System.Text.Json.Serialization.JsonExtensionData) attribute on a `Dictionary<string,object>` or `Dictionary<string,JsonElement>` property:
+If you deserialize the JSON shown into the type shown, the `DatesAvailable` and `SummaryWords` properties have nowhere to go and are lost. To capture extra data such as these properties, use the [[JsonExtensionData]](xref:System.Text.Json.Serialization.JsonExtensionDataAttribute) attribute on a `Dictionary<string,object>` or `Dictionary<string,JsonElement>` property:
 
 ```csharp
 class WeatherForecast

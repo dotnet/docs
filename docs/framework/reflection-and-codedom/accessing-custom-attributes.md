@@ -28,7 +28,7 @@ After attributes have been associated with program elements, reflection can be u
   
  The following C# example is a typical custom attribute design pattern. It illustrates the runtime custom attribute reflection model.  
   
-```  
+```csharp
 System.DLL  
 public class DescriptionAttribute : Attribute  
 {  

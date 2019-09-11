@@ -5,6 +5,17 @@
     href: assembly-placement.md
   - name: Global Assembly Cache
     href: gac.md
+  - name: Working with Assemblies and the Global Assembly Cache
+    href: working-with-assemblies-and-the-gac.md
+    items:
+    - name: "How to: View the Contents of the Global Assembly Cache"
+      href: how-to-view-the-contents-of-the-gac.md
+    - name: "How to: Install an assembly into the global assembly cache"
+      href: install-assembly-into-gac.md
+    - name: "How to: Remove an Assembly from the Global Assembly Cache"
+      href: how-to-remove-an-assembly-from-the-gac.md
+    - name: Using Serviced Components with the Global Assembly Cache
+      href: use-serviced-components-with-the-gac.md
   - name: Application Domains
     href: application-domains.md
   - name: Application Domains and Assemblies How-to Topics
@@ -15,6 +26,8 @@
     href: multifile-assemblies.md
   - name: "How to: Build a multifile assembly"
     href: build-multifile-assembly.md
+  - name: "How to: Share an assembly with other applications"
+    href: how-to-share-an-assembly-with-other-applications.md
   - name: Using Application Domains
     href: use.md
     items:
@@ -34,14 +47,3 @@
       href: how-to-receive-first-chance-exception-notifications.md
   - name: Running Intranet Applications in Full Trust
     href: running-intranet-applications-in-full-trust.md
-  - name: Working with Assemblies and the Global Assembly Cache
-    href: working-with-assemblies-and-the-gac.md
-    items:
-    - name: "How to: View the Contents of the Global Assembly Cache"
-      href: how-to-view-the-contents-of-the-gac.md
-    - name: "How to: Install an assembly into the global assembly cache"
-      href: install-assembly-into-gac.md
-    - name: "How to: Remove an Assembly from the Global Assembly Cache"
-      href: how-to-remove-an-assembly-from-the-gac.md
-    - name: Using Serviced Components with the Global Assembly Cache
-      href: use-serviced-components-with-the-gac.md

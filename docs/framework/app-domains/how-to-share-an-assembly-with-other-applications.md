@@ -14,7 +14,7 @@ To share an assembly:
   
 2. Assign a strong name to your assembly. For more information, see [How to: Sign an assembly with a strong name](../../standard/assembly/sign-strong-name.md).  
   
-3. Assign version information to your assembly. For more information, see [Assembly versioning](versioning.md).  
+3. Assign version information to your assembly. For more information, see [Assembly versioning](../../standard/assembly/versioning.md).  
   
 4. Add your assembly to the global assembly cache. For more information, see [How to: Install an assembly into the global assembly cache](install-assembly-into-gac.md).  
   

@@ -28,6 +28,8 @@ Step 1 | | Step 2 | | Step 3 | | Step 4 |
  [Build your App](#Step-1-Build-your-app) | --> | [Publish your app](#Step-2-publish-your-app) | --> | [Package your app for deployment](#Step-3-Package-your-app-for-deployment) | --> | [Deploy your app](#Step-4-Deploy-your-app) | 
 
 
+<br/>
+
 ### Step 1: Build your app
 
 When it comes to creating and building your app you have two choices - you can work with either an IDE like Visual Studio or the Command Line Interface (CLI).
@@ -49,7 +51,7 @@ Once you have acquired the tools, you're ready to build your app. You would use 
 Either choice will allow you to create various types of .NET Core applications including ASP.NET Core, WPF and Windows Forms applications.
 
 
-
+<br/>
 
 ### Step 2: Publish your app
 
@@ -60,6 +62,7 @@ Within each of these configurations, you also have the choice of publishing the 
 More information about each of these configurations can be found in the document on how to [Publish your app](publish.md).
 
 
+<br/>
 
 ### Step 3: Package your app for deployment
 
@@ -72,6 +75,7 @@ At a high level, you can choose to package your app using one of the deployment 
 This document on [.NET Core Packaging](packaging.md) covers packaging your app as either an MSIX or MSI in further detail.
 
 
+<br/>
 
 ### Step 4: Deploy your app
 

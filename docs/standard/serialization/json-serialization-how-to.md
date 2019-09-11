@@ -115,13 +115,14 @@ Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize
 
 * All public properties are serialized. You can [specify properties to exclude](#exclude-properties).
 * Casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
+* Circular references are detected and exceptions thrown.
 * Fields are excluded.
 * Supported types include:
   * .NET primitives that map to JavaScript primitives.
   * User-defined [Plain Old CLR Objects (POCOs)](https://stackoverflow.com/questions/250001/poco-definition).
   * One-dimensional and jagged arrays (`ArrayName[][]`).
-  * Types that implement `IList` or `IEnumerable`.
-  * `Dictionary<string,TValue>`
+  * Collections such as `IList`, `ICollection`, and `IEnumerable`.
+  * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
 ### Serialize to UTF-8

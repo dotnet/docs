@@ -13,9 +13,15 @@ ms.assetid: 4d1111c0-9447-4231-a997-96a2b74b3453
 
 This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON). The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
-## Using directive
+## Using directives
 
-The code examples in this article require a `using` directive for `System.Text.Json`:
+The code examples that show attributes require the following directive:
+
+```csharp
+using System.Text.Json.Serialization;
+```
+
+The other code examples require the following directive:
 
 ```csharp
 using System.Text.Json;
@@ -186,6 +192,8 @@ Resulting property and field values:
 | DatesAvailable | 8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 | `IList<T>` and `IEnumerable<T>` implementations are supported. |
 | TemperatureRanges | Cold, 20 High -10 Low<br>Hot, 60 High 20 Low| `Dictionary<string,TValue>` is supported. |
 | SummaryWords | Cool<br>Windy<br>Humid | Arrays are supported. |
+
+Overloads of <xref:System.Text.Json.JsonSerializer.Deserialize*> let you deserialize from a `Stream`.  Async versions of the `Stream` overloads are available.
 
 ### Default deserialization behavior
 
@@ -598,6 +606,84 @@ When you call a `Serialize` overload with `GetType()`, the `WindSpeed` property 
   "Wind": 35
 }
 ```
+
+## Allow overflow JSON to round-trip
+
+While deserializing, you might receive data in the JSON that is not represented by properties of the target type. For example suppose your target type is this:
+
+```csharp
+class WeatherForecast
+{
+    public DateTimeOffset Date { get; set; }
+    public int TemperatureC { get; set; }
+    public string Summary { get; set; }
+}
+```
+
+And the JSON to be deserialized is this:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "temperatureC": 25,
+  "Summary": "Hot",
+  "DatesAvailable": [
+    "2019-08-01T00:00:00-07:00",
+    "2019-08-02T00:00:00-07:00"
+  ],
+  "SummaryWords": [
+    "Cool",
+    "Windy",
+    "Humid"
+  ]
+}
+```
+
+If you deserialize the JSON shown into the type shown, the `DatesAvailable` and `SummaryWords` properties have nowhere to go and are lost. To capture extra data such as these properties, use the [[JsonExtensionData]](xref:System.Text.Json.Serialization.JsonExtensionData) attribute on a `Dictionary<string,object>` or `Dictionary<string,JsonElement>` property:
+
+```csharp
+class WeatherForecast
+{
+    public DateTimeOffset Date { get; set; }
+    public int TemperatureC { get; set; }
+    public string Summary { get; set; }
+    [JsonExtensionData]
+    public Dictionary<string, object> ExtensionData { get; set; }
+}
+```
+
+When you deserialize the JSON shown earlier into this sample type, the extra data becomes key-value pairs of the `ExtensionData` property:
+
+|Property |Value  |Notes  |
+|---------|---------|---------|
+| Date    | 8/1/2019 12:00:00 AM -07:00||
+| TemperatureC| 0 | Case-sensitive mismatch (`temperatureC` in the JSON), so the property isn't set. |
+| Summary | Hot ||
+| ExtensionData | temperatureC: 25 |Since the case didn't match, this JSON property is an extra and becomes a key-value pair in the dictionary.|
+|| DatesAvailable:<br>  8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 |Extra property from the JSON becomes a key-value pair, with an array as the value object.|
+| |SummaryWords:<br>Cool<br>Windy<br>Humid |Extra property from the JSON becomes a key-value pair, with an array as the value object.|
+
+When the target object is serialized, the extension data key value pairs become JSON properties just as they were in the incoming JSON:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureC": 0,
+  "Summary": "Hot",
+  "temperatureC": 25,
+  "DatesAvailable": [
+    "2019-08-01T00:00:00-07:00",
+    "2019-08-02T00:00:00-07:00"
+  ],
+  "SummaryWords": [
+    "Cool",
+    "Windy",
+    "Humid"
+  ]
+}
+```
+
+Notice that the `ExtensionData` property name doesn't appear in the JSON. This behavior lets you round-trip the JSON without losing any extra data that otherwise wouldn't be deserialized.
 
 ## Use Utf8JsonWriter directly
 

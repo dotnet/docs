@@ -72,10 +72,32 @@ This document on [.NET Core Packaging](packaging.md) covers packaging your app a
 
 
 
+### Deploying your app
 
-### Deploy your app
 
-Deploy your app the target computer as an MSIX, MSI or something else  
+#### Pre-requisites for deploying your Framework Dependent Deployment (FDD) app
+
+If you chose to create a Framework Dependent Deployment (FDD) for your app during the publish step then you need to ensure the .NET Core Runtime is installed on the target computer. There are several options for acquiring the .NET Core runtime, please refer to the [.NET Core Acquisition Experiences](acquisition-experiences.md) guide to select the option that works best for you.
+
+If you chose to create a Self-Contained Deployment (CDD) during the publish step then there's nothing else to do since the latest .NET Core runtime is already included with your application.
+
+
+##### Deploying your app without any Packaging/Installer
+
+If you chose to forgo packaging your app in the previous step then you can simply xcopy over the publish folder to the target computer. 
+
+_Note: If you created a single file executable during publish then instead of multiple files in the publish older you will only have that single executable to copy over to the target computer.__
+
+
+##### Deploying your app with a Package/Installer
+
+If you have created an installer then you need to copy the installer to the target machine and run the installer. 
+
+Note: If your installer was signed using a test certificate or a self-signed certificate then you would need to do the following before installing the app:
+
+a) [Enable Developer mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development) on the target computer
+
+b) Import the test certificate on the target computer (Tursted Root Certification Authorities) folder
 
 
 

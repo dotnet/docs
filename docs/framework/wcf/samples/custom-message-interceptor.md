@@ -38,7 +38,7 @@ This sample demonstrates the use of the channel extensibility model. In particul
   
  These classes take an inner factory and listener, and delegate all but the `OnCreateChannel` and `OnAcceptChannel` calls to the inner factory and listener.  
   
-```  
+```csharp  
 class InterceptingChannelFactory<TChannel> : ChannelFactoryBase<TChannel>  
 { 
     //... 
@@ -53,7 +53,7 @@ class InterceptingChannelListener<TChannel> : ListenerFactoryBase<TChannel>
 ## Adding a Binding Element  
  The sample defines a custom binding element: `InterceptingBindingElement`. `InterceptingBindingElement` takes a `ChannelMessageInterceptor` as an input, and uses this `ChannelMessageInterceptor` to manipulate messages that pass through it. This is the only class that must be public. The factory, listener, and channels can all be internal implementations of the public run-time interfaces.  
   
-```  
+```csharp
 public class InterceptingBindingElement : BindingElement 
 {
 }
@@ -62,7 +62,7 @@ public class InterceptingBindingElement : BindingElement
 ## Adding Configuration Support  
  To integrate with binding configuration, the library defines a configuration section handler as a binding element extension section. The client and server configuration files must register the binding element extension with the configuration system. Implementers that want to expose their binding element to the configuration system can derive from this class.  
   
-```  
+```csharp
 public abstract class InterceptingElement : BindingElementExtensionElement 
 { 
     //... 
@@ -75,7 +75,7 @@ public abstract class InterceptingElement : BindingElementExtensionElement
 ## Example: Droppable Message Inspector  
  Included in the sample is an example implementation of `ChannelMessageInspector` which drops messages.  
   
-```  
+```csharp  
 class DroppingServerElement : InterceptingElement  
 {  
     protected override ChannelMessageInterceptor CreateMessageInterceptor()  
@@ -118,7 +118,7 @@ class DroppingServerElement : InterceptingElement
   
  You should see the following client output after running the service and then the client.  
   
-```  
+```console  
 Reporting the next 10 wind speed  
 100 kph  
 Server dropped a message.  
@@ -142,7 +142,7 @@ Press ENTER to shut down client
   
  On the service, you should see the following output:  
   
-```  
+```console  
 Press ENTER to exit.  
 Dangerous wind detected! Reported speed (90) is greater than 64 kph.  
 Dangerous wind detected! Reported speed (70) is greater than 64 kph.  
@@ -153,7 +153,7 @@ Dangerous wind detected! Reported speed (70) is greater than 64 kph.
   
 1. Install ASP.NET 4.0 using the following command.  
   
-    ```  
+    ```console  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   

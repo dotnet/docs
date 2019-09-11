@@ -22,7 +22,7 @@ You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-
   
 To display the contents of an assembly using *Ildasm.exe*, type **ildasm** \<*assembly name*> at a command prompt. For example, the following command disassembles the *Hello.exe* assembly.  
 
-```  
+```cmd
 ildasm Hello.exe  
 ```  
 

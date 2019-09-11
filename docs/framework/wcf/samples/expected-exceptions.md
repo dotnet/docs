@@ -48,7 +48,7 @@ catch (CommunicationException exception)
   
  The client process runs two scenarios, each of which attempts to call `Add` followed by `Divide`. The first scenario simulates a network issue by aborting the client before making the call to `Divide`. The second scenario causes a timeout condition by setting the timeout too short for the method to complete. The expected output from the client process is:  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Simulated network problem occurs...  
 Got System.ServiceModel.CommunicationObjectAbortedException  

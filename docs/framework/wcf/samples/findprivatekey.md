@@ -24,7 +24,7 @@ When running a Windows Communication Foundation (WCF) service under a user accou
 
 When accessing a certificate for which the process doesn't have read privilege, you see an exception message similar to the following example:
 
-```
+```console
 System.ArgumentException was unhandled
 Message="The certificate 'CN=localhost' must have a private key that is capable of key exchange.  The process must have access rights for the private key."
 Source="System.ServiceModel"
@@ -32,7 +32,7 @@ Source="System.ServiceModel"
 
 When this occurs, use the FindPrivateKey tool to find the private key file, and then set the access right for the process that the service is running under. For example, this can be done with the Cacls.exe tool as shown in the following example:
 
-```
+```console
 cacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys\8aeda5eb81555f14f8f9960745b5a40d_38f7de48-5ee9-452d-8a5a-92789d7110b1" /E /G "NETWORK SERVICE":R
 ```
 
@@ -60,38 +60,38 @@ To download the project, visit [Windows Communication Foundation (WCF) and Windo
 
 ## Usage
 
-```
+```console
 FindPrivateKey <storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbprint>} } [-f | -d | -a]]
 ```
 
 Where:
 
-```
-       <subjectName> The subject name of the certificate
-       <thumbprint>  The thumbprint of the certificate (You can use the Certmgr.exe tool to find this)
-       -f            output file name only
-       -d            output directory only
-       -a            output absolute file name
-```
+| Command         | Description                                                                       |
+|-----------------|-----------------------------------------------------------------------------------|
+| `<subjectName>` | The subject name of the certificate                                               |
+| `<thumbprint>`  | The thumbprint of the certificate (You can use the Certmgr.exe tool to find this) |
+| `-f`            | output file name only                                                             |
+| `-d`            | output directory only                                                             |
+| `-a`            | output absolute file name                                                         |
 
-If no parameters are specified at the command prompt, then this help text is displayed.
+If no parameters are specified at the command prompt, then help text with this information is displayed.
 
 ## Examples
 
 This example finds the filename of the certificate with a subject name of "CN=localhost", in the Personal store of the Current User.
 
-```
+```console
 FindPrivateKey My CurrentUser -n "CN=localhost"
 ```
 
 This example finds the filename of the certificate with a subject name of "CN=localhost", in the Personal store of the Current User and output the full directory path.
 
-```
+```console
 FindPrivateKey My CurrentUser -n "CN=localhost" -a
 ```
 
 This example finds the filename of the certificate with a thumbprint of "03 33 98 63 d0 47 e7 48 71 33 62 64 76 5c 4c 9d 42 1d 6b 52", in the Personal store of the Local Computer.
 
-```
+```console
 FindPrivateKey My LocalMachine -t "03 33 98 63 d0 47 e7 48 71 33 62 64 76 5c 4c 9d 42 1d 6b 52"
 ```

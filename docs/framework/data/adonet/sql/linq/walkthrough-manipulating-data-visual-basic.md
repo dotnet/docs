@@ -19,7 +19,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 - The Northwind sample database.  
   
-     If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md). After you have downloaded the database, copy the northwnd.mdf file to the c:\linqtest2 folder.  
+     If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](downloading-sample-databases.md). After you have downloaded the database, copy the northwnd.mdf file to the c:\linqtest2 folder.  
   
 - A Visual Basic code file generated from the Northwind database.  
   
@@ -27,7 +27,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
      **sqlmetal /code:"c:\linqtest2\northwind.vb" /language:vb "C:\linqtest2\northwnd.mdf" /pluralize**  
   
-     For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md).  
+     For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ## Overview  
  This walkthrough consists of six main tasks:  
@@ -182,4 +182,4 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 ## See also
 
-- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+- [Learning by Walkthroughs](learning-by-walkthroughs.md)

@@ -20,7 +20,7 @@ The Isolated Storage tool lists or removes all existing stores for the current u
   
 ## Syntax  
   
-```  
+```console  
 storeadm [/list][/machine][/remove][/roaming][/quiet]  
 ```  
   

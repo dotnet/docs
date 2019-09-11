@@ -60,4 +60,4 @@ If you're using [Visual Studio](https://www.visualstudio.com/downloads/?utm_medi
 
 ## See also
 
-- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)
+- [Getting Started](getting-started.md)

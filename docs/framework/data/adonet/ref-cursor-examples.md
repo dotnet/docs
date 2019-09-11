@@ -8,9 +8,9 @@ The REF CURSOR examples are comprised of the following three Microsoft Visual Ba
   
 |Sample|Description|  
 |------------|-----------------|  
-|[REF CURSOR Parameters in an OracleDataReader](../../../../docs/framework/data/adonet/ref-cursor-parameters-in-an-oracledatareader.md)|This example executes a PL/SQL stored procedure that returns a REF CURSOR parameter, and reads the value as an <xref:System.Data.OracleClient.OracleDataReader>.|  
-|[Retrieving Data from Multiple REF CURSORs Using an OracleDataReader](../../../../docs/framework/data/adonet/retrieving-data-from-multiple-ref-cursors.md)|This example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and reads the values using an **OracleDataReader**.|  
-|[Filling a DataSet Using One or More REF CURSORs](../../../../docs/framework/data/adonet/filling-a-dataset-using-one-or-more-ref-cursors.md)|This example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and fills a <xref:System.Data.DataSet> with the rows that are returned.|  
+|[REF CURSOR Parameters in an OracleDataReader](ref-cursor-parameters-in-an-oracledatareader.md)|This example executes a PL/SQL stored procedure that returns a REF CURSOR parameter, and reads the value as an <xref:System.Data.OracleClient.OracleDataReader>.|  
+|[Retrieving Data from Multiple REF CURSORs Using an OracleDataReader](retrieving-data-from-multiple-ref-cursors.md)|This example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and reads the values using an **OracleDataReader**.|  
+|[Filling a DataSet Using One or More REF CURSORs](filling-a-dataset-using-one-or-more-ref-cursors.md)|This example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and fills a <xref:System.Data.DataSet> with the rows that are returned.|  
   
  To use these examples, you may need to create the Oracle tables, and you must create a PL/SQL package and package body.  
   
@@ -75,5 +75,5 @@ END CURSPKG;
   
 ## See also
 
-- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Oracle REF CURSORs](oracle-ref-cursors.md)
+- [ADO.NET Overview](ado-net-overview.md)

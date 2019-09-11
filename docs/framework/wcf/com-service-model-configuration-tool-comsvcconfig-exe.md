@@ -11,7 +11,7 @@ The COM+ Service Model Configuration command-line tool (ComSvcConfig.exe) enable
   
 ## Syntax  
   
-```  
+```console  
 ComSvcConfig.exe /install | /uninstall | /list [/application:<ApplicationID | ApplicationName>] [/contract:<ClassID | ProgID | *,InterfaceID | InterfaceName | *>] [/hosting:<complus | was>] [/webSite:<WebsiteName>] [/webDirectory:<WebDirectoryName>] [/mex] [/id] [/nologo] [/verbose] [/help] [/partial]  
 ```  
   
@@ -57,7 +57,7 @@ ComSvcConfig.exe /install | /uninstall | /list [/application:<ApplicationID | Ap
   
 ### Code  
   
-```  
+```console  
 ComSvcConfig.exe /install /application:OnlineStore /contract:ItemOrders.Financial,IFinances /hosting:complus /verbose  
 ```  
   
@@ -66,7 +66,7 @@ ComSvcConfig.exe /install /application:OnlineStore /contract:ItemOrders.Financia
   
 ### Code  
   
-```  
+```console  
 ComSvcConfig.exe /install /application:OnlineWarehouse /contract:ItemInventory.Warehouse,IStockLevels /hosting:was /webDirectory:root/OnlineWarehouse  
 ```  
   
@@ -75,7 +75,7 @@ ComSvcConfig.exe /install /application:OnlineWarehouse /contract:ItemInventory.W
   
 ### Code  
   
-```  
+```console  
 ComSvcConfig.exe /uninstall /application:OnlineStore /interface:ItemOrders.Financial,IFinances /hosting:complus  
 ```  
   
@@ -84,7 +84,7 @@ ComSvcConfig.exe /uninstall /application:OnlineStore /interface:ItemOrders.Finan
   
 ### Code  
   
-```  
+```console  
 ComSvcConfig.exe /list /application:OnlineStore /hosting:complus  
 ```  
   

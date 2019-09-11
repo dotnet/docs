@@ -86,4 +86,4 @@ dataSet.InferXmlSchema("input_od.xml", new string[] "urn:schemas-microsoft-com:o
 - [Inferring DataSet Relational Structure from XML](inferring-dataset-relational-structure-from-xml.md)
 - [Loading a DataSet from XML](loading-a-dataset-from-xml.md)
 - [DataSets, DataTables, and DataViews](index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

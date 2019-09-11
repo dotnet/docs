@@ -58,7 +58,7 @@ When you use Windows Identity Foundation (WIF) to secure the resources of a rely
 ## The WCF Caching Service  
  The following interface defines the contract between the WCF caching service and the WCF client used by the relying party application to communicate with it. It essentially exposes the methods of the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> class as service operations.  
   
-```  
+```csharp
 [ServiceContract()]  
 public interface ISessionSecurityTokenCacheService  
 {  
@@ -84,7 +84,7 @@ public interface ISessionSecurityTokenCacheService
   
  The following code shows the implementation of the WCF caching service. In this example, the default, in-memory session token cache implemented by WIF is used. Alternatively, you could implement a durable cache backed by a database. `ISessionSecurityTokenCacheService` defines the interface shown above. In this example, not all of the methods required to implement the interface are shown for brevity.  
   
-```  
+```csharp
 using System;  
 using System.Collections.Generic;  
 using System.IdentityModel.Configuration;  
@@ -144,7 +144,7 @@ namespace WcfSessionSecurityTokenCacheService
   
  The class overrides the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache.LoadCustomConfiguration%2A> method to get the service endpoint from the custom `<cacheServiceAddress>` child element of the `<sessionSecurityTokenCache>` element. It uses this endpoint to initialize an `ISessionSecurityTokenCacheService` channel over which it can communicate with the service.  In this example, not all of the methods required to implement the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> class are shown for brevity.  
   
-```  
+```csharp
 using System;  
 using System.Configuration;  
 using System.IdentityModel.Configuration;  

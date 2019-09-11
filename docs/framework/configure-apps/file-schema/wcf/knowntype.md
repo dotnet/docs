@@ -6,11 +6,12 @@ ms.assetid: ee2b7be3-7148-4a3a-b861-48e7330615e5
 # \<knownType>
 Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSerializer> during deserialization. The element specifies a "known type" that is returned by a field or property of a "declared type." For more information, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md).  
   
- \<system.runtime.serialization>  
-\<dataContractSerializer>  
-\<declaredTypes> Element  
-\<add> of \<declaredTypes>  
-\<knownType> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.serialization>**](system-runtime-serialization.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<dataContractSerializer>**](datacontractserializer.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<declaredTypes>**](declaredtypes.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add-of-declaredtypes-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<knownType>**  
   
 ## Syntax  
   

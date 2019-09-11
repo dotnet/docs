@@ -12,6 +12,10 @@ helpviewer_keywords:
   - "Assembly Linker"
   - "code modules"
   - "multifile assemblies"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
 author: "rpetrusha"
 ms.author: "ronpet"

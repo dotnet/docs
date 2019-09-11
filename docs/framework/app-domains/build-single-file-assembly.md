@@ -9,6 +9,9 @@ helpviewer_keywords:
   - "output file name for assemblies"
   - "code modules"
   - "single-file assemblies"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
 author: "rpetrusha"
 ms.author: "ronpet"

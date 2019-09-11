@@ -25,10 +25,10 @@ As a developer, your workflow will typically look like this:
 
 Step 1 | | Step 2 | | Step 3 | | Step 4 |
 |---|---|---|---|---|---|---|
- [Build your App](#Build-your-app) | --> | [Publish your app](#publish-your-app) | --> | [Package your app for deployment](#Package-your-app-for-deployment) | --> | [Deploy your app](#Deploy-your-app) | 
+ [Build your App](#Step-1-Build-your-app) | --> | [Publish your app](#Step-2-publish-your-app) | --> | [Package your app for deployment](#Step-3-Package-your-app-for-deployment) | --> | [Deploy your app](#Step-4-Deploy-your-app) | 
 
 
-### Build your app
+### Step 1: Build your app
 
 When it comes to creating and building your app you have two choices - you can work with either an IDE like Visual Studio or the Command Line Interface (CLI).
 
@@ -51,7 +51,7 @@ Either choice will allow you to create various types of .NET Core applications i
 
 
 
-### Publish your app
+### Step 2: Publish your app
 
 You can publish your app in one of two configurations - as a [Framework Dependent Deployment (FDD)]() or as a [Self-Contained Deployment (SCD)]().
 
@@ -61,7 +61,7 @@ More information about each of these configurations can be found in the document
 
 
 
-### Package your app for deployment
+### Step 3: Package your app for deployment
 
 Packaging your app while usually preferred, is optional. You could always choose to xcopy the publish folder of your app to a folder on the target computer where you want to run this. 
 
@@ -73,7 +73,7 @@ This document on [.NET Core Packaging](packaging.md) covers packaging your app a
 
 
 
-### Deploy your app
+### Step 4: Deploy your app
 
 
 #### Pre-requisites for deploying your Framework Dependent Deployment (FDD) app

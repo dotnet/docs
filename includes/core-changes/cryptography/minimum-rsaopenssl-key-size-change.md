@@ -23,7 +23,7 @@ If you call any of the affected APIs, ensure that the size of any generated keys
 
 #### Category
 
-CoreFx
+Cryptography
 
 #### Affected APIs
 

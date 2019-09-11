@@ -53,7 +53,7 @@ The downsides of the Blazor WebAssembly hosting model are:
 * Browser capabilities restrict the app.
 * Capable client hardware and software (for example, WebAssembly support) is required.
 * Download size is larger, and apps take longer to load.
-* .NET runtime and tooling support is less mature. For example, there are limitations in [.NET Standard](/dotnet/standard/net-standard) support and debugging.
+* .NET runtime and tooling support is less mature. For example, there are limitations in [.NET Standard](../../standard/net-standard.md) support and debugging.
 
 Conversely, the Blazor Server hosting model offers the following benefits:
 

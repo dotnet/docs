@@ -1,7 +1,7 @@
 ---
 title: "= operator - C# reference"
 ms.custom: seodec18
-ms.date: 06/21/2019
+ms.date: 09/10/2019
 f1_keywords: 
   - "=_CSharpKeyword"
 helpviewer_keywords: 
@@ -55,6 +55,10 @@ x = x op y
 except that `x` is only evaluated once.
 
 Compound assignment is supported by [arithmetic](arithmetic-operators.md#compound-assignment), [Boolean logical](boolean-logical-operators.md#compound-assignment), and [bitwise logical and shift](bitwise-and-shift-operators.md#compound-assignment) operators.
+
+## Null-coalescing assignment
+
+Beginning with C# 8.0, you can use the null-coalescing assignment operator `??=` to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. For more information, see the [?? and ??= operators](null-coalescing-operator.md) article.
 
 ## Operator overloadability
 

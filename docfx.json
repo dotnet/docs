@@ -166,6 +166,7 @@
       "ms.topic": {
         "_csharplang/**/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
+        "docs/csharp/language-reference/**/**.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
         "docs/fsharp/language-reference/**/**.md": "language-reference"
@@ -222,7 +223,7 @@
         "_csharplang/proposals/csharp-7.1/*.md": "02/16/2018",
         "_csharplang/proposals/csharp-7.2/*.md": "01/19/2019",
         "_csharplang/proposals/csharp-7.3/*.md": "11/25/2018",
-        "_csharplang/proposals/csharp-8.0/*.md": "02/25/2019",
+        "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
         "_vblang/spec/*.md": "07/21/2017"
       },
       "ms.technology": {

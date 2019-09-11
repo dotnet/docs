@@ -17,7 +17,7 @@ As .NET Core becomes available on more and more platforms, it's useful to learn 
 When installed, .NET Core consists of several components that are laid out as follows in the filesystem:
 
 ```
-.
+{dotnet_root}
 ├── dotnet                       (1)
 ├── LICENSE.txt                  (8)
 ├── ThirdPartyNotices.txt        (8)
@@ -88,7 +88,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (15) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
 
-- (16) **/etc/dotnet/install_location** is a file that contains the full path to the folder that contains the `dotnet` host binary. The path may be terminated with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
+- (16) **/etc/dotnet/install_location** is a file that contains the full path for `{dotnet_root}`. The path may be terminated with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
 
 - (17) **templates** contains the templates used by the SDK. For example, `dotnet new` finds project templates here.
 

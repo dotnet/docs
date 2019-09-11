@@ -251,7 +251,7 @@ namespace Server
 </configuration>  
 ```  
   
-```text
+```
 <!-- StockQuoteService.svc -->  
 <%@ ServiceHost Language="C#" Debug="true" Service="Server.StockQuoteService" CodeBehind="StockQuoteService.svc.cs" %>  
 ```  

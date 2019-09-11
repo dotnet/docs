@@ -28,7 +28,9 @@ For the source copy of this example, see [WS Reliable Session](../../../../docs/
 
 1. Create a *Service.svc* file that contains the line:
 
-   `<%@ServiceHost language=c# Service="CalculatorService" %>`
+   ```
+   <%@ServiceHost language=c# Service="CalculatorService" %>
+   ```
 
 1. Place the *Service.svc* file in your Internet Information Services (IIS) virtual directory.
 

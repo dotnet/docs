@@ -60,7 +60,9 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
 4. Create a Service.svc file that contains the following code.  
   
-    `<%@ServiceHost language=c# Service="CalculatorService" %>`  
+   ```
+   <%@ServiceHost language=c# Service="CalculatorService" %>
+   ```
   
 5. Place the Service.svc file in your IIS virtual directory.  
   

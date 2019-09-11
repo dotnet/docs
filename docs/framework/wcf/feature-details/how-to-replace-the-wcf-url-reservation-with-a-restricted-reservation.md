@@ -10,13 +10,11 @@ A URL reservation allows you to restrict who can receive messages from a URL or 
   
  On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)] you can view all of the HTTP URL reservations from an elevated command prompt by typing `netsh http show urlacl`.  The following example shows what a WCF URL reservation should resemble.  
   
-```console
 Reserved URL : http://+:80/Temporary_Listen_Addresses/  
         User: \Everyone  
             Listen: Yes  
             Delegate: No  
             SDDL: D:(A;;GX;;;WD)  
-```  
   
  The reservation consists of a URL template used when a WCF application is using an HTTP dual binding for duplex communication. URLs of this form are used for a WCF service to send messages back to the WCF client when communicating over a HTTP dual binding. Everyone is given permission to listen on the URL but not to delegate listening to another process. Finally, the ACL is described in Security Descriptor Definition Language (SSDL). For more information about SSDL, see [SSDL](https://go.microsoft.com/fwlink/?LinkId=136789)  
   

@@ -37,8 +37,6 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
     ```csharp  
     using System.ServiceModel;  
   
-    ...  
-  
     [ServiceContract]   
     public interface IMathService   
     {  
@@ -51,13 +49,13 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
   
      The application is exposed using a `wsHttpBinding` binding. For the given type and application configuration, the following example moniker strings are used.  
   
-    ```vb  
+    ``` 
     service4:address=http://localhost/MathService, binding=wsHttpBinding, bindingConfiguration=Binding1  
     ```  
   
      `or`  
   
-    ```vb  
+    ``` 
     service4:address=http://localhost/MathService, binding=wsHttpBinding, bindingConfiguration=Binding1, contract={36ADAD5A-A944-4d5c-9B7C-967E4F00A090}  
     ```  
   

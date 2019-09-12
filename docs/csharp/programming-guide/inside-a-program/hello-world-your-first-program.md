@@ -18,13 +18,15 @@ In this article, you'll use Visual Studio to create the traditional "Hello World
 
 ## Create a new application
 
+# [Windows](#tab/windows)
+
 Start Visual Studio. You'll see the following image on Windows:
 
 ![Visual Studio welcome screen on Windows](./media/hello-world-your-first-program/visual-studio-windows-start-screen.png)
 
 Select **Create a new project** in the lower right corner of the image. Visual Studio displays the **New Project** dialog:
 
-![Visual Studio welcome screen on Windows](./media/hello-world-your-first-program/visual-studio-windows-new-project.png)
+![Visual Studio new project screen on Windows](./media/hello-world-your-first-program/visual-studio-windows-new-project.png)
 
 > [!NOTE]
 > If this is the first time you've started Visual Studio, the **Recent project templates** list is empty.
@@ -41,6 +43,33 @@ Press any key to close this window . . .
 ```
 
 Press a key to close the window. 
+
+# [macOS](#tab/macos)
+
+Start Visual Studio for Mac. You'll see the following image on Mac:
+
+![Visual Studio welcome screen on Mac](./media/hello-world-your-first-program/visual-studio-mac-start-screen.png)
+
+> [!NOTE]
+> If this is the first time you've started Visual Studio for Mac, the **Recent projects** list is empty.
+
+Select **New** in the upper right corner of the image. Visual Studio for Mac displays the **New Project** dialog:
+
+![Visual Studio new project screen on Mac](./media/hello-world-your-first-program/visual-studio-mac-new-project.png)
+
+On the new project dialog, choose ".NET Core", and "Console App" and then press **Next**. You'll need to select the target framework. The default is fine, so press next. Give your project a name, such as "HelloWorld", then press **Create**. You can use the default project location. Don't add this project to source control.
+
+Visual Studio for Mac opens your project. It's already a basic "Hello World!" example. Press `Ctrl` + `Fn` + `F5` to run your project. Visual Studio for Mac builds your project, converting the source code into an executable. Then, it launches a command window that runs your new application. You should see the following text in the window:
+
+```console
+Hello World!
+
+Press any key to close this window . . .
+```
+
+Press a key to end the session. 
+
+---
 
 ## Elements of a C# program
 

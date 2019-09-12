@@ -33,8 +33,6 @@ The project file for a Blazor WebAssembly app looks slightly more involved (exac
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <OutputType>Exe</OutputType>
-    <LangVersion>7.3</LangVersion>
     <RazorLangVersion>3.0</RazorLangVersion>
   </PropertyGroup>
 

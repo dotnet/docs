@@ -49,7 +49,7 @@ When writing your code, you might at times create lengthy statements that necess
 
 ## To place multiple statements on the same line
 
-- Separate the statements with a colon (`:`), as in the following example.
+Separate the statements with a colon (`:`), as in the following example:
 
   [!code-vb[VbVbcnConventions#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#10)]
 

@@ -85,17 +85,9 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 The machine learning task used to train the price prediction model in this tutorial is regression. During the model training process, Model Builder trains separate models using different regression algorithms and settings to find the best performing model for your dataset.
 
-The time required for the model to train is proportionate to the amount of data. Use this chart as guidance to select an adequate value for the `Time to train (seconds)` field:
+The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for Time to train (seconds) based on the size of your data source.
 
-*Dataset Size  | Dataset Type       | Avg. Time to train*
-------------- | ------------------ | --------------
-0 - 10 Mb     | Numeric and Text   | 10 sec
-10 - 100 Mb   | Numeric and Text   | 10 min
-100 - 500 Mb  | Numeric and Text   | 30 min
-500 - 1 Gb    | Numeric and Text   | 60 min
-1 Gb+         | Numeric and Text   | 3 hour+
-
-1. Because the training data file is more than 10MB, use 600 seconds (10 minutes) as the value for *Time to train (seconds)*.
+1. Because of the size of the data, leave the default 600 seconds (10 minutes) as the value for *Time to train (seconds)*.
 2. Select *Start Training*.
 
 Throughout the training process, progress data is displayed in the `Progress` section of the train step.

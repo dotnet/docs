@@ -44,13 +44,13 @@ using (JsonDocument doc = JsonDocument.Parse(jsonString))
 
 If your code is affected by these changes, you can do the following:
 
-- There is no replacement API for the `WriteProperty` overloads in <xref:System.Text.Json.JsonElement>. Instead, you can call one of the <xref:System.Text.Json.Utf8JsonWriter.WriteProperty?displayProperty=nameWithType> overloads along with the <xref:System.Text.Json.JsonElement.WriteTo%2A> method to achive the same result. For example:
+- There is no replacement API for the `WriteProperty` overloads in <xref:System.Text.Json.JsonElement>. Instead, you can call one of the <xref:System.Text.Json.Utf8JsonWriter.WritePropertyName%2A?displayProperty=nameWithType> overloads along with the <xref:System.Text.Json.JsonElement.WriteTo%2A> method to achive the same result. For example:
 
    ```csharp
    using (JsonDocument doc = JsonDocument.Parse(jsonString))
    {
        JsonElement root = doc.RootElement;
-       writer.WriteProperty(propertyNameString);
+       writer.WritePropertyName(propertyNameString);
        root.WriteTo(writer);
    }
    ```

@@ -101,7 +101,15 @@ You can find more information about deploying your app in a container in the doc
 ## Linux Package Managers
 
 .NET Core packages are available in native package managers for various Linux distros encompassing .deb as well as .rpm based systems. 
-More information about getting .NET Core using a package manager can be found in the document titled [Preparing your Linux system for .NET Core – Using a package manager](https://github.com/dotnet/core/blob/4b39c16ccae64a69799f642f49f3fbf742623a9c/Documentation/linux-setup.md#installation-using-a-package-manager).
+
+Information about getting .NET Core using a package manager can be found in the document titled [Preparing your Linux system for .NET Core – Using a package manager](https://github.com/dotnet/core/blob/4b39c16ccae64a69799f642f49f3fbf742623a9c/Documentation/linux-setup.md#installation-using-a-package-manager).
+
+More information about working with .NET Core packages on various Linux distros is available. For example, these documents provide information on getting .NET Core SDK and Runtime on Ubuntu x64 systems:
+
+[Install .NET Core Runtime on Linux Ubuntu 19.04 x64](https://dotnet.microsoft.com/download/linux-package-manager/ubuntu19-04/runtime-current)
+
+[Install .NET Core SDK on Linux Ubuntu 19.04 x64](https://dotnet.microsoft.com/download/linux-package-manager/ubuntu19-04/sdk-current)
+
 
 ## Azure DevOps pipeline Installer Task
 
@@ -117,6 +125,7 @@ The [Snap Store](https://snapcraft.io/store) provides a place to upload snaps, a
 .NET Core packages are available in the Snap Store.  More details about getting .NET Core as a Snap install can be found in the document titled [Preparing your Linux system for .NET Core – Installation using Snap](https://github.com/dotnet/core/blob/4b39c16ccae64a69799f642f49f3fbf742623a9c/Documentation/linux-setup.md#installation-using-snap).
 
 Visit [Snapcraft.io](https://snapcraft.io/) for guidance on preparing your system to use Snaps. 
+
 
 ## .NET Core on GitHub
 

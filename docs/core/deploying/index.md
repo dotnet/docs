@@ -110,12 +110,27 @@ b) Import the test certificate on the target computer (Tursted Root Certificatio
 
 
 
-## For DevOps Engineers/IT Admins: Deploying .NET Apps and the .NET Core runtime
+## For DevOps Engineers and Enterprise IT Administrators
 
-As a dev-ops engineer managing a CI/CD environment or an IT admin responsible for deploying software in an organization, you will want to think about the following choices:
+When it comes to deploying the .NET Core tools or the .NET Core runtime you have several options to choose from.
 
-1.	Pick an option to acquire and deploy the .NET Core runtime necessary for the app to run 
-2.	Determine how you will deploy your app
+### .NET Core runtime acquisition
+
+
+* [https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)
+* [Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)
+* [Docker](#Docker)
+* [Linux Package Managers](#Linux-Package-Managers)
+* [Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)
+* [Snap store](#Snap-store)
+
+
+### .NET Core tools acquisition
+
+Visual Studio, Visual Studio for Mac and Visual Studio Code
+
+
+These options are covered in more detail in the [.NET Core Acquisition Experiences guide](acquisition-experiences.md).
 
 
 
@@ -124,8 +139,9 @@ As a dev-ops engineer managing a CI/CD environment or an IT admin responsible fo
 - [.NET Core Acquisition Experiences](acquisition-experiences.md)
 - [.NET Core Deployment Experiences](deployment-experiences.md)
 - [Publish your Application](publish.md)
+- [Trimming](trimming.md)
+- [Packaging your Application](packaging.md)
 - [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
 - [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
 - [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
-- [Trimming](trimming.md)
 - [Packages, Metapackages and Frameworks](../packages.md)

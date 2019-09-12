@@ -286,16 +286,17 @@ Note that running Docker containers may be bound to ports you might otherwise tr
 If you want to add Docker support to your application using Visual Studio, make sure Docker Desktop is running when you do so. The wizard won't run correctly if Docker Desktop isn't running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add support for Windows Containers, you need to run the wizard while you have Docker Desktop running with Windows Containers configured. If you want to add support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
 
 ### References – Common web architectures
-> - **The Clean Architecture**  
->   <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
-> - **The Onion Architecture**  
->   <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
-> - **The Repository Pattern**  
->   <https://deviq.com/repository-pattern/>
-> - **Clean Architecture Solution Sample**  
->   <https://github.com/ardalis/cleanarchitecture>
-> - **Architecting Microservices e-book**  
->   <https://aka.ms/MicroservicesEbook>
+
+- **The Clean Architecture**  
+  <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
+- **The Onion Architecture**  
+  <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
+- **The Repository Pattern**  
+  <https://deviq.com/repository-pattern/>
+- **Clean Architecture Solution Sample**  
+  <https://github.com/ardalis/cleanarchitecture>
+- **Architecting Microservices e-book**  
+  <https://aka.ms/MicroservicesEbook>
 
 >[!div class="step-by-step"]
 >[Previous](architectural-principles.md)

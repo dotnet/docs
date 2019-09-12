@@ -38,6 +38,7 @@ Syntax trees comprise three types of items – *nodes*, *tokens*, and *trivia*. 
 Each item in the tree also displays its own **span**. The **span** is the indices (the starting and ending position) of that node in the text file.  In the preceding C# example, the selected “UsingKeyword [0..5)” token has a **Span** that is five characters wide, [0..5). The "[..)" notation means that the starting index is part of the span, but the ending index is not.
 
 There are two ways to navigate the tree:
+
 * Expand or click on items in the tree. The visualizer automatically selects the text corresponding to this item’s span in the code editor.
 * Click or select text in the code editor. In the preceding VB example, if you select the line containing "Module Module1" in the code editor, the visualizer automatically navigates to the corresponding ModuleStatement node in the tree. 
 

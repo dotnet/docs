@@ -21,13 +21,14 @@ Example:
 ```csharp
 using Microsoft.ML;
 using Microsoft.ML.AutoML;
-    ...
+    // ...
     MLContext mlContext = new MLContext();
     IDataView trainDataView = mlContext.Data.LoadFromTextFile<SentimentIssue>("my-data-file.csv", hasHeader: true);
 ```
 
 ## Select the machine learning task type
 Before creating an experiment, determine the kind of machine learning problem you want to solve. Automated machine learning supports the following ML tasks:
+
 * Binary Classification
 * Multiclass Classification
 * Regression
@@ -99,6 +100,7 @@ Some examples include:
     ```
 
 The list of supported trainers per ML task can be found at the corresponding link below:
+
 * [Supported Binary Classification Algorithms](xref:Microsoft.ML.AutoML.BinaryClassificationTrainer)
 * [Supported Multiclass Classification Algorithms](xref:Microsoft.ML.AutoML.MulticlassClassificationTrainer)
 * [Supported Regression Algorithms](xref:Microsoft.ML.AutoML.RegressionTrainer)
@@ -205,6 +207,7 @@ Console.WriteLine($"Root Mean Squared Error: {metrics.RootMeanSquaredError:0.##}
 ```
 
 The following are all the available metrics per ML task:
+
 * [Binary classification metrics](xref:Microsoft.ML.AutoML.BinaryClassificationMetric)
 * [Multiclass classification metrics](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric)
 * [Regression metrics](xref:Microsoft.ML.AutoML.RegressionMetric)

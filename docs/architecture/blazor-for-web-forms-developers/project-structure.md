@@ -87,7 +87,7 @@ public class Program
 
 Blazor WebAssembly apps also define an entry point in *Program.cs*. The code looks slightly different. The code is similar in that it's setting up the app host to provide the same host-level services to the app. The WebAssembly app host doesn't, however, set up an HTTP server because it executes directly in the browser.
 
-Blazor apps have a `Startup` class instead of a *Global.asax* file to define the startup logic for the app. The `Startup` class is used to configure the app and any app-specific services. In the Blazor Server app, the `Startup` class is used to set up the endpoint for the real-time connection used by Blazor between the client browsers and the server. In the Blazor WebAssembly app, the `Startup` class defines the root components for the app and where they should be rendered. We'll take a deeper look at the `Startup` class in the [App startup](./app-startup) section.
+Blazor apps have a `Startup` class instead of a *Global.asax* file to define the startup logic for the app. The `Startup` class is used to configure the app and any app-specific services. In the Blazor Server app, the `Startup` class is used to set up the endpoint for the real-time connection used by Blazor between the client browsers and the server. In the Blazor WebAssembly app, the `Startup` class defines the root components for the app and where they should be rendered. We'll take a deeper look at the `Startup` class in the [App startup](./app-startup.md) section.
 
 ## Static files
 
@@ -110,13 +110,13 @@ Configuration in ASP.NET Web Forms apps is typically handled using one or more *
 }
 ```
 
-We'll learn more about configuration in ASP.NET Core projects in the [Configuration](./configuration) section.
+We'll learn more about configuration in ASP.NET Core projects in the [Configuration](./configuration.md) section.
 
 ## Razor components
 
 Most files in Blazor projects are *.razor* files. Razor is a templating language based on HTML and C# that is used to dynamically generate web UI. The *.razor* files define components that make up the UI of the app. For the most part, the components are identical for both the Blazor Server and Blazor WebAssembly apps. Components in Blazor are analogous to user controls in ASP.NET Web Forms.
 
-Each Razor component file is compiled into a .NET class when the project is built. The generated class captures the component's state, rendering logic, lifecycle methods, event handlers, and other logic. We'll look at authoring components in the [Building reusable UI components with Blazor](./components) section.
+Each Razor component file is compiled into a .NET class when the project is built. The generated class captures the component's state, rendering logic, lifecycle methods, event handlers, and other logic. We'll look at authoring components in the [Building reusable UI components with Blazor](./components.md) section.
 
 The *_Imports.razor* files aren't Razor component files. Instead, they define a set of Razor directives to import into other *.razor* files within the same folder and in its subfolders. For example, a *_Imports.razor* file is a conventional way to add `using` statements for commonly used namespaces:
 
@@ -148,7 +148,7 @@ We'll look in greater detail at routing in Blazor in the [Pages and routing](./p
 
 ## Layout
 
-In ASP.NET Web Forms apps, common page layout is handled using master pages (*Site.Master*). In Blazor apps, page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page layout](./page-layout) section.
+In ASP.NET Web Forms apps, common page layout is handled using master pages (*Site.Master*). In Blazor apps, page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page layout](./page-layout.md) section.
 
 ## Bootstrap Blazor
 
@@ -239,4 +239,4 @@ To run the Blazor WebAssembly app, either run the client project directly using 
 
 >[!div class="step-by-step"]
 >[Previous](hosting-models.md)
->[Next](startup.md)
+>[Next](app-startup.md)

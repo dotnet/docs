@@ -13,7 +13,7 @@ ms.assetid: 4d1111c0-9447-4231-a997-96a2b74b3453
 
 This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON). The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
-## Using directives
+## Namespaces
 
 The code examples that show attributes require the following directive:
 
@@ -21,7 +21,7 @@ The code examples that show attributes require the following directive:
 using System.Text.Json.Serialization;
 ```
 
-The other code examples require the following directive:
+All other code examples require the following directive:
 
 ```csharp
 using System.Text.Json;

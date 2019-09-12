@@ -20,6 +20,8 @@ You should always begin by testing your program in Debug mode. Debug mode turns 
 
 Run your program in Debug mode and try a few debugging features:
 
+<!-- markdownlint-disable MD025 -->
+
 # [C#](#tab/csharp)
 
 1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. 

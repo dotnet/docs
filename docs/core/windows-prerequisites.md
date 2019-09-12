@@ -56,6 +56,8 @@ You can use any editor to develop .NET Core applications using the .NET Core SDK
 
 You can read more about the changes in Visual Studio 2017 in the [release notes](/visualstudio/releasenotes/vs2017-relnotes).
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.x](#tab/netcore2x)
 
 To develop .NET Core apps in Visual Studio 2017 using the .NET Core 2.2 SDK:

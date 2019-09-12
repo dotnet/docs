@@ -13,6 +13,8 @@ ms.date: 06/04/2018
 
 ## Synopsis
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.1](#tab/netcore21)
 
 ```console

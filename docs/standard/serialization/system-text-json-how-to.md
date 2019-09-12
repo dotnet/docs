@@ -31,7 +31,7 @@ using System.Text.Json;
 
 ## How to serialize
 
-Call [JsonSerializer.Serialize](xref:System.Text.Json.JsonSerializer.Serialize*), using a generic type parameter or generic type inference:
+To write JSON to a string, call [JsonSerializer.Serialize](xref:System.Text.Json.JsonSerializer.Serialize*), using a generic type parameter or generic type inference:
 
 ```csharp
 string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
@@ -129,7 +129,7 @@ Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize
 
 ### Serialize to UTF-8
 
-Call [JsonSerializer.SerializeToUtf8Bytes)](xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*):
+Call [JsonSerializer.SerializeToUtf8Bytes](xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*):
 
 ```csharp
 string json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
@@ -394,7 +394,7 @@ The JSON property naming policy:
 
 ### Camel case dictionary keys
 
-IF a property of an object to be serialized is of type `Dictionary<string,Tvalue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`:
+If a property of an object to be serialized is of type `Dictionary<string,Tvalue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -527,7 +527,7 @@ This setting applies to serialization and deserialization. During deserializatio
 
 ## Case-insensitive property matching
 
-Set <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> to true:
+By default, deserialization looks for case-sensitive property name matches between JSON and the target object properties. To change that behavior, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> to true:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -557,7 +557,7 @@ Resulting object property values after matching camel case to Pascal case proper
 
 ## Include properties of derived classes
 
-Suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
+Polymorphic serialization isn't supported when you specify at compile time the type to be serialized. For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
 
 ```csharp
 class WeatherForecast
@@ -610,7 +610,7 @@ To serialize the properties of the derived type, use one of the following approa
   json = JsonSerializer.Serialize<object>(weatherForecast);
   ```
 
-In the preceding example, both approaches cause the `WindSpeed` property to be included in the JSON output:
+In the preceding example scenario, both approaches cause the `WindSpeed` property to be included in the JSON output:
 
 ```json
 {

@@ -32,16 +32,22 @@ The following procedure has steps to create a persistence participant. See the [
   
     ```csharp  
     protected virtual void PublishValues(IDictionary<XName,Object> readWriteValues)
+    {
+    }
     ```  
   
 5. Implement the **BeginOnSave** method if the participant is a persistence I/O participant. This method is called during a Save operation. In this method, you should perform I/O adjunct to the persisting (saving) workflow instances.  If the host is using a transaction for the corresponding persistence command, the same transaction is provided in Transaction.Current.  Additionally, PersistenceIOParticipants may advertise a transactional consistency requirement, in which case the host creates a transaction for the persistence episode if one would not otherwise be used.  
   
     ```csharp  
     protected virtual IAsyncResult BeginOnSave(IDictionary<XName,Object> readWriteValues, IDictionary<XName,Object> writeOnlyValues, TimeSpan timeout, AsyncCallback callback, Object state)
+    {
+    }
     ```  
   
 6. Implement the **BeginOnLoad** method if the participant is a persistence I/O participant. This method is called during a Load operation. In this method, you should perform I/O adjunct to the loading of workflow instances. If the host is using a transaction for the corresponding persistence command, the same transaction is provided in Transaction.Current. Additionally, Persistence I/O participants may advertise a transactional consistency requirement, in which case the host creates a transaction for the persistence episode if one would not otherwise be used.  
   
     ```csharp  
     protected virtual IAsyncResult BeginOnLoad(IDictionary<XName,Object> readWriteValues, TimeSpan timeout, AsyncCallback callback, Object state)
+    {
+    }
     ```

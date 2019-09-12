@@ -11,7 +11,8 @@ The .NET Framework contains a variety of flow-control activities that function s
   
 ```csharp  
 public sealed class ForEach : NativeActivity  
-    {  
+{
+}
 ```  
   
  The custom class requires several members to store data being used by the activity, and to provide functionality to execute the activity’s child activities. These members include:  

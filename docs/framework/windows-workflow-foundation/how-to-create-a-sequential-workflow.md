@@ -122,9 +122,9 @@ Workflows can be constructed from built-in activities as well as from custom act
 
 10. Drag another **If** activity from the **Control Flow** section of the **Toolbox** and drop it in the **Then** section of the first **If** activity.
 
-11. Type the following expression into the newly added **If** activity’s **Condition** property value box (**VB** or **C#**).
+11. Type the following expression into the newly added **If** activity’s **Condition** property value box.
 
-    ```vb
+    ```text
     Guess < Target
     ```
 

@@ -110,9 +110,9 @@ Workflows can be constructed from built-in activities as well as from custom act
     > [!TIP]
     > If you do not see the **True** and **False** labels on the **FlowDecision**, hover the mouse over the **FlowDecision**.  
   
-9. Click the second **FlowDecision** activity to select it. In the **Properties Window**, type the following expression into the **Condition** property value box (**VB** or **C#**).  
+9. Click the second **FlowDecision** activity to select it. In the **Properties Window**, type the following expression into the **Condition** property value box.  
   
-    ```vb
+    ```text
     Guess < Target
     ```  
   

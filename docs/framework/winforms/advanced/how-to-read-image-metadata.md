@@ -52,7 +52,7 @@ Some image files contain metadata that you can read to determine features of the
   
  The code produces output similar to the following:  
  
-```
+```console
  Property Item 0
   
  id: 0x320

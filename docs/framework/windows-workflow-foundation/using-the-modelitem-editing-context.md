@@ -31,7 +31,7 @@ The <xref:System.Activities.Presentation.Model.ModelItem> editing context is the
 ## Assigning a designer an activity  
  To specify which designer an activity uses, the Designer attribute is used.  
   
-```  
+```csharp  
 [Designer(typeof(MyClassDesigner))]  
 public sealed class MyClass : CodeActivity  
 {  
@@ -40,7 +40,7 @@ public sealed class MyClass : CodeActivity
 ## Creating a service  
  To create a service that serves as a conduit of information between the designer and the host, an interface and an implementation must be created. The interface is used by the <xref:System.Activities.Presentation.ServiceManager.Publish%2A> method to define the members of the service, and the implementation contains the logic for the service. In the following code example, a service interface and implementation are created.  
   
-```  
+```csharp  
 public interface IMyService  
     {  
         IEnumerable<string> GetValues(string DisplayName);  
@@ -62,14 +62,14 @@ public interface IMyService
 ## Publishing a service  
  For a designer to consume a service, it must first be published by the host using the <xref:System.Activities.Presentation.ServiceManager.Publish%2A> method.  
   
-```  
+```csharp  
 this.Context.Services.Publish<IMyService>(new MyServiceImpl);  
 ```  
   
 ## Subscribing to a service  
  The designer obtains access to the service using the <xref:System.Activities.Presentation.ServiceManager.Subscribe%2A> method in the <xref:System.Activities.Presentation.WorkflowViewElement.OnModelItemChanged%2A> method. The following code snippet demonstrates how to subscribe to a service.  
   
-```  
+```csharp  
 protected override void OnModelItemChanged(object newItem)  
 {  
     if (!subscribed)  

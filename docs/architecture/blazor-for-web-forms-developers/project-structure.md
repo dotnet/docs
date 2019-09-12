@@ -108,7 +108,7 @@ Configuration in ASP.NET Web Forms apps is typically handled using one or more *
 }
 ```
 
-We'll learn more about configuration in ASP.NET Core projects in the [Configuration](./configuration.md) section.
+We'll learn more about configuration in ASP.NET Core projects in the [Configuration](./config.md) section.
 
 ## Razor components
 

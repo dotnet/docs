@@ -26,7 +26,7 @@ ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
 
 When writing your code, you might at times create lengthy statements that necessitate horizontal scrolling in the Code Editor. Although this doesn't affect the way your code runs, it makes it difficult for you or anyone else to read the code as it appears on the monitor. In such cases, you should consider breaking the single long statement into several lines.
 
-### To break a single statement into multiple lines
+## To break a single statement into multiple lines
 
 - Use the line-continuation character, which is an underscore (`_`), at the point at which you want the line to break. The underscore must be immediately preceded by a space and immediately followed by a line terminator (carriage return) or (starting with version 16.0) a comment followed by a carriage return.
 
@@ -47,7 +47,7 @@ When writing your code, you might at times create lengthy statements that necess
 
  Although placing each statement on a separate line is the recommended method, Visual Basic also allows you to place multiple statements on the same line.
 
-### To place multiple statements on the same line
+## To place multiple statements on the same line
 
 - Separate the statements with a colon (`:`), as in the following example.
 

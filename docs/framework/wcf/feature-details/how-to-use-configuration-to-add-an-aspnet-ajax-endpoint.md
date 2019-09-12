@@ -10,7 +10,7 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
   
  For more information about how to configure an ASP.NET AJAX endpoint without using configuration, see [How to: Add an ASP.NET AJAX Endpoint Without Using Configuration](../../../../docs/framework/wcf/feature-details/how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md).  
   
-### To create a basic WCF service  
+## To create a basic WCF service  
   
 1. Define a basic WCF service contract with an interface marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. Mark each operation with the <xref:System.ServiceModel.OperationContractAttribute>. Be sure to set the <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> property.  
   
@@ -43,13 +43,13 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
 3. Define a namespace for the `ICalculator` and `CalculatorService` implementations by wrapping them in a namespace block.  
   
     ```csharp
-    Namespace Microsoft.Ajax.Samples  
+    namespace Microsoft.Ajax.Samples  
     {  
         //Include the code for ICalculator and Caculator here.  
     }  
     ```  
   
-### To create an ASP.NET AJAX endpoint for the service  
+## To create an ASP.NET AJAX endpoint for the service  
   
 1. Create a behavior configuration and specify the [\<enableWebScript>](../../../../docs/framework/configure-apps/file-schema/wcf/enablewebscript.md) behavior for ASP.NET AJAX-enabled endpoints of the service.  
   
@@ -80,7 +80,7 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
     </system.serviceModel>   
     ```  
   
-### To host the service in IIS  
+## To host the service in IIS  
   
 1. To host the service in IIS, create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. For example, the content in the service file for the `CalculatorService` sample contains the following information.  
   
@@ -94,7 +94,7 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
   
 2. For more information about hosting in IIS, see [How to: Host a WCF Service in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).  
   
-### To call the service  
+## To call the service  
   
 1. The endpoint is configured at an empty address relative to the .svc file, so the service is now available and can be invoked by sending requests to service.svc/\<operation> - for example, service.svc/Add for the `Add` operation. You can use it by entering the endpoint URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [AJAX Service Using HTTP POST](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md).  
   

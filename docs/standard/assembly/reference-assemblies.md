@@ -35,7 +35,7 @@ You can generate reference assemblies:
 - When compiling program from command line, by specifiying `-refonly` ([in C#](../../csharp/language-reference/compiler-options/refonly-compiler-option.md), [in Visual Basic](../../visual-basic/reference/command-line-compiler/refonly-compiler-option.md) ) or `-refout` ([in C#](../../csharp/language-reference/compiler-options/refout-compiler-option.md), [in Visual Basic](../../visual-basic/reference/command-line-compiler/refout-compiler-option.md)) compiler options
 - When using Roslyn API, by setting <xref:Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly?displayProperty=nameWithType> to `true` and <xref:Microsoft.CodeAnalysis.Emit.EmitOptions.IncludePrivateMembers?displayProperty=nameWithType> to `false` in an object passed to <xref:Microsoft.CodeAnalysis.Compilation.Emit%2A?displayProperty=nameWithType> method.
 
-If you want to distribute reference assemblies with NuGet packages, you must include them in "ref\" subdirectory under the package directory, instead of "lib\" subdirectory used for implementation assemblies.
+If you want to distribute reference assemblies with NuGet packages, you must include them in "ref\\" subdirectory under the package directory, instead of "lib\\" subdirectory used for implementation assemblies.
 
 ## Reference assemblies structure
 

@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3d830bcd-32b4-4f26-9287-d58a071452c6
 ---
 # How to: Enable Access to the Data Service (WCF Data Services)
-In [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you must explicitly grant access to the resources that are exposed by a data service. This means that after you create a new data service, you must still explicitly provide access to individual resources as entity sets. This topic shows how to enable read and write access to five of the entity sets in the Northwind data service that is created when you complete the [quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md). Because the <xref:System.Data.Services.EntitySetRights> enumeration is defined by using the <xref:System.FlagsAttribute>, you can use a logical OR operator to specify multiple permissions for a single entity set.  
+In [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you must explicitly grant access to the resources that are exposed by a data service. This means that after you create a new data service, you must still explicitly provide access to individual resources as entity sets. This topic shows how to enable read and write access to five of the entity sets in the Northwind data service that is created when you complete the [quickstart](quickstart-wcf-data-services.md). Because the <xref:System.Data.Services.EntitySetRights> enumeration is defined by using the <xref:System.FlagsAttribute>, you can use a logical OR operator to specify multiple permissions for a single entity set.  
   
 > [!NOTE]
 > Any client that can access the ASP.NET application can also access the resources exposed by the data service. In a production data service, to prevent unauthorized access to resources, you should also secure the application itself. For more information, see [Securing ASP.NET Web Sites](https://docs.microsoft.com/previous-versions/aspnet/91f66yxt(v=vs.100)).  
@@ -25,5 +25,5 @@ In [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you must explici
   
 ## See also
 
-- [How to: Develop a WCF Data Service Running on IIS](../../../../docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md)
-- [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md)
+- [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md)
+- [Configuring the Data Service](configuring-the-data-service-wcf-data-services.md)

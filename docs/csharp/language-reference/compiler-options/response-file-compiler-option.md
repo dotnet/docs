@@ -13,7 +13,7 @@ The @ option lets you specify a file that contains compiler options and source c
   
 ## Syntax  
   
-```  
+```console  
 @response_file  
 ```  
   
@@ -26,7 +26,7 @@ The @ option lets you specify a file that contains compiler options and source c
   
  To specify more than one response file in a compilation, specify multiple response file options. For example:  
   
-```  
+```console  
 @file1.rsp @file2.rsp  
 ```  
   

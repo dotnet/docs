@@ -161,7 +161,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 StyleName:Code >        Console.WriteLine("Hello World");<  
 StyleName:Code >Hello World<  
 ```  
@@ -308,7 +308,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 StyleName:Code ><  
 ```  
   

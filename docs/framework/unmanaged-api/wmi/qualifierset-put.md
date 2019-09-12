@@ -79,7 +79,7 @@ This function wraps a call to the [IWbemQualifierSet::Put](/windows/desktop/api/
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** WMINet_Utils.idl
 

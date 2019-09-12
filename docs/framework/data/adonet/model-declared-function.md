@@ -24,5 +24,5 @@ A *model-declared function* is a function that is declared in a conceptual model
   
 ## See also
 
-- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
-- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+- [Entity Data Model Key Concepts](entity-data-model-key-concepts.md)
+- [Entity Data Model](entity-data-model.md)

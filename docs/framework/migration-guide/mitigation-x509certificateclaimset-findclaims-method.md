@@ -14,7 +14,7 @@ Starting with apps that target the .NET Framework 4.6.1,  the <xref:System.Ident
  For apps that target previous versions of the .NET Framework, the <xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims%2A?displayProperty=nameWithType> method attempts to match the `claimType` argument only with the last  DNS entry.  
   
 ## Mitigation  
- If this change is undesirable, apps that target versions of the .NET Framework starting with the .NET Framework 4.6.1 can opt out of it by adding the following configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:  
+ If this change is undesirable, apps that target versions of the .NET Framework starting with the .NET Framework 4.6.1 can opt out of it by adding the following configuration setting to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:  
   
 ```xml  
 <runtime>  
@@ -22,7 +22,7 @@ Starting with apps that target the .NET Framework 4.6.1,  the <xref:System.Ident
 </runtime>  
 ```  
   
- In addition, apps that target previous versions of the .NET Framework but are running under the .NET Framework 4.6.1 and later versions can opt in to this behavior by adding the following configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:  
+ In addition, apps that target previous versions of the .NET Framework but are running under the .NET Framework 4.6.1 and later versions can opt in to this behavior by adding the following configuration setting to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:  
   
 ```xml  
 <runtime>  
@@ -32,4 +32,4 @@ Starting with apps that target the .NET Framework 4.6.1,  the <xref:System.Ident
   
 ## See also
 
-- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-1.md)
+- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6-1.md)

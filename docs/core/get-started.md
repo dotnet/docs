@@ -10,11 +10,11 @@ ms.date: 06/27/2018
 
 This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications. 
 
-If you're unsure what .NET Core is, or how it relates to other .NET technologies, start with the [What is .NET](https://www.microsoft.com/net/learn/dotnet/what-is-dotnet) overview. Put simply, .NET Core is an open-source, cross-platform implementation of .NET.
+If you're unsure what .NET Core is, or how it relates to other .NET technologies, start with the [What is .NET](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet) overview. Put simply, .NET Core is an open-source, cross-platform implementation of .NET.
 
 ## Create an application
 
-First, download and install the [.NET Core SDK](https://www.microsoft.com/net/download/) on your computer.
+First, download and install the [.NET Core SDK](https://dotnet.microsoft.com/download) on your computer.
 
 Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**. Type the following `dotnet` commands to create and run a C# application.
 
@@ -34,6 +34,8 @@ Congratulations! You've created a simple .NET Core application. You can also use
 ## Tutorials
 
 You can get started developing .NET Core applications by following these step-by-step tutorials.
+
+<!-- markdownlint-disable MD025 -->
 
 # [Windows](#tab/windows)
 

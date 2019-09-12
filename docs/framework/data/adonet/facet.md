@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 91c4e6aa-3e54-4b6c-a38a-abf27808cc85
 ---
 # facet
-A *facet* is used to add detail to a primitive type property definition. A [property](../../../../docs/framework/data/adonet/property.md) definition contains information about the property type, but often more detail is necessary. For example, an entity type in a conceptual model might have a property of type `String` whose value cannot be set to null. Facets allow you to specify this level of detail.  
+A *facet* is used to add detail to a primitive type property definition. A [property](property.md) definition contains information about the property type, but often more detail is necessary. For example, an entity type in a conceptual model might have a property of type `String` whose value cannot be set to null. Facets allow you to specify this level of detail.  
   
  The table below describes the facets that are supported in the EDM.  
   
@@ -24,11 +24,11 @@ A *facet* is used to add detail to a primitive type property definition. A [prop
 |`Unicode`|Indicates whether the property value is stored as Unicode.|`String`|  
   
 ## Example  
- The [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines a `Book` entity type. Note that facets are implemented as XML attributes. The facet values indicate that no property can be set to null, and that the `Scale` and `Precision` of the `Revision` property are each set to 29.  
+ The [ADO.NET Entity Framework](./ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](./ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines a `Book` entity type. Note that facets are implemented as XML attributes. The facet values indicate that no property can be set to null, and that the `Scale` and `Precision` of the `Revision` property are each set to 29.  
   
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   
 ## See also
 
-- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
-- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+- [Entity Data Model Key Concepts](entity-data-model-key-concepts.md)
+- [Entity Data Model](entity-data-model.md)

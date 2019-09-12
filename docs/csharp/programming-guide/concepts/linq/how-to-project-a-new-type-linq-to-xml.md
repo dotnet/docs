@@ -47,7 +47,7 @@ This example uses the <xref:System.Xml.Linq.XContainer.Element%2A> method that w
 
 This example produces the following output:
 
-```console
+```output
 Lawnmower:1
 Baby Monitor:2
 ```

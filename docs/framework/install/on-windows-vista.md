@@ -29,6 +29,6 @@ The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 
 ## See also
 
-- [Download the .NET Framework](https://www.microsoft.com/net/download/framework?utm_source=ms-docs&utm_medium=referral)
+- [Download the .NET Framework](https://dotnet.microsoft.com/download)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)
 - [Install the .NET Framework for developers](guide-for-developers.md)

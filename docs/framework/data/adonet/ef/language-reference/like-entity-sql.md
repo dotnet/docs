@@ -62,7 +62,7 @@ match [NOT] LIKE pattern [ESCAPE escape]
 ## Example  
  The following two [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries use the LIKE and ESCAPE operators to determine whether a specific character string matches a specified pattern. The first query searches for the `Name` that starts with the characters `Down_`. This query uses the ESCAPE option because the underscore (`_`) is a wildcard character. Without specifying the ESCAPE option, the query would search for any `Name` values that start with the word `Down` followed by any single character other than the underscore character. The queries are based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
@@ -70,4 +70,4 @@ match [NOT] LIKE pattern [ESCAPE escape]
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Reference](entity-sql-reference.md)

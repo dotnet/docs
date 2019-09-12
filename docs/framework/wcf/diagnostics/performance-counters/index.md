@@ -33,7 +33,7 @@ Windows Communication Foundation (WCF) includes a large set of performance count
   
  You can also enable performance counters in your code as follows,  
   
-```  
+```csharp
 using System.Configuration;  
 using System.ServiceModel.Configuration;  
 using System.ServiceModel.Diagnostics;  
@@ -81,9 +81,7 @@ config.Save();
 ### Service performance counters  
  Service performance counters measure the service behavior as a whole and can be used to diagnose the performance of the whole service. They can be found under the `ServiceModelService 4.0.0.0` performance object when viewing with Performance Monitor. The instances are named using the following pattern:  
   
-```  
-ServiceName@ServiceBaseAddress  
-```  
+`ServiceName@ServiceBaseAddress`
   
  A counter in a service scope is aggregated from counter in a collection of endpoints.  
   
@@ -92,9 +90,7 @@ ServiceName@ServiceBaseAddress
 ### Endpoint performance counters  
  Endpoint performance counters enable you to look at data reflecting how an endpoint is accepting messages. They can be found under the `ServiceModelEndpoint 4.0.0.0` performance object when viewing using the Performance Monitor. The instances are named using the following pattern:  
   
-```  
-(ServiceName).(ContractName)@(endpoint listener address)  
-```  
+`(ServiceName).(ContractName)@(endpoint listener address)`
   
  The data is similar to what is collected for individual operations, but is only aggregated across the endpoint.  
   
@@ -106,9 +102,7 @@ ServiceName@ServiceBaseAddress
 ### Operation performance counters  
  Operation performance counters are found under the `ServiceModelOperation 4.0.0.0` performance object when viewing with the Performance Monitor. Each operation has an individual instance. That is, if a given contract has 10 operations, 10 operation counter instances are associated with that contract. The object instances are named using the following pattern:  
   
-```  
-(ServiceName).(ContractName).(OperationName)@(first endpoint listener address)  
-```  
+`(ServiceName).(ContractName).(OperationName)@(first endpoint listener address)`
   
  This counter enables you to measure how the call is being used and how well the operation is performing.  
   

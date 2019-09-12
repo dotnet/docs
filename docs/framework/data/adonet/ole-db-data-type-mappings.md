@@ -12,7 +12,7 @@ The following table shows the inferred .NET Framework type for data types from t
 |adBinary|DBTYPE_BYTES|Byte[]|GetBytes()|  
 |adBoolean|DBTYPE_BOOL|Boolean|GetBoolean()|  
 |adBSTR|DBTYPE_BSTR|String|GetString()|  
-|adChapter|DBTYPE_HCHAPTER|Supported through the `DataReader`. See [Retrieving Data Using a DataReader](../../../../docs/framework/data/adonet/retrieving-data-using-a-datareader.md).|GetValue()|  
+|adChapter|DBTYPE_HCHAPTER|Supported through the `DataReader`. See [Retrieving Data Using a DataReader](retrieving-data-using-a-datareader.md).|GetValue()|  
 |adChar|DBTYPE_STR|String|GetString()|  
 |adCurrency|DBTYPE_CY|Decimal|GetDecimal()|  
 |adDate|DBTYPE_DATE|DateTime|GetDateTime()|  
@@ -45,5 +45,5 @@ The following table shows the inferred .NET Framework type for data types from t
   
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)
+- [ADO.NET Overview](ado-net-overview.md)

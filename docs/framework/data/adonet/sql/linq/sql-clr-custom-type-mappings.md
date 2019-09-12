@@ -6,7 +6,7 @@ ms.assetid: d916c7fb-4b56-4214-acbe-5e23365047b2
 # SQL-CLR Custom Type Mappings
 Type mapping between SQL Server and the common language runtime (CLR) is automatically specified when you use the SQLMetal command-line tool, Object Relational Designer (O/R Designer).  
   
- When no customized mapping is performed, these tools assign default type mappings as described in [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md). If you want to type mappings differently from these defaults, you need to do some customization of the type mappings.  
+ When no customized mapping is performed, these tools assign default type mappings as described in [SQL-CLR Type Mapping](sql-clr-type-mapping.md). If you want to type mappings differently from these defaults, you need to do some customization of the type mappings.  
   
  When customizing type mappings, the recommended approach is to make the changes in an intermediary DBML file. Then, your customized DBML file should be used when you create you code and mapping files with SQLMetal or O/R Designer.  
   
@@ -18,7 +18,7 @@ Type mapping between SQL Server and the common language runtime (CLR) is automat
  To customize type mappings with SQLMetal or O/R Designer, first generate a DBML file. Then, before generating the code file or mapping file, modify the DBML file to identify the desired type mappings. With SQLMetal, you have to manually change the `Type` and `DbType` attributes in the DBML file to make your type mapping customizations. With O/R Designer, you can make your changes within the Designer. For more information about using the O/R Designer, see [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
   
 > [!NOTE]
-> Some type mappings may result in overflow or data loss exceptions while translating to or from the database. Carefully review the Type Mapping Run-time Behavior Matrix in [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md) before making any customizations.  
+> Some type mappings may result in overflow or data loss exceptions while translating to or from the database. Carefully review the Type Mapping Run-time Behavior Matrix in [SQL-CLR Type Mapping](sql-clr-type-mapping.md) before making any customizations.  
   
  In order for your type mapping customizations to be recognized by SQLMetal or O/R Designer, you need to make sure that these tools are supplied with the path to your custom DBML file when you generate your code file or external mapping file. Although not required for type mapping customization, it is recommended that you always separate your type mapping information from your code file and generate the additional external type mapping file. Doing so will leave some flexibility by not requiring that the code file be recompiled.  
   
@@ -27,5 +27,5 @@ Type mapping between SQL Server and the common language runtime (CLR) is automat
   
 ## See also
 
-- [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)
-- [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
+- [SQL-CLR Type Mapping](sql-clr-type-mapping.md)
+- [Code Generation in LINQ to SQL](code-generation-in-linq-to-sql.md)

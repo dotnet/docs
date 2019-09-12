@@ -145,7 +145,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 1. Add code to load the TensorFlow model:
 
-    [!code-csharp[LoadTensorFlowModel](~/samples/machine-learning/tutorials/TextClassificationTF/ Program.cs#LoadTensorFlowModel)]
+    [!code-csharp[LoadTensorFlowModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#LoadTensorFlowModel)]
 
     Once the model is loaded, you can extract its input and output schema. The schemas are displayed for interest and learning only. You do not need it, for the final application to function:
 

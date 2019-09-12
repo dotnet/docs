@@ -27,7 +27,7 @@ The library also provides classes for working with an in-memory document object 
 
 ## Additional resources
 
-* [How to use the library](json-serialization-how-to.md)
+* [How to use the library](system-text-json-how-to.md)
 * [Source code](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json)
 * [API reference](xref:System.Text.Json)
 * [Roadmap](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/roadmap/README.md)

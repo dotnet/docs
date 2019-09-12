@@ -750,6 +750,6 @@ while (reader.Read())
 
 ## Additional resources
 
-* [System.Text.Json overview](json-serialization-overview.md)
+* [System.Text.Json overview](system-text-json-overview.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)

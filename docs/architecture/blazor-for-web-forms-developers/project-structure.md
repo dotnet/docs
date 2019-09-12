@@ -233,7 +233,12 @@ When a Blazor project is built, all Razor component files are compiled along wit
 
 To run the Blazor Server app, press `F5` in Visual Studio. Blazor apps don't support runtime compilation. To see the results of code changes, including component markup changes, rebuild and restart the app when running with the debugger. If you run without the debugger attached (`Ctrl+F5`), Visual Studio watches for file changes and restarts the app as changes are made. You manually refresh the browser as changes are made.
 
-To run the Blazor WebAssembly app, either run the client project directly using the development server or run the server project when hosting the app with ASP.NET Core. Blazor WebAssembly apps don't support debugging using Visual Studio. To run the app, use `Ctrl+F5` instead of `F5`. You can instead debug Blazor WebAssembly apps directly in the browser. See [Debug ASP.NET Core Blazor](/aspnet/core/blazor/debug) for details.
+To run the Blazor WebAssembly app, choose one of the following approaches:
+
+* Run the client project directly using the development server.
+* Run the server project when hosting the app with ASP.NET Core.
+
+Blazor WebAssembly apps don't support debugging using Visual Studio. To run the app, use `Ctrl+F5` instead of `F5`. You can instead debug Blazor WebAssembly apps directly in the browser. See [Debug ASP.NET Core Blazor](/aspnet/core/blazor/debug) for details.
 
 >[!div class="step-by-step"]
 >[Previous](hosting-models.md)

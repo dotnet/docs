@@ -81,4 +81,4 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
 
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
-- [How to: Disable the Strong-Name Bypass Feature](../../../app-domains/how-to-disable-the-strong-name-bypass-feature.md)
+- [How to: Disable the strong-name bypass feature](../../../../standard/assembly/disable-strong-name-bypass-feature.md)

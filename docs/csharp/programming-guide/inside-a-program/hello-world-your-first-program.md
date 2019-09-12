@@ -69,8 +69,6 @@ Press any key to close this window . . .
 
 Press a key to end the session. 
 
----
-
 ## Elements of a C# program
 
 Let's examine the important parts of this program. The first line contains a comment. The characters `//` convert the rest of the line to a comment.
@@ -103,7 +101,7 @@ The `Main` method is a [static](../../language-reference/keywords/static.md) met
 
 The parameter of the `Main` method, `args`, is a `string` array that contains the command-line arguments used to invoke the program. 
 
-For more information about how to use command-line arguments, see the examples in [Main() and Command-Line Arguments](../main-and-command-args/index.md) and [How to: Create and Use Assemblies Using the Command Line](../concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).
+For more information about how to use command-line arguments, see the examples in [Main() and Command-Line Arguments](../main-and-command-args/index.md).
 
 ## Input and output
 

@@ -40,7 +40,7 @@ If you intend to share an assembly among several applications, you can install i
  Note that there are scenarios where you explicitly do not want to install an assembly into the global assembly cache. If you place one of the assemblies that make up an application into the global assembly cache, you can no longer replicate or install the application by using XCOPY to copy the application directory. In this case, you must also move the assembly into the global assembly cache.  
   
 ## In This Section  
- [How to: Install an Assembly into the Global Assembly Cache](../../../docs/framework/app-domains/how-to-install-an-assembly-into-the-gac.md)  
+ [How to: Install an Assembly into the Global Assembly Cache](install-assembly-into-gac.md)  
  Describes the ways to install an assembly into the global assembly cache.  
   
  [How to: View the Contents of the Global Assembly Cache](../../../docs/framework/app-domains/how-to-view-the-contents-of-the-gac.md)  
@@ -53,17 +53,17 @@ If you intend to share an assembly among several applications, you can install i
  Explains why serviced components (managed COM+ components) should be placed in the global assembly cache.  
   
 ## Related Sections  
- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
+ [Creating Assemblies](../../standard/assembly/create.md)  
  Provides an overview of creating assemblies.  
   
  [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
  Describes the global assembly cache.  
   
- [How to: View Assembly Contents](../../../docs/framework/app-domains/how-to-view-assembly-contents.md)  
+ [How to: View Assembly Contents](../../standard/assembly/view-contents.md)  
  Explains how to use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) information in an assembly.  
   
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  Describes how the common language runtime locates and loads the assemblies that make up your application.  
   
- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  
+ [Programming with Assemblies](../../standard/assembly/program.md)  
  Describes assemblies, the building blocks of managed applications.

@@ -15,6 +15,7 @@ Learn how to use ML.NET CLI to automatically generate an ML.NET model and underl
 
 In this tutorial, you will do the following steps:
 > [!div class="checklist"]
+>
 > - Prepare your data for the selected machine learning task
 > - Run the 'mlnet auto-train' command from the CLI
 > - Review the quality metric results
@@ -255,6 +256,7 @@ It is interesting to compare the chosen algorithm and pipeline configuration in 
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Prepare your data for the selected ML task (problem to solve)
 > - Run the 'mlnet auto-train' command in the CLI tool
 > - Review the quality metric results

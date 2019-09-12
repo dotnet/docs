@@ -99,8 +99,8 @@ The following procedures were written under the assumption that the application 
     {
         if (e.SettingName.Equals("DateOfBirth"))
         {
-            var newDate = (Date)e.NewValue;
-            if (newDate > Date.Now)
+            var newDate = (DateTime)e.NewValue;
+            if (newDate > DateTime.Now)
             {
                 e.Cancel = true;
                 // Inform the user.

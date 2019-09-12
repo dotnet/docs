@@ -44,7 +44,7 @@ public class CalculatorService
 Public Class CalculatorService
     <OperationContract> _
     Public Function Divide(a As Integer, b As Integer) As Integer
-        If b = 0 Then Throw New Exception("Division by zero!")
+        If b = 0 Then Throw New DivideByZeroException("Division by zero!")
         Return a / b
     End Function
 End Class

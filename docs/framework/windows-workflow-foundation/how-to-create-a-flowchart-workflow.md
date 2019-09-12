@@ -110,17 +110,17 @@ Workflows can be constructed from built-in activities as well as from custom act
     > [!TIP]
     > If you do not see the **True** and **False** labels on the **FlowDecision**, hover the mouse over the **FlowDecision**.  
   
-9. Click the second **FlowDecision** activity to select it. In the **Properties Window**, type the following expression into the **Condition** property value box.  
+9. Click the second **FlowDecision** activity to select it. In the **Properties Window**, type the following expression into the **Condition** property value box (**VB** or **C#**).  
   
-    ```
-    Guess < Target  
+    ```vb
+    Guess < Target
     ```  
   
 10. Drag two **WriteLine** activities from the **Primitives** section of the **Toolbox** and drop them so that they are side by side below the two **FlowDecision** activities. Connect the **True** action of the bottom **FlowDecision** activity to the leftmost **WriteLine** activity, and the **False** action to the rightmost **WriteLine** activity.  
   
 11. Click the leftmost **WriteLine** activity to select it, and type the following expression into the **Text** property value box in the **Properties Window**.  
   
-    ```
+    ```text
     "Your guess is too low."  
     ```  
   
@@ -128,7 +128,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 13. Click the rightmost **WriteLine** activity to select it, and type the following expression into the **Text** property value box in the **Properties Window**.  
   
-    ```
+    ```text
     "Your guess is too high."  
     ```  
   

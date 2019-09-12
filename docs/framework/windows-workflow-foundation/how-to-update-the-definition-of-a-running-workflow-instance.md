@@ -1479,7 +1479,7 @@ If you run out of workflows to update, you can modify the `NumberGuessWorkflowHo
 
 3. Add the following three items to the collection.
 
-    ```
+    ```console
     StateMachineNumberGuessWorkflow v1
     FlowchartNumberGuessWorkflow v1
     SequentialNumberGuessWorkflow v1
@@ -1487,7 +1487,7 @@ If you run out of workflows to update, you can modify the `NumberGuessWorkflowHo
 
     The completed `Items` collection will have six items.
 
-    ```
+    ```console
     StateMachineNumberGuessWorkflow
     FlowchartNumberGuessWorkflow
     SequentialNumberGuessWorkflow

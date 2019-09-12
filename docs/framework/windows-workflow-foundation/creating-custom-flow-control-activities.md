@@ -9,7 +9,7 @@ The .NET Framework contains a variety of flow-control activities that function s
 ## Creating the custom class  
  Since the Non-Generic ForEach class will need to schedule child activities, it will need to derive from <xref:System.Activities.NativeActivity>, since activities that derive from <xref:System.Workflow.Activities.CodeActivity> do not have this functionality.  
   
-```  
+```csharp  
 public sealed class ForEach : NativeActivity  
     {  
 ```  

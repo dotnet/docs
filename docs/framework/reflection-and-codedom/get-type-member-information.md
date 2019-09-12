@@ -7,6 +7,10 @@ helpviewer_keywords:
 ms.assetid: 348ae651-ccda-4f13-8eda-19e8337e9438
 author: "rpetrusha"
 ms.author: "ronpet"
+dev_langs: 
+  - "cpp"
+  - "csharp"
+  - "vb"
 ---
 # How to: Get type and member information by using reflection
 The <xref:System.Reflection> namespace contains many methods for obtaining information about types and their members. This article demonstrates one of these methods, <xref:System.Type.GetMembers%2A?displayProperty=nameWithType>. For additional information, see [Reflection overview](reflection.md).

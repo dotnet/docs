@@ -17,37 +17,37 @@ As .NET Core becomes available on more and more platforms, it's useful to learn 
 When installed, .NET Core consists of several components that are laid out as follows in the filesystem:
 
 ```
-{dotnet_root}
+{dotnet_root}                                     (*)
 ├── dotnet                       (1)
 ├── LICENSE.txt                  (8)
 ├── ThirdPartyNotices.txt        (8)
-├── host
-│   └── fxr
+├── host                                          (*)
+│   └── fxr                                       (*)
 │       └── <fxr version>        (2)
-├── sdk
+├── sdk                                           (*)
 │   ├── <sdk version>            (3)
-│   └── NuGetFallbackFolder      (4)
-├── packs
-│   ├── Microsoft.AspNetCore.App.Ref
+│   └── NuGetFallbackFolder      (4)              (*)
+├── packs                                         (*)
+│   ├── Microsoft.AspNetCore.App.Ref              (*)
 │   │   └── <aspnetcore ref version>     (11)
-│   ├── Microsoft.NETCore.App.Ref
+│   ├── Microsoft.NETCore.App.Ref                 (*)
 │   │   └── <netcore ref version>        (12)
-│   ├── Microsoft.NETCore.App.Host.<rid>
+│   ├── Microsoft.NETCore.App.Host.<rid>          (*)
 │   │   └── <apphost version>            (13)
-│   ├── Microsoft.WindowsDesktop.App.Ref
+│   ├── Microsoft.WindowsDesktop.App.Ref          (*)
 │   │   └── <desktop ref version>        (14)
-│   └── NETStandard.Library.Ref
+│   └── NETStandard.Library.Ref                   (*)
 │       └── <netstandard version>        (15)
-├── shared
-│   ├── Microsoft.NETCore.App
+├── shared                                        (*)
+│   ├── Microsoft.NETCore.App                     (*)
 │   │   └── <runtime version>     (5)
-│   ├── Microsoft.AspNetCore.App
+│   ├── Microsoft.AspNetCore.App                  (*)
 │   │   └── <aspnetcore version>  (6)
-│   ├── Microsoft.AspNetCore.All
+│   ├── Microsoft.AspNetCore.All                  (*)
 │   │   └── <aspnetcore version>  (6)
-│   └── Microsoft.WindowsDesktop.App
+│   └── Microsoft.WindowsDesktop.App              (*)
 │       └── <desktop app version> (7)
-└── templates
+└── templates                                     (*)
 │   └── <templates version>      (17)
 /
 ├── etc/dotnet
@@ -108,14 +108,12 @@ The following lists the recommended packages:
   - **Example:** dotnet-sdk-2.1
   - **Contains:** (3),(4)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
-  - **Provides shared directory:** `{dotnet_root}/sdk`, `{dotnet_root}/sdk/NuGetFallbackFolder`
 
 - `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime
   - **Version:** \<aspnetcore runtime version>
   - **Example:** aspnetcore-runtime-2.1
   - **Contains:** (6)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`
-  - **Provides shared directory:** `{dotnet_root}/shared/Microsoft.AspNetCore.App`, `{dotnet_root}/shared/Microsoft.AspNetCore.All`
 
 - `dotnet-runtime-deps-[major].[minor]` _(Optional)_ - Installs the dependencies for running self-contained applications
   - **Version:** \<runtime version>
@@ -127,50 +125,37 @@ The following lists the recommended packages:
   - **Example:** dotnet-runtime-2.1
   - **Contains:** (5)
   - **Dependencies:** `dotnet-hostfxr-[major].[minor]`, `dotnet-runtime-deps-[major].[minor]`
-  - **Provides shared directory:** `{dotnet_root}/shared`, `{dotnet_root}/shared/Microsoft.NETCore.App`
 
 - `dotnet-hostfxr-[major].[minor]` - dependency
   - **Version:** \<runtime version>
   - **Example:** dotnet-hostfxr-3.0
   - **Contains:** (2)
   - **Dependencies:** `dotnet-host`
-  - **Provides shared directory:** `{dotnet_root}/host/fxr`
 
 - `dotnet-host` - dependency
   - **Version:** \<runtime version>
   - **Example:** dotnet-host
   - **Contains:** (1),(8),(9),(10),(16)
-  - **Provides shared directory:** `{dotnet_root}`, `{dotnet_root}/host`
 
 - `dotnet-apphost-pack-[major].[minor]` - dependency
   - **Version:** \<runtime version>
   - **Contains:** (13)
-  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
-  - **Provides shared directory:** `{dotnet_root}/packs`, `{dotnet_root}/packs/Microsoft.NETCore.App.Host.<rid>`
 
 - `dotnet-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
   - **Version:** \<runtime version>
   - **Contains:** (12)
-  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
-  - **Provides shared directory:** `{dotnet_root}/packs`, `{dotnet_root}/packs/Microsoft.NETCore.App.Ref`
 
 - `aspnetcore-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
   - **Version:** \<aspnetcore runtime version>
   - **Contains:** (11)
-  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
-  - **Provides shared directory:** `{dotnet_root}/packs`, `{dotnet_root}/packs/Microsoft.AspNetCore.App.Ref`
 
 - `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version
   - **Version:** \<sdk version>
   - **Contains:** (15)
-  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
-  - **Provides shared directory:** `{dotnet_root}/packs`, `{dotnet_root}/packs/NETStandard.Library.Ref`
 
 - `dotnet-templates-[major].[minor]`
   - **Version:** \<sdk version>
   - **Contains:** (15)
-  - **Dependencies:** `dotnet-host` (provides `{dotnet_root}`)
-  - **Provides shared directory:** `{dotnet_root}/templates`
 
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 
@@ -185,6 +170,8 @@ Most distributions require all artifacts to be built from source. This has some 
 - The `NuGetFallbackFolder` is populated using binary artifacts from `nuget.org`. It should remain empty.
 
 Multiple `dotnet-sdk` packages may provide the same files for the `NuGetFallbackFolder`. To avoid issues with the package manager, these files should be identical (checksum, modification date, and so on).
+
+The folders marked with `(*)` are used by multiple packages. Some package formats (e.g. `rpm`) require special handling of such folders. The package maintainer must take care of this.
 
 ## Building packages
 

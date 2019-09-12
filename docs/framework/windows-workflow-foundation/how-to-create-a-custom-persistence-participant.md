@@ -14,6 +14,8 @@ The following procedure has steps to create a persistence participant. See the [
   
     ```csharp  
     protected virtual void CollectValues(out IDictionary<XName,Object> readWriteValues, out IDictionary<XName,Object> writeOnlyValues)
+    {
+    }
     ```  
   
 3. Implement the <xref:System.Activities.Persistence.PersistenceParticipant.MapValues%2A> method. The **MapValues** method takes two parameters that are similar to the parameters that the **CollectValues** method receives. All the values collected in the **CollectValues** stage are passed through these dictionary parameters. The new values added by the **MapValues** stage are added to the write-only values.  The write-only dictionary is used to provide data to an external source not directly associated with the instance values. Each value provided by implementations of the **MapValues** method across all persistence participants must have a unique name.  

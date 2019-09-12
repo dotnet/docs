@@ -39,7 +39,7 @@ To create a custom exception, follow these steps:
     }
     ```
 
-- If you need, define additional properties and constructors:
+1. Define any additional properties and constructors:
 
     ```csharp
     [Serializable]

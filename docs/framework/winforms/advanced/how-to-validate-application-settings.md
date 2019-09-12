@@ -98,10 +98,10 @@ The following procedures were written under the assumption that the application 
     private void MyCustomSettings_SettingChanging(Object sender, SettingChangingEventArgs e)
     {
         if (e.SettingName.Equals("DateOfBirth"))
-		{
+        {
             var newDate = (Date)e.NewValue;
             if (newDate > Date.Now)
-			{
+            {
                 e.Cancel = true;
                 // Inform the user.
             }

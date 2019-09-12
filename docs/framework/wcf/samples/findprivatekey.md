@@ -24,7 +24,7 @@ When running a Windows Communication Foundation (WCF) service under a user accou
 
 When accessing a certificate for which the process doesn't have read privilege, you see an exception message similar to the following example:
 
-```console
+```output
 System.ArgumentException was unhandled
 Message="The certificate 'CN=localhost' must have a private key that is capable of key exchange.  The process must have access rights for the private key."
 Source="System.ServiceModel"
@@ -66,7 +66,7 @@ FindPrivateKey <storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbpri
 
 Where:
 
-| Command         | Description                                                                       |
+| Parameter         | Description                                                                       |
 |-----------------|-----------------------------------------------------------------------------------|
 | `<subjectName>` | The subject name of the certificate                                               |
 | `<thumbprint>`  | The thumbprint of the certificate (You can use the Certmgr.exe tool to find this) |

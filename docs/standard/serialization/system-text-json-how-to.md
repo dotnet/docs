@@ -21,6 +21,8 @@ The code examples that show attributes require the following directive:
 using System.Text.Json.Serialization;
 ```
 
+Attributes from the <xref:System.Runtime.Serialization> namespace are not supported. 
+
 All other code examples require the following directive:
 
 ```csharp
@@ -115,7 +117,7 @@ Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize
 
 * All public properties are serialized. You can [specify properties to exclude](#exclude-properties).
 * Casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
-* Circular references are detected and exceptions thrown.
+* [Circular references](https://github.com/dotnet/corefx/issues/38579) are detected and exceptions thrown.
 * Fields are excluded.
 * Supported types include:
   * .NET primitives that map to JavaScript primitives.
@@ -199,8 +201,10 @@ Overloads of <xref:System.Text.Json.JsonSerializer.Deserialize*> let you deseria
 ### Default deserialization behavior
 
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
-* Deserialization of reference types without a parameterless constructor isn't supported.
+* Deserialization to reference types without a parameterless constructor isn't supported.
+* Deserialization to [immutable objects](https://github.com/dotnet/corefx/issues/38569) or [read-only properties](https://github.com/dotnet/corefx/issues/38163) isn't supported.
 * Comments or trailing commas in the JSON trigger exceptions.
+* A nullable property is set to null if the JSON has a null value or the property is missing from the JSON. For information about how to differentiate these two situations, see [GitHub issue 37485](https://github.com/dotnet/corefx/issues/37485).
 
 ## Serialize to formatted JSON
 
@@ -264,6 +268,8 @@ This section explains how to:
 * Convert all property names to camel case
 * Implement a custom property naming policy
 * Convert dictionary keys to camel case
+
+There's no support for automatically [converting enums to camel case](https://github.com/dotnet/corefx/issues/37725).
 
 ### Customize individual property names
 
@@ -517,8 +523,7 @@ Example object to serialize:
 }
 ```
 
-This setting applies to serialization and deserialization.
-
+This setting applies to serialization and deserialization. During deserialization, null values in the JSON are ignored only if they are valid. [Null values for non-nullable value types cause exceptions](https://github.com/dotnet/corefx/issues/40922).
 
 ## Case-insensitive property matching
 
@@ -552,13 +557,7 @@ Resulting object property values after matching camel case to Pascal case proper
 
 ## Include properties of derived classes
 
-Call an overload of `Serialize` that lets you specify the type at runtime:
-
-```csharp
-json = JsonSerializer.Serialize(weatherForecast, weatherForecast.GetType());
-```
-
-To explain why this overload is necessary, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
+Suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
 
 ```csharp
 class WeatherForecast
@@ -585,7 +584,7 @@ WeatherForecast weatherForecast;
 json = JsonSerializer.Serialize(weatherForecast);
 ```
 
-In this scenario, the `WindSpeed` property is not serialized even if the weatherForecast object is actually a `WeatherForecastWithWind` object. Only the base class properties are serialized:
+In this scenario, the `WindSpeed` property is not serialized even if the `weatherForecast` object is actually a `WeatherForecastWithWind` object. Only the base class properties are serialized:
 
 ```json
 {
@@ -597,14 +596,28 @@ In this scenario, the `WindSpeed` property is not serialized even if the weather
 
 This behavior is intended to help prevent accidental exposure of data in a derived runtime-created type.
 
-When you call a `Serialize` overload with `GetType()`, the `WindSpeed` property is included:
+To serialize the properties of the derived type, use one of the following approaches:
+
+* Call an overload of `Serialize` that lets you specify the type at runtime:
+
+  ```csharp
+  json = JsonSerializer.Serialize(weatherForecast, weatherForecast.GetType());
+  ```
+
+* Declare the object to be serialized as `object`.
+
+  ```csharp
+  json = JsonSerializer.Serialize<object>(weatherForecast);
+  ```
+
+In the preceding example, both approaches cause the `WindSpeed` property to be included in the JSON output:
 
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
   "TemperatureC": 25,
   "Summary": "Hot",
-  "Wind": 35
+  "WindSpeed": 35
 }
 ```
 

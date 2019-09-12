@@ -7,7 +7,9 @@ ms.date: 09/02/2019
 
 # Migrate WCF duplex services to gRPC
 
-There are multiple ways to use Duplex services in WCF. Some services are initiated by the client and then stream data from the server; other "Full Duplex" services might involve more ongoing two-way communication like the classic "Calculator" example from the WCF documentation. This chapter will take two possible WCF "Stock Ticker" implementations and migrate them to gRPC, one using a Server streaming RPC, and one a Bi-directional Streaming RPC.
+Now the basic concepts are in place, this section will look at the more complicated *streaming* gRPC services.
+
+There are multiple ways to use Duplex services in WCF. Some services are initiated by the client and then stream data from the server; other "Full Duplex" services might involve more ongoing two-way communication like the classic "Calculator" example from the WCF documentation. This chapter will take two possible WCF "Stock Ticker" implementations and migrate them to gRPC: one using a Server streaming RPC, and one a Bi-directional Streaming RPC.
 
 ## Server streaming RPC
 
@@ -77,7 +79,7 @@ message StockTickerUpdate {
 
 ### Implementing the SimpleStockTicker
 
-Reuse the `StockPriceSubscriber` fake from the WCF project by copying the three classes from the `TraderSys.StockMarket` class library into a new .NET Standard class library in the target solution. To better follow best practices, add a `Factory` type to create instances of it and register the `IStockPriceSubscribeFactory` with ASP.NET Core's dependency injection services.
+Reuse the `StockPriceSubscriber` fake from the WCF project by copying the three classes from the `TraderSys.StockMarket` class library into a new .NET Standard class library in the target solution. To better follow best practices, add a `Factory` type to create instances of it and register the `IStockPriceSubscriberFactory` with ASP.NET Core's dependency injection services.
 
 #### The factory implementation
 
@@ -207,6 +209,10 @@ The stream is passed to an async `DisplayAsync` method; the application then wai
 
 #### Consuming the stream
 
+WCF used callback interfaces to allow the server to call methods directly on the client. gRPC streams work differently; the client iterates over the returned stream and processes messages, just as though they were returned from a local method returning an `IEnumerable`.
+
+The `IAsyncStreamReader<T>` type works much like an `IEnumerator<T>`: there is a `MoveNext` method that will return true as long as there is more data, and a `Current` property that returns the latest value. The only difference is that the `MoveNext` method returns a `Task<bool>` instead of just a `bool`. The `ReadAllAsync` extension method wraps the stream in a standard C# 8 `IAsyncEnumerable` that can be used with the new `await foreach` syntax.
+
 ```csharp
 static async Task DisplayAsync(IAsyncStreamReader<StockTickerUpdate> stream, CancellationToken token)
 {
@@ -231,8 +237,6 @@ static async Task DisplayAsync(IAsyncStreamReader<StockTickerUpdate> stream, Can
 }
 ```
 
-The `IAsyncStreamReader<T>` type works much like an `IEnumerator<T>`: there is a `MoveNext` method that will return true as long as there is more data, and a `Current` property that returns the latest value. The only difference is that the `MoveNext` method returns a `Task<bool>` instead of just a `bool`. The `ReadAllAsync` extension method wraps the stream in a standard C# 8 `IAsyncEnumerable` that can be used with the new `await foreach` syntax.
-
 > [!TIP]
 > In the section at the end of the chapter, there will be a look at how to add an extension method and classes to wrap `IAsyncStreamReader<T>` in an `IObservable<T>` for developers using reactive programming patterns.
 
@@ -246,7 +250,7 @@ The `IFullStockTickerService` interface provides three methods:
 
 - `Subscribe` initiates the connection
 - `AddSymbol` adds a stock symbol to watch
-- `RemoveSymbol` removes a symbol
+- `RemoveSymbol` removes a symbol from the watched list
 
 ```csharp
 [ServiceContract(SessionMode = SessionMode.Required, CallbackContract = typeof(IFullStockTickerCallback))]
@@ -265,7 +269,7 @@ public interface IFullStockTickerService
 
 The callback interface remains the same.
 
-Implementing this pattern in gRPC is less straightforward, because there are now two streams of data with messages being passed. It is not possible to use multiple methods to implement the Add and Remove operation, but more than one type of message can be passed on a single stream, using either the `Any` type or `oneof` keyword.
+Implementing this pattern in gRPC is less straightforward, because there are now two streams of data with messages being passed: one from client to server, and another from server to client. It is not possible to use multiple methods to implement the Add and Remove operation, but more than one type of message can be passed on a single stream, using either the `Any` type or `oneof` keyword, which were covered in [Chapter 3](protobuf-any-oneof.md).
 
 For a case where there is a very specific set of types that are acceptable, `oneof` is a better way to go. Use an `ActionMessage` that can hold either an `AddSymbolRequest` or a `RemoveSymbolRequest`.
 
@@ -312,6 +316,31 @@ public override async Task Subscribe(IAsyncStreamReader<ActionMessage> requestSt
     try { await actionsTask; } catch { /* Ignored */ }
 
     _logger.LogInformation("Subscription finished.");
+}
+
+private async Task WriteUpdateAsync(IServerStreamWriter<StockTickerUpdate> stream, string symbol, decimal price)
+{
+    try
+    {
+        await stream.WriteAsync(new StockTickerUpdate
+        {
+            Symbol = symbol,
+            PriceCents = (int)(price * 100),
+            Time = Timestamp.FromDateTimeOffset(DateTimeOffset.UtcNow)
+        });
+    }
+    catch (Exception e)
+    {
+        // Handle any errors due to broken connection etc.
+        _logger.LogError($"Failed to write message: {e.Message}");
+    }
+}
+
+private static Task AwaitCancellation(CancellationToken token)
+{
+    var completion = new TaskCompletionSource<object>();
+    token.Register(() => completion.SetResult(null));
+    return completion.Task;
 }
 ```
 
@@ -449,6 +478,8 @@ public ValueTask DisposeAsync()
     }
 }
 ```
+
+Closing request streams enables the server to dispose of its own resources in a timely manner, improving the efficiency and scalability of services and preventing exceptions.
 
 >[!div class="step-by-step"]
 <!-->[Next](streaming-vs-repeated.md)-->

@@ -5,6 +5,10 @@ helpviewer_keywords:
   - "Windows Forms controls, accessibility"
   - "controls [Windows Forms], accessibility"
   - "accessibility [Windows Forms], Windows Forms controls"
+dev_langs:
+  - "csharp"
+  - "vb"
+  - "cpp"
 ms.assetid: 887dee6f-5059-4d57-957d-7c6fcd4acb10
 ---
 # Providing Accessibility Information for Controls on a Windows Form
@@ -27,19 +31,16 @@ Accessibility aids are specialized programs and devices that help people with di
  This string describes the action of the control. It does not appear in the Properties window and may only be set in code. The following example sets this property for a button control:  
   
 ```vb  
-' Visual Basic  
 Button1.AccessibleDefaultActionDescription = _  
    "Closes the application."  
 ``` 
 
 ```csharp  
-// C#  
 Button1.AccessibleDefaultActionDescription =   
    "Closes the application.";  
 ```
 
 ```cpp  
-// C++  
 button1->AccessibleDefaultActionDescription =  
    "Closes the application.";  
 ```  
@@ -48,17 +49,14 @@ button1->AccessibleDefaultActionDescription =
  This string describes the control. It may be set in the Properties window, or in code as follows:  
   
 ```vb  
-' Visual Basic  
 Button1.AccessibleDescription = "A button with text 'Exit'."  
 ```
 
 ```csharp  
-// C#  
 Button1.AccessibleDescription = "A button with text 'Exit'";  
 ```
 
 ```cpp  
-// C++  
 button1->AccessibleDescription = "A button with text 'Exit'";  
 ```  
   
@@ -66,35 +64,29 @@ button1->AccessibleDescription = "A button with text 'Exit'";
  This is the name of a control reported to accessibility aids. It may be set in the Properties window, or in code as follows:  
   
 ```vb  
-' Visual Basic  
 Button1.AccessibleName = "Order"  
 ```
 
 ```csharp  
-// C#  
 Button1.AccessibleName = "Order";  
 ```
 
 ```cpp  
-// C++  
 button1->AccessibleName = "Order";  
 ```  
   
 ## AccessibleRole Property  
  This property, which contains an <xref:System.Windows.Forms.AccessibleRole> enumeration, describes the user interface role of the control. A new control has the value set to `Default`. This would mean that by default, a **Button** control acts as a **Button**. You may want to reset this property if a control has another role. For example, you may be using a **PictureBox** control as a **Chart**, and you may want accessibility aids to report the role as a **Chart**, not as a **PictureBox**. You may also want to specify this property for custom controls you have developed. This property may be set in the Properties window, or in code as follows:  
   
-```vb  
-' Visual Basic  
+```vb 
 PictureBox1.AccessibleRole = AccessibleRole.Chart  
 ```
 
 ```csharp  
-// C#  
 PictureBox1.AccessibleRole = AccessibleRole.Chart;  
 ```
 
 ```cpp  
-// C++  
 pictureBox1->AccessibleRole = AccessibleRole::Chart;  
 ```  
   

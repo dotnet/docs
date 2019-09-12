@@ -1,4 +1,4 @@
-﻿---
+---
 title: Protocol Buffers - gRPC for WCF Developers
 description: Introduction to the Protocol Buffers wire format used for gRPC networking
 author: markrendle

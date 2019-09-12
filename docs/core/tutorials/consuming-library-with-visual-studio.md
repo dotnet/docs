@@ -22,6 +22,8 @@ Once you've created a .NET Standard class library by following the steps in [Bui
 
 Just as you included unit tests in the same solution as your class library, you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
+<!-- markdownlint-disable MD025 -->
+
 # [C#](#tab/csharp)
 
 1. Open the `ClassLibraryProjects` solution you created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.

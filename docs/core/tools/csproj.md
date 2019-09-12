@@ -390,7 +390,7 @@ Semicolon separated list of key=value pairs.
 
 ## AssemblyInfo properties
 
-[Assembly attributes](../../framework/app-domains/set-assembly-attributes.md) that were typically present in an *AssemblyInfo* file are now automatically generated from properties.
+[Assembly attributes](../../standard/assembly/set-attributes.md) that were typically present in an *AssemblyInfo* file are now automatically generated from properties.
 
 ### Properties per attribute
 

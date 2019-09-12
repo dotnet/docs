@@ -33,7 +33,7 @@ If you decide to declare COM types manually in managed source code, the best pla
   
  **IDL or type library file**  
   
-```  
+```cpp
  [  
 object,  
 uuid(40A8C65D-2448-447A-B786-64682CBEF133),  

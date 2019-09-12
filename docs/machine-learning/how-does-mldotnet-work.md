@@ -78,6 +78,7 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 ## Code workflow
 
 The following diagram represents the application code structure, as well as the iterative process of model development:
+
 - Collect and load training data into an **IDataView** object
 - Specify a pipeline of operations to extract features and apply a machine learning algorithm
 - Train a model by calling **Fit()** on the pipeline

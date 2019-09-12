@@ -61,4 +61,4 @@ This tutorial assumes that you have finished the lessons listed above.
 This final tutorial is only available to run on your machine, using your own local development environment and .NET Core.
 You'll build a console application and see the basic object-oriented features that are part of the C# language.
 
-This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://www.microsoft.com/net/download) and [Visual Studio Code](https://code.visualstudio.com/).
+This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/).

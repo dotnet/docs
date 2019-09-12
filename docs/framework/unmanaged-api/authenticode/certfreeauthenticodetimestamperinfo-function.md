@@ -12,7 +12,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CertFreeAuthenticodeTimestamperInfo Function
-Frees resources allocated for the [AXL_AUTHENTICODE_TIMESTAMPER_INFO](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-timestamper-info-structure.md) structure.  
+Frees resources allocated for the [AXL_AUTHENTICODE_TIMESTAMPER_INFO](axl-authenticode-timestamper-info-structure.md) structure.  
   
 ## Syntax  
   
@@ -24,11 +24,11 @@ HRESULT CertFreeAuthenticodeTimestamperInfo (
   
 ## Parameters  
  `pTimestamperInfo`  
- [in, out] The time stamper information to be released. See the [AXL_AUTHENTICODE_TIMESTAMPER_INFO](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-timestamper-info-structure.md) structure.  
+ [in, out] The time stamper information to be released. See the [AXL_AUTHENTICODE_TIMESTAMPER_INFO](axl-authenticode-timestamper-info-structure.md) structure.  
   
 ## Return Value  
  `S_OK` if the function succeeds. Otherwise, returns an error code.  
   
 ## See also
 
-- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [Authenticode](index.md)

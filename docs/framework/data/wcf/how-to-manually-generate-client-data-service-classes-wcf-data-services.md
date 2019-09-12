@@ -7,9 +7,9 @@ helpviewer_keywords:
 ms.assetid: b98cb1d6-956a-4e50-add6-67e4f2587346
 ---
 # How to: Manually Generate Client Data Service Classes (WCF Data Services)
-WCF Data Services integrates with Visual Studio to enable you to automatically generate client data service classes when you use the **Add Service Reference** dialog box to add a reference to a data service in a Visual Studio project. For more information, see [How to: Add a Data Service Reference](../../../../docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md). You can also manually generate the same client data service classes by using the code-generation tool, `DataSvcUtil.exe`. This tool, which is included with WCF Data Services, generates .NET Framework classes from the data service definition. It can also be used to generate data service classes from the conceptual model (.csdl) file and from the .edmx file that represents an Entity Framework model in a Visual Studio project.
+WCF Data Services integrates with Visual Studio to enable you to automatically generate client data service classes when you use the **Add Service Reference** dialog box to add a reference to a data service in a Visual Studio project. For more information, see [How to: Add a Data Service Reference](how-to-add-a-data-service-reference-wcf-data-services.md). You can also manually generate the same client data service classes by using the code-generation tool, `DataSvcUtil.exe`. This tool, which is included with WCF Data Services, generates .NET Framework classes from the data service definition. It can also be used to generate data service classes from the conceptual model (.csdl) file and from the .edmx file that represents an Entity Framework model in a Visual Studio project.
 
- The example in this topic creates client data service classes based on the Northwind sample data service. This service is created when you complete the [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md). Some examples in this topic require the conceptual model file for the Northwind model. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md). Some examples in this topic require the .edmx file for the Northwind model. For more information, see [.edmx File Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100)).
+ The example in this topic creates client data service classes based on the Northwind sample data service. This service is created when you complete the [WCF Data Services quickstart](quickstart-wcf-data-services.md). Some examples in this topic require the conceptual model file for the Northwind model. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](../adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md). Some examples in this topic require the .edmx file for the Northwind model. For more information, see [.edmx File Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100)).
 
 ### To generate C# classes that support data binding
 
@@ -37,7 +37,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\DataSvcUtil.exe" /language:CSharp /out:northwind.cs /uri:http://localhost:12345/Northwind.svc
     ```
 
@@ -48,7 +48,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /out:Northwind.vb /uri:http://localhost:12345/Northwind.svc
     ```
 
@@ -59,7 +59,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:CSharp /in:Northwind.csdl /out:Northwind.cs
     ```
 
@@ -67,7 +67,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /in:Northwind.csdl /out:Northwind.vb
     ```
 
@@ -75,7 +75,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:CSharp /in:Northwind.edmx /out:c:\northwind.cs
     ```
 
@@ -83,12 +83,12 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /in:Northwind.edmx /out:c:\northwind.vb
     ```
 
 ## See also
 
-- [Generating the Data Service Client Library](../../../../docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md)
-- [How to: Add a Data Service Reference](../../../../docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md)
-- [WCF Data Service Client Utility (DataSvcUtil.exe)](../../../../docs/framework/data/wcf/wcf-data-service-client-utility-datasvcutil-exe.md)
+- [Generating the Data Service Client Library](generating-the-data-service-client-library-wcf-data-services.md)
+- [How to: Add a Data Service Reference](how-to-add-a-data-service-reference-wcf-data-services.md)
+- [WCF Data Service Client Utility (DataSvcUtil.exe)](wcf-data-service-client-utility-datasvcutil-exe.md)

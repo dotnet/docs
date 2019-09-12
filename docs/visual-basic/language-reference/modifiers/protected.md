@@ -19,6 +19,7 @@ A member access modifier that specifies that one or more declared programming el
 
 > [!NOTE]
 > The `Protected` access modifier can be combined with two other modifiers:
+>
 > - The [Protected Friend](protected-friend.md) modifier makes a class member accessible from within that class, from derived classes, and from the same assembly in which the class is defined. 
 > - The [Private Protected](private-protected.md) modifier makes a class member accessible by derived types, but only within its containing assembly.
   

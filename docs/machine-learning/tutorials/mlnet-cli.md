@@ -15,6 +15,7 @@ Learn how to use ML.NET CLI to automatically generate an ML.NET model and underl
 
 In this tutorial, you will do the following steps:
 > [!div class="checklist"]
+>
 > - Prepare your data for the selected machine learning task
 > - Run the 'mlnet auto-train' command from the CLI
 > - Review the quality metric results
@@ -22,7 +23,7 @@ In this tutorial, you will do the following steps:
 > - Explore the generated C# code that was used to train the model
 
 > [!NOTE]
-> This topic refers to the ML.NET CLI tool, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+> This topic refers to the ML.NET CLI tool, which is currently in Preview, and material may be subject to change. For more information, visit the [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) page.
 
 The ML.NET CLI is part of ML.NET and its main goal is to "democratize" ML.NET for .NET developers when learning ML.NET so you don't need to code from scratch to get started.
 
@@ -90,7 +91,8 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 
     You will see output from the CLI, similar to:
 
-    <!-- markdownlint-disable MD023 -->
+    <!-- markdownlint-disable MD023 MD025 -->
+
     # [Windows](#tab/windows)
 
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/mlnet-auto-train-binary-classification-powershell.gif)
@@ -255,6 +257,7 @@ It is interesting to compare the chosen algorithm and pipeline configuration in 
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Prepare your data for the selected ML task (problem to solve)
 > - Run the 'mlnet auto-train' command in the CLI tool
 > - Review the quality metric results

@@ -14,12 +14,12 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Sn.exe (Strong Name Tool)
-The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../../docs/framework/app-domains/strong-named-assemblies.md). Sn.exe provides options for key management, signature generation, and signature verification.  
+The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../standard/assembly/strong-named.md). Sn.exe provides options for key management, signature generation, and signature verification.  
   
 > [!WARNING]
 > Do not rely on strong names for security. They provide a unique identity only.
 
- For more information on strong naming and strong-named assemblies, see [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md) and [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md).  
+ For more information on strong naming and strong-named assemblies, see [Strong-Named Assemblies](../../standard/assembly/strong-named.md) and [How to: Sign an Assembly with a Strong Name](../../standard/assembly/sign-strong-name.md).  
   
  The Strong Name tool is automatically installed with Visual Studio. To start the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
 
@@ -30,7 +30,7 @@ The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../..
   
 ## Syntax  
   
-```  
+```console  
 sn [-quiet][option [parameter(s)]]  
 ```  
   
@@ -84,37 +84,37 @@ The Strong Name tool assumes that public/private key pairs are generated with th
 ## Examples  
  The following command creates a new, random key pair and stores it in `keyPair.snk`.  
   
-```  
+```console  
 sn -k keyPair.snk  
 ```  
   
  The following command stores the key in `keyPair.snk` in the container `MyContainer` in the strong name CSP.  
   
-```  
+```console  
 sn -i keyPair.snk MyContainer  
 ```  
   
  The following command extracts the public key from `keyPair.snk` and stores it in `publicKey.snk`.  
   
-```  
+```console  
 sn -p keyPair.snk publicKey.snk  
 ```  
   
  The following command displays the public key and the token for the public key contained in `publicKey.snk`.  
   
-```  
+```console  
 sn -tp publicKey.snk  
 ```  
   
  The following command verifies the assembly `MyAsm.dll`.  
   
-```  
+```console  
 sn -v MyAsm.dll  
 ```  
   
  The following command deletes `MyContainer` from the default CSP.  
   
-```  
+```console  
 sn -d MyContainer  
 ```  
   
@@ -122,5 +122,5 @@ sn -d MyContainer
 
 - [Tools](../../../docs/framework/tools/index.md)
 - [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
-- [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)
+- [Strong-Named Assemblies](../../standard/assembly/strong-named.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

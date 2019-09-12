@@ -6,11 +6,12 @@ ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
 # \<security> of \<netTcpBinding>
 Defines the security settings for a binding.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<netTcpBinding>  
-\<binding>  
-\<security>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netTcpBinding>**](nettcpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
 ## Syntax  
   

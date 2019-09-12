@@ -73,4 +73,4 @@ foreach (DataRowView catDRV in catView)
 - <xref:System.Data.DataView>
 - <xref:System.Data.DataRowView>
 - [DataViews](dataviews.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

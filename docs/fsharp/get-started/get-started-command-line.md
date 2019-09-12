@@ -9,7 +9,7 @@ This article covers how you can get started with F# on any operating system (Win
 
 ## Prerequisites
 
-To begin, you must install the latest [.NET Core SDK](https://www.microsoft.com/net/download/).
+To begin, you must install the latest [.NET Core SDK](https://dotnet.microsoft.com/download).
 
 This article assumes that you know how to use a command line and have a preferred text editor. If you don't already use it, [Visual Studio Code](get-started-vscode.md) is a great option as a text editor for F#.
 

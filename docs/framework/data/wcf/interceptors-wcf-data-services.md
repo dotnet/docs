@@ -17,7 +17,7 @@ ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
  [!code-csharp[Astoria Northwind Service#QueryInterceptorDef](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#queryinterceptordef)]
  [!code-vb[Astoria Northwind Service#QueryInterceptorDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#queryinterceptordef)]  
   
- For more information, see [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md).  
+ For more information, see [How to: Intercept Data Service Messages](how-to-intercept-data-service-messages-wcf-data-services.md).  
   
  Change interceptors, which are called when processing non-query operations, must return `void` (`Nothing` in Visual Basic). Change interceptor methods must accept the following two parameters:  
   
@@ -30,7 +30,7 @@ ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
  [!code-csharp[Astoria Northwind Service#ChangeInterceptorDef](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#changeinterceptordef)]
  [!code-vb[Astoria Northwind Service#ChangeInterceptorDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#changeinterceptordef)]  
   
- For more information, see [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md).  
+ For more information, see [How to: Intercept Data Service Messages](how-to-intercept-data-service-messages-wcf-data-services.md).  
   
  The following attributes are supported for interception.  
   
@@ -40,8 +40,8 @@ ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
  **[ChangeInterceptor(** *EntitySetName* **)]**  
  Methods with the <xref:System.Data.Services.ChangeInterceptorAttribute> attribute applied are called when an HTTP request other than HTTP GET request is received for the targeted entity set resource. These methods must always return `void` (`Nothing` in Visual Basic).  
   
- For more information, see [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md).  
+ For more information, see [How to: Intercept Data Service Messages](how-to-intercept-data-service-messages-wcf-data-services.md).  
   
 ## See also
 
-- [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)
+- [Service Operations](service-operations-wcf-data-services.md)

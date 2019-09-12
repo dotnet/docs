@@ -17,6 +17,7 @@ The Model Builder price prediction template can be used for any scenario requiri
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Prepare and understand the data
 > - Choose a scenario
 > - Load the data
@@ -186,6 +187,7 @@ If you need to reference the generated projects at a later time inside of anothe
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Prepare and understand the data
 > - Choose a scenario
 > - Load the data

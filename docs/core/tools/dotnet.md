@@ -13,6 +13,8 @@ ms.date: 06/04/2018
 
 ## Synopsis
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.1](#tab/netcore21)
 
 ```console
@@ -88,9 +90,10 @@ Displays the installed .NET Core SDKs.
 `--roll-forward-on-no-candidate-fx <N>`
 
 Defines behavior when the required shared framework is not available. `N` can be:
-* `0` - Disable even minor version roll forward.
-* `1` - Roll forward on minor version, but not on major version. This is the default behavior.
-* `2` - Roll forward on minor and major versions.
+
+- `0` - Disable even minor version roll forward.
+- `1` - Roll forward on minor version, but not on major version. This is the default behavior.
+- `2` - Roll forward on minor and major versions.
 
  For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 

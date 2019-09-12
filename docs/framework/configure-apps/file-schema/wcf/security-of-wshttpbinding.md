@@ -6,11 +6,12 @@ ms.assetid: 8658b162-2ddf-4162-a869-aa517a42288a
 # \<security> of \<wsHttpBinding>
 Represents the security capabilities of the [\<wsHttpBinding>](wshttpbinding.md).  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<wsHttpBinding>  
-\<binding>  
-\<security>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<wsHttpBinding>**](wshttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
 ## Syntax  
   

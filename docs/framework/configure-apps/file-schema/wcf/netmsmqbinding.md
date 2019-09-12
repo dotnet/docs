@@ -6,9 +6,10 @@ ms.assetid: a68b44d7-7799-43a3-9e63-f07c782810a6
 # \<netMsmqBinding>
 Defines a queued binding suitable for cross-machine communication.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<netMsmqBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<netMsmqBinding>**  
   
 ## Syntax  
   

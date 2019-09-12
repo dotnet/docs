@@ -18,11 +18,15 @@ The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service R
 
 ## Prerequisites
 
+<!-- markdownlint-disable MD025 -->
+
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
+
 * [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions
 * Your favorite code editor
 
 # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
+
 * [.NET Core 1.0.4 SDK](https://dotnet.microsoft.com/download) or later versions
 * Your favorite code editor
 

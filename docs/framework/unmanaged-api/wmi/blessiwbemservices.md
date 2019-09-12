@@ -24,7 +24,7 @@ Indicates whether the user credentials permit access to the specified [IWbemServ
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT BlessIWbemServices (
    [in] IWbemServices* pIWbemServices,
    [in] BSTR strUser, 
@@ -69,7 +69,7 @@ The following values returned by this function are defined in the *WinError.h* h
 
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

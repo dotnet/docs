@@ -19,7 +19,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # IInstallReferenceEnum::GetNextInstallReferenceItem Method
-Gets a pointer to the next [IInstallReferenceItem](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md) object contained in this [IInstallReferenceEnum](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md) object.  
+Gets a pointer to the next [IInstallReferenceItem](iinstallreferenceitem-interface.md) object contained in this [IInstallReferenceEnum](iinstallreferenceenum-interface.md) object.  
   
 ## Syntax  
   
@@ -42,7 +42,7 @@ HRESULT GetNextInstallReferenceItem (
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -50,5 +50,5 @@ HRESULT GetNextInstallReferenceItem (
   
 ## See also
 
-- [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)
-- [IInstallReferenceEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md)
+- [IInstallReferenceItem Interface](iinstallreferenceitem-interface.md)
+- [IInstallReferenceEnum Interface](iinstallreferenceenum-interface.md)

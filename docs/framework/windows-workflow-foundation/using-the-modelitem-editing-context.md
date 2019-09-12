@@ -34,7 +34,8 @@ The <xref:System.Activities.Presentation.Model.ModelItem> editing context is the
 ```csharp  
 [Designer(typeof(MyClassDesigner))]  
 public sealed class MyClass : CodeActivity  
-{  
+{
+}
 ```  
   
 ## Creating a service  

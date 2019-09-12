@@ -54,7 +54,7 @@ In the binary format, the field number is combined with a type identifier. Field
 The type declarations are using Protobuf's native scalar data types, which are discussed in more detail in [the next section](protobuf-data-types.md). The remainder of this chapter will cover Protobuf's built-in types, and show how they relate to common .NET types.
 
 > [!NOTE]
-> Protobuf doesn't natively support a `decimal` type, so double is used instead. For applications that require full decimal precision, refer to the [section on Decimals](protobuf-data-types.md#Decimals) in the next part of this chapter.
+> Protobuf doesn't natively support a `decimal` type, so double is used instead. For applications that require full decimal precision, refer to the [section on Decimals](protobuf-data-types.md#decimals) in the next part of this chapter.
 
 ## The generated code
 

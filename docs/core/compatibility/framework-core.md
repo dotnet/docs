@@ -5,16 +5,16 @@ ms.date: "09/10/2019"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Breaking changes for migration from Version 3.0 Preview 8 to 3.0 Preview 9
+# Breaking changes for migration from .NET Framework to .NET Core 3.0
 
 > [!IMPORTANT]
 > This article is under construction. This is not a complete list of .NET Core breaking changes. For more information on .NET Core breaking changes, you can examine individual [breaking changes issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Abreaking-change) in the dotnet/docs repo on GitHub. 
 
-If you are migrating from 3.0 Preview 8 to 3.0 Preview 9 of .NET Core, ASP.NET Core, or EF Core, review the following topics for breaking changes that may affect your app:
+If you are migrating a Windows Forms or Windows Presentation Foundation application from .NET Framework to .NET Core 3.0, review the following topics for breaking changes that may affect your app:
 
-## CoreFx
+## Windows Forms
 
-[!INCLUDE[Json serializer exception type changed from JsonException to NotSupportedException](~/includes/core-changes/corefx/serializer-throws-notsupportedexception.md)]
+[!INCLUDE[Control.DefaultFont changed to Segoe UI 9pt](~/includes/core-changes/windowsforms/control-defaultfont-changed.md)]
 
 ## Cryptography
 

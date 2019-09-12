@@ -87,7 +87,7 @@ The machine learning task used to train the price prediction model in this tutor
 
 The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
 
-1. Leave the default the value as is for *Time to train (seconds)* unless you prefer to train for a longer time.
+1. Leave the default value as is for *Time to train (seconds)* unless you prefer to train for a longer time.
 2. Select *Start Training*.
 
 Throughout the training process, progress data is displayed in the `Progress` section of the train step.

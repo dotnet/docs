@@ -20,6 +20,35 @@ There are a variety of Acquisition options for .NET Core -
 * [.NET Core on GitHub](#NET-Core-on-GitHub)
 * [Update Notifications](#Update-Notifications)
 
+<table>
+<thead>
+<tr>
+<td>Acquisition Choice</td>
+<td colspan=5>Best For</td>
+</tr>
+<tr>
+<td></td><td>Developer</td> <td>End User</td> <td>DevOps/IT Admin</td> <td>Silent/Admin Install</td> <td>Update Notification</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Visual Studio and</td> <td>Y</td> <td>Y</td> <td>Y</td> <td>Y</td> <td>Y</td>
+</tr>
+</tbody>
+</table>
+
+|Acquisition Choice<td colspan=5>**Best For**|
+|-|-|-|-|-|-|-|-|-|-|-|
+| | Developer | End User | DevOps/IT Admin | Silent/Admin Install | Update Notification |
+[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | Y         | N        | N               | N                   | Y |
+[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | Y         | Y        | Y               | Y                   | Y |
+[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | N         | N        | Y               | Y                   | Y |
+[Docker](#Docker)                                                               | Y         | Y        | Y               | Y                   | N |
+[Linux Package Managers](#Linux-Package-Managers)                               | Y         | Y        | Y               | Y                   | Y |
+[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | Y         | N        | Y               | Y                   | N |
+[Snap store](#Snap-store)                                                       | Y         | Y        | Y               | Y                   | Y |
+[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | Y         | N        | N               | N                   | N |
+
 
 ## Visual Studio and Visual Studio Code
 

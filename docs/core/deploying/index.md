@@ -112,27 +112,31 @@ b) Import the test certificate on the target computer (Tursted Root Certificatio
 
 ## For DevOps Engineers and Enterprise IT Administrators
 
-When it comes to deploying the .NET Core tools or the .NET Core runtime you have several options to choose from.
+As a DevOps Engineer you may be responsible for deploying the .NET Core tools and runtime to CI/CD machines. Or, as an IT Administrator in an enterprise you may be responsible for deploying the .NET Core runtime to end user machines where .NET Core apps will run.
 
-### .NET Core runtime acquisition
-
-
-* [https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)
-* [Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)
-* [Docker](#Docker)
-* [Linux Package Managers](#Linux-Package-Managers)
-* [Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)
-* [Snap store](#Snap-store)
+| Step 1 | | Step 2 |
+|-|-|-|
+| [Acquire the .NET Core runtime](#acquire-the-net-core-runtime) | --> | [Deploy the .NET Core runtime](#deploy-the-net-core-runtime) | 
 
 
-### .NET Core tools acquisition
+<br/>
 
-Visual Studio, Visual Studio for Mac and Visual Studio Code
+### Acquire the .NET Core runtime
+
+When it comes to acquiring the .NET Core runtime and tools you have several options to choose from, you need to pick the approach that is right for your needs. Various options are covered in more detail in the [.NET Core Acquisition Experiences guide](acquisition-experiences.md).
 
 
-These options are covered in more detail in the [.NET Core Acquisition Experiences guide](acquisition-experiences.md).
+<br/>
+
+### Deploy the .NET Core runtime
+
+One option is using a software update management tool such as [System Center Configuration Manager (SCCM)](https://docs.microsoft.com/en-us/sccm/) or another similar tool. Tools like these allow you to define a target group of computers for deploying the .NET Core runtime, as well as the app itself and push the deployment to the target group. The SCCM client is supported on not only Windows Server and Client computers, it is also supported on Mac computers and Linux.
+
+For more information about using SCCM to deploy the .NET Core runtime refer to the guide [Create and deploy an application with SCCM](https://docs.microsoft.com/en-us/sccm/apps/get-started/create-and-deploy-an-application).
 
 
+
+<br/>
 
 ## See also
 

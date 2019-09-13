@@ -30,6 +30,8 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Setup
 
+### Create the application
+
 1. Create a **.NET Core Console Application** called "TextClassificationTF".
 
 2. Create a directory named *Data* in your project to save your data set files.
@@ -38,17 +40,17 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the license terms for the package you choose. Repeat these steps for **Microsoft.ML.TensorFlow**.
 
-> [!NOTE]
-> The model for this tutorial is from the [dotnet/machinelearning-testdata](https://github.com/dotnet/machinelearning-testdata/tree/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model) GitHub repo. The model is in 'SavedModel' format.
+    > [!NOTE]
+    > The model for this tutorial is from the [dotnet/machinelearning-testdata](https://github.com/dotnet/machinelearning-testdata/tree/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model) GitHub repo. The model is in TensorFlow SavedModel format.
 
-### Download the dataset and model
+### Add the TensorFlow model to the project
 
 1. Download the [sentiment_model zip file](https://github.com/dotnet/samples/blob/master/machine-learning/models/textclassificationtf/sentiment_model.zip?raw=true), and unzip.
 
     The zip file contains:
 
-    - `imdb_word_index.csv`: a mapping from individual words to an integer value. The mapping is used to generate the input features for the TensorFlow model
-    - `saved_model.pb`: the TensorFlow model itself. The model takes a fixed length (size 600) integer array of features representing the text in an IMDB review string, and outputs a value indicating whether the text has positive or negative sentiment 
+    * `saved_model.pb`: the TensorFlow model itself. The model takes a fixed length (size 600) integer array of features representing the text in an IMDB review string, and outputs two probabilities which sum to 1: the probability that the input review has positive sentiment, and the probability that the input review has negative sentiment.
+    * `imdb_word_index.csv`: a mapping from individual words to an integer value. The mapping is used to generate the input features for the TensorFlow model.
 
 2. Copy the contents of the innermost `sentiment_model` directory into your *TextClassificationTF* project `sentiment_model` directory. This directory contains the model and additional support files needed for this tutorial, as shown in the following image:
 
@@ -56,22 +58,39 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 3. In Solution Explorer, right-click each of the files in the `sentiment_model` directory and subdirectory and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-### Create classes and define paths
+### Add using statements and global variables
 
 1. Add the following additional `using` statements to the top of the *Program.cs* file:
 
    [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#AddUsings "Add necessary usings")]
 
-1. Create two global fields to hold the recently downloaded dataset file path and the saved model file path:
+1. Create two global variables right above the `Main` method to hold the recently downloaded dataset file path and the saved model file path:
+
+   [!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
     * `_modelPath` is the file path of the trained model.
     * `FeatureLength` is the length of the integer feature array that the model is expecting.
 
-    Add the following code to the line right above the `Main` method to add these variables:
+### Model the data
 
-   [!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareGlobalVariables "Declare global variables")]
+Movie reviews are free form text. Your application converts the text into the input format expected by the model in a number of discrete stages.
 
-1. Next, create classes for your input data and predictions. Add a new class to your project:
+The first is to split the text into separate words and use the provided mapping file to map each word onto an integer encoding. The result of this transformation is a variable length integer array with a length corresponding to the number of words in the sentence.
+
+|Property| Value|Type|
+|-------------|-----------------------|------|
+|SentimentText|this film is really good|string|
+|VariableLengthFeatures|14,22,9,66,78,... |int[]|
+
+The variable length feature array is then resized to a fixed length of 600. This is the length that the TensorFlow model expects.
+
+|Property| Value|Type|
+|-------------|-----------------------|------|
+|SentimentText|this film is really good|string|
+|VariableLengthFeatures|14,22,9,66,78,... |int[]|
+|Features|14,22,9,66,78,... |int[600]|
+
+1. Create classes for your input data and predictions. Add a new class to your project:
 
     * In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
@@ -83,37 +102,17 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Remove the existing class definition and add the following code, which has two classes `IMDBSentiment` and `IMDBPrediction`, to the *IMDBData.cs* file:
 
-   [!code-csharp[DeclareTypes](~/samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#DeclareTypes "Declare data record types")]
+    [!code-csharp[DeclareTypes](~/samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#DeclareTypes "Declare data record types")]
 
-### Model the input data and output predictions
+    The input data class, `IMDBSentiment`, has a `string` for user comments (`SentimentText`) and an `integer` array (`VariableLengthFeatures`)  In addition, the `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate the vector type.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
 
-Movie reviews are free form text. Your application converts the text into the input format expected by the model in a number of discrete stages.
-
-1. The first is to split the text into separate words and use the provided mapping file to map each word onto an integer encoding. The result of this transformation is a variable length integer array with a length corresponding to the number of words in the sentence.
-
-    |Property| Value|Type|
-    |-------------|-----------------------|------|
-    |SentimentText|this film is really bad|string|
-    |VariableLengthFeatures|14,22,9,66,78,... |int[]|
-
-    This data is modeled using the following classes:
-
-    - The input data class, `IMDBSentiment`, has a `string` for user comments (`SentimentText`) and an `integer` array (`VariableLengthFeatures`)  In addition, the `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate the vector type.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
-
+    `IMDBPrediction` is the prediction class used after the model training. `IMDBPrediction` has a single `float` array (`Prediction`) and a `VectorType` attribute.
+    
 1. Create a class called `IntermediateFeatures` to hold the fixed-length feature data.
     
-    The following example illustrates IntermediateFeatures:
-
-    |Property| Value|Type|
-    |-------------|-----------------------|------|
-    |SentimentText|this film is really bad|string|
-    |Features|14,22,9,66,78,... |int[600]|
-
-   Add the `IntermediateFeatures` class definition after the `Main()` method:
+    Add the `IntermediateFeatures` class definition after the `Main()` method:
 
     [!code-csharp[DeclareIntermediateFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareIntermediateFeatures)]
-
-1. `IMDBPrediction` is the prediction class used after the model training. `IMDBPrediction` has a single `float` array (`Prediction`) and a `VectorType` attribute.
 
 ### Create the MLContext for the application
 
@@ -222,7 +221,13 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     [!code-csharp[DisplayPredictions](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DisplayPredictions)]
 
+1. Add a call to `PredictSentiment` at the end of `Main`:
+
+    [!code-csharp[SnippetCallPredictSentiment](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#SnippetCallPredictSentiment)]
+
 ## Results
+
+Build and run your application.
 
 Your results should be similar to the following. During processing, messages are displayed. You may see warnings, or processing messages. These messages have been removed from the following results for clarity.
 

@@ -296,7 +296,7 @@ To change the event used for the bind, use the `@bind:event` attribute.
 
 Components can also support data binding to their parameters by defining an event callback parameter with the same name as the bindable parameter, but with the "Changed" suffix added.
 
-*Password.razor*
+*PasswordBox.razor*
 
 ```razor
 Password: <input 
@@ -328,7 +328,7 @@ Note that to chain a data binding to an underlying UI element you'll need to set
 To bind to a component parameter, use a `@bind-{Parameter}` attribute to specify which parameter you want to bind to.
 
 ```razor
-<Password @bind-Password="password" />
+<PasswordBox @bind-Password="password" />
 
 @code {
     string password;

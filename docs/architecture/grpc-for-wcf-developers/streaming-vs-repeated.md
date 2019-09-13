@@ -15,7 +15,7 @@ Which you should use depends on various factors, such as the overall size of the
 
 For any data-set which is constrained in size and which can be generated in its entirety in a short time&mdash;say, under one second&mdash;you should use a `repeated` field in a regular Protobuf message. For example, building a list of items within an order in an e-commerce system is likely to be very quick and the list will not be very large. Returning a single message with a `repeated` field is an order of magnitude faster than using a `stream`, and incurs less network overhead.
 
-If the client will need all the data before starting to process it, and the data-set is small enough to construct in memory, then consider using a `repeated` field even if the generation of the data-set in memory on the server is slower.
+If the client will need all the data before starting to process it, and the data-set is small enough to construct in memory, then consider using a `repeated` field even if the actual creation of the data-set in memory on the server is slower.
 
 ## When to use `stream` methods
 

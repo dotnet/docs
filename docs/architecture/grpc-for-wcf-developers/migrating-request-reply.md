@@ -440,7 +440,7 @@ public class Program
 }
 ```
 
-You have now migrated a basic WPF application to an ASP.NET Core gRPC service and created a client to consume the service from a .NET application.
+You have now migrated a basic WPF application to an ASP.NET Core gRPC service and created a client to consume the service from a .NET application. The next section will cover the more involved "duplex" services.
 
 >[!div class="step-by-step"]
 <!-->[Next](migrating-duplex-services.md)-->

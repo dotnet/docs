@@ -79,42 +79,34 @@ The first is to split the text into separate words and use the provided mapping 
 
 |Property| Value|Type|
 |-------------|-----------------------|------|
-|SentimentText|this film is really good|string|
+|ReviewText|this film is really good|string|
 |VariableLengthFeatures|14,22,9,66,78,... |int[]|
 
 The variable length feature array is then resized to a fixed length of 600. This is the length that the TensorFlow model expects.
 
 |Property| Value|Type|
 |-------------|-----------------------|------|
-|SentimentText|this film is really good|string|
+|ReviewText|this film is really good|string|
 |VariableLengthFeatures|14,22,9,66,78,... |int[]|
 |Features|14,22,9,66,78,... |int[600]|
 
-1. Create classes for your input data and predictions. Add a new class to your project:
+1. Create a class for your input data, after the `Main` method:
 
-    * In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
+    [!code-csharp[MovieReviewClass](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#MovieReviewClass "Declare movie review type")]
 
-    * In the **Add New Item** dialog box, select **Class** and change the **Name** field to *IMDBData.cs*. Then, select the **Add** button.
+    The input data class, `MovieReview`, has a `string` for user comments (`ReviewText`) and an `integer` array (`VariableLengthFeatures`)  In addition, the `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate the vector type.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
 
-1. The *IMDBData.cs* file opens in the code editor. Add the following `using` statement to the top of *IMDBData.cs*:
+1. Create a class for the mapping from review text to fixed length features, after the `Main` method:
 
-   [!code-csharp[AddUsings](~/samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#AddUsings "Add necessary usings")]
-
-1. Remove the existing class definition and add the following code, which has two classes `IMDBSentiment` and `IMDBPrediction`, to the *IMDBData.cs* file:
-
-    [!code-csharp[DeclareTypes](~/samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#DeclareTypes "Declare data record types")]
-
-    The input data class, `IMDBSentiment`, has a `string` for user comments (`SentimentText`) and an `integer` array (`VariableLengthFeatures`)  In addition, the `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate the vector type.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
-
-    `IMDBPrediction` is the prediction class used after the model training. `IMDBPrediction` has a single `float` array (`Prediction`) and a `VectorType` attribute.
+    [!code-csharp[FixedLengthFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#FixedLengthFeatures)]
     
-1. Create a class called `IntermediateFeatures` to hold the fixed-length feature data.
+1. Create a class for the prediction after the `Main` method:
+
+    [!code-csharp[Prediction](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#Prediction "Declare prediction class")]
+
+    `MovieReviewSentimentPrediction` is the prediction class used after the model training. `MovieReviewSentimentPrediction` has a single `float` array (`Prediction`) and a `VectorType` attribute.
     
-    Add the `IntermediateFeatures` class definition after the `Main()` method:
-
-    [!code-csharp[DeclareIntermediateFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareIntermediateFeatures)]
-
-### Create the MLContext for the application
+### Create the MLContext, lookup dictionary, and action to resize features
 
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations. Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
@@ -197,13 +189,13 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
         }
     ```
 
-1. Add the following code to create the `PredictionEngine` as the first line in the `PredictSentiment()` Method:
+1. Add the following code to create the `PredictionEngine` as the first line in the `PredictSentiment()` method:
 
     [!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreatePredictionEngine)]
 
     The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass in and then perform a prediction on a single instance of data.
 
-1. Add a comment to test the trained model's prediction in the `Predict()` method by creating an instance of `IMDBSentiment`:
+1. Add a comment to test the trained model's prediction in the `Predict()` method by creating an instance of `MovieReview`:
 
     [!code-csharp[CreateTestData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateTestData)]
 
@@ -211,19 +203,19 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     [!code-csharp[Predict](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#Predict)]
 
-1. The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function makes a prediction on a single row of data. The following example illustrates IMDBSentimentPrediction:
+1. The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function makes a prediction on a single row of data:
 
     |Property| Value|Type|
     |-------------|-----------------------|------|
-    |Prediction|0.5459937,0.454006255,...|float[]|
+    |Prediction|[0.5459937, 0.454006255],...|float[]|
 
-1. Display sentiment prediction and confidence using the following code:
+1. Display sentiment prediction using the following code:
 
     [!code-csharp[DisplayPredictions](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DisplayPredictions)]
 
 1. Add a call to `PredictSentiment` at the end of `Main`:
 
-    [!code-csharp[SnippetCallPredictSentiment](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#SnippetCallPredictSentiment)]
+    [!code-csharp[CallPredictSentiment](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CallPredictSentiment)]
 
 ## Results
 

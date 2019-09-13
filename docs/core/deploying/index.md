@@ -7,7 +7,7 @@ ms.author: jamshedd
 ms.date: 09/06/2019
 ms.custom: 
 ---
-# .NET Core Acquisition and Deployment Guide
+# .NET Core acquisition and deployment
 
 ## Terminology
 

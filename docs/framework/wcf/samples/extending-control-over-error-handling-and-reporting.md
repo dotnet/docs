@@ -128,7 +128,7 @@ Press <ENTER> to terminate client.
   
  The file c:\logs\errors.txt contains the information logged about the errors by the service. Note that for the service to write to the directory you must make sure that the process under which the service is running (typically ASP.NET or Network Service) has permission to write to the directory.  
   
-```output  
+```txt
 Fault: Reason = Invalid Argument: The second argument must not be zero.  
 Fault: Reason = Invalid Argument: The argument must be greater than zero.  
 ```  

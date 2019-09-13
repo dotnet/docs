@@ -59,13 +59,13 @@ logman create trace Wcf -o <logfilename> -p "{411a0819-c24b-428c-83e2-26b4109170
  To start the session, type in the following command.  
   
 ```console  
-Logman start Wcf  
+logman start Wcf  
 ```  
   
  After you have finished logging, you can stop the session with the following command.  
   
 ```console  
-Logman stop Wcf  
+logman stop Wcf  
 ```  
   
  This process generates binary circular logs that you can process with your tool of choice, including [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) or Tracerpt.  

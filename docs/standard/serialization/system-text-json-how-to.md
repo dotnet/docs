@@ -600,7 +600,7 @@ In the preceding example scenario, both approaches cause the `WindSpeed` propert
 }
 ```
 
-## Allow overflow JSON to round-trip
+## Handle overflow JSON
 
 While deserializing, you might receive data in the JSON that is not represented by properties of the target type. For example suppose your target type is this:
 
@@ -676,7 +676,7 @@ When the target object is serialized, the extension data key value pairs become 
 }
 ```
 
-Notice that the `ExtensionData` property name doesn't appear in the JSON. This behavior lets you round-trip the JSON without losing any extra data that otherwise wouldn't be deserialized.
+Notice that the `ExtensionData` property name doesn't appear in the JSON. This behavior lets the JSON make a round trip without losing any extra data that otherwise wouldn't be deserialized.
 
 ## Use Utf8JsonWriter directly
 

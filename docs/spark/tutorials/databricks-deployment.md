@@ -14,6 +14,7 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Datab
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > - Prepare Microsoft.Spark.Worker
 > - Publish your Spark .NET app
 > - Deploy your app to Databricks

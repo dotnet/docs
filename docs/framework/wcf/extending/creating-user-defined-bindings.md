@@ -33,10 +33,10 @@ There are several ways to create bindings not provided by the system:
 |Reliability|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=nameWithType>|No|  
 |Security|<xref:System.ServiceModel.Channels.SecurityBindingElement?displayProperty=nameWithType>|No|  
 |Composite Duplex|<xref:System.ServiceModel.Channels.CompositeDuplexBindingElement?displayProperty=nameWithType>|No|  
-|Encoding|Text, Binary, MTOM, Custom|Yes*|  
+|Encoding|Text, Binary, MTOM, Custom|Yes\*|  
 |Transport|TCP, Named Pipes, HTTP, HTTPS, MSMQ, Custom|Yes|  
   
- *Because an encoding is required for each binding, if an encoding is not specified, WCF adds a default encoding for you. The default is Text/XML for the HTTP and HTTPS transports, and Binary otherwise.  
+\*Because an encoding is required for each binding, if an encoding is not specified, WCF adds a default encoding for you. The default is Text/XML for the HTTP and HTTPS transports, and Binary otherwise.  
   
 ## Creating a new Binding Element  
  In addition to the types derived from <xref:System.ServiceModel.Channels.BindingElement> that are provided by WCF, you can create your own binding elements. This lets you customize the way the stack of bindings is created and the components that go in it by creating your own <xref:System.ServiceModel.Channels.BindingElement> that can be composed with the other system-provided types in the stack.  

@@ -93,7 +93,7 @@ author: "BrucePerlerMS"
   
 2. Replace the existing markup in the **Default.aspx** file with the following markup:  
   
-    ```  
+    ```aspx-csharp  
     <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>  
   
     <!DOCTYPE html>  

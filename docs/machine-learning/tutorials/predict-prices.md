@@ -12,6 +12,7 @@ This tutorial illustrates how to build a [regression model](../resources/glossar
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Prepare and understand the data
 > * Load and transform the data
 > * Choose a learning algorithm
@@ -264,6 +265,7 @@ Congratulations! You've now successfully built a machine learning model for pred
 In this tutorial, you learned how to:
 
 > [!div class="checklist"]
+>
 > * Prepare and understand the data
 > * Create a learning pipeline
 > * Load and transform the data

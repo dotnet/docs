@@ -62,4 +62,4 @@ This documentation is completely [open source](https://github.com/dotnet/docs). 
 - [Windows Forms](https://github.com/dotnet/winforms)
 - [WPF](https://github.com/dotnet/wpf)
 
-You can join other people who are already active in the [.NET community](https://www.microsoft.com/net/community) to find out what's new or ask for help.
+You can join other people who are already active in the [.NET community](https://dotnet.microsoft.com/platform/community) to find out what's new or ask for help.

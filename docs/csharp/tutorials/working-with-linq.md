@@ -25,7 +25,7 @@ This tutorial has multiple steps. After each step, you can run the application a
 
 ## Prerequisites
 
-You’ll need to setup your machine to run .NET core. You can find the installation instructions on the [.NET Core](https://www.microsoft.com/net/core) page. You can run this application on Windows, Ubuntu Linux, OS X or in a Docker container. You’ll need to install your favorite code editor. The descriptions below use [Visual Studio Code](https://code.visualstudio.com/) which is an open source, cross platform editor. However, you can use whatever tools you are comfortable with.
+You’ll need to setup your machine to run .NET core. You can find the installation instructions on the [.NET Core Download](https://dotnet.microsoft.com/download) page. You can run this application on Windows, Ubuntu Linux, OS X or in a Docker container. You’ll need to install your favorite code editor. The descriptions below use [Visual Studio Code](https://code.visualstudio.com/) which is an open source, cross platform editor. However, you can use whatever tools you are comfortable with.
 
 ## Create the Application
 
@@ -334,6 +334,7 @@ In practice, some algorithms run well using eager evaluation, and others run wel
 ## Conclusion
 
 In this project, you covered:
+
 - using LINQ queries to aggregate data into a meaningful sequence
 - writing Extension methods to add our own custom functionality to LINQ queries
 - locating areas in our code where our LINQ queries might run into performance issues like degraded speed
@@ -342,6 +343,7 @@ In this project, you covered:
 Aside from LINQ, you learned a bit about a technique magicians use for card tricks. Magicians use the Faro shuffle because they can control where every card moves in the deck. Now that you know, don't spoil it for everyone else!
 
 For more information on LINQ, see:
+
 - [Language Integrated Query (LINQ)](../programming-guide/concepts/linq/index.md)
   - [Introduction to LINQ](../programming-guide/concepts/linq/index.md)
   - [Basic LINQ Query Operations (C#)](../programming-guide/concepts/linq/basic-linq-query-operations.md)

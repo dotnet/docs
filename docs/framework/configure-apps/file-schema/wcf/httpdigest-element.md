@@ -17,7 +17,7 @@ Specifies a digest type credential used when authenticating the client to a serv
 ## Syntax  
   
 ```xml  
-<digest impersonationLevel="Identification/Impersonation/Delegation/Anonymous/None" />
+<httpDigest impersonationLevel="Identification/Impersonation/Delegation/Anonymous/None" />
 ```  
   
 ## Attributes and Elements  

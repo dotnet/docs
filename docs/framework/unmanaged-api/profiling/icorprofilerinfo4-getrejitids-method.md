@@ -23,7 +23,7 @@ Returns an array of IDs that identify all JIT-recompiled versions of the specifi
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT GetReJITIDs (  
      [in]  FunctionID          functionId,  
      [in]  ULONG               cReJitIds,  

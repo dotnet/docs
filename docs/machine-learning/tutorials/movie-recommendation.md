@@ -14,6 +14,7 @@ This tutorial shows you how to build a movie recommender with ML.NET in a .NET C
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Select a machine learning algorithm
 > * Prepare and load your data
 > * Build and train a model
@@ -463,6 +464,7 @@ The data used in this tutorial is derived from [MovieLens Dataset](http://files.
 In this tutorial, you learned how to:
 
 > [!div class="checklist"]
+>
 > * Select a machine learning algorithm
 > * Prepare and load your data
 > * Build and train a model

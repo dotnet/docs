@@ -137,6 +137,7 @@ However, when thinking about the production deployment environment or even QA an
 **Figure 4-7.5.** The container ecosystem in Azure
 
 From the container ecosystem in Azure, the following products supporting containers that are considered infrastructure:
+
 - **Azure Container Instances (ACI)**
 - **Azure Virtual Machines** (With container's support)
 - **Azure Virtual Machine Scale Sets** (With container's support)

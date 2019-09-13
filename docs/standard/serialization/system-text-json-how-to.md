@@ -38,10 +38,10 @@ WeatherForecast weatherForecast = ... ;
 string json = JsonSerializer.Serialize(weatherForecast);
 ```
 
-Example types to be serialized, with collections and nested classes:
+Here's an example type to be serialized, which contains collections and nested classes:
 
 ```csharp
-class WeatherForecast1
+public class WeatherForecast
 {
     public DateTimeOffset Date { get; set; }
     public int TemperatureC { get; set; }
@@ -69,7 +69,7 @@ The JSON output is minified by default:
 {"Date":"2019-08-01T00:00:00-07:00","TemperatureC":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":{"DegreesCelsius":20},"Low":{"DegreesCelsius":-10}},"Hot":{"High":{"DegreesCelsius":60},"Low":{"DegreesCelsius":20}}},"SummaryWords":["Cool","Windy","Humid"]}
 ```
 
-The following example shows the same JSON formatted:
+The following example shows the same JSON, formatted (that is, pretty-printed with whitespace and indentation):
 
 ```json
 {
@@ -108,98 +108,62 @@ The following example shows the same JSON formatted:
 
 Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize to a `Stream`.  Async versions of the `Stream` overloads are available.
 
-### Default serialization behavior
-
-* All public properties are serialized. You can [specify properties to exclude](#exclude-properties).
-* Casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
-* [Circular references](https://github.com/dotnet/corefx/issues/38579) are detected and exceptions thrown.
-* Fields are excluded.
-* Supported types include:
-  * .NET primitives that map to JavaScript primitives.
-  * User-defined [Plain Old CLR Objects (POCOs)](https://stackoverflow.com/questions/250001/poco-definition).
-  * One-dimensional and jagged arrays (`ArrayName[][]`).
-  * Collections such as `IList`, `ICollection`, and `IEnumerable`.
-  * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
-* The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
-
 ### Serialize to UTF-8
 
 Call [JsonSerializer.SerializeToUtf8Bytes](xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*):
 
 ```csharp
-string json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
+byte[] utf8Json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
 ```
 
 As an alternative, a <xref:System.Text.Json.JsonSerializer.Serialize*> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is available.
 
 Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
 
-## How to deserialize
+## Default serialization behavior
+
+* All public properties are serialized. You can [specify properties to exclude](#exclude-properties).
+* The [default encoder](xref:System.Text.Encodings.Web.JavascriptEncoder.Default) escapes  non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
+* JSON is minified. You can optionally [pretty-print the JSON](#serialize-to-formatted-json).
+* Casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
+* [Circular references](https://github.com/dotnet/corefx/issues/38579) are detected and exceptions thrown.
+* Fields are excluded.
+
+Supported types include:
+
+* .NET primitives that map to JavaScript primitives, such as numeric types, strings, and boolean.
+* User-defined [Plain Old CLR Objects (POCOs)](https://stackoverflow.com/questions/250001/poco-definition).
+* One-dimensional and jagged arrays (`ArrayName[][]`).
+* `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
+* [Collection types](https://github.com/dotnet/corefx/issues/36643) from the following namespaces:
+  * <xref:System.Collections>
+  * <xref:System.Collections.Generic>
+  * <xref:System.Collections.Immutable>
+
+## How to read JSON into a .NET object (deserialize)
 
 Call [JsonSerializer.Deserialize](xref:System.Text.Json.JsonSerializer.Deserialize*):
 
 ```csharp
+string json = ... ;
+
 var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
 ```
 
-Example JSON input:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "temperatureC": 25,
-  "Summary": "Hot",
-  "DatesAvailable": [
-    "2019-08-01T00:00:00-07:00",
-    "2019-08-02T00:00:00-07:00"
-  ],
-  "TemperatureRanges": {
-    "Cold": {
-      "High": {
-        "DegreesCelsius": 20
-      },
-      "Low": {
-        "DegreesCelsius": -10
-      }
-    },
-    "Hot": {
-      "High": {
-        "DegreesCelsius": 60
-      },
-      "Low": {
-        "DegreesCelsius": 20
-      }
-    }
-  },
-  "SummaryWords": [
-    "Cool",
-    "Windy",
-    "Humid"
-  ]
-}
-```
-
-Resulting property and field values:
-
-|Property |Value  |Notes  |
-|---------|---------|---------|
-| Date    | 8/1/2019 12:00:00 AM -07:00||
-| TemperatureC| 0 | Not set because property name matching is case-sensitive.|
-| Summary| Hot||
-| SummaryField| null | Not set because it's a field, not a property.|
-| DatesAvailable | 8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 | `IList<T>` and `IEnumerable<T>` implementations are supported. |
-| TemperatureRanges | Cold, 20 High -10 Low<br>Hot, 60 High 20 Low| `Dictionary<string,TValue>` is supported. |
-| SummaryWords | Cool<br>Windy<br>Humid | Arrays are supported. |
+For an example, see the [serialize](#how-to-write-net-objects-to-json-serialize) section. The JSON and .NET object are the same, but the direction is reversed.
 
 Overloads of <xref:System.Text.Json.JsonSerializer.Deserialize*> let you deserialize from a `Stream`.  Async versions of the `Stream` overloads are available.
 
-### Default deserialization behavior
+## Default deserialization behavior
 
+* Property name matching is case-sensitive. You can optionally specify [case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Deserialization to reference types without a parameterless constructor isn't supported.
 * Deserialization to [immutable objects](https://github.com/dotnet/corefx/issues/38569) or [read-only properties](https://github.com/dotnet/corefx/issues/38163) isn't supported.
-* Comments or trailing commas in the JSON trigger exceptions.
-* A nullable property is set to null if the JSON has a null value or the property is missing from the JSON. For information about how to differentiate these two situations, see [GitHub issue 37485](https://github.com/dotnet/corefx/issues/37485).
+* Enums are supported as numbers.
+* Fields aren't supported.
+* Comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
+* The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
 ## Serialize to formatted JSON
 
@@ -570,7 +534,7 @@ class WeatherForecastWithWind : WeatherForecast
 And suppose the type passed to, or inferred by, the `Serialize` method at compile time is `WeatherForecast`:
 
 ```csharp
-json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
+string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
 ```
 
 ```csharp
@@ -721,7 +685,7 @@ using (var stream = new MemoryStream())
 
 ## Use Utf8JsonReader directly
 
-The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class directly. The code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON.
+The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class directly. The code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
 ```csharp
 Utf8JsonReader reader = new Utf8JsonReader(jsonUtf8, isFinalBlock: true, state: default);

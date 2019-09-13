@@ -152,14 +152,14 @@ dotnet publish -c Release -r win10-x64 --self-contained true /p:PublishSingleFil
 Both Framework Dependent Deployment and Self-Contained Deployment have their own pros and cons. To summarize,
 
 | Attribute	                                                | Framework Dependent Deployment | Self Contained Deployment | Framework Dependent Executable | Self Contained Executable |
-| --------------------------------------------------------- | ------------------------------ | ------------------------- | ------------------------------ | ------------------------- |
-| Need machine wide Core Runtime                            | Yes                            | No                        | Yes                            | No                        |    
-| Small Package                                             | Yes                            | No                        | Yes                            | No                        |  
-| Target Machine specific publish                           | No                             | Yes                       | Yes                            | Yes                       |  
-| Need target machine native dependencies installed         | Yes                            | Yes                       | Yes                            | Yes                       |  
-| Share Core Runtime across multiple apps (reduce footprint)| Yes                            | No                        | Yes                            | No                        |  
-| Isolated from changes to shared runtime                   | No                             | Yes                       | No                             | Yes                       |  
-| Trimming Available                                        | No                             | No                        | Yes                            | Yes                       |  
+| :--------------------------------------------------------- |:------------------------------:|:-------------------------:|:------------------------------:|:-------------------------:|
+| Need machine wide Core Runtime                            | ✔️                            | ❌                        | ✔️                            | ❌                        |    
+| Small Package                                             | ✔️                            | ❌                        | ✔️                            | ❌                        |  
+| Target Machine specific publish                           | ❌                             | ✔️                       | ✔️                            | ✔️                       |  
+| Need target machine native dependencies installed         | ✔️                            | ✔️                       | ✔️                            | ✔️                       |  
+| Share Core Runtime across multiple apps (reduce footprint)| ✔️                            | ❌                        | ✔️                            | ❌                        |  
+| Isolated from changes to shared runtime                   | ❌                             | ✔️                       | ❌                             | ✔️                       |  
+| Trimming Available                                        | ❌                             | ❌                        | ✔️                            | ✔️                       |  
 
 
 ## See also

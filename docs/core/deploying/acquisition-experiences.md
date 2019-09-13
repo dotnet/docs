@@ -1,4 +1,4 @@
----
+﻿---
 title: .NET Core Acquisition Experiences
 description: .NET Core Acquisition Experiences
 author: jamshedd
@@ -23,27 +23,29 @@ The various choices have their own strengths. Some of these choices support the 
 
 |Acquisition Choice|Acquire|Update|
 |:-|:-:|:-:|
-[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | Y  | Y |
-[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | Y  | N |
-[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | Y  | Y |
-[Docker](#Docker)                                                               | Y  | Y |
-[Linux Package Managers](#Linux-Package-Managers)                               | Y  | Y |
-[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | Y  | Y |
-[Snap store](#Snap-store)                                                       | Y  | Y |
-[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | Y  | N |
+[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | ✔️ | ✔️ |
+[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | ✔️ | ❌ |
+[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | ✔️ | ✔️ |
+[Docker](#Docker)                                                               | ✔️ | ✔️ |
+[Linux Package Managers](#Linux-Package-Managers)                               | ✔️ | ✔️*|
+[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | ✔️ | ✔️ |
+[Snap store](#Snap-store)                                                       | ✔️ | ✔️ |
+[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | ✔️ | ❌ |
+
+_*Some package Managers provide update notifications__
 
 Additionally, differences between these choices also make some of these a great choice for developers while others are better suited for DevOps and IT administrators.
 
 |Acquisition Choice|Great For Developers|Great For DevOps/ IT Admins|
 |:-|:-:|:-:|
-[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | Y  | N |
-[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | Y  | Y |
-[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | Y  | Y |
-[Docker](#Docker)                                                               | Y  | Y |
-[Linux Package Managers](#Linux-Package-Managers)                               | Y  | Y |
-[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | N  | Y |
-[Snap store](#Snap-store)                                                       | Y  | Y |
-[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | Y  | N |
+[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | ✔️ | ❌ |
+[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | ✔️ | ✔️ |
+[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | ✔️ | ✔️ |
+[Docker](#Docker)                                                               | ✔️ | ✔️ |
+[Linux Package Managers](#Linux-Package-Managers)                               | ✔️ | ✔️ |
+[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | ❌ | ✔️ |
+[Snap store](#Snap-store)                                                       | ✔️ | ✔️ |
+[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | ✔️ | ❌ |
 
 
 Let's look at each of these choices for .NET Core acquisition in further detail.
@@ -69,7 +71,7 @@ NET Core 2.1 is installed when you install Visual Studio for Mac and select the 
 
 ![Install Visual Studio for Mac](media/install-vs-mac.png "Install Visual Studio for Mac")
 
-Note: .NET Core 2.x development is supported on MacOS 10.12 �Sierra� and later. 
+Note: .NET Core 2.x development is supported on MacOS 10.12 “Sierra” and later. 
 
 More information about .NET Core development on MacOS can be found in the guide [Get started with .NET Core on macOS using Visual Studio for Mac](https://docs.microsoft.com/en-us/dotnet/core/tutorials/using-on-mac-vs).
 
@@ -127,15 +129,19 @@ You can find more information about deploying your app in a container in the doc
 
 ## Linux Package Managers
 
-.NET Core packages are available in native package managers for various Linux distros encompassing .deb as well as .rpm based systems. 
+* .NET Core packages are available in native package managers for various Linux distros encompassing .deb as well as .rpm based systems. 
 
-Information about getting .NET Core using a package manager can be found in the document titled [Preparing your Linux system for .NET Core � Using a package manager](https://github.com/dotnet/core/blob/4b39c16ccae64a69799f642f49f3fbf742623a9c/Documentation/linux-setup.md#installation-using-a-package-manager).
+  Information about getting .NET Core using a package manager can be found in the document titled [Preparing your Linux system for .NET Core – Using a package manager](https://github.com/dotnet/core/blob/4b39c16ccae64a69799f642f49f3fbf742623a9c/Documentation/linux-setup.md#installation-using-a-package-manager).
 
-More information about working with .NET Core packages on various Linux distros is available. For example, these documents provide information on getting .NET Core SDK and Runtime on Ubuntu x64 systems:
+  More information about working with .NET Core packages on various Linux distros is available here:
 
-[Install .NET Core Runtime on Linux Ubuntu 19.04 x64](https://dotnet.microsoft.com/download/linux-package-manager/ubuntu19-04/runtime-current)
+  * [Install .NET Core SDK on Linux](https://dotnet.microsoft.com/download/linux-package-manager/rhel/sdk-2.2.402)
+  * [Install .NET Core Runtime on Linux](https://dotnet.microsoft.com/download/linux-package-manager/rhel/runtime-2.2.7)
 
-[Install .NET Core SDK on Linux Ubuntu 19.04 x64](https://dotnet.microsoft.com/download/linux-package-manager/ubuntu19-04/sdk-current)
+
+  To review instructions for other package managers, simply change the distro selected at the top of the page. 
+
+* _Starting with RedHat Enterprise Linux 8, you can find the .NET Core Runtime & tools directly as the “dotnet” package in the [AppStream repository](https://developers.redhat.com/blog/2018/11/15/rhel8-introducing-appstreams/).__
 
 
 ## Azure DevOps pipeline Installer Task
@@ -149,7 +155,7 @@ Snaps are an emerging application installation and sandboxing technology. These 
 
 The [Snap Store](https://snapcraft.io/store) provides a place to upload snaps, and for users to browse and install these. [Snaps](https://forum.snapcraft.io/t/system-options/87) update automatically but you can manually control when and how often these update.
 
-.NET Core packages are available in the Snap Store.  More details about getting .NET Core as a Snap install can be found in the document titled [Preparing your Linux system for .NET Core � Installation using Snap](https://github.com/dotnet/core/blob/4b39c16ccae64a69799f642f49f3fbf742623a9c/Documentation/linux-setup.md#installation-using-snap).
+.NET Core packages are available in the Snap Store.  More details about getting .NET Core as a Snap install can be found in the document titled [Preparing your Linux system for .NET Core – Installation using Snap](https://github.com/dotnet/core/blob/4b39c16ccae64a69799f642f49f3fbf742623a9c/Documentation/linux-setup.md#installation-using-snap).
 
 Visit [Snapcraft.io](https://snapcraft.io/) for guidance on preparing your system to use Snaps. 
 
@@ -161,5 +167,5 @@ Visit [Snapcraft.io](https://snapcraft.io/) for guidance on preparing your syste
 
 # Updates and Notifications
 
-TBD, repurpose content from LeeCow�s update discovery doc.
+TBD, repurpose content from LeeCow’s update discovery doc.
 

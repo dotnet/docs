@@ -27,9 +27,13 @@ There are gRPC tools and libraries for all major programming languages and platf
 
 ### Simplicity and productivity
 
-gRPC is a comprehensive RPC solution. It has thoroughly addressed the full range of connectivity issues. gRPC works consistently across multiple languages. gRPC is simple with much of the boilerplate auto-generated. Therefore more developer time is freed up to focus on Business Logic.
+gRPC is a comprehensive RPC solution. It has thoroughly addressed the full range of connectivity issues. gRPC works consistently across multiple languages. gRPC is simple with much of the boilerplate auto-generated. Therefore more developer time is freed up to focus on business Logic.
+
+### Streaming
 
 gRPC has full bi-directional streaming, which is very similar to WCF's Full Duplex services but without the dependency on complicated network bindings and transports. gRPC streaming can operate over regular internet connections, load balancers and service meshes.
+
+### Security
 
 gRPC is implicitly secure when using HTTP/2 over an SSL/TLS end-to-end encrypted connection. Support for Client Certificate authentication (see chapter 6) further increases security and trust between client and server.
 

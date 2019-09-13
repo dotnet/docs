@@ -18,6 +18,7 @@ The following table sets out how the key features of WCF relate to gRPC and wher
 | Interoperability (Ch 4) | When using SOAP over HTTP | Official support: .NET, Java, Python, JavaScript, C/C++, Go, Rust, Ruby, Swift, Dart, PHP. Unofficial support for other languages from the community. |
 | Networking (Ch 4) | Configured at runtime. Switch between TCP, HTTP, MSMQ etc… | Always HTTP/2 |
 | Approach (Ch 4) | Runtime generation of serialization /deserialization and networking code in base classes | Build-time generation of serialization /deserialization and networking code in base classes |
+| Security (Ch 6) | Authentication, WS-Security, message encryption | Credentials, ASP.NET Core security, SSL/TLS networking |
 
 >[!div class="step-by-step"]
 <!-->[Next](interface-definition-language.md)-->

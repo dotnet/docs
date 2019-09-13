@@ -12,6 +12,8 @@ This article shows you the supported macOS versions and .NET Core dependencies t
 
 ## Supported macOS versions
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.x](#tab/netcore2x)
 
 .NET Core 2.x is supported on the following versions of macOS:

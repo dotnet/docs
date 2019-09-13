@@ -35,6 +35,8 @@ Congratulations! You've created a simple .NET Core application. You can also use
 
 You can get started developing .NET Core applications by following these step-by-step tutorials.
 
+<!-- markdownlint-disable MD025 -->
+
 # [Windows](#tab/windows)
 
 * [Build a C# "Hello World" Application with .NET Core in Visual Studio 2017.](./tutorials/with-visual-studio.md)

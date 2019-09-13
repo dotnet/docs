@@ -18,37 +18,35 @@ There are a variety of Acquisition options for .NET Core -
 * [Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)
 * [Snap store](#Snap-store)
 * [.NET Core on GitHub](#NET-Core-on-GitHub)
-* [Update Notifications](#Update-Notifications)
 
-<table>
-<thead>
-<tr>
-<td>Acquisition Choice</td>
-<td colspan=5>Best For</td>
-</tr>
-<tr>
-<td></td><td>Developer</td> <td>End User</td> <td>DevOps/IT Admin</td> <td>Silent/Admin Install</td> <td>Update Notification</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Visual Studio and</td> <td>Y</td> <td>Y</td> <td>Y</td> <td>Y</td> <td>Y</td>
-</tr>
-</tbody>
-</table>
+The various choices have their own strengths. Some of these choices support the initial acquisition and subsequent update of .NET Core runtime and tools, while others don't.
 
-|Acquisition Choice<td colspan=5>**Best For**|
-|-|-|-|-|-|-|-|-|-|-|-|
-| | Developer | End User | DevOps/IT Admin | Silent/Admin Install | Update Notification |
-[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | Y         | N        | N               | N                   | Y |
-[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | Y         | Y        | Y               | Y                   | Y |
-[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | N         | N        | Y               | Y                   | Y |
-[Docker](#Docker)                                                               | Y         | Y        | Y               | Y                   | N |
-[Linux Package Managers](#Linux-Package-Managers)                               | Y         | Y        | Y               | Y                   | Y |
-[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | Y         | N        | Y               | Y                   | N |
-[Snap store](#Snap-store)                                                       | Y         | Y        | Y               | Y                   | Y |
-[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | Y         | N        | N               | N                   | N |
+|Acquisition Choice|Acquire|Update|
+|:-|:-:|:-:|
+[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | Y  | Y |
+[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | Y  | N |
+[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | Y  | Y |
+[Docker](#Docker)                                                               | Y  | Y |
+[Linux Package Managers](#Linux-Package-Managers)                               | Y  | Y |
+[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | Y  | Y |
+[Snap store](#Snap-store)                                                       | Y  | Y |
+[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | Y  | N |
 
+Additionally, differences between these choices also make some of these a great choice for developers while others are better suited for DevOps and IT administrators.
+
+|Acquisition Choice|Great For Developers|Great For DevOps/ IT Admins|
+|:-|:-:|:-:|
+[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | Y  | N |
+[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | Y  | Y |
+[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | Y  | Y |
+[Docker](#Docker)                                                               | Y  | Y |
+[Linux Package Managers](#Linux-Package-Managers)                               | Y  | Y |
+[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | N  | Y |
+[Snap store](#Snap-store)                                                       | Y  | Y |
+[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | Y  | N |
+
+
+Let's look at each of these choices for .NET Core acquisition in further detail.
 
 ## Visual Studio and Visual Studio Code
 
@@ -161,7 +159,7 @@ Visit [Snapcraft.io](https://snapcraft.io/) for guidance on preparing your syste
 .NET Core sources are available in public repositories on GitHub. Building from source is covered in depth in the document titled [Build .NET Core from source](https://docs.microsoft.com/en-us/dotnet/core/build/).
 
 
-## Update Notifications
+# Updates and Notifications
 
 TBD, repurpose content from LeeCow’s update discovery doc.
 

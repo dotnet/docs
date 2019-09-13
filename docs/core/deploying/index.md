@@ -112,28 +112,49 @@ b) Import the test certificate on the target computer (Tursted Root Certificatio
 
 ## For DevOps Engineers and Enterprise IT Administrators
 
-As a DevOps Engineer you may be responsible for deploying the .NET Core tools and runtime to CI/CD machines. Or, as an IT Administrator in an enterprise you may be responsible for deploying the .NET Core runtime to end user machines where .NET Core apps will run.
+As a DevOps Engineer you may be responsible for deploying the .NET Core tools and runtime to CI/CD machines. Or, as an IT Administrator in an enterprise you may be responsible for deploying the .NET Core runtime to end user machines or servers where .NET Core apps will run.
 
 | Step 1 | | Step 2 |
 |-|-|-|
-| [Acquire the .NET Core runtime](#acquire-the-net-core-runtime) | --> | [Deploy the .NET Core runtime](#deploy-the-net-core-runtime) | 
+| [Acquire the .NET Core runtime](#Step-1-acquire-the-core-runtime) | --> | [Deploy the .NET Core runtime](#step-2-deploy-the-core-runtime) | 
 
 
 <br/>
 
-### Acquire the .NET Core runtime
+### Step 1: Acquire the Core Runtime
 
-When it comes to acquiring the .NET Core runtime and tools you have several options to choose from, you need to pick the approach that is right for your needs. Various options are covered in more detail in the [.NET Core Acquisition Experiences guide](acquisition-experiences.md).
+When it comes to acquiring the .NET Core runtime and tools you have several options to choose from so you have the flexibility to pick the approach that is right for your needs. 
+
+Various acquisition options for the .NET Core runtime and tools are covered in more detail in the [.NET Core Acquisition Experiences guide](acquisition-experiences.md).
 
 
 <br/>
 
-### Deploy the .NET Core runtime
+### Step 2: Deploy the Core Runtime
 
-One option is using a software update management tool such as [System Center Configuration Manager (SCCM)](https://docs.microsoft.com/en-us/sccm/) or another similar tool. Tools like these allow you to define a target group of computers for deploying the .NET Core runtime, as well as the app itself and push the deployment to the target group. The SCCM client is supported on not only Windows Server and Client computers, it is also supported on Mac computers and Linux.
+When it comes to deploying the .NET Core runtime, you can again choose between various options for both cloud and on-premises deployments. 
 
-For more information about using SCCM to deploy the .NET Core runtime refer to the guide [Create and deploy an application with SCCM](https://docs.microsoft.com/en-us/sccm/apps/get-started/create-and-deploy-an-application).
+<br/>
 
+
+#### Deploying to the Cloud
+
+* Various [Azure App Services](acquisition-experiences.md#azure-app-services) support containers. You create a Docker image for your application and deploy it to one of these services.
+ 
+* If you are using an Azure DevOps pipeline for your CI/CD environment, the [.NET Core Installer Task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) can be used to acquire a specific version of .NET Core from the Internet or the tools cache and add it to the PATH.
+
+<br/>
+
+
+#### Deploying to on-premises clients/servers
+
+* A great option for deploying the .NET Core runtime or tools to on-premises clients/servers is using a software update management tool such as [System Center Configuration Manager (SCCM)](https://docs.microsoft.com/en-us/sccm/) or another similar tool. 
+
+  Software update management tools like System Center Configuration Manager allow you to define a target group of computers for deploying the .NET Core runtime, as well as the app itself and push the deployment to the target group. 
+
+  The System Center Configuration Manager client is supported on Windows Server and Client computers as well as MacOS and Linux. For more information about using SCCM to deploy the .NET Core runtime refer to the guide [Create and deploy an application with SCCM](https://docs.microsoft.com/en-us/sccm/apps/get-started/create-and-deploy-an-application).
+
+* Another option for deploying the .NET Core runtime or tools to on-premises clients/servers is the [Dotnet-install Script](acquisition-experiences.md#Dotnet-install.ps1.sh-Scripts). This script is available as both a PowerShell script as well as a Bash script, so you can use these everywhere PowerShell and Bash are supported. 
 
 
 <br/>

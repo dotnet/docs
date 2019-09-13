@@ -2,10 +2,10 @@
 title: "Hello World -- Your first program using Visual Studio on Windows or Mac - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 09/12/2019
-f1_keywords: 
+f1_keywords:
   - "cs.program"
   - "vs.csharp.startpage.firstapplication"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [C#], Hello World"
   - "Hello World example [C#]"
 ms.assetid: 6493182a-b0b6-4539-a719-518a168cb730
@@ -44,7 +44,7 @@ C:\Program Files\dotnet\dotnet.exe (process 11964) exited with code 0.
 Press any key to close this window . . .
 ```
 
-Press a key to close the window. 
+Press a key to close the window.
 
 # [macOS](#tab/macos)
 
@@ -69,7 +69,9 @@ Hello World!
 Press any key to close this window . . .
 ```
 
-Press a key to end the session. 
+Press a key to end the session.
+
+---
 
 ## Elements of a C# program
 
@@ -101,7 +103,7 @@ The `Main` method is a [static](../../language-reference/keywords/static.md) met
 
 [!code-csharp[csProgGuideMain#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#18)]
 
-The parameter of the `Main` method, `args`, is a `string` array that contains the command-line arguments used to invoke the program. 
+The parameter of the `Main` method, `args`, is a `string` array that contains the command-line arguments used to invoke the program.
 
 For more information about how to use command-line arguments, see the examples in [Main() and Command-Line Arguments](../main-and-command-args/index.md).
 
@@ -109,9 +111,9 @@ For more information about how to use command-line arguments, see the examples i
 
 C# programs generally use the input/output services provided by the run-time library of the .NET Framework. The statement `System.Console.WriteLine("Hello World!");` uses the <xref:System.Console.WriteLine%2A> method. This is one of the output methods of the <xref:System.Console> class in the run-time library. It displays its string parameter on the standard output stream followed by a new line. Other <xref:System.Console> methods are available for different input and output operations. If you include the `using System;` directive at the beginning of the program, you can directly use the <xref:System> classes and methods without fully qualifying them. For example, you can call `Console.WriteLine` instead of `System.Console.WriteLine`:
 
- [!code-csharp[csProgGuide#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/using.cs#1)]
+[!code-csharp[csProgGuide#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/using.cs#1)]
 
- [!code-csharp[csProgGuide#23](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#23)]
+[!code-csharp[csProgGuide#23](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#23)]
 
 For more information about input/output methods, see <xref:System.IO>.
 

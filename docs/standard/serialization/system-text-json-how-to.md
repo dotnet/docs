@@ -143,7 +143,7 @@ Supported types include:
   * <xref:System.Collections.Generic>
   * <xref:System.Collections.Immutable>
 
-## How to read JSON into a .NET object (deserialize)
+## How to read JSON into .NET objects (deserialize)
 
 To deserialize from a string, call [JsonSerializer.Deserialize](xref:System.Text.Json.JsonSerializer.Deserialize*):
 

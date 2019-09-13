@@ -7,7 +7,7 @@ ms.date: 09/02/2019
 
 # WS-* protocols
 
-One of the real benefits of working with WCF was that it supported many of the existing so-called WS-* standard protocols. In this section, we will briefly cover how these same WS-* protocols are managed in gRPC and, where there is no alternative, discuss what options are available.
+One of the real benefits of working with WCF was that it supported many of the existing *WS-\** standard protocols. In this section, we will briefly cover how these same WS-* protocols are managed in gRPC and, where there is no alternative, discuss what options are available.
 
 ## Metadata Exchange - WS-Policy, WS-Discovery, etc
 

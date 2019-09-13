@@ -1,13 +1,13 @@
 ---
-title: Comparing WCF Services to gRPC - gRPC for WCF Developers
+title: Comparing WCF to gRPC - gRPC for WCF Developers
 description: TO BE WRITTEN
 author: markrendle
 ms.date: 09/02/2019
 ---
 
-# Comparing WCF services to gRPC
+# Comparing WCF to gRPC
 
-The previous chapter should have given you a good look at Protobuf and how messages are handled in gRPC.  Before working through a detailed conversion from WCF to gRPC, it is important to look at how the range of features currently available in WCF are replicated in gRPC and what workarounds you can use when there does not appear to be a gRPC equivalent.
+The previous chapter should have given you a good look at Protobuf and how messages are handled in gRPC.  Before working through a detailed conversion from WCF to gRPC, it is important to look at how the range of features currently available in WCF are handled in gRPC and what workarounds you can use when there does not appear to be a gRPC equivalent. In particular, this chapter will cover operations and methods, bindings and transports, types of RPC, metadata, error handling and the WS-* protocols.
 
 ## gRPC example
 
@@ -62,6 +62,8 @@ namespace HelloGrpc
     }
 }
 ```
+
+This chapter will refer to this example code when explaining various concepts and features of gRPC.
 
 >[!div class="step-by-step"]
 <!-->[Next](wcf-endpoints-and-grpc-methods.md)-->

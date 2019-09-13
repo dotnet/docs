@@ -11,18 +11,18 @@ As a WCF developer you are probably used to dealing with the following types of 
 
 - Request/Reply
 - Duplex:
-  - One way Duplex
-  - One way Duplex with Session
-  - Full Duplex
+  - One way duplex with session
+  - Full duplex with session
+- One-way
 
-It is possible to map these RPC types fairly naturally to existing gRPC concepts and this chapter will look at each of these areas in turn. Similar examples will be explored in much greater depth in Chapter 5.
+It is possible to map these RPC types fairly naturally to existing gRPC concepts and this chapter will look at each of these areas in turn. Similar examples will be explored in much greater depth in [Chapter 5](migrating-wcf-to-grpc.md).
 
 | WCF | gRPC |
 | --- | ---- |
 | Regular request/reply | Unary |
-| Duplex Service with OneWay operations on client callback interface | Server streaming |
-| OneWay operation with Session | Client streaming |
-| Full Duplex Service | Bi-directional streaming |
+| Duplex service with session using a client callback interface | Server streaming |
+| Full duplex service with session | Bi-directional streaming |
+| One-way operations | Client streaming |
 
 ## Request/reply
 
@@ -101,11 +101,12 @@ public async Task GetThingsAsync(CancellationToken token)
 }
 ```
 
-Server streaming RPCs are useful for subscription-style services, and also for sending very large datasets when it would be inefficient or impossible to build the entire dataset in memory. However, note that streaming responses is not as fast as sending `repeated` fields in a single message, so as a rule streaming should not be used for small datasets.
+> [!NOTE]
+> Server streaming RPCs are useful for subscription-style services, and also for sending very large datasets when it would be inefficient or impossible to build the entire dataset in memory. However, streaming responses is not as fast as sending `repeated` fields in a single message, so as a rule streaming should not be used for small datasets.
 
 ### Differences to WCF
 
-A WCF duplex service uses a client callback interface that can have multiple methods. A gRPC server streaming service can only send messages over a single stream. If you need multiple methods, use a message type with either an Any field or a oneof field to send different messages and code the client to handle them.
+A WCF duplex service uses a client callback interface that can have multiple methods. A gRPC server streaming service can only send messages over a single stream. If you need multiple methods, use a message type with either [an Any field or a oneof field](protobuf-any-oneof.md) to send different messages, and write code in the client to handle them.
 
 In WCF, the one-way method called from the client returns immediately, but the `ServiceContract` class with the session is kept alive until the connection is terminated. In gRPC, the Task returned by the implementation method should not complete until the connection is closed.
 

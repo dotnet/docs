@@ -236,7 +236,7 @@ bool TryReadLine(ref ReadOnlySequence<byte> buffer, out ReadOnlySequence<byte> b
 
 There are 2 loops:
 
-- `FillPipeAsync` reads from the `Socket` and writes into the `PipeWriter`.
+- `FillPipeAsync` reads from the `Socket` and writes to the `PipeWriter`.
 - `ReadPipeAsync` reads from the `PipeReader` and parses incoming lines.
 
 There are no explicit buffers allocated. All buffer management is delegated to the `PipeReader`/`PipeWriter` implementations. This makes it easier for consuming code to focus solely on the business logic instead of complex buffer management.
@@ -244,10 +244,10 @@ There are no explicit buffers allocated. All buffer management is delegated to t
 In the first loop, `PipeWriter.GetMemory(int)`:
 
 * Is called to get memory from the underlying writer.
-* `PipeWriter.Advance(int)` is called to tell the `PipeWriter` how much data was written to the buffer. 
+* `PipeWriter.Advance(int)` is called to tell the `PipeWriter` how much data was written to the buffer.
 * `PipeWriter.FlushAsync` is called to make the data available to the `PipeReader`.
 
-In the second loop, the `PipeReader` consumes the buffers written to the `PipeWriter`. The buffers come from the Socket. The call to `PipeReader.ReadAsync`:
+In the second loop, the `PipeReader` consumes the buffers written by `PipeWriter`. The buffers come from the Socket. The call to `PipeReader.ReadAsync`:
 
 * Returns a `ReadResult` which contains two important pieces of information:
 
@@ -256,20 +256,33 @@ In the second loop, the `PipeReader` consumes the buffers written to the `PipeWr
 
 After finding the end of line (EOL) delimiter and parsing the line:
 
-* The logic slices the buffer to skip what's already processed and then we call `PipeReader.AdvanceTo` to tell the `PipeReader` how much data we have consumed and examined.
+* The logic processes the buffer to skip what's already processed.
+* `PipeReader.AdvanceTo` is called to tell the `PipeReader` how much data has been consumed and examined.
 
-In the second loop, the `PipeReader` consumes the buffers written to the `PipeWriter`. The buffers come from the Socket. The call to `PipeReader.ReadAsync` returns a `ReadResult` which contains two important pieces of information, the data that was read in the form of `ReadOnlySequence<byte>` and a boolean `IsCompleted` that indicates if we've reached the end of data (EOF). 
-After finding the end of line (EOL) delimiter and parsing the line, the logic slices the buffer to skip what we've already processed and then we call `PipeReader.AdvanceTo` to tell the `PipeReader` how much data we have consumed and examined.
-
-At the end of each of the loops, we complete both the reader and the writer. This lets the underlying Pipe release all of the memory it allocated.
+The reader and writer loops end by calling `Complete`. `Complete` lets the underlying Pipe release all of the memory it allocated.
 
 ### Backpressure and flow control
 
-In a perfect world, reading & parsing work as a team: the writing thread consumes the data from the network and puts it in buffers while the parsing thread is responsible for constructing the appropriate data structures. Normally, parsing will take more time than just copying blocks of data from the network. As a result, the reading thread can easily overwhelm the parsing thread. The result is that the reading thread will have to either slow down or allocate more memory to store the data for the parsing thread. For optimal performance, there is a balance between frequent pauses and allocating more memory.
+Ideally, reading and parsing work together: 
 
-To solve this problem, the `Pipe` has two settings to control the flow of data, the `PauseWriterThreshold` and the `ResumeWriterThreshold`. The `PauseWriterThreshold` determines how much data should be buffered before calls to PipeWriter.FlushAsync pauses. The `ResumeWriterThreshold` controls how much the reader has to observe before writing can resume.
+* The writing thread consumes data from the network and puts it in buffers.
+* The parsing thread is responsible for constructing the appropriate data structures.
 
-![image](https://user-images.githubusercontent.com/95136/64408565-ee3af580-d03b-11e9-9e8a-5b9bc56d592b.png)
+Typically, parsing takes more time than just copying blocks of data from the network:
+
+* The reading thread gets ahead of the parsing thread.
+* The reading thread will have to either slow down or allocate more memory to store the data for the parsing thread.
+
+For optimal performance, there is a balance between frequent pauses and allocating more memory.
+
+To solve the preceding problem, the `Pipe` has two settings to control the flow of data:
+
+* `PauseWriterThreshold`: Determines how much data should be buffered before calls to `PipeWriter.FlushAsync` pauses.
+* `ResumeWriterThreshold`: Determines how much data should be buffered before calls to `PipeWriter.FlushAsync` pauses. 
+
+The `ResumeWriterThreshold` controls how much the reader has to observe before writing can resume.
+
+![diagram with ResumeWriterThreshold and PauseWriterThreshold](media/pipelines/resume-pause.png)
 
 `PipeWriter.FlushAsync` returns an incomplete `ValueTask<FlushResult>` when the amount of data in the `Pipe` crosses `PauseWriterThreshold` and completes said ValueTask when it becomes lower than `ResumeWriterThreshold`. Two values are used to prevent thrashing around the limit.
 

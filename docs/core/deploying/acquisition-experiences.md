@@ -82,7 +82,7 @@ Visual Studio Code is a lightweight but powerful source code editor that runs on
 While VS Code does not come with .NET Core support in the box, adding .NET Core support is straightforward. You can do this with only a couple of steps.
 
 1.	[Install .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
-2.	[Install the C# extension for VS Code from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+2. [Install the C# extension for VS Code from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 
 
 ## https://dot.net (Microsoft .NET site)

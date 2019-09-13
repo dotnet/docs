@@ -130,5 +130,54 @@ sudo journalctl -u myapp
 
 To learn more about querying the systemd journal from the command line with journalctl refer to [the man pages](https://manpages.debian.org/buster/systemd/journalctl.1).
 
+## HTTPS Certificates for self-hosted applications
+
+When running a gRPC application in production you should use a proper SSL certificate from a trusted Certificate Authority (CA). This could be a public CA, or an internal one for your organization. To use the certificate with an ASP.NET Core 3.0 application, make sure it is in PKCS #12 format (a `.pfx` file), protected by a strong password.
+
+Kestrel can be configured to use a certificate in two ways: from configuration, or in code.
+
+### Setting HTTPS certificates using configuration
+
+The configuration approach requires setting the path to the certificate `.pfx` file and the password in the Kestrel configuration section. In `appsettings.json` that would look like this.
+
+```json
+{
+  "Kestrel": {
+    "Certificates": {
+      "Default": {
+        "Path": "cert.pfx",
+        "Password": "DO NOT STORE PLAINTEXT PASSWORDS IN APPSETTINGS FILES"
+      }
+    }
+  }
+}
+```
+
+The password should be provided using a secure configuration source such as Azure KeyVault or Hashicorp Vault.
+
+You SHOULD NOT store unencrypted passwords in configuration files.
+
+### Setting HTTPS certificates in code
+
+To configure HTTPS on Kestrel in code, use the `ConfigureKestrel` method on `IWebHostBuilder` in the `Program` class.
+
+```csharp
+public static IHostBuilder CreateHostBuilder(string[] args) =>
+    Host.CreateDefaultBuilder(args)
+        .ConfigureWebHostDefaults(webBuilder =>
+        {
+            webBuilder.UseStartup<Startup>();
+            webBuilder.ConfigureKestrel(kestrel =>
+            {
+                kestrel.ConfigureHttpsDefaults(https =>
+                {
+                    https.ServerCertificate = new X509Certificate2("mycert.pfx", "password");
+                });
+            });
+        });
+```
+
+Again, the password for the `.pfx` file should be stored in and retrieved from a secure configuration source.
+
 >[!div class="step-by-step"]
 <!-->[Next](docker.md)-->

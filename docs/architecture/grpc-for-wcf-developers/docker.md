@@ -49,7 +49,8 @@ RUN dotnet publish -c Release -o /published src/TraderSys.Portfolios/TraderSys.P
 # Runtime image creation
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
 
-ENV ASPNETCORE_URLS=https://+:443
+# Uncomment the line below if running with HTTPS
+# ENV ASPNETCORE_URLS=https://+:443
 
 WORKDIR /app
 
@@ -78,6 +79,17 @@ The Dockerfile has two parts: the first uses the `sdk` base image to build and p
 | `WORKDIR /app` | Creates the `/app` directory and sets it as the current working directory. |
 | `COPY --from=builder ...` | Copies the published application from the previous image, using the `builder` alias from the first `FROM` line. |
 | `ENTRYPOINT [ ... ]` | Sets the command to run when the container starts. The `dotnet` command in the runtime image can only run DLL files. |
+
+### HTTPS in Docker
+
+Microsoft's base images for Docker set the `ASPNETCORE_URLS` environment variable to `http://+:80`, meaning that Kestrel will run without HTTPS on that port. If you are running on HTTPS with a custom certificate as described in [the previous section](self-hosted.md) you should override this by setting the environment variable **in the runtime image creation part** of your Dockerfile.
+
+```dockerfile
+# Runtime image creation
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
+
+ENV ASPNETCORE_URLS=https://+:443
+```
 
 ### The .dockerignore file
 
@@ -109,10 +121,10 @@ docker build --tag portfolios --file src/Portfolios/Dockerfile .
 To run the image in your local Docker instance, use the `docker run` command.
 
 ```console
-docker run -ti -p 5001:5001 portfolios
+docker run -ti -p 5000:80 portfolios
 ```
 
-The `-ti` flag connects your current terminal to the container's terminal and runs in interactive mode. The `-p 5001:5001` publishes (links) port 5001 on the container to port 5001 on the localhost network interface.
+The `-ti` flag connects your current terminal to the container's terminal and runs in interactive mode. The `-p 5000:80` publishes (links) port 80 on the container to port 80 on the localhost network interface.
 
 ## Push the image to a registry
 

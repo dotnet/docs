@@ -22,5 +22,8 @@ When compared with XML, messages encoded using Protocol buffers have numerous ad
 - Simpler and less ambiguous
 - The generated data access classes are easier to use programmatically
 
+> [!TIP]
+> gRPC *does* support server reflection for dynamically accessing services without pre-compiled stubs, although it is intended more for general-purpose tools than application-specific clients. [Find more information about gRPC Server Reflection on GitHub.](https://github.com/grpc/grpc/blob/master/doc/server-reflection.md)
+
 >[!div class="step-by-step"]
 <!-->[Next](network-protocols.md)-->

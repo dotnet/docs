@@ -13,7 +13,7 @@ Chapter 1 looked at the genesis of both WCF and gRPC. This chapter will consider
 
 As discussed in Chapter one, Google wanted to utilize the introduction of HTTP/2 to rework Stubby, their internal, general purpose RPC infrastructure. Stubby, renamed gRPC, would now be able to take advantage of standardization and would extend its applicability to mobile technology, Cloud and the Internet of Things.
 
-In order to achieve this, Google established a set of principles which would govern gRPC. The most relevant ones are covered below and are mainly concerned with maximizing access and usability:
+In order to achieve this, the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) established a set of principles which would govern gRPC. The most relevant ones are covered below and are mainly concerned with maximizing access and usability:
 
 - **Free and Open** – All artifacts should be open source with licensing that does not constrain developers from adopting gRPC.
 - **Coverage and simplicity** – should be available across every popular platform and simple enough to build on any platform.

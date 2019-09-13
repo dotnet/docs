@@ -82,7 +82,7 @@ Another consequence is that the version 2.0 linker cannot be used to create a pu
 
 Use the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to add the publisher policy assembly to the global assembly cache.
 
-#### To add the publisher policy assembly to the global assembly cache
+### To add the publisher policy assembly to the global assembly cache
 
 Type the following command at the command prompt:
 

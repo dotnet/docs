@@ -18,7 +18,7 @@ ms.assetid: 576cd07a-d58d-4536-b514-77bad60bff38
 ## Class Definition  
  The following code example shows the definition of a non-generic `ForEach` activity.  
   
-```  
+```csharp  
 [ContentProperty("Body")]  
 public class ForEach : NativeActivity  
 {  
@@ -41,7 +41,7 @@ public class ForEach : NativeActivity
 ## Example of Using ForEach  
  The following code demonstrates how to use the ForEach activity in an application.  
   
-```  
+```csharp  
 string[] names = { "bill", "steve", "ray" };  
   
 DelegateInArgument<object> iterationVariable = new DelegateInArgument<object>() { Name = "iterationVariable" };  
@@ -68,7 +68,7 @@ Activity sampleUsage =
 ## ForEach Designer  
  The activity designer for the sample is similar in appearance to the designer provided for the built-in <xref:System.Activities.Statements.ForEach%601> activity. The designer appears in the toolbox in the **Samples**, **Non-Generic Activities** category. The designer is named **ForEachWithBodyFactory** in the toolbox, because the activity exposes an <xref:System.Activities.Presentation.IActivityTemplateFactory> in the toolbox, which creates the activity with a properly configured <xref:System.Activities.ActivityAction>.  
   
-```  
+```csharp  
 public sealed class ForEachWithBodyFactory : IActivityTemplateFactory  
 {  
     public Activity Create(DependencyObject target)  

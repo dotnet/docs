@@ -11,7 +11,7 @@ Windows Presentation Foundation (WPF) has built in support for processing Window
 ## Example  
  The following sample code shows how to remove the default tablet platform support by using reflection.  
   
-```  
+```csharp  
 public static void DisableWPFTabletSupport()  
 {  
     // Get a collection of the tablet devices for this window.    

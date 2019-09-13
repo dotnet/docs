@@ -18,6 +18,8 @@ In this article, you'll use Visual Studio to create the traditional "Hello World
 
 ## Create a new application
 
+<!-- markdownlint-disable MD025 -->
+
 # [Windows](#tab/windows)
 
 Start Visual Studio. You'll see the following image on Windows:

@@ -1,6 +1,6 @@
 ---
 title: .NET Core Acquisition and Deployment Guide
-description: Learn about the ways to acquire and deploy a .NET Core and .NET Core applications.
+description: Learn about ways to acquire and deploy the .NET Core runtimeand tools and .NET Core apps.
 
 author: jamshedd
 ms.author: jamshedd

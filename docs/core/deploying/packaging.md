@@ -9,7 +9,7 @@ ms.custom:
 
 # Packaging your Application
 
-There are a couple of options when it comes to packaging up your application to make it ready for deployment the users’ computer.
+There are a couple of options when it comes to packaging up your desktop application to make it ready for deployment the users’ computer.
 
 ## Windows Application Packaging Project (package your app as an MSIX)
 
@@ -30,3 +30,10 @@ Windows Installer deployment enables you to create installer packages to be dist
 You can use the [VS Installer Projects Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) to generate an MSI package for your .NET Core app.
 
 For more information about packaging your app as an MSI using [Visual Studio Installer Projects please refer to the [Visual Studio Installer Deployment](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/2kt85ked%28v%3dvs.100%29) guide.
+
+
+## Third party installers
+
+In addition to using Visual Studio to package your desktop application as an MSIX or MSI, there are other third-party products and installers that can be used to package a desktop application. 
+
+More information about these installers can be found in the document [Package a desktop app using third-party installers](https://docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-third-party-installer)

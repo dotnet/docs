@@ -9,6 +9,7 @@ Services are defined in the `services` section of the configuration file. Each s
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<services>**  
+  
 ## Syntax  
   
 ```xml  

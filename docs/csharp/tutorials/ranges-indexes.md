@@ -11,6 +11,7 @@ Ranges and indices provide a succinct syntax for accessing single elements or ra
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
+>
 > - Use the syntax for ranges in a sequence.
 > - Understand the design decisions for the start and end of each sequence.
 > - Learn scenarios for the <xref:System.Index> and <xref:System.Range> types.
@@ -18,6 +19,7 @@ In this tutorial, you'll learn how to:
 ## Language support for indices and ranges
 
 This language support relies on two new types and two new operators.
+
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
 - The `^` operator, which specifies that an index is relative to the end of a sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.

@@ -24,7 +24,7 @@ The ActiveX Control Importer converts type definitions in a COM type library for
   
 ## Syntax  
   
-```  
+```console  
 aximp [options]{file.dll | file.ocx}  
 ```  
   
@@ -36,7 +36,7 @@ aximp [options]{file.dll | file.ocx}
   
 |Option|Description|  
 |------------|-----------------|  
-|`/delaysign`|Specifies to Aximp.exe to sign the resulting control using delayed signing. You must specify this option with either the `/keycontainer:`, `/keyfile:`, or `/publickey:` option. For more information on the delayed signing process, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).|  
+|`/delaysign`|Specifies to Aximp.exe to sign the resulting control using delayed signing. You must specify this option with either the `/keycontainer:`, `/keyfile:`, or `/publickey:` option. For more information on the delayed signing process, see [Delay Signing an Assembly](../../standard/assembly/delay-sign.md).|  
 |`/help`|Displays command syntax and options for the tool.|  
 |`/keycontainer:` *containerName*|Signs the resulting control with a strong name using the public/private key pair found in the key container specified by *containerName*.|  
 |`/keyfile:` *filename*|Signs the resulting control with a strong name using the publisher's official public/private key pair found in *filename*.|  
@@ -69,7 +69,7 @@ aximp [options]{file.dll | file.ocx}
 ## Example  
  The following command generates MediaPlayer.dll and AxMediaPlayer.dll for the Media Player control `msdxm.ocx`.  
   
-```  
+```console 
 aximp c:\systemroot\system32\msdxm.ocx  
 ```  
   

@@ -27,7 +27,7 @@ There are two ways to generate a primary interop assembly:
 
 - Creating primary interop assemblies manually in source code by using a language that is compliant with the Common Language Specification (CLS), such as C#. This approach is useful when a type library is unavailable.
 
-You must have a cryptographic key pair to sign the assembly with a strong name. For details, see [Creating A Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md).
+You must have a cryptographic key pair to sign the assembly with a strong name. For details, see [Creating A Key Pair](../../standard/assembly/create-public-private-key-pair.md).
 
 ### To generate a primary interop assembly using Tlbimp.exe
 
@@ -47,19 +47,19 @@ You can also wrap multiple versions of a type library. For instructions, see [Ho
 
 The following example imports the COM type library `LibUtil.tlb` and signs the assembly `LibUtil.dll` with a strong name using the key file `CompanyA.snk`. By omitting a specific namespace name, this example produces the default namespace, `LibUtil`.
 
-```
+```console
 tlbimp LibUtil.tlb /primary /keyfile:CompanyA.snk /out:LibUtil.dll
 ```
 
 For a more descriptive name (using the *VendorName*.*LibraryName* naming guideline), the following example overrides the default assembly file name and namespace name.
 
-```
+```console
 tlbimp LibUtil.tlb /primary /keyfile:CompanyA.snk /namespace:CompanyA.LibUtil /out:CompanyA.LibUtil.dll
 ```
 
 The following example imports `MyLib.tlb`, which references `CompanyA.LibUtil.dll`, and signs the assembly `CompanyB.MyLib.dll` with a strong name using the key file `CompanyB.snk`. The namespace, `CompanyB.MyLib`, overrides the default namespace name.
 
-```
+```console
 tlbimp MyLib.tlb /primary /keyfile:CompanyB.snk /namespace:CompanyB.MyLib /reference:CompanyA.LibUtil.dll /out:CompanyB.MyLib.dll
 ```
 

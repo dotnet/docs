@@ -1,7 +1,7 @@
 ---
-title: "Hello World -- Your first program - C# Programming Guide"
+title: "Hello World -- Your first program using Visual Studio on Windows or Mac - C# Programming Guide"
 ms.custom: seodec18
-ms.date: 07/20/2015
+ms.date: 09/12/2019
 f1_keywords: 
   - "cs.program"
   - "vs.csharp.startpage.firstapplication"
@@ -10,75 +10,98 @@ helpviewer_keywords:
   - "Hello World example [C#]"
 ms.assetid: 6493182a-b0b6-4539-a719-518a168cb730
 ---
-# Hello World -- Your first program (C# Programming Guide)
+# Hello World -- Your first program
 
-The following procedure creates a C# version of the traditional "Hello World!" program. The program displays the string `Hello World!`
-
-For more examples of introductory concepts, see [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic).
+In this article, you'll use Visual Studio to create the traditional "Hello World!" program. Visual Studio is a professional Integrated Development Environment (IDE) with many features designed for .NET development. You'll use only a few of the features in Visual Studio to create this program. To learn more about Visual Studio, see [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic).
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
 
-## To create and run a console application
+## Create a new application
 
-1. Start Visual Studio.
+# [Windows](#tab/windows)
 
-2. On the menu bar, choose **File**, **New**, **Project**.
+Start Visual Studio. You'll see the following image on Windows:
 
-     The **New Project** dialog box opens.
+![Visual Studio welcome screen on Windows](./media/hello-world-your-first-program/visual-studio-windows-start-screen.png)
 
-3. Expand **Installed**, expand **Templates**, expand **Visual C#**, and then choose **Console Application**.
+Select **Create a new project** in the lower right corner of the image. Visual Studio displays the **New Project** dialog:
 
-4. In the **Name** box, specify a name for your project, and then choose the **OK** button.
+![Visual Studio new project screen on Windows](./media/hello-world-your-first-program/visual-studio-windows-new-project.png)
 
-     The new project appears in **Solution Explorer**.
+> [!NOTE]
+> If this is the first time you've started Visual Studio, the **Recent project templates** list is empty.
 
-5. If Program.cs isn't open in the **Code Editor**, open the shortcut menu for **Program.cs** in **Solution Explorer**, and then choose **View Code**.
+On the new project dialog, choose "Console App (.NET Core)" and then press **Next**. Give your project a name, such as "HelloWorld", then press **Create**.
 
-6. Replace the contents of Program.cs with the following code.
+Visual Studio opens your project. It's already a basic "Hello World!" example. Press `Ctrl` + `F5` to run your project. Visual Studio builds your project, converting the source code into an executable. Then, it launches a command window that runs your new application. You should see the following text in the window:
 
-     [!code-csharp[csProgGuide#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#21)]
+```console
+Hello World!
 
-7. Choose the F5 key to run the project. A Command Prompt window appears that contains the line `Hello World!`
+C:\Program Files\dotnet\dotnet.exe (process 11964) exited with code 0.
+Press any key to close this window . . .
+```
 
-Next, the important parts of this program are examined.
+Press a key to close the window. 
 
-## Comments
+# [macOS](#tab/macos)
 
-The first line contains a comment. The characters `//` convert the rest of the line to a comment.
+Start Visual Studio for Mac. You'll see the following image on Mac:
 
- [!code-csharp[csProgGuide#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#32)]
+![Visual Studio welcome screen on Mac](./media/hello-world-your-first-program/visual-studio-mac-start-screen.png)
+
+> [!NOTE]
+> If this is the first time you've started Visual Studio for Mac, the **Recent projects** list is empty.
+
+Select **New** in the upper right corner of the image. Visual Studio for Mac displays the **New Project** dialog:
+
+![Visual Studio new project screen on Mac](./media/hello-world-your-first-program/visual-studio-mac-new-project.png)
+
+On the new project dialog, choose ".NET Core", and "Console App" and then press **Next**. You'll need to select the target framework. The default is fine, so press next. Give your project a name, such as "HelloWorld", then press **Create**. You can use the default project location. Don't add this project to source control.
+
+Visual Studio for Mac opens your project. It's already a basic "Hello World!" example. Press `Ctrl` + `Fn` + `F5` to run your project. Visual Studio for Mac builds your project, converting the source code into an executable. Then, it launches a command window that runs your new application. You should see the following text in the window:
+
+```console
+Hello World!
+
+Press any key to close this window . . .
+```
+
+Press a key to end the session. 
+
+## Elements of a C# program
+
+Let's examine the important parts of this program. The first line contains a comment. The characters `//` convert the rest of the line to a comment.
+
+[!code-csharp[csProgGuide#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#32)]
 
 You can also comment out a block of text by enclosing it between the `/*` and `*/` characters. This is shown in the following example.
 
- [!code-csharp[csProgGuide#33](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#33)]
-
-## Main method
+[!code-csharp[csProgGuide#33](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#33)]
 
 A C# console application must contain a `Main` method, in which control starts and ends. The `Main` method is where you create objects and execute other methods.
 
 The `Main` method is a [static](../../language-reference/keywords/static.md) method that resides inside a class or a struct. In the previous "Hello World!" example, it resides in a class named `Hello`. You can declare the `Main` method in one of the following ways:
 
-- It can return `void`.
+- It can return `void`. That means your program doesn't return a value.
 
-     [!code-csharp[csProgGuideMain#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#12)]
+[!code-csharp[csProgGuideMain#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#12)]
 
-- It can also return an integer.
+- It can also return an integer. The integer is the **exit code** for your application.
 
-     [!code-csharp[csProgGuideMain#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#13)]
+[!code-csharp[csProgGuideMain#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#13)]
 
 - With either of the return types, it can take arguments.
 
-     [!code-csharp[csProgGuideMain#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#19)]
+[!code-csharp[csProgGuideMain#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#19)]
 
-     -or-
+-or-
 
-     [!code-csharp[csProgGuideMain#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#18)]
+[!code-csharp[csProgGuideMain#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#18)]
 
-The parameter of the `Main` method, `args`, is a `string` array that contains the command-line arguments used to invoke the program. Unlike in C++, the array does not include the name of the executable (exe) file.
+The parameter of the `Main` method, `args`, is a `string` array that contains the command-line arguments used to invoke the program. 
 
-For more information about how to use command-line arguments, see the examples in [Main() and Command-Line Arguments](../main-and-command-args/index.md) and [How to: Create and Use Assemblies Using the Command Line](../concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).
-
-The call to <xref:System.Console.ReadKey%2A> at the end of the `Main` method prevents the console window from closing before you have a chance to read the output when you run your program in debug mode, by pressing F5.
+For more information about how to use command-line arguments, see the examples in [Main() and Command-Line Arguments](../main-and-command-args/index.md).
 
 ## Input and output
 
@@ -90,48 +113,9 @@ C# programs generally use the input/output services provided by the run-time lib
 
 For more information about input/output methods, see <xref:System.IO>.
 
-## Command-line compilation and execution
-
-You can compile the "Hello World!" program by using the command line instead of the Visual Studio Integrated Development Environment (IDE).
-
-### To compile and run from a command prompt
-
-1. Paste the code from the preceding procedure into any text editor, and then save the file as a text file. Name the file `Hello.cs`. C# source code files use the extension `.cs`.
-
-2. Perform one of the following steps to open a command-prompt window:
-
-    - In Windows 10, on the **Start** menu, search for `Developer Command Prompt`, and then tap or choose **Developer Command Prompt for VS 2017**.
-
-         A Developer Command Prompt window appears.
-
-    - In Windows 7, open the **Start** menu, expand the folder for the current version of Visual Studio, open the shortcut menu for **Visual Studio Tools**, and then choose **Developer Command Prompt for VS 2017**.
-
-         A Developer Command Prompt window appears.
-
-    - Enable command-line builds from a standard Command Prompt window.
-
-         See [How to: Set Environment Variables for the Visual Studio Command Line](../../language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md).
-
-3. In the command-prompt window, navigate to the folder that contains your `Hello.cs` file.
-
-4. Enter the following command to compile `Hello.cs`.
-
-     `csc Hello.cs`
-
-     If your program has no compilation errors, an executable file that is named `Hello.exe` is created.
-
-5. In the command-prompt window, enter the following command to run the program:
-
-     `Hello`
-
- For more information about the C# compiler and its options, see [C# Compiler Options](../../language-reference/compiler-options/index.md).
-
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Inside a C# Program](./index.md)
-- [Strings](../strings/index.md)
 - [Samples and tutorials](../../../samples-and-tutorials/index.md)
-- [C# Reference](../../language-reference/index.md)
 - [Main() and Command-Line Arguments](../main-and-command-args/index.md)
 - [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

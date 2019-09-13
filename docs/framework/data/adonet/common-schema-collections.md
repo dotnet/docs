@@ -92,4 +92,4 @@ The common schema collections are the schema collections that are implemented by
 
 - [Retrieving Database Schema Information](retrieving-database-schema-information.md)
 - [GetSchema and Schema Collections](getschema-and-schema-collections.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

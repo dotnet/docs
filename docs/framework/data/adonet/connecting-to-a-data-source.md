@@ -22,4 +22,4 @@ In ADO.NET you use a **Connection** object to connect to a specific data source 
 - [Commands and Parameters](commands-and-parameters.md)
 - [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
 - [Transactions and Concurrency](transactions-and-concurrency.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

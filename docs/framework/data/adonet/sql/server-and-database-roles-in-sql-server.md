@@ -62,4 +62,4 @@ All versions of SQL Server use role-based security, which allows you to assign p
 - [Authentication in SQL Server](authentication-in-sql-server.md)
 - [Ownership and User-Schema Separation in SQL Server](ownership-and-user-schema-separation-in-sql-server.md)
 - [Authorization and Permissions in SQL Server](authorization-and-permissions-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

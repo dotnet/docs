@@ -79,7 +79,7 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
   
 3. Create a `MetadataExchangeClient` and call `GetMetadata`. There are two ways to do this: you can specify the custom binding in configuration, or you can specify the custom binding in code, as shown in the following example.  
   
-    ```  
+    ```csharp
     // The custom binding is specified in configuration.  
     EndpointAddress mexAddress = new EndpointAddress("http://localhost:8000/ServiceModelSamples/Service/mex");  
   
@@ -110,7 +110,7 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
   
 4. Create a `WsdlImporter` and call `ImportAllEndpoints`, as shown in the following code.  
   
-    ```  
+    ```csharp
     WsdlImporter importer = new WsdlImporter(mexSet);  
     ServiceEndpointCollection endpoints = importer.ImportAllEndpoints();  
     ```  

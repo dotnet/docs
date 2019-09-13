@@ -13,6 +13,8 @@ ms.date: 05/29/2018
 
 ## Synopsis
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.1](#tab/netcore21)
 
 ```console
@@ -258,7 +260,7 @@ Run the tests in the `test1` project:
 
 Run the tests in the project in the current directory and generate a test results file in the trx format:
 
-`dotnet test --logger:trx`
+`dotnet test --logger trx`
 
 ## Filter option details
 

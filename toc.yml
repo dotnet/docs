@@ -109,6 +109,9 @@
       - name: Tools
         tocHref: /dotnet/core/tools/
         topicHref: /dotnet/core/tools/index
+      - name: Compatibility
+        tocHref: /dotnet/core/compatibility/
+        topicHref: /dotnet/core/compatibility/index
     - name: .NET Framework
       tocHref: /dotnet/framework/
       topicHref: /dotnet/framework/index
@@ -443,9 +446,6 @@
           tocHref: /dotnet/csharp/programming-guide/concepts/
           topicHref: /dotnet/csharp/programming-guide/concepts/index
           items:
-          - name: Assemblies
-            tocHref: /dotnet/csharp/programming-guide/concepts/assemblies-gac/
-            topicHref: /dotnet/csharp/programming-guide/concepts/assemblies-gac/index
           - name: Asynchronous programming
             tocHref: /dotnet/csharp/programming-guide/concepts/async/
             topicHref: /dotnet/csharp/programming-guide/concepts/async/index
@@ -539,9 +539,6 @@
         tocHref: /dotnet/visual-basic/programming-guide/concepts/
         topicHref: /dotnet/visual-basic/programming-guide/concepts/index
         items:
-        - name: Assemblies 
-          tocHref: /dotnet/visual-basic/programming-guide/concepts/assemblies-gac/
-          topicHref: /dotnet/visual-basic/programming-guide/concepts/assemblies-gac/index
         - name: Asynchronous programming
           tocHref: /dotnet/visual-basic/programming-guide/concepts/async/
           topicHref: /dotnet/visual-basic/programming-guide/concepts/async/index

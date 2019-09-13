@@ -54,6 +54,7 @@ The Visual Studio debugger detects these unsafe thread calls by raising an <xref
 ## Safe cross-thread calls 
 
 The following code examples demonstrate two ways to safely call a Windows Forms control from a thread that didn't create it: 
+
 1. The <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> method, which calls a delegate from the main thread to call the control. 
 2. A <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> component, which offers an event-driven model. 
 

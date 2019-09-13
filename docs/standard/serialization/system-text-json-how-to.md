@@ -15,21 +15,16 @@ This article shows how to use the <xref:System.Text.Json> namespace to serialize
 
 ## Namespaces
 
-The code examples that show attributes require the following directive:
-
-```csharp
-using System.Text.Json.Serialization;
-```
-
-Attributes from the <xref:System.Runtime.Serialization> namespace are not supported. 
-
-All other code examples require the following directive:
+The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. Therefore the code examples shown in this article require one or both of the following `using` directives:
 
 ```csharp
 using System.Text.Json;
+using System.Text.Json.Serialization;
 ```
 
-## How to serialize
+Attributes from the <xref:System.Runtime.Serialization> namespace aren't currently supported in `System.Text.Json`.
+
+## How to write .NET objects to JSON (serialize)
 
 To write JSON to a string, call [JsonSerializer.Serialize](xref:System.Text.Json.JsonSerializer.Serialize*), using a generic type parameter or generic type inference:
 

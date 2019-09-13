@@ -19,11 +19,13 @@ This topic introduces issues that you should be aware of when writing [!INCLUDE[
 ### Character References
 A character reference gives the UTF16 code unit of the particular [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] character it represents, in either decimal or hexadecimal. The following example shows a decimal character reference for the COPTIC CAPITAL LETTER HORI, or 'Ϩ':
 
+```
 &#1000;
 ```
 
 The following example shows a hexadecimal character reference. Notice that it has an **x** in front of the hexadecimal number.
 
+```
 &#x3E8;
 ```
 

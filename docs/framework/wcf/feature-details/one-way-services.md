@@ -20,7 +20,7 @@ The default behavior of a service operation is the request-reply pattern. In a r
   
  To create a one-way service contract, define your service contract, apply the <xref:System.ServiceModel.OperationContractAttribute> class to each operation, and set the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true`, as shown in the following sample code.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IOneWayCalculator  
 {  

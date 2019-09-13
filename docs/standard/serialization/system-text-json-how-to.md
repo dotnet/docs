@@ -142,7 +142,7 @@ Supported types include:
 
 ## How to read JSON into a .NET object (deserialize)
 
-Call [JsonSerializer.Deserialize](xref:System.Text.Json.JsonSerializer.Deserialize*):
+To deserialize from a string, call [JsonSerializer.Deserialize](xref:System.Text.Json.JsonSerializer.Deserialize*):
 
 ```csharp
 string json = ... ;
@@ -153,6 +153,24 @@ var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
 For an example, see the [serialize](#how-to-write-net-objects-to-json-serialize) section. The JSON and .NET object are the same, but the direction is reversed.
 
 Overloads of <xref:System.Text.Json.JsonSerializer.Deserialize*> let you deserialize from a `Stream`.  Async versions of the `Stream` overloads are available.
+
+### Deserialize from UTF-8
+
+Call a [JsonSerializer.Deserialize](xref:System.Text.Json.JsonSerializer.Deserialize*) overload that takes a `Utf8JsonReader` or a `ReadOnlySpan<byte>`:
+
+```csharp
+byte[] utf8Json = ... ;
+
+var readOnlySpan = new ReadOnlySpan<byte>(utf8Json);
+weatherForecast = JsonSerializer.Deserialize<WeatherForecastMin>(readOnlySpan);
+```
+
+```csharp
+byte[] utf8Json = ... ;
+
+var utf8Reader = new Utf8JsonReader(utf8Json);
+weatherForecast = JsonSerializer.Deserialize<WeatherForecastMin>(ref utf8Reader);
+```
 
 ## Default deserialization behavior
 

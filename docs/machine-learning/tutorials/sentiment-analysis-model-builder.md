@@ -213,7 +213,7 @@ Predictions will be made inside the main page of the application. Therefore, a m
 
 The results returned by the `OnGetAnalyzeSentiment` will be dynamically displayed on the `Index` web page.
 
-1. Open the *Index.cshtml* file in the *Pages* directory and replace its content with the following code: 
+1. Open the *Index.cshtml* file in the *Pages* directory and replace its contents with the following code: 
 
     [!code-cshtml [IndexPage](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml)]
 

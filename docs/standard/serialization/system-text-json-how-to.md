@@ -118,7 +118,7 @@ Call [JsonSerializer.SerializeToUtf8Bytes](xref:System.Text.Json.JsonSerializer.
 byte[] utf8Json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
 ```
 
-As an alternative, a <xref:System.Text.Json.JsonSerializer.Serialize*> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is available.
+As an alternative, a <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is available.
 
 Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
 

@@ -165,7 +165,9 @@ Visit [Snapcraft.io](https://snapcraft.io/) for guidance on preparing your syste
 .NET Core sources are available in public repositories on GitHub. Building from source is covered in depth in the document titled [Build .NET Core from source](https://docs.microsoft.com/en-us/dotnet/core/build/).
 
 
+<br/>
+
 # Updates and Notifications
 
-TBD, repurpose content from LeeCow’s update discovery doc.
+.NET Core provides a robust metadata file for discovering updates, more information about this can be found in the [.NET Core Update Discovery](../update-discovery-and-deploy.md) guide.
 

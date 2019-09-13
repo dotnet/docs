@@ -123,7 +123,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 ## Default serialization behavior
 
 * All public properties are serialized. You can [specify properties to exclude](#exclude-properties).
-* The [default encoder](xref:System.Text.Encodings.Web.JavascriptEncoder.Default) escapes  non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
+* The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes  non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * JSON is minified. You can optionally [pretty-print the JSON](#serialize-to-formatted-json).
 * Casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
 * [Circular references](https://github.com/dotnet/corefx/issues/38579) are detected and exceptions thrown.

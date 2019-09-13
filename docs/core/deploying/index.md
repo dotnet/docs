@@ -134,16 +134,12 @@ Various acquisition options for the .NET Core runtime and tools are covered in m
 
 When it comes to deploying the .NET Core runtime, you can again choose between various options for both cloud and on-premises deployments. 
 
-<br/>
-
 
 #### Deploying to the Cloud
 
 * Various [Azure App Services](acquisition-experiences.md#azure-app-services) support containers. You create a Docker image for your application and deploy it to one of these services.
  
 * If you are using an Azure DevOps pipeline for your CI/CD environment, the [.NET Core Installer Task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) can be used to acquire a specific version of .NET Core from the Internet or the tools cache and add it to the PATH.
-
-<br/>
 
 
 #### Deploying to on-premises clients/servers

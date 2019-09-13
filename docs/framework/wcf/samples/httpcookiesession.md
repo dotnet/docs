@@ -35,7 +35,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
   
 - When the channel listener is opened, it accepts an inner channel from its inner listener. Because the inner listener is a datagram listener and the lifetime of an accepted channel is decoupled from the lifetime of the listener, we can close the inner listener and only hold on to the inner channel  
   
-    ```  
+    ```csharp  
                 this.innerChannelListener.Open(timeoutHelper.RemainingTime());  
     this.innerChannel = this.innerChannelListener.AcceptChannel(timeoutHelper.RemainingTime());  
     this.innerChannel.Open(timeoutHelper.RemainingTime());  
@@ -44,7 +44,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
   
 - When the open process completes, we set up a message loop to receive messages from the inner channel.  
   
-    ```  
+    ```csharp  
     IAsyncResult result = BeginInnerReceiveRequest();  
     if (result != null && result.CompletedSynchronously)  
     {  
@@ -59,13 +59,13 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
   
 - When a message arrives, the service channel examines the session identifier and de-multiplexes to the appropriate session channel. The channel listener maintains a dictionary that maps the session identifiers to the session channel instances.  
   
-    ```  
+    ```csharp  
     Dictionary<string, IReplySessionChannel> channelMapping;  
     ```  
   
  The `HttpCookieReplySessionChannel` class implements <xref:System.ServiceModel.Channels.IReplySessionChannel>. Higher levels of the channel stack call the <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> method to read requests for this session. Each session channel has a private message queue that is populated by the service channel.  
   
-```  
+```csharp  
 InputQueue<RequestContext> requestQueue;  
 ```  
   
@@ -131,7 +131,7 @@ InputQueue<RequestContext> requestQueue;
   
  When you run the sample, you should see the following output:  
   
-```  
+```console  
 Simple binding:  
 AddItem(10000,2): ItemCount=2  
 AddItem(10550,5): ItemCount=7  
@@ -154,7 +154,7 @@ Press <ENTER> to terminate client.
   
 1. Install ASP.NET 4.0 using the following command.  
   
-    ```  
+    ```console  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   

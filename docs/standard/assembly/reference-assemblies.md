@@ -10,9 +10,11 @@ ms.technology: dotnet-standard
 
 *Reference assemblies* are a special type of assembly that contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools (hence the name), but exclude all member implementations as well as declarations of private members that have no observable impact on their API contract. In contrast, regular assemblies are called *implementation assemblies*. 
 
-Reference assemblies cannot be loaded for execution, but they can be passed as  compiler input in the same way as implementation assemblies. Reference assemblies are usually distributed with the Software Development Kit (SDK) of a particular platform or library, a special software component installed only on developer machines.
+Reference assemblies cannot be loaded for execution, but they can be passed as compiler input in the same way as implementation assemblies. Reference assemblies are usually distributed with the Software Development Kit (SDK) of a particular platform or library, a special software component installed only on developer machines.
 
 Using a reference assembly enables developers to build programs that target a specific library version without having the full implementation assembly for that version. Suppose, you have only the latest version of some library on your machine, but you want to build a program that targets a machine with an earlier version of that library. If you compile directly against the implementation assembly, you might inadvertently use API members that aren't available in the earlier version, and you'll only find this mistake when testing the program on the target machine. If you compile against the reference assembly for the earlier version, you'll immediately get a compile-time error.
+
+Additionally, a reference assembly can represent a contract, that is, a set of APIs that doesn't correspond to the concrete implementation assembly. Such reference assembly, called the *contract assembly*, can be used to target multiple platforms that support the same set of APIs. For example, .NET Standard provides the contract assembly, *netstandard.dll*, that represents the set of common APIs shared between different .NET platforms. The implementations of these APIs are contained in different assemblies on different platforms, such as *mscorlib.dll* on .NET Framework or *System.Private.CoreLib.dll* on .NET Core. A library that targets .NET Standard can run on all platforms that support .NET Standard. 
 
 ## Using reference assemblies
 
@@ -29,7 +31,7 @@ Because they contain no implementation, reference assemblies cannot be loaded fo
 
 Generating reference assemblies for your libraries can be useful when your library consumers often need to build their programs against many different versions of the library (that is, when you need to implement a feature similar to .NET Framework Targeting Packs mentioned above for your own project). Distributing implementation assemblies for all these versions might be impractical due to their large size. Reference assemblies are smaller in size, so distributing them as a part of your library's SDK reduces download size and saves disk space.
 
-IDEs and build tools also can take advantage of reference assemblies to reduce build times in case of large solutions consisting of multiple class libraries. Reference assembly doesn't change when programmer changes private implementation details of a class library without affecting its public API, so projects that take dependency on it via the reference assembly don't have to be rebuilt on each of these changes.
+IDEs and build tools also can take advantage of reference assemblies to reduce build times in case of large solutions consisting of multiple class libraries. Usually, in incremental build scenarios a project is rebuilt when any of its input files are changed, including the assemblies it depends on. The implementation assembly changes whenever the programmer changes the implementation of any member. The reference assembly only changes when its public API is affected. Therefore, using the reference assembly as an input file instead of the implementation assembly allows to skip the build of the dependent project in some cases. 
 
 You can generate reference assemblies:
 

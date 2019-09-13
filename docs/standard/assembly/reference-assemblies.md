@@ -29,7 +29,7 @@ Because they contain no implementation, reference assemblies cannot be loaded fo
 
 Generating reference assemblies for your libraries can be useful when your library consumers often need to build their programs against many different versions of the library (that is, when you need to implement a feature similar to .NET Framework Targeting Packs mentioned above for your own project). Distributing implementation assemblies for all these versions might be impractical due to their large size. Reference assemblies are smaller in size, so distributing them as a part of your library's SDK reduces download size and saves disk space.
 
-IDEs and build tools also can take advantage of reference assemblies to reduce the build time in case of a large solution consisting of multiple class libraries. Reference assembly doesn't change when programmer changes private implementation details of a class library without affecting its public API, so projects that take dependency on it via the reference assembly don't have to be rebuilt on each of these changes.
+IDEs and build tools also can take advantage of reference assemblies to reduce build times in case of large solutions consisting of multiple class libraries. Reference assembly doesn't change when programmer changes private implementation details of a class library without affecting its public API, so projects that take dependency on it via the reference assembly don't have to be rebuilt on each of these changes.
 
 You can generate reference assemblies:
 
@@ -41,22 +41,23 @@ If you want to distribute reference assemblies with NuGet packages, you must inc
 
 ## Reference assemblies structure
 
-Technically, reference assemblies are metadata-only assemblies with certain types of private members excluded.
-
-*Metadata-only assemblies* have their method bodies replaced with a single `throw null` body, but include all members except anonymous types. The reason for using `throw null` bodies (as opposed to no bodies) is so that PEVerify can run and pass (thus validating the completeness of the metadata).
-
-Reference assemblies include an assembly-level [ReferenceAssembly](xref:System.Runtime.CompilerServices.ReferenceAssemblyAttribute) attribute. This attribute may be specified in source; then the compiler won't need to synthesize it. Because of this attribute, runtimes will refuse to load reference assemblies for execution (but they can still be loaded in reflection-only mode). Tools that reflect on assemblies need to ensure they load reference assemblies as reflection-only; otherwise, they will receive a typeload error from the runtime.
+Reference assemblies is an expansion of the related concept, *metadata-only assemblies*. Metadata-only assemblies have their method bodies replaced with a single `throw null` body, but include all members except anonymous types. The reason for using `throw null` bodies (as opposed to no bodies) is so that PEVerify can run and pass (thus validating the completeness of the metadata).
 
 Reference assemblies further remove metadata (private members) from metadata-only assemblies:
 
 - A reference assembly only has references for what it needs in the API surface. The real assembly may have additional references related to specific implementations. For instance, the reference assembly for `class C { private void M() { dynamic d = 1; ... } }` does not reference any types required for `dynamic`.
 - Private function-members (methods, properties, and events) are removed in cases where their removal doesn't observably impact compilation. If there are no [InternalsVisibleTo](xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute) attributes, internal function members are also removed.
-- But all types, including private and nested types.
+
+The metadata in reference assemblies continues to retain information about the following:
+
+- All types, including private and nested types.
 - All attributes, even internal ones.
 - All virtual methods.
-- Explicit interface implementations are kept. 
-- Explicitly implemented properties and events, because their accessors are virtual (and are therefore kept).
-- All fields of a struct are kept. 
+- Explicit interface implementations. 
+- Explicitly implemented properties and events, because their accessors are virtual.
+- All fields of structures. 
+
+Reference assemblies include an assembly-level [ReferenceAssembly](xref:System.Runtime.CompilerServices.ReferenceAssemblyAttribute) attribute. This attribute may be specified in source; then the compiler won't need to synthesize it. Because of this attribute, runtimes will refuse to load reference assemblies for execution (but they can still be loaded in reflection-only mode).
 
 Exact reference assembly structure details depend on the compiler version. Newer versions may choose to exclude more metadata if it is determined as not affecting the public API surface.
 
@@ -65,7 +66,7 @@ Exact reference assembly structure details depend on the compiler version. Newer
 
 ## See also
 
-- [Assemblies in the Common Language Runtime](/dotnet/framework/app-domains/assemblies-in-the-common-language-runtime)
+- [Assemblies in .NET](index.md)
+- [Program with assemblies](program.md)
 - [Framework targeting overview](/visualstudio/ide/visual-studio-multi-targeting-overview)
 - [How to: Add or remove references by using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager)
-- [Creating Assemblies](/dotnet/framework/app-domains/create-assemblies)

@@ -13,7 +13,7 @@ Call credentials are all based on some kind of token passed in metadata with eac
 
 ASP.NET Core supports WS-Federation using the [WsFederation](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.WsFederation) package. This is the closest thing to Windows Authentication that is supported over HTTP/2. Users are authenticated using Active Directory Federation Services (ADFS), which provides a token that can be used to authenticate with ASP.NET Core.
 
-For more information on how to get started with this authentication method, please refer to the [Authenticate users with WS-Federation in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/ws-federation?view=aspnetcore-3.0) documentation.
+For more information on how to get started with this authentication method, please refer to the [Authenticate users with WS-Federation in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authentication/ws-federation?view=aspnetcore-3.0) documentation.
 
 ## JWT Bearer tokens
 

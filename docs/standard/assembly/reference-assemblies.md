@@ -43,7 +43,7 @@ If you want to distribute reference assemblies with NuGet packages, you must inc
 
 ## Reference assemblies structure
 
-Reference assemblies is an expansion of the related concept, *metadata-only assemblies*. Metadata-only assemblies have their method bodies replaced with a single `throw null` body, but include all members except anonymous types. The reason for using `throw null` bodies (as opposed to no bodies) is so that PEVerify can run and pass (thus validating the completeness of the metadata).
+Reference assemblies are an expansion of the related concept, *metadata-only assemblies*. Metadata-only assemblies have their method bodies replaced with a single `throw null` body, but include all members except anonymous types. The reason for using `throw null` bodies (as opposed to no bodies) is so that PEVerify can run and pass (thus validating the completeness of the metadata).
 
 Reference assemblies further remove metadata (private members) from metadata-only assemblies:
 

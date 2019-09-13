@@ -7,7 +7,7 @@ ms.date: 09/06/2019
 ms.custom: 
 ---
 
-# .NET Core Acquisition Experiences
+# .NET Core acquisition experiences
 
 There are various Acquisition options for .NET Core - 
 * [Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)

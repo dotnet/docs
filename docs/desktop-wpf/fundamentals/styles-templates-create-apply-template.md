@@ -10,3 +10,5 @@ dev_langs: ["csharp", "vb"]
 # Create a template for a control
 
 First paragraph
+
+[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]

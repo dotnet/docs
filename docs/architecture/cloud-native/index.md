@@ -41,38 +41,35 @@ Author:
 >
 > **Rob Vettor** - Microsoft - Principal Cloud System Architect/IP Architect - [RobVettor.com](http://robvettor.com)
 
+Participants and Reviewers:
+
+> **Cesar De la Torre**, Principal Program Manager, .NET team, Microsoft
+>
+> **Nish Anil**, Sr. Program Manager, .NET team, Microsoft
+
 Editors:
 
-> **John Doe**
-
-## Introduction
-
-TODO
-
-## Purpose
-
-TODO
+> **Maira Wenzel**, Sr. Content Developer, .NET team, Microsoft
 
 ## Who should use this guide
 
-**UPDATE THIS**
+The audience for this guide is mainly developers, development leads, and architects who are interested in learning how to build applications designed for the cloud.
 
-The audience for this guide is mainly developers, development leads, and architects who are interested in building modern web applications using Microsoft technologies and services in the cloud.
-
-A secondary audience is technical decision makers who are already familiar ASP.NET or Azure and are looking for information on whether it makes sense to upgrade to ASP.NET Core for new or existing projects.
+A secondary audience is technical decision-makers who plan to choose whether to build their applications using a cloud-native approach.
 
 ## How you can use this guide
 
-**UPDATE THIS**
+This guide begins by defining cloud native and introducing a reference application built using cloud-native principles and technologies. Beyond these first two chapters, the rest of the book is broken up into specific chapters focused on topics common to most cloud-native applications. You can jump to any of these chapters to learn about cloud-native approaches to:
 
-This guide has been condensed into a relatively small document that focuses on building web applications with modern .NET technologies and Windows Azure. As such, it can be read in its entirety to provide a foundation of understanding such applications and their technical considerations. The guide, along with its sample application, can also serve as a starting point or reference. Use the associated sample application as a template for your own applications, or to see how you might organize your application's component parts. Refer back to the guide's principles and coverage of architecture and technology options and decision considerations when you're weighing these choices for your own application.
+- Data and data access
+- Communication patterns
+- Scaling and scalability
+- Application resiliency
+- Monitoring and health
+- Identity and security
+- DevOps
 
-Feel free to forward this guide to your team to help ensure a common understanding of these considerations and opportunities. Having everybody working from a common set of terminology and underlying principles helps ensure consistent application of architectural patterns and practices.
-
-## References
-
-- **Choosing between .NET Core and .NET Framework for server apps**  
-  <https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
+This guide is available both in PDF form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
 
 >[!div class="step-by-step"]
-<!-->[Next](introduction-to-cloud-native-applications.md)-->
+>[Next](introduction.md)

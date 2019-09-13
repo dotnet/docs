@@ -39,18 +39,16 @@ public class CalculatorService
 }  
 ```  
   
-```vb  
-<ServiceContract> _  
-Public Class CalculatorService  
-    <OperationContract]> _  
-    Public Function Divide(ByVal a As Integer, ByVal b As Integer) _  
-       As Integer  
-      If (b==0) Then   
-            Throw New Exception("Division by zero!")  
-      Return a/b  
-    End Function  
-End Class  
-```  
+```vb
+<ServiceContract> _
+Public Class CalculatorService
+    <OperationContract> _
+    Public Function Divide(a As Integer, b As Integer) As Integer
+        If b = 0 Then Throw New DivideByZeroException("Division by zero!")
+        Return a / b
+    End Function
+End Class
+```
   
  In the preceding example the operation can either return a custom SOAP fault that is specific to dividing by zero, a custom fault that is specific to math operations but that contains information specific to dividing by zero, multiple faults for several different error situations, or no SOAP fault at all.  
   

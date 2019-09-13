@@ -17,6 +17,8 @@ In [Build a .NET Standard library with C# and .NET Core in Visual Studio 2017](l
 
 To create the unit test project, do the following:
 
+<!-- markdownlint-disable MD025 -->
+
 # [C#](#tab/csharp)
 
 1. In **Solution Explorer**, open the context menu for the **ClassLibraryProjects** solution node and select **Add** > **New Project**.

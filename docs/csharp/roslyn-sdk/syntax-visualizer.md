@@ -24,6 +24,8 @@ Dock this tool window at a convenient location inside Visual Studio, such as the
 
 Create a new project using the **File** > **New Project** command. You can create either a VB or C# project. When Visual Studio opens the main code file for this project, the visualizer displays the syntax tree for it. You can open any existing C# / VB file in this Visual Studio instance, and the visualizer displays that file's syntax tree. If you have multiple code files open inside Visual Studio, the visualizer displays the syntax tree for the currently active code file, (the code file that has keyboard focus.)
 
+<!-- markdownlint-disable MD025 -->
+
 # [C#](#tab/csharp)
 ![Visualizing a C# syntax tree](media/syntax-visualizer/visualize-csharp.png)
 # [Visual Basic](#tab/vb)

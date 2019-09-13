@@ -94,12 +94,24 @@ The variable length feature array is then resized to a fixed length of 600. This
 
     [!code-csharp[MovieReviewClass](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#MovieReviewClass "Declare movie review type")]
 
-    The input data class, `MovieReview`, has a `string` for user comments (`ReviewText`) and an `integer` array (`VariableLengthFeatures`)  In addition, the `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate the vector type.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
+    The input data class, `MovieReview`, has a `string` for user comments (`ReviewText`).
 
-1. Create a class for the mapping from review text to fixed length features, after the `Main` method:
+1. Create a class for the variable length features, after the `Main` method:
+
+    [!code-csharp[VariableLengthFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#VariableLengthFeatures "Declare variable length features type")]
+
+    The `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate the vector type.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
+
+    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the data view can be used as the _input_ to the custom mapping action.
+
+1. Create a class for the fixed length features, after the `Main` method:
 
     [!code-csharp[FixedLengthFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#FixedLengthFeatures)]
-    
+
+    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the data view can be used as the _output_ of the custom mapping action.
+
+    Note that the name of the property `Features` is determined by the TensorFlow model. You cannot change this property name.
+
 1. Create a class for the prediction after the `Main` method:
 
     [!code-csharp[Prediction](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#Prediction "Declare prediction class")]
@@ -124,7 +136,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
     |effects  |  302    |
     |feeling  |  547    |
 
-    Add the following code below the creation of the MLContext object:
+    Add the code below to create the lookup map:
 
     [!code-csharp[CreateLookupMap](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateLookupMap)]
 
@@ -164,11 +176,13 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     [!code-csharp[ScoreTensorFlowModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ScoreTensorFlowModel)]
 
+    The TensorFlow model output is called `Prediction/Softmax`. Note that the name `Prediction/Softmax` is determined by the TensorFlow model. You cannot change this name.
+
 1. Create a new column for the output prediction:
 
     [!code-csharp[SnippetCopyColumns](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#SnippetCopyColumns)]
 
-    The TensorFlow model output is called `Prediction/Softmax`. Copy that into a column called `Prediction` for convenience.
+    You need to copy the `Prediction/Softmax` column into one with a name that can be used as a property in a C# class: `Prediction`. The `/` character is not allowed in a C# property name.
 
 ## Create the ML.NET model from the pipeline
 
@@ -207,7 +221,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     |Property| Value|Type|
     |-------------|-----------------------|------|
-    |Prediction|[0.5459937, 0.454006255],...|float[]|
+    |Prediction|[0.5459937, 0.454006255]|float[]|
 
 1. Display sentiment prediction using the following code:
 

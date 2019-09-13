@@ -23,7 +23,7 @@ The library also provides classes for working with an in-memory document object 
 * For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
   * .NET Standard 2.0 and later
   * .NET Framework 4.61 and later
-  * .NET Core 2.x and later
+  * .NET Core 2.0 and later
 
 ## Additional resources
 

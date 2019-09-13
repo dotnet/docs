@@ -38,7 +38,7 @@ WeatherForecast weatherForecast = ... ;
 string json = JsonSerializer.Serialize(weatherForecast);
 ```
 
-Example types to be serialized, with collections and nested classes:
+Here's an example type to be serialized, which contains collections and nested classes:
 
 ```csharp
 class WeatherForecast1

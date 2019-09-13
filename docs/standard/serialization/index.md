@@ -25,7 +25,7 @@ Serialization is the process of converting the state of an object into a form th
 
 ## Reference
 
-<xref:System.Runtime.Serialization> 
+<xref:System.Runtime.Serialization>  
 Contains classes that can be used for serializing and deserializing objects.
   
 <xref:System.Xml.Serialization>  

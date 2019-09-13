@@ -108,7 +108,7 @@ The following example shows the same JSON, formatted (that is, pretty-printed wi
 }
 ```
 
-Overloads of <xref:System.Text.Json.JsonSerializer.Serialize*> let you serialize to a `Stream`.  Async versions of the `Stream` overloads are available.
+Overloads of <xref:System.Text.Json.JsonSerializer.Serialize%2A> let you serialize to a <xref:System.IO.Stream>. Async versions of the `Stream` overloads are available.
 
 ### Serialize to UTF-8
 

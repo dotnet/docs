@@ -7,7 +7,11 @@ ms.date: 09/02/2019
 
 # Security in gRPC applications
 
-## NOTE ON WCF AUTHENTICATION
+In any real-world scenario, securing applications and services is essential. Security covers two key areas: encrypting network traffic to prevent it from being intercepted by bad actors; and authenticating users to prevent unauthorized system access and apply permissions based on identity. This chapter will cover the facilities for authentication and authorization in gRPC for ASP.NET Core, and discuss network security using SSL/TLS encrypted connections.
+
+## WCF authentication
+
+In WCF, authentication and authorization was handled in different ways depending on the transports and bindings being used. WCF supported various WS-* security standards, as well as Windows authentication for HTTP services running in IIS or NetTCP services between Windows systems.
 
 ## gRPC authentication
 

@@ -1,5 +1,5 @@
 ---
-title: "How to serialize JSON in .NET"
+title: "How to serialize JSON - .NET"
 ms.date: "09/02/2019"
 helpviewer_keywords: 
   - "JSON serialization"

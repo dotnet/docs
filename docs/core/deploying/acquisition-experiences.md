@@ -1,5 +1,5 @@
 ﻿---
-title: .NET Core Acquisition Experiences
+title: Acquisition experiences - .NET Core
 description: .NET Core Acquisition Experiences
 author: jamshedd
 ms.author: jamshedd

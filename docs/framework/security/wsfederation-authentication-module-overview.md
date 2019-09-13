@@ -61,7 +61,7 @@ Windows Identity Foundation (WIF) includes support for federated authentication 
   
 - The <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=nameWithType> event is raised when the ASP.NET infrastructure invokes the <xref:System.IdentityModel.Services.HttpModuleBase.Init%2A> method for the first time on one of the application’s modules that derive from <xref:System.IdentityModel.Services.HttpModuleBase>. This method accesses the static <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType> property, which causes configuration to be loaded from the Web.config file. This event is only raised the first time this property is accessed. The <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is initialized from configuration can be accessed through the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=nameWithType> property in an event handler. You can use this event to modify the configuration before it is applied to any modules. You can add a handler for this event in the Application_Start method:  
   
-    ```  
+    ```csharp
     void Application_Start(object sender, EventArgs e)  
     {  
         FederatedAuthentication.FederationConfigurationCreated += new EventHandler<FederationConfigurationCreatedEventArgs>(FederatedAuthentication_FederationConfigurationCreated);  

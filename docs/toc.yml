@@ -160,8 +160,6 @@
       href: core/tutorials/with-visual-studio.md
     - name: Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017
       href: core/tutorials/vb-with-visual-studio.md
-    - name: Create a .NET Core application with plugins
-      href: core/tutorials/creating-app-with-plugin-support.md
     - name: Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio 2017
       href: core/tutorials/debugging-with-visual-studio.md
     - name: Publish your Hello World application with Visual Studio 2017
@@ -191,11 +189,7 @@
     - name: What's new in .NET Core 2.0
       href: core/whats-new/dotnet-core-2-0.md
   - name: Application Compatibility
-    items:
-    - name: Evaluate breaking changes
-      href: core/compatibility/index.md
-    - name: Breaking change categories
-      href: core/compatibility/categories.md    
+    href: core/compatibility/
   - name: Tutorials
     href: core/tutorials/index.md
     items:
@@ -219,6 +213,8 @@
       href: core/tutorials/testing-with-cli.md
     - name: Developing Libraries with Cross Platform Tools
       href: core/tutorials/libraries.md
+    - name: Create a .NET Core application with plugins
+      href: core/tutorials/creating-app-with-plugin-support.md      
     - name: Developing ASP.NET Core applications
       href: core/tutorials/aspnet-core.md
     - name: Hosting .NET Core from native code
@@ -262,7 +258,7 @@
   - name: Docker
     items:
     - name: Introduction to .NET and Docker
-      href: core/docker/intro-net-docker.md
+      href: core/docker/introduction.md
     - name: Containerize a .NET Core app
       href: core/docker/build-container.md
     - name: Container Tools in Visual Studio
@@ -1074,24 +1070,6 @@
   - name: Programming Concepts
     href: visual-basic/programming-guide/concepts/index.md
     items:
-    - name: Assemblies
-      items:
-      - name: Friend Assemblies
-        items:
-        - name: "How to: Create Unsigned Friend Assemblies"
-          href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md
-        - name: "How to: Create Signed Friend Assemblies"
-          href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md
-      - name: "How to: Create and Use Assemblies Using the Command Line"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md
-      - name: "How to: Determine If a File Is an Assembly"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md
-      - name: "How to: Load and Unload Assemblies"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md
-      - name: "How to: Share an Assembly with Other Applications"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-share-an-assembly-with-other-applications.md
-      - name: "Walkthrough: Embedding Types from Managed Assemblies"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md
     - name: Asynchronous Programming with Async and Await
       href: visual-basic/programming-guide/concepts/async/index.md
     - name: Attributes

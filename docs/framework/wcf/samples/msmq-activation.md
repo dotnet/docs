@@ -86,15 +86,11 @@ A .svc file with the name of the class is used to host the service code in WAS.
 
 The Service.svc file itself contains a directive to create the `OrderProcessorService`.
 
-```svc
-<%@ServiceHost language="c#" Debug="true" Service="Microsoft.ServiceModel.Samples.OrderProcessorService"%>
-```
+`<%@ServiceHost language="c#" Debug="true" Service="Microsoft.ServiceModel.Samples.OrderProcessorService"%>`
 
 The Service.svc file also contains an assembly directive to ensure that System.Transactions.dll is loaded.
 
-```svc
-<%@Assembly name="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"%>
-```
+`<%@Assembly name="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"%>`
 
 The client creates a transaction scope. Communication with the service takes place within the scope of the transaction, causing it to be treated as an atomic unit where all messages succeed or fail. The transaction is committed by calling `Complete` on the transaction scope.
 

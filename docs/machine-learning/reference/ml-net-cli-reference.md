@@ -212,6 +212,7 @@ Example:
 
 Specify if the dataset file(s) have a header row.
 Possible values are:
+
 - `true`
 - `false`
 

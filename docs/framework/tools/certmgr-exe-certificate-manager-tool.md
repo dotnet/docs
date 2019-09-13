@@ -32,7 +32,7 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
   
 ## Syntax  
   
-```  
+```console  
       certmgr [/add | /del | /put] [options]  
 [/s[/r registryLocation]] [sourceStorename]  
 [/s[/r registryLocation]] [destinationStorename]  
@@ -91,43 +91,43 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
 ## Examples  
  The following command displays a default system store called `my` with verbose output.  
   
-```  
+```console  
 certmgr /v /s my  
 ```  
   
  The following command adds all the certificates in a file called `myFile.ext` to a new file called `newFile.ext`.  
   
-```  
+```console  
 certmgr /add /all /c myFile.ext newFile.ext  
 ```  
   
  The following command adds the certificate in a file named `testcert.cer` to the `my` system store.  
   
-```  
+```console  
 certmgr /add /c testcert.cer /s my  
 ```  
   
  The following command adds the certificate in a file named `TrustedCert.cer` to the root certificate store.  
   
-```  
+```console  
 certmgr /c /add TrustedCert.cer /s root  
 ```  
   
  The following command saves a certificate with the common name `myCert` in the `my` system store to a file called `newCert.cer`.  
   
-```  
+```console  
 certmgr /add /c /n myCert /s my newCert.cer  
 ```  
   
  The following command deletes all CTLs in the `my` system store and saves the resulting store to a file called `newStore.str`.  
   
-```  
+```console  
 certmgr /del /all /ctl /s my newStore.str  
 ```  
   
  The following command saves a certificate in the `my` system store in the file `newFile`. You will be prompted to enter the certificate number from `my` to put in `newFile`.  
   
-```  
+```console  
 certmgr /put /c /s my newFile  
 ```  
   

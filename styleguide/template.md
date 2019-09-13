@@ -450,6 +450,7 @@ You can embed the Markdown of one file into another using an include.
 A custom style is available for lists. You can render lists with green check marks.
 
 > [!div class="checklist"]
+>
 > - How to create a .NET Core app
 > - How to add a reference to the Microsoft.XmlSerializer.Generator package
 > - How to edit your MyApp.csproj to add dependencies
@@ -468,8 +469,9 @@ You can see an example of buttons in action in the [Visual Studio docs](https://
 ### Selectors
 
 > [!div class="op_single_selector"]
-- [macOS](../docs/core/tutorials/using-on-macos.md)
-- [Windows](../docs/core/tutorials/with-visual-studio.md)
+>
+> - [macOS](../docs/core/tutorials/using-on-macos.md)
+> - [Windows](../docs/core/tutorials/with-visual-studio.md)
 
 You can see an example of selectors in action at the [Azure docs](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
 

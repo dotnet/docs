@@ -12,7 +12,7 @@ This tutorial introduces you to inheritance in C#. Inheritance is a feature of o
 
 ## Prerequisites
 
-This tutorial assumes that you've installed .NET Core. For installation instructions, see [.NET Core installation guide](https://www.microsoft.com/net/core). You also need a code editor. This tutorial uses [Visual Studio Code](https://code.visualstudio.com), although you can use any code editor of your choice.
+This tutorial assumes that you've installed the .NET Core SDK. Visit the [.NET Core Downloads](https://dotnet.microsoft.com/download) page to download it. You also need a code editor. This tutorial uses [Visual Studio Code](https://code.visualstudio.com), although you can use any code editor of your choice.
 
 ## Running the examples
 

@@ -24,6 +24,7 @@ API Analyzer comes as a NuGet package [Microsoft.DotNet.Analyzers.Compatibility]
 ### What are deprecated APIs?
 
 The .NET family is a set of large products that are constantly upgraded to better serve customer needs. It's natural to deprecate some APIs and replace them with new ones. An API is considered deprecated when a better alternative exists. One way to inform that an API is deprecated and shouldn't be used is to mark it with the <xref:System.ObsoleteAttribute> attribute. The disadvantage of this approach is that there is only one diagnostic ID for all obsolete APIs (for C#, [CS0612](../../csharp/misc/cs0612.md)). This means that:
+
 - It's impossible to have dedicated documents for each case.
 - It's impossible to suppress certain category of warnings. You can suppress either all or none of them.
 - To inform users of a new deprecation, a referenced assembly or targeting package has to be updated.

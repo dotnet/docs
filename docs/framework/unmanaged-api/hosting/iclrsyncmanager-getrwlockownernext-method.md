@@ -23,7 +23,7 @@ Gets the next [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihost
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT GetRWLockOwnerNext (  
     [in] SIZE_T       Iterator,  
     [out] IHostTask  *ppOwnerHostTask  

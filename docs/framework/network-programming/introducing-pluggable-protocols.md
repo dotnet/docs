@@ -65,4 +65,3 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
 - [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)
 - [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
 - [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
-- [Networking Samples for .NET on MSDN Code Gallery](https://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)

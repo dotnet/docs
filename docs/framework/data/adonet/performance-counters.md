@@ -390,9 +390,9 @@ class Program
 
 ## See also
 
-- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
-- [OLE DB, ODBC, and Oracle Connection Pooling](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)
+- [Connecting to a Data Source](connecting-to-a-data-source.md)
+- [OLE DB, ODBC, and Oracle Connection Pooling](ole-db-odbc-and-oracle-connection-pooling.md)
 - [Performance Counters for ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/fxk122b4(v=vs.100))
-- [Runtime Profiling](../../../../docs/framework/debug-trace-profile/runtime-profiling.md)
+- [Runtime Profiling](../../debug-trace-profile/runtime-profiling.md)
 - [Introduction to Monitoring Performance Thresholds](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bd20x32d(v=vs.90))
 - [ADO.NET Overview](ado-net-overview.md)

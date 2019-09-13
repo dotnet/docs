@@ -33,9 +33,6 @@ result = object1 IsNot object2
 
  You can use the `Is` and `IsNot` operators to test both early-bound and late-bound objects.
 
-> [!NOTE]
-> The `IsNot` operator cannot be used to compare expressions returned from the `TypeOf` operator. Instead, you must use the `Not` and `Is` operators.
-
 ## Example
  The following code example uses both the `Is` operator and the `IsNot` operator to accomplish the same comparison.
 

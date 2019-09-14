@@ -1,33 +1,33 @@
 ---
 title: Monitoring in Azure Kubernetes Services
-description: Architecting Cloud Native .NET Apps for Azure | Monitoring in Azure Kubernetes Services
+description: Monitoring in Azure Kubernetes Services
 ms.date: 06/30/2019
 ---
 # Monitoring in Azure Kubernetes Services
 
-Kubernetes is an orchestration engine for running Docker images on both Linux and [Windows](https://kubernetes.io/docs/setup/windows/). It is immensely popular and is likely to remain an excellent candidate for hosting a wide variety of applications. The learning curve can be steep but the advantages are too.
-
-The logging in Kubernetes is somewhat primitive. However there are some great options for getting the logs out of Kubernetes and into a place where they can be properly analyzed.
+The built-in logging in Kubernetes is somewhat primitive. However there are some great options for getting the logs out of Kubernetes and into a place where they can be properly analyzed. If you need to monitor your AKS cluster(s), configuring Elastic Stack for Kubernetes is a great solution.
 
 ## Elastic Stack
 
-The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the [most part](https://kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/), all that is needed to get started is to set the environmental variables as shown in Figure 8-4.
+The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the [most part](https://kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/), all that is needed to get started is to set the environmental variables as shown in Figure 7-5.
 
 ```kubernetes
 KUBE_LOGGING_DESTINATION=elasticsearch
 KUBE_ENABLE_NODE_LOGGING=true
 ```
-**Figure 8-4** - Configuration variables for Kubernetes
+**Figure 7-5** - Configuration variables for Kubernetes
 
 This will install Elasticsearch on the cluster and target sending all the cluster logs to it.
 
-![Figure 8-5 An example of a Kibana dashboard showing the results of a query against logs ingested from Kubernetes](media/kibana-dashboard.png)
+![An example of a Kibana dashboard showing the results of a query against logs ingested from Kubernetes](media/kibana-dashboard.png)
+**Figure 7-6**.  An example of a Kibana dashboard showing the results of a query against logs ingested from Kubernetes
 
 ## Azure Container Monitoring
 
 Azure Container Monitoring supports consuming logs from not just Kubernetes but also from other orchestration engines such as DC/OS, Docker Swarm, and Red Hat OpenShift.
 
-![Figure 8-6 Consuming logs from various containers](media/containers-diagram.png)
+![Consuming logs from various containers](media/containers-diagram.png)
+**Figure 7-7**.  Consuming logs from various containers
 
 Log and metric information is gathered not just from the containers running in the cluster but also from the cluster hosts themselves. This allows correlating log information from the two making it much easier to track down an error.
 
@@ -36,7 +36,8 @@ Installing the log collectors differs on [Windows](https://docs.microsoft.com/az
 
 No matter which orchestrator or operating system running the Azure Monitor daemon the log information is forwarded to the same Azure Monitor tools with which users are familiar. This ensures a parallel experience in environments that mix different log sources such as a hybrid Kubernetes/Azure Functions environment.
 
-![Figure 8-7 A sample dashboard showing logging and metric information from a number of running containers.](media/containers-dashboard.png)
+![A sample dashboard showing logging and metric information from a number of running containers.](media/containers-dashboard.png)
+**Figure 7-7**. A sample dashboard showing logging and metric information from a number of running containers.
 
 ## Log.Finalize()
 

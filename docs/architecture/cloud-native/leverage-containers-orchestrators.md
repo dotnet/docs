@@ -1,6 +1,6 @@
 ---
 title: Leveraging containers and orchestrators
-description: Architecting Cloud-native .NET Apps for Azure | Leveraging Containers and Orchestrators
+description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
 ms.date: 06/30/2019
 ---
 # Leveraging containers and orchestrators

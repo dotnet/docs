@@ -1,6 +1,6 @@
 ---
 title: Combining containers and serverless approaches
-description: Architecting Cloud-native .NET Apps for Azure | Combining Containers and Serverless Approaches
+description: Combining Containers and Kubernetes with Serverless Approaches
 ms.date: 06/30/2019
 ---
 # Combining containers and serverless approaches

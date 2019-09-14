@@ -1,6 +1,6 @@
 ---
 title: Leveraging serverless functions
-description: Architecting Cloud-native .NET Apps for Azure | Leveraging Serverless Functions
+description: Leveraging Serverless and Azure Functions in Cloud Native Applications
 ms.date: 06/30/2019
 ---
 # Leveraging serverless functions

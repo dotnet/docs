@@ -72,7 +72,7 @@ Organizations that deploy and must subsequently maintain large numbers of applic
 
 ## When should you avoid using containers and orchestrators?
 
-If you're unwilling or unable to build your application following 12 Factor App principles, you'll probably be better off avoiding containers and orchestrators. In these cases, it may be best to move forward with a VM-based hosting platform, or possibly some hybrid system in which you're able to spin off certain pieces of functionality into separate containers or even serverless functions.
+If you're unwilling or unable to build your application following 12 Factor App principles, you'll probably be better off avoiding containers and orchestrators. In these cases, it may be best to move forward with a VM-based hosting platform, or possibly some hybrid system in which you're able to spin off certain pieces of functionality into separate containers or even serverless functions. There is significant complexity involved in setting up and configuring containers and orchestrators, and it may be quite unnecessary for many smaller applications. To learn more about Microsoft's recommendations for building simpler monolithic applications, please read the free eBook, [Architecting Modern Web Applications with ASP.NET Core and Microsoft Azure](https://www.microsoft.com/net/download/thank-you/aspnet-ebook).
 
 ## Development resources
 

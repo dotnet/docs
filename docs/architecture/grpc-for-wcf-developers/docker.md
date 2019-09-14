@@ -82,7 +82,7 @@ The Dockerfile has two parts: the first uses the `sdk` base image to build and p
 
 ### HTTPS in Docker
 
-Microsoft's base images for Docker set the `ASPNETCORE_URLS` environment variable to `http://+:80`, meaning that Kestrel will run without HTTPS on that port. If you are running on HTTPS with a custom certificate as described in [the previous section](self-hosted.md) you should override this by setting the environment variable **in the runtime image creation part** of your Dockerfile.
+Microsoft's base images for Docker set the `ASPNETCORE_URLS` environment variable to `http://+:80`, meaning that Kestrel will run without HTTPS on that port. If you are using HTTPS with a custom certificate (as described in [the previous section](self-hosted.md)) you should override this by setting the environment variable **in the runtime image creation part** of your Dockerfile.
 
 ```dockerfile
 # Runtime image creation
@@ -100,7 +100,7 @@ bin/
 obj/
 ```
 
-### Building the image
+## Building the image
 
 For a solution with a single application, and thus a single Dockerfile, it is simplest to put the Dockerfile in the base directory; that is, the same directory as the `.sln` file. In that case, to build the image, use the following `docker build` command from the directory containing the Dockerfile.
 
@@ -129,6 +129,22 @@ The `-ti` flag connects your current terminal to the container's terminal and ru
 ## Push the image to a registry
 
 Once you have verified that the image works, you will need to push it to a Docker registry to make it available on other systems. Internal networks will need to provision a Docker registry; this can be as simple as running [Docker's own `registry` image](https://docs.docker.com/registry/deploying/) (that's right, the Docker registry runs in a Docker container), but there are various more comprehensive solutions available. For external sharing and cloud use, there are various managed registries available, such as [Azure Container Registry](https://docs.microsoft.com/azure/container-registry/) or [Docker Hub](https://docs.docker.com/docker-hub/repos/).
+
+To push to the Docker Hub you will need to prefix the image name with your user or organization name.
+
+```console
+docker tag portfolios myorg/portfolios
+docker push myorg/portfolios
+```
+
+To push to a private registry prefix the image name with the registry host name as well as the organization name.
+
+```console
+docker tag portfolios internal-registry:5000/myorg/portfolios
+docker push internal-registry:5000/myorg/portfolios
+```
+
+Once the image is in a registry you can deploy it to individual Docker hosts or to a container orchestration engine like Kubernetes.
 
 >[!div class="step-by-step"]
 <!-->[Next](kubernetes.md)-->

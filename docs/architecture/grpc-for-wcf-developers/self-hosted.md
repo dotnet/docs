@@ -7,7 +7,9 @@ ms.date: 09/02/2019
 
 # Self-hosted gRPC applications
 
-At present, it is not possible to host an ASP.NET Core 3.0 gRPC application in IIS. This functionality is expected in a future update to both ASP.NET Core and Windows Server. But you can run your application as a Windows Service, or as a Linux service controlled by [systemd](https://en.wikipedia.org/wiki/Systemd), thanks to some new features in .NET Core 3.0.
+Although ASP.NET Core 3.0 applications can be hosted in IIS on Windows Server, at present, it is not possible to host a gRPC application in IIS because some of the HTTP/2 functionality is not yet supported. This functionality is expected in a future update to Windows Server.
+
+You can run your application as a Windows Service, or as a Linux service controlled by [systemd](https://en.wikipedia.org/wiki/Systemd), thanks to some new features in the .NET Core 3.0 hosting extensions.
 
 ## Running your app as a Windows service
 

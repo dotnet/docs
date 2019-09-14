@@ -602,7 +602,7 @@ In the preceding example scenario, both approaches cause the `WindSpeed` propert
 
 ## Handle overflow JSON
 
-While deserializing, you might receive data in the JSON that is not represented by properties of the target type. For example suppose your target type is this:
+While deserializing, you might receive data in the JSON that is not represented by properties of the target type. For example, suppose your target type is this:
 
 ```csharp
 class WeatherForecast

@@ -284,21 +284,32 @@ The `ResumeWriterThreshold` controls how much the reader has to observe before w
 
 ![diagram with ResumeWriterThreshold and PauseWriterThreshold](media/pipelines/resume-pause.png)
 
-`PipeWriter.FlushAsync` returns an incomplete `ValueTask<FlushResult>` when the amount of data in the `Pipe` crosses `PauseWriterThreshold` and completes said ValueTask when it becomes lower than `ResumeWriterThreshold`. Two values are used to prevent thrashing around the limit.
+`PipeWriter.FlushAsync`:
+
+* Returns an incomplete `ValueTask<FlushResult>` when the amount of data in the `Pipe` crosses `PauseWriterThreshold`.
+* Completes `ValueTask<FlushResult>` when it becomes lower than `ResumeWriterThreshold`.
+
+Two values are used to prevent rapid cycling if one value was used.
 
 #### Examples
 
 ```csharp
-// The Pipe will start returning incomplete tasks from FlushAsync until the reader examines at least 5 bytes
+// The Pipe will start returning incomplete tasks from FlushAsync until 
+// the reader examines at least 5 bytes.
 var options = new PipeOptions(pauseWriterThreshold: 10, resumeWriterThreshold: 5);
 var pipe = new Pipe(options);
 ```
 
+### PipeScheduler
+
 ### [PipeScheduler](/dotnet/api/system.io.pipelines.pipescheduler?view=dotnet-plat-ext-2.1)
 
-Usually when using async/await, asynchronous code resumes on either on a `TaskScheduler` or on the current `SynchronizationContext`.
+Typically when using async/await, asynchronous code resumes on either on a `TaskScheduler` or on the current `SynchronizationContext`.
 
-When doing IO it's very important to have fine-grained control over where that IO is performed so that one can take advantage of CPU caches more effectively, which is critical for high-performance applications like web servers. The `PipeScheduler` gives users control over where asynchronous callbacks run. By default, the current `SynchronizationContext` will be respected and if there is none, it will use the thread pool to run callbacks.
+When doing IO it's important to have fine-grained control over where that IO is performed. This control is required so to take advantage of CPU caches more effectively. Efficient caching is critical for high-performance apps like web servers. <xref:System.IO.Pipelines.PipeScheduler> gives users control over where asynchronous callbacks run. By default:
+
+* The current `SynchronizationContext` will be used.
+* If there is no `SynchronizationContext`, it will use the thread pool to run callbacks.
 
 #### Examples
 
@@ -309,12 +320,13 @@ public static void Main(string[] args)
     var writeScheduler = new SingleThreadPipeScheduler();
     var readScheduler = new SingleThreadPipeScheduler();
 
-    // Tell the Pipe what schedulers to use, we also disable the SynchronizationContext 
+    // Tell the Pipe what schedulers to use
+    // and disable the SynchronizationContext .
     var options = new PipeOptions(readerScheduler: readScheduler, writerScheduler: writeScheduler, useSynchronizationContext: false);
     var pipe = new Pipe(options);
 }
 
-// This is a sample scheduler that async callbacks on a single dedicated thread
+// This is a sample scheduler that async callbacks on a single dedicated thread.
 public class SingleThreadPipeScheduler : PipeScheduler
 {
     private readonly BlockingCollection<(Action<object> Action, object State)> _queue = new BlockingCollection<(Action<object> Action, object State)>();
@@ -341,23 +353,32 @@ public class SingleThreadPipeScheduler : PipeScheduler
 }
 ```
 
-### Reset
+### Pipe reset
 
-`Pipe` is a large class, as such it may make sense to reuse the object. To make this possible there's a [`Reset`](/dotnet/api/system.io.pipelines.pipe.reset?view=dotnet-plat-ext-2.1) method that can be used when both the `PipeReader` and `PipeWriter` are complete.
+It's frequently efficient to reuse the Pipe object. To reset the pipe, call <xref:System.IO.Pipelines.PipeReader> [Reset](/dotnet/api/system.io.pipelines.pipe.reset) when both the `PipeReader` and `PipeWriter` are complete.
 
-## [PipeReader](/dotnet/api/system.io.pipelines.pipereader?view=dotnet-plat-ext-2.1)
+## PipeReader
 
-The `PipeReader` manages memory on the caller's behalf. Because of this, it's important to **always** call `PipeReader.AdvanceTo` after calling `PipeReader.ReadAsync`. This lets the `PipeReader` know when the caller is done with the memory so that it can be tracked appropriately. The `ReadOnlySequence<byte>` returned from `PipeReader.ReadAsync` is only valid until the call the `PipeReader.AdvanceTo`. This means that it's illegal to use it after calling `PipeReader.AdvanceTo` and doing so may result in invalid/undocumented/broken behavior. 
+<xref:System.IO.Pipelines.PipeReader> manages memory on the caller's behalf. **Always** call `PipeReader.AdvanceTo` after calling `PipeReader.ReadAsync`. This lets the `PipeReader` know when the caller is done with the memory so that it can be tracked. The `ReadOnlySequence<byte>` returned from `PipeReader.ReadAsync` is only valid until the call the `PipeReader.AdvanceTo`:
 
-`PipeReader.AdvanceTo` takes two `SequencePosition` arguments. The first one determines how much memory was consumed and the second determines how much of the buffer was observed. Marking data as consumed means that the pipe can clean the memory up (return it to the underlying buffer pool etc), while marking data as observed controls what the next call to `PipeReader.ReadAsync` will do. Marking everything as observed means that the next call to `PipeReader.ReadAsync` will not return until there's more data written to the pipe. Any other value will make the next call to `PipeReader.ReadAsync` return immediately with the unobserved data.
+* It's illegal to use `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo`.
+* Using `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo` is undefined.
+
+`PipeReader.AdvanceTo` takes two `SequencePosition` arguments:
+
+* The first argument determines how much memory was consumed.
+* The second argument determines how much of the buffer was observed. 
+
+Marking data as consumed means that the pipe can return the memory to the underlying buffer pool. Marking data as observed controls what the next call to `PipeReader.ReadAsync` does. Marking everything as observed means that the next call to `PipeReader.ReadAsync` will not return until there's more data written to the pipe. Any other value will make the next call to `PipeReader.ReadAsync` return immediately with the unobserved data.
 
 ### Scenarios
 
 There are a couple of typical patterns that emerge when trying to read streaming data:
-- Given a stream of data, parse a single message
-- Given a stream of data, parse all available messages
 
-The following examples will use the following method for parsing messages from a `ReadOnlySequence<byte>`. This method will parse a single message and update the input buffer to trim the parsed message from the buffer.
+- Given a stream of data, parse a single message.
+- Given a stream of data, parse all available messages.
+
+The following examples use the `TryParseMessage` method for parsing messages from a `ReadOnlySequence<byte>`. This method will parse a single message and update the input buffer to trim the parsed message from the buffer.
 
 ```csharp
 bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
@@ -375,8 +396,8 @@ async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, CancellationT
         ReadResult result = await reader.ReadAsync(cancellationToken);
         ReadOnlySequence<byte> buffer = result.Buffer;
         
-        // In the event that we don't parse any message successfully, mark consumed as nothing
-        // and examined as the entire buffer.
+        // In the event no message is parsed successfully,
+        // mark consumed as nothing and examined as the entire buffer.
         SequencePosition consumed = buffer.Start;
         SequencePosition examined = buffer.End;
         
@@ -384,23 +405,27 @@ async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, CancellationT
         {
             if (TryParseMessage(ref buffer, out Message message))
             {
-                // We successfully parsed a single message so mark the start as the parsed buffer as consumed
-                // TryParseMessage trims the buffer to point to the data after the message was parsed
+                // Successfully parsed a single message so mark the start
+                // as the parsed buffer as consumed.
+                // TryParseMessage trims the buffer to point to the data
+                // after the message is parsed.
                 consumed = buffer.Start;
                 
-                // Examined is marked the same as consumed here so that the next call to ReadSingleMessageAsync
-                // will process the next message if there is one
+                // Examined is marked the same as consumed here so that the
+                // next call to ReadSingleMessageAsync processs the next message
+                // if there is one
                 examined = consumed;
 
                 return message;
             }
             
-            // There's no more data to be processed
+            // There's no more data to be processed.
             if (result.IsCompleted)
             {
                 if (buffer.Length > 0)
                 {
-                    // We have an incomplete message and there's no more data to process
+                    // There is an incomplete message and there's no more data
+                    // to process.
                     throw new InvalidDataException("Incomplete message!");
                 }
                 
@@ -416,7 +441,7 @@ async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, CancellationT
     return null;
 }
 ```
-
+<!-- zz start ediit here -->
 The code above parses a single message and updates the consumed `SequencePosition` and examined `SequencePosition` to point to the start of the trimmed input buffer. This is because `TryParseMessage` removes the parsed message from the input buffer. Generally, when parsing a single message from the buffer, the examined position should be the end of the message or the end of the received buffer if no message was found.
 
 The single message case has the most potential for errors. Passing the wrong values to *examined* can result in an OOM or infinite loop (see the [gotchas](#) section below).

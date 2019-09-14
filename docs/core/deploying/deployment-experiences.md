@@ -6,7 +6,6 @@ ms.author: jamshedd
 ms.date: 09/06/2019
 ms.custom: 
 ---
-
 # .NET Core Deployment Experiences
 
 ## Full Installers
@@ -48,4 +47,4 @@ Don't roll forward. Only bind to specified version. This policy isn't recommende
 
 Besides the Disable setting, all settings will use the highest available patch version.
 
-For more information about roll-forward at run time, see [Self-contained deployment runtime roll-forward](https://docs.microsoft.com/en-us/dotnet/core/deploying/runtime-patch-selection).
+For more information about roll-forward at run time, see [Self-contained deployment runtime roll-forward](https://docs.microsoft.com/dotnet/core/deploying/runtime-patch-selection).

@@ -1,7 +1,6 @@
 ---
 title: .NET Core Acquisition and Deployment Guide
 description: Learn about ways to acquire and deploy the .NET Core runtime and tools and .NET Core apps.
-
 author: jamshedd
 ms.author: jamshedd
 ms.date: 09/06/2019
@@ -43,7 +42,7 @@ _There are several other ways to acquire the .NET Core SDK and Runtime, these op
 
 Once you have acquired the tools, you're ready to build your app. Pick the approach that corresponds to whether in the previous step you chose to use an IDE like Visual Studio or Visual Studio for Mac or the CLI.
 
-[Build your first .NET Core app using Visual Studio](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio)
+[Build your first .NET Core app using Visual Studio](https://docs.microsoft.com/dotnet/core/tutorials/with-visual-studio)
  
 [Build your first .NET Core app using the Command Line Interface (CLI)](../tutorials/using-with-xplat-cli.md)
 
@@ -100,7 +99,7 @@ If you have created an installer, copy it to the target machine and run the inst
 
 Note: If your installer was signed using a test certificate or a self-signed certificate, you need to complete these steps before installing the app:
 
-a) [Enable Developer mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development) on the target computer
+a) [Enable Developer mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) on the target computer
 
 b) Import the test certificate on the target computer (Trusted Root Certification Authorities) folder
 
@@ -139,18 +138,18 @@ When it comes to deploying the .NET Core runtime, you can again choose between v
 
 * Various [Azure App Services](acquisition-experiences.md#azure-app-services) support containers. You create a Docker image for your application and deploy it to one of these services.
  
-* The Azure DevOps pipeline supports the [.NET Core Installer Task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) which can be used to acquire a specific version of .NET Core from the Internet.
+* The Azure DevOps pipeline supports the [.NET Core Installer Task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) which can be used to acquire a specific version of .NET Core from the Internet.
 
 
 #### Deploying to on-premises clients/servers
 
-* Using a software update management tool like [System Center Configuration Manager (SCCM)](https://docs.microsoft.com/en-us/sccm/) or another similar tool is a great option to deploy the .NET Core runtime or tools to on-premises clients and servers. 
+* Using a software update management tool like [System Center Configuration Manager (SCCM)](https://docs.microsoft.com/sccm/) or another similar tool is a great option to deploy the .NET Core runtime or tools to on-premises clients and servers. 
 
   Software update management tools like System Center Configuration Manager allow you to define a target group of computers for deploying the .NET Core runtime and also the app itself. You then push the deployment to the target group. 
 
   System Center Configuration Manager client is supported on Windows Server and Client computers, MacOS, and Linux. 
 
-  For more information about using SCCM to deploy the .NET Core runtime, see [Create and deploy an application with SCCM](https://docs.microsoft.com/en-us/sccm/apps/get-started/create-and-deploy-an-application).
+  For more information about using SCCM to deploy the .NET Core runtime, see [Create and deploy an application with SCCM](https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application).
 
 * Another option for deploying the .NET Core runtime or tools to on-premises clients/servers is the [Dotnet-install Script](acquisition-experiences.md#Dotnet-install.ps1.sh-Scripts). You can use this script anywhere PowerShell and Bash are supported. 
 

@@ -58,6 +58,42 @@ Services built on containers can leverage scaling benefits provided by orchestra
 
 Kubernetes has built-in support for scaling clusters to meet demand. Combined with containerized micro-services, this provides cloud-native applications with the ability to quickly and efficiently respond to spikes in demand with additional resources when and where they are needed.
 
+### Declarative vs. imperative
+
+Kubernetes supports both declarative and imperative object configuration. The imperative approach involves running various commands that tell Kubernetes what to do each step of the way. *Run* this image. *Delete* this pod. *Expose* this port. With the declarative approach, you use a configuration file that describes *what you want* instead of *what to do* and Kubernetes figures out what to do to achieve the desired end state. If you've already configured your cluster using imperative commands, you can export a declarative manifest by using `kubectl get svc SERVICENAME -o yaml > service.yaml`. This will produce a manifest file like this one:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2019-09-13T13:58:47Z"
+  labels:
+    component: apiserver
+    provider: kubernetes
+  name: kubernetes
+  namespace: default
+  resourceVersion: "153"
+  selfLink: /api/v1/namespaces/default/services/kubernetes
+  uid: 9b1fac62-d62e-11e9-8968-00155d38010d
+spec:
+  clusterIP: 10.96.0.1
+  ports:
+  - name: https
+    port: 443
+    protocol: TCP
+    targetPort: 6443
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+```
+
+When using declarative configuration, you can preview the changes that will be made prior to committing them by using `kubectl diff -f FOLDERNAME` against the folder where your configuration files are located. Once you're sure you want to apply the changes, run `kubectl apply -f FOLDERNAME`. Add `-R` to recursively process a folder hierarchy.
+
+In addition to services, you can use declarative configuration for other Kubernetes features, such as *deployments*. Declarative deployments are used by deployment controllers to update cluster resources. Deployments are used to roll out new changes, scale up to support more load, or roll back to a previous revision. If a cluster is unstable, declarative deployments provide a mechanism for automatically bringing the cluster back to a desired state.
+
+Using declarative configuration allows infrastructure to be represented as code that can be checked in and versioned alongside the application code. This provides improved change control and better support for continuous deployment using a build and deploy pipeline tied to source control changes.
+
 ## What scenarios are ideal for containers and orchestrators?
 
 The following scenarios are ideal for using containers and orchestrators.
@@ -72,7 +108,7 @@ Organizations that deploy and must subsequently maintain large numbers of applic
 
 ## When should you avoid using containers and orchestrators?
 
-If you're unwilling or unable to build your application following 12 Factor App principles, you'll probably be better off avoiding containers and orchestrators. In these cases, it may be best to move forward with a VM-based hosting platform, or possibly some hybrid system in which you're able to spin off certain pieces of functionality into separate containers or even serverless functions. There is significant complexity involved in setting up and configuring containers and orchestrators, and it may be quite unnecessary for many smaller applications. To learn more about Microsoft's recommendations for building simpler monolithic applications, please read the free eBook, [Architecting Modern Web Applications with ASP.NET Core and Microsoft Azure](https://www.microsoft.com/net/download/thank-you/aspnet-ebook).
+If you're unwilling or unable to build your application following 12 Factor App principles, you'll probably be better off avoiding containers and orchestrators. In these cases, it may be best to move forward with a VM-based hosting platform, or possibly some hybrid system in which you're able to spin off certain pieces of functionality into separate containers or even serverless functions. 
 
 ## Development resources
 

@@ -45,7 +45,7 @@ C:\projects\vb2.vb(3) : error BC30451: 'x' is not declared. It may be inaccessib
 
 Compiled with `-quiet`, the compiler outputs only the following:
 
-```
+```console
 E:\test\t2.vb(3) : error BC30451: Name 'x' is not declared.
 ```
 
@@ -56,7 +56,7 @@ E:\test\t2.vb(3) : error BC30451: Name 'x' is not declared.
 
 The following code compiles `T2.vb` and does not display code for syntax-related compiler diagnostics:
 
-```
+```console
 vbc -quiet t2.vb
 ```
 

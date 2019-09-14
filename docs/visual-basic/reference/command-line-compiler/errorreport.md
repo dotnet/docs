@@ -1,7 +1,7 @@
 ---
 title: "-errorreport"
 ms.date: 08/14/2018
-helpviewer_keywords: 
+helpviewer_keywords:
   - "-errorreport compiler option [Visual Basic]"
   - "/errorreport compiler option [Visual Basic]"
   - "errorreport compiler option [Visual Basic]"
@@ -43,7 +43,7 @@ This option is best used with the [/bugreport](../../../visual-basic/reference/c
 
 The following code attempts to compile `T2.vb`, and if the compiler encounters an internal compiler error, it prompts you to send the error report to Microsoft.
 
-```
+```console
 vbc -errorreport:prompt t2.vb
 ```
 

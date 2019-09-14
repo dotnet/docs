@@ -81,15 +81,15 @@ This article explains how to create a multifile assembly and provides code that 
 
 2. Use the following command to compile this code:
 
-   ```cpp
+   ```console
    cl /clr:pure /LN Stringer.cpp
    ```
 
-   ```csharp
+   ```console
    csc /t:module Stringer.cs
    ```
 
-   ```vb
+   ```console
    vbc /t:module Stringer.vb
    ```
 
@@ -155,15 +155,15 @@ This article explains how to create a multifile assembly and provides code that 
 
 4. Use the following command to compile this code:
 
-   ```cpp
+   ```console
    cl /clr:pure /FUStringer.netmodule /LN Client.cpp
    ```
 
-   ```csharp
+   ```console
    csc /addmodule:Stringer.netmodule /t:module Client.cs
    ```
 
-   ```vb
+   ```console
    vbc /addmodule:Stringer.netmodule /t:module Client.vb
    ```
 
@@ -174,33 +174,33 @@ This article explains how to create a multifile assembly and provides code that 
    >
    > Two compilations create a two-file assembly:
    >
-   >   ```cpp
+   >   ```console
    >   cl /clr:pure /LN Stringer.cpp
    >   cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
    >   ```
    >
-   >   ```csharp
+   >   ```console
    >   csc /t:module Stringer.cs
    >   csc Client.cs /addmodule:Stringer.netmodule
    >   ```
    >
-   >   ```vb
+   >   ```console
    >   vbc /t:module Stringer.vb
    >   vbc Client.vb /addmodule:Stringer.netmodule
    >   ```
    >
    > One compilation creates a two-file assembly:
    >
-   >   ```cpp
+   >   ```console
    >   cl /clr:pure /LN Stringer.cpp
    >   cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
    >   ```
    >
-   >   ```csharp
+   >   ```console
    >   csc /out:Client.exe Client.cs /out:Stringer.netmodule Stringer.cs
    >   ```
    >
-   >   ```vb
+   >   ```console
    >   vbc /out:Client.exe Client.vb /out:Stringer.netmodule Stringer.vb
    >   ```
 

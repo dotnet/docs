@@ -35,11 +35,11 @@ In this command, *compiler command* is the compiler command for the language use
 
 The following example creates an assembly named *myCode.exe* from a code module called `myCode`.
 
-```csharp
+```console
 csc myCode.cs
 ```
 
-```vb
+```console
 vbc myCode.vb
 ```
 
@@ -53,11 +53,11 @@ In this command, *compiler command* is the compiler command for the language use
 
 The following example creates an assembly named *myAssembly.exe* from a code module called `myCode`.
 
-```csharp
+```console
 csc -out:myAssembly.exe myCode.cs
 ```
 
-```vb
+```console
 vbc -out:myAssembly.exe myCode.vb
 ```
 
@@ -72,11 +72,11 @@ In this command, *compiler command* is the compiler command for the language use
 
 The following example creates a library assembly named *myCodeAssembly.dll* from a code module called `myCode`.
 
-```csharp
+```console
 csc -out:myCodeLibrary.dll -t:library myCode.cs
 ```
 
-```vb
+```console
 vbc -out:myCodeLibrary.dll -t:library myCode.vb
 ```
 

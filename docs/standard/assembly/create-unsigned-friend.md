@@ -70,11 +70,11 @@ This example shows how to use friend assemblies with assemblies that are unsigne
 
 3. Compile and sign *friend_unsigned_A* by using the following command:
 
-   ```csharp
+   ```console
    csc /target:library friend_unsigned_A.cs
    ```
 
-   ```vb
+   ```console
    vbc -target:library friend_unsigned_A.vb
    ```
 
@@ -126,7 +126,7 @@ This example shows how to use friend assemblies with assemblies that are unsigne
    csc /r:friend_unsigned_A.dll /out:friend_unsigned_B.exe friend_unsigned_B.cs
    ```
 
-   ```vb
+   ```console
    vbc -r:friend_unsigned_A.dll friend_unsigned_B.vb
    ```
 

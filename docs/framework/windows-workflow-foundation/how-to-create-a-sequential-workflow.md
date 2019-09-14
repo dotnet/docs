@@ -124,7 +124,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 
 11. Type the following expression into the newly added **If** activity’s **Condition** property value box.
 
-    ```
+    ```text
     Guess < Target
     ```
 

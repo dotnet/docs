@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 05026813-f3bd-4d7c-9e0b-fc588eb3d114
 author: "rpetrusha"
 ms.author: "ronpet"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
@@ -68,6 +68,7 @@ If you are using an earlier version of Visual Studio that does not have a **Sign
 ```vb
 <Assembly:AssemblyKeyFileAttribute("keyfile.snk")>
 ```
+
 ## See also
 
 - [Create and use strong-named assemblies](create-use-strong-named.md)

@@ -1,7 +1,7 @@
 ---
 title: "How to: Build a multifile assembly"
 ms.date: "08/20/2019"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "assemblies [.NET Framework], multifile"
   - "entry point for assembly"
   - "compiling assemblies"
@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "Assembly Linker"
   - "code modules"
   - "multifile assemblies"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
@@ -21,6 +21,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Build a multifile assembly
+
 This article explains how to create a multifile assembly and provides code that illustrates each step in the procedure.
 
 > [!NOTE]
@@ -29,13 +30,13 @@ This article explains how to create a multifile assembly and provides code that 
 ## Create a multifile assembly
 
 1. Compile all files that contain namespaces referenced by other modules in the assembly into code modules. The default extension for code modules is *.netmodule*.
-   
+
    For example, let's say the `Stringer` file has a namespace called `myStringer`, which includes a class called `Stringer`. The `Stringer` class contains a method called `StringerMethod` that writes a single line to the console.
-   
+
    ```cpp
    // Assembly building example in the .NET Framework.
    using namespace System;
-   
+
    namespace myStringer
    {
        public ref class Stringer
@@ -48,11 +49,11 @@ This article explains how to create a multifile assembly and provides code that 
        };
    }
    ```
-   
+
    ```csharp
    // Assembly building example in the .NET Framework.
    using System;
-   
+
    namespace myStringer
    {
        public class Stringer
@@ -64,11 +65,11 @@ This article explains how to create a multifile assembly and provides code that 
        }
    }
    ```
-   
+
    ```vb
    ' Assembly building example in the .NET Framework.
    Imports System
-   
+
    Namespace myStringer
        Public Class Stringer
            Public Sub StringerMethod()
@@ -77,33 +78,33 @@ This article explains how to create a multifile assembly and provides code that 
        End Class
    End Namespace
    ```
-   
+
 2. Use the following command to compile this code:
-   
+
    ```cpp
    cl /clr:pure /LN Stringer.cpp
    ```
-   
+
    ```csharp
    csc /t:module Stringer.cs
    ```
-   
+
    ```vb
    vbc /t:module Stringer.vb
    ```
-   
+
    Specifying the *module* parameter with the **/t:** compiler option indicates that the file should be compiled as a module rather than as an assembly. The compiler produces a module called *Stringer.netmodule*, which can be added to an assembly.
-   
+
 3. Compile all other modules, using the necessary compiler options to indicate the other modules that are referenced in the code. This step uses the **/addmodule** compiler option.
-   
+
    In the following example, a code module called *Client* has an entry point `Main` method that references a method in the *Stringer.dll* module created in step 1.
-   
+
    ```cpp
    #using "Stringer.netmodule"
-   
+
    using namespace System;
    using namespace myStringer; //The namespace created in Stringer.netmodule.
-   
+
    ref class MainClientApp
    {
        // Static method Main is the entry point method.
@@ -115,17 +116,17 @@ This article explains how to create a multifile assembly and provides code that 
            myStringInstance->StringerMethod();
        }
    };
-   
+
    int main()
    {
        MainClientApp::Main();
    }
    ```
-   
+
    ```csharp
    using System;
    using myStringer;
-   
+
    class MainClientApp
    {
        // Static method Main is the entry point method.
@@ -137,11 +138,11 @@ This article explains how to create a multifile assembly and provides code that 
        }
    }
    ```
-   
+
    ```vb
    Imports System
    Imports myStringer
-   
+
    Class MainClientApp
        ' Static method Main is the entry point method.
        Public Shared Sub Main()
@@ -151,59 +152,59 @@ This article explains how to create a multifile assembly and provides code that 
        End Sub
    End Class
    ```
-   
+
 4. Use the following command to compile this code:
-   
+
    ```cpp
    cl /clr:pure /FUStringer.netmodule /LN Client.cpp
    ```
-   
+
    ```csharp
    csc /addmodule:Stringer.netmodule /t:module Client.cs
    ```
-   
+
    ```vb
    vbc /addmodule:Stringer.netmodule /t:module Client.vb
    ```
-   
+
    Specify the **/t:module** option because this module will be added to an assembly in a future step. Specify the **/addmodule** option because the code in *Client* references a namespace created by the code in *Stringer.netmodule*. The compiler produces a module called *Client.netmodule* that contains a reference to another module, *Stringer.netmodule*.
-   
+
    > [!NOTE]
    > The C# and Visual Basic compilers support directly creating multifile assemblies using the following two different syntaxes.
-   > 
+   >
    > Two compilations create a two-file assembly:
-   >   
+   >
    >   ```cpp
    >   cl /clr:pure /LN Stringer.cpp
    >   cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
    >   ```
-   >   
+   >
    >   ```csharp
    >   csc /t:module Stringer.cs
    >   csc Client.cs /addmodule:Stringer.netmodule
    >   ```
-   >   
+   >
    >   ```vb
    >   vbc /t:module Stringer.vb
    >   vbc Client.vb /addmodule:Stringer.netmodule
    >   ```
-   >   
+   >
    > One compilation creates a two-file assembly:
-   >   
+   >
    >   ```cpp
    >   cl /clr:pure /LN Stringer.cpp
    >   cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
    >   ```
-   >   
+   >
    >   ```csharp
    >   csc /out:Client.exe Client.cs /out:Stringer.netmodule Stringer.cs
    >   ```
-   >   
+   >
    >   ```vb
    >   vbc /out:Client.exe Client.vb /out:Stringer.netmodule Stringer.vb
    >   ```
-   
-3. Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create the output file that contains the assembly manifest. This file contains reference information for all modules or resources that are part of the assembly.
+
+5. Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create the output file that contains the assembly manifest. This file contains reference information for all modules or resources that are part of the assembly.
 
     At the command prompt, type the following command:
 

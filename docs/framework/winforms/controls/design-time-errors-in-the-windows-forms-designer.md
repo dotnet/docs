@@ -27,6 +27,7 @@ When the yellow error bar is expanded, each instance of the error is listed. Man
 ![Windows Forms Designer expanded error](media/windows-forms-designer-error-page-expanded.png)
 
 > [!NOTE]
+>
 > - For Visual Basic apps, the design-time error page does not display more than one error, but it may display multiple instances of the same error.
 > - For C++ apps, errors don't have code location links.
 

@@ -71,7 +71,7 @@ If you prefer to package your app with a more professional installer experience 
 
 You can package your app using one of the deployment technologies built into Visual Studio (MSIX and MSI), or use a third-party installer of your choice.
 
-This document on [.NET Core Packaging](packaging.md) covers packaging your app as either an MSIX or MSI in further detail. You may also want to review the guide on [Packaging a desktop app using third party installers](https://docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-third-party-installer). 
+This document on [.NET Core Packaging](packaging.md) covers packaging your app as either an MSIX or MSI in further detail. You may also want to review the guide on [Packaging a desktop app using third party installers](https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-third-party-installer). 
 
 
 <br/>

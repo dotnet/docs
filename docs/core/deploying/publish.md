@@ -6,7 +6,6 @@ ms.author: jamshedd
 ms.date: 09/06/2019
 ms.custom: 
 ---
-
 # Publish your Application
 
 ## Framework-Dependent Deployment and Self-Contained Deployment

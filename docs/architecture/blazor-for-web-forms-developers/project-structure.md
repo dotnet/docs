@@ -142,11 +142,11 @@ Routing in Blazor is handled client-side, not on the server. As the user navigat
 
 The component routes aren't currently inferred by the component's file location like they are with *.aspx* pages. This feature may be added in the future. Each route must be specified explicitly on the component. Storing routable components in a *Pages* folder has no special meaning and is purely a convention.
 
-We'll look in greater detail at routing in Blazor in the [Pages and routing](./pages-routing.md) section.
+We'll look in greater detail at routing in Blazor in the [Pages, routing, and layouts](./pages-routing-layouts.md) section.
 
 ## Layout
 
-In ASP.NET Web Forms apps, common page layout is handled using master pages (*Site.Master*). In Blazor apps, page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page, routing, and layouts](./page-routing-layouts.md) section.
+In ASP.NET Web Forms apps, common page layout is handled using master pages (*Site.Master*). In Blazor apps, page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page, routing, and layouts](./pages-routing-layouts.md) section.
 
 ## Bootstrap Blazor
 

@@ -197,7 +197,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example type to be serialized and JSON output:
+Here's an example type to be serialized and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -229,7 +229,7 @@ var options = new JsonSerializerOptions
 var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
 ```
 
-Example JSON with comments and a trailing comma:
+Here's example JSON with comments and a trailing comma:
 
 ```json
 {
@@ -252,7 +252,9 @@ There's no support for automatically [converting enums to camel case](https://gi
 
 ### Customize individual property names
 
-To set the name of individual properties, use the [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attribute:
+To set the name of individual properties, use the [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attribute.
+
+Here's an example type to serialize and resulting JSON:
 
 ```csharp
 class WeatherForecast
@@ -264,8 +266,6 @@ class WeatherForecast
     public int WindSpeed { get; set; }
 }
 ```
-
-Example JSON output:
 
 ```json
 {
@@ -293,7 +293,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example class to be serialized and JSON output:
+Here's an example class to serialize and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -344,7 +344,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example class to serialize and JSON output:
+Here's an example class to serialize and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -383,7 +383,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example object to serialize and JSON output:
+Here's an example object to serialize and JSON output:
 
 |Property |Value  |
 |---------|---------|
@@ -416,7 +416,9 @@ This section explains how to exclude:
 
 ### Exclude individual properties
 
-Use the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute:
+Use the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute.
+
+Here's an example type to serialize and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -428,8 +430,6 @@ class WeatherForecast
     public int WindSpeed { get; set; }
 }
 ```
-
-Example JSON output:
 
 ```json
 {
@@ -451,7 +451,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example class to serialize and JSON output:
+Here's an example type to serialize and JSON output:
 
 ```csharp
 class WeatherForecast
@@ -485,15 +485,13 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Example object to serialize:
+Here's an example object to serialize and JSON output:
 
 |Property |Value  |
 |---------|---------|
 | Date    | 8/1/2019 12:00:00 AM -07:00|
 | TemperatureC| 25 |
 | Summary| null|
-
-`Summary` is omitted from the JSON output:
 
 ```json
 {
@@ -516,7 +514,7 @@ var options = new JsonSerializerOptions
 var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(weatherForecast, options);
 ```
 
-Example JSON with camel case property names:
+Here's example JSON with camel case property names. It can be deserialized into the following type that has Pascal case property names.
 
 ```json
 {
@@ -526,13 +524,14 @@ Example JSON with camel case property names:
 }
 ```
 
-Resulting object property values after matching camel case to Pascal case property names:
-
-|Property |Value  |
-|---------|---------|
-| Date    | 8/1/2019 12:00:00 AM -07:00|
-| TemperatureC| 25 |
-| Summary| Hot|
+```csharp
+class WeatherForecast
+{
+    public DateTimeOffset Date { get; set; }
+    public int TemperatureC { get; set; }
+    public string Summary { get; set; }
+}
+```
 
 ## Include properties of derived classes
 

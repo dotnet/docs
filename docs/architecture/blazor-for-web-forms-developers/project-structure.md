@@ -146,7 +146,7 @@ We'll look in greater detail at routing in Blazor in the [Pages and routing](./p
 
 ## Layout
 
-In ASP.NET Web Forms apps, common page layout is handled using master pages (*Site.Master*). In Blazor apps, page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page layout](./page-layout.md) section.
+In ASP.NET Web Forms apps, common page layout is handled using master pages (*Site.Master*). In Blazor apps, page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page, routing, and layouts](./page-routing-layouts.md) section.
 
 ## Bootstrap Blazor
 

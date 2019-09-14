@@ -42,5 +42,5 @@ In this chapter, we'll first address communication between front-end application
 
 
 >[!div class="step-by-step"]
->[Previous](other-deployment-options.md)
+>[Previous](load-balancing.md)
 >[Next](front-end-communication.md)

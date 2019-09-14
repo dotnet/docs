@@ -1,12 +1,12 @@
 ﻿---
-title: .NET Core Acquisition Experiences
+title: Acquisition experiences - .NET Core
 description: .NET Core Acquisition Experiences
 author: jamshedd
 ms.author: jamshedd
 ms.date: 09/06/2019
-ms.custom: 
 ---
-# .NET Core Acquisition Experiences
+
+# .NET Core acquisition experiences
 
 There are various Acquisition options for .NET Core - 
 * [Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)
@@ -26,12 +26,12 @@ Each of these choices has their own strengths. Some options support both initial
 [https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | ✔️ | ❌ |
 [Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | ✔️ | ✔️ |
 [Docker](#Docker)                                                               | ✔️ | ✔️ |
-[Linux Package Managers](#Linux-Package-Managers)                               | ✔️ | ✔️*|
+[Linux Package Managers](#Linux-Package-Managers)                               | ✔️ | ✔️\*|
 [Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | ✔️ | ✔️ |
 [Snap store](#Snap-store)                                                       | ✔️ | ✔️ |
 [.NET Core on GitHub](#NET-Core-on-GitHub)                                      | ✔️ | ❌ |
 
-_*Some package Managers provide update notifications__
+_\*Some package Managers provide update notifications__
 
 Additionally, differences between these choices make some of these choices a great option for developers while others are better suited for DevOps and IT administrators.
 
@@ -66,13 +66,13 @@ In recent previews of Visual Studio 2019 Update 3, we have made changes to the i
 
 ### Visual Studio for MacOS
 
-NET Core 2.1 is installed when you install Visual Studio for Mac and select the .NET Core workload. To get started with .NET Core development on MacOS, see [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019).
+NET Core 2.1 is installed when you install Visual Studio for Mac and select the .NET Core workload. To get started with .NET Core development on MacOS, see [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/en-us/visualstudio/mac/installation?view=vsmac-2019).
 
 ![Install Visual Studio for Mac](media/install-vs-mac.png "Install Visual Studio for Mac")
 
 Note: .NET Core 2.x development is supported on MacOS 10.12 “Sierra” and later. 
 
-For more information about .NET Core development on MacOS, see [Get started with .NET Core on macOS using Visual Studio for Mac](https://docs.microsoft.com/dotnet/core/tutorials/using-on-mac-vs).
+For more information about .NET Core development on MacOS, see [Get started with .NET Core on macOS using Visual Studio for Mac](https://docs.microsoft.com/en-us/dotnet/core/tutorials/using-on-mac-vs).
 
 
 ## Visual Studio Code
@@ -80,13 +80,13 @@ For more information about .NET Core development on MacOS, see [Get started with
 Visual Studio Code is a lightweight but powerful source code editor that runs on your desktop and is available for Windows, MacOS, and Linux. 
 While VS Code does not come with .NET Core support in the box, adding .NET Core support is straightforward. You can do this with only a couple of steps.
 
-1.	[Install .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
-2.	[Install the C# extension for VS Code from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+1. [Install .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
+2. [Install the C# extension for VS Code from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 
 
 ## https://dot.net (Microsoft .NET site)
 
-The [Microsoft .NET](https://dot.net/) site is your one stop shop for all things .NET, from [downloads for the latest installers](https://dotnet.microsoft.com/download) for your platform to [Getting Started](https://docs.microsoft.com/dotnet/core/get-started?tabs=windows) guides, and [Tutorials](https://docs.microsoft.com/dotnet/core/tutorials/).
+The [Microsoft .NET](https://dot.net/) site is your one stop shop for all things .NET, from [downloads for the latest installers](https://dotnet.microsoft.com/download) for your platform to [Getting Started](https://docs.microsoft.com/en-us/dotnet/core/get-started?tabs=windows) guides, and [Tutorials](https://docs.microsoft.com/en-us/dotnet/core/tutorials/).
 
 This site provides downloads for the native installers (MSI for Windows, PKG for MacOS), and tar.gz files for download, installation, and redistribution with your app.
 
@@ -96,9 +96,9 @@ This site provides downloads for the native installers (MSI for Windows, PKG for
 The dotnet-install scripts are used to do a non-admin installation of the .NET Core SDK. The .NET Core SDK includes both the .NET Core CLI tools and the shared runtime.
 
 The primary usage scenario of these scripts is in automation scenarios and non-admin installations. 
-There are two scripts: one is a PowerShell script that works on Windows and everywhere that PowerShell is supported including [Linux](https://azure.microsoft.com/blog/powershell-is-open-sourced-and-is-available-on-linux/) and [MacOS](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6). The other is a bash script that works on Linux/MacOS. Both scripts have the same behavior.
+There are two scripts: one is a PowerShell script that works on Windows and everywhere that PowerShell is supported including [Linux](https://azure.microsoft.com/en-us/blog/powershell-is-open-sourced-and-is-available-on-linux/) and [MacOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6). The other is a bash script that works on Linux/MacOS. Both scripts have the same behavior.
 
-For more information about these scripts, see [dotnet-install scripts reference](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script).
+For more information about these scripts, see [dotnet-install scripts reference](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script).
 
 
 ## Docker
@@ -107,7 +107,7 @@ Containers provide a lightweight way to isolate your application from the rest o
 .NET Core can run in a Docker container. Official .NET Core Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Core Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet-core/). Each repository contains images for different combinations of the .NET (SDK or Runtime) and OS that you can use.
 Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) provides images that are built for running ASP.NET Core apps in production.
 
-For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](https://docs.microsoft.com/dotnet/core/docker/intro-net-docker) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
+For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](https://docs.microsoft.com/en-us/dotnet/core/docker/intro-net-docker) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
 
 ## Azure App Services
 Various Azure services support containers. You create a Docker image for your application and deploy it to one of the following services:
@@ -124,7 +124,7 @@ Various Azure services support containers. You create a Docker image for your ap
 - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)  
   Store and manage container images across all types of Azure deployments.
 
-You can find more information about deploying your app in a container in the document [Containerize a .NET Core app](https://docs.microsoft.com/dotnet/core/docker/build-container).
+You can find more information about deploying your app in a container in the document [Containerize a .NET Core app](https://docs.microsoft.com/en-us/dotnet/core/docker/build-container).
 
 ## Linux Package Managers
 
@@ -145,7 +145,7 @@ You can find more information about deploying your app in a container in the doc
 
 ## Azure DevOps pipeline Installer Task
 
-Azure DevOps provides a Task that can be used in build or release pipelines to deploy .NET Core. You can use the [.NET Core Installer Task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) to acquire a specific version of .NET Core from the Internet or the tools cache and add it to the PATH. This task can also be used to change the version of .NET Core that is used in subsequent tasks like [.NET Core cli task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DotNetCoreCLIV2).
+Azure DevOps provides a Task that can be used in build or release pipelines to deploy .NET Core. You can use the [.NET Core Installer Task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) to acquire a specific version of .NET Core from the Internet or the tools cache and add it to the PATH. This task can also be used to change the version of .NET Core that is used in subsequent tasks like [.NET Core cli task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DotNetCoreCLIV2).
 
 
 ## Snap Store
@@ -161,12 +161,12 @@ Visit [Snapcraft.io](https://snapcraft.io/) for guidance on preparing your syste
 
 ## .NET Core on GitHub
 
-.NET Core sources are available in public repositories on GitHub. Building from source is covered in depth in the document titled [Build .NET Core from source](https://docs.microsoft.com/dotnet/core/build/).
+.NET Core sources are available in public repositories on GitHub. Building from source is covered in depth in the document titled [Build .NET Core from source](https://docs.microsoft.com/en-us/dotnet/core/build/).
 
 
 <br/>
 
-## Updates and Notifications
+# Updates and Notifications
 
 .NET Core provides a robust metadata file for discovering updates. For more information about this, see [.NET Core Update Discovery](../update-discovery-and-deploy.md).
 

@@ -4,6 +4,9 @@ description: Learn about XAML resources in Windows Presentation Foundation (WPF)
 author: thraka
 ms.author: adegeo
 ms.date: 09/09/2019
+dev_langs: 
+  - "csharp"
+  - "vb"
 ---
 
 # Styles and Templates
@@ -14,13 +17,13 @@ Another feature of the WPF styling model is the separation of presentation and l
 
 This overview focuses on the styling and templating aspects of the application and does not discuss any data binding concepts. For information about data binding, see [Data Binding Overview](../../framework/wpf/data/data-binding-overview.md).
 
-In addition, it is important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](xaml-resources-define.md).
+It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](xaml-resources-define.md).
 
 [!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
 
 ## Sample
 
-The code examples used in this overview are based on a [simple photo browsing application](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating) shown in the following illustration:
+The sample code provided in this overview is based on a [simple photo browsing application](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating) shown in the following illustration:
 
 ![Styled ListView](./media/styles-and-templates-overview/stylingintro-triggers.png "StylingIntro_triggers")
 
@@ -28,70 +31,29 @@ This simple photo sample uses styling and templating to create a visually compel
 
 For the complete sample, see [Introduction to Styling and Templating Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
 
-## Style basics
+## Styles
 
-You can think of a <xref:System.Windows.Style> as a convenient way to apply a set of property values to more than one element. For example, consider the following <xref:System.Windows.Controls.TextBlock> elements and their default appearance:
+You can think of a <xref:System.Windows.Style> as a convenient way to apply a set of property values to multiple elements. You can use a style on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> such as a <xref:System.Windows.Window> or a <xref:System.Windows.Controls.Button>.
 
-[!code-xaml[TextBlocks](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#SnippetTextBlocks)]
+The most common way to declare a style is as a resource in the `Resources` section in a XAML file. Because styles are resources, they obey the same scoping rules that apply to all resources. Put simply, where you declare a style affects where the style can be applied. For example, if you declare the style in the root element of your application definition XAML file, the style can be used anywhere in your application.
 
-![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbefore.png "StylingIntro_TextBlocksBefore")
+For example, the following XAML code declares two styles for a `TextBlock`, one automatically applied to all `TextBlock` elements, and another that must be explicitly referenced:
 
-You can change the default appearance by setting properties, such as <xref:System.Windows.Controls.Control.FontSize%2A> and <xref:System.Windows.Controls.Control.FontFamily%2A>, on each <xref:System.Windows.Controls.TextBlock> element directly. However, if you want your <xref:System.Windows.Controls.TextBlock> elements to share some properties, you can create a <xref:System.Windows.Style> in the `Resources` section of your XAML file, as shown here:
+[!code-xaml[SnippetDefaultTextBlockStyleBasedOn](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetDefaultTextBlockStyleBasedOn)]
 
-[!code-xaml[DefaultTextBlockStyle](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#SnippetDefaultTextBlockStyle)]
+Here is an example of the styles declared above being used:
 
-When you set the <xref:System.Windows.Style.TargetType%2A> of your style to the <xref:System.Windows.Controls.TextBlock> type, the style is applied to all the <xref:System.Windows.Controls.TextBlock> elements in the window.
+[!code-xaml[SnippetTextBlocksExplicit](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetTextBlocksExplicit)]
 
-Now the <xref:System.Windows.Controls.TextBlock> elements appear as follows:
+![Styled textblocks](./media/styles-and-templates-overview/stylingintro-textblocks.png)
 
-![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbasestyle.png "StylingIntro_TextBlocksBaseStyle")
+For more information, see [Create a style for a control](styles-templates-create-apply-style.md).
 
-### Extending styles
+## ControlTemplates
 
-Perhaps you want your two <xref:System.Windows.Controls.TextBlock> elements to share some property values, such as the <xref:System.Windows.Controls.Control.FontFamily%2A> and the centered <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, but you also want the text "My Pictures" to have some additional properties. You can do that by creating a new style that is based on the first style, as shown here:
+In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> for the control. In many cases, this gives you enough flexibility so that you do not have to write your own custom controls.
 
-[!code-xaml[DefaultTextBlockStyleBasedOn](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetDefaultTextBlockStyleBasedOn)]
-
-Notice that the previous style is given an `x:Key`. To apply the style, you set the <xref:System.Windows.FrameworkElement.Style%2A> property on your <xref:System.Windows.Controls.TextBlock> to the `x:Key` value, as shown here:
-
-[!code-xaml[TextBlocksExplicit](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetTextBlocksExplicit)]
-
-This <xref:System.Windows.Controls.TextBlock> style now has a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value of <xref:System.Windows.HorizontalAlignment.Center>, a <xref:System.Windows.Controls.TextBlock.FontFamily%2A> value of `Comic Sans MS`, a <xref:System.Windows.Controls.TextBlock.FontSize%2A> value of 26, and a <xref:System.Windows.Controls.TextBlock.Foreground%2A> value set to the <xref:System.Windows.Media.LinearGradientBrush> shown in the example. Notice that it overrides the <xref:System.Windows.Controls.Control.FontSize%2A> value of the base style. If there is more than one <xref:System.Windows.Setter> setting the same property in a <xref:System.Windows.Style>, the <xref:System.Windows.Setter> that is declared last takes precedence.
-
-The following shows what the <xref:System.Windows.Controls.TextBlock> elements now look like:
-
-![Styled TextBlocks](./media/styles-and-templates-overview/stylingintro-textblocks.png "StylingIntro_TextBlocks")
-
-This `TitleText` style extends the style that has been created for the <xref:System.Windows.Controls.TextBlock> type. You can also extend a style that has an `x:Key` by using the `x:Key` value.
-
-### Relationship of the TargetType property and the x:Key attribute
-
-As shown in the first example, setting the <xref:System.Windows.Style.TargetType%2A> property to `TextBlock` without assigning the style an `x:Key` causes the style to be applied to all <xref:System.Windows.Controls.TextBlock> elements. In this case, the `x:Key` is implicitly set to `{x:Type TextBlock}`. This means that if you explicitly set the `x:Key` value to anything other than `{x:Type TextBlock}`, the <xref:System.Windows.Style> is not applied to all <xref:System.Windows.Controls.TextBlock> elements automatically. Instead, you must apply the style (by using the `x:Key` value) to the <xref:System.Windows.Controls.TextBlock> elements explicitly. If your style is in the resources section and you do not set the <xref:System.Windows.Style.TargetType%2A> property on your style, then you must set the `x:Key` directive.
-
-In addition to providing a default value for the `x:Key`, the <xref:System.Windows.Style.TargetType%2A> property specifies the type to which setter properties apply. If you do not specify a <xref:System.Windows.Style.TargetType%2A>, you must qualify the properties in your <xref:System.Windows.Setter> objects with a class name by using the syntax `Property="ClassName.Property"`. For example, instead of setting `Property="FontSize"`, you must set <xref:System.Windows.Setter.Property%2A> to `"TextBlock.FontSize"` or `"Control.FontSize"`.
-
-Also note that many WPF controls consist of a combination of other WPF controls. If you create a style that applies to all controls of a type, you might get unexpected results. For example, if you create a style that targets the <xref:System.Windows.Controls.TextBlock> type in a <xref:System.Windows.Window>, the style is applied to all <xref:System.Windows.Controls.TextBlock> controls in the window, even if the <xref:System.Windows.Controls.TextBlock> is part of another control, such as a <xref:System.Windows.Controls.ListBox>.
-
-### Styles and resources
-
-You can use a style on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. The most common way to declare a style is as a resource in the `Resources` section in a XAML file. Because styles are resources, they obey the same scoping rules that apply to all resources; where you declare a style affects where the style can be applied. For example, if you declare the style in the root element of your application definition XAML file, the style can be used anywhere in your application. If you create a navigation application and declare the style in one of the application's XAML files, the style can be used only in that XAML file. For more information about scoping rules for resources, see [XAML Resources](../../framework/wpf/advanced/xaml-resources.md).
-
-### Setting styles programmatically
-
-To assign a named style to an element programmatically, get the style from the resources collection and assign it to the element's <xref:System.Windows.FrameworkElement.Style%2A> property. The items in a resources collection are of type <xref:System.Object>. Therefore, you must cast the retrieved style to a <xref:System.Windows.Style> before assigning it to the <xref:System.Windows.FrameworkElement.Style%2A> property. For example, to set the defined `TitleText` style on a <xref:System.Windows.Controls.TextBlock> named `textblock1`, do the following:
-
-[!code-csharp[SetStyleCode](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml.cs#SnippetSetStyleCode)]
-[!code-vb[SetStyleCode](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/vb/MainWindow.xaml.vb#SnippetSetStyleCode)]
-
-Once a style has been applied, it is sealed and cannot be changed. If you want to dynamically change a style that has already been applied, you must create a new style to replace the existing one. For more information, see the <xref:System.Windows.Style.IsSealed%2A> property.
-
-You can create an object that chooses a style to apply based on custom logic. For an example, see the example provided for the <xref:System.Windows.Controls.StyleSelector> class.
-
-### Bindings, Dynamic Resources, and Event Handlers
-
-You can use the `Setter.Value` property to specify a [Binding Markup Extension](../../framework/wpf/advanced/binding-markup-extension.md) or a [DynamicResource Markup Extension](../../framework/wpf/advanced/dynamicresource-markup-extension.md). For more information, see the examples provided for the <xref:System.Windows.Setter.Value%2A?displayProperty=nameWithType> property.
-
-So far, this overview only discusses the use of setters to set property value. You can also specify event handlers in a style. For more information, see <xref:System.Windows.EventSetter>.
+For more information, see [Create a template for a control](styles-templates-create-apply-template.md).
 
 ## DataTemplates
 
@@ -121,10 +83,6 @@ Essentially, the <xref:System.Windows.DataTemplate> in the above example defines
 ![Photo image](./media/styles-and-templates-overview/stylingintro-photosasimages.png "StylingIntro_PhotosAsImages")
 
 The data templating model provides other features. For example, if you are displaying collection data that contains other collections using a <xref:System.Windows.Controls.HeaderedItemsControl> type such as a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.TreeView>, there is the <xref:System.Windows.HierarchicalDataTemplate>. Another data templating feature is the <xref:System.Windows.Controls.DataTemplateSelector>, which allows you to choose a <xref:System.Windows.DataTemplate> to use based on custom logic. For more information, see [Data Templating Overview](../../framework/wpf/data/data-templating-overview.md), which provides a more in-depth discussion of the different data templating features.
-
-## ControlTemplates
-
-In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> for the control. In many cases, this gives you enough flexibility so that you do not have to write your own custom controls. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).
 
 ## Triggers
 

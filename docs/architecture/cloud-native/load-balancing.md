@@ -20,9 +20,11 @@ Azure Load Balancer (ALB) is a TCP/UDP load balancer that forwards packets to po
 ![Azure Load Balancer](./media/azure-load-balancer.png)
 **Figure 3-19**. Azure Load Balancer
 
+If you require more than basic distribution of traffic to a single pool of resources, you should consider another solution like Azure Application Gateway.
+
 ## When to use Azure Application Gateway
 
-Azure Application Gateway (AAG) is a Level 7 load balancer that sits on top of Azure Load Balancer. You can use AAG to route traffic based on HTTP variables like path, headers, or cookies. For example, if you have some backend resources optimized for dealing with video content, you can route requests for resources under `/video` to these resources. If you have other services optimized to work with images, you could route URLs containing `/images` to the services. AAG also includes a Web Application Firewall (WAF), which can protect your application from common attacks like SQL injection and cross-site scripting.
+Azure Application Gateway (AAG) is a Level 7 load balancer that provides a superset of Azure Load Balancer capabilities. You can use AAG to route traffic based on HTTP variables like path, headers, or cookies. For example, if you have some backend resources optimized for dealing with video content, you can route requests for resources under `/video` to these resources. If you have other services optimized to work with images, you could route URLs containing `/images` to the services. AAG also includes a Web Application Firewall (WAF), which can protect your application from common attacks like SQL injection and cross-site scripting.
 
 Figure 3-20 shows how the Azure Application Gateway sits between client requests and back end resources.
 
@@ -33,7 +35,13 @@ If you have multiple web sites, AAG can support routing traffic to the appropria
 
 Another scenario where AAG makes sense is if you require session affinity between clients and backend resources, also referred to as sticky sessions. For example, if your application's servers using local in-memory session storage, clients will see different responses based on which backend server handles their request. To solve this, you would typically use a shared state provider like a Redis cache. However, if this option is not preferred, configuring AAG to use session affinity will also address the issue.
 
-Learn more AAG features and how to configure it in its [documentation](https://docs.microsoft.com/azure/application-gateway/overview).
+### Kubernetes Ingress Controller
+
+Azure Kubernetes Service(AKS) can use an ingress controller to act as a reverse proxy and provide traffic routing and TLS termination. Using an ingress controller, a Kubernetes cluster can expose a single IP address while routing traffic to multiple services hosted within the cluster. Azure Application Gateway provides all of these features and makes an ideal ingress controller for AKS.
+
+[Learn more about how to configure AAG as an ingress controller for AKS](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-aks-applicationgateway-ingress).
+
+You're learn more about [implementing application gateways for cloud native applications in chapter 6](implement-api-gateways-with-ocelot.md).
 
 ## Other options
 
@@ -43,6 +51,7 @@ If you need to route traffic between Azure resources and on-premises resources, 
 
 - [What is Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)
 - [What is Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview)
+- [Creates a Kubernetes cluster with Application Gateway ingress controller using AKS](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-aks-applicationgateway-ingress)
 
 >[!div class="step-by-step"]
 >[Previous](other-deployment-options.md)

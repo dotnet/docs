@@ -132,8 +132,8 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
-* [Circular references](https://github.com/dotnet/corefx/issues/38579) are detected and exceptions thrown.
-* Fields are excluded.
+* Circular references are detected and exceptions thrown. For more information, see the [issue on circular references](https://github.com/dotnet/corefx/issues/38579) in the dotnet/corefx repository on GitHub.
+* Currently, fields are excluded.
 
 Supported types include:
 
@@ -141,7 +141,7 @@ Supported types include:
 * User-defined [Plain Old CLR Objects (POCOs)](https://stackoverflow.com/questions/250001/poco-definition).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
 * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
-* Collections from the following namespaces (see detailed lists in [this GitHub issue](https://github.com/dotnet/corefx/issues/36643)):
+* Collections from the following namespaces. For more information, see the [issue on collection support](https://github.com/dotnet/corefx/issues/36643) in the dotnet/corefx repository on GitHub.
   * <xref:System.Collections>
   * <xref:System.Collections.Generic>
   * <xref:System.Collections.Immutable>
@@ -183,7 +183,7 @@ weatherForecast = JsonSerializer.Deserialize<WeatherForecastMin>(ref utf8Reader)
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Deserialization to reference types without a parameterless constructor isn't supported.
-* Deserialization to immutable objects or read-only properties isn't supported. For more information, see GitHub issues [38569](https://github.com/dotnet/corefx/issues/38569) and [38163](https://github.com/dotnet/corefx/issues/38163).
+* Deserialization to immutable objects or read-only properties isn't supported. For more information, see the GitHub [issue on immutable object support](https://github.com/dotnet/corefx/issues/38569) and the [issue on read-only property support](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx repository on GitHub.
 * By default, enums are supported as numbers.
 * Fields aren't supported.
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas) if needed.
@@ -252,7 +252,7 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 * Implement a custom property naming policy
 * Convert dictionary keys to camel case
 
-Currently, there's no support for automatically converting enums to camel case. For more information, see [GitHub issue 37725](https://github.com/dotnet/corefx/issues/37725).
+Currently, there's no support for automatically converting enums to camel case. For more information, see the [issue on enum camel case support](https://github.com/dotnet/corefx/issues/37725) in the dotnet/corefx repository on GitHub.
 
 ### Customize individual property names
 
@@ -504,7 +504,7 @@ Here's an example object to serialize and JSON output:
 }
 ```
 
-This setting applies to serialization and deserialization. During deserialization, null values in the JSON are ignored only if they are valid. Null values for non-nullable value types cause exceptions. For more information, see [GitHub issue 40922](https://github.com/dotnet/corefx/issues/40922).
+This setting applies to serialization and deserialization. During deserialization, null values in the JSON are ignored only if they are valid. Null values for non-nullable value types cause exceptions. For more information, see the [issue on non-nullable value types](https://github.com/dotnet/corefx/issues/40922) in the dotnet/corefx repository on GitHub.
 
 ## Case-insensitive property matching
 

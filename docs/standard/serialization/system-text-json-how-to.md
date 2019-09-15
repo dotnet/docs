@@ -1,6 +1,8 @@
 ---
 title: "How to serialize JSON - .NET"
-ms.date: "09/02/2019"
+author: tdykstra
+ms.author: tdykstra
+ms.date: "09/16/2019"
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"

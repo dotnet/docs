@@ -23,7 +23,7 @@ Gets a pointer to the MethodDef token for the method that is enclosed by the spe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindMethod (  
    [in]  mdTypeDef          td,  
    [in]  LPCWSTR            szName,   

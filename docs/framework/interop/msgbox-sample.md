@@ -19,7 +19,7 @@ This sample demonstrates how to pass string types by value as In parameters and 
   
 - **MessageBox** exported from User32.dll.  
   
-    ```  
+    ```cpp
     int MessageBox(HWND hWnd, LPCTSTR lpText, LPCTSTR lpCaption,   
        UINT uType);  
     ```  

@@ -39,7 +39,7 @@ public class XMLWrite
 ```  
   
 ## Compiling the Code  
- The class must have a public constructor without parameters.  
+ The class being serialized must have a public constructor without parameters.  
   
 ## Robust Programming  
  The following conditions may cause an exception:  
@@ -58,5 +58,5 @@ public class XMLWrite
 ## See also
 
 - <xref:System.IO.StreamWriter>
-- [How to: Read Object Data from an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)
-- [Serialization (C#)](../../../../csharp/programming-guide/concepts/serialization/index.md)
+- [How to: Read Object Data from an XML File (C#)](./how-to-read-object-data-from-an-xml-file.md)
+- [Serialization (C#)](./index.md)

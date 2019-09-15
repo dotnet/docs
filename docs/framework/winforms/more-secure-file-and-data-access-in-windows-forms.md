@@ -20,7 +20,7 @@ The .NET Framework uses permissions to help protect resources and data. Where yo
  When you encounter a security restriction, you have two options: assert the permission (assuming it has been granted to your application), or use a version of the feature written to work in partial trust. The following sections discuss how to work with file, database, and registry access from applications that are running in a partial trust environment.  
   
 > [!NOTE]
->  By default, tools that generate [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployments default these deployments to requesting Full Trust from the computers on which they run. If you decide you want the added security benefits of running in partial trust, you must change this default in either Visual Studio or one of the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] tools (Mage.exe or MageUI.exe). For more information about Windows Forms security, and on how to determine the appropriate trust level for your application, see [Security in Windows Forms Overview](security-in-windows-forms-overview.md).  
+> By default, tools that generate ClickOnce deployments default these deployments to requesting Full Trust from the computers on which they run. If you decide you want the added security benefits of running in partial trust, you must change this default in either Visual Studio or one of the Windows SDK tools (Mage.exe or MageUI.exe). For more information about Windows Forms security, and on how to determine the appropriate trust level for your application, see [Security in Windows Forms Overview](security-in-windows-forms-overview.md).  
   
 ## File Access  
  The <xref:System.Security.Permissions.FileIOPermission> class controls file and folder access in the .NET Framework. By default, the security system does not grant the <xref:System.Security.Permissions.FileIOPermission> to partial trust environments such as the local intranet and Internet zones. However, an application that requires file access can still function in these environments if you modify the design of your application or use different methods to access files. By default, the local intranet zone is granted the right to have same site access and same directory access, to connect back to the site of its origin, and to read from its installation directory. By default, the Internet zone, is only granted the right to connect back to the site of its origin.  
@@ -29,7 +29,7 @@ The .NET Framework uses permissions to help protect resources and data. Where yo
  One way to deal with not having file access permission is to prompt the user to provide specific file information by using the <xref:System.Windows.Forms.OpenFileDialog> or <xref:System.Windows.Forms.SaveFileDialog> class. This user interaction helps provide some assurance that the application cannot maliciously load private files or overwrite important files. The <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> and <xref:System.Windows.Forms.SaveFileDialog.OpenFile%2A> methods provide read and write file access by opening the file stream for the file that the user specified. The methods also help protect the user's file by obscuring the file's path.  
   
 > [!NOTE]
->  These permissions differ depending on whether your application is in the Internet zone or Intranet zone. Internet zone applications can only use the <xref:System.Windows.Forms.OpenFileDialog>, whereas Intranet applications have unrestricted file dialog permission.  
+> These permissions differ depending on whether your application is in the Internet zone or Intranet zone. Internet zone applications can only use the <xref:System.Windows.Forms.OpenFileDialog>, whereas Intranet applications have unrestricted file dialog permission.  
   
  The <xref:System.Security.Permissions.FileDialogPermission> class specifies what type of file dialog box your application can use. The following table shows the value you must have to use each <xref:System.Windows.Forms.FileDialog> class.  
   
@@ -39,14 +39,14 @@ The .NET Framework uses permissions to help protect resources and data. Where yo
 |<xref:System.Windows.Forms.SaveFileDialog>|<xref:System.Security.Permissions.FileDialogPermissionAccess.Save>|  
   
 > [!NOTE]
->  The specific permission is not requested until the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method is actually called.  
+> The specific permission is not requested until the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method is actually called.  
   
  Permission to display a file dialog box does not grant your application full access to all members of the <xref:System.Windows.Forms.FileDialog>, <xref:System.Windows.Forms.OpenFileDialog>, and <xref:System.Windows.Forms.SaveFileDialog> classes. For the exact permissions that are required to call each method, see the reference topic for that method in the .NET Framework class library documentation.  
   
  The following code example uses the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method to open a user-specified file into a <xref:System.Windows.Forms.RichTextBox> control. The example requires <xref:System.Security.Permissions.FileDialogPermission> and the associated <xref:System.Security.Permissions.FileDialogPermissionAttribute.Open%2A> enumeration value. The example demonstrates how to handle the <xref:System.Security.SecurityException> to determine whether the save feature should be disabled. This example requires that your <xref:System.Windows.Forms.Form> has a <xref:System.Windows.Forms.Button> control named `ButtonOpen`, and a <xref:System.Windows.Forms.RichTextBox> control named `RtfBoxMain`.  
   
 > [!NOTE]
->  The programming logic for the save feature is not shown in the example.  
+> The programming logic for the save feature is not shown in the example.  
   
 ```vb  
 Private Sub ButtonOpen_Click(ByVal sender As System.Object, _  
@@ -127,7 +127,7 @@ private void ButtonOpen_Click(object sender, System.EventArgs e)
 ```  
   
 > [!NOTE]
->  In Visual C#, ensure that you add code to enable the event handler. By using the code from the previous example, the following code shows how to enable the event handler.`this.ButtonOpen.Click += newSystem.Windows.Forms.EventHandler(this.ButtonOpen_Click);`  
+> In Visual C#, ensure that you add code to enable the event handler. By using the code from the previous example, the following code shows how to enable the event handler.`this.ButtonOpen.Click += newSystem.Windows.Forms.EventHandler(this.ButtonOpen_Click);`  
   
 ### Other Files  
  Sometimes you will need to read or write to files that the user does not specify, such as when you must persist application settings. In the local intranet and Internet zones, your application will not have permission to store data in a local file. However, your application will be able to store data in isolated storage. Isolated storage is an abstract data compartment (not a specific storage location) that contains one or more isolated storage files, called stores, that contain the actual directory locations where data is stored. File access permissions like <xref:System.Security.Permissions.FileIOPermission> are not required; instead, the <xref:System.Security.Permissions.IsolatedStoragePermission> class controls the permissions for isolated storage. By default, applications that are running in the local intranet and Internet zones can store data using isolated storage; however, settings like disk quota can vary. For more information about isolated storage, see [Isolated Storage](../../standard/io/isolated-storage.md).  

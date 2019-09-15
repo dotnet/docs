@@ -23,7 +23,7 @@ Gets a pointer to an [IMetaDataImport](../../../../docs/framework/unmanaged-api/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataFromTypeInfo (  
     [in]  ITypeInfo         *pITI,  
     [out] IMetaDataImport   **ppMDI  

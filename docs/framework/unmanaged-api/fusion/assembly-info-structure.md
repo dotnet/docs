@@ -22,7 +22,7 @@ Contains information about an assembly that is registered in the global assembly
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _ASSEMBLY_INFO {  
     ULONG           cbAssemblyInfo;  
     DWORD           dwAssemblyFlags;  
@@ -43,7 +43,7 @@ typedef struct _ASSEMBLY_INFO {
 |`cchBuf`|The number of wide characters, including the null terminator, that `pszCurrentAssemblyPathBuf` contains.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -51,5 +51,5 @@ typedef struct _ASSEMBLY_INFO {
   
 ## See also
 
-- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
-- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)
+- [Fusion Structures](fusion-structures.md)
+- [Global Assembly Cache](../../app-domains/gac.md)

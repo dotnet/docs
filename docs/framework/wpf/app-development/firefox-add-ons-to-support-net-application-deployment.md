@@ -19,13 +19,13 @@ The Windows Presentation Foundation (WPF) plug-in for Firefox and the .NET Frame
  The .NET Framework 4 does not include the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] plug-in for Firefox. However, if both the .NET Framework 3.5 and .NET Framework 4 are installed, the WPF plug-in for Firefox is installed with the .NET Framework 3.5. Therefore .NET Framework 4 applications will still run because the WPF Host will load the correct version of the framework. For more information, see [WPF Host (PresentationHost.exe)](wpf-host-presentationhost-exe.md).  
   
 ## .NET Framework Assistant for Firefox  
- The .NET Framework Assistant for Firefox enables stand-alone ClickOnce applications to run from the Firefox browser. The .NET Framework Assistant for Firefox functions identically when it is installed before and after the Firefox browser. When the Firefox browser is launched and the [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)] is installed, Firefox finds and installs the .NET Framework Assistant for Firefox. Users can configure the .NET Framework Assistant for Firefox to do the following:  
+ The .NET Framework Assistant for Firefox enables stand-alone ClickOnce applications to run from the Firefox browser. The .NET Framework Assistant for Firefox functions identically when it is installed before and after the Firefox browser. When the Firefox browser is launched and the .NET Framework 3.5 SP1 is installed, Firefox finds and installs the .NET Framework Assistant for Firefox. Users can configure the .NET Framework Assistant for Firefox to do the following:  
   
 - Prompt before running the ClickOnce application.  
   
 - Report all installed versions of the .NET Framework or just the latest version.  
   
- The .NET Framework Assistant for Firefox is included with the [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)]. For information about removing the .NET Framework Assistant for Firefox, see [How to remove the .NET Framework Assistant for Firefox](https://go.microsoft.com/fwlink/?LinkId=177944).  
+ The .NET Framework Assistant for Firefox is included with the .NET Framework 3.5 SP1. For information about removing the .NET Framework Assistant for Firefox, see [How to remove the .NET Framework Assistant for Firefox](https://go.microsoft.com/fwlink/?LinkId=177944).  
   
 ## See also
 

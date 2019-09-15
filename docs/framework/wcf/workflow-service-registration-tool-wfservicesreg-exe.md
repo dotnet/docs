@@ -50,7 +50,7 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
   
  The tool also registers .xoml and .rules scriptmaps and handlers in the IIS metabase.  
   
- On [!INCLUDE[ws2003](../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../includes/wxp-md.md)] machines (IIS 5.1 and [!INCLUDE[iis601](../../../includes/iis601-md.md)]), one set of .xoml and .rules scriptmaps are registered.  
+ On [!INCLUDE[ws2003](../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../includes/wxp-md.md)] machines (IIS 5.1 and IIS 6.0), one set of .xoml and .rules scriptmaps are registered.  
   
  On 64-bit machines, the tool registers WOW mode scriptmaps if the `Enable32BitAppOnWin64` switch is enabled, or native 64-bit scriptmaps if the `Enable32BitAppOnWin64` switch is disabled.  
   
@@ -59,7 +59,7 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
  On 64-bit machines, three sets of handlers are registered (regardless of the state of the `Enable32BitAppOnWin64` switch): one for Integrated mode, one for WOW Classic mode and one for native 64-bit Classic mode.  
   
 > [!NOTE]
->  Unlike ServiceModelreg.exe, WFServicesReg.exe does not allow adding, removing, or repairing scriptmaps or handlers for a particular Web site. For a workaround to this issue, see the "Repairing the Scriptmaps" section.  
+> Unlike ServiceModelreg.exe, WFServicesReg.exe does not allow adding, removing, or repairing scriptmaps or handlers for a particular Web site. For a workaround to this issue, see the "Repairing the Scriptmaps" section.  
   
 ## Usage Scenarios  
   

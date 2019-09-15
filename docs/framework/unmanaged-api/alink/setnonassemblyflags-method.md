@@ -22,7 +22,7 @@ Sets flags that are not assembly-specific.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetNonAssemblyFlags(  
     AssemblyFlags afFlags  
 ) PURE;  
@@ -40,6 +40,6 @@ HRESULT SetNonAssemblyFlags(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

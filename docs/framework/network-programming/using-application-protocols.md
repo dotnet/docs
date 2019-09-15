@@ -21,4 +21,3 @@ The .NET Framework supports commonly used Internet application protocols. This s
 
 - [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
 - [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
-- [Networking Samples for .NET on MSDN Code Gallery](https://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)

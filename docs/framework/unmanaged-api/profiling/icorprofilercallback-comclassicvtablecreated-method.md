@@ -23,7 +23,7 @@ Notifies the profiler that a COM interop vtable for the specified IID and class 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT COMClassicVTableCreated(  
     [in] ClassID wrappedClassId,  
     [in] REFGUID implementedIID,  

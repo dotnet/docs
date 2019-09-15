@@ -23,7 +23,7 @@ Causes the current [IHostAutoEvent](../../../../docs/framework/unmanaged-api/hos
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Wait (  
     [in] DWORD dwMilliseconds,  
     [in] DWORD option  

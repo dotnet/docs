@@ -22,7 +22,7 @@ Contains information that is used when installing a module or a composite image.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct {  
     short Major;  
     short Minor;  

@@ -292,7 +292,7 @@ license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
 
 ### PackageLicenseFile
 
-Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is prefered)
+Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is preferred)
 
 Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
 
@@ -390,7 +390,7 @@ Semicolon separated list of key=value pairs.
 
 ## AssemblyInfo properties
 
-[Assembly attributes](../../framework/app-domains/set-assembly-attributes.md) that were typically present in an *AssemblyInfo* file are now automatically generated from properties.
+[Assembly attributes](../../standard/assembly/set-attributes.md) that were typically present in an *AssemblyInfo* file are now automatically generated from properties.
 
 ### Properties per attribute
 

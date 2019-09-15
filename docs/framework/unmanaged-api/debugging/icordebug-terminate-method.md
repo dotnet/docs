@@ -22,11 +22,11 @@ ms.author: "ronpet"
 Terminates the `ICorDebug` object.  
   
 > [!NOTE]
->  `Terminate` should not be called until an [ICorDebugManagedCallback::ExitProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-exitprocess-method.md) callback has been received for all processes being debugged.  
+> `Terminate` should not be called until an [ICorDebugManagedCallback::ExitProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-exitprocess-method.md) callback has been received for all processes being debugged.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Terminate ();  
 ```  
   

@@ -24,7 +24,7 @@ Executes the specified command.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RunDll32ShimW (  
     [in] HWND        hwnd,  
     [in] HINSTANCE   hinst,  

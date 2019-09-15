@@ -23,7 +23,7 @@ Asks the debugger to return the full path to a module whose metadata is needed t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaData(  
       [in] LPCWSTR wszImagePath,  
       [in] DWORD   dwImageTimeStamp,  

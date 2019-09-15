@@ -28,7 +28,7 @@ ms.assetid: 0d1364da-5b30-4d42-8e6b-03378343343f
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Formatting Types in .NET
+# Formatting types in .NET
 
 Formatting is the process of converting an instance of a class, structure, or enumeration value to its string representation, often so that the resulting string can be displayed to users or deserialized to restore the original data type. This conversion can pose a number of challenges:
 
@@ -117,7 +117,7 @@ Every type that is derived from <xref:System.Object?displayProperty=nameWithType
 [!code-vb[Conceptual.Formatting.Overview#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/default1.vb#1)]
 
 > [!WARNING]
-> Starting with [!INCLUDE[win81](../../../includes/win81-md.md)], the [!INCLUDE[wrt](../../../includes/wrt-md.md)] includes an <xref:Windows.Foundation.IStringable> interface with a single method, [IStringable.ToString](xref:Windows.Foundation.IStringable.ToString%2A), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see "The [!INCLUDE[wrt](../../../includes/wrt-md.md)] and the `IStringable` Interface" section on the <xref:System.Object.ToString%2A?displayProperty=nameWithType> reference page.
+> Starting with [!INCLUDE[win81](../../../includes/win81-md.md)], the Windows Runtime includes an <xref:Windows.Foundation.IStringable> interface with a single method, [IStringable.ToString](xref:Windows.Foundation.IStringable.ToString%2A), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see "The Windows Runtime and the `IStringable` Interface" section on the <xref:System.Object.ToString%2A?displayProperty=nameWithType> reference page.
 
 Because all types other than interfaces are derived from <xref:System.Object>, this functionality is automatically provided to your custom classes or structures. However, the functionality offered by the default `ToString` method, is limited: Although it identifies the type, it fails to provide any information about an instance of the type. To provide a string representation of an object that provides information about that object, you must override the `ToString` method.
 

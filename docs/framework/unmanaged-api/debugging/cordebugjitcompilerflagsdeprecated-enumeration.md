@@ -22,7 +22,7 @@ This enumeration is obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorD
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugJITCompilerFlagsDeprecated {  
     CORDEBUG_JIT_TRACK_DEBUG_INFO  = 0x1  
 } CorDebugJITCompilerFlagsDeprecated;  

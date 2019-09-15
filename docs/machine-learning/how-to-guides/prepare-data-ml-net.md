@@ -1,18 +1,18 @@
 ---
-title: Prepare Data
+title: Prepare data for building a model
 description: Learn how to use transforms in ML.NET to manipulate and prepare data for additional processing or model building.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 05/03/2019
-ms.custom: mvc, how-to
-#Customer intent: As a developer, I want to know how I can transform and prepare data with ML.NET using transforms
+ms.date: 09/11/2019
+ms.custom: mvc, how-to, title-hack-0625
+#Customer intent: As a developer, I want to know how I can transform and prepare data with ML.NET
 ---
 
-# Prepare Data
+# Prepare data for building a model
 
 Learn how to use ML.NET to prepare data for additional processing or building a model.
 
-Data is often unclean and sparse. Additionally, ML.NET machine learning algorithms expect input or features to be in a single numerical vector. Therefore one of the goals of data preparation is to get the data into the format expected by ML.NET algorithms. 
+Data is often unclean and sparse. ML.NET machine learning algorithms expect input or features to be in a single numerical vector. Similarly, the value to predict (label), especially when it's categorical data, has to be encoded. Therefore one of the goals of data preparation is to get the data into the format expected by ML.NET algorithms. 
 
 ## Filter data
 
@@ -121,7 +121,7 @@ HomeData[] homeDataList = new HomeData[]
 };
 ```
 
-Normalize the data using min-max normalization using the [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) method.
+Normalization can be applied to columns with single numerical values as well as vectors. Normalize the data in the `Price` column using min-max normalization with the [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) method.
 
 ```csharp
 // Define min-max estimator

@@ -23,7 +23,7 @@ Finds a document. The document language, vendor, and type are optional.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocument (  
     [in]  WCHAR  *url,  
     [in]  GUID   language,  

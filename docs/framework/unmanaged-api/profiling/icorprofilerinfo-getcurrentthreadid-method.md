@@ -23,7 +23,7 @@ Gets the ID of the current thread, if it is a managed thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentThreadID(  
     [out] ThreadID *pThreadId);  
 ```  

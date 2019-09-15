@@ -37,7 +37,7 @@ Contains listeners that any source or trace element can reference.  These listen
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-trace.md)|Adds a listener to the `sharedListeners` collection.|  
+|[\<add>](add-element-for-listeners-for-trace.md)|Adds a listener to the `sharedListeners` collection.|  
   
 ### Parent Elements  
   
@@ -85,5 +85,5 @@ Contains listeners that any source or trace element can reference.  These listen
 ## See also
 
 - <xref:System.Diagnostics.TraceListener>
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
-- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [Trace and Debug Settings Schema](index.md)
+- [Trace Listeners](../../../debug-trace-profile/trace-listeners.md)

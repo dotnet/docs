@@ -58,11 +58,7 @@ The following program calculates and displays the appropriate area for each figu
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [Modifiers](modifiers.md)
-- [C# Keywords](index.md)
 - [Polymorphism](../../programming-guide/classes-and-structs/polymorphism.md)
 - [abstract](abstract.md)
 - [override](override.md)
-- [new](new.md)
+- [new (modifier)](new-modifier.md)

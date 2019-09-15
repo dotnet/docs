@@ -23,7 +23,7 @@ Gets the base address of the module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBaseAddress(  
     [out] CORDB_ADDRESS *pAddress  
 );  

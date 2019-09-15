@@ -24,7 +24,7 @@ Gets the address of the specified function that is exported from the latest inst
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRealProcAddress (  
     [in]  LPCSTR  pwszProcName,   
     [out] VOID  **ppv  

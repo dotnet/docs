@@ -23,7 +23,7 @@ Gets the value of an argument or local variable that is stored in the specified 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalMemoryValue (  
     [in]  CORDB_ADDRESS      address,  
     [in]  ULONG              cbSigBlob,  

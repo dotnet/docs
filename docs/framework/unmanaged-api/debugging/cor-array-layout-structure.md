@@ -22,7 +22,7 @@ Provides information about the layout of an array object in memory.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_ARRAY_LAYOUT {  
     COR_TYPEID componentID;  
     CorElementType componentType;  

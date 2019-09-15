@@ -23,7 +23,7 @@ Gets the specified number of [CorDebugGuidToTypeMapping](../../../../docs/framew
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next(  
     [in] ULONG celt,  
     [out, size_is(celt), length_is(*pceltFetched] CorDebugGuidToTypeMapping values[  ],  
@@ -36,7 +36,7 @@ HRESULT Next(
  [in] The number of GUID-to-type mapping objects to be retrieved.  
   
  `values`  
- [out] An array of pointers, each of which points to a [CorDebugGuidToTypeMapping](../../../../docs/framework/unmanaged-api/debugging/cordebugguidtotypemapping-structure.md) object that maps a [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID to its corresponding ICorDebugType object.  
+ [out] An array of pointers, each of which points to a [CorDebugGuidToTypeMapping](../../../../docs/framework/unmanaged-api/debugging/cordebugguidtotypemapping-structure.md) object that maps a Windows Runtime GUID to its corresponding ICorDebugType object.  
   
  `pceltFetched`  
  [out] A pointer to the number of [CorDebugGuidToTypeMapping](../../../../docs/framework/unmanaged-api/debugging/cordebugguidtotypemapping-structure.md) objects actually returned in `values`.  
@@ -44,7 +44,7 @@ HRESULT Next(
 ## Remarks  
   
 ## Requirements  
- **Platforms:** [!INCLUDE[wrt](../../../../includes/wrt-md.md)]  
+ **Platforms:** Windows Runtime  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

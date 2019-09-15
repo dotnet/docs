@@ -15,7 +15,7 @@ ADO.NET 2.0 introduced new base classes in the <xref:System.Data.Common> namespa
   
 ## See also
 
-- [Obtaining a DbProviderFactory](../../../../docs/framework/data/adonet/obtaining-a-dbproviderfactory.md)
-- [DbConnection, DbCommand and DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)
-- [Modifying Data with a DbDataAdapter](../../../../docs/framework/data/adonet/modifying-data-with-a-dbdataadapter.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Obtaining a DbProviderFactory](obtaining-a-dbproviderfactory.md)
+- [DbConnection, DbCommand and DbException](dbconnection-dbcommand-and-dbexception.md)
+- [Modifying Data with a DbDataAdapter](modifying-data-with-a-dbdataadapter.md)
+- [ADO.NET Overview](ado-net-overview.md)

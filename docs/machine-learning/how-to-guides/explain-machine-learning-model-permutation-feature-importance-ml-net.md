@@ -1,7 +1,7 @@
 ---
 title: "Explain model predictions using Permutation Feature Importance"
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 05/02/2019
+ms.date: 08/29/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
@@ -46,7 +46,7 @@ A sample of the dataset is shown below:
 2,98,16,1,0.25,10,5,1,8,689,13,36,12
 ```
 
-The data in this sample can be modeled by a class like `HousingPriceData`:
+The data in this sample can be modeled by a class like `HousingPriceData` and loaded into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ```csharp
 class HousingPriceData
@@ -92,8 +92,6 @@ class HousingPriceData
     public float Price { get; set; }
 }
 ```
-
-Load the data into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ## Train the model
 
@@ -171,4 +169,4 @@ NearWater           |   0.000203
 PercentPopulationLivingBelowPoverty|    0.000031
 ToxicWasteLevels    |   -0.000019
 
-Taking a look at the the five most important features for this dataset, the price of a house predicted by this model is influenced by its proximity to highways, student teacher ratio of schools in the area, proximity to major employment centers, property tax rate and average number of rooms in the home.
+Taking a look at the five most important features for this dataset, the price of a house predicted by this model is influenced by its proximity to highways, student teacher ratio of schools in the area, proximity to major employment centers, property tax rate and average number of rooms in the home.

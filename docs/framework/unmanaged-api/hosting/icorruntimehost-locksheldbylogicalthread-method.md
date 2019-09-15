@@ -25,7 +25,7 @@ Retrieves the number of locks that current thread holds.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LocksHeldByLogicalThread(  
     [out] DWORD *pCount  
 );  

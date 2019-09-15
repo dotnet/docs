@@ -23,7 +23,7 @@ Adds the specified imported scope to the list of scopes to be merged.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Merge (   
     [in]  IMetaDataImport  *pImport,   
     [in]  IMapToken        *pHostMapToken,   
@@ -38,7 +38,7 @@ HRESULT Merge (
  `pIMap`  
  [in] A pointer to an [IMapToken](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md) object that specifies the token re-map.  
   
- `pHandleer`  
+ `pHandler`  
  [in] A pointer to an [IUnknown](/cpp/atl/iunknown) object that specifies the errors.  
   
 ## Remarks  

@@ -14,14 +14,14 @@ helpviewer_keywords:
 ms.assetid: 8f153d5e-ed61-4aa5-a7cd-286f0c427a13
 ---
 # Transforms Overview
-This topic describes how to use the [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] <xref:System.Windows.Media.Transform> classes to rotate, scale, move (translate), and skew <xref:System.Windows.FrameworkElement> objects.  
+This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> classes to rotate, scale, move (translate), and skew <xref:System.Windows.FrameworkElement> objects.  
 
 <a name="whatIsATransformSection"></a>   
 ## What Is a Transform?  
  A <xref:System.Windows.Media.Transform> defines how to map, or transform, points from one coordinate space to another coordinate space. This mapping is described by a transformation <xref:System.Windows.Media.Matrix>, which is a collection of three rows with three columns of <xref:System.Double> values.  
   
 > [!NOTE]
->  Windows Presentation Foundation (WPF) uses row-major matrices. Vectors are expressed as row-vectors, not column vectors.  
+> Windows Presentation Foundation (WPF) uses row-major matrices. Vectors are expressed as row-vectors, not column vectors.  
   
  The following table shows the structure of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] matrix.  
   
@@ -39,7 +39,7 @@ This topic describes how to use the [!INCLUDE[TLA#tla_2d](../../../../includes/t
   
 <a name="transformClassesSection"></a>   
 ## Transform Classes  
- Windows Presentation Foundation (WPF) provides the following [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] <xref:System.Windows.Media.Transform> classes for common transformation operations:  
+ Windows Presentation Foundation (WPF) provides the following 2-D <xref:System.Windows.Media.Transform> classes for common transformation operations:  
   
 |Class|Description|Example|Illustration|  
 |-----------|-----------------|-------------|------------------|  
@@ -55,7 +55,7 @@ This topic describes how to use the [!INCLUDE[TLA#tla_2d](../../../../includes/t
 |<xref:System.Windows.Media.TransformGroup>|Groups multiple <xref:System.Windows.Media.TransformGroup> objects into a single <xref:System.Windows.Media.Transform> that you can then apply to transform properties.|[Apply Multiple Transforms to an Object](how-to-apply-multiple-transforms-to-an-object.md)|  
 |<xref:System.Windows.Media.MatrixTransform>|Creates custom transformations that are not provided by the other <xref:System.Windows.Media.Transform> classes. When you use a <xref:System.Windows.Media.MatrixTransform>, you manipulate a Matrix directly.|[Use a MatrixTransform to Create Custom Transforms](how-to-use-a-matrixtransform-to-create-custom-transforms.md)|  
   
- Windows Presentation Foundation (WPF) also provides [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] transformations. For more information, see the <xref:System.Windows.Media.Media3D.Transform3D> class.  
+ Windows Presentation Foundation (WPF) also provides 3-D transformations. For more information, see the <xref:System.Windows.Media.Media3D.Transform3D> class.  
   
 <a name="transformationproperties"></a>   
 ## Common Transformation Properties  

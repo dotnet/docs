@@ -24,7 +24,7 @@ Defines the container for a module address request.
 
 ## Syntax
 
-```
+```cpp
 struct DacpGetModuleAddress
 {
     CLRDATA_ADDRESS ModulePtr;

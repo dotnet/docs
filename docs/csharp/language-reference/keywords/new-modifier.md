@@ -1,7 +1,6 @@
 ---
 title: "new modifier - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "new modifier keyword [C#]"
@@ -11,6 +10,8 @@ ms.assetid: a2e20856-33b9-4620-b535-a60dbce8349b
 
 When used as a declaration modifier, the `new` keyword explicitly hides a member that is inherited from a base class. When you hide an inherited member, the derived version of the member replaces the base class version. Although you can hide members without using the `new` modifier, you get a compiler warning. If you use `new` to explicitly hide a member, it suppresses this warning.
 
+You can also use the `new` keyword to [create an instance of a type](../operators/new-operator.md) or as a [generic type constraint](./new-constraint.md).
+
 To hide an inherited member, declare it in the derived class by using the same member name, and modify it with the `new` keyword. For example:
 
 [!code-csharp[csrefKeywordsOperator#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsOperator/CS/csrefKeywordsOperators.cs#8)]
@@ -19,7 +20,7 @@ In this example, `BaseC.Invoke` is hidden by `DerivedC.Invoke`. The field `x` is
 
 Name hiding through inheritance takes one of the following forms:
 
-- Generally, a constant, field, property, or type that is introduced in a class or struct hides all base class members that share its name.  There are special cases.  For example, if you declare a new field with name `N` to have a type that is not invocable, and a base type declares `N` to be a method, the new field does not hide the base declaration in invocation syntax.  See the [C# 5.0 language specification](https://www.microsoft.com/download/details.aspx?id=7029) for details (see section "Member Lookup" in section "Expressions").
+- Generally, a constant, field, property, or type that is introduced in a class or struct hides all base class members that share its name. There are special cases. For example, if you declare a new field with name `N` to have a type that is not invocable, and a base type declares `N` to be a method, the new field does not hide the base declaration in invocation syntax. For more information, see the [Member lookup](~/_csharplang/spec/expressions.md#member-lookup) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 - A method introduced in a class or struct hides properties, fields, and types that share that name in the base class. It also hides all base class methods that have the same signature.
 
@@ -43,13 +44,13 @@ In this example, a nested class hides a class that has the same name in the base
 
 If you remove the `new` modifier, the program will still compile and run, but you will get the following warning:
 
-```
+```text
 The keyword new is required on 'MyDerivedC.x' because it hides inherited member 'MyBaseC.x'.
 ```
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The new modifier](~/_csharplang/spec/classes.md#the-new-modifier) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 

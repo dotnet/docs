@@ -23,7 +23,7 @@ Gets flags indicating the relationship between the method referenced by the spec
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodSemantics (  
    [in]  mdMethodDef   mb,  
    [in]  mdToken       tkEventProp,  

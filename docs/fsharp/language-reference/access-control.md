@@ -34,17 +34,17 @@ Access control is subject to the following rules:
 
 - Accessibility for individual cases in a discriminated union is determined by the accessibility of the discriminated union itself. That is, a particular union case is no less accessible than the union itself.
 
-- Accessibility for individual fields of a record type cannot is determined by the accessibility of the record itself. That is, a particular record label is no less accessible than the record itself.
+- Accessibility for individual fields of a record type is determined by the accessibility of the record itself. That is, a particular record label is no less accessible than the record itself.
 
 ## Example
 
 The following code illustrates the use of access control specifiers. There are two files in the project, `Module1.fs` and `Module2.fs`. Each file is implicitly a module. Therefore, there are two modules, `Module1` and `Module2`. A private type and an internal type are defined in `Module1`. The private type cannot be accessed from `Module2`, but the internal type can.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/access-control/snippet1.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/access-control/snippet1.fs)]
 
 The following code tests the accessibility of the types created in `Module1.fs`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/access-control/snippet2.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/access-control/snippet2.fs)]
 
 ## See also
 

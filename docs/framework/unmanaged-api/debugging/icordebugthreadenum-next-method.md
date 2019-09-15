@@ -23,7 +23,7 @@ Gets the number of specified ICorDebugThread instances from the enumeration, sta
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in] ULONG celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  

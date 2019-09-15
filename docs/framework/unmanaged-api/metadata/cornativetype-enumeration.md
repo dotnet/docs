@@ -22,7 +22,7 @@ Contains values that describe native unmanaged types.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorNativeType {  
   
     NATIVE_TYPE_END                  = 0x0,  

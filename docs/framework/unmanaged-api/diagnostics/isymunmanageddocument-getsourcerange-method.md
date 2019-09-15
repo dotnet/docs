@@ -23,7 +23,7 @@ Returns the specified range of the embedded source into the given buffer. The bu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceRange(  
     [in]  ULONG32  startLine,  
     [in]  ULONG32  startColumn,  

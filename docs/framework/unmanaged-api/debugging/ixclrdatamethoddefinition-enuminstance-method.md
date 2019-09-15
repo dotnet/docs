@@ -24,7 +24,7 @@ Enumerates the instances of this method definition.
 
 ## Syntax
 
-```
+```cpp
 HRESULT EnumInstance(
     [in, out] CLRDATA_ENUM         *handle,
     [out] IXCLRDataMethodInstance **instance

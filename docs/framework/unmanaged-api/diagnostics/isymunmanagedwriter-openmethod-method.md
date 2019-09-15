@@ -23,7 +23,7 @@ Opens a method into which symbol information is emitted. The given method become
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenMethod(  
     [in] mdMethodDef method);  
 ```  

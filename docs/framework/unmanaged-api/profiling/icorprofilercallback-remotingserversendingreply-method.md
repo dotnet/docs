@@ -23,7 +23,7 @@ Notifies the profiler that the process has finished processing a remote method i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingServerSendingReply(  
     [in] GUID *pCookie,  
     [in] BOOL fIsAsync);  

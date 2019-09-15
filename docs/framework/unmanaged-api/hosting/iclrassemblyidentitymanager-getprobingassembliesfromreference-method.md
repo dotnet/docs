@@ -23,7 +23,7 @@ Gets an [ICLRProbingAssemblyEnum](../../../../docs/framework/unmanaged-api/hosti
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProbingAssembliesFromReference (  
     [in] DWORD   dwMachineType,  
     [in] DWORD   dwFlags,  

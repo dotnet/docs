@@ -23,7 +23,7 @@ Notifies the debugger that an evaluation has terminated with an unhandled except
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EvalException (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *pThread,  

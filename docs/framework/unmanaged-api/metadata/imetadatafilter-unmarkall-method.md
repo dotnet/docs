@@ -23,7 +23,7 @@ Removes the processing marks from all the tokens in the current metadata scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnmarkAll ();  
 ```  
   

@@ -28,11 +28,11 @@ In the previous syntax, the identifiers are names for partitions of the input da
 
 As an example, consider the following active pattern with an argument.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5001.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5001.fs)]
 
 You can use the active pattern in a pattern matching expression, as in the following example.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5002.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5002.fs)]
 
 The output of this program is as follows:
 

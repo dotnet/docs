@@ -23,7 +23,7 @@ Gets information about the active function in each of this thread's frames.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetActiveFunctions (  
     [in]   ULONG32             cFunctions,  
     [out]  ULONG32             *pcFunctions,  

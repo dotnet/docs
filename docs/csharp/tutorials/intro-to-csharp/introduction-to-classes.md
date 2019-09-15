@@ -6,7 +6,7 @@ ms.custom: mvc
 ---
 # Explore object oriented programming with classes and objects
 
-This tutorial expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
+This tutorial expects that you have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
 
 ## Create your application
 
@@ -83,7 +83,7 @@ public BankAccount(string name, decimal initialBalance)
 }
 ```
 
-Constructors are called when you create an object using [`new`](../../language-reference/keywords/new.md). Replace the line `Console.WriteLine("Hello World!");` in ***program.cs*** with the following line (replace `<name>` with your name):
+Constructors are called when you create an object using [`new`](../../language-reference/operators/new-operator.md). Replace the line `Console.WriteLine("Hello World!");` in ***program.cs*** with the following line (replace `<name>` with your name):
 
 ```csharp
 var account = new BankAccount("<name>", 1000);

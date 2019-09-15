@@ -10,7 +10,7 @@ Gets the assembly's public key token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPublicKeyToken(  
    [in] ULONG32 cbPublicKeyToken,   
    [out] ULONG32 *pcbPublicKeyToken,   
@@ -32,7 +32,7 @@ HRESULT GetPublicKeyToken(
  An assembly's public key token is the last eight bytes of a SHA1 hash of its public key.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

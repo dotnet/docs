@@ -23,7 +23,7 @@ Gets the search path.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSearchPathLength(  
     [out] ULONG32 *pcchPath);  
 ```  

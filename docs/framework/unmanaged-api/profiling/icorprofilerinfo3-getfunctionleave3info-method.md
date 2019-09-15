@@ -23,7 +23,7 @@ Provides the stack frame and return value of the function that is being reported
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionLeave3Info(  
             [in]  FunctionID functionId,  
             [in]  COR_PRF_ELT_INFO eltInfo,  

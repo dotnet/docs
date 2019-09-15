@@ -18,11 +18,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ASM_CACHE_FLAGS Enumeration
-Indicates the source of an assembly that is represented by [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) in the global assembly cache.  
+Indicates the source of an assembly that is represented by [IAssemblyCacheItem](iassemblycacheitem-interface.md) in the global assembly cache.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     ASM_CACHE_ZAP       = 0x01,  
     ASM_CACHE_GAC       = 0x02,  
@@ -39,11 +39,11 @@ typedef enum {
 |`ASM_CACHE_ZAP`|Enumerates the cache of precompiled assemblies by using Ngen.exe.|  
 |`ASM_CACHE_GAC`|Enumerates the global assembly cache.|  
 |`ASM_CACHE_DOWNLOAD`|Enumerates the assemblies that have been downloaded on demand or that have been shadow-copied.|  
-|`ASM_CACHE_ROOT`|Indicates that the [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) function should return the path to the global assembly cache for the common language runtime (CLR) version 2.0. Meaningful only in the context of a call to [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md).|  
-|`ASM_CACHE_ROOT_EX`|Indicates that the [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md) function should return the path to the global assembly cache for CLR version 4. Meaningful only in the context of a call to [GetCachePath](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md).|  
+|`ASM_CACHE_ROOT`|Indicates that the [GetCachePath](getcachepath-function.md) function should return the path to the global assembly cache for the common language runtime (CLR) version 2.0. Meaningful only in the context of a call to [GetCachePath](getcachepath-function.md).|  
+|`ASM_CACHE_ROOT_EX`|Indicates that the [GetCachePath](getcachepath-function.md) function should return the path to the global assembly cache for CLR version 4. Meaningful only in the context of a call to [GetCachePath](getcachepath-function.md).|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -53,6 +53,6 @@ typedef enum {
   
 ## See also
 
-- [GetCachePath Function](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)
-- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)
-- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
+- [GetCachePath Function](getcachepath-function.md)
+- [IAssemblyCacheItem Interface](iassemblycacheitem-interface.md)
+- [Fusion Enumerations](fusion-enumerations.md)

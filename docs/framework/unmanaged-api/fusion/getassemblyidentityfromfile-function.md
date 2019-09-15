@@ -24,7 +24,7 @@ Gets a pointer to an `IUnknown` object with the specified `IID` in the assembly 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyIdentityFromFile (  
     [in]  LPCWSTR   pwzFilePath,  
     [in]  REFIID    riid,  
@@ -43,7 +43,7 @@ HRESULT GetAssemblyIdentityFromFile (
  [out] The returned interface pointer.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -52,4 +52,4 @@ HRESULT GetAssemblyIdentityFromFile (
 ## See also
 
 - [IUnknown](/cpp/atl/iunknown)
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

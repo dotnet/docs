@@ -22,7 +22,7 @@ Provides interfaces for managing the marshaling of interface pointers.
   
 ## Syntax  
   
-```  
+```cpp  
 coclass ComCallUnmarshal {  
     [default] interface IMarshal;  
 };  

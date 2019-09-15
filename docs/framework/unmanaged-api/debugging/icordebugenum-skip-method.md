@@ -23,7 +23,7 @@ Moves the cursor forward in the enumeration by the specified number of items.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip (  
     [in] ULONG celt  
 );  

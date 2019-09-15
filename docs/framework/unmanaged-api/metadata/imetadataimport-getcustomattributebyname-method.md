@@ -23,7 +23,7 @@ Gets the custom attribute, given its name and owner.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCustomAttributeByName (  
    [in]  mdToken          tkObj,  
    [in]  LPCWSTR          szName,  

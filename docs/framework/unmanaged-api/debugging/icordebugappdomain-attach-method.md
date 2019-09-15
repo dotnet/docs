@@ -23,7 +23,7 @@ Attaches the debugger to the application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Attach ();  
 ```  
   

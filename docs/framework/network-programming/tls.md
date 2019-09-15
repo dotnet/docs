@@ -60,7 +60,9 @@ The following sections show how to verify you're not using a specific TLS or SSL
 
 ### For HTTP networking
 
-<xref:System.Net.ServicePointManager>, using .NET Framework 4.7 and later versions, defaults to the OS choosing the best security protocol and version. To get the default OS best choice, if possible, don't set a value for the <xref:System.Net.ServicePointManager.SecurityProtocol> property. Otherwise, set it to <xref:System.Net.SecurityProtocolType.SystemDefault>.
+<xref:System.Net.ServicePointManager>, using .NET Framework 4.7 and later versions, will use the default security protocol configured in the OS. To get the default OS choice, if possible, don't set a value for the <xref:System.Net.ServicePointManager.SecurityProtocol?displayProperty=nameWithType> property, which defaults to <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=nameWithType>.
+
+Because the <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=nameWithType> setting causes the <xref:System.Net.ServicePointManager> to use the default security protocol configured by the operating system, your application may run differently based on the OS it's run on. For example, Windows 7 SP1 uses TLS 1.0 while Windows 8 and Windows 10 use TLS 1.2.
 
 The remainder of this article is not relevant when targeting .NET Framework 4.7 or later versions for HTTP networking.
 
@@ -205,7 +207,7 @@ For more information with .NET framework 3.5.1, see [Support for TLS System Defa
 
 The following _.REG_ file sets the registry keys and their variants to their most safe values:
 
-```
+```text
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727]
@@ -236,7 +238,7 @@ Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProv
 When it's enabled (by default, by an `AppContext` switch, or by the Windows Registry), the .NET Framework uses the `SCH_USE_STRONG_CRYPTO` flag when your app requests a TLS security protocol. The `SCH_USE_STRONG_CRYPTO` flag can be enabled by default, with the `AppContext` switch, or with the Registry. The OS passes the flag to `Schannel`to instruct it to disable known weak cryptographic algorithms, cipher suites, and TLS/SSL protocol versions that may be otherwise enabled for better interoperability. For more information, see:
 
 - [Secure Channel](/windows/desktop/SecAuthN/secure-channel)
-- [SCHANNEL_CRED structure](/windows/desktop/api/schannel/ns-schannel-_schannel_cred)
+- [SCHANNEL_CRED structure](/windows/win32/api/schannel/ns-schannel-schannel_cred)
 
 The `SCH_USE_STRONG_CRYPTO` flag is also passed to `Schannel` when you explicitly use the `Tls` (TLS 1.0), `Tls11`, or `Tls12` enumerated values of <xref:System.Net.SecurityProtocolType> or <xref:System.Security.Authentication.SslProtocols>.
 

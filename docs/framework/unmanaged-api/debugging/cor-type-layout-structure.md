@@ -22,7 +22,7 @@ Provides information about the layout of an object in memory.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_TYPE_LAYOUT {  
     COR_TYPEID parentID;  
     ULONG32 objectSize;  

@@ -24,7 +24,7 @@ Enumerates the method instances of this process starting at an address offset.
 
 ## Syntax
 
-```
+```cpp
 HRESULT EnumMethodInstanceByAddress(
     [in] CLRDATA_ENUM              *handle,
     [out] IXCLRDataMethodInstance **method

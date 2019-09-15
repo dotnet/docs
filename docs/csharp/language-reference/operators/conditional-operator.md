@@ -1,5 +1,5 @@
 ---
-title: "?: Operator - C# Reference"
+title: "?: operator - C# reference"
 ms.custom: seodec18
 ms.date: "11/20/2018"
 f1_keywords:
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "conditional operator (?:) [C#]"
 ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
 ---
-# ?: Operator (C# Reference)
+# ?: operator (C# reference)
 
 The conditional operator `?:`, commonly known as the ternary conditional operator, evaluates a Boolean expression, and returns the result of evaluating one of two expressions, depending on whether the Boolean expression evaluates to `true` or `false`. Beginning with C# 7.2, the [conditional ref expression](#conditional-ref-expression) returns the reference to the result of one of the two expressions.
 
@@ -46,7 +46,7 @@ a ? b : (c ? d : e)
 
 The following example demonstrates the usage of the conditional operator:
 
-[!code-csharp[non ref conditional](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalValue)]
+[!code-csharp-interactive[non ref conditional](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalValue)]
 
 ## Conditional ref expression
 
@@ -64,9 +64,9 @@ In the case of the conditional ref expression, the type of `consequent` and `alt
 
 The following example demonstrates the usage of the conditional ref expression:
 
-[!code-csharp[conditional ref](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalRef)]
+[!code-csharp-interactive[conditional ref](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalRef)]
 
-For more information, see the [feature proposal note](../../../../_csharplang/proposals/csharp-7.2/conditional-ref.md).
+For more information, see the [feature proposal note](~/_csharplang/proposals/csharp-7.2/conditional-ref.md).
 
 ## Conditional operator and an `if..else` statement
 
@@ -80,14 +80,13 @@ The conditional operator cannot be overloaded.
 
 ## C# language specification
 
-For more information, see the [Conditional operator](~/_csharplang/spec/expressions.md#conditional-operator) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Conditional operator](~/_csharplang/spec/expressions.md#conditional-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [if-else statement](../keywords/if-else.md)
-- [?. and ?[] Operators](member-access-operators.md#null-conditional-operators--and-)
-- [?? Operator](null-coalescing-operator.md)
+- [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
+- [?? operator](null-coalescing-operator.md)
 - [ref keyword](../keywords/ref.md)

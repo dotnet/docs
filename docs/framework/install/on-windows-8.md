@@ -18,7 +18,7 @@ These instructions will help you install the .NET Framework versions you need. T
 ## .NET Framework 4.8
 
 > [!div class="button"]
-> [Download .NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net48)
+> [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
 The .NET Framework 4.8 is supported on Windows Server 2012. It is not supported on Windows 8.
 
@@ -42,6 +42,6 @@ You can [contact Microsoft for help](mailto:dotnet-install-help@service.microsof
 
 ## See also
 
-- [Download the .NET Framework](https://www.microsoft.com/net/download/framework?utm_source=ms-docs&utm_medium=referral)
+- [Download the .NET Framework](https://dotnet.microsoft.com/download)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)
 - [Install the .NET Framework for developers](guide-for-developers.md)

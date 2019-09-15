@@ -23,7 +23,7 @@ Gets data about the specified column in the specified table.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetColumnInfo (   
     [in]  ULONG        ixTbl,  
     [in]  ULONG        ixCol,  

@@ -23,7 +23,7 @@ Gets the name of the module referenced by the specified metadata token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleRefProps (  
    [in]  mdModuleRef         mur,  
    [out] LPWSTR              szName,   

@@ -10,7 +10,7 @@ ms.author: "ronpet"
 # Marshaling Data with COM Interop
 COM interop provides support for both using COM objects from managed code and exposing managed objects to COM. Support for marshaling data to and from COM is extensive and almost always provides the correct marshaling behavior.  
   
- The [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] includes the following COM interop tools:  
+ The Windows SDK includes the following COM interop tools:  
   
 - [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md), which converts a COM type library to an interop assembly. From this assembly, the interop marshaling service generates wrappers that perform data marshaling between managed and unmanaged memory.  
   

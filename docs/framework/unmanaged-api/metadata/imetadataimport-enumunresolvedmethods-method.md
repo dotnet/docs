@@ -23,7 +23,7 @@ Enumerates MemberDef tokens representing the unresolved methods in the current m
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumUnresolvedMethods (  
    [in, out] HCORENUM    *phEnum,  
    [out]     mdToken     rMethods[],  

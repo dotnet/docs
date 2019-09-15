@@ -73,9 +73,9 @@ struct SampleStruct
 
 For more information, see:
 
-- [class](../../../csharp/language-reference/keywords/class.md)
+- [class](../../language-reference/keywords/class.md)
 
-- [struct](../../../csharp/language-reference/keywords/struct.md)
+- [struct](../../language-reference/keywords/struct.md)
 
 ### <a name="Members"></a> Class Members
 
@@ -127,9 +127,9 @@ Most properties have methods or procedures to both set and get the property valu
 
 For more information, see:
 
-- [get](../../../csharp/language-reference/keywords/get.md)
+- [get](../../language-reference/keywords/get.md)
 
-- [set](../../../csharp/language-reference/keywords/set.md)
+- [set](../../language-reference/keywords/set.md)
 
 #### <a name="Methods"></a> Methods
 
@@ -160,9 +160,9 @@ In most cases you declare a method within a class definition. However, C# also s
 
 For more information, see:
 
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [Methods](../classes-and-structs/methods.md)
 
-- [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)
+- [Extension Methods](../classes-and-structs/extension-methods.md)
 
 #### <a name="Constructors"></a> Constructors
 
@@ -182,7 +182,7 @@ public class SampleClass
 
 For more information, see:
 
-[Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md).
+[Constructors](../classes-and-structs/constructors.md).
 
 #### <a name="Finalizers"></a> Finalizers
 
@@ -194,7 +194,7 @@ For more information about finalizers and garbage collection in the .NET Framewo
 
 Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](../../../standard/events/index.md).
 
-- To declare an event in a class, use the [event](../../../csharp/language-reference/keywords/event.md) keyword.
+- To declare an event in a class, use the [event](../../language-reference/keywords/event.md) keyword.
 
 - To raise an event, invoke the event delegate.
 
@@ -228,14 +228,14 @@ The following access modifiers are available:
 
 |C# Modifier|Definition|
 |------------------|----------------|
-|[public](../../../csharp/language-reference/keywords/public.md)|The type or member can be accessed by any other code in the same assembly or another assembly that references it.|
-|[private](../../../csharp/language-reference/keywords/private.md)|The type or member can only be accessed by code in the same class.|
-|[protected](../../../csharp/language-reference/keywords/protected.md)|The type or member can only be accessed by code in the same class or in a derived class.|
-|[internal](../../../csharp/language-reference/keywords/internal.md)|The type or member can be accessed by any code in the same assembly, but not from another assembly.|
-|[protected internal](../../../csharp/language-reference/keywords/protected-internal.md)|The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly.|
-|[private protected](../../../csharp/language-reference/keywords/private-protected.md)|The type or member can be accessed by code in the same class or in a derived class within the base class assembly.|
+|[public](../../language-reference/keywords/public.md)|The type or member can be accessed by any other code in the same assembly or another assembly that references it.|
+|[private](../../language-reference/keywords/private.md)|The type or member can only be accessed by code in the same class.|
+|[protected](../../language-reference/keywords/protected.md)|The type or member can only be accessed by code in the same class or in a derived class.|
+|[internal](../../language-reference/keywords/internal.md)|The type or member can be accessed by any code in the same assembly, but not from another assembly.|
+|[protected internal](../../language-reference/keywords/protected-internal.md)|The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly.|
+|[private protected](../../language-reference/keywords/private-protected.md)|The type or member can be accessed by code in the same class or in a derived class within the base class assembly.|
 
-For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).
+For more information, see [Access Modifiers](../classes-and-structs/access-modifiers.md).
 
 ### <a name="InstantiatingClasses"></a> Instantiating Classes
 
@@ -264,9 +264,9 @@ SampleClass sampleObject = new SampleClass
 
 For more information, see:
 
-- [new Operator](../../../csharp/language-reference/keywords/new-operator.md)
+- [new Operator](../../language-reference/operators/new-operator.md)
 
-- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
 
 ### <a name="Static"></a> Static Classes and Members
 
@@ -289,7 +289,7 @@ Console.WriteLine(SampleClass.SampleString);
 
 Static  classes in C# have static members only and cannot be instantiated. Static members also cannot access non-static  properties, fields or methods
 
-For more information, see: [static](../../../csharp/language-reference/keywords/static.md).
+For more information, see: [static](../../language-reference/keywords/static.md).
 
 ### <a name="AnonymousTypes"></a> Anonymous Types
 
@@ -303,7 +303,7 @@ var sampleObject =
     new { FirstProperty = "A", SecondProperty = "B" };
 ```
 
-For more information, see: [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md).
+For more information, see: [Anonymous Types](../classes-and-structs/anonymous-types.md).
 
 ## <a name="Inheritance"></a> Inheritance
 
@@ -334,9 +334,9 @@ public abstract class B { }
 
 For more information, see:
 
-- [sealed](../../../csharp/language-reference/keywords/sealed.md)
+- [sealed](../../language-reference/keywords/sealed.md)
 
-- [abstract](../../../csharp/language-reference/keywords/abstract.md)
+- [abstract](../../language-reference/keywords/abstract.md)
 
 ### <a name="Overriding"></a> Overriding Members
 
@@ -346,10 +346,10 @@ The following modifiers are used to control how properties and methods are overr
 
 |C# Modifier|Definition|
 |------------------|----------------|
-|[virtual](../../../csharp/language-reference/keywords/virtual.md)|Allows a class member to be overridden in a derived class.|
-|[override](../../../csharp/language-reference/keywords/override.md)|Overrides a virtual (overridable) member defined in the base class.|
-|[abstract](../../../csharp/language-reference/keywords/abstract.md)|Requires that a class member to be overridden in the derived class.|
-|[new Modifier](../../../csharp/language-reference/keywords/new-modifier.md)|Hides a member inherited from a base class|
+|[virtual](../../language-reference/keywords/virtual.md)|Allows a class member to be overridden in a derived class.|
+|[override](../../language-reference/keywords/override.md)|Overrides a virtual (overridable) member defined in the base class.|
+|[abstract](../../language-reference/keywords/abstract.md)|Requires that a class member to be overridden in the derived class.|
+|[new Modifier](../../language-reference/keywords/new-modifier.md)|Hides a member inherited from a base class|
 
 ## <a name="Interfaces"></a> Interfaces
 
@@ -378,9 +378,9 @@ class SampleClass : ISampleInterface
 
 For more information, see:
 
-[Interfaces](../../../csharp/programming-guide/interfaces/index.md)
+[Interfaces](../interfaces/index.md)
 
-[interface](../../../csharp/language-reference/keywords/interface.md)
+[interface](../../language-reference/keywords/interface.md)
 
 ## <a name="Generics"></a> Generics
 
@@ -404,9 +404,9 @@ sampleObject.Field = "Sample string";
 
 For more information, see:
 
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../standard/generics/index.md)
 
-- [Generics](../../../csharp/programming-guide/generics/index.md)
+- [Generics](../generics/index.md)
 
 ## <a name="Delegates"></a> Delegates
 
@@ -442,10 +442,10 @@ class SampleClass
 
 For more information, see:
 
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [Delegates](../delegates/index.md)
 
-- [delegate](../../../csharp/language-reference/keywords/delegate.md)
+- [delegate](../../language-reference/keywords/delegate.md)
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Programming Guide](../index.md)

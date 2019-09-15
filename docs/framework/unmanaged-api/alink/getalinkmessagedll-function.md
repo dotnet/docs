@@ -23,7 +23,7 @@ Finds and loads the message DLL. Returns 0 if the message DLL could not be locat
   
 ## Syntax  
   
-```  
+```cpp  
 HINSTANCE WINAPI GetALinkMessageDll();  
 ```  
   
@@ -34,4 +34,4 @@ HINSTANCE WINAPI GetALinkMessageDll();
   
 ## See also
 
-- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [Al.exe (Assembly Linker)](../../tools/al-exe-assembly-linker.md)

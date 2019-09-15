@@ -22,7 +22,7 @@ Indicates the outcome of an individual step.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugStepReason {  
     STEP_NORMAL,  
     STEP_RETURN,  

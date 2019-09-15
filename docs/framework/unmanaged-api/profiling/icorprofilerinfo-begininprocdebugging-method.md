@@ -23,7 +23,7 @@ Initializes in-process debugging support. This method is obsolete in the .NET Fr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginInprocDebugging(  
     [in]  BOOL   fThisThreadOnly,  
     [out] DWORD *pdwProfilerContext);  

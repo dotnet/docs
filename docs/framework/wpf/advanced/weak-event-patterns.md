@@ -15,7 +15,7 @@ In applications, it is possible that handlers that are attached to event sources
   
  This technique creates a strong reference from the event source to the event listener. Ordinarily, attaching an event handler for a listener causes the listener to have an object lifetime that is influenced by the object lifetime of the source (unless the event handler is explicitly removed). But in certain circumstances, you might want the object lifetime of the listener to be controlled by other factors, such as whether it currently belongs to the visual tree of the application, and not by the lifetime of the source. Whenever the source object lifetime extends beyond the object lifetime of the listener, the normal event pattern leads to a memory leak: the listener is kept alive longer than intended.  
   
- The weak event pattern is designed to solve this memory leak problem. The weak event pattern can be used whenever a listener needs to register for an event, but the listener does not explicitly know when to unregister. The weak event pattern can also be used whenever the object lifetime of the source exceeds the useful object lifetime of the listener. (In this case, *useful* is determined by you.) The weak event pattern allows the listener to register for and receive the event without affecting the object lifetime characteristics of the listener in any way. In effect, the implied reference from the source does not determine whether the listener is eligible for garbage collection. The reference is a weak reference, thus the naming of the weak event pattern and the related [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]. The listener can be garbage collected or otherwise destroyed, and the source can continue without retaining noncollectible handler references to a now destroyed object.  
+ The weak event pattern is designed to solve this memory leak problem. The weak event pattern can be used whenever a listener needs to register for an event, but the listener does not explicitly know when to unregister. The weak event pattern can also be used whenever the object lifetime of the source exceeds the useful object lifetime of the listener. (In this case, *useful* is determined by you.) The weak event pattern allows the listener to register for and receive the event without affecting the object lifetime characteristics of the listener in any way. In effect, the implied reference from the source does not determine whether the listener is eligible for garbage collection. The reference is a weak reference, thus the naming of the weak event pattern and the related APIs. The listener can be garbage collected or otherwise destroyed, and the source can continue without retaining noncollectible handler references to a now destroyed object.  
   
 ## Who Should Implement the Weak Event Pattern?  
  Implementing the weak event pattern is interesting primarily for control authors. As a control author, you are largely responsible for the behavior and containment of your control and the impact it has on applications in which it is inserted. This includes the control object lifetime behavior, in particular the handling of the described memory leak problem.  
@@ -52,25 +52,25 @@ In applications, it is possible that handlers that are attached to event sources
   
      For example, if your code uses the following pattern to subscribe to an event:  
   
-    ```  
+    ```csharp  
     source.SomeEvent += new SomeEventEventHandler(OnSomeEvent);  
     ```  
   
      Change it to the following pattern:  
   
-    ```  
+    ```csharp  
     SomeEventWeakEventManager.AddHandler(source, OnSomeEvent);  
     ```  
   
      Similarly, if your code uses the following pattern to unsubscribe from an event:  
   
-    ```  
-    source.SomeEvent -= new SomeEventEventHandler(OnSome);  
+    ```csharp  
+    source.SomeEvent -= new SomeEventEventHandler(OnSomeEvent);  
     ```  
   
      Change it to the following pattern:  
   
-    ```  
+    ```csharp  
     SomeEventWeakEventManager.RemoveHandler(source, OnSomeEvent);  
     ```  
   
@@ -80,7 +80,7 @@ In applications, it is possible that handlers that are attached to event sources
   
      When you use <xref:System.Windows.WeakEventManager%602> to register event listeners, you supply the event source and <xref:System.EventArgs> type as the type parameters to the class and call <xref:System.Windows.WeakEventManager%602.AddHandler%2A> as shown in the following code:  
   
-    ```  
+    ```csharp  
     WeakEventManager<EventSource, SomeEventEventArgs>.AddHandler(source, "SomeEvent", source_SomeEvent);  
     ```  
   
@@ -102,25 +102,25 @@ In applications, it is possible that handlers that are attached to event sources
   
      For example, if your code uses the following pattern to subscribe to an event:  
   
-    ```  
+    ```csharp  
     source.SomeEvent += new SomeEventEventHandler(OnSomeEvent);  
     ```  
   
      Change it to the following pattern:  
   
-    ```  
+    ```csharp  
     SomeEventWeakEventManager.AddHandler(source, OnSomeEvent);  
     ```  
   
      Similarly, if your code uses the following pattern to unsubscribe to an event:  
   
-    ```  
+    ```csharp  
     source.SomeEvent -= new SomeEventEventHandler(OnSome);  
     ```  
   
      Change it to the following pattern:  
   
-    ```  
+    ```csharp  
     SomeEventWeakEventManager.RemoveHandler(source, OnSomeEvent);  
     ```  
   

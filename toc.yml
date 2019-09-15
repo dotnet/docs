@@ -9,28 +9,35 @@
     - name: .NET API Browser
       tocHref: /dotnet/api/
       topicHref: /dotnet/api/index
+    - name: .NET Application Architecture Guide
+      tocHref: /dotnet/architecture/
+      topicHref: /dotnet/architecture/index
+      items:
+      - name: Modern ASP.NET Web applications e-book
+        tocHref: /dotnet/architecture/modern-web-apps-azure/
+        topicHref: /dotnet/architecture/modern-web-apps-azure/index
+      - name: .NET microservices - Architecture e-book
+        tocHref: /dotnet/architecture/microservices/
+        topicHref: /dotnet/architecture/microservices/index
+      - name: Modernizing .NET apps e-book
+        tocHref: /dotnet/architecture/modernize-with-azure-containers/
+        topicHref: /dotnet/architecture/modernize-with-azure-containers/index
+      - name: .NET Microservices - DevOps e-book
+        tocHref: /dotnet/architecture/containerized-lifecycle/
+        topicHref: /dotnet/architecture/containerized-lifecycle/index
+      - name: Serverless apps e-book
+        tocHref: /dotnet/architecture/serverless/
+        topicHref: /dotnet/architecture/serverless/index
     - name: .NET Guide
       tocHref: /dotnet/standard/
       topicHref: /dotnet/standard/index
       items:
+      - name: Assemblies in .NET
+        tocHref: /dotnet/standard/assembly
+        topicHref: /dotnet/standard/assembly/index
       - name: Open-source library guidance
         tocHref: /dotnet/standard/library-guidance/
         topicHref: /dotnet/standard/library-guidance/index
-      - name: Modern ASP.NET Web applications e-book
-        tocHref: /dotnet/standard/modern-web-apps-azure-architecture/
-        topicHref: /dotnet/standard/modern-web-apps-azure-architecture/index
-      - name: .NET microservices - Architecture e-book
-        tocHref: /dotnet/standard/microservices-architecture/
-        topicHref: /dotnet/standard/microservices-architecture/index
-      - name: Modernizing .NET apps e-book
-        tocHref: /dotnet/standard/modernize-with-azure-and-containers/
-        topicHref: /dotnet/standard/modernize-with-azure-and-containers/index
-      - name: .NET Microservices - DevOps e-book
-        tocHref: /dotnet/standard/containerized-lifecycle-architecture/
-        topicHref: /dotnet/standard/containerized-lifecycle-architecture/index
-      - name: Serverless apps e-book
-        tocHref: /dotnet/standard/serverless-architecture/
-        topicHref: /dotnet/standard/serverless-architecture/index
       - name: Asynchronous Programming Patterns
         tocHref: /dotnet/standard/asynchronous-programming-patterns/
         topicHref: /dotnet/standard/asynchronous-programming-patterns/index
@@ -102,6 +109,9 @@
       - name: Tools
         tocHref: /dotnet/core/tools/
         topicHref: /dotnet/core/tools/index
+      - name: Compatibility
+        tocHref: /dotnet/core/compatibility/
+        topicHref: /dotnet/core/compatibility/index
     - name: .NET Framework
       tocHref: /dotnet/framework/
       topicHref: /dotnet/framework/index
@@ -436,9 +446,6 @@
           tocHref: /dotnet/csharp/programming-guide/concepts/
           topicHref: /dotnet/csharp/programming-guide/concepts/index
           items:
-          - name: Assemblies and the GAC
-            tocHref: /dotnet/csharp/programming-guide/concepts/assemblies-gac/
-            topicHref: /dotnet/csharp/programming-guide/concepts/assemblies-gac/index
           - name: Asynchronous programming
             tocHref: /dotnet/csharp/programming-guide/concepts/async/
             topicHref: /dotnet/csharp/programming-guide/concepts/async/index
@@ -532,9 +539,6 @@
         tocHref: /dotnet/visual-basic/programming-guide/concepts/
         topicHref: /dotnet/visual-basic/programming-guide/concepts/index
         items:
-        - name: Assemblies and the GAC
-          tocHref: /dotnet/visual-basic/programming-guide/concepts/assemblies-gac/
-          topicHref: /dotnet/visual-basic/programming-guide/concepts/assemblies-gac/index
         - name: Asynchronous programming
           tocHref: /dotnet/visual-basic/programming-guide/concepts/async/
           topicHref: /dotnet/visual-basic/programming-guide/concepts/async/index

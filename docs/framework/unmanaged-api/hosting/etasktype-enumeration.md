@@ -22,7 +22,7 @@ Contains values that indicate the type of task that is represented by either an 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum ETaskType {  
     TT_DEBUGGERHELPER           = 0x1,  
     TT_GC                       = 0x2,  

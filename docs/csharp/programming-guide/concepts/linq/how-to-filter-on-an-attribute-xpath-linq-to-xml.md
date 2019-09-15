@@ -13,7 +13,7 @@ This topic shows how to get the descendant elements with a specified name, and w
 ## Example  
  This example finds all descendants elements with the name of `Address`, and with a `Type` attribute with a value of "Shipping".  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
@@ -38,7 +38,7 @@ foreach (XElement el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Address Type="Shipping">  
   <Name>Ellen Adams</Name>  

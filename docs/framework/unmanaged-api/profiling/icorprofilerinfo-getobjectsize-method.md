@@ -23,7 +23,7 @@ Gets the size of a specified object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectSize(  
     [in]  ObjectID objectId,  
     [out] ULONG  *pcSize);  
@@ -39,7 +39,7 @@ HRESULT GetObjectSize(
 ## Remarks  
   
 > [!IMPORTANT]
->  This method is obsolete. It returns COR_E_OVERFLOW for objects greater than 4GB on 64-bit platforms. Use the  [ICorProfilerInfo4::GetObjectSize2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getobjectsize2-method.md) method instead.  
+> This method is obsolete. It returns COR_E_OVERFLOW for objects greater than 4GB on 64-bit platforms. Use the  [ICorProfilerInfo4::GetObjectSize2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getobjectsize2-method.md) method instead.  
   
  Different objects of the same types often have the same size. However, some types, such as arrays or strings, may have a different size for each object.  
   

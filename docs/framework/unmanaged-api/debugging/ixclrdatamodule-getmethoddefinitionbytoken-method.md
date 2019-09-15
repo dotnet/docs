@@ -24,7 +24,7 @@ Gets the method definition corresponding to a given metadata token.
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetMethodDefinitionByToken(
     [in] mdMethodDef token,
     [out] IXCLRDataMethodDefinition** methodDefinition

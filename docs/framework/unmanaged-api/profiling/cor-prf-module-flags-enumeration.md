@@ -22,7 +22,7 @@ Specifies the properties of a module.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     COR_PRF_MODULE_DISK             = 0x00000001,  

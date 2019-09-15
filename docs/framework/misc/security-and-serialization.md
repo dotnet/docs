@@ -43,4 +43,4 @@ Because serialization can allow other code to see or modify object instance data
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

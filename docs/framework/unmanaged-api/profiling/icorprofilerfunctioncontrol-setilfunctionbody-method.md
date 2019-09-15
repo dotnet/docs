@@ -23,7 +23,7 @@ Replaces the Common Intermediate Language (CIL) body of the method.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetILFunctionBody(  
     [in]  ULONG   cbNewILMethodHeader,  
     [in, size_is(cbNewILMethodHeader)] LPCBYTE pbNewILMethodHeader);  

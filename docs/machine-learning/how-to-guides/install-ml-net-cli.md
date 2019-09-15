@@ -29,7 +29,7 @@ The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotn
 The following example shows how to install the ML.NET CLI in the default NuGet feed location:
 
 ```console
-> dotnet tool install -g mlnet
+dotnet tool install -g mlnet
 ```
 
 If the tool can't be installed (that is, if it is not available at the default NuGet feed), error messages are displayed. Check that the feeds you expected are being checked.
@@ -44,7 +44,7 @@ Tool 'mlnet' (version 'X.X.X') was successfully installed.
 You can confirm the installation was successful by typing the following command:
 
 ```console
-> mlnet
+mlnet
 ```
 
 You should see the help for available commands for the mlnet tool such as the 'auto-train' command.
@@ -54,13 +54,13 @@ You should see the help for available commands for the mlnet tool such as the 'a
 If you're trying to install a pre-release version or a specific version of the tool, you can specify the [framework](../../standard/frameworks.md) using the following format:
 
 ```console
-> dotnet tool install -g mlnet --framework <FRAMEWORK>
+dotnet tool install -g mlnet --framework <FRAMEWORK>
 ```
 
 You can also check if the package is properly installed by typing the following command:
 
 ```console
-> dotnet tool list -g
+dotnet tool list -g
 ```
 
 ## Uninstall the CLI package
@@ -68,7 +68,7 @@ You can also check if the package is properly installed by typing the following 
 Type the following command to uninstall the package from your local machine:
 
 ```console
-> dotnet tool uninstall mlnet -g
+dotnet tool uninstall mlnet -g
 ```
 
 ## Update the CLI package
@@ -76,7 +76,7 @@ Type the following command to uninstall the package from your local machine:
 Type the following command to update the package from your local machine:
 
 ```console
-> dotnet tool update -g mlnet
+dotnet tool update -g mlnet
 ```
 
 ## Set up CLI suggestions (tab-based auto-completion)
@@ -96,17 +96,17 @@ On the machine where you'd like to enable completion, you'll need to do two thin
 1. Install the `dotnet-suggest` global tool by running the following command:
 
     ```console
-    > dotnet tool install dotnet-suggest -g
+    dotnet tool install dotnet-suggest -g
     ```
 
 2. Add the appropriate shim script to your shell profile. You may have to create a shell profile file. The shim script will forward completion requests from your shell to the `dotnet-suggest` tool, which delegates to the appropriate `System.CommandLine`-based app.
 
-    * For bash, add the contents of [dotnet-suggest-shim.bash](https://github.com/dotnet/System.CommandLine/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.bash) to `~/.bash_profile`.
+    - For bash, add the contents of [dotnet-suggest-shim.bash](https://github.com/dotnet/System.CommandLine/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.bash) to `~/.bash_profile`.
 
-    * For PowerShell, add the contents of [dotnet-suggest-shim.ps1](https://github.com/dotnet/System.CommandLine/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.ps1) to your PowerShell profile. You can find the expected path to your PowerShell profile by running the following command in your console:
+    - For PowerShell, add the contents of [dotnet-suggest-shim.ps1](https://github.com/dotnet/System.CommandLine/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.ps1) to your PowerShell profile. You can find the expected path to your PowerShell profile by running the following command in your console:
 
     ```console
-    > echo $profile
+    echo $profile
     ``` 
 
 (For other shells, [look for](https://github.com/dotnet/System.CommandLine/issues?q=is%3Aissue+is%3Aopen+label%3A%22shell+suggestion%22) or open an [issue](https://github.com/dotnet/System.CommandLine/issues).)

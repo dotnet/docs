@@ -23,7 +23,7 @@ Gets the line information associated with an offset. If the offset parameter (`d
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLineFromOffset(  
      [in]  ULONG32   dwOffset,  
      [out] ULONG32*  pline,  

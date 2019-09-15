@@ -23,7 +23,7 @@ Requests that the host create a new task.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateTask (  
     [in]  DWORD stacksize,   
     [in]  LPTHREAD_START_ROUTINE pStartAddress,  

@@ -23,7 +23,7 @@ Sets the specified option to a given value for the current metadata scope. The o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetOption (  
     [in] REFGUID optionId,   
     [in] const VARIANT *pValue  

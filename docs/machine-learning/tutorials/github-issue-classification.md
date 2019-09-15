@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Categorize support issues - multiclass classification' 
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 05/16/2019
+ms.date: 07/31/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to categorize support issues to assign them to a given area.
@@ -12,6 +12,7 @@ This sample tutorial illustrates using ML.NET to create a GitHub issue classifie
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Prepare your data
 > * Transform the data
 > * Train the model
@@ -280,6 +281,25 @@ Use the following code to display the metrics, share the results, and then act o
 
 [!code-csharp[DisplayMetrics](~/samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#DisplayMetrics)]
 
+### Save the model to a file
+
+Once satisfied with your model, save it to a file to make predictions at a later time or in another application. Add the following code to the `Evaluate` method. 
+
+[!code-csharp[SnippetCallSaveModel](~/samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#SnippetCallSaveModel)]
+
+Create the `SaveModelAsFile` method below your `Evaluate` method.
+
+```csharp
+private static void SaveModelAsFile(MLContext mlContext,DataViewSchema trainingDataViewSchema, ITransformer model)
+{
+
+}
+```
+
+Add the following code to your `SaveModelAsFile` method. This code uses the [`Save`](xref:Microsoft.ML.ModelOperationsCatalog.Save*) method to serialize and store the trained model as a zip file.
+
+[!code-csharp[SnippetSaveModel](~/samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#SnippetSaveModel)]
+
 ## Deploy and Predict with a model
 
 Add a call to the new method from the `Main` method, right under the `Evaluate` method call, using the following code:
@@ -297,10 +317,15 @@ private static void PredictIssue()
 
 The `PredictIssue` method executes the following tasks:
 
+* Loads the saved model
 * Creates a single issue of test data.
 * Predicts Area based on test data.
 * Combines test data and predictions for reporting.
 * Displays the predicted results.
+
+Load the saved model into your application by adding the following code to the `PredictIssue` method:
+
+[!code-csharp[SnippetLoadModel](~/samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#SnippetLoadModel)]
 
 Add a GitHub issue to test the trained model's prediction in the `Predict` method by creating an instance of `GitHubIssue`:
 
@@ -343,6 +368,7 @@ Congratulations! You've now successfully built a machine learning model for clas
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > * Prepare your data
 > * Transform the data
 > * Train the model

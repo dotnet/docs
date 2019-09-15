@@ -23,7 +23,7 @@ Gets the address of the specified application domain-static field that is in the
   
 ## Syntax  
   
-```  
+```cpp  
 RESULT GetAppDomainStaticAddress(  
     [in] ClassID classId,  
     [in] mdFieldDef fieldToken,  

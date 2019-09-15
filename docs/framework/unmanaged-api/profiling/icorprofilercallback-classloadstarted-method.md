@@ -23,7 +23,7 @@ Notifies the profiler that a class is being loaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClassLoadStarted(  
     [in] ClassID classId);  
 ```  

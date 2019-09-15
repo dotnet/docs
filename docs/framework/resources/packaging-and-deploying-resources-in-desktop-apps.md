@@ -50,7 +50,7 @@ There are several advantages to this model:
 
 ## Resource Naming Conventions
 
-When you package your application's resources, you must name them using the resource naming conventions that the common language runtime expects. The runtime identifies a resource by its culture name. Each culture is given a unique name, which is usually a combination of a two-letter, lowercase culture name associated with a language and, if required, a two-letter, uppercase subculture name associated with a country or region. The subculture name follows the culture name, separated by a dash (-). Examples include ja-JP for Japanese as spoken in Japan, en-US for English as spoken in the United States, de-DE for German as spoken in Germany, or de-AT for German as spoken in Austria. See the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center for a complete list of culture names.
+When you package your application's resources, you must name them using the resource naming conventions that the common language runtime expects. The runtime identifies a resource by its culture name. Each culture is given a unique name, which is usually a combination of a two-letter, lowercase culture name associated with a language and, if required, a two-letter, uppercase subculture name associated with a country or region. The subculture name follows the culture name, separated by a dash (-). Examples include ja-JP for Japanese as spoken in Japan, en-US for English as spoken in the United States, de-DE for German as spoken in Germany, or de-AT for German as spoken in Austria. See the **Language tag** column in the [list of language/region names supported by Windows](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Culture names follow the standard defined by [BCP 47](https://tools.ietf.org/html/bcp47).
 
 > [!NOTE]
 > For information about creating resource files, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md) and [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md).
@@ -136,7 +136,7 @@ The optimized probe for satellite assemblies is an opt-in feature. That is, the 
 The .NET Core resource fallback process involves the following steps:
 
 1. The runtime attempts to load a satellite assembly for the requested culture.
-     * Checks the directory of the currently executing assembly for a subdirectory that matches the requested culture. If it finds the subdirectory, it searches that subdirectory for a valid satellite assembly for the requested culture and loads it.
+     - Checks the directory of the currently executing assembly for a subdirectory that matches the requested culture. If it finds the subdirectory, it searches that subdirectory for a valid satellite assembly for the requested culture and loads it.
 
        > [!NOTE]
        > On operating systems with case-sensitive file systems (that is, Linux and macOS), the culture name subdirectory search is case-sensitive. The subdirectory name must exactly match the case of the <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> (for example, `es` or `es-MX`).
@@ -144,8 +144,8 @@ The .NET Core resource fallback process involves the following steps:
        > [!NOTE]
        > If the programmer has derived a custom assembly load context from <xref:System.Runtime.Loader.AssemblyLoadContext>, the situation is complicated. If the executing assembly was loaded into the custom context, the runtime loads the satellite assembly into the custom context. The details are out of scope for this document. See  <xref:System.Runtime.Loader.AssemblyLoadContext>.
 
-     * If a satellite assemble has not been found, the <xref:System.Runtime.Loader.AssemblyLoadContext> raises the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can load and return a reference to the satellite assembly.
-     * If a satellite assembly still has not been found, the AssemblyLoadContext causes the AppDomain to trigger an <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can load and return a reference to the satellite assembly.
+     - If a satellite assemble has not been found, the <xref:System.Runtime.Loader.AssemblyLoadContext> raises the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can load and return a reference to the satellite assembly.
+     - If a satellite assembly still has not been found, the AssemblyLoadContext causes the AppDomain to trigger an <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can load and return a reference to the satellite assembly.
 
 2. If a satellite assembly is found, the runtime searches it for the requested resource. If it finds the resource in the assembly, it uses it. If it doesn't find the resource, it continues the search.
 
@@ -171,13 +171,13 @@ You can optionally remove resources from the main assembly and specify that the 
 
 The following .NET Framework example uses the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to store an application's fallback resources in a satellite assembly for the French (`fr`) language. The example has two text-based resource files that define a single string resource named `Greeting`. The first, resources.fr.txt, contains a French language resource.
 
-```
+```text
 Greeting=Bon jour!
 ```
 
 The second, resources,ru.txt, contains a Russian language resource.
 
-```
+```text
 Greeting=Добрый день
 ```
 
@@ -218,7 +218,7 @@ Because there are no resources embedded in the main assembly, you do not have to
 
 When you run the example from a system whose language is anything other than Russian, it displays the following output:
 
-```
+```output
 Bon jour!
 ```
 

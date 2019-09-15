@@ -23,7 +23,7 @@ Attaches the debugger to an existing process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebugActiveProcess (  
     [in]  DWORD               id,  
     [in]  BOOL                win32Attach,  

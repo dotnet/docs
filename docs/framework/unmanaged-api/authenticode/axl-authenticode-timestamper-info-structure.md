@@ -10,7 +10,7 @@ Defines the Authenticode time stamper information.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {  
     DWORD cbSize;  
     HRESULT dwError;  
@@ -28,8 +28,8 @@ typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {
 |`dwError`|The error code.|  
 |`algHash`|The hash algorithm.|  
 |`ftTimestamp`|The time of the time stamp.|  
-|`pChainContext`|The time stamper’s chain context.  See the [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) structure.|  
+|`pChainContext`|The time stamper’s chain context.  See the [CERT_CONTEXT](/windows/win32/api/wincrypt/ns-wincrypt-cert_context) structure.|  
   
 ## See also
 
-- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [Authenticode](index.md)

@@ -22,7 +22,7 @@ Indicates the reason or reasons for the initiation of a call chain.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugChainReason {  
     CHAIN_NONE              = 0x000,  
     CHAIN_CLASS_INIT        = 0x001,  

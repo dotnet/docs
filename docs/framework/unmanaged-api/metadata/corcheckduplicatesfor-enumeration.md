@@ -22,7 +22,7 @@ Specifies the metadata tokens that will be checked for duplicates.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorCheckDuplicatesFor {  
   
     MDDupAll                    = 0xffffffff,  

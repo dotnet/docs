@@ -10,7 +10,7 @@ Gets an enumerator for the assemblies contained in this assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateContainedAssemblies(  
     ICorDebugAssemblyEnum **ppAssemblies  
 );  
@@ -27,7 +27,7 @@ HRESULT EnumerateContainedAssemblies(
  Symbols are needed to enumerate the contained assemblies. If they aren't present, the method returns `S_FALSE`, and no valid enumerator is provided.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

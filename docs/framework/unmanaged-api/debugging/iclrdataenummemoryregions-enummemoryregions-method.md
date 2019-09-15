@@ -23,7 +23,7 @@ Enumerates specified areas of memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMemoryRegions (  
     [in] ICLRDataEnumMemoryRegionsCallback  *callback,  
     [in] ULONG32                            miniDumpFlags,  

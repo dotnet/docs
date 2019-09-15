@@ -1,5 +1,5 @@
 ---
-title: "Pointer related operators - C# Reference"
+title: "Pointer related operators - C# reference"
 description: "Learn about C# operators that you can use when working with pointers."
 ms.date: 05/20/2019
 author: pkulikov
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "pointer decrement [C#]"
   - "pointer comparison [C#]"
 ---
-# Pointer related operators (C# Reference)
+# Pointer related operators (C# reference)
 
 You can use the following operators to work with pointers:
 
@@ -34,9 +34,9 @@ You can use the following operators to work with pointers:
 For information about pointer types, see [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md).
 
 > [!NOTE]
-> Any operation with pointers requires [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option.
+> Any operation with pointers requires an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option.
 
-## Address-of operator &amp;
+## <a name="address-of-operator-"></a> Address-of operator &amp;
 
 The unary `&` operator returns the address of its operand:
 
@@ -90,7 +90,7 @@ The following example demonstrates how to access array elements with a pointer a
 
 [!code-csharp[pointer element access](~/samples/csharp/language-reference/operators/PointerOperators.cs#ElementAccess)]
 
-The example uses the [`stackalloc` operator](../keywords/stackalloc.md) to allocate a block of memory on the stack.
+The example uses the [`stackalloc` operator](stackalloc.md) to allocate a block of memory on the stack.
 
 > [!NOTE]
 > The pointer element access operator doesn't check for out-of-bounds errors.
@@ -118,7 +118,7 @@ For a pointer `p` of type `T*` and an expression `n` of a type implicitly conver
 - Both `p + n` and `n + p` expressions produce a pointer of type `T*` that results from adding `n * sizeof(T)` to the address given by `p`.
 - The `p - n` expression produces a pointer of type `T*` that results from subtracting `n * sizeof(T)` from the address given by `p`.
 
-The [`sizeof` operator](../keywords/sizeof.md) obtains the size of a type in bytes.
+The [`sizeof` operator](sizeof.md) obtains the size of a type in bytes.
 
 The following example demonstrates the usage of the `+` operator with a pointer:
 
@@ -181,11 +181,10 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
-- [`unsafe` keyword](../keywords/unsafe.md)
-- [`fixed` keyword](../keywords/fixed-statement.md)
-- [`stackalloc` operator](../keywords/stackalloc.md)
-- [`sizeof` operator](../keywords/sizeof.md)
+- [unsafe keyword](../keywords/unsafe.md)
+- [fixed keyword](../keywords/fixed-statement.md)
+- [stackalloc operator](stackalloc.md)
+- [sizeof operator](sizeof.md)

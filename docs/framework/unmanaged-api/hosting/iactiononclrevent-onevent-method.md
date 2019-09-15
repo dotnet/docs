@@ -23,7 +23,7 @@ Performs callbacks on events that have been registered by using a call to the [I
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnEvent (  
     [in] EClrEvent event,  
     [in] PVOID     data  

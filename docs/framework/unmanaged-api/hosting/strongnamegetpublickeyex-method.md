@@ -23,7 +23,7 @@ Gets the public key from a public/private key pair, and specifies a hash algorit
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameGetPublicKey (   
     [in]  LPCWSTR   pwzKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  

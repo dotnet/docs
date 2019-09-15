@@ -10,7 +10,7 @@ Gets the assembly's public key.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPublicKey(  
    [in] ULONG32 cbPublicKey,   
    [out] ULONG32 *pcbPublicKey,   
@@ -30,7 +30,7 @@ HRESULT GetPublicKey(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

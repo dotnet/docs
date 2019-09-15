@@ -23,7 +23,7 @@ Gets the flags that control the just-in-time (JIT) compilation of this ICorDebug
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetJITCompilerFlags (  
     [out] DWORD   *pdwFlags  
 );  

@@ -21,7 +21,7 @@ SQL Server Compact is the default database installed with Visual Studio. For mor
   
 - The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime and the SQLMetal command-line tool support SQL Server Compact.  
   
-- The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] does not support SQL Server Compact.  
+- The Object Relational Designer does not support SQL Server Compact.  
   
 ## Feature Set  
  The SQL Server Compact feature set is much simpler than the feature set of SQL Server in the following ways that can affect [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications :  
@@ -38,4 +38,4 @@ SQL Server Compact is the default database installed with Visual Studio. For mor
   
 ## See also
 
-- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [Reference](reference.md)

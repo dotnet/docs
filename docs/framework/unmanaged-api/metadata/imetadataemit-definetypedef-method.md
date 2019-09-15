@@ -23,7 +23,7 @@ Creates a type definition for a common language runtime type, and gets a metadat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineTypeDef (   
     [in]  LPCWSTR     szTypeDef,   
     [in]  DWORD       dwTypeDefFlags,   

@@ -12,7 +12,7 @@ ms.assetid: db7cfa59-c315-401c-a59b-0daf355343d6
 ---
 # -netcf
 
-Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].
+Sets the compiler to target the .NET Compact Framework.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].
 
 ## Remarks
 
-The `-netcf` option causes the Visual Basic compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)] rather than the full .NET Framework. Language functionality that is present only in the full .NET Framework is disabled.
+The `-netcf` option causes the Visual Basic compiler to target the .NET Compact Framework rather than the full .NET Framework. Language functionality that is present only in the full .NET Framework is disabled.
 
 The `-netcf` option is designed to be used with [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md). The language features disabled by `-netcf` are the same language features not present in the files targeted with `-sdkpath`.
 
@@ -79,7 +79,7 @@ The `-netcf` option changes the following language features:
 
 ## Example
 
-The following code compiles `Myfile.vb` with the [!INCLUDE[Compact](~/includes/compact-md.md)], using the versions of mscorlib.dll and Microsoft.VisualBasic.dll found in the default installation directory of the [!INCLUDE[Compact](~/includes/compact-md.md)] on the C drive. Typically, you would use the most recent version of the [!INCLUDE[Compact](~/includes/compact-md.md)].
+The following code compiles `Myfile.vb` with the .NET Compact Framework, using the versions of mscorlib.dll and Microsoft.VisualBasic.dll found in the default installation directory of the .NET Compact Framework on the C drive. Typically, you would use the most recent version of the .NET Compact Framework.
 
 ```console
 vbc -netcf -sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE " myfile.vb

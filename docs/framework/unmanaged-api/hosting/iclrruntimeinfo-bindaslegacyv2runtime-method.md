@@ -23,7 +23,7 @@ Binds the current runtime for all legacy common language runtime (CLR) version 2
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BindAsLegacyV2Runtime ();  
 ```  
   

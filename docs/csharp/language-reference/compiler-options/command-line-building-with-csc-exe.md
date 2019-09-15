@@ -1,26 +1,27 @@
 ---
 title: "Command-line build with csc.exe"
 ms.date: 04/19/2017
-helpviewer_keywords: 
+helpviewer_keywords:
   - "builds [C#]"
   - "command line [C#]"
 ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
 ---
 # Command-line build with csc.exe
+
 You can invoke the C# compiler by typing the name of its executable file (*csc.exe*) at a command prompt.
 
-If you use the **Developer Command Prompt for Visual Studio** window, all the necessary environment variables are set for you. For information on how to access this tool, see the [Developer Command Prompt for Visual Studio](../../../framework/tools/developer-command-prompt-for-vs.md) topic. 
+If you use the **Developer Command Prompt for Visual Studio** window, all the necessary environment variables are set for you. For information on how to access this tool, see the [Developer Command Prompt for Visual Studio](../../../framework/tools/developer-command-prompt-for-vs.md) topic.
 
-If you use a standard Command Prompt window, you must adjust your path before you can invoke *csc.exe* from any subdirectory on your computer. You also must run *vsvars32.bat* to set the appropriate environment variables to support command-line builds. For more information about *vsvars32.bat*, including instructions for how to find and run it, see [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md).
+If you use a standard Command Prompt window, you must adjust your path before you can invoke *csc.exe* from any subdirectory on your computer. You also must run *vsvars32.bat* to set the appropriate environment variables to support command-line builds. For more information about *vsvars32.bat*, including instructions for how to find and run it, see [How to: Set Environment Variables for the Visual Studio Command Line](./how-to-set-environment-variables-for-the-visual-studio-command-line.md).
 
-If you're working on a computer that has only the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)], you can use the C# compiler at the **SDK Command Prompt**, which you open from the **Microsoft .NET Framework SDK** menu option.
+If you're working on a computer that has only the Windows Software Development Kit (SDK), you can use the C# compiler at the **SDK Command Prompt**, which you open from the **Microsoft .NET Framework SDK** menu option.
 
 You can also use MSBuild to build C# programs programmatically. For more information, see [MSBuild](/visualstudio/msbuild/msbuild).
 
 The *csc.exe* executable file usually is located in the Microsoft.NET\Framework\\*\<Version>* folder under the *Windows* directory. Its location might vary depending on the exact configuration of a particular computer. If more than one version of the .NET Framework is installed on your computer, you'll find multiple versions of this file. For more information about such installations, see [How to: determine which versions of the .NET Framework are installed](../../../framework/migration-guide/how-to-determine-which-versions-are-installed.md).
 
 > [!TIP]
->  When you build a project by using the Visual Studio IDE, you can display the **csc** command and its associated compiler options in the **Output** window. To display this information, follow the instructions in [How to: View, Save, and Configure Build Log Files](/visualstudio/ide/how-to-view-save-and-configure-build-log-files#to-change-the-amount-of-information-included-in-the-build-log) to change the verbosity level of the log data to **Normal** or **Detailed**. After you rebuild your project, search the **Output** window for **csc** to find the invocation of the C# compiler.
+> When you build a project by using the Visual Studio IDE, you can display the **csc** command and its associated compiler options in the **Output** window. To display this information, follow the instructions in [How to: View, Save, and Configure Build Log Files](/visualstudio/ide/how-to-view-save-and-configure-build-log-files#to-change-the-amount-of-information-included-in-the-build-log) to change the verbosity level of the log data to **Normal** or **Detailed**. After you rebuild your project, search the **Output** window for **csc** to find the invocation of the C# compiler.
 
  **In this topic**
 
@@ -53,7 +54,7 @@ The C# compiler uses the following rules when it interprets arguments given on t
 - Compiles *File.cs* producing *File.exe*:
 
 ```console
-csc File.cs 
+csc File.cs
 ```
 
 - Compiles *File.cs* producing *File.dll*:
@@ -91,10 +92,10 @@ There are no object (*.obj*) files created as a result of invoking the C# compil
 
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
-- [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)
-- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)
-- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)
-- [Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/command-line-arguments.md)
-- [How to: Display Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
-- [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)
+- [C# Compiler Options](./index.md)
+- [C# Compiler Options Listed Alphabetically](./listed-alphabetically.md)
+- [C# Compiler Options Listed by Category](./listed-by-category.md)
+- [Main() and Command-Line Arguments](../../programming-guide/main-and-command-args/index.md)
+- [Command-Line Arguments](../../programming-guide/main-and-command-args/command-line-arguments.md)
+- [How to: Display Command-Line Arguments](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
+- [Main() Return Values](../../programming-guide/main-and-command-args/main-return-values.md)

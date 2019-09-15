@@ -23,7 +23,7 @@ Notifies the profiler that a remoting call has started.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingClientInvocationStarted();  
 ```  
   

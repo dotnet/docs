@@ -22,7 +22,7 @@ Specifies the reasons why a thread may become blocked on a given object.
   
 ## Syntax  
   
-```  
+```cpp  
 Typedef enum CorDebugBlockingReason  
 {  
    BLOCKING_NONE = 0  

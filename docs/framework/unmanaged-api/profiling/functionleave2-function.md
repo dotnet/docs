@@ -22,7 +22,7 @@ Notifies the profiler that a function is about to return to the caller and provi
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionLeave2 (  
     [in]  FunctionID                        funcId,  
     [in]  UINT_PTR                          clientData,  

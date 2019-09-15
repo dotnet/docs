@@ -194,31 +194,23 @@ Both methods allow you to use either the web installer or the offline installer.
 
 To silently chain the .NET Framework installation process and let the .NET Framework installer provide the UI, add the following command to your setup program:
 
-```
-<.NET Framework redistributable> /q /norestart /ChainingPackage <PackageName>
-```
+`<.NET Framework redistributable> /q /norestart /ChainingPackage <PackageName>`
 
 For example, if your executable program is Contoso.exe and you want to silently install the .NET Framework 4.5 offline redistributable package, use the command:
 
-```
-dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
-```
+`dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso`
 
 You can use additional command-line options to customize the installation. For example:
 
 - To provide a way for users to close running .NET Framework apps to minimize system restarts, set passive mode and use the `/showrmui` option as follows:
 
-    ```
-    dotNetFx45_Full_x86_x64.exe /norestart /passive /showrmui /ChainingPackage Contoso
-    ```
+    `dotNetFx45_Full_x86_x64.exe /norestart /passive /showrmui /ChainingPackage Contoso`
 
      This command allows Restart Manager to display a message box that gives users the opportunity to close .NET Framework apps before installing the .NET Framework.
 
 - If you're using the web installer, you can use the `/LCID` option to specify a language pack. For example, to chain the .NET Framework 4.5 web installer to your Contoso setup program and install the Japanese language pack, add the following command to your app's setup process:
 
-    ```
-    dotNetFx45_Full_setup.exe /q /norestart /ChainingPackage Contoso /LCID 1041
-    ```
+    `dotNetFx45_Full_setup.exe /q /norestart /ChainingPackage Contoso /LCID 1041`
 
      If you omit the `/LCID` option, setup will install the language pack that matches the user's MUI setting.
 
@@ -261,6 +253,8 @@ The .NET Framework installer writes registry keys when installation is successfu
 > [!IMPORTANT]
 > You should check for a value  **greater than or equal to** the release keyword value when attempting to detect whether a specific version is present.
 
+[!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
+
 |Version|Value of the Release DWORD|
 |-------------|--------------------------------|
 |.NET Framework 4.8 installed on Windows 10 May 2019 Update|528040|
@@ -286,13 +280,13 @@ The .NET Framework installer writes registry keys when installation is successfu
 
 You can test whether a specific language pack is installed by checking the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\\*LCID* folder in the registry for a DWORD value named `Release`. (Note that "NET Framework Setup" doesn't begin with a period.) *LCID* specifies a locale identifier; see [supported languages](#supported-languages) for a list of these.
 
-For example, to detect whether the full Japanese language pack (LCID=1041) is installed, check for the following values in the registry:
+For example, to detect whether the full Japanese language pack (LCID=1041) is installed, retrieve the following named value from the registry:
 
-```
-Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\1041
-Name: Release
-Type: DWORD
-```
+| | |
+|-|-|
+| Key | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\1041 |
+| Name | Release |
+| Type | DWORD |
 
 To determine whether the final release version of a language pack is installed for a particular version of the .NET Framework from 4.5 through 4.7.2, check the value of the RELEASE key DWORD value described in the previous section, [Detecting the .NET Framework](#detect_net).
 
@@ -329,9 +323,7 @@ Starting with .NET Framework 4.5.1, the package names take the form NDP<`version
 
 To install a language pack with the .NET Framework offline installer, you must chain it to your app's setup. For example, to deploy .NET Framework 4.5.1 offline installer with the Japanese language pack, use the following command:
 
-```
-NDP451-KB2858728-x86-x64-AllOS-JPN.exe /q /norestart /ChainingPackage <ProductName>
-```
+`NDP451-KB2858728-x86-x64-AllOS-JPN.exe /q /norestart /ChainingPackage <ProductName>`
 
 You do not have to chain the language packs if you use the web installer; setup will install the language pack that matches the user's MUI setting. If you want to install a different language, you can use the `/LCID` option to specify a language pack.
 

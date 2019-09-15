@@ -23,7 +23,7 @@ Notifies the profiler that the search phase of exception handling has begun exec
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionSearchFilterEnter(  
     [in] FunctionID functionId);  
 ```  

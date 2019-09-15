@@ -22,11 +22,11 @@ ms.author: "ronpet"
 Stops the execution of code by the common language runtime (CLR).  
   
 > [!IMPORTANT]
->  This method does not release resources to the host, unload application domains, or destroy threads. You must terminate the process to release these resources.  
+> This method does not release resources to the host, unload application domains, or destroy threads. You must terminate the process to release these resources.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Stop();  
 ```  
   

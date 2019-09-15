@@ -23,7 +23,7 @@ Gets a pointer to the code associated with this stack frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode (  
     [out] ICorDebugCode      **ppCode  
 );  

@@ -23,7 +23,7 @@ Returns an enumeration that contains a valid [ICLRRuntimeInfo](../../../../docs/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateInstalledRuntimes (  
     [out, retval] IEnumUnknown **ppEnumerator);  
 ```  

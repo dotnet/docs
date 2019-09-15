@@ -32,7 +32,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  Primitive types, as well as certain types treated as primitives (for example, <xref:System.DateTime> and <xref:System.Xml.XmlElement>) are always "known" and never have to be added through this mechanism. However, arrays of primitive types have to be added explicitly. Most collections are considered equivalent to arrays. (Non-generic collections are considered equivalent to arrays of <xref:System.Object>). For an example of the using primitives, primitive arrays, and primitive collections, see Example 4.  
   
 > [!NOTE]
->  Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types.  
+> Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types.  
   
 ## Examples  
  The following examples show the <xref:System.Runtime.Serialization.KnownTypeAttribute> class in use.  
@@ -71,7 +71,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  In the following example, a data contract stores a number and an operation to perform on the number. The `Numbers` data member can be an integer, an array of integers, or a <xref:System.Collections.Generic.List%601> that contains integers.  
   
 > [!CAUTION]
->  This will only work on the client side if SVCUTIL.EXE is used to generate a WCF proxy. SVCUTIL.EXE retrieves metadata from the service including any known types. Without this information a client will not be able to deserialize the types.  
+> This will only work on the client side if SVCUTIL.EXE is used to generate a WCF proxy. SVCUTIL.EXE retrieves metadata from the service including any known types. Without this information a client will not be able to deserialize the types.  
   
  [!code-csharp[C_KnownTypeAttribute#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_knowntypeattribute/cs/source.cs#6)]
  [!code-vb[C_KnownTypeAttribute#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_knowntypeattribute/vb/source.vb#6)]  

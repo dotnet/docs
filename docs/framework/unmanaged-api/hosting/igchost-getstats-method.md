@@ -23,7 +23,7 @@ Gets the statistics for the current state of the garbage collection system.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStats (  
     [in, out] COR_GC_STATS *pStats  
 );  

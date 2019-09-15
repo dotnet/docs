@@ -212,7 +212,7 @@ You can use additional LINQ query features by calling members of the enumerable 
 |[XML](../../language-features/xml/index.md)|Describes the XML features in Visual Basic that can be queried and that enable you to include XML as first-class data objects in your Visual Basic code.|  
 |[Queries](../../../language-reference/queries/index.md)|Provides reference information about the query clauses that are available in Visual Basic.|  
 |[LINQ (Language-Integrated Query)](../../concepts/linq/index.md)|Includes general information, programming guidance, and samples for LINQ.|  
-|[LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)|Includes general information, programming guidance, and samples for LINQ to SQL.|  
+|[LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)|Includes general information, programming guidance, and samples for LINQ to SQL.|  
 |[LINQ to Objects](../../concepts/linq/linq-to-objects.md)|Includes general information, programming guidance, and samples for LINQ to Objects.|  
 |[LINQ to ADO.NET (Portal Page)](../../concepts/linq/linq-to-adonet-portal-page.md)|Includes links to general information, programming guidance, and samples for LINQ to ADO.NET.|  
 |[LINQ to XML](../../concepts/linq/linq-to-xml.md)|Includes general information, programming guidance, and samples for LINQ to XML.|  
@@ -243,7 +243,7 @@ You can use additional LINQ query features by calling members of the enumerable 
 
 - [LINQ (Language-Integrated Query)](../../concepts/linq/index.md)
 - [Overview of LINQ to XML in Visual Basic](../../language-features/xml/overview-of-linq-to-xml.md)
-- [LINQ to DataSet Overview](~/docs/framework/data/adonet/linq-to-dataset-overview.md)
-- [LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)
+- [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)
 - [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

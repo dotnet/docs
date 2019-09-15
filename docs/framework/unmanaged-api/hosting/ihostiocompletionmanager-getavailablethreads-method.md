@@ -23,7 +23,7 @@ Gets the number of I/O completion threads, of the total number of threads manage
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAvailableThreads (  
     [out] DWORD *pdwAvailableIoCompletionThreads  
 );  

@@ -6,18 +6,13 @@ helpviewer_keywords:
   - "interoperability [WDF]"
   - "styles [Windows Forms], WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
 # Walkthrough: Style WPF content
 
-This walkthrough show you how to apply styling to a Windows Presentation Foundation (WPF) control hosted on a Windows Form.
-
- In this walkthrough, you perform the following tasks:
-
-- Create the project.
-
-- Create the WPF control type.
-
-- Apply a style to the WPF control.a
+This article show you how to apply styling to a Windows Presentation Foundation (WPF) control hosted on a Windows Form.
 
 ## Prerequisites
 
@@ -36,9 +31,9 @@ After you add a WPF control type to the project, you can host it in an <xref:Sys
 
 1. Add a new WPF <xref:System.Windows.Controls.UserControl> project to the solution. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).
 
-2. In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).
+2. In Design view, make sure that `UserControl1` is selected.
 
-3. In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.
+3. In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to **200**.
 
 4. Add a <xref:System.Windows.Controls.Button?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.ContentControl.Content%2A> property to **Cancel**.
 
@@ -54,15 +49,13 @@ You can apply different styling to a WPF control to change its appearance and be
 
 1. In the **Toolbox**, double-click `UserControl1` to create an instance of `UserControl1` on the form.
 
-     An instance of `UserControl1` is hosted in a new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost1`.
+   An instance of `UserControl1` is hosted in a new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost1`.
 
 1. In the smart tag panel for `elementHost1`, click **Edit Hosted Content** from the drop-down list.
 
-     `UserControl1` opens in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+   `UserControl1` opens in the WPF Designer.
 
-1. In XAML view, insert the following XAML after the `<UserControl>` opening tag.
-
-     This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../wpf/controls/styling-and-templating.md).
+1. In XAML view, insert the following XAML after the `<UserControl>` opening tag. This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../wpf/controls/styling-and-templating.md).
 
    ```xaml
    <UserControl.Resources>
@@ -112,7 +105,7 @@ You can apply different styling to a WPF control to change its appearance and be
    </UserControl.Resources>
    ```
 
-1. Apply the `SimpleButton` style defined in the previous step to the Cancel button by inserting the following XAML in the `<Button>` tag of the Cancel button.
+1. Apply the `SimpleButton` style defined in the previous step to the Cancel button by inserting the following XAML in the `<Button>` tag of the **Cancel** button.
 
    ```xaml
    Style="{StaticResource SimpleButton}
@@ -133,7 +126,7 @@ You can apply different styling to a WPF control to change its appearance and be
 
 1. From the **Debug** menu, select **Start Debugging** to run the application.
 
-1. Click the OK and Cancel buttons and view the differences.
+1. Click the **OK** and **Cancel** buttons and view the differences.
 
 ## See also
 

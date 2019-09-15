@@ -1,7 +1,6 @@
 ---
 title: "namespace keyword - C# Reference"
 ms.custom: seoapril2019
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "namespace_CSharpKeyword"
@@ -47,24 +46,15 @@ The following example shows how to call a static method in a nested namespace.
 
 [!code-csharp[csrefKeywordsNamespace#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsNamespace/CS/csrefKeywordsNamespace.cs#3)]
 
-## Related resources
-
-For more information about using namespaces, see the following topics:
-
-- [Namespaces](../../programming-guide/namespaces/index.md)
-
-- [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
-
-- [How to: Use the Global Namespace Alias](../../programming-guide/namespaces/how-to-use-the-global-namespace-alias.md)
-
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see the [Namespaces](~/_csharplang/spec/namespaces.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
+- [C# reference](../index.md)
+- [C# keywords](index.md)
 - [using](using-directive.md)
 - [using static](using-static.md)
+- [Namespace alias qualifier `::`](../operators/namespace-alias-qualifier.md)
+- [Namespaces](../../programming-guide/namespaces/index.md)

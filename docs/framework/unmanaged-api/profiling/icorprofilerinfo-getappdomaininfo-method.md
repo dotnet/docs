@@ -23,7 +23,7 @@ Accepts an application domain ID. Returns an application domain name and the ID 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAppDomainInfo(  
     [in]  AppDomainID appDomainId,  
     [in]  ULONG       cchName,  

@@ -30,7 +30,7 @@ Visual Studio generates an interop assembly containing metadata when you add a r
 7. In the **Properties** window, make sure that the **Embed Interop Types** property is set to **True**. This causes Visual Studio to embed type information for COM types in your executables, eliminating the need to deploy primary interop assemblies with your app.  
   
 > [!NOTE]
->  The menu and dialog box options may vary depending on the version of Visual Studio you're using.  
+> The menu and dialog box options may vary depending on the version of Visual Studio you're using.  
   
 ### To add a reference to a type library for command-line compilation  
   
@@ -42,7 +42,6 @@ Visual Studio generates an interop assembly containing metadata when you add a r
 
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
-- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md) 
-- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)
+- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](../../standard/assembly/embed-types-visual-studio.md) 
 - [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
 - [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)

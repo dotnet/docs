@@ -23,7 +23,7 @@ Requests a JIT recompilation of all instances of the specified functions.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestReJIT (  
    [in] ULONG    cFunctions,  
    [in, size_is(cFunctions)]  ModuleID    moduleIds[],  

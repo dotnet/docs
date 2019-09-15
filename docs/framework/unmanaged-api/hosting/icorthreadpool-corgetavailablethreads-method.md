@@ -23,7 +23,7 @@ This method supports the .NET Framework infrastructure and is not intended to be
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorGetAvailableThreads (  
     [out] DWORD *AvailableWorkerThreads,  
     [out] DWORD *AvailableIOCompletionThreads  

@@ -46,7 +46,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
 <a name="StreamGeometry_Objects"></a>   
 ## StreamGeometry Objects  
- The <xref:System.Windows.Media.StreamGeometry> object is a light-weight alternative to <xref:System.Windows.Media.PathGeometry> for creating geometric shapes. Use a <xref:System.Windows.Media.StreamGeometry> when you need to describe a complex geometry. <xref:System.Windows.Media.StreamGeometry> is optimized for handling many <xref:System.Windows.Media.PathGeometry> objects and performs better when compared to using many individual <xref:System.Windows.Media.PathGeometry> objects.  
+ The <xref:System.Windows.Media.StreamGeometry> object is a lightweight alternative to <xref:System.Windows.Media.PathGeometry> for creating geometric shapes. Use a <xref:System.Windows.Media.StreamGeometry> when you need to describe a complex geometry. <xref:System.Windows.Media.StreamGeometry> is optimized for handling many <xref:System.Windows.Media.PathGeometry> objects and performs better when compared to using many individual <xref:System.Windows.Media.PathGeometry> objects.  
   
  The following example uses attribute syntax to create a triangular <xref:System.Windows.Media.StreamGeometry> in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
@@ -60,7 +60,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
 <a name="Images"></a>   
 ## Images  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] imaging provides a significant improvement over the imaging capabilities in previous versions of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]. Imaging capabilities, such as displaying a bitmap or using an image on a common control were primarily handled by the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ application programming interface (API). These API provided baseline imaging functionality, but lacked features such as support for codec extensibility and high fidelity image support. WPF Imaging API have been redesigned to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] imaging provides a significant improvement over the imaging capabilities in previous versions of Windows. Imaging capabilities, such as displaying a bitmap or using an image on a common control were primarily handled by the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ application programming interface (API). These API provided baseline imaging functionality, but lacked features such as support for codec extensibility and high fidelity image support. WPF Imaging API have been redesigned to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
   
  When using images, consider the following recommendations for gaining better performance:  
   

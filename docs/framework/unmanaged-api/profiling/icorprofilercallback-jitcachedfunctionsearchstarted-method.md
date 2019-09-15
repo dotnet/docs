@@ -23,7 +23,7 @@ Notifies the profiler that a search has started for a function that was compiled
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITCachedFunctionSearchStarted(  
     [in]  FunctionID functionId,  
     [out] BOOL *pbUseCachedFunction);  

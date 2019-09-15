@@ -17,7 +17,7 @@ In many technologies, elements and components are organized in a tree structure 
  Even though you do not always manipulate either the logical tree or the visual tree directly, understanding the concepts of how the trees interact is useful for understanding WPF as a technology. Thinking of WPF as a tree metaphor of some kind is also crucial to understanding how property inheritance and event routing work in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
 > [!NOTE]
->  Because the object tree is more of a concept than an actual API, another way to think of the concept is as an object graph. In practice, there are relationships between objects at run time where the tree metaphor will break down. Nevertheless, particularly with XAML-defined UI, the tree metaphor is relevant enough that most WPF documentation will use the term object tree when referencing this general concept.  
+> Because the object tree is more of a concept than an actual API, another way to think of the concept is as an object graph. In practice, there are relationships between objects at run time where the tree metaphor will break down. Nevertheless, particularly with XAML-defined UI, the tree metaphor is relevant enough that most WPF documentation will use the term object tree when referencing this general concept.  
   
 <a name="logical_tree"></a>   
 ## The Logical Tree  
@@ -45,7 +45,7 @@ In many technologies, elements and components are organized in a tree structure 
   
 <a name="override_logical_tree"></a>   
 ### Overriding the Logical Tree  
- Advanced control authors can override the logical tree by overriding several [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] that define how a general object or content model adds or removes objects within the logical tree. For an example of how to override the logical tree, see [Override the Logical Tree](how-to-override-the-logical-tree.md).  
+ Advanced control authors can override the logical tree by overriding several APIs that define how a general object or content model adds or removes objects within the logical tree. For an example of how to override the logical tree, see [Override the Logical Tree](how-to-override-the-logical-tree.md).  
   
 <a name="pvi"></a>   
 ### Property Value Inheritance  
@@ -66,7 +66,7 @@ In many technologies, elements and components are organized in a tree structure 
  The visual tree also supports a helper class for visual tree traversal, <xref:System.Windows.Media.VisualTreeHelper>. The visual tree is not exposed as conveniently through control-specific properties, so the <xref:System.Windows.Media.VisualTreeHelper> class is the recommended way to traverse the visual tree if that is necessary for your programming scenario. For more information, see [WPF Graphics Rendering Overview](../graphics-multimedia/wpf-graphics-rendering-overview.md).  
   
 > [!NOTE]
->  Sometimes it is necessary to examine the visual tree of an applied template. You should be careful when using this technique. Even if you are traversing a visual tree for a control where you define the template, consumers of your control can always change the template by setting the <xref:System.Windows.Controls.Control.Template%2A> property on instances, and even the end user can influence the applied template by changing the system theme.  
+> Sometimes it is necessary to examine the visual tree of an applied template. You should be careful when using this technique. Even if you are traversing a visual tree for a control where you define the template, consumers of your control can always change the template by setting the <xref:System.Windows.Controls.Control.Template%2A> property on instances, and even the end user can influence the applied template by changing the system theme.  
   
 <a name="routes"></a>   
 ## Routes for Routed Events as a "Tree"  

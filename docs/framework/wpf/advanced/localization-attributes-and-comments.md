@@ -27,7 +27,7 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
   
     - **All** - Strips both the comments and the attributes from the assembly and places them both in a separate LocFile.  
   
-4. When localizable resources are extracted from [!INCLUDE[TLA2#tla_baml](../../../../includes/tla2sharptla-baml-md.md)], the localizability attributes are respected by the [!INCLUDE[TLA2#tla_baml](../../../../includes/tla2sharptla-baml-md.md)] Localization API.  
+4. When localizable resources are extracted from BAML, the localizability attributes are respected by the BAML Localization API.  
   
 5. Localization comment files, containing only free-form comments, are incorporated into the localization process at a later time.  
   

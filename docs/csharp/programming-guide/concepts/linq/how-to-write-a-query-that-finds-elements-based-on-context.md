@@ -43,14 +43,14 @@ foreach (XElement e in items)
   
  This code produces the following output:  
   
-```  
+```output  
 id = 1  
 id = 3  
 id = 6  
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
 ```csharp  
 XElement doc = XElement.Parse(@"<Root xmlns='http://www.adatum.com'>  
@@ -86,7 +86,7 @@ foreach (XElement e in items)
   
  This code produces the following output:  
   
-```  
+```output  
 id = 1  
 id = 3  
 id = 6  

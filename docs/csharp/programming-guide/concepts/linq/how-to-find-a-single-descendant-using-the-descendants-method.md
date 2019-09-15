@@ -32,12 +32,12 @@ Console.WriteLine(grandChild3);
   
  This code produces the following output:  
   
-```  
+```output  
 GC3 Value  
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
 ```csharp  
 XElement root = XElement.Parse(@"<aw:Root xmlns:aw='http://www.adventure-works.com'>  
@@ -63,6 +63,6 @@ Console.WriteLine(grandChild3);
   
  This code produces the following output:  
   
-```  
+```output  
 GC3 Value  
 ```  

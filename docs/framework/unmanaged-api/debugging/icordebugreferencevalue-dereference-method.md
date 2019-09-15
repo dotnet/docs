@@ -23,7 +23,7 @@ Gets the object that is referenced.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Dereference (  
     [out] ICorDebugValue  **ppValue  
 );  

@@ -22,7 +22,7 @@ Provides information about an object on the managed heap.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_HEAPOBJECT {  
     CORDB_ADDRESS address;    
     ULONG64 size;             

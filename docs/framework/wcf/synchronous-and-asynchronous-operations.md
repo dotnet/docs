@@ -70,7 +70,7 @@ public class SampleService:ISampleService
  The SampleMethodTaskAsync operation returns Task\<string> because the logical operation returns a string. For more information about the task-based asynchronous pattern, see [The Task-Based Asynchronous Pattern](https://go.microsoft.com/fwlink/?LinkId=232504).  
   
 > [!WARNING]
->  When using the task-based asynchronous pattern, a T:System.AggregateException may be thrown if an exception occurs while waiting on the completion of the operation. This exception may occur on the client or services  
+> When using the task-based asynchronous pattern, a T:System.AggregateException may be thrown if an exception occurs while waiting on the completion of the operation. This exception may occur on the client or services  
   
 #### Event-Based Asynchronous Pattern  
  A service that supports the Event-based Asynchronous Pattern will have one or more operations named MethodNameAsync. These methods may mirror synchronous versions, which perform the same operation on the current thread. The class may also have a MethodNameCompleted event and it may have a MethodNameAsyncCancel (or simply CancelAsync) method. A client wishing to call the operation will define an event handler to be called when the operation completes,  
@@ -149,7 +149,7 @@ Function EndDoWork(ByRef inout As String, ByRef outonly As String, ByVal result 
 ```  
   
 > [!NOTE]
->  The <xref:System.ServiceModel.OperationContractAttribute> attribute is applied only to the `BeginDoWork` method. The resulting contract has one WSDL operation named `DoWork`.  
+> The <xref:System.ServiceModel.OperationContractAttribute> attribute is applied only to the `BeginDoWork` method. The resulting contract has one WSDL operation named `DoWork`.  
   
 ### Client-Side Asynchronous Invocations  
  A WCF client application can use any of three asynchronous calling models described previously  

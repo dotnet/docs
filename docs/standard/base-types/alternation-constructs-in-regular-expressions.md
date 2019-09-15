@@ -74,7 +74,7 @@ ms.custom: seodec18
  where `(?=`*expression*`)` is a zero-width assertion construct. (For more information, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).) Because the regular expression engine interprets *expression* as an anchor (a zero-width assertion), *expression* must either be a zero-width assertion (for more information, see [Anchors](../../../docs/standard/base-types/anchors-in-regular-expressions.md)) or a subexpression that is also contained in *yes*. Otherwise, the *yes* pattern cannot be matched.  
   
 > [!NOTE]
->  If *expression*is a named or numbered capturing group, the alternation construct is interpreted as a capture test; for more information, see the next section, [Conditional Matching Based on a Valid Capture Group](#Conditional_Group). In other words, the regular expression engine does not attempt to match the captured substring, but instead tests for the presence or absence of the group.  
+> If *expression*is a named or numbered capturing group, the alternation construct is interpreted as a capture test; for more information, see the next section, [Conditional Matching Based on a Valid Capture Group](#Conditional_Group). In other words, the regular expression engine does not attempt to match the captured substring, but instead tests for the presence or absence of the group.  
   
  The following example is a variation of the example that appears in the [Either/Or Pattern Matching with &#124;](#Either_Or) section. It uses conditional matching to determine whether the first three characters after a word boundary are two digits followed by a hyphen. If they are, it attempts to match a U.S. Employer Identification Number (EIN). If not, it attempts to match a U.S. Social Security Number (SSN).  
   
@@ -119,7 +119,7 @@ ms.custom: seodec18
 |`\b`|Start at a word boundary.|  
 |`(?<n2>\d{2}-)?`|Match zero or one occurrence of two digits followed by a hyphen. Name this capturing group `n2`.|  
 |`(?(n2)`|Test whether `n2` was matched in the input string.|  
-|`)\d{7}`|If `n2` was matched, match seven decimal digits.|  
+|`\d{7}`|If `n2` was matched, match seven decimal digits.|  
 |<code>&#124;\d{3}-\d{2}-\d{4}</code>|If `n2` was not matched, match three decimal digits, a hyphen, two decimal digits, another hyphen, and four decimal digits.|  
 |`\b`|Match a word boundary.|  
   

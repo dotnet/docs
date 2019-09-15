@@ -24,7 +24,7 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
 ## Creating the Application  
  Start Visual Studio and begin the project by creating a form that the user can use to write to the designated file.  
   
-#### To create the project  
+### To create the project  
   
 1. On the **File** menu, select **New Project**.  
   
@@ -45,7 +45,7 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
 ## Writing to the File  
  To add the ability to write to a file via the application, use the <xref:System.IO.StreamWriter> class. <xref:System.IO.StreamWriter> is designed for character output in a particular encoding, whereas the <xref:System.IO.Stream> class is designed for byte input and output. Use <xref:System.IO.StreamWriter> for writing lines of information to a standard text file. For more information on the <xref:System.IO.StreamWriter> class, see <xref:System.IO.StreamWriter>.  
   
-#### To add writing functionality  
+### To add writing functionality  
   
 1. From the **View** menu, choose **Code** to open the Code Editor.  
   
@@ -60,7 +60,7 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
      [!code-vb[VbVbcnMyFileSystem#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#36)]  
   
 > [!NOTE]
->  The Visual Studio Integrated Development Environment (IDE) will return to the Code Editor and position the insertion point within the event handler where you should add the code.  
+> The Visual Studio Integrated Development Environment (IDE) will return to the Code Editor and position the insertion point within the event handler where you should add the code.  
   
 1. To write to the file, use the <xref:System.IO.StreamWriter.Write%2A> method of the <xref:System.IO.StreamWriter> class. Add the following code directly after `Dim fw As StreamWriter`. You do not need to worry that an exception will be thrown if the file is not found, because it will be created if it does not already exist.  
   
@@ -90,7 +90,7 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
 |<xref:System.Windows.Forms.Button>|**Name**<br /><br /> **Text**|`GetEntries`<br /><br /> **Get Entries**|  
 |<xref:System.Windows.Forms.ComboBox>|**Name**<br /><br /> **Text**<br /><br /> **Enabled**|`PickEntries`<br /><br /> **Select an Entry**<br /><br /> `False`|  
   
-#### To populate the combo box  
+### To populate the combo box  
   
 1. The `PickEntries`<xref:System.Windows.Forms.ComboBox> is used to display the dates on which a user submits each entry, so the user can select an entry from a specific date. Create a <xref:System.Windows.Forms.Control.Click> event handler to the `GetEntries` button and add the following code.  
   
@@ -98,7 +98,7 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
   
 2. To test your code, press F5 to compile the application, and then click **Get Entries**. Click the drop-down arrow in the <xref:System.Windows.Forms.ComboBox> to display the entry dates.  
   
-#### To choose and display individual entries  
+### To choose and display individual entries  
   
 1. Create a <xref:System.Windows.Forms.Control.Click> event handler for the `Display` button and add the following code.  
   
@@ -117,7 +117,7 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
 |<xref:System.Windows.Forms.Button>|**Name**<br /><br /> **Text**<br /><br /> **Enabled**|`EditEntry`<br /><br /> **Edit Entry**<br /><br /> `False`|  
 |<xref:System.Windows.Forms.Button>|**Name**<br /><br /> **Text**<br /><br /> **Enabled**|`SubmitEdit`<br /><br /> **Submit Edit**<br /><br /> `False`|  
   
-#### To enable deletion and modification of entries  
+### To enable deletion and modification of entries  
   
 1. Add the following code to the `Display` button's <xref:System.Windows.Forms.Control.Click> event, after `DisplayEntry.Text = ReadString`.  
   

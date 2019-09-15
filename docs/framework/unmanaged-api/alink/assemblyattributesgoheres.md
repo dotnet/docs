@@ -24,7 +24,7 @@ Used by ALink as a placeholder to store information about custom attributes.
 
 ## Syntax
 
-```
+```csharp
 internal sealed class AssemblyAttributesGoHereS
 ```
 

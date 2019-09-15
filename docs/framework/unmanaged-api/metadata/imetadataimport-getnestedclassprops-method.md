@@ -23,7 +23,7 @@ Gets the TypeDef token for the parent <xref:System.Type> of the specified nested
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNestedClassProps (  
    [in]   mdTypeDef      tdNestedClass,  
    [out]  mdTypeDef      *ptdEnclosingClass  

@@ -23,7 +23,7 @@ Notifies the profiler that memory within the heap has been allocated for an obje
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ObjectAllocated(  
     [in] ObjectID objectId,  
     [in] ClassID classId);  

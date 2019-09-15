@@ -23,7 +23,7 @@ This method is not implemented.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadForFiberCookie (  
     [in] DWORD fiberCookie,  
     [out] ICorDebugThread **ppThread  

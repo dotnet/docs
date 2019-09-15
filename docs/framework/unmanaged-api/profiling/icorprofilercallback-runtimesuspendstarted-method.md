@@ -23,7 +23,7 @@ Notifies the profiler that the runtime is about to suspend all runtime threads.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeSuspendStarted(  
     [in] COR_PRF_SUSPEND_REASON suspendReason);  
 ```  

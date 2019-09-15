@@ -39,7 +39,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
     |4|Yes|Yes|Not applicable|  
   
 > [!NOTE]
->  .NET Framework versions 3.0 and 3.5 are built incrementally on version 2.0, and do not need to run side by side. These are inherently the same version.  
+> .NET Framework versions 3.0 and 3.5 are built incrementally on version 2.0, and do not need to run side by side. These are inherently the same version.  
   
 <a name="scenarios"></a>   
 ## Common Side-by-Side Hosting Scenarios  
@@ -50,7 +50,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
   
      What to do: In this scenario, do nothing. The COM components will run with the version of the .NET Framework they were registered with.  
   
-- **Scenario 2**: Managed application built with the [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that you would prefer to run with the [!INCLUDE[dnprdnext](../../../includes/dnprdnext-md.md)], but are willing to run on the .NET Framework 4 if version 2.0 is not present.  
+- **Scenario 2**: Managed application built with the .NET Framework 2.0 SP1 that you would prefer to run with the .NET Framework 2.0, but are willing to run on the .NET Framework 4 if version 2.0 is not present.  
   
      .NET Framework versions installed: An earlier version of the .NET Framework and the .NET Framework 4.  
   

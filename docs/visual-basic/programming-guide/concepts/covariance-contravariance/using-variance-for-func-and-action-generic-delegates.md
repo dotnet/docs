@@ -86,4 +86,4 @@ End Class
 ## See also
 
 - [Covariance and Contravariance (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../../standard/generics/index.md)

@@ -23,7 +23,7 @@ Notifies the debugger that a search for an exception handler has started.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Exception (  
     [in] ICorDebugAppDomain   *pAppDomain,  
     [in] ICorDebugThread      *pThread,  

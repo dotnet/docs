@@ -23,7 +23,7 @@ Finalizes assembly operations. Call this method before beginning a new assembly 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseAssembly(  
     mdAssembly AssemblyID  
 ) PURE;  
@@ -41,6 +41,6 @@ HRESULT CloseAssembly(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

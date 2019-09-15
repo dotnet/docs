@@ -25,7 +25,7 @@ Generates and gets a code section using the specified name and flag values.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSectionCreate (  
     [in]  const char     *name,  
     [in]  DWORD          flags,  

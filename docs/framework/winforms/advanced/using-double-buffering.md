@@ -25,10 +25,10 @@ You can use double-buffered graphics to reduce flicker in your applications that
  Demonstrates how to render double-buffered graphics.  
   
 ## Reference  
- <xref:System.Windows.Forms.Control.SetStyle%2A> ,  
+ <xref:System.Windows.Forms.Control.SetStyle%2A>
  Control method that enables double buffering.  
   
- <xref:System.Drawing.BufferedGraphicsContext> ,  
+ <xref:System.Drawing.BufferedGraphicsContext>
  Provides methods for creating graphics buffers.  
   
  <xref:System.Drawing.BufferedGraphicsManager>  

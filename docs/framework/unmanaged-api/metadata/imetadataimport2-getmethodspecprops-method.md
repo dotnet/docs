@@ -23,7 +23,7 @@ Gets the metadata signature of the method referenced by the specified MethodSpec
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodSpecProps (  
    [in]  mdMethodSpec     mi,  
    [out] mdToken          *tkParent,  

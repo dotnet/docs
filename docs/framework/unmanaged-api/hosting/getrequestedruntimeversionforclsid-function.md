@@ -24,7 +24,7 @@ Gets the appropriate common language runtime (CLR) version information for the c
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRequestedRuntimeVersionForCLSID (  
     [in]  REFCLSID   rclsid,   
     [out]  LPWSTR     pVersion,   

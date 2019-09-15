@@ -23,7 +23,7 @@ Gets the value of the constant.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue(  
     [out]  VARIANT* pValue  
 );  

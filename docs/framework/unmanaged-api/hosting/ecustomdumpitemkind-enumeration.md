@@ -22,7 +22,7 @@ Reserved for future extension of the [CustomDumpItem](../../../../docs/framework
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     DUMP_ITEM_None = 0  
 } ECustomDumpItemKind;  

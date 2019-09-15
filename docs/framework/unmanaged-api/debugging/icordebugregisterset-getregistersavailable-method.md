@@ -23,7 +23,7 @@ Gets a bit mask indicating which registers in this [ICorDebugRegisterSet](../../
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegistersAvailable (  
     [out] ULONG64   *pAvailable  
 );  

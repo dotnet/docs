@@ -22,7 +22,7 @@ Indicates the operation that was performed on a debugging/tracing switch.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum LogSwitchCallReason {  
     SWITCH_CREATE,  
     SWITCH_MODIFY,  

@@ -8,9 +8,9 @@ ms.author: "ronpet"
 # \<EnableAmPmParseAdjustment> Element
 Determines whether date and time parsing methods use an adjusted set of rules to parse date strings that contain a day, month, hour, and AM/PM designator.  
   
- \<configuration>  
- \<runtime>  
-\<EnableAmPmParseAdjustment>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<EnableAmPmParseAdjustment>**  
   
 ## Syntax  
   
@@ -62,7 +62,7 @@ Determines whether date and time parsing methods use an adjusted set of rules to
  The `<EnableAmPmParseAdjustment>` element has no effect on the  <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType>,  <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=nameWithType>, and <xref:System.DateTimeOffset.TryParseExact%2A?displayProperty=nameWithType> methods.  
   
 > [!IMPORTANT]
->  In .NET Core and .NET Native, the adjusted AM/PM parsing rules are enabled by default.  
+> In .NET Core and .NET Native, the adjusted AM/PM parsing rules are enabled by default.  
   
  If the parsing adjustment rule is not enabled, the first digit of the string is interpreted as the hour of the 12-hour clock, and the remainder of the string except for the AM/PM designator is ignored. The date and time returned by the parsing method consists of the current date and the hour of the day extracted from the date string.  
   
@@ -77,5 +77,5 @@ Determines whether date and time parsing methods use an adjusted set of rules to
   
 ## See also
 
-- [\<runtime> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)
-- [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)
+- [\<runtime> Element](runtime-element.md)
+- [\<configuration> Element](../configuration-element.md)

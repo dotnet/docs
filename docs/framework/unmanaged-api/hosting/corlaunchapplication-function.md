@@ -25,7 +25,7 @@ Starts the application at the specified network path, using the specified manife
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorLaunchApplication (  
     [in]  HOST_TYPE                dwClickOnceHost,  
     [in]  LPCWSTR                  pwzAppFullName,  

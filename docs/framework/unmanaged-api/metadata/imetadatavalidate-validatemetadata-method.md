@@ -23,7 +23,7 @@ Validates the metadata signatures of the objects in the current metadata scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ValidateMetaData ();  
 ```  
   

@@ -23,7 +23,7 @@ Gets the kind of address of this variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddressKind(  
     [out, retval] ULONG32* pRetVal);  
 ```  

@@ -47,4 +47,4 @@ Some library code needs to call into unmanaged code (for example, native code AP
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

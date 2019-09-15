@@ -23,7 +23,7 @@ Creates a handle of the specified type for the heap value represented by this IC
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateHandle (  
     [in] CorDebugHandleType      type,   
     [out] ICorDebugHandleValue   **ppHandle  

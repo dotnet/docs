@@ -10,7 +10,7 @@ Writes memory into the target process address space.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WriteVirtual(  
    [in] CORDB_ADDRESS address,  
    [in, size_is(bytesRequested)] const BYTE * pBuffer,  

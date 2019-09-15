@@ -23,7 +23,7 @@ Checks whether the `this` internal frame is closer to the leaf than the specifie
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,  
                        [out] BOOL * pIsCloser);  
 ```  

@@ -18,7 +18,7 @@ When you compile an application, you can specify that it should run on a Windows
  Visual Studio installs the 32-bit version of the CLR on an x86 computer, and both the 32-bit version and the appropriate 64-bit version of the CLR on a 64-bit Windows computer. (Because Visual Studio is a 32-bit application, when it is installed on a 64-bit system, it runs under WOW64.)  
   
 > [!NOTE]
->  Because of the design of x86 emulation and the WOW64 subsystem for the Itanium processor family, applications are restricted to execution on one processor. These factors reduce the performance and scalability of 32-bit .NET Framework applications that run on Itanium-based systems. We recommend that you use the .NET Framework 4, which includes native 64-bit support for Itanium-based systems, for increased performance and scalability.  
+> Because of the design of x86 emulation and the WOW64 subsystem for the Itanium processor family, applications are restricted to execution on one processor. These factors reduce the performance and scalability of 32-bit .NET Framework applications that run on Itanium-based systems. We recommend that you use the .NET Framework 4, which includes native 64-bit support for Itanium-based systems, for increased performance and scalability.  
   
  By default, when you run a 64-bit managed application on a 64-bit Windows operating system, you can create an object of no more than 2 gigabytes (GB). However, in the .NET Framework 4.5, you can increase this limit.  For more information, see the [\<gcAllowVeryLargeObjects> element](../../docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md).  
   
@@ -39,7 +39,7 @@ When you compile an application, you can specify that it should run on a Windows
   
 - For more information about the 64-bit version of the CLR on a 64-bit Windows computer, see the [.NET Framework Developer Center](https://go.microsoft.com/fwlink/?LinkId=37079) on the MSDN website.  
   
-- In the [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)] documentation, see [Programming Guide for 64-bit Windows](https://go.microsoft.com/fwlink/p/?LinkId=253512).  
+- In the Windows SDK documentation, see [Programming Guide for 64-bit Windows](https://go.microsoft.com/fwlink/p/?LinkId=253512).  
   
 - For information about how to download a 64-bit version of the CLR, see [.NET Framework Developer Center Downloads](https://go.microsoft.com/fwlink/?LinkId=50953) on the MSDN website.  
   
@@ -50,8 +50,8 @@ When you compile an application, you can specify that it should run on a Windows
   
 |Compiler|Compiler option|  
 |--------------|---------------------|  
-|Visual Basic|[/platform (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/platform.md)|  
-|Visual C#|[/platform (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/platform-compiler-option.md)|  
+|Visual Basic|[/platform (Visual Basic)](../visual-basic/reference/command-line-compiler/platform.md)|  
+|Visual C#|[/platform (C# Compiler Options)](../csharp/language-reference/compiler-options/platform-compiler-option.md)|  
 |Visual C++|You can create platform-agnostic, Microsoft intermediate language (MSIL) applications by using **/clr:safe**. For more information, see [/clr (Common Language Runtime Compilation)](/cpp/build/reference/clr-common-language-runtime-compilation).<br /><br /> Visual C++ includes a separate compiler for each 64-bit operating system. For more information about how to use Visual C++ to create native applications that run on a 64-bit Windows operating system, see [64-bit Programming](/cpp/build/configuring-programs-for-64-bit-visual-cpp).|  
   
 ## Determining the Status of an .exe File or .dll File  

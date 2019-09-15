@@ -16,7 +16,7 @@ Arguments provided to an executable on the command-line are accessible through a
 |**executable.exe "one two" three**|"one two"<br /><br /> "three"|  
   
 > [!NOTE]
->  When you are running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
+> When you are running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
   
 ## Example  
  This example displays the command line arguments passed to a command-line application. The output shown is for the first entry in the table above.  
@@ -25,7 +25,7 @@ Arguments provided to an executable on the command-line are accessible through a
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
-- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)
-- [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)
+- [C# Programming Guide](../index.md)
+- [Command-line Building With csc.exe](../../language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [Main() and Command-Line Arguments](./index.md)
+- [Main() Return Values](./main-return-values.md)

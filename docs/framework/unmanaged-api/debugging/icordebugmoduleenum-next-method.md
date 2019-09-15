@@ -23,7 +23,7 @@ Gets the number of "ICorDebugModule" instances specified by `celt` from the enum
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in]  ULONG celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  

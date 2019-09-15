@@ -23,7 +23,7 @@ Gets the set of properties for the assembly reference with the specified metadat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyRefProps (  
     [in]  mdAssemblyRef        mdar,   
     [out] const void          **ppbPublicKeyOrToken,   

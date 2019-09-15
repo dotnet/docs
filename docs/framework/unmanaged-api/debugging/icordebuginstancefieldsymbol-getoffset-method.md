@@ -10,7 +10,7 @@ Gets the offset in bytes of this instance field in its parent class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetOffset(  
    [out] ULONG32 *pcbOffset  
 );  
@@ -23,7 +23,7 @@ HRESULT GetOffset(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

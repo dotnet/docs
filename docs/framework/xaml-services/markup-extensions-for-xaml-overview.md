@@ -16,7 +16,7 @@ Markup extensions are a XAML technique for obtaining a value that is neither a p
  Several markup extensions are implemented by .NET Framework XAML Services for XAML language support. These markup extensions correspond to parts of the specification of XAML as a language. These are typically identifiable by the `x:` prefix in the syntax as seen in common usage. The .NET Framework XAML Services implementations for these XAML language elements all derive from the  <xref:System.Windows.Markup.MarkupExtension> base class .  
   
 > [!NOTE]
->  The `x:` prefix is used for the typical XAML namespace mapping of the XAML language namespace, in the root element of a XAML production. For example, the Visual Studio project and page templates for various specific frameworks initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML language XAML namespace, as opposed to a specific framework's default XAML namespace or other arbitrary CLR or XML namespaces.  
+> The `x:` prefix is used for the typical XAML namespace mapping of the XAML language namespace, in the root element of a XAML production. For example, the Visual Studio project and page templates for various specific frameworks initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML language XAML namespace, as opposed to a specific framework's default XAML namespace or other arbitrary CLR or XML namespaces.  
   
 ### x:Type  
  `x:Type` supplies the <xref:System.Type> object for the named type. This functionality is used most frequently in deferral mechanisms that use underlying CLR type and type derivation as a grouping moniker or identifier. WPF styles and templates, and their usage of `TargetType` properties, are a specific example. For more information, see [x:Type Markup Extension](x-type-markup-extension.md).  
@@ -57,9 +57,9 @@ Markup extensions are a XAML technique for obtaining a value that is neither a p
  From the markup usage perspective, including the `Extension` suffix as part of the usage is valid. However, this behaves as if `Extension` is truly part of the class name, and XAML object writers would fail to resolve a markup extension support class for that usage if the support class did not have the `Extension` suffix.  
   
 ### The Default Constructor  
- For all markup extension support types, you should expose a public default constructor. A default constructor is required for any case where a XAML object writer instantiates the markup extension from an object element usage. Supporting object element usage is a fair expectation for a markup extension, particularly for serialization. However, you can implement a markup extension without a public constructor if you only intend to support attribute usages of the markup extension.  
+ For all markup extension support types, you should expose a public parameterless constructor. A parameterless constructor is required for any case where a XAML object writer instantiates the markup extension from an object element usage. Supporting object element usage is a fair expectation for a markup extension, particularly for serialization. However, you can implement a markup extension without a public constructor if you only intend to support attribute usages of the markup extension.  
   
- If your markup extension usage has no arguments, the default constructor is required to support usage.  
+ If your markup extension usage has no arguments, the parameterless constructor is required to support usage.  
   
 <a name="constructor_patterns_and_positional_arguments_for_a_custom_markup_extension"></a>   
 ## Constructor Patterns and Positional Arguments for a Custom Markup Extension  
@@ -75,7 +75,7 @@ public Collate(CollationMode collationMode) {...}
   
  The processing works conceptually as if the markup extension is an object to be created, and then its member values are set. Each specified property to set is evaluated similar to how a specified member can be set on a created object when XAML is parsed. There are two important differences:  
   
-- As noted previously, a markup extension support type does not need to have a default constructor in order to be instantiated in XAML. Its object construction is deferred until its possible arguments in the text syntax are tokenized and evaluated as either positional or named arguments, and the appropriate constructor is called at that time.  
+- As noted previously, a markup extension support type does not need to have a parameterless constructor in order to be instantiated in XAML. Its object construction is deferred until its possible arguments in the text syntax are tokenized and evaluated as either positional or named arguments, and the appropriate constructor is called at that time.  
   
 - Markup extensions usages can be nested. The innermost markup extension is evaluated first. Therefore, you can assume such a usage and declare one of the construction parameters to be a type that requires a value converter (such as a markup extension) to produce.  
   
@@ -110,7 +110,7 @@ public Collate(CollationMode collationMode, object collateThis) {...}
 ## Property Element Usage of a Markup Extension  
  The scenarios for markup extension usages are often designed around using the markup extension in attribute usage. However, it is also potentially possible to define the backing class to support property element usage.  
   
- To support property element usage of your markup extension, define a public default constructor. This should be an instance constructor not a static constructor. This is required because a XAML processor must generally invoke the default constructor on any object element it processes from markup, and this includes markup extension classes as object elements. For advanced scenarios, you can define non-default construction paths for classes. (For more information, see [x:FactoryMethod Directive](x-factorymethod-directive.md).) However, you should not use these patterns for markup extension purposes because this makes discovery of the usage pattern much more difficult, both for designers and for users of raw markup.  
+ To support property element usage of your markup extension, define a public parameterless constructor. This should be an instance constructor not a static constructor. This is required because a XAML processor must generally invoke the parameterless constructor on any object element it processes from markup, and this includes markup extension classes as object elements. For advanced scenarios, you can define non-default construction paths for classes. (For more information, see [x:FactoryMethod Directive](x-factorymethod-directive.md).) However, you should not use these patterns for markup extension purposes because this makes discovery of the usage pattern much more difficult, both for designers and for users of raw markup.  
   
 <a name="attributing_for_a_custom_markup_extension"></a>   
 ## Attributing for a Custom Markup Extension  

@@ -16,7 +16,7 @@ The .NET Framework 4 introduces the <xref:System.Collections.Concurrent?displayP
   
  The collection classes introduced in the .NET Framework 2.0 are found in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. These include <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.Dictionary%602>, and so on. These classes provide improved type safety and performance compared to the .NET Framework 1.0 classes. However, the .NET Framework 2.0 collection classes do not provide any thread synchronization; user code must provide all synchronization when items are added or removed on multiple threads concurrently.  
   
- We recommend the concurrent collections classes in the .NET Framework 4 because they provide not only the type safety of the .NET Framework 2.0 collection classes, but also more efficient and more complete thread safety than the [!INCLUDE[net_v10_short](../../../../includes/net-v10-short-md.md)] collections provide.  
+ We recommend the concurrent collections classes in the .NET Framework 4 because they provide not only the type safety of the .NET Framework 2.0 collection classes, but also more efficient and more complete thread safety than the .NET Framework 1.0 collections provide.  
   
 ## Fine-Grained Locking and Lock-Free Mechanisms  
  Some of the concurrent collection types use lightweight synchronization mechanisms such as <xref:System.Threading.SpinLock>, <xref:System.Threading.SpinWait>, <xref:System.Threading.SemaphoreSlim>, and <xref:System.Threading.CountdownEvent>, which are new in the .NET Framework 4. These synchronization types typically use *busy spinning* for brief periods before they put the thread into a true Wait state. When wait times are expected to be very short, spinning is far less computationally expensive than waiting, which involves an expensive kernel transition. For collection classes that use spinning, this efficiency means that multiple threads can add and remove items at a very high rate. For more information about spinning vs. blocking, see [SpinLock](../../../../docs/standard/threading/spinlock.md) and [SpinWait](../../../../docs/standard/threading/spinwait.md).  
@@ -24,7 +24,7 @@ The .NET Framework 4 introduces the <xref:System.Collections.Concurrent?displayP
  The <xref:System.Collections.Concurrent.ConcurrentQueue%601> and <xref:System.Collections.Concurrent.ConcurrentStack%601> classes do not use locks at all. Instead, they rely on <xref:System.Threading.Interlocked> operations to achieve thread-safety.  
   
 > [!NOTE]
->  Because the concurrent collections classes support <xref:System.Collections.ICollection>, they provide implementations for the <xref:System.Collections.ICollection.IsSynchronized%2A> and <xref:System.Collections.ICollection.SyncRoot%2A> properties, even though these properties are irrelevant. `IsSynchronized` always returns `false` and `SyncRoot` is always `null` (`Nothing` in Visual Basic).  
+> Because the concurrent collections classes support <xref:System.Collections.ICollection>, they provide implementations for the <xref:System.Collections.ICollection.IsSynchronized%2A> and <xref:System.Collections.ICollection.SyncRoot%2A> properties, even though these properties are irrelevant. `IsSynchronized` always returns `false` and `SyncRoot` is always `null` (`Nothing` in Visual Basic).  
   
  The following table lists the collection types in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace.  
   

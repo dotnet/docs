@@ -18,7 +18,7 @@ The amount of time that is required for a WPF application to start can vary grea
  Warm startup occurs when most of the pages for the main common language runtime (CLR) components are already loaded in memory, which saves expensive disk access time. That is why a managed application starts faster when it runs a second time.  
   
 ## Implement a Splash Screen  
- In cases where there is a significant, unavoidable delay between starting an application and displaying the first UI, optimize the perceived startup time by using a *splash screen*. This approach displays an image almost immediately after the user starts the application. When the application is ready to display its first UI, the splash screen fades. Starting in the [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)], you can use the <xref:System.Windows.SplashScreen> class to implement a splash screen. For more information, see [Add a Splash Screen to a WPF Application](../app-development/how-to-add-a-splash-screen-to-a-wpf-application.md).  
+ In cases where there is a significant, unavoidable delay between starting an application and displaying the first UI, optimize the perceived startup time by using a *splash screen*. This approach displays an image almost immediately after the user starts the application. When the application is ready to display its first UI, the splash screen fades. Starting in the .NET Framework 3.5 SP1, you can use the <xref:System.Windows.SplashScreen> class to implement a splash screen. For more information, see [Add a Splash Screen to a WPF Application](../app-development/how-to-add-a-splash-screen-to-a-wpf-application.md).  
   
  You can also implement your own splash screen by using native Win32 graphics. Display your implementation before the <xref:System.Windows.Application.Run%2A> method is called.  
   
@@ -59,7 +59,7 @@ The amount of time that is required for a WPF application to start can vary grea
  Having both Ngen and JIT modules can have the worst effect. This is because mscorjit.dll must be loaded, and when the JIT compiler works on your code, many pages in the Ngen images must be accessed when the JIT compiler reads the assemblies' metadata.  
   
 ### Ngen and ClickOnce  
- The way you plan to deploy your application can also make a difference in load time. [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] application deployment does not support Ngen. If you decide to use Ngen.exe for your application, you will have to use another deployment mechanism, such as Windows Installer.  
+ The way you plan to deploy your application can also make a difference in load time. ClickOnce application deployment does not support Ngen. If you decide to use Ngen.exe for your application, you will have to use another deployment mechanism, such as Windows Installer.  
   
  For more information, see [Ngen.exe (Native Image Generator)](../../tools/ngen-exe-native-image-generator.md).  
   
@@ -106,9 +106,9 @@ The amount of time that is required for a WPF application to start can vary grea
  If you must use the <xref:System.Xml.Serialization.XmlSerializer> class, you can achieve better performance if you pre-generate the serialization assembly.  
   
 ## Configure ClickOnce to Check for Updates After Startup  
- If your application uses [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], avoid network access on startup by configuring [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] to check the deployment site for updates after the application starts.  
+ If your application uses ClickOnce, avoid network access on startup by configuring ClickOnce to check the deployment site for updates after the application starts.  
   
- If you use the XAML browser application (XBAP) model, keep in mind that [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] checks the deployment site for updates even if the XBAP is already in the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] cache. For more information, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  
+ If you use the XAML browser application (XBAP) model, keep in mind that ClickOnce checks the deployment site for updates even if the XBAP is already in the ClickOnce cache. For more information, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  
   
 ## Configure the PresentationFontCache Service to Start Automatically  
  The first WPF application to run after a reboot is the PresentationFontCache service. The service caches the system fonts, improves font access, and improves overall performance. There is an overhead in starting the service, and in some controlled environments, consider configuring the service to start automatically when the system reboots.  

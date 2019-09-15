@@ -23,7 +23,7 @@ Gets the module that corresponds to the given metadata interface.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleFromMetaDataInterface (  
     [in] IUnknown           *pIMetaData,  
     [out] ICorDebugModule  **ppModule  

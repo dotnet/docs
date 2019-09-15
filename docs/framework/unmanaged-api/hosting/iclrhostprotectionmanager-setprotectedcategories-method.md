@@ -23,7 +23,7 @@ Specifies which categories of managed types and members should be blocked from r
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetProtectedCategories (  
     [in] EApiCategories  categories  
 );  

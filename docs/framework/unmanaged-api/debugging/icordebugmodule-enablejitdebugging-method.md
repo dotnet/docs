@@ -23,7 +23,7 @@ Controls whether the just-in-time (JIT) compiler preserves debugging information
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableJITDebugging(  
     [in] BOOL bTrackJITInfo,  
     [in] BOOL bAllowJitOpts  

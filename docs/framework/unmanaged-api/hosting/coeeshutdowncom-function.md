@@ -26,7 +26,7 @@ Forces the common language runtime (CLR) to release all interface pointers it ho
   
 ## Syntax  
   
-```  
+```cpp  
 void CoEEShutDownCOM ();  
 ```  
   
@@ -34,7 +34,7 @@ void CoEEShutDownCOM ();
  The `CoEEShutDownCOM` function first releases all the RCWs in all contexts and in all caches, and then removes any tear-down notification existing in setup. No DLL unloading occurs.  
   
 > [!CAUTION]
->  This function affects all runtimes that are loaded into the process.  
+> This function affects all runtimes that are loaded into the process.  
   
  Beginning with the .NET Framework 4, call the entry point for this function on the specific runtime you want to affect. To get the entry point, call the [ICLRRuntimeInfo::GetProcAddress](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-getprocaddress-method.md) method and specify "CoEEShutDownCOM".  
   

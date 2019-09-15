@@ -20,7 +20,7 @@ At the command prompt, type the following:
 
 ## Syntax
 
-```
+```console
 regasm assemblyFile [options]
 ```
 
@@ -32,7 +32,7 @@ regasm assemblyFile [options]
 
 |Option|Description|
 |------------|-----------------|
-|**/codebase**|Creates a Codebase entry in the registry. The Codebase entry specifies the file path for an assembly that is not installed in the global assembly cache. You should not specify this option if you will subsequently install the assembly that you are registering into the global assembly cache. The *assemblyFile* argument that you specify with the **/codebase** option must be a [strong-named assembly](../../../docs/framework/app-domains/strong-named-assemblies.md).|
+|**/codebase**|Creates a Codebase entry in the registry. The Codebase entry specifies the file path for an assembly that is not installed in the global assembly cache. You should not specify this option if you will subsequently install the assembly that you are registering into the global assembly cache. The *assemblyFile* argument that you specify with the **/codebase** option must be a [strong-named assembly](../../standard/assembly/strong-named.md).|
 |**/registered**|Specifies that this tool will only refer to type libraries that have already been registered.|
 |**/asmpath:directory**|Specifies a directory containing assembly references. Must be used with the **/regfile** option.|
 |**/nologo**|Suppresses the Microsoft startup banner display.|
@@ -62,19 +62,19 @@ After registering an assembly using Regasm.exe, you can install it in the [globa
 
 The following command registers all public classes contained in `myTest.dll`.
 
-```
+```console
 regasm myTest.dll
 ```
 
 The following command generates the file `myTest.reg`, which contains all the necessary registry entries. This command does not update the registry.
 
-```
+```console
 regasm myTest.dll /regfile:myTest.reg
 ```
 
 The following command registers all public classes contained in `myTest.dll`, and generates and registers the type library `myTest.tlb`, which contains definitions of all the public types defined in `myTest.dll`.
 
-```
+```console
 regasm myTest.dll /tlb:myTest.tlb
 ```
 

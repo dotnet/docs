@@ -23,7 +23,7 @@ Notifies the debugger that an exception has been thrown from managed code.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Exception (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *pThread,  

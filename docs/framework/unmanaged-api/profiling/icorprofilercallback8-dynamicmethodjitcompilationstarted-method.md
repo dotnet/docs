@@ -18,7 +18,7 @@ Notifies the profiler whenever JIT compilation of a dynamic method has started.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DynamicMethodJITCompilationStarted(  
      [in]  FunctionID  functionId,   
      [in]  BOOL        fIsSafeToBlock,   

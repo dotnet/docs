@@ -23,7 +23,7 @@ Gets a pointer to the binary large object (BLOB) at the specified column index.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBlob (  
     [in]  ULONG          ixBlob,  
     [out] ULONG          *pcbData,  

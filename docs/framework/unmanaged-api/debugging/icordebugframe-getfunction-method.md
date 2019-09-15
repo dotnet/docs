@@ -23,7 +23,7 @@ Gets the function that contains the code associated with this stack frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunction (  
     [out] ICorDebugFunction  **ppFunction  
 );  

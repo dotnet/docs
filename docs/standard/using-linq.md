@@ -4,6 +4,9 @@ description: Learn how LINQ provides language-level querying capabilities and an
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.technology: dotnet-standard
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
 ---
@@ -21,11 +24,22 @@ var linqExperts = from p in programmers
                   select new LINQExpert(p);
 ```
 
+```vb
+Dim linqExperts = From p in programmers
+                  Where p.IsNewToLINQ
+                  Select New LINQExpert(p)
+```
+
 Same example using the `IEnumerable<T>` API:
 
 ```csharp
 var linqExperts = programmers.Where(p => p.IsNewToLINQ)
                              .Select(p => new LINQExpert(p));
+```
+
+```vb
+Dim linqExperts = programmers.Where(Function(p) p.IsNewToLINQ).
+                             Select(Function(p) New LINQExpert(p))
 ```
 
 ## LINQ is Expressive
@@ -43,12 +57,24 @@ foreach (var pet in pets)
 }
 ```
 
+```vb
+Dim petLookup = New Dictionary(Of Integer, Pet)()
+
+For Each pet in pets
+    petLookup.Add(pet.RFID, pet)
+Next
+```
+
 The intention behind the code is not to create a new `Dictionary<int, Pet>` and add to it via a loop, it is to convert an existing list into a dictionary! LINQ preserves the intention whereas the imperative code does not.
 
 Equivalent LINQ expression:
 
 ```csharp
 var petLookup = pets.ToDictionary(pet => pet.RFID);
+```
+
+```vb
+Dim petLookup = pets.ToDictionary(Function(pet) pet.RFID)
 ```
 
 The code using LINQ is valuable because it evens the playing field between intent and code when reasoning as a programmer. Another bonus is code brevity. Imagine reducing large portions of a codebase by 1/3 as done above. Pretty sweet deal, right?
@@ -69,6 +95,16 @@ public static IEnumerable<XElement> FindAllElementsWithAttribute(XElement docume
 }
 ```
 
+```vb
+Public Shared Function FindAllElementsWithAttribute(documentRoot As XElement, elementName As String,
+                                           attributeName As String, value As String) As IEnumerable(Of XElement)
+    Return From el In documentRoot.Elements(elementName)
+           Where el.Element(attributeName).ToString() = value
+           Select el
+End Function
+
+```
+
 Writing code to manually traverse the XML document to perform this task would be far more challenging.
 
 Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../docs/framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
@@ -81,12 +117,22 @@ This is a question which often comes up. After all, this,
 var filteredItems = myItems.Where(item => item.Foo);
 ```
 
+```vb
+Dim filteredItems = myItems.Where(Function(item) item.Foo)
+```
+
 is a lot more concise than this:
 
 ```csharp
 var filteredItems = from item in myItems
                     where item.Foo
                     select item;
+```
+
+```vb
+Dim filteredItems = From item In myItems
+                    Where item.Foo
+                    Select item
 ```
 
 Isn’t the API syntax just a more concise way to do the query syntax?
@@ -116,24 +162,45 @@ The following is a quick demonstration of some of the essential pieces of LINQ. 
 * The bread and butter - `Where`, `Select`, and `Aggregate`:
 
 ```csharp
-// Filtering a list
+// Filtering a list.
 var germanShepards = dogs.Where(dog => dog.Breed == DogBreed.GermanShepard);
 
-// Using the query syntax
+// Using the query syntax.
 var queryGermanShepards = from dog in dogs
                           where dog.Breed == DogBreed.GermanShepard
                           select dog;
 
-// Mapping a list from type A to type B
+// Mapping a list from type A to type B.
 var cats = dogs.Select(dog => dog.TurnIntoACat());
 
-// Using the query syntax
+// Using the query syntax.
 var queryCats = from dog in dogs
                 select dog.TurnIntoACat();
 
-// Summing the lengths of a set of strings
+// Summing the lengths of a set of strings.
 int seed = 0;
 int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
+```
+
+```vb
+' Filtering a list.
+Dim germanShepards = dogs.Where(Function(dog) dog.Breed = DogBreed.GermanShepard)
+
+' Using the query syntax.
+Dim queryGermanShepards = From dog In dogs
+                          Where dog.Breed = DogBreed.GermanShepard
+                          Select dog
+
+' Mapping a list from type A to type B.
+Dim cats = dogs.Select(Function(dog) dog.TurnIntoACat())
+
+' Using the query syntax.
+Dim queryCats = From dog In dogs
+                Select dog.TurnIntoACat()
+
+' Summing the lengths of a set of strings.
+Dim seed As Integer = 0
+Dim sumOfStrings As Integer = strings.Aggregate(seed, Function(s1, s2) s1.Length + s2.Length)
 ```
 
 * Flattening a list of lists:
@@ -141,6 +208,11 @@ int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
 ```csharp
 // Transforms the list of kennels into a list of all their dogs.
 var allDogsFromKennels = kennels.SelectMany(kennel => kennel.Dogs);
+```
+
+```vb
+' Transforms the list of kennels into a list of all their dogs.
+Dim allDogsFromKennels = kennels.SelectMany(Function(kennel) kennel.Dogs)
 ```
 
 * Union between two sets (with custom comparator):
@@ -167,15 +239,41 @@ public class DogHairLengthComparer : IEqualityComparer<Dog>
 
     public int GetHashCode(Dog d)
     {
-        // default hashcode is enough here, as these are simple objects.
+        // Default hashcode is enough here, as these are simple objects.
         return d.GetHashCode();
     }
 }
 
 ...
 
-// Gets all the short-haired dogs between two different kennels
+// Gets all the short-haired dogs between two different kennels.
 var allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, new DogHairLengthComparer());
+```
+
+```vb
+Public Class DogHairLengthComparer 
+  Inherits IEqualityComparer(Of Dog)
+
+  Public Function Equals(a As Dog,b As Dog) As Boolean
+      If a Is Nothing AndAlso b Is Nothing Then
+          Return True
+      ElseIf (a Is Nothing AndAlso b IsNot Nothing) OrElse (a IsNot Nothing AndAlso b Is Nothing) Then
+          Return False
+      Else
+          Return a.HairLengthType = b.HairLengthType
+      End If
+  End Function
+
+  Public Function GetHashCode(d As Dog) As Integer
+      ' Default hashcode is enough here, as these are simple objects.
+      Return d.GetHashCode()
+  End Function
+End Class
+
+...
+
+' Gets all the short-haired dogs between two different kennels.
+Dim allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, New DogHairLengthComparer())
 ```
 
 * Intersection between two sets:
@@ -186,6 +284,12 @@ var volunteers = humaneSociety1.Volunteers.Intersect(humaneSociety2.Volunteers,
                                                      new VolunteerTimeComparer());
 ```
 
+```vb
+' Gets the volunteers who spend share time with two humane societies.
+Dim volunteers = humaneSociety1.Volunteers.Intersect(humaneSociety2.Volunteers,
+                                                     New VolunteerTimeComparer())
+```
+
 * Ordering:
 
 ```csharp
@@ -193,6 +297,13 @@ var volunteers = humaneSociety1.Volunteers.Intersect(humaneSociety2.Volunteers,
 var results = DirectionsProcessor.GetDirections(start, end)
               .OrderBy(direction => direction.HasNoTolls)
               .ThenBy(direction => direction.EstimatedTime);
+```
+
+```vb
+' Get driving directions, ordering by if it's toll-free before estimated driving time.
+Dim results = DirectionsProcessor.GetDirections(start, end).
+                OrderBy(Function(direction) direction.HasNoTolls).
+                ThenBy(Function(direction) direction.EstimatedTime)
 ```
 
 * Finally, a more advanced sample: determining if the values of the properties of two instances of the same type are equal (Borrowed and modified from [this StackOverflow post](https://stackoverflow.com/a/844855)):
@@ -216,6 +327,23 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
 }
 ```
 
+```vb
+<System.Runtime.CompilerServices.Extension()> 
+Public Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [to] As T, ParamArray ignore As String()) As Boolean
+    If self Is Nothing OrElse [to] Is Nothing Then
+        Return self Is [to]
+    End If
+
+    ' Selects the properties which have unequal values into a sequence of those properties.
+    Dim unequalProperties = From [property] In GetType(T).GetProperties(BindingFlags.Public Or BindingFlags.Instance) 
+                            Where Not ignore.Contains([property].Name)
+                            Let selfValue = [property].GetValue(self, Nothing)
+                            Let toValue = [property].GetValue([to], Nothing)
+                            Where Not Equals(selfValue, toValue) Select [property]
+    Return Not unequalProperties.Any()
+End Function
+```
+
 ## PLINQ
 
 PLINQ, or Parallel LINQ, is a parallel execution engine for LINQ expressions. In other words, a regular LINQ expression can be trivially parallelized across any number of threads. This is accomplished via a call to `AsParallel()` preceding the expression.
@@ -233,6 +361,20 @@ public static string GetAllFacebookUserLikesMessage(IEnumerable<FacebookUser> fa
 
     return facebookUsers.AsParallel()
                         .Aggregate(seed, threadAccumulator, threadResultAccumulator, resultSelector);
+}
+```
+
+```vb
+Public Shared GetAllFacebookUserLikesMessage(facebookUsers As IEnumerable(Of FacebookUser)) As String
+{
+    Dim seed As UInt64 = 0
+
+    Dim threadAccumulator As Func(Of UInt64, UInt64, UInt64) = Function(t1, t2) t1 + t2
+    Dim threadResultAccumulator As Func(Of UInt64, UInt64, UInt64) = Function(t1, t2) t1 + t2
+    Dim resultSelector As Func(Of Uint64, string) = Function(total) $"Facebook has {total} likes!"
+
+    Return facebookUsers.AsParallel().
+                        Aggregate(seed, threadAccumulator, threadResultAccumulator, resultSelector)
 }
 ```
 

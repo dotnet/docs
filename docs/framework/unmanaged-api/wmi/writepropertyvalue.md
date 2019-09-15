@@ -24,7 +24,7 @@ Writes a specified number of bytes to a property identified by a property handle
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WritePropertyValue (
    [in] int                  vFunc, 
    [in] IWbemObjectAccess*   ptr, 
@@ -70,7 +70,7 @@ Use this function to set string and all other non-`DWORD` or non-`QWORD` data.
 For nonstring property values, `lNumBytes` must be the correct data size of the property type specified. For string property values, `lNumBytes` must be the length of the specified string in bytes, and the string itself must be of an even length in bytes and be followed with a null-termination character.
 
 ## Requirements  
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

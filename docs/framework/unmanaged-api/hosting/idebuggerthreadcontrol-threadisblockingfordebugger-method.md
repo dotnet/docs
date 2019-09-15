@@ -23,7 +23,7 @@ Notifies the host that the thread that is sending this callback is about to bloc
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadIsBlockingForDebugger ( );  
 ```  
   

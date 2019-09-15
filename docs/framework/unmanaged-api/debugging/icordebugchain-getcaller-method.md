@@ -23,7 +23,7 @@ Gets the chain that called this chain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCaller (  
     [out] ICorDebugChain      **ppChain  
 );  

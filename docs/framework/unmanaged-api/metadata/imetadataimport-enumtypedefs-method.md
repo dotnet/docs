@@ -23,7 +23,7 @@ Enumerates TypeDef tokens representing all types within the current scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumTypeDefs (  
    [out] HCORENUM   *phEnum,   
    [in]  mdTypeDef  rTypeDefs[],  

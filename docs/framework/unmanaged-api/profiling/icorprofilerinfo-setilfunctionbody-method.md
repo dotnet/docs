@@ -23,7 +23,7 @@ Replaces the body of the specified function in the specified module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetILFunctionBody(  
     [in] ModuleID    moduleId,  
     [in] mdMethodDef methodid,  

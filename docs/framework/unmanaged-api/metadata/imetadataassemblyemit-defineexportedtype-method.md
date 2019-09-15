@@ -23,7 +23,7 @@ Creates an `ExportedType` structure containing metadata for the specified export
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineExportedType (  
     [in]  LPCWSTR             szName,  
     [in]  mdToken             tkImplementation,   

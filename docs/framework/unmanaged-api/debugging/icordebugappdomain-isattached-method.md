@@ -23,7 +23,7 @@ Gets a value that indicates whether the debugger is attached to the application 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsAttached (  
     [out] BOOL  *pbAttached  
 );  

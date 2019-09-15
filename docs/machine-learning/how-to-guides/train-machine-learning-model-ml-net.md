@@ -1,22 +1,22 @@
 ---
 title: Train and evaluate a model
-description: Learn how to train and evaluate machine learning models in ML.NET
-ms.date: 05/03/2019
+description: Learn how to build machine learning models, collect metrics, and measure performance with ML.NET. A machine learning model identifies patterns within training data to make predictions using new data.
+ms.date: 08/29/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.custom: mvc, how-to
+ms.custom: mvc, how-to, title-hack-0625
 #Customer intent: As a developer I want to know how to train and evaluate a machine learning model with ML.NET
 ---
 
 # Train and evaluate a model
 
-Learn how to build machine learning models, extract learned parameters and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout a majority of the other algorithms.
+Learn how to build machine learning models, collect metrics, and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout a majority of the other algorithms.
 
 ## Split data for training and testing
 
 The goal of a machine learning model is to identify patterns within training data. These patterns are used to make predictions using new data.
 
-Given the following data model:
+The data can be modeled by a class like `HousingData`.
 
 ```csharp
 public class HousingData
@@ -34,7 +34,7 @@ public class HousingData
 }
 ```
 
-Load the data into an [`IDataView`](xref:Microsoft.ML.IDataView):
+Given the following data which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ```csharp
 HousingData[] housingData = new HousingData[]
@@ -111,7 +111,7 @@ IEstimator<ITransformer> dataPrepEstimator =
 // Create data prep transformer
 ITransformer dataPrepTransformer = dataPrepEstimator.Fit(trainData);
 
-// Apply tranforms to training data
+// Apply transforms to training data
 IDataView transformedTrainingData = dataPrepTransformer.Transform(trainData);
 ```
 
@@ -132,7 +132,7 @@ var UserDefinedColumnSdcaEstimator = mlContext.Regression.Trainers.Sdca(labelCol
 Once the data is pre-processed, use the [`Fit`](xref:Microsoft.ML.Trainers.TrainerEstimatorBase`2.Fit*) method to train the machine learning model with the [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) regression algorithm.
 
 ```csharp
-// Define StochasticDualCoodrinateAscent regression algorithm estimator
+// Define StochasticDualCoordinateAscent regression algorithm estimator
 var sdcaEstimator = mlContext.Regression.Trainers.Sdca();
 
 // Build machine learning model
@@ -155,7 +155,7 @@ var trainedModelParameters = trainedModel.Model as LinearRegressionModelParamete
 To help choose the best performing model, it is essential to evaluate its performance on test data. Use the [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate*) method, to measure various metrics for the trained model.
 
 > [!NOTE]
-> The `Evaluate` method produces different metrics depending on which machine learning task was was performed. For more details, visit the [`Microsoft.ML.Data` API Documentation](xref:Microsoft.ML.Data) and look for classes that contain `Metrics` in their name. 
+> The `Evaluate` method produces different metrics depending on which machine learning task was performed. For more details, visit the [`Microsoft.ML.Data` API Documentation](xref:Microsoft.ML.Data) and look for classes that contain `Metrics` in their name. 
 
 ```csharp
 // Measure trained model performance
@@ -171,6 +171,7 @@ double rSquared = trainedModelMetrics.RSquared;
 ```
 
 In the previous code sample:  
+
 1. Test data set is pre-processed using the data preparation transforms previously defined. 
 2. The trained machine learning model is used to make predictions on the test data.
 3. In the `Evaluate` method, the values in the `CurrentPrice` column of the test data set are compared against the `Score` column of the newly output predictions to calculate the metrics for the regression model, one of which, R-Squared is stored in the `rSquared` variable.

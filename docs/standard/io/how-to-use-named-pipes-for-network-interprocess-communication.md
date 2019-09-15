@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "multiple connections via named pipes"
   - "network communications [.NET Framework], named pipes"
   - "impersonation [.NET Framework], named pipes"
-  - "full duplex communcation [.NET Framework], named pipes"
+  - "full duplex communication [.NET Framework], named pipes"
 ms.assetid: 4e4d7e64-9f1b-4026-98f7-20488ac7b42b
 author: "mairaw"
 ms.author: "mairaw"

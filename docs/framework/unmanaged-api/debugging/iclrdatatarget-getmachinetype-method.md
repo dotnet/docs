@@ -23,7 +23,7 @@ Gets the identifier for the kind of instruction set that the target process is u
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMachineType (  
     [out] ULONG32     *machineType  
 );  

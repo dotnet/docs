@@ -1,7 +1,7 @@
 ---
 title: dotnet clean command
 description: The dotnet clean command cleans the current directory.
-ms.date: 04/14/2019
+ms.date: 06/26/2019
 ---
 # dotnet clean
 
@@ -17,8 +17,9 @@ ms.date: 04/14/2019
 
 ## Synopsis
 
-```
-dotnet clean [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--interactive] [-o|--output] [-r|--runtime] [-v|--verbosity]
+```console
+dotnet clean [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--interactive] 
+    [--nologo] [-o|--output] [-r|--runtime] [-v|--verbosity]
 dotnet clean [-h|--help]
 ```
 
@@ -49,6 +50,10 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 * **`--interactive`**
 
   Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+
+* **`--nologo`**
+
+  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
 
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 

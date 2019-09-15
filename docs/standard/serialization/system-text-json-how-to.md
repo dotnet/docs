@@ -707,7 +707,12 @@ using (var stream = new MemoryStream())
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class directly. The code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
 ```csharp
-Utf8JsonReader reader = new Utf8JsonReader(jsonUtf8, isFinalBlock: true, state: default);
+var options = new JsonReaderOptions
+{
+    AllowTrailingCommas = true,
+    CommentHandling = JsonCommentHandling.Skip
+};
+Utf8JsonReader reader = new Utf8JsonReader(jsonUtf8, options);
 
 while (reader.Read())
 {

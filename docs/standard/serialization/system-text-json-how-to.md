@@ -338,7 +338,7 @@ class UpperCaseNamingPolicy : JsonNamingPolicy
 }
 ```
 
-Set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> to an instance of your naming policy class:
+Then set the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> property to an instance of your naming policy class:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -377,7 +377,7 @@ The JSON property naming policy:
 
 ### Camel case dictionary keys
 
-If a property of an object to be serialized is of type `Dictionary<string,Tvalue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`:
+If a property of an object to be serialized is of type `Dictionary<string,TValue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -412,7 +412,7 @@ The camel case naming policy applies to serialization only.
 
 ## Exclude properties
 
-This section explains how to exclude:
+By default, all public properties are serialized. If you don't want some of them to appear in the JSON output, you have several options. This section explains how to exclude:
 
 * Individual properties
 * All read-only properties
@@ -420,7 +420,7 @@ This section explains how to exclude:
 
 ### Exclude individual properties
 
-Use the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute.
+To ignore individual properties, use the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute.
 
 Here's an example type to serialize and JSON output:
 
@@ -445,7 +445,7 @@ class WeatherForecast
 
 ### Exclude all read-only properties
 
-Set <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties> to true:
+To exclude all read-only properties, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> to `true`, as shown in the following example:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -479,7 +479,7 @@ This option applies only to serialization. During deserialization, read-only pro
 
 ### Exclude all null value properties
 
-Set <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> to true:
+To exclude all null value properties, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property to `true`, as shown in the following example:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -504,11 +504,11 @@ Here's an example object to serialize and JSON output:
 }
 ```
 
-This setting applies to serialization and deserialization. During deserialization, null values in the JSON are ignored only if they are valid. [Null values for non-nullable value types cause exceptions](https://github.com/dotnet/corefx/issues/40922).
+This setting applies to serialization and deserialization. During deserialization, null values in the JSON are ignored only if they are valid. Null values for non-nullable value types cause exceptions. For more information, see [GitHub issue 40922](https://github.com/dotnet/corefx/issues/40922).
 
 ## Case-insensitive property matching
 
-By default, deserialization looks for case-sensitive property name matches between JSON and the target object properties. To change that behavior, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> to true:
+By default, deserialization looks for case-sensitive property name matches between JSON and the target object properties. To change that behavior, set the <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive?displayProperty=nameWithType> to `true`:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -580,7 +580,7 @@ This behavior is intended to help prevent accidental exposure of data in a deriv
 
 To serialize the properties of the derived type, use one of the following approaches:
 
-* Call an overload of `Serialize` that lets you specify the type at runtime:
+* Call an overload of <xref:System.Text.Json.JsonSerializer.Serialize%2A> that lets you specify the type at runtime:
 
   ```csharp
   json = JsonSerializer.Serialize(weatherForecast, weatherForecast.GetType());

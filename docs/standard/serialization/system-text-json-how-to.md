@@ -28,13 +28,15 @@ Attributes from the <xref:System.Runtime.Serialization> namespace aren't current
 
 ## How to write .NET objects to JSON (serialize)
 
-To write JSON to a string, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method,.  The following example uses a generic type parameter:
+To write JSON to a string, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method. The following example uses an overload with a generic type parameter:
 
 ```csharp
+WeatherForecast weatherForecast;
+//...
 string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
 ```
 
-The following example uses generic type inference:
+You can omit the generic type parameter and use generic type inference instead:
 
 ```csharp
 WeatherForecast weatherForecast;
@@ -124,12 +126,12 @@ As an alternative, a <xref:System.Text.Json.JsonSerializer.Serialize%2A> overloa
 
 Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
 
-## Default serialization behavior
+## Serialization behavior
 
-* All public properties are serialized. You can [specify properties to exclude](#exclude-properties).
-* The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes  non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
-* JSON is minified. You can optionally [pretty-print the JSON](#serialize-to-formatted-json).
-* Casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
+* By default, all public properties are serialized. You can [specify properties to exclude](#exclude-properties).
+* The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
+* By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
+* By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
 * [Circular references](https://github.com/dotnet/corefx/issues/38579) are detected and exceptions thrown.
 * Fields are excluded.
 
@@ -146,7 +148,7 @@ Supported types include:
 
 ## How to read JSON into .NET objects (deserialize)
 
-To deserialize from a string, call [JsonSerializer.Deserialize](xref:System.Text.Json.JsonSerializer.Deserialize*):
+To deserialize from a string, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method, as shown in the following example:
 
 ```csharp
 string json = ... ;
@@ -160,36 +162,36 @@ Overloads of <xref:System.Text.Json.JsonSerializer.Deserialize*> let you deseria
 
 ### Deserialize from UTF-8
 
-Call a [JsonSerializer.Deserialize](xref:System.Text.Json.JsonSerializer.Deserialize*) overload that takes a `Utf8JsonReader` or a `ReadOnlySpan<byte>`:
+To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> overload that takes a `Utf8JsonReader` or a `ReadOnlySpan<byte>`, as shown in the following examples:
 
 ```csharp
-byte[] utf8Json = ... ;
-
+byte[] utf8Json;
+//...
 var readOnlySpan = new ReadOnlySpan<byte>(utf8Json);
 weatherForecast = JsonSerializer.Deserialize<WeatherForecastMin>(readOnlySpan);
 ```
 
 ```csharp
-byte[] utf8Json = ... ;
-
+byte[] utf8Json;
+//...
 var utf8Reader = new Utf8JsonReader(utf8Json);
 weatherForecast = JsonSerializer.Deserialize<WeatherForecastMin>(ref utf8Reader);
 ```
 
-## Default deserialization behavior
+## Deserialization behavior
 
-* Property name matching is case-sensitive. You can optionally specify [case-insensitivity](#case-insensitive-property-matching).
+* By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Deserialization to reference types without a parameterless constructor isn't supported.
-* Deserialization to [immutable objects](https://github.com/dotnet/corefx/issues/38569) or [read-only properties](https://github.com/dotnet/corefx/issues/38163) isn't supported.
-* Enums are supported as numbers.
+* Deserialization to immutable objects or read-only properties isn't supported. For more information, see GitHub issues [38569](https://github.com/dotnet/corefx/issues/38569) and [38163](https://github.com/dotnet/corefx/issues/38163).
+* By default, enums are supported as numbers.
 * Fields aren't supported.
-* Comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
+* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas) if needed.
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
 ## Serialize to formatted JSON
 
-Set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented> to true:
+To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true`:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -220,7 +222,7 @@ class WeatherForecast
 
 ## Allow comments and trailing commas
 
-Set <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling> to `JsonCommentHandling.Skip`, and set <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas> to true:
+By default comments and trailing commas are not allowed in JSON. To allow comments in the JSON, set the <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling?displayProperty=nameWithType> property to `JsonCommentHandling.Skip`. And to allow trailing commas, set the <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas?displayProperty=nameWithType> property to `true`. The following example shows how to allow both:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -243,14 +245,14 @@ Here's example JSON with comments and a trailing comma:
 
 ## Customize JSON names
 
-This section explains how to:
+By default, property names and dictionary keys are unchanged in the JSON output, including case. This section explains how to:
 
 * Customize individual property names
 * Convert all property names to camel case
 * Implement a custom property naming policy
 * Convert dictionary keys to camel case
 
-There's no support for automatically [converting enums to camel case](https://github.com/dotnet/corefx/issues/37725).
+Currently, there's no support for automatically converting enums to camel case. For more information, see [GitHub issue 37725](https://github.com/dotnet/corefx/issues/37725).
 
 ### Customize individual property names
 
@@ -285,7 +287,7 @@ The property name set by this attribute:
 
 ### Use camel case for all JSON property names
 
-Set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> to `JsonNamingPolicy.CamelCase`:
+To use camel case for all JSON property names, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -324,7 +326,7 @@ The camel case property naming policy:
 
 ### Use a custom JSON property naming policy
 
-Derive from <xref:System.Text.Json.JsonNamingPolicy> and override <xref:System.Text.Json.JsonNamingPolicy.ConvertName*>:
+To use a custom JSON property naming policy, create a class that derives from <xref:System.Text.Json.JsonNamingPolicy> and override the <xref:System.Text.Json.JsonNamingPolicy.ConvertName%2A> method, as shown in the following example:
 
 ```csharp
 class UpperCaseNamingPolicy : JsonNamingPolicy
@@ -750,4 +752,4 @@ while (reader.Read())
 
 * [System.Text.Json overview](system-text-json-overview.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
-*[DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
+* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)

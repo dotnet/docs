@@ -17,7 +17,7 @@ This article shows how to use the <xref:System.Text.Json> namespace to serialize
 
 ## Namespaces
 
-The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. Therefore the code examples shown in this article require one or both of the following `using` directives:
+The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. Therefore, the code examples shown in this article require one or both of the following `using` directives:
 
 ```csharp
 using System.Text.Json;
@@ -28,14 +28,16 @@ Attributes from the <xref:System.Runtime.Serialization> namespace aren't current
 
 ## How to write .NET objects to JSON (serialize)
 
-To write JSON to a string, call [JsonSerializer.Serialize](xref:System.Text.Json.JsonSerializer.Serialize*), using a generic type parameter or generic type inference:
+To write JSON to a string, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method,.  The following example uses a generic type parameter:
 
 ```csharp
 string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
 ```
 
+The following example uses generic type inference:
+
 ```csharp
-WeatherForecast weatherForecast = ... ;
+WeatherForecast weatherForecast;
 //...
 string json = JsonSerializer.Serialize(weatherForecast);
 ```
@@ -112,7 +114,7 @@ Overloads of <xref:System.Text.Json.JsonSerializer.Serialize%2A> let you seriali
 
 ### Serialize to UTF-8
 
-Call [JsonSerializer.SerializeToUtf8Bytes](xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*):
+To serialize to UTF-8, call the <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes%2A?displayProperty=nameWithType> method:
 
 ```csharp
 byte[] utf8Json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
@@ -133,11 +135,11 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 
 Supported types include:
 
-* .NET primitives that map to JavaScript primitives, such as numeric types, strings, and boolean.
+* .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
 * User-defined [Plain Old CLR Objects (POCOs)](https://stackoverflow.com/questions/250001/poco-definition).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
 * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
-* [Collection types](https://github.com/dotnet/corefx/issues/36643) from the following namespaces:
+* Collections from the following namespaces (see detailed lists in [this GitHub issue](https://github.com/dotnet/corefx/issues/36643)):
   * <xref:System.Collections>
   * <xref:System.Collections.Generic>
   * <xref:System.Collections.Immutable>
@@ -748,4 +750,4 @@ while (reader.Read())
 
 * [System.Text.Json overview](system-text-json-overview.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
-* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
+*[DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)

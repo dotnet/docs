@@ -147,13 +147,13 @@ Before you recompile the provider, make sure that you have closed all instances 
 
 To debug this provider by using print statements, make a script that exposes a problem with the provider, and then use the following code:
 
-```
+```console
 fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 ```
 
 To debug this provider by using Visual Studio, open the Developer Command Prompt for Visual Studio with administrative credentials, and run the following command:
 
-```
+```console
 devenv.exe /debugexe fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 ```
 
@@ -894,7 +894,7 @@ let function1 () =
 
 Here’s an image of the resulting code decompiled by using ildasm.exe:
 
-```
+```console
 .class public abstract auto ansi sealed Module1
 extends [mscorlib]System.Object
 {
@@ -928,13 +928,13 @@ Observe the following conventions when authoring type providers.
 
 **Providers for Connectivity Protocols** In general, names of most provider DLLs for data and service connectivity protocols, such as OData or SQL connections, should end in `TypeProvider` or `TypeProviders`. For example, use a DLL name that resembles the following string:
 
-```
+```fsharp
   Fabrikam.Management.BasicTypeProviders.dll
 ```
 
 Ensure that your provided types are members of the corresponding namespace, and indicate the connectivity protocol that you implemented:
 
-```
+```fsharp
   Fabrikam.Management.BasicTypeProviders.WmiConnection<…>
   Fabrikam.Management.BasicTypeProviders.DataProtocolConnection<…>
 ```
@@ -1123,7 +1123,7 @@ You can invoke type providers by using the following tools:
 
 You can often debug type providers most easily by using fsc.exe on a test script file (for example, script.fsx). You can launch a debugger from a command prompt.
 
-```
+```console
   devenv /debugexe fsc.exe script.fsx
 ```
 

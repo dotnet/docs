@@ -56,7 +56,7 @@ The Portability Summary section of the report shows the portability percentage f
 
 ![Portability Details](./media/portability-analyzer/portabilitydetails.png)
 
-The Details section of the report lists the APIs missing from any of the selected Targeted Platforms. 
+The **Details** section of the report lists the APIs missing from any of the selected **Targeted Platforms**. 
 
 - Target type: the type has missing API from a Target Platform 
 - Target member: the method is missing from a Target Platform 

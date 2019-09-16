@@ -48,7 +48,16 @@ Or you can generate a list of items using a normal C# `foreach` loop like this:
 </ul>
 ```
 
-Razor directives, like directives in ASP.NET Web Forms, control many aspects of how a Razor component is compiled, like its namespace, base class, implemented interfaces, generic parameters, imported namespaces, routes, and so on. Razor directives all start with the `@` character and are typically used at the start of a new line, often at the start of the file. For example, the `@namespace` directive can be used to control the namespace of the component:
+Razor directives, like directives in ASP.NET Web Forms, control many aspects of how a Razor component is compiled. Examples include the component's:
+
+* Namespace
+* Base class
+* Implemented interfaces
+* Generic parameters
+* Imported namespaces
+* Routes
+
+Razor directives all start with the `@` character and are typically used at the start of a new line, often at the start of the file. For example, the `@namespace` directive can be used to control the namespace of the component:
 
 ```razor
 @namespace MyComponentNamespace
@@ -85,7 +94,7 @@ Directive attribute | Description | Example
 `@key` | Specify a key to be used by the diffing algorithm for preserving elements in a collection | `<DetailsEditor @key="person" Details="person.Details" />`
 `@ref` | Capture a reference to the component or HTML element | `<MyDialog @ref="myDialog" />`
 
-The various directive attributes used by Blazor (`@onclick`, `@bind`, `@ref`, etc.) are covered in the sections below and later chapters.
+The various directive attributes used by Blazor (`@onclick`, `@bind`, `@ref`, and so on) are covered in the sections below and later chapters.
 
 Many of the syntaxes used in *.aspx* and *.ascx* files have parallel syntaxes in Razor. Below is a simple comparison of the syntaxes for ASP.NET Web Forms and Razor.
 
@@ -97,7 +106,7 @@ Expressions<br>(HTML encoded) | `<%: %>` | `<%:DateTime.Now %>` | Implicit: `@`<
 Comments | `<%-- --%>` | `<%-- Commented --%>` | `@* *@` | `@* Commented *@`
 Data binding | `<%# %>` | `<%# Bind("Name") %>` | `@bind` | `<input @bind="username" />`
 
-To add members to the Razor component class, use the `@code` directive. This is similar to using a `<script runat="server">...</script>` block in an ASP.NET Web Forms user control or page.
+To add members to the Razor component class, use the `@code` directive. This technique is similar to using a `<script runat="server">...</script>` block in an ASP.NET Web Forms user control or page.
 
 ```razor
 @code {
@@ -110,19 +119,19 @@ To add members to the Razor component class, use the `@code` directive. This is 
 }
 ```
 
-Because Razor is based on C#, it must be compiled from within a C# project (*.csproj*). You can't compile *.razor* files from a VB project (*.vbproj*). You can still reference VB projects from your Blazor project and vice versa.
+Because Razor is based on C#, it must be compiled from within a C# project (*.csproj*). You can't compile *.razor* files from a VB project (*.vbproj*). You can still reference VB projects from your Blazor project. The opposite is true too.
 
 A full [Razor syntax reference](/aspnet/core/mvc/views/razor) is available in the ASP.NET Core documentation.
 
 ## Use components
 
-In addition to normal HTML, components can also use other components as part of their rendering logic. The syntax for using a component in Razor is very similar to using a user control in an ASP.NET Web Forms app. Components are specified using an element tag that matches the type name of the component. For example, you can add a `Counter` component like this:
+Aside from normal HTML, components can also use other components as part of their rendering logic. The syntax for using a component in Razor is similar to using a user control in an ASP.NET Web Forms app. Components are specified using an element tag that matches the type name of the component. For example, you can add a `Counter` component like this:
 
 ```razor
 <Counter />
 ```
 
-Unlike ASP.NET Web Forms, components in Blazor don't have an element prefix (for example, `asp:`) and they don't need to be registered on the page or in *web.config*. You can think of Razor components like you would of .NET types, because that's exactly what they are. If the assembly containing the component is referenced, then the component is available to be used. To bring the component's namespace into scope, you use the `@using` directive.
+Unlike ASP.NET Web Forms, components in Blazor don't have an element prefix (for example, `asp:`) and they don't need to be registered on the page or in *web.config*. You can think of Razor components like you would .NET types, because that's exactly what they are. If the assembly containing the component is referenced, then the component is available to be used. To bring the component's namespace into scope, you use the `@using` directive.
 
 ```razor
 @using MyComponentLib
@@ -140,7 +149,7 @@ If the namespace for a component isn't in scope, you can specify a component usi
 
 ## Component parameters
 
-In ASP.NET Web Forms, you can flow parameters and data to controls using public properties. These properties can be set in markup using attributes or set directly in code. Blazor components work in a very similar fashion, although the component properties must also be marked with the `[Parameter]` attribute to be considered component parameters.
+In ASP.NET Web Forms, you can flow parameters and data to controls using public properties. These properties can be set in markup using attributes or set directly in code. Blazor components work in a similar fashion, although the component properties must also be marked with the `[Parameter]` attribute to be considered component parameters.
 
 The following `Counter` component defines a component parameter called `IncrementAmount` that can be used to specify the amount that the `Counter` should be incremented each time the button is clicked.
 
@@ -200,7 +209,7 @@ Event handlers can take an optional event-specific argument to provide more info
 }
 ```
 
-Instead of referring to a method group for an event handler, you can use lambda expressions, which allows you to close over other in-scope values.
+Instead of referring to a method group for an event handler, you can use a lambda expression. A lambda expression allows you to close over other in-scope values.
 
 ```razor
 @foreach (var buttonLabel in buttonLabels)
@@ -222,7 +231,7 @@ Event handlers can execute synchronously or asynchronously.
 }
 ```
 
-After an event is handled, the component is rendered to account for any component state changes. In the case of asynchronous event handlers, the component is rendered immediately after the handler execution completes, and then rendered *again* after the asynchronous `Task` completes. This provides an opportunity to render some appropriate UI while the asynchronous `Task` is still in progress.
+After an event is handled, the component is rendered to account for any component state changes. With asynchronous event handlers, the component is rendered immediately after the handler execution completes. The component is rendered *again* after the asynchronous `Task` completes. This asynchronous execution mode provides an opportunity to render some appropriate UI while the asynchronous `Task` is still in progress.
 
 ```razor
 <button @onclick="Get message">Get message</button>
@@ -265,9 +274,9 @@ Components can also define their own events by defining a component parameter of
 
 ## Data binding
 
-Blazor provides a simple mechanism to bind data from a UI component to the component's state. This is different than the various features in ASP.NET Web Forms for binding data from different data sources to UI controls. We'll cover handling data from different data sources in the [Dealing with data](data.md) section.
+Blazor provides a simple mechanism to bind data from a UI component to the component's state. This approach differs from the features in ASP.NET Web Forms for binding data from data sources to UI controls. We'll cover handling data from different data sources in the [Dealing with data](data.md) section.
 
-To create a two-way data binding from a UI component to some the component's state use the `@bind` directive attribute. In the example below, the value of the check box is bound to the `isChecked` field.
+To create a two-way data binding from a UI component to some the component's state, use the `@bind` directive attribute. In the example below, the value of the check box is bound to the `isChecked` field.
 
 ```razor
 <input type="checkbox" @bind="isChecked" />
@@ -277,7 +286,7 @@ To create a two-way data binding from a UI component to some the component's sta
 }
 ```
 
-When the component is rendered, the value of the checkbox will be set to the value of the `isChecked` field. When the user toggles the checkbox, the `onchange` event is fired and the `isChecked` field is set to the new value. The `@bind` syntax in this case is equivalent to the following:
+When the component is rendered, the value of the checkbox will be set to the value of the `isChecked` field. When the user toggles the checkbox, the `onchange` event is fired and the `isChecked` field is set to the new value. The `@bind` syntax in this case is equivalent to the following markup:
 
 ```razor
 <input value="@isChecked" @onchange="(UIChangeEventArgs e) => isChecked = e.Value" />
@@ -294,7 +303,7 @@ To change the event used for the bind, use the `@bind:event` attribute.
 }
 ```
 
-Components can also support data binding to their parameters by defining an event callback parameter with the same name as the bindable parameter, but with the "Changed" suffix added.
+Components can also support data binding to their parameters. To data bind, define an event callback parameter with the same name as the bindable parameter. The "Changed" suffix is added to the name.
 
 *PasswordBox.razor*
 
@@ -323,7 +332,7 @@ Password: <input
 }
 ```
 
-Note that to chain a data binding to an underlying UI element, you'll need to set the value and handle the event directly on the UI element instead of using the `@bind` attribute.
+To chain a data binding to an underlying UI element, you'll need to set the value and handle the event directly on the UI element instead of using the `@bind` attribute.
 
 To bind to a component parameter, use a `@bind-{Parameter}` attribute to specify which parameter you want to bind to.
 
@@ -337,13 +346,13 @@ To bind to a component parameter, use a `@bind-{Parameter}` attribute to specify
 
 ## Component lifecycle
 
-ASP.NET Web Forms has well-defined lifecycle methods for modules, pages, and controls. Blazor components also have a well-defined lifecycle that can be used to initialize component state and implement advanced component behaviors. 
+The ASP.NET Web Forms framework has well-defined lifecycle methods for modules, pages, and controls. Blazor components also have a well-defined lifecycle. A component's lifecycle can be used to initialize component state and implement advanced component behaviors. 
 
 All of Blazor's component lifecycle methods have both synchronous and asynchronous versions. This is important because component rendering is synchronous. You can't run asynchronous logic as part of the component rendering. All asynchronous logic must execute as part of an `async` lifecycle method.
 
 ### OnInitialized
 
-The `OnInitialized` and `OnInitializedAsync` methods are used to initialize the component. A component is typically initialized after it's first rendered. After a component is initialized, it may be rendered multiple times before it's eventually disposed. The `OnInitialized` method is very similar to the `Page_Load` event in ASP.NET Web Forms pages and controls.
+The `OnInitialized` and `OnInitializedAsync` methods are used to initialize the component. A component is typically initialized after it's first rendered. After a component is initialized, it may be rendered multiple times before it's eventually disposed. The `OnInitialized` method is similar to the `Page_Load` event in ASP.NET Web Forms pages and controls.
 
 ```
 protected override void OnInitialized() { ... }
@@ -361,9 +370,9 @@ protected override async Task OnParametersSetAsync() { ...}
 
 ### OnAfterRender
 
-The `OnAfterRender` and `OnAfterRenderAsync` methods are called after a component has finished rendering. Element and component references are populated at this point (more on these below). Interactivity with the browser is enabled at this point including interacting with the DOM and support for executing JavaScript. 
+The `OnAfterRender` and `OnAfterRenderAsync` methods are called after a component has finished rendering. Element and component references are populated at this point (more on these concepts below). Interactivity with the browser is enabled at this point including interacting with the DOM and support for executing JavaScript. 
 
-`OnAfterRender` and `OnAfterRenderAsync` *are not called when prerendering on the server.*
+`OnAfterRender` and `OnAfterRenderAsync` *aren't called when prerendering on the server*.
 
 The `firstRender` parameter is `true` the first time the component is rendered; otherwise, it's `false`.
 
@@ -387,7 +396,7 @@ Blazor components can implement `IDisposable` to dispose of resources when the c
 
 ## Capture component references
 
-In ASP.NET Web Forms, it's very common to manipulate control instances directly in code by referring to their ID. In Blazor, it's also possible to capture and manipulate references to components, although it's much less common. 
+In ASP.NET Web Forms, it's common to manipulate a control instance directly in code by referring to its ID. In Blazor, it's also possible to capture and manipulate a reference to a component, although it's much less common. 
 
 To capture a component reference in Blazor, use the `@ref` directive attribute. The value of the attribute should match the name of a settable field with the same type as the referenced component.
 
@@ -404,13 +413,13 @@ To capture a component reference in Blazor, use the `@ref` directive attribute. 
 }
 ```
 
-When the parent component is rendered, the field is populated with the child component instance. You can then call methods on or otherwise manipulate the component instance.
+When the parent component is rendered, the field is populated with the child component instance. You can then call methods on, or otherwise manipulate, the component instance.
 
-Manipulating component state directly using component references isn't generally recommended as it prevents the component from being rendered automatically at the correct times.
+Manipulating component state directly using component references isn't recommended. Doing so prevents the component from being rendered automatically at the correct times.
 
 ## Capture element references
 
-Blazor components can also capture references to element. Unlike HTML server controls in ASP.NET Web Forms, you can't manipulate the DOM directly using an element reference in Blazor. Blazor handles most DOM interactions for you using its DOM diffing algorithm. Captured element references in Blazor are opaque. However, they can be used to pass a specific element reference in a JavaScript interop call. Learn more about [JavaScript interop](/aspnet/core/blazor/javascript-interop) in the Blazor documentation.
+Blazor components can capture references to an element. Unlike HTML server controls in ASP.NET Web Forms, you can't manipulate the DOM directly using an element reference in Blazor. Blazor handles most DOM interactions for you using its DOM diffing algorithm. Captured element references in Blazor are opaque. However, they can be used to pass a specific element reference in a JavaScript interop call. Learn more about [JavaScript interop](/aspnet/core/blazor/javascript-interop) in the Blazor documentation.
 
 ## Templated components
 
@@ -445,7 +454,7 @@ A parent component can then supply child content using normal Razor syntax.
 
 ### Template parameters
 
-A templated Blazor component can also define multiple component parameters of type `RenderFragment` or `RenderFragment<T>`. The parameter for a `RenderFragment<T>` can be specified when it is invoked. To specify a generic type parameter for a component, use the `@typeparam` Razor directive.
+A templated Blazor component can also define multiple component parameters of type `RenderFragment` or `RenderFragment<T>`. The parameter for a `RenderFragment<T>` can be specified when it's invoked. To specify a generic type parameter for a component, use the `@typeparam` Razor directive.
 
 *SimpleListView.razor*
 
@@ -473,7 +482,7 @@ A templated Blazor component can also define multiple component parameters of ty
 }
 ```
 
-When using a templated component, the template parameters can be specified using child elements that match the names of the parameters. Component arguments of type `RenderFragment<T>` passed as elements have an implicit parameter named `context`. You can change the name of this implement parameter using the `Context` attribute on the child element. Any generic type parameters can be specified using an attribute that matches the name of the type parameter (the type parameter will be inferred if possible):
+When using a templated component, the template parameters can be specified using child elements that match the names of the parameters. Component arguments of type `RenderFragment<T>` passed as elements have an implicit parameter named `context`. You can change the name of this implement parameter using the `Context` attribute on the child element. Any generic type parameters can be specified using an attribute that matches the name of the type parameter. The type parameter will be inferred if possible:
 
 ```razor
 <SimpleListView Items="messages" TItem="string">
@@ -526,8 +535,8 @@ public class CounterBase : ComponentBase
 }
 ```
 
-Note that the visibility of the components members in the base class must be `protected` or `public` to be visible to the component class.
+The visibility of the component's members in the base class must be `protected` or `public` to be visible to the component class.
 
 ## Additional resources
 
-This isn't an exhaustive treatment of all aspects of Blazor components. For more information on how to [Create and use ASP.NET Core Razor components](https://docs.microsoft.com/aspnet/core/blazor/components), see the Blazor documentation.
+The preceding isn't an exhaustive treatment of all aspects of Blazor components. For more information on how to [Create and use ASP.NET Core Razor components](https://docs.microsoft.com/aspnet/core/blazor/components), see the Blazor documentation.

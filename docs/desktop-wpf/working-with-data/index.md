@@ -1,3 +1,3 @@
 ---
-redirect_url: add-data-source-to-project
+redirect_url: add-data-source
 ---

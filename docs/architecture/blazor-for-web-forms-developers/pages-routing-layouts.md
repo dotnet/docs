@@ -178,7 +178,7 @@ Page layout in ASP.NET Web Forms is handled by Master Pages. Master Pages define
 
 *Site.master*
 
-```aspx
+```aspx-csharp
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.SiteMaster" %>
 
 <!DOCTYPE html>

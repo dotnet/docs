@@ -17,7 +17,7 @@ There are various Acquisition options for .NET Core -
 * [Snap store](#Snap-store)
 * [.NET Core on GitHub](#NET-Core-on-GitHub)
 
-Each of these choices has their own strengths. Some options support both initial acquisition, and subsequent update of the .NET Core runtime and tools, while others don't support updates.
+Each of these choices has their own strengths. Some options support both initial acquisition, and subsequent notification of updates for the .NET Core runtime and tools, while others don't support update notifications.
 
 |Acquisition Choice|Acquire|Update|
 |:-|:-:|:-:|

@@ -8,6 +8,9 @@ Windows Communication Foundation (WCF) Test Client (WcfTestClient.exe) is a GUI 
 
 You can typically find the WCF Test Client (WcfTestClient.exe) in the following location: `C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE` - Community may be one of "Enterprise", "Professional" or "Community" depending on which level of Visual Studio is installed.
 
+## Prerequisite 
+This WcfTestClient.exe only available by selecting the Windows Communication Foundation (under Development activities of VS installer)
+
 ## Scenarios for Using Test Client
 
 The following sections discuss the most common scenarios in which you can use WCF Test Client to streamline your development process.

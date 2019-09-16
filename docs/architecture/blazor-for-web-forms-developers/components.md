@@ -276,7 +276,7 @@ Components can also define their own events by defining a component parameter of
 
 Blazor provides a simple mechanism to bind data from a UI component to the component's state. This approach differs from the features in ASP.NET Web Forms for binding data from data sources to UI controls. We'll cover handling data from different data sources in the [Dealing with data](data.md) section.
 
-To create a two-way data binding from a UI component to some the component's state, use the `@bind` directive attribute. In the example below, the value of the check box is bound to the `isChecked` field.
+To create a two-way data binding from a UI component to the component's state, use the `@bind` directive attribute. In the example below, the value of the check box is bound to the `isChecked` field.
 
 ```razor
 <input type="checkbox" @bind="isChecked" />
@@ -341,6 +341,43 @@ To bind to a component parameter, use a `@bind-{Parameter}` attribute to specify
 
 @code {
     string password;
+}
+```
+
+## State changes
+
+If the component's state has changed outside of a normal UI event or event callback, then the component must manually signal that it needs to be rendered again. To signal that a component's state has changed, call the `StateHasChanged` method on the component.
+
+In the example below, a component displays a message from an `AppState` service that can be updated by other parts of the app. The component registers its `StateHasChanged` method with the `AppState.OnChange` event so that the component is rendered whenever the message gets updated.
+
+```csharp
+public class AppState 
+{
+    public string Message { get; }
+
+    // Lets components receive change notifications
+    public event Action OnChange;
+
+    public void UpdateMessage(string message)
+    {
+        shortlist.Add(itinerary);
+        NotifyStateChanged();
+    }
+
+    private void NotifyStateChanged() => OnChange?.Invoke();
+}
+```
+
+```razor
+@inject AppState AppState
+
+<p>App message: @AppState.Message</p>
+
+@code {
+    protected override void OnInitialized()
+    {
+        AppState.OnChange += StateHasChanged
+    }
 }
 ```
 

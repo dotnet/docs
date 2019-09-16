@@ -1,6 +1,6 @@
 ---
 title: Pages, routing, and layouts
-description: How to create pages in Blazor, work with client-side routing, and manage page layouts.
+description: Learn how to create pages in Blazor, work with client-side routing, and manage page layouts.
 author: danroth27
 ms.author: daroth
 ms.date: 09/19/2019
@@ -8,17 +8,17 @@ ms.date: 09/19/2019
 
 # Pages, routing, and layouts
 
-ASP.NET Web Forms apps are made up of pages defined in *.aspx* files. The address of each page is based on its file path in the project. When a browser makes a request to the page, the contents of the page are dynamically rendered on the server based on the page's HTML markup and server controls.
+ASP.NET Web Forms apps are composed of pages defined in *.aspx* files. Each page's address is based on its physical file path in the project. When a browser makes a request to the page, the contents of the page are dynamically rendered on the server. The rendering accounts for both the page's HTML markup and its server controls.
 
 In Blazor, each page in the app is a component, typically defined in a *.razor* file, with one or more specified routes. Routing mostly happens client-side without involving a specific server request. The browser first makes a request to the root address of the app. A root `Router` component in the Blazor app then handles intercepting navigation requests and them to the correct component.
 
-Blazor also supports deep linking, where the browser makes a request to a specific route other than the root of the app. Requests for deep links sent to the server are routed to the Blazor app, which then routes the request client-side to the correct component.
+Blazor also supports *deep linking*. Deep linking occurs when the browser makes a request to a specific route other than the root of the app. Requests for deep links sent to the server are routed to the Blazor app, which then routes the request client-side to the correct component.
 
-A simple page in ASP.NET Web Forms might look like this:
+A simple page in ASP.NET Web Forms might contain the following markup:
 
 *Name.aspx*
 
-```html
+```aspx
 <%@ Page Title="Name" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Name.aspx.cs" Inherits="WebApplication1.Name" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -34,6 +34,7 @@ A simple page in ASP.NET Web Forms might look like this:
 ```
 
 *Name.aspx.cs*
+
 ```csharp
 public partial class Name : System.Web.UI.Page
 {
@@ -82,7 +83,7 @@ To create a page in Blazor, create a component and add the `@page` Razor directi
 @page "/counter"
 ```
 
-The route template parameter is required. Unlike ASP.NET Web Forms, the route to a Blazor component is *not* inferred from its file location (although that may be a feature added in the future).
+The route template parameter is required. Unlike ASP.NET Web Forms, the route to a Blazor component *isn't* inferred from its file location (although that may be a feature added in the future).
 
 The route template syntax is the same basic syntax used for routing in ASP.NET Web Forms. Route parameters are specified in the template using braces. Blazor will bind route values to component parameters with the same name (case-insensitive).
 
@@ -110,11 +111,11 @@ You can also specify constraints on the value of the route parameter. For exampl
 }
 ```
 
-See the Blazor documentation for a full list of the [route constraints](/aspnet/core/blazor/routing#route-constraints) supported by Blazor.
+For a full list of the route constraints supported by Blazor, see [Route constraints](/aspnet/core/blazor/routing#route-constraints).
 
 ## Router component
 
-Routing in Blazor is handled by the `Router` component. The `Router` component is typically used in the ap's root component (*App.razor*).
+Routing in Blazor is handled by the `Router` component. The `Router` component is typically used in the app's root component (*App.razor*).
 
 ```razor
 <Router AppAssembly="@typeof(Program).Assembly">
@@ -137,9 +138,14 @@ The `LayoutView` component renders its child content within the specified layout
 
 ## Navigation
 
-In ASP.NET Web Forms, you can trigger a navigation to a different page by returning a redirect response to the browser. Returning a redirect response isn't typically possible to do in Blazor, because it isn't a request-reply model. You can, however, trigger browser navigations directly, just like you can with JavaScript.
+In ASP.NET Web Forms, you trigger a navigation to a different page by returning a redirect response to the browser. Returning a redirect response isn't typically possible in Blazor. Blazor doesn't use a request-reply model. You can, however, trigger browser navigations directly, just like you can with JavaScript.
 
-Blazor provides a `NavigationManager` service that can be used to get the current browser address, the base address, trigger navigations, and to get notified when the address changes.
+Blazor provides a `NavigationManager` service that can be used to:
+
+* Get the current browser address
+* Get the base address
+* Trigger navigations
+* Get notified when the address changes
 
 To navigate to a different address, use the `NavigateTo` method:
 
@@ -168,11 +174,11 @@ If your Blazor app is deployed under a base path, then you need to specify the b
 
 ## Page layout
 
-Page layout in ASP.NET Web Forms is handled by master pages. Master pages define a template with one or more content placeholders that can then be supplied by individual pages. Master pages are defined in *.master* files and start with the `<%@ Master %>` directive. The content of the *.master* files is coded as you would a *.aspx* page, but with the addition of `<asp:ContentPlaceHolder>` controls to mark where pages can supply content.
+Page layout in ASP.NET Web Forms is handled by Master Pages. Master Pages define a template with one or more content placeholders that can then be supplied by individual pages. Master Pages are defined in *.master* files and start with the `<%@ Master %>` directive. The content of the *.master* files is coded as you would an *.aspx* page, but with the addition of `<asp:ContentPlaceHolder>` controls to mark where pages can supply content.
 
 *Site.master*
 
-```
+```aspx
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.SiteMaster" %>
 
 <!DOCTYPE html>
@@ -212,7 +218,7 @@ In Blazor, you handle page layout using layout components. Layout components inh
 
 When the page with a layout is rendered, the page is rendered within the contents of the specified layout at the location where the layout renders its `Body` property.
 
-To apply a layout to a page, use the `@layout` directive.
+To apply a layout to a page, use the `@layout` directive:
 
 ```razor
 @layout MainLayout
@@ -220,9 +226,9 @@ To apply a layout to a page, use the `@layout` directive.
 
 You can specify the layout for all components in a folder and subfolders using an *_Imports.razor* file. You can also specify a default layout for all your pages using the [Router component](#router-component).
 
-Master pages can define multiple content placeholders, but layouts in Blazor only have a single `Body` property. This limitation of Blazor layout components will hopefully get addressed in a future release.
+Master Pages can define multiple content placeholders, but layouts in Blazor only have a single `Body` property. This limitation of Blazor layout components will hopefully be addressed in a future release.
 
-Master pages in ASP.NET Web Forms can be nested (that is, a master page can also have a master page). Layout components in Blazor can be nested too. You can apply a layout component to a layout component. The contents of the inner layout will be rendered within the outer layout.
+Master Pages in ASP.NET Web Forms can be nested. That is, a Master Page may also use a Master Page. Layout components in Blazor may be nested too. You can apply a layout component to a layout component. The contents of the inner layout will be rendered within the outer layout.
 
 *ChildLayout.razor*
 
@@ -256,4 +262,4 @@ The rendered output for the page would then be:
 
 Layouts in Blazor don't typically define the root HTML elements for a page (`<html>`, `<body>`, `<head>`, and so on). The root HTML elements are instead defined in a Blazor app's host page, which is used to render the initial HTML content for the app (see [Bootstrap Blazor](project-structure.md#bootstrap-blazor)). The host page can render multiple root components for the app with surrounding markup.
 
-Components in Blazor, including pages, can't render `<script>` tags. This restriction exists because script tags get loaded once and then can't be changed, which may result in unexpected behavior if you try to render them dynamically using Razor syntax. Instead, all script tags should be added to the app's host page.
+Components in Blazor, including pages, can't render `<script>` tags. This rendering restriction exists because `<script>` tags get loaded once and then can't be changed. Unexpected behavior may occur if you try to render the tags dynamically using Razor syntax. Instead, all `<script>` tags should be added to the app's host page.

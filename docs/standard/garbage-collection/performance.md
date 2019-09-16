@@ -243,7 +243,7 @@ The following procedure describes how to set a breakpoint so that you can measur
 
 <a name="GenBreak"></a>
 
-##### To set a breakpoint at the end of garbage collection
+#### To set a breakpoint at the end of garbage collection
 
 - In WinDbg with the SOS debugger extension loaded, type the following command:
 
@@ -295,7 +295,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="IsGC"></a>
 
-##### To determine whether the problem is caused by garbage collection
+### To determine whether the problem is caused by garbage collection
 
 - Examine the following two memory performance counters:
 
@@ -307,7 +307,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="OOMIsManaged"></a>
 
-##### To determine whether the out-of-memory exception is managed
+### To determine whether the out-of-memory exception is managed
 
 1. In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the print exception (**pe**) command:
 
@@ -341,7 +341,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="GetVM"></a>
 
-##### To determine how much virtual memory can be reserved
+### To determine how much virtual memory can be reserved
 
 - In WinDbg with the SOS debugger extension loaded, type the following command to get the largest free region:
 
@@ -375,7 +375,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="Physical"></a>
 
-##### To determine whether there is enough physical memory
+### To determine whether there is enough physical memory
 
 1. Start Windows Task Manager.
 
@@ -385,7 +385,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="ManagedHeapCommit"></a>
 
-##### To determine how much memory the managed heap is committing
+### To determine how much memory the managed heap is committing
 
 - Use the `# Total committed bytes` memory performance counter to get the number of bytes that the managed heap is committing. The garbage collector commits chunks on a segment as needed, not all at the same time.
 
@@ -394,7 +394,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="ManagedHeapReserve"></a>
 
-##### To determine how much memory the managed heap reserves
+### To determine how much memory the managed heap reserves
 
 - Use the `# Total reserved bytes` memory performance counter.
 
@@ -443,7 +443,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="ExamineGen2"></a>
 
-##### To determine large objects in generation 2
+### To determine large objects in generation 2
 
 - In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:
 
@@ -483,7 +483,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="ObjRef"></a>
 
-##### To determine references to objects
+### To determine references to objects
 
 - In WinDbg with the SOS debugger extension loaded, type the following command to list references to objects:
 
@@ -517,7 +517,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="Induce"></a>
 
-##### To determine whether a finalizer has been run
+### To determine whether a finalizer has been run
 
 - Run a test program that contains the following code:
 
@@ -531,7 +531,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="Finalize"></a>
 
-##### To determine whether there are objects waiting to be finalized
+### To determine whether there are objects waiting to be finalized
 
 1. In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:
 
@@ -556,7 +556,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="Fragmented"></a>
 
-##### To determine the amount of free space in the managed heap
+### To determine the amount of free space in the managed heap
 
 - In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:
 
@@ -633,7 +633,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="Pinned"></a>
 
-##### To determine the number of pinned objects
+### To determine the number of pinned objects
 
 - In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:
 
@@ -649,7 +649,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="TimeInGC"></a>
 
-##### To determine the length of time in a garbage collection
+### To determine the length of time in a garbage collection
 
 - Examine the `% Time in GC` memory performance counter.
 
@@ -737,7 +737,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="Triggered"></a>
 
-##### To determine what triggered a garbage collection
+### To determine what triggered a garbage collection
 
 - In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command to show all the threads with their call stacks:
 
@@ -816,7 +816,7 @@ This section describes the following procedures to isolate the cause of your per
 
 <a name="HighCPU"></a>
 
-##### To determine whether high CPU usage is caused by garbage collection
+### To determine whether high CPU usage is caused by garbage collection
 
 - Correlate the `% Time in GC` memory performance counter value with the process time.
 

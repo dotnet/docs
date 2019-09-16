@@ -21,7 +21,7 @@ The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)
 - Ensures that property value changes on the host are automatically detected and translated to the hosted control or element.  
   
 > [!NOTE]
->  Property-change events are not propagated up the hosting control or element hierarchy. Property translation is not performed if the local value of a property does not change because of direct setting, styles, inheritance, data binding, or other mechanisms that change the value of the property.  
+> Property-change events are not propagated up the hosting control or element hierarchy. Property translation is not performed if the local value of a property does not change because of direct setting, styles, inheritance, data binding, or other mechanisms that change the value of the property.  
   
  Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element and the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property on <xref:System.Windows.Forms.Integration.ElementHost> control to access property mapping.  
   

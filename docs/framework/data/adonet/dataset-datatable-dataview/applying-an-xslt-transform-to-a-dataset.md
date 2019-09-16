@@ -53,7 +53,7 @@ The **WriteXml** method of the <xref:System.Data.DataSet> enables you to write t
  The following code fills the **DataSet** and applies the XSLT style sheet.  
   
 > [!NOTE]
->  If you are applying an XSLT style sheet to a **DataSet** that contains relations, you achieve best performance if you set the **Nested** property of the <xref:System.Data.DataRelation> to **true** for each nested relation. This allows you to use XSLT style sheets that implement natural top-down processing to navigate the hierarchy and transform the data, as opposed to using performance-intensive XPath location axes (for example, preceding-sibling and following-sibling in style sheet node test expressions) to navigate it. For more information on nested relations, see [Nesting DataRelations](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations.md).  
+> If you are applying an XSLT style sheet to a **DataSet** that contains relations, you achieve best performance if you set the **Nested** property of the <xref:System.Data.DataRelation> to **true** for each nested relation. This allows you to use XSLT style sheets that implement natural top-down processing to navigate the hierarchy and transform the data, as opposed to using performance-intensive XPath location axes (for example, preceding-sibling and following-sibling in style sheet node test expressions) to navigate it. For more information on nested relations, see [Nesting DataRelations](nesting-datarelations.md).  
   
 ```vb  
 ' Assumes connection is a valid SqlConnection.  
@@ -119,5 +119,5 @@ writer.Close();
   
 ## See also
 
-- [DataSet and XmlDataDocument Synchronization](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [DataSet and XmlDataDocument Synchronization](dataset-and-xmldatadocument-synchronization.md)
+- [ADO.NET Overview](../ado-net-overview.md)

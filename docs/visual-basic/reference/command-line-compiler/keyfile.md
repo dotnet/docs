@@ -33,10 +33,10 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
   
  Note that a key file might contain only the public key.  
   
- See [Creating and Using Strong-Named Assemblies](../../../framework/app-domains/create-and-use-strong-named-assemblies.md) for more information on signing an assembly.  
+ See [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) for more information on signing an assembly.  
   
 > [!NOTE]
->  The `-keyfile` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `-keyfile` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code compiles source file `Input.vb` and specifies a key file.  

@@ -4,7 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: f5b4dce7-1a34-4eb4-9bf1-60d5bdda264c
 ---
 # How to: Query the Contents of Text Files in a Folder (LINQ) (C#)
-This example shows how to query over all the files in a specified directory tree, open each file, and inspect its contents. This type of technique could be used to create indexes or reverse indexes of the contents of a directory tree. A simple string search is performed in this example. However, more complex types of pattern matching can be performed with a regular expression. For more information, see [How to: Combine LINQ Queries with Regular Expressions (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md).  
+This example shows how to query over all the files in a specified directory tree, open each file, and inspect its contents. This type of technique could be used to create indexes or reverse indexes of the contents of a directory tree. A simple string search is performed in this example. However, more complex types of pattern matching can be performed with a regular expression. For more information, see [How to: Combine LINQ Queries with Regular Expressions (C#)](./how-to-combine-linq-queries-with-regular-expressions.md).  
   
 ## Example  
   
@@ -69,5 +69,5 @@ Create a C# console application project, with `using` directives for the System.
   
 ## See also
 
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
-- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)
+- [LINQ to Objects (C#)](./linq-to-objects.md)

@@ -19,7 +19,7 @@ This scenario sample demonstrates how to flow caller's identity information from
  The façade service is responsible for validating the request and authenticating the caller. After successful authentication and validation, it forwards the request to the backend service using the controlled communication channel from the perimeter network to the internal network. As a part of the forwarded request, the façade service includes information about the caller's identity so that the backend service can use this information in its processing. The caller's identity is transmitted using a `Username` security token inside the message `Security` header. The sample uses the WCF security infrastructure to transmit and extract this information from the `Security` header.  
   
 > [!IMPORTANT]
->  The backend service trusts the façade service to authenticate the caller. Because of this, the backend service does not authenticate the caller again; it uses the identity information provided by the façade service in the forwarded request. Because of this trust relationship, the backend service must authenticate the façade service to ensure that the forwarded message comes from a trusted source - in this case, the façade service.  
+> The backend service trusts the façade service to authenticate the caller. Because of this, the backend service does not authenticate the caller again; it uses the identity information provided by the façade service in the forwarded request. Because of this trust relationship, the backend service must authenticate the façade service to ensure that the forwarded message comes from a trusted source - in this case, the façade service.  
   
 ## Implementation  
  There are two communication paths in this sample. First is between the client and the façade service, the second is between the façade service and the backend service.  
@@ -277,10 +277,10 @@ Press <ENTER> to terminate client.
 1. Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`  

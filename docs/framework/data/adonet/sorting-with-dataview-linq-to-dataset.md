@@ -14,10 +14,10 @@ The ability to sort data based on specific criteria and then present the data to
   
  Expression-based sorting offers more powerful and complex sorting than the simpler string-based sorting. Note that string-based and expression-based sorting are mutually exclusive. If the string-based <xref:System.Data.DataView.Sort%2A> is set after a <xref:System.Data.DataView> is created from a query, the expression-based filter inferred from the query is cleared and cannot be reset.  
   
- The index for a <xref:System.Data.DataView> is built both when the <xref:System.Data.DataView> is created and when any of the sorting or filtering information is modified. You get the best performance by supplying sorting criteria in the LINQ to DataSet query that the <xref:System.Data.DataView> is created from and not modifying the sorting information, later. For more information, see [DataView Performance](../../../../docs/framework/data/adonet/dataview-performance.md).  
+ The index for a <xref:System.Data.DataView> is built both when the <xref:System.Data.DataView> is created and when any of the sorting or filtering information is modified. You get the best performance by supplying sorting criteria in the LINQ to DataSet query that the <xref:System.Data.DataView> is created from and not modifying the sorting information, later. For more information, see [DataView Performance](dataview-performance.md).  
   
 > [!NOTE]
->  In most cases, the expressions used for sorting should not have side effects and must be deterministic. Also, the expressions should not contain any logic that depends on a set number of executions, because the sorting operations might be executed any number of times.  
+> In most cases, the expressions used for sorting should not have side effects and must be deterministic. Also, the expressions should not contain any logic that depends on a set number of executions, because the sorting operations might be executed any number of times.  
   
 ### Example  
  The following example queries the SalesOrderHeader table and orders the returned rows by the order date; creates a <xref:System.Data.DataView> from that query; and binds the <xref:System.Data.DataView> to a <xref:System.Windows.Forms.BindingSource>.  
@@ -42,7 +42,7 @@ The ability to sort data based on specific criteria and then present the data to
   
  The string-based and expression-based sorting functionality are mutually exclusive. Setting the <xref:System.Data.DataView.Sort%2A> property will clear the expression-based sort inherited from the query that the <xref:System.Data.DataView> was created from.  
   
- For more information about string-based <xref:System.Data.DataView.Sort%2A> filtering, see [Sorting and Filtering Data](../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md).  
+ For more information about string-based <xref:System.Data.DataView.Sort%2A> filtering, see [Sorting and Filtering Data](./dataset-datatable-dataview/sorting-and-filtering-data.md).  
   
 ### Example  
  The follow example creates a <xref:System.Data.DataView> from the Contact table and sorts the rows by last name in descending order, then first name in ascending order:  
@@ -77,6 +77,6 @@ The ability to sort data based on specific criteria and then present the data to
   
 ## See also
 
-- [Data Binding and LINQ to DataSet](../../../../docs/framework/data/adonet/data-binding-and-linq-to-dataset.md)
-- [Filtering with DataView](../../../../docs/framework/data/adonet/filtering-with-dataview-linq-to-dataset.md)
+- [Data Binding and LINQ to DataSet](data-binding-and-linq-to-dataset.md)
+- [Filtering with DataView](filtering-with-dataview-linq-to-dataset.md)
 - [Sorting Data](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb546145(v=vs.120))

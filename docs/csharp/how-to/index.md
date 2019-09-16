@@ -17,7 +17,6 @@ There are several tips and tricks that are common C# developer practices.
 
 - [Initialize objects using an object initializer](../programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md).
 - [Learn the differences between passing a struct and a class to a method](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
-- [Resolve type name conflicts by using the global namespace alias](../programming-guide/namespaces/how-to-use-the-global-namespace-alias.md).
 - [Use operator overloading](../language-reference/operators/operator-overloading.md).
 - [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
 - Even C# programmers may want to [use the `My` namespace from VB](../programming-guide/namespaces/how-to-use-the-my-namespace.md).

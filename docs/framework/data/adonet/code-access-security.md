@@ -17,7 +17,7 @@ The .NET Framework offers role-based security as well as code access security (C
  The CLR allows code to perform only those operations that the code has permission to perform. Code can request permissions, and those requests are honored based on the security policy set by an administrator.  
   
 > [!NOTE]
->  Code executing in the CLR cannot grant permissions to itself. For example, code can request and be granted fewer permissions than a security policy allows, but it will never be granted more permissions. When granting permissions, start with no permissions at all and then add the narrowest permissions for the particular task being performed. Starting with all permissions and then denying individual ones leads to insecure applications that may contain unintentional security holes from granting more permissions than required. For more information, see [Configuring Security Policy](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7c9c2y1w(v=vs.100)) and [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100)).  
+> Code executing in the CLR cannot grant permissions to itself. For example, code can request and be granted fewer permissions than a security policy allows, but it will never be granted more permissions. When granting permissions, start with no permissions at all and then add the narrowest permissions for the particular task being performed. Starting with all permissions and then denying individual ones leads to insecure applications that may contain unintentional security holes from granting more permissions than required. For more information, see [Configuring Security Policy](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7c9c2y1w(v=vs.100)) and [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100)).  
   
  There are three types of code access permissions:  
   
@@ -41,15 +41,15 @@ The .NET Framework offers role-based security as well as code access security (C
   
  The CLR uses permissions to implement its mechanism for enforcing restrictions on managed code. Role-based security permissions provide a mechanism for discovering whether a user (or the agent acting on the user's behalf) has a particular identity or is a member of a specified role. For more information, see [Security Permissions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5ba4k1c5(v=vs.100)).  
   
- Depending on the type of application you are building, you should also consider implementing role-based permissions in the database. For more information on role-based security in SQL Server, see [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md).  
+ Depending on the type of application you are building, you should also consider implementing role-based permissions in the database. For more information on role-based security in SQL Server, see [SQL Server Security](./sql/sql-server-security.md).  
   
 ## Assemblies  
- Assemblies form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions for a .NET Framework application. An assembly provides a collection of types and resources that are built to work together and form a logical unit of functionality. To the CLR, a type does not exist outside the context of an assembly. For more information on creating and deploying assemblies, see [Programming with Assemblies](../../../../docs/framework/app-domains/programming-with-assemblies.md).  
+ Assemblies form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions for a .NET Framework application. An assembly provides a collection of types and resources that are built to work together and form a logical unit of functionality. To the CLR, a type does not exist outside the context of an assembly. For more information on creating and deploying assemblies, see [Programming with Assemblies](../../../standard/assembly/program.md).  
   
 ### Strong-naming Assemblies  
  A strong name, or digital signature, consists of the assembly's identity, which includes its simple text name, version number, and culture information (if provided), plus a public key and a digital signature. The digital signature is generated from an assembly file using the corresponding private key. The assembly file contains the assembly manifest, which contains the names and hashes of all the files that make up the assembly.  
   
- Strong naming an assembly gives an application or component a unique identity that other software can use to refer explicitly to it. Strong naming guards assemblies against being spoofed by an assembly that contains hostile code. Strong-naming also ensures versioning consistency among different versions of a component. You must strong name assemblies that will be deployed to the Global Assembly Cache (GAC). For more information, see [Creating and Using Strong-Named Assemblies](../../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md).  
+ Strong naming an assembly gives an application or component a unique identity that other software can use to refer explicitly to it. Strong naming guards assemblies against being spoofed by an assembly that contains hostile code. Strong-naming also ensures versioning consistency among different versions of a component. You must strong name assemblies that will be deployed to the Global Assembly Cache (GAC). For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md).  
   
 ## Partial Trust in ADO.NET 2.0  
  In ADO.NET 2.0, the .NET Framework Data Provider for SQL Server, the .NET Framework Data Provider for OLE DB, the .NET Framework Data Provider for ODBC, and the .NET Framework Data Provider for Oracle can now all run in partially trusted environments. In previous releases of the .NET Framework, only <xref:System.Data.SqlClient> was supported in less than full-trust applications.  
@@ -72,7 +72,7 @@ The .NET Framework offers role-based security as well as code access security (C
 |`Unrestricted`|Indicates whether unrestricted permission to the resource is declared. Inherited from <xref:System.Security.Permissions.SecurityAttribute>.|  
   
 #### ConnectionString Syntax  
- The following example demonstrates how to use the `connectionStrings` element of a configuration file to allow only a specific connection string to be used. See [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md) for more information on storing and retrieving connection strings from configuration files.  
+ The following example demonstrates how to use the `connectionStrings` element of a configuration file to allow only a specific connection string to be used. See [Connection Strings](connection-strings.md) for more information on storing and retrieving connection strings from configuration files.  
   
 ```xml  
 <connectionStrings>  
@@ -130,7 +130,7 @@ The .NET Framework offers role-based security as well as code access security (C
 ```  
   
 ### Enabling Partial Trust with a Custom Permission Set  
- To enable the use of <xref:System.Data.SqlClient> permissions for a particular zone, a system administrator must create a custom permission set and set it as the permission set for a particular zone. Default permission sets, such as `LocalIntranet`, cannot be modified. For example, to include <xref:System.Data.SqlClient> permissions for code that has a <xref:System.Security.Policy.Zone> of `LocalIntranet`, a system administrator could copy the permission set for `LocalIntranet`, rename it to "CustomLocalIntranet", add the <xref:System.Data.SqlClient> permissions, import the CustomLocalIntranet permission set using the [Caspol.exe (Code Access Security Policy Tool)](../../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md), and set the permission set of `LocalIntranet_Zone` to CustomLocalIntranet.  
+ To enable the use of <xref:System.Data.SqlClient> permissions for a particular zone, a system administrator must create a custom permission set and set it as the permission set for a particular zone. Default permission sets, such as `LocalIntranet`, cannot be modified. For example, to include <xref:System.Data.SqlClient> permissions for code that has a <xref:System.Security.Policy.Zone> of `LocalIntranet`, a system administrator could copy the permission set for `LocalIntranet`, rename it to "CustomLocalIntranet", add the <xref:System.Data.SqlClient> permissions, import the CustomLocalIntranet permission set using the [Caspol.exe (Code Access Security Policy Tool)](../../tools/caspol-exe-code-access-security-policy-tool.md), and set the permission set of `LocalIntranet_Zone` to CustomLocalIntranet.  
   
 ### Sample Permission Set  
  The following is a sample permission set for the .NET Framework Data Provider for SQL Server in a partially trusted scenario. For information on creating custom permission sets, see [Configuring Permission Sets Using Caspol.exe](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4ybs46y6(v=vs.100)).  
@@ -160,7 +160,7 @@ AllowBlankPassword="False">
  The following example demonstrates how to write code that requires a particular connection string. It simulates denying unrestricted permissions to <xref:System.Data.SqlClient>, which a system administrator would implement using a CAS policy in the real world.  
   
 > [!IMPORTANT]
->  When designing CAS permissions for ADO.NET, the correct pattern is to start with the most restrictive case (no permissions at all) and then add the specific permissions that are needed for the particular task that the code needs to perform. The opposite pattern, starting with all permissions and then denying a specific permission, is not secure because there are many ways of expressing the same connection string. For example, if you start with all permissions and then attempt to deny the use of the connection string "server=someserver", the string "server=someserver.mycompany.com" would still be allowed. By always starting by granting no permissions at all, you reduce the chances that there are holes in the permission set.  
+> When designing CAS permissions for ADO.NET, the correct pattern is to start with the most restrictive case (no permissions at all) and then add the specific permissions that are needed for the particular task that the code needs to perform. The opposite pattern, starting with all permissions and then denying a specific permission, is not secure because there are many ways of expressing the same connection string. For example, if you start with all permissions and then attempt to deny the use of the connection string "server=someserver", the string "server=someserver.mycompany.com" would still be allowed. By always starting by granting no permissions at all, you reduce the chances that there are holes in the permission set.  
   
  The following code demonstrates how `SqlClient` performs the security demand, which throws a <xref:System.Security.SecurityException> if the appropriate CAS permissions are not in place. The <xref:System.Security.SecurityException> output is displayed in the console window.  
   
@@ -184,13 +184,13 @@ Failed, as expected: Request failed.
 ```  
   
 ## Interoperability with Unmanaged Code  
- Code that runs outside the CLR is called unmanaged code. Therefore, security mechanisms such as CAS cannot be applied to unmanaged code. COM components, ActiveX interfaces, and Windows API functions are examples of unmanaged code. Special security considerations apply when executing unmanaged code so that you do not jeopardize overall application security. For more information, see [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md).  
+ Code that runs outside the CLR is called unmanaged code. Therefore, security mechanisms such as CAS cannot be applied to unmanaged code. COM components, ActiveX interfaces, and Windows API functions are examples of unmanaged code. Special security considerations apply when executing unmanaged code so that you do not jeopardize overall application security. For more information, see [Interoperating with Unmanaged Code](../../interop/index.md).  
   
  The .NET Framework also supports backward compatibility to existing COM components by providing access through COM interop. You can incorporate COM components into a .NET Framework application by using COM interop tools to import the relevant COM types. Once imported, the COM types are ready to use. COM interop also enables COM clients to access managed code by exporting assembly metadata to a type library and registering the managed component as a COM component. For more information, see [Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx).  
   
 ## See also
 
-- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [Securing ADO.NET Applications](securing-ado-net-applications.md)
 - [Security in Native and .NET Framework Code](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))
-- [Role-Based Security](../../../../docs/standard/security/role-based-security.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Role-Based Security](../../../standard/security/role-based-security.md)
+- [ADO.NET Overview](ado-net-overview.md)

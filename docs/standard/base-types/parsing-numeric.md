@@ -40,7 +40,7 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
  [!code-vb[Parsing.Numbers#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/parsing.numbers/vb/styles1.vb#2)]  
   
 > [!WARNING]
->  The parse operation always uses the formatting conventions of a particular culture. If you do not specify a culture by passing a <xref:System.Globalization.CultureInfo> or <xref:System.Globalization.NumberFormatInfo> object, the culture associated with the current thread is used.  
+> The parse operation always uses the formatting conventions of a particular culture. If you do not specify a culture by passing a <xref:System.Globalization.CultureInfo> or <xref:System.Globalization.NumberFormatInfo> object, the culture associated with the current thread is used.  
   
  The following table lists the members of the <xref:System.Globalization.NumberStyles> enumeration and describes the effect that they have on the parsing operation.  
   

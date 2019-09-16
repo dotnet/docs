@@ -49,16 +49,16 @@ When you use Windows Identity Foundation (WIF) to secure the resources of a rely
 - If your application detects replayed tokens you must follow a similar distributed caching strategy for the token replay cache by deriving from <xref:System.IdentityModel.Tokens.TokenReplayCache> and pointing to your token replay caching service in the [\<tokenReplayCache>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaycache.md) configuration element.  
   
 > [!IMPORTANT]
->  All of the example XML and code in this topic is taken from the [ClaimsAwareWebFarm](https://go.microsoft.com/fwlink/?LinkID=248408) sample.  
+> All of the example XML and code in this topic is taken from the [ClaimsAwareWebFarm](https://go.microsoft.com/fwlink/?LinkID=248408) sample.  
   
 > [!IMPORTANT]
->  The examples in this topic are provided as-is and are not intended to be used in production code without modification.  
+> The examples in this topic are provided as-is and are not intended to be used in production code without modification.  
   
 <a name="BKMK_TheWCFCachingService"></a>   
 ## The WCF Caching Service  
  The following interface defines the contract between the WCF caching service and the WCF client used by the relying party application to communicate with it. It essentially exposes the methods of the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> class as service operations.  
   
-```  
+```csharp
 [ServiceContract()]  
 public interface ISessionSecurityTokenCacheService  
 {  
@@ -84,7 +84,7 @@ public interface ISessionSecurityTokenCacheService
   
  The following code shows the implementation of the WCF caching service. In this example, the default, in-memory session token cache implemented by WIF is used. Alternatively, you could implement a durable cache backed by a database. `ISessionSecurityTokenCacheService` defines the interface shown above. In this example, not all of the methods required to implement the interface are shown for brevity.  
   
-```  
+```csharp
 using System;  
 using System.Collections.Generic;  
 using System.IdentityModel.Configuration;  
@@ -144,7 +144,7 @@ namespace WcfSessionSecurityTokenCacheService
   
  The class overrides the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache.LoadCustomConfiguration%2A> method to get the service endpoint from the custom `<cacheServiceAddress>` child element of the `<sessionSecurityTokenCache>` element. It uses this endpoint to initialize an `ISessionSecurityTokenCacheService` channel over which it can communicate with the service.  In this example, not all of the methods required to implement the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> class are shown for brevity.  
   
-```  
+```csharp
 using System;  
 using System.Configuration;  
 using System.IdentityModel.Configuration;  

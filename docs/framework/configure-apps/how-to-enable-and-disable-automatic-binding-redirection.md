@@ -85,15 +85,15 @@ To add binding redirects to a **web.config** file:
 
 1. In Visual Studio, compile the app, and check for build warnings.
 
-   ![Build warning for assembly reference conflicts](../../../docs/framework/configure-apps/media/clr-assemblyrefwarning.png "CLR_AssemblyRefWarning")
+   ![Build warning for assembly reference conflicts](./media/clr-assemblyrefwarning.png "CLR_AssemblyRefWarning")
 
 2. If there are assembly binding conflicts, a warning appears. Double-click the warning, or select the warning and press **Enter**.
 
    A dialog box that enables you to automatically add the necessary binding redirects to the source **web.config** file appears.
 
-   ![Binding redirect permission dialog](../../../docs/framework/configure-apps/media/clr-addbindingredirect.png "CLR_AddBindingRedirect")
+   ![Binding redirect permission dialog](./media/clr-addbindingredirect.png "CLR_AddBindingRedirect")
 
 ## See also
 
-- [\<bindingRedirect> Element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)
-- [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [\<bindingRedirect> Element](./file-schema/runtime/bindingredirect-element.md)
+- [Redirecting Assembly Versions](redirect-assembly-versions.md)

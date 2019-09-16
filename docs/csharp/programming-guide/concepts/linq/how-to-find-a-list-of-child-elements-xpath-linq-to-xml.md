@@ -11,7 +11,7 @@ This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](
 ## Example  
  This example finds all of the child elements of the `Address` element.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument cpo = XDocument.Load("PurchaseOrders.xml");  
@@ -34,7 +34,7 @@ foreach (XElement el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Name>Ellen Adams</Name>  
 <Street>123 Maple Street</Street>  
@@ -43,4 +43,3 @@ Results are identical
 <Zip>10999</Zip>  
 <Country>USA</Country>  
 ```  
-  

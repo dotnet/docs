@@ -18,7 +18,7 @@ The CorFlags Conversion tool allows you to configure the CorFlags section of the
   
 ## Syntax  
   
-```  
+```console  
 CorFlags.exe assembly [options]  
 ```  
   

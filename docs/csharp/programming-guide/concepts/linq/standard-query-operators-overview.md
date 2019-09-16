@@ -61,7 +61,7 @@ foreach (var obj in query)
 ```  
   
 ## Query Expression Syntax  
- Some of the more frequently used standard query operators have dedicated C# and Visual Basic language keyword syntax that enables them to be called as part of a *query* *expression*. For more information about standard query operators that have dedicated keywords and their corresponding syntaxes, see [Query Expression Syntax for Standard Query Operators (C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md).  
+ Some of the more frequently used standard query operators have dedicated C# and Visual Basic language keyword syntax that enables them to be called as part of a *query* *expression*. For more information about standard query operators that have dedicated keywords and their corresponding syntaxes, see [Query Expression Syntax for Standard Query Operators (C#)](./query-expression-syntax-for-standard-query-operators.md).  
   
 ## Extending the Standard Query Operators  
  You can augment the set of standard query operators by creating domain-specific methods that are appropriate for your target domain or technology. You can also replace the standard query operators with your own implementations that provide additional services such as remote evaluation, query translation, and optimization. See <xref:System.Linq.Enumerable.AsEnumerable%2A> for an example.  
@@ -69,39 +69,39 @@ foreach (var obj in query)
 ## Related Sections  
  The following links take you to topics that provide additional information about the various standard query operators based on functionality.  
   
- [Sorting Data (C#)](../../../../csharp/programming-guide/concepts/linq/sorting-data.md)  
+ [Sorting Data (C#)](./sorting-data.md)  
   
- [Set Operations (C#)](../../../../csharp/programming-guide/concepts/linq/set-operations.md)  
+ [Set Operations (C#)](./set-operations.md)  
   
- [Filtering Data (C#)](../../../../csharp/programming-guide/concepts/linq/filtering-data.md)  
+ [Filtering Data (C#)](./filtering-data.md)  
   
- [Quantifier Operations (C#)](../../../../csharp/programming-guide/concepts/linq/quantifier-operations.md)  
+ [Quantifier Operations (C#)](./quantifier-operations.md)  
   
- [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)  
+ [Projection Operations (C#)](./projection-operations.md)  
   
- [Partitioning Data (C#)](../../../../csharp/programming-guide/concepts/linq/partitioning-data.md)  
+ [Partitioning Data (C#)](./partitioning-data.md)  
   
- [Join Operations (C#)](../../../../csharp/programming-guide/concepts/linq/join-operations.md)  
+ [Join Operations (C#)](./join-operations.md)  
   
- [Grouping Data (C#)](../../../../csharp/programming-guide/concepts/linq/grouping-data.md)  
+ [Grouping Data (C#)](./grouping-data.md)  
   
- [Generation Operations (C#)](../../../../csharp/programming-guide/concepts/linq/generation-operations.md)  
+ [Generation Operations (C#)](./generation-operations.md)  
   
- [Equality Operations (C#)](../../../../csharp/programming-guide/concepts/linq/equality-operations.md)  
+ [Equality Operations (C#)](./equality-operations.md)  
   
- [Element Operations (C#)](../../../../csharp/programming-guide/concepts/linq/element-operations.md)  
+ [Element Operations (C#)](./element-operations.md)  
   
- [Converting Data Types (C#)](../../../../csharp/programming-guide/concepts/linq/converting-data-types.md)  
+ [Converting Data Types (C#)](./converting-data-types.md)  
   
- [Concatenation Operations (C#)](../../../../csharp/programming-guide/concepts/linq/concatenation-operations.md)  
+ [Concatenation Operations (C#)](./concatenation-operations.md)  
   
- [Aggregation Operations (C#)](../../../../csharp/programming-guide/concepts/linq/aggregation-operations.md)  
+ [Aggregation Operations (C#)](./aggregation-operations.md)  
   
 ## See also
 
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>
-- [Introduction to LINQ Queries (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
-- [Query Expression Syntax for Standard Query Operators (C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)
-- [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)
-- [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)
+- [Introduction to LINQ Queries (C#)](./introduction-to-linq-queries.md)
+- [Query Expression Syntax for Standard Query Operators (C#)](./query-expression-syntax-for-standard-query-operators.md)
+- [Classification of Standard Query Operators by Manner of Execution (C#)](./classification-of-standard-query-operators-by-manner-of-execution.md)
+- [Extension Methods](../../classes-and-structs/extension-methods.md)

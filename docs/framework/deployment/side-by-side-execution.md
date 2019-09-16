@@ -29,7 +29,7 @@ Side-by-side execution is the ability to run multiple versions of an application
   
 - Strong-named assemblies.  
   
-     Side-by-side execution uses strong-named assemblies to bind type information to a specific version of an assembly. This prevents an application or component from binding to an invalid version of an assembly. Strong-named assemblies also allow multiple versions of a file to exist on the same computer and to be used by applications. For more information, see [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md).  
+     Side-by-side execution uses strong-named assemblies to bind type information to a specific version of an assembly. This prevents an application or component from binding to an invalid version of an assembly. Strong-named assemblies also allow multiple versions of a file to exist on the same computer and to be used by applications. For more information, see [Strong-Named Assemblies](../../standard/assembly/strong-named.md).  
   
 - Version-aware code storage.  
   
@@ -76,10 +76,10 @@ Side-by-side execution is the ability to run multiple versions of an application
 3. The runtime displays a message stating that the runtime version supported by the application is unavailable. The runtime is not loaded.  
   
     > [!NOTE]
-    >  You can suppress the display of this message by using the NoGuiFromShim value under the registry key HKLM\Software\Microsoft\\.NETFramework or using the environment variable COMPLUS_NoGuiFromShim. For example, you can suppress the message for applications that do not typically interact with the user, such as unattended installations or Windows services. When this message display is suppressed, the runtime writes a message to the event log.  Set the registry value NoGuiFromShim to 1 to suppress this message for all applications on a computer. Alternately, set the COMPLUS_NoGuiFromShim environment variable to 1 to suppress the message for applications running in a particular user context.  
+    > You can suppress the display of this message by using the NoGuiFromShim value under the registry key HKLM\Software\Microsoft\\.NETFramework or using the environment variable COMPLUS_NoGuiFromShim. For example, you can suppress the message for applications that do not typically interact with the user, such as unattended installations or Windows services. When this message display is suppressed, the runtime writes a message to the event log.  Set the registry value NoGuiFromShim to 1 to suppress this message for all applications on a computer. Alternately, set the COMPLUS_NoGuiFromShim environment variable to 1 to suppress the message for applications running in a particular user context.  
   
 > [!NOTE]
->  After a runtime version is loaded, assembly binding redirects can specify that a different version of an individual .NET Framework assembly be loaded. These binding redirects affect only the specific assembly that is redirected.  
+> After a runtime version is loaded, assembly binding redirects can specify that a different version of an individual .NET Framework assembly be loaded. These binding redirects affect only the specific assembly that is redirected.  
   
 ## Partially Qualified Assembly Names and Side-by-Side Execution  
  Because they are a potential source of side-by-side problems, partially qualified assembly references can be used only to bind to assemblies within an application directory. Avoid partially qualified assembly references in your code.  
@@ -101,7 +101,7 @@ publicKeyToken=...,
  Whenever an assembly load statement references `myAssembly`, these configuration file settings cause the runtime to automatically translate the partially qualified `myAssembly` reference to a fully qualified reference. For example, Assembly.Load("myAssembly") becomes Assembly.Load("myAssembly, version=1.0.0.0, publicKeyToken=..., culture=neutral").  
   
 > [!NOTE]
->  You can use the **LoadWithPartialName** method to bypass the common language runtime restriction that prohibits partially referenced assemblies from being loaded from the global assembly cache. This method should be used only in remoting scenarios as it can easily cause problems in side-by-side execution.  
+> You can use the **LoadWithPartialName** method to bypass the common language runtime restriction that prohibits partially referenced assemblies from being loaded from the global assembly cache. This method should be used only in remoting scenarios as it can easily cause problems in side-by-side execution.  
   
 ## Related Topics  
   
@@ -110,7 +110,7 @@ publicKeyToken=...,
 |[How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)|Describes how to bind an application to a specific version of an assembly.|  
 |[Configuring Assembly Binding Redirection](../../../docs/framework/deployment/configuring-assembly-binding-redirection.md)|Explains how to redirect assembly binding references to a specific version of the .NET Framework assemblies.|  
 |[In-Process Side-by-Side Execution](../../../docs/framework/deployment/in-process-side-by-side-execution.md)|Discusses how you can use in-process side-by-side runtime host activation to run multiple versions of the CLR in a single process.|  
-|[Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)|Provides a conceptual overview of assemblies.|  
+|[Assemblies in .NET](../../standard/assembly/index.md)|Provides a conceptual overview of assemblies.|  
 |[Application Domains](../../../docs/framework/app-domains/application-domains.md)|Provides a conceptual overview of application domains.|  
   
 ## Reference  

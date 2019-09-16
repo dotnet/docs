@@ -7,7 +7,7 @@ ms.assetid: fb64192d-b3ea-4e02-9fb3-46a508d26c60
 This sample demonstrates how to perform transacted two-way queued communication over MSMQ. This sample uses the `netMsmqBinding` binding. In this case, the service is a self-hosted console application that allows you to observe the service receiving queued messages.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample is based on the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md).  
   
@@ -67,7 +67,7 @@ public void SubmitPurchaseOrder(PurchaseOrder po, string reportOrderStatusTo)
  The MSMQ queue name is specified in an appSettings section of the configuration file. The endpoint for the service is defined in the System.ServiceModel section of the configuration file.  
   
 > [!NOTE]
->  The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local machine and backslash separators in its path. The Windows Communication Foundation (WCF) endpoint address specifies a net.msmq: scheme, uses "localhost" for the local machine, and uses forward slashes in its path. To read from a queue that is hosted on the remote machine, replace the "." and "localhost" to the remote machine name.  
+> The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local machine and backslash separators in its path. The Windows Communication Foundation (WCF) endpoint address specifies a net.msmq: scheme, uses "localhost" for the local machine, and uses forward slashes in its path. To read from a queue that is hosted on the remote machine, replace the "." and "localhost" to the remote machine name.  
   
  The service is self hosted. When using the MSMQ transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service checks for the existence of the queue and creates it, if necessary. The queue name is read from the configuration file. The base address is used by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the proxy to the service.  
 
@@ -219,7 +219,7 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
     > [!NOTE]
-    >  If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint names in the client configuration to match the client code.  
+    > If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint names in the client configuration to match the client code.  
   
  By default with the <xref:System.ServiceModel.NetMsmqBinding>, transport security is enabled. There are two relevant properties for MSMQ transport security, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> and <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A>`.` By default, the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain and the active directory integration option for MSMQ must be installed. If you run this sample on a computer that does not satisfy these criteria you receive an error.  
   
@@ -314,13 +314,13 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
 4. Ensure that you change the configuration on both the server and the client before you run the sample.  
   
     > [!NOTE]
-    >  Setting `security mode` to `None` is equivalent to setting <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A>, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> or `Message` security to `None`.  
+    > Setting `security mode` to `None` is equivalent to setting <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A>, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> or `Message` security to `None`.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Binding\Net\MSMQ\Two-Way`  
+> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Binding\Net\MSMQ\Two-Way`  

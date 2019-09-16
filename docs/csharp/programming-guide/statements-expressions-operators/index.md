@@ -23,8 +23,6 @@ The C# code that comprises an application consists of statements made up of keyw
 
   - [Expression-bodied members](expression-bodied-members.md)
 
-- [Operators](operators.md)
-
 - [Anonymous Functions](anonymous-functions.md)
 
 - [Equality Comparisons](equality-comparisons.md)
@@ -35,5 +33,5 @@ The C# code that comprises an application consists of statements made up of keyw
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
+- [C# Programming Guide](../index.md)
+- [Casting and Type Conversions](../types/casting-and-type-conversions.md)

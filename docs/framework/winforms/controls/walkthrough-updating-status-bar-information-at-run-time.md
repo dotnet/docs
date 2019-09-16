@@ -14,7 +14,7 @@ ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
 ---
 # Walkthrough: Updating Status Bar Information at Run Time
 > [!IMPORTANT]
->  The <xref:System.Windows.Forms.StatusStrip> and <xref:System.Windows.Forms.ToolStripStatusLabel> controls replace and add functionality to the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls; however, the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls are retained for both backward compatibility and future use, if you choose.  
+> The <xref:System.Windows.Forms.StatusStrip> and <xref:System.Windows.Forms.ToolStripStatusLabel> controls replace and add functionality to the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls; however, the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls are retained for both backward compatibility and future use, if you choose.  
   
  Often, a program will call for you to update the contents of status bar panels dynamically at run time, based on changes to application state or other user interaction. This is a common way to signal users that keys such as the CAPS LOCK, NUM LOCK, or SCROLL LOCK are enabled, or to provide the date or a clock as a convenient reference.  
   
@@ -33,14 +33,14 @@ ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
 5. Add a Windows Forms <xref:System.Windows.Forms.Timer> component to the form.  
   
     > [!NOTE]
-    >  The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
+    > The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
   
 6. Set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `true`.  
   
 7. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property of the <xref:System.Windows.Forms.Timer> to 30000.  
   
     > [!NOTE]
-    >  The <xref:System.Windows.Forms.Timer.Interval%2A> property of the <xref:System.Windows.Forms.Timer> component is set to 30 seconds (30,000 milliseconds) to ensure that an accurate time is reflected in the time displayed.  
+    > The <xref:System.Windows.Forms.Timer.Interval%2A> property of the <xref:System.Windows.Forms.Timer> component is set to 30 seconds (30,000 milliseconds) to ensure that an accurate time is reflected in the time displayed.  
   
 ### To implement the timer to update the status bar  
   
@@ -76,7 +76,7 @@ ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
 1. Debug the application and press F5 to run it. For details about debugging, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
   
     > [!NOTE]
-    >  It will take approximately 30 seconds for the clock to appear in the status bar. This is to get the most accurate time possible. Conversely, to make the clock appear sooner, you can reduce the value of the <xref:System.Windows.Forms.Timer.Interval%2A> property you set in step 7 in the previous procedure.  
+    > It will take approximately 30 seconds for the clock to appear in the status bar. This is to get the most accurate time possible. Conversely, to make the clock appear sooner, you can reduce the value of the <xref:System.Windows.Forms.Timer.Interval%2A> property you set in step 7 in the previous procedure.  
   
 ## See also
 

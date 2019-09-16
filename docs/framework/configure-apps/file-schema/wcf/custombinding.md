@@ -8,9 +8,10 @@ ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b
 
 Provides full control over the messaging stack for the user.
 
-\<system.serviceModel>\
-\<bindings>\
-\<customBinding>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<customBinding>**  
 
 ## Syntax
 
@@ -176,7 +177,7 @@ The following sections describe attributes, child elements, and parent elements
 |Attribute|Description|
 |---------------|-----------------|
 |closeTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for a close operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
-|name|A string that contains the configuration name of the binding. This value is a user-defined string that acts as the identification string for the custom binding. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).|
+|name|A string that contains the configuration name of the binding. This value is a user-defined string that acts as the identification string for the custom binding. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).|
 |openTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for an open operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
 |receiveTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for a receive operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
 |sendTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for a send operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
@@ -185,13 +186,13 @@ The following sections describe attributes, child elements, and parent elements
 
 |Element|Description|
 |-------------|-----------------|
-|[\<compositeDuplex>](../../../../../docs/framework/configure-apps/file-schema/wcf/compositeduplex.md)|Specifies two-way messaging to the custom binding. It is used with transports that do not allow duplex communications natively, for example, HTTP. TCP, by contrast, allows duplex communications natively, and does not require the use of this binding element for the service to send messages back to a client.<br /><br /> The client must expose an address for the service to make contact and establish a connection. This client address is provided by the `ClientBaseAddress` attribute.<br /><br /> This element is of type <xref:System.ServiceModel.Configuration.CompositeDuplexElement>.|
-|[\<pnrpPeerResolver>](../../../../../docs/framework/configure-apps/file-schema/wcf/pnrppeerresolver.md)|Specifies a Peer Name Resolution Protocol (PNRP) peer name resolver. This element is of type <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>.|
-|[\<reliableSession>](../../../../../docs/framework/configure-apps/file-schema/wcf/reliablesession.md)|Specifies the setting for WS-Reliable Messaging. When this element is added to a custom binding, the resulting channel can support exactly-once delivery assurances. This element is of type <xref:System.ServiceModel.Configuration.ReliableSessionElement>.|
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md)|Specifies the options for security of the custom binding. This element is of type <xref:System.ServiceModel.Configuration.SecurityElement>.|
-|[\<sslStreamSecurity>](../../../../../docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md)|Specifies the security settings for a SSL stream binding. This element is of type <xref:System.ServiceModel.Configuration.SslStreamSecurityElement>.|
-|[\<transactionFlow>](../../../../../docs/framework/configure-apps/file-schema/wcf/transactionflow.md)|Specifies that the binding supports transaction flow, and the protocol to be used by the `transactionProtocol` attribute. This element is of type <xref:System.ServiceModel.Configuration.TransactionFlowElement>.|
-|[\<windowsStreamSecurity>](../../../../../docs/framework/configure-apps/file-schema/wcf/windowsstreamsecurity.md)|Specifies the options for streaming security of the custom binding. This element is of type <xref:System.ServiceModel.Configuration.WindowsStreamSecurityElement>.|
+|[\<compositeDuplex>](compositeduplex.md)|Specifies two-way messaging to the custom binding. It is used with transports that do not allow duplex communications natively, for example, HTTP. TCP, by contrast, allows duplex communications natively, and does not require the use of this binding element for the service to send messages back to a client.<br /><br /> The client must expose an address for the service to make contact and establish a connection. This client address is provided by the `ClientBaseAddress` attribute.<br /><br /> This element is of type <xref:System.ServiceModel.Configuration.CompositeDuplexElement>.|
+|[\<pnrpPeerResolver>](pnrppeerresolver.md)|Specifies a Peer Name Resolution Protocol (PNRP) peer name resolver. This element is of type <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>.|
+|[\<reliableSession>](reliablesession.md)|Specifies the setting for WS-Reliable Messaging. When this element is added to a custom binding, the resulting channel can support exactly-once delivery assurances. This element is of type <xref:System.ServiceModel.Configuration.ReliableSessionElement>.|
+|[\<security>](security-of-custombinding.md)|Specifies the options for security of the custom binding. This element is of type <xref:System.ServiceModel.Configuration.SecurityElement>.|
+|[\<sslStreamSecurity>](sslstreamsecurity.md)|Specifies the security settings for a SSL stream binding. This element is of type <xref:System.ServiceModel.Configuration.SslStreamSecurityElement>.|
+|[\<transactionFlow>](transactionflow.md)|Specifies that the binding supports transaction flow, and the protocol to be used by the `transactionProtocol` attribute. This element is of type <xref:System.ServiceModel.Configuration.TransactionFlowElement>.|
+|[\<windowsStreamSecurity>](windowsstreamsecurity.md)|Specifies the options for streaming security of the custom binding. This element is of type <xref:System.ServiceModel.Configuration.WindowsStreamSecurityElement>.|
 
 ### Parent Elements
 
@@ -285,7 +286,7 @@ The following table summarizes the options for each layer.
 
 In addition, you can define your own binding elements and insert them between any of the preceding defined layers.
 
-For a discussion on how to use a custom binding to modify a system-provided binding, see [How to: Customize a System-Provided Binding](../../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md).
+For a discussion on how to use a custom binding to modify a system-provided binding, see [How to: Customize a System-Provided Binding](../../../wcf/extending/how-to-customize-a-system-provided-binding.md).
 
 ## See also
 
@@ -293,11 +294,11 @@ For a discussion on how to use a custom binding to modify a system-provided bind
 - <xref:System.ServiceModel.Channels.BindingElement>
 - <xref:System.ServiceModel.Configuration.BindingsSection>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [customBinding Element](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [customBinding Element](custombinding.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)

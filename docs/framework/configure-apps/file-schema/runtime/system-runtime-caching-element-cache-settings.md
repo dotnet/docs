@@ -13,8 +13,8 @@ ms.author: "ronpet"
 
 Provides configuration for the default in-memory <xref:System.Runtime.Caching.ObjectCache> implementation through the `memoryCache` entry in the configuration file.  
   
- \<configuration>  
-\<system.runtime.caching>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.runtime.caching>**  
   
 ## Syntax  
   
@@ -36,20 +36,20 @@ The following sections describe attributes, child elements, and parent elements.
 
 |Element|Description|  
 |-------------|-----------------|  
-|[\<memoryCache>](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)|Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class.|  
+|[\<memoryCache>](memorycache-element-cache-settings.md)|Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<configuration>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
+|[\<configuration>](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
   
 ## Remarks
 
-The classes in this namespace provide a way to use caching facilities like those in ASP.NET, but without a dependency on the `System.Web` assembly. For more information, see [Caching in .NET Framework Applications](../../../../../docs/framework/performance/caching-in-net-framework-applications.md).  
+The classes in this namespace provide a way to use caching facilities like those in ASP.NET, but without a dependency on the `System.Web` assembly. For more information, see [Caching in .NET Framework Applications](../../../performance/caching-in-net-framework-applications.md).  
   
 > [!NOTE]
->  The output caching functionality and types in the <xref:System.Runtime.Caching> namespace are new in .NET Framework 4.  
+> The output caching functionality and types in the <xref:System.Runtime.Caching> namespace are new in .NET Framework 4.  
   
 ## Example
 

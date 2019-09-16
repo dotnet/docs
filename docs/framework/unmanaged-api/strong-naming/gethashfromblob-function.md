@@ -22,7 +22,7 @@ ms.author: "ronpet"
 
 Gets a hash of the assembly at the specified memory address, using the specified hash algorithm.
 
-This function has been deprecated. Use the [ICLRStrongName::GetHashFromBlob](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromblob-method.md) method instead.
+This function has been deprecated. Use the [ICLRStrongName::GetHashFromBlob](../hosting/iclrstrongname-gethashfromblob-method.md) method instead.
 
 ## Syntax
 
@@ -59,7 +59,7 @@ HRESULT GetHashFromBlob (
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** StrongName.h
 

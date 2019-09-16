@@ -18,4 +18,4 @@ This topic discusses security issues in LINQ to DataSet.
   
 ## See also
 
-- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
+- [Programming Guide](programming-guide-linq-to-dataset.md)

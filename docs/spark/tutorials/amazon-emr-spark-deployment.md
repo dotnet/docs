@@ -14,6 +14,7 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Amazo
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > * Prepare Microsoft.Spark.Worker
 > * Publish your Spark .NET app
 > * Deploy your app to Amazon EMR Spark
@@ -104,7 +105,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
    ```bash
    spark-submit \
    --master yarn \
-   --class org.apache.spark.deploy.DotnetRunner \
+   --class org.apache.spark.deploy.dotnet.DotnetRunner \
    --files <comma-separated list of assemblies that contain UDF definitions, if any> \
    s3://mybucket/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar \
    s3://mybucket/<some dir>/<your app>.zip <your app> <app args>
@@ -119,7 +120,7 @@ Run the following command on Linux using AWS CLI.
 ```bash
 aws emr add-steps \
 --cluster-id j-xxxxxxxxxxxxx \
---steps Type=spark,Name="Spark Program",Args=[--master,yarn,--files,s3://mybucket/<some dir>/<udf assembly>,--class,org.apache.spark.deploy.DotnetRunner,s3://mybucket/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar,s3://mybucket/<some dir>/<your app>.zip,<your app>,<app arg 1>,<app arg 2>,...,<app arg n>],ActionOnFailure=CONTINUE
+--steps Type=spark,Name="Spark Program",Args=[--master,yarn,--files,s3://mybucket/<some dir>/<udf assembly>,--class,org.apache.spark.deploy.dotnet.DotnetRunner,s3://mybucket/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar,s3://mybucket/<some dir>/<your app>.zip,<your app>,<app arg 1>,<app arg 2>,...,<app arg n>],ActionOnFailure=CONTINUE
 ```
 
 ## Next steps

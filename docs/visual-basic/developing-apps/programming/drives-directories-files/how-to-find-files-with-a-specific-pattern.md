@@ -13,7 +13,7 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A> method r
  An empty collection is returned if no files matching the specified pattern are found.  
   
 > [!NOTE]
->  For information about returning a file list by using the `DirectoryInfo` class of the `System.IO` namespace, see <xref:System.IO.DirectoryInfo.GetFiles%2A>.  
+> For information about returning a file list by using the `DirectoryInfo` class of the `System.IO` namespace, see <xref:System.IO.DirectoryInfo.GetFiles%2A>.  
   
 ### To find files with a specified pattern  
   

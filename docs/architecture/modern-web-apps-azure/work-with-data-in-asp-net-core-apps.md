@@ -19,11 +19,15 @@ If you're writing a new ASP.NET Core application that needs to work with relatio
 
 To use EF Core with a SQL Server database, run the following dotnet CLI command:
 
+```console
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+```
 
 To add support for an InMemory data source, for testing:
 
+```console
 dotnet add package Microsoft.EntityFrameworkCore.InMemory
+```
 
 ### The DbContext
 
@@ -66,9 +70,9 @@ Once you have installed EF Core, created a DbContext child type, and configured 
 
 You can see the queries EF Core is executing by configuring a logger and ensuring its level is set to at least Information, as shown in Figure 8-1.
 
-![](./media/image8-1.png)
+![Logging EF Core queries to the console](./media/image8-1.png)
 
-Figure 8-1 Logging EF Core queries to the console
+**Figure 8-1**. Logging EF Core queries to the console
 
 ### Fetching and storing Data
 

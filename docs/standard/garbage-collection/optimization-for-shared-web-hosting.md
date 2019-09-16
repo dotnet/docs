@@ -16,7 +16,7 @@ If you are the administrator for a server that is shared by hosting several smal
  `<gcTrimCommitOnLowMemory enabled="true|false"/>`  
   
 > [!NOTE]
->  This setting is recommended only for shared Web hosting scenarios.  
+> This setting is recommended only for shared Web hosting scenarios.  
   
  Because the garbage collector retains memory for future allocations, its committed space can be more than what is strictly needed. You can reduce this space to accommodate times when there is a heavy load on system memory. Reducing this committed space improves performance and expands the capacity to host more sites.  
   

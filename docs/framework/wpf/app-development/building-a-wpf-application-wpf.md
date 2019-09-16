@@ -18,7 +18,7 @@ Windows Presentation Foundation (WPF) applications can be built as .NET Framewor
 
 A WPF application can be compiled in the following ways:
 
-- Command-line. The application must contain only code (no XAML) and an application definition file. For more information, see [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Building from the Command Line (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md).
+- Command-line. The application must contain only code (no XAML) and an application definition file. For more information, see [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Building from the Command Line (Visual Basic)](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).
 
 - Microsoft Build Engine (MSBuild). In addition to the code and XAML files, the application must contain an MSBuild project file. For more information, see "MSBuild".
 
@@ -36,7 +36,7 @@ When a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] pro
 
 ### Pre-Build Initializations
 
-Before building, [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] determines the location of important tools and libraries, including the following:
+Before building, MSBuild determines the location of important tools and libraries, including the following:
 
 - The .NET Framework.
 
@@ -46,7 +46,7 @@ Before building, [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-m
 
 - The property for the assembly search paths.
 
-The first location where [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] searches for assemblies is the reference assembly directory (%ProgramFiles%\Reference Assemblies\Microsoft\Framework\v3.0\\). During this step, the build process also initializes the various properties and item groups and performs any required cleanup work.
+The first location where MSBuild searches for assemblies is the reference assembly directory (%ProgramFiles%\Reference Assemblies\Microsoft\Framework\v3.0\\). During this step, the build process also initializes the various properties and item groups and performs any required cleanup work.
 
 <a name="Resolving_references"></a>
 
@@ -102,7 +102,7 @@ Public Sub InitializeComponent() _
 End Sub
 ```
 
-By default, markup compilation runs in the same <xref:System.AppDomain> as the [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] engine. This provides significant performance gains. This behavior can be toggled with the `AlwaysCompileMarkupFilesInSeparateDomain` property. This has the advantage of unloading all reference assemblies by unloading the separate <xref:System.AppDomain>.
+By default, markup compilation runs in the same <xref:System.AppDomain> as the MSBuild engine. This provides significant performance gains. This behavior can be toggled with the `AlwaysCompileMarkupFilesInSeparateDomain` property. This has the advantage of unloading all reference assemblies by unloading the separate <xref:System.AppDomain>.
 
 <a name="Pass_2_of_Markup_Compilation"></a>
 

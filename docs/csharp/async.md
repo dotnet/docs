@@ -6,7 +6,6 @@ ms.date: 06/20/2016
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
 ms.custom: seodec18
 ---
-
 # Asynchronous programming
 
 If you have any I/O-bound needs (such as requesting data from a network or accessing a database), you'll want to utilize asynchronous programming.  You could also have CPU-bound code, such as performing an expensive calculation, which is also a good scenario for writing async code.

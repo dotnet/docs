@@ -12,7 +12,7 @@ The **CreateEntityReference** method creates a new **XmlEntityReference** node. 
  When the nodes are copied, there may be a namespace in scope at the point of the entity reference. This namespace affects the configuration of any element or attribute nodes generated.  
   
 > [!NOTE]
->  The DOM adds child nodes to the **EntityReference** only when you insert the **EntityReference** node to the document. Newly created **EntityReference** nodes have no child nodes.  
+> The DOM adds child nodes to the **EntityReference** only when you insert the **EntityReference** node to the document. Newly created **EntityReference** nodes have no child nodes.  
   
  Even though the **XmlDataDocument** is a derived class of the **XmlDocument**, the **XmlDataDocument** does not support the creation of entity references. This is because **EntityReference** children are read-only. The children of an **EntityReference** node can span more than one region. In this case, part of a row associated with the region that contains a part of an **EntityReference** will be read-only.  
   

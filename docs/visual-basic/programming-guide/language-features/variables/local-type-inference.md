@@ -19,10 +19,10 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
  [!code-vb[VbVbalrTypeInference#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#1)]  
  
 > [!NOTE]
->  If you do not want `num2` in the previous example to be typed as an `Integer`, you can specify another type by using a declaration like `Dim num3 As Object = 3` or `Dim num4 As Double = 3`.  
+> If you do not want `num2` in the previous example to be typed as an `Integer`, you can specify another type by using a declaration like `Dim num3 As Object = 3` or `Dim num4 As Double = 3`.  
 
 > [!NOTE]
->  Type inference can be used only for non-static local variables; it cannot be used to determine the type of class fields, properties, or functions.
+> Type inference can be used only for non-static local variables; it cannot be used to determine the type of class fields, properties, or functions.
  
  Local type inference applies at procedure level. It cannot be used to declare variables at module level (within a class, structure, module, or interface but not within a procedure or block). If `num2` in the previous example were a field of a class instead of a local variable in a procedure, the declaration would cause an error with `Option Strict` on, and would classify `num2` as an `Object` with `Option Strict` off. Similarly, local type inference does not apply to procedure level variables declared as `Static`.  
   

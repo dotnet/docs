@@ -243,7 +243,7 @@ You can implement the SERVICE_START_PENDING and SERVICE_STOP_PENDING status sett
     ```
 
     > [!NOTE]
-    > The Service Control Manager uses the `dwWaitHint` and `dwCheckpoint` members of the [SERVICE_STATUS structure](/windows/desktop/api/winsvc/ns-winsvc-_service_status) to determine how much time to wait for a Windows service to start or shut down. If your `OnStart` and `OnStop` methods run long, your service can request more time by calling `SetServiceStatus` again with an incremented `dwCheckPoint` value.
+    > The Service Control Manager uses the `dwWaitHint` and `dwCheckpoint` members of the [SERVICE_STATUS structure](/windows/win32/api/winsvc/ns-winsvc-service_status) to determine how much time to wait for a Windows service to start or shut down. If your `OnStart` and `OnStop` methods run long, your service can request more time by calling `SetServiceStatus` again with an incremented `dwCheckPoint` value.
 
 3. In the `MyNewService` class, declare the [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) function by using [platform invoke](../interop/consuming-unmanaged-dll-functions.md):
 
@@ -532,7 +532,7 @@ If you no longer need the Windows service app, you can remove it.
 
 Now that you've created the service, you can:
 
-- Create a standalone setup program for others to use to install your Windows service. Use the [WiX Toolset](http://wixtoolset.org/) to create an installer for a Windows service. For other ideas, see [Create an installer package](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
+- Create a standalone setup program for others to use to install your Windows service. Use the [WiX Toolset](https://wixtoolset.org/) to create an installer for a Windows service. For other ideas, see [Create an installer package](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
 
 - Explore the <xref:System.ServiceProcess.ServiceController> component, which enables you to send commands to the service you've installed.
 

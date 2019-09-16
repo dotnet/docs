@@ -41,7 +41,7 @@ foreach(string str in cList)
   
  This code produces the following output:  
   
-```  
+```output  
 Child One Text  
 Child Two Text  
 Child Four Text  
@@ -83,7 +83,7 @@ foreach (string str in cList)
   
  This code produces the following output:  
   
-```  
+```output  
 Child One Text  
 Child Two Text  
 Child Four Text  
@@ -94,5 +94,5 @@ Child Four Text
 - <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [Projection Operations (C#)](./projection-operations.md)

@@ -13,7 +13,7 @@ This sample demonstrates the use of SSL transport security in combination with c
  This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. The `wsHttpBinding` binding is specified and configured in the application configuration files for the client and service.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The program code in the sample is almost identical to that of the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) service. There is one additional operation provided by the service contract - `GetCallerIdentity`. This operation returns the name of the caller's identity to the caller.  
 

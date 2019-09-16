@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 151ec95e-3c4d-4ed7-885d-95b7a3be2e7d
 ---
 # Static Constructors (C# Programming Guide)
-A static constructor is used to initialize any [static](../../../csharp/language-reference/keywords/static.md) data, or to perform a particular action that needs to be performed once only. It is called automatically before the first instance is created or any static members are referenced.  
+A static constructor is used to initialize any [static](../../language-reference/keywords/static.md) data, or to perform a particular action that needs to be performed once only. It is called automatically before the first instance is created or any static members are referenced.  
   
  [!code-csharp[csProgGuideObjects#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#14)]  
  
@@ -25,9 +25,9 @@ Static constructors have the following properties:
 
 - The user has no control on when the static constructor is executed in the program.
   
-- A static constructor is called automatically to initialize the [class](../../../csharp/language-reference/keywords/class.md) before the first instance is created or any static members are referenced. A static constructor will run before an instance constructor. Note that a type's static constructor is called when a static method assigned to an event or a delegate is invoked and not when it is assigned. If static field variable initializers are present in the class of the static constructor, they will be executed in the textual order in which they appear in the class declaration immediately prior to the execution of the static constructor.
+- A static constructor is called automatically to initialize the [class](../../language-reference/keywords/class.md) before the first instance is created or any static members are referenced. A static constructor will run before an instance constructor. Note that a type's static constructor is called when a static method assigned to an event or a delegate is invoked and not when it is assigned. If static field variable initializers are present in the class of the static constructor, they will be executed in the textual order in which they appear in the class declaration immediately prior to the execution of the static constructor.
 
-- If you don't provide a static constructor to initialize static fields, all static fields are initialized to their default value as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). 
+- If you don't provide a static constructor to initialize static fields, all static fields are initialized to their default value as listed in the [Default Values Table](../../language-reference/keywords/default-values-table.md). 
   
 - If a static constructor throws an exception, the runtime will not invoke it a second time, and the type will remain uninitialized for the lifetime of the application domain in which your program is running. Most commonly, a <xref:System.TypeInitializationException> exception is thrown when a static constructor is unable to instantiate a type or for an unhandled exception occurring within a static constructor. For implicit static constructors that are not explicitly defined in source code, troubleshooting may require inspection of the intermediate language (IL) code.
 
@@ -55,10 +55,10 @@ For more information, see the [Static constructors](~/_csharplang/spec/classes.m
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
-- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
-- [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
-- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+- [C# Programming Guide](../index.md)
+- [Classes and Structs](./index.md)
+- [Constructors](./constructors.md)
+- [Static Classes and Static Class Members](./static-classes-and-static-class-members.md)
+- [Finalizers](./destructors.md)
 - [Constructor Design Guidelines](../../../standard/design-guidelines/constructor.md#type-constructor-guidelines)
 - [Security Warning - CA2121: Static constructors should be private](https://docs.microsoft.com/visualstudio/code-quality/ca2121-static-constructors-should-be-private)

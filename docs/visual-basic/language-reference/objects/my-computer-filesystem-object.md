@@ -22,7 +22,7 @@ Provides properties and methods for working with drives, files, and directories.
  For more information, see [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
 > [!NOTE]
->  You can also use classes in the <xref:System.IO?displayProperty=nameWithType> namespace to work with drives, files, and directories.  
+> You can also use classes in the <xref:System.IO?displayProperty=nameWithType> namespace to work with drives, files, and directories.  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.MyServices>  

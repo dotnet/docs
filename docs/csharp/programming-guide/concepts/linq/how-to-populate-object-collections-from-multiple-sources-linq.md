@@ -12,7 +12,7 @@ This example shows how to merge data from different sources into a sequence of n
 
 ## To create the data file
 
-Copy the names.csv and scores.csv files into your project folder, as described in [How to: Join Content from Dissimilar Files (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md).
+Copy the names.csv and scores.csv files into your project folder, as described in [How to: Join Content from Dissimilar Files (LINQ) (C#)](./how-to-join-content-from-dissimilar-files-linq.md).
 
 ## Example
 
@@ -101,7 +101,7 @@ class PopulateCollection
  */
 ```
 
-In the [select](../../../../csharp/language-reference/keywords/select-clause.md) clause, an object initializer is used to instantiate each new `Student` object by using the data from the two sources.
+In the [select](../../../language-reference/keywords/select-clause.md) clause, an object initializer is used to instantiate each new `Student` object by using the data from the two sources.
 
 If you don't have to store the results of a query, anonymous types can be more convenient than named types. Named types are required if you pass the query results outside the method in which the query is executed. The following example executes the same task as the previous example, but uses anonymous types instead of named types:
 
@@ -135,6 +135,6 @@ foreach (var student in queryNamesScores2)
 
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
-- [Object and Collection Initializers](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
-- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)
+- [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md)
+- [Anonymous Types](../../classes-and-structs/anonymous-types.md)

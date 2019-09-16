@@ -6,8 +6,10 @@ ms.assetid: 929f223d-176d-4205-9505-234ddb6dbff4
 # \<dynamicEndpoint>
 This configuration element defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at runtime.  
   
-\<system.ServiceModel>  
-\<standardEndpoints>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dynamicEndpoint>**  
   
 ## Syntax  
   
@@ -46,13 +48,13 @@ This configuration element defines a standard endpoint that contains information
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<discoveryClientSettings>](../../../../../docs/framework/configure-apps/file-schema/wcf/discoveryclientsettings.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
+|[\<discoveryClientSettings>](discoveryclientsettings.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
+|[\<standardEndpoints>](standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
 ## See also
 

@@ -6,11 +6,12 @@ ms.assetid: bbadd8dd-60a2-4007-b959-89373a8a7d60
 # \<byteStreamMessageEncoding>
 Specifies the message encoding as a stream of bytes, with the option to specify the character encoding.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<binaryMessageEncoding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<byteStreamMessageEncoding>**  
   
 ## Syntax  
   
@@ -37,7 +38,7 @@ Specifies the message encoding as a stream of bytes, with the option to specify 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## See also
 
@@ -45,9 +46,9 @@ Specifies the message encoding as a stream of bytes, with the option to specify 
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
 - <xref:System.ServiceModel.Channels.ByteStreamMessageEncodingBindingElement>
-- [Message Encoding](../../../../../docs/framework/configure-apps/file-schema/wcf/message-encoding.md)
-- [Choosing a Message Encoder](../../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Message Encoding](message-encoding.md)
+- [Choosing a Message Encoder](../../../wcf/feature-details/choosing-a-message-encoder.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

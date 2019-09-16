@@ -26,13 +26,13 @@ HRESULT CertTimestampAuthenticodeLicense (
   
 ## Parameters  
  `pSignedLicenseBlob`  
- [in] The signed Authenticode XrML license to be time-stamped. See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
+ [in] The signed Authenticode XrML license to be time-stamped. See the [CRYPTOAPI_BLOB](/windows/win32/api/dpapi/ns-dpapi-crypt_integer_blob) structure.  
   
  `pwszTimestampURI`  
  [in] The time-stamp server's URI.  
   
  `pTimestampSignatureBlob`  
- [out] A pointer to CRYPT_DATA_BLOB to receive the base64-encoded time-stamp signature. It is the caller's responsibility to free `pTimestampSignatureBlob`->`pbData` with `HepFree()` after use. See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
+ [out] A pointer to CRYPT_DATA_BLOB to receive the base64-encoded time-stamp signature. It is the caller's responsibility to free `pTimestampSignatureBlob`->`pbData` with `HepFree()` after use. See the [CRYPTOAPI_BLOB](/windows/win32/api/dpapi/ns-dpapi-crypt_integer_blob) structure.  
   
 ## Remarks  
  The time-stamp signature is actually a PKCS #7 SignedData message whose content is the binary form of the SignatureValue from the license's signature. Basically, this acts as a counter-signature of the license.  
@@ -42,4 +42,4 @@ HRESULT CertTimestampAuthenticodeLicense (
   
 ## See also
 
-- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [Authenticode](index.md)

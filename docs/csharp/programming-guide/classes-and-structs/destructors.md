@@ -50,7 +50,7 @@ protected override void Finalize()
  This means that the `Finalize` method is called recursively for all instances in the inheritance chain, from the most-derived to the least-derived.  
   
 > [!NOTE]
->  Empty finalizers should not be used. When a class contains a finalizer, an entry is created in the `Finalize` queue. When the finalizer is called, the garbage collector is invoked to process the queue. An empty finalizer just causes a needless loss of performance.  
+> Empty finalizers should not be used. When a class contains a finalizer, an entry is created in the `Finalize` queue. When the finalizer is called, the garbage collector is invoked to process the queue. An empty finalizer just causes a needless loss of performance.  
   
  The programmer has no control over when the finalizer is called because this is determined by the garbage collector. The garbage collector checks for objects that are no longer being used by the application. If it considers an object eligible for finalization, it calls the finalizer (if any) and reclaims the memory used to store the object. 
  
@@ -70,7 +70,7 @@ protected override void Finalize()
   
 - [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)  
   
-- [using Statement](../../../csharp/language-reference/keywords/using-statement.md)  
+- [using Statement](../../language-reference/keywords/using-statement.md)  
   
 ## Example  
  The following example creates three classes that make a chain of inheritance. The class `First` is the base class, `Second` is derived from `First`, and `Third` is derived from `Second`. All three have finalizers. In `Main`, an instance of the most-derived class is created. When the program runs, notice that the finalizers for the three classes are called automatically, and in order, from the most-derived to the least-derived.  
@@ -84,6 +84,6 @@ For more information, see the [Destructors](~/_csharplang/spec/classes.md#destru
 ## See also
 
 - <xref:System.IDisposable>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
+- [C# Programming Guide](../index.md)
+- [Constructors](./constructors.md)
 - [Garbage Collection](../../../standard/garbage-collection/index.md)

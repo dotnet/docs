@@ -41,10 +41,10 @@ To override the `ToString` method in your class or struct:
 ## See also
 
 - <xref:System.IFormattable>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
-- [Strings](../../../csharp/programming-guide/strings/index.md)
-- [string](../../../csharp/language-reference/keywords/string.md)
-- [override](../../../csharp/language-reference/keywords/override.md)
-- [virtual](../../../csharp/language-reference/keywords/virtual.md)
+- [C# Programming Guide](../index.md)
+- [Classes and Structs](./index.md)
+- [Strings](../strings/index.md)
+- [string](../../language-reference/keywords/string.md)
+- [override](../../language-reference/keywords/override.md)
+- [virtual](../../language-reference/keywords/virtual.md)
 - [Formatting Types](../../../standard/base-types/formatting-types.md)

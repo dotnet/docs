@@ -6,11 +6,11 @@ helpviewer_keywords:
 ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
 ---
 # Typography in WPF
-This topic introduces the major typographic features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. These features include improved quality and performance of text rendering, [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs).  
+This topic introduces the major typographic features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. These features include improved quality and performance of text rendering, OpenType typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs).  
   
 <a name="Improved_Quality_and_Performance_of_Text"></a>   
 ## Improved Quality and Performance of Text  
- Text in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is rendered using Microsoft ClearType, which enhances the clarity and readability of text. ClearType is a software technology developed by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. ClearType uses sub-pixel rendering which allows text to be displayed with a greater fidelity to its true shape by aligning characters on a fractional part of a pixel. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations. Another improvement of ClearType in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is y-direction anti-aliasing, which smoothes the tops and bottoms of shallow curves in text characters. For more details on ClearType features, see [ClearType Overview](cleartype-overview.md).  
+ Text in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is rendered using Microsoft ClearType, which enhances the clarity and readability of text. ClearType is a software technology developed by Microsoft that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. ClearType uses sub-pixel rendering which allows text to be displayed with a greater fidelity to its true shape by aligning characters on a fractional part of a pixel. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations. Another improvement of ClearType in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is y-direction anti-aliasing, which smoothes the tops and bottoms of shallow curves in text characters. For more details on ClearType features, see [ClearType Overview](cleartype-overview.md).  
   
  ![Text with ClearType y-direction anti-aliasing](./media/typography-in-wpf/text-y-direction-antialiasing.gif)  
 Text with ClearType y-direction antialiasing  
@@ -23,9 +23,9 @@ Text with ClearType y-direction antialiasing
   
 <a name="Rich_Typography"></a>   
 ## Rich Typography  
- The [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] font format is an extension of the [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] font format. The [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] font format was developed jointly by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] and Adobe, and provides a rich assortment of advanced typographic features. The <xref:System.Windows.Documents.Typography> object exposes many of the advanced features of [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] fonts, such as stylistic alternates and swashes. The [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)] provides a set of sample [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] fonts that are designed with rich features, such as the Pericles and Pescadero fonts. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
+ The OpenType font format is an extension of the [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] font format. The OpenType font format was developed jointly by Microsoft and Adobe, and provides a rich assortment of advanced typographic features. The <xref:System.Windows.Documents.Typography> object exposes many of the advanced features of OpenType fonts, such as stylistic alternates and swashes. The Windows SDK provides a set of sample OpenType fonts that are designed with rich features, such as the Pericles and Pescadero fonts. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
- The Pericles [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
+ The Pericles OpenType font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
   
  ![Text using OpenType stylistic alternate glyphs](./media/typography-in-wpf/opentype-stylistic-alternate-glyphs.gif "Text using OpenType stylistic alternate glyphs")  
   
@@ -33,7 +33,7 @@ Text with ClearType y-direction antialiasing
   
  ![Text using OpenType standard and swash glyphs](./media/typography-in-wpf/opentype-standard-swash-glyphs.gif "Text using OpenType standard and swash glyphs")  
   
- For more details on [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] features, see [OpenType Font Features](opentype-font-features.md).  
+ For more details on OpenType features, see [OpenType Font Features](opentype-font-features.md).  
   
 <a name="Enhanced_International_Text_Support"></a>   
 ## Enhanced International Text Support  

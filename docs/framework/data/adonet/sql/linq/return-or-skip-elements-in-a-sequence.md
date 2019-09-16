@@ -12,7 +12,7 @@ Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number o
  Use the <xref:System.Linq.Queryable.Skip%2A> operator to skip over a given number of elements in a sequence and then return the remainder.  
   
 > [!NOTE]
->  <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md).  
+> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).  
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates <xref:System.Linq.Queryable.Skip%2A> by using a subquery with the SQL `NOT EXISTS` clause. This translation has the following limitations:  
   
@@ -43,7 +43,7 @@ Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number o
  Because of the limitations on ordering in SQL, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to move the ordering of the argument of the <xref:System.Linq.Queryable.Take%2A> or <xref:System.Linq.Queryable.Skip%2A> operator to the result of the operator.  
   
 > [!NOTE]
->  Translation is different for SQL Server 2000 and SQL Server 2005. If you plan to use <xref:System.Linq.Queryable.Skip%2A> with a query of any complexity, use SQL Server 2005.  
+> Translation is different for SQL Server 2000 and SQL Server 2005. If you plan to use <xref:System.Linq.Queryable.Skip%2A> with a query of any complexity, use SQL Server 2005.  
   
  Consider the following [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query for SQL Server 2000:  
   
@@ -74,5 +74,5 @@ ORDER BY [t0].[CustomerID]
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
-- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)
+- [Query Examples](query-examples.md)
+- [Standard Query Operator Translation](standard-query-operator-translation.md)

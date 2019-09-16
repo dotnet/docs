@@ -10,7 +10,7 @@ ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports all the key capabilities you would expect as a SQL developer. You can query for information, and insert, update, and delete information from tables.  
   
 ## Selecting  
- Selecting (*projection*) is achieved by just writing a [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] query in your own programming language, and then executing that query to retrieve the results. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] itself translates all the necessary operations into the necessary SQL operations that you are familiar with. For more information, see [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md).  
+ Selecting (*projection*) is achieved by just writing a [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] query in your own programming language, and then executing that query to retrieve the results. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] itself translates all the necessary operations into the necessary SQL operations that you are familiar with. For more information, see [LINQ to SQL](index.md).  
   
  In the following example, the company names of customers from London are retrieved and displayed in the console window.  
   
@@ -37,7 +37,7 @@ ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
  To `Delete` an item, remove the item from the collection to which it belongs, and then call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> on the <xref:System.Data.Linq.DataContext> to commit the change.  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not recognize cascade-delete operations. If you want to delete a row in a table that has constraints against it, see [How to: Delete Rows From the Database](../../../../../../docs/framework/data/adonet/sql/linq/how-to-delete-rows-from-the-database.md).  
+> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not recognize cascade-delete operations. If you want to delete a row in a table that has constraints against it, see [How to: Delete Rows From the Database](how-to-delete-rows-from-the-database.md).  
   
  In the following example, the customer who has `CustomerID` of `98128` is retrieved from the database. Then, after confirming that the customer row was retrieved, <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> is called to remove that object from the collection. Finally, <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called to forward the deletion to the database.  
   
@@ -46,6 +46,6 @@ ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
   
 ## See also
 
-- [Programming Guide](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)
-- [The LINQ to SQL Object Model](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md)
-- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)
+- [Programming Guide](programming-guide.md)
+- [The LINQ to SQL Object Model](the-linq-to-sql-object-model.md)
+- [Getting Started](getting-started.md)

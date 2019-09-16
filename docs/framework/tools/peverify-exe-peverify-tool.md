@@ -22,7 +22,7 @@ The PEVerify tool helps developers who generate Microsoft intermediate language 
   
 ## Syntax  
   
-```  
+```console  
 peverify filename [options]  
 ```  
   
@@ -51,36 +51,36 @@ peverify filename [options]
 |**/?**|Displays command syntax and options for the tool.|  
   
 ## Remarks  
- The common language runtime relies on the type-safe execution of application code to help enforce security and isolation mechanisms. Normally, code that is not [verifiably type safe](../../../docs/standard/security/key-security-concepts.md#type-safety-and-security) cannot run, although you can set security policy to allow the execution of trusted but unverifiable code.  
+ The common language runtime relies on the type-safe execution of application code to help enforce security and isolation mechanisms. Normally, code that is not [verifiably type safe](../../standard/security/key-security-concepts.md#type-safety-and-security) cannot run, although you can set security policy to allow the execution of trusted but unverifiable code.  
   
  If neither the **/md** nor **/il** options are specified, Peverify.exe performs both types of checks. Peverify.exe performs **/md** checks first. If there are no errors, **/il** checks are made. If you specify both **/md** and **/il**, **/il** checks are made even if there are errors in the metadata. Thus, if there are no metadata errors, **peverify** *filename* is equivalent to **peverify** *filename* **/md** **/il**.  
   
- Peverify.exe performs comprehensive MSIL verification checks based on dataflow analysis plus a list of several hundred rules on valid metadata. For detailed information on the checks Peverify.exe performs, see the "Metadata Validation Specification" and the "MSIL Instruction Set Specification" in the Tools Developers Guide folder in the Windows Software Development Kit (SDK).  
+ Peverify.exe performs comprehensive MSIL verification checks based on dataflow analysis plus a list of several hundred rules on valid metadata. For detailed information on the checks Peverify.exe performs, see the "Metadata Validation Specification" and the "MSIL Instruction Set Specification" in the Tools Developers Guide folder in the Windows SDK.  
   
  Note that the .NET Framework version 2.0 or later supports verifiable `byref` returns specified using the following MSIL instructions: `dup`, `ldsflda`, `ldflda`, `ldelema`, `call` and `unbox`.  
   
 ## Examples  
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`.  
   
-```  
+```console  
 peverify myAssembly.exe /md /il  
 ```  
   
  Upon successful completion of the above request, Peverify.exe displays the following message.  
   
-```  
+```output
 All classes and methods in myAssembly.exe Verified  
 ```  
   
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`. The tool displays the time required to perform these checks.  
   
-```  
+```console  
 peverify myAssembly.exe /md /il /clock  
 ```  
   
  Upon successful completion of the above request, Peverify.exe displays the following message.  
   
-```  
+```output
 All classes and methods in myAssembly.exe Verified  
 Timing: Total run     320 msec  
         MD Val.cycle  40 msec  
@@ -91,25 +91,25 @@ Timing: Total run     320 msec
   
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`. Peverify.exe stops, however, when it reaches the maximum error count of 100. The tool also ignores the specified error codes.  
   
-```  
+```console  
 peverify myAssembly.exe /break=100 /ignore=0x12345678,0xABCD1234  
 ```  
   
  The following command produces the same result as the above previous example, but specifies the error codes to ignore in the response file `ignoreErrors.rsp`.  
   
-```  
+```console  
 peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp  
 ```  
   
  The response file can contain a comma-separated list of error codes.  
   
-```  
+```text
 0x12345678, 0xABCD1234  
 ```  
   
  Alternatively, the response file can be formatted with one error code per line.  
   
-```  
+```text
 0x12345678  
 0xABCD1234  
 ```  
@@ -118,5 +118,5 @@ peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp
 
 - [Tools](../../../docs/framework/tools/index.md)
 - [Writing Verifiably Type-Safe Code](../../../docs/framework/misc/code-access-security-basics.md#typesafe_code)
-- [Type Safety and Security](../../../docs/standard/security/key-security-concepts.md#type-safety-and-security)
+- [Type Safety and Security](../../standard/security/key-security-concepts.md#type-safety-and-security)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

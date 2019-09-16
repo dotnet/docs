@@ -24,7 +24,7 @@ The ActiveX Control Importer converts type definitions in a COM type library for
   
 ## Syntax  
   
-```  
+```console  
 aximp [options]{file.dll | file.ocx}  
 ```  
   
@@ -36,14 +36,14 @@ aximp [options]{file.dll | file.ocx}
   
 |Option|Description|  
 |------------|-----------------|  
-|`/delaysign`|Specifies to Aximp.exe to sign the resulting control using delayed signing. You must specify this option with either the `/keycontainer:`, `/keyfile:`, or `/publickey:` option. For more information on the delayed signing process, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).|  
+|`/delaysign`|Specifies to Aximp.exe to sign the resulting control using delayed signing. You must specify this option with either the `/keycontainer:`, `/keyfile:`, or `/publickey:` option. For more information on the delayed signing process, see [Delay Signing an Assembly](../../standard/assembly/delay-sign.md).|  
 |`/help`|Displays command syntax and options for the tool.|  
 |`/keycontainer:` *containerName*|Signs the resulting control with a strong name using the public/private key pair found in the key container specified by *containerName*.|  
 |`/keyfile:` *filename*|Signs the resulting control with a strong name using the publisher's official public/private key pair found in *filename*.|  
 |`/nologo`|Suppresses the Microsoft startup banner display.|  
 |`/out:` *filename*|Specifies the name of the assembly to create.|  
 |`/publickey:` *filename*|Signs the resulting control with a strong name using the public key found in the file specified by *filename*.|  
-|`/rcw:` *filename*|Uses the specified runtime callable wrapper instead of generating a new one. You may specify multiple instances. The current directory is used for relative paths. For more information, see [Runtime Callable Wrapper](../../../docs/standard/native-interop/runtime-callable-wrapper.md).|  
+|`/rcw:` *filename*|Uses the specified runtime callable wrapper instead of generating a new one. You may specify multiple instances. The current directory is used for relative paths. For more information, see [Runtime Callable Wrapper](../../standard/native-interop/runtime-callable-wrapper.md).|  
 |`/silent`|Suppresses the display of success messages.|  
 |`/source`|Generates C# source code for the Windows Forms wrapper.|  
 |`/verbose`|Specifies verbose mode; displays additional progress information.|  
@@ -56,7 +56,7 @@ aximp [options]{file.dll | file.ocx}
  Windows Forms proxy for ActiveX controls (where Ax signifies ActiveX): Ax*progid*.dll  
   
 > [!NOTE]
->  If the name of a member of the ActiveX control matches a name defined in the .NET Framework, Aximp.exe will prefix the member name with "Ctl" when it creates the AxHost derived class. For example, if your ActiveX control has a member named "Layout," it is renamed "CtlLayout" in the AxHost derived class because the Layout event is defined within the .NET Framework.  
+> If the name of a member of the ActiveX control matches a name defined in the .NET Framework, Aximp.exe will prefix the member name with "Ctl" when it creates the AxHost derived class. For example, if your ActiveX control has a member named "Layout," it is renamed "CtlLayout" in the AxHost derived class because the Layout event is defined within the .NET Framework.  
   
  You can examine these generated files with tools such as [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md).  
   
@@ -69,7 +69,7 @@ aximp [options]{file.dll | file.ocx}
 ## Example  
  The following command generates MediaPlayer.dll and AxMediaPlayer.dll for the Media Player control `msdxm.ocx`.  
   
-```  
+```console 
 aximp c:\systemroot\system32\msdxm.ocx  
 ```  
   

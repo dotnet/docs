@@ -22,7 +22,7 @@ ms.assetid: b23b4814-ebb1-4c51-b7a9-469f4da7a96d
  Windows Workflow Foundation (WF) remote debugging functions the same as remote debugging for other Visual Studio components. For information on using remote debugging, see [How to: Enable Remote Debugging](https://go.microsoft.com/fwlink/?LinkId=196257).  
   
 > [!NOTE]
->  If the workflow application targets the x86 architecture and is hosted on a computer running a 64 bit operating system, then remote debugging will not work unless Visual Studio is installed on the remote computer or the target for the workflow application is changed to **Any CPU**.  
+> If the workflow application targets the x86 architecture and is hosted on a computer running a 64 bit operating system, then remote debugging will not work unless Visual Studio is installed on the remote computer or the target for the workflow application is changed to **Any CPU**.  
   
 ## Extending the Workflow Debugging Service  
  The workflow debugger service is now public and can be used to create custom applications such as monitoring, simulation, and debugging in a re-hosted designer. For more information, see the <xref:System.Activities.Presentation.Debug.DebuggerService> topic.

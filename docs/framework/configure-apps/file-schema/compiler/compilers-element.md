@@ -11,11 +11,11 @@ helpviewer_keywords:
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
 ---
 # \<compilers> Element
-Container for compiler configuration elements; contains zero or more [\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) elements.  
+Container for compiler configuration elements; contains zero or more [\<compiler>](compiler-element.md) elements.  
   
- \<configuration>  
-\<system.codedom>  
-\<compilers> Element  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<compilers>**  
   
 ## Syntax  
   
@@ -35,17 +35,17 @@ Container for compiler configuration elements; contains zero or more [\<compiler
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<compiler> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)|Specifies the compiler configuration attributes for a language provider.|  
+|[\<compiler> Element](compiler-element.md)|Specifies the compiler configuration attributes for a language provider.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
-|[\<system.codedom> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md)|Specifies compiler configuration settings for available language providers.|  
+|[\<configuration> Element](../configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
+|[\<system.codedom> Element](system-codedom-element.md)|Specifies compiler configuration settings for available language providers.|  
   
 ## Remarks  
- The [\<compilers>](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md) element contains the compiler configuration settings for language providers on a computer. Each [\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) element specifies the compiler configuration attributes for a specific language provider.  
+ The [\<compilers>](compilers-element.md) element contains the compiler configuration settings for language providers on a computer. Each [\<compiler>](compiler-element.md) element specifies the compiler configuration attributes for a specific language provider.  
   
  The .NET Framework defines the initial compiler and language provider settings in the machine configuration file (Machine.config). Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> implementation. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.  
   
@@ -75,6 +75,6 @@ Container for compiler configuration elements; contains zero or more [\<compiler
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Compiler and Language Provider Settings Schema](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)
-- [\<compiler> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)
+- [Configuration File Schema](../index.md)
+- [Compiler and Language Provider Settings Schema](index.md)
+- [\<compiler> Element](compiler-element.md)

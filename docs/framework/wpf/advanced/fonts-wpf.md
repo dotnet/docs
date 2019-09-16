@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 6c766a95-ad03-475e-a36f-2243e9495941
 ---
 # Fonts (WPF)
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] includes support for rich presentation of text using [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts. A sample pack of [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts is included with the [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)].  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] includes support for rich presentation of text using OpenType fonts. A sample pack of OpenType fonts is included with the Windows SDK.  
   
 ## In This Section  
  [OpenType Font Features](opentype-font-features.md)  

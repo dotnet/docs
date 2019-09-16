@@ -16,7 +16,7 @@ ms.author: "ronpet"
 ---
 # Ilasm.exe (IL Assembler)
 
-The IL Assembler generates a portable executable (PE) file from intermediate language (IL). (For more information on IL, see [Managed Execution Process](../../../docs/standard/managed-execution-process.md).) You can run the resulting executable, which contains IL and the required metadata, to determine whether the IL performs as expected.
+The IL Assembler generates a portable executable (PE) file from intermediate language (IL). (For more information on IL, see [Managed Execution Process](../../standard/managed-execution-process.md).) You can run the resulting executable, which contains IL and the required metadata, to determine whether the IL performs as expected.
 
 This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
 
@@ -98,13 +98,13 @@ To make this combined use of *Ildasm.exe* and *Ilasm.exe* as accurate as possibl
 > [!NOTE]
 > *Ildasm.exe* only operates on files on disk. It does not operate on files installed in the global assembly cache.
 
-For more information about the grammar of IL, see the asmparse.grammar file in the Windows Software Development Kit (SDK).
+For more information about the grammar of IL, see the asmparse.grammar file in the Windows SDK.
 
 ## Version Information
 
 Starting with the .NET Framework 4.5, you can attach a custom attribute to an interface implementation by using code similar to the following:
 
-```
+```il
 .class interface public abstract auto ansi IMyInterface
 {
   .method public hidebysig newslot abstract virtual
@@ -124,14 +124,14 @@ Starting with the .NET Framework 4.5, you can attach a custom attribute to an in
 
 Starting with the .NET Framework 4.5, you can specify an arbitrary marshal BLOB (binary large object) by using its raw binary representation, as shown in the following code:
 
-```
+```il
 .method public hidebysig abstract virtual
         instance void
         marshal({ 38 01 02 FF })
         Test(object A_1) cil managed
 ```
 
-For more information about the grammar of IL, see the asmparse.grammar file in the Windows Software Development Kit (SDK).
+For more information about the grammar of IL, see the asmparse.grammar file in the Windows SDK.
 
 ## Examples
 
@@ -169,7 +169,7 @@ public class Hello
 
 The following IL code example corresponds to the previous C# code example. You can compile this code into an assembly using the IL Assembler tool. Both IL and C# code examples display "Hello World!" to the console.
 
-```
+```il
 // Metadata version: v2.0.50215
 .assembly extern mscorlib
 {
@@ -225,5 +225,5 @@ The following IL code example corresponds to the previous C# code example. You c
 
 - [Tools](../../../docs/framework/tools/index.md)
 - [*Ildasm.exe* (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)
-- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)
+- [Managed Execution Process](../../standard/managed-execution-process.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

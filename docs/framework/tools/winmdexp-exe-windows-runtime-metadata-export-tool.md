@@ -19,7 +19,7 @@ The Windows Runtime Metadata Export Tool (Winmdexp.exe) transforms a .NET Framew
   
 ## Syntax  
   
-```  
+```console  
 winmdexp [options] winmdmodule  
 ```  
   
@@ -27,7 +27,7 @@ winmdexp [options] winmdmodule
   
 |Argument or option|Description|  
 |------------------------|-----------------|  
-|`winmdmodule`|Specifies the module (.winmdobj) to be exported. Only one module is allowed. To create this module, use the `/target` compiler option with the `winmdobj` target. See [/target:winmdobj (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md) or [/target (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/target.md).|  
+|`winmdmodule`|Specifies the module (.winmdobj) to be exported. Only one module is allowed. To create this module, use the `/target` compiler option with the `winmdobj` target. See [/target:winmdobj (C# Compiler Options)](../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md) or [/target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
 |`/docfile:` `docfile`<br /><br /> `/d:` `docfile`|Specifies the output XML documentation file that Winmdexp.exe will produce. In the .NET Framework 4.5, the output file is essentially the same as the input XML documentation file.|  
 |`/moduledoc:` `docfile`<br /><br /> `/md:` `docfile`|Specifies the name of the XML documentation file that the compiler produced with `winmdmodule`.|  
 |`/modulepdb:` `symbolfile`<br /><br /> `/mp:` `symbolfile`|Specifies the name of the program database (PDB) file that contains symbols for `winmdmodule`.|  
@@ -42,11 +42,11 @@ winmdexp [options] winmdmodule
 ## Remarks  
  Winmdexp.exe is not designed to convert an arbitrary .NET Framework assembly to a .winmd file. It requires a module that is compiled with the `/target:winmdobj` option, and additional restrictions apply. The most important of these restrictions is that all types that are exposed in the API surface of the assembly must be Windows Runtime types. For more information, see the "Declaring types in Windows Runtime Components" section of the article [Creating Windows Runtime Components in C# and Visual Basic](https://go.microsoft.com/fwlink/p/?LinkID=238313) in the Windows Dev Center.  
   
- When you write a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app or a Windows Runtime component with C# or Visual Basic, the .NET Framework provides support to make programming with the Windows Runtime more natural. This is discussed in the article [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md). In the process, some commonly used Windows Runtime types are mapped to .NET Framework types. Winmdexp.exe reverses this process and produces an API surface that uses the corresponding Windows Runtime types. For example, types that are constructed from the <xref:System.Collections.Generic.IList%601> interface map to types that are constructed from the Windows Runtime[IVector\<T>](https://go.microsoft.com/fwlink/p/?LinkId=251132)interface.  
+ When you write a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app or a Windows Runtime component with C# or Visual Basic, the .NET Framework provides support to make programming with the Windows Runtime more natural. This is discussed in the article [.NET Framework Support for Windows Store Apps and Windows Runtime](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md). In the process, some commonly used Windows Runtime types are mapped to .NET Framework types. Winmdexp.exe reverses this process and produces an API surface that uses the corresponding Windows Runtime types. For example, types that are constructed from the <xref:System.Collections.Generic.IList%601> interface map to types that are constructed from the Windows Runtime[IVector\<T>](https://go.microsoft.com/fwlink/p/?LinkId=251132)interface.  
   
 ## See also
 
-- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
 - [Creating Windows Runtime Components in C# and Visual Basic](https://go.microsoft.com/fwlink/p/?LinkID=238313)
 - [Winmdexp.exe Error Messages](../../../docs/framework/tools/winmdexp-exe-error-messages.md)
 - [Build, Deployment, and Configuration Tools (.NET Framework)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd233108(v=vs.100))

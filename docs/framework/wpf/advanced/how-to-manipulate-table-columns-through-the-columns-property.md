@@ -24,7 +24,7 @@ This example demonstrates some of the more common operations that can be perform
  The following example inserts a new <xref:System.Windows.Documents.TableColumn>.  The new column is inserted at index position 0, making it the new first column in the table.  
   
 > [!NOTE]
->  The <xref:System.Windows.Documents.TableColumnCollection> collection uses standard zero-based indexing.  
+> The <xref:System.Windows.Documents.TableColumnCollection> collection uses standard zero-based indexing.  
   
  [!code-csharp[TableSnippets2#_Table_Columns_Insert](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml.cs#_table_columns_insert)]
  [!code-vb[TableSnippets2#_Table_Columns_Insert](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets2/visualbasic/window1.xaml.vb#_table_columns_insert)]  

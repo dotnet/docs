@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial: Predict prices using regression'
 description: This tutorial illustrates how to build a regression model using ML.NET to predict prices, specifically, New York City taxi fares.
-author: jralexander
-ms.author: johalex
 ms.date: 05/09/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18, title-hack-0516
@@ -14,6 +12,7 @@ This tutorial illustrates how to build a [regression model](../resources/glossar
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Prepare and understand the data
 > * Load and transform the data
 > * Choose a learning algorithm
@@ -266,6 +265,7 @@ Congratulations! You've now successfully built a machine learning model for pred
 In this tutorial, you learned how to:
 
 > [!div class="checklist"]
+>
 > * Prepare and understand the data
 > * Create a learning pipeline
 > * Load and transform the data

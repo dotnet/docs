@@ -21,9 +21,9 @@ This topic outlines the basic steps required to create a Windows Communication F
   
 3. Create a new file named "service.svc" in the application directory. Edit this file by adding the following @ServiceHost element.  
   
-    ```  
-    <%@ServiceHost language=c# Debug="true" Service="Microsoft.ServiceModel.Samples.CalculatorService"%>  
-    ```  
+   ```
+   <%@ServiceHost language=c# Debug="true" Service="Microsoft.ServiceModel.Samples.CalculatorService"%>
+   ```  
   
 4. Create an App_Code subdirectory within the application directory.  
   

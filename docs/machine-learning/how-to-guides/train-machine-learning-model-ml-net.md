@@ -1,7 +1,7 @@
 ---
 title: Train and evaluate a model
 description: Learn how to build machine learning models, collect metrics, and measure performance with ML.NET. A machine learning model identifies patterns within training data to make predictions using new data.
-ms.date: 06/25/2019
+ms.date: 08/29/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, title-hack-0625
@@ -16,7 +16,7 @@ Learn how to build machine learning models, collect metrics, and measure perform
 
 The goal of a machine learning model is to identify patterns within training data. These patterns are used to make predictions using new data.
 
-Given the following data model:
+The data can be modeled by a class like `HousingData`.
 
 ```csharp
 public class HousingData
@@ -34,7 +34,7 @@ public class HousingData
 }
 ```
 
-Load the data into an [`IDataView`](xref:Microsoft.ML.IDataView):
+Given the following data which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ```csharp
 HousingData[] housingData = new HousingData[]
@@ -171,6 +171,7 @@ double rSquared = trainedModelMetrics.RSquared;
 ```
 
 In the previous code sample:  
+
 1. Test data set is pre-processed using the data preparation transforms previously defined. 
 2. The trained machine learning model is used to make predictions on the test data.
 3. In the `Evaluate` method, the values in the `CurrentPrice` column of the test data set are compared against the `Score` column of the newly output predictions to calculate the metrics for the regression model, one of which, R-Squared is stored in the `rSquared` variable.

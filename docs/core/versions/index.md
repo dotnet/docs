@@ -31,8 +31,8 @@ The third position of the SDK version number communicates both the minor and pat
 
 NOTES:
 
-* If the SDK has 10 feature updates before a runtime feature update, version numbers roll into the 1000 series with numbers like 2.2.1000 as the feature release following 2.2.900. This situation isn't expected to occur.
-* 99 patch releases without a feature release won't occur. If a release approaches this number, it forces a feature release.
+- If the SDK has 10 feature updates before a runtime feature update, version numbers roll into the 1000 series with numbers like 2.2.1000 as the feature release following 2.2.900. This situation isn't expected to occur.
+- 99 patch releases without a feature release won't occur. If a release approaches this number, it forces a feature release.
 
 You can see more details in the initial proposal at the [dotnet/designs](https://github.com/dotnet/designs/pull/29) repository.
 
@@ -50,24 +50,24 @@ The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported re
 
 `MAJOR` is incremented when:
 
-* Significant changes occur to the product, or a new product direction.
-* Breaking changes were taken. There's a high bar to accepting breaking changes.
-* An old version is no longer supported.
-* A newer `MAJOR` version of an existing dependency is adopted.
+- Significant changes occur to the product, or a new product direction.
+- Breaking changes were taken. There's a high bar to accepting breaking changes.
+- An old version is no longer supported.
+- A newer `MAJOR` version of an existing dependency is adopted.
 
 `MINOR` is incremented when:
 
-* Public API surface area is added.
-* A new behavior is added.
-* A newer `MINOR` version of an existing dependency is adopted.
-* A new dependency is introduced.
+- Public API surface area is added.
+- A new behavior is added.
+- A newer `MINOR` version of an existing dependency is adopted.
+- A new dependency is introduced.
 
 `PATCH` is incremented when:
 
-* Bug fixes are made.
-* Support for a newer platform is added.
-* A newer `PATCH` version of an existing dependency is adopted.
-* Any other change doesn't fit one of the previous cases.
+- Bug fixes are made.
+- Support for a newer platform is added.
+- A newer `PATCH` version of an existing dependency is adopted.
+- Any other change doesn't fit one of the previous cases.
 
 When there are multiple changes, the highest element affected by individual changes is incremented, and the following ones are reset to zero. For example, when `MAJOR` is incremented, `MINOR` and `PATCH` are reset to zero. When `MINOR` is incremented, `PATCH` is reset to zero while `MAJOR` is left untouched.
 
@@ -103,6 +103,6 @@ Each version of .NET Core implements a version of .NET Standard. Implementing a 
 
 - [Target frameworks](../../standard/frameworks.md)
 - [.NET Core distribution packaging](../build/distribution-packaging.md)
-- [.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support)
+- [.NET Core Support Lifecycle Fact Sheet](https://dotnet.microsoft.com/platform/support/policy)
 - [.NET Core 2+ Version Binding](https://github.com/dotnet/designs/issues/3)
 - [Docker images for .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/)

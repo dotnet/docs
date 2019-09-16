@@ -16,7 +16,7 @@ This walkthrough shows you how to use the <xref:System.Security.Cryptography.DES
  For more information, see [Cryptographic Services](../../../../standard/security/cryptographic-services.md).  
   
 > [!IMPORTANT]
->  The Rijndael (now referred to as Advanced Encryption Standard [AES]) and Triple Data Encryption Standard (3DES) algorithms provide greater security than DES because they are more computationally intensive. For more information, see <xref:System.Security.Cryptography.DES> and <xref:System.Security.Cryptography.Rijndael>.  
+> The Rijndael (now referred to as Advanced Encryption Standard [AES]) and Triple Data Encryption Standard (3DES) algorithms provide greater security than DES because they are more computationally intensive. For more information, see <xref:System.Security.Cryptography.DES> and <xref:System.Security.Cryptography.Rijndael>.  
   
 ### To create the encryption wrapper  
   

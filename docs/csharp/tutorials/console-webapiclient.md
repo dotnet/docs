@@ -30,7 +30,7 @@ If you prefer to follow along with the [final sample](https://github.com/dotnet/
 ## Prerequisites
 
 You’ll need to set up your machine to run .NET core. You can find the
-installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
 page. You can run this
 application on Windows, Linux, macOS or in a Docker container.
 You’ll need to install your favorite code editor. The descriptions below

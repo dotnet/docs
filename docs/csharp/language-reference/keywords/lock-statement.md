@@ -41,14 +41,14 @@ finally
 
 Since the code uses a [try...finally](try-finally.md) block, the lock is released even if an exception is thrown within the body of a `lock` statement.
 
-You can't use the [await](await.md) keyword in the body of a `lock` statement.
+You can't use the [await operator](../operators/await.md) in the body of a `lock` statement.
 
 ## Remarks
 
 When you synchronize thread access to a shared resource, lock on a dedicated object instance (for example, `private readonly object balanceLock = new object();`) or another instance that is unlikely to be used as a lock object by unrelated parts of the code. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using the following as lock objects:
 
 - `this`, as it might be used by the callers as a lock.
-- <xref:System.Type> instances, as those might be obtained by the [typeof](../operators/type-testing-and-conversion-operators.md#typeof-operator) operator or reflection.
+- <xref:System.Type> instances, as those might be obtained by the [typeof](../operators/type-testing-and-cast.md#typeof-operator) operator or reflection.
 - string instances, including string literals, as those might be [interned](/dotnet/api/system.string.intern#remarks).
 
 ## Example

@@ -29,32 +29,6 @@ Although it's a good idea to encapsulate your code that interacts with infrastru
 
 Integration tests will often have more complex setup and teardown procedures than unit tests. For example, an integration test that goes against an actual database will need a way to return the database to a known state before each test run. As new tests are added and the production database schema evolves, these test scripts will tend to grow in size and complexity. In many large systems, it is impractical to run full suites of integration tests on developer workstations before checking in changes to shared source control. In these cases, integration tests may be run on a build server.
 
-The `LocalFileImageService` implementation class implements the logic for fetching and returning the bytes of an image file from a particular folder given an id:
-
-```csharp
-public class LocalFileImageService : IImageService
-{
-    private readonly IHostingEnvironment _env;
-    public LocalFileImageService(IHostingEnvironment env)
-    {
-        _env = env;
-    }
-    public byte[] GetImageBytesById(int id)
-    {
-        try
-        {
-            var contentRoot = _env.ContentRootPath + "//Pics";
-            var path = Path.Combine(contentRoot, id + ".png");
-            return File.ReadAllBytes(path);
-        }
-        catch (FileNotFoundException ex)
-        {
-            throw new CatalogImageMissingException(ex);
-        }
-    }
-}
-```
-
 ### Functional tests
 
 Integration tests are written from the perspective of the developer, to verify that some components of the system work correctly together. Functional tests are written from the perspective of the user, and verify the correctness of the system based on its requirements. The following excerpt offers a useful analogy for how to think about functional tests, compared to unit tests:
@@ -71,9 +45,9 @@ Since functional tests operate at the system level, they may require some degree
 
 Martin Fowler wrote about the testing pyramid, an example of which is shown in Figure 9-1.
 
-![](./media/image9-1.png)
+![Testing Pyramid](./media/image9-1.png)
 
-Figure 9-1 Testing Pyramid
+**Figure 9-1**. Testing Pyramid
 
 The different layers of the pyramid, and their relative sizes, represent different kinds of tests and how many you should write for your application. As you can see, the recommendation is to have a large base of unit tests, supported by a smaller layer of integration tests, with an even smaller layer of functional tests. Each layer should ideally only have tests in it that cannot be performed adequately at a lower layer. Keep the testing pyramid in mind when you are trying to decide which kind of test you need for a particular scenario.
 
@@ -87,15 +61,15 @@ Test projects can be organized however works best for you. It's a good idea to s
 
 A common approach is to organize the application projects under a ‘src' folder, and the application's test projects under a parallel ‘tests' folder. You can create matching solution folders in Visual Studio, if you find this organization useful.
 
-![](./media/image9-2.png)
+![Test organization in your solution](./media/image9-2.png)
 
-Figure 9-2 Test organization in your solution
+**Figure 9-2**. Test organization in your solution
 
 You can use whichever test framework you prefer. The xUnit framework works well and is what all of the ASP.NET Core and EF Core tests are written in. You can add an xUnit test project in Visual Studio using the template shown in Figure 9-3, or from the CLI using dotnet new xunit.
 
-![](./media/image9-3.png)
+![Add an xUnit Test Project in Visual Studio](./media/image9-3.png)
 
-Figure 9-3 Add an xUnit Test Project in Visual Studio
+**Figure 9-3**. Add an xUnit Test Project in Visual Studio
 
 ### Test naming
 
@@ -119,7 +93,7 @@ Some teams find the second naming approach clearer, though slightly more verbose
 
 If you follow a naming convention like the one above that produces many small test classes, it's a good idea to further organize your tests using folders and namespaces. Figure 9-4 shows one approach to organizing tests by folder within several test projects.
 
-![](./media/image9-4.png)
+![Organizing test classes by folder based on class being tested](./media/image9-4.png)
 
 **Figure 9-4.** Organizing test classes by folder based on class being tested.
 
@@ -147,7 +121,7 @@ Unit testing this method is made difficult by its direct dependency on `System.I
 If you can't unit test the file system behavior directly, and you can't test the route, what is there to test? Well, after refactoring to make unit testing possible, you may discover some test cases and missing behavior, such as error handling. What does the method do when a file isn't found? What should it do? In this example, the refactored method looks like this:
 
 ```csharp
-[HttpGet("[controller]/pic/{id}")\]
+[HttpGet("[controller]/pic/{id}")]
 public IActionResult GetImage(int id)
 {
     byte[] imageBytes;

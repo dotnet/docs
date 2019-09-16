@@ -40,4 +40,4 @@ This section enables the use of a custom binding element from a machine or appli
 ## See also
 
 - <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)

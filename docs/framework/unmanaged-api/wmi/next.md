@@ -91,7 +91,7 @@ If `plFlavor` is not `null`, the `LONG` value receives information about the ori
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** WMINet_Utils.idl
 

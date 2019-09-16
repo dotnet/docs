@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 04/24/2019
+ms.date: 08/08/2019
 ---
 # dotnet build
 
@@ -17,9 +17,9 @@ ms.date: 04/24/2019
 
 ## Synopsis
 
-```
+```console
 dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--force] [--interactive] [--no-dependencies]
-    [--no-incremental] [--nologo] [--no-restore] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
+    [--no-incremental] [--no-restore] [--nologo] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
 
 dotnet build [-h|--help]
 ```
@@ -88,13 +88,13 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Marks the build as unsafe for incremental build. This flag turns off incremental compilation and forces a clean rebuild of the project's dependency graph.
 
-* **`--no-logo`**
-
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
-
 * **`--no-restore`**
 
   Doesn't execute an implicit restore during build. Available since .NET Core 2.0 SDK.
+
+* **`--nologo`**
+
+  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
 
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 

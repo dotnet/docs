@@ -330,7 +330,7 @@ services:
   <https://hub.docker.com/r/microsoft/azure-cosmosdb-emulator/>
 
 - **The MongoDB Docker image (Linux and Windows Container)**  \
-  <https://hub.docker.com/\_/mongo/>
+  <https://hub.docker.com/_/mongo/>
 
 - **Use MongoChef (Studio 3T) with an Azure Cosmos DB: API for MongoDB account**  \
   <https://docs.microsoft.com/azure/cosmos-db/mongodb-mongochef>

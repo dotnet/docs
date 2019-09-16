@@ -11,7 +11,7 @@ ms.assetid: 6f287407-e895-4b07-a46a-a5bff8388d46
 Windows Forms `Splitter` controls are used to resize docked controls at run time. The `Splitter` control is often used on forms with controls that have varying lengths of data to present, like Windows Explorer, whose data panes contain information of varying widths at different times.  
   
 > [!NOTE]
->  Although <xref:System.Windows.Forms.SplitContainer> replaces and adds functionality to the `Splitter` control of previous versions, `Splitter` is retained for both backward compatibility and future use if you choose.  
+> Although <xref:System.Windows.Forms.SplitContainer> replaces and adds functionality to the `Splitter` control of previous versions, `Splitter` is retained for both backward compatibility and future use if you choose.  
   
 ## In This Section  
  [Splitter Control Overview](splitter-control-overview-windows-forms.md)  

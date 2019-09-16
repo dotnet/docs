@@ -17,7 +17,7 @@ ms.author: "mairaw"
 Security involves three interacting pieces: sandboxing, permissions, and enforcement. Sandboxing refers to the practice of creating isolated domains where some code is treated as fully trusted and other code is restricted to the permissions in the grant set for the sandbox. The application code that runs within the grant set of the sandbox is considered to be transparent; that is, it cannot perform any operations that can affect security. The grant set for the sandbox is determined by evidence (<xref:System.Security.Policy.Evidence> class). Evidence identifies what specific permissions are required by sandboxes, and what kinds of sandboxes can be created. Enforcement refers to allowing transparent code to execute only within its grant set.
 
 > [!IMPORTANT]
-> Security policy was a key element in previous versions of the .NET Framework. Starting with the .NET Framework 4, security policy is obsolete. The elimination of security policy is separate from security transparency. For information about the effects of this change, see [Code Access Security Policy Compatibility and Migration](../../../docs/framework/misc/code-access-security-policy-compatibility-and-migration.md).
+> Security policy was a key element in previous versions of the .NET Framework. Starting with the .NET Framework 4, security policy is obsolete. The elimination of security policy is separate from security transparency. For information about the effects of this change, see [Code Access Security Policy Compatibility and Migration](code-access-security-policy-compatibility-and-migration.md).
 
 This topic describes the transparency model in more detail. It contains the following sections:
 
@@ -112,5 +112,5 @@ Transparency rules are not enforced until transparency is calculated. At that ti
 
 ## See also
 
-- [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)
-- [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)
+- [Security-Transparent Code, Level 1](security-transparent-code-level-1.md)
+- [Security-Transparent Code, Level 2](security-transparent-code-level-2.md)

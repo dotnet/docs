@@ -21,10 +21,10 @@ ms.author: "ronpet"
 Provides methods for obtaining information about the garbage collection system and for controlling some aspects of garbage collection.  
   
 > [!NOTE]
->  Starting with the .NET Framework 4.5, you can use the [IGCHost2::SetGCStartupLimitsEx](../../../../docs/framework/unmanaged-api/hosting/igchost2-setgcstartuplimitsex-method.md) method to set the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0 to values greater than the `DWORD` limit that is imposed by the [SetGCStartupLimits](../../../../docs/framework/unmanaged-api/hosting/igchost-setgcstartuplimits-method.md) method.  
+> Starting with the .NET Framework 4.5, you can use the [IGCHost2::SetGCStartupLimitsEx](../../../../docs/framework/unmanaged-api/hosting/igchost2-setgcstartuplimitsex-method.md) method to set the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0 to values greater than the `DWORD` limit that is imposed by the [SetGCStartupLimits](../../../../docs/framework/unmanaged-api/hosting/igchost-setgcstartuplimits-method.md) method.  
   
 > [!NOTE]
->  This interface is for expert usage only. It can affect the performance of an application if used improperly.  
+> This interface is for expert usage only. It can affect the performance of an application if used improperly.  
   
 ## Methods  
   

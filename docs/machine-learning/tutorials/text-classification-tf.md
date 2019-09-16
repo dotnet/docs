@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Analyze website comments - text classification with TensorFlow'
+title: 'Tutorial: Analyze sentiment of movie reviews using a pre-trained TensorFlow model'
 description: This tutorial shows you how to use a pre-trained TensorFlow model to classify sentiment in website comments. The binary sentiment classifier is a C# console application developed using Visual Studio.
 ms.date: 09/11/2019
 ms.topic: tutorial
@@ -8,7 +8,7 @@ ms.author: nakersha
 author: natke
 #Customer intent: As a developer, I want to use ML.NET to make inferences with a pre-trained TensorFlow model. 
 ---
-# Tutorial: Analyze sentiment of website comments with binary classification using TensorFlow in ML.NET
+# Tutorial: Analyze sentiment of movie reviews using a pre-trained TensorFlow model in ML.NET
 
 This tutorial shows you how to use a pre-trained TensorFlow model to classify sentiment in website comments. The binary sentiment classifier is a C# console application developed using Visual Studio.
 

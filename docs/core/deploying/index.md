@@ -56,7 +56,7 @@ Either choice will allow you to create various types of .NET Core applications i
 
 You can publish your app in one of two configurations - as a [Framework Dependent Deployment (FDD)](publish.md#Framework-Dependent-Deployment-FDD) or as a [Self-Contained Deployment (SCD)](publish.md#Self-contained-deployment-SCD).
 
-For both of the above configurations, you can publish the app either as a set of loose assemblies for either `xcopy` or package up for deployment, or alternatively as a single file executable.
+For both of the above configurations, you can publish the app either as a set of loose assemblies for either `xcopy` or package up for deployment. Alternatively, you can publish your app as a single file executable.
 
 More information about each of these configurations can be found in the document on how to [Publish your app](publish.md).
 

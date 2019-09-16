@@ -12,7 +12,7 @@ Migrating a code base from ASP.NET Web Forms to Blazor is one that requires
 planning and can take time. The process can be broken into two main parts:
 
 1. Update the business logic projects to run on .NET Core/.NET Standard
-1. Convert the app model from WebForms to Blazor
+1. Convert the app model from ASP.NET Web Forms to Blazor
 
 In this chapter we will go over the process for each of these. One thing that
 can really help ease the transition is to ensure the application is adhering to

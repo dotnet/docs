@@ -11,6 +11,7 @@ Ranges and indices provide a succinct syntax for accessing single elements or ra
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
+>
 > - Use the syntax for ranges in a sequence.
 > - Understand the design decisions for the start and end of each sequence.
 > - Learn scenarios for the <xref:System.Index> and <xref:System.Range> types.

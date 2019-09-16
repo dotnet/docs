@@ -21,6 +21,8 @@ By default, the CLI installs in a side-by-side (SxS) manner, so multiple version
 
 The following commands are installed by default:
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.x](#tab/netcore2x)
 
 **Basic commands**

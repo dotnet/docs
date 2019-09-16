@@ -12,6 +12,7 @@ This tutorial shows you how to create a .NET Core console application that class
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Create a console application
 > - Prepare data
 > - Load the data
@@ -378,6 +379,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Create a console application
 > - Prepare data
 > - Load the data

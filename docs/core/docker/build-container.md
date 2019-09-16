@@ -14,6 +14,7 @@ This tutorial teaches you how to build a Docker image that contains your .NET Co
 You'll learn to:
 
 > [!div class="checklist"]
+>
 > * Create and publish a simple .NET Core app
 > * Create and configure a Dockerfile for .NET Core
 > * Build a Docker image

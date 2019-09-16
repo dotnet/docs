@@ -1,4 +1,4 @@
-﻿---
+---
 title: Acquisition experiences - .NET Core
 description: .NET Core Acquisition Experiences
 author: jamshedd

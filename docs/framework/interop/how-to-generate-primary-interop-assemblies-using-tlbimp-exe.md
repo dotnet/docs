@@ -27,7 +27,7 @@ There are two ways to generate a primary interop assembly:
 
 - Creating primary interop assemblies manually in source code by using a language that is compliant with the Common Language Specification (CLS), such as C#. This approach is useful when a type library is unavailable.
 
-You must have a cryptographic key pair to sign the assembly with a strong name. For details, see [Creating A Key Pair](../app-domains/how-to-create-a-public-private-key-pair.md).
+You must have a cryptographic key pair to sign the assembly with a strong name. For details, see [Creating A Key Pair](../../standard/assembly/create-public-private-key-pair.md).
 
 ### To generate a primary interop assembly using Tlbimp.exe
 

@@ -63,7 +63,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
   
 - Create a custom class that derives from the <xref:System.Runtime.Caching.ObjectCache> class and then provide a custom cache implementation in the derived class.  
   
-- Create a class that derives from <xref:System.Runtime.Caching.MemoryCache> class and customize or extend the derived class. For an example of how to do this, see [Caching Application Data by Using Multiple Cache Objects in an ASP.NET Application](https://blogs.msdn.com/aspnetue/archive/2010/03/22/caching-application-data-by-using-multiple-cache-objects-in-an-asp-net-application.aspx).  
+- Create a class that derives from <xref:System.Runtime.Caching.MemoryCache> class and customize or extend the derived class. For an example of how to do this, see [Caching Application Data by Using Multiple Cache Objects in an ASP.NET Application](https://blogs.msdn.microsoft.com/aspnetue/2010/03/22/caching-application-data-by-using-multiple-cache-objects-in-an-asp-net-application/).  
   
 - Create a class that derives from the <xref:System.Web.Caching.OutputCacheProvider> class and configure the application to use the custom output cache provider.  
   

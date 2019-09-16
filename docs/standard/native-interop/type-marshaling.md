@@ -128,7 +128,7 @@ typedef struct _SYSTEMTIME {
   WORD wMinute;
   WORD wSecond;
   WORD wMilliseconds;
-} SYSTEMTIME, *PSYSTEMTIME*;
+} SYSTEMTIME, *PSYSTEMTIME;
 ```
 
 Sometimes the default marshaling for your structure doesn't do what you need. The [Customizing structure marshaling](./customize-struct-marshaling.md) article teaches you how to customize how your structure is marshaled.

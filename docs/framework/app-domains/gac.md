@@ -38,6 +38,6 @@ Each computer where the Common Language Runtime is installed has a machine-wide 
   
 ## See also
 
-- [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](../../standard/assembly/index.md)
 - [Working with Assemblies and the Global Assembly Cache](working-with-assemblies-and-the-gac.md)
-- [Strong-Named Assemblies](strong-named-assemblies.md)
+- [Strong-Named Assemblies](../../standard/assembly/strong-named.md)

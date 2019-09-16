@@ -112,7 +112,7 @@ The .NET Framework provides a number of basic features that make it easier to de
 
 ## Packaging and Distributing .NET Framework Applications
 
-Some of the packaging and deployment information for the .NET Framework is described in other sections of the documentation. Those sections provide information about the self-describing units called [assemblies](../app-domains/assemblies-in-the-common-language-runtime.md), which require no registry entries, [strong-named assemblies](../app-domains/strong-named-assemblies.md), which ensure name uniqueness and prevent name spoofing, and [assembly versioning](../app-domains/assembly-versioning.md), which addresses many of the problems associated with DLL conflicts. The following sections provide information about packaging and distributing .NET Framework applications.
+Some of the packaging and deployment information for the .NET Framework is described in other sections of the documentation. Those sections provide information about the self-describing units called [assemblies](../../standard/assembly/index.md), which require no registry entries, [strong-named assemblies](../../standard/assembly/strong-named.md), which ensure name uniqueness and prevent name spoofing, and [assembly versioning](../../standard/assembly/versioning.md), which addresses many of the problems associated with DLL conflicts. The following sections provide information about packaging and distributing .NET Framework applications.
 
 ### Packaging
 

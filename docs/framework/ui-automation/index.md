@@ -26,4 +26,5 @@ ms.assetid: e7ec856e-41ee-47b1-9d57-b75a3dad088c
  [UI Automation Specification and Community Promise](ui-automation-specification-and-community-promise.md)  
   
 ## Related Sections  
+
 - [Accessibility Samples](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility) 

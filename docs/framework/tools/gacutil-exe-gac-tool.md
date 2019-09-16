@@ -97,6 +97,7 @@ myAssembly3,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
 > ```
 >
 > This is because internally Gacutil.exe constructs a path of up to MAX_PATH characters that consists of the following elements:
+>
 > - GAC Root - 34 chars (ie. `C:\Windows\Microsoft.NET\assembly\`)
 > - Architecture - 7 or 9 chars (ie. `GAC_32\`, `GAC_64\`, `GAC_MSIL`)
 > - AssemblyName - Up to 91 chars, depending on the size of the other elements (eg. `System.Xml.Linq\`)

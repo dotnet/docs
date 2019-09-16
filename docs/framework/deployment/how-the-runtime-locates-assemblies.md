@@ -130,20 +130,18 @@ The publisher policy configuration file overrides version information that comes
 A publisher policy file is used when a shared component is updated and the new version of the shared component should be picked up by all applications using that component. The settings in the publisher policy file override settings in the application configuration file, unless the application configuration file enforces safe mode.
 
 #### Safe Mode
-
 Publisher policy files are usually explicitly installed as part of a service pack or program update. If there is any problem with the upgraded shared component, you can ignore the overrides in the publisher policy file using safe mode. Safe mode is determined by the **\<publisherPolicy apply="yes**&#124;**no"/>** element, located only in the application configuration file. It specifies whether the publisher policy configuration information should be removed from the binding process.
 
 Safe mode can be set for the entire application or for selected assemblies. That is, you can turn off the policy for all assemblies that make up the application, or turn it on for some assemblies but not others. To selectively apply publisher policy to assemblies that make up an application, set **\<publisherPolicy apply\=no/>** and specify which assemblies you want to be affected using the \<**dependentAssembly**> element. To apply publisher policy to all assemblies that make up the application, set **\<publisherPolicy apply\=no/>** with no dependent assembly elements. For more about configuration, see [Configuring Apps by using Configuration Files](../configure-apps/index.md).
 
 ### Machine Configuration File
-
 Third, the runtime examines the machine configuration file. This file, called Machine.config, resides on the local computer in the Config subdirectory of the root directory where the runtime is installed. This file can be used by administrators to specify assembly binding restrictions that are local to that computer. The settings in the machine configuration file take precedence over all other configuration settings; however, this does not mean that all configuration settings should be put in this file. The version determined by the administrator policy file is final, and cannot be overridden. Overrides specified in the Machine.config file affect all applications. For more information about configuration files, see [Configuring Apps by using Configuration Files](../configure-apps/index.md).
 
-<a name="step2"></a>
+<a name="step2"></a> 
 
 ## Step 2: Checking for Previously Referenced Assemblies
 
-If the requested assembly has also been requested in previous calls, the common language runtime uses the assembly that is already loaded. This can have ramifications when naming assemblies that make up an application. For more information about naming assemblies, see [Assembly Names](../app-domains/assembly-names.md).
+If the requested assembly has also been requested in previous calls, the common language runtime uses the assembly that is already loaded. This can have ramifications when naming assemblies that make up an application. For more information about naming assemblies, see [Assembly Names](../../standard/assembly/names.md).
 
 If a previous request for the assembly failed, subsequent requests for the assembly are failed immediately without attempting to load the assembly. Starting with the .NET Framework version 2.0, assembly binding failures are cached, and the cached information is used to determine whether to attempt to load the assembly.
 

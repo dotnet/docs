@@ -42,6 +42,7 @@ In [regression](#regression), an evaluation metric that indicates how well data 
 ## Data
 
 Data is central to any machine learning application. In ML.NET data is represented by <xref:Microsoft.ML.IDataView> objects. Data view objects:
+
 - are made up of columns and rows
 - are lazily evaluated, that is they only load data when an operation calls for it
 - contain a schema that defines the type, format and length of each column

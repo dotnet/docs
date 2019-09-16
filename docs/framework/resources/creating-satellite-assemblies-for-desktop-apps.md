@@ -68,41 +68,40 @@ The following Al.exe command also creates a satellite assembly for the applicati
 
 ```console
 al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dll -template:Example.dll
-```
-
-The following table describes the Al.exe options used in these commands in more detail.
-
+```  
+  
+ The following table describes the Al.exe options used in these commands in more detail.
+  
 |Option|Description|
 |------------|-----------------|
 |**-target:**lib|Specifies that your satellite assembly is compiled to a library (.dll) file. Because a satellite assembly does not contain executable code and is not an application's main assembly, you must save satellite assemblies as DLLs.|
 |**-embed:**strings.de.resources|Specifies the name of the resource file to embed when Al.exe compiles the assembly. You can embed multiple .resources files in a satellite assembly, but if you are following the hub-and-spoke model, you must compile one satellite assembly for each culture. However, you can create separate .resources files for strings and objects.|
 |**-culture:**de|Specifies the culture of the resource to compile. The common language runtime uses this information when it searches for the resources for a specified culture. If you omit this option, Al.exe will still compile the resource, but the runtime will not be able to find it when a user requests it.|
 |**-out:**Example.resources.dll|Specifies the name of the output file. The name must follow the naming standard *baseName*.resources.*extension*, where *baseName* is the name of the main assembly and *extension* is a valid file name extension (such as .dll). Note that the runtime is not able to determine the culture of a satellite assembly based on its output file name; you must use the **/culture** option to specify it.|
-|**-template:**Example.dll|Specifies an assembly from which the satellite assembly will inherit all assembly metadata except the culture field. This option affects satellite assemblies only if you specify an assembly that has a [strong name](../app-domains/strong-named-assemblies.md).|
-
-For a complete list of options available with Al.exe, see [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md).
-
-## Satellite Assemblies: An Example
-
-The following is a simple "Hello world" example that displays a message box containing a localized greeting. The example includes resources for the English (United States), French (France), and Russian (Russia) cultures, and its fallback culture is English. To create the example, do the following:
-
+|**-template:**Example.dll|Specifies an assembly from which the satellite assembly will inherit all assembly metadata except the culture field. This option affects satellite assemblies only if you specify an assembly that has a [strong name](../../standard/assembly/strong-named.md).|
+  
+ For a complete list of options available with Al.exe, see [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md).
+  
+## Satellite Assemblies: An Example  
+ The following is a simple "Hello world" example that displays a message box containing a localized greeting. The example includes resources for the English (United States), French (France), and Russian (Russia) cultures, and its fallback culture is English. To create the example, do the following:  
+  
 1. Create a resource file named Greeting.resx or Greeting.txt to contain the resource for the default culture. Store a single string named `HelloString` whose value is "Hello world!" in this file.
-
+  
 2. To indicate that English (en) is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly.
-
+  
     [!code-csharp[Conceptual.Resources.Locating#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/assemblyinfo.cs#2)]
-    [!code-vb[Conceptual.Resources.Locating#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]
-
-3. Add support for additional cultures (en-US, fr-FR, and ru-RU) to the application as follows:
-
-    - To support the en-US or English (United States) culture, create a resource file named Greeting.en-US.resx or Greeting.en-US.txt, and store in it a single string named `HelloString` whose value is "Hi world!"
-
-    - To support the fr-FR or French (France) culture, create a resource file named Greeting.fr-FR.resx or Greeting.fr-FR.txt, and store in it a single string named `HelloString` whose value is "Salut tout le monde!"
-
-    - To support the ru-RU or Russian (Russia) culture, create a resource file named Greeting.ru-RU.resx or Greeting.ru-RU.txt, and store in it a single string named `HelloString` whose value is "Всем привет!"
-
-4. Use [Resgen.exe](../tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the .resx or .txt files, but a .resources extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following commands to compile the .resx files into .resources files:
-
+    [!code-vb[Conceptual.Resources.Locating#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]  
+  
+3. Add support for additional cultures (en-US, fr-FR, and ru-RU) to the application as follows:  
+  
+    - To support the en-US or English (United States) culture, create a resource file named Greeting.en-US.resx or Greeting.en-US.txt, and store in it a single string named `HelloString` whose value is "Hi world!"  
+  
+    - To support the fr-FR or French (France) culture, create a resource file named Greeting.fr-FR.resx or Greeting.fr-FR.txt, and store in it a single string named `HelloString` whose value is "Salut tout le monde!"  
+  
+    - To support the ru-RU or Russian (Russia) culture, create a resource file named Greeting.ru-RU.resx or Greeting.ru-RU.txt, and store in it a single string named `HelloString` whose value is "Всем привет!"  
+  
+4. Use [Resgen.exe](../tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the .resx or .txt files, but a .resources extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following commands to compile the .resx files into .resources files:  
+  
     ```console
     resgen Greeting.resx
     resgen Greeting.en-us.resx
@@ -138,28 +137,27 @@ The following is a simple "Hello world" example that displays a message box cont
 
     ```console
     al -target:lib -embed:Greeting.culture.resources -culture:culture -out:culture\Example.resources.dll
-    ```
+    ```  
+  
+     where *culture* is the name of the culture whose resources the satellite assembly contains. Visual Studio handles this process automatically.
+  
+ You can then run the example. It will randomly make one of the supported cultures the current culture and display a localized greeting.
+  
+<a name="SN"></a>   
 
-    where *culture* is the name of the culture whose resources the satellite assembly contains. Visual Studio handles this process automatically.
-
-You can then run the example. It will randomly make one of the supported cultures the current culture and display a localized greeting.
-
-<a name="SN"></a>
-
-## Installing Satellite Assemblies in the Global Assembly Cache
-
+## Installing Satellite Assemblies in the Global Assembly Cache  
 Instead of installing assemblies in a local application subdirectory, you can install them in the global assembly cache. This is particularly useful if you have class libraries and class library resource assemblies that are used by multiple applications.
-
-Installing assemblies in the global assembly cache requires that they have strong names. Strong-named assemblies are signed with a valid public/private key pair. They contain version information that the runtime uses to determine which assembly to use to satisfy a binding request. For more information about strong names and versioning, see [Assembly Versioning](../app-domains/assembly-versioning.md). For more information about strong names, see [Strong-Named Assemblies](../app-domains/strong-named-assemblies.md).
-
-When you are developing an application, it is unlikely that you will have access to the final public/private key pair. In order to install a satellite assembly in the global assembly cache and ensure that it works as expected, you can use a technique called delayed signing. When you delay sign an assembly, at build time you reserve space in the file for the strong name signature. The actual signing is delayed until later, when the final public/private key pair is available. For more information about delayed signing, see [Delay Signing an Assembly](../app-domains/delay-sign-assembly.md).
-
-### Obtaining the Public Key
+  
+Installing assemblies in the global assembly cache requires that they have strong names. Strong-named assemblies are signed with a valid public/private key pair. They contain version information that the runtime uses to determine which assembly to use to satisfy a binding request. For more information about strong names and versioning, see [Assembly Versioning](../../standard/assembly/versioning.md). For more information about strong names, see [Strong-Named Assemblies](../../standard/assembly/strong-named.md).
+  
+When you are developing an application, it is unlikely that you will have access to the final public/private key pair. In order to install a satellite assembly in the global assembly cache and ensure that it works as expected, you can use a technique called delayed signing. When you delay sign an assembly, at build time you reserve space in the file for the strong name signature. The actual signing is delayed until later, when the final public/private key pair is available. For more information about delayed signing, see [Delay Signing an Assembly](../../standard/assembly/delay-sign.md).
+  
+### Obtaining the Public Key  
 
 To delay sign an assembly, you must have access to the public key. You can either obtain the real public key from the organization in your company that will do the eventual signing, or create a public key by using the [Strong Name Tool (Sn.exe)](../tools/sn-exe-strong-name-tool.md).
-
+  
 The following Sn.exe command creates a test public/private key pair. The **–k** option specifies that Sn.exe should create a new key pair and save it in a file named TestKeyPair.snk.
-
+  
 ```console
 sn –k TestKeyPair.snk
 ```
@@ -317,7 +315,7 @@ The following example uses a method in a .NET Framework class library to extract
 ## See also
 
 - [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md)
-- [Delay Signing an Assembly](../app-domains/delay-sign-assembly.md)
+- [Delay Signing an Assembly](../../standard/assembly/delay-sign.md)
 - [Al.exe (Assembly Linker)](../tools/al-exe-assembly-linker.md)
 - [Sn.exe (Strong Name Tool)](../tools/sn-exe-strong-name-tool.md)
 - [Gacutil.exe (Global Assembly Cache Tool)](../tools/gacutil-exe-gac-tool.md)

@@ -14,12 +14,12 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Sn.exe (Strong Name Tool)
-The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../app-domains/strong-named-assemblies.md). Sn.exe provides options for key management, signature generation, and signature verification.  
+The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../standard/assembly/strong-named.md). Sn.exe provides options for key management, signature generation, and signature verification.  
   
 > [!WARNING]
 > Do not rely on strong names for security. They provide a unique identity only.
 
- For more information on strong naming and strong-named assemblies, see [Strong-Named Assemblies](../app-domains/strong-named-assemblies.md) and [How to: Sign an Assembly with a Strong Name](../app-domains/how-to-sign-an-assembly-with-a-strong-name.md).  
+ For more information on strong naming and strong-named assemblies, see [Strong-Named Assemblies](../../standard/assembly/strong-named.md) and [How to: Sign an Assembly with a Strong Name](../../standard/assembly/sign-strong-name.md).  
   
  The Strong Name tool is automatically installed with Visual Studio. To start the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
 
@@ -122,5 +122,5 @@ sn -d MyContainer
 
 - [Tools](index.md)
 - [Al.exe (Assembly Linker)](al-exe-assembly-linker.md)
-- [Strong-Named Assemblies](../app-domains/strong-named-assemblies.md)
+- [Strong-Named Assemblies](../../standard/assembly/strong-named.md)
 - [Command Prompts](developer-command-prompt-for-vs.md)

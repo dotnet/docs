@@ -5,6 +5,7 @@ ms.assetid: 4e8c6d04-fc2e-4b55-8717-c4cbaf681381
 author: "BrucePerlerMS"
 ---
 # WIF How-To's Index
+
 - [How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF](how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md)  
   
 - [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)  

@@ -20,4 +20,4 @@ For most .NET Framework applications, you locate assemblies that make up an appl
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](../configure-apps/index.md)
 - [Interoperating with unmanaged code](../interop/index.md)
-- [Assemblies in the Common Language Runtime](assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](index.md)

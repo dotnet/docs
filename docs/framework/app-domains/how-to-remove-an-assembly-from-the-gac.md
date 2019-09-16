@@ -49,5 +49,5 @@ gacutil -u hello
 ## See also
 
 - [Working with Assemblies and the Global Assembly Cache](working-with-assemblies-and-the-gac.md)
-- [How to: Install an Assembly into the Global Assembly Cache](how-to-install-an-assembly-into-the-gac.md)
+- [How to: Install an Assembly into the Global Assembly Cache](install-assembly-into-gac.md)
 - [Gacutil.exe (Global Assembly Cache Tool)](../tools/gacutil-exe-gac-tool.md)

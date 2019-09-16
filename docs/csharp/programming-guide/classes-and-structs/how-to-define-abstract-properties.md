@@ -53,4 +53,3 @@ The following example shows how to define [abstract](../../language-reference/ke
 - [Classes and Structs](./index.md)
 - [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md)
 - [Properties](./properties.md)
-- [How to: Create and Use Assemblies Using the Command Line](../concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)

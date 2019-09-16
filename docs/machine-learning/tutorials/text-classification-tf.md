@@ -26,8 +26,6 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 * [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed.
 
-* [The sentiment_analysis machine learning model Zip file](https://github.com/dotnet/machinelearning-testdata/blob/master/Microsoft.ML.TensorFlow.TestModels/sentiment_model)
-
 ## Setup
 
 ### Create the application
@@ -64,7 +62,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
    [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#AddUsings "Add necessary usings")]
 
-1. Create two global variables right above the `Main` method to hold the recently downloaded dataset file path and the saved model file path:
+1. Create two global variables right above the `Main` method to hold the saved model file path, and the feature vector length.
 
    [!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
@@ -100,15 +98,15 @@ The variable length feature array is then resized to a fixed length of 600. This
 
     [!code-csharp[VariableLengthFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#VariableLengthFeatures "Declare variable length features type")]
 
-    The `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate the vector type.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
+    The `VariableLengthFeatures` property has a [VectorType](xref:Microsoft.ML.Data.VectorTypeAttribute.%23ctor%2A) attribute to designate it as a vector.  All of the vector elements must be the same type. In data sets with a large number of columns, loading multiple columns as a single vector reduces the number of data passes when you apply data transformations.
 
-    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the data view can be used as the _input_ to the custom mapping action.
+    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the DataView can be used as the _input_ to the custom mapping action.
 
 1. Create a class for the fixed length features, after the `Main` method:
 
     [!code-csharp[FixedLengthFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#FixedLengthFeatures)]
 
-    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the data view can be used as the _output_ of the custom mapping action.
+    This class is used in the `ResizeFeatures` action. The names of its properties (in this case only one) are used to indicate which columns in the DataView can be used as the _output_ of the custom mapping action.
 
     Note that the name of the property `Features` is determined by the TensorFlow model. You cannot change this property name.
 
@@ -140,7 +138,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     [!code-csharp[CreateLookupMap](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateLookupMap)]
 
-1. Add an `Action` to resize the word integer array to a fixed size, with the next lines of code:
+1. Add an `Action` to resize the variable length word integer array to an integer array of fixed size, with the next lines of code:
 
    [!code-csharp[ResizeFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ResizeFeatures)]
 
@@ -154,7 +152,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     [!code-csharp[GetModelSchema](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#GetModelSchema)]
 
-    The input schema is the fixed-length array of integer encoded words. The output schema is a float array of probabilities of being negative, or positive sentiment. These values will sum to 1, as the probability of being positive is the complement of the probability of the sentiment being negative.
+    The input schema is the fixed-length array of integer encoded words. The output schema is a float array of probabilities indicating whether a review's sentiment is negative, or positive . These values sum to 1, as the probability of being positive is the complement of the probability of the sentiment being negative.
 
 ## Create the ML.NET pipeline
 
@@ -194,7 +192,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 ## Use the model to make a prediction
 
-1. Add the `PredictSentiment` skeleton below the `Main` method.
+1. Add the `PredictSentiment` method below the `Main` method:
 
     ```csharp
         public static void PredictSentiment(MLContext mlContext, ITransformer model)
@@ -207,7 +205,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     [!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreatePredictionEngine)]
 
-    The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass in and then perform a prediction on a single instance of data.
+    The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to make a prediction on a single instance of data.
 
 1. Add a comment to test the trained model's prediction in the `Predict()` method by creating an instance of `MovieReview`:
 
@@ -227,7 +225,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     [!code-csharp[DisplayPredictions](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DisplayPredictions)]
 
-1. Add a call to `PredictSentiment` at the end of `Main`:
+1. Add a call to `PredictSentiment` at the end of the `Main` method:
 
     [!code-csharp[CallPredictSentiment](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CallPredictSentiment)]
 

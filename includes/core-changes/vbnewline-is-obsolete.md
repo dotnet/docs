@@ -19,9 +19,11 @@ The [Obsolete](xref:System.ObsoleteAttribute) attribute message for `vbNewLine` 
 > For a carriage return and line feed, use [vbCrLf](xref:Microsoft.VisualBasic.Constants.vbCrLf). For the current platform's newline, use <xref:System.Environment.NewLine?displayProperty=nameWithType>.
 
 #### Category
+
 Visual Basic
 
 #### Affected APIs
+
 - <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName>
 
 <!--

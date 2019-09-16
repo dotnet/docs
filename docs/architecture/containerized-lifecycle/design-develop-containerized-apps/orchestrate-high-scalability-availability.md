@@ -9,7 +9,7 @@ Using orchestrators for production-ready applications is essential if your appli
 
 Figure 4-6 illustrates deployment into a cluster of an application composed of multiple microservices (containers).
 
-![Composed Docker applications in a cluster: You use one container for each service instance. Docker containers are “units of deployment” and a container is an instance of a Docker.A host handles many containers](./media/image6.png)
+![Composed Docker applications in a cluster: You use one container for each service instance. Docker containers are “units of deployment” and a container is an instance of a Docker. A host handles many containers](./media/image6.png)
 
 **Figure 4-6**. A cluster of containers
 

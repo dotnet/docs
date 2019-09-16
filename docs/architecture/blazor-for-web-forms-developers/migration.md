@@ -270,7 +270,7 @@ manually.This is done for you in ASP.NET Core. Anything that is required for
 startup that had been in `Global.asax` can be added into this file to configure
 the ASP.NET pipeline.
 
-### Code behind vs razor page
+### Migrate the pages
 
 In WebForms, a page was defined by three files: Create.aspx,
 Create.aspx.designer.cs and Create.aspx.cs. In Blazor, it is all done in the

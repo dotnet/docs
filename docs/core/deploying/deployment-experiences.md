@@ -18,7 +18,7 @@ For example, installing the .NET Core 2.2.14 update when you already have the .N
 
 As customers installed multiple updates and the updates accumulated on disk, we received strong feedback that the experience was not desirable. Therefore, changes were made to the installer in .NET Core 3.0.
 
-In .NET Core 3.0 and later versions, new major and minor releases continue to install side by side with earlier major and minor releases. **_Patch versions for a previously released minor version will upon successful installation remove any earlier patches for the same minor release._** 
+In .NET Core 3.0 and later versions, new major and minor releases continue to install side by side with earlier major and minor releases. **_Successfully installation of a new patch version will remove any earlier patches for the same minor release._** 
 
 For example, installing 3.0.2 when you already have 3.0.1 installed will result in 3.0.2 replacing 3.0.1.
 

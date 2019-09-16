@@ -1,4 +1,4 @@
-﻿---
+---
 title: Publish your Application
 description: Publish your Application
 author: jamshedd

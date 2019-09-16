@@ -78,7 +78,7 @@ It also has a number of disadvantages:
 
   Size can also be mitigated by [Trimming](Trimming) (see section on Trimming later in this guide).
 
-- Deploying many self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.
+- Deploying many self-contained .NET Core apps to a single system can consume significant amounts of disk space, since each app duplicates .NET Core files.
 
 Self-contained deployment is available for Windows Client, Windows Server, MacOS, and Linux platforms.  
 

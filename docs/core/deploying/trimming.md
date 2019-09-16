@@ -9,7 +9,7 @@ ms.custom:
 
 # Trimming Self-Contained Deployments and Executables 
 
-When it comes to deploying your application, size is often a critical factor � keeping the size of the package application as small as possible is a typical goal for application developers.
+When it comes to deploying your application, size is often a critical factor. keeping the size of the package application as small as possible is a typical goal for application developers.
 
 The dotnet publish verb now supports _Trimming_, which is removing of unused .NET Core assemblies from the final deployment. This feature is available for both Self-Contained Deployments (SCD) as well as Self-Contained Executables (SCE).
 
@@ -24,7 +24,7 @@ There are some risks in trimming executables. For example, programs may use refl
 
 Such factors should be taken into consideration before deciding to trim a self-contained deployment.
 
-Note: when a type is being referenced through reflection, and you do not want that type trimmed away by the linker you can provide a hint to the linker:
+Note: when a type is being referenced through reflection, and you do not want that assembly trimmed away by the linker you can provide a hint to the linker:
 
 ```xml
 <ItemGroup>

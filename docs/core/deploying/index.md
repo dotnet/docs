@@ -161,7 +161,7 @@ When it comes to deploying the .NET Core runtime, you can again choose between v
 - [.NET Core Acquisition Experiences](acquisition-experiences.md)
 - [.NET Core Deployment Experiences](deployment-experiences.md)
 - [Publish your Application](publish.md)
-- [Trimming](trimming.md)
+- [Trimming Self-Contained Deployments and Executables](trimming.md)
 - [Packaging your Application](packaging.md)
 - [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
 - [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)

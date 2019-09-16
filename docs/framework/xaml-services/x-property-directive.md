@@ -11,7 +11,7 @@ Declares a XAML property in markup.
 ```xaml  
 <object x:Class="className">  
   <x:Members>  
-    <x:Property Name="propertyName" Type="propertyType/>  
+    <x:Property Name="propertyName" Type="propertyType"/>  
     additionalProperties  
   </x:Members>  
 </object>  

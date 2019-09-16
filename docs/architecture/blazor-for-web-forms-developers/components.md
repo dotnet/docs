@@ -391,7 +391,7 @@ All of Blazor's component lifecycle methods have both synchronous and asynchrono
 
 The `OnInitialized` and `OnInitializedAsync` methods are used to initialize the component. A component is typically initialized after it's first rendered. After a component is initialized, it may be rendered multiple times before it's eventually disposed. The `OnInitialized` method is similar to the `Page_Load` event in ASP.NET Web Forms pages and controls.
 
-```
+```csharp
 protected override void OnInitialized() { ... }
 protected override Task OnInitializedAsync() { ... }
 ```
@@ -400,7 +400,7 @@ protected override Task OnInitializedAsync() { ... }
 
 The `OnParametersSet` and `OnParametersSetAsync` methods are called when a component has received parameters from its parent and the value are assigned to properties. These methods are executed after component initialization and *each time the component is rendered*.
 
-```
+```csharp
 protected override void OnParametersSet() { ... }
 protected override async Task OnParametersSetAsync() { ...}
 ```
@@ -576,4 +576,4 @@ The visibility of the component's members in the base class must be `protected` 
 
 ## Additional resources
 
-The preceding isn't an exhaustive treatment of all aspects of Blazor components. For more information on how to [Create and use ASP.NET Core Razor components](https://docs.microsoft.com/aspnet/core/blazor/components), see the Blazor documentation.
+The preceding isn't an exhaustive treatment of all aspects of Blazor components. For more information on how to [Create and use ASP.NET Core Razor components](/aspnet/core/blazor/components), see the Blazor documentation.

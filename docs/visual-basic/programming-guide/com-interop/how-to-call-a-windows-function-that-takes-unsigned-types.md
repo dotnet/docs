@@ -20,7 +20,7 @@ ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
 
 If you are consuming a class, module, or structure that has members of unsigned integer types, you can access these members with Visual Basic.
 
-### To call a Windows function that takes an unsigned type
+## To call a Windows function that takes an unsigned type
 
 1. Use a [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md) to tell Visual Basic which library holds the function, what its name is in that library, what its calling sequence is, and how to convert strings when calling it.
 

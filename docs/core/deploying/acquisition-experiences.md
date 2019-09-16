@@ -92,7 +92,7 @@ This site provides downloads for the native installers (MSI for Windows, PKG for
 
 ## Dotnet-install.ps1/.sh Scripts
 
-The dotnet-install scripts are used to do a non-admin installation of the .NET Core SDK. The .NET Core SDK includes both the .NET Core CLI tools and the shared runtime.
+The dotnet-install scripts are used to perform a non-admin installation of the .NET Core SDK. The .NET Core SDK includes both the .NET Core CLI tools and the shared runtime.
 
 The primary usage scenario of these scripts is in automation scenarios and non-admin installations. 
 There are two scripts: one is a PowerShell script that works on Windows and everywhere that PowerShell is supported including [Linux](https://azure.microsoft.com/blog/powershell-is-open-sourced-and-is-available-on-linux/) and [MacOS](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6). The other is a bash script that works on Linux/MacOS. Both scripts have the same behavior.

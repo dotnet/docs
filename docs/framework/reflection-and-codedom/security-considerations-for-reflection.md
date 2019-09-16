@@ -55,7 +55,7 @@ These rules are the same whether a security-critical member is accessed directly
 
 Application code that is run from the command line runs with full trust. As long as it is not marked as transparent, it can use reflection to access security-critical members. When the same code is run with partial trust (for example, in a sandboxed application domain) the assembly's trust level determines whether it can access security-critical code: If the assembly has a strong name and is installed in the global assembly cache, it is a trusted assembly and can call security-critical members. If it is not trusted, it becomes transparent even though it was not marked as transparent, and it cannot access security-critical members.
 
-For more information about the security model in the .NET Framework 4, see [Security Changes](../../../docs/framework/security/security-changes.md).
+For more information about the security model in the .NET Framework 4, see [Security Changes](../security/security-changes.md).
 
 ## Reflection and Transparency
 
@@ -111,9 +111,9 @@ Avoid writing public members that take <xref:System.Reflection.MethodInfo> param
 - <xref:System.Security.Permissions.ReflectionPermissionFlag>
 - <xref:System.Security.Permissions.ReflectionPermission>
 - <xref:System.Security.Permissions.SecurityPermission>
-- [Security Changes](../../../docs/framework/security/security-changes.md)
-- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
-- [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)
-- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [Security Changes](../security/security-changes.md)
+- [Code Access Security](../misc/code-access-security.md)
+- [Security Issues in Reflection Emit](security-issues-in-reflection-emit.md)
+- [Viewing Type Information](viewing-type-information.md)
 - [Applying Attributes](../../standard/attributes/applying-attributes.md)
-- [Accessing Custom Attributes](../../../docs/framework/reflection-and-codedom/accessing-custom-attributes.md)
+- [Accessing Custom Attributes](accessing-custom-attributes.md)

@@ -27,7 +27,7 @@ The abstract <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> clas
   
 ## See also
 
-- [Deriving from WebRequest](../../../docs/framework/network-programming/deriving-from-webrequest.md)
-- [Deriving from WebResponse](../../../docs/framework/network-programming/deriving-from-webresponse.md)
-- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
-- [How to: Typecast a WebRequest to Access Protocol Specific Properties](../../../docs/framework/network-programming/how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md)
+- [Deriving from WebRequest](deriving-from-webrequest.md)
+- [Deriving from WebResponse](deriving-from-webresponse.md)
+- [Network Programming in the .NET Framework](index.md)
+- [How to: Typecast a WebRequest to Access Protocol Specific Properties](how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md)

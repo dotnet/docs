@@ -25,13 +25,13 @@ Gets the installation directory of the common language runtime (CLR) associated 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRuntimeDirectory(  
 [out, size_is(*pcchBuffer)] LPWSTR pwzBuffer,  
 [in, out]  DWORD *pcchBuffer);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzBuffer`  
  [out] Returns the CLR installation directory. The installation path is fully qualified; for example, "c:\windows\microsoft.net\framework\v1.0.3705\\".  
   
@@ -58,5 +58,6 @@ HRESULT GetRuntimeDirectory(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

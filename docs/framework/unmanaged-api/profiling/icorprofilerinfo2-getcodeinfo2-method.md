@@ -23,7 +23,7 @@ Gets the extents of native code associated with the specified `FunctionID`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeInfo2(  
     [in]  FunctionID functionID,  
     [in]  ULONG32 cCodeInfos,  
@@ -32,7 +32,7 @@ HRESULT GetCodeInfo2(
     COR_PRF_CODE_INFO codeInfos[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionID`  
  [in] The ID of the function with which the native code is associated.  
   
@@ -62,6 +62,7 @@ HRESULT GetCodeInfo2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [GetCodeInfo3 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getcodeinfo3-method.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

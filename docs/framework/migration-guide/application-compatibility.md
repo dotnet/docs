@@ -25,9 +25,9 @@ running on a particular version.
 
 Each app targets a specific version of the .NET Framework, which can be specified by:
 
-* Defining a target framework in Visual Studio.
-* Specifying the target framework in a project file.
-* Applying a <xref:System.Runtime.Versioning.TargetFrameworkAttribute> to the source code.
+- Defining a target framework in Visual Studio.
+- Specifying the target framework in a project file.
+- Applying a <xref:System.Runtime.Versioning.TargetFrameworkAttribute> to the source code.
 
 When running on a newer version than what was targeted, the .NET Framework will
 use quirked behavior to mimic the older targeted version. In other words, the
@@ -67,11 +67,11 @@ issues are applicable for the planned migration and will only surface those.
 
 Each issue includes the following information:
 
--   The description of what has changed from a previous version.
+- The description of what has changed from a previous version.
 
--   How the change affects customers and whether any workarounds are available to preserve compatibility across versions.
+- How the change affects customers and whether any workarounds are available to preserve compatibility across versions.
 
--   An assessment of how important the change is. Application compatibility issue are categorized as follows:
+- An assessment of how important the change is. Application compatibility issue are categorized as follows:
 
     |   |   |
     |---|---|
@@ -80,28 +80,27 @@ Each issue includes the following information:
     |Edge case|A change that affects apps under very specific, uncommon scenarios.|
     |Transparent|A change with no noticeable effect on the application's developer or user.|
 
--   Version indicates when the change first appears in the framework. Some of the changes are introduced in a particular version and reverted in a later version; that is indicated as well.
+- Version indicates when the change first appears in the framework. Some of the changes are introduced in a particular version and reverted in a later version; that is indicated as well.
 
--   The type of change:
+- The type of change:
 
     |   |   |
     |---|---|
     |Retargeting|The change affects apps that are recompiled to target a new version of the .NET Framework.|
     |Runtime|The change affects an existing app that targets a previous version of the .NET Framework but runs on a later version.|
 
--   The affected APIS, if any.
+- The affected APIS, if any.
 
--   The IDs of the available diagnostics
+- The IDs of the available diagnostics
 
 ## Usage
 To begin, select the type of compatibility change below:
 
-* [Retargeting Changes](./retargeting/index.md)
-* [Runtime Changes](./runtime/index.md)
-
+- [Retargeting Changes](./retargeting/index.md)
+- [Runtime Changes](./runtime/index.md)
 
 ## See also
 
-- [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
-- [What's New](../../../docs/framework/whats-new/index.md)
-- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
+- [Versions and Dependencies](versions-and-dependencies.md)
+- [What's New](../whats-new/index.md)
+- [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md)

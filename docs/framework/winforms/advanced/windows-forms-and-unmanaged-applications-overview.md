@@ -41,22 +41,23 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
  An application's message loop is an internal program loop that retrieves messages from a thread's message queue, translates them, and then sends them to the application to be handled. The message loop for a Windows Form does not have the same architecture as message loops that earlier applications, such as Visual Basic 6.0 applications and MFC applications, provide. The window messages that are posted to the message loop may be handled differently than the Windows Form expects. Therefore, unexpected behavior may occur. Some keystroke combinations may not work, some mouse activity may not work, or some events may not be raised as expected.  
   
 ## Resolving Interoperability Issues  
- You can resolve these problems by displaying the form on a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] message loop, which is created by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  
+ You can resolve these problems by displaying the form on a .NET Framework message loop, which is created by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  
   
  To make a Windows Form work correctly from a COM client application, you must run it on a Windows Forms message loop. To do this, use one of the following approaches:  
   
--   Use the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method to display the Windows Form. For more information, see [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](../../../../docs/framework/winforms/advanced/com-interop-by-displaying-a-windows-form-shadow.md).  
+- Use the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method to display the Windows Form. For more information, see [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](com-interop-by-displaying-a-windows-form-shadow.md).  
   
--   Display each Windows Form on a new thread. For more information, see [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](../../../../docs/framework/winforms/advanced/how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md).  
+- Display each Windows Form on a new thread. For more information, see [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md).  
   
 ## See also
-- [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)
+
+- [Windows Forms and Unmanaged Applications](windows-forms-and-unmanaged-applications.md)
 - [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
 - [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)
 - [COM Interoperability Samples](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cxcz83xf(v=vs.90))
-- [Aximp.exe (Windows Forms ActiveX Control Importer)](../../../../docs/framework/tools/aximp-exe-windows-forms-activex-control-importer.md)
-- [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
-- [Packaging an Assembly for COM](../../../../docs/framework/interop/packaging-an-assembly-for-com.md)
-- [Registering Assemblies with COM](../../../../docs/framework/interop/registering-assemblies-with-com.md)
-- [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](../../../../docs/framework/winforms/advanced/com-interop-by-displaying-a-windows-form-shadow.md)
-- [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](../../../../docs/framework/winforms/advanced/how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)
+- [Aximp.exe (Windows Forms ActiveX Control Importer)](../../tools/aximp-exe-windows-forms-activex-control-importer.md)
+- [Exposing .NET Framework Components to COM](../../interop/exposing-dotnet-components-to-com.md)
+- [Packaging an Assembly for COM](../../interop/packaging-an-assembly-for-com.md)
+- [Registering Assemblies with COM](../../interop/registering-assemblies-with-com.md)
+- [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](com-interop-by-displaying-a-windows-form-shadow.md)
+- [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)

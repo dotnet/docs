@@ -17,7 +17,7 @@ Reference required to assembly '\<assemblyname>' containing the base class '\<cl
   
 ## To correct this error  
   
--   Include the name of the unreferenced DLL or assembly in your project references.  
+- Include the name of the unreferenced DLL or assembly in your project references.  
   
 ## See also
 

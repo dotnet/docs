@@ -13,21 +13,21 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
   
  WCF sessions have the following main conceptual features:  
   
--   They are explicitly initiated and terminated by the calling application.  
+- They are explicitly initiated and terminated by the calling application.  
   
--   Messages delivered during a session are processed in the order in which they are received.  
+- Messages delivered during a session are processed in the order in which they are received.  
   
--   Sessions correlate a group of messages into a conversation. The meaning of that correlation is an abstraction. For instance, one session-based channel may correlate messages based on a shared network connection while another session-based channel may correlate messages based on a shared tag in the message body. The features that can be derived from the session depend on the nature of the correlation.  
+- Sessions correlate a group of messages into a conversation. The meaning of that correlation is an abstraction. For instance, one session-based channel may correlate messages based on a shared network connection while another session-based channel may correlate messages based on a shared tag in the message body. The features that can be derived from the session depend on the nature of the correlation.  
   
--   There is no general data store associated with a WCF session.  
+- There is no general data store associated with a WCF session.  
   
- If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications and the functionality it provides, you might notice the following differences between that kind of session and WCF sessions:  
+ If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in ASP.NET applications and the functionality it provides, you might notice the following differences between that kind of session and WCF sessions:  
   
--   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] sessions are always server-initiated.  
+- ASP.NET sessions are always server-initiated.  
   
--   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] sessions are implicitly unordered.  
+- ASP.NET sessions are implicitly unordered.  
   
--   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] sessions provide a general data storage mechanism across requests.  
+- ASP.NET sessions provide a general data storage mechanism across requests.  
   
  Client applications and service applications interact with sessions in different ways. Client applications initiate sessions and then receive and process the messages sent within the session. Service applications can use sessions as an extensibility point to add additional behavior. This is done by working directly with the <xref:System.ServiceModel.InstanceContext> or implementing a custom instance context provider.  
   
@@ -36,11 +36,11 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
   
  The following instancing modes are available:  
   
--   <xref:System.ServiceModel.InstanceContextMode.PerCall>: A new <xref:System.ServiceModel.InstanceContext> (and therefore service object) is created for each client request.  
+- <xref:System.ServiceModel.InstanceContextMode.PerCall>: A new <xref:System.ServiceModel.InstanceContext> (and therefore service object) is created for each client request.  
   
--   <xref:System.ServiceModel.InstanceContextMode.PerSession>: A new <xref:System.ServiceModel.InstanceContext> (and therefore service object) is created for each new client session and maintained for the lifetime of that session (this requires a binding that supports sessions).  
+- <xref:System.ServiceModel.InstanceContextMode.PerSession>: A new <xref:System.ServiceModel.InstanceContext> (and therefore service object) is created for each new client session and maintained for the lifetime of that session (this requires a binding that supports sessions).  
   
--   <xref:System.ServiceModel.InstanceContextMode.Single>: A single <xref:System.ServiceModel.InstanceContext> (and therefore service object) handles all client requests for the lifetime of the application.  
+- <xref:System.ServiceModel.InstanceContextMode.Single>: A single <xref:System.ServiceModel.InstanceContext> (and therefore service object) handles all client requests for the lifetime of the application.  
   
  The following code example shows the default <xref:System.ServiceModel.InstanceContextMode> value, <xref:System.ServiceModel.InstanceContextMode.PerSession> being explicitly set on a service class.  
   
@@ -69,14 +69,14 @@ public class CalculatorService : ICalculatorInstance
   
  The following three concurrency modes are available:  
   
--   <xref:System.ServiceModel.ConcurrencyMode.Single>: Each instance context is allowed to have a maximum of one thread processing messages in the instance context at a time. Other threads wishing to use the same instance context must block until the original thread exits the instance context.  
+- <xref:System.ServiceModel.ConcurrencyMode.Single>: Each instance context is allowed to have a maximum of one thread processing messages in the instance context at a time. Other threads wishing to use the same instance context must block until the original thread exits the instance context.  
   
--   <xref:System.ServiceModel.ConcurrencyMode.Multiple>: Each service instance can have multiple threads processing messages concurrently. The service implementation must be thread-safe to use this concurrency mode.  
+- <xref:System.ServiceModel.ConcurrencyMode.Multiple>: Each service instance can have multiple threads processing messages concurrently. The service implementation must be thread-safe to use this concurrency mode.  
   
--   <xref:System.ServiceModel.ConcurrencyMode.Reentrant>: Each service instance processes one message at a time, but accepts re-entrant operation calls. The service only accepts these calls when it is calling out through a WCF client object.  
+- <xref:System.ServiceModel.ConcurrencyMode.Reentrant>: Each service instance processes one message at a time, but accepts re-entrant operation calls. The service only accepts these calls when it is calling out through a WCF client object.  
   
 > [!NOTE]
->  Understanding and developing code that safely uses more than one thread can be difficult to write successfully. Before using <xref:System.ServiceModel.ConcurrencyMode.Multiple> or <xref:System.ServiceModel.ConcurrencyMode.Reentrant> values, ensure that your service is properly designed for these modes. For more information, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
+> Understanding and developing code that safely uses more than one thread can be difficult to write successfully. Before using <xref:System.ServiceModel.ConcurrencyMode.Multiple> or <xref:System.ServiceModel.ConcurrencyMode.Reentrant> values, ensure that your service is properly designed for these modes. For more information, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
   
  The use of concurrency is related to the instancing mode. In <xref:System.ServiceModel.InstanceContextMode.PerCall> instancing, concurrency is not relevant, because each message is processed by a new <xref:System.ServiceModel.InstanceContext> and, therefore, never more than one thread is active in the <xref:System.ServiceModel.InstanceContext>.  
   
@@ -102,6 +102,7 @@ public class CalculatorService : ICalculatorConcurrency
 |Single|-   Behavior with sessionful channel: A session and one <xref:System.ServiceModel.InstanceContext> for all calls.<br />-   Behavior with sessionless channel: An exception is thrown.|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext> for the created or user-specified singleton.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext> for the created or user-specified singleton.|-   Behavior with sessionful channel: An exception is thrown.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext> for each created singleton or for the user-specified singleton.|  
   
 ## See also
+
 - [Using Sessions](../../../../docs/framework/wcf/using-sessions.md)
 - [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)
 - [How to: Control Service Instancing](../../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)

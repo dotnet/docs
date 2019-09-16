@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<wsFederation>"
 ms.date: "03/30/2017"
 ms.assetid: c537f770-68bd-4f82-96ad-6424ad91369f
@@ -7,9 +7,10 @@ author: "BrucePerlerMS"
 # \<wsFederation>
 Provides configuration for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM).  
   
-\<system.identityModel.services>  
-\<federationConfiguration>  
-\<wsFederation>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<wsFederation>**  
   
 ## Syntax  
   
@@ -46,7 +47,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
 |---------------|-----------------|  
 |authenticationType|A URI that specifies the authentication type. Sets the WS-Federation sign-in request wauth parameter. Optional. The default is an empty string, which specifies that the wauth parameter is not included in the request.|  
 |freshness|The desired maximum age of authentication requests, in minutes. Sets the WS-Federation sign-in request wfresh parameter. Optional. The default is zero. Optional. **Warning:**  In the next release of .NET Framework 4.5, the `freshness` attribute will be of type `xs:string` and its default value will be `null`.|  
-|homeRealm|The home realm of the identity provider (IP) to use for authentication. Sets the WS-Federation sign-in request whr parameter. Optional. The default is an empty string, which specifies that the whr parameter is not included in the request.|  
+|homeRealm|The home realm of the identity provider (IdP) to use for authentication. Sets the WS-Federation sign-in request whr parameter. Optional. The default is an empty string, which specifies that the whr parameter is not included in the request.|  
 |issuer|The URI of the intended token issuer. Sets the base URL of WS-Federation sign-in requests and sign-out requests Required.|  
 |persistentCookiesOnPassiveRedirects|Specifies whether persistent cookies are issued on authentication. Optional. The default is "false", cookies are not issued.|  
 |passiveRedirectEnabled|Specifies whether the WSFAM is enabled to automatically redirect unauthorized requests to an STS. Optional. The default is "true", unauthorized requests are automatically redirected.|  
@@ -68,7 +69,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<federationConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
+|[\<federationConfiguration>](federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
   
 ## Remarks  
  You can use the `<wsFederation>` element to configure default WS-Federation parameter settings and default behavior for the WSFAM. WS-Federation parameter settings defined under the `<wsFederation>` element set equivalent properties exposed by the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class. These properties remain the same for every request issued by the WSFAM. You can change the WS-Federation parameters dynamically during request processing by adding event handlers for the events exposed by WSFAM; for example, the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectingToIdentityProvider> event. For more information, see the documentation for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class.  
@@ -79,7 +80,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
  The following XML shows a `<wsFederation>` element that specifies settings for the WSFAM.  
   
 > [!WARNING]
->  In this example, the WSFAM is not required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element is set `false`. This setting is not recommended for most production environments as it may present a security risk.  
+> In this example, the WSFAM is not required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element is set `false`. This setting is not recommended for most production environments as it may present a security risk.  
   
 ```xml
 <wsFederation passiveRedirectEnabled="true"   
@@ -93,5 +94,6 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>
 - <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType>

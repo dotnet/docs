@@ -15,21 +15,21 @@ One of the most basic projects in Visual Studio is the Console Application.  Her
 
 1. On the **File** menu, point to **New**, and then choose **Project**.
 
-2.  In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
+2. In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
 
 3. Select either **.NET Core Console app** or **Console app**.
 
-3. Choose the **Okay** button to create the F# project!  You should now see an F# project in the Solution Explorer.
+4. Choose the **Okay** button to create the F# project!  You should now see an F# project in the Solution Explorer.
 
 ## Writing your code
 
 Let's get started by writing some code first.  Make sure that the `Program.fs` file is open, and then replace its contents with the following:
 
-[!code-fsharp[HelloSquare](../../../samples/snippets/fsharp/getting-started/hello-square.fs)]
+[!code-fsharp[HelloSquare](~/samples/snippets/fsharp/getting-started/hello-square.fs)]
 
 In the previous code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../language-reference/type-inference.md), the type of `x` doesn't need to be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
 
-```
+```fsharp
 val square: x:int -> int
 ```
 

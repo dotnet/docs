@@ -22,7 +22,7 @@ Visual Basic provides *character data types* to deal with printable and displaya
  Each possible value in a `Char` or `String` variable is a *code point*, or character code, in the Unicode character set. Unicode characters include the basic ASCII character set, various other alphabet letters, accents, currency symbols, fractions, diacritics, and mathematical and technical symbols.  
   
 > [!NOTE]
->  The Unicode character set reserves the code points D800 through DFFF (55296 through 55551 decimal) for *surrogate pairs*, which require two 16-bit values to represent a single code point. A `Char` variable cannot hold a surrogate pair, and a `String` uses two positions to hold such a pair.  
+> The Unicode character set reserves the code points D800 through DFFF (55296 through 55551 decimal) for *surrogate pairs*, which require two 16-bit values to represent a single code point. A `Char` variable cannot hold a surrogate pair, and a `String` uses two positions to hold such a pair.  
   
  For more information, see [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md).  
   
@@ -34,6 +34,7 @@ Visual Basic provides *character data types* to deal with printable and displaya
  For more information, see [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md).  
   
 ## See also
+
 - [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
 - [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
 - [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)

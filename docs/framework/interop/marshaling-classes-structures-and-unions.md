@@ -44,27 +44,27 @@ Classes and structures are similar in the .NET Framework. Both can have fields, 
   
  The Structs sample uses the following unmanaged functions, shown with their original function declaration:  
   
--   **TestStructInStruct** exported from PinvokeLib.dll.  
+- **TestStructInStruct** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp  
     int TestStructInStruct(MYPERSON2* pPerson2);  
     ```  
   
--   **TestStructInStruct3** exported from PinvokeLib.dll.  
+- **TestStructInStruct3** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp  
     void TestStructInStruct3(MYPERSON3 person3);  
     ```  
   
--   **TestArrayInStruct** exported from PinvokeLib.dll.  
+- **TestArrayInStruct** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp  
     void TestArrayInStruct( MYARRAYSTRUCT* pStruct );  
     ```  
   
- [PinvokeLib.dll](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/as6wyhwt(v=vs.100)) is a custom unmanaged library that contains implementations for the previously listed functions and four structures: **MYPERSON**, **MYPERSON2**, **MYPERSON3**, and **MYARRAYSTRUCT**. These structures contain the following elements:  
+ [PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains implementations for the previously listed functions and four structures: **MYPERSON**, **MYPERSON2**, **MYPERSON3**, and **MYARRAYSTRUCT**. These structures contain the following elements:  
   
-```  
+```cpp  
 typedef struct _MYPERSON  
 {  
    char* first;   
@@ -92,23 +92,23 @@ typedef struct _MYARRAYSTRUCT
   
  The managed `MyPerson`, `MyPerson2`, `MyPerson3`, and `MyArrayStruct` structures have the following characteristic:  
   
--   `MyPerson` contains only string members. The [CharSet](specifying-a-character-set.md) field sets the strings to ANSI format when passed to the unmanaged function.  
+- `MyPerson` contains only string members. The [CharSet](specifying-a-character-set.md) field sets the strings to ANSI format when passed to the unmanaged function.  
   
--   `MyPerson2` contains an **IntPtr** to the `MyPerson` structure. The **IntPtr** type replaces the original pointer to the unmanaged structure because .NET Framework applications do not use pointers unless the code is marked **unsafe**.  
+- `MyPerson2` contains an **IntPtr** to the `MyPerson` structure. The **IntPtr** type replaces the original pointer to the unmanaged structure because .NET Framework applications do not use pointers unless the code is marked **unsafe**.  
   
--   `MyPerson3` contains `MyPerson` as an embedded structure. A structure embedded within another structure can be flattened by placing the elements of the embedded structure directly into the main structure, or it can be left as an embedded structure, as is done in this sample.  
+- `MyPerson3` contains `MyPerson` as an embedded structure. A structure embedded within another structure can be flattened by placing the elements of the embedded structure directly into the main structure, or it can be left as an embedded structure, as is done in this sample.  
   
--   `MyArrayStruct` contains an array of integers. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute sets the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration value to **ByValArray**, which is used to indicate the number of elements in the array.  
+- `MyArrayStruct` contains an array of integers. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute sets the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration value to **ByValArray**, which is used to indicate the number of elements in the array.  
   
  For all structures in this sample, the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute is applied to ensure that the members are arranged in memory sequentially, in the order in which they appear.  
   
  The `LibWrap` class contains managed prototypes for the `TestStructInStruct`, `TestStructInStruct3`, and `TestArrayInStruct` methods called by the `App` class. Each prototype declares a single parameter, as follows:  
   
--   `TestStructInStruct` declares a reference to type `MyPerson2` as its parameter.  
+- `TestStructInStruct` declares a reference to type `MyPerson2` as its parameter.  
   
--   `TestStructInStruct3` declares type `MyPerson3` as its parameter and passes the parameter by value.  
+- `TestStructInStruct3` declares type `MyPerson3` as its parameter and passes the parameter by value.  
   
--   `TestArrayInStruct` declares a reference to type `MyArrayStruct` as its parameter.  
+- `TestArrayInStruct` declares a reference to type `MyArrayStruct` as its parameter.  
   
  Structures as arguments to methods are passed by value unless the parameter contains the **ref** (**ByRef** in Visual Basic) keyword. For example, the `TestStructInStruct` method passes a reference (the value of an address) to an object of type `MyPerson2` to unmanaged code. To manipulate the structure that `MyPerson2` points to, the sample creates a buffer of a specified size and returns its address by combining the <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> methods. Next, the sample copies the content of the managed structure to the unmanaged buffer. Finally, the sample uses the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A?displayProperty=nameWithType> method to marshal data from the unmanaged buffer to a managed object and the <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A?displayProperty=nameWithType> method to free the unmanaged block of memory.  
   
@@ -127,15 +127,15 @@ typedef struct _MYARRAYSTRUCT
   
  The FindFile sample uses the following unmanaged function, shown with its original function declaration:  
   
--   **FindFirstFile** exported from Kernel32.dll.  
+- **FindFirstFile** exported from Kernel32.dll.  
   
-    ```  
+    ```cpp
     HANDLE FindFirstFile(LPCTSTR lpFileName, LPWIN32_FIND_DATA lpFindFileData);  
     ```  
   
  The original structure passed to the function contains the following elements:  
   
-```  
+```cpp
 typedef struct _WIN32_FIND_DATA   
 {  
   DWORD    dwFileAttributes;   
@@ -170,15 +170,15 @@ typedef struct _WIN32_FIND_DATA
   
  The Unions sample uses the following unmanaged function, shown with its original function declaration:  
   
--   **TestUnion** exported from PinvokeLib.dll.  
+- **TestUnion** exported from PinvokeLib.dll.  
   
-    ```  
+    ```cpp
     void TestUnion(MYUNION u, int type);  
     ```  
   
- [PinvokeLib.dll](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/as6wyhwt(v=vs.100)) is a custom unmanaged library that contains an implementation for the previously listed function and two unions, **MYUNION** and **MYUNION2**. The unions contain the following elements:  
+ [PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed function and two unions, **MYUNION** and **MYUNION2**. The unions contain the following elements:  
   
-```  
+```cpp
 union MYUNION  
 {  
     int number;  
@@ -213,15 +213,15 @@ union MYUNION2
   
  The SysTime sample uses the following unmanaged function, shown with its original function declaration:  
   
--   **GetSystemTime** exported from Kernel32.dll.  
+- **GetSystemTime** exported from Kernel32.dll.  
   
-    ```  
+    ```cpp
     VOID GetSystemTime(LPSYSTEMTIME lpSystemTime);  
     ```  
   
  The original structure passed to the function contains the following elements:  
   
-```  
+```cpp
 typedef struct _SYSTEMTIME {   
     WORD wYear;   
     WORD wMonth;   
@@ -248,9 +248,9 @@ typedef struct _SYSTEMTIME {
   
  This sample demonstrates how to call a native function by using the <xref:System.Runtime.InteropServices.Marshal> class and by using unsafe code.  
   
- This sample uses a wrapper functions and platform invokes defined in [PinvokeLib.dll](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/as6wyhwt(v=vs.100)), also provided in the source files. It uses the `TestOutArrayOfStructs` function and the `MYSTRSTRUCT2` structure. The structure contains the following elements:  
+ This sample uses a wrapper functions and platform invokes defined in [PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll), also provided in the source files. It uses the `TestOutArrayOfStructs` function and the `MYSTRSTRUCT2` structure. The structure contains the following elements:  
   
-```  
+```cpp
 typedef struct _MYSTRSTRUCT2  
 {  
    char* buffer;  
@@ -260,17 +260,17 @@ typedef struct _MYSTRSTRUCT2
   
  The `MyStruct` class contains a string object of ANSI characters. The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> field specifies ANSI format. `MyUnsafeStruct`, is a structure containing an <xref:System.IntPtr> type instead of a string.  
   
- The `LibWrap` class contains the overloaded `TestOutArrayOfStructs` prototype method. If a method declares a pointer as a parameter, the class should be marked with the `unsafe` keyword. Because [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)] cannot use unsafe code, the overloaded method, unsafe modifier, and the `MyUnsafeStruct` structure are unnecessary.  
+ The `LibWrap` class contains the overloaded `TestOutArrayOfStructs` prototype method. If a method declares a pointer as a parameter, the class should be marked with the `unsafe` keyword. Because Visual Basic cannot use unsafe code, the overloaded method, unsafe modifier, and the `MyUnsafeStruct` structure are unnecessary.  
   
  The `App` class implements the `UsingMarshaling` method, which performs all the tasks necessary to pass the array. The array is marked with the `out` (`ByRef` in Visual Basic) keyword to indicate that data passes from callee to caller. The implementation uses the following <xref:System.Runtime.InteropServices.Marshal> class methods:  
   
--   <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A> to marshal data from the unmanaged buffer to a managed object.  
+- <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A> to marshal data from the unmanaged buffer to a managed object.  
   
--   <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A> to release the memory reserved for strings in the structure.  
+- <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A> to release the memory reserved for strings in the structure.  
   
--   <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> to release the memory reserved for the array.  
+- <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> to release the memory reserved for the array.  
   
- As previously mentioned, C# allows unsafe code and [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)] does not. In the C# sample, `UsingUnsafePointer` is an alternative method implementation that uses pointers instead of the <xref:System.Runtime.InteropServices.Marshal> class to pass back the array containing the `MyUnsafeStruct` structure.  
+ As previously mentioned, C# allows unsafe code and Visual Basic does not. In the C# sample, `UsingUnsafePointer` is an alternative method implementation that uses pointers instead of the <xref:System.Runtime.InteropServices.Marshal> class to pass back the array containing the `MyUnsafeStruct` structure.  
   
 ### Declaring Prototypes  
  [!code-cpp[Conceptual.Interop.Marshaling#20](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.interop.marshaling/cpp/outarrayofstructs.cpp#20)]
@@ -283,6 +283,7 @@ typedef struct _MYSTRSTRUCT2
  [!code-vb[Conceptual.Interop.Marshaling#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/outarrayofstructs.vb#21)]  
   
 ## See also
+
 - [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)
 - [Marshaling Strings](marshaling-strings.md)
 - [Marshaling Different Types of Arrays](marshaling-different-types-of-arrays.md)

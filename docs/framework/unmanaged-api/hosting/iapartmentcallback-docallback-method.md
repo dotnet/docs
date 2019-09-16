@@ -23,14 +23,14 @@ Executes the specified function within an apartment.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _stdcall DoCallback(  
     [in] SIZE_T pFunc,  
     [in] SIZE_T pData  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFunc`  
  [in] A pointer to the function to be executed within the apartment.  
   
@@ -47,4 +47,5 @@ HRESULT _stdcall DoCallback(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IApartmentCallback Interface](../../../../docs/framework/unmanaged-api/hosting/iapartmentcallback-interface.md)

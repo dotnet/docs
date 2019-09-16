@@ -22,13 +22,13 @@ Releases the Win32 resource blob and associated resources.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FreeWin32ResBlob(  
     const void** ppResBlob  
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppResBlob`  
  The resource blob to be released. This method assigns the blob pointer to NULL.  
   
@@ -39,6 +39,7 @@ HRESULT FreeWin32ResBlob(
  Requires alink.h  
   
 ## See also
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

@@ -13,23 +13,23 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
  This walkthrough was written by using Visual Basic Development Settings.  
   
 ## Prerequisites  
- You must have completed [Walkthrough: Simple Object Model and Query (Visual Basic)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-visual-basic.md). This walkthrough builds on that one, including the presence of the northwnd.mdf file in c:\linqtest.  
+ You must have completed [Walkthrough: Simple Object Model and Query (Visual Basic)](walkthrough-simple-object-model-and-query-visual-basic.md). This walkthrough builds on that one, including the presence of the northwnd.mdf file in c:\linqtest.  
   
 ## Overview  
  This walkthrough consists of three main tasks:  
   
--   Adding an entity class to represent the Orders table in the sample Northwind database.  
+- Adding an entity class to represent the Orders table in the sample Northwind database.  
   
--   Supplementing annotations to the `Customer` class to enhance the relationship between the `Customer` and `Order` classes.  
+- Supplementing annotations to the `Customer` class to enhance the relationship between the `Customer` and `Order` classes.  
   
--   Creating and running a query to test the process of obtaining `Order` information by using the `Customer` class.  
+- Creating and running a query to test the process of obtaining `Order` information by using the `Customer` class.  
   
 ## Mapping Relationships across Tables  
  After the `Customer` class definition, create the `Order` entity class definition that includes the following code, which indicates that `Orders.Customer` relates as a foreign key to `Customers.CustomerID`.  
   
 #### To add the Order entity class  
   
--   Type or paste the following code after the `Customer` class:  
+- Type or paste the following code after the `Customer` class:  
   
      [!code-vb[DLinqWalk2VB#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb/Module1.vb#1)]  
   
@@ -38,7 +38,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
   
 #### To annotate the Customer class  
   
--   Type or paste the following code into the `Customer` class:  
+- Type or paste the following code into the `Customer` class:  
   
      [!code-vb[DLinqWalk2VB#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb/Module1.vb#2)]  
   
@@ -47,15 +47,15 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
   
 #### To access Order objects by using Customer objects  
   
-1.  Modify the `Sub Main` method by typing or pasting the following code into the method:  
+1. Modify the `Sub Main` method by typing or pasting the following code into the method:  
   
      [!code-vb[DLinqWalk2VB#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb/Module1.vb#3)]  
   
-2.  Press F5 to debug your application.  
+2. Press F5 to debug your application.  
   
      Two names appear in the message box, and the Console window shows the generated SQL code.  
   
-3.  Close the message box to stop debugging.  
+3. Close the message box to stop debugging.  
   
 ## Creating a Strongly Typed View of Your Database  
  It is much easier to start with a strongly typed view of your database. By strongly typing the <xref:System.Data.Linq.DataContext> object, you do not need calls to <xref:System.Data.Linq.DataContext.GetTable%2A>. You can use strongly typed tables in all your queries when you use the strongly typed <xref:System.Data.Linq.DataContext> object.  
@@ -64,26 +64,27 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
   
 #### To strongly type the DataContext object  
   
-1.  Add the following code above the `Customer` class declaration.  
+1. Add the following code above the `Customer` class declaration.  
   
      [!code-vb[DLinqWalk2VB#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb/Module1.vb#4)]  
   
-2.  Modify `Sub Main` to use the strongly typed <xref:System.Data.Linq.DataContext> as follows:  
+2. Modify `Sub Main` to use the strongly typed <xref:System.Data.Linq.DataContext> as follows:  
   
      [!code-vb[DLinqWalk2VB#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb/Module1.vb#5)]  
   
-3.  Press F5 to debug your application.  
+3. Press F5 to debug your application.  
   
      The Console window output is:  
   
      `ID=WHITC`  
   
-4.  Press Enter in the Console window to close the application.  
+4. Press Enter in the Console window to close the application.  
   
-5.  On the **File** menu, click **Save All** if you want to save this application.  
+5. On the **File** menu, click **Save All** if you want to save this application.  
   
 ## Next Steps  
- The next walkthrough ([Walkthrough: Manipulating Data (Visual Basic)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-manipulating-data-visual-basic.md)) demonstrates how to manipulate data. That walkthrough does not require that you save the two walkthroughs in this series that you have already completed.  
+ The next walkthrough ([Walkthrough: Manipulating Data (Visual Basic)](walkthrough-manipulating-data-visual-basic.md)) demonstrates how to manipulate data. That walkthrough does not require that you save the two walkthroughs in this series that you have already completed.  
   
 ## See also
-- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+
+- [Learning by Walkthroughs](learning-by-walkthroughs.md)

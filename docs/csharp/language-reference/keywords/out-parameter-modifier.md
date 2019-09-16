@@ -2,13 +2,13 @@
 title: "out parameter modifier - C# Reference"
 ms.custom: seodec18
 
-ms.date: 03/06/2018
+ms.date: 03/26/2019
 helpviewer_keywords: 
   - "parameters [C#], out"
   - "out parameters [C#]"
 ---
 # out parameter modifier (C# Reference)
-The `out` keyword causes arguments to be passed by reference. It is like the [ref](ref.md) keyword, except that `ref` requires that the variable be initialized before it is passed. It is also like the [in](in-parameter-modifier.md) keyword, except that `in` does not allow the called method to modify the argument value. To use an `out` parameter, both the method definition and the calling method must explicitly use the `out` keyword. For example:  
+The `out` keyword causes arguments to be passed by reference. It makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. It is like the [ref](ref.md) keyword, except that `ref` requires that the variable be initialized before it is passed. It is also like the [in](in-parameter-modifier.md) keyword, except that `in` does not allow the called method to modify the argument value. To use an `out` parameter, both the method definition and the calling method must explicitly use the `out` keyword. For example:  
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#1)]  
 
@@ -17,7 +17,7 @@ The `out` keyword causes arguments to be passed by reference. It is like the [re
   
 Variables passed as `out` arguments do not have to be initialized before being passed in a method call. However, the called method is required to assign a value before the method returns.  
   
-Although the `in`, `ref`, and `out` keywords cause different run-time behavior, they are not considered part of the method signature at compile time. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
+The `in`, `ref`, and `out` keywords are not considered part of the method signature for the purpose of overload resolution. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
   
 ```csharp
 class CS0663_Example
@@ -39,18 +39,16 @@ Properties are not variables and therefore cannot be passed as `out` parameters.
   
 You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
   
--   Async methods, which you define by using the [async](../../../csharp/language-reference/keywords/async.md) modifier.  
+- Async methods, which you define by using the [async](./async.md) modifier.  
   
--   Iterator methods, which include a [yield return](../../../csharp/language-reference/keywords/yield.md) or `yield break` statement.  
+- Iterator methods, which include a [yield return](./yield.md) or `yield break` statement.  
 
-## Declaring `out` arguments   
+## Declaring `out` parameters   
 
- Declaring a method with `out` arguments is useful when you want a method to return multiple values. The following example uses `out` to return three variables with a single method call. Note that the third argument is assigned to null. This enables methods to return values optionally.  
+Declaring a method with `out` arguments is a classic workaround to return multiple values. Beginning with C# 7.0, consider [tuples](../../tuples.md) for similar scenarios. The following example uses `out` to return three variables with a single method call. Note that the third argument is assigned to null. This enables methods to return values optionally.  
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#3)]  
 
- The [Try pattern](/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods) involves returning a `bool` to indicate whether an operation succeeded or failed, and returning the value produced by the operation in an `out` argument. A number of parsing methods, such as the [DateTime.TryParse](xref:System.DateTime.TryParse(System.String,System.DateTime@)) method, use this pattern.
-   
 ## Calling a method with an `out` argument
 
 In C# 6 and earlier, you must declare a variable in a separate statement before you pass it as an `out` argument. The following example declares a variable named `number` before it is passed to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method, which attempts to convert a string to a number.
@@ -70,7 +68,7 @@ In the previous example, the `number` variable is strongly typed as an `int`. Yo
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
+- [Method Parameters](./method-parameters.md)

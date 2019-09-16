@@ -23,13 +23,13 @@ Gets this process's thread that has the specified operating system (OS) thread I
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread(  
     [in] DWORD dwThreadId,  
     [out] ICorDebugThread **ppThread);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwThreadId`  
  [in] The OS thread ID of the thread to be retrieved.  
   

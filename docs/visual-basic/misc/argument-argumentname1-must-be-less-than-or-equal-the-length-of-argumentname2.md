@@ -8,7 +8,8 @@ The length of a supplied argument exceeds the length of the argument it is repla
   
 ## To correct this error  
   
--   Make the length of the first argument less than or equal to the length of the second argument.  
+- Make the length of the first argument less than or equal to the length of the second argument.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

@@ -1,4 +1,4 @@
-### Contract.Invariant or Contract.Requires<TException> do not consider String.IsNullOrEmpty to be pure
+### Contract.Invariant or Contract.Requires\<TException> do not consider String.IsNullOrEmpty to be pure
 
 |   |   |
 |---|---|
@@ -8,4 +8,3 @@
 |Version|4.6.1|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Diagnostics.Contracts.Contract.Invariant(System.Boolean)?displayProperty=nameWithType></li><li><xref:System.Diagnostics.Contracts.Contract.Requires(System.Boolean)?displayProperty=nameWithType></li></ul>|
-

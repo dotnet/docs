@@ -13,7 +13,7 @@ In C# 3.0 and later, auto-implemented properties make property-declaration more 
 ## Example  
  The following example shows a simple class that has some auto-implemented properties:  
   
- [!code-csharp[csProgGuideLINQ#28](../../../csharp/programming-guide/arrays/codesnippet/CSharp/auto-implemented-properties_1.cs)]  
+ [!code-csharp[csProgGuideLINQ#28](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS/csRef30LangFeatures_2.cs#28)]  
   
  In C# 6 and later, you can initialize auto-implemented properties similarly to fields:  
   
@@ -21,9 +21,9 @@ In C# 3.0 and later, auto-implemented properties make property-declaration more 
 public string FirstName { get; set; } = "Jane";  
 ```  
   
- The class that is shown in the previous example is mutable. Client code can change the values in objects after they are created. In complex classes that contain significant behavior (methods) as well as data, it is often necessary to have public properties. However, for small classes or structs that just encapsulate a set of values (data) and have little or no behaviors, you should either make the objects immutable by declaring the set accessor as [private](../../../csharp/language-reference/keywords/private.md) (immutable to consumers) or by declaring only a get accessor (immutable everywhere except the constructor).  For more information, see [How to: Implement a Lightweight Class with Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).  
+ The class that is shown in the previous example is mutable. Client code can change the values in objects after they are created. In complex classes that contain significant behavior (methods) as well as data, it is often necessary to have public properties. However, for small classes or structs that just encapsulate a set of values (data) and have little or no behaviors, you should either make the objects immutable by declaring the set accessor as [private](../../language-reference/keywords/private.md) (immutable to consumers) or by declaring only a get accessor (immutable everywhere except the constructor).  For more information, see [How to: Implement a Lightweight Class with Auto-Implemented Properties](./how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).  
   
 ## See also
 
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
-- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)
+- [Properties](./properties.md)
+- [Modifiers](../../language-reference/keywords/modifiers.md)

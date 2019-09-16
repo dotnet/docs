@@ -23,13 +23,13 @@ Gets a CorElementType value that describes the native type of the common languag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetType (  
     [out] CorElementType   *ty  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ty`  
  [out] A pointer to a value of the `CorElementType` enumeration that indicates the CLR <xref:System.Type> that this `ICorDebugType` represents.  
   

@@ -21,26 +21,26 @@ key.Close();
   
 ## Compiling the Code  
   
--   Copy the code and paste it into the `Main` method of a console application.  
+- Copy the code and paste it into the `Main` method of a console application.  
   
--   Replace the `Names` parameter with the name of a key that exists directly under the HKEY_CURRENT_USER node of the registry.  
+- Replace the `Names` parameter with the name of a key that exists directly under the HKEY_CURRENT_USER node of the registry.  
   
--   Replace the `Name` parameter with the name of a value that exists directly under the Names node.  
+- Replace the `Name` parameter with the name of a value that exists directly under the Names node.  
   
 ## Robust Programming  
  Examine the registry structure to find a suitable location for your key. For example, you might want to open the Software key of the current user, and create a key with your company's name. Then add the registry values to your company's key.  
   
  The following conditions might cause an exception:  
   
--   The name of the key is null.  
+- The name of the key is null.  
   
--   The user does not have permissions to create registry keys.  
+- The user does not have permissions to create registry keys.  
   
--   The key name exceeds the 255-character limit.  
+- The key name exceeds the 255-character limit.  
   
--   The key is closed.  
+- The key is closed.  
   
--   The registry key is read-only.  
+- The registry key is read-only.  
   
 ## .NET Framework Security  
  It is more secure to write data to the user folder — `Microsoft.Win32.Registry.CurrentUser` — rather than to the local computer — `Microsoft.Win32.Registry.LocalMachine`.  
@@ -52,6 +52,6 @@ key.Close();
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+- [C# Programming Guide](../index.md)
+- [File System and the Registry (C# Programming Guide)](./index.md)
 - [Read, write and delete from the registry with C#](https://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)

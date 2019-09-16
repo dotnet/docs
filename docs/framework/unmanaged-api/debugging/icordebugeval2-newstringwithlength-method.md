@@ -23,14 +23,14 @@ Creates a string of the specified length, with the specified contents.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewStringWithLength (  
     [in] LPCWSTR               string,  
     [in] UINT                  uiLength  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `string`  
  [in] A pointer to the string value.  
   

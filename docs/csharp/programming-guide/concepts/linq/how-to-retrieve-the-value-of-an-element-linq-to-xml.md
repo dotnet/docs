@@ -19,7 +19,7 @@ Console.WriteLine("Value of e:" + (string)e);
   
  This example produces the following output:  
   
-```  
+```output  
 <StringElement>abcde</StringElement>  
 Value of e:abcde  
 ```  
@@ -35,7 +35,7 @@ Console.WriteLine("Value of e:" + (int)e);
   
  This example produces the following output:  
   
-```  
+```output  
 <Age>44</Age>  
 Value of e:44  
 ```  
@@ -55,13 +55,13 @@ Console.WriteLine("Value of e:" + e.Value);
   
  This example produces the following output:  
   
-```  
+```output  
 <StringElement>abcde</StringElement>  
 Value of e:abcde  
 ```  
   
 ## Example  
- Sometimes you try to retrieve the value of an element even though you are not sure it exists. In this case, when you assign the casted element to a nullable type (either `string` or one of the nullable types in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]), if the element does not exist the assigned variable is just set to `null`. The following code shows that when the element might or might not exist, it is easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.  
+ Sometimes you try to retrieve the value of an element even though you are not sure it exists. In this case, when you assign the casted element to a nullable type (either `string` or one of the nullable types in the .NET Framework), if the element does not exist the assigned variable is just set to `null`. The following code shows that when the element might or might not exist, it is easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.  
   
 ```csharp  
 XElement root = new XElement("Root",  
@@ -125,7 +125,7 @@ Console.WriteLine("v4:{0}", v4 == null ? "element does not exist" : v4.ToString(
   
  This code produces the following output:  
   
-```  
+```output  
 c1:child 1 content  
 c2:2  
 c3:element does not exist  
@@ -141,4 +141,4 @@ v4:element does not exist
   
 ## See also
 
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [LINQ to XML Axes (C#)](./linq-to-xml-axes-overview.md)

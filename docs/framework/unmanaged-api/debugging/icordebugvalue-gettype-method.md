@@ -23,13 +23,13 @@ Gets the primitive type of this "ICorDebugValue" object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetType (  
     [out] CorElementType   *pType  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pType`  
  [out] A pointer to a value of the "CorElementType" enumeration that indicates the value's type.  
   
@@ -48,4 +48,3 @@ HRESULT GetType (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

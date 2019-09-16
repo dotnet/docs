@@ -23,13 +23,13 @@ Gets the ICorDebugCode instance that represents the Microsoft intermediate langu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILCode (  
     [out] ICorDebugCode **ppCode  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppCode`  
  [out] A pointer to the `ICorDebugCode` instance, or null, if the function was not compiled into MSIL.  
   

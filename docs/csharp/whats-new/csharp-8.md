@@ -1,31 +1,91 @@
 ---
 title: What's New in C# 8.0 - C# Guide
-description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 2.
-ms.date: 02/12/2019
+description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
+ms.date: 09/10/2019
 ---
 # What's new in C# 8.0
 
-There are many enhancements to the C# language that you can try out already with preview 2. The new features added in preview 2 are:
+There are many enhancements to the C# language that you can try out already.
 
+- [Readonly members](#readonly-members)
+- [Default interface members](#default-interface-members)
 - [Pattern matching enhancements](#more-patterns-in-more-places):
-  * [Switch expressions](#switch-expressions)
-  * [Property patterns](#property-patterns)
-  * [Tuple patterns](#tuple-patterns)
-  * [Positional patterns](#positional-patterns)
+  - [Switch expressions](#switch-expressions)
+  - [Property patterns](#property-patterns)
+  - [Tuple patterns](#tuple-patterns)
+  - [Positional patterns](#positional-patterns)
 - [Using declarations](#using-declarations)
 - [Static local functions](#static-local-functions)
 - [Disposable ref structs](#disposable-ref-structs)
-
-The following language features first appeared in C# 8.0 preview 1:
-
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
 - [Indices and ranges](#indices-and-ranges)
+- [Null-coalescing assignment](#null-coalescing-assignment)
+- [Unmanaged constructed types](#unmanaged-constructed-types)
+- [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
 
 > [!NOTE]
-> This article was last updated for C# 8.0 preview 2.
+> This article was last updated for C# 8.0 preview 5.
 
-The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided.
+The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
+
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
+1. Set the current directory to the *csharp8* subdirectory for the *try-samples* repository.
+1. Run `dotnet try`.
+
+## Readonly members
+
+You can apply the `readonly` modifier to any member of a struct. It indicates that the member does not modify state. It's more granular than applying the `readonly` modifier to a `struct` declaration.  Consider the following mutable struct:
+
+```csharp
+public struct Point
+{
+    public double X { get; set; }
+    public double Y { get; set; }
+    public double Distance => Math.Sqrt(X * X + Y * Y);
+
+    public override string ToString() =>
+        $"({X}, {Y}) is {Distance} from the origin";
+}
+```
+
+Like most structs, the `ToString()` method does not modify state. You could indicate that by adding the `readonly` modifier to the declaration of `ToString()`:
+
+```csharp
+public readonly override string ToString() =>
+    $"({X}, {Y}) is {Distance} from the origin";
+```
+
+The preceding change generates a compiler warning, because `ToString` accesses the `Distance` property, which is not marked `readonly`:
+
+```console
+warning CS8656: Call to non-readonly member 'Point.Distance.get' from a 'readonly' member results in an implicit copy of 'this'
+```
+
+The compiler warns you when it needs to create a defensive copy.  The `Distance` property does not change state, so you can fix this warning by adding the `readonly` modifier to the declaration:
+
+```csharp
+public readonly double Distance => Math.Sqrt(X * X + Y * Y);
+```
+
+Notice that the `readonly` modifier is necessary on a read only property. The compiler doesn't assume `get` accessors do not modify state; you must declare `readonly` explicitly. The compiler does enforce the rule that `readonly` members do not modify state. The following method will not compile unless you remove the `readonly` modifier:
+
+```csharp
+public readonly void Translate(int xOffset, int yOffset)
+{
+    X += xOffset;
+    Y += yOffset;
+}
+```
+
+This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent.
+
+## Default interface members
+
+You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface members also enable scenarios similar to a "traits" language feature.
+
+Default interface members affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-members-versions.md). Other tutorials and reference updates are coming in time for general release.
 
 ## More patterns in more places
 
@@ -45,13 +105,14 @@ public enum Rainbow
     Red,
     Orange,
     Yellow,
+    Green,
     Blue,
     Indigo,
     Violet
 }
 ```
 
-You could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
+If your application defined an `RGBColor` type that is constructed from the `R`, `G` and `B` components, you could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
 
 ```csharp
 public static RGBColor FromRainbow(Rainbow colorBand) =>
@@ -60,6 +121,7 @@ public static RGBColor FromRainbow(Rainbow colorBand) =>
         Rainbow.Red    => new RGBColor(0xFF, 0x00, 0x00),
         Rainbow.Orange => new RGBColor(0xFF, 0x7F, 0x00),
         Rainbow.Yellow => new RGBColor(0xFF, 0xFF, 0x00),
+        Rainbow.Green  => new RGBColor(0x00, 0xFF, 0x00),
         Rainbow.Blue   => new RGBColor(0x00, 0x00, 0xFF),
         Rainbow.Indigo => new RGBColor(0x4B, 0x00, 0x82),
         Rainbow.Violet => new RGBColor(0x94, 0x00, 0xD3),
@@ -77,7 +139,7 @@ There are several syntax improvements here:
 Contrast that with the equivalent code using the classic `switch` statement:
 
 ```csharp
-public static RGBColor fromRainbowClassic(Rainbow colorBand)
+public static RGBColor FromRainbowClassic(Rainbow colorBand)
 {
     switch (colorBand)
     {
@@ -87,6 +149,8 @@ public static RGBColor fromRainbowClassic(Rainbow colorBand)
             return new RGBColor(0xFF, 0x7F, 0x00);
         case Rainbow.Yellow:
             return new RGBColor(0xFF, 0xFF, 0x00);
+        case Rainbow.Green:
+            return new RGBColor(0x00, 0xFF, 0x00);
         case Rainbow.Blue:
             return new RGBColor(0x00, 0x00, 0xFF);
         case Rainbow.Indigo:
@@ -154,22 +218,39 @@ public class Point
 }
 ```
 
-The following method uses the **positional pattern** to extract the values of `x` and `y`. Then, it uses a `when` clause to determine the quadrant of the point:
+Additionally, consider the following enum that represents various positions of a quadrant:
 
 ```csharp
-static string Quadrant(Point p) => p switch
+public enum Quadrant
 {
-    (0, 0) => "origin",
-    (var x, var y) when x > 0 && y > 0 => "Quadrant 1",
-    (var x, var y) when x < 0 && y > 0 => "Quadrant 2",
-    (var x, var y) when x < 0 && y < 0 => "Quadrant 3",
-    (var x, var y) when x > 0 && y < 0 => "Quadrant 4",
-    (var x, var y) => "on a border",
-    _ => "unknown"
+    Unknown,
+    Origin,
+    One,
+    Two,
+    Three,
+    Four,
+    OnBorder
+}
+```
+
+The following method uses the **positional pattern** to extract the values of `x` and `y`. Then, it uses a `when` clause to determine the `Quadrant` of the point:
+
+```csharp
+static Quadrant GetQuadrant(Point point) => point switch
+{
+    (0, 0) => Quadrant.Origin,
+    var (x, y) when x > 0 && y > 0 => Quadrant.One,
+    var (x, y) when x < 0 && y > 0 => Quadrant.Two,
+    var (x, y) when x < 0 && y < 0 => Quadrant.Three,
+    var (x, y) when x > 0 && y < 0 => Quadrant.Four,
+    var (_, _) => Quadrant.OnBorder,
+    _ => Quadrant.Unknown
 };
 ```
 
-The discard pattern in the preceding switch matches when either `x` or `y`, but not both, is 0. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
+The discard pattern in the preceding switch matches when either `x` or `y` is 0, but not both. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
+
+You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md).
 
 ## using declarations
 
@@ -181,7 +262,6 @@ static void WriteLinesToFile(IEnumerable<string> lines)
     using var file = new System.IO.StreamWriter("WriteLines2.txt");
     foreach (string line in lines)
     {
-        // If the line doesn't contain the word 'Second', write the line to the file.
         if (!line.Contains("Second"))
         {
             file.WriteLine(line);
@@ -191,8 +271,7 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 }
 ```
 
-In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code using the classic [using statements](../language-reference/keywords/using-statement.md) statement:
-
+In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code that uses the classic [using statement](../language-reference/keywords/using-statement.md):
 
 ```csharp
 static void WriteLinesToFile(IEnumerable<string> lines)
@@ -201,7 +280,6 @@ static void WriteLinesToFile(IEnumerable<string> lines)
     {
         foreach (string line in lines)
         {
-            // If the line doesn't contain the word 'Second', write the line to the file.
             if (!line.Contains("Second"))
             {
                 file.WriteLine(line);
@@ -213,11 +291,11 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 
 In the preceding example, the file is disposed when the closing brace associated with the `using` statement is reached.
 
-In both cases, the compiler generates the call to `Dispose()`. The compiler generates an error if the expression in the using statement is not disposable.
+In both cases, the compiler generates the call to `Dispose()`. The compiler generates an error if the expression in the `using` statement is not disposable.
 
 ## Static local functions
 
-You can now add the `static` modifier to local functions to ensure that local function doesn't capture (reference) any variables from the enclosing scope. Doing so generates `CS8421`, "A static local function can't contain a reference to <variable>." 
+You can now add the `static` modifier to local functions to ensure that local function doesn't capture (reference) any variables from the enclosing scope. Doing so generates `CS8421`, "A static local function can't contain a reference to \<variable>." 
 
 Consider the following code. The local function `LocalFunction` accesses the variable `y`, declared in the enclosing scope (the method `M`). Therefore, `LocalFunction` can't be declared with the `static` modifier:
 
@@ -263,11 +341,11 @@ You can learn more about the feature in the overview of [nullable reference type
 
 Starting with C# 8.0, you can create and consume streams asynchronously. A method that returns an asynchronous stream has three properties:
 
-1. It was declared with the `async` modifier.
+1. It's declared with the `async` modifier.
 1. It returns an <xref:System.Collections.Generic.IAsyncEnumerable%601>.
 1. The method contains `yield return` statements to return successive elements in the asynchronous stream.
 
-Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream to be declared with the `async` modifier and to return a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an <xref:System.Collections.Generic.IAsyncEnumerable%601>. The following code generates a sequence from 1 to 20, waiting 100 ms between generating each number:
+Consuming an asynchronous stream requires you to add the `await` keyword before the `foreach` keyword when you enumerate the elements of the stream. Adding the `await` keyword requires the method that enumerates the asynchronous stream to be declared with the `async` modifier and to return a type allowed for an `async` method. Typically that means returning a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. It can also be a <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask%601>. A method can both consume and produce an asynchronous stream, which means it would return an <xref:System.Collections.Generic.IAsyncEnumerable%601>. The following code generates a sequence from 0 to 19, waiting 100 ms between generating each number:
 
 ```csharp
 public static async System.Collections.Generic.IAsyncEnumerable<int> GenerateSequence()
@@ -295,9 +373,16 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
 
-You can specify an index **from the end**. You specify **from the end** using the `^` operator. You are familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". The index `^0` means "the end", or the index that follows the last element.
+This language support relies on two new types, and two new operators:
 
-You can specify a **range** with the **range operator**: `..`. For example, `0..^0` specifies the entire range of the array: 0 from the start up to, but not including 0 from the end. Either operand may use "from the start" or "from the end". Furthermore, either operand may be omitted. The defaults are `0` for the start index, and `^0` for the end index.
+- <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
+- The `^` operator, which specifies that an index is relative to the end of the sequence.
+- <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
+- The Range operator (`..`), which specifies the start and end of a range as its operands.
+
+Let's start with the rules for indexes. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
+
+A range specifies the *start* and *end* of a range. The start of the range is inclusive, but the end of the range is exclusive, meaning the *start* is included in the range but the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range. 
 
 Let's look at a few examples. Consider the following array, annotated with its index from the start and from the end:
 
@@ -314,10 +399,8 @@ var words = new string[]
     "the",      // 6                   ^3
     "lazy",     // 7                   ^2
     "dog"       // 8                   ^1
-};
+};              // 9 (or words.Length) ^0
 ```
-
-The index of each element reinforces the concept of "from the start", and "from the end", and that ranges are exclusive of the end of the range. The "start" of the entire array is the first element. The "end" of the entire array is *past* the last element.
 
 You can retrieve the last word with the `^1` index:
 
@@ -329,7 +412,7 @@ Console.WriteLine($"The last word is {words[^1]}");
 The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` is not in the range.
 
 ```csharp
-var brownFox = words[1..4];
+var quickBrownFox = words[1..4];
 ```
 
 The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` is not included:
@@ -343,7 +426,7 @@ The following examples create ranges that are open ended for the start, end, or 
 ```csharp
 var allWords = words[..]; // contains "The" through "dog".
 var firstPhrase = words[..4]; // contains "The" through "fox"
-var lastPhrase = words[6..]; // contains "the, "lazy" and "dog"
+var lastPhrase = words[6..]; // contains "the", "lazy" and "dog"
 ```
 
 You can also declare ranges as variables:
@@ -357,3 +440,54 @@ The range can then be used inside the `[` and `]` characters:
 ```csharp
 var text = words[phrase];
 ```
+
+You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).
+
+## Null-coalescing assignment
+
+C# 8.0 introduces the null-coalescing assignment operator `??=`. You can use the `??=` operator to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`.
+
+```csharp
+List<int> numbers = null;
+int? i = null;
+
+numbers ??= new List<int>();
+numbers.Add(i ??= 17);
+numbers.Add(i ??= 20);
+
+Console.WriteLine(string.Join(' ', numbers));  // output: 17 17
+Console.WriteLine(i);  // output: 17
+```
+
+For more information, see the [?? and ??= operators](../language-reference/operators/null-coalescing-operator.md) article.
+
+## Unmanaged constructed types
+
+In C# 7.3 and earlier, a constructed type (a type that includes at least one type argument) cannot be an [unmanaged type](../language-reference/builtin-types/unmanaged-types.md). Starting with C# 8.0, a constructed value type is unmanaged if it contains fields of unmanaged types only.
+
+For example, given the following definition of the generic `Coords<T>` type:
+
+```csharp
+public struct Coords<T>
+{
+    public T X;
+    public T Y;
+}
+```
+
+the `Coords<int>` type is an unmanaged type in C# 8.0 and later. Like for any unmanaged type, you can create a pointer to a variable of this type or [allocate a block of memory on the stack](../language-reference/operators/stackalloc.md) for instances of this type:
+
+```csharp
+Span<Coords<int>> coordinates = stackalloc[]
+{
+    new Coords<int> { X = 0, Y = 0 },
+    new Coords<int> { X = 0, Y = 3 },
+    new Coords<int> { X = 4, Y = 0 }
+};
+```
+
+For more information, see [Unmanaged types](../language-reference/builtin-types/unmanaged-types.md).
+
+## Enhancement of interpolated verbatim strings
+
+Order of the `$` and `@` tokens in [interpolated](../language-reference/tokens/interpolated.md) verbatim strings can be any: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. In earlier C# versions, the `$` token must appear before the `@` token.

@@ -23,13 +23,13 @@ Gets the number of items in the enumeration.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (  
     [out] ULONG   *pcelt  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcelt`  
  [out] A pointer to the number of items in the enumeration.  
   
@@ -43,4 +43,5 @@ HRESULT GetCount (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)

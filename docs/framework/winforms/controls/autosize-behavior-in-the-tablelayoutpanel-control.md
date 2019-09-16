@@ -16,9 +16,9 @@ ms.assetid: 9233e0c3-2fa6-405e-8701-959479b1250e
 ## Distinct AutoSize Behaviors  
  The <xref:System.Windows.Forms.TableLayoutPanel> control supports automatic sizing behavior in the following ways:  
   
--   Through the <xref:System.Windows.Forms.Control.AutoSize%2A> property;  
+- Through the <xref:System.Windows.Forms.Control.AutoSize%2A> property;  
   
--   Through the <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> property on the <xref:System.Windows.Forms.TableLayoutPanel> control’s column and row styles.  
+- Through the <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> property on the <xref:System.Windows.Forms.TableLayoutPanel> control’s column and row styles.  
   
 ### The AutoSize Property with Row and Column Styles  
  The following table describes the interaction between the <xref:System.Windows.Forms.Control.AutoSize%2A> property and the <xref:System.Windows.Forms.TableLayoutPanel> control’s column and row styles.  
@@ -29,5 +29,6 @@ ms.assetid: 9233e0c3-2fa6-405e-8701-959479b1250e
 |`true`|Similar to the previous interaction, with the exception that <xref:System.Windows.Forms.SizeType.Percent> columns or rows acquire an automatic sizing aspect.<br /><br /> The <xref:System.Windows.Forms.TableLayoutPanel> control expands the column or row to create adequate free space, so that no column or row with <xref:System.Windows.Forms.SizeType.Percent> styling clips its contents. The <xref:System.Windows.Forms.TableLayoutPanel> control allocates the new space proportionally according to the <xref:System.Windows.Forms.ColumnStyle.Width%2A> or <xref:System.Windows.Forms.RowStyle.Height%2A> property.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.TableLayoutPanel>
-- [TableLayoutPanel Control Overview](../../../../docs/framework/winforms/controls/tablelayoutpanel-control-overview.md)
+- [TableLayoutPanel Control Overview](tablelayoutpanel-control-overview.md)

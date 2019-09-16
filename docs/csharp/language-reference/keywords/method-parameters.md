@@ -11,20 +11,20 @@ ms.assetid: 680e39ff-775b-48b0-9f47-4186a5bfc4a1
 ---
 # Method Parameters (C# Reference)
 
-Parameters declared for a method without [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md), [ref](../../../csharp/language-reference/keywords/ref.md) or [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md), are passed to the called method by value. That value can be changed in the method, but the changed value will not be retained when control passes back to the calling procedure. By using a method parameter keyword, you can change this behavior.  
+Parameters declared for a method without [in](./in-parameter-modifier.md), [ref](./ref.md) or [out](./out-parameter-modifier.md), are passed to the called method by value. That value can be changed in the method, but the changed value will not be retained when control passes back to the calling procedure. By using a method parameter keyword, you can change this behavior.  
   
  This section describes the keywords you can use when declaring method parameters:  
   
--   [params](../../../csharp/language-reference/keywords/params.md) specifies that this parameter may take a variable number of arguments.
+- [params](./params.md) specifies that this parameter may take a variable number of arguments.
   
--   [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md) specifies that this parameter is passed by reference but is only read by the called method.
+- [in](./in-parameter-modifier.md) specifies that this parameter is passed by reference but is only read by the called method.
   
--   [ref](../../../csharp/language-reference/keywords/ref.md) specifies that this parameter is passed by reference and may be read or written by the called method.
+- [ref](./ref.md) specifies that this parameter is passed by reference and may be read or written by the called method.
   
--   [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) specifies that this parameter is passed by reference and is written by the called method.
+- [out](./out-parameter-modifier.md) specifies that this parameter is passed by reference and is written by the called method.
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)

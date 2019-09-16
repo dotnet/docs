@@ -6,11 +6,12 @@ ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563
 # \<tcpTransport>
 Defines a TCP transport that can be used by a channel to transfers messages for a custom binding.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<tcpTransport>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<tcpTransport>**  
   
 ## Syntax  
   
@@ -32,7 +33,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   <connectionPoolSettings groupName="String"
                           idleTimeout="TimeSpan"
                           leaseTimeout="TimeSpan"
-                          maxOutboundConnectionsPerEndpopint="Integer" />
+                          maxOutboundConnectionsPerEndpoint="Integer" />
 </tcpTransport>
 ```  
   
@@ -43,7 +44,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|channelInitializationTimeout|Gets or sets the time limit for initializing a channel to be accepted.  The maximum time a channel can be in the initialization state before being disconnected in seconds. This quota includes the time a TCP connection can take to authenticate itself using the .Net Message Framing protocol. A client needs to send some initial data before the server has enough information to perform authentication. The default is 30 seconds.|  
+|channelInitializationTimeout|Gets or sets the time limit for initializing a channel to be accepted.  The maximum time a channel can be in the initialization state before being disconnected in seconds. This quota includes the time a TCP connection can take to authenticate itself using the .NET Message Framing protocol. A client needs to send some initial data before the server has enough information to perform authentication. The default is 30 seconds.|  
 |connectionBufferSize|Gets or sets the size of the buffer used to transmit a chunk of the serialized message on the wire from the client or service.|  
 |hostNameComparisonMode|Gets or sets a value that indicates whether the hostname is used to reach the service when matching on the URI.|  
 |listenBacklog|The maximum number of queued connection requests that can be pending for a Web service. The `connectionLeaseTimeout` attribute limits the duration the client will wait to be connected before throwing a connection exception. This is a socket level property which controls the maximum number of queued connection requests that can be pending for a Web service. When ListenBacklog is too low, WCF will stop accepting requests and therefore drop new connections until the server acknowledges some of the existing queued connections. The default is 16 * number of processors.|  
@@ -66,7 +67,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  This transport uses URIs of the form "net.tcp://hostname:port/path". Other URI components are optional.  
@@ -74,13 +75,14 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
  The `tcpTransport` element is the starting point for creating a custom binding that implements the TCP transport protocol. This transport is optimized for WCF-to-WCF communication.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.TcpTransportElement>
 - <xref:System.ServiceModel.Channels.TcpTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Transports](../../../wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

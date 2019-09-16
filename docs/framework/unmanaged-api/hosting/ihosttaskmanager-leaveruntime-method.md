@@ -22,17 +22,17 @@ ms.author: "ronpet"
 Notifies the host that the currently executing task is about to leave the common language runtime (CLR) and enter unmanaged code.  
   
 > [!IMPORTANT]
->  A corresponding call to [IHostTaskManager::EnterRuntime](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-enterruntime-method.md) notifies the host that the currently executing task is reentering managed code.  
+> A corresponding call to [IHostTaskManager::EnterRuntime](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-enterruntime-method.md) notifies the host that the currently executing task is reentering managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LeaveRuntime (  
     [in] SIZE_T target  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `target`  
  [in] The address within the mapped portable executable file of the unmanaged function to be called.  
   
@@ -70,6 +70,7 @@ HRESULT LeaveRuntime (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

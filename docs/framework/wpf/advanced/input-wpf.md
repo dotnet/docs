@@ -12,13 +12,13 @@ ms.assetid: 9a7ccd30-095b-4f34-b284-8fb7e8f95a9b
 Windows Presentation Foundation (WPF) includes support for several types of input. This input includes text, touch, mouse, commands, focus, touch, drag-and-drop, and digital ink. This section describes topics related to input in WPF.  
   
 ## In This Section  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)  
- [Focus Overview](../../../../docs/framework/wpf/advanced/focus-overview.md)  
- [Styling for Focus in Controls, and FocusVisualStyle](../../../../docs/framework/wpf/advanced/styling-for-focus-in-controls-and-focusvisualstyle.md)  
- [Walkthrough: Creating Your First Touch Application](../../../../docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/input-and-commands-how-to-topics.md)  
- [Digital Ink](../../../../docs/framework/wpf/advanced/digital-ink.md)  
+ [Input Overview](input-overview.md)  
+ [Commanding Overview](commanding-overview.md)  
+ [Focus Overview](focus-overview.md)  
+ [Styling for Focus in Controls, and FocusVisualStyle](styling-for-focus-in-controls-and-focusvisualstyle.md)  
+ [Walkthrough: Creating Your First Touch Application](walkthrough-creating-your-first-touch-application.md)  
+ [How-to Topics](input-and-commands-how-to-topics.md)  
+ [Digital Ink](digital-ink.md)  
   
 ## Reference  
  <xref:System.Windows.UIElement>  
@@ -36,5 +36,5 @@ Windows Presentation Foundation (WPF) includes support for several types of inpu
  <xref:System.Windows.Input.FocusManager>  
   
 ## Related Sections  
- [Controls](../../../../docs/framework/wpf/controls/index.md)  
-  [Events](../../../../docs/framework/wpf/advanced/events-wpf.md)
+ [Controls](../controls/index.md)  
+  [Events](events-wpf.md)

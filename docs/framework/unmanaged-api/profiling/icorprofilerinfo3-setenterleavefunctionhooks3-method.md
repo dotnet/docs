@@ -23,14 +23,14 @@ Specifies the profiler-implemented functions that will be called on the [Functio
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetEnterLeaveFunctionHooks3(  
             [in] FunctionEnter3    *pFuncEnter3,  
             [in] FunctionLeave3    *pFuncLeave3,  
             [in] FunctionTailcall3 *pFuncTailcall3);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFuncEnter3`  
  [in] A pointer to the implementation to be used as the `FunctionEnter3` callback.  
   
@@ -57,6 +57,7 @@ HRESULT SetEnterLeaveFunctionHooks3(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [SetEnterLeaveFunctionHooks3WithInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md)
 - [FunctionEnter3](../../../../docs/framework/unmanaged-api/profiling/functionenter3-function.md)
 - [FunctionLeave3](../../../../docs/framework/unmanaged-api/profiling/functionleave3-function.md)

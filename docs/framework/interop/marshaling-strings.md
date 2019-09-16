@@ -33,6 +33,8 @@ Platform invoke copies string parameters, converting them from the .NET Framewor
 |As an array of structures that contain strings by value.|Creates an array of structures that contain strings and the array is passed by value.|[Arrays](marshaling-different-types-of-arrays.md)|  
   
 ## See also
+
+- [Default Marshaling for Strings](default-marshaling-for-strings.md)
 - [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)
 - [Marshaling Classes, Structures, and Unions](marshaling-classes-structures-and-unions.md)
 - [Marshaling Different Types of Arrays](marshaling-different-types-of-arrays.md)

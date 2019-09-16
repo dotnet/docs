@@ -20,11 +20,11 @@ ms.author: "ronpet"
 # GetHashFromHandle Function
 Generates a hash over the contents of the file with the specified file handle, using the specified hash algorithm.  
   
- This function has been deprecated. Use the [ICLRStrongName::GetHashFromHandle](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromhandle-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::GetHashFromHandle](../hosting/iclrstrongname-gethashfromhandle-method.md) method instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromHandle (  
     [in]  HANDLE   hFile,  
     [in, out] unsigned int   *piHashAlg,  
@@ -34,7 +34,7 @@ HRESULT GetHashFromHandle (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hFile`  
  [in] The handle of the file to be hashed.  
   
@@ -51,7 +51,7 @@ HRESULT GetHashFromHandle (
  [out] The size, in bytes, of the returned `pbHash`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -60,5 +60,6 @@ HRESULT GetHashFromHandle (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-- [GetHashFromHandle Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromhandle-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+
+- [GetHashFromHandle Method](../hosting/iclrstrongname-gethashfromhandle-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

@@ -22,7 +22,7 @@ Contains information that is used to link native code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct   
 {  
     BYTE        m_linkType;  
@@ -49,6 +49,7 @@ typedef struct
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
 - [CorNativeLinkType Enumeration](../../../../docs/framework/unmanaged-api/metadata/cornativelinktype-enumeration.md)
 - [CorNativeLinkFlags Enumeration](../../../../docs/framework/unmanaged-api/metadata/cornativelinkflags-enumeration.md)

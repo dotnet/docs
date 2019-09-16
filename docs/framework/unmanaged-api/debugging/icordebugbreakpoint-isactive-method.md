@@ -23,13 +23,13 @@ Gets a value that indicates whether this `ICorDebugBreakpoint` is active.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsActive (  
     [out] BOOL *pbActive  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbActive`  
  [out] `true` if this breakpoint is active; otherwise, `false`.  
   

@@ -22,7 +22,7 @@ Contains information about a region of memory in the managed heap.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_SEGMENT {  
     CORDB_ADDRESS start;            
     CORDB_ADDRESS end;              
@@ -55,5 +55,6 @@ typedef struct _COR_SEGMENT {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

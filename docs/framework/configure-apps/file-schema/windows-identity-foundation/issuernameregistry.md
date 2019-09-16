@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<issuerNameRegistry>"
 ms.date: "03/30/2017"
 ms.assetid: 58b39d12-c953-40c4-88af-d7eb3343ca28
@@ -7,11 +7,12 @@ author: "BrucePerlerMS"
 # \<issuerNameRegistry>
 Configures the issuer name registry that is used by handlers in the token handler collection.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<securityTokenHandlers>  
-\<securityTokenHandlerConfiguration>  
-\<issuerNameRegistry>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlers>**](securitytokenhandlers.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlerConfiguration>**](securitytokenhandlerconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<issuerNameRegistry>**  
   
 ## Syntax  
   
@@ -42,13 +43,13 @@ Configures the issuer name registry that is used by handlers in the token handle
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<trustedIssuers>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/trustedissuers.md)|When the `type` attribute specifies the configuration-based issuer name registry (the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class), the [\<trustedIssuers>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/trustedissuers.md) element must be specified. The [\<trustedIssuers>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/trustedissuers.md) element can take `<add>`, `<clear>`, or `<remove>` elements as child elements.|  
+|[\<trustedIssuers>](trustedissuers.md)|When the `type` attribute specifies the configuration-based issuer name registry (the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class), the [\<trustedIssuers>](trustedissuers.md) element must be specified. The [\<trustedIssuers>](trustedissuers.md) element can take `<add>`, `<clear>`, or `<remove>` elements as child elements.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<securityTokenHandlerConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
+|[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
   
 ## Remarks  
  All issuer tokens are validated using an issuer name registry. This is an object that derives from the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class. The issuer name registry is used to associate a mnemonic name to the cryptographic material that is needed to verify the signatures of tokens produced by the corresponding issuer. The issuer name registry maintains a list of issuers that are trusted by the relying party (RP) application. The type of the issuer name registry is specified using the `type` attribute. The `<issuerNameRegistry>` element can have one or more child elements that provide configuration for the specified type. You provide the logic that processes these child elements by overriding the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.LoadCustomConfiguration%2A> method.  
@@ -58,7 +59,7 @@ Configures the issuer name registry that is used by handlers in the token handle
  The `<issuerNameRegistry>` element is represented by the <xref:System.IdentityModel.Configuration.IssuerNameRegistryElement> class.  
   
 > [!NOTE]
->  Specifying the `<issuerNameRegistry>` element as a child element of the [\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
+> Specifying the `<issuerNameRegistry>` element as a child element of the [\<identityConfiguration>](identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
   
 ## Example  
  The following XML shows how to specify the configuration based issuer name registry.  
@@ -72,5 +73,6 @@ Configures the issuer name registry that is used by handlers in the token handle
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Tokens.IssuerNameRegistry>
 - <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>

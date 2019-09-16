@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for Using Strings in .NET"
 description: Learn how to use strings effectively in .NET applications.
-ms.date: "09/13/2018"
+ms.date: "05/01/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -29,51 +29,51 @@ ms.custom: seodec18
   
  This topic contains the following sections:  
   
--   [Recommendations for String Usage](#recommendations_for_string_usage)  
+- [Recommendations for String Usage](#recommendations_for_string_usage)  
   
--   [Specifying String Comparisons Explicitly](#specifying_string_comparisons_explicitly)  
+- [Specifying String Comparisons Explicitly](#specifying_string_comparisons_explicitly)  
   
--   [The Details of String Comparison](#the_details_of_string_comparison)  
+- [The Details of String Comparison](#the_details_of_string_comparison)  
   
--   [Choosing a StringComparison Member for Your Method Call](#choosing_a_stringcomparison_member_for_your_method_call)  
+- [Choosing a StringComparison Member for Your Method Call](#choosing_a_stringcomparison_member_for_your_method_call)  
   
--   [Common String Comparison Methods in .NET](#common_string_comparison_methods_in_the_net_framework)  
+- [Common String Comparison Methods in .NET](#common_string_comparison_methods_in_the_net_framework)  
   
--   [Methods that Perform String Comparison Indirectly](#methods_that_perform_string_comparison_indirectly)  
+- [Methods that Perform String Comparison Indirectly](#methods_that_perform_string_comparison_indirectly)  
   
--   [Displaying and Persisting Formatted Data](#Formatted)  
+- [Displaying and Persisting Formatted Data](#Formatted)  
   
 <a name="recommendations_for_string_usage"></a>   
 ## Recommendations for String Usage  
  When you develop with .NET, follow these simple recommendations when you use strings:  
   
--   Use overloads that explicitly specify the string comparison rules for string operations. Typically, this involves calling a method overload that has a parameter of type <xref:System.StringComparison>.  
+- Use overloads that explicitly specify the string comparison rules for string operations. Typically, this involves calling a method overload that has a parameter of type <xref:System.StringComparison>.  
   
--   Use <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for comparisons as your safe default for culture-agnostic string matching.  
+- Use <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for comparisons as your safe default for culture-agnostic string matching.  
   
--   Use comparisons with <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for better performance.  
+- Use comparisons with <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for better performance.  
   
--   Use string operations that are based on <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType> when you display output to the user.  
+- Use string operations that are based on <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType> when you display output to the user.  
   
--   Use the non-linguistic <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> values instead of string operations based on <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> when the comparison is linguistically irrelevant (symbolic, for example).  
+- Use the non-linguistic <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> values instead of string operations based on <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> when the comparison is linguistically irrelevant (symbolic, for example).  
   
--   Use the <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> method instead of the <xref:System.String.ToLowerInvariant%2A?displayProperty=nameWithType> method when you normalize strings for comparison.  
+- Use the <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> method instead of the <xref:System.String.ToLowerInvariant%2A?displayProperty=nameWithType> method when you normalize strings for comparison.  
   
--   Use an overload of the <xref:System.String.Equals%2A?displayProperty=nameWithType> method to test whether two strings are equal.  
+- Use an overload of the <xref:System.String.Equals%2A?displayProperty=nameWithType> method to test whether two strings are equal.  
   
--   Use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.CompareTo%2A?displayProperty=nameWithType> methods to sort strings, not to check for equality.  
+- Use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.CompareTo%2A?displayProperty=nameWithType> methods to sort strings, not to check for equality.  
   
--   Use culture-sensitive formatting to display non-string data, such as numbers and dates, in a user interface. Use formatting with the invariant culture to persist non-string data in string form.  
+- Use culture-sensitive formatting to display non-string data, such as numbers and dates, in a user interface. Use formatting with the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture) to persist non-string data in string form.  
   
  Avoid the following practices when you use strings:  
   
--   Do not use overloads that do not explicitly or implicitly specify the string comparison rules for string operations.  
+- Do not use overloads that do not explicitly or implicitly specify the string comparison rules for string operations.  
   
--   Do not use string operations based on <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> in most cases. One of the few exceptions is when you are persisting linguistically meaningful but culturally agnostic data.  
+- Do not use string operations based on <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> in most cases. One of the few exceptions is when you are persisting linguistically meaningful but culturally agnostic data.  
   
--   Do not use an overload of the <xref:System.String.Compare%2A?displayProperty=nameWithType> or <xref:System.String.CompareTo%2A> method and test for a return value of zero to determine whether two strings are equal.  
+- Do not use an overload of the <xref:System.String.Compare%2A?displayProperty=nameWithType> or <xref:System.String.CompareTo%2A> method and test for a return value of zero to determine whether two strings are equal.  
   
--   Do not use culture-sensitive formatting to persist numeric data or date and time data in string form.  
+- Do not use culture-sensitive formatting to persist numeric data or date and time data in string form.  
   
  [Back to top](#top)  
   
@@ -92,17 +92,17 @@ ms.custom: seodec18
   
  For example, the <xref:System.String.IndexOf%2A> method, which returns the index of a substring in a <xref:System.String> object that matches either a character or a string, has nine overloads:  
   
--   <xref:System.String.IndexOf%28System.Char%29>, <xref:System.String.IndexOf%28System.Char%2CSystem.Int32%29>, and <xref:System.String.IndexOf%28System.Char%2CSystem.Int32%2CSystem.Int32%29>, which by default perform an ordinal (case-sensitive and culture-insensitive) search for a character in the string.  
+- <xref:System.String.IndexOf%28System.Char%29>, <xref:System.String.IndexOf%28System.Char%2CSystem.Int32%29>, and <xref:System.String.IndexOf%28System.Char%2CSystem.Int32%2CSystem.Int32%29>, which by default perform an ordinal (case-sensitive and culture-insensitive) search for a character in the string.  
   
--   <xref:System.String.IndexOf%28System.String%29>, <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29>, and <xref:System.String.IndexOf%28System.String%2CSystem.Int32%2CSystem.Int32%29>, which by default perform a case-sensitive and culture-sensitive search for a substring in the string.  
+- <xref:System.String.IndexOf%28System.String%29>, <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29>, and <xref:System.String.IndexOf%28System.String%2CSystem.Int32%2CSystem.Int32%29>, which by default perform a case-sensitive and culture-sensitive search for a substring in the string.  
   
--   <xref:System.String.IndexOf%28System.String%2CSystem.StringComparison%29>, <xref:System.String.IndexOf%28System.String%2CSystem.Int32%2CSystem.StringComparison%29>, and <xref:System.String.IndexOf%28System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29>, which include a parameter of type <xref:System.StringComparison> that allows the form of the comparison to be specified.  
+- <xref:System.String.IndexOf%28System.String%2CSystem.StringComparison%29>, <xref:System.String.IndexOf%28System.String%2CSystem.Int32%2CSystem.StringComparison%29>, and <xref:System.String.IndexOf%28System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29>, which include a parameter of type <xref:System.StringComparison> that allows the form of the comparison to be specified.  
   
  We recommend that you select an overload that does not use default values, for the following reasons:  
   
--   Some overloads with default parameters (those that search for a <xref:System.Char> in the string instance) perform an ordinal comparison, whereas others (those that search for a string in the string instance) are culture-sensitive. It is difficult to remember which method uses which default value, and easy to confuse the overloads.  
+- Some overloads with default parameters (those that search for a <xref:System.Char> in the string instance) perform an ordinal comparison, whereas others (those that search for a string in the string instance) are culture-sensitive. It is difficult to remember which method uses which default value, and easy to confuse the overloads.  
   
--   The intent of the code that relies on default values for method calls is not clear. In the following example, which relies on defaults, it is difficult to know whether the developer actually intended an ordinal or a linguistic comparison of two strings, or whether a case difference between `protocol` and "http" might cause the test for equality to return `false`.  
+- The intent of the code that relies on default values for method calls is not clear. In the following example, which relies on defaults, it is difficult to know whether the developer actually intended an ordinal or a linguistic comparison of two strings, or whether a case difference between `protocol` and "http" might cause the test for equality to return `false`.  
   
      [!code-csharp[Conceptual.Strings.BestPractices#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/explicitargs1.cs#1)]
      [!code-vb[Conceptual.Strings.BestPractices#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/explicitargs1.vb#1)]  
@@ -119,9 +119,9 @@ ms.custom: seodec18
  String comparison is the heart of many string-related operations, particularly sorting and testing for equality. Strings sort in a determined order: If "my" appears before "string" in a sorted list of strings, "my" must compare less than or equal to "string". Additionally, comparison implicitly defines equality. The comparison operation returns zero for strings it deems equal. A good interpretation is that neither string is less than the other. Most meaningful operations involving strings include one or both of these procedures: comparing with another string, and executing a well-defined sort operation.  
 
 > [!NOTE]
-> You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, and the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt), the latest version of the sort weight table for Linux and macOS. The specific version of the sort weight table on Linux and macOS depends on the version of the [International Components for Unicode](http://site.icu-project.org/) libraries installed on the system. For information on ICU versions and the Unicode versions that they implement, see [Downloading ICU](http://site.icu-project.org/download).
+> You can download the [Sorting Weight Tables](https://www.microsoft.com/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, and the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt), the latest version of the sort weight table for Linux and macOS. The specific version of the sort weight table on Linux and macOS depends on the version of the [International Components for Unicode](http://site.icu-project.org/) libraries installed on the system. For information on ICU versions and the Unicode versions that they implement, see [Downloading ICU](http://site.icu-project.org/download).
 
- However, evaluating two strings for equality or sort order does not yield a single, correct result; the outcome depends on the criteria used to compare the strings. In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the invariant culture (a locale-agnostic culture based on the English language) may produce different results.  
+ However, evaluating two strings for equality or sort order does not yield a single, correct result; the outcome depends on the criteria used to compare the strings. In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture) (a locale-agnostic culture based on the English language) may produce different results.  
 
 In addition, string comparisons using different versions of .NET or using .NET on different operating systems or operating system versions may return different results. For more information, see [Strings and the Unicode Standard](xref:System.String#Unicode). 
 
@@ -138,17 +138,17 @@ In addition, string comparisons using different versions of .NET or using .NET o
   
  Comparisons that use current culture semantics are the default for the following methods:  
   
--   <xref:System.String.Compare%2A?displayProperty=nameWithType> overloads that do not include a <xref:System.StringComparison> parameter.  
+- <xref:System.String.Compare%2A?displayProperty=nameWithType> overloads that do not include a <xref:System.StringComparison> parameter.  
   
--   <xref:System.String.CompareTo%2A?displayProperty=nameWithType> overloads.  
+- <xref:System.String.CompareTo%2A?displayProperty=nameWithType> overloads.  
   
--   The default <xref:System.String.StartsWith%28System.String%29?displayProperty=nameWithType> method, and the <xref:System.String.StartsWith%28System.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> method with a `null`<xref:System.Globalization.CultureInfo> parameter.  
+- The default <xref:System.String.StartsWith%28System.String%29?displayProperty=nameWithType> method, and the <xref:System.String.StartsWith%28System.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> method with a `null`<xref:System.Globalization.CultureInfo> parameter.  
   
--   The default <xref:System.String.EndsWith%28System.String%29?displayProperty=nameWithType> method, and the <xref:System.String.EndsWith%28System.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> method with a `null`<xref:System.Globalization.CultureInfo> parameter.  
+- The default <xref:System.String.EndsWith%28System.String%29?displayProperty=nameWithType> method, and the <xref:System.String.EndsWith%28System.String%2CSystem.Boolean%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> method with a `null`<xref:System.Globalization.CultureInfo> parameter.  
   
--   <xref:System.String.IndexOf%2A?displayProperty=nameWithType> overloads that accept a <xref:System.String> as a search parameter and that do not have a <xref:System.StringComparison> parameter.  
+- <xref:System.String.IndexOf%2A?displayProperty=nameWithType> overloads that accept a <xref:System.String> as a search parameter and that do not have a <xref:System.StringComparison> parameter.  
   
--   <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> overloads that accept a <xref:System.String> as a search parameter and that do not have a <xref:System.StringComparison> parameter.  
+- <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> overloads that accept a <xref:System.String> as a search parameter and that do not have a <xref:System.StringComparison> parameter.  
   
  In any case, we recommend that you call an overload that has a <xref:System.StringComparison> parameter to make the intent of the method call clear.  
   
@@ -179,7 +179,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
  Strings in .NET can contain embedded null characters. One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string. These characters are ignored when you use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.Equals%2A?displayProperty=nameWithType> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture). As a result, in culture-sensitive comparisons, strings that contain embedded null characters can be considered equal to strings that do not.  
   
 > [!IMPORTANT]
->  Although string comparison methods disregard embedded null characters, string search methods such as <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.EndsWith%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType>, and <xref:System.String.StartsWith%2A?displayProperty=nameWithType> do not.  
+> Although string comparison methods disregard embedded null characters, string search methods such as <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.EndsWith%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType>, and <xref:System.String.StartsWith%2A?displayProperty=nameWithType> do not.  
   
  The following example performs a culture-sensitive comparison of the string "Aa" with a similar string that contains several embedded null characters between "A" and "a", and shows how the two strings are considered equal.  
   
@@ -204,7 +204,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
  These comparisons are still very fast.  
   
 > [!NOTE]
->  The string behavior of the file system, registry keys and values, and environment variables is best represented by <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>.  
+> The string behavior of the file system, registry keys and values, and environment variables is best represented by <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>.  
   
  Both <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> and <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> use the binary values directly, and are best suited for matching. When you are not sure about your comparison settings, use one of these two values. However, because they perform a byte-by-byte comparison, they do not sort by a linguistic sort order (like an English dictionary) but by a binary sort order. The results may look odd in most contexts if displayed to users.  
   
@@ -301,17 +301,17 @@ In addition, string comparisons using different versions of .NET or using .NET o
 ## Methods that Perform String Comparison Indirectly  
  Some non-string methods that have string comparison as a central operation use the <xref:System.StringComparer> type. The <xref:System.StringComparer> class includes six static properties that return <xref:System.StringComparer> instances whose <xref:System.StringComparer.Compare%2A?displayProperty=nameWithType> methods perform the following types of string comparisons:  
   
--   Culture-sensitive string comparisons using the current culture. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.CurrentCulture%2A?displayProperty=nameWithType> property.  
+- Culture-sensitive string comparisons using the current culture. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.CurrentCulture%2A?displayProperty=nameWithType> property.  
   
--   Case-insensitive comparisons using the current culture. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.CurrentCultureIgnoreCase%2A?displayProperty=nameWithType> property.  
+- Case-insensitive comparisons using the current culture. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.CurrentCultureIgnoreCase%2A?displayProperty=nameWithType> property.  
   
--   Culture-insensitive comparisons using the word comparison rules of the invariant culture. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.InvariantCulture%2A?displayProperty=nameWithType> property.  
+- Culture-insensitive comparisons using the word comparison rules of the invariant culture. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.InvariantCulture%2A?displayProperty=nameWithType> property.  
   
--   Case-insensitive and culture-insensitive comparisons using the word comparison rules of the invariant culture. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.InvariantCultureIgnoreCase%2A?displayProperty=nameWithType> property.  
+- Case-insensitive and culture-insensitive comparisons using the word comparison rules of the invariant culture. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.InvariantCultureIgnoreCase%2A?displayProperty=nameWithType> property.  
   
--   Ordinal comparison. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.Ordinal%2A?displayProperty=nameWithType> property.  
+- Ordinal comparison. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.Ordinal%2A?displayProperty=nameWithType> property.  
   
--   Case-insensitive ordinal comparison. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=nameWithType> property.  
+- Case-insensitive ordinal comparison. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=nameWithType> property.  
   
 ### Array.Sort and Array.BinarySearch  
  Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.  
@@ -342,16 +342,42 @@ In addition, string comparisons using different versions of .NET or using .NET o
  [Back to top](#top)  
   
 <a name="Formatted"></a>   
-## Displaying and Persisting Formatted Data  
- When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings. By default, the <xref:System.String.Format%2A?displayProperty=nameWithType> method and the `ToString` methods of the numeric types and the date and time types use the current thread culture for formatting operations. To explicitly specify that the formatting method should use the current culture, you can call an overload of a formatting method that has a `provider` parameter, such as <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> or <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>, and pass it the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property.  
+## Displaying and Persisting Formatted Data
+
+When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings. By default, the following all use the current thread culture in formatting operations:
+
+- Interpolated strings supported by the [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) compilers.
+
+- String concatenation operations that use the [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) or [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md ) concatenation operators or that call the <xref:System.String.Concat%2A?displayProperty=nameWithType> method directly.
+
+- The <xref:System.String.Format%2A?displayProperty=nameWithType> method.
+
+- The `ToString` methods of the numeric types and the date and time types.
+
+To explicitly specify that a string should be formatted by using the conventions of a designated culture or the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture), you can do the following:
+
+- When using the <xref:System.String.Format%2A?displayProperty=nameWithType> and `ToString` methods, call an overload that has a `provider` parameter, such as <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> or <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>, and pass it the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property, a <xref:System.Globalization.CultureInfo> instance that represents the desired culture, or the <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> property.  
+
+- For string concatenation, do not allow the compiler to perform any implicit conversions. Instead, perform an explicit conversion by calling a `ToString` overload that has a `provider` parameter. For example, the compiler implicitly uses the current culture when converting a <xref:System.Double> value to a string in the following C# code:
+
+  [!code-csharp[Implicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#1)]
+
+  Instead, you can explicitly specify the culture whose formatting conventions are used in the conversion by calling the <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, as the following C# code does:
+
+  [!code-csharp[Explicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#2)]
+
+- For string interpolation, rather than assigning an interpolated string to a <xref:System.String> instance, assign it to a <xref:System.FormattableString>. You can then call its <xref:System.FormattableString.ToString?displayProperty=nameWithType> method produce a result string that reflects the conventions of the current culture, or you can call the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method to produce a result string that reflects the conventions of a specified culture. You can also pass the formattable string to the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to produce a result string that reflects the conventions of the invariant culture. The following example illustrates this approach. (The output from the example reflects a current culture of en-US.)
+
+  [!code-csharp[String interpolation](~/samples/snippets/standard/base-types/string-practices/cs/formattable.cs)]
+  [!code-vb[String interpolation](~/samples/snippets/standard/base-types/string-practices/vb/formattable.vb)]
+
+You can persist non-string data either as binary data or as formatted data. If you choose to save it as formatted data, you should call a formatting method overload that includes a `provider` parameter and pass it the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The invariant culture provides a consistent format for formatted data that is independent of culture and machine. In contrast, persisting data that is formatted by using cultures other than the invariant culture has a number of limitations:  
   
- You can persist non-string data either as binary data or as formatted data. If you choose to save it as formatted data, you should call a formatting method overload that includes a `provider` parameter and pass it the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The invariant culture provides a consistent format for formatted data that is independent of culture and machine. In contrast, persisting data that is formatted by using cultures other than the invariant culture has a number of limitations:  
+- The data is likely to be unusable if it is retrieved on a system that has a different culture, or if the user of the current system changes the current culture and tries to retrieve the data.  
   
--   The data is likely to be unusable if it is retrieved on a system that has a different culture, or if the user of the current system changes the current culture and tries to retrieve the data.  
+- The properties of a culture on a specific computer can differ from standard values. At any time, a user can customize culture-sensitive display settings. Because of this, formatted data that is saved on a system may not be readable after the user customizes cultural settings. The portability of formatted data across computers is likely to be even more limited.  
   
--   The properties of a culture on a specific computer can differ from standard values. At any time, a user can customize culture-sensitive display settings. Because of this, formatted data that is saved on a system may not be readable after the user customizes cultural settings. The portability of formatted data across computers is likely to be even more limited.  
-  
--   International, regional, or national standards that govern the formatting of numbers or dates and times change over time, and these changes are incorporated into Windows operating system updates. When formatting conventions change, data that was formatted by using the previous conventions may become unreadable.  
+- International, regional, or national standards that govern the formatting of numbers or dates and times change over time, and these changes are incorporated into Windows operating system updates. When formatting conventions change, data that was formatted by using the previous conventions may become unreadable.  
   
  The following example illustrates the limited portability that results from using culture-sensitive formatting to persist data. The example saves an array of date and time values to a file. These are formatted by using the conventions of the English (United States) culture. After the application changes the current thread culture to French (Switzerland), it tries to read the saved values by using the formatting conventions of the current culture. The attempt to read two of the data items throws a <xref:System.FormatException> exception, and the array of dates now contains two incorrect elements that are equal to <xref:System.DateTime.MinValue>.  
   
@@ -360,7 +386,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
   
  However, if you replace the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property with <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> in the calls to <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> and <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>,   the persisted date and time data is successfully restored, as the following output shows.  
   
-```  
+```console  
 06.05.1758 21:26  
 05.05.1818 07:19  
 22.04.1870 23:54  

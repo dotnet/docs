@@ -23,13 +23,13 @@ Gets the one-based number that identifies the version of the code that this "ICo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionNumber (  
     [out] ULONG32    *nVersion  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nVersion`  
  [out] A pointer to the version number of the code.  
   
@@ -46,4 +46,3 @@ HRESULT GetVersionNumber (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

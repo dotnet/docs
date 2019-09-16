@@ -23,13 +23,13 @@ Sets the maximum number of threads that the host allots to service I/O requests.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMaxThreads (  
     [in] DWORD dwMaxIoCompletionThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMaxIoCompletionThreads`  
  [in] The maximum number of threads to allot for I/O requests.  
   
@@ -58,5 +58,6 @@ HRESULT SetMaxThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

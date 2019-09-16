@@ -4,7 +4,7 @@ description: Learn about unnamed and named tuple types in C#
 ms.date: 05/15/2018
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 ---
-# C# tuple types #
+# C# tuple types
 
 C# tuples are types that you define using a lightweight syntax. The advantages
 include a simpler syntax, rules for conversions based on number (referred to as cardinality)
@@ -71,7 +71,7 @@ These names are the only names you can use for *unnamed tuples*. When you
 do not provide any alternative field names to a tuple, you've created an
 unnamed tuple:
 
-[!code-csharp[UnnamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#01_UnNamedTuple "Unnamed tuple")]
+[!code-csharp[UnnamedTuple](../../samples/snippets/csharp/tuples/program.cs#01_UnNamedTuple "Unnamed tuple")]
 
 The tuple in the previous example was initialized using literal constants and
 won't have element names created using *tuple field name projections* in C# 7.1.
@@ -83,7 +83,7 @@ But they also have synonyms for any of those elements that you have named.
 You create a named tuple by specifying the names for each element. One way
 is to specify the names as part of the tuple initialization:
 
-[!code-csharp[NamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#02_NamedTuple "Named tuple")]
+[!code-csharp[NamedTuple](../../samples/snippets/csharp/tuples/program.cs#02_NamedTuple "Named tuple")]
 
 These synonyms are handled by the compiler and the language so that you
 can use named tuples effectively. IDEs and editors can read these semantic names
@@ -97,7 +97,7 @@ Beginning with C# 7.1, the field names for a tuple may be provided from the
 variables used to initialize the tuple. This is referred to as **[tuple projection initializers](#tuple-projection-initializers)**. The following code creates a tuple named
 `accumulation` with elements `count` (an integer), and `sum` (a double).
 
-[!code-csharp[ProjectedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectedTupleNames "Named tuple")]
+[!code-csharp[ProjectedTuple](../../samples/snippets/csharp/tuples/program.cs#ProjectedTupleNames "Named tuple")]
 
 The compiler must communicate those names you created for tuples that
 are returned from public methods or properties. In those cases, the compiler
@@ -122,14 +122,14 @@ If an explicit name is given, that takes precedence over any projected
 name. For example, in the following initializer, the elements are `explicitFieldOne`
 and `explicitFieldTwo`, not `localVariableOne` and `localVariableTwo`:
 
-[!code-csharp[ExplicitNamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionExample_Explicit "Explicitly named tuple")]
+[!code-csharp[ExplicitNamedTuple](../../samples/snippets/csharp/tuples/program.cs#ProjectionExample_Explicit "Explicitly named tuple")]
 
 For any field where an explicit name is not provided, an applicable implicit
 name is projected. There is no requirement to provide semantic names,
 either explicitly or implicitly. The following initializer has     field
 names `Item1`, whose value is `42` and `stringContent`, whose value is "The answer to everything":
 
-[!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#MixedTuple "mixed tuple")]
+[!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/program.cs#MixedTuple "mixed tuple")]
 
 There are two conditions where candidate field names are not projected onto the tuple field:
 
@@ -142,7 +142,7 @@ conditions cause compile-time errors. Instead, the elements without projected na
 do not have semantic names projected for them.  The following examples
 demonstrate these conditions:
 
-[!code-csharp-interactive[Ambiguity](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionAmbiguities "tuples where projections are not performed")]
+[!code-csharp-interactive[Ambiguity](../../samples/snippets/csharp/tuples/program.cs#ProjectionAmbiguities "tuples where projections are not performed")]
 
 These situations do not cause compiler errors because that would be a breaking change for
 code written with C# 7.0, when tuple field name projections were not available.
@@ -151,26 +151,26 @@ code written with C# 7.0, when tuple field name projections were not available.
 
 Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These operators work by comparing each member of the left argument to each member of the right argument in order. These comparisons short-circuit. They will stop evaluating members as soon as one pair is not equal. The following code examples use `==`, but the comparison rules all apply to `!=`. The following code example shows an equality comparison for two pairs of integers:
 
-[!code-csharp-interactive[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
+[!code-csharp-interactive[TupleEquality](../../samples/snippets/csharp/tuples/program.cs#Equality "Testing tuples for equality")]
 
 There are several rules that make tuple equality tests more convenient. Tuple equality performs [lifted conversions](~/_csharplang/spec/conversions.md#lifted-conversion-operators) if one of the tuples is a nullable tuple, as shown in the following code:
 
-[!code-csharp-interactive[NullableTupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]
+[!code-csharp-interactive[NullableTupleEquality](../../samples/snippets/csharp/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]
 
 Tuple equality also performs implicit conversions on each member of both tuples. These include lifted conversions, widening conversions, or other implicit conversions. The following examples show that an integer 2-tuple can be compared to a long 2-tuple because of the implicit conversion from integer to long:
 
-[!code-csharp-interactive[SnippetMemberConversions](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberConversions "converting tuples for equality tests")]
+[!code-csharp-interactive[SnippetMemberConversions](../../samples/snippets/csharp/tuples/program.cs#SnippetMemberConversions "converting tuples for equality tests")]
 
 The names of the tuple members do not participate in tests for equality. However, if one of the operands is a tuple literal with explicit names, the compiler generates warning CS8383 if those names do not match the names of the other operand.
 In the case where both operands are tuple literals, the warning is on the right operand as shown in the following example:
 
-[!code-csharp-interactive[MemberNames](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberNames "Tuple member names do not participate in equality tests")]
+[!code-csharp-interactive[MemberNames](../../samples/snippets/csharp/tuples/program.cs#SnippetMemberNames "Tuple member names do not participate in equality tests")]
 
 Finally, tuples may contain nested tuples. Tuple equality compares the "shape" of each operand through nested tuples as shown in the following example:
 
-[!code-csharp-interactive[NestedTuples](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
+[!code-csharp-interactive[NestedTuples](../../samples/snippets/csharp/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
 
-It's a compile time error to compare two tuples for equality (or inequality) when they have different shapes. The compiler won' attempt any deconstruction of nested tuples in order to compare them.
+It's a compile time error to compare two tuples for equality (or inequality) when they have different shapes. The compiler won't attempt any deconstruction of nested tuples in order to compare them.
 
 ## Assignment and tuples
 
@@ -182,7 +182,7 @@ of assignments that are allowed between tuple types.
 
 Consider these variables used in the following examples:
 
-[!code-csharp[VariableCreation](../../samples/snippets/csharp/tuples/tuples/program.cs#03_VariableCreation "Variable creation")]
+[!code-csharp[VariableCreation](../../samples/snippets/csharp/tuples/program.cs#03_VariableCreation "Variable creation")]
 
 The first two variables, `unnamed` and `anonymous` do not have semantic
 names provided for the elements. The field names are `Item1` and `Item2`.
@@ -194,7 +194,7 @@ All four of these tuples have the same number of elements (referred to as 'cardi
 and the types of those elements are identical. Therefore, all of these
 assignments work:
 
-[!code-csharp[VariableAssignment](../../samples/snippets/csharp/tuples/tuples/program.cs#04_VariableAssignment "Variable assignment")]
+[!code-csharp[VariableAssignment](../../samples/snippets/csharp/tuples/program.cs#04_VariableAssignment "Variable assignment")]
 
 Notice that the names of the tuples are not assigned. The values of the
 elements are assigned following the order of the elements in the tuple.
@@ -214,7 +214,7 @@ One of the most common uses for tuples is as a method return
 value. Let's walk through one example. Consider this method
 that computes the standard deviation for a sequence of numbers:
 
-[!code-csharp[StandardDeviation](../../samples/snippets/csharp/tuples/tuples/statistics.cs#05_StandardDeviation "Compute Standard Deviation")]
+[!code-csharp[StandardDeviation](../../samples/snippets/csharp/tuples/statistics.cs#05_StandardDeviation "Compute Standard Deviation")]
 
 > [!NOTE]
 > These examples compute the uncorrected sample standard deviation.
@@ -237,7 +237,7 @@ only one enumeration of the sequence.  This computation produces two
 values as it enumerates the sequence: the sum of all items in the sequence,
 and the sum of the each value squared:
 
-[!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/tuples/statistics.cs#06_SumOfSquaresFormula "Compute Standard Deviation using the sum of squares")]
+[!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/statistics.cs#06_SumOfSquaresFormula "Compute Standard Deviation using the sum of squares")]
 
 This version enumerates the sequence exactly once. But it's not reusable code. As you keep working, you'll find that many different
 statistical computations use the number of items in the sequence,
@@ -248,13 +248,13 @@ a utility method that produces all three of those values. All three values can b
 Let's update this method so the three values computed during the enumeration
 are stored in a tuple. That creates this version:
 
-[!code-csharp[TupleVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#07_TupleVersion "Refactor to use tuples")]
+[!code-csharp[TupleVersion](../../samples/snippets/csharp/tuples/statistics.cs#07_TupleVersion "Refactor to use tuples")]
 
 Visual Studio's Refactoring support makes it easy to extract the functionality
 for the core statistics into a private method. That gives you a `private static`
 method that returns the tuple type with the three values of `Sum`, `SumOfSquares`, and `Count`:
 
-[!code-csharp[TupleMethodVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#08_TupleMethodVersion "After extracting utility method")]
+[!code-csharp[TupleMethodVersion](../../samples/snippets/csharp/tuples/statistics.cs#08_TupleMethodVersion "After extracting utility method")]
  
 The language enables a couple more options that you can use, if you want
 to make a few quick edits by hand. First, you can use the `var`
@@ -262,7 +262,7 @@ declaration to initialize the tuple result from the `ComputeSumAndSumOfSquares`
 method call. You can also create three discrete variables inside the
 `ComputeSumAndSumOfSquares` method. The final version is shown in the following code:
 
-[!code-csharp[CleanedTupleVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#09_CleanedTupleVersion "After final cleanup")]
+[!code-csharp[CleanedTupleVersion](../../samples/snippets/csharp/tuples/statistics.cs#09_CleanedTupleVersion "After final cleanup")]
 
 This final version can be used for any method that needs those three
 values, or any subset of them.
@@ -310,14 +310,14 @@ of the elements are available at compile time and through IDE tools.
 For example, consider a ToDo application. You might define a
 class similar to the following to represent a single entry in the ToDo list:
 
-[!code-csharp[ToDoItem](../../samples/snippets/csharp/tuples/tuples/projectionsample.cs#14_ToDoItem "To Do Item")]
+[!code-csharp[ToDoItem](../../samples/snippets/csharp/tuples/projectionsample.cs#14_ToDoItem "To Do Item")]
 
 Your mobile applications may support a compact form of the current ToDo items
 that only displays the title. That LINQ query would make a projection that
 includes only the ID and the title. A method that returns a sequence of tuples
 expresses that design well:
 
-[!code-csharp[QueryReturningTuple](../../samples/snippets/csharp/tuples/tuples/projectionsample.cs#15_QueryReturningTuple "Query returning a tuple")]
+[!code-csharp[QueryReturningTuple](../../samples/snippets/csharp/tuples/projectionsample.cs#15_QueryReturningTuple "Query returning a tuple")]
 
 > [!NOTE]
 > In C# 7.1, tuple projections enable you to create named tuples using elements, in a manner similar to the property naming in anonymous types. In the above code,
@@ -336,12 +336,12 @@ returned by a method. There are three different approaches to deconstructing
 tuples.  First, you can explicitly declare the type of each field inside
 parentheses to create discrete variables for each of the elements in the tuple:
 
-[!code-csharp[Deconstruct](../../samples/snippets/csharp/tuples/tuples/statistics.cs#10_Deconstruct "Deconstruct")]
+[!code-csharp[Deconstruct](../../samples/snippets/csharp/tuples/statistics.cs#10_Deconstruct "Deconstruct")]
 
 You can also declare implicitly typed variables for each field in a tuple
 by using the `var` keyword outside the parentheses:
 
-[!code-csharp[DeconstructToVar](../../samples/snippets/csharp/tuples/tuples/statistics.cs#11_DeconstructToVar "Deconstruct to Var")]
+[!code-csharp[DeconstructToVar](../../samples/snippets/csharp/tuples/statistics.cs#11_DeconstructToVar "Deconstruct to Var")]
 
 It is also legal to use the `var` keyword with any, or all of the variable
 declarations inside the parentheses. 
@@ -367,7 +367,7 @@ public class Point
 ```
 
 > [!WARNING]
->  You cannot mix existing declarations with declarations inside the parentheses. For instance, the following is not allowed: `(var x, y) = MyMethod();`. This produces error CS8184 because *x* is declared inside the parentheses and *y* is previously declared elsewhere.
+> You cannot mix existing declarations with declarations inside the parentheses. For instance, the following is not allowed: `(var x, y) = MyMethod();`. This produces error CS8184 because *x* is declared inside the parentheses and *y* is previously declared elsewhere.
 
 ### Deconstructing user-defined types
 
@@ -382,12 +382,12 @@ data elements that make up the type. For example, the following
 a person object into the elements representing the first name
 and last name:
 
-[!code-csharp[TypeWithDeconstructMethod](../../samples/snippets/csharp/tuples/tuples/person.cs#12_TypeWithDeconstructMethod "Type with a deconstruct method")]
+[!code-csharp[TypeWithDeconstructMethod](../../samples/snippets/csharp/tuples/person.cs#12_TypeWithDeconstructMethod "Type with a deconstruct method")]
 
 The deconstruct method enables assignment from a `Person` to two strings, 
 representing the `FirstName` and `LastName` properties:
 
-[!code-csharp[Deconstruct Type](../../samples/snippets/csharp/tuples/tuples/program.cs#12A_DeconstructType "Deconstruct a class type")]
+[!code-csharp[Deconstruct Type](../../samples/snippets/csharp/tuples/program.cs#12A_DeconstructType "Deconstruct a class type")]
 
 You can enable deconstruction even for types you did not author.
 The `Deconstruct` method can be an extension method that unpackages
@@ -396,7 +396,7 @@ a `Student` type, derived from the `Person` type, and an extension
 method that deconstructs a `Student` into three variables, representing
 the `FirstName`, the `LastName`, and the `GPA`:
 
-[!code-csharp[ExtensionDeconstructMethod](../../samples/snippets/csharp/tuples/tuples/person.cs#13_ExtensionDeconstructMethod "Type with a deconstruct extension method")]
+[!code-csharp[ExtensionDeconstructMethod](../../samples/snippets/csharp/tuples/person.cs#13_ExtensionDeconstructMethod "Type with a deconstruct extension method")]
 
 A `Student` object now has two accessible `Deconstruct` methods: the extension method
 declared for `Student` types, and the member of the `Person` type. Both are in scope,
@@ -405,7 +405,7 @@ If you assign a student to three variables, the first name, last name, and GPA a
 all returned. If you assign a student to two variables, only the first name and 
 the last name are returned.
 
-[!code-csharp[Deconstruct extension method](../../samples/snippets/csharp/tuples/tuples/program.cs#13A_DeconstructExtension "Deconstruct a class type using an extension method")]
+[!code-csharp[Deconstruct extension method](../../samples/snippets/csharp/tuples/program.cs#13A_DeconstructExtension "Deconstruct a class type using an extension method")]
 
 You should be careful defining multiple `Deconstruct` methods in a 
 class or a class hierarchy. Multiple `Deconstruct` methods that have the

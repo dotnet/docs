@@ -10,32 +10,33 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # IALink2 Interface
-Complements the [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md) by declaring methods that operate on newer metadata interfaces such as [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md). Additionally, IALink2 declares methods that provide additional usage flexibility over the original IALink interfaces.  
+Complements the [IALink Interface](ialink-interface.md) by declaring methods that operate on newer metadata interfaces such as [IMetaDataEmit2 Interface](../metadata/imetadataemit2-interface.md). Additionally, IALink2 declares methods that provide additional usage flexibility over the original IALink interfaces.  
   
 ## In This Section  
- [AddFile2 Method](../../../../docs/framework/unmanaged-api/alink/addfile2-method.md)  
+ [AddFile2 Method](addfile2-method.md)  
   
- [EmitAssembly Method](../../../../docs/framework/unmanaged-api/alink/emitassembly-method.md)  
+ [EmitAssembly Method](emitassembly-method.md)  
   
- [EmitInternalExportedTypes Method](../../../../docs/framework/unmanaged-api/alink/emitinternalexportedtypes-method.md)  
+ [EmitInternalExportedTypes Method](emitinternalexportedtypes-method.md)  
   
- [GetFileDef Method](../../../../docs/framework/unmanaged-api/alink/getfiledef-method.md)  
+ [GetFileDef Method](getfiledef-method.md)  
   
  GetPublicKeyToken Method  
   
- [GetScope2 Method](../../../../docs/framework/unmanaged-api/alink/getscope2-method.md)  
+ [GetScope2 Method](getscope2-method.md)  
   
- [ImportFileEx Method](../../../../docs/framework/unmanaged-api/alink/importfileex-method.md)  
+ [ImportFileEx Method](importfileex-method.md)  
   
- [ImportFileEx2 Method](../../../../docs/framework/unmanaged-api/alink/importfileex2-method.md)  
+ [ImportFileEx2 Method](importfileex2-method.md)  
   
- [ImportTypes2 Method](../../../../docs/framework/unmanaged-api/alink/importtypes2-method.md)  
+ [ImportTypes2 Method](importtypes2-method.md)  
   
- [SetAssemblyFile2 Method](../../../../docs/framework/unmanaged-api/alink/setassemblyfile2-method.md)  
+ [SetAssemblyFile2 Method](setassemblyfile2-method.md)  
   
- [SetPEKind Method](../../../../docs/framework/unmanaged-api/alink/setpekind-method.md)  
+ [SetPEKind Method](setpekind-method.md)  
   
 ## See also
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+
+- [ALink API](index.md)
+- [IALink Interface](ialink-interface.md)
+- [Al.exe (Assembly Linker)](../../tools/al-exe-assembly-linker.md)

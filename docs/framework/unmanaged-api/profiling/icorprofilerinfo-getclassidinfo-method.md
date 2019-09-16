@@ -23,14 +23,14 @@ Gets the parent module and the metadata token for the specified class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassIDInfo(  
     [in]  ClassID   classId,  
     [out] ModuleID  *pModuleId,  
     [out] mdTypeDef *pTypeDefToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class for which to get the information.  
   
@@ -55,4 +55,5 @@ HRESULT GetClassIDInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

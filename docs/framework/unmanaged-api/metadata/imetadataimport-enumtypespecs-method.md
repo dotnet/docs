@@ -23,7 +23,7 @@ Enumerates TypeSpec tokens defined in the current metadata scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumTypeSpecs (  
    [in, out] HCORENUM    *phEnum,  
    [out] mdTypeSpec      rTypeSpecs[],  
@@ -32,7 +32,7 @@ HRESULT EnumTypeSpecs (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This value must be NULL for the first call of this method.  
   
@@ -65,5 +65,6 @@ HRESULT EnumTypeSpecs (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

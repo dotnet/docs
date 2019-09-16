@@ -23,13 +23,13 @@ Gets a value that indicates whether a debugger is attached to the process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsDebuggerAttached (  
     [out] BOOL *pbAttached  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbAttached`  
  [out] `true` if a debugger is attached to the process; otherwise, `false`.  
   
@@ -57,6 +57,7 @@ HRESULT IsDebuggerAttached (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
 - [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

@@ -13,7 +13,7 @@ ms.assetid: d6ac3d51-844b-4d29-96d8-81a696a7b960
 This example shows how to create a standard [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] dialog box by using the <xref:System.Windows.Controls.Grid> element.  
   
 ## Example  
- The following example creates a dialog box like the **Run** dialog box in the [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] operating system.  
+ The following example creates a dialog box like the **Run** dialog box in the Windows operating system.  
   
  The example creates a <xref:System.Windows.Controls.Grid> and uses the <xref:System.Windows.Controls.ColumnDefinition> and <xref:System.Windows.Controls.RowDefinition> classes to define five columns and four rows.  
   
@@ -23,11 +23,12 @@ This example shows how to create a standard [!INCLUDE[TLA#tla_ui](../../../../in
   
  Finally, the example adds three <xref:System.Windows.Controls.Button> elements to the final row, which represent the **OK**, **Cancel**, and **Browse** events.  
   
- [!code-csharp[GridRunDialog#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridRunDialog/CSharp/window1.xaml.cs#1)]
- [!code-vb[GridRunDialog#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/GridRunDialog/VisualBasic/grid_vb.vb#1)]  
+ [!code-csharp[GridRunDialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GridRunDialog/CSharp/window1.xaml.cs#1)]
+ [!code-vb[GridRunDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridRunDialog/VisualBasic/grid_vb.vb#1)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.Grid>
 - <xref:System.Windows.GridUnitType>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/controls/grid-how-to-topics.md)
+- [Panels Overview](panels-overview.md)
+- [How-to Topics](grid-how-to-topics.md)

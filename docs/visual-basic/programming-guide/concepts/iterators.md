@@ -38,26 +38,26 @@ End Function
   
  **In this topic**  
   
--   [Simple Iterator](#BKMK_SimpleIterator)  
+- [Simple Iterator](#BKMK_SimpleIterator)  
   
--   [Creating a Collection Class](#BKMK_CollectionClass)  
+- [Creating a Collection Class](#BKMK_CollectionClass)  
   
--   [Try Blocks](#BKMK_TryBlocks)  
+- [Try Blocks](#BKMK_TryBlocks)  
   
--   [Anonymous Methods](#BKMK_AnonymousMethods)  
+- [Anonymous Methods](#BKMK_AnonymousMethods)  
   
--   [Using Iterators with a Generic List](#BKMK_GenericList)  
+- [Using Iterators with a Generic List](#BKMK_GenericList)  
   
--   [Syntax Information](#BKMK_SyntaxInformation)  
+- [Syntax Information](#BKMK_SyntaxInformation)  
   
--   [Technical Implementation](#BKMK_Technical)  
+- [Technical Implementation](#BKMK_Technical)  
   
--   [Use of Iterators](#BKMK_UseOfIterators)  
+- [Use of Iterators](#BKMK_UseOfIterators)  
   
 > [!NOTE]
->  For all examples in the topic except the Simple Iterator example, include [Imports](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) statements for the `System.Collections` and `System.Collections.Generic` namespaces.  
+> For all examples in the topic except the Simple Iterator example, include [Imports](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) statements for the `System.Collections` and `System.Collections.Generic` namespaces.  
   
-##  <a name="BKMK_SimpleIterator"></a> Simple Iterator  
+## <a name="BKMK_SimpleIterator"></a> Simple Iterator  
  The following example has a single `Yield` statement that is inside a [For…Next](../../../visual-basic/language-reference/statements/for-next-statement.md) loop. In `Main`, each iteration of the `For Each` statement body creates a call to the iterator function, which proceeds to the next `Yield` statement.  
   
 ```vb  
@@ -82,7 +82,7 @@ As System.Collections.Generic.IEnumerable(Of Integer)
 End Function  
 ```  
   
-##  <a name="BKMK_CollectionClass"></a> Creating a Collection Class  
+## <a name="BKMK_CollectionClass"></a> Creating a Collection Class  
  In the following example, the `DaysOfTheWeek` class implements the <xref:System.Collections.IEnumerable> interface, which requires a <xref:System.Collections.IEnumerable.GetEnumerator%2A> method. The compiler implicitly calls the `GetEnumerator` method, which returns an <xref:System.Collections.IEnumerator>.  
   
  The `GetEnumerator` method returns each string one at a time by using the `Yield` statement, and  an `Iterator` modifier is in the function declaration.  
@@ -207,7 +207,7 @@ Public Class Zoo
 End Class  
 ```  
   
-##  <a name="BKMK_TryBlocks"></a> Try Blocks  
+## <a name="BKMK_TryBlocks"></a> Try Blocks  
  Visual Basic allows a `Yield` statement in the `Try` block of a [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md). A `Try` block that has a `Yield` statement can have `Catch` blocks, and can have a `Finally` block.  
   
  The following example includes `Try`, `Catch`, and `Finally` blocks in an iterator function. The `Finally` block in the iterator function executes before the `For Each` iteration finishes.  
@@ -247,7 +247,7 @@ End Function
   
  If the `For Each` body (instead of the iterator method) throws an exception, a `Catch` block in the iterator function is not executed, but a `Finally` block in the iterator function is executed. A `Catch` block inside an iterator function catches only exceptions that occur inside the iterator function.  
   
-##  <a name="BKMK_AnonymousMethods"></a> Anonymous Methods  
+## <a name="BKMK_AnonymousMethods"></a> Anonymous Methods  
  In Visual Basic, an anonymous function can be an iterator function. The following example illustrates this.  
   
 ```vb  
@@ -297,7 +297,7 @@ End Function
   
  If validation is instead inside the iterator function, the validation cannot be performed until the start of the first iteration of the `For Each` body.  
   
-##  <a name="BKMK_GenericList"></a> Using Iterators with a Generic List  
+## <a name="BKMK_GenericList"></a> Using Iterators with a Generic List  
  In the following example, the `Stack(Of T)` generic class implements the <xref:System.Collections.Generic.IEnumerable%601> generic interface. The `Push` method assigns values to an array of type `T`. The <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> method returns the array values by using the `Yield` statement.  
   
  In addition to the generic <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> method, the non-generic <xref:System.Collections.IEnumerable.GetEnumerator%2A> method must also be implemented. This is because <xref:System.Collections.Generic.IEnumerable%601> inherits from <xref:System.Collections.IEnumerable>. The non-generic implementation defers to the generic implementation.  
@@ -407,7 +407,7 @@ Public Class Stack(Of T)
 End Class  
 ```  
   
-##  <a name="BKMK_SyntaxInformation"></a> Syntax Information  
+## <a name="BKMK_SyntaxInformation"></a> Syntax Information  
  An iterator can occur as a method or `get` accessor. An iterator cannot occur in an event, instance constructor, static constructor, or static destructor.  
   
  An implicit conversion must exist from the expression type in the `Yield` statement to the return type of the iterator.  
@@ -416,7 +416,7 @@ End Class
   
  In Visual Basic, "Yield" is not a reserved word and has special meaning only when it is used in an `Iterator` method or `get` accessor.  
   
-##  <a name="BKMK_Technical"></a> Technical Implementation  
+## <a name="BKMK_Technical"></a> Technical Implementation  
  Although you write an iterator as a method, the compiler translates it into a nested class that is, in effect, a state machine. This class keeps track of the position of the iterator as long the `For Each...Next` loop in the client code continues.  
   
  To see what the compiler does, you can use the Ildasm.exe tool to view the Microsoft intermediate language code that is generated for an iterator method.  
@@ -429,16 +429,17 @@ End Class
   
  For additional information, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification/index.md).  
   
-##  <a name="BKMK_UseOfIterators"></a> Use of Iterators  
+## <a name="BKMK_UseOfIterators"></a> Use of Iterators  
  Iterators enable you to maintain the simplicity of a `For Each` loop when you need to use complex code to populate a list sequence. This can be useful when you want to do the following:  
   
--   Modify the list sequence after the first `For Each` loop iteration.  
+- Modify the list sequence after the first `For Each` loop iteration.  
   
--   Avoid fully loading a large list before the first iteration of a `For Each` loop. An example is a paged fetch to load a batch of table rows. Another example is the <xref:System.IO.DirectoryInfo.EnumerateFiles%2A> method, which implements iterators within the .NET Framework.  
+- Avoid fully loading a large list before the first iteration of a `For Each` loop. An example is a paged fetch to load a batch of table rows. Another example is the <xref:System.IO.DirectoryInfo.EnumerateFiles%2A> method, which implements iterators within the .NET Framework.  
   
--   Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.  
+- Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.  
   
 ## See also
+
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)

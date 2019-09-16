@@ -7,7 +7,7 @@ ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
 
 You can set up a button that you can use to cancel an async application if you don't want to wait for it to finish. By following the examples in this topic, you can add a cancellation button to an application that downloads the contents of one website or a list of websites.
 
-The examples use the UI that [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md) describes.
+The examples use the UI that [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md) describes.
 
 > [!NOTE]
 > To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
@@ -20,15 +20,15 @@ The first example associates the **Cancel** button with a single download task. 
 
 You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
 
-1.  Decompress the file that you downloaded, and then start Visual Studio.
+1. Decompress the file that you downloaded, and then start Visual Studio.
 
-2.  On the menu bar, choose **File** > **Open** > **Project/Solution**.
+2. On the menu bar, choose **File** > **Open** > **Project/Solution**.
 
-3.  In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.
+3. In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.
 
-4.  In **Solution Explorer**, open the shortcut menu for the **CancelATask** project, and then choose **Set as StartUp Project**.
+4. In **Solution Explorer**, open the shortcut menu for the **CancelATask** project, and then choose **Set as StartUp Project**.
 
-5.  Choose the **F5** key to run the project (or, press **Ctrl**+**F5** to run the project without debugging it).
+5. Choose the **F5** key to run the project (or, press **Ctrl**+**F5** to run the project without debugging it).
 
 > [!TIP]
 > If you don't want to download the project, you can review the MainWindow.xaml.cs files at the end of this topic.
@@ -40,7 +40,7 @@ You can download the complete Windows Presentation Foundation (WPF) project from
 
  Then add the following changes to the MainWindow.xaml.cs file of that project.
 
-1.  Declare a `CancellationTokenSource` variable, `cts`, that’s in scope for all methods that access it.
+1. Declare a `CancellationTokenSource` variable, `cts`, that’s in scope for all methods that access it.
 
     ```csharp
     public partial class MainWindow : Window
@@ -49,7 +49,7 @@ You can download the complete Windows Presentation Foundation (WPF) project from
         CancellationTokenSource cts;
     ```
 
-2.  Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to notify `cts` when the user requests cancellation.
+2. Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to notify `cts` when the user requests cancellation.
 
     ```csharp
     // ***Add an event handler for the Cancel button.
@@ -62,16 +62,16 @@ You can download the complete Windows Presentation Foundation (WPF) project from
     }
     ```
 
-3.  Make the following changes in the event handler for the **Start** button, `startButton_Click`.
+3. Make the following changes in the event handler for the **Start** button, `startButton_Click`.
 
-    -   Instantiate the `CancellationTokenSource`, `cts`.
+    - Instantiate the `CancellationTokenSource`, `cts`.
 
         ```csharp
         // ***Instantiate the CancellationTokenSource.
         cts = new CancellationTokenSource();
         ```
 
-    -   In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=nameWithType> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.
+    - In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=nameWithType> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.
 
         ```csharp
         try
@@ -91,7 +91,7 @@ You can download the complete Windows Presentation Foundation (WPF) project from
         }
         ```
 
-4.  In `AccessTheWebAsync`, use the  <xref:System.Net.Http.HttpClient.GetAsync%28System.String%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> overload of the `GetAsync` method in the <xref:System.Net.Http.HttpClient> type to download the contents of a website. Pass `ct`, the <xref:System.Threading.CancellationToken> parameter of `AccessTheWebAsync`, as the second argument. The token carries the message if the user chooses the **Cancel** button.
+4. In `AccessTheWebAsync`, use the  <xref:System.Net.Http.HttpClient.GetAsync%28System.String%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> overload of the `GetAsync` method in the <xref:System.Net.Http.HttpClient> type to download the contents of a website. Pass `ct`, the <xref:System.Threading.CancellationToken> parameter of `AccessTheWebAsync`, as the second argument. The token carries the message if the user chooses the **Cancel** button.
 
      The following code shows the changes in `AccessTheWebAsync`.
 
@@ -118,7 +118,7 @@ You can download the complete Windows Presentation Foundation (WPF) project from
     }
     ```
 
-5.  If you don’t cancel the program, it produces the following output.
+5. If you don’t cancel the program, it produces the following output.
 
     ```text
     Ready to download.
@@ -140,15 +140,15 @@ You can extend the previous example to cancel many tasks by associating the same
 
 You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
 
-1.  Decompress the file that you downloaded, and then start Visual Studio.
+1. Decompress the file that you downloaded, and then start Visual Studio.
 
-2.  On the menu bar, choose **File** > **Open** > **Project/Solution**.
+2. On the menu bar, choose **File** > **Open** > **Project/Solution**.
 
-3.  In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.
+3. In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.
 
-4.  In **Solution Explorer**, open the shortcut menu for the **CancelAListOfTasks** project, and then choose **Set as StartUp Project**.
+4. In **Solution Explorer**, open the shortcut menu for the **CancelAListOfTasks** project, and then choose **Set as StartUp Project**.
 
-5.  Choose the **F5** key to run the project.
+5. Choose the **F5** key to run the project.
 
      Choose the **Ctrl**+**F5** keys to run the project without debugging it.
 
@@ -158,7 +158,7 @@ If you don't want to download the project, you can review the MainWindow.xaml.cs
 
 To extend the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelATask** as the **StartUp Project**. Add the following changes to that project. Asterisks mark the changes in the program.
 
-1.  Add a method to create a list of web addresses.
+1. Add a method to create a list of web addresses.
 
     ```csharp
     // ***Add a method that creates a list of web addresses.
@@ -178,14 +178,14 @@ To extend the example yourself, step by step, follow the instructions in the "Do
     }
     ```
 
-2.  Call the method in `AccessTheWebAsync`.
+2. Call the method in `AccessTheWebAsync`.
 
     ```csharp
     // ***Call SetUpURLList to make a list of web addresses.
     List<string> urlList = SetUpURLList();
     ```
 
-3.  Add the following loop in `AccessTheWebAsync` to process each web address in the list.
+3. Add the following loop in `AccessTheWebAsync` to process each web address in the list.
 
     ```csharp
     // ***Add a loop to process the list of web addresses.
@@ -204,7 +204,7 @@ To extend the example yourself, step by step, follow the instructions in the "Do
     }
     ```
 
-4.  Because `AccessTheWebAsync` displays the lengths, the method doesn't need to return anything. Remove the return statement, and change the return type of the method to <xref:System.Threading.Tasks.Task> instead of <xref:System.Threading.Tasks.Task%601>.
+4. Because `AccessTheWebAsync` displays the lengths, the method doesn't need to return anything. Remove the return statement, and change the return type of the method to <xref:System.Threading.Tasks.Task> instead of <xref:System.Threading.Tasks.Task%601>.
 
     ```csharp
     async Task AccessTheWebAsync(CancellationToken ct)
@@ -216,7 +216,7 @@ To extend the example yourself, step by step, follow the instructions in the "Do
     await AccessTheWebAsync(cts.Token);
     ```
 
-5.  If you don’t cancel the program, it produces the following output.
+5. If you don’t cancel the program, it produces the following output.
 
     ```text
     Length of the downloaded string: 35939.
@@ -515,6 +515,6 @@ namespace CancelAListOfTasks
 
 - <xref:System.Threading.CancellationTokenSource>
 - <xref:System.Threading.CancellationToken>
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
-- [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)
+- [Asynchronous Programming with async and await (C#)](./index.md)
+- [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md)
 - [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

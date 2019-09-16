@@ -23,13 +23,13 @@ Gets the thread in which this evaluation is executing or will execute.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread (  
     [out] ICorDebugThread   **ppThread  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppThread`  
  [out] A pointer to the address of an ICorDebugThread object that represents the thread.  
   

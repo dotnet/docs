@@ -1,0 +1,136 @@
+- name: Windows Forms
+  href: index.md
+  items:
+  - name: Getting Started with Windows Forms
+    href: getting-started-with-windows-forms.md
+  - name: Windows Forms Overview
+    href: windows-forms-overview.md
+  - name: Creating a New Windows Form
+    href: creating-a-new-windows-form.md
+    items:
+    - name: "How to: Create a Windows Forms Application from the Command Line"
+      href: how-to-create-a-windows-forms-application-from-the-command-line.md
+    - name: Windows Forms Coordinates
+      href: windows-forms-coordinates.md
+  - name: Creating Event Handlers in Windows Forms
+    href: creating-event-handlers-in-windows-forms.md
+    items:
+    - name: Events Overview
+      href: events-overview-windows-forms.md
+    - name: Event Handlers Overview
+      href: event-handlers-overview-windows-forms.md
+    - name: "How to: Create Event Handlers at Run Time for Windows Forms"
+      href: how-to-create-event-handlers-at-run-time-for-windows-forms.md
+    - name: "How to: Connect Multiple Events to a Single Event Handler in Windows Forms"
+      href: how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms.md
+    - name: Order of Events in Windows Forms
+      href: order-of-events-in-windows-forms.md
+  - name: Adjusting the Size and Scale of Windows Forms
+    href: adjusting-the-size-and-scale-of-windows-forms.md
+    items:
+    - name: "How to: Resize Windows Forms"
+      href: how-to-resize-windows-forms.md
+    - name: Automatic Scaling in Windows Forms
+      href: automatic-scaling-in-windows-forms.md
+      items:
+      - name: "How to: Respond to Font Scheme Changes in a Windows Forms Application"
+        href: how-to-respond-to-font-scheme-changes-in-a-windows-forms-application.md
+    - name: High DPI Support In Windows Forms
+      href: high-dpi-support-in-windows-forms.md
+  - name: Changing the Appearance of Windows Forms
+    href: changing-the-appearance-of-windows-forms.md
+    items:
+    - name: "How to: Change the Borders of Windows Forms"
+      href: how-to-change-the-borders-of-windows-forms.md
+  - name: Windows Forms Controls
+    href: ./controls/
+  - name: User Input in Windows Forms
+    href: user-input-in-windows-forms.md
+    items:
+    - name: User Input in a Windows Forms Application
+      href: user-input-in-a-windows-forms-application.md
+    - name: Keyboard Input in a Windows Forms Application
+      href: keyboard-input-in-a-windows-forms-application.md
+      items:
+      - name: How Keyboard Input Works
+        href: how-keyboard-input-works.md
+      - name: Using Keyboard Events
+        href: using-keyboard-events.md
+      - name: "How to: Modify Keyboard Input to a Standard Control"
+        href: how-to-modify-keyboard-input-to-a-standard-control.md
+      - name: "How to: Determine Which Modifier Key Was Pressed"
+        href: how-to-determine-which-modifier-key-was-pressed.md
+      - name: "How to: Handle Keyboard Input at the Form Level"
+        href: how-to-handle-keyboard-input-at-the-form-level.md
+    - name: Mouse Input in a Windows Forms Application
+      href: mouse-input-in-a-windows-forms-application.md
+      items:
+      - name: How Mouse Input Works in Windows Forms
+        href: how-mouse-input-works-in-windows-forms.md
+      - name: Mouse Events in Windows Forms
+        href: mouse-events-in-windows-forms.md
+      - name: "How to: Distinguish Between Clicks and Double-Clicks"
+        href: how-to-distinguish-between-clicks-and-double-clicks.md
+      - name: Mouse Pointers in Windows Forms
+        href: mouse-pointers-in-windows-forms.md
+      - name: Mouse Capture in Windows Forms
+        href: mouse-capture-in-windows-forms.md
+      - name: Drag-and-Drop Functionality in Windows Forms
+        href: drag-and-drop-functionality-in-windows-forms.md
+    - name: "How to: Simulate Mouse and Keyboard Events in Code"
+      href: how-to-simulate-mouse-and-keyboard-events-in-code.md
+    - name: "How to: Handle User Input Events in Windows Forms Controls"
+      href: how-to-handle-user-input-events-in-windows-forms-controls.md
+    - name: User Input Validation in Windows Forms
+      href: user-input-validation-in-windows-forms.md
+  - name: Dialog Boxes in Windows Forms
+    href: dialog-boxes-in-windows-forms.md
+    items:
+    - name: "How to: Display Dialog Boxes for Windows Forms"
+      href: how-to-display-dialog-boxes-for-windows-forms.md
+  - name: Windows Forms Data Binding
+    href: windows-forms-data-binding.md
+    items:
+    - name: Data Binding and Windows Forms
+      href: data-binding-and-windows-forms.md
+    - name: Data Sources Supported by Windows Forms
+      href: data-sources-supported-by-windows-forms.md
+    - name: Interfaces Related to Data Binding
+      href: interfaces-related-to-data-binding.md
+    - name: Change Notification in Windows Forms Data Binding
+      href: change-notification-in-windows-forms-data-binding.md
+    - name: "How to: Apply the PropertyNameChanged Pattern"
+      href: how-to-apply-the-propertynamechanged-pattern.md
+    - name: "How to: Create a Bound Control and Format the Displayed Data"
+      href: how-to-create-a-bound-control-and-format-the-displayed-data.md
+    - name: "How to: Create a Simple-Bound Control on a Windows Form"
+      href: how-to-create-a-simple-bound-control-on-a-windows-form.md
+    - name: "How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized"
+      href: multiple-controls-bound-to-data-source-synchronized.md
+    - name: "How to: Ensure the Selected Row in a Child Table Remains at the Correct Position"
+      href: ensure-the-selected-row-in-a-child-table-correct.md
+    - name: "How to: Implement the IListSource Interface"
+      href: how-to-implement-the-ilistsource-interface.md
+    - name: "How to: Implement the INotifyPropertyChanged Interface"
+      href: how-to-implement-the-inotifypropertychanged-interface.md
+    - name: "How to: Implement the ITypedList Interface"
+      href: how-to-implement-the-itypedlist-interface.md
+    - name: "How to: Navigate Data in Windows Forms"
+      href: how-to-navigate-data-in-windows-forms.md
+  - name: Windows Forms Security
+    href: windows-forms-security.md
+    items:
+    - name: Security in Windows Forms Overview
+      href: security-in-windows-forms-overview.md
+    - name: More Secure File and Data Access in Windows Forms
+      href: more-secure-file-and-data-access-in-windows-forms.md
+    - name: More Secure Printing in Windows Forms
+      href: more-secure-printing-in-windows-forms.md
+    - name: Additional Security Considerations in Windows Forms
+      href: additional-security-considerations-in-windows-forms.md
+  - name: ClickOnce Deployment for Windows Forms
+    href: clickonce-deployment-for-windows-forms.md
+  - name: "How to: Access Keyed Collections in Windows Forms"
+    href: how-to-access-keyed-collections-in-windows-forms.md
+  - name: Enhancing Windows Forms Applications
+    href: ./advanced/

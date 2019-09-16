@@ -10,6 +10,7 @@ System.ServiceModel.Security.SecurityClientSessionCloseMessageReceived
  A close message was received by the client security session.TraceCodeSecurityClientSessionKeyRenewed=Client. Security session renewed session key.  
   
 ## See also
+
 - [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
 - [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
 - [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

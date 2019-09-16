@@ -15,12 +15,13 @@ ms.assetid: d5d9274c-23b3-4859-8869-6e64403c9ca7
 Glyphs are a low-level depiction of a character to be drawn on-screen. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides direct access to glyphs for customers who want to intercept and persist text after formatting.  
   
 ## In This Section  
- [Introduction to the GlyphRun Object and Glyphs Element](../../../../docs/framework/wpf/advanced/introduction-to-the-glyphrun-object-and-glyphs-element.md)  
-  [How to: Draw Text Using Glyphs](../../../../docs/framework/wpf/advanced/draw-text-using-glyphs.md)  
+ [Introduction to the GlyphRun Object and Glyphs Element](introduction-to-the-glyphrun-object-and-glyphs-element.md)  
+  [How to: Draw Text Using Glyphs](draw-text-using-glyphs.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.GlyphRun>
 - <xref:System.Windows.Media.DrawingContext.DrawText%2A>
 - <xref:System.Windows.Documents.Glyphs>
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Typography in WPF](typography-in-wpf.md)

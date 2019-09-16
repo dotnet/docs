@@ -23,14 +23,14 @@ Requests that the common language runtime (CLR) create an iterator for the host 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateRWLockOwnerIterator (  
     [in]  SIZE_T    cookie,  
     [out] SIZE_T   *pIterator  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] The cookie associated with the desired reader-writer lock.  
   
@@ -52,12 +52,12 @@ HRESULT CreateRWLockOwnerIterator (
 ## Remarks  
  Hosts typically call the `CreateRWLockOwnerIterator`, `DeleteRWLockOwnerIterator`, and `GetRWLockOwnerNext` methods during deadlock detection. The host is responsible for ensuring that the reader-writer lock is still valid, because the CLR makes no attempt to keep the reader-writer lock alive. Several strategies are available for the host to ensure the validity of the lock:  
   
--   The host can block release calls on the reader-writer lock (for example, [IHostSemaphore::ReleaseSemaphore](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-releasesemaphore-method.md)) while ensuring that this block does not cause deadlock.  
+- The host can block release calls on the reader-writer lock (for example, [IHostSemaphore::ReleaseSemaphore](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-releasesemaphore-method.md)) while ensuring that this block does not cause deadlock.  
   
--   The host can block the exit from waiting on the event object associated with the reader-writer lock, again ensuring that this block does not cause deadlock.  
+- The host can block the exit from waiting on the event object associated with the reader-writer lock, again ensuring that this block does not cause deadlock.  
   
 > [!NOTE]
->  `CreateRWLockOwnerIterator` must be called only on threads that are currently executing unmanaged code.  
+> `CreateRWLockOwnerIterator` must be called only on threads that are currently executing unmanaged code.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -69,5 +69,6 @@ HRESULT CreateRWLockOwnerIterator (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

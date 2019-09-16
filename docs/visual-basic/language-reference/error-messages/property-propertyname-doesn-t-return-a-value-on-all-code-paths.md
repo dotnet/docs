@@ -15,11 +15,11 @@ Property '\<propertyname>' doesn't return a value on all code paths. A null refe
   
  You can return a value from a property `Get` procedure in any of the following ways:  
   
--   Assign the value to the property name and then perform an `Exit Property` statement.  
+- Assign the value to the property name and then perform an `Exit Property` statement.  
   
--   Assign the value to the property name and then perform the `End Get` statement.  
+- Assign the value to the property name and then perform the `End Get` statement.  
   
--   Include the value in a [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).  
+- Include the value in a [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).  
   
  If control passes to `Exit Property` or `End Get` and you have not assigned any value to the property name, the `Get` procedure returns the default value of the property's data type. For more information, see "Behavior" in [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md).  
   
@@ -29,11 +29,12 @@ Property '\<propertyname>' doesn't return a value on all code paths. A null refe
   
 ## To correct this error  
   
--   Check your control flow logic and make sure you assign a value before every statement that causes a return.  
+- Check your control flow logic and make sure you assign a value before every statement that causes a return.  
   
      It is easier to guarantee that every return from the procedure returns a value if you always use the `Return` statement. If you do this, the last statement before `End Get` should be a `Return` statement.  
   
 ## See also
+
 - [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
 - [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
 - [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)

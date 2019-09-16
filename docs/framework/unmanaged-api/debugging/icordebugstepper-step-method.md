@@ -23,13 +23,13 @@ Causes this ICorDebugStepper to single-step through its containing thread, and o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Step (  
     [in] BOOL   bStepIn  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bStepIn`  
  [in] Set to `true` to step into a function that is called within the thread. Set to `false` to step over the function.  
   

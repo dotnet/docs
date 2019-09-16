@@ -18,11 +18,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ASM_NAME Enumeration
-Indicates the version, build, culture, signature, and so on, of the assembly whose properties will be retrieved or set by [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) methods.  
+Indicates the version, build, culture, signature, and so on, of the assembly whose properties will be retrieved or set by [IAssemblyName](iassemblyname-interface.md) methods.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
   
     ASM_NAME_PUBLIC_KEY = 0,  
@@ -59,7 +59,7 @@ typedef enum {
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -68,5 +68,6 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
-- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
+
+- [IAssemblyName Interface](iassemblyname-interface.md)
+- [Fusion Enumerations](fusion-enumerations.md)

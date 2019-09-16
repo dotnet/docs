@@ -21,7 +21,7 @@ ms.author: "mairaw"
 Provides a callback mechanism for reporting errors during the metadata merge.  
   
 > [!NOTE]
->  The `IMetaDataError` interface must be implemented by the client.  
+> The `IMetaDataError` interface must be implemented by the client.  
   
 ## Methods  
   
@@ -39,4 +39,5 @@ Provides a callback mechanism for reporting errors during the metadata merge.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)

@@ -17,28 +17,29 @@ In this example, a client is created to use a calculator service and the binding
   
 ### To specify a custom binding in code  
   
-1.  Use Svcutil.exe from the command line to generate code from service metadata.  
+1. Use Svcutil.exe from the command line to generate code from service metadata.  
   
-    ```  
+    ```console  
     Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>   
     ```  
   
-2.  The client that is generated contains the `ICalculator` interface that defines the service contract that the client implementation must satisfy.  
+2. The client that is generated contains the `ICalculator` interface that defines the service contract that the client implementation must satisfy.  
   
      [!code-csharp[C_HowTo_CodeClientBinding#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_codeclientbinding/cs/client.cs#1)]
      [!code-vb[C_HowTo_CodeClientBinding#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_codeclientbinding/vb/client.vb#1)]  
   
-3.  The generated client also contains the implementation of the `ClientCalculator`.  
+3. The generated client also contains the implementation of the `ClientCalculator`.  
   
      [!code-csharp[C_HowTo_CodeClientBinding#2](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_codeclientbinding/cs/client.cs#2)]
      [!code-vb[C_HowTo_CodeClientBinding#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_codeclientbinding/vb/client.vb#2)]  
   
-4.  Create an instance of the `ClientCalculator` that uses the <xref:System.ServiceModel.BasicHttpBinding> class in a client application, and then call the service operations at the specified address.  
+4. Create an instance of the `ClientCalculator` that uses the <xref:System.ServiceModel.BasicHttpBinding> class in a client application, and then call the service operations at the specified address.  
   
      [!code-csharp[C_HowTo_CodeClientBinding#3](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_codeclientbinding/cs/client.cs#3)]
      [!code-vb[C_HowTo_CodeClientBinding#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_codeclientbinding/vb/client.vb#3)]  
   
-5.  Compile and run the client.  
+5. Compile and run the client.  
   
 ## See also
+
 - [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

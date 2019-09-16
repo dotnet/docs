@@ -23,9 +23,9 @@ This example uses the <xref:System.ServiceProcess.ServiceController> component t
 ## Compiling the Code  
  This example requires:  
   
--   A project reference to System.serviceprocess.dll.  
+- A project reference to System.serviceprocess.dll.  
   
--   Access to the members of the <xref:System.ServiceProcess> namespace. Add an `Imports` statement if you are not fully qualifying member names in your code. For more information, see [Imports Statement (.NET Namespace and Type)](~/docs/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
+- Access to the members of the <xref:System.ServiceProcess> namespace. Add an `Imports` statement if you are not fully qualifying member names in your code. For more information, see [Imports Statement (.NET Namespace and Type)](../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 ## Robust Programming  
  The <xref:System.ServiceProcess.ServiceController.MachineName%2A> property of the <xref:System.ServiceProcess.ServiceController> class is the local computer by default. To reference Windows services on another computer, change the <xref:System.ServiceProcess.ServiceController.MachineName%2A> property to the name of that computer.  
@@ -34,9 +34,9 @@ This example uses the <xref:System.ServiceProcess.ServiceController> component t
   
  The following conditions may cause an exception:  
   
--   The service cannot be resumed. (<xref:System.InvalidOperationException>)  
+- The service cannot be resumed. (<xref:System.InvalidOperationException>)  
   
--   An error occurred when accessing a system API. (<xref:System.ComponentModel.Win32Exception>)  
+- An error occurred when accessing a system API. (<xref:System.ComponentModel.Win32Exception>)  
   
 ## .NET Framework Security  
  Control of services on the computer may be restricted by using the <xref:System.ServiceProcess.ServiceControllerPermissionAccess> enumeration to set permissions in the <xref:System.ServiceProcess.ServiceControllerPermission> class.  
@@ -44,6 +44,7 @@ This example uses the <xref:System.ServiceProcess.ServiceController> component t
  Access to service information may be restricted by using the <xref:System.Security.Permissions.PermissionState> enumeration to set permissions in the <xref:System.Security.Permissions.SecurityPermission> class.  
   
 ## See also
+
 - <xref:System.ServiceProcess.ServiceController>
 - <xref:System.ServiceProcess.ServiceControllerStatus>
 - [How to: Pause a Windows Service (Visual Basic)](../../../docs/framework/windows-services/how-to-pause-a-windows-service-visual-basic.md)

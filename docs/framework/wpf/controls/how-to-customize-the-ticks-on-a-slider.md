@@ -16,9 +16,10 @@ This example shows how to create a <xref:System.Windows.Controls.Slider> control
   
  The following example shows how to use the <xref:System.Windows.Controls.Slider.Ticks%2A> property to create tick marks along the <xref:System.Windows.Controls.Slider> at irregular intervals.  
   
- [!code-xaml[Slider#4](../../../../samples/snippets/xaml/VS_Snippets_Wpf/Slider/xaml/window1.xaml#4)]  
+ [!code-xaml[Slider#4](~/samples/snippets/xaml/VS_Snippets_Wpf/Slider/xaml/window1.xaml#4)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.Slider>
 - <xref:System.Windows.Controls.Primitives.TickBar>
 - <xref:System.Windows.Controls.Slider.TickPlacement%2A>

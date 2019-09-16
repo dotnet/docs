@@ -33,30 +33,29 @@ In column fill mode, the <xref:System.Windows.Forms.DataGridView> control resize
  The following demonstration code enables you to experiment with different values for the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A>, <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A>, and <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> properties of different columns. In this example, a <xref:System.Windows.Forms.DataGridView> control is bound to its own <xref:System.Windows.Forms.DataGridView.Columns%2A> collection, and one column is bound to each of the <xref:System.Windows.Forms.DataGridViewColumn.HeaderText%2A>, <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A>, <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A>, <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A>, and <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> properties. Each of the columns is also represented by a row in the control, and changing values in a row will update the properties of the corresponding column so that you can see how the values interact.  
   
 ### Code  
- [!code-csharp[System.Windows.Forms.DataGridViewFillColumnsDemo#00](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/CS/fillcolumns.cs#00)]
- [!code-vb[System.Windows.Forms.DataGridViewFillColumnsDemo#00](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/vb/fillcolumns.vb#00)]  
+ [!code-csharp[System.Windows.Forms.DataGridViewFillColumnsDemo#00](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/CS/fillcolumns.cs#00)]
+ [!code-vb[System.Windows.Forms.DataGridViewFillColumnsDemo#00](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/vb/fillcolumns.vb#00)]  
   
 ### Comments  
  To use this demonstration application:  
   
--   Change the size of the form. Observe how columns change their widths while retaining the proportions indicated by the <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values.  
+- Change the size of the form. Observe how columns change their widths while retaining the proportions indicated by the <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values.  
   
--   Change the column sizes by dragging the column dividers with the mouse. Observe how the <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> values change.  
+- Change the column sizes by dragging the column dividers with the mouse. Observe how the <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> values change.  
   
--   Change the <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> value for one column, then drag to resize the form. Observe how, when you make the form small enough, the <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> values do not go below the <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values.  
+- Change the <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> value for one column, then drag to resize the form. Observe how, when you make the form small enough, the <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> values do not go below the <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values.  
   
--   Change the <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values for all columns to large numbers so that the combined values exceed the width of the control. Observe how the horizontal scroll bar appears.  
+- Change the <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values for all columns to large numbers so that the combined values exceed the width of the control. Observe how the horizontal scroll bar appears.  
   
--   Change the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> values for some columns. Observe the effect when you resize columns or the form.  
+- Change the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> values for some columns. Observe the effect when you resize columns or the form.  
   
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Drawing, and System.Windows.Forms assemblies.  
-  
--   For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
+- References to the System, System.Drawing, and System.Windows.Forms assemblies.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=nameWithType>
@@ -70,4 +69,4 @@ In column fill mode, the <xref:System.Windows.Forms.DataGridView> control resize
 - <xref:System.Windows.Forms.DataGridViewColumn.Width%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=nameWithType>
-- [Resizing Columns and Rows in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/resizing-columns-and-rows-in-the-windows-forms-datagridview-control.md)
+- [Resizing Columns and Rows in the Windows Forms DataGridView Control](resizing-columns-and-rows-in-the-windows-forms-datagridview-control.md)

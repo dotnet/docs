@@ -23,13 +23,13 @@ Gets the native code offset location to which the instruction pointer is current
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIP (  
     [out] ULONG32           *pnOffset  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnOffset`  
  [out] A pointer to the offset location in the native code.  
   
@@ -46,4 +46,3 @@ HRESULT GetIP (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

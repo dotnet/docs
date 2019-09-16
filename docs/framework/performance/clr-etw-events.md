@@ -12,9 +12,9 @@ ms.author: "mairaw"
 # CLR ETW Events
 The topics in this section describe event tracing for Windows (ETW) events. Each event has an associated keyword and level, which are described in the [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md) topic. The CLR has two providers for the events:  
   
--   The runtime provider, which raises events depending on which keywords (categories of events) are enabled. The CLR runtime provider GUID is e13c0d23-ccbc-4e12-931b-d9cc2eee27e4.  
+- The runtime provider, which raises events depending on which keywords (categories of events) are enabled. The CLR runtime provider GUID is e13c0d23-ccbc-4e12-931b-d9cc2eee27e4.  
   
--   The rundown provider, which has special-purpose uses. The CLR rundown provider GUID is a669021c-c450-4609-a035-5af59af4df18.  
+- The rundown provider, which has special-purpose uses. The CLR rundown provider GUID is a669021c-c450-4609-a035-5af59af4df18.  
   
  For more information about the providers, see [CLR ETW Providers](../../../docs/framework/performance/clr-etw-providers.md).  
   
@@ -56,6 +56,7 @@ The topics in this section describe event tracing for Windows (ETW) events. Each
  Captures information that is used with other events to generate stack traces after an event is raised.  
   
 ## See also
+
 - [Improve Debugging And Performance Tuning With ETW](https://go.microsoft.com/fwlink/?LinkId=179696)
 - [Windows Performance Blog](https://go.microsoft.com/fwlink/?LinkId=179509)
 - [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md)

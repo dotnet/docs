@@ -13,23 +13,23 @@ Custom activity templates are used to customize the configuration of activities,
 
 ## To create a template for the Delay activity
 
-1.  Start Visual Studio 2010.
+1. Start Visual Studio 2010.
 
-2.  On the **File** menu, point to **New**, and then select **Project**.
+2. On the **File** menu, point to **New**, and then select **Project**.
 
      The **New Project** dialog box opens.
 
-3.  In the **Project Types** pane, select **Workflow** from either the **Visual C#** projects or **Visual Basic** groupings depending on your language preference.
+3. In the **Project Types** pane, select **Workflow** from either the **Visual C#** projects or **Visual Basic** groupings depending on your language preference.
 
-4.  In the **Templates** pane, select **Activity Library**.
+4. In the **Templates** pane, select **Activity Library**.
 
-5.  In the **Name** box, enter `DelayActivityTemplate`.
+5. In the **Name** box, enter `DelayActivityTemplate`.
 
-6.  Accept the defaults in the **Location** and **Solution name** text boxes, and then click **OK**.
+6. Accept the defaults in the **Location** and **Solution name** text boxes, and then click **OK**.
 
-7.  Right-click the References directory of the DelayActivityTemplate project in **Solution Explorer** and choose **Add Reference** to open the **Add Reference** dialog box.
+7. Right-click the References directory of the DelayActivityTemplate project in **Solution Explorer** and choose **Add Reference** to open the **Add Reference** dialog box.
 
-8.  Go to the **.NET** tab and select **PresentationFramework** from the **Component Name** column on the left and click **OK** to add a reference to the PresentationFramework.dll file.
+8. Go to the **.NET** tab and select **PresentationFramework** from the **Component Name** column on the left and click **OK** to add a reference to the PresentationFramework.dll file.
 
 9. Repeat this procedure to add references to the System.Activities.Presentation.dll and the WindowsBase.dll files.
 
@@ -39,7 +39,7 @@ Custom activity templates are used to customize the configuration of activities,
 
 12. Open the MyDelayTemplate.cs file and add the following statements.
 
-    ```
+    ```csharp
     //Namespaces added
     using System.Activities;
     using System.Activities.Statements;
@@ -49,7 +49,7 @@ Custom activity templates are used to customize the configuration of activities,
 
 13. Implement the <xref:System.Activities.Presentation.IActivityTemplateFactory> with the `MyDelayActivity` class with the following code. This configures the delay to have a duration of 10 seconds.
 
-    ```
+    ```csharp
     public sealed class MyDelayActivity : IActivityTemplateFactory
     {
         public Activity Create(System.Windows.DependencyObject target)
@@ -68,28 +68,28 @@ Custom activity templates are used to customize the configuration of activities,
 
 ### To make the template available in a Workflow Designer
 
-1.  Right-click the DelayActivityTemplate solution in **Solution Explorer** and choose **Add** and then **New Project** to open the **Add New Project** dialog box.
+1. Right-click the DelayActivityTemplate solution in **Solution Explorer** and choose **Add** and then **New Project** to open the **Add New Project** dialog box.
 
-2.  Select the **Workflow Console Application** template, name it `CustomActivityTemplateApp`, and then click **OK**.
+2. Select the **Workflow Console Application** template, name it `CustomActivityTemplateApp`, and then click **OK**.
 
-3.  Right-click the References directory of the CustomActivityTemplateApp project in **Solution Explorer** and choose **Add Reference** to open the **Add Reference** dialog box.
+3. Right-click the References directory of the CustomActivityTemplateApp project in **Solution Explorer** and choose **Add Reference** to open the **Add Reference** dialog box.
 
-4.  Go to the **Projects** tab and select **DelayActivityTemplate** from the **Project Name** column on the left and click **OK** to add a reference to the DelayActivityTemplate.dll file that you created in the first procedure.
+4. Go to the **Projects** tab and select **DelayActivityTemplate** from the **Project Name** column on the left and click **OK** to add a reference to the DelayActivityTemplate.dll file that you created in the first procedure.
 
-5.  Right-click the CustomActivityTemplateApp project in **Solution Explorer** and choose **Build** to compile the application.
+5. Right-click the CustomActivityTemplateApp project in **Solution Explorer** and choose **Build** to compile the application.
 
-6.  Right-click the CustomActivityTemplateApp project in **Solution Explorer** and choose **Set as Startup Project**.
+6. Right-click the CustomActivityTemplateApp project in **Solution Explorer** and choose **Set as Startup Project**.
 
-7.  Select **Start Without Debugging** from the **Debug** menu and press any key to continue when prompted from the cmd.exe window.
+7. Select **Start Without Debugging** from the **Debug** menu and press any key to continue when prompted from the cmd.exe window.
 
-8.  Open the Workflow1.xaml file and open the **Toolbox**.
+8. Open the Workflow1.xaml file and open the **Toolbox**.
 
 9. Locate the **MyDelayActivity** template in the **DelayActivityTemplate** category. Drag it onto the design surface. Confirm in the **Properties** window that the `Duration` property has been set to 10 seconds.
 
 ## Example
  The MyDelayActivity.cs file should contain the following code.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -121,4 +121,4 @@ namespace DelayActivityTemplate
 ## See also
 
 - <xref:System.Activities.Presentation.IActivityTemplateFactory>
-- [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md)
+- [Customizing the Workflow Design Experience](customizing-the-workflow-design-experience.md)

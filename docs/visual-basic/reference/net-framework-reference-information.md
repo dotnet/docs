@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 8b202505-608b-4223-bbd9-2ace3d73e6cd
 ---
 # .NET Framework Reference Information (Visual Basic)
-This topic provides links to information about how to work with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  
+This topic provides links to information about how to work with the .NET Framework class library.  
   
 ## Related Sections  
  [Getting Started](../../framework/get-started/index.md)  

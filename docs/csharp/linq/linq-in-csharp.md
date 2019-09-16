@@ -4,7 +4,7 @@ description: Links to topics that provide more detailed information about LINQ i
 ms.date: 11/30/2016
 ms.assetid: 8eb3284f-0ab9-4cad-9216-2da58d9761a5
 ---
-# LINQ in C# #
+# LINQ in C\#
 
 This section contains links to topics that provide more detailed information about LINQ.
 

@@ -23,13 +23,13 @@ Gets an ICorDebugTypeEnum object that contains the <xref:System.Type> parameters
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateTypeParameters (  
     [out] ICorDebugTypeEnum    **ppTyParEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppTyParEnum`  
  A pointer to the address of a ICorDebugTypeEnum interface object that allows enumeration of type parameters.  
   

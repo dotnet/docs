@@ -15,21 +15,21 @@ ms.author: "ronpet"
 # How to: Load Assemblies into an Application Domain
 There are several ways to load an assembly into an application domain. The recommended way is to use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.Load%2A> method of the <xref:System.Reflection.Assembly?displayProperty=nameWithType> class. Other ways assemblies can be loaded include:  
   
--   The <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class loads an assembly given its file location. Loading assemblies with this method uses a different load context.  
+- The <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class loads an assembly given its file location. Loading assemblies with this method uses a different load context.  
   
--   The <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods load an assembly into the reflection-only context. Assemblies loaded into this context can be examined but not executed, allowing the examination of assemblies that target other platforms. See [How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
-  
-> [!NOTE]
->  The reflection-only context is new in the .NET Framework version 2.0.  
-  
--   Methods such as <xref:System.AppDomain.CreateInstance%2A> and <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> of the <xref:System.AppDomain> class can load assemblies into an application domain.  
-  
--   The <xref:System.Type.GetType%2A> method of the <xref:System.Type> class can load assemblies.  
-  
--   The <xref:System.AppDomain.Load%2A> method of the <xref:System.AppDomain?displayProperty=nameWithType> class can load assemblies, but is primarily used for COM interoperability. It should not be used to load assemblies into an application domain other than the application domain from which it is called.  
+- The <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods load an assembly into the reflection-only context. Assemblies loaded into this context can be examined but not executed, allowing the examination of assemblies that target other platforms. See [How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, the runtime will not load an assembly that was compiled with a version of the .NET Framework that has a higher version number than the currently loaded runtime. This applies to the combination of the major and minor components of the version number.  
+> The reflection-only context is new in the .NET Framework version 2.0.  
+  
+- Methods such as <xref:System.AppDomain.CreateInstance%2A> and <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> of the <xref:System.AppDomain> class can load assemblies into an application domain.  
+  
+- The <xref:System.Type.GetType%2A> method of the <xref:System.Type> class can load assemblies.  
+  
+- The <xref:System.AppDomain.Load%2A> method of the <xref:System.AppDomain?displayProperty=nameWithType> class can load assemblies, but is primarily used for COM interoperability. It should not be used to load assemblies into an application domain other than the application domain from which it is called.  
+  
+> [!NOTE]
+> Starting with the .NET Framework version 2.0, the runtime will not load an assembly that was compiled with a version of the .NET Framework that has a higher version number than the currently loaded runtime. This applies to the combination of the major and minor components of the version number.  
   
  You can specify the way the just-in-time (JIT) compiled code from loaded assemblies is shared between application domains. For more information, see [Application domains and assemblies](application-domains.md#application-domains-and-assemblies).  
   
@@ -41,6 +41,7 @@ There are several ways to load an assembly into an application domain. The recom
  [!code-vb[System.AppDomain.Load#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.load/vb/source2.vb#2)]  
   
 ## See also
+
 - <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>
 - [Programming with Application Domains](application-domains.md#programming-with-application-domains)
 - [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)

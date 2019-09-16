@@ -22,7 +22,7 @@ Indicates the kind of garbage collection root that is exposed by the [ICorProfil
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_GC_ROOT_STACK = 1,  
     COR_PRF_GC_ROOT_FINALIZER = 2,  
@@ -50,4 +50,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

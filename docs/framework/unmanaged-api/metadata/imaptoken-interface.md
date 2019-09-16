@@ -21,7 +21,7 @@ ms.author: "mairaw"
 Provides mapping capabilities between assemblies.  
   
 > [!NOTE]
->  The `IMapToken` interface must be implemented by the client.  
+> The `IMapToken` interface must be implemented by the client.  
   
 ## Methods  
   
@@ -39,4 +39,5 @@ Provides mapping capabilities between assemblies.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)

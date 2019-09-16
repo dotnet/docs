@@ -21,13 +21,13 @@ Tracing is a way for you to monitor the execution of your application while it i
   
  The term *instrumentation* refers to an ability to monitor or measure the level of a product's performance and to diagnose errors. In programming, this means the ability of an application to incorporate:  
   
--   **Code tracing** - Receiving informative messages about the execution of an application at run time.  
+- **Code tracing** - Receiving informative messages about the execution of an application at run time.  
   
--   **Debugging** - Tracking down and fixing programming errors in an application under development. For more information, see [Debugging](/visualstudio/debugger/debugging-in-visual-studio).  
+- **Debugging** - Tracking down and fixing programming errors in an application under development. For more information, see [Debugging](/visualstudio/debugger/debugging-in-visual-studio).  
   
--   **Performance counters** - Components that allow you to track the performance of your application. For more information, see [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md).  
+- **Performance counters** - Components that allow you to track the performance of your application. For more information, see [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md).  
   
--   **Event logs** - Components that allow you receive and track major events in the execution of your application. For more information, see the <xref:System.Diagnostics.EventLog> class.  
+- **Event logs** - Components that allow you receive and track major events in the execution of your application. For more information, see the <xref:System.Diagnostics.EventLog> class.  
   
  Instrumenting your application by placing trace statements at strategic locations in your code is especially useful for distributed applications. By using trace statements you can instrument an application not only to display information when things go wrong, but also to monitor how well the application is performing.  
   
@@ -61,11 +61,11 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 ### Phases of Code Tracing  
  There are three phases of code tracing:  
   
-1.  **Instrumentation** — you add trace code to your application.  
+1. **Instrumentation** — you add trace code to your application.  
   
-2.  **Tracing** — the tracing code writes information to the specified target.  
+2. **Tracing** — the tracing code writes information to the specified target.  
   
-3.  **Analysis** — you evaluate the tracing information to identify and understand problems in the application.  
+3. **Analysis** — you evaluate the tracing information to identify and understand problems in the application.  
   
  During development, all debug and trace output methods write information to the Output window in Visual Studio by default. In a deployed application, the methods write tracing information to the targets you specify. For more information on specifying an output target for tracing or debugging, see [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md).  
   
@@ -73,29 +73,29 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
   
 ##### To use tracing in an application  
   
-1.  Consider which tracing output you will want to receive onsite after you have deployed the application.  
+1. Consider which tracing output you will want to receive onsite after you have deployed the application.  
   
-2.  Create a set of switches. For more information, see [How to: Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md).  
+2. Create a set of switches. For more information, see [How to: Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md).  
   
-3.  Add the trace statements to the application code.  
+3. Add the trace statements to the application code.  
   
-4.  Determine where you want the tracing output to appear and add the appropriate listeners. For more information, see [Creating and Initializing Trace Listeners](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners.md).  
+4. Determine where you want the tracing output to appear and add the appropriate listeners. For more information, see [Creating and Initializing Trace Listeners](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners.md).  
   
-5.  Test and debug your application and the tracing code it contains.  
+5. Test and debug your application and the tracing code it contains.  
   
-6.  Compile the application into executable code using one of the following procedures:  
+6. Compile the application into executable code using one of the following procedures:  
   
-    -   Use the **Build** menu along with the **Debug** page of the **Property Pages** dialog box in **Solution Explorer**. Use this when compiling in Visual Studio.  
+    - Use the **Build** menu along with the **Debug** page of the **Property Pages** dialog box in **Solution Explorer**. Use this when compiling in Visual Studio.  
   
          \- or -  
   
-    -   Use the **Trace** and **Debug** compiler directives for the command-line method of compiling. For more information, see [Compiling Conditionally with Trace and Debug](../../../docs/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md). Use this when compiling from the command line.  
+    - Use the **Trace** and **Debug** compiler directives for the command-line method of compiling. For more information, see [Compiling Conditionally with Trace and Debug](../../../docs/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md). Use this when compiling from the command line.  
   
-7.  If a problem occurs during run time, turn on the appropriate trace switch. For more information, see [Configuring Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md).  
+7. If a problem occurs during run time, turn on the appropriate trace switch. For more information, see [Configuring Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md).  
   
      The tracing code writes tracing messages to a specified target, for example, a screen, a text file, or an event log. The type of listener you included in the **Trace.Listeners** collection determines the target.  
   
-8.  Analyze the tracing messages to identify and understand the problem in the application.  
+8. Analyze the tracing messages to identify and understand the problem in the application.  
   
 ## Trace Instrumentation and Distributed Applications  
  When you create a distributed application, you might find it difficult to test the application in the manner in which it will be used. Few development teams have the capability to test all possible combinations of operating systems or Web browsers (including all the localized language options), or to simulate the high number of users that will access the application at the same time. Under these circumstances, you cannot test how a distributed application will respond to high volumes, different setups, and unique end-user behaviors. Also, many parts of a distributed application have no user interface with which you can interact directly or view the activity of those parts.  
@@ -127,15 +127,13 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
   
  You can produce custom results by implementing your own listener. A custom trace listener might, for example, display the messages to a message box, or connect to a database to add messages to a table. All custom listeners should support the six methods mentioned above. For more information on creating developer-defined listeners, see <xref:System.Diagnostics.TraceListener> in the .NET Framework reference.  
   
-> [!NOTE]
->  In [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], the **Debug.Write**, **Debug.WriteIf**, **Debug.WriteLine**, and **Debug.WriteLineIf** methods have replaced the **Debug.Print** method that was available in earlier versions of Visual Basic.  
-  
  The **Write** and **WriteLine** methods always write the text that you specify. **Assert**, **WriteIf**, and **WriteLineIf** require a Boolean argument that controls whether or not they write the specified text; they write the specified text only if the expression is **true** (for **WriteIf** and **WriteLineIf**), or **false** (for **Assert**). The **Fail** method always writes the specified text. For more information, see [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md) and the .NET Framework reference.  
   
 ## Security Concerns  
  If you do not disable tracing and debugging before deploying an ASP.NET application, your application may reveal information about itself that could be exploited by a malicious program. For more information, see [How to: Compile Conditionally with Trace and Debug](../../../docs/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md), [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio), and [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md). Debugging is also configurable through Internet Information Services (IIS).  
   
 ## See also
+
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.TraceSource>
 - [Code Contracts](../../../docs/framework/debug-trace-profile/code-contracts.md)

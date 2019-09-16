@@ -11,7 +11,7 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
   
  In this scenario, you do not issue database commands (for example, `INSERT`) to the database. Instead, you change values and execute methods within your object model. When you want to query the database or send it changes, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates your requests into the correct SQL commands and sends those commands to the database.  
   
- ![DLinqObjectModel](../../../../../../docs/framework/data/adonet/sql/linq/media/dlinqobjectmodel.png "DLinqObjectModel")  
+ ![Screenshot that shows the Linq Object Model.](./media/the-linq-to-sql-object-model/linq-object-model-two-tier.png)  
   
  The most fundamental elements in the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object model and their relationship to elements in the relational data model are summarized in the following table:  
   
@@ -23,7 +23,7 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
 |Method|Stored Procedure or Function|  
   
 > [!NOTE]
->  The following descriptions assume that you have a basic knowledge of the relational data model and rules.  
+> The following descriptions assume that you have a basic knowledge of the relational data model and rules.  
   
 ## LINQ to SQL Entity Classes and Database Tables  
  In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], a database table is represented by an *entity class*. An entity class is like any other class you might create except that you annotate the class by using special information that associates the class with a database table. You make this annotation by adding a custom attribute (<xref:System.Data.Linq.Mapping.TableAttribute>) to your class declaration, as in the following example:  
@@ -34,7 +34,7 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
   
  Only instances of classes declared as tables (that is, entity classes) can be saved to the database.  
   
- For more information, see the Table Attribute section of [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md).  
+ For more information, see the Table Attribute section of [Attribute-Based Mapping](attribute-based-mapping.md).  
   
 ## LINQ to SQL Class Members and Database Columns  
  In addition to associating classes with tables, you designate fields or properties to represent database columns. For this purpose, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] defines the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute, as in the following example:  
@@ -45,7 +45,7 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
   
  Only fields and properties mapped to columns are persisted to or retrieved from the database. Those not declared as columns are considered as transient parts of your application logic.  
   
- The <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute has a variety of properties that you can use to customize these members that represent columns (for example, designating a member as representing a primary key column). For more information, see the Column Attribute section of [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md).  
+ The <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute has a variety of properties that you can use to customize these members that represent columns (for example, designating a member as representing a primary key column). For more information, see the Column Attribute section of [Attribute-Based Mapping](attribute-based-mapping.md).  
   
 ## LINQ to SQL Associations and Database Foreign-key Relationships  
  In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], you represent database associations (such as foreign-key to primary-key relationships) by applying the <xref:System.Data.Linq.Mapping.AssociationAttribute> attribute. In the following segment of code, the `Order` class contains a `Customer` property that has an <xref:System.Data.Linq.Mapping.AssociationAttribute> attribute. This property and its attribute provide the `Order` class with a relationship to the `Customer` class.  
@@ -56,7 +56,7 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
  [!code-csharp[DLinqObjectModel#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqObjectModel/cs/northwind.cs#3)]
  [!code-vb[DLinqObjectModel#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectModel/vb/northwind.vb#3)]  
   
- For more information, see the Association Attribute section of [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md).  
+ For more information, see the Association Attribute section of [Attribute-Based Mapping](attribute-based-mapping.md).  
   
 ## LINQ to SQL Methods and Database Stored Procedures  
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports stored procedures and user-defined functions. In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], you map these database-defined abstractions to client objects so that you can access them in a strongly typed manner from client code. The method signatures resemble as closely as possible the signatures of the procedures and functions defined in the database. You can use IntelliSense to discover these methods.  
@@ -66,14 +66,15 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] maps stored procedures and functions to methods by using the <xref:System.Data.Linq.Mapping.FunctionAttribute> and <xref:System.Data.Linq.Mapping.ParameterAttribute> attributes. Methods representing stored procedures are distinguished from those representing user-defined functions by the <xref:System.Data.Linq.Mapping.FunctionAttribute.IsComposable%2A> property. If this property is set to `false` (the default), the method represents a stored procedure. If it is set to `true`, the method represents a database function.  
   
 > [!NOTE]
->  If you are using Visual Studio, you can use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to create methods mapped to stored procedures and user-defined functions.  
+> If you are using Visual Studio, you can use the Object Relational Designer to create methods mapped to stored procedures and user-defined functions.  
   
 ### Example  
  [!code-csharp[DLinqObjectModel#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqObjectModel/cs/northwind.cs#4)]
  [!code-vb[DLinqObjectModel#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectModel/vb/northwind.vb#4)]  
   
- For more information, see the Function Attribute, Stored Procedure Attribute, and Parameter Attribute sections of [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md) and [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md).  
+ For more information, see the Function Attribute, Stored Procedure Attribute, and Parameter Attribute sections of [Attribute-Based Mapping](attribute-based-mapping.md) and [Stored Procedures](stored-procedures.md).  
   
 ## See also
-- [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+
+- [Attribute-Based Mapping](attribute-based-mapping.md)
+- [Background Information](background-information.md)

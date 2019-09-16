@@ -28,7 +28,7 @@ XAML uses character entities defined in XML for special characters. This topic d
 ## Character Entities and Escaping Issues That Are Unique to XAML  
  XAML markup typically uses the same character entities and escape sequences that are defined in XML.  
   
- The main exception is that braces ({ and }) have significance in XAML because these characters inform a XAML processor that a character sequence enclosed by braces must be interpreted as a markup extension. For more information about markup extensions, see [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
+ The main exception is that braces ({ and }) have significance in XAML because these characters inform a XAML processor that a character sequence enclosed by braces must be interpreted as a markup extension. For more information about markup extensions, see [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md).  
   
  However, you can still display the braces as literal characters by using an escape sequence that is particular to XAML instead of XML. For more information, see [{} Escape Sequence - Markup Extension](escape-sequence-markup-extension.md).  
   
@@ -46,7 +46,7 @@ XAML uses character entities defined in XML for special characters. This topic d
 |" (straight quotation mark)|\&quot;|Must be used for an attribute value, but a straight quotation mark (") is acceptable as the content of an element. Note that attribute values may be enclosed either by a single straight quotation mark (') or by a straight quotation mark ("); whichever character appears first defines the attribute value enclosure, and the alternative quote can then be used as a literal within the value.|  
 |' (single straight quotation mark)|\&apos;|Must be used for an attribute value, but a single straight quotation mark (') is acceptable as the content of an element. Note that attribute values may be enclosed either by a single straight quotation mark (') or by a straight quotation mark ("); whichever character appears first defines the attribute value enclosure, and the alternative quote can then be used as a literal within the value.|  
 |(numeric character mappings)|&#*[integer]*; or &#x*[hex]*;|XAML supports numeric character mappings into the encoding that is active.|  
-|(nonbreaking space)|&\#160; (assuming UTF-8 encoding)|For flow document elements, or elements that take text such as the WPF <xref:System.Windows.Controls.TextBox>, nonbreaking spaces are not normalized out of the markup, even for `xml:space="default"`. (For more information, see [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).)|  
+|(nonbreaking space)|&\#160; (assuming UTF-8 encoding)|For flow document elements, or elements that take text such as the WPF <xref:System.Windows.Controls.TextBox>, nonbreaking spaces are not normalized out of the markup, even for `xml:space="default"`. (For more information, see [White-space processing in XAML](whitespace-processing-in-xaml.md).)|  
   
 <a name="xml_comment_format"></a>   
 ## XML Comment Format  
@@ -57,7 +57,8 @@ XAML uses character entities defined in XML for special characters. This topic d
  XAML handles XML processing instructions according to XML specifications, which state that the instructions must be passed through. XAML processing in .NET Framework XAML Services  does not use any processing instructions. Other existing frameworks that use XAML also do not use processing instructions from XAML.  
   
 ## See also
-- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
-- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
-- [XamlName Grammar](../../../docs/framework/xaml-services/xamlname-grammar.md)
-- [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)
+
+- [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)
+- [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [XamlName Grammar](xamlname-grammar.md)
+- [White-space processing in XAML](whitespace-processing-in-xaml.md)

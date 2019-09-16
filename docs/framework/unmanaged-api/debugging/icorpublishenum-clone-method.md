@@ -23,13 +23,13 @@ Creates a copy of this [ICorPublishEnum](../../../../docs/framework/unmanaged-ap
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (  
     [out] ICorPublishEnum   **ppEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to the address of an `ICorPublishEnum` object that is a copy of this `ICorPublishEnum` object.  
   
@@ -43,4 +43,5 @@ HRESULT Clone (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)

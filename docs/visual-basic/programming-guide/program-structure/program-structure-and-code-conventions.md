@@ -17,11 +17,11 @@ ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
 # Program Structure and Code Conventions (Visual Basic)
 This section introduces the typical Visual Basic program structure, provides a simple Visual Basic program, "Hello, World", and discusses Visual Basic code conventions. Code conventions are suggestions that focus not on a program's logic but on its physical structure and appearance. Following them makes your code easier to read, understand, and maintain. Code conventions can include, among others:  
   
--   Standardized formats for labeling and commenting code.  
+- Standardized formats for labeling and commenting code.  
   
--   Guidelines for spacing, formatting, and indenting code.  
+- Guidelines for spacing, formatting, and indenting code.  
   
--   Naming conventions for objects, variables, and procedures.  
+- Naming conventions for objects, variables, and procedures.  
   
  The following topics present a set of programming guidelines for Visual Basic programs, along with examples of good usage.  
   

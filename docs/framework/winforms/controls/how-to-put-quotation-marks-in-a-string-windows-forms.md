@@ -20,7 +20,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
   
 ### To place quotation marks in a string in your code  
   
-1.  In Visual Basic, insert two quotation marks in a row as an embedded quotation mark. In Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)], insert the escape sequence \\" as an embedded quotation mark. For example, to create the preceding string, use the following code.  
+1. In Visual Basic, insert two quotation marks in a row as an embedded quotation mark. In Visual C# and Visual C++, insert the escape sequence \\" as an embedded quotation mark. For example, to create the preceding string, use the following code.  
   
     ```vb  
     Private Sub InsertQuote()  
@@ -44,7 +44,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
   
      -or-  
   
-2.  Insert the ASCII or Unicode character for a quotation mark. In Visual Basic, use the ASCII character (34). In Visual C#, use the Unicode character (\u0022).  
+2. Insert the ASCII or Unicode character for a quotation mark. In Visual Basic, use the ASCII character (34). In Visual C#, use the Unicode character (\u0022).  
   
     ```vb  
     Private Sub InsertAscii()  
@@ -59,11 +59,11 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
     ```  
   
     > [!NOTE]
-    >  In this example, you cannot use \u0022 because you cannot use a universal character name that designates a character in the basic character set. Otherwise, you produce C3851. For more information, see [Compiler Error C3851](/cpp/error-messages/compiler-errors-2/compiler-error-c3851).  
+    > In this example, you cannot use \u0022 because you cannot use a universal character name that designates a character in the basic character set. Otherwise, you produce C3851. For more information, see [Compiler Error C3851](/cpp/error-messages/compiler-errors-2/compiler-error-c3851).  
   
      -or-  
   
-3.  You can also define a constant for the character, and use it where needed.  
+3. You can also define a constant for the character, and use it where needed.  
   
     ```vb  
     Const quote As String = """"  
@@ -83,12 +83,13 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.TextBox>
 - <xref:Microsoft.VisualBasic.ControlChars.Quote>
-- [TextBox Control Overview](../../../../docs/framework/winforms/controls/textbox-control-overview-windows-forms.md)
-- [How to: Control the Insertion Point in a Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)
-- [How to: Create a Password Text Box with the Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-create-a-password-text-box-with-the-windows-forms-textbox-control.md)
-- [How to: Create a Read-Only Text Box](../../../../docs/framework/winforms/controls/how-to-create-a-read-only-text-box-windows-forms.md)
-- [How to: Select Text in the Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-select-text-in-the-windows-forms-textbox-control.md)
-- [How to: View Multiple Lines in the Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-view-multiple-lines-in-the-windows-forms-textbox-control.md)
-- [TextBox Control](../../../../docs/framework/winforms/controls/textbox-control-windows-forms.md)
+- [TextBox Control Overview](textbox-control-overview-windows-forms.md)
+- [How to: Control the Insertion Point in a Windows Forms TextBox Control](how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)
+- [How to: Create a Password Text Box with the Windows Forms TextBox Control](how-to-create-a-password-text-box-with-the-windows-forms-textbox-control.md)
+- [How to: Create a Read-Only Text Box](how-to-create-a-read-only-text-box-windows-forms.md)
+- [How to: Select Text in the Windows Forms TextBox Control](how-to-select-text-in-the-windows-forms-textbox-control.md)
+- [How to: View Multiple Lines in the Windows Forms TextBox Control](how-to-view-multiple-lines-in-the-windows-forms-textbox-control.md)
+- [TextBox Control](textbox-control-windows-forms.md)

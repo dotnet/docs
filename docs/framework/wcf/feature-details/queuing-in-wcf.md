@@ -15,11 +15,11 @@ This section describes how to use queued communication in Windows Communication 
   
  Caveats about queued binding in WCF include:  
   
--   All service operations must be one-way because the default queued binding in WCF does not support duplex communication using queues. A two-way communication sample ([Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md)) illustrates how to use two one-way contracts to implement duplex communication using queues.  
+- All service operations must be one-way because the default queued binding in WCF does not support duplex communication using queues. A two-way communication sample ([Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md)) illustrates how to use two one-way contracts to implement duplex communication using queues.  
   
--   To generate a WCF client using metadata exchange requires an additional HTTP endpoint on the service so that it can be queried directly to generate the WCF client and obtain binding information to appropriately configure queued communication.  
+- To generate a WCF client using metadata exchange requires an additional HTTP endpoint on the service so that it can be queried directly to generate the WCF client and obtain binding information to appropriately configure queued communication.  
   
--   Based on the queued binding, extra configuration outside of WCF is required. For example, the <xref:System.ServiceModel.NetMsmqBinding> class that is shipped with WCF requires you to configure the bindings as well as minimally configure Message Queuing (MSMQ).  
+- Based on the queued binding, extra configuration outside of WCF is required. For example, the <xref:System.ServiceModel.NetMsmqBinding> class that is shipped with WCF requires you to configure the bindings as well as minimally configure Message Queuing (MSMQ).  
   
  The following sections describe the specific queued bindings shipped with WCF, which are based on MSMQ.  
   
@@ -42,14 +42,14 @@ This section describes how to use queued communication in Windows Communication 
 #### ExactlyOnce and Durable Properties  
  The `ExactlyOnce` and `Durable` properties affect how messages are transferred between queues:  
   
--   `ExactlyOnce`: When set to `true` (the default), the queued channel ensures that the message, if delivered, is not duplicated. It also ensures that the message is not lost. If the message cannot be delivered, or the message Time-To Live expires before the message can be delivered, the failed message along with the delivery failure reason is recorded in a dead-letter queue. When set to `false`, the queued channel makes an effort to transfer the message. In this case, you can optionally choose a dead-letter queue.  
+- `ExactlyOnce`: When set to `true` (the default), the queued channel ensures that the message, if delivered, is not duplicated. It also ensures that the message is not lost. If the message cannot be delivered, or the message Time-To Live expires before the message can be delivered, the failed message along with the delivery failure reason is recorded in a dead-letter queue. When set to `false`, the queued channel makes an effort to transfer the message. In this case, you can optionally choose a dead-letter queue.  
   
--   `Durable:` When set to `true` (the default), the queued channel ensures that MSMQ stores the message durably on disk. Thus, if the MSMQ service were to stop and restart, the messages on disk is transferred to the target queue or delivered to the service. When set to `false`, the messages are stored in volatile store and are lost on stopping and restarting the MSMQ service.  
+- `Durable:` When set to `true` (the default), the queued channel ensures that MSMQ stores the message durably on disk. Thus, if the MSMQ service were to stop and restart, the messages on disk is transferred to the target queue or delivered to the service. When set to `false`, the messages are stored in volatile store and are lost on stopping and restarting the MSMQ service.  
   
  For `ExactlyOnce` reliable transfer, MSMQ requires the queue to be transactional. Also, MSMQ requires a transaction to read from a transactional queue. As such, when you use the `NetMsmqBinding`, remember that a transaction is required to send or receive messages when `ExactlyOnce` is set to `true`. Similarly, MSMQ requires the queue to be non-transactional for best-effort assurances, such as when `ExactlyOnce` is `false` and for volatile messaging. Thus, when setting `ExactlyOnce` to `false` or durable to `false`, you cannot send or receive using a transaction.  
   
 > [!NOTE]
->  Ensure that the correct queue (transactional or non-transactional) is created based on settings in the bindings. If `ExactlyOnce` is `true`, use a transactional queue; otherwise, use a non-transactional queue.  
+> Ensure that the correct queue (transactional or non-transactional) is created based on settings in the bindings. If `ExactlyOnce` is `true`, use a transactional queue; otherwise, use a non-transactional queue.  
   
 #### Dead-Letter Queue Properties  
  The dead-letter queue is used to store messages that fail delivery. The user can write compensating logic that reads messages out of the dead-letter queue.  
@@ -60,9 +60,9 @@ This section describes how to use queued communication in Windows Communication 
   
  The binding has two properties of interest:  
   
--   `DeadLetterQueue`: This property is an enumeration that indicates whether a dead-letter queue is requested. The enumeration also contains the kind of dead-letter queue, if one is requested. The values are `None`, `System`, and `Custom`. For more information about the interpretation of these properties, see [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)  
+- `DeadLetterQueue`: This property is an enumeration that indicates whether a dead-letter queue is requested. The enumeration also contains the kind of dead-letter queue, if one is requested. The values are `None`, `System`, and `Custom`. For more information about the interpretation of these properties, see [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)  
   
--   `CustomDeadLetterQueue`: This property is the Uniform Resource Identifier (URI) address of the application-specific dead-letter queue. This is required if `DeadLetterQueue`.`Custom` is chosen.  
+- `CustomDeadLetterQueue`: This property is the Uniform Resource Identifier (URI) address of the application-specific dead-letter queue. This is required if `DeadLetterQueue`.`Custom` is chosen.  
   
 #### Poison Message Handling properties  
  When the service reads messages from the target queue under a transaction, the service may fail to process the message for various reasons. The message is then put back into the queue to be read again. To deal with messages that fail repeatedly, a set of poison-message handling properties can be configured in the binding. There are four properties: `ReceiveRetryCount`, `MaxRetryCycles`, `RetryCycleDelay`, and `ReceiveErrorHandling`. For more information about these properties, see [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md).  
@@ -77,48 +77,49 @@ This section describes how to use queued communication in Windows Communication 
 #### Other Properties  
  In addition to the preceding properties, other MSMQ-specific properties exposed in the binding include:  
   
--   `UseSourceJournal`: A property to indicate that source journaling is turned on. Source journaling is an MSMQ feature that keeps track of messages that have been successfully transmitted from the transmission queue.  
+- `UseSourceJournal`: A property to indicate that source journaling is turned on. Source journaling is an MSMQ feature that keeps track of messages that have been successfully transmitted from the transmission queue.  
   
--   `UseMsmqTracing`: A property to indicate that MSMQ tracing is turned on. MSMQ tracing sends report messages to a report queue each time a message leaves or arrives at a machine hosting an MSMQ queue manager.  
+- `UseMsmqTracing`: A property to indicate that MSMQ tracing is turned on. MSMQ tracing sends report messages to a report queue each time a message leaves or arrives at a machine hosting an MSMQ queue manager.  
   
--   `QueueTransferProtocol`: An enumeration of the protocol to use for queue-to-queue message transfers. MSMQ implements a native queue-to-queue transfer protocol and a SOAP-based protocol called SOAP Reliable Messaging Protocol (SRMP). SRMP is used when using HTTP transport for queue-to-queue transfers. SRMP secure is used when using HTTPS for queue-to-queue transfers.  
+- `QueueTransferProtocol`: An enumeration of the protocol to use for queue-to-queue message transfers. MSMQ implements a native queue-to-queue transfer protocol and a SOAP-based protocol called SOAP Reliable Messaging Protocol (SRMP). SRMP is used when using HTTP transport for queue-to-queue transfers. SRMP secure is used when using HTTPS for queue-to-queue transfers.  
   
--   `UseActiveDirectory`: A Boolean value to indicate whether the Active Directory must be used for queue address resolution. By default, this is off. For more information, see [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
+- `UseActiveDirectory`: A Boolean value to indicate whether the Active Directory must be used for queue address resolution. By default, this is off. For more information, see [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
   
 ### MsmqIntegrationBinding  
  The `MsmqIntegrationBinding` is used when you want a WCF endpoint to communicate with an existing MSMQ application written in C, C++, COM, or System.Messaging APIs.  
   
  The binding properties are the same as for `NetMsmqBinding`. However, the following differences apply:  
   
--   The operation contract for `MsmqIntegrationBinding` is restricted to taking a single parameter of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601> where the type parameter is the body type.  
+- The operation contract for `MsmqIntegrationBinding` is restricted to taking a single parameter of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601> where the type parameter is the body type.  
   
--   Much of MSMQ native message properties are exposed in the <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601> for use.  
+- Much of MSMQ native message properties are exposed in the <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601> for use.  
   
--   To help with serialization and deserialization of the message body, serializers such as XML and ActiveX are provided.  
+- To help with serialization and deserialization of the message body, serializers such as XML and ActiveX are provided.  
   
 ### Sample Code  
  For step by step instructions on how to write WCF services that use MSMQ see the following topics:  
   
--   [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
+- [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
   
--   [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)  
+- [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)  
   
  For a completed code sample illustrating the use of MSMQ in WCF see the following topics:  
   
--   [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)  
+- [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)  
   
--   [Volatile Queued Communication](../../../../docs/framework/wcf/samples/volatile-queued-communication.md)  
+- [Volatile Queued Communication](../../../../docs/framework/wcf/samples/volatile-queued-communication.md)  
   
--   [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md)  
+- [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md)  
   
--   [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)  
+- [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)  
   
--   [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md) 
+- [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md) 
   
--   [SRMP](../../../../docs/framework/wcf/samples/srmp.md)  
+- [SRMP](../../../../docs/framework/wcf/samples/srmp.md)  
   
--   [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)  
+- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)  
   
 ## See also
+
 - [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md)
 - [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)

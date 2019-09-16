@@ -24,16 +24,16 @@ A time-based cache policy defines the freshness of cached entries using the time
 ## Criteria to Determine Freshness of Cached Entries  
  To customize a time-based cache policy, you can specify that one or more of the following criteria be used to determine the freshness of cached entries:  
   
--   Maximum age  
+- Maximum age  
   
--   Maximum staleness  
+- Maximum staleness  
   
--   Minimum freshness  
+- Minimum freshness  
   
--   Cache synchronization date  
+- Cache synchronization date  
   
 > [!NOTE]
->  Using the default time-based cache policy should not be confused with setting a default cache policy for your application. The default time-based policy is a specific policy that can be used at the request or application level. The default cache policy for your application is a policy (location-based or time-based) that takes effect when no policy is set on a request. For details on setting a default cache policy for your application, see <xref:System.Net.WebRequest.DefaultCachePolicy%2A>.  
+> Using the default time-based cache policy should not be confused with setting a default cache policy for your application. The default time-based policy is a specific policy that can be used at the request or application level. The default cache policy for your application is a policy (location-based or time-based) that takes effect when no policy is set on a request. For details on setting a default cache policy for your application, see <xref:System.Net.WebRequest.DefaultCachePolicy%2A>.  
   
 ### Maximum Age  
  The maximum age policy criterion specifies the amount of time a cached copy of a resource can be used. If the cached copy of the resource is older than the amount of time specified, the resource must be revalidated by checking it against the content on the server. If the maximum age would allow the resource to be used after it expires, this criteria is not honored unless a maximum staleness value is also specified.  
@@ -51,11 +51,12 @@ A time-based cache policy defines the freshness of cached entries using the time
   
  The following topics provide information about the effects of combining time-based cache policy criteria:  
   
--   [Cache Policy Interaction—Maximum Age and Maximum Staleness](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-maximum-staleness.md)  
+- [Cache Policy Interaction—Maximum Age and Maximum Staleness](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-maximum-staleness.md)  
   
--   [Cache Policy Interaction—Maximum Age and Minimum Freshness](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-minimum-freshness.md)  
+- [Cache Policy Interaction—Maximum Age and Minimum Freshness](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-minimum-freshness.md)  
   
 ## See also
+
 - [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
 - [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)
 - [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)

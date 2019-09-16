@@ -14,7 +14,7 @@ Constraint type 'type' is not CLS-compliant.
   
 ### To eliminate this warning  
   
-1.  Use a CLS-compliant type for the type constraint.  
+1. Use a CLS-compliant type for the type constraint.  
   
 ## Example  
  The following example generates CS3024 in several locations:  
@@ -51,4 +51,4 @@ public class Test
   
 ## See also
 
-- [Constraints on Type Parameters](../../csharp/programming-guide/generics/constraints-on-type-parameters.md)
+- [Constraints on Type Parameters](../programming-guide/generics/constraints-on-type-parameters.md)

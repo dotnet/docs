@@ -23,7 +23,7 @@ Used in manifest-based ClickOnce deployment scenarios to specify the application
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExecuteApplication(  
     [in] LPCWSTR   pwzAppFullName,  
     [in] DWORD     dwManifestPaths,  
@@ -34,7 +34,7 @@ HRESULT ExecuteApplication(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAppFullName`  
  [in] The full name of the application, as defined for <xref:System.ApplicationIdentity>.  
   
@@ -70,7 +70,7 @@ HRESULT ExecuteApplication(
  The `pReturnValue` output parameter is set to the value returned by the application. If you supply a value of null for `pReturnValue`, `ExecuteApplication` does not fail, but it does not return a value.  
   
 > [!IMPORTANT]
->  Do not call the [Start Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method before calling the `ExecuteApplication` method to activate a manifest-based application. If the `Start` method is called first, the `ExecuteApplication` method call will fail.  
+> Do not call the [Start Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method before calling the `ExecuteApplication` method to activate a manifest-based application. If the `Start` method is called first, the `ExecuteApplication` method call will fail.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -82,6 +82,7 @@ HRESULT ExecuteApplication(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.ActivationContext>
 - <xref:System.AppDomainManager>
 - <xref:System.ApplicationIdentity>

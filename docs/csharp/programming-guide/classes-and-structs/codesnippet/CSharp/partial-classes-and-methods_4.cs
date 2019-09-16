@@ -1,3 +1,0 @@
-        [SerializableAttribute]
-        [ObsoleteAttribute]
-        class Moon { }

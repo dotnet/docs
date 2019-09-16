@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugCode2 Interface1"
+title: "ICorDebugCode2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugCode2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugCode2 Interface1
+# ICorDebugCode2 Interface
+
 Provides methods that extend the capabilities of "ICorDebugCode".  
   
 ## Methods  
@@ -30,7 +31,7 @@ Provides methods that extend the capabilities of "ICorDebugCode".
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

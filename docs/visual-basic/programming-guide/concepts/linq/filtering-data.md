@@ -8,7 +8,7 @@ Filtering refers to the operation of restricting the result set to contain only 
   
  The following illustration shows the results of filtering a sequence of characters. The predicate for the filtering operation specifies that the character must be 'A'.  
   
- ![LINQ Filtering Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_filter.png "LINQ_Filter")  
+ ![Diagram that shows a LINQ filtering operation](./media/filtering-data/linq-filter-operation.png)  
   
  The standard query operator methods that perform selection are listed in the following section.  
   
@@ -44,6 +44,7 @@ MsgBox(sb.ToString())
 ```  
   
 ## See also
+
 - <xref:System.Linq>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md)

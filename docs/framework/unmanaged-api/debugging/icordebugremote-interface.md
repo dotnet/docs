@@ -22,7 +22,7 @@ Provides the ability to launch or attach a managed debugger to a remote target p
   
 ## Syntax  
   
-```  
+```cpp  
 interface ICorDebugRemote : IUnknown  
 {  
     HRESULT CreateProcessEx  
@@ -72,6 +72,7 @@ interface ICorDebugRemote : IUnknown
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 

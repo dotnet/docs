@@ -10,9 +10,8 @@ An argument supplied for `Per`, which must be a `Double` specifying payment peri
   
 ## To correct this error  
   
--   Ensure that the argument falls within the valid range.  
+- Ensure that the argument falls within the valid range.  
   
 ## See also
-
 
 - [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

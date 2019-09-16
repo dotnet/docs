@@ -9,13 +9,13 @@ ms.assetid: 98daef1f-15d4-483e-985c-d78ea3abe8c8
 # Initialization Expressions
 An initialization expression initializes a new object. Most initialization expressions are supported, including most new C# 3.0 and Visual Basic 9.0 initialization expressions. The following types can be initialized and returned by a LINQ to Entities query:  
   
--   A collection of zero or more typed entity objects or a projection of complex types that are defined in the conceptual model.  
+- A collection of zero or more typed entity objects or a projection of complex types that are defined in the conceptual model.  
   
--   CLR types supported by the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)].  
+- CLR types supported by the Entity Framework.
   
--   Inline collections.  
+- Inline collections.  
   
--   Anonymous types.  
+- Anonymous types.  
   
  Anonymous type initialization is shown in the following example in query expression syntax:  
   
@@ -41,4 +41,5 @@ An initialization expression initializes a new object. Most initialization expre
  [!code-vb[DP L2E Conceptual Examples#TypeInitialization_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#typeinitialization_mq)]  
   
 ## See also
-- [Expressions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)
+
+- [Expressions in LINQ to Entities Queries](expressions-in-linq-to-entities-queries.md)

@@ -17,11 +17,12 @@ You have attempted to declare a constant as a class, structure, or array type, o
   
 ## To correct this error  
   
-1.  Declare the constant as an intrinsic or `Enum` type.  
+1. Declare the constant as an intrinsic or `Enum` type.  
   
-2.  A constant can also be a special value such as `True`, `False`, or `Nothing`. The compiler considers these predefined values to be of the appropriate intrinsic type.  
+2. A constant can also be a special value such as `True`, `False`, or `Nothing`. The compiler considers these predefined values to be of the appropriate intrinsic type.  
   
 ## See also
+
 - [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
 - [Data Types](../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [Data Types](../../../visual-basic/language-reference/data-types/index.md)

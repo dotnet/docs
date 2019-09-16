@@ -15,8 +15,9 @@ The statement cannot appear at the level of a namespace. The only declarations a
   
 ## To correct this error  
   
--   Move the statement to a location within a module, class, interface, structure, enumeration, or delegate definition.  
+- Move the statement to a location within a module, class, interface, structure, enumeration, or delegate definition.  
   
 ## See also
+
 - [Scope in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
 - [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)

@@ -23,13 +23,13 @@ Notifies the host that the common language runtime (CLR) has finished using the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReleasedVirtualAddressSpace(  
     [in] LPVOID startAddress  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `startAddress`  
  [in] Pointer to the starting address of the memory to be released.  
   
@@ -46,4 +46,5 @@ HRESULT ReleasedVirtualAddressSpace(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

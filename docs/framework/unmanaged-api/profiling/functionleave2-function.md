@@ -22,7 +22,7 @@ Notifies the profiler that a function is about to return to the caller and provi
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionLeave2 (  
     [in]  FunctionID                        funcId,  
     [in]  UINT_PTR                          clientData,  
@@ -31,7 +31,7 @@ void __stdcall FunctionLeave2 (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcId`  
  [in] The identifier of the function that is returning.  
   
@@ -55,9 +55,9 @@ void __stdcall FunctionLeave2 (
   
  The execution engine does not save any registers before calling this function.  
   
--   On entry, you must save all registers that you use, including those in the floating-point unit (FPU).  
+- On entry, you must save all registers that you use, including those in the floating-point unit (FPU).  
   
--   On exit, you must restore the stack by popping off all the parameters that were pushed by its caller.  
+- On exit, you must restore the stack by popping off all the parameters that were pushed by its caller.  
   
  The implementation of `FunctionLeave2` should not block because it will delay garbage collection. The implementation should not attempt a garbage collection because the stack may not be in a garbage collection-friendly state. If a garbage collection is attempted, the runtime will block until `FunctionLeave2` returns.  
   
@@ -73,6 +73,7 @@ void __stdcall FunctionLeave2 (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [FunctionEnter2 Function](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)
 - [FunctionTailcall2 Function](../../../../docs/framework/unmanaged-api/profiling/functiontailcall2-function.md)
 - [SetEnterLeaveFunctionHooks2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-setenterleavefunctionhooks2-method.md)

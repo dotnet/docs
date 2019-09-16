@@ -8,7 +8,7 @@ Concatenation refers to the operation of appending one sequence to another.
   
  The following illustration depicts a concatenation operation on two sequences of characters.  
   
- ![Graphic showing concatenation of two sequences.](../../../../csharp/programming-guide/concepts/linq/media/concat.png "Concat")  
+ ![Graphic showing concatenation of two sequences.](./media/concatenation-operations/concatenation-two-sequences.png)  
   
  The standard query operator methods that perform concatenation are listed in the following section.  
   
@@ -21,5 +21,5 @@ Concatenation refers to the operation of appending one sequence to another.
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [How to: Combine and Compare String Collections (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [How to: Combine and Compare String Collections (LINQ) (C#)](./how-to-combine-and-compare-string-collections-linq.md)

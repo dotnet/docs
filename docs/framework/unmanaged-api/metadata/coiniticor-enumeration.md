@@ -22,7 +22,7 @@ Specifies constants used by [CoInitializeCor](../../../../docs/framework/unmanag
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum tagCOINITCOR  
 {  
     COINITCOR = 0x0  
@@ -45,4 +45,5 @@ typedef enum tagCOINITCOR
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

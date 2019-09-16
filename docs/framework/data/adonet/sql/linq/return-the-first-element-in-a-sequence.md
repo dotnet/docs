@@ -10,7 +10,7 @@ ms.assetid: ccdc3777-b2c2-44e3-a627-abef8d79a555
 Use the <xref:System.Linq.Enumerable.First%2A> operator to return the first element in a sequence. Queries that use <xref:System.Linq.Enumerable.First%2A> are executed immediately.  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the <xref:System.Linq.Enumerable.Last%2A> operator.  
+> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the <xref:System.Linq.Enumerable.Last%2A> operator.  
   
 ## Example  
  The following code finds the first `Shipper` in a table:  
@@ -31,5 +31,6 @@ Use the <xref:System.Linq.Enumerable.First%2A> operator to return the first elem
  [!code-vb[DLinqQueryExamples#15](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#15)]  
   
 ## See also
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
-- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+
+- [Query Examples](query-examples.md)
+- [Downloading Sample Databases](downloading-sample-databases.md)

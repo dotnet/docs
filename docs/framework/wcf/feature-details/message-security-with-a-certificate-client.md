@@ -7,12 +7,12 @@ dev_langs:
 ms.assetid: 99770573-c815-4428-a38c-e4335c8bd7ce
 ---
 # Message Security with a Certificate Client
-The following scenario shows a Windows Communication Foundation (WCF) client and service secured using message security mode. Both the client and the service are authenticated with certificates. For more information, see [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md).  
+The following scenario shows a Windows Communication Foundation (WCF) client and service secured using message security mode. Both the client and the service are authenticated with certificates. For more information, see [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md).
+
+ ![Screenshot that shows a client with certificate.](./media/message-security-with-a-certificate-client/client-with-certificate.gif)  
   
  For a sample application, see [Message Security Certificate](../../../../docs/framework/wcf/samples/message-security-certificate.md).  
-  
- ![Client with certificate](../../../../docs/framework/wcf/feature-details/media/clientwithcertificate.gif "ClientWithCertificate")  
-  
+
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
@@ -27,9 +27,9 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 ## Service  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone service using the code with no configuration.  
+- Create a stand-alone service using the code with no configuration.  
   
--   Create a service using the supplied configuration, but do not define any endpoints.  
+- Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
  The following code shows how to create a service endpoint that uses message security to establish a secure context.  
@@ -59,7 +59,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
                name="ServiceModel.Calculator">  
         <endpoint address="http://localhost/Calculator"   
                   binding="wsHttpBinding"  
-                  bindingConfiguration="MessageAndCerficiateClient"   
+                  bindingConfiguration="MessageAndCertificateClient"   
                   name="SecuredByClientCertificate"  
                   contract="ServiceModel.ICalculator" />  
       </service>  
@@ -81,9 +81,9 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 ## Client  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone client using the code (and client code).  
+- Create a stand-alone client using the code (and client code).  
   
--   Create a client that does not define any endpoint addresses. Instead, use the client constructor that takes the configuration name as an argument. For example:  
+- Create a client that does not define any endpoint addresses. Instead, use the client constructor that takes the configuration name as an argument. For example:  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -138,6 +138,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 ```  
   
 ## See also
+
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

@@ -18,6 +18,7 @@ ADO.NET 2.0 introduced enhanced type support for the `DataSet` through the  <xre
  [!code-vb[DataWorks SqlTypes.GetTypeAW#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlTypes.GetTypeAW/VB/source.vb#1)]  
   
 ## See also
-- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
-- [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md)
+- [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md)
+- [ADO.NET Overview](../ado-net-overview.md)

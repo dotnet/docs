@@ -11,7 +11,7 @@ More complicated WordprocessingML documents have paragraphs that are formatted w
  When accessing packages, it is important that you do so through the relationships between parts, rather than using an arbitrary path. This issue is beyond the scope of the Manipulating Content in a WordprocessingML Document tutorial, but the example programs that are included in this tutorial demonstrate the correct approach.  
   
 ## A Document that Uses Styles  
- The WordML example presented in the [Shape of WordprocessingML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md) topic is a very simple one. The following document is more complicated: It has paragraphs that are formatted with styles. The easiest way to see the XML that makes up an Office Open XML document is to run the [Example that Outputs Office Open XML Document Parts (C#)](../../../../csharp/programming-guide/concepts/linq/example-that-outputs-office-open-xml-document-parts.md).  
+ The WordML example presented in the [Shape of WordprocessingML Documents (C#)](./shape-of-wordprocessingml-documents.md) topic is a very simple one. The following document is more complicated: It has paragraphs that are formatted with styles. The easiest way to see the XML that makes up an Office Open XML document is to run the [Example that Outputs Office Open XML Document Parts (C#)](./example-that-outputs-office-open-xml-document-parts.md).  
   
  In the following document, the first paragraph has the style `Heading1`. There are a number of paragraphs that have the default style. There are also a number of paragraphs that have the style `Code`. Because of this relative complexity, this is a more interesting document to parse with LINQ to XML.  
   
@@ -130,7 +130,4 @@ More complicated WordprocessingML documents have paragraphs that are formatted w
   </w:body>  
 </w:document>  
 ```  
-  
-## See also
-
-- [Details of Office Open XML WordprocessingML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+ 

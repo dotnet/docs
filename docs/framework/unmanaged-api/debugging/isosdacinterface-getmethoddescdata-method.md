@@ -24,7 +24,7 @@ Gets the data for the given MethodDesc pointer.
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetMethodDescData(
     CLRDATA_ADDRESS            methodDesc,
     CLRDATA_ADDRESS            ip,
@@ -35,24 +35,24 @@ HRESULT GetMethodDescData(
 );
 ```
 
-### Parameters
+## Parameters
 
-`methodDesc`
+`methodDesc`\
 [in] The address of the MethodDesc.
 
-`ip`
+`ip`\
 [in] The IP address of the method.
 
-`data`
+`data`\
 [out] The data associated with the MethodDesc as returned from the internal APIs.
 
-`cRevertedRejitVersions`
+`cRevertedRejitVersions`\
 [out] The number of reverted rejit versions.
 
-`rgRevertedRejitData`
+`rgRevertedRejitData`\
 [out] The data associated with the reverted rejit versions as returned from the internal APIs.
 
-`pcNeededRevertedRejitData`
+`pcNeededRevertedRejitData`\
 [out] The number of bytes required to store the data associated with the reverted ReJit versions.
 
 ## Remarks
@@ -68,5 +68,5 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [ISOSDacInterface Interface](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md)
+- [Debugging](index.md)
+- [ISOSDacInterface Interface](isosdacinterface-interface.md)

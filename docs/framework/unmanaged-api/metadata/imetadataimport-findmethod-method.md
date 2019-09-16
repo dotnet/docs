@@ -23,7 +23,7 @@ Gets a pointer to the MethodDef token for the method that is enclosed by the spe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindMethod (  
    [in]  mdTypeDef          td,  
    [in]  LPCWSTR            szName,   
@@ -33,7 +33,7 @@ HRESULT FindMethod (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The `mdTypeDef` token for the type (a class or interface) that encloses the member to search for. If this value is `mdTokenNil`, then the lookup is done for a global function.  
   
@@ -66,6 +66,7 @@ HRESULT FindMethod (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - <xref:System.Reflection.MethodInfo>
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

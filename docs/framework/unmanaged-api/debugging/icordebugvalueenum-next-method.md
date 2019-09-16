@@ -23,7 +23,7 @@ Gets the specified number of "ICorDebugValue" instances from the enumeration, st
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in]  ULONG  celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  
@@ -32,7 +32,7 @@ HRESULT Next (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of `ICorDebugValue` instances to be retrieved.  
   
@@ -52,5 +52,3 @@ HRESULT Next (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-
-

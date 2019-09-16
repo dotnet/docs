@@ -24,19 +24,19 @@ Enumerates the modules of this process.
 
 ## Syntax
 
-```
+```cpp
 HRESULT EnumModule(
     [in, out] CLRDATA_ENUM  *handle,
     [out] IXCLRDataModule  **mod
 );
 ```
 
-### Parameters
+## Parameters
 
-`handle`
+`handle`\
 [in, out] A handle for enumerating the modules.
 
-`mod`
+`mod`\
 [out] The enumerated module.
 
 ## Remarks
@@ -52,7 +52,7 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## See also
 
-- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)
-- [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)
+- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
+- [Debugging](index.md)
+- [IXCLRDataModule Interface](ixclrdatamodule-interface.md)
+- [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)

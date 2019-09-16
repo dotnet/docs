@@ -23,7 +23,7 @@ Gets the signature of this variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSignature(  
     [in]  ULONG32  cSig,  
     [out] ULONG32  *pcSig,  
@@ -31,7 +31,7 @@ HRESULT GetSignature(
         length_is(*pcSig)] BYTE sig[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cSig`  
  [in] The length of the buffer pointed to by the `sig` parameter.  
   
@@ -48,4 +48,5 @@ HRESULT GetSignature(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedVariable Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)

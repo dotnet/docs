@@ -23,7 +23,7 @@ Gets a hash of the assembly at the specified memory address, using the specified
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromBlob (  
     [in]  BYTE    *pbBlob,  
     [in]  DWORD   cchBlob,  
@@ -34,7 +34,7 @@ HRESULT GetHashFromBlob (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbBlob`  
  [in] A pointer to the address of the memory block to be hashed.  
   
@@ -66,4 +66,5 @@ HRESULT GetHashFromBlob (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

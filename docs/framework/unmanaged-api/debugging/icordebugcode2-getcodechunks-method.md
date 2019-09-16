@@ -23,7 +23,7 @@ Gets the chunks of code that this code object is composed of.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeChunks (  
     [in]  ULONG32     cbufSize,  
     [out] ULONG32     *pcnumChunks,  
@@ -32,7 +32,7 @@ HRESULT GetCodeChunks (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbufSize`  
  [in] Size of the `chunks` array.  
   
@@ -55,4 +55,3 @@ HRESULT GetCodeChunks (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-

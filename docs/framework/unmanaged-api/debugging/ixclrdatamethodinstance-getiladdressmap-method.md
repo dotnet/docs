@@ -24,7 +24,7 @@ Gets the IL to address mapping information.
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetILAddressMap(
     [in] ULONG32                                   mapLen,
     [out] ULONG32                                 *mapNeeded,
@@ -32,15 +32,15 @@ HRESULT GetILAddressMap(
 );
 ```
 
-### Parameters
+## Parameters
 
-`mapLen`
+`mapLen`\
 [in] The length of the provided maps array.
 
-`mapNeeded`
+`mapNeeded`\
 [out] The number of map entries that the method needs.
 
-`maps`
+`maps`\
 [out, size_is(mapLen)] The array for storing the map entries.
 
 ## Remarks
@@ -56,5 +56,5 @@ The provided method is part of the `IXCLRDataMethodInstance` interface and corre
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataMethodInstance Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md)
+- [Debugging](index.md)
+- [IXCLRDataMethodInstance Interface](ixclrdatamethodinstance-interface.md)

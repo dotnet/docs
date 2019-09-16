@@ -23,13 +23,13 @@ Gets an enumerator for the processes that are being debugged.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateProcesses (  
     [out] ICorDebugProcessEnum      **ppProcess  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppProcess`  
  A pointer to the address of an ICorDebugProcessEnum object that is the enumerator for the processes being debugged.  
   
@@ -43,4 +43,5 @@ HRESULT EnumerateProcesses (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

@@ -23,7 +23,7 @@ This method has not been implemented in the current version of the .NET Framewor
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromRVA(  
     [in]  CORDB_ADDRESS      rva,  
     [out] ICorDebugFunction  **ppFunction  
@@ -34,5 +34,3 @@ HRESULT GetFunctionFromRVA(
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also
-
-

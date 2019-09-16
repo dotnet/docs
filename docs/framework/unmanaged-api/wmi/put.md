@@ -2,59 +2,60 @@
 title: Put function (Unmanaged API Reference)
 description: The Put function assigns a new value to a named property.
 ms.date: "11/06/2017"
-api_name: 
+api_name:
   - "Put"
-api_location: 
+api_location:
   - "WMINet_Utils.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "Put"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Put function [.NET WMI and performance counters]"
-topic_type: 
+topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # Put function
+
 Sets a named property to a new value.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
-## Syntax  
-  
-```  
+
+## Syntax
+
+```cpp
 HRESULT Put (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr, 
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr,
    [in] LPCWSTR           wszName,
    [in] LONG              lFlags,
    [in] VARIANT*          pVal,
    [in] CIMTYPE           vtType
-); 
-```  
+);
+```
 
 ## Parameters
 
-`vFunc`  
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`  
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`wszName`  
+`wszName`\
 [in] The name of the property. This parameter cannot be `null`.
 
-`lFlags`  
+`lFlags`\
 [in] Reserved. This parameter must be 0.
 
-`pVal`   
-[in] A pointer to a valid `VARIANT` that becomes the new property value. If `pVal` is `null` or points to a `VARIANT` of type `VT_NULL`, the property is set to `null`. 
+`pVal`\
+[in] A pointer to a valid `VARIANT` that becomes the new property value. If `pVal` is `null` or points to a `VARIANT` of type `VT_NULL`, the property is set to `null`.
 
-`vtType`  
+`vtType`\
 [in] The type of `VARIANT` pointed to by `pVal`. See the [Remarks](#remarks) section for more information.
- 
 
 ## Return value
 
@@ -68,7 +69,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 |`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
 | `WBEM_E_TYPE_MISMATCH` | 0x80041005 | For instances: Indicates that `pVal` points to a `VARIANT` of an incorrect type for the property. <br/> For class definitions: The property already exists in the parent class, and the new COM type is different from the old COM type. |
 |`WBEM_S_NO_ERROR` | 0 | The function call was successful. |
-  
+
 ## Remarks
 
 This function wraps a call to the [IWbemClassObject::Put](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-put) method.
@@ -79,20 +80,22 @@ The `__CLASS` system property is only writable during class creation, when it ma
 
 A user cannot create properties with names that begin or end with an underscore ("_"). This is reserved for system classes and properties.
 
-If the property set by the `Put` function exists in the parent class, the default value of the property is changed unless the property type does not match the parent class type. If the property does not exist and it is not a type mismatch, the property is ceated.
+If the property set by the `Put` function exists in the parent class, the default value of the property is changed unless the property type does not match the parent class type. If the property does not exist and it is not a type mismatch, the property is created.
 
-Use the `vtType` parameter only when creating new properties in a CIM class definition and `pVal` is `null` or points to a `VARIANT` of type `VT_NULL`. In this case, the `vType` parameter specifies the CIM type of the property. In every other case, `vtType` must be 0. `vtType` must also be 0 if the underlying object is an instance (even if `Val` is `null`) because the type of the property is fixed and cannot be changed.   
+Use the `vtType` parameter only when creating new properties in a CIM class definition and `pVal` is `null` or points to a `VARIANT` of type `VT_NULL`. In this case, the `vType` parameter specifies the CIM type of the property. In every other case, `vtType` must be 0. `vtType` must also be 0 if the underlying object is an instance (even if `Val` is `null`) because the type of the property is fixed and cannot be changed.
 
 ## Example
 
 For an example, see the [IWbemClassObject::Put](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-put) method.
 
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** WMINet_Utils.idl  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
+## Requirements
+
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+**Header:** WMINet_Utils.idl
+
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

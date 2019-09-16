@@ -23,13 +23,13 @@ Gets a value that indicates whether the supplied pointer refers to an assembly i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsAssemblyReferenceInList (  
     [in] IUnknown *pName  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pName`  
  [in] An interface pointer to the assembly for which to search. Valid values are of type `IAssemblyName` or `IReferenceIdentity`.  
   
@@ -51,6 +51,7 @@ HRESULT IsAssemblyReferenceInList (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
 - [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)

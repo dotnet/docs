@@ -8,10 +8,10 @@ Declares a XAML property in markup.
   
 ## XAML Object Element Usage  
   
-```  
+```xaml  
 <object x:Class="className">  
   <x:Members>  
-    <x:Property Name="propertyName" Type="propertyType/>  
+    <x:Property Name="propertyName" Type="propertyType"/>  
     additionalProperties  
   </x:Members>  
 </object>  
@@ -33,4 +33,4 @@ Declares a XAML property in markup.
  To support a practical usage of `x:Members` as a means to specify member definitions in markup, the members must be associated with a class that can be modified. The intended model is that `x:Members` exists as a member of a type that specifies an `x:Class`. However, the mechanism for associating types and members or for producing dynamic member definitions is not supported at the .NET Framework XAML Services level. This is left to individual frameworks that have application models that support member definitions from XAML. Typically, MSBUILD build actions that markup-compile the XAML and either integrate it with code-behind or produce pure from-XAML assemblies are needed to support that feature.  
   
 ## x:Property for Windows Workflow Foundation  
- For Windows Workflow Foundation, `x:Property` defines the members of a custom activity composed entirely in XAML, or XAML –defined dynamic members for an activity designer with code-behind. `x:Class` must also be specified on the root element of the XAML production. This is not a requirement at the .NET Framework XAML Services level, but becomes a requirement when the XAML production is loaded by the MSBUILD build actions that support custom activities and Windows Workflow Foundation XAML in general. Windows Workflow Foundation does not use the pure XAML type name as its intended value for the `x:Property` `Type` attribute, and instead uses a convention that is not documented here. For more information, see [Dynamic Activity Creation](https://msdn.microsoft.com/library/dd807392.aspx).
+ For Windows Workflow Foundation, `x:Property` defines the members of a custom activity composed entirely in XAML, or XAML –defined dynamic members for an activity designer with code-behind. `x:Class` must also be specified on the root element of the XAML production. This is not a requirement at the .NET Framework XAML Services level, but becomes a requirement when the XAML production is loaded by the MSBUILD build actions that support custom activities and Windows Workflow Foundation XAML in general. Windows Workflow Foundation does not use the pure XAML type name as its intended value for the `x:Property` `Type` attribute, and instead uses a convention that is not documented here. For more information, see [DynamicActivity Creation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd807392(v=vs.100)).

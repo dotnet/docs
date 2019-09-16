@@ -13,50 +13,50 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
 ## How Stream Upgrades Work  
  There are four components to the stream upgrade process.  
   
-1.  An upgrade stream *Initiator* begins the process: at run-time it can initiate a request to the other end of its connection to upgrade the channel transport layer.  
+1. An upgrade stream *Initiator* begins the process: at run-time it can initiate a request to the other end of its connection to upgrade the channel transport layer.  
   
-2.  An upgrade stream *Acceptor* carries out the upgrade: at run-time it receives the upgrade request from the other machine, and if possible, accepts the upgrade.  
+2. An upgrade stream *Acceptor* carries out the upgrade: at run-time it receives the upgrade request from the other machine, and if possible, accepts the upgrade.  
   
-3.  An upgrade *Provider* creates the *Initiator* on the client and the *Acceptor* on the server.  
+3. An upgrade *Provider* creates the *Initiator* on the client and the *Acceptor* on the server.  
   
-4.  A stream upgrade *Binding Element* is added to the bindings on the service and the client, and creates the provider at runtime.  
+4. A stream upgrade *Binding Element* is added to the bindings on the service and the client, and creates the provider at runtime.  
   
  Note that in the case of multiple upgrades, the Initiator and Acceptor encapsulate state machines to enforce which upgrade transitions are valid for each Initiation.  
   
 ## How to Implement a Stream Upgrade  
  Windows Communication Foundation (WCF) provides four `abstract` classes that you can implement:  
   
--   <xref:System.ServiceModel.Channels.StreamUpgradeInitiator?displayProperty=nameWithType>  
+- <xref:System.ServiceModel.Channels.StreamUpgradeInitiator?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor?displayProperty=nameWithType>  
+- <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Channels.StreamUpgradeProvider?displayProperty=nameWithType>  
+- <xref:System.ServiceModel.Channels.StreamUpgradeProvider?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement?displayProperty=nameWithType>  
+- <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement?displayProperty=nameWithType>  
   
  To implement a custom stream upgrade, do the following. This procedure implements a minimal stream upgrade process on both the client and server machines.  
   
-1.  Create a class that implements <xref:System.ServiceModel.Channels.StreamUpgradeInitiator>.  
+1. Create a class that implements <xref:System.ServiceModel.Channels.StreamUpgradeInitiator>.  
   
-    1.  Override the <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.InitiateUpgrade%2A> method to take in the stream to be upgraded, and return the upgraded stream. This method works synchronously; there are analogous methods to initiate the upgrade asynchronously.  
+    1. Override the <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.InitiateUpgrade%2A> method to take in the stream to be upgraded, and return the upgraded stream. This method works synchronously; there are analogous methods to initiate the upgrade asynchronously.  
   
-    2.  Override the <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.GetNextUpgrade%2A> method to check for additional upgrades.  
+    2. Override the <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.GetNextUpgrade%2A> method to check for additional upgrades.  
   
-2.  Create a class that implements <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor>.  
+2. Create a class that implements <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor>.  
   
-    1.  Override the <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.AcceptUpgrade%2A> method to take in the stream to be upgraded, and return the upgraded stream. This method works synchronously; there are analogous methods to accept the upgrade asynchronously.  
+    1. Override the <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.AcceptUpgrade%2A> method to take in the stream to be upgraded, and return the upgraded stream. This method works synchronously; there are analogous methods to accept the upgrade asynchronously.  
   
-    2.  Override the <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade%2A> method to determine if the upgrade requested is supported by this upgrade acceptor at this point in the upgrade process.  
+    2. Override the <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade%2A> method to determine if the upgrade requested is supported by this upgrade acceptor at this point in the upgrade process.  
   
-3.  Create a class the implements <xref:System.ServiceModel.Channels.StreamUpgradeProvider>. Override the <xref:System.ServiceModel.Channels.StreamUpgradeProvider.CreateUpgradeAcceptor%2A> and the <xref:System.ServiceModel.Channels.StreamUpgradeProvider.CreateUpgradeInitiator%2A> methods to return instances of the acceptor and initiator defined in steps 2 and 1.  
+3. Create a class the implements <xref:System.ServiceModel.Channels.StreamUpgradeProvider>. Override the <xref:System.ServiceModel.Channels.StreamUpgradeProvider.CreateUpgradeAcceptor%2A> and the <xref:System.ServiceModel.Channels.StreamUpgradeProvider.CreateUpgradeInitiator%2A> methods to return instances of the acceptor and initiator defined in steps 2 and 1.  
   
-4.  Create a class that implements <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement>.  
+4. Create a class that implements <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement>.  
   
-    1.  Override the <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement.BuildClientStreamUpgradeProvider%2A> method on the client and the <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement.BuildServerStreamUpgradeProvider%2A> method on the service.  
+    1. Override the <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement.BuildClientStreamUpgradeProvider%2A> method on the client and the <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement.BuildServerStreamUpgradeProvider%2A> method on the service.  
   
-    2.  Override the <xref:System.ServiceModel.Channels.BindingElement.BuildChannelFactory%2A> method on the client and the <xref:System.ServiceModel.Channels.BindingElement.BuildChannelListener%2A> method on the service to add the upgrade Binding Element to <xref:System.ServiceModel.Channels.BindingContext.BindingParameters%2A>.  
+    2. Override the <xref:System.ServiceModel.Channels.BindingElement.BuildChannelFactory%2A> method on the client and the <xref:System.ServiceModel.Channels.BindingElement.BuildChannelListener%2A> method on the service to add the upgrade Binding Element to <xref:System.ServiceModel.Channels.BindingContext.BindingParameters%2A>.  
   
-5.  Add the new stream upgrade binding element to bindings on the server and client machines.  
+5. Add the new stream upgrade binding element to bindings on the server and client machines.  
   
 ## Security Upgrades  
  Adding a security upgrade is a specialized version of the general stream upgrade process.  
@@ -65,11 +65,11 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
   
  For security scenarios not met by the above two binding elements, three security-related `abstract` classes are derived from the above initiator, acceptor and provider base classes:  
   
-1.  <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator?displayProperty=nameWithType>  
+1. <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator?displayProperty=nameWithType>  
   
-2.  <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor?displayProperty=nameWithType>  
+2. <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor?displayProperty=nameWithType>  
   
-3.  <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider?displayProperty=nameWithType>  
+3. <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider?displayProperty=nameWithType>  
   
  The process of implementing a security stream upgrade is the same as before, with the difference that you would derive from these three classes. Override the additional properties in these classes to supply security information to the runtime.  
   
@@ -78,15 +78,16 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
   
  Alternatively, one upgrade provider can support multiple upgrades. For example, you might want to implement a custom stream upgrade provider that supports both security and compression. Do the following steps:  
   
-1.  Subclass <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider> to write the provider class that creates the Initiator and Acceptor.  
+1. Subclass <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider> to write the provider class that creates the Initiator and Acceptor.  
   
-2.  Subclass the <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator> making sure to override the <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.GetNextUpgrade%2A> method to return the content types for the compression stream and the secure stream in order.  
+2. Subclass the <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator> making sure to override the <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.GetNextUpgrade%2A> method to return the content types for the compression stream and the secure stream in order.  
   
-3.  Subclass the <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor> that understands the custom content types in its <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade%2A> method.  
+3. Subclass the <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor> that understands the custom content types in its <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade%2A> method.  
   
-4.  The stream will be upgraded after each call to <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.GetNextUpgrade%2A> and <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade%2A>.  
+4. The stream will be upgraded after each call to <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.GetNextUpgrade%2A> and <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade%2A>.  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.StreamUpgradeInitiator>
 - <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator>
 - <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor>

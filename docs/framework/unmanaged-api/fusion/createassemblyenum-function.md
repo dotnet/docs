@@ -20,11 +20,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CreateAssemblyEnum Function
-Gets a pointer to an [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md) instance that can enumerate the objects in the assembly with the specified [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md).  
+Gets a pointer to an [IAssemblyEnum](iassemblyenum-interface.md) instance that can enumerate the objects in the assembly with the specified [IAssemblyName](iassemblyname-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAssemblyEnum (  
     [out] IAssemblyEnum  **pEnum,  
     [in]  IUnknown       *pUnkReserved,  
@@ -34,7 +34,7 @@ HRESULT CreateAssemblyEnum (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pEnum`  
  [out] Pointer to a memory location that contains the requested `IAssemblyEnum` pointer.  
   
@@ -45,7 +45,7 @@ HRESULT CreateAssemblyEnum (
  [in] The `IAssemblyName` of the requested assembly. This name is used to filter the enumeration. It can be null to enumerate all assemblies in the global assembly cache.  
   
  `dwFlags`  
- [in] Flags for modifying the enumerator's behavior. This parameter contains exactly one bit from the [ASM_CACHE_FLAGS](../../../../docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md) enumeration.  
+ [in] Flags for modifying the enumerator's behavior. This parameter contains exactly one bit from the [ASM_CACHE_FLAGS](asm-cache-flags-enumeration.md) enumeration.  
   
  `pvReserved`  
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
@@ -54,7 +54,7 @@ HRESULT CreateAssemblyEnum (
  The `dwFlags` parameter contains exactly one bit from the `ASM_CACHE_FLAGS` enumeration.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -63,6 +63,7 @@ HRESULT CreateAssemblyEnum (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [IAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md)
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+
+- [IAssemblyEnum Interface](iassemblyenum-interface.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

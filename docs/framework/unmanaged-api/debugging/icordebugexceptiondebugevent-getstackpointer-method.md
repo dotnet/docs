@@ -10,13 +10,13 @@ Gets the stack pointer for this exception debug event.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackPointer(  
    [out]CORDB_ADDRESS *pStackPointer  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStackPointer`  
  [out] A pointer to the address of the stack pointer for this exception debug event. See the Remarks section for more information.  
   
@@ -31,7 +31,7 @@ HRESULT GetStackPointer(
 |[MANAGED_EXCEPTION_UNHANDLED](../../../../docs/framework/unmanaged-api/debugging/cordebugrecordformat-enumeration.md)|`pStackPointer` is **null**.|  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
  The event type is available from the [ICorDebugDebugEvent::GetEventKind](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-geteventkind-method.md) method.  
   
@@ -45,5 +45,6 @@ HRESULT GetStackPointer(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugExceptionDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptiondebugevent-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -23,7 +23,7 @@ Gets the value of an argument or local variable, of which the low word and high 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalMemoryRegisterValue (  
     [in] CORDB_ADDRESS      highWordAddress,  
     [in] CorDebugRegister   lowWordRegister,  
@@ -33,7 +33,7 @@ HRESULT GetLocalMemoryRegisterValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `highWordAddress`  
  [in] A `CORDB_ADDRESS` value that specifies the memory location containing the high word of the value.  
   
@@ -59,4 +59,3 @@ HRESULT GetLocalMemoryRegisterValue (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

@@ -23,13 +23,13 @@ Gets an interface pointer to the active (most recent) stack chain on this ICorDe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetActiveChain (  
     [out] ICorDebugChain **ppChain  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppChain`  
  [out] A pointer to the address of an ICorDebugChain object that represents the stack chain.  
   

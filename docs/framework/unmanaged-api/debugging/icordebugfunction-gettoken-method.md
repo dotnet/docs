@@ -23,13 +23,13 @@ Gets the metadata token for this function.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetToken (  
     [out] mdMethodDef *pMethodDef  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMethodDef`  
  [out] A pointer to an `mdMethodDef` token that references the metadata for this function.  
   

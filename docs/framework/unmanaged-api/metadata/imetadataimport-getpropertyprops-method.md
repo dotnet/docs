@@ -23,7 +23,7 @@ Gets the metadata for the property represented by the specified token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPropertyProps (  
    [in]  mdProperty        prop,  
    [out] mdTypeDef         *pClass,   
@@ -44,7 +44,7 @@ HRESULT GetPropertyProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `prop`  
  [in] A token that represents the property to return metadata for.  
   
@@ -103,5 +103,6 @@ HRESULT GetPropertyProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

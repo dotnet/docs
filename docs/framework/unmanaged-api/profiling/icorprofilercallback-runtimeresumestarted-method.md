@@ -23,7 +23,7 @@ Notifies the profiler that the runtime is resuming all run-time threads.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeResumeStarted();  
 ```  
   
@@ -37,5 +37,6 @@ HRESULT RuntimeResumeStarted();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [RuntimeResumeFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimeresumefinished-method.md)

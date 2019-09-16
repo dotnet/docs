@@ -23,13 +23,13 @@ Updates references to a module defined by a prior call to [IMetaDataEmit::Define
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetModuleProps (   
     [in]  LPCWSTR     szName  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The module name in Unicode. This is the file name only and not the full path name.  
   
@@ -43,5 +43,6 @@ HRESULT SetModuleProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

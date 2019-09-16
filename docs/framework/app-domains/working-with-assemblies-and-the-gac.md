@@ -15,32 +15,32 @@ ms.author: "ronpet"
 If you intend to share an assembly among several applications, you can install it into the global assembly cache. Each computer where the common language runtime is installed has this machine-wide code cache. The global assembly cache stores assemblies specifically designated to be shared by several applications on the computer. An assembly must have a strong name to be installed in the global assembly cache.  
   
 > [!NOTE]
->  Assemblies placed in the global assembly cache must have the same assembly name and file name (not including the file name extension). For example, an assembly with the assembly name of myAssembly must have a file name of either myAssembly.exe or myAssembly.dll.  
+> Assemblies placed in the global assembly cache must have the same assembly name and file name (not including the file name extension). For example, an assembly with the assembly name of myAssembly must have a file name of either myAssembly.exe or myAssembly.dll.  
   
  You should share assemblies by installing them into the global assembly cache only when necessary. As a general guideline, keep assembly dependencies private and locate assemblies in the application directory unless sharing an assembly is explicitly required. In addition, you do not have to install assemblies into the global assembly cache to make them accessible to COM interop or unmanaged code.  
   
  There are several reasons why you might want to install an assembly into the global assembly cache:  
   
--   Shared location.  
+- Shared location.  
   
      Assemblies that should be used by applications can be put in the global assembly cache. For example, if all applications should use an assembly located in the global assembly cache, a version policy statement can be added to the Machine.config file that redirects references to the assembly.  
   
--   File security.  
+- File security.  
   
      Administrators often protect the systemroot directory using an Access Control List (ACL) to control write and execute access. Because the global assembly cache is installed in the systemroot directory, it inherits that directory's ACL. It is recommended that only users with Administrator privileges be allowed to delete files from the global assembly cache.  
   
--   Side-by-side versioning.  
+- Side-by-side versioning.  
   
      Multiple copies of assemblies with the same name but different version information can be maintained in the global assembly cache.  
   
--   Additional search location.  
+- Additional search location.  
   
      The common language runtime checks the global assembly cache for an assembly that matches the assembly request before probing or using the codebase information in a configuration file.  
   
  Note that there are scenarios where you explicitly do not want to install an assembly into the global assembly cache. If you place one of the assemblies that make up an application into the global assembly cache, you can no longer replicate or install the application by using XCOPY to copy the application directory. In this case, you must also move the assembly into the global assembly cache.  
   
 ## In This Section  
- [How to: Install an Assembly into the Global Assembly Cache](../../../docs/framework/app-domains/how-to-install-an-assembly-into-the-gac.md)  
+ [How to: Install an Assembly into the Global Assembly Cache](install-assembly-into-gac.md)  
  Describes the ways to install an assembly into the global assembly cache.  
   
  [How to: View the Contents of the Global Assembly Cache](../../../docs/framework/app-domains/how-to-view-the-contents-of-the-gac.md)  
@@ -53,17 +53,17 @@ If you intend to share an assembly among several applications, you can install i
  Explains why serviced components (managed COM+ components) should be placed in the global assembly cache.  
   
 ## Related Sections  
- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
+ [Creating Assemblies](../../standard/assembly/create.md)  
  Provides an overview of creating assemblies.  
   
  [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
  Describes the global assembly cache.  
   
- [How to: View Assembly Contents](../../../docs/framework/app-domains/how-to-view-assembly-contents.md)  
+ [How to: View Assembly Contents](../../standard/assembly/view-contents.md)  
  Explains how to use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) information in an assembly.  
   
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  Describes how the common language runtime locates and loads the assemblies that make up your application.  
   
- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  
+ [Programming with Assemblies](../../standard/assembly/program.md)  
  Describes assemblies, the building blocks of managed applications.

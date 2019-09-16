@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugValueBreakpoint Interface1"
+title: "ICorDebugValueBreakpoint Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugValueBreakpoint"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugValueBreakpoint Interface1
+# ICorDebugValueBreakpoint Interface
 Extends the ICorDebugBreakpoint interface to provide access to specific values.  
   
 ## Methods  
@@ -29,7 +29,7 @@ Extends the ICorDebugBreakpoint interface to provide access to specific values.
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -41,4 +41,5 @@ Extends the ICorDebugBreakpoint interface to provide access to specific values.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

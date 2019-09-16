@@ -20,7 +20,7 @@ The *test-expression* is evaluated; if it is `true`, the *body-expression* is ex
 
 The following example illustrates the use of the `while...do` expression.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5301.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5301.fs)]
 
 The output of the previous code is a stream of random numbers between 1 and 20, the last of which is 10.
 

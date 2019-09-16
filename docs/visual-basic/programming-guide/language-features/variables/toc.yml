@@ -1,0 +1,44 @@
+- name: Variables in Visual Basic
+  href: index.md
+  items:
+  - name: Variable Declaration
+    href: variable-declaration.md
+    items:
+    - name: "How to: Create a New Variable"
+      href: how-to-create-a-new-variable.md
+    - name: "How to: Create a Variable that Does Not Change in Value"
+      href: how-to-create-a-variable-that-does-not-change-in-value.md
+    - name: "How to: Move Data Into and Out of a Variable"
+      href: how-to-move-data-into-and-out-of-a-variable.md
+  - name: Object Variables
+    href: object-variables.md
+    items:
+    - name: "How to: Speed Up Access to an Object with a Long Qualification Path"
+      href: how-to-speed-up-access-to-an-object-with-a-long-qualification-path.md
+  - name: Object Variable Declaration
+    href: object-variable-declaration.md
+    items:
+    - name: "How to: Access Members of an Object"
+      href: how-to-access-members-of-an-object.md
+    - name: Object Variable Assignment
+      href: object-variable-assignment.md
+      items:
+      - name: "How to: Declare an Object Variable and Assign an Object to It"
+        href: how-to-declare-an-object-variable-and-assign-an-object-to-it.md
+      - name: "How to: Make an Object Variable Not Refer to Any Instance"
+        href: how-to-make-an-object-variable-not-refer-to-any-instance.md
+    - name: Object Variable Values
+      href: object-variable-values.md
+      items:
+      - name: "How to: Refer to the Current Instance of an Object"
+        href: how-to-refer-to-the-current-instance-of-an-object.md
+      - name: "How to: Determine What Type an Object Variable Refers To"
+        href: how-to-determine-what-type-an-object-variable-refers-to.md
+      - name: "How to: Determine Whether Two Objects Are Related"
+        href: how-to-determine-whether-two-objects-are-related.md
+      - name: "How to: Determine Whether Two Objects Are Identical"
+        href: how-to-determine-whether-two-objects-are-identical.md
+  - name: Local Type Inference
+    href: local-type-inference.md
+  - name: Troubleshooting Variables
+    href: troubleshooting-variables.md

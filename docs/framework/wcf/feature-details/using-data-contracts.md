@@ -14,7 +14,7 @@ ms.assetid: a3ae7b21-c15c-4c05-abd8-f483bcbf31af
 A *data contract* is a formal agreement between a service and a client that abstractly describes the data to be exchanged. That is, to communicate, the client and the service do not have to share the same types, only the same data contracts. A data contract precisely defines, for each parameter or return type, what data is serialized (turned into XML) to be exchanged.  
   
 ## Data Contract Basics  
- Windows Communication Foundation (WCF) uses a serialization engine called the Data Contract Serializer by default to serialize and deserialize data (convert it to and from XML). All [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] primitive types, such as integers and strings, as well as certain types treated as primitives, such as <xref:System.DateTime> and <xref:System.Xml.XmlElement>, can be serialized with no other preparation and are considered as having default data contracts. Many [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types also have existing data contracts. For a full list of serializable types, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+ Windows Communication Foundation (WCF) uses a serialization engine called the Data Contract Serializer by default to serialize and deserialize data (convert it to and from XML). All .NET Framework primitive types, such as integers and strings, as well as certain types treated as primitives, such as <xref:System.DateTime> and <xref:System.Xml.XmlElement>, can be serialized with no other preparation and are considered as having default data contracts. Many .NET Framework types also have existing data contracts. For a full list of serializable types, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
   
  New complex types that you create must have a data contract defined for them to be serializable. By default, the <xref:System.Runtime.Serialization.DataContractSerializer> infers the data contract and serializes all publicly visible types. All public read/write properties and fields of the type are serialized. You can opt out members from serialization by using the <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>. You can also explicitly create a data contract by using <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes. This is normally done by applying the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the type. This attribute can be applied to classes, structures, and enumerations. The <xref:System.Runtime.Serialization.DataMemberAttribute> attribute must then be applied to each member of the data contract type to indicate that it is a *data member*, that is, it should be serialized. For more information, see [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md).  
   
@@ -32,21 +32,21 @@ A *data contract* is a formal agreement between a service and a client that abst
 ### Notes  
  The following notes provide items to consider when creating data contracts:  
   
--   The <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute> attribute is only honored when used with unmarked types. This includes types that are not marked with one of the <xref:System.Runtime.Serialization.DataContractAttribute>, <xref:System.SerializableAttribute>, <xref:System.Runtime.Serialization.CollectionDataContractAttribute>, or <xref:System.Runtime.Serialization.EnumMemberAttribute> attributes, or marked as serializable by any other means (such as <xref:System.Xml.Serialization.IXmlSerializable>).  
+- The <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute> attribute is only honored when used with unmarked types. This includes types that are not marked with one of the <xref:System.Runtime.Serialization.DataContractAttribute>, <xref:System.SerializableAttribute>, <xref:System.Runtime.Serialization.CollectionDataContractAttribute>, or <xref:System.Runtime.Serialization.EnumMemberAttribute> attributes, or marked as serializable by any other means (such as <xref:System.Xml.Serialization.IXmlSerializable>).  
   
--   You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to fields, and properties.  
+- You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to fields, and properties.  
   
--   Member accessibility levels (internal, private, protected, or public) do not affect the data contract in any way.  
+- Member accessibility levels (internal, private, protected, or public) do not affect the data contract in any way.  
   
--   The <xref:System.Runtime.Serialization.DataMemberAttribute> attribute is ignored if it is applied to static members.  
+- The <xref:System.Runtime.Serialization.DataMemberAttribute> attribute is ignored if it is applied to static members.  
   
--   During serialization, property-get code is called for property data members to get the value of the properties to be serialized.  
+- During serialization, property-get code is called for property data members to get the value of the properties to be serialized.  
   
--   During deserialization, an uninitialized object is first created, without calling any constructors on the type. Then all data members are deserialized.  
+- During deserialization, an uninitialized object is first created, without calling any constructors on the type. Then all data members are deserialized.  
   
--   During deserialization, property-set code is called for property data members to set the properties to the value being deserialized.  
+- During deserialization, property-set code is called for property data members to set the properties to the value being deserialized.  
   
--   For a data contract to be valid, it must be possible to serialize all of its data members. For a full list of serializable types, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+- For a data contract to be valid, it must be possible to serialize all of its data members. For a full list of serializable types, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
   
      Generic types are handled in exactly the same way as non-generic types. There are no special requirements for generic parameters. For example, consider the following type.  
   
@@ -61,6 +61,7 @@ A *data contract* is a formal agreement between a service and a client that abst
  For a complete code sample of a WCF service that defines a data contract see the [Basic Data Contract](../../../../docs/framework/wcf/samples/basic-data-contract.md) sample.  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)

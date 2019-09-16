@@ -13,7 +13,7 @@ The Application Settings architecture provides many attributes that can be appli
  The following table lists the attributes that can be applied to the application settings wrapper class, this class's individual properties, or both. By definition, only a single scope attribute—**UserScopedSettingAttribute** or **ApplicationScopedSettingAttribute**—must be applied to each and every settings property.  
   
 > [!NOTE]
->  A custom settings provider, derived from the <xref:System.Configuration.SettingsProvider> class, is only required to recognize the following three attributes: **ApplicationScopedSettingAttribute**, **UserScopedSettingAttribute**, and **DefaultSettingValueAttribute**.  
+> A custom settings provider, derived from the <xref:System.Configuration.SettingsProvider> class, is only required to recognize the following three attributes: **ApplicationScopedSettingAttribute**, **UserScopedSettingAttribute**, and **DefaultSettingValueAttribute**.  
   
 |Attribute|Target|Description|  
 |---------------|------------|-----------------|  
@@ -32,7 +32,8 @@ The Application Settings architecture provides many attributes that can be appli
  *Class* indicates that the attribute can be applied only to an application settings wrapper class. *Property* indicates that the attribute can be applied only settings properties. *Both* indicates that the attribute can be applied at either level.  
   
 ## See also
+
 - <xref:System.Configuration.ApplicationSettingsBase>
 - <xref:System.Configuration.SettingsProvider>
-- [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)
+- [Application Settings Architecture](application-settings-architecture.md)
 - [How to: Create Application Settings](how-to-create-application-settings.md)

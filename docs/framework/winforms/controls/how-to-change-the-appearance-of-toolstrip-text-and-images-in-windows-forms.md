@@ -19,7 +19,7 @@ You can control whether text and images are displayed on a <xref:System.Windows.
   
 ### To define what is displayed on a ToolStripItem  
   
--   Set the <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A> property to the desired value. The possibilities are `Image`, `ImageAndText`, `None`, and `Text`. The default is `ImageAndText`.  
+- Set the <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A> property to the desired value. The possibilities are `Image`, `ImageAndText`, `None`, and `Text`. The default is `ImageAndText`.  
   
     ```vb  
     ToolStripButton2.DisplayStyle = _  
@@ -32,7 +32,7 @@ You can control whether text and images are displayed on a <xref:System.Windows.
   
 ### To align text on a ToolStripItem  
   
--   Set the <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A> property to the desired value. The possibilities are any combination of top, middle, and bottom with left, center, and right. The default is `MiddleCenter`.  
+- Set the <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A> property to the desired value. The possibilities are any combination of top, middle, and bottom with left, center, and right. The default is `MiddleCenter`.  
   
     ```vb  
     ToolStripSplitButton1.TextAlign = _  
@@ -45,7 +45,7 @@ You can control whether text and images are displayed on a <xref:System.Windows.
   
 ### To align an image on a ToolStripItem  
   
--   Set the <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A> property to the desired value. The possibilities are any combination of top, middle, and bottom with left, center, and right. The default is `MiddleLeft`.  
+- Set the <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A> property to the desired value. The possibilities are any combination of top, middle, and bottom with left, center, and right. The default is `MiddleLeft`.  
   
     ```vb  
     ToolStripSplitButton1.ImageAlign = _  
@@ -58,7 +58,7 @@ You can control whether text and images are displayed on a <xref:System.Windows.
   
 ### To define how ToolStripItem text and images are displayed relative to each other  
   
--   Set the <xref:System.Windows.Forms.ToolStripItem.TextImageRelation%2A> property to the desired value. The possibilities are `ImageAboveText`, `ImageBeforeText`, `Overlay`, `TextAboveImage`, and `TextBeforeImage`. The default is `ImageBeforeText`.  
+- Set the <xref:System.Windows.Forms.ToolStripItem.TextImageRelation%2A> property to the desired value. The possibilities are `ImageAboveText`, `ImageBeforeText`, `Overlay`, `TextAboveImage`, and `TextBeforeImage`. The default is `ImageBeforeText`.  
   
     ```vb  
     ToolStripButton1.TextImageRelation = _  
@@ -70,7 +70,8 @@ You can control whether text and images are displayed on a <xref:System.Windows.
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStrip>
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
-- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)
-- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)
+- [ToolStrip Technology Summary](toolstrip-technology-summary.md)

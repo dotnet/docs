@@ -17,4 +17,5 @@ Service metadata contains a machine-readable description of the service. Service
  Demonstrates how to retrieve metadata using Svcutil.exe and generate a Windows Communication Foundation (WCF) client.  
   
 ## See also
+
 - [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)

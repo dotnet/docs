@@ -1,6 +1,6 @@
 ---
 title: "File path formats on Windows systems"
-ms.date: "06/28/2018"
+ms.date: "06/06/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -17,7 +17,7 @@ ms.author: "ronpet"
 ---
 # File path formats on Windows systems
 
-Members of many of the types in the <xref:System.IO> namespace include a `path` parameter that lets you specify an absolute or relative path to a file system resource. This path is then passed to [Windows file system APIs](https://msdn.microsoft.com/library/windows/desktop/aa364407(v=vs.85).aspx). This topic discusses the formats for file paths that you can use on Windows systems.
+Members of many of the types in the <xref:System.IO> namespace include a `path` parameter that lets you specify an absolute or relative path to a file system resource. This path is then passed to [Windows file system APIs](/windows/desktop/fileio/file-systems). This topic discusses the formats for file paths that you can use on Windows systems.
 
 ## Traditional DOS paths
 
@@ -27,7 +27,7 @@ A standard DOS path can consist of three components:
 - A directory name. The [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>) separates subdirectories within the nested directory hierarchy.
 - An optional filename. The [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>) separates the file path and the filename.
 
-If all three components are present, the path is absolute. If no volume or drive letter is specified and the directory names begins with the [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>), the path is relative from the root of the current drive. Otherwise, the path is relative to the current directory. The following table shows some possible directory and file paths.
+If all three components are present, the path is absolute. If no volume or drive letter is specified and the directory name begins with the [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>), the path is relative from the root of the current drive. Otherwise, the path is relative to the current directory. The following table shows some possible directory and file paths.
 
 |Path  |Description  |
 | -- | -- |
@@ -73,6 +73,11 @@ The Windows operating system has a unified object model that points to all resou
 `\\.\C:\Test\Foo.txt`  
 `\\?\C:\Test\Foo.txt`
 
+In addition to identifying a drive by its drive letter, you can identify a volume by using its volume GUID. This takes the form:
+
+`\\.\Volume{b75e2c83-0000-0000-0000-602f00000000}\Test\Foo.txt`
+`\\?\Volume{b75e2c83-0000-0000-0000-602f00000000}\Test\Foo.txt`
+
 > [!NOTE]
 > DOS device path syntax is supported on .NET implementations running on Windows starting with .NET Core 1.1 and .NET Framework 4.6.2.
 
@@ -82,8 +87,8 @@ The DOS device path consists of the following components:
 
    > [!NOTE]
    > The `\\?\` is supported in all versions of .NET Core and in the .NET Framework starting with version 4.6.2.
-   
-- A symbolic link to the "real" device object (C: in this case).
+
+- A symbolic link to the "real" device object (C: in the case of a drive name, or Volume{b75e2c83-0000-0000-0000-602f00000000} in the case of a volume GUID).
 
    The first segment of the DOS device path after the device path specifier identifies the volume or drive. (For example, `\\?\C:\` and `\\.\BootPartition\`.)
 
@@ -92,7 +97,7 @@ The DOS device path consists of the following components:
   `\\.\UNC\Server\Share\Test\Foo.txt`  
   `\\?\UNC\Server\Share\Test\Foo.txt`
 
-    For device UNCs, the server/share portion is forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is server1\utilities. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume. 
+    For device UNCs, the server/share portion forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is server1\utilities. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume. 
 
 DOS device paths are fully qualified by definition. Relative directory segments (`.` and `..`) are not allowed. Current directories never enter into their usage.
 

@@ -23,7 +23,7 @@ Defines a group of sequence points within the current method. Each starting line
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineSequencePoints(  
     [in] ISymUnmanagedDocumentWriter*  document,  
     [in] ULONG32 spCount,  
@@ -34,7 +34,7 @@ HRESULT DefineSequencePoints(
     [in, size_is(spCount)] ULONG32     endColumns[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] The document object for which the sequence points are being defined.  
   
@@ -63,4 +63,5 @@ HRESULT DefineSequencePoints(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

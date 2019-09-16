@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugCode Interface1"
+title: "ICorDebugCode Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugCode"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugCode Interface1
+# ICorDebugCode Interface
+
 Represents a segment of either Microsoft intermediate language (MSIL) code or native code.  
   
 ## Methods  
@@ -38,7 +39,7 @@ Represents a segment of either Microsoft intermediate language (MSIL) code or na
  `ICorDebugCode` can represent either MSIL or native code. An "ICorDebugFunction" object that represents MSIL code can have either zero or one `ICorDebugCode` objects associated with it. An "ICorDebugFunction" object that represents native code can have any number of `ICorDebugCode` objects associated with it.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

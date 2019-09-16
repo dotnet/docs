@@ -1,7 +1,7 @@
 ---
 title: Using .NET Core SDK and tools in Continuous Integration (CI)
 description: Information on the usage of the .NET Core SDK and its tools on the build server.
-author: guardrex
+author: mairaw
 ms.date: 05/18/2017
 ms.custom: seodec18
 ---

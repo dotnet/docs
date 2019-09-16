@@ -6,12 +6,13 @@ ms.assetid: 72e1b338-39f0-4af1-a5d9-7a2fb79f6a0b
 # \<transport> of \<netMsmqBinding>
 Defines the transport security settings.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<netMsmqBinding>  
-\<binding>  
-\<security>  
-\<transport>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netMsmqBinding>**](netmsmqbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-netmsmqbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
   
 ## Syntax  
   
@@ -38,7 +39,7 @@ Defines the transport security settings.
 |msmqAuthenticationMode|Specifies how the message must be authenticated by the MSMQ transport. Valid values include the following:<br /><br /> -   None: No authentication.<br />-   WindowsDomain: The authentication mechanism uses Active Directory to retrieve the X.509 certificate for the security identifier associated with the message. This is then used to check the ACL of the queue to ensure the user has write permission for the queue.<br />-   Certificate: The channel retrieves the certificate from the certificate store.<br /><br /> The default is `WindowsDomain`.<br /><br /> If this attribute is set to `None`, the `msmqProtectionLevel` attribute must also be set to `None`. This attribute is of type <xref:System.ServiceModel.MsmqAuthenticationMode>|  
 |msmqEncryptionAlgorithm|Specifies the algorithm to be used for message encryption on the wire when transferring messages between message queue managers. Valid values include the following:<br /><br /> -   RC4Stream<br />-   AES<br />-   The default value is `RC4Stream`. This attribute is of type <xref:System.ServiceModel.MsmqEncryptionAlgorithm>.|  
 |msmqProtectionLevel|Specifies the way messages are secured at the level of the MSMQ transport. Encryption ensures message integrity, while sign and encrypt ensures both message integrity and non-repudiation. That is, the message indeed came from the sender and the sender is who he says he is. Valid values include the following:<br /><br /> -   None: No protection.<br />-   Sign: Messages are signed.<br />-   EncryptAndSign: Messages are encrypted and signed.<br />-   The default is `Sign`.|  
-|msmqSecureHashAlgorithm|Specifies the hash algorithm to be used for computing the message digest. Valid values include the following:<br /><br /> -   MD5<br />-   SHA1<br />-   SHA256<br />-   SHA512<br /><br /> The default is `SHA1`. This attribute is of type <xref:System.ServiceModel.MsmqSecureHashAlgorithm>.|  
+|msmqSecureHashAlgorithm|Specifies the hash algorithm to be used for computing the message digest. Valid values include the following:<br /><br /> -   MD5<br />-   SHA1<br />-   SHA256<br />-   SHA512<br /><br /> The default is `SHA1`. This attribute is of type <xref:System.ServiceModel.MsmqSecureHashAlgorithm>.<br>Due to collision problems with MD5 and SHA1, Microsoft recommends SHA256 or better.|  
   
 ### Child Elements  
  None  
@@ -47,16 +48,17 @@ Defines the transport security settings.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md)|Defines the transport security settings for queued transports.|  
+|[\<security>](security-of-netmsmqbinding.md)|Defines the transport security settings for queued transports.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>
 - <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Transport%2A>
 - <xref:System.ServiceModel.NetMsmqSecurity.Transport%2A>
 - <xref:System.ServiceModel.MsmqTransportSecurity>
-- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

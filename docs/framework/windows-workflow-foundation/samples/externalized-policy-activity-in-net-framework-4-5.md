@@ -5,7 +5,7 @@ ms.assetid: 92fd6f92-23a1-4adf-b96a-2754ea93ad3e
 ---
 # Externalized Policy Activity in .NET Framework 4.5
 
-This sample demonstrates how the ExternalizedPolicy4 activity allows executing existing [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] Windows Workflow Foundation (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] Windows Workflow Foundation (WF 4.5) directly by using the rules engine that is shipped in WF 3.5. By using this activity, you can open and execute any existing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet>. For more information about WF 3.5 Rules Engine included as part of Windows Workflow Foundation, please read [Introduction to the Windows Workflow Foundation Rules Engine](https://go.microsoft.com/fwlink/?LinkId=166079). For more information about migrating rules to [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)], please read the migration guidance at [Migration Guidance](../../../../docs/framework/windows-workflow-foundation/migration-guidance.md).
+This sample demonstrates how the ExternalizedPolicy4 activity allows executing existing [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] Windows Workflow Foundation (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] Windows Workflow Foundation (WF 4.5) directly by using the rules engine that is shipped in WF 3.5. By using this activity, you can open and execute any existing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet>. For more information about WF 3.5 Rules Engine included as part of Windows Workflow Foundation, please read [Introduction to the Windows Workflow Foundation Rules Engine](https://go.microsoft.com/fwlink/?LinkId=166079). For more information about migrating rules to [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)], please read the migration guidance at [Migration Guidance](../migration-guidance.md).
 
 ## Projects in this Sample
 
@@ -19,7 +19,7 @@ This sample demonstrates how the ExternalizedPolicy4 activity allows executing e
 
 The ExternalizedPolicy4 activity is a <xref:System.Activities.NativeActivity> that allows executing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet> objects within WF 4.5 workflows. The following example is a simplified definition of the public object model of the activity.
 
-```
+```csharp
 public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 {
     public string RulesFilePath
@@ -60,21 +60,21 @@ This sample contains two client applications: ImperativeCodeClientSample and Des
 
 ### Run the ImperativeCodeClientSample application
 
-1.  Using Visual Studio, open the *Policy4sample.sln* solution file.
+1. Using Visual Studio, open the *Policy4sample.sln* solution file.
 
-2.  In **Solution Explorer**, right-click the **ImperativeCodeClientSample** project and then select **Set as startup project**.
+2. In **Solution Explorer**, right-click the **ImperativeCodeClientSample** project and then select **Set as startup project**.
 
-3.  To run the project, press **Ctrl**+**F5**.
+3. To run the project, press **Ctrl**+**F5**.
 
 ### Run the DesignerClientSample application
 
-1.  Using Visual Studio, open the *Policy4sample.sln* solution file.
+1. Using Visual Studio, open the *Policy4sample.sln* solution file.
 
-2.  In **Solution Explorer**, right-click the **DesignerClientSample** project and then select **Set as startup project**.
+2. In **Solution Explorer**, right-click the **DesignerClientSample** project and then select **Set as startup project**.
 
-3.  Press **Ctrl**+**Shift**+**B** to compile the project.
+3. Press **Ctrl**+**Shift**+**B** to compile the project.
 
-4.  Press **Ctrl**+**F5** to run the project.
+4. Press **Ctrl**+**F5** to run the project.
 
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.

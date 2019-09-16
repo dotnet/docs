@@ -11,14 +11,15 @@ C# 8 introduces **nullable reference types**, which complement reference types t
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Enable null reference checks as you work with code.
-> * Diagnose and correct different warnings related to null values.
-> * Manage the interface between nullable enabled and nullable disabled contexts.
-> * Control nullable annotation contexts.
+>
+> - Enable null reference checks as you work with code.
+> - Diagnose and correct different warnings related to null values.
+> - Manage the interface between nullable enabled and nullable disabled contexts.
+> - Control nullable annotation contexts.
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019 preview 2 and later](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+preview), or [.NET Core 3.0 preview 2](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You'll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -43,8 +44,11 @@ Upgrading the language version selects C# 8.0, but does not enable the nullable 
 A good next step is to turn on the nullable annotation context and see how many warnings are generated. Add the following element to both csproj files in the solution, directly under the `LangVersion` element:
 
 ```xml
-<NullableContextOptions>enable</NullableContextOptions>
+<Nullable>enable</Nullable>
 ```
+
+> [!IMPORTANT]
+> The `Nullable` element was previously named `NullableContextOptions`. The rename ships with Visual Studio 2019, 16.2-p1. The .NET Core SDK 3.0.100-preview5-011568 does not have this change. If you are using the .NET Core CLI, you'll need to use `NullableContextOptions` until the next preview is available.
 
 Do a test build, and notice the warning list. In this small application, the compiler generates five warnings, so it's likely you'd leave the nullable annotation context enabled and start fixing warnings for the entire project.
 
@@ -52,7 +56,7 @@ That strategy works only for smaller projects. For any larger projects, the numb
 
 ## Warnings help discover original design intent
 
-There are two classes that generate multiple warnings. Start with the `NewsStoryViewModel` class. Remove the `NullableContextOptions` element from both csproj files so that you can limit the scope of warnings to the sections of code you're working with. Open the *NewsStoryViewModel.cs* file and add the following directives to enable the nullable annotation context for the `NewsStoryViewModel` and restore it following that class definition:
+There are two classes that generate multiple warnings. Start with the `NewsStoryViewModel` class. Remove the `Nullable` element from both csproj files so that you can limit the scope of warnings to the sections of code you're working with. Open the *NewsStoryViewModel.cs* file and add the following directives to enable the nullable annotation context for the `NewsStoryViewModel` and restore it following that class definition:
 
 ```csharp
 #nullable enable
@@ -75,7 +79,7 @@ These two properties cause `CS8618`, "Non-nullable property is uninitialized". T
 
 [!code-csharp[StarterCreateNewsItem](~/samples/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader/Services/NewsService.cs#CreateNewsItem)]
 
-There's quite a bit going on in the preceding block of code. This application uses the [AutoMapper](http://automapper.org/) NuGet package to construct a news item from an `ISyndicationItem`. You've discovered that the news story items are constructed and the properties are set in that one statement. That means the design for the `NewsStoryViewModel` indicates that these properties should never have the `null` value. These properties should be **nonnullable reference types**. That best expresses the original design intent. In fact, any `NewsStoryViewModel` *is* correctly instantiated with non-null values. That makes the following initialization code a valid fix:
+There's quite a bit going on in the preceding block of code. This application uses the [AutoMapper](https://automapper.org/) NuGet package to construct a news item from an `ISyndicationItem`. You've discovered that the news story items are constructed and the properties are set in that one statement. That means the design for the `NewsStoryViewModel` indicates that these properties should never have the `null` value. These properties should be **nonnullable reference types**. That best expresses the original design intent. In fact, any `NewsStoryViewModel` *is* correctly instantiated with non-null values. That makes the following initialization code a valid fix:
 
 ```csharp
 public class NewsStoryViewModel

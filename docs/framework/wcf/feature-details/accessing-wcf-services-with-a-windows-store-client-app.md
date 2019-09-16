@@ -10,39 +10,39 @@ Windows 8 introduces a new type of application called Windows Store applications
  A subset of WCF functionality is available from within a Windows Store application, see the following sections for more details.  
   
 > [!IMPORTANT]
->  Use the WinRT syndication APIs instead of those exposed by WCF. For more information see, [WinRT Syndication API](https://go.microsoft.com/fwlink/?LinkId=236265)  
+> Use the WinRT syndication APIs instead of those exposed by WCF. For more information see, [WinRT Syndication API](https://go.microsoft.com/fwlink/?LinkId=236265)  
   
 > [!WARNING]
->  Using Add Service Reference to add a web service reference to a Windows Runtime Component isn’t supported.  
+> Using Add Service Reference to add a web service reference to a Windows Runtime Component isn’t supported.  
   
 ### Supported Bindings  
  The following WCF bindings are supported in Windows Store Applications:  
   
-1.  <xref:System.ServiceModel.BasicHttpBinding>  
+1. <xref:System.ServiceModel.BasicHttpBinding>  
   
-2.  <xref:System.ServiceModel.NetTcpBinding>  
+2. <xref:System.ServiceModel.NetTcpBinding>  
   
-3.  <xref:System.ServiceModel.NetHttpBinding>  
+3. <xref:System.ServiceModel.NetHttpBinding>  
   
-4.  <xref:System.ServiceModel.Channels.CustomBinding>
+4. <xref:System.ServiceModel.Channels.CustomBinding>
   
  The following binding elements are supported in Windows Store Applications  
   
-1.  <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>  
+1. <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>  
   
-2.  <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>  
+2. <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>  
   
-3.  <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement>  
+3. <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement>  
   
-4.  <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  
+4. <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  
   
-5.  <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>  
+5. <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>  
   
-6.  <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
+6. <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
   
-7.  <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
+7. <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
   
-8.  <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
+8. <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
   
 9. <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>  
   
@@ -91,14 +91,14 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
 ### Serialization  
  The following serializers are supported in Windows Store applications:  
   
-1.  DataContractSerializer  
+1. DataContractSerializer  
   
-2.  DataContractJsonSerializer  
+2. DataContractJsonSerializer  
   
-3.  XmlSerializer  
+3. XmlSerializer  
   
 > [!WARNING]
->  XmlDictionaryWriter.Write(DateTime) now writes the DateTime object as a string.  
+> XmlDictionaryWriter.Write(DateTime) now writes the DateTime object as a string.  
   
 ### Security  
 
@@ -114,41 +114,41 @@ The following security modes are supported in Windows Store applications:
   
 The following client credential types are supported in Windows Store applications:
   
-1.  None  
+1. None  
   
-2.  Basic  
+2. Basic  
   
-3.  Digest  
+3. Digest  
   
-4.  Negotiate  
+4. Negotiate  
   
-5.  NTLM  
+5. NTLM  
   
-6.  Windows  
+6. Windows  
   
-7.  Username (Message Security)  
+7. Username (Message Security)  
   
-8.  Windows (Transport Security)  
+8. Windows (Transport Security)  
   
  In order for Windows Store applications to access and send default Windows credentials, you must enable this functionality within the Package.appmanifest file. Open this file and select the Capabilities tab and select "Default Windows Credentials". This allows the application to connect to intranet resources that require domain credentials.  
   
 > [!IMPORTANT]
->  In order for Windows Store applications to make cross machine calls you must enable another capability called "Home/Work Networking". This setting is also in the Package.appmanifest file under the Capabilities tab. Select the Home/Work Networking checkbox. This gives your application inbound and outbound access to the networks of the user’s trusted places like home and work. Inbound critical ports are always blocked. For accessing services on the internet you must also enable Internet (Client) capability.  
+> In order for Windows Store applications to make cross machine calls you must enable another capability called "Home/Work Networking". This setting is also in the Package.appmanifest file under the Capabilities tab. Select the Home/Work Networking checkbox. This gives your application inbound and outbound access to the networks of the user’s trusted places like home and work. Inbound critical ports are always blocked. For accessing services on the internet you must also enable Internet (Client) capability.  
   
 ### Misc  
  The use of the following classes is supported for Windows Store Applications:  
   
-1.  <xref:System.ServiceModel.ChannelFactory>  
+1. <xref:System.ServiceModel.ChannelFactory>  
   
-2.  <xref:System.ServiceModel.DuplexChannelFactory%601>
+2. <xref:System.ServiceModel.DuplexChannelFactory%601>
   
-3.  <xref:System.ServiceModel.CallbackBehaviorAttribute>  
+3. <xref:System.ServiceModel.CallbackBehaviorAttribute>  
   
 ### Defining Service Contracts  
  We recommend only defining asynchronous service operations using the task-based async pattern. This ensures Windows Store applications remain responsive while calling a service operation.  
   
 > [!WARNING]
->  While no exception will be thrown if you define a synchronous operation, it is strongly recommended to only define asynchronous operations.  
+> While no exception will be thrown if you define a synchronous operation, it is strongly recommended to only define asynchronous operations.  
   
 ### Calling WCF Services from Windows Store Applications  
  As mentioned before all configuration must be done in code in the GetBindingForEndpoint method in the generated proxy class. Calling a service operation is done the same as calling any task-based asynchronous method as shown in the following code snippet.  
@@ -169,9 +169,10 @@ void async SomeMethod()
  Notice the use of the async keyword on the method making the asynchronous call and the await keyword when calling the asynchronous method.  
   
 ## See also
-- [WCF in Windows Store Apps Blog](https://blogs.msdn.com/b/piyushjo/archive/2011/09/22/wcf-in-win8-metro-styled-apps-absolutely-supported.aspx)
-- [WCF Windows Store Clients and Security](https://blogs.msdn.com/b/piyushjo/archive/2011/10/11/calling-a-wcf-service-from-a-metro-application-adding-security.aspx)
-- [Windows Store Apps and Cross Machine Calls](https://blogs.msdn.com/b/piyushjo/archive/2011/10/22/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario.aspx)
+
+- [WCF in Windows Store Apps Blog](https://blogs.msdn.microsoft.com/piyushjo/2011/09/21/wcf-in-windows-8-metro-styled-apps-absolutely-supported/)
+- [WCF Windows Store Clients and Security](https://blogs.msdn.microsoft.com/piyushjo/2011/10/11/calling-a-wcf-service-from-a-metro-application-adding-security/)
+- [Windows Store Apps and Cross Machine Calls](https://blogs.msdn.microsoft.com/piyushjo/2011/10/21/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario/)
 - [Calling a WCF Service Deployed in Azure from a Windows Store App](https://blogs.msdn.com/b/piyushjo/archive/2011/10/22/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario.aspx)
 - [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
 - [Bindings](../../../../docs/framework/wcf/bindings.md)

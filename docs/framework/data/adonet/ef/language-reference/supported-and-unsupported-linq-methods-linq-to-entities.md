@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.assetid: 7f3ffa5f-f819-4730-bcdb-09b23de3b6d0
 ---
 # Supported and Unsupported LINQ Methods (LINQ to Entities)
-This section provides information about the Language-Integrated Query (LINQ) standard query operators that are supported or unsupported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries. Many of the LINQ standard query operators have an overloaded version that accepts an integer argument. The integer argument corresponds to a zero-based index in the sequence that is being operated on, an <xref:System.Collections.Generic.IEqualityComparer%601>, or <xref:System.Collections.Generic.IComparer%601>. Unless otherwise specified, these overloaded versions of the LINQ standard query operators are not supported, and attempting to use them will throw an exception.  
+This section provides information about the Language-Integrated Query (LINQ) standard query operators that are supported or unsupported in LINQ to Entities queries. Many of the LINQ standard query operators have an overloaded version that accepts an integer argument. The integer argument corresponds to a zero-based index in the sequence that is being operated on, an <xref:System.Collections.Generic.IEqualityComparer%601>, or <xref:System.Collections.Generic.IComparer%601>. Unless otherwise specified, these overloaded versions of the LINQ standard query operators are not supported, and attempting to use them will throw an exception.  
   
 ## Projection and Restriction Methods  
- Most of the LINQ projection and restriction methods are supported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries, with the exception of those that accept a positional argument. For more information, see [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported projection and restriction methods.  
+ Most of the LINQ projection and restriction methods are supported in LINQ to Entities queries, with the exception of those that accept a positional argument. For more information, see [Standard Query Operators in LINQ to Entities Queries](standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported projection and restriction methods.  
   
 |Method|Support|Visual Basic function signature|C# method signature|  
 |------------|-------------|-------------------------------------|--------------------------|  
@@ -21,7 +21,7 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.Where%2A>|Not supported|`Function Where(Of TSource) ( _ source As IQueryable(Of TSource), _ predicate As Expression(Of Func(Of TSource, Integer, Boolean)) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> Where<TSource>( this IQueryable<TSource> source, Expression<Func\<TSource, int, bool>> predicate )`|  
   
 ## Join Methods  
- The LINQ join methods are supported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)], with the exception of those that accept an `IEqualityComparer` because the comparer cannot be translated to the data source. For more information, see [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported join methods.  
+ The LINQ join methods are supported in LINQ to Entities, with the exception of those that accept an `IEqualityComparer` because the comparer cannot be translated to the data source. For more information, see [Standard Query Operators in LINQ to Entities Queries](standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported join methods.  
   
 |Method|Support|Visual Basic function signature|C# method signature|  
 |------------|-------------|-------------------------------------|--------------------------|  
@@ -31,7 +31,7 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.Join%2A>|Not Supported|`Function Join(Of TOuter, TInner, TKey, TResult) ( _ outer As IQueryable(Of TOuter), _ inner As IEnumerable(Of TInner), _ outerKeySelector As Expression(Of Func(Of TOuter, TKey)), _ innerKeySelector As Expression(Of Func(Of TInner, TKey)), _ resultSelector As Expression(Of Func(Of TOuter, TInner, TResult)), _ comparer As IEqualityComparer(Of TKey) _ ) As IQueryable(Of TResult)`|`IQueryable<TResult> Join\<TOuter, TInner, TKey, TResult>( this IQueryable<TOuter> outer, IEnumerable<TInner> inner, Expression<Func\<TOuter, TKey>> outerKeySelector, Expression<Func\<TInner, TKey>> innerKeySelector, Expression<Func\<TOuter, TInner, TResult>> resultSelector, IEqualityComparer<TKey> comparer )`|  
   
 ## Set Methods  
- Most of the LINQ set methods are supported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries, with the exception of those that use an <xref:System.Collections.Generic.EqualityComparer%601>. For more information, see [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported set methods.  
+ Most of the LINQ set methods are supported in LINQ to Entities queries, with the exception of those that use an <xref:System.Collections.Generic.EqualityComparer%601>. For more information, see [Standard Query Operators in LINQ to Entities Queries](standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported set methods.  
   
 |Method|Support|Visual Basic function signature|C# method signature|  
 |------------|-------------|-------------------------------------|--------------------------|  
@@ -53,7 +53,7 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.Union%2A>|Not supported|`Function Union(Of TSource) ( _ source1 As IQueryable(Of TSource), _ source2 As IEnumerable(Of TSource), _ comparer As IEqualityComparer(Of TSource) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> Union<TSource>( this IQueryable<TSource> source1, IEnumerable<TSource> source2, IEqualityComparer<TSource> comparer )`|  
   
 ## Ordering Methods  
- Most of the LINQ ordering methods are supported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)], with the exception of those that accept an <xref:System.Collections.Generic.IComparer%601>, because the comparer cannot be translated to the data source. For more information, see [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported ordering methods.  
+ Most of the LINQ ordering methods are supported in LINQ to Entities, with the exception of those that accept an <xref:System.Collections.Generic.IComparer%601>, because the comparer cannot be translated to the data source. For more information, see [Standard Query Operators in LINQ to Entities Queries](standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported ordering methods.  
   
 |Method|Support|Visual Basic function signature|C# method signature|  
 |------------|-------------|-------------------------------------|--------------------------|  
@@ -68,7 +68,7 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.Reverse%2A>|Not supported|`Function Reverse(Of TSource) ( _ source As IQueryable(Of TSource) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> Reverse<TSource>( this IQueryable<TSource> source )`|  
   
 ## Grouping Methods  
- Most of the LINQ grouping methods are supported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)], with the exception of those that accept an <xref:System.Collections.Generic.IEqualityComparer%601>, because the comparer cannot be translated to the data source. For more information, see [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported grouping methods.  
+ Most of the LINQ grouping methods are supported in LINQ to Entities, with the exception of those that accept an <xref:System.Collections.Generic.IEqualityComparer%601>, because the comparer cannot be translated to the data source. For more information, see [Standard Query Operators in LINQ to Entities Queries](standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported grouping methods.  
   
 |Method|Support|Visual Basic function signature|C# method signature|  
 |------------|-------------|-------------------------------------|--------------------------|  
@@ -82,7 +82,7 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.GroupBy%2A>|Not supported|`Function GroupBy(Of TSource, TKey, TElement, TResult) ( _ source As IQueryable(Of TSource), _ keySelector As Expression(Of Func(Of TSource, TKey)), _ elementSelector As Expression(Of Func(Of TSource, TElement)), _ resultSelector As Expression(Of Func(Of TKey, IEnumerable(Of TElement), TResult)), _ comparer As IEqualityComparer(Of TKey) _ ) As IQueryable(Of TResult)`|`IQueryable<TResult> GroupBy<TSource, TKey, TElement, TResult>( this IQueryable<TSource> source, Expression<Func<TSource, TKey>> keySelector, Expression<Func<TSource, TElement>> elementSelector, Expression<Func<TKey, IEnumerable<TElement>, TResult>> resultSelector, IEqualityComparer<TKey> comparer )`|  
   
 ## Aggregate Methods  
- Most of the aggregate methods that accept primitive data types are supported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)]. For more information, see [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported aggregate methods.  
+ Most of the aggregate methods that accept primitive data types are supported in LINQ to Entities. For more information, see [Standard Query Operators in LINQ to Entities Queries](standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported aggregate methods.  
   
 |Method|Support|Visual Basic function signature|C# method signature|  
 |------------|-------------|-------------------------------------|--------------------------|  
@@ -147,7 +147,7 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.OfType%2A>|Supported for <xref:System.Data.Metadata.Edm.EntityType>|`Function OfType(Of TResult) ( _ source As IQueryable _ ) As IQueryable(Of TResult)`|`IQueryable<TResult> OfType<TResult>( this IQueryable source )`|  
   
 ## Paging Methods  
- A number of the LINQ paging methods are not supported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries. For more information, see [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported paging methods.  
+ A number of the LINQ paging methods are not supported in LINQ to Entities queries. For more information, see [Standard Query Operators in LINQ to Entities Queries](standard-query-operators-in-linq-to-entities-queries.md). The following table lists the supported and unsupported paging methods.  
   
 |Method|Support|Visual Basic function signature|C# method signature|  
 |------------|-------------|-------------------------------------|--------------------------|  
@@ -173,4 +173,5 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.TakeWhile%2A>|Not supported|`Function TakeWhile(Of TSource) ( _ source As IQueryable(Of TSource), _ predicate As Expression(Of Func(Of TSource, Integer, Boolean)) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> TakeWhile<TSource>( this IQueryable<TSource> source, Expression<Func\<TSource, int, bool>> predicate )`|  
   
 ## See also
-- [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md)
+
+- [Standard Query Operators in LINQ to Entities Queries](standard-query-operators-in-linq-to-entities-queries.md)

@@ -23,14 +23,14 @@ Controls whether the just-in-time (JIT) compiler preserves debugging information
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableJITDebugging(  
     [in] BOOL bTrackJITInfo,  
     [in] BOOL bAllowJitOpts  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bTrackJITInfo`  
  [in] Set this value to `true` to enable the JIT compiler to preserve mapping information between the Microsoft intermediate language (MSIL) version and the JIT-compiled version of each method in this module.  
   

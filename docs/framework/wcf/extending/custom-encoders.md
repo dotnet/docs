@@ -17,18 +17,18 @@ This topic discusses how to create custom encoders.
 ## System-Provided Encoders  
  WCF provides several system-provided bindings that are designed to cover the most common application scenarios. Each of these bindings combine a transport, message encoder, and other options (security, for example). This topic describes how to extend the `Text`, `Binary`, and `MTOM` message encoders that are included in WCF, or create your own custom encoder. The text message encoder supports both a plain XML encoding as well as SOAP encodings. The plain XML encoding mode of the text message encoder is called the POX ("Plain Old XML") encoder to distinguish it from the text-based SOAP encoding.  
   
- For more information about the combinations of binding elements provided by the system-provided bindings, see the corresponding section in [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
+ For more information about the combinations of binding elements provided by the system-provided bindings, see the corresponding section in [Choosing a Transport](../feature-details/choosing-a-transport.md).  
   
 ## How to Work with System-Provided Encoders  
  An encoding is added to a binding using a class derived from <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>.  
   
  WCF provides the following types of binding elements derived from the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class that can provide for text, binary and Message Transmission Optimization Mechanism (MTOM) encoding:  
   
--   <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>: The most interoperable, but the least efficient encoder for XML messages. A Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is not efficient.  
+- <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>: The most interoperable, but the least efficient encoder for XML messages. A Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is not efficient.  
   
--   <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>: Represents the binding element that specifies the character encoding and message versioning used for binary-based XML messages. This is most efficient of the encoding options, but the least interoperable, because it is only supported by WCF endpoints.  
+- <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>: Represents the binding element that specifies the character encoding and message versioning used for binary-based XML messages. This is most efficient of the encoding options, but the least interoperable, because it is only supported by WCF endpoints.  
   
--   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>: Represents the binding element that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in WCF messages. The MTOM encoder attempts to balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
+- <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>: Represents the binding element that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in WCF messages. The MTOM encoder attempts to balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
   
  The binding element creates a binary, MTOM, or text <xref:System.ServiceModel.Channels.MessageEncoderFactory>. The factory creates a binary, MTOM, or text <xref:System.ServiceModel.Channels.MessageEncoderFactory> instance. Typically, there is only a single instance. However if sessions are used, a different encoder may be provided to each session. The Binary encoder makes use of this to coordinate dynamic dictionaries (see XML Infrastructure).  
   
@@ -44,7 +44,7 @@ This topic discusses how to create custom encoders.
 ### Pooling  
  Each of the encoder implementations tries to pool as much as possible. Reducing allocations is a key way to improve the performance of managed code. To accomplish this pooling, the implementations use the `SynchronizedPool` class. The C# file contains a description of the additional optimizations used by this class.  
   
- `XmlDictionaryReader` and `XmlDictionaryWriter` instances are pooled and reinitialized to prevent allocating new ones for each message. For the readers, an `OnClose` callback reclaims the reader when `Close()` is called. The encoder also recycles some message state objects used when constructing messages. The sizes of these pools are configurable by the `MaxReadPoolSize` and `MaxWritePoolSize` properties on each of the three classes derived from <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>.  
+ <xref:System.Xml.XmlDictionaryReader> and <xref:System.Xml.XmlDictionaryWriter> instances are pooled and reinitialized to prevent allocating new ones for each message. For the readers, an `OnClose` callback reclaims the reader when `Close()` is called. The encoder also recycles some message state objects used when constructing messages. The sizes of these pools are configurable by the `MaxReadPoolSize` and `MaxWritePoolSize` properties on each of the three classes derived from <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>.  
   
 ### Binary Encoding  
  When binary encoding uses sessions, the dynamic dictionary string must be communicated to the receiver of the message. This is done by prefixing the message with the dynamic dictionary strings. The receiver strips off the strings, adds them to the session, and processes the message. Correctly passing dictionary strings requires that the transport be buffered.  
@@ -63,19 +63,19 @@ This topic discusses how to create custom encoders.
 ## Writing your own Encoder  
  To implement your own custom message encoder, you must provide custom implementations of the following abstract base classes:  
   
--   <xref:System.ServiceModel.Channels.MessageEncoder>  
+- <xref:System.ServiceModel.Channels.MessageEncoder>  
   
--   <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
+- <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
   
--   <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
+- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
   
  Converting from the in-memory representation of a message to a representation that can be written to a stream is encapsulated within the <xref:System.ServiceModel.Channels.MessageEncoder> class, which serves as a factory for XML readers and XML writers that support specific types of XML encodings.  
   
--   The key methods of this class that you must override are:  
+- The key methods of this class that you must override are:  
   
--   <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> which takes a <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> object and writes it into a <xref:System.IO.Stream> object.  
+- <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> which takes a <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> object and writes it into a <xref:System.IO.Stream> object.  
   
--   <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A> which takes a <xref:System.IO.Stream> object and a maximum header size and returns a <xref:System.ServiceModel.Channels.Message> object.  
+- <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A> which takes a <xref:System.IO.Stream> object and a maximum header size and returns a <xref:System.ServiceModel.Channels.Message> object.  
   
  It is the code you write in these methods that handles conversion between the standard transport protocol, and your customized encoding.  
   
@@ -83,12 +83,13 @@ This topic discusses how to create custom encoders.
   
  Then connect your custom <xref:System.ServiceModel.Channels.MessageEncoderFactory> to the binding element stack used to configure the service or client by overriding the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method to return an instance of this factory.  
   
- There are two samples provided with WCF that illustrate this process with sample code: [Custom Message Encoder: Custom Text Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-custom-text-encoder.md) and [Custom Message Encoder: Compression Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-compression-encoder.md).  
+ There are two samples provided with WCF that illustrate this process with sample code: [Custom Message Encoder: Custom Text Encoder](../samples/custom-message-encoder-custom-text-encoder.md) and [Custom Message Encoder: Compression Encoder](../samples/custom-message-encoder-compression-encoder.md).  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
 - <xref:System.ServiceModel.Channels.MessageEncoderFactory>
 - <xref:System.ServiceModel.Channels.MessageEncoder>
-- [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)
-- [Choosing a Message Encoder](../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
-- [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Data Transfer Architectural Overview](../feature-details/data-transfer-architectural-overview.md)
+- [Choosing a Message Encoder](../feature-details/choosing-a-message-encoder.md)
+- [Choosing a Transport](../feature-details/choosing-a-transport.md)

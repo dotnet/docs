@@ -8,7 +8,7 @@ ms.date: 12/12/2018
 
 The 6.0 release of C# contained many features that improve productivity for developers. The overall effect of these features is that you write more concise code that is also more readable. The syntax contains less ceremony for many common practices. It's easier to see the design intent with less ceremony. Learn these features well, and you'll be more productive and write more readable code. You can concentrate more on your features than on the constructs of the language.
 
-The rest of this article provides an overview of each of these features, with a link to explore each feature. You can also explore the features in an [interactive tutorial on C# 6](../tutorials/exploration/csharp-6.yml) in the tutorials section.
+The rest of this article provides an overview of each of these features, with a link to explore each feature. You can also explore the features in an [interactive exploration on C# 6](../tutorials/exploration/csharp-6.yml) in the tutorials section.
 
 ## Read-only auto-properties
 
@@ -17,7 +17,7 @@ with only a get accessor:
 
 [!code-csharp[ReadOnlyAutoProperty](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoProperty)]
 
-The `FirstName` and `LastName` properties can be set only in the body of a constructor:
+The `FirstName` and `LastName` properties can be set only in the body of the constructor of the same class:
 
 [!code-csharp[ReadOnlyAutoPropertyConstructor](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoPropertyConstructor)]
 
@@ -123,7 +123,7 @@ FormattableString str = $"Average grade is {s.Grades.Average()}";
 var gradeStr = str.ToString(new System.Globalization.CultureInfo("de-DE"));
 ```
 
-To get started with string interpolation, see the [String interpolation in C#](../tutorials/intro-to-csharp/interpolated-strings.yml) interactive tutorial, the [String interpolation](../language-reference/tokens/interpolated.md) article, and the [String interpolation in C#](../tutorials/string-interpolation.md) tutorial.
+To get started with string interpolation, see the [String interpolation in C#](../tutorials/exploration/interpolated-strings.yml) interactive tutorial, the [String interpolation](../language-reference/tokens/interpolated.md) article, and the [String interpolation in C#](../tutorials/string-interpolation.md) tutorial.
 
 ## Exception filters
 
@@ -134,7 +134,7 @@ expression evaluates to `false`, then the `catch` clause is skipped. One use is 
 
 ## The `nameof` expression
 
-The `nameof` expression evaluates to the name of a symbol. It's a great way to get tools working whenever you need the name of a variable, a property, or a member field. One of the most common uses for `nameof` is to provide the name of a symbol that caused an exception:
+The [nameof](../language-reference/operators/nameof.md) expression evaluates to the name of a symbol. It's a great way to get tools working whenever you need the name of a variable, a property, or a member field. One of the most common uses for `nameof` is to provide the name of a symbol that caused an exception:
 
 [!code-csharp[nameof](../../../samples/snippets/csharp/new-in-6/NewCode.cs#UsingStaticString)]
 

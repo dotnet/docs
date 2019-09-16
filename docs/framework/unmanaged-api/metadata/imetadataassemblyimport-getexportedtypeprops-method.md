@@ -23,7 +23,7 @@ Gets the set of properties of the exported type with the specified metadata sign
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetExportedTypeProps (  
     [in]  mdExportedType    mdct,   
     [out] LPWSTR            szName,   
@@ -35,7 +35,7 @@ HRESULT GetExportedTypeProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdct`  
  [in] An `mdExportedType` metadata token that represents the exported type.  
   
@@ -67,4 +67,5 @@ HRESULT GetExportedTypeProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

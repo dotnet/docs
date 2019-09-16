@@ -35,17 +35,15 @@ The installation process for .NET Framework automatically registers WCF with IIS
 
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application
 
-IIS-hosted WCF services must reside inside of an IIS application. You can create a new IIS application to host WCF services exclusively. Alternatively, you can deploy an WCF service into an existing application that is already hosting [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] content (such as .aspx pages and ASP.NET Web services [ASMX]). For more information about these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](wcf-services-and-aspnet.md).
+IIS-hosted WCF services must reside inside of an IIS application. You can create a new IIS application to host WCF services exclusively. Alternatively, you can deploy an WCF service into an existing application that is already hosting ASP.NET 2.0 content (such as .aspx pages and ASP.NET Web services [ASMX]). For more information about these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](wcf-services-and-aspnet.md).
 
-Note that [!INCLUDE[iis601](../../../../includes/iis601-md.md)] and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. For more information about this property, see the [PeriodicRestartTime](https://go.microsoft.com/fwlink/?LinkId=109968).
+Note that IIS 6.0 and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. For more information about this property, see the [PeriodicRestartTime](https://go.microsoft.com/fwlink/?LinkId=109968).
 
 ## Create an .svc File for the WCF Service
 
 WCF services hosted in IIS are represented as special content files (.svc files) inside the IIS application. This model is similar to the way ASMX pages are represented inside of an IIS application as .asmx files. A .svc file contains a WCF-specific processing directive ([\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)) that allows the WCF hosting infrastructure to activate hosted services in response to incoming messages. The most common syntax for a .svc file is in the following statement.
 
-```
-<% @ServiceHost Service="MyNamespace.MyServiceImplementationTypeName" %>
-```
+`<% @ServiceHost Service="MyNamespace.MyServiceImplementationTypeName" %>`
 
 It consists of the [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive and a single attribute, `Service`. The value of the `Service` attribute is the common language runtime (CLR) type name of the service implementation. Using this directive is basically equivalent to creating a service host using the following code.
 
@@ -59,7 +57,7 @@ For more information about the syntax for .svc files, see [\@ServiceHost](../../
 
 ## Deploy the Service Implementation to the IIS Application
 
-WCF services hosted in IIS use the same dynamic compilation model as [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)]. Just as with ASP.NET, you can deploy the implementation code for IIS-hosted WCF services in several ways at various locations, as follows:
+WCF services hosted in IIS use the same dynamic compilation model as ASP.NET 2.0. Just as with ASP.NET, you can deploy the implementation code for IIS-hosted WCF services in several ways at various locations, as follows:
 
 - As a precompiled .dll file located in the global assembly cache (GAC) or in the application’s \bin directory. Precompiled binaries are not updated until a new version of the class library is deployed.
 
@@ -67,7 +65,7 @@ WCF services hosted in IIS use the same dynamic compilation model as [!INCLUDE[v
 
 - As uncompiled code placed directly in the .svc file. Implementation code can also be located inline in the service’s .svc file, after the \@ServiceHost directive. Any changes to inline code cause the application to be recycled and recompiled when the next request is received.
 
-For more information about the [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] compilation model, see [ASP.NET Compilation Overview](https://go.microsoft.com/fwlink/?LinkId=94773).
+For more information about the ASP.NET 2.0 compilation model, see [ASP.NET Compilation Overview](https://go.microsoft.com/fwlink/?LinkId=94773).
 
 ## Configure the WCF Service
 
@@ -97,7 +95,7 @@ You must always use relative endpoint addresses for IIS-hosted service endpoints
 
 ### Available Transports
 
-WCF services hosted in IIS 5.1 and [!INCLUDE[iis601](../../../../includes/iis601-md.md)] are restricted to using HTTP-based communication. On these IIS platforms, configuring a hosted service to use a non-HTTP binding results in an error during service activation. For [!INCLUDE[iisver](../../../../includes/iisver-md.md)], the supported transports include HTTP, Net.TCP, Net.Pipe, Net.MSMQ, and msmq.formatname for backwards compatibility with existing MSMQ applications.
+WCF services hosted in IIS 5.1 and IIS 6.0 are restricted to using HTTP-based communication. On these IIS platforms, configuring a hosted service to use a non-HTTP binding results in an error during service activation. For IIS 7.0, the supported transports include HTTP, Net.TCP, Net.Pipe, Net.MSMQ, and msmq.formatname for backwards compatibility with existing MSMQ applications.
 
 ### HTTP Transport Security
 

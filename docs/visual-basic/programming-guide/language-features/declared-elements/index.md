@@ -8,33 +8,33 @@ A *declared element* is a programming element that is defined in a declaration s
   
  Declaration statements include the following:  
   
--   [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
+- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
   
--   [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)  
+- [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)  
   
--   [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)  
+- [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)  
   
--   [Class Statement](../../../../visual-basic/language-reference/statements/class-statement.md)  
+- [Class Statement](../../../../visual-basic/language-reference/statements/class-statement.md)  
   
--   [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)  
+- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)  
   
--   [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)  
+- [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)  
   
--   [Interface Statement](../../../../visual-basic/language-reference/statements/interface-statement.md)  
+- [Interface Statement](../../../../visual-basic/language-reference/statements/interface-statement.md)  
   
--   [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
+- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
   
--   [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
+- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
   
--   [Declare Statement](../../../../visual-basic/language-reference/statements/declare-statement.md)  
+- [Declare Statement](../../../../visual-basic/language-reference/statements/declare-statement.md)  
   
--   [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)  
+- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)  
   
--   [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  
+- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  
   
--   [Event Statement](../../../../visual-basic/language-reference/statements/event-statement.md)  
+- [Event Statement](../../../../visual-basic/language-reference/statements/event-statement.md)  
   
--   [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)  
+- [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)  
   
 ## In This Section  
  [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  

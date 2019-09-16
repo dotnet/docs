@@ -23,13 +23,13 @@ Creates an auto-reset event object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAutoEvent (  
     [out] IHostAutoEvent **ppEvent  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEvent`  
  [out] A pointer to the address of an [IHostAutoEvent](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md) instance implemented by the host, or null if the event object could not be created.  
   
@@ -58,6 +58,7 @@ HRESULT CreateAutoEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
 - [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

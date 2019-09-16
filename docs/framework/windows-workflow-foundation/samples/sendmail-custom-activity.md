@@ -41,7 +41,7 @@ This sample demonstrates how to create a custom activity that derives from <xref
 ### Sending an email using tokens specified in the body  
  This code snippet demonstrates how you can send email with tokens in the body. Notice how the tokens are provided in the body property. Values for those tokens are provided to the tokens property.  
   
-```html  
+```csharp  
 IDictionary<string, string> tokens = new Dictionary<string, string>();  
 tokens.Add("@name", "John Doe");  
 tokens.Add("@date", DateTime.Now.ToString());  
@@ -63,7 +63,7 @@ new SendMail
 ### Sending an email using a template  
  This snippet shows how to send an email using a template tokens in the body. Notice that when setting the `BodyTemplateFilePath` property we don’t need to provide the value for Body property (the contents of the template file will be copied to the body).  
   
-```  
+```csharp  
 new SendMail  
 {    
     From = new LambdaValue<MailAddress>(ctx => new MailAddress("john.doe@contoso.com")),  
@@ -80,7 +80,7 @@ new SendMail
 ### Sending Mails in Testing Mode  
  This code snippet shows how to set the two testing properties: by setting `TestMailTo` to all messages will be sent to `john.doe@contoso.con` (without regard of the values of To, Cc, Bcc). By setting TestDropPath all outgoing emails will be also recorded in the provided path. These properties can be set independently (they are not related).  
   
-```  
+```csharp  
 new SendMail  
 {    
    From = new LambdaValue<MailAddress>(ctx => new MailAddress("john.doe@contoso.com")),  
@@ -101,35 +101,35 @@ new SendMail
   
  For more information about setting up a SMTP server, see the following links.  
   
--   [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=166060)  
+- [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=166060)  
   
--   [Configuring the SMTP Service (IIS 6.0)](https://go.microsoft.com/fwlink/?LinkId=150456)  
+- [Configuring the SMTP Service (IIS 6.0)](https://go.microsoft.com/fwlink/?LinkId=150456)  
   
--   [IIS 7.0: Configure SMTP E-Mail](https://go.microsoft.com/fwlink/?LinkId=150457)  
+- [IIS 7.0: Configure SMTP E-Mail](https://go.microsoft.com/fwlink/?LinkId=150457)  
   
--   [How to Install the SMTP Service](https://go.microsoft.com/fwlink/?LinkId=150458)  
+- [How to Install the SMTP Service](https://go.microsoft.com/fwlink/?LinkId=150458)  
   
  SMTP emulators provided by third parties are available for download.  
   
 ##### To run this sample  
   
-1.  Using Visual Studio 2010, open the SendMail.sln solution file.  
+1. Using Visual Studio 2010, open the SendMail.sln solution file.  
   
-2.  Ensure that you have access to a valid SMTP server. See the set-up instructions.  
+2. Ensure that you have access to a valid SMTP server. See the set-up instructions.  
   
-3.  Configure the program with your server address, and From and To email addresses.  
+3. Configure the program with your server address, and From and To email addresses.  
   
      To correctly run this sample, you may need to configure the value of From and To email addresses and the address of the SMTP server in  Program.cs and in Sequence.xaml. You will need to change the address in both locations since the program sends mail in two different ways  
   
-4.  To build the solution, press CTRL+SHIFT+B.  
+4. To build the solution, press CTRL+SHIFT+B.  
   
-5.  To run the solution, press CTRL+F5.  
+5. To run the solution, press CTRL+F5.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\SendMail`
+> `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\SendMail`

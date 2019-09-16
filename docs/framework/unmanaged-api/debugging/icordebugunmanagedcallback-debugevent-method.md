@@ -23,14 +23,14 @@ Notifies the debugger that a native event has been fired.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebugEvent (  
     [in] LPDEBUG_EVENT  pDebugEvent,  
     [in] BOOL           fOutOfBand  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDebugEvent`  
  [in] A pointer to the native event.  
   
@@ -56,4 +56,5 @@ HRESULT DebugEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugUnmanagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugunmanagedcallback-interface.md)

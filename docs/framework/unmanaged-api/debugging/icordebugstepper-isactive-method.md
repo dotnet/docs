@@ -23,13 +23,13 @@ Gets a value that indicates whether this ICorDebugStepper is currently executing
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsActive (  
     [out] BOOL   *pbActive  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbActive`  
  [out] Returns `true` if the stepper is currently executing a step; otherwise, returns `false`.  
   

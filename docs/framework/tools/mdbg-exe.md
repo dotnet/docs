@@ -17,7 +17,7 @@ At the Package Manager prompt, type the following:
   
 ## Syntax  
   
-```  
+```console  
 MDbg [ProgramName[arguments]] [options]  
 ```  
   
@@ -84,7 +84,7 @@ MDbg [ProgramName[arguments]] [options]
   
  After you compile your application, type **mdbg** at the command prompt to start a debugging session, as shown in the following example.  
   
-```  
+```console  
 C:\Program Files\Microsoft Visual Studio 8\VC>mdbg  
 MDbg (Managed debugger) v2.0.50727.42 (RTM.050727-4200) started.  
 Copyright (C) Microsoft Corporation. All rights reserved.  
@@ -99,5 +99,6 @@ mdbg>
  Once you are in the debugger, use the commands and arguments described in the previous section.  
   
 ## See also
+
 - [Tools](../../../docs/framework/tools/index.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

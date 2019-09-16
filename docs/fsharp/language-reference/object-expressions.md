@@ -47,7 +47,7 @@ let obj2 = delimiter("{","}", "Bananas!");
 
 printfn "%A" (System.String.Format("{0:D}", obj2))
 
-// This object expression implements multiple interfaces.
+// Define two interfaces
 type IFirst =
   abstract F : unit -> unit
   abstract G : unit -> unit
@@ -57,7 +57,7 @@ type ISecond =
   abstract H : unit -> unit
   abstract J : unit -> unit
 
-// This object expression implements an interface chain.
+// This object expression implements both interfaces.
 let implementer() =
     { new ISecond with
         member this.H() = ()

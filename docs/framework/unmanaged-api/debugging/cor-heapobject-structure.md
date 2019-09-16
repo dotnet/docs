@@ -22,7 +22,7 @@ Provides information about an object on the managed heap.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_HEAPOBJECT {  
     CORDB_ADDRESS address;    
     ULONG64 size;             
@@ -59,5 +59,6 @@ typedef struct _COR_HEAPOBJECT {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

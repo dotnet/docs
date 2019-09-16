@@ -27,17 +27,18 @@ Specifies the name of the assembly that this module will be a part of.
   
  The `-moduleassemblyname` option is needed only when the following are true:  
   
--   A data type in the module needs access to a `Friend` type in a referenced assembly.  
+- A data type in the module needs access to a `Friend` type in a referenced assembly.  
   
--   The referenced assembly has granted friend assembly access to the assembly into which the module will be built.  
+- The referenced assembly has granted friend assembly access to the assembly into which the module will be built.  
   
- For more information about creating a module, see [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md). For more information about friend assemblies, see [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md).  
+ For more information about creating a module, see [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md). For more information about friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).  
   
 > [!NOTE]
->  The `-moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
+> The `-moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
   
 ## See also
-- [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)
+
+- [How to: Build a Multifile Assembly](../../../framework/app-domains/build-multifile-assembly.md)
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
 - [-main](../../../visual-basic/reference/command-line-compiler/main.md)
@@ -45,4 +46,4 @@ Specifies the name of the assembly that this module will be a part of.
 - [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)
 - [Assemblies in .NET](../../../standard/assembly/index.md)
 - [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)
+- [Friend Assemblies](../../../standard/assembly/friend.md)

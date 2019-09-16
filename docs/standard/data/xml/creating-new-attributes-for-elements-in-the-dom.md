@@ -12,9 +12,9 @@ ms.author: "mairaw"
 # Creating New Attributes for Elements in the DOM
 Creating new attributes is different than creating other node types, because attributes are not nodes, but are properties of an element node and are contained in an **XmlAttributeCollection** associated with the element. There are multiple ways to create an attribute and attach it to an element:  
   
--   Get the element node and use **SetAttribute** to add an attribute to the attribute collection of that element.  
+- Get the element node and use **SetAttribute** to add an attribute to the attribute collection of that element.  
   
--   Create an **XmlAttribute** node using the **CreateAttribute** method, get the element node, then use **SetAttributeNode** to add the node to the attribute collection of that element.  
+- Create an **XmlAttribute** node using the **CreateAttribute** method, get the element node, then use **SetAttributeNode** to add the node to the attribute collection of that element.  
   
  The following example shows how to add an attribute to an element using the **SetAttribute** method.  
   

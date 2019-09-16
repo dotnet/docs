@@ -22,7 +22,7 @@ Provides details about the `Event_MDAFired` event, which triggers the creation o
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _MDAInfo {  
     LPCWSTR  lpMDACaption;  
     LPCWSTR  lpMDAMessage  
@@ -41,9 +41,9 @@ typedef struct _MDAInfo {
   
  The runtime takes the following steps when an event that triggers the creation of an MDA is fired:  
   
--   If the host has not registered an [IActionOnCLREvent](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-interface.md) instance by calling [ICLROnEventManager::RegisterActionOnEvent](../../../../docs/framework/unmanaged-api/hosting/iclroneventmanager-registeractiononevent-method.md) to be notified of an `Event_MDAFired` event, the runtime proceeds with its default, non-hosted behavior.  
+- If the host has not registered an [IActionOnCLREvent](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-interface.md) instance by calling [ICLROnEventManager::RegisterActionOnEvent](../../../../docs/framework/unmanaged-api/hosting/iclroneventmanager-registeractiononevent-method.md) to be notified of an `Event_MDAFired` event, the runtime proceeds with its default, non-hosted behavior.  
   
--   If the host has registered a handler for this event, the runtime checks to see whether a debugger is attached to the process. If it is, the runtime breaks into the debugger. When the debugger continues, it calls into the host. If no debugger is attached, the runtime calls `IActionOnCLREvent::OnEvent` and passes a pointer to an `MDAInfo` instance as the `data` parameter.  
+- If the host has registered a handler for this event, the runtime checks to see whether a debugger is attached to the process. If it is, the runtime breaks into the debugger. When the debugger continues, it calls into the host. If no debugger is attached, the runtime calls `IActionOnCLREvent::OnEvent` and passes a pointer to an `MDAInfo` instance as the `data` parameter.  
   
  The host can choose to activate MDAs and to be notified when an MDA is activated. This gives the host an opportunity to override default behavior and to abort the managed thread that raised the event, to prevent it from corrupting the process state. For more information about using MDAs, see [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md).  
   
@@ -57,5 +57,6 @@ typedef struct _MDAInfo {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
 - [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

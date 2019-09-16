@@ -24,7 +24,7 @@ Closes any valid common language runtime (CLR) continue-startup events located i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseCLREnumeration (  
     [in]  DWORD      pHandleArray,  
     [in]  LPWSTR**   pStringArray,  
@@ -32,7 +32,7 @@ HRESULT CloseCLREnumeration (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pHandleArray`  
  [in] Pointer to the array of event handles returned from the [EnumerateCLRs function](../../../../docs/framework/unmanaged-api/debugging/enumerateclrs-function.md).  
   

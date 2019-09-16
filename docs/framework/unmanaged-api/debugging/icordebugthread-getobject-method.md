@@ -23,13 +23,13 @@ Gets an interface pointer to the common language runtime (CLR) thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObject (  
     [out] ICorDebugValue   **ppObject  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppObject`  
  [out] A pointer to the address of an ICorDebugValue interface object that represents the CLR thread.  
   
@@ -43,4 +43,5 @@ HRESULT GetObject (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - <xref:System.Threading.Thread>

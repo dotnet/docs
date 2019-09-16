@@ -31,14 +31,14 @@ Option Strict { On | Off }
 ## Remarks  
  When `Option Strict On` or `Option Strict` appears in a file, the following conditions cause a compile-time error:  
   
--   Implicit narrowing conversions  
+- Implicit narrowing conversions  
   
--   Late binding  
+- Late binding  
   
--   Implicit typing that results in an `Object` type  
+- Implicit typing that results in an `Object` type  
   
 > [!NOTE]
->  In the warning configurations that you can set on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), there are three settings that correspond to the three conditions that cause a compile-time error. For information about how to use these settings, see [To set warning configurations in the IDE](../../../visual-basic/language-reference/statements/option-strict-statement.md#conditions) later in this topic.  
+> In the warning configurations that you can set on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), there are three settings that correspond to the three conditions that cause a compile-time error. For information about how to use these settings, see [To set warning configurations in the IDE](../../../visual-basic/language-reference/statements/option-strict-statement.md#conditions) later in this topic.  
   
  The `Option Strict Off` statement turns off error and warning checking for all three conditions, even if the associated IDE settings specify to turn on these errors or warnings. The `Option Strict On` statement turns on error and warning checking for all three conditions, even if the associated IDE settings specify to turn off these errors or warnings.  
   
@@ -46,11 +46,11 @@ Option Strict { On | Off }
   
  When you set `Option Strict` to `On`, Visual Basic checks that data types are specified for all programming elements. Data types can be specified explicitly, or specified by using local type inference. Specifying data types for all your programming elements is recommended, for the following reasons:  
   
--   It enables IntelliSense support for your variables and parameters. This enables you to see their properties and other members as you type code.  
+- It enables IntelliSense support for your variables and parameters. This enables you to see their properties and other members as you type code.  
   
--   It enables the compiler to perform type checking. Type checking helps you find statements that can fail at run time because of type conversion errors. It also identifies calls to methods on objects that do not support those methods.  
+- It enables the compiler to perform type checking. Type checking helps you find statements that can fail at run time because of type conversion errors. It also identifies calls to methods on objects that do not support those methods.  
   
--   It speeds up the execution of code. One reason for this is that if you do not specify a data type for a programming element, the Visual Basic compiler assigns it the `Object` type. Compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
+- It speeds up the execution of code. One reason for this is that if you do not specify a data type for a programming element, the Visual Basic compiler assigns it the `Object` type. Compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
   
 ## Implicit Narrowing Conversion Errors  
  Implicit narrowing conversion errors occur when there is an implicit data type conversion that is a narrowing conversion.  
@@ -59,15 +59,15 @@ Option Strict { On | Off }
   
  Conversions that can cause errors include implicit conversions that occur in expressions. For more information, see the following topics:  
   
--   [+ Operator](../../../visual-basic/language-reference/operators/addition-operator.md)  
+- [+ Operator](../../../visual-basic/language-reference/operators/addition-operator.md)  
   
--   [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
+- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
   
--   [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md)  
+- [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md)  
   
--   [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
+- [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
   
--   [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)  
+- [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)  
   
  When you concatenate strings by using the [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md), all conversions to the strings are considered to be widening. So these conversions do not generate an implicit narrowing conversion error, even if `Option Strict` is on.  
   
@@ -103,18 +103,18 @@ Option Strict { On | Off }
 ### To set Option Strict in the IDE  
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
+1. In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
-2.  On the **Compile** tab, set the value in the **Option Strict** box.  
+2. On the **Compile** tab, set the value in the **Option Strict** box.  
   
-###  <a name="conditions"></a> To set warning configurations in the IDE  
+### <a name="conditions"></a> To set warning configurations in the IDE  
  When you use the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) instead of an `Option Strict` statement, you have additional control over the conditions that generate errors. The **Warning configurations** section of the **Compile Page** has settings that correspond to the three conditions that cause a compile-time error when `Option Strict` is on. Following are these settings:  
   
--   **Implicit conversion**  
+- **Implicit conversion**  
   
--   **Late binding; call could fail at run time**  
+- **Late binding; call could fail at run time**  
   
--   **Implicit type; object assumed**  
+- **Implicit type; object assumed**  
   
  When you set **Option Strict** to **On**, all three of these warning configuration settings are set to **Error**. When you set **Option Strict** to **Off**, all three settings are set to **None**.  
   
@@ -131,19 +131,19 @@ Option Strict { On | Off }
 ## Example  
  The following examples demonstrate compile-time errors caused by implicit type conversions that are narrowing conversions. This category of errors corresponds to the **Implicit conversion** condition on the **Compile Page**.  
   
- [!code-vb[VbVbalrStatements#161](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#161](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#161)]  
   
 ## Example  
  The following example demonstrates a compile-time error caused by late binding. This category of errors corresponds to the **Late binding; call could fail at run time** condition on the **Compile Page**.  
   
- [!code-vb[VbVbalrStatements#162](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#162](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#162)]  
   
 ## Example  
  The following examples demonstrate errors caused by variables that are declared with an implicit type of `Object`. This category of errors corresponds to the **Implicit type; object assumed** condition on the **Compile Page**.  
   
- [!code-vb[VbVbalrStatements#163](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#163](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#163)]  
   
- [!code-vb[VbVbalrStatements#164](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#164](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#164)]  
   
 ## See also
 

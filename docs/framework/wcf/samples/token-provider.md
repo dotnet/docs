@@ -4,25 +4,25 @@ ms.date: "03/30/2017"
 ms.assetid: 947986cf-9946-4987-84e5-a14678d96edb
 ---
 # Token Provider
-This sample demonstrates how to implement a custom token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with an [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:
+This sample demonstrates how to implement a custom token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with a CardSpace token provider. Custom token providers are useful in the following cases:
 
--   If you have a credential store that these token providers cannot operate with.
+- If you have a credential store that these token providers cannot operate with.
 
--   If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the WCF client framework uses the credentials.
+- If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the WCF client framework uses the credentials.
 
--   If you are building a custom token.
+- If you are building a custom token.
 
  This sample shows how to build a custom token provider that transforms the input from the user into a different format.
 
  To summarize, this sample demonstrates the following:
 
--   How a client can authenticate using a username/password pair.
+- How a client can authenticate using a username/password pair.
 
--   How a client can be configured with a custom token provider.
+- How a client can be configured with a custom token provider.
 
--   How the server can validate the client credentials using a password with a custom <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> that validates that the username and password match.
+- How the server can validate the client credentials using a password with a custom <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> that validates that the username and password match.
 
--   How the server is authenticated by the client using the server's X.509 certificate.
+- How the server is authenticated by the client using the server's X.509 certificate.
 
  This sample also shows how the caller's identity is accessible after the custom token authentication process.
 
@@ -103,13 +103,13 @@ This sample demonstrates how to implement a custom token provider. A token provi
 
  The following steps show how to develop a custom token provider and integrate it with the WCF security framework:
 
-1.  Write a custom token provider.
+1. Write a custom token provider.
 
      The sample implements a custom token provider that obtains the username and password. The password must match this username. This custom token provider is for demonstration purposes only and is not recommended for real world deployment.
 
      To perform this task, the custom token provider derives the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class and overrides the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%28System.TimeSpan%29> method. This method creates and returns a new `UserNameSecurityToken`.
 
-    ```
+    ```csharp
     protected override SecurityToken GetTokenCore(TimeSpan timeout)
     {
         // obtain username and password from the user using console window
@@ -122,11 +122,11 @@ This sample demonstrates how to implement a custom token provider. A token provi
     }
     ```
 
-2.  Write custom security token manager.
+2. Write custom security token manager.
 
      The <xref:System.IdentityModel.Selectors.SecurityTokenManager> is used to create <xref:System.IdentityModel.Selectors.SecurityTokenProvider> for specific <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> that is passed to it in `CreateSecurityTokenProvider` method. Security token manager is also used to create token authenticators and a token serializer, but those are not covered by this sample. In this sample, the custom security token manager inherits from <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> class and overrides the `CreateSecurityTokenProvider` method to return custom username token provider when the passed token requirements indicate that username provider is requested.
 
-    ```
+    ```csharp
     public class MyUserNameSecurityTokenManager : ClientCredentialsSecurityTokenManager
     {
         MyUserNameClientCredentials myUserNameClientCredentials;
@@ -153,11 +153,11 @@ This sample demonstrates how to implement a custom token provider. A token provi
     }
     ```
 
-3.  Write a custom client credential.
+3. Write a custom client credential.
 
      Client credentials class is used to represent the credentials that are configured for the client proxy and creates security token manager that is used to obtain token authenticators, token providers and a token serializer.
 
-    ```
+    ```csharp
     public class MyUserNameClientCredentials : ClientCredentials
     {
         public MyUserNameClientCredentials()
@@ -178,11 +178,11 @@ This sample demonstrates how to implement a custom token provider. A token provi
     }
     ```
 
-4.  Configure the client to use the custom client credential.
+4. Configure the client to use the custom client credential.
 
      In order for the client to use the custom client credential, the sample deletes the default client credential class and supplies the new client credential class.
 
-    ```
+    ```csharp
     static void Main()
     {
         // ...
@@ -198,7 +198,7 @@ This sample demonstrates how to implement a custom token provider. A token provi
 
  On the service, to display the caller's information, use the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> as shown in the following code example. The <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> contains claims information about the current caller.
 
-```
+```csharp
 static void DisplayIdentityInformation()
 {
     Console.WriteLine("\t\tSecurity context identity  :  {0}",
@@ -213,7 +213,7 @@ static void DisplayIdentityInformation()
 
  The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration:
 
--   Creating the server certificate.
+- Creating the server certificate.
 
      The following lines from the Setup.bat batch file create the server certificate to be used. The `%SERVER_NAME%` variable specifies the server name. Change this variable to specify your own server name. The default value in this batch file is localhost.
 
@@ -227,7 +227,7 @@ static void DisplayIdentityInformation()
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe
     ```
 
--   Installing the server certificate into the client's trusted certificate store:
+- Installing the server certificate into the client's trusted certificate store:
 
      The following lines in the Setup.bat batch file copy the server certificate into the client trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the client system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft issued certificate—this step of populating the client certificate store with the server certificate is not required.
 
@@ -236,48 +236,48 @@ static void DisplayIdentityInformation()
     ```
 
 > [!NOTE]
->  The Setup.bat batch file is designed to be run from a Windows SDK Command Prompt. It requires that the MSSDK environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Windows SDK Command Prompt.
+> The Setup.bat batch file is designed to be run from a Windows SDK Command Prompt. It requires that the MSSDK environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Windows SDK Command Prompt.
 
 #### To set up and build the sample
 
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
 #### To run the sample on the same computer
 
-1.  Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
-2.  Launch service.exe from service\bin.  
+2. Launch service.exe from service\bin.  
   
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  At the username prompt, type a user name.  
+4. At the username prompt, type a user name.  
   
-5.  At the password prompt, use the same string that was typed for the username prompt.  
+5. At the password prompt, use the same string that was typed for the username prompt.  
   
-6.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+6. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computers  
   
-1.  Create a directory on the service computer for the service binaries.  
+1. Create a directory on the service computer for the service binaries.  
   
-2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
+2. Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run from a Developer Command Prompt for Visual Studio opened with administrator privileges. You must set `%SERVER_NAME%` variable to fully-qualified host name of the computer that is used to host the service.  
+3. You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run from a Developer Command Prompt for Visual Studio opened with administrator privileges. You must set `%SERVER_NAME%` variable to fully-qualified host name of the computer that is used to host the service.  
   
-4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this when the server certificate is issued by a client trusted issuer.  
+4. Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this when the server certificate is issued by a client trusted issuer.  
   
-5.  In the Service.exe.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.  
+5. In the Service.exe.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.  
   
-6.  On the service computer, run service.exe from a command prompt.  
+6. On the service computer, run service.exe from a command prompt.  
   
-7.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
+7. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
   
-8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
+8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
   
 9. On the client computer, launch `Client.exe` from a command prompt window.  
   
@@ -285,6 +285,4 @@ static void DisplayIdentityInformation()
   
 #### To clean up after the sample  
   
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
-  
-## See also
+1. Run Cleanup.bat in the samples folder once you have finished running the sample.  

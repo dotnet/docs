@@ -14,5 +14,6 @@ Id: 163
  This event indicates A connection that Windows Process Activation Service (WAS) requires timed out, listing the process name and ID.  
   
 ## See also
-- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
-- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+
+- [Event Logging](index.md)
+- [Events General Reference](events-general-reference.md)

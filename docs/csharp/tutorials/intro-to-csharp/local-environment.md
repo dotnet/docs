@@ -6,10 +6,10 @@ ms.date: 10/23/2018
 # Become familiar with the .NET development tools
 
 The first step in running a tutorial on your machine is to set up a development environment.
-The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting
+The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting
 up your local development environment on Mac, PC or Linux.
 
-Alternatively, you can install the [.NET Core SDK](https://www.microsoft.com/net/download) and
+Alternatively, you can install the [.NET Core SDK](https://dotnet.microsoft.com/download) and
 [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Basic application development flow
@@ -42,12 +42,6 @@ different actions.
 
 This tutorial assumes that you have finished the [Hello world](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp-local.md) lessons.
-
-## [String interpolation](interpolated-strings-local.md)
-
-The [String interpolation](interpolated-strings-local.md) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the formatting of the result string.
-
-This tutorial assumes that you have finished the [Hello world](hello-world.yml), [Numbers in C#](numbers-in-csharp-local.md), and [Branches and loops](branches-and-loops-local.md) lessons.
 
 ## [List collection](arrays-and-collections.md)
 

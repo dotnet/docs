@@ -10,20 +10,20 @@ Gets the thread on which the event occurred.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread(  
         [out]ICorDebugThread **ppThread  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  ppThread  
  [out] A pointer to the address of an ICorDebugThread object that represents the thread on which the event occurred.  
   
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -35,5 +35,6 @@ HRESULT GetThread(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

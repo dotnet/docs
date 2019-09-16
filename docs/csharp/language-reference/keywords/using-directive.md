@@ -70,8 +70,6 @@ Create a `using` directive to use the types in a namespace without having to spe
 
 Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET API Browser](../../../../api/index.md).
 
-For examples on referencing methods in other assemblies, see [Create and Use Assemblies Using the Command Line](../../programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).
-
 ## Example 1
 
 The following example shows how to define and use a `using` alias for a namespace:
@@ -96,6 +94,5 @@ For more information, see [Using directives](~/_csharplang/spec/namespaces.md#us
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
 - [C# Keywords](index.md)
-- [Namespace Keywords](namespace-keywords.md)
 - [Namespaces](../../programming-guide/namespaces/index.md)
 - [using Statement](using-statement.md)

@@ -8,11 +8,11 @@ This topic shows you how to modify an expression tree. Expression trees are immu
   
 ### To modify an expression tree  
   
-1.  Create a new **Console Application** project.  
+1. Create a new **Console Application** project.  
   
-2.  Add a `using` directive to the file for the `System.Linq.Expressions` namespace.  
+2. Add a `using` directive to the file for the `System.Linq.Expressions` namespace.  
   
-3.  Add the `AndAlsoModifier` class to your project.  
+3. Add the `AndAlsoModifier` class to your project.  
   
     ```csharp  
     public class AndAlsoModifier : ExpressionVisitor  
@@ -40,9 +40,9 @@ This topic shows you how to modify an expression tree. Expression trees are immu
   
      This class inherits the <xref:System.Linq.Expressions.ExpressionVisitor> class and is specialized to modify expressions that represent conditional `AND` operations. It changes these operations from a conditional `AND` to a conditional `OR`. To do this, the class overrides the <xref:System.Linq.Expressions.ExpressionVisitor.VisitBinary%2A> method of the base type, because conditional `AND` expressions are represented as binary expressions. In the `VisitBinary` method, if the expression that is passed to it represents a conditional `AND` operation, the code constructs a new expression that contains the conditional `OR` operator instead of the conditional `AND` operator. If the expression that is passed to `VisitBinary` does not represent a conditional `AND` operation, the method defers to the base class implementation. The base class methods construct nodes that are like the expression trees that are passed in, but the nodes have their sub trees replaced with the expression trees that are produced recursively by the visitor.  
   
-4.  Add a `using` directive to the file for the `System.Linq.Expressions` namespace.  
+4. Add a `using` directive to the file for the `System.Linq.Expressions` namespace.  
   
-5.  Add code to the `Main` method in the Program.cs file to create an expression tree and pass it to the method that will modify it.  
+5. Add code to the `Main` method in the Program.cs file to create an expression tree and pass it to the method that will modify it.  
   
     ```csharp  
     Expression<Func<string, bool>> expr = name => name.Length > 10 && name.StartsWith("G");  
@@ -62,9 +62,9 @@ This topic shows you how to modify an expression tree. Expression trees are immu
   
      The code creates an expression that contains a conditional `AND` operation. It then creates an instance of the `AndAlsoModifier` class and passes the expression to the `Modify` method of this class. Both the original and the modified expression trees are outputted to show the change.  
   
-6.  Compile and run the application.  
+6. Compile and run the application.  
   
 ## See also
 
-- [How to: Execute Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)
-- [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [How to: Execute Expression Trees (C#)](./how-to-execute-expression-trees.md)
+- [Expression Trees (C#)](./index.md)

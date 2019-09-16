@@ -60,6 +60,9 @@ A non-nullable value type is implicitly converted to the corresponding nullable 
 The predefined unary and binary operators and any user-defined operators that exist for value types may also be used by nullable types. These operators produce a null value if one or both operands are null; otherwise, the operator uses the contained values to calculate the result. For example:  
   
 [!code-csharp[operators](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#7)]
+
+> [!NOTE]
+> For the `bool?` type, the predefined `&` and `|` operators don't follow the rules described in this section: the result of an operator evaluation can be non-null even if one of the operands is null. For more information, see the [Nullable Boolean logical operators](../../language-reference/operators/boolean-logical-operators.md#nullable-boolean-logical-operators) section of the [Boolean logical operators](../../language-reference/operators/boolean-logical-operators.md) article.
   
 For the relational operators (`<`, `>`, `<=`, `>=`), if one or both operands are null, the result is `false`. Do not assume that because a particular comparison (for example, `<=`) returns `false`, the opposite comparison (`>`) returns `true`. The following example shows that 10 is
 
@@ -69,6 +72,8 @@ For the relational operators (`<`, `>`, `<=`, `>=`), if one or both operands are
 [!code-csharp-interactive[relational and equality operators](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#8)]
   
 The above example also shows that an equality comparison of two nullable types that are both null evaluates to `true`.
+
+For more information, see the [Lifted operators](~/_csharplang/spec/expressions.md#lifted-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## Boxing and unboxing
 
@@ -81,31 +86,8 @@ You can unbox the boxed value type to the corresponding nullable type, as the fo
 
 [!code-csharp-interactive[boxing and unboxing](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#9)]
 
-## The bool? type
-
-The `bool?` nullable type can contain three different values: [true](../../language-reference/keywords/true-literal.md), [false](../../language-reference/keywords/false-literal.md), and [null](../../language-reference/keywords/null.md). The `bool?` type is like the Boolean variable type that is used in SQL. To ensure that the results produced by the `&` and `|` operators are consistent with the three-valued Boolean type in SQL, the following predefined operators are provided:
-
-- `bool? operator &(bool? x, bool? y)`  
-- `bool? operator |(bool? x, bool? y)`  
-  
-The semantics of these operators is defined by the following table:  
-  
-|x|y|x&y|x&#124;y|  
-|-------|-------|---------|--------------|  
-|true|true|true|true|  
-|true|false|false|true|  
-|true|null|null|true|  
-|false|true|false|true|  
-|false|false|false|false|  
-|false|null|false|null|  
-|null|true|null|true|  
-|null|false|false|null|  
-|null|null|null|null|  
-
-Note that these two operators don't follow the rules described in the [Operators](#operators) section: the result of an operator evaluation can be non-null even if one of the operands is null.
-  
 ## See also
 
 - [Nullable types](index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Programming Guide](../index.md)
 - [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)

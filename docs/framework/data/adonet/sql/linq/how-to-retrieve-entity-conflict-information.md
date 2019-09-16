@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 9a02b608-e7bb-4041-a452-a7fed26fd008
 ---
 # How to: Retrieve Entity Conflict Information
-You can use objects of the <xref:System.Data.Linq.ObjectChangeConflict> class to provide information about conflicts revealed by <xref:System.Data.Linq.ChangeConflictException> exceptions. For more information, see [Optimistic Concurrency: Overview](../../../../../../docs/framework/data/adonet/sql/linq/optimistic-concurrency-overview.md).  
+You can use objects of the <xref:System.Data.Linq.ObjectChangeConflict> class to provide information about conflicts revealed by <xref:System.Data.Linq.ChangeConflictException> exceptions. For more information, see [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md).  
   
 ## Example  
  The following example iterates through a list of accumulated conflicts.  
@@ -16,4 +16,5 @@ You can use objects of the <xref:System.Data.Linq.ObjectChangeConflict> class to
  [!code-vb[System.Data.Linq.ObjectChangeConflict#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.objectchangeconflict/vb/module1.vb#1)]  
   
 ## See also
-- [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)
+
+- [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md)

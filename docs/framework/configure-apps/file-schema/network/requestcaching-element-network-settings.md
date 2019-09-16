@@ -58,14 +58,14 @@ Controls the caching mechanism for network requests.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[defaultHttpCachePolicy](../../../../../docs/framework/configure-apps/file-schema/network/defaulthttpcachepolicy-element-network-settings.md)|Optional element.<br /><br /> Describes whether HTTP caching is active and describes the default caching policy.|  
-|[\<defaultFtpCachePolicy> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/defaultftpcachepolicy-element-network-settings.md)|Optional element.<br /><br /> Describes whether FTP caching is active and describes the default caching policy.|  
+|[defaultHttpCachePolicy](defaulthttpcachepolicy-element-network-settings.md)|Optional element.<br /><br /> Describes whether HTTP caching is active and describes the default caching policy.|  
+|[\<defaultFtpCachePolicy> Element (Network Settings)](defaultftpcachepolicy-element-network-settings.md)|Optional element.<br /><br /> Describes whether FTP caching is active and describes the default caching policy.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[system.net](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
+|[system.net](system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
   
 ## Example  
  The following example shows how to disable all caching.  
@@ -81,5 +81,6 @@ Controls the caching mechanism for network requests.
 ```  
   
 ## See also
+
 - <xref:System.Net.Cache?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

@@ -10,7 +10,7 @@ Returns the path of a module from the module's base address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,  
     [in] ULONG32 cchName,  
     [out] ULONG32 *pcchName,  
@@ -18,7 +18,7 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `baseAddress`  
  [in] A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the module's base address.  
   
@@ -34,7 +34,7 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -46,5 +46,6 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -6,44 +6,44 @@ ms.assetid: 381fdc3a-6e6c-4890-87fe-91cca6f4b476
 # WCF Web HTTP Programming Model Overview
 The Windows Communication Foundation (WCF) WEB HTTP programming model provides the basic elements required to build WEB HTTP services with WCF. WCF WEB HTTP services are designed to be accessed by the widest range of possible clients, including Web browsers and have the following unique requirements:  
   
--   **URIs and URI Processing** URIs play a central role in the design of WEB HTTP services. The WCF WEB HTTP programming model uses the <xref:System.UriTemplate> and <xref:System.UriTemplateTable> classes to provide URI processing capabilities.  
+- **URIs and URI Processing** URIs play a central role in the design of WEB HTTP services. The WCF WEB HTTP programming model uses the <xref:System.UriTemplate> and <xref:System.UriTemplateTable> classes to provide URI processing capabilities.  
   
--   **Support for GET and POST operations** WEB HTTP services make use of the GET verb for data retrieval, in addition to various invoke verbs for data modification and remote invocation. The WCF WEB HTTP programming model uses the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> to associate service operations with both GET and other HTTP verbs like PUT, POST, and DELETE.  
+- **Support for GET and POST operations** WEB HTTP services make use of the GET verb for data retrieval, in addition to various invoke verbs for data modification and remote invocation. The WCF WEB HTTP programming model uses the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> to associate service operations with both GET and other HTTP verbs like PUT, POST, and DELETE.  
   
--   **Multiple data formats** Web-style services process many kinds of data in addition to SOAP messages. The WCF WEB HTTP programming model uses the <xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior> to support many different data formats including XML documents, JSON data object, and streams of binary content such as images, video files, or plain text.  
+- **Multiple data formats** Web-style services process many kinds of data in addition to SOAP messages. The WCF WEB HTTP programming model uses the <xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior> to support many different data formats including XML documents, JSON data object, and streams of binary content such as images, video files, or plain text.  
   
  The WCF WEB HTTP programming model extends the reach of WCF to cover Web-style scenarios that include WEB HTTP services, AJAX and JSON services, and Syndication (ATOM/RSS) feeds. For more information about AJAX and JSON services, see [AJAX Integration and JSON Support](../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md). For more information about Syndication, see [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md).  
   
  There are no extra restrictions on the types of data that can be returned from a WEB HTTP service. Any serializable type can be returned from an WEB HTTP service operation. Because WEB HTTP service operations can be invoke by a web browser there is a limitation on what data types can be specified in a URL. For more information on what types are supported by default see the **UriTemplate Query String Parameters and URLs** section below. The default behavior can be changed by providing your own T:System.ServiceModel.Dispatcher.QueryStringConverter implementation which specifies how to convert the parameters specified in a URL to the actual parameter type. For more information, see <xref:System.ServiceModel.Dispatcher.QueryStringConverter>  
   
 > [!CAUTION]
->  Services written with the WCF WEB HTTP programming model do not use SOAP messages. Because SOAP is not used, the security features provided by WCF cannot be used. You can, however use transport-based security by hosting your service with HTTPS. For more information about WCF security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+> Services written with the WCF WEB HTTP programming model do not use SOAP messages. Because SOAP is not used, the security features provided by WCF cannot be used. You can, however use transport-based security by hosting your service with HTTPS. For more information about WCF security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
   
 > [!WARNING]
->  Installing the WebDAV extension for IIS can cause Web HTTP services to return an HTTP 405 error as the WebDAV extension attempts to handle all PUT requests. To work around this issue you can uninstall the WebDAV extension or disable the WebDAV extension for your web site. For more information, see [IIS and WebDav](https://learn.iis.net/page.aspx/357/webdav-for-iis-70/)  
+> Installing the WebDAV extension for IIS can cause Web HTTP services to return an HTTP 405 error as the WebDAV extension attempts to handle all PUT requests. To work around this issue you can uninstall the WebDAV extension or disable the WebDAV extension for your web site. For more information, see [IIS and WebDav](https://learn.iis.net/page.aspx/357/webdav-for-iis-70/)  
   
 ## URI Processing with UriTemplate and UriTemplateTable  
  URI templates provide an efficient syntax for expressing large sets of structurally similar URIs. For example, the following template expresses the set of all three-segment URIs that begin with "a" and end with "c" without regard to the value of the intermediate segment: a/{segment}/c  
   
  This template describes URIs like the following:  
   
--   a/x/c  
+- a/x/c  
   
--   a/y/c  
+- a/y/c  
   
--   a/z/c  
+- a/z/c  
   
--   and so on.  
+- and so on.  
   
  In this template, the curly brace notation ("{segment}") indicates a variable segment instead of a literal value.  
   
  .NET Framework provides an API for working with URI templates called <xref:System.UriTemplate>. `UriTemplates` allow you to do the following:  
   
--   You can call one of the `Bind` methods with a set of parameters to produce a *fully-closed URI* that matches the template. This means all variables within the URI template are replaced with actual values.  
+- You can call one of the `Bind` methods with a set of parameters to produce a *fully-closed URI* that matches the template. This means all variables within the URI template are replaced with actual values.  
   
--   You can call `Match`() with a candidate URI, which uses a template to break up a candidate URI into its constituent parts and returns a dictionary that contains the different parts of the URI labeled according to the variables in the template.  
+- You can call `Match`() with a candidate URI, which uses a template to break up a candidate URI into its constituent parts and returns a dictionary that contains the different parts of the URI labeled according to the variables in the template.  
   
--   `Bind`() and `Match`() are inverses so that you can call `Match`( `Bind`( x ) ) and come back with the same environment you started with.  
+- `Bind`() and `Match`() are inverses so that you can call `Match`( `Bind`( x ) ) and come back with the same environment you started with.  
   
  There are many times (especially on the server, where dispatching a request to a service operation based on the URI is necessary) that you want to keep track of a set of <xref:System.UriTemplate> objects in a data structure that can independently address each of the contained templates. <xref:System.UriTemplateTable> represents a set of URI templates and selects the best match given a set of templates and a candidate URI. This is not affiliated with any particular networking stack (WCF included) so you can use it wherever necessary.  
   
@@ -121,23 +121,24 @@ interface ICustomer
 ## Formats and the WCF WEB HTTP Programming Model  
  The WCF WEB HTTP programming model has new features to work with many different data formats. At the binding layer, the <xref:System.ServiceModel.WebHttpBinding> can read and write the following different kinds of data:  
   
--   XML  
+- XML  
   
--   JSON  
+- JSON  
   
--   Opaque binary streams  
+- Opaque binary streams  
   
  This means the WCF WEB HTTP programming model can handle any type of data but, you may be programming against <xref:System.IO.Stream>.  
   
  [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] provides support for JSON data (AJAX) as well as Syndication feeds (including ATOM and RSS). For more information about these features, see [WCF Web HTTP Formatting](../../../../docs/framework/wcf/feature-details/wcf-web-http-formatting.md)[WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md) and [AJAX Integration and JSON Support](../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md).  
   
 ## WCF WEB HTTP Programming Model and Security  
- Because the WCF WEB HTTP programming model does not support the WS-* protocols, the only way to secure a WCF WEB HTTP service is to expose the service over HTTPS using SSL. For more information about setting up SSL with [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [How to implement SSL in IIS](https://go.microsoft.com/fwlink/?LinkId=131613)  
+ Because the WCF WEB HTTP programming model does not support the WS-* protocols, the only way to secure a WCF WEB HTTP service is to expose the service over HTTPS using SSL. For more information about setting up SSL with IIS 7.0, see [How to implement SSL in IIS](https://go.microsoft.com/fwlink/?LinkId=131613)  
   
 ## Troubleshooting the WCF WEB HTTP Programming Model  
  When calling WCF WEB HTTP services using a <xref:System.ServiceModel.Channels.ChannelFactoryBase%601> to create a channel, the <xref:System.ServiceModel.Description.WebHttpBehavior> uses the <xref:System.ServiceModel.EndpointAddress> set in the configuration file even if a different <xref:System.ServiceModel.EndpointAddress> is passed to the <xref:System.ServiceModel.Channels.ChannelFactoryBase%601>.  
   
 ## See also
+
 - [WCF Syndication](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)
 - [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)
 - [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

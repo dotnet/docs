@@ -28,15 +28,15 @@ ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
   
  With an IErrorHandler, you can explicitly control the behavior of your application when an exception is thrown. You may:  
   
-1.  Decide whether or not to send a fault to the client  
+1. Decide whether or not to send a fault to the client  
   
-2.  Replace an exception with a fault  
+2. Replace an exception with a fault  
   
-3.  Replace a fault with another fault  
+3. Replace a fault with another fault  
   
-4.  Perform logging or tracing  
+4. Perform logging or tracing  
   
-5.  Perform other custom activities  
+5. Perform other custom activities  
   
  One can install a custom error handler by adding it to the ErrorHandlers property of the channel dispatchers for your service.  It is possible to have more than one error handler and they are called in the order they are added to this collection.  
   
@@ -62,4 +62,5 @@ ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
  A type conversion dispatch failure can be inspected the same as with many other types of dispatch failures by installing an error handler. The IErrorHandler extensibility point is called to handle service-level exceptions. From there, the response to be sent back to the caller – as well as perform any custom tasks and reporting – may be chosen.  
   
 ## See also
+
 - [Basic WCF Programming](../basic-wcf-programming.md)

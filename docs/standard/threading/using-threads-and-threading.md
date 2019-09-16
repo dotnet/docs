@@ -26,7 +26,7 @@ You create a new thread by creating a new instance of the <xref:System.Threading
 
 To terminate the execution of a thread, use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method. That method raises a <xref:System.Threading.ThreadAbortException> on the thread on which it's invoked. For more information, see [Destroying threads](destroying-threads.md).
 
-Beginning with the .NET Framework 4, you can use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType> to cancel a thread cooperatively. For more information, see [Canceling threads cooperatively](canceling-threads-cooperatively.md).
+Beginning with the .NET Framework 4, you can use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType> to cancel a thread cooperatively. For more information, see [Cancellation in managed threads](cancellation-in-managed-threads.md).
 
 Use the <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> method to make the calling thread wait for the termination of the thread on which the method is invoked.
 

@@ -11,15 +11,15 @@ The scenarios for designing custom activities and for rehosting the [!INCLUDE[wf
 
 ## In This Section
 
- [Using Custom Activity Designers and Templates](../../../docs/framework/windows-workflow-foundation/using-custom-activity-designers-and-templates.md)
+ [Using Custom Activity Designers and Templates](using-custom-activity-designers-and-templates.md)
 
  Describes how to create new custom activity designers and templates.
 
- [Rehosting the Workflow Designer](../../../docs/framework/windows-workflow-foundation/rehosting-the-workflow-designer.md)
+ [Rehosting the Workflow Designer](rehosting-the-workflow-designer.md)
 
  Describes how to re-host the [!INCLUDE[wfd1](../../../includes/wfd1-md.md)] outside of Visual Studio and how to display validation errors.
 
- [Using a Custom Expression Editor](../../../docs/framework/windows-workflow-foundation/using-a-custom-expression-editor.md)
+ [Using a Custom Expression Editor](using-a-custom-expression-editor.md)
 
  Describes how to implement a custom expression editor to use with workflow designers rehosted outside of Visual Studio 2010.
 
@@ -29,7 +29,7 @@ The scenarios for designing custom activities and for rehosting the [!INCLUDE[wf
 
 ## See also
 
-- [Extending Windows Workflow Foundation](../../../docs/framework/windows-workflow-foundation/extend.md)
-- [Designer](../../../docs/framework/windows-workflow-foundation/samples/designer.md)
-- [Custom Activity Designers](../../../docs/framework/windows-workflow-foundation/samples/custom-activity-designers.md)
-- [Designer ReHosting](../../../docs/framework/windows-workflow-foundation/samples/designer-rehosting.md)
+- [Extending Windows Workflow Foundation](extend.md)
+- [Designer](./samples/designer.md)
+- [Custom Activity Designers](./samples/custom-activity-designers.md)
+- [Designer ReHosting](./samples/designer-rehosting.md)

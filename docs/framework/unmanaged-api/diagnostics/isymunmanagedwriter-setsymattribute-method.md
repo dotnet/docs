@@ -23,7 +23,7 @@ Defines a custom attribute based upon its name. These attributes are held in the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSymAttribute(  
     [in] mdToken parent,  
     [in] const WCHAR *name,  
@@ -31,7 +31,7 @@ HRESULT SetSymAttribute(
     [in, size_is(cData)] unsigned char data[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The metadata token for which the attribute is being defined.  
   
@@ -51,4 +51,5 @@ HRESULT SetSymAttribute(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

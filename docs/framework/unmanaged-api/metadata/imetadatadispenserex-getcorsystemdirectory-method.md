@@ -23,7 +23,7 @@ Gets the directory that holds the current common language runtime (CLR). This me
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCORSystemDirectory (  
     [out] LPWSTR      szBuffer,   
     [in]  DWORD       cchBuffer,   
@@ -31,7 +31,7 @@ HRESULT GetCORSystemDirectory (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szBuffer`  
  [out] The buffer to receive the directory name.  
   
@@ -51,5 +51,6 @@ HRESULT GetCORSystemDirectory (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
 - [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)

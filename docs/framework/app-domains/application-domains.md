@@ -35,18 +35,18 @@ Operating systems and runtime environments typically provide some form of isolat
   
  The isolation provided by application domains has the following benefits:  
   
--   Faults in one application cannot affect other applications. Because type-safe code cannot cause memory faults, using application domains ensures that code running in one domain cannot affect other applications in the process.  
+- Faults in one application cannot affect other applications. Because type-safe code cannot cause memory faults, using application domains ensures that code running in one domain cannot affect other applications in the process.  
   
--   Individual applications can be stopped without stopping the entire process. Using application domains enables you to unload the code running in a single application.  
+- Individual applications can be stopped without stopping the entire process. Using application domains enables you to unload the code running in a single application.  
   
     > [!NOTE]
-    >  You cannot unload individual assemblies or types. Only a complete domain can be unloaded.  
+    > You cannot unload individual assemblies or types. Only a complete domain can be unloaded.  
   
--   Code running in one application cannot directly access code or resources from another application. The common language runtime enforces this isolation by preventing direct calls between objects in different application domains. Objects that pass between domains are either copied or accessed by proxy. If the object is copied, the call to the object is local. That is, both the caller and the object being referenced are in the same application domain. If the object is accessed through a proxy, the call to the object is remote. In this case, the caller and the object being referenced are in different application domains. Cross-domain calls use the same remote call infrastructure as calls between two processes or between two machines. As such, the metadata for the object being referenced must be available to both application domains to allow the method call to be JIT-compiled properly. If the calling domain does not have access to the metadata for the object being called, the compilation might fail with an exception of type <xref:System.IO.FileNotFoundException>. For more information, see [Remote Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100)). The mechanism for determining how objects can be accessed across domains is determined by the object. For more information, see <xref:System.MarshalByRefObject?displayProperty=nameWithType>.  
+- Code running in one application cannot directly access code or resources from another application. The common language runtime enforces this isolation by preventing direct calls between objects in different application domains. Objects that pass between domains are either copied or accessed by proxy. If the object is copied, the call to the object is local. That is, both the caller and the object being referenced are in the same application domain. If the object is accessed through a proxy, the call to the object is remote. In this case, the caller and the object being referenced are in different application domains. Cross-domain calls use the same remote call infrastructure as calls between two processes or between two machines. As such, the metadata for the object being referenced must be available to both application domains to allow the method call to be JIT-compiled properly. If the calling domain does not have access to the metadata for the object being called, the compilation might fail with an exception of type <xref:System.IO.FileNotFoundException>. For more information, see [Remote Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100)). The mechanism for determining how objects can be accessed across domains is determined by the object. For more information, see <xref:System.MarshalByRefObject?displayProperty=nameWithType>.  
   
--   The behavior of code is scoped by the application in which it runs. In other words, the application domain provides configuration settings such as application version policies, the location of any remote assemblies it accesses, and information about where to locate assemblies that are loaded into the domain.  
+- The behavior of code is scoped by the application in which it runs. In other words, the application domain provides configuration settings such as application version policies, the location of any remote assemblies it accesses, and information about where to locate assemblies that are loaded into the domain.  
   
--   Permissions granted to code can be controlled by the application domain in which the code is running.  
+- Permissions granted to code can be controlled by the application domain in which the code is running.  
   
 ## Application domains and assemblies
 
@@ -54,9 +54,9 @@ Operating systems and runtime environments typically provide some form of isolat
   
  The way an assembly is loaded determines whether its just-in-time (JIT) compiled code can be shared by multiple application domains in the process, and whether the assembly can be unloaded from the process.  
   
--   If an assembly is loaded domain-neutral, all application domains that share the same security grant set can share the same JIT-compiled code, which reduces the memory required by the application. However, the assembly can never be unloaded from the process.  
+- If an assembly is loaded domain-neutral, all application domains that share the same security grant set can share the same JIT-compiled code, which reduces the memory required by the application. However, the assembly can never be unloaded from the process.  
   
--   If an assembly is not loaded domain-neutral, it must be JIT-compiled in every application domain in which it is loaded. However, the assembly can be unloaded from the process by unloading all the application domains in which it is loaded.  
+- If an assembly is not loaded domain-neutral, it must be JIT-compiled in every application domain in which it is loaded. However, the assembly can be unloaded from the process by unloading all the application domains in which it is loaded.  
   
  The runtime host determines whether to load assemblies as domain-neutral when it loads the runtime into a process. For managed applications, apply the <xref:System.LoaderOptimizationAttribute> attribute to the entry-point method for the process, and specify a value from the associated <xref:System.LoaderOptimization> enumeration. For unmanaged applications that host the common language runtime, specify the appropriate flag when you call the [CorBindToRuntimeEx Function](../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) method.  
   
@@ -78,9 +78,9 @@ Operating systems and runtime environments typically provide some form of isolat
   
  When you decide whether to load assemblies as domain-neutral, you must make a tradeoff between reducing memory use and other performance factors.  
   
--   Access to static data and methods is slower for domain-neutral assemblies because of the need to isolate assemblies. Each application domain that accesses the assembly must have a separate copy of the static data, to prevent references to objects in static fields from crossing domain boundaries. As a result, the runtime contains additional logic to direct a caller to the appropriate copy of the static data or method. This extra logic slows down the call.  
+- Access to static data and methods is slower for domain-neutral assemblies because of the need to isolate assemblies. Each application domain that accesses the assembly must have a separate copy of the static data, to prevent references to objects in static fields from crossing domain boundaries. As a result, the runtime contains additional logic to direct a caller to the appropriate copy of the static data or method. This extra logic slows down the call.  
   
--   All the dependencies of an assembly must be located and loaded when the assembly is loaded domain-neutral, because a dependency that cannot be loaded domain-neutral prevents the assembly from being loaded domain-neutral.  
+- All the dependencies of an assembly must be located and loaded when the assembly is loaded domain-neutral, because a dependency that cannot be loaded domain-neutral prevents the assembly from being loaded domain-neutral.  
   
 ## Application domains and threads
 
@@ -94,9 +94,9 @@ Operating systems and runtime environments typically provide some form of isolat
 
  Culture, which is represented by a <xref:System.Globalization.CultureInfo> object, is associated with threads. You can get the culture that is associated with the currently executing thread by using the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property, and you can get or set the culture that is associated with the currently executing thread by using the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> property. If the culture that is associated with a thread has been explicitly set by using the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> property, it continues to be associated with that thread when the thread crosses application domain boundaries. Otherwise, the culture that is associated with the thread at any given time is determined by the value of the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A?displayProperty=nameWithType> property in the application domain in which the thread is executing:  
   
--   If the value of the property is not `null`, the culture that is returned by the property is associated with the thread (and therefore returned by the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> properties).  
+- If the value of the property is not `null`, the culture that is returned by the property is associated with the thread (and therefore returned by the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> properties).  
   
--   If the value of the property is `null`, the current system culture is associated with the thread.  
+- If the value of the property is `null`, the current system culture is associated with the thread.  
   
 ## Programming with application domains
 
@@ -112,7 +112,7 @@ Operating systems and runtime environments typically provide some form of isolat
 |<xref:System.AppDomain.Unload%2A>|Performs a graceful shutdown of the domain. The application domain is not unloaded until all threads running in the domain have either stopped or are no longer in the domain.|  
   
 > [!NOTE]
->  The common language runtime does not support serialization of global methods, so delegates cannot be used to execute global methods in other application domains.  
+> The common language runtime does not support serialization of global methods, so delegates cannot be used to execute global methods in other application domains.  
   
  The unmanaged interfaces described in the common language runtime Hosting Interfaces Specification also provide access to application domains. Runtime hosts can use interfaces from unmanaged code to create and gain access to the application domains within a process.  
   
@@ -132,14 +132,14 @@ COMPLUS_LoaderOptimization = 1
   
  The way the assembly is loaded determines whether its just-in-time (JIT) compiled code can be shared by multiple application domains in the process.  
   
--   If an assembly is loaded domain-neutral, all application domains that share the same security grant set can share the same JIT-compiled code. This reduces the memory required by the application.  
+- If an assembly is loaded domain-neutral, all application domains that share the same security grant set can share the same JIT-compiled code. This reduces the memory required by the application.  
   
--   If an assembly is not loaded domain-neutral, it must be JIT-compiled in every application domain in which it is loaded and the loader must not share internal resources across application domains.  
+- If an assembly is not loaded domain-neutral, it must be JIT-compiled in every application domain in which it is loaded and the loader must not share internal resources across application domains.  
   
  When set to 1, the COMPLUS_LoaderOptimization environment flag forces the runtime host to load all assemblies in non-domain-neutral way known as SingleDomain. SingleDomain loads no assemblies as domain-neutral, except Mscorlib, which is always loaded domain-neutral. This setting is called single domain because it is commonly used when the host is running only a single application in the process.  
   
 > [!CAUTION]
->  The COMPLUS_LoaderOptimization environment flag was designed to be used in diagnostic and test scenarios. Having the flag turned on can cause severe slow-down and increase in memory usage.  
+> The COMPLUS_LoaderOptimization environment flag was designed to be used in diagnostic and test scenarios. Having the flag turned on can cause severe slow-down and increase in memory usage.  
   
 ### Code example
 

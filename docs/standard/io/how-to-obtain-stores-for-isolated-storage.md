@@ -19,13 +19,13 @@ ms.author: "mairaw"
 # How to: Obtain Stores for Isolated Storage
 An isolated store exposes a virtual file system within a data compartment. The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies a number of methods for interacting with an isolated store. To create and retrieve stores, <xref:System.IO.IsolatedStorage.IsolatedStorageFile> provides three static methods:  
   
--   <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A> returns storage that is isolated by user and assembly.  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A> returns storage that is isolated by user and assembly.  
   
--   <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> returns storage that is isolated by domain and assembly.  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> returns storage that is isolated by domain and assembly.  
   
      Both methods retrieve a store that belongs to the code from which they are called.  
   
--   The static method <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> returns an isolated store that is specified by passing in a combination of scope parameters.  
+- The static method <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> returns an isolated store that is specified by passing in a combination of scope parameters.  
   
  The following code returns a store that is isolated by user, assembly, and domain.  
   
@@ -56,4 +56,4 @@ An isolated store exposes a virtual file system within a data compartment. The <
 - <xref:System.IO.IsolatedStorage.IsolatedStorageScope>
 - [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
 - [Types of Isolation](../../../docs/standard/io/types-of-isolation.md)
-- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](../assembly/index.md)

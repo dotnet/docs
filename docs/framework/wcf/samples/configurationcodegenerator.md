@@ -10,38 +10,36 @@ The ConfigurationCodeGenerator is a tool that you can use to expose your custom 
   
 ### To build the tool  
   
-1.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-2.  Building the solution generates one file: ConfigurationCodeGenerator.exe. The file SampleRun.cmd has a sample command line that shows how to use this tool to generate the classes for the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.  
+2. Building the solution generates one file: ConfigurationCodeGenerator.exe. The file SampleRun.cmd has a sample command line that shows how to use this tool to generate the classes for the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.  
   
 ### To run the tool  
   
-1.  At the command prompt type the following if you have both a custom `BindingElement` type and a custom `Binding` type:  
+1. At the command prompt type the following if you have both a custom `BindingElement` type and a custom `Binding` type:  
   
-    ```  
+    ```console  
     ConfigurationCodeGenerator.exe /be:YourCustomBindingElementTypeName /sb:YourCustomStdBindingTypeName /dll:TheAssemblyWhereTheseTypesAreDefined  
     ```  
   
      Or type the following if you have only a custom `BindingElement` type:  
   
-    ```  
+    ```console  
     ConfigurationCodeGenerator.exe /be:YourCustomBindingElementTypeName /dll: TheAssemblyWhereThisTypeIsDefined  
     ```  
   
      Or type the following if you have only a custom `Binding` type:  
   
-    ```  
+    ```console  
     ConfigurationCodeGenerator.exe /sb:YourCustomStdBindingTypeName /dll:TheAssemblyWhereThisTypeIsDefined  
     ```  
   
      The command generates three .cs files for the `BindingElement` (if you specified the /be: option), five .cs files for the standard `Binding` (if you specified the /sb: option), and a .xml file.  
   
-    1.  If you used the /be option, one of the .cs files implements the `BindingElementExtensionSection` for your binding element. This code exposes your `BindingElement` to the configuration system, so that other custom bindings can use your binding element. The other files have classes that represent defaults and constants. The files have `//TODO` comments to remind you to update the default values.  
+    1. If you used the /be option, one of the .cs files implements the `BindingElementExtensionSection` for your binding element. This code exposes your `BindingElement` to the configuration system, so that other custom bindings can use your binding element. The other files have classes that represent defaults and constants. The files have `//TODO` comments to remind you to update the default values.  
   
-    2.  If you specified the /sb option, two of the .cs files implement a `StandardBindingElement` and a `StandardBindingCollectionElement` respectively, which exposes your standard binding to the configuration system. The other files have classes that represent defaults and constants. The files have `//TODO` comments to remind you to update the default values.  
+    2. If you specified the /sb option, two of the .cs files implement a `StandardBindingElement` and a `StandardBindingCollectionElement` respectively, which exposes your standard binding to the configuration system. The other files have classes that represent defaults and constants. The files have `//TODO` comments to remind you to update the default values.  
   
          If you specified the /sb: option the CodeToAddTo\<*YourStdBinding*>.cs has code that you must manually add into the class that implements your standard binding.  
   
      The SampleConfig.xml file contains the configuration code that you must add to the configuration file that registers the handlers defined in the previous step 1 or 2.  
-  
-## See also

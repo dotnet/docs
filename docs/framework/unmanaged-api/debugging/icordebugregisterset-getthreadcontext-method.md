@@ -23,7 +23,7 @@ Gets the context of the current thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext(  
     [in] ULONG32 contextSize,  
     [in, out, length_is(contextSize),  
@@ -31,7 +31,7 @@ HRESULT GetThreadContext(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `contextSize`  
  [in] The size, in bytes, of the `context` array.  
   
@@ -53,5 +53,6 @@ HRESULT GetThreadContext(
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)
 - [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)

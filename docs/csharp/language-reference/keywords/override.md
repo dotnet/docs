@@ -1,7 +1,6 @@
 ---
 title: "override modifier - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "override"
@@ -16,7 +15,7 @@ The `override` modifier is required to extend or modify the abstract or virtual 
 
 ## Example
 
-In this example, the `Square` class must provide an overridden implementation of `Area` because `Area` is inherited from the abstract `ShapesClass`:
+In this example, the `Square` class must provide an overridden implementation of `GetArea` because `GetArea` is inherited from the abstract `Shape` class:
 
 [!code-csharp[csrefKeywordsModifiers#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#1)]
 
@@ -51,5 +50,5 @@ This example defines a base class named `Employee`, and a derived class named `S
 - [Modifiers](modifiers.md)
 - [abstract](abstract.md)
 - [virtual](virtual.md)
-- [new](new.md)
+- [new (modifier)](new-modifier.md)
 - [Polymorphism](../../programming-guide/classes-and-structs/polymorphism.md)

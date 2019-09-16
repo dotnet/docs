@@ -23,21 +23,21 @@ You can use the <xref:System.Security.Cryptography.CspParameters> class to acces
   
 ### To sign data using a key card  
   
-1.  Create a new instance of the <xref:System.Security.Cryptography.CspParameters> class, passing the integer provider type and the provider name to the constructor.  
+1. Create a new instance of the <xref:System.Security.Cryptography.CspParameters> class, passing the integer provider type and the provider name to the constructor.  
   
-2.  Pass the appropriate flags to the <xref:System.Security.Cryptography.CspParameters.Flags%2A> property of the newly created <xref:System.Security.Cryptography.CspParameters> object.  For example, pass the <xref:System.Security.Cryptography.CspProviderFlags.UseDefaultKeyContainer> flag.  
+2. Pass the appropriate flags to the <xref:System.Security.Cryptography.CspParameters.Flags%2A> property of the newly created <xref:System.Security.Cryptography.CspParameters> object.  For example, pass the <xref:System.Security.Cryptography.CspProviderFlags.UseDefaultKeyContainer> flag.  
   
-3.  Create a new instance of an <xref:System.Security.Cryptography.AsymmetricAlgorithm> class (for example, the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class), passing the <xref:System.Security.Cryptography.CspParameters> object to the constructor.  
+3. Create a new instance of an <xref:System.Security.Cryptography.AsymmetricAlgorithm> class (for example, the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class), passing the <xref:System.Security.Cryptography.CspParameters> object to the constructor.  
   
-4.  Sign your data using one of the `Sign` methods and verify your data using one of the `Verify` methods.  
+4. Sign your data using one of the `Sign` methods and verify your data using one of the `Verify` methods.  
   
 ### To generate a random number using a hardware random number generator  
   
-1.  Create a new instance of the <xref:System.Security.Cryptography.CspParameters> class, passing the integer provider type and the provider name to the constructor.  
+1. Create a new instance of the <xref:System.Security.Cryptography.CspParameters> class, passing the integer provider type and the provider name to the constructor.  
   
-2.  Create a new instance of the <xref:System.Security.Cryptography.RNGCryptoServiceProvider>, passing the <xref:System.Security.Cryptography.CspParameters> object to the constructor.  
+2. Create a new instance of the <xref:System.Security.Cryptography.RNGCryptoServiceProvider>, passing the <xref:System.Security.Cryptography.CspParameters> object to the constructor.  
   
-3.  Create a random value using the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes%2A> or <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetNonZeroBytes%2A> method.  
+3. Create a random value using the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes%2A> or <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetNonZeroBytes%2A> method.  
   
 ## Example  
  The following code example demonstrates how to sign data using a smart card.  The code example creates a <xref:System.Security.Cryptography.CspParameters> object that exposes a smart card, and then initializes an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object using the CSP.  The code example then signs and verifies some data.  
@@ -48,8 +48,8 @@ You can use the <xref:System.Security.Cryptography.CspParameters> class to acces
   
 ## Compiling the Code  
   
--   Include the <xref:System> and <xref:System.Security.Cryptography> namespaces.  
+- Include the <xref:System> and <xref:System.Security.Cryptography> namespaces.  
   
--   You must have a smart card reader and drivers installed on your computer.  
+- You must have a smart card reader and drivers installed on your computer.  
   
--   You must initialize the <xref:System.Security.Cryptography.CspParameters> object using information specific to your card reader.  For more information, see the documentation of your card reader.
+- You must initialize the <xref:System.Security.Cryptography.CspParameters> object using information specific to your card reader.  For more information, see the documentation of your card reader.

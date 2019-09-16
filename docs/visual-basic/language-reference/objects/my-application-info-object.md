@@ -13,7 +13,7 @@ Provides properties for getting the information about the application, such as t
  For information about the methods and properties of the `My.Application.Info` object, see <xref:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo>.  
   
 > [!NOTE]
->  You can use properties of the <xref:System.Diagnostics.FileVersionInfo?displayProperty=nameWithType> class to obtain information about a file on disk.  
+> You can use properties of the <xref:System.Diagnostics.FileVersionInfo?displayProperty=nameWithType> class to obtain information about a file on disk.  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.ApplicationServices>  
@@ -23,4 +23,5 @@ Provides properties for getting the information about the application, such as t
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - [My.Application Object](../../../visual-basic/language-reference/objects/my-application-object.md)

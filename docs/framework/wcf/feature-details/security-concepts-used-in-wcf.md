@@ -28,18 +28,19 @@ Windows Communication Foundation (WCF) security is built upon concepts already i
 ## Access Control Mechanisms  
  WCF provides a number of ways to control access to a service or operation. Among them are  
   
-1.  <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
+1. <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
   
-2.  ASP.NET Membership Provider  
+2. ASP.NET Membership Provider  
   
-3.  ASP.NET Role Provider  
+3. ASP.NET Role Provider  
   
-4.  Authorization Manager  
+4. Authorization Manager  
   
-5.  Identity Model  
+5. Identity Model  
   
  For more information on these topics see, [Access Control Mechanisms](../../../../docs/framework/wcf/feature-details/access-control-mechanisms.md)  
   
 ## See also
+
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

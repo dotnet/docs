@@ -21,8 +21,9 @@ An object is assigned to a variable declared to be of the [Object Data Type](../
   
 ## To correct this error  
   
--   If possible, declare the variable to be of a specific type.  
+- If possible, declare the variable to be of a specific type.  
   
 ## See also
+
 - [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
 - [Object Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)

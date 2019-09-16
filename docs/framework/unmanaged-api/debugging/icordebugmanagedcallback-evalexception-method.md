@@ -23,7 +23,7 @@ Notifies the debugger that an evaluation has terminated with an unhandled except
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EvalException (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *pThread,  
@@ -31,7 +31,7 @@ HRESULT EvalException (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain in which the evaluation terminated.  
   
@@ -51,4 +51,5 @@ HRESULT EvalException (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

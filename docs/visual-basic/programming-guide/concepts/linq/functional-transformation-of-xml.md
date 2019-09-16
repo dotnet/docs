@@ -9,11 +9,11 @@ This topic discusses the pure functional transformation approach to modifying XM
 ## Modifying an XML Document  
  One of the most common tasks for an XML programmer is transforming XML from one shape to another. The shape of an XML document is the structure of the document, which includes the following:  
   
--   The hierarchy expressed by the document.  
+- The hierarchy expressed by the document.  
   
--   The element and attribute names.  
+- The element and attribute names.  
   
--   The data types of the elements and attributes.  
+- The data types of the elements and attributes.  
   
  In general, the most effective approach to transforming XML from one shape to another is that of pure functional transformation. In this approach, the primary programmer task is to create a transformation which is applied to the entire XML document (or to one or more strictly defined nodes). Functional transformation is arguably the easiest to code (after a programmer is familiar with the approach), yields the most maintainable code, and is often more compact than alternative approaches.  
   

@@ -22,7 +22,7 @@ Contains flag values that control the behavior during importation of an assembly
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorImportOptions {  
   
     MDImportOptionDefault                = 0x00000000,  
@@ -60,4 +60,5 @@ typedef enum CorImportOptions {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

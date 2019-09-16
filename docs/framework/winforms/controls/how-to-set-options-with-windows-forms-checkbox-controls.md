@@ -18,7 +18,7 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
   
 ### To set options with CheckBox controls  
   
-1.  Examine the value of the <xref:System.Windows.Forms.CheckBox.Checked%2A> property to determine its state, and use that value to set an option.  
+1. Examine the value of the <xref:System.Windows.Forms.CheckBox.Checked%2A> property to determine its state, and use that value to set an option.  
   
      In the code sample below, when the <xref:System.Windows.Forms.CheckBox> control's <xref:System.Windows.Forms.CheckBox.CheckedChanged> event is raised, the form's <xref:System.Windows.Forms.Control.AllowDrop%2A> property is set to `false` if the check box is checked. This is useful for situations where you want to restrict user interaction.  
   
@@ -60,7 +60,8 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.CheckBox>
-- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)
-- [How to: Respond to Windows Forms CheckBox Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-checkbox-clicks.md)
-- [CheckBox Control](../../../../docs/framework/winforms/controls/checkbox-control-windows-forms.md)
+- [CheckBox Control Overview](checkbox-control-overview-windows-forms.md)
+- [How to: Respond to Windows Forms CheckBox Clicks](how-to-respond-to-windows-forms-checkbox-clicks.md)
+- [CheckBox Control](checkbox-control-windows-forms.md)

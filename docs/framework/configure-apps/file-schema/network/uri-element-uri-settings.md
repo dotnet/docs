@@ -7,9 +7,9 @@ ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847
 Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).  
   
 ## Schema Hierarchy  
- [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)  
+ [\<configuration> Element](../configuration-element.md)  
   
- [\<uri>](../../../../../docs/framework/configure-apps/file-schema/network/uri-element-uri-settings.md)  
+ [\<uri>](uri-element-uri-settings.md)  
   
 ## Syntax  
   
@@ -28,15 +28,15 @@ Contains settings that specify how the .NET Framework handles web addresses expr
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[idn](../../../../../docs/framework/configure-apps/file-schema/network/idn-element-uri-settings.md)|Specifies if Internationalized Domain Name (IDN) parsing is applied to domain names.|  
-|[iriParsing](../../../../../docs/framework/configure-apps/file-schema/network/iriparsing-element-uri-settings.md)|Specifies if International Resource Identifier (IRI) parsing is applied to <xref:System.Uri> and whether IRI parsing rules should be applied.|  
-|[schemeSettings](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
+|[idn](idn-element-uri-settings.md)|Specifies if Internationalized Domain Name (IDN) parsing is applied to domain names.|  
+|[iriParsing](iriparsing-element-uri-settings.md)|Specifies if International Resource Identifier (IRI) parsing is applied to <xref:System.Uri> and whether IRI parsing rules should be applied.|  
+|[schemeSettings](schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
   
 ### Parent Elements  
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[configuration](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|Contains settings for all namespaces.|  
+|[configuration](../configuration-element.md)|Contains settings for all namespaces.|  
   
 ## Remarks  
  The `uri` element contains settings for members of the <xref:System.Uri> class used by classes in the <xref:System.Net> namespace. The settings configure support for IRI and IDN.  
@@ -62,4 +62,5 @@ Contains settings that specify how the .NET Framework handles web addresses expr
 ```  
   
 ## See also
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+
+- [Network Settings Schema](index.md)

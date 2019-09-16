@@ -23,14 +23,14 @@ Notifies the host that an application domain has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAppDomainManager (  
     [in] DWORD     dwAppDomainID,  
     [in] IUnknown* pUnkAppDomainManager  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAppDomainID`  
  [in] The numeric identifier of the selected <xref:System.AppDomain>.  
   
@@ -63,6 +63,7 @@ HRESULT SetAppDomainManager (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.AppDomain>
 - <xref:System.AppDomainManager>
 - [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

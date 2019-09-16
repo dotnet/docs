@@ -23,14 +23,14 @@ Defines a name for a constant value.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineConstant2(  
     [in] const WCHAR  *name,  
     [in] VARIANT      value,  
     [in] mdSignature  sigToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The constant name.  
   
@@ -47,5 +47,6 @@ HRESULT DefineConstant2(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
 - [DefineConstant Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-defineconstant-method.md)

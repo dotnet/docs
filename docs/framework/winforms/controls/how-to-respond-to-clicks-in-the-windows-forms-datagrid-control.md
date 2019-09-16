@@ -15,13 +15,13 @@ ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
 ---
 # How to: Respond to Clicks in the Windows Forms DataGrid Control
 > [!NOTE]
->  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
+> The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
  After the Windows Forms <xref:System.Windows.Forms.DataGrid> is connected to a database, you can monitor which cell the user clicked.  
   
 ### To detect when the user of the DataGrid selects a different cell  
   
--   In the <xref:System.Windows.Forms.DataGrid.CurrentCellChanged> event handler, write code to respond appropriately.  
+- In the <xref:System.Windows.Forms.DataGrid.CurrentCellChanged> event handler, write code to respond appropriately.  
   
     ```vb  
     Private Sub myDataGrid_CurrentCellChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles myDataGrid.CurrentCellChanged  
@@ -50,7 +50,7 @@ ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
   
 ### To determine which part of the DataGrid the user clicked  
   
--   Call the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method in an appropriate event handler, such as for the <xref:System.Windows.Forms.Control.MouseDown> or <xref:System.Windows.Forms.Control.Click> event.  
+- Call the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method in an appropriate event handler, such as for the <xref:System.Windows.Forms.Control.MouseDown> or <xref:System.Windows.Forms.Control.Click> event.  
   
      The <xref:System.Windows.Forms.DataGrid.HitTest%2A> method returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object that contains the row and column of a clicked area.  
   
@@ -135,5 +135,6 @@ ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
     ```  
   
 ## See also
-- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
-- [How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/change-displayed-data-at-run-time-wf-datagrid-control.md)
+
+- [DataGrid Control](datagrid-control-windows-forms.md)
+- [How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](change-displayed-data-at-run-time-wf-datagrid-control.md)

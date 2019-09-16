@@ -9,9 +9,9 @@ ms.assetid: ce307f14-87e6-4816-8694-8a4147f6b784
 ## Unsupported System.String Methods in General  
  Unsupported <xref:System.String> methods in general:  
   
--   Culture-aware overloads (methods that take a `CultureInfo` / `StringComparison` / `IFormatProvider`).  
+- Culture-aware overloads (methods that take a `CultureInfo` / `StringComparison` / `IFormatProvider`).  
   
--   Methods that take or produce a `char` array.  
+- Methods that take or produce a `char` array.  
   
 ## Unsupported System.String Static Methods  
   
@@ -41,13 +41,14 @@ ms.assetid: ce307f14-87e6-4816-8694-8a4147f6b784
   
 ## Differences from .NET  
   
--   Queries do not account for SQL Server collations that might be in effect on the server, and therefore will provide culture-sensitive, case-insensitive comparisons by default. This behavior differs from the default, case-sensitive semantics of the .NET Framework.  
+- Queries do not account for SQL Server collations that might be in effect on the server, and therefore will provide culture-sensitive, case-insensitive comparisons by default. This behavior differs from the default, case-sensitive semantics of the .NET Framework.  
   
--   When `LastIndexOf` returns 0, either the string is `NULL` or the found position is 0.  
+- When `LastIndexOf` returns 0, either the string is `NULL` or the found position is 0.  
   
--   Unexpected results might be returned from concatenation or other operations on fixed-length strings (`CHAR`, `NCHAR`), because these types automatically have padding applied in the database.  
+- Unexpected results might be returned from concatenation or other operations on fixed-length strings (`CHAR`, `NCHAR`), because these types automatically have padding applied in the database.  
   
--   Because many methods, such as `Replace`, `ToLower`, `ToUpper`, and the character indexer, have no valid translation for `TEXT` or `NTEXT` columns and XML, `SqlExceptions` occur if translated normally. This behavior is considered acceptable for these types. However, all string operations must match common language runtime (CLR) semantics for `VARCHAR`, `NVARCHAR`, `VARCHAR(max)`, and `NVARCHAR(max)`.  
+- Because many methods, such as `Replace`, `ToLower`, `ToUpper`, and the character indexer, have no valid translation for `TEXT` or `NTEXT` columns and XML, `SqlExceptions` occur if translated normally. This behavior is considered acceptable for these types. However, all string operations must match common language runtime (CLR) semantics for `VARCHAR`, `NVARCHAR`, `VARCHAR(max)`, and `NVARCHAR(max)`.  
   
 ## See also
-- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
+
+- [Data Types and Functions](data-types-and-functions.md)

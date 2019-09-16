@@ -23,21 +23,21 @@ Notifies the profiler that the server-side portion of a remoting call has comple
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingClientReceivingReply(  
     [in] GUID *pCookie,  
     [in] BOOL fIsAsync);   
 ```  
   
-#### Parameters  
+## Parameters  
  `pCookie`  
  [in] A value that will correspond with the value provided in [ICorProfilerCallback::RemotingServerSendingReply](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-remotingserversendingreply-method.md) under these conditions:  
   
--   Remoting GUID cookies are active.  
+- Remoting GUID cookies are active.  
   
--   The channel succeeds in transmitting the message.  
+- The channel succeeds in transmitting the message.  
   
--   GUID cookies are active on the server-side process.  
+- GUID cookies are active on the server-side process.  
   
  This allows easy pairing of remoting calls.  
   
@@ -54,4 +54,5 @@ HRESULT RemotingClientReceivingReply(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

@@ -9,13 +9,13 @@ After initial deployment, and potentially several times during their lifetime, s
 ## Four Categories of Service Changes  
  The changes to services that may be required can be classified into four categories:  
   
--   Contract changes: For example, an operation might be added, or a data element in a message might be added or changed.  
+- Contract changes: For example, an operation might be added, or a data element in a message might be added or changed.  
   
--   Address changes: For example, a service moves to a different location where endpoints have new addresses.  
+- Address changes: For example, a service moves to a different location where endpoints have new addresses.  
   
--   Binding changes: For example, a security mechanism changes or its settings change.  
+- Binding changes: For example, a security mechanism changes or its settings change.  
   
--   Implementation changes: For example, when an internal method implementation changes.  
+- Implementation changes: For example, when an internal method implementation changes.  
   
  Some of these changes are called "breaking" and others are "nonbreaking." A change is *nonbreaking* if all messages that would have been processed successfully in the previous version are processed successfully in the new version. Any change that does not meet that criterion is a *breaking* change.  
   
@@ -37,9 +37,9 @@ After initial deployment, and potentially several times during their lifetime, s
 ### Strict Versioning  
  In many scenarios when changing versions is an issue, the service developer does not have control over the clients and therefore cannot make assumptions about how they would react to changes in the message XML or schema. In these cases, you must guarantee that the new messages will validate against the old schema, for two reasons:  
   
--   The old clients were developed with the assumption that the schema will not change. They may fail to process messages that they were never designed for.  
+- The old clients were developed with the assumption that the schema will not change. They may fail to process messages that they were never designed for.  
   
--   The old clients may perform actual schema validation against the old schema before even attempting to process the messages.  
+- The old clients may perform actual schema validation against the old schema before even attempting to process the messages.  
   
  The recommended approach in such scenarios is to treat existing data contracts as immutable and create new ones with unique XML qualified names. The service developer would then either add new methods to an existing service contract or create a new service contract with methods that use the new data contract.  
   
@@ -57,9 +57,9 @@ After initial deployment, and potentially several times during their lifetime, s
 ### Distinguishing Between Data Contract and .NET Types  
  A .NET class or structure can be projected as a data contract by applying the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the class. The .NET type and its data contract projections are two distinct matters. It is possible to have multiple .NET types with the same data contract projection. This distinction is especially useful in allowing you to change the .NET type while maintaining the projected data contract, thereby maintaining compatibility with existing clients even in the strict sense of the word. There are two things you should always do to maintain this distinction between .NET type and data contract:  
   
--   Specify a <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>. You should always specify the name and namespace of your data contract to prevent your .NET type’s name and namespace from being exposed in the contract. This way, if you decide later to change the .NET namespace or type name, your data contract remains the same.  
+- Specify a <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>. You should always specify the name and namespace of your data contract to prevent your .NET type’s name and namespace from being exposed in the contract. This way, if you decide later to change the .NET namespace or type name, your data contract remains the same.  
   
--   Specify <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>. You should always specify the name of your data members to prevent your .NET member name from being exposed in the contract. This way, if you decide later to change the .NET name of the member, your data contract remains the same.  
+- Specify <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>. You should always specify the name of your data members to prevent your .NET member name from being exposed in the contract. This way, if you decide later to change the .NET name of the member, your data contract remains the same.  
   
 ### Changing or Removing Members  
  Changing the name or data type of a member, or removing data members is a breaking change even if lax versioning is allowed. If this is necessary, create a new data contract.  
@@ -82,7 +82,7 @@ After initial deployment, and potentially several times during their lifetime, s
  The same versioning principles apply when using the <xref:System.Xml.Serialization.XmlSerializer> class. When strict versioning is required, treat data contracts as immutable and create new data contracts with unique, qualified names for the new versions. When you are sure that lax versioning can be used, you can add new serializable members in new versions but not change or remove existing members.  
   
 > [!NOTE]
->  The <xref:System.Xml.Serialization.XmlSerializer> uses the <xref:System.Xml.Serialization.XmlAnyElementAttribute> and <xref:System.Xml.Serialization.XmlAnyAttributeAttribute> attributes to support round-tripping of unknown data.  
+> The <xref:System.Xml.Serialization.XmlSerializer> uses the <xref:System.Xml.Serialization.XmlAnyElementAttribute> and <xref:System.Xml.Serialization.XmlAnyAttributeAttribute> attributes to support round-tripping of unknown data.  
   
 ## Message Contract Versioning  
  The guidelines for message contract versioning are very similar to versioning data contracts. If strict versioning is required, you should not change your message body but instead create a new message contract with a unique qualified name. If you know that you can use lax versioning, you can add new message body parts but not change or remove existing ones. This guidance applies both to bare and wrapped message contracts.  
@@ -99,7 +99,7 @@ After initial deployment, and potentially several times during their lifetime, s
  Adding service operations exposed by the service is a nonbreaking change because existing clients need not be concerned about those new operations.  
   
 > [!NOTE]
->  Adding operations to a duplex callback contract is a breaking change.  
+> Adding operations to a duplex callback contract is a breaking change.  
   
 ### Changing Operation Parameter or Return Types  
  Changing parameter or return types generally is a breaking change unless the new type implements the same data contract implemented by the old type. To make such a change, add a new operation to the service contract or define a new service contract.  
@@ -170,6 +170,7 @@ public class PurchaseOrderV2 : IPurchaseOrderV1, IPurchaseOrderV2
  The service contract would be updated to include new operations that are written in terms of `PurchaseOrderV2`. Existing business logic written in terms of `IPurchaseOrderV1` would continue to work for `PurchaseOrderV2` and new business logic that needs the `OrderDate` property would be written in terms of `IPurchaseOrderV2`.  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>

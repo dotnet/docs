@@ -23,7 +23,7 @@ Initializes the common language runtime (CLR) into a process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Start();  
 ```  
   
@@ -51,5 +51,6 @@ HRESULT Start();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.AppDomain>
 - [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)

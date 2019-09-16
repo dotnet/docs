@@ -16,20 +16,21 @@ ASP.NET provides .NET Framework class libraries and tools for building Web servi
   
  Given these potential benefits of WCF relative to ASP.NET Web services, if you are using, or are considering using ASP.NET Web services you have several options:  
   
--   Continue to use ASP.NET Web services, and forego the benefits proffered by WCF.  
+- Continue to use ASP.NET Web services, and forego the benefits proffered by WCF.  
   
--   Keep using ASP.NET Web services with the intention of adopting WCF at some time in the future. The topics in this section explain how to maximize the prospects for being able to use new ASP.NET Web service applications together with future WCF applications. The topics in this section also explain how to build new ASP.NET Web services so as to make it easier to migrate them to WCF. However, if securing the services is important, or reliability or transaction assurances are required, or if custom management facilities will have to be constructed, then it is a better option to adopt WCF. WCF is designed for precisely such scenarios.  
+- Keep using ASP.NET Web services with the intention of adopting WCF at some time in the future. The topics in this section explain how to maximize the prospects for being able to use new ASP.NET Web service applications together with future WCF applications. The topics in this section also explain how to build new ASP.NET Web services so as to make it easier to migrate them to WCF. However, if securing the services is important, or reliability or transaction assurances are required, or if custom management facilities will have to be constructed, then it is a better option to adopt WCF. WCF is designed for precisely such scenarios.  
   
--   Adopt WCF for new development, while continuing to maintain your existing ASP.NET Web service applications. This choice is very likely the optimal one. It yields the benefits of WCF, while sparing the cost of modifying the existing applications to use it. In this scenario, new WCF applications can co-exist with existing ASP.NET applications. New WCF applications will be able to use existing ASP.NET Web services, and WCF can be used to program new operational capabilities into existing ASP.NET applications by virtue of WCF ASP.NET compatibility mode.  
+- Adopt WCF for new development, while continuing to maintain your existing ASP.NET Web service applications. This choice is very likely the optimal one. It yields the benefits of WCF, while sparing the cost of modifying the existing applications to use it. In this scenario, new WCF applications can co-exist with existing ASP.NET applications. New WCF applications will be able to use existing ASP.NET Web services, and WCF can be used to program new operational capabilities into existing ASP.NET applications by virtue of WCF ASP.NET compatibility mode.  
   
--   Adopt WCF and migrate existing ASP.NET Web service applications to WCF. You may choose this option to enhance the existing applications with features provided by WCF, or to reproduce the functionality of existing ASP.NET Web services within new, more powerful WCF applications.  
+- Adopt WCF and migrate existing ASP.NET Web service applications to WCF. You may choose this option to enhance the existing applications with features provided by WCF, or to reproduce the functionality of existing ASP.NET Web services within new, more powerful WCF applications.  
   
 > [!NOTE]
->  Care must be taken if a WCF service is hosted by IIS 5.x and ASP.NET is uninstalled. When a WCF service is hosted by IIS 5.x, the code for the service can be requested if ASP.NET is uninstalled. When ASP.NET is uninstalled on an operating system that is running IIS 5.x and WCF is uninstalled, a file with the .svc extension is considered a text file and the contents, including any source code, is returned to the requester.  
+> Care must be taken if a WCF service is hosted by IIS 5.x and ASP.NET is uninstalled. When a WCF service is hosted by IIS 5.x, the code for the service can be requested if ASP.NET is uninstalled. When ASP.NET is uninstalled on an operating system that is running IIS 5.x and WCF is uninstalled, a file with the .svc extension is considered a text file and the contents, including any source code, is returned to the requester.  
   
  This section describes these options in detail, compares ASP.NET Web Services to WCF and provides instructions on how to migrate your ASP.NET Web Services code to WCF.  
   
 ## See also
+
 - [Anticipating Adopting the Windows Communication Foundation: Easing Future Migration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-wcf-migration.md)
 - [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)
 - [Adopting Windows Communication Foundation](../../../../docs/framework/wcf/feature-details/adopting-wcf.md)

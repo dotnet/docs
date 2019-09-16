@@ -23,13 +23,13 @@ Unwraps a marshal-by-value object from indirection.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Unwrap (  
     [out, retval] VARIANT *ppv  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppv`  
  [out] A pointer to the object to be unwrapped.  
   
@@ -41,6 +41,3 @@ HRESULT Unwrap (
  **Library:** Included as a resource in MSCorEE.dll  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
-  
-## See also
-

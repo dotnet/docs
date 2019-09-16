@@ -14,7 +14,7 @@ The common language runtime (CLR) provides useful event tracing for Windows (ETW
   
  More information about ETW is available in the article [Improve Debugging and Performance Tuning with ETW](https://go.microsoft.com/fwlink/?LinkID=161142) on MSDN. Information about Xperf can be found in the entry [Windows Performance Toolkit - Xperf](https://go.microsoft.com/fwlink/?LinkID=161144) in the NTDebugging blog.  
   
- The [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] or later is required for all the events described in the event topics. The Windows Vista operating system is the minimum supported client, and Windows Server 2008 is the minimum supported server.  
+ The .NET Framework 4 or later is required for all the events described in the event topics. The Windows Vista operating system is the minimum supported client, and Windows Server 2008 is the minimum supported server.  
   
 ## In This Section  
  [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md)  
@@ -30,4 +30,5 @@ The common language runtime (CLR) provides useful event tracing for Windows (ETW
  Provides detailed information about CLR ETW events, their keywords, levels, and event data.  
   
 ## See also
+
 - [ETW Events in the .NET Framework](../../../docs/framework/performance/etw-events.md)

@@ -6,17 +6,17 @@ ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b
 # Common Attributes (Visual Basic)
 This topic describes the attributes that are most commonly used in Visual Basic programs.  
   
--   [Global Attributes](#Global)  
+- [Global Attributes](#Global)  
   
--   [Obsolete Attribute](#Obsolete)  
+- [Obsolete Attribute](#Obsolete)  
   
--   [Conditional Attribute](#Conditional)  
+- [Conditional Attribute](#Conditional)  
   
--   [Caller Info Attributes](#CallerInfo)  
+- [Caller Info Attributes](#CallerInfo)  
   
--   [Visual Basic Attributes](#VB)  
+- [Visual Basic Attributes](#VB)  
   
-##  <a name="Global"></a> Global Attributes  
+## <a name="Global"></a> Global Attributes  
  Most attributes are applied to specific language elements such as classes or methods; however, some attributes are global—they apply to an entire assembly or module. For example, the <xref:System.Reflection.AssemblyVersionAttribute> attribute can be used to embed version information into an assembly, like this:  
   
 ```vb  
@@ -27,11 +27,11 @@ This topic describes the attributes that are most commonly used in Visual Basic 
   
  Assembly attributes are values that provide information about an assembly. They fall into the following categories:  
   
--   Assembly identity attributes  
+- Assembly identity attributes  
   
--   Informational attributes  
+- Informational attributes  
   
--   Assembly manifest attributes  
+- Assembly manifest attributes  
   
 ### Assembly Identity Attributes  
  Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  
@@ -68,7 +68,7 @@ This topic describes the attributes that are most commonly used in Visual Basic 
 |<xref:System.Reflection.AssemblyConfigurationAttribute>|Defines a custom attribute that specifies an assembly configuration (such as retail or debug) for an assembly manifest.|  
 |<xref:System.Reflection.AssemblyDefaultAliasAttribute>|Defines a friendly default alias for an assembly manifest|  
   
-##  <a name="Obsolete"></a> Obsolete Attribute  
+## <a name="Obsolete"></a> Obsolete Attribute  
  The `Obsolete` attribute marks a program entity as one that is no longer recommended for use. Each use of an entity marked obsolete will subsequently generate a warning or an error, depending on how the attribute is configured. For example:  
   
 ```vb  
@@ -110,7 +110,7 @@ b.NewMethod()
   
  The `Obsolete` attribute is a single-use attribute and can be applied to any entity that allows attributes. `Obsolete` is an alias for <xref:System.ObsoleteAttribute>.  
   
-##  <a name="Conditional"></a> Conditional Attribute  
+## <a name="Conditional"></a> Conditional Attribute  
  The `Conditional` attribute makes the execution of a method dependent on a preprocessing identifier. The `Conditional` attribute is an alias for <xref:System.Diagnostics.ConditionalAttribute>, and can be applied to a method or an attribute class.  
   
  In this example, `Conditional` is applied to a method to enable or disable the display of program-specific diagnostic information:  
@@ -203,7 +203,7 @@ Class SampleClass
 End Class  
 ```  
   
-##  <a name="CallerInfo"></a> Caller Info Attributes  
+## <a name="CallerInfo"></a> Caller Info Attributes  
  By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain the file path of the source code, the line number in the source code, and the member name of the caller.  
   
  To obtain member caller information, you use attributes that are applied to optional parameters. Each optional parameter specifies a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace:  
@@ -216,7 +216,7 @@ End Class
   
  For more information about the Caller Info attributes, see [Caller Information (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md).  
   
-##  <a name="VB"></a> Visual Basic Attributes  
+## <a name="VB"></a> Visual Basic Attributes  
  The following table lists the attributes that are specific to Visual Basic.  
   
 |Attribute|Purpose|  
@@ -249,6 +249,7 @@ End Structure
  Use `VBFixedArrayAttribute` to declare arrays that are fixed in size. Like Visual Basic strings, arrays are of variable length by default. This attribute is useful when serializing or writing data to files.  
   
 ## See also
+
 - <xref:System.Reflection>
 - <xref:System.Attribute>
 - [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

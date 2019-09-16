@@ -17,7 +17,7 @@ ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
 <include file='filename' path='tagpath[@name="id"]' />  
 ```  
   
-#### Parameters  
+## Parameters  
  `filename`  
  The name of the XML file containing the documentation. The file name can be qualified with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').  
   
@@ -38,7 +38,7 @@ ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
 ## Example  
  This is a multifile example. The first file, which uses \<include>, is listed below:  
   
- [!code-csharp[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/include_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#5)]  
   
  The second file, xml_include_tag.doc, contains the following documentation comments:  
   
@@ -86,5 +86,5 @@ The summary for this other type.
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+- [C# Programming Guide](../index.md)
+- [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md)

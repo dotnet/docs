@@ -15,28 +15,29 @@ This method checks for some strong-password characteristics and updates a string
 ## Example  
   
 ### Code  
- [!code-vb[VbVbcnRegEx#1](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/walkthrough-validating-that-passwords-are-complex_1.vb)]  
+ [!code-vb[VbVbcnRegEx#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnRegEx/VB/Class1.vb#1)]  
   
 ## Compiling the Code  
  Call this method by passing the string that contains that password.  
   
  This example requires:  
   
--   Access to the members of the <xref:System.Text.RegularExpressions> namespace. Add an `Imports` statement if you are not fully qualifying member names in your code. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
+- Access to the members of the <xref:System.Text.RegularExpressions> namespace. Add an `Imports` statement if you are not fully qualifying member names in your code. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 ## Security  
  If you're moving the password across a network, you need to use a secure method for transferring data. For more information, see [ASP.NET Web Application Security](https://docs.microsoft.com/previous-versions/aspnet/330a99hc(v=vs.100)).
   
  You can improve the accuracy of the `ValidatePassword` function by adding additional complexity checks:  
   
--   Compare the password and its substrings against the user's name, user identifier, and an application-defined dictionary. In addition, treat visually similar characters as equivalent when performing the comparisons. For example, treat the letters "l" and "e" as equivalent to the numerals "1" and "3".  
+- Compare the password and its substrings against the user's name, user identifier, and an application-defined dictionary. In addition, treat visually similar characters as equivalent when performing the comparisons. For example, treat the letters "l" and "e" as equivalent to the numerals "1" and "3".  
   
--   If there is only one uppercase character, make sure it is not the password's first character.  
+- If there is only one uppercase character, make sure it is not the password's first character.  
   
--   Make sure that the last two characters of the password are letter characters.  
+- Make sure that the last two characters of the password are letter characters.  
   
--   Do not allow passwords in which all the symbols are entered from the keyboard's top row.  
+- Do not allow passwords in which all the symbols are entered from the keyboard's top row.  
   
 ## See also
+
 - <xref:System.Text.RegularExpressions.Regex>
 - [ASP.NET Web Application Security](https://docs.microsoft.com/previous-versions/aspnet/330a99hc(v=vs.100))

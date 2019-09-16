@@ -10,9 +10,10 @@ The [TextFieldParser Object](../../visual-basic/language-reference/objects/textf
   
 ## To correct this error  
   
--   Check to make sure the file is a text file.  
+- Check to make sure the file is a text file.  
   
 ## See also
+
 - [How to: Read From Text Files with Multiple Formats](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)
 - [My.Computer.FileSystem.OpenTextFieldParser](xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser%2A)
 - [Parsing Text Files with the TextFieldParser Object](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)

@@ -23,13 +23,13 @@ Gets a value that indicates whether this chain is running managed code.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsManaged (  
     [out] BOOL               *pManaged  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pManaged`  
  [out] `true` if this chain is running managed code; otherwise, `false`.  
   

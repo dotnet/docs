@@ -18,7 +18,7 @@ The following tables list all Visual Basic language keywords.
  The following keywords are *reserved*, which means that you cannot use them as names for programming elements such as variables or procedures. You can bypass this restriction by enclosing the name in brackets (`[]`). For more information, see "Escaped Names" in [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
   
 > [!NOTE]
->  We do not recommend that you use escaped names, because it can make your code hard to read, and it can lead to subtle errors that can be difficult to find.  
+> We do not recommend that you use escaped names, because it can make your code hard to read, and it can lead to subtle errors that can be difficult to find.  
   
 |||||  
 |---|---|---|---|  
@@ -71,7 +71,7 @@ The following tables list all Visual Basic language keywords.
 |[>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)|[>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)|[<<](../../../visual-basic/language-reference/operators/left-shift-operator.md)|[<\<=](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)|  
   
 > [!NOTE]
->  `EndIf`, `GoSub`, `Variant`, and `Wend` are retained as reserved keywords, although they are no longer used in Visual Basic. The meaning of the `Let` keyword has changed. `Let` is now used in LINQ queries. For more information, see [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md).  
+> `EndIf`, `GoSub`, `Variant`, and `Wend` are retained as reserved keywords, although they are no longer used in Visual Basic. The meaning of the `Let` keyword has changed. `Let` is now used in LINQ queries. For more information, see [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md).  
   
 ## Unreserved Keywords  
  The following keywords are not reserved, which means you can use them as names for your programming elements. However, doing this is not recommended, because it can make your code hard to read and can lead to subtle errors that can be difficult to find.  
@@ -112,4 +112,5 @@ The following tables list all Visual Basic language keywords.
 |[String Manipulation Summary](../../../visual-basic/language-reference/keywords/string-manipulation-summary.md)|Lists functions that are used to manipulate strings.|  
   
 ## See also
+
 - [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

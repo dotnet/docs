@@ -1,12 +1,12 @@
 ---
 title: "CLR Profilers and Windows Store Apps"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
-applies_to: 
+applies_to:
   - "Windows 10"
   - "Windows 8"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "profiling API"
   - "profiling API [.NET Framework]"
   - "profiling managed code"
@@ -15,6 +15,7 @@ ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # CLR Profilers and Windows Store Apps
 
 This topic discusses what you need to think about when writing diagnostic tools that analyze managed code running inside a Windows Store app. It also provides guidelines to modify your existing development tools so they continue to work when you run them against Windows Store apps. To understand this information, it’s best if you're  familiar with the Common Language Runtime Profiling API, you’ve already used this API in a diagnostic tool that runs correctly against Windows desktop applications, and you’re now interested in modifying the tool to run correctly against Windows Store apps.
@@ -120,7 +121,7 @@ First, you’ll want to ask your profiler user which Windows Store app to launch
 
 You can use the <xref:Windows.Management.Deployment.PackageManager> class to generate this list. `PackageManager` is a Windows Runtime class that is available to desktop apps, and in fact it is *only* available to desktop apps.
 
-The following code example from a hypothetical Profiler UI written as a desktop app in C# yses the `PackageManager` to generate a list of Windows apps:
+The following code example from a hypothetical Profiler UI written as a desktop app in C# uses the `PackageManager` to generate a list of Windows apps:
 
 ```csharp
 string currentUserSID = WindowsIdentity.GetCurrent().User.ToString();
@@ -137,7 +138,7 @@ Consider the following code snippet:
 
 ```csharp
 IPackageDebugSettings pkgDebugSettings = new PackageDebugSettings();
-pkgDebugSettings.EnableDebugging(packgeFullName, debuggerCommandLine, 
+pkgDebugSettings.EnableDebugging(packageFullName, debuggerCommandLine,
                                                                  (IntPtr)fixedEnvironmentPzz);
 ```
 
@@ -162,7 +163,7 @@ There are a couple of items you'll need to get right:
         // Parse command line here
         // …
 
-        HANDLE hThread = OpenThread(THREAD_SUSPEND_RESUME, 
+        HANDLE hThread = OpenThread(THREAD_SUSPEND_RESUME,
                                                                   FALSE /* bInheritHandle */, nThreadID);
         ResumeThread(hThread);
         CloseHandle(hThread);
@@ -229,7 +230,7 @@ So you’ll want to do something like this:
 
 ```csharp
 IPackageDebugSettings pkgDebugSettings = new PackageDebugSettings();
-pkgDebugSettings.EnableDebugging(packgeFullName, null /* debuggerCommandLine */, 
+pkgDebugSettings.EnableDebugging(packageFullName, null /* debuggerCommandLine */,
                                                                  IntPtr.Zero /* environment */);
 ```
 
@@ -352,7 +353,7 @@ Your Profiler DLL can distinguish WinMD files from other modules by calling the 
 
 ### Reading metadata from WinMDs
 
-WinMD files, like regular modules, contain metadata that can be read via the [Metadata APIs](../../../../docs/framework/unmanaged-api/metadata/index.md). However, the CLR maps Windows Runtime types to .NET Framework types when it reads WinMD files so that developers who program in managed code and consume the WinMD file can have a more natural programming experience. For some examples of these mappings, see [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md).
+WinMD files, like regular modules, contain metadata that can be read via the [Metadata APIs](../../../../docs/framework/unmanaged-api/metadata/index.md). However, the CLR maps Windows Runtime types to .NET Framework types when it reads WinMD files so that developers who program in managed code and consume the WinMD file can have a more natural programming experience. For some examples of these mappings, see [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md).
 
 So which view will your profiler get when it uses the metadata APIs: the raw Windows Runtime view, or the mapped .NET Framework view?  The answer: it’s up to you.
 
@@ -402,7 +403,7 @@ It is possible to use the CLR Profiling API to analyze managed code running insi
 
 **The CLR's interaction with the Windows Runtime**
 
-- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
 
 **Windows Store apps**
 

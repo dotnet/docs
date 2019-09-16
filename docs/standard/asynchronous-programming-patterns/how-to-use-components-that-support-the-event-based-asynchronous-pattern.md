@@ -30,9 +30,9 @@ Many components provide you with the option of performing their work asynchronou
   
 ### To enable a PictureBox control to asynchronously load an image  
   
-1.  Create an instance of the <xref:System.Windows.Forms.PictureBox> component in your form.  
+1. Create an instance of the <xref:System.Windows.Forms.PictureBox> component in your form.  
   
-2.  Assign an event handler to the <xref:System.Windows.Forms.PictureBox.LoadCompleted> event.  
+2. Assign an event handler to the <xref:System.Windows.Forms.PictureBox.LoadCompleted> event.  
   
      Check for any errors that may have occurred during the asynchronous download here. This is also where you check for cancellation.  
   
@@ -42,7 +42,7 @@ Many components provide you with the option of performing their work asynchronou
      [!code-csharp[System.Windows.Forms.PictureBox.LoadAsync#5](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.LoadAsync/CS/Form1.cs#5)]
      [!code-vb[System.Windows.Forms.PictureBox.LoadAsync#5](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.LoadAsync/VB/Form1.vb#5)]  
   
-3.  Add two buttons, called `loadButton` and `cancelLoadButton`, to your form. Add <xref:System.Windows.Forms.Control.Click> event handlers to start and cancel the download.  
+3. Add two buttons, called `loadButton` and `cancelLoadButton`, to your form. Add <xref:System.Windows.Forms.Control.Click> event handlers to start and cancel the download.  
   
      [!code-csharp[System.Windows.Forms.PictureBox.LoadAsync#3](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.LoadAsync/CS/Form1.cs#3)]
      [!code-vb[System.Windows.Forms.PictureBox.LoadAsync#3](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.LoadAsync/VB/Form1.vb#3)]  
@@ -50,7 +50,7 @@ Many components provide you with the option of performing their work asynchronou
      [!code-csharp[System.Windows.Forms.PictureBox.LoadAsync#4](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.LoadAsync/CS/Form1.cs#4)]
      [!code-vb[System.Windows.Forms.PictureBox.LoadAsync#4](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.LoadAsync/VB/Form1.vb#4)]  
   
-4.  Run your application.  
+4. Run your application.  
   
      As the image download proceeds, you can move the form freely, minimize it, and maximize it.  
   

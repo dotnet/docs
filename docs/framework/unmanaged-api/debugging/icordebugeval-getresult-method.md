@@ -23,13 +23,13 @@ Gets the results of this evaluation.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetResult (  
     [out] ICorDebugValue    **ppResult  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppResult`  
  [out] Pointer to the address of an ICorDebugValue object that represents the results of this evaluation, if the evaluation completes normally.  
   

@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 149b99b6-6eb6-4f45-be22-c967279677d9
 ---
 # Configuring and Extending the Runtime with Behaviors
-Behaviors enable you to modify default behavior and add custom extensions that inspect and validate service configuration or modify runtime behavior in Windows Communication Foundation (WCF) client and service applications. This topic describes the behavior interfaces, how to implement them, and how to add them to the service description (in a service application) or endpoint (in a client application) programmatically or in a configuration file. For more information about using system-provided behaviors, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md) and [Specifying Client Run-Time Behavior](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md).  
+Behaviors enable you to modify default behavior and add custom extensions that inspect and validate service configuration or modify runtime behavior in Windows Communication Foundation (WCF) client and service applications. This topic describes the behavior interfaces, how to implement them, and how to add them to the service description (in a service application) or endpoint (in a client application) programmatically or in a configuration file. For more information about using system-provided behaviors, see [Specifying Service Run-Time Behavior](../specifying-service-run-time-behavior.md) and [Specifying Client Run-Time Behavior](../specifying-client-run-time-behavior.md).  
   
 ## Behaviors  
  Behavior types are added to the service or service endpoint description objects (on the service or client, respectively) before those objects are used by Windows Communication Foundation (WCF) to create a runtime that executes a WCF service or a WCF client. When these behaviors are called during the runtime construction process they are then able to access runtime properties and methods that modify the runtime constructed by the contract, bindings, and addresses.  
@@ -14,31 +14,31 @@ Behaviors enable you to modify default behavior and add custom extensions that i
 ### Behavior Methods  
  All behaviors have an `AddBindingParameters` method, an `ApplyDispatchBehavior` method, a `Validate` method, and an `ApplyClientBehavior` method with one exception: Because <xref:System.ServiceModel.Description.IServiceBehavior> cannot execute in a client, it does not implement `ApplyClientBehavior`.  
   
--   Use the `AddBindingParameters` method to modify or add custom objects to a collection that custom bindings can access for their use when the runtime is constructed. For example, this how protection requirements are specified that affect the way the channel is built, but are not known by the channel developer.  
+- Use the `AddBindingParameters` method to modify or add custom objects to a collection that custom bindings can access for their use when the runtime is constructed. For example, this how protection requirements are specified that affect the way the channel is built, but are not known by the channel developer.  
   
--   Use the `Validate` method to examine the description tree and corresponding runtime object to ensure it conforms to some set of criteria.  
+- Use the `Validate` method to examine the description tree and corresponding runtime object to ensure it conforms to some set of criteria.  
   
--   Use the `ApplyDispatchBehavior` and `ApplyClientBehavior` methods to examine the description tree and modify the runtime for a particular scope on either the service or the client. You can also insert extension objects as well.  
+- Use the `ApplyDispatchBehavior` and `ApplyClientBehavior` methods to examine the description tree and modify the runtime for a particular scope on either the service or the client. You can also insert extension objects as well.  
   
     > [!NOTE]
-    >  Although a description tree is provided in these methods, it is for examination only. If a description tree is modified, the behavior is undefined.  
+    > Although a description tree is provided in these methods, it is for examination only. If a description tree is modified, the behavior is undefined.  
   
  The properties you can modify and the customization interfaces you can implement are accessed through the service and client runtime classes. The service types are the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and  <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes. The client types are the <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.ClientOperation> classes. The <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchRuntime> classes are the extensibility entry points to access client-wide and service-wide runtime properties and extension collections, respectively. Similarly, the <xref:System.ServiceModel.Dispatcher.ClientOperation> and  <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes expose client operation and service operation runtime properties and extension collections, respectively. You can, however, access the wider scoped runtime object from the operation runtime object and vice versa if need be.  
   
 > [!NOTE]
->  For a discussion of runtime properties and extension types that you can use to modify the execution behavior of a client, see [Extending Clients](../../../../docs/framework/wcf/extending/extending-clients.md). For a discussion of runtime properties and extension types that you can use to modify the execution behavior of a service dispatcher, see [Extending Dispatchers](../../../../docs/framework/wcf/extending/extending-dispatchers.md).  
+> For a discussion of runtime properties and extension types that you can use to modify the execution behavior of a client, see [Extending Clients](extending-clients.md). For a discussion of runtime properties and extension types that you can use to modify the execution behavior of a service dispatcher, see [Extending Dispatchers](extending-dispatchers.md).  
   
  Most WCF users do not interact with the runtime directly; instead they use core programming model constructs like endpoints, contracts, bindings, addresses, and behavior attributes on classes or behaviors in configuration files. These constructs make up the *description tree*, which is the complete specification for constructing a runtime to support a service or client described by the description tree.  
   
  There are four kinds of behaviors in WCF:  
   
--   Service behaviors (<xref:System.ServiceModel.Description.IServiceBehavior> types) enable the customization of the entire service runtime including <xref:System.ServiceModel.ServiceHostBase>.  
+- Service behaviors (<xref:System.ServiceModel.Description.IServiceBehavior> types) enable the customization of the entire service runtime including <xref:System.ServiceModel.ServiceHostBase>.  
   
--   Endpoint behaviors (<xref:System.ServiceModel.Description.IEndpointBehavior> types) enable the customization of service endpoints and their associated <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects.  
+- Endpoint behaviors (<xref:System.ServiceModel.Description.IEndpointBehavior> types) enable the customization of service endpoints and their associated <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects.  
   
--   Contract behaviors (<xref:System.ServiceModel.Description.IContractBehavior> types) enable the customization of both the <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchRuntime> classes in client and service applications, respectively.  
+- Contract behaviors (<xref:System.ServiceModel.Description.IContractBehavior> types) enable the customization of both the <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchRuntime> classes in client and service applications, respectively.  
   
--   Operation behaviors (<xref:System.ServiceModel.Description.IOperationBehavior> types) enable the customization of the <xref:System.ServiceModel.Dispatcher.ClientOperation> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes, again, on the client and service.  
+- Operation behaviors (<xref:System.ServiceModel.Description.IOperationBehavior> types) enable the customization of the <xref:System.ServiceModel.Dispatcher.ClientOperation> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes, again, on the client and service.  
   
  You can add these behaviors to the various description objects by implementing custom attributes, using application configuration files, or directly by adding them to the behaviors collection on the appropriate description object. The must, however, be added to a service description or service endpoint description object prior to calling <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> on the <xref:System.ServiceModel.ServiceHost> or a <xref:System.ServiceModel.ChannelFactory%601>.  
   
@@ -48,16 +48,16 @@ Behaviors enable you to modify default behavior and add custom extensions that i
 #### Service Behaviors  
  Service behaviors, which implement <xref:System.ServiceModel.Description.IServiceBehavior>, are the primary mechanism by which you modify the entire service runtime. There are three mechanisms for adding service behaviors to a service.  
   
-1.  Using an attribute on the service class.  When a <xref:System.ServiceModel.ServiceHost> is constructed, the <xref:System.ServiceModel.ServiceHost> implementation uses reflection to discover the set of attributes on the type of the service. If any of those attributes are implementations of <xref:System.ServiceModel.Description.IServiceBehavior>, they are added to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>. This allows those behaviors to participate in the construction of the service run time.  
+1. Using an attribute on the service class.  When a <xref:System.ServiceModel.ServiceHost> is constructed, the <xref:System.ServiceModel.ServiceHost> implementation uses reflection to discover the set of attributes on the type of the service. If any of those attributes are implementations of <xref:System.ServiceModel.Description.IServiceBehavior>, they are added to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>. This allows those behaviors to participate in the construction of the service run time.  
   
-2.  Programmatically adding the behavior to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>. This can be accomplished with the following lines of code:  
+2. Programmatically adding the behavior to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>. This can be accomplished with the following lines of code:  
   
     ```csharp
     ServiceHost host = new ServiceHost(/* Parameters */);  
     host.Description.Behaviors.Add(/* Service Behavior */);  
     ```  
   
-3.  Implementing a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that extends configuration. This enables the use of the service behavior from application configuration files.  
+3. Implementing a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that extends configuration. This enables the use of the service behavior from application configuration files.  
   
  Examples of service behaviors in WCF include the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute, the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>, and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> behavior.  
   
@@ -83,9 +83,9 @@ Behaviors enable you to modify default behavior and add custom extensions that i
   
  There are two mechanisms for adding endpoint behaviors to a service.  
   
-1.  Add the behavior to the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property.  
+1. Add the behavior to the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property.  
   
-2.  Implement a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that extends configuration.  
+2. Implement a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that extends configuration.  
   
  For more information and an example, see the reference topic.  
   
@@ -104,7 +104,7 @@ Behaviors enable you to modify default behavior and add custom extensions that i
  Service and endpoint, and contract behaviors can by designed to be specified in code or using attributes; only service and endpoint behaviors can be configured using application or Web configuration files. Exposing behaviors using attributes allows developers to specify a behavior at compilation-time that cannot be added, removed, or modified at runtime. This is often suitable for behaviors that are always required for the correct operation of a service (for example, the transaction-related parameters to the <xref:System.ServiceModel.ServiceBehaviorAttribute?displayProperty=nameWithType> attribute). Exposing behaviors using configuration allows developers to leave the specification and configuration of those behaviors to those who deploy the service. This is suitable for behaviors that are optional components or other deployment-specific configuration, such as whether metadata is exposed for the service or the particular authorization configuration for a service.  
   
 > [!NOTE]
->  You can also use behaviors that support configuration to enforce company application policies by inserting them into the machine.config configuration file and locking those items down. For a description and an example, see [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md).  
+> You can also use behaviors that support configuration to enforce company application policies by inserting them into the machine.config configuration file and locking those items down. For a description and an example, see [How to: Lock Down Endpoints in the Enterprise](how-to-lock-down-endpoints-in-the-enterprise.md).  
   
  To expose a behavior using configuration, a developer must create a derived class of <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> and then register that extension with configuration.  
   
@@ -182,23 +182,23 @@ protected override object CreateBehavior()
   
  The <xref:System.ServiceModel.ServiceHost> applies behaviors in the following order:  
   
-1.  Service  
+1. Service  
   
-2.  Contract  
+2. Contract  
   
-3.  Endpoint  
+3. Endpoint  
   
-4.  Operation  
+4. Operation  
   
  Within any collection of behaviors, no order is guaranteed.  
   
  The <xref:System.ServiceModel.ChannelFactory%601> applies behaviors in the following order:  
   
-1.  Contract  
+1. Contract  
   
-2.  Endpoint  
+2. Endpoint  
   
-3.  Operation  
+3. Operation  
   
  Within any collection of behaviors, again, no order is guaranteed.  
   

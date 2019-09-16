@@ -16,21 +16,21 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 ### To add listeners  
   
-1.  Right-click app.config in **Solution Explorer** and choose **Open**.  
+1. Right-click app.config in **Solution Explorer** and choose **Open**.  
   
      \- or -  
   
      If there is no app.config file:  
   
-    1.  On the **Project** menu, choose **Add New Item**.  
+    1. On the **Project** menu, choose **Add New Item**.  
   
-    2.  From the **Add New Item** dialog box, select **Application Configuration File**.  
+    2. From the **Add New Item** dialog box, select **Application Configuration File**.  
   
-    3.  Click **Add**.  
+    3. Click **Add**.  
   
-2.  Locate the `<listeners>` section, under the `<source>` section with the `name` attribute "DefaultSource", in the `<sources>` section. The `<sources>` section is in the `<system.diagnostics>` section, in the top-level `<configuration>` section.  
+2. Locate the `<listeners>` section, under the `<source>` section with the `name` attribute "DefaultSource", in the `<sources>` section. The `<sources>` section is in the `<system.diagnostics>` section, in the top-level `<configuration>` section.  
   
-3.  Add these elements to that `<listeners>` section.  
+3. Add these elements to that `<listeners>` section.  
   
     ```xml  
     <!-- Uncomment to connect the application file log. -->  
@@ -45,11 +45,11 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
     <!-- <add name="Console" /> -->  
     ```  
   
-4.  Uncomment the log listeners that you want to receive `Log` messages.  
+4. Uncomment the log listeners that you want to receive `Log` messages.  
   
-5.  Locate the `<sharedListeners>` section, in the `<system.diagnostics>` section, in the top-level `<configuration>` section.  
+5. Locate the `<sharedListeners>` section, in the `<system.diagnostics>` section, in the top-level `<configuration>` section.  
   
-6.  Add these elements to that `<sharedListeners>` section.  
+6. Add these elements to that `<sharedListeners>` section.  
   
     ```xml  
     <add name="FileLog"  
@@ -80,7 +80,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
          initializeData="true" />  
     ```  
   
-7.  The content of the app.config file should be similar to the following XML:  
+7. The content of the app.config file should be similar to the following XML:  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -141,41 +141,42 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 ### To reconfigure a listener  
   
-1.  Locate the listener's `<add>` element from the `<sharedListeners>` section.  
+1. Locate the listener's `<add>` element from the `<sharedListeners>` section.  
   
-2.  The `type` attribute gives the name of the listener type. This type must inherit from the <xref:System.Diagnostics.TraceListener> class. Use the strongly named type name to ensure that the right type is used. For more information, see the "To reference a strongly named type" section below.  
+2. The `type` attribute gives the name of the listener type. This type must inherit from the <xref:System.Diagnostics.TraceListener> class. Use the strongly named type name to ensure that the right type is used. For more information, see the "To reference a strongly named type" section below.  
   
      Some types that you can use are:  
   
-    -   A <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType> listener, which writes to a file log.  
+    - A <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType> listener, which writes to a file log.  
   
-    -   A <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType> listener, which writes information to the computer event log specified by the `initializeData` parameter.  
+    - A <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType> listener, which writes information to the computer event log specified by the `initializeData` parameter.  
   
-    -   The <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType> and <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType> listeners, which write to the file specified in the `initializeData` parameter.  
+    - The <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType> and <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType> listeners, which write to the file specified in the `initializeData` parameter.  
   
-    -   A <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType> listener, which writes to the command-line console.  
+    - A <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType> listener, which writes to the command-line console.  
   
      For information about where other types of log listeners write information, consult that type's documentation.  
   
-3.  When the application creates the log-listener object, it passes the `initializeData` attribute as the constructor parameter. The meaning of the `initializeData` attribute depends on the trace listener.  
+3. When the application creates the log-listener object, it passes the `initializeData` attribute as the constructor parameter. The meaning of the `initializeData` attribute depends on the trace listener.  
   
-4.  After creating the log listener, the application sets the listener's properties. These properties are defined by the other attributes in the `<add>` element. For more information on the properties for a particular listener, see the documentation for that listener's type.  
+4. After creating the log listener, the application sets the listener's properties. These properties are defined by the other attributes in the `<add>` element. For more information on the properties for a particular listener, see the documentation for that listener's type.  
   
 ### To reference a strongly named type  
   
-1.  To ensure that the right type is used for your log listener, make sure to use the fully qualified type name and the strongly named assembly name. The syntax of a strongly named type is as follows:  
+1. To ensure that the right type is used for your log listener, make sure to use the fully qualified type name and the strongly named assembly name. The syntax of a strongly named type is as follows:  
   
      \<*type name*>, \<*assembly name*>, \<*version number*>, \<*culture*>, \<*strong name*>  
   
-2.  This code example shows how to determine the strongly named type name for a fully qualified type—"System.Diagnostics.FileLogTraceListener" in this case.  
+2. This code example shows how to determine the strongly named type name for a fully qualified type—"System.Diagnostics.FileLogTraceListener" in this case.  
   
-     [!code-vb[VbVbalrMyApplicationLog#15](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-changing-where-my-application-log-writes-information_1.vb)]  
+     [!code-vb[VbVbalrMyApplicationLog#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#15)]  
   
      This is the output, and it can be used to uniquely reference a strongly named type, as in the "To add listeners" procedure above.  
   
      `Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:System.Diagnostics.TraceListener>
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType>

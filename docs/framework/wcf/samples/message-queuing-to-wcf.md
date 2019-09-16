@@ -54,7 +54,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
  The MSMQ queue name is specified in an appSettings section of the configuration file, as shown in the following sample configuration.
 
 > [!NOTE]
->  The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses localhost for the local computer. The address of the queue for each MSMQ Format Name addressing guidelines follows the msmq.formatname scheme.
+> The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses localhost for the local computer. The address of the queue for each MSMQ Format Name addressing guidelines follows the msmq.formatname scheme.
 
 ```xml
 <appSettings>
@@ -108,46 +108,47 @@ Console.ReadLine();
 
 ### To setup, build, and run the sample
 
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  If the service is run first, it will check to ensure that the queue is present. If the queue is not present, the service will create one. You can run the service first to create the queue, or you can create one via the MSMQ Queue Manager. Follow these steps to create a queue in Windows 2008.
+2. If the service is run first, it will check to ensure that the queue is present. If the queue is not present, the service will create one. You can run the service first to create the queue, or you can create one via the MSMQ Queue Manager. Follow these steps to create a queue in Windows 2008.
 
-    1.  Open Server Manager in Visual Studio 2012.
+    1. Open Server Manager in Visual Studio 2012.
 
-    2.  Expand the **Features** tab.
+    2. Expand the **Features** tab.
 
-    3.  Right-click **Private Message Queues**, and select **New**, **Private Queue**.
+    3. Right-click **Private Message Queues**, and select **New**, **Private Queue**.
 
-    4.  Check the **Transactional** box.
+    4. Check the **Transactional** box.
 
-    5.  Enter `ServiceModelSamplesTransacted` as the name of the new queue.
+    5. Enter `ServiceModelSamplesTransacted` as the name of the new queue.
 
-3.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
-4.  To run the sample in a single- computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
+4. To run the sample in a single- computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
 
 ### To run the sample across computers
 
-1.  Copy the service program files from the \service\bin\ folder, under the language-specific folder, to the service computer.
+1. Copy the service program files from the \service\bin\ folder, under the language-specific folder, to the service computer.
 
-2.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.
+2. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.
 
-3.  In the Client.exe.config file, change the orderQueueName to specify the service computer name instead of ".".
+3. In the Client.exe.config file, change the orderQueueName to specify the service computer name instead of ".".
 
-4.  On the service computer, launch Service.exe from a command prompt.
+4. On the service computer, launch Service.exe from a command prompt.
 
-5.  On the client computer, launch Client.exe from a command prompt.
+5. On the client computer, launch Client.exe from a command prompt.
 
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MsmqToWcf`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MsmqToWcf`  
   
 ## See also
+
 - [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
 - [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
 - [Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94968)

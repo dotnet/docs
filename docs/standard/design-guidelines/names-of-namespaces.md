@@ -43,7 +43,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
   
  There are specific guidelines for avoiding type name conflicts for different categories of namespaces.  
   
--   **Application model namespaces**  
+- **Application model namespaces**  
   
      Namespaces belonging to a single application model are very often used together, but they are almost never used with namespaces of other application models. For example, the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace is very rarely used together with the <xref:System.Web.UI?displayProperty=nameWithType> namespace. The following is a list of well-known application model namespace groups:  
   
@@ -54,11 +54,11 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
   
      For example, do not add a type named `Page` to the <xref:System.Web.UI.Adapters?displayProperty=nameWithType> namespace, because the <xref:System.Web.UI?displayProperty=nameWithType> namespace already contains a type named `Page`.  
   
--   **Infrastructure namespaces**  
+- **Infrastructure namespaces**  
   
      This group contains namespaces that are rarely imported during development of common applications. For example, `.Design` namespaces are mainly used when developing programming tools. Avoiding conflicts with types in these namespaces is not critical.  
   
--   **Core namespaces**  
+- **Core namespaces**  
   
      Core namespaces include all `System` namespaces, excluding namespaces of the application models and the Infrastructure namespaces. Core namespaces include, among others, `System`, `System.IO`, `System.Xml`, and `System.Net`.  
   
@@ -66,7 +66,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
   
      For example, never use `Stream` as a type name. It would conflict with <xref:System.IO.Stream?displayProperty=nameWithType>, a very commonly used type.  
   
--   **Technology namespace groups**  
+- **Technology namespace groups**  
   
      This category includes all namespaces with the same first two namespace nodes `(<Company>.<Technology>*`), such as `Microsoft.Build.Utilities` and `Microsoft.Build.Tasks`. It is important that types belonging to a single technology do not conflict with each other.  
   

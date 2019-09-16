@@ -23,13 +23,13 @@ Sets a value that specifies whether this ICorDebugStepper steps only through cod
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetJMC (  
     [in] BOOL    fIsJMCStepper  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fIsJMCStepper`  
  [in] Set to `true` to step only through code that is authored by an application's developer; otherwise, set to `false`.  
   

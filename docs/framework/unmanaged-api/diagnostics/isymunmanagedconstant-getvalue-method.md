@@ -23,13 +23,13 @@ Gets the value of the constant.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue(  
     [out]  VARIANT* pValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pValue`  
  [out] A pointer to a variable that receives the value.  
   
@@ -40,6 +40,7 @@ HRESULT GetValue(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedConstant Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-interface.md)
 - [GetName Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getname-method.md)
 - [GetSignature Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getsignature-method.md)

@@ -16,7 +16,7 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:Class="namespace.classname" x:Subclass="subclassNamespace.subclassName">  
    ...  
 </object>  
@@ -32,7 +32,7 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
 |`subclassName`|Required. Specifies the CLR name of the subclass.|  
   
 ## Dependencies  
- [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md) must also be provided on the same object, and that object must be the root element of the XAML production.  
+ [x:Class Directive](x-class-directive.md) must also be provided on the same object, and that object must be the root element of the XAML production.  
   
 ## Remarks  
  `x:Subclass` usage is primarily intended for languages that do not support partial class declarations.  
@@ -51,5 +51,6 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
  When you define both `x:Class` and `x:Subclass`, you do not need to provide any implementation for the class that is referenced by `x:Class`. You only need to give it a name via the `x:Class` attribute so that the compiler has some guidance for the class that it creates in the intermediate files (the compiler does not select a default name in this case). You can give the `x:Class` class an implementation; however, this is not the typical scenario for using both `x:Class` and `x:Subclass`.  
   
 ## See also
-- [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)
-- [XAML and Custom Classes for WPF](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+
+- [x:Class Directive](x-class-directive.md)
+- [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)

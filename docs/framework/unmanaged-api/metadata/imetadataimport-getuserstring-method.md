@@ -23,7 +23,7 @@ Gets the literal string represented by the specified metadata token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserString (  
    [in]   mdString    stk,  
    [out]  LPWSTR      szString,  
@@ -32,7 +32,7 @@ HRESULT GetUserString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `stk`  
  [in] The String token to return the associated string for.  
   
@@ -55,5 +55,6 @@ HRESULT GetUserString (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

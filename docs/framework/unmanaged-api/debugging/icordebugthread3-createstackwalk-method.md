@@ -23,11 +23,11 @@ Creates an [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debuggi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppStackWalk`  
  [out] A pointer to address of the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
   
@@ -54,5 +54,6 @@ HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

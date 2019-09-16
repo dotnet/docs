@@ -23,14 +23,14 @@ Gets the per-thread statistics for garbage collection.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadStats (  
     [in] DWORD *pFiberCookie,  
     [in, out] COR_GC_THREAD_STATS *pStats  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFiberCookie`  
  [in] A pointer to a fiber cookie that specifies the thread for which to retrieve the statistics.  
   
@@ -47,4 +47,5 @@ HRESULT GetThreadStats (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)

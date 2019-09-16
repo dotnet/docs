@@ -23,13 +23,13 @@ Notifies the code profiler that a garbage collection handle has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HandleCreated(  
     [in] GCHandleID handleId,  
     [in] ObjectID initialObjectId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `handleId`  
  [in] The ID of the handle for the garbage collection.  
   
@@ -46,5 +46,6 @@ HRESULT HandleCreated(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)

@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) data access services to request an o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Request (  
     [in] ULONG32            reqCode,  
     [in] ULONG32            inBufferSize,  
@@ -35,7 +35,7 @@ HRESULT Request (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `reqCode`  
  [in] User-defined.  
   
@@ -66,4 +66,5 @@ HRESULT Request (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

@@ -23,7 +23,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVirtualMethod (  
     [in]  mdMemberRef        memberRef,  
     [out] ICorDebugFunction  **ppFunction  
@@ -34,5 +34,3 @@ HRESULT GetVirtualMethod (
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also
-
-

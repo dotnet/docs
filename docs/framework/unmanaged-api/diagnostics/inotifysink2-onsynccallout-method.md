@@ -23,7 +23,7 @@ Gets invoked when a call is out.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnSyncCallOut  
 (  
     [in]  CALL_ID  in_CallID,  
@@ -32,7 +32,7 @@ HRESULT OnSyncCallOut
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `in_CallID`  
  [in] ID of the call that is out. See [CALL_ID Structure](../../../../docs/framework/unmanaged-api/diagnostics/call-id-structure.md).  
   
@@ -49,6 +49,7 @@ HRESULT OnSyncCallOut
  **Header:** ProtocolNotify2.idl  
   
 ## See also
+
 - [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
 - [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
 - [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)

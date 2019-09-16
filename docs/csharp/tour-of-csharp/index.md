@@ -1,13 +1,13 @@
 ---
 title: A Tour of C# - C# Guide
 description: New to C#? Learn the basics of the language.
-ms.date: 08/10/2016
-ms.assetid: ebc727cd-8112-42e7-b59c-3c2873ad661c
+ms.date: 04/05/2019
+ms.custom: seoapril2019
 ---
 
-# A Tour of the C# Language  
+# A Tour of the C# Language
 
-C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.
+C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language. If you want to explore the language through interactive examples, try our [introduction to C#](../tutorials/intro-to-csharp/index.md) tutorials.
 
 C# is an object-oriented language, but C# further includes support for ***component-oriented*** programming. Contemporary software design increasingly relies on software components in the form of self-contained and self-describing packages of functionality. Key to such components is that they present a programming model with properties, methods, and events; they have attributes that provide declarative information about the component; and they incorporate their own documentation. C# provides language constructs to support directly these concepts, making C# a very natural language in which to create and use software components.
 
@@ -38,7 +38,6 @@ Hello, World
 > [!IMPORTANT]
 > The `csc` command compiles for the full framework, and may not be available on all platforms.
 
-
 The "Hello, World" program starts with a `using` directive that references the `System` namespace. Namespaces provide a hierarchical means of organizing C# programs and libraries. Namespaces contain types and other namespaces—for example, the `System` namespace contains a number of types, such as the `Console` class referenced in the program, and a number of other namespaces, such as `IO` and `Collections`. A `using` directive that references a given namespace enables unqualified use of the types that are members of that namespace. Because of the `using` directive, the program can use `Console.WriteLine` as shorthand for `System.Console.WriteLine`.
 
 The `Hello` class declared by the "Hello, World" program has a single member, the method named `Main`. The `Main` method is declared with the static modifier. While instance methods can reference a particular enclosing object instance using the keyword `this`, static methods operate without reference to a particular object. By convention, a static method named `Main` serves as the entry point of a program.
@@ -47,28 +46,28 @@ The output of the program is produced by the `WriteLine` method of the `Console`
 
 There's a lot more to learn about C#.  The following topics provide an overview of the elements of the C# language. These overviews will provide basic information about all elements of the language and give you the information necessary to dive deeper into elements of the C# language:
 
-* [Program Structure](program-structure.md)
-    - Learn the key organizational concepts in the C# language: ***programs***, ***namespaces***, ***types***, ***members***, and ***assemblies***.
-* [Types and Variables](types-and-variables.md)
-    - Learn about ***value types***, ***reference types***, and ***variables*** in the C# language.
-* [Expressions](expressions.md)
-	- ***Expressions*** are constructed from ***operands*** and ***operators***. Expressions produce a value.
-* [Statements](statements.md)
-	- You use ***statements*** to express the actions of a program.
-* [Classes and objects](classes-and-objects.md)
-	- ***Classes*** are the most fundamental of C#'s types. ***Objects*** are instances of a class. Classes are built using ***members***, which are also covered in this topic.
-* [Structs](structs.md)
-	- ***Structs*** are data structures that, unlike classes, are value types.
-* [Arrays](arrays.md)
-	- An ***array*** is a data structure that contains a number of variables that are accessed through computed indices.
-* [Interfaces](interfaces.md)
-	- An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface does not provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
-* [Enums](enums.md)
-	- An ***enum type*** is a distinct value type with a set of named constants.
-* [Delegates](delegates.md)
-	- A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
-* [Attributes](attributes.md)
- 	* ***Attributes*** enable programs to specify additional declarative information about types, members, and other entities.
+- [Program Structure](program-structure.md)
+  - Learn the key organizational concepts in the C# language: ***programs***, ***namespaces***, ***types***, ***members***, and ***assemblies***.
+- [Types and Variables](types-and-variables.md)
+  - Learn about ***value types***, ***reference types***, and ***variables*** in the C# language.
+- [Expressions](expressions.md)
+  - ***Expressions*** are constructed from ***operands*** and ***operators***. Expressions produce a value.
+- [Statements](statements.md)
+  - You use ***statements*** to express the actions of a program.
+- [Classes and objects](classes-and-objects.md)
+  - ***Classes*** are the most fundamental of C#'s types. ***Objects*** are instances of a class. Classes are built using ***members***, which are also covered in this topic.
+- [Structs](structs.md)
+  - ***Structs*** are data structures that, unlike classes, are value types.
+- [Arrays](arrays.md)
+  - An ***array*** is a data structure that contains a number of variables that are accessed through computed indices.
+- [Interfaces](interfaces.md)
+  - An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface does not provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
+- [Enums](enums.md)
+  - An ***enum type*** is a distinct value type with a set of named constants.
+- [Delegates](delegates.md)
+  - A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
+- [Attributes](attributes.md)
+  - ***Attributes*** enable programs to specify additional declarative information about types, members, and other entities.
 
->[!div class="step-by-step"]
->[Next](program-structure.md)
+> [!div class="step-by-step"]
+> [Next](program-structure.md)

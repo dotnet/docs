@@ -23,7 +23,7 @@ Gets a pointer to the TypeDef metadata token for the <xref:System.Type> with the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindTypeDefByName  
    [in]  LPCWSTR       szTypeDef,  
    [in]  mdToken       tkEnclosingClass,  
@@ -31,7 +31,7 @@ HRESULT FindTypeDefByName
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szTypeDef`  
  [in] The name of the type for which to get the TypeDef token.  
   
@@ -51,5 +51,6 @@ HRESULT FindTypeDefByName
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

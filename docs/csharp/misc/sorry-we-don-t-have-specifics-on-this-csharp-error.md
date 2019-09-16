@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Sorry, we don't have specifics on this C# error"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -886,23 +886,23 @@ ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
 # Sorry, we don't have specifics on this C# error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or you can ask other developers using one of these forums:  
   
- [Visual C# Language](https://social.msdn.microsoft.com/Forums/en-US/home?forum=csharplanguage)  
+ [Visual C# Language](https://social.msdn.microsoft.com/Forums/home?forum=csharplanguage)  
  Provides a forum for questions about and general discussions of the Visual C# language syntax and compiler.  
   
- [Visual C# IDE](https://social.msdn.microsoft.com/Forums/en-US/home?forum=csharpide)  
+ [Visual C# IDE](https://social.msdn.microsoft.com/Forums/home?forum=csharpide)  
  Provides a forum for questions about how to work in the Visual Studio environment.  
   
- [Visual C# General](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=csharpgeneral)  
+ [Visual C# General](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)  
  Provides a forum for questions about and issues with Visual C# that are not discussed in other forums.  
   
  [Stack Overflow](https://stackoverflow.com/questions/tagged/c%23)  
  Provides a forum for questions about and issues with Visual C#.  
   
  Also see:  
- [Additional Resources for Visual C# Programmers](../../csharp/getting-started/additional-resources.md)  
+ [Additional Resources for Visual C# Programmers](../getting-started/additional-resources.md)  
   
 ## See also
 
-- [C# Programming Guide](../../csharp/programming-guide/index.md)
-- [C# Reference](../../csharp/language-reference/index.md)
+- [C# Programming Guide](../programming-guide/index.md)
+- [C# Reference](../language-reference/index.md)
 - [Talk to Us](/visualstudio/ide/talk-to-us)

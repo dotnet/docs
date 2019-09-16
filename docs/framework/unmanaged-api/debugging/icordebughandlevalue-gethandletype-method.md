@@ -23,13 +23,13 @@ Gets a value that indicates the kind of handle referenced by this ICorDebugHandl
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandleType (  
     [out] CorDebugHandleType  *pType  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pType`  
  [out] A pointer to a value of the CorDebugHandleType enumeration that indicates the type of this handle.  
   

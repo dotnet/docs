@@ -23,7 +23,7 @@ Not implemented. A profiler that needs unmanaged exception information must obta
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionOSHandlerEnter(  
     [in] UINT_PTR __unused);  
 ```  
@@ -38,4 +38,5 @@ HRESULT ExceptionOSHandlerEnter(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

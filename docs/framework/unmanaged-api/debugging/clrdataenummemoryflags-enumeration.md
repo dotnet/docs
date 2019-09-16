@@ -22,7 +22,7 @@ Indicates which memory regions a call to the [ICLRDataEnumMemoryRegions::EnumMem
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CLRDataEnumMemoryFlags {  
     CLRDATA_ENUM_MEM_DEFAULT  = 0x0,  
     CLRDATA_ENUM_MEM_MINI     = CLRDATA_ENUM_MEM_DEFAULT,  
@@ -47,4 +47,5 @@ typedef enum CLRDataEnumMemoryFlags {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

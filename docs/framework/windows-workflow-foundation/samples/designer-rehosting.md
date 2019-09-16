@@ -6,15 +6,15 @@ ms.assetid: b676ad31-5f64-4d84-9a36-b4d7113a2f4d
 # Designer Rehosting
 Designer rehosting is a common scenario that refers to hosting the workflow design canvas inside of a custom application. The hosting application most people are familiar with is Visual Studio, however there are a number of scenarios where showing the workflow designer in an application may be useful:  
   
--   Monitoring applications (allowing an end user to visualize the process, as well as runtime data about the process such as the currently active state, aggregate execution time data, or other information about an instance of the workflow).  
+- Monitoring applications (allowing an end user to visualize the process, as well as runtime data about the process such as the currently active state, aggregate execution time data, or other information about an instance of the workflow).  
   
--   Applications that allow a user to customize the process with a limited set of activities.  
+- Applications that allow a user to customize the process with a limited set of activities.  
   
  To support these types of applications, the workflow designer ships inside the .NET Framework, and can be hosted inside a WPF application, or in a WinForms application with the appropriate WPF hosting code. This sample demonstrates:  
   
--   Rehosting the WF designer.  
+- Rehosting the WF designer.  
   
--   Using the rehosted toolbox and property grid as well.  
+- Using the rehosted toolbox and property grid as well.  
   
 ## Rehosting the designer  
  This sample shows how to create the WPF layout to contain the designer, seen in the following grid layout (Toolbox code omitted for space concerns). Note the naming of the borders which contain the designer and property grid.  
@@ -34,7 +34,7 @@ Designer rehosting is a common scenario that refers to hosting the workflow desi
 </Grid>  
 ```  
   
- Next the sample creates the designer, and associates its primary <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> and <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> with the appropriate container in the user interface. There are a few additional lines of code in the following example that merit some explanation. The <xref:System.Activities.Core.Presentation.DesignerMetadata.Register%2A> call is required to associate the default activity designers for the activities shipped with [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]. <xref:System.Activities.Presentation.WorkflowDesigner.Load%2A> is called to pass in the WF item to be edited. Finally, the <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> (primary canvas) and <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> (property grid) are placed onto the user interface surface.  
+ Next the sample creates the designer, and associates its primary <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> and <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> with the appropriate container in the user interface. There are a few additional lines of code in the following example that merit some explanation. The <xref:System.Activities.Core.Presentation.DesignerMetadata.Register%2A> call is required to associate the default activity designers for the activities shipped with .NET Framework. <xref:System.Activities.Presentation.WorkflowDesigner.Load%2A> is called to pass in the WF item to be edited. Finally, the <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> (primary canvas) and <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> (property grid) are placed onto the user interface surface.  
   
 ```csharp  
 protected override void OnInitialized(EventArgs e)  
@@ -108,17 +108,17 @@ protected override void OnInitialized(EventArgs e)
   
 #### Using the sample  
   
-1.  Open the DesignerRehosting.sln solution in Visual Studio 2010.  
+1. Open the DesignerRehosting.sln solution in Visual Studio 2010.  
   
-2.  Press F5 to compile and run the application.  
+2. Press F5 to compile and run the application.  
   
-3.  A WPF application starts with a rehosted designer.  
+3. A WPF application starts with a rehosted designer.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\DesignerRehosting\Basic`
+> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\DesignerRehosting\Basic`

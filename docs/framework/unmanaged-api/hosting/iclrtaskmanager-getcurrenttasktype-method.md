@@ -23,13 +23,13 @@ Gets the type of the task that is currently executing.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentTaskType(  
     [out] ETaskType *pTaskType  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTaskType`  
  [out] A pointer to a value of the [ETaskType](../../../../docs/framework/unmanaged-api/hosting/etasktype-enumeration.md) enumeration that indicates the type of task that is currently executing.  
   
@@ -43,4 +43,5 @@ HRESULT GetCurrentTaskType(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)

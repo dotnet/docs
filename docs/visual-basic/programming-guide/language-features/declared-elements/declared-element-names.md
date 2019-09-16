@@ -30,13 +30,13 @@ Every declared element has a name, also called an *identifier*, which is what th
 ## Rules  
  An element name in Visual Basic must observe the following rules:  
   
--   It must begin with an alphabetic character or an underscore (`_`).  
+- It must begin with an alphabetic character or an underscore (`_`).  
   
--   It must only contain alphabetic characters, decimal digits, and underscores.  
+- It must only contain alphabetic characters, decimal digits, and underscores.  
   
--   It must contain at least one alphabetic character or decimal digit if it begins with an underscore.  
+- It must contain at least one alphabetic character or decimal digit if it begins with an underscore.  
   
--   It must not be more than 1023 characters long.  
+- It must not be more than 1023 characters long.  
   
  The length limit of 1023 characters also applies to the entire string of a fully qualified name, such as `outerNamespace.middleNamespace.innerNamespace.thisClass.thisElement`.  
   
@@ -57,7 +57,7 @@ Every declared element has a name, also called an *identifier*, which is what th
  `xyz$wv`  
   
 > [!CAUTION]
->  Element names starting with an underscore (`_`) are not part of the [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md) (CLS), so CLS-compliant code cannot use a component that defines such names. However, an underscore in any other position in an element name is CLS-compliant.  
+> Element names starting with an underscore (`_`) are not part of the [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md) (CLS), so CLS-compliant code cannot use a component that defines such names. However, an underscore in any other position in an element name is CLS-compliant.  
   
 ### Name Length Guidelines  
  As a practical matter, your name should be as short as possible while still clearly identifying the nature of the element. This improves the readability of your code and reduces line length and source-file size.  
@@ -69,9 +69,9 @@ Every declared element has a name, also called an *identifier*, which is what th
   
  In general, you should use escaped names only when:  
   
--   Your code has migrated from a previous version of Visual Basic that did not reserve the keyword being used as a name; or  
+- Your code has migrated from a previous version of Visual Basic that did not reserve the keyword being used as a name; or  
   
--   You are working with code written in another language in which the given keyword is not reserved.  
+- You are working with code written in another language in which the given keyword is not reserved.  
   
  Otherwise, you should consider renaming the element if its name conflicts with a keyword. The integrated development environment (IDE) provides an easy way to do this. For more information, see [Refactoring](/visualstudio/vb-ide/refactoring-vb).  
   
@@ -84,6 +84,7 @@ Every declared element has a name, also called an *identifier*, which is what th
  Comparison of names is independent of locale. If two names match in one locale, they are guaranteed to match in all locales.  
   
 ## See also
+
 - [Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)
 - [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
 - [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

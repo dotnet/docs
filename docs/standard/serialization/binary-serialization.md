@@ -366,8 +366,8 @@ Describes the XML serialization mechanism that is included with the common langu
 - [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)\
 Describes the secure coding guidelines to follow when writing code that performs serialization.
 
-- [Remote Objects](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)\
+- [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\
 Describes the various communications methods available in the .NET Framework for remote communications.
 
-- [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)\
+- [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))\
 Provides topics that describe and explain how to program XML Web services created using ASP.NET.

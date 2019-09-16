@@ -1,0 +1,95 @@
+- name: Serialization
+  href: index.md
+  items:
+  - name: JSON serialization
+    items:
+    - name: Overview
+      href: system-text-json-overview.md
+    - name: How to serialize and deserialize JSON
+      href: system-text-json-how-to.md
+  - name: Binary Serialization
+    href: binary-serialization.md
+    items:
+    - name: Serialization Concepts
+      href: serialization-concepts.md
+    - name: Basic Serialization
+      href: basic-serialization.md
+    - name: Selective Serialization
+      href: selective-serialization.md
+    - name: Custom Serialization
+      href: custom-serialization.md
+    - name: Steps in the Serialization Process
+      href: steps-in-the-serialization-process.md
+    - name: Version Tolerant Serialization
+      href: version-tolerant-serialization.md
+    - name: Serialization Guidelines
+      href: serialization-guidelines.md
+    - name: "How to: Chunk Serialized Data"
+      href: how-to-chunk-serialized-data.md
+    - name: "How to: Determine if a .NET Standard object is serializable"
+      href: how-to-determine-if-netstandard-object-is-serializable.md
+  - name: XML and SOAP Serialization
+    href: xml-and-soap-serialization.md
+    items:
+    - name: Serialization How-to Topics
+      href: serialization-how-to-topics.md
+    - name: "How to: Control Serialization of Derived Classes"
+      href: how-to-control-serialization-of-derived-classes.md
+    - name: Introducing XML Serialization
+      href: introducing-xml-serialization.md
+    - name: "How to: Deserialize an Object"
+      href: how-to-deserialize-an-object.md
+    - name: Examples of XML Serialization
+      href: examples-of-xml-serialization.md
+    - name: The XML Schema Definition Tool and XML Serialization
+      href: the-xml-schema-definition-tool-and-xml-serialization.md
+    - name: "How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents"
+      href: xml-schema-def-tool-gen.md
+    - name: Controlling XML Serialization Using Attributes
+      href: controlling-xml-serialization-using-attributes.md
+    - name: Attributes That Control XML Serialization
+      href: attributes-that-control-xml-serialization.md
+    - name: "How to: Specify an Alternate Element Name for an XML Stream"
+      href: how-to-specify-an-alternate-element-name-for-an-xml-stream.md
+    - name: "How to: Serialize an Object"
+      href: how-to-serialize-an-object.md
+    - name: "How to: Qualify XML Element and XML Attribute Names"
+      href: how-to-qualify-xml-element-and-xml-attribute-names.md
+    - name: XML Serialization with XML Web Services
+      href: xml-serialization-with-xml-web-services.md
+    - name: "How to: Serialize an Object as a SOAP-Encoded XML Stream"
+      href: how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
+    - name: "How to: Override Encoded SOAP XML Serialization"
+      href: how-to-override-encoded-soap-xml-serialization.md
+    - name: Attributes That Control Encoded SOAP Serialization
+      href: attributes-that-control-encoded-soap-serialization.md
+    - name: <system.xml.serialization> Element
+      href: system-xml-serialization-element.md
+    - name: <dateTimeSerialization> Element
+      href: datetimeserialization-element.md
+    - name: <schemaImporterExtensions> Element
+      href: schemaimporterextensions-element.md
+    - name: <add> Element for <schemaImporterExtensions>
+      href: add-element-for-schemaimporterextensions.md
+    - name: <xmlSerializer> Element
+      href: xmlserializer-element.md
+    - name: Serialization Tools
+      href: serialization-tools.md
+      items:
+      - name: XML Serializer Generator Tool (Sgen.exe)
+        href: xml-serializer-generator-tool-sgen-exe.md
+      - name: XML Schema Definition Tool (Xsd.exe)
+        href: xml-schema-definition-tool-xsd-exe.md
+    - name: Serialization Samples
+      href: serialization-samples.md
+      items:
+      - name: Basic Serialization Technology Sample
+        href: basic-serialization-technology-sample.md
+      - name: Custom Serialization Order With XmlSerializer
+        href: custom-serialization-order-with-xmlserializer.md
+      - name: SchemaImporterExtension Technology Sample
+        href: schemaimporterextension-technology-sample.md
+      - name: Version Tolerant Serialization Technology Sample
+        href: version-tolerant-serialization-technology-sample.md
+      - name: Web Services Generics Serialization Technology Sample
+        href: web-services-generics-serialization-technology-sample.md

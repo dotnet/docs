@@ -14,9 +14,9 @@ When you deserialize an object, the transport format determines whether you will
   
 ### To deserialize an object  
   
-1.  Construct a <xref:System.Xml.Serialization.XmlSerializer> using the type of the object to deserialize.  
+1. Construct a <xref:System.Xml.Serialization.XmlSerializer> using the type of the object to deserialize.  
   
-2.  Call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method to produce a replica of the object. When deserializing, you must cast the returned object to the type of the original, as shown in the following example, which deserializes the object into a file (although it could also be deserialized into a stream).  
+2. Call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method to produce a replica of the object. When deserializing, you must cast the returned object to the type of the original, as shown in the following example, which deserializes the object from a file (although it could also be deserialized from a stream).  
   
     ```vb  
     Dim myObject As MySerializableClass  

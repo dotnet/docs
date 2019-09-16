@@ -8,7 +8,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
 ### Creating a transactional service  
   
-1.  Create a service contract and annotate the operations with the desired setting from the <xref:System.ServiceModel.TransactionFlowOption> enumeration to specify the incoming transaction requirements. Note that you can also place the <xref:System.ServiceModel.TransactionFlowAttribute> on the service class being implemented. This allows for a single implementation of an interface to use these transaction settings, instead of every implementation.  
+1. Create a service contract and annotate the operations with the desired setting from the <xref:System.ServiceModel.TransactionFlowOption> enumeration to specify the incoming transaction requirements. Note that you can also place the <xref:System.ServiceModel.TransactionFlowAttribute> on the service class being implemented. This allows for a single implementation of an interface to use these transaction settings, instead of every implementation.  
   
     ```csharp
     [ServiceContract]  
@@ -25,7 +25,7 @@ This sample demonstrates various aspects of creating a transactional service and
     }  
     ```  
   
-2.  Create an implementation class, and use the <xref:System.ServiceModel.ServiceBehaviorAttribute> to optionally specify a <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> and a <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A>. You should note that in many cases, the default <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> of 60 seconds and the default <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> of `Unspecified` are appropriate. For each operation, you can use the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute to specify whether work performed within the method should occur within the scope of a transaction scope according to the value of the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> attribute. In this case, the transaction used for the `Add` method is the same as the mandatory incoming transaction that is flowed from the client, and the transaction used for the `Subtract` method is either the same as the incoming transaction if one was flowed from the client, or a new implicitly and locally created transaction.  
+2. Create an implementation class, and use the <xref:System.ServiceModel.ServiceBehaviorAttribute> to optionally specify a <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> and a <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A>. You should note that in many cases, the default <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> of 60 seconds and the default <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> of `Unspecified` are appropriate. For each operation, you can use the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute to specify whether work performed within the method should occur within the scope of a transaction scope according to the value of the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> attribute. In this case, the transaction used for the `Add` method is the same as the mandatory incoming transaction that is flowed from the client, and the transaction used for the `Subtract` method is either the same as the incoming transaction if one was flowed from the client, or a new implicitly and locally created transaction.  
   
     ```csharp
     [ServiceBehavior(  
@@ -59,7 +59,7 @@ This sample demonstrates various aspects of creating a transactional service and
     }  
     ```  
   
-3.  Configure the bindings in the configuration file, specifying that the transaction context should be flowed, and the protocols to be used to do so. For more information, see [ServiceModel Transaction Configuration](servicemodel-transaction-configuration.md). Specifically, the binding type is specified in the endpoint element’s `binding` attribute. The [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) element contains a `bindingConfiguration` attribute that references a binding configuration named `transactionalOleTransactionsTcpBinding`, as shown in the following sample configuration.  
+3. Configure the bindings in the configuration file, specifying that the transaction context should be flowed, and the protocols to be used to do so. For more information, see [ServiceModel Transaction Configuration](servicemodel-transaction-configuration.md). Specifically, the binding type is specified in the endpoint element’s `binding` attribute. The [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) element contains a `bindingConfiguration` attribute that references a binding configuration named `transactionalOleTransactionsTcpBinding`, as shown in the following sample configuration.  
   
     ```xml  
     <service name="CalculatorService">  
@@ -85,7 +85,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
 ### Supporting multiple transaction protocols  
   
-1.  For optimal performance, you should use the OleTransactions protocol for scenarios involving a client and service written using Windows Communication Foundation (WCF). However, the WS-AtomicTransaction (WS-AT) protocol is useful for scenarios when interoperability with third-party protocol stacks is required. You can configure WCF services to accept both protocols by providing multiple endpoints with appropriate protocol-specific bindings, as shown in the following sample configuration.  
+1. For optimal performance, you should use the OleTransactions protocol for scenarios involving a client and service written using Windows Communication Foundation (WCF). However, the WS-AtomicTransaction (WS-AT) protocol is useful for scenarios when interoperability with third-party protocol stacks is required. You can configure WCF services to accept both protocols by providing multiple endpoints with appropriate protocol-specific bindings, as shown in the following sample configuration.  
   
     ```xml  
     <service name="CalculatorService">  
@@ -120,7 +120,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
 ### Controlling the completion of a transaction  
   
-1.  By default, WCF operations automatically complete transactions if no unhandled exceptions are thrown. You can modify this behavior by using the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property and the <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> method. When an operation is required to occur within the same transaction as another operation (for example, a debit and credit operation), you can disable the autocomplete behavior by setting the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property to `false` as shown in the following `Debit` operation example. The transaction the `Debit` operation uses is not completed until a method with the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property set to `true` is called, as shown in the operation `Credit1`, or when the <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> method is called to explicitly mark the transaction as complete, as shown in the operation `Credit2`. Note that the two credit operations are shown for illustration purposes, and that a single credit operation would be more typical.  
+1. By default, WCF operations automatically complete transactions if no unhandled exceptions are thrown. You can modify this behavior by using the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property and the <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> method. When an operation is required to occur within the same transaction as another operation (for example, a debit and credit operation), you can disable the autocomplete behavior by setting the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property to `false` as shown in the following `Debit` operation example. The transaction the `Debit` operation uses is not completed until a method with the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property set to `true` is called, as shown in the operation `Credit1`, or when the <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> method is called to explicitly mark the transaction as complete, as shown in the operation `Credit2`. Note that the two credit operations are shown for illustration purposes, and that a single credit operation would be more typical.  
   
     ```csharp
     [ServiceBehavior]  
@@ -156,7 +156,7 @@ This sample demonstrates various aspects of creating a transactional service and
     }  
     ```  
   
-2.  For the purposes of transaction correlation, setting the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property to `false` requires the use of a sessionful binding. This requirement is specified with the `SessionMode` property on the <xref:System.ServiceModel.ServiceContractAttribute>.  
+2. For the purposes of transaction correlation, setting the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property to `false` requires the use of a sessionful binding. This requirement is specified with the `SessionMode` property on the <xref:System.ServiceModel.ServiceContractAttribute>.  
   
     ```csharp
     [ServiceContract(SessionMode = SessionMode.Required)]  
@@ -176,7 +176,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
 ### Controlling the lifetime of a transactional service instance  
   
-1.  WCF uses the <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property to specify whether the underlying service instance is released when a transaction completes. Since this defaults to `true`, unless configured otherwise, WCF exhibits an efficient and predictable "just-in-time" activation behavior. Calls to a service on a subsequent transaction are assured a new service instance with no remnants of the previous transaction's state. While this is often useful, sometimes you may want to maintain state within the service instance beyond the transaction completion. Examples of this would be when required state or handles to resources are expensive to retrieve or reconstitute. You can do this by setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property to `false`. With that setting, the instance and any associated state will be available on subsequent calls. When using this, give careful consideration to when and how state and transactions will be cleared and completed. The following sample demonstrates how to do this by maintaining the instance with the `runningTotal` variable.  
+1. WCF uses the <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property to specify whether the underlying service instance is released when a transaction completes. Since this defaults to `true`, unless configured otherwise, WCF exhibits an efficient and predictable "just-in-time" activation behavior. Calls to a service on a subsequent transaction are assured a new service instance with no remnants of the previous transaction's state. While this is often useful, sometimes you may want to maintain state within the service instance beyond the transaction completion. Examples of this would be when required state or handles to resources are expensive to retrieve or reconstitute. You can do this by setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property to `false`. With that setting, the instance and any associated state will be available on subsequent calls. When using this, give careful consideration to when and how state and transactions will be cleared and completed. The following sample demonstrates how to do this by maintaining the instance with the `runningTotal` variable.  
   
     ```csharp
     [ServiceBehavior(TransactionIsolationLevel = [ServiceBehavior(  
@@ -211,4 +211,4 @@ This sample demonstrates various aspects of creating a transactional service and
     ```  
   
     > [!NOTE]
-    >  Since the instance lifetime is a behavior that is internal to the service, and controlled through the <xref:System.ServiceModel.ServiceBehaviorAttribute> property, no modification to the service configuration or service contract is required to set the instance behavior. In addition, the wire will contain no representation of this.
+    > Since the instance lifetime is a behavior that is internal to the service, and controlled through the <xref:System.ServiceModel.ServiceBehaviorAttribute> property, no modification to the service configuration or service contract is required to set the instance behavior. In addition, the wire will contain no representation of this.

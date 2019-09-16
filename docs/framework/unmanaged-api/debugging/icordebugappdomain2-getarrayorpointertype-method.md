@@ -23,7 +23,7 @@ Gets an array of the specified type, or a pointer or reference to the specified 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArrayOrPointerType (  
     [in]  CorElementType    elementType,  
     [in]  ULONG32           nRank,  
@@ -32,7 +32,7 @@ HRESULT GetArrayOrPointerType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `elementType`  
  [in] A value of the CorElementType enumeration that specifies the underlying native type (an array, pointer, or reference) to be created.  
   
@@ -48,11 +48,11 @@ HRESULT GetArrayOrPointerType (
 ## Remarks  
  The value of *elementType* must be one of the following:  
   
--   ELEMENT_TYPE_PTR  
+- ELEMENT_TYPE_PTR  
   
--   ELEMENT_TYPE_BYREF  
+- ELEMENT_TYPE_BYREF  
   
--   ELEMENT_TYPE_ARRAY or ELEMENT_TYPE_SZARRAY  
+- ELEMENT_TYPE_ARRAY or ELEMENT_TYPE_SZARRAY  
   
  If the value of *elementType* is ELEMENT_TYPE_PTR or ELEMENT_TYPE_BYREF, *nRank* must be zero.  
   

@@ -23,13 +23,13 @@ Specifies the event handler object for unmanaged events.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnmanagedHandler (  
     [in] ICorDebugUnmanagedCallback  *pCallback  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCallback`  
  [in] A pointer to an [ICorDebugUnmanagedCallback](../../../../docs/framework/unmanaged-api/debugging/icordebugunmanagedcallback-interface.md) object that represents the event handler for unmanaged events.  
   
@@ -46,4 +46,5 @@ HRESULT SetUnmanagedHandler (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

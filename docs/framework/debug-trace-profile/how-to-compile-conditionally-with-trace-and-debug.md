@@ -22,25 +22,25 @@ While you are debugging an application during development, both your tracing and
   
  You can specify the compiler settings for your application in several ways:  
   
--   The property pages  
+- The property pages  
   
--   The command line  
+- The command line  
   
--   **#CONST** (for Visual Basic) and **#define** (for C#)  
+- **#CONST** (for Visual Basic) and **#define** (for C#)  
   
 ### To change compile settings from the property pages dialog box  
   
-1.  Right-click the project node in **Solution Explorer**.  
+1. Right-click the project node in **Solution Explorer**.  
   
-2.  Choose **Properties** from the shortcut menu.  
+2. Choose **Properties** from the shortcut menu.  
   
-    -   In Visual Basic, click the **Compile** tab in the left pane of the property page, then click the **Advanced Compile Options** button to display the **Advanced Compiler Settings** dialog box. Select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
+    - In Visual Basic, click the **Compile** tab in the left pane of the property page, then click the **Advanced Compile Options** button to display the **Advanced Compiler Settings** dialog box. Select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
   
-    -   In C#, click the **Build** tab in the left pane of the property page, then select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
+    - In C#, click the **Build** tab in the left pane of the property page, then select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
   
 ### To compile instrumented code using the command line  
   
-1.  Set a conditional compiler switch on the command line. The compiler will include trace or debug code in the executable.  
+1. Set a conditional compiler switch on the command line. The compiler will include trace or debug code in the executable.  
   
      For example, the following compiler instruction entered on the command line would include your tracing code in a compiled executable:  
   
@@ -49,7 +49,7 @@ While you are debugging an application during development, both your tracing and
      For C#: **csc -r:System.dll -d:TRACE -d:DEBUG=FALSE MyApplication.cs**  
   
     > [!TIP]
-    >  To compile more than one application file, leave a blank space between the file names, for example, **MyApplication1.vb MyApplication2.vb MyApplication3.vb** or **MyApplication1.cs MyApplication2.cs MyApplication3.cs**.  
+    > To compile more than one application file, leave a blank space between the file names, for example, **MyApplication1.vb MyApplication2.vb MyApplication3.vb** or **MyApplication1.cs MyApplication2.cs MyApplication3.cs**.  
   
      The meaning of the conditional-compilation directives used in the above examples is as follows:  
   
@@ -61,11 +61,11 @@ While you are debugging an application during development, both your tracing and
     |`-d:`|Defines a conditional compilation symbol|  
   
     > [!NOTE]
-    >  You must spell TRACE or DEBUG with uppercase letters. For more information about the conditional compilation commands, enter `vbc /?` (for Visual Basic) or `csc /?` (for C#) at the command prompt. For more information, see [Building from the Command Line](~/docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md) (C#) or [Invoking the Command-Line Compiler](~/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) (Visual Basic).  
+    > You must spell TRACE or DEBUG with uppercase letters. For more information about the conditional compilation commands, enter `vbc /?` (for Visual Basic) or `csc /?` (for C#) at the command prompt. For more information, see [Building from the Command Line](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md) (C#) or [Invoking the Command-Line Compiler](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) (Visual Basic).  
   
 ### To perform conditional compilation using #CONST or #define  
   
-1.  Type the appropriate statement for your programming language at the top of the source code file.  
+1. Type the appropriate statement for your programming language at the top of the source code file.  
   
     |Language|Statement|Result|  
     |--------------|---------------|------------|  
@@ -87,13 +87,14 @@ Delete the compiler directive from your source code.
 Comment out the compiler directive.  
   
 > [!NOTE]
->  When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
+> When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
   
 ## See also
+
 - [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
 - [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)
 - [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
 - [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
 - [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
-- [How to: Set Environment Variables for the Visual Studio Command Line](~/docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
-- [How to: Invoke the Command-Line Compiler](~/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)
+- [How to: Set Environment Variables for the Visual Studio Command Line](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
+- [How to: Invoke the Command-Line Compiler](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)

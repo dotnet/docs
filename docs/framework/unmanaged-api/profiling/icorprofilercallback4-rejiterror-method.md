@@ -23,7 +23,7 @@ Notifies the profiler that the just-in-time (JIT) compiler encountered an error 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReJITError(  
     [in] ModuleID    moduleId,  
     [in] mdMethodDef methodId,  
@@ -31,7 +31,7 @@ HRESULT ReJITError(
     [in] HRESULT     hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The `ModuleID` in which the failed recompilation attempt was made.  
   
@@ -68,5 +68,6 @@ HRESULT ReJITError(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)

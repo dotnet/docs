@@ -22,7 +22,7 @@ Contains flag values that indicate the conditions under which an error message s
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorErrorIfEmitOutOfOrder {  
   
     MDErrorOutOfOrderDefault    = 0x00000000,  
@@ -58,4 +58,5 @@ typedef enum CorErrorIfEmitOutOfOrder {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

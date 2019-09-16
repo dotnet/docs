@@ -141,7 +141,7 @@ WorkflowInvoker.Invoke(wf);
   
  When the workflow is invoked, the following output is written to the console window.  
   
-```  
+```console  
 Start blue text.  
 Start red text.  
 Start default text.  
@@ -151,11 +151,12 @@ End default text.
 ```  
   
 > [!NOTE]
->  Although it is not shown in the previous output, each line of text in the console window is displayed in the indicated color.  
+> Although it is not shown in the previous output, each line of text in the console window is displayed in the indicated color.  
   
  Workflow execution properties can be used by custom activity authors, and they also provide the mechanism for handle management for activities such as the <xref:System.ServiceModel.Activities.CorrelationScope> and <xref:System.Activities.Statements.TransactionScope> activities.  
   
 ## See also
+
 - <xref:System.Activities.IExecutionProperty>
 - <xref:System.Activities.IPropertyRegistrationCallback>
 - <xref:System.Activities.RegistrationContext>

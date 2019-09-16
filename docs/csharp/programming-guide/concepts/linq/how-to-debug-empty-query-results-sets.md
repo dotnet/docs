@@ -10,7 +10,7 @@ One of the most common problems when querying XML trees is that if the XML tree 
   
  The second set of examples show the necessary corrections so that you can query XML in a namespace.  
   
- For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
 ## Example  
  This example shows creation of XML in a namespace, and a query that returns an empty result set.  
@@ -36,7 +36,7 @@ Console.WriteLine("End of result set");
   
  This example produces the following result:  
   
-```  
+```output  
 Result set follows:  
 End of result set  
 ```  
@@ -44,7 +44,7 @@ End of result set
 ## Example  
  This example shows creation of XML in a namespace, and a query that is coded properly.  
   
- The solution is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XElement.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.  
+ The solution is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XContainer.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.  
   
 ```csharp  
 XElement root = XElement.Parse(  
@@ -68,14 +68,10 @@ Console.WriteLine("End of result set");
   
  This example produces the following result:  
   
-```  
+```output  
 Result set follows:  
 1  
 2  
 3  
 End of result set  
 ```  
-  
-## See also
-
-- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

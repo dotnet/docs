@@ -13,30 +13,30 @@ A *poison message* is a message that has exceeded the maximum number of delivery
 ## Handling Poison Messages  
  In WCF, poison message handling provides a mechanism for a receiving application to deal with messages that cannot be dispatched to the application, or messages that are dispatched to the application but which fail to be processed because of application-specific reasons. Poison message handling is configured by the following properties in each of the available queued bindings:  
   
--   `ReceiveRetryCount`. An integer value that indicates the maximum number of times to retry delivery of a message from the application queue to the application. The default value is 5. This is sufficient in cases where an immediate retry fixes the problem, such as with a temporary deadlock on a database.  
+- `ReceiveRetryCount`. An integer value that indicates the maximum number of times to retry delivery of a message from the application queue to the application. The default value is 5. This is sufficient in cases where an immediate retry fixes the problem, such as with a temporary deadlock on a database.  
   
--   `MaxRetryCycles`. An integer value that indicates the maximum number of retry cycles. A retry cycle consists of transferring a message from the application queue to the retry subqueue and, after a configurable delay, from the retry subqueue back into the application queue to reattempt delivery. The default value is 2. On [!INCLUDE[wv](../../../../includes/wv-md.md)], the message is tried a maximum of (`ReceiveRetryCount` +1) * (`MaxRetryCycles` + 1) times. `MaxRetryCycles` is ignored on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+- `MaxRetryCycles`. An integer value that indicates the maximum number of retry cycles. A retry cycle consists of transferring a message from the application queue to the retry subqueue and, after a configurable delay, from the retry subqueue back into the application queue to reattempt delivery. The default value is 2. On [!INCLUDE[wv](../../../../includes/wv-md.md)], the message is tried a maximum of (`ReceiveRetryCount` +1) * (`MaxRetryCycles` + 1) times. `MaxRetryCycles` is ignored on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
--   `RetryCycleDelay`. The time delay between retry cycles. The default value is 30 minutes. `MaxRetryCycles` and `RetryCycleDelay` together provide a mechanism to address the problem where a retry after a periodic delay fixes the problem. For example, this handles a locked row set in SQL Server pending transaction commit.  
+- `RetryCycleDelay`. The time delay between retry cycles. The default value is 30 minutes. `MaxRetryCycles` and `RetryCycleDelay` together provide a mechanism to address the problem where a retry after a periodic delay fixes the problem. For example, this handles a locked row set in SQL Server pending transaction commit.  
   
--   `ReceiveErrorHandling`. An enumeration that indicates the action to take for a message that has failed delivery after the maximum number of retries has been attempted. The values can be Fault, Drop, Reject, and Move. The default option is Fault.  
+- `ReceiveErrorHandling`. An enumeration that indicates the action to take for a message that has failed delivery after the maximum number of retries has been attempted. The values can be Fault, Drop, Reject, and Move. The default option is Fault.  
   
--   Fault. This option sends a fault to the listener that caused the `ServiceHost` to fault. The message must be removed from the application queue by some external mechanism before the application can continue to process messages from the queue.  
+- Fault. This option sends a fault to the listener that caused the `ServiceHost` to fault. The message must be removed from the application queue by some external mechanism before the application can continue to process messages from the queue.  
   
--   Drop. This option drops the poison message and the message is never delivered to the application. If the message's `TimeToLive` property has expired at this point, then the message may appear in the sender's dead-letter queue. If not, the message does not appear anywhere. This option indicates that the user has not specified what to do if the message is lost.  
+- Drop. This option drops the poison message and the message is never delivered to the application. If the message's `TimeToLive` property has expired at this point, then the message may appear in the sender's dead-letter queue. If not, the message does not appear anywhere. This option indicates that the user has not specified what to do if the message is lost.  
   
--   Reject. This option is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This instructs Message Queuing (MSMQ) to send a negative acknowledgement back to the sending queue manager that the application cannot receive the message. The message is placed in the sending queue manager's dead-letter queue.  
+- Reject. This option is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This instructs Message Queuing (MSMQ) to send a negative acknowledgement back to the sending queue manager that the application cannot receive the message. The message is placed in the sending queue manager's dead-letter queue.  
   
--   Move. This option is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This moves the poison message to a poison-message queue for later processing by a poison-message handling application. The poison-message queue is a subqueue of the application queue. A poison-message handling application can be a WCF service that reads messages out of the poison queue. The poison queue is a subqueue of the application queue and can be addressed as net.msmq://\<*machine-name*>/*applicationQueue*;poison, where *machine-name* is the name of the computer on which the queue resides and the *applicationQueue* is the name of the application-specific queue.  
+- Move. This option is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This moves the poison message to a poison-message queue for later processing by a poison-message handling application. The poison-message queue is a subqueue of the application queue. A poison-message handling application can be a WCF service that reads messages out of the poison queue. The poison queue is a subqueue of the application queue and can be addressed as net.msmq://\<*machine-name*>/*applicationQueue*;poison, where *machine-name* is the name of the computer on which the queue resides and the *applicationQueue* is the name of the application-specific queue.  
   
  The following are the maximum number of delivery attempts made for a message:  
   
--   ((ReceiveRetryCount+1) * (MaxRetryCycles + 1)) on [!INCLUDE[wv](../../../../includes/wv-md.md)].  
+- ((ReceiveRetryCount+1) * (MaxRetryCycles + 1)) on [!INCLUDE[wv](../../../../includes/wv-md.md)].  
   
--   (ReceiveRetryCount + 1) on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+- (ReceiveRetryCount + 1) on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
 > [!NOTE]
->  No retries are made for a message that is delivered successfully.  
+> No retries are made for a message that is delivered successfully.  
   
  To keep track of the number of times a message read is attempted, [!INCLUDE[wv](../../../../includes/wv-md.md)] maintains a durable message property that counts the number of aborts and a move count property that counts the number of times the message moves between the application queue and subqueues. The WCF channel uses these to compute the receive retry count and the retry cycles count. On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], the abort count is maintained in memory by the WCF channel and is reset if the application fails. Also, the WCF channel can hold the abort counts for up to 256 messages in memory at any time. If a 257th message is read, then the oldest message's abort count is reset.  
   
@@ -46,12 +46,12 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
  WCF provides two standard queued bindings:  
   
--   <xref:System.ServiceModel.NetMsmqBinding>. A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] binding suitable for performing queue-based communication with other WCF endpoints.  
+- <xref:System.ServiceModel.NetMsmqBinding>. A .NET Framework binding suitable for performing queue-based communication with other WCF endpoints.  
   
--   <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>. A binding suitable for communicating with existing Message Queuing applications.  
+- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>. A binding suitable for communicating with existing Message Queuing applications.  
   
 > [!NOTE]
->  You can alter properties in these bindings based on the requirements of your WCF service. The entire poison message handling mechanism is local to the receiving application. The process is invisible to the sending application unless the receiving application ultimately stops and sends a negative acknowledgment back to the sender. In that case, the message is moved to the sender's dead-letter queue.  
+> You can alter properties in these bindings based on the requirements of your WCF service. The entire poison message handling mechanism is local to the receiving application. The process is invisible to the sending application unless the receiving application ultimately stops and sends a negative acknowledgment back to the sender. In that case, the message is moved to the sender's dead-letter queue.  
   
 ## Best Practice: Handling MsmqPoisonMessageException  
  When the service determines that a message is poison, the queued transport throws a <xref:System.ServiceModel.MsmqPoisonMessageException> that contains the `LookupId` of the poison message.  
@@ -60,20 +60,18 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
  The application may require some kind of automated handling of poison messages that moves the poison messages to a poison message queue so that the service can access the rest of the messages in the queue. The only scenario for using the error-handler mechanism to listen for poison-message exceptions is when the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveErrorHandling%2A> setting is set to <xref:System.ServiceModel.ReceiveErrorHandling.Fault>. The poison-message sample for Message Queuing 3.0 demonstrates this behavior. The following outlines the steps to take to handle poison messages, including best practices:  
   
-1.  Ensure your poison settings reflect the requirements of your application. When working with the settings, ensure that you understand the differences between the capabilities of Message Queuing on [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+1. Ensure your poison settings reflect the requirements of your application. When working with the settings, ensure that you understand the differences between the capabilities of Message Queuing on [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
-2.  If required, implement the `IErrorHandler` to handle poison-message errors. Because setting `ReceiveErrorHandling` to `Fault` requires a manual mechanism to move the poison message out of the queue or to correct an external dependent issue, the typical usage is to implement `IErrorHandler` when `ReceiveErrorHandling` is set to `Fault`, as shown in the following code.  
+2. If required, implement the `IErrorHandler` to handle poison-message errors. Because setting `ReceiveErrorHandling` to `Fault` requires a manual mechanism to move the poison message out of the queue or to correct an external dependent issue, the typical usage is to implement `IErrorHandler` when `ReceiveErrorHandling` is set to `Fault`, as shown in the following code.  
   
      [!code-csharp[S_UE_MSMQ_Poison#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_msmq_poison/cs/poisonerrorhandler.cs#2)]  
   
-3.  Create a `PoisonBehaviorAttribute` that the service behavior can use. The behavior installs the `IErrorHandler` on the dispatcher. See the following code example.  
+3. Create a `PoisonBehaviorAttribute` that the service behavior can use. The behavior installs the `IErrorHandler` on the dispatcher. See the following code example.  
   
      [!code-csharp[S_UE_MSMQ_Poison#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_msmq_poison/cs/poisonbehaviorattribute.cs#3)]  
   
-4.  Ensure that your service is annotated with the poison behavior attribute.  
-  
-  
-  
+4. Ensure that your service is annotated with the poison behavior attribute.  
+
  In addition, if the `ReceiveErrorHandling` is set to `Fault`, the `ServiceHost` faults when encountering the poison message. You can hook up to the faulted event and shut down the service, take corrective actions, and restart. For example, the `LookupId` in the <xref:System.ServiceModel.MsmqPoisonMessageException> propagated to the `IErrorHandler` can be noted and when the service host faults, you could use the `System.Messaging` API to receive the message from the queue using the `LookupId` to remove the message from the queue and store the message in some external store or another queue. You can then restart `ServiceHost` to resume normal processing. The [Poison Message Handling in MSMQ 4.0](../../../../docs/framework/wcf/samples/poison-message-handling-in-msmq-4-0.md) demonstrates this behavior.  
   
 ## Transaction Time-Out and Poison Messages  
@@ -93,13 +91,14 @@ A *poison message* is a message that has exceeded the maximum number of delivery
 ## Windows Vista, Windows Server 2003, and Windows XP Differences  
  As noted earlier, not all poison-message handling settings apply to [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. The following key differences between Message Queuing on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], [!INCLUDE[wxp](../../../../includes/wxp-md.md)], and [!INCLUDE[wv](../../../../includes/wv-md.md)] are relevant to poison-message handling:  
   
--   Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports subqueues, while [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] do not support subqueues. Subqueues are used in poison-message handling. The retry queues and the poison queue are subqueues to the application queue that is created based on the poison-message handling settings. The `MaxRetryCycles` dictates how many retry subqueues to create. Therefore, when running on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], `MaxRetryCycles` are ignored and `ReceiveErrorHandling.Move` is not allowed.  
+- Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports subqueues, while [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] do not support subqueues. Subqueues are used in poison-message handling. The retry queues and the poison queue are subqueues to the application queue that is created based on the poison-message handling settings. The `MaxRetryCycles` dictates how many retry subqueues to create. Therefore, when running on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], `MaxRetryCycles` are ignored and `ReceiveErrorHandling.Move` is not allowed.  
   
--   Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports negative acknowledgment, while [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] do not. A negative acknowledgment from the receiving queue manager causes the sending queue manager to place the rejected message in the dead-letter queue. As such, `ReceiveErrorHandling.Reject` is not allowed with [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+- Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports negative acknowledgment, while [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] do not. A negative acknowledgment from the receiving queue manager causes the sending queue manager to place the rejected message in the dead-letter queue. As such, `ReceiveErrorHandling.Reject` is not allowed with [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
--   Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports a message property that keeps count of the number of times message delivery is attempted. This abort count property is not available on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. WCF maintains the abort count in memory, so it is possible that this property may not contain an accurate value when the same message is read by more than one WCF service in a farm.  
+- Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports a message property that keeps count of the number of times message delivery is attempted. This abort count property is not available on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. WCF maintains the abort count in memory, so it is possible that this property may not contain an accurate value when the same message is read by more than one WCF service in a farm.  
   
 ## See also
+
 - [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
 - [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)
 - [Specifying and Handling Faults in Contracts and Services](../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)

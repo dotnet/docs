@@ -22,7 +22,7 @@ Contains values that describe a portable executable (PE) file, as returned from 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorPEKind {  
   
     peNot           = 0x00000000,  
@@ -57,4 +57,5 @@ typedef enum CorPEKind {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

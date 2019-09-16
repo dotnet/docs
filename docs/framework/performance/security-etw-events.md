@@ -13,9 +13,9 @@ ms.author: "mairaw"
   
  This category consists of the following events:  
   
--   [StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events](#strongnameverificationstart_v1_and_strongnameverificationstop_v1_events)  
+- [StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events](#strongnameverificationstart_v1_and_strongnameverificationstop_v1_events)  
   
--   [AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events](#authenticodeverificationstart_v1_and_authenticodeverificationstop_v1_events)  
+- [AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events](#authenticodeverificationstart_v1_and_authenticodeverificationstop_v1_events)  
   
 <a name="strongnameverificationstart_v1_and_strongnameverificationstop_v1_events"></a>   
 ## StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events  
@@ -68,4 +68,5 @@ ms.author: "mairaw"
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
 ## See also
+
 - [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

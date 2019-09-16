@@ -27,6 +27,5 @@ The following example demonstrates some behaviors of the null keyword:
 - [C# Reference](../../language-reference/index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Literal Keywords](literal-keywords.md)
 - [Default Values Table](default-values-table.md)
 - [Nothing](../../../visual-basic/language-reference/nothing.md)

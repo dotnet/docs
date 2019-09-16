@@ -23,7 +23,7 @@ This method supports the .NET Framework infrastructure and is not intended to be
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyName (  
     [out, retval] BSTR* rgbszAssemblyNames  
 );  
@@ -39,4 +39,5 @@ HRESULT GetAssemblyName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

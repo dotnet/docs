@@ -23,7 +23,7 @@ Sets features of a type defined by a prior call to [IMetaDataEmit::DefineTypeDef
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTypeDefProps (  
     [in]  mdTypeDef   td,   
     [in]  DWORD       dwTypeDefFlags,   
@@ -32,7 +32,7 @@ HRESULT SetTypeDefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] An `mdTypeDef` token obtained from original call to [IMetaDataEmit::DefineTypeDef](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definetypedef-method.md).  
   
@@ -55,5 +55,6 @@ HRESULT SetTypeDefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

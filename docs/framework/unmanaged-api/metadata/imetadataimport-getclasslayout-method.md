@@ -23,7 +23,7 @@ Gets layout information for the class referenced by the specified TypeDef token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassLayout  (   
    [in]  mdTypeDef          td,   
    [out] DWORD              *pdwPackSize,  
@@ -34,7 +34,7 @@ HRESULT GetClassLayout  (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The TypeDef token for the class with the layout to return.  
   
@@ -63,5 +63,6 @@ HRESULT GetClassLayout  (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

@@ -23,7 +23,7 @@ Gets information stored in the metadata for a specified member definition, inclu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMemberProps (  
    [in]  mdToken           mb,   
    [out] mdTypeDef         *pClass,  
@@ -41,7 +41,7 @@ HRESULT GetMemberProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mb`  
  [in] The token that references the member to get the associated metadata for.  
   
@@ -91,5 +91,6 @@ HRESULT GetMemberProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

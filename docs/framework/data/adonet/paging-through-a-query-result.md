@@ -118,5 +118,6 @@ adapter.Fill(dataSet, "Orders");
 ```  
   
 ## See also
-- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
+- [ADO.NET Overview](ado-net-overview.md)

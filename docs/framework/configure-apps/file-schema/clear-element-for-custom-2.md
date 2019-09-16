@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
 ms.assetid: ff2294ec-fb82-4b0c-933e-ae185433fc7b
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 
@@ -15,8 +15,8 @@ ms.author: "mairaw"
 
 Clears all previously defined settings in a section.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<sectionName>**](~/docs/framework/configure-apps/file-schema/custom-element-2.md)   
+[**\<configuration>**](configuration-element.md)   
+&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax
@@ -33,7 +33,7 @@ None
 
 |     | Description |
 | --- | ------------|
-| [**\<sectionName>** Element](~/docs/framework/configure-apps/file-schema/custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+| [**\<sectionName>** Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements
 
@@ -79,4 +79,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](index.md)

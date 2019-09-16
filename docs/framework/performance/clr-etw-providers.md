@@ -13,7 +13,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
  The runtime provider raises events, depending on which keywords (categories of events) are enabled. For example, you can collect loader events by enabling the `LoaderKeyword` keyword.  
   
- Event tracking for Windows (ETW) events are logged into a file that has an .etl extension, which can later be post-processed in comma-separated value (.csv) files as needed. For information about how to convert the .etl file to a .csv file, see [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md).  
+ Event Tracing for Windows (ETW) events are logged into a file that has an .etl extension, which can later be post-processed in comma-separated value (.csv) files as needed. For information about how to convert the .etl file to a .csv file, see [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md).  
   
 ## The Runtime Provider  
  The runtime provider is the main CLR ETW provider.  
@@ -52,33 +52,33 @@ The common language runtime (CLR) has two providers: the runtime provider and th
 ## ETW Data Collection Using Runtime and Rundown Providers  
  The following example demonstrates how to use the CLR rundown provider in a way that allows symbol resolution of managed processes with minimal impact, regardless of whether the processes start or end inside or outside the profiled window.  
   
-1.  Turn on ETW logging by using the CLR runtime provider:  
+1. Turn on ETW logging by using the CLR runtime provider:  
   
-    ```  
+    ```console
     xperf -start clr -on e13c0d23-ccbc-4e12-931b-d9cc2eee27e4:0x1CCBD:0x5 -f clr1.etl      
     ```  
   
      The log will be saved to the clr1.etl file.  
   
-2.  To stop profiling while the process continues to execute, start the rundown provider to capture the `DCEnd` events:  
+2. To stop profiling while the process continues to execute, start the rundown provider to capture the `DCEnd` events:  
   
-    ```  
+    ```console
     xperf -start clrRundown -on A669021C-C450-4609-A035-5AF59AF4DF18:0xB8:0x5 -f clr2.etl      
     ```  
   
      This enables the collection of `DCEnd` events to start a rundown session. You may need to wait 30 to 60 seconds for all events to be collected. The log will be saved to the clr1.et2 file.  
   
-3.  Turn off all ETW profiling:  
+3. Turn off all ETW profiling:  
   
-    ```  
+    ```console
     xperf -stop clrRundown   
     xperf -stop clr  
     ```  
   
-4.  Merge the profiles to create one log file:  
+4. Merge the profiles to create one log file:  
   
-    ```  
-    xperf -merge -d clr1.etl clr2.etl merged.etl  
+    ```console
+    xperf -merge clr1.etl clr2.etl merged.etl  
     ```  
   
      The merged.etl file will contain the events from the runtime and the rundown provider sessions.  
@@ -86,4 +86,5 @@ The common language runtime (CLR) has two providers: the runtime provider and th
  A tool can execute steps 2 and 3 (starting a rundown session and then terminating profiling) instead of immediately turning off profiling when a user requests profiling to be stopped. A tool can also execute step 4.  
   
 ## See also
+
 - [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

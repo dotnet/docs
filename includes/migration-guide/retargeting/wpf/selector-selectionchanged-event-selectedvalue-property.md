@@ -8,4 +8,3 @@
 |Version|4.7.1|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Windows.Controls.TabControl.SelectedContent?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.Primitives.Selector.SelectionChanged?displayProperty=nameWithType></li></ul>|
-

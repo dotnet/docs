@@ -23,7 +23,7 @@ Serves as a logical wrapper for the corresponding Win32 function. The Win32 impl
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT VirtualQuery (  
     [in]  void*    lpAddress,  
     [out] void*    lpBuffer,  
@@ -32,7 +32,7 @@ HRESULT VirtualQuery (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpAddress`  
  [in] A pointer to the address in virtual memory to be queried.  
   
@@ -60,7 +60,7 @@ HRESULT VirtualQuery (
  `VirtualQuery` provides information about a range of pages in the virtual address space of the calling process. This implementation sets the value of the `pResult` parameter to the number of bytes returned in the information buffer, and returns an HRESULT value. In the Win32 `VirtualQuery` function, the return value is the buffer size. For more information, see the Windows Platform documentation.  
   
 > [!IMPORTANT]
->  The operating system's implementation of `VirtualQuery` does not incur deadlock and can run to completion with random threads suspended in user code. Use great caution when implementing a hosted version of this method.  
+> The operating system's implementation of `VirtualQuery` does not incur deadlock and can run to completion with random threads suspended in user code. Use great caution when implementing a hosted version of this method.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -72,4 +72,5 @@ HRESULT VirtualQuery (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

@@ -26,4 +26,5 @@ The <xref:System.Windows.Forms.ToolStripProgressBar> combines the rafting and re
 |<xref:System.Windows.Forms.ToolStripProgressBar.PerformStep%2A>|Advances the current position of the progress bar by the amount of the <xref:System.Windows.Forms.ToolStripProgressBar.Step%2A> property.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStripProgressBar>

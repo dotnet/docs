@@ -16,13 +16,13 @@ When you transform data contained in an <xref:System.Xml.XmlDocument> or <xref:S
   
 #### To transform a node fragment  
   
-1.  Create an object containing the source document.  
+1. Create an object containing the source document.  
   
-2.  Locate the node fragment you wish to transform.  
+2. Locate the node fragment you wish to transform.  
   
-3.  Create separate object with just the node fragment.  
+3. Create separate object with just the node fragment.  
   
-4.  Pass the node fragment to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
+4. Pass the node fragment to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
   
 ## Example  
  The following example transforms a node fragment and outputs the results to the console.  

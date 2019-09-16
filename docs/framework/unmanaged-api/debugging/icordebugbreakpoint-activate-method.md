@@ -23,13 +23,13 @@ Sets the active state of this `ICorDebugBreakpoint`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Activate (  
     [in] BOOL bActive  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bActive`  
  [in] Set this value to `true` to specify the state as active; otherwise, set this value to `false`.  
   

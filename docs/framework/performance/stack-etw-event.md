@@ -34,4 +34,5 @@ The stack event should be used in conjunction with other events to generate stac
 |Stack|win:Pointer|Columns of instruction pointers.|  
   
 ## See also
+
 - [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

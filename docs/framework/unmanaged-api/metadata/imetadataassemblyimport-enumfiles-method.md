@@ -23,7 +23,7 @@ Enumerates the files referenced in the current assembly manifest.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumFiles (  
     [in, out] HCORENUM    *phEnum,   
     [out] mdFile          rFiles[],   
@@ -32,7 +32,7 @@ HRESULT EnumFiles (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be a null value for the first call of this method.  
   
@@ -62,4 +62,5 @@ HRESULT EnumFiles (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

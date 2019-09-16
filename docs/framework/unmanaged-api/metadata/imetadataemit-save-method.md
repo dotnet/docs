@@ -23,14 +23,14 @@ Saves all metadata in the current scope to the file at the specified address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Save (   
     [in]  LPCWSTR     szFile,   
     [in]  DWORD       dwSaveFlags  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wzFile`  
  [in] The name of the file to save to. If this value is null, the in-memory copy will be saved to the last location that was used.  
   
@@ -47,5 +47,6 @@ HRESULT Save (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

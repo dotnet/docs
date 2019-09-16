@@ -14,29 +14,29 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 ### Windows XP and Secure Context Token Cookie Enabled  
  WCF does not support impersonation and an <xref:System.InvalidOperationException> is thrown when the following conditions exist:  
   
--   The operating system is [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+- The operating system is [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
--   The authentication mode results in a Windows identity.  
+- The authentication mode results in a Windows identity.  
   
--   The <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property of the <xref:System.ServiceModel.OperationBehaviorAttribute> is set to <xref:System.ServiceModel.ImpersonationOption.Required>.  
+- The <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property of the <xref:System.ServiceModel.OperationBehaviorAttribute> is set to <xref:System.ServiceModel.ImpersonationOption.Required>.  
   
--   A state-based security context token (SCT) is created (by default, creation is disabled).  
+- A state-based security context token (SCT) is created (by default, creation is disabled).  
   
  The state-based SCT can only be created using a custom binding. For more information, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).) In code, the token is enabled by creating a security binding element (either <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> or <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>) using the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement%28System.Boolean%29?displayProperty=nameWithType> or the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%28System.ServiceModel.Channels.SecurityBindingElement%2CSystem.Boolean%29?displayProperty=nameWithType> method and setting the `requireCancellation` parameter to `false`. The parameter refers to the caching of the SCT. Setting the value to `false` enables the state-based SCT feature.  
   
  Alternatively, in configuration, the token is enabled by creating a <`customBinding`>, then adding a <`security`> element, and setting the `authenticationMode` attribute to SecureConversation and the `requireSecurityContextCancellation` attribute to `true`.  
   
 > [!NOTE]
->  The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+> The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
 ### Possible ASP.NET Conflict  
- WCF and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] can both enable or disable impersonation. When [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] hosts an WCF application, a conflict may exist between the WCF and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] configuration settings. In case of conflict, the WCF setting takes precedence, unless the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property is set to <xref:System.ServiceModel.ImpersonationOption.NotAllowed>, in which case the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] impersonation setting takes precedence.  
+ WCF and ASP.NET can both enable or disable impersonation. When ASP.NET hosts an WCF application, a conflict may exist between the WCF and ASP.NET configuration settings. In case of conflict, the WCF setting takes precedence, unless the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property is set to <xref:System.ServiceModel.ImpersonationOption.NotAllowed>, in which case the ASP.NET impersonation setting takes precedence.  
   
 ### Assembly Loads May Fail Under Impersonation  
  If the impersonated context does not have access rights to load an assembly and if it is the first time the common language runtime (CLR) is attempting to load the assembly for that AppDomain, the <xref:System.AppDomain> caches the failure. Subsequent attempts to load that assembly (or assemblies) fail, even after reverting the impersonation, and even if the reverted context has access rights to load the assembly. This is because the CLR does not re-attempt the load after the user context is changed. You must restart the application domain to recover from the failure.  
   
 > [!NOTE]
->  The default value for the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>. In most cases, an identification-level impersonation context has no rights to load any additional assemblies. This is the default value, so this is a very common condition to be aware of. Identification-level impersonation also occurs when the impersonating process does not have the `SeImpersonate` privilege. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
+> The default value for the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>. In most cases, an identification-level impersonation context has no rights to load any additional assemblies. This is the default value, so this is a very common condition to be aware of. Identification-level impersonation also occurs when the impersonating process does not have the `SeImpersonate` privilege. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
   
 ### Delegation Requires Credential Negotiation  
  To use the Kerberos authentication protocol with delegation, you must implement the Kerberos protocol with credential negotiation (sometimes called multi-leg or multi-step Kerberos). If you implement Kerberos authentication without credential negotiation (sometimes called one-shot or single-leg Kerberos), an exception is thrown. For more information about how to implement credential negotiation, see [Debugging Windows Authentication Errors](../../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md).  
@@ -44,7 +44,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 ## Cryptography  
   
 ### SHA-256 Supported Only for Symmetric Key Usages  
- WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)].  
+ WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the WinFX.  
   
 ### FIPS-Compliant SHA-256 Hashes not Supported  
  WCF does not support SHA-256 FIPS-compliant hashes, so algorithm suites that use SHA-256 are not supported by WCF on systems where use of FIPS compliant algorithms is required.  
@@ -62,20 +62,20 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
   
  There are two possible ways to tell if a certificate uses KSP:  
   
--   Do a `p/invoke` of `CertGetCertificateContextProperty`, and inspect `dwProvType` on the returned `CertGetCertificateContextProperty`.  
+- Do a `p/invoke` of `CertGetCertificateContextProperty`, and inspect `dwProvType` on the returned `CertGetCertificateContextProperty`.  
   
--   Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](https://go.microsoft.com/fwlink/?LinkId=120056).  
+- Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](https://go.microsoft.com/fwlink/?LinkId=120056).  
   
 ## Message Security Fails if Using ASP.NET Impersonation and ASP.NET Compatibility Is Required  
  WCF does not support the following combination of settings because they can prevent client authentication from occurring:  
   
--   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Impersonation is enabled. This is done in the Web.config file by setting the `impersonate` attribute of the <`identity`> element to `true`.  
+- ASP.NET Impersonation is enabled. This is done in the Web.config file by setting the `impersonate` attribute of the <`identity`> element to `true`.  
   
--   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode is enabled by setting the `aspNetCompatibilityEnabled` attribute of the [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) to `true`.  
+- ASP.NET compatibility mode is enabled by setting the `aspNetCompatibilityEnabled` attribute of the [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) to `true`.  
   
--   Message mode security is used.  
+- Message mode security is used.  
   
- The work-around is to turn off the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode. Or, if the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode is required, disable the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] impersonation feature and use WCF-provided impersonation instead. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
+ The work-around is to turn off the ASP.NET compatibility mode. Or, if the ASP.NET compatibility mode is required, disable the ASP.NET impersonation feature and use WCF-provided impersonation instead. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
   
 ## IPv6 Literal Address Failure  
  Security requests fail when the client and service are on the same machine, and IPv6 literal addresses are used for the service.  
@@ -103,6 +103,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
  The fix is to modify the binding directly on the client after doing the import.  
   
 ## See also
+
 - [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
 - [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
 - [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)

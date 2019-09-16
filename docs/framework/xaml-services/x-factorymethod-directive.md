@@ -12,7 +12,7 @@ Specifies a method other than a constructor that a XAML processor should use to 
   
 ## XAML Attribute Usage, no x:Arguments  
   
-```  
+```xaml  
 <object x:FactoryMethod="methodname"...>  
   ...  
 </object>  
@@ -20,7 +20,7 @@ Specifies a method other than a constructor that a XAML processor should use to 
   
 ## XAML Attribute Usage, x:Arguments as Element(s)  
   
-```  
+```xaml  
 <object x:FactoryMethod="methodname"...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
@@ -51,4 +51,5 @@ Specifies a method other than a constructor that a XAML processor should use to 
  `x:FactoryMethod` as an element must precede any other property elements, must precede any `x:Arguments` also provided as elements, and must precede any content/inner text/initialization text.  
   
 ## See also
-- [x:Arguments Directive](../../../docs/framework/xaml-services/x-arguments-directive.md)
+
+- [x:Arguments Directive](x-arguments-directive.md)

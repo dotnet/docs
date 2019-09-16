@@ -19,17 +19,16 @@ With the <xref:System.Windows.Forms.WebBrowser> control, you can add Web browser
  The following code example implements an address bar, typical browser buttons, a **File** menu, a status bar, and a title bar that displays the current page title.  
   
 ## Example  
- [!code-cpp[System.Windows.Forms.WebBrowser#0](../../../../samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#0)]
- [!code-csharp[System.Windows.Forms.WebBrowser#0](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#0)]
- [!code-vb[System.Windows.Forms.WebBrowser#0](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/VB/form1.vb#0)]  
+ [!code-cpp[System.Windows.Forms.WebBrowser#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#0)]
+ [!code-csharp[System.Windows.Forms.WebBrowser#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#0)]
+ [!code-vb[System.Windows.Forms.WebBrowser#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/VB/form1.vb#0)]  
   
 ## Compiling the Code  
  This example requires:  
   
--   References to the `System`, `System.Drawing`, and `System.Windows.Forms` assemblies.  
-  
- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
+- References to the `System`, `System.Drawing`, and `System.Windows.Forms` assemblies.  
   
 ## See also
+
 - <xref:System.Windows.Forms.WebBrowser>
-- [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)
+- [WebBrowser Control](webbrowser-control-windows-forms.md)

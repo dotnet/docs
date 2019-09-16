@@ -162,5 +162,6 @@ End Try
  When a **SocketException** is thrown, the **SocketException** class sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system socket error that occurred. For more information about socket error codes, see the Winsock 2.0 API error code documentation in MSDN.  
   
 ## See also
-- [Exception Handling Fundamentals](../../../docs/standard/exceptions/exception-handling-fundamentals.md)
+
+- [Exception Handling Fundamentals](../../standard/exceptions/exception-handling-fundamentals.md)
 - [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)

@@ -24,7 +24,7 @@ Defines a transport buffer for a module's runtime information.
 
 ## Syntax
 
-```
+```cpp
 struct DacpModuleData
 {
     CLRDATA_ADDRESS Address;
@@ -43,7 +43,6 @@ struct DacpModuleData
 | `ilBase`  | The address of the loaded image's base.                                 |
 | `payLoad` | A payload buffer for additional module information used by the runtime. |
 
-
 ## Remarks
 
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, define the structure as specified above.
@@ -55,5 +54,6 @@ This structure lives inside the runtime and is not exposed through any headers o
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
+
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

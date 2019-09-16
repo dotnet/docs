@@ -24,7 +24,7 @@ Generates a hash over the contents of the file that has the specified file handl
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromHandle (  
     [in]  HANDLE   hFile,  
     [in, out] unsigned int   *piHashAlg,  
@@ -34,7 +34,7 @@ HRESULT GetHashFromHandle (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hFile`  
  [in] The handle of the file to be hashed.  
   
@@ -63,4 +63,5 @@ HRESULT GetHashFromHandle (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

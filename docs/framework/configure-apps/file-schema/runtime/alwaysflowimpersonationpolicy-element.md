@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<alwaysFlowImpersonationPolicy> Element
 Specifies that the Windows identity always flows across asynchronous points, regardless of how impersonation was performed.  
   
- \<configuration>  
-\<runtime>  
-\<alwaysFlowImpersonationPolicy>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<alwaysFlowImpersonationPolicy>**\  
   
 ## Syntax  
   
@@ -56,13 +56,13 @@ Specifies that the Windows identity always flows across asynchronous points, reg
   
  You can alter this default behavior in two other ways:  
   
-1.  In managed code on a per-thread basis.  
+1. In managed code on a per-thread basis.  
   
      You can suppress the flow on a per-thread basis by modifying the <xref:System.Threading.ExecutionContext> and <xref:System.Security.SecurityContext> settings by using the <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=nameWithType>, <xref:System.Security.SecurityContext.SuppressFlowWindowsIdentity%2A?displayProperty=nameWithType>, or <xref:System.Security.SecurityContext.SuppressFlow%2A?displayProperty=nameWithType> method.  
   
-2.  In the call to the unmanaged hosting interface to load the common language runtime (CLR).  
+2. In the call to the unmanaged hosting interface to load the common language runtime (CLR).  
   
-     If an unmanaged hosting interface (instead of a simple managed executable) is used to load the CLR, you can specify a special flag in the call to the [CorBindToRuntimeEx Function](../../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) function. To enable the compatibility mode for the entire process, set the `flags` parameter for [CorBindToRuntimeEx Function](../../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) to `STARTUP_ALWAYSFLOW_IMPERSONATION`.  
+     If an unmanaged hosting interface (instead of a simple managed executable) is used to load the CLR, you can specify a special flag in the call to the [CorBindToRuntimeEx Function](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md) function. To enable the compatibility mode for the entire process, set the `flags` parameter for [CorBindToRuntimeEx Function](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md) to `STARTUP_ALWAYSFLOW_IMPERSONATION`.  
   
 ## Configuration File  
  In a .NET Framework application, this element can be used only in the application configuration file.  
@@ -103,6 +103,7 @@ Specifies that the Windows identity always flows across asynchronous points, reg
 ```  
   
 ## See also
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [\<legacyImpersonationPolicy> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md)
+
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [\<legacyImpersonationPolicy> Element](legacyimpersonationpolicy-element.md)

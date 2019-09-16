@@ -24,7 +24,7 @@ Defines the basic information about a given profiler-instrumented method.
 
 ## Syntax
 
-```
+```cpp
 struct MSLAYOUT DacpReJitData
 {
     enum Flags
@@ -49,7 +49,6 @@ struct MSLAYOUT DacpReJitData
 | `flags`          | A flag indicating the current state of the method's ReJit instrumentation for the given version. |
 | `NativeCodeAddr` | The base address of the method's rejitted implementation.                                         |
 
-
 ## Remarks
 
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, define the structure as specified above. The structure must also be defined using `ms_struct` packing if not using the Microsoft compilers.
@@ -61,5 +60,6 @@ This structure lives inside the runtime and is not exposed through any headers o
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
+
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

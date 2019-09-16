@@ -22,9 +22,6 @@ This section covers conceptual documentation for the Visual Basic language.
  [Creating and Using Components in Visual Basic](../../visual-basic/developing-apps/creating-and-using-components.md)  
  Defines the term *component* and discusses how and when to create components.  
   
- [Printing and Reporting](../../visual-basic/developing-apps/printing/index.md)  
- Provides overviews and links to the relevant documentation related to printing and reporting.  
-  
  [Windows Forms Application Basics](../../visual-basic/developing-apps/windows-forms/index.md)  
  Provides information about creating Windows Forms applications by using Visual Studio.  
   

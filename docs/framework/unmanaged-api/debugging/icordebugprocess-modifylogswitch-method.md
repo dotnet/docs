@@ -23,13 +23,13 @@ Sets the severity level of the specified log switch.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModifyLogSwitch(  
     [in] WCHAR *pLogSwitchName,  
     [in] LONG  lLevel);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pLogSwitchName`  
  [in] A pointer to a string that specifies the name of the log switch.  
   

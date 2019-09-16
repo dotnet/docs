@@ -23,13 +23,13 @@ Gets the register set for the active part of this chain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisterSet (  
     [out] ICorDebugRegisterSet **ppRegisters  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRegisters`  
  [out] A pointer to the address of an [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) object that represents the register set for the active part of this chain.  
   

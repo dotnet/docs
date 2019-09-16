@@ -23,7 +23,7 @@ Causes the underlying object to release all internal references and return failu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Destroy();  
 ```  
   
@@ -34,4 +34,5 @@ HRESULT Destroy();
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedDispose Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddispose-interface.md)

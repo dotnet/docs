@@ -34,7 +34,7 @@ Use the **DataReader.Read** method to obtain a row from the query results. You c
  While a **DataReader** is open, the **Connection** is in use exclusively by that **DataReader**. You cannot execute any commands for the **Connection**, including creating another **DataReader**, until the original **DataReader** is closed.  
   
 > [!NOTE]
->  Do not call **Close** or **Dispose** on a **Connection**, a **DataReader**, or any other managed object in the **Finalize** method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a **Finalize** method in your class definition. For more information, see [Garbage Collection](../../../../docs/standard/garbage-collection/index.md).  
+> Do not call **Close** or **Dispose** on a **Connection**, a **DataReader**, or any other managed object in the **Finalize** method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a **Finalize** method in your class definition. For more information, see [Garbage Collection](../../../standard/garbage-collection/index.md).  
   
 ## Retrieving multiple result sets using NextResult  
  If the **DataReader** returns multiple result sets, call the **NextResult** method to iterate through the result sets sequentially. The following example shows the <xref:System.Data.SqlClient.SqlDataReader> processing the results of two SELECT statements using the <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> method.  
@@ -51,7 +51,7 @@ Use the **DataReader.Read** method to obtain a row from the query results. You c
 ## Working with OLE DB chapters  
  Hierarchical rowsets, or chapters (OLE DB type **DBTYPE_HCHAPTER**, ADO type **adChapter**), can be retrieved using the <xref:System.Data.OleDb.OleDbDataReader>. When a query that includes a chapter is returned as a **DataReader**, the chapter is returned as a column in that **DataReader** and is exposed as a **DataReader** object.  
   
- The ADO.NET **DataSet** can also be used to represent hierarchical rowsets by using parent-child relationships between tables. For more information, see [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md).  
+ The ADO.NET **DataSet** can also be used to represent hierarchical rowsets by using parent-child relationships between tables. For more information, see [DataSets, DataTables, and DataViews](./dataset-datatable-dataview/index.md).  
   
  The following code example uses the MSDataShape Provider to generate a chapter column of orders for each customer in a list of customers.  
   
@@ -249,10 +249,11 @@ adapter.Fill(ds);
 ```
 
 > [!NOTE]
->  To avoid an **OverflowException**, we recommend that you also handle any conversion from the Oracle NUMBER type to a valid .NET Framework type before storing the value in a <xref:System.Data.DataRow>. You can use the <xref:System.Data.Common.DataAdapter.FillError> event to determine if an **OverflowException** has occurred. For more information on the <xref:System.Data.Common.DataAdapter.FillError> event, see [Handling DataAdapter Events](../../../../docs/framework/data/adonet/handling-dataadapter-events.md).  
+> To avoid an **OverflowException**, we recommend that you also handle any conversion from the Oracle NUMBER type to a valid .NET Framework type before storing the value in a <xref:System.Data.DataRow>. You can use the <xref:System.Data.Common.DataAdapter.FillError> event to determine if an **OverflowException** has occurred. For more information on the <xref:System.Data.Common.DataAdapter.FillError> event, see [Handling DataAdapter Events](handling-dataadapter-events.md).  
   
 ## See also
-- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
-- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
+- [Commands and Parameters](commands-and-parameters.md)
+- [Retrieving Database Schema Information](retrieving-database-schema-information.md)
+- [ADO.NET Overview](ado-net-overview.md)

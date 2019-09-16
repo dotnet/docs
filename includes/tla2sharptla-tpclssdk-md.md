@@ -1,1 +1,0 @@
-Tablet PC SDK 1.7

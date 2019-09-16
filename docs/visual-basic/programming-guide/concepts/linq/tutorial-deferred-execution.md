@@ -16,4 +16,5 @@ This tutorial illustrates the processing model when you chain queries together. 
 |[Deferred Execution Example (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/deferred-execution-example.md)|Provides an example of deferred execution.|  
   
 ## See also
+
 - [Pure Functional Transformations of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)

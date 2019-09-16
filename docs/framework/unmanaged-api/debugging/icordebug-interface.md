@@ -21,7 +21,7 @@ ms.author: "ronpet"
 Provides methods that allow developers to debug applications in the common language runtime (CLR) environment.  
   
 > [!NOTE]
->  Mixed-mode (managed and native code) debugging is not supported on Windows 95, Windows 98, or Windows ME, or on non-x86 platforms (such as IA64 and AMD64).  
+> Mixed-mode (managed and native code) debugging is not supported on Windows 95, Windows 98, or Windows ME, or on non-x86 platforms (such as IA64 and AMD64).  
   
 ## Methods  
   
@@ -43,7 +43,7 @@ Provides methods that allow developers to debug applications in the common langu
  The `ICorDebug` object is the initial object to control all further managed debugging. In the .NET Framework versions 1.0 and 1.1, this object was a `CoClass` object created from COM. In the .NET Framework version 2.0, this object is no longer a `CoClass` object. It must be created by the [CreateDebuggingInterfaceFromVersion](../../../../docs/framework/unmanaged-api/hosting/createdebugginginterfacefromversion-function.md) function, which is more version-aware. This new creation function enables clients to get a specific implementation of `ICorDebug`, which also emulates a specific version of the debugging API.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -55,4 +55,5 @@ Provides methods that allow developers to debug applications in the common langu
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

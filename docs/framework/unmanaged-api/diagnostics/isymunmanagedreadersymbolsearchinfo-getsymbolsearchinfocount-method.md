@@ -23,12 +23,12 @@ Gets a count of symbol search information.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymbolSearchInfoCount(  
     [out] ULONG32 *pcSearchInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcSearchInfo`  
  ]out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the search information.  
   
@@ -39,4 +39,5 @@ HRESULT GetSymbolSearchInfoCount(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReaderSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)

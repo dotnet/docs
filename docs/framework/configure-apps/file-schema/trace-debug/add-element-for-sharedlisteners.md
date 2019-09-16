@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
 ---
 # \<add> Element for \<sharedListeners>
-Adds a listener to the `sharedListeners` collection. `sharedListeners` is a collection of listeners that any [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) can reference.  By default, listeners in the `sharedListeners` collection are not placed in a `Listeners` collection. They must be added by name to the [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md). It is not possible to get the listeners in the `sharedListeners` collection in code at run time.  
+Adds a listener to the `sharedListeners` collection. `sharedListeners` is a collection of listeners that any [\<source>](source-element.md) or [\<trace>](trace-element.md) can reference.  By default, listeners in the `sharedListeners` collection are not placed in a `Listeners` collection. They must be added by name to the [\<source>](source-element.md) or [\<trace>](trace-element.md). It is not possible to get the listeners in the `sharedListeners` collection in code at run time.  
   
  \<configuration>  
 &nbsp;&nbsp;\<system.diagnostics>  
@@ -35,7 +35,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 |Attribute|Description|  
 |---------------|-----------------|  
 |`name`|Required attribute.<br /><br /> Specifies the name of the listener that is used to add the shared listener to a `Listeners` collection.|  
-|`type`|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|`type`|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
 |`initializeData`|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
 |`traceOutputOptions`|Optional attribute.<br/><br/>The string representation of one or more <xref:System.Diagnostics.TraceOptions> enumeration members that indicates the data to be written to the trace output. Multiple items are separated by commas. The default value is "None".|
 
@@ -43,7 +43,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<filter>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-sharedlisteners.md)|Adds a filter to a listener in the `sharedListeners` collection.|  
+|[\<filter>](filter-element-for-add-for-sharedlisteners.md)|Adds a filter to a listener in the `sharedListeners` collection.|  
   
 ### Parent Elements  
   
@@ -57,7 +57,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
  The listener classes shipped with the .NET Framework derive from the <xref:System.Diagnostics.TraceListener> class. The value for the `name` attribute is used to add the shared listener to a `Listeners` collection for either a trace or a trace source. The value for the `initializeData` attribute depends on the type of listener you create. Not all trace listeners require that you specify `initializeData`.  
   
 > [!NOTE]
->  When you use the `initializeData` attribute, you may get the compiler warning "The 'initializeData' attribute is not declared." This warning occurs because the configuration settings are validated against the abstract base class <xref:System.Diagnostics.TraceListener>, which does not recognize the `initializeData` attribute. Typically, you can ignore this warning for trace listener implementations that have a constructor that takes a parameter.  
+> When you use the `initializeData` attribute, you may get the compiler warning "The 'initializeData' attribute is not declared." This warning occurs because the configuration settings are validated against the abstract base class <xref:System.Diagnostics.TraceListener>, which does not recognize the `initializeData` attribute. Typically, you can ignore this warning for trace listener implementations that have a constructor that takes a parameter.  
   
  The following table shows the trace listeners that are included with the .NET Framework and describes the value of their `initializeData` attributes.  
   
@@ -103,7 +103,8 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 ```  
   
 ## See also
+
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TraceListener>
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
-- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [Trace and Debug Settings Schema](index.md)
+- [Trace Listeners](../../../debug-trace-profile/trace-listeners.md)

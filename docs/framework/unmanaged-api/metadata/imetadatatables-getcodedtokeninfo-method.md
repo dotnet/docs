@@ -23,7 +23,7 @@ Gets a pointer to an array of tokens associated with the specified row index.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodedTokenInfo (   
     [in]  ULONG       ixCdTkn,  
     [out] ULONG       *pcTokens,  
@@ -32,7 +32,7 @@ HRESULT GetCodedTokenInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixCdTkn`  
  [in] The kind of coded token to return.  
   
@@ -55,5 +55,6 @@ HRESULT GetCodedTokenInfo (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

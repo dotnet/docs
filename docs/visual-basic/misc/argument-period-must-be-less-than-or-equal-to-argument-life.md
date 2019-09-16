@@ -10,9 +10,8 @@ The value of the `Period` argument, which specifies the period for which asset d
   
 ## To correct this error  
   
--   Ensure that the `Life` and `Period` arguments are expressed in the same units. For example, if `Life` is measured in months, `Period` should be as well.  
+- Ensure that the `Life` and `Period` arguments are expressed in the same units. For example, if `Life` is measured in months, `Period` should be as well.  
   
 ## See also
-
 
 - [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

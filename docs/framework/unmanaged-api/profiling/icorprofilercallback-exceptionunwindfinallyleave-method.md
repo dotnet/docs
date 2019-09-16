@@ -23,7 +23,7 @@ Notifies the profiler that the unwind phase of exception handling has left a `fi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwindFinallyLeave();  
 ```  
   
@@ -42,5 +42,6 @@ HRESULT ExceptionUnwindFinallyLeave();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ExceptionUnwindFinallyEnter Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfinallyenter-method.md)

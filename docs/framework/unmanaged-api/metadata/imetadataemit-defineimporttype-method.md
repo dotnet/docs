@@ -23,7 +23,7 @@ Creates a reference to the specified type that is defined outside the current sc
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineImportType (   
     [in]  IMetaDataAssemblyImport  *pAssemImport,   
     [in]  const void               *pbHashValue,   
@@ -35,7 +35,7 @@ HRESULT DefineImportType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAssemImport`  
  [in] An [IMetaDataAssemblyImport](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md) interface that represents the assembly from which the target type is imported.  
   
@@ -70,5 +70,6 @@ HRESULT DefineImportType (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

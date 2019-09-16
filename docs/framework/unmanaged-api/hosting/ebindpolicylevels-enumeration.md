@@ -22,7 +22,7 @@ Provides flags to specify the level at which to apply or modify assembly policy.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     ePolicyLevelNone         = 0x0,  
     ePolicyLevelRetargetable = 0x1,  
@@ -61,5 +61,6 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

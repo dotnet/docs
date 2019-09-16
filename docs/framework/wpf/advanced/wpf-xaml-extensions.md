@@ -11,13 +11,13 @@ ms.assetid: 5e1d60e8-9403-47d0-98e4-b49aec871ee7
 ---
 # WPF XAML Extensions
 ## In This Section  
- [Binding Markup Extension](../../../../docs/framework/wpf/advanced/binding-markup-extension.md)  
-  [ColorConvertedBitmap Markup Extension](../../../../docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md)  
-  [ComponentResourceKey Markup Extension](../../../../docs/framework/wpf/advanced/componentresourcekey-markup-extension.md)  
-  [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)  
-  [RelativeSource MarkupExtension](../../../../docs/framework/wpf/advanced/relativesource-markupextension.md)  
-  [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)  
-  [TemplateBinding Markup Extension](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md)  
-  [ThemeDictionary Markup Extension](../../../../docs/framework/wpf/advanced/themedictionary-markup-extension.md)  
-  [PropertyPath XAML Syntax](../../../../docs/framework/wpf/advanced/propertypath-xaml-syntax.md)  
-  [PresentationOptions:Freeze Attribute](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)
+ [Binding Markup Extension](binding-markup-extension.md)  
+  [ColorConvertedBitmap Markup Extension](colorconvertedbitmap-markup-extension.md)  
+  [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md)  
+  [DynamicResource Markup Extension](dynamicresource-markup-extension.md)  
+  [RelativeSource MarkupExtension](relativesource-markupextension.md)  
+  [StaticResource Markup Extension](staticresource-markup-extension.md)  
+  [TemplateBinding Markup Extension](templatebinding-markup-extension.md)  
+  [ThemeDictionary Markup Extension](themedictionary-markup-extension.md)  
+  [PropertyPath XAML Syntax](propertypath-xaml-syntax.md)  
+  [PresentationOptions:Freeze Attribute](presentationoptions-freeze-attribute.md)

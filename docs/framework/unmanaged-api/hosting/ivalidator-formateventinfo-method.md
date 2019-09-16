@@ -23,7 +23,7 @@ Gets the error message corresponding to the specified validation error.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FormatEventInfo(  
     [in] HRESULT            hVECode,  
     [in] VEContext          Context,  
@@ -33,7 +33,7 @@ HRESULT FormatEventInfo(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hVECode`  
  [in] The HRESULT value that was passed to the validation error handler.  
   
@@ -57,6 +57,3 @@ HRESULT FormatEventInfo(
  **Library:** Included as a resource in MSCorEE.dll  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
-  
-## See also
-

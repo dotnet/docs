@@ -1,7 +1,6 @@
 ---
 title: "bool keyword - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "bool_CSharpKeyword"
@@ -15,7 +14,7 @@ ms.assetid: 551cfe35-2632-4343-af49-33ad12da08e2
 The `bool` keyword is an alias of <xref:System.Boolean?displayProperty=nameWithType>. It is used to declare variables to store the Boolean values: [true](true-literal.md) and [false](false-literal.md).
 
 > [!NOTE]
-> If you require a Boolean variable that can also have a value of `null`, use `bool?`. For more information, see [The bool? type](../../programming-guide/nullable-types/using-nullable-types.md#the-bool-type) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
+> Use the `bool?` type, if you need to support the three-valued logic, for example, when you work with databases that support a three-valued Boolean type. For the `bool?` operands, the predefined `&` and `|` operators support the three-valued logic. For more information, see the [Nullable Boolean logical operators](../operators/boolean-logical-operators.md#nullable-boolean-logical-operators) section of the [Boolean logical operators](../operators/boolean-logical-operators.md) article.
 
 ## Literals
 
@@ -47,10 +46,10 @@ In this example, you enter a character from the keyboard and the program checks 
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)
-- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)
-- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)
-- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
+- [Integral types](../builtin-types/integral-numeric-types.md)
+- [Built-In Types Table](./built-in-types-table.md)
+- [Implicit Numeric Conversions Table](./implicit-numeric-conversions-table.md)
+- [Explicit Numeric Conversions Table](./explicit-numeric-conversions-table.md)

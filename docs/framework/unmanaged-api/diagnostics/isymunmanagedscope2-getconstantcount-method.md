@@ -23,12 +23,12 @@ Gets a count of the constants defined within this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetConstantCount(  
     [out, retval] ULONG32 *pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the constants.  
   
@@ -39,4 +39,5 @@ HRESULT GetConstantCount(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedScope2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope2-interface.md)

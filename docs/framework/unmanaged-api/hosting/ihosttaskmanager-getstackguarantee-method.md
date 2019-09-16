@@ -23,13 +23,13 @@ Gets the amount of stack space that is guaranteed to be available after a stack 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackGuarantee(  
     [out] ULONG *pGuarantee  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pGuarantee`  
  [out] A pointer to the number of bytes that are available.  
   
@@ -43,4 +43,5 @@ HRESULT GetStackGuarantee(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)

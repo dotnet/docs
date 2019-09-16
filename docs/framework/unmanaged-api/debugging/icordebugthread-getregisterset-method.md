@@ -23,13 +23,13 @@ Gets an interface pointer to the register set that is associated with the active
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisterSet (  
     [out] ICorDebugRegisterSet **ppRegisters  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRegisters`  
  [out] A pointer to the address of an [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) interface object that represents the register set for the active part of this thread.  
   

@@ -22,7 +22,7 @@ Executes the entry point in the specified memory-mapped code. This function is c
   
 ## Syntax  
   
-```  
+```cpp  
 __int32 STDMETHODCALLTYPE _CorExeMain2 (  
    [in] PBYTE           pUnmappedPE,  
    [in] DWORD           cUnmappedPE,  
@@ -32,7 +32,7 @@ __int32 STDMETHODCALLTYPE _CorExeMain2 (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pUnmappedPE`  
  [in] A pointer to the memory-mapped code.  
   
@@ -58,4 +58,5 @@ __int32 STDMETHODCALLTYPE _CorExeMain2 (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

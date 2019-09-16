@@ -10,6 +10,8 @@ ms.custom: "seodec18"
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-using-dotnet-test/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
+[!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
+
 ## Creating the source project
 
 Open a shell window. Create a directory called *unit-testing-using-dotnet-test* to hold the solution.
@@ -17,7 +19,7 @@ Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to cre
 makes it easier to manage both the class library and the unit test project.
 Inside the solution directory, create a *PrimeService* directory. The directory and file structure thus far should be as follows:
 
-```
+```console
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
@@ -34,7 +36,7 @@ namespace Prime.Services
     {
         public bool IsPrime(int candidate)
         {
-            throw new NotImplementedException("Please create a test first");
+            throw new NotImplementedException("Please create a test first.");
         }
     }
 }
@@ -44,15 +46,15 @@ Change the directory back to the *unit-testing-using-dotnet-test* directory.
 
 Run the [dotnet sln](../tools/dotnet-sln.md) command to add the class library project to the solution:
 
-```
-dotnet sln add .\PrimeService\PrimeService.csproj
+```console
+dotnet sln add ./PrimeService/PrimeService.csproj
 ```
 
 ## Creating the test project
 
 Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
-```
+```console
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
@@ -73,7 +75,7 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added xUnit and the xUnit runner. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```
+```console
 dotnet add reference ../PrimeService/PrimeService.csproj
 ```
 
@@ -81,7 +83,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 The following shows the final solution layout:
 
-```
+```console
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
@@ -94,8 +96,8 @@ The following shows the final solution layout:
 
 To add the test project to the solution, run the [dotnet sln](../tools/dotnet-sln.md) command in the *unit-testing-using-dotnet-test* directory:
 
-```
-dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
+```console
+dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
 ## Creating the first test
@@ -118,7 +120,7 @@ namespace Prime.UnitTests.Services
         }
 
         [Fact]
-        public void ReturnFalseGivenValueOf1()
+        public void IsPrime_InputIs1_ReturnFalse()
         {
             var result = _primeService.IsPrime(1);
 
@@ -139,7 +141,7 @@ public bool IsPrime(int candidate)
     {
         return false;
     }
-    throw new NotImplementedException("Please create a test first");
+    throw new NotImplementedException("Please create a test first.");
 }
 ```
 

@@ -17,18 +17,18 @@ You can decide to execute your queries either remotely (that is, the database en
   
  If your database has thousands of rows of orders, you do not want to retrieve them all to process a small subset. In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the <xref:System.Data.Linq.EntitySet%601> class implements the <xref:System.Linq.IQueryable> interface. This approach makes sure that such queries can be executed remotely. Two major benefits flow from this technique:  
   
--   Unnecessary data is not retrieved.  
+- Unnecessary data is not retrieved.  
   
--   A query executed by the database engine is often more efficient because of the database indexes.  
+- A query executed by the database engine is often more efficient because of the database indexes.  
   
 ## Local Execution  
  In other situations, you might want to have the complete set of related entities in the local cache. For this purpose, <xref:System.Data.Linq.EntitySet%601> provides the <xref:System.Data.Linq.EntitySet%601.Load%2A> method to explicitly load all the members of the <xref:System.Data.Linq.EntitySet%601>.  
   
  If an <xref:System.Data.Linq.EntitySet%601> is already loaded, subsequent queries are executed locally. This approach helps in two ways:  
   
--   If the complete set must be used locally or multiple times, you can avoid remote queries and associated latencies.  
+- If the complete set must be used locally or multiple times, you can avoid remote queries and associated latencies.  
   
--   The entity can be serialized as a complete entity.  
+- The entity can be serialized as a complete entity.  
   
  The following code fragment illustrates how local execution can be obtained:  
   
@@ -36,10 +36,11 @@ You can decide to execute your queries either remotely (that is, the database en
  [!code-vb[DLinqQueryConcepts#8](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#8)]  
   
 ## Comparison  
- These two capabilities provide a powerful combination of options: remote execution for large collections and local execution for small collections or where the complete collection is needed. You implement remote execution through <xref:System.Linq.IQueryable>, and local execution against an in-memory <xref:System.Collections.Generic.IEnumerable%601> collection. To force local execution (that is, <xref:System.Collections.Generic.IEnumerable%601>), see [Convert a Type to a Generic IEnumerable](../../../../../../docs/framework/data/adonet/sql/linq/convert-a-type-to-a-generic-ienumerable.md).  
+ These two capabilities provide a powerful combination of options: remote execution for large collections and local execution for small collections or where the complete collection is needed. You implement remote execution through <xref:System.Linq.IQueryable>, and local execution against an in-memory <xref:System.Collections.Generic.IEnumerable%601> collection. To force local execution (that is, <xref:System.Collections.Generic.IEnumerable%601>), see [Convert a Type to a Generic IEnumerable](convert-a-type-to-a-generic-ienumerable.md).  
   
 ### Queries Against Unordered Sets  
  Note the important difference between a local collection that implements <xref:System.Collections.Generic.List%601> and a collection that provides remote queries executed against *unordered sets* in a relational database. <xref:System.Collections.Generic.List%601> methods such as those that use index values require list semantics, which typically cannot be obtained through a remote query against an unordered set. For this reason, such methods implicitly load the <xref:System.Data.Linq.EntitySet%601> to allow local execution.  
   
 ## See also
-- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+
+- [Query Concepts](query-concepts.md)

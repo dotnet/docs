@@ -25,19 +25,19 @@ Specifies that debug information should be placed in a file for later analysis.
 ## Remarks  
  The **-bugreport** option specifies that the following information should be placed in `file`:  
   
--   A copy of all source code files in the compilation.  
+- A copy of all source code files in the compilation.  
   
--   A listing of the compiler options used in the compilation.  
+- A listing of the compiler options used in the compilation.  
   
--   Version information about your compiler, run time, and operating system.  
+- Version information about your compiler, run time, and operating system.  
   
--   Referenced assemblies and modules, saved as hexadecimal digits, except assemblies that ship with the .NET Framework and SDK.  
+- Referenced assemblies and modules, saved as hexadecimal digits, except assemblies that ship with the .NET Framework and SDK.  
   
--   Compiler output, if any.  
+- Compiler output, if any.  
   
--   A description of the problem, which you will be prompted for.  
+- A description of the problem, which you will be prompted for.  
   
--   A description of how you think the problem should be fixed, which you will be prompted for.  
+- A description of how you think the problem should be fixed, which you will be prompted for.  
   
  If this option is used with **-errorreport:prompt** or **-errorreport:send**, the information in the file will be sent to Microsoft Corporation.  
   
@@ -49,6 +49,6 @@ Specifies that debug information should be placed in a file for later analysis.
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
-- [-errorreport (C# Compiler Options)](../../../csharp/language-reference/compiler-options/errorreport-compiler-option.md)
+- [C# Compiler Options](./index.md)
+- [-errorreport (C# Compiler Options)](./errorreport-compiler-option.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

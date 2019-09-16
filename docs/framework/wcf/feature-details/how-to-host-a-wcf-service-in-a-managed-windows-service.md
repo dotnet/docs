@@ -16,13 +16,13 @@ The service code includes a service implementation of the service contract, a Wi
 
 ## Construct the service and provide the hosting code
 
-1.  Create a new Visual Studio **Console app** project called **Service**.
+1. Create a new Visual Studio **Console app** project called **Service**.
 
-2.  Rename Program.cs to Service.cs.
+2. Rename Program.cs to Service.cs.
 
-3.  Change the namespace to `Microsoft.ServiceModel.Samples`.
+3. Change the namespace to `Microsoft.ServiceModel.Samples`.
 
-4.  Add references to the following assemblies:
+4. Add references to the following assemblies:
 
     - System.ServiceModel.dll
 
@@ -30,22 +30,22 @@ The service code includes a service implementation of the service contract, a Wi
 
     - System.Configuration.Install.dll
 
-5.  Add the following using statements to Service.cs.
+5. Add the following using statements to Service.cs.
 
      [!code-csharp[c_HowTo_HostInNTService#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostinntservice/cs/service.cs#0)]
      [!code-vb[c_HowTo_HostInNTService#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostinntservice/vb/service.vb#0)]
 
-6.  Define the `ICalculator` service contract as shown in the following code.
+6. Define the `ICalculator` service contract as shown in the following code.
 
      [!code-csharp[c_HowTo_HostInNTService#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostinntservice/cs/service.cs#1)]
      [!code-vb[c_HowTo_HostInNTService#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostinntservice/vb/service.vb#1)]
 
-7.  Implement the service contract in a class called `CalculatorService` as shown in the following code.
+7. Implement the service contract in a class called `CalculatorService` as shown in the following code.
 
      [!code-csharp[c_HowTo_HostInNTService#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostinntservice/cs/service.cs#2)]
      [!code-vb[c_HowTo_HostInNTService#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostinntservice/vb/service.vb#2)]
 
-8.  Create a new class called `CalculatorWindowsService` that inherits from the <xref:System.ServiceProcess.ServiceBase> class. Add a local variable called `serviceHost` to reference the <xref:System.ServiceModel.ServiceHost> instance. Define the `Main` method that calls `ServiceBase.Run(new CalculatorWindowsService)`
+8. Create a new class called `CalculatorWindowsService` that inherits from the <xref:System.ServiceProcess.ServiceBase> class. Add a local variable called `serviceHost` to reference the <xref:System.ServiceModel.ServiceHost> instance. Define the `Main` method that calls `ServiceBase.Run(new CalculatorWindowsService)`
 
      [!code-csharp[c_HowTo_HostInNTService#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostinntservice/cs/service.cs#3)]
      [!code-vb[c_HowTo_HostInNTService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostinntservice/vb/service.vb#3)]
@@ -110,13 +110,13 @@ The service code includes a service implementation of the service contract, a Wi
 
 ## Install and run the service
 
-1.  Build the solution to create the `Service.exe` executable.
+1. Build the solution to create the `Service.exe` executable.
 
-2.  Open Developer Command Prompt for Visual Studio and navigate to the project directory. Type `installutil bin\service.exe` at the command prompt to install the Windows service.
+2. Open Developer Command Prompt for Visual Studio and navigate to the project directory. Type `installutil bin\service.exe` at the command prompt to install the Windows service.
 
      Type `services.msc` at the command prompt to access the Service Control Manager (SCM). The Windows service should appear in Services as "WCFWindowsServiceSample". The WCF service can only respond to clients if the Windows service is running. To start the service, right-click it in the SCM and select "Start", or type **net start WCFWindowsServiceSample** at the command prompt.
 
-3.  If you make changes to the service, you must first stop it and uninstall it. To stop the service, right-click the service in the SCM and select "Stop", or **type net stop WCFWindowsServiceSample** at the command prompt. Note that if you stop the Windows service and then run a client, an <xref:System.ServiceModel.EndpointNotFoundException> exception occurs when a client attempts to access the service. To uninstall the Windows service type **installutil /u bin\service.exe** at the command prompt.
+3. If you make changes to the service, you must first stop it and uninstall it. To stop the service, right-click the service in the SCM and select "Stop", or **type net stop WCFWindowsServiceSample** at the command prompt. Note that if you stop the Windows service and then run a client, an <xref:System.ServiceModel.EndpointNotFoundException> exception occurs when a client attempts to access the service. To uninstall the Windows service type **installutil /u bin\service.exe** at the command prompt.
 
 ## Example
 

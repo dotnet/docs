@@ -16,11 +16,11 @@ This topic describes how you can protect sensitive information from being expose
   
  The following tips can help you to prevent the content of a trace file from being exposed unintentionally:  
   
--   Ensure that the log files are protected by Access Control Lists (ACL) both in WebHost and self-host scenarios.  
+- Ensure that the log files are protected by Access Control Lists (ACL) both in WebHost and self-host scenarios.  
   
--   Choose a file extension that cannot be easily served using a Web request. For example, the .xml file extension is not a safe choice. You can check the IIS administration guide to see a list of extensions that can be served.  
+- Choose a file extension that cannot be easily served using a Web request. For example, the .xml file extension is not a safe choice. You can check the IIS administration guide to see a list of extensions that can be served.  
   
--   Specify an absolute path for the log file location, which should be outside of the WebHost vroot public directory to prevent it from being accessed by an external party using a Web browser.  
+- Specify an absolute path for the log file location, which should be outside of the WebHost vroot public directory to prevent it from being accessed by an external party using a Web browser.  
   
  By default, keys and personally identifiable information (PII) such as username and password are not logged in traces and logged messages. A machine administrator, however, can use the `enableLoggingKnownPII` attribute in the `machineSettings` element of the Machine.config file to permit applications running on the machine to log known personally identifiable information (PII) as follows:  
   
@@ -85,4 +85,5 @@ This topic describes how you can protect sensitive information from being expose
  In addition, the IP address of the message sender is logged once per connection for connection-oriented transports, and once per message sent otherwise. This is done without the consent of the sender. However, this logging only occurs at the Information or Verbose tracing levels, which are not the default or recommended tracing levels in production, except for live debugging.  
   
 ## See also
+
 - [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)

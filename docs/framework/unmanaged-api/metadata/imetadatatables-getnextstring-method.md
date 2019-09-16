@@ -23,14 +23,14 @@ Gets the index of the next string in the current table column.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextString (   
     [in]  ULONG   ixString,  
     [out] ULONG   *pNext  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixString`  
  [in] The index value from a string table column.  
   
@@ -47,5 +47,6 @@ HRESULT GetNextString (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

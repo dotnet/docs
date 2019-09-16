@@ -23,14 +23,14 @@ Gets the native range over which this variable is live.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLiveRange(  
     [out] ULONG32* pStartOffset,  
     [out] ULONG32 *pEndOffset  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStartOffset`  
  [out] The logical offset at which the variable is first live.  
   
@@ -47,4 +47,5 @@ HRESULT GetLiveRange(
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
 ## See also
+
 - [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)

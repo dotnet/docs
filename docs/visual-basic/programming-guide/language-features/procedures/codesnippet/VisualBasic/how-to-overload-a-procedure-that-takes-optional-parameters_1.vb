@@ -1,1 +1,0 @@
-Sub q(ByVal b As Byte, Optional ByVal j As Long = 6)

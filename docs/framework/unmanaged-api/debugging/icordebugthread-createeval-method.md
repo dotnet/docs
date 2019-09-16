@@ -23,13 +23,13 @@ Creates an ICorDebugEval object that collects and exposes the functionality of t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateEval (  
     [out] ICorDebugEval   **ppEval  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEval`  
  [out] A pointer to the address of an `ICorDebugEval` object that collects and exposes the functionality of this thread.  
   

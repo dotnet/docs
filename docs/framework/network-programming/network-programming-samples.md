@@ -45,13 +45,13 @@ This section contains descriptions and links to downloadable network programming
   
  [FTP Explorer Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms233623(v=vs.85))  
  Demonstrates how to list the contents of an FTP server.  
-  
-  
+
 ## Reference  
  <xref:System.Net>  
   
  <xref:System.Net.NetworkInformation>  
   
 ## See also
+
 - [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
 - [Network Programming How-to Topics](../../../docs/framework/network-programming/network-programming-how-to-topics.md)

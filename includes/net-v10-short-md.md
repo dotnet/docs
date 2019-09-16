@@ -1,1 +1,0 @@
-.NET Framework 1.0

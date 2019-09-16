@@ -23,13 +23,13 @@ Gets a pointer to the ICorDebugFrame object in the current chain that this frame
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCallee (  
     [out] ICorDebugFrame     **ppFrame  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFrame`  
  [out] A pointer to the address of an `ICorDebugFrame` object that represents the called frame. This value is null if the calling frame is the innermost frame in the current chain.  
   

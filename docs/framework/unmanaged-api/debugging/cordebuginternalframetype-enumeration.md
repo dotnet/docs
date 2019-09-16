@@ -22,7 +22,7 @@ Identifies the type of stack frame. This enumeration is used by the [ICorDebugIn
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugInternalFrameType {  
   
     STUBFRAME_NONE                 = 0x00000000,  
@@ -65,4 +65,5 @@ typedef enum CorDebugInternalFrameType {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

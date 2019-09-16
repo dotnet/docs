@@ -13,8 +13,8 @@ ms.assetid: 792943c5-335d-49dd-aa5b-ec1582a10088
 <xref:System.Windows.Controls.Panel> is the base class for all elements that support application layout in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
   
 ## In This Section  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/panel-how-to-topics.md)  
+ [Panels Overview](panels-overview.md)  
+ [How-to Topics](panel-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Panel>  
@@ -32,8 +32,8 @@ ms.assetid: 792943c5-335d-49dd-aa5b-ec1582a10088
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
+ [Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   
- [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)
+ [ScrollViewer Overview](scrollviewer-overview.md)

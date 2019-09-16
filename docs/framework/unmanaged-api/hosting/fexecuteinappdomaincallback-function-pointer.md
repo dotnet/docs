@@ -20,17 +20,17 @@ ms.author: "ronpet"
 # FExecuteInAppDomainCallback Function Pointer
 Points to a function that is called by the common language runtime (CLR) to execute managed code.  
   
- This function pointer has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function pointer has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef HRESULT (__stdcall *FExecuteInAppDomainCallback) (  
     [in] void  *cookie  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] A pointer to opaque caller-allocated memory that contains the managed code to be executed.  
   
@@ -46,4 +46,5 @@ typedef HRESULT (__stdcall *FExecuteInAppDomainCallback) (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

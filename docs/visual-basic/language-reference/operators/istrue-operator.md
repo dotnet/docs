@@ -18,27 +18,28 @@ Determines whether an expression is `True`.
 ## Compiler Use of IsTrue  
  When you have defined a class or structure, you can use a variable of that type in a `For`, `If`, `Else If`, or `While` statement, or in a `When` clause. If you do this, the compiler requires an operator that converts your type into a `Boolean` value so it can test a condition. It searches for a suitable operator in the following order:  
   
-1.  A widening conversion operator from your class or structure to `Boolean`.  
+1. A widening conversion operator from your class or structure to `Boolean`.  
   
-2.  A widening conversion operator from your class or structure to `Boolean?`.  
+2. A widening conversion operator from your class or structure to `Boolean?`.  
   
-3.  The `IsTrue` operator on your class or structure.  
+3. The `IsTrue` operator on your class or structure.  
   
-4.  A narrowing conversion to `Boolean?` that does not involve a conversion from `Boolean` to `Boolean?`.  
+4. A narrowing conversion to `Boolean?` that does not involve a conversion from `Boolean` to `Boolean?`.  
   
-5.  A narrowing conversion operator from your class or structure to `Boolean`.  
+5. A narrowing conversion operator from your class or structure to `Boolean`.  
   
  If you have not defined any conversion to `Boolean` or an `IsTrue` operator, the compiler signals an error.  
   
 > [!NOTE]
->  The `IsTrue` operator can be *overloaded*, which means that a class or structure can redefine its behavior when its operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
+> The `IsTrue` operator can be *overloaded*, which means that a class or structure can redefine its behavior when its operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
  The following code example defines the outline of a structure that includes definitions for the `IsFalse` and `IsTrue` operators.  
   
- [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/istrue-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#28)]  
   
 ## See also
+
 - [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)
 - [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
 - [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)

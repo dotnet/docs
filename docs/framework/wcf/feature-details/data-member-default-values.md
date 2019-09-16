@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 53a3b505-4b27-444b-b079-0eb84a97cfd8
 ---
 # Data Member Default Values
-In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], types have a concept of *default values*. For example, for any reference type the default value is `null`, and for an integer type it is zero. It is occasionally desirable to omit a data member from serialized data when it is set to its default value. Because the member has a default value, an actual value need not be serialized; this has a performance advantage.  
+In the .NET Framework, types have a concept of *default values*. For example, for any reference type the default value is `null`, and for an integer type it is zero. It is occasionally desirable to omit a data member from serialized data when it is set to its default value. Because the member has a default value, an actual value need not be serialized; this has a performance advantage.  
   
  To omit a member from serialized data, set the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to `false` (the default is `true`).  
   
 > [!NOTE]
->  You should set the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property to `false` if there is a specific need to do so, such as for interoperability or data size reduction.  
+> You should set the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property to `false` if there is a specific need to do so, such as for interoperability or data size reduction.  
   
 ## Example  
  The following code has several members with the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> set to `false`.  
@@ -44,12 +44,13 @@ In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], types ha
 ### Schema Representation  
  The details of the XML Schema definition language (XSD) schema representation of data members when the `EmitDefaultValue` property is set to `false` are discussed in [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md). However, the following is a brief overview:  
   
--   When the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> is set to `false`, it is represented in the schema as an annotation specific to Windows Communication Foundation (WCF). There is no interoperable way to represent this information. In particular, the "default" attribute in the schema is not used for this purpose, the `minOccurs` attribute is affected only by the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> setting, and the `nillable` attribute is affected only by the type of the data member.  
+- When the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> is set to `false`, it is represented in the schema as an annotation specific to Windows Communication Foundation (WCF). There is no interoperable way to represent this information. In particular, the "default" attribute in the schema is not used for this purpose, the `minOccurs` attribute is affected only by the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> setting, and the `nillable` attribute is affected only by the type of the data member.  
   
--   The actual default value to use is not present in the schema. It is up to the receiving endpoint to appropriately interpret a missing element.  
+- The actual default value to use is not present in the schema. It is up to the receiving endpoint to appropriately interpret a missing element.  
   
- On schema import, the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property is automatically set to `false` whenever the WCF-specific annotation mentioned previously is detected. It is also set to `false` for reference types that have the `nillable` property set to `false` to support specific interoperability scenarios that commonly occur when consuming [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services.  
+ On schema import, the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property is automatically set to `false` whenever the WCF-specific annotation mentioned previously is detected. It is also set to `false` for reference types that have the `nillable` property set to `false` to support specific interoperability scenarios that commonly occur when consuming ASP.NET Web services.  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>

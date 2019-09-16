@@ -10,7 +10,7 @@ A delimiter that contains an endline character has been supplied, but the `TextF
   
 ## To correct this error  
   
--   Supply a correct delimiter.  
+- Supply a correct delimiter.  
   
 ## See also
 

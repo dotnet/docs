@@ -24,11 +24,11 @@ The <xref:System.Collections> classes perform comparisons in almost all the proc
 ## Checking for equality  
  Methods such as `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and `Remove` use an equality comparer for the collection elements. If the collection is generic, than items are compared for equality according to the following guidelines:  
   
--   If type T implements the <xref:System.IEquatable%601> generic interface, then the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface.  
+- If type T implements the <xref:System.IEquatable%601> generic interface, then the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface.  
   
--   If type T does not implement <xref:System.IEquatable%601>, <xref:System.Object.Equals%2A?displayProperty=nameWithType> is used.  
+- If type T does not implement <xref:System.IEquatable%601>, <xref:System.Object.Equals%2A?displayProperty=nameWithType> is used.  
   
- In addition, Some constructor overloads for dictionary collections accept an <xref:System.Collections.Generic.IEqualityComparer%601> implementation, which is used to compare keys for equality. For an example, see the <xref:System.Collections.Generic.Dictionary%602.%23ctor%2A?displayProperty=nameWithType> constructor.  
+ In addition, some constructor overloads for dictionary collections accept an <xref:System.Collections.Generic.IEqualityComparer%601> implementation, which is used to compare keys for equality. For an example, see the <xref:System.Collections.Generic.Dictionary%602.%23ctor%2A?displayProperty=nameWithType> constructor.  
   
 <a name="BKMK_Determiningsortorder"></a>   
 ## Determining sort order  
@@ -36,11 +36,11 @@ The <xref:System.Collections> classes perform comparisons in almost all the proc
   
  The default comparer relies on at least one of the objects being compared to implement the **IComparable** interface. It is a good practice to implement **IComparable** on all classes are used as values in a list collection or as keys in a dictionary collection. For a generic collection, equality comparison is determined according to the following:  
   
--   If type T implements the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, then the default comparer is the <xref:System.IComparable%601.CompareTo%28%600%29?displayProperty=nameWithType> method of that interface  
+- If type T implements the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, then the default comparer is the <xref:System.IComparable%601.CompareTo%28%600%29?displayProperty=nameWithType> method of that interface  
   
--   If type T implements the non-generic <xref:System.IComparable?displayProperty=nameWithType> interface, then the default comparer is the <xref:System.IComparable.CompareTo%28System.Object%29?displayProperty=nameWithType> method of that interface.  
+- If type T implements the non-generic <xref:System.IComparable?displayProperty=nameWithType> interface, then the default comparer is the <xref:System.IComparable.CompareTo%28System.Object%29?displayProperty=nameWithType> method of that interface.  
   
--   If type T doesn’t implement either interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.  
+- If type T doesn’t implement either interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.  
   
  To provide explicit comparisons, some methods accept an **IComparer** implementation as a parameter. For example, the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> method accepts an <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation.  
   

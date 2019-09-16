@@ -22,7 +22,7 @@ Serves as the enumerator for a collection of `IDefinitionIdentity` objects.
   
 ## Syntax  
   
-```  
+```cpp  
 IEnumDefinitionIdentity : IUnknown {  
   
     HRESULT Clone (  
@@ -55,12 +55,13 @@ IEnumDefinitionIdentity : IUnknown {
 |`IEnumDefinitionIdentity::Skip`|Moves the instruction pointer forward by the specified number of elements, starting at the current position.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
-- [IDefinitionIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md)
+
+- [Fusion Interfaces](fusion-interfaces.md)
+- [IDefinitionIdentity Interface](idefinitionidentity-interface.md)

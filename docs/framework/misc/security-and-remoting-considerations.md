@@ -15,7 +15,7 @@ Remoting allows you to set up transparent calling between application domains, p
   
  Any class that is remotable (derived from a <xref:System.MarshalByRefObject> class) needs to take responsibility for security. Either the code should be used only in closed environments where the calling code can be implicitly trusted, or remoting calls should be designed so that they do not subject protected code to outside entry that could be used maliciously.  
   
- Generally, you should never expose methods, properties, or events that are protected by declarative [LinkDemand](../../../docs/framework/misc/link-demands.md) and <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> security checks. With remoting, these checks are not enforced. Other security checks, such as <xref:System.Security.Permissions.SecurityAction.Demand>, [Assert](../../../docs/framework/misc/using-the-assert-method.md), and so on, work between application domains within a process but do not work in cross-process or cross-machine scenarios.  
+ Generally, you should never expose methods, properties, or events that are protected by declarative [LinkDemand](link-demands.md) and <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> security checks. With remoting, these checks are not enforced. Other security checks, such as <xref:System.Security.Permissions.SecurityAction.Demand>, [Assert](using-the-assert-method.md), and so on, work between application domains within a process but do not work in cross-process or cross-machine scenarios.  
   
 ## Protected objects  
  Some objects hold security state in themselves. These objects should not be passed to untrusted code, which would then acquire security authorization beyond its own permissions.  
@@ -32,4 +32,5 @@ Remoting allows you to set up transparent calling between application domains, p
  Usually, the default application domain creates the child application domains with a control object in each one. The control object manages the new application domain and occasionally takes orders from the default application domain, but it cannot actually contact the domain directly. Occasionally, the default application domain calls its proxy to the control object. However, there might be cases in which it is necessary for the control object to call back to the default application domain. In these cases, the default application domain passes a marshal-by-reference callback object to the constructor of the control object. It is the responsibility of the control object to protect this proxy. If the control object were to place the proxy on a public static field of a public class, or otherwise publicly expose the proxy, this would open up a dangerous mechanism for other code to call back into the default application domain. For this reason, control objects are always implicitly trusted to keep the proxy private.  
   
 ## See also
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

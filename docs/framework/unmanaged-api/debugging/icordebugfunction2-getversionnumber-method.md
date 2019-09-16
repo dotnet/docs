@@ -23,13 +23,13 @@ Gets the Edit and Continue version of this function.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionNumber (  
     [out] ULONG32   *pnVersion  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnVersion`  
  [out] A pointer to an integer that is the version number of the function that is represented by this ICorDebugFunction2 object.  
   

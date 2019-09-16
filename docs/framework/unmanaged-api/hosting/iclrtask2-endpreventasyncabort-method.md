@@ -23,7 +23,7 @@ Allows new or pending thread abort requests to result in thread aborts on the cu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndPreventAsyncAbort();  
 ```  
   
@@ -52,6 +52,7 @@ HRESULT EndPreventAsyncAbort();
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [BeginPreventAsyncAbort Method](../../../../docs/framework/unmanaged-api/hosting/iclrtask2-beginpreventasyncabort-method.md)
 - [ICLRTask2 Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask2-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)

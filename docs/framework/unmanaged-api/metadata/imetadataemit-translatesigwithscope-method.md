@@ -23,7 +23,7 @@ Imports an assembly into the current scope and gets a new metadata signature for
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT TranslateSigWithScope (   
     [in]  IMetaDataAssemblyImport   *pAssemImport,   
     [in]  const void                *pbHashValue,   
@@ -39,7 +39,7 @@ HRESULT TranslateSigWithScope (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAssemImport`  
  [in] The interface for import assembly (where the signature is defined).  
   
@@ -83,6 +83,7 @@ HRESULT TranslateSigWithScope (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

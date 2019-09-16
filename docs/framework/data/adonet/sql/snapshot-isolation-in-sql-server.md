@@ -35,35 +35,35 @@ SET READ_COMMITTED_SNAPSHOT ON
   
  Four isolation levels defined in the SQL-92 standard were supported in early versions of SQL Server:  
   
--   READ UNCOMMITTED is the least restrictive isolation level because it ignores locks placed by other transactions. Transactions executing under READ UNCOMMITTED can read modified data values that have not yet been committed by other transactions; these are called "dirty" reads.  
+- READ UNCOMMITTED is the least restrictive isolation level because it ignores locks placed by other transactions. Transactions executing under READ UNCOMMITTED can read modified data values that have not yet been committed by other transactions; these are called "dirty" reads.  
   
--   READ COMMITTED is the default isolation level for SQL Server. It prevents dirty reads by specifying that statements cannot read data values that have been modified but not yet committed by other transactions. Other transactions can still modify, insert, or delete data between executions of individual statements within the current transaction, resulting in non-repeatable reads, or "phantom" data.  
+- READ COMMITTED is the default isolation level for SQL Server. It prevents dirty reads by specifying that statements cannot read data values that have been modified but not yet committed by other transactions. Other transactions can still modify, insert, or delete data between executions of individual statements within the current transaction, resulting in non-repeatable reads, or "phantom" data.  
   
--   REPEATABLE READ is a more restrictive isolation level than READ COMMITTED. It encompasses READ COMMITTED and additionally specifies that no other transactions can modify or delete data that has been read by the current transaction until the current transaction commits. Concurrency is lower than for READ COMMITTED because shared locks on read data are held for the duration of the transaction instead of being released at the end of each statement.  
+- REPEATABLE READ is a more restrictive isolation level than READ COMMITTED. It encompasses READ COMMITTED and additionally specifies that no other transactions can modify or delete data that has been read by the current transaction until the current transaction commits. Concurrency is lower than for READ COMMITTED because shared locks on read data are held for the duration of the transaction instead of being released at the end of each statement.  
   
--   SERIALIZABLE is the most restrictive isolation level, because it locks entire ranges of keys and holds the locks until the transaction is complete. It encompasses REPEATABLE READ and adds the restriction that other transactions cannot insert new rows into ranges that have been read by the transaction until the transaction is complete.  
+- SERIALIZABLE is the most restrictive isolation level, because it locks entire ranges of keys and holds the locks until the transaction is complete. It encompasses REPEATABLE READ and adds the restriction that other transactions cannot insert new rows into ranges that have been read by the transaction until the transaction is complete.  
   
  For more information, refer to the [Transaction Locking and Row Versioning Guide](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide).  
   
 ### Snapshot Isolation Level Extensions  
  SQL Server introduced extensions to the SQL-92 isolation levels with the introduction of the SNAPSHOT isolation level and an additional implementation of READ COMMITTED. The READ_COMMITTED_SNAPSHOT isolation level can transparently replace READ COMMITTED for all transactions.  
   
--   SNAPSHOT isolation specifies that data read within a transaction will never reflect changes made by other simultaneous transactions. The transaction uses the data row versions that exist when the transaction begins. No locks are placed on the data when it is read, so SNAPSHOT transactions do not block other transactions from writing data. Transactions that write data do not block snapshot transactions from reading data. You need to enable snapshot isolation by setting the ALLOW_SNAPSHOT_ISOLATION database option in order to use it.  
+- SNAPSHOT isolation specifies that data read within a transaction will never reflect changes made by other simultaneous transactions. The transaction uses the data row versions that exist when the transaction begins. No locks are placed on the data when it is read, so SNAPSHOT transactions do not block other transactions from writing data. Transactions that write data do not block snapshot transactions from reading data. You need to enable snapshot isolation by setting the ALLOW_SNAPSHOT_ISOLATION database option in order to use it.  
   
--   The READ_COMMITTED_SNAPSHOT database option determines the behavior of the default READ COMMITTED isolation level when snapshot isolation is enabled in a database. If you do not explicitly specify READ_COMMITTED_SNAPSHOT ON, READ COMMITTED is applied to all implicit transactions. This produces the same behavior as setting READ_COMMITTED_SNAPSHOT OFF (the default). When READ_COMMITTED_SNAPSHOT OFF is in effect, the Database Engine uses shared locks to enforce the default isolation level. If you set the READ_COMMITTED_SNAPSHOT database option to ON, the database engine uses row versioning and snapshot isolation as the default, instead of using locks to protect the data.  
+- The READ_COMMITTED_SNAPSHOT database option determines the behavior of the default READ COMMITTED isolation level when snapshot isolation is enabled in a database. If you do not explicitly specify READ_COMMITTED_SNAPSHOT ON, READ COMMITTED is applied to all implicit transactions. This produces the same behavior as setting READ_COMMITTED_SNAPSHOT OFF (the default). When READ_COMMITTED_SNAPSHOT OFF is in effect, the Database Engine uses shared locks to enforce the default isolation level. If you set the READ_COMMITTED_SNAPSHOT database option to ON, the database engine uses row versioning and snapshot isolation as the default, instead of using locks to protect the data.  
   
 ## How Snapshot Isolation and Row Versioning Work  
  When the SNAPSHOT isolation level is enabled, each time a row is updated, the SQL Server Database Engine stores a copy of the original row in **tempdb**, and adds a transaction sequence number to the row. The following is the sequence of events that occurs:  
   
--   A new transaction is initiated, and it is assigned a transaction sequence number.  
+- A new transaction is initiated, and it is assigned a transaction sequence number.  
   
--   The Database Engine reads a row within the transaction and retrieves the row version from **tempdb** whose sequence number is closest to, and lower than, the transaction sequence number.  
+- The Database Engine reads a row within the transaction and retrieves the row version from **tempdb** whose sequence number is closest to, and lower than, the transaction sequence number.  
   
--   The Database Engine checks to see if the transaction sequence number is not in the list of transaction sequence numbers of the uncommitted transactions active when the snapshot transaction started.  
+- The Database Engine checks to see if the transaction sequence number is not in the list of transaction sequence numbers of the uncommitted transactions active when the snapshot transaction started.  
   
--   The transaction reads the version of the row from **tempdb** that was current as of the start of the transaction. It will not see new rows inserted after the transaction was started because those sequence number values will be higher than the value of the transaction sequence number.  
+- The transaction reads the version of the row from **tempdb** that was current as of the start of the transaction. It will not see new rows inserted after the transaction was started because those sequence number values will be higher than the value of the transaction sequence number.  
   
--   The current transaction will see rows that were deleted after the transaction began, because there will be a row version in **tempdb** with a lower sequence number value.  
+- The current transaction will see rows that were deleted after the transaction began, because there will be a row version in **tempdb** with a lower sequence number value.  
   
  The net effect of snapshot isolation is that the transaction sees all of the data as it existed at the start of the transaction, without honoring or placing any locks on the underlying tables. This can result in performance improvements in situations where there is contention.  
   
@@ -87,18 +87,18 @@ SqlTransaction sqlTran =
   
  The code connects to the **AdventureWorks** sample database in SQL Server and creates a table named **TestSnapshot** and inserts one row of data. The code uses the ALTER DATABASE Transact-SQL statement to turn on snapshot isolation for the database, but it does not set the READ_COMMITTED_SNAPSHOT option, leaving the default READ COMMITTED isolation-level behavior in effect. The code then performs the following actions:  
   
--   It begins, but does not complete, sqlTransaction1, which uses the SERIALIZABLE isolation level to start an update transaction. This has the effect of locking the table.  
+- It begins, but does not complete, sqlTransaction1, which uses the SERIALIZABLE isolation level to start an update transaction. This has the effect of locking the table.  
   
--   It opens a second connection and initiates a second transaction using the SNAPSHOT isolation level to read the data in the **TestSnapshot** table. Because snapshot isolation is enabled, this transaction can read the data that existed before sqlTransaction1 started.  
+- It opens a second connection and initiates a second transaction using the SNAPSHOT isolation level to read the data in the **TestSnapshot** table. Because snapshot isolation is enabled, this transaction can read the data that existed before sqlTransaction1 started.  
   
--   It opens a third connection and initiates a transaction using the READ COMMITTED isolation level to attempt to read the data in the table. In this case, the code cannot read the data because it cannot read past the locks placed on the table in the first transaction and times out. The same result would occur if the REPEATABLE READ and SERIALIZABLE isolation levels were used because these isolation levels also cannot read past the locks placed in the first transaction.  
+- It opens a third connection and initiates a transaction using the READ COMMITTED isolation level to attempt to read the data in the table. In this case, the code cannot read the data because it cannot read past the locks placed on the table in the first transaction and times out. The same result would occur if the REPEATABLE READ and SERIALIZABLE isolation levels were used because these isolation levels also cannot read past the locks placed in the first transaction.  
   
--   It opens a fourth connection and initiates a transaction using the READ UNCOMMITTED isolation level, which performs a dirty read of the uncommitted value in sqlTransaction1. This value may never actually exist in the database if the first transaction is not committed.  
+- It opens a fourth connection and initiates a transaction using the READ UNCOMMITTED isolation level, which performs a dirty read of the uncommitted value in sqlTransaction1. This value may never actually exist in the database if the first transaction is not committed.  
   
--   It rolls back the first transaction and cleans up by deleting the **TestSnapshot** table and turning off snapshot isolation for the **AdventureWorks** database.  
+- It rolls back the first transaction and cleans up by deleting the **TestSnapshot** table and turning off snapshot isolation for the **AdventureWorks** database.  
   
 > [!NOTE]
->  The following examples use the same connection string with connection pooling turned off. If a connection is pooled, resetting its isolation level does not reset the isolation level at the server. As a result, subsequent connections that use the same pooled inner connection start with their isolation levels set to that of the pooled connection. An alternative to turning off connection pooling is to set the isolation level explicitly for each connection.  
+> The following examples use the same connection string with connection pooling turned off. If a connection is pooled, resetting its isolation level does not reset the isolation level at the server. As a result, subsequent connections that use the same pooled inner connection start with their isolation levels set to that of the pooled connection. An alternative to turning off connection pooling is to set the isolation level explicitly for each connection.  
   
  [!code-csharp[DataWorks SnapshotIsolation.Demo#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.Demo/CS/source.cs#1)]
  [!code-vb[DataWorks SnapshotIsolation.Demo#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.Demo/VB/source.vb#1)]  
@@ -106,19 +106,19 @@ SqlTransaction sqlTran =
 ### Example  
  The following example demonstrates the behavior of snapshot isolation when data is being modified. The code performs the following actions:  
   
--   Connects to the **AdventureWorks** sample database and enables SNAPSHOT isolation.  
+- Connects to the **AdventureWorks** sample database and enables SNAPSHOT isolation.  
   
--   Creates a table named **TestSnapshotUpdate** and inserts three rows of sample data.  
+- Creates a table named **TestSnapshotUpdate** and inserts three rows of sample data.  
   
--   Begins, but does not complete, sqlTransaction1 using SNAPSHOT isolation. Three rows of data are selected in the transaction.  
+- Begins, but does not complete, sqlTransaction1 using SNAPSHOT isolation. Three rows of data are selected in the transaction.  
   
--   Creates a second **SqlConnection** to **AdventureWorks** and creates a second transaction using the READ COMMITTED isolation level that updates a value in one of the rows selected in sqlTransaction1.  
+- Creates a second **SqlConnection** to **AdventureWorks** and creates a second transaction using the READ COMMITTED isolation level that updates a value in one of the rows selected in sqlTransaction1.  
   
--   Commits sqlTransaction2.  
+- Commits sqlTransaction2.  
   
--   Returns to sqlTransaction1 and attempts to update the same row that sqlTransaction1 already committed. Error 3960 is raised, and sqlTransaction1 is rolled back automatically. The **SqlException.Number** and **SqlException.Message** are displayed in the Console window.  
+- Returns to sqlTransaction1 and attempts to update the same row that sqlTransaction1 already committed. Error 3960 is raised, and sqlTransaction1 is rolled back automatically. The **SqlException.Number** and **SqlException.Message** are displayed in the Console window.  
   
--   Executes clean-up code to turn off snapshot isolation in **AdventureWorks** and delete the **TestSnapshotUpdate** table.  
+- Executes clean-up code to turn off snapshot isolation in **AdventureWorks** and delete the **TestSnapshotUpdate** table.  
   
  [!code-csharp[DataWorks SnapshotIsolation.DemoUpdate#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.DemoUpdate/CS/source.cs#1)]
  [!code-vb[DataWorks SnapshotIsolation.DemoUpdate#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.DemoUpdate/VB/source.vb#1)]  
@@ -136,6 +136,7 @@ SELECT * FROM TestSnapshotUpdate WITH (UPDLOCK)
  If your application has many conflicts, snapshot isolation may not be the best choice. Hints should only be used when really needed. Your application should not be designed so that it constantly relies on lock hints for its operation.  
   
 ## See also
-- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [SQL Server and ADO.NET](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)
 - [Transaction Locking and Row Versioning Guide](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide)

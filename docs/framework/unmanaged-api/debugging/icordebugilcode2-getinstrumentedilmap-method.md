@@ -30,7 +30,7 @@ HRESULT GetInstrumentedILMap(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  cMap  
  [in] The storage capacity of the `map` array. See the Remarks section for more information.  
   
@@ -57,6 +57,7 @@ HRESULT GetInstrumentedILMap(
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo::SetILInstrumentedCodeMap](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md)
 - [ICorDebugILCode2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

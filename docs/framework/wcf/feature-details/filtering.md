@@ -30,13 +30,13 @@ The Windows Communication Foundation (WCF) filtering system can use declarative 
 ### Endpoint Address Filters  
  The <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter> filters messages and message buffers based on an endpoint address, as represented in their header collection. For a message to pass such a filter, the following conditions must be met:  
   
--   The filter’s address Uniform Resource Identifier (URI) must be the same as the one in the message To header.  
+- The filter’s address Uniform Resource Identifier (URI) must be the same as the one in the message To header.  
   
--   Each endpoint parameter in the address of the filter (`address.Headers` collection) must find a header in the message to map on. Extra headers in the message or message buffer are acceptable for the match to remain `true`.  
+- Each endpoint parameter in the address of the filter (`address.Headers` collection) must find a header in the message to map on. Extra headers in the message or message buffer are acceptable for the match to remain `true`.  
   
 ### Prefix Endpoint Address Filters  
   
-1.  The <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> functions just like the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter> filter, except that the match can be on a prefix of the message URI. For example, a filter specifying the address `http://www.adatum.com` matches messages addressed to `http://www.adatum.com/userA`.  
+1. The <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> functions just like the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter> filter, except that the match can be on a prefix of the message URI. For example, a filter specifying the address `http://www.adatum.com` matches messages addressed to `http://www.adatum.com/userA`.  
   
 ### XPath Message Filters  
  An <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> uses an XPath expression to determine whether an XML document contains specific elements, attributes, text, or other XML syntactic constructs. The filter is optimized to be extremely efficient for a strict subset of XPath. The XML Path Language is described in the [W3C XML Path Language 1.0 specification](https://go.microsoft.com/fwlink/?LinkId=94779).  
@@ -73,9 +73,10 @@ The Windows Communication Foundation (WCF) filtering system can use declarative 
 ### De-multiplexing  
  When multiple endpoints fan out from the same `ServiceListener` off the wire, the only way to de-multiplex messages and know whether they belong to a certain endpoint address, is to use <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter>s, which select messages toward the registered endpoints by performing a lookup on the information stored in the headers. In these filters, only those messages that pass have all necessary headers that correspond to both:  
   
--   The URI in the `EndpointAddress`.  
+- The URI in the `EndpointAddress`.  
   
--   The rest of the endpoint parameters in the `EndpointAddress` as specified in the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter>.  
+- The rest of the endpoint parameters in the `EndpointAddress` as specified in the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter>.  
   
 ## See also
+
 - [Data Transfer and Serialization](../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)

@@ -22,7 +22,7 @@ In the following example, the `where` clause filters out all numbers except thos
 
 ## Example
 
-Within a single `where` clause, you can specify as many predicates as necessary by using the [&&](../operators/conditional-and-operator.md) and [&#124;&#124;](../operators/conditional-or-operator.md) operators. In the following example, the query specifies two predicates in order to select only the even numbers that are less than five.
+Within a single `where` clause, you can specify as many predicates as necessary by using the [&&](../operators/boolean-logical-operators.md#conditional-logical-and-operator-) and [&#124;&#124;](../operators/boolean-logical-operators.md#conditional-logical-or-operator-) operators. In the following example, the query specifies two predicates in order to select only the even numbers that are less than five.
 
 [!code-csharp[cscsrefQueryKeywords#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Where.cs#6)]  
 
@@ -46,5 +46,5 @@ At compile time the `where` keyword is converted into a call to the <xref:System
 - [from clause](from-clause.md)
 - [select clause](select-clause.md)
 - [Filtering Data](../../programming-guide/concepts/linq/filtering-data.md)
-- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+- [LINQ Query Expressions](../../programming-guide/linq-query-expressions/index.md)
 - [Getting Started with LINQ in C#](../../programming-guide/concepts/linq/getting-started-with-linq.md)

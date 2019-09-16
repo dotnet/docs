@@ -15,11 +15,11 @@ A programming element that is not a recognizable declared element name occurs wh
   
 ## To correct this error  
   
--   Verify that any attributes in the statement are all placed at the beginning.  
+- Verify that any attributes in the statement are all placed at the beginning.  
   
--   Verify that all element names in the statement are spelled correctly.  
+- Verify that all element names in the statement are spelled correctly.  
   
 ## See also
+
 - [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
 - [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
-

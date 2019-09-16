@@ -30,7 +30,7 @@ The `nonComVisibleBaseClass` managed debugging assistant (MDA) is activated when
 ## Output  
  The following is an example message for a `QueryInterface` call on a COM-visible class `Derived` that derives from a non-COM-visible class `Base`.  
   
-```  
+```output
 A QueryInterface call was made requesting the class interface of COM   
 visible managed class 'Derived'. However since this class derives from   
 non COM visible class 'Base', the QueryInterface call will fail. This   
@@ -49,6 +49,7 @@ constrained by the COM versioning rules.
 ```  
   
 ## See also
+
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)

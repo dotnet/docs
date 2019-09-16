@@ -20,22 +20,22 @@ You might sometimes want to create a procedure that runs at specific time interv
  This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
   
 > [!NOTE]
->  There are some limitations when using the <xref:System.Windows.Forms.Timer> component. For more information, see [Limitations of the Windows Forms Timer Component's Interval Property](../../../../docs/framework/winforms/controls/limitations-of-the-timer-component-interval-property.md).  
+> There are some limitations when using the <xref:System.Windows.Forms.Timer> component. For more information, see [Limitations of the Windows Forms Timer Component's Interval Property](limitations-of-the-timer-component-interval-property.md).  
   
 ## To run a procedure at set intervals with the Timer component  
   
-1.  Add a <xref:System.Windows.Forms.Timer> to your form. See the following Example section for an illustration of how to do this programmatically. Visual Studio also has support for adding components to a form. Also see [How to: Add Controls Without a User Interface to Windows Forms](how-to-add-controls-without-a-user-interface-to-windows-forms.md).  
+1. Add a <xref:System.Windows.Forms.Timer> to your form. See the following Example section for an illustration of how to do this programmatically. Visual Studio also has support for adding components to a form. Also see [How to: Add Controls Without a User Interface to Windows Forms](how-to-add-controls-without-a-user-interface-to-windows-forms.md).  
   
-2.  Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
+2. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
   
     > [!NOTE]
-    >  The more often a timer event occurs, the more processor time is used in responding to the event. This can slow down overall performance. Do not set a smaller interval than you need.  
+    > The more often a timer event occurs, the more processor time is used in responding to the event. This can slow down overall performance. Do not set a smaller interval than you need.  
   
-3.  Write appropriate code in the <xref:System.Windows.Forms.Timer.Tick> event handler. The code you write in this event will run at the interval specified in the <xref:System.Windows.Forms.Timer.Interval%2A> property.  
+3. Write appropriate code in the <xref:System.Windows.Forms.Timer.Tick> event handler. The code you write in this event will run at the interval specified in the <xref:System.Windows.Forms.Timer.Interval%2A> property.  
   
-4.  Set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `true` to start the timer. The <xref:System.Windows.Forms.Timer.Tick> event will begin to occur, running your procedure at the set interval.  
+4. Set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `true` to start the timer. The <xref:System.Windows.Forms.Timer.Tick> event will begin to occur, running your procedure at the set interval.  
   
-5.  At the appropriate time, set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `false` to stop the procedure from running again. Setting the interval to `0` does not cause the timer to stop.  
+5. At the appropriate time, set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `false` to stop the procedure from running again. Setting the interval to `0` does not cause the timer to stop.  
   
 ## Example  
  This first code example tracks the time of day in one-second increments. It uses a <xref:System.Windows.Forms.Button>, a <xref:System.Windows.Forms.Label>, and a <xref:System.Windows.Forms.Timer> component on a form. The <xref:System.Windows.Forms.Timer.Interval%2A> property is set to 1000 (equal to one second). In the <xref:System.Windows.Forms.Timer.Tick> event, the label's caption is set to the current time. When the button is clicked, the <xref:System.Windows.Forms.Timer.Enabled%2A> property is set to `false`, stopping the timer from updating the label's caption. The following code example requires that you have a form with a <xref:System.Windows.Forms.Button> control named `Button1`, a <xref:System.Windows.Forms.Timer> control named `Timer1`, and a <xref:System.Windows.Forms.Label> control named `Label1`.  
@@ -237,6 +237,7 @@ private:
 ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.Timer>
-- [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)
-- [Timer Component Overview](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)
+- [Timer Component](timer-component-windows-forms.md)
+- [Timer Component Overview](timer-component-overview-windows-forms.md)

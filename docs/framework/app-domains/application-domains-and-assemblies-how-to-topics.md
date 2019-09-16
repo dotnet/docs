@@ -13,39 +13,40 @@ The following sections contain links to all How-to topics found in the conceptua
   
  **Application Domains**  
   
--   [How to: Create an Application Domain](../../../docs/framework/app-domains/how-to-create-an-application-domain.md)  
+- [How to: Create an Application Domain](../../../docs/framework/app-domains/how-to-create-an-application-domain.md)  
   
--   [How to: Unload an Application Domain](../../../docs/framework/app-domains/how-to-unload-an-application-domain.md)  
+- [How to: Unload an Application Domain](../../../docs/framework/app-domains/how-to-unload-an-application-domain.md)  
   
--   [How to: Configure an Application Domain](../../../docs/framework/app-domains/how-to-configure-an-application-domain.md)  
+- [How to: Configure an Application Domain](../../../docs/framework/app-domains/how-to-configure-an-application-domain.md)  
   
--   [How to: Load Assemblies into an Application Domain](../../../docs/framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)  
+- [How to: Load Assemblies into an Application Domain](../../../docs/framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)  
   
--   [How to: Obtain Type and Member Information from an Assembly](../../../docs/framework/app-domains/how-to-obtain-type-and-member-information-from-an-assembly.md)  
+- [How to: Obtain Type and Member Information from an Assembly](../reflection-and-codedom/get-type-member-information.md)  
   
  **Assemblies**  
   
--   [How to: Determine an Assembly's Fully Qualified Name](../../../docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md)  
+- [How to: Determine an Assembly's Fully Qualified Name](../../standard/assembly/find-fully-qualified-name.md)  
   
--   [How to: Build a Single-File Assembly](../../../docs/framework/app-domains/how-to-build-a-single-file-assembly.md)  
+- [How to: Build a Single-File Assembly](build-single-file-assembly.md)  
   
--   [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)  
+- [How to: Build a Multifile Assembly](build-multifile-assembly.md)  
   
--   [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)  
+- [How to: Create a Public-Private Key Pair](../../standard/assembly/create-public-private-key-pair.md)  
   
--   [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)  
+- [How to: Sign an Assembly with a Strong Name](../../standard/assembly/sign-strong-name.md)  
   
--   [How to: Reference a Strong-Named Assembly](../../../docs/framework/app-domains/how-to-reference-a-strong-named-assembly.md)  
+- [How to: Reference a Strong-Named Assembly](../../standard/assembly/reference-strong-named.md)  
   
--   [How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md)  
+- [How to: Disable the Strong-Name Bypass Feature](../../standard/assembly/disable-strong-name-bypass-feature.md)  
   
--   [How to: Install an Assembly into the Global Assembly Cache](../../../docs/framework/app-domains/how-to-install-an-assembly-into-the-gac.md)  
+- [How to: Install an Assembly into the Global Assembly Cache](install-assembly-into-gac.md)  
   
--   [How to: View the Contents of the Global Assembly Cache](../../../docs/framework/app-domains/how-to-view-the-contents-of-the-gac.md)  
+- [How to: View the Contents of the Global Assembly Cache](../../../docs/framework/app-domains/how-to-view-the-contents-of-the-gac.md)  
   
--   [How to: Remove an Assembly from the Global Assembly Cache](../../../docs/framework/app-domains/how-to-remove-an-assembly-from-the-gac.md)  
+- [How to: Remove an Assembly from the Global Assembly Cache](../../../docs/framework/app-domains/how-to-remove-an-assembly-from-the-gac.md)  
   
--   [How to: View Assembly Contents](../../../docs/framework/app-domains/how-to-view-assembly-contents.md)  
+- [How to: View Assembly Contents](../../standard/assembly/view-contents.md)  
   
 ## See also
+
 - [Application Domains and Assemblies](../../../docs/framework/app-domains/index.md)

@@ -14,13 +14,13 @@ ms.author: "ronpet"
 # How to: Cancel a Task and Its Children
 These examples show how to perform the following tasks:  
   
-1.  Create and start a cancelable task.  
+1. Create and start a cancelable task.  
   
-2.  Pass a cancellation token to your user delegate and optionally to the task instance.  
+2. Pass a cancellation token to your user delegate and optionally to the task instance.  
   
-3.  Notice and respond to the cancellation request in your user delegate.  
+3. Notice and respond to the cancellation request in your user delegate.  
   
-4.  Optionally notice on the calling thread that the task was canceled.  
+4. Optionally notice on the calling thread that the task was canceled.  
   
  The calling thread does not forcibly end the task; it only signals that cancellation is requested. If the task is already running, it is up to the user delegate to notice the request and respond appropriately. If cancellation is requested before the task runs, then the user delegate is never executed and the task object transitions into the Canceled state.  
   

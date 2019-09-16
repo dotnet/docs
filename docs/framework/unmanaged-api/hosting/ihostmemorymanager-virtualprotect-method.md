@@ -23,7 +23,7 @@ Serves as a logical wrapper for the corresponding Win32 function. The Win32 impl
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT VirtualProtect (  
     [in]  void*   lpAddress,  
     [in]  SIZE_T  dwSize,  
@@ -32,7 +32,7 @@ HRESULT VirtualProtect (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpAddress`  
  [in] A pointer to the base address of the virtual memory whose protection attributes are to be changed.  
   
@@ -69,4 +69,5 @@ HRESULT VirtualProtect (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

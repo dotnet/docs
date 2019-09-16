@@ -23,7 +23,7 @@ Gets an assembly's original .NET Framework compilation version (stored in the me
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionFromFile (  
     [in] LPCWSTR pwzFilePath,  
     [out, size_is(*pcchBuffer)] LPWSTR pwzBuffer,  
@@ -31,7 +31,7 @@ HRESULT GetVersionFromFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFilePath`  
  [in] The complete assembly file path.  
   
@@ -39,7 +39,7 @@ HRESULT GetVersionFromFile (
  [out] The .NET Framework compilation version stored in the metadata, in the format "v*A*.*B*[.*X*]". *A*, *B*, and *X* are decimal numbers that correspond to the major version, the minor version, and the build number. The length of this string is limited to MAX_PATH.  
   
 > [!NOTE]
->  This output matches the directory name for the .NET Framework version, as it appears under C:\Windows\Microsoft.NET\Framework.  
+> This output matches the directory name for the .NET Framework version, as it appears under C:\Windows\Microsoft.NET\Framework.  
   
  Example values are "v1.0.3705", "v1.1.4322", "v2.0.50727", and "v4.0.*X*", where *X* depends on the build number installed. Note that the "v" prefix is required.  
   
@@ -65,5 +65,6 @@ HRESULT GetVersionFromFile (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

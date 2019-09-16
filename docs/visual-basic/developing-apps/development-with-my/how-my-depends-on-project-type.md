@@ -11,11 +11,11 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
 ## My in Windows Applications and Web Sites  
  `My` exposes only objects that are useful in the current project type; it suppresses objects that are not applicable. For example, the following image shows the `My` object model in a Windows Forms project.  
   
- ![Shape of My in a Windows Forms application](../../../visual-basic/developing-apps/development-with-my/media/myinwinform.png "MyInWinForm")  
+ ![Diagram that shows the My object model in a Windows Forms application.](./media/how-my-depends-on-project-type/my-object-model-windows-forms.png)  
   
  In a Web site project, `My` exposes objects that are relevant to a Web developer (such as the `My.Request` and `My.Response` objects) while suppressing objects that are not relevant (such as the `My.Forms` object). The following image shows the `My` object model in a Web site project:  
   
- ![Shape of My in a Web application](../../../visual-basic/developing-apps/development-with-my/media/myinweb.png "MyInWeb")  
+ ![Diagram that shows the My object model in a Web application.](./media/how-my-depends-on-project-type/my-object-model-web.png)  
   
 ## Project Details  
  The following table shows which `My` objects are enabled by default for eight project types: Windows application, class Library, console application, Windows control library, Web control library, Windows service, empty, and Web site.  
@@ -50,6 +50,7 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
  <sup>7</sup> Web version of `My.User`. This object is associated with the user identity of the application's current HTTP request.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
 - <xref:Microsoft.VisualBasic.Devices.Computer>
 - <xref:Microsoft.VisualBasic.Logging.Log>

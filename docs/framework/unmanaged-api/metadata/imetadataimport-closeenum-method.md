@@ -23,13 +23,13 @@ Closes the enumerator that is identified by the specified handle.
   
 ## Syntax  
   
-```  
+```cpp  
 void CloseEnum (  
    [in] HCORENUM hEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The handle for the enumerator to close.  
   
@@ -46,5 +46,6 @@ void CloseEnum (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

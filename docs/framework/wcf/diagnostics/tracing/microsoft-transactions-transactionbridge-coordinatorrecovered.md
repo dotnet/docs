@@ -10,6 +10,7 @@ A coordinator enlistment was recovered from the Transaction Manager log.
  Traced when the local Transaction Manager has successfully performed recovery for a given superior coordinator enlistment.  
   
 ## See also
+
 - [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
 - [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
 - [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

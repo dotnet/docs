@@ -17,7 +17,7 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
 ---
 # How to: Format the Windows Forms DataGrid Control
 > [!NOTE]
->  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
+> The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
  Applying different colors to various parts of a <xref:System.Windows.Forms.DataGrid> control can help to make the information in it easier to read and interpret. Color can be applied to rows and columns. Rows and columns can also be hidden or shown at your discretion.  
   
@@ -27,7 +27,7 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
   
 ### To establish a default style for the DataGrid control  
   
-1.  Set the following properties as appropriate:  
+1. Set the following properties as appropriate:  
   
     |Property|Description|  
     |--------------|-----------------|  
@@ -56,25 +56,25 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
     |<xref:System.Windows.Forms.DataGrid.SelectionForeColor%2A>|When a row or cell is selected, this is the foreground color.|  
   
     > [!NOTE]
-    >  Keep in mind, when customizing the colors of controls, that it is possible to make the control inaccessible, due to poor color choice (for example, red and green). Use the colors available on the **System Colors** palette to avoid this issue.  
+    > Keep in mind, when customizing the colors of controls, that it is possible to make the control inaccessible, due to poor color choice (for example, red and green). Use the colors available on the **System Colors** palette to avoid this issue.  
   
-     The following procedures assume your form has a <xref:System.Windows.Forms.DataGrid> control bound to a data table. For more information, see [Binding the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md).  
+     The following procedures assume your form has a <xref:System.Windows.Forms.DataGrid> control bound to a data table. For more information, see [Binding the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md).  
   
 ### To set the table and column style of a data table programmatically  
   
-1.  Create a new table style and set its properties.  
+1. Create a new table style and set its properties.  
   
-2.  Create a column style and set its properties.  
+2. Create a column style and set its properties.  
   
-3.  Add the column style to the table style's column styles collection.  
+3. Add the column style to the table style's column styles collection.  
   
-4.  Add the table style to the data grid's table styles collection.  
+4. Add the table style to the data grid's table styles collection.  
   
-5.  In the example below, create an instance of a new <xref:System.Windows.Forms.DataGridTableStyle> and set its <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property.  
+5. In the example below, create an instance of a new <xref:System.Windows.Forms.DataGridTableStyle> and set its <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property.  
   
-6.  Create a new instance of a **GridColumnStyle** and set its **MappingName** (and some other layout and display properties).  
+6. Create a new instance of a **GridColumnStyle** and set its **MappingName** (and some other layout and display properties).  
   
-7.  Repeat steps 2 through 6 for each column style you want to create.  
+7. Repeat steps 2 through 6 for each column style you want to create.  
   
      The following example illustrates how a <xref:System.Windows.Forms.DataGridTextBoxColumn> is created, because a name is to be displayed in the column. Additionally, you add the column style to the <xref:System.Windows.Forms.GridColumnStylesCollection> of the table style, and you add the table style to the <xref:System.Windows.Forms.GridTableStylesCollection> of the data grid.  
   
@@ -148,8 +148,9 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.GridTableStylesCollection>
 - <xref:System.Windows.Forms.GridColumnStylesCollection>
 - <xref:System.Windows.Forms.DataGrid>
-- [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)
-- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+- [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)
+- [DataGrid Control](datagrid-control-windows-forms.md)

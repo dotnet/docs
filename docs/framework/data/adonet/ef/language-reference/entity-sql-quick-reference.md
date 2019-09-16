@@ -66,7 +66,7 @@ DATETIME '2006-12-25 01:01'
 ## Type Constructors  
   
 ### ROW  
- [ROW](../../../../../../docs/framework/data/adonet/ef/language-reference/row-entity-sql.md) constructs an anonymous, structurally-typed (record) value as in: `ROW(1 AS myNumber, ‘Name’ AS myName).`  
+ [ROW](row-entity-sql.md) constructs an anonymous, structurally-typed (record) value as in: `ROW(1 AS myNumber, ‘Name’ AS myName).`  
   
  Example:  
   
@@ -85,7 +85,7 @@ SELECT VALUE row (product.ProductID as ProductID, product.Name
 |...|...|  
   
 ### MULTISET  
- [MULTISET](../../../../../../docs/framework/data/adonet/ef/language-reference/multiset-entity-sql.md) constructs collections, such as:  
+ [MULTISET](multiset-entity-sql.md) constructs collections, such as:  
   
  `MULTISET(1,2,2,3)` `--same as`-`{1,2,2,3}.`  
   
@@ -102,7 +102,7 @@ SELECT VALUE product FROM AdventureWorksEntities.Product AS product WHERE produc
 |842|Touring-Panniers, Large|PA-T100|…|  
   
 ### Object  
- [Named Type Constructor](../../../../../../docs/framework/data/adonet/ef/language-reference/named-type-constructor-entity-sql.md) constructs (named) user-defined objects, such as `person("abc", 12)`.  
+ [Named Type Constructor](named-type-constructor-entity-sql.md) constructs (named) user-defined objects, such as `person("abc", 12)`.  
   
  Example:  
   
@@ -124,7 +124,7 @@ AS o
 ## References  
   
 ### REF  
- [REF](../../../../../../docs/framework/data/adonet/ef/language-reference/ref-entity-sql.md) creates a reference to an entity type instance. For example, the following query returns references to each Order entity in the Orders entity set:  
+ [REF](ref-entity-sql.md) creates a reference to an entity type instance. For example, the following query returns references to each Order entity in the Orders entity set:  
   
 ```  
 SELECT REF(o) AS OrderID FROM Orders AS o  
@@ -158,7 +158,7 @@ SELECT VALUE REF(p).Name FROM
 |...|  
   
 ### DEREF  
- [DEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/deref-entity-sql.md) dereferences a reference value and produces the result of that dereference. For example, the following query produces the Order entities for each Order in the Orders entity set: `SELECT DEREF(o2.r) FROM (SELECT REF(o) AS r FROM LOB.Orders AS o) AS o2`..  
+ [DEREF](deref-entity-sql.md) dereferences a reference value and produces the result of that dereference. For example, the following query produces the Order entities for each Order in the Orders entity set: `SELECT DEREF(o2.r) FROM (SELECT REF(o) AS r FROM LOB.Orders AS o) AS o2`..  
   
  Example:  
   
@@ -177,7 +177,7 @@ SELECT VALUE DEREF(REF(p)).Name FROM
 |...|  
   
 ### CREATEREF AND KEY  
- [CREATEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/createref-entity-sql.md) creates a reference passing a key. [KEY](../../../../../../docs/framework/data/adonet/ef/language-reference/key-entity-sql.md) extracts the key portion of an expression with type reference.  
+ [CREATEREF](createref-entity-sql.md) creates a reference passing a key. [KEY](key-entity-sql.md) extracts the key portion of an expression with type reference.  
   
  Example:  
   
@@ -198,7 +198,7 @@ SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))
 ## Functions  
   
 ### Canonical  
- The namespace for [canonical functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md) is Edm, as in `Edm.Length("string")`. You do not have to specify the namespace unless another namespace is imported that contains a function with the same name as a canonical function. If two namespaces have the same function, the user should specific the full name.  
+ The namespace for [canonical functions](canonical-functions.md) is Edm, as in `Edm.Length("string")`. You do not have to specify the namespace unless another namespace is imported that contains a function with the same name as a canonical function. If two namespaces have the same function, the user should specific the full name.  
   
  Example:  
   
@@ -217,7 +217,7 @@ SELECT Length(c. FirstName) As NameLen FROM
 |5|  
   
 ### Microsoft Provider-Specific  
- [Microsoft provider-specific functions](../../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md) are in the `SqlServer` namespace.  
+ [Microsoft provider-specific functions](../sqlclient-for-ef-functions.md) are in the `SqlServer` namespace.  
   
  Example:  
   
@@ -236,7 +236,7 @@ SELECT SqlServer.LEN(c.EmailAddress) As EmailLen FROM
 |26|  
   
 ## Namespaces  
- [USING](../../../../../../docs/framework/data/adonet/ef/language-reference/using-entity-sql.md) specifies namespaces used in a query expression.  
+ [USING](using-entity-sql.md) specifies namespaces used in a query expression.  
   
  Example:  
   
@@ -251,7 +251,7 @@ using SqlServer; LOWER('AA');
 |aa|  
   
 ## Paging  
- Paging can be expressed by declaring a [SKIP](../../../../../../docs/framework/data/adonet/ef/language-reference/skip-entity-sql.md) and [LIMIT](../../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md) sub-clauses to the [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md) clause.  
+ Paging can be expressed by declaring a [SKIP](skip-entity-sql.md) and [LIMIT](limit-entity-sql.md) sub-clauses to the [ORDER BY](order-by-entity-sql.md) clause.  
   
  Example:  
   
@@ -269,7 +269,7 @@ SELECT c.ContactID as ID, c.LastName as Name FROM
 |12|Aguilar|  
   
 ## Grouping  
- [GROUPING BY](../../../../../../docs/framework/data/adonet/ef/language-reference/group-by-entity-sql.md) specifies groups into which objects returned by a query ([SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md)) expression are to be placed.  
+ [GROUPING BY](group-by-entity-sql.md) specifies groups into which objects returned by a query ([SELECT](select-entity-sql.md)) expression are to be placed.  
   
  Example:  
   
@@ -288,7 +288,7 @@ SELECT VALUE name FROM AdventureWorksEntities.Product as P
 |...|  
   
 ## Navigation  
- The relationship navigation operator allows you to navigate over the relationship from one entity (from end) to another (to end). [NAVIGATE](../../../../../../docs/framework/data/adonet/ef/language-reference/navigate-entity-sql.md) takes the relationship type qualified as \<namespace>.\<relationship type name>. Navigate returns Ref\<T> if the cardinality of the to end is 1. If the cardinality of the to end is n, the Collection<Ref\<T>> will be returned.  
+ The relationship navigation operator allows you to navigate over the relationship from one entity (from end) to another (to end). [NAVIGATE](navigate-entity-sql.md) takes the relationship type qualified as \<namespace>.\<relationship type name>. Navigate returns Ref\<T> if the cardinality of the to end is 1. If the cardinality of the to end is n, the Collection<Ref\<T>> will be returned.  
   
  Example:  
   
@@ -342,7 +342,7 @@ SELECT VALUE p.Name FROM AdventureWorksEntities.Product as p
 |...|...|  
   
 ## CASE EXPRESSION  
- The [case expression](../../../../../../docs/framework/data/adonet/ef/language-reference/case-entity-sql.md) evaluates a set of Boolean expressions to determine the result.  
+ The [case expression](case-entity-sql.md) evaluates a set of Boolean expressions to determine the result.  
   
  Example:  
   
@@ -357,5 +357,6 @@ CASE WHEN AVG({25,12,11}) < 100 THEN TRUE ELSE FALSE END
 |TRUE|  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Entity SQL Overview](entity-sql-overview.md)

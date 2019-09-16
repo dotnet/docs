@@ -23,13 +23,13 @@ Gets the "ICorDebugCode" instance that contains this [ICorDebugVariableHome](../
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode(  
     [out] ICorDebugCode **ppCode  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppCode`  
  [out] A pointer to the address of the "ICorDebugCode" instance that contains this [ICorDebugVariableHome](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md) object.  
   
@@ -43,5 +43,5 @@ HRESULT GetCode(
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
 ## See also
-- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
 
+- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)

@@ -23,7 +23,7 @@ Modifies the specified `ExportedType` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetExportedTypeProps (  
     [in] mdExportedType   ct,   
     [in] mdToken          tkImplementation,  
@@ -32,7 +32,7 @@ HRESULT SetExportedTypeProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ct`  
  [in] The metadata token that specifies the `ExportedType` metadata structure to be modified.  
   
@@ -58,4 +58,5 @@ HRESULT SetExportedTypeProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

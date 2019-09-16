@@ -16,7 +16,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:Class="namespace.classname" x:ClassModifier="NotPublic">  
    ...  
 </object>  
@@ -29,16 +29,16 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 |*NotPublic*|The exact string to pass to specify <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> versus <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> varies, depending on the code-behind programming language that you use. See Remarks.|  
   
 ## Dependencies  
- [x:Class](../../../docs/framework/xaml-services/x-class-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](https://go.microsoft.com/fwlink/?LinkId=114525).  
+ [x:Class](x-class-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
 ## Remarks  
  The value of `x:ClassModifier` in .NET Framework XAML Services usage varies by programming language. The string to use depends on how each language implements its <xref:System.CodeDom.Compiler.CodeDomProvider> and the type converters it returns to define the meanings for <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> and <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType>, and whether that language is case sensitive.  
   
--   For C#, the string to pass to designate <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> is `internal`.  
+- For C#, the string to pass to designate <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> is `internal`.  
   
--   For Microsoft Visual Basic .NET, the string to pass to designate <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> is `Friend`.  
+- For Microsoft Visual Basic .NET, the string to pass to designate <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> is `Friend`.  
   
--   For [!INCLUDE[TLA2#tla_cppcli](../../../includes/tla2sharptla-cppcli-md.md)], no targets exist that support compiling XAML; therefore, the value to pass is unspecified.  
+- For C++/CLI, no targets exist that support compiling XAML; therefore, the value to pass is unspecified.  
   
  You can also specify <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> (`public` in C#, `Public` in Visual Basic); however, specifying <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> is infrequently done because <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> is already the default behavior.  
   
@@ -48,8 +48,9 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
  The access level as declared in `x:ClassModifier` is still subject to interpretation by particular frameworks and their capabilities. WPF includes capabilities to load and instantiate types where `x:ClassModifier` is `internal`, if that class is referenced from a WPF resource through a pack URI reference. As a consequence of this case and potentially others like it implemented by other frameworks, do not rely exclusively on `x:ClassModifier` to block all possible instantiation attempts.  
   
 ## See also
-- [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)
-- [Code-Behind and XAML in WPF](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
-- [x:FieldModifier Directive](../../../docs/framework/xaml-services/x-fieldmodifier-directive.md)
-- [Security (WPF)](../../../docs/framework/wpf/security-wpf.md)
-- [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)
+
+- [x:Class Directive](x-class-directive.md)
+- [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [x:FieldModifier Directive](x-fieldmodifier-directive.md)
+- [Security (WPF)](../wpf/security-wpf.md)
+- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md)

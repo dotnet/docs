@@ -15,17 +15,17 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
  The <xref:System.IdentityModel.Tokens.SamlAssertion> class verifies the digital signature contained within a SAML token, and the default <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> requires that SAML tokens be signed by an X.509 certificate that is valid when the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust>. `ChainTrust` mode alone is insufficient to determine whether the issuer of the SAML token is trusted. Services that require a more granular trust model can either use authorization and enforcement policies to check the issuer of the claim sets produced by issued token authentication or use the X.509 validation settings on <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> to restrict the set of allowed signing certificates. For more information, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md) and [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
   
 ## Switching Identity Without a Security Context  
- The following applies only to [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)].  
+ The following applies only to WinFX.  
   
  When a connection is established between a client and server, the identity of the client does not change, except in one situation: after the WCF client is opened, if all of the following conditions are true:  
   
--   The procedures to establish a security context (using a transport security session or message security session) is switched off (<xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property is set to `false` in case of message security or transport not capable of establishing security sessions is used in transport security case. HTTPS is one example of such transport).  
+- The procedures to establish a security context (using a transport security session or message security session) is switched off (<xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property is set to `false` in case of message security or transport not capable of establishing security sessions is used in transport security case. HTTPS is one example of such transport).  
   
--   You are using Windows authentication.  
+- You are using Windows authentication.  
   
--   You do not explicitly set the credential.  
+- You do not explicitly set the credential.  
   
--   You are calling the service under the impersonated security context.  
+- You are calling the service under the impersonated security context.  
   
  If these conditions are true, the identity used to authenticate the client to the service might change (it might not be the impersonated identity but the process identity instead) after the WCF client is opened. This occurs because the Windows credential used to authenticate the client to the service is transmitted with every message, and the credential used for authentication is obtained from the current thread's Windows identity. If the Windows identity of the current thread changes (for example, by impersonating a different caller), the credential that is attached to the message and used to authenticate the client to the service might also change.  
   
@@ -37,7 +37,7 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
  Credentials used by the client or the service are based on the current context thread. The credentials are obtained when the `Open` method (or `BeginOpen`, for asynchronous calls) of the client or service is called. For both the <xref:System.ServiceModel.ServiceHost> and <xref:System.ServiceModel.ClientBase%601> classes, the `Open` and `BeginOpen` methods inherit from the <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> and <xref:System.ServiceModel.Channels.CommunicationObject.BeginOpen%2A> methods of the <xref:System.ServiceModel.Channels.CommunicationObject> class.  
   
 > [!NOTE]
->  When using the `BeginOpen` method, the credentials captured cannot be guaranteed to be the credentials of the process that calls the method.  
+> When using the `BeginOpen` method, the credentials captured cannot be guaranteed to be the credentials of the process that calls the method.  
   
 ## Token Caches Allow Replay Using Obsolete Data  
  WCF uses the local security authority (LSA) `LogonUser` function to authenticate users by user name and password. Because the logon function is a costly operation, WCF allows you to cache tokens that represent authenticated users to increase performance. The caching mechanism saves the results from `LogonUser` for subsequent uses. This mechanism is disabled by default; to enable it, set the <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential.CacheLogonTokens%2A> property to `true`, or use the `cacheLogonTokens` attribute of the [\<userNameAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/usernameauthentication.md).  
@@ -53,13 +53,13 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
   
  This also occurs when you create custom bindings by using one of the following methods:  
   
--   <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenBindingElement%2A>  
+- <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenBindingElement%2A>  
   
--   <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenForCertificateBindingElement%2A>  
+- <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenForCertificateBindingElement%2A>  
   
--   <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenForSslBindingElement%2A>  
+- <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenForSslBindingElement%2A>  
   
--   <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenOverTransportBindingElement%2A>  
+- <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenOverTransportBindingElement%2A>  
   
  To mitigate this, the authorization policy must check the action and the expiration time of each authorization policy.  
   
@@ -68,15 +68,16 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
   
  This can occur under the following circumstances:  
   
--   The client digitally signs a message using an X.509 certificate and does not attach the X.509 certificate to the message, but rather just references the certificate using its subject key identifier.  
+- The client digitally signs a message using an X.509 certificate and does not attach the X.509 certificate to the message, but rather just references the certificate using its subject key identifier.  
   
--   The service's computer contains two or more certificates with the same public key, but they contain different information.  
+- The service's computer contains two or more certificates with the same public key, but they contain different information.  
   
--   The service retrieves a certificate that matches the subject key identifier, but it is not the one the client intended to use. When WCF receives the message and verifies the signature, WCF maps the information in the unintended X.509 certificate to a set of claims that are different and potentially elevated from what the client expected.  
+- The service retrieves a certificate that matches the subject key identifier, but it is not the one the client intended to use. When WCF receives the message and verifies the signature, WCF maps the information in the unintended X.509 certificate to a set of claims that are different and potentially elevated from what the client expected.  
   
  To mitigate this, reference the X.509 certificate another way, such as using <xref:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.IssuerSerial>.  
   
 ## See also
+
 - [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
 - [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
 - [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)

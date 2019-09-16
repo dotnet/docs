@@ -12,79 +12,79 @@ This sample demonstrates how to implement a business process using messaging act
   
  This sample demonstrates the following features of [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]:  
   
--   <xref:System.Activities.Statements.Flowchart> and <xref:System.Activities.Statements.Sequence> workflows for modeling business processes.  
+- <xref:System.Activities.Statements.Flowchart> and <xref:System.Activities.Statements.Sequence> workflows for modeling business processes.  
   
--   Workflow Services.  
+- Workflow Services.  
   
--   Messaging Activities.  
+- Messaging Activities.  
   
--   Content-based correlation.  
+- Content-based correlation.  
   
--   Custom activities (declarative and code-based).  
+- Custom activities (declarative and code-based).  
   
--   System-provided SQL server persistence.  
+- System-provided SQL server persistence.  
   
--   Custom <xref:System.Activities.Persistence.PersistenceParticipant>.  
+- Custom <xref:System.Activities.Persistence.PersistenceParticipant>.  
   
--   Custom tracking.  
+- Custom tracking.  
   
--   Event Tracking for Windows (ETW) Tracking.  
+- Event Tracking for Windows (ETW) Tracking.  
   
--   Composition of activities.  
+- Composition of activities.  
   
--   <xref:System.Activities.Statements.Parallel> activities.  
+- <xref:System.Activities.Statements.Parallel> activities.  
   
--   <xref:System.Activities.Statements.CancellationScope> activity.  
+- <xref:System.Activities.Statements.CancellationScope> activity.  
   
--   Durable timers (<xref:System.Activities.Statements.Delay> activity).  
+- Durable timers (<xref:System.Activities.Statements.Delay> activity).  
   
--   Transactions.  
+- Transactions.  
   
--   More than one workflow in the same solution.  
+- More than one workflow in the same solution.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Application\HiringProcess`  
+> `<InstallDrive>:\WF_WCF_Samples\WF\Application\HiringProcess`  
   
 ## Description of the Process  
  Contoso, Inc. wants to have close control of the headcount in each of its departments. Therefore, anytime any employee wants to start a new hiring process, they need to go through a hiring request process approval before the recruiting can actually happen. This process is called hiring process request (defined in the HiringRequestService project) and consists of the following steps:  
   
-1.  An employee (the requester) starts the hiring process request.  
+1. An employee (the requester) starts the hiring process request.  
   
-2.  The requester’s manager must approve the request:  
+2. The requester’s manager must approve the request:  
   
-    1.  The manager can reject the request.  
+    1. The manager can reject the request.  
   
-    2.  The manager can return the request to the requester for additional information:  
+    2. The manager can return the request to the requester for additional information:  
   
-        1.  The requester reviews and sends the request back to the manager.  
+        1. The requester reviews and sends the request back to the manager.  
   
-    3.  The manager can approve.  
+    3. The manager can approve.  
   
-3.  After the requester’s manager approves, the department owner must approve the request:  
+3. After the requester’s manager approves, the department owner must approve the request:  
   
-    1.  The department owner can reject.  
+    1. The department owner can reject.  
   
-    2.  The department owner can approve.  
+    2. The department owner can approve.  
   
-4.  After the department owner approves, the process requires the approval of 2 HR managers or the CEO:  
+4. After the department owner approves, the process requires the approval of 2 HR managers or the CEO:  
   
-    1.  The process can transition to the accepted or rejected state.  
+    1. The process can transition to the accepted or rejected state.  
   
-    2.  If the process is Accepted, a new instance of the `ResumeRequest` workflow is started (`ResumeRequest` is linked to HiringRequest.csproj through a service reference.)  
+    2. If the process is Accepted, a new instance of the `ResumeRequest` workflow is started (`ResumeRequest` is linked to HiringRequest.csproj through a service reference.)  
   
  Once the managers approve the hiring of a new employee, HR must find the appropriate candidate. This process is performed by the second workflow (`ResumeRequest`, defined in ResumeRequestService.csproj). This workflow defines the process for submitting a job posting with a career opportunity to Contoso's external Careers Web site, receives resumes from applicants, and monitors the state of the job posting. Positions are available for a fixed time period (until a time expires) or until an employee from Contoso decides to remove it. The `ResumeRequest` workflow consists of the following steps:  
   
-1.  An employee from Contoso types in the information about the position and a time-out duration. Once the employee types in this information, the position is posted in the Careers Web site.  
+1. An employee from Contoso types in the information about the position and a time-out duration. Once the employee types in this information, the position is posted in the Careers Web site.  
   
-2.  Once the information is published, interested parties can submit their resumes. When a resume is submitted, it is stored in a record linked to the job opening.  
+2. Once the information is published, interested parties can submit their resumes. When a resume is submitted, it is stored in a record linked to the job opening.  
   
-3.  Applicants can submit resumes until the time-out expires or someone from Contoso HR department explicitly decides to remove the posting by stopping the process.  
+3. Applicants can submit resumes until the time-out expires or someone from Contoso HR department explicitly decides to remove the posting by stopping the process.  
   
 ## Projects in the sample  
  The following table shows the projects in the sample solution.  
@@ -120,7 +120,7 @@ This sample demonstrates how to implement a business process using messaging act
 |Durable Timers|`ResumeRequestService` uses durable timers to define the duration of a Job Posting (once a time-out expires, the Job Posting is closed).|ResumeRequestService|  
 |Transactions|<xref:System.Activities.Statements.TransactionScope> is used to ensure consistency of data within the execution of several activities (when a new resume is received).|ResumeRequestService|  
 |Transactions|The custom persistence participant (`HiringRequestPersistenceParticipant`) and custom tracking participant (`HistoryFileTrackingParticipant`) use the same transaction.|HiringRequestService|  
-|Using [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications.|Workflows are accessed from two [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications.|InternalClient / CareersWebSite|  
+|Using [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in ASP.NET applications.|Workflows are accessed from two ASP.NET applications.|InternalClient / CareersWebSite|  
   
 ## Data Storage  
  Data is stored in a SQL Server database called `ContosoHR` (the script for creating this database is located in the `DbSetup` folder). Workflow instances are stored in a SQL Server database called `InstanceStore` (the scripts for creating the instance store are part of the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] distribution).  
@@ -131,100 +131,100 @@ This sample demonstrates how to implement a business process using messaging act
   
 #### To create the databases  
   
-1.  Open a Developer Command Prompt for Visual Studio.  
+1. Open a Developer Command Prompt for Visual Studio.  
   
-2.  Navigate to the sample folder.  
+2. Navigate to the sample folder.  
   
-3.  Run Setup.cmd.  
+3. Run Setup.cmd.  
   
-4.  Verify that the two databases `ContosoHR` and `InstanceStore` were created in SQL Express.  
+4. Verify that the two databases `ContosoHR` and `InstanceStore` were created in SQL Express.  
   
 #### To set up the solution for execution  
   
-1.  Run Visual Studio as an administrator. Open HiringRequest.sln.  
+1. Run Visual Studio as an administrator. Open HiringRequest.sln.  
   
-2.  Right-click the solution in **Solution Explorer** and select **Properties**.  
+2. Right-click the solution in **Solution Explorer** and select **Properties**.  
   
-3.  Select the option **Multiple Startup Projects** and set the **CareersWebSite**, **InternalClient**, **HiringRequestService**, and **ResumeRequestService** to **Start**. Leave **ContosoHR**, **InboxService**, and **OrgService** as None.  
+3. Select the option **Multiple Startup Projects** and set the **CareersWebSite**, **InternalClient**, **HiringRequestService**, and **ResumeRequestService** to **Start**. Leave **ContosoHR**, **InboxService**, and **OrgService** as None.  
   
-4.  Build the solution by pressing CTRL+SHIFT+B. Verify that the build succeeded.  
+4. Build the solution by pressing CTRL+SHIFT+B. Verify that the build succeeded.  
   
 #### To run the solution  
   
-1.  After the solution builds, press CTRL+F5 to run without debugging. Verify that all services have started.  
+1. After the solution builds, press CTRL+F5 to run without debugging. Verify that all services have started.  
   
-2.  Right click **InternalClient** in the solution and then select **View in Browser**. The default page for `InternalClient` is displayed. Ensure that services are running, and click the link.  
+2. Right click **InternalClient** in the solution and then select **View in Browser**. The default page for `InternalClient` is displayed. Ensure that services are running, and click the link.  
   
-3.  The **HiringRequest** module is displayed. You can follow the scenario detailed here.  
+3. The **HiringRequest** module is displayed. You can follow the scenario detailed here.  
   
-4.  Once the `HiringRequest` is complete, you can start the `ResumeRequest`. You can follow the scenario detailed here.  
+4. Once the `HiringRequest` is complete, you can start the `ResumeRequest`. You can follow the scenario detailed here.  
   
-5.  When the `ResumeRequest` is posted, it is available in the public Web site (Contoso Careers Web Site). To see the Job Posting (and apply for the position), navigate to the Careers Web Site.  
+5. When the `ResumeRequest` is posted, it is available in the public Web site (Contoso Careers Web Site). To see the Job Posting (and apply for the position), navigate to the Careers Web Site.  
   
-6.  Right-click **CareersWebSite** in the solution and select **View in Browser**.  
+6. Right-click **CareersWebSite** in the solution and select **View in Browser**.  
   
-7.  Navigate back to the `InternalClient` by right-clicking **InternalClient** in the solution and selecting **View in Browser**.  
+7. Navigate back to the `InternalClient` by right-clicking **InternalClient** in the solution and selecting **View in Browser**.  
   
-8.  Go to the **JobPostings** section by clicking the **Job Postings** link in the inbox top menu. You can follow the scenario detailed here.  
+8. Go to the **JobPostings** section by clicking the **Job Postings** link in the inbox top menu. You can follow the scenario detailed here.  
   
 ## Scenarios  
   
 ### Hiring request  
   
-1.  Michael Alexander (Software Engineer) wants to request a new position for hiring a Software Engineer in Test (SDET) in the Engineering department who has at least 3 years of experience in C#.  
+1. Michael Alexander (Software Engineer) wants to request a new position for hiring a Software Engineer in Test (SDET) in the Engineering department who has at least 3 years of experience in C#.  
   
-2.  After being created, the request appears in Michael’s inbox (click **Refresh** if you do not see the request) awaiting Peter Brehm’s approval, who is Michael’s manager.  
+2. After being created, the request appears in Michael’s inbox (click **Refresh** if you do not see the request) awaiting Peter Brehm’s approval, who is Michael’s manager.  
   
-3.  Peter wants to act on Michael’s request. He thinks the position demands 5 years of C# experience instead of 3, so he sends his comments back for review.  
+3. Peter wants to act on Michael’s request. He thinks the position demands 5 years of C# experience instead of 3, so he sends his comments back for review.  
   
-4.  Michael sees a message in his inbox from his manager and wants to act. Michael sees the history of the position request and agrees with Peter. Michael modifies the description to require 5 years of C# experience and accepts the modification.  
+4. Michael sees a message in his inbox from his manager and wants to act. Michael sees the history of the position request and agrees with Peter. Michael modifies the description to require 5 years of C# experience and accepts the modification.  
   
-5.  Peter acts on Michael’s modified request and accepts it. The request now must be approved by the Director of Engineering, Tsvi Reiter.  
+5. Peter acts on Michael’s modified request and accepts it. The request now must be approved by the Director of Engineering, Tsvi Reiter.  
   
-6.  Tsvi Reiter wants to expedite the request, so he puts in a comment to say that the request is urgent and accepts it.  
+6. Tsvi Reiter wants to expedite the request, so he puts in a comment to say that the request is urgent and accepts it.  
   
-7.  The request now has to be approved by two HR managers or the CEO. The CEO, Brian Richard Goldstein, sees the urgent request by Tsvi. He acts on the request by accepting it, thus bypassing the approval by two HR managers.  
+7. The request now has to be approved by two HR managers or the CEO. The CEO, Brian Richard Goldstein, sees the urgent request by Tsvi. He acts on the request by accepting it, thus bypassing the approval by two HR managers.  
   
-8.  The request is removed from Michael’s inbox and the process of hiring an SDET has now begun.  
+8. The request is removed from Michael’s inbox and the process of hiring an SDET has now begun.  
   
 ### Start Resume Request  
   
-1.  Now, the job position is waiting to be posted to an external Web site where people can apply (you can see it clicking the **Job Postings** link). Currently, the job position is sitting with an HR representative who is responsible for finalizing the job position and posting it.  
+1. Now, the job position is waiting to be posted to an external Web site where people can apply (you can see it clicking the **Job Postings** link). Currently, the job position is sitting with an HR representative who is responsible for finalizing the job position and posting it.  
   
-2.  HR wants to edit this job position (by clicking the **Edit** link) by setting a time-out of 60 minutes (in real life, this could be days or weeks). The time-out allows the job position to be taken off the external Web site according to the time specified.  
+2. HR wants to edit this job position (by clicking the **Edit** link) by setting a time-out of 60 minutes (in real life, this could be days or weeks). The time-out allows the job position to be taken off the external Web site according to the time specified.  
   
-3.  After saving the edited job position, it appears in the **Receiving Resumes** tab (refresh the Web page to see the new job position).  
+3. After saving the edited job position, it appears in the **Receiving Resumes** tab (refresh the Web page to see the new job position).  
   
 ### Collecting Resumes  
   
-1.  The job position should appear on the external Web site. As a person interested in applying for the job, you may apply for this position and submit your resume.  
+1. The job position should appear on the external Web site. As a person interested in applying for the job, you may apply for this position and submit your resume.  
   
-2.  If you go back to the Job Postings List service, you can "view resumes" that have been collected so far.  
+2. If you go back to the Job Postings List service, you can "view resumes" that have been collected so far.  
   
-3.  HR can also stop collecting resumes (for example, once the right candidate has been identified).  
+3. HR can also stop collecting resumes (for example, once the right candidate has been identified).  
   
 ## Troubleshooting  
   
-1.  Ensure that you are running Visual Studio with administrator privileges.  
+1. Ensure that you are running Visual Studio with administrator privileges.  
   
-2.  If the solution fails to build, verify the following:  
+2. If the solution fails to build, verify the following:  
   
-    -   The reference to `ContosoHR` is not missing from the `InternalClient` or `CareersWebSite` projects.  
+    - The reference to `ContosoHR` is not missing from the `InternalClient` or `CareersWebSite` projects.  
   
-3.  If the solution fails to execute, verify the following:  
+3. If the solution fails to execute, verify the following:  
   
-    1.  All services are running.  
+    1. All services are running.  
   
-    2.  The service references are updated.  
+    2. The service references are updated.  
   
-        1.  Open the App_WebReferences folder  
+        1. Open the App_WebReferences folder  
   
-        2.  Right-click **Contoso** and select **Update Web/Service References**.  
+        2. Right-click **Contoso** and select **Update Web/Service References**.  
   
-        3.  Rebuild the solution by pressing CTRL+SHIFT+B in Visual Studio.  
+        3. Rebuild the solution by pressing CTRL+SHIFT+B in Visual Studio.  
   
 ## Uninstalling  
   
-1.  Delete the SQL Server instance store by running Cleanup.bat, located in DbSetup folder.  
+1. Delete the SQL Server instance store by running Cleanup.bat, located in DbSetup folder.  
   
-2.  Delete the source code form your hard drive.
+2. Delete the source code form your hard drive.

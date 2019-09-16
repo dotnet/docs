@@ -11,18 +11,18 @@ There are two supported implementations for building server-side applications wi
 
 Use .NET Core for your server application when:
 
-* You have cross-platform needs.
-* You are targeting microservices.
-* You are using Docker containers.
-* You need high-performance and scalable systems.
-* You need side-by-side .NET versions per application.
+- You have cross-platform needs.
+- You are targeting microservices.
+- You are using Docker containers.
+- You need high-performance and scalable systems.
+- You need side-by-side .NET versions per application.
 
 Use .NET Framework for your server application when:
 
-* Your app currently uses .NET Framework (recommendation is to extend instead of migrating).
-* Your app uses third-party .NET libraries or NuGet packages not available for .NET Core.
-* Your app uses .NET technologies that aren't available for .NET Core.
-* Your app uses a platform that doesn’t support .NET Core.
+- Your app currently uses .NET Framework (recommendation is to extend instead of migrating).
+- Your app uses third-party .NET libraries or NuGet packages not available for .NET Core.
+- Your app uses .NET technologies that aren't available for .NET Core.
+- Your app uses a platform that doesn’t support .NET Core. Windows, macOS, and Linux support .NET Core.
 
 ## When to choose .NET Core
 
@@ -40,13 +40,13 @@ A microservices architecture allows a mix of technologies across a service bound
 
 There are many infrastructure platforms available. [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) is designed for large and complex microservice systems. [Azure App Service](https://azure.microsoft.com/services/app-service/) is a good choice for stateless microservices. Microservices alternatives based on Docker fit any kind of microservices approach, as explained in the [Containers](#containers) section. All these platforms support .NET Core and make them ideal for hosting your microservices.
 
-For more information about microservices architecture, see [.NET Microservices. Architecture for Containerized .NET Applications](microservices-architecture/index.md).
+For more information about microservices architecture, see [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md).
 
 ### Containers
 
 Containers are commonly used in conjunction with a microservices architecture. Containers can also be used to containerize web apps or services that follow any architectural pattern. .NET Framework can be used on Windows containers, but the modularity and lightweight nature of .NET Core makes it a better choice for containers. When creating and deploying a container, the size of its image is much smaller with .NET Core than with .NET Framework. Because it's cross-platform, you can deploy server apps to Linux Docker containers, for example.
 
-Docker containers can be hosted in your own Linux or Windows infrastructure, or in a cloud service such as [Azure Container Service](https://azure.microsoft.com/services/container-service/). Azure Container Service can manage, orchestrate, and scale container-based applications in the cloud.
+Docker containers can be hosted in your own Linux or Windows infrastructure, or in a cloud service such as [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). Azure Kubernetes Service can manage, orchestrate, and scale container-based applications in the cloud.
 
 ### A need for high-performance and scalable systems
 
@@ -71,7 +71,7 @@ In most cases, you don’t need to migrate your existing applications to .NET Co
 Libraries are quickly embracing .NET Standard. .NET Standard enables sharing code across all .NET implementations including .NET Core. With .NET Standard 2.0, this is even easier:
 
 - The API surface became much larger. 
-- Introduced a .NET Framework compatibility mode. This compatibility mode allows .NET Standard/.NET Core projects to reference .NET Framework libraries. To learn more about the compatibility mode, see [Announcing .NET Standard 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-standard-2-0/).
+- Introduced a .NET Framework compatibility mode. This compatibility mode allows .NET Standard/.NET Core projects to reference .NET Framework libraries. To learn more about the compatibility mode, see [Announcing .NET Standard 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-standard-2-0/).
 
 So only in cases where the libraries or NuGet packages use technologies that aren't available in .NET Standard/.NET Core, you need to use the .NET Framework.
 
@@ -79,15 +79,15 @@ So only in cases where the libraries or NuGet packages use technologies that are
 
 Some .NET Framework technologies aren't available in .NET Core. Some of them might be available in later .NET Core releases. Others don’t apply to the new application patterns targeted by .NET Core and may never be available. The following list shows the most common technologies not found in .NET Core:
 
-* ASP.NET Web Forms applications: ASP.NET Web Forms are only available in the .NET Framework. ASP.NET Core cannot be used for ASP.NET Web Forms. There are no plans to bring ASP.NET Web Forms to .NET Core.
+- ASP.NET Web Forms applications: ASP.NET Web Forms are only available in the .NET Framework. ASP.NET Core cannot be used for ASP.NET Web Forms. There are no plans to bring ASP.NET Web Forms to .NET Core.
 
-* ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core. 
+- ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core. 
 
-* WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
+- WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 
-* Workflow-related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in the .NET Framework.  There are no plans to bring WF/WCF+WF/WCF Data Services to .NET Core.
+- Workflow-related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in the .NET Framework.  There are no plans to bring WF/WCF+WF/WCF Data Services to .NET Core.
 
-* Language support: Visual Basic and F# are currently supported in .NET Core, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
+- Language support: Visual Basic and F# are currently supported in .NET Core, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
 
 In addition to the official roadmap, there are other frameworks to be ported to .NET Core. For a full list, see the CoreFX issues marked as [port-to-core](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core). This list doesn’t represent a commitment from Microsoft to bring those components to .NET Core. They're simply capturing the desire from the community to do so. If you care about any of the components marked as `port-to-core`, participate in the discussions on GitHub. And if you think something is missing, file a new issue in the [CoreFX repository](https://github.com/dotnet/corefx/issues/new).
 
@@ -102,6 +102,6 @@ Some Microsoft or third-party platforms don’t support .NET Core. Some Azure se
 - [Target frameworks](frameworks.md)
 - [.NET Core Guide](../core/index.md)
 - [Porting from .NET Framework to .NET Core](../core/porting/index.md)
-- [.NET Framework on Docker Guide](../framework/docker/index.md)
+- [Introduction to .NET and Docker](../core/docker/introduction.md)
 - [.NET Components Overview](components.md)
-- [.NET Microservices. Architecture for Containerized .NET Applications](microservices-architecture/index.md)
+- [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md)

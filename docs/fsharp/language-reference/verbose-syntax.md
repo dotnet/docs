@@ -27,6 +27,7 @@ compound expressions
 <expression1>
 <expression2>
 ```
+
 </td><td>
 
 ```fsharp
@@ -78,6 +79,7 @@ begin
     <expression2>;
 end
 ```
+
 </td>
 </tr>
 <tr><td>
@@ -238,7 +240,7 @@ type <union-name> =
     ...
     with
         <value-or-member-definitions>
-    end    
+    end
 ```
 
 </td>
@@ -249,6 +251,7 @@ type <union-name> =
 type <interface-name> =
     ...
 ```
+
 </td><td>
 
 ```fsharp

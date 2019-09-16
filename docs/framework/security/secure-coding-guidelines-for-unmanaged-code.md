@@ -19,9 +19,9 @@ Some library code needs to call into unmanaged code (for example, native code AP
   
  Because any managed code that provides a code path into native code is a potential target for malicious code, determining which unmanaged code can be safely used and how it must be used requires extreme care. Generally, unmanaged code should never be directly exposed to partially trusted callers. There are two primary considerations in evaluating the safety of unmanaged code use in libraries that are callable by partially trusted code:  
   
--   **Functionality**. Does the unmanaged API provide functionality that does not allow callers to perform potentially dangerous operations? Code access security uses permissions to enforce access to resources, so consider whether the API uses files, a user interface, or threading, or whether it exposes protected information. If it does, the managed code wrapping it must demand the necessary permissions before allowing it to be entered. Additionally, while not protected by a permission, memory access must be confined to strict type safety.  
+- **Functionality**. Does the unmanaged API provide functionality that does not allow callers to perform potentially dangerous operations? Code access security uses permissions to enforce access to resources, so consider whether the API uses files, a user interface, or threading, or whether it exposes protected information. If it does, the managed code wrapping it must demand the necessary permissions before allowing it to be entered. Additionally, while not protected by a permission, memory access must be confined to strict type safety.  
   
--   **Parameter checking**. A common attack passes unexpected parameters to exposed unmanaged code API methods in an attempt to cause them to operate out of specification. Buffer overruns using out-of-range index or offset values are one common example of this type of attack, as are any parameters that might exploit a bug in the underlying code. Thus, even if the unmanaged code API is functionally safe (after necessary demands) for partially trusted callers, managed code must also check parameter validity exhaustively to ensure that no unintended calls are possible from malicious code using the managed code wrapper layer.  
+- **Parameter checking**. A common attack passes unexpected parameters to exposed unmanaged code API methods in an attempt to cause them to operate out of specification. Buffer overruns using out-of-range index or offset values are one common example of this type of attack, as are any parameters that might exploit a bug in the underlying code. Thus, even if the unmanaged code API is functionally safe (after necessary demands) for partially trusted callers, managed code must also check parameter validity exhaustively to ensure that no unintended calls are possible from malicious code using the managed code wrapper layer.  
   
 ## Using SuppressUnmanagedCodeSecurityAttribute  
  There is a performance aspect to asserting and then calling unmanaged code. For every such call, the security system automatically demands unmanaged code permission, resulting in a stack walk each time. If you assert and immediately call unmanaged code, the stack walk can be meaningless: it consists of your assert and your unmanaged code call.  
@@ -30,11 +30,11 @@ Some library code needs to call into unmanaged code (for example, native code AP
   
  If you use the **SuppressUnmanagedCodeSecurityAttribute**, check the following points:  
   
--   Make the unmanaged code entry point internal or otherwise inaccessible outside your code.  
+- Make the unmanaged code entry point internal or otherwise inaccessible outside your code.  
   
--   Any call into unmanaged code is a potential security hole. Make sure your code is not a portal for malicious code to indirectly call into unmanaged code and avoid a security check. Demand permissions, if appropriate.  
+- Any call into unmanaged code is a potential security hole. Make sure your code is not a portal for malicious code to indirectly call into unmanaged code and avoid a security check. Demand permissions, if appropriate.  
   
--   Use a naming convention to explicitly identify when you are creating a dangerous path into unmanaged code, as described in the section below..  
+- Use a naming convention to explicitly identify when you are creating a dangerous path into unmanaged code, as described in the section below..  
   
 ## Naming convention for unmanaged code methods  
  A useful and highly recommended convention has been established for naming unmanaged code methods. All unmanaged code methods are separated into three categories: **safe**, **native**, and **unsafe**. These keywords can be used as class names within which the various kinds of unmanaged code entry points are defined. In source code, these keywords should be added to the class name, as in `Safe.GetTimeOfDay`, `Native.Xyz`, or `Unsafe.DangerousAPI`, for example. Each of these keywords provides useful security information for developers using that class, as described in the following table.  
@@ -46,4 +46,5 @@ Some library code needs to call into unmanaged code (for example, native code AP
 |**unsafe**|Potentially dangerous unmanaged code entry point with security suppressed. Developers should use the greatest caution when using such unmanaged code, making sure that other protections are in place to prevent a security vulnerability. Developers must be responsible, as this keyword overrides the security system.|  
   
 ## See also
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

@@ -23,14 +23,14 @@ Sets or updates the metadata signature of the inherited method implementation th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMethodImplFlags (   
     [in]  mdMethodDef   md,   
     [in]  DWORD         dwImplFlags   
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `md`  
  [in] The token for the method to be changed.  
   
@@ -47,5 +47,6 @@ HRESULT SetMethodImplFlags (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

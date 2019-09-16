@@ -15,9 +15,9 @@ An array in a structure is declared with an initial size. You cannot initialize 
   
 ## To correct this error  
   
-1.  Define the array in your structure as dynamic (no initial size).  
+1. Define the array in your structure as dynamic (no initial size).  
   
-2.  If you require a certain size of array, you can redimension a dynamic array with a [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md) when your code is running. The following example illustrates this.  
+2. If you require a certain size of array, you can redimension a dynamic array with a [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md) when your code is running. The following example illustrates this.  
   
     ```  
     Structure demoStruct  
@@ -31,5 +31,6 @@ An array in a structure is declared with an initial size. You cannot initialize 
     ```  
   
 ## See also
+
 - [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
 - [How to: Declare a Structure](../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)

@@ -8,4 +8,3 @@
 |Version|4.6.2|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.IO.Path.GetDirectoryName(System.String)?displayProperty=nameWithType></li><li><xref:System.IO.Path.GetPathRoot(System.String)?displayProperty=nameWithType></li></ul>|
-

@@ -23,13 +23,13 @@ Allows a debugger to intercept the current exception on this thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InterceptCurrentException (  
     [in] ICorDebugFrame  *pFrame  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFrame`  
  [in] A pointer to an ICorDebugFrame that represents the active stack frame.  
   

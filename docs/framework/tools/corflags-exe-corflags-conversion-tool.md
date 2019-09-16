@@ -18,11 +18,11 @@ The CorFlags Conversion tool allows you to configure the CorFlags section of the
   
 ## Syntax  
   
-```  
+```console  
 CorFlags.exe assembly [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Required parameter|Description|  
 |------------------------|-----------------|  
@@ -32,8 +32,8 @@ CorFlags.exe assembly [options]
 |------------|-----------------|  
 |**/32BIT[REQ]+**|Sets the 32BITREQUIRED flag.|  
 |**/32BIT[REQ]-**|Clears the 32BITREQUIRED flag.|  
-|**/32BITPREF+**|Sets the 32BITPREFERRED flag. The app runs as a 32-bit process even on 64-bit platforms. Set this flag only on EXE files. If the flag is set on a DLL, the DLL fails to load in 64-bit processes, and a <xref:System.BadImageFormatException> exception is thrown. An EXE file with this flag can be loaded into a 64-bit process.<br /><br /> New in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].|  
-|**/32BITPREF-**|Clears the 32BITPREFERRED flag.<br /><br /> New in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].|  
+|**/32BITPREF+**|Sets the 32BITPREFERRED flag. The app runs as a 32-bit process even on 64-bit platforms. Set this flag only on EXE files. If the flag is set on a DLL, the DLL fails to load in 64-bit processes, and a <xref:System.BadImageFormatException> exception is thrown. An EXE file with this flag can be loaded into a 64-bit process.<br /><br /> New in the .NET Framework 4.5.|  
+|**/32BITPREF-**|Clears the 32BITPREFERRED flag.<br /><br /> New in the .NET Framework 4.5.|  
 |**/?**|Displays command syntax and options for the tool.|  
 |**/Force**|Forces an update even if the assembly is strong-named. **Important:**  If you update a strong-named assembly, you must sign it again before executing its code.|  
 |**/help**|Displays command syntax and options for the tool.|  
@@ -47,6 +47,7 @@ CorFlags.exe assembly [options]
  If no options are specified, the CorFlags Conversion tool displays the flags for the specified assembly.  
   
 ## See also
+
 - [Tools](../../../docs/framework/tools/index.md)
 - [64-bit Applications](../../../docs/framework/64-bit-apps.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

@@ -23,13 +23,13 @@ Sets a handle for the currently executing thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetThreadToken (  
     [in] HANDLE hToken  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hToken`  
  [in] A handle to the token to set for the currently executing thread.  
   
@@ -59,5 +59,6 @@ HRESULT SetThreadToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
 - [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)

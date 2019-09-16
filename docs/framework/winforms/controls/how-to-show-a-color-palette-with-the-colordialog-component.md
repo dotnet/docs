@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ee050f61-dbc8-4436-ba22-51360981ab48
 ---
 # How to: Show a Color Palette with the ColorDialog Component
-The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md) component displays a palette of colors and returns a property containing the color the user has selected.  
+The [ColorDialog](colordialog-component-windows-forms.md) component displays a palette of colors and returns a property containing the color the user has selected.  
   
 ### To choose a color using the ColorDialog component  
   
-1.  Display the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.  
+1. Display the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.  
   
-2.  Use the <xref:System.Windows.Forms.DialogResult> property to determine how the dialog box was closed.  
+2. Use the <xref:System.Windows.Forms.DialogResult> property to determine how the dialog box was closed.  
   
-3.  Use the <xref:System.Windows.Forms.ColorDialog.Color%2A> property of the <xref:System.Windows.Forms.ColorDialog> component to set the chosen color.  
+3. Use the <xref:System.Windows.Forms.ColorDialog.Color%2A> property of the <xref:System.Windows.Forms.ColorDialog> component to set the chosen color.  
   
      In the example below, the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler opens a <xref:System.Windows.Forms.ColorDialog> component. When a color is chosen and the user clicks **OK**, the <xref:System.Windows.Forms.Button> control's background color is set to the chosen color. The example assumes your form has a <xref:System.Windows.Forms.Button> control and a <xref:System.Windows.Forms.ColorDialog> component.  
   
@@ -59,7 +59,7 @@ The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-compo
        }  
     ```  
   
-     (Visual C#, [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C#, Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
@@ -71,5 +71,6 @@ The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-compo
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ColorDialog>
-- [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)
+- [ColorDialog Component](colordialog-component-windows-forms.md)

@@ -15,7 +15,7 @@ A programming element that takes one or more arguments is included in a LINQ que
   
 ## To correct this error  
   
-1.  Supply an explicit variable name for the programming element, as shown in the following code:  
+1. Supply an explicit variable name for the programming element, as shown in the following code:  
   
 ```  
 Dim query = From var1 In collection1   
@@ -23,5 +23,6 @@ Dim query = From var1 In collection1
 ```  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)

@@ -8,9 +8,10 @@ An attempt has been made to query a <xref:System.IO.FileInfo> object for informa
   
 ## To correct this error  
   
--   Check that you are supplying the correct file name.  
+- Check that you are supplying the correct file name.  
   
 ## See also
+
 - [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
-- [How to: Get Information About a File in Visual Basic](https://msdn.microsoft.com/library/ca0720ec-f40e-4c11-9748-0ce1685c78f0)
+- [How to: Get Information About a File in Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/abtzf6f7(v=vs.100))
 - [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

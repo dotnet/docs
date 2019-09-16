@@ -25,14 +25,14 @@ Truncates the specified code section by the specified length.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT TruncateSection (  
     [in]  HCEESECTION     section,  
     [in]  ULONG           len  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The section to truncate.  
   
@@ -52,4 +52,5 @@ HRESULT TruncateSection (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

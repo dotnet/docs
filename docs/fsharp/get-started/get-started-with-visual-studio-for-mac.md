@@ -13,7 +13,7 @@ One of the most basic projects in Visual Studio for Mac is the Console Applicati
 
 1. On the **File** menu, point to **New Solution**.
 
-2.  In the New Project dialog, there are 2 different templates for Console Application.  There is one under Other -> .NET which targets the .NET Framework.  The other template is under .NET Core -> App which targets .NET Core.  Either template should work for the purpose of this article.
+2. In the New Project dialog, there are 2 different templates for Console Application.  There is one under Other -> .NET which targets the .NET Framework.  The other template is under .NET Core -> App which targets .NET Core.  Either template should work for the purpose of this article.
 
 3. Under console app, change C# to F# if needed.  Choose the **Next** button to move forward!  
 
@@ -25,7 +25,7 @@ One of the most basic projects in Visual Studio for Mac is the Console Applicati
 
 Let's get started by writing some code first.  Make sure that the `Program.fs` file is open, and then replace its contents with the following:
 
-[!code-fsharp[HelloSquare](../../../samples/snippets/fsharp/getting-started/hello-square.fs)]
+[!code-fsharp[HelloSquare](~/samples/snippets/fsharp/getting-started/hello-square.fs)]
 
 In the previous code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../language-reference/type-inference.md), the type of `x` doesn't need to be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
 

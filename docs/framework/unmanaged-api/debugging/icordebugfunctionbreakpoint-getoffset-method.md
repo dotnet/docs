@@ -23,13 +23,13 @@ Gets the offset of the breakpoint within the function.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetOffset (  
     [out] ULONG32  *pnOffset  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnOffset`  
  [out] A pointer to the offset of the breakpoint.  
   

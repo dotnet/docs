@@ -23,7 +23,7 @@ Modifies the specified `File` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFileProps (  
     [in] mdFile        file,  
     [in] const void    *pbHashValue,   
@@ -32,7 +32,7 @@ HRESULT SetFileProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `file`  
  [in] The metadata token that specifies the `File` metadata structure to be modified.  
   
@@ -58,4 +58,5 @@ HRESULT SetFileProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

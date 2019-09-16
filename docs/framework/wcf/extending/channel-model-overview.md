@@ -11,7 +11,7 @@ The Windows Communication Foundation (WCF) channel stack is a layered communicat
 ## Channel Stack  
  WCF endpoints communicate with the world using a communication stack called the channel stack. The following diagram compares the channel stack with other communication stacks, for example TCP/IP.  
   
- ![Channel Model](../../../../docs/framework/wcf/extending/media/wcfc-channelstackhighlevelc.gif "wcfc_ChannelStackHighLevelc")  
+ ![Channel Model](./media/wcfc-channelstackhighlevelc.gif "wcfc_ChannelStackHighLevelc")  
   
  First, the similarities: In both cases, each layer of the stack provides some abstraction of the world below that layer and exposed that abstraction only to the layer directly above it. Each layer uses the abstraction of only the layer directly below it. Also in both cases, when two stacks communicate, each layer communicates with the corresponding layer in the other stack, for example, the IP layer communicates with the IP layer and the TCP layer with the TCP layer, and so on.  
   
@@ -22,34 +22,34 @@ The Windows Communication Foundation (WCF) channel stack is a layered communicat
 ## Channel Shapes  
  Each channel implements one or more interfaces known as channel shape interfaces or channel shapes. Those channel shapes provide the communication-oriented methods such as send and receive or request and reply that the channel implements and the user of the channel calls. At the base of the channel shapes is the <xref:System.ServiceModel.Channels.IChannel> interface, which is an interface that provides a `GetProperty`\<T> method intended as a layered mechanism to access arbitrary features exposed by channels in the stack. The five channel shapes that extend <xref:System.ServiceModel.Channels.IChannel> are:  
   
--   <xref:System.ServiceModel.Channels.IInputChannel>  
+- <xref:System.ServiceModel.Channels.IInputChannel>  
   
--   <xref:System.ServiceModel.Channels.IOutputChannel>  
+- <xref:System.ServiceModel.Channels.IOutputChannel>  
   
--   <xref:System.ServiceModel.Channels.IRequestChannel>  
+- <xref:System.ServiceModel.Channels.IRequestChannel>  
   
--   <xref:System.ServiceModel.Channels.IReplyChannel>  
+- <xref:System.ServiceModel.Channels.IReplyChannel>  
   
--   <xref:System.ServiceModel.Channels.IDuplexChannel>  
+- <xref:System.ServiceModel.Channels.IDuplexChannel>  
   
  Further, each of these shapes has an equivalent that extends <xref:System.ServiceModel.Channels.ISessionChannel%601?displayProperty=nameWithType> to support sessions. These are:  
   
--   <xref:System.ServiceModel.Channels.IInputSessionChannel>  
+- <xref:System.ServiceModel.Channels.IInputSessionChannel>  
   
--   <xref:System.ServiceModel.Channels.IOutputSessionChannel>  
+- <xref:System.ServiceModel.Channels.IOutputSessionChannel>  
   
--   <xref:System.ServiceModel.Channels.IRequestSessionChannel>  
+- <xref:System.ServiceModel.Channels.IRequestSessionChannel>  
   
--   <xref:System.ServiceModel.Channels.IReplySessionChannel>  
+- <xref:System.ServiceModel.Channels.IReplySessionChannel>  
   
--   <xref:System.ServiceModel.Channels.IDuplexSessionChannel>  
+- <xref:System.ServiceModel.Channels.IDuplexSessionChannel>  
   
  The channel shapes are patterned after some of the fundamental message exchange patterns supported by existing transport protocols. For example, one-way messaging corresponds to an <xref:System.ServiceModel.Channels.IInputChannel>/<xref:System.ServiceModel.Channels.IOutputChannel> pair, request-reply corresponds to <xref:System.ServiceModel.Channels.IRequestChannel>/<xref:System.ServiceModel.Channels.IReplyChannel> pairs and two-way duplex communications corresponds to <xref:System.ServiceModel.Channels.IDuplexChannel> (which extends both <xref:System.ServiceModel.Channels.IInputChannel> and <xref:System.ServiceModel.Channels.IOutputChannel>).  
   
 ## Programming with the Channel Stack  
- Channel stacks are typically created using a factory pattern where a binding creates the channel stack. On the send side, a binding is used to build a <xref:System.ServiceModel.ChannelFactory>, which in turn builds a channel stack and returns a reference to the top channel in the stack. The application can then use this channel to send messages. For more information, see [Client Channel-Level Programming](../../../../docs/framework/wcf/extending/client-channel-level-programming.md).  
+ Channel stacks are typically created using a factory pattern where a binding creates the channel stack. On the send side, a binding is used to build a <xref:System.ServiceModel.ChannelFactory>, which in turn builds a channel stack and returns a reference to the top channel in the stack. The application can then use this channel to send messages. For more information, see [Client Channel-Level Programming](client-channel-level-programming.md).  
   
- On the receive side a binding is used to build a <xref:System.ServiceModel.Channels.IChannelListener>, which listens for incoming messages. The <xref:System.ServiceModel.Channels.IChannelListener> provides messages to the listening application by creating channel stacks and handing the application reference to the top channel. The application then uses this channel to receive incoming messages. For more information, see [Service Channel-Level Programming](../../../../docs/framework/wcf/extending/service-channel-level-programming.md).  
+ On the receive side a binding is used to build a <xref:System.ServiceModel.Channels.IChannelListener>, which listens for incoming messages. The <xref:System.ServiceModel.Channels.IChannelListener> provides messages to the listening application by creating channel stacks and handing the application reference to the top channel. The application then uses this channel to receive incoming messages. For more information, see [Service Channel-Level Programming](service-channel-level-programming.md).  
   
 ## The Channel Object Model  
  The channel object model is the core set of interfaces required to implement channels, channel listeners and channel factories. There are also some base classes provided to assist in custom implementations.  
@@ -60,15 +60,15 @@ The Windows Communication Foundation (WCF) channel stack is a layered communicat
   
  <xref:System.ServiceModel.ICommunicationObject> is the core interface that defines the basic state machine that all communication objects implement. <xref:System.ServiceModel.Channels.CommunicationObject> provides an implementation of this core interface that other channel classes can derive from rather than re-implementing the interface. However, this is not required: a custom channel can implement <xref:System.ServiceModel.ICommunicationObject> directly and not inherit from <xref:System.ServiceModel.Channels.CommunicationObject>. None of the classes in Figure 3 are considered part of the channel model; they are helpers available to custom channel implementers who want to build channels.  
   
- ![Channel model](../../../../docs/framework/wcf/extending/media/wcfc-wcfcchannelsigure3omumtreec.gif "wcfc_WCFCChannelsigure3OMUMTreec")  
+ ![Channel model](./media/wcfc-wcfcchannelsigure3omumtreec.gif "wcfc_WCFCChannelsigure3OMUMTreec")  
   
  The following topics describe the channel object model as well as various development areas that help build custom channels.  
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[Service: Channel Listeners and Channels](../../../../docs/framework/wcf/extending/service-channel-listeners-and-channels.md)|Describes channel listeners, which listen for incoming channels in a service application.|  
-|[Client: Channel Factories and Channels](../../../../docs/framework/wcf/extending/client-channel-factories-and-channels.md)|Describes channel factories, which create channels to connect to a service application.|  
-|[Understanding State Changes](../../../../docs/framework/wcf/extending/understanding-state-changes.md)|Describes how the <xref:System.ServiceModel.ICommunicationObject?displayProperty=nameWithType> interface models state changes in channels.|  
-|[Choosing a Message Exchange Pattern](../../../../docs/framework/wcf/extending/choosing-a-message-exchange-pattern.md)|Describes the six basic message exchange patterns that channels can support.|  
-|[Handling Exceptions and Faults](../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)|Describes how to handle faults and exceptions in custom channels.|  
-|[Configuration and Metadata Support](../../../../docs/framework/wcf/extending/configuration-and-metadata-support.md)|Describes how to support the use of custom channels from the application model and how to export and import metadata using bindings and binding elements.|
+|[Service: Channel Listeners and Channels](service-channel-listeners-and-channels.md)|Describes channel listeners, which listen for incoming channels in a service application.|  
+|[Client: Channel Factories and Channels](client-channel-factories-and-channels.md)|Describes channel factories, which create channels to connect to a service application.|  
+|[Understanding State Changes](understanding-state-changes.md)|Describes how the <xref:System.ServiceModel.ICommunicationObject?displayProperty=nameWithType> interface models state changes in channels.|  
+|[Choosing a Message Exchange Pattern](choosing-a-message-exchange-pattern.md)|Describes the six basic message exchange patterns that channels can support.|  
+|[Handling Exceptions and Faults](handling-exceptions-and-faults.md)|Describes how to handle faults and exceptions in custom channels.|  
+|[Configuration and Metadata Support](configuration-and-metadata-support.md)|Describes how to support the use of custom channels from the application model and how to export and import metadata using bindings and binding elements.|

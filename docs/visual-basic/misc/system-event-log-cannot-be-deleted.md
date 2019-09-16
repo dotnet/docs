@@ -8,10 +8,11 @@ An attempt has been made to delete the system event log, which cannot be deleted
   
 ## To correct this error  
   
--   Consider having your application write to an application or custom log, rather than the system event log.  
+- Consider having your application write to an application or custom log, rather than the system event log.  
   
--   Do not attempt to delete the system event log.  
+- Do not attempt to delete the system event log.  
   
 ## See also
+
 - [Administering Event Logs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/4f69axw4(v=vs.90))
 - [How to: Create and Remove Custom Event Logs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/49dwckkz(v=vs.90))

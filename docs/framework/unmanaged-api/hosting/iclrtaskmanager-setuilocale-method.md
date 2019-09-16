@@ -23,13 +23,13 @@ Notifies the common language runtime (CLR) that the host has modified the user i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUILocale (  
     [in] LCID lcid  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lcid`  
  [in] The locale identifier value that maps to the newly assigned geographical culture and language for the user interface.  
   
@@ -57,6 +57,7 @@ HRESULT SetUILocale (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

@@ -17,7 +17,7 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
   
 ### To set the numeric value  
   
-1.  Assign a value to the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property in code or in the Properties window.  
+1. Assign a value to the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property in code or in the Properties window.  
   
     ```vb  
     NumericUpDown1.Value = 55  
@@ -33,7 +33,7 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
   
      -or-  
   
-2.  Call the <xref:System.Windows.Forms.NumericUpDown.UpButton%2A> or <xref:System.Windows.Forms.NumericUpDown.DownButton%2A> method to increase or decrease the value by the amount specified in the <xref:System.Windows.Forms.NumericUpDown.Increment%2A> property.  
+2. Call the <xref:System.Windows.Forms.NumericUpDown.UpButton%2A> or <xref:System.Windows.Forms.NumericUpDown.DownButton%2A> method to increase or decrease the value by the amount specified in the <xref:System.Windows.Forms.NumericUpDown.Increment%2A> property.  
   
     ```vb  
     NumericUpDown1.UpButton()  
@@ -49,7 +49,7 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
   
 ### To return the numeric value  
   
--   Access the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property in code.  
+- Access the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property in code.  
   
     ```vb  
     If NumericUpDown1.Value >= 65 Then  
@@ -84,10 +84,11 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.NumericUpDown>
 - <xref:System.Windows.Forms.NumericUpDown.Value%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.NumericUpDown.Increment%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.NumericUpDown.UpButton%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.NumericUpDown.DownButton%2A?displayProperty=nameWithType>
-- [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)
-- [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md)
+- [NumericUpDown Control](numericupdown-control-windows-forms.md)
+- [NumericUpDown Control Overview](numericupdown-control-overview-windows-forms.md)

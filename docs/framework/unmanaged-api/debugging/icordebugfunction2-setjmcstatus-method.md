@@ -23,13 +23,13 @@ Marks the function represented by this ICorDebugFunction2 for Just My Code stepp
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetJMCStatus (  
     [in] BOOL   bIsJustMyCode  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bIsJustMyCode`  
  [in] Set to `true` to mark the function as user code; otherwise, set to `false`.  
   

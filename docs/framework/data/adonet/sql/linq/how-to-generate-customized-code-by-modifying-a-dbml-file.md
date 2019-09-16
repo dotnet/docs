@@ -8,13 +8,13 @@ You can generate Visual Basic or C# source code from a database markup language 
   
  The steps in this process are as follows:  
   
-1.  Generate a .dbml file.  
+1. Generate a .dbml file.  
   
-2.  Use an editor to modify the .dbml file. Note that the .dbml file must validate against the schema definition (.xsd) file for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] .dbml files. For more information, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md).  
+2. Use an editor to modify the .dbml file. Note that the .dbml file must validate against the schema definition (.xsd) file for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] .dbml files. For more information, see [Code Generation in LINQ to SQL](code-generation-in-linq-to-sql.md).  
   
-3.  Generate the Visual Basic or C# source code.  
+3. Generate the Visual Basic or C# source code.  
   
- The following examples use the SQLMetal command-line tool. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md).  
+ The following examples use the SQLMetal command-line tool. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ## Example  
  The following code generates a .dbml file from the Northwind sample database. As source for the database metadata, you can use either the name of the database or the name of the .mdf file.  
@@ -33,6 +33,7 @@ sqlmetal /namespace:nwind /code:nwind.cs /language:csharp DBMLFile.dbml
 ```  
   
 ## See also
-- [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
-- [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)
-- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
+
+- [Code Generation in LINQ to SQL](code-generation-in-linq-to-sql.md)
+- [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md)
+- [Creating the Object Model](creating-the-object-model.md)

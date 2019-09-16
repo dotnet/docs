@@ -30,11 +30,11 @@ A tuple is a lightweight structure that contains two or more fields whose types 
 ## Array Types  
  There is no single data type comprising all arrays. The data type of a particular instance of an array is determined by the following:  
   
--   The fact of being an array  
+- The fact of being an array  
   
--   The rank (number of dimensions) of the array  
+- The rank (number of dimensions) of the array  
   
--   The element type of the array  
+- The element type of the array  
   
  In particular, the length of a given dimension is not part of the instance's data type. The following example illustrates this.  
   
@@ -56,6 +56,7 @@ Dim arrayE( , ) As Short = New Short(4, 10) {}
  For more information on classes, see [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md).  
   
 ## See also
+
 - [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
 - [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)

@@ -23,7 +23,7 @@ Aborts the computation this ICorDebugEval object is currently performing.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Abort ();  
 ```  
   

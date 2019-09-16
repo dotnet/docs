@@ -36,7 +36,7 @@ Console.WriteLine($"The value of the constant value is {constant.Value}");
 
 This will print the following:
 
-```
+```output
 This is an Constant expression type
 The type of the constant value is System.Int32
 The value of the constant value is 24
@@ -91,7 +91,7 @@ Console.WriteLine($"\tParameter Type: {right.Type.ToString()}, Name: {right.Name
 
 This sample prints the following output:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -241,7 +241,7 @@ is encountered. That way, you know to add a new expression type.)
 When you run this visitor on the addition expression shown above, you get the
 following output:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -311,7 +311,7 @@ Expression<Func<int, int>> sum = (a) => 1 + a + 3 + 4;
 
 Create a visitor for this sum and run the visitor you'll see this output:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -352,7 +352,7 @@ Expression<Func<int, int, int>> sum3 = (a, b) => (1 + a) + (3 + b);
 
 Here's the output from the visitor:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -404,7 +404,7 @@ Expression<Func<int, int>> factorial = (n) =>
 
 This code represents one possible implementation for the
 mathematical *factorial* function. The way I've written this code highlights
-two limitiations of building expression trees by assigning lambda expressions
+two limitations of building expression trees by assigning lambda expressions
 to Expressions. First, statement lambdas are not allowed. That means I can't use
 loops, blocks, if / else statements, and other control structures common in C#. I'm
 limited to using expressions. Second, I can't recursively call the same expression.
@@ -412,8 +412,8 @@ I could if it were already a delegate, but I can't call it in its expression tre
 form. In the section on [building expression trees](expression-trees-building.md)
 you'll learn techniques to overcome these limitations.
 
-
 In this expression, you'll encounter nodes of all these types:
+
 1. Equal (binary expression)
 2. Multiply (binary expression)
 3. Conditional (the ? : expression)
@@ -511,7 +511,7 @@ public class MethodCallVisitor : Visitor
 
 And the output for the expression tree would be:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32

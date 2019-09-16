@@ -22,7 +22,7 @@ Represents a block of function arguments stored contiguously in left-to-right or
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_PRF_FUNCTION_ARGUMENT_RANGE {  
     UINT_PTR startAddress;  
     ULONG length;  
@@ -46,4 +46,5 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_RANGE {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)

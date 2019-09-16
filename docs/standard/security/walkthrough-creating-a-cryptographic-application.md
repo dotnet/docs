@@ -18,12 +18,12 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
  This walkthrough uses the following guidelines for encryption:  
   
--   Use the <xref:System.Security.Cryptography.RijndaelManaged> class, a symmetric algorithm, to encrypt and decrypt data by using its automatically generated <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> and <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>.  
+- Use the <xref:System.Security.Cryptography.RijndaelManaged> class, a symmetric algorithm, to encrypt and decrypt data by using its automatically generated <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> and <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>.  
   
--   Use the <xref:System.Security.Cryptography.RSACryptoServiceProvider>, an asymmetric algorithm, to encrypt and decrypt the key to the data encrypted by <xref:System.Security.Cryptography.RijndaelManaged>. Asymmetric algorithms are best used for smaller amounts of data, such as a key.  
+- Use the <xref:System.Security.Cryptography.RSACryptoServiceProvider>, an asymmetric algorithm, to encrypt and decrypt the key to the data encrypted by <xref:System.Security.Cryptography.RijndaelManaged>. Asymmetric algorithms are best used for smaller amounts of data, such as a key.  
   
     > [!NOTE]
-    >  If you want to protect data on your computer instead of exchanging encrypted content with other people, consider using the <xref:System.Security.Cryptography.ProtectedData> or <xref:System.Security.Cryptography.ProtectedMemory> classes.  
+    > If you want to protect data on your computer instead of exchanging encrypted content with other people, consider using the <xref:System.Security.Cryptography.ProtectedData> or <xref:System.Security.Cryptography.ProtectedMemory> classes.  
   
  The following table summarizes the cryptographic tasks in this topic.  
   
@@ -42,7 +42,7 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   References to the <xref:System.IO> and <xref:System.Security.Cryptography> namespaces.  
+- References to the <xref:System.IO> and <xref:System.Security.Cryptography> namespaces.  
   
 ## Creating a Windows Forms Application  
  Most of the code examples in this walkthrough are designed to be event handlers for button controls. The following table lists the controls required for the sample application and their required names to match the code examples.  
@@ -55,7 +55,7 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
 |<xref:System.Windows.Forms.Button>|`buttonExportPublicKey`|Export Public Key|  
 |<xref:System.Windows.Forms.Button>|`buttonImportPublicKey`|Import Public Key|  
 |<xref:System.Windows.Forms.Button>|`buttonGetPrivateKey`|Get Private Key|  
-|<xref:System.Windows.Forms.Label>|`label1`||  
+|<xref:System.Windows.Forms.Label>|`label1`|Key not set|  
 |<xref:System.Windows.Forms.OpenFileDialog>|`openFileDialog1`||  
 |<xref:System.Windows.Forms.OpenFileDialog>|`openFileDialog2`||  
   
@@ -82,27 +82,27 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
  The `EncryptFile` method does the following:  
   
-1.  Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to encrypt the content.  
+1. Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to encrypt the content.  
   
-2.  Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to encrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
+2. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to encrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
   
-3.  Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and encrypt the <xref:System.IO.FileStream> of the source file, in blocks of bytes, into a destination <xref:System.IO.FileStream> object for the encrypted file.  
+3. Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and encrypt the <xref:System.IO.FileStream> of the source file, in blocks of bytes, into a destination <xref:System.IO.FileStream> object for the encrypted file.  
   
-4.  Determines the lengths of the encrypted key and IV, and creates byte arrays of their length values.  
+4. Determines the lengths of the encrypted key and IV, and creates byte arrays of their length values.  
   
-5.  Writes the Key, IV, and their length values to the encrypted package.  
+5. Writes the Key, IV, and their length values to the encrypted package.  
   
  The encryption package uses the following format:  
   
--   Key length, bytes 0 - 3  
+- Key length, bytes 0 - 3  
   
--   IV length, bytes 4 - 7  
+- IV length, bytes 4 - 7  
   
--   Encrypted key  
+- Encrypted key  
   
--   IV  
+- IV  
   
--   Cipher text  
+- Cipher text  
   
  You can use the lengths of the key and IV to determine the starting points and lengths of all parts of the encryption package, which can then be used to decrypt the file.  
   
@@ -121,15 +121,15 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
  The `Decrypt` method does the following:  
   
-1.  Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to decrypt the content.  
+1. Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to decrypt the content.  
   
-2.  Reads the first eight bytes of the <xref:System.IO.FileStream> of the encrypted package into byte arrays to obtain the lengths of the encrypted key and the IV.  
+2. Reads the first eight bytes of the <xref:System.IO.FileStream> of the encrypted package into byte arrays to obtain the lengths of the encrypted key and the IV.  
   
-3.  Extracts the key and IV from the encryption package into byte arrays.  
+3. Extracts the key and IV from the encryption package into byte arrays.  
   
-4.  Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to decrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
+4. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to decrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
   
-5.  Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and decrypt the cipher text section of the <xref:System.IO.FileStream> encryption package, in blocks of bytes, into the <xref:System.IO.FileStream> object for the decrypted file. When this is finished, the decryption is completed.  
+5. Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and decrypt the cipher text section of the <xref:System.IO.FileStream> encryption package, in blocks of bytes, into the <xref:System.IO.FileStream> object for the decrypted file. When this is finished, the decryption is completed.  
   
  Add the following code as the `Click` event handler for the `Decrypt File` button.  
   
@@ -176,33 +176,33 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
 #### To create keys, encrypt, and decrypt  
   
-1.  Click the `Create Keys` button. The label displays the key name and shows that it is a full key pair.  
+1. Click the `Create Keys` button. The label displays the key name and shows that it is a full key pair.  
   
-2.  Click the `Export Public Key` button. Note that exporting the public key parameters does not change the current key.  
+2. Click the `Export Public Key` button. Note that exporting the public key parameters does not change the current key.  
   
-3.  Click the `Encrypt File` button and select a file.  
+3. Click the `Encrypt File` button and select a file.  
   
-4.  Click the `Decrypt File` button and select the file just encrypted.  
+4. Click the `Decrypt File` button and select the file just encrypted.  
   
-5.  Examine the file just decrypted.  
+5. Examine the file just decrypted.  
   
-6.  Close the application and restart it to test retrieving persisted key containers in the next scenario.  
+6. Close the application and restart it to test retrieving persisted key containers in the next scenario.  
   
 #### To encrypt using the public key  
   
-1.  Click the `Import Public Key` button. The label displays the key name and shows that it is public only.  
+1. Click the `Import Public Key` button. The label displays the key name and shows that it is public only.  
   
-2.  Click the `Encrypt File` button and select a file.  
+2. Click the `Encrypt File` button and select a file.  
   
-3.  Click the `Decrypt File` button and select the file just encrypted. This will fail because you must have the private key to decrypt.  
+3. Click the `Decrypt File` button and select the file just encrypted. This will fail because you must have the private key to decrypt.  
   
  This scenario demonstrates having only the public key to encrypt a file for another person. Typically that person would give you only the public key and withhold the private key for decryption.  
   
 #### To decrypt using the private key  
   
-1.  Click the `Get Private Key` button. The label displays the key name and shows whether it is the full key pair.  
+1. Click the `Get Private Key` button. The label displays the key name and shows whether it is the full key pair.  
   
-2.  Click the `Decrypt File` button and select the file just encrypted. This will be successful because you have the full key pair to decrypt.  
+2. Click the `Decrypt File` button and select the file just encrypted. This will be successful because you have the full key pair to decrypt.  
   
 ## See also
 

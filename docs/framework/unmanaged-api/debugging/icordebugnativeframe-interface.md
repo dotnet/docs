@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugNativeFrame Interface1"
+title: "ICorDebugNativeFrame Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugNativeFrame"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugNativeFrame Interface1
+# ICorDebugNativeFrame Interface
+
 A specialized implementation of ICorDebugFrame used for native frames.  
   
 ## Methods  
@@ -37,7 +38,7 @@ A specialized implementation of ICorDebugFrame used for native frames.
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -49,4 +50,5 @@ A specialized implementation of ICorDebugFrame used for native frames.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

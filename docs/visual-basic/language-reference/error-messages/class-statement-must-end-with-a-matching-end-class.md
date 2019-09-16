@@ -15,10 +15,11 @@ ms.assetid: 583f3029-bc3a-4e06-866f-92dbecc46f19
   
 ## To correct this error  
   
--   Locate and remove the unnecessary `Class` statement.  
+- Locate and remove the unnecessary `Class` statement.  
   
--   Conclude the `Class` block with a matching `End Class`.  
+- Conclude the `Class` block with a matching `End Class`.  
   
 ## See also
+
 - [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)
 - [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)

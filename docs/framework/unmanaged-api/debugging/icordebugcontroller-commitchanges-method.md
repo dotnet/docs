@@ -22,4 +22,3 @@ ms.author: "ronpet"
 `CommitChanges` is obsolete. Do not call this method.  
   
 ## See also
-

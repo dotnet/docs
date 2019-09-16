@@ -4,11 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb
 ---
 # How to: Retrieve Metadata Over a non-MEX Binding
-This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX binding. The code in this sample is based on the [Custom Secure Metadata Endpoint](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md) sample.  
+This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX binding. The code in this sample is based on the [Custom Secure Metadata Endpoint](../samples/custom-secure-metadata-endpoint.md) sample.  
   
 ### To retrieve metadata over a non-MEX binding  
   
-1.  Determine the binding used by the MEX endpoint. For Windows Communication Foundation (WCF) services, you can determine the MEX binding by accessing the service's configuration file. In this case, the MEX binding is defined in the following service configuration.  
+1. Determine the binding used by the MEX endpoint. For Windows Communication Foundation (WCF) services, you can determine the MEX binding by accessing the service's configuration file. In this case, the MEX binding is defined in the following service configuration.  
   
     ```xml  
     <services>  
@@ -42,7 +42,7 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
      </bindings>  
     ```  
   
-2.  In the client configuration file, configure the same custom binding. Here the client also defines a `clientCredentials` behavior to provide a certificate to use to authenticate to the service when requesting metadata from the MEX endpoint. When using Svcutil.exe to request metadata over a custom binding, you should add the MEX endpoint configuration to the configuration file for Svcutil.exe (Svcutil.exe.config), and the name of the endpoint configuration should match the URI scheme of the address of the MEX endpoint, as shown in the following code.  
+2. In the client configuration file, configure the same custom binding. Here the client also defines a `clientCredentials` behavior to provide a certificate to use to authenticate to the service when requesting metadata from the MEX endpoint. When using Svcutil.exe to request metadata over a custom binding, you should add the MEX endpoint configuration to the configuration file for Svcutil.exe (Svcutil.exe.config), and the name of the endpoint configuration should match the URI scheme of the address of the MEX endpoint, as shown in the following code.  
   
     ```xml  
     <system.serviceModel>  
@@ -77,9 +77,9 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
     </system.serviceModel>  
     ```  
   
-3.  Create a `MetadataExchangeClient` and call `GetMetadata`. There are two ways to do this: you can specify the custom binding in configuration, or you can specify the custom binding in code, as shown in the following example.  
+3. Create a `MetadataExchangeClient` and call `GetMetadata`. There are two ways to do this: you can specify the custom binding in configuration, or you can specify the custom binding in code, as shown in the following example.  
   
-    ```  
+    ```csharp
     // The custom binding is specified in configuration.  
     EndpointAddress mexAddress = new EndpointAddress("http://localhost:8000/ServiceModelSamples/Service/mex");  
   
@@ -108,14 +108,15 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
     MetadataSet mexSet2 = mexClient2.GetMetadata(mexAddress);  
     ```  
   
-4.  Create a `WsdlImporter` and call `ImportAllEndpoints`, as shown in the following code.  
+4. Create a `WsdlImporter` and call `ImportAllEndpoints`, as shown in the following code.  
   
-    ```  
+    ```csharp
     WsdlImporter importer = new WsdlImporter(mexSet);  
     ServiceEndpointCollection endpoints = importer.ImportAllEndpoints();  
     ```  
   
-5.  At this point, you have a collection of service endpoints. For more information about importing metadata, see [How to: Import Metadata into Service Endpoints](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md).  
+5. At this point, you have a collection of service endpoints. For more information about importing metadata, see [How to: Import Metadata into Service Endpoints](../feature-details/how-to-import-metadata-into-service-endpoints.md).  
   
 ## See also
-- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
+
+- [Metadata](../feature-details/metadata.md)

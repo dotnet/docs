@@ -9,11 +9,11 @@ ms.assetid: cb846617-2b1a-44ff-bd7f-5835f5ea37fa
 # Copying DataSet Contents
 You can create a copy of a <xref:System.Data.DataSet> so that you can work with data without affecting the original data, or work with a subset of the data from a **DataSet**. When copying a **DataSet**, you can:  
   
--   Create an exact copy of the **DataSet**, including the schema, data, row state information, and row versions.  
+- Create an exact copy of the **DataSet**, including the schema, data, row state information, and row versions.  
   
--   Create a **DataSet** that contains the schema of an existing **DataSet**, but only rows that have been modified. You can return all rows that have been modified, or specify a specific **DataRowState**. For more information about row states, see [Row States and Row Versions](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md).  
+- Create a **DataSet** that contains the schema of an existing **DataSet**, but only rows that have been modified. You can return all rows that have been modified, or specify a specific **DataRowState**. For more information about row states, see [Row States and Row Versions](row-states-and-row-versions.md).  
   
--   Copy the schema, or relational structure, of the **DataSet** only, without copying any rows. Rows can be imported into an existing <xref:System.Data.DataTable> using <xref:System.Data.DataTable.ImportRow%2A>.  
+- Copy the schema, or relational structure, of the **DataSet** only, without copying any rows. Rows can be imported into an existing <xref:System.Data.DataTable> using <xref:System.Data.DataTable.ImportRow%2A>.  
   
  To create an exact copy of the **DataSet** that includes both schema and data, use the <xref:System.Data.DataSet.Copy%2A> method of the **DataSet**. The following code example shows how to create an exact copy of the **DataSet**.  
   
@@ -89,7 +89,8 @@ foreach (DataRow copyRow in copyRows)
 ```  
   
 ## See also
+
 - <xref:System.Data.DataSet>
 - <xref:System.Data.DataTable>
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [DataSets, DataTables, and DataViews](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

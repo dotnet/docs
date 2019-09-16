@@ -1,55 +1,78 @@
 ---
-title: "How to: View Certificates with the MMC Snap-in"
-ms.date: "03/30/2017"
+title: "How to: View certificates with the MMC snap-in"
+ms.date: 02/25/2019
 helpviewer_keywords: 
   - "certificates [WCF], viewing with the MMC snap-in"
 ms.assetid: 2b8782aa-ebb4-4ee7-974b-90299e356dc5
 ---
-# How to: View Certificates with the MMC Snap-in
-A common type of credential is the X.509 certificate. When creating secure services or clients, you can specify a certificate be used as the client or service credential by using methods such as the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method. The method requires various parameters, such as the store where the certificate is stored and a value to use when searching for the certificate. The following procedure demonstrates how to examine the stores on a computer to find an appropriate certificate. For an example of finding the certificate thumbprint, see [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md).  
+# How to: View certificates with the MMC snap-in
+When you create a secure client or service, you can use a [certificate](working-with-certificates.md) as the credential. For example, a common type of credential is the X.509 certificate, which you create with the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType> method. 
+
+There are three different types of certificate stores that you can examine with the Microsoft Management Console (MMC) on Windows systems:
+
+- Local computer: The store is local to the device and global to all users on the device.
+
+- Current user: The store is local to the current user account on the device.
+
+- Service account: The store is local to a particular service on the device.
+
+## View certificates in the MMC snap-in 
+
+The following procedure demonstrates how to examine the stores on your local device to find an appropriate certificate: 
   
-### To view certificates in the MMC snap-in  
+1. Select **Run** from the **Start** menu, and then enter *mmc*. 
+
+    The MMC appears. 
   
-1.  Open a Command Prompt window.  
+2. From the **File** menu, select **Add/Remove Snap In**. 
+    
+    The **Add or Remove Snap-ins** window appears.
   
-2.  Type `mmc` and press the ENTER key. Note that to view certificates in the local machine store, you must be in the Administrator role.  
+3. From the **Available snap-ins** list, choose **Certificates**, then select **Add**.  
+
+    ![Add certificate snap-in](./media/mmc-add-certificate-snap-in.png)
   
-3.  On the **File** menu, click **Add/Remove Snap In**.  
+4. In the **Certificates snap-in** window, select **Computer account**, and then select **Next**. 
   
-4.  Click **Add**.  
+    Optionally, you can select **My user account** for the current user or **Service account** for a particular service. 
+
+    > [!NOTE]
+    > If you're not an administrator for your device, you can manage certificates only for your user account.
   
-5.  In the **Add Standalone Snap-in** dialog box, select **Certificates**.  
+5. In the **Select Computer** window, leave **Local computer** selected, and then select **Finish**.  
   
-6.  Click **Add**.  
+6. In the **Add or Remove Snap-in** window, select **OK**.  
   
-7.  In the **Certificates snap-in** dialog box, select **Computer account** and click **Next**. Optionally, you can select **My User account** or **Service account**. If you are not an administrator of the computer, you can manage certificates only for your user account.  
+    ![Add certificate snap-in](./media/mmc-certificate-snap-in-selected.png)
+
+7. Optional: From the **File** menu, select **Save** or **Save As** to save the MMC console file for later use.  
+
+8. To view your certificates in the MMC snap-in, select **Console Root** in the left pane, then expand **Certificates (Local Computer)**.
+
+    A list of directories for each type of certificate appears. From each certificate directory, you can view, export, import, and delete its certificates.
+
+## View certificates with the Certificate Manager tool
+
+You can also view, export, import, and delete certificates by using the Certificate Manager tool.
+
+### To view certificates for the local device
+
+1. Select **Run** from the **Start** menu, and then enter *certlm.msc*. 
+
+    The Certificate Manager tool for the local device appears. 
   
-8.  In the **Select Computer** dialog box, click **Finish**.  
+2. To view your certificates, under **Certificates - Local Computer** in the left pane, expand the directory for the type of certificate you want to view.
+
+### To view certificates for the current user
+
+1. Select **Run** from the **Start** menu, and then enter *certmgr.msc*. 
+
+    The Certificate Manager tool for the current user appears. 
   
-9. In the **Add Standalone Snap-in** dialog box, click **Close**.  
-  
-10. On the **Add/Remove Snap-in** dialog box, click **OK**.  
-  
-11. In the **Console Root** window, click **Certificates (Local Computer)** to view the certificate stores for the computer.  
-  
-12. Optional. To view certificates for your account, repeat steps 3 to 6. In step 7, instead of selecting **Computer account**, click **My User account** and repeat steps 8 to 10.  
-  
-13. Optional. On the **File** menu, click **Save** or **Save As**. Save the console file for later reuse.  
-  
-## Viewing Certificates with Internet Explorer  
- You can also view, export, import, and delete certificates by using Internet Explorer.  
-  
-#### To view certificates with Internet Explorer  
-  
-1.  In Internet Explorer, click **Tools**, then click **Internet Options** to display the **Internet Options** dialog box.  
-  
-2.  Click the **Content** tab.  
-  
-3.  Under **Certificates**, click **Certificates**.  
-  
-4.  To view details of any certificate, select the certificate and click **View**.  
-  
+2. To view your certificates, under **Certificates - Current User** in the left pane, expand the directory for the type of certificate you want to view.
+
 ## See also
-- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)
-- [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)
+
+- [Working with certificates](working-with-certificates.md)
+- [How to: Create temporary certificates for use during development](how-to-create-temporary-certificates-for-use-during-development.md)
+- [How to: Retrieve the thumbprint of a certificate](how-to-retrieve-the-thumbprint-of-a-certificate.md)

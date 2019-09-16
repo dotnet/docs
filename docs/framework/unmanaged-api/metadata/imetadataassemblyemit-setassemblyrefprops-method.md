@@ -23,7 +23,7 @@ Modifies the specified `AssemblyRef` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyRefProps (  
     [in] mdAssemblyRef              ar,  
     [in] const void                 *pbPublicKeyOrToken,  
@@ -36,7 +36,7 @@ HRESULT SetAssemblyRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ar`  
  [in] The metadata token that specifies the `AssemblyRef` metadata structure to be modified.  
   
@@ -74,4 +74,5 @@ HRESULT SetAssemblyRefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

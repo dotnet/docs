@@ -23,13 +23,13 @@ Gets a value that indicates whether this module exists only in memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsInMemory(  
     [out] BOOL *pInMemory  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pInMemory`  
  [out] `true` if this module exists only in memory; otherwise, `false`.  
   
@@ -46,5 +46,3 @@ HRESULT IsInMemory(
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-
-

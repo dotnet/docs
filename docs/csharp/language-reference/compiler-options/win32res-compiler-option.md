@@ -28,15 +28,15 @@ The **-win32res** option inserts a Win32 resource in the output file.
   
  A Win32 resource can contain version or bitmap (icon) information that would help identify your application in the File Explorer. If you do not specify **-win32res**, the compiler will generate version information based on the assembly version.  
   
- See [-linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md) (to reference) or [-resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) (to attach) a .NET Framework resource file.  
+ See [-linkresource](./linkresource-compiler-option.md) (to reference) or [-resource](./resource-compiler-option.md) (to attach) a .NET Framework resource file.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Application** property page.  
+2. Click the **Application** property page.  
   
-3.  Click on the **Resource File** button and choose a file by using the combo box.  
+3. Click on the **Resource File** button and choose a file by using the combo box.  
   
 ## Example  
  Compile `in.cs` and attach a Win32 resource file `rf.res` to produce `in.exe`:  
@@ -47,5 +47,5 @@ csc -win32res:rf.res in.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

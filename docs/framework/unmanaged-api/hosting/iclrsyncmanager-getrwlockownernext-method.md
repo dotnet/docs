@@ -23,14 +23,14 @@ Gets the next [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihost
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT GetRWLockOwnerNext (  
     [in] SIZE_T       Iterator,  
     [out] IHostTask  *ppOwnerHostTask  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Iterator`  
  [in] The iterator that was created by using a call to [CreateRWLockOwnerIterator](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-createrwlockowneriterator-method.md).  
   
@@ -52,7 +52,7 @@ HRESULT GetRWLockOwnerNext (
  If `ppOwnerHostTask` is set to null, the iteration has terminated, and the host should call the [DeleteRWLockOwnerIterator](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-deleterwlockowneriterator-method.md) method.  
   
 > [!NOTE]
->  The CLR calls `AddRef` on the `IHostTask` to which `ppOwnerHostTask` points to prevent this task from exiting while the host holds the pointer. The host must call `Release` to decrement the reference count when it is finished.  
+> The CLR calls `AddRef` on the `IHostTask` to which `ppOwnerHostTask` points to prevent this task from exiting while the host holds the pointer. The host must call `Release` to decrement the reference count when it is finished.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -64,5 +64,6 @@ HRESULT GetRWLockOwnerNext (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

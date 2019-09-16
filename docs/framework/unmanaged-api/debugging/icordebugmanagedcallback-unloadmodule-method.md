@@ -23,14 +23,14 @@ Notifies the debugger that a common language runtime module (DLL) has been unloa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadModule (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugModule     *pModule  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain that contained the module.  
   
@@ -50,5 +50,6 @@ HRESULT UnloadModule (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [LoadModule Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadmodule-method.md)
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

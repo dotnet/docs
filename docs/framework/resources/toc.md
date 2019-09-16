@@ -1,6 +1,0 @@
-# [Resources in .NET apps](index.md)
-## [Create resource files](creating-resource-files-for-desktop-apps.md)
-### [Work with .resx files programmatically](working-with-resx-files-programmatically.md)
-## [Create satellite assemblies](creating-satellite-assemblies-for-desktop-apps.md)
-## [Package and deploy resources](packaging-and-deploying-resources-in-desktop-apps.md)
-## [Retrieve resources](retrieving-resources-in-desktop-apps.md)

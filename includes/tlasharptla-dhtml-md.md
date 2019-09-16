@@ -1,1 +1,0 @@
-Dynamic HTML (DHTML)

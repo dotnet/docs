@@ -54,7 +54,7 @@ Table 1 shows available query operators. In addition, see Table2, which compares
 
 This table assumes a database in the following form:
 
-![Sample Database Diagram](../media/StudentCourseDB.png)
+![Diagram that shows a sample database.](./media/query-expressions/student-course-database.png)
 
 The code in the tables that follow also assumes the following database connection code. Projects should add references to System.Data,  System.Data.Linq, and FSharp.Data.TypeProviders assemblies. The code that creates this database is included at the end of this topic.
 
@@ -495,9 +495,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 ## Comparison of Transact-SQL and F# Query Expressions
 The following table shows some common Transact-SQL queries and their equivalents in F#. The code in this table also assumes the same database as the previous table and the same initial code to set up the type provider.
 
-
 ### Table 2. Transact-SQL and F# Query Expressions
-
 
 <table style="width:100%">
   <tr>
@@ -505,7 +503,7 @@ The following table shows some common Transact-SQL queries and their equivalents
     <th>F# Query Expression (case sensitive)</th>
   </tr>
 <tr><td>
-Select all fields from table.</br>
+Select all fields from table.<br>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 </code></pre>
@@ -1004,7 +1002,7 @@ query {
     for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
-             (student.StudentID, System.Nullable<int>(100), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(100), student.Age)
          else (student.StudentID, student.Age, student.Age))
 }
 </code></pre>
@@ -1028,9 +1026,9 @@ query {
     for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
-             (student.StudentID, System.Nullable<int>(100), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(100), student.Age)
          elif student.Age.HasValue && student.Age.Value = 0 then
-             (student.StudentID, System.Nullable<int>(1000), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(1000), student.Age)
          else (student.StudentID, student.Age, student.Age))
 }
 </code></pre>
@@ -1271,7 +1269,6 @@ let num =
     }
 printfn "Last number: %d" num
 
-
 open Microsoft.FSharp.Linq
 
 printfn "\nlastOrDefault query operator."
@@ -1471,7 +1468,6 @@ query {
     select number
 }
 |> Seq.iter (fun number -> printfn "Number = %d" number)
-
 
 printfn "\n sumBy query operator"
 query {
@@ -1863,12 +1859,9 @@ And here is the full output when this code is run in F# Interactive.
 ```
 --> Referenced 'C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\FSharp.Data.TypeProviders.dll'
 
-
 --> Referenced 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Data.dll'
 
-
 --> Referenced 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Data.Linq.dll'
-
 
 contains query operator
 Binding session to 'C:\Users\ghogen\AppData\Local\Temp\tmp5E3C.dll'...

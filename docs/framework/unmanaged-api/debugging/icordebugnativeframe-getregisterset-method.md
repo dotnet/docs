@@ -23,13 +23,13 @@ Gets the register set for this stack frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisterSet (  
     [out] ICorDebugRegisterSet **ppRegisters  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRegisters`  
  [out] A pointer to the address of an [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) object that represents the register set for this stack frame.  
   
@@ -43,4 +43,3 @@ HRESULT GetRegisterSet (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

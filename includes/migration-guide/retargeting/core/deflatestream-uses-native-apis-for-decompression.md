@@ -8,4 +8,3 @@
 |Version|4.7.2|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.IO.Compression.DeflateStream?displayProperty=nameWithType></li><li><xref:System.IO.Compression.GZipStream?displayProperty=nameWithType></li></ul>|
-

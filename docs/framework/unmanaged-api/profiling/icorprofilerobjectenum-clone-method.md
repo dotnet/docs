@@ -23,12 +23,12 @@ Gets an interface pointer to a copy of this [ICorProfilerObjectEnum](../../../..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (  
     [out] ICorProfilerObjectEnum   **ppEnum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to the interface pointer that in turn points to the copy of this `ICorProfilerObjectEnum` interface. The copy maintains its own enumeration state separately from this one. However, the copy's initial cursor position will be the same as this enumerator's current cursor position.  
   
@@ -42,4 +42,5 @@ HRESULT Clone (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerObjectEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerobjectenum-interface.md)

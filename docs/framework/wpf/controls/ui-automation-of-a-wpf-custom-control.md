@@ -15,9 +15,7 @@ ms.assetid: 47b310fc-fbd5-4ce2-a606-22d04c6d4911
 [!INCLUDE[TLA#tla_uiautomation](../../../../includes/tlasharptla-uiautomation-md.md)] provides a single, generalized interface that automation clients can use to examine or operate the user interfaces of a variety of platforms and frameworks. [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] enables both quality-assurance (test) code and accessibility applications such as screen readers to examine user-interface elements and simulate user interaction with them from other code. For information about [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] across all platforms, see Accessibility.  
   
  This topic describes how to implement a server-side UI Automation provider for a custom control that runs in a WPF application. WPF supports [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] through a tree of peer automation objects that parallels the tree of user interface elements. Test code and applications that provide accessibility features can use automation peer objects directly (for in-process code) or through the generalized interface provided by [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)].  
-  
- 
-  
+
 <a name="AutomationPeerClasses"></a>   
 ## Automation Peer Classes  
  WPF controls support [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] through a tree of peer classes that derive from <xref:System.Windows.Automation.Peers.AutomationPeer>. By convention, peer class names begin with the control class name and end with "AutomationPeer". For example, <xref:System.Windows.Automation.Peers.ButtonAutomationPeer> is the peer class for the <xref:System.Windows.Controls.Button> control class. The peer classes are roughly equivalent to [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] control types but are specific to [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] elements. Automation code that accesses WPF applications through the [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] interface does not use automation peers directly, but automation code in the same process space can use automation peers directly.  
@@ -48,8 +46,8 @@ ms.assetid: 47b310fc-fbd5-4ce2-a606-22d04c6d4911
 ### Override GetPattern  
  Automation peers simplify some implementation aspects of server-side [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] providers, but custom control automation peers must still handle pattern interfaces. Like non-WPF providers, peers support control patterns by providing implementations of interfaces in the <xref:System.Windows.Automation.Provider?displayProperty=nameWithType> namespace, such as <xref:System.Windows.Automation.Provider.IInvokeProvider>. The control pattern interfaces can be implemented by the peer itself or by another object. The peer's implementation of <xref:System.Windows.Automation.Peers.AutomationPeer.GetPattern%2A> returns the object that supports the specified pattern. [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] code calls the <xref:System.Windows.Automation.Peers.UIElementAutomationPeer.GetPattern%2A> method and specifies a <xref:System.Windows.Automation.Peers.PatternInterface> enumeration value. Your override of <xref:System.Windows.Automation.Peers.UIElementAutomationPeer.GetPattern%2A> should return the object that implements the specified pattern. If your control does not have a custom implementation of a pattern, you can call the base type's implementation of <xref:System.Windows.Automation.Peers.AutomationPeer.GetPattern%2A> to retrieve either its implementation or null if the pattern is not supported for this control type. For example, a custom NumericUpDown control can be set to a value within a range, so its [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] peer would implement the <xref:System.Windows.Automation.Provider.IRangeValueProvider> interface. The following example shows how the peer's <xref:System.Windows.Automation.Peers.UIElementAutomationPeer.GetPattern%2A> method is overridden to respond to a <xref:System.Windows.Automation.Peers.PatternInterface.RangeValue?displayProperty=nameWithType> value.  
   
- [!code-csharp[CustomControlNumericUpDown#GetPattern](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/NumericUpDown.cs#getpattern)]
- [!code-vb[CustomControlNumericUpDown#GetPattern](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/numericupdown.vb#getpattern)]  
+ [!code-csharp[CustomControlNumericUpDown#GetPattern](~/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/NumericUpDown.cs#getpattern)]
+ [!code-vb[CustomControlNumericUpDown#GetPattern](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/numericupdown.vb#getpattern)]  
   
  A <xref:System.Windows.Automation.Peers.UIElementAutomationPeer.GetPattern%2A> method can also specify a subelement as a pattern provider. The following code shows how <xref:System.Windows.Controls.ItemsControl> transfers scroll pattern handling to the peer of its internal <xref:System.Windows.Controls.ScrollViewer> control.  
   
@@ -100,8 +98,8 @@ End Class
 ### Override "Core" Methods  
  Automation code gets information about your control by calling public methods of the peer class. To provide information about your control, override each method whose name ends with "Core" when your control implementation differs from that of that provided by the base automation peer class. At a minimum, your control must implement the <xref:System.Windows.Automation.Peers.AutomationPeer.GetClassNameCore%2A> and <xref:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore%2A> methods, as shown in the following example.  
   
- [!code-csharp[CustomControlNumericUpDown#CoreOverrides](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/NumericUpDown.cs#coreoverrides)]
- [!code-vb[CustomControlNumericUpDown#CoreOverrides](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/numericupdown.vb#coreoverrides)]  
+ [!code-csharp[CustomControlNumericUpDown#CoreOverrides](~/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/NumericUpDown.cs#coreoverrides)]
+ [!code-vb[CustomControlNumericUpDown#CoreOverrides](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/numericupdown.vb#coreoverrides)]  
   
  Your implementation of <xref:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore%2A> describes your control by returning a <xref:System.Windows.Automation.ControlType> value. Although you can return <xref:System.Windows.Automation.ControlType.Custom?displayProperty=nameWithType>, you should return one of the more specific control types if it accurately describes your control. A return value of <xref:System.Windows.Automation.ControlType.Custom?displayProperty=nameWithType> requires extra work for the provider to implement [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)], and [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] client products are unable to anticipate the control structure, keyboard interaction, and possible control patterns.  
   
@@ -140,15 +138,17 @@ Public Class RangePeer2
 End Class  
 ```  
   
- For an example implementation, see [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://go.microsoft.com/fwlink/?LinkID=160025).  
+For an example implementation, see the [C#](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) source code that implements and consumes a NumericUpDown custom control.  
   
 ### Raise Events  
  Automation clients can subscribe to automation events. Custom controls must report changes to control state by calling the <xref:System.Windows.Automation.Peers.AutomationPeer.RaiseAutomationEvent%2A> method. Similarly, when a property value changes, call the <xref:System.Windows.Automation.Peers.AutomationPeer.RaisePropertyChangedEvent%2A> method. The following code shows how to get the peer object from within the control code and call a method to raise an event. As an optimization, the code determines if there are any listeners for this event type. Raising the event only when there are listeners avoids unnecessary overhead and helps the control remain responsive.  
   
- [!code-csharp[CustomControlNumericUpDown#RaiseEventFromControl](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/NumericUpDown.cs#raiseeventfromcontrol)]
- [!code-vb[CustomControlNumericUpDown#RaiseEventFromControl](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/numericupdown.vb#raiseeventfromcontrol)]  
+ [!code-csharp[CustomControlNumericUpDown#RaiseEventFromControl](~/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/NumericUpDown.cs#raiseeventfromcontrol)]
+ [!code-vb[CustomControlNumericUpDown#RaiseEventFromControl](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/numericupdown.vb#raiseeventfromcontrol)]  
   
 ## See also
-- [UI Automation Overview](../../../../docs/framework/ui-automation/ui-automation-overview.md)
-- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://go.microsoft.com/fwlink/?LinkID=160025)
-- [Server-Side UI Automation Provider Implementation](../../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+
+- [UI Automation Overview](../../ui-automation/ui-automation-overview.md)
+- [Server-Side UI Automation Provider Implementation](../../ui-automation/server-side-ui-automation-provider-implementation.md)
+- [NumericUpDown custom control (C#) on GitHub](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp)  
+- [NumericUpDown custom control (Visual Basic) on GitHub](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic)

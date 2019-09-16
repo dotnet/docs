@@ -57,9 +57,7 @@ Most list controls (such as the <xref:System.Windows.Forms.ListBox?displayProper
 
 This example requires:
 
-* That a reference to System.Core.dll be added to the project.
-
-* That the following namespaces be imported:
+- That the following namespaces be imported:
 
   <xref:System> (in C# code)
 

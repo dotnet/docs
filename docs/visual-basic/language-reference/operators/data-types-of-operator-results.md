@@ -16,21 +16,21 @@ Visual Basic determines the result data type of an operation based on the data t
 ## Data Type Ranges  
  The ranges of the relevant data types, in order from smallest to largest, are as follows:  
   
--   [Boolean](../../../visual-basic/language-reference/data-types/boolean-data-type.md) — two possible values  
+- [Boolean](../../../visual-basic/language-reference/data-types/boolean-data-type.md) — two possible values  
   
--   [SByte](../../../visual-basic/language-reference/data-types/sbyte-data-type.md), [Byte](../../../visual-basic/language-reference/data-types/byte-data-type.md) — 256 possible integral values  
+- [SByte](../../../visual-basic/language-reference/data-types/sbyte-data-type.md), [Byte](../../../visual-basic/language-reference/data-types/byte-data-type.md) — 256 possible integral values  
   
--   [Short](../../../visual-basic/language-reference/data-types/short-data-type.md), [UShort](../../../visual-basic/language-reference/data-types/ushort-data-type.md) — 65,536 (6.5...E+4) possible integral values  
+- [Short](../../../visual-basic/language-reference/data-types/short-data-type.md), [UShort](../../../visual-basic/language-reference/data-types/ushort-data-type.md) — 65,536 (6.5...E+4) possible integral values  
   
--   [Integer](../../../visual-basic/language-reference/data-types/integer-data-type.md), [UInteger](../../../visual-basic/language-reference/data-types/uinteger-data-type.md) — 4,294,967,296 (4.2...E+9) possible integral values  
+- [Integer](../../../visual-basic/language-reference/data-types/integer-data-type.md), [UInteger](../../../visual-basic/language-reference/data-types/uinteger-data-type.md) — 4,294,967,296 (4.2...E+9) possible integral values  
   
--   [Long](../../../visual-basic/language-reference/data-types/long-data-type.md), [ULong](../../../visual-basic/language-reference/data-types/ulong-data-type.md) — 18,446,744,073,709,551,615 (1.8...E+19) possible integral values  
+- [Long](../../../visual-basic/language-reference/data-types/long-data-type.md), [ULong](../../../visual-basic/language-reference/data-types/ulong-data-type.md) — 18,446,744,073,709,551,615 (1.8...E+19) possible integral values  
   
--   [Decimal](../../../visual-basic/language-reference/data-types/decimal-data-type.md) — 1.5...E+29 possible integral values, maximum range 7.9...E+28 (absolute value)  
+- [Decimal](../../../visual-basic/language-reference/data-types/decimal-data-type.md) — 1.5...E+29 possible integral values, maximum range 7.9...E+28 (absolute value)  
   
--   [Single](../../../visual-basic/language-reference/data-types/single-data-type.md) — maximum range 3.4...E+38 (absolute value)  
+- [Single](../../../visual-basic/language-reference/data-types/single-data-type.md) — maximum range 3.4...E+38 (absolute value)  
   
--   [Double](../../../visual-basic/language-reference/data-types/double-data-type.md) — maximum range 1.7...E+308 (absolute value)  
+- [Double](../../../visual-basic/language-reference/data-types/double-data-type.md) — maximum range 1.7...E+308 (absolute value)  
   
  For more information on Visual Basic data types, see [Data Types](../../../visual-basic/language-reference/data-types/index.md).  
   
@@ -62,16 +62,16 @@ Visual Basic determines the result data type of an operation based on the data t
 ## Integer Arithmetic  
  The result data type of an integer operation depends on the data types of the operands. In general, Visual Basic uses the following policies for determining the result data type:  
   
--   If both operands of a binary operator have the same data type, the result has that data type. An exception is `Boolean`, which is forced to `Short`.  
+- If both operands of a binary operator have the same data type, the result has that data type. An exception is `Boolean`, which is forced to `Short`.  
   
--   If an unsigned operand participates with a signed operand, the result has a signed type with at least as large a range as either operand.  
+- If an unsigned operand participates with a signed operand, the result has a signed type with at least as large a range as either operand.  
   
--   Otherwise, the result usually has the larger of the two operand data types.  
+- Otherwise, the result usually has the larger of the two operand data types.  
   
  Note that the result data type might not be the same as either operand data type.  
   
 > [!NOTE]
->  The result data type is not always large enough to hold all possible values resulting from the operation. An <xref:System.OverflowException> exception can occur if the value is too large for the result data type.  
+> The result data type is not always large enough to hold all possible values resulting from the operation. An <xref:System.OverflowException> exception can occur if the value is too large for the result data type.  
   
 ### Unary + and – Operators  
  The following table shows the result data types for the two unary operators, `+` and `–`.  
@@ -92,7 +92,7 @@ Visual Basic determines the result data type of an operation based on the data t
   
  If the left operand is `Decimal`, `Single`, `Double`, or `String`, Visual Basic attempts to convert it to `Long` before the operation, and the result data type is `Long`. The right operand (the number of bit positions to shift) must be `Integer` or a type that widens to `Integer`.  
   
-### Binary +, –, *, and Mod Operators  
+### Binary +, –, \*, and Mod Operators  
  The following table shows the result data types for the binary `+` and `–` operators and the `*` and `Mod` operators. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
   
 |||||||||||  
@@ -108,7 +108,7 @@ Visual Basic determines the result data type of an operation based on the data t
 |`Long`|Long|Long|Long|Long|Long|Long|Long|Long|Decimal|  
 |`ULong`|Decimal|Decimal|ULong|Decimal|ULong|Decimal|ULong|Decimal|ULong|  
   
-### \ Operator  
+### \\ Operator  
  The following table shows the result data types for the `\` operator. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
   
 |||||||||||  
@@ -170,6 +170,7 @@ Visual Basic determines the result data type of an operation based on the data t
  The `Like` operator is defined only for pattern matching of `String` operands. Visual Basic attempts to convert each operand as necessary to `String` before the operation. The result data type is always `Boolean`.  
   
 ## See also
+
 - [Data Types](../../../visual-basic/language-reference/data-types/index.md)
 - [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
 - [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

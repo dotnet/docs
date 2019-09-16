@@ -9,26 +9,27 @@ Procedural workflows use flow-control methods similar to those found in procedur
 ## Controlling Execution Flow  
  The workflow activity library has activities for modeling most flow-control methods used in procedural languages. These include:  
   
--   <xref:System.Activities.Statements.While>  
+- <xref:System.Activities.Statements.While>  
   
--   <xref:System.Activities.Statements.DoWhile>  
+- <xref:System.Activities.Statements.DoWhile>  
   
--   <xref:System.Activities.Statements.ForEach%601>  
+- <xref:System.Activities.Statements.ForEach%601>  
   
--   <xref:System.Activities.Statements.Parallel>  
+- <xref:System.Activities.Statements.Parallel>  
   
--   <xref:System.Activities.Statements.ParallelForEach%601>  
+- <xref:System.Activities.Statements.ParallelForEach%601>  
   
--   <xref:System.Activities.Statements.If>  
+- <xref:System.Activities.Statements.If>  
   
--   <xref:System.Activities.Statements.Switch%601>  
+- <xref:System.Activities.Statements.Switch%601>  
   
--   <xref:System.Activities.Statements.Pick>  
+- <xref:System.Activities.Statements.Pick>  
   
  To use flow control activities, drag and drop them from the **Activity** toolbox into a composite activity inside the designer window.  
   
 > [!NOTE]
->  If using the [!INCLUDE[dublin](../../../includes/dublin-md.md)] to host workflows on a Web farm, AppFabric will move instances between different AppFabric servers. This requires that the resources are able to be shared between all nodes.  None of the default NET 4 workflow activities contain any operations that access local resources. Since AppFabric does not offer any mechanism to mark a workflow as immovable, a developer must not create custom activities that fail when a workflow is moved.  
+> If using the hosting features of Windows Server AppFabric to host workflows on a Web farm, AppFabric will move instances between different AppFabric servers. This requires that the resources are able to be shared between all nodes.  None of the default NET 4 workflow activities contain any operations that access local resources. Since AppFabric does not offer any mechanism to mark a workflow as immovable, a developer must not create custom activities that fail when a workflow is moved.  
   
 ## See also
-- [Flowchart Workflows](../../../docs/framework/windows-workflow-foundation/flowchart-workflows.md)
+
+- [Flowchart Workflows](flowchart-workflows.md)

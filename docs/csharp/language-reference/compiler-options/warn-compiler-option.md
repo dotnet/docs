@@ -35,19 +35,19 @@ The **-warn** option specifies the warning level for the compiler to display.
 |4 (the default)|Displays all level 3 warnings plus informational warnings.|  
   
 ## Remarks  
- To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../../../csharp/language-reference/compiler-messages/index.md).  
+ To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md).  
   
- Use [-warnaserror](../../../csharp/language-reference/compiler-options/warnaserror-compiler-option.md) to treat all warnings as errors. Use [-nowarn](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md) to disable certain warnings.  
+ Use [-warnaserror](./warnaserror-compiler-option.md) to treat all warnings as errors. Use [-nowarn](./nowarn-compiler-option.md) to disable certain warnings.  
   
  **-w** is the short form of **-warn**.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Modify the **Warning Level** property.  
+3. Modify the **Warning Level** property.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.WarningLevel%2A>.  
   
@@ -60,5 +60,5 @@ csc -warn:1 in.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

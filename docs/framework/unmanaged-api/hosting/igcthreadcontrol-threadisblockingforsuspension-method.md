@@ -23,7 +23,7 @@ Notifies the host that the thread that is making the call is about to block, per
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadIsBlockingForSuspension ( );  
 ```  
   
@@ -40,4 +40,5 @@ HRESULT ThreadIsBlockingForSuspension ( );
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IGCThreadControl Interface](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md)

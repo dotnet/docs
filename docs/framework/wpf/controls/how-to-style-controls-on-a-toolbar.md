@@ -12,27 +12,28 @@ The <xref:System.Windows.Controls.ToolBar> defines <xref:System.Windows.Resource
   
  The <xref:System.Windows.Controls.ToolBar> defines the following <xref:System.Windows.ResourceKey> objects:  
   
--   <xref:System.Windows.Controls.ToolBar.ButtonStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.ButtonStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.CheckBoxStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.CheckBoxStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.ComboBoxStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.ComboBoxStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.MenuStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.MenuStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.RadioButtonStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.RadioButtonStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.SeparatorStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.SeparatorStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.TextBoxStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.TextBoxStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.ToggleButtonStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.ToggleButtonStyleKey%2A>  
   
 ## Example  
  The following example defines styles for the controls within a <xref:System.Windows.Controls.ToolBar>.  
   
- [!code-xaml[ToolBar_snip#ToolBarAllStyles](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarallstyles)]  
-[!code-xaml[ToolBar_snip#ToolBar](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbar)]  
+ [!code-xaml[ToolBar_snip#ToolBarAllStyles](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarallstyles)]  
+[!code-xaml[ToolBar_snip#ToolBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbar)]  
   
 ## See also
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+
+- [Styling and Templating](styling-and-templating.md)

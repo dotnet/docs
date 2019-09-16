@@ -22,7 +22,7 @@ Specifies the reasons why a thread may become blocked on a given object.
   
 ## Syntax  
   
-```  
+```cpp  
 Typedef enum CorDebugBlockingReason  
 {  
    BLOCKING_NONE = 0  
@@ -52,5 +52,6 @@ Typedef enum CorDebugBlockingReason
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

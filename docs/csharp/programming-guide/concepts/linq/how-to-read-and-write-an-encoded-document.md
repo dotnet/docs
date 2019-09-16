@@ -50,7 +50,7 @@ Console.WriteLine("Encoding of loaded document is:{0}", newDoc16.Declaration.Enc
   
  This example produces the following output:  
   
-```  
+```output  
 Creating a document with utf-8 encoding  
 Encoding is:utf-8  
   
@@ -73,4 +73,3 @@ Encoding of loaded document is:utf-16
 ## See also
 
 - <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=nameWithType>
-- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

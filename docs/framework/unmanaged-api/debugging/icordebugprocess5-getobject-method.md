@@ -23,14 +23,14 @@ Converts an object address to an "ICorDebugObjectValue" object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObject(  
     [in] CORDB_ADDRESS addr,   
     [out] ICorDebugObjectValue **ppObject  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `addr`  
  [in] The object address.  
   
@@ -50,5 +50,6 @@ HRESULT GetObject(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

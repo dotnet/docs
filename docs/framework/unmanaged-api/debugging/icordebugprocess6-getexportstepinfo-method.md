@@ -10,14 +10,14 @@ Provides information on runtime exported functions to help step through managed 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetExportStepInfo(  
     [in] LPCWSTR pszExportName,   
     [out] CorDebugCodeInvokeKind* pInvokeKind,   
     [out] CorDebugCodeInvokePurpose* pInvokePurpose);  
 ```  
   
-#### Parameters  
+## Parameters  
  pszExportName  
  [in] The name of a runtime export function as written in the PE export table.  
   
@@ -39,7 +39,7 @@ HRESULT GetExportStepInfo(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -51,5 +51,6 @@ HRESULT GetExportStepInfo(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

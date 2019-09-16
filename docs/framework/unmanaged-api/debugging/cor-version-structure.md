@@ -22,7 +22,7 @@ Stores the standard four-part version number of the common language runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_VERSION {  
     DWORD dwMajor;  
     DWORD dwMinor;  
@@ -53,5 +53,6 @@ typedef struct _COR_VERSION {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

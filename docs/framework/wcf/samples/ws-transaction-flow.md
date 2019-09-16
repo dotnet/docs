@@ -9,7 +9,7 @@ ms.assetid: f8eecbcf-990a-4dbb-b29b-c3f9e3b396bd
 This sample demonstrates the use of a client-coordinated transaction and the client and server options for transaction flow using either the WS-Atomic Transaction or OleTransactions protocol. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service but the operations are attributed to demonstrate the use of the `TransactionFlowAttribute` with the **TransactionFlowOption** enumeration to determine to what degree transaction flow is enabled. Within the scope of the flowed transaction, a log of the requested operations is written to a database and persists until the client coordinated transaction has completed - if the client transaction does not complete, the Web service transaction ensures that the appropriate updates to the database are not committed.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  After initiating a connection to the service and a transaction, the client accesses several service operations. The contract for the service is defined as follows with each of the operations demonstrating a different setting for the `TransactionFlowOption`.  
 
@@ -33,13 +33,13 @@ public interface ICalculator
 
  This defines the operations in the order they are to be processed:  
   
--   An `Add` operation request must include a flowed transaction.  
+- An `Add` operation request must include a flowed transaction.  
   
--   A `Subtract` operation request may include a flowed transaction.  
+- A `Subtract` operation request may include a flowed transaction.  
   
--   A `Multiply` operation request must not include a flowed transaction through the explicit NotAllowed setting.  
+- A `Multiply` operation request must not include a flowed transaction through the explicit NotAllowed setting.  
   
--   A `Divide` operation request must not include a flowed transaction through the omission of a `TransactionFlow` attribute.  
+- A `Divide` operation request must not include a flowed transaction through the omission of a `TransactionFlow` attribute.  
   
  To enable transaction flow, bindings with the [\<transactionFlow>](../../../../docs/framework/configure-apps/file-schema/wcf/transactionflow.md) property enabled must be used in addition to the appropriate operation attributes. In this sample, the service's configuration exposes a TCP endpoint and an HTTP endpoint in addition to a Metadata Exchange endpoint. The TCP endpoint and the HTTP endpoint use the following bindings, both of which have the [\<transactionFlow>](../../../../docs/framework/configure-apps/file-schema/wcf/transactionflow.md) property enabled.  
   
@@ -58,12 +58,12 @@ public interface ICalculator
 ```  
   
 > [!NOTE]
->  The system-provided netTcpBinding allows specification of the transactionProtocol whereas the system-provided wsHttpBinding uses only the more interoperable WSAtomicTransactionOctober2004 protocol. The OleTransactions protocol is only available for use by Windows Communication Foundation (WCF) clients.  
+> The system-provided netTcpBinding allows specification of the transactionProtocol whereas the system-provided wsHttpBinding uses only the more interoperable WSAtomicTransactionOctober2004 protocol. The OleTransactions protocol is only available for use by Windows Communication Foundation (WCF) clients.  
   
  For the class that implements the `ICalculator` interface, all of the methods are attributed with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property set to `true`. This setting declares that all actions taken within the method occur within the scope of a transaction. In this case, the actions taken include recording to the log database. If the operation request includes a flowed transaction then the actions occur within the scope of the incoming transaction or a new transaction scope is automatically generated.  
   
 > [!NOTE]
->  The <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property defines behavior local to the service method implementations and does not define the client's ability to or requirement for flowing a transaction.  
+> The <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property defines behavior local to the service method implementations and does not define the client's ability to or requirement for flowing a transaction.  
 
 ```csharp
 // Service class that implements the service contract.  
@@ -111,7 +111,7 @@ CalculatorClient client = new CalculatorClient("WSAtomicTransaction_endpoint");
 ```
 
 > [!NOTE]
->  The observed behavior of this sample is the same no matter which protocol or transport is chosen.  
+> The observed behavior of this sample is the same no matter which protocol or transport is chosen.  
   
  Having initiated the connection to the service, the client creates a new `TransactionScope` around the calls to the service operations.  
 
@@ -176,15 +176,15 @@ Console.WriteLine("Transaction committed");
 
  The calls to the operations are as follows:  
   
--   The `Add` request flows the required transaction to the service and the service's actions occur within the scope of the client's transaction.  
+- The `Add` request flows the required transaction to the service and the service's actions occur within the scope of the client's transaction.  
   
--   The first `Subtract` request also flows the allowed transaction to the service and again the service's actions occur within the scope of the client's transaction.  
+- The first `Subtract` request also flows the allowed transaction to the service and again the service's actions occur within the scope of the client's transaction.  
   
--   The second `Subtract` request is performed within a new transaction scope declared with the `TransactionScopeOption.Suppress` option. This suppresses the client's initial outer transaction and the request does not flow a transaction to the service. This approach allows a client to explicitly opt-out of and protect against flowing a transaction to a service when that is not required. The service's actions occur within the scope of a new and unconnected transaction.  
+- The second `Subtract` request is performed within a new transaction scope declared with the `TransactionScopeOption.Suppress` option. This suppresses the client's initial outer transaction and the request does not flow a transaction to the service. This approach allows a client to explicitly opt-out of and protect against flowing a transaction to a service when that is not required. The service's actions occur within the scope of a new and unconnected transaction.  
   
--   The `Multiply` request does not flow a transaction to the service because the client's generated definition of the `ICalculator` interface includes a <xref:System.ServiceModel.TransactionFlowAttribute> set to <xref:System.ServiceModel.TransactionFlowOption>`NotAllowed`.  
+- The `Multiply` request does not flow a transaction to the service because the client's generated definition of the `ICalculator` interface includes a <xref:System.ServiceModel.TransactionFlowAttribute> set to <xref:System.ServiceModel.TransactionFlowOption>`NotAllowed`.  
   
--   The `Divide` request does not flow a transaction to the service because again the client's generated definition of the `ICalculator` interface does not include a `TransactionFlowAttribute`. The service's actions again occur within the scope of another new and unconnected transaction.  
+- The `Divide` request does not flow a transaction to the service because again the client's generated definition of the `ICalculator` interface does not include a `TransactionFlowAttribute`. The service's actions again occur within the scope of another new and unconnected transaction.  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
@@ -217,68 +217,68 @@ Press <ENTER> to terminate the service.
   
 ### To set up, build, and run the sample  
   
-1.  To build the C# or Visual Basic .NET version of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)  
+1. To build the C# or Visual Basic .NET version of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)  
   
-2.  Ensure that you have installed SQL Server Express Edition or SQL Server, and that the connection string has been correctly set in the service’s application configuration file. To run the sample without using a database, set the `usingSql` value in the service’s application configuration file to `false`  
+2. Ensure that you have installed SQL Server Express Edition or SQL Server, and that the connection string has been correctly set in the service’s application configuration file. To run the sample without using a database, set the `usingSql` value in the service’s application configuration file to `false`  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
     > [!NOTE]
-    >  For cross-machine configuration, enable the Distributed Transaction Coordinator using the instructions below, and use the WsatConfig.exe tool from the Windows SDK to enable WCF Transactions network support. See [Configuring WS-Atomic Transaction Support](https://go.microsoft.com/fwlink/?LinkId=190370) for information on setting up WsatConfig.exe.  
+    > For cross-machine configuration, enable the Distributed Transaction Coordinator using the instructions below, and use the WsatConfig.exe tool from the Windows SDK to enable WCF Transactions network support. See [Configuring WS-Atomic Transaction Support](https://go.microsoft.com/fwlink/?LinkId=190370) for information on setting up WsatConfig.exe.  
   
  Whether you run the sample on the same computer or on different computers, you must configure the Microsoft Distributed Transaction Coordinator (MSDTC) to enable network transaction flow and use the WsatConfig.exe tool to enable WCF transactions network support.  
   
 ### To configure the Microsoft Distributed Transaction Coordinator (MSDTC) to support running the sample  
   
-1.  On a service machine running Windows Server 2003 or Windows XP, configure MSDTC to allow incoming network transactions by following these instructions.  
+1. On a service machine running Windows Server 2003 or Windows XP, configure MSDTC to allow incoming network transactions by following these instructions.  
   
-    1.  From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
+    1. From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
   
-    2.  Expand **Component Services**. Open the **Computers** folder.  
+    2. Expand **Component Services**. Open the **Computers** folder.  
   
-    3.  Right-click **My Computer** and select **Properties**.  
+    3. Right-click **My Computer** and select **Properties**.  
   
-    4.  On the **MSDTC** tab, click **Security Configuration**.  
+    4. On the **MSDTC** tab, click **Security Configuration**.  
   
-    5.  Check **Network DTC Access** and **Allow Inbound**.  
+    5. Check **Network DTC Access** and **Allow Inbound**.  
   
-    6.  Click **OK**, then click **Yes** to restart the MSDTC service.  
+    6. Click **OK**, then click **Yes** to restart the MSDTC service.  
   
-    7.  Click **OK** to close the dialog box.  
+    7. Click **OK** to close the dialog box.  
   
-2.  On a service machine running Windows Server 2008 or Windows Vista, configure MSDTC to allow incoming network transactions by following these instructions.  
+2. On a service machine running Windows Server 2008 or Windows Vista, configure MSDTC to allow incoming network transactions by following these instructions.  
   
-    1.  From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
+    1. From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
   
-    2.  Expand **Component Services**. Open the **Computers** folder. Select **Distributed Transaction Coordinator**.  
+    2. Expand **Component Services**. Open the **Computers** folder. Select **Distributed Transaction Coordinator**.  
   
-    3.  Right-click **DTC Coordinator** and select **Properties**.  
+    3. Right-click **DTC Coordinator** and select **Properties**.  
   
-    4.  On the **Security** tab, check **Network DTC Access** and **Allow Inbound**.  
+    4. On the **Security** tab, check **Network DTC Access** and **Allow Inbound**.  
   
-    5.  Click **OK**, then click **Yes** to restart the MSDTC service.  
+    5. Click **OK**, then click **Yes** to restart the MSDTC service.  
   
-    6.  Click **OK** to close the dialog box.  
+    6. Click **OK** to close the dialog box.  
   
-3.  On the client machine, configure MSDTC to allow outgoing network transactions:  
+3. On the client machine, configure MSDTC to allow outgoing network transactions:  
   
-    1.  From the **Start** menu, navigate to `Control Panel`, then **Administrative Tools**, and then **Component Services**.  
+    1. From the **Start** menu, navigate to `Control Panel`, then **Administrative Tools**, and then **Component Services**.  
   
-    2.  Right-click **My Computer** and select **Properties**.  
+    2. Right-click **My Computer** and select **Properties**.  
   
-    3.  On the **MSDTC** tab, click **Security Configuration**.  
+    3. On the **MSDTC** tab, click **Security Configuration**.  
   
-    4.  Check **Network DTC Access** and **Allow Outbound**.  
+    4. Check **Network DTC Access** and **Allow Outbound**.  
   
-    5.  Click **OK**, then click **Yes** to restart the MSDTC service.  
+    5. Click **OK**, then click **Yes** to restart the MSDTC service.  
   
-    6.  Click **OK** to close the dialog box.  
+    6. Click **OK** to close the dialog box.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\TransactionFlow`
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\TransactionFlow`

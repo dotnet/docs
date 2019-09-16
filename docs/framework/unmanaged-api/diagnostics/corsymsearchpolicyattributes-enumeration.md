@@ -21,11 +21,11 @@ ms.author: "mairaw"
 Specifies the policy to be used when doing a search for a symbol reader. These constants are used by the [ISymUnmanagedBinder2::GetReaderForFile2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-getreaderforfile2-method.md) and [ISymUnmanagedBinder3::GetReaderFromCallback](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder3-getreaderfromcallback-method.md) methods.  
   
 > [!IMPORTANT]
->  It is a security risk to open a program database (PDB) file from an untrusted source.  
+> It is a security risk to open a program database (PDB) file from an untrusted source.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSymSearchPolicyAttributes  
 {  
     AllowRegistryAccess      = 0x1,       
@@ -48,4 +48,5 @@ typedef enum CorSymSearchPolicyAttributes
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)

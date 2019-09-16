@@ -6,63 +6,63 @@ ms.assetid: a5e57336-4290-41ea-936d-435593d97055
 # Corporate Purchase Process
 This sample shows how to create a very basic Request for Proposals (RFP) based purchase process with automatic best proposal selection. It combines <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601>, and <xref:System.Activities.Statements.ForEach%601> and a custom activity to create a workflow that represents the process.
 
- This sample contains an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] client application that allows interacting with the process as different participants (as the original requester or a particular vendor).
+ This sample contains an ASP.NET client application that allows interacting with the process as different participants (as the original requester or a particular vendor).
 
 ## Requirements
 
--   Visual Studio 2012.
+- Visual Studio 2012.
 
--   [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].
+- [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].
 
 ## Demonstrates
 
--   Custom activities.
+- Custom activities.
 
--   Composition of activities.
+- Composition of activities.
 
--   Bookmarks.
+- Bookmarks.
 
--   Persistence.
+- Persistence.
 
--   Schematized persistence.
+- Schematized persistence.
 
--   Tracing.
+- Tracing.
 
--   Tracking.
+- Tracking.
 
--   Hosting [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in different clients ([!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web applications and WinForms applications).
+- Hosting [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in different clients (ASP.NET Web applications and WinForms applications).
 
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Application\PurchaseProcess`  
+> `<InstallDrive>:\WF_WCF_Samples\WF\Application\PurchaseProcess`  
   
 ## Description of the Process  
  This sample shows an implementation of a Windows Workflow Foundation (WF) program to gather proposals from vendors for a generic company.  
   
-1.  An employee of Company X creates a Request for Proposal (RFP).  
+1. An employee of Company X creates a Request for Proposal (RFP).  
   
-    1.  The employee types in the RFP title and description.  
+    1. The employee types in the RFP title and description.  
   
-    2.  The employee selects the vendors that he wants to invite to submit proposals.  
+    2. The employee selects the vendors that he wants to invite to submit proposals.  
   
-2.  The employee submits the proposal.  
+2. The employee submits the proposal.  
   
-    1.  An instance of the workflow is created.  
+    1. An instance of the workflow is created.  
   
-    2.  The workflow is waiting for all vendors to submit their proposals.  
+    2. The workflow is waiting for all vendors to submit their proposals.  
   
-3.  After all proposals are received, the workflow iterates through all the received proposals and selects the best one.  
+3. After all proposals are received, the workflow iterates through all the received proposals and selects the best one.  
   
-    1.  Each vendor has a reputation (this sample stores the reputation list in VendorRepository.cs).  
+    1. Each vendor has a reputation (this sample stores the reputation list in VendorRepository.cs).  
   
-    2.  The total value of the proposal is determined by (The value typed in by the vendor) * (The vendor's recorded reputation) / 100.  
+    2. The total value of the proposal is determined by (The value typed in by the vendor) * (The vendor's recorded reputation) / 100.  
   
-4.  The original requester can see all the submitted proposals. The best proposal is presented in a special section in the report.  
+4. The original requester can see all the submitted proposals. The best proposal is presented in a special section in the report.  
   
 ## Process Definition  
  The core logic of the sample uses a <xref:System.Activities.Statements.ParallelForEach%601> activity that waits for the offers from each vendor (using a custom activity that creates a bookmark), and registers the vendor proposal as an RFP (using an <xref:System.Activities.Statements.InvokeMethod> activity).  
@@ -76,7 +76,7 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
 |-------------|-----------------|  
 |Common|The entity objects used within the process (Request for Proposal, Vendor, and Vendor Proposal).|  
 |WfDefinition|The definition of the process (as a [!INCLUDE[wf1](../../../../includes/wf1-md.md)] program) and host (`PurchaseProcessHost`) used by client applications for creating and using instances of the purchase process workflow.|  
-|WebClient|An [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] client application that allows the users to create and participate in instances of the purchase process. It uses a custom-created host to interact with the workflow engine.|  
+|WebClient|An ASP.NET client application that allows the users to create and participate in instances of the purchase process. It uses a custom-created host to interact with the workflow engine.|  
 |WinFormsClient|A Windows Forms client application that allows the users to create and participate in instances of the purchase process. It uses a custom-created host to interact with the workflow engine.|  
   
 ### WfDefinition  
@@ -137,32 +137,32 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
   
 #### To use this sample  
   
-1.  Using Visual Studio 2010, open the PurchaseProcess.sln solution file.  
+1. Using Visual Studio 2010, open the PurchaseProcess.sln solution file.  
   
-2.  To execute the Web Client project, open **Solution Explorer** and right-click the **Web Client** project. Select **Set as Startup Project**.  
+2. To execute the Web Client project, open **Solution Explorer** and right-click the **Web Client** project. Select **Set as Startup Project**.  
   
-3.  To execute the WinForms Client project, open **Solution Explorer** and right-click the **WinForms Client** project. Select **Set as Startup Project**.  
+3. To execute the WinForms Client project, open **Solution Explorer** and right-click the **WinForms Client** project. Select **Set as Startup Project**.  
   
-4.  To build the solution, press CTRL+SHIFT+B.  
+4. To build the solution, press CTRL+SHIFT+B.  
   
-5.  To run the solution, press CTRL+F5.  
+5. To run the solution, press CTRL+F5.  
   
 ### Web Client Options  
   
--   **Create a new RFP**: Creates a new Request for Proposals (RFP) and starts a Purchase Process workflow.  
+- **Create a new RFP**: Creates a new Request for Proposals (RFP) and starts a Purchase Process workflow.  
   
--   **Refresh**: Refreshes the list of Active and Finished RFPs in the main window.  
+- **Refresh**: Refreshes the list of Active and Finished RFPs in the main window.  
   
--   **View**: Shows the content of an existing RFP. Vendors can submit their proposals (if invited or the RFP is not finished).  
+- **View**: Shows the content of an existing RFP. Vendors can submit their proposals (if invited or the RFP is not finished).  
   
--   View As: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.  
+- View As: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.  
   
 ### WinForms Client Options  
   
--   **Create RFP**: Creates a new Request for Proposals (RFP) and starts a Purchase Process workflow.  
+- **Create RFP**: Creates a new Request for Proposals (RFP) and starts a Purchase Process workflow.  
   
--   **Refresh**: Refreshes the list of Active and Finished RFPs in the main window.  
+- **Refresh**: Refreshes the list of Active and Finished RFPs in the main window.  
   
--   **View RFP**: Shows the content of an existing RFP. Vendors can submit their proposals (if invited or the RFP is not finished)  
+- **View RFP**: Shows the content of an existing RFP. Vendors can submit their proposals (if invited or the RFP is not finished)  
   
--   **Connect As**: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.
+- **Connect As**: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.

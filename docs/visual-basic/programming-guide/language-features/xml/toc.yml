@@ -1,0 +1,42 @@
+- name: XML in Visual Basic
+  href: index.md
+  items:
+  - name: Overview of LINQ to XML
+    href: overview-of-linq-to-xml.md
+  - name: Creating XML
+    href: creating-xml.md
+    items:
+    - name: XML Literals Overview
+      href: xml-literals-overview.md
+    - name: Embedded Expressions in XML
+      href: embedded-expressions-in-xml.md
+    - name: Names of Declared XML Elements and Attributes
+      href: names-of-declared-xml-elements-and-attributes.md
+    - name: XML Literals and the XML 1.0 Specification
+      href: xml-literals-and-the-xml-1-0-specification.md
+    - name: White Space in XML Literals
+      href: white-space-in-xml-literals.md
+    - name: "How to: Create XML Literals"
+      href: how-to-create-xml-literals.md
+    - name: "How to: Embed Expressions in XML Literals"
+      href: how-to-embed-expressions-in-xml-literals.md
+  - name: Manipulating XML
+    href: manipulating-xml.md
+    items:
+    - name: "How to: Load XML from a File, String, or Stream"
+      href: how-to-load-xml-from-a-file-string-or-stream.md
+    - name: "How to: Transform XML by Using LINQ"
+      href: how-to-transform-xml-by-using-linq.md
+    - name: "How to: Modify XML Literals"
+      href: how-to-modify-xml-literals.md
+  - name: Accessing XML
+    href: accessing-xml.md
+    items:
+    - name: "How to: Access XML Descendant Elements"
+      href: how-to-access-xml-descendant-elements.md
+    - name: "How to: Access XML Child Elements"
+      href: how-to-access-xml-child-elements.md
+    - name: "How to: Access XML Attributes"
+      href: how-to-access-xml-attributes.md
+    - name: "How to: Declare and Use XML Namespace Prefixes"
+      href: how-to-declare-and-use-xml-namespace-prefixes.md

@@ -14,11 +14,11 @@ Visual Studio provides extensive support for debugging and profiling multi-threa
 ## Debugging  
  The Visual Studio debugger adds new windows for debugging parallel applications. For more information, see the following topics:  
   
--   [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window)  
+- [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window)  
   
--   [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window)  
+- [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window)  
   
--   [Walkthrough: Debugging a Parallel Application](/visualstudio/debugger/walkthrough-debugging-a-parallel-application).  
+- [Walkthrough: Debugging a Parallel Application](/visualstudio/debugger/walkthrough-debugging-a-parallel-application).  
   
 ## Profiling  
  The Concurrency Visualizer report views enable you to visualize how the threads in a parallel program interact with each other and with threads from other processes on the system. For more information, see [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer).  

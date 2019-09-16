@@ -39,18 +39,18 @@ public class XMLWrite
 ```  
   
 ## Compiling the Code  
- The class must have a public constructor without parameters.  
+ The class being serialized must have a public constructor without parameters.  
   
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The class being serialized does not have a public, parameterless constructor.  
+- The class being serialized does not have a public, parameterless constructor.  
   
--   The file exists and is read-only (<xref:System.IO.IOException>).  
+- The file exists and is read-only (<xref:System.IO.IOException>).  
   
--   The path is too long (<xref:System.IO.PathTooLongException>).  
+- The path is too long (<xref:System.IO.PathTooLongException>).  
   
--   The disk is full (<xref:System.IO.IOException>).  
+- The disk is full (<xref:System.IO.IOException>).  
   
 ## .NET Framework Security  
  This example creates a new file, if the file does not already exist. If an application needs to create a file, that application needs `Create` access for the folder. If the file already exists, the application needs only `Write` access, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant `Read` access to a single file, rather than `Create` access for a folder.  
@@ -58,5 +58,5 @@ public class XMLWrite
 ## See also
 
 - <xref:System.IO.StreamWriter>
-- [How to: Read Object Data from an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)
-- [Serialization (C#)](../../../../csharp/programming-guide/concepts/serialization/index.md)
+- [How to: Read Object Data from an XML File (C#)](./how-to-read-object-data-from-an-xml-file.md)
+- [Serialization (C#)](./index.md)

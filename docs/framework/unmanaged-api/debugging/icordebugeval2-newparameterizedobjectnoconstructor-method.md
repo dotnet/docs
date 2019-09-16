@@ -23,7 +23,7 @@ Instantiates a new parameterized type object of the specified class without atte
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewParameterizedObjectNoConstructor (  
     [in] ICorDebugClass        *pClass,  
     [in] ULONG32               nTypeArgs,  
@@ -31,7 +31,7 @@ HRESULT NewParameterizedObjectNoConstructor (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClass`  
  [in] A pointer to an ICorDebugClass object that represents the class of the object to be instantiated.  
   

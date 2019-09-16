@@ -1,4 +1,4 @@
-### ListBoxItem IsSelected binding issue with ObservableCollection\<T>.Move
+### ListBoxItem IsSelected binding issue with ObservableCollection&lt;T&gt;.Move
 
 |   |   |
 |---|---|
@@ -8,4 +8,3 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Collections.ObjectModel.ObservableCollection%601.Move(System.Int32,System.Int32)?displayProperty=nameWithType></li><li><xref:System.Collections.ObjectModel.ObservableCollection%601.MoveItem(System.Int32,System.Int32)?displayProperty=nameWithType></li></ul>|
-

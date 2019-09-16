@@ -19,9 +19,10 @@ A property, procedure, or event in a derived class uses an `Implements` clause s
   
 ## To correct this error  
   
--   If you intend to reimplement the interface member, you do not need to take any action. Code in your derived class accesses the reimplemented member unless you use the `MyBase` keyword to access the base class implementation.  
+- If you intend to reimplement the interface member, you do not need to take any action. Code in your derived class accesses the reimplemented member unless you use the `MyBase` keyword to access the base class implementation.  
   
--   If you do not intend to reimplement the interface member, remove the `Implements` clause from the property, procedure, or event declaration.  
+- If you do not intend to reimplement the interface member, remove the `Implements` clause from the property, procedure, or event declaration.  
   
 ## See also
+
 - [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

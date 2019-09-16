@@ -13,13 +13,13 @@ By default, users can sort the data in a <xref:System.Windows.Forms.DataGridView
 
 ## In this section
 
-[Column Sort Modes in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-sort-modes-in-the-windows-forms-datagridview-control.md)  
+[Column Sort Modes in the Windows Forms DataGridView Control](column-sort-modes-in-the-windows-forms-datagridview-control.md)  
 Describes the options for sorting data in the control.
 
-[How to: Set the Sort Modes for Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/set-the-sort-modes-for-columns-wf-datagridview-control.md)  
+[How to: Set the Sort Modes for Columns in the Windows Forms DataGridView Control](set-the-sort-modes-for-columns-wf-datagridview-control.md)  
 Describes how to enable users to sort by columns that are not sortable by default.
 
-[How to: Customize Sorting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md)  
+[How to: Customize Sorting in the Windows Forms DataGridView Control](how-to-customize-sorting-in-the-windows-forms-datagridview-control.md)  
 Describes how to sort data programmatically and how to customize sorting by using the <xref:System.Windows.Forms.DataGridView.SortCompare?displayProperty=nameWithType> event or by implementing the <xref:System.Collections.IComparer> interface.
 
 ## Reference
@@ -38,5 +38,5 @@ Provides reference documentation for the <xref:System.Windows.Forms.DataGridView
 
 ## See also
 
-- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
-- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)
+- [DataGridView Control](datagridview-control-windows-forms.md)
+- [Column Types in the Windows Forms DataGridView Control](column-types-in-the-windows-forms-datagridview-control.md)

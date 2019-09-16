@@ -2,43 +2,44 @@
 title: EndEnumeration function (Unmanaged API Reference)
 description: The EndEnumeration function terminates an enumeration.
 ms.date: "11/06/2017"
-api_name: 
+api_name:
   - "EndEnumeration"
-api_location: 
+api_location:
   - "WMINet_Utils.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "EndEnumeration"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "EndEnumeration function [.NET WMI and performance counters]"
-topic_type: 
+topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # EndEnumeration function
-Terminates an enumeration sequence started with a call to the [BeginEnumeration function](beginenumeration.md).  
+
+Terminates an enumeration sequence started with a call to the [BeginEnumeration function](beginenumeration.md).
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
-## Syntax  
-  
-```  
+
+## Syntax
+
+```cpp
 HRESULT EndEnumeration (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr 
-); 
-```  
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr
+);
+```
 
 ## Parameters
 
-`vFunc`  
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`  
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
-
 
 ## Return value
 
@@ -48,19 +49,21 @@ The following values returned by this function are defined in the *WbemCli.h* he
 |---------|---------|---------|
 |`WBEM_E_FAILED` | 0x80041001 | There has been a general failure. |
 |`WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
-  
+
 ## Remarks
 
 This function wraps a call to the [IWbemClassObject::EndEnumeration](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) method.
 
-A call to the `EndEnumeration` function is not required, but it is recommended because it releases resources associated with the enumeration. However, the resoruces are deallocated automatically when the next enumeration is started or the object is released.
+A call to the `EndEnumeration` function is not required, but it is recommended because it releases resources associated with the enumeration. However, the resources are deallocated automatically when the next enumeration is started or the object is released.
 
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** WMINet_Utils.idl  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
+## Requirements
+
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+**Header:** WMINet_Utils.idl
+
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

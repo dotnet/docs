@@ -18,43 +18,43 @@ This sample demonstrates how to manage workflow instances that have been suspend
 
 #### To set up, build, and run the sample
 
-1.  This sample requires that the following Windows components are enabled:
+1. This sample requires that the following Windows components are enabled:
 
-    1.  Microsoft Message Queues (MSMQ) Server
+    1. Microsoft Message Queues (MSMQ) Server
 
-    2.  SQL Server Express
+    2. SQL Server Express
 
-2.  Set up the SQL Server database.
+2. Set up the SQL Server database.
 
-    1.  From a Visual Studio 2010 command prompt, run "setup.cmd" from the SuspendedInstanceManagement sample directory, which does the following:
+    1. From a Visual Studio 2010 command prompt, run "setup.cmd" from the SuspendedInstanceManagement sample directory, which does the following:
 
-        1.  Creates a persistence database using SQL Server Express. If the persistence database already exists, then it is dropped and re-created
+        1. Creates a persistence database using SQL Server Express. If the persistence database already exists, then it is dropped and re-created
 
-        2.  Sets up the database for persistence.
+        2. Sets up the database for persistence.
 
-        3.  Adds IIS APPPOOL\DefaultAppPool and NT AUTHORITY\Network Service to the InstanceStoreUsers role that was defined when setting up the database for persistence.
+        3. Adds IIS APPPOOL\DefaultAppPool and NT AUTHORITY\Network Service to the InstanceStoreUsers role that was defined when setting up the database for persistence.
 
-3.  Set up the service queue.
+3. Set up the service queue.
 
-    1.  In Visual Studio 2010, right-click the **SampleWorkflowApp** project and click **Set as Startup Project**.
+    1. In Visual Studio 2010, right-click the **SampleWorkflowApp** project and click **Set as Startup Project**.
 
-    2.  Compile and run the SampleWorkflowApp by pressing **F5**. This will create the required queue.
+    2. Compile and run the SampleWorkflowApp by pressing **F5**. This will create the required queue.
 
-    3.  Press **Enter** to stop the SampleWorkflowApp.
+    3. Press **Enter** to stop the SampleWorkflowApp.
 
-    4.  Open the Computer Management console by running Compmgmt.msc from a command prompt.
+    4. Open the Computer Management console by running Compmgmt.msc from a command prompt.
 
-    5.  Expand **Service and Applications**, **Message Queuing**, **Private Queues**.
+    5. Expand **Service and Applications**, **Message Queuing**, **Private Queues**.
 
-    6.  Right click the **ReceiveTx** queue and select **Properties**.
+    6. Right click the **ReceiveTx** queue and select **Properties**.
 
-    7.  Select the **Security** tab and allow **Everyone** to have permissions to **Receive Message**, **Peek Message**, and **Send Message**.
+    7. Select the **Security** tab and allow **Everyone** to have permissions to **Receive Message**, **Peek Message**, and **Send Message**.
 
-4.  Now, run the sample.
+4. Now, run the sample.
 
-    1.  In Visual Studio 2010, run the SampleWorkflowApp project again without debugging by pressing **Ctrl+F5**. Two endpoint addresses will be printed in the console window: one for the application endpoint and then other from the <xref:System.ServiceModel.Activities.WorkflowControlEndpoint>. A workflow instance is then created, and tracking records for that instance will appear in the console window. The workflow instance will throw an exception causing the instance to be suspended and aborted.
+    1. In Visual Studio 2010, run the SampleWorkflowApp project again without debugging by pressing **Ctrl+F5**. Two endpoint addresses will be printed in the console window: one for the application endpoint and then other from the <xref:System.ServiceModel.Activities.WorkflowControlEndpoint>. A workflow instance is then created, and tracking records for that instance will appear in the console window. The workflow instance will throw an exception causing the instance to be suspended and aborted.
 
-    2.  The command-line utility can then be used to take further action on any of these instances. The syntax for command line arguments is as follows::
+    2. The command-line utility can then be used to take further action on any of these instances. The syntax for command line arguments is as follows::
 
          `SuspendedInstanceManagement -Command:[CommandName] -Server:[ServerName] -Database:[DatabaseName] -InstanceId:[InstanceId]`
 
@@ -62,19 +62,19 @@ This sample demonstrates how to manage workflow instances that have been suspend
 
 #### To cleanup (Optional)
 
-1.  Open the Computer Management console by running Compmgmt.msc from a `vs2010` command prompt.
+1. Open the Computer Management console by running Compmgmt.msc from a `vs2010` command prompt.
 
-2.  Expand **Service and Applications**, **Message Queuing**, **Private Queues**.
+2. Expand **Service and Applications**, **Message Queuing**, **Private Queues**.
 
-3.  Delete the **ReceiveTx** queue.
+3. Delete the **ReceiveTx** queue.
 
-4.  To remove the persistence database, run cleanup.cmd.
+4. To remove the persistence database, run cleanup.cmd.
 
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Application\SuspendedInstanceManagement`
+> `<InstallDrive>:\WF_WCF_Samples\WF\Application\SuspendedInstanceManagement`

@@ -22,7 +22,7 @@ Provides information about the layout of an object in memory.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_TYPE_LAYOUT {  
     COR_TYPEID parentID;  
     ULONG32 objectSize;  
@@ -55,5 +55,6 @@ typedef struct COR_TYPE_LAYOUT {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

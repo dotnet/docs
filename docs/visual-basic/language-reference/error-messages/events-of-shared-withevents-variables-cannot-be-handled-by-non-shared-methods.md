@@ -15,8 +15,9 @@ A variable declared with the `Shared` modifier is a shared variable. A shared va
   
 ## To correct this error  
   
--   Declare your event handler `Shared`.  
+- Declare your event handler `Shared`.  
   
 ## See also
+
 - [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
 - [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)

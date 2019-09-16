@@ -23,7 +23,7 @@ Gets the children of this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetChildren(  
     [in]  ULONG32  cChildren,  
     [out] ULONG32  *pcChildren,  
@@ -31,7 +31,7 @@ HRESULT GetChildren(
         length_is(*pcChildren)] ISymUnmanagedScope* children[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cChildren`  
  [in] A `ULONG32` that indicates the size of the `children` array.  
   
@@ -48,5 +48,6 @@ HRESULT GetChildren(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
 - [GetParent Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getparent-method.md)

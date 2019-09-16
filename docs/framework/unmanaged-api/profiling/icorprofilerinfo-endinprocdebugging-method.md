@@ -23,12 +23,12 @@ Shuts down an in-process debugging session. This method is obsolete in the .NET 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndInprocDebugging(  
     [in]  DWORD dwProfilerContext);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwProfilerContext`  
  [in] A value that identifies the debugging session. This value must be the same as that received in the [ICorProfilerInfo::BeginInprocDebugging](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-begininprocdebugging-method.md) method.  
   
@@ -47,4 +47,5 @@ HRESULT EndInprocDebugging(
  **.NET Framework Version:** 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

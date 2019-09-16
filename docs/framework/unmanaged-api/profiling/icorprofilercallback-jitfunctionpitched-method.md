@@ -23,12 +23,12 @@ Notifies the profiler that a function that has been just-in-time (JIT)-compiled 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITFunctionPitched(  
     [in] FunctionID functionId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function that was removed.  
   
@@ -47,4 +47,5 @@ HRESULT JITFunctionPitched(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

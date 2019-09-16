@@ -25,7 +25,7 @@ ms.author: "mairaw"
  <xref:System.Security.CodeAccessPermission.Assert%2A> is a method that can be called on code access permission classes and on the <xref:System.Security.PermissionSet> class. You can use **Assert** to enable your code (and downstream callers) to perform actions that your code has permission to do but its callers might not have permission to do. A security assertion changes the normal process that the runtime performs during a security check. When you assert a permission, it tells the security system not to check the callers of your code for the asserted permission.  
   
 > [!CAUTION]
->  Use assertions carefully because they can open security holes and undermine the runtime's mechanism for enforcing security restrictions.  
+> Use assertions carefully because they can open security holes and undermine the runtime's mechanism for enforcing security restrictions.  
   
  Assertions are useful in situations in which a library calls into unmanaged code or makes a call that requires a permission that is not obviously related to the library's intended use. For example, all managed code that calls into unmanaged code must have **SecurityPermission** with the **UnmanagedCode** flag specified. Code that does not originate from the local computer, such as code that is downloaded from the local intranet, will not be granted this permission by default. Therefore, in order for code that is downloaded from the local intranet to be able to call a library that uses unmanaged code, it must have the permission asserted by the library. Additionally, some libraries might make calls that are unseen to callers and require special permissions.  
   
@@ -37,22 +37,21 @@ ms.author: "mairaw"
   
  The following illustration shows what happens when you use **Assert**. Assume that the following statements are true about assemblies A, B, C, E, and F, and two permissions, P1 and P1A:  
   
--   P1A represents the right to read .txt files on the C drive.  
+- P1A represents the right to read .txt files on the C drive.  
   
--   P1 represents the right to read all files on the C drive.  
+- P1 represents the right to read all files on the C drive.  
   
--   P1A and P1 are both **FileIOPermission** types, and P1A is a subset of P1.  
+- P1A and P1 are both **FileIOPermission** types, and P1A is a subset of P1.  
   
--   Assemblies E and F have been granted P1A permission.  
+- Assemblies E and F have been granted P1A permission.  
   
--   Assembly C has been granted P1 permission.  
+- Assembly C has been granted P1 permission.  
   
--   Assemblies A and B have been granted neither P1 nor P1A permissions.  
+- Assemblies A and B have been granted neither P1 nor P1A permissions.  
   
--   Method A is contained in assembly A, method B is contained in assembly B, and so on.  
+- Method A is contained in assembly A, method B is contained in assembly B, and so on.  
   
- ![](../../../docs/framework/misc/media/assert.gif "assert")  
-Using Assert  
+ ![Diagram that shows the Assert method assemblies.](./media/using-the-assert-method/assert-method-assemblies.gif)    
   
  In this scenario, method A calls B, B calls C, C calls E, and E calls F. Method C asserts permission to read files on the C drive (permission P1), and method E demands permission to read .txt files on the C drive (permission P1A). When the demand in F is encountered at run time, a stack walk is performed to check the permissions of all callers of F, starting with E. E has been granted P1A permission, so the stack walk proceeds to examine the permissions of C, where C's assertion is discovered. Because the demanded permission (P1A) is a subset of the asserted permission (P1), the stack walk stops and the security check automatically succeeds. It does not matter that assemblies A and B have not been granted permission P1A. By asserting P1, method C ensures that its callers can access the resource protected by P1, even if the callers have not been granted permission to access that resource.  
   
@@ -61,7 +60,7 @@ Using Assert
  For example, suppose your highly trusted library class has a method that deletes files. It accesses the file by calling an unmanaged Win32 function. A caller invokes your code's **Delete** method, passing in the name of the file to be deleted, C:\Test.txt. Within the **Delete** method, your code creates a <xref:System.Security.Permissions.FileIOPermission> object representing write access to C:\Test.txt. (Write access is required to delete a file.) Your code then invokes an imperative security check by calling the **FileIOPermission** object's **Demand** method. If one of the callers in the call stack does not have this permission, a <xref:System.Security.SecurityException> is thrown. If no exception is thrown, you know that all callers have the right to access C:\Test.txt. Because you believe that most of your callers will not have permission to access unmanaged code, your code then creates a <xref:System.Security.Permissions.SecurityPermission> object that represents the right to call unmanaged code and calls the object's **Assert** method. Finally, it calls the unmanaged Win32 function to delete C:\Text.txt and returns control to the caller.  
   
 > [!CAUTION]
->  You must be sure that your code does not use assertions in situations where your code can be used by other code to access a resource that is protected by the permission you are asserting. For example, in code that writes to a file whose name is specified by the caller as a parameter, you would not assert the **FileIOPermission** for writing to files because your code would be open to misuse by a third party.  
+> You must be sure that your code does not use assertions in situations where your code can be used by other code to access a resource that is protected by the permission you are asserting. For example, in code that writes to a file whose name is specified by the caller as a parameter, you would not assert the **FileIOPermission** for writing to files because your code would be open to misuse by a third party.  
   
  When you use the imperative security syntax, calling the **Assert** method on multiple permissions in the same method causes a security exception to be thrown. Instead, you should create a **PermissionSet** object, pass it the individual permissions you want to invoke, and then call the **Assert** method on the **PermissionSet** object. You can call the **Assert** method more than once when you use the declarative security syntax.  
   
@@ -163,9 +162,10 @@ namespace LogUtil
 ```  
   
 ## See also
+
 - <xref:System.Security.PermissionSet>
 - <xref:System.Security.Permissions.SecurityPermission>
 - <xref:System.Security.Permissions.FileIOPermission>
 - <xref:System.Security.Permissions.SecurityAction>
-- [Attributes](../../../docs/standard/attributes/index.md)
-- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+- [Attributes](../../standard/attributes/index.md)
+- [Code Access Security](code-access-security.md)

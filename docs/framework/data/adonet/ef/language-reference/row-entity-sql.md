@@ -29,26 +29,27 @@ ROW ( expression [ AS alias ] [,...] )
 ROW(1 AS a, "abc" AS b, a+34 AS c)  
 ```  
   
- If you do not provide an alias for an expression in a row constructor, the Entity Framework will try to generate one. For more information, see the "Aliasing Rules" section of the [Identifiers](../../../../../../docs/framework/data/adonet/ef/language-reference/identifiers-entity-sql.md) topic.  
+ If you do not provide an alias for an expression in a row constructor, the Entity Framework will try to generate one. For more information, see the "Aliasing Rules" section of the [Identifiers](identifiers-entity-sql.md) topic.  
   
  The following rules apply to expression aliasing in a row constructor:  
   
--   Expressions in a row constructor cannot refer to other aliases in the same constructor.  
+- Expressions in a row constructor cannot refer to other aliases in the same constructor.  
   
--   Two expressions in the same row constructor cannot have the same alias.  
+- Two expressions in the same row constructor cannot have the same alias.  
   
- For more information about query constructors, see [Constructing Types](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md).  
+ For more information about query constructors, see [Constructing Types](constructing-types-entity-sql.md).  
   
 ## Example  
  The following Entity SQL query uses the ROW operator to construct anonymous, structurally typed records. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
  [!code-csharp[DP EntityServices Concepts 2#ROW](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#row)]  
   
 ## See also
-- [Constructing Types](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md)
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Type Definitions](../../../../../../docs/framework/data/adonet/ef/language-reference/type-definitions-entity-sql.md)
+
+- [Constructing Types](constructing-types-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Type Definitions](type-definitions-entity-sql.md)

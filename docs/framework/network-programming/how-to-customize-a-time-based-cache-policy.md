@@ -15,7 +15,7 @@ When creating a time-based cache policy, you can customize caching behavior by s
   
 ### To create a time-based cache policy that uses a cache synchronization date  
   
--   Create a time-based cache policy that uses a cache synchronization date by passing a <xref:System.DateTime> object to the <xref:System.Net.Cache.HttpRequestCachePolicy> constructor.  
+- Create a time-based cache policy that uses a cache synchronization date by passing a <xref:System.DateTime> object to the <xref:System.Net.Cache.HttpRequestCachePolicy> constructor.  
   
     ```csharp  
     public static HttpRequestCachePolicy CreateLastSyncPolicy(DateTime when)  
@@ -39,14 +39,14 @@ When creating a time-based cache policy, you can customize caching behavior by s
   
  The output is similar to the following:  
   
-```  
+```output
 When: 1/14/2004 8:07:30 AM  
 Level:Default CacheSyncDate:1/14/2004 8:07:30 AM  
 ```  
   
 ### To create a time-based cache policy that is based on minimum freshness  
   
--   Create a time-based cache policy that is based on minimum freshness by specifying <xref:System.Net.Cache.HttpCacheAgeControl.MinFresh> as the `cacheAgeControl` parameter value and passing a <xref:System.TimeSpan> object to the <xref:System.Net.Cache.HttpRequestCachePolicy> constructor.  
+- Create a time-based cache policy that is based on minimum freshness by specifying <xref:System.Net.Cache.HttpCacheAgeControl.MinFresh> as the `cacheAgeControl` parameter value and passing a <xref:System.TimeSpan> object to the <xref:System.Net.Cache.HttpRequestCachePolicy> constructor.  
   
     ```csharp  
     public static HttpRequestCachePolicy CreateMinFreshPolicy(TimeSpan span)  
@@ -68,17 +68,19 @@ Level:Default CacheSyncDate:1/14/2004 8:07:30 AM
   
  For the following invocation:  
   
-```  
+```csharp
 CreateMinFreshPolicy(new TimeSpan(1,0,0));  
 ```  
+
+ The output is:
   
-```  
+```output
 Level:Default MinFresh:3600  
 ```  
   
 ### To create a time-based cache policy that is based on minimum freshness and maximum age  
   
--   Create a time-based cache policy that is based on minimum freshness and maximum age by specifying <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh> as the `cacheAgeControl` parameter value and passing two <xref:System.TimeSpan> objects to the <xref:System.Net.Cache.HttpRequestCachePolicy> constructor, one to specify the maximum age for resources and a second to specify the minimum freshness permitted for an object returned from the cache.  
+- Create a time-based cache policy that is based on minimum freshness and maximum age by specifying <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh> as the `cacheAgeControl` parameter value and passing two <xref:System.TimeSpan> objects to the <xref:System.Net.Cache.HttpRequestCachePolicy> constructor, one to specify the maximum age for resources and a second to specify the minimum freshness permitted for an object returned from the cache.  
   
     ```csharp  
     public static HttpRequestCachePolicy CreateFreshAndAgePolicy(TimeSpan freshMinimum, TimeSpan ageMaximum)  
@@ -100,15 +102,18 @@ Level:Default MinFresh:3600
   
  For the following invocation:  
   
-```  
+```csharp
 CreateFreshAndAgePolicy(new TimeSpan(5,0,0), new TimeSpan(10,0,0));  
 ```  
+
+The output is:
   
-```  
+```output
 Level:Default MaxAge:36000 MinFresh:18000  
 ```  
   
 ## See also
+
 - [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
 - [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)
 - [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)

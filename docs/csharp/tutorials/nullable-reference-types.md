@@ -11,14 +11,15 @@ C# 8 introduces **nullable reference types**, which complement reference types t
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Incorporate nullable and non-nullable reference types into your designs
-> * Enable nullable reference type checks throughout your code.
-> * Write code where the compiler enforces those design decisions.
-> * Use the nullable reference feature in your own designs
+>
+> - Incorporate nullable and non-nullable reference types into your designs
+> - Enable nullable reference type checks throughout your code.
+> - Write code where the compiler enforces those design decisions.
+> - Use the nullable reference feature in your own designs
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019 preview 2](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+preview), or [.NET Core 3.0 preview 2](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You'll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -30,16 +31,18 @@ The code you'll write for this sample expresses that intent, and the compiler en
 
 ## Create the application and enable nullable reference types
 
-Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you've created the application, you'll need to enable C# 8 beta features. Open the `csproj` file and add a `LangVersion` element to the `PropertyGroup` element. You must opt into the **nullable reference types** feature, even in C# 8 projects. That's because once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision will help find issues where existing code may not have proper null-checks, it may not accurately reflect your original design intent. You turn on the feature by setting the `NullableContextOptions` element to `enable`:
+Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you've created the application, you'll need to enable C# 8 beta features. Open the `csproj` file and add a `LangVersion` element to the `PropertyGroup` element. You must opt into the **nullable reference types** feature, even in C# 8 projects. That's because once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision will help find issues where existing code may not have proper null-checks, it may not accurately reflect your original design intent. You turn on the feature by setting the `Nullable` element to `enable`:
 
 ```xml
 <LangVersion>8.0</LangVersion>
-<NullableContextOptions>enable</NullableContextOptions>
+<Nullable>enable</Nullable>
 ```
 
-> [!NOTE]
-> When C# 8 is released (not in preview mode), the `NullableContextOptions` element will be added by new project templates. Until then, you'll need to add it manually.
+> [!IMPORTANT]
+> The `Nullable` element was previously named `NullableContextOptions`. The rename ships with Visual Studio 2019, 16.2-p1. The .NET Core SDK 3.0.100-preview5-011568 does not have this change. If you are using the .NET Core CLI, you'll need to use `NullableContextOptions` until the next preview is available.
 
+> [!NOTE]
+> When C# 8 is released (not in preview mode), the `Nullable` element will be added by new project templates. Until then, you'll need to add it manually.
 
 ### Design the types for the application
 

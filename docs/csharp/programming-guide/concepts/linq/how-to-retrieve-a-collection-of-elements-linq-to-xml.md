@@ -9,7 +9,7 @@ This topic demonstrates the <xref:System.Xml.Linq.XContainer.Elements%2A> method
 ## Example  
  This example iterates through the child elements of the `purchaseOrder` element.  
   
- This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](./sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
   
 ```csharp  
 XElement po = XElement.Load("PurchaseOrder.xml");  
@@ -22,7 +22,7 @@ foreach (XElement el in childElements)
   
  This example produces the following output.  
   
-```  
+```output  
 Name: Address  
 Name: Address  
 Name: DeliveryNotes  
@@ -31,4 +31,4 @@ Name: Items
   
 ## See also
 
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [LINQ to XML Axes (C#)](./linq-to-xml-axes-overview.md)

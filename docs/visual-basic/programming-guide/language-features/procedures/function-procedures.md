@@ -48,7 +48,7 @@ End Function
 ## Returning Values  
  The value a `Function` procedure sends back to the calling code is called its return value. The procedure returns this value in one of two ways:  
   
--   It uses the `Return` statement to specify the return value, and returns control immediately to the calling program. The following example illustrates this.  
+- It uses the `Return` statement to specify the return value, and returns control immediately to the calling program. The following example illustrates this.  
   
 ```vb  
 Function FunctionName [(ParameterList)] As ReturnType  
@@ -58,7 +58,7 @@ Function FunctionName [(ParameterList)] As ReturnType
 End Function  
 ```  
   
--   It assigns a value to its own function name in one or more statements of the procedure. Control does not return to the calling program until an `Exit Function` or `End Function` statement is executed. The following example illustrates this.  
+- It assigns a value to its own function name in one or more statements of the procedure. Control does not return to the calling program until an `Exit Function` or `End Function` statement is executed. The following example illustrates this.  
   
 ```vb  
 Function FunctionName [(ParameterList)] As ReturnType  
@@ -86,13 +86,14 @@ End Function
 ### Illustration of Declaration and Call  
  The following `Function` procedure calculates the longest side, or hypotenuse, of a right triangle, given the values for the other two sides.  
   
- [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/function-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#1)]  
   
  The following example shows a typical call to `hypotenuse`.  
   
- [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/function-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#6)]  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Sub Procedures](./sub-procedures.md)
 - [Property Procedures](./property-procedures.md)

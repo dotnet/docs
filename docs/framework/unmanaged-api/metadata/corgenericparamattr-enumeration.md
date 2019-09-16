@@ -22,7 +22,7 @@ Contains values that describe the <xref:System.Type> parameters for generic type
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorGenericParamAttr {  
   
     gpVarianceMask                     =   0x0003,  
@@ -61,4 +61,5 @@ typedef enum CorGenericParamAttr {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

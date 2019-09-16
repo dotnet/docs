@@ -51,27 +51,28 @@ This sample demonstrates how to implement and configure a typical service and cl
   
 ### To use this sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  Run the sample by following these steps:  
+3. Run the sample by following these steps:  
   
-    1.  Right click the **Service** project and select **Set as StartUp project**, then press **Ctrl+F5**.  
+    1. Right click the **Service** project and select **Set as StartUp project**, then press **Ctrl+F5**.  
   
-    2.  Wait for the console output confirming that the service is up and running.  
+    2. Wait for the console output confirming that the service is up and running.  
   
-    3.  Right click the **Client** project and select **Set as StartUp project**, then press **Ctrl+F5**.  
+    3. Right click the **Client** project and select **Set as StartUp project**, then press **Ctrl+F5**.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigSimplificationIn40`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigSimplificationIn40`  
   
 ## See also
+
 - [AppFabric Management Samples](https://go.microsoft.com/fwlink/?LinkId=193960)
 - [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)

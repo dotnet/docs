@@ -23,13 +23,13 @@ Gets the current user state of this ICorDebugThread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserState (  
     [out] CorDebugUserState   *pState  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pState`  
  [out] A pointer to a bitwise combination of CorDebugUserState enumeration values that describe the current user state of this thread.  
   

@@ -32,7 +32,7 @@ Embeds the specified resource into the output file.
  The accessibility of the resource: public or private. The default is public.  
   
 ## Remarks  
- Use [-linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md) to link a resource to an assembly and not add the resource file to the output file.  
+ Use [-linkresource](./linkresource-compiler-option.md) to link a resource to an assembly and not add the resource file to the output file.  
   
  By default, resources are public in the assembly when they are created by using the C# compiler. To make the resources private, specify `private` as the accessibility modifier. No other accessibility other than `public` or `private` is allowed.  
   
@@ -44,13 +44,13 @@ Embeds the specified resource into the output file.
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Add a resource file to your project.  
+1. Add a resource file to your project.  
   
-2.  Select the file that you want to embed in **Solution Explorer**.  
+2. Select the file that you want to embed in **Solution Explorer**.  
   
-3.  Select **Build Action** for the file in the **Properties** window.  
+3. Select **Build Action** for the file in the **Properties** window.  
   
-4.  Set **Build Action** to **Embedded Resource**.  
+4. Set **Build Action** to **Embedded Resource**.  
   
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.FileProperties2.BuildAction%2A>.  
   
@@ -63,5 +63,5 @@ csc -resource:rf.resource in.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

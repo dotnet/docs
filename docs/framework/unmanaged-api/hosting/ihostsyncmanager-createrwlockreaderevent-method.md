@@ -23,7 +23,7 @@ Creates a manual-reset event object for the implementation of a reader lock.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateRWLockReaderEvent (  
     [in]  BOOL bInitialState,  
     [in]  SIZE_T cookie,  
@@ -31,7 +31,7 @@ HRESULT CreateRWLockReaderEvent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bInitialState`  
  [in] `true`, if `ppEvent` should be signaled; otherwise, `false`.  
   
@@ -66,6 +66,7 @@ HRESULT CreateRWLockReaderEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
 - [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)

@@ -12,7 +12,8 @@ A Windows Forms control inherits more than sixty events from <xref:System.Window
  If your custom control needs to override inherited event functionality, override the inherited `On`*EventName* method instead of attaching a delegate. If you are not familiar with the event model in the .NET Framework, see [Raising Events from a Component](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/sh2e3k5z(v=vs.120)).  
   
 ## See also
-- [Overriding the OnPaint Method](../../../../docs/framework/winforms/controls/overriding-the-onpaint-method.md)
-- [Handling User Input](../../../../docs/framework/winforms/controls/handling-user-input.md)
-- [Defining an Event](../../../../docs/framework/winforms/controls/defining-an-event-in-windows-forms-controls.md)
-- [Events](../../../../docs/standard/events/index.md)
+
+- [Overriding the OnPaint Method](overriding-the-onpaint-method.md)
+- [Handling User Input](handling-user-input.md)
+- [Defining an Event](defining-an-event-in-windows-forms-controls.md)
+- [Events](../../../standard/events/index.md)

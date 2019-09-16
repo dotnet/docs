@@ -23,7 +23,7 @@ Opens an existing, on-disk file and maps its metadata into memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScope (  
     [in]  LPCWSTR     szScope,   
     [in]  DWORD       dwOpenFlags,   
@@ -32,7 +32,7 @@ HRESULT OpenScope (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szScope`  
  [in] The name of the file to be opened. The file must contain common language runtime (CLR) metadata.  
   
@@ -66,6 +66,7 @@ HRESULT OpenScope (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
 - [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

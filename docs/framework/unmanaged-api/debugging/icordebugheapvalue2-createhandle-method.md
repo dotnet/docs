@@ -23,14 +23,14 @@ Creates a handle of the specified type for the heap value represented by this IC
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateHandle (  
     [in] CorDebugHandleType      type,   
     [out] ICorDebugHandleValue   **ppHandle  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `type`  
  [in] A value of the CorDebugHandleType enumeration that specifies the type of handle to be created.  
   

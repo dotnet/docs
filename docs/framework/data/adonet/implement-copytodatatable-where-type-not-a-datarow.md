@@ -1,4 +1,4 @@
-﻿---
+---
 title: "How to: Implement CopyToDataTable<T> Where the Generic Type T Is Not a DataRow"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -11,11 +11,11 @@ The <xref:System.Data.DataTable> object is often used for data binding. The <xre
   
  This topic describes how to implement two custom `CopyToDataTable<T>` extension methods that accept a generic parameter `T` of a type other than <xref:System.Data.DataRow>. The logic to create a <xref:System.Data.DataTable> from an <xref:System.Collections.Generic.IEnumerable%601> source is contained in the `ObjectShredder<T>` class, which is then wrapped in two overloaded `CopyToDataTable<T>` extension methods. The `Shred` method of the `ObjectShredder<T>` class returns the filled <xref:System.Data.DataTable> and accepts three input parameters: an <xref:System.Collections.Generic.IEnumerable%601> source, a <xref:System.Data.DataTable>, and a <xref:System.Data.LoadOption> enumeration. The initial schema of the returned <xref:System.Data.DataTable> is based on the schema of the type `T`. If an existing table is provided as input, the schema must be consistent with the schema of the type `T`. Each public property and field of the type `T` is converted to a <xref:System.Data.DataColumn> in the returned table. If the source sequence contains a type derived from `T`, the returned table schema is expanded for any additional public properties or fields.  
   
- For examples of using the custom `CopyToDataTable<T>` methods, see [Creating a DataTable From a Query](../../../../docs/framework/data/adonet/creating-a-datatable-from-a-query-linq-to-dataset.md).  
+ For examples of using the custom `CopyToDataTable<T>` methods, see [Creating a DataTable From a Query](creating-a-datatable-from-a-query-linq-to-dataset.md).  
   
 ### To implement the custom CopyToDataTable\<T> methods in your application  
   
-1.  Implement the `ObjectShredder<T>` class to create a <xref:System.Data.DataTable> from an <xref:System.Collections.Generic.IEnumerable%601> source:  
+1. Implement the `ObjectShredder<T>` class to create a <xref:System.Data.DataTable> from an <xref:System.Collections.Generic.IEnumerable%601> source:  
   
      [!code-csharp[DP Custom CopyToDataTable Examples#ObjectShredderClass](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#objectshredderclass)]
      [!code-vb[DP Custom CopyToDataTable Examples#ObjectShredderClass](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#objectshredderclass)]  
@@ -26,12 +26,12 @@ The <xref:System.Data.DataTable> object is often used for data binding. The <xre
     DataColumn dc = table.Columns.Contains(p.Name) ? table.Columns[p.Name] : table.Columns.Add(p.Name, Nullable.GetUnderlyingType(p.PropertyType) ?? p.PropertyType);
     ```
 
-2.  Implement the custom `CopyToDataTable<T>` extension methods in a class:  
+2. Implement the custom `CopyToDataTable<T>` extension methods in a class:  
   
      [!code-csharp[DP Custom CopyToDataTable Examples#CustomCopyToDataTableMethods](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#customcopytodatatablemethods)]
      [!code-vb[DP Custom CopyToDataTable Examples#CustomCopyToDataTableMethods](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#customcopytodatatablemethods)]  
   
-3.  Add the `ObjectShredder<T>` class and `CopyToDataTable<T>` extension methods to your application.  
+3. Add the `ObjectShredder<T>` class and `CopyToDataTable<T>` extension methods to your application.  
   
 ```vb  
 Module Module1  
@@ -68,5 +68,6 @@ public class ObjectShredder<T>
 ```
   
 ## See also
-- [Creating a DataTable From a Query](../../../../docs/framework/data/adonet/creating-a-datatable-from-a-query-linq-to-dataset.md)
-- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
+
+- [Creating a DataTable From a Query](creating-a-datatable-from-a-query-linq-to-dataset.md)
+- [Programming Guide](programming-guide-linq-to-dataset.md)

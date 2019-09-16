@@ -10,15 +10,15 @@ ms.author: "mairaw"
 There are several times during a transformation when you may need to resolve external resources.  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
+> The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
   
  There are several times during a transformation when you may need to resolve external resources:  
   
--   During the <xref:System.Xml.Xsl.XslTransform.Load%2A> to locate an external style sheet.  
+- During the <xref:System.Xml.Xsl.XslTransform.Load%2A> to locate an external style sheet.  
   
--   During <xref:System.Xml.Xsl.XslTransform.Load%2A> to resolve any `<xsl:include>` or `<xsl:import>` elements found in the style sheet.  
+- During <xref:System.Xml.Xsl.XslTransform.Load%2A> to resolve any `<xsl:include>` or `<xsl:import>` elements found in the style sheet.  
   
--   During <xref:System.Xml.Xsl.XslTransform.Transform%2A> to resolve any `document()` functions.  
+- During <xref:System.Xml.Xsl.XslTransform.Transform%2A> to resolve any `document()` functions.  
   
 ## Using the XmlResolver Class  
  If authentication is required to access a network resource, use the <xref:System.Xml.Xsl.XslTransform.Load%2A> methods that have an <xref:System.Xml.XmlResolver> parameter to pass the <xref:System.Xml.XmlResolver> object, which has the necessary credential properties set.  

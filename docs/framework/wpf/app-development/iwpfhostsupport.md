@@ -13,19 +13,19 @@ Applications that host [!INCLUDE[TLA#tla_winclient](../../../../includes/tlashar
   
  The integration enabled by `IWpfHostSupport` allows PresentationHost.exe to:  
   
--   Discover and register with the raw input devices (Human Interface Devices) that the host application is interested in.  
+- Discover and register with the raw input devices (Human Interface Devices) that the host application is interested in.  
   
--   Receive input messages from the registered raw input devices and forward appropriate messages to the host application.  
+- Receive input messages from the registered raw input devices and forward appropriate messages to the host application.  
   
--   Query the host application for custom progress and error user interfaces.  
+- Query the host application for custom progress and error user interfaces.  
   
 > [!NOTE]
->  This API is only intended and supported for use on the local client machine  
+> This API is only intended and supported for use on the local client machine  
   
 ## Members  
   
 |Member|Description|  
 |------------|-----------------|  
-|[GetRawInputDevices](../../../../docs/framework/wpf/app-development/getrawinputdevices.md)|Allows PresentationHost.exe to discover the raw input devices (Human Interface Devices) that the host application is interested in.|  
-|[FilterInputMessage](../../../../docs/framework/wpf/app-development/filterinputmessage.md)|Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL is returned.|  
-|[GetCustomUI](../../../../docs/framework/wpf/app-development/getcustomui.md)|By default, PresentationHost.exe provides its own deployment progress and deployment error user interfaces that are displayed when WPF content is deployed.|
+|[GetRawInputDevices](getrawinputdevices.md)|Allows PresentationHost.exe to discover the raw input devices (Human Interface Devices) that the host application is interested in.|  
+|[FilterInputMessage](filterinputmessage.md)|Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL is returned.|  
+|[GetCustomUI](getcustomui.md)|By default, PresentationHost.exe provides its own deployment progress and deployment error user interfaces that are displayed when WPF content is deployed.|

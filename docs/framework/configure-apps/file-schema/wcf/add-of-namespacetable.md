@@ -6,10 +6,11 @@ ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
 # \<add> of \<namespaceTable>
 Represents a configuration element that contains a namespace to prefix mapping that can then be used in XPath filters for routing.  
   
- \<system.serviceModel>  
-\<routing>  
-\<namespaceTable>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<namespaceTable>**](namespacetable.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
@@ -20,9 +21,6 @@ Represents a configuration element that contains a namespace to prefix mapping t
          prefix="String" />
   </namespaceTable>
 </routing>
-```  
-  
-```csharp  
 ```  
   
 ## Attributes and Elements  
@@ -42,7 +40,8 @@ Represents a configuration element that contains a namespace to prefix mapping t
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<namespaceTable>](../../../../../docs/framework/configure-apps/file-schema/wcf/namespacetable.md)|Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.|  
+|[\<namespaceTable>](namespacetable.md)|Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Routing.Configuration.NamespaceElement?displayProperty=nameWithType>

@@ -1,0 +1,78 @@
+- name: Threading
+  href: index.md
+  items:
+  - name: Managed Threading Basics
+    href: managed-threading-basics.md
+    items:
+    - name: Threads and Threading
+      href: threads-and-threading.md
+    - name: Exceptions in Managed Threads
+      href: exceptions-in-managed-threads.md
+    - name: Synchronizing Data for Multithreading
+      href: synchronizing-data-for-multithreading.md
+    - name: Foreground and Background Threads
+      href: foreground-and-background-threads.md
+    - name: Managed and Unmanaged Threading in Windows
+      href: managed-and-unmanaged-threading-in-windows.md
+    - name: "Thread Local Storage: Thread-Relative Static Fields and Data Slots"
+      href: thread-local-storage-thread-relative-static-fields-and-data-slots.md
+  - name: Using threads and threading
+    href: using-threads-and-threading.md
+    items:
+    - name: Creating threads and passing data at start time
+      href: creating-threads-and-passing-data-at-start-time.md
+    - name: Pausing and interrupting threads
+      href: pausing-and-resuming-threads.md
+    - name: Destroying threads
+      href: destroying-threads.md
+    - name: Scheduling threads
+      href: scheduling-threads.md
+    - name: Cancellation in managed threads
+      href: cancellation-in-managed-threads.md
+      items:
+      - name: Canceling threads cooperatively
+        href: canceling-threads-cooperatively.md
+      - name: "How to: Listen for Cancellation Requests by Polling"
+        href: how-to-listen-for-cancellation-requests-by-polling.md
+      - name: "How to: Register Callbacks for Cancellation Requests"
+        href: how-to-register-callbacks-for-cancellation-requests.md
+      - name: "How to: Listen for Cancellation Requests That Have Wait Handles"
+        href: how-to-listen-for-cancellation-requests-that-have-wait-handles.md
+      - name: "How to: Listen for Multiple Cancellation Requests"
+        href: how-to-listen-for-multiple-cancellation-requests.md
+  - name: Managed Threading Best Practices
+    href: managed-threading-best-practices.md
+  - name: Threading objects and features
+    href: threading-objects-and-features.md
+    items:
+    - name: The managed thread pool
+      href: the-managed-thread-pool.md
+    - name: Timers
+      href: timers.md
+    - name: Overview of synchronization primitives
+      href: overview-of-synchronization-primitives.md
+    - name: EventWaitHandle
+      href: eventwaithandle.md
+    - name: CountdownEvent
+      href: countdownevent.md
+    - name: Mutexes
+      href: mutexes.md
+    - name: Semaphore and SemaphoreSlim
+      href: semaphore-and-semaphoreslim.md
+    - name: Barrier
+      href: barrier.md
+      items:
+      - name: "How to: Synchronize concurrent operations with a Barrier"
+        href: how-to-synchronize-concurrent-operations-with-a-barrier.md
+    - name: SpinLock
+      href: spinlock.md
+      items:
+      - name: "How to: Use SpinLock for low-level synchronization"
+        href: how-to-use-spinlock-for-low-level-synchronization.md
+      - name: "How to: Enable thread-tracking mode in SpinLock"
+        href: how-to-enable-thread-tracking-mode-in-spinlock.md
+    - name: SpinWait
+      href: spinwait.md
+      items:
+      - name: "How to: Use SpinWait to implement a two-phase wait operation"
+        href: how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md

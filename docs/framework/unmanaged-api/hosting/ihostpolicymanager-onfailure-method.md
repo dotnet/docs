@@ -23,14 +23,14 @@ Notifies the host that the common language runtime (CLR) is about to take the ac
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnFailure(  
     [in] EClrFailure   failure,  
     [in] EPolicyAction action  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `failure`  
  [in] One of the [EClrFailure](../../../../docs/framework/unmanaged-api/hosting/eclrfailure-enumeration.md) values, indicating the kind of failure to which the CLR is responding.  
   
@@ -58,6 +58,7 @@ HRESULT OnFailure(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [EClrFailure Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrfailure-enumeration.md)
 - [EPolicyAction Enumeration](../../../../docs/framework/unmanaged-api/hosting/epolicyaction-enumeration.md)
 - [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)

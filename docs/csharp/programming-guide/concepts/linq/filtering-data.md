@@ -8,7 +8,7 @@ Filtering refers to the operation of restricting the result set to contain only 
   
  The following illustration shows the results of filtering a sequence of characters. The predicate for the filtering operation specifies that the character must be 'A'.  
   
- ![LINQ Filtering Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_filter.png "LINQ_Filter")  
+ ![Diagram that shows a LINQ filtering operation](./media/filtering-data/linq-filter-operation.png)  
   
  The standard query operator methods that perform selection are listed in the following section.  
   
@@ -42,9 +42,9 @@ foreach (string str in query)
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [where clause](../../../../csharp/language-reference/keywords/where-clause.md)
-- [How to: Dynamically Specify Predicate Filters at Runtime](../../../../csharp/programming-guide/linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md)
-- [How to: Query An Assembly's Metadata with Reflection (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md)
-- [How to: Query for Files with a Specified Attribute or Name (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md)
-- [How to: Sort or Filter Text Data by Any Word or Field (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [where clause](../../../language-reference/keywords/where-clause.md)
+- [How to: Dynamically Specify Predicate Filters at Runtime](../../linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md)
+- [How to: Query An Assembly's Metadata with Reflection (LINQ) (C#)](./how-to-query-an-assembly-s-metadata-with-reflection-linq.md)
+- [How to: Query for Files with a Specified Attribute or Name (C#)](./how-to-query-for-files-with-a-specified-attribute-or-name.md)
+- [How to: Sort or Filter Text Data by Any Word or Field (LINQ) (C#)](./how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

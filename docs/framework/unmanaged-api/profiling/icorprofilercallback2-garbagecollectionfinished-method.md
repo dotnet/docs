@@ -23,7 +23,7 @@ Notifies the profiler that garbage collection has completed and all garbage coll
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GarbageCollectionFinished();  
 ```  
   
@@ -40,5 +40,6 @@ HRESULT GarbageCollectionFinished();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)

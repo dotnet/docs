@@ -1,8 +1,8 @@
-## Installation instructions 
+## Installation instructions - Visual Studio Installer
 
 There are two different ways to find the **.NET Compiler Platform SDK** in the **Visual Studio Installer**:
 
-### Install using the Workloads view
+### Install using the Visual Studio Installer - Workloads view
 
 The .NET Compiler Platform SDK is not automatically selected as part of the Visual Studio extension development workload. You must select it as an optional component.
 
@@ -17,7 +17,7 @@ Optionally, you'll also want the **DGML editor** to display graphs in the visual
 1. Open the **Individual components** node in the summary tree.
 1. Check the box for **DGML editor**
 
-### Install using the Individual components tab
+### Install using the Visual Studio Installer - Individual components tab
 
 1. Run **Visual Studio Installer** 
 1. Select **Modify** 

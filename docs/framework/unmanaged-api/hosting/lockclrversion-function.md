@@ -21,11 +21,11 @@ ms.author: "ronpet"
 # LockClrVersion Function
 Allows the host to determine which version of the common language runtime (CLR) will be used within the process before explicitly initializing the CLR.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LockClrVersion (  
     [in] FLockClrVersionCallback   hostCallback,  
     [in] FLockClrVersionCallback  *pBeginHostSetup,  
@@ -33,7 +33,7 @@ HRESULT LockClrVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hostCallback`  
  [in] The function to be called by the CLR upon initialization.  
   
@@ -54,27 +54,27 @@ HRESULT LockClrVersion (
 ## Remarks  
  The host calls `LockClrVersion` before initializing the CLR. `LockClrVersion` takes three parameters, all of which are callbacks of type [FLockClrVersionCallback](../../../../docs/framework/unmanaged-api/hosting/flockclrversioncallback-function-pointer.md). This type is defined as follows.  
   
-```  
+```cpp  
 typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();  
 ```  
   
  The following steps occur upon initialization of the runtime:  
   
-1.  The host calls [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) or one of the other runtime initialization functions. Alternatively, the host could initialize the runtime using COM object activation.  
+1. The host calls [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) or one of the other runtime initialization functions. Alternatively, the host could initialize the runtime using COM object activation.  
   
-2.  The runtime calls the function specified by the `hostCallback` parameter.  
+2. The runtime calls the function specified by the `hostCallback` parameter.  
   
-3.  The function specified by `hostCallback` then makes the following sequence of calls:  
+3. The function specified by `hostCallback` then makes the following sequence of calls:  
   
-    -   The function specified by the `pBeginHostSetup` parameter.  
+    - The function specified by the `pBeginHostSetup` parameter.  
   
-    -   `CorBindToRuntimeEx` (or another runtime initialization function).  
+    - `CorBindToRuntimeEx` (or another runtime initialization function).  
   
-    -   [ICLRRuntimeHost::SetHostControl](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md).  
+    - [ICLRRuntimeHost::SetHostControl](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md).  
   
-    -   [ICLRRuntimeHost::Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md).  
+    - [ICLRRuntimeHost::Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md).  
   
-    -   The function specified by the `pEndHostSetup` parameter.  
+    - The function specified by the `pEndHostSetup` parameter.  
   
  All the calls from `pBeginHostSetup` to `pEndHostSetup` must occur on a single thread or fiber, with the same logical stack. This thread can be different from the thread upon which `hostCallback` is called.  
   
@@ -88,4 +88,5 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

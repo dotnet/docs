@@ -12,9 +12,9 @@ This topic provides a step-by-step introduction to building, debugging, and publ
 
 ## Prerequisites
 
-[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with either .NET Core 1.1 or .NET Core 2.0.
+[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.1 or later versions.
 
-For more information, see the [Prerequisites for .NET Core on Windows](../../core/windows-prerequisites.md) topic.
+For more information, see the [Prerequisites for .NET Core on Windows](../windows-prerequisites.md) topic.
 
 ## A simple Hello World application
 
@@ -23,7 +23,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
 1. Launch Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the *New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "HelloWorld". Select the **OK** button.
 
    ![New Project dialog with Console App selected](./media/with-visual-studio/visual-studio-new-project.png)
-   
+
 1. Visual Studio uses the template to create your project. The C# Console Application template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
    ![Visual Studio and the new HelloWorld project](./media/with-visual-studio/visual-studio-main-window.png)
@@ -36,6 +36,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
    Console.Write("Press any key to continue...");
    Console.ReadKey(true);
    ```
+
    This code prompts the user to press any key and then pauses the program until a key is pressed.
 
 1. On the menu bar, select **Build** > **Build Solution**. This compiles your program into an intermediate language (IL) that's converted into binary code by a just-in-time (JIT) compiler.
@@ -54,7 +55,7 @@ Enhance your application to prompt the user for their name and display it along 
 
    [!code-csharp[GettingStarted#1](../../../samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
 
-   This code replaces the existing <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, <xref:System.Console.Write%2A?displayProperty=nameWithType>, and <xref:System.Console.ReadKey%2A?displayProperty=nameWithType> statements.
+   This code replaces the contents of the `Main` method.
 
    ![Visual Studio Program c-sharp file with updated Main method](./media/with-visual-studio/visual-csharp-code-window.png)
 

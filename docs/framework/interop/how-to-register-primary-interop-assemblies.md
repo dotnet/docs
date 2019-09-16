@@ -10,7 +10,7 @@ ms.author: "ronpet"
 ---
 # How to: Register Primary Interop Assemblies
 
-Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md).
+Classes can be marshaled only by COM interop and are always marshaled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [COM Callable Wrapper](../../standard/native-interop/com-callable-wrapper.md).
 
  Although any developer who wants to use COM types from a .NET Framework application can generate an interop assembly, doing so creates a problem. Each time a developer imports and signs a COM type library, that developer creates a set of unique types that are incompatible with those imported and signed by another developer. The solution to this type incompatibility problem is for each developer to obtain the vendor-supplied and signed primary interop assembly.
 
@@ -22,15 +22,15 @@ Classes can be marshaled only by COM interop and are always marshaled as interfa
 
  Although it is not necessary to register primary interop assemblies unless you plan to use Visual Studio, registration provides two advantages:
 
--   A registered primary interop assembly is clearly marked under the registry key of the original type library. Registration is the best way for you to locate a primary interop assembly on your computer.
+- A registered primary interop assembly is clearly marked under the registry key of the original type library. Registration is the best way for you to locate a primary interop assembly on your computer.
 
--   You can avoid accidentally generating and using a new interop assembly if, at some time in the future, you do use Visual Studio to reference a type for which you have an unregistered primary interop assembly.
+- You can avoid accidentally generating and using a new interop assembly if, at some time in the future, you do use Visual Studio to reference a type for which you have an unregistered primary interop assembly.
 
 Use the [Assembly Registration Tool (Regasm.exe)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md) to register a primary interop assembly.
 
 ## To register a primary interop assembly
 
-1.  At the command prompt, type:
+1. At the command prompt, type:
 
      **regasm** *assemblyname*
 

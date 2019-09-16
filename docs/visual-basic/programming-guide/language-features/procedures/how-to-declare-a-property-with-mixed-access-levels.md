@@ -18,17 +18,18 @@ If you want the `Get` and `Set` procedures on a property to have different acces
   
 ### To declare a property with mixed access levels  
   
-1.  Declare the property in the normal way, and specify the less restrictive access level (such as `Public`) in the `Property` statement.  
+1. Declare the property in the normal way, and specify the less restrictive access level (such as `Public`) in the `Property` statement.  
   
-2.  Declare either the `Get` or the `Set` procedure specifying the more restrictive access level (such as `Friend`).  
+2. Declare either the `Get` or the `Set` procedure specifying the more restrictive access level (such as `Friend`).  
   
-3.  Do not specify an access level on the other property procedure. It assumes the access level declared in the `Property` statement. You can restrict access on only one of the property procedures.  
+3. Do not specify an access level on the other property procedure. It assumes the access level declared in the `Property` statement. You can restrict access on only one of the property procedures.  
   
-     [!code-vb[VbVbcnProcedures#10](./codesnippet/VisualBasic/how-to-declare-a-property-with-mixed-access-levels_1.vb)]  
+     [!code-vb[VbVbcnProcedures#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#10)]  
   
      In the preceding example, the `Get` procedure has the same `Protected` access as the property itself, while the `Set` procedure has `Private` access. A class derived from `employee` can read the `salary` value, but only the `employee` class can set it.  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Property Procedures](./property-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)

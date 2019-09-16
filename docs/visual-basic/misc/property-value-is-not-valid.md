@@ -10,7 +10,8 @@ One of the properties of an object or control was set to a value outside its ran
   
 ## To correct this error  
   
--   Change the property value to a valid setting.  
+- Change the property value to a valid setting.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

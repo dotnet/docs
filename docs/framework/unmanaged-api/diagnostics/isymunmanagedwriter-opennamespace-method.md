@@ -23,12 +23,12 @@ Opens a new namespace. Call this method before defining methods or variables tha
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenNamespace(  
     [in] const WCHAR *name);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] A pointer to the name of the new namespace.  
   
@@ -39,5 +39,6 @@ HRESULT OpenNamespace(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
 - [CloseNamespace Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-closenamespace-method.md)

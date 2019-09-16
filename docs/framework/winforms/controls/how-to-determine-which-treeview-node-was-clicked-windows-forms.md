@@ -18,9 +18,9 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
   
 ### To determine which TreeView node was clicked  
   
-1.  Use the <xref:System.EventArgs> object to return a reference to the clicked node object.  
+1. Use the <xref:System.EventArgs> object to return a reference to the clicked node object.  
   
-2.  Determine which node was clicked by checking the <xref:System.Windows.Forms.TreeViewEventArgs> class, which contains data related to the event.  
+2. Determine which node was clicked by checking the <xref:System.Windows.Forms.TreeViewEventArgs> class, which contains data related to the event.  
   
     ```vb  
     Private Sub TreeView1_AfterSelect(ByVal sender As System.Object, _  
@@ -50,7 +50,8 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
     ```  
   
     > [!NOTE]
-    >  As an alternative, you can use the <xref:System.Windows.Forms.MouseEventArgs> of the <xref:System.Windows.Forms.Control.MouseDown> or <xref:System.Windows.Forms.Control.MouseUp> event to get the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> coordinate values of the <xref:System.Drawing.Point> where the click occurred. Then, use the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.TreeView.GetNodeAt%2A> method to determine which node was clicked.  
+    > As an alternative, you can use the <xref:System.Windows.Forms.MouseEventArgs> of the <xref:System.Windows.Forms.Control.MouseDown> or <xref:System.Windows.Forms.Control.MouseUp> event to get the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> coordinate values of the <xref:System.Drawing.Point> where the click occurred. Then, use the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.TreeView.GetNodeAt%2A> method to determine which node was clicked.  
   
 ## See also
-- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)
+
+- [TreeView Control](treeview-control-windows-forms.md)

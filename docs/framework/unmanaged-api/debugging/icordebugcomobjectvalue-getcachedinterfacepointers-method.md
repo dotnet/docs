@@ -21,7 +21,7 @@ Gets the raw interface pointers cached on the current runtime callable wrapper (
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCachedInterfacePointers(  
     [in] BOOL bIInspectableOnly,  
     [in] ULONG32 celt,  
@@ -29,9 +29,9 @@ HRESULT GetCachedInterfacePointers(
     [out, size_is(celt), length_is(*pceltFetched) CORDB_ADDRESS *ptrs);  
 ```  
   
-#### Parameters  
+## Parameters  
  `bIInspectableOnly`  
- [in] A value that indicates whether the method will return only [!INCLUDE[wrt](../../../../includes/wrt-md.md)] interfaces (`IInspectable` interfaces) or all COM interfaces that are cached by the runtime callable wrapper (RCW).  
+ [in] A value that indicates whether the method will return only Windows Runtime interfaces (`IInspectable` interfaces) or all COM interfaces that are cached by the runtime callable wrapper (RCW).  
   
  `celt`  
  [in] The number of objects whose addresses are to be retrieved.  
@@ -54,5 +54,6 @@ HRESULT GetCachedInterfacePointers(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugComObjectValue Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcomobjectvalue-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

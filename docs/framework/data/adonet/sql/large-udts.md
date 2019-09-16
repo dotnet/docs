@@ -10,7 +10,7 @@ ms.assetid: 420ae24e-762b-4e09-b4c3-2112c470ee49
 User-defined types (UDTs) allow a developer to extend the server's scalar type system by storing common language runtime (CLR) objects in a SQL Server database. UDTs can contain multiple elements and can have behaviors, unlike the traditional alias data types, which consist of a single SQL Server system data type.  
   
 > [!NOTE]
->  You must install the .NET Framework 3.5 SP1 (or later) to take advantage of the enhanced SqlClient support for large UDTs.  
+> You must install the .NET Framework 3.5 SP1 (or later) to take advantage of the enhanced SqlClient support for large UDTs.  
   
  Previously, UDTs were restricted to a maximum size of 8 kilobytes. In SQL Server 2008, this restriction has been removed for UDTs that have a format of <xref:Microsoft.SqlServer.Server.Format.UserDefined>.  
   
@@ -18,10 +18,10 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
   
  **SQL Server Books Online**  
   
-1.  [CLR User-Defined Types](https://go.microsoft.com/fwlink/?LinkId=98366)  
+1. [CLR User-Defined Types](https://go.microsoft.com/fwlink/?LinkId=98366)  
   
 ## Retrieving UDT Schemas Using GetSchema  
- The <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> method of <xref:System.Data.SqlClient.SqlConnection> returns database schema information in a <xref:System.Data.DataTable>. For more information, see [SQL Server Schema Collections](../../../../../docs/framework/data/adonet/sql-server-schema-collections.md).  
+ The <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> method of <xref:System.Data.SqlClient.SqlConnection> returns database schema information in a <xref:System.Data.DataTable>. For more information, see [SQL Server Schema Collections](../sql-server-schema-collections.md).  
   
 ### GetSchemaTable Column Values for UDTs  
  The <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> method of a <xref:System.Data.SqlClient.SqlDataReader> returns a <xref:System.Data.DataTable> that describes column metadata. The following table describes the differences in the column metadata for large UDTs between SQL Server 2005 and SQL Server 2008.  
@@ -43,21 +43,21 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
   
  The following methods of <xref:System.Data.SqlClient.SqlDataReader> will return a <xref:System.Data.SqlTypes.SqlBinary> instead of a UDT when the `Type System Version` is set to SQL Server 2005:  
   
--   <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType%2A>  
+- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType%2A>  
   
--   <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue%2A>  
+- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue%2A>  
   
--   <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues%2A>  
+- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues%2A>  
   
--   <xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A>  
+- <xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A>  
   
--   <xref:System.Data.SqlClient.SqlDataReader.GetSqlValues%2A>  
+- <xref:System.Data.SqlClient.SqlDataReader.GetSqlValues%2A>  
   
  The following methods will return an array of `Byte[]` instead of a UDT when the `Type System Version` is set to SQL Server 2005:  
   
--   <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>  
+- <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>  
   
--   <xref:System.Data.SqlClient.SqlDataReader.GetValues%2A>  
+- <xref:System.Data.SqlClient.SqlDataReader.GetValues%2A>  
   
  Note that no conversions are made for the current version of ADO.NET.  
   
@@ -126,8 +126,9 @@ End Using
 ```  
   
 ## See also
-- [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
-- [Retrieving Database Schema Information](../../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
-- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
-- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md)
+- [Retrieving Database Schema Information](../retrieving-database-schema-information.md)
+- [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md)
+- [SQL Server Binary and Large-Value Data](sql-server-binary-and-large-value-data.md)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -23,7 +23,7 @@ Gets a pointer to the TypeRef token for the <xref:System.Type> reference that is
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindTypeRef (  
    [in] mdToken        tkResolutionScope,  
    [in]  LPCWSTR       szName,  
@@ -31,7 +31,7 @@ HRESULT FindTypeRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkResolutionScope`  
  [in] A ModuleRef, AssemblyRef, or TypeRef token that specifies the module, assembly, or type, respectively, in which the type reference is defined.  
   
@@ -51,5 +51,6 @@ HRESULT FindTypeRef (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

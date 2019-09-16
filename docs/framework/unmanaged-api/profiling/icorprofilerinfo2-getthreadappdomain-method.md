@@ -23,13 +23,13 @@ Gets the ID of the application domain in which the specified thread is currently
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadAppDomain(  
     [in]  ThreadID threadId,  
     [out] AppDomainID *pAppDomainId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID specifying the thread.  
   
@@ -46,5 +46,6 @@ HRESULT GetThreadAppDomain(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

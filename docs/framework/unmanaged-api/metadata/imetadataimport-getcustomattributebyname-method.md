@@ -23,7 +23,7 @@ Gets the custom attribute, given its name and owner.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCustomAttributeByName (  
    [in]  mdToken          tkObj,  
    [in]  LPCWSTR          szName,  
@@ -32,7 +32,7 @@ HRESULT GetCustomAttributeByName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkObj`  
  [in] A metadata token representing the object that owns the custom attribute.  
   
@@ -58,5 +58,6 @@ HRESULT GetCustomAttributeByName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

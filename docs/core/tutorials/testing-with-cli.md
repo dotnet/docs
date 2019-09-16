@@ -5,9 +5,10 @@ author: cartermp
 ms.date: 09/10/2018
 ms.custom: "seodec18"
 ---
+
 # Organizing and testing projects with the .NET Core command line
 
-This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) testing framework.
+This tutorial follows [Get started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) testing framework.
 
 ## Using folders to organize code
 
@@ -42,7 +43,7 @@ Projects that logically group files into folders are easy to navigate and mainta
 
 For the following steps, you can either follow along using the [NewTypes Pets Sample](https://github.com/dotnet/samples/tree/master/core/console-apps/NewTypesMsBuild) or create your own files and folders. The types are logically organized into a folder structure that permits the addition of more types later, and tests are also logically placed in folders permitting the addition of more tests later.
 
-The sample contains two types, `Dog` and `Cat`, and has them implement a common interface, `IPet`. For the `NewTypes` project, your goal is to organize the pet-related types into a *Pets* folder. If another set of types is added later, *WildAnimals* for example, they're placed in the *NewTypes* folder alongside the *Pets* folder. The *WildAnimals* folder may contain types for animals that aren't pets, such as `Squirrel` and `Rabbit` types. In this way as types are added, the project remains well organized. 
+The sample contains two types, `Dog` and `Cat`, and has them implement a common interface, `IPet`. For the `NewTypes` project, your goal is to organize the pet-related types into a *Pets* folder. If another set of types is added later, *WildAnimals* for example, they're placed in the *NewTypes* folder alongside the *Pets* folder. The *WildAnimals* folder may contain types for animals that aren't pets, such as `Squirrel` and `Rabbit` types. In this way as types are added, the project remains well organized.
 
 Create the following folder structure with file content indicated:
 
@@ -101,15 +102,15 @@ Navigate back to the *src* folder and create a *test* folder with a *NewTypesTes
 
 The test project cannot currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```
-dotnet add reference ../../NewTypes/NewTypes.csproj
+```console
+dotnet add reference ../../src/NewTypes/NewTypes.csproj
 ```
 
 Or, you also have the option of manually adding the project reference by adding an `<ItemGroup>` node to the *NewTypesTests.csproj* file:
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="../../NewTypes/NewTypes.csproj" />
+  <ProjectReference Include="../../src/NewTypes/NewTypes.csproj" />
 </ItemGroup>
 ```
 
@@ -133,23 +134,23 @@ using Pets;
 
 public class PetTests
 {
-	[Fact]
-	public void DogTalkToOwnerReturnsWoof()
-	{
-		string expected = "Woof!";
-		string actual = new Dog().TalkToOwner();
-		
-		Assert.NotEqual(expected, actual);
-	}
-	
-	[Fact]
-	public void CatTalkToOwnerReturnsMeow()
-	{
-		string expected = "Meow!";
-		string actual = new Cat().TalkToOwner();
-		
-		Assert.NotEqual(expected, actual);
-	}
+    [Fact]
+    public void DogTalkToOwnerReturnsWoof()
+    {
+        string expected = "Woof!";
+        string actual = new Dog().TalkToOwner();
+
+        Assert.NotEqual(expected, actual);
+    }
+
+    [Fact]
+    public void CatTalkToOwnerReturnsMeow()
+    {
+        string expected = "Meow!";
+        string actual = new Cat().TalkToOwner();
+
+        Assert.NotEqual(expected, actual);
+    }
 }
 ```
 
@@ -176,15 +177,14 @@ The following shows the complete project structure:
       |__NewTypesTests.csproj
 ```
 
-Start in the *test/NewTypesTests* directory. Restore the test project with the [`dotnet restore`](../tools/dotnet-restore.md) 
+Start in the *test/NewTypesTests* directory. Restore the test project with the [`dotnet restore`](../tools/dotnet-restore.md)
  command. Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file.
 
- [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
- 
 As expected, testing fails, and the console displays the following output:
 
-```
+```output
 Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
 Microsoft (R) Test Execution Command Line Tool Version 15.8.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -218,7 +218,7 @@ Change the assertions of your tests from `Assert.NotEqual` to `Assert.Equal`:
 
 Re-run the tests with the `dotnet test` command and obtain the following output:
 
-```
+```output
 Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
 Microsoft (R) Test Execution Command Line Tool Version 15.8.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -233,4 +233,3 @@ Test execution time: 1.6029 Seconds
 Testing passes. The pet types' methods return the correct values when talking to the owner.
 
 You've learned techniques for organizing and testing projects using xUnit. Go forward with these techniques applying them in your own projects. *Happy coding!*
-

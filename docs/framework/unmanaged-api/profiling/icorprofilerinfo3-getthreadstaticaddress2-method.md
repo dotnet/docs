@@ -23,7 +23,7 @@ Gets the address of the specified thread-static field that is in the scope of th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadStaticAddress2(  
                 [in] ClassID classId,  
                 [in] mdFieldDef fieldToken,  
@@ -32,7 +32,7 @@ HRESULT GetThreadStaticAddress2(
                 [out] void **ppAddress);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class that contains the requested thread-static field.  
   
@@ -51,9 +51,9 @@ HRESULT GetThreadStaticAddress2(
 ## Remarks  
  The `GetThreadStaticAddress2` method may return one of the following:  
   
--   A CORPROF_E_DATAINCOMPLETE HRESULT if the given static field has not been assigned an address in the specified context.  
+- A CORPROF_E_DATAINCOMPLETE HRESULT if the given static field has not been assigned an address in the specified context.  
   
--   The addresses of objects that may be in the garbage collection heap. These addresses may become invalid after garbage collection, so after garbage collection, profilers should not assume that they are valid.  
+- The addresses of objects that may be in the garbage collection heap. These addresses may become invalid after garbage collection, so after garbage collection, profilers should not assume that they are valid.  
   
  Before a class’s class constructor is completed, `GetThreadStaticAddress2` will return CORPROF_E_DATAINCOMPLETE for all its static fields, although some of the static fields may already be initialized and rooting garbage collection objects.  
   
@@ -69,6 +69,7 @@ HRESULT GetThreadStaticAddress2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

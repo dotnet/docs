@@ -1,0 +1,33 @@
+- name: .NET for Apache Spark Guide
+  href: index.yml
+- name: Overview
+  expanded: true
+  items:
+  - name: What is .NET for Apache Spark?
+    href: what-is-apache-spark-dotnet.md
+- name: Tutorials
+  items:
+  - name: Get started
+    href: tutorials/get-started.md
+  - name: Deploy to Azure HDInsight
+    href: tutorials/hdinsight-deployment.md
+  - name: Deploy to AWS EMR Spark
+    href: tutorials/amazon-emr-spark-deployment.md
+  - name: Deploy to Databricks
+    href: tutorials/databricks-deployment.md
+- name: How-to guides
+  items:
+  - name: Debug your application
+    href: how-to-guides/debug.md
+- name: Reference
+  items:
+  - name: API Reference
+    href: https://docs.microsoft.com/dotnet/api/?view=spark-dotnet
+- name: Resources
+  items:
+  - name: Resources overview
+    href: resources/index.md
+  - name: GitHub
+    href: https://github.com/dotnet/spark
+  - name: Stack Overflow
+    href: https://stackoverflow.com/questions/tagged/.net-spark

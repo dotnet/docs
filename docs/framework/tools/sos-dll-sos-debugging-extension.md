@@ -9,13 +9,14 @@ ms.assetid: 9ac1b522-77ab-4cdc-852a-20fcdc9ae498
 author: "mairaw"
 ms.author: "mairaw"
 ---
+
 # SOS.dll (SOS debugging extension)
 
 The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual Studio and in the Windows debugger (WinDbg.exe) by providing information about the internal Common Language Runtime (CLR) environment. This tool requires your project to have unmanaged debugging enabled. SOS.dll is automatically installed with the .NET Framework. To use SOS.dll in Visual Studio, install the [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 ## Syntax
 
-```shell
+```console
 ![command] [options]
 ```
 
@@ -56,17 +57,17 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 |**GCHandles** [**-perdomain**]|Displays statistics about garbage collector handles in the process.<br /><br /> The **-perdomain** option arranges the statistics by application domain.<br /><br /> Use the **GCHandles** command to find memory leaks caused by garbage collector handle leaks. For example, a memory leak occurs when code retains a large array because a strong garbage collector handle still points to it, and the handle is discarded without freeing it.|
 |**GCHandleLeaks**|Searches memory for any references to strong and pinned garbage collector handles in the process and displays the results. If a handle is found, the **GCHandleLeaks** command displays the address of the reference. If a handle is not found in memory, this command displays a notification.|
 |**GCInfo** \<*MethodDesc address*>\<*Code address*>|Displays data that indicates when registers or stack locations contain managed objects. If a garbage collection occurs, the collector must know the locations of references to objects so it can update them with new object pointer values.|
-|**GCRoot** [**-nostacks**] \<*Object address*>|Displays information about references (or roots) to an object at the specified address.<br /><br /> The **GCRoot** command examines the entire managed heap and the handle table for handles within other objects and handles on the stack. Each stack is then searched for pointers to objects, and the finalizer queue is also searched.<br /><br /> This command does not determine whether a stack root is valid or is discarded. Use the **CLRStack** and **U** commands to disassemble the frame that the local or argument value belongs to in order to determine if the stack root is still in use.<br /><br /> The **-nostacks** option restricts the search to garbage collector handles and freachable objects.|
+|**GCRoot** [**-nostacks**] \<*Object address*>|Displays information about references (or roots) to an object at the specified address.<br /><br /> The **GCRoot** command examines the entire managed heap and the handle table for handles within other objects and handles on the stack. Each stack is then searched for pointers to objects, and the finalizer queue is also searched.<br /><br /> This command does not determine whether a stack root is valid or is discarded. Use the **CLRStack** and **U** commands to disassemble the frame that the local or argument value belongs to in order to determine if the stack root is still in use.<br /><br /> The **-nostacks** option restricts the search to garbage collector handles and reachable objects.|
 |**GCWhere**  *\<object address>*|Displays the location and size in the garbage collection heap of the argument passed in. When the argument lies in the managed heap but is not a valid object address, the size is displayed as 0 (zero).|
 |**help** [\<*command*>] [`faq`]|Displays all available commands when no parameter is specified, or displays detailed help information about the specified command.<br /><br /> The `faq` parameter displays answers to frequently asked questions.|
 |**HeapStat** [**-inclUnrooted** &#124; **-iu**]|Displays the generation sizes for each heap and the total free space in each generation on each heap. If the -**inclUnrooted** option is specified, the report includes information about the managed objects from the garbage collection heap that is no longer rooted.|
 |**HistClear**|Releases any resources used by the family of `Hist` commands.<br /><br /> Generally, you do not have to explicitly call `HistClear`, because each `HistInit` cleans up the previous resources.|
 |**HistInit**|Initializes the SOS structures from the stress log saved in the debuggee.|
-|**HistObj** *<obj_address>*|Examines all stress log relocation records and displays the chain of garbage collection relocations that may have led to the address passed in as an argument.|
-|**HistObjFind**  *<obj_address>*|Displays all the log entries that reference an object at the specified address.|
+|**HistObj** *\<obj_address>*|Examines all stress log relocation records and displays the chain of garbage collection relocations that may have led to the address passed in as an argument.|
+|**HistObjFind**  *\<obj_address>*|Displays all the log entries that reference an object at the specified address.|
 |**HistRoot** *\<root>*|Displays information related to both promotions and relocations of the specified root.<br /><br /> The root value can be used to track the movement of an object through the garbage collections.|
 |**IP2MD** \<*Code address*>|Displays the `MethodDesc` structure at the specified address in code that has been JIT-compiled.|
-|`ListNearObj` (`lno`) *<obj_address>*|Displays the objects preceding and following the specified address. The command looks for the address in the garbage collection heap that looks like a valid beginning of a managed object (based on a valid method table) and the object following the argument address.|
+|`ListNearObj` (`lno`) *\<obj_address>*|Displays the objects preceding and following the specified address. The command looks for the address in the garbage collection heap that looks like a valid beginning of a managed object (based on a valid method table) and the object following the argument address.|
 |**MinidumpMode** [**0**] [**1**]|Prevents running unsafe commands when using a minidump.<br /><br /> Pass **0** to disable this feature or **1** to enable this feature. By default, the **MinidumpMode** value is set to **0**.<br /><br /> Minidumps created with the **.dump /m** command or **.dump** command have limited CLR-specific data and allow you to run only a subset of SOS commands correctly. Some commands may fail with unexpected errors because required areas of memory are not mapped or are only partially mapped. This option protects you from running unsafe commands against minidumps.|
 |**Name2EE** \<*module name*> \<*type or method name*><br /><br /> -or-<br /><br /> **Name2EE** \<*module name*>**!**\<*type or method name*>|Displays the `MethodTable` structure and `EEClass` structure for the specified type or method in the specified module.<br /><br /> The specified module must be loaded in the process.<br /><br /> To get the proper type name, browse the module by using the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md). You can also pass `*` as the module name parameter to search all loaded managed modules. The *module name* parameter can also be the debugger's name for a module, such as `mscorlib` or `image00400000`.<br /><br /> This command supports the Windows debugger syntax of <`module`>`!`<`type`>. The type must be fully qualified.|
 |**ObjSize** [\<*Object address*>] &#124; [**-aggregate**] [**-stat**]|Displays the size of the specified object. If you do not specify any parameters, the **ObjSize** command displays the size of all objects found on managed threads, displays all garbage collector handles in the process, and totals the size of any objects pointed to by those handles. The **ObjSize** command includes the size of all child objects in addition to the parent.<br /><br /> The **-aggregate** option can be used in conjunction with the **-stat** argument to get a detailed view of the types that are still rooted. By using **!dumpheap -stat** and **!objsize -aggregate -stat**, you can determine which objects are no longer rooted and diagnose various memory issues.|
@@ -98,7 +99,7 @@ You can also use the SOS Debugging Extension by loading it into the [WinDbg.exe 
 
 To load the SOS Debugging Extension into the WinDbg.exe debugger, run the following command in the tool:
 
-```
+```console
 .loadby sos clr
 ```
 
@@ -108,7 +109,7 @@ To use a dump file created on another computer, make sure that the Mscorwks.dll 
 
 To load a specific version of SOS.dll, type the following command into the Windows Debugger:
 
-```
+```console
 .load <full path to sos.dll>
 ```
 
@@ -116,85 +117,85 @@ To load a specific version of SOS.dll, type the following command into the Windo
 
 The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
 
-```
+```console
 !dumparray -start 2 -length 5 -detail 00ad28d0
 ```
 
- The following command displays the contents of an assembly at the address `1ca248`.
+The following command displays the contents of an assembly at the address `1ca248`.
 
-```
+```console
 !dumpassembly 1ca248
 ```
 
- The following command displays information about the garbage collector heap.
+The following command displays information about the garbage collector heap.
 
-```
+```console
 !dumpheap
 ```
 
- The following command writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
+The following command writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
 
-```
+```console
 !DumpLog
 ```
 
- The following command displays the `MethodDesc` structure at the address `902f40`.
+The following command displays the `MethodDesc` structure at the address `902f40`.
 
-```
+```console
 !dumpmd 902f40
 ```
 
- The following command displays information about a module at the address `1caa50`.
+The following command displays information about a module at the address `1caa50`.
 
-```
+```console
 !dumpmodule 1caa50
 ```
 
- The following command displays information about an object at the address `a79d40`.
+The following command displays information about an object at the address `a79d40`.
 
-```
+```console
 !DumpObj a79d40
 ```
 
- The following command displays the fields of a value class at the address `00a79d9c` using the method table at the address `0090320c`.
+The following command displays the fields of a value class at the address `00a79d9c` using the method table at the address `0090320c`.
 
-```
+```console
 !DumpVC 0090320c 00a79d9c
 ```
 
- The following command displays the process memory used by the garbage collector.
+The following command displays the process memory used by the garbage collector.
 
-```
+```console
 !eeheap -gc
 ```
 
- The following command displays all objects scheduled for finalization.
+The following command displays all objects scheduled for finalization.
 
-```
+```console
 !finalizequeue
 ```
 
- The following command determines the application domain of an object at the address `00a79d98`.
+The following command determines the application domain of an object at the address `00a79d98`.
 
-```
+```console
 !findappdomain 00a79d98
 ```
 
- The following command displays all garbage collector handles in the current process.
+The following command displays all garbage collector handles in the current process.
 
-```
+```console
 !gcinfo 5b68dbb8
 ```
 
- The following command displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
+The following command displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
 
-```
+```console
 !name2ee unittest.exe MainClass.Main
 ```
 
- The following command displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
+The following command displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
 
-```
+```console
 !token2ee unittest.exe 02000003
 ```
 

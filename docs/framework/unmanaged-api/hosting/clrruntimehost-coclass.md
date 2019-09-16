@@ -22,7 +22,7 @@ Provides interfaces for managing code execution by the runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 coclass CLRRuntimeHost {  
     [default] interface  ICLRRuntimeHost;  
     interface            ICLRValidator;  
@@ -46,4 +46,5 @@ coclass CLRRuntimeHost {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)

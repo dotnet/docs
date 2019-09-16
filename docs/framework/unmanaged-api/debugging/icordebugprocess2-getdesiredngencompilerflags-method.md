@@ -23,13 +23,13 @@ Gets the current compiler flag settings that the common language runtime (CLR) u
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDesiredNGENCompilerFlags (  
     [out] DWORD   *pdwFlags  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwFlags`  
  [out] A pointer to a bitwise combination of the [CorDebugJITCompilerFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugjitcompilerflags-enumeration.md) enumeration values that are used to select the correct precompiled image to be loaded.  
   

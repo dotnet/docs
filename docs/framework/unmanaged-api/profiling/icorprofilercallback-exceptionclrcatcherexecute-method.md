@@ -23,7 +23,7 @@ Called when a `catch` block for an exception is executed inside the common langu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionCLRCatcherExecute();  
 ```  
   
@@ -37,5 +37,6 @@ HRESULT ExceptionCLRCatcherExecute();
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ExceptionCLRCatcherFound Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionclrcatcherfound-method.md)

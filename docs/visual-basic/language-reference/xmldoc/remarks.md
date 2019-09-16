@@ -15,7 +15,7 @@ Specifies a remarks section for the member.
 <remarks>description</remarks>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A description of the member.  
   
@@ -29,7 +29,8 @@ Specifies a remarks section for the member.
 ## Example  
  This example uses the `<remarks>` tag to explain what the `UpdateRecord` method does.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/remarks_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

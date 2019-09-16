@@ -22,7 +22,7 @@ Represents an address offset that is used by the [ICeeGen](../../../../docs/fram
   
 ## Syntax  
   
-```  
+```cpp  
 typedef union  {  
     USHORT highAdj;  
 } CeeSectionRelocExtra;  
@@ -44,4 +44,5 @@ typedef union  {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Unions](../../../../docs/framework/unmanaged-api/metadata/metadata-unions.md)

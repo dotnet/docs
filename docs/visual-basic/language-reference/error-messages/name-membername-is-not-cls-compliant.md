@@ -23,11 +23,11 @@ An assembly is marked as `<CLSCompliant(True)>` but exposes a member with a name
   
 ## To correct this error  
   
--   If you have control over the source code, change the member name so that it does not begin with an underscore.  
+- If you have control over the source code, change the member name so that it does not begin with an underscore.  
   
--   If you require that the member name remain unchanged, remove the <xref:System.CLSCompliantAttribute> from its definition or mark it as `<CLSCompliant(False)>`. You can still mark the assembly as `<CLSCompliant(True)>`.  
+- If you require that the member name remain unchanged, remove the <xref:System.CLSCompliantAttribute> from its definition or mark it as `<CLSCompliant(False)>`. You can still mark the assembly as `<CLSCompliant(True)>`.  
   
 ## See also
+
 - [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
 - [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
-

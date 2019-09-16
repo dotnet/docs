@@ -24,10 +24,10 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
 |<xref:System.ComponentModel.MarshalByValueComponent.Disposed>|Occurs when the `DataTable` is `Disposed`. Inherited from <xref:System.ComponentModel.MarshalByValueComponent>.|  
   
 > [!NOTE]
->  Most operations that add or delete rows do not raise the `ColumnChanged` and `ColumnChanging` events. However, the `ReadXml` method does raise `ColumnChanged` and `ColumnChanging` events, unless the `XmlReadMode` is set to `DiffGram` or is set to `Auto` when the XML document being read is a `DiffGram`.  
+> Most operations that add or delete rows do not raise the `ColumnChanged` and `ColumnChanging` events. However, the `ReadXml` method does raise `ColumnChanged` and `ColumnChanging` events, unless the `XmlReadMode` is set to `DiffGram` or is set to `Auto` when the XML document being read is a `DiffGram`.  
   
 > [!WARNING]
->  Data corruption can occur if data is modified in a `DataSet` from which the `RowChanged` event is raised. No exception will be raised if such data corruption occurs.  
+> Data corruption can occur if data is modified in a `DataSet` from which the `RowChanged` event is raised. No exception will be raised if such data corruption occurs.  
   
 ## Additional Related Events  
  The <xref:System.Data.DataTable.Constraints%2A> property holds a <xref:System.Data.ConstraintCollection> instance. The <xref:System.Data.ConstraintCollection> class exposes a <xref:System.Data.ConstraintCollection.CollectionChanged> event. This event fires when a constraint is added, modified, or removed from the `ConstraintCollection`.  
@@ -41,31 +41,31 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
 ## Sequence of Operations  
  Here is the sequence of operations that occur when a `DataRow` is added, modified, or deleted:  
   
-1.  Create the proposed record and apply any changes.  
+1. Create the proposed record and apply any changes.  
   
-2.  Check constraints for non-expression columns.  
+2. Check constraints for non-expression columns.  
   
-3.  Raise the `RowChanging` or `RowDeleting` events as applicable.  
+3. Raise the `RowChanging` or `RowDeleting` events as applicable.  
   
-4.  Set the proposed record to be the current record.  
+4. Set the proposed record to be the current record.  
   
-5.  Update any associated indexes.  
+5. Update any associated indexes.  
   
-6.  Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects.  
+6. Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects.  
   
-7.  Evaluate all expression columns, but delay checking any constraints on these columns.  
+7. Evaluate all expression columns, but delay checking any constraints on these columns.  
   
-8.  Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects affected by the expression column evaluations.  
+8. Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects affected by the expression column evaluations.  
   
 9. Raise `RowChanged` or `RowDeleted` events as applicable.  
   
 10. Check constraints on expression columns.  
   
 > [!NOTE]
->  Changes to expression columns never raise `DataTable` events. Changes to expression columns only raise `DataView` and `DataRowView` events. Expression columns can have dependencies on multiple other columns, and can be evaluated multiple times during a single `DataRow` operation. Each expression evaluation raises events, and a single `DataRow` operation can raise multiple `ListChanged` and `PropertyChanged` events when expression columns are affected, possibly including multiple events for the same expression column.  
+> Changes to expression columns never raise `DataTable` events. Changes to expression columns only raise `DataView` and `DataRowView` events. Expression columns can have dependencies on multiple other columns, and can be evaluated multiple times during a single `DataRow` operation. Each expression evaluation raises events, and a single `DataRow` operation can raise multiple `ListChanged` and `PropertyChanged` events when expression columns are affected, possibly including multiple events for the same expression column.  
   
 > [!WARNING]
->  Do not throw a <xref:System.NullReferenceException> within the `RowChanged` event handler. If a <xref:System.NullReferenceException> is thrown within the `RowChanged` event of a `DataTable`, then the `DataTable` will be corrupted.  
+> Do not throw a <xref:System.NullReferenceException> within the `RowChanged` event handler. If a <xref:System.NullReferenceException> is thrown within the `RowChanged` event of a `DataTable`, then the `DataTable` will be corrupted.  
   
 ### Example  
  The following example demonstrates how to create event handlers for the `RowChanged`, `RowChanging`, `RowDeleted`, `RowDeleting`, `ColumnChanged`, `ColumnChanging`, `TableNewRow`, `TableCleared`, and `TableClearing` events. Each event handler displays output in the console window when it is fired.  
@@ -74,7 +74,8 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
  [!code-vb[DataWorks DataTable.Events#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTable.Events/VB/source.vb#1)]  
   
 ## See also
-- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)
-- [Handling DataAdapter Events](../../../../../docs/framework/data/adonet/handling-dataadapter-events.md)
-- [Handling DataSet Events](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-dataset-events.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Manipulating Data in a DataTable](manipulating-data-in-a-datatable.md)
+- [Handling DataAdapter Events](../handling-dataadapter-events.md)
+- [Handling DataSet Events](handling-dataset-events.md)
+- [ADO.NET Overview](../ado-net-overview.md)

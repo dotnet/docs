@@ -22,13 +22,13 @@ If you have transitive dependencies; that is, a project which depends on another
 After ensuring packages are restored, you can navigate to the directory where a library lives:
 
 ```console
-$ cd src/SuperAwesomeLibrary`
+cd src/SuperAwesomeLibrary
 ```
 
 Then it's just a single command from the command line:
 
 ```console
-$ dotnet pack
+dotnet pack
 ```
 
 Your `/bin/Debug` folder will now look like this:
@@ -44,7 +44,7 @@ SuperAwesomeLibrary.1.0.0.symbols.nupkg
 Note that this will produce a package which is capable of being debugged. If you want to build a NuGet package with release binaries, all you need to do is add the `--configuration` (or `-c`) switch and use `release` as the argument.
 
 ```console
-$ dotnet pack --configuration release
+dotnet pack --configuration release
 ```
 
 Your `/bin` folder will now have a `release` folder containing your NuGet package with release binaries:

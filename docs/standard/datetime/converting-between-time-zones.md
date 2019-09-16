@@ -21,7 +21,7 @@ It is becoming increasingly important for any application that works with dates 
 
 ## Converting to Coordinated Universal Time
 
-Coordinated Universal Time (UTC) is a high-precision, atomic time standard. The world’s time zones are expressed as positive or negative offsets from UTC. Thus, UTC provides a kind of time-zone free or time-zone neutral time. The use of UTC time is recommended when a date and time's portability across computers is important. (For details and other best practices using dates and times, see [Coding best practices using DateTime in the .NET Framework](https://msdn.microsoft.com/library/ms973825.aspx).) Converting individual time zones to UTC makes time comparisons easy.
+Coordinated Universal Time (UTC) is a high-precision, atomic time standard. The world’s time zones are expressed as positive or negative offsets from UTC. Thus, UTC provides a kind of time-zone free or time-zone neutral time. The use of UTC time is recommended when a date and time's portability across computers is important. (For details and other best practices using dates and times, see [Coding best practices using DateTime in the .NET Framework](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973825(v=msdn.10)).) Converting individual time zones to UTC makes time comparisons easy.
 
 > [!NOTE]
 > You can also serialize a <xref:System.DateTimeOffset> structure to unambiguously represent a single point in time. Because <xref:System.DateTimeOffset> objects store a date and time value along with its offset from UTC, they always represent a particular point in time in relationship to UTC.
@@ -55,9 +55,9 @@ All of these methods take <xref:System.DateTime> values as parameters and return
 
 To convert UTC to local time, see the "Converting UTC to Local Time" section that follows. To convert UTC to the time in any time zone that you designate, call the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> method. The method takes two parameters:
 
-* The UTC to convert. This must be a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is set to `Unspecified` or `Utc`.
+- The UTC to convert. This must be a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is set to `Unspecified` or `Utc`.
 
-* The time zone to convert the UTC to.
+- The time zone to convert the UTC to.
 
 The following code converts UTC to Central Standard Time.
 
@@ -83,11 +83,11 @@ You can also convert the time in any designated time zone to local time by using
 
 You can convert between any two time zones by using either of the following two `static` (`Shared` in Visual Basic) methods of the <xref:System.TimeZoneInfo> class:
 
-* <xref:System.TimeZoneInfo.ConvertTime%2A>
+- <xref:System.TimeZoneInfo.ConvertTime%2A>
 
   This method's parameters are the date and time value to convert, a `TimeZoneInfo` object that represents the time zone of the date and time value, and a `TimeZoneInfo` object that represents the time zone to convert the date and time value to.
 
-* <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A>
+- <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A>
 
   This method's parameters are the date and time value to convert, the identifier of the date and time value's time zone, and the identifier of the time zone to convert the date and time value to.
 

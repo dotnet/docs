@@ -23,13 +23,13 @@ Gets a value that indicates whether the function that is represented by this ICo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetJMCStatus (  
     [out] BOOL   *pbIsJustMyCode  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbIsJustMyCode`  
  [out] A pointer to a Boolean value that is `true`, if this function is marked as user code; otherwise, the value is `false`.  
   

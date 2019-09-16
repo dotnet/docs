@@ -6,12 +6,13 @@ ms.assetid: 24d8b398-770f-418f-ba23-c4325419cfa6
 # \<userNameAuthentication>
 Specifies a service's credentials based on user name and password.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<serviceCredentials>  
-\<userNameAuthentication>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceCredentials>**](servicecredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<userNameAuthentication>**  
   
 ## Syntax  
   
@@ -47,7 +48,7 @@ Specifies a service's credentials based on user name and password.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<serviceCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation related settings.|  
+|[\<serviceCredentials>](servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation related settings.|  
   
 ## Remarks  
  If none of the bindings used by a service is configured for user name/password-based authentication, the attributes for this element are ignored. These include `customUserNamePasswordValidatorType`, `includeWindowsGroups`, `membershipProviderName`, and `userNamePasswordValidationMode`.  
@@ -55,6 +56,7 @@ Specifies a service's credentials based on user name and password.
  If none of the bindings used by a service is configured to use Windows authentication for user name/password, the settings related to caching of logon tokens are ignored. These include the `cacheLogonTokenLifetime`, `cacheLogonTokens`, and `maxCacheLogonTokens`.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.UserNameServiceElement>
 - <xref:System.ServiceModel.Description.ServiceCredentials.UserNameAuthentication%2A>
 - <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential>

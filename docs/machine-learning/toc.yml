@@ -1,0 +1,119 @@
+- name: ML.NET
+  href: index.yml
+- name: Overview
+  expanded: true
+  items:
+  - name: API
+    items:
+    - name: The ML.NET API
+      href: how-does-mldotnet-work.md
+  - name: Tools
+    items:
+    - name: The ML.NET Model Builder tool
+      href: automate-training-with-model-builder.md
+    - name: The ML.NET Command Line interface
+      href: automate-training-with-cli.md
+- name: Tutorials
+  items:
+  - name: API
+    items:
+    - name: Overview
+      href: tutorials/index.md
+    - name: Analyze sentiment (binary classification)
+      href: tutorials/sentiment-analysis.md
+    - name: Categorize support issues (multiclass classification)
+      href: tutorials/github-issue-classification.md
+    - name: Predict prices (regression)
+      href: tutorials/predict-prices.md
+    - name: Categorize iris flowers (k-means clustering)
+      href: tutorials/iris-clustering.md
+    - name: Recommend movies (matrix factorization)
+      href: tutorials/movie-recommendation.md
+    - name: Image Classification (transfer learning)
+      href: tutorials/image-classification.md
+    - name: Product Sales Analysis (anomaly detection)
+      href: tutorials/sales-anomaly-detection.md
+    - name: Detect objects in images (object detection)
+      href: tutorials/object-detection-onnx.md
+  - name: Tools
+    items:
+    - name: Predict prices with Model Builder
+      href: tutorials/predict-prices-with-model-builder.md
+    - name: Analyze sentiment using the ML.NET CLI
+      href: tutorials/mlnet-cli.md
+    - name: Analyze sentiment using Model Builder and Razor Pages
+      href: tutorials/sentiment-analysis-model-builder.md
+- name: Concepts
+  items:
+  - name: ML.NET tasks (model types)
+    href: resources/tasks.md
+  - name: Algorithms
+    href: how-to-choose-an-ml-net-algorithm.md
+  - name: Data transforms
+    href: resources/transforms.md
+  - name: Metrics
+    href: resources/metrics.md
+  - name: Improve model accuracy
+    href: resources/improve-machine-learning-model-ml-net.md
+- name: How-to guides
+  items:
+  - name: API
+    items:
+    - name: Load data
+      href: how-to-guides/load-data-ml-net.md
+    - name: Prepare data
+      href: how-to-guides/prepare-data-ml-net.md
+    - name: Train, evaluate, and explain the model
+      items:
+      - name: Train and evaluate a model
+        href: how-to-guides/train-machine-learning-model-ml-net.md
+      - name: Train a model using cross-validation
+        href: how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
+      - name: Inspect intermediate pipeline data values
+        href: how-to-guides/inspect-intermediate-data-ml-net.md
+      - name: Determine model feature importance with PFI
+        href: how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md
+    - name: Use the trained model
+      items:
+      - name: Save and load a model
+        href: how-to-guides/save-load-machine-learning-models-ml-net.md
+      - name: Use a model to make predictions
+        href: how-to-guides/machine-learning-model-predictions-ml-net.md
+      - name: Re-train a model
+        href: how-to-guides/retrain-model-ml-net.md
+      - name: Deploy a model to Azure Functions
+        href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
+      - name: Deploy a model to a web API
+        href: how-to-guides/serve-model-web-api-ml-net.md
+  - name: Tools
+    items:
+    - name: Install Model Builder
+      href: how-to-guides/install-model-builder.md
+    - name: Install the CLI
+      href: how-to-guides/install-ml-net-cli.md
+    - name: Use the automated ML API
+      href: how-to-guides/how-to-use-the-automl-api.md
+  - name: Infer.NET
+    items:
+    - name: Probabilistic programming with Infer.NET
+      href: how-to-guides/matchup-app-infer-net.md
+- name: Reference
+  items:
+  - name: API
+    items:
+    - name: ML.NET API Reference
+      href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+    - name: ML.NET API Preview API Reference
+      href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
+  - name: Tools
+    items:
+    - name: CLI reference
+      href: reference/ml-net-cli-reference.md
+    - name: ML.NET AutoML API reference
+      href: https://docs.microsoft.com/dotnet/api/index?view=automl-dotnet
+- name: Resources
+  items:
+  - name: Glossary
+    href: resources/glossary.md
+  - name: CLI telemetry
+    href: resources/ml-net-cli-telemetry.md

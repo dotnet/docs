@@ -23,13 +23,13 @@ Notifies the symbol writer that a metadata token has been remapped as the metada
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemapToken(  
     [in] mdToken  oldToken,  
     [in] mdToken  newToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `oldToken`  
  [in] The metadata token that was remapped.  
   
@@ -43,4 +43,5 @@ HRESULT RemapToken(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

@@ -24,4 +24,4 @@ The key property of the <xref:System.Windows.Forms.ImageList> component is <xref
 ## See also
 
 - <xref:System.Windows.Forms.ImageList>
-- [How to: Add or Remove Images with the Windows Forms ImageList Component](../../../../docs/framework/winforms/controls/how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)
+- [How to: Add or Remove Images with the Windows Forms ImageList Component](how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)

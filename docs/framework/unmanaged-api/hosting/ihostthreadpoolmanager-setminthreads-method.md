@@ -23,13 +23,13 @@ Sets the minimum number of idle threads that the host must maintain in anticipat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMinThreads (  
     [in] DWORD MinThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `MinThreads`  
  [in] The new minimum number of threads that the host must maintain.  
   
@@ -58,6 +58,7 @@ HRESULT SetMinThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Threading.ThreadPool.SetMinThreads%2A>
 - <xref:System.Threading.ThreadPool>
 - [GetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getminthreads-method.md)

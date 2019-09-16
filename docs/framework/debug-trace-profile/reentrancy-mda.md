@@ -42,7 +42,7 @@ The `reentrancy` managed debugging assistant (MDA) is activated when an attempt 
 ## Output  
  The MDA reports that illegal reentrancy is being attempted.  Examine the thread's stack to determine why this is happening and how to correct the problem. The following is sample output.  
   
-```  
+```output
 Additional Information: Attempting to call into managed code without   
 transitioning out first.  Do not attempt to run managed code inside   
 low-level native extensibility points. Managed Debugging Assistant   
@@ -99,4 +99,5 @@ public class Reenter
 ```  
   
 ## See also
+
 - [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

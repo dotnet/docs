@@ -25,16 +25,16 @@ Enables the use of local type inference in variable declarations.
 |`+` &#124; `-`|Optional. Specify `-optioninfer+` to enable local type inference, or `-optioninfer-` to block it. The `-optioninfer` option, with no value specified, is the same as `-optioninfer+`. The default value when the `-optioninfer` switch is not present is also `-optioninfer+`. The default value is set in the Vbc.rsp response file.|  
   
 > [!NOTE]
->  You can use the `-noconfig` option to retain the compiler's internal defaults instead of those specified in vbc.rsp. The compiler default for this option is `-optioninfer-`.  
+> You can use the `-noconfig` option to retain the compiler's internal defaults instead of those specified in vbc.rsp. The compiler default for this option is `-optioninfer-`.  
   
 ## Remarks  
  If the source code file contains an [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md), the statement overrides the `-optioninfer` command-line compiler setting.  
   
 ### To set -optioninfer in the Visual Studio IDE  
   
-1.  Select a project in **Solution Explorer**. On the **Project** menu, click **Properties**.  
+1. Select a project in **Solution Explorer**. On the **Project** menu, click **Properties**.  
   
-2.  On the **Compile** tab, modify the value in the **Option infer** box.  
+2. On the **Compile** tab, modify the value in the **Option infer** box.  
   
 ## Example  
  The following code compiles `test.vb` with local type inference enabled.  
@@ -44,6 +44,7 @@ vbc -optioninfer+ test.vb
 ```  
   
 ## See also
+
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
 - [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)

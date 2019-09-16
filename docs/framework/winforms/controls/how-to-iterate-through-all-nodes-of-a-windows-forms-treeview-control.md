@@ -18,9 +18,9 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
   
 ### To iterate through all nodes of the TreeView control  
   
-1.  Create a recursive procedure (recursive method in C# and C++) that tests each node.  
+1. Create a recursive procedure (recursive method in C# and C++) that tests each node.  
   
-2.  Call the procedure.  
+2. Call the procedure.  
   
      The following example shows how to print each <xref:System.Windows.Forms.TreeNode> object's <xref:System.Windows.Forms.TreeNode.Text%2A> property:  
   
@@ -118,5 +118,6 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
     ```  
   
 ## See also
-- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)
-- [Recursive Procedures](~/docs/visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)
+
+- [TreeView Control](treeview-control-windows-forms.md)
+- [Recursive Procedures](../../../visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)

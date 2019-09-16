@@ -43,4 +43,5 @@ class PrivacyNoticeBindingElement : BindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.PrivacyNoticeBindingElement>

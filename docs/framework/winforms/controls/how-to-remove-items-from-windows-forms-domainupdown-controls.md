@@ -15,7 +15,7 @@ You can remove items from the Windows Forms <xref:System.Windows.Forms.DomainUpD
   
 ### To remove an item  
   
--   Use the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove%2A> method of the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection> class to remove an item by name.  
+- Use the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove%2A> method of the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection> class to remove an item by name.  
   
     ```vb  
     DomainUpDown1.Items.Remove("noodles")  
@@ -31,7 +31,7 @@ You can remove items from the Windows Forms <xref:System.Windows.Forms.DomainUpD
   
      -or-  
   
--   Use the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt%2A> method to remove an item by its position.  
+- Use the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt%2A> method to remove an item by its position.  
   
     ```vb  
     ' Removes the first item in the list.  
@@ -49,8 +49,9 @@ You can remove items from the Windows Forms <xref:System.Windows.Forms.DomainUpD
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.DomainUpDown>
 - <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt%2A?displayProperty=nameWithType>
-- [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)
-- [DomainUpDown Control Overview](../../../../docs/framework/winforms/controls/domainupdown-control-overview-windows-forms.md)
+- [DomainUpDown Control](domainupdown-control-windows-forms.md)
+- [DomainUpDown Control Overview](domainupdown-control-overview-windows-forms.md)

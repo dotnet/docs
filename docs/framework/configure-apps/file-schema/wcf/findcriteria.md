@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<findCriteria>"
 ms.date: "03/30/2017"
 ms.assetid: 5454cd19-6bf5-4ba8-94d1-f58d10dc1917
@@ -6,8 +6,13 @@ ms.assetid: 5454cd19-6bf5-4ba8-94d1-f58d10dc1917
 # \<findCriteria>
 A configuration element that supplies a set of criteria used by a client application to search for a discovery service. Criteria can be grouped into search criteria (specifying what services you’re looking for) and find termination criteria (how long the search should last).  
   
- \<system.ServiceModel>  
-\<standardEndpoints>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dynamicEndpoint>**](dynamicendpoint.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<standardEndpoint>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<discoveryClientSettings>**](discoveryclientsettings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<findCriteria>**  
   
 ## Syntax  
   
@@ -51,16 +56,17 @@ A configuration element that supplies a set of criteria used by a client applica
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<contractTypeNames>](../../../../../docs/framework/configure-apps/file-schema/wcf/contracttypenames.md)|A collection of configuration elements that contain the names of workflow service contract types.|  
+|[\<contractTypeNames>](contracttypenames.md)|A collection of configuration elements that contain the names of workflow service contract types.|  
 |\<extensions> of \<findCriteria>|A collection of XML element objects that provide extensions.|  
-|[\<scopes>](../../../../../docs/framework/configure-apps/file-schema/wcf/scopes.md)|A collection of objects that contain absolute URIs that are used during a find operation to locate a specific service or services.<br /><br /> If the specific service is found, a successful match has been made between the service URI and the Scope URI, sometimes with the help of scope rules that handle complications of matching.|  
+|[\<scopes>](scopes.md)|A collection of objects that contain absolute URIs that are used during a find operation to locate a specific service or services.<br /><br /> If the specific service is found, a successful match has been made between the service URI and the Scope URI, sometimes with the help of scope rules that handle complications of matching.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
+|[\<standardEndpoints>](standardendpoints.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Discovery.FindCriteria>
 - <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>

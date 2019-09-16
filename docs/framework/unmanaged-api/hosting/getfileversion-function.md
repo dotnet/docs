@@ -20,11 +20,11 @@ ms.author: "ronpet"
 # GetFileVersion Function
 Gets the common language runtime (CLR) version information of the specified file, using the specified buffer.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFileVersion (  
     [in]  LPCWSTR      szFilename,   
     [in, out] LPWSTR   szBuffer,   
@@ -33,7 +33,7 @@ HRESULT GetFileVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFilename`  
  [in] The path of the file to be examined.  
   
@@ -54,4 +54,5 @@ HRESULT GetFileVersion (
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
 ## See also
+
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

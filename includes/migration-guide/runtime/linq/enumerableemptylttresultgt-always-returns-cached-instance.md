@@ -1,4 +1,4 @@
-### Enumerable.Empty\<TResult> always returns cached instance
+### Enumerable.Empty&lt;TResult&gt; always returns cached instance
 
 |   |   |
 |---|---|
@@ -8,4 +8,3 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Linq.Enumerable.Empty%60%601?displayProperty=nameWithType></li></ul>|
-

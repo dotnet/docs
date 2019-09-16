@@ -23,14 +23,14 @@ Gets the [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMonitorOwner (  
     [in]  SIZE_T     cookie,  
     [out] IHostTask *ppOwnerHostTask  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] The cookie associated with the monitor.  
   
@@ -52,7 +52,7 @@ HRESULT GetMonitorOwner (
  The host typically calls `GetMonitorOwner` as part of a deadlock-detection mechanism. The cookie is associated with a monitor when it is created by using a call to [IHostSyncManager::CreateMonitorEvent](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-createmonitorevent-method.md).  
   
 > [!NOTE]
->  A call to release the event underlying the monitor might block—but will not deadlock—if a call to this method is currently in effect on the cookie associated with that monitor. Other tasks might also block if they attempt to acquire this monitor.  
+> A call to release the event underlying the monitor might block—but will not deadlock—if a call to this method is currently in effect on the cookie associated with that monitor. Other tasks might also block if they attempt to acquire this monitor.  
   
  `GetMonitorOwner` always returns immediately and can be called any time after a call to `CreateMonitorEvent`. The host does not need to wait until a task is waiting on the event.  
   
@@ -66,5 +66,6 @@ HRESULT GetMonitorOwner (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

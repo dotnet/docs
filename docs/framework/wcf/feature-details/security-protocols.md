@@ -28,11 +28,11 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
  WCF, version 1, provides 17 authentication modes that can be used as the basis for Web services security configuration. Each mode is optimized for a common set of deployment requirements, such as:  
   
--   Credentials used to authenticate client and service.  
+- Credentials used to authenticate client and service.  
   
--   Message or transport security protection mechanisms.  
+- Message or transport security protection mechanisms.  
   
--   Message exchange patterns.  
+- Message exchange patterns.  
   
 |Authentication Mode|Client Authentication|Server Authentication|Mode|  
 |-------------------------|---------------------------|---------------------------|----------|  
@@ -125,7 +125,7 @@ The Web Services Security Protocols provide Web services security mechanisms tha
  WCF supports WSS SAML Token profiles 1.0 and 1.1 for SAML v1.1 tokens. It is possible to implement other versions of SAML token formats.  
   
 ### 1.5 Security Context Token  
- WCF supports the Security Context Token (SCT) introduced in WS-SecureCoversation. SCT is used to represent a security context established in SecureConversation as well as the binary negotiation protocols TLS and SSPI, described below.  
+ WCF supports the Security Context Token (SCT) introduced in WS-SecureConversation. SCT is used to represent a security context established in SecureConversation as well as the binary negotiation protocols TLS and SSPI, described below.  
   
 ## 2. Common Message Security Parameters  
   

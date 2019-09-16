@@ -7,16 +7,16 @@ ms.assetid: 9b8f6e0d-edab-4a7e-86e3-8c66bebc64bb
 This topic outlines the basic steps required to create and dynamically update the routing configuration. In this example, the initial routing configuration is obtained from the configuration file and routes all messages to the regularCalc calculator service; however, it is subsequently updated programmatically in order to change the destination endpoint the roundingCalc service.  
   
 > [!NOTE]
->  In many implementations, configuration will be fully dynamic and will not rely on a default configuration; however, there are some scenarios, such as the one in this topic, where it is desirable to have a default configuration state when the service starts.  
+> In many implementations, configuration will be fully dynamic and will not rely on a default configuration; however, there are some scenarios, such as the one in this topic, where it is desirable to have a default configuration state when the service starts.  
   
 > [!NOTE]
->  Dynamic updates occur only in memory, and do not result in the modification of configuration files.  
+> Dynamic updates occur only in memory, and do not result in the modification of configuration files.  
   
  Both regularCalc and roundingCalc support the same operations of add, subtract, multiply and divide; however, roundingCalc rounds all calculations to the nearest integer value before returning. A configuration file is used to configure the service to route all messages to the regularCalc service. After the Routing Service has been started, <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> is used to reconfigure the service to route messages to the roundingCalc service.  
   
 ### Implement Initial Configuration  
   
-1.  Create the basic Routing Service Configuration by specifying the service endpoints exposed by the service. The following example defines a single service endpoint, which will be used to receive messages. It also defines a client endpoint that will be used to send messages to the regularCalc.  
+1. Create the basic Routing Service Configuration by specifying the service endpoints exposed by the service. The following example defines a single service endpoint, which will be used to receive messages. It also defines a client endpoint that will be used to send messages to the regularCalc.  
   
     ```xml  
     <services>  
@@ -43,7 +43,7 @@ This topic outlines the basic steps required to create and dynamically update th
     </client>  
     ```  
   
-2.  Define the filter used to route messages to the destination endpoints. For this example, the MatchAll filter is used to route all messages to the regularCalcEndpoint defined previously. The following example defines the filter and filter table.  
+2. Define the filter used to route messages to the destination endpoints. For this example, the MatchAll filter is used to route all messages to the regularCalcEndpoint defined previously. The following example defines the filter and filter table.  
   
     ```xml  
     <filters>  
@@ -58,7 +58,7 @@ This topic outlines the basic steps required to create and dynamically update th
     </filterTables>  
     ```  
   
-3.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating "filterTable1" with the service endpoint.  
+3. To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating "filterTable1" with the service endpoint.  
   
     ```xml  
     <behaviors>  
@@ -74,7 +74,7 @@ This topic outlines the basic steps required to create and dynamically update th
 ## Implement Dynamic Configuration  
  Dynamic configuration of the Routing Service can only be performed in code by creating a new <xref:System.ServiceModel.Routing.RoutingConfiguration> and using <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> to replace the current configuration.  For this example, the Routing Service is self-hosted within a console application. After the application has started, you can modify the routing configuration by entering ‘regular’ or ‘rounding’ at the console window to configure the destination endpoint that messages are routed to; regularCalc when ‘regular’ is entered, otherwise roundingCalc when ‘rounding’ is entered.  
   
-1.  The following using statements must be added in order to support the Routing Service.  
+1. The following using statements must be added in order to support the Routing Service.  
   
     ```csharp  
     using System;  
@@ -86,7 +86,7 @@ This topic outlines the basic steps required to create and dynamically update th
     using System.ServiceModel.Routing;  
     ```  
   
-2.  The following code is used to self-host the Routing Service as a console application. This initializes the Routing Service using the configuration described in the previous step, which is contained within the application configuration file. The while loop contains the code used to change the routing configuration.  
+2. The following code is used to self-host the Routing Service as a console application. This initializes the Routing Service using the configuration described in the previous step, which is contained within the application configuration file. The while loop contains the code used to change the routing configuration.  
   
     ```csharp  
     // Host the service within this EXE console application.  
@@ -111,7 +111,7 @@ This topic outlines the basic steps required to create and dynamically update th
     }  
     ```  
   
-3.  To dynamically update the routing configuration, a new routing configuration must be created. This must contain all endpoints, filters and filter tables that are required for the new routing configuration, as it will completely replace the existing routing configuration. In order to use the new routing configuration, you must invoke <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> and pass the new configuration.  
+3. To dynamically update the routing configuration, a new routing configuration must be created. This must contain all endpoints, filters and filter tables that are required for the new routing configuration, as it will completely replace the existing routing configuration. In order to use the new routing configuration, you must invoke <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> and pass the new configuration.  
   
      Add the following code to the while loop defined previously to allow the service to be reconfigured based on user input.  
   
@@ -159,7 +159,7 @@ This topic outlines the basic steps required to create and dynamically update th
 ## Example  
  Following is a complete listing of the console application used in this example.  
   
-```  
+```csharp
 //-----------------------------------------------------------------  
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.  
 //-----------------------------------------------------------------  
@@ -291,4 +291,5 @@ namespace Microsoft.Samples.AdvancedFilters
 ```  
   
 ## See also
+
 - [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)

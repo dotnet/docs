@@ -21,25 +21,25 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
 ## ServiceBehaviorAttribute and OperationBehaviorAttribute  
  The most important behaviors are the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes, which you can use to control:  
   
--   Instance lifetimes  
+- Instance lifetimes  
   
--   Concurrency and synchronization support  
+- Concurrency and synchronization support  
   
--   Configuration behavior  
+- Configuration behavior  
   
--   Transaction behavior  
+- Transaction behavior  
   
--   Serialization behavior  
+- Serialization behavior  
   
--   Metadata transformation  
+- Metadata transformation  
   
--   Session lifetime  
+- Session lifetime  
   
--   Address filtering and header processing  
+- Address filtering and header processing  
   
--   Impersonation  
+- Impersonation  
   
--   To use these attributes, mark the service or operation implementation with the attribute appropriate to that scope and set the properties. For example, the following code example shows an operation implementation that uses the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A?displayProperty=nameWithType> property to require that callers of this operation support impersonation.  
+- To use these attributes, mark the service or operation implementation with the attribute appropriate to that scope and set the properties. For example, the following code example shows an operation implementation that uses the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A?displayProperty=nameWithType> property to require that callers of this operation support impersonation.  
   
  [!code-csharp[OperationBehaviorAttribute_Impersonation#1](../../../samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute_impersonation/cs/services.cs#1)]
  [!code-vb[OperationBehaviorAttribute_Impersonation#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute_impersonation/vb/services.vb#1)]  
@@ -71,36 +71,36 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
 ### Service Behaviors  
  The following behaviors operate on services.  
   
--   <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>. Applied to a WCF service to indicate whether that service can be run in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Compatibility Mode.  
+- <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>. Applied to a WCF service to indicate whether that service can be run in ASP.NET Compatibility Mode.  
   
--   <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>. Controls how the service authorizes client claims.  
+- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>. Controls how the service authorizes client claims.  
   
--   <xref:System.ServiceModel.Description.ServiceCredentials>. Configures a service credential. Use this class to specify the credential for the service, such as an X.509 certificate.  
+- <xref:System.ServiceModel.Description.ServiceCredentials>. Configures a service credential. Use this class to specify the credential for the service, such as an X.509 certificate.  
   
--   <xref:System.ServiceModel.Description.ServiceDebugBehavior>. Enables debugging and Help information features for a WCF service.  
+- <xref:System.ServiceModel.Description.ServiceDebugBehavior>. Enables debugging and Help information features for a WCF service.  
   
--   <xref:System.ServiceModel.Description.ServiceMetadataBehavior>. Controls the publication of service metadata and associated information.  
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>. Controls the publication of service metadata and associated information.  
   
--   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>. Specifies the audit behavior of security events.  
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>. Specifies the audit behavior of security events.  
   
--   <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>. Configures run-time throughput settings that enable you to tune service performance.  
+- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>. Configures run-time throughput settings that enable you to tune service performance.  
   
 ### Endpoint Behaviors  
  The following behaviors operate on endpoints. Many of these behaviors are used in client applications.  
   
--   <xref:System.ServiceModel.CallbackBehaviorAttribute>. Configures a callback service implementation in a duplex client application.  
+- <xref:System.ServiceModel.CallbackBehaviorAttribute>. Configures a callback service implementation in a duplex client application.  
   
--   <xref:System.ServiceModel.Description.CallbackDebugBehavior>. Enables service debugging for a WCF callback object.  
+- <xref:System.ServiceModel.Description.CallbackDebugBehavior>. Enables service debugging for a WCF callback object.  
   
--   <xref:System.ServiceModel.Description.ClientCredentials>. Allows the user to configure client and service credentials as well as service credential authentication settings for use on the client.  
+- <xref:System.ServiceModel.Description.ClientCredentials>. Allows the user to configure client and service credentials as well as service credential authentication settings for use on the client.  
   
--   <xref:System.ServiceModel.Description.ClientViaBehavior>. Used by clients to specify the Uniform Resource Identifier (URI) for which the transport channel should be created.  
+- <xref:System.ServiceModel.Description.ClientViaBehavior>. Used by clients to specify the Uniform Resource Identifier (URI) for which the transport channel should be created.  
   
--   <xref:System.ServiceModel.Description.MustUnderstandBehavior>. Instructs WCF to disable the `MustUnderstand` processing.  
+- <xref:System.ServiceModel.Description.MustUnderstandBehavior>. Instructs WCF to disable the `MustUnderstand` processing.  
   
--   <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>. Instructs the runtime to use a synchronous receive process for channels.  
+- <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>. Instructs the runtime to use a synchronous receive process for channels.  
   
--   <xref:System.ServiceModel.Description.TransactedBatchingBehavior>. Optimizes the receive operations for transports that support transactional receives.  
+- <xref:System.ServiceModel.Description.TransactedBatchingBehavior>. Optimizes the receive operations for transports that support transactional receives.  
   
 ### Contract Behaviors  
  <xref:System.ServiceModel.DeliveryRequirementsAttribute>. Specifies the feature requirements that bindings must provide to the service or client implementation.  
@@ -108,12 +108,13 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
 ### Operation Behaviors  
  The following operation behaviors specify serialization and transaction controls for operations.  
   
--   <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>. Represents the run-time behavior of the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>.  
+- <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>. Represents the run-time behavior of the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>.  
   
--   <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior>. Controls run-time behavior of the `XmlSerializer` and associates it with an operation.  
+- <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior>. Controls run-time behavior of the `XmlSerializer` and associates it with an operation.  
   
--   <xref:System.ServiceModel.TransactionFlowAttribute>. Specifies the level in which a service operation accepts a transaction header.  
+- <xref:System.ServiceModel.TransactionFlowAttribute>. Specifies the level in which a service operation accepts a transaction header.  
   
 ## See also
+
 - [Configuring Services](../../../docs/framework/wcf/configuring-services.md)
 - [How to: Control Service Instancing](../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)

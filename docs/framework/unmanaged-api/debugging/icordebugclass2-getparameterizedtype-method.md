@@ -23,7 +23,7 @@ Gets the type declaration for this class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParameterizedType (  
     [in] CorElementType                      elementType,  
     [in] ULONG32                             nTypeArgs,  
@@ -32,7 +32,7 @@ HRESULT GetParameterizedType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `elementType`  
  [in] A value of the CorElementType enumeration that specifies the element type for this class: Set this value to ELEMENT_TYPE_VALUETYPE if this ICorDebugClass2 represents a value type. Set this value to ELEMENT_TYPE_CLASS if this `ICorDebugClass2` represents a complex type.  
   

@@ -17,10 +17,11 @@ The statement is syntactically complete, but an additional programming element f
   
 ## To correct this error
   
-1.  Check to see if two different statements have inadvertently been put on the same line.
+1. Check to see if two different statements have inadvertently been put on the same line.
   
-2.  Insert a line terminator after the element that completes the statement.
+2. Insert a line terminator after the element that completes the statement.
   
 ## See also
+
 - [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
 - [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

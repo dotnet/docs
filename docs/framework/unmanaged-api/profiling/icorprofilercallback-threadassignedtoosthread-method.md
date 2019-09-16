@@ -23,13 +23,13 @@ Notifies the profiler that a managed thread is being implemented using a particu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadAssignedToOSThread(  
     [in] ThreadID managedThreadId,  
     [in] DWORD    osThreadId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `managedThreadId`  
  [in] The identifier of the managed thread.  
   
@@ -49,4 +49,5 @@ HRESULT ThreadAssignedToOSThread(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

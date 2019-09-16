@@ -22,7 +22,7 @@ Specifies that a type is exportable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExportType(  
     mdAssembly      AssemblyID,  
     mdToken         FileToken,  
@@ -33,7 +33,7 @@ HRESULT ExportType(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly to export from.  
   
@@ -47,7 +47,7 @@ HRESULT ExportType(
  Fully qualified type name to be made exportable.  
   
  `dwFlags`  
- `ComType` flags such as `tdPublic` or `tdNested`. This parameter may be passed to [DefineExportedType Method](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-defineexportedtype-method.md).  
+ `ComType` flags such as `tdPublic` or `tdNested`. This parameter may be passed to [DefineExportedType Method](../metadata/imetadataassemblyemit-defineexportedtype-method.md).  
   
  `pType`  
  Receives token for exported type.  
@@ -59,6 +59,7 @@ HRESULT ExportType(
  Requires alink.h  
   
 ## See also
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

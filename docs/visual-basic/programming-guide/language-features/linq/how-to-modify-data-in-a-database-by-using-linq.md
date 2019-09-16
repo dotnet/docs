@@ -22,39 +22,39 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
   
 ### To create a connection to a database  
   
-1.  In Visual Studio, open **Server Explorer**/**Database Explorer** by clicking the **View** menu, and then select **Server Explorer**/**Database Explorer**.  
+1. In Visual Studio, open **Server Explorer**/**Database Explorer** by clicking the **View** menu, and then select **Server Explorer**/**Database Explorer**.  
   
-2.  Right-click **Data Connections** in **Server Explorer**/**Database Explorer**, and click **Add Connection**.  
+2. Right-click **Data Connections** in **Server Explorer**/**Database Explorer**, and click **Add Connection**.  
   
-3.  Specify a valid connection to the Northwind sample database.  
+3. Specify a valid connection to the Northwind sample database.  
   
 ### To add a Project with a LINQ to SQL file  
   
-1.  In Visual Studio, on the **File** menu, point to **New** and then click **Project**. Select Visual Basic **Windows Forms Application** as the project type.  
+1. In Visual Studio, on the **File** menu, point to **New** and then click **Project**. Select Visual Basic **Windows Forms Application** as the project type.  
   
-2.  On the **Project** menu, click **Add New Item**. Select the **LINQ to SQL Classes** item template.  
+2. On the **Project** menu, click **Add New Item**. Select the **LINQ to SQL Classes** item template.  
   
-3.  Name the file `northwind.dbml`. Click **Add**. The Object Relational Designer (O/R Designer) is opened for the `northwind.dbml` file.  
+3. Name the file `northwind.dbml`. Click **Add**. The Object Relational Designer (O/R Designer) is opened for the `northwind.dbml` file.  
   
 ### To add tables to query and modify to the designer  
   
-1.  In **Server Explorer**/**Database Explorer**, expand the connection to the Northwind database. Expand the **Tables** folder.  
+1. In **Server Explorer**/**Database Explorer**, expand the connection to the Northwind database. Expand the **Tables** folder.  
   
      If you have closed the O/R Designer, you can reopen it by double-clicking the `northwind.dbml` file that you added earlier.  
   
-2.  Click the Customers table and drag it to the left pane of the designer.  
+2. Click the Customers table and drag it to the left pane of the designer.  
   
      The designer creates a new Customer object for your project.  
   
-3.  Save your changes and close the designer.  
+3. Save your changes and close the designer.  
   
-4.  Save your project.  
+4. Save your project.  
   
 ### To add code to modify the database and display the results  
   
-1.  From the **Toolbox**, drag a <xref:System.Windows.Forms.DataGridView> control onto the default Windows Form for your project, Form1.  
+1. From the **Toolbox**, drag a <xref:System.Windows.Forms.DataGridView> control onto the default Windows Form for your project, Form1.  
   
-2.  When you added tables to the O/R Designer, the designer added a <xref:System.Data.Linq.DataContext> object to your project. This object contains code that you can use to access the Customers table. It also contains code that defines  a local Customer object and a Customers collection for the table. The <xref:System.Data.Linq.DataContext> object for your project is named based on the name of your .dbml file. For this project, the <xref:System.Data.Linq.DataContext> object is named `northwindDataContext`.  
+2. When you added tables to the O/R Designer, the designer added a <xref:System.Data.Linq.DataContext> object to your project. This object contains code that you can use to access the Customers table. It also contains code that defines  a local Customer object and a Customers collection for the table. The <xref:System.Data.Linq.DataContext> object for your project is named based on the name of your .dbml file. For this project, the <xref:System.Data.Linq.DataContext> object is named `northwindDataContext`.  
   
      You can create an instance of the <xref:System.Data.Linq.DataContext> object in your code and query and modify the Customers collection specified by the O/R Designer. Changes that you make to the Customers collection are not reflected in the database until you submit them by calling the <xref:System.Data.Linq.DataContext.SubmitChanges%2A> method of the <xref:System.Data.Linq.DataContext> object.  
   
@@ -80,9 +80,9 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
     End Sub  
     ```  
   
-3.  From the **Toolbox**, drag three <xref:System.Windows.Forms.Button> controls onto the form. Select the first `Button` control. In the **Properties** window, set the `Name` of the `Button` control to `AddButton` and the `Text` to `Add`. Select the second button and set the `Name` property to `UpdateButton` and the `Text` property to `Update`. Select the third button and set the `Name` property to `DeleteButton` and the `Text` property to `Delete`.  
+3. From the **Toolbox**, drag three <xref:System.Windows.Forms.Button> controls onto the form. Select the first `Button` control. In the **Properties** window, set the `Name` of the `Button` control to `AddButton` and the `Text` to `Add`. Select the second button and set the `Name` property to `UpdateButton` and the `Text` property to `Update`. Select the third button and set the `Name` property to `DeleteButton` and the `Text` property to `Delete`.  
   
-4.  Double-click the **Add** button to add code to its `Click` event. Add the following code:  
+4. Double-click the **Add** button to add code to its `Click` event. Add the following code:  
   
     ```vb  
     Private Sub AddButton_Click(ByVal sender As System.Object,   
@@ -107,7 +107,7 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
     End Sub  
     ```  
   
-5.  Double-click the **Update** button to add code to its `Click` event. Add the following code:  
+5. Double-click the **Update** button to add code to its `Click` event. Add the following code:  
   
     ```vb  
     Private Sub UpdateButton_Click(ByVal sender As System.Object, _  
@@ -131,7 +131,7 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
     End Sub  
     ```  
   
-6.  Double-click the **Delete** button to add code to its `Click` event. Add the following code:  
+6. Double-click the **Delete** button to add code to its `Click` event. Add the following code:  
   
     ```vb  
     Private Sub DeleteButton_Click(ByVal sender As System.Object, _  
@@ -152,9 +152,10 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
     End Sub  
     ```  
   
-7.  Press F5 to run your project. Click **Add** to add a new record. Click **Update** to modify the new record. Click **Delete** to delete the new record.  
+7. Press F5 to run your project. Click **Add** to add a new record. Click **Update** to modify the new record. Click **Delete** to delete the new record.  
   
 ## See also
+
 - [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
 - [Queries](../../../../visual-basic/language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)

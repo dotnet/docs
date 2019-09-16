@@ -17,13 +17,13 @@ ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
 ---
 # How to: Bind the Windows Forms DataGrid Control to a Data Source
 > [!NOTE]
->  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
+> The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
  The Windows Forms <xref:System.Windows.Forms.DataGrid> control is specifically designed to display information from a data source. You bind the control at run time by calling the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method. Although you can display data from a variety of data sources, the most typical sources are datasets and data views.  
   
 ### To data-bind the DataGrid control programmatically  
   
-1.  Write code to fill the dataset.  
+1. Write code to fill the dataset.  
   
      If the data source is a dataset or a data view based on a dataset table, add code to the form to fill the dataset.  
   
@@ -62,10 +62,10 @@ ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
     dsCategories1->Merge(ws->GetCategories());  
     ```  
   
-2.  Call the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method, passing it the data source and a data member. If you do not need to explicitly pass a data member, pass an empty string.  
+2. Call the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method, passing it the data source and a data member. If you do not need to explicitly pass a data member, pass an empty string.  
   
     > [!NOTE]
-    >  If you are binding the grid for the first time, you can set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties. However, you cannot reset these properties once they have been set. Therefore, it is recommended that you always use the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method.  
+    > If you are binding the grid for the first time, you can set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties. However, you cannot reset these properties once they have been set. Therefore, it is recommended that you always use the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method.  
   
      The following example shows how you can programmatically bind to the Customers table in a dataset called `DsCustomers1`:  
   
@@ -95,10 +95,11 @@ ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
     dataGrid1->SetDataBinding(dsCustomers1, "");  
     ```  
   
-3.  (Optional) Add the appropriate table styles and column styles to the grid. If there are no table styles, you will see the table, but with minimal formatting and with all columns visible.  
+3. (Optional) Add the appropriate table styles and column styles to the grid. If there are no table styles, you will see the table, but with minimal formatting and with all columns visible.  
   
 ## See also
-- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)
-- [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)
-- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
-- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)
+
+- [DataGrid Control Overview](datagrid-control-overview-windows-forms.md)
+- [How to: Add Tables and Columns to the Windows Forms DataGrid Control](how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)
+- [DataGrid Control](datagrid-control-windows-forms.md)
+- [Windows Forms Data Binding](../windows-forms-data-binding.md)

@@ -15,7 +15,7 @@ ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
 ---
 # How to: Add Buttons to a ToolBar Control
 > [!NOTE]
->  The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
+> The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   
  An integral part of the <xref:System.Windows.Forms.ToolBar> control is the buttons you add to it. These can be used to provide easy access to menu commands or, alternately, they can be placed in another area of the user interface of your application to expose commands to your users that are not available in the menu structure.  
   
@@ -23,14 +23,14 @@ ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
   
 ### To add buttons programmatically  
   
-1.  In a procedure, create toolbar buttons by adding them to the <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection.  
+1. In a procedure, create toolbar buttons by adding them to the <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection.  
   
-2.  Specify property settings for an individual button by passing the button's index via the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property.  
+2. Specify property settings for an individual button by passing the button's index via the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property.  
   
      The example below assumes a form with a <xref:System.Windows.Forms.ToolBar> control already added.  
   
     > [!NOTE]
-    >  The <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection is a zero-based collection, so code should proceed accordingly.  
+    > The <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection is a zero-based collection, so code should proceed accordingly.  
   
     ```vb  
     Public Sub CreateToolBarButtons()  
@@ -143,8 +143,9 @@ ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolBar>
-- [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)
-- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)
-- [ToolBar Control Overview](../../../../docs/framework/winforms/controls/toolbar-control-overview-windows-forms.md)
-- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)
+- [How to: Define an Icon for a ToolBar Button](how-to-define-an-icon-for-a-toolbar-button.md)
+- [How to: Trigger Menu Events for Toolbar Buttons](how-to-trigger-menu-events-for-toolbar-buttons.md)
+- [ToolBar Control Overview](toolbar-control-overview-windows-forms.md)
+- [ToolBar Control](toolbar-control-windows-forms.md)

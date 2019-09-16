@@ -23,7 +23,7 @@ Creates a property definition for the specified type, with the specified `get` a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineProperty (   
     [in]  mdTypeDef          td,   
     [in]  LPCWSTR            szProperty,   
@@ -40,7 +40,7 @@ HRESULT DefineProperty (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The token for class or interface on which the property is being defined.  
   
@@ -87,5 +87,6 @@ HRESULT DefineProperty (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

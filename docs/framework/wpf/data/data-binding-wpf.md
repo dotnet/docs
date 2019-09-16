@@ -12,11 +12,11 @@ ms.assetid: 90f79b97-17e7-40d1-abf0-3ba600ad1d7e
 Windows Presentation Foundation (WPF) data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of common language runtime (CLR) objects and XML.  
   
 ## In This Section  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)  
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)  
- [Binding Declarations Overview](../../../../docs/framework/wpf/data/binding-declarations-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)  
+ [Data Binding Overview](data-binding-overview.md)  
+ [Binding Sources Overview](binding-sources-overview.md)  
+ [Data Templating Overview](data-templating-overview.md)  
+ [Binding Declarations Overview](binding-declarations-overview.md)  
+ [How-to Topics](data-binding-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Data>  
@@ -28,8 +28,8 @@ Windows Presentation Foundation (WPF) data binding provides a simple and consist
  <xref:System.Windows.Controls.DataTemplateSelector>  
   
 ## Related Sections  
- [Drag and Drop](../../../../docs/framework/wpf/advanced/drag-and-drop.md)  
+ [Drag and Drop](../advanced/drag-and-drop.md)  
   
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
+ [Data Binding](../advanced/optimizing-performance-data-binding.md)  
   
- [Walkthrough: Caching Application Data in a WPF Application](../../../../docs/framework/wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md)
+ [Walkthrough: Caching Application Data in a WPF Application](../advanced/walkthrough-caching-application-data-in-a-wpf-application.md)

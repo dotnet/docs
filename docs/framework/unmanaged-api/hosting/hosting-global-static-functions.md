@@ -17,7 +17,7 @@ This section describes the unmanaged hosting functions used by the .NET Framewor
  Describes the functions introduced in the .NET Framework 4.  
   
  [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)  
- Describes the functions introduced in the .NET Framework 1.1 and 2.0, which are deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ Describes the functions introduced in the .NET Framework 1.1 and 2.0, which are deprecated in the .NET Framework 4.  
   
 ## Related Sections  
  [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)  

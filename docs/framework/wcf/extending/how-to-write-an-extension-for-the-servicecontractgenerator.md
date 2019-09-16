@@ -10,9 +10,9 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
   
 ### To write an extension for the ServiceContractGenerator  
   
-1.  Implement <xref:System.ServiceModel.Description.IServiceContractGenerationExtension>. To modify the generated service contract, use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> instance passed into the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> method.  
+1. Implement <xref:System.ServiceModel.Description.IServiceContractGenerationExtension>. To modify the generated service contract, use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> instance passed into the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> method.  
   
-    ```  
+    ```csharp
     public void GenerateContract(ServiceContractGenerationContext context)  
     {  
         Console.WriteLine("In generate contract.");  
@@ -20,9 +20,9 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
     }  
     ```  
   
-2.  Implement <xref:System.ServiceModel.Description.IWsdlImportExtension> on the same class. The <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> method can process a specific WSDL extension (WSDL annotations in this case) by adding a code generation extension to the imported <xref:System.ServiceModel.Description.ContractDescription> instance.  
+2. Implement <xref:System.ServiceModel.Description.IWsdlImportExtension> on the same class. The <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> method can process a specific WSDL extension (WSDL annotations in this case) by adding a code generation extension to the imported <xref:System.ServiceModel.Description.ContractDescription> instance.  
   
-    ```  
+    ```csharp
     public void ImportContract(WsdlImporter importer, WsdlContractConversionContext context)  
        {  
                 // Contract documentation  
@@ -54,7 +54,7 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
             }  
     ```  
   
-3.  Add the WSDL importer to your client configuration.  
+3. Add the WSDL importer to your client configuration.  
   
     ```xml  
     <metadata>  
@@ -64,23 +64,23 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
     </metadata>  
     ```  
   
-4.  In the client code, create a `MetadataExchangeClient` and call `GetMetadata`.  
+4. In the client code, create a `MetadataExchangeClient` and call `GetMetadata`.  
   
-    ```  
+    ```csharp  
     MetadataExchangeClient mexClient = new MetadataExchangeClient(metadataAddress);  
     mexClient.ResolveMetadataReferences = true;  
     MetadataSet metaDocs = mexClient.GetMetadata();  
     ```  
   
-5.  Create a `WsdlImporter` and call `ImportAllContracts`.  
+5. Create a `WsdlImporter` and call `ImportAllContracts`.  
   
-    ```  
+    ```csharp  
     WsdlImporter importer = new WsdlImporter(metaDocs);            System.Collections.ObjectModel.Collection<ContractDescription> contracts = importer.ImportAllContracts();  
     ```  
   
-6.  Create a `ServiceContractGenerator` and call `GenerateServiceContractType` for each contract.  
+6. Create a `ServiceContractGenerator` and call `GenerateServiceContractType` for each contract.  
   
-    ```  
+    ```csharp  
     ServiceContractGenerator generator = new ServiceContractGenerator();  
     foreach (ContractDescription contract in contracts)  
     {  
@@ -90,8 +90,9 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
        throw new Exception("There were errors during code compilation.");  
     ```  
   
-7.  <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> is called automatically for each contract behavior on a given contract that implements <xref:System.ServiceModel.Description.IServiceContractGenerationExtension>. This method can then modify the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> passed in. In this example comments are added.  
+7. <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> is called automatically for each contract behavior on a given contract that implements <xref:System.ServiceModel.Description.IServiceContractGenerationExtension>. This method can then modify the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> passed in. In this example comments are added.  
   
 ## See also
-- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
-- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)
+
+- [Metadata](../feature-details/metadata.md)
+- [How to: Import Custom WSDL](how-to-import-custom-wsdl.md)

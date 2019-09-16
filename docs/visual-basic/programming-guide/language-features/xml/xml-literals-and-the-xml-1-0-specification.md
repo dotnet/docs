@@ -10,19 +10,20 @@ The XML literal syntax in Visual Basic supports most of the Extensible Markup La
   
 ## What Visual Basic Does Not Support  
   
--   An XML literal cannot contain a document type definition (DTD).  
+- An XML literal cannot contain a document type definition (DTD).  
   
--   An XML document literal must start with an XML document declaration.  
+- An XML document literal must start with an XML document declaration.  
   
--   An XML literal cannot contain more than 65,535 characters on one line.  
+- An XML literal cannot contain more than 65,535 characters on one line.  
   
--   XML namespace prefixes, element names, and attribute names cannot contain more than 1,024 characters.  
+- XML namespace prefixes, element names, and attribute names cannot contain more than 1,024 characters.  
   
 ## Extra Features That Visual Basic Supports  
   
--   The embedded expression syntax allowed in document and element literals is not valid XML.  
+- The embedded expression syntax allowed in document and element literals is not valid XML.  
   
 ## See also
+
 - [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
 - [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
 - [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)

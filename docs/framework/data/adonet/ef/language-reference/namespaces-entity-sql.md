@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 83991c21-60db-4af9-aca3-b416f6cae98e
 ---
 # Namespaces (Entity SQL)
-[!INCLUDE[esql](../../../../../../includes/esql-md.md)] introduces namespaces to avoid name conflicts for global identifiers such as type names, entity sets, functions, and so on. The namespace support in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is similar to the namespace support in the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)].  
+[!INCLUDE[esql](../../../../../../includes/esql-md.md)] introduces namespaces to avoid name conflicts for global identifiers such as type names, entity sets, functions, and so on. The namespace support in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is similar to the namespace support in the .NET Framework.  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides two forms of the USING clause: qualified namespaces (where a shorter alias is provided for the namespace), and unqualified namespaces, as illustrated in the following example:  
   
@@ -24,11 +24,12 @@ WHERE p IS OF (NamespaceName.Employee)
 ```  
   
 ## Differences from the .NET Framework  
- In the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)], you can use partially qualified namespaces. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not allow this.  
+ In the .NET Framework, you can use partially qualified namespaces. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not allow this.  
   
 ## ADO.NET Usage  
  Queries are expressed through ADO.NET <xref:System.Data.Common.DbCommand> objects. <xref:System.Data.Common.DbCommand> objects can be built over <xref:System.Data.Common.DbConnection> objects. Namespaces can also be specified as part of the <xref:System.Data.Common.DbCommand> and <xref:System.Data.Common.DbConnection> objects. If [!INCLUDE[esql](../../../../../../includes/esql-md.md)] cannot resolve an identifier within the query itself, the external namespaces are probed (based on similar rules).  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Entity SQL Overview](entity-sql-overview.md)

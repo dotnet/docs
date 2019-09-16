@@ -16,7 +16,8 @@ Transactions bind multiple tasks together. For example, imagine that an applicat
   
  When you create a transaction, you can specify the isolation level that applies to the transaction. The isolation level, defined by the <xref:System.Transactions.IsolationLevel> enum, determines what level of access other transactions will have to the data affected by your transaction.  
   
- You can create transactions using ADO.NET, <xref:System.EnterpriseServices>, or the transactional programming model provided by the <xref:System.Transactions> namespace. The [Features Provided by System.Transactions](../../../../docs/framework/data/transactions/features-provided-by-system-transactions.md) topic discusses the features that you can use to write a transactional application using the <xref:System.Transactions> namespace.  
+ You can create transactions using ADO.NET, <xref:System.EnterpriseServices>, or the transactional programming model provided by the <xref:System.Transactions> namespace. The [Features Provided by System.Transactions](features-provided-by-system-transactions.md) topic discusses the features that you can use to write a transactional application using the <xref:System.Transactions> namespace.  
   
 ## See also
-- [Features Provided by System.Transactions](../../../../docs/framework/data/transactions/features-provided-by-system-transactions.md)
+
+- [Features Provided by System.Transactions](features-provided-by-system-transactions.md)

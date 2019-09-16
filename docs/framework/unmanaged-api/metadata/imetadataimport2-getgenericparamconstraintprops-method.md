@@ -23,7 +23,7 @@ Gets the metadata associated with the generic parameter constraint represented b
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGenericParamConstraintProps (  
    [in]  mdGenericParamConstraint  gpc,  
    [out] mdGenericParam            *ptGenericParam,  
@@ -31,7 +31,7 @@ HRESULT GetGenericParamConstraintProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `gpc`  
  [in] The token to the generic parameter constraint for which to return the metadata.  
   
@@ -51,5 +51,6 @@ HRESULT GetGenericParamConstraintProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

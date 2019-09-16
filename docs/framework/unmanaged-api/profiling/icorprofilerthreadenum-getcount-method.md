@@ -23,12 +23,12 @@ Gets the number of threads that are used by the application.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (    [out] ULONG * pcelt  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [out] The number of threads used by the application.  
   
@@ -42,5 +42,6 @@ HRESULT GetCount (    [out] ULONG * pcelt
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerThreadEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

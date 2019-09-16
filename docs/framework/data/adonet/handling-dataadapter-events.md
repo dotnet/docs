@@ -181,8 +181,9 @@ protected static void FillError(object sender, FillErrorEventArgs args)
 ```  
   
 ## See also
-- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [Handling DataSet Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-dataset-events.md)
-- [Handling DataTable Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)
-- [Events](../../../../docs/standard/events/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
+- [Handling DataSet Events](./dataset-datatable-dataview/handling-dataset-events.md)
+- [Handling DataTable Events](./dataset-datatable-dataview/handling-datatable-events.md)
+- [Events](../../../standard/events/index.md)
+- [ADO.NET Overview](ado-net-overview.md)

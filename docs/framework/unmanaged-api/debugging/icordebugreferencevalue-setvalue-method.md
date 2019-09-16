@@ -23,13 +23,13 @@ Sets the specified memory address. That is, this method sets this ICorDebugRefer
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetValue (  
     [in] CORDB_ADDRESS    value  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `value`  
  [in] A `CORDB_ADDRESS` value that specifies the address of the object to which this `ICorDebugReferenceValue` points.  
   

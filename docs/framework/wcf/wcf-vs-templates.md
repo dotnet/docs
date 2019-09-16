@@ -14,27 +14,27 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
   
  When you create a new project using the **WCF Service** template, the new project automatically includes the following three files:  
   
--   Service contract file (IService1.cs or IService1.vb). The service contract file is an interface that has WCF service attributes applied. This file provides a definition of a simple service to show you how to define your services, and includes parameter-based operations and a simple data contract sample. This is the default file displayed in the code editor after creating a WCF service project.  
+- Service contract file (IService1.cs or IService1.vb). The service contract file is an interface that has WCF service attributes applied. This file provides a definition of a simple service to show you how to define your services, and includes parameter-based operations and a simple data contract sample. This is the default file displayed in the code editor after creating a WCF service project.  
   
--   Service implementation file (Service1.cs or Service1.vb). The service implementation file implements the contract defined in the service contract file.  
+- Service implementation file (Service1.cs or Service1.vb). The service implementation file implements the contract defined in the service contract file.  
   
--   Application configuration file (App.config). The configuration file provides the basic elements of a WCF service model with a secure HTTP binding. It also includes an endpoint for the service and enables metadata exchange.  
+- Application configuration file (App.config). The configuration file provides the basic elements of a WCF service model with a secure HTTP binding. It also includes an endpoint for the service and enables metadata exchange.  
   
 > [!NOTE]
->  Visual Studio is configured to recognize the App.config file as the configuration file for the project when it is run using the [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md), which is the default configuration. If you host the service library in an executable, you have to move the configuration code to the configuration file of the executable, as configuration files for DLLs are not valid.  
+> Visual Studio is configured to recognize the App.config file as the configuration file for the project when it is run using the [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md), which is the default configuration. If you host the service library in an executable, you have to move the configuration code to the configuration file of the executable, as configuration files for DLLs are not valid.  
   
 ### WCF Service Application Template  
  The WCF Service Application template is available in the New Project dialog box under **Visual C#\WCF** and **Visual Basic\WCF**.  
   
  When you create a new project using the **WCF Web Application Service** template, the project includes the following four files:  
   
--   Service host file (service1.svc).  
+- Service host file (service1.svc).  
   
--   Service contract file (IService1.cs or IService1.vb).  
+- Service contract file (IService1.cs or IService1.vb).  
   
--   Service implementation file (Service1.svc.cs or Service1.svc.vb).  
+- Service implementation file (Service1.svc.cs or Service1.svc.vb).  
   
--   Web configuration file (Web.config).  
+- Web configuration file (Web.config).  
   
  The template automatically creates a Web site (to be deployed to a virtual directory) and hosts a service in it.  
   
@@ -74,8 +74,9 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
  To access this template, right-click a Web site or Web application project in **Solution Explorer**, click **Add a new item**, and click **Silverlight-enabled WCF Service**.  
   
 > [!NOTE]
->  The Silverlight-enabled WCF Service exposes a `basicHttpBinding` endpoint without enabling any security settings. Therefore, information about the service can be obtained by all clients that connect to this service. Messages exchanged between the service and the client are also not signed or encrypted. To secure the endpoint properly, you should use ASP.NET authentication, HTTPS or other mechanisms.  
+> The Silverlight-enabled WCF Service exposes a `basicHttpBinding` endpoint without enabling any security settings. Therefore, information about the service can be obtained by all clients that connect to this service. Messages exchanged between the service and the client are also not signed or encrypted. To secure the endpoint properly, you should use ASP.NET authentication, HTTPS or other mechanisms.  
   
 ## See also
+
 - [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)
 - [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)

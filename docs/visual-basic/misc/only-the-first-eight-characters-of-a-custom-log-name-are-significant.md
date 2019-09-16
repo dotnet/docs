@@ -8,8 +8,9 @@ When checking event log names for uniqueness, only the first eight characters ar
   
 ## To correct this error  
   
--   Give the event log a name in which the first eight characters are unique.  
+- Give the event log a name in which the first eight characters are unique.  
   
 ## See also
+
 - [How to: Create and Remove Custom Event Logs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/49dwckkz(v=vs.90))
 - [Administering Event Logs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/4f69axw4(v=vs.90))

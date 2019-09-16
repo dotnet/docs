@@ -22,7 +22,7 @@ Indicates the outcome of an individual step.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugStepReason {  
     STEP_NORMAL,  
     STEP_RETURN,  
@@ -56,5 +56,6 @@ typedef enum CorDebugStepReason {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [StepComplete Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-stepcomplete-method.md)
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

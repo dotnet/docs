@@ -13,11 +13,11 @@ ms.assetid: 23ec74f7-34c5-4710-82a0-ee2914518548
 # How to: Complete Windows Forms Print Jobs
 Frequently, word processors and other applications that involve printing will provide the option to display a message to users that a print job is complete. You can provide this functionality in your Windows Forms by handling the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event of the <xref:System.Drawing.Printing.PrintDocument> component.  
   
- The following procedure requires that you have created a Windows-based application with a <xref:System.Drawing.Printing.PrintDocument> component on it, which is the standard way of enabling printing from a Windows-based application. For more information about printing from Windows Forms using the <xref:System.Drawing.Printing.PrintDocument> component, see [How to: Create Standard Windows Forms Print Jobs](../../../../docs/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md).  
+ The following procedure requires that you have created a Windows-based application with a <xref:System.Drawing.Printing.PrintDocument> component on it, which is the standard way of enabling printing from a Windows-based application. For more information about printing from Windows Forms using the <xref:System.Drawing.Printing.PrintDocument> component, see [How to: Create Standard Windows Forms Print Jobs](how-to-create-standard-windows-forms-print-jobs.md).  
   
 ### To complete a print job  
   
-1.  Set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property of the <xref:System.Drawing.Printing.PrintDocument> component.  
+1. Set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property of the <xref:System.Drawing.Printing.PrintDocument> component.  
   
     ```vb  
     PrintDocument1.DocumentName = "MyTextFile"  
@@ -31,7 +31,7 @@ Frequently, word processors and other applications that involve printing will pr
     printDocument1->DocumentName = "MyTextFile";  
     ```  
   
-2.  Write code to handle the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.  
+2. Write code to handle the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.  
   
      In the following code example, a message box is displayed, indicating that the document has finished printing.  
   
@@ -60,7 +60,7 @@ Frequently, word processors and other applications that involve printing will pr
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.printDocument1.EndPrint += new  
@@ -75,5 +75,6 @@ Frequently, word processors and other applications that involve printing will pr
     ```  
   
 ## See also
+
 - <xref:System.Drawing.Printing.PrintDocument>
-- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- [Windows Forms Print Support](windows-forms-print-support.md)

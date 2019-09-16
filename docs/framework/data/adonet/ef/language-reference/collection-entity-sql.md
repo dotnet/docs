@@ -17,7 +17,7 @@ COLLECTION(type_definition)
  An expression that returns a collection of supported types, rows, or references.  
   
 ## Remarks  
- For more information about the COLLECTION keyword, see [Type Definitions](../../../../../../docs/framework/data/adonet/ef/language-reference/type-definitions-entity-sql.md).  
+ For more information about the COLLECTION keyword, see [Type Definitions](type-definitions-entity-sql.md).  
   
 ## Example  
  The following sample shows how to use the COLLECTION keyword to declare a collection of decimals as an argument for an inline query function.  
@@ -25,4 +25,5 @@ COLLECTION(type_definition)
  [!code-csharp[DP EntityServices Concepts 2#Collection_GroupPartition](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#collection_grouppartition)]  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)

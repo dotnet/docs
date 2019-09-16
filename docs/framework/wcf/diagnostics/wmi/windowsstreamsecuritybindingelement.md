@@ -35,4 +35,5 @@ class WindowsStreamSecurityBindingElement : BindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>

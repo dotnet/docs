@@ -39,11 +39,11 @@ A proxy server handles client requests for resources. A proxy can return a reque
   
  Several options control how a static proxy operates. You can specify the following:  
   
--   The address of the proxy.  
+- The address of the proxy.  
   
--   Whether the proxy should be bypassed for local addresses.  
+- Whether the proxy should be bypassed for local addresses.  
   
--   Whether the proxy should be bypassed for a set of addresses.  
+- Whether the proxy should be bypassed for a set of addresses.  
   
  The following table shows the configuration options for a static proxy.  
   
@@ -70,6 +70,7 @@ A proxy server handles client requests for resources. A proxy can return a reque
 ```  
   
 ## See also
+
 - <xref:System.Net.WebProxy>
 - <xref:System.Net.GlobalProxySelection>
 - [Automatic Proxy Detection](../../../docs/framework/network-programming/automatic-proxy-detection.md)

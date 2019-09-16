@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a8e1061e-0028-4a6f-8f19-b9f48e96c4b8
 ---
 # WHERE (Entity SQL)
-The WHERE clause is applied directly after the [FROM](../../../../../../docs/framework/data/adonet/ef/language-reference/from-entity-sql.md) clause.  
+The WHERE clause is applied directly after the [FROM](from-entity-sql.md) clause.  
   
 ## Syntax  
   
@@ -17,7 +17,7 @@ The WHERE clause is applied directly after the [FROM](../../../../../../docs/fra
  A Boolean type.  
   
 ## Remarks  
- The WHERE clause has the same semantics as described for [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]. It restricts the objects produced by the query expression by limiting the elements of the source collections to those that pass the condition.  
+ The WHERE clause has the same semantics as described for Transact-SQL. It restricts the objects produced by the query expression by limiting the elements of the source collections to those that pass the condition.  
   
 ```  
 select c from cs as c where e  
@@ -28,5 +28,6 @@ select c from cs as c where e
  The WHERE clause is applied directly after the FROM clause and before any grouping, ordering, or projection takes place. All element names defined in the FROM clause are visible to the expression of the WHERE clause.  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Query Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Query Expressions](query-expressions-entity-sql.md)

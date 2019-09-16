@@ -18,31 +18,32 @@ In this example, a client console application is created to use a calculator ser
   
 ### Specifying a client binding in configuration  
   
-1.  Use Svcutil.exe from the command line to generate code from service metadata.  
+1. Use Svcutil.exe from the command line to generate code from service metadata.  
   
-    ```  
+    ```console  
     Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>   
     ```  
   
-2.  The client that is generated contains the `ICalculator` interface that defines the service contract that the client implementation must satisfy.  
+2. The client that is generated contains the `ICalculator` interface that defines the service contract that the client implementation must satisfy.  
   
      [!code-csharp[C_HowTo_ConfigureClientBinding#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureclientbinding/cs/generatedclient.cs#1)]
      [!code-csharp[C_HowTo_ConfigureClientBinding#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureclientbinding/cs/source.cs#1)]  
   
-3.  The generated client also contains the implementation of the `ClientCalculator`.  
+3. The generated client also contains the implementation of the `ClientCalculator`.  
   
      [!code-csharp[C_HowTo_ConfigureClientBinding#2](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureclientbinding/cs/generatedclient.cs#2)]
      [!code-csharp[C_HowTo_ConfigureClientBinding#2](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureclientbinding/cs/source.cs#2)]  
   
-4.  Svcutil.exe also generates the configuration for the client that uses the <xref:System.ServiceModel.BasicHttpBinding> class. When using Visual Studio, name this file App.config. Note that the address and binding information are not specified anywhere inside the implementation of the service. Also, code does not have to be written to retrieve that information from the configuration file.  
+4. Svcutil.exe also generates the configuration for the client that uses the <xref:System.ServiceModel.BasicHttpBinding> class. When using Visual Studio, name this file App.config. Note that the address and binding information are not specified anywhere inside the implementation of the service. Also, code does not have to be written to retrieve that information from the configuration file.  
   
      [!code-xml[C_HowTo_ConfigureClientBinding#100](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureclientbinding/common/client.exe.config#100)]   
             
-5.  Create an instance of the `ClientCalculator` in an application, and then call the service operations.  
+5. Create an instance of the `ClientCalculator` in an application, and then call the service operations.  
   
      [!code-csharp[C_HowTo_ConfigureClientBinding#3](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureclientbinding/cs/client.cs#3)]  
   
-6.  Compile and run the client.  
+6. Compile and run the client.  
   
 ## See also
+
 - [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

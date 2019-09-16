@@ -31,7 +31,7 @@ Causes the compiler to treat the first occurrence of a warning as an error.
  If you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors.  
   
 > [!NOTE]
->  The `-warnaserror` option does not control how warnings are displayed. Use the [-nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md) option to disable warnings.  
+> The `-warnaserror` option does not control how warnings are displayed. Use the [-nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md) option to disable warnings.  
   
 |To set -warnaserror to treat all warnings as errors in the Visual Studio IDE|  
 |---|  
@@ -56,6 +56,7 @@ vbc -warnaserror:42024 t2.vb
 ```  
   
 ## See also
+
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
 - [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)

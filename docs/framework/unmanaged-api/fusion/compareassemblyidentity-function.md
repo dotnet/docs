@@ -23,7 +23,7 @@ Compares two assembly identities to determine whether they are equivalent.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI CompareAssemblyIdentity (  
     [in]  LPCWSTR                  pwzAssemblyIdentity1,  
     [in]  BOOL                     fUnified1,  
@@ -34,7 +34,7 @@ STDAPI CompareAssemblyIdentity (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyIdentity1`  
  [in] The textual identity of the first assembly in the comparison.  
   
@@ -51,7 +51,7 @@ STDAPI CompareAssemblyIdentity (
  [out] A Boolean flag that indicates whether the two assemblies are equivalent.  
   
  `pResult`  
- [out] An [AssemblyComparisonResult](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md) enumeration that contains detailed information about the comparison.  
+ [out] An [AssemblyComparisonResult](assemblycomparisonresult-enumeration.md) enumeration that contains detailed information about the comparison.  
   
 ## Return Value  
  `pfEquivalent` returns a Boolean value that indicates whether the two assemblies are equivalent. `pResult` returns one of the `AssemblyComparisonResult` values, to give a more detailed reason for the value of `pfEquivalent`.  
@@ -59,18 +59,18 @@ STDAPI CompareAssemblyIdentity (
 ## Remarks  
  `CompareAssemblyIdentity` checks whether `pwzAssemblyIdentity1` and `pwzAssemblyIdentity2` are equivalent. `pfEquivalent` is set to `true` under one or more of the following conditions:  
   
--   The two assembly identities are equivalent. For strongly named assemblies, equivalency requires the assembly name, version, public key token, and culture to be identical. For simply named assemblies, equivalency requires a match on the assembly name and culture.  
+- The two assembly identities are equivalent. For strongly named assemblies, equivalency requires the assembly name, version, public key token, and culture to be identical. For simply named assemblies, equivalency requires a match on the assembly name and culture.  
   
--   Both assembly identities refer to assemblies that run on the .NET Framework. This condition returns `true` even if the assembly version numbers do not match.  
+- Both assembly identities refer to assemblies that run on the .NET Framework. This condition returns `true` even if the assembly version numbers do not match.  
   
--   The two assemblies are not managed assemblies, but `fUnified1` or `fUnified2` was set to `true`.  
+- The two assemblies are not managed assemblies, but `fUnified1` or `fUnified2` was set to `true`.  
   
  The `fUnified` flag indicates that all version numbers up to the version number of the strongly named assembly are considered equivalent to the strongly named assembly. For example, if the value of `pwzAssemblyIndentity1` is "MyAssembly, version=3.0.0.0, culture=neutral, publicKeyToken=....", and the value of `fUnified1` is `true`, this indicates that all versions of MyAssembly from version 0.0.0.0 to 3.0.0.0 should be treated as equivalent. In such a case, if `pwzAssemblyIndentity2` refers to the same assembly as `pwzAssemblyIndentity1`, except that it has a lower version number, `pfEquivalent` is set to `true`. If `pwzAssemblyIdentity2` refers to a higher version number, `pfEquivalent` is set to `true` only if the value of `fUnified2` is `true`.  
   
- The `pResult` parameter includes specific information about why the two assemblies are considered equivalent or not equivalent. For more information, see [AssemblyComparisonResult Enumeration](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md).  
+ The `pResult` parameter includes specific information about why the two assemblies are considered equivalent or not equivalent. For more information, see [AssemblyComparisonResult Enumeration](assemblycomparisonresult-enumeration.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -79,5 +79,6 @@ STDAPI CompareAssemblyIdentity (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
-- [AssemblyComparisonResult Enumeration](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md)
+
+- [Fusion Global Static Functions](fusion-global-static-functions.md)
+- [AssemblyComparisonResult Enumeration](assemblycomparisonresult-enumeration.md)

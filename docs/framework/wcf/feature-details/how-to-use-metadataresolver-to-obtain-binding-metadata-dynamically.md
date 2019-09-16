@@ -8,22 +8,22 @@ This topic shows you how to use the <xref:System.ServiceModel.Description.Metada
   
 ### To dynamically obtain binding metadata  
   
-1.  Create an <xref:System.ServiceModel.EndpointAddress> object with the address of the metadata endpoint.  
+1. Create an <xref:System.ServiceModel.EndpointAddress> object with the address of the metadata endpoint.  
   
-    ```  
+    ```csharp
     EndpointAddress metaAddress  
-      = new EndpointAddress(new   Uri("http://localhost:8080/SampleService/mex"));  
+      = new EndpointAddress(new Uri("http://localhost:8080/SampleService/mex"));  
     ```  
   
-2.  Call <xref:System.ServiceModel.Description.MetadataResolver.Resolve%28System.Type%2CSystem.ServiceModel.EndpointAddress%29>, which passes in the service type and the metadata endpoint address. This returns a collection of endpoints that implement the specified contract. Only binding information is imported from the metadata; contract information is not imported. The supplied contract is used instead.  
+2. Call <xref:System.ServiceModel.Description.MetadataResolver.Resolve%28System.Type%2CSystem.ServiceModel.EndpointAddress%29>, which passes in the service type and the metadata endpoint address. This returns a collection of endpoints that implement the specified contract. Only binding information is imported from the metadata; contract information is not imported. The supplied contract is used instead.  
   
-    ```  
+    ```csharp  
     ServiceEndpointCollection endpoints = MetadataResolver.Resolve(typeof(SampleServiceClient),metaAddress);  
     ```  
   
-3.  You can then iterate through the collection of service endpoints to extract the binding information you need. The following code iterates through the endpoints, creates a service client object that passes in the binding and address associated with the current endpoint, and then calls a method on the service.  
+3. You can then iterate through the collection of service endpoints to extract the binding information you need. The following code iterates through the endpoints, creates a service client object that passes in the binding and address associated with the current endpoint, and then calls a method on the service.  
   
-    ```  
+    ```csharp  
     foreach (ServiceEndpoint point in endpoints)  
     {  
        if (point != null)  
@@ -40,4 +40,5 @@ This topic shows you how to use the <xref:System.ServiceModel.Description.Metada
     ```  
   
 ## See also
+
 - [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)

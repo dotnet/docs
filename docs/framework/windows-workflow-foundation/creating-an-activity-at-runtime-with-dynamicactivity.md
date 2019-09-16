@@ -15,19 +15,19 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
   
 #### To create an activity at runtime using imperative code  
   
-1.  OpenVisual Studio 2010.  
+1. OpenVisual Studio 2010.  
   
-2.  Select **File**, **New**, **Project**. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select **Sequential Workflow Console Application** in the **Templates** window. Name the new project DynamicActivitySample.  
+2. Select **File**, **New**, **Project**. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select **Sequential Workflow Console Application** in the **Templates** window. Name the new project DynamicActivitySample.  
   
-3.  Right-click Workflow1.xaml in the HelloActivity project and select **Delete**.  
+3. Right-click Workflow1.xaml in the HelloActivity project and select **Delete**.  
   
-4.  Open Program.cs. Add the following directive to the top of the file.  
+4. Open Program.cs. Add the following directive to the top of the file.  
   
-    ```  
+    ```csharp  
     using System.Collections.Generic;  
     ```  
   
-5.  Replace the contents of the `Main` method with the following code, which creates a <xref:System.Activities.Statements.Sequence> activity that contains a single <xref:System.Activities.Statements.WriteLine> activity and assigns it to the <xref:System.Activities.DynamicActivity.Implementation%2A> property of a new dynamic activity.  
+5. Replace the contents of the `Main` method with the following code, which creates a <xref:System.Activities.Statements.Sequence> activity that contains a single <xref:System.Activities.Statements.WriteLine> activity and assigns it to the <xref:System.Activities.DynamicActivity.Implementation%2A> property of a new dynamic activity.  
   
     ```csharp  
     //Define the input argument for the activity  
@@ -60,36 +60,36 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
                 Console.ReadLine();  
     ```  
   
-6.  Execute the application. A console window with the text "Hello World!" displays.  
+6. Execute the application. A console window with the text "Hello World!" displays.  
   
 #### To create an activity at runtime using XAML  
   
-1.  Open Visual Studio 2010.  
+1. Open Visual Studio 2010.  
   
-2.  Select **File**, **New**, **Project**. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select  **Workflow Console Application** in the **Templates** window. Name the new project DynamicActivitySample.  
+2. Select **File**, **New**, **Project**. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select  **Workflow Console Application** in the **Templates** window. Name the new project DynamicActivitySample.  
   
-3.  Open Workflow1.xaml in the HelloActivity project. Click the **Arguments** option at the bottom of the designer. Create a new `In` argument called `TextToWrite` of type `String`.  
+3. Open Workflow1.xaml in the HelloActivity project. Click the **Arguments** option at the bottom of the designer. Create a new `In` argument called `TextToWrite` of type `String`.  
   
-4.  Drag a **WriteLine** activity from the **Primitives** section of the toolbox onto the designer surface. Assign the value `TextToWrite` to the **Text** property of the activity.  
+4. Drag a **WriteLine** activity from the **Primitives** section of the toolbox onto the designer surface. Assign the value `TextToWrite` to the **Text** property of the activity.  
   
-5.  Open Program.cs. Add the following directive to the top of the file.  
+5. Open Program.cs. Add the following directive to the top of the file.  
   
-    ```  
+    ```csharp  
     using System.Activities.XamlIntegration;  
     ```  
   
-6.  Replace the contents of the `Main` method with the following code.  
+6. Replace the contents of the `Main` method with the following code.  
   
-    ```  
+    ```csharp  
     Activity act2 = ActivityXamlServices.Load(@"Workflow1.xaml");  
                     results = WorkflowInvoker.Invoke(act2, new Dictionary<string, object> { { "TextToWrite", "HelloWorld!" } });  
     Console.ReadLine();  
     ```  
   
-7.  Execute the application. A console window with the text "Hello World!" appears.  
+7. Execute the application. A console window with the text "Hello World!" appears.  
   
-8.  Right-click the Workflow1.xaml file in the **Solution Explorer** and select **View Code**. Note that the activity class is created with `x:Class` and the property is created with `x:Property`.  
+8. Right-click the Workflow1.xaml file in the **Solution Explorer** and select **View Code**. Note that the activity class is created with `x:Class` and the property is created with `x:Property`.  
   
 ## See also
 
-- [Authoring Workflows, Activities, and Expressions Using Imperative Code](../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md)
+- [Authoring Workflows, Activities, and Expressions Using Imperative Code](authoring-workflows-activities-and-expressions-using-imperative-code.md)

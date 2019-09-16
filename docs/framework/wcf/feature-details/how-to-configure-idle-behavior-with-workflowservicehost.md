@@ -11,7 +11,7 @@ Workflows go idle when they encounter a bookmark that must be resumed by some ex
   
 ### To configure WorkflowIdleBehavior  
   
-1.  Add a <`workflowIdle`> element to the <`behavior`> element within the <`serviceBehaviors`> element as shown in the following example.  
+1. Add a <`workflowIdle`> element to the <`behavior`> element within the <`serviceBehaviors`> element as shown in the following example.  
   
     ```xml  
     <behaviors>  
@@ -26,16 +26,17 @@ Workflows go idle when they encounter a bookmark that must be resumed by some ex
      The `timeToUnload` attribute specifies the time period between when a workflow service instance goes idle and when the workflow service is unloaded. The `timeToPersist` attribute specifies the time period between when a workflow service instance goes idle and when the workflow service instance is persisted. The default value for `timeToUnload` is 1 minute. The default value for `timeToPersist` is <xref:System.TimeSpan.MaxValue>. If you want to keep idle instances in memory but persist them for robustness, set values so that `timeToPersist` < `timeToUnload`. If you want to prevent idle instances from being unloaded, set `timeToUnload` to <xref:System.TimeSpan.MaxValue>. For more information about <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior>, see [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
   
     > [!NOTE]
-    >  The preceding configuration sample is using simplified configuration. For more information, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md).  
+    > The preceding configuration sample is using simplified configuration. For more information, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md).  
   
 ### To change idle behavior in code  
   
--   The following example changes the time to wait before persisting and unloading programmatically.  
+- The following example changes the time to wait before persisting and unloading programmatically.  
   
      [!code-csharp[Wf_SvcHost_Idle_persist#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/wf_svchost_idle_persist/cs/source.cs#1)]
      [!code-vb[Wf_SvcHost_Idle_persist#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/wf_svchost_idle_persist/vb/source.vb#1)]  
   
 ## See also
+
 - [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)
 - [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)
 - [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)

@@ -10,7 +10,7 @@ Reads data from a merged assembly given a relative virtual address (RVA) in the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyImageBytes(  
    [in] CORDB_ADDRESS rva,   
    [in] ULONG32 length,   
@@ -18,7 +18,7 @@ HRESULT GetAssemblyImageBytes(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `rva`  
  [in] A relative virtual address (RVA) in a merged assembly.  
   
@@ -31,7 +31,7 @@ HRESULT GetAssemblyImageBytes(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -43,5 +43,6 @@ HRESULT GetAssemblyImageBytes(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -6,8 +6,9 @@ ms.assetid: 0c2f95c4-cc12-4fb5-a70c-7fc6fa95db58
 # \<diagnostics>
 The `diagnostics` element defines settings that can be used by an administrator for run-time inspection and control.  
   
- \<system.ServiceModel>  
-\<diagnostics>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<diagnostics>**  
   
 ## Syntax  
   
@@ -48,8 +49,8 @@ The `diagnostics` element defines settings that can be used by an administrator 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<endToEndTracing>](../../../../../docs/framework/configure-apps/file-schema/wcf/endtoendtracing.md)|A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.|  
-|[\<messageLogging>](../../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)|Describes the settings for WCF message logging.|  
+|[\<endToEndTracing>](endtoendtracing.md)|A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.|  
+|[\<messageLogging>](messagelogging.md)|Describes the settings for WCF message logging.|  
   
 ### Parent Elements  
   
@@ -79,5 +80,6 @@ The `diagnostics` element defines settings that can be used by an administrator 
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>

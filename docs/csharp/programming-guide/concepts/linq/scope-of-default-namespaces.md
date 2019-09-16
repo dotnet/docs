@@ -1,9 +1,9 @@
 ---
-title: "Scope of Default Namespaces in C#1"
+title: "Scope of Default Namespaces in C#"
 ms.date: 07/20/2015
 ms.assetid: fe826236-830f-457a-9027-7ad62c909fae
 ---
-# Scope of Default Namespaces in C#
+# Scope of Default Namespaces in C\#
 Default namespaces as represented in the XML tree are not in scope for queries. If you have XML that is in a default namespace, you still must declare an <xref:System.Xml.Linq.XNamespace> variable, and combine it with the local name to make a qualified name to be used in the query.  
   
  One of the most common problems when querying XML trees is that if the XML tree has a default namespace, the developer sometimes writes the query as though the XML were not in a namespace.  
@@ -39,7 +39,7 @@ Console.WriteLine("End of result set");
 ### Comments  
  This example produces the following result:  
   
-```  
+```output  
 Result set follows:  
 End of result set  
 ```  
@@ -47,7 +47,7 @@ End of result set
 ## Example  
  This example shows the creation of XML in a namespace, and a query that is coded properly.  
   
- In contrast to the incorrectly coded example above, the correct approach when using C# is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XElement.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.  
+ In contrast to the incorrectly coded example above, the correct approach when using C# is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XContainer.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.  
   
 ### Code  
   
@@ -74,7 +74,7 @@ Console.WriteLine("End of result set");
 ### Comments  
  This example produces the following result:  
   
-```  
+```output  
 Result set follows:  
 1  
 2  
@@ -84,4 +84,4 @@ End of result set
   
 ## See also
 
-- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+- [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md)

@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) data access services to free memory 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FreeVirtual(  
     [in] CLRDATA_ADDRESS addr,  
     [in] ULONG32 size,  
@@ -31,7 +31,7 @@ HRESULT FreeVirtual(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `addr`  
  [in] A `CLRDATA_ADDRESS` value that specifies the starting address of the memory to be freed.  
   
@@ -56,5 +56,6 @@ HRESULT FreeVirtual(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-interface.md)
 - [AllocVirtual Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-allocvirtual-method.md)

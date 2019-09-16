@@ -23,13 +23,13 @@ For each method of the class, sets a value that indicates whether the method is 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetJMCStatus (  
     [in] BOOL   bIsJustMyCode  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bIsJustMyCode`  
  [in] Set to `true` to indicate that the method is user-defined code; otherwise, set to `false`.  
   

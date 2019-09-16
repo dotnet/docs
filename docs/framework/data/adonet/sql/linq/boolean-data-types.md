@@ -10,12 +10,13 @@ Boolean operators work as expected in the common language runtime (CLR), except 
   
 |Visual Basic|C#|  
 |------------------|---------|  
-|[And Operator](~/docs/visual-basic/language-reference/operators/and-operator.md)|[& Operator](~/docs/csharp/language-reference/operators/and-operator.md)|  
-|[AndAlso Operator](~/docs/visual-basic/language-reference/operators/andalso-operator.md)|[&& Operator](~/docs/csharp/language-reference/operators/conditional-and-operator.md)|  
-|[Or Operator](~/docs/visual-basic/language-reference/operators/or-operator.md)|[&#124; Operator](~/docs/csharp/language-reference/operators/or-operator.md)|  
-|[OrElse Operator](~/docs/visual-basic/language-reference/operators/orelse-operator.md)|[&#124;&#124; Operator](~/docs/csharp/language-reference/operators/conditional-or-operator.md)|  
-|[Xor Operator](~/docs/visual-basic/language-reference/operators/xor-operator.md)|[^ Operator](~/docs/csharp/language-reference/operators/xor-operator.md)|  
-|[Not Operator](~/docs/visual-basic/language-reference/operators/not-operator.md)|[\! Operator](~/docs/csharp/language-reference/operators/logical-negation-operator.md)|  
+|[And Operator](../../../../../visual-basic/language-reference/operators/and-operator.md)|[& Operator](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-and-operator-)|  
+|[AndAlso Operator](../../../../../visual-basic/language-reference/operators/andalso-operator.md)|[&& Operator](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#conditional-logical-and-operator-)|  
+|[Or Operator](../../../../../visual-basic/language-reference/operators/or-operator.md)|[&#124; Operator](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-or-operator-)|  
+|[OrElse Operator](../../../../../visual-basic/language-reference/operators/orelse-operator.md)|[&#124;&#124; Operator](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#conditional-logical-or-operator-)|  
+|[Xor Operator](../../../../../visual-basic/language-reference/operators/xor-operator.md)|[^ Operator](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-exclusive-or-operator-)|  
+|[Not Operator](../../../../../visual-basic/language-reference/operators/not-operator.md)|[\! Operator](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-negation-operator-)|  
   
 ## See also
-- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
+
+- [Data Types and Functions](data-types-and-functions.md)

@@ -10,6 +10,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Debugging Structures
+
 This section describes the unmanaged structures that the debugging API uses.
 
 ## In This Section
@@ -22,7 +23,7 @@ This section describes the unmanaged structures that the debugging API uses.
  [CLR_DEBUGGING_VERSION Structure](../../../../docs/framework/unmanaged-api/debugging/clr-debugging-version-structure.md)
  Defines the product version of the common language runtime (CLR) for debugging purposes.
 
- [CodeChunkInfo Structure1](../../../../docs/framework/unmanaged-api/debugging/codechunkinfo-structure.md)
+ [CodeChunkInfo Structure](../../../../docs/framework/unmanaged-api/debugging/codechunkinfo-structure.md)
  Represents a single chunk of code in memory.
 
  [COR_ACTIVE_FUNCTION](cor-active-function-structure.md)
@@ -74,7 +75,7 @@ This section describes the unmanaged structures that the debugging API uses.
  Represents stack frame information from an exception object.
 
  [CorDebugGuidToTypeMapping Structure](../../../../docs/framework/unmanaged-api/debugging/cordebugguidtotypemapping-structure.md)
- Maps a [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID to its corresponding [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) object.
+ Maps a Windows Runtime GUID to its corresponding [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) object.
 
  [DacpGetModuleAddress Structure](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-structure.md)
  Defines the container for a module address request.
@@ -91,9 +92,8 @@ This section describes the unmanaged structures that the debugging API uses.
  [StackTrace_SimpleContext Structure](../../../../docs/framework/unmanaged-api/debugging/stacktrace-simplecontext-structure.md)
  Provides a simple context that can be used in place of a full `CONTEXT` structure.
 
-
-
 ## Related Sections
+
  [Debugging Coclasses](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)
 
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -94,15 +94,15 @@ The composite formatting feature is supported by methods such as the following:
   
  The way escaped braces are interpreted can lead to unexpected results. For example, consider the format item "{{{0:D}}}", which is intended to display an opening brace, a numeric value formatted as a decimal number, and a closing brace. However, the format item is actually interpreted in the following manner:  
   
-1.  The first two opening braces ("{{") are escaped and yield one opening brace.  
+1. The first two opening braces ("{{") are escaped and yield one opening brace.  
   
-2.  The next three characters ("{0:") are interpreted as the start of a format item.  
+2. The next three characters ("{0:") are interpreted as the start of a format item.  
   
-3.  The next character ("D") would be interpreted as the Decimal standard numeric format specifier, but the next two escaped braces ("}}") yield a single brace. Because the resulting string ("D}") is not a standard numeric format specifier, the resulting string is interpreted as a custom format string that means display the literal string "D}".  
+3. The next character ("D") would be interpreted as the Decimal standard numeric format specifier, but the next two escaped braces ("}}") yield a single brace. Because the resulting string ("D}") is not a standard numeric format specifier, the resulting string is interpreted as a custom format string that means display the literal string "D}".  
   
-4.  The last brace ("}") is interpreted as the end of the format item.  
+4. The last brace ("}") is interpreted as the end of the format item.  
   
-5.  The final result that is displayed is the literal string, "{D}". The numeric value that was to be formatted is not displayed.  
+5. The final result that is displayed is the literal string, "{D}". The numeric value that was to be formatted is not displayed.  
   
  One way to write your code to avoid misinterpreting escaped braces and format items is to format the braces and format item separately. That is, in the first format operation display a literal opening brace, in the next operation display the result of the format item, then in the final operation display a literal closing brace. The following example illustrates this approach.  
   
@@ -114,19 +114,19 @@ The composite formatting feature is supported by methods such as the following:
   
  Each value in the parameter list that corresponds to a format item is converted to a string as follows:  
   
-1.  If the value to be formatted is `null`, an empty string <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
+1. If the value to be formatted is `null`, an empty string <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
-2.  If an <xref:System.ICustomFormatter> implementation is available, the runtime calls its <xref:System.ICustomFormatter.Format%2A> method. It passes the method the format item's *formatString* value, if one is present, or `null` if it's not, along with the <xref:System.IFormatProvider> implementation. If the call to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method returns `null`, execution proceeds to the next step; otherwise, the result of the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> call is returned.
+2. If an <xref:System.ICustomFormatter> implementation is available, the runtime calls its <xref:System.ICustomFormatter.Format%2A> method. It passes the method the format item's *formatString* value, if one is present, or `null` if it's not, along with the <xref:System.IFormatProvider> implementation. If the call to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method returns `null`, execution proceeds to the next step; otherwise, the result of the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> call is returned.
   
-3.  If the value implements the <xref:System.IFormattable> interface, the interface's <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29> method is called. The method is passed the *formatString* value, if one is present in the format item, or `null` if it's not. The <xref:System.IFormatProvider> argument is determined as follows:  
+3. If the value implements the <xref:System.IFormattable> interface, the interface's <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29> method is called. The method is passed the *formatString* value, if one is present in the format item, or `null` if it's not. The <xref:System.IFormatProvider> argument is determined as follows:  
   
-    -   For a numeric value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.NumberFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it's unable to supply one, if the value of the argument is `null`, or if the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.NumberFormatInfo> object for the current thread culture is used.  
+    - For a numeric value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.NumberFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it's unable to supply one, if the value of the argument is `null`, or if the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.NumberFormatInfo> object for the current thread culture is used.  
   
-    -   For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it's unable to supply one, if the value of the argument is `null`, or if the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture is used.  
+    - For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it's unable to supply one, if the value of the argument is `null`, or if the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture is used.  
   
-    -   For objects of other types, if a composite formatting method is called with an <xref:System.IFormatProvider> argument, its value is passed directly to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation. Otherwise, `null` is passed to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  
+    - For objects of other types, if a composite formatting method is called with an <xref:System.IFormatProvider> argument, its value is passed directly to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation. Otherwise, `null` is passed to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  
   
-4.  The type's parameterless `ToString` method, which either overrides <xref:System.Object.ToString?displayProperty=nameWithType> or inherits the behavior of its base class, is called. In this case, the format string specified by the *formatString* component in the format item, if it's present, is ignored.  
+4. The type's parameterless `ToString` method, which either overrides <xref:System.Object.ToString?displayProperty=nameWithType> or inherits the behavior of its base class, is called. In this case, the format string specified by the *formatString* component in the format item, if it's present, is ignored.  
   
  Alignment is applied after the preceding steps have been performed.  
   

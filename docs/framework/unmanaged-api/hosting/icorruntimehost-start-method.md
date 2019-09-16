@@ -23,7 +23,7 @@ Starts the common language runtime (CLR).
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Start ();  
 ```  
   
@@ -49,4 +49,5 @@ HRESULT Start ();
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

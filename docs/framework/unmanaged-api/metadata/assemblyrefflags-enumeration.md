@@ -22,7 +22,7 @@ Contains values that describe features of an assembly reference.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     arfFullOriginator = 0x0001  
 } AssemblyRefFlags;  
@@ -42,6 +42,7 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
 - [DefineAssemblyRef Method](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-defineassemblyref-method.md)

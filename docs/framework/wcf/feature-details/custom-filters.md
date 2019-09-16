@@ -33,18 +33,18 @@ public class MyMessageFilter: MessageFilter
 ```  
   
 > [!NOTE]
->  In an actual implementation, the Match method(s) contains logic that will examine the message to determine if this message filter should return **true** or **false**.  
+> In an actual implementation, the Match method(s) contains logic that will examine the message to determine if this message filter should return **true** or **false**.  
   
 ### Performance  
  When implementing a custom filter, it is important to take into consideration the maximum length of time required for the filter to complete the evaluation of a message. Since a message may be evaluated against multiple filters before a match is found, it is important to ensure that the client request does not time out before all filters can be evaluated. Therefore a custom filter should contain only the code necessary to evaluate the contents or attributes of a message in order to determine if it matches the filter criteria.  
   
  In general, you should avoid the following when implementing a custom filter:  
   
--   IO, such as saving data to disk or to a database.  
+- IO, such as saving data to disk or to a database.  
   
--   Unnecessary processing, such as looping over multiple records in a document.  
+- Unnecessary processing, such as looping over multiple records in a document.  
   
--   Blocking operations, such as calls that involve obtaining a lock on shared resources or performing lookups against a database.  
+- Blocking operations, such as calls that involve obtaining a lock on shared resources or performing lookups against a database.  
   
  Before using a custom filter in a production environment, you should run performance tests to determine the average length of time that the filter takes to evaluate a message. When combined with the average processing time of the other filters used in the filter table, this will allow you to accurately determine the maximum timeout value that should be specified by the client application.  
   

@@ -48,7 +48,7 @@ The Managed Extensibility Framework or MEF is a library for creating lightweight
 
 <a name="where_is_mef_available"></a>
 ## Where Is MEF Available?
- MEF is an integral part of the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], and is available wherever the .NET Framework is used. You can use MEF in your client applications, whether they use Windows Forms, WPF, or any other technology, or in server applications that use ASP.NET.
+ MEF is an integral part of the .NET Framework 4, and is available wherever the .NET Framework is used. You can use MEF in your client applications, whether they use Windows Forms, WPF, or any other technology, or in server applications that use ASP.NET.
 
 <a name="mef_and_maf"></a>
 ## MEF and MAF
@@ -97,19 +97,19 @@ Add the following constructor to the `Program` class:
 
 ```vb
 Public Sub New()
-    'An aggregate catalog that combines multiple catalogs
+    ' An aggregate catalog that combines multiple catalogs.
      Dim catalog = New AggregateCatalog()
 
-    'Adds all the parts found in the same assembly as the Program class
+    ' Adds all the parts found in the same assembly as the Program class.
     catalog.Catalogs.Add(New AssemblyCatalog(GetType(Program).Assembly))
 
-    'Create the CompositionContainer with the parts in the catalog
+    ' Create the CompositionContainer with the parts in the catalog.
     _container = New CompositionContainer(catalog)
 
-    'Fill the imports of this object
+    ' Fill the imports of this object.
     Try
         _container.ComposeParts(Me)
-    Catch ex As Exception
+    Catch ex As CompositionException
         Console.WriteLine(ex.ToString)
     End Try
 End Sub
@@ -118,15 +118,15 @@ End Sub
 ```csharp
 private Program()
 {
-    //An aggregate catalog that combines multiple catalogs
+    // An aggregate catalog that combines multiple catalogs.
     var catalog = new AggregateCatalog();
-    //Adds all the parts found in the same assembly as the Program class
+    // Adds all the parts found in the same assembly as the Program class.
     catalog.Catalogs.Add(new AssemblyCatalog(typeof(Program).Assembly));
 
-    //Create the CompositionContainer with the parts in the catalog
+    // Create the CompositionContainer with the parts in the catalog.
     _container = new CompositionContainer(catalog);
 
-    //Fill the imports of this object
+    // Fill the imports of this object.
     try
     {
         this._container.ComposeParts(this);
@@ -203,6 +203,7 @@ class MySimpleCalculator : ICalculator
 
 ```vb
 Sub Main()
+    ' Composition is performed in the constructor.
     Dim p As New Program()
     Dim s As String
     Console.WriteLine("Enter Command:")
@@ -216,7 +217,8 @@ End Sub
 ```csharp
 static void Main(string[] args)
 {
-    Program p = new Program(); //Composition is performed in the constructor
+    // Composition is performed in the constructor.
+    var p = new Program();
     String s;
     Console.WriteLine("Enter Command:");
     while (true)
@@ -309,12 +311,14 @@ class Add: IOperation
 Public Function Calculate(ByVal input As String) As String Implements ICalculator.Calculate
     Dim left, right As Integer
     Dim operation As Char
-    Dim fn = FindFirstNonDigit(input) 'Finds the operator
+    ' Finds the operator.
+    Dim fn = FindFirstNonDigit(input)
     If fn < 0 Then
         Return "Could not parse command."
     End If
     operation = input(fn)
     Try
+        ' Separate out the operands.
         left = Integer.Parse(input.Substring(0, fn))
         right = Integer.Parse(input.Substring(fn + 1))
     Catch ex As Exception
@@ -334,13 +338,14 @@ public String Calculate(String input)
 {
     int left;
     int right;
-    Char operation;
-    int fn = FindFirstNonDigit(input); //finds the operator
+    char operation;
+    // Finds the operator.
+    int fn = FindFirstNonDigit(input); 
     if (fn < 0) return "Could not parse command.";
 
     try
     {
-        //separate out the operands
+        // Separate out the operands.
         left = int.Parse(input.Substring(0, fn));
         right = int.Parse(input.Substring(fn + 1));
     }
@@ -365,7 +370,7 @@ public String Calculate(String input)
 
 ```vb
 Private Function FindFirstNonDigit(ByVal s As String) As Integer
-    For i = 0 To s.Length
+    For i = 0 To s.Length - 1
         If (Not (Char.IsDigit(s(i)))) Then Return i
     Next
     Return -1
@@ -373,7 +378,7 @@ End Function
 ```
 
 ```csharp
-private int FindFirstNonDigit(String s)
+private int FindFirstNonDigit(string s)
 {
     for (int i = 0; i < s.Length; i++)
     {
@@ -469,11 +474,11 @@ public class Mod : SimpleCalculator.IOperation
 ## Conclusion
  This topic covered the basic concepts of MEF.
 
--   Parts, catalogs, and the composition container
+- Parts, catalogs, and the composition container
 
      Parts and the composition container are the basic building blocks of a MEF application. A part is any object that imports or exports a value, up to and including itself. A catalog provides a collection of parts from a particular source. The composition container uses the parts provided by a catalog to perform composition, the binding of imports to exports.
 
--   Imports and exports
+- Imports and exports
 
      Imports and exports are the way by which components communicate. With an import, the component specifies a need for a particular value or object, and with an export it specifies the availability of a value. Each import is matched with a list of exports by way of its contract.
 

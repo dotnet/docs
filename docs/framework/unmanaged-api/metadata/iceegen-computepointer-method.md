@@ -25,7 +25,7 @@ Determines the buffer for the specified code section.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ComputePointer (  
     [in]  HCEESECTION  section,  
     [in]  ULONG        RVA,   
@@ -33,7 +33,7 @@ HRESULT ComputePointer (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The code section for which to return a buffer.  
   
@@ -53,4 +53,5 @@ HRESULT ComputePointer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

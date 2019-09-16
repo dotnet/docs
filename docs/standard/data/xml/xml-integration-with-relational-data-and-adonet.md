@@ -11,11 +11,11 @@ The **XmlDataDocument** class is a derived class of the **XmlDocument**, and con
   
  The benefits of having data available in two views are:  
   
--   The structured portion of an XML document can be mapped to a dataset, and be efficiently stored, indexed, and searched.  
+- The structured portion of an XML document can be mapped to a dataset, and be efficiently stored, indexed, and searched.  
   
--   Transformations, validation, and navigation can be done efficiently through a cursor model over the XML data that is stored relationally. At times, it can be done more efficiently against relational structures than if the XML is stored in an **XmlDocument** model.  
+- Transformations, validation, and navigation can be done efficiently through a cursor model over the XML data that is stored relationally. At times, it can be done more efficiently against relational structures than if the XML is stored in an **XmlDocument** model.  
   
--   The **DataSet** can store a portion of the XML. That is, you can use **XPath** or **XslTransform** to store to a **DataSet** only those elements and attributes of interest. From there, changes can be made to the smaller, filtered subset of data, with the changes propagating to the larger data in the **XmlDataDocument**.  
+- The **DataSet** can store a portion of the XML. That is, you can use **XPath** or **XslTransform** to store to a **DataSet** only those elements and attributes of interest. From there, changes can be made to the smaller, filtered subset of data, with the changes propagating to the larger data in the **XmlDataDocument**.  
   
  You can also run a transform over data that was loaded into the **DataSet** from SQL Server. Another option is to bind .NET Framework classes-style-managed WinForm and WebForm controls to a **DataSet** that was populated from an XML input stream.  
   
@@ -23,9 +23,9 @@ The **XmlDataDocument** class is a derived class of the **XmlDocument**, and con
   
  Because **XmlDataDocument** is inherited from an **XmlDocument**, it provides an implementation of the W3C DOM. The fact that the **XmlDataDocument** is associated with, and stores a subset of its data within, a **DataSet** does not restrict or alter its use as an **XmlDocument** in any way. Code written to consume an **XmlDocument** works unaltered against an **XmlDataDocument**. The **DataSet** provides the relational view of the same data by defining tables, columns, relations, and constraints, and is a stand-alone, in-memory user data store.  
   
- The following illustration shows the different associations that XML data has with the **DataSet** and **XmlDataDocument**.  
+ The following illustration shows the different associations that XML data has with the **DataSet** and **XmlDataDocument**: 
   
- ![XML DataSet](../../../../docs/standard/data/xml/media/xmlintegrationwithrelationaldataandadodotnet.gif "xmlIntegrationWithRelationalDataAndADOdotNet")  
+ ![Diagram that shows different associations with the XML DataSet.](./media/xml-integration-with-relational-data-and-adonet/xml-integration-relational-data-adodotnet.gif)  
   
  The illustration shows that XML data can be loaded directly into a **DataSet**, which allows direct manipulation with XML in the relational manner. Or, the XML can be loaded into a derived class of the DOM, which is the **XmlDataDocument**, and subsequently loaded and synchronized with the **DataSet**. Because the **DataSet** and **XmlDataDocument** are synchronized over a single set of data, changes made to the data in one store are reflected in the other store.  
   
@@ -39,7 +39,7 @@ The **XmlDataDocument** class is a derived class of the **XmlDocument**, and con
   
  If loading and writing XML directly into and out of a **DataSet** addresses your needs, see [Loading a DataSet from XML](../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md) and [Writing a DataSet as XML Data](../../../../docs/framework/data/adonet/dataset-datatable-dataview/writing-dataset-contents-as-xml-data.md).  
   
- If loading the **DataSet** from an **XmlDataDocument** addresses your needs, see [Synchronizing a Datasetwith an XML Document](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md).  
+ If loading the **DataSet** from an **XmlDataDocument** addresses your needs, see [Synchronizing a Dataset with an XML Document](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md).  
   
 ## See also
 

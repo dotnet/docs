@@ -23,13 +23,13 @@ Notifies the profiler that a module is being attached to its parent assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleAttachedToAssembly(  
     [in] ModuleID   moduleId,  
     [in] AssemblyID AssemblyId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module that is being attached.  
   
@@ -49,4 +49,5 @@ HRESULT ModuleAttachedToAssembly(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

@@ -59,7 +59,7 @@ Selecting any of the managed workloads for Web, Desktop or Azure development wil
 
 ![Install Visual Studio for Windows](media/install-vs-windows.png "Install Visual Studio for Windows")
 
-In recent previews of Visual Studio 2019 Update 3, we have made changes to the installation experience for .NET Core the experience more streamlined and efficient. More details about this can be found in the blog post [Improving .NET Core installation in Visual Studio and on Windows](https://devblogs.microsoft.com/dotnet/improving-net-core-installation-in-visual-studio-and-on-windows/). 
+In recent previews of Visual Studio 2019 Update 3, we have made changes to the installation experience for .NET Core in order to make the experience more streamlined and efficient. More details about this can be found in the blog post [Improving .NET Core installation in Visual Studio and on Windows](https://devblogs.microsoft.com/dotnet/improving-net-core-installation-in-visual-studio-and-on-windows/). 
 
 
 

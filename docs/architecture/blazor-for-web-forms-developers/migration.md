@@ -16,7 +16,7 @@ planning and can take time. The process can be broken into two main parts:
 
 In this chapter we will go over the process for each of these. One thing that
 can really help ease the transition is to ensure the application is adhering to
-an *n-tier* approach where the app model (in this case Web Forms) is separate
+an *n-tier* approach, where the app model (in this case Web Forms) is separate
 from the business logic. Without this separation it can be very tedious to tease
 apart what needs to be moved to .NET Core and Blazor vs what can be left behind.
 

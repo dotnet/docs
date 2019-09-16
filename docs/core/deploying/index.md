@@ -14,7 +14,7 @@ First, let's review some basic terminology we will be using throughout this guid
 
 **_Acquisition_** is about finding and getting what you need for both development (that is toolset/SDK) and for runtime. Acquisition also includes the ability to detect if the packages you have are up-to-date.
 
-**_Deployment_** is about packaging the application and delivering the application and runtime to the target machine. 
+**_Deployment_** is about packaging the application and delivering the application and runtime to the target machine.
 
 <br/>
 

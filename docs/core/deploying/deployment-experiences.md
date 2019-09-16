@@ -9,7 +9,7 @@ ms.custom:
 # .NET Core Deployment Experiences
 
 ## Full Installers
-.NET Core major and minor releases as well as servicing updates always ship as the full product installers, that is the installer carries the entire product even if only a subset of the files is updated.
+.NET Core major and minor releases as well as servicing updates always ship as the full product installers, that is the installer carries the entire product even if only a subset of the files are updated.
 
 ## Side by Side installs versus in-place updates
 Before .NET Core 3.0, all .NET Core releases including servicing updates were fully side-by-side installs. If you had installed a minor version, and then installed another minor release or even a patch release for the minor release, both the original and patch versions would always be installed in discrete install locations. 

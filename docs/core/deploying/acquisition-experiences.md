@@ -32,7 +32,7 @@ Each of these choices has their own strengths. Some options support both initial
 
 _\*Some package Managers provide update notifications__
 
-Additionally, differences between these choices make some of these choices a great option for developers while others are better suited for DevOps and IT administrators.
+Additionally, differences between these choices make some of them a great option for developers while others are better suited for DevOps and IT administrators.
 
 |Acquisition Choice|Great For Developers|Great For DevOps/ IT Admins|
 |:-|:-:|:-:|

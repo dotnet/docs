@@ -173,7 +173,7 @@ The *Dockerfile* file is used by the `docker build` command to create a containe
 
 In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Add the following command as the first line of the file:
 
-```dockerfile
+```Dockerfile
 FROM mcr.microsoft.com/dotnet/core/runtime:2.2
 ```
 

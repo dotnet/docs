@@ -315,7 +315,7 @@ Notice how `<InputText>` and `<ValidationMessage>` look just like HTML
 components, but are evaluated on the server side. Some code expressions are
 mixed in as well, often brought in by `@`, such as `@bind-Value="_item.Name"`.
 
-A new feature of Razor compared to WebForms is the ability to inject components
+A new feature of Razor compared to WebForms is the ability to inject services
 directly into a page. Since dependency injection is built in from the ground up,
 there is first class support for it everywhere.  In `Create.razor` the following
 is at the top of the page:

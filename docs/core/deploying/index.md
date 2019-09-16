@@ -10,7 +10,7 @@ ms.custom:
 
 ## Terminology
 
-First, let�s review some basic terminology we will be using throughout this guide -
+First, let's review some basic terminology we will be using throughout this guide -
 
 **_Acquisition_** is about finding and getting what you need for both development (that is toolset/SDK) and for runtime. Acquisition also includes the ability to detect if the packages you have are up-to-date.
 

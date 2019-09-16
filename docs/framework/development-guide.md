@@ -60,7 +60,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  Provides information about caching, lazy initialization, reliability, and ETW events.  
  
 ## Reference  
- [.NET Framework Class Library](/dotnet/api/?view=netframework-4.7)  
+ [.NET Framework Class Library](/dotnet/api/)  
  Supplies syntax, code examples, and usage information for each class that is contained in the .NET Framework namespaces.  
   
 ## Related Sections  

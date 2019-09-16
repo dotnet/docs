@@ -2,7 +2,7 @@
 title: "ref keyword - C# Reference"
 ms.custom: seodec18
 
-ms.date: 10/24/2018
+ms.date: 03/26/2019
 f1_keywords: 
   - "ref_CSharpKeyword"
   - "ref"
@@ -17,12 +17,11 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 - In a method signature and in a method call, to pass an argument to a method by reference. For more information, see [Passing an argument by reference](#passing-an-argument-by-reference).
 - In a method signature, to return a value to the caller by reference. For more information, see [Reference return values](#reference-return-values).
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. For more information, see [Ref locals](#ref-locals).
-- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. For more information, see [ref struct types](#ref-struct-types).
-
+- In a `struct` declaration to declare a `ref struct` or a `readonly ref struct`. For more information, see [ref struct types](#ref-struct-types).
 
 ## Passing an argument by reference
 
-When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The effect of passing by reference is that any change to the argument in the called method is reflected in the calling method. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller’s local variable or the array element now refers to the new object when the method returns.
+When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller’s local variable or the array element now refers to the new object when the method returns.
 
 > [!NOTE]
 > Do not confuse the concept of passing by reference with the concept of reference types. The two concepts are not the same. A method parameter can be modified by `ref` regardless of whether it is a value type or a reference type. There is no boxing of a value type when it is passed by reference.  
@@ -135,7 +134,7 @@ The goal of keeping a `ref struct` type as a stack-allocated variable introduces
 
 - You can't box a `ref struct`. You cannot assign a `ref struct` type to a variable of type `object`, `dynamic`, or any interface type.
 - `ref struct` types cannot implement interfaces.
-- You can't declare a `ref struct` as a member of a class or a normal struct.
+- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler generated backing field. 
 - You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601> or `Task`-like types.
 - You cannot declare `ref struct` local variables in iterators.
 - You cannot capture `ref struct` variables in lambda expressions or local functions.

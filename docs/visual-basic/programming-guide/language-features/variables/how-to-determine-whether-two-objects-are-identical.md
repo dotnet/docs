@@ -16,9 +16,9 @@ In Visual Basic, two variable references are considered identical if their point
   
 #### To determine if two objects are identical  
   
-1.  Set up a `Boolean` expression to test the two objects.  
+1. Set up a `Boolean` expression to test the two objects.  
   
-2.  In your testing expression, use the `Is` operator with the two objects as operands.  
+2. In your testing expression, use the `Is` operator with the two objects as operands.  
   
      `Is` returns `True` if the objects point to the same class instance.  
   
@@ -27,16 +27,16 @@ In Visual Basic, two variable references are considered identical if their point
   
 #### To determine if two objects are not identical  
   
-1.  Set up a `Boolean` expression to test the two objects.  
+1. Set up a `Boolean` expression to test the two objects.  
   
-2.  In your testing expression, use the `IsNot` operator with the two objects as operands.  
+2. In your testing expression, use the `IsNot` operator with the two objects as operands.  
   
      `IsNot` returns `True` if the objects do not point to the same class instance.  
   
 ## Example  
  The following example tests pairs of `Object` variables to see if they point to the same class instance.  
   
- [!code-vb[VbVbalrKeywords#14](../../../../visual-basic/language-reference/codesnippet/VisualBasic/how-to-determine-whether-two-objects-are-identical_1.vb)]  
+ [!code-vb[VbVbalrKeywords#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class7.vb#14)]  
   
  The preceding example displays the following output.  
   
@@ -45,6 +45,7 @@ In Visual Basic, two variable references are considered identical if their point
  `objA identical to objC? True`  
   
 ## See also
+
 - [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
 - [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
 - [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)

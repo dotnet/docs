@@ -23,12 +23,12 @@ Returns `true` if the document has source embedded in the debugging symbols; oth
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HasEmbeddedSource(  
    [out, retval]  BOOL  *pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a variable that indicates whether the document has source embedded in the debugging symbols.  
   
@@ -36,4 +36,5 @@ HRESULT HasEmbeddedSource(
  S_OK if the method succeeds.  
   
 ## See also
+
 - [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

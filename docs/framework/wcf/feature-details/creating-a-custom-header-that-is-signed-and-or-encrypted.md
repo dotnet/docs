@@ -9,7 +9,7 @@ When calling a non-WCF service using a WCF client it is sometimes necessary to u
 ## Defining the custom header  
  Custom headers are defined by defining a message contract and marking the members you want to be sent as headers with a <xref:System.ServiceModel.MessageHeaderAttribute> attribute. To work around the canonicalization bug you must ensure that the XML serializer declares the namespace for the custom header with a prefix instead of a default namespace declaration. The following code shows how to define the data type that will be used as a message header with the correct namespace declaration.  
   
-```  
+```csharp
 [System.CodeDom.Compiler.GeneratedCodeAttribute("svcutil", "3.0.4506.648")]  
 [System.SerializableAttribute()]  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  
@@ -39,7 +39,7 @@ public partial class msgHeaderElement
   
  This code declares a new type called `msgHeaderElement` that will be serialized with the XML Serializer. When an instance of this type is serialized, it will define a namespace with an ‘h’ prefix, thus working around the canonicalization bug.  The message contract would then define an instance of `msgHeaderElement` and mark it with the <xref:System.ServiceModel.MessageHeaderAttribute> attribute as shown in the following example.  
   
-```  
+```csharp
 [MessageContract]  
 public  class MyMessageContract  
 {  
@@ -51,6 +51,7 @@ public  class MyMessageContract
 ```  
   
 ## See also
+
 - [Default Message Contract](../../../../docs/framework/wcf/samples/default-message-contract.md)
 - [Message Contracts](../../../../docs/framework/wcf/samples/message-contracts.md)
 - [Using Message Contracts](../../../../docs/framework/wcf/feature-details/using-message-contracts.md)

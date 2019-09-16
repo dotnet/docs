@@ -23,7 +23,7 @@ Gets the number of elements in each dimension of this array.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDimensions (  
     [in] ULONG32         cdim,  
     [out, size_is(cdim), length_is(cdim)]   
@@ -31,7 +31,7 @@ HRESULT GetDimensions (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cdim`  
  [in] The number of dimensions of this ICorDebugArrayValue object.  
   

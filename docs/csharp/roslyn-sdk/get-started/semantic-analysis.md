@@ -51,7 +51,7 @@ Next, build a <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation> from the tr
 
 [!code-csharp[Create the compilation](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#3 "Create the compilation for the semantic model")]
 
-The <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation.AddReferences%2A?displayProperty=nameWithType> method adds references to the compilation. The <xref:Microsoft.CodeAnalysis.MetadataReference.CreateFromFile%2A?displayProperty=nameWithType> method loads an assembly as a reference. 
+The <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation.AddReferences%2A?displayProperty=nameWithType> method adds references to the compilation. The <xref:Microsoft.CodeAnalysis.MetadataReference.CreateFromFile%2A?displayProperty=nameWithType> method loads an assembly as a reference.
 
 ## Querying the semantic model
 
@@ -73,7 +73,7 @@ From the <xref:Microsoft.CodeAnalysis.SymbolInfo> object you can obtain the <xre
 
 Run the program and you should see the following output:
 
-```
+```output
 System.Collections
 System.Configuration
 System.Deployment
@@ -112,7 +112,7 @@ To finish this tutorial, let's build a LINQ query that creates a sequence of all
 
 [!code-csharp[Access the sequence of members on the string type](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#9 "Access the sequence of members on the string type.")]
 
-That source sequence conatins all members, including properties and fields, so filter it using the <xref:System.Collections.Immutable.ImmutableArray%601.OfType%2A?displayProperty=nameWithType> method to find elements that are <xref:Microsoft.CodeAnalysis.IMethodSymbol?diplayProperty=nameWithType> objects:
+That source sequence contains all members, including properties and fields, so filter it using the <xref:System.Collections.Immutable.ImmutableArray%601.OfType%2A?displayProperty=nameWithType> method to find elements that are <xref:Microsoft.CodeAnalysis.IMethodSymbol?displayProperty=nameWithType> objects:
 
 [!code-csharp[Filter the sequence to only methods](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#10 "Find the subset of the collection that is the methods.")]
 
@@ -130,7 +130,7 @@ You can also build the full query using the LINQ query syntax, and then display 
 
 Build and run the program. You should see the following output:
 
-```
+```output
 Join
 Substring
 Trim
@@ -154,4 +154,5 @@ Intern
 IsInterned
 Press any key to continue . . .
 ```
+
 You've used the Semantic API to find and display information about the symbols that are part of this program.

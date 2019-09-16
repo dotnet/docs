@@ -10,7 +10,7 @@ The `TextFieldParser` cannot read from the file because a quotation mark (") has
   
 ## To correct this error  
   
--   Set `EscapeQuotes` to `False`.  
+- Set `EscapeQuotes` to `False`.  
   
 ## See also
 

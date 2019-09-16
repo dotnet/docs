@@ -6,7 +6,7 @@ ms.date: 03/06/2017
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
 ---
 
-# Using Attributes in C# #
+# Using Attributes in C\#
 
 Attributes provide a way of associating information with code in a declarative way. They can also provide a reusable element that can be applied to a variety of targets.
 
@@ -18,7 +18,7 @@ attributes that are built into .NET Core.
 
 ## Prerequisites
 You’ll need to setup your machine to run .NET core. You can find the
-installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
 page.
 You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container. 
 You’ll need to install your favorite code editor. The descriptions below
@@ -150,7 +150,7 @@ Here are a few notable attributes built into the .NET Core base class libraries:
 and another boolean parameter can be used to escalate from a compiler warning to a compiler error.
 
 * `[Conditional]`. This attribute is in the `System.Diagnostics` namespace. This attribute can be applied to methods (or attribute classes). You must pass a string to the constructor.
-If that string matches a `#define` directive, then any calls to that method (but not the method itself) will be removed by the C# compiler. Typically this is used for debugging (diagnostics) purposes.
+If that string doesn't match a `#define` directive, then any calls to that method (but not the method itself) will be removed by the C# compiler. Typically this is used for debugging (diagnostics) purposes.
 
 * `[CallerMemberName]`. This attribute can be used on parameters, and lives in the `System.Runtime.CompilerServices` namespace. This is an attribute that is used to inject the name
 of the method that is calling another method. This is typically used as a way to eliminate 'magic strings' when implementing INotifyPropertyChanged in various UI frameworks. As an
@@ -162,4 +162,4 @@ In the above code, you don't have to have a literal `"Name"` string. This can he
 
 ## Summary
 
-Attributes bring declarative power to C#. But they are a form of code as meta-data, and don't act by themselves.
+Attributes bring declarative power to C#, but they are a meta-data form of code and don't act by themselves.

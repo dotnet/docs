@@ -23,14 +23,14 @@ Increases the count of the current [IHostSemaphore](../../../../docs/framework/u
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReleaseSemaphore (  
     [in]  LONG  lReleaseCount,  
     [out] LONG  *lpPreviousCount  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lReleaseCount`  
  [in] The amount by which to increase the count of the current `IHostSemaphore` instance. This amount must be greater than zero.  
   
@@ -61,6 +61,7 @@ HRESULT ReleaseSemaphore (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
 - [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)

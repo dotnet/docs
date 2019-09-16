@@ -36,7 +36,7 @@ SqlCommand command = new SqlCommand(queryString, connection);
 Int32 recordsAffected = command.ExecuteNonQuery();  
 ```  
   
- The following code example executes the stored procedure created by the sample code in [Performing Catalog Operations](../../../../docs/framework/data/adonet/performing-catalog-operations.md). No rows are returned by the stored procedure, so the **ExecuteNonQuery** method is used, but the stored procedure does receive an input parameter and returns an output parameter and a return value.  
+ The following code example executes the stored procedure created by the sample code in [Performing Catalog Operations](performing-catalog-operations.md). No rows are returned by the stored procedure, so the **ExecuteNonQuery** method is used, but the stored procedure does receive an input parameter and returns an output parameter and a return value.  
   
  For the <xref:System.Data.OleDb.OleDbCommand> object, the **ReturnValue** parameter must be added to the **Parameters** collection first.  
   
@@ -86,7 +86,8 @@ Int32 rowCount = (Int32) command.Parameters["@RowCount"].Value;
 ```  
   
 ## See also
-- [Using Commands to Modify Data](../../../../docs/framework/data/adonet/using-commands-to-modify-data.md)
-- [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)
-- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Using Commands to Modify Data](using-commands-to-modify-data.md)
+- [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md)
+- [Commands and Parameters](commands-and-parameters.md)
+- [ADO.NET Overview](ado-net-overview.md)

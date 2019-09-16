@@ -21,6 +21,8 @@ In general, you only need the latest SDK and latest patch version of the runtime
 
 Starting with .NET Core 2.1, the .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows, macOS, or Linux:
 
+<!-- markdownlint-disable MD025 -->
+
 # [Windows](#tab/windows)
 
 ```console
@@ -127,7 +129,7 @@ Microsoft.NETCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 ```
 
-***
+---
 
 ## Uninstalling .NET Core
 
@@ -153,7 +155,7 @@ If you installed .NET Core using a package manager, you use that same package ma
 - [apt-get(8)](https://linux.die.net/man/8/apt-get) is used by Debian based systems, including Ubuntu.
 - [yum(8)](https://linux.die.net/man/8/yum) is used on Fedora, CentOS, and Oracle Linux.
 - [zypper(8)](https://en.opensuse.org/SDB:Zypper_manual_(plain)) is used on openSUSE and SUSE Linux Enterprise System (SLES).
-- [dnf(8)](https://dnf.readthedocs.io/latest/command_ref.html) is used on Fedora.
+- [dnf(8)](https://dnf.readthedocs.io/en/latest/command_ref.html) is used on Fedora.
 
 In almost all cases, the command to remove a package is `remove`.
 

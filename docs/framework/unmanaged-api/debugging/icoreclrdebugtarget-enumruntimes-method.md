@@ -25,7 +25,7 @@ Enumerates the common language runtimes (CLRs) in the specified process that is 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumRuntimes (  
       [in] DWORD       dwInternalProcessID,  
       [out] DWORD*     pcRuntimes,  
@@ -33,7 +33,7 @@ HRESULT EnumRuntimes (
     );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwInternalProcessID`  
  [in] The internal process ID of the process for which you want to enumerate runtimes. This will be `m_dwInternalID` from the corresponding [CoreClrDebugProcInfo](../../../../docs/framework/unmanaged-api/debugging/coreclrdebugprocinfo-structure.md).  
   
@@ -69,4 +69,5 @@ HRESULT EnumRuntimes (
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
+
 - [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

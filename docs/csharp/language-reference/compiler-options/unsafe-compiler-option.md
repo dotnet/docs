@@ -9,7 +9,8 @@ helpviewer_keywords:
   - "/unsafe compiler option [C#]"
 ---
 # -unsafe (C# Compiler Options)
-The **-unsafe** compiler option allows code that uses the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword to compile.  
+
+The **-unsafe** compiler option allows code that uses the [unsafe](../keywords/unsafe.md) keyword to compile.  
   
 ## Syntax  
   
@@ -17,16 +18,17 @@ The **-unsafe** compiler option allows code that uses the [unsafe](../../../csha
 -unsafe  
 ```  
   
-## Remarks  
- For more information about unsafe code, see [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md).  
+## Remarks
+
+For more information about unsafe code, see [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Select the **Allow Unsafe Code** check box.  
+3. Select the **Allow Unsafe Code** check box.  
   
 ### To add this option in a csproj file
 
@@ -40,8 +42,9 @@ Open the .csproj file for a project, and add the following elements:
 
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.AllowUnsafeBlocks%2A>.  
   
-## Example  
- Compile `in.cs` for unsafe mode:  
+## Example
+
+Compile `in.cs` for unsafe mode:  
   
 ```console  
 csc -unsafe in.cs  
@@ -49,5 +52,5 @@ csc -unsafe in.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

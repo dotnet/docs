@@ -23,14 +23,14 @@ Gets the startup flags and host configuration file that will be used to start th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDefaultStartupFlags(  
      [out]  DWORD *pdwStartupFlags,  
      [out, size_is(*pcchHostConfigFile)] LPWSTR pwzHostConfigFile,  
      [in, out]  DWORD *pcchHostConfigFile);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwStartupFlags`  
  [out] A pointer to the host startup flags that are currently set.  
   
@@ -60,6 +60,7 @@ HRESULT GetDefaultStartupFlags(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

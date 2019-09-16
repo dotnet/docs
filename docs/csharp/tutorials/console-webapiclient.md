@@ -8,13 +8,15 @@ ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 # REST client
 
 ## Introduction
+
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
-*	The basics of the .NET Core Command Line Interface (CLI).
-*   An overview of C# Language features.
-*	Managing dependencies with NuGet
-*   HTTP Communications
-*   Processing JSON information
-*   Managing configuration with Attributes. 
+
+* The basics of the .NET Core Command Line Interface (CLI).
+* An overview of C# Language features.
+* Managing dependencies with NuGet
+* HTTP Communications
+* Processing JSON information
+* Managing configuration with Attributes.
 
 You’ll build an application that issues HTTP Requests to a REST
 service on GitHub. You'll read information in JSON format, and convert
@@ -26,35 +28,35 @@ There are a lot of features in this tutorial. Let’s build them one by one.
 If you prefer to follow along with the [final sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) for this topic, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Prerequisites
+
 You’ll need to set up your machine to run .NET core. You can find the
-installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
 page. You can run this
-application on Windows, Linux, macOS or in a Docker container. 
+application on Windows, Linux, macOS or in a Docker container.
 You’ll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/), which is an open
 source, cross platform editor. However, you can use whatever tools you are
 comfortable with.
+
 ## Create the Application
+
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
 directory. Type the command `dotnet new console` at the command prompt. This
-creates the starter files for a basic "Hello World" application.
-
-Before you start making modifications, let’s go through the steps to run
-the simple Hello World application. After creating the application, type
-`dotnet restore` ([see note](#dotnet-restore-note)) at the command prompt. This command runs the NuGet
-package restore process. NuGet is a .NET package manager. This command
-downloads any of the missing dependencies for your project. As this is a
+creates the starter files for a basic "Hello World" application. As this is a
 new project, none of the dependencies are in place, so the first run will
-download the .NET Core framework. After this initial step, you will only
-need to run `dotnet restore` ([see note](#dotnet-restore-note)) when you add new dependent packages, or update
-the versions of any of your dependencies.  
+download the .NET Core framework, install a development certificate and run
+the NuGet package manager to restore missing dependencies.
 
-After restoring packages, you run `dotnet build`. This executes the build
-engine and creates your application. Finally, you execute `dotnet run` to
-run your application.
+Before you start making modifications, type
+`dotnet run` ([see note](#dotnet-restore-note)) at the command prompt to
+run your application. `dotnet run` automatically performs `dotnet restore`
+if your environment is missing dependencies. It also performs `dotnet build` if your application needs to be rebuilt.
+After your initial setup, you will only need to run `dotnet restore` or `dotnet build`
+when it makes sense for your project.
 
 ## Adding New Dependencies
+
 One of the key design goals for .NET Core is to minimize the size of
 the .NET installation. If an application
 needs additional libraries for some of its features, you add those
@@ -67,30 +69,32 @@ Open your `csproj` project file. The first line of the file should appear as:
 <Project Sdk="Microsoft.NET.Sdk">
 ```
 
-Add the following immediately after this line: 
+Add the following immediately after this line:
 
 ```xml
    <ItemGroup>
       <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
-   </ItemGroup> 
+   </ItemGroup>
 ```
+
 Most code editors will provide completion for different versions of these
 libraries. You'll usually want to use the latest version of any package
 that you add. However, it is important to make sure that the versions
 of all packages match, and that they also match the version of the .NET
 Core Application framework.
 
-After you've made these changes, you should run `dotnet restore` ([see note](#dotnet-restore-note)) again so
+After you've made these changes, execute `dotnet restore` ([see note](#dotnet-restore-note)) so
 that the package is installed on your system.
 
 ## Making Web Requests
+
 Now you're ready to start retrieving data from the web. In this
-application, you'll read information from the 
+application, you'll read information from the
 [GitHub API](https://developer.github.com/v3/). Let's read information
 about the projects under the
 [.NET Foundation](https://www.dotnetfoundation.org/) umbrella. You'll
 start by making the request to the GitHub API to retrieve information
-on the projects. The endpoint you'll use is: [https://api.github.com/orgs/dotnet/repos](https://api.github.com/orgs/dotnet/repos). You want to retrieve all the
+on the projects. The endpoint you'll use is: <https://api.github.com/orgs/dotnet/repos>. You want to retrieve all the
 information about these projects, so you'll use an HTTP GET request.
 Your browser also uses HTTP GET requests, so you can paste that URL into
 your browser to see what information you'll be receiving and processing.
@@ -103,7 +107,6 @@ build the functionality of the application. Start by opening the `program.cs` fi
 ```csharp
 private static async Task ProcessRepositories()
 {
-    
 }
 ```
 
@@ -153,7 +156,7 @@ namespace WebAPIClient
 }
 ```
 
- Let's go back to the `ProcessRepositories` method and fill in a first version of it:
+Let's go back to the `ProcessRepositories` method and fill in a first version of it:
 
 ```csharp
 private static async Task ProcessRepositories()
@@ -188,11 +191,11 @@ After you've configured the <xref:System.Net.Http.HttpClient>, you make a web re
 this first version, you use the <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=nameWithType> convenience method. This convenience method
 starts a task that makes the web request, and then when the request returns, it reads the
 response stream and extracts the content from the stream. The body of the response is returned
-as a <xref:System.String>. The string is available when the task completes. 
+as a <xref:System.String>. The string is available when the task completes.
 
 The final two lines of this method await that task, and then print the response to the console.
 Build the app, and run it. The build warning is gone now, because the `ProcessRepositories` now
-does contain an `await` operator. You'll see a long display of JSON formatted text.   
+does contain an `await` operator. You'll see a long display of JSON formatted text.
 
 ## Processing the JSON Result
 
@@ -214,7 +217,7 @@ namespace WebAPIClient
         public string name;
     }
 }
-``` 
+```
 
 Put the above code in a new file called 'repo.cs'. This version of the class represents the
 simplest path to process JSON data. The class name and the member name match the names used
@@ -255,7 +258,7 @@ language that are being used in the second line above. The argument to <xref:Sys
 `await` expression. Await expressions can appear almost anywhere in your code, even though
 up to now, you've only seen them as part of an assignment statement.
 
-Secondly, the `as` operator converts from the compile time type of `object` to `List<repo>`. 
+Secondly, the `as` operator converts from the compile time type of `object` to `List<repo>`.
 The declaration of <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream)> declares that it returns an object of type <xref:System.Object?displayProperty=nameWithType>. <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream)> will return the type you specified when you constructed it (`List<repo>` in
 this tutorial). If the conversion does not succeed, the `as` operator evaluates to `null`,
 instead of throwing an exception.
@@ -283,11 +286,11 @@ Compile and run the application. It will print out the names of the repositories
 Before you add more features, let's address the `repo` type and make it follow more standard
 C# conventions. You'll do this by annotating the `repo` type with *attributes* that control how
 the JSON Serializer works. In your case, you'll use these attributes to define a mapping between
-the JSON key names and the C# class and member names. The two attributes used are the `DataContract`
-attribute and the `DataMember` attribute. By convention, all Attribute classes end in the suffix
-`Attribute`. However, you do not need to use that suffix when you apply an attribute. 
+the JSON key names and the C# class and member names. The two attributes used are the <xref:System.Runtime.Serialization.DataContractAttribute>
+and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes. By convention, all Attribute classes end in the suffix
+`Attribute`. However, you do not need to use that suffix when you apply an attribute.
 
-The `DataContract` and `DataMember` attributes are in a different library, so you'll need to add
+The <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes are in a different library, so you'll need to add
 that library to your C# project file as a dependency. Add the following line to the `<ItemGroup>` section of your project file:
 
 ```xml
@@ -297,8 +300,8 @@ that library to your C# project file as a dependency. Add the following line to 
 After you save the file, run `dotnet restore` ([see note](#dotnet-restore-note)) to retrieve this package.
 
 Next, open the `repo.cs` file. Let's change the name to use Pascal Case, and fully spell out the name
-`Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the 
-`DataContract` attribute to the class declaration. You'll set the `Name` property of the attribute
+`Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the
+<xref:System.Runtime.Serialization.DataContractAttribute> attribute to the class declaration. You'll set the `Name` property of the attribute
 to the name of the JSON nodes that map to this type:
 
 ```csharp
@@ -355,8 +358,8 @@ The compiler generates the body of the `get` and `set` accessors, as well as a p
 store the name. It would be similar to the following code that you could type by hand:
 
 ```csharp
-public string Name 
-{ 
+public string Name
+{
     get { return this._name; }
     set { this._name = value; }
 }
@@ -440,6 +443,7 @@ foreach (var repo in repositories)
     Console.WriteLine();
 }
 ```
+
 As a final step, let's add the information for the last push operation. This information is formatted in
 this fashion in the JSON response:
 
@@ -457,7 +461,7 @@ string representation of the date time in your `Repository` class:
 private string JsonDate { get; set; }
 ```
 
-The `DataMember` attribute informs the serializer that this should be processed, even though it is not
+The <xref:System.Runtime.Serialization.DataMemberAttribute> attribute informs the serializer that this should be processed, even though it is not
 a public member. Next, you need to write a public read-only property that converts the string to a
 valid <xref:System.DateTime> object, and returns that <xref:System.DateTime>:
 
@@ -476,11 +480,11 @@ Let's go over the new constructs above. The `IgnoreDataMember` attribute instruc
 that this type should not be read to or written from any JSON object. This property contains only a
 `get` accessor. There is no `set` accessor. That's how you define a *read-only* property in C#. (Yes,
 you can create *write-only* properties in C#, but their value is limited.) The <xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)>
-method parses a string and creates a <xref:System.DateTime> object using a provided date format, and adds additional 
+method parses a string and creates a <xref:System.DateTime> object using a provided date format, and adds additional
 metadata to the `DateTime` using a `CultureInfo` object. If the parse operation fails, the
 property accessor throws an exception.
 
-To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` statements 
+To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` statements
 in `repo.cs`:
 
 ```csharp
@@ -495,7 +499,7 @@ Console.WriteLine(repo.LastPush);
 ```
 
 Your version should now match the [finished sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient).
- 
+
 ## Conclusion
 
 This tutorial showed you how to make web requests, parse the result, and display properties of
@@ -503,4 +507,5 @@ those results. You've also added new packages as dependencies in your project. Y
 the features of the C# language that support object-oriented techniques.
 
 <a name="dotnet-restore-note"></a>
+
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

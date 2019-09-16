@@ -26,14 +26,15 @@ The `xml:space` attribute is an XML-defined attribute that declares the signific
 ## Remarks  
  The definition for the `xml:space` attribute in XAML including its two possible values is derived from `xml:space` as defined as a "special attribute" by W3C specifications for XML.  
   
- The default value of the `xml:space` attribute is the literal value `"default"`. For the value `"default"`, or if `xml:space` is not indicated at all, the behavior of significant white-space parsing is the default handling, as defined in the topic [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+ The default value of the `xml:space` attribute is the literal value `"default"`. For the value `"default"`, or if `xml:space` is not indicated at all, the behavior of significant white-space parsing is the default handling, as defined in the topic [White-space processing in XAML](whitespace-processing-in-xaml.md).  
   
  To preserve white space within object element content, specify `xml:space="preserve"` on that object element.  
   
  Under most interpretations, the `xml:space` attribute effects and the value of the attribute are scoped to child elements.  
   
- For a complete discussion of white-space processing in XAML, see [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+ For a complete discussion of white-space processing in XAML, see [White-space processing in XAML](whitespace-processing-in-xaml.md).  
   
 ## See also
-- [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)
-- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+
+- [White-space processing in XAML](whitespace-processing-in-xaml.md)
+- [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)

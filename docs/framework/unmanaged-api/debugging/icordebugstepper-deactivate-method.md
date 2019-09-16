@@ -23,7 +23,7 @@ Causes this ICorDebugStepper to cancel the last step command that it received.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Deactivate ();  
 ```  
   

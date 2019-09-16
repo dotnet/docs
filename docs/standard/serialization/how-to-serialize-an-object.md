@@ -13,15 +13,15 @@ ms.assetid: a1207d05-32b2-4953-8582-959607991227
 To serialize an object, first create the object that is to be serialized and set its public properties and fields. To do this, you must determine the transport format in which the XML stream is to be stored, either as a stream or as a file. For example, if the XML stream must be saved in a permanent form, create a <xref:System.IO.FileStream> object.  
   
 > [!NOTE]
->  For more examples of XML serialization, see [Examples of XML Serialization](../../../docs/standard/serialization/examples-of-xml-serialization.md).  
+> For more examples of XML serialization, see [Examples of XML Serialization](../../../docs/standard/serialization/examples-of-xml-serialization.md).  
   
 ### To serialize an object  
   
-1.  Create the object and set its public fields and properties.  
+1. Create the object and set its public fields and properties.  
   
-2.  Construct a <xref:System.Xml.Serialization.XmlSerializer> using the type of the object. For more information, see the <xref:System.Xml.Serialization.XmlSerializer> class constructors.  
+2. Construct a <xref:System.Xml.Serialization.XmlSerializer> using the type of the object. For more information, see the <xref:System.Xml.Serialization.XmlSerializer> class constructors.  
   
-3.  Call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method to generate either an XML stream or a file representation of the object's public properties and fields. The following example creates a file.  
+3. Call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method to generate either an XML stream or a file representation of the object's public properties and fields. The following example creates a file.  
   
     ```vb  
     Dim myObject As MySerializableClass = New MySerializableClass()  

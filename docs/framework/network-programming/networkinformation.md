@@ -18,6 +18,7 @@ The <xref:System.Net.NetworkInformation> namespace enables you to gather informa
  You can use the <xref:System.Net.NetworkInformation.Ping> class to determine whether a Remote Host is up, on the network, and reachable. For more information, see [How to: Ping a Host](../../../docs/framework/network-programming/how-to-ping-a-host.md).  
   
 ## See also
+
 - [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
 - [Network Information Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179564)
 - [NetStat Tool Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179562)

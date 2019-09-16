@@ -27,28 +27,29 @@ ms.assetid: 426df8cb-6337-4262-b2c0-b96c2edf21a9
 ### Named Pipe Transport  
  The following items are used with the named pipe transport:  
   
--   The named pipe transport is intended for use only on the local machine. The named pipe transport in WCF explicitly disallows cross-machine connections.  
+- The named pipe transport is intended for use only on the local machine. The named pipe transport in WCF explicitly disallows cross-machine connections.  
   
--   Named pipes cannot be used with the `Impersonate` or `Delegate` impersonation level. The named pipe cannot enforce the on-machine guarantee at these impersonation levels.  
+- Named pipes cannot be used with the `Impersonate` or `Delegate` impersonation level. The named pipe cannot enforce the on-machine guarantee at these impersonation levels.  
   
  For more information about named pipes, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
   
 ### HTTP Transport  
  The bindings that use the HTTP transport (<xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.BasicHttpBinding>) support several authentication schemes, as explained in [Understanding HTTP Authentication](../../../../docs/framework/wcf/feature-details/understanding-http-authentication.md). The impersonation level supported depends on the authentication scheme. The following items are used with the HTTP transport:  
   
--   The `Anonymous` authentication scheme ignores impersonation.  
+- The `Anonymous` authentication scheme ignores impersonation.  
   
--   The `Basic` authentication scheme supports only the `Delegate` level. All lower impersonation levels are upgraded.  
+- The `Basic` authentication scheme supports only the `Delegate` level. All lower impersonation levels are upgraded.  
   
--   The `Digest` authentication scheme supports only the `Impersonate` and `Delegate` levels.  
+- The `Digest` authentication scheme supports only the `Impersonate` and `Delegate` levels.  
   
--   The `NTLM` authentication scheme, selectable either directly or through negotiation, supports only the `Delegate` level on the local machine.  
+- The `NTLM` authentication scheme, selectable either directly or through negotiation, supports only the `Delegate` level on the local machine.  
   
--   The Kerberos authentication scheme, which can only be selected through negotiation, can be used with any supported impersonation level.  
+- The Kerberos authentication scheme, which can only be selected through negotiation, can be used with any supported impersonation level.  
   
  For more information about the HTTP transport, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
   
 ## See also
+
 - [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
 - [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)
 - [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)

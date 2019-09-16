@@ -10,7 +10,8 @@ A user pressed CTRL+BREAK or another interrupt key.
   
 ## To correct this error  
   
--   Retry the operation.  
+- Retry the operation.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

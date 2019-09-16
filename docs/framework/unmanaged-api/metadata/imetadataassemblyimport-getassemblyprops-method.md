@@ -23,7 +23,7 @@ Gets the set of properties for the assembly with the specified metadata signatur
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyProps (  
     [in]  mdAssembly          mda,  
     [out] const void          **ppbPublicKey,   
@@ -37,7 +37,7 @@ HRESULT GetAssemblyProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mda`  
  [in]. The `mdAssembly` metadata token that represents the assembly for which to get the properties.  
   
@@ -75,4 +75,5 @@ HRESULT GetAssemblyProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

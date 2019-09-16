@@ -23,7 +23,7 @@ Gets a block of contiguous memory starting at the specified address, and returns
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReadVirtual(  
     [in] CORDB_ADDRESS   address,  
     [out, size_is(bytesRequested), length_is(*pBytesRead)]  
@@ -32,7 +32,7 @@ HRESULT ReadVirtual(
     [out] ULONG32 *  pBytesRead);  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] The start address of requested memory.  
   
@@ -58,6 +58,7 @@ HRESULT ReadVirtual(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorDebugDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -22,7 +22,7 @@ Contains values used to influence behavior during the generation of metadata.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSetENC {  
   
     MDSetENCOn                  = 0x00000001,  
@@ -59,4 +59,5 @@ typedef enum CorSetENC {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

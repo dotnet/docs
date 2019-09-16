@@ -22,7 +22,7 @@ Defines the product version of the common language runtime (CLR) for debugging p
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _CLR_DEBUGGING_VERSION  
 {  
     WORD wStructVersion;
@@ -56,5 +56,6 @@ typedef struct _CLR_DEBUGGING_VERSION
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

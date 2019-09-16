@@ -23,14 +23,14 @@ Gets the address range of the stack segment for this chain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackRange (  
     [out] CORDB_ADDRESS      *pStart,   
     [out] CORDB_ADDRESS      *pEnd  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStart`  
  [out] A pointer to a `CORDB_ADDRESS` value that is the starting address of the stack segment.  
   

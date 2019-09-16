@@ -33,8 +33,8 @@ void ProcessMessage(Message message) ;
 ## Scenarios  
  The Byte Stream Encoder is useful in the following scenarios.  
   
--   Transferring a JPEG image between computers using WCF. In this scenario, the image will arrive through the transport from an outside source, and the data sent will be the raw bytes that make up the image. A service will receive the binary data and display the image.  
+- Transferring a JPEG image between computers using WCF. In this scenario, the image will arrive through the transport from an outside source, and the data sent will be the raw bytes that make up the image. A service will receive the binary data and display the image.  
   
--   Reading information out of a message queue and processing it. The message will be read from a message queue manager, and passed up the message queue channel to be handled. The message queue channel will act as a queue manager in the WCF channel stack.  
+- Reading information out of a message queue and processing it. The message will be read from a message queue manager, and passed up the message queue channel to be handled. The message queue channel will act as a queue manager in the WCF channel stack.  
   
  In the case of sending a message over a message queue channel, the sender has no control over the bytes received from the queue manager. If the receiving process has no capability to read raw bytes, the message will be received as badly formatted and will not be processed; it is assumed that the receiving process will have the capability of translating the received bytes back into a usable format.

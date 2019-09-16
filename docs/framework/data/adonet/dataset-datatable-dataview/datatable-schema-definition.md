@@ -11,24 +11,25 @@ The schema, or structure, of a table is represented by columns and constraints. 
  The case-sensitivity rule does not apply if only one column, relation, or constraint  with a particular name exists. That is, if no other column, relation, or constraint object in the table matches the name of that particular column, relation, or constraint object, you may reference the object by name using any case, and no exception is thrown. For example, if the table has only **Col1**, you can reference it using **my.Columns["COL1"]**.  
   
 > [!NOTE]
->  The <xref:System.Data.DataTable.CaseSensitive%2A> property of the **DataTable** does not affect this behavior. The **CaseSensitive** property applies to the data in a table and affects sorting, searching, filtering, enforcing constraints, and so on, but not to references to the columns, relations, and constraints.  
+> The <xref:System.Data.DataTable.CaseSensitive%2A> property of the **DataTable** does not affect this behavior. The **CaseSensitive** property applies to the data in a table and affects sorting, searching, filtering, enforcing constraints, and so on, but not to references to the columns, relations, and constraints.  
   
 ## In This Section  
- [Adding Columns to a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/adding-columns-to-a-datatable.md)  
+ [Adding Columns to a DataTable](adding-columns-to-a-datatable.md)  
  Describes how to define the columns of a table using **DataColumn** objects.  
   
- [Creating Expression Columns](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/creating-expression-columns.md)  
+ [Creating Expression Columns](creating-expression-columns.md)  
  Explains how the **Expression** property of a column can be used to calculate values based on the values from other columns in the row.  
   
- [Creating AutoIncrement Columns](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/creating-autoincrement-columns.md)  
+ [Creating AutoIncrement Columns](creating-autoincrement-columns.md)  
  Describes how a column can be set to automatically increment numerical values to ensure a unique column value per row.  
   
- [Defining Primary Keys](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/defining-primary-keys.md)  
+ [Defining Primary Keys](defining-primary-keys.md)  
  Describes how to specify the primary key of a table from one or more **DataColumn** objects.  
   
- [DataTable Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-constraints.md)  
+ [DataTable Constraints](datatable-constraints.md)  
  Describes how to define foreign key and unique constraints for columns in a table.  
   
 ## See also
-- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [DataTables](datatables.md)
+- [ADO.NET Overview](../ado-net-overview.md)

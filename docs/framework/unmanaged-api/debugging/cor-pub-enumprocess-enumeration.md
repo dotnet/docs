@@ -22,7 +22,7 @@ Identifies the type of process to be enumerated.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PUB_MANAGEDONLY    = 0x00000001  
 } COR_PUB_ENUMPROCESS;  
@@ -47,4 +47,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

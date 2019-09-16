@@ -75,6 +75,7 @@ There are Expression node types that map to almost all of the syntax elements of
 C# language. Each type has specific methods for that type of language element. It's a lot
 to keep in your head at one time. Rather than try to memorize everything, here are the techniques
 I use to work with Expression trees:
+
 1. Look at the members of the `ExpressionType` enum to determine possible nodes you should be
 examining. This really helps when you want to traverse and understand an expression tree.
 2. Look at the static members of the `Expression` class to build an expression. Those methods
@@ -85,4 +86,3 @@ You'll find more as you look at each of those three areas. Invariably, you will 
 you start with one of those three steps.
  
  [Next -- Executing Expression Trees](expression-trees-execution.md)
- 

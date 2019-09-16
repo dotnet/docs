@@ -23,13 +23,13 @@ Closes the indicated enumeration and frees associated resources.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseEnum(  
     HALINKENUM hEnum  
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  Handle of enumeration to be closed.  
   
@@ -40,6 +40,7 @@ HRESULT CloseEnum(
  Requires alink.h  
   
 ## See also
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

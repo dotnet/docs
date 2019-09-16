@@ -23,13 +23,13 @@ Gets an interface pointer of type IAppDomainSetup to an <xref:System.AppDomainSe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDomainSetup (  
     [out] IUnknown** pAppDomainSetup  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomainSetup`  
  [out] An interface pointer to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. This parameter is typed as `IUnknown`, so callers should generally call `QueryInterface` on this pointer to obtain an interface pointer of type `IAppDomainSetup`.  
   
@@ -55,6 +55,7 @@ HRESULT CreateDomainSetup (
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
+
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
 - <xref:System.AppDomainSetup>

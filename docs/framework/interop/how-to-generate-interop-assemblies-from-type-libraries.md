@@ -16,7 +16,7 @@ The [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-ex
   
 ### To generate an interop assembly from a type library  
   
-1.  Use the following command:  
+1. Use the following command:  
   
      **tlbimp** \<*type-library-file*>  
   
@@ -36,5 +36,6 @@ tlbimp LoanLib.tlb /out: LOANLib.dll
 ```  
   
 ## See also
+
 - [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)
 - [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)

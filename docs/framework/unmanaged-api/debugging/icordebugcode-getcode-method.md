@@ -23,7 +23,7 @@ Gets all the code for the specified function, formatted for disassembly. This me
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode (  
     [in] ULONG32     startOffset,   
     [in] ULONG32     endOffset,  
@@ -34,7 +34,7 @@ HRESULT GetCode (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `startOffset`  
  [in] The offset of the beginning of the function.  
   
@@ -63,5 +63,5 @@ HRESULT GetCode (
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
-- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)
 
+- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)

@@ -23,7 +23,7 @@ Gets the set of properties of the manifest resource with the specified metadata 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetManifestResourceProps (  
     [in]  mdManifestResource   mdmr,   
     [out] LPWSTR               szName,   
@@ -35,7 +35,7 @@ HRESULT GetManifestResourceProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdmr`  
  [in] An `mdManifestResource` token that represents the resource for which to get the properties.  
   
@@ -67,4 +67,5 @@ HRESULT GetManifestResourceProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

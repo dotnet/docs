@@ -10,13 +10,14 @@ You lost your connection to the remote process's object library or type library.
   
 ## To correct this error  
   
-1.  Restart the `Application` object.  
+1. Restart the `Application` object.  
   
-2.  In the error dialog box through which you entered this Help topic, click **OK** to display the **References** dialog box. The lost reference appears with the word "MISSING" to its left.  
+2. In the error dialog box through which you entered this Help topic, click **OK** to display the **References** dialog box. The lost reference appears with the word "MISSING" to its left.  
   
-3.  Delete the lost reference.  
+3. Delete the lost reference.  
   
-4.  In the **References** dialog box, select the check box for the `Application` object.  
+4. In the **References** dialog box, select the check box for the `Application` object.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

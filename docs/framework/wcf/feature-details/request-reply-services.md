@@ -13,7 +13,7 @@ Request-reply services are the default type of operation contract in Windows Com
   
  To create a request-reply service contract, define your service contract, and apply the <xref:System.ServiceModel.OperationContractAttribute> class to each operation, as shown in the following sample code.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IRequestReplyCalculator  
 {  
@@ -25,5 +25,6 @@ public interface IRequestReplyCalculator
  You do not have to set the  <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `false` because this is the default behavior.  
   
 ## See also
+
 - [One-Way Services](../../../../docs/framework/wcf/feature-details/one-way-services.md)
 - [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)

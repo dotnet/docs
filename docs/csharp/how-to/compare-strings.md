@@ -65,7 +65,7 @@ weight assigned to it so that "co-op" and "coop" appear next to each other
 in sort order. In addition, some Unicode characters may be equivalent to a
 sequence of <xref:System.Char> instances. The following example uses the phrase
 "They dance in the street." in German with the "ss" (U+0073 U+0073) in one string and 'ß' (U+00DF) in another. Linguistically
-(in Windows), "ss" is equal to the German Essetz: 'ß' character in both the "en-US"
+(in Windows), "ss" is equal to the German Esszet: 'ß' character in both the "en-US"
 and "de-DE" cultures.
 
 [!code-csharp-interactive[Comparing strings using linguistic rules](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#3)]

@@ -22,7 +22,7 @@ Winres.exe is installed with Visual Studio. To run the tool, use the Developer C
 
 ## Syntax
 
-```
+```console
 winres resourceFile
 winres /?
 ```
@@ -47,7 +47,7 @@ The state of UI elements from a form in a Windows Forms project are typically st
 
 - A culture resource file can be saved as another culture resource file. For example, an English (U.S.) resource file could be saved as a Polish resource file. Typically the new file would subsequently be edited to be compatible with the new culture.
 
-Also see [Hierarchical Organization of Resources for Localization](https://msdn.microsoft.com/library/756hydy4\(v=vs.110\)) or [Hierarchical Organization of Resources for Localization](https://msdn.microsoft.com/library/756hydy4\(v=vs.120\)).
+Also see [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/756hydy4(v=vs.110)) or [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120)).
 
 Winres.exe cannot convert a .resx file into its corresponding .resources file; use the Resgen.exe tool instead. For more information about Resgen.exe, see [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md).
 
@@ -100,9 +100,9 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 
 ### To localize a .resx or .resources file associated with a form
 
-1.  Type `winres` in the developer command prompt to run Winres.exe.
+1. Type `winres` in the developer command prompt to run Winres.exe.
 
-2.  To open the default resources for a form to localize, click the **Open** command on the **File** menu and navigate to the file to open it.
+2. To open the default resources for a form to localize, click the **Open** command on the **File** menu and navigate to the file to open it.
 
      -or-
 
@@ -110,24 +110,24 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 
      The following command starts Winres.exe and loads the form associated with `TestApp.resx` in the Form Designer.
 
-    ```
+    ```console
     winres TestApp.resx
     ```
 
      The following command starts Winres.exe and loads the form associated with `TestApp.resources` in the Form Designer.
 
-    ```
+    ```console
     winres TestApp.resources
     ```
 
     > [!NOTE]
     > If the form whose resources you are editing is an inherited form, both the assembly contained the inherited form and the assembly containing the inheriting (derived) form must either be registered in the Global Assembly Cache (GAC), or must reside in the same directory as WinRes.exe. For more information about installing .NET Framework components into the GAC, see [Global Assembly Cache](../../../docs/framework/app-domains/gac.md).
 
-3.  Select controls on the form and change their <xref:System.Windows.Forms.Control.Text%2A> and other properties to reflect the localized culture and its language. Move or resize controls as necessary to accommodate the localized text.
+3. Select controls on the form and change their <xref:System.Windows.Forms.Control.Text%2A> and other properties to reflect the localized culture and its language. Move or resize controls as necessary to accommodate the localized text.
 
-4.  To save the localized version of the .resx or .resources file, click the **Save** icon or the same command on the **File** menu. The tool displays the **Select Culture** window.
+4. To save the localized version of the .resx or .resources file, click the **Save** icon or the same command on the **File** menu. The tool displays the **Select Culture** window.
 
-5.  Select the appropriate culture and file mode then click **OK**.
+5. Select the appropriate culture and file mode then click **OK**.
 
    The tool saves the file using the naming convention that the run time expects for localized resource files. For example, if you localize `TestApp.resources` for German in Germany, the tool saves the file as `TestApp.de-DE.resources`. If you localize `TestApp.resx` for German in Germany, the tool saves the file as `TestApp.de-DE.resx`. For more information about resource naming conventions, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). For a list of the predefined culture names used by the run time, see the <xref:System.Globalization.CultureInfo> class.
 
@@ -140,4 +140,4 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 - <xref:System.Resources.ResourceWriter>
 - [Tools](../../../docs/framework/tools/index.md)
 - [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
+- [Globalization and Localization](../../standard/globalization-localization/index.md)

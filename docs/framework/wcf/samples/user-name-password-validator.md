@@ -7,26 +7,26 @@ ms.assetid: 42f03841-286b-42d8-ba58-18c75422bc8e
 This sample demonstrates how to implement a custom UserNamePassword Validator. This is useful in cases where none of the built-in UserNamePassword Validation modes is appropriate for the requirements of the application; for example, when username/password pairs are stored in some external store, such as a database. This sample shows a service that has a custom validator that checks for two particular username/password pairs. The client uses such a username/password pair to authenticate to the service.
 
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\UserNamePasswordValidator`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\UserNamePasswordValidator`  
   
 > [!NOTE]
->  Because anyone can construct a Username credential that uses the username/password pairs that the custom validator accepts, the service is less secure than the default behavior provided by the standard UserNamePassword Validator. The standard UserNamePassword Validator attempts to map the provided username/password pair to a Windows account and fails authentication if this mapping fails. The custom UserNamePassword Validator in this sample MUST NOT be used in production code, it is for illustration purposes only.
+> Because anyone can construct a Username credential that uses the username/password pairs that the custom validator accepts, the service is less secure than the default behavior provided by the standard UserNamePassword Validator. The standard UserNamePassword Validator attempts to map the provided username/password pair to a Windows account and fails authentication if this mapping fails. The custom UserNamePassword Validator in this sample MUST NOT be used in production code, it is for illustration purposes only.
 
  In summary this sample demonstrates how:
 
--   The client can be authenticated using a Username Token.
+- The client can be authenticated using a Username Token.
 
--   The server validates the client credentials against a custom UserNamePasswordValidator and how to propagate custom faults from the username and password validation logic to the client.
+- The server validates the client credentials against a custom UserNamePasswordValidator and how to propagate custom faults from the username and password validation logic to the client.
 
--   The server is authenticated using the server's X.509 certificate.
+- The server is authenticated using the server's X.509 certificate.
 
- The service exposes a single endpoint for communicating with the service, defined using the configuration file, App.config. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding` that defaults to using WS-Securityand username authentication. The service behavior specifies the `Custom` mode for validating client username/password pairs along with the type of the validator class. The behavior also specifies the server certificate using the `serviceCertificate` element. The server certificate has to contain the same value for the `SubjectName` as the `findValue` in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).
+ The service exposes a single endpoint for communicating with the service, defined using the configuration file, App.config. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding` that defaults to using WS-Security and username authentication. The service behavior specifies the `Custom` mode for validating client username/password pairs along with the type of the validator class. The behavior also specifies the server certificate using the `serviceCertificate` element. The server certificate has to contain the same value for the `SubjectName` as the `findValue` in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).
 
 ```xml
 <system.serviceModel>
@@ -248,7 +248,7 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
 
  The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration.
 
--   Creating the server certificate:
+- Creating the server certificate:
 
      The following lines from the Setup.bat batch file create the server certificate to be used. The %SERVER_NAME% variable specifies the server name. Change this variable to specify your own server name. The default value is localhost.
 
@@ -262,7 +262,7 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe
     ```
 
--   Installing the server certificate into client's trusted certificate store:
+- Installing the server certificate into client's trusted certificate store:
 
      The following lines in the Setup.bat batch file copy the server certificate into the client trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the client system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft issued certificate—this step of populating the client certificate store with the server certificate is not required.
 
@@ -272,47 +272,45 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
 
 #### To set up and build the sample
 
-1.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
-2.  To run the sample in a single- or cross-machine configuration, use the following instructions.
+2. To run the sample in a single- or cross-machine configuration, use the following instructions.
 
 #### To run the sample on the same machine
 
-1.  Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
-2.  Launch Service.exe from service\bin.  
+2. Launch Service.exe from service\bin.  
   
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across machines  
   
-1.  Create a directory on the service machine for the service binaries.  
+1. Create a directory on the service machine for the service binaries.  
   
-2.  Copy the service program files the service directory on the service machine. Also copy the Setup.bat and Cleanup.bat files to the service machine.  
+2. Copy the service program files the service directory on the service machine. Also copy the Setup.bat and Cleanup.bat files to the service machine.  
   
-3.  You need a server certificate with the subject name that contains the fully-qualified domain name of the machine. The configuration file for the server must be updated to reflect this new certificate name.  
+3. You need a server certificate with the subject name that contains the fully-qualified domain name of the machine. The configuration file for the server must be updated to reflect this new certificate name.  
   
-4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You need to do this only if the server certificate is not issued by a trusted issuer.  
+4. Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You need to do this only if the server certificate is not issued by a trusted issuer.  
   
-5.  In the App.config file on the service machine, change the value of the base address to specify a fully-qualified machine name instead of localhost.  
+5. In the App.config file on the service machine, change the value of the base address to specify a fully-qualified machine name instead of localhost.  
   
-6.  On the service machine, launch Service.exe from a command prompt window.  
+6. On the service machine, launch Service.exe from a command prompt window.  
   
-7.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machine.  
+7. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machine.  
   
-8.  In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service.  
+8. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service.  
   
 9. On the client machine, launch Client.exe from a command prompt window.  
   
-10. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+10. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To clean up after the sample  
   
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample. This removes the server certificate from the certificate store.  
-  
-## See also
+1. Run Cleanup.bat in the samples folder once you have finished running the sample. This removes the server certificate from the certificate store.  

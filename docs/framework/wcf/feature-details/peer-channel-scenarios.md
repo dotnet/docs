@@ -19,4 +19,5 @@ The Peer Channel APIs support the following development scenarios.
  Using Peer Channel, application developers can create server-less versions of their games where game moves get transmitted to and synchronized with other players by a peer-to-peer mechanism rather than through a central server. For small ISVs, this helps remove operational costs associated with deploying, maintaining, and servicing central servers. Games written using a peer-to-peer architecture can be played across the Internet, or in wired or wireless local networks. Secondary gaming activities, such as lobby and in-game chat can be developed using a peer-to-peer network.  
   
 ## See also
+
 - [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)

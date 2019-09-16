@@ -23,7 +23,7 @@ Gets a custom attribute based upon its name. Unlike metadata custom attributes, 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymAttribute (  
     [in]  mdToken  parent,  
     [in]  WCHAR    *name,  
@@ -33,7 +33,7 @@ HRESULT GetSymAttribute (
         length_is (*pcBuffer)] BYTE buffer[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The metadata token for the object for which the attribute is requested.  
   
@@ -50,10 +50,11 @@ HRESULT GetSymAttribute (
  [out] A pointer to the variable that receives the attribute data.  
   
 ## Return Value  
- S_OK if the method succeeds; otherwise, E_FAIL or some other error code..  
+ S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

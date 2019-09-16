@@ -9,32 +9,33 @@ ms.author: "ronpet"
 Supports the Authenticode XrML license creation and verification module.  
   
 ## In This Section  
- [_AxlGetIssuerPublicKeyHash Function](../../../../docs/framework/unmanaged-api/authenticode/axlgetissuerpublickeyhash-function.md)  
+ [_AxlGetIssuerPublicKeyHash Function](axlgetissuerpublickeyhash-function.md)  
  Retrieves the SHA-1 hash of the public key associated with the private key that is used to sign the specified certificate.  
   
- [_AxlPublicKeyBlobToPublicKeyToken Function](../../../../docs/framework/unmanaged-api/authenticode/axlpublickeyblobtopublickeytoken-function.md)  
+ [_AxlPublicKeyBlobToPublicKeyToken Function](axlpublickeyblobtopublickeytoken-function.md)  
  Computes the strong name public key token from a CSP PUBLICKEYBLOB format.  
   
- [_AxlRSAKeyValueToPublicKeyToken Function](../../../../docs/framework/unmanaged-api/authenticode/axlrsakeyvaluetopublickeytoken-function.md)  
+ [_AxlRSAKeyValueToPublicKeyToken Function](axlrsakeyvaluetopublickeytoken-function.md)  
  Converts a Modulus and Exponent to a strong name public key token.  
   
- [CertFreeAuthenticodeSignerInfo Function](../../../../docs/framework/unmanaged-api/authenticode/certfreeauthenticodesignerinfo-function.md)  
+ [CertFreeAuthenticodeSignerInfo Function](certfreeauthenticodesignerinfo-function.md)  
  Frees resources allocated for the AXL_AUTHENTICODE_SIGNER_INFO structure.  
   
- [CertFreeAuthenticodeTimestamperInfo Function](../../../../docs/framework/unmanaged-api/authenticode/certfreeauthenticodetimestamperinfo-function.md)  
+ [CertFreeAuthenticodeTimestamperInfo Function](certfreeauthenticodetimestamperinfo-function.md)  
  Frees resources allocated for the AXL_AUTHENTICODE_TIMESTAMPER_INFO structure.  
   
- [CertTimestampAuthenticodeLicense Function](../../../../docs/framework/unmanaged-api/authenticode/certtimestampauthenticodelicense-function.md)  
+ [CertTimestampAuthenticodeLicense Function](certtimestampauthenticodelicense-function.md)  
  Time stamps an Authenticode XrML license created by CertCreateAuthenticodeLicense.  
   
- [CertVerifyAuthenticodeLicense Function](../../../../docs/framework/unmanaged-api/authenticode/certverifyauthenticodelicense-function.md)  
+ [CertVerifyAuthenticodeLicense Function](certverifyauthenticodelicense-function.md)  
  Verifies the validity of an Authenticode XrML license.  
   
- [AXL_AUTHENTICODE_SIGNER_INFO Structure](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-signer-info-structure.md)  
+ [AXL_AUTHENTICODE_SIGNER_INFO Structure](axl-authenticode-signer-info-structure.md)  
  Defines the Authenticode signer information.  
   
- [AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-timestamper-info-structure.md)  
+ [AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure](axl-authenticode-timestamper-info-structure.md)  
  Defines the Authenticode time stamper information.  
   
 ## See also
-- [Unmanaged API Reference](../../../../docs/framework/unmanaged-api/index.md)
+
+- [Unmanaged API Reference](../index.md)

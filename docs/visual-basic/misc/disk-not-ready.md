@@ -10,9 +10,10 @@ For the specified drive, either there is no disk or the drive door is open.
   
 ## To correct this error  
   
-1.  Check the specified drive and insert a disk if necessary.  
+1. Check the specified drive and insert a disk if necessary.  
   
-2.  Close the drive door.  
+2. Close the drive door.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

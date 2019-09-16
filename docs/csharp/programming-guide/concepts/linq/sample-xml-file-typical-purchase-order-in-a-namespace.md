@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Typical Purchase Order in a Namespace1"
+title: "Sample XML File: Typical Purchase Order in a Namespace"
 ms.date: 07/20/2015
 ms.assetid: 84dc3339-ea32-4ccc-9af6-ab38ddfecced
 ---
@@ -47,7 +47,4 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
   </aw:Items>  
 </aw:PurchaseOrder>  
 ```  
-  
-## See also
-
-- [Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+ 

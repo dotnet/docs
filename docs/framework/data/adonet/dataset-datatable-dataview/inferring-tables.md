@@ -6,11 +6,11 @@ ms.assetid: 74a288d4-b8e9-4f1a-b2cd-10df92c1ed1f
 # Inferring Tables
 When inferring a schema for a <xref:System.Data.DataSet> from an XML document, ADO.NET first determines which XML elements represent tables. The following XML structures result in a table for the **DataSet** schema:  
   
--   Elements with attributes  
+- Elements with attributes  
   
--   Elements with child elements  
+- Elements with child elements  
   
--   Repeating elements  
+- Repeating elements  
   
 ## Elements with Attributes  
  Elements that have attributes specified in them result in inferred tables. For example, consider the following XML:  
@@ -113,9 +113,10 @@ When inferring a schema for a <xref:System.Data.DataSet> from an XML document, A
 |Text2|  
   
 ## See also
-- [Inferring DataSet Relational Structure from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md)
-- [Loading a DataSet from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md)
-- [Loading DataSet Schema Information from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-dataset-schema-information-from-xml.md)
-- [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Inferring DataSet Relational Structure from XML](inferring-dataset-relational-structure-from-xml.md)
+- [Loading a DataSet from XML](loading-a-dataset-from-xml.md)
+- [Loading DataSet Schema Information from XML](loading-dataset-schema-information-from-xml.md)
+- [Using XML in a DataSet](using-xml-in-a-dataset.md)
+- [DataSets, DataTables, and DataViews](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

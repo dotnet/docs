@@ -54,7 +54,6 @@ The ref return value is an alias to another variable in the called method's scop
 - If you pass it to another method *by reference*, you are passing a reference to the variable it aliases.
 - When you make a [ref local](#ref-locals) alias, you make a new alias to the same variable.
 
-
 ## Ref locals
 
 Assume the `GetContactInformation` method is declared as a ref return:

@@ -22,7 +22,7 @@ Provides information to a debugger about a thread. For more information, see the
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct tagUSER_THREAD  
 {  
     BYTE    *pSidBuffer;  
@@ -43,5 +43,6 @@ typedef struct tagUSER_THREAD
  **Header:** ProtocolNotify2.idl  
   
 ## See also
+
 - [SetNotifyFilter Method](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-setnotifyfilter-method.md)
 - [Diagnostics Symbol Store Structures](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)

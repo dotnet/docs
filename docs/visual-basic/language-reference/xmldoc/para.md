@@ -15,7 +15,7 @@ Specifies that the content is formatted as a paragraph.
 <para>content</para>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text of the paragraph.  
   
@@ -27,7 +27,8 @@ Specifies that the content is formatted as a paragraph.
 ## Example  
  This example uses the `<para>` tag to split the remarks section for the `UpdateRecord` method into two paragraphs.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/para_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

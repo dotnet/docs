@@ -25,7 +25,7 @@ Initializes the common language runtime (CLR), locates the managed entry point i
   
 ## Syntax  
   
-```  
+```cpp  
 __int32 STDMETHODCALLTYPE _CorExeMain ();  
 ```  
   
@@ -48,4 +48,5 @@ __int32 STDMETHODCALLTYPE _CorExeMain ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

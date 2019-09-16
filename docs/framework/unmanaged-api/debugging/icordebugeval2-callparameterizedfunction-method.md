@@ -23,7 +23,7 @@ Sets up a call to the specified ICorDebugFunction, which can be nested inside a 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CallParameterizedFunction (  
     [in] ICorDebugFunction     *pFunction,  
     [in] ULONG32               nTypeArgs,  
@@ -33,7 +33,7 @@ HRESULT CallParameterizedFunction (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFunction`  
  [in] A pointer to an `ICorDebugFunction` object that represents the function to be called.  
   

@@ -23,14 +23,14 @@ Notifies the debugger that a class has been loaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadClass (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugClass     *c  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain into which the class has been loaded.  
   
@@ -52,5 +52,6 @@ HRESULT LoadClass (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [UnloadClass Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-unloadclass-method.md)
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

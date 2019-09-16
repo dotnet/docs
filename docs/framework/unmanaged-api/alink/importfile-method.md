@@ -22,7 +22,7 @@ Imports assemblies and unbound modules.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImportFile(  
     LPCWSTR pszFilename,  
     LPCWSTR pszTargetName,  
@@ -33,7 +33,7 @@ HRESULT ImportFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFilename`  
  Fully qualified name of file to be imported.  
   
@@ -47,7 +47,7 @@ HRESULT ImportFile(
  Pointer to token where a unique file ID will be stored. The file can be an assembly or a file.  
   
  `ppAssemblyScope`  
- Receives pointer to [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md). Can be NULL if the file is not an assembly.  
+ Receives pointer to [IMetaDataAssemblyImport Interface](../metadata/imetadataassemblyimport-interface.md). Can be NULL if the file is not an assembly.  
   
  `pdwCountOfScopes`  
  Pointer to the count of files and/or scopes that have been imported.  
@@ -59,6 +59,7 @@ HRESULT ImportFile(
  Requires alink.h  
   
 ## See also
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

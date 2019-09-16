@@ -39,13 +39,13 @@ The `EndInvoke` method retrieves the results of the asynchronous call. It can be
 
 The code examples in this topic demonstrate four common ways to use `BeginInvoke` and `EndInvoke` to make asynchronous calls. After calling `BeginInvoke` you can do the following:
 
--   Do some work and then call `EndInvoke` to block until the call completes.
+- Do some work and then call `EndInvoke` to block until the call completes.
 
--   Obtain a <xref:System.Threading.WaitHandle> using the <xref:System.IAsyncResult.AsyncWaitHandle%2A?displayProperty=nameWithType> property, use its <xref:System.Threading.WaitHandle.WaitOne%2A> method to block execution until the <xref:System.Threading.WaitHandle> is signaled, and then call `EndInvoke`.
+- Obtain a <xref:System.Threading.WaitHandle> using the <xref:System.IAsyncResult.AsyncWaitHandle%2A?displayProperty=nameWithType> property, use its <xref:System.Threading.WaitHandle.WaitOne%2A> method to block execution until the <xref:System.Threading.WaitHandle> is signaled, and then call `EndInvoke`.
 
--   Poll the <xref:System.IAsyncResult> returned by `BeginInvoke` to determine when the asynchronous call has completed, and then call `EndInvoke`.
+- Poll the <xref:System.IAsyncResult> returned by `BeginInvoke` to determine when the asynchronous call has completed, and then call `EndInvoke`.
 
--   Pass a delegate for a callback method to `BeginInvoke`. The method is executed on a <xref:System.Threading.ThreadPool> thread when the asynchronous call completes. The callback method calls `EndInvoke`.
+- Pass a delegate for a callback method to `BeginInvoke`. The method is executed on a <xref:System.Threading.ThreadPool> thread when the asynchronous call completes. The callback method calls `EndInvoke`.
 
 > [!IMPORTANT]
 > No matter which technique you use, always call `EndInvoke` to complete your asynchronous call.
@@ -95,11 +95,11 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
 
  Notes on the example:
 
--   The `threadId` parameter of `TestMethod` is an `out` parameter ([`<Out>` `ByRef` in Visual Basic), so its input value is never used by `TestMethod`. A dummy variable is passed to the `BeginInvoke` call. If the `threadId` parameter were a `ref` parameter (`ByRef` in Visual Basic), the variable would have to be a class-level field so that it could be passed to both `BeginInvoke` and `EndInvoke`.
+- The `threadId` parameter of `TestMethod` is an `out` parameter ([`<Out>` `ByRef` in Visual Basic), so its input value is never used by `TestMethod`. A dummy variable is passed to the `BeginInvoke` call. If the `threadId` parameter were a `ref` parameter (`ByRef` in Visual Basic), the variable would have to be a class-level field so that it could be passed to both `BeginInvoke` and `EndInvoke`.
 
--   The state information that is passed to `BeginInvoke` is a format string, which the callback method uses to format an output message. Because it is passed as type <xref:System.Object>, the state information must be cast to its proper type before it can be used.
+- The state information that is passed to `BeginInvoke` is a format string, which the callback method uses to format an output message. Because it is passed as type <xref:System.Object>, the state information must be cast to its proper type before it can be used.
 
--   The callback is made on a <xref:System.Threading.ThreadPool> thread. <xref:System.Threading.ThreadPool> threads are background threads, which do not keep the application running if the main thread ends, so the main thread of the example has to sleep long enough for the callback to finish.
+- The callback is made on a <xref:System.Threading.ThreadPool> thread. <xref:System.Threading.ThreadPool> threads are background threads, which do not keep the application running if the main thread ends, so the main thread of the example has to sleep long enough for the callback to finish.
 
  [!code-cpp[AsyncDelegateExamples#5](../../../samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/callback.cpp#5)]
  [!code-csharp[AsyncDelegateExamples#5](../../../samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/callback.cs#5)]

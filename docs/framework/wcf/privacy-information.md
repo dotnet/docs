@@ -23,7 +23,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  The WCF messaging layer does not write any personal information to the local machine. However, it might propagate personal information at the network level if a service developer has created a service that exposes such information (for example, by using a person's name in an endpoint name, or including personal information in the endpoint's Web Services Description Language but not requiring clients to use https to access the WSDL). Also, if a developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool against an endpoint that exposes personal information, the tool's output could contain that information, and the output file is written to the local hard disk.  
   
 ## Hosting  
- The hosting feature in WCF allows applications to start on demand or to enable port sharing between multiple applications. An WCF application can be hosted in Internet Information Services (IIS), similar to [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)].  
+ The hosting feature in WCF allows applications to start on demand or to enable port sharing between multiple applications. An WCF application can be hosted in Internet Information Services (IIS), similar to ASP.NET.  
   
  Hosting does not expose any specific information on the network and it does not keep data on the machine.  
   
@@ -32,16 +32,16 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  Authentication is performed by passing credentials between the clients and services. Authentication can be either through transport-level security or through SOAP message-level security, as follows:  
   
--   In SOAP message security, authentication is performed through credentials like username/passwords, X.509 certificates, Kerberos tickets, and SAML tokens, all of which might contain personal information, depending on the issuer.  
+- In SOAP message security, authentication is performed through credentials like username/passwords, X.509 certificates, Kerberos tickets, and SAML tokens, all of which might contain personal information, depending on the issuer.  
   
--   Using transport security, authentication is done through traditional transport authentication mechanisms like HTTP authentication schemes (Basic, Digest, Negotiate, Integrated Windows Authorization, NTLM, None, and Anonymous), and form authentication.  
+- Using transport security, authentication is done through traditional transport authentication mechanisms like HTTP authentication schemes (Basic, Digest, Negotiate, Integrated Windows Authorization, NTLM, None, and Anonymous), and form authentication.  
   
  Authentication can result in a secure session established between the communicating endpoints. The session is identified by a GUID that lasts the lifetime of the security session. The following table shows what is kept and where.  
   
 |Data|Storage|  
 |----------|-------------|  
 |Presentation credentials, such as username, X.509 certificates, Kerberos tokens, and references to credentials.|Standard Windows credential management mechanisms such as the Windows certificate store.|  
-|User membership information, such as usernames and passwords.|[!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] membership providers.|  
+|User membership information, such as usernames and passwords.|ASP.NET membership providers.|  
 |Identity information about the service used to authenticate the service to clients.|Endpoint address of the service.|  
 |Caller information.|Auditing logs.|  
   
@@ -396,5 +396,6 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  The Web Services Description Language (WSDL) contains a definition of the port. Each port has an endpoint address and a binding that represents the services used by the application. Exposing WSDL can be turned off using configuration. No information is retained on the machine.  
   
 ## See also
-- [Windows Communication Foundation](https://msdn.microsoft.com/library/fd327ade-0260-4c40-adbe-b74645ba3277)
+
+- [Windows Communication Foundation](index.md)
 - [Security](../../../docs/framework/wcf/feature-details/security.md)

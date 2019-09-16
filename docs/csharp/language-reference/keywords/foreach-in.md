@@ -1,6 +1,6 @@
 ---
 title: C# foreach statement
-ms.date: 06/29/2018
+ms.date: 05/17/2019
 f1_keywords:
   - "foreach"
   - "foreach_CSharpKeyword"
@@ -21,6 +21,8 @@ Beginning with C# 7.3, if the enumerator's `Current` property returns a [referen
 
 At any point within the `foreach` statement block, you can break out of the loop by using the [break](break.md) statement, or step to the next iteration in the loop by using the [continue](continue.md) statement. You also can exit a `foreach` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
 
+If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceException> is thrown. If the source collection of the `foreach` statement is empty, the body of the `foreach` loop is not executed and skipped.
+
 ## Examples
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
@@ -31,11 +33,11 @@ The following example shows usage of the `foreach` statement with an instance of
 
 The next example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
 
-[!code-csharp-interactive[span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#2)]
+[!code-csharp[span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#2)]
 
 The following example uses a `ref` iteration variable to set the value of each item in a stackalloc array. The `ref readonly` version iterates the collection to print all the values. The `readonly` declaration uses an implicit local variable declaration. Implicit variable declarations can be used with either `ref` or `ref readonly` declarations, as can explicitly typed variable declarations.
 
-[!code-csharp-interactive[ref span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#RefSpan)]
+[!code-csharp[ref span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#RefSpan)]
 
 ## C# language specification
 
@@ -46,6 +48,5 @@ For more information, see [The foreach statement](~/_csharplang/spec/statements.
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Iteration Statements](iteration-statements.md)
 - [Using foreach with arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
 - [for statement](for.md)

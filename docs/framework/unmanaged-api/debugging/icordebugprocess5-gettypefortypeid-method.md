@@ -23,14 +23,14 @@ Converts a type identifier to an ICorDebugType value.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeForTypeID(  
     [in] COR_TYPEID id, [  
     out] ICorDebugType **ppType  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [in] The type identifier.  
   
@@ -50,5 +50,6 @@ HRESULT GetTypeForTypeID(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

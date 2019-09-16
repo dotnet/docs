@@ -23,7 +23,7 @@ This method supports the .NET Framework infrastructure and is not intended to be
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateLogicalThreadState ( );  
 ```  
   
@@ -37,4 +37,5 @@ HRESULT CreateLogicalThreadState ( );
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

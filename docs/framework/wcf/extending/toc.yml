@@ -1,0 +1,146 @@
+- name: Extending WCF
+  href: index.md
+  items:
+  - name: Extending ServiceHost and the Service Model Layer
+    href: extending-servicehost-and-the-service-model-layer.md
+    items:
+    - name: Extending Clients
+      href: extending-clients.md
+      items:
+      - name: "How to: Inspect or Modify Messages on the Client"
+        href: how-to-inspect-or-modify-messages-on-the-client.md
+      - name: "How to: Inspect or Modify Parameters"
+        href: how-to-inspect-or-modify-parameters.md
+    - name: Extending Dispatchers
+      href: extending-dispatchers.md
+      items:
+      - name: "How to: Inspect and Modify Messages on the Service"
+        href: how-to-inspect-and-modify-messages-on-the-service.md
+      - name: "How to: Lock Down Endpoints in the Enterprise"
+        href: how-to-lock-down-endpoints-in-the-enterprise.md
+    - name: Extensible Objects
+      href: extensible-objects.md
+    - name: Configuring and Extending the Runtime with Behaviors
+      href: configuring-and-extending-the-runtime-with-behaviors.md
+    - name: Extending Hosting Using ServiceHostFactory
+      href: extending-hosting-using-servicehostfactory.md
+  - name: Extending Bindings
+    href: extending-bindings.md
+    items:
+    - name: Bindings and Binding Elements
+      href: bindings-and-binding-elements.md
+    - name: Custom Bindings
+      href: custom-bindings.md
+      items:
+      - name: "How to: Customize a System-Provided Binding"
+        href: how-to-customize-a-system-provided-binding.md
+    - name: Creating User-Defined Bindings
+      href: creating-user-defined-bindings.md
+  - name: Extending the Channel Layer
+    href: extending-the-channel-layer.md
+    items:
+    - name: Channel Model Overview
+      href: channel-model-overview.md
+      items:
+      - name: Client Channel-Level Programming
+        href: client-channel-level-programming.md
+      - name: Service Channel-Level Programming
+        href: service-channel-level-programming.md
+      - name: Understanding State Changes
+        href: understanding-state-changes.md
+      - name: Choosing a Message Exchange Pattern
+        href: choosing-a-message-exchange-pattern.md
+      - name: Handling Exceptions and Faults
+        href: handling-exceptions-and-faults.md
+    - name: Developing Channels
+      href: developing-channels.md
+      items:
+      - name: "Service: Channel Listeners and Channels"
+        href: service-channel-listeners-and-channels.md
+      - name: "Client: Channel Factories and Channels"
+        href: client-channel-factories-and-channels.md
+      - name: Creating a BindingElement
+        href: creating-a-bindingelement.md
+      - name: Configuration and Metadata Support
+        href: configuration-and-metadata-support.md
+    - name: Custom Encoders
+      href: custom-encoders.md
+    - name: Custom Stream Upgrades
+      href: custom-stream-upgrades.md
+  - name: Extending Security
+    href: extending-security.md
+    items:
+    - name: Specifying a Custom Crypto Algorithm
+      href: specifying-a-custom-crypto-algorithm.md
+    - name: Custom Credential and Credential Validation
+      href: custom-credential-and-credential-validation.md
+      items:
+      - name: "Walkthrough: Creating Custom Client and Service Credentials"
+        href: walkthrough-creating-custom-client-and-service-credentials.md
+      - name: "How to: Create a Service that Employs a Custom Certificate Validator"
+        href: how-to-create-a-service-that-employs-a-custom-certificate-validator.md
+      - name: "How to: Create a Custom Security Token Provider"
+        href: how-to-create-a-custom-security-token-provider.md
+      - name: "How to: Create a Custom Security Token Authenticator"
+        href: how-to-create-a-custom-security-token-authenticator.md
+    - name: Custom Tokens
+      href: custom-tokens.md
+      items:
+      - name: "How to: Create a Custom Token"
+        href: how-to-create-a-custom-token.md
+    - name: Custom Authorization
+      href: custom-authorization.md
+      items:
+      - name: "How to: Create a Custom Authorization Policy"
+        href: how-to-create-a-custom-authorization-policy.md
+      - name: "How to: Create a Custom Authorization Manager for a Service"
+        href: how-to-create-a-custom-authorization-manager-for-a-service.md
+      - name: "How to: Create a Custom Claim"
+        href: how-to-create-a-custom-claim.md
+      - name: "How to: Compare Claims"
+        href: how-to-compare-claims.md
+      - name: "How to: Create a Custom Principal Identity"
+        href: how-to-create-a-custom-principal-identity.md
+    - name: Overriding the Identity of a Service for Authentication
+      href: overriding-the-identity-of-a-service-for-authentication.md
+    - name: "How to: Create a Custom Client Identity Verifier"
+      href: how-to-create-a-custom-client-identity-verifier.md
+    - name: "How to: Use Separate X.509 Certificates for Signing and Encryption"
+      href: how-to-use-separate-x-509-certificates-for-signing-and-encryption.md
+    - name: "How to: Change the Cryptographic Provider for an X.509 Certificate's Private Key"
+      href: change-cryptographic-provider-x509-certificate-private-key.md
+  - name: Extending the Metadata System
+    href: extending-the-metadata-system.md
+    items:
+    - name: Exporting Custom Metadata for a WCF Extension
+      href: exporting-custom-metadata-for-a-wcf-extension.md
+      items:
+      - name: "How to: Export Custom WSDL"
+        href: how-to-export-custom-wsdl.md
+      - name: "How to: Export Custom Policy Assertions"
+        href: how-to-export-custom-policy-assertions.md
+    - name: Importing Custom Metadata for a WCF Extension
+      href: importing-custom-metadata-for-a-wcf-extension.md
+      items:
+      - name: "How to: Import Custom WSDL"
+        href: how-to-import-custom-wsdl.md
+      - name: "How to: Import Custom Policy Assertions"
+        href: how-to-import-custom-policy-assertions.md
+      - name: "How to: Write an Extension for the ServiceContractGenerator"
+        href: how-to-write-an-extension-for-the-servicecontractgenerator.md
+    - name: Publishing and Retrieving Metadata Over a Custom Binding
+      href: publishing-and-retrieving-metadata-over-a-custom-binding.md
+      items:
+      - name: WS-MetadataExchange Bindings
+        href: ws-metadataexchange-bindings.md
+      - name: "How to: Configure a Custom WS-Metadata Exchange Binding"
+        href: how-to-configure-a-custom-ws-metadata-exchange-binding.md
+      - name: "How to: Retrieve Metadata Over a non-MEX Binding"
+        href: how-to-retrieve-metadata-over-a-non-mex-binding.md
+  - name: Extending Encoders and Serializers
+    href: extending-encoders-and-serializers.md
+    items:
+    - name: Data Contract Surrogates
+      href: data-contract-surrogates.md
+    - name: Custom Message Formatters
+      href: custom-message-formatters.md

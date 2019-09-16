@@ -23,7 +23,7 @@ Gets a binary representation of the assembly image at the specified memory addre
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameGetBlobFromImage (  
     [in]  BYTE        *pbBase,  
     [in]  DWORD       dwLength,  
@@ -32,7 +32,7 @@ HRESULT StrongNameGetBlobFromImage (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbBase`  
  [in] The memory address of the mapped assembly manifest.  
   
@@ -58,5 +58,6 @@ HRESULT StrongNameGetBlobFromImage (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [StrongNameGetBlob Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetblob-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

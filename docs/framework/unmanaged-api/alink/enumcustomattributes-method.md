@@ -23,7 +23,7 @@ Retrieves assembly-level custom attributes.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumCustomAttributes(  
     HALINKENUM hEnum,  
     mdToken tkType,  
@@ -33,7 +33,7 @@ HRESULT EnumCustomAttributes(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  Handle of enumerator.  
   
@@ -56,6 +56,7 @@ HRESULT EnumCustomAttributes(
  Requires alink.h  
   
 ## See also
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

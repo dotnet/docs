@@ -4,21 +4,21 @@ ms.date: "03/30/2017"
 ms.assetid: d4a0311d-3f78-4525-9c4b-5c93c4492f28
 ---
 # Securing Peer Channel Applications
-Like other bindings under the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)], `NetPeerTcpBinding` has security enabled by default and offers both transport- and message-based security (or both). This topic discusses these two types of security. The type of security is specified by the security mode tag in the binding specification (<xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>`Mode`).  
+Like other bindings under the WinFX, `NetPeerTcpBinding` has security enabled by default and offers both transport- and message-based security (or both). This topic discusses these two types of security. The type of security is specified by the security mode tag in the binding specification (<xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>`Mode`).  
   
 ## Transport-Based Security  
  Peer Channel supports two types of authentication credentials for securing transport, both of which require setting out the `ClientCredentialSettings.Peer` property on the associated `ChannelFactory`:  
   
--   Password. Clients use knowledge of a secret password to authenticate connections. When this credential type is used, `ClientCredentialSettings.Peer.MeshPassword` must carry a valid password and optionally an `X509Certificate2` instance.  
+- Password. Clients use knowledge of a secret password to authenticate connections. When this credential type is used, `ClientCredentialSettings.Peer.MeshPassword` must carry a valid password and optionally an `X509Certificate2` instance.  
   
--   Certificate. Specific application authentication is used. When this credential type is used, you must use a concrete implementation of <xref:System.IdentityModel.Selectors.X509CertificateValidator> in `ClientCredentialSettings.Peer.PeerAuthentication`.  
+- Certificate. Specific application authentication is used. When this credential type is used, you must use a concrete implementation of <xref:System.IdentityModel.Selectors.X509CertificateValidator> in `ClientCredentialSettings.Peer.PeerAuthentication`.  
   
 ## Message-Based Security  
  Using message security, an application can sign outgoing messages so that all receiving parties can verify the message is sent by a trusted party and that the message was not tampered with. Currently, Peer Channel supports only X.509 credential message signing.  
   
 ## Best Practices  
   
--   This section discusses the best practices for securing Peer Channel applications.  
+- This section discusses the best practices for securing Peer Channel applications.  
   
 ### Enable Security with Peer Channel Applications  
  Due to the distributed nature of the Peer Channel protocols, it is hard to enforce mesh membership, confidentiality, and privacy in an unsecured mesh. It is also important to remember to secure communication between clients and the resolver service. Under Peer Name Resolution Protocol (PNRP), use secure names to avoid spoofing and other common attacks. Secure a custom resolver service by enabling security on the connection clients use to contact the resolver service, including both message- and transport-based security.  
@@ -36,5 +36,6 @@ Like other bindings under the [!INCLUDE[vstecwinfx](../../../../includes/vstecwi
  [Peer Channel Scenarios](../../../../docs/framework/wcf/feature-details/peer-channel-scenarios.md)  
   
 ## See also
+
 - [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)
 - [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

@@ -23,7 +23,7 @@ An instance variable of a class or structure is used to access a `Shared` variab
   
 ## To correct this error  
   
--   Use the name of the class or structure that defines the `Shared` member to access it, as shown in the following example.  
+- Use the name of the class or structure that defines the `Shared` member to access it, as shown in the following example.  
   
 ```vb  
 Public Class testClass  
@@ -47,8 +47,9 @@ End Module
 ```  
   
 > [!NOTE]
->  Be alert for the effects of scope when two programming elements have the same name. In the previous example, if you declare an instance by using `Dim testClass as testClass = Nothing`, the compiler treats a call to `testClass.sayHello()` as an access of the method through the class name, and no warning occurs.  
+> Be alert for the effects of scope when two programming elements have the same name. In the previous example, if you declare an instance by using `Dim testClass as testClass = Nothing`, the compiler treats a call to `testClass.sayHello()` as an access of the method through the class name, and no warning occurs.  
   
 ## See also
+
 - [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
 - [Scope in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

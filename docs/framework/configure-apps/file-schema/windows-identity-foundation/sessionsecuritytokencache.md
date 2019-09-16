@@ -7,10 +7,11 @@ author: "BrucePerlerMS"
 # \<sessionSecurityTokenCache>
 Registers a cache for session tokens with a service or a security token handler collection.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<caches>  
-\<sessionSecurityTokenCache>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<caches>**](caches.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<sessionSecurityTokenCache>**  
   
 ## Syntax  
   
@@ -41,10 +42,10 @@ Registers a cache for session tokens with a service or a security token handler 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<caches>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/caches.md)|Registers the caches used by a service or a security token handler collection.|  
+|[\<caches>](caches.md)|Registers the caches used by a service or a security token handler collection.|  
   
 ## Example  
- The following XML shows the configuration of a custom cache for holding session security tokens (<xref:System.IdentityModel.Tokens.SessionSecurityToken>). The configuration is taken from the `ClaimsAwareWebFarm` sample. For more information about this sample, see [WIF Code Sample Index](../../../../../docs/framework/security/wif-code-sample-index.md).  
+ The following XML shows the configuration of a custom cache for holding session security tokens (<xref:System.IdentityModel.Tokens.SessionSecurityToken>). The configuration is taken from the `ClaimsAwareWebFarm` sample. For more information about this sample, see [WIF Code Sample Index](../../../security/wif-code-sample-index.md).  
   
 ```xml  
 <caches>  
@@ -56,4 +57,5 @@ Registers a cache for session tokens with a service or a security token handler 
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>

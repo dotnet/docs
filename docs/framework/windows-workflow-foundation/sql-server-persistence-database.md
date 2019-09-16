@@ -8,11 +8,12 @@ This section provides details about public database views supported by the SQL W
   
 ## In This Section  
   
--   [Persistence Database Schema](../../../docs/framework/windows-workflow-foundation/persistence-database-schema.md)  
+- [Persistence Database Schema](persistence-database-schema.md)  
   
--   [How to: Deserialize Instance Data Properties](../../../docs/framework/windows-workflow-foundation/how-to-deserialize-instance-data-properties.md)  
+- [How to: Deserialize Instance Data Properties](how-to-deserialize-instance-data-properties.md)  
   
--   [How to: Query for Non-persisted Instances](../../../docs/framework/windows-workflow-foundation/how-to-query-for-non-persisted-instances.md)  
+- [How to: Query for Non-persisted Instances](how-to-query-for-non-persisted-instances.md)  
   
 ## See also
+
 - [App Fabric SQL Server Persistence Database](https://go.microsoft.com/fwlink/?LinkID=201202&clcid=0x409)

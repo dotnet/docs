@@ -95,8 +95,9 @@ To use the `Private Protected` access modifier, you must add the following eleme
 
 For more information see [setting the Visual Basic language version](../../../language-reference/configure-language-version.md).
 
- ## Access Modifiers  
- The keywords that specify access level are called *access modifiers*. The following table compares the access modifiers.  
+## Access Modifiers  
+
+The keywords that specify access level are called *access modifiers*. The following table compares the access modifiers.  
   
 |Access modifier|Access level granted|Elements you can declare with this access level|Declaration context within which you can use this modifier|  
 |---------------------|--------------------------|-----------------------------------------------------|----------------------------------------------------------------|  
@@ -108,6 +109,7 @@ For more information see [setting the Visual Basic language version](../../../la
 |`Private Protected`|Code in the class that declares a private protected element, or code in a derived class found in the same assembly as the bas class.|Interfaces<br /><br /> Classes<br /><br /> Structures<br /><br /> Procedures<br /><br /> Properties<br /><br /> Member variables<br /><br /> Constants<br /><br /> Enumerations<br /><br /> Events<br /><br /> External declarations<br /><br /> Delegates|Class|
   
 ## See also
+
 - [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)
 - [Static](../../../../visual-basic/language-reference/modifiers/static.md)
 - [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)

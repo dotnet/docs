@@ -19,7 +19,7 @@ Accessing specific items in a Windows Forms combo box, list box, or checked list
   
 ### To access a specific item  
   
-1.  Query the `Items` collection using the index of the specific item:  
+1. Query the `Items` collection using the index of the specific item:  
   
     ```vb  
     Private Function GetItemText(i As Integer) As String  
@@ -46,7 +46,8 @@ Accessing specific items in a Windows Forms combo box, list box, or checked list
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ComboBox>
 - <xref:System.Windows.Forms.ListBox>
 - <xref:System.Windows.Forms.CheckedListBox>
-- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+- [Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)

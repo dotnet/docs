@@ -1,1 +1,0 @@
-        int[,] array6 = new int[10, 10];

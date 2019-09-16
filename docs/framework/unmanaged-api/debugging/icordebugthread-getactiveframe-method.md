@@ -23,13 +23,13 @@ Gets an interface pointer to the active (most recent) frame on this ICorDebugThr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetActiveFrame (  
     [out] ICorDebugFrame   **ppFrame  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFrame`  
  [out] A pointer to the address of an ICorDebugFrame interface object that represents a frame.  
   

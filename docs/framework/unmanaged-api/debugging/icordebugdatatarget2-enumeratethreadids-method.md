@@ -10,7 +10,7 @@ Returns a list of active thread IDs.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateThreadIDs(  
     [in] ULONG32 cThreadIds,   
     [out] ULONG32 *pcThreadIds,   
@@ -18,7 +18,7 @@ HRESULT EnumerateThreadIDs(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  cThreadIDs  
  [in] The maximum number of threads whose IDs can be returned.  
   
@@ -31,7 +31,7 @@ HRESULT EnumerateThreadIDs(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).**Header:** CorDebug.idl, CorDebug.h  
@@ -41,5 +41,6 @@ HRESULT EnumerateThreadIDs(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

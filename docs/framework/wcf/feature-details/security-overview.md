@@ -1,16 +1,17 @@
 ---
-title: "Security Overview1"
+title: "Security Overview - WCF"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Communication Foundation, security"
   - "WCF, security"
 ms.assetid: f478c80d-792d-4e7a-96bd-a2ff0b6f65f9
 ---
-# Security Overview
+
+# Windows Communication Foundation Security Overview
 Windows Communication Foundation (WCF) is a SOAP message-based distributed programming platform, and securing messages between clients and services is essential to protecting data. WCF provides a versatile and interoperable platform for exchanging secure messages based upon both the existing security infrastructure and the recognized security standards for SOAP messages.  
   
 > [!NOTE]
->  For a comprehensive guide to WCF security, see [WCF Security Guidance](https://go.microsoft.com/fwlink/?LinkID=158912).  
+> For a comprehensive guide to WCF security, see [WCF Security Guidance](https://go.microsoft.com/fwlink/?LinkID=158912).  
   
  WCF uses concepts that are familiar if you have built secure, distributed applications with existing technologies such as HTTPS, Windows integrated security, or user names and passwords to authenticate users. WCF not only integrates with existing security infrastructures, but also extends distributed security beyond Windows-only domains by using secure SOAP messages. Consider WCF an implementation of existing security mechanisms with the major advantage of using SOAP as the protocol in addition to existing protocols. For example, credentials that identify a client or a service, such as user name and password or X.509 certificates, have interoperable XML-based SOAP profiles. Using these profiles, messages are exchanged securely by taking advantage of open specifications like XML digital signatures and XML encryption. For a list of specifications, see [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md).  
   
@@ -19,27 +20,27 @@ Windows Communication Foundation (WCF) is a SOAP message-based distributed progr
 ## Windows Communication Foundation Security Benefits  
  WCF is a distributed programming platform based on SOAP messages. Using WCF, you can create applications that function as both services and service clients, creating and processing messages from an unlimited number of other services and clients. In such a distributed application, messages can flow from node to node, through firewalls, onto the Internet, and through numerous SOAP intermediaries. This introduces a variety of message security threats. The following examples illustrate some common threats that WCF security can help mitigate when exchanging messages between entities:  
   
--   Observation of network traffic to obtain sensitive information. For example, in an online-banking scenario, a client requests the transfer of funds from one account to another. A malicious user intercepts the message and, having the account number and password, later performs a transfer of funds from the compromised account.  
+- Observation of network traffic to obtain sensitive information. For example, in an online-banking scenario, a client requests the transfer of funds from one account to another. A malicious user intercepts the message and, having the account number and password, later performs a transfer of funds from the compromised account.  
   
--   Rogue entities acting as services without awareness of the client. In this scenario, a malicious user (the rogue) acts as an online service and intercepts messages from the client to obtain sensitive information. Then the rogue uses the stolen data to transfer funds from the compromised account. This attack is also known a *phishing attack*.  
+- Rogue entities acting as services without awareness of the client. In this scenario, a malicious user (the rogue) acts as an online service and intercepts messages from the client to obtain sensitive information. Then the rogue uses the stolen data to transfer funds from the compromised account. This attack is also known a *phishing attack*.  
   
--   Alteration of messages to obtain a different result than the caller intended. For example, altering the account number to which a deposit is made allows the funds to go to a rogue account.  
+- Alteration of messages to obtain a different result than the caller intended. For example, altering the account number to which a deposit is made allows the funds to go to a rogue account.  
   
--   Hacker replays in which a nuisance hacker replays the same purchase order. For example, an online bookstore receives hundreds of orders and sends the books to a customer who has not ordered them.  
+- Hacker replays in which a nuisance hacker replays the same purchase order. For example, an online bookstore receives hundreds of orders and sends the books to a customer who has not ordered them.  
   
--   Inability of a service to authenticate a client. In this case, the service cannot assure that the appropriate person performed the transaction.  
+- Inability of a service to authenticate a client. In this case, the service cannot assure that the appropriate person performed the transaction.  
   
  In summary, transfer security provides the following assurances:  
   
--   Service endpoint (respondent) authentication.  
+- Service endpoint (respondent) authentication.  
   
--   Client principal (initiator) authentication.  
+- Client principal (initiator) authentication.  
   
--   Message integrity.  
+- Message integrity.  
   
--   Message confidentiality.  
+- Message confidentiality.  
   
--   Replay detection.  
+- Replay detection.  
   
 ### Integration with Existing Security Infrastructures  
  Often, Web service deployments have existing security solutions in place, for example, Secure Sockets Layer (SSL) or the Kerberos protocol. Some take advantage of a security infrastructure that has already been deployed, such as Windows domains using Active Directory. It is often necessary to integrate with these existing technologies while evaluating and adopting newer ones.  
@@ -51,13 +52,13 @@ Windows Communication Foundation (WCF) is a SOAP message-based distributed progr
   
  Thus, in the world of Web services, where the same service might be exposed to internal corporate customers as well as to external partners or Internet customers, it is important that the infrastructure provide for integration with these existing security authentication models. WCF security supports a wide variety of credential types (authentication models) including:  
   
--   Anonymous caller.  
+- Anonymous caller.  
   
--   User name client credential.  
+- User name client credential.  
   
--   Certificate client credential.  
+- Certificate client credential.  
   
--   Windows (both Kerberos protocol and NT LanMan [NTLM]).  
+- Windows (both Kerberos protocol and NT LanMan [NTLM]).  
   
 ### Standards and Interoperability  
  In a world with large existing deployments, homogeneity is rare. Distributed computing/communications platforms need to interoperate with the technologies different vendors offer. Likewise, security must also be interoperable.  
@@ -75,9 +76,9 @@ Windows Communication Foundation (WCF) is a SOAP message-based distributed progr
 #### Transport and Message Security Modes  
  Two main mechanisms are used to implement transfer security in WCF: *transport* security mode and *message* security mode.  
   
--   *Transport security mode* uses a transport-level protocol, such as HTTPS, to achieve transfer security. Transport mode has the advantage of being widely adopted, available on many platforms, and less computationally complex. However, it has the disadvantage of securing messages only from point-to-point.  
+- *Transport security mode* uses a transport-level protocol, such as HTTPS, to achieve transfer security. Transport mode has the advantage of being widely adopted, available on many platforms, and less computationally complex. However, it has the disadvantage of securing messages only from point-to-point.  
   
--   *Message security mode*, on the other hand, uses WS-Security (and other specifications) to implement transfer security. Because the message security is applied directly to the SOAP messages and is contained inside the SOAP envelopes, together with the application data, it has the advantage of being transport protocol-independent, more extensible, and ensuring end-to-end security (versus point-to-point); it has the disadvantage of being several times slower than transport security mode because it has to deal with the XML nature of the SOAP messages.  
+- *Message security mode*, on the other hand, uses WS-Security (and other specifications) to implement transfer security. Because the message security is applied directly to the SOAP messages and is contained inside the SOAP envelopes, together with the application data, it has the advantage of being transport protocol-independent, more extensible, and ensuring end-to-end security (versus point-to-point); it has the disadvantage of being several times slower than transport security mode because it has to deal with the XML nature of the SOAP messages.  
   
  For more information about these differences, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md).  
   
@@ -92,6 +93,7 @@ Windows Communication Foundation (WCF) is a SOAP message-based distributed progr
  *Auditing* is the logging of security events to the Windows event log. You can log security-related events, such as authentication failures (or successes). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md). For programming details, see [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md).  
   
 ## See also
+
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - [Securing Services](../../../../docs/framework/wcf/securing-services.md)
 - [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)

@@ -15,8 +15,9 @@ A `Function` or `Sub` procedure declaration uses the identical procedure name an
   
 ## To correct this error  
   
--   Change the procedure name or the argument list, or remove the duplicate declaration.  
+- Change the procedure name or the argument list, or remove the duplicate declaration.  
   
 ## See also
+
 - [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
 - [Considerations in Overloading Procedures](../../../visual-basic/programming-guide/language-features/procedures/considerations-in-overloading-procedures.md)

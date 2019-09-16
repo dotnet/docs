@@ -23,13 +23,13 @@ Gets the maximum number of threads that the host can allot to service I/O reques
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMaxThreads (  
     [out] DWORD *pdwMaxIoCompletionThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwMaxIoCompletionThreads`  
  [out] A pointer to the maximum number of threads in the thread pool that the host can allot to service I/O requests.  
   
@@ -58,5 +58,6 @@ HRESULT GetMaxThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

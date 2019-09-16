@@ -22,7 +22,7 @@ Provides methods that enable developers to debug Silverlight-based applications 
   
 ## Syntax  
   
-```  
+```cpp  
 interface ICorDebugRemoteTarget  : IUnknown  
 {  
     HRESULT GetHostName (  
@@ -54,6 +54,7 @@ interface ICorDebugRemoteTarget  : IUnknown
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

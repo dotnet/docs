@@ -23,13 +23,13 @@ Notifies the profiler that an application domain has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AppDomainCreationFinished(  
     [in] AppDomainID appDomainId,  
     [in] HRESULT     hrStatus);   
 ```  
   
-#### Parameters  
+## Parameters  
  `appDomainId`  
  [in] Identifies the domain which has been created.  
   
@@ -51,4 +51,5 @@ HRESULT AppDomainCreationFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

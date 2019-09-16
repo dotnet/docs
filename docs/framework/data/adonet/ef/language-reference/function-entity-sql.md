@@ -42,10 +42,10 @@ FUNCTION function-name
  An expression that returns a reference to an entity type.  
   
  ROW **(**`row_expression`**)**  
- An expression that returns anonymous, structurally typed records from one or more values. For more information, see [ROW](../../../../../../docs/framework/data/adonet/ef/language-reference/row-entity-sql.md).  
+ An expression that returns anonymous, structurally typed records from one or more values. For more information, see [ROW](row-entity-sql.md).  
   
 ## Remarks  
- Multiple functions with the same name can be declared inline, as long as the function signatures are different. For more information, see [Function Overload Resolution](../../../../../../docs/framework/data/adonet/ef/language-reference/function-overload-resolution-entity-sql.md).  
+ Multiple functions with the same name can be declared inline, as long as the function signatures are different. For more information, see [Function Overload Resolution](function-overload-resolution-entity-sql.md).  
   
  An inline function can be called in an Entity SQL command only after it has been defined in that command. However, an inline function can be called inside another inline function either before or after the called function has been defined. In the following example, function A calls function B before function B is defined:  
   
@@ -55,9 +55,9 @@ FUNCTION function-name
   
  `A()`  
   
- For more information, see [How to: Call a User-Defined Function](https://msdn.microsoft.com/library/ad131b86-8b4e-4747-8605-d4fc64fb9d02).  
+ For more information, see [How to: Call a User-Defined Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd490951(v=vs.100)).  
   
- Functions can also be declared in the model itself. Functions declared in the model are executed in the same way as functions declared inline in the command. For more information, see [User-Defined Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/user-defined-functions-entity-sql.md).  
+ Functions can also be declared in the model itself. Functions declared in the model are executed in the same way as functions declared inline in the command. For more information, see [User-Defined Functions](user-defined-functions-entity-sql.md).  
   
 ## Example  
  The following Entity SQL command defines a function `Products` that takes an integer value to filter the returned products.  
@@ -70,5 +70,6 @@ FUNCTION function-name
  [!code-csharp[DP EntityServices Concepts 2#FUNCTION2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#function2)]  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Entity SQL Language](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Entity SQL Language](entity-sql-language.md)

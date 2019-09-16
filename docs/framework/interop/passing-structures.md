@@ -23,16 +23,16 @@ Many unmanaged functions expect you to pass, as a parameter to the function, mem
   
  The table describes the following guidelines for platform invoke declarations:  
   
--   Use a structure passed by value when the unmanaged function demands no indirection.  
+- Use a structure passed by value when the unmanaged function demands no indirection.  
   
--   Use either a structure passed by reference or a class passed by value when the unmanaged function demands one level of indirection.  
+- Use either a structure passed by reference or a class passed by value when the unmanaged function demands one level of indirection.  
   
--   Use a class passed by reference when the unmanaged function demands two levels of indirection.  
+- Use a class passed by reference when the unmanaged function demands two levels of indirection.  
   
 ## Declaring and Passing Structures  
  The following example shows how to define the `Point` and `Rect` structures in managed code, and pass the types as parameter to the **PtInRect** function in the User32.dll file. **PtInRect** has the following unmanaged signature:  
   
-```  
+```cpp
 BOOL PtInRect(const RECT *lprc, POINT pt);  
 ```  
   
@@ -53,9 +53,9 @@ Public Structure <StructLayout(LayoutKind.Explicit)> Rect
     <FieldOffset(12)> Public bottom As Integer  
 End Structure  
   
-Class Win32API      
-    Declare Auto Function PtInRect Lib "user32.dll" _  
-    (ByRef r As Rect, p As Point) As Boolean  
+Friend Class NativeMethods      
+    Friend Declare Auto Function PtInRect Lib "user32.dll" (
+        ByRef r As Rect, p As Point) As Boolean  
 End Class  
 ```  
   
@@ -76,25 +76,24 @@ public struct Rect {
     [FieldOffset(12)] public int bottom;  
 }     
   
-class Win32API {  
+internal static class NativeMethods
+{  
     [DllImport("User32.dll")]  
-    public static extern bool PtInRect(ref Rect r, Point p);  
+    internal static extern bool PtInRect(ref Rect r, Point p);  
 }  
 ```  
   
 ## Declaring and Passing Classes  
  You can pass members of a class to an unmanaged DLL function, as long as the class has a fixed member layout. The following example demonstrates how to pass members of the `MySystemTime` class, which are defined in sequential order, to the **GetSystemTime** in the User32.dll file. **GetSystemTime** has the following unmanaged signature:  
   
-```  
+```cpp
 void GetSystemTime(SYSTEMTIME* SystemTime);  
 ```  
   
  Unlike value types, classes always have at least one level of indirection.  
   
 ```vb  
-Imports System  
 Imports System.Runtime.InteropServices  
-Imports Microsoft.VisualBasic  
   
 <StructLayout(LayoutKind.Sequential)> Public Class MySystemTime  
     Public wYear As Short  
@@ -107,17 +106,17 @@ Imports Microsoft.VisualBasic
     Public wMiliseconds As Short  
 End Class  
   
-Public Class Win32  
-    Declare Auto Sub GetSystemTime Lib "Kernel32.dll"(sysTime _  
-        As MySystemTime)  
-    Declare Auto Function MessageBox Lib "User32.dll"(hWnd As IntPtr, _  
-        txt As String, caption As String, Typ As Integer) As Integer  
+Friend Class NativeMethods  
+    Friend Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (
+        sysTime As MySystemTime)  
+    Friend Declare Auto Function MessageBox Lib "User32.dll" (
+        hWnd As IntPtr, lpText As String, lpCaption As String, uType As UInteger) As Integer  
 End Class  
   
 Public Class TestPlatformInvoke      
     Public Shared Sub Main()  
         Dim sysTime As New MySystemTime()  
-        Win32.GetSystemTime(sysTime)  
+        NativeMethods.GetSystemTime(sysTime)  
   
         Dim dt As String  
         dt = "System time is:" & ControlChars.CrLf & _  
@@ -125,7 +124,7 @@ Public Class TestPlatformInvoke
               ControlChars.CrLf & "Month: " & sysTime.wMonth & _  
               ControlChars.CrLf & "DayOfWeek: " & sysTime.wDayOfWeek & _  
               ControlChars.CrLf & "Day: " & sysTime.wDay  
-        Win32.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0)        
+        NativeMethods.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0)        
     End Sub  
 End Class  
 ```  
@@ -142,13 +141,14 @@ public class MySystemTime {
     public ushort wSecond;   
     public ushort wMilliseconds;   
 }  
-class Win32API {  
+internal static class NativeMethods
+{  
     [DllImport("Kernel32.dll")]  
-    public static extern void GetSystemTime(MySystemTime st);  
+    internal static extern void GetSystemTime(MySystemTime st);  
   
-    [DllImport("user32.dll", CharSet=CharSet.Auto)]  
-     public static extern int MessageBox(IntPtr hWnd,  
-         string text, string caption, int options);  
+    [DllImport("user32.dll", CharSet = CharSet.Auto)]  
+    internal static extern int MessageBox(
+        IntPtr hWnd, string lpText, string lpCaption, uint uType);  
 }  
   
 public class TestPlatformInvoke  
@@ -156,7 +156,7 @@ public class TestPlatformInvoke
     public static void Main()  
     {  
         MySystemTime sysTime = new MySystemTime();  
-        Win32API.GetSystemTime(sysTime);  
+        NativeMethods.GetSystemTime(sysTime);  
   
         string dt;  
         dt = "System time is: \n" +  
@@ -164,13 +164,13 @@ public class TestPlatformInvoke
               "Month: " + sysTime.wMonth + "\n" +  
               "DayOfWeek: " + sysTime.wDayOfWeek + "\n" +  
               "Day: " + sysTime.wDay;  
-        Win32API.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0);  
+        NativeMethods.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0);  
     }  
 }  
 ```  
   
 ## See also
+
 - [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)
-- <xref:System.Runtime.InteropServices.StructLayoutAttribute>
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>
 - <xref:System.Runtime.InteropServices.FieldOffsetAttribute>

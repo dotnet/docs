@@ -23,14 +23,14 @@ Sets a global variable value for the relative virtual address of the field refer
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFieldRVA (   
     [in]  mdFieldDef  fd,   
     [in]  ULONG       ulRVA   
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fd`  
  [in] The token for the target field.  
   
@@ -47,5 +47,6 @@ HRESULT SetFieldRVA (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

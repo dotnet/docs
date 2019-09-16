@@ -23,7 +23,7 @@ Creates a definition for a generic type parameter, and gets a token to that gene
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineGenericParam (   
     [in]  mdToken         tk,   
     [in]  ULONG           ulParamSeq,   
@@ -35,7 +35,7 @@ HRESULT DefineGenericParam (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] An `mdTypeDef` or `mdMethodDef` token that represents the method or constructor for which to define a generic parameter.  
   
@@ -67,5 +67,6 @@ HRESULT DefineGenericParam (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

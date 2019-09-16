@@ -14,5 +14,6 @@ Id: 162
  This event indicates that Windows Process Activation (WAS) was disconnected. The event lists the HRESULT, process name and process ID.  
   
 ## See also
-- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
-- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+
+- [Event Logging](index.md)
+- [Events General Reference](events-general-reference.md)

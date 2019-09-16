@@ -31,9 +31,9 @@ A procedure or property is marked as `<CLSCompliant(True)>` when it overrides an
   
 ## To correct this error  
   
--   If you require CLS compliance, define your overloads to differ from each other in more ways than only the changes cited on this Help page.  
+- If you require CLS compliance, define your overloads to differ from each other in more ways than only the changes cited on this Help page.  
   
--   If you require that the overloads differ only by the changes cited on this Help page, remove the <xref:System.CLSCompliantAttribute> from their definitions or mark them as `<CLSCompliant(False)>`.  
+- If you require that the overloads differ only by the changes cited on this Help page, remove the <xref:System.CLSCompliantAttribute> from their definitions or mark them as `<CLSCompliant(False)>`.  
   
 ## See also
 

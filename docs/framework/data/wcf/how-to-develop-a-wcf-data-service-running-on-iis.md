@@ -12,14 +12,14 @@ ms.assetid: f6f768c5-4989-49e3-a36f-896ab4ded86e
 ---
 # How to: Develop a WCF data service running on IIS
 
-This topic shows how to use WCF Data Services to create a data service that is based on the Northwind sample database that is hosted by an ASP.NET Web application that is running on Internet Information Services (IIS). For an example of how to create the same Northwind data service as an ASP.NET Web application that runs on the ASP.NET Development Server, see the [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md).
+This topic shows how to use WCF Data Services to create a data service that is based on the Northwind sample database that is hosted by an ASP.NET Web application that is running on Internet Information Services (IIS). For an example of how to create the same Northwind data service as an ASP.NET Web application that runs on the ASP.NET Development Server, see the [WCF Data Services quickstart](quickstart-wcf-data-services.md).
 
 > [!NOTE]
 > To create the Northwind data service, you must have installed the Northwind sample database on the local computer. To download this sample database, see the download page, [Sample Databases for SQL Server](https://go.microsoft.com/fwlink/?linkid=24758).
 
- This topic shows how to create a data service by using the Entity Framework provider. Other data services providers are available. For more information, see [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md).
+This topic shows how to create a data service by using the Entity Framework provider. Other data services providers are available. For more information, see [Data Services Providers](data-services-providers-wcf-data-services.md).
 
- After you create the service, you must explicitly provide access to data service resources. For more information, see [How to: Enable Access to the Data Service](../../../../docs/framework/data/wcf/how-to-enable-access-to-the-data-service-wcf-data-services.md).
+After you create the service, you must explicitly provide access to data service resources. For more information, see [How to: Enable Access to the Data Service](how-to-enable-access-to-the-data-service-wcf-data-services.md).
 
 ## Create the ASP.NET web application that runs on IIS
 
@@ -29,7 +29,7 @@ This topic shows how to use WCF Data Services to create a data service that is b
 
 3. Select the **ASP.NET Web Application** template.
 
-1. Enter `NorthwindService` as the name of the project.
+4. Enter `NorthwindService` as the name of the project.
 
 5. Click **OK**.
 
@@ -41,13 +41,13 @@ This topic shows how to use WCF Data Services to create a data service that is b
 
 9. From the command prompt with administrator privileges, execute one of the following commands (depending on the operating system):
 
-    -   32-bit systems:
+    - 32-bit systems:
 
         ```console
         "%windir%\Microsoft.NET\Framework\v3.0\Windows Communication Foundation\ServiceModelReg.exe" -i
         ```
 
-    -   64-bit systems:
+    - 64-bit systems:
 
         ```console
         "%windir%\Microsoft.NET\Framework64\v3.0\Windows Communication Foundation\ServiceModelReg.exe" -i
@@ -57,13 +57,13 @@ This topic shows how to use WCF Data Services to create a data service that is b
 
 10. From the command prompt with administrator privileges, execute one of the following commands (depending on the operating system):
 
-    -   32-bit systems:
+    - 32-bit systems:
 
         ```console
         "%windir%\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis.exe" -i -enable
         ```
 
-    -   64-bit systems:
+    - 64-bit systems:
 
         ```console
         "%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe" -i -enable
@@ -126,11 +126,11 @@ This topic shows how to use WCF Data Services to create a data service that is b
 
 5. Connect the data model to the database by doing one of the following steps, and then click **Next**:
 
-    -   If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](https://go.microsoft.com/fwlink/?LinkId=123631). This SQL Server instance must have the Northwind sample database attached.
+    - If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](https://go.microsoft.com/fwlink/?LinkId=123631). This SQL Server instance must have the Northwind sample database attached.
 
          \- or -
 
-    -   If you have a database connection already configured to connect to the Northwind database, select that connection from the list of connections.
+    - If you have a database connection already configured to connect to the Northwind database, select that connection from the list of connections.
 
 6. On the final page of the wizard, select the check boxes for all tables in the database, and clear the check boxes for views and stored procedures.
 
@@ -153,9 +153,9 @@ This topic shows how to use WCF Data Services to create a data service that is b
 
 4. In the code for the data service, replace the comment `/* TODO: put your data source class name here */` in the definition of the class that defines the data service with the type that is the entity container of the data model, which in this case is `NorthwindEntities`. The class definition should look this the following:
 
-     [!code-csharp[Astoria Quickstart Service#ServiceDefinition](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria quickstart service/cs/northwind.svc.cs#servicedefinition)]
-     [!code-vb[Astoria Quickstart Service#ServiceDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria quickstart service/vb/northwind.svc.vb#servicedefinition)]
+     [!code-csharp[Astoria Quickstart Service#ServiceDefinition](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_quickstart_service/cs/northwind.svc.cs#servicedefinition)]
+     [!code-vb[Astoria Quickstart Service#ServiceDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_quickstart_service/vb/northwind.svc.vb#servicedefinition)]
 
 ## See also
 
-- [Exposing Your Data as a Service](../../../../docs/framework/data/wcf/exposing-your-data-as-a-service-wcf-data-services.md)
+- [Exposing Your Data as a Service](exposing-your-data-as-a-service-wcf-data-services.md)

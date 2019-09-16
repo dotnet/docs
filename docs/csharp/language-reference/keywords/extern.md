@@ -3,10 +3,10 @@ title: "extern modifier - C# Reference"
 ms.custom: seodec18
 
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "extern_CSharpKeyword"
   - "extern"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DllImport attribute"
   - "extern keyword [C#]"
 ms.assetid: 9c3f02c4-51b8-4d80-9cb2-f2b6e1ae15c7
@@ -38,48 +38,48 @@ This example illustrates a C# program that calls into a C library (a native DLL)
 
 1. Create the following C file and name it `cmdll.c`:
 
-```c
-// cmdll.c
-// Compile with: -LD
-int __declspec(dllexport) SampleMethod(int i)
-{
-  return i*10;
-}
-```
+    ```c
+    // cmdll.c
+    // Compile with: -LD
+    int __declspec(dllexport) SampleMethod(int i)
+    {
+      return i*10;
+    }
+    ```
 
 2. Open a Visual Studio x64 (or x32) Native Tools Command Prompt window from the Visual Studio installation directory and compile the `cmdll.c` file by typing **cl -LD cmdll.c** at the command prompt.
 
 3. In the same directory, create the following C# file and name it `cm.cs`:
 
-```csharp
-// cm.cs
-using System;
-using System.Runtime.InteropServices;
-public class MainClass
-{
-    [DllImport("Cmdll.dll")]
-      public static extern int SampleMethod(int x);
-
-    static void Main()
+    ```csharp
+    // cm.cs
+    using System;
+    using System.Runtime.InteropServices;
+    public class MainClass
     {
-        Console.WriteLine("SampleMethod() returns {0}.", SampleMethod(5));
+        [DllImport("Cmdll.dll")]
+          public static extern int SampleMethod(int x);
+
+        static void Main()
+        {
+            Console.WriteLine("SampleMethod() returns {0}.", SampleMethod(5));
+        }
     }
-}
-```
+    ```
 
 4. Open a Visual Studio x64 (or x32) Native Tools Command Prompt window from the Visual Studio installation directory and compile the `cm.cs` file by typing:
 
-> **csc cm.cs** (for the x64 command prompt)
-> —or—
-> **csc -platform:x86 cm.cs** (for the x32 command prompt)
+    > **csc cm.cs** (for the x64 command prompt)
+    > —or—
+    > **csc -platform:x86 cm.cs** (for the x32 command prompt)
 
-This will create the executable file `cm.exe`.
+    This will create the executable file `cm.exe`.
 
 5. Run `cm.exe`. The `SampleMethod` method passes the value 5 to the DLL file, which returns the value multiplied by 10.  The program produces the following output:
 
-```
-SampleMethod() returns 50.
-```
+    ```output
+    SampleMethod() returns 50.
+    ```
 
 ## C# language specification
 

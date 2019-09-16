@@ -8,11 +8,11 @@ Conversion methods change the type of input objects.
   
  Conversion operations in LINQ queries are useful in a variety of applications. Following are some examples:  
   
--   The <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType> method can be used to hide a type's custom implementation of a standard query operator.  
+- The <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType> method can be used to hide a type's custom implementation of a standard query operator.  
   
--   The <xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType> method can be used to enable non-parameterized collections for LINQ querying.  
+- The <xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType> method can be used to enable non-parameterized collections for LINQ querying.  
   
--   The <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType>, and <xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType> methods can be used to force immediate query execution instead of deferring it until the query is enumerated.  
+- The <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType>, and <xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType> methods can be used to force immediate query execution instead of deferring it until the query is enumerated.  
   
 ## Methods  
  The following table lists the standard query operator methods that perform data-type conversions.  
@@ -71,7 +71,7 @@ static void Cast()
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [from clause](../../../../csharp/language-reference/keywords/from-clause.md)
-- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)
-- [How to: Query an ArrayList with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [from clause](../../../language-reference/keywords/from-clause.md)
+- [LINQ Query Expressions](../../linq-query-expressions/index.md)
+- [How to: Query an ArrayList with LINQ (C#)](./how-to-query-an-arraylist-with-linq.md)

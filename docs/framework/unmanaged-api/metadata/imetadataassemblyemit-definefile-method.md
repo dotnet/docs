@@ -23,7 +23,7 @@ Creates a `File` metadata structure containing metadata for assembly referenced 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineFile (  
     [in]  LPCWSTR        szName,   
     [in]  const void     *pbHashValue,   
@@ -33,7 +33,7 @@ HRESULT DefineFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the file to be consumed.  
   
@@ -62,4 +62,5 @@ HRESULT DefineFile (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

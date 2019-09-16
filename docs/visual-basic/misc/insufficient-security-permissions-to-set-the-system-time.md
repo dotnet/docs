@@ -10,7 +10,8 @@ The security permissions are insufficient to set the system time.
   
 ## To correct this error  
   
-1.  Change the security permissions.  
+1. Change the security permissions.  
   
 ## See also
+
 - <xref:System.Security.Permissions>

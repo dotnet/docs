@@ -23,7 +23,7 @@ Moves the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debuggin
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next();  
 ```  
   
@@ -52,6 +52,7 @@ HRESULT Next();
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorDebugStackWalk Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

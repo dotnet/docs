@@ -19,7 +19,7 @@ The Management Strongly Typed Class Generator tool enables you to quickly genera
   
 ## Syntax  
   
-```  
+```console  
 mgmtclassgen   
 WMIClass [options]   
 ```  
@@ -69,19 +69,19 @@ WMIClass [options]
   
  Note the following behaviors when you generate a WMI class:  
   
--   It is possible for a standard public property or method to have the same name as an existing property or method. If this occurs, the tool changes the name of the property or method in the generated class to avoid naming conflicts.  
+- It is possible for a standard public property or method to have the same name as an existing property or method. If this occurs, the tool changes the name of the property or method in the generated class to avoid naming conflicts.  
   
--   It is possible for the name of a property or method in a generated class to be a keyword in the target programming language. If this occurs, the tool changes the name of the property or method in the generated class to avoid naming conflicts.  
+- It is possible for the name of a property or method in a generated class to be a keyword in the target programming language. If this occurs, the tool changes the name of the property or method in the generated class to avoid naming conflicts.  
   
--   In WMI, qualifiers are modifiers that contain information to describe a class, instance, property, or method. WMI uses standard qualifiers such as **Read**, **Write**, and **Key** to describe a property in a generated class. For example, a property that is modified with a **Read** qualifier is defined only with a property **get** accessor in the generated class. Because a property marked with the **Read** qualifier is intended to be read-only, a **set** accessor is not defined.  
+- In WMI, qualifiers are modifiers that contain information to describe a class, instance, property, or method. WMI uses standard qualifiers such as **Read**, **Write**, and **Key** to describe a property in a generated class. For example, a property that is modified with a **Read** qualifier is defined only with a property **get** accessor in the generated class. Because a property marked with the **Read** qualifier is intended to be read-only, a **set** accessor is not defined.  
   
--   A numeric property can be modified by the **Values** and **ValueMaps** qualifiers to indicate that the property can be set only to specified permissible values. An enumeration is generated with these **Values** and **ValueMaps** and the property is mapped to the enumeration.  
+- A numeric property can be modified by the **Values** and **ValueMaps** qualifiers to indicate that the property can be set only to specified permissible values. An enumeration is generated with these **Values** and **ValueMaps** and the property is mapped to the enumeration.  
   
--   The WMI uses the term singleton to describe a class that can have only one instance. Therefore, the default constructor for a singleton class will initialize the class to the only instance of the class.  
+- The WMI uses the term singleton to describe a class that can have only one instance. Therefore, the parameterless constructor for a singleton class will initialize the class to the only instance of the class.  
   
--   A WMI class can have properties that are objects. When you generate a strongly-typed class for this type of WMI class, you should consider generating strongly-typed classes for the types of the embedded object properties. This will allow you to access the embedded objects in a strongly-typed manner. Note that the generated code might not be able to detect the type of the embedded object. In this case, a comment will be created in the generated code to notify you of this issue. You can then modify the generated code to type the property to the other generated class.  
+- A WMI class can have properties that are objects. When you generate a strongly-typed class for this type of WMI class, you should consider generating strongly-typed classes for the types of the embedded object properties. This will allow you to access the embedded objects in a strongly-typed manner. Note that the generated code might not be able to detect the type of the embedded object. In this case, a comment will be created in the generated code to notify you of this issue. You can then modify the generated code to type the property to the other generated class.  
   
--   In WMI, the data value of the CIM_DATETIME data type can represent either a specific date and time or a time interval. If the data value represents a date and time, the data type in the generated class is **DateTime**. If the data value represents a time interval, the data type in the generated class is **TimeSpan**.  
+- In WMI, the data value of the CIM_DATETIME data type can represent either a specific date and time or a time interval. If the data value represents a date and time, the data type in the generated class is **DateTime**. If the data value represents a time interval, the data type in the generated class is **TimeSpan**.  
   
  You can alternately generate a strongly-typed class using the Server Explorer Management Extension in Visual Studio .NET.  
   
@@ -90,7 +90,7 @@ WMIClass [options]
 ## Examples  
  The following command generates a managed class in C# code for the **Win32_LogicalDisk** WMI class in the **Root\cimv2** namespace. The tool writes the managed class to the source file at c:\disk.cs in the **ROOT.CIMV2.Win32** namespace.  
   
-```  
+```console  
 mgmtclassgen Win32_LogicalDisk /n root\cimv2 /l CS /p c:\disk.cs  
 ```  
   
@@ -145,6 +145,7 @@ public class App
 ```  
   
 ## See also
+
 - <xref:System.Management>
 - <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>
 - <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>

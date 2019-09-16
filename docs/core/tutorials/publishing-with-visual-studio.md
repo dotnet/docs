@@ -20,7 +20,6 @@ To publish and run your application:
 
    ![Visual Studio Publish context menu](media/publishing-with-visual-studio/publish-context-menu.png)
 
-
    ![Visual Studio Publish window](media/publishing-with-visual-studio/publish-settings-window.png)
 
 1. Open a console window. For example in the **Type here to search** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
@@ -47,4 +46,4 @@ To publish and run your application:
 
 The publishing process creates a framework-dependent deployment, which is a type of deployment where the published application will run on any platform supported by .NET Core with .NET Core installed on the system. Users can run your application by issuing the `dotnet HelloWorld.dll` command from a console window.
 
-For more information on publishing and deploying .NET Core applications, see [.NET Core Application Deployment](../../core/deploying/index.md).
+For more information on publishing and deploying .NET Core applications, see [.NET Core Application Deployment](../deploying/index.md).

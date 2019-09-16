@@ -23,7 +23,7 @@ Gets the name of the application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName (  
     [in]  ULONG32           cchName,  
     [out] ULONG32           *pcchName,  
@@ -32,7 +32,7 @@ HRESULT GetName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The size of the `szName` array. Set this value to zero to put this method in query mode.  
   

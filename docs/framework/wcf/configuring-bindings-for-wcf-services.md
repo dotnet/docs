@@ -9,7 +9,7 @@ ms.assetid: 99a85fd8-f7eb-4a84-a93e-7721b37d415c
 When creating an application, you often want to defer decisions to the administrator after the deployment of the application. For example, there is often no way of knowing in advance what a service address, or Uniform Resource Identifier (URI), will be. Instead of hard-coding an address, it is preferable to allow an administrator to do so after creating a service. This flexibility is accomplished through configuration.  
   
 > [!NOTE]
->  Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) with the `/config` switch to quickly create configuration files.  
+> Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) with the `/config` switch to quickly create configuration files.  
   
 ## Major Sections  
  The Windows Communication Foundation (WCF) configuration scheme includes the following three major sections (`serviceModel`, `bindings`, and `services`):  
@@ -66,7 +66,7 @@ When creating an application, you often want to defer decisions to the administr
  That altered binding is found in the bindings section. This altered binding can now be used when creating any endpoint by setting the `binding` attribute in the `endpoint` element.  
   
 > [!NOTE]
->  If you give a particular name to the binding, the `bindingConfiguration` specified in the service endpoint must match with it.  
+> If you give a particular name to the binding, the `bindingConfiguration` specified in the service endpoint must match with it.  
   
 ```xml  
 <service name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">  
@@ -86,7 +86,7 @@ When creating an application, you often want to defer decisions to the administr
  In the following example, a specific behavior is configured for the service type. The `ServiceMetadataBehavior` element is used to enable the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to query the service and generate Web Services Description Language (WSDL) documents from the metadata.  
   
 > [!NOTE]
->  If you give a particular name to the behavior, the `behaviorConfiguration` specified in the service or endpoint section must match it.  
+> If you give a particular name to the behavior, the `behaviorConfiguration` specified in the service or endpoint section must match it.  
   
 ```xml  
 <behaviors>  
@@ -156,6 +156,7 @@ When creating an application, you often want to defer decisions to the administr
 ```  
   
 ## See also
+
 - [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
 - [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)
 - [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)

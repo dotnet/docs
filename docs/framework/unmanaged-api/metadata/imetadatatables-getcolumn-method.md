@@ -23,7 +23,7 @@ Gets a pointer to the value contained in the cell of the specified column and ro
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetColumn (   
     [in]  ULONG   ixTbl,  
     [in]  ULONG   ixCol,  
@@ -32,7 +32,7 @@ HRESULT GetColumn (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixTbl`  
  [in] The index of the table.  
   
@@ -55,5 +55,6 @@ HRESULT GetColumn (
  **.NET Framework Versions** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

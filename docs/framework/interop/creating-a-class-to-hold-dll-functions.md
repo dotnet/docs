@@ -22,15 +22,16 @@ Wrapping a frequently used DLL function in a managed class is an effective appro
   
  When designing a managed class for platform invoke, consider the relationships between classes and DLL functions. For example, you can:  
   
--   Declare DLL functions within an existing class.  
+- Declare DLL functions within an existing class.  
   
--   Create an individual class for each DLL function, keeping functions isolated and easy to find.  
+- Create an individual class for each DLL function, keeping functions isolated and easy to find.  
   
--   Create one class for a set of related DLL functions to form logical groupings and reduce overhead.  
+- Create one class for a set of related DLL functions to form logical groupings and reduce overhead.  
   
  You can name the class and its methods as you please. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md).  
   
 ## See also
+
 - [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)
 - [Identifying Functions in DLLs](../../../docs/framework/interop/identifying-functions-in-dlls.md)
 - [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)

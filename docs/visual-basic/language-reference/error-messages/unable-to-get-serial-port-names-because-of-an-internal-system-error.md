@@ -8,11 +8,12 @@ An internal error occurred when the `My.Computer.Ports.SerialPortNames` property
   
 ## To correct this error  
   
-1.  See [Debugger Basics](/visualstudio/debugger/debugger-basics) for more troubleshooting information.  
+1. See [Debugger Basics](/visualstudio/debugger/debugger-basics) for more troubleshooting information.  
   
-2.  Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
+2. Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Devices.Ports.SerialPortNames>
 - [Debugger Basics](/visualstudio/debugger/debugger-basics)
 - [Talk to Us](/visualstudio/ide/talk-to-us)

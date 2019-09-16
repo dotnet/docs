@@ -108,28 +108,28 @@ End Operator
 ## Matched Pairs  
  You must define certain operators as matched pairs. If you define either operator of such a pair, you must define the other as well. The matched pairs are the following:  
   
--   `=` and `<>`  
+- `=` and `<>`  
   
--   `>` and `<`  
+- `>` and `<`  
   
--   `>=` and `<=`  
+- `>=` and `<=`  
   
--   `IsTrue` and `IsFalse`  
+- `IsTrue` and `IsFalse`  
   
 ## Data Type Restrictions  
  Every operator you define must involve the class or structure on which you define it. This means that the class or structure must appear as the data type of the following:  
   
--   The operand of a unary operator.  
+- The operand of a unary operator.  
   
--   At least one of the operands of a binary operator.  
+- At least one of the operands of a binary operator.  
   
--   Either the operand or the return type of a conversion operator.  
+- Either the operand or the return type of a conversion operator.  
   
  Certain operators have additional data type restrictions, as follows:  
   
--   If you define the `IsTrue` and `IsFalse` operators, they must both return the `Boolean` type.  
+- If you define the `IsTrue` and `IsFalse` operators, they must both return the `Boolean` type.  
   
--   If you define the `<<` and `>>` operators, they must both specify the `Integer` type for the `operandtype` of `operand2`.  
+- If you define the `<<` and `>>` operators, they must both specify the `Integer` type for the `operandtype` of `operand2`.  
   
  The return type does not have to correspond to the type of either operand. For example, a comparison operator such as `=` or `<>` can return `Boolean` even if neither operand is `Boolean`.  
   
@@ -138,11 +138,11 @@ End Operator
   
  You cannot define the `AndAlso` operator directly with an `Operator` statement. However, you can use `AndAlso` if you have fulfilled the following conditions:  
   
--   You have defined `And` on the same operand types you want to use for `AndAlso`.  
+- You have defined `And` on the same operand types you want to use for `AndAlso`.  
   
--   Your definition of `And` returns the same type as the class or structure on which you have defined it.  
+- Your definition of `And` returns the same type as the class or structure on which you have defined it.  
   
--   You have defined the `IsFalse` operator on the class or structure on which you have defined `And`.  
+- You have defined the `IsFalse` operator on the class or structure on which you have defined `And`.  
   
  Similarly, you can use `OrElse` if you have defined `Or` on the same operands, with the return type of the class or structure, and you have defined `IsTrue` on the class or structure.  
   
@@ -151,20 +151,21 @@ End Operator
   
  If you declare a conversion procedure to be `Widening`, your procedure code must not generate any failures. This means the following:  
   
--   It must always return a valid value of type `type`.  
+- It must always return a valid value of type `type`.  
   
--   It must handle all possible exceptions and other error conditions.  
+- It must handle all possible exceptions and other error conditions.  
   
--   It must handle any error returns from any procedures it calls.  
+- It must handle any error returns from any procedures it calls.  
   
  If there is any possibility that a conversion procedure might not succeed, or that it might cause an unhandled exception, you must declare it to be `Narrowing`.  
   
 ## Example  
  The following code example uses the `Operator` statement to define the outline of a structure that includes operator procedures for the `And`, `Or`, `IsFalse`, and `IsTrue` operators. `And` and `Or` each take two operands of type `abc` and return type `abc`. `IsFalse` and `IsTrue` each take a single operand of type `abc` and return `Boolean`. These definitions allow the calling code to use `And`, `AndAlso`, `Or`, and `OrElse` with operands of type `abc`.  
   
- [!code-vb[VbVbalrStatements#44](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/operator-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#44](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#44)]  
   
 ## See also
+
 - [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)
 - [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)
 - [Widening](../../../visual-basic/language-reference/modifiers/widening.md)

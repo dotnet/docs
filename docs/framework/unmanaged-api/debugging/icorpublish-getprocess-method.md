@@ -23,14 +23,14 @@ Gets an [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess(  
     [in] unsigned              pid,   
     [out] ICorPublishProcess   **ppProcess  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pid`  
  [in] The identifier of the process.  
   
@@ -50,4 +50,5 @@ HRESULT GetProcess(
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublish Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublish-interface.md)

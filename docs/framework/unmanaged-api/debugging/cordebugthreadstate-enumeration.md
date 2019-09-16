@@ -22,7 +22,7 @@ Specifies the state of a thread for debugging.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugThreadState {  
     THREAD_RUN,  
     THREAD_SUSPEND  
@@ -44,11 +44,12 @@ typedef enum CorDebugThreadState {
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
- **Header:** CorDebug.idl, CorDegug.h  
+ **Header:** CorDebug.idl, CorDebug.h  
   
  **Library:** CorGuids.lib  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

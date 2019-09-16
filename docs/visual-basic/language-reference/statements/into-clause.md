@@ -18,4 +18,5 @@ Identifies aggregate functions or groupings to apply to a collection.
  [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

@@ -13,11 +13,11 @@ The Windows Communication Foundation (WCF) application model is designed to solv
 ## Areas to Extend  
  You can extend:  
   
--   The application runtime. This extends the dispatching and the processing of messages for the application. This area also includes extending the security system, the metadata system, the serialization system, and the bindings and binding elements that connect the application with the underlying channel system.  
+- The application runtime. This extends the dispatching and the processing of messages for the application. This area also includes extending the security system, the metadata system, the serialization system, and the bindings and binding elements that connect the application with the underlying channel system.  
   
--   The channel and channel runtime. This extends the system that functions at the message level, providing protocol, transport, and encoding support.  
+- The channel and channel runtime. This extends the system that functions at the message level, providing protocol, transport, and encoding support.  
   
--   The host runtime. This extends the relationship of the hosting application domain to the channel and application runtime.  
+- The host runtime. This extends the relationship of the hosting application domain to the channel and application runtime.  
   
 ### Extending the Application Runtime  
  In WCF applications, there is a distinction between messages that are destined for a corresponding channel and messages that are destined for the application itself. Channel messages support some channel-related functionality, such as establishing a secure conversation or establishing a reliable session. These messages are not available to the application runtime; they are processed before the application layer is involved.  
@@ -47,4 +47,5 @@ The Windows Communication Foundation (WCF) application model is designed to solv
  To modify the relationship between the hosting application domain and the service host, you must extend the <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=nameWithType> class. For more information, see [Extending Hosting Using ServiceHostFactory](../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md).  
   
 ## See also
+
 - [Extending WCF](../../../docs/framework/wcf/extending/index.md)

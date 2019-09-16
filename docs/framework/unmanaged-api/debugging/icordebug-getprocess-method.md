@@ -23,14 +23,14 @@ Gets a pointer to the "ICorDebugProcess" instance for the specified process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess (  
     [in] DWORD               dwProcessId,  
     [out] ICorDebugProcess   **ppProcess  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwProcessId`  
  [in] The ID of the process.  
   
@@ -47,4 +47,5 @@ HRESULT GetProcess (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

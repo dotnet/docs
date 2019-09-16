@@ -10,13 +10,14 @@ Arguments passed to a dynamic-link library (DLL) must exactly match those expect
   
 ## To correct this error  
   
-1.  Make sure all argument types agree with those specified in the declaration of the routine that you are calling.  
+1. Make sure all argument types agree with those specified in the declaration of the routine that you are calling.  
   
-2.  Make sure you are passing the same number of arguments indicated in the declaration of the routine that you are calling.  
+2. Make sure you are passing the same number of arguments indicated in the declaration of the routine that you are calling.  
   
-3.  If the DLL routine expects arguments by value, make sure `ByVal` is specified for those arguments in the declaration for the routine.  
+3. If the DLL routine expects arguments by value, make sure `ByVal` is specified for those arguments in the declaration for the routine.  
   
 ## See also
+
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
 - [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)
 - [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)

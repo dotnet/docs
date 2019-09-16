@@ -23,7 +23,7 @@ Closes the symbol writer without committing the symbols to the symbol store. Aft
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Abort();  
 ```  
   
@@ -34,4 +34,5 @@ HRESULT Abort();
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

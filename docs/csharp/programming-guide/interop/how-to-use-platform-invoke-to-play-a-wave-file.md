@@ -17,30 +17,25 @@ The following C# code example illustrates how to use platform invoke services to
   
  The **Open Files** dialog box is filtered to show only files that have a .wav extension through the filter settings:  
   
- [!code-csharp[csProgGuideInterop#5](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_1.cs)]  
+ [!code-csharp[csProgGuideInterop#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/WinSound.cs#5)]  
   
- [!code-csharp[csProgGuideInterop#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_2.cs)]  
+ [!code-csharp[csProgGuideInterop#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/WinSound.cs#3)]  
   
 ## Compiling the Code  
   
-### To compile the code  
+1. Create a new C# Windows Application project in Visual Studio and name it **WinSound**.  
   
-1.  Create a new C# Windows Application project in Visual Studio and name it **WinSound**.  
+2. Copy the code above, and paste it over the contents of the `Form1.cs` file.  
   
-2.  Copy the code above, and paste it over the contents of the `Form1.cs` file.  
+3. Copy the following code, and paste it in the `Form1.Designer.cs` file, in the `InitializeComponent()` method, after any existing code.  
   
-3.  Copy the following code, and paste it in the `Form1.Designer.cs` file, in the `InitializeComponent()` method, after any existing code.  
+     [!code-csharp[csProgGuideInterop#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/WinSound.cs#4)]  
   
-     [!code-csharp[csProgGuideInterop#4](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_3.cs)]  
-  
-4.  Compile and run the code.  
-  
-## .NET Framework Security  
- For more information, see [Security in .NET](../../../standard/security/index.md).  
+4. Compile and run the code.  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)
+- [C# Programming Guide](../index.md)
+- [Interoperability Overview](./interoperability-overview.md)
 - [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)
 - [Marshaling Data with Platform Invoke](../../../framework/interop/marshaling-data-with-platform-invoke.md)

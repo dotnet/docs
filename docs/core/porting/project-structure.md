@@ -2,14 +2,14 @@
 title: Organize projects for .NET Framework and .NET Core
 description: Help for project owners who want to compile their solution against .NET Framework and .NET Core side-by-side.
 author: conniey
-ms.date: 04/06/2017
+ms.date: 12/07/2018
 ms.custom: seodec18
 ---
 # Organize your project to support both .NET Framework and .NET Core
 
 Learn how to create a solution that compiles for both .NET Framework and .NET Core side-by-side. See several options to organize projects to help you achieve this goal. Here are some typical scenarios to consider when you're deciding how to setup your project layout with .NET Core. The list may not cover everything you want; prioritize based on your project's needs.
 
-* [**Combine existing projects and .NET Core projects into single projects**][option-csproj]
+* [**Combine existing projects and .NET Core projects into single projects**](#replace-existing-projects-with-a-multi-targeted-net-core-project)
 
   *What this is good for:*
   * Simplifying your build process by compiling a single project rather than compiling multiple projects, each targeting a different .NET Framework version or platform.
@@ -20,7 +20,7 @@ Learn how to create a solution that compiles for both .NET Framework and .NET Co
   *Unsupported scenarios:*
   * Requires developers to use Visual Studio 2017 to open existing projects. To support older versions of Visual Studio, [keeping your project files in different folders](#support-vs) is a better option.
 
-* <a name="support-vs"></a>[**Keep existing projects and new .NET Core projects separate**][option-csproj-folder]
+* <a name="support-vs"></a>[**Keep existing projects and new .NET Core projects separate**](#keep-existing-projects-and-create-a-net-core-project)
 
   *What this is good for:*
   * Continuing to support development on existing projects without having to upgrade for developers/contributors who may not have Visual Studio 2017.
@@ -30,9 +30,9 @@ Learn how to create a solution that compiles for both .NET Framework and .NET Co
 
 Consider the repository below:
 
-![Existing project][example-initial-project]
+![Existing project](./media/project-structure/existing-project-structure.png)
 
-[**Source Code**][example-initial-project-code]
+[**Source Code**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library/)
 
 The following describes several ways to add support for .NET Core for this repository depending on the constraints and complexity of the existing projects.
 
@@ -40,21 +40,21 @@ The following describes several ways to add support for .NET Core for this repos
 
 Reorganize the repository so that any existing *\*.csproj* files are removed and a single *\*.csproj* file is created that targets multiple frameworks. This is a great option because a single project is able to compile for different frameworks. It also has the power to handle different compilation options and dependencies per targeted framework.
 
-![Create an csproj that targets multiple frameworks][example-csproj]
+![Create an csproj that targets multiple frameworks](./media/project-structure/multi-targeted-project.png)
 
-[**Source Code**][example-csproj-code]
+[**Source Code**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/)
 
 Changes to note are:
 
-* Replacement of *packages.config* and *\*.csproj* with a new [.NET Core *\*.csproj*][example-csproj-netcore]. NuGet packages are specified with `<PackageReference> ItemGroup`.
+* Replacement of *packages.config* and *\*.csproj* with a new [.NET Core *\*.csproj*](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/src/Car/Car.csproj). NuGet packages are specified with `<PackageReference> ItemGroup`.
 
 ## Keep existing projects and create a .NET Core project
 
 If there are existing projects that target older frameworks, you may want to leave these projects untouched and use a .NET Core project to target future frameworks.
 
-![.NET Core project with existing project in different folder][example-csproj-different-folder]
+![.NET Core project with existing project in different folder](./media/project-structure/separate-projects-same-source.png)
 
-[**Source Code**][example-csproj-different-code]
+[**Source Code**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj-keep-existing/)
 
 Changes to note are:
 
@@ -63,18 +63,4 @@ Changes to note are:
 
 ## See also
 
-* Please see the [.NET Core porting documentation][porting-doc] for more guidance on migrating to .NET Core.
-
-[porting-doc]: index.md
-[example-initial-project]: media/project-structure/project.png "Existing project"
-[example-initial-project-code]: https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library/
-
-[example-csproj]: media/project-structure/project.csproj.png "Create a csproj that targets multiple frameworks"
-[example-csproj-code]: https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/
-[example-csproj-netcore]: https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/src/Car/Car.csproj
-
-[example-csproj-different-folder]: media/project-structure/project.csproj.different.png ".NET Core project with existing PCL in different folder"
-[example-csproj-different-code]: https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj-keep-existing/
-
-[option-csproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project
-[option-csproj-folder]: #keep-existing-projects-and-create-a-net-core-project
+Please see the [.NET Core porting documentation](index.md) for more guidance on migrating to .NET Core.

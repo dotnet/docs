@@ -12,8 +12,8 @@ ms.assetid: d0d6df69-daf9-4cf3-b7f9-ffee588037a3
 This section discusses the use of digital ink in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. Traditionally found only in the Tablet PC SDK, digital ink is now available in the core Windows Presentation Foundation. This means you can now develop full-fledged Tablet PC applications by using the power of Windows Presentation Foundation.  
   
 ## In This Section  
- [Overviews](../../../../docs/framework/wpf/advanced/digital-ink-overviews.md)  
-  [How-to Topics](../../../../docs/framework/wpf/advanced/digital-ink-how-to-topics.md)  
+ [Overviews](digital-ink-overviews.md)  
+  [How-to Topics](digital-ink-how-to-topics.md)  
   
 ## Related Sections  
- [Windows Presentation Foundation](../../../../docs/framework/wpf/index.md)
+ [Windows Presentation Foundation](../index.md)

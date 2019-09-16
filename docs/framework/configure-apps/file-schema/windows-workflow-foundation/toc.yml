@@ -1,0 +1,117 @@
+- name: Windows Workflow Foundation Configuration Schema
+  href: index.md
+  items:
+  - name: <system.serviceModel>
+    href: system-servicemodel-of-workflow.md
+    items:
+    - name: <behaviors>
+      href: behaviors-of-workflow.md
+      items:
+      - name: <serviceBehaviors>
+        href: servicebehaviors-of-workflow.md
+        items:
+        - name: <behavior> of <serviceBehaviors>
+          href: behavior-of-servicebehaviors-of-workflow.md
+          items:
+          - name: <bufferReceive>
+            href: bufferreceive.md
+          - name: <etwTracking>
+            href: etwtracking.md
+          - name: <sqlWorkflowInstanceStore>
+            href: sqlworkflowinstancestore.md
+          - name: <workflowIdle>
+            href: workflowidle.md
+          - name: <sendMessageChannelCache>
+            href: sendmessagechannelcache.md
+            items:
+            - name: <channelSettings>
+              href: channelsettings.md
+            - name: <factorySettings>
+              href: factorysettings.md
+          - name: <workflowInstanceManagement>
+            href: workflowinstancemanagement.md
+          - name: <workflowUnhandledException>
+            href: workflowunhandledexception.md
+    - name: <tracking>
+      href: tracking.md
+      items:
+      - name: <participants>
+        href: participants.md
+        items:
+        - name: <add>
+          href: add-of-participants.md
+      - name: <trackingProfile>
+        href: trackingprofile.md
+        items:
+        - name: <workflow>
+          href: workflow.md
+          items:
+          - name: <activityScheduledQueries>
+            href: activityscheduledqueries.md
+            items:
+            - name: <activityScheduledQuery>
+              href: activityscheduledquery.md
+          - name: <activityStateQueries>
+            href: activitystatequeries.md
+            items:
+            - name: <activityStateQuery>
+              href: activitystatequery.md
+              items:
+              - name: <arguments>
+                href: arguments.md
+                items:
+                - name: <argument>
+                  href: argument.md
+              - name: <states>
+                href: states-of-activitystatequery.md
+                items:
+                - name: <state>
+                  href: state-of-states.md
+              - name: <variables>
+                href: variables.md
+                items:
+                - name: <variable>
+                  href: variable.md
+          - name: <bookmarkResumptionQueries>
+            href: bookmarkresumptionqueries.md
+            items:
+            - name: <bookmarkResumptionQuery>
+              href: bookmarkresumptionquery.md
+          - name: <cancelRequestedQueries>
+            href: cancelrequestedqueries.md
+            items:
+            - name: <cancelRequestedQuery>
+              href: cancelrequestedquery.md
+          - name: <customTrackingQueries>
+            href: customtrackingqueries.md
+            items:
+            - name: <customTrackingQuery>
+              href: customtrackingquery.md
+          - name: <faultPropagationQueries>
+            href: faultpropagationqueries.md
+            items:
+            - name: <faultPropagationQuery>
+              href: faultpropagationquery.md
+          - name: <workflowInstanceQueries>
+            href: workflowinstancequeries.md
+            items:
+            - name: <workflowInstanceQuery>
+              href: workflowinstancequery.md
+              items:
+              - name: <states>
+                href: states.md
+                items:
+                - name: <state>
+                  href: state.md
+          - name: Using Annotation in Queries
+            href: using-annotation-in-queries.md
+  - name: Additional Managed Reference
+    href: additional-managed-reference.md
+    items:
+    - name: Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder
+      href: microsoft-visualstudio-activities-asr-clientactivitybuilder.md
+      items:
+      - name: Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder.Build
+        href: microsoft-visualstudio-activities-asr-clientactivitybuilder-build.md
+      - name: Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor
+        href: microsoft-visualstudio-activities-asr-clientactivitybuilder-ctor.md

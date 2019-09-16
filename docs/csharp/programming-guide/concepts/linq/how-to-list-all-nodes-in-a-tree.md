@@ -33,7 +33,7 @@ Sometimes it is helpful to list all nodes in a tree. This can be useful when lea
   
  The following is the list of nodes in the above XML tree, expressed as XPath expressions:  
   
-```  
+```text  
 /processing-instruction()  
 /Root  
 /Root/@AttName  
@@ -311,7 +311,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <?target data?>  
 <Root AttName="An Attribute" xmlns:aw="http://www.adventure-works.com">  
@@ -342,6 +342,3 @@ class Program
 /Root/aw:ElementInNamespace/aw:ChildInNamespace  
 ```  
   
-## See also
-
-- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

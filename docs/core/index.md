@@ -15,9 +15,9 @@ Check out [.NET Core Tutorials](tutorials/index.md) to learn how to create a sim
 
 ## Download .NET Core 2.2
 
-Download the [.NET Core  2.2 SDK](https://www.microsoft.com/net/download) to try .NET Core on your Windows, macOS, or Linux machine. Visit [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/) if you prefer to use Docker containers.
+Download the [.NET Core  2.2 SDK](https://dotnet.microsoft.com/download) to try .NET Core on your Windows, macOS, or Linux machine. Visit [dotnet/core](https://hub.docker.com/_/microsoft-dotnet-core/) if you prefer to use Docker containers.
 
-All .NET Core versions are available at [.NET Core Downloads](https://www.microsoft.com/net/download/archives) if you're looking for another .NET Core version.
+All .NET Core versions are available at [.NET Core Downloads](https://dotnet.microsoft.com/download/dotnet-core) if you're looking for another .NET Core version.
 
 ## .NET Core 2.2
 
@@ -34,13 +34,13 @@ dotnet run
 
 You should see the following output:
 
-```console
+```output
 Hello World!
 ```
 
 ## Support
 
-.NET Core is [supported by Microsoft](https://www.microsoft.com/net/support/policy), on Windows, macOS and Linux. It's updated for security and quality several times a year, typically monthly.
+.NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy), on Windows, macOS and Linux. It's updated for security and quality several times a year, typically monthly.
 
 .NET Core binary distributions are built and tested on Microsoft-maintained servers in Azure and supported just like any Microsoft product.
 

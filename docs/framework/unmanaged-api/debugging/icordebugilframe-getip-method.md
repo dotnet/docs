@@ -23,14 +23,14 @@ Gets the value of the instruction pointer and a bitwise combination value that d
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIP (  
     [out] ULONG32               *pnOffset,   
     [out] CorDebugMappingResult *pMappingResult  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnOffset`  
  [out] The value of the instruction pointer.  
   

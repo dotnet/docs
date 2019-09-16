@@ -8,4 +8,3 @@
 |Version|4.7.2|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Uri?displayProperty=nameWithType></li></ul>|
-

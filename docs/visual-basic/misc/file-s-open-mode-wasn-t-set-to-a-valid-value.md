@@ -16,7 +16,7 @@ The value supplied for the file's open mode was not valid. The following table s
   
 ## To correct this error  
   
--   Verify the value being supplied for the file's open mode.  
+- Verify the value being supplied for the file's open mode.  
   
 ## See also
 

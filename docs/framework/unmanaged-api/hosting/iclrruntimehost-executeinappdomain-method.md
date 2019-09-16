@@ -23,7 +23,7 @@ Specifies the <xref:System.AppDomain> in which to execute the specified managed 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExecuteInAppDomain(  
     [in] DWORD AppDomainId,   
     [in] FExecuteInDomainCallback pCallback,   
@@ -31,7 +31,7 @@ HRESULT ExecuteInAppDomain(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `AppDomainId`  
  [in] The numeric ID of the <xref:System.AppDomain> in which to execute the specified method.  
   
@@ -65,4 +65,5 @@ HRESULT ExecuteInAppDomain(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)

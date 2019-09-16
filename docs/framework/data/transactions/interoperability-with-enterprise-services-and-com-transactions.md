@@ -23,35 +23,35 @@ The <xref:System.Transactions> namespace supports interoperability between trans
   
  <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic> specifies the following requirements:  
   
--   When <xref:System.Transactions.Transaction.Current%2A> is checked, <xref:System.Transactions> should support transactions in the COM+ context if it detects that it is running in a context other than the default context. Note that the default context cannot contain a transaction. Therefore, in the default context, even with <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic>, the transaction stored in the thread local storage used by <xref:System.Transactions> is returned for <xref:System.Transactions.Transaction.Current%2A>.  
+- When <xref:System.Transactions.Transaction.Current%2A> is checked, <xref:System.Transactions> should support transactions in the COM+ context if it detects that it is running in a context other than the default context. Note that the default context cannot contain a transaction. Therefore, in the default context, even with <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic>, the transaction stored in the thread local storage used by <xref:System.Transactions> is returned for <xref:System.Transactions.Transaction.Current%2A>.  
   
--   If a new <xref:System.Transactions.TransactionScope> object is created and the creation occurs in a context other than the default context, the transaction that is current for the <xref:System.Transactions.TransactionScope> object should be reflected in COM+. In this case, <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic> behaves like <xref:System.Transactions.EnterpriseServicesInteropOption.Full> in that it creates a new COM+ context.  
+- If a new <xref:System.Transactions.TransactionScope> object is created and the creation occurs in a context other than the default context, the transaction that is current for the <xref:System.Transactions.TransactionScope> object should be reflected in COM+. In this case, <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic> behaves like <xref:System.Transactions.EnterpriseServicesInteropOption.Full> in that it creates a new COM+ context.  
   
  In addition when <xref:System.Transactions.Transaction.Current%2A> is set in both <xref:System.Transactions.EnterpriseServicesInteropOption.Full> and <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic>, both of these modes imply that <xref:System.Transactions.Transaction.Current%2A> cannot be set directly.  Any attempt to set <xref:System.Transactions.Transaction.Current%2A> directly other than creating a <xref:System.Transactions.TransactionScope> results in an <xref:System.InvalidOperationException>. The <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration value is inherited by new transaction scopes that do not explicitly specify which value to use. For example, if you create a new <xref:System.Transactions.TransactionScope> object with <xref:System.Transactions.EnterpriseServicesInteropOption.Full>, and then create a second <xref:System.Transactions.TransactionScope> object but do not specify an <xref:System.Transactions.EnterpriseServicesInteropOption> value, the second <xref:System.Transactions.TransactionScope> object also has a <xref:System.Transactions.EnterpriseServicesInteropOption.Full>.  
   
  In summary, the following rules apply when creating a new transaction scope:  
   
-1.  <xref:System.Transactions.Transaction.Current%2A> is checked to see if there is a transaction. This check results in:  
+1. <xref:System.Transactions.Transaction.Current%2A> is checked to see if there is a transaction. This check results in:  
   
-    -   A check to see if there is a scope.  
+    - A check to see if there is a scope.  
   
-    -   If there is a scope, the value of the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration passed in when the scope was initially created is checked.  
+    - If there is a scope, the value of the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration passed in when the scope was initially created is checked.  
   
-    -   If the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration is set to <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic>, the COM+ transaction (<xref:System.EnterpriseServices> Transaction) takes precedence over the <xref:System.Transactions> transaction in managed thread local storage.  
+    - If the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration is set to <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic>, the COM+ transaction (<xref:System.EnterpriseServices> Transaction) takes precedence over the <xref:System.Transactions> transaction in managed thread local storage.  
   
          If the value is set to <xref:System.Transactions.EnterpriseServicesInteropOption.None>, the <xref:System.Transactions> transaction in managed thread local storage takes precedence.  
   
          If the value is <xref:System.Transactions.EnterpriseServicesInteropOption.Full>, there is only one transaction and it is a COM+ transaction.  
   
-2.  The value of the <xref:System.Transactions.TransactionScopeOption> enumeration passed in by the <xref:System.Transactions.TransactionScope> constructor is checked. This determines if a new transaction must be created.  
+2. The value of the <xref:System.Transactions.TransactionScopeOption> enumeration passed in by the <xref:System.Transactions.TransactionScope> constructor is checked. This determines if a new transaction must be created.  
   
-3.  If a new transaction is to be created, the following values of <xref:System.Transactions.EnterpriseServicesInteropOption> result in:  
+3. If a new transaction is to be created, the following values of <xref:System.Transactions.EnterpriseServicesInteropOption> result in:  
   
-    -   <xref:System.Transactions.EnterpriseServicesInteropOption.Full>:  a transaction associated with a COM+ context is created.  
+    - <xref:System.Transactions.EnterpriseServicesInteropOption.Full>:  a transaction associated with a COM+ context is created.  
   
-    -   <xref:System.Transactions.EnterpriseServicesInteropOption.None>: a <xref:System.Transactions> transaction is created.  
+    - <xref:System.Transactions.EnterpriseServicesInteropOption.None>: a <xref:System.Transactions> transaction is created.  
   
-    -   <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic>: if there is a COM+ context, a transaction is created and attached to the context.  
+    - <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic>: if there is a COM+ context, a transaction is created and attached to the context.  
   
  The following table illustrates the Enterprise Services (ES) context and a transactional scope that requires a transaction using the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration.  
   
@@ -69,6 +69,6 @@ The <xref:System.Transactions> namespace supports interoperability between trans
   
  In the preceding table:  
   
--   ST means that the scope's ambient transaction is managed by <xref:System.Transactions>, separate from any <xref:System.EnterpriseServices> context's transaction that may be present.  
+- ST means that the scope's ambient transaction is managed by <xref:System.Transactions>, separate from any <xref:System.EnterpriseServices> context's transaction that may be present.  
   
--   ES means that the scope's ambient transaction is same as the <xref:System.EnterpriseServices> context's transaction.
+- ES means that the scope's ambient transaction is same as the <xref:System.EnterpriseServices> context's transaction.

@@ -23,13 +23,13 @@ Allocates a new string instance with the specified contents.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewString (  
     [in] LPCWSTR   string  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `string`  
  [in] Pointer to the contents for the string.  
   

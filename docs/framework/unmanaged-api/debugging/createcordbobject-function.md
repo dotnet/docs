@@ -24,14 +24,14 @@ Creates a debugger interface ([ICorDebug](../../../../docs/framework/unmanaged-a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CordbCreateObject (  
        [in]  int         iDebuggerVersion,   
        [out] IUnknown**  ppCordb  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iDebuggerVersion`  
  [in] Debugger version of the target process. This parameter must be CorDebugVersion_2_0 for remote debugging.  
   

@@ -23,7 +23,7 @@ Enumerates TypeDef tokens representing all types within the current scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumTypeDefs (  
    [out] HCORENUM   *phEnum,   
    [in]  mdTypeDef  rTypeDefs[],  
@@ -32,7 +32,7 @@ HRESULT EnumTypeDefs (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [out] A pointer to the new enumerator. This must be NULL for the first call of this method.  
   
@@ -65,5 +65,6 @@ HRESULT EnumTypeDefs (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

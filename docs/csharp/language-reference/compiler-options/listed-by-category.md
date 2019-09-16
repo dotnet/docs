@@ -48,7 +48,8 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-reference](reference-compiler-option.md)|Imports metadata from a file that contains an assembly.|
 |-analyzer|Run the analyzers from this assembly (Short form: /a)|
 |-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|
-
+|-embed|Embed all source files in the PDB.|
+|-embed:\<file list>|Embed specific files in the PDB.|
 ## Debugging/Error Checking
 
 |Option|Purpose|
@@ -95,10 +96,10 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-nologo](nologo-compiler-option.md)|Suppresses compiler banner information.|
 |[-recurse](recurse-compiler-option.md)|Searches subdirectories for source files to compile.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
-|[-unsafe](unsafe-compiler-option.md)|Enables compilation of code that uses the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword.|
+|[-unsafe](unsafe-compiler-option.md)|Enables compilation of code that uses the [unsafe](../keywords/unsafe.md) keyword.|
 |[-utf8output](utf8output-compiler-option.md)|Displays compiler output using UTF-8 encoding.|
 |-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|
-|-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|
+|-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|
 
 ## Obsolete Options
 

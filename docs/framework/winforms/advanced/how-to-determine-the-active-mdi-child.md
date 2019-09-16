@@ -21,10 +21,10 @@ On occasion, you will want to provide a command that operates on the control tha
   
 ### To determine the active MDI child (to copy its text to the Clipboard)  
   
-1.  Within a method, copy the text of the active control of the active child form to the Clipboard.  
+1. Within a method, copy the text of the active control of the active child form to the Clipboard.  
   
     > [!NOTE]
-    >  This example assumes there is an MDI parent form (`Form1`) that has one or more MDI child windows containing a <xref:System.Windows.Forms.RichTextBox> control. For more information, see [Creating MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md).  
+    > This example assumes there is an MDI parent form (`Form1`) that has one or more MDI child windows containing a <xref:System.Windows.Forms.RichTextBox> control. For more information, see [Creating MDI Parent Forms](how-to-create-mdi-parent-forms.md).  
   
     ```vb  
     Public Sub mniCopy_Click(ByVal sender As Object, _  
@@ -78,8 +78,9 @@ On occasion, you will want to provide a command that operates on the control tha
     ```  
   
 ## See also
-- [Multiple-Document Interface (MDI) Applications](../../../../docs/framework/winforms/advanced/multiple-document-interface-mdi-applications.md)
-- [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)
-- [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)
-- [How to: Send Data to the Active MDI Child](../../../../docs/framework/winforms/advanced/how-to-send-data-to-the-active-mdi-child.md)
-- [How to: Arrange MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-arrange-mdi-child-forms.md)
+
+- [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md)
+- [How to: Create MDI Parent Forms](how-to-create-mdi-parent-forms.md)
+- [How to: Create MDI Child Forms](how-to-create-mdi-child-forms.md)
+- [How to: Send Data to the Active MDI Child](how-to-send-data-to-the-active-mdi-child.md)
+- [How to: Arrange MDI Child Forms](how-to-arrange-mdi-child-forms.md)

@@ -23,7 +23,7 @@ Instantiates a new parameterized type object and calls the object's constructor 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewParameterizedObject (  
     [in] ICorDebugFunction     *pConstructor,  
     [in] ULONG32               nTypeArgs,  
@@ -33,7 +33,7 @@ HRESULT NewParameterizedObject (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pConstructor`  
  [in] A pointer to an ICorDebugFunction object that represents the constructor of the object to be instantiated.  
   

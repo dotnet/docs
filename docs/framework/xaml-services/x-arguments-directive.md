@@ -8,11 +8,11 @@ helpviewer_keywords:
 ms.assetid: 87cc10b0-b610-4025-b6b0-ab27ca27c92e
 ---
 # x:Arguments Directive
-Packages construction arguments for a non-default constructor object element declaration in XAML, or for a factory method object declaration.  
+Packages construction arguments for a non-parameterless constructor object element declaration in XAML, or for a factory method object declaration.  
   
-## XAML Element Usage (Nondefault constructor)  
+## XAML Element Usage (Nonparameterless constructor)  
   
-```  
+```xaml  
 <object ...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
@@ -22,7 +22,7 @@ Packages construction arguments for a non-default constructor object element dec
   
 ## XAML Element Usage (factory method)  
   
-```  
+```xaml  
 <object x:FactoryMethod="methodName"...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
@@ -34,7 +34,7 @@ Packages construction arguments for a non-default constructor object element dec
   
 |||  
 |-|-|  
-|`oneOrMoreObjectElements`|One or more object elements that specify arguments to be passed to the backing non-default constructor or factory method.<br /><br /> Typical usage is to use initialization text within the object elements to specify the actual argument values. See Examples section.<br /><br /> The order of the elements is significant. The XAML types in order must match the types and type order of the backing constructor or factory method overload.|  
+|`oneOrMoreObjectElements`|One or more object elements that specify arguments to be passed to the backing non-parameterless constructor or factory method.<br /><br /> Typical usage is to use initialization text within the object elements to specify the actual argument values. See Examples section.<br /><br /> The order of the elements is significant. The XAML types in order must match the types and type order of the backing constructor or factory method overload.|  
 |`methodName`|The name of the factory method that should process any `x:Arguments` arguments.|  
   
 ## Dependencies  
@@ -56,7 +56,7 @@ Packages construction arguments for a non-default constructor object element dec
  A XAML attribute usage `<x:Arguments>string</x:Arguments>` is technically possible. However, this provides no capabilities beyond what could be done otherwise through initialization text and type converters, and using this syntax is not the design intention of the XAML 2009 factory method features.  
   
 ## Examples  
- The following example shows a non-default constructor signature, then the XAML usage of `x:Arguments` that accesses that signature.  
+ The following example shows a non-parameterless constructor signature, then the XAML usage of `x:Arguments` that accesses that signature.  
   
 ```csharp  
 public class Food {  
@@ -101,5 +101,6 @@ public Food TryLookupFood(string name)
 ```  
   
 ## See also
-- [Defining Custom Types for Use with .NET Framework XAML Services](../../../docs/framework/xaml-services/defining-custom-types-for-use-with-net-framework-xaml-services.md)
-- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+
+- [Defining Custom Types for Use with .NET Framework XAML Services](defining-custom-types-for-use-with-net-framework-xaml-services.md)
+- [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)

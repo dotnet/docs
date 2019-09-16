@@ -11,9 +11,11 @@ ms.custom: "seodec18"
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-with-fsharp-nunit/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
+[!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
+
 ## Prerequisites
 
-- [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) or later versions.
+- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Creating the source project
@@ -39,7 +41,7 @@ Make *MathService* the current directory and run the following command to create
 dotnet new classlib -lang F#
 ```
 
-To use test-driven development (TDD), you create a failing implementation of the math service:
+You create a failing implementation of the math service:
 
 ```fsharp
 module MyMath =
@@ -110,7 +112,7 @@ dotnet sln add .\MathService.Tests\MathService.Tests.fsproj
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Open *UnitTest1.fs* and add the following code:
+You write one failing test, make it pass, then repeat the process. Open *UnitTest1.fs* and add the following code:
 
 ```fsharp
 namespace MathService.Tests
@@ -148,7 +150,7 @@ Notice that the `expected` sequence has been converted to a list. The NUnit fram
 
 When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the *Library.fs* class in your MathService project that works:
 
-```csharp
+```fsharp
 let squaresOfOdds xs =
     Seq.empty<int>
 ```

@@ -32,21 +32,21 @@ The **-debug** option causes the compiler to generate debugging information and 
  If you use **-debug:full**, be aware that there is some impact on the speed and size of JIT optimized code and a small impact on code quality with **-debug:full**. We recommend **-debug:pdbonly** or no PDB for generating release code.  
   
 > [!NOTE]
->  One difference between **-debug:pdbonly** and **-debug:full** is that with **-debug:full** the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use **-debug:full**.  
+> One difference between **-debug:pdbonly** and **-debug:full** is that with **-debug:full** the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use **-debug:full**.  
   
  For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).  
   
- To change the location of the .pdb file, see [-pdb (C# Compiler Options)](../../../csharp/language-reference/compiler-options/pdb-compiler-option.md).  
+ To change the location of the .pdb file, see [-pdb (C# Compiler Options)](./pdb-compiler-option.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Click the **Advanced** button.  
+3. Click the **Advanced** button.  
   
-4.  Modify the **Debug Info** property.  
+4. Modify the **Debug Info** property.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DebugSymbols%2A>.  
   
@@ -59,5 +59,5 @@ csc -debug -pdb:app.pdb test.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

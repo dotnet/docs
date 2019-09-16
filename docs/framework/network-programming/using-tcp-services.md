@@ -18,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: d2811830-3bcb-495c-b82d-cda9cf919aad
 ---
 # Using TCP Services
+
 The <xref:System.Net.Sockets.TcpClient> class requests data from an Internet resource using TCP. The methods and properties of **TcpClient** abstract the details for creating a <xref:System.Net.Sockets.Socket> for requesting and receiving data using TCP. Because the connection to the remote device is represented as a stream, data can be read and written with .NET Framework stream-handling techniques.  
   
  The TCP protocol establishes a connection with a remote endpoint and then uses that connection to send and receive data packets. TCP is responsible for ensuring that data packets are sent to the endpoint and assembled in the correct order when they arrive.  
@@ -186,7 +187,4 @@ public class TcpTimeServer {
     }  
   
 }  
-```  
-  
-## See also
-
+```

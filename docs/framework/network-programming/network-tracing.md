@@ -27,9 +27,10 @@ Network tracing in the .NET Framework provides access to information about metho
  When tracing is enabled, you can capture trace information that is output by **System.Net** classes. Networking class members that generate tracing information include the following note in the Remarks section of their NET Framework class library documentation:  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see Network Tracing.  
+> This member outputs trace information when you enable network tracing in your application. For more information, see Network Tracing.  
   
 ## See also
+
 - [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)
 - [How to: Configure Network Tracing](../../../docs/framework/network-programming/how-to-configure-network-tracing.md)
 - [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)

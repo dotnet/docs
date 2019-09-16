@@ -23,7 +23,7 @@ Gets a detailed message about the specified validation error.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FormatEventInfo (  
     [in] HRESULT            hVECode,  
     [in] VEContext          Context,  
@@ -33,7 +33,7 @@ HRESULT FormatEventInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hVECode`  
  [in] The HRESULT value that was passed to the validation error handler.  
   
@@ -70,5 +70,6 @@ HRESULT FormatEventInfo (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
 - [ICLRValidator Interface](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-interface.md)

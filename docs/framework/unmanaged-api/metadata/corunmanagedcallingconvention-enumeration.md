@@ -22,7 +22,7 @@ Specifies the calling conventions for unmanaged code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorUnmanagedCallingConvention {  
   
     IMAGE_CEE_UNMANAGED_CALLCONV_C         = 0x1,  
@@ -62,4 +62,5 @@ typedef enum CorUnmanagedCallingConvention {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

@@ -23,7 +23,7 @@ Gets the parameters for this method. The parameters are returned in the order in
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParameters(  
     [in]  ULONG32  cParams,  
     [out] ULONG32  *pcParams,  
@@ -31,7 +31,7 @@ HRESULT GetParameters(
         length_is(*pcParams)] ISymUnmanagedVariable*  params[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cParams`  
  [in] The size of the `params` array.  
   
@@ -48,4 +48,5 @@ HRESULT GetParameters(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

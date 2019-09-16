@@ -23,7 +23,7 @@ Gets the version number of the runtime that was used to build the assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionString (  
    [out] LPWSTR      pwzBuf,  
    [in]  DWORD       ccBufSize,  
@@ -31,7 +31,7 @@ HRESULT GetVersionString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzBuf`  
  [out] An array to store the string that specifies the version.  
   
@@ -54,5 +54,6 @@ HRESULT GetVersionString (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

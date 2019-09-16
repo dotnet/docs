@@ -9,8 +9,8 @@ metadata:
   ms.date: 08/24/2018
   displayType: two-column
   interactive: csharp
-  nextTutorialHref: interpolated-strings.yml
-  nextTutorialTitle: String interpolation in C#
+  nextTutorialHref: list-collection.yml
+  nextTutorialTitle: The list collection
 items:
 - durationInMinutes: 1
   content: |
@@ -105,17 +105,19 @@ items:
     int a = 5;
     int b = 3;
     int c = 4;
-    if ((a + b + c > 10) && (a > b))
+    if ((a + b + c > 10) && (a == b))
     {
         Console.WriteLine("The answer is greater than 10");
-        Console.WriteLine("And the first number is greater than the second");
+        Console.WriteLine("And the first number is equal to the second");
     }
     else
     {
         Console.WriteLine("The answer is not greater than 10");
-        Console.WriteLine("Or the first number is not greater than the second");
+        Console.WriteLine("Or the first number is not equal to the second");
     }
     ```
+
+    The `==` symbol tests for *equality*. Using `==` distinguishes the test for equality from assignment, which you saw in `a = 5`.
 
     The `&&` represents "and". It means both conditions must be true to execute
     the statement in the true branch.  These examples also show that you can have multiple
@@ -127,17 +129,19 @@ items:
     int a = 5;
     int b = 3;
     int c = 4;
-    if ((a + b + c > 10) || (a > b))
+    if ((a + b + c > 10) || (a == b))
     {
         Console.WriteLine("The answer is greater than 10");
-        Console.WriteLine("Or the first number is greater than the second");
+        Console.WriteLine("Or the first number is equal to the second");
     }
     else
     {
         Console.WriteLine("The answer is not greater than 10");
-        Console.WriteLine("And the first number is not greater than the second");
+        Console.WriteLine("And the first number is not equal to the second");
     }
     ```
+
+    Modify the values of `a`, `b`, and `c` and switch between `&&` and `||` to explore. You'll gain more understanding of how the `&&` and `||` operators work.
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
@@ -270,7 +274,7 @@ items:
 
 - title: Congratulations!
   content: |
-    You've completed the "branches and loops" interactive tutorial. You can click the **Interpolated strings** link below to start the next interactive tutorial, or you can visit the [.NET site](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Keep Learning" step brings you back to these tutorials.
+    You've completed the "branches and loops" interactive tutorial. You can click the **list collection** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
     You can learn more about these concepts in these topics:
 

@@ -23,13 +23,13 @@ Gets the [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-in
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentTask (  
     [out] ICLRTask **ppTask  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppTask`  
  [out] A pointer to the address of an `ICLRTask` instance that is currently executing on the operating system thread from which the call originated, or null if no task is currently executing on this thread.  
   
@@ -57,6 +57,7 @@ HRESULT GetCurrentTask (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

@@ -13,7 +13,7 @@ When you have an application that executes structurally similar queries many tim
   
  The <xref:System.Data.Objects.CompiledQuery> class provides compilation and caching of queries for reuse. Conceptually, this class contains a <xref:System.Data.Objects.CompiledQuery>'s `Compile` method with several overloads. Call the `Compile` method to create a new delegate to represent the compiled query. The `Compile` methods, provided with a <xref:System.Data.Objects.ObjectContext> and parameter values, return a delegate that produces some result (such as an <xref:System.Linq.IQueryable%601> instance). The query compiles once during only the first execution. The merge options set for the query at the time of the compilation cannot be changed later. Once the query is compiled you can only supply parameters of primitive type but you cannot replace parts of the query that would change the generated SQL. For more information, see [Entity Framework Merge Options and Compiled Queries](https://go.microsoft.com/fwlink/?LinkId=199591)  
   
- The [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] query expression that the <xref:System.Data.Objects.CompiledQuery>'s `Compile` method compiles is represented by one of the generic `Func` delegates, such as <xref:System.Func%605>. At most, the query expression can encapsulate an `ObjectContext` parameter, a return parameter, and 16 query parameters. If more than 16 query parameters are required, you can create a structure whose properties represent query parameters. You can then use the properties on the structure in the query expression after you set the properties.  
+ The LINQ to Entities query expression that the <xref:System.Data.Objects.CompiledQuery>'s `Compile` method compiles is represented by one of the generic `Func` delegates, such as <xref:System.Func%605>. At most, the query expression can encapsulate an `ObjectContext` parameter, a return parameter, and 16 query parameters. If more than 16 query parameters are required, you can create a structure whose properties represent query parameters. You can then use the properties on the structure in the query expression after you set the properties.  
   
 ## Example  
  The following example compiles and then invokes a query that accepts a <xref:System.Decimal> input parameter and returns a sequence of orders where the total due is greater than or equal to $200.00:  
@@ -63,6 +63,7 @@ When you have an application that executes structurally similar queries many tim
  [!code-vb[DP L2E Conceptual Examples#MyParamsStruct](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#myparamsstruct)]  
   
 ## See also
-- [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)
-- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
+
+- [ADO.NET Entity Framework](../index.md)
+- [LINQ to Entities](linq-to-entities.md)
 - [Entity Framework Merge Options and Compiled Queries](https://go.microsoft.com/fwlink/?LinkId=199591)

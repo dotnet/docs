@@ -12,17 +12,18 @@ ms.assetid: 3bfc652e-91b7-4697-a4f4-83ff0e98327e
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] offers integrated support for multimedia, vector graphics, animation, and content composition, making it easy for developers to build interesting user interfaces and content.  
   
 ## In This Section  
- [Bitmap Effects](../../../../docs/framework/wpf/graphics-multimedia/bitmap-effects.md)  
- [Brushes](../../../../docs/framework/wpf/graphics-multimedia/brushes.md)  
- [Drawings](../../../../docs/framework/wpf/graphics-multimedia/drawings.md)  
- [Geometries](../../../../docs/framework/wpf/graphics-multimedia/geometries.md)  
- [Images](../../../../docs/framework/wpf/graphics-multimedia/images.md)  
- [Shapes](../../../../docs/framework/wpf/graphics-multimedia/shapes.md)  
- [Transformations](../../../../docs/framework/wpf/graphics-multimedia/transformations.md)  
- [Graphics Rendering Registry Settings](../../../../docs/framework/wpf/graphics-multimedia/graphics-rendering-registry-settings.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/graphics-how-to-topics.md)  
+ [Bitmap Effects](bitmap-effects.md)  
+ [Brushes](brushes.md)  
+ [Drawings](drawings.md)  
+ [Geometries](geometries.md)  
+ [Images](images.md)  
+ [Shapes](shapes.md)  
+ [Transformations](transformations.md)  
+ [Graphics Rendering Registry Settings](graphics-rendering-registry-settings.md)  
+ [How-to Topics](graphics-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Shapes.Shape>
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.Imaging.BitmapImage>
@@ -30,6 +31,6 @@ ms.assetid: 3bfc652e-91b7-4697-a4f4-83ff0e98327e
 - <xref:System.Windows.Media.Drawing>
 - <xref:System.Windows.Media.Brush>
 - <xref:System.Windows.Media.Effects.BitmapEffect>
-- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
-- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Graphics and Multimedia](index.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)

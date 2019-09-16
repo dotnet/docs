@@ -19,11 +19,11 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
 ## Example  
  The following example adds the following three font files to a <xref:System.Drawing.Text.PrivateFontCollection> object:  
   
--   C:\\*systemroot*\Fonts\Arial.tff (Arial, regular)  
+- C:\\*systemroot*\Fonts\Arial.tff (Arial, regular)  
   
--   C:\\*systemroot*\Fonts\CourBI.tff (Courier New, bold italic)  
+- C:\\*systemroot*\Fonts\CourBI.tff (Courier New, bold italic)  
   
--   C:\\*systemroot*\Fonts\TimesBd.tff (Times New Roman, bold)  
+- C:\\*systemroot*\Fonts\TimesBd.tff (Times New Roman, bold)  
   
  The code retrieves an array of <xref:System.Drawing.FontFamily> objects from the <xref:System.Drawing.Text.FontCollection.Families%2A> property of the <xref:System.Drawing.Text.PrivateFontCollection> object.  
   
@@ -31,20 +31,21 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
   
  If a given family/style combination is available, a <xref:System.Drawing.Font> object is constructed using that family and style. The first argument passed to the <xref:System.Drawing.Font.%23ctor%2A> constructor is the font family name (not a <xref:System.Drawing.FontFamily> object as is the case for other variations of the <xref:System.Drawing.Font.%23ctor%2A> constructor). After the <xref:System.Drawing.Font> object is constructed, it is passed to the <xref:System.Drawing.Graphics.DrawString%2A> method of the <xref:System.Drawing.Graphics> class to display the family name along with the name of the style.  
   
- The output of the following code is similar to the output shown in the following illustration.  
+ The output of the following code is similar to the output shown in the following illustration:  
   
- ![Fonts Text](../../../../docs/framework/winforms/advanced/media/csfontstext7.png "csfontstext7")  
+ ![Screenshot that shows text in various fonts.](./media/how-to-create-a-private-font-collection/various-fonts-text-output.png)  
   
- Arial.tff (which was added to the private font collection in the following code example) is the font file for the Arial regular style. Note, however, that the program output shows several available styles other than regular for the Arial font family. That is because [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can simulate the bold, italic, and bold italic styles from the regular style. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can also produce underlines and strikeouts from the regular style.  
+ Arial.tff (which was added to the private font collection in the following code example) is the font file for the Arial regular style. Note, however, that the program output shows several available styles other than regular for the Arial font family. That is because GDI+ can simulate the bold, italic, and bold italic styles from the regular style. GDI+ can also produce underlines and strikeouts from the regular style.  
   
- Similarly, [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can simulate the bold italic style from either the bold style or the italic style. The program output shows that the bold italic style is available for the Times family even though TimesBd.tff (Times New Roman, bold) is the only Times file in the collection.  
+ Similarly, GDI+ can simulate the bold italic style from either the bold style or the italic style. The program output shows that the bold italic style is available for the Times family even though TimesBd.tff (Times New Roman, bold) is the only Times file in the collection.  
   
- [!code-csharp[System.Drawing.FontsAndText#51](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.FontsAndText/CS/Class1.cs#51)]
- [!code-vb[System.Drawing.FontsAndText#51](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#51)]  
+ [!code-csharp[System.Drawing.FontsAndText#51](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.FontsAndText/CS/Class1.cs#51)]
+ [!code-vb[System.Drawing.FontsAndText#51](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#51)]  
   
 ## Compiling the Code  
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
+
 - <xref:System.Drawing.Text.PrivateFontCollection>
-- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)
+- [Using Fonts and Text](using-fonts-and-text.md)

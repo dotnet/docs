@@ -8,4 +8,3 @@
 |Version|4.6|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Drawing.Icon.ToBitmap?displayProperty=nameWithType></li></ul>|
-

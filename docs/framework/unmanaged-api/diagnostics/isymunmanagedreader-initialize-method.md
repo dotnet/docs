@@ -22,11 +22,11 @@ ms.author: "mairaw"
 Initializes the symbol reader with the metadata importer interface that this reader will be associated with, along with the file name of the module.  
   
 > [!NOTE]
->  This method can be called only once, and must be called before any other reader methods.  
+> This method can be called only once, and must be called before any other reader methods.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Initialize (  
     [in]  IUnknown     *importer,  
     [in]  const WCHAR  *filename,  
@@ -34,7 +34,7 @@ HRESULT Initialize (
     [in]  IStream      *pIStream);  
 ```  
   
-#### Parameters  
+## Parameters  
  `importer`  
  [in] The metadata importer interface with which this reader will be associated.  
   
@@ -57,4 +57,5 @@ HRESULT Initialize (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

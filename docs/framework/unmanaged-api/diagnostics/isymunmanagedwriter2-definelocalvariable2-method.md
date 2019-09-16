@@ -23,7 +23,7 @@ Defines a single variable in the current lexical scope. This method can be calle
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineLocalVariable2(  
     [in] const WCHAR  *name,  
     [in] ULONG32      attributes,  
@@ -36,7 +36,7 @@ HRESULT DefineLocalVariable2(
     [in] ULONG32      endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The local variable name.  
   
@@ -71,5 +71,6 @@ HRESULT DefineLocalVariable2(
  **Header:** CorSym.idl  
   
 ## See also
+
 - [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
 - [DefineLocalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)

@@ -23,13 +23,13 @@ Gets a value that indicates whether the debugger is attached to the application 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsAttached (  
     [out] BOOL  *pbAttached  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbAttached`  
  [out] `true` if the debugger is attached to the application domain; otherwise, `false`.  
   

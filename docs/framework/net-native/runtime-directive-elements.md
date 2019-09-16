@@ -18,7 +18,7 @@ The runtime directives (rd.xml) file format supports the following runtime direc
  If its containing [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) directive is an attribute, applies runtime policy to code elements to which that attribute is applied.  
   
  [\<Directives>](../../../docs/framework/net-native/directives-element-net-native.md)  
- The root element in every runtime directives file for [!INCLUDE[net_native](../../../includes/net-native-md.md)]. Its child elements are [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) and [\<Library>](../../../docs/framework/net-native/library-element-net-native.md).  
+ The root element in every runtime directives file for .NET Native. Its child elements are [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) and [\<Library>](../../../docs/framework/net-native/library-element-net-native.md).  
   
  [\<Event>](../../../docs/framework/net-native/event-element-net-native.md)  
  Applies runtime policy to an event. This is a child of the [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) and [\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) elements.  
@@ -63,4 +63,5 @@ The runtime directives (rd.xml) file format supports the following runtime direc
  Applies runtime policy to the type represented by a <xref:System.Type> argument passed to a method.  
   
 ## See also
+
 - [rd.xml Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

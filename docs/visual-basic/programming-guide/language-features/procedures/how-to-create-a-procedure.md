@@ -18,34 +18,34 @@ You enclose a procedure between a starting declaration statement (`Sub` or `Func
   
 ### To create a procedure that does not return a value  
   
-1.  Outside any other procedure, use a `Sub` statement, followed by an `End Sub` statement.  
+1. Outside any other procedure, use a `Sub` statement, followed by an `End Sub` statement.  
   
-2.  In the `Sub` statement, follow the `Sub` keyword with the name of the procedure, then the parameter list in parentheses.  
+2. In the `Sub` statement, follow the `Sub` keyword with the name of the procedure, then the parameter list in parentheses.  
   
-3.  Place the procedure's code statements between the `Sub` and `End Sub` statements.  
+3. Place the procedure's code statements between the `Sub` and `End Sub` statements.  
   
 ### To create a procedure that returns a value  
   
-1.  Outside any other procedure, use a `Function` statement, followed by an `End Function` statement.  
+1. Outside any other procedure, use a `Function` statement, followed by an `End Function` statement.  
   
-2.  In the `Function` statement, follow the `Function` keyword with the name of the procedure, then the parameter list in parentheses, and then an `As` clause specifying the data type of the return value.  
+2. In the `Function` statement, follow the `Function` keyword with the name of the procedure, then the parameter list in parentheses, and then an `As` clause specifying the data type of the return value.  
   
-3.  Place the procedure's code statements between the `Function` and `End Function` statements.  
+3. Place the procedure's code statements between the `Function` and `End Function` statements.  
   
-4.  Use a `Return` statement to return the value to the calling code.  
+4. Use a `Return` statement to return the value to the calling code.  
   
 ### To connect your new procedure with the old, repetitive blocks of code  
   
-1.  Make sure you define the new procedure in a place where the old code has access to it.  
+1. Make sure you define the new procedure in a place where the old code has access to it.  
   
-2.  In your old, repetitive code block, replace the statements that perform the repetitive task with a single statement that calls the `Sub` or `Function` procedure.  
+2. In your old, repetitive code block, replace the statements that perform the repetitive task with a single statement that calls the `Sub` or `Function` procedure.  
   
-3.  If your procedure is a `Function` that returns a value, ensure that your calling statement performs an action with the returned value, such as storing it in a variable, or else the value will be lost.  
+3. If your procedure is a `Function` that returns a value, ensure that your calling statement performs an action with the returned value, such as storing it in a variable, or else the value will be lost.  
   
 ## Example  
  The following `Function` procedure calculates the longest side, or hypotenuse, of a right triangle, given the values for the other two sides.  
   
- [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-create-a-procedure_1.vb)]  
+ [!code-vb[VbVbcnProcedures#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#1)]  
   
 ## See also
 

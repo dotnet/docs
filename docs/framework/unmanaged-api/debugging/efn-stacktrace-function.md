@@ -17,12 +17,12 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# _EFN_StackTrace Function
+# \_EFN\_StackTrace Function
 Provides a text representation of a managed stack trace and an array of `CONTEXT` records, one for each transition between unmanaged and managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CALLBACK _EFN_StackTrace(  
     [in]  PDEBUG_CLIENT  Client,  
     [out] WCHAR          wszTextOut[],  
@@ -34,7 +34,7 @@ HRESULT CALLBACK _EFN_StackTrace(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] The client being debugged.  
   
@@ -59,32 +59,32 @@ HRESULT CALLBACK _EFN_StackTrace(
 ## Remarks  
  The `_EFN_StackTrace` structure can be called from a WinDbg programmatic interface. Parameters are used as follows:  
   
--   If `wszTextOut` is null and `puiTextLength` is not null, the function returns the string length in `puiTextLength`.  
+- If `wszTextOut` is null and `puiTextLength` is not null, the function returns the string length in `puiTextLength`.  
   
--   If `wszTextOut` is not null, the function stores text in `wszTextOut` up to the location indicated by `puiTextLength`. It returns successfully if there was enough room in the buffer, or returns E_OUTOFMEMORY if the buffer was not long enough.  
+- If `wszTextOut` is not null, the function stores text in `wszTextOut` up to the location indicated by `puiTextLength`. It returns successfully if there was enough room in the buffer, or returns E_OUTOFMEMORY if the buffer was not long enough.  
   
--   The transition portion of the function is ignored if `pTransitionContexts` and `puiTransitionContextCount` are both null. In this case, the function provides callers with text output of only the function names.  
+- The transition portion of the function is ignored if `pTransitionContexts` and `puiTransitionContextCount` are both null. In this case, the function provides callers with text output of only the function names.  
   
--   If `pTransitionContexts` is null and `puiTransitionContextCount` is not null, the function returns the necessary number of context entries in `puiTransitionContextCount`.  
+- If `pTransitionContexts` is null and `puiTransitionContextCount` is not null, the function returns the necessary number of context entries in `puiTransitionContextCount`.  
   
--   If `pTransitionContexts` is not null, the function treats it as an array of structures of length `puiTransitionContextCount`. The structure size is given by `uiSizeOfContext`, and must be the size of [SimpleContext](../../../../docs/framework/unmanaged-api/debugging/stacktrace-simplecontext-structure.md) or `CONTEXT` for the architecture.  
+- If `pTransitionContexts` is not null, the function treats it as an array of structures of length `puiTransitionContextCount`. The structure size is given by `uiSizeOfContext`, and must be the size of [SimpleContext](../../../../docs/framework/unmanaged-api/debugging/stacktrace-simplecontext-structure.md) or `CONTEXT` for the architecture.  
   
--   `wszTextOut` is written in the following format:  
+- `wszTextOut` is written in the following format:  
   
-    ```  
+    ```output  
     "<ModuleName>!<Function Name>[+<offset in hex>]  
     ...  
     (TRANSITION)  
     ..."  
     ```  
   
--   If the offset in hex is 0x0, no offset is written.  
+- If the offset in hex is 0x0, no offset is written.  
   
--   If there is no managed code on the thread currently in context, the function returns SOS_E_NOMANAGEDCODE.  
+- If there is no managed code on the thread currently in context, the function returns SOS_E_NOMANAGEDCODE.  
   
--   The `Flags` parameter is either 0 or SOS_STACKTRACE_SHOWADDRESSES to see EBP and ESP in front of each `module!functionname` line. By default, it is 0.  
+- The `Flags` parameter is either 0 or SOS_STACKTRACE_SHOWADDRESSES to see EBP and ESP in front of each `module!functionname` line. By default, it is 0.  
   
-    ```  
+    ```cpp  
     #define SOS_STACKTRACE_SHOWADDRESSES   0x00000001  
     ```  
   
@@ -96,4 +96,5 @@ HRESULT CALLBACK _EFN_StackTrace(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

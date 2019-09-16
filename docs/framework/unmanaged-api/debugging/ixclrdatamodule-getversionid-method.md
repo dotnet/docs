@@ -24,15 +24,15 @@ Gets the module's version identifier.
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetVersionId(
     [out] GUID* vid
 );
 ```
 
-### Parameters
+## Parameters
 
-`vid`
+`vid`\
 [out] The module's version identifier.
 
 ## Remarks
@@ -48,5 +48,5 @@ The provided method is part of the `IXCLRDataModule` interface and corresponds t
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)
+- [Debugging](index.md)
+- [IXCLRDataModule Interface](ixclrdatamodule-interface.md)

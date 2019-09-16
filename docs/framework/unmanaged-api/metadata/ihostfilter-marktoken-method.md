@@ -23,13 +23,13 @@ Indicates that the specified metadata token will be processed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MarkToken (  
     [in]  mdToken         tk  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The metadata token to be processed.  
   
@@ -46,5 +46,6 @@ HRESULT MarkToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
 - [IHostFilter Interface](../../../../docs/framework/unmanaged-api/metadata/ihostfilter-interface.md)

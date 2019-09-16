@@ -22,7 +22,7 @@ Specifies the status of the thread on which the managed debugging assistant (MDA
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugMDAFlags {  
     MDA_FLAG_SLIP = 0x2  
 } CorDebugMDAFlags;  
@@ -47,4 +47,5 @@ typedef enum CorDebugMDAFlags {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

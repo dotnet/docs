@@ -15,7 +15,7 @@ Indicates that the text is multiple lines of code.
 <code>content</code>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text to mark as code.  
   
@@ -27,7 +27,8 @@ Indicates that the text is multiple lines of code.
 ## Example  
  This example uses the \<code> tag to include example code for using the `ID` field.  
   
- [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/code_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#2)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

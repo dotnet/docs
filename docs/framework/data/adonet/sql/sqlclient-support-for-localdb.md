@@ -11,17 +11,15 @@ Beginning in SQL Server code name Denali, a lightweight version of SQL Server, c
   
  To summarize what you can do with LocalDB:  
   
--   Create and start LocalDB instances with sqllocaldb.exe or your app.config file.  
+- Create and start LocalDB instances with sqllocaldb.exe or your app.config file.  
   
--   Use sqlcmd.exe to add and modify databases in a LocalDB instance. For example, `sqlcmd -S (localdb)\myinst`.  
+- Use sqlcmd.exe to add and modify databases in a LocalDB instance. For example, `sqlcmd -S (localdb)\myinst`.  
   
--   Use the `AttachDBFilename` connection string keyword to add a database to your LocalDB instance. When using `AttachDBFilename`, if you do not specify the name of the database with the `Database` connection string keyword, the database will be removed from the LocalDB instance when the application closes.  
+- Use the `AttachDBFilename` connection string keyword to add a database to your LocalDB instance. When using `AttachDBFilename`, if you do not specify the name of the database with the `Database` connection string keyword, the database will be removed from the LocalDB instance when the application closes.  
   
--   Specify a LocalDB instance in your connection string. For example, your instance name is `myInstance`, the connection string would include:  
+- Specify a LocalDB instance in your connection string. For example, your instance name is `myInstance`, the connection string would include:  
   
-    ```  
-    server=(localdb)\\myInstance  
-    ```  
+    `server=(localdb)\\myInstance`  
   
  `User Instance=True` is not allowed when connecting to a LocalDB database.  
   
@@ -30,7 +28,7 @@ Beginning in SQL Server code name Denali, a lightweight version of SQL Server, c
 ## Programmatically Create a Named Instance  
  An application can create a named instance and specify a database as follows:  
   
--   Specify the LocalDB instances to create in the app.config file, as follows.  The version number of the instance should be the same as the version number of your LocalDB installation.  
+- Specify the LocalDB instances to create in the app.config file, as follows.  The version number of the instance should be the same as the version number of your LocalDB installation.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -48,10 +46,11 @@ Beginning in SQL Server code name Denali, a lightweight version of SQL Server, c
     </configuration>  
     ```  
   
--   Specify the name of the instance using the `server` connection string keyword.  The instance name specified in the `server` connection string keyword must match the name specified in the app.config file.  
+- Specify the name of the instance using the `server` connection string keyword.  The instance name specified in the `server` connection string keyword must match the name specified in the app.config file.  
   
--   Use the `AttachDBFilename` connection string keyword to specify the .MDF file.  
+- Use the `AttachDBFilename` connection string keyword to specify the .MDF file.  
   
 ## See also
-- [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [SQL Server Features and ADO.NET](sql-server-features-and-adonet.md)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -23,13 +23,13 @@ Creates a breakpoint at the beginning of this function.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateBreakpoint (  
     [out] ICorDebugFunctionBreakpoint **ppBreakpoint  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppBreakpoint`  
  [out] A pointer to the address of an ICorDebugFunctionBreakpoint object that represents the new breakpoint for the function.  
   

@@ -11,21 +11,22 @@ When implementing a service, you define a number of contracts that describe the 
   
  <xref:System.ServiceModel.Activities.Receive> Activity  
   
--   <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A>  
+- <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A>  
   
--   <xref:System.ServiceModel.Activities.Receive.OperationName%2A>
+- <xref:System.ServiceModel.Activities.Receive.OperationName%2A>
   
--   <xref:System.ServiceModel.Activities.Receive.Action%2A>   
+- <xref:System.ServiceModel.Activities.Receive.Action%2A>   
  
  <xref:System.ServiceModel.Activities.SendReply> Activity  
   
--   <xref:System.ServiceModel.Activities.SendReply.Action%2A>  
+- <xref:System.ServiceModel.Activities.SendReply.Action%2A>  
   
  <xref:System.ServiceModel.Activities.TransactedReceiveScope> Activity  
   
  The end result of contract inference is a description of the service using the same data structures as WCF service and operation contracts. This information is then used to expose WSDL for the workflow service.  
   
 ## See also
+
 - [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
 - [Messaging Activities](../../../../docs/framework/wcf/feature-details/messaging-activities.md)
 - [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md)

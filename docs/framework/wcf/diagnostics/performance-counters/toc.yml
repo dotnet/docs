@@ -1,0 +1,146 @@
+- name: Performance Counters
+  href: index.md
+  items:
+  - name: Operation Performance Counters
+    href: operation-performance-counters.md
+    items:
+    - name: Calls
+      href: calls.md
+    - name: Calls Per Second
+      href: calls-per-second.md
+    - name: Calls Outstanding
+      href: calls-outstanding.md
+    - name: Calls Failed
+      href: calls-failed.md
+    - name: Calls Failed Per Second
+      href: calls-failed-per-second.md
+    - name: Calls Faulted
+      href: calls-faulted.md
+    - name: Calls Faulted Per Second
+      href: calls-faulted-per-second.md
+    - name: Calls Duration
+      href: calls-duration.md
+    - name: Security Validation and Authentication Failures
+      href: security-validation-and-authentication-failures.md
+    - name: Security Validation and Authentication Failures Per Second
+      href: security-validation-and-authentication-failures-per-second.md
+    - name: Security Calls Not Authorized
+      href: security-calls-not-authorized.md
+    - name: Security Calls Not Authorized Per Second
+      href: security-calls-not-authorized-per-second.md
+    - name: Transactions Flowed
+      href: transactions-flowed.md
+    - name: Transactions Flowed Per Second
+      href: transactions-flowed-per-second.md
+  - name: Service Performance Counters
+    href: service-performance-counters.md
+    items:
+    - name: Calls
+      href: service-calls.md
+    - name: Calls Per Second
+      href: service-calls-per-second.md
+    - name: Calls Outstanding
+      href: service-calls-outstanding.md
+    - name: Calls Failed
+      href: service-calls-failed.md
+    - name: Calls Failed Per Second
+      href: service-calls-failed-per-second.md
+    - name: Calls Faulted
+      href: service-calls-faulted.md
+    - name: Calls Faulted Per Second
+      href: service-calls-faulted-per-second.md
+    - name: Calls Duration
+      href: service-calls-duration.md
+    - name: Instances
+      href: instances.md
+    - name: Instances Per Second
+      href: instances-per-second.md
+    - name: Percent of Max Concurrent Calls
+      href: percent-of-max-concurrent-calls.md
+    - name: Percent of Max Concurrent Instances
+      href: percent-of-max-concurrent-instances.md
+    - name: Percent of Max Concurrent Sessions
+      href: percent-of-max-concurrent-sessions.md
+    - name: Queue Dropped Messages
+      href: queue-dropped-messages.md
+    - name: Queue Dropped Messages Per Second
+      href: queue-dropped-messages-per-second.md
+    - name: Queued Poison Messages
+      href: queued-poison-messages.md
+    - name: Queued Poison Messages Per Second
+      href: queued-poison-messages-per-second.md
+    - name: Queued Rejected Messages
+      href: queued-rejected-messages.md
+    - name: Queued Rejected Messages Per Second
+      href: queued-rejected-messages-per-second.md
+    - name: Reliable Messaging Messages Dropped
+      href: reliable-messaging-messages-dropped.md
+    - name: Reliable Messaging Messages Dropped Per Second
+      href: reliable-messaging-messages-dropped-per-second.md
+    - name: Reliable Messaging Sessions Faulted
+      href: reliable-messaging-sessions-faulted.md
+    - name: Reliable Messaging Sessions Faulted Per Second
+      href: reliable-messaging-sessions-faulted-per-second.md
+    - name: Security Calls Not Authorized
+      href: service-security-calls-not-authorized.md
+    - name: Security Calls Not Authorized Per Second
+      href: service-security-calls-not-authorized-per-second.md
+    - name: Security Validation and Authentication Failures
+      href: service-security-validation-and-authentication-failures.md
+    - name: Security Validation and Authentication Failures Per Second
+      href: service-security-validation-and-authentication-failures-per-second.md
+    - name: Transactions Flowed
+      href: service-transactions-flowed.md
+    - name: Transactions Flowed Per Second
+      href: service-transactions-flowed-per-second.md
+    - name: Transacted Operations Aborted
+      href: transacted-operations-aborted.md
+    - name: Transacted Operations Aborted Per Second
+      href: transacted-operations-aborted-per-second.md
+    - name: Transacted Operations Committed
+      href: transacted-operations-committed.md
+    - name: Transacted Operations Committed Per Second
+      href: transacted-operations-committed-per-second.md
+    - name: Transacted Operations In Doubt
+      href: transacted-operations-in-doubt.md
+    - name: Transacted Operations In Doubt Per Second
+      href: transacted-operations-in-doubt-per-second.md
+  - name: Endpoint Performance Counters
+    href: endpoint-performance-counters.md
+    items:
+    - name: Calls
+      href: endpoint-calls.md
+    - name: Calls Per Second
+      href: endpoint-calls-per-second.md
+    - name: Calls Outstanding
+      href: endpoint-calls-outstanding.md
+    - name: Calls Failed
+      href: endpoint-calls-failed.md
+    - name: Calls Failed Per Second
+      href: endpoint-calls-failed-per-second.md
+    - name: Calls Faulted
+      href: endpoint-calls-faulted.md
+    - name: Calls Faulted Per Second
+      href: endpoint-calls-faulted-per-second.md
+    - name: Calls Duration
+      href: endpoint-calls-duration.md
+    - name: Reliable Messaging Messages Dropped
+      href: endpoint-reliable-messaging-messages-dropped.md
+    - name: Reliable Messaging Messages Dropped Per Second
+      href: endpoint-reliable-messaging-messages-dropped-per-second.md
+    - name: Reliable Messaging Sessions Faulted
+      href: endpoint-reliable-messaging-sessions-faulted.md
+    - name: Reliable Messaging Sessions Faulted Per Second
+      href: endpoint-reliable-messaging-sessions-faulted-per-second.md
+    - name: Security Calls Not Authorized
+      href: endpoint-security-calls-not-authorized.md
+    - name: Security Calls Not Authorized Per Second
+      href: endpoint-security-calls-not-authorized-per-second.md
+    - name: Security Validation and Authentication Failures
+      href: endpoint-security-validation-and-authentication-failures.md
+    - name: Security Validation and Authentication Failures Per Second
+      href: endpoint-security-validation-and-authentication-failures-per-second.md
+    - name: Transactions Flowed
+      href: endpoint-transactions-flowed.md
+    - name: Transactions Flowed Per Second
+      href: endpoint-transactions-flowed-per-second.md

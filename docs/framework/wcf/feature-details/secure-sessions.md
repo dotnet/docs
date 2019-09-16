@@ -7,7 +7,7 @@ ms.assetid: 7b50602f-d7b5-42e9-8e92-1f0413df0d8b
 A feature of Windows Communication Foundation (WCF) is reliable sessions that guarantee messages are received in the order they were sent. The topics in this section discuss the security implications to consider when creating a reliable session. For more information about reliable sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
   
 > [!NOTE]
->  When impersonation is required on Windows XP, use a secure session without a stateful security context token (SCT). When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. For more information, see [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
+> When impersonation is required on Windows XP, use a secure session without a stateful security context token (SCT). When stateful SCTs are used with impersonation, an <xref:System.InvalidOperationException> is thrown. For more information, see [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
   
 ## In This Section  
   
@@ -29,6 +29,7 @@ A feature of Windows Communication Foundation (WCF) is reliable sessions that gu
  [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)  
   
 ## See also
+
 - [How to: Enable Message Replay Detection](../../../../docs/framework/wcf/feature-details/how-to-enable-message-replay-detection.md)
 - [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
 - [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)

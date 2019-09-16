@@ -23,13 +23,13 @@ Gets the size, in bytes, of the user string heap.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserStringHeapSize (  
     [out] ULONG   *pcbBlobs  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbBlobs`  
  [out] A pointer to the size, in bytes, of the user string heap.  
   
@@ -43,5 +43,6 @@ HRESULT GetUserStringHeapSize (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

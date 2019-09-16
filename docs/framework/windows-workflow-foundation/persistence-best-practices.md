@@ -20,22 +20,22 @@ This document covers best practices for workflow design and configuration relate
 ## Configuration of Scalability Parameters  
  Scalability and performance requirements determine the settings of the following parameters:  
   
--   <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A>  
+- <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A>  
   
--   <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A>  
+- <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A>  
   
--   <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceLockedExceptionAction%2A>  
+- <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceLockedExceptionAction%2A>  
   
  These parameters should be set as follows, according to the current scenario.  
   
 ### Scenario: A Small Number of Workflow Instances That Require Optimal Response Time  
  In this scenario, all workflow instances should remain loaded when they become idle. Set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> to a large value. The use of this setting prevents a workflow instance from moving between computers. Use this setting only if one or more of the following are true:  
   
--   A workflow instance receives a single message throughout its lifetime.  
+- A workflow instance receives a single message throughout its lifetime.  
   
--   All workflow instances run on a single computer  
+- All workflow instances run on a single computer  
   
--   All messages that are received by a workflow instance are received by the same computer.  
+- All messages that are received by a workflow instance are received by the same computer.  
   
  Use <xref:System.Activities.Statements.Persist> activities or set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A> to 0 to enable recovery of your workflow instance after service host or computer failures.  
   

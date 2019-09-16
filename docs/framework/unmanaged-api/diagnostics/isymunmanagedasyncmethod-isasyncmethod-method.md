@@ -16,7 +16,7 @@ Checks if the method has async information or not.
 HRESULT IsAsyncMethod(    [out, retval] BOOL* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
@@ -29,4 +29,5 @@ HRESULT IsAsyncMethod(    [out, retval] BOOL* pRetVal);
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)

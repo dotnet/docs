@@ -33,8 +33,8 @@ Contains cryptography settings.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<cryptoNameMapping>](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptonamemapping-element.md)|Contains mappings of classes to friendly names.|  
-|[\<oidMap>](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidmap-element.md)|Contains ASN.1 object identifier (OID) mappings to classes.|  
+|[\<cryptoNameMapping>](cryptonamemapping-element.md)|Contains mappings of classes to friendly names.|  
+|[\<oidMap>](oidmap-element.md)|Contains ASN.1 object identifier (OID) mappings to classes.|  
   
 ### Parent Elements  
   
@@ -71,6 +71,7 @@ Contains cryptography settings.
 ```  
   
 ## See also
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+
+- [Configuration File Schema](../index.md)
+- [Cryptography Settings Schema](index.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)

@@ -23,13 +23,13 @@ Gets the reason for the genesis of this calling chain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReason (  
     [out] CorDebugChainReason *pReason  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pReason`  
  [out] A pointer to a value (a bitwise combination) of the CorDebugChainReason enumeration that indicates the reason for the genesis of this calling chain.  
   

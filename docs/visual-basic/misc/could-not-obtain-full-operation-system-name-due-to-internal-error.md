@@ -12,11 +12,12 @@ Could not obtain full operation system name due to internal error. This might be
   
 ## To correct this error  
   
-1.  Add a `Try...Catch` block around the call to the `My.Computer.Info.OSFullName` property.  
+1. Add a `Try...Catch` block around the call to the `My.Computer.Info.OSFullName` property.  
   
-2.  For more information about WMI and how to install it, go to  and search for "Windows Management Instrumentation Core".  
+2. For more information about WMI and how to install it, go to  and search for "Windows Management Instrumentation Core".  
   
 ## See also
+
 - [My.Computer.Info.OSFullName](xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName)
-- [Exception and Error Handling in Visual Basic](https://msdn.microsoft.com/library/3e351e73-cf23-40ab-8b60-05794160529e)
+- [Handling and throwing exceptions in .NET](../../standard/exceptions/index.md)
 - [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

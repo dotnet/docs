@@ -11,13 +11,13 @@ ms.assetid: 5e65a6c3-5d6f-480d-beb8-b28f865f07e3
 Windows Forms offers controls and components that perform a number of functions. The following table lists the Windows Forms controls and components according to general function. In addition, where multiple controls exist that serve the same function, the recommended control is listed with a note regarding the control it superseded. In a separate subsequent table, the superseded controls are listed with their recommended replacements.  
   
 > [!NOTE]
->  The following tables do not list every control or component you can use in Windows Forms; for a more comprehensive list, see [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
+> The following tables do not list every control or component you can use in Windows Forms; for a more comprehensive list, see [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
   
 ## Recommended Controls and Components by Function  
   
 |Function|Control|Description|  
 |--------------|-------------|-----------------|  
-|Data display|<xref:System.Windows.Forms.DataGridView> control|The <xref:System.Windows.Forms.DataGridView> control provides a customizable table for displaying data. The <xref:System.Windows.Forms.DataGridView> class enables customization of cells, rows, columns, and borders. **Note:**  The <xref:System.Windows.Forms.DataGridView> control provides numerous basic and advanced features that are missing in the <xref:System.Windows.Forms.DataGrid> control. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)|  
+|Data display|<xref:System.Windows.Forms.DataGridView> control|The <xref:System.Windows.Forms.DataGridView> control provides a customizable table for displaying data. The <xref:System.Windows.Forms.DataGridView> class enables customization of cells, rows, columns, and borders. **Note:**  The <xref:System.Windows.Forms.DataGridView> control provides numerous basic and advanced features that are missing in the <xref:System.Windows.Forms.DataGrid> control. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)|  
 |Data binding and navigation|<xref:System.Windows.Forms.BindingSource> component|Simplifies binding controls on a form to data by providing currency management, change notification, and other services.|  
 ||<xref:System.Windows.Forms.BindingNavigator> control|Provides a toolbar-type interface to navigate and manipulate data on a form.|  
 |Text editing|<xref:System.Windows.Forms.TextBox> control|Displays text entered at design time that can be edited by users at run time, or changed programmatically.|  
@@ -79,5 +79,6 @@ Windows Forms offers controls and components that perform a number of functions.
 |Form layout|<xref:System.Windows.Forms.Splitter>|<xref:System.Windows.Forms.SplitContainer>|  
   
 ## See also
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
-- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)
+
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
+- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)

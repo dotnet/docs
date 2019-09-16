@@ -18,5 +18,6 @@ Windows Communication Foundation (WCF) supports the metadata formats in the foll
 |WS Addressing Binding for WSDL|[Web Services Addressing 1.0 - WSDL Binding](https://go.microsoft.com/fwlink/?LinkId=94869)<br /><br /> WCF implements WS-Addressing Binding for WSDL to attach addressing information in WSDL.|  
   
 ## See also
+
 - [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)
 - [WSDL and Policy](../../../../docs/framework/wcf/feature-details/wsdl-and-policy.md)

@@ -22,7 +22,7 @@ Indicates a property of a garbage collection root.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_GC_ROOT_PINNING = 0x1,  
     COR_PRF_GC_ROOT_WEAKREF = 0x2,  
@@ -53,4 +53,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

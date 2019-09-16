@@ -13,14 +13,14 @@ With the Windows Forms <xref:System.Windows.Forms.TreeView> control, you can dis
 
 ## Key Properties
 
-The key properties of the <xref:System.Windows.Forms.TreeView> control are <xref:System.Windows.Forms.TreeView.Nodes%2A> and <xref:System.Windows.Forms.TreeView.SelectedNode%2A>. The <xref:System.Windows.Forms.TreeView.Nodes%2A> property contains the list of top-level nodes in the tree view. The <xref:System.Windows.Forms.TreeView.SelectedNode%2A> property sets the currently selected node. You can display icons next to the nodes. The control uses images from the <xref:System.Windows.Forms.ImageList> named in the tree view's <xref:System.Windows.Forms.TreeView.ImageList%2A> property. The <xref:System.Windows.Forms.TreeView.ImageIndex%2A> property sets the default image for nodes in the tree view. For more information about displaying images, see [How to: Set Icons for the Windows Forms TreeView Control](../../../../docs/framework/winforms/controls/how-to-set-icons-for-the-windows-forms-treeview-control.md). If you are using Visual Studio 2005, you have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.TreeView> control.
+The key properties of the <xref:System.Windows.Forms.TreeView> control are <xref:System.Windows.Forms.TreeView.Nodes%2A> and <xref:System.Windows.Forms.TreeView.SelectedNode%2A>. The <xref:System.Windows.Forms.TreeView.Nodes%2A> property contains the list of top-level nodes in the tree view. The <xref:System.Windows.Forms.TreeView.SelectedNode%2A> property sets the currently selected node. You can display icons next to the nodes. The control uses images from the <xref:System.Windows.Forms.ImageList> named in the tree view's <xref:System.Windows.Forms.TreeView.ImageList%2A> property. The <xref:System.Windows.Forms.TreeView.ImageIndex%2A> property sets the default image for nodes in the tree view. For more information about displaying images, see [How to: Set Icons for the Windows Forms TreeView Control](how-to-set-icons-for-the-windows-forms-treeview-control.md). If you are using Visual Studio 2005, you have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.TreeView> control.
 
 ## See also
 
 - <xref:System.Windows.Forms.TreeView>
-- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)
-- [How to: Set Icons for the Windows Forms TreeView Control](../../../../docs/framework/winforms/controls/how-to-set-icons-for-the-windows-forms-treeview-control.md)
-- [How to: Add and Remove Nodes with the Windows Forms TreeView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-nodes-with-the-windows-forms-treeview-control.md)
-- [How to: Iterate Through All Nodes of a Windows Forms TreeView Control](../../../../docs/framework/winforms/controls/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control.md)
-- [How to: Determine Which TreeView Node Was Clicked](../../../../docs/framework/winforms/controls/how-to-determine-which-treeview-node-was-clicked-windows-forms.md)
-- [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](../../../../docs/framework/winforms/controls/add-custom-information-to-a-treeview-or-listview-control-wf.md)
+- [TreeView Control](treeview-control-windows-forms.md)
+- [How to: Set Icons for the Windows Forms TreeView Control](how-to-set-icons-for-the-windows-forms-treeview-control.md)
+- [How to: Add and Remove Nodes with the Windows Forms TreeView Control](how-to-add-and-remove-nodes-with-the-windows-forms-treeview-control.md)
+- [How to: Iterate Through All Nodes of a Windows Forms TreeView Control](how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control.md)
+- [How to: Determine Which TreeView Node Was Clicked](how-to-determine-which-treeview-node-was-clicked-windows-forms.md)
+- [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](add-custom-information-to-a-treeview-or-listview-control-wf.md)

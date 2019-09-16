@@ -16,11 +16,11 @@ ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
 # Optional Parameters (Visual Basic)
 You can specify that a procedure parameter is optional and no argument has to be supplied for it when the procedure is called. *Optional parameters* are indicated by the `Optional` keyword in the procedure definition. The following rules apply:  
   
--   Every optional parameter in the procedure definition must specify a default value.  
+- Every optional parameter in the procedure definition must specify a default value.  
   
--   The default value for an optional parameter must be a constant expression.  
+- The default value for an optional parameter must be a constant expression.  
   
--   Every parameter following an optional parameter in the procedure definition must also be optional.  
+- Every parameter following an optional parameter in the procedure definition must also be optional.  
   
  The following syntax shows a procedure declaration with an optional parameter:  
   
@@ -41,12 +41,12 @@ Sub name(argument 1, , , argument 4)
   
  The first call to `MsgBox` supplies all three arguments in the order that `MsgBox` defines them. The second call supplies only the required argument. The third and fourth calls supply the first and third arguments. The third call does this by position, and the fourth call does it by name.  
   
- [!code-vb[VbVbcnProcedures#47](./codesnippet/VisualBasic/optional-parameters_1.vb)]  
+ [!code-vb[VbVbcnProcedures#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#47)]  
   
 ## Determining Whether an Optional Argument Is Present  
  A procedure cannot detect at run time whether a given argument has been omitted or the calling code has explicitly supplied the default value. If you need to make this distinction, you can set an unlikely value as the default. The following procedure defines the optional parameter `office`, and tests for its default value, `QJZ`, to see if it has been omitted in the call:  
   
- [!code-vb[VbVbcnProcedures#46](./codesnippet/VisualBasic/optional-parameters_2.vb)]  
+ [!code-vb[VbVbcnProcedures#46](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#46)]  
   
  If the optional parameter is a reference type such as a `String`, you can use `Nothing` as the default value, provided this is not an expected value for the argument.  
   
@@ -54,6 +54,7 @@ Sub name(argument 1, , , argument 4)
  Another way to define a procedure with optional parameters is to use overloading. If you have one optional parameter, you can define two overloaded versions of the procedure, one accepting the parameter and one without it. This approach becomes more complicated as the number of optional parameters increases. However, its advantage is that you can be absolutely sure whether the calling program supplied each optional argument.  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)

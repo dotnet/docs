@@ -12,7 +12,7 @@ ms.assetid: cb3eb0a8-60b1-483e-a03f-93b0b1351dae
 The <xref:System.Windows.Forms.ToolStripProgressBar> combines <xref:System.Windows.Forms.ToolStrip> rendering and rafting features with its typical process-tracking functionality.  
   
 ## In This Section  
- [ToolStripProgressBar Control Overview](../../../../docs/framework/winforms/controls/toolstripprogressbar-control-overview.md)  
+ [ToolStripProgressBar Control Overview](toolstripprogressbar-control-overview.md)  
  Provides topics that describe the purpose and main concepts of the Windows Forms <xref:System.Windows.Forms.ToolStripProgressBar> control.  
   
 ## Reference  
@@ -23,4 +23,5 @@ The <xref:System.Windows.Forms.ToolStripProgressBar> combines <xref:System.Windo
  Provides reference documentation for the <xref:System.Windows.Forms.ToolStripProgressBar> control.  
   
 ## See also
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

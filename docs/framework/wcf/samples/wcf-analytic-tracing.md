@@ -16,11 +16,11 @@ This sample demonstrates how to add your own tracing events into the stream of a
 ## Self-Hosting vs. Web Hosting  
  For Web-hosted services, WCF’s analytic traces provide a field, called "HostReference", which is used to identify the service that is emitting the traces. The extensible user traces can participate in this model and this sample demonstrates best practices for doing so. The format of a Web host reference when the pipe ‘&#124;’ character actually appears in the resulting string can be any one of the following:  
   
--   If the application is not at the root.  
+- If the application is not at the root.  
   
      \<SiteName>\<ApplicationVirtualPath>&#124;\<ServiceVirtualPath>&#124;\<ServiceName>  
   
--   If the application is at the root.  
+- If the application is at the root.  
   
      \<SiteName>&#124;\<ServiceVirtualPath>&#124;\<ServiceName>  
   
@@ -37,31 +37,31 @@ This sample demonstrates how to add your own tracing events into the stream of a
   
 #### To use this sample  
   
-1.  Using Visual Studio 2012, open the WCFAnalyticTracingExtensibility.sln solution file.  
+1. Using Visual Studio 2012, open the WCFAnalyticTracingExtensibility.sln solution file.  
   
-2.  To build the solution, press CTRL+SHIFT+B.  
+2. To build the solution, press CTRL+SHIFT+B.  
   
-3.  To run the solution, press CTRL+F5.  
+3. To run the solution, press CTRL+F5.  
   
      In the Web browser, click **Calculator.svc**. The URI of the WSDL document for the service should appear in the browser. Copy that URI.  
   
-4.  Run the WCF test client (WcfTestClient.exe).  
+4. Run the WCF test client (WcfTestClient.exe).  
   
      The WCF test client (WcfTestClient.exe) is located at `\<Visual Studio 2012 Install Dir>\Common7\IDE\WcfTestClient.exe`. The default Visual Studio 2012 install dir is `C:\Program Files\Microsoft Visual Studio 10.0`.  
   
-5.  Within the WCF test client, add the service by selecting **File**, and then **Add Service**.  
+5. Within the WCF test client, add the service by selecting **File**, and then **Add Service**.  
   
      Add the endpoint address in the input box.  
   
-6.  Click **OK** to close the dialog.  
+6. Click **OK** to close the dialog.  
   
      The ICalculator service is added in the left pane under **My Service Projects**.  
   
-7.  Open the Event Viewer application.  
+7. Open the Event Viewer application.  
   
      Before invoking the service, start Event Viewer and ensure that the event log is listening for tracking events emitted from the WCF service.  
   
-8.  From the **Start** menu, select **Administrative Tools**, and then **Event Viewer**. Enable the **Analytic** and **Debug** logs.  
+8. From the **Start** menu, select **Administrative Tools**, and then **Event Viewer**. Enable the **Analytic** and **Debug** logs.  
   
 9. In the tree view in Event Viewer, navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application Server-Applications**. Right-click **Application Server-Applications**, select **View**, and then **Show Analytic and Debug Logs**.  
   
@@ -71,13 +71,13 @@ This sample demonstrates how to add your own tracing events into the stream of a
   
 10. Test the service using the WCF Test Client.  
   
-    1.  In the WCF Test Client, double-click **Add()** under the ICalculator service node.  
+    1. In the WCF Test Client, double-click **Add()** under the ICalculator service node.  
   
          The **Add()** method appears in the right pane with two parameters.  
   
-    2.  Type in 2 for the first parameter and 3 for the second parameter.  
+    2. Type in 2 for the first parameter and 3 for the second parameter.  
   
-    3.  Click **Invoke** to invoke the method.  
+    3. Click **Invoke** to invoke the method.  
   
 11. Go to the **Event Viewer** window that you have already opened. Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**.  
   
@@ -91,25 +91,26 @@ This sample demonstrates how to add your own tracing events into the stream of a
   
 #### To clean up (Optional)  
   
-1.  Open **Event Viewer**.  
+1. Open **Event Viewer**.  
   
-2.  Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application-Server-Applications**. Right-click **Analytic** and select **Disable Log**.  
+2. Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application-Server-Applications**. Right-click **Analytic** and select **Disable Log**.  
   
-3.  Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application-Server-Applications**, and then **Analytic**. Right-click **Analytic** and select **Clear Log**.  
+3. Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application-Server-Applications**, and then **Analytic**. Right-click **Analytic** and select **Clear Log**.  
   
-4.  Click **Clear** to clear the events.  
+4. Click **Clear** to clear the events.  
   
 ## Known Issue  
  There is a known issue in the **Event Viewer** where it may fail to decode ETW events. You may see an error message that says: "The description for Event ID \<id> from source Microsoft-Windows-Application Server-Applications cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer." If you encounter this error, select **Refresh** from the **Actions** menu. The event should then decode properly.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTrace`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTrace`  
   
 ## See also
+
 - [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

@@ -23,7 +23,7 @@ Gets the metadata signature of the method referenced by the specified MethodSpec
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodSpecProps (  
    [in]  mdMethodSpec     mi,  
    [out] mdToken          *tkParent,  
@@ -32,7 +32,7 @@ HRESULT GetMethodSpecProps (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `mi`  
  [in] A MethodSpec token that represents the instantiation of the method.  
   
@@ -55,5 +55,6 @@ HRESULT GetMethodSpecProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

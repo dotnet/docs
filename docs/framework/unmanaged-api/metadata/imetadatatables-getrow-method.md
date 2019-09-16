@@ -23,7 +23,7 @@ Gets the row at the specified row index, in the table at the specified table ind
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRow (   
     [in]  ULONG   ixTbl,  
     [in]  ULONG   rid,  
@@ -31,7 +31,7 @@ HRESULT GetRow (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixTbl`  
  [in] The index of the table from which the row will be retrieved.  
   
@@ -54,5 +54,6 @@ HRESULT GetRow (
  **.NET Framework Versions**  [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

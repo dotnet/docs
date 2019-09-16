@@ -23,13 +23,13 @@ Gets an interface pointer to an ICorDebugClass that represents the uninstantiate
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClass (  
     [out] ICorDebugClass   **ppClass  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppClass`  
  [out] A pointer to the address of an `ICorDebugClass` interface that represents the uninstantiated generic type.  
   

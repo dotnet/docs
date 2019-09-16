@@ -18,46 +18,46 @@ ms.author: "andrewau"
 ---
 # ISOSDacInterface::GetMethodDescData Method
 
-Gets the data for the given [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md).
+Gets the data for the given MethodDesc pointer.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetMethodDescData(
     CLRDATA_ADDRESS            methodDesc,
     CLRDATA_ADDRESS            ip,
-    void                       *data,
+    DacpMethodDescData *data,
     ULONG                      cRevertedRejitVersions,
-    void                      *rgRevertedRejitData,
+    DacpReJitData      *rgRevertedRejitData,
     void                      *pcNeededRevertedRejitData
 );
 ```
 
-### Parameters
+## Parameters
 
-`methodDesc`
+`methodDesc`\
 [in] The address of the MethodDesc.
 
-`ip`
+`ip`\
 [in] The IP address of the method.
 
-`data`
-[out] The data associated with the MethodDesc as returned from the internal APIs. The structure needs at least 168 bytes.
+`data`\
+[out] The data associated with the MethodDesc as returned from the internal APIs.
 
-`cRevertedRejitVersions`
+`cRevertedRejitVersions`\
 [out] The number of reverted rejit versions.
 
-`rgRevertedRejitData`
-[out] The data associated with the reverted rejit versions as returned from the internal APIs. The structure needs at least 24 bytes.
+`rgRevertedRejitData`\
+[out] The data associated with the reverted rejit versions as returned from the internal APIs.
 
-`pcNeededRevertedRejitData`
+`pcNeededRevertedRejitData`\
 [out] The number of bytes required to store the data associated with the reverted ReJit versions.
 
 ## Remarks
 
-The provided method is part of the `ISOSDacInterface` interface and corresponds to the 20th slot of the virtual method table. Also the `CLRDATA_ADDRESS` are 64-bit unsigned integer.
+The provided method is part of the `ISOSDacInterface` interface and corresponds to the 20th slot of the virtual method table. To be able to use them, [`CLRDATA_ADDRESS`](../common-data-types-unmanaged-api-reference.md) must be defined as a 64-bit unsigned integer.
 
 ## Requirements
 
@@ -68,5 +68,5 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [ISOSDacInterface Interface](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md)
+- [Debugging](index.md)
+- [ISOSDacInterface Interface](isosdacinterface-interface.md)

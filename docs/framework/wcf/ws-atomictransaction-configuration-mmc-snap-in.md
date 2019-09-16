@@ -44,7 +44,7 @@ regasm.exe /codebase WsatUI.dll
  This is the value of the HTTPS port used for WS-AT. The value must be a number in the range 1-65535 (as to represent a valid port). Changing the HTTP Port modifies the HTTP Service Configuration, which means that the previously used WS-AT Service Address is released, and a new WS-AT Service Address is registered based on the new port. In addition, the newly selected port is encrypted with the currently selected certificate for SSL Encryption.  
   
 > [!NOTE]
->  If you have already enabled the firewall before running this tool, the port is automatically registered in the exception list. If the firewall is disabled before running this tool, nothing additional is configured regarding the firewall.  
+> If you have already enabled the firewall before running this tool, the port is automatically registered in the exception list. If the firewall is disabled before running this tool, nothing additional is configured regarding the firewall.  
   
  If you enable the firewall after configuring WS-AT, you must run this tool again and supply the port number using this parameter. If you disable the firewall after configuring, WS-AT continues to work without additional input.  
   
@@ -53,7 +53,7 @@ regasm.exe /codebase WsatUI.dll
  Clicking the **Select** button displays a list with the currently available certificates on the Local Machine, allowing the user to select the certificate that can be used for SSL encryption. The certificates must have a private key. Otherwise, you receive an error message.  
   
 > [!NOTE]
->  When you set an SSL certificate for a selected port, you overwrite the original SSL certificate associated with that port if one exists.  
+> When you set an SSL certificate for a selected port, you overwrite the original SSL certificate associated with that port if one exists.  
   
  **Authorized Accounts**  
   
@@ -76,11 +76,12 @@ regasm.exe /codebase WsatUI.dll
  You can also specify logging sessions in the **Logging Session** group box.  
   
 > [!NOTE]
->  When another trace consumer is using the WS-AT trace provider, you cannot create a new logging session for trace events. Any attempt to configure logging during this time results in the error message "Failed to enable provider. Error code: 1".  
+> When another trace consumer is using the WS-AT trace provider, you cannot create a new logging session for trace events. Any attempt to configure logging during this time results in the error message "Failed to enable provider. Error code: 1".  
   
  For more information about tracing and logging, see [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md).  
   
 ## See also
+
 - [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)
 - [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
 - [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md)

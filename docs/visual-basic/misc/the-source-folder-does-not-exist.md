@@ -8,9 +8,10 @@ You attempted an operation that references a source folder that does not exist. 
   
 ## To correct this error  
   
--   Check that you are using the correct path, particularly if you are using relative paths.  
+- Check that you are using the correct path, particularly if you are using relative paths.  
   
 ## See also
+
 - [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
 - [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
 - [Creating, Deleting, and Moving Files and Directories](../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)

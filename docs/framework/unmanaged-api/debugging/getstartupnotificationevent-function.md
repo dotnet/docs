@@ -24,7 +24,7 @@ Creates or opens an event handle that will be signaled upon by any common langua
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStartupNotificationEvent  
     (  
     [in]  DWORD     debuggeePID,  
@@ -32,7 +32,7 @@ HRESULT GetStartupNotificationEvent
     );  
 ```  
   
-#### Parameters  
+## Parameters  
  `debuggeePID`  
  [in] Process identifier of the target process from which to receive CLR startup notifications.  
   

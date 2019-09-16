@@ -13,13 +13,13 @@ ms.assetid: 26710879-12ad-4c63-9bc6-a1834bb4243b
 The following topics describe how to use [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] brushes to "paint" content to the screen  
   
 ## In This Section  
- [WPF Brushes Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-brushes-overview.md)  
- [Brush Transformation Overview](../../../../docs/framework/wpf/graphics-multimedia/brush-transformation-overview.md)  
- [Opacity Masks Overview](../../../../docs/framework/wpf/graphics-multimedia/opacity-masks-overview.md)  
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
- [TileBrush Overview](../../../../docs/framework/wpf/graphics-multimedia/tilebrush-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/brushes-how-to-topics.md)  
+ [WPF Brushes Overview](wpf-brushes-overview.md)  
+ [Brush Transformation Overview](brush-transformation-overview.md)  
+ [Opacity Masks Overview](opacity-masks-overview.md)  
+ [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md)  
+ [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md)  
+ [TileBrush Overview](tilebrush-overview.md)  
+ [How-to Topics](brushes-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Media.Brush>  
@@ -35,6 +35,6 @@ The following topics describe how to use [!INCLUDE[TLA#tla_winclient](../../../.
  <xref:System.Windows.Media.VisualBrush>  
   
 ## Related Sections  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
+ [Graphics and Multimedia](index.md)  
   
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+ [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)

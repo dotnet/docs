@@ -23,7 +23,7 @@ XAML 2009 introduces XAML language-level support for several data types that are
 ## Previous Techniques for Language Primitives in XAML Markup  
  In XAML for previous WPF versions, you could reference the CLR language primitives by mapping the assembly and namespace that contained a CLR primitive definition class for the .NET Framework. Most of these are in the mscorlib assembly and <xref:System> namespace. For example, to use <xref:System.Int32>, you could declare the following mapping (with an example usage shown thereafter):  
   
-```  
+```xaml  
 <Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"   
 xmlns:sys="clr-namespace:System;assembly=mscorlib">  
@@ -119,7 +119,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib">
 ### x:Array  
  For CLR backing, the `x:Array` primitive corresponds to <xref:System.Array>.  
   
- You can define an array in XAML 2006  by using a markup extension syntax; however, the XAML 2009 syntax is a language-defined primitive that does not require accessing a markup extension. For more information about XAML 2006 support, see [x:Array Markup Extension](../../../docs/framework/xaml-services/x-array-markup-extension.md).  
+ You can define an array in XAML 2006  by using a markup extension syntax; however, the XAML 2009 syntax is a language-defined primitive that does not require accessing a markup extension. For more information about XAML 2006 support, see [x:Array Markup Extension](x-array-markup-extension.md).  
   
  For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.18](https://go.microsoft.com/fwlink/?LinkId=114525).  
   

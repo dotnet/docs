@@ -24,7 +24,7 @@ foreach (XAttribute a in listOfAttributes)
   
  This code produces the following output:  
   
-```  
+```output  
 ID="1243"  
 Type="int"  
 ConvertableTo="double"  
@@ -32,4 +32,4 @@ ConvertableTo="double"
   
 ## See also
 
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [LINQ to XML Axes (C#)](./linq-to-xml-axes-overview.md)

@@ -15,11 +15,11 @@ This topic describes how you can protect sensitive data from being exposed in me
   
  The following tips can help you to prevent the content of a log file from being exposed unintentionally:  
   
--   Ensure that the log files are protected by Access Control Lists (ACL) both in Web-host and self-host scenarios.  
+- Ensure that the log files are protected by Access Control Lists (ACL) both in Web-host and self-host scenarios.  
   
--   Choose a file extension that cannot be easily served using a Web request. For example, the .xml file extension is not a safe choice. You can check the Internet Information Services (IIS) administration guide to see a list of extensions that can be served.  
+- Choose a file extension that cannot be easily served using a Web request. For example, the .xml file extension is not a safe choice. You can check the Internet Information Services (IIS) administration guide to see a list of extensions that can be served.  
   
--   Specify an absolute path for the log file location, which should be outside of the Web host vroot public directory to prevent it from being accessed by an external party using a Web browser.  
+- Specify an absolute path for the log file location, which should be outside of the Web host vroot public directory to prevent it from being accessed by an external party using a Web browser.  
   
  By default, keys and personally identifiable information (PII) such as username and password are not logged in traces and logged messages. A machine administrator, however, can use the `enableLoggingKnownPII` attribute in the `machineSettings` element of the Machine.config file to permit applications running on the machine to log known personally identifiable information (PII). The following configuration demonstrates how to do this:  
   
@@ -51,7 +51,7 @@ This topic describes how you can protect sensitive data from being exposed in me
  Only when both settings are `true` is PII logging enabled. The combination of two switches allows the flexibility to log known PII for each application.  
   
 > [!IMPORTANT]
->  In [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] the `logEntireMessage` and `logKnownPii` flags must also be set to `true` in the Web.config file or the App.config file to enable PII logging, as show in the following example `<system.serviceModel><messageLogging logEntireMessage="true" logKnownPii="true" …`.  
+> In [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] the `logEntireMessage` and `logKnownPii` flags must also be set to `true` in the Web.config file or the App.config file to enable PII logging, as show in the following example `<system.serviceModel><messageLogging logEntireMessage="true" logKnownPii="true" …`.  
   
  You should be aware that if you specify two or more custom sources in a configuration file, only the attributes of the first source are read. The others are ignored. This means that, for the following App.config, file, PII is not logged for both sources even though PII logging is explicitly enabled for the second source.  
   
@@ -85,7 +85,7 @@ This topic describes how you can protect sensitive data from being exposed in me
  The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion about privacy and protecting PII from being exposed, see [User Privacy](https://go.microsoft.com/fwlink/?LinkID=94647).  
   
 > [!CAUTION]
->  PII is not hidden in malformed messages. Such messaged are logged as-is without any modification. Attributes mentioned previously have no effect on this.  
+> PII is not hidden in malformed messages. Such messaged are logged as-is without any modification. Attributes mentioned previously have no effect on this.  
   
 ### Custom Trace Listener  
  Adding a custom trace listener on the Message Logging trace source is a privilege that should be restricted to the administrator. This is because malicious custom listeners can be configured to send messages remotely, which leads to sensitive information disclosure. In addition, if you configure a custom listener to send messages on the wire, such as, to a remote database, you should enforce proper access control on the message logs in the remote machine.  
@@ -93,16 +93,17 @@ This topic describes how you can protect sensitive data from being exposed in me
 ## Events Triggered by Message Logging  
  The following lists all the events emitted by message logging.  
   
--   Message logging on: This event is emitted when message logging is enabled in configuration, or through WMI. The content of the event is "Message logging has been turned on. Sensitive information may be logged in clear text, even if they were encrypted on the wire, for example, message bodies."  
+- Message logging on: This event is emitted when message logging is enabled in configuration, or through WMI. The content of the event is "Message logging has been turned on. Sensitive information may be logged in clear text, even if they were encrypted on the wire, for example, message bodies."  
   
--   Message logging off: This event is emitted when message logging is disabled through WMI. The content of the event is "Message logging has been turned off."  
+- Message logging off: This event is emitted when message logging is disabled through WMI. The content of the event is "Message logging has been turned off."  
   
--   Log Known PII On: This event is emitted when logging of known PII is enabled. This happens when the `enableLoggingKnownPii` attribute in the `machineSettings` element of the Machine.config file is set to `true`, and the `logKnownPii` attribute of the `source` element in either the App.config or Web.config file is set to `true`.  
+- Log Known PII On: This event is emitted when logging of known PII is enabled. This happens when the `enableLoggingKnownPii` attribute in the `machineSettings` element of the Machine.config file is set to `true`, and the `logKnownPii` attribute of the `source` element in either the App.config or Web.config file is set to `true`.  
   
--   Log Known PII Not Allowed: This event is emitted when logging of known PII is not allowed. This happens when the `logKnownPii` attribute of the `source` element in either the App.config or Web.config file is set to `true`, but the `enableLoggingKnownPii` attribute in the `machineSettings` element of the Machine.config file is set to `false`. No exception is thrown.  
+- Log Known PII Not Allowed: This event is emitted when logging of known PII is not allowed. This happens when the `logKnownPii` attribute of the `source` element in either the App.config or Web.config file is set to `true`, but the `enableLoggingKnownPii` attribute in the `machineSettings` element of the Machine.config file is set to `false`. No exception is thrown.  
   
- These events can be viewed in the Event Viewer tool that comes with Windows. For more information on this, see [Event Logging](../../../../docs/framework/wcf/diagnostics/event-logging/index.md).  
+ These events can be viewed in the Event Viewer tool that comes with Windows. For more information on this, see [Event Logging](./event-logging/index.md).  
   
 ## See also
-- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)
-- [Security Concerns and Useful Tips for Tracing](../../../../docs/framework/wcf/diagnostics/tracing/security-concerns-and-useful-tips-for-tracing.md)
+
+- [Message Logging](message-logging.md)
+- [Security Concerns and Useful Tips for Tracing](./tracing/security-concerns-and-useful-tips-for-tracing.md)

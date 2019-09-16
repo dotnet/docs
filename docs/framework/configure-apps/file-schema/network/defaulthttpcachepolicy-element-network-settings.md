@@ -47,7 +47,7 @@ Describes whether HTTP caching is active and describes the default caching polic
   
 |Element|Description|  
 |-------------|-----------------|  
-|[requestCaching](../../../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)|Controls the caching mechanism for network requests.|  
+|[requestCaching](requestcaching-element-network-settings.md)|Controls the caching mechanism for network requests.|  
   
 ## Remarks  
  The value for the `policyLevel` attribute is either `BypassCache` or `Default`.  
@@ -75,7 +75,8 @@ Describes whether HTTP caching is active and describes the default caching polic
 ```  
   
 ## See also
+
 - <xref:System.Net.Cache>
 - <xref:System.Net.WebRequest>
 - <xref:System.Net.Cache.RequestCacheLevel>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

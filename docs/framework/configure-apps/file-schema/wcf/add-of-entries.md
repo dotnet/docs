@@ -6,12 +6,13 @@ ms.assetid: 3af4805b-dc72-4f68-b168-da4fba8c6170
 # \<add> of \<entries>
 Represents a routing entry that maps a filter to a client endpoint that was previously defined. Messages matching this filter will be sent to this destination.  
   
- \<system.serviceModel>  
-\<routing>  
-\<filterTables>  
-\<filterTable>  
-\<entries>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<filterTables>**](filtertables.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<filterTable>**](filtertable.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<entries>**](entries.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
@@ -28,9 +29,6 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
     </filterTable>
   </filterTables>
 </routing>
-```  
-  
-```csharp  
 ```  
   
 ## Attributes and Elements  
@@ -52,8 +50,9 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing mapping entries.|  
+|[\<routing>](routing.md)|A configuration section that contains routing mapping entries.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType>

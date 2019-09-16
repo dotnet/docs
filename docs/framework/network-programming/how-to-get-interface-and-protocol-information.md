@@ -10,7 +10,7 @@ This sample shows how to read the TCP statistics of a network interface.
   
 ## Example  
   
-```  
+```csharp
 public static void ShowTcpStatistics(NetworkInterfaceComponent version)  
 {  
     IPGlobalProperties properties =  
@@ -66,4 +66,4 @@ public static void ShowTcpStatistics(NetworkInterfaceComponent version)
 ## Compiling the Code  
  This example requires:  
   
--   References to the **System.Net** namespace.
+- References to the **System.Net** namespace.

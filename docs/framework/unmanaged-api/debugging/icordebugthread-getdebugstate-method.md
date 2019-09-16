@@ -23,13 +23,13 @@ Gets the current debug state of this ICorDebugThread object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDebugState (  
     [out] CorDebugThreadState   *pState  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pState`  
  [out] A pointer to a bitwise combination of CorDebugThreadState enumeration values that describes the current debug state of this thread.  
   

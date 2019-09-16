@@ -10,10 +10,10 @@ ms.assetid: 2c312242-6c42-4754-a1f5-7e801a542604
   
 ## To correct this error  
   
--   Check the address you have specified to determine where it fails, and supply the necessary information.  
+- Check the address you have specified to determine where it fails, and supply the necessary information.  
   
 ## See also
+
 - [My.Computer.Network.UploadFile](xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A)
 - [My.Computer.Network.DownloadFile](xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A)
 - [How to: Download a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)
-

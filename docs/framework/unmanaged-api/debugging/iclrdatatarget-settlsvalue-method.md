@@ -23,7 +23,7 @@ Sets a value in the thread local storage (TLS) of the specified thread in the ta
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTLSValue (  
     [in] ULONG32            threadID,  
     [in] ULONG32            index,  
@@ -31,7 +31,7 @@ HRESULT SetTLSValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The operating system identifier of a thread in the target process.  
   
@@ -54,4 +54,5 @@ HRESULT SetTLSValue (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

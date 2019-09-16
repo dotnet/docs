@@ -23,13 +23,13 @@ Gets the total number of frozen objects in the collection.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (  
     [out] ULONG   *pcelt  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcelt`  
  [out] A pointer to the number of frozen objects in the collection.  
   
@@ -45,4 +45,5 @@ HRESULT GetCount (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerObjectEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerobjectenum-interface.md)

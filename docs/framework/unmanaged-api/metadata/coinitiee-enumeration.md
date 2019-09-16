@@ -22,7 +22,7 @@ Specifies constants used by [CoInitializeEE](../../../../docs/framework/unmanage
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum tagCOINITEE {  
    COINITEE_DEFAULT = 0x0,  
    COINITEE_DLL     = 0x1,  
@@ -48,4 +48,5 @@ typedef enum tagCOINITEE {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

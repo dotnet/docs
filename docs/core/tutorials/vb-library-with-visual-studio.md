@@ -57,8 +57,6 @@ Create your class library project:
 
    ![Output pane showing that the build succeeded](./media/library-with-visual-studio/output-pane-successful-build.png)
 
-
-
 ## Next step
 
 You've successfully built the library. Because you haven't called any of its methods, you don't know whether it works as expected. The next step in developing your library is to test it by using a [Unit Test Project](testing-library-with-visual-studio.md).

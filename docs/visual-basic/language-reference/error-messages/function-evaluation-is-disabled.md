@@ -21,10 +21,11 @@ Function evaluation is disabled because a previous function evaluation timed out
   
 ## To correct this error  
   
-1.  If possible, determine what the previous function evaluation was and what caused it to time out. Otherwise, you might encounter this error again.  
+1. If possible, determine what the previous function evaluation was and what caused it to time out. Otherwise, you might encounter this error again.  
   
-2.  Either step the debugger again, or terminate and restart debugging.  
+2. Either step the debugger again, or terminate and restart debugging.  
   
 ## See also
+
 - [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
 - [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger)

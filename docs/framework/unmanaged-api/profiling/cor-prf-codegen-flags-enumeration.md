@@ -22,7 +22,7 @@ Defines the code generation flags that can be set with the [ICorProfilerFunction
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_CODEGEN_DISABLE_INLINING =          0x0001,  
     COR_PRF_CODEGEN_DISABLE_ALL_OPTIMIZATIONS = 0x0002,  
@@ -49,4 +49,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

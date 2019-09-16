@@ -23,6 +23,7 @@ A <xref:System.Windows.Forms.ToolStripPanel> provides a single area for position
 |<xref:System.Windows.Forms.ToolStripPanel.Join%2A>|Adds a <xref:System.Windows.Forms.ToolStrip> to a <xref:System.Windows.Forms.ToolStripPanel>.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStripContainer>
 - <xref:System.Windows.Forms.ToolStripContentPanel>
-- [ToolStrip Sample](https://msdn.microsoft.com/library/b7352439-184a-4a3a-b2ad-07465d3af9ed)
+- [ToolStrip Sample](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms181005(v=vs.90))

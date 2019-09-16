@@ -4,29 +4,29 @@ ms.date: "03/30/2017"
 ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
 ---
 # SqlClient Support for High Availability, Disaster Recovery
-This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../../includes/net-v45-md.md)]) for high-availability, disaster recovery -- AlwaysOn Availability Groups.  AlwaysOn Availability Groups feature was added to SQL Server 2012. For more information about AlwaysOn Availability Groups, see SQL Server Books Online.  
+This topic discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery -- AlwaysOn Availability Groups.  AlwaysOn Availability Groups feature was added to SQL Server 2012. For more information about AlwaysOn Availability Groups, see SQL Server Books Online.  
   
  You can now specify the availability group listener of a (high-availability, disaster-recovery) availability group (AG) or SQL Server 2012 Failover Cluster Instance in the connection property. If a SqlClient application is connected to an AlwaysOn database that fails over, the original connection is broken and the application must open a new connection to continue work after the failover.  
   
  If you are not connecting to an availability group listener or SQL Server 2012 Failover Cluster Instance, and if multiple IP addresses are associated with a hostname, SqlClient will iterate sequentially through all IP addresses associated with DNS entry. This can be time consuming if the first IP address returned by DNS server is not bound to any network interface card (NIC). When connecting to an availability group listener or SQL Server 2012 Failover Cluster Instance, SqlClient attempts to establish connections to all IP addresses in parallel and if a connection attempt succeeds, the driver will discard any pending connection attempts.  
   
 > [!NOTE]
->  Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.  
+> Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.  
   
- The following connection properties were added to SqlClient in [!INCLUDE[net_v45](../../../../../includes/net-v45-md.md)]:  
+ The following connection properties were added to SqlClient in .NET Framework 4.5:  
   
--   `ApplicationIntent`  
+- `ApplicationIntent`  
   
--   `MultiSubnetFailover`  
+- `MultiSubnetFailover`  
   
  You can programmatically modify these connection string keywords with:  
   
-1.  <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent%2A>  
+1. <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent%2A>  
   
-2.  <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
+2. <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
 
 > [!NOTE]
->  Setting `MultiSubnetFailover` to `true` isn't required with [!INCLUDE[net_v461](../../../../../includes/net-v461-md.md)] or later versions.
+> Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework 4.6.1 or later versions.
   
 ## Connecting With MultiSubnetFailover  
  Always specify `MultiSubnetFailover=True` when connecting to a SQL Server 2012 availability group listener or SQL Server 2012 Failover Cluster Instance. `MultiSubnetFailover` enables faster failover for all Availability Groups and or Failover Cluster Instance in SQL Server 2012 and will significantly reduce failover time for single and multi-subnet AlwaysOn topologies. During a multi-subnet failover, the client will attempt connections in parallel. During a subnet failover, will aggressively retry the TCP connection.  
@@ -39,23 +39,23 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
   
  Use the following guidelines to connect to a server in an availability group or SQL Server 2012 Failover Cluster Instance:  
   
--   Use the `MultiSubnetFailover` connection property when connecting to a single subnet or multi-subnet; it will improve performance for both.  
+- Use the `MultiSubnetFailover` connection property when connecting to a single subnet or multi-subnet; it will improve performance for both.  
   
--   To connect to an availability group, specify the availability group listener of the availability group as the server in your connection string.  
+- To connect to an availability group, specify the availability group listener of the availability group as the server in your connection string.  
   
--   Connecting to a SQL Server instance configured with more than 64 IP addresses will cause a connection failure.  
+- Connecting to a SQL Server instance configured with more than 64 IP addresses will cause a connection failure.  
   
--   Behavior of an application that uses the `MultiSubnetFailover` connection property is not affected based on the type of authentication: SQL Server Authentication, Kerberos Authentication, or Windows Authentication.  
+- Behavior of an application that uses the `MultiSubnetFailover` connection property is not affected based on the type of authentication: SQL Server Authentication, Kerberos Authentication, or Windows Authentication.  
   
--   Increase the value of `Connect Timeout` to accommodate for failover time and reduce application connection retry attempts.  
+- Increase the value of `Connect Timeout` to accommodate for failover time and reduce application connection retry attempts.  
   
--   Distributed transactions are not supported.  
+- Distributed transactions are not supported.  
   
  If read-only routing is not in effect, connecting to a secondary replica location will fail in the following situations:  
   
-1.  If the secondary replica location is not configured to accept connections.  
+1. If the secondary replica location is not configured to accept connections.  
   
-2.  If an application uses `ApplicationIntent=ReadWrite` (discussed below) and the secondary replica location is configured for read-only access.  
+2. If an application uses `ApplicationIntent=ReadWrite` (discussed below) and the secondary replica location is configured for read-only access.  
   
  <xref:System.Data.SqlClient.SqlDependency> is not supported on read-only secondary replicas.  
   
@@ -73,23 +73,24 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
   
  The `ApplicationIntent` keyword does not work with legacy, read-only databases.  
   
- A database can allow or disallow read workloads on the targeted AlwaysOn database. (This is done with the `ALLOW_CONNECTIONS` clause of the `PRIMARY_ROLE` and `SECONDARY_ROLE`[!INCLUDE[tsql](../../../../../includes/tsql-md.md)] statements.)  
+ A database can allow or disallow read workloads on the targeted AlwaysOn database. (This is done with the `ALLOW_CONNECTIONS` clause of the `PRIMARY_ROLE` and `SECONDARY_ROLE`Transact-SQL statements.)  
   
  The `ApplicationIntent` keyword is used to enable read-only routing.  
   
 ## Read-Only Routing  
  Read-only routing is a feature that can ensure the availability of a read only replica of a database. To enable read-only routing:  
   
-1.  You must connect to an Always On Availability Group availability group listener.  
+1. You must connect to an Always On Availability Group availability group listener.  
   
-2.  The `ApplicationIntent` connection string keyword must be set to `ReadOnly`.  
+2. The `ApplicationIntent` connection string keyword must be set to `ReadOnly`.  
   
-3.  The Availability Group must be configured by the database administrator to enable read-only routing.  
+3. The Availability Group must be configured by the database administrator to enable read-only routing.  
   
  It is possible that multiple connections using read-only routing will not all connect to the same read-only replica. Changes in database synchronization or changes in the server's routing configuration can result in client connections to different read-only replicas. To ensure that all read-only requests connect to the same read-only replica, do not pass an availability group listener to the `Data Source` connection string keyword. Instead, specify the name of the read-only instance.  
   
  Read-only routing may take longer than connecting to the primary because read only routing first connects to the primary and then looks for the best available readable secondary. Because of this, you should increase your login timeout.  
   
 ## See also
-- [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [SQL Server Features and ADO.NET](sql-server-features-and-adonet.md)
+- [ADO.NET Overview](../ado-net-overview.md)

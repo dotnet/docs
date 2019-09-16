@@ -13,7 +13,7 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
   
  There are several ways that you can synchronize a **DataSet** with an **XmlDataDocument**. You can:  
   
--   Populate a **DataSet** with schema (that is, a relational structure) and data and then synchronize it with a new **XmlDataDocument**. This provides a hierarchical view of existing relational data. For example:  
+- Populate a **DataSet** with schema (that is, a relational structure) and data and then synchronize it with a new **XmlDataDocument**. This provides a hierarchical view of existing relational data. For example:  
   
     ```vb  
     Dim dataSet As DataSet = New DataSet  
@@ -31,9 +31,9 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
     XmlDataDocument xmlDoc = new XmlDataDocument(dataSet);  
     ```  
   
--   Populate a **DataSet** with schema only (such as a strongly typed **DataSet**), synchronize it with an **XmlDataDocument**, and then load the **XmlDataDocument** from an XML document. This provides a relational view of existing hierarchical data. The table names and column names in your **DataSet** schema must match the names of the XML elements that you want them synchronized with. This matching is case-sensitive.  
+- Populate a **DataSet** with schema only (such as a strongly typed **DataSet**), synchronize it with an **XmlDataDocument**, and then load the **XmlDataDocument** from an XML document. This provides a relational view of existing hierarchical data. The table names and column names in your **DataSet** schema must match the names of the XML elements that you want them synchronized with. This matching is case-sensitive.  
   
-     Note that the schema of the **DataSet** only needs to match the XML elements that you want to expose in your relational view. This way, you can have a very large XML document and a very small relational "window" on that document. The **XmlDataDocument** preserves the entire XML document even though the **DataSet** only exposes a small portion of it. (For a detailed example of this, see [Synchronizing a DataSet with an XmlDataDocument](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/synchronizing-a-dataset-with-an-xmldatadocument.md).)  
+     Note that the schema of the **DataSet** only needs to match the XML elements that you want to expose in your relational view. This way, you can have a very large XML document and a very small relational "window" on that document. The **XmlDataDocument** preserves the entire XML document even though the **DataSet** only exposes a small portion of it. (For a detailed example of this, see [Synchronizing a DataSet with an XmlDataDocument](synchronizing-a-dataset-with-an-xmldatadocument.md).)  
   
      The following code example shows the steps for creating a **DataSet** and populating its schema, then synchronizing it with an **XmlDataDocument**. Note that the **DataSet** schema only needs to match the elements from the **XmlDataDocument** that you want to expose using the **DataSet**.  
   
@@ -57,7 +57,7 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
   
      You cannot load an **XmlDataDocument** if it is synchronized with a **DataSet** that contains data. An exception will be thrown.  
   
--   Create a new **XmlDataDocument** and load it from an XML document, and then access the relational view of the data using the **DataSet** property of the **XmlDataDocument**. You need to set the schema of the **DataSet** before you can view any of the data in the **XmlDataDocument** using the **DataSet**. Again, the table names and column names in your **DataSet** schema must match the names of the XML elements that you want them synchronized with. This matching is case-sensitive.  
+- Create a new **XmlDataDocument** and load it from an XML document, and then access the relational view of the data using the **DataSet** property of the **XmlDataDocument**. You need to set the schema of the **DataSet** before you can view any of the data in the **XmlDataDocument** using the **DataSet**. Again, the table names and column names in your **DataSet** schema must match the names of the XML elements that you want them synchronized with. This matching is case-sensitive.  
   
      The following code example shows how to access the relational view of the data in an **XmlDataDocument**.  
   
@@ -81,30 +81,31 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
   
  Another advantage of synchronizing an **XmlDataDocument** with a **DataSet** is that the fidelity of an XML document is preserved. If the **DataSet** is populated from an XML document using **ReadXml**, when the data is written back as an XML document using **WriteXml** it may differ dramatically from the original XML document. This is because the **DataSet** does not maintain formatting, such as white space, or hierarchical information, such as element order, from the XML document. The **DataSet** also does not contain elements from the XML document that were ignored because they did not match the schema of the **Dataset**. Synchronizing an **XmlDataDocument** with a **DataSet** allows the formatting and hierarchical element structure of the original XML document to be maintained in the **XmlDataDocument**, while the **DataSet** contains only data and schema information appropriate to the **DataSet**.  
   
- When synchronizing a **DataSet** with an **XmlDataDocument**, results may differ depending on whether or not your <xref:System.Data.DataRelation> objects are nested. For more information, see [Nesting DataRelations](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations.md).  
+ When synchronizing a **DataSet** with an **XmlDataDocument**, results may differ depending on whether or not your <xref:System.Data.DataRelation> objects are nested. For more information, see [Nesting DataRelations](nesting-datarelations.md).  
   
 ## In This Section  
- [Synchronizing a DataSet with an XmlDataDocument](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/synchronizing-a-dataset-with-an-xmldatadocument.md)  
+ [Synchronizing a DataSet with an XmlDataDocument](synchronizing-a-dataset-with-an-xmldatadocument.md)  
  Demonstrates synchronizing a strongly typed **DataSet**, with minimal schema, with an **XmlDataDocument**.  
   
- [Performing an XPath Query on a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/performing-an-xpath-query-on-a-dataset.md)  
+ [Performing an XPath Query on a DataSet](performing-an-xpath-query-on-a-dataset.md)  
  Demonstrates performing an XPath query on the contents of a **DataSet**.  
   
- [Applying an XSLT Transform to a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/applying-an-xslt-transform-to-a-dataset.md)  
+ [Applying an XSLT Transform to a DataSet](applying-an-xslt-transform-to-a-dataset.md)  
  Demonstrates applying an XSLT transform to the contents of a **DataSet**.  
   
 ## Related Sections  
- [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)  
+ [Using XML in a DataSet](using-xml-in-a-dataset.md)  
  Describes how the **DataSet** interacts with XML as a data source, including loading and persisting the contents of a **DataSet** as XML data.  
   
- [Nesting DataRelations](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations.md)  
+ [Nesting DataRelations](nesting-datarelations.md)  
  Discusses the importance of nested **DataRelation** objects when representing the contents of a **DataSet** as XML data, and describes how to create these relations.  
   
- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
+ [DataSets, DataTables, and DataViews](index.md)  
  Describes the **DataSet** and how to use it to manage application data and to interact with data sources including relational databases and XML.  
   
  <xref:System.Xml.XmlDataDocument>  
  Contains reference information about the **XmlDataDocument** class.  
   
 ## See also
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [ADO.NET Overview](../ado-net-overview.md)

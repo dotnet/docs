@@ -23,12 +23,12 @@ Notifies the profiler that a class is being loaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClassLoadStarted(  
     [in] ClassID classId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] Identifies the class that is being loaded.  
   
@@ -45,4 +45,5 @@ HRESULT ClassLoadStarted(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

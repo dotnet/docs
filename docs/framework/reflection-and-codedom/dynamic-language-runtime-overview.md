@@ -18,11 +18,11 @@ Dynamic languages can identify the type of an object at run time, whereas in sta
 
 Most dynamic languages provide the following advantages for developers:
 
--   The ability to use a rapid feedback loop (REPL, or read-evaluate-print loop). This lets you enter several statements and immediately execute them to see the results.
+- The ability to use a rapid feedback loop (REPL, or read-evaluate-print loop). This lets you enter several statements and immediately execute them to see the results.
 
--   Support for both top-down development and more traditional bottom-up development. For example, when you use a top-down approach, you can call functions that are not yet implemented and then add underlying implementations when you need them.
+- Support for both top-down development and more traditional bottom-up development. For example, when you use a top-down approach, you can call functions that are not yet implemented and then add underlying implementations when you need them.
 
--   Easier refactoring and code modifications, because you do not have to change static type declarations throughout the code.
+- Easier refactoring and code modifications, because you do not have to change static type declarations throughout the code.
 
 Dynamic languages make excellent scripting languages. Customers can easily extend applications created by using dynamic languages with new commands and functionality. Dynamic languages are also frequently used for creating Web sites and test harnesses, maintaining server farms, developing various utilities, and performing data transformations.
 
@@ -45,9 +45,9 @@ Like the CLR, the DLR is a part of the .NET Framework and is provided with the .
 
 Examples of languages developed by using the DLR include the following:
 
--   IronPython. Available as open-source software from the [GitHub](https://github.com/IronLanguages/ironpython2) Web site.
+- IronPython. Available as open-source software from the [GitHub](https://github.com/IronLanguages/ironpython2) Web site.
 
--   IronRuby. Available as open-source software from the [RubyForge](https://go.microsoft.com/fwlink/?LinkId=141044) Web site.
+- IronRuby. Available as open-source software from the [RubyForge](https://go.microsoft.com/fwlink/?LinkId=141044) Web site.
 
 ## Primary DLR Advantages
  The DLR provides the following advantages.
@@ -75,11 +75,11 @@ DLR architecture
 
  The DLR adds a set of services to the CLR for better supporting dynamic languages. These services include the following:
 
--   Expression trees. The DLR uses expression trees to represent language semantics. For this purpose, the DLR has extended LINQ expression trees to include control flow, assignment, and other language-modeling nodes. For more information, see [Expression Trees](https://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b).
+- Expression trees. The DLR uses expression trees to represent language semantics. For this purpose, the DLR has extended LINQ expression trees to include control flow, assignment, and other language-modeling nodes. For more information, see [Expression Trees (C#)](../../csharp/programming-guide/concepts/expression-trees/index.md) or [Expression Trees (Visual Basic)](../../visual-basic/programming-guide/concepts/expression-trees/index.md).
 
--   Call site caching. A *dynamic call site* is a place in the code where you perform an operation like `a + b` or `a.b()` on dynamic objects. The DLR caches the characteristics of `a` and `b` (usually the types of these objects) and information about the operation. If such an operation has been performed previously, the DLR retrieves all the necessary information from the cache for fast dispatch.
+- Call site caching. A *dynamic call site* is a place in the code where you perform an operation like `a + b` or `a.b()` on dynamic objects. The DLR caches the characteristics of `a` and `b` (usually the types of these objects) and information about the operation. If such an operation has been performed previously, the DLR retrieves all the necessary information from the cache for fast dispatch.
 
--   Dynamic object interoperability. The DLR provides a set of classes and interfaces that represent dynamic objects and operations and can be used by language implementers and authors of dynamic libraries. These classes and interfaces include <xref:System.Dynamic.IDynamicMetaObjectProvider>, <xref:System.Dynamic.DynamicMetaObject>, <xref:System.Dynamic.DynamicObject>, and <xref:System.Dynamic.ExpandoObject>.
+- Dynamic object interoperability. The DLR provides a set of classes and interfaces that represent dynamic objects and operations and can be used by language implementers and authors of dynamic libraries. These classes and interfaces include <xref:System.Dynamic.IDynamicMetaObjectProvider>, <xref:System.Dynamic.DynamicMetaObject>, <xref:System.Dynamic.DynamicObject>, and <xref:System.Dynamic.ExpandoObject>.
 
 The DLR uses binders in call sites to communicate not only with the .NET Framework, but with other infrastructures and services, including Silverlight and COM. Binders encapsulate a language's semantics and specify how to perform operations in a call site by using expression trees. This enables dynamic and statically typed languages that use the DLR to share libraries and gain access to all the technologies that the DLR supports.
 
@@ -90,6 +90,7 @@ The DLR uses binders in call sites to communicate not only with the .NET Framewo
 
 - <xref:System.Dynamic.ExpandoObject>
 - <xref:System.Dynamic.DynamicObject>
-- [Common Language Runtime](../../../docs/standard/clr.md)
-- [Expression Trees](https://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)
-- [Walkthrough: Creating and Using Dynamic Objects](~/docs/csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)
+- [Common Language Runtime](../../standard/clr.md)
+- [Expression Trees (C#)](../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [Expression Trees (Visual Basic)](../../visual-basic/programming-guide/concepts/expression-trees/index.md)
+- [Walkthrough: Creating and Using Dynamic Objects](../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)

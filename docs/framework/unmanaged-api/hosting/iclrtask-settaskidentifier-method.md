@@ -23,13 +23,13 @@ Instructs the common language runtime (CLR) to associate the specified identifie
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTaskIdentifier (  
     [in] DWORD Asked  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Asked`  
  [in] The unique identifier for the common language runtime to associate with the task represented by the current `ICLRTask` instance.  
   
@@ -57,6 +57,7 @@ HRESULT SetTaskIdentifier (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

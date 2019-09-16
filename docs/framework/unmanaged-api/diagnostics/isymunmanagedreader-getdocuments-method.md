@@ -23,7 +23,7 @@ Returns an array of all the documents defined in the symbol store.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocuments (  
     [in]  ULONG32  cDocs,  
     [out] ULONG32  *pcDocs,  
@@ -31,7 +31,7 @@ HRESULT GetDocuments (
         length_is (*pcDocs)] ISymUnmanagedDocument *pDocs[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cDocs`  
  [in] The size of the `pDocs` array.  
   
@@ -48,4 +48,5 @@ HRESULT GetDocuments (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

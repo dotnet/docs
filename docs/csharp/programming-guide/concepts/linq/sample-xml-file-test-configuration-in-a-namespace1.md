@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Test Configuration in a Namespace1"
+title: "Sample XML File: Test Configuration in a Namespace"
 ms.date: 07/20/2015
 ms.assetid: e75ad1bc-5636-4623-9a34-a286a8c485d6
 ---
@@ -49,7 +49,4 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
   </Test>  
 </Tests>  
 ```  
-  
-## See also
-
-- [Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+ 

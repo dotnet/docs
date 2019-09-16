@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) data access services to allocate mem
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AllocVirtual(  
     [in] CLRDATA_ADDRESS addr,  
     [in] ULONG32 size,  
@@ -33,7 +33,7 @@ HRESULT AllocVirtual(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `addr`  
  [in] A `CLRDATA_ADDRESS` value that specifies the requested starting address of the memory to be allocated.  
   
@@ -64,5 +64,6 @@ HRESULT AllocVirtual(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-interface.md)
 - [FreeVirtual Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-freevirtual-method.md)

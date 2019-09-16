@@ -23,7 +23,7 @@ Gets a pointer to the MemberRef token for the member reference that is enclosed 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindMemberRef (  
    [in]  mdTypeRef          td,  
    [in]  LPCWSTR            szName,   
@@ -33,7 +33,7 @@ HRESULT FindMemberRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The TypeRef token for the class or interface that encloses the member reference to search for. If this value is `mdTokenNil`, the lookup is done for a global variable or a global-function reference.  
   
@@ -66,5 +66,6 @@ HRESULT FindMemberRef (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

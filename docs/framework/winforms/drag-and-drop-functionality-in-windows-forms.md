@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 65cd2c03-8782-474e-b958-cbe43eeb902c
 ---
 # Drag-and-Drop Functionality in Windows Forms
-Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This topic provides an overview of the drag-and-drop support in Windows Forms.  Also see [Drag-and-Drop Operations and Clipboard Support](https://msdn.microsoft.com/library/fe5ebfwe\(v=vs.110\)).  
+Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This topic provides an overview of the drag-and-drop support in Windows Forms.  Also see [Drag-and-Drop Operations and Clipboard Support](./advanced/drag-and-drop-operations-and-clipboard-support.md).  
   
 ## Performing Drag-and-Drop Operations  
  To perform a drag-and-drop operation, use the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method of the <xref:System.Windows.Forms.Control> class. For more information about how a drag-and-drop operation is performed, see <xref:System.Windows.Forms.Control.DoDragDrop%2A>. To get the rectangle that the mouse pointer must be dragged over before a drag-and-drop operation begins, use the <xref:System.Windows.Forms.SystemInformation.DragSize%2A> property of the <xref:System.Windows.Forms.SystemInformation> class.  
@@ -38,4 +38,5 @@ Windows Forms includes a set of methods, events, and classes that implement drag
  The <xref:System.Windows.Forms.QueryContinueDragEventArgs> class provides the current state of the mouse buttons and modifier keys of the keyboard, a value specifying whether the ESC key was pressed, and a <xref:System.Windows.Forms.DragAction> value that can be set to specify whether the drag-and-drop operation should continue.  
   
 ## See also
-- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)
+
+- [Mouse Input in a Windows Forms Application](mouse-input-in-a-windows-forms-application.md)

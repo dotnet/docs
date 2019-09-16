@@ -23,13 +23,13 @@ Informs the common language runtime (CLR) that the host has completed a task, an
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset (  
     [in] BOOL fFull  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fFull`  
  [in] `true`, if the runtime should reset all thread-related static values in addition to the security and locale information related to the current `ICLRTask` instance; otherwise, `false`.  
   
@@ -49,15 +49,15 @@ HRESULT Reset (
 ## Remarks  
  The CLR can recycle previously created `ICLRTask` instances to avoid the overhead of repeatedly creating new instances every time it needs a fresh task. The host enables this feature by calling `ICLRTask::Reset` instead of [ICLRTask::ExitTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-exittask-method.md) when it has completed a task. The following list summarizes the normal life cycle of an `ICLRTask` instance:  
   
-1.  The runtime creates a new `ICLRTask` instance.  
+1. The runtime creates a new `ICLRTask` instance.  
   
-2.  The runtime calls [IHostTaskManager::GetCurrentTask](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-getcurrenttask-method.md) to get a reference to the current host task.  
+2. The runtime calls [IHostTaskManager::GetCurrentTask](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-getcurrenttask-method.md) to get a reference to the current host task.  
   
-3.  The runtime calls [IHostTask::SetCLRTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-setclrtask-method.md) to associate the new instance with the host task.  
+3. The runtime calls [IHostTask::SetCLRTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-setclrtask-method.md) to associate the new instance with the host task.  
   
-4.  The task executes and completes.  
+4. The task executes and completes.  
   
-5.  The host destroys the task by calling `ICLRTask::ExitTask`.  
+5. The host destroys the task by calling `ICLRTask::ExitTask`.  
   
  `Reset` alters this scenario in two ways. In step 5 above, the host calls `Reset` to reset the task to a clean state, and then decouples the `ICLRTask` instance from its associated [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance. If desired, the host can also cache the `IHostTask` instance for reuse. In step 1 above, the runtime pulls a recycled `ICLRTask` from the cache instead of creating a new instance.  
   
@@ -73,6 +73,7 @@ HRESULT Reset (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

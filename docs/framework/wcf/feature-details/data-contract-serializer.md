@@ -15,7 +15,7 @@ The Windows Communication Foundation (WCF) infrastructure uses the <xref:System.
  Details how to use the <xref:System.Runtime.Serialization.DataContractSerializer> class to serialize object graphs and deserialize XML documents into objects.  
   
  [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)  
- Explains how to generate an XML Schema definition language (XSD) schema from a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] class, or how to generate code from an XSD schema document.  
+ Explains how to generate an XML Schema definition language (XSD) schema from a .NET Framework class, or how to generate code from an XSD schema document.  
   
 ## Reference  
  <xref:System.Runtime.Serialization.DataContractSerializer>  
@@ -32,5 +32,6 @@ The Windows Communication Foundation (WCF) infrastructure uses the <xref:System.
  [Data Transfer and Serialization](../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)  
   
 ## See also
+
 - [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
 - [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

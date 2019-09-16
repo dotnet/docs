@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) data access services to retrieve the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetadata(  
     [in]  LPCWSTR         imagePath,  
     [in]  ULONG32         imageTimestamp,  
@@ -38,7 +38,7 @@ HRESULT GetMetadata(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `imagePath`  
  [in] A string that specifies the path of the image file.  
   
@@ -79,4 +79,5 @@ HRESULT GetMetadata(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRMetadataLocator Interface](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-interface.md)

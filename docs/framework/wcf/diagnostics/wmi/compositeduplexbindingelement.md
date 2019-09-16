@@ -35,4 +35,5 @@ class CompositeDuplexBindingElement : BindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>

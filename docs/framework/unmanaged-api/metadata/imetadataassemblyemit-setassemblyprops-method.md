@@ -23,7 +23,7 @@ Modifies the specified `Assembly` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyProps (  
     [in] mdAssembly               pma,  
     [in] const void               *pbPublicKey,  
@@ -35,7 +35,7 @@ HRESULT SetAssemblyProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pma`  
  [in] The metadata token that specifies the `Assembly` metadata structure to be modified.  
   
@@ -70,4 +70,5 @@ HRESULT SetAssemblyProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

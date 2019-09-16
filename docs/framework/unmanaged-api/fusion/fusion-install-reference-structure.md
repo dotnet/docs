@@ -22,7 +22,7 @@ Represents a reference that an application makes to an assembly that the applica
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _FUSION_INSTALL_REFERENCE_ {  
     DWORD    cbSize,  
     DWORD    dwFlags,  
@@ -43,12 +43,13 @@ typedef struct _FUSION_INSTALL_REFERENCE_ {
 |`szNonCanonicalData`|A string that is understood only by the entity that adds the reference. The global assembly cache stores this string, but does not use it.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
-- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)
+
+- [Fusion Structures](fusion-structures.md)
+- [Global Assembly Cache](../../app-domains/gac.md)

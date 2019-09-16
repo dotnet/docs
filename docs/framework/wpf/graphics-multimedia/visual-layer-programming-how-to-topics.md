@@ -13,16 +13,17 @@ ms.assetid: ac550423-60a3-43e6-a0bc-d65ef026e0cb
 The topics in this section demonstrate how to use the visual layer for hit-testing and low-level composition.  
   
 ## In This Section  
- [Get the Offset of a Visual](../../../../docs/framework/wpf/graphics-multimedia/how-to-get-the-offset-of-a-visual.md)  
- [Enumerate Drawing Content of a Visual](../../../../docs/framework/wpf/graphics-multimedia/how-to-enumerate-drawing-content-of-a-visual.md)  
- [Hit Test Geometry in a Visual](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-geometry-in-a-visual.md)  
- [Hit Test Using Geometry as a Parameter](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-geometry-as-a-parameter.md)  
- [Hit Test Using a Win32 Host Container](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-a-win32-host-container.md)  
- [Render on a Per Frame Interval Using CompositionTarget](../../../../docs/framework/wpf/graphics-multimedia/how-to-render-on-a-per-frame-interval-using-compositiontarget.md)  
+ [Get the Offset of a Visual](how-to-get-the-offset-of-a-visual.md)  
+ [Enumerate Drawing Content of a Visual](how-to-enumerate-drawing-content-of-a-visual.md)  
+ [Hit Test Geometry in a Visual](how-to-hit-test-geometry-in-a-visual.md)  
+ [Hit Test Using Geometry as a Parameter](how-to-hit-test-using-geometry-as-a-parameter.md)  
+ [Hit Test Using a Win32 Host Container](how-to-hit-test-using-a-win32-host-container.md)  
+ [Render on a Per Frame Interval Using CompositionTarget](how-to-render-on-a-per-frame-interval-using-compositiontarget.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Visual>
 - <xref:System.Windows.Media.VisualTreeHelper>
 - <xref:System.Windows.Media.DrawingVisual>
-- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)
+- [Graphics and Multimedia](index.md)

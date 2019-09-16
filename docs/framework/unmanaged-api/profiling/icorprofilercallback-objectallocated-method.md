@@ -23,13 +23,13 @@ Notifies the profiler that memory within the heap has been allocated for an obje
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ObjectAllocated(  
     [in] ObjectID objectId,  
     [in] ClassID classId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object for which memory was allocated.  
   
@@ -49,6 +49,7 @@ HRESULT ObjectAllocated(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ClassLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md)
 - [ClassLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadfinished-method.md)

@@ -21,8 +21,6 @@ In the .NET framework 4.6.2 and earlier versions, the <xref:System.Runtime.Seria
 For apps that target versions of the .NET Framework starting with the .NET Framework 4.7, serialization of these control characters is compatible with ECMAScript V6 and V8. The following APIs are affected:
 
 - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject%2A> 
-- <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject%2A>
-- <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject%2A>
 
 ## Mitigation
 
@@ -37,4 +35,5 @@ If this behavior is not desirable, you can opt out of this feature by adding the
 ```
  
 ## See also
-- [Retargeting Changes in the .NET Framework 4.7](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md)
+
+- [Retargeting Changes in the .NET Framework 4.7](retargeting-changes-in-the-net-framework-4-7.md)

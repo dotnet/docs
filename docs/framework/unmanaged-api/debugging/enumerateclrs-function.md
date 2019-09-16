@@ -24,7 +24,7 @@ Provides a mechanism for enumerating the CLRs in a process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateCLRs (  
     [in]  DWORD      debuggeePID,  
     [out] HANDLE**   ppHandleArrayOut,  
@@ -33,7 +33,7 @@ HRESULT EnumerateCLRs (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `debuggeePID`  
  [in] Process identifier of the process from which loaded CLRs will be enumerated.  
   

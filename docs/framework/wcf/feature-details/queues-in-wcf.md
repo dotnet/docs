@@ -8,13 +8,13 @@ ms.assetid: 43008409-1bb4-4bd4-85d7-862c8f10ae20
 # Queues in Windows Communication Foundation
 The topics in this section discuss Windows Communication Foundation (WCF) support for queues. WCF provides support for queuing by leveraging Microsoft Message Queuing (previously known as MSMQ) as a transport and enables the following scenarios:  
   
--   Loosely coupled applications. Sending applications can send messages to queues without needing to know whether the receiving application is available to process the message. The queue provides processing independence that allows a sending application to send messages to the queue at a rate that does not depend on how fast the receiving applications can process the messages. Overall system availability increases when sending messages to a queue is not tightly coupled to message processing.  
+- Loosely coupled applications. Sending applications can send messages to queues without needing to know whether the receiving application is available to process the message. The queue provides processing independence that allows a sending application to send messages to the queue at a rate that does not depend on how fast the receiving applications can process the messages. Overall system availability increases when sending messages to a queue is not tightly coupled to message processing.  
   
--   Failure isolation. Applications sending or receiving messages to a queue can fail without affecting each other. If, for example, the receiving application fails, the sending application can continue to send messages to the queue. When the receiver is up again, it can process the messages from the queue. Failure isolation increases the overall system reliability and availability.  
+- Failure isolation. Applications sending or receiving messages to a queue can fail without affecting each other. If, for example, the receiving application fails, the sending application can continue to send messages to the queue. When the receiver is up again, it can process the messages from the queue. Failure isolation increases the overall system reliability and availability.  
   
--   Load leveling. Sending applications can overwhelm receiving applications with messages. Queues can manage mismatched message production and consumption rates so that a receiver is not overwhelmed.  
+- Load leveling. Sending applications can overwhelm receiving applications with messages. Queues can manage mismatched message production and consumption rates so that a receiver is not overwhelmed.  
   
--   Disconnected operations. Sending, receiving, and processing operations can become disconnected when communicating over high-latency networks or limited-availability networks, such as in the case of mobile devices. Queues allow these operations to continue, even when the endpoints are disconnected. When the connection is reestablished, the queue forwards messages to the receiving application.  
+- Disconnected operations. Sending, receiving, and processing operations can become disconnected when communicating over high-latency networks or limited-availability networks, such as in the case of mobile devices. Queues allow these operations to continue, even when the endpoints are disconnected. When the connection is reestablished, the queue forwards messages to the receiving application.  
   
  To use the queues feature in a WCF application, you can use one of the standard bindings, or you can create a custom binding if one of the standard bindings does not satisfy your requirements. For more information about relevant standard bindings and how to choose one, see [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md). For more information about creating custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
@@ -57,6 +57,3 @@ The topics in this section discuss Windows Communication Foundation (WCF) suppor
   
  [Best Practices for Queued Communication](../../../../docs/framework/wcf/feature-details/best-practices-for-queued-communication.md)  
  Explains best practices for using WCF queued communication.  
-  
-## See also
-- [Message Queuing](https://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)

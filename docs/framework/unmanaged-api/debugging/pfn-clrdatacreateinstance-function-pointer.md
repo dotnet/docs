@@ -22,7 +22,7 @@ Points to a function that creates an interface object for the specified target i
   
 ## Syntax  
   
-```  
+```cpp  
 typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (  
     [in]  REFIID           iid,  
     [in]  ICLRDataTarget  *target,  
@@ -30,7 +30,7 @@ typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iid`  
  [in] The identifier of the interface to be instantiated.  
   
@@ -53,4 +53,5 @@ typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

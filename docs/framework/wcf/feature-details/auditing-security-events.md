@@ -15,9 +15,9 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 ## Audit Level and Behavior  
  Two levels of security audits exist:  
   
--   Service authorization level, in which a caller is authorized.  
+- Service authorization level, in which a caller is authorized.  
   
--   Message level, in which WCF checks for message validity and authenticates the caller.  
+- Message level, in which WCF checks for message validity and authenticates the caller.  
   
  You can check both audit levels for success or failure, which is known as the *audit behavior*.  
   
@@ -93,6 +93,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 |Default user experience|All authenticated users can write to the Application log, so no additional permission step is needed for application processes.|The application process (context) must have `SeAuditPrivilege`.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
 - <xref:System.ServiceModel.AuditLogLocation>
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)

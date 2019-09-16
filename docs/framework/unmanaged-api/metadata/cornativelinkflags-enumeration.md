@@ -22,7 +22,7 @@ Provides flag values used by the linker when linking native code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     nlfNone         = 0x00,  
@@ -51,4 +51,5 @@ typedef enum
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

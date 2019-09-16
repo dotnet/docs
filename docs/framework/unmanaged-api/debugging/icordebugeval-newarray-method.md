@@ -25,7 +25,7 @@ Allocates a new array of the specified element type and dimensions.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewArray (  
     [in] CorElementType     elementType,  
     [in] ICorDebugClass     *pElementClass,  
@@ -35,7 +35,7 @@ HRESULT NewArray (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `elementType`  
  [in] A value of the CorElementType enumeration that specifies the element type of the array.  
   

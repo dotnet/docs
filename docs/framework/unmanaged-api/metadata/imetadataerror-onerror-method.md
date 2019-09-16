@@ -23,14 +23,14 @@ Provides notification of errors that occur during the metadata merge.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnError (  
     [in] HRESULT   hrError,   
     [in] mdToken   token  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hrError`  
  [in] The HRESULT error value returned to the calling method.  
   
@@ -47,4 +47,5 @@ HRESULT OnError (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataError Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataerror-interface.md)

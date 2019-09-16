@@ -23,13 +23,13 @@ Returns the source server data for the module. The caller must free resources by
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceServerData(  
     [out] ULONG* pDataByteCount,   
     [out, size_is (, *pDataByteCount)] BYTE** ppData);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDataByteCount`  
  [out] A pointer to a `ULONG32` that receives the size, in bytes, of the source server data.  
   
@@ -43,4 +43,5 @@ HRESULT GetSourceServerData(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedSourceServerModule Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsourceservermodule-interface.md)

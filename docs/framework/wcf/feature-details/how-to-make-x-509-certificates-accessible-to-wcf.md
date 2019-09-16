@@ -15,9 +15,9 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
   
 ### To make X.509 certificates accessible to WCF  
   
-1.  Give the account under which WCF is running read access to the file that contains the private key associated with the X.509 certificate.  
+1. Give the account under which WCF is running read access to the file that contains the private key associated with the X.509 certificate.  
   
-    1.  Determine whether WCF requires read access to the private key for the X.509 certificate.  
+    1. Determine whether WCF requires read access to the private key for the X.509 certificate.  
   
          The following table details whether a private key must be available when using an X.509 certificate.  
   
@@ -28,24 +28,24 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
         |Encrypting an outbound SOAP message.|No|  
         |Decrypting an inbound SOAP message.|Yes|  
   
-    2.  Determine the certificate store location and name in which the certificate is stored.  
+    2. Determine the certificate store location and name in which the certificate is stored.  
   
          The certificate store in which the certificate is stored is specified either in application code or in configuration. For example, the following example specifies that the certificate is located in the `CurrentUser` certificate store named `My`.  
   
          [!code-csharp[x509Accessible#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/x509accessible/cs/source.cs#1)]
          [!code-vb[x509Accessible#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/x509accessible/vb/source.vb#1)]  
   
-    3.  Determine where the private key for the certificate is located on the computer by using the [FindPrivateKey](../../../../docs/framework/wcf/samples/findprivatekey.md) tool.  
+    3. Determine where the private key for the certificate is located on the computer by using the [FindPrivateKey](../../../../docs/framework/wcf/samples/findprivatekey.md) tool.  
   
          The [FindPrivateKey](../../../../docs/framework/wcf/samples/findprivatekey.md) tool requires the certificate store name, certificate store location, and something that uniquely identifies the certificate. The tool accepts either the certificate's subject name or its thumbprint as a unique identifier. For more information about how to determine the thumbprint for a certificate, see [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md).  
   
          The following code example uses the [FindPrivateKey](../../../../docs/framework/wcf/samples/findprivatekey.md) tool to determine the location of the private key for a certificate in the `My` store in `CurrentUser` with a thumbprint of `46 dd 0e 7a ed 0b 7a 31 9b 02 a3 a0 43 7a d8 3f 60 40 92 9d`.  
   
-        ```  
+        ```console
         findprivatekey.exe My CurrentUser -t "46 dd 0e 7a ed 0b 7a 31 9b 02 a3 a0 43 7a d8 3f 60 40 92 9d" -a  
         ```  
   
-    4.  Determine the account that WCF is running under.  
+    4. Determine the account that WCF is running under.  
   
          The following table details the account under which WCF is running for a given scenario.  
   
@@ -56,15 +56,16 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
         |Service that is hosted in IIS 6.0 ([!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]) or IIS 7.0 ([!INCLUDE[wv](../../../../includes/wv-md.md)]).|NETWORK SERVICE|  
         |Service that is hosted in IIS 5.X ([!INCLUDE[wxp](../../../../includes/wxp-md.md)]).|Controlled by the `<processModel>` element in the Machine.config file. The default account is ASPNET.|  
   
-    5.  Grant read access to the file that contains the private key to the account that WCF is running under, using a tool such as icacls.exe.  
+    5. Grant read access to the file that contains the private key to the account that WCF is running under, using a tool such as icacls.exe.  
   
          The following code example edits the discretionary access control list (DACL) for the specified file to grant the NETWORK SERVICE account read (:R) access to the file.  
   
-        ```  
+        ```console 
         icacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys\8aeda5eb81555f14f8f9960745b5a40d_38f7de48-5ee9-452d-8a5a-92789d7110b1" /grant "NETWORK SERVICE":R  
         ```  
   
 ## See also
+
 - [FindPrivateKey](../../../../docs/framework/wcf/samples/findprivatekey.md)
 - [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

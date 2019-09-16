@@ -1,5 +1,5 @@
 ---
-title: "Oracle Data Type Mappings1"
+title: "Oracle Data Type Mappings"
 ms.date: "03/30/2017"
 ms.assetid: ec34ae21-bbbb-4adb-b672-83865e2a8451
 ---
@@ -52,7 +52,7 @@ The following table lists Oracle data types and their mappings to the <xref:Syst
 |**NUMBER**|**VarNumeric**|**Number**||  
 |**NVARCHAR2**|**String**|**NVarChar**||  
 |**RAW**|**Binary**|**Raw**||  
-|**REF CURSOR**||**Cursor**|For more information, see [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md).|  
+|**REF CURSOR**||**Cursor**|For more information, see [Oracle REF CURSORs](oracle-ref-cursors.md).|  
 |**ROWID**|**AnsiString**|**Rowid**||  
 |**TIMESTAMP**|**DateTime**|**Timestamp**|<xref:System.Data.OracleClient.OracleType> is only available when using both Oracle 9i client and server software.|  
 |**TIMESTAMP WITH LOCAL TIME ZONE**|**DateTime**|**TimestampLocal**|<xref:System.Data.OracleClient.OracleType> is only available when using both Oracle 9i client and server software.|  
@@ -63,5 +63,6 @@ The following table lists Oracle data types and their mappings to the <xref:Syst
  The **InputOutput**, **Output**, and **ReturnValue** **ParameterDirection** values used by the <xref:System.Data.OracleClient.OracleParameter.Value%2A> property of the <xref:System.Data.OracleClient.OracleParameter> object are .NET Framework data types, unless the input value is an Oracle data type (for example, <xref:System.Data.OracleClient.OracleNumber> or <xref:System.Data.OracleClient.OracleString>). This does not apply to **REF CURSOR**, **BFILE**, or **LOB** data types.  
   
 ## See also
-- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Oracle and ADO.NET](oracle-and-adonet.md)
+- [ADO.NET Overview](ado-net-overview.md)

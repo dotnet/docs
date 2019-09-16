@@ -12,10 +12,10 @@ ms.assetid: c31e85e3-963f-4693-b463-a29adc433fcd
 The topics in this section describe how to use the <xref:System.Windows.Controls.Expander> control.  
   
 ## In This Section  
- [Create an Expander with a ScrollViewer](../../../../docs/framework/wpf/controls/how-to-create-an-expander-with-a-scrollviewer.md)  
+ [Create an Expander with a ScrollViewer](how-to-create-an-expander-with-a-scrollviewer.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Expander>  
   
 ## Related Sections  
- [Expander Overview](../../../../docs/framework/wpf/controls/expander-overview.md)
+ [Expander Overview](expander-overview.md)

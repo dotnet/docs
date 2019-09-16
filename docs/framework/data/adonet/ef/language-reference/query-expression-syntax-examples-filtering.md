@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: c27cb89c-1c1d-4988-9f38-950eda3cb275
 ---
 # Query Expression Syntax Examples: Filtering
-The examples in this topic demonstrate how to use the `Where` and `Where…Contains` methods to query the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832) using query expression syntax. Note, Where…`Contains` cannot be used as a part of a [compiled query](../../../../../../docs/framework/data/adonet/ef/language-reference/compiled-queries-linq-to-entities.md).  
+The examples in this topic demonstrate how to use the `Where` and `Where…Contains` methods to query the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) using query expression syntax. Note, Where…`Contains` cannot be used as a part of a [compiled query](compiled-queries-linq-to-entities.md).  
   
  The AdventureWorks Sales model used in these examples is built from the Contact, Address, Product, SalesOrderHeader, and SalesOrderDetail tables in the AdventureWorks sample database.  
   
@@ -51,7 +51,7 @@ The examples in this topic demonstrate how to use the `Where` and `Where…Conta
  [!code-vb[DP L2E ArraysAndListsInQueries#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e arraysandlistsinqueries/vb/module1.vb#1)]  
   
 > [!NOTE]
->  As part of the predicate in a `Where…Contains` clause, you can use an <xref:System.Array>, a <xref:System.Collections.Generic.List%601>, or a collection of any type that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. You can also declare and initialize a collection within a LINQ to Entities query. See the next example for more information.  
+> As part of the predicate in a `Where…Contains` clause, you can use an <xref:System.Array>, a <xref:System.Collections.Generic.List%601>, or a collection of any type that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. You can also declare and initialize a collection within a LINQ to Entities query. See the next example for more information.  
   
 ### Example  
  The following example declares and initializes arrays in a `Where…Contains` clause to find all products that have a `ProductModelID` or `Size` that match values in the arrays.  
@@ -60,4 +60,5 @@ The examples in this topic demonstrate how to use the `Where` and `Where…Conta
  [!code-vb[DP L2E ArraysAndListsInQueries#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e arraysandlistsinqueries/vb/module1.vb#2)]  
   
 ## See also
-- [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
+
+- [Queries in LINQ to Entities](queries-in-linq-to-entities.md)

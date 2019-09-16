@@ -25,4 +25,5 @@ expression.identifier
  `select p.Name.FirstName from LOB.Person as p`  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)

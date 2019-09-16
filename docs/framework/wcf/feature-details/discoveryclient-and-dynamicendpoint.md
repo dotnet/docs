@@ -9,7 +9,7 @@ ms.assetid: 7cd418f0-0eab-48d1-a493-7eb907867ec3
 ## DiscoveryClient  
  The <xref:System.ServiceModel.Discovery.DiscoveryClient> defines synchronous and asynchronous Find methods, <xref:System.ServiceModel.Discovery.DiscoveryClient.FindCompleted> and <xref:System.ServiceModel.Discovery.DiscoveryClient.FindProgressChanged> events.  It also defines synchronous and asynchronous Resolve methods and a <xref:System.ServiceModel.Discovery.DiscoveryClient.ResolveCompleted> event. Use the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> or <xref:System.ServiceModel.Discovery.DiscoveryClient.FindAsync%2A> methods to search for services. Both of these methods take a <xref:System.ServiceModel.Discovery.FindCriteria> instance that allows you to specify contract type names, scopes, maximum number of results requested, and scope matching rules. The <xref:System.ServiceModel.Discovery.DiscoveryClient.FindCompleted> and <xref:System.ServiceModel.Discovery.DiscoveryClient.FindProgressChanged> events can be used when calling the <xref:System.ServiceModel.Discovery.DiscoveryClient.FindAsync%2A> method. <xref:System.ServiceModel.Discovery.DiscoveryClient.FindProgressChanged> is fired whenever the <xref:System.ServiceModel.Discovery.DiscoveryClient> receives a response from a service. It can be used to display a progress bar showing the progress of the find operation. It can also be used to act on find responses as they are received. The <xref:System.ServiceModel.Discovery.DiscoveryClient.FindCompleted> event is fired when the find operation completes. This may happen because the maximum number of responses has been received or if the <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> has elapsed. When the find operation completes the results are returned in a <xref:System.ServiceModel.Discovery.FindResponse> instance. The <xref:System.ServiceModel.Discovery.FindResponse> contains a collection of <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> which contains the addresses, contract type names, extensions, listen URIs, and scopes of the matching services. You can then use this information to connect to and call one of the matching services. The following example shows how to call the System.ServiceModel.Discovery.DiscoveryClient.Find(System.ServiceModel.Discovery.FindCriteria) method and use the returned metadata to call the found service. A benefit of using <xref:System.ServiceModel.Discovery.DiscoveryClient.Find(System.ServiceModel.Discovery.FindCriteria)> is that you can cache the list of endpoints you’ve found and use them at a later time. With this cache, you can build custom logic to handle various failure conditions.  
   
-```  
+```csharp
 DiscoveryClient dc = new DiscoveryClient(new UdpDiscoveryEndpoint());  
   
 FindCriteria criteria = new FindCriteria(typeof(ICalculatorService));  
@@ -37,7 +37,7 @@ else
   
  The following example shows how to perform a find operation asynchronously.  
   
-```  
+```csharp
 static void FindServiceAsync()  
 {  
    DiscoveryClient dc = new DiscoveryClient(new UdpDiscoveryEndpoint());   
@@ -75,7 +75,7 @@ static void discoveryClient_FindCompleted(object sender, FindCompletedEventArgs 
   
  Use the <xref:System.ServiceModel.Discovery.DiscoveryClient.Resolve%2A> and <xref:System.ServiceModel.Discovery.DiscoveryClient.ResolveAsync%28System.ServiceModel.Discovery.ResolveCriteria%29> methods to locate a service based on its endpoint address. This is useful when the endpoint address is not network addressable. The Resolve methods take an instance of <xref:System.ServiceModel.Discovery.ResolveCriteria> which allows you to specify the endpoint address of the service you are resolving, the maximum duration of the resolve operation, and a set of extensions. The following example shows how to use the <xref:System.ServiceModel.Discovery.DiscoveryClient.Resolve%2A> method to resolve a service.  
   
-```  
+```csharp  
 DiscoveryClient dc = new DiscoveryClient(new UdpDiscoveryEndpoint());  
 ResolveCriteria criteria = new ResolveCriteria(endpointAddress);  
 ResolveResponse response = dc.Resolve(criteria);  
@@ -85,7 +85,7 @@ EndpointAddress newEp = response.EndpointDiscoveryMetadata.Address;
 ## DynamicEndpoint  
  <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint (For more information, see [Standard Endpoints](../../../../docs/framework/wcf/feature-details/standard-endpoints.md)) which performs discovery and automatically selects a matching service. Just create a <xref:System.ServiceModel.Discovery.DynamicEndpoint> passing in the contract to search for and the binding to use and pass the <xref:System.ServiceModel.Discovery.DynamicEndpoint> instance to the WCF client. The following example shows how to create and use a <xref:System.ServiceModel.Discovery.DynamicEndpoint> to call the calculator service. The discovery is performed every time the client is opened. Any endpoint defined in configuration can also be turned into a <xref:System.ServiceModel.Discovery.DynamicEndpoint> by adding the `kind ="dynamicEndpoint"` attribute to the endpoint configuration element.  
   
-```  
+```csharp  
 DynamicEndpoint dynamicEndpoint = new DynamicEndpoint(ContractDescription.GetContract(typeof(ICalculatorService)), new WSHttpBinding());  
 CalculatorServiceClient client = new CalculatorServiceClient(dynamicEndpoint);  
   
@@ -100,5 +100,6 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
 ```  
   
 ## See also
+
 - [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)
 - [Basic](../../../../docs/framework/wcf/samples/basic-sample.md)

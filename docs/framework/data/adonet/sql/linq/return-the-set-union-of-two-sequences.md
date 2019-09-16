@@ -10,7 +10,7 @@ ms.assetid: 8b8bd3cb-86d4-4a3b-9906-61f68726dd1f
 Use the <xref:System.Linq.Queryable.Union%2A> operator to return the set union of two sequences.  
   
 ## Example  
- This example uses <xref:System.Linq.Queryable.Union%2A> to return a sequence of all countries in which there are either `Customers` or `Employees`.  
+ This example uses <xref:System.Linq.Queryable.Union%2A> to return a sequence of all countries/regions in which there are either `Customers` or `Employees`.  
   
  [!code-csharp[DLinqQueryExamples#43](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#43)]
  [!code-vb[DLinqQueryExamples#43](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#43)]  
@@ -20,5 +20,6 @@ Use the <xref:System.Linq.Queryable.Union%2A> operator to return the set union o
 For more info and examples, see <xref:System.Linq.Queryable.Union%2A?displayProperty=nameWithType>.
   
 ## See also
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
-- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)
+
+- [Query Examples](query-examples.md)
+- [Standard Query Operator Translation](standard-query-operator-translation.md)

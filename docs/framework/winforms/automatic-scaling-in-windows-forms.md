@@ -8,9 +8,9 @@ ms.assetid: 68fad25b-afbc-44bd-8e1b-966fc43507a4
 ---
 # Automatic scaling in Windows Forms
 
-Automatic scaling enables a form and its controls, designed on one machine with a certain display resolution or system font, to be displayed appropriately on another machine with a different display resolution or system font. It assures that the form and its controls will intelligently resize to be consistent with native windows and other applications on both the users' and other developers' machines. The support of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] for automatic scaling and visual styles enables [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] applications to maintain a consistent look and feel when compared to native Windows applications on each user's machine.
+Automatic scaling enables a form and its controls, designed on one machine with a certain display resolution or system font, to be displayed appropriately on another machine with a different display resolution or system font. It assures that the form and its controls will intelligently resize to be consistent with native windows and other applications on both the users' and other developers' machines. The support of the .NET Framework for automatic scaling and visual styles enables .NET Framework applications to maintain a consistent look and feel when compared to native Windows applications on each user's machine.
 
-For the most part, automatic scaling works as expected in [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0 and later. However, font scheme changes can be problematic. For an example of how to resolve this, see [How to: Respond to Font Scheme Changes in a Windows Forms Application](how-to-respond-to-font-scheme-changes-in-a-windows-forms-application.md).
+For the most part, automatic scaling works as expected in .NET Framework version 2.0 and later. However, font scheme changes can be problematic. For an example of how to resolve this, see [How to: Respond to Font Scheme Changes in a Windows Forms Application](how-to-respond-to-font-scheme-changes-in-a-windows-forms-application.md).
 
 ## Need for automatic scaling
 
@@ -18,11 +18,11 @@ Without automatic scaling, an application designed for one display resolution or
 
 An analogous situation occurs when an application is designed for a certain display resolution. The most common display resolution is 96 dots per inch (DPI), which equals 100% display scaling, but higher resolution displays supporting 125%, 150%, 200% (which respectively equal 120, 144 and 192 DPI) and above are becoming more common. Without adjustment, an application, especially a graphics-based one, designed for one resolution will appear either too large or too small when run at another resolution.
 
-Automatic scaling seeks to ameliorate these problems by automatically resizing the form and its child controls according to the relative font size or display resolution. The Windows operating system supports automatic scaling of dialog boxes using a relative unit of measurement called dialog units. A dialog unit is based on the system font and its relationship to pixels can be determined though the Win32 SDK function `GetDialogBaseUnits`. When a user changes the theme used by Windows, all dialog boxes are automatically adjusted accordingly. In addition, the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] supports automatic scaling either according to the default system font or the display resolution. Optionally, automatic scaling can be disabled in an application.
+Automatic scaling seeks to ameliorate these problems by automatically resizing the form and its child controls according to the relative font size or display resolution. The Windows operating system supports automatic scaling of dialog boxes using a relative unit of measurement called dialog units. A dialog unit is based on the system font and its relationship to pixels can be determined though the Win32 SDK function `GetDialogBaseUnits`. When a user changes the theme used by Windows, all dialog boxes are automatically adjusted accordingly. In addition, the .NET Framework supports automatic scaling either according to the default system font or the display resolution. Optionally, automatic scaling can be disabled in an application.
 
 ## Original support for automatic scaling
 
-Versions 1.0 and 1.1 of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] supported automatic scaling in a straightforward manner that was dependent on the Windows default font used for the UI, represented by the Win32 SDK value **DEFAULT_GUI_FONT**. This font is typically only changed when the display resolution changes. The following mechanism was used to implement automatic scaling:
+Versions 1.0 and 1.1 of the .NET Framework supported automatic scaling in a straightforward manner that was dependent on the Windows default font used for the UI, represented by the Win32 SDK value **DEFAULT_GUI_FONT**. This font is typically only changed when the display resolution changes. The following mechanism was used to implement automatic scaling:
 
 1. At design time, the <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A> property (which is now deprecated) was set to the height and width of the default system font on the developer's machine.
 
@@ -40,24 +40,24 @@ While this mechanism was sufficient for most purposes, it suffered from the foll
 
 - Forms and their child controls could only be concurrently designed by multiple developers if their machine resolutions were the same. Likewise it also made inheritance of a form dependent on the resolution associated with the parent form.
 
-- It is not compatible with the newer layout managers introduced with the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0, such as <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel>.
+- It is not compatible with the newer layout managers introduced with the .NET Framework version 2.0, such as <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel>.
 
-- It did not support scaling based directly on the display resolution that is required for compatibility to the [!INCLUDE[compact](../../../includes/compact-md.md)].
+- It did not support scaling based directly on the display resolution that is required for compatibility to the .NET Compact Framework.
 
-Although this mechanism is preserved in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0 to maintain backward compatibility, it has been superseded by the more robust scaling mechanism described next. As a consequence, the <xref:System.Windows.Forms.Form.AutoScale%2A>, <xref:System.Windows.Forms.Form.ApplyAutoScaling%2A>, <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A>, and certain <xref:System.Windows.Forms.Control.Scale%2A> overloads are marked as obsolete.
+Although this mechanism is preserved in the .NET Framework version 2.0 to maintain backward compatibility, it has been superseded by the more robust scaling mechanism described next. As a consequence, the <xref:System.Windows.Forms.Form.AutoScale%2A>, <xref:System.Windows.Forms.Form.ApplyAutoScaling%2A>, <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A>, and certain <xref:System.Windows.Forms.Control.Scale%2A> overloads are marked as obsolete.
 
 > [!NOTE]
-> You can safely delete references to these members when you upgrade your legacy code to the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0.
+> You can safely delete references to these members when you upgrade your legacy code to the .NET Framework version 2.0.
 
 ## Current support for automatic scaling
 
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0 surmounts previous limitations by introducing the following changes to the automatic scaling of Windows Forms:
+The .NET Framework version 2.0 surmounts previous limitations by introducing the following changes to the automatic scaling of Windows Forms:
 
 - Base support for scaling has been moved to the <xref:System.Windows.Forms.ContainerControl> class so that forms, native composite controls and user controls all receive uniform scaling support. The new members <xref:System.Windows.Forms.ContainerControl.AutoScaleFactor%2A>, <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>, <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> and <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A> have been added.
 
 - The <xref:System.Windows.Forms.Control> class also has several new members that allow it to participate in scaling and to support mixed scaling on the same form. Specifically the <xref:System.Windows.Forms.Control.Scale%2A>, <xref:System.Windows.Forms.Control.ScaleChildren%2A>, and <xref:System.Windows.Forms.Control.GetScaledBounds%2A> members support scaling.
 
-- Support for scaling based upon the screen resolution has been added to complement system font support, as defined by the <xref:System.Windows.Forms.AutoScaleMode> enumeration. This mode is compatible with automatic scaling supported by the [!INCLUDE[compact](../../../includes/compact-md.md)] enabling easier application migration.
+- Support for scaling based upon the screen resolution has been added to complement system font support, as defined by the <xref:System.Windows.Forms.AutoScaleMode> enumeration. This mode is compatible with automatic scaling supported by the .NET Compact Framework enabling easier application migration.
 
 - Compatibility with layout managers such as <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel> has been added to the implementation of automatic scaling.
 

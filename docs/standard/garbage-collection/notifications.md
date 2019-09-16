@@ -18,30 +18,30 @@ There are situations in which a full garbage collection (that is, a generation 2
  The <xref:System.GC.RegisterForFullGCNotification%2A> method registers for a notification to be raised when the runtime senses that a full garbage collection is approaching. There are two parts to this notification: when the full garbage collection is approaching and when the full garbage collection has completed.  
   
 > [!WARNING]
->  Only blocking garbage collections raise notifications. When the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration element is enabled, background garbage collections will not raise notifications.  
+> Only blocking garbage collections raise notifications. When the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration element is enabled, background garbage collections will not raise notifications.  
   
  To determine when a notification has been raised, use the <xref:System.GC.WaitForFullGCApproach%2A> and <xref:System.GC.WaitForFullGCComplete%2A> methods. Typically, you use these methods in a `while` loop to continually obtain a <xref:System.GCNotificationStatus> enumeration that shows the status of the notification. If that value is <xref:System.GCNotificationStatus.Succeeded>, you can do the following:  
   
--   In response to a notification obtained with the <xref:System.GC.WaitForFullGCApproach%2A> method, you can redirect the workload and possibly induce a collection yourself.  
+- In response to a notification obtained with the <xref:System.GC.WaitForFullGCApproach%2A> method, you can redirect the workload and possibly induce a collection yourself.  
   
--   In response to a notification obtained with the <xref:System.GC.WaitForFullGCComplete%2A> method, you can make the current server instance available to process requests again. You can also gather information. For example, you can use the <xref:System.GC.CollectionCount%2A> method to record the number of collections.  
+- In response to a notification obtained with the <xref:System.GC.WaitForFullGCComplete%2A> method, you can make the current server instance available to process requests again. You can also gather information. For example, you can use the <xref:System.GC.CollectionCount%2A> method to record the number of collections.  
   
  The <xref:System.GC.WaitForFullGCApproach%2A> and the <xref:System.GC.WaitForFullGCComplete%2A> methods are designed to work together. Using one without the other can produce indeterminate results.  
   
 ## Full Garbage Collection  
  The runtime causes a full garbage collection when any of the following scenarios are true:  
   
--   Enough memory has been promoted into generation 2 to cause the next generation 2 collection.  
+- Enough memory has been promoted into generation 2 to cause the next generation 2 collection.  
   
--   Enough memory has been promoted into the large object heap to cause the next generation 2 collection.  
+- Enough memory has been promoted into the large object heap to cause the next generation 2 collection.  
   
--   A collection of generation 1 is escalated to a collection of generation 2 due to other factors.  
+- A collection of generation 1 is escalated to a collection of generation 2 due to other factors.  
   
  The thresholds you specify in the <xref:System.GC.RegisterForFullGCNotification%2A> method apply to the first two scenarios. However, in the first scenario you will not always receive the notification at the time proportional to the threshold values you specify for two reasons:  
   
--   The runtime does not check each small object allocation (for performance reasons).  
+- The runtime does not check each small object allocation (for performance reasons).  
   
--   Only generation 1 collections promote memory into generation 2.  
+- Only generation 1 collections promote memory into generation 2.  
   
  The third scenario also contributes to the uncertainty of when you will receive the notification. Although this is not a guarantee, it does prove to be a useful way to mitigate the effects of an inopportune full garbage collection by redirecting the requests during this time or inducing the collection yourself when it can be better accommodated.  
   
@@ -64,7 +64,7 @@ There are situations in which a full garbage collection (that is, a generation 2
   
  The <xref:System.GC.WaitForFullGCApproach%2A> and the <xref:System.GC.WaitForFullGCComplete%2A> methods call their respective event-handling user methods when a notification is raised:  
   
--   `OnFullGCApproachNotify`  
+- `OnFullGCApproachNotify`  
   
      This method calls the `RedirectRequests` user method, which instructs the request queuing server to suspend sending requests to the server. This is simulated by setting the class-level variable `bAllocate` to `false` so that no more objects are allocated.  
   
@@ -72,7 +72,7 @@ There are situations in which a full garbage collection (that is, a generation 2
   
      Finally, a garbage collection is induced because the workload is light.  
   
--   `OnFullGCCompleteNotify`  
+- `OnFullGCCompleteNotify`  
   
      This method calls the user method `AcceptRequests` to resume accepting requests because the server is no longer susceptible to a full garbage collection. This action is simulated by setting the `bAllocate` variable to `true` so that objects can resume being added to the <xref:System.Collections.Generic.List%601> collection.  
   

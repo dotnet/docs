@@ -23,7 +23,7 @@ Gets the set of properties for the assembly reference with the specified metadat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyRefProps (  
     [in]  mdAssemblyRef        mdar,   
     [out] const void          **ppbPublicKeyOrToken,   
@@ -38,7 +38,7 @@ HRESULT GetAssemblyRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdar`  
  [in] The `mdAssemblyRef` metadata token that represents the assembly reference for which to get the properties.  
   
@@ -82,4 +82,5 @@ HRESULT GetAssemblyRefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

@@ -54,7 +54,7 @@ End Module
   
 ## To correct this error  
   
--   To avoid the warning and remove the lambda expression, assign the lambda expression to a variable and use the variable in both the `AddHandler` and `RemoveHandler` statements, as shown in the following example.  
+- To avoid the warning and remove the lambda expression, assign the lambda expression to a variable and use the variable in both the `AddHandler` and `RemoveHandler` statements, as shown in the following example.  
   
 ```vb  
 Module Module1  
@@ -79,6 +79,7 @@ End Module
 ```  
   
 ## See also
+
 - [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
 - [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

@@ -26,7 +26,7 @@ The LINQ to Objects implementations of the standard query operator methods execu
  The following table classifies each standard query operator method according to its method of execution.  
   
 > [!NOTE]
->  If an operator is marked in two columns, two input sequences are involved in the operation, and each sequence is evaluated differently. In these cases, it is always the first sequence in the parameter list that is evaluated in a deferred, streaming manner.  
+> If an operator is marked in two columns, two input sequences are involved in the operation, and each sequence is evaluated differently. In these cases, it is always the first sequence in the parameter list that is evaluated in a deferred, streaming manner.  
   
 |Standard Query Operator|Return Type|Immediate Execution|Deferred Streaming Execution|Deferred Non-Streaming Execution|  
 |-----------------------------|-----------------|-------------------------|----------------------------------|---------------------------------------|  
@@ -82,6 +82,7 @@ The LINQ to Objects implementations of the standard query operator methods execu
 |<xref:System.Linq.Enumerable.Where%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
   
 ## See also
+
 - <xref:System.Linq.Enumerable>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Query Expression Syntax for Standard Query Operators (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)

@@ -1,11 +1,11 @@
 ---
 title: Records
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
-ms.date: 05/16/2016
+ms.date: 06/09/2019
 ---
 # Records
 
-Records represent simple aggregates of named values, optionally with members.  Starting with F# 4.1, they can either be structs or reference types.  They are reference types by default.
+Records represent simple aggregates of named values, optionally with members. They can either be structs or reference types.  They are reference types by default.
 
 ## Syntax
 
@@ -24,21 +24,21 @@ In the previous syntax, *typename* is the name of the record type, *label1* and 
 
 Following are some examples.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1901.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1901.fs)]
 
 When each label is on a separate line, the semicolon is optional.
 
 You can set values in expressions known as *record expressions*. The compiler infers the type from the labels used (if the labels are sufficiently distinct from those of other record types). Braces ({ }) enclose the record expression. The following code shows a record expression that initializes a record with three float elements with labels `x`, `y` and `z`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1907.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1907.fs)]
 
 Do not use the shortened form if there could be another type that also has the same labels.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1903.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1903.fs)]
 
 The labels of the most recently declared type take precedence over those of the previously declared type, so in the preceding example, `mypoint3D` is inferred to be `Point3D`. You can explicitly specify the record type, as in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1908.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1908.fs)]
 
 Methods can be defined for record types just as for class types.
 
@@ -48,7 +48,7 @@ You can initialize records by using the labels that are defined in the record. A
 
 The following example shows how to create a record.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1904.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1904.fs)]
 
 The semicolons after the last field in the record expression and in the type definition are optional, regardless of whether the fields are all in one line.
 
@@ -56,17 +56,17 @@ When you create a record, you must supply values for each field. You cannot refe
 
 In the following code, the type of `myRecord2` is inferred from the names of the fields. Optionally, you can specify the type name explicitly.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1905.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1905.fs)]
 
 Another form of record construction can be useful when you have to copy an existing record, and possibly change some of the field values. The following line of code illustrates this.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1906.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1906.fs)]
 
 This form of the record expression is called the *copy and update record expression*.
 
 Records are immutable by default; however, you can easily create modified records by using a copy and update expression. You can also explicitly specify a mutable field.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1909.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1909.fs)]
 
 Don't use the DefaultValue attribute with record fields. A better approach is to define default instances of records with fields that are initialized to default values and then use a copy and update record expression to set any fields that differ from the default values.
 
@@ -102,7 +102,8 @@ type Person =
 and Address =
   { Line1: string
     Line2: string
-    PostCode: string }
+    PostCode: string
+    Occupant: Person }
 ```
 
 If you were to define the previous example without the `and` keyword, then it would not compile. The `and` keyword is required for mutually recursive definitions.
@@ -111,7 +112,7 @@ If you were to define the previous example without the `and` keyword, then it wo
 
 Records can be used with pattern matching. You can specify some fields explicitly and provide variables for other fields that will be assigned when a match occurs. The following code example illustrates this.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1910.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1910.fs)]
 
 The output of this code is as follows.
 
@@ -127,7 +128,7 @@ Record fields differ from classes in that they are automatically exposed as prop
 
 Like union and structure types, records have structural equality semantics. Classes have reference equality semantics. The following code example demonstrates this.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1911.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1911.fs)]
 
 The output of this code is as follows:
 

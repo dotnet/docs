@@ -23,14 +23,14 @@ Gets an interface pointer to an [IMetaDataImport](../../../../docs/framework/unm
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataFromTypeLib (  
     [in]  ITypeLib        *pITL,   
     [out] IMetaDataImport **ppMDI  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pITL`  
  [in] Pointer to an `ITypeLib` object that represents the type library.  
   
@@ -47,5 +47,6 @@ HRESULT GetMetaDataFromTypeLib (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

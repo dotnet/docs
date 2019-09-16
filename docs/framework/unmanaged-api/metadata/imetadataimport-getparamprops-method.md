@@ -23,7 +23,7 @@ Gets metadata values for the parameter referenced by the specified ParamDef toke
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParamProps (  
    [in]  mdParamDef      tk,  
    [out] mdMethodDef     *pmd,  
@@ -38,7 +38,7 @@ HRESULT GetParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] A ParamDef token that represents the parameter to return metadata for.  
   
@@ -58,7 +58,7 @@ HRESULT GetParamProps (
  [out] The returned size in wide characters of `szName`.  
   
  `pdwAttr`  
- [out] A pointer to any attribute flags associated with the parameter.  
+ [out] A pointer to any attribute flags associated with the parameter. This is a bitmask of `CorParamAttr` values.  
   
  `pdwCPlusTypeFlag`  
  [out] A pointer to a flag specifying that the parameter is a <xref:System.ValueType>.  
@@ -69,6 +69,10 @@ HRESULT GetParamProps (
  `pcchValue`  
  [out] The size of `ppValue` in wide characters, or zero if `ppValue` does not hold a string.  
   
+## Remarks
+
+The sequence values in `pulSequence` begin with 1 for parameters. A return value has a sequence number of 0.
+
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
@@ -79,5 +83,6 @@ HRESULT GetParamProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

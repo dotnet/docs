@@ -1,0 +1,56 @@
+- name: Dynamic Programming
+  href: index.md
+  items:
+  - name: Reflection
+    href: reflection.md
+    items:
+    - name: Viewing Type Information
+      href: viewing-type-information.md
+    - name: Reflection and Generic Types
+      href: reflection-and-generic-types.md
+    - name: "How to: Examine and Instantiate Generic Types with Reflection"
+      href: how-to-examine-and-instantiate-generic-types-with-reflection.md
+    - name: Security Considerations for Reflection
+      href: security-considerations-for-reflection.md
+    - name: Dynamically Loading and Using Types
+      href: dynamically-loading-and-using-types.md
+    - name: "How to: Load Assemblies into the Reflection-Only Context"
+      href: how-to-load-assemblies-into-the-reflection-only-context.md
+    - name: "How to: Get type and member information by using reflection"
+      href: get-type-member-information.md
+    - name: Accessing Custom Attributes
+      href: accessing-custom-attributes.md
+    - name: Specifying Fully Qualified Type Names
+      href: specifying-fully-qualified-type-names.md
+    - name: "How to: Hook Up a Delegate Using Reflection"
+      href: how-to-hook-up-a-delegate-using-reflection.md
+    - name: Reflection in the .NET Framework for Windows Store Apps
+      href: reflection-for-windows-store-apps.md
+  - name: Emitting Dynamic Methods and Assemblies
+    href: emitting-dynamic-methods-and-assemblies.md
+    items:
+    - name: Security Issues in Reflection Emit
+      href: security-issues-in-reflection-emit.md
+    - name: "Walkthrough: Emitting Code in Partial Trust Scenarios"
+      href: walkthrough-emitting-code-in-partial-trust-scenarios.md
+    - name: "How to: Define and Execute Dynamic Methods"
+      href: how-to-define-and-execute-dynamic-methods.md
+    - name: "How to: Define a Generic Type with Reflection Emit"
+      href: how-to-define-a-generic-type-with-reflection-emit.md
+    - name: "How to: Define a Generic Method with Reflection Emit"
+      href: how-to-define-a-generic-method-with-reflection-emit.md
+    - name: Collectible assemblies for dynamic type generation
+      href: collectible-assemblies.md
+  - name: Dynamic Language Runtime Overview
+    href: dynamic-language-runtime-overview.md
+  - name: Dynamic Source Code Generation and Compilation
+    href: dynamic-source-code-generation-and-compilation.md
+    items:
+    - name: Using the CodeDOM
+      href: using-the-codedom.md
+    - name: Generating and Compiling Source Code from a CodeDOM Graph
+      href: generating-and-compiling-source-code-from-a-codedom-graph.md
+    - name: "How to: Create an XML Documentation File Using CodeDOM"
+      href: how-to-create-an-xml-documentation-file-using-codedom.md
+    - name: "How to: Create a Class Using CodeDOM"
+      href: how-to-create-a-class-using-codedom.md

@@ -23,7 +23,7 @@ Gets the parent module and metadata token for the open generic definition of the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassIDInfo2(  
     [in]  ClassID classId,  
     [out] ModuleID *pModuleId,  
@@ -34,7 +34,7 @@ HRESULT GetClassIDInfo2(
     [out] ClassID typeArgs[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class for which information will be retrieved.  
   
@@ -75,6 +75,7 @@ HRESULT GetClassIDInfo2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

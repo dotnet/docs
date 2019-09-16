@@ -10,20 +10,21 @@ You can create n-tier or multitier applications that use [!INCLUDE[vbtecdlinq](.
 
  On the middle tier, entities are created by the data context, which tracks their state, and manages deferred loading from and submission of changes to the database. These entities are "attached" to the `DataContext`. However, after the entities are sent to another tier through serialization, they become detached, which means the `DataContext` is no longer tracking their state. Entities that the client sends back for updates must be reattached to the data context before [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] can submit the changes to the database. The client is responsible for providing original values and/or timestamps back to the middle tier if those are required for optimistic concurrency checks.
 
- In ASP.NET applications, the <xref:System.Web.UI.WebControls.LinqDataSource> manages most of this complexity. For more information, see [NIB: LinqDataSource Web Server Control Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136).
+ In ASP.NET applications, the <xref:System.Web.UI.WebControls.LinqDataSource> manages most of this complexity. For more information, see [LinqDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)).
 
 ## Additional Resources
  For more information about how to implement n-tier applications that use [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], see the following topics:
 
--   [LINQ to SQL N-Tier with ASP.NET](../../../../../../docs/framework/data/adonet/sql/linq/linq-to-sql-n-tier-with-aspnet.md)
+- [LINQ to SQL N-Tier with ASP.NET](linq-to-sql-n-tier-with-aspnet.md)
 
--   [LINQ to SQL N-Tier with Web Services](../../../../../../docs/framework/data/adonet/sql/linq/linq-to-sql-n-tier-with-web-services.md) 
+- [LINQ to SQL N-Tier with Web Services](linq-to-sql-n-tier-with-web-services.md) 
 
--   [Implementing N-Tier Business Logic](../../../../../../docs/framework/data/adonet/sql/linq/implementing-business-logic-linq-to-sql.md)
+- [Implementing N-Tier Business Logic](implementing-business-logic-linq-to-sql.md)
 
--   [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../../../../../../docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md)
+- [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](data-retrieval-and-cud-operations-in-n-tier-applications.md)
 
  For more information about n-tier applications that use ADO.NET DataSets, see [Work with datasets in n-tier applications](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications).
 
 ## See also
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+
+- [Background Information](background-information.md)

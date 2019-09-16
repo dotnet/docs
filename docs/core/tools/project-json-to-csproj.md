@@ -33,7 +33,7 @@ The new format, \*.csproj, is an XML-based format. The following example shows t
 }
 ```
 
-No longer supported. In csproj, this is determined by the project filename, which is defined by the directory name. For example, `MyProjectName.csproj`.
+No longer supported. In csproj, this is determined by the project filename, which usually matches the directory name. For example, `MyProjectName.csproj`.
 
 By default, the project filename also specifies the value of the `<AssemblyName>` and `<PackageId>` properties.
 

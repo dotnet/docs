@@ -23,7 +23,7 @@ Stops the execution of code in the runtime for the current process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Stop ();  
 ```  
   
@@ -40,7 +40,7 @@ HRESULT Stop ();
  It is typically unnecessary to call the `Stop` method, because the code stops executing when the process exits.  
   
 > [!NOTE]
->  After a call to `Stop`, the CLR cannot be reinitialized into the same process.  
+> After a call to `Stop`, the CLR cannot be reinitialized into the same process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -52,4 +52,5 @@ HRESULT Stop ();
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

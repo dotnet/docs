@@ -23,7 +23,7 @@ Gets the value of an argument or local variable that is stored in the two specif
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalDoubleRegisterValue (  
     [in] CorDebugRegister   highWordReg,  
     [in] CorDebugRegister   lowWordReg,  
@@ -33,7 +33,7 @@ HRESULT GetLocalDoubleRegisterValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `highWordReg`  
  [in] A value of the "CorDebugRegister" enumeration that specifies the register containing the high word of the value.  
   
@@ -62,4 +62,3 @@ HRESULT GetLocalDoubleRegisterValue (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

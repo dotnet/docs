@@ -1,1 +1,0 @@
-    DayValue = FirstDayOfWeek.Saturday

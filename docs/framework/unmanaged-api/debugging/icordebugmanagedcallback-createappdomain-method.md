@@ -23,14 +23,14 @@ Notifies the debugger that an application domain has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAppDomain (  
     [in] ICorDebugProcess   *pProcess,  
     [in] ICorDebugAppDomain *pAppDomain  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process in which the application domain was created.  
   
@@ -47,4 +47,5 @@ HRESULT CreateAppDomain (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

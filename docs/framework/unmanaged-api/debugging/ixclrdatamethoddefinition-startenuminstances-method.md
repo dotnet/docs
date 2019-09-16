@@ -24,19 +24,19 @@ Provides a handle for the enumeration of method instances for a given `IXCLRData
 
 ## Syntax
 
-```
+```cpp
 HRESULT StartEnumInstances(
     [in] IXCLRDataAppDomain* appDomain,
     [out] CLRDATA_ENUM *handle
 );
 ```
 
-### Parameters
+## Parameters
 
-`appDomain`
+`appDomain`\
 [in] An AppDomain for the enumeration.
 
-`handle`
+`handle`\
 [out] A handle for enumerating the instances.
 
 ## Remarks
@@ -52,6 +52,6 @@ The provided method is part of the `IXCLRDataMethodDefinition` interface and cor
 
 ## See also
 
-- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md)
+- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
+- [Debugging](index.md)
+- [IXCLRDataMethodDefinition Interface](ixclrdatamethoddefinition-interface.md)

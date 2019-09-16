@@ -25,7 +25,7 @@ Creates a buffer of the specified size for a method, and gets the relative virtu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AllocateMethodBuffer (   
     [in]  ULONG    cchBuffer,   
     [out] UCHAR    **lpBuffer,  
@@ -33,7 +33,7 @@ HRESULT AllocateMethodBuffer (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchBuffer`  
  [in] The length of the buffer to create.  
   
@@ -53,4 +53,5 @@ HRESULT AllocateMethodBuffer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

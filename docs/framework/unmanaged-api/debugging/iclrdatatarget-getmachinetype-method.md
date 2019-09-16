@@ -23,13 +23,13 @@ Gets the identifier for the kind of instruction set that the target process is u
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMachineType (  
     [out] ULONG32     *machineType  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `machineType`  
  [out] A pointer to a value that indicates the instruction set that the target process is using. The returned `machineType` is one of the IMAGE_FILE_MACHINE constants, which are defined in the WinNT.h header file.  
   
@@ -43,4 +43,5 @@ HRESULT GetMachineType (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

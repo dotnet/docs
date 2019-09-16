@@ -29,7 +29,7 @@ Flexible types are useful in several types of situations. For example, when you 
 
 Consider the following two functions, one of which returns a sequence, the other of which returns a flexible type.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4101.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4101.fs)]
 
 As another example, consider the [Seq.concat](https://msdn.microsoft.com/library/2eeb69a9-fc2f-4b7d-8dee-101fa2b00712) library function:
 
@@ -47,7 +47,7 @@ You can pass any of the following enumerable sequences to this function:
 
 The following code uses `Seq.concat` to demonstrate the scenarios that you can support by using flexible types.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4102.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4102.fs)]
 
 The output is as follows.
 
@@ -64,4 +64,4 @@ In F#, as in other object-oriented languages, there are contexts in which derive
 ## See also
 
 - [F# Language Reference](index.md)
-- [Generics](generics/index.md)
+- [Generics](./generics/index.md)

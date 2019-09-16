@@ -10,9 +10,10 @@ The `NPer` function, which returns a `Double` specifying the number of periods f
   
 ## To correct this error  
   
--   Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
+- Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
   
--   Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
+- Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
   
 ## See also
+
 - [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

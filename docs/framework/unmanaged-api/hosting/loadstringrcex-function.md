@@ -20,11 +20,11 @@ ms.author: "ronpet"
 # LoadStringRCEx Function
 Translates an HRESULT value to an appropriate error message for the specified culture.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadStringRCEx (  
     [in]  LCID    lcid,   
     [in]  UINT    iResouceID,   
@@ -35,7 +35,7 @@ HRESULT LoadStringRCEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lcid`  
  [in] A culture identifier. Pass -1 for `lcid` to use the default culture.  
   
@@ -75,6 +75,7 @@ HRESULT LoadStringRCEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType>
 - [LoadStringRC Function](../../../../docs/framework/unmanaged-api/hosting/loadstringrc-function.md)
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

@@ -10,4 +10,4 @@ A call to the `NPer` function does not contain all of the required arguments.
   
 ## To correct this error  
   
--   Ensure that the `Rate`, `Prnt` and `PV` values are included in the function call.
+- Ensure that the `Rate`, `Prnt` and `PV` values are included in the function call.

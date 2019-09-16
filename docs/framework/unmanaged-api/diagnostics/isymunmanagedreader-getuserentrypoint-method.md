@@ -23,12 +23,12 @@ Returns the method that was specified as the user entry point for the module, if
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserEntryPoint (  
     [out, retval]  mdMethodDef  *pToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pToken`  
  [out] A pointer to a variable that receives the entry point.  
   
@@ -39,4 +39,5 @@ HRESULT GetUserEntryPoint (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

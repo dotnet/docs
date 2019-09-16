@@ -13,13 +13,13 @@ Every endpoint has an address associated with it, which is used to locate and id
 ## URI Structure of an Address  
  The address URI for most transports has four parts. For example, the four parts of the URI `http://www.fabrikam.com:322/mathservice.svc/secureEndpoint` can be itemized as follows:  
   
--   Scheme: `http:`
+- Scheme: `http:`
   
--   Machine: `www.fabrikam.com`  
+- Machine: `www.fabrikam.com`  
   
--   (optional) Port: 322  
+- (optional) Port: 322  
   
--   Path: /mathservice.svc/secureEndpoint  
+- Path: /mathservice.svc/secureEndpoint  
   
 ## Defining an Address for a Service  
  The endpoint address for a service can be specified either imperatively using code or declaratively through configuration. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. Generally, it is more practical to define service endpoints using configuration rather than code. Keeping the binding and addressing information out of the code allows them to change without having to recompile or redeploy the application.  
@@ -40,9 +40,9 @@ Every endpoint has an address associated with it, which is used to locate and id
   
  The following example shows the components that can be present in an IIS binding:  
   
--   Binding protocol: HTTP  
+- Binding protocol: HTTP  
   
--   Binding Information: IP Address, Port, Host header  
+- Binding Information: IP Address, Port, Host header  
   
  IIS can specify multiple bindings for each site, which results in multiple base addresses for each scheme. Prior to [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)], WCF did not support multiple addresses for a schema and, if they were specified, threw a <xref:System.ArgumentException> during activation.  
   
@@ -94,15 +94,15 @@ Every endpoint has an address associated with it, which is used to locate and id
 ## Extending Addressing in WCF Services  
  The default addressing model of WCF services uses the endpoint address URI for the following purposes:  
   
--   To specify the service listening address, the location at which the endpoint listens for messages,  
+- To specify the service listening address, the location at which the endpoint listens for messages,  
   
--   To specify the SOAP address filter, the address an endpoint expects as a SOAP header.  
+- To specify the SOAP address filter, the address an endpoint expects as a SOAP header.  
   
  The values for each of these purposes can be specified separately, allowing several extensions of addressing that cover useful scenarios:  
   
--   SOAP intermediaries: a message sent by a client traverses one or more additional services that process the message before it reaches its final destination. SOAP intermediaries can perform various tasks, such as caching, routing, load-balancing, or schema validation on the messages. This scenario is accomplished by sending messages to a separate physical address (`via`) that targets the intermediary rather than just to a logical address (`wsa:To`) that targets the ultimate destination.  
+- SOAP intermediaries: a message sent by a client traverses one or more additional services that process the message before it reaches its final destination. SOAP intermediaries can perform various tasks, such as caching, routing, load-balancing, or schema validation on the messages. This scenario is accomplished by sending messages to a separate physical address (`via`) that targets the intermediary rather than just to a logical address (`wsa:To`) that targets the ultimate destination.  
   
--   The listening address of the endpoint is a private URI and is set to a different value than its `listenURI` property.  
+- The listening address of the endpoint is a private URI and is set to a different value than its `listenURI` property.  
   
  The transport address that the `via` specifies is the location to which a message should initially be sent on its way to some other remote address specified by the `to` parameter at which the service is located. In most Internet scenarios, the `via` URI is the same as the <xref:System.ServiceModel.EndpointAddress.Uri%2A> property of the final `to` address of the service. You only distinguish between these two addresses when you must do manual routing.  
   
@@ -111,9 +111,9 @@ Every endpoint has an address associated with it, which is used to locate and id
   
  You can define custom address headers in two ways—by using either code or configuration:  
   
--   In code, create custom address headers by using the <xref:System.ServiceModel.Channels.AddressHeader> class, and then used in the construction of an <xref:System.ServiceModel.EndpointAddress>.  
+- In code, create custom address headers by using the <xref:System.ServiceModel.Channels.AddressHeader> class, and then used in the construction of an <xref:System.ServiceModel.EndpointAddress>.  
   
--   In configuration, custom [\<headers>](../../../../docs/framework/configure-apps/file-schema/wcf/headers.md) are specified as children of the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
+- In configuration, custom [\<headers>](../../configure-apps/file-schema/wcf/headers.md) are specified as children of the [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
   
  Configuration is generally preferable to code, as it allows you to change the headers after deployment.  
   
@@ -122,9 +122,9 @@ Every endpoint has an address associated with it, which is used to locate and id
   
  You can specify a custom listening address by using either code or configuration:  
   
--   In code, specify a custom listening address by adding a <xref:System.ServiceModel.Description.ClientViaBehavior> class to the endpoint’s behavior collection.  
+- In code, specify a custom listening address by adding a <xref:System.ServiceModel.Description.ClientViaBehavior> class to the endpoint’s behavior collection.  
   
--   In configuration, specify a custom listening address with the `ListenUri` attribute of the service [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
+- In configuration, specify a custom listening address with the `ListenUri` attribute of the service [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) element.  
   
 ### Custom SOAP Address Filter  
  The <xref:System.ServiceModel.EndpointAddress.Uri%2A> is used in conjunction with any <xref:System.ServiceModel.EndpointAddress.Headers%2A> property to define an endpoint’s SOAP address filter (<xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A>). By default, this filter verifies that an incoming message has a `To` message header that matches the endpoint’s URI and that all of the required endpoint headers are present in the message.  
@@ -132,5 +132,6 @@ Every endpoint has an address associated with it, which is used to locate and id
  In some scenarios, an endpoint receives all messages that arrive on the underlying transport, and not just those with the appropriate `To` header. To enable this, the user can use the <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> class.  
   
 ## See also
+
 - [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md)
 - [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)

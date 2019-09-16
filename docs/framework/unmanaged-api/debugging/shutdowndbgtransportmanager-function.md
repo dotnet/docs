@@ -24,7 +24,7 @@ Shuts down the transport manager for a connection to a remote target machine.
   
 ## Syntax  
   
-```  
+```cpp  
 void InitDbgTransportManager ();  
 ```  
   

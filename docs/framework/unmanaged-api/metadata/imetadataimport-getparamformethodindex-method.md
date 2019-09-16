@@ -23,7 +23,7 @@ Gets the token that represents a specified parameter of the method represented b
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParamForMethodIndex (  
    [in]  mdMethodDef      md,  
    [in]  ULONG            ulParamSeq,  
@@ -31,7 +31,7 @@ HRESULT GetParamForMethodIndex (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `md`  
  [in] A token that represents the method to return the parameter token for.  
   
@@ -51,5 +51,6 @@ HRESULT GetParamForMethodIndex (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

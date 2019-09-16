@@ -2,7 +2,7 @@
 title: Use the Windows Compatibility Pack to port code to .NET Core
 description: Learn about the Windows Compatibility Pack and how can you use it to port existing .NET Framework code to .NET Core
 author: terrajobst
-ms.date: 11/13/2017
+ms.date: 12/07/2018
 ms.custom: seodec18
 ---
 # Use the Windows Compatibility Pack to port code to .NET Core
@@ -53,7 +53,7 @@ APIs from the following technology areas:
 * Windows Runtime Caching
 * Windows Services
 
-For more information, see the [spec of the compatibility pack](https://github.com/dotnet/designs/blob/master/accepted/compat-pack/compat-pack.md).
+For more information, see the [specification of the compatibility pack](https://github.com/dotnet/designs/blob/master/accepted/compat-pack/compat-pack.md).
 
 ## Get started
 
@@ -65,7 +65,7 @@ For more information, see the [spec of the compatibility pack](https://github.co
 3. If you want to stay on Windows, you're all set.
 
 4. If you want to run the .NET Core application or .NET Standard library on
-   Linux or macOS, use the [API Analyzer](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/)
+   Linux or macOS, use the [API Analyzer](../../standard/analyzers/api-analyzer.md)
    to find usage of APIs that won't work cross-platform.
 
 5. Either remove the usages of those APIs, replace them with cross-platform
@@ -92,4 +92,3 @@ For more information, see the [spec of the compatibility pack](https://github.co
     ```
 
 For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](https://channel9.msdn.com/Events/Connect/2017/T123).
-

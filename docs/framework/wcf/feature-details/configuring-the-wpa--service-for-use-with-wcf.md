@@ -6,18 +6,18 @@ ms.assetid: 1d50712e-53cd-4773-b8bc-a1e1aad66b78
 # Configuring the Windows Process Activation Service for Use with Windows Communication Foundation
 This topic describes the steps required to set up Windows Process Activation Service (also known as WAS) in [!INCLUDE[wv](../../../../includes/wv-md.md)] to host Windows Communication Foundation (WCF) services that do not communicate over HTTP network protocols. The following sections outline the steps for this configuration:  
   
--   Install (or confirm the installation of) the WCF activation components required.  
+- Install (or confirm the installation of) the WCF activation components required.  
   
--   Create a WAS site with the network protocol bindings you wish to use, or add a new protocol binding to an existing site.  
+- Create a WAS site with the network protocol bindings you wish to use, or add a new protocol binding to an existing site.  
   
--   Create an application to host your services and enable that application to use the required network protocols.  
+- Create an application to host your services and enable that application to use the required network protocols.  
   
--   Build a WCF service that exposes a non-HTTP endpoint.  
+- Build a WCF service that exposes a non-HTTP endpoint.  
   
 ## Configuring a Site with Non-HTTP bindings  
  To use a non-HTTP binding with WAS, the site binding must be added to the WAS configuration. The configuration store for WAS is the applicationHost.config file, located in the %windir%\system32\inetsrv\config directory. This configuration store is shared by both WAS and IIS 7.0.  
   
- applicationHost.config is an XML text file that can be opened with any standard text editor (such as Notepad). However, the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] command-line configuration tool (appcmd.exe) is the preferred way to add non-HTTP site bindings.  
+ applicationHost.config is an XML text file that can be opened with any standard text editor (such as Notepad). However, the IIS 7.0 command-line configuration tool (appcmd.exe) is the preferred way to add non-HTTP site bindings.  
   
  The following command adds a net.tcp site binding to the default Web site using appcmd.exe (this command is entered as a single line).  
   
@@ -91,5 +91,6 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
  For detailed instructions about building a WAS-activated WCF service, see [How to: Host a WCF Service in WAS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md).  
   
 ## See also
+
 - [Hosting in Windows Process Activation Service](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md)
 - [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

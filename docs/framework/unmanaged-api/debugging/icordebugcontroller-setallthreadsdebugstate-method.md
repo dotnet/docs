@@ -23,14 +23,14 @@ Sets the debug state of all managed threads in the process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAllThreadsDebugState (  
     [in] CorDebugThreadState  state,  
     [in] ICorDebugThread      *pExceptThisThread  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `state`  
  [in] A value of the "CorDebugThreadState" enumeration that specifies the state of the thread for debugging.  
   
@@ -50,4 +50,3 @@ HRESULT SetAllThreadsDebugState (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

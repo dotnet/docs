@@ -1,4 +1,4 @@
-### ConcurrentQueue\<T>.TryPeek can return an erroneous null via its out parameter
+### ConcurrentQueue&lt;T&gt;.TryPeek can return an erroneous null via its out parameter
 
 |   |   |
 |---|---|
@@ -8,4 +8,3 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Collections.Concurrent.ConcurrentQueue%601.TryPeek(%600@)?displayProperty=nameWithType></li></ul>|
-

@@ -11,11 +11,11 @@ Windows Communication Foundation (WCF) provides highly flexible options for cont
 ## Transaction Flow Settings  
  Transaction flow settings are generated for a service endpoint as a result of the intersection of the following three values:  
   
--   The <xref:System.ServiceModel.TransactionFlowAttribute> attribute specified for each method in the service contract.  
+- The <xref:System.ServiceModel.TransactionFlowAttribute> attribute specified for each method in the service contract.  
   
--   The `TransactionFlow` binding property in the specific binding.  
+- The `TransactionFlow` binding property in the specific binding.  
   
--   The `TransactionFlowProtocol` binding property in the specific binding. The `TransactionFlowProtocol` binding property enables you to choose among two different transaction protocols that you can use to flow a transaction. The following sections briefly describe each of them.  
+- The `TransactionFlowProtocol` binding property in the specific binding. The `TransactionFlowProtocol` binding property enables you to choose among two different transaction protocols that you can use to flow a transaction. The following sections briefly describe each of them.  
   
 ### WS-AtomicTransaction Protocol  
  The WS-AtomicTransaction (WS-AT) protocol is useful for scenarios when interoperability with third-party protocol stacks is required.  
@@ -68,7 +68,7 @@ Windows Communication Foundation (WCF) provides highly flexible options for cont
   
  When generating WCF clients to unknown or untrusted Web services through the use of metadata exchange, calls to operations on these Web services should suppress the current transaction if possible. The following example demonstrates how to do this.  
   
-```  
+```csharp
 //client code which has an ambient transaction  
 using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Suppress))  
 {  

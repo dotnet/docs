@@ -11,19 +11,19 @@ ms.assetid: 3090b408-94e4-446a-92ca-50f1fd36e5d8
 The following topics show how to manage [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] windows.  
   
 ## In This Section  
- [Automatically Size a Window to Fit Its Content](../../../../docs/framework/wpf/app-development/how-to-automatically-size-a-window-to-fit-its-content.md)  
-  [Get all Windows in an Application](../../../../docs/framework/wpf/app-development/how-to-get-all-windows-in-an-application.md)  
-  [Get and Set the Main Application Window](../../../../docs/framework/wpf/app-development/how-to-get-and-set-the-main-application-window.md)  
-  [Open a Dialog Box](../../../../docs/framework/wpf/app-development/how-to-open-a-dialog-box.md)  
-  [Open a Message Box](../../../../docs/framework/wpf/app-development/how-to-open-a-message-box.md)  
-  [Open a Window](../../../../docs/framework/wpf/app-development/how-to-open-a-window.md)  
-  [Return a Dialog Box Result](../../../../docs/framework/wpf/app-development/how-to-return-a-dialog-box-result.md)  
+ [Automatically Size a Window to Fit Its Content](how-to-automatically-size-a-window-to-fit-its-content.md)  
+  [Get all Windows in an Application](how-to-get-all-windows-in-an-application.md)  
+  [Get and Set the Main Application Window](how-to-get-and-set-the-main-application-window.md)  
+  [Open a Dialog Box](how-to-open-a-dialog-box.md)  
+  [Open a Message Box](how-to-open-a-message-box.md)  
+  [Open a Window](how-to-open-a-window.md)  
+  [Return a Dialog Box Result](how-to-return-a-dialog-box-result.md)  
   
 ## Related Sections  
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
+ [Application Management Overview](application-management-overview.md)  
   
- [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md)  
+ [Navigation Overview](navigation-overview.md)  
   
- [Hosting](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md)  
+ [Hosting](hosting-wpf-applications.md)  
   
- [Build and Deploy](../../../../docs/framework/wpf/app-development/building-and-deploying-wpf-applications.md)
+ [Build and Deploy](building-and-deploying-wpf-applications.md)

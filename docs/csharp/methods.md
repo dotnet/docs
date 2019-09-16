@@ -6,7 +6,8 @@ ms.author: ronpet
 ms.date: 05/21/2018
 ms.assetid: 577a8527-1081-4b36-9b9e-0685b6553c6e
 ---
-# Methods #
+
+# Methods
 
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. In C#, every executed instruction is performed in the context of a method. The `Main` method is the entry point for every C# application and it is called by the common language runtime (CLR) when the program is started.
 
@@ -30,7 +31,8 @@ This topic contains the following sections:
 - [Iterators](#iterators)
 
 <a name="signatures"></a>
-## Method signatures ##
+
+## Method signatures
 
 Methods are declared in a `class` or `struct` by specifying:
 
@@ -52,9 +54,10 @@ The following example defines a class named `Motorcycle` that contains five meth
 Note that the `Motorcycle` class includes an overloaded method, `Drive`. Two methods have the same name, but must be differentiated by their parameter types.
 
 <a name="invocation"></a>
-## Method invocation ##
 
-Methods can be either *instance* or *static*. Invoking an instance method requires that you instantiate an object and call the method on that object; an instance method operates on that instance and its data. You invoke a static method by referencing the name of the type to which the method belongs; static methods operate do not operate on instance data. Attempting to call a static method through an object instance generates a compiler error.
+## Method invocation
+
+Methods can be either *instance* or *static*. Invoking an instance method requires that you instantiate an object and call the method on that object; an instance method operates on that instance and its data. You invoke a static method by referencing the name of the type to which the method belongs; static methods do not operate on instance data. Attempting to call a static method through an object instance generates a compiler error.
 
 Calling a method is like accessing a field. After the object name (if you are calling an instance method) or the type name (if you are calling a `static` method), add a period, the name of the method, and parentheses. Arguments are listed within the parentheses, and are separated by commas.
 
@@ -74,8 +77,9 @@ You can invoke a method using both positional arguments and named arguments. How
 
 [!code-csharp[csSnippets.Methods#46](../../samples/snippets/csharp/concepts/methods/named2.cs#46)]
 
- <a name="inherited"></a>
- ## Inherited and overridden methods ##
+<a name="inherited"></a>
+
+## Inherited and overridden methods
 
 In addition to the members that are explicitly defined in a type, a type inherits members defined in its base classes. Since all types in the managed type system inherit directly or indirectly from the <xref:System.Object> class, all types inherit its members, such as <xref:System.Object.Equals(System.Object)>, <xref:System.Object.GetType>, and <xref:System.Object.ToString>. The following example defines a `Person` class, instantiates two `Person` objects, and calls the `Person.Equals` method to determine whether the two objects are equal. The `Equals` method, however, is not defined in the `Person` class; it is inherited from <xref:System.Object>.
 
@@ -86,12 +90,14 @@ Types can override inherited members by using the `override` keyword and providi
 [!code-csharp[csSnippets.Methods#105](../../samples/snippets/csharp/concepts/methods/overridden1.cs#105)]
 
 <a name="passing"></a>
-## Passing parameters ##
+
+## Passing parameters
 
 Types in C# are either *value types* or *reference types*. For a list of built-in value types, see [Types and variables](./tour-of-csharp/types-and-variables.md). By default, both value types and reference types are passed to a method by value.
 
 <a name="byval"></a>
-### Passing parameters by value ###
+
+### Passing parameters by value
 
 When a value type is passed to a method by value, a copy of the object instead of the object itself is passed to the method. Therefore, changes to the object in the called method have no effect on the original object when control returns to the caller.
 
@@ -106,7 +112,8 @@ The following example defines a class (which is a reference type) named `SampleR
 [!code-csharp[csSnippets.Methods#42](../../samples/snippets/csharp/concepts/methods/byvalue42.cs#42)]
 
 <a name="byref"></a>
-### Passing parameters by reference ###
+
+### Passing parameters by reference
 
 You pass a parameter by reference when you want to change the value of an argument in a method and want to reflect that change when control returns to the calling method. To pass a parameter by reference, you use the [`ref`](language-reference/keywords/ref.md) or [`out`](language-reference/keywords/out-parameter-modifier.md) keyword. You can also pass a value by reference to avoid copying but still prevent modifications using the [`in`](language-reference/keywords/in-parameter-modifier.md) keyword.
 
@@ -121,7 +128,8 @@ A common pattern that uses by ref parameters involves swapping the values of var
 Passing a reference-type parameter allows you to change the value of the reference itself, rather than the value of its individual elements or fields.
 
 <a name="paramarray"></a>
-### Parameter arrays ###
+
+### Parameter arrays
 
 Sometimes, the requirement that you specify the exact number of arguments to your method is restrictive. By using the `params` keyword to indicate that a parameter is a parameter array, you allow your method to be called with a variable number of arguments. The parameter tagged with the `params` keyword must be an array type, and it must be the last parameter in the method's parameter list.
 
@@ -131,19 +139,20 @@ A caller can then invoke the method in either of three ways:
 - By passing a comma-separated list of individual arguments of the appropriate type to the method.
 - By not providing an argument to the parameter array.
 
-The following example defines a method named `DoStringOperation` that performs the string operation specified by its first parameter, a `StringOperation` enumeration member. The strings upon which it is to perform the operation are defined by a parameter array. The `Main` method illustrates all three ways of invoking the method. Note that the method tagged with the `params` keyword must be prepared to handle the case in which no argument is supplied for the parameter array, so that its value is `null`.
+The following example defines a method named `GetVowels` that returns all the vowels from a parameter array. The `Main` method illustrates all three ways of invoking the method. Callers are not required to supply any arguments for parameters that include the `params` modifier. In that case, the parameter is `null`.
 
-[!code-csharp[csSnippets.Methods#106](../../samples/snippets/csharp/concepts/methods/byref108.cs#108)]
+[!code-csharp[csSnippets.Methods#75](~/samples/snippets/csharp/concepts/methods/params75.cs#75)]
 
 <a name="optional"></a>
-## Optional parameters and arguments ##
+
+## Optional parameters and arguments
 
 A method definition can specify that its parameters are required or that they are optional. By default, parameters are required. Optional parameters are specified by including the parameter's default value in the method definition. When the method is called, if no argument is supplied for an optional parameter, the default value is used instead.
 
 The parameter's default value must be assigned by one of the following kinds of expressions:
 
 - A constant, such as a literal string or number.
-- An expression of the form `new ValType`, where `ValType` is a value type. Note that this invokes the value type's implicit default constructor, which is not an actual member of the type.
+- An expression of the form `new ValType`, where `ValType` is a value type. Note that this invokes the value type's implicit parameterless constructor, which is not an actual member of the type.
 - An expression of the form `default(ValType)`, where `ValType` is a value type.
 
 If a method includes both required and optional parameters, optional parameters are defined at the end of the parameter list, after all required parameters.
@@ -166,8 +175,9 @@ The use of optional parameters affects *overload resolution*, or the way in whic
 - If more than one candidate is found, overload resolution rules for preferred conversions are applied to the arguments that are explicitly specified. Omitted arguments for optional parameters are ignored.
 - If two candidates are judged to be equally good, preference goes to a candidate that does not have optional parameters for which arguments were omitted in the call. This is a consequence of a general preference in overload resolution for candidates that have fewer parameters.
 
- <a name="return"></a>
- ## Return values ##
+<a name="return"></a>
+
+## Return values
 
 Methods can return a value to the caller. If the return type (the type listed before the method name) is not `void`, the method can return the value by using the `return` keyword. A statement with the `return` keyword followed by a variable, constant, or expression that matches the return type will return that value to the method caller. Methods with a non-void return type are required to use the `return` keyword to return a value. The `return` keyword also stops the execution of the method.
 
@@ -223,8 +233,9 @@ If a method is passed an array as an argument and modifies the value of individu
 
 [!code-csharp[csSnippets.Methods#101](../../samples/snippets/csharp/concepts/methods/returnarray1.cs#101)]
 
- <a name="extension"></a>
- ## Extension methods ##
+<a name="extension"></a>
+
+## Extension methods
 
 Ordinarily, there are two ways to add a method to an existing type:
 
@@ -236,11 +247,12 @@ Extension methods let you "add" a method to an existing type without modifying t
 For more information, see [Extension Methods](programming-guide/classes-and-structs/extension-methods.md).
 
 <a name="async"></a>
-## Async Methods ##
+
+## Async Methods
 
 By using the async feature, you can invoke asynchronous methods without using explicit callbacks or manually splitting your code across multiple methods or lambda expressions.
 
-If you mark a method with the [async](language-reference/keywords/async.md) modifier, you can use the [await](language-reference/keywords/await.md) operator in the method. When control reaches an `await` expression in the async method, control returns to the caller if the awaited task is not completed, and progress in the method with the `await` keyword is suspended until the awaited task completes. When the task is complete, execution can resume in the method.
+If you mark a method with the [async](language-reference/keywords/async.md) modifier, you can use the [await](language-reference/operators/await.md) operator in the method. When control reaches an `await` expression in the async method, control returns to the caller if the awaited task is not completed, and progress in the method with the `await` keyword is suspended until the awaited task completes. When the task is complete, execution can resume in the method.
 
 > [!NOTE]
 > An async method returns to the caller when either it encounters the first awaited object that’s not yet complete or it gets to the end of the async method, whichever occurs first.
@@ -256,7 +268,8 @@ An async method can't declare any [in](language-reference/keywords/in-parameter-
  For more information about async methods, see [Asynchronous Programming with Async and Await](async.md), [Control Flow in Async Programs](programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](programming-guide/concepts/async/async-return-types.md).
 
 <a name="expr"></a>
-## Expression-bodied members ##
+
+## Expression-bodied members
 
 It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:
 
@@ -272,7 +285,8 @@ public Customer this[long id] => store.LookupCustomer(id);
 If the method returns `void` or is an async method, the body of the method must be a statement expression (same as with lambdas).  For properties and indexers, they must be read-only, and you do not use the `get` accessor keyword.
 
 <a name="iterators"></a>
-## Iterators ##
+
+## Iterators
 
 An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](language-reference/keywords/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location is remembered so that the caller can request the next element in the sequence.
 
@@ -280,7 +294,7 @@ The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xr
 
 For more information, see [Iterators](programming-guide/concepts/iterators.md).
 
-## See also ##
+## See also
 
 - [Access Modifiers](language-reference/keywords/access-modifiers.md)
 - [Static Classes and Static Class Members](programming-guide/classes-and-structs/static-classes-and-static-class-members.md)

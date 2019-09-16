@@ -23,14 +23,14 @@ Creates a critical section object with spin count for synchronization.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateCrstWithSpinCount (  
     [in]  DWORD dwSpinCount,  
     [out] IHostCrst** ppCrst  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwSpinCount`  
  [in] Specifies the spin count for the critical section object.  
   
@@ -62,6 +62,7 @@ HRESULT CreateCrstWithSpinCount (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostSemaphore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

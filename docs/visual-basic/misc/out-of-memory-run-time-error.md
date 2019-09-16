@@ -10,15 +10,16 @@ More memory was required than is available.
   
 ## To correct this error  
   
-1.  Close unnecessary applications, documents, or source files that are open.  
+1. Close unnecessary applications, documents, or source files that are open.  
   
-2.  Break large modules or procedures into smaller ones.  
+2. Break large modules or procedures into smaller ones.  
   
-3.  Eliminate terminate-and-stay-resident programs.  
+3. Eliminate terminate-and-stay-resident programs.  
   
-4.  Eliminate unnecessary device drivers.  
+4. Eliminate unnecessary device drivers.  
   
-5.  Reduce the number of public variables.  
+5. Reduce the number of public variables.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

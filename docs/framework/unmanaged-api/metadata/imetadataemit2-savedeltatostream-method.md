@@ -23,14 +23,14 @@ Saves changes from the current edit-and-continue session to the specified stream
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SaveDeltaToStream (  
     [in] IStream     *pIStream,   
     [in] DWORD       dwSaveFlags  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIStream`  
  [in] An interface pointer to the writable stream to which to save changes.  
   
@@ -47,5 +47,6 @@ HRESULT SaveDeltaToStream (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

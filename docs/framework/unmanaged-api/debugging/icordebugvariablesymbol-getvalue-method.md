@@ -10,7 +10,7 @@ Gets the value of a variable as a byte array.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue(  
    [in] ULONG32 offset,  
    [in] ULONG32 cbContext,  
@@ -21,7 +21,7 @@ HRESULT GetValue(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `offset`  
  [in] The starting offset in the variable from which to read the value. This parameter is used when reading member fields in an object.  
   
@@ -43,7 +43,7 @@ HRESULT GetValue(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -55,5 +55,6 @@ HRESULT GetValue(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugVariableSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -5,13 +5,14 @@ ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
 ---
 # \<security> of \<netHttpBinding>
 
-Defines the security capabilities of the [\<basicHttpBinding>](basichttpbinding.md).
+Defines the security capabilities of the [\<netHttpBinding>](nethttpbinding.md).
 
-\<system.ServiceModel>\
-\<bindings>\
-\<netHttpBinding>\
-\<binding>\
-\<security>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netHttpBinding>**](nethttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
 
 ## Syntax
 

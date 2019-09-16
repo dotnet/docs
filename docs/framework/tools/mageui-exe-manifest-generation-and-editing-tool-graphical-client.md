@@ -57,7 +57,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Sign with certificate file**|Signs the manifest with a digital certificate stored on the file system.|  
 |**File**|Provides an area to type the path to the .pfx file representing the certificate.|  
 |**...**|Opens a **Choose File** dialog box for selecting an existing .pfx file.|  
-|**New**|Generates a new .pfx that is not verifiable through a Certificate Authority (CA). For more information about the types of certificates used for signing [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployments, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview).|  
+|**New**|Generates a new .pfx that is not verifiable through a Certificate Authority (CA). For more information about the types of certificates used for signing ClickOnce deployments, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview).|  
 |**Password**|Provides an area to type the password used for signing with this certificate. If not applicable, can be left blank.|  
 |**Sign with stored certificate**|Displays a selectable list of digital certificates stored in your computer's certificate store.|  
 |**TimeStamping URI**|Displays the Uniform Resource Locator (URI) of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests if your digital certificate expires before you deploy the next version of your application. For more information, see [Windows root certificate program members](https://go.microsoft.com/fwlink/?LinkId=159000) and [ClickOnce and Authenticode](/visualstudio/deployment/clickonce-and-authenticode).|  
@@ -122,7 +122,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
   
 |UI Element|Description|  
 |----------------|-----------------|  
-|**Permission set type**|The minimum permission set required by this application to run on the client. For a description of these permission sets and which permissions they do or do not demand, see [NIB: Named Permission Sets](https://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3).|  
+|**Permission set type**|The minimum permission set required by this application to run on the client. For a description of these permission sets and which permissions they do or do not demand, see [Named Permission Sets](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).|  
 |**Details**|The XML created for the application manifest to represent the permission set. Unless you have a good understanding of the application manifest XML format, you should not edit this XML manually. For more information, see [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest).|  
   
 ### Deployment Manifest Tab  
@@ -133,7 +133,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Name**|Specifies identifying information about this deployment.|  
 |**Description**|Specifies publisher, product, and support information.|  
 |**Deployment Options**|Specifies additional information about the deployment, such as the application type and the start location.|  
-|**Update Options**|Specifies how often [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] should check for application updates.|  
+|**Update Options**|Specifies how often ClickOnce should check for application updates.|  
 |**Application Reference**|Specifies the application manifest for this deployment.|  
   
 ### Name Tab  
@@ -161,9 +161,9 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |----------------|-----------------|  
 |**Application Type**|Optional. Specifies whether this application installs itself to the client computer (**Install Locally**), runs online (**Online Only**), or is a WPF application that runs in the browser (**WPF Browser Application**). The default is **Install Locally**.|  
 |**Start Location**|Optional. The URL from which the application should actually be started. Useful when deploying an application from a CD that should update itself from the Web.|  
-|**Include Start Location (ProviderURL) in the manifest**|Optional. Specifies the URL which [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] will examine for application updates.|  
-|**Automatically run application after installing**|Required. Specifies that the [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] application should run immediately after the initial installation from a URL. The default is the check box is selected.|  
-|**Allow URL parameters to be passed to application**|Required. Permits the transfer of parameter data to the [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] application through a query string appended to the deployment manifest's URL. The default is the check box is cleared.|  
+|**Include Start Location (ProviderURL) in the manifest**|Optional. Specifies the URL which ClickOnce will examine for application updates.|  
+|**Automatically run application after installing**|Required. Specifies that the ClickOnce application should run immediately after the initial installation from a URL. The default is the check box is selected.|  
+|**Allow URL parameters to be passed to application**|Required. Permits the transfer of parameter data to the ClickOnce application through a query string appended to the deployment manifest's URL. The default is the check box is cleared.|  
 |**Use .deploy file extension**|Required. When selected, all files in the application manifest must have the .deploy extension. The default is the check box is cleared.|  
   
 ### Update Options Tab  
@@ -171,9 +171,9 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
   
 |UI Element|Description|  
 |----------------|-----------------|  
-|**This application should check for updates**|Specifies whether [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] should check for application updates. If this check box is not selected, the application will not check for updates unless you update it programmatically by using the APIs in the <xref:System.Deployment.Application> namespace.|  
+|**This application should check for updates**|Specifies whether ClickOnce should check for application updates. If this check box is not selected, the application will not check for updates unless you update it programmatically by using the APIs in the <xref:System.Deployment.Application> namespace.|  
 |**Choose when the application should check for updates**|Provides two options for update checks:<br /><br /> -   **Before the application starts**. The update check is performed prior to application execution.<br />-   **After the application starts**. The update check begins once the main form of the application has initialized, and will run the next time the application starts.|  
-|**Update check frequency**|Determines how often [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] should check for updates:<br /><br /> -   **Check every time the application runs**. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] will perform an update check every time the user opens the application.<br />-   **Check every**: Select a time interval and a unit (hours, days, or weeks) that must elapse before checking for updates.|  
+|**Update check frequency**|Determines how often ClickOnce should check for updates:<br /><br /> -   **Check every time the application runs**. ClickOnce will perform an update check every time the user opens the application.<br />-   **Check every**: Select a time interval and a unit (hours, days, or weeks) that must elapse before checking for updates.|  
 |**Specify a minimum required version for this application**|Optional. Specifies that a specific version of your application is a required installation, preventing your users from working with an earlier version.|  
 |**Version**|Required if **Specify a minimum required version for this application** check box is selected. The version number supplied must be of the form *N.N.N.N*. Only the first major build number is required. For example, for version 1.0 of an application, valid values would include `1`, `1.0`, `1.0.0`, and `1.0.0.0`.|  
   
@@ -185,6 +185,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Select Manifest**|Allows you to choose the application manifest. All of the other fields on this page will populate when you choose an application manifest.|  
   
 ## See also
+
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
 - [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)
 - [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)

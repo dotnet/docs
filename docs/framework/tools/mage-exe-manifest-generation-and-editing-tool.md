@@ -8,7 +8,7 @@ ms.assetid: 77dfe576-2962-407e-af13-82255df725a1
 ---
 # Mage.exe (Manifest Generation and Editing Tool)
 
-The Manifest Generation and Editing Tool (*Mage.exe*) is a command-line tool that supports the creation and editing of application and deployment manifests. As a command-line tool, *Mage.exe* can be run from both batch scripts and other Windows-based applications, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications.
+The Manifest Generation and Editing Tool (*Mage.exe*) is a command-line tool that supports the creation and editing of application and deployment manifests. As a command-line tool, *Mage.exe* can be run from both batch scripts and other Windows-based applications, including ASP.NET applications.
 
 You can also use *MageUI.exe*, a graphical application, instead of *Mage.exe*. For more information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
 
@@ -22,7 +22,7 @@ Two versions of *Mage.exe* and *MageUI.exe* are included with Visual Studio. To 
 Mage [commands] [commandOptions]
 ```
 
-### Parameters
+## Parameters
 
 The following table shows the commands supported by *Mage.exe*. For more information about the options supported by these commands, see [New and Update command options](#new-and-update-command-options) and [Sign command options](#sign-command-options).
 
@@ -51,7 +51,7 @@ The following table shows the options supported by the `-New` and `-Update` comm
 |**-if, -IconFile**  `filePath`||Application manifests.|Specifies the full path to an .ICO icon file. This icon appears beside your application name in the start menu, and in its Add-or-Remove Programs entry. If no icon is provided, a default icon is used.|
 |**-ip, -IncludeProviderURL**  `url`|true|Deployment manifests.|Indicates whether the deployment manifest includes the update location value set by **-ProviderURL**.|
 |**-i, -Install** `willInstall`|true|Deployment manifests.|Indicates whether or not the ClickOnce application should install onto the local computer, or whether it should run from the Web. Installing an application gives that application a presence in the Windows **Start** menu. Valid values are "true" or "t", and "false" or "f".<br /><br /> If you specify the **-MinVersion** option, and a user has a version less than **-MinVersion** installed, it will force the application to install, regardless of the value that you pass to **-Install**.<br /><br /> This option cannot be used with the **-BrowserHosted** option. Attempting to specify both for the same manifest will result in an error.|
-|**-kc, -KeyContainer** `name`||All file types.|Specifies the key container that contains the name of the private key. This option requires the **CyproProvider** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
+|**-kc, -KeyContainer** `name`||All file types.|Specifies the key container that contains the name of the private key. This option requires the **CryptoProvider** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
 |**-mv, -MinVersion**  `[version]`|The version listed in the ClickOnce deployment manifest as specified by the **-Version** flag.|Deployment manifests.|The minimum version of this application a user can run. This flag makes the named version of your application a required update. If you release a version of your product with an update to a breaking change or a critical security flaw, you can use this flag to specify that this update must be installed, and that the user cannot continue to run earlier versions.<br /><br /> `version` has the same semantics as the argument to the **-Version** flag.|
 |**-n, -Name** `nameString`|Deploy|All file types.|The name that is used to identify the application. ClickOnce will use this name to identify the application in the **Start** menu (if the application is configured to install itself) and in Permission Elevation dialog boxes. **Note:**  If you are updating an existing manifest and you do not specify a publisher name with this option, *Mage.exe* updates the manifest with the organization name defined on the computer. To use a different name, make sure to use this option and specify the desired publisher name.|
 |**-pwd, -Password** `passwd`||All file types.|The password that is used for signing a manifest with a digital certificate. Must be used in conjunction with the **-CertFile** option.|
@@ -75,7 +75,7 @@ The following table shows the options supported by the `-Sign` command, which ap
 |**-cf, -CertFile** `filePath`|Specifies The location of a digital certificate for signing a manifest. This option can be used in conjunction with the **-Password** option if the certificate requires a password for Personal Information Exchange (PFX) files. Starting with .NET Framework 4.7, if the file does not contain a private key, a combination of the **-CryptoProvider** and **-KeyContainer** options is required.<br/><br/>Starting with .NET Framework 4.6.2, *Mage.exe* signs manifests with CNG as well as CAPI certificates.|
 |**-ch, -CertHash** `hashSignature`|The hash of a digital certificate stored in the personal certificate store of the client computer. This corresponds to the Thumbprint property of a digital certificate viewed in the Windows Certificates Console.<br /><br /> `hashSignature` can be either uppercase or lowercase, and can be supplied either as a single string or with each octet of the Thumbprint separated by spaces and the entire Thumbprint enclosed in quotation marks.|
 **-csp, -CryptoProvider** `provider-name`|Specifies the name of a cryptographic service provider (CSP) that contains the private key container. This option requires the **-KeyContainer** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
-|**-kc, -KeyContainer** `name`|Specifies the key container that contains the name of the private key. This option requires the **CyproProvider** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
+|**-kc, -KeyContainer** `name`|Specifies the key container that contains the name of the private key. This option requires the **CryptoProvider** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
 |**-pwd, -Password** `passwd`|The password that is used for signing a manifest with a digital certificate. Must be used in conjunction with the **-CertFile** option.|
 |**-t, -ToFile** `filePath`|Specifies the output path of the file that has been created or modified.|
 
@@ -208,7 +208,7 @@ mage -Sign deploy.application -CertFile cert.pfx -Password <passwd>
 The following example signs an existing deployment manifest using a digital certificate and private key in the current working directory.
 
 ```console
-mage -Sign deploy.application -CertFile cert.pfx -KeyContainer keyfile.snk -CryptoProvider "Microsoft Enghanced Cryptographic Provider v1.0"
+mage -Sign deploy.application -CertFile cert.pfx -KeyContainer keyfile.snk -CryptoProvider "Microsoft Enhanced Cryptographic Provider v1.0"
 ```
 
 ## See also

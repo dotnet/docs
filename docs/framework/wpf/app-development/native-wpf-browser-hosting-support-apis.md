@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 82c133a8-d760-45fb-a2b9-3a997537f1d4
 ---
 # Native WPF Browser Hosting Support APIs
-Hosting of [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] applications in Web browsers is facilitated by an Active Document server (also known as a DocObject) registered out of the WPF Host. [!INCLUDE[TLA2#tla_ie](../../../../includes/tla2sharptla-ie-md.md)] can directly activate and integrate with an Active Document. For hosting of XBAPs and loose XAML documents in Mozilla browsers, [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] provides an NPAPI plugin, which provides a similar hosting environment to the [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] Active Document server as [!INCLUDE[TLA2#tla_ie](../../../../includes/tla2sharptla-ie-md.md)] does. However, the easiest practical way to host XBAPs and XAML documents in other browsers and standalone applications is via the Internet Explorer Web Browser control. The Web Browser control provides the complex Active Document server hosting environment, yet it enables its own host to customize and extend that environment and communicate directly with the current Active Document object.  
+Hosting of [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] applications in Web browsers is facilitated by an Active Document server (also known as a DocObject) registered out of the WPF Host. Internet Explorer can directly activate and integrate with an Active Document. For hosting of XBAPs and loose XAML documents in Mozilla browsers, [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] provides an NPAPI plugin, which provides a similar hosting environment to the [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] Active Document server as Internet Explorer does. However, the easiest practical way to host XBAPs and XAML documents in other browsers and standalone applications is via the Internet Explorer Web Browser control. The Web Browser control provides the complex Active Document server hosting environment, yet it enables its own host to customize and extend that environment and communicate directly with the current Active Document object.  
   
  The [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] Active Document server implements several common hosting interfaces, including [IOleObject](https://go.microsoft.com/fwlink/?LinkId=162049), [IOleDocument](https://go.microsoft.com/fwlink/?LinkId=162050), [IOleInPlaceActiveObject](https://go.microsoft.com/fwlink/?LinkId=162051), [IPersistMoniker](https://go.microsoft.com/fwlink/?LinkId=162045), [IOleCommandTarget](https://go.microsoft.com/fwlink/?LinkId=162047). When hosted in the Web Browser control, these interfaces can be queries from the object returned by the [IWebBrowser2::Document](https://go.microsoft.com/fwlink/?LinkId=162048) property.  
   
 ## IOleCommandTarget  
  WPF Active Document server's implementation of [IOleCommandTarget](https://go.microsoft.com/fwlink/?LinkId=162047) supports numerous navigation-related and browser-specific commands of the standard OLE command group (with a null command group GUID). In addition, it recognizes a custom command group called CGID_PresentationHost. Currently, there is only one command defined within this group.  
   
-```  
+```cpp  
 DEFINE_GUID(CGID_PresentationHost, 0xd0288c55, 0xd6, 0x4f5e, 0xa8, 0x51, 0x79, 0xde, 0xc5, 0x1b, 0x10, 0xec);  
 enum PresentationHostCommands {   
    PHCMDID_TABINTO = 1   
@@ -26,5 +26,5 @@ enum PresentationHostCommands {
  PHCMDID_TABINTO instructs PresentationHost to switch focus to the first or last focusable element in its content, depending on the state of the Shift key.  
   
 ## In This Section  
- [IEnumRAWINPUTDEVICE](../../../../docs/framework/wpf/app-development/ienumrawinputdevice.md)  
- [IWpfHostSupport](../../../../docs/framework/wpf/app-development/iwpfhostsupport.md)
+ [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md)  
+ [IWpfHostSupport](iwpfhostsupport.md)

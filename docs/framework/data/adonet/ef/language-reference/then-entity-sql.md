@@ -22,17 +22,18 @@ WHEN when_expression THEN then_expression
 ## Remarks  
  If `when_expression` evaluates to the value `true`, the result is the corresponding `then-expression`. If none of the WHEN conditions are satisfied, the `else-expression` is evaluated. However, if there is no `else-expression`, the result is null.  
   
- For an example, see [CASE](../../../../../../docs/framework/data/adonet/ef/language-reference/case-entity-sql.md).  
+ For an example, see [CASE](case-entity-sql.md).  
   
 ## Example  
  The following Entity SQL query uses the CASE expression to evaluate a set of `Boolean` expressions. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
  [!code-csharp[DP EntityServices Concepts 2#CASE_WHEN_THEN_ELSE](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#case_when_then_else)]  
   
 ## See also
-- [CASE](../../../../../../docs/framework/data/adonet/ef/language-reference/case-entity-sql.md)
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+
+- [CASE](case-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)

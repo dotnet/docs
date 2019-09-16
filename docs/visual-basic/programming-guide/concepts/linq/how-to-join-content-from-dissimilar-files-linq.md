@@ -9,7 +9,7 @@ This example shows how to join data from two comma-delimited files that share a 
   
 ## To create the data files
   
-1.  Copy the following lines into a file that is named scores.csv and save it to your project folder. The file represents spreadsheet data. Column 1 is the student's ID, and columns 2 through 5 are test scores.  
+1. Copy the following lines into a file that is named scores.csv and save it to your project folder. The file represents spreadsheet data. Column 1 is the student's ID, and columns 2 through 5 are test scores.  
   
     ```  
     111, 97, 92, 81, 60  
@@ -26,7 +26,7 @@ This example shows how to join data from two comma-delimited files that share a 
     122, 94, 92, 91, 91  
     ```  
   
-2.  Copy the following lines into a file that is named names.csv and save it to your project folder. The file represents a spreadsheet that contains the student's last name, first name, and student ID.  
+2. Copy the following lines into a file that is named names.csv and save it to your project folder. The file represents a spreadsheet that contains the student's last name, first name, and student ID.  
   
     ```  
     Omelchenko,Svetlana,111  
@@ -76,8 +76,7 @@ Class JoinStrings
                             From id In scores   
                             Let n2 = id.Split(New Char() {","})   
                             Where Convert.ToInt32(n(2)) = Convert.ToInt32(n2(0))
-                            Select n(0) & "," & n(1) & "," & n2(0) & "," & n2(1) & "," &  
-                              n2(2) & "," & n2(3)  
+                            Select n(0) & "," & n2(1) & "," & n2(2) & "," & n2(3) & "," &  n2(4)
   
         ' Pass a query variable to a Sub and execute it there.  
         ' The query itself is unchanged.  
@@ -115,14 +114,6 @@ End Class
 ' 12 total names in list 
 ```  
 
-## Compiling the code
-
-Create and compile a project that targets one of the following options:
-
-- .NET Framework version 3.5 with a reference to System.Core.dll.
-- .NET Framework version 4.0 or higher.
-- .NET Core version 1.0 or higher.
-  
 ## See also
 
 - [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)

@@ -7,17 +7,17 @@ ms.assetid: 4287b6b3-b207-41cf-aebe-3b1d4363b098
 This topic outlines the basic steps required to create a routing configuration that routes messages to different versions of the same service. In this example, messages are routed to two different versions of a calculator service, `roundingCalc` (v1) and `regularCalc` (v2). Both implementations support the same operations; however the older service, `roundingCalc`, rounds all calculations to the nearest integer value before returning. A client application must be able to indicate whether to use the newer `regularCalc` service.  
   
 > [!WARNING]
->  In order to route a message to a specific service version, the Routing Service must be able to determine the message destination based on the message content. In the method demonstrated below, the client will specify the version by inserting information into a message header. There are methods of service versioning that do not require clients to pass additional data. For example, a message could be routed to the most recent or most compatible version of a service or the router could use a part of the standard SOAP envelope.  
+> In order to route a message to a specific service version, the Routing Service must be able to determine the message destination based on the message content. In the method demonstrated below, the client will specify the version by inserting information into a message header. There are methods of service versioning that do not require clients to pass additional data. For example, a message could be routed to the most recent or most compatible version of a service or the router could use a part of the standard SOAP envelope.  
   
  The operations exposed by both services are:  
   
--   Add  
+- Add  
   
--   Subtract  
+- Subtract  
   
--   Multiply  
+- Multiply  
   
--   Divide  
+- Divide  
   
  Because both service implementations handle the same operations, and are essentially identical other than the data that they return, the base data contained in messages sent from client applications is not unique enough to allow you to determine how to route the request. For example, Action filters cannot be used because the default actions for both services are the same.  
   
@@ -31,7 +31,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
   
 ### Implement Service Versioning  
   
-1.  Create the basic Routing Service configuration by specifying the service endpoint exposed by the service. The following example defines a single service endpoint, which will be used to receive messages. It also defines the client endpoints which will be used to send messages to the `roundingCalc` (v1) and the `regularCalc` (v2) services.  
+1. Create the basic Routing Service configuration by specifying the service endpoint exposed by the service. The following example defines a single service endpoint, which will be used to receive messages. It also defines the client endpoints which will be used to send messages to the `roundingCalc` (v1) and the `regularCalc` (v2) services.  
   
     ```xml  
     <services>  
@@ -63,7 +63,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
         </client>  
     ```  
   
-2.  Define the filters used to route messages to the destination endpoints.  For this example, the XPath filter is used to detect the value of the "CalcVer" custom header to determine which version the message should be routed to. An XPath filter is also used to detect messages that do not contain the "CalcVer" header. The following example defines the required filters and namespace table.  
+2. Define the filters used to route messages to the destination endpoints.  For this example, the XPath filter is used to detect the value of the "CalcVer" custom header to determine which version the message should be routed to. An XPath filter is also used to detect messages that do not contain the "CalcVer" header. The following example defines the required filters and namespace table.  
   
     ```xml  
     <!-- use the namespace table element to define a prefix for our custom namespace-->  
@@ -90,7 +90,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     > [!NOTE]
     > The s12 namespace prefix is defined by default in the namespace table, and represents the namespace `http://www.w3.org/2003/05/soap-envelope`.
   
-3.  Define the filter table, which associates each filter with a client endpoint. If the message contains the "CalcVer" header with a value of 1, it will be sent to the regularCalc service. If the header contains a value of 2, it will be sent to the roundingCalc service. If no header is present, the message will be routed to the regularCalc.  
+3. Define the filter table, which associates each filter with a client endpoint. If the message contains the "CalcVer" header with a value of 1, it will be sent to the regularCalc service. If the header contains a value of 2, it will be sent to the roundingCalc service. If no header is present, the message will be routed to the regularCalc.  
   
      The following defines the filter table and adds the filters defined earlier.  
   
@@ -111,7 +111,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     </filterTables>  
     ```  
   
-4.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating `filterTable1` with the service endpoints:  
+4. To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating `filterTable1` with the service endpoints:  
   
     ```xml  
     <behaviors>  
@@ -319,4 +319,5 @@ namespace Microsoft.Samples.AdvancedFilters
 ```  
   
 ## See also
+
 - [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)

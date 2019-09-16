@@ -23,13 +23,13 @@ Gets the number of dimensions in the array.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRank (  
     [out] ULONG32   *pnRank  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnRank`  
  [out] A pointer to the number of dimensions in this `ICorDebugArrayValue` object.  
   

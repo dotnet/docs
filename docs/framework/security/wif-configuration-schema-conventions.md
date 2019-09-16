@@ -15,9 +15,7 @@ This topic discusses conventions used throughout the Windows Identity Foundation
 ## Timespan Values  
  Where <xref:System.TimeSpan> is used as the type of an attribute, see the <xref:System.TimeSpan.Parse%28System.String%29> method to see the allowed format. This format conforms to the following specification.  
   
-```  
-[ws][-]{ d | [d.]hh:mm[:ss[.ff]] }[ws]  
-```  
+`[ws][-]{ d | [d.]hh:mm[:ss[.ff]] }[ws]`  
   
  For example, "30", "30.00:00", "30.00:00:00" all mean 30 days; and "00:05", "00:05:00", "0.00:05:00.00" all mean 5 minutes.  
   
@@ -39,5 +37,6 @@ This topic discusses conventions used throughout the Windows Identity Foundation
  Custom types must be derived from the type specified and they must provide a `public` default (0 argument) constructor.  
   
 ## See also
+
 - [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md)
 - [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md)

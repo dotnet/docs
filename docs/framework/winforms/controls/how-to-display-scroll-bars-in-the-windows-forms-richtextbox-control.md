@@ -12,9 +12,9 @@ By default, the Windows Forms <xref:System.Windows.Forms.RichTextBox> control di
   
 ### To display scroll bars in a RichTextBox control  
   
-1.  Set the <xref:System.Windows.Forms.RichTextBox.Multiline%2A> property to `true`. No type of scroll bar, including horizontal, will display if the <xref:System.Windows.Forms.RichTextBox.Multiline%2A> property is set to `false`.  
+1. Set the <xref:System.Windows.Forms.RichTextBox.Multiline%2A> property to `true`. No type of scroll bar, including horizontal, will display if the <xref:System.Windows.Forms.RichTextBox.Multiline%2A> property is set to `false`.  
   
-2.  Set the <xref:System.Windows.Forms.RichTextBox.ScrollBars%2A> property to an appropriate value of the <xref:System.Windows.Forms.RichTextBoxScrollBars> enumeration.  
+2. Set the <xref:System.Windows.Forms.RichTextBox.ScrollBars%2A> property to an appropriate value of the <xref:System.Windows.Forms.RichTextBoxScrollBars> enumeration.  
   
     |Value|Description|  
     |-----------|-----------------|  
@@ -26,7 +26,7 @@ By default, the Windows Forms <xref:System.Windows.Forms.RichTextBox> control di
     |<xref:System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical>|Always displays a vertical scroll bar. The scroll bar appears dimmed when text does not exceed the length of the control.|  
     |<xref:System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth>|Always displays a vertical scrollbar. Displays a horizontal scroll bar when the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property is set to `false`. The scroll bars appear grayed when text does not exceed the width or length of the control.|  
   
-3.  Set the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property to an appropriate value.  
+3. Set the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property to an appropriate value.  
   
     |Value|Description|  
     |-----------|-----------------|  
@@ -34,7 +34,8 @@ By default, the Windows Forms <xref:System.Windows.Forms.RichTextBox> control di
     |`true` (default)|Text in the control is automatically adjusted to fit the width of the control. The horizontal scrollbar will not appear. Use this value if you chose vertical scroll bars or none, above, to display one or more paragraphs.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.RichTextBoxScrollBars>
 - <xref:System.Windows.Forms.RichTextBox>
-- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [RichTextBox Control](richtextbox-control-windows-forms.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

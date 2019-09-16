@@ -1,1 +1,0 @@
-        Dim com As XComment = <!-- This is a comment -->

@@ -12,7 +12,7 @@ ms.assetid: 2c5640e9-6c6c-49d7-a5e4-a768f6be7853
 The .NET Framework provides a variety of attributes you can apply to the members of your custom controls and components. Some of these attributes affect the run-time behavior of a class, and others affect the design-time behavior.  
   
 ## Attributes for Control and Component Properties  
- The following table shows the attributes you can apply to properties or other members of your custom controls and components. For an example that uses many of these attributes, see [How to: Apply Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ The following table shows the attributes you can apply to properties or other members of your custom controls and components. For an example that uses many of these attributes, see [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md).  
   
 |Attribute|Description|  
 |---------------|-----------------|  
@@ -55,7 +55,8 @@ The .NET Framework provides a variety of attributes you can apply to the members
 |<xref:System.ComponentModel.ToolboxItemFilterAttribute>|Specifies the filter string and filter type to use for a Toolbox item.|  
   
 ## See also
+
 - <xref:System.Attribute>
-- [How to: Apply Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md)
-- [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
-- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)
+- [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md)
+- [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
+- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)

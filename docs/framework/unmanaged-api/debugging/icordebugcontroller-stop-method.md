@@ -23,13 +23,13 @@ Performs a cooperative stop on all threads that are running managed code in the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Stop (  
     [in] DWORD dwTimeoutIgnored  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwTimeoutIgnored`  
  Not used.  
   
@@ -37,7 +37,7 @@ HRESULT Stop (
  `Stop` performs a cooperative stop on all threads running managed code in the process. During a managed-only debugging session, unmanaged threads may continue to run (but will be blocked when trying to call managed code). During an interop debugging session, unmanaged threads will also be stopped. The `dwTimeoutIgnored` value is currently ignored and treated as INFINITE (-1). If the cooperative stop fails due to a deadlock, all threads are suspended and E_TIMEOUT is returned.  
   
 > [!NOTE]
->  `Stop` is the only synchronous method in the debugging API. When `Stop` returns S_OK, the process is stopped. No callback is given to notify listeners of the stop. The debugger must call [ICorDebugController::Continue](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-continue-method.md) to allow the process to resume.  
+> `Stop` is the only synchronous method in the debugging API. When `Stop` returns S_OK, the process is stopped. No callback is given to notify listeners of the stop. The debugger must call [ICorDebugController::Continue](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-continue-method.md) to allow the process to resume.  
   
  The debugger maintains a stop counter. When the counter goes to zero, the controller is resumed. Each call to `Stop` or each dispatched callback increments the counter. Each call to `ICorDebugController::Continue` decrements the counter.  
   
@@ -51,4 +51,3 @@ HRESULT Stop (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

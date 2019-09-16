@@ -23,11 +23,11 @@ Gets a handle to the process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandle([out] HPROCESS *phProcessHandle);  
 ```  
   
-#### Parameters  
+## Parameters  
  `phProcessHandle`  
  [out] A pointer to an `HPROCESS` that is the handle to the process.  
   

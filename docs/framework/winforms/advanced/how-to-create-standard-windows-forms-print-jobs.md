@@ -16,9 +16,9 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
   
 ### To create a print job  
   
-1.  Add a <xref:System.Drawing.Printing.PrintDocument> component to your form.  
+1. Add a <xref:System.Drawing.Printing.PrintDocument> component to your form.  
   
-2.  Write code to handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
+2. Write code to handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
   
      You will have to code your own printing logic. Additionally, you will have to specify the material to be printed.  
   
@@ -49,7 +49,7 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.printDocument1.PrintPage += new  
@@ -66,10 +66,11 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
      You may also want to write code for the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> and <xref:System.Drawing.Printing.PrintDocument.EndPrint> events, perhaps including an integer representing the total number of pages to print that is decremented as each page prints.  
   
     > [!NOTE]
-    >  You can add a <xref:System.Windows.Forms.PrintDialog> component to your form to provide a clean and efficient user interface (UI) to your users. Setting the <xref:System.Windows.Forms.PrintDialog.Document%2A> property of the <xref:System.Windows.Forms.PrintDialog> component enables you to set properties related to the print document you are working with on your form. For more information about the <xref:System.Windows.Forms.PrintDialog> component, see [PrintDialog Component](../../../../docs/framework/winforms/controls/printdialog-component-windows-forms.md).  
+    > You can add a <xref:System.Windows.Forms.PrintDialog> component to your form to provide a clean and efficient user interface (UI) to your users. Setting the <xref:System.Windows.Forms.PrintDialog.Document%2A> property of the <xref:System.Windows.Forms.PrintDialog> component enables you to set properties related to the print document you are working with on your form. For more information about the <xref:System.Windows.Forms.PrintDialog> component, see [PrintDialog Component](../controls/printdialog-component-windows-forms.md).  
   
      For more information about the specifics of Windows Forms print jobs, including how to create a print job programmatically, see <xref:System.Drawing.Printing.PrintPageEventArgs>.  
   
 ## See also
+
 - <xref:System.Drawing.Printing.PrintDocument>
-- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- [Windows Forms Print Support](windows-forms-print-support.md)

@@ -1,0 +1,46 @@
+- name: The .NET Compiler Platform SDK (Roslyn APIs)
+  href: index.md
+  items:
+  - name: Overview
+    href: index.md
+  - name: Understand the compiler API model
+    href: compiler-api-model.md
+  - name: Work with syntax
+    href: work-with-syntax.md
+  - name: Work with semantics
+    href: work-with-semantics.md
+  - name: Work with a workspace
+    href: work-with-workspace.md
+  - name: Explore code with the syntax visualizer
+    href: syntax-visualizer.md
+  - name: Quick Starts
+    items:
+    - name: Syntax analysis
+      href: get-started/syntax-analysis.md
+    - name: Semantic analysis
+      href: get-started/semantic-analysis.md
+    - name: Syntax Transformation
+      href: get-started/syntax-transformation.md
+  - name: Tutorials
+    items:
+    - name: Build your first analyzer and code fix
+      href: tutorials/how-to-write-csharp-analyzer-code-fix.md
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#    - name: Get started writing custom analyzers and code fixes
+#  - name: Tutorials
+#    items:
+#    - name: Build your first analyzer
+#    - name: Build your first code fix
+#    - name: Deploy your analyzer as a VSIX
+#    - name: Deploy your analyzer as a NuGet package
+#- name: Samples
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#  items:
+#    - name: Async packages
+#    - name: Console classifier
+#    - name: Convert to auto property
+#    - name: Format solution
+#    - name: Implement notify property changed
+#    - name: Make const
+#    - name: How to guides
+# Look at the samples, and determine which are "How To" vs. Samples.

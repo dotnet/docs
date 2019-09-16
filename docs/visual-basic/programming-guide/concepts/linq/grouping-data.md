@@ -8,7 +8,7 @@ Grouping refers to the operation of putting data into groups so that the element
   
  The following illustration shows the results of grouping a sequence of characters. The key for each group is the character.  
   
- ![LINQ Grouping Operations](../../../../csharp/programming-guide/concepts/linq/media/linq_group.png "LINQ_Group")  
+ ![Diagram that shows a LINQ Grouping operation.](./media/grouping-data/linq-group-operation.png)  
   
  The standard query operator methods that group data elements are listed in the following section.  
   
@@ -58,6 +58,7 @@ MsgBox(sb.ToString())
 ```  
   
 ## See also
+
 - <xref:System.Linq>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md)

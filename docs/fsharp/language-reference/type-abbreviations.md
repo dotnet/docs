@@ -19,11 +19,11 @@ You can use type abbreviations to give a type a more meaningful name, in order t
 
 Accessibility of type abbreviations defaults to `public`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2301.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2301.fs)]
 
 Type abbreviations can include generic parameters, as in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2302.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2302.fs)]
 
 In the previous code, `Transform` is a type abbreviation that represents a function that takes a single argument of any type and that returns a single value of that same type.
 

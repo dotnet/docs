@@ -10,12 +10,13 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # .NET Framework 4 Hosting Global Static Functions
-The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces one new exported method in MSCorEE.dll: [CLRCreateIntstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md).  
+The .NET Framework 4 introduces one new exported method in MSCorEE.dll: [CLRCreateIntstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md).  
   
 ## In This Section  
  [CLRCreateInstance Function](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md)  
  Provides one of three interfaces: [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md), [ICLRMetaHostPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-interface.md).  
   
 ## See also
+
 - [Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/hosting-global-static-functions.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

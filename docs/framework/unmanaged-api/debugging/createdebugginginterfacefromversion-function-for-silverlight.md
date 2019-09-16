@@ -16,14 +16,14 @@ Accepts a common language runtime (CLR) version string that is returned from the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDebuggingInterfaceFromVersion (  
     [in]  LPCWSTR      szDebuggeeVersion,  
     [out] IUnknown**   ppCordb,  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szDebuggeeVersion`  
  [in] Version string of the CLR in the target debuggee, which is returned by the [CreateVersionStringFromModule function](../../../../docs/framework/unmanaged-api/debugging/createversionstringfrommodule-function.md).  
   

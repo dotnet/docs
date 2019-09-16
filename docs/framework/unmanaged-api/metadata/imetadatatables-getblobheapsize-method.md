@@ -23,13 +23,13 @@ Gets the size, in bytes, of the binary large object (BLOB) heap.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBlobHeapSize (  
     [out] ULONG     *pcbBlobs  
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbBlobs`  
  [out] A pointer to the size, in bytes, of the BLOB heap.  
   
@@ -43,5 +43,6 @@ HRESULT GetBlobHeapSize (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

@@ -8,15 +8,15 @@ ms.assetid: c9c8cd32-2c9d-4541-ad0d-16dff6bd2a00
 # Configuring Services Using Configuration Files
 Configuring a Windows Communication Foundation (WCF) service with a configuration file gives you the flexibility of providing endpoint and service behavior data at the point of deployment instead of at design time. This topic outlines the primary techniques available.  
   
- A WCF service is configurable using the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] configuration technology. Most commonly, XML elements are added to the Web.config file for an Internet Information Services (IIS) site that hosts a WCF service. The elements allow you to change details such as the endpoint addresses (the actual addresses used to communicate with the service) on a machine-by-machine basis. In addition, WCF includes several system-provided elements that allow you to quickly select the most basic features for a service. Starting with [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)], WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with some standard endpoints and default binding/behavior. In practice, writing configuration is a major part of programming WCF applications.  
+ A WCF service is configurable using the .NET Framework configuration technology. Most commonly, XML elements are added to the Web.config file for an Internet Information Services (IIS) site that hosts a WCF service. The elements allow you to change details such as the endpoint addresses (the actual addresses used to communicate with the service) on a machine-by-machine basis. In addition, WCF includes several system-provided elements that allow you to quickly select the most basic features for a service. Starting with [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)], WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with some standard endpoints and default binding/behavior. In practice, writing configuration is a major part of programming WCF applications.  
   
  For more information, see [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md). For a list of the most commonly used elements, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 > [!IMPORTANT]
->  When deploying side by side scenarios where two different versions of a service are deployed, it is necessary to specify partial names of assemblies referenced in configuration files. This is because the configuration file is shared across all versions of a service and they could be running under different versions of the .NET Framework.  
+> When deploying side by side scenarios where two different versions of a service are deployed, it is necessary to specify partial names of assemblies referenced in configuration files. This is because the configuration file is shared across all versions of a service and they could be running under different versions of the .NET Framework.  
   
 ## System.Configuration: Web.config and App.config  
- WCF uses the System.Configuration configuration system of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].  
+ WCF uses the System.Configuration configuration system of the .NET Framework.  
   
  When configuring a service in Visual Studio, use either a Web.config file or an App.config file to specify the settings. The choice of the configuration file name is determined by the hosting environment you choose for the service. If you are using IIS to host your service, use a Web.config file. If you are using any other hosting environment, use an App.config file.  
   
@@ -58,7 +58,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ```  
   
 > [!NOTE]
->  The bindings and behaviors sections are optional and are only included if required.  
+> The bindings and behaviors sections are optional and are only included if required.  
   
 ### The \<services> Element  
  The `services` element contains the specifications for all services the application hosts. Starting with the simplified configuration model in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], this section is optional.  
@@ -68,24 +68,24 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ### The \<service> Element  
  Each service has these attributes:  
   
--   `name`. Specifies the type that provides an implementation of a service contract. This is a fully qualified name which consists of the namespace, a period, and then the type name. For example `"MyNameSpace.myServiceType"`.  
+- `name`. Specifies the type that provides an implementation of a service contract. This is a fully qualified name which consists of the namespace, a period, and then the type name. For example `"MyNameSpace.myServiceType"`.  
   
--   `behaviorConfiguration`. Specifies the name of one of the `behavior` elements found in the `behaviors` element. The specified behavior governs actions such as whether the service allows impersonation. If its value is the empty name or no `behaviorConfiguration` is provided then the default set of service behaviors is added to the service.  
+- `behaviorConfiguration`. Specifies the name of one of the `behavior` elements found in the `behaviors` element. The specified behavior governs actions such as whether the service allows impersonation. If its value is the empty name or no `behaviorConfiguration` is provided then the default set of service behaviors is added to the service.  
   
--   [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)  
+- [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)  
   
 ### The \<endpoint> Element  
  Each endpoint requires an address, a binding, and a contract, which are represented by the following attributes:  
   
--   `address`. Specifies the service's Uniform Resource Identifier (URI), which can be an absolute address or one that is given relative to the base address of the service. If set to an empty string, it indicates that the endpoint is available at the base address that is specified when creating the <xref:System.ServiceModel.ServiceHost> for the service.  
+- `address`. Specifies the service's Uniform Resource Identifier (URI), which can be an absolute address or one that is given relative to the base address of the service. If set to an empty string, it indicates that the endpoint is available at the base address that is specified when creating the <xref:System.ServiceModel.ServiceHost> for the service.  
   
--   `binding`. Typically specifies a system-provided binding like <xref:System.ServiceModel.WSHttpBinding>, but can also specify a user-defined binding. The binding specified determines the type of transport, security and encoding used, and whether reliable sessions, transactions, or streaming is supported or enabled.  
+- `binding`. Typically specifies a system-provided binding like <xref:System.ServiceModel.WSHttpBinding>, but can also specify a user-defined binding. The binding specified determines the type of transport, security and encoding used, and whether reliable sessions, transactions, or streaming is supported or enabled.  
   
--   `bindingConfiguration`. If the default values of a binding must be modified, this can be done by configuring the appropriate `binding` element in the `bindings` element. This attribute should be given the same value as the `name` attribute of the `binding` element that is used to change the defaults. If no name is given, or no `bindingConfiguration` is specified in the binding, then the default binding of the binding type is used in the endpoint.  
+- `bindingConfiguration`. If the default values of a binding must be modified, this can be done by configuring the appropriate `binding` element in the `bindings` element. This attribute should be given the same value as the `name` attribute of the `binding` element that is used to change the defaults. If no name is given, or no `bindingConfiguration` is specified in the binding, then the default binding of the binding type is used in the endpoint.  
   
--   `contract`. Specifies the interface that defines the contract. This is the interface implemented in the common language runtime (CLR) type specified by the `name` attribute of the `service` element.  
+- `contract`. Specifies the interface that defines the contract. This is the interface implemented in the common language runtime (CLR) type specified by the `name` attribute of the `service` element.  
   
--   [\<endpoint> element reference](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017)  
+- [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md)  
   
 ### The \<bindings> Element  
  The `bindings` element contains the specifications for all bindings that can be used by any endpoint defined in any service.  
@@ -95,7 +95,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ### The \<binding> Element  
  The `binding` elements contained in the `bindings` element can be either one of the system-provided bindings (see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) or a custom binding (see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)). The `binding` element has a `name` attribute that correlates the binding with the endpoint specified in the `bindingConfiguration` attribute of the `endpoint` element. If no name is specified then that binding corresponds to the default of that binding type.  
   
- For more information about configuring services and clients, see [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a).  
+For more information about configuring services and clients, see [Configuring WCF services](configuring-services.md).
   
  [\<binding>](../../../docs/framework/misc/binding.md)  
   
@@ -257,7 +257,8 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
  If a child behavior collection contains a behavior that’s already present in the parent behavior collection, the child behavior overrides the parent. So if a parent behavior collection had `<serviceMetadata httpGetEnabled="False" />` and a child behavior collection had `<serviceMetadata httpGetEnabled="True" />`, the child behavior would override the parent behavior in the behavior collection and httpGetEnabled would be "true".  
   
 ## See also
+
 - [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
-- [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)
+- [Configuring WCF services](configuring-services.md)
 - [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)
 - [\<binding>](../../../docs/framework/misc/binding.md)

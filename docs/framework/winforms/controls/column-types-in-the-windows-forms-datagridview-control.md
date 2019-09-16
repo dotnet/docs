@@ -24,7 +24,7 @@ The <xref:System.Windows.Forms.DataGridView> control uses several column types t
 |<xref:System.Windows.Forms.DataGridViewButtonColumn>|Used to display buttons in cells. Not automatically generated when binding. Typically used as unbound columns.|  
 |<xref:System.Windows.Forms.DataGridViewComboBoxColumn>|Used to display drop-down lists in cells. Not automatically generated when binding. Typically data-bound manually.|  
 |<xref:System.Windows.Forms.DataGridViewLinkColumn>|Used to display links in cells. Not automatically generated when binding. Typically data-bound manually.|  
-|Your custom column type|You can create your own column class by inheriting the <xref:System.Windows.Forms.DataGridViewColumn> class or any of its derived classes to provide custom appearance, behavior, or hosted controls. For more information, see [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](../../../../docs/framework/winforms/controls/customize-cells-and-columns-in-the-datagrid-by-extending-behavior.md)|  
+|Your custom column type|You can create your own column class by inheriting the <xref:System.Windows.Forms.DataGridViewColumn> class or any of its derived classes to provide custom appearance, behavior, or hosted controls. For more information, see [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](customize-cells-and-columns-in-the-datagrid-by-extending-behavior.md)|  
   
  These column types are described in more detail in the following sections.  
   
@@ -59,7 +59,7 @@ The <xref:System.Windows.Forms.DataGridView> control uses several column types t
 ## DataGridViewComboBoxColumn  
  With the <xref:System.Windows.Forms.DataGridViewComboBoxColumn>, you can display a column of cells that contain drop-down list boxes. This is useful for data entry in fields that can only contain particular values, such as the Category column of the Products table in the Northwind sample database.  
   
- You can populate the drop-down list used for all cells the same way you would populate a <xref:System.Windows.Forms.ComboBox> drop-down list, either manually through the collection returned by the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A> property, or by binding it to a data source through the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource%2A>, <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayMember%2A>, and <xref:System.Windows.Forms.DataGridViewComboBoxColumn.ValueMember%2A> properties. For more information, see [ComboBox Control](../../../../docs/framework/winforms/controls/combobox-control-windows-forms.md).  
+ You can populate the drop-down list used for all cells the same way you would populate a <xref:System.Windows.Forms.ComboBox> drop-down list, either manually through the collection returned by the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A> property, or by binding it to a data source through the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource%2A>, <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayMember%2A>, and <xref:System.Windows.Forms.DataGridViewComboBoxColumn.ValueMember%2A> properties. For more information, see [ComboBox Control](combobox-control-windows-forms.md).  
   
  You can bind the actual cell values to the data source used by the <xref:System.Windows.Forms.DataGridView> control by setting the <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A> property of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn?displayProperty=nameWithType>.  
   
@@ -75,6 +75,7 @@ The <xref:System.Windows.Forms.DataGridView> control uses several column types t
  The <xref:System.Windows.Forms.DataGridViewLinkColumn> class provides several properties for modifying the appearance of links before, during, and after they are clicked.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridViewColumn>
 - <xref:System.Windows.Forms.DataGridViewButtonColumn>
@@ -83,7 +84,7 @@ The <xref:System.Windows.Forms.DataGridView> control uses several column types t
 - <xref:System.Windows.Forms.DataGridViewImageColumn>
 - <xref:System.Windows.Forms.DataGridViewTextBoxColumn>
 - <xref:System.Windows.Forms.DataGridViewLinkColumn>
-- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
-- [How to: Display Images in Cells of the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-display-images-in-cells-of-the-windows-forms-datagridview-control.md)
-- [How to: Work with Image Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)
-- [Customizing the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/customizing-the-windows-forms-datagridview-control.md)
+- [DataGridView Control](datagridview-control-windows-forms.md)
+- [How to: Display Images in Cells of the Windows Forms DataGridView Control](how-to-display-images-in-cells-of-the-windows-forms-datagridview-control.md)
+- [How to: Work with Image Columns in the Windows Forms DataGridView Control](how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)
+- [Customizing the Windows Forms DataGridView Control](customizing-the-windows-forms-datagridview-control.md)

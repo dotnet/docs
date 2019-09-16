@@ -7,11 +7,8 @@ ms.date: 12/10/2018
 
 This topic describes compiler command-line options for the F# compiler, fsc.exe. The compilation environment can also be controlled by setting the project properties.
 
-
 ## Compiler Options Listed Alphabetically
 The following table shows compiler options listed alphabetically. Some of the F# compiler options are similar to the C# compiler options. If that is the case, a link to the C# compiler options topic is provided.
-
-
 
 |Compiler Option|Description|
 |---------------|-----------|

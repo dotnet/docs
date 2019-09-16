@@ -8,7 +8,7 @@ ms.assetid: 449276b8-4633-46f0-85c9-81f01d127636
 "Plain Old XML" (POX) applications communicate by exchanging raw HTTP messages that contain only XML application data that is not enclosed within a SOAP envelope. Windows Communication Foundation (WCF) can provide both services and clients that use POX messages. On the service, WCF can be used to implement services that expose endpoints to clients such as Web browsers and scripting languages that send and receive POX messages. On the client, the WCF programming model can be used to implement clients that communicate with POX-based services.  
   
 > [!NOTE]
-> This document was originally written for the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 3.0.  [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 3.5 has built-in support for working with POX applications. For more information about see [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md).
+> This document was originally written for the .NET Framework 3.0.  .NET Framework 3.5 has built-in support for working with POX applications. For more information about see [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md).
   
 ## POX programming with WCF
 

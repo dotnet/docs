@@ -12,21 +12,21 @@ This sample demonstrates how to perform transacted queued communication by using
   
 ### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-4.  Before running the sample in **Add/Remove Windows Components**, ensure that MSMQ is installed with HTTP support. Installing HTTP support automatically installs Internet Information Services (IIS) and adds the protocol support in IIS for MSMQ.  
+4. Before running the sample in **Add/Remove Windows Components**, ensure that MSMQ is installed with HTTP support. Installing HTTP support automatically installs Internet Information Services (IIS) and adds the protocol support in IIS for MSMQ.  
   
-5.  If you want to be certain that HTTP is used for communication, you can enable MSMQ to run in hardened mode. This ensures that no messages to any queue hosted on the machine can arrive using any non-HTTP transport.  
+5. If you want to be certain that HTTP is used for communication, you can enable MSMQ to run in hardened mode. This ensures that no messages to any queue hosted on the machine can arrive using any non-HTTP transport.  
   
-6.  After you have selected MSMQ to run in hardened mode, the machine requires a re-boot on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)].  
+6. After you have selected MSMQ to run in hardened mode, the machine requires a re-boot on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)].  
   
-7.  Run the service.  
+7. Run the service.  
   
-8.  Run the client. Ensure that you change the endpoint address to point to the machine name or IP address instead of localhost. The client sends a message and exits.  
+8. Run the client. Ensure that you change the endpoint address to point to the machine name or IP address instead of localhost. The client sends a message and exits.  
   
 ## Requirements  
  To run this sample, IIS must be installed on both the service and the client machines in addition to MSMQ.  
@@ -82,12 +82,10 @@ OrderDetails
 ```  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\SRMP`  
-  
-## See also
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\SRMP`  

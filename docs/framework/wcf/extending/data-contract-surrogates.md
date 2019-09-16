@@ -31,13 +31,13 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
   
  [!code-csharp[C_IDataContractSurrogate#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#3)]  
   
--   On serialization, the mapping returned by this method is subsequently used to transform the original instance to a surrogated instance by calling the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetObjectToSerialize%2A> method.  
+- On serialization, the mapping returned by this method is subsequently used to transform the original instance to a surrogated instance by calling the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetObjectToSerialize%2A> method.  
   
--   On deserialization, the mapping returned by this method is used by the serializer to deserialize into an instance of the surrogate type. It subsequently calls <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDeserializedObject%2A> to transform the surrogated instance into an instance of the original type.  
+- On deserialization, the mapping returned by this method is used by the serializer to deserialize into an instance of the surrogate type. It subsequently calls <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDeserializedObject%2A> to transform the surrogated instance into an instance of the original type.  
   
--   On export, the surrogate type returned by this method is reflected to get the data contract to use for generating metadata.  
+- On export, the surrogate type returned by this method is reflected to get the data contract to use for generating metadata.  
   
--   On import, the initial type is changed to a surrogate type that is reflected to get the data contract to use for purposes like referencing support.  
+- On import, the initial type is changed to a surrogate type that is reflected to get the data contract to use for purposes like referencing support.  
   
  The <xref:System.Type> parameter is the type of the object that is being serialized, deserialized, imported, or exported. The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDataContractType%2A> method must return the input type if the surrogate does not handle the type. Otherwise, return the appropriate surrogated type. If several surrogate types exist, numerous mappings can be defined in this method.  
   
@@ -56,7 +56,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
   
  The `targetType` parameter refers to the declared type of the member. This parameter is the surrogated type returned by the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDataContractType%2A> method. The serializer does not enforce that the object returned is assignable to this type. The `obj` parameter is the object to serialize, and will be converted to its surrogate if necessary. This method must return the input object if the surrogated does not handle the object. Otherwise, the new surrogate object will be returned. The surrogate is not called if the object is null. Numerous surrogate mappings for different instances may be defined within this method.  
   
- When creating a <xref:System.Runtime.Serialization.DataContractSerializer>, you can instruct it to preserve object references. (For more information, see [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).) This is done by setting the `preserveObjectReferences` parameter in its constructor to `true`. In that case, the surrogate is called only once for an object since all subsequent serializations just write the reference into the stream. If `preserveObjectReferences` is set to `false`, then the surrogate is called every time an instance is encountered.  
+ When creating a <xref:System.Runtime.Serialization.DataContractSerializer>, you can instruct it to preserve object references. (For more information, see [Serialization and Deserialization](../feature-details/serialization-and-deserialization.md).) This is done by setting the `preserveObjectReferences` parameter in its constructor to `true`. In that case, the surrogate is called only once for an object since all subsequent serializations just write the reference into the stream. If `preserveObjectReferences` is set to `false`, then the surrogate is called every time an instance is encountered.  
   
  If the type of the instance serialized differs from the declared type, type information is written into the stream, for example, `xsi:type` to allow the instance to be deserialized at the other end. This process occurs whether the object is surrogated or not.  
   
@@ -125,7 +125,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
 ### GetKnownCustomDataTypes Method  
  This method obtains custom data types defined from the schema. The method is optional for schema importation.  
   
- The method is called at the beginning of schema export and import. The method returns the custom data types used in the schema exported or imported. The method is passed a <xref:System.Collections.ObjectModel.Collection%601> (the `customDataTypes` parameter), which is a collection of types. The method should add additional known types to this collection. The known custom data types are needed to enable serialization and deserialization of custom data using the <xref:System.Runtime.Serialization.DataContractSerializer>. For more information, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ The method is called at the beginning of schema export and import. The method returns the custom data types used in the schema exported or imported. The method is passed a <xref:System.Collections.ObjectModel.Collection%601> (the `customDataTypes` parameter), which is a collection of types. The method should add additional known types to this collection. The known custom data types are needed to enable serialization and deserialization of custom data using the <xref:System.Runtime.Serialization.DataContractSerializer>. For more information, see [Data Contract Known Types](../feature-details/data-contract-known-types.md).  
   
 ## Implementing a Surrogate  
  To use the data contract surrogate within WCF, you must follow a few special procedures.  
@@ -135,15 +135,15 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
   
 ##### To implement serialization and deserialization  
   
-1.  Create an instance of the <xref:System.ServiceModel.ServiceHost> for your service. For complete instructions, see [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md).  
+1. Create an instance of the <xref:System.ServiceModel.ServiceHost> for your service. For complete instructions, see [Basic WCF Programming](../basic-wcf-programming.md).  
   
-2.  For every <xref:System.ServiceModel.Description.ServiceEndpoint> of the specified service host, find its <xref:System.ServiceModel.Description.OperationDescription>.  
+2. For every <xref:System.ServiceModel.Description.ServiceEndpoint> of the specified service host, find its <xref:System.ServiceModel.Description.OperationDescription>.  
   
-3.  Search through the operation behaviors to determine if an instance of the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> is found.  
+3. Search through the operation behaviors to determine if an instance of the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> is found.  
   
-4.  If a <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> is found, set its <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate%2A> property to a new instance of the surrogate. If no <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> is found, then create a new instance and set the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate%2A> member of the new behavior to a new instance of the surrogate.  
+4. If a <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> is found, set its <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate%2A> property to a new instance of the surrogate. If no <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> is found, then create a new instance and set the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate%2A> member of the new behavior to a new instance of the surrogate.  
   
-5.  Finally, add this new behavior to the current operation behaviors, as shown in the following example:  
+5. Finally, add this new behavior to the current operation behaviors, as shown in the following example:  
   
      [!code-csharp[C_IDataContractSurrogate#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#8)]  
   
@@ -152,19 +152,19 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
   
 ##### To implement a surrogate for metadata importation  
   
-1.  Import the metadata using the <xref:System.ServiceModel.Description.WsdlImporter> class.  
+1. Import the metadata using the <xref:System.ServiceModel.Description.WsdlImporter> class.  
   
-2.  Use the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method to check whether an <xref:System.Runtime.Serialization.XsdDataContractImporter> has been defined.  
+2. Use the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method to check whether an <xref:System.Runtime.Serialization.XsdDataContractImporter> has been defined.  
   
-3.  If the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method returns `false`, create a new <xref:System.Runtime.Serialization.XsdDataContractImporter> and set its <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property to a new instance of the <xref:System.Runtime.Serialization.ImportOptions> class. Otherwise, use the importer returned by the `out` parameter of the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method.  
+3. If the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method returns `false`, create a new <xref:System.Runtime.Serialization.XsdDataContractImporter> and set its <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property to a new instance of the <xref:System.Runtime.Serialization.ImportOptions> class. Otherwise, use the importer returned by the `out` parameter of the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method.  
   
-4.  If the <xref:System.Runtime.Serialization.XsdDataContractImporter> has no <xref:System.Runtime.Serialization.ImportOptions> defined, then set the property to be a new instance of the <xref:System.Runtime.Serialization.ImportOptions> class.  
+4. If the <xref:System.Runtime.Serialization.XsdDataContractImporter> has no <xref:System.Runtime.Serialization.ImportOptions> defined, then set the property to be a new instance of the <xref:System.Runtime.Serialization.ImportOptions> class.  
   
-5.  Set the <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property of the <xref:System.Runtime.Serialization.ImportOptions> of the <xref:System.Runtime.Serialization.XsdDataContractImporter> to a new instance of the surrogate.  
+5. Set the <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property of the <xref:System.Runtime.Serialization.ImportOptions> of the <xref:System.Runtime.Serialization.XsdDataContractImporter> to a new instance of the surrogate.  
   
-6.  Add the <xref:System.Runtime.Serialization.XsdDataContractImporter> to the collection returned by the <xref:System.ServiceModel.Description.MetadataExporter.State%2A> property of the <xref:System.ServiceModel.Description.WsdlImporter> (inherited from the <xref:System.ServiceModel.Description.MetadataExporter> class.)  
+6. Add the <xref:System.Runtime.Serialization.XsdDataContractImporter> to the collection returned by the <xref:System.ServiceModel.Description.MetadataExporter.State%2A> property of the <xref:System.ServiceModel.Description.WsdlImporter> (inherited from the <xref:System.ServiceModel.Description.MetadataExporter> class.)  
   
-7.  Use the <xref:System.ServiceModel.Description.WsdlImporter.ImportAllContracts%2A> method of the <xref:System.ServiceModel.Description.WsdlImporter> to import all of the data contracts within the schema. During the last step, code is generated from the schemas loaded by calling into the surrogate.  
+7. Use the <xref:System.ServiceModel.Description.WsdlImporter.ImportAllContracts%2A> method of the <xref:System.ServiceModel.Description.WsdlImporter> to import all of the data contracts within the schema. During the last step, code is generated from the schemas loaded by calling into the surrogate.  
   
      [!code-csharp[C_IDataContractSurrogate#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#9)]  
   
@@ -173,22 +173,23 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
   
 ##### To use a surrogate for metadata export  
   
-1.  Create a new <xref:System.ServiceModel.Description.WsdlExporter> or use the `wsdlExporter` parameter passed to the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method.  
+1. Create a new <xref:System.ServiceModel.Description.WsdlExporter> or use the `wsdlExporter` parameter passed to the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method.  
   
-2.  Use the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> function to check whether an <xref:System.Runtime.Serialization.XsdDataContractExporter> has been defined.  
+2. Use the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> function to check whether an <xref:System.Runtime.Serialization.XsdDataContractExporter> has been defined.  
   
-3.  If <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> returns `false`, create a new <xref:System.Runtime.Serialization.XsdDataContractExporter> with the generated XML schemas from the <xref:System.ServiceModel.Description.WsdlExporter>, and add it to the collection returned by the <xref:System.ServiceModel.Description.MetadataExporter.State%2A> property of the <xref:System.ServiceModel.Description.WsdlExporter>. Otherwise, use the exporter returned by the `out` parameter of the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method.  
+3. If <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> returns `false`, create a new <xref:System.Runtime.Serialization.XsdDataContractExporter> with the generated XML schemas from the <xref:System.ServiceModel.Description.WsdlExporter>, and add it to the collection returned by the <xref:System.ServiceModel.Description.MetadataExporter.State%2A> property of the <xref:System.ServiceModel.Description.WsdlExporter>. Otherwise, use the exporter returned by the `out` parameter of the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method.  
   
-4.  If the <xref:System.Runtime.Serialization.XsdDataContractExporter> has no <xref:System.Runtime.Serialization.ExportOptions> defined, then set the <xref:System.Runtime.Serialization.XsdDataContractExporter.Options%2A> property to a new instance of the <xref:System.Runtime.Serialization.ExportOptions> class.  
+4. If the <xref:System.Runtime.Serialization.XsdDataContractExporter> has no <xref:System.Runtime.Serialization.ExportOptions> defined, then set the <xref:System.Runtime.Serialization.XsdDataContractExporter.Options%2A> property to a new instance of the <xref:System.Runtime.Serialization.ExportOptions> class.  
   
-5.  Set the <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A> property of the <xref:System.Runtime.Serialization.ExportOptions> of the <xref:System.Runtime.Serialization.XsdDataContractExporter> to a new instance of the surrogate. Subsequent steps for exporting metadata do not require any changes.  
+5. Set the <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A> property of the <xref:System.Runtime.Serialization.ExportOptions> of the <xref:System.Runtime.Serialization.XsdDataContractExporter> to a new instance of the surrogate. Subsequent steps for exporting metadata do not require any changes.  
   
      [!code-csharp[C_IDataContractSurrogate#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#10)]  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.IDataContractSurrogate>
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
 - <xref:System.Runtime.Serialization.ImportOptions>
 - <xref:System.Runtime.Serialization.ExportOptions>
-- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [Using Data Contracts](../feature-details/using-data-contracts.md)

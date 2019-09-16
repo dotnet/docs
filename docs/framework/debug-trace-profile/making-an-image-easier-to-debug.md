@@ -10,6 +10,7 @@ ms.assetid: 7d90ea7a-150f-4f97-98a7-f9c26541b9a3
 author: "mairaw"
 ms.author: "mairaw"
 ---
+
 # Making an image easier to debug in .NET
 
 When compiling unmanaged code, you can configure an executable image for debugging by setting IDE switches or command-line options. For example, you can use the /**Zi** command-line option in Visual C++ to ask it to emit debug symbol files (file extension .pdb). Similarly, the /**Od** command-line option tells the compiler to disable optimization. The resulting code runs more slowly, but it's easier to debug, should this be necessary.
@@ -28,7 +29,7 @@ In some cases, you might want to change the behavior of the JIT compiler so that
 
 For example, if the assembly you want to debug is called *MyApp.exe*, then you can create a text file named *MyApp.ini*, in the same folder as *MyApp.exe*, which contains these three lines:
 
-```txt
+```ini
 [.NET Framework Debugging Control]
 GenerateTrackingInfo=1
 AllowOptimize=0
@@ -45,7 +46,7 @@ For a retail build, compilers don't set any **DebuggableAttribute**. By default,
 The **DebuggableAttribute** applies to a whole assembly at a time, not to individual modules within the assembly. Development tools must therefore attach custom attributes to the assembly metadata token, if an assembly has already been created, or to the class called **System.Runtime.CompilerServices.AssemblyAttributesGoHere**. The ALink tool then promotes these **DebuggableAttribute** attributes from each module to the assembly they become a part of. If there's a conflict, the ALink operation fails.
 
 > [!NOTE]
-> In version 1.0 of the .NET Framework, the Microsoft Visual C++ compiler adds the **DebuggableAttribute** when the **/clr** and **/Zi** compiler options are specified. In version 1.1 of the .NET Framework, you must either add the **DebugabbleAttribute** manually in your code or use the **/ASSEMBLYDEBUG** linker option.
+> In version 1.0 of the .NET Framework, the Microsoft Visual C++ compiler adds the **DebuggableAttribute** when the **/clr** and **/Zi** compiler options are specified. In version 1.1 of the .NET Framework, you must either add the **DebuggableAttribute** manually in your code or use the **/ASSEMBLYDEBUG** linker option.
 
 ## See also
 

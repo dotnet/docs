@@ -23,14 +23,14 @@ Maps the specified file into memory. This method is obsolete.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MapFile(  
     [in]  HANDLE    hFile,  
     [out] HMODULE*  hMapAddress  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hFile`  
  [in] The handle of the file to be mapped.  
   
@@ -47,4 +47,5 @@ HRESULT MapFile(
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

@@ -23,14 +23,14 @@ Gets the buffer size required for a hash, using the specified hash algorithm.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameHashSize (  
     [in]  ULONG   ulHashAlg,  
     [out] DWORD   *pcbSize  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ulHashAlg`  
  [in] The hash algorithm used to compute the buffer size.  
   
@@ -50,4 +50,5 @@ HRESULT StrongNameHashSize (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

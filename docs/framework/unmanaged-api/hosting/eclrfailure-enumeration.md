@@ -22,7 +22,7 @@ Describes the set of failures for which a host can set policy actions.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     FAIL_NonCriticalResource,  
     FAIL_CriticalResource,  
@@ -43,7 +43,7 @@ typedef enum {
 |`FAIL_FatalRuntime`|The common language runtime (CLR) is no longer able to run managed code in the process. Henceforth, calls to any hosting functions return an HRESULT value of HOST_E_CLRNOTAVAILABLE.|  
 |`FAIL_OrphanedLock`|A thread has failed to release a lock upon returning from an <xref:System.AppDomain> object. The host cannot set this failure to cause a thread to abort.|  
 |`FAIL_StackOverflow`|A stack overflow has occurred.|  
-|`FAIL_AccessViolation`|An attempt was made to read or write protected memory. Not supported in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].|  
+|`FAIL_AccessViolation`|An attempt was made to read or write protected memory. Not supported in the .NET Framework 4.|  
 |`FAIL_CodeContract`|A code contract failure occurred. See [Code Contracts](../../../../docs/framework/debug-trace-profile/code-contracts.md).|  
   
 ## Remarks  
@@ -59,6 +59,7 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)
 - [SetActionOnFailure Method](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-setactiononfailure-method.md)
 - [IHostPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostpolicymanager-interface.md)

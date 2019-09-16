@@ -23,7 +23,7 @@ Enumerates MemberDef tokens representing members of the specified type with the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMembersWithName (  
    [in, out] HCORENUM    *phEnum,   
    [in]      mdTypeDef   cl,   
@@ -34,7 +34,7 @@ HRESULT EnumMembersWithName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator.  
   
@@ -73,5 +73,6 @@ HRESULT EnumMembersWithName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

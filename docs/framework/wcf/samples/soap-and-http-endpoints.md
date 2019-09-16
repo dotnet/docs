@@ -16,11 +16,11 @@ This sample demonstrates how to implement an RPC-based service and expose it in 
   
  The Web.config file configures the WCF service with 3 endpoints:  
   
--   The ~/service.svc/mex endpoint that exposes the service metadata for access by SOAP-based clients.  
+- The ~/service.svc/mex endpoint that exposes the service metadata for access by SOAP-based clients.  
   
--   The ~/service.svc/http endpoint that enables clients to access the service using the HTTP binding.  
+- The ~/service.svc/http endpoint that enables clients to access the service using the HTTP binding.  
   
--   The ~/service.svc/soap endpoint that allows the clients to access the service using the SOAP over HTTP binding.  
+- The ~/service.svc/soap endpoint that allows the clients to access the service using the SOAP over HTTP binding.  
   
  The HTTP endpoint is configured with a <`webHttp`> standard endpoint which has `helpEnabled` set to `true`. As a result, the service exposes an XHTML based help page at ~/service.svc/http/help that HTTP-based clients can use to access the service.  
   
@@ -30,31 +30,31 @@ This sample demonstrates how to implement an RPC-based service and expose it in 
   
 #### To run the sample  
   
-1.  Open the solution for the SOAP and HTTP Endpoints Sample.  
+1. Open the solution for the SOAP and HTTP Endpoints Sample.  
   
-2.  Press CTRL+SHIFT+B to build the solution.  
+2. Press CTRL+SHIFT+B to build the solution.  
   
-3.  If it is not already open, press CTRL+W, S to open the **Solution Explorer** window.  
+3. If it is not already open, press CTRL+W, S to open the **Solution Explorer** window.  
   
-4.  From the **Solution Explorer** window, right-click the **Service** project and place the cursor over the **Debug** context menu option so that the **Start New Instance** context menu appears. Click **Start New Instance**. This launches the ASP.NET development server, which hosts the service.  
+4. From the **Solution Explorer** window, right-click the **Service** project and place the cursor over the **Debug** context menu option so that the **Start New Instance** context menu appears. Click **Start New Instance**. This launches the ASP.NET development server, which hosts the service.  
   
-5.  From the Solution Explorer windows, right-click the Client project and place the cursor over the **Debug** context menu option so that the **Start New Instance** context menu appears. Click **Start New Instance**.  
+5. From the Solution Explorer windows, right-click the Client project and place the cursor over the **Debug** context menu option so that the **Start New Instance** context menu appears. Click **Start New Instance**.  
   
-6.  The client console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser.  
+6. The client console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser.  
   
-7.  As the sample runs, the client writes the status of the current activity.  
+7. As the sample runs, the client writes the status of the current activity.  
   
-8.  Press any key to terminate the client console application.  
+8. Press any key to terminate the client console application.  
   
 9. Press SHIFT+F5 to stop debugging the service.  
   
 10. In the Windows Notification Area, right-click the ASP.NET development server icon and select **Stop** from the context menu.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\SoapAndHttpEndpoints`
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\SoapAndHttpEndpoints`

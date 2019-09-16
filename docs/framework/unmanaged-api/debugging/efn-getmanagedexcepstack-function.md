@@ -17,12 +17,12 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# _EFN_GetManagedExcepStack Function
+# \_EFN\_GetManagedExcepStack Function
 Given a managed exception object address, returns a string version of the stack trace contained inside.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _EFN_GetManagedExcepStack(  
     [in]  PDEBUG_CLIENT Client,  
     [in]  ULONG64       StackObjAddr,  
@@ -31,7 +31,7 @@ HRESULT _EFN_GetManagedExcepStack(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] The client being debugged.  
   
@@ -55,4 +55,5 @@ HRESULT _EFN_GetManagedExcepStack(
  **.NET Framework Version:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

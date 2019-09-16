@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<cookieHandler>"
 ms.date: "03/30/2017"
 ms.assetid: bfdc127f-8d94-4566-8bef-f583c6ae7398
@@ -7,9 +7,10 @@ author: "BrucePerlerMS"
 # \<cookieHandler>
 Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) uses to read and write cookies.  
   
- \<system.identityModel.services>  
-\<federationConfiguration>  
-\<cookieHandler>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cookieHandler>**  
   
 ## Syntax  
   
@@ -49,14 +50,14 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<chunkedCookieHandler>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/chunkedcookiehandler.md)|Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Default" or "Chunked".|  
-|[\<customCookieHandler>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/customcookiehandler.md)|Sets the custom cookie handler type. This element must be present if the `mode` attribute of the `<cookieHandler>` element is "Custom". It cannot be present for any other values of the `mode` attribute. The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.|  
+|[\<chunkedCookieHandler>](chunkedcookiehandler.md)|Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Default" or "Chunked".|  
+|[\<customCookieHandler>](customcookiehandler.md)|Sets the custom cookie handler type. This element must be present if the `mode` attribute of the `<cookieHandler>` element is "Custom". It cannot be present for any other values of the `mode` attribute. The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<federationConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
+|[\<federationConfiguration>](federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
   
 ## Remarks  
  The <xref:System.IdentityModel.Services.CookieHandler> is responsible for reading and writing raw cookies at the HTTP protocol level. You can configure either a <xref:System.IdentityModel.Services.ChunkedCookieHandler> or a custom cookie handler derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
@@ -71,13 +72,14 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
  The following XML shows a `<cookieHandler>` element. In this example, because the `mode` attribute is not specified, the default cookie handler will be used by the SAM. This is an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class. Because the `<chunkedCookieHandler>` child element is not specified, the default chunk size will be used. HTTPS will not be required because the `requireSsl` attribute is set `false`.  
   
 > [!WARNING]
->  In this example, HTTPS is not required to write session cookies. This is because the `requireSsl` attribute on the `<cookieHandler>` element is set to `false`. This setting is not recommended for most production environments as it may present a security risk.  
+> In this example, HTTPS is not required to write session cookies. This is because the `requireSsl` attribute on the `<cookieHandler>` element is set to `false`. This setting is not recommended for most production environments as it may present a security risk.  
   
 ```xml  
 <cookieHandler requireSsl="false" />  
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Services.CookieHandler>
 - <xref:System.IdentityModel.Services.ChunkedCookieHandler>
 - <xref:System.IdentityModel.Services.SessionAuthenticationModule>

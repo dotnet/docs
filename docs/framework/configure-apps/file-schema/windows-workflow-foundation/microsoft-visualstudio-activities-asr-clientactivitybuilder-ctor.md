@@ -11,7 +11,7 @@ api_type:
 ms.assetid: 6b44b13c-7a23-4df2-8f9f-45e2b1430002
 ---
 # Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor
-Creates an instance of the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  
+Creates an instance of the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  
   
 ## Syntax  
   
@@ -19,7 +19,7 @@ Creates an instance of the [Microsoft.VisualStudio.Activities.Asr.ClientActivity
 public ClientActivityBuilder(OperationDescription operationDescription, string configurationName, string proxyNamespace);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 ## Parameter Values  
  *operationDescription*  
@@ -35,4 +35,5 @@ public ClientActivityBuilder(OperationDescription operationDescription, string c
  Specifies the service namespace for the operation. The value of this parameter must not be either **null** or empty. If these conditions are not satisfied, the runtime result of using the constructor and the other methods of this class are undefined.  
   
 ## See also
-- [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md)
+
+- [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](microsoft-visualstudio-activities-asr-clientactivitybuilder.md)

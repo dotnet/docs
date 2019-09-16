@@ -16,7 +16,7 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
  The [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md), [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md), and [\<ws2007HttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) bindings support the following protocols.  
   
 > [!NOTE]
->  For information about bindings used to publish metadata, see the "System-Provided Metadata Bindings" section later in this topic.  
+> For information about bindings used to publish metadata, see the "System-Provided Metadata Bindings" section later in this topic.  
   
 |Category|Protocol|Specification and Usage|  
 |--------------|--------------|-----------------------------|  
@@ -57,9 +57,9 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
 ## wsFederationHttpBinding and ws2007FederationHttpBinding  
  The [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and [\<ws2007FederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) elements are introduced to provide support for federated scenarios, where a third party issues a token used to authenticate a client. In addition to the protocols used by `wsHttpBinding`, `wsFederationHttpBinding` leverages:  
   
--   `WS-Trust` for token issuance.  
+- `WS-Trust` for token issuance.  
   
--   WSS Security Assertions Markup Language (SAML) Token Profile 1.0 and 1.1 for the most commonly issued token format.  
+- WSS Security Assertions Markup Language (SAML) Token Profile 1.0 and 1.1 for the most commonly issued token format.  
   
  Example:  
   
@@ -103,6 +103,7 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
 |Metadata|WS-MetadataExchange|[WS-MetadataExchange](https://go.microsoft.com/fwlink/?LinkId=94868)<br /><br /> WCF implements WS-MetadataExchange to retrieve XML Schema, WSDL, and WS-Policy.|  
   
 ## See also
+
 - [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
 - [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)
 - [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)

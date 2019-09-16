@@ -23,13 +23,13 @@ Gets the number of local variables.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalVariableCount(  
     [in]  mdMethodDef  mdMethodToken,  
     [out] ULONG        *pcLocals);  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdMethodToken`  
  [in] The metadata token of methods.  
   
@@ -43,4 +43,5 @@ HRESULT GetLocalVariableCount(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)

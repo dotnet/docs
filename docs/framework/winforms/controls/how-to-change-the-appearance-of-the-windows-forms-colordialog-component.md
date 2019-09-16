@@ -20,7 +20,7 @@ You can configure the appearance of the Windows Forms <xref:System.Windows.Forms
   
 ### To configure the appearance of the color dialog box  
   
-1.  Set the <xref:System.Windows.Forms.ColorDialog.AllowFullOpen%2A>, <xref:System.Windows.Forms.ColorDialog.AnyColor%2A>, <xref:System.Windows.Forms.ColorDialog.SolidColorOnly%2A>, and <xref:System.Windows.Forms.ColorDialog.ShowHelp%2A> properties to the desired values.  
+1. Set the <xref:System.Windows.Forms.ColorDialog.AllowFullOpen%2A>, <xref:System.Windows.Forms.ColorDialog.AnyColor%2A>, <xref:System.Windows.Forms.ColorDialog.SolidColorOnly%2A>, and <xref:System.Windows.Forms.ColorDialog.ShowHelp%2A> properties to the desired values.  
   
     ```vb  
     ColorDialog1.AllowFullOpen = True  
@@ -44,6 +44,7 @@ You can configure the appearance of the Windows Forms <xref:System.Windows.Forms
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ColorDialog>
-- [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)
-- [ColorDialog Component Overview](../../../../docs/framework/winforms/controls/colordialog-component-overview-windows-forms.md)
+- [ColorDialog Component](colordialog-component-windows-forms.md)
+- [ColorDialog Component Overview](colordialog-component-overview-windows-forms.md)

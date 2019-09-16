@@ -11,16 +11,16 @@ ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
 # Structure of a Visual Basic Program
 A Visual Basic program is built up from standard building blocks. A *solution* comprises one or more projects. A *project* in turn can contain one or more assemblies. Each *assembly* is compiled from one or more source files. A *source file* provides the definition and implementation of classes, structures, modules, and interfaces, which ultimately contain all your code.  
   
- For more information about these building blocks of a Visual Basic program, see [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio) and [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md).  
+ For more information about these building blocks of a Visual Basic program, see [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio) and [Assemblies in .NET](../../../standard/assembly/index.md).  
   
 ## File-Level Programming Elements  
  When you start a project or file and open the code editor, you see some code already in place and in the correct order. Any code that you write should follow the following sequence:  
   
-1.  `Option` statements  
+1. `Option` statements  
   
-2.  `Imports` statements  
+2. `Imports` statements  
   
-3.  `Namespace` statements and namespace-level elements  
+3. `Namespace` statements and namespace-level elements  
   
  If you enter statements in a different order, compilation errors can result.  
   
@@ -41,30 +41,30 @@ A Visual Basic program is built up from standard building blocks. A *solution* c
 ## Namespace-Level Programming Elements  
  Classes, structures, and modules contain all the code in your source file. They are *namespace-level* elements, which can appear within a namespace or at the source file level. They hold the declarations of all other programming elements. Interfaces, which define element signatures but provide no implementation, also appear at module level. For more information on the module-level elements, see the following:  
   
--   [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
   
--   [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
+- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
   
--   [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
+- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
   
--   [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
+- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
   
  Data elements at namespace level are enumerations and delegates.  
   
 ## Module-Level Programming Elements  
  Procedures, operators, properties, and events are the only programming elements that can hold executable code (statements that perform actions at run time). They are the *module-level* elements of your program. For more information on the procedure-level elements, see the following:  
   
--   [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
   
--   [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
--   [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
   
--   [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
   
--   [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
--   [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
+- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
   
  Data elements at module level are variables, constants, enumerations, and delegates.  
   
@@ -76,17 +76,18 @@ A Visual Basic program is built up from standard building blocks. A *solution* c
 ## The Main Procedure  
  The `Main` procedure is the first code to run when your application has been loaded. `Main` serves as the starting point and overall control for your application. There are four varieties of `Main`:  
   
--   `Sub Main()`  
+- `Sub Main()`  
   
--   `Sub Main(ByVal cmdArgs() As String)`  
+- `Sub Main(ByVal cmdArgs() As String)`  
   
--   `Function Main() As Integer`  
+- `Function Main() As Integer`  
   
--   `Function Main(ByVal cmdArgs() As String) As Integer`  
+- `Function Main(ByVal cmdArgs() As String) As Integer`  
   
  The most common variety of this procedure is `Sub Main()`. For more information, see [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md).  
   
 ## See also
+
 - [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
 - [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
 - [Visual Basic Limitations](../../../visual-basic/programming-guide/program-structure/limitations.md)

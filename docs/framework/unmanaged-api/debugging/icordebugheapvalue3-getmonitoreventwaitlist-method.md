@@ -23,13 +23,13 @@ Provides an ordered list of threads that are queued on the event that is associa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMonitorEventWaitList (  
     [out] ICorDebugThreadEnum **ppThreadEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppThreadEnum`  
  [out] The ICorDebugThreadEnum enumerator that provides the ordered list of threads.  
   
@@ -64,5 +64,6 @@ HRESULT GetMonitorEventWaitList (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

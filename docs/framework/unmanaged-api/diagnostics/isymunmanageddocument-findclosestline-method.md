@@ -23,13 +23,13 @@ Returns the closest line that is a sequence point, given a line in this document
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindClosestLine(  
     [in]  ULONG32  line,  
     [out, retval] ULONG32*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `line`  
  [in] A line in this document.  
   
@@ -40,4 +40,5 @@ HRESULT FindClosestLine(
  S_OK if the method succeeds; otherwise, an error code.  
   
 ## See also
+
 - [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

@@ -23,7 +23,7 @@ This method is not implemented. If called, it returns E_NOTIMPL.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindAssemblyModule(  
     [in]  LPCWSTR  szAppBase,  
     [in]  LPCWSTR  szPrivateBin,  
@@ -36,7 +36,7 @@ HRESULT FindAssemblyModule(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szAppBase`  
  [in] Not used.  
   
@@ -71,5 +71,6 @@ HRESULT FindAssemblyModule(
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
 - [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)

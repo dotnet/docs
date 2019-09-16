@@ -23,14 +23,14 @@ Given a metadata interface and a stream that contains the symbol store, returns 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReaderFromStream(  
     [in]  IUnknown  *importer,  
     [in]  IStream   *pstream,  
     [out,retval] ISymUnmanagedReader **pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `importer`  
  [in] A pointer to the metadata import interface.  
   
@@ -47,4 +47,5 @@ HRESULT GetReaderFromStream(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedBinder Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)

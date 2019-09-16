@@ -14,11 +14,11 @@ Arrays are fixed-size, zero-based, mutable collections of consecutive data eleme
 
 You can create arrays in several ways. You can create a small array by listing consecutive values between `[|` and `|]` and separated by semicolons, as shown in the following examples.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet1.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet1.fs)]
 
 You can also put each element on a separate line, in which case the semicolon separator is optional.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet2.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet2.fs)]
 
 The type of the array elements is inferred from the literals used and must be consistent. The following code causes an error because 1.0 is a float and 2 and 3 are integers.
 
@@ -29,23 +29,23 @@ The type of the array elements is inferred from the literals used and must be co
 
 You can also use sequence expressions to create arrays. Following is an example that creates an array of squares of integers from 1 to 10.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet3.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet3.fs)]
 
 To create an array in which all the elements are initialized to zero, use `Array.zeroCreate`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet4.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet4.fs)]
 
 ## Accessing Elements
 
 You can access array elements by using a dot operator (`.`) and brackets (`[` and `]`).
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet5.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet5.fs)]
 
 Array indexes start at 0.
 
 You can also access array elements by using slice notation, which enables you to specify a subrange of the array. Examples of slice notation follow.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet51.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet51.fs)]
 
 When slice notation is used, a new copy of the array is created.
 
@@ -59,7 +59,7 @@ The library module [`Microsoft.FSharp.Collections.Array`](https://msdn.microsoft
 
 [`Array.get`](https://msdn.microsoft.com/library/dd93e85d-7e80-4d76-8de0-b6d45bcf07bc) gets an element. [`Array.length`](https://msdn.microsoft.com/library/0d775b6a-4a8f-4bd1-83e5-843b3251725f) gives the length of an array. [`Array.set`](https://msdn.microsoft.com/library/847edc0d-4dc5-4a39-98c7-d4320c60e790) sets an element to a specified value. The following code example illustrates the use of these functions.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet9.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet9.fs)]
 
 The output is as follows.
 
@@ -71,7 +71,7 @@ The output is as follows.
 
 Several functions create arrays without requiring an existing array. [`Array.empty`](https://msdn.microsoft.com/library/c3694b92-1c16-4c54-9bf2-fe398fadce32) creates a new array that does not contain any elements. [`Array.create`](https://msdn.microsoft.com/library/e848c8d6-1142-4080-9727-8dacc26066be) creates an array of a specified size and sets all the elements to provided values. [`Array.init`](https://msdn.microsoft.com/library/ee898089-63b0-40aa-910c-5ae7e32f6665) creates an array, given a dimension and a function to generate the elements. [`Array.zeroCreate`](https://msdn.microsoft.com/library/fa5b8e7a-1b5b-411c-8622-b58d7a14d3b2) creates an array in which all the elements are initialized to the zero value for the array's type. The following code demonstrates these functions.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet91.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet91.fs)]
 
 The output is as follows.
 
@@ -83,7 +83,7 @@ Array of squares: [|0; 1; 4; 9; 16; 25; 36; 49; 64; 81|]
 
 [`Array.copy`](https://msdn.microsoft.com/library/9d0202f1-1ea0-475e-9d66-4f8ccc3c5b5f) creates a new array that contains elements that are copied from an existing array. Note that the copy is a shallow copy, which means that if the element type is a reference type, only the reference is copied, not the underlying object. The following code example illustrates this.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet11.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet11.fs)]
 
 The output of the preceding code is as follows:
 
@@ -96,18 +96,19 @@ The string `Test1` appears only in the first array because the operation of crea
 
 [`Array.sub`](https://msdn.microsoft.com/library/40fb12ba-41d7-4ef0-b33a-56727deeef9d) generates a new array from a subrange of an array. You specify the subrange by providing the starting index and the length. The following code demonstrates the use of `Array.sub`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet12.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet12.fs)]
 
 The output shows that the subarray starts at element 5 and contains 10 elements.
 
 ```
 [|5; 6; 7; 8; 9; 10; 11; 12; 13; 14|]
 ```
+
 [`Array.append`](https://msdn.microsoft.com/library/08836310-5036-4474-b9a2-2c73e2293911) creates a new array by combining two existing arrays.
 
 The following code demonstrates **Array.append**.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet13.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet13.fs)]
 
 The output of the preceding code is as follows.
 
@@ -117,7 +118,7 @@ The output of the preceding code is as follows.
 
 [`Array.choose`](https://msdn.microsoft.com/library/f5c8a5e2-637f-44d4-b35c-be96a6618b09) selects elements of an array to include in a new array. The following code demonstrates `Array.choose`. Note that the element type of the array does not have to match the type of the value returned in the option type. In this example, the element type is `int` and the option is the result of a polynomial function, `elem*elem - 1`, as a floating point number.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet14.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet14.fs)]
 
 The output of the preceding code is as follows.
 
@@ -127,7 +128,7 @@ The output of the preceding code is as follows.
 
 [`Array.collect`](https://msdn.microsoft.com/library/c3b60c3b-9455-48c9-bc2b-e88f0434342a) runs a specified function on each array element of an existing array and then collects the elements generated by the function and combines them into a new array. The following code demonstrates `Array.collect`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet15.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet15.fs)]
 
 The output of the preceding code is as follows.
 
@@ -137,7 +138,7 @@ The output of the preceding code is as follows.
 
 [`Array.concat`](https://msdn.microsoft.com/library/f7219b79-1ec8-4a25-96b1-edbedb358302) takes a sequence of arrays and combines them into a single array. The following code demonstrates `Array.concat`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet16.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet16.fs)]
 
 The output of the preceding code is as follows.
 
@@ -148,7 +149,7 @@ The output of the preceding code is as follows.
 
 [`Array.filter`](https://msdn.microsoft.com/library/b885b214-47fc-4639-9664-b8c183a39ede) takes a Boolean condition function and generates a new array that contains only those elements from the input array for which the condition is true. The following code demonstrates `Array.filter`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet17.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet17.fs)]
 
 The output of the preceding code is as follows.
 
@@ -158,7 +159,7 @@ The output of the preceding code is as follows.
 
 [`Array.rev`](https://msdn.microsoft.com/library/1bbf822c-763b-4794-af21-97d2e48ef709) generates a new array by reversing the order of an existing array. The following code demonstrates `Array.rev`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet18.fs)]  
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet18.fs)]
 
 The output of the preceding code is as follows.
 
@@ -168,7 +169,7 @@ The output of the preceding code is as follows.
 
 You can easily combine functions in the array module that transform arrays by using the pipeline operator (`|>`), as shown in the following example.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet19.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet19.fs)]
 
 The output is
 
@@ -180,15 +181,15 @@ The output is
 
 A multidimensional array can be created, but there is no syntax for writing a multidimensional array literal. Use the operator [`array2D`](https://msdn.microsoft.com/library/1d52503d-2990-49fc-8fd3-6b0e508aa236) to create an array from a sequence of sequences of array elements. The sequences can be array or list literals. For example, the following code creates a two-dimensional array.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet20.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet20.fs)]
 
 You can also use the function [`Array2D.init`](https://msdn.microsoft.com/library/9de07e95-bc21-4927-b5b4-08fdec882c7b) to initialize arrays of two dimensions, and similar functions are available for arrays of three and four dimensions. These functions take a function that is used to create the elements. To create a two-dimensional array that contains elements set to an initial value instead of specifying a function, use the [`Array2D.create`](https://msdn.microsoft.com/library/36c9d980-b241-4a20-bc64-bcfa0205d804) function, which is also available for arrays up to four dimensions. The following code example first shows how to create an array of arrays that contain the desired elements, and then uses `Array2D.init` to generate the desired two-dimensional array.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet21.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet21.fs)]
 
 Array indexing and slicing syntax is supported for arrays up to rank 4. When you specify an index in multiple dimensions, you use commas to separate the indexes, as illustrated in the following code example.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet22.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet22.fs)]
 
 The type of a two-dimensional array is written out as `<type>[,]` (for example, `int[,]`, `double[,]`), and the type of a three-dimensional array is written as `<type>[,,]`, and so on for arrays of higher dimensions.
 
@@ -199,7 +200,7 @@ Only a subset of the functions available for one-dimensional arrays is also avai
 In a two-dimensional array (a matrix), you can extract a sub-matrix by specifying ranges and using a wildcard (`*`) character to specify whole rows or columns.
 
 ```fsharp
-/ Get rows 1 to N from an NxM matrix (returns a matrix):
+// Get rows 1 to N from an NxM matrix (returns a matrix):
 matrix.[1.., *]
 
 // Get rows 1 to 3 from a matrix (returns a matrix):
@@ -233,7 +234,7 @@ type Matrix<'T>(N: int, M: int) =
         and set(a: int, b: int) (value:'T) = internalArray.[a, b] <- value
 
     member this.GetSlice(rowStart: int option, rowFinish : int option, colStart: int option, colFinish : int option) =
-        let rowStart = 
+        let rowStart =
             match rowStart with
             | Some(v) -> v
             | None -> 0
@@ -241,33 +242,33 @@ type Matrix<'T>(N: int, M: int) =
             match rowFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(0) - 1
-        let colStart = 
+        let colStart =
             match colStart with
             | Some(v) -> v
             | None -> 0
-        let colFinish = 
+        let colFinish =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
         internalArray.[rowStart..rowFinish, colStart..colFinish]
 
     member this.GetSlice(row: int, colStart: int option, colFinish: int option) =
-        let colStart = 
+        let colStart =
             match colStart with
             | Some(v) -> v
             | None -> 0
-        let colFinish = 
+        let colFinish =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
         internalArray.[row, colStart..colFinish]
 
     member this.GetSlice(rowStart: int option, rowFinish: int option, col: int) =
-        let rowStart = 
+        let rowStart =
             match rowStart with
             | Some(v) -> v
             | None -> 0
-        let rowFinish = 
+        let rowFinish =
             match rowFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(0) - 1
@@ -297,7 +298,7 @@ The functions [`Array.exists`](https://msdn.microsoft.com/library/8e47ad6c-c065-
 
 The following code demonstrates the use of `Array.exists` and `Array.exists2`. In these examples, new functions are created by applying only one of the arguments, in these cases, the function argument.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet23.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet23.fs)]
 
 The output of the preceding code is as follows.
 
@@ -310,7 +311,7 @@ true
 
 Similarly, the function [`Array.forall`](https://msdn.microsoft.com/library/d88f2cd0-fa7f-45cf-ac15-31eae9086cc4) tests an array to determine whether every element satisfies a Boolean condition. The variation [`Array.forall2`](https://msdn.microsoft.com/library/c68f61a1-030c-4024-b705-c4768b6c96b9) does the same thing by using a Boolean function that involves elements of two arrays of equal length. The following code illustrates the use of these functions.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet24.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet24.fs)]
 
 The output for these examples is as follows.
 
@@ -327,7 +328,7 @@ false
 
 The following code uses `Array.find` and `Array.findIndex` to locate a number that is both a perfect square and perfect cube.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet25.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet25.fs)]
 
 The output is as follows.
 
@@ -339,7 +340,7 @@ The first element that is both a square and a cube is 64 and its index is 62.
 
 The following code demonstrates the use of `Array.tryFind`. This code depends on the previous code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet26.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet26.fs)]
 
 The output is as follows.
 
@@ -352,7 +353,7 @@ Use [`Array.tryPick`](https://msdn.microsoft.com/library/72d45f85-037b-43a9-97fd
 
 The following code shows the use of `Array.tryPick`. In this case, instead of a lambda expression, several local helper functions are defined to simplify the code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet27.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet27.fs)]
 
 The output is as follows.
 
@@ -383,7 +384,7 @@ These functions for performing computations correspond to the functions of the s
 
 [`Array.set`](https://msdn.microsoft.com/library/847edc0d-4dc5-4a39-98c7-d4320c60e790) sets an element to a specified value. [`Array.fill`](https://msdn.microsoft.com/library/c83c9886-81d9-44f9-a195-61c7b87f7df2) sets a range of elements in an array to a specified value. The following code provides an example of `Array.fill`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet28.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet28.fs)]
 
 The output is as follows.
 

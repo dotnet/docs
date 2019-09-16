@@ -23,13 +23,13 @@ Gets a pointer to the code associated with this stack frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode (  
     [out] ICorDebugCode      **ppCode  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppCode`  
  [out] A pointer to the address of an ICorDebugCode object that represents the code associated with this frame.  
   

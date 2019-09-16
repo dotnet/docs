@@ -37,9 +37,9 @@ ms.author: "ronpet"
   
 |Format specifier|Name|Description|Examples|  
 |----------------------|----------|-----------------|--------------|  
-|"c"|Constant (invariant) format|This specifier is not culture-sensitive. It takes the form `[-][d’.’]hh’:’mm’:’ss[‘.’fffffff]`.<br /><br /> (The "t" and "T" format strings produce the same results.)<br /><br /> More information: [The Constant ("c") Format Specifier](#Constant).|`TimeSpan.Zero` -> 00:00:00<br /><br /> `New TimeSpan(0, 0, 30, 0)` -> 00:30:00<br /><br /> `New TimeSpan(3, 17, 25, 30, 500)` -> 3.17:25:30.5000000|  
-|"g"|General short format|This specifier outputs only what is needed. It is culture-sensitive and takes the form `[-][d’:’]h’:’mm’:’ss[.FFFFFFF]`.<br /><br /> More information: [The General Short ("g") Format Specifier](#GeneralShort).|`New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50.5 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50,5 (fr-FR)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50.599 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50,599 (fr-FR)|  
-|"G"|General long format|This specifier always outputs days and seven fractional digits. It is culture-sensitive and takes the form `[-]d’:’hh’:’mm’:’ss.fffffff`.<br /><br /> More information: [The General Long ("G") Format Specifier](#GeneralLong).|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
+|"c"|Constant (invariant) format|This specifier is not culture-sensitive. It takes the form `[-][d'.']hh':'mm':'ss['.'fffffff]`.<br /><br /> (The "t" and "T" format strings produce the same results.)<br /><br /> More information: [The Constant ("c") Format Specifier](#Constant).|`TimeSpan.Zero` -> 00:00:00<br /><br /> `New TimeSpan(0, 0, 30, 0)` -> 00:30:00<br /><br /> `New TimeSpan(3, 17, 25, 30, 500)` -> 3.17:25:30.5000000|  
+|"g"|General short format|This specifier outputs only what is needed. It is culture-sensitive and takes the form `[-][d':']h':'mm':'ss[.FFFFFFF]`.<br /><br /> More information: [The General Short ("g") Format Specifier](#GeneralShort).|`New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50.5 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50,5 (fr-FR)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50.599 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50,599 (fr-FR)|  
+|"G"|General long format|This specifier always outputs days and seven fractional digits. It is culture-sensitive and takes the form `[-]d':'hh':'mm':'ss.fffffff`.<br /><br /> More information: [The General Long ("G") Format Specifier](#GeneralLong).|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
   
 <a name="Constant"></a>   
 ## The Constant ("c") Format Specifier  
@@ -58,10 +58,10 @@ ms.author: "ronpet"
 |*ss*|The number of seconds, which ranges from "0" to "59".|  
 |*fffffff*|The optional fractional portion of a second.  Its value can range from "0000001" (one tick, or one ten-millionth of a second)  to "9999999" (9,999,999 ten-millionths of a second, or one second less one tick).|  
   
- Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that is common to all previous versions of the .NET Framework before the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
+ Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that is common to all previous versions of the .NET Framework before the .NET Framework 4. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
   
 > [!NOTE]
->  <xref:System.TimeSpan> also supports the "t" and "T" standard format strings, which are identical in behavior to the "c" standard format string.  
+> <xref:System.TimeSpan> also supports the "t" and "T" standard format strings, which are identical in behavior to the "c" standard format string.  
   
  The following example instantiates two <xref:System.TimeSpan> objects, uses them to perform arithmetic operations, and displays the result. In each case, it uses composite formatting to display the <xref:System.TimeSpan> value by using the "c" format specifier.  
   

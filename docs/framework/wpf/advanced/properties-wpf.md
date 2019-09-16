@@ -11,23 +11,24 @@ helpviewer_keywords:
 ms.assetid: d6e0197f-f2c4-48ed-b45b-b9cdb64aab1c
 ---
 # Properties (WPF)
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a set of services that can be used to extend the functionality of a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] property. Collectively, these services are typically referred to as the WPF property system. A property that is backed by the [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] property system is known as a dependency property.  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a set of services that can be used to extend the functionality of a common language runtime (CLR) property. Collectively, these services are typically referred to as the WPF property system. A property that is backed by the [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-titlewinclient-md.md)] property system is known as a dependency property.  
   
 ## In This Section  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)  
- [Dependency Property Callbacks and Validation](../../../../docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md)  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
- [Framework Property Metadata](../../../../docs/framework/wpf/advanced/framework-property-metadata.md)  
- [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md)  
- [Read-Only Dependency Properties](../../../../docs/framework/wpf/advanced/read-only-dependency-properties.md)  
- [Property Value Inheritance](../../../../docs/framework/wpf/advanced/property-value-inheritance.md)  
- [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md)  
- [Safe Constructor Patterns for DependencyObjects](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md)  
- [Collection-Type Dependency Properties](../../../../docs/framework/wpf/advanced/collection-type-dependency-properties.md)  
- [XAML Loading and Dependency Properties](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/properties-how-to-topics.md)  
+
+- [Dependency Properties Overview](dependency-properties-overview.md)
+- [Attached Properties Overview](attached-properties-overview.md)
+- [Custom Dependency Properties](custom-dependency-properties.md)
+- [Dependency Property Metadata](dependency-property-metadata.md)
+- [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md)
+- [Framework Property Metadata](framework-property-metadata.md)
+- [Dependency Property Value Precedence](dependency-property-value-precedence.md)
+- [Read-Only Dependency Properties](read-only-dependency-properties.md)
+- [Property Value Inheritance](property-value-inheritance.md)
+- [Dependency Property Security](dependency-property-security.md)
+- [Safe Constructor Patterns for DependencyObjects](safe-constructor-patterns-for-dependencyobjects.md)
+- [Collection-Type Dependency Properties](collection-type-dependency-properties.md)
+- [XAML Loading and Dependency Properties](xaml-loading-and-dependency-properties.md)
+- [How-to Topics](properties-how-to-topics.md)
   
 ## Reference  
  <xref:System.Windows.DependencyProperty>  
@@ -39,12 +40,12 @@ ms.assetid: d6e0197f-f2c4-48ed-b45b-b9cdb64aab1c
  <xref:System.Windows.DependencyObject>  
   
 ## Related Sections  
- [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)  
-  [XAML in WPF](../../../../docs/framework/wpf/advanced/xaml-in-wpf.md)  
-  [Base Elements](../../../../docs/framework/wpf/advanced/base-elements.md)  
-  [Element Tree and Serialization](../../../../docs/framework/wpf/advanced/element-tree-and-serialization.md)  
-  [Events](../../../../docs/framework/wpf/advanced/events-wpf.md)  
-  [Input](../../../../docs/framework/wpf/advanced/input-wpf.md)  
-  [Resources](../../../../docs/framework/wpf/advanced/resources-wpf.md)  
-  [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md)  
-  [Threading Model](../../../../docs/framework/wpf/advanced/threading-model.md)
+ [WPF Architecture](wpf-architecture.md)  
+  [XAML in WPF](xaml-in-wpf.md)  
+  [Base Elements](base-elements.md)  
+  [Element Tree and Serialization](element-tree-and-serialization.md)  
+  [Events](events-wpf.md)  
+  [Input](input-wpf.md)  
+  [Resources](resources-wpf.md)  
+  [WPF Content Model](../controls/wpf-content-model.md)  
+  [Threading Model](threading-model.md)

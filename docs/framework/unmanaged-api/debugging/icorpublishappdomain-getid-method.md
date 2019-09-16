@@ -23,13 +23,13 @@ Gets the unique identifier for this [ICorPublishAppDomain](../../../../docs/fram
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetID (  
     [out] ULONG32   *puId  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `puId`  
  [out] A pointer to the identifier of the application domain.  
   
@@ -46,4 +46,5 @@ HRESULT GetID (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishAppDomain Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md)

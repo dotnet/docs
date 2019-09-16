@@ -10,9 +10,10 @@ A null value has been supplied for an argument that must have a value.
   
 ## To correct this error  
   
--   You might have tried to use an object without providing an instance of the object. In such a case, use the `New` keyword to create the instance.  
+- You might have tried to use an object without providing an instance of the object. In such a case, use the `New` keyword to create the instance.  
   
--   Check that the value is calculated correctly.  
+- Check that the value is calculated correctly.  
   
 ## See also
+
 - <xref:System.NullReferenceException>

@@ -26,9 +26,9 @@ Windows Communication Foundation (WCF) clients, like Windows Communication Found
   
  Because of the security issues involved, it is strongly recommended that:  
   
--   You use an application configuration file to set the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true`.  
+- You use an application configuration file to set the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true`.  
   
--   You do so only in controlled debugging scenarios.  
+- You do so only in controlled debugging scenarios.  
   
  The following code example shows a client configuration file that instructs WCF to return managed exception information from a client callback object in SOAP messages.  
   
@@ -38,4 +38,5 @@ Windows Communication Foundation (WCF) clients, like Windows Communication Found
  You can use the <xref:System.ServiceModel.Description.ClientViaBehavior> behavior to specify the Uniform Resource Identifier for which the transport channel should be created. Use this behavior when the immediate network destination is not the intended processor of the message. This enables multiple-hop conversations when the calling application does not necessarily know the ultimate destination or when the destination `Via` header is not an address.  
   
 ## See also
+
 - [Specifying Service Run-Time Behavior](../../../docs/framework/wcf/specifying-service-run-time-behavior.md)

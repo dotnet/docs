@@ -23,13 +23,13 @@ Gets an interface pointer to the process in which this ICorDebugAssembly instanc
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess (  
     [out] ICorDebugProcess **ppProcess  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppProcess`  
  [out] A pointer to an ICorDebugProcess interface that represents the process.  
   

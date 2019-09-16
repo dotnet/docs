@@ -15,9 +15,9 @@ The XML Document Object Model (DOM) is completely namespace-aware. Only namespac
   
  Therefore, for all methods that take a name parameter, these methods also take a prefix to qualify the name. The name parameter, such as the `A:b` in the **setAttribute** DOM Level 1 method, is parsed as follows:  
   
--   If there are no colon (:) characters, then the local name is set to the `name` parameter, and the prefix and NamespaceURI are empty strings.  
+- If there are no colon (:) characters, then the local name is set to the `name` parameter, and the prefix and NamespaceURI are empty strings.  
   
--   If a colon is found, then the name is split into two parts based on the position of the first colon character. The prefix is set to the string found before the colon, and local name is set to the string found after the colon. For methods that do not take a NamespaceURI value, the NamespaceURI is not resolved and remains set to empty string. Otherwise, the NamespaceURI is set to the string passed to the method. If the prefix is undefined, then the **Save** method and **InnerXml** and **OuterXml** properties fail.  
+- If a colon is found, then the name is split into two parts based on the position of the first colon character. The prefix is set to the string found before the colon, and local name is set to the string found after the colon. For methods that do not take a NamespaceURI value, the NamespaceURI is not resolved and remains set to empty string. Otherwise, the NamespaceURI is set to the string passed to the method. If the prefix is undefined, then the **Save** method and **InnerXml** and **OuterXml** properties fail.  
   
 ## See also
 

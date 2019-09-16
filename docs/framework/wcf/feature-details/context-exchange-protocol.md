@@ -15,16 +15,16 @@ This section describes the context exchange protocol introduced in Windows Commu
   
  The following is a list of invariants in this mode:  
   
--   Any attempt to reset the context using `SetContext` after the channel has been opened throws an <xref:System.InvalidOperationException>.  
+- Any attempt to reset the context using `SetContext` after the channel has been opened throws an <xref:System.InvalidOperationException>.  
   
--   Any attempt to send context by using the <xref:System.ServiceModel.Channels.ContextMessageProperty> in an outgoing message throws an <xref:System.InvalidOperationException>.  
+- Any attempt to send context by using the <xref:System.ServiceModel.Channels.ContextMessageProperty> in an outgoing message throws an <xref:System.InvalidOperationException>.  
   
--   If a message is received from server with a specific context, when the channel has already been initialized with a specific context, this results in a <xref:System.ServiceModel.ProtocolException>.  
+- If a message is received from server with a specific context, when the channel has already been initialized with a specific context, this results in a <xref:System.ServiceModel.ProtocolException>.  
   
     > [!NOTE]
-    >  It is appropriate to receive an initial context from the server only if the channel is opened without any context set explicitly.  
+    > It is appropriate to receive an initial context from the server only if the channel is opened without any context set explicitly.  
   
--   The <xref:System.ServiceModel.Channels.ContextMessageProperty> on incoming message is always null.  
+- The <xref:System.ServiceModel.Channels.ContextMessageProperty> on incoming message is always null.  
   
 ## Mode 2: Application Context Management  
  This is the mode when <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is set to `false`. In this mode the context channel does not manage context. It is the application's responsibility to retrieve, manage and apply context by using the <xref:System.ServiceModel.Channels.ContextMessageProperty>. Any attempt to call `GetContext` or `SetContext` results in an <xref:System.InvalidOperationException>.  
@@ -47,7 +47,7 @@ This section describes the context exchange protocol introduced in Windows Commu
   
  Service endpoints that require support for the context exchange protocol can make it explicit in the published policy. Two new policy assertions have been introduced to represent the requirement for the client to support the context exchange protocol at the SOAP level or to enable HTTP cookie support. Generation of these assertions into the policy on the service is controlled by the value of the <xref:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism%2A> property as follows:  
   
--   For <xref:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader>, the following assertion is generated:  
+- For <xref:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader>, the following assertion is generated:  
   
     ```xml  
     <IncludeContext   
@@ -55,11 +55,12 @@ This section describes the context exchange protocol introduced in Windows Commu
     protectionLevel="Sign" />  
     ```  
   
--   For <xref:System.ServiceModel.Channels.ContextExchangeMechanism.HttpCookie>, the following assertion is generated:  
+- For <xref:System.ServiceModel.Channels.ContextExchangeMechanism.HttpCookie>, the following assertion is generated:  
   
     ```xml  
     <HttpUseCookie xmlns="http://schemas.xmlsoap.org/soap/http"/>  
     ```  
   
 ## See also
+
 - [Web Services Protocols Interoperability Guide](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md)

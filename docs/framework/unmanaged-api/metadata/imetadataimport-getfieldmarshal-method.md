@@ -23,7 +23,7 @@ Gets a pointer to the native, unmanaged type of the field represented by the spe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFieldMarshal (  
    [in]  mdToken             tk,   
    [out] PCCOR_SIGNATURE     *ppvNativeType,  
@@ -31,7 +31,7 @@ HRESULT GetFieldMarshal (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The metadata token that represents the field to get interop marshaling information for.  
   
@@ -51,5 +51,6 @@ HRESULT GetFieldMarshal (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

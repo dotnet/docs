@@ -23,14 +23,14 @@ Gets a GUID from the row at the specified index.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGuid (   
     [in]  ULONG       ixGuid,  
     [out] const GUID  **ppGUID  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixGuid`  
  [in] The index of the row from which to get the GUID.  
   
@@ -50,5 +50,6 @@ HRESULT GetGuid (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

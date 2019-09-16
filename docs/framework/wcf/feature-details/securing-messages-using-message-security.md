@@ -7,7 +7,7 @@ ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
 This section discusses WCF message security when using <xref:System.ServiceModel.NetMsmqBinding>.  
   
 > [!NOTE]
->  Before reading through this topic, it is recommended that you read [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md).  
+> Before reading through this topic, it is recommended that you read [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md).  
   
  The following illustration provides a conceptual model of queued communication using WCF. This illustration and terminology are used to explain  
   
@@ -58,6 +58,7 @@ This section discusses WCF message security when using <xref:System.ServiceModel
  When using both transport security and message security, the certificate used to secure the message both at the transport and the SOAP message level must be the same.  
   
 ## See also
+
 - [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)
 - [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)
 - [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)

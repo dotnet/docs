@@ -22,7 +22,7 @@ Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](../../.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CLR_DEBUGGING_PROCESS_FLAGS  
 {  
    CLR_DEBUGGING_MANAGED_EVENT_PENDING = 1,  
@@ -52,5 +52,6 @@ typedef enum CLR_DEBUGGING_PROCESS_FLAGS
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

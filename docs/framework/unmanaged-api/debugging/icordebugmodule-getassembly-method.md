@@ -23,13 +23,13 @@ Gets the containing assembly for this module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssembly(  
     [out] ICorDebugAssembly **ppAssembly  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssembly`  
  [out] A pointer to an ICorDebugAssembly object that represents the assembly containing this module.  
   

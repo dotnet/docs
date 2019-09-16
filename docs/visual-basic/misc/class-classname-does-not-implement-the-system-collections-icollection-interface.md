@@ -10,7 +10,8 @@ The class does not implement the `System.Collections.ICollection` interface, whi
   
 ## To correct this error  
   
-1.  Reinstall Visual Studio.  
+1. Reinstall Visual Studio.  
   
 ## See also
+
 - <xref:System.Collections.ICollection>

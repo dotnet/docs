@@ -24,7 +24,7 @@ Creates a new instance of a class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SpawnInstance (
    [in] int                  vFunc, 
    [in] IWbemClassObject*    ptr, 
@@ -63,17 +63,15 @@ This function wraps a call to the [IWbemClassObject::SpawnInstance](/windows/des
 
 `ptr` must be a class definition obtained from Windows Management. (Note that spawning an instance from an instance is supported but the returned instance is empty.) You then use this class definition to create new instances. A call to the [PutInstanceWmi](putinstancewmi.md) function is required if you intend to write the instance to Windows Management.
 
-
-
-
 The new object returned in `ppNewClass` automatically becomes a subclass of the current object. This behavior cannot be overridden. There is no other method by which subclasses (derived classes) can be created.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

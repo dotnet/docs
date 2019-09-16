@@ -23,7 +23,7 @@ Gets the context for the given thread in this process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext(  
     [in] DWORD threadID,  
     [in] ULONG32 contextSize,  
@@ -31,7 +31,7 @@ HRESULT GetThreadContext(
     BYTE context[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The ID of the thread for which to retrieve the context.  
   

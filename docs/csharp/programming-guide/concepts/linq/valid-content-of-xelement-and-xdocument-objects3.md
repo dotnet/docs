@@ -11,35 +11,35 @@ This topic describes the valid arguments that can be passed to constructors and 
   
  When adding simple content, various types can be passed to this method. Valid types include the following:  
   
--   <xref:System.String>  
+- <xref:System.String>  
   
--   <xref:System.Double>  
+- <xref:System.Double>  
   
--   <xref:System.Single>  
+- <xref:System.Single>  
   
--   <xref:System.Decimal>  
+- <xref:System.Decimal>  
   
--   <xref:System.Boolean>  
+- <xref:System.Boolean>  
   
--   <xref:System.DateTime>  
+- <xref:System.DateTime>  
   
--   <xref:System.TimeSpan>  
+- <xref:System.TimeSpan>  
   
--   <xref:System.DateTimeOffset>  
+- <xref:System.DateTimeOffset>  
   
--   Any type that implements `Object.ToString`.  
+- Any type that implements `Object.ToString`.  
   
--   Any type that implements <xref:System.Collections.Generic.IEnumerable%601>.  
+- Any type that implements <xref:System.Collections.Generic.IEnumerable%601>.  
   
  When adding complex content, various types can be passed to this method:  
   
--   <xref:System.Xml.Linq.XObject>  
+- <xref:System.Xml.Linq.XObject>  
   
--   <xref:System.Xml.Linq.XNode>  
+- <xref:System.Xml.Linq.XNode>  
   
--   <xref:System.Xml.Linq.XAttribute>  
+- <xref:System.Xml.Linq.XAttribute>  
   
--   Any type that implements <xref:System.Collections.Generic.IEnumerable%601>  
+- Any type that implements <xref:System.Collections.Generic.IEnumerable%601>  
   
  If an object implements <xref:System.Collections.Generic.IEnumerable%601>, the collection in the object is enumerated, and all items in the collection are added. If the collection contains <xref:System.Xml.Linq.XNode> or <xref:System.Xml.Linq.XAttribute> objects, each item in the collection is added separately. If the collection contains text (or objects that are converted to text), the text in the collection is concatenated and added as a single text node.  
   
@@ -56,15 +56,15 @@ This topic describes the valid arguments that can be passed to constructors and 
   
  Valid content for a document includes the following:  
   
--   Zero or one <xref:System.Xml.Linq.XDocumentType> objects. The document types must come before the element.  
+- Zero or one <xref:System.Xml.Linq.XDocumentType> objects. The document types must come before the element.  
   
--   Zero or one element.  
+- Zero or one element.  
   
--   Zero or more comments.  
+- Zero or more comments.  
   
--   Zero or more processing instructions.  
+- Zero or more processing instructions.  
   
--   Zero or more text nodes that contain only white space.  
+- Zero or more text nodes that contain only white space.  
   
 ## Constructors and Functions that Allow Adding Content  
  The following methods allow you to add child content to an <xref:System.Xml.Linq.XElement> or an <xref:System.Xml.Linq.XDocument>:  
@@ -84,4 +84,4 @@ This topic describes the valid arguments that can be passed to constructors and 
   
 ## See also
 
-- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Creating XML Trees (C#)](./linq-to-xml-overview.md)

@@ -16,7 +16,7 @@ Allows placement of code within a XAML production. Such code can either be compi
   
 ## XAML Object Element Usage  
   
-```  
+```xaml  
 <x:Code>  
    // code instructions, usually enclosed by CDATA...  
 </x:Code>  
@@ -32,17 +32,18 @@ Allows placement of code within a XAML production. Such code can either be compi
 ## WPF Usage Notes  
  Code declared within `x:Code` for WPF has several notable limitations:  
   
--   The `x:Code` directive element must be an immediate child element of the root element of the XAML production.  
+- The `x:Code` directive element must be an immediate child element of the root element of the XAML production.  
   
--   [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md) must be provided on the parent root element.  
+- [x:Class Directive](x-class-directive.md) must be provided on the parent root element.  
   
--   The code placed within `x:Code` will be treated by compilation to be within the scope of the partial class that is already being created for that XAML page. Therefore all code you define must be members or variables of that partial class.  
+- The code placed within `x:Code` will be treated by compilation to be within the scope of the partial class that is already being created for that XAML page. Therefore all code you define must be members or variables of that partial class.  
   
--   You cannot define additional classes, other than by nesting a class inside the partial class (nesting is allowed, but it is not typical because nested classes cannot be referenced in XAML). CLR namespaces other than the namespace that is used for the existing partial class cannot be defined or added to.  
+- You cannot define additional classes, other than by nesting a class inside the partial class (nesting is allowed, but it is not typical because nested classes cannot be referenced in XAML). CLR namespaces other than the namespace that is used for the existing partial class cannot be defined or added to.  
   
--   References to code entities outside the partial class CLR namespace must all be fully qualified. If members being declared are overrides to the partial class overridable members, this must be specified with the language-specific override keyword. If members declared in `x:Code` scope conflict with members of the partial class created out of the XAML, in such a way that the compiler reports the conflict, the XAML file cannot compile or load.  
+- References to code entities outside the partial class CLR namespace must all be fully qualified. If members being declared are overrides to the partial class overridable members, this must be specified with the language-specific override keyword. If members declared in `x:Code` scope conflict with members of the partial class created out of the XAML, in such a way that the compiler reports the conflict, the XAML file cannot compile or load.  
   
 ## See also
-- [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)
-- [Code-Behind and XAML in WPF](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
-- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+
+- [x:Class Directive](x-class-directive.md)
+- [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)

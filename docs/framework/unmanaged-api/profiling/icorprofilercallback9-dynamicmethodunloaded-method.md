@@ -18,13 +18,13 @@ Notifies the profiler whenever a dynamic method is garbage collected and subsequ
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DynamicMethodUnloaded(  
      [in]  FunctionID  functionId
 );  
 ```  
   
-#### Parameters  
+## Parameters  
 [in] `functionId`  
 The identifier of the in-memory function that has been garbage collected and unloaded.   
 
@@ -38,6 +38,7 @@ The identifier of the in-memory function that has been garbage collected and unl
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [ICorProfilerCallback8.DynamicMethodJITCompilationStarted Method](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)
 - [ICorProfilerCallback8.DynamicMethodJITCompilationFinished Method](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)
 - [ICorProfilerCallback9 Interface](icorprofilercallback9-interface.md)

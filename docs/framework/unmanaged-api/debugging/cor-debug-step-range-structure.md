@@ -24,7 +24,7 @@ Contains the offset information for a range of code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct {  
     ULONG32 startOffset;  
     ULONG32 endOffset;  
@@ -48,6 +48,7 @@ typedef struct {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [StepRange Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-steprange-method.md)
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

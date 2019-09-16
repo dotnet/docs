@@ -1,8 +1,6 @@
 ---
 title: Common Type System & Common Language Specification
 description: Learn how the Common Type System (CTS) and Common Language Specification (CLS) make it possible for .NET to support multiple languages.
-author: blackdwarf
-ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 3b1f5725-ac94-4f17-8e5f-244442438a4d
@@ -17,10 +15,10 @@ To start from the beginning, remember that a .NET implementation is _language ag
 
 In order to do this transparently, there has to be a common way to describe all supported types. This is what the Common Type System (CTS) is in charge of doing. It was made to do several things:
 
-*   Establish a framework for cross-language execution.
-*   Provide an object-oriented model to support implementing various languages on a .NET implementation.
-*   Define a set of rules that all languages must follow when it comes to working with types.
-*   Provide a library that contains the basic primitive types that are used in application development (such as, `Boolean`, `Byte`, `Char` etc.)
+* Establish a framework for cross-language execution.
+* Provide an object-oriented model to support implementing various languages on a .NET implementation.
+* Define a set of rules that all languages must follow when it comes to working with types.
+* Provide a library that contains the basic primitive types that are used in application development (such as, `Boolean`, `Byte`, `Char` etc.)
 
 CTS defines two main kinds of types that should be supported: reference and value types. Their names point to their definitions.
 
@@ -30,11 +28,11 @@ Value types are the opposite, where the objects are represented by their values.
 
 CTS defines several categories of types, each with their specific semantics and usage:
 
-*   Classes
-*   Structures
-*   Enums
-*   Interfaces
-*   Delegates
+* Classes
+* Structures
+* Enums
+* Interfaces
+* Delegates
 
 CTS also defines all other properties of the types, such as access modifiers, what are valid type members, how inheritance and overloading works and so on. Unfortunately, going deep into any of those is beyond the scope of an introductory article such as this, but you can consult [More resources](#more-resources) section at the end for links to more in-depth content that covers these topics.
 
@@ -48,5 +46,5 @@ You can consult the documents in the [More Resources](#more-resources) section b
 
 ## More resources
 
-*   [Common Type System](./base-types/common-type-system.md)
-*   [Common Language Specification](language-independence-and-language-independent-components.md)
+* [Common Type System](./base-types/common-type-system.md)
+* [Common Language Specification](language-independence-and-language-independent-components.md)

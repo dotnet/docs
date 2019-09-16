@@ -8,11 +8,11 @@ The registry key that has been specified does not exist.
   
 ## To correct this error  
   
--   Check the registry key that you are supplying to make sure you have specified the path correctly.  
+- Check the registry key that you are supplying to make sure you have specified the path correctly.  
   
--   Create the registry key before attempting to write to it.  
+- Create the registry key before attempting to write to it.  
   
 ## See also
+
 - <xref:Microsoft.Win32.RegistryKey>
 - [My.Computer.Registry](xref:Microsoft.VisualBasic.MyServices.RegistryProxy)
-

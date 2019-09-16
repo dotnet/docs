@@ -11,31 +11,31 @@ Windows Communication Foundation (WCF) Service Publishing assists you in progres
 
 WCF Service Publishing supports publishing WCF services created from the set of WCF service library templates, and their corresponding item templates, which include the following:
 
--   WCF Service Library template with item template.
+- WCF Service Library template with item template.
 
--   Syndication Service Library.
+- Syndication Service Library.
 
-You can find these service templates by choosing **File** > **New Project** > [**Visual Basic** or **Visual C#**] > **WCF**. For other WCF templates in this location (including WCF Workflow Service Application and WCF Service Application), you can publish using [One-Click publishing for web applications](https://msdn.microsoft.com/library/dd465337\(v=vs.110\).aspx).
+You can find these service templates by choosing **File** > **New Project** > [**Visual Basic** or **Visual C#**] > **WCF**. For other WCF templates in this location (including WCF Workflow Service Application and WCF Service Application), you can publish using [One-Click publishing for web applications](https://docs.microsoft.com/previous-versions/aspnet/dd465337(v=vs.110)).
 
 The service can be published to the following target locations.
 
--   Local IIS.
+- Local IIS.
 
--   File System.
+- File System.
 
--   FTP Site.
+- FTP Site.
 
 ## Using WCF Service Publishing
 
 Perform the following steps to deploy a service implementation:
 
-1.  Open Visual Studio with elevated privileges (right-click the executable and choose **Run as administrator** to open it).  If you are using IIS 7.0 or later, ensure that you have installed the "IIS Metabase and IIS6 Configuration Compatibility" component using "Turn Windows features on or off" in Control Panel.
+1. Open Visual Studio with elevated privileges (right-click the executable and choose **Run as administrator** to open it).  If you are using IIS 7.0 or later, ensure that you have installed the "IIS Metabase and IIS6 Configuration Compatibility" component using "Turn Windows features on or off" in Control Panel.
 
-2.  Open a service project, select **Build** > **Publish \<Project Name>** from the main menu, or right-click the project in **Solution Explorer** and click **Publish**.
+2. Open a service project, select **Build** > **Publish \<Project Name>** from the main menu, or right-click the project in **Solution Explorer** and click **Publish**.
 
-3.  The **Publish** window appears. Click the **…**. button to specify the target location that the service should be deployed to. You can select to deploy the application to local IIS, File System, or FTP Site. If deploying the application to local IIS, you can select your website and create your web application under it, by clicking the **Create New Web Application** icon at the top right corner.
+3. The **Publish** window appears. Click the **…**. button to specify the target location that the service should be deployed to. You can select to deploy the application to local IIS, File System, or FTP Site. If deploying the application to local IIS, you can select your website and create your web application under it, by clicking the **Create New Web Application** icon at the top right corner.
 
-4.  After you click **Publish** in the main window, Visual Studio deploys the application to the specified target location and copies the Web.config, .svc, and assembly files to the target directory. . The name of .svc will be "ProjectName.ServiceName.svc". After the service is published successfully, you can find a hotlink in the Visual Studio Output window, which looks similar to "Connecting to `http://localhost/WebApplicationFolderName...`". You can press CTRL and click the link to open a browser page inside Visual Studio to view the service directory structure.
+4. After you click **Publish** in the main window, Visual Studio deploys the application to the specified target location and copies the Web.config, .svc, and assembly files to the target directory. . The name of .svc will be "ProjectName.ServiceName.svc". After the service is published successfully, you can find a hotlink in the Visual Studio Output window, which looks similar to "Connecting to `http://localhost/WebApplicationFolderName...`". You can press CTRL and click the link to open a browser page inside Visual Studio to view the service directory structure.
 
      If you cannot browse to the site, it may because directory browser is not enabled in IIS. Please follow the tips in the "Things you can try" section to enable it. Alternatively, you can directly type `http://localhost/WebApplicationFolderName/ProjectName.ServiceName.svc` to view your service page.
 
@@ -57,9 +57,9 @@ If you choose to deploy your application to local IIS, you may encounter errors 
 
  The generated Web.config file includes Web sections that are useful for Web hosting, and the content of App.config for the WCF service library with the following changes:
 
--   The base address is excluded.
+- The base address is excluded.
 
--   Settings in the `<diagnostics>` element are excluded to preserve the tracing settings of the target platform.
+- Settings in the `<diagnostics>` element are excluded to preserve the tracing settings of the target platform.
 
 ## Publishing WCF services with non-HTTP Bindings to IIS
  If you are using IIS7.0 or later, you can publish WCF services with non-HTTP bindings to IIS. You need to do some pre-configurations. For more information, please see the topics at  [Hosting in Windows Process Activation Service](../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md).

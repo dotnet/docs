@@ -23,7 +23,7 @@ Gets the specified number of ICorDebugProcess instances from the enumeration, st
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in]  ULONG celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  
@@ -32,11 +32,11 @@ HRESULT Next (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of `ICorDebugProcess` instances to be retrieved.  
   
- `processess`  
+ `processes`  
  [out] An array of pointers, each of which points to an `ICorDebugProcess` object that represents a process.  
   
  `pceltFetched`  

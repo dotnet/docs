@@ -25,13 +25,13 @@ Gets a value that indicates whether the object represented by this ICorDebugHeap
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsValid (  
     [out] BOOL    *pbValid  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbValid`  
  [out] A pointer to a Boolean value that indicates whether this value on the heap is valid.  
   

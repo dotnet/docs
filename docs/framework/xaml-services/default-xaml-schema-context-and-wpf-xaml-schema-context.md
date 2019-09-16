@@ -40,24 +40,24 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
   
 #### XAML reader input (loose XAML)  
   
-1.  The XAML schema context iterates through the <xref:System.AppDomain> of the application, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly. If a match is found, that assembly is used for resolution.  
+1. The XAML schema context iterates through the <xref:System.AppDomain> of the application, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly. If a match is found, that assembly is used for resolution.  
   
-2.  Otherwise, one of the following techniques based on CLR <xref:System.Reflection.Assembly> API are used to load an assembly:  
+2. Otherwise, one of the following techniques based on CLR <xref:System.Reflection.Assembly> API are used to load an assembly:  
   
-    -   If the name is qualified in the mapping, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
+    - If the name is qualified in the mapping, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
-    -   If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
+    - If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
-    -   If the name is unqualified in the mapping, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
+    - If the name is unqualified in the mapping, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
   
 #### XamlBuildTask  
  `XamlBuildTask` is used for Windows Communication Foundation (WCF) and Windows Workflow Foundation.  
   
  Note that assembly references through `XamlBuildTask` are always fully qualified.  
   
-1.  Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
+1. Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
-2.  If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
+2. If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
 #### BAML (PresentationBuildTask)  
  There are two aspects to assembly-loading for BAML: loading the initial assembly that contains the BAML as a component, and loading the type-backing assemblies for any types referenced by the BAML production.  
@@ -65,22 +65,23 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
 ##### Assembly load for initial markup:  
  The reference to the assembly to load the markup from is always unqualified.  
   
-1.  The WPF XAML schema context iterates through the <xref:System.AppDomain> of the WPF application, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly. If a match is found, that assembly is used for resolution.  
+1. The WPF XAML schema context iterates through the <xref:System.AppDomain> of the WPF application, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly. If a match is found, that assembly is used for resolution.  
   
-2.  If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
+2. If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
 ##### Assembly references by BAML types:  
  Assembly references for types used in the BAML production are always fully qualified, as an output of the build task.  
   
-1.  The WPF XAML schema context iterates through the <xref:System.AppDomain> of the WPF application, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly. If a match is found, that assembly is used for resolution.  
+1. The WPF XAML schema context iterates through the <xref:System.AppDomain> of the WPF application, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly. If a match is found, that assembly is used for resolution.  
   
-2.  Otherwise, one of the following techniques is used to load an assembly:  
+2. Otherwise, one of the following techniques is used to load an assembly:  
   
-    -   Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
+    - Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
-    -   If a short name + public key token combination match the assembly that the BAML was loaded from, use that assembly.  
+    - If a short name + public key token combination match the assembly that the BAML was loaded from, use that assembly.  
   
-    -   Use short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
+    - Use short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
 ## See also
-- [Understanding XAML Node Stream Structures and Concepts](../../../docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md)
+
+- [Understanding XAML Node Stream Structures and Concepts](understanding-xaml-node-stream-structures-and-concepts.md)

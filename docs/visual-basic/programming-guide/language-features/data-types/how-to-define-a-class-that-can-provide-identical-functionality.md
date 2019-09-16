@@ -36,29 +36,29 @@ You can define a class from which you can create objects that provide identical 
   
 ### To define a class with a type parameter  
   
-1.  Define the class in the normal way.  
+1. Define the class in the normal way.  
   
-2.  Add `(Of` *typeparameter*`)` immediately after the class name to specify a type parameter.  
+2. Add `(Of` *typeparameter*`)` immediately after the class name to specify a type parameter.  
   
-3.  If you have more than one type parameter, make a comma-separated list inside the parentheses. Do not repeat the `Of` keyword.  
+3. If you have more than one type parameter, make a comma-separated list inside the parentheses. Do not repeat the `Of` keyword.  
   
-4.  If your code performs operations on a type parameter other than simple assignment, follow that type parameter with an `As` clause to add one or more *constraints*. A constraint guarantees that the type supplied for that type parameter satisfies a requirement such as the following:  
+4. If your code performs operations on a type parameter other than simple assignment, follow that type parameter with an `As` clause to add one or more *constraints*. A constraint guarantees that the type supplied for that type parameter satisfies a requirement such as the following:  
   
-    -   Supports an operation, such as `>`, that your code performs  
+    - Supports an operation, such as `>`, that your code performs  
   
-    -   Supports a member, such as a method, that your code accesses  
+    - Supports a member, such as a method, that your code accesses  
   
-    -   Exposes a parameterless constructor  
+    - Exposes a parameterless constructor  
   
      If you do not specify any constraints, the only operations and members your code can use are those supported by the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). For more information, see [Type List](../../../../visual-basic/language-reference/statements/type-list.md).  
   
-5.  Identify every class member that is to be declared with a supplied type, and declare it `As` `typeparameter`. This applies to internal storage, procedure parameters, and return values.  
+5. Identify every class member that is to be declared with a supplied type, and declare it `As` `typeparameter`. This applies to internal storage, procedure parameters, and return values.  
   
-6.  Be sure your code uses only operations and methods that are supported by any data type it can supply to `itemType`.  
+6. Be sure your code uses only operations and methods that are supported by any data type it can supply to `itemType`.  
   
-     The following example defines a class that manages a very simple list. It holds the list in the internal array `items`, and the using code can declare the data type of the list elements. A parameterized constructor allows the using code to set the upper bound of `items`, and the default constructor sets this to 9 (for a total of 10 items).  
+     The following example defines a class that manages a very simple list. It holds the list in the internal array `items`, and the using code can declare the data type of the list elements. A parameterized constructor allows the using code to set the upper bound of `items`, and the parameterless constructor sets this to 9 (for a total of 10 items).  
   
-     [!code-vb[VbVbalrDataTypes#7](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/how-to-define-a-class-that-can-provide-identical-functionality_1.vb)]  
+     [!code-vb[VbVbalrDataTypes#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#7)]  
   
      You can declare a class from `simpleList` to hold a list of `Integer` values, another class to hold a list of `String` values, and another to hold `Date` values. Except for the data type of the list members, objects created from all these classes behave identically.  
   
@@ -66,9 +66,10 @@ You can define a class from which you can create objects that provide identical 
   
      You can test the class `simpleList` with the following code.  
   
-     [!code-vb[VbVbalrDataTypes#8](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/how-to-define-a-class-that-can-provide-identical-functionality_2.vb)]  
+     [!code-vb[VbVbalrDataTypes#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#8)]  
   
 ## See also
+
 - [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
 - [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md)

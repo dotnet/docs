@@ -18,19 +18,18 @@ You can easily share data across forms using the <xref:System.Windows.Forms.Bind
  The following code example demonstrates how to share a <xref:System.Windows.Forms.BindingSource> and its bound data across forms. In this example, the shared <xref:System.Windows.Forms.BindingSource> is passed to the constructor of the child form. The child form allows the user to edit the data for the currently selected item in the main form.  
   
 > [!NOTE]
->  The <xref:System.Windows.Forms.BindingSource.BindingComplete> event for the <xref:System.Windows.Forms.BindingSource> component is handled in the example to ensure that the two forms remain synchronized. For more information about why this is done, see [How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized](../../../../docs/framework/winforms/multiple-controls-bound-to-data-source-synchronized.md).  
+> The <xref:System.Windows.Forms.BindingSource.BindingComplete> event for the <xref:System.Windows.Forms.BindingSource> component is handled in the example to ensure that the two forms remain synchronized. For more information about why this is done, see [How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized](../multiple-controls-bound-to-data-source-synchronized.md).  
   
- [!code-csharp[System.Windows.Forms.BindingSourceMultipleForms#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleForms/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.BindingSourceMultipleForms#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleForms/VB/Form1.vb#1)]  
+ [!code-csharp[System.Windows.Forms.BindingSourceMultipleForms#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleForms/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.BindingSourceMultipleForms#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleForms/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Windows.Forms, System.Drawing, System.Data, and System.Xml assemblies.  
-  
- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
+- References to the System, System.Windows.Forms, System.Drawing, System.Data, and System.Xml assemblies.  
   
 ## See also
-- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)
-- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)
-- [How to: Handle Errors and Exceptions that Occur with Databinding](../../../../docs/framework/winforms/controls/how-to-handle-errors-and-exceptions-that-occur-with-databinding.md)
+
+- [BindingSource Component](bindingsource-component.md)
+- [Windows Forms Data Binding](../windows-forms-data-binding.md)
+- [How to: Handle Errors and Exceptions that Occur with Databinding](how-to-handle-errors-and-exceptions-that-occur-with-databinding.md)

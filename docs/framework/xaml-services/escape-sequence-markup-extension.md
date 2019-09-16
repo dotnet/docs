@@ -17,13 +17,13 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
   
 ## XAML Attribute Usage  
   
-```xml  
+```xaml  
 <object property="{} literalValue" .../>  
 ```  
   
 ## XAML Property Element Usage  
   
-```  
+```xaml  
 <object>  
   <object.property>  
     {} literalValue  
@@ -50,8 +50,9 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
   
  The escape sequence ({}) is frequently required when specifying an XML type that must include a namespace qualifier in a location where a XAML markup extension might appear. This includes the start of a XAML attribute value, and in a markup extension, immediately after an equal sign (=). The following example shows escape sequences for an XML namespace that appears at the start of a XAML attribute value.  
   
- [!code-xaml[XLINQExample#StackPanelResources](../../../samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml#stackpanelresources)]  
+ [!code-xaml[XLINQExample#StackPanelResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml#stackpanelresources)]  
   
 ## See also
-- [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)
-- [XML Character Entities and XAML](../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md)
+
+- [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md)
+- [XML Character Entities and XAML](xml-character-entities-and-xaml.md)

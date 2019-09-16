@@ -16,11 +16,11 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
   
  Close button with its tooltip displayed  
   
- ![ToolTip screen shot](../../../../docs/framework/wpf/controls/media/ss-ctl-tooltip.png "SS_CTL_tooltip")  
+ ![ToolTip screenshot](./media/ss-ctl-tooltip.png "SS_CTL_tooltip")  
   
 ## In This Section  
- [ToolTip Overview](../../../../docs/framework/wpf/controls/tooltip-overview.md)  
-  [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)  
+ [ToolTip Overview](tooltip-overview.md)  
+  [How-to Topics](tooltip-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.ToolTip>  
@@ -28,5 +28,5 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
   <xref:System.Windows.Controls.Primitives.Popup>  
   
 ## Related Sections  
- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)  
-  [How-to Topics](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)
+ [Popup Overview](popup-overview.md)  
+  [How-to Topics](popup-how-to-topics.md)

@@ -9,19 +9,19 @@ In .NET 4 the Workflow Team released an all new Workflow engine in the <xref:Sys
 ## Obsolete namespaces and tools  
  The following assemblies have one or more public types that will be deprecated:  
   
--   System.Workflow.Activities.dll  
+- System.Workflow.Activities.dll  
   
--   System.Workflow.ComponentModel.dll  
+- System.Workflow.ComponentModel.dll  
   
--   System.Workflow.Runtime.dll  
+- System.Workflow.Runtime.dll  
   
--   System.WorkflowServices.dll  
+- System.WorkflowServices.dll  
   
--   Microsoft.Workflow.DebugController.dll  
+- Microsoft.Workflow.DebugController.dll  
   
--   Microsoft.Workflow.Compiler.exe  
+- Microsoft.Workflow.Compiler.exe  
   
--   Wfc.exe  
+- Wfc.exe  
   
  As a result, customers who are using the deprecated WF 3 APIs will encounter build warnings with a message similar to the following:  
   

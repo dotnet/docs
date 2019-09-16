@@ -22,7 +22,7 @@ Contains values that specify the characteristics of the memory that is being all
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     MALLOC_THREADSAFE = 0x1,  
     MALLOC_EXECUTABLE = 0x2,  
@@ -46,4 +46,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

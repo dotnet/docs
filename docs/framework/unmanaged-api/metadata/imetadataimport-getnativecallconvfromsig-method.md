@@ -23,7 +23,7 @@ Gets the native calling convention for the method that is represented by the spe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNativeCallConvFromSig (  
    [in]  void const  *pvSig,  
    [in]  ULONG       cbSig,  
@@ -31,7 +31,7 @@ HRESULT GetNativeCallConvFromSig (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pvSig`  
  [in] A pointer to the metadata signature of the method to return the calling convention for.  
   
@@ -51,6 +51,7 @@ HRESULT GetNativeCallConvFromSig (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - <xref:System.Runtime.InteropServices.CallingConvention>
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

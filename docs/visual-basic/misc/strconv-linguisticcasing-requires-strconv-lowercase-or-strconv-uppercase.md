@@ -10,8 +10,4 @@ You have attempted to use `StrConv.LinguisticCasing`, which is only valid in com
   
 ## To correct this error  
   
-1.  Use `StrConv.LowerCase` or `StrConv.UpperCase` in conjunction with `StrConv.LinguisticCasing`.  
-  
-## See also
-
-- [StrConv Constant Changes in Visual Basic .NET](https://msdn.microsoft.com/library/7a8c2781-2716-40dd-90c1-96c1548516e2)
+1. Use `StrConv.LowerCase` or `StrConv.UpperCase` in conjunction with `StrConv.LinguisticCasing`.  

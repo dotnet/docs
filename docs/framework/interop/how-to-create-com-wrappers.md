@@ -12,9 +12,9 @@ ms.author: "ronpet"
 
 You can create Component Object Model (COM) wrappers by using Visual Studio 2005 features or the .NET Framework tools Tlbimp.exe and Regasm.exe. Both methods generate two types of COM wrappers:
 
--   A [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md) from a type library to run a COM object in managed code.
+- A [Runtime Callable Wrapper](../../standard/native-interop/runtime-callable-wrapper.md) from a type library to run a COM object in managed code.
 
--   A [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md) with the required registry settings to run a managed object in a native application.
+- A [COM Callable Wrapper](../../standard/native-interop/com-callable-wrapper.md) with the required registry settings to run a managed object in a native application.
 
 In Visual Studio 2005, you can add the COM wrapper as a reference to your project.
 
@@ -22,24 +22,24 @@ In Visual Studio 2005, you can add the COM wrapper as a reference to your projec
 
 ### To create a runtime callable wrapper using Visual Studio
 
-1.  Open the project for your managed application.
+1. Open the project for your managed application.
 
-2.  On the **Project** menu, click **Show All Files**.
+2. On the **Project** menu, click **Show All Files**.
 
-3.  On the **Project** menu, click **Add Reference**.
+3. On the **Project** menu, click **Add Reference**.
 
-4.  In the Add Reference dialog box, click the **COM** tab, select the component you want to use, and click **OK**.
+4. In the Add Reference dialog box, click the **COM** tab, select the component you want to use, and click **OK**.
 
      In **Solution Explorer**, note that the COM component is added to the References folder in your project.
 
-You can now write code to access the COM object. You can begin by declaring the object, such as with an `Imports` statement for [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)] or a `Using` statement for [!INCLUDE[csprcslong](../../../includes/csprcslong-md.md)].
+You can now write code to access the COM object. You can begin by declaring the object, such as with an `Imports` statement for Visual Basic or a `Using` statement for C#.
 
 > [!NOTE]
 > If you want to program Microsoft Office components, first install the [Microsoft Office Primary Interop Assemblies](https://go.microsoft.com/fwlink/?LinkId=50479) (PIAs) from the Microsoft Download Center. In step 4, select the latest version of the object library available for the Office product you want, such as the **Microsoft Word 11.0 Object Library**.  
   
 ### To create a runtime callable wrapper using .NET Framework tools  
   
--   Run the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) tool.  
+- Run the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) tool.  
   
  This tool creates an assembly that contains run-time metadata for the types defined in the original type library.  
   
@@ -47,15 +47,15 @@ You can now write code to access the COM object. You can begin by declaring the 
   
 ### To create a COM callable wrapper using Visual Studio  
   
-1.  Create a Class Library project for the managed class that you want to run in native code. The class must have a default constructor.  
+1. Create a Class Library project for the managed class that you want to run in native code. The class must have a parameterless constructor.  
   
-     Verify that you have a complete four-part version number for your assembly in the AssemblyInfo file. This number is required for maintaining versioning in the Windows registry. For more information about version numbers, see [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md).  
+     Verify that you have a complete four-part version number for your assembly in the AssemblyInfo file. This number is required for maintaining versioning in the Windows registry. For more information about version numbers, see [Assembly Versioning](../../standard/assembly/versioning.md).  
   
-2.  On the **Project** menu, click **Properties**.  
+2. On the **Project** menu, click **Properties**.  
   
-3.  Click the **Compile** tab.  
+3. Click the **Compile** tab.  
   
-4.  Select the **Register for COM interop** check box.  
+4. Select the **Register for COM interop** check box.  
   
  When you build the project, the assembly is automatically registered for COM interop. If you are building a native application in Visual Studio 2005, you can use the assembly by clicking **Add Reference** on the **Project** menu.  
   
@@ -69,5 +69,5 @@ You can run Regasm.exe on an assembly located in any directory, and then run the
   
 ## See also
 
-- [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md)
-- [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)
+- [Runtime Callable Wrapper](../../standard/native-interop/runtime-callable-wrapper.md)
+- [COM Callable Wrapper](../../standard/native-interop/com-callable-wrapper.md)

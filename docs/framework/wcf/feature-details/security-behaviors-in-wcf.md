@@ -6,15 +6,15 @@ ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
 # Security Behaviors in WCF
 In Windows Communication Foundation (WCF), behaviors modify run-time behavior at the service level or at the endpoint level. (For more information about behaviors in general, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration. This topic focuses on configuring the following behaviors related to security functions:  
   
--   [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
+- [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
   
--   [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md).  
+- [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md).  
   
--   [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md).  
+- [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md).  
   
--   [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md).  
+- [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md).  
   
--   [\<serviceMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md), which also enables you to specify a secure endpoint that clients can access for metadata.  
+- [\<serviceMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md), which also enables you to specify a secure endpoint that clients can access for metadata.  
   
 ## Setting Credentials with Behaviors  
  Use the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) and [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) to set credential values for a service or client. The underlying binding configuration determines whether a credential has to be set. For example, if the security mode is set to `None`, both clients and services do not authenticate each other and require no credentials of any type.  
@@ -72,16 +72,16 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
   
  You should use the [\<allowedAudienceUris>](../../../../docs/framework/configure-apps/file-schema/wcf/allowedaudienceuris.md) collection in a federated application that utilizes a *secure token service* (STS) that issues `SamlSecurityToken` security tokens. When the STS issues the security token, it can specify the URI of the Web services for which the security token is intended by adding a `SamlAudienceRestrictionCondition` to the security token. That allows the `SamlSecurityTokenAuthenticator` for the recipient Web service to verify that the issued security token is intended for this Web service by specifying that this check should happen by doing the following:  
   
--   Set the `audienceUriMode` attribute of [\<issuedTokenAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) to `Always` or `BearerKeyOnly`.  
+- Set the `audienceUriMode` attribute of [\<issuedTokenAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) to `Always` or `BearerKeyOnly`.  
   
--   Specify the set of valid URIs, by adding the URIs to this collection. To do this, insert an [\<add>](../../../../docs/framework/configure-apps/file-schema/wcf/add-of-allowedaudienceuris.md) for each URI  
+- Specify the set of valid URIs, by adding the URIs to this collection. To do this, insert an [\<add>](../../../../docs/framework/configure-apps/file-schema/wcf/add-of-allowedaudienceuris.md) for each URI  
   
  For more information, see <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>.  
   
  For more information about using this configuration element, see [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
   
 #### Allowing Anonymous CardSpace Users  
- Setting the `AllowUntrustedRsaIssuers` attribute of the `<IssuedTokenAuthentication>` element to `true` explicitly allows any client to present a self-issued token signed with an arbitrary RSA key pair. The issuer is *untrusted* because the key has no issuer data associated with it. A [!INCLUDE[infocard](../../../../includes/infocard-md.md)] user can create a self-issued card that includes self-provided claims of identity. Use this capability with caution. To use this feature, think of the RSA public key as a more secure password that should be stored in a database along with a user name. Before allowing a client access to the service, verify the client-presented RSA public key by comparing it with the stored public key for the presented user name. This presumes that you have established a registration process whereby users can register their user names and associate them with the self-issued RSA public keys.  
+ Setting the `AllowUntrustedRsaIssuers` attribute of the `<IssuedTokenAuthentication>` element to `true` explicitly allows any client to present a self-issued token signed with an arbitrary RSA key pair. The issuer is *untrusted* because the key has no issuer data associated with it. A CardSpace user can create a self-issued card that includes self-provided claims of identity. Use this capability with caution. To use this feature, think of the RSA public key as a more secure password that should be stored in a database along with a user name. Before allowing a client access to the service, verify the client-presented RSA public key by comparing it with the stored public key for the presented user name. This presumes that you have established a registration process whereby users can register their user names and associate them with the self-issued RSA public keys.  
   
 ## Client Credentials  
  Client credentials are used to authenticate the client to services in cases where mutual authentication is required. You can use the section to specify service certificates for scenarios where the client must secure messages to a service with the service's certificate.  
@@ -108,7 +108,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  </endpointBehaviors>  
 ```  
   
-#### \<clientCertifictate> Element  
+#### \<clientCertificate> Element  
  Set the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 #### \<httpDigest>  
@@ -212,5 +212,6 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 ```  
   
 ## See also
+
 - [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
 - [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

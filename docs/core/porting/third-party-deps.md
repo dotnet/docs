@@ -2,7 +2,7 @@
 title: Analyze dependencies to port code to .NET Core
 description: Learn how to analyze external dependencies in order to port your project from .NET Framework to .NET Core.
 author: cartermp
-ms.date: 12/04/2018
+ms.date: 12/07/2018
 ms.custom: seodec18
 ---
 # Analyze your dependencies to port code to .NET Core
@@ -87,13 +87,13 @@ To suppress the warning by editing the project file, find the `PackageReference`
 
 For more information on how to suppress compiler warnings in Visual Studio, see [Suppressing warnings for NuGet packages](/visualstudio/ide/how-to-suppress-compiler-warnings#suppress-warnings-for-nuget-packages).
 
-### Port your packages to `PackageReference`
+## Port your packages to `PackageReference`
 
 .NET Core uses [PackageReference](/nuget/consume-packages/package-references-in-project-files) to specify package dependencies. If you are using [packages.config](/nuget/reference/packages-config) to specify your packages, you will need to convert over to `PackageReference`.
 
 You can learn more at [Migrate from packages.config to PackageReference](/nuget/reference/migrate-packages-config-to-package-reference).
 
-### What to do when your NuGet package dependency doesn't run on .NET Core
+## What to do when your NuGet package dependency doesn't run on .NET Core
 
 There are a few things you can do if a NuGet package you depend on doesn't run on .NET Core:
 
@@ -113,6 +113,5 @@ The .NET Team would like to know which libraries are the most important to suppo
 
 You may have a dependency that isn't a NuGet package, such as a DLL in the file system. The only way to determine the portability of that dependency is to run the [.NET Portability Analyzer](https://github.com/Microsoft/dotnet-apiport) tool. The tool can analyze assemblies that target the .NET Framework and identify APIs that aren't portable to other .NET platforms such as .NET Core. You can run the tool as a console application or as a [Visual Studio extension](../../standard/analyzers/portability-analyzer.md).
 
-## Next steps
-
-If you're porting a library, check out [Porting your Libraries](libraries.md).
+>[!div class="step-by-step"]
+>[Next](libraries.md)

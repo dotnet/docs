@@ -23,7 +23,7 @@ Writes data to an area of memory in this process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WriteMemory(  
     [in]  CORDB_ADDRESS address,  
     [in]  DWORD size,  
@@ -31,7 +31,7 @@ HRESULT WriteMemory(
     [out] SIZE_T *written);  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` value that is the base address of the memory area to which data is written. Before data transfer occurs, the system verifies that the memory area of the specified size, beginning at the base address, is accessible for writing. If it is not accessible, the method fails.  
   

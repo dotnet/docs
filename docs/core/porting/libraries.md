@@ -2,7 +2,7 @@
 title: Port libraries to .NET Core
 description: Learn how to port library projects from the .NET Framework to .NET Core.
 author: cartermp
-ms.date: 07/14/2017
+ms.date: 12/07/2018
 ms.custom: seodec18
 ---
 # Port .NET Framework libraries to .NET Core
@@ -20,52 +20,20 @@ This article assumes that you:
 
 You should also become familiar with the content of the following topics:
 
-[.NET Standard](~/docs/standard/net-standard.md)   
+[.NET Standard](../../standard/net-standard.md)\
 This topic describes the formal specification of .NET APIs that are intended to be available on all .NET implementations.
 
-[Packages, Metapackages and Frameworks](~/docs/core/packages.md)   
+[Packages, Metapackages and Frameworks](../packages.md)   
 This article discusses how .NET Core defines and uses packages and how packages support code running on multiple .NET implementations.
 
-[Developing Libraries with Cross Platform Tools](~/docs/core/tutorials/libraries.md)   
+[Developing Libraries with Cross Platform Tools](../tutorials/libraries.md)   
 This topic explains how to write libraries for .NET using cross-platform CLI tools.
 
-[Additions to the *csproj* format for .NET Core](~/docs/core/tools/csproj.md)   
+[Additions to the *csproj* format for .NET Core](../tools/csproj.md)   
 This article outlines the changes that were added to the project file as part of the move to *csproj* and MSBuild.
 
-[Porting to .NET Core - Analyzing your Third-Party Party Dependencies](~/docs/core/porting/third-party-deps.md)   
+[Porting to .NET Core - Analyzing your Third-Party Party Dependencies](third-party-deps.md)   
 This topic discusses the portability of third-party dependencies and what to do when a NuGet package dependency doesn't run on .NET Core.
-
-## .NET Framework technologies unavailable on .NET Core
-
-Several technologies available to .NET Framework libraries aren't available for use with .NET Core, such as AppDomains, Remoting, Code Access Security (CAS), and Security Transparency. If your libraries rely on one or more of these technologies, consider the alternative approaches outlined below. For more information on API compatibility, the CoreFX team maintains a [List of behavioral changes/compat breaks and deprecated/legacy APIs](https://github.com/dotnet/corefx/wiki/ApiCompat) at GitHub.
-
-Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. File an issue in the [dotnet/corefx repository issues](https://github.com/dotnet/corefx/issues) at GitHub to ask for specific APIs and technologies. [Porting requests in the issues](https://github.com/dotnet/corefx/labels/port-to-core) are marked with the `port-to-core` label.
-
-### AppDomains
-
-AppDomains isolate apps from one another. AppDomains require runtime support and are generally quite expensive. They're not implemented in .NET Core. We don't plan on adding this capability in future. For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class.
-
-To make code migration from .NET Framework easier, we've exposed some of the <xref:System.AppDomain> API surface in .NET Core. Some of the API functions normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>). Check the types you use against the [`System.AppDomain` reference source](https://github.com/dotnet/corefx/blob/master/src/System.Runtime.Extensions/src/System/AppDomain.cs) in the [dotnet/corefx GitHub repository](https://github.com/dotnet/corefx) making sure to select the branch that matches your implemented version.
-
-### Remoting
-
-.NET Remoting was identified as a problematic architecture. It's used for cross-AppDomain communication, which is no longer supported. Also, Remoting requires runtime support, which is expensive to maintain. For these reasons, .NET Remoting isn't supported on .NET Core, and we don't plan on adding support for it in the future.
-
-For communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to Remoting, such as the <xref:System.IO.Pipes> or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.
-
-Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plain text protocol, such as HTTP. The [Kestrel web server](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), the web server used by ASP.NET Core, is an option here. Also consider using <xref:System.Net.Sockets> for network-based, cross-machine scenarios. For more options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
-
-### Code Access Security (CAS)
-
-Sandboxing, which is relying on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](~/docs/framework/misc/code-access-security.md) and therefore is also not supported on .NET Core. We believe that there are too many cases in the .NET Framework and runtime where an elevation of privileges occurs to continue treating CAS as a security boundary. In addition, CAS makes the implementation more complicated and often has correctness-performance implications for applications that don't intend to use it.
-
-Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
-
-### Security Transparency
-
-Similar to CAS, Security Transparency allows separating sandboxed code from security critical code in a declarative fashion but is [no longer supported as a security boundary](~/docs/framework/misc/security-transparent-code.md). This feature is heavily used by Silverlight. 
-
-Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 
 ## Retargeting your .NET Framework code to .NET Framework 4.7.2
 
@@ -139,11 +107,11 @@ It's likely that you'll mix the above approaches on a per-project basis. You sho
 The best way to make sure everything works when you've ported your code is to test your code as you port it to .NET Core. To do this, you'll need to use a testing framework that builds and runs tests for .NET Core. Currently, you have three options:
 
 - [xUnit](https://xunit.github.io/)
-  * [Getting Started](https://xunit.github.io/docs/getting-started-dotnet-core.html)
-  * [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
+  - [Getting Started](https://xunit.github.io/docs/getting-started-dotnet-core.html)
+  - [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
 - [NUnit](https://nunit.org/)
-  * [Getting Started](https://github.com/nunit/docs/wiki/Installation)
-  * [Blog post about migrating from MSTest to NUnit](https://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
+  - [Getting Started](https://github.com/nunit/docs/wiki/Installation)
+  - [Blog post about migrating from MSTest to NUnit](https://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
 - [MSTest](https://docs.microsoft.com/visualstudio/test/unit-test-basics)
 
 ## Recommended approach to porting
@@ -157,3 +125,6 @@ Ultimately, the porting effort depends heavily on how your .NET Framework code i
 1. Pick the next layer of code to port over and repeat the prior steps.
 
 If you start with the base of your library and move outward from the base and test each layer as needed, porting is a systematic process where problems are isolated to one layer of code at a time.
+
+>[!div class="step-by-step"]
+>[Next](project-structure.md)

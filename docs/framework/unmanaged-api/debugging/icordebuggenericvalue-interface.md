@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugGenericValue Interface1"
+title: "ICorDebugGenericValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugGenericValue"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugGenericValue Interface1
+# ICorDebugGenericValue Interface
+
 A subclass of "ICorDebugValue" that applies to all values. This interface provides Get and Set methods for the value.  
   
 ## Methods  
@@ -35,7 +36,7 @@ A subclass of "ICorDebugValue" that applies to all values. This interface provid
  This interface does not support being called remotely, either cross-machine or cross-process.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

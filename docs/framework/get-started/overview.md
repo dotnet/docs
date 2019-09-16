@@ -40,8 +40,7 @@ Internet Explorer is an example of an unmanaged app that hosts the runtime (in t
 
 The following illustration shows the relationship of the common language runtime and the class library to your apps and to the overall system. The illustration also shows how managed code operates within a larger architecture.
 
-![Managed code within a larger architecture](../../../docs/framework/get-started/media/circle.gif "circle")
-.NET Framework in context
+![Screenshot that shows how managed code operates within a larger architecture.](./media/overview/language-runtime-class-library-relationship.gif)
 
 The following sections describe the main features of the .NET Framework in greater detail.
 
@@ -71,7 +70,7 @@ For example, the .NET Framework collection classes implement a set of interfaces
 
 As you would expect from an object-oriented class library, the .NET Framework types enable you to accomplish a range of common programming tasks, including tasks such as string management, data collection, database connectivity, and file access. In addition to these common tasks, the class library includes types that support a variety of specialized development scenarios. Use the .NET Framework to develop the following types of apps and services:
 
-- Console apps. See [Building Console Applications](../../../docs/standard/building-console-apps.md).
+- Console apps. See [Building Console Applications](../../standard/building-console-apps.md).
 
 - Windows GUI apps (Windows Forms). See [Windows Forms](../../../docs/framework/winforms/index.md).
 
@@ -83,7 +82,7 @@ As you would expect from an object-oriented class library, the .NET Framework ty
 
 - Service-oriented apps using Windows Communication Foundation (WCF). See [Service-Oriented Applications with WCF](../../../docs/framework/wcf/index.md).
 
-- Workflow-enabled apps using Windows Workflow Foundation (WF). See [Building Workflows in the .NET Framework](https://msdn.microsoft.com/library/cbf3880f-dc7b-466d-b808-1109b1223f4a).
+- Workflow-enabled apps using Windows Workflow Foundation (WF). See [Windows Workflow Foundation](../windows-workflow-foundation/index.md).
 
 The Windows Forms classes are a comprehensive set of reusable types that vastly simplify Windows GUI development. If you write an ASP.NET Web Form app, you can use the Web Forms classes.
 
@@ -93,5 +92,5 @@ The Windows Forms classes are a comprehensive set of reusable types that vastly 
 - [Installation guide](../../../docs/framework/install/index.md)
 - [Development Guide](../../../docs/framework/development-guide.md)
 - [Tools](../../../docs/framework/tools/index.md)
-- [.NET Framework Samples](https://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)
+- [.NET samples and tutorials](../../samples-and-tutorials/index.md)
 - [.NET Framework Class Library](https://go.microsoft.com/fwlink/?LinkID=227195)

@@ -15,10 +15,11 @@ A period (.) or exclamation point (!) that is not inside a `With` block occurs w
   
 ## To correct this error  
   
-1.  Ensure that the `With` block is correctly formatted.  
+1. Ensure that the `With` block is correctly formatted.  
   
-2.  If there is no `With` block, add an expression to the left of the accessor that evaluates to a defined element containing the member.  
+2. If there is no `With` block, add an expression to the left of the accessor that evaluates to a defined element containing the member.  
   
 ## See also
+
 - [Special Characters in Code](../../../visual-basic/programming-guide/program-structure/special-characters-in-code.md)
 - [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md)

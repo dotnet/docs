@@ -21,7 +21,7 @@ This is a WCF client that accesses the service after successful authentication. 
 
 2. Press CTRL+SHIFT+B to build the solution.
 
-3. Open [!INCLUDE[fileExplorer](~/includes/fileexplorer-md.md)] and navigate to the \WCF\Basic\Security\CryptoAgility\Service\bin directory and run the service.exe file with administrator privileges by right-clicking service.exe and selecting **Run as administrator**.
+3. Open File Explorer and navigate to the \WCF\Basic\Security\CryptoAgility\Service\bin directory and run the service.exe file with administrator privileges by right-clicking service.exe and selecting **Run as administrator**.
 
 4. Navigate to \WCF\Basic\Security\CryptoAgility\Client\bin directory and run the client.exe file normally.
 

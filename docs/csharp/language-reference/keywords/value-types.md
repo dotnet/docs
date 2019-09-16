@@ -1,7 +1,6 @@
 ---
 title: "Value types - C# Reference"
 ms.custom: seodec18
-
 ms.date: 11/26/2018
 f1_keywords: 
   - "cs.valuetypes"
@@ -27,19 +26,19 @@ All value types are derived implicitly from the <xref:System.ValueType?displayPr
 
 Unlike with reference types, you cannot derive a new type from a value type. However, like reference types, structs can implement interfaces.
 
-Value type variables cannot be `null` by default. However, variables of the corresponding [nullable types](../../../csharp/programming-guide/nullable-types/index.md) can be `null`.
+Value type variables cannot be `null` by default. However, variables of the corresponding [nullable types](../../programming-guide/nullable-types/index.md) can be `null`.
 
-Each value type has an implicit default constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).
+Each value type has an implicit parameterless constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).
 
 ## Simple types
 
 The *simple types* are a set of predefined struct types provided by C# and comprise the following types:
 
-- [Integral types](integral-types-table.md): integer numeric types and the [char](char.md) type
-- [Floating-point types](floating-point-types-table.md)
+- [Integral types](../builtin-types/integral-numeric-types.md): integer numeric types and the [char](char.md) type
+- [Floating-point types](../builtin-types/floating-point-numeric-types.md)
 - [bool](bool.md)
 
-The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](int.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
+The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](../builtin-types/integral-numeric-types.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
 
 The simple types differ from other struct types in that they permit certain additional operations:
 
@@ -62,7 +61,7 @@ int myInt;
 You cannot use it before you initialize it. You can initialize it using the following statement:
 
 ```csharp
-myInt = new int();  // Invoke default constructor for int type.
+myInt = new int();  // Invoke parameterless constructor for int type.
 ```
 
 This statement is equivalent to the following statement:
@@ -83,17 +82,17 @@ int myInt = new int();
 int myInt = 0;
 ```
 
-Using the [new](new.md) operator calls the default constructor of the specific type and assigns the default value to the variable. In the preceding example, the default constructor assigned the value `0` to `myInt`. For more information about values assigned by calling default constructors, see [Default values table](default-values-table.md).
+Using the [new](../operators/new-operator.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling parameterless constructors, see [Default values table](default-values-table.md).
 
-With user-defined types, use [new](new.md) to invoke the default constructor. For example, the following statement invokes the default constructor of the `Point` struct:
+With user-defined types, use [new](../operators/new-operator.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
 
 ```csharp
-Point p = new Point(); // Invoke default constructor for the struct.
+var p = new Point(); // Invoke parameterless constructor for the struct.
 ```
 
 After this call, the struct is considered to be definitely assigned; that is, all its members are initialized to their default values.
 
-For more information about the `new` operator, see [new](new.md).
+For more information about the `new` operator, see [new](../operators/new-operator.md).
 
 For information about formatting the output of numeric types, see [Formatting numeric results table](formatting-numeric-results-table.md).
 
@@ -103,6 +102,5 @@ For information about formatting the output of numeric types, see [Formatting nu
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Types](types.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Reference Types](reference-types.md)
 - [Nullable types](../../programming-guide/nullable-types/index.md)

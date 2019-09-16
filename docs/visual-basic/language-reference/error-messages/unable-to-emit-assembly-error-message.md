@@ -55,7 +55,7 @@ The Visual Basic compiler calls the Assembly Linker (*Al.exe*, also known as Ali
 
 ## See also
 
-- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md).
-- [Sn.exe (Strong Name Tool)][Sn.exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md))
-- [How to: Create a Public-Private Key Pair](../../../framework/app-domains/how-to-create-a-public-private-key-pair.md)
+- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
+- [Sn.exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md)
+- [How to: Create a Public-Private Key Pair](../../../standard/assembly/create-public-private-key-pair.md)
 - [Talk to Us](/visualstudio/ide/talk-to-us)

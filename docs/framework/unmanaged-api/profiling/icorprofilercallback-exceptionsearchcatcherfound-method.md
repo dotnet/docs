@@ -23,12 +23,12 @@ Notifies the profiler that the search phase of exception handling has located a 
   
 ## Syntax  
   
-```  
+```cpp  
 RESULT ExceptionSearchCatcherFound(  
     [in] FunctionID functionId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function that contains the exception handler.  
   
@@ -42,4 +42,5 @@ RESULT ExceptionSearchCatcherFound(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

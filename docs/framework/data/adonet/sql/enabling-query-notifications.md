@@ -11,36 +11,36 @@ Applications that consume query notifications have a common set of requirements.
   
  To use query notifications you must:  
   
--   Enable query notifications for your database.  
+- Enable query notifications for your database.  
   
--   Ensure that the user ID used to connect to the database has the necessary permissions.  
+- Ensure that the user ID used to connect to the database has the necessary permissions.  
   
--   Use a <xref:System.Data.SqlClient.SqlCommand> object to execute a valid SELECT statement with an associated notification object—either <xref:System.Data.SqlClient.SqlDependency> or <xref:System.Data.Sql.SqlNotificationRequest>.  
+- Use a <xref:System.Data.SqlClient.SqlCommand> object to execute a valid SELECT statement with an associated notification object—either <xref:System.Data.SqlClient.SqlDependency> or <xref:System.Data.Sql.SqlNotificationRequest>.  
   
--   Provide code to process the notification if the data being monitored changes.  
+- Provide code to process the notification if the data being monitored changes.  
   
 ## Query Notifications Requirements  
  Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
--   [Creating a Query for Notification](https://msdn.microsoft.com/library/ms181122.aspx)  
+- [Creating a Query for Notification](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms181122(v=sql.105))  
   
--   [Security Considerations for Service Broker](https://msdn.microsoft.com/library/ms166059.aspx)  
+- [Security Considerations for Service Broker](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms166059(v=sql.90))  
   
--   [Security and Protection (Service Broker)](https://msdn.microsoft.com/library/bb522911.aspx)  
+- [Security and Protection (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522911(v=sql.105))  
   
--   [Security Considerations for Notifications Services](https://msdn.microsoft.com/library/ms172604.aspx)  
+- [Security Considerations for Notifications Services](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms172604(v=sql.90))  
   
--   [Query Notification Permissions](https://msdn.microsoft.com/library/ms188311.aspx)  
+- [Query Notification Permissions](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms188311(v=sql.105))  
   
--   [International Considerations for Service Broker](https://msdn.microsoft.com/library/ms166028.aspx)  
+- [International Considerations for Service Broker](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms166028(v=sql.90))  
   
--   [Solution Design Considerations (Service Broker)](https://msdn.microsoft.com/library/bb522899.aspx)  
+- [Solution Design Considerations (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522899(v=sql.105))  
   
--   [Service Broker Developer InfoCenter](https://msdn.microsoft.com/library/ms166100.aspx)  
+- [Service Broker Developer InfoCenter](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms166100(v=sql.105))  
   
--   [Developer's Guide (Service Broker)](https://msdn.microsoft.com/library/bb522908.aspx)  
+- [Developer's Guide (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522908(v=sql.105))  
   
 ## Enabling Query Notifications to Run Sample Code  
  To enable Service Broker on the **AdventureWorks** database by using SQL Server Management Studio, execute the following Transact-SQL statement:  
@@ -79,5 +79,6 @@ CREATE SERVICE ContactChangeNotifications
  In contrast, <xref:System.Data.Sql.SqlNotificationRequest> requires you to implement the entire listening infrastructure yourself. In addition, all the supporting Service Broker objects such as the queue, service, and message types supported by the queue must be defined. This manual approach is useful if your application requires special notification messages or notification behaviors, or if your application is part of a larger Service Broker application.  
   
 ## See also
-- [Query Notifications in SQL Server](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Query Notifications in SQL Server](query-notifications-in-sql-server.md)
+- [ADO.NET Overview](../ado-net-overview.md)

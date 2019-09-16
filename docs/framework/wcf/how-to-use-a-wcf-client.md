@@ -1,6 +1,6 @@
 ---
-title: "How to: Use a Windows Communication Foundation Client"
-ms.date: 09/14/2018
+title: "Tutorial: Use a Windows Communication Foundation client"
+ms.date: 03/19/2019
 helpviewer_keywords:
   - "WCF clients [WCF], using"
 dev_langs:
@@ -8,21 +8,27 @@ dev_langs:
  - VB
 ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
 ---
-# How to: Use a Windows Communication Foundation Client
+# Tutorial: Use a Windows Communication Foundation client
 
-This is the last of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.
+This tutorial describes the last of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-Once a Windows Communication Foundation (WCF) proxy has been created and configured, a client instance can be created and the client application can be compiled and used to communicate with the WCF service. This topic describes procedures for instantiating and using a WCF client. This procedure does three things:
+After you've created and configured a Windows Communication Foundation (WCF) proxy, you create a client instance and compile the client application. You then use it to communicate with the WCF service. 
 
-1.  Instantiates a WCF client.
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+>
+> - Add code to use the WCF client.
+> - Test the WCF client.
 
-2.  Calls the service operations from the generated proxy.
+## Add code to use the WCF client
 
-3.  Closes the client once the operation call is completed.
+The client code does the following steps:
 
-## Use a Windows Communication Foundation client
+- Instantiates the WCF client.
+- Calls the service operations from the generated proxy.
+- Closes the client after the operation call is completed.
 
-Open the Program.cs or Program.vb file from the GettingStartedClient project and replace the existing code with the following code:
+Open the **Program.cs** or **Module1.vb** file from the **GettingStartedClient** project and replace its code with the following code:
 
 ```csharp
 using System;
@@ -65,7 +71,9 @@ namespace GettingStartedClient
             result = client.Divide(value1, value2);
             Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result);
 
-            //Step 3: Closing the client gracefully closes the connection and cleans up resources.
+            // Step 3: Close the client to gracefully close the connection and clean up resources.
+            Console.WriteLine("\nPress <Enter> to terminate the client.");
+            Console.ReadLine();
             client.Close();
         }
     }
@@ -77,74 +85,108 @@ Imports System
 Imports System.Collections.Generic
 Imports System.Text
 Imports System.ServiceModel
-Imports GettingStartedClientVB2.ServiceReference1
+Imports GettingStartedClient.ServiceReference1
 
 Module Module1
 
     Sub Main()
-        ' Step 1: Create an instance of the WCF proxy
+        ' Step 1: Create an instance of the WCF proxy.
         Dim Client As New CalculatorClient()
 
-        'Step 2: Call the service operations.
-        'Call the Add service operation.
+        ' Step 2: Call the service operations.
+        ' Call the Add service operation.
         Dim value1 As Double = 100D
         Dim value2 As Double = 15.99D
         Dim result As Double = Client.Add(value1, value2)
         Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
 
-        'Call the Subtract service operation.
+        ' Call the Subtract service operation.
         value1 = 145D
         value2 = 76.54D
         result = Client.Subtract(value1, value2)
         Console.WriteLine("Subtract({0},{1}) = {2}", value1, value2, result)
 
-        'Call the Multiply service operation.
+        ' Call the Multiply service operation.
         value1 = 9D
         value2 = 81.25D
         result = Client.Multiply(value1, value2)
         Console.WriteLine("Multiply({0},{1}) = {2}", value1, value2, result)
 
-        'Call the Divide service operation.
+        ' Call the Divide service operation.
         value1 = 22D
         value2 = 7D
         result = Client.Divide(value1, value2)
         Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result)
 
-        ' Step 3: Closing the client gracefully closes the connection and cleans up resources.
-        Client.Close()
-
+        ' Step 3: Close the client to gracefully close the connection and clean up resources.
         Console.WriteLine()
-        Console.WriteLine("Press <ENTER> to terminate client.")
+        Console.WriteLine("Press <Enter> to terminate the client.")
         Console.ReadLine()
+        Client.Close()
 
     End Sub
 
 End Module
 ```
 
-Notice the `using` or `Imports` statement that imports the `GettingStartedClient.ServiceReference1`. This imports the code generated by **Add Service Reference** in Visual Studio. The code instantiates the WCF proxy and then calls each of the service operations exposed by the calculator service, closes the proxy, and terminates.
+Notice the `using` (for Visual C#) or `Imports` (for Visual Basic) statement that imports `GettingStartedClient.ServiceReference1`. This statement imports the code that Visual Studio generated with the **Add Service Reference** function. The code instantiates the WCF proxy and calls each of the service operations that the calculator service exposes. It then closes the proxy and ends the program.
 
-You have now completed the tutorial. You defined a service contract, implemented the service contract, generated a WCF proxy, configured a WCF client application, and then used the proxy to call service operations. To test out the application, first run GettingStartedHost to start the service and then run GettingStartedClient.
+## Test the WCF client
 
-The output from GettingStartedHost should look like this:
+### Test the application from Visual Studio
 
-```text
-The service is ready.Press <ENTER> to terminate service.Received Add(100,15.99)Return: 115.99Received Subtract(145,76.54)Return: 68.46Received Multiply(9,81.25)Return: 731.25Received Divide(22,7)Return: 3.14285714285714
-```
+1. Save and build the solution.
 
-The output from GettingStartedClient should look like this:
+2. Select the **GettingStartedLib** folder, and then select **Set as Startup Project** from the shortcut menu.
 
-```text
-Add(100,15.99) = 115.99Subtract(145,76.54) = 68.46Multiply(9,81.25) = 731.25Divide(22,7) = 3.14285714285714Press <ENTER> to terminate client.
-```
+3. From **Startup Projects**, select **GettingStartedLib** from the drop-down list, then select **Run** or press **F5**.
 
-## See also
+### Test the application from a command prompt
 
-- [Building Clients](../../../docs/framework/wcf/building-clients.md)
-- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
-- [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md)
-- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
-- [How to: Create a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
-- [How to: Access Services with a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
-- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)
-- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)
+1. Open a command prompt as an administrator, and then navigate to your Visual Studio solution directory. 
+
+2. To start the service: Enter *GettingStartedHost\bin\Debug\GettingStartedHost.exe*.
+
+3. To start the client: Open another command prompt, navigate to your Visual Studio solution directory, then enter *GettingStartedClient\bin\Debug\GettingStartedClient.exe*.
+
+   *GettingStartedHost.exe* produces the following output:
+
+   ```text
+   The service is ready.
+   Press <Enter> to terminate the service.
+
+   Received Add(100,15.99)
+   Return: 115.99
+   Received Subtract(145,76.54)
+   Return: 68.46
+   Received Multiply(9,81.25)
+   Return: 731.25
+   Received Divide(22,7)
+   Return: 3.14285714285714
+   ```
+
+   *GettingStartedClient.exe* produces the following output:
+
+   ```text
+   Add(100,15.99) = 115.99
+   Subtract(145,76.54) = 68.46
+   Multiply(9,81.25) = 731.25
+   Divide(22,7) = 3.14285714285714
+
+   Press <Enter> to terminate the client.
+   ```
+
+## Next steps
+
+You've now completed all the tasks in the WCF get started tutorial. In this tutorial, you learned how to:
+
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+>
+> - Add code to use the WCF client.
+> - Test the WCF client.
+
+If you have problems or errors in any of the steps, follow the steps in the troubleshooting article to fix them.
+
+> [!div class="nextstepaction"]
+> [Troubleshoot the Get started with WCF tutorials](troubleshooting-the-getting-started-tutorial.md)

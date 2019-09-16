@@ -16,10 +16,10 @@ An instance store is a logical container of instances. It is the place where the
   
  The following list contains the important steps involved in the host’s interaction with the instance store:  
   
-1.  Obtain an **InstanceStore** from a persistence provider.  
+1. Obtain an **InstanceStore** from a persistence provider.  
 
-2.  Obtain the handle to an instance by calling the <xref:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle%2A> method on the **InstanceStore**.  
+2. Obtain the handle to an instance by calling the <xref:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle%2A> method on the **InstanceStore**.  
   
-3.  Invoke commands against the instance handle by calling the <xref:System.Runtime.DurableInstancing.InstanceStore.Execute%2A> method on the **InstanceStore**.  
+3. Invoke commands against the instance handle by calling the <xref:System.Runtime.DurableInstancing.InstanceStore.Execute%2A> method on the **InstanceStore**.  
   
-4.  Examine the <xref:System.Runtime.DurableInstancing.InstanceView> returned by **InstanceStore.Execute** to determine the results of the commands.
+4. Examine the <xref:System.Runtime.DurableInstancing.InstanceView> returned by **InstanceStore.Execute** to determine the results of the commands.

@@ -23,14 +23,14 @@ Gets the value of the specified local variable in this Microsoft intermediate la
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalVariable (  
     [in] DWORD                  dwIndex,  
     [out] ICorDebugValue        **ppValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwIndex`  
  [in] The index of the local variable in this MSIL stack frame.  
   

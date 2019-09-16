@@ -20,11 +20,11 @@ ms.author: "ronpet"
 
 Special characters are predefined, contextual characters that modify the program element (a literal string, an identifier, or an attribute name) to which they are prepended. C# supports the following special characters: 
 
-- [@](../../../csharp/language-reference/tokens/verbatim.md), the verbatim identifier character. 
+- [@](./verbatim.md), the verbatim identifier character. 
 
-- [$](../../../csharp/language-reference/tokens/interpolated.md), the interpolated string character.
+- [$](./interpolated.md), the interpolated string character.
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)

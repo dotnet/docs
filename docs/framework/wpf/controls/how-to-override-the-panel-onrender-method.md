@@ -21,11 +21,11 @@ This example shows how to override the <xref:System.Windows.Controls.Panel.OnRen
 ## Example  
  Use the <xref:System.Windows.Controls.Panel.OnRender%2A> method in order to add graphical effects to a rendered panel element. For example, you can use this method to add custom border or background effects. A <xref:System.Windows.Media.DrawingContext> object is passed as an argument, which provides methods for drawing shapes, text, images, or videos. As a result, this method is useful for customization of a panel object.  
   
- [!code-csharp[LightWeightCustomPanel#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LightWeightCustomPanel/CSharp/OffsetPanel.cs#1)]
- [!code-vb[LightWeightCustomPanel#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/LightWeightCustomPanel/visualbasic/offsetpanel.vb#1)]  
+ [!code-csharp[LightWeightCustomPanel#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LightWeightCustomPanel/CSharp/OffsetPanel.cs#1)]
+ [!code-vb[LightWeightCustomPanel#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LightWeightCustomPanel/visualbasic/offsetpanel.vb#1)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.Panel>
-- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
-- [Custom Radial Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159982)
-- [How-to Topics](../../../../docs/framework/wpf/controls/panel-how-to-topics.md)
+- [Panels Overview](panels-overview.md)
+- [How-to Topics](panel-how-to-topics.md)

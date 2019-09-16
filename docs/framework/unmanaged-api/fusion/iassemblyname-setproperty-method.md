@@ -23,7 +23,7 @@ Sets the value of the property referenced by the specified property identifier.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetProperty (  
     [in] DWORD  PropertyId,  
     [in] LPVOID pvProperty,  
@@ -31,7 +31,7 @@ HRESULT SetProperty (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `PropertyId`  
  [in] The unique identifier of the property whose value will be set.  
   
@@ -42,11 +42,12 @@ HRESULT SetProperty (
  [in] The size, in bytes, of `pvProperty`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+
+- [IAssemblyName Interface](iassemblyname-interface.md)

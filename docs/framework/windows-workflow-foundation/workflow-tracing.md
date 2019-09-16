@@ -9,17 +9,17 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 ## Enabling Debug Tracing in ETW  
  To enable tracing using ETW, enable the Debug channel in Event Viewer:  
   
-1.  Navigate to analytic and debug logs node in Event Viewer.  
+1. Navigate to analytic and debug logs node in Event Viewer.  
   
-2.  In the tree view in Event Viewer, navigate to **Event Viewer->Applications and Services Logs->Microsoft->Windows->Application Server-Applications**. Right-click **Application Server-Applications** and select **View->Show Analytic and Debug Logs**. Right-click **Debug** and select **Enable Log**.  
+2. In the tree view in Event Viewer, navigate to **Event Viewer->Applications and Services Logs->Microsoft->Windows->Application Server-Applications**. Right-click **Application Server-Applications** and select **View->Show Analytic and Debug Logs**. Right-click **Debug** and select **Enable Log**.  
   
-3.  When a workflow runs the debug and traces are emitted to ETW debug channel, they can be viewed in the Event Viewer. Navigate to **Event Viewer->Applications and Services Logs->Microsoft->Windows->Application Server-Applications**. Right-click **Debug** and select **Refresh**.  
+3. When a workflow runs the debug and traces are emitted to ETW debug channel, they can be viewed in the Event Viewer. Navigate to **Event Viewer->Applications and Services Logs->Microsoft->Windows->Application Server-Applications**. Right-click **Debug** and select **Refresh**.  
   
-4.  The default analytic trace buffer size is only 4 kilobytes (KB); it is recommended to increase the size to 32 KB. To do this, perform the following steps.  
+4. The default analytic trace buffer size is only 4 kilobytes (KB); it is recommended to increase the size to 32 KB. To do this, perform the following steps.  
   
-    1.  Execute the following command in the current framework directory (for example, C:\Windows\Microsoft.NET\Framework\v4.0.21203): `wevtutil um Microsoft.Windows.ApplicationServer.Applications.man`  
+    1. Execute the following command in the current framework directory (for example, C:\Windows\Microsoft.NET\Framework\v4.0.21203): `wevtutil um Microsoft.Windows.ApplicationServer.Applications.man`  
   
-    2.  Change the \<bufferSize> value in the Windows.ApplicationServer.Applications.man file to 32.  
+    2. Change the \<bufferSize> value in the Windows.ApplicationServer.Applications.man file to 32.  
   
         ```xml  
         <channel name="Microsoft-Windows-Application Server-Applications/Analytic" chid="ANALYTIC_CHANNEL" symbol="ANALYTIC_CHANNEL" type="Analytic" enabled="false" isolation="Application" message="$(string.MICROSOFT_WINDOWS_APPLICATIONSERVER_APPLICATIONS.channel.ANALYTIC_CHANNEL.message)" >  
@@ -29,10 +29,10 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
                   </channel>  
         ```  
   
-    3.  Execute the following command in the current framework directory (for example, C:\Windows\Microsoft.NET\Framework\v4.0.21203): `wevtutil im Microsoft.Windows.ApplicationServer.Applications.man`  
+    3. Execute the following command in the current framework directory (for example, C:\Windows\Microsoft.NET\Framework\v4.0.21203): `wevtutil im Microsoft.Windows.ApplicationServer.Applications.man`  
   
 > [!NOTE]
->  If you are using the .NET Framework 4 Client Profile, you must first register the ETW manifest by running the following command from the .NET Framework 4 directory: `ServiceModelReg.exe –i –c:etw`  
+> If you are using the .NET Framework 4 Client Profile, you must first register the ETW manifest by running the following command from the .NET Framework 4 directory: `ServiceModelReg.exe –i –c:etw`  
   
 ## Enabling Debug Tracing using System.Diagnostics  
  These listeners can be configured in the App.config file of the workflow application, or the Web.config for a workflow service. In this example, a [TextWriterTraceListener](https://go.microsoft.com/fwlink/?LinkId=165424) is configured to save tracing information to the MyTraceLog.txt file in the current directory.  
@@ -64,5 +64,6 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 ```  
   
 ## See also
+
 - [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
 - [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

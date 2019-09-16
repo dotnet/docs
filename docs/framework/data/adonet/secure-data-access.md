@@ -17,10 +17,10 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)|Describes security best practices and techniques for protecting connection information, such as using protected configuration to encrypt connection strings.|  
-|[Recommendations for Data Access Strategies](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)|Provides recommendations for accessing data and performing database operations.|  
-|[Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)|Describes how to build connection strings from user input at run time.|  
-|[Overview of SQL Server Security](../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)|Describes the SQL Server security architecture.|  
+|[Protecting Connection Information](protecting-connection-information.md)|Describes security best practices and techniques for protecting connection information, such as using protected configuration to encrypt connection strings.|  
+|[Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|Provides recommendations for accessing data and performing database operations.|  
+|[Connection String Builders](connection-string-builders.md)|Describes how to build connection strings from user input at run time.|  
+|[Overview of SQL Server Security](./sql/overview-of-sql-server-security.md)|Describes the SQL Server security architecture.|  
   
 ## Parameterized Commands and SQL Injection  
  Using parameterized commands helps guard against SQL injection attacks, in which an attacker "injects" a command into a SQL statement that compromises security on the server. Parameterized commands guard against a SQL injection attack by ensuring that values received from an external source are passed as values only, and not part of the Transact-SQL statement. As a result, Transact-SQL commands inserted into a value are not executed at the data source. Rather, they are evaluated solely as a parameter value. In addition to the security benefits, parameterized commands provide a convenient method for organizing values passed with a Transact-SQL statement or to a stored procedure.  
@@ -29,9 +29,9 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[DataAdapter Parameters](../../../../docs/framework/data/adonet/dataadapter-parameters.md)|Describes how to use parameters with a `DataAdapter`.|  
-|[Modifying Data with Stored Procedures](../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)|Describes how to specify parameters and obtain a return value.|  
-|[Managing Permissions with Stored Procedures in SQL Server](../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)|Describes how to use SQL Server stored procedures to encapsulate data access.|  
+|[DataAdapter Parameters](dataadapter-parameters.md)|Describes how to use parameters with a `DataAdapter`.|  
+|[Modifying Data with Stored Procedures](modifying-data-with-stored-procedures.md)|Describes how to specify parameters and obtain a return value.|  
+|[Managing Permissions with Stored Procedures in SQL Server](./sql/managing-permissions-with-stored-procedures-in-sql-server.md)|Describes how to use SQL Server stored procedures to encapsulate data access.|  
   
 ## Script Exploits  
  A script exploit is another form of injection that uses malicious characters inserted into a Web page. The browser does not validate the inserted characters and will process them as part of the page.  
@@ -40,7 +40,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)|Describes how to guard against scripting and SQL statement exploits.|  
+|[Script Exploits Overview](https://docs.microsoft.com/previous-versions/aspnet/w1sw53ds(v=vs.100))|Describes how to guard against scripting and SQL statement exploits.|  
   
 ## Probing Attacks  
  Attackers often use information from an exception, such as the name of your server, database, or table, to mount an attack on your system. Because exceptions can contain specific information about your application or data source, you can help keep your application and data source better protected by only exposing essential information to the client.  
@@ -49,8 +49,8 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Exception Handling Fundamentals](../../../../docs/standard/exceptions/exception-handling-fundamentals.md)|Describes the basic forms of try/catch/finally structured exception handling.|  
-|[Best Practices for Exceptions](../../../../docs/standard/exceptions/best-practices-for-exceptions.md)|Describes best practices for handling exceptions.|  
+|[Exception Handling Fundamentals](../../../standard/exceptions/exception-handling-fundamentals.md)|Describes the basic forms of try/catch/finally structured exception handling.|  
+|[Best Practices for Exceptions](../../../standard/exceptions/best-practices-for-exceptions.md)|Describes best practices for handling exceptions.|  
   
 ## Protecting Microsoft Access and Excel Data Sources  
  Microsoft Access and Microsoft Excel can act as a data store for an ADO.NET application when security requirements are minimal or nonexistent. Their security features are effective for deterrence, but should not be relied upon to do more than discourage meddling by uninformed users. The physical data files for Access and Excel exist on the file system, and must be accessible to all users. This makes them vulnerable to attacks that could result in theft or data loss since the files can be easily copied or altered. When robust security is required, use SQL Server or another server-based database where the physical data files are not readable from the file system.  
@@ -69,7 +69,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[COM+ Role-Based Security and the .NET Framework](https://msdn.microsoft.com/library/02ab22ef-e5e2-4d29-b33a-6e03d94c4981)|Discusses how to integrate managed code with COM+ security services.|  
+|[Role-Based Security](https://docs.microsoft.com/previous-versions/dotnet/netframework-1.1/s6y8k15h(v=vs.71))|Discusses how to integrate managed code with COM+ security services.|  
   
 ## Interoperating with Unmanaged Code  
  The .NET Framework provides for interaction with unmanaged code, including COM components, COM+ services, external type libraries, and many operating system services. Working with unmanaged code involves going outside the security perimeter for managed code. Both your code and any code that calls it must have unmanaged code permission (<xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> flag specified). Unmanaged code can introduce unintended security vulnerabilities into your application. Therefore, you should avoid interoperating with unmanaged code unless it is absolutely necessary.  
@@ -78,13 +78,14 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)|Contains topics describing how to expose COM components to the .NET Framework and how to expose .NET Framework components to COM.|
+|[Interoperating with Unmanaged Code](../../interop/index.md)|Contains topics describing how to expose COM components to the .NET Framework and how to expose .NET Framework components to COM.|
 |[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|
 
 ## See also
-- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
-- [Recommendations for Data Access Strategies](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)
-- [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)
-- [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Securing ADO.NET Applications](securing-ado-net-applications.md)
+- [SQL Server Security](./sql/sql-server-security.md)
+- [Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))
+- [Protecting Connection Information](protecting-connection-information.md)
+- [Connection String Builders](connection-string-builders.md)
+- [ADO.NET Overview](ado-net-overview.md)

@@ -9,9 +9,9 @@ This example shows how to join data from two comma-delimited files that share a 
   
 ## To create the data files
   
-1.  Copy the following lines into a file that is named *scores.csv* and save it to your project folder. The file represents spreadsheet data. Column 1 is the student's ID, and columns 2 through 5 are test scores.  
+1. Copy the following lines into a file that is named *scores.csv* and save it to your project folder. The file represents spreadsheet data. Column 1 is the student's ID, and columns 2 through 5 are test scores.  
   
-    ```  
+    ```csv  
     111, 97, 92, 81, 60  
     112, 75, 84, 91, 39  
     113, 88, 94, 65, 91  
@@ -26,9 +26,9 @@ This example shows how to join data from two comma-delimited files that share a 
     122, 94, 92, 91, 91  
     ```  
   
-2.  Copy the following lines into a file that is named *names.csv* and save it to your project folder. The file represents a spreadsheet that contains the student's last name, first name, and student ID.  
+2. Copy the following lines into a file that is named *names.csv* and save it to your project folder. The file represents a spreadsheet that contains the student's last name, first name, and student ID.  
   
-    ```  
+    ```csv  
     Omelchenko,Svetlana,111  
     O'Donnell,Claire,112  
     Mortensen,Sven,113  
@@ -118,15 +118,7 @@ Tucker, 94, 92, 91, 91
  */  
 ```
 
-## Compiling the code
-
-Create and compile a project that targets one of the following options:
-
-- .NET Framework version 3.5 with a reference to System.Core.dll.
-- .NET Framework version 4.0 or higher.
-- .NET Core version 1.0 or higher.
-  
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

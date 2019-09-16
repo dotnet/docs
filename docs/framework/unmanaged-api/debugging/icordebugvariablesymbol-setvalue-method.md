@@ -10,7 +10,7 @@ Assigns the value of a byte array to a variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetValue(  
    [in] ULONG32 offset,  
    [in] DWORD threadID,  
@@ -21,7 +21,7 @@ HRESULT SetValue(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `offset`  
  [in] The starting offset in the variable at which to set the value. This parameter is used when writing to member fields in an object.  
   
@@ -43,7 +43,7 @@ HRESULT SetValue(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -55,5 +55,6 @@ HRESULT SetValue(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugVariableSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

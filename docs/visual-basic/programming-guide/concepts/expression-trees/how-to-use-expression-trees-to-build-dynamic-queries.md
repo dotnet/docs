@@ -95,14 +95,13 @@ Next
   
 ## Compiling the Code  
   
--   Create a new **Console Application** project.  
+- Create a new **Console Application** project.  
   
--   Add a reference to System.Core.dll if it is not already referenced.  
+- Include the System.Linq.Expressions namespace.  
   
--   Include the System.Linq.Expressions namespace.  
-  
--   Copy the code from the example and paste it into the `Main` `Sub` procedure.  
+- Copy the code from the example and paste it into the `Main` `Sub` procedure.  
   
 ## See also
+
 - [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)
 - [How to: Execute Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)

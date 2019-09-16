@@ -23,13 +23,13 @@ Gets the current memory address of the referenced object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue (  
     [out] CORDB_ADDRESS   *pValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pValue`  
  [out] A pointer to a `CORDB_ADDRESS` value that specifies the address of the object to which this ICorDebugReferenceValue object points.  
   

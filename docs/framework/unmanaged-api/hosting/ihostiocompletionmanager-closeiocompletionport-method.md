@@ -23,13 +23,13 @@ Requests that the host close a port that was opened through an earlier call to [
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseIoCompletionPort (  
     [in] HANDLE hPort  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hPort`  
  [in] The handle of the port to close.  
   
@@ -58,5 +58,6 @@ HRESULT CloseIoCompletionPort (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

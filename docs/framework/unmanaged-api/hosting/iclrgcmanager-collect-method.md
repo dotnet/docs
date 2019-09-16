@@ -23,13 +23,13 @@ Forces a garbage collection for the specified generation.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Collect (  
     [in] LONG Generation  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Generation`  
  [in] The generation to collect. A value of -1 forces a collection of all generations.  
   
@@ -57,8 +57,9 @@ HRESULT Collect (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)
-- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
+
+- [Automatic Memory Management](../../../standard/automatic-memory-management.md)
+- [Garbage Collection](../../../standard/garbage-collection/index.md)
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)
 - [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)

@@ -10,8 +10,9 @@ An array contains an argument that is not valid.
   
 ## To correct this error  
   
--   Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
+- Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
   
 ## See also
+
 - [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
 - [Arrays](../../visual-basic/programming-guide/language-features/arrays/index.md)

@@ -15,9 +15,9 @@ The Windows Forms <xref:System.Windows.Forms.ListView> control displays a list o
 ## What You Can Do with the ListView Control  
   
 > [!NOTE]
->  An additional view mode, Tile, is only available on Windows XP and the Windows Server 2003 operating system. For more information, see [How to: Enable Tile View in a Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-enable-tile-view-in-a-windows-forms-listview-control.md).  
+> An additional view mode, Tile, is only available on Windows XP and the Windows Server 2003 operating system. For more information, see [How to: Enable Tile View in a Windows Forms ListView Control](how-to-enable-tile-view-in-a-windows-forms-listview-control.md).  
   
- The LargeIcon mode displays large icons next to the item text; the items appear in multiple columns if the control is large enough. The SmallIcon mode is the same except that it displays small icons. The List mode displays small icons but is always in a single column. The Details mode displays items in multiple columns. For details, see [How to: Add Columns to the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-columns-to-the-windows-forms-listview-control.md). The view mode is determined by the <xref:System.Windows.Forms.ListView.View%2A> property. All of the view modes can display images from image lists. For details, see [How to: Display Icons for the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-icons-for-the-windows-forms-listview-control.md).  
+ The LargeIcon mode displays large icons next to the item text; the items appear in multiple columns if the control is large enough. The SmallIcon mode is the same except that it displays small icons. The List mode displays small icons but is always in a single column. The Details mode displays items in multiple columns. For details, see [How to: Add Columns to the Windows Forms ListView Control](how-to-add-columns-to-the-windows-forms-listview-control.md). The view mode is determined by the <xref:System.Windows.Forms.ListView.View%2A> property. All of the view modes can display images from image lists. For details, see [How to: Display Icons for the Windows Forms ListView Control](how-to-display-icons-for-the-windows-forms-listview-control.md).  
   
  The following table lists some of the <xref:System.Windows.Forms.ListView> members and the views they are valid in.  
   
@@ -39,18 +39,19 @@ The Windows Forms <xref:System.Windows.Forms.ListView> control displays a list o
   
  The <xref:System.Windows.Forms.ListView.Activation%2A> property determines what type of action the user must take to activate an item in the list: the options are <xref:System.Windows.Forms.ItemActivation.Standard>, <xref:System.Windows.Forms.ItemActivation.OneClick>, and <xref:System.Windows.Forms.ItemActivation.TwoClick>. <xref:System.Windows.Forms.ItemActivation.OneClick> activation requires a single click to activate the item. <xref:System.Windows.Forms.ItemActivation.TwoClick> activation requires the user to double-click to activate the item; a single click changes the color of the item text. <xref:System.Windows.Forms.ItemActivation.Standard> activation requires the user to double-click to activate an item, but the item does not change appearance.  
   
- The <xref:System.Windows.Forms.ListView> control also supports the visual styles and other features available on the Windows XP platform, including grouping, tile view, and insertion marks. For more information, see [Windows XP Features and Windows Forms Controls](https://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0).  
+ The <xref:System.Windows.Forms.ListView> control also supports the visual styles and other features available on the Windows XP platform, including grouping, tile view, and insertion marks.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ListView>
-- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)
-- [How to: Add and Remove Items with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)
-- [How to: Add Columns to the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-columns-to-the-windows-forms-listview-control.md)
-- [How to: Display Icons for the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-icons-for-the-windows-forms-listview-control.md)
-- [How to: Display Subitems in Columns with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-subitems-in-columns-with-the-windows-forms-listview-control.md)
-- [How to: Select an Item in the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-select-an-item-in-the-windows-forms-listview-control.md)
-- [How to: Group Items in a Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-group-items-in-a-windows-forms-listview-control.md)
-- [How to: Display an Insertion Mark in a Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-an-insertion-mark-in-a-windows-forms-listview-control.md)
-- [How to: Add Search Capabilities to a ListView Control](../../../../docs/framework/winforms/controls/how-to-add-search-capabilities-to-a-listview-control.md)
-- [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](../../../../docs/framework/winforms/controls/add-custom-information-to-a-treeview-or-listview-control-wf.md)
-- [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)
+- [ListView Control](listview-control-windows-forms.md)
+- [How to: Add and Remove Items with the Windows Forms ListView Control](how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)
+- [How to: Add Columns to the Windows Forms ListView Control](how-to-add-columns-to-the-windows-forms-listview-control.md)
+- [How to: Display Icons for the Windows Forms ListView Control](how-to-display-icons-for-the-windows-forms-listview-control.md)
+- [How to: Display Subitems in Columns with the Windows Forms ListView Control](how-to-display-subitems-in-columns-with-the-windows-forms-listview-control.md)
+- [How to: Select an Item in the Windows Forms ListView Control](how-to-select-an-item-in-the-windows-forms-listview-control.md)
+- [How to: Group Items in a Windows Forms ListView Control](how-to-group-items-in-a-windows-forms-listview-control.md)
+- [How to: Display an Insertion Mark in a Windows Forms ListView Control](how-to-display-an-insertion-mark-in-a-windows-forms-listview-control.md)
+- [How to: Add Search Capabilities to a ListView Control](how-to-add-search-capabilities-to-a-listview-control.md)
+- [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](add-custom-information-to-a-treeview-or-listview-control-wf.md)
+- [How to: Create a Multipane User Interface with Windows Forms](how-to-create-a-multipane-user-interface-with-windows-forms.md)

@@ -23,12 +23,12 @@ Opens a method into which symbol information is emitted. The given method become
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenMethod(  
     [in] mdMethodDef method);  
 ```  
   
-#### Parameters  
+## Parameters  
  `method`  
  [in] The metadata token for the method to be opened.  
   
@@ -39,6 +39,7 @@ HRESULT OpenMethod(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
 - [CloseMethod Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-closemethod-method.md)
 - [OpenMethod2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-openmethod2-method.md)

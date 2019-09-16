@@ -23,7 +23,7 @@ Generates a strong name signature for the specified assembly, according to the s
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT StrongNameSignatureGenerationEx (  
     [in]  LPCWSTR   wszFilePath,  
     [in]  LPCWSTR   wszKeyContainer,  
@@ -35,7 +35,7 @@ HRESULT StrongNameSignatureGenerationEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the file that contains the manifest of the assembly for which the strong name signature will be generated.  
   
@@ -63,9 +63,9 @@ HRESULT StrongNameSignatureGenerationEx (
  `dwFlags`  
  [in] One or more of the following values:  
   
--   `SN_SIGN_ALL_FILES` (0x00000001) - Recompute all hashes for linked modules.  
+- `SN_SIGN_ALL_FILES` (0x00000001) - Recompute all hashes for linked modules.  
   
--   `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
+- `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
   
 ## Return Value  
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
@@ -89,5 +89,6 @@ HRESULT StrongNameSignatureGenerationEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [StrongNameSignatureGeneration Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturegeneration-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

@@ -23,7 +23,7 @@ This method is not implemented in the current version of the .NET Framework.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEnCRemapSequencePoints(  
     [in] ULONG32 cMap,  
     [out] ULONG32 *pcMap,  
@@ -33,4 +33,3 @@ HRESULT GetEnCRemapSequencePoints(
 ```  
   
 ## See also
-

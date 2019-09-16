@@ -24,7 +24,7 @@ There are a lot of features in this tutorial. Let’s build them one by one.
 ## Prerequisites
 
 You’ll need to setup your machine to run .NET Core. You can find the
-installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
 page. You can run this
 application on Windows, Linux, macOS or in a Docker container.
 You’ll need to install your favorite code editor.
@@ -322,17 +322,13 @@ namespace TeleprompterConsole
 {
     internal class TelePrompterConfig
     {
-        private object lockHandle = new object();
         public int DelayInMilliseconds { get; private set; } = 200;
 
         public void UpdateDelay(int increment) // negative to speed up
         {
             var newDelay = Min(DelayInMilliseconds + increment, 1000);
             newDelay = Max(newDelay, 20);
-            lock (lockHandle)
-            {
-                DelayInMilliseconds = newDelay;
-            }
+            DelayInMilliseconds = newDelay;
         }
 
         public bool Done { get; private set; }
@@ -355,13 +351,6 @@ up to this point that have imported all classes from a namespace.
 ```csharp
 using static System.Math;
 ```
-
-The other language feature that’s new is the [`lock`](../language-reference/keywords/lock-statement.md) statement. This
-statement ensures that only a single thread can be in that code at any
-given time. If one thread is in the locked section, other threads must
-wait for the first thread to exit that section. The `lock` statement uses an
-object that guards the lock section. This class follows a standard idiom
-to lock a private object in the class.
 
 Next, you need to update the `ShowTeleprompter` and `GetInput` methods to
 use the new `config` object. Write one final `Task` returning `async` method to

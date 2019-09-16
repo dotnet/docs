@@ -19,7 +19,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
   
 ### To format a paragraph as a bulleted list  
   
-1.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionBullet%2A> property to `true`.  
+1. Set the <xref:System.Windows.Forms.RichTextBox.SelectionBullet%2A> property to `true`.  
   
     ```vb  
     RichTextBox1.SelectionBullet = True  
@@ -35,11 +35,11 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
   
 ### To indent a paragraph  
   
-1.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionIndent%2A> property to an integer representing the distance in pixels between the left edge of the control and the left edge of the text.  
+1. Set the <xref:System.Windows.Forms.RichTextBox.SelectionIndent%2A> property to an integer representing the distance in pixels between the left edge of the control and the left edge of the text.  
   
-2.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionHangingIndent%2A> property to an integer representing the distance in pixels between the left edge of the first line of text in the paragraph and the left edge of subsequent lines in the same paragraph. The value of the <xref:System.Windows.Forms.RichTextBox.SelectionHangingIndent%2A> property only applies to lines in a paragraph that have wrapped below the first line.  
+2. Set the <xref:System.Windows.Forms.RichTextBox.SelectionHangingIndent%2A> property to an integer representing the distance in pixels between the left edge of the first line of text in the paragraph and the left edge of subsequent lines in the same paragraph. The value of the <xref:System.Windows.Forms.RichTextBox.SelectionHangingIndent%2A> property only applies to lines in a paragraph that have wrapped below the first line.  
   
-3.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionRightIndent%2A> property to an integer representing the distance in pixels between the right edge of the control and the right edge of the text.  
+3. Set the <xref:System.Windows.Forms.RichTextBox.SelectionRightIndent%2A> property to an integer representing the distance in pixels between the right edge of the control and the right edge of the text.  
   
     ```vb  
     RichTextBox1.SelectionIndent = 8  
@@ -60,9 +60,10 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
     ```  
   
     > [!NOTE]
-    >  All these properties affect any paragraphs that contain selected text, and also the text that is typed after the current insertion point. For example, when a user selects a word within a paragraph and then adjusts the indentation, the new settings will apply to the entire paragraph that contains that word, and also to any paragraphs subsequently entered after the selected paragraph. For information about selecting text programmatically, see <xref:System.Windows.Forms.TextBoxBase.Select%2A>.  
+    > All these properties affect any paragraphs that contain selected text, and also the text that is typed after the current insertion point. For example, when a user selects a word within a paragraph and then adjusts the indentation, the new settings will apply to the entire paragraph that contains that word, and also to any paragraphs subsequently entered after the selected paragraph. For information about selecting text programmatically, see <xref:System.Windows.Forms.TextBoxBase.Select%2A>.  
   
 ## See also
+
 - <xref:System.Windows.Forms.RichTextBox>
-- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [RichTextBox Control](richtextbox-control-windows-forms.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

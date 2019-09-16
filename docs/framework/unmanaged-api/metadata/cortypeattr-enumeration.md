@@ -22,7 +22,7 @@ Contains values that indicate type metadata.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorTypeAttr {  
   
     tdVisibilityMask        =   0x00000007,  
@@ -94,7 +94,7 @@ typedef enum CorTypeAttr {
 |`tdSpecialName`|Specifies that the class name is special. Its name describes how.|  
 |`tdImport`|Specifies that the type is imported.|  
 |`tdSerializable`|Specifies that the type is serializable.|  
-|`tdWindowsRuntime`|Specifies that this type is a [!INCLUDE[wrt](../../../../includes/wrt-md.md)] type.|  
+|`tdWindowsRuntime`|Specifies that this type is a Windows Runtime type.|  
 |`tdStringFormatMask`|Gets information about how strings are encoded and formatted.|  
 |`tdAnsiClass`|Specifies that this type interprets an LPTSTR as ANSI.|  
 |`tdUnicodeClass`|Specifies that this type interprets an LPTSTR as Unicode.|  
@@ -115,4 +115,5 @@ typedef enum CorTypeAttr {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

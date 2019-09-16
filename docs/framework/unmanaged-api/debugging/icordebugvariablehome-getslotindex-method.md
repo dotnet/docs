@@ -23,13 +23,13 @@ Gets the managed slot-index of a local variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSlotIndex(  
     [out] ULONG32 *pSlotIndex  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSlotIndex`  
  [out] A pointer to the slot-index of a local variable.  
   
@@ -54,4 +54,5 @@ HRESULT GetSlotIndex(
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
 ## See also
+
 - [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)

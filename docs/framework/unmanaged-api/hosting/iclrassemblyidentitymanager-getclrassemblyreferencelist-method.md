@@ -23,7 +23,7 @@ Gets an interface pointer to an [ICLRAssemblyReferenceList](../../../../docs/fra
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT  GetCLRAssemblyReferenceList (  
     [in] LPCWSTR *ppwzAssemblyReferences,  
     [in] DWORD    dwNumOfReferences,  
@@ -31,7 +31,7 @@ HRESULT  GetCLRAssemblyReferenceList (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppwzAssemblyReferences`  
  [in] An array of null-terminated strings in the form "name, property=value..." that specify a list of partial assembly identities.  
   
@@ -62,5 +62,6 @@ HRESULT  GetCLRAssemblyReferenceList (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)

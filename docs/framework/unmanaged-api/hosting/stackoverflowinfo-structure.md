@@ -22,7 +22,7 @@ Stores the type of overflow that occurred and information on the exception that 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _StackOverflowInfo {  
     StackOverflowType   soType;  
     EXCEPTION_POINTERS  *pExceptionInfo;  
@@ -49,4 +49,5 @@ typedef struct _StackOverflowInfo {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)

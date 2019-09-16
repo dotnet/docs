@@ -23,7 +23,7 @@ Creates a definition for a permission set with the specified metadata signature,
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefinePermissionSet (  
     [in]  mdToken        tk,   
     [in]  DWORD          dwAction,   
@@ -33,7 +33,7 @@ HRESULT DefinePermissionSet (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The object to be decorated.  
   
@@ -59,5 +59,6 @@ HRESULT DefinePermissionSet (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

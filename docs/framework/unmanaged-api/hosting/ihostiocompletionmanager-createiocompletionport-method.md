@@ -23,13 +23,13 @@ Requests that the host create a new I/O completion port.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateIoCompletionPort (  
     [out] HANDLE *phPort  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phPort`  
  [out] A pointer to a handle to the newly created I/O completion port, or 0 (zero), if the port could not be created.  
   
@@ -58,5 +58,6 @@ HRESULT CreateIoCompletionPort (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

@@ -10,7 +10,7 @@ Decodes managed debug events that have been encapsulated in the payload of speci
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DecodeEvent(  
         [in, length_is(countBytes), size_is(countBytes)]  const BYTE pRecord[],  
         [in] DWORD countBytes,  
@@ -21,7 +21,7 @@ HRESULT DecodeEvent(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRecord`  
  [in] A pointer to a byte array from a native exception debug event that includes information about a managed debug event.  
   
@@ -43,7 +43,7 @@ HRESULT DecodeEvent(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -55,5 +55,6 @@ HRESULT DecodeEvent(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -23,14 +23,14 @@ Gets a symbol reader method, given a method token and an edit-and-continue versi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodByVersionPreRemap(  
     [in]  mdMethodDef token,  
     [in]  int version,  
     [out, retval] ISymUnmanagedMethod** pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `token`  
  [in] The method metadata token.  
   
@@ -47,4 +47,5 @@ HRESULT GetMethodByVersionPreRemap(
  **Header:** CorSym.idl. CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)

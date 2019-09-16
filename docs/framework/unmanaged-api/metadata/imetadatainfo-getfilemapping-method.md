@@ -23,7 +23,7 @@ Gets the memory region of the mapped file, and the type of mapping.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFileMapping (  
     [out] const void           **ppvData,   
     [out] ULONGLONG            *pcbData,   
@@ -31,7 +31,7 @@ HRESULT GetFileMapping (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppvData`  
  [out] A pointer to the start of the mapped file.  
   
@@ -68,5 +68,6 @@ HRESULT GetFileMapping (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [IMetaDataInfo Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-interface.md)
 - [CorFileMapping Enumeration](../../../../docs/framework/unmanaged-api/metadata/corfilemapping-enumeration.md)

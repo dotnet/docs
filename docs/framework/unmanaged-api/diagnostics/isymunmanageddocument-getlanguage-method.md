@@ -23,12 +23,12 @@ Gets the language identifier of this document
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLanguage(  
     [out, retval]  GUID*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a variable that receives the language identifier.  
   
@@ -36,4 +36,5 @@ HRESULT GetLanguage(
  S_OK if the method succeeds.  
   
 ## See also
+
 - [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

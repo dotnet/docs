@@ -28,5 +28,6 @@ Internet security for applications using the <xref:System.Net> namespace is prov
  For **WebPermission** instances, accept means that an application can export the URI controlled by the **WebPermission** to the world; connect means that an application can access that URI (whether it is remote or local).  
   
 ## See also
-- [Security](../../../docs/standard/security/index.md)
+
+- [Security](../../standard/security/index.md)
 - [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)

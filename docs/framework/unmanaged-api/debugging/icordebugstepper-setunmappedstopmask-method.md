@@ -23,13 +23,13 @@ Sets a value that specifies the type of unmapped code in which execution will ha
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnmappedStopMask (  
     [in] CorDebugUnmappedStop   mask  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mask`  
  [in] A value of the CorDebugUnmappedStop enumeration that specifies the type of unmapped code in which the debugger will halt execution.  
   

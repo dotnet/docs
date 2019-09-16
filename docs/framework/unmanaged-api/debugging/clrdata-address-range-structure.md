@@ -24,7 +24,7 @@ Defines an address range.
 
 ## Syntax
 
-```
+```cpp
 typedef struct
 {
     CLRDATA_ADDRESS startAddress;

@@ -23,14 +23,14 @@ Notifies the code profiler that garbage collection has started.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GarbageCollectionStarted(  
     [in] int cGenerations,  
     [in, size_is(cGenerations), length_is(cGenerations)] BOOL generationCollected[],  
     [in] COR_PRF_GC_REASON reason);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cGenerations`  
  [in] The total number of entries in the `generationCollected` array.  
   
@@ -57,5 +57,6 @@ HRESULT GarbageCollectionStarted(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)

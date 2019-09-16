@@ -8,11 +8,11 @@ An attempt has been made to open a file that is already open.
   
 ## To correct this error  
   
--   Close the file before attempting to open it.  
+- Close the file before attempting to open it.  
   
      -or-  
   
--   Remove the redundant `FileOpen` statement from your code.  
+- Remove the redundant `FileOpen` statement from your code.  
   
 ## See also
 

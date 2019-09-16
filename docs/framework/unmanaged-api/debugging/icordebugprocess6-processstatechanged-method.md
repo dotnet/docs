@@ -10,11 +10,11 @@ Notifies [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);  
 ```  
   
-#### Parameters  
+## Parameters  
  `change`  
  [in] A member of the [ProcessStateChanged](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-processstatechanged-method.md) enumeration  
   
@@ -22,7 +22,7 @@ HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);
  The debugger calls this method to notify [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) that the process is running.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -34,5 +34,6 @@ HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

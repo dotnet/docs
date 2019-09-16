@@ -24,15 +24,16 @@ Represents an item installed in the global assembly cache.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetReference Method](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-getreference-method.md)|Gets a pointer to the `FUSION_INSTALL_REFERENCE` structure represented by this `IInstallReferenceItem`.|  
+|[GetReference Method](iinstallreferenceitem-getreference-method.md)|Gets a pointer to the `FUSION_INSTALL_REFERENCE` structure represented by this `IInstallReferenceItem`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
-- [FUSION_INSTALL_REFERENCE Structure](../../../../docs/framework/unmanaged-api/fusion/fusion-install-reference-structure.md)
+
+- [Fusion Interfaces](fusion-interfaces.md)
+- [FUSION_INSTALL_REFERENCE Structure](fusion-install-reference-structure.md)

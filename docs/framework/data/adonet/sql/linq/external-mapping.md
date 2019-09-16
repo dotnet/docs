@@ -6,30 +6,30 @@ ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
 # External Mapping
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports *external mapping*, a process by which you use a separate XML file to specify mapping between the data model of the database and your object model. Advantages of using an external mapping file include the following:  
   
--   You can keep your mapping code out of your application code. This approach reduces clutter in your application code.  
+- You can keep your mapping code out of your application code. This approach reduces clutter in your application code.  
   
--   You can treat an external mapping file something like a configuration file. For example, you can update how your application behaves after shipping the binaries by just swapping out the external mapping file.  
+- You can treat an external mapping file something like a configuration file. For example, you can update how your application behaves after shipping the binaries by just swapping out the external mapping file.  
   
 ## Requirements  
  The mapping file must be an XML file, and the file must validate against a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] schema definition (.xsd) file.  
   
  The following rules apply:  
   
--   The mapping file must be an XML file.  
+- The mapping file must be an XML file.  
   
--   The XML mapping file must be valid against the XML schema definition file. For more information, see [How to: Validate DBML and External Mapping Files](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md).  
+- The XML mapping file must be valid against the XML schema definition file. For more information, see [How to: Validate DBML and External Mapping Files](how-to-validate-dbml-and-external-mapping-files.md).  
   
--   External mapping overrides attribute-based mapping. In other words, when you use an external mapping source to create a <xref:System.Data.Linq.DataContext>, the <xref:System.Data.Linq.DataContext> ignores all mapping attributes you have created on classes. This behavior is true whether the class is included in the external mapping file.  
+- External mapping overrides attribute-based mapping. In other words, when you use an external mapping source to create a <xref:System.Data.Linq.DataContext>, the <xref:System.Data.Linq.DataContext> ignores all mapping attributes you have created on classes. This behavior is true whether the class is included in the external mapping file.  
   
--   [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the hybrid use of the two mapping approaches (attribute-based and external).  
+- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the hybrid use of the two mapping approaches (attribute-based and external).  
   
 ## XML Schema Definition File  
  External mapping in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] must be valid against the following XML schema definition.  
   
- Distinguish this schema definition file from the schema definition file that is used to validate a DBML file. For more information, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)).  
+ Distinguish this schema definition file from the schema definition file that is used to validate a DBML file. For more information, see [Code Generation in LINQ to SQL](code-generation-in-linq-to-sql.md)).  
   
 > [!NOTE]
->  Visual Studio users will also find this XSD file in the XML Schemas dialog box as "LinqToSqlMapping.xsd". To use this file correctly for validating an external mapping file, see [How to: Validate DBML and External Mapping Files](../../../../../../docs/framework/data/adonet/sql/linq/how-to-validate-dbml-and-external-mapping-files.md).  
+> Visual Studio users will also find this XSD file in the XML Schemas dialog box as "LinqToSqlMapping.xsd". To use this file correctly for validating an external mapping file, see [How to: Validate DBML and External Mapping Files](how-to-validate-dbml-and-external-mapping-files.md).  
   
 ```  
 ?<?xml version="1.0" encoding="utf-16"?>  
@@ -136,6 +136,7 @@ elementFormDefault="qualified" >
 ```  
   
 ## See also
-- [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
-- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
-- [How to: Generate the Object Model as an External File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)
+
+- [Code Generation in LINQ to SQL](code-generation-in-linq-to-sql.md)
+- [Reference](reference.md)
+- [How to: Generate the Object Model as an External File](how-to-generate-the-object-model-as-an-external-file.md)

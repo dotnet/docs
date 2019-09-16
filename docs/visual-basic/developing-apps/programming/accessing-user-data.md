@@ -26,4 +26,5 @@ This section contains topics dealing with the `My.User` object and tasks that yo
 |Determine the user's role|<xref:Microsoft.VisualBasic.ApplicationServices.User.IsInRole%2A>|  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>

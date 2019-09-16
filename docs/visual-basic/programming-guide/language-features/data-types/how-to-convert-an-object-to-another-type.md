@@ -25,9 +25,10 @@ End Sub
 ## Compiling the Code  
  This example requires:  
   
--   A reference to the <xref:System?displayProperty=nameWithType> namespace.  
+- A reference to the <xref:System?displayProperty=nameWithType> namespace.  
   
 ## See also
+
 - <xref:System.Object>
 - [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
 - [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)

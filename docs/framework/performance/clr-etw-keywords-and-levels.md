@@ -19,13 +19,13 @@ ms.author: "mairaw"
   
  The keywords are described in the following tables:  
   
--   [CLR ETW runtime keywords](#runtime)  
+- [CLR ETW runtime keywords](#runtime)  
   
--   [CLR ETW rundown keywords](#rundown)  
+- [CLR ETW rundown keywords](#rundown)  
   
--   [Keyword combinations for symbol resolution for the runtime provider](#runtime_combo)  
+- [Keyword combinations for symbol resolution for the runtime provider](#runtime_combo)  
   
--   [Keyword combinations for symbol resolution for the rundown provider](#rundown_combo)  
+- [Keyword combinations for symbol resolution for the rundown provider](#rundown_combo)  
   
 <a name="runtime"></a>   
 ### CLR ETW Runtime Keywords  
@@ -46,7 +46,7 @@ ms.author: "mairaw"
 |`ContentionKeyword`|0x00004000|Enables the collection of [contention events](../../../docs/framework/performance/contention-etw-events.md).|  
 |`ExceptionKeyword`|0x00008000|Enables the collection of [exception events](../../../docs/framework/performance/exception-thrown-v1-etw-event.md).|  
 |`ThreadingKeyword`|0x00010000|Enables the collection of [thread pool events](../../../docs/framework/performance/thread-pool-etw-events.md).|  
-|`OverrideAndSuppressNGenEventsKeyword`|0x00040000|(Available in the  [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and later.) Suppresses the high-overhead `NGenKeyword` keyword and prevents the generation of events for methods that are inside NGen modules. Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], profiling tools should use `OverrideAndSuppressNGenEventsKeyword` and `NGenKeyword` together to suppress the generation of events for methods in NGen modules. This enables the profiling tool to use the more efficient NGen PDBs to get information about methods in NGen modules. The CLR in the .NET Framework 4 and earlier versions does not support the creation of NGen PDBs. In these earlier versions, the CLR will not recognize `OverrideAndSuppressNGenEventsKeyword` and will process `NGenKeyword` to generate events for methods in NGen modules.|  
+|`OverrideAndSuppressNGenEventsKeyword`|0x00040000|(Available in the  .NET Framework 4.5 and later.) Suppresses the high-overhead `NGenKeyword` keyword and prevents the generation of events for methods that are inside NGen modules. Starting with the .NET Framework 4.5, profiling tools should use `OverrideAndSuppressNGenEventsKeyword` and `NGenKeyword` together to suppress the generation of events for methods in NGen modules. This enables the profiling tool to use the more efficient NGen PDBs to get information about methods in NGen modules. The CLR in the .NET Framework 4 and earlier versions does not support the creation of NGen PDBs. In these earlier versions, the CLR will not recognize `OverrideAndSuppressNGenEventsKeyword` and will process `NGenKeyword` to generate events for methods in NGen modules.|  
 |`PerfTrackKeyWord`|0x2000000|Enables the collection of the `ModuleLoad` and `ModuleRange` events.|  
 |`StackKeyword`|0x40000000|Enables the collection of CLR [stack trace events](../../../docs/framework/performance/stack-etw-event.md).|  
   
@@ -65,7 +65,7 @@ ms.author: "mairaw"
 |`EndRundownKeyword`|0x00000100|Enables the enumeration of system state during an end rundown.|  
 |`AppDomainResourceManagementRundownKeyword`|0x00000800|Enables the collection of events for resource monitoring at an <xref:System.AppDomain> level when used with `StartRundownKeyword` or `EndRundownKeyword`.|  
 |`ThreadingKeyword`|0x00010000|Enables the collection of thread pool events.|  
-|`OverrideAndSuppressNGenEventsRundownKeyword`|0x00040000|(Available in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and later.) Suppresses the high-overhead `NGenRundownKeyword` keyword and prevents the generation of events for methods that are inside NGen modules. Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], profiling tools should use `OverrideAndSuppressNGenEventsRundownKeyword` and `NGenRundownKeyword` together to suppress the generation of events for methods in NGen modules. This enables the profiling tool to use the more efficient NGen PDBs to get information about methods in NGen modules. The CLR in the .NET Framework 4 and earlier versions does not support the creation of NGen PDBs. In these earlier versions, the CLR will not recognize `OverrideAndSuppressNGenEventsRundownKeyword` and will process `NGenRundownKeyword` to generate events for methods in NGen modules.|  
+|`OverrideAndSuppressNGenEventsRundownKeyword`|0x00040000|(Available in the .NET Framework 4.5 and later.) Suppresses the high-overhead `NGenRundownKeyword` keyword and prevents the generation of events for methods that are inside NGen modules. Starting with the .NET Framework 4.5, profiling tools should use `OverrideAndSuppressNGenEventsRundownKeyword` and `NGenRundownKeyword` together to suppress the generation of events for methods in NGen modules. This enables the profiling tool to use the more efficient NGen PDBs to get information about methods in NGen modules. The CLR in the .NET Framework 4 and earlier versions does not support the creation of NGen PDBs. In these earlier versions, the CLR will not recognize `OverrideAndSuppressNGenEventsRundownKeyword` and will process `NGenRundownKeyword` to generate events for methods in NGen modules.|  
 |`PerfTrackKeyWord`|0x2000000|Enables the collection of the `ModuleDCStart`, `ModuleDCEnd`, `ModuleRangeDCStart`, and `ModuleRangeDCEnd` events.|  
   
  [Back to top](#top)  
@@ -117,6 +117,7 @@ ms.author: "mairaw"
  0x0 - LogAlways  
   
 ## See also
+
 - [CLR ETW Providers](../../../docs/framework/performance/clr-etw-providers.md)
 - [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
 - [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

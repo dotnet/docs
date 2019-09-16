@@ -11,13 +11,13 @@ Regardless of how many changes you make to your objects, changes are made only t
   
  When you make this call, the <xref:System.Data.Linq.DataContext> tries to translate your changes into equivalent SQL commands. You can use your own custom logic to override these actions, but the order of submission is orchestrated by a service of the <xref:System.Data.Linq.DataContext> known as the *change processor*. The sequence of events is as follows:  
   
-1.  When you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A>, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] examines the set of known objects to determine whether new instances have been attached to them. If they have, these new instances are added to the set of tracked objects.  
+1. When you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A>, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] examines the set of known objects to determine whether new instances have been attached to them. If they have, these new instances are added to the set of tracked objects.  
   
-2.  All objects that have pending changes are ordered into a sequence of objects based on the dependencies between them. Objects whose changes depend on other objects are sequenced after their dependencies.  
+2. All objects that have pending changes are ordered into a sequence of objects based on the dependencies between them. Objects whose changes depend on other objects are sequenced after their dependencies.  
   
-3.  Immediately before any actual changes are transmitted, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] starts a transaction to encapsulate the series of individual commands.  
+3. Immediately before any actual changes are transmitted, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] starts a transaction to encapsulate the series of individual commands.  
   
-4.  The changes to the objects are translated one by one to SQL commands and sent to the server.  
+4. The changes to the objects are translated one by one to SQL commands and sent to the server.  
   
  At this point, any errors detected by the database cause the submission process to stop, and an exception is raised. All changes to the database are rolled back as if no submissions ever occurred. The <xref:System.Data.Linq.DataContext> still has a full recording of all changes. You can therefore try to correct the problem and call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> again, as in the code example that follows.  
   
@@ -28,7 +28,8 @@ Regardless of how many changes you make to your objects, changes are made only t
  [!code-vb[DLinqSubmittingChanges#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb/Module1.vb#1)]  
   
 ## See also
-- [How to: Detect and Resolve Conflicting Submissions](../../../../../../docs/framework/data/adonet/sql/linq/how-to-detect-and-resolve-conflicting-submissions.md)
-- [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)
-- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
-- [Making and Submitting Data Changes](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)
+
+- [How to: Detect and Resolve Conflicting Submissions](how-to-detect-and-resolve-conflicting-submissions.md)
+- [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md)
+- [Downloading Sample Databases](downloading-sample-databases.md)
+- [Making and Submitting Data Changes](making-and-submitting-data-changes.md)

@@ -31,7 +31,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that specifies the name of the property that matches a single constructor argument.  
   
- <xref:System.Windows.Markup.ConstructorArgumentAttribute> specifies that an object can be initialized by using a non-default constructor syntax, and that a property of the specified name supplies construction information. This information is primarily for XAML serialization. For more information, see <xref:System.Windows.Markup.ConstructorArgumentAttribute>.  
+ <xref:System.Windows.Markup.ConstructorArgumentAttribute> specifies that an object can be initialized by using a non-parameterless constructor syntax, and that a property of the specified name supplies construction information. This information is primarily for XAML serialization. For more information, see <xref:System.Windows.Markup.ConstructorArgumentAttribute>.  
   
 ### ContentPropertyAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.ContentPropertyAttribute>  
@@ -75,7 +75,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A <xref:System.Type> that specifies the most precise type to expect as the `ProvideValue` result of the attributed <xref:System.Windows.Markup.MarkupExtension>.  
   
- For more information, see [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
+ For more information, see [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md).  
   
 ### NameScopePropertyAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.NameScopePropertyAttribute>  
@@ -84,9 +84,9 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** Supports two forms of attribution:  
   
--   A string that specifies the name of a property on the attributed type.  
+- A string that specifies the name of a property on the attributed type.  
   
--   A string that specifies the name of a property, and a <xref:System.Type> for the type that defines the named property. This form is for specifying an attachable member as the XAML namescope property.  
+- A string that specifies the name of a property, and a <xref:System.Type> for the type that defines the named property. This form is for specifying an attachable member as the XAML namescope property.  
   
  <xref:System.Windows.Markup.NameScopePropertyAttribute> specifies a property that provides the XAML namescope value for the attributed class. The XAML namescope property is expected to reference an object that implements <xref:System.Windows.Markup.INameScope> and holds the actual XAML namescope, its store, and its behavior.  
   
@@ -97,7 +97,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that specifies the name of the run-time name property on the attributed type.  
   
- <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> reports a property of the attributed type that maps to the XAML [x:Name Directive](../../../docs/framework/xaml-services/x-name-directive.md). The property must be of type <xref:System.String> and must be read/write.  
+ <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> reports a property of the attributed type that maps to the XAML [x:Name Directive](x-name-directive.md). The property must be of type <xref:System.String> and must be read/write.  
   
  The definition inherits to all derived types that are assignable to the defining type. You can override the definition on a specific derived type by applying <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> on the specific derived type.  
   
@@ -108,7 +108,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** None.  
   
- <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is applied to specific types that might appear as child elements within white-space significant content (content held by a collection that has <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>). <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is mainly relevant to the save path, but is available in the XAML type system in the load path by examining <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A?displayProperty=nameWithType>. For more information, see [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+ <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is applied to specific types that might appear as child elements within white-space significant content (content held by a collection that has <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>). <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is mainly relevant to the save path, but is available in the XAML type system in the load path by examining <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A?displayProperty=nameWithType>. For more information, see [White-space processing in XAML](whitespace-processing-in-xaml.md).  
   
 ### TypeConverterAttribute  
  **Reference Documentation:**  <xref:System.ComponentModel.TypeConverterAttribute>  
@@ -121,7 +121,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  You apply the <xref:System.ComponentModel.TypeConverterAttribute> attribute to your type, referencing your type converter implementation. You can define type converters for XAML on classes, structures, or interfaces. You do not need to provide type conversion for enumerations, that conversion is enabled natively.  
   
- Your type converter should be able to convert from a string that is used for attributes or initialization text in markup, into your intended destination type. For more information, see [TypeConverters and XAML](../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md).  
+ Your type converter should be able to convert from a string that is used for attributes or initialization text in markup, into your intended destination type. For more information, see [TypeConverters and XAML](../wpf/advanced/typeconverters-and-xaml.md).  
   
  Rather than applying to all values of a type, a type converter behavior for XAML can also be established on a specific property. In this case, you apply <xref:System.ComponentModel.TypeConverterAttribute> to the property definition (the outer definition, not the specific `get` and `set` definitions).  
   
@@ -136,7 +136,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that references the relevant property by name.  
   
- Indicates the CLR property of a class that aliases the [x:Uid Directive](../../../docs/framework/xaml-services/x-uid-directive.md).  
+ Indicates the CLR property of a class that aliases the [x:Uid Directive](x-uid-directive.md).  
   
 ### UsableDuringInitializationAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.UsableDuringInitializationAttribute>  
@@ -163,7 +163,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** None.  
   
- <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute> indicates that a collection type should be processed as white-space significant by a XAML processor, which influences the construction of the XAML node stream's value nodes within the collection. For more information, see [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+ <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute> indicates that a collection type should be processed as white-space significant by a XAML processor, which influences the construction of the XAML node stream's value nodes within the collection. For more information, see [White-space processing in XAML](whitespace-processing-in-xaml.md).  
   
 ### XamlDeferLoadAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.XamlDeferLoadAttribute>  
@@ -213,9 +213,9 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:**  
   
--   A string that specifies the identifier of the XAML namespace to subsume.  
+- A string that specifies the identifier of the XAML namespace to subsume.  
   
--   A string that specifies the identifier of the XAML namespace that can subsume the XAML namespace from the previous argument.  
+- A string that specifies the identifier of the XAML namespace that can subsume the XAML namespace from the previous argument.  
   
  <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> specifies that a XAML namespace can be subsumed by another XAML namespace. Typically, the subsuming XAML namespace is indicated in a previously defined <xref:System.Windows.Markup.XmlnsDefinitionAttribute>. This technique can be used for versioning a XAML vocabulary in a library and to make it compatible with previously defined markup against the earlier versioned vocabulary.  
   
@@ -224,44 +224,45 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:**  
   
--   A string that specifies the identifier of the XAML namespace to define.  
+- A string that specifies the identifier of the XAML namespace to define.  
   
--   A string that names a CLR namespace. The CLR namespace should define public types in your assembly, and at least one of the CLR namespace types should be intended for XAML usage.  
+- A string that names a CLR namespace. The CLR namespace should define public types in your assembly, and at least one of the CLR namespace types should be intended for XAML usage.  
   
  <xref:System.Windows.Markup.XmlnsDefinitionAttribute> specifies a mapping on a per-assembly basis between a XAML namespace and a CLR namespace, which is then used for type resolution by a XAML object writer or XAML schema context.  
   
  More than one <xref:System.Windows.Markup.XmlnsDefinitionAttribute> can be applied to an assembly. This might be done for any combination of the following reasons:  
   
--   The library design contains multiple CLR namespaces for logical organization of run-time API access; however, you want all types in those namespaces to be XAML-usable by referencing the same XAML namespace. In this case, you apply several <xref:System.Windows.Markup.XmlnsDefinitionAttribute> attributes using the same <xref:System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace%2A> value but different <xref:System.Windows.Markup.XmlnsDefinitionAttribute.ClrNamespace%2A> values. This is especially useful if you are defining mappings for the XAML namespace that your framework or application intends to be the default XAML namespace in common usage.  
+- The library design contains multiple CLR namespaces for logical organization of run-time API access; however, you want all types in those namespaces to be XAML-usable by referencing the same XAML namespace. In this case, you apply several <xref:System.Windows.Markup.XmlnsDefinitionAttribute> attributes using the same <xref:System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace%2A> value but different <xref:System.Windows.Markup.XmlnsDefinitionAttribute.ClrNamespace%2A> values. This is especially useful if you are defining mappings for the XAML namespace that your framework or application intends to be the default XAML namespace in common usage.  
   
--   The library design contains multiple CLR namespaces, and you want a deliberate XAML namespace separation between the usages of types in those CLR namespaces.  
+- The library design contains multiple CLR namespaces, and you want a deliberate XAML namespace separation between the usages of types in those CLR namespaces.  
   
--   You define a CLR namespace in the assembly, and you want it to be accessible through more than one XAML namespace. This scenario occurs when you are supporting multiple vocabularies with the same codebase.  
+- You define a CLR namespace in the assembly, and you want it to be accessible through more than one XAML namespace. This scenario occurs when you are supporting multiple vocabularies with the same codebase.  
   
--   You define XAML language support in one or more CLR namespaces. For these, the <xref:System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace%2A> value should be `http://schemas.microsoft.com/winfx/2006/xaml`.  
+- You define XAML language support in one or more CLR namespaces. For these, the <xref:System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace%2A> value should be `http://schemas.microsoft.com/winfx/2006/xaml`.  
   
 ### XmlnsPrefixAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.XmlnsPrefixAttribute>  
   
  **Arguments:**  
   
--   A string that specifies the identifier of a XAML namespace.  
+- A string that specifies the identifier of a XAML namespace.  
   
--   A string that specifies a recommended prefix.  
+- A string that specifies a recommended prefix.  
   
  <xref:System.Windows.Markup.XmlnsDefinitionAttribute> specifies a recommended prefix to use for a XAML namespace. The prefix is useful when writing elements and attributes in a XAML file that is serialized by the .NET Framework XAML Services <xref:System.Xaml.XamlXmlWriter>, or when a XAML-implementing library interacts with a design environment that has XAML editing features.  
   
  More than one <xref:System.Windows.Markup.XmlnsPrefixAttribute> can be applied to an assembly. This might be done for any combination of the following reasons:  
   
--   Your assembly defines types for more than one XAML namespace. In this case you should define different prefix values for each XAML namespace.  
+- Your assembly defines types for more than one XAML namespace. In this case you should define different prefix values for each XAML namespace.  
   
--   You are supporting multiple vocabularies, and you use different prefixes for each vocabulary and XAML namespace.  
+- You are supporting multiple vocabularies, and you use different prefixes for each vocabulary and XAML namespace.  
   
--   You define XAML language support in the assembly and have a <xref:System.Windows.Markup.XmlnsDefinitionAttribute> for `http://schemas.microsoft.com/winfx/2006/xaml`. In this case, you typically should promote the prefix `x`.  
+- You define XAML language support in the assembly and have a <xref:System.Windows.Markup.XmlnsDefinitionAttribute> for `http://schemas.microsoft.com/winfx/2006/xaml`. In this case, you typically should promote the prefix `x`.  
   
 > [!NOTE]
->  .NET Framework XAML Services also defines the XAML-related attribute <xref:System.Windows.Markup.RootNamespaceAttribute>. This attribute is an assembly-level attribute for project system support, and it is not relevant for XAML custom types.  
+> .NET Framework XAML Services also defines the XAML-related attribute <xref:System.Windows.Markup.RootNamespaceAttribute>. This attribute is an assembly-level attribute for project system support, and it is not relevant for XAML custom types.  
   
 ## See also
+
 - <xref:System.Attribute>
-- [Defining Custom Types for Use with .NET Framework XAML Services](../../../docs/framework/xaml-services/defining-custom-types-for-use-with-net-framework-xaml-services.md)
+- [Defining Custom Types for Use with .NET Framework XAML Services](defining-custom-types-for-use-with-net-framework-xaml-services.md)

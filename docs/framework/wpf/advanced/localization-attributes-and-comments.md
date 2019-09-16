@@ -8,30 +8,28 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
 ---
 # Localization Attributes and Comments
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] localization comments are properties, inside [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] source code, supplied by developers to provide rules and hints for localization. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] localization comments contain two sets of information: localizability attributes and free-form localization comments. Localizability attributes are used by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Localization API to indicate which resources are to be localized. Free-form comments are any information that the application author wants to include.  
-  
 
-  
 <a name="Localizer_Comments_"></a>   
 ## Localization Comments  
  If markup application authors have requirements for specific elements in [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)], such as constraints on text length, font family, or font size, they can convey this information to localizers with comments in the [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] code. The process for adding comments to source code is as follows:  
   
-1.  Application developer adds localization comments to [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] source code.  
+1. Application developer adds localization comments to [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] source code.  
   
-2.  During the build process, you can specify in the .proj file whether to leave the free-form localization comments in the assembly, strip out part of the comments, or strip out all the comments. The stripped-out comments are placed in a separate file. You specify your option using a `LocalizationDirectivesToLocFile` tag, eg:  
+2. During the build process, you can specify in the .proj file whether to leave the free-form localization comments in the assembly, strip out part of the comments, or strip out all the comments. The stripped-out comments are placed in a separate file. You specify your option using a `LocalizationDirectivesToLocFile` tag, eg:  
   
      `<LocalizationDirectivesToLocFile>` *value* `</LocalizationDirectivesToLocFile>`  
   
-3.  The values that can be assigned are:  
+3. The values that can be assigned are:  
   
-    -   **None** - Both comments and attributes stay inside the assembly and no separate file is generated.  
+    - **None** - Both comments and attributes stay inside the assembly and no separate file is generated.  
   
-    -   **CommentsOnly** - Strips only the comments from the assembly and places them in the separate LocFile.  
+    - **CommentsOnly** - Strips only the comments from the assembly and places them in the separate LocFile.  
   
-    -   **All** - Strips both the comments and the attributes from the assembly and places them both in a separate LocFile.  
+    - **All** - Strips both the comments and the attributes from the assembly and places them both in a separate LocFile.  
   
-4.  When localizable resources are extracted from [!INCLUDE[TLA2#tla_baml](../../../../includes/tla2sharptla-baml-md.md)], the localizability attributes are respected by the [!INCLUDE[TLA2#tla_baml](../../../../includes/tla2sharptla-baml-md.md)] Localization API.  
+4. When localizable resources are extracted from BAML, the localizability attributes are respected by the BAML Localization API.  
   
-5.  Localization comment files, containing only free-form comments, are incorporated into the localization process at a later time.  
+5. Localization comment files, containing only free-form comments, are incorporated into the localization process at a later time.  
   
  The following example shows how to add localization comments to a [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] file.  
   
@@ -70,11 +68,11 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
   
  There are three types of attributes:  
   
--   **Category**. This specifies whether a value should be modifiable from a localizer tool. See <xref:System.Windows.LocalizabilityAttribute.Category%2A>.  
+- **Category**. This specifies whether a value should be modifiable from a localizer tool. See <xref:System.Windows.LocalizabilityAttribute.Category%2A>.  
   
--   **Readability**. This specifies whether a localizer tool should read (and display) a value. See <xref:System.Windows.LocalizabilityAttribute.Readability%2A>.  
+- **Readability**. This specifies whether a localizer tool should read (and display) a value. See <xref:System.Windows.LocalizabilityAttribute.Readability%2A>.  
   
--   **Modifiability**. This specifies whether a localizer tool allows a value to be modified. See <xref:System.Windows.LocalizabilityAttribute.Modifiability%2A>.  
+- **Modifiability**. This specifies whether a localizer tool allows a value to be modified. See <xref:System.Windows.LocalizabilityAttribute.Modifiability%2A>.  
   
  These attributes can be specified in any order delimited by a space. In case duplicate attributes are specified, the last attribute will override former ones. For example, Localization.Attributes = "Unmodifiable Modifiable" sets Modifiability to Modifiable because it is the last value.  
   
@@ -94,7 +92,8 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
  Localization.Comments contains free-form strings concerning the targeted value. Application developers can add information to give localizers hints about how the applications text should be translated. The format of the comments can be any string surrounded by "()". Use '\\' to escape characters.  
   
 ## See also
-- [Globalization for WPF](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md)
-- [Use Automatic Layout to Create a Button](../../../../docs/framework/wpf/advanced/how-to-use-automatic-layout-to-create-a-button.md)
-- [Use a Grid for Automatic Layout](../../../../docs/framework/wpf/advanced/how-to-use-a-grid-for-automatic-layout.md)
-- [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md)
+
+- [Globalization for WPF](globalization-for-wpf.md)
+- [Use Automatic Layout to Create a Button](how-to-use-automatic-layout-to-create-a-button.md)
+- [Use a Grid for Automatic Layout](how-to-use-a-grid-for-automatic-layout.md)
+- [Localize an Application](how-to-localize-an-application.md)

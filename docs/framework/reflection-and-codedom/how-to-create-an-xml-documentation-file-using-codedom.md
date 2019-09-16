@@ -17,23 +17,23 @@ CodeDOM can be used to create code that generates XML documentation. The process
   
 ### To create a CodeDOM graph that contains XML documentation comments  
   
-1.  Create a <xref:System.CodeDom.CodeCompileUnit> containing the CodeDOM graph for the sample application.  
+1. Create a <xref:System.CodeDom.CodeCompileUnit> containing the CodeDOM graph for the sample application.  
   
-2.  Use the <xref:System.CodeDom.CodeCommentStatement.%23ctor%2A> constructor with the `docComment` parameter set to `true` to create the XML documentation comment elements and text.  
+2. Use the <xref:System.CodeDom.CodeCommentStatement.%23ctor%2A> constructor with the `docComment` parameter set to `true` to create the XML documentation comment elements and text.  
   
      [!code-csharp[CodeDomHelloWorldSample#4](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#4)]
      [!code-vb[CodeDomHelloWorldSample#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#4)]  
   
 ### To generate the code from the CodeCompileUnit  
   
-1.  Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit%2A> method to generate the code and create a source file to be compiled.  
+1. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit%2A> method to generate the code and create a source file to be compiled.  
   
      [!code-csharp[CodeDomHelloWorldSample#5](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#5)]
      [!code-vb[CodeDomHelloWorldSample#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#5)]  
   
 ### To compile the code and generate the documentation file  
   
-1.  Add the **/doc** compiler option to the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A> property of a <xref:System.CodeDom.Compiler.CompilerParameters> object and pass the object to the <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile%2A> method to create the XML documentation file when the code is compiled.  
+1. Add the **/doc** compiler option to the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A> property of a <xref:System.CodeDom.Compiler.CompilerParameters> object and pass the object to the <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile%2A> method to create the XML documentation file when the code is compiled.  
   
      [!code-csharp[CodeDomHelloWorldSample#6](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#6)]
      [!code-vb[CodeDomHelloWorldSample#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#6)]  
@@ -71,9 +71,10 @@ CodeDOM can be used to create code that generates XML documentation. The process
   
 ## Compiling the Code  
   
--   This code example requires the `FullTrust` permission set to execute successfully.  
+- This code example requires the `FullTrust` permission set to execute successfully.  
   
 ## See also
-- [Documenting Your Code with XML](~/docs/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
-- [XML Documentation Comments](~/docs/csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+
+- [Documenting Your Code with XML](../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
+- [XML Documentation Comments](../../csharp/programming-guide/xmldoc/index.md)
 - [XML Documentation](/cpp/ide/xml-documentation-visual-cpp)

@@ -4,13 +4,13 @@ description: Learn unit test concepts for F# in .NET Core through an interactive
 author: billwagner
 ms.author: wiwagn
 ms.date: 08/30/2017
-dev_langs: 
-  - "fsharp"
 ms.custom: "seodec18"
 ---
 # Unit testing F# libraries in .NET Core using dotnet test and MSTest
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-with-fsharp-mstest/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+
+[!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
 
 ## Creating the source project
 
@@ -25,7 +25,7 @@ Inside the solution directory, create a *MathService* directory. The directory a
     /MathService
 ```
 
-Make *MathService* the current directory and run [`dotnet new classlib -lang F#`](../tools/dotnet-new.md) to create the source project.  To use test-driven development (TDD), you'll create a failing implementation of the math service:
+Make *MathService* the current directory and run [`dotnet new classlib -lang F#`](../tools/dotnet-new.md) to create the source project.  You'll create a failing implementation of the math service:
 
 ```fsharp
 module MyMath =
@@ -39,7 +39,7 @@ to add the class library project to the solution.
 
 Next, create the *MathService.Tests* directory. The following outline shows the directory structure:
 
-```
+```console
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService
@@ -60,7 +60,7 @@ Make the *MathService.Tests* directory the current directory and create a new pr
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added MSTest and the MSTest runner. Now, add the `MathService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```
+```console
 dotnet add reference ../MathService/MathService.fsproj
 ```
 
@@ -83,7 +83,7 @@ Execute [`dotnet sln add .\MathService.Tests\MathService.Tests.fsproj`](../tools
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Open *Tests.fs* and add the following code:
+You write one failing test, make it pass, then repeat the process. Open *Tests.fs* and add the following code:
 
 ```fsharp
 namespace MathService.Tests
@@ -119,9 +119,9 @@ member this.TestEvenSequence() =
 
 Notice that the `expected` sequence has been converted to a list. The MSTest library relies on many standard .NET types. That dependency means that your public interface and expected results support <xref:System.Collections.ICollection> rather than <xref:System.Collections.IEnumerable>.
 
-When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `Mathservice` class that works:
+When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the `Mathservice` class that works:
 
-```csharp
+```fsharp
 let squaresOfOdds xs =
     Seq.empty<int> |> Seq.toList
 ```

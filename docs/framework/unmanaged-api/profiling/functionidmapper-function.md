@@ -22,14 +22,14 @@ Notifies the profiler that the given identifier of a function may be remapped to
   
 ## Syntax  
   
-```  
+```cpp  
 UINT_PTR __stdcall FunctionIDMapper (  
     [in]  FunctionID  funcId,   
     [out] BOOL       *pbHookFunction  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcId`  
  [in] The function identifier to be remapped.  
   
@@ -58,6 +58,7 @@ UINT_PTR __stdcall FunctionIDMapper (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [SetFunctionIDMapper Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setfunctionidmapper-method.md)
 - [FunctionIDMapper2 Function](../../../../docs/framework/unmanaged-api/profiling/functionidmapper2-function.md)
 - [FunctionEnter2 Function](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)

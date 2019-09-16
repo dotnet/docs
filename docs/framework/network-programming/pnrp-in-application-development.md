@@ -14,4 +14,5 @@ In Windows Vista, networking applications can access name publication and resolu
  Message passing between PeerToPeer applications is still handled by underlying architectures such as PeerChannel and WCF [Large Data and Streaming](https://go.microsoft.com/fwlink/?LinkID=179652).  
   
 ## See also
+
 - <xref:System.Net.PeerToPeer>

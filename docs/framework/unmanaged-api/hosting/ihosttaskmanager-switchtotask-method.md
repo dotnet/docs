@@ -23,13 +23,13 @@ Notifies the host that it should switch out the current task.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SwitchToTask (  
     [in] DWORD option  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `option`  
  [in] One of the [WAIT_OPTION](../../../../docs/framework/unmanaged-api/hosting/wait-option-enumeration.md) enumeration values, indicating the action the host should take if the requested operation blocks.  
   
@@ -48,7 +48,7 @@ HRESULT SwitchToTask (
  The host can switch in another task as desired or needed.  
   
 > [!NOTE]
->  `SwitchToTask` does not specify which task the host should switch to; it specifies only the task that it should switch from.  
+> `SwitchToTask` does not specify which task the host should switch to; it specifies only the task that it should switch from.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -60,6 +60,7 @@ HRESULT SwitchToTask (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

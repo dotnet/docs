@@ -23,14 +23,14 @@ Gets the base memory address of the specified image.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageBase (  
     [in, string] LPCWSTR    imagePath,  
     [out] CLRDATA_ADDRESS   *baseAddress  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `imagePath`  
  [in] The file name of the image, including its path.  
   
@@ -50,4 +50,5 @@ HRESULT GetImageBase (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

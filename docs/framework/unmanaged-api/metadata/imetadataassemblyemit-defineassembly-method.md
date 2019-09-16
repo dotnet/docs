@@ -23,7 +23,7 @@ Creates an `Assembly` structure containing metadata for the specified assembly a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineAssembly (  
     [in]  void                 *pbPublicKey,  
     [in]  ULONG                cbPublicKey,  
@@ -35,7 +35,7 @@ HRESULT DefineAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbPublicKey`  
  [in] The public key that identifies the publisher of the assembly, or NULL if the assembly is not strongly named.  
   
@@ -70,4 +70,5 @@ HRESULT DefineAssembly (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

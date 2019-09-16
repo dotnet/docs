@@ -7,56 +7,56 @@ author: "BrucePerlerMS"
 # How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF
 ## Applies To  
   
--   Microsoft® Windows® Identity Foundation (WIF)  
+- Microsoft® Windows® Identity Foundation (WIF)  
   
--   ASP.NET® Web Forms  
+- ASP.NET® Web Forms  
   
 ## Summary  
  This How-To provides detailed step-by-step procedures for creating simple claims-aware ASP.NET Web Forms application. It also provides instructions for how to test the simple claims-aware ASP.NET Web Forms application for successful implementation of federated authentication. This How-To does not have detailed instructions for creating a Security Token Service (STS), and assumes you have already configured an STS.  
   
 ## Contents  
   
--   Objectives  
+- Objectives  
   
--   Summary of Steps  
+- Summary of Steps  
   
--   Step 1 – Create a Simple ASP.NET Web Forms Application  
+- Step 1 – Create a Simple ASP.NET Web Forms Application  
   
--   Step 2 – Configure ASP.NET Web Forms Application for Claims-Based Authentication  
+- Step 2 – Configure ASP.NET Web Forms Application for Claims-Based Authentication  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Objectives  
   
--   Configure ASP.NET Web Forms application for claims-based authentication  
+- Configure ASP.NET Web Forms application for claims-based authentication  
   
--   Test successful claims-aware ASP.NET Web Forms application  
+- Test successful claims-aware ASP.NET Web Forms application  
   
 ## Summary of Steps  
   
--   Step 1 – Create Simple ASP.NET Web Forms Application  
+- Step 1 – Create Simple ASP.NET Web Forms Application  
   
--   Step 2 – Configure ASP.NET Web Forms Application for Federated Authentication  
+- Step 2 – Configure ASP.NET Web Forms Application for Federated Authentication  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Step 1 – Create a Simple ASP.NET Web Forms Application  
  In this step, you will create a new ASP.NET Web Forms application.  
   
 #### To create a simple ASP.NET application  
   
-1.  Start Visual Studio and click **File**, **New**, and then **Project**.  
+1. Start Visual Studio and click **File**, **New**, and then **Project**.  
   
-2.  In the **New Project** window, click **ASP.NET Web Forms Application**.  
+2. In the **New Project** window, click **ASP.NET Web Forms Application**.  
   
-3.  In **Name**, enter `TestApp` and press **OK**.  
+3. In **Name**, enter `TestApp` and press **OK**.  
   
 ## Step 2 – Configure ASP.NET Web Forms Application for Claims-Based Authentication  
  In this step you will add configuration entries to the *Web.config* configuration file of your ASP.NET Web Forms application to make it claims-aware.  
   
 #### To configure ASP.NET application for claims-based authentication  
   
-1.  Add the following configuration section entries to the *Web.config* configuration file immediately after the **\<configuration>** opening element:  
+1. Add the following configuration section entries to the *Web.config* configuration file immediately after the **\<configuration>** opening element:  
   
     ```xml  
     <configSections>  
@@ -65,7 +65,7 @@ author: "BrucePerlerMS"
     </configSections>  
     ```  
   
-2.  Add a **\<location>** element that enables access to the application’s federation metadata:  
+2. Add a **\<location>** element that enables access to the application’s federation metadata:  
   
     ```xml  
     <location path="FederationMetadata">  
@@ -77,7 +77,7 @@ author: "BrucePerlerMS"
     </location>  
     ```  
   
-3.  Add the following configuration entries within the **\<system.web>** elements to deny users, disable native authentication, and enable WIF to manage authentication.  
+3. Add the following configuration entries within the **\<system.web>** elements to deny users, disable native authentication, and enable WIF to manage authentication.  
   
     ```xml  
     <authorization>  
@@ -86,7 +86,7 @@ author: "BrucePerlerMS"
     <authentication mode="None" />  
     ```  
   
-4.  Add a **\<system.webServer>** element that defines the modules for federated authentication. Note that the *PublicKeyToken* attribute must be the same as the *PublicKeyToken* attribute for the **\<configSections>** entries added earlier:  
+4. Add a **\<system.webServer>** element that defines the modules for federated authentication. Note that the *PublicKeyToken* attribute must be the same as the *PublicKeyToken* attribute for the **\<configSections>** entries added earlier:  
   
     ```xml  
     <system.webServer>  
@@ -97,7 +97,7 @@ author: "BrucePerlerMS"
     </system.webServer>  
     ```  
   
-5.  Add the following Windows Identity Foundation related configuration entries and ensure that your ASP.NET application’s URL and port number match the values in the **\<audienceUris>** entry, **realm** attribute of the **\<wsFederation>** element, and the **reply** attribute of the **\<wsFederation>** element. Also ensure that the **issuer** value fits your Security Token Service (STS) URL.  
+5. Add the following Windows Identity Foundation related configuration entries and ensure that your ASP.NET application’s URL and port number match the values in the **\<audienceUris>** entry, **realm** attribute of the **\<wsFederation>** element, and the **reply** attribute of the **\<wsFederation>** element. Also ensure that the **issuer** value fits your Security Token Service (STS) URL.  
   
     ```xml  
     <system.identityModel>  
@@ -121,19 +121,19 @@ author: "BrucePerlerMS"
     </system.identityModel.services>  
     ```  
   
-6.  Add reference to the <xref:System.IdentityModel> assembly.  
+6. Add reference to the <xref:System.IdentityModel> assembly.  
   
-7.  Compile the solution to make sure there are no errors.  
+7. Compile the solution to make sure there are no errors.  
   
 ## Step 3 – Test Your Solution  
  In this step you will test your ASP.NET Web Forms application configured for claims-based authentication. To perform a basic test, you will add code that displays claims in the token issued by the Security Token Service (STS).  
   
 #### To test your ASP.NET Web Form application for claims-based authentication  
   
-1.  Open the **Default.aspx** file under the **TestApp** project and replace its existing markup with the following markup:  
+1. Open the **Default.aspx** file under the **TestApp** project and replace its existing markup with the following markup:  
   
-    ```  
-    %@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>  
+    ```aspx-csharp
+    <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>  
   
     <!DOCTYPE html>  
   
@@ -152,12 +152,12 @@ author: "BrucePerlerMS"
     </html>  
     ```  
   
-2.  Save **Default.aspx**, and then open its code behind file named **Default.aspx.cs**.  
+2. Save **Default.aspx**, and then open its code behind file named **Default.aspx.cs**.  
   
     > [!NOTE]
-    >  **Default.aspx.cs** may be hidden beneath **Default.aspx** in Solution Explorer. If **Default.aspx.cs** is not visible, expand **Default.aspx** by clicking on the triangle next to it.  
+    > **Default.aspx.cs** may be hidden beneath **Default.aspx** in Solution Explorer. If **Default.aspx.cs** is not visible, expand **Default.aspx** by clicking on the triangle next to it.  
   
-3.  Replace the existing code in the **Page_Load** method of **Default.aspx.cs** with the following code:  
+3. Replace the existing code in the **Page_Load** method of **Default.aspx.cs** with the following code:  
   
     ```csharp  
     using System;  
@@ -196,8 +196,8 @@ author: "BrucePerlerMS"
     }  
     ```  
   
-4.  Save **Default.aspx.cs**, and build the solution.  
+4. Save **Default.aspx.cs**, and build the solution.  
   
-5.  Run the solution by pressing the **F5** key.  
+5. Run the solution by pressing the **F5** key.  
   
-6.  You should be presented with the page that displays the claims in the token that was issued to you by the Security Token Service.
+6. You should be presented with the page that displays the claims in the token that was issued to you by the Security Token Service.

@@ -22,7 +22,7 @@ Provides flag values used for registration when installing a module or composite
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum   
 {  
     regNoCopy  = 0x00000001,  
@@ -49,4 +49,5 @@ typedef enum
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

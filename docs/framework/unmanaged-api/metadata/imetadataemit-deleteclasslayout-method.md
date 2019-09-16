@@ -23,13 +23,13 @@ Destroys the class layout metadata signature for the type represented by the spe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteClassLayout (  
     [in]  mdTypeDef   td  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] An `mdTypeDef` metadata token that represents the type for which the class layout will be deleted.  
   
@@ -43,5 +43,6 @@ HRESULT DeleteClassLayout (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

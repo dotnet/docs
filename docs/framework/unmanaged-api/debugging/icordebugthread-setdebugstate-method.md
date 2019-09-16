@@ -23,13 +23,13 @@ Sets flags that describe the debugging state of this ICorDebugThread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetDebugState (  
     [in] CorDebugThreadState state  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `state`  
  [in] A bitwise combination of CorDebugThreadState enumeration values that specify the debugging state of this thread.  
   

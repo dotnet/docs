@@ -23,7 +23,7 @@ Gets metadata information for the event represented by the specified event token
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEventProps (  
    [in]  mdEvent       ev,  
    [out] mdTypeDef     *pClass,   
@@ -41,7 +41,7 @@ HRESULT GetEventProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ev`  
  [in] The event metadata token representing the event to get metadata for.  
   
@@ -88,5 +88,6 @@ HRESULT GetEventProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

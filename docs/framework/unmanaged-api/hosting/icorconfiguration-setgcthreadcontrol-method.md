@@ -23,13 +23,13 @@ Sets the callback interface for scheduling threads for non-runtime tasks that wo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCThreadControl (  
     [in] IGCThreadControl* pGCThreadControl  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pGCThreadControl`  
  [in] A pointer to an [IGCThreadControl](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md) object that notifies the host about the suspension of threads for non-runtime tasks.  
   
@@ -46,4 +46,5 @@ HRESULT SetGCThreadControl (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)

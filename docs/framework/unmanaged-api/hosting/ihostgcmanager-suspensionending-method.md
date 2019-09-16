@@ -23,13 +23,13 @@ Notifies the host that the common language runtime (CLR) is resuming execution o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SuspensionEnding (  
     [in] DWORD generation  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `generation`  
  [in] The garbage collection generation that is just finishing, from which the thread is resuming.  
   
@@ -48,7 +48,7 @@ HRESULT SuspensionEnding (
  The CLR calls `SuspensionEnding` after it performs a garbage collection, to inform the host that the thread is resuming execution.  
   
 > [!IMPORTANT]
->  Do not reschedule the thread the method call was made from.  
+> Do not reschedule the thread the method call was made from.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -60,6 +60,7 @@ HRESULT SuspensionEnding (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

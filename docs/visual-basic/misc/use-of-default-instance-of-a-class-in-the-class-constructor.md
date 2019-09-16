@@ -8,7 +8,8 @@ A default instance of a class has been used in the constructor of the class. Thi
   
 ## To correct this error  
   
--   Remove the default instance from the class constructor.  
+- Remove the default instance from the class constructor.  
   
 ## See also
-- [Constructors](~/docs/visual-basic/programming-guide/concepts/object-oriented-programming.md#constructors)
+
+- [Constructors](../programming-guide/concepts/object-oriented-programming.md#constructors)

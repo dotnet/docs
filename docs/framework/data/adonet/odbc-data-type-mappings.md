@@ -4,9 +4,9 @@ ms.date: "03/30/2017"
 ms.assetid: 43c35d32-831d-480f-a150-78f7e869d17f
 ---
 # ODBC Data Type Mappings
-The following table shows the inferred [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type for data types from the .NET Framework Data Provider for ODBC (<xref:System.Data.Odbc>). The typed accessor methods for the <xref:System.Data.Odbc.OdbcDataReader> are also listed.  
+The following table shows the inferred .NET Framework type for data types from the .NET Framework Data Provider for ODBC (<xref:System.Data.Odbc>). The typed accessor methods for the <xref:System.Data.Odbc.OdbcDataReader> are also listed.  
   
-|ODBC type|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] typed accessor|  
+|ODBC type|.NET Framework type|.NET Framework typed accessor|  
 |---------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------|  
 |SQL_BIGINT|Int64|GetInt64()|  
 |SQL_BINARY|Byte[]|GetBytes()|  
@@ -30,5 +30,6 @@ The following table shows the inferred [!INCLUDE[dnprdnshort](../../../../includ
 |SQL_WVARCHAR|String<br /><br /> Char[]|GetString()<br /><br /> GetChars()|  
   
 ## See also
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)
+- [ADO.NET Overview](ado-net-overview.md)

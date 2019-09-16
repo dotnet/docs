@@ -23,13 +23,13 @@ Sets the flags that control the just-in-time (JIT) compilation of this ICorDebug
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetJITCompilerFlags (  
     [in] DWORD dwFlags  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwFlags`  
  [in] A bitwise combination of the [CorDebugJITCompilerFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugjitcompilerflags-enumeration.md) enumeration values.  
   

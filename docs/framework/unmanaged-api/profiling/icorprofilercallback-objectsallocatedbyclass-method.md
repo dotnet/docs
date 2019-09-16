@@ -23,14 +23,14 @@ Notifies the profiler about the number of instances of each specified class that
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ObjectsAllocatedByClass(  
     [in] ULONG   cClassCount,  
     [in, size_is(cClassCount)] ClassID classIds[] ,  
     [in, size_is(cClassCount)] ULONG   cObjects[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cClassCount`  
  [in] The size of the `classIds` and `cObjects` arrays.  
   
@@ -57,4 +57,5 @@ HRESULT ObjectsAllocatedByClass(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

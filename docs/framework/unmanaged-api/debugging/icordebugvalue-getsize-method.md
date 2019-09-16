@@ -23,13 +23,13 @@ Gets the size, in bytes, of this "ICorDebugValue" object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize (  
     [out] ULONG32   *pSize  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSize`  
  [out] The size, in bytes, of this value object.  
   

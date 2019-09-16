@@ -23,14 +23,14 @@ Gets a value that indicates whether any managed callbacks are currently queued f
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HasQueuedCallbacks (  
     [in] ICorDebugThread *pThread,  
     [out] BOOL           *pbQueued  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pThread`  
  [in] A pointer to an "ICorDebugThread" object that represents the thread.  
   
@@ -54,4 +54,3 @@ HRESULT HasQueuedCallbacks (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

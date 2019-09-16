@@ -1,0 +1,80 @@
+- name: Processing Drives, Directories, and Files
+  href: processing.md
+  items:
+  - name: File Access with Visual Basic
+    href: file-access.md
+    items:
+    - name: Reading from Files
+      href: reading-from-files.md
+      items:
+      - name: "How to: Read From Text Files"
+        href: how-to-read-from-text-files.md
+      - name: "How to: Read From Comma-Delimited Text Files"
+        href: how-to-read-from-comma-delimited-text-files.md
+      - name: "How to: Read From Fixed-width Text Files"
+        href: how-to-read-from-fixed-width-text-files.md
+      - name: "How to: Read From Text Files with Multiple Formats"
+        href: how-to-read-from-text-files-with-multiple-formats.md
+      - name: "How to: Read From Binary Files"
+        href: how-to-read-from-binary-files.md
+      - name: "How to: Read Text from Files with a StreamReader"
+        href: how-to-read-text-from-files-with-a-streamreader.md
+    - name: Writing to Files
+      href: writing-to-files.md
+      items:
+      - name: "How to: Write Text to Files"
+        href: how-to-write-text-to-files.md
+      - name: "How to: Append to Text Files"
+        href: how-to-append-to-text-files.md
+      - name: "How to: Write to Binary Files"
+        href: how-to-write-to-binary-files.md
+      - name: "How to: Write Text to Files in the My Documents Directory"
+        href: how-to-write-text-to-files-in-the-my-documents-directory.md
+      - name: "How to: Write Text to Files with a StreamWriter"
+        href: how-to-write-text-to-files-with-a-streamwriter.md
+    - name: Creating, Deleting, and Moving Files and Directories
+      href: creating-deleting-and-moving-files-and-directories.md
+      items:
+      - name: "How to: Copy Files with a Specific Pattern to a Directory"
+        href: how-to-copy-files-with-a-specific-pattern-to-a-directory.md
+      - name: "How to: Create a Copy of a File in the Same Directory"
+        href: how-to-create-a-copy-of-a-file-in-the-same-directory.md
+      - name: "How to: Create a Copy of a File in a Different Directory"
+        href: how-to-create-a-copy-of-a-file-in-a-different-directory.md
+      - name: "How to: Create a File"
+        href: how-to-create-a-file.md
+      - name: "How to: Delete a File"
+        href: how-to-delete-a-file.md
+      - name: "How to: Find Files with a Specific Pattern"
+        href: how-to-find-files-with-a-specific-pattern.md
+      - name: "How to: Move a File"
+        href: how-to-move-a-file.md
+      - name: "How to: Rename a File"
+        href: how-to-rename-a-file.md
+      - name: "How to: Copy a Directory to Another Directory"
+        href: how-to-copy-a-directory-to-another-directory.md
+      - name: "How to: Create a Directory"
+        href: how-to-create-a-directory.md
+      - name: "How to: Find Subdirectories with a Specific Pattern"
+        href: how-to-find-subdirectories-with-a-specific-pattern.md
+      - name: "How to: Get the Collection of Files in a Directory"
+        href: how-to-get-the-collection-of-files-in-a-directory.md
+      - name: "How to: Retrieve the Contents of the My Documents Directory"
+        href: how-to-retrieve-the-contents-of-the-my-documents-directory.md
+      - name: "How to: Parse File Paths"
+        href: how-to-parse-file-paths.md
+    - name: Parsing Text Files with the TextFieldParser Object
+      href: parsing-text-files-with-the-textfieldparser-object.md
+    - name: File Encodings
+      href: file-encodings.md
+    - name: "Troubleshooting: Reading from and Writing to Text Files"
+      href: troubleshooting-reading-from-and-writing-to-text-files.md
+  - name: Basics of .NET Framework File I/O and the File System
+    href: basics-of-net-framework-file-io-and-the-file-system.md
+    items:
+    - name: Classes Used in .NET Framework File I/O and the File System
+      href: classes-used-in-net-framework-file-io-and-the-file-system.md
+  - name: "Walkthrough: Manipulating Files by Using .NET Framework Methods"
+    href: walkthrough-manipulating-files-by-using-net-framework-methods.md
+  - name: "Walkthrough: Manipulating Files and Directories"
+    href: walkthrough-manipulating-files-and-directories.md

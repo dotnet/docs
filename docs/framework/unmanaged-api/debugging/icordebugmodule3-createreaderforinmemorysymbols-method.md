@@ -23,13 +23,13 @@ Creates a debug symbol reader for a dynamic module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateReaderForInMemorySymbols (  
       [in] REFIID riid,  
       [out][iid_is(riid)] void **    ppObj  
 ```  
   
-#### Parameters  
+## Parameters  
  riid  
  [in] The IID of the COM interface to return. Typically, this is an [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md).  
   
@@ -66,6 +66,7 @@ HRESULT CreateReaderForInMemorySymbols (
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 

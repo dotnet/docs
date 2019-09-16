@@ -14,9 +14,9 @@ If you have a multiple-document interface (MDI) application, you can merge menu 
 ## General Concepts  
  Merging procedures involve both a target and a source control:  
   
--   The target is the <xref:System.Windows.Forms.MenuStrip> control on the main or MDI parent form into which you are merging menu items.  
+- The target is the <xref:System.Windows.Forms.MenuStrip> control on the main or MDI parent form into which you are merging menu items.  
   
--   The source is the <xref:System.Windows.Forms.MenuStrip> control on the MDI child form that contains the menu items you want to merge into the target menu.  
+- The source is the <xref:System.Windows.Forms.MenuStrip> control on the MDI child form that contains the menu items you want to merge into the target menu.  
   
  The <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property identifies the menu item whose drop-down list you will populate with the titles of the current MDI parent form's MDI children. For example, you typically list MDI children that are currently open on the **Window** menu.  
   
@@ -48,8 +48,9 @@ If you have a multiple-document interface (MDI) application, you can merge menu 
  You can trigger automatic merging by activating the <xref:System.Windows.Forms.MenuStrip> on the MDI source. Upon activation, the source <xref:System.Windows.Forms.MenuStrip> is merged into the MDI target. When a new form becomes active, the merge is reverted on the last form and triggered on the new form. You can control this behavior by setting the <xref:System.Windows.Forms.ToolStripItem.MergeAction%2A> property as needed on each <xref:System.Windows.Forms.ToolStripItem>, and by setting the <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A> property on each <xref:System.Windows.Forms.MenuStrip>.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStripManager>
 - <xref:System.Windows.Forms.MenuStrip>
-- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)
-- [How to: Create an MDI Window List with MenuStrip](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-window-list-with-menustrip-windows-forms.md)
-- [How to: Set Up Automatic Menu Merging for MDI Applications](../../../../docs/framework/winforms/controls/how-to-set-up-automatic-menu-merging-for-mdi-applications.md)
+- [MenuStrip Control](menustrip-control-windows-forms.md)
+- [How to: Create an MDI Window List with MenuStrip](how-to-create-an-mdi-window-list-with-menustrip-windows-forms.md)
+- [How to: Set Up Automatic Menu Merging for MDI Applications](how-to-set-up-automatic-menu-merging-for-mdi-applications.md)

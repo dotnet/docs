@@ -23,7 +23,7 @@ Applies the changes in the metadata and the changes in the Microsoft intermediat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ApplyChanges (  
     [in] ULONG                       cbMetadata,  
     [in, size_is(cbMetadata)] BYTE   pbMetadata[],  
@@ -32,7 +32,7 @@ HRESULT ApplyChanges (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbMetadata`  
  [in] Size, in bytes, of the delta metadata.  
   

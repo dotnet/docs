@@ -23,7 +23,7 @@ The `CreateBreakpoint` method is currently not implemented.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateBreakpoint (  
     [out] ICorDebugValueBreakpoint **ppBreakpoint  
 );  
@@ -39,4 +39,3 @@ HRESULT CreateBreakpoint (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

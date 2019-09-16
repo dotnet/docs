@@ -23,22 +23,22 @@ Gets the estimated binary size of the assembly and its metadata in the current s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSaveSize (  
     [in]  CorSaveSize fSave,  
     [out] DWORD       *pdwSaveSize  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fSave`  
  [in] A value of the [CorSaveSize](../../../../docs/framework/unmanaged-api/metadata/corsavesize-enumeration.md) enumeration that specifies whether to get an accurate or approximate size. Only three values are valid: cssAccurate, cssQuick, and cssDiscardTransientCAs:  
   
--   cssAccurate returns the exact save size but takes longer to calculate.  
+- cssAccurate returns the exact save size but takes longer to calculate.  
   
--   cssQuick returns a size, padded for safety, but takes less time to calculate.  
+- cssQuick returns a size, padded for safety, but takes less time to calculate.  
   
--   cssDiscardTransientCAs tells `GetSaveSize` that it can throw away discardable custom attributes.  
+- cssDiscardTransientCAs tells `GetSaveSize` that it can throw away discardable custom attributes.  
   
  `pdwSaveSize`  
  [out] A pointer to the size that is required to save the file.  
@@ -60,5 +60,6 @@ HRESULT GetSaveSize (
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

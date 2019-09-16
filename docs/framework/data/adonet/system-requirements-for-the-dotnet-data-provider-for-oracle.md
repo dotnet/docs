@@ -16,9 +16,7 @@ The .NET Framework Data Provider for Oracle requires Microsoft Data Access Compo
 ### Setting the Unicode Value in a Connection String Attribute  
  When working with Oracle, you can use the connection string attribute  
   
-```  
-Unicode=True   
-```  
+`Unicode=True`
   
  to initialize the Oracle client libraries in UTF-16 mode. This causes the Oracle client libraries to accept UTF-16 (which is very similar to UCS-2) instead of multi-byte strings. This allows the Data Provider for Oracle to always work with any Oracle code page without additional translation work. This configuration only works if you are using Oracle 9i clients to communicate with an Oracle 9i database with the alternate character set of AL16UTF16. When an Oracle 9i client communicates with an Oracle 9i server, additional resources are required to convert the Unicode **CommandText** values to the appropriate multi-byte character set that the Oracle9i server uses. This can be avoided when you know that you have the safe configuration by adding `Unicode=True` to your connection string.  
   
@@ -32,5 +30,6 @@ Unicode=True
  For usability reasons, the <xref:System.Data.OracleClient.OracleLob> object inherits from the .NET Framework Stream class, and provides **ReadByte** and **WriteByte** methods. It also implements methods, such as **CopyTo** and **Erase**, that work on sections of Oracle **LOB** objects. In contrast, Oracle client software provides a number of APIs to work with character **LOB**s (**CLOB** and **NCLOB**). However, these APIs work on full characters only. Because of this difference, the Data Provider for Oracle implements support for **Read** and **ReadByte** to work with UTF-16 data in a byte-wise manner. However, the other methods of the **OracleLob** object only allow full-character operations.  
   
 ## See also
-- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Oracle and ADO.NET](oracle-and-adonet.md)
+- [ADO.NET Overview](ado-net-overview.md)

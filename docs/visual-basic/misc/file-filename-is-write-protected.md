@@ -8,7 +8,8 @@ The file you are attempting to write to is write-protected and therefore cannot 
   
 ## To correct this error  
   
-1.  Change permissions on the file to read/write, or write to a different file.  
+1. Change permissions on the file to read/write, or write to a different file.  
   
 ## See also
+
 - [Troubleshooting: Reading from and Writing to Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)

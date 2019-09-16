@@ -22,7 +22,7 @@ Specifies the metadata tokens that will be checked for duplicates.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorCheckDuplicatesFor {  
   
     MDDupAll                    = 0xffffffff,  
@@ -100,4 +100,5 @@ typedef enum CorCheckDuplicatesFor {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

@@ -1,4 +1,4 @@
-### WF serializes Expressions.Literal\<T> DateTimes differently now (breaks custom XAML parsers)
+### WF serializes Expressions.Literal&lt;T&gt; DateTimes differently now (breaks custom XAML parsers)
 
 |   |   |
 |---|---|
@@ -7,4 +7,3 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-

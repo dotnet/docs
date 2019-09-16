@@ -1,12 +1,13 @@
 ---
-title: Getting started with .NET Core using the CLI
+title: Get started with .NET Core using the CLI
 description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
-author: cartermp
-ms.date: 09/10/2018
+author: thraka
+ms.author: adegeo
+ms.date: 08/07/2019
 ms.technology: dotnet-cli
 ms.custom: "seodec18"
 ---
-# Getting started with .NET Core on Windows/Linux/macOS using the command line
+# Get started with .NET Core on Windows/Linux/macOS using the command line
 
 This topic will show you how to start developing cross-platforms apps in your machine using the .NET Core CLI tools.
 
@@ -14,7 +15,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Prerequisites
 
-- [.NET Core SDK 2.1](https://www.microsoft.com/net/download/core).
+- [.NET Core SDK 2.1](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Hello, Console App!
@@ -24,13 +25,13 @@ You can [view or download the sample code](https://github.com/dotnet/samples/tre
 Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following:
 
 ```console
-$ dotnet new console
-$ dotnet run
+dotnet new console
+dotnet run
 ```
 
 Let's do a quick walkthrough:
 
-1. `$ dotnet new console`
+1. `dotnet new console`
 
    [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `Hello.csproj` project file with the dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
 
@@ -40,8 +41,8 @@ Let's do a quick walkthrough:
 
    The project file specifies everything that's needed to restore dependencies and build the program.
 
-   * The `OutputType` tag specifies that we're building an executable, in other words a console application.
-   * The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 2.1.
+   - The `OutputType` tag specifies that we're building an executable, in other words a console application.
+   - The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 2.1.
 
    `Program.cs`:
 
@@ -53,12 +54,12 @@ Let's do a quick walkthrough:
 
    [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-   `dotnet new` calls [`dotnet restore`](../tools/dotnet-restore.md) implicitly. `dotnet restore` calls into [NuGet](https://www.nuget.org/) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies defined in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file, which is necessary to compile and run the sample. 
-   
+   `dotnet new` calls [`dotnet restore`](../tools/dotnet-restore.md) implicitly. `dotnet restore` calls into [NuGet](https://www.nuget.org/) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies defined in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file, which is necessary to compile and run the sample.
+
    > [!IMPORTANT]
    > If you're using a .NET Core 1.x version of the SDK, you'll have to call `dotnet restore` yourself after calling `dotnet new`.
 
-2. `$ dotnet run`
+2. `dotnet run`
 
    [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
 
@@ -68,6 +69,7 @@ Let's do a quick walkthrough:
     ```
 
     Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp2.1\Hello.dll` on Windows (use `/` for non-Windows systems). You may also specify arguments to the application as you'll see later on the topic.
+
     ```console
     $ dotnet bin\Debug\netcoreapp2.1\Hello.dll
     Hello World!
@@ -112,7 +114,7 @@ And that's it!  You can augment `Program.cs` any way you like.
 
 ## Working with multiple files
 
-Single files are fine for simple one-off programs, but if you're building a more complex app, you're probably going to have multiple source files on your project
+Single files are fine for simple one-off programs, but if you're building a more complex app, you're probably going to have multiple source files on your project.
 Let's build off of the previous Fibonacci example by caching some Fibonacci values and add some recursive features.
 
 1. Add a new file inside the *Hello* directory named *FibonacciGenerator.cs* with the following code:
@@ -146,10 +148,23 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
    377
    ```
 
-And that's it! Now, you can start using the basic concepts learned here to create your own programs.
+## Publish your app
 
-Note that the commands and steps shown in this tutorial to run your application are used during development time only. Once you're ready to deploy your app, you'll want to take a look at the different [deployment strategies](../deploying/index.md) for .NET Core apps and the [`dotnet publish`](../tools/dotnet-publish.md) command.
+Once you're ready to distribute your app, use the [`dotnet publish`](../tools/dotnet-publish.md) command to generate the _publish_ folder at _bin\\debug\\netcoreapp2.1\\publish\\_ (use `/` for non-Windows systems). You can distribute the contents of the _publish_ folder to other platforms as long as they've already installed the dotnet runtime.
+
+You can run your published app with the [dotnet](../tools/dotnet.md) command:
+
+```console
+$ dotnet bin\Debug\netcoreapp2.1\publish\Hello.dll
+Hello World!
+```
+
+## Conclusion
+
+And that's it! Now, you can start using the basic concepts learned here to create your own programs.
 
 ## See also
 
 - [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
+- [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md)
+- [Learn more about app deployment](../deploying/index.md)

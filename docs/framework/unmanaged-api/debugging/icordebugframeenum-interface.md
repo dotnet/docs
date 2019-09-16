@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFrameEnum Interface1"
+title: "ICorDebugFrameEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugFrameEnum"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugFrameEnum Interface1
+# ICorDebugFrameEnum Interface
+
 Implements ICorDebugEnum methods, and enumerates ICorDebugFrame arrays.  
   
 ## Methods  
@@ -29,7 +30,7 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugFrame arrays.
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -41,4 +42,5 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugFrame arrays.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -30,16 +30,16 @@ Holds values that can be only `True` or `False`. The keywords `True` and `False`
   
 ## Programming Tips  
   
--   **Negative Numbers.** `Boolean` is not a numeric type and cannot represent a negative value. In any case, you should not use `Boolean` to hold numeric values.  
+- **Negative Numbers.** `Boolean` is not a numeric type and cannot represent a negative value. In any case, you should not use `Boolean` to hold numeric values.  
   
--   **Type Characters.** `Boolean` has no literal type character or identifier type character.  
+- **Type Characters.** `Boolean` has no literal type character or identifier type character.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Boolean?displayProperty=nameWithType> structure.  
+- **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Boolean?displayProperty=nameWithType> structure.  
   
 ## Example  
  In the following example, `runningVB` is a `Boolean` variable, which stores a simple yes/no setting.  
   
-```  
+```vb  
 Dim runningVB As Boolean  
 ' Check to see if program is running on Visual Basic engine.  
 If scriptEngine = "VB" Then  
@@ -48,6 +48,7 @@ End If
 ```  
   
 ## See also
+
 - <xref:System.Boolean?displayProperty=nameWithType>
 - [Data Types](../../../visual-basic/language-reference/data-types/index.md)
 - [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)

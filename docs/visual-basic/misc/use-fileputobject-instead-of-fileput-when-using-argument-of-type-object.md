@@ -10,11 +10,11 @@ The `FilePut` method includes an argument of type `Object`. `FilePutObject` shou
   
 ## To correct this error  
   
--   Replace `FilePut` with `FilePutObject`.  
+- Replace `FilePut` with `FilePutObject`.  
   
--   Cast the `Object` argument to a more specific type.  
+- Cast the `Object` argument to a more specific type.  
   
--   Use the functionality available in the `My.Computer.FileSystem` object.  
+- Use the functionality available in the `My.Computer.FileSystem` object.  
   
 ## See also
 

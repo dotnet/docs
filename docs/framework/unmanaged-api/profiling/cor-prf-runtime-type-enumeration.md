@@ -22,7 +22,7 @@ Contains values that indicate the version of the common language runtime (CLR): 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     COR_PRF_DESKTOP_CLR = 0x1,  
@@ -49,4 +49,5 @@ typedef enum
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

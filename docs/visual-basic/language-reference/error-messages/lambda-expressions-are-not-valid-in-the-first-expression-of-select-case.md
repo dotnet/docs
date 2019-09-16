@@ -23,9 +23,9 @@ You cannot use a lambda expression for the test expression in a `Select Case` st
   
 ## To correct this error  
   
--   Examine your code to determine whether a different conditional construction, such as an `If...Then...Else` statement, would work for you.  
+- Examine your code to determine whether a different conditional construction, such as an `If...Then...Else` statement, would work for you.  
   
--   You may have intended to call the function, as shown in the following code:  
+- You may have intended to call the function, as shown in the following code:  
   
 ```vb  
 Dim num? As Integer  
@@ -35,6 +35,7 @@ End Select
 ```  
   
 ## See also
+
 - [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
 - [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)

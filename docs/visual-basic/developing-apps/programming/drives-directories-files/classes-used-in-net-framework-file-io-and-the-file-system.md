@@ -8,7 +8,7 @@ ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
 # Classes Used in .NET Framework File I/O and the File System (Visual Basic)
 The following tables list the classes commonly used for .NET Framework file I/O, categorized into file I/O classes, classes used for creating streams, and classes used to read and write to streams.  
   
- To enter the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] documentation and find a more comprehensive listing, see [Class Library Overview](../../../../standard/class-library-overview.md).  
+For a more comprehensive listing, see [Class Library Overview](../../../../standard/class-library-overview.md).  
   
 ## Basic I/O Classes for Files, Drives, and Directories  
  The following table lists and describes the main classes used for file I/O.  
@@ -51,6 +51,7 @@ The following tables list the classes commonly used for .NET Framework file I/O,
 |<xref:System.IO.StringWriter?displayProperty=nameWithType>|Writes characters to a `String`. Output can be either a stream in any encoding or a `String`.|  
   
 ## See also
+
 - [Composing Streams](../../../../standard/io/composing-streams.md)
 - [File and Stream I/O](../../../../standard/io/index.md)
 - [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)

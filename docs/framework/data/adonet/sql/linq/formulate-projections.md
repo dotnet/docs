@@ -60,14 +60,15 @@ The following examples show how the `select` statement in C# and `Select` statem
 ## Example  
  The following example uses nested queries to return the following results:  
   
--   A sequence of all orders and their corresponding `OrderID`s.  
+- A sequence of all orders and their corresponding `OrderID`s.  
   
--   A subsequence of the items in the order for which there is a discount.  
+- A subsequence of the items in the order for which there is a discount.  
   
--   The amount of money saved if the cost of shipping is not included.  
+- The amount of money saved if the cost of shipping is not included.  
   
  [!code-csharp[DLinqQueryExamples#65](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#65)]
  [!code-vb[DLinqQueryExamples#65](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#65)]  
   
 ## See also
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+
+- [Query Examples](query-examples.md)

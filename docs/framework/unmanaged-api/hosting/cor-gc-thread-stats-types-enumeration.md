@@ -22,7 +22,7 @@ Indicates the garbage collection statistics for a thread.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_GC_THREAD_HAS_PROMOTED_BYTES  = 0x00000001  
 } COR_GC_THREAD_STATS_TYPES;  
@@ -42,4 +42,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

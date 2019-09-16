@@ -23,13 +23,13 @@ Gets the current handle for the active part of this ICorDebugThread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandle (  
     [out] HTHREAD *phThreadHandle  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phThreadHandle`  
  [out] A pointer to an HTHREAD that is the handle of the active part of this thread.  
   

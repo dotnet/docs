@@ -1,1 +1,0 @@
-.NET Compact Framework

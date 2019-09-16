@@ -25,14 +25,14 @@ Enumerates the processes that are running on a remote computer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumProcesses (  
        [out]  DWORD*                  pcProcs,   
        [out]  CoreClrDebugProcInfo**  ppProcs  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcProcs`  
  [out] The number of processes returned in `ppProcs`. This value can be 0 (zero).  
   
@@ -62,4 +62,5 @@ HRESULT EnumProcesses (
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
+
 - [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

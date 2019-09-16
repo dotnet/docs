@@ -141,7 +141,7 @@ your design intent to pass arguments by reference to
 avoid unnecessary copying. You don't intend to modify the object used
 as that argument.
 
-This practice often improves performance for readonly value types that are larger than <xref:System.IntPtr.Size?displayProperty=nameWithType>. For simple types (`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal` and `bool`, and `enum` types), any potential performance gains are minimial. In fact, performance may degrade by using pass-by-reference for types smaller than <xref:System.IntPtr.Size?displayProperty=nameWithType>.
+This practice often improves performance for readonly value types that are larger than <xref:System.IntPtr.Size?displayProperty=nameWithType>. For simple types (`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal` and `bool`, and `enum` types), any potential performance gains are minimal. In fact, performance may degrade by using pass-by-reference for types smaller than <xref:System.IntPtr.Size?displayProperty=nameWithType>.
 
 The following code shows an example of a method
 that calculates the distance between two points in 3D space.
@@ -233,6 +233,8 @@ The compiler generates more efficient code when you call members of a
 is always an `in` parameter passed by reference to the member method. This optimization
 saves copying when you use a `readonly struct` as an `in` argument.
 
+You should not pass a nullable value type as an `in` argument. The <xref:System.Nullable%601> type is not declared as a read-only struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
+
 You can see an example program that demonstrates the performance differences using [Benchmark.net](https://www.nuget.org/packages/BenchmarkDotNet/) in our [samples repository](https://github.com/dotnet/samples/tree/master/csharp/safe-efficient-code/benchmark) on GitHub. It compares passing a mutable struct by value and by reference with passing an immutable struct by value and by reference. The use of the immutable struct and pass by reference is fastest.
 
 ## Use `ref struct` types to work with blocks or memory on a single stack frame
@@ -241,10 +243,7 @@ A related language feature is the ability to declare a value type that
 must be constrained to a single stack frame. This restriction enables the compiler to make several optimizations. The primary motivation for this feature
 was <xref:System.Span%601> and related structures. You'll achieve performance improvements from these enhancements by using new and updated .NET APIs that make use of the <xref:System.Span%601> type.
 
-You may have similar requirements working with memory created
-using [`stackalloc`](language-reference/keywords/stackalloc.md) or
-when using memory from interop APIs. You can define your own `ref struct` types
-for those needs.
+You may have similar requirements working with memory created using [`stackalloc`](language-reference/operators/stackalloc.md) or when using memory from interop APIs. You can define your own `ref struct` types for those needs.
 
 ## `readonly ref struct` type
 

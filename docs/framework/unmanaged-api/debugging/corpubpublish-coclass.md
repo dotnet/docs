@@ -22,7 +22,7 @@ Provides interfaces for publishing information about application domains and pro
   
 ## Syntax  
   
-```  
+```cpp  
 coclass CorpubPublish {  
     [default] interface ICorPublish;  
     interface           ICorPublishProcess;  
@@ -55,4 +55,5 @@ coclass CorpubPublish {
  **.NET Framework Versions:**  [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

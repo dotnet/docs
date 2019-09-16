@@ -32,15 +32,15 @@ Specifies how string comparisons are made.
   
 ### To set -optioncompare in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
   
-2.  Click the **Compile** tab.  
+2. Click the **Compile** tab.  
   
-3.  Modify the value in the **Option Compare** box.  
+3. Modify the value in the **Option Compare** box.  
   
 ### To set -optioncompare programmatically  
   
--   See [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md).  
+- See [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md).  
   
 ## Example  
  The following code compiles `ProjFile.vb` and uses binary string comparisons.  
@@ -50,6 +50,7 @@ vbc -optioncompare:binary projFile.vb
 ```  
   
 ## See also
+
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
 - [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)

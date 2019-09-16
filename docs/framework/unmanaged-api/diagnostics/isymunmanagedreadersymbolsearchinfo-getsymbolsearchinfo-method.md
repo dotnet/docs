@@ -23,7 +23,7 @@ Gets symbol search information.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymbolSearchInfo(  
     [in]  ULONG32  cSearchInfo,  
     [out] ULONG32  *pcSearchInfo,  
@@ -31,7 +31,7 @@ HRESULT GetSymbolSearchInfo(
         ISymUnmanagedSymbolSearchInfo **rgpSearchInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cSearchInfo`  
  [in] A `ULONG32` that indicates the size of `rgpSearchInfo`.  
   
@@ -48,4 +48,5 @@ HRESULT GetSymbolSearchInfo(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReaderSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)

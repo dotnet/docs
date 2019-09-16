@@ -23,7 +23,7 @@ Gets the name, size, and contents of the metadata stream at the specified index.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataStreamInfo (  
    [in]  ULONG        ix,  
    [out] const char   **ppchName,  
@@ -32,7 +32,7 @@ HRESULT GetMetaDataStreamInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ix`  
  [in] The index of the requested metadata stream.  
   
@@ -55,5 +55,6 @@ HRESULT GetMetaDataStreamInfo (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)

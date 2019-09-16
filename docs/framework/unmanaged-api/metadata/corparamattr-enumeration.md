@@ -22,7 +22,7 @@ Contains values that describe the metadata of a method parameter.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorParamAttr {  
   
     pdIn                        =   0x0001,  
@@ -58,4 +58,5 @@ typedef enum CorParamAttr {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

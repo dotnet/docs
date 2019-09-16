@@ -23,13 +23,13 @@ Gets the string representation of this managed object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSerializedBuffer (  
     [out] BSTR *pBSTR  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBSTR`  
  [out] A pointer to a string that is the serialized object.  
   
@@ -46,4 +46,5 @@ HRESULT GetSerializedBuffer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IManagedObject Interface](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)

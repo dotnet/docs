@@ -7,10 +7,11 @@ author: "BrucePerlerMS"
 # \<chunkedCookieHandler>
 Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Default" or "Chunked".  
   
- \<system.identityModel.services>  
-\<federationConfiguration>  
-\<cookieHandler>  
-\<chunkedCookieHandler>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cookieHandler>**](cookiehandler.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<chunkedCookieHandler>**  
   
 ## Syntax  
   
@@ -41,7 +42,7 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<cookieHandler>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md)|Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) uses to read and write cookies.|  
+|[\<cookieHandler>](cookiehandler.md)|Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) uses to read and write cookies.|  
   
 ## Remarks  
  When you specify a <xref:System.IdentityModel.Services.ChunkedCookieHandler> by setting the `mode` attribute of the `<cookieHandler>` element to "Default" or "Chunked", you can specify the chunk size that the cookie handler uses to read and write cookies by including a `<chunkedCookieHandler>` child element and setting its `chunkSize` attribute. If the `<chunkedCookieHandler>` element is not present, the default chunk size of 2000 bytes is used. This element cannot be specified when the `mode` attribute is set to "Custom".  
@@ -58,4 +59,5 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Services.ChunkedCookieHandler>

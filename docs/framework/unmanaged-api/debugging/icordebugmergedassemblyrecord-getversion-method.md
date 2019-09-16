@@ -10,7 +10,7 @@ Gets the assembly's version information.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersion(  
    [out] USHORT *pMajor,   
    [out] USHORT *pMinor,   
@@ -19,7 +19,7 @@ HRESULT GetVersion(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMajor`  
  [out] A pointer to the major version number.  
   
@@ -36,7 +36,7 @@ HRESULT GetVersion(
  For information on assembly version numbers, see the <xref:System.Version> class topic.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -48,5 +48,6 @@ HRESULT GetVersion(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugMergedAssemblyRecord Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

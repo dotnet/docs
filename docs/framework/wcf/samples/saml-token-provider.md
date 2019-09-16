@@ -4,25 +4,25 @@ ms.date: "03/30/2017"
 ms.assetid: eb16e5e2-4c8d-4f61-a479-9c965fcec80c
 ---
 # SAML Token Provider
-This sample demonstrates how to implement a custom client SAML token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with an [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:
+This sample demonstrates how to implement a custom client SAML token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with a CardSpace token provider. Custom token providers are useful in the following cases:
 
--   If you have a credential store that these token providers cannot operate with.
+- If you have a credential store that these token providers cannot operate with.
 
--   If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the WCF client framework uses the credentials.
+- If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the WCF client framework uses the credentials.
 
--   If you are building a custom token.
+- If you are building a custom token.
 
  This sample shows how to build a custom token provider that allows a SAML token obtained from outside of the WCF client framework to be used.
 
  To summarize, this sample demonstrates the following:
 
--   How a client can be configured with a custom token provider.
+- How a client can be configured with a custom token provider.
 
--   How a SAML token can be passed to the custom client credentials.
+- How a SAML token can be passed to the custom client credentials.
 
--   How the SAML token is provided to the WCF client framework.
+- How the SAML token is provided to the WCF client framework.
 
--   How the server is authenticated by the client using the server's X.509 certificate.
+- How the server is authenticated by the client using the server's X.509 certificate.
 
  The service exposes two endpoints for communicating with the service, defined using the configuration file App.config. Each endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsFederationHttpBinding`, which uses Message security. One endpoint expects the client to authenticate with a SAML token that uses a symmetric proof key while the other expects the client to authenticate with a SAML token that uses an asymmetric proof key. The service also configures the service certificate using `serviceCredentials` behavior. The `serviceCredentials` behavior allows you to configure a service certificate. A service certificate is used by a client to authenticate the service and provide message protection. The following configuration references the "localhost" certificate installed during the sample setup as described in the setup instructions at the end of this topic. The `serviceCredentials` behavior also allows you to configure certificates that are trusted to sign SAML tokens. The following configuration references the 'Alice' certificate installed during the sample.
 
@@ -107,7 +107,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
 
  The following steps show how to develop a custom SAML token provider and integrate it with WCF: security framework:
 
-1.  Write a custom SAML token provider.
+1. Write a custom SAML token provider.
 
      The sample implements a custom SAML token provider that returns a security token based on a SAML assertion that is provided at construction time.
 
@@ -150,7 +150,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
     }
     ```
 
-2.  Write custom security token manager.
+2. Write custom security token manager.
 
      The <xref:System.IdentityModel.Selectors.SecurityTokenManager> class is used to create <xref:System.IdentityModel.Selectors.SecurityTokenProvider> for specific <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> that is passed to it in `CreateSecurityTokenProvider` method. A security token manager is also used to create token authenticators and token serializer, but those are not covered by this sample. In this sample the custom security token manager inherits from the <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> class and overrides the `CreateSecurityTokenProvider` method to return the custom SAML token provider when the passed token requirements indicate that the SAML token is requested. If the client credentials class (see step 3) has not specified an assertion, the security token manager creates an appropriate instance.
 
@@ -222,7 +222,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
     }
     ```
 
-3.  Write a custom client credential.
+3. Write a custom client credential.
 
      Client credentials class is used to represent the credentials that are configured for the client proxy and creates a security token manager that is used to obtain token authenticators, token providers and token serializer.
 
@@ -265,7 +265,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
     }
     ```
 
-4.  Configure the client to use the custom client credential.
+4. Configure the client to use the custom client credential.
 
      The sample deletes the default client credential class and supplies the new client credential class so the client can use the custom client credential.
 
@@ -297,7 +297,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
 
  The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration.
 
--   Creating the server certificate:
+- Creating the server certificate:
 
      The following lines from the Setup.bat batch file create the server certificate to be used. The `%SERVER_NAME%` variable specifies the server name. Change this variable to specify your own server name. The default value in this batch file is localhost.
 
@@ -313,7 +313,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
     makecert.exe -sr LocalMachine -ss My -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe
     ```
 
--   Installing the server certificate into the client's trusted certificate store:
+- Installing the server certificate into the client's trusted certificate store:
 
      The following lines in the Setup.bat batch file copy the server certificate into the client trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the client system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft-issued certificate—this step of populating the client certificate store with the server certificate is not required.
 
@@ -321,7 +321,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
     certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r LocalMachine -s TrustedPeople
     ```
 
--   Creating the issuer certificate.
+- Creating the issuer certificate.
 
      The following lines from the Setup.bat batch file create the issuer certificate to be used. The `%USER_NAME%` variable specifies the issuer name. Change this variable to specify your own issuer name. The default value in this batch file is Alice.
 
@@ -337,7 +337,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
     makecert.exe -sr CurrentUser -ss My -a sha1 -n CN=%USER_NAME% -sky exchange -pe
     ```
 
--   Installing the issuer certificate into the server's trusted certificate store.
+- Installing the issuer certificate into the server's trusted certificate store.
 
      The following lines in the Setup.bat batch file copy the server certificate into the client trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the client system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft-issued certificate—this step of populating the server certificate store with the issuer certificate is not required.
 
@@ -347,50 +347,48 @@ This sample demonstrates how to implement a custom client SAML token provider. A
 
 #### To set up and build the sample
 
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
 > [!NOTE]
->  If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.
+> If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.
 
 #### To run the sample on the same computer
 
-1.  Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
-2.  Launch Service.exe from service\bin.  
+2. Launch Service.exe from service\bin.  
   
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computers  
   
-1.  Create a directory on the service computer for the service binaries.  
+1. Create a directory on the service computer for the service binaries.  
   
-2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
+2. Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run in a Developer Command Prompt for Visual Studio window opened with administrator privileges. You must set the `%SERVER_NAME%` variable to the fully-qualified host name of the computer that is used to host the service.  
+3. You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run in a Developer Command Prompt for Visual Studio window opened with administrator privileges. You must set the `%SERVER_NAME%` variable to the fully-qualified host name of the computer that is used to host the service.  
   
-4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. This step is not necessary when the server certificate is issued by a client trusted issuer.  
+4. Copy the server certificate into the CurrentUser-TrustedPeople store of the client. This step is not necessary when the server certificate is issued by a client trusted issuer.  
   
-5.  In the Service.exe.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.  
+5. In the Service.exe.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.  
   
-6.  On the service computer, run Service.exe from a command prompt.  
+6. On the service computer, run Service.exe from a command prompt.  
   
-7.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
+7. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
   
-8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
+8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
   
 9. On the client computer, launch `Client.exe` from a command prompt window.  
   
-10. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+10. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To clean up after the sample  
   
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
-  
-## See also
+1. Run Cleanup.bat in the samples folder once you have finished running the sample.  

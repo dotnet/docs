@@ -65,7 +65,7 @@ In recent previews of Visual Studio 2019 Update 3, we have made changes to the i
 
 ### Visual Studio for MacOS
 
-NET Core 2.1 is installed when you install Visual Studio for Mac and select the .NET Core workload. To get started with .NET Core development on MacOS, see [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019).
+The latest release version of the .NET Core tools are installed when you install Visual Studio for Mac and select the .NET Core workload. To get started with .NET Core development on MacOS, see [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019).
 
 ![Install Visual Studio for Mac](media/install-vs-mac.png "Install Visual Studio for Mac")
 

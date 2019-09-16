@@ -1,11 +1,13 @@
 ---
 title: Docker - gRPC for WCF Developers
-description: TO BE WRITTEN
+description: Creating Docker images for ASP.NET Core gRPC applications
 author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Docker
+
+This section will cover the creation of Docker images for ASP.NET Core gRPC applications, ready to run in Docker, Kubernetes or other container environments. [The sample application used is available from GitHub](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/StockKube).
 
 ## Microsoft base images for ASP.NET Core applications
 
@@ -44,7 +46,7 @@ COPY . .
 
 RUN dotnet restore
 
-RUN dotnet publish -c Release -o /published src/TraderSys.Portfolios/TraderSys.Portfolios.csproj
+RUN dotnet publish -c Release -o /published src/StockData/StockData.csproj
 
 # Runtime image creation
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
@@ -56,7 +58,7 @@ WORKDIR /app
 
 COPY --from=builder /published .
 
-ENTRYPOINT [ "dotnet", "TraderSys.Portfolios.dll" ]
+ENTRYPOINT [ "dotnet", "StockData.dll" ]
 ```
 
 The Dockerfile has two parts: the first uses the `sdk` base image to build and publish the application; the second creates a runtime image from the `aspnet` base. This is because the `sdk` image is around 900MB compared to around 200MB for the runtime image, and most of its contents are unnecessary at runtime.
@@ -105,7 +107,7 @@ obj/
 For a solution with a single application, and thus a single Dockerfile, it is simplest to put the Dockerfile in the base directory; that is, the same directory as the `.sln` file. In that case, to build the image, use the following `docker build` command from the directory containing the Dockerfile.
 
 ```console
-docker build --tag portfolios .
+docker build --tag stockdata .
 ```
 
 The confusingly-named `--tag` flag (which can be shortened to `-t`) specifies the whole name of the image, *including* the actual tag if specified. The `.` at the end specifies the *context* in which the build will be run; the current working directory for the `COPY` commands in the Dockerfile.
@@ -113,7 +115,7 @@ The confusingly-named `--tag` flag (which can be shortened to `-t`) specifies th
 If you have multiple applications within a single solution, you can keep the Dockerfile for each application in its own folder, beside the `.csproj` file, but you should still run the `docker build` command from the base directory to ensure that the solution and all the projects are copied into the image. You can specify a Dockerfile below the current directory using the `--file` (or `-f`) flag.
 
 ```console
-docker build --tag portfolios --file src/Portfolios/Dockerfile .
+docker build --tag stockdata --file src/StockData/Dockerfile .
 ```
 
 ## Run the image in a container on your machine
@@ -121,7 +123,7 @@ docker build --tag portfolios --file src/Portfolios/Dockerfile .
 To run the image in your local Docker instance, use the `docker run` command.
 
 ```console
-docker run -ti -p 5000:80 portfolios
+docker run -ti -p 5000:80 stockdata
 ```
 
 The `-ti` flag connects your current terminal to the container's terminal and runs in interactive mode. The `-p 5000:80` publishes (links) port 80 on the container to port 80 on the localhost network interface.
@@ -133,15 +135,15 @@ Once you have verified that the image works, you will need to push it to a Docke
 To push to the Docker Hub you will need to prefix the image name with your user or organization name.
 
 ```console
-docker tag portfolios myorg/portfolios
-docker push myorg/portfolios
+docker tag stockdata myorg/stockdata
+docker push myorg/stockdata
 ```
 
 To push to a private registry prefix the image name with the registry host name as well as the organization name.
 
 ```console
-docker tag portfolios internal-registry:5000/myorg/portfolios
-docker push internal-registry:5000/myorg/portfolios
+docker tag stockdata internal-registry:5000/myorg/stockdata
+docker push internal-registry:5000/myorg/stockdata
 ```
 
 Once the image is in a registry you can deploy it to individual Docker hosts or to a container orchestration engine like Kubernetes.

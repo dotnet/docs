@@ -1,6 +1,6 @@
 ---
 title: Self-hosted gRPC applications - gRPC for WCF Developers
-description: TO BE WRITTEN
+description: Deploying ASP.NET Core gRPC applications as self-hosted services
 author: markrendle
 ms.date: 09/02/2019
 ---

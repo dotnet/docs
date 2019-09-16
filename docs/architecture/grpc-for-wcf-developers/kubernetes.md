@@ -1,6 +1,6 @@
 ---
 title: Kubernetes - gRPC for WCF Developers
-description: TO BE WRITTEN
+description: Running ASP.NET Core gRPC services in a Kubernetes cluster
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -17,7 +17,7 @@ Kubernetes includes the following functionality:
 - **Ingress** exposes selected services externally, and generally provides load-balancing across instances of those services.
 - **Resource management** attaches external resources such as storage to containers.
 
-This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. [The sample application used is available from GitHub.](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/Kubed)
+This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. [The sample application used is available from GitHub.](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/StockKube)
 
 ## Kubernetes terminology
 

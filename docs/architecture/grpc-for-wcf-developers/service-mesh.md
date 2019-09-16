@@ -13,13 +13,13 @@ Kubernetes service meshes work by adding an extra container, called a *sidecar p
 
 Take the [previous chapter's example](kubernetes.md#testing-the-application), where the gRPC requests from the web application were all routed to a single instance of the gRPC service. This happens because the service's hostname is resolved to an IP address, and that IP address is cached for the lifetime of the `HttpClientHandler` instance. It might be possible to work around this by handling DNS lookups manually or creating multiple clients, but this would complicate the application code considerably without adding any business or customer value.
 
-Using a service mesh, the requests from the application container are sent to the sidecar proxy, which can distribute them intelligently across all instances of the other service.
+Using a service mesh, the requests from the application container are sent to the sidecar proxy, which can distribute them intelligently across all instances of the other service. The mesh will also be able to handle retry semantics for failed calls or timeouts, re-routing a request to an alternate instance in the case of a failure without returning to the client application at all.
 
 Here is a screenshot of the StockWeb application running with the Linkerd service mesh, with no changes to the application code, or even the Docker image being used. The only change required was the addition of an annotation to the Deployment in the YAML files for the `stockdata` and `stockweb` services.
 
 ![StockWeb with Service Mesh](images/stockweb-servicemesh-screenshot.png)
 
-You can see from the Server column that the requests from the StockWeb application have been routed to both replicas of the StockData service, despite originating from a single `HttpClient` instance in the application code.
+You can see from the Server column that the requests from the StockWeb application have been routed to both replicas of the StockData service, despite originating from a single `HttpClient` instance in the application code. In fact, if you review the code, you will see that all 100 requests to the StockData service are made simultaneously using the same `HttpClient` instance, yet with the service mesh, those requests will be balanced across however many service instances are available.
 
 Service meshes only apply to traffic within a cluster. For external clients, see [the next chapter, Load Balancing](load-balancing.md).
 

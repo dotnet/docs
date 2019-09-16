@@ -160,7 +160,7 @@ To summarize,
 | Small Package                                             | ✔️                            | ❌                        | ✔️                            | ❌                        |  
 | Target Machine specific publish                           | ❌                             | ✔️                       | ✔️                            | ✔️                       |  
 | Need target machine native dependencies installed         | ✔️                            | ✔️                       | ✔️                            | ✔️                       |  
-| Share Core Runtime across multiple apps (reduce footprint)| ✔️                            | ❌                        | ✔️                            | ❌                        |  
+| Share Core Runtime across multiple apps                   | ✔️                            | ❌                        | ✔️                            | ❌                        |  
 | Isolated from changes to shared runtime                   | ❌                             | ✔️                       | ❌                             | ✔️                       |  
 | Trimming Available                                        | ❌                             | ❌                        | ✔️                            | ✔️                       |  
 

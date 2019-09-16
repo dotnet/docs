@@ -8,13 +8,13 @@ ms.custom:
 ---
 # Packaging your Application
 
-There are a couple of options when it comes to packaging up your desktop application to make it ready for deployment the users� computer.
+There are a couple of options when it comes to packaging up your desktop application to make it ready for deployment the users' computer.
 
 ## Windows Application Packaging Project (package your app as an MSIX)
 
-The MSIX application package format provides a modern packaging experience to all Windows apps. It enables both initial deployment and automatic detection and deployment of updates. 
+The [MSIX application package](https://docs.microsoft.com/windows/msix/overview) format provides a modern packaging experience to all Windows apps. It enables both initial deployment of the app, automatic detection, and deployment of updates. 
 
-You can use the Windows Application Packaging Project in Visual Studio to generate an [MSIX package](https://docs.microsoft.com/windows/msix/overview) for your .NET Core 3.0 or later app. You can then sideload this app on to a computer.
+You can use the Windows Application Packaging Project in Visual Studio to generate an MSIX package for your .NET Core 3.0 or later app. You can then sideload this app on to a computer.
 
 Note: Currently MSIX packaging is only supported for self-contained deployment, it is not available for framework-dependent deployments.
 
@@ -33,6 +33,6 @@ For more information about packaging your app as an MSI using Visual Studio Inst
 
 ## Third party installers
 
-In addition to using Visual Studio to create an MSIX or MSI deployment, there are other third-party products and installers that can be used to package a desktop application. 
+In addition to using Visual Studio to create an MSIX or MSI package, there are other third-party products and installers that can be used to package a desktop application. 
 
 More information about these installers can be found in the document [Package a desktop app using third-party installers](https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-third-party-installer)

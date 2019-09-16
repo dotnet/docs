@@ -20,13 +20,14 @@ ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # Creating Prototypes in Managed Code
 This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
   
  Before you can access an unmanaged DLL function from managed code, you need to know the name of the function and the name of the DLL that exports it. With this information, you can begin to write the managed definition for an unmanaged function that is implemented in a DLL. Furthermore, you can adjust the way that platform invoke creates the function and marshals data to and from the function.  
   
 > [!NOTE]
->  Windows API functions that allocate a string enable you to free the string by using a method such as `LocalFree`. Platform invoke handles such parameters differently. For platform invoke calls, make the parameter an `IntPtr` type instead of a `String` type. Use methods that are provided by the <xref:System.Runtime.InteropServices.Marshal?displayProperty=nameWithType> class to convert the type to a string manually and free it manually.  
+> Windows API functions that allocate a string enable you to free the string by using a method such as `LocalFree`. Platform invoke handles such parameters differently. For platform invoke calls, make the parameter an `IntPtr` type instead of a `String` type. Use methods that are provided by the <xref:System.Runtime.InteropServices.Marshal?displayProperty=nameWithType> class to convert the type to a string manually and free it manually.  
   
 ## Declaration Basics  
  Managed definitions to unmanaged functions are language-dependent, as you can see in the following examples. For more complete code examples, see [Platform Invoke Examples](platform-invoke-examples.md).  
@@ -183,7 +184,7 @@ class PInvokeScenario
   
  The following COM interop interface declarations ignore the `Assert`, `Deny`, and `PermitOnly` modifiers, similarly to the platform invoke examples in the previous section.  
   
-```  
+```csharp
 [ComImport, Guid("12345678-43E6-43c9-9A13-47F40B338DE0")]  
 interface IAssertStubsItf  
 {  
@@ -214,7 +215,7 @@ interface IAssertStubsItf
   
  Additionally, the `Demand` modifier is not accepted in COM interop interface declaration scenarios, as shown in the following example.  
   
-```  
+```csharp  
 [ComImport, Guid("12345678-43E6-43c9-9A13-47F40B338DE0")]  
 interface IDemandStubsItf  
 {  

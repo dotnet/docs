@@ -23,7 +23,7 @@ Sets the size of a garbage collection segment and the maximum size of the garbag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCStartupLimitsEx (  
     [in] SIZE_T SegmentSize,   
     [in] SIZE_T MaxGen0Size  
@@ -68,7 +68,7 @@ HRESULT SetGCStartupLimitsEx (
   
 ## See also
 
-- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)
-- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
+- [Automatic Memory Management](../../../standard/automatic-memory-management.md)
+- [Garbage Collection](../../../standard/garbage-collection/index.md)
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [ICLRGCManager2 Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager2-interface.md)

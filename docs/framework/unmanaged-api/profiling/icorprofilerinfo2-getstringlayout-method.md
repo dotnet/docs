@@ -23,7 +23,7 @@ Gets information about the layout of a string object. This method is deprecated 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStringLayout(  
     [out] ULONG *pBufferLengthOffset,  
     [out] ULONG *pStringLengthOffset,  
@@ -35,7 +35,7 @@ HRESULT GetStringLayout(
  [out] A pointer to the offset of the location, relative to the `ObjectID` pointer, that stores the length of the string. The length is stored as a `DWORD`.  
   
 > [!NOTE]
->  This parameter returns the length of the string itself, not the length of the buffer. The length of the buffer is no longer available.  
+> This parameter returns the length of the string itself, not the length of the buffer. The length of the buffer is no longer available.  
   
  `PStringLengthOffset`  
  [out] A pointer to the offset of the location, relative to the `ObjectID` pointer, that stores the length of the string itself. The length is stored as a `DWORD`.  

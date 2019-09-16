@@ -7,17 +7,17 @@ ms.date: 06/14/2019
 
 # Custom templates for dotnet new
 
-The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates already installed and ready for you to use. The [`dotnet new` command](dotnet-new.md) isn't only the way to use a template, but also how to install and uninstall templates. Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
+The [.NET Core SDK](https://dotnet.microsoft.com/download) comes with many templates already installed and ready for you to use. The [`dotnet new` command](dotnet-new.md) isn't only the way to use a template, but also how to install and uninstall templates. Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
 You can install custom templates from a NuGet package on any NuGet feed, by referencing a NuGet *.nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files, and execute custom processing operations when your template is used.
 
 The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. Visit the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) repo for samples of templates. More templates, including templates from third parties, are found at [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new) on GitHub. For more information about creating and using custom templates, see [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) and the [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki).
 
-To follow a walkthrough and create a template, see the [Create a custom template for dotnet new](~/docs/core/tutorials/create-custom-template.md) tutorial.
+To follow a walkthrough and create a template, see the [Create a custom template for dotnet new](../tutorials/create-custom-template.md) tutorial.
 
 ### .NET default templates
 
-When you install the [.NET Core SDK](https://www.microsoft.com/net/download/core), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
+When you install the [.NET Core SDK](https://dotnet.microsoft.com/download), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
 
 ```console
 dotnet new --list

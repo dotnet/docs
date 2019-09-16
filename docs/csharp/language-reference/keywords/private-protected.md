@@ -28,7 +28,7 @@ public class DerivedClass1 : BaseClass
 {
     void Access()
     {
-        BaseClass baseObject = new BaseClass();
+        var baseObject = new BaseClass();
 
         // Error CS1540, because myValue can only be accessed by
         // classes derived from BaseClass.

@@ -23,7 +23,7 @@ Gets the ID of the class, given the metadata token. This method is obsolete in t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassFromToken(  
     [in]  ModuleID  moduleId,  
     [in]  mdTypeDef typeDef,  

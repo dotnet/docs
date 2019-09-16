@@ -2,8 +2,7 @@
 title: 'Tutorial: Build a movie recommender - matrix factorization'
 description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
 author: briacht
-ms.author: johalex
-ms.date: 05/06/2019
+ms.date: 08/26/2019
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
 #Customer intent: As a developer, I want to use ML.NET to apply a recommendation learning algorithm so that I can understand how to recommend items based on a user's history.
@@ -15,6 +14,7 @@ This tutorial shows you how to build a movie recommender with ML.NET in a .NET C
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Select a machine learning algorithm
 > * Prepare and load your data
 > * Build and train a model
@@ -52,7 +52,7 @@ There are several ways to approach recommendation problems, such as recommending
 
 3. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
 
-    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the **1.0.0** package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender v0.12.0**.
+    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
 
 4. Add the following `using` statements at the top of your *Program.cs* file:
 
@@ -157,7 +157,7 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 
 The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`. In this case, you provide the path for your `Test` and `Train` files and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
 
-Add the following as the next two lines of code in the `Main()` method to call your `LoadData()` method and return the `Train` and `Test` data:
+Add the following code in the `Main()` method to call your `LoadData()` method and return the `Train` and `Test` data:
 
 [!code-csharp[LoadDataMain](~/samples/machine-learning/tutorials/MovieRecommendation/Program.cs#LoadDataMain "Add LoadData method to Main")]
 
@@ -242,6 +242,7 @@ public static void EvaluateModel(MLContext mlContext, IDataView testDataView, IT
 ```
 
 Transform the `Test` data by adding the following code to `EvaluateModel()`:
+
 [!code-csharp[Transform](~/samples/machine-learning/tutorials/MovieRecommendation/Program.cs#Transform "Transform the test data")]
 
 The [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method makes predictions for multiple provided input rows of a test dataset.
@@ -347,7 +348,7 @@ To use your model to make predictions in end-user applications, you must first s
 Create the `SaveModel()` method, just after the `UseModelForSinglePrediction()` method, using the following code:
 
 ```csharp
-public static void SaveModel(MLContext mlContext, ITransformer model)
+public static void SaveModel(MLContext mlContext, DataViewSchema trainingDataViewSchema, ITransformer model)
 {
 
 }
@@ -463,6 +464,7 @@ The data used in this tutorial is derived from [MovieLens Dataset](http://files.
 In this tutorial, you learned how to:
 
 > [!div class="checklist"]
+>
 > * Select a machine learning algorithm
 > * Prepare and load your data
 > * Build and train a model

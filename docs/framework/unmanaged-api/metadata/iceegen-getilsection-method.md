@@ -25,7 +25,7 @@ Gets the section of the intermediate language code base referenced by the specif
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIlSection (  
     [in] HCEESECTION  *section  
 );  

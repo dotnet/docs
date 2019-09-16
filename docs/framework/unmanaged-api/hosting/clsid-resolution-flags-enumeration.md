@@ -22,7 +22,7 @@ Contains values that indicate how the common language runtime (CLR) should resol
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     CLSID_RESOLUTION_DEFAULT      = 0x0,  
     CLSID_RESOLUTION_REGISTERED   = 0x1  

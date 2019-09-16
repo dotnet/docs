@@ -23,7 +23,7 @@ Creates a breakpoint in this code segment at the specified offset.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateBreakpoint (  
     [in] ULONG32     offset,  
     [out] ICorDebugFunctionBreakpoint **ppBreakpoint  

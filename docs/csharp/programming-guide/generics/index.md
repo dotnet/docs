@@ -47,23 +47,23 @@ Generic classes and methods combine reusability, type safety and efficiency in a
 ## Related Sections  
  For more information:  
   
-- [Generic Type Parameters](../../../csharp/programming-guide/generics/generic-type-parameters.md)  
+- [Generic Type Parameters](./generic-type-parameters.md)  
   
-- [Constraints on Type Parameters](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md)  
+- [Constraints on Type Parameters](./constraints-on-type-parameters.md)  
   
-- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)  
+- [Generic Classes](./generic-classes.md)  
   
-- [Generic Interfaces](../../../csharp/programming-guide/generics/generic-interfaces.md)  
+- [Generic Interfaces](./generic-interfaces.md)  
   
-- [Generic Methods](../../../csharp/programming-guide/generics/generic-methods.md)  
+- [Generic Methods](./generic-methods.md)  
   
-- [Generic Delegates](../../../csharp/programming-guide/generics/generic-delegates.md)  
+- [Generic Delegates](./generic-delegates.md)  
   
-- [Differences Between C++ Templates and C# Generics](../../../csharp/programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md)  
+- [Differences Between C++ Templates and C# Generics](./differences-between-cpp-templates-and-csharp-generics.md)  
   
-- [Generics and Reflection](../../../csharp/programming-guide/generics/generics-and-reflection.md)  
+- [Generics and Reflection](./generics-and-reflection.md)  
   
-- [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md)  
+- [Generics in the Run Time](./generics-in-the-run-time.md)  
   
 ## C# Language Specification  
  For more information, see the [C# Language Specification](~/_csharplang/spec/types.md#constructed-types).  
@@ -71,8 +71,8 @@ Generic classes and methods combine reusability, type safety and efficiency in a
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Types](../../../csharp/programming-guide/types/index.md)
-- [\<typeparam>](../../../csharp/programming-guide/xmldoc/typeparam.md)
-- [\<typeparamref>](../../../csharp/programming-guide/xmldoc/typeparamref.md)
+- [C# Programming Guide](../index.md)
+- [Types](../types/index.md)
+- [\<typeparam>](../xmldoc/typeparam.md)
+- [\<typeparamref>](../xmldoc/typeparamref.md)
 - [Generics in .NET](../../../standard/generics/index.md)

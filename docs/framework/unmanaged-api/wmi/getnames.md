@@ -24,7 +24,7 @@ Retrieves either a subset or all of the names of the properties of an object.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNames (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 
@@ -98,7 +98,7 @@ The flags that can be passed as the `lEnumFlags` argument are bit fields that ar
 The function always allocates a new `SAFEARRAY` if it returns `WBEM_S_NO_ERROR`, and `pstrNames` is always set to point to it. The returned array can have 0 elements if no properties match the specified filters. If the function returns an value other than `WBM_S_NO_ERROR`, a new `SAFEARRAY` structure is not returned.
  
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

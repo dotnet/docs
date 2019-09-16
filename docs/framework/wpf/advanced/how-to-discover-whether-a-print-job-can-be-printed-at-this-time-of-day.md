@@ -16,7 +16,7 @@ Print queues are not always available for 24 hours a day. They have start and en
   
  Moreover, print jobs themselves can be set to be printable only within a specified span of time.  
   
- The <xref:System.Printing.PrintQueue> and <xref:System.Printing.PrintSystemJobInfo> classes exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of Microsoft .NET Framework provide a means for remotely checking whether a given print job can print on a given queue at the current time.  
+ The <xref:System.Printing.PrintQueue> and <xref:System.Printing.PrintSystemJobInfo> classes exposed in the APIs of Microsoft .NET Framework provide a means for remotely checking whether a given print job can print on a given queue at the current time.  
   
 ## Example  
  The example below is a sample that can diagnose problems with a print job.  
@@ -48,7 +48,7 @@ Print queues are not always available for 24 hours a day. They have start and en
  The two overloads of the **ReportAvailabilityAtThisTime** method are identical except for the type passed to them, so only the <xref:System.Printing.PrintQueue> version is presented below.  
   
 > [!NOTE]
->  The fact that the methods are identical except for type raises the question of why the sample does not create a generic method **ReportAvailabilityAtThisTime\<T>**. The reason is that such a method would have to be restricted to a class that has the **StartTimeOfDay** and **UntilTimeOfDay** properties that the method calls, but a generic method can only be restricted to a single class and the only class common to both <xref:System.Printing.PrintQueue> and <xref:System.Printing.PrintSystemJobInfo> in the inheritance tree is <xref:System.Printing.PrintSystemObject> which has no such properties.  
+> The fact that the methods are identical except for type raises the question of why the sample does not create a generic method **ReportAvailabilityAtThisTime\<T>**. The reason is that such a method would have to be restricted to a class that has the **StartTimeOfDay** and **UntilTimeOfDay** properties that the method calls, but a generic method can only be restricted to a single class and the only class common to both <xref:System.Printing.PrintQueue> and <xref:System.Printing.PrintSystemJobInfo> in the inheritance tree is <xref:System.Printing.PrintSystemObject> which has no such properties.  
   
  The **ReportAvailabilityAtThisTime** method (presented in the code example below) begins by initializing a <xref:System.Boolean> sentinel variable to `true`. It will be reset to `false`, if the queue is not available.  
   

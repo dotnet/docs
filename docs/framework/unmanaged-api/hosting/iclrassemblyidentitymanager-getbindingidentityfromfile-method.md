@@ -23,7 +23,7 @@ Gets the assembly identity binding data for the assembly at the specified file p
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBindingIdentityFromFile(  
     [in] LPCWSTR     pwzFilePath,  
     [in] DWORD       dwFlags,  

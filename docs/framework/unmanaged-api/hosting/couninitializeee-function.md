@@ -23,7 +23,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 void CoUninitializeEE (  
     BOOL fFlags  
 );  

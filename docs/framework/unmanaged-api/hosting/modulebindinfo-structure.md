@@ -22,7 +22,7 @@ Provides detailed information about the referenced module and the assembly that 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _ModuleBindInfo {  
     DWORD    dwAppDomainId;  
     LPCWSTR  lpAssemblyIdentity;  

@@ -23,7 +23,7 @@ Evaluates binding policy on behalf of the host.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EvaluatePolicy (  
     [in] LPCWSTR     pwzReferenceIdentity,  
     [in] BYTE       *pbApplicationPolicy,  

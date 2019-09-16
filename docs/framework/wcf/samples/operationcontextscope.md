@@ -7,7 +7,7 @@ ms.assetid: 11c11108-8eb4-4d49-95a0-83285a812262
 The OperationContextScope sample demonstrates how to send extra information on a Windows Communication Foundation (WCF) call using headers. In this sample, both the server and client are console applications.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample demonstrates how a client can send additional information as a <xref:System.ServiceModel.Channels.MessageHeader> using <xref:System.ServiceModel.OperationContextScope>. An <xref:System.ServiceModel.OperationContextScope> object is created by scoping it to a channel. Headers that must be translated to the remote service can be added to the <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders%2A> collection. Headers added to this collection can be retrieved on the service by accessing <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A>. Its calls are made on multiple channels and then the headers added to the client only apply to the channel that was used to create the <xref:System.ServiceModel.OperationContextScope>.  
   
@@ -71,7 +71,7 @@ using (new OperationContextScope(client1.InnerChannel))
     //Add the header to the OutgoingMessageHeader collection.  
     OperationContext.Current.OutgoingMessageHeaders.Add(customHeader);  
   
-    //Now call RetreieveHeader on both the proxies. Since the OperationContextScope is tied to   
+    //Now call RetrieveHeader on both the proxies. Since the OperationContextScope is tied to   
     //client1's InnerChannel, the header should only be added to calls made on that client.  
     //Calls made on client2 should not be sending the header across even though the call  
     //is made in the same OperationContextScope.  
@@ -116,10 +116,10 @@ Press <ENTER> to terminate client.
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\OperationContextScope`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\OperationContextScope`  

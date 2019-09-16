@@ -23,7 +23,7 @@ Notifies the profiler that an assembly is being loaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AssemblyLoadStarted(  
     [in] AssemblyID assemblyId);  
 ```  

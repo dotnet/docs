@@ -7,13 +7,14 @@ ms.assetid: 4fe7ce85-cf9a-4dbf-a8f7-bc9b1fc2fe35
 # \<workflowInstanceQueries>
 Represents a collection of configuration elements that track workflow instance life cycle changes such as a started or completed event.  
   
- For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
+For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  
   
-\<system.serviceModel>  
-\<tracking>  
-\<trackingProfile>  
-\<workflow>  
-\<workflowInstanceQueries>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.ServiceModel>**](system-servicemodel-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<tracking>**](tracking.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<trackingProfile>**](trackingprofile.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflow>**](workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<workflowInstanceQueries>**  
   
 ## Syntax  
   
@@ -34,25 +35,28 @@ Represents a collection of configuration elements that track workflow instance l
 ```  
   
 ## Attributes and Elements  
- The following sections describe attributes, child elements, and parent elements.  
+
+The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
- None.  
+
+None.  
   
 ### Child Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<workflowInstanceQuery>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflowinstancequery.md)|A query that is used to track workflow instance life cycle changes.|  
+|[\<workflowInstanceQuery>](workflowinstancequery.md)|A query that is used to track workflow instance life cycle changes.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|A configuration element that contains all queries for a specific workflow identified by the **activityDefinitionId** property.|  
+|[\<workflow>](workflow.md)|A configuration element that contains all queries for a specific workflow identified by the **activityDefinitionId** property.|  
   
 ## Remarks  
- The <xref:System.Activities.Tracking.WorkflowInstanceQuery> is used to subscribe to the following <xref:System.Activities.Tracking.TrackingRecord> objects:  
+
+The <xref:System.Activities.Tracking.WorkflowInstanceQuery> is used to subscribe to the following <xref:System.Activities.Tracking.TrackingRecord> objects:  
   
 - <xref:System.Activities.Tracking.WorkflowInstanceRecord>  
   
@@ -65,7 +69,8 @@ Represents a collection of configuration elements that track workflow instance l
 - <xref:System.Activities.Tracking.WorkflowInstanceSuspendedRecord>  
   
 ## Example  
- The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
+
+The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
 ```xml  
 <workflowInstanceQueries>  
@@ -81,5 +86,5 @@ Represents a collection of configuration elements that track workflow instance l
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
-- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
-- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+- [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)

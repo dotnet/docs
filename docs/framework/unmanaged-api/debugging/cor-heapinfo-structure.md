@@ -22,7 +22,7 @@ Provides general information about the garbage collection heap, including whethe
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_HEAPINFO {  
     BOOL areGCStructuresValid;   
     DWORD pointerSize;   

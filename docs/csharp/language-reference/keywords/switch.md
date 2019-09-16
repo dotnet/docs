@@ -40,7 +40,7 @@ In C# 6 and earlier, the match expression must be an expression that returns a v
 - a [char](char.md).
 - a [string](string.md).
 - a [bool](bool.md).
-- an integral value, such as an [int](int.md) or a [long](long.md).
+- an integral value, such as an [int](../builtin-types/integral-numeric-types.md) or a [long](../builtin-types/integral-numeric-types.md).
 - an [enum](enum.md) value.
 
 Starting with C# 7.0, the match expression can be any non-null expression.
@@ -115,7 +115,7 @@ The constant pattern tests whether the match expression equals a specified const
 where *constant* is the value to test for. *constant* can be any of the following constant expressions:
 
 - A [bool](bool.md) literal, either `true` or `false`.
-- Any integral constant, such as an [int](int.md), a [long](long.md), or a [byte](byte.md).
+- Any integral constant, such as an [int](../builtin-types/integral-numeric-types.md), a [long](../builtin-types/integral-numeric-types.md), or a [byte](../builtin-types/integral-numeric-types.md).
 - The name of a declared `const` variable.
 - An enumeration constant.
 - A [char](char.md) literal.

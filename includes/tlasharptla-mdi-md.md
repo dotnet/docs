@@ -1,1 +1,0 @@
-multiple-document interface (MDI)

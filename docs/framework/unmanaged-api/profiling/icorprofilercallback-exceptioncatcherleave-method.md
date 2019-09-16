@@ -23,7 +23,7 @@ Notifies the profiler that control is being passed out of the appropriate `catch
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionCatcherLeave();  
 ```  
   

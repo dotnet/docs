@@ -14,7 +14,7 @@ Provides general support for arrays of objects in XAML through a markup extensio
   
 ## XAML Object Element Usage  
   
-```  
+```xaml
 <x:Array Type="typeName">  
   arrayContents  
 </x:Array>  
@@ -49,17 +49,14 @@ Provides general support for arrays of objects in XAML through a markup extensio
   
  For example, the following is a simple array of two strings, with the `sys` prefix (and also `x`) defined at the level of the array.  
   
- [xaml]  
-  
- `<x:Array Type="sys:String" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"`  
-  
- `xmlns:sys="clr-namespace:System;assembly=mscorlib">`  
-  
- `<sys:String>Hello</sys:String>`  
-  
- `<sys:String>World</sys:String>`  
-  
- `</x:Array>`  
+```xaml
+<x:Array Type="sys:String"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String>Hello</sys:String>
+    <sys:String>World</sys:String>
+</x:Array>
+```
   
  For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md).  
   

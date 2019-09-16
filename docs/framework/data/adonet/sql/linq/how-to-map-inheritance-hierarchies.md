@@ -7,10 +7,10 @@ dev_langs:
   - "vb"
 ---
 # How to: Map Inheritance Hierarchies
-To implement inheritance mapping in [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)], you must specify the attributes and attribute properties on the root class of the inheritance hierarchy as described in the following steps. Developers using Visual Studio can use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to map inheritance hierarchies. See [How to: Configure inheritance by using the O/R Designer](/visualstudio/data-tools/how-to-configure-inheritance-by-using-the-o-r-designer).  
+To implement inheritance mapping in [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)], you must specify the attributes and attribute properties on the root class of the inheritance hierarchy as described in the following steps. Developers using Visual Studio can use the Object Relational Designer to map inheritance hierarchies. See [How to: Configure inheritance by using the O/R Designer](/visualstudio/data-tools/how-to-configure-inheritance-by-using-the-o-r-designer).  
   
 > [!NOTE]
->  No special attributes or properties are required on the subclasses. Note especially that subclasses do not have the <xref:System.Data.Linq.Mapping.TableAttribute> attribute.  
+> No special attributes or properties are required on the subclasses. Note especially that subclasses do not have the <xref:System.Data.Linq.Mapping.TableAttribute> attribute.  
   
 ### To map an inheritance hierarchy  
   
@@ -37,7 +37,7 @@ To implement inheritance mapping in [!INCLUDE[vbteclinq](../../../../../../inclu
 ## Example  
   
 > [!NOTE]
->  If you are using Visual Studio, you can use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to configure inheritance. See [How to: Configure inheritance by using the O/R Designer](/visualstudio/data-tools/how-to-configure-inheritance-by-using-the-o-r-designer)  
+> If you are using Visual Studio, you can use the Object Relational Designer to configure inheritance. See [How to: Configure inheritance by using the O/R Designer](/visualstudio/data-tools/how-to-configure-inheritance-by-using-the-o-r-designer)  
   
  In the following code example, `Vehicle` is defined as the root class, and the previous steps have been implemented to describe the hierarchy for [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)].  
   
@@ -46,5 +46,5 @@ To implement inheritance mapping in [!INCLUDE[vbteclinq](../../../../../../inclu
   
 ## See also
 
-- [Inheritance Support](../../../../../../docs/framework/data/adonet/sql/linq/inheritance-support.md)
-- [How to: Customize Entity Classes by Using the Code Editor](../../../../../../docs/framework/data/adonet/sql/linq/how-to-customize-entity-classes-by-using-the-code-editor.md)
+- [Inheritance Support](inheritance-support.md)
+- [How to: Customize Entity Classes by Using the Code Editor](how-to-customize-entity-classes-by-using-the-code-editor.md)

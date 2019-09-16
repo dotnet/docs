@@ -23,7 +23,7 @@ Sets the Just My Code (JMC) status of all methods of all the classes in this ICo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetJMCStatus (  
     [in] BOOL                        bIsJustMyCode,  
     [in] ULONG32                     cTokens,  

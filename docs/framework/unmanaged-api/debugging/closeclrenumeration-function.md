@@ -24,7 +24,7 @@ Closes any valid common language runtime (CLR) continue-startup events located i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseCLREnumeration (  
     [in]  DWORD      pHandleArray,  
     [in]  LPWSTR**   pStringArray,  

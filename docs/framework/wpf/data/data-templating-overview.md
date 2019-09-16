@@ -56,7 +56,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  [!code-xaml[DataTemplatingIntro_snip#Inline](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#inline)]  
   
- The underlying data for the examples in this topic is a collection of [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] objects. If you are binding to [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data, the fundamental concepts are the same, but there is a slight syntactic difference. For example, instead of having `Path=TaskName`, you would set <xref:System.Windows.Data.Binding.XPath%2A> to `@TaskName` (if `TaskName` is an attribute of your [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] node).  
+ The underlying data for the examples in this topic is a collection of CLR objects. If you are binding to [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data, the fundamental concepts are the same, but there is a slight syntactic difference. For example, instead of having `Path=TaskName`, you would set <xref:System.Windows.Data.Binding.XPath%2A> to `@TaskName` (if `TaskName` is an attribute of your [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] node).  
   
  Now our <xref:System.Windows.Controls.ListBox> looks like the following:  
   

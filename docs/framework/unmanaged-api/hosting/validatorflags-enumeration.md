@@ -22,7 +22,7 @@ Contains values that indicate the type of validation that should be performed in
   
 ## Syntax  
   
-```  
+```cpp  
 enum ValidatorFlags {  
     VALIDATOR_EXTRA_VERBOSE =       0x00000001,  
     VALIDATOR_SHOW_SOURCE_LINES =   0x00000002,  

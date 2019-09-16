@@ -31,7 +31,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that specifies the name of the property that matches a single constructor argument.  
   
- <xref:System.Windows.Markup.ConstructorArgumentAttribute> specifies that an object can be initialized by using a non-default constructor syntax, and that a property of the specified name supplies construction information. This information is primarily for XAML serialization. For more information, see <xref:System.Windows.Markup.ConstructorArgumentAttribute>.  
+ <xref:System.Windows.Markup.ConstructorArgumentAttribute> specifies that an object can be initialized by using a non-parameterless constructor syntax, and that a property of the specified name supplies construction information. This information is primarily for XAML serialization. For more information, see <xref:System.Windows.Markup.ConstructorArgumentAttribute>.  
   
 ### ContentPropertyAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.ContentPropertyAttribute>  
@@ -260,7 +260,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
 - You define XAML language support in the assembly and have a <xref:System.Windows.Markup.XmlnsDefinitionAttribute> for `http://schemas.microsoft.com/winfx/2006/xaml`. In this case, you typically should promote the prefix `x`.  
   
 > [!NOTE]
->  .NET Framework XAML Services also defines the XAML-related attribute <xref:System.Windows.Markup.RootNamespaceAttribute>. This attribute is an assembly-level attribute for project system support, and it is not relevant for XAML custom types.  
+> .NET Framework XAML Services also defines the XAML-related attribute <xref:System.Windows.Markup.RootNamespaceAttribute>. This attribute is an assembly-level attribute for project system support, and it is not relevant for XAML custom types.  
   
 ## See also
 

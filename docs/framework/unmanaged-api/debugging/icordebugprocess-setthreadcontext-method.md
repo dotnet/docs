@@ -23,7 +23,7 @@ Sets the context for the given thread in this process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetThreadContext(  
     [in] DWORD threadID,  
     [in] ULONG32 contextSize,  

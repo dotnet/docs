@@ -23,7 +23,7 @@ Returns an array of all the documents defined in the symbol store.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocuments (  
     [in]  ULONG32  cDocs,  
     [out] ULONG32  *pcDocs,  

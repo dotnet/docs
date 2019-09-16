@@ -23,7 +23,7 @@ Gets the index of the next GUID value in the current table column.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextGuid (  
     [in]  ULONG   ixGuid,  
     [out] ULONG   *pNext  

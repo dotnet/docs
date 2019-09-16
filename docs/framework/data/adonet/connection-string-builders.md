@@ -53,7 +53,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
  One of the overloaded constructors for a connection string builder takes a <xref:System.String> as an argument, which enables you to supply a partial connection string that can then be completed from user input. The partial connection string can be stored in a configuration file and retrieved at run time.  
   
 > [!NOTE]
->  The <xref:System.Configuration> namespace allows programmatic access to configuration files that use the <xref:System.Web.Configuration.WebConfigurationManager> for Web applications and the <xref:System.Configuration.ConfigurationManager> for Windows applications. For more information about working with connection strings and configuration files, see [Connection Strings and Configuration Files](../../../../docs/framework/data/adonet/connection-strings-and-configuration-files.md).  
+> The <xref:System.Configuration> namespace allows programmatic access to configuration files that use the <xref:System.Web.Configuration.WebConfigurationManager> for Web applications and the <xref:System.Configuration.ConfigurationManager> for Windows applications. For more information about working with connection strings and configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).  
   
 ### Example  
  This example demonstrates retrieving a partial connection string from a configuration file and completing it by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource%2A>, <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserID%2A>, and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Password%2A> properties of the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>. The configuration file is defined as follows.  
@@ -68,13 +68,13 @@ initial catalog="AdventureWorks;NewValue=Bad"
 ```  
   
 > [!NOTE]
->  You must set a reference to the `System.Configuration.dll` in your project for the code to run.  
+> You must set a reference to the `System.Configuration.dll` in your project for the code to run.  
   
  [!code-csharp[DataWorks SqlConnectionStringBuilder.UserNamePwd#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlConnectionStringBuilder.UserNamePwd/CS/source.cs#1)]
  [!code-vb[DataWorks SqlConnectionStringBuilder.UserNamePwd#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlConnectionStringBuilder.UserNamePwd/VB/source.vb#1)]  
   
 ## See also
 
-- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
-- [Privacy and Data Security](../../../../docs/framework/data/adonet/privacy-and-data-security.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Connection Strings](connection-strings.md)
+- [Privacy and Data Security](privacy-and-data-security.md)
+- [ADO.NET Overview](ado-net-overview.md)

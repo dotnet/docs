@@ -18,11 +18,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # AssemblyComparisonResult Enumeration
-Indicates the equivalence of two assembly identities, as determined by the [CompareAssemblyIdentity](../../../../docs/framework/unmanaged-api/fusion/compareassemblyidentity-function.md) function.  
+Indicates the equivalence of two assembly identities, as determined by the [CompareAssemblyIdentity](compareassemblyidentity-function.md) function.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _tagAssemblyComparisonResult {  
     ACR_Unknown,   
     ACR_EquivalentFullMatch,  
@@ -57,7 +57,7 @@ typedef enum _tagAssemblyComparisonResult {
 |`ACR_Unknown`|Indicates that the reason for non-equivalency is not known.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -67,5 +67,5 @@ typedef enum _tagAssemblyComparisonResult {
   
 ## See also
 
-- [CompareAssemblyIdentity Function](../../../../docs/framework/unmanaged-api/fusion/compareassemblyidentity-function.md)
-- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
+- [CompareAssemblyIdentity Function](compareassemblyidentity-function.md)
+- [Fusion Enumerations](fusion-enumerations.md)

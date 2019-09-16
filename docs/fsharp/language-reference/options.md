@@ -11,19 +11,19 @@ The option type in F# is used when an actual value might not exist for a named v
 
 The following code illustrates a function which generates an option type.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1404.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1404.fs)]
 
 As you can see, if the input `a` is greater than 0, `Some(a)` is generated.  Otherwise, `None` is generated.
 
 The value `None` is used when an option does not have an actual value. Otherwise, the expression `Some( ... )` gives the option a value. The values `Some` and `None` are useful in pattern matching, as in the following function `exists`, which returns `true` if the option has a value and `false` if it does not.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1401.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1401.fs)]
 
 ## Using Options
 
 Options are commonly used when a search does not return a matching result, as shown in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1403.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1403.fs)]
 
 In the previous code, a list is searched recursively. The function `tryFindMatch` takes a predicate function `pred` that returns a Boolean value, and a list to search. If an element that satisfies the predicate is found, the recursion ends and the function returns the value as an option in the expression `Some(head)`. The recursion ends when the empty list is matched. At that point the value `head` has not been found, and `None` is returned.
 
@@ -31,7 +31,7 @@ Many F# library functions that search a collection for a value that may or may n
 
 Options can also be useful when a value might not exist, for example if it is possible that an exception will be thrown when you try to construct a value. The following code example illustrates this.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1402.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1402.fs)]
 
 The `openFile` function in the previous example has type `string -> File option` because it returns a `File` object if the file opens successfully and `None` if an exception occurs. Depending on the situation, it may not be an appropriate design choice to catch an exception rather than allowing it to propagate.
 

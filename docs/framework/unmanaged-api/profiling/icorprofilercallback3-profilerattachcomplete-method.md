@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) to indicate that the profiler can no
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProfilerAttachComplete ();  
 ```  
   

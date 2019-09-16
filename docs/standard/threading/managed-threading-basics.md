@@ -18,7 +18,7 @@ The first five topics of this section are designed to help you determine when to
  The rest of the topics in this section cover advanced topics, including the interaction of managed threading with the Windows operating system.  
   
 > [!NOTE]
->  In the .NET Framework 4, the Task Parallel Library and PLINQ provide APIs for task and data parallelism in multi-threaded programs. For more information, see [Parallel Programming](../../../docs/standard/parallel-programming/index.md).  
+> In the .NET Framework 4, the Task Parallel Library and PLINQ provide APIs for task and data parallelism in multi-threaded programs. For more information, see [Parallel Programming](../../../docs/standard/parallel-programming/index.md).  
   
 ## In this section
 

@@ -1,7 +1,6 @@
 ---
 title: "yield contextual keyword - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "yield"
@@ -41,9 +40,9 @@ The declaration of an iterator must meet the following requirements:
 
 The `yield` type of an iterator that returns <xref:System.Collections.IEnumerable> or <xref:System.Collections.IEnumerator> is `object`.  If the iterator returns <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.Generic.IEnumerator%601>, there must be an implicit conversion from the type of the expression in the `yield return` statement to the generic type parameter .
 
-You can't include a `yield return` or `yield break` statement in methods that have the following characteristics:
+You can't include a `yield return` or `yield break` statement in:
 
-- Anonymous methods. For more information, see [Anonymous Methods](../../programming-guide/statements-expressions-operators/anonymous-methods.md).
+- [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md).
 
 - Methods that contain unsafe blocks. For more information, see [unsafe](unsafe.md).
 

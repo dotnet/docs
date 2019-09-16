@@ -123,7 +123,7 @@ For more information, see the [`fixed` statement](../language-reference/keywords
 
 You can now specify the type <xref:System.Enum?displayProperty=nameWithType> or <xref:System.Delegate?displayProperty=nameWithType> as base class constraints for a type parameter.
 
-You can also use the new `unmanaged` constraint, to specify that a type parameter must be an **unmanaged type**. An **unmanaged type** is a type that isn't a reference type and doesn't contain any reference type at any level of nesting.
+You can also use the new `unmanaged` constraint, to specify that a type parameter must be an [unmanaged type](../language-reference/builtin-types/unmanaged-types.md).
 
 For more information, see the articles on [`where` generic constraints](../language-reference/keywords/where-generic-type-constraint.md) and [constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md).
 

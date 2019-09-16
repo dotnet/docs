@@ -23,7 +23,7 @@ Gets the value of each register (on the computer that is currently executing cod
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisters (  
     [in] ULONG64       mask,   
     [in] ULONG32       regCount,  

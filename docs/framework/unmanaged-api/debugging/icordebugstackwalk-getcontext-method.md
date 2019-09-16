@@ -23,7 +23,7 @@ Returns the context for the current frame in the [ICorDebugStackWalk](../../../.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContext([in]  ULONG32 contextFlags,  
                    [in]  ULONG32 contextBufSize,  
                    [out] ULONG32* contextSize,  

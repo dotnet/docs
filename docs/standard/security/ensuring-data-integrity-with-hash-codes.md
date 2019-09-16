@@ -24,6 +24,8 @@ A hash value is a numeric value of a fixed length that uniquely identifies data.
   
 ## Generating a Hash  
  The managed hash classes can hash either an array of bytes or a managed stream object. The following example uses the SHA1 hash algorithm to create a hash value for a string. The example uses the <xref:System.Text.UnicodeEncoding> class to convert the string into an array of bytes that are hashed by using the <xref:System.Security.Cryptography.SHA1Managed> class. The hash value is then displayed to the console.  
+
+ Due to collision problems with SHA1, Microsoft recommends SHA256 or better.
   
  [!code-csharp[GeneratingAHash#1](../../../samples/snippets/csharp/VS_Snippets_CLR/generatingahash/cs/program.cs#1)]
  [!code-vb[GeneratingAHash#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/generatingahash/vb/program.vb#1)]  

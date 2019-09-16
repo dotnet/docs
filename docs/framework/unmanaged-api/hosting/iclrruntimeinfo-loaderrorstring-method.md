@@ -29,7 +29,7 @@ Translates an HRESULT value into an appropriate error message for the specified 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadErrorString(  
      [in] UINT iResourceID,  
      [out, size_is(*pcchBuffer)] LPWSTR pwzBuffer,  

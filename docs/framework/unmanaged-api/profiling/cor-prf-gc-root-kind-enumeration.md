@@ -22,7 +22,7 @@ Indicates the kind of garbage collection root that is exposed by the [ICorProfil
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_GC_ROOT_STACK = 1,  
     COR_PRF_GC_ROOT_FINALIZER = 2,  

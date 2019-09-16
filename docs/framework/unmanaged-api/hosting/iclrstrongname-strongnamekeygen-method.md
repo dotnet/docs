@@ -23,7 +23,7 @@ Creates a new public/private key pair for strong name use.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameKeyGen (  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  DWORD     dwFlags,  

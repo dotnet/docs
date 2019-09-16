@@ -1,11 +1,15 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET Core project.
-ms.date: 12/04/2018
+ms.date: 08/08/2019
 ---
 # dotnet pack
 
+**This topic applies to: ✓** .NET Core 1.x SDK and later versions
+
+<!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+-->
 
 ## Name
 
@@ -13,27 +17,21 @@ ms.date: 12/04/2018
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
-
-```
-dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies]
-    [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
+```console
+dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--interactive] 
+    [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output] [--runtime] [-s|--serviceable] 
+    [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-```
-dotnet pack [<PROJECT>] [-c|--configuration] [--include-source] [--include-symbols] [--no-build] [-o|--output]
-    [-s|--serviceable] [-v|--verbosity] [--version-suffix]
-dotnet pack [-h|--help]
-```
-
----
 
 ## Description
 
-The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package. If the `--include-symbols` option is present, another package containing the debug symbols is created.
+The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package (that is, a *.nupkg* file). 
+
+If you want to generate a package that contains the debug symbols, you have two options available:
+
+- `--include-symbols` - it creates the symbols package.
+- `--include-source` - it creates the symbols package with a `src` folder inside containing the source files.
 
 NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. Project-to-project references aren't packaged inside the project. Currently, you must have a package per project if you have project-to-project dependencies.
 
@@ -53,158 +51,124 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 ## Arguments
 
-* **`PROJECT`**
+`PROJECT | SOLUTION`
 
-  The project to pack. It's either a path to a [csproj file](csproj.md) or to a directory. If not specified, it defaults to the current directory.
+  The project or solution to pack. It's either a path to a [csproj file](csproj.md), a solution file, or to a directory. If not specified, the command searches the current directory for a project or solution file.
 
 ## Options
 
-# [.NET Core 2.x](#tab/netcore2x)
-
-* **`-c|--configuration {Debug|Release}`**
+- **`-c|--configuration {Debug|Release}`**
 
   Defines the build configuration. The default value is `Debug`.
 
-* **`--force`**
+- **`--force`**
 
-  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
+  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file. Option available since .NET Core 2.0 SDK.
 
-* **`-h|--help`**
+- **`-h|--help`**
 
   Prints out a short help for the command.
 
-* **`--include-source`**
+- **`--include-source`**
 
-  Includes the source files in the NuGet package. The sources files are included in the `src` folder within the `nupkg`.
+  Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory. The sources files are included in the `src` folder within the symbols package.
 
-* **`--include-symbols`**
+- **`--include-symbols`**
 
-  Generates the symbols `nupkg`.
+  Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory.
 
-* **`--no-build`**
+- **`--interactive`**
+
+  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 3.0 SDK.
+
+- **`--no-build`**
 
   Doesn't build the project before packing. It also implicitly sets the `--no-restore` flag.
 
-* **`--no-dependencies`**
+- **`--no-dependencies`**
 
-  Ignores project-to-project references and only restores the root project.
+  Ignores project-to-project references and only restores the root project. Option available since .NET Core 2.0 SDK.
 
-* **`--no-restore`**
+- **`--no-restore`**
 
-  Doesn't execute an implicit restore when running the command.
+  Doesn't execute an implicit restore when running the command. Option available since .NET Core 2.0 SDK.
 
-* **`-o|--output <OUTPUT_DIRECTORY>`**
+- **`--nologo`**
 
-  Places the built packages in the directory specified.
+  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
 
-* **`--runtime <RUNTIME_IDENTIFIER>`**
-
-  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
-
-* **`-s|--serviceable`**
-
-  Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
-
-* **`--version-suffix <VERSION_SUFFIX>`**
-
-  Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
-
-* **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-* **`-c|--configuration {Debug|Release}`**
-
-  Defines the build configuration. The default value is `Debug`.
-
-* **`-h|--help`**
-
-  Prints out a short help for the command.
-
-* **`--include-source`**
-
-  Includes the source files in the NuGet package. The sources files are included in the `src` folder within the `nupkg`.
-
-* **`--include-symbols`**
-
-  Generates the symbols `nupkg`.
-
-* **`--no-build`**
-
-  Doesn't build the project before packing.
-
-* **`-o|--output <OUTPUT_DIRECTORY>`**
+- **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Places the built packages in the directory specified.
 
-* **`-s|--serviceable`**
+- **`--runtime <RUNTIME_IDENTIFIER>`**
+
+  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Option available since .NET Core 2.0 SDK.
+
+- **`-s|--serviceable`**
 
   Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
 
-* **`--version-suffix <VERSION_SUFFIX>`**
+- **`--version-suffix <VERSION_SUFFIX>`**
 
   Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
 
-* **`-v|--verbosity <LEVEL>`**
+- **`-v|--verbosity <LEVEL>`**
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
-
----
 
 ## Examples
 
-* Pack the project in the current directory:
+- Pack the project in the current directory:
 
   ```console
   dotnet pack
   ```
 
-* Pack the `app1` project:
+- Pack the `app1` project:
 
   ```console
   dotnet pack ~/projects/app1/project.csproj
   ```
 
-* Pack the project in the current directory and place the resulting packages into the `nupkgs` folder:
+- Pack the project in the current directory and place the resulting packages into the `nupkgs` folder:
 
   ```console
   dotnet pack --output nupkgs
   ```
 
-* Pack the project in the current directory into the `nupkgs` folder and skip the build step:
+- Pack the project in the current directory into the `nupkgs` folder and skip the build step:
 
   ```console
   dotnet pack --no-build --output nupkgs
   ```
 
-* With the project's version suffix configured as `<VersionSuffix>$(VersionSuffix)</VersionSuffix>` in the *.csproj* file, pack the current project and update the resulting package version with the given suffix:
+- With the project's version suffix configured as `<VersionSuffix>$(VersionSuffix)</VersionSuffix>` in the *.csproj* file, pack the current project and update the resulting package version with the given suffix:
 
   ```console
   dotnet pack --version-suffix "ci-1234"
   ```
 
-* Set the package version to `2.1.0` with the `PackageVersion` MSBuild property:
+- Set the package version to `2.1.0` with the `PackageVersion` MSBuild property:
 
   ```console
   dotnet pack -p:PackageVersion=2.1.0
   ```
 
-* Pack the project for a specific [target framework](../../standard/frameworks.md):
+- Pack the project for a specific [target framework](../../standard/frameworks.md):
 
   ```console
   dotnet pack -p:TargetFrameworks=net45
   ```
 
-* Pack the project and use a specific runtime (Windows 10) for the restore operation (.NET Core SDK 2.0 and later versions):
+- Pack the project and use a specific runtime (Windows 10) for the restore operation (.NET Core SDK 2.0 and later versions):
 
   ```console
   dotnet pack --runtime win10-x64
   ```
 
-* Pack the project using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec):
+- Pack the project using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec):
 
   ```console
-  dotnet pack ~/projects/app1/project.csproj /p:NuspecFile=~/projects/app1/project.nuspec /p:NuspecBasePath=~/projects/app1/nuget
+  dotnet pack ~/projects/app1/project.csproj -p:NuspecFile=~/projects/app1/project.nuspec -p:NuspecBasePath=~/projects/app1/nuget
   ```

@@ -22,7 +22,7 @@ Provides binding policies that are common to most runtime hosts. This enumeratio
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     METAHOST_POLICY_HIGHCOMPAT              = 0x00,  
     METAHOST_POLICY_APPLY_UPGRADE_POLICY    = 0x08,  

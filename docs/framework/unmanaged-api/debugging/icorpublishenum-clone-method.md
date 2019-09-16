@@ -23,7 +23,7 @@ Creates a copy of this [ICorPublishEnum](../../../../docs/framework/unmanaged-ap
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (  
     [out] ICorPublishEnum   **ppEnum  
 );  

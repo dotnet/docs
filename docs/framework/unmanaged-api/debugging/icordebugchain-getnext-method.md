@@ -23,7 +23,7 @@ Gets the next chain of frames for the thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNext (  
     [out] ICorDebugChain     **ppChain  
 );  

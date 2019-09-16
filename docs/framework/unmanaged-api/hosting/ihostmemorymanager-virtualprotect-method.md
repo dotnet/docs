@@ -23,7 +23,7 @@ Serves as a logical wrapper for the corresponding Win32 function. The Win32 impl
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT VirtualProtect (  
     [in]  void*   lpAddress,  
     [in]  SIZE_T  dwSize,  

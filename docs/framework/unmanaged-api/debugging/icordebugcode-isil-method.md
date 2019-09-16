@@ -23,7 +23,7 @@ Gets a value that indicates whether this "ICorDebugCode" represents code that wa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsIL (  
     [out] BOOL       *pbIL  
 );  

@@ -31,10 +31,10 @@ Specifies a key container name for a key pair to give an assembly a strong name.
   
  You can also pass your encryption information to the compiler with [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md). Use [-delaysign](../../../visual-basic/reference/command-line-compiler/delaysign.md) if you want a partially signed assembly.  
   
- See [Creating and Using Strong-Named Assemblies](../../../framework/app-domains/create-and-use-strong-named-assemblies.md) for more information on signing an assembly.  
+ See [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) for more information on signing an assembly.  
   
 > [!NOTE]
->  The `-keycontainer` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `-keycontainer` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code compiles source file `Input.vb` and specifies a key container.  

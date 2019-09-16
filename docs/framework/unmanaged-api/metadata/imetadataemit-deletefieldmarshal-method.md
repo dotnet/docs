@@ -23,7 +23,7 @@ Destroys the PInvoke marshaling metadata signature for the object referenced by 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteFieldMarshal (  
     [in]  mdToken     tk  
 );  

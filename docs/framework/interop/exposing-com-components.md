@@ -26,11 +26,11 @@ This section summarizes the process needed to expose an existing COM component t
   
 3. [Compile an interop project](compiling-an-interop-project.md).  
   
-     The Windows Software Development Kit (SDK) provides compilers for several languages compliant with the Common Language Specification (CLS), including Visual Basic, C#, and C++.  
+     The Windows SDK provides compilers for several languages compliant with the Common Language Specification (CLS), including Visual Basic, C#, and C++.  
   
 4. [Deploy an interop application](deploying-an-interop-application.md).  
   
-     Interop applications are best deployed as [strong-named](../app-domains/strong-named-assemblies.md), signed assemblies in the global assembly cache.  
+     Interop applications are best deployed as [strong-named](../../standard/assembly/strong-named.md), signed assemblies in the global assembly cache.  
   
 ## See also
 

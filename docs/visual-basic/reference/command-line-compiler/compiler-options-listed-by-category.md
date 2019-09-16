@@ -118,7 +118,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-vbruntime](../../../visual-basic/reference/command-line-compiler/vbruntime.md)|Specifies that the compiler should compile without a reference to the Visual Basic Runtime Library, or with a reference to a specific runtime library.|  
 |[-win32manifest](../../../visual-basic/reference/command-line-compiler/win32manifest.md)|Identifies a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.|  
 |`-parallel[+&#124;-]`|Specifies whether to use concurrent build (+).|  
-|`-checksumalgorithm:<alg>`|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
+|`-checksumalgorithm:<alg>`|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256. <br>Due to collision problems with SHA1, Microsoft recommends SHA256 or better.|  
   
 ## See also
 

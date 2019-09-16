@@ -17,7 +17,7 @@ This topic discusses how to create custom encoders.
 ## System-Provided Encoders  
  WCF provides several system-provided bindings that are designed to cover the most common application scenarios. Each of these bindings combine a transport, message encoder, and other options (security, for example). This topic describes how to extend the `Text`, `Binary`, and `MTOM` message encoders that are included in WCF, or create your own custom encoder. The text message encoder supports both a plain XML encoding as well as SOAP encodings. The plain XML encoding mode of the text message encoder is called the POX ("Plain Old XML") encoder to distinguish it from the text-based SOAP encoding.  
   
- For more information about the combinations of binding elements provided by the system-provided bindings, see the corresponding section in [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
+ For more information about the combinations of binding elements provided by the system-provided bindings, see the corresponding section in [Choosing a Transport](../feature-details/choosing-a-transport.md).  
   
 ## How to Work with System-Provided Encoders  
  An encoding is added to a binding using a class derived from <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>.  
@@ -83,13 +83,13 @@ This topic discusses how to create custom encoders.
   
  Then connect your custom <xref:System.ServiceModel.Channels.MessageEncoderFactory> to the binding element stack used to configure the service or client by overriding the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method to return an instance of this factory.  
   
- There are two samples provided with WCF that illustrate this process with sample code: [Custom Message Encoder: Custom Text Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-custom-text-encoder.md) and [Custom Message Encoder: Compression Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-compression-encoder.md).  
+ There are two samples provided with WCF that illustrate this process with sample code: [Custom Message Encoder: Custom Text Encoder](../samples/custom-message-encoder-custom-text-encoder.md) and [Custom Message Encoder: Compression Encoder](../samples/custom-message-encoder-compression-encoder.md).  
   
 ## See also
 
 - <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
 - <xref:System.ServiceModel.Channels.MessageEncoderFactory>
 - <xref:System.ServiceModel.Channels.MessageEncoder>
-- [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)
-- [Choosing a Message Encoder](../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
-- [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Data Transfer Architectural Overview](../feature-details/data-transfer-architectural-overview.md)
+- [Choosing a Message Encoder](../feature-details/choosing-a-message-encoder.md)
+- [Choosing a Transport](../feature-details/choosing-a-transport.md)

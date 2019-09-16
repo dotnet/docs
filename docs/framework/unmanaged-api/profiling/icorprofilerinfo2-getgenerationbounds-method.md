@@ -23,7 +23,7 @@ Gets the memory regions, which are segments of the heap, that make up the variou
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGenerationBounds(  
     [in]  ULONG cObjectRanges,  
     [out] ULONG *pcObjectRanges,  

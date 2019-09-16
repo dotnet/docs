@@ -22,7 +22,7 @@ Specifies flags to control which referenced items are converted to their definit
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorRefToDefCheck {  
     MDRefToDefDefault           = 0x00000003,  
     MDRefToDefAll               = 0xffffffff,  

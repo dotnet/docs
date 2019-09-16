@@ -23,7 +23,7 @@ Called by [ICLRDataEnumMemoryRegions::EnumMemoryRegions](../../../../docs/framew
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMemoryRegion (  
     [in] CLRDATA_ADDRESS  address,  
     [in] ULONG32          size  

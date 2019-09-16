@@ -81,9 +81,6 @@ This basic example of a load path XAML node loop transparently connects the XAML
 
 There are potentially other ways to work with a XAML representation other than as a XAML node loop. For example, there could exist a XAML reader that can read an indexed node, or in particular accesses nodes directly by `x:Name`, by `x:Uid`, or through other identifiers. .NET Framework XAML Services does not provide a full implementation, but provides a suggested pattern through services and support types. For more information, see <xref:System.Xaml.IXamlIndexingReader> and <xref:System.Xaml.XamlNodeList>.
 
-> [!TIP]
-> Microsoft also produces an out-of-band release known as the Microsoft XAML Toolkit. This out-of-band release is still in its pre-release stages. However, if you are willing to work with pre-release components, the Microsoft XAML Toolkit provides some interesting resources for XAML tooling and static analysis of XAML. The Microsoft XAML Toolkit includes a XAML DOM API, support for FxCop analysis, and a XAML schema context for Silverlight. For more information, see [Microsoft XAML Toolkit](https://code.msdn.microsoft.com/XAML).
-
 <a name="working_with_the_current_node"></a>
 
 ## Working with the Current Node
@@ -227,7 +224,7 @@ Certain directives are intended specifically to provide more information for the
 
 ### XamlObjectWriter Behavior and Node Order
 
-`StartObject` to a <xref:System.Xaml.XamlObjectWriter> is not necessarily a signal to the XAML object writer to immediately construct the object instance. XAML includes several language features that make it possible to initialize an object with additional input, and to not rely entirely on invoking a default constructor to produce the initial object, and only then setting properties. These features include: <xref:System.Windows.Markup.XamlDeferLoadAttribute>; initialization text; [x:TypeArguments](x-typearguments-directive.md); positional parameters of a markup extension; factory methods and associated [x:Arguments](x-arguments-directive.md) nodes (XAML 2009). Each of these cases delay the actual object construction, and because the node stream is reordered, the XAML object writer can rely on a behavior of actually constructing the instance whenever a start member is encountered that is not specifically a construction directive for that object type.
+`StartObject` to a <xref:System.Xaml.XamlObjectWriter> is not necessarily a signal to the XAML object writer to immediately construct the object instance. XAML includes several language features that make it possible to initialize an object with additional input, and to not rely entirely on invoking a parameterless constructor to produce the initial object, and only then setting properties. These features include: <xref:System.Windows.Markup.XamlDeferLoadAttribute>; initialization text; [x:TypeArguments](x-typearguments-directive.md); positional parameters of a markup extension; factory methods and associated [x:Arguments](x-arguments-directive.md) nodes (XAML 2009). Each of these cases delay the actual object construction, and because the node stream is reordered, the XAML object writer can rely on a behavior of actually constructing the instance whenever a start member is encountered that is not specifically a construction directive for that object type.
 
 ### GetObject
 

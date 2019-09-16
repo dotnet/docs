@@ -59,20 +59,20 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
   
 ```csharp  
 [Serializable]  
-[XmlRoot(  
-     Namespace="ExplicitNamespace", IsNullable=true)]  
-    public partial class AnticipatedException {  
-  
-     private string anticipatedExceptionInformationField;  
-  
-     public string AnticipatedExceptionInformation {  
-      get {  
-          return this.anticipatedExceptionInformationField;  
-          }  
-      set {  
-          this.anticipatedExceptionInformationField = value;  
-          }  
-     }  
+[XmlRoot(Namespace="ExplicitNamespace", IsNullable=true)]  
+public partial class AnticipatedException 
+{ 
+    private string anticipatedExceptionInformationField;  
+
+    public string AnticipatedExceptionInformation 
+    {  
+        get {   
+            return this.anticipatedExceptionInformationField;  
+        }  
+        set {  
+            this.anticipatedExceptionInformationField = value;  
+        }  
+    }  
 }  
 ```  
   
@@ -98,7 +98,7 @@ public XmlNode ToXML()
  The classes can then be used to provide the details for explicitly thrown <xref:System.Web.Services.Protocols.SoapException> instances:  
   
 ```csharp  
-AnctipatedException exception = new AnticipatedException();  
+AnticipatedException exception = new AnticipatedException();  
 exception.AnticipatedExceptionInformation = "…";  
 throw new SoapException(  
      "Fault occurred",  

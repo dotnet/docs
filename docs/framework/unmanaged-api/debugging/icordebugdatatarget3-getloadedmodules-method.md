@@ -10,7 +10,7 @@ Gets a list of the modules that have been loaded so far.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLoadedModules(  
    [in] ULONG32 cRequestedModules,  
    [out] ULONG32 *pcFetchedModules,  
@@ -31,7 +31,7 @@ HRESULT GetLoadedModules(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

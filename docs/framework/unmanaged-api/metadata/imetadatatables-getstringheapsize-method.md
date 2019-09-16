@@ -23,7 +23,7 @@ Gets the size, in bytes, of the string heap.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStringHeapSize (  
     [out] ULONG   *pcbStrings  
 );  

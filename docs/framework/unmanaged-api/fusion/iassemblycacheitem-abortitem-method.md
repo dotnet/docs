@@ -23,12 +23,12 @@ Allows the assembly in the global assembly cache to perform cleanup operations b
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AbortItem ();  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -36,4 +36,4 @@ HRESULT AbortItem ();
   
 ## See also
 
-- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)
+- [IAssemblyCacheItem Interface](iassemblycacheitem-interface.md)

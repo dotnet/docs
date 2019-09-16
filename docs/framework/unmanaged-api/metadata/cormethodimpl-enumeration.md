@@ -22,7 +22,7 @@ Contains values that describe method implementation features.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorMethodImpl {  
   
     miCodeTypeMask      =   0x0003,  

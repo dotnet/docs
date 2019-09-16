@@ -23,7 +23,7 @@ XAML 2009 introduces XAML language-level support for several data types that are
 ## Previous Techniques for Language Primitives in XAML Markup  
  In XAML for previous WPF versions, you could reference the CLR language primitives by mapping the assembly and namespace that contained a CLR primitive definition class for the .NET Framework. Most of these are in the mscorlib assembly and <xref:System> namespace. For example, to use <xref:System.Int32>, you could declare the following mapping (with an example usage shown thereafter):  
   
-```  
+```xaml  
 <Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"   
 xmlns:sys="clr-namespace:System;assembly=mscorlib">  

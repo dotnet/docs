@@ -23,7 +23,7 @@ Gets a value indicating whether the specified metadata token has been marked as 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsTokenMarked (  
     [in]  mdToken  tk,   
     [out] BOOL     *pIsMarked  

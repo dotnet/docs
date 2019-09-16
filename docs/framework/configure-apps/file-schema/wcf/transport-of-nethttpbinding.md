@@ -6,12 +6,13 @@ ms.assetid: 3b180006-1661-43bf-a699-96fd3da469af
 # \<transport> of \<netHttpBinding>
 Defines properties that control authentication parameters for the HTTP transport.  
   
-\<system.serviceModel>  
-\<bindings>  
-\<netHttpBinding>  
-\<binding>  
-\<security>  
-\<transport>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netHttpBinding>**](nethttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-nethttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
   
 ## Syntax  
   
@@ -74,7 +75,7 @@ Defines properties that control authentication parameters for the HTTP transport
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-nethttpbinding.md)|Defines the security capabilities for the [\<netHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nethttpbinding.md).|  
+|[\<security>](security-of-nethttpbinding.md)|Defines the security capabilities for the [\<netHttpBinding>](nethttpbinding.md).|  
   
 ## Example  
  The following example demonstrates the use of SSL transport security with the basic binding. By default, the basic binding supports HTTP communication.  
@@ -116,8 +117,8 @@ Defines properties that control authentication parameters for the HTTP transport
 - <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>
 - <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>
 - <xref:System.ServiceModel.HttpTransportSecurity>
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../misc/binding.md)

@@ -23,7 +23,7 @@ Opens a method and provides its real section offset in the image.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenMethod2(   
     [in] mdMethodDef method,  
     [in] ULONG32 isect,  

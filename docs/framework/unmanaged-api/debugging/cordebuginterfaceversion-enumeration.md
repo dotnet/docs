@@ -22,7 +22,7 @@ Specifies an interface, a version of the .NET Framework, or a version of the .NE
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugInterfaceVersion {  
   
     CorDebugInvalidVersion            = 0,  

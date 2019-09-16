@@ -23,7 +23,7 @@ Notifies the profiler that a module is being loaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleLoadStarted(  
     [in] ModuleID moduleId);  
 ```  

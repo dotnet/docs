@@ -17,13 +17,13 @@ configuration element, three new language features, and new compiler behavior.
 
 The new language features in this release are:
 
-* [`async` `Main` method](#async-main)
+- [`async` `Main` method](#async-main)
   - The entry point for an application can have the `async` modifier.
-* [`default` literal expressions](#default-literal-expressions)
+- [`default` literal expressions](#default-literal-expressions)
   - You can use default literal expressions in default value expressions when the target type can be inferred.
-* [Inferred tuple element names](#inferred-tuple-element-names)
+- [Inferred tuple element names](#inferred-tuple-element-names)
   - The names of tuple elements can be inferred from tuple initialization in many cases.
-* [Pattern matching on generic type parameters](#pattern-matching-on-generic-type-parameters)
+- [Pattern matching on generic type parameters](#pattern-matching-on-generic-type-parameters)
   - You can use pattern match expressions on variables whose type is a generic type parameter.
 
 Finally, the compiler has two options `-refout` and `-refonly` that
@@ -92,10 +92,7 @@ You can now omit the type on the right-hand side of the initialization:
 Func<string, bool> whereClause = default;
 ```
 
-You can learn more about this enhancement in the C# Programming Guide article
-on [default value expressions](../programming-guide/statements-expressions-operators/default-value-expressions.md).
-
-This enhancement also changes some of the parsing rules for the [default keyword](../language-reference/keywords/default.md).
+For more information, see the [default literal](../language-reference/operators/default.md#default-literal) section of the [default operator](../language-reference/operators/default.md) article.
 
 ## Inferred tuple element names
 

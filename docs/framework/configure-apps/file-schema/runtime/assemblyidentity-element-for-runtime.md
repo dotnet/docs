@@ -13,11 +13,11 @@ ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
 # \<assemblyIdentity> Element for \<runtime>
 Contains identifying information about the assembly.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<dependentAssembly>  
-\<assemblyIdentity>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<assemblyIdentity>**  
   
 ## Syntax  
   
@@ -115,6 +115,6 @@ culture="assembly culture"/>
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

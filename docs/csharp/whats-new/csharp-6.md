@@ -17,7 +17,7 @@ with only a get accessor:
 
 [!code-csharp[ReadOnlyAutoProperty](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoProperty)]
 
-The `FirstName` and `LastName` properties can be set only in the body of a constructor:
+The `FirstName` and `LastName` properties can be set only in the body of the constructor of the same class:
 
 [!code-csharp[ReadOnlyAutoPropertyConstructor](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoPropertyConstructor)]
 
@@ -134,7 +134,7 @@ expression evaluates to `false`, then the `catch` clause is skipped. One use is 
 
 ## The `nameof` expression
 
-The `nameof` expression evaluates to the name of a symbol. It's a great way to get tools working whenever you need the name of a variable, a property, or a member field. One of the most common uses for `nameof` is to provide the name of a symbol that caused an exception:
+The [nameof](../language-reference/operators/nameof.md) expression evaluates to the name of a symbol. It's a great way to get tools working whenever you need the name of a variable, a property, or a member field. One of the most common uses for `nameof` is to provide the name of a symbol that caused an exception:
 
 [!code-csharp[nameof](../../../samples/snippets/csharp/new-in-6/NewCode.cs#UsingStaticString)]
 

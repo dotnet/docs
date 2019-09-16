@@ -10,7 +10,7 @@ Gets information about the managed code at a particular code address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode(  
     [in] CORDB_ADDRESS codeAddress,   
     [out] ICorDebugCode **ppCode);  
@@ -26,7 +26,7 @@ HRESULT GetCode(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

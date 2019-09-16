@@ -66,7 +66,7 @@ WCF includes the following set of features. For more information, see [WCF Featu
 
 - **Transactions**
 
-     WCF also supports transactions using one of three transaction models: WS-AtomicTtransactions, the APIs in the <xref:System.Transactions> namespace, and Microsoft Distributed Transaction Coordinator. For more information about transaction support in WCF see [Transactions](../../../docs/framework/wcf/feature-details/transactions-in-wcf.md).
+     WCF also supports transactions using one of three transaction models: WS-AtomicTransactions, the APIs in the <xref:System.Transactions> namespace, and Microsoft Distributed Transaction Coordinator. For more information about transaction support in WCF see [Transactions](../../../docs/framework/wcf/feature-details/transactions-in-wcf.md).
 
 - **AJAX and REST Support**
 

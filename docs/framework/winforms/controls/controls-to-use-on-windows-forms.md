@@ -10,7 +10,7 @@ ms.assetid: dec51976-eae0-4398-a537-20bca7974722
 The following is an alphabetic list of controls and components that can be used on Windows Forms. In addition to the Windows Forms controls covered in this section, you can add ActiveX and custom controls to Windows Forms. If you do not find the control you need listed here, you can also create your own. For details, see [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md). For more information about choosing the control you need, see [Windows Forms Controls by Function](windows-forms-controls-by-function.md).  
   
 > [!NOTE]
->  Visual Basic controls are based on classes provided by the .NET Framework.  
+> Visual Basic controls are based on classes provided by the .NET Framework.  
   
 ## In This Section  
  [Windows Forms Controls by Function](windows-forms-controls-by-function.md)  
@@ -225,7 +225,7 @@ The following is an alphabetic list of controls and components that can be used 
  Provides links to step-by-step topics, recommendations for which kind of control to create, and other information about creating your own control.  
   
  [Controls and Programmable Objects Compared in Various Languages and Libraries](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/0061wezk(v=vs.100))  
- Provides a table that maps controls in Visual Basic 6.0 to the corresponding control in Visual Basic. Note that controls are now classes in the .NET Framework.  
+ Provides a table that maps controls in Visual Basic 6.0 to the corresponding control in Visual Basic .NET. Note that controls are now classes in the .NET Framework.  
   
  [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md)  
  Describes how to use ActiveX controls on Windows Forms.

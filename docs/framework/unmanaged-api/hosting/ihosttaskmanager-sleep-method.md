@@ -23,7 +23,7 @@ Notifies the host that the current task is going to sleep.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Sleep (  
     [in] DWORD dwMilliseconds,  
     [in] DWORD option  

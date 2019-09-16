@@ -23,7 +23,7 @@ Gets the ICorDebugCode instance that represents the Microsoft intermediate langu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILCode (  
     [out] ICorDebugCode **ppCode  
 );  

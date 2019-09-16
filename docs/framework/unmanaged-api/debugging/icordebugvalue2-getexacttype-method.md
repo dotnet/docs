@@ -23,7 +23,7 @@ Gets an interface pointer to an "ICorDebugType" object that represents the <xref
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetExactType (  
     [out] ICorDebugType   **ppType  
 );  

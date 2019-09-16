@@ -23,7 +23,7 @@ Provides a simple context that can be used in place of a full `CONTEXT` structur
   
 ## Syntax  
   
-```  
+```cpp  
 struct StackTrace_SimpleContext  
 {  
     ULONG64 StackOffset;       // ESP on x86  

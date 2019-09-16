@@ -65,7 +65,7 @@ You also use the `+=` operator to specify an event handler method when you subsc
 
 ## Operator overloadability
 
-A user-defined type can [overload](../keywords/operator.md) the `+` operator. When a binary `+` operator is overloaded, the `+=` operator is also implicitly overloaded. A user-defined type cannot explicitly overload the `+=` operator.
+A user-defined type can [overload](operator-overloading.md) the `+` operator. When a binary `+` operator is overloaded, the `+=` operator is also implicitly overloaded. A user-defined type cannot explicitly overload the `+=` operator.
 
 ## C# language specification
 

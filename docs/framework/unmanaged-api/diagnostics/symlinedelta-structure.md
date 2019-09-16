@@ -22,7 +22,7 @@ Provides information to the symbol handler about methods that were moved as a re
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _SYMLINEDELTA  
     {  
         mdMethodDef  mdMethod;  

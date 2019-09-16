@@ -19,7 +19,7 @@ The `return` statement terminates execution of the method in which it appears an
 
 ## Example
 
- In the following example, the method `CalculateArea()` returns the local variable `area` as a [double](double.md) value.
+ In the following example, the method `CalculateArea()` returns the local variable `area` as a `double` value.
 
 [!code-csharp[csrefKeywordsJump#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#6)]  
 

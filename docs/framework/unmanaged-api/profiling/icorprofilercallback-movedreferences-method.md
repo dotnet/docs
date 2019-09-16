@@ -23,7 +23,7 @@ Called to report the new layout of objects in the heap as a result of a compacti
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MovedReferences(  
     [in]  ULONG  cMovedObjectIDRanges,  
     [in, size_is(cMovedObjectIDRanges)] ObjectID oldObjectIDRangeStart[] ,  
@@ -51,7 +51,7 @@ HRESULT MovedReferences(
 ## Remarks  
   
 > [!IMPORTANT]
->  This method reports sizes as `MAX_ULONG` for objects that are greater than 4 GB on 64-bit platforms. To get the size of objects that are larger than 4 GB, use the [ICorProfilerCallback4::MovedReferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-movedreferences2-method.md) method instead.  
+> This method reports sizes as `MAX_ULONG` for objects that are greater than 4 GB on 64-bit platforms. To get the size of objects that are larger than 4 GB, use the [ICorProfilerCallback4::MovedReferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-movedreferences2-method.md) method instead.  
   
  A compacting garbage collector reclaims the memory occupied by dead objects and compacts that freed space. As a result, live objects might be moved within the heap, and `ObjectID` values distributed by previous notifications might change.  
   

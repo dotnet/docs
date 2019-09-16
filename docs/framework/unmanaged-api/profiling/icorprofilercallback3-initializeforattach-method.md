@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) to give the profiler an opportunity 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeForAttach(  
             [in] IUnknown * pCorProfilerInfoUnk,  
             [in] void * pvClientData,  

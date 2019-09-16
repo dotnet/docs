@@ -61,7 +61,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
  In the rare case when an X.509 certificate contains multiple alternative subject names, and you authorize using the alternative subject name, authorization may fail.  
   
 ## Protect Configuration Files with ACLs  
- You can specify required and optional claims in code and configuration files for [!INCLUDE[infocard](../../../../includes/infocard-md.md)] issued tokens. This results in corresponding elements being emitted in `RequestSecurityToken` messages that are sent to the security token service. An attacker can modify code or configuration to remove required or optional claims, potentially getting the security token service to issue a token that does not allow access to the target service.  
+ You can specify required and optional claims in code and configuration files for CardSpace issued tokens. This results in corresponding elements being emitted in `RequestSecurityToken` messages that are sent to the security token service. An attacker can modify code or configuration to remove required or optional claims, potentially getting the security token service to issue a token that does not allow access to the target service.  
   
  To mitigate: Require access to the computer to modify the configuration file. Use file access control lists (ACLs) to secure configuration files. WCF requires that code be in the application directory or the global assembly cache before it will allow such code to be loaded from configuration. Use directory ACLs to secure directories.  
   
@@ -69,7 +69,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
  When a client is successfully authenticated by a service and a secure session is established with the service, the service keeps track of the session until the client cancels it or the session expires. Every established session counts against the limit for the maximum number of active simultaneous sessions with a service. When this limit is reached, clients that attempt to create a new session with that service are rejected until one or more active sessions expire or are canceled by a client. A client can have multiple sessions with a service, and each one of those sessions counts toward the limit.  
   
 > [!NOTE]
->  When you use stateful sessions, the previous paragraph does not apply. For more information about stateful sessions, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+> When you use stateful sessions, the previous paragraph does not apply. For more information about stateful sessions, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
   
  To mitigate this, set the limit for the maximum number of active sessions and the maximum lifetime for a session by setting the <xref:System.ServiceModel.Channels.SecurityBindingElement> property of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
   

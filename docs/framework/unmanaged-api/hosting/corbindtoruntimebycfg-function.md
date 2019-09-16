@@ -24,7 +24,7 @@ Loads the common language runtime (CLR) into a process by using version informat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindToRuntimeByCfg (  
     [in]  IStream     *pCfgStream,  
     [in]  DWORD        reserved,  

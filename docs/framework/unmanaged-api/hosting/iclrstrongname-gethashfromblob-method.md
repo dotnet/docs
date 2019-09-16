@@ -23,7 +23,7 @@ Gets a hash of the assembly at the specified memory address, using the specified
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromBlob (  
     [in]  BYTE    *pbBlob,  
     [in]  DWORD   cchBlob,  

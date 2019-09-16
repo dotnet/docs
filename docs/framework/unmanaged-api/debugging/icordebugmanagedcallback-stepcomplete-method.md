@@ -23,7 +23,7 @@ Notifies the debugger that a step has completed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StepComplete (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugThread     *pThread,  

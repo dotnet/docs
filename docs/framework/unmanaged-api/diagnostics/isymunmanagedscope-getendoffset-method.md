@@ -23,7 +23,7 @@ Gets the end offset for this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEndOffset(  
     [out, retval] ULONG32* pRetVal);  
 ```  

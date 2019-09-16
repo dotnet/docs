@@ -47,7 +47,7 @@ To indicate that an entity is a media link entry, add the `HasStream` attribute 
 
 You must also add the namespace `xmlns:m=http://schemas.microsoft.com/ado/2007/08/dataservices/metadata` either to the entity or to the root of the .edmx or .csdl file that defines the data model.
 
-For an example of a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://go.microsoft.com/fwlink/?LinkID=198989).
+For an example of a data service that uses the Entity Framework provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://go.microsoft.com/fwlink/?LinkID=198989).
 
 **Reflection Provider**
 
@@ -55,7 +55,7 @@ To indicate that an entity is a media link entry, add the <xref:System.Data.Serv
 
 **Custom Data Service Provider**
 
-When using custom service providers, you implement the <xref:System.Data.Services.Providers.IDataServiceMetadataProvider> interface to define the metadata for your data service. For more information, see [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md). You indicate that a binary resource stream belongs to a <xref:System.Data.Services.Providers.ResourceType> by setting the <xref:System.Data.Services.Providers.ResourceType.IsMediaLinkEntry%2A> property to `true` on the <xref:System.Data.Services.Providers.ResourceType> that represents the entity type, which is a media link entry.
+When using custom service providers, you implement the <xref:System.Data.Services.Providers.IDataServiceMetadataProvider> interface to define the metadata for your data service. For more information, see [Custom Data Service Providers](custom-data-service-providers-wcf-data-services.md). You indicate that a binary resource stream belongs to a <xref:System.Data.Services.Providers.ResourceType> by setting the <xref:System.Data.Services.Providers.ResourceType.IsMediaLinkEntry%2A> property to `true` on the <xref:System.Data.Services.Providers.ResourceType> that represents the entity type, which is a media link entry.
 
 ## Implementing the IDataServiceStreamProvider Interface
 
@@ -78,7 +78,7 @@ To provide the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] runti
 [!code-csharp[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming_service/cs/photodata.svc.cs#photoservicestreamingprovider)]
 [!code-vb[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming_service/vb/photodata.svc.vb#photoservicestreamingprovider)]
 
-For general information about how to create a data service, see [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md).
+For general information about how to create a data service, see [Configuring the Data Service](configuring-the-data-service-wcf-data-services.md).
 
 ## Enabling Large Binary Streams in the Hosting Environment
 
@@ -87,13 +87,13 @@ When you create a data service in an ASP.NET Web application, Windows Communicat
 > [!NOTE]
 > You must use a <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType> transfer mode to ensure that the binary data in both the request and response messages are streamed and not buffered by WCF.
 
-For more information, see [Streaming Message Transfer](../../../../docs/framework/wcf/feature-details/streaming-message-transfer.md) and [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).
+For more information, see [Streaming Message Transfer](../../wcf/feature-details/streaming-message-transfer.md) and [Transport Quotas](../../wcf/feature-details/transport-quotas.md).
 
 By default, Internet Information Services (IIS) also limits the size of requests to 4MB. To enable your data service to receive streams larger than 4MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) in the `<system.web />` configuration section, as shown in the following example:
 
 ## Using Data Streams in a Client Application
 
-The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to both retrieve and update these exposed resources as binary streams on the client. For more information, see [Working with Binary Data](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md).
+The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to both retrieve and update these exposed resources as binary streams on the client. For more information, see [Working with Binary Data](working-with-binary-data-wcf-data-services.md).
 
 ## Considerations for Working with a Streaming Provider
 
@@ -129,10 +129,10 @@ The streaming provider has the following [!INCLUDE[ssODataShort](../../../../inc
 
 - The streaming provider requires that the data service support version 2.0 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol and later versions.
 
-For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).
+For more information, see [Data Service Versioning](data-service-versioning-wcf-data-services.md).
 
 ## See also
 
-- [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
-- [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)
-- [Working with Binary Data](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)
+- [Data Services Providers](data-services-providers-wcf-data-services.md)
+- [Custom Data Service Providers](custom-data-service-providers-wcf-data-services.md)
+- [Working with Binary Data](working-with-binary-data-wcf-data-services.md)

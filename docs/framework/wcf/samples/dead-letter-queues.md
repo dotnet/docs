@@ -7,10 +7,10 @@ ms.assetid: ff664f33-ad02-422c-9041-bab6d993f9cc
 This sample demonstrates how to handle and process messages that have failed delivery. It is based on the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding` binding. The service is a self-hosted console application to enable you to observe the service receiving queued messages.
 
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this topic.
 
 > [!NOTE]
->  This sample demonstrates each application dead letter queue that is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. The sample can be modified to use the default system-wide queues for MSMQ 3.0 on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
+> This sample demonstrates each application dead letter queue that is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. The sample can be modified to use the default system-wide queues for MSMQ 3.0 on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
 
  In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.
 
@@ -105,7 +105,7 @@ class Client
  The client's configuration specifies a short duration for the message to reach the service. If the message cannot be transmitted within the duration specified, the message expires and is moved to the dead-letter queue.
 
 > [!NOTE]
->  It is possible for the client to deliver the message to the service queue within the specified time. To ensure you see the dead-letter service in action, you should run the client before starting the service. The message times out and is delivered to the dead-letter service.
+> It is possible for the client to deliver the message to the service queue within the specified time. To ensure you see the dead-letter service in action, you should run the client before starting the service. The message times out and is delivered to the dead-letter service.
 
  The application must define which queue to use as its dead-letter queue. If no queue is specified, the default system-wide transactional dead-letter queue is used to queue dead messages. In this example, the client application specifies its own application dead-letter queue.
 
@@ -143,14 +143,14 @@ class Client
  The dead-letter message service reads messages from the dead-letter queue. The dead-letter message service implements the `IOrderProcessor` contract. Its implementation however is not to process orders. The dead-letter message service is a client service and does not have the facility to process orders.
 
 > [!NOTE]
->  The dead-letter queue is a client queue and is local to the client queue manager.
+> The dead-letter queue is a client queue and is local to the client queue manager.
 
  The dead-letter message service implementation checks for the reason a message failed delivery and takes corrective measures. The reason for a message failure is captured in two enumerations, <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> and <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryStatus%2A>. You can retrieve the <xref:System.ServiceModel.Channels.MsmqMessageProperty> from the <xref:System.ServiceModel.OperationContext> as shown in the following sample code:
 
 ```csharp
 public void SubmitPurchaseOrder(PurchaseOrder po)
 {
-    Console.WriteLine("Submitting purchase order did not succed ", po);
+    Console.WriteLine("Submitting purchase order did not succeed ", po);
     MsmqMessageProperty mqProp =
                   OperationContext.Current.IncomingMessageProperties[
                   MsmqMessageProperty.Name] as MsmqMessageProperty;
@@ -262,11 +262,11 @@ public class PurchaseOrderDLQService : IOrderProcessor
  In running the sample, there are 3 executables to run to see how the dead-letter queue works for each application; the client, service and a dead-letter service that reads from the dead-letter queue for each application and resends the message to the service. All are console applications with output in console windows.
 
 > [!NOTE]
->  Because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages. You should start the service and shut it down so that the queue can be created.
+> Because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages. You should start the service and shut it down so that the queue can be created.
 
  When running the client, the client displays the message:
 
-```
+```console
 Press <ENTER> to terminate client.
 ```
 
@@ -274,7 +274,7 @@ Press <ENTER> to terminate client.
 
  You then run the dead-letter service, which reads the message and displays the error code and resends the message back to the service.
 
-```
+```console
 The dead letter service is ready.
 Press <ENTER> to terminate service.
 
@@ -289,7 +289,7 @@ Purchase order resent
 
  The service starts and then reads the resent message and processes it.
 
-```
+```console
 The service is ready.
 Press <ENTER> to terminate service.
 
@@ -341,16 +341,16 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 2. Ensure that you change the configuration on the DeadLetterService, server and the client before you run the sample.
 
     > [!NOTE]
-    >  Setting `security mode` to `None` is equivalent to setting `MsmqAuthenticationMode`, `MsmqProtectionLevel` and `Message` security to `None`.
+    > Setting `security mode` to `None` is equivalent to setting `MsmqAuthenticationMode`, `MsmqProtectionLevel` and `Message` security to `None`.
 
 ## Comments
  By default with the `netMsmqBinding` binding transport, security is enabled. Two properties, `MsmqAuthenticationMode` and `MsmqProtectionLevel`, together determine the type of transport security. By default the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain. If you run this sample on a computer that is not part of a domain, you receive the following error: "User's internal message queuing certificate does not exist".
 
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  

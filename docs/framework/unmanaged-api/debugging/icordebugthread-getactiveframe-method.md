@@ -23,7 +23,7 @@ Gets an interface pointer to the active (most recent) frame on this ICorDebugThr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetActiveFrame (  
     [out] ICorDebugFrame   **ppFrame  
 );  

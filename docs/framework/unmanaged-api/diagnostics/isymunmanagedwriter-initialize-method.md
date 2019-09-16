@@ -25,7 +25,7 @@ Sets the metadata emitter interface with which this writer will be associated, a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Initialize(  
     [in] IUnknown     *emitter,  
     [in] const WCHAR  *filename,  

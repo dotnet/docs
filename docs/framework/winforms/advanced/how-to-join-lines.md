@@ -16,7 +16,7 @@ helpviewer_keywords:
 ms.assetid: 9fc480c2-3c75-4fd1-8ab5-296a99e820e2
 ---
 # How to: Join Lines
-A line join is the common area that is formed by two lines whose ends meet or overlap. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides three line join styles: miter, bevel, and round. Line join style is a property of the <xref:System.Drawing.Pen> class. When you specify a line join style for a <xref:System.Drawing.Pen> object, that join style will be applied to all the connected lines in any <xref:System.Drawing.Drawing2D.GraphicsPath> object drawn using that pen.  
+A line join is the common area that is formed by two lines whose ends meet or overlap. GDI+ provides three line join styles: miter, bevel, and round. Line join style is a property of the <xref:System.Drawing.Pen> class. When you specify a line join style for a <xref:System.Drawing.Pen> object, that join style will be applied to all the connected lines in any <xref:System.Drawing.Drawing2D.GraphicsPath> object drawn using that pen.  
   
  The following illustration shows the results of the beveled line join example.  
   

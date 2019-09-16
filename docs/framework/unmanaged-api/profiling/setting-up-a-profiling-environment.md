@@ -15,7 +15,7 @@ ms.author: "mairaw"
 ---
 # Setting Up a Profiling Environment
 > [!NOTE]
->  There have been substantial changes to profiling in the .NET Framework 4.  
+> There have been substantial changes to profiling in the .NET Framework 4.  
   
  When a managed process (application or service) starts, it loads the common language runtime (CLR). When the CLR is initialized, it evaluates the following two environmental variables to decide whether the process should connect to a profiler:  
   
@@ -23,7 +23,7 @@ ms.author: "mairaw"
   
 - COR_PROFILER: If the COR_ENABLE_PROFILING check passes, the CLR connects to the profiler that has this CLSID or ProgID, which must have been stored previously in the registry. The COR_PROFILER environment variable is defined as a string, as shown in the following two examples.  
   
-    ```  
+    ```cpp  
     set COR_PROFILER={32E2F4DA-1BEA-47ea-88F9-C5DAF691C94A}  
     set COR_PROFILER="MyProfiler"  
     ```  
@@ -31,10 +31,10 @@ ms.author: "mairaw"
  To profile a CLR application, you must set the COR_ENABLE_PROFILING and COR_PROFILER environment variables before you run the application. You must also make sure that the profiler DLL is registered.  
   
 > [!NOTE]
->  Starting with the .NET Framework 4, profilers do not have to be registered.  
+> Starting with the .NET Framework 4, profilers do not have to be registered.  
   
 > [!NOTE]
->  To use .NET Framework versions 2.0, 3.0, and 3.5 profilers in the .NET Framework 4 and later versions, you must set the COMPLUS_ProfAPI_ProfilerCompatibilitySetting environment variable.  
+> To use .NET Framework versions 2.0, 3.0, and 3.5 profilers in the .NET Framework 4 and later versions, you must set the COMPLUS_ProfAPI_ProfilerCompatibilitySetting environment variable.  
   
 ## Environment Variable Scope  
  How you set the COR_ENABLE_PROFILING and COR_PROFILER environment variables will determine their scope of influence. You can set these variables in one of the following ways:  
@@ -60,7 +60,7 @@ ms.author: "mairaw"
 ## Initializing the Profiler  
  When both environment variable checks pass, the CLR creates an instance of the profiler in a similar manner to the COM `CoCreateInstance` function. The profiler is not loaded through a direct call to `CoCreateInstance`. Therefore, a call to `CoInitialize`, which requires setting the threading model, is avoided. The CLR then calls the [ICorProfilerCallback::Initialize](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-initialize-method.md) method in the profiler. The signature of this method is as follows.  
   
-```  
+```cpp  
 HRESULT Initialize(IUnknown *pICorProfilerInfoUnk)  
 ```  
   
@@ -69,7 +69,7 @@ HRESULT Initialize(IUnknown *pICorProfilerInfoUnk)
 ## Setting Event Notifications  
  The profiler then calls the [ICorProfilerInfo::SetEventMask](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-seteventmask-method.md) method to specify which categories of notifications it is interested in. For example, if the profiler is interested only in function enter and leave notifications and garbage collection notifications, it specifies the following.  
   
-```  
+```cpp  
 ICorProfilerInfo* pInfo;  
 pICorProfilerInfoUnk->QueryInterface(IID_ICorProfilerInfo, (void**)&pInfo);  
 pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)  

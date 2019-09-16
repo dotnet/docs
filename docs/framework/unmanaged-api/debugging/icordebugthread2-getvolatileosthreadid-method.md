@@ -23,7 +23,7 @@ Gets the operating system thread identifier for this ICorDebugThread2.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVolatileOSThreadID (  
     [out] DWORD    *pdwTid  
 );  

@@ -25,7 +25,7 @@ Enumerates the processes that are running on a remote computer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumProcesses (  
        [out]  DWORD*                  pcProcs,   
        [out]  CoreClrDebugProcInfo**  ppProcs  

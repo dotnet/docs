@@ -23,7 +23,7 @@ Compares two assembly identities to determine whether they are equivalent.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI CompareAssemblyIdentity (  
     [in]  LPCWSTR                  pwzAssemblyIdentity1,  
     [in]  BOOL                     fUnified1,  
@@ -51,7 +51,7 @@ STDAPI CompareAssemblyIdentity (
  [out] A Boolean flag that indicates whether the two assemblies are equivalent.  
   
  `pResult`  
- [out] An [AssemblyComparisonResult](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md) enumeration that contains detailed information about the comparison.  
+ [out] An [AssemblyComparisonResult](assemblycomparisonresult-enumeration.md) enumeration that contains detailed information about the comparison.  
   
 ## Return Value  
  `pfEquivalent` returns a Boolean value that indicates whether the two assemblies are equivalent. `pResult` returns one of the `AssemblyComparisonResult` values, to give a more detailed reason for the value of `pfEquivalent`.  
@@ -67,10 +67,10 @@ STDAPI CompareAssemblyIdentity (
   
  The `fUnified` flag indicates that all version numbers up to the version number of the strongly named assembly are considered equivalent to the strongly named assembly. For example, if the value of `pwzAssemblyIndentity1` is "MyAssembly, version=3.0.0.0, culture=neutral, publicKeyToken=....", and the value of `fUnified1` is `true`, this indicates that all versions of MyAssembly from version 0.0.0.0 to 3.0.0.0 should be treated as equivalent. In such a case, if `pwzAssemblyIndentity2` refers to the same assembly as `pwzAssemblyIndentity1`, except that it has a lower version number, `pfEquivalent` is set to `true`. If `pwzAssemblyIdentity2` refers to a higher version number, `pfEquivalent` is set to `true` only if the value of `fUnified2` is `true`.  
   
- The `pResult` parameter includes specific information about why the two assemblies are considered equivalent or not equivalent. For more information, see [AssemblyComparisonResult Enumeration](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md).  
+ The `pResult` parameter includes specific information about why the two assemblies are considered equivalent or not equivalent. For more information, see [AssemblyComparisonResult Enumeration](assemblycomparisonresult-enumeration.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -80,5 +80,5 @@ STDAPI CompareAssemblyIdentity (
   
 ## See also
 
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
-- [AssemblyComparisonResult Enumeration](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)
+- [AssemblyComparisonResult Enumeration](assemblycomparisonresult-enumeration.md)

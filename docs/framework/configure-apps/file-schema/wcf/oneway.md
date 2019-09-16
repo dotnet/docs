@@ -6,11 +6,12 @@ ms.assetid: 00e67e0e-77c0-4695-9138-c0997b0e5f3c
 # \<oneWay>
 Enables packet routing and the use of one-way methods for a custom binding.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<oneWay>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<oneWay>**  
   
 ## Syntax  
   
@@ -36,13 +37,13 @@ Enables packet routing and the use of one-way methods for a custom binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<channelPoolSettings>](../../../../../docs/framework/configure-apps/file-schema/wcf/channelpoolsettings.md)|A <xref:System.ServiceModel.Configuration.ChannelPoolSettingsElement> object that contains properties of the channel pool for the current channel.|  
+|[\<channelPoolSettings>](channelpoolsettings.md)|A <xref:System.ServiceModel.Configuration.ChannelPoolSettingsElement> object that contains properties of the channel pool for the current channel.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  To enable packet routing, a one-way conversion layer is required, which this element provides. A user can create a custom binding that layers this binding over a session-aware or request-reply transport to make it packet routable. This element is also useful when you want to expose one-way methods in a more native fashion. More transformations can be applied over this layer, such as Composite Duplex and Reliable Messaging.  
@@ -52,7 +53,7 @@ Enables packet routing and the use of one-way methods for a custom binding.
 - <xref:System.ServiceModel.Channels.OneWayBindingElement>
 - <xref:System.ServiceModel.Configuration.OneWayElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

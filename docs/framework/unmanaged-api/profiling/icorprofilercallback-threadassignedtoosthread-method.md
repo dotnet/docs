@@ -23,7 +23,7 @@ Notifies the profiler that a managed thread is being implemented using a particu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadAssignedToOSThread(  
     [in] ThreadID managedThreadId,  
     [in] DWORD    osThreadId);  

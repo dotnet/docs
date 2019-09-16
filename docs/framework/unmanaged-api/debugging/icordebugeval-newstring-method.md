@@ -23,7 +23,7 @@ Allocates a new string instance with the specified contents.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewString (  
     [in] LPCWSTR   string  
 );  

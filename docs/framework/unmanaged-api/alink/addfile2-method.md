@@ -23,7 +23,7 @@ Adds files to the assembly. Can also be used to create unbound modules.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddFile2(  
     mdAssembly AssemblyID,  
     LPCWSTR pszFilename,  
@@ -41,10 +41,10 @@ HRESULT AddFile2(
  Name of the file to be added.  
   
  `dwFlags`  
- COM+ `FileDef` flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md).  
+ COM+ `FileDef` flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../metadata/imetadataassemblyemit-definefile-method.md).  
   
  `pEmitter`  
- Interface to [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md) interface.  
+ Interface to [IMetaDataEmit2 Interface](../metadata/imetadataemit2-interface.md) interface.  
   
  `pFileToken`  
  Receives ID for the file being added.  
@@ -57,6 +57,6 @@ HRESULT AddFile2(
   
 ## See also
 
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [IALink Interface](ialink-interface.md)
+- [ALink API](index.md)

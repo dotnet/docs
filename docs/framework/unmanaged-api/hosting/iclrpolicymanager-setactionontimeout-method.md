@@ -23,7 +23,7 @@ Specifies the policy action the common language runtime (CLR) should take when t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetActionOnTimeout (  
     [in] EClrOperation operation,  
     [in] EPolicyAction action  

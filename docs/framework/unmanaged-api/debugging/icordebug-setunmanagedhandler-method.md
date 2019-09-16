@@ -23,7 +23,7 @@ Specifies the event handler object for unmanaged events.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnmanagedHandler (  
     [in] ICorDebugUnmanagedCallback  *pCallback  
 );  

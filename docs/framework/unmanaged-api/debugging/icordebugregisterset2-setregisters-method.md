@@ -22,11 +22,11 @@ ms.author: "ronpet"
 `SetRegisters` is not implemented in the .NET Framework version 2.0. Do not call this method.  
   
 > [!NOTE]
->  Use the higher-level operations such as [ICorDebugILFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-setip-method.md) or [ICorDebugNativeFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md).  
+> Use the higher-level operations such as [ICorDebugILFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-setip-method.md) or [ICorDebugNativeFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetRegisters (  
     [in] ULONG32 maskCount,  
     [in, size_is(maskCount)] BYTE mask[],  

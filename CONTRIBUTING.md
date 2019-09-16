@@ -7,10 +7,10 @@ Thank you for your interest in contributing to the .NET documentation!
 
 The document covers the process for contributing to the articles and code samples that are hosted on the [.NET documentation site](https://docs.microsoft.com/dotnet). Contributions may be as simple as typo corrections or as complex as new articles.
 
-* [Process for contributing](#process-for-contributing)
-* [The C# interactive experience](#the-c-interactive-experience)
-* [DOs and DON'Ts](#dos-and-donts)
-* [Contributor License Agreement](#contributor-license-agreement)
+- [Process for contributing](#process-for-contributing)
+- [The C# interactive experience](#the-c-interactive-experience)
+- [DOs and DON'Ts](#dos-and-donts)
+- [Contributor License Agreement](#contributor-license-agreement)
 
 This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
 

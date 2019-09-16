@@ -10,7 +10,7 @@ Gets a method's local symbols given the relative virtual address (RVA) of that m
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodLocalSymbols(  
    [in] ULONG32 nativeRVA,  
    [in] ULONG32 cRequestedSymbols,  
@@ -35,7 +35,7 @@ HRESULT GetMethodLocalSymbols(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

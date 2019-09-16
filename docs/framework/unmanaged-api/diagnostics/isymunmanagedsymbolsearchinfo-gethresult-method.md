@@ -23,7 +23,7 @@ Gets the HRESULT.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHRESULT(  
     [out] HRESULT *phr);  
 ```  

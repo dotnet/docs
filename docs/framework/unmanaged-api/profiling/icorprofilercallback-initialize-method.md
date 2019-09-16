@@ -23,7 +23,7 @@ Called to initialize the code profiler whenever a new common language runtime (C
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Initialize(  
     [in] IUnknown     *pICorProfilerInfoUnk);  
 ```  

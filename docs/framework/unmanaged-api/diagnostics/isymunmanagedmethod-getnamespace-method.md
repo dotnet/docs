@@ -23,7 +23,7 @@ Gets the namespace within which this method is defined.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNamespace(  
    [out] ISymUnmanagedNamespace  **pRetVal);  
 ```  

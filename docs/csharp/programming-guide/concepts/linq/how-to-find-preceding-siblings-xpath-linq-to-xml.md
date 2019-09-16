@@ -15,7 +15,7 @@ This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxl
 ## Example  
  The following example finds the `FullAddress` element, and then retrieves the previous elements using the `preceding-sibling` axis.  
   
- This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
+ This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](./sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
 ```csharp  
 XElement co = XElement.Load("CustomersOrders.xml");  
@@ -39,7 +39,7 @@ foreach (XElement el in list2)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <CompanyName>Great Lakes Food Market</CompanyName>  
 <ContactName>Howard Snyder</ContactName>  

@@ -23,7 +23,7 @@ Gets the amount of stack space that is guaranteed to be available after a stack 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackGuarantee(  
     [out] ULONG *pGuarantee  
 );  

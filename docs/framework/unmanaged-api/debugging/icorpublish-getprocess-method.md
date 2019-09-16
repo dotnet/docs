@@ -23,7 +23,7 @@ Gets an [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess(  
     [in] unsigned              pid,   
     [out] ICorPublishProcess   **ppProcess  

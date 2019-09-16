@@ -41,7 +41,7 @@ The following operators perform logical operations with the [bool](../keywords/b
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators. Those operators always evaluate both operands.
 - Binary [`&&` (conditional logical AND)](#conditional-logical-and-operator-) and [`||` (conditional logical OR)](#conditional-logical-or-operator-) operators. Those operators evaluate the right-hand operand only if it's necessary.
 
-For the operands of the [integral](../keywords/integral-types-table.md) types, the `&`, `|`, and `^` operators perform bitwise logical operations. For more information, see [Bitwise and shift operators](bitwise-and-shift-operators.md).
+For the operands of the [integral](../builtin-types/integral-numeric-types.md) types, the `&`, `|`, and `^` operators perform bitwise logical operations. For more information, see [Bitwise and shift operators](bitwise-and-shift-operators.md).
 
 ## Logical negation operator !
 
@@ -170,7 +170,7 @@ For the complete list of C# operators ordered by precedence level, see [C# opera
 
 ## Operator overloadability
 
-A user-defined type can [overload](../keywords/operator.md) the `!`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
+A user-defined type can [overload](operator-overloading.md) the `!`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
 
 A user-defined type cannot overload the conditional logical operators `&&` and `||`. However, if a user-defined type overloads the [true and false operators](true-false-operators.md) and the `&` or `|` operator in a certain way, the `&&` or `||` operation, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 

@@ -23,7 +23,7 @@ Gets the context identity currently associated with the specified thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext(  
     [in]  ThreadID  threadId,  
     [out] ContextID *pContextId);  

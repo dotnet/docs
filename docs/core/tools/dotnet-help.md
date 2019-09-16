@@ -1,11 +1,15 @@
 ---
 title: dotnet help command
 description: The dotnet help command shows more detailed documentation online for the specified command.
-ms.date: 12/04/2018
+ms.date: 08/08/2019
 ---
 # dotnet help reference
 
+**This article applies to: ✓** .NET Core 2.0 SDK and later versions
+
+<!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-2plus.md)]
+-->
 
 ## Name
 

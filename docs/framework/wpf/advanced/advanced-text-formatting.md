@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: f0a7986e-f5b2-485c-a27d-f8e922022212
 ---
 # Advanced Text Formatting
-The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] for including text in your application. Layout and [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)][!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], such as <xref:System.Windows.Controls.TextBlock>, provide the most common and general use elements for text presentation. Drawing [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], such as <xref:System.Windows.Media.GlyphRunDrawing> and <xref:System.Windows.Media.FormattedText>, provide a means for including formatted text in drawings. At the most advanced level, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides an extensible text formatting engine to control every aspect of text presentation, such as text store management, text run formatting management, and embedded object management.  
+The Windows Presentation Foundation (WPF) provides a robust set of APIs for including text in your application. Layout and [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]APIs, such as <xref:System.Windows.Controls.TextBlock>, provide the most common and general use elements for text presentation. Drawing APIs, such as <xref:System.Windows.Media.GlyphRunDrawing> and <xref:System.Windows.Media.FormattedText>, provide a means for including formatted text in drawings. At the most advanced level, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides an extensible text formatting engine to control every aspect of text presentation, such as text store management, text run formatting management, and embedded object management.  
   
  This topic provides an introduction to [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] text formatting. It focuses on client implementation and use of the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] text formatting engine.  
   
 > [!NOTE]
->  All code examples within this document can be found in the [Advanced Text Formatting Sample](https://go.microsoft.com/fwlink/?LinkID=159965).  
+> All code examples within this document can be found in the [Advanced Text Formatting Sample](https://go.microsoft.com/fwlink/?LinkID=159965).  
 
 <a name="prereq"></a>   
 ## Prerequisites  
- This topic assumes that you are familiar with the higher level [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] used for text presentation. Most user scenarios will not require the advanced text formatting [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] discussed in this topic. For an introduction to the different text [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], see [Documents in WPF](documents-in-wpf.md).  
+ This topic assumes that you are familiar with the higher level APIs used for text presentation. Most user scenarios will not require the advanced text formatting APIs discussed in this topic. For an introduction to the different text APIs, see [Documents in WPF](documents-in-wpf.md).  
   
 <a name="section1"></a>   
 ## Advanced Text Formatting  
@@ -32,7 +32,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
 ## Using the Text Formatter  
  <xref:System.Windows.Media.TextFormatting.TextFormatter> is the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] text formatting engine and provides services for formatting and breaking text lines. The text formatter can handle different text character formats and paragraph styles, and includes support for international text layout.  
   
- Unlike a traditional text [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
+ Unlike a traditional text API, the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
   
  ![Diagram of text layout client and TextFormatter](./media/advanced-text-formatting/text-layout-textformatter-interaction.png)  
   
@@ -79,7 +79,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
  [!code-vb[TextFormatterExample#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormatterExample/VisualBasic/CustomTextSource.vb#101)]  
   
 > [!NOTE]
->  In this example, the text store provides the same text properties to all of the text. Advanced text stores would need to implement their own span management to allow individual characters to have different properties.  
+> In this example, the text store provides the same text properties to all of the text. Advanced text stores would need to implement their own span management to allow individual characters to have different properties.  
   
 <a name="section5"></a>   
 ## Specifying Formatting Properties  

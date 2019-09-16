@@ -43,7 +43,7 @@ Regardless of which form you use, you should always use the curried form for the
 
 The following code example illustrates the definition and use of default and non-default indexed properties that have get and set methods.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3301.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3301.fs)]
 
 ## Output
 

@@ -13,7 +13,7 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] present two different architectures for creating application interfaces. The <xref:System.Windows.Forms.Integration?displayProperty=nameWithType> namespace provides classes that enable common interoperation scenarios. The two key classes that implement interoperation capabilities are <xref:System.Windows.Forms.Integration.WindowsFormsHost> and <xref:System.Windows.Forms.Integration.ElementHost>. This topic describes which interoperation scenarios are supported and which scenarios are not supported.  
   
 > [!NOTE]
->  Special consideration is given to the *hybrid control* scenario. A hybrid control has a control from one technology nested in a control from the other technology. This is also called a *nested interoperation*. A *multilevel hybrid control* has more than one level of hybrid control nesting. An example of a multilevel nested interoperation is a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control that contains a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control, which contains another [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control. Multilevel hybrid controls are not supported.  
+> Special consideration is given to the *hybrid control* scenario. A hybrid control has a control from one technology nested in a control from the other technology. This is also called a *nested interoperation*. A *multilevel hybrid control* has more than one level of hybrid control nesting. An example of a multilevel nested interoperation is a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control that contains a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control, which contains another [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control. Multilevel hybrid controls are not supported.  
 
 <a name="Windows_Presentation_Foundation_Application_Hosting"></a>   
 ## Hosting Windows Forms Controls in WPF  
@@ -29,7 +29,7 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
   
 - It may host a master/detail form with a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] master and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] details.  
   
-- It may host one or more [!INCLUDE[TLA2#tla_actx](../../../../includes/tla2sharptla-actx-md.md)] controls.  
+- It may host one or more ActiveX controls.  
   
 - It may host one or more composite controls.  
   

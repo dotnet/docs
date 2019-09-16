@@ -75,13 +75,13 @@ When a custom exception is necessary, name it appropriately and derive it from t
 
 ## Include three constructors in custom exception classes
 
-Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.
+Use at least the three common constructors when creating your own exception classes: the parameterless constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.
 
-* <xref:System.Exception.%23ctor>, which uses default values.
+- <xref:System.Exception.%23ctor>, which uses default values.
 
-* <xref:System.Exception.%23ctor%28System.String%29>, which accepts a string message.
+- <xref:System.Exception.%23ctor%28System.String%29>, which accepts a string message.
 
-* <xref:System.Exception.%23ctor%28System.String%2CSystem.Exception%29>, which accepts a string message and an inner exception.
+- <xref:System.Exception.%23ctor%28System.String%2CSystem.Exception%29>, which accepts a string message and an inner exception.
 
 For an example, see [How to: Create User-Defined Exceptions](how-to-create-user-defined-exceptions.md).
 
@@ -138,6 +138,14 @@ public void TransferFunds(Account from, Account to, decimal amount)
 }
 ```
 
+```vb
+Public Sub TransferFunds(from As Account, [to] As Account, amount As Decimal)
+    from.Withdrawal(amount)
+    ' If the deposit fails, the withdrawal shouldn't remain in effect.
+    [to].Deposit(amount)
+End Sub
+```
+
 The method above does not directly throw any exceptions, but must be written defensively so that if the deposit operation fails, the withdrawal is reversed.
 
 One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.
@@ -158,19 +166,43 @@ private static void TransferFunds(Account from, Account to, decimal amount)
 }
 ```
 
+```vb
+Private Shared Sub TransferFunds(from As Account, [to] As Account, amount As Decimal)
+    Dim withdrawalTrxID As String = from.Withdrawal(amount)
+    Try
+        [to].Deposit(amount)
+    Catch
+        from.RollbackTransaction(withdrawalTrxID)
+        Throw
+    End Try
+End Sub
+```
+
 This example illustrates the use of `throw` to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception:
 
 ```csharp
 catch (Exception ex)
 {
     from.RollbackTransaction(withdrawalTrxID);
-    throw new TransferFundsException("Withdrawal failed", innerException: ex)
+    throw new TransferFundsException("Withdrawal failed.", innerException: ex)
     {
         From = from,
         To = to,
         Amount = amount
     };
 }
+```
+
+```vb
+Catch ex As Exception
+    from.RollbackTransaction(withdrawalTrxID)
+    Throw New TransferFundsException("Withdrawal failed.", innerException:=ex) With
+    {
+        .From = from,
+        .[To] = [to],
+        .Amount = amount
+    }
+End Try
 ```
 
 ## See also

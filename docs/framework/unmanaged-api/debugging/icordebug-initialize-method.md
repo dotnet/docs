@@ -23,7 +23,7 @@ Initializes the `ICorDebug` object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Initialize ();  
 ```  
   

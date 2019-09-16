@@ -23,7 +23,7 @@ Modifies the binding policy for the specified assembly, and creates a new versio
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT  ModifyApplicationPolicy (  
     [in] LPCWSTR     pwzSourceAssemblyIdentity,   
     [in] LPCWSTR     pwzTargetAssemblyIdentity,  

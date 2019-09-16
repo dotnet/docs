@@ -23,7 +23,7 @@ Notifies the profiler that an assembly has finished loading.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AssemblyLoadFinished(  
     [in] AssemblyID assemblyId,  
     [in] HRESULT    hrStatus);  

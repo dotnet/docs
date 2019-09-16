@@ -14,7 +14,7 @@ The `Async` modifier indicates that the method or [lambda expression](../../../v
  An async method provides a convenient way to do potentially long-running work without blocking the caller's thread. The caller of an async method can resume its work without waiting for the async method to finish.  
   
 > [!NOTE]
->  The `Async` and `Await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md).  
+> The `Async` and `Await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md).  
   
  The following example shows the structure of an async method. By convention, async method names end in "Async."  
   
@@ -72,7 +72,7 @@ AddHandler button1.Click, Async Sub(sender, e)
   
 ' The following async method returns a Task(Of T).  
 ' A typical call awaits the Byte array result:  
-'      Dim result As Byte() = Await GetURLContents("http://msdn.com")  
+'      Dim result As Byte() = Await GetURLContents("https://msdn.com")  
 Private Async Function GetURLContentsAsync(url As String) As Task(Of Byte())  
   
     ' The downloaded resource ends up in the variable named content.  

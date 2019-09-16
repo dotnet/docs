@@ -18,13 +18,13 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
  For more information about drawing objects and drawing context, see [Drawing Objects Overview](drawing-objects-overview.md).  
   
 > [!NOTE]
->  When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
+> When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
   
 <a name="mediaplaybackmodes"></a>   
 ## Media Playback Modes  
   
 > [!NOTE]
->  Both <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> have similar members. The links in this section refer to the <xref:System.Windows.Controls.MediaElement> class members. Unless specifically noted, members linked to in the <xref:System.Windows.Controls.MediaElement> class can also be found in the <xref:System.Windows.Media.MediaPlayer> class.  
+> Both <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> have similar members. The links in this section refer to the <xref:System.Windows.Controls.MediaElement> class members. Unless specifically noted, members linked to in the <xref:System.Windows.Controls.MediaElement> class can also be found in the <xref:System.Windows.Media.MediaPlayer> class.  
   
  To understand media playback in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], an understanding of the different modes in which media can be played is required. Both <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> can be used in two different media modes, independent mode and clock mode. The media mode is determined by the <xref:System.Windows.Controls.MediaElement.Clock%2A> property. When <xref:System.Windows.Controls.MediaElement.Clock%2A> is `null`, the media object is in independent mode. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> is non-null, the media object is in clock mode. By default, media objects are in independent mode.  
   

@@ -1,7 +1,7 @@
 ---
 title: dotnet add package command
 description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
-ms.date: 04/24/2019
+ms.date: 06/26/2019
 ---
 # dotnet add package
 
@@ -48,60 +48,65 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 ## Arguments
 
-* **`PROJECT`**
+- **`PROJECT`**
 
   Specifies the project file. If not specified, the command searches the current directory for one.
 
-* **`PACKAGE_NAME`**
+- **`PACKAGE_NAME`**
 
   The package reference to add.
 
 ## Options
 
-* **`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   Adds a package reference only when targeting a specific [framework](../../standard/frameworks.md).
 
-* **`-h|--help`**
+- **`-h|--help`**
 
   Prints out a short help for the command.
 
-* **`--interactive`**
+- **`--interactive`**
 
-  Allows the command to stop and wait for user input or action (for example to complete authentication). Available since .NET Core 2.1 SDK, version 2.1.400 or later.
+  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 2.1 SDK, version 2.1.400 or later.
 
-* **`-n|--no-restore`**
+- **`-n|--no-restore`**
 
   Adds a package reference without performing a restore preview and compatibility check.
 
-* **`--package-directory <PACKAGE_DIRECTORY>`**
+- **`--package-directory <PACKAGE_DIRECTORY>`**
 
-  The directory where to restore the packages.
+  The directory where to restore the packages. The default package restore location is `%userprofile%\.nuget\packages` on Windows and `~/.nuget/packages` on macOS and Linux. For more information, see [Managing the global packages, cache, and temp folders in NuGet](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
 
-* **`-s|--source <SOURCE>`**
+- **`-s|--source <SOURCE>`**
 
   The NuGet package source to use during the restore operation.
 
-* **`-v|--version <VERSION>`**
+- **`-v|--version <VERSION>`**
 
   Version of the package. See [NuGet package versioning](https://docs.microsoft.com/nuget/reference/package-versioning).
 
 ## Examples
 
-* Add `Newtonsoft.Json` NuGet package to a project:
+- Add `Newtonsoft.Json` NuGet package to a project:
 
   ```console
   dotnet add package Newtonsoft.Json
   ```
 
-* Add a specific version of a package to a project:
+- Add a specific version of a package to a project:
 
   ```console
   dotnet add ToDo.csproj package Microsoft.Azure.DocumentDB.Core -v 1.0.0
   ```
 
-* Add a package using a specific NuGet source:
+- Add a package using a specific NuGet source:
 
   ```console
   dotnet add package Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
   ```
+
+## See also
+
+- [Managing the global packages, cache, and temp folders in NuGet](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders)
+- [NuGet package versioning](https://docs.microsoft.com/nuget/reference/package-versioning)

@@ -24,7 +24,7 @@ Creates a new instance of a class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SpawnInstance (
    [in] int                  vFunc, 
    [in] IWbemClassObject*    ptr, 
@@ -66,7 +66,7 @@ This function wraps a call to the [IWbemClassObject::SpawnInstance](/windows/des
 The new object returned in `ppNewClass` automatically becomes a subclass of the current object. This behavior cannot be overridden. There is no other method by which subclasses (derived classes) can be created.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

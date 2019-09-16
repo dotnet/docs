@@ -9,7 +9,7 @@ This topic describes the differences between [!INCLUDE[esql](../../../../../../i
 ## Inheritance and Relationships Support  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] works directly with conceptual entity schemas and supports conceptual model features such as inheritance and relationships.  
   
- When working with inheritance, it is often useful to select instances of a subtype from a collection of supertype instances. The [oftype](../../../../../../docs/framework/data/adonet/ef/language-reference/oftype-entity-sql.md) operator in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] (similar to `oftype` in C# Sequences) provides this capability.  
+ When working with inheritance, it is often useful to select instances of a subtype from a collection of supertype instances. The [oftype](oftype-entity-sql.md) operator in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] (similar to `oftype` in C# Sequences) provides this capability.  
   
 ## Support for Collections  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] treats collections as first-class entities. For example:  
@@ -27,7 +27,7 @@ This topic describes the differences between [!INCLUDE[esql](../../../../../../i
 ## Support for Expressions  
  Transact-SQL has subqueries (tables) and expressions (rows and columns).  
   
- To support collections and nested collections, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] makes everything an expression. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is more composable than Transact-SQL—every expression can be used anywhere. Query expressions always result in collections of the projected types and can be used anywhere a collection expression is allowed. For information about Transact-SQL expressions that are not supported in [!INCLUDE[esql](../../../../../../includes/esql-md.md)], see [Unsupported Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/unsupported-expressions-entity-sql.md).  
+ To support collections and nested collections, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] makes everything an expression. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is more composable than Transact-SQL—every expression can be used anywhere. Query expressions always result in collections of the projected types and can be used anywhere a collection expression is allowed. For information about Transact-SQL expressions that are not supported in [!INCLUDE[esql](../../../../../../includes/esql-md.md)], see [Unsupported Expressions](unsupported-expressions-entity-sql.md).  
   
  The following are all valid [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries:  
   
@@ -162,7 +162,7 @@ SELECT C2.FirstName, C2.LastName
 ```  
   
 ## Identifiers  
- In Transact-SQL, identifier comparison is based on the collation of the current database. In [!INCLUDE[esql](../../../../../../includes/esql-md.md)], identifiers are always case insensitive and accent sensitive (that is, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] distinguishes between accented and unaccented characters; for example, 'a' is not equal to 'ấ'). [!INCLUDE[esql](../../../../../../includes/esql-md.md)] treats versions of letters that appear the same but are from different code pages as different characters. For more information, see [Input Character Set](../../../../../../docs/framework/data/adonet/ef/language-reference/input-character-set-entity-sql.md).  
+ In Transact-SQL, identifier comparison is based on the collation of the current database. In [!INCLUDE[esql](../../../../../../includes/esql-md.md)], identifiers are always case insensitive and accent sensitive (that is, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] distinguishes between accented and unaccented characters; for example, 'a' is not equal to 'ấ'). [!INCLUDE[esql](../../../../../../includes/esql-md.md)] treats versions of letters that appear the same but are from different code pages as different characters. For more information, see [Input Character Set](input-character-set-entity-sql.md).  
   
 ## Transact-SQL Functionality Not Available in Entity SQL  
  The following Transact-SQL functionality is not available in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
@@ -183,7 +183,7 @@ SELECT C2.FirstName, C2.LastName
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not (yet) provide support for analytic functions.  
   
  Built-in Functions, Operators  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports a subset of Transact-SQL's built in functions and operators. These operators and functions are likely to be supported by the major store providers. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] uses the store-specific functions declared in a provider manifest. Additionally, the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] allows you to declare built-in and user-defined existing store functions, for [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to use.  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports a subset of Transact-SQL's built in functions and operators. These operators and functions are likely to be supported by the major store providers. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] uses the store-specific functions declared in a provider manifest. Additionally, the Entity Framework allows you to declare built-in and user-defined existing store functions, for [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to use.  
   
  Hints  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not provide mechanisms for query hints.  
@@ -207,5 +207,5 @@ Select value c from Categories as c;
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
-- [Unsupported Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/unsupported-expressions-entity-sql.md)
+- [Entity SQL Overview](entity-sql-overview.md)
+- [Unsupported Expressions](unsupported-expressions-entity-sql.md)

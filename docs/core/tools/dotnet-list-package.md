@@ -1,7 +1,7 @@
 ---
 title: dotnet list package command
 description: The 'dotnet list package' command provides a convenient option to list the package references for a project or solution.
-ms.date: 04/09/2019
+ms.date: 06/26/2019
 ---
 # dotnet list package
 
@@ -13,9 +13,9 @@ ms.date: 04/09/2019
 
 ## Synopsis
 
-```
-dotnet list [<PROJECT | SOLUTION>] package [--config] [--framework] [--highest-minor] [--highest-patch] 
-   [--include-prerelease] [--include-transitive] [--outdated] [--source]
+```console
+dotnet list [<PROJECT>|<SOLUTION>] package [--config] [--framework] [--highest-minor] [--highest-patch] 
+   [--include-prerelease] [--include-transitive] [--interactive] [--outdated] [--source]
 dotnet list package [-h|--help]
 ```
 
@@ -98,6 +98,10 @@ The project or solution file to operate on. If not specified, the command search
 * **`--include-transitive`**
 
   Lists transitive packages, in addition to the top-level packages. When specifying this option, you get a list of packages that the top-level packages depend on.
+
+* **`--interactive`**
+
+  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
 
 * **`--outdated`**
 

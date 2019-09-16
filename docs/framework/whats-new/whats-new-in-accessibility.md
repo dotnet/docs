@@ -17,7 +17,7 @@ The .NET Framework aims at making applications more accessible for your users. A
 
 ## Accessibility switches
 
-You can configure your app to opt into accessibility features if it targets .NET Framework 4.7 or an earlier version but is running on .NET Framework 4.7.1 or later. You can also configure your app to use legacy features (and not take advantage of accessibility features) if it targets .NET Framework 4.7.1 or later. Each version of the .NET Framework that includes accessibility features has a version-specific accessibility switch, which you add to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file. The following are the supported switches:
+You can configure your app to opt into accessibility features if it targets .NET Framework 4.7 or an earlier version but is running on .NET Framework 4.7.1 or later. You can also configure your app to use legacy features (and not take advantage of accessibility features) if it targets .NET Framework 4.7.1 or later. Each version of the .NET Framework that includes accessibility features has a version-specific accessibility switch, which you add to the [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](../configure-apps/file-schema/runtime/index.md) section of the application's configuration file. The following are the supported switches:
 
 |Version|Switch|
 |---|---|
@@ -27,7 +27,7 @@ You can configure your app to opt into accessibility features if it targets .NET
 
 ### Taking advantage of accessibility enhancements
 
-The new accessibility features are enabled by default for applications that target .NET Framework 4.7.1 or later. In addition, applications that target an earlier version of the .NET Framework but are running on .NET Framework 4.7.1 or later can opt out of legacy accessibility behaviors (and thereby take advantage of accessibility improvements) by adding switches to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file and setting their value to `false`. The following shows how to opt in to accessibility enhancements introduced in .NET Framework 4.7.1:
+The new accessibility features are enabled by default for applications that target .NET Framework 4.7.1 or later. In addition, applications that target an earlier version of the .NET Framework but are running on .NET Framework 4.7.1 or later can opt out of legacy accessibility behaviors (and thereby take advantage of accessibility improvements) by adding switches to the [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](../configure-apps/file-schema/runtime/index.md) section of the application's configuration file and setting their value to `false`. The following shows how to opt in to accessibility enhancements introduced in .NET Framework 4.7.1:
 
 ```xml
 <runtime>
@@ -36,7 +36,7 @@ The new accessibility features are enabled by default for applications that targ
 </runtime>
 ```
 
-If you choose to opt in to accessibility features in a later version of the .NET Framework, you must also explicitly opt in to the features from earlier versions of the .NET Framework. Configuring your app to take advantage of accessibility improvements in both .NET Framework 4.7.1 and 4.7.2 requires the following [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
+If you choose to opt in to accessibility features in a later version of the .NET Framework, you must also explicitly opt in to the features from earlier versions of the .NET Framework. Configuring your app to take advantage of accessibility improvements in both .NET Framework 4.7.1 and 4.7.2 requires the following [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
 
 ```xml
 <runtime>
@@ -45,18 +45,18 @@ If you choose to opt in to accessibility features in a later version of the .NET
 </runtime>
 ```
 
-Configuring your app to take advantage of accessibility improvements in .NET Framework 4.7.1, 4.7.2, and 4.8 requires the following [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
+Configuring your app to take advantage of accessibility improvements in .NET Framework 4.7.1, 4.7.2, and 4.8 requires the following [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
 
 ```xml
 <runtime>
     <!-- AppContextSwitchOverrides value attribute is in the form of 'key1=true|false;key2=true|false  -->
-    <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3" />
+    <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false" />
 </runtime>
 ```
 
 ### Restoring legacy behavior
 
-Applications that target versions of the .NET Framework starting with 4.7.1 can disable accessibility features by adding switches to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file and setting their value to `true`. For example, the following configuration opts out of accessibility features introduced in .NET Framework 4.7.2:
+Applications that target versions of the .NET Framework starting with 4.7.1 can disable accessibility features by adding switches to the [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](../configure-apps/file-schema/runtime/index.md) section of the application's configuration file and setting their value to `true`. For example, the following configuration opts out of accessibility features introduced in .NET Framework 4.7.2:
 
 ```xml
 <runtime>
@@ -252,39 +252,39 @@ Starting with .NET Framework 4.8, WPF  exposes these two properties to UIAutomat
 
 - By using dependency properties.
 
-   WPF adds two new dependency properties, <xref:System.Windows.Automation.AutomationProperties.SizeOfSet?displayProperty=nameWithType> and <xref:System.Windows.Automation.AutomationProperties.PositionInSet?displayProperty=nameWithType>. A developer can use XAML to set their values:
+  WPF adds two new dependency properties, <xref:System.Windows.Automation.AutomationProperties.SizeOfSet?displayProperty=nameWithType> and <xref:System.Windows.Automation.AutomationProperties.PositionInSet?displayProperty=nameWithType>. A developer can use XAML to set their values:
 
-   ```xaml
-   <Button AutomationProperties.SizeOfSet="3"
-     AutomationProperties.PositionInSet="1">Button 1</Button>
+  ```xaml
+  <Button AutomationProperties.SizeOfSet="3"
+    AutomationProperties.PositionInSet="1">Button 1</Button>
 
-   <Button AutomationProperties.SizeOfSet="3"
-     AutomationProperties.PositionInSet="2">Button 2</Button>
+  <Button AutomationProperties.SizeOfSet="3"
+    AutomationProperties.PositionInSet="2">Button 2</Button>
 
-   <Button AutomationProperties.SizeOfSet="3"
-     AutomationProperties.PositionInSet="3">Button 3</Button>
-   ```
+  <Button AutomationProperties.SizeOfSet="3"
+    AutomationProperties.PositionInSet="3">Button 3</Button>
+  ```
 
 - By overriding AutomationPeer virtual methods.
 
-   The <xref:System.Windows.Automation.Peers.AutomationPeer.GetSizeOfSetCore> and <xref:System.Windows.Automation.Peers.AutomationPeer.GetPositionInSetCore> virtual methods been added to the AutomationPeer class. A developer can provide values for `SizeOfSet` and `PositionInSet` by overriding these methods, as shown in the following example:
+  The <xref:System.Windows.Automation.Peers.AutomationPeer.GetSizeOfSetCore> and <xref:System.Windows.Automation.Peers.AutomationPeer.GetPositionInSetCore> virtual methods been added to the AutomationPeer class. A developer can provide values for `SizeOfSet` and `PositionInSet` by overriding these methods, as shown in the following example:
 
-   ```csharp
-   public class MyButtonAutomationPeer : ButtonAutomationPeer
-   {
-      protected override int GetSizeOfSetCore()
-      {
-         // Call into your own logic to provide a value for SizeOfSet
-         return CalculateSizeOfSet();
-      }
+  ```csharp
+  public class MyButtonAutomationPeer : ButtonAutomationPeer
+  {
+    protected override int GetSizeOfSetCore()
+    {
+        // Call into your own logic to provide a value for SizeOfSet
+        return CalculateSizeOfSet();
+    }
 
-      protected override int GetPositionInSetCore()
-      {
-         // Call into your own logic to provide a value for PositionInSet
-         return CalculatePositionInSet();
-      }
-   }
-   ```
+    protected override int GetPositionInSetCore()
+    {
+        // Call into your own logic to provide a value for PositionInSet
+        return CalculatePositionInSet();
+    }
+  }
+  ```
 
 In addition, items in <xref:System.Windows.Controls.ItemsControl> instances provide a value for these properties automatically without additional action from the developer. If an <xref:System.Windows.Controls.ItemsControl> is grouped, the collection of groups is represented as a set, and each group is counted as a separate set, with each item inside that group providing its position inside that group as well as the size of the group. Automatic values are not affected by virtualization. Even if an item is not realized, it is still counted toward the total size of the set and affects the position in the set of its sibling items.
 
@@ -443,10 +443,10 @@ To support live regions, the following APIs have been added to WPF:
 
 - The <xref:System.Windows.Automation.AutomationLiveSetting?displayProperty=nameWithType> enumeration, which defines the following possible **LiveSetting** values:
 
-   - <xref:System.Windows.Automation.AutomationLiveSetting.Off?displayProperty=nameWithType>. The element does not send notifications if the content of the live region has changed.
-   - <xref:System.Windows.Automation.AutomationLiveSetting.Polite?displayProperty=nameWithType>. The element sends non-interruptive notifications if the content of the live region has changed.
+  - <xref:System.Windows.Automation.AutomationLiveSetting.Off?displayProperty=nameWithType>. The element does not send notifications if the content of the live region has changed.
+  - <xref:System.Windows.Automation.AutomationLiveSetting.Polite?displayProperty=nameWithType>. The element sends non-interruptive notifications if the content of the live region has changed.
 
-   - <xref:System.Windows.Automation.AutomationLiveSetting.Assertive?displayProperty=nameWithType>. The element sends interruptive notifications if the content of the live region has changed.
+  - <xref:System.Windows.Automation.AutomationLiveSetting.Assertive?displayProperty=nameWithType>. The element sends interruptive notifications if the content of the live region has changed.
 
 You can create a LiveRegion by setting the **AutomationProperties.LiveSetting** property on the element of interest, as shown in the following example:
 
@@ -474,81 +474,81 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
 - <xref:System.Windows.Controls.Expander> control
 
-    The focus visual for the  <xref:System.Windows.Controls.Expander> control is now visible. The keyboard visuals for <xref:System.Windows.Controls.ComboBox>,<xref:System.Windows.Controls.ListBox>, and <xref:System.Windows.Controls.RadioButton> controls are visible as well. For example:
+  The focus visual for the  <xref:System.Windows.Controls.Expander> control is now visible. The keyboard visuals for <xref:System.Windows.Controls.ComboBox>,<xref:System.Windows.Controls.ListBox>, and <xref:System.Windows.Controls.RadioButton> controls are visible as well. For example:
 
-    Before: 
+  Before: 
 
-    ![Expander control with focus before accessibility improvements](media/expander-before.png)
+  ![Expander control with focus before accessibility improvements](media/expander-before.png)
 
-    After: 
+  After: 
 
-    ![Expander control with focus after accessibility improvements](media/expander-after.png)
+  ![Expander control with focus after accessibility improvements](media/expander-after.png)
 
 - <xref:System.Windows.Controls.CheckBox> and <xref:System.Windows.Controls.RadioButton> controls
 
-    The text in the <xref:System.Windows.Controls.CheckBox> and <xref:System.Windows.Controls.RadioButton> controls is now easier to see when selected in high contrast themes. For example:
+  The text in the <xref:System.Windows.Controls.CheckBox> and <xref:System.Windows.Controls.RadioButton> controls is now easier to see when selected in high contrast themes. For example:
 
-    Before: 
+  Before: 
 
-    ![High contrast radio button with focus before accessibility improvements](media/radio-button-before.png)
+  ![High contrast radio button with focus before accessibility improvements](media/radio-button-before.png)
 
-    After: 
+  After: 
 
-    ![High contrast radio button with focus after accessibility improvements](media/radio-button-after.png)
+  ![High contrast radio button with focus after accessibility improvements](media/radio-button-after.png)
 
 - <xref:System.Windows.Controls.ComboBox> control
 
-    Starting with .NET Framework 4.7.1, the border of a disabled <xref:System.Windows.Controls.ComboBox> control is the same color as disabled text. For example:
+  Starting with .NET Framework 4.7.1, the border of a disabled <xref:System.Windows.Controls.ComboBox> control is the same color as disabled text. For example:
 
-    Before: 
+  Before: 
 
-     ![ComboBox disabled border and text before accessibility improvements](media/combo-disabled-before.png)
+  ![ComboBox disabled border and text before accessibility improvements](media/combo-disabled-before.png)
 
-    After:   
+  After:   
 
-     ![ComboBox disabled border and text after accessibility improvements](media/combo-disabled-after.png)
+  ![ComboBox disabled border and text after accessibility improvements](media/combo-disabled-after.png)
 
-    In addition, disabled and focused buttons use the correct theme color.
+  In addition, disabled and focused buttons use the correct theme color.
 
-    Before:
+  Before:
 
-    ![Button theme colors before accessibility improvements](media/button-themes-before.png) 
+  ![Button theme colors before accessibility improvements](media/button-themes-before.png) 
 
-    After: 
+  After: 
 
-    ![Button theme colors after accessibility improvements](media/button-themes-after.png) 
+  ![Button theme colors after accessibility improvements](media/button-themes-after.png) 
 
-    Finally, in .NET Framework 4.7 and earlier versions, setting a <xref:System.Windows.Controls.ComboBox> control’s style to `Toolbar.ComboBoxStyleKey` caused the drop-down arrow to be invisible. This issue is fixed starting with .NET Framework 4.7.1. For example:
+  Finally, in .NET Framework 4.7 and earlier versions, setting a <xref:System.Windows.Controls.ComboBox> control’s style to `Toolbar.ComboBoxStyleKey` caused the drop-down arrow to be invisible. This issue is fixed starting with .NET Framework 4.7.1. For example:
 
-    Before: 
+  Before: 
 
-    ![Toolbar.ComboBoxStyleKey before accessibility improvements](media/comboboxstylekey-before.png) 
+  ![Toolbar.ComboBoxStyleKey before accessibility improvements](media/comboboxstylekey-before.png) 
 
-    After: 
+  After: 
 
-    ![Toolbar.ComboBoxStyleKey after accessibility improvements](media/comboboxstylekey-after.png) 
+  ![Toolbar.ComboBoxStyleKey after accessibility improvements](media/comboboxstylekey-after.png) 
 
 - <xref:System.Windows.Controls.DataGrid> control
 
-    Starting with .NET Framework 4.7.1, the sort indicator arrow in <xref:System.Windows.Controls.DataGrid> controls now uses correct theme colors. For example:
+  Starting with .NET Framework 4.7.1, the sort indicator arrow in <xref:System.Windows.Controls.DataGrid> controls now uses correct theme colors. For example:
 
-    Before: 
+  Before: 
 
-    ![Sort indicator arrow before accessibility improvements](media/sort-indicator-before.png) 
+  ![Sort indicator arrow before accessibility improvements](media/sort-indicator-before.png) 
 
-    After:   
+  After:   
 
-    ![Sort indicator arrow after accessibility improvements](media/sort-indicator-after.png) 
+  ![Sort indicator arrow after accessibility improvements](media/sort-indicator-after.png) 
 
-    In addition, in .NET Framework 4.7 and earlier versions, the default link style changed to an incorrect color on mouse over in high contrast modes. This is resolved starting with .NET Framework 4.7.1. Similarly, <xref:System.Windows.Controls.DataGrid> checkbox columns uses the expected colors for keyboard focus feedback starting with .NET Framework 4.7.1.
+  In addition, in .NET Framework 4.7 and earlier versions, the default link style changed to an incorrect color on mouse over in high contrast modes. This is resolved starting with .NET Framework 4.7.1. Similarly, <xref:System.Windows.Controls.DataGrid> checkbox columns uses the expected colors for keyboard focus feedback starting with .NET Framework 4.7.1.
 
-    Before: 
+  Before: 
 
-    ![DataGrid default link style before accessibility improvements](media/default-link-style-before.png) 
+  ![DataGrid default link style before accessibility improvements](media/default-link-style-before.png) 
 
-    After:    
+  After:    
 
-    ![DataGrid default link style after accessibility improvements](media/default-link-style-after.png) 
+  ![DataGrid default link style after accessibility improvements](media/default-link-style-after.png) 
 
 For more information on WPF accessibility improvements in .NET Framework 4.7.1, see [Accessibility improvements in WPF](../migration-guide/retargeting/4.7-4.7.1.md#accessibility-improvements-in-wpf).
 
@@ -577,13 +577,13 @@ Some examples of high contrast changes include:
 
 - Disabled text is easier to read. For example:
 
-    Before:
+  Before:
 
-    ![Disabled text before accessibility improvements](media/wf-disabled-before.png) 
+  ![Disabled text before accessibility improvements](media/wf-disabled-before.png) 
 
-    After:
+  After:
 
-    ![Disabled text after accessibility improvements](media/wf-disabled-after.png) 
+  ![Disabled text after accessibility improvements](media/wf-disabled-after.png) 
 
 - High contrast improvements in the Thread Exception Dialog.
 

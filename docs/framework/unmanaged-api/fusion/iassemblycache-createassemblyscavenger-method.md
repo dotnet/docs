@@ -11,7 +11,7 @@ f1_keywords:
   - "IAssemblyCache::CreateAssemblyScavenger"
 helpviewer_keywords: 
   - "CreateAssemblyScavenger method [.NET Framework fusion]"
-  - "IAssemblyCache::CreateAssemblyScavanger method [.NET Framework fusion]"
+  - "IAssemblyCache::CreateAssemblyScavenger method [.NET Framework fusion]"
 ms.assetid: e8bb98f1-e477-45d2-8956-ba404137cd2d
 topic_type: 
   - "apiref"
@@ -23,7 +23,7 @@ Reserved for internal use by the fusion technology.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAssemblyScavenger (  
     [out] IUnknown **ppUnkReserved  
 );  
@@ -34,7 +34,7 @@ HRESULT CreateAssemblyScavenger (
  [out] The returned `IUnknown` pointer.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -42,4 +42,4 @@ HRESULT CreateAssemblyScavenger (
   
 ## See also
 
-- [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
+- [IAssemblyCache Interface](iassemblycache-interface.md)

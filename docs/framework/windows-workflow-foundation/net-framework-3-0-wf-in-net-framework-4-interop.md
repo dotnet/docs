@@ -7,7 +7,7 @@ ms.assetid: 71f112ba-abb0-46f7-b05f-a5d2eb9d0c5c
 The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] (WF 4.5) activity that wraps a [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] (WF 3.5) activity within a [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] workflow. The WF 3 activity can be a single leaf activity or an entire tree of activities. The execution (including cancellation and exception handling) and the persistence of the [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] activity occur within the context of the [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] workflow instance that is executing.  
   
 > [!NOTE]
->  The <xref:System.Activities.Statements.Interop> activity does not appear in the workflow designer toolbox unless the workflow's project has its **Target Framework** setting set to **.NET Framework 4.5**.  
+> The <xref:System.Activities.Statements.Interop> activity does not appear in the workflow designer toolbox unless the workflow's project has its **Target Framework** setting set to **.NET Framework 4.5**.  
   
 ## Criteria for Using a WF 3 Activity with an Interop Activity  
  For a WF 3 activity to successfully execute within an <xref:System.Activities.Statements.Interop> activity, the following criteria must be met:  
@@ -16,7 +16,7 @@ The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_cu
   
 - The WF 3 activity must be declared as `public` and cannot be `abstract`.  
   
-- The WF 3 activity must have a public default constructor.  
+- The WF 3 activity must have a public parameterless constructor.  
   
 - Due to limitations in the interface types that the <xref:System.Activities.Statements.Interop> activity can support, <xref:System.Workflow.Activities.HandleExternalEventActivity> and <xref:System.Workflow.Activities.CallExternalMethodActivity> cannot be used directly, but derivative activities created using the Workflow Communication Activity tool (WCA.exe) can be used. See [Windows Workflow Foundation Tools](https://go.microsoft.com/fwlink/?LinkId=178889) for details.  
   

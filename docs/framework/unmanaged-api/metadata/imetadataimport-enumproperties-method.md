@@ -23,7 +23,7 @@ Enumerates PropertyDef tokens representing the properties of the type referenced
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumProperties (  
    [in, out] HCORENUM    *phEnum,  
    [in]      mdTypeDef   td,  

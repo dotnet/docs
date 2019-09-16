@@ -23,7 +23,7 @@ Informs the common language runtime (CLR) that the host has completed a task, an
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset (  
     [in] BOOL fFull  
 );  

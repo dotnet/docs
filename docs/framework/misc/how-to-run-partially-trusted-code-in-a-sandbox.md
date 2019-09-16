@@ -51,7 +51,7 @@ AppDomain.CreateDomain( string friendlyName,
   
      Alternatively, you can use an existing named permission set, such as Internet.  
   
-    ```  
+    ```csharp
     Evidence ev = new Evidence();  
     ev.AddHostEvidence(new Zone(SecurityZone.Internet));  
     PermissionSet internetPS = SecurityManager.GetStandardSandbox(ev);  
@@ -269,4 +269,4 @@ class Sandboxer : MarshalByRefObject
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

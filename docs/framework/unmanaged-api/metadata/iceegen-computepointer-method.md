@@ -25,7 +25,7 @@ Determines the buffer for the specified code section.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ComputePointer (  
     [in]  HCEESECTION  section,  
     [in]  ULONG        RVA,   

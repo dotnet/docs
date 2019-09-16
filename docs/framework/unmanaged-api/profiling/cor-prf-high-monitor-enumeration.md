@@ -12,7 +12,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```
+```cpp
 typedef enum {  
     COR_PRF_HIGH_MONITOR_NONE                     = 0x00000000,  
     COR_PRF_HIGH_ADD_ASSEMBLY_REFERENCES          = 0x00000001,  

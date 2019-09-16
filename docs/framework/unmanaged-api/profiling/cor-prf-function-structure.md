@@ -22,7 +22,7 @@ Provides a unique representation of a function by combining its ID with the ID o
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_PRF_FUNCTION {    FunctionID functionId;    ReJITID    reJitId;} COR_PRF_FUNCTION;  
 ```  
   

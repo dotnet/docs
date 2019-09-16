@@ -35,7 +35,7 @@ The <xref:System.Linq.Enumerable.Union%2A> method is defined for multisets as th
 <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> methods are well defined only against *ordered sets*. The semantics for unordered sets or multisets are undefined.
 
 > [!NOTE]
-> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md).
+> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
 
 Because of limitations on ordering in SQL, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to move the ordering of the argument of these methods to the result of the method. For example, consider the following [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query:
 
@@ -152,7 +152,7 @@ Conversion methods:
 
 ### Inheritance Mapping Restrictions
 
-For more information, see [How to: Map Inheritance Hierarchies](../../../../../../docs/framework/data/adonet/sql/linq/how-to-map-inheritance-hierarchies.md).
+For more information, see [How to: Map Inheritance Hierarchies](how-to-map-inheritance-hierarchies.md).
 
 ### Inheritance in Queries
 
@@ -178,7 +178,7 @@ The following query operators are not supported on values mapped to the new SQL 
 
 - `Sum`
 
-For more information about mapping to these SQL Server date and time types, see [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md).
+For more information about mapping to these SQL Server date and time types, see [SQL-CLR Type Mapping](sql-clr-type-mapping.md).
 
 ## SQL Server 2005 Support
 
@@ -192,27 +192,27 @@ For more information about mapping to these SQL Server date and time types, see 
 
 ## SQL Server 2000 Support
 
-The following [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] limitations (compared to [!INCLUDE[sqprsqext](../../../../../../includes/sqprsqext-md.md)]) affect [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] support.
+The following SQL Server 2000 limitations (compared to Microsoft SQL Server 2005) affect [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] support.
 
 ### Cross Apply and Outer Apply Operators
 
-These operators are not available in [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)]. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries a series of rewrites to replace them with appropriate joins.
+These operators are not available in SQL Server 2000. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries a series of rewrites to replace them with appropriate joins.
 
-`Cross Apply` and `Outer Apply` are generated for relationship navigations. The set of queries for which such rewrites are possible is not well defined. For this reason, the minimal set of queries that is supported for [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] is the set that does not involve relationship navigation.
+`Cross Apply` and `Outer Apply` are generated for relationship navigations. The set of queries for which such rewrites are possible is not well defined. For this reason, the minimal set of queries that is supported for SQL Server 2000 is the set that does not involve relationship navigation.
 
 ### text / ntext
 
-Data types `text` / `ntext` cannot be used in certain query operations against `varchar(max)` / `nvarchar(max)`, which are supported by [!INCLUDE[sqprsqext](../../../../../../includes/sqprsqext-md.md)].
+Data types `text` / `ntext` cannot be used in certain query operations against `varchar(max)` / `nvarchar(max)`, which are supported by Microsoft SQL Server 2005.
 
 No resolution is available for this limitation. Specifically, you cannot use `Distinct()` on any result that contains members that are mapped to `text` or `ntext` columns.
 
 ### Behavior Triggered by Nested Queries
 
-[!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] (through SP4) binder has some idiosyncrasies that are triggered by nested queries. The set of SQL queries that triggers these idiosyncrasies is not well defined. For this reason, you cannot define the set of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries that might cause SQL Server exceptions.
+SQL Server 2000 (through SP4) binder has some idiosyncrasies that are triggered by nested queries. The set of SQL queries that triggers these idiosyncrasies is not well defined. For this reason, you cannot define the set of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries that might cause SQL Server exceptions.
 
 ### Skip and Take Operators
 
-<xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)]. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md).
+<xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
 
 ## Object Materialization
 
@@ -242,9 +242,9 @@ Materialization creates CLR objects from rows that are returned by one or more S
 
 ## See also
 
-- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
-- [Return Or Skip Elements in a Sequence](../../../../../../docs/framework/data/adonet/sql/linq/return-or-skip-elements-in-a-sequence.md)
-- [Concatenate Two Sequences](../../../../../../docs/framework/data/adonet/sql/linq/concatenate-two-sequences.md)
-- [Return the Set Difference Between Two Sequences](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-difference-between-two-sequences.md)
-- [Return the Set Intersection of Two Sequences](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-intersection-of-two-sequences.md)
-- [Return the Set Union of Two Sequences](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-union-of-two-sequences.md)
+- [Reference](reference.md)
+- [Return Or Skip Elements in a Sequence](return-or-skip-elements-in-a-sequence.md)
+- [Concatenate Two Sequences](concatenate-two-sequences.md)
+- [Return the Set Difference Between Two Sequences](return-the-set-difference-between-two-sequences.md)
+- [Return the Set Intersection of Two Sequences](return-the-set-intersection-of-two-sequences.md)
+- [Return the Set Union of Two Sequences](return-the-set-union-of-two-sequences.md)

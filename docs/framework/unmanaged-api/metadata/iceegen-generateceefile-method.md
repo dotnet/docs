@@ -25,7 +25,7 @@ Generates a code-base file that contains the code base currently loaded into thi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GenerateCeeFile ();  
 ```  
   

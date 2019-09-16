@@ -23,7 +23,7 @@ Not implemented. A profiler that needs unmanaged exception information must obta
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionOSHandlerLeave(  
     [in] UINT_PTR __unused);  
 ```  

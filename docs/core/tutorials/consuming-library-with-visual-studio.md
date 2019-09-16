@@ -22,7 +22,10 @@ Once you've created a .NET Standard class library by following the steps in [Bui
 
 Just as you included unit tests in the same solution as your class library, you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
+<!-- markdownlint-disable MD025 -->
+
 # [C#](#tab/csharp)
+
 1. Open the `ClassLibraryProjects` solution you created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
 
 1. In the **Add New Project** dialog, expand the **Visual C#** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
@@ -52,7 +55,9 @@ Just as you included unit tests in the same solution as your class library, you 
 1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
    ![Visual Studio project toolbar showing Debug button - C#](./media/consuming-library-with-visual-studio/visual-studio-project-toolbar.png)
+
 # [Visual Basic](#tab/vb)
+
 1. Open the `ClassLibraryProjects` solution you created in the [Building a class Library with Visual Basic and .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
 
 1. In the **Add New Project** dialog, expand the **Visual Basic** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
@@ -82,13 +87,14 @@ Just as you included unit tests in the same solution as your class library, you 
 1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
    ![Debug on toolbar - Visual Basic](./media/consuming-library-with-visual-studio/visual-studio-project-toolbar.png)
+
 ---
 
 You can debug and publish the application that uses this library by following the steps in [Debugging your Hello World application with Visual Studio 2017](debugging-with-visual-studio.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio.md).
 
 ## Distributing the library in a NuGet package
 
-You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../../core/tools/dotnet.md):
+You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../tools/dotnet.md):
 
 1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
 
@@ -99,4 +105,4 @@ You can make your class library widely available by publishing it as a NuGet pac
    > [!TIP]
    > If the directory that contains *dotnet.exe* is not in your PATH, you can find its location by entering `where dotnet.exe` in the console window.
 
-For more information on creating NuGet packages, see [How to Create a NuGet Package with Cross Platform Tools](../../core/deploying/creating-nuget-packages.md).
+For more information on creating NuGet packages, see [How to Create a NuGet Package with Cross Platform Tools](../deploying/creating-nuget-packages.md).

@@ -23,7 +23,7 @@ Enters the critical section that is represented by the current [IHostCrst](../..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Enter (  
     [in] DWORD option  
 );  
@@ -48,7 +48,7 @@ HRESULT Enter (
  `Enter` mirrors the Win32 `EnterCriticalSection` function.  
   
 > [!NOTE]
->  This method does not return until the critical section is entered.  
+> This method does not return until the critical section is entered.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -23,4 +23,4 @@ You do not have to implement any custom logic to support reference equality comp
   
 ## See also
 
-- [Equality Comparisons](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)
+- [Equality Comparisons](./equality-comparisons.md)

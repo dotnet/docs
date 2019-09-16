@@ -23,7 +23,7 @@ Launches a process on a remote machine under the debugger.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebugActiveProcessEx (  
     [in]  ICorDebugRemoteTarget *   pRemoteTarget,  
     [in]  DWORD                     dwProcessId,  

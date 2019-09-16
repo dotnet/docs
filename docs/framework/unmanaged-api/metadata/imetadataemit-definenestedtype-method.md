@@ -23,7 +23,7 @@ Creates the metadata signature of a type definition, returns an `mdTypeDef` toke
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineNestedType (   
     [in]  LPCWSTR     szTypeDef,  
     [in]  DWORD       dwTypeDefFlags,   

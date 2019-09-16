@@ -23,7 +23,7 @@ Determines whether a library that was provided by an [ICLRDebuggingLibraryProvid
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CanUnloadNow(HMODULE hModule);  
 ```  
   

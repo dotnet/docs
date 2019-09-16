@@ -14,9 +14,9 @@ This topic provides a step-by-step introduction to building, debugging, and publ
 
 ## Prerequisites
 
-[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.0.
+[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.1 or later versions.
 
-For more information, see [Prerequisites for .NET Core on Windows](../../core/windows-prerequisites.md).
+For more information, see [Prerequisites for .NET Core on Windows](../windows-prerequisites.md).
 
 ## A simple Hello World application
 

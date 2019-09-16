@@ -22,7 +22,7 @@ Describes the set of failures for which a host can set policy actions.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     FAIL_NonCriticalResource,  
     FAIL_CriticalResource,  

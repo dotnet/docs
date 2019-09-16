@@ -23,7 +23,7 @@ Notifies the debugger that a class is being unloaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadClass (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugClass      *c  

@@ -23,7 +23,7 @@ Closes the current method. Once a method is closed, no more symbols can be defin
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseMethod();  
 ```  
   

@@ -23,7 +23,7 @@ Notifies the host that the runtime is beginning a thread suspension for a garbag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SuspensionStarting ( );  
 ```  
   

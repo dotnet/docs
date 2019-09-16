@@ -10,7 +10,7 @@ Provides information on runtime exported functions to help step through managed 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetExportStepInfo(  
     [in] LPCWSTR pszExportName,   
     [out] CorDebugCodeInvokeKind* pInvokeKind,   
@@ -39,7 +39,7 @@ HRESULT GetExportStepInfo(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

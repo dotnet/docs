@@ -10,7 +10,7 @@ Gets the value of a variable as a byte array.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue(  
    [in] ULONG32 offset,  
    [in] ULONG32 cbContext,  
@@ -43,7 +43,7 @@ HRESULT GetValue(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

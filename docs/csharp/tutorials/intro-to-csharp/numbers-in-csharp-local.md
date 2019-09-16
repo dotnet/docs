@@ -9,7 +9,7 @@ ms.custom: mvc
 
 This tutorial teaches you about the numeric types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
-This tutorial expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
+This tutorial expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
 
 ## Explore integer math
 
@@ -357,8 +357,8 @@ your own development environment.
 
 You can learn more about numbers in C# in the following topics:
 
-- [Integral Types Table](../../language-reference/keywords/integral-types-table.md)
-- [Floating-Point Types Table](../../language-reference/keywords/floating-point-types-table.md)
+- [Integral types](../../language-reference/builtin-types/integral-numeric-types.md)
+- [Floating-Point Types Table](../../language-reference/builtin-types/floating-point-numeric-types.md)
 - [Built-In Types Table](../../language-reference/keywords/built-in-types-table.md)
 - [Implicit Numeric Conversions Table](../../language-reference/keywords/implicit-numeric-conversions-table.md)
 - [Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md)

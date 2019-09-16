@@ -23,7 +23,7 @@ Notifies the profiler that the unwind phase of exception handling has finished u
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwindFunctionLeave();  
 ```  
   

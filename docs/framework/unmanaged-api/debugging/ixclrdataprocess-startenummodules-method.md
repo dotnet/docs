@@ -24,7 +24,7 @@ Provides a handle to enumerate the modules of a process.
 
 ## Syntax
 
-```
+```cpp
 HRESULT StartEnumModules(
     [out] CLRDATA_ENUM *handle
 );

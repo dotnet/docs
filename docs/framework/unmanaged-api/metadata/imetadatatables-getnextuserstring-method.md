@@ -23,7 +23,7 @@ Gets the index of the row that contains the next hard-coded string in the curren
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextUserString (  
     [in]  ULONG   ixUserString,  
     [out] ULONG   *pNext  

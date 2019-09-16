@@ -23,7 +23,7 @@ Indicates that all custom attributes have been merged into the emit scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndMerge(  
     mdAssembly AssemblyID  
 ) PURE;  
@@ -41,6 +41,6 @@ HRESULT EndMerge(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

@@ -32,7 +32,7 @@ To read this JSON document using one of the readers previously mentioned, use th
 Furthermore, if the JSON message in the example is received by WCF and logged, you would see the XML fragment in the preceding log.
 
 ## Mapping Between JSON and the XML Infoset
-Formally, the mapping is between JSON as described in [RFC 4627](https://go.microsoft.com/fwlink/?LinkId=98808) (except with certain restrictions relaxed and certain other restrictions added) and the XML infoset (and not textual XML) as described in [XML Information Set](https://go.microsoft.com/fwlink/?LinkId=98809) . See this topic for the definitions of *information items* and fields in [square brackets].
+Formally, the mapping is between JSON as described in [RFC 4627](https://go.microsoft.com/fwlink/?LinkId=98808) (except with certain restrictions relaxed and certain other restrictions added) and the XML infoset (and not textual XML) as described in [XML Information Set](https://go.microsoft.com/fwlink/?LinkId=98809). See this topic for the definitions of *information items* and fields in [square brackets].
 
 A blank JSON document maps to a blank XML document, and a blank XML document maps to a blank JSON document. On the XML to JSON mapping, preceding white space and trailing white space after the document are not allowed.
 
@@ -42,7 +42,7 @@ Example: The following document:
 
 ```xml
 <?xml version="1.0"?>
-<root type="number">42</root>`
+<root type="number">42</root>
 ```
 
 And the following element:
@@ -135,8 +135,8 @@ In both the Root JSON Element and the inner elements, the JSON Type Attribute de
 |`number`|1 or more CIIs|A JSON `number` (JSON RFC, section 2.4), possibly surrounded by white space. Each character in the number/white space combination is a character that corresponds to the [character code] from the CII.<br /><br /> Example: The following element maps to a JSON fragment.<br /><br /> `<root type="number">    42</root>`<br /><br /> The JSON fragment is    42<br /><br /> (White space is preserved).|
 |`boolean`|4 or 5 CIIs (which corresponds to `true` or `false`), possibly surrounded by additional white-space CIIs.|A CII sequence that corresponds to the string "true" is mapped to the literal `true`, and a CII sequence that corresponds to the string "false" is mapped to the literal `false`. Surrounding white space is preserved.<br /><br /> Example: The following element maps to a JSON fragment.<br /><br /> `<root type="boolean"> false</root>`<br /><br /> The JSON fragment is `false`.|
 |`null`|None allowed.|The literal `null`. On JSON to XML mapping, the `null` may be surrounded by white space (‘ws’ in section 2) that does not get mapped to XML.<br /><br /> Example: The following element maps to a JSON fragment.<br /><br /> `<root type="null"/>`<br /><br /> or<br /><br /> `<root type="null"></root>`<br /><br /> :<br /><br /> The JSON fragment in both cases is `Null`.|
-|`object`|0 or more EIIs.|A `begin-object` (left curly brace) as in section 2.2 of the JSON RFC, followed by a member record for each EII as described further. If there is more than one EII, there are value-separators (commas) between the member records. All this is followed by an end-object (right curly brace).<br /><br /> Example: The following element maps to the JSON fragment.<br /><br /> `<root type="object">`<br /><br /> `<type1 type="string">aaa\</type1>`<br /><br /> `<type2 type="string">bbb\</type2>`<br /><br /> `</root >`<br /><br /> The JSON fragment is `{"type1":"aaa","type2":"bbb"}`.<br /><br /> If the Data Contract Type Attribute is present on XML to JSON mapping, then an additional Member Record is inserted at the beginning. Its name is the [local name] of the Data Contract Type Attribute ("\_\_type"), and its value is the attribute's [normalized value]. Conversely, on JSON to XML mapping, if the first member-record’s name is the [local name] of the Data Contract Type Attribute (that is, "\_\_type"), a corresponding Data Contract Type Attribute is present in the mapped XML, but a corresponding EII is not present. Note that this member record must occur first in the JSON object for this special mapping to apply. This represents a departure from usual JSON processing, where the order of member records is not significant.<br /><br /> Example:<br /><br /> The following JSON fragment maps to XML.<br /><br /> `{"__type":"Person","name":"John"}`<br /><br /> The XML is the following code.<br /><br /> `<root type="object" __type="Person">   <name type="string">John</name> </root>`<br /><br /> Notice that the \_\_type AII is present, but there is no \_\_type EII.<br /><br /> However, if the order in the JSON is reversed as shown in the following example.<br /><br /> {"name":"John","\_\_type":"Person"}<br /><br /> The corresponding XML is shown.<br /><br /> `<root type="object">   <name type="string">John</name>   <__type type="string">Person</__type> </root>`<br /><br /> That is, \__type ceases to have special meaning and maps to an EII as usual, not AII.<br /><br /> Escaping/unescaping rules for the AII’s [normalized value] when mapped to a JSON value are the same as for JSON strings, specified in the "string" row of this table.<br /><br /> Example:<br /><br /> `<root type="object" __type="\abc" />`<br /><br /> to the previous example can be mapped to the following JSON.<br /><br /> `{"__type":"\\abc"}`<br /><br /> On an XML to JSON mapping, the first EII’s [local name] must not be "\_\_type".<br /><br /> White space (`ws`) is never generated on XML to JSON mapping for objects and is ignored on JSON to XML mapping.<br /><br /> Example: The following JSON fragment maps to an XML element.<br /><br /> `{ "ccc" : "aaa", "ddd" :"bbb"}`<br /><br /> The XML element is shown in the following code.<br /><br /> `<root type="object">    <ccc type="string">aaa</ccc>    <ddd type="string">bbb</bar> </root >`|
-|array|0 or more EIIs|A begin-array (left square bracket) as in section 2.3 of the JSON RFC, followed by an array record for each EII as described further. If there is more than one EII, there are value-separators (commas) between the array records. All this is followed by an end-array.<br /><br /> Example: The following XML element maps to a JSON fragment.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`<br /><br /> The JSON fragment is ["aaa","bbb"]<br /><br /> White space (`ws`) is never generated on XML to JSON mapping for arrays and is ignored on JSON to XML mapping.<br /><br /> Example: A JSON fragment.<br /><br />`["aaa", "bbb"]`<br /><br /> The XML element that it maps to.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`|
+|`object`|0 or more EIIs.|A `begin-object` (left curly brace) as in section 2.2 of the JSON RFC, followed by a member record for each EII as described further. If there is more than one EII, there are value-separators (commas) between the member records. All this is followed by an end-object (right curly brace).<br /><br /> Example: The following element maps to the JSON fragment.<br /><br /> `<root type="object">`<br /><br /> `<type1 type="string">aaa\</type1>`<br /><br /> `<type2 type="string">bbb\</type2>`<br /><br /> `</root >`<br /><br /> The JSON fragment is `{"type1":"aaa","type2":"bbb"}`.<br /><br /> If the Data Contract Type Attribute is present on XML to JSON mapping, then an additional Member Record is inserted at the beginning. Its name is the [local name] of the Data Contract Type Attribute ("\_\_type"), and its value is the attribute's [normalized value]. Conversely, on JSON to XML mapping, if the first member-record’s name is the [local name] of the Data Contract Type Attribute (that is, "\_\_type"), a corresponding Data Contract Type Attribute is present in the mapped XML, but a corresponding EII is not present. Note that this member record must occur first in the JSON object for this special mapping to apply. This represents a departure from usual JSON processing, where the order of member records is not significant.<br /><br /> Example:<br /><br /> The following JSON fragment maps to XML.<br /><br /> `{"__type":"Person","name":"John"}`<br /><br /> The XML is the following code.<br /><br /> `<root type="object" __type="Person">   <name type="string">John</name> </root>`<br /><br /> Notice that the \_\_type AII is present, but there is no \_\_type EII.<br /><br /> However, if the order in the JSON is reversed as shown in the following example.<br /><br /> `{"name":"John","\_\_type":"Person"}`<br /><br /> The corresponding XML is shown.<br /><br /> `<root type="object">   <name type="string">John</name>   <__type type="string">Person</__type> </root>`<br /><br /> That is, \__type ceases to have special meaning and maps to an EII as usual, not AII.<br /><br /> Escaping/unescaping rules for the AII’s [normalized value] when mapped to a JSON value are the same as for JSON strings, specified in the "string" row of this table.<br /><br /> Example:<br /><br /> `<root type="object" __type="\abc" />`<br /><br /> to the previous example can be mapped to the following JSON.<br /><br /> `{"__type":"\\abc"}`<br /><br /> On an XML to JSON mapping, the first EII’s [local name] must not be "\_\_type".<br /><br /> White space (`ws`) is never generated on XML to JSON mapping for objects and is ignored on JSON to XML mapping.<br /><br /> Example: The following JSON fragment maps to an XML element.<br /><br /> `{ "ccc" : "aaa", "ddd" :"bbb"}`<br /><br /> The XML element is shown in the following code.<br /><br /> `<root type="object">    <ccc type="string">aaa</ccc>    <ddd type="string">bbb</bar> </root >`|
+|array|0 or more EIIs|A begin-array (left square bracket) as in section 2.3 of the JSON RFC, followed by an array record for each EII as described further. If there is more than one EII, there are value-separators (commas) between the array records. All this is followed by an end-array.<br /><br /> Example: The following XML element maps to a JSON fragment.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`<br /><br /> The JSON fragment is `["aaa","bbb"]`<br /><br /> White space (`ws`) is never generated on XML to JSON mapping for arrays and is ignored on JSON to XML mapping.<br /><br /> Example: A JSON fragment.<br /><br />`["aaa", "bbb"]`<br /><br /> The XML element that it maps to.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`|
 
 Member Records work as follows:
 
@@ -144,15 +144,17 @@ Member Records work as follows:
 
 Example: The following element maps to a JSON fragment.
 
-`<root type="object"/>`
-
-`<myLocalName type="string">aaa</myLocalName>`
-
-`</root >`
+```xml
+<root type="object"/>
+<myLocalName type="string">aaa</myLocalName>
+</root >
+```
 
 The following JSON fragment is displayed.
 
-`{"myLocalName":"aaa"}`
+```json
+{"myLocalName":"aaa"}
+```
 
 - On the XML to JSON mapping, the characters that must be escaped in JSON are escaped, and the others are not escaped. The "/" character, even though it is not a character that must be escaped, is escaped nevertheless (it does not have to be escaped on JSON to XML mapping). This is required to support the ASP.NET AJAX format for `DateTime` data in JSON.
 
@@ -175,7 +177,9 @@ Example: The following element maps to a JSON fragment.
 
 The following JSON fragment is what it maps to.
 
-`{"myLocalName1":"myValue1","myLocalName2":2,"myLocalName3":{"myNestedName1":true,"myNestedName2":null}}`
+```json
+{"myLocalName1":"myValue1","myLocalName2":2,"myLocalName3":{"myNestedName1":true,"myNestedName2":null}}
+```
 
 > [!NOTE]
 > There is no XML encoding step in the preceding mapping. Therefore, WCF only supports JSON documents where all characters in key names are valid characters in XML element names. For example, the JSON document {"<":"a"} is not supported because < is not a valid name for an XML element.
@@ -202,7 +206,9 @@ Example: The following element maps to a JSON fragment.
 
 The following is the JSON fragment.
 
-`["myValue1",2,[true,null]]`
+```json
+["myValue1",2,[true,null]]
+```
 
 ## See also
 

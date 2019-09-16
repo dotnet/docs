@@ -23,7 +23,7 @@ Gets the smallest start line and largest end line for the method in a specific d
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceExtentInDocument(  
     [in]  ISymUnmanagedDocument *document,  
     [out] ULONG32* pstartLine,  

@@ -23,7 +23,7 @@ Deletes the specified key container.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameKeyDelete (  
     [in]  LPCWSTR   wszKeyContainer  
 );  

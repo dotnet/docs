@@ -76,7 +76,7 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
   
 <a name="Manipulating_Focus_Programmatically"></a>   
 ## Navigating Focus Programmatically  
- Additional [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] to work with focus are <xref:System.Windows.UIElement.MoveFocus%2A> and <xref:System.Windows.UIElement.PredictFocus%2A>.  
+ Additional API to work with focus are <xref:System.Windows.UIElement.MoveFocus%2A> and <xref:System.Windows.UIElement.PredictFocus%2A>.  
   
  <xref:System.Windows.FrameworkElement.MoveFocus%2A> changes focus to the next element in the application.  A <xref:System.Windows.Input.TraversalRequest> is used to specify the direction.   The <xref:System.Windows.Input.FocusNavigationDirection> passed to <xref:System.Windows.UIElement.MoveFocus%2A> specifies the different directions focus can be moved, such as <xref:System.Windows.Input.FocusNavigationDirection.First>, <xref:System.Windows.Input.FocusNavigationDirection.Last>, <xref:System.Windows.Input.FocusNavigationDirection.Up> and <xref:System.Windows.Input.FocusNavigationDirection.Down>.  
   

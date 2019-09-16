@@ -24,7 +24,7 @@ Variables used in [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] query 
  [!code-vb[VbLINQTypeRels#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQTypeRels/VB/Class1.vb#1)]  
   
 > [!NOTE]
->  Local type inference works only when `Option Infer` is set to `On`. For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md).  
+> Local type inference works only when `Option Infer` is set to `On`. For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md).  
   
  However, even if you use local type inference in a query, the same type relationships are present among the variables in the data source, the query variable, and the query execution loop. It is useful to have a basic understanding of these type relationships when you are writing [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries, or working with the samples and code examples in the documentation.  
   

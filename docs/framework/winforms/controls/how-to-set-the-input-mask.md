@@ -13,7 +13,7 @@ The masked text box control is an enhanced text box control that supports a decl
 ## Setting the Mask Property Manually  
  If you are familiar with the characters that the Mask property supports, you can enter it manually. For a summary of the characters that the Mask property supports, see the Remarks section of the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
   
-#### To set the Mask property manually  
+### To set the Mask property manually  
   
 1. In **Design** view, select a <xref:System.Windows.Forms.MaskedTextBox>.  
   
@@ -24,7 +24,7 @@ The masked text box control is an enhanced text box control that supports a decl
 ## Using the Input Mask Dialog Box  
  The Input Mask dialog box provides some predefined input masks. You can also change the predefined masks or enter your own mask manually.  
   
-#### To open the Input Mask dialog box  
+### To open the Input Mask dialog box  
   
 1. In **Design** view, select a <xref:System.Windows.Forms.MaskedTextBox>.  
   
@@ -40,7 +40,7 @@ The masked text box control is an enhanced text box control that supports a decl
   
      The **Input Mask** dialog box appears.  
   
-#### To use the Input Mask dialog box  
+### To use the Input Mask dialog box  
   
 1. (Optional) Click one of the predefined masks in the list.  
   
@@ -49,7 +49,7 @@ The masked text box control is an enhanced text box control that supports a decl
 3. (Optional) Type a new mask in the **Mask** box. That is, you do not have to use one of the predefined masks.  
   
     > [!NOTE]
-    >  The Preview box displays the characters that the user sees in the <xref:System.Windows.Forms.MaskedTextBox>. These characters are a guide to help the user enter the data correctly.  
+    > The Preview box displays the characters that the user sees in the <xref:System.Windows.Forms.MaskedTextBox>. These characters are a guide to help the user enter the data correctly.  
   
 4. Select or clear the **Use ValidatingType** check box. The **Use ValidatingType** check box specifies whether a data type is used to verify the data input by the user. For more information, see the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property.  
   

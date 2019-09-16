@@ -1,7 +1,7 @@
 ---
 title: "= operator - C# reference"
 ms.custom: seodec18
-ms.date: 06/21/2019
+ms.date: 09/10/2019
 f1_keywords: 
   - "=_CSharpKeyword"
 helpviewer_keywords: 
@@ -10,7 +10,7 @@ ms.assetid: d802a6d5-32f0-42b8-b180-12f5a081bfc1
 ---
 # = operator (C# reference)
 
-The assignment operator `=` assigns the value of its right-hand operand to a variable, a [property](../../programming-guide/classes-and-structs/properties.md), or an [indexer](../../../csharp/programming-guide/indexers/index.md) element given by its left-hand operand. The result of an assignment expression is the value assigned to the left-hand operand. The type of the right-hand operand must be the same as the type of the left-hand operand or implicitly convertible to it.
+The assignment operator `=` assigns the value of its right-hand operand to a variable, a [property](../../programming-guide/classes-and-structs/properties.md), or an [indexer](../../programming-guide/indexers/index.md) element given by its left-hand operand. The result of an assignment expression is the value assigned to the left-hand operand. The type of the right-hand operand must be the same as the type of the left-hand operand or implicitly convertible to it.
 
 The assignment operator is right-associative, that is, an expression of the form
 
@@ -56,9 +56,13 @@ except that `x` is only evaluated once.
 
 Compound assignment is supported by [arithmetic](arithmetic-operators.md#compound-assignment), [Boolean logical](boolean-logical-operators.md#compound-assignment), and [bitwise logical and shift](bitwise-and-shift-operators.md#compound-assignment) operators.
 
+## Null-coalescing assignment
+
+Beginning with C# 8.0, you can use the null-coalescing assignment operator `??=` to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. For more information, see the [?? and ??= operators](null-coalescing-operator.md) article.
+
 ## Operator overloadability
 
-A user-defined type cannot overload the assignment operator. However, a user-defined type can define an implicit conversion to another type. That way, the value of a user-defined type can be assigned to a variable, a property, or an indexer element of another type. For more information, see the [implicit](../keywords/implicit.md) keyword article.
+A user-defined type cannot overload the assignment operator. However, a user-defined type can define an implicit conversion to another type. That way, the value of a user-defined type can be assigned to a variable, a property, or an indexer element of another type. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
 ## C# language specification
 

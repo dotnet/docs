@@ -22,7 +22,7 @@ Stores the type name of an event and the parameters for the current exception th
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _BucketParameters {  
     BOOL  fInited;                    
     WCHAR pszEventTypeName[255];      

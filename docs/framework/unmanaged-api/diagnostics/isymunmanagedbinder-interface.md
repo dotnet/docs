@@ -21,7 +21,7 @@ ms.author: "mairaw"
 Represents a symbol binder for unmanaged code.  
   
 > [!IMPORTANT]
->  It is a security risk to open a program database (PDB) file from an untrusted source.  
+> It is a security risk to open a program database (PDB) file from an untrusted source.  
   
 ## Methods  
   

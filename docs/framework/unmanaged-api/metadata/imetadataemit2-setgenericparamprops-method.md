@@ -23,7 +23,7 @@ Sets property values for the generic parameter definition referenced by the spec
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGenericParamProps (  
     [in] mdGenericParam   gp,   
     [in] DWORD            dwParamFlags,   

@@ -11,7 +11,7 @@ ms.assetid: e05be95c-6732-403d-ae42-b35f057cbbea
 
 # Implicitly Typed Arrays (C# Programming Guide)
 
-You can create an implicitly-typed array in which the type of the array instance is inferred from the elements specified in the array initializer. The rules for any implicitly-typed variable also apply to implicitly-typed arrays. For more information, see [Implicitly Typed Local Variables](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+You can create an implicitly-typed array in which the type of the array instance is inferred from the elements specified in the array initializer. The rules for any implicitly-typed variable also apply to implicitly-typed arrays. For more information, see [Implicitly Typed Local Variables](../classes-and-structs/implicitly-typed-local-variables.md).
 
 Implicitly-typed arrays are usually used in query expressions together with anonymous types and object and collection initializers.
 
@@ -29,10 +29,10 @@ When you create an anonymous type that contains an array, the array must be impl
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Implicitly Typed Local Variables](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)
-- [Arrays](../../../csharp/programming-guide/arrays/index.md)
-- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
-- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
-- [var](../../../csharp/language-reference/keywords/var.md)
-- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+- [C# Programming Guide](../index.md)
+- [Implicitly Typed Local Variables](../classes-and-structs/implicitly-typed-local-variables.md)
+- [Arrays](./index.md)
+- [Anonymous Types](../classes-and-structs/anonymous-types.md)
+- [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
+- [var](../../language-reference/keywords/var.md)
+- [LINQ Query Expressions](../linq-query-expressions/index.md)

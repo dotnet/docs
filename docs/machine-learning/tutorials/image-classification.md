@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Retrain TensorFlow image classifier - transfer learning'
 description: Learn how to retrain an image classification TensorFlow model with transfer learning and ML.NET. The original model was trained to classify individual images. After retraining, the new model organizes the images into broad categories.
-ms.date: 06/12/2019
+ms.date: 07/09/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 #Customer intent: As a developer, I want to reuse a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
@@ -14,6 +14,7 @@ Training an [Image Classification](https://en.wikipedia.org/wiki/Outline_of_obje
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Understand the problem
 > * Reuse and tune the pre-trained model
 > * Classify Images
@@ -26,11 +27,11 @@ What if you could reuse a model that's already been pre trained to solve a simil
 
 The sample is a console application that uses ML.NET to build an image classifier by reusing a pre-trained model to classify images with a small amount of training data.
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF) repository. Note that by default, the .NET project configuration for this tutorial targets .NET core 2.2.
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed. 
 
 * Microsoft.ML 1.0.0 Nuget package
 * Microsoft.ML.ImageAnalytics 1.0.0 Nuget package
@@ -38,7 +39,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 * [The tutorial assets directory .ZIP file](https://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip)
 
-* [The InceptionV3 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
+* [The InceptionV1 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
 ## Select the appropriate machine learning task
 
@@ -72,7 +73,7 @@ Transfer learning includes a few strategies, such as *retrain all layers* and *p
 
 Your image classification model reuses the [Inception model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip), a popular image recognition model trained on the `ImageNet` dataset where the TensorFlow model tries to classify entire images into a thousand classes, like “Umbrella”, “Jersey”, and “Dishwasher”.
 
-The `Inception v3 model` can be classified as a [deep convolutional neural network](https://en.wikipedia.org/wiki/Convolutional_neural_network) and can achieve reasonable performance on hard visual recognition tasks, matching or exceeding human performance in some domains. The model/algorithm was developed by multiple researchers and based on the original paper: ["Rethinking the Inception Architecture for Computer Vision” by Szegedy, et. al.](https://arxiv.org/abs/1512.00567)
+The `Inception v1 model` can be classified as a [deep convolutional neural network](https://en.wikipedia.org/wiki/Convolutional_neural_network) and can achieve reasonable performance on hard visual recognition tasks, matching or exceeding human performance in some domains. The model/algorithm was developed by multiple researchers and based on the original paper: ["Rethinking the Inception Architecture for Computer Vision” by Szegedy, et. al.](https://arxiv.org/abs/1512.00567)
 
 Because the `Inception model` has already been pre trained on thousands of different images, it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. The lower image feature layers recognize simple features (such as edges) and the higher layers recognize more complex features (such as shapes). The final layer is trained against a much smaller set of data because you're starting with a pre trained model that already understands how to classify images. As your model allows you to classify more than two categories, this is an example of a [multi-class classifier](../resources/tasks.md#multiclass-classification). 
 
@@ -475,6 +476,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > * Understand the problem
 > * Reuse and tune the pre-trained model
 > * Classify images with a loaded model

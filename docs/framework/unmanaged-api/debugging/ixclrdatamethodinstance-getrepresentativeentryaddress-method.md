@@ -24,7 +24,7 @@ Gets the most representative entry point address for the native compilation of a
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetRepresentativeEntryAddress(
     [out] CLRDATA_ADDRESS* addr
 );

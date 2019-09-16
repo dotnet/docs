@@ -11,7 +11,7 @@ This topic discusses SqlClient support (added in .NET Framework 4.5) for high-av
  If you are not connecting to an availability group listener or SQL Server 2012 Failover Cluster Instance, and if multiple IP addresses are associated with a hostname, SqlClient will iterate sequentially through all IP addresses associated with DNS entry. This can be time consuming if the first IP address returned by DNS server is not bound to any network interface card (NIC). When connecting to an availability group listener or SQL Server 2012 Failover Cluster Instance, SqlClient attempts to establish connections to all IP addresses in parallel and if a connection attempt succeeds, the driver will discard any pending connection attempts.  
   
 > [!NOTE]
->  Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.  
+> Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.  
   
  The following connection properties were added to SqlClient in .NET Framework 4.5:  
   
@@ -26,7 +26,7 @@ This topic discusses SqlClient support (added in .NET Framework 4.5) for high-av
 2. <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
 
 > [!NOTE]
->  Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework 4.6.1 or later versions.
+> Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework 4.6.1 or later versions.
   
 ## Connecting With MultiSubnetFailover  
  Always specify `MultiSubnetFailover=True` when connecting to a SQL Server 2012 availability group listener or SQL Server 2012 Failover Cluster Instance. `MultiSubnetFailover` enables faster failover for all Availability Groups and or Failover Cluster Instance in SQL Server 2012 and will significantly reduce failover time for single and multi-subnet AlwaysOn topologies. During a multi-subnet failover, the client will attempt connections in parallel. During a subnet failover, will aggressively retry the TCP connection.  
@@ -92,5 +92,5 @@ This topic discusses SqlClient support (added in .NET Framework 4.5) for high-av
   
 ## See also
 
-- [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [SQL Server Features and ADO.NET](sql-server-features-and-adonet.md)
+- [ADO.NET Overview](../ado-net-overview.md)

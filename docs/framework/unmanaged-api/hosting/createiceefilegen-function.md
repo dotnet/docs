@@ -26,7 +26,7 @@ Creates an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceefi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateICeeFileGen (  
     [out] ICeeFileGen  **ceeFileGen  
 );  

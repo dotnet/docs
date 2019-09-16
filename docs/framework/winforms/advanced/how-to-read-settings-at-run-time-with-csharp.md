@@ -9,7 +9,7 @@ ms.assetid: dbe8bf09-5e1c-49da-9192-154033d7240b
 ---
 # How To: Read Settings at Run Time With C\#
 
-You can read both Application-scoped and User-scoped settings at run time via the Properties object. The Properties object exposes all of the default settings for the project via the Properties.Settings.Default member.  
+You can read both Application-scoped and User-scoped settings at run time via the Properties object. The Properties object exposes all of the default settings for the project via the Properties.Settings.Default member in the default namespace of the project they are defined in.  
   
 ## To Read Settings at Run Time with C\#
   

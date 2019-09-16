@@ -23,7 +23,7 @@ Notifies the profiler that the runtime is resuming all run-time threads.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeResumeStarted();  
 ```  
   

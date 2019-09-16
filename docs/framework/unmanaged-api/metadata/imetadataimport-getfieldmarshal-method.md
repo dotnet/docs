@@ -23,7 +23,7 @@ Gets a pointer to the native, unmanaged type of the field represented by the spe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFieldMarshal (  
    [in]  mdToken             tk,   
    [out] PCCOR_SIGNATURE     *ppvNativeType,  

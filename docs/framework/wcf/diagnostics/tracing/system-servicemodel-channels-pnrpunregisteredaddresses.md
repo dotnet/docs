@@ -7,7 +7,7 @@ ms.assetid: e726ab32-6923-4fdb-b0ce-bdf2a299ed6a
 The Pnrp Resolver has unregistered the local node's addresses.  
   
 ## Description  
- This trace occurs after the PNRP service successfully unregisters the local node's addressses.  
+ This trace occurs after the PNRP service successfully unregisters the local node's addresses.  
   
 ## See also
 

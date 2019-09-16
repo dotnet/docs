@@ -15,13 +15,13 @@ ms.assetid: db15ee48-4d24-49f5-8b9d-a64460865286
 This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application.  
   
 > [!NOTE]
->  As with most types of software, font files are licensed, rather than sold. Licenses that govern the use of fonts vary from vendor to vendor but in general most licenses, including those covering the fonts [!INCLUDE[TLA#tla_ms#initcap](../../../../includes/tlasharptla-mssharpinitcap-md.md)] supplies with applications and [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)], do not allow the fonts to be embedded within applications or otherwise redistributed. Therefore, as a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
+> As with most types of software, font files are licensed, rather than sold. Licenses that govern the use of fonts vary from vendor to vendor but in general most licenses, including those covering the fonts Microsoft supplies with applications and Windows, do not allow the fonts to be embedded within applications or otherwise redistributed. Therefore, as a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
 
 <a name="introduction_to_packaging_fonts"></a>   
 ## Introduction to Packaging Fonts  
  You can easily package fonts as resources within your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications to display user interface text and other types of text based content. The fonts can be separate from or embedded within the application's assembly files. You can also create a resource-only font library, which your application can reference.  
   
- [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] and [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] fonts contain a type flag, fsType, that indicates font embedding licensing rights for the font. However, this type flag only refers to embedded fonts stored in a document–it does not refer to fonts embedded in an application. You can retrieve the font embedding rights for a font by creating a <xref:System.Windows.Media.GlyphTypeface> object and referencing its <xref:System.Windows.Media.GlyphTypeface.EmbeddingRights%2A> property. Refer to the "OS/2 and Windows Metrics" section of the [OpenType Specification](https://www.microsoft.com/typography/otspec/os2.htm) for more information on the fsType flag.  
+ OpenType and [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] fonts contain a type flag, fsType, that indicates font embedding licensing rights for the font. However, this type flag only refers to embedded fonts stored in a document–it does not refer to fonts embedded in an application. You can retrieve the font embedding rights for a font by creating a <xref:System.Windows.Media.GlyphTypeface> object and referencing its <xref:System.Windows.Media.GlyphTypeface.EmbeddingRights%2A> property. Refer to the "OS/2 and Windows Metrics" section of the [OpenType Specification](https://www.microsoft.com/typography/otspec/os2.htm) for more information on the fsType flag.  
   
  The [Microsoft Typography](https://docs.microsoft.com/typography/) Web site includes contact information that can help you locate a particular font vendor or find a font vendor for custom work.  
   
@@ -75,7 +75,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
 ```  
   
 > [!NOTE]
->  When you add fonts as resources to your application, make sure you are setting the `<Resource>` element, and not the `<EmbeddedResource>` element in your application's project file. The `<EmbeddedResource>` element for the build action is not supported.  
+> When you add fonts as resources to your application, make sure you are setting the `<Resource>` element, and not the `<EmbeddedResource>` element in your application's project file. The `<EmbeddedResource>` element for the build action is not supported.  
   
  The following markup example shows how to reference the application's font resources.  
   
@@ -146,7 +146,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
  [!code-xaml[OpenTypeFontsSample#OpenTypeFontsSample1](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontsSample/CS/Kootenay.xaml#opentypefontssample1)]  
   
 > [!NOTE]
->  This SDK contains a set of sample [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts that you can use with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. The fonts are defined in a resource-only library. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
+> This SDK contains a set of sample OpenType fonts that you can use with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. The fonts are defined in a resource-only library. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
 <a name="limitations_on_font_usage"></a>   
 ## Limitations on Font Usage  

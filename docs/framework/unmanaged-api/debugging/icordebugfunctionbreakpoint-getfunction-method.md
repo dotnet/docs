@@ -23,7 +23,7 @@ Gets an interface pointer to an ICorDebugFunction that references the function i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunction (  
     [out] ICorDebugFunction  **ppFunction  
 );  

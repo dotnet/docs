@@ -23,7 +23,7 @@ Gets the active (that is, most recent) frame on the chain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetActiveFrame (  
     [out] ICorDebugFrame   **ppFrame  
 );  

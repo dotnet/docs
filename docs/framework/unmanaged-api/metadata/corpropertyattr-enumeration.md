@@ -22,7 +22,7 @@ Contains values that describe the metadata of a property.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorPropertyAttr {  
   
     prSpecialName           =   0x0200,   

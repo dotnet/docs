@@ -25,7 +25,7 @@ Retrieves the impersonation token associated with the current thread.
 
 ## Syntax
 
-```
+```cpp
 HRESULT SetSecurity (
    [out] boolean* pNeedToReset, 
    [out] HANDLE* pCurrentThreadToken
@@ -48,7 +48,7 @@ If the function fails, the return value is a non-zero error code. To get extende
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** WMINet_Utils.idl
 

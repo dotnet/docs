@@ -22,7 +22,7 @@ Specifies options for a PInvoke call.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  CorPinvokeMap {  
   
     pmNoMangle          = 0x0001,  

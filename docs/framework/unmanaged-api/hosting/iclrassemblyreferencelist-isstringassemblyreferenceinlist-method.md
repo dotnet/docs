@@ -23,7 +23,7 @@ Gets a value that indicates whether the supplied name matches the name of an ass
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsStringAssemblyReferenceInList (  
     [in] LPCWSTR pwzAssemblyName  
 );  

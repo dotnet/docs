@@ -1,5 +1,5 @@
 ---
-title: "Packaging an Assembly for COM"
+title: "Packaging a .NET Framework Assembly for COM"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "exposing .NET Framework components to COM"
@@ -19,7 +19,7 @@ ms.assetid: 39dc55aa-f2a1-4093-87bb-f1c0edb6e761
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Packaging an Assembly for COM
+# Packaging a .NET Framework Assembly for COM
 
 COM developers can benefit from the following information about the managed types they plan to incorporate in their application:
 
@@ -27,23 +27,23 @@ COM developers can benefit from the following information about the managed type
 
   Some managed types are invisible to COM; some are visible but not creatable; and some are both visible and creatable. An assembly can comprise any combination of invisible, visible, not creatable, and creatable types. For completeness, identify the types in an assembly that you intend to expose to COM, especially when those types are a subset of the types exposed to the .NET Framework.
 
-  For additional information, see [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md).
+  For additional information, see [Qualifying .NET Types for Interoperation](../../standard/native-interop/qualify-net-types-for-interoperation.md).
 
 - Versioning instructions
 
   Managed classes that implement the class interface (a COM interop-generated interface) are subject to versioning restrictions.
 
-  For guidelines on using the class interface, see [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface).
+  For guidelines on using the class interface, see [Introducing the class interface](../../standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface).
 
 - Deployment instructions
 
   Strong-named assemblies that are signed by a publisher can be installed into the global assembly cache. Unsigned assemblies must be installed on the user's machine as private assemblies.
 
-  For additional information, see [Assembly Security Considerations](../app-domains/assembly-security-considerations.md).
+  For additional information, see [Assembly Security Considerations](../../standard/assembly/security-considerations.md).
 
 - Type library inclusion
 
-  Most types require a type library when consumed by a COM application. You can generate a type library or have COM developers perform this task. The Windows Software Development Kit (SDK) provides the following options for generating a type library:
+  Most types require a type library when consumed by a COM application. You can generate a type library or have COM developers perform this task. The Windows SDK provides the following options for generating a type library:
 
   - [Type Library Exporter](#cpconpackagingassemblyforcomanchor1)
 
@@ -55,7 +55,7 @@ COM developers can benefit from the following information about the managed type
 
   Regardless of the mechanism you choose, only public types defined in the assembly you supply are included in the generated type library.
 
-  You can package a type library as a separate file or embed it as Win32 resource file within a .NET-based application. Microsoft Visual Basic 6.0 performed this task for you automatically; however, when using [!INCLUDE[vbprvbext](../../../includes/vbprvbext-md.md)], you must embed your type library manually. For instructions, see [How to: Embed Type Libraries as Win32 Resources in .NET-Based Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100)).
+For instructions, see [How to: Embed Type Libraries as Win32 Resources in .NET-Based Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100)).
 
 <a name="cpconpackagingassemblyforcomanchor1"></a>
 
@@ -88,9 +88,9 @@ The [.NET Services Installation Tool (Regsvcs.exe)](../tools/regsvcs-exe-net-ser
 - <xref:System.Runtime.InteropServices.TypeLibConverter>
 - <xref:System.Runtime.InteropServices.ITypeLibConverter>
 - [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
-- [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)
-- [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)
-- [Assembly Security Considerations](../app-domains/assembly-security-considerations.md)
+- [Qualifying .NET Types for Interoperation](../../standard/native-interop/qualify-net-types-for-interoperation.md)
+- [Introducing the class interface](../../standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface)
+- [Assembly Security Considerations](../../standard/assembly/security-considerations.md)
 - [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)
 - [Registering Assemblies with COM](registering-assemblies-with-com.md)
 - [How to: Embed Type Libraries as Win32 Resources in Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100))

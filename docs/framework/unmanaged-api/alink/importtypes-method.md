@@ -18,11 +18,11 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # ImportTypes Method
-Initiates the importing of types from each scope imported via [ImportFile Method](../../../../docs/framework/unmanaged-api/alink/importfile-method.md).  
+Initiates the importing of types from each scope imported via [ImportFile Method](importfile-method.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImportTypes(  
     mdAssembly AssemblyID,  
     mdToken FileToken,  
@@ -47,7 +47,7 @@ HRESULT ImportTypes(
  Receives enumerator handle for the types in this scope.  
   
  `ppImportScope`  
- Optionally receives [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) interface.  
+ Optionally receives [IMetaDataImport Interface](../metadata/imetadataimport-interface.md) interface.  
   
  `pdwCountOfTypes`  
  Optionally receives count of types in the indicated scope.  
@@ -60,6 +60,6 @@ HRESULT ImportTypes(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

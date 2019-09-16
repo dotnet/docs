@@ -23,7 +23,7 @@ Creates a parameter definition with the specified signature for the method refer
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineParam (  
     [in]  mdMethodDef md,   
     [in]  ULONG       ulParamSeq,   

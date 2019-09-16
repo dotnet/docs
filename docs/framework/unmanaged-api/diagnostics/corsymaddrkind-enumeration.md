@@ -22,7 +22,7 @@ Indicates the type of memory address.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSymAddrKind  
 {  
     ADDR_IL_OFFSET          = 1,  

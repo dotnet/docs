@@ -35,11 +35,11 @@ The following operators perform arithmetic operations with numeric types:
 - Unary [`++` (increment)](#increment-operator-), [`--` (decrement)](#decrement-operator---), [`+` (plus)](#unary-plus-and-minus-operators), and [`-` (minus)](#unary-plus-and-minus-operators) operators
 - Binary [`*` (multiplication)](#multiplication-operator-), [`/` (division)](#division-operator-), [`%` (remainder)](#remainder-operator-), [`+` (addition)](#addition-operator-), and [`-` (subtraction)](#subtraction-operator--) operators
 
-Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types.
+Those operators support all [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types.
 
 ## Increment operator ++
 
-The unary increment operator `++` increments its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../../csharp/programming-guide/indexers/index.md) access.
+The unary increment operator `++` increments its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../programming-guide/indexers/index.md) access.
 
 The increment operator is supported in two forms: the postfix increment operator, `x++`, and the prefix increment operator, `++x`.
 
@@ -57,7 +57,7 @@ The result of `++x` is the value of `x` *after* the operation, as the following 
 
 ## Decrement operator --
 
-The unary decrement operator `--` decrements its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../../csharp/programming-guide/indexers/index.md) access.
+The unary decrement operator `--` decrements its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../programming-guide/indexers/index.md) access.
 
 The decrement operator is supported in two forms: the postfix decrement operator, `x--`, and the prefix decrement operator, `--x`.
 
@@ -79,7 +79,7 @@ The unary `+` operator returns the value of its operand. The unary `-` operator 
 
 [!code-csharp-interactive[unary plus and minus](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#UnaryPlusAndMinus)]
 
-The unary `-` operator doesn't support the [ulong](../keywords/ulong.md) type.
+The unary `-` operator doesn't support the [ulong](../builtin-types/integral-numeric-types.md) type.
 
 ## Multiplication operator *
 
@@ -237,7 +237,7 @@ For more information, see remarks at [System.Double](/dotnet/api/system.double#r
 
 ## Operator overloadability
 
-A user-defined type can [overload](../keywords/operator.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
+A user-defined type can [overload](operator-overloading.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
 
 ## C# language specification
 

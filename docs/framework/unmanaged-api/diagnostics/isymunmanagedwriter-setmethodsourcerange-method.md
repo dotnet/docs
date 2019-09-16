@@ -23,7 +23,7 @@ Specifies the true start and end of a method within a source file. Use this meth
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMethodSourceRange(  
     [in] ISymUnmanagedDocumentWriter  *startDoc,  
     [in] ULONG32                      startLine,  

@@ -23,7 +23,7 @@ Gets a metadata interface object that can be used to examine the metadata for th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataInterface (  
     [in] REFIID      riid,  
     [out] IUnknown **ppObj  

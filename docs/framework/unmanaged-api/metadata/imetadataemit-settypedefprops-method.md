@@ -23,7 +23,7 @@ Sets features of a type defined by a prior call to [IMetaDataEmit::DefineTypeDef
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTypeDefProps (  
     [in]  mdTypeDef   td,   
     [in]  DWORD       dwTypeDefFlags,   

@@ -23,7 +23,7 @@ Gets an enumerator for all active breakpoints in the application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateBreakpoints (  
     [out] ICorDebugBreakpointEnum   **ppBreakpoints  
 );  

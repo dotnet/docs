@@ -38,21 +38,21 @@ Use the access modifiers, `public`, `protected`, `internal`, or `private`, to sp
 |`interface`|`public`|None|  
 |`struct`|`private`|`public`<br /><br /> `internal`<br /><br /> `private`|  
   
- The accessibility of a nested type depends on its [accessibility domain](../../../csharp/language-reference/keywords/accessibility-domain.md), which is determined by both the declared accessibility of the member and the accessibility domain of the immediately containing type. However, the accessibility domain of a nested type cannot exceed that of the containing type.  
+ The accessibility of a nested type depends on its [accessibility domain](./accessibility-domain.md), which is determined by both the declared accessibility of the member and the accessibility domain of the immediately containing type. However, the accessibility domain of a nested type cannot exceed that of the containing type.  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)
-- [Accessibility Domain](../../../csharp/language-reference/keywords/accessibility-domain.md)
-- [Restrictions on Using Accessibility Levels](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)
-- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)
-- [public](../../../csharp/language-reference/keywords/public.md)
-- [private](../../../csharp/language-reference/keywords/private.md)
-- [protected](../../../csharp/language-reference/keywords/protected.md)
-- [internal](../../../csharp/language-reference/keywords/internal.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
+- [Access Modifiers](./access-modifiers.md)
+- [Accessibility Domain](./accessibility-domain.md)
+- [Restrictions on Using Accessibility Levels](./restrictions-on-using-accessibility-levels.md)
+- [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
+- [public](./public.md)
+- [private](./private.md)
+- [protected](./protected.md)
+- [internal](./internal.md)

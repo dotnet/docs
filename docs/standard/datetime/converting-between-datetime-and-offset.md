@@ -30,9 +30,9 @@ Although the <xref:System.DateTimeOffset> structure provides a greater degree of
 
 The <xref:System.DateTimeOffset> structure provides two equivalent ways to perform <xref:System.DateTime> to <xref:System.DateTimeOffset> conversion that are suitable for most conversions:
 
-* The <xref:System.DateTimeOffset.%23ctor%2A> constructor, which creates a new <xref:System.DateTimeOffset> object based on a <xref:System.DateTime> value.
+- The <xref:System.DateTimeOffset.%23ctor%2A> constructor, which creates a new <xref:System.DateTimeOffset> object based on a <xref:System.DateTime> value.
 
-* The implicit conversion operator, which allows you to assign a <xref:System.DateTime> value to a <xref:System.DateTimeOffset> object.
+- The implicit conversion operator, which allows you to assign a <xref:System.DateTime> value to a <xref:System.DateTimeOffset> object.
 
 For UTC and local <xref:System.DateTime> values, the <xref:System.DateTimeOffset.Offset%2A> property of the resulting <xref:System.DateTimeOffset> value accurately reflects the UTC or local time zone offset. For example, the following code converts a UTC time to its equivalent <xref:System.DateTimeOffset> value.
 
@@ -71,9 +71,9 @@ To preserve as much time zone information as possible when converting a <xref:Sy
 
 To indicate that a converted <xref:System.DateTimeOffset.DateTime%2A> value is the UTC time, you can retrieve the value of the <xref:System.DateTimeOffset.UtcDateTime%2A?displayProperty=nameWithType> property. It differs from the <xref:System.DateTimeOffset.DateTime%2A> property in two ways:
 
-* It returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc>.
+- It returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc>.
 
-* If the <xref:System.DateTimeOffset.Offset%2A> property value does not equal <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, it converts the time to UTC.
+- If the <xref:System.DateTimeOffset.Offset%2A> property value does not equal <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, it converts the time to UTC.
 
 > [!NOTE]
 > If your application requires that converted <xref:System.DateTime> values unambiguously identify a single point in time, you should consider using the <xref:System.DateTimeOffset.UtcDateTime%2A?displayProperty=nameWithType> property to handle all <xref:System.DateTimeOffset> to <xref:System.DateTime> conversions.
@@ -119,9 +119,9 @@ The follow example calls the `ConvertFromDateTimeOffset` method to convert <xref
 
 Note that this code makes two assumptions that, depending on the application and the source of its date and time values, may not always be valid:
 
-* It assumes that a date and time value whose offset is <xref:System.TimeSpan.Zero?displayProperty=nameWithType> represents UTC. In fact, UTC is not a time in a particular time zone, but the time in relation to which the times in the world's time zones are standardized. Time zones can also have an offset of <xref:System.TimeSpan.Zero>.
+- It assumes that a date and time value whose offset is <xref:System.TimeSpan.Zero?displayProperty=nameWithType> represents UTC. In fact, UTC is not a time in a particular time zone, but the time in relation to which the times in the world's time zones are standardized. Time zones can also have an offset of <xref:System.TimeSpan.Zero>.
 
-* It assumes that a date and time whose offset equals that of the local time zone represents the local time zone. Because date and time values are disassociated from their original time zone, this may not be the case; the date and time can have originated in another time zone with the same offset.
+- It assumes that a date and time whose offset equals that of the local time zone represents the local time zone. Because date and time values are disassociated from their original time zone, this may not be the case; the date and time can have originated in another time zone with the same offset.
 
 ## See also
 

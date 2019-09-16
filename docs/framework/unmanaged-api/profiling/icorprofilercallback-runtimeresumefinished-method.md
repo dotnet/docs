@@ -23,7 +23,7 @@ Notifies the profiler that the runtime has resumed all runtime threads and has r
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeResumeFinished();  
 ```  
   

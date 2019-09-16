@@ -22,11 +22,11 @@ ms.author: "mairaw"
 Notifies the profiler that a COM interop vtable is being destroyed.  
   
 > [!NOTE]
->  This callback is likely never to occur, because the destruction of vtables occurs very close to shutdown.  
+> This callback is likely never to occur, because the destruction of vtables occurs very close to shutdown.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT COMClassicVTableDestroyed(  
     [in] ClassID wrappedClassId,  
     [in] REFGUID implementedIID,  
@@ -34,7 +34,7 @@ HRESULT COMClassicVTableDestroyed(
 ```  
   
 ## Parameters  
- `wrappedClasId`  
+ `wrappedClassId`  
  [in] The ID of the class for which this vtable was created.  
   
  `implementedIID`  

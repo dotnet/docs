@@ -22,7 +22,7 @@ Indicates the type of an assembly's identity.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _CLRAssemblyIdentityFlags {  
     CLR_ASSEMBLY_IDENTITY_FLAGS_DEFAULT = 0  
 } ECLRAssemblyIdentityFlags;  

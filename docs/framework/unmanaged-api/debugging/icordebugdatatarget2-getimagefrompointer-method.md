@@ -10,7 +10,7 @@ Returns the module base address and size from an address in that module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageFromPointer(  
    [in] CORDB_ADDRESS addr,   
    [out] CORDB_ADDRESS *pImageBase,   
@@ -31,7 +31,7 @@ HRESULT GetImageFromPointer(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -23,7 +23,7 @@ Gets the context of the current thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext(  
     [in] ULONG32 contextSize,  
     [in, out, length_is(contextSize),  

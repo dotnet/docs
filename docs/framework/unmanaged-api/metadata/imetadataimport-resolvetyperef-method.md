@@ -23,7 +23,7 @@ Resolves a <xref:System.Type> reference represented by the specified TypeRef tok
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ResolveTypeRef (  
    [in]  mdTypeRef       tr,  
    [in]  REFIID          riid,  
@@ -48,7 +48,7 @@ HRESULT ResolveTypeRef (
 ## Remarks  
   
 > [!IMPORTANT]
->  Do not use this method if multiple application domains are loaded. The method does not respect application domain boundaries. If multiple versions of an assembly are loaded, and they contain the same type with the same namespace, the method returns the module scope of the first type it finds.  
+> Do not use this method if multiple application domains are loaded. The method does not respect application domain boundaries. If multiple versions of an assembly are loaded, and they contain the same type with the same namespace, the method returns the module scope of the first type it finds.  
   
  The `ResolveTypeRef` method searches for the type definition in other modules. If the type definition is found, `ResolveTypeRef` returns an interface to that module scope as well as the TypeDef token for the type.  
   

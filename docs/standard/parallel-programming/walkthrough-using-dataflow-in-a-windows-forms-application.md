@@ -35,7 +35,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
 ## Creating the Windows Forms Application  
  This section describes how to create the basic Windows Forms application and add controls to the main form.  
   
-#### To Create the Windows Forms Application  
+### To Create the Windows Forms Application  
   
 1. In Visual Studio, create a Visual C# or Visual Basic **Windows Forms Application** project. In this document, the project is named `CompositeImages`.  
   
@@ -51,7 +51,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
 ## Creating the Dataflow Network  
  This section describes how to create the dataflow network that performs image processing.  
   
-#### To Create the Dataflow Network  
+### To Create the Dataflow Network  
   
 1. Add a reference to System.Threading.Tasks.Dataflow.dll to your project.  
   
@@ -76,7 +76,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
      [!code-csharp[TPLDataflow_CompositeImages#5](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_compositeimages/cs/compositeimages/form1.cs#5)]  
   
     > [!NOTE]
-    >  The C# version of the `CreateCompositeBitmap` method uses pointers to enable efficient processing of the <xref:System.Drawing.Bitmap?displayProperty=nameWithType> objects. Therefore, you must enable the **Allow unsafe code** option in your project in order to use the [unsafe](~/docs/csharp/language-reference/keywords/unsafe.md) keyword. For more information about how to enable unsafe code in a Visual C# project, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
+    > The C# version of the `CreateCompositeBitmap` method uses pointers to enable efficient processing of the <xref:System.Drawing.Bitmap?displayProperty=nameWithType> objects. Therefore, you must enable the **Allow unsafe code** option in your project in order to use the [unsafe](../../csharp/language-reference/keywords/unsafe.md) keyword. For more information about how to enable unsafe code in a Visual C# project, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
   
  The following table describes the members of the network.  
   
@@ -101,7 +101,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
 ## Connecting the Dataflow Network to the User Interface  
  This section describes how to connect the dataflow network to the user interface. The creation of the composite image and cancellation of the operation are initiated from the **Choose Folder** and **Cancel** buttons. When the user chooses either of these buttons, the appropriate action is initiated in an asynchronous manner.  
   
-#### To Connect the Dataflow Network to the User Interface  
+### To Connect the Dataflow Network to the User Interface  
   
 1. On the form designer for the main form, create an event handler for the <xref:System.Windows.Forms.ToolStripItem.Click> event for the **Choose Folder** button.  
   

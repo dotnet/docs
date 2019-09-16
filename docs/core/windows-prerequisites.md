@@ -15,18 +15,6 @@ This article shows the supported OS versions in order to run .NET Core applicati
 
 Also, if you're developing on Windows using Visual Studio 2017, the [Prerequisites with Visual Studio 2017](#prerequisites-with-visual-studio-2017) section goes in more detail about minimum versions supported for .NET Core development.
 
-## .NET Core supported Windows versions
-
-.NET Core is supported on the following versions of:
-
-* Windows 7 SP1
-* Windows 8.1
-* Windows 10 Anniversary Update (version 1607) or later versions
-* Windows Server 2008 R2 SP1 (Full Server or Server Core)
-* Windows Server 2012 SP1 (Full Server or Server Core)
-* Windows Server 2012 R2 (Full Server or Server Core)
-* Windows Server 2016 or later versions (Full Server, Server Core, or Nano Server)
-
 ## .NET Core supported operating systems
 
 The following articles have a complete list of .NET Core supported operating systems per version:
@@ -52,7 +40,7 @@ For download links and more information, see [.NET downloads](https://dotnet.mic
 > [!NOTE]
 > **For Windows 8.1 and earlier versions, or Windows Server 2012 R2 and earlier versions:**
 >
-> Make sure that your Windows installation is up-to-date and includes [KB2999226](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows), which can be installed through Windows Update. If you don't have this update installed, you'll see an error like the following when you launch a .NET Core application: `The program can't start because api-ms-win-crt-runtime-1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.`
+> Make sure that your Windows installation is up-to-date and includes [KB2999226](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows), which can be installed through Windows Update. If you don't have this update installed, you'll see an error like the following when you launch a .NET Core application: `The program can't start because api-ms-win-crt-runtime-l1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.`
 >
 > **For Windows 7 or Windows Server 2008 R2:**
 >
@@ -67,6 +55,8 @@ For download links and more information, see [.NET downloads](https://dotnet.mic
 You can use any editor to develop .NET Core applications using the .NET Core SDK. Visual Studio 2017 provides an integrated development environment for .NET Core apps on Windows.
 
 You can read more about the changes in Visual Studio 2017 in the [release notes](/visualstudio/releasenotes/vs2017-relnotes).
+
+<!-- markdownlint-disable MD025 -->
 
 # [.NET Core 2.x](#tab/netcore2x)
 
@@ -104,8 +94,9 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 
 > [!IMPORTANT]
 > It's possible to use Visual Studio 2015 for .NET Core 1.x development, but it's not recommended for the following reasons:
-  > * The .NET Core tooling is a preview version, which is not supported.
-  > * The projects are project.json-based, which is deprecated.
+>
+> * The .NET Core tooling is a preview version, which is not supported.
+> * The projects are project.json-based, which is deprecated.
 >
 > For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
 

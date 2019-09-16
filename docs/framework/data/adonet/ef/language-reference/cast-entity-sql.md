@@ -17,7 +17,7 @@ CAST ( expression AS data_type )
  Any valid expression that is convertible to `data_type`.  
   
  `data_type`  
- The target system-supplied data type. It must be a primitive (scalar) type. The `data_type` used depends on the query space. If a query is executed with the <xref:System.Data.EntityClient.EntityCommand>, the data type is a type defined in the conceptual model. For more information, see [CSDL Specification](../../../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md). If a query is executed with <xref:System.Data.Objects.ObjectQuery%601>, the data type is a common language runtime (CLR) type.  
+ The target system-supplied data type. It must be a primitive (scalar) type. The `data_type` used depends on the query space. If a query is executed with the <xref:System.Data.EntityClient.EntityCommand>, the data type is a type defined in the conceptual model. For more information, see [CSDL Specification](csdl-specification.md). If a query is executed with <xref:System.Data.Objects.ObjectQuery%601>, the data type is a common language runtime (CLR) type.  
   
 ## Return Value  
  Returns the same value as `data_type`.  
@@ -42,12 +42,12 @@ CAST( e as T )
  The use of a cast expression is considered an explicit conversion. Explicit conversions might truncate data or lose precision.  
   
 > [!NOTE]
->  CAST is only supported over primitive types and enumeration member types.  
+> CAST is only supported over primitive types and enumeration member types.  
   
 ## Example  
  The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the CAST operator to cast an expression of one data type to another. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
@@ -55,4 +55,4 @@ CAST( e as T )
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Reference](entity-sql-reference.md)

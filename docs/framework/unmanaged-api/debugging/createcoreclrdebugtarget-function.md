@@ -24,7 +24,7 @@ Creates a connection to a debugger proxy that is running on a remote machine, an
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateCoreClrDebugTarget (  
        [in]  DWORD    dwAddress,   
        [out] ICoreClrDebugTarget**     ppTarget  

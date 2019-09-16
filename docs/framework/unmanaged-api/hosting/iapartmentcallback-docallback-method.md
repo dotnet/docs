@@ -23,7 +23,7 @@ Executes the specified function within an apartment.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _stdcall DoCallback(  
     [in] SIZE_T pFunc,  
     [in] SIZE_T pData  

@@ -10,7 +10,7 @@ Returns the method starting relative virtual address of a method and the parent 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFrameProps(  
    [in] ULONG32 codeRva,  
    [out] ULONG32 *pCodeStartRva,  
@@ -31,7 +31,7 @@ HRESULT GetFrameProps(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -23,7 +23,7 @@ Notifies the profiler that the specified thread has resumed after being suspende
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeThreadResumed(  
     [in] ThreadID threadId);  
 ```  

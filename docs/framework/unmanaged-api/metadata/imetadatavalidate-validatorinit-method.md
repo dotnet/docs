@@ -23,7 +23,7 @@ Sets a flag that specifies the type of the module in the current metadata scope,
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ValidatorInit (  
    [in] DWORD       dwModuleType,  
    [in] IUnknown    *pUnk  

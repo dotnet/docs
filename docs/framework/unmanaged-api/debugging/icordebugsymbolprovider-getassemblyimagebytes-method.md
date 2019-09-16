@@ -10,7 +10,7 @@ Reads data from a merged assembly given a relative virtual address (RVA) in the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyImageBytes(  
    [in] CORDB_ADDRESS rva,   
    [in] ULONG32 length,   
@@ -31,7 +31,7 @@ HRESULT GetAssemblyImageBytes(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

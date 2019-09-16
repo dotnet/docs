@@ -23,7 +23,7 @@ Gets a value that indicates whether the threads in the process are currently run
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsRunning (  
     [out] BOOL *pbRunning  
 );  

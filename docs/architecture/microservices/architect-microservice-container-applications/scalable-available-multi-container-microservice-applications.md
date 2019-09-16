@@ -29,21 +29,10 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 
 ## Software platforms for container clustering, orchestration, and scheduling
 
-### Kubernetes
-
-![Kubernetes logo](./media/image24.png)
-
-> [*Kubernetes*](https://kubernetes.io/) is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. It lets you automate deployment, scaling, and operations of application containers across clusters of hosts.
->
-> *Kubernetes* provides a container-centric infrastructure that groups application containers into logical units for easy management and discovery.
->
-> *Kubernetes* is mature in Linux, less mature in Windows.
-
-### Azure Kubernetes Service (AKS)
-
-![Azure Kubernetes Service logo](./media/image41.png)
-
-> [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster’s management, deployment, and operations.
+|     |   |
+|-----|---|
+| **Kubernetes** <br> ![Kubernetes logo](./media/image24.png) | [*Kubernetes*](https://kubernetes.io/) is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. It lets you automate deployment, scaling, and operations of application containers across clusters of hosts. <br><br> *Kubernetes* provides a container-centric infrastructure that groups application containers into logical units for easy management and discovery. <br><br> *Kubernetes* is mature in Linux, less mature in Windows. |
+| **Azure Kubernetes Service (AKS)** <br> ![Azure Kubernetes Service logo](./media/image41.png) | [AKS](https://azure.microsoft.com/services/kubernetes-service/) is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster’s management, deployment, and operations. |
 
 ## Using container-based orchestrators in Microsoft Azure
 

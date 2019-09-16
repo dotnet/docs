@@ -23,7 +23,7 @@ For a detailed walkthrough of creating an IIS-hosted WCF service, see [How to: H
 
 WCF, IIS, and ASP.NET must be installed for IIS-hosted WCF services to function correctly. The procedures for installing WCF (as part of the .NET Framework), ASP.NET, and IIS vary depending on your operating system. For more information about installing WCF and the .NET Framework, see [Install the .NET Framework for developers](../../install/guide-for-developers.md). To install IIS on Windows 10, open **Programs and Features** in **Control Panel** and then select **Turn Windows features on or off**. In **Windows Features**, select **Internet Information Services** and then choose **OK**.
 
-![Windows Features with IIS highlighted](media/windows-features-iis.png)
+![Windows Features with IIS highlighted](./media/windows-features-iis.png)
 
 Instructions for installing IIS on other operating systems can be found at [Install IIS on Windows Vista and Windows 7](/iis/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7) and [Install IIS 8.5 on Windows Server 2012 R2](/iis/install/installing-iis-85/installing-iis-85-on-windows-server-2012-r2).
 

@@ -78,4 +78,4 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
 - <xref:System.Diagnostics.TextWriterTraceListener>
 - <xref:System.Diagnostics.ConsoleTraceListener>
 - <xref:System.Diagnostics.EventTypeFilter>
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)

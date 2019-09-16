@@ -24,7 +24,7 @@ ms.author: "ronpet"
 
 The Global Assembly Cache tool allows you to view and manipulate the contents of the global assembly cache and download cache.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 
@@ -60,7 +60,7 @@ gacutil [options] [assemblyName | assemblyPath | assemblyListFile]
 |**/u**  *assemblyName*|Uninstalls an assembly from the global assembly cache.|
 |**/uf**  *assemblyName*|Forces a specified assembly to uninstall by removing all references to the assembly.<br /><br /> Specifying this option is equivalent to specifying the **/u** and **/f** options together. **Note:**  You cannot use this option to remove an assembly that was installed using Microsoft Windows Installer. If you attempt this operation, the tool displays an error message.|
 |**/ul** *assemblyListFile*|Uninstalls one or more assemblies specified in *assemblyListFile* from the global assembly cache.|
-|**/u**[**ngen**] *assemblyName*|Uninstalls a specified assembly from the global assembly cache. If the specified assembly has existing reference counts, the tool displays the reference counts and does not remove the assembly from the global assembly cache. **Note:**  In the .NET Framework version 2.0, `/ungen` is not supported. Instead, use the `uninstall` command of the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md). <br /><br /> In the .NET Framework versions 1.0 and 1.1, specifying **/ungen** causes Gacutil.exe to remove the assembly from the native image cache. This cache stores the native images for assemblies that have been created using the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md).|
+|**/u**[**ngen**] *assemblyName*|Uninstalls a specified assembly from the global assembly cache. If the specified assembly has existing reference counts, the tool displays the reference counts and does not remove the assembly from the global assembly cache. **Note:**  In the .NET Framework version 2.0, `/ungen` is not supported. Instead, use the `uninstall` command of the [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md). <br /><br /> In the .NET Framework versions 1.0 and 1.1, specifying **/ungen** causes Gacutil.exe to remove the assembly from the native image cache. This cache stores the native images for assemblies that have been created using the [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md).|
 |**/ur**  *assemblyName*<br /><br /> *scheme*<br /><br /> *id*<br /><br /> *description*|Uninstalls a reference to a specified assembly from the global assembly cache. To remove a reference to an assembly, you must specify the same *scheme*, *id*, and *description* parameters that were specified with the **/i** and **/r** (or **/ir)** options when the assembly was installed. For a description of the valid values you can specify for these parameters, see the **/r** option.<br /><br /> Specifying this option is equivalent to specifying the **/u** and **/r** options together.|
 |**/?**|Displays command syntax and options for the tool.|
 
@@ -174,7 +174,7 @@ gacutil /l
 
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
-- [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Global Assembly Cache](../app-domains/gac.md)
+- [Regasm.exe (Assembly Registration Tool)](regasm-exe-assembly-registration-tool.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

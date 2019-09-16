@@ -12,7 +12,7 @@ Packages construction arguments for a non-parameterless constructor object eleme
   
 ## XAML Element Usage (Nonparameterless constructor)  
   
-```  
+```xaml  
 <object ...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
@@ -22,7 +22,7 @@ Packages construction arguments for a non-parameterless constructor object eleme
   
 ## XAML Element Usage (factory method)  
   
-```  
+```xaml  
 <object x:FactoryMethod="methodName"...>  
   <x:Arguments>  
     oneOrMoreObjectElements  

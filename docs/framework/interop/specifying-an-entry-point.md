@@ -37,7 +37,7 @@ Friend Class NativeMethods
 End Class
 ```
   
- You can replace the **MessageBox** entry point with **MsgBox** by including the **Alias** keyword in your definition, as shown in the following example. In both examples the **Auto** keyword eliminates the need to specify the character-set version of the entry point. For more information about selecting a character set, see [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md).  
+ You can replace the **MessageBox** entry point with **MsgBox** by including the **Alias** keyword in your definition, as shown in the following example. In both examples the **Auto** keyword eliminates the need to specify the character-set version of the entry point. For more information about selecting a character set, see [Specifying a Character Set](specifying-a-character-set.md).  
   
 ```vb
 Friend Class NativeMethods
@@ -87,6 +87,6 @@ extern "C" int MsgBox(
 ## See also
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
-- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)
-- [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)
-- [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md)
+- [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)
+- [Platform Invoke Examples](platform-invoke-examples.md)
+- [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)

@@ -48,7 +48,7 @@ The hub-and-spoke model requires that you place resources in specific locations 
 
 - Information about the culture of the satellite assembly must be included in the assembly's metadata. To store the culture name in the satellite assembly's metadata, you specify the `/culture` option when you use [Assembly Linker](../tools/al-exe-assembly-linker.md) to embed resources in the satellite assembly.
 
-The following illustration shows a sample directory structure and location requirements for applications that you are not installing in the [global assembly cache](../../framework/app-domains/gac.md). The items with .txt and .resources extensions will not ship with the final application. These are the intermediate resource files used to create the final satellite resource assemblies. In this example, you could substitute .resx files for the .txt files. For more information, see [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md).
+The following illustration shows a sample directory structure and location requirements for applications that you are not installing in the [global assembly cache](../app-domains/gac.md). The items with .txt and .resources extensions will not ship with the final application. These are the intermediate resource files used to create the final satellite resource assemblies. In this example, you could substitute .resx files for the .txt files. For more information, see [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md).
 
 The following image shows the satellite assembly directory:
 
@@ -89,8 +89,8 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
   
 2. To indicate that English (en) is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly.
   
-     [!code-csharp[Conceptual.Resources.Locating#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/assemblyinfo.cs#2)]
-     [!code-vb[Conceptual.Resources.Locating#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]  
+    [!code-csharp[Conceptual.Resources.Locating#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/assemblyinfo.cs#2)]
+    [!code-vb[Conceptual.Resources.Locating#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]  
   
 3. Add support for additional cultures (en-US, fr-FR, and ru-RU) to the application as follows:  
   
@@ -144,17 +144,19 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
  You can then run the example. It will randomly make one of the supported cultures the current culture and display a localized greeting.
   
 <a name="SN"></a>   
+
 ## Installing Satellite Assemblies in the Global Assembly Cache  
- Instead of installing assemblies in a local application subdirectory, you can install them in the global assembly cache. This is particularly useful if you have class libraries and class library resource assemblies that are used by multiple applications.
+Instead of installing assemblies in a local application subdirectory, you can install them in the global assembly cache. This is particularly useful if you have class libraries and class library resource assemblies that are used by multiple applications.
   
- Installing assemblies in the global assembly cache requires that they have strong names. Strong-named assemblies are signed with a valid public/private key pair. They contain version information that the runtime uses to determine which assembly to use to satisfy a binding request. For more information about strong names and versioning, see [Assembly Versioning](../../standard/assembly/versioning.md). For more information about strong names, see [Strong-Named Assemblies](../../standard/assembly/strong-named.md).
+Installing assemblies in the global assembly cache requires that they have strong names. Strong-named assemblies are signed with a valid public/private key pair. They contain version information that the runtime uses to determine which assembly to use to satisfy a binding request. For more information about strong names and versioning, see [Assembly Versioning](../../standard/assembly/versioning.md). For more information about strong names, see [Strong-Named Assemblies](../../standard/assembly/strong-named.md).
   
- When you are developing an application, it is unlikely that you will have access to the final public/private key pair. In order to install a satellite assembly in the global assembly cache and ensure that it works as expected, you can use a technique called delayed signing. When you delay sign an assembly, at build time you reserve space in the file for the strong name signature. The actual signing is delayed until later, when the final public/private key pair is available. For more information about delayed signing, see [Delay Signing an Assembly](../../standard/assembly/delay-sign.md).
+When you are developing an application, it is unlikely that you will have access to the final public/private key pair. In order to install a satellite assembly in the global assembly cache and ensure that it works as expected, you can use a technique called delayed signing. When you delay sign an assembly, at build time you reserve space in the file for the strong name signature. The actual signing is delayed until later, when the final public/private key pair is available. For more information about delayed signing, see [Delay Signing an Assembly](../../standard/assembly/delay-sign.md).
   
 ### Obtaining the Public Key  
- To delay sign an assembly, you must have access to the public key. You can either obtain the real public key from the organization in your company that will do the eventual signing, or create a public key by using the [Strong Name Tool (Sn.exe)](../tools/sn-exe-strong-name-tool.md).
+
+To delay sign an assembly, you must have access to the public key. You can either obtain the real public key from the organization in your company that will do the eventual signing, or create a public key by using the [Strong Name Tool (Sn.exe)](../tools/sn-exe-strong-name-tool.md).
   
- The following Sn.exe command creates a test public/private key pair. The **–k** option specifies that Sn.exe should create a new key pair and save it in a file named TestKeyPair.snk.
+The following Sn.exe command creates a test public/private key pair. The **–k** option specifies that Sn.exe should create a new key pair and save it in a file named TestKeyPair.snk.
   
 ```console
 sn –k TestKeyPair.snk
@@ -190,7 +192,7 @@ sn –R StringLibrary.resources.dll RealKeyPair.snk
 
 ### Installing a Satellite Assembly in the Global Assembly Cache
 
-When the runtime searches for resources in the resource fallback process, it looks in the [global assembly cache](../../framework/app-domains/gac.md) first. (For more information, see the "Resource Fallback Process" section of the [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md) topic.) As soon as a satellite assembly is signed with a strong name, it can be installed in the global assembly cache by using the [Global Assembly Cache Tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md).
+When the runtime searches for resources in the resource fallback process, it looks in the [global assembly cache](../app-domains/gac.md) first. (For more information, see the "Resource Fallback Process" section of the [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md) topic.) As soon as a satellite assembly is signed with a strong name, it can be installed in the global assembly cache by using the [Global Assembly Cache Tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md).
 
 The following Gacutil.exe command installs StringLibrary.resources.dll in the global assembly cache:
 

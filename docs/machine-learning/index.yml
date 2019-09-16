@@ -6,7 +6,7 @@ metadata:
   title: ML.NET Documentation - Tutorials, API Reference
   meta.description: Learn how to use ML.NET, an open-source and cross-platform machine learning framework you can use to build custom machine learning solutions and integrate them into .NET applications. Incorporate AI into your apps using the .NET skills you already have and without leaving .NET.
   ms.topic: landing-page
-  ms.date: 08/15/2019
+  ms.date: 09/16/2019
   ms.author: nakersha
   author: natke
 abstract:
@@ -28,6 +28,7 @@ sections:
     - html: <a href="/dotnet/machine-learning/tutorials/movie-recommendation">Create a movie recommender with matrix factorization</a>
     - html: <a href="/dotnet/machine-learning/tutorials/image-classification">Build a custom image classifier with TensorFlow</a>
     - html: <a href="/dotnet/machine-learning/tutorials/object-detection-onnx">Detect objects in images with ONNX</a>
+    - html: <a href="/dotnet/machine-learning/tutorials/text-classification-tf">Classify sentiment of movie reviews using TensorFlow</a>
   - type: paragraph
     text: '<b>Use Model Builder</b>, a graphical Visual Studio extension:'
   - type: list

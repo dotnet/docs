@@ -134,15 +134,13 @@ dotnet publish -c Release -r win10-x64 --self-contained false /p:PublishSingleFi
 
 _Note: Creating a single file executable _**requires**_ that you specify a Runtime Identifier (RID) via the -r switch even if the executable will be Framework_dependent and not self-contained. _
 
-## Step-by-step examples
-
-For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). 
-
-For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). 
 
 ## Self-Contained Executable (SCE)
 
 Starting with .NET Core 3.0, you can package up your application (with the .NET Core runtime) into a single file executable. 
+
+In this mode, you package up your application (with the .NET Core runtime) into a single file executable.
+
 This option has some of the same benefits and drawbacks as self-contained deployments.
 
 To create a Self-contained, single file executable for the Windows 10 x64 operating system you would use the following command line:
@@ -150,6 +148,9 @@ To create a Self-contained, single file executable for the Windows 10 x64 operat
 ```dotnetcli
 dotnet publish -c Release -r win10-x64 --self-contained true /p:PublishSingleFile=true
 ```
+
+##Summary
+
 Both Framework-Dependent Deployment and Self-Contained Deployment have their own pros and cons. 
 
 To summarize,
@@ -162,12 +163,16 @@ To summarize,
 | Need target machine native dependencies installed         | ✔️                            | ✔️                       | ✔️                            | ✔️                       |  
 | Share Core Runtime across multiple apps                   | ✔️                            | ❌                        | ✔️                            | ❌                        |  
 | Isolated from changes to shared runtime                   | ❌                             | ✔️                       | ❌                             | ✔️                       |  
-| Trimming Available                                        | ❌                             | ❌                        | ✔️                            | ✔️                       |  
+| Trimming Available                                        | ❌                             | ✔️                        | ❌                            | ✔️                       |  
+
+
+## Step-by-step examples
+
+For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). 
+
+For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). 
 
 
 ## See also
-
-- [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
-- [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
 - [Packages, Metapackages, and Frameworks](../packages.md)
 - [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

@@ -1,12 +1,12 @@
 ---
-title: Packaging your Application
-description: Packaging your Application
+title: Packaging your Desktop Application
+description: Packaging your Desktop Application
 author: jamshedd
 ms.author: jamshedd
 ms.date: 09/06/2019
 ms.custom: 
 ---
-# Packaging your Application
+# Packaging your Desktop Application
 
 There are a couple of options when it comes to packaging up your desktop application to make it ready for deployment the users' computer.
 

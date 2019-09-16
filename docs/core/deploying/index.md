@@ -162,7 +162,7 @@ When it comes to deploying the .NET Core runtime, you can again choose between v
 - [.NET Core Deployment Experiences](deployment-experiences.md)
 - [Publish your Application](publish.md)
 - [Trimming Self-Contained Deployments and Executables](trimming.md)
-- [Packaging your Application](packaging.md)
+- [Packaging your Desktop Application](desktop-packaging.md)
 - [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
 - [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
 - [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

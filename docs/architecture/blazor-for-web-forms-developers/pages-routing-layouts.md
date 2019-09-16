@@ -18,7 +18,7 @@ A simple page in ASP.NET Web Forms might contain the following markup:
 
 *Name.aspx*
 
-```aspx
+```aspx-csharp
 <%@ Page Title="Name" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Name.aspx.cs" Inherits="WebApplication1.Name" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">

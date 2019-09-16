@@ -14,7 +14,7 @@ planning and can take time. The process can be broken into two main parts:
 1. Update the business logic projects to run on .NET Core/.NET Standard
 1. Convert the app model from WebForms to Blazor
 
-In this chapter We will go over the process for each of these. One thing that
+In this chapter we will go over the process for each of these. One thing that
 can really help ease the transition is to ensure the application is adhering to
 an *n-tier* approach where the app model (in this case Web Forms) is separate
 from the business logic. Without this separation it can be very tedious to tease

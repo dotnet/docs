@@ -47,7 +47,7 @@ There are also a few disadvantages:
 
 Framework-dependent deployment is available for Windows Client, Windows Server, Mac, and Linux platforms through native installers – MSI on Windows Client and Server, PKG on Mac and various native package managers for Linux. 
 
-To create a self-contained deployment, you would use the following command line:
+To create a framework-dependent deployment, you would use the following command line:
 
 ```dotnetcli
 dotnet publish -c Release --self-contained false

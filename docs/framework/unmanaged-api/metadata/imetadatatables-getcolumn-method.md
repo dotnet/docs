@@ -1,6 +1,6 @@
 ---
 title: "IMetaDataTables::GetColumn Method"
-ms.date: "03/30/2017"
+ms.date: "02/25/2019"
 api_name: 
   - "IMetaDataTables.GetColumn"
 api_location: 
@@ -32,7 +32,8 @@ HRESULT GetColumn (
 );  
 ```  
   
-#### Parameters  
+## Parameters
+
  `ixTbl`  
  [in] The index of the table.  
   
@@ -56,15 +57,15 @@ The interpretion of the value returned through `pVal` depends on the column's ty
 | Column type              | pVal contains | Comment                          |
 |--------------------------|---------------|-----------------------------------|
 | `0`..`iRidMax`<br>(0..63)  | mdToken     | *pVal* will contain a full Token. The function automatically converts the Rid into a full token. |
-| `iCodedToken`..`iCodedTokenMax`<br>(64..95) | mdToken | Upon return *pVal* will contain a full Token. The function automatically decompresses the CodedToken into a full token. |
-| `iSHORT` (96)            | Int16         | Automatically sign-extended to 32-bit  |
-| `iUSHORT` (97)           | UInt16        | Automatically sign-extended to 32-bit  |
+| `iCodedToken`..`iCodedTokenMax`<br>(64..95) | mdToken | Upon return, *pVal* will contain a full Token. The function automatically decompresses the CodedToken into a full token. |
+| `iSHORT` (96)            | Int16         | Automatically sign-extended to 32-bit.  |
+| `iUSHORT` (97)           | UInt16        | Automatically sign-extended to 32-bit.  |
 | `iLONG` (98)             | Int32         |                                        | 
 | `iULONG` (99)            | UInt32        |                                        |
-| `iBYTE` (100)            | Byte          | Automatically sign-extended to 32-bit  |
-| `iSTRING` (101)          | String heap index | *pVal* is an index into the String heap. Use **IMetadataTables.GetString** to get the actual column String value |
-| `iGUID` (102)            | Guid heap index | *pVal* is an index into the Guid heap. Use **IMetadataTables.GetGuid** to get the actual column Guid value |
-| `iBLOB` (103)            | Blob heap index | *pVal* is an index into the Blob heap. Use **IMetadataTables.GetBlob** to get the actual column Blob value |
+| `iBYTE` (100)            | Byte          | Automatically sign-extended to 32-bit.  |
+| `iSTRING` (101)          | String heap index | *pVal* is an index into the String heap. Use [IMetadataTables.GetString](imetadatatables-getstring-method.md) to get the actual column String value. |
+| `iGUID` (102)            | Guid heap index | *pVal* is an index into the Guid heap. Use [IMetadataTables.GetGuid](imetadatatables-getguid-method.md) to get the actual column Guid value. |
+| `iBLOB` (103)            | Blob heap index | *pVal* is an index into the Blob heap. Use [IMetadataTables.GetBlob](imetadatatables-getblob-method.md) to get the actual column Blob value. |
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

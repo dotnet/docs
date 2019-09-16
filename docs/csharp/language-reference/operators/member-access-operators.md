@@ -154,7 +154,7 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 ## Index operator ^
 
-Available in C# 8.0 and later, the `^` operator indicates the element position from the end of a sequence. `^1` points to the last element of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence; `^length` points to the first element of a sequence.
+Available in C# 8.0 and later, the `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
 
 [!code-csharp[index from end](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#IndexFromEnd)]
 

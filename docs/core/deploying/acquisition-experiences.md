@@ -169,5 +169,5 @@ Visit [Snapcraft.io](https://snapcraft.io/) for guidance on preparing your syste
 
 ## Updates and Notifications
 
-.NET Core provides a robust metadata file for discovering updates. For more information about this, see [.NET Core Update Discovery](../update-discovery-and-deploy.md).
+For acquisition methods that do not update automatically, .NET Core provides a robust metadata file for discovering updates, allowing the provisioning of updates across development, CI/CD and application target machines. For more information about this, see [.NET Core Update Discovery](../update-discovery-and-deploy.md).
 

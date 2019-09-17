@@ -32,39 +32,39 @@ Use the following links to other MSDN topics for specific information about depl
 
   - Installation modes:
 
-    - [Silent installation](../../../docs/framework/deployment/deployment-guide-for-developers.md#chaining_custom)
+    - [Silent installation](deployment-guide-for-developers.md#chaining_custom)
 
-    - [Displaying a UI](../../../docs/framework/deployment/deployment-guide-for-developers.md#chaining_default)
+    - [Displaying a UI](deployment-guide-for-developers.md#chaining_default)
 
-  - [Reducing system restarts during .NET Framework 4.5 installations](../../../docs/framework/deployment/reducing-system-restarts.md)
+  - [Reducing system restarts during .NET Framework 4.5 installations](reducing-system-restarts.md)
 
   - [Troubleshoot blocked .NET Framework installations and uninstallations](../install/troubleshoot-blocked-installations-and-uninstallations.md)
 
 - Deploying the .NET Framework with a client application (for developers):
 
-  - [Using InstallShield](../../../docs/framework/deployment/deployment-guide-for-developers.md#installshield-deployment) in a setup and deployment project
+  - [Using InstallShield](deployment-guide-for-developers.md#installshield-deployment) in a setup and deployment project
 
-  - [Using a Visual Studio ClickOnce application](../../../docs/framework/deployment/deployment-guide-for-developers.md#clickonce-deployment)
+  - [Using a Visual Studio ClickOnce application](deployment-guide-for-developers.md#clickonce-deployment)
 
-  - [Creating a WiX installation package](../../../docs/framework/deployment/deployment-guide-for-developers.md#wix)
+  - [Creating a WiX installation package](deployment-guide-for-developers.md#wix)
 
-  - [Using a custom installer](../../../docs/framework/deployment/deployment-guide-for-developers.md#chaining)
+  - [Using a custom installer](deployment-guide-for-developers.md#chaining)
 
-  - [Additional information](../../../docs/framework/deployment/deployment-guide-for-developers.md) for developers
+  - [Additional information](deployment-guide-for-developers.md) for developers
 
 - Deploying the .NET Framework (for OEMs and administrators):
 
   - [Windows Assessment and Deployment Kit (ADK)](https://go.microsoft.com/fwlink/p/?LinkId=254976)
 
-  - [Administrator's guide](../../../docs/framework/deployment/guide-for-administrators.md)
+  - [Administrator's guide](guide-for-administrators.md)
 
 **Servicing**
 
 - For general information, see the [.NET Framework blog](https://go.microsoft.com/fwlink/p/?LinkId=254977)
 
-- [Detecting versions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)
+- [Detecting versions](../migration-guide/how-to-determine-which-versions-are-installed.md)
 
-- [Detecting service packs and updates](../../../docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)
+- [Detecting service packs and updates](../migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)
 
 ## Features That Simplify Deployment
 
@@ -148,25 +148,25 @@ The .NET Framework provides the following options for distributing applications:
 
 ### Installation Location
 
-To determine where to deploy your application's assemblies so they can be found by the runtime, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).
+To determine where to deploy your application's assemblies so they can be found by the runtime, see [How the Runtime Locates Assemblies](how-the-runtime-locates-assemblies.md).
 
-Security considerations can also affect how you deploy your application. Security permissions are granted to managed code according to where the code is located. Deploying an application or component to a location where it receives little trust, such as the Internet, limits what the application or component can do. For more information about deployment and security considerations, see [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md).
+Security considerations can also affect how you deploy your application. Security permissions are granted to managed code according to where the code is located. Deploying an application or component to a location where it receives little trust, such as the Internet, limits what the application or component can do. For more information about deployment and security considerations, see [Code Access Security Basics](../misc/code-access-security-basics.md).
 
 ## Related Topics
 
 |Title|Description|
 |-----------|-----------------|
-|[How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)|Describes how the common language runtime determines which assembly to use to fulfill a binding request.|
-|[Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)|Discusses ways to avoid problems of type identity that can lead to <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, and other errors.|
-|[Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)|Describes the Restart Manager, which prevents reboots whenever possible, and explains how applications that install the .NET Framework can take advantage of it.|
-|[Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)|Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using System Center Configuration Manager (SCCM).|
-|[Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)|Explains how developers can install .NET Framework on their users' computers with their applications.|
+|[How the Runtime Locates Assemblies](how-the-runtime-locates-assemblies.md)|Describes how the common language runtime determines which assembly to use to fulfill a binding request.|
+|[Best Practices for Assembly Loading](best-practices-for-assembly-loading.md)|Discusses ways to avoid problems of type identity that can lead to <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, and other errors.|
+|[Reducing System Restarts During .NET Framework 4.5 Installations](reducing-system-restarts.md)|Describes the Restart Manager, which prevents reboots whenever possible, and explains how applications that install the .NET Framework can take advantage of it.|
+|[Deployment Guide for Administrators](guide-for-administrators.md)|Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using System Center Configuration Manager (SCCM).|
+|[Deployment Guide for Developers](deployment-guide-for-developers.md)|Explains how developers can install .NET Framework on their users' computers with their applications.|
 |[Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)|Discusses deployment options in Visual Studio, including instructions for publishing an application using the ClickOnce and Windows Installer technologies.|
 |[Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)|Describes how to package a Windows Forms application and deploy it with ClickOnce to client computers on a network.|
-|[Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)|Describes the hub and spoke model that the .NET Framework uses to package and deploy resources; covers resource naming conventions, fallback process, and packaging alternatives.|
-|[Deploying an Interop Application](../../../docs/framework/interop/deploying-an-interop-application.md)|Explains how to ship and install interop applications, which typically include a .NET Framework client assembly, one or more interop assemblies representing distinct COM type libraries, and one or more registered COM components.|
-|[How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)|Describes how to silently launch and track the .NET Framework setup process while showing your own view of the setup progress.|
+|[Packaging and Deploying Resources](../resources/packaging-and-deploying-resources-in-desktop-apps.md)|Describes the hub and spoke model that the .NET Framework uses to package and deploy resources; covers resource naming conventions, fallback process, and packaging alternatives.|
+|[Deploying an Interop Application](../interop/deploying-an-interop-application.md)|Explains how to ship and install interop applications, which typically include a .NET Framework client assembly, one or more interop assemblies representing distinct COM type libraries, and one or more registered COM components.|
+|[How to: Get Progress from the .NET Framework 4.5 Installer](how-to-get-progress-from-the-dotnet-installer.md)|Describes how to silently launch and track the .NET Framework setup process while showing your own view of the setup progress.|
 
 ## See also
 
-- [Development Guide](../../../docs/framework/development-guide.md)
+- [Development Guide](../development-guide.md)

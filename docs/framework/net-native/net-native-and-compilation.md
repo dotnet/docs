@@ -76,7 +76,7 @@ Because the .NET Native tool chain links implementation code into your app only 
 
 - COM interop.
 
-If the necessary metadata or implementation code is absent at runtime, the .NET Native runtime throws an exception. You can prevent these exceptions, and ensure that the .NET Native tool chain includes the required metadata and implementation code, by using a [runtime directives file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md), an XML file that designates the program elements whose metadata or implementation code must be available at runtime and assigns a runtime policy to them. The following is the default runtime directives file that is added to a Windows Store project that is compiled by the .NET Native tool chain:
+If the necessary metadata or implementation code is absent at runtime, the .NET Native runtime throws an exception. You can prevent these exceptions, and ensure that the .NET Native tool chain includes the required metadata and implementation code, by using a [runtime directives file](runtime-directives-rd-xml-configuration-file-reference.md), an XML file that designates the program elements whose metadata or implementation code must be available at runtime and assigns a runtime policy to them. The following is the default runtime directives file that is added to a Windows Store project that is compiled by the .NET Native tool chain:
 
 ```xml
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
@@ -90,7 +90,7 @@ This enables all the types, as well as all their members, in all the assemblies 
 
 ## .NET Native and NGEN
 
-The [(Native Image Generator](../../../docs/framework/tools/ngen-exe-native-image-generator.md) (NGEN) compiles assemblies to native code and installs them in the native image cache on the local computer. However, although NGEN, like .NET Native, produces native code, it differs from .NET Native in some significant ways:
+The [(Native Image Generator](../tools/ngen-exe-native-image-generator.md) (NGEN) compiles assemblies to native code and installs them in the native image cache on the local computer. However, although NGEN, like .NET Native, produces native code, it differs from .NET Native in some significant ways:
 
 - If no native image is available for a particular method, NGEN falls back to JITing code. This means that native images must continue to include metadata and IL in the event that NGEN needs to fall back to JIT compilation. In contrast, .NET Native produces only native images and does not fall back to JIT compilation. As a result, only metadata required for some reflection, serialization, and interop scenarios must be preserved.
 
@@ -102,5 +102,5 @@ The [(Native Image Generator](../../../docs/framework/tools/ngen-exe-native-imag
 
 - [Metadata and Self-Describing Components](../../standard/metadata-and-self-describing-components.md)
 - [Inside .NET Native (Channel 9 Video)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)
-- [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)
-- [.NET Native General Troubleshooting](../../../docs/framework/net-native/net-native-general-troubleshooting.md)
+- [Reflection and .NET Native](reflection-and-net-native.md)
+- [.NET Native General Troubleshooting](net-native-general-troubleshooting.md)

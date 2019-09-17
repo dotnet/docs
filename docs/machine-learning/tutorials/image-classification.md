@@ -350,7 +350,7 @@ Convert your image data and prediction `DataViews` into strongly-typed `IEnumera
 
 [!code-csharp[EnumerateDataViews](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#EnumerateDataViews)]
 
-Call the `DisplayResults()` method to display your data and predictions as the next line in the `ReuseAndTuneInceptionModel()` method:
+Add the following code to display your data and predictions as the next lines in the `ReuseAndTuneInceptionModel()` method:
 
 [!code-csharp[CallDisplayResults1](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CallDisplayResults1)]
 

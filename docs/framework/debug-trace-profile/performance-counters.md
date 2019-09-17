@@ -211,7 +211,7 @@ This topic provides a list of performance counters you can find in the [Windows 
   
  Networking performance counters can be accessed and managed using the <xref:System.Diagnostics.PerformanceCounter> and related classes in the <xref:System.Diagnostics> namespace. Networking performance counters can also be viewed with the Windows Performance Monitor console.  
   
- Networking performance counters need to be enabled in the configuration file to be used. All networking performance counters are enabled or disabled with a single setting in the configuration file. Individual networking performance counters cannot be enabled or disabled. For more information, see [\<performanceCounter> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/performancecounter-element-network-settings.md).  
+ Networking performance counters need to be enabled in the configuration file to be used. All networking performance counters are enabled or disabled with a single setting in the configuration file. Individual networking performance counters cannot be enabled or disabled. For more information, see [\<performanceCounter> Element (Network Settings)](../configure-apps/file-schema/network/performancecounter-element-network-settings.md).  
   
  If networking counters are enabled, this will create and update both per-AppDomain and global performance counters. If disabled, the application will not provide any networking performance counter data.  
   
@@ -231,7 +231,7 @@ for (int i = 0; i < Array.Length; i++)
   
 - ".NET CLR Networking 4.0.0.0" - All of the above socket counters plus the new performance counters supported on .NET Framework Version 4 and later. These new counters provide performance information on <xref:System.Net.HttpWebRequest> objects.  
   
- For more information on accessing and managing performance counters in an application, see [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md).  
+ For more information on accessing and managing performance counters in an application, see [Performance Counters](performance-counters.md).  
   
 <a name="security"></a>   
 ## Security performance counters  
@@ -247,5 +247,5 @@ for (int i = 0; i < Array.Length; i++)
   
 ## See also
 
-- [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)
-- [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md)
+- [Performance Counters](performance-counters.md)
+- [Runtime Profiling](runtime-profiling.md)

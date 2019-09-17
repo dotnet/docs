@@ -71,7 +71,7 @@ If you install Visual Studio with the **.NET Core cross-platform development** w
 
 If you're using the .NET Core CLI, the following [dotnet new](../../core/tools/dotnet-new.md) command creates a class library project that targets the .NET Standard 2.0:
 
-```
+```console
 dotnet new classlib
 ```
 
@@ -81,7 +81,7 @@ dotnet new classlib
 
 If you're using the .NET Core CLI, the following [dotnet new](../../core/tools/dotnet-new.md) command creates a class library project that targets the .NET Standard 2.0:
 
-```
+```console
 dotnet new classlib -lang vb
 ```
 

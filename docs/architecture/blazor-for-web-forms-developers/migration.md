@@ -19,6 +19,10 @@ available on [Github](https://github.com/dotnet-architecture/eShopOnBlazor).
 This application is a simple catalog service that provides CRUD capabilities and
 form entry and validation.
 
+## Choosing server side vs client side
+
+[ TBD ]
+
 ## Create a new project
 
 This initial step to begin is to create a new project. This project type is based on the SDK style projects of .NET Core and simplifies much of the boiler plate that was used in previous project formats. For more detail, please see the chapter on [Project Structure](./project-structure).

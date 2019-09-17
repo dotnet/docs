@@ -3,7 +3,7 @@ title: Migrating from ASP.NET Web Forms to Blazor
 description: How to approach migrating an existing ASP.NET Web Forms app to Blazor
 author: twsouthwick
 ms.author: tasou
-ms.date: 09/11/2019
+ms.date: 09/17/2019
 ---
 
 # Migrating from ASP.NET Web Forms to Blazor
@@ -126,7 +126,7 @@ features that are only available on Windows that developers will want to use.
 Systems such as registry, WMI, and directory services that are only available in
 Windows can be made available by installing this compatibility pack. This
 package adds around 20,000 APIs and lights up many services that may be familiar
-to you. The eShop project does not use this, but if your projects use Windows
+to you. The eShop project does not require this, but if your projects use Windows
 specific features, this package will greatly help in migration.
 
 ## Enable startup process
@@ -143,6 +143,159 @@ eShop project, this is where the IoC container is set up and populated, as well
 as hooking into various lifetime cycles of the application or request. Some of
 these events are handled with middleware (such as `Application_BeginRequest`)
 while others require overriding specific services via dependency injection.
+
+By way of example, the `Global.asax.cs` for the eShop, looks like the following:
+
+```csharp
+public class Global : HttpApplication, IContainerProviderAccessor
+{
+    private static readonly ILog _log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+    static IContainerProvider _containerProvider;
+    IContainer container;
+
+    public IContainerProvider ContainerProvider
+    {
+        get { return _containerProvider; }
+    }
+
+    protected void Application_Start(object sender, EventArgs e)
+    {
+        // Code that runs on application startup
+        RouteConfig.RegisterRoutes(RouteTable.Routes);
+        BundleConfig.RegisterBundles(BundleTable.Bundles);
+        ConfigureContainer();
+        ConfigDataBase();
+    }
+
+    /// <summary>
+    /// Track the machine name and the start time for the session inside the current session
+    /// </summary>
+    protected void Session_Start(Object sender, EventArgs e)
+    {
+        HttpContext.Current.Session["MachineName"] = Environment.MachineName;
+        HttpContext.Current.Session["SessionStartTime"] = DateTime.Now;
+    }
+
+    /// <summary>
+    /// http://docs.autofac.org/en/latest/integration/webforms.html
+    /// </summary>
+    private void ConfigureContainer()
+    {
+        var builder = new ContainerBuilder();
+        var mockData = bool.Parse(ConfigurationManager.AppSettings["UseMockData"]);
+        builder.RegisterModule(new ApplicationModule(mockData));
+        container = builder.Build();
+        _containerProvider = new ContainerProvider(container);
+    }
+
+    private void ConfigDataBase()
+    {
+        var mockData = bool.Parse(ConfigurationManager.AppSettings["UseMockData"]);
+
+        if (!mockData)
+        {
+            Database.SetInitializer<CatalogDBContext>(container.Resolve<CatalogDBInitializer>());
+        }
+    }
+
+    protected void Application_BeginRequest(object sender, EventArgs e)
+    {
+        //set the property to our new object
+        LogicalThreadContext.Properties["activityid"] = new ActivityIdHelper();
+
+        LogicalThreadContext.Properties["requestinfo"] = new WebRequestInfo();
+
+        _log.Debug("Application_BeginRequest");
+    }
+}
+```
+
+This is transformed to the following for server-sided Blazor:
+
+```csharp
+   public class Startup
+    {
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
+        {
+            Configuration = configuration;
+            Env = env;
+        }
+
+        public IConfiguration Configuration { get; }
+
+        public IWebHostEnvironment Env { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddRazorPages();
+            services.AddServerSideBlazor();
+
+            if (Configuration.GetValue<bool>("UseMockData"))
+            {
+                services.AddSingleton<ICatalogService, CatalogServiceMock>();
+            }
+            else
+            {
+                services.AddScoped<ICatalogService, CatalogService>();
+                services.AddScoped<IDatabaseInitializer<CatalogDBContext>, CatalogDBInitializer>();
+                services.AddSingleton<CatalogItemHiLoGenerator>();
+                services.AddScoped(_ => new CatalogDBContext(Configuration.GetConnectionString("CatalogDBContext")));
+            }
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+        {
+            loggerFactory.AddLog4Net("log4Net.xml");
+
+            if (Env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+            }
+
+            // Middlware for Application_BeginRequest
+            app.Use((ctx, next) =>
+            {
+                LogicalThreadContext.Properties["activityid"] = new ActivityIdHelper(ctx);
+                LogicalThreadContext.Properties["requestinfo"] = new WebRequestInfo(ctx);
+                return next();
+            });
+
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapBlazorHub();
+                endpoints.MapFallbackToPage("/_Host");
+            });
+
+            ConfigDataBase(app);
+        }
+
+        private void ConfigDataBase(IApplicationBuilder app)
+        {
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                var initializer = scope.ServiceProvider.GetService<IDatabaseInitializer<CatalogDBContext>>();
+
+                if (initializer != null)
+                {
+                    Database.SetInitializer(initializer);
+                }
+            }
+        }
+    }
+}
+```
 
 One of the big changes you may notice coming from Web Forms is how pervasive the
 concept of dependency injection is. This has been a guiding principle in the
@@ -168,6 +321,12 @@ be registered and process incoming requests. Instead of configuring handlers and
 modules in `web.config` and being processed based on application life cycle
 events, middleware is registered in the startup and is executed in the order in
 which they are registered.
+
+In the section above, there was a life cycle event that is raised by Web Forms
+as the `Application_BeginRequest` method. This is not available in ASP.NET Core,
+so one way to achieve this is by implementing middleware as seen in the
+Startup.cs example above. This middleware does the same logic and then just
+passes control onto the next handler in the middleware pipeline.
 
 For more details on how to migrate a modules and handlers, please see the
 following
@@ -200,17 +359,319 @@ details on how to enable it.
 
 ## Migrate runtime bundling and minification setup
 
-[ TBD: Include link to doc ]
+Bundling and minification are common steps to reduce the number and size of
+requests that must be made to retrieve certain kinds of files. JavaScript and
+CSS often undergo some form of bundling or minification before being sent to the
+client. In ASP.NET Web Forms, this was performed at runtime by convention in a
+`BundleConfig` file. In ASP.NET Core, this has been changed to be more
+declarative by defining a file that has the files that need to be minified, as
+well as any options associated with that.
+
+For more details on this, please see the [documentation](https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification).
 
 ## Migrate .aspx pages
 
-[ TBD: include routing ]
+A page in a Web Forms application is a file that ends with `.aspx`. Often, these
+can be mapped to a component in Blazor, which is written in a file with the
+`.razor` extension. For the eShop project, there are five main pages that are
+each converted to a razor page.
+
+For example, the details view is contained in `Details.aspx`, `Details.aspx.cs`,
+`Details.aspx.designer.cs` in the Web Forms project. When converting to Blazor,
+the code behind and markup are combined into `Details.razor` and any razor
+compilation (equivalent to what is in `*.designer.cs` files) is kept in the
+`obj` directory and not directly viewable in the solution explorer. The web
+forms looks like the following:
+
+```
+<%@ Page Title="Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Details" %>
+
+<asp:Content ID="Details" ContentPlaceHolderID="MainContent" runat="server">
+    <h2 class="esh-body-title">Details</h2>
+
+    <div class="container">
+        <div class="row">
+            <asp:Image runat="server" CssClass="col-md-6 esh-picture" ImageUrl='<%#"/Pics/" + product.PictureFileName%>' />
+            <dl class="col-md-6 dl-horizontal">
+                <dt>Name
+                </dt>
+
+                <dd>
+                    <asp:Label runat="server" Text='<%#product.Name%>' />
+                </dd>
+
+                <dt>Description
+                </dt>
+
+                <dd>
+                    <asp:Label runat="server" Text='<%#product.Description%>' />
+                </dd>
+
+                <dt>Brand
+                </dt>
+
+                <dd>
+                    <asp:Label runat="server" Text='<%#product.CatalogBrand.Brand%>' />
+                </dd>
+
+                <dt>Type
+                </dt>
+
+                <dd>
+                    <asp:Label runat="server" Text='<%#product.CatalogType.Type%>' />
+                </dd>
+                <dt>Price
+                </dt>
+
+                <dd>
+                    <asp:Label CssClass="esh-price" runat="server" Text='<%#product.Price%>' />
+                </dd>
+
+                <dt>Picture name
+                </dt>
+
+                <dd>
+                    <asp:Label runat="server" Text='<%#product.PictureFileName%>' />
+                </dd>
+
+                <dt>Stock
+                </dt>
+
+                <dd>
+                    <asp:Label runat="server" Text='<%#product.AvailableStock%>' />
+                </dd>
+
+                <dt>Restock
+                </dt>
+
+                <dd>
+                    <asp:Label runat="server" Text='<%#product.RestockThreshold%>' />
+                </dd>
+
+                <dt>Max stock
+                </dt>
+
+                <dd>
+                    <asp:Label runat="server" Text='<%#product.MaxStockThreshold%>' />
+                </dd>
+
+            </dl>
+        </div>
+
+        <div class="form-actions no-color esh-link-list">
+            <a runat="server" href='<%# GetRouteUrl("EditProductRoute", new {id =product.Id}) %>' class="esh-link-item">Edit
+            </a>
+            |
+            <a runat="server" href="~" class="esh-link-item">Back to list
+            </a>
+        </div>
+
+    </div>
+</asp:Content>
+```
+
+with code behind including the following:
+
+```csharp
+using eShopLegacyWebForms.Models;
+using eShopLegacyWebForms.Services;
+using log4net;
+using System;
+using System.Web.UI;
+
+namespace eShopLegacyWebForms.Catalog
+{
+    public partial class Details : System.Web.UI.Page
+    {
+        private static readonly ILog _log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+        protected CatalogItem product;
+
+        public ICatalogService CatalogService { get; set; }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            var productId = Convert.ToInt32(Page.RouteData.Values["id"]);
+            _log.Info($"Now loading... /Catalog/Details.aspx?id={productId}");
+            product = CatalogService.FindCatalogItem(productId);
+
+            this.DataBind();
+        }
+    }
+}
+```
+
+When converted to Blazor, this becomes the following:
+
+```html
+@page "/Catalog/Details/{id:int}"
+@inject ICatalogService CatalogService
+@inject ILogger<Details> Logger
+
+<h2 class="esh-body-title">Details</h2>
+
+<div class="container">
+    <div class="row">
+        <img class="col-md-6 esh-picture" src="@($"/Pics/{_item.PictureFileName}")">
+
+        <dl class="col-md-6 dl-horizontal">
+            <dt>
+                Name
+            </dt>
+
+            <dd>
+                @_item.Name
+            </dd>
+
+            <dt>
+                Description
+            </dt>
+
+            <dd>
+                @_item.Description
+            </dd>
+
+            <dt>
+                Brand
+            </dt>
+
+            <dd>
+                @_item.CatalogBrand.Brand
+            </dd>
+
+            <dt>
+                Type
+            </dt>
+
+            <dd>
+                @_item.CatalogType.Type
+            </dd>
+            <dt>
+                Price
+            </dt>
+
+            <dd>
+                @_item.Price
+            </dd>
+
+            <dt>
+                Picture name
+            </dt>
+
+            <dd>
+                @_item.PictureFileName
+            </dd>
+
+            <dt>
+                Stock
+            </dt>
+
+            <dd>
+                @_item.AvailableStock
+            </dd>
+
+            <dt>
+                Restock
+            </dt>
+
+            <dd>
+                @_item.RestockThreshold
+            </dd>
+
+            <dt>
+                Max stock
+            </dt>
+
+            <dd>
+                @_item.MaxStockThreshold
+            </dd>
+
+        </dl>
+    </div>
+
+    <div class="form-actions no-color esh-link-list">
+        <a href="@($"/Catalog/Edit/{_item.Id}")" class="esh-link-item">
+            Edit
+        </a>
+        |
+        <a href="/" class="esh-link-item">
+            Back to list
+        </a>
+    </div>
+
+</div>
+
+@code {
+    private CatalogItem _item;
+
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Logger.LogInformation("Now loading... /Catalog/Details/{Id}", Id);
+
+        _item = CatalogService.FindCatalogItem(Id);
+    }
+}
+```
+
+Notice how the code and markup are in the same file and that any injected
+services can be added with the `@inject` attribute. This page is defined to be
+at the *Catalog/Details/{id}* route, where the *id* must be an integer. As
+described in the [routing](./pages-routings.md) section, unlike Web Forms, a
+razor component explicitly states its route and any parameters that is included.
+Many of the controls that are defined in Web Forms may not have an exact
+counterpart in Blazor, but often there is an equivalent HTML snippet that will
+perform the same thing, such as `asp:Label` being plain text.
+
+### Model validation in Blazor
+
+If your code includes validation, then you can transfer much of what you have in
+WebForms and have it work with little to no change. A benefit to running in
+Blazor is that the same validation logic can be run without needing custom
+JavaScript. By using DataAnnotations, models can get easy validation.
+
+For example, the `Create.aspx` page has a data entry form with validation. An
+example snippet would look like this:
+
+```html
+<div class="form-group">
+    <label class="control-label col-md-2">Name</label>
+    <div class="col-md-3">
+        <asp:TextBox ID="Name" runat="server" CssClass="form-control"></asp:TextBox>
+        <asp:RequiredFieldValidator runat="server" ControlToValidate="Name" Display="Dynamic"
+            CssClass="field-validation-valid text-danger" ErrorMessage="The Name field is required." />
+    </div>
+</div>
+```
+
+In Blazor, the equivalent in `Create.razor` looks like the following:
+
+```html
+<EditForm Model="_item" OnValidSubmit="@...">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Name</label>
+        <div class="col-md-3">
+            <InputText class="form-control" @bind-Value="_item.Name" />
+            <ValidationMessage For="(() => _item.Name)" />
+        </div>
+    </div>
+    
+    ...
+</EditForm>
+```
+
+The `EditForm` context can be wrapped around input and has support for
+validation. Since DataAnnotations are a common way to add validation, that can
+be added via the `DataAnnotationsValidator`. This mechanism is very powerful and
+more details can be found in the [forms
+validation](https://docs.microsoft.com/aspnet/core/blazor/forms-validation)
+documentation.
 
 ## Migrate built-in Web Forms controls
-
-[ TBD ]
-
-## Migrate user controls
 
 [ TBD ]
 
@@ -254,6 +715,9 @@ shouldn't be. With Blazor on ASP.NET Core, the configuration can be defined as:
 
 ```json
 {
+  "ConnectionStrings": {
+    "CatalogDBContext": "Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=Microsoft.eShopOnContainers.Services.CatalogDb; Integrated Security=True; MultipleActiveResultSets=True;"
+  },
   "UseMockData": true,
   "UseCustomizationData": false
 }
@@ -284,4 +748,27 @@ more details on customizing this as well as in-depth exploration, see the follow
 
 ## Architectural changes
 
-[ TBD ]
+Finally, there are some architectural differences that are important to consider
+when migrating to Blazor. Many of these changes are applicable to anything based
+on .NET Core or ASP.NET Core.
+
+Since Blazor is built on .NET Core, there are considerations in ensuring support on .NET Core. Some of the major changes here include removal of the following features:
+
+- Multiple AppDomains
+- Remoting
+- Code Access Security (CAS)
+- Security Transparency
+
+There are many techniques to identify what changes may be needed to support running on .NET Core which are documented [https://docs.microsoft.com/dotnet/core/porting](here).
+
+ASP.NET Core is a very different framework than ASP.NET and has some changes that may not initially seem obvious. The main changes are:
+
+- No synchronization context. This means there is no `HttpContext.Current`, `Thread.CurrentPrinciple` or other static accessors
+- No shadow copying
+- No request queue
+
+Many operations in ASP.NET Core are asynchronous which allows easier off-loading of I/O bound tasks. It is important to never block by using `Task.Wait()` or `Task.GetResult()` which can quickly exhaust threadpool resources.
+
+## Migration Conclusion
+
+At this point, we have walked through many examples of what it takes to move a Web Forms project to Blazor. For a full example, please see the [eShopOnBlazor](https://github.com/dotnet-architecture/eShopOnBlazor) project.

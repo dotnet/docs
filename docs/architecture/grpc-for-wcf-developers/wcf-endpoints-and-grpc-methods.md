@@ -7,7 +7,12 @@ ms.date: 09/02/2019
 
 # WCF endpoints and gRPC methods
 
-In WCF you write your application code in a class and decorate methods with the `OperationContract` attribute, or declare an interface for the service and add `OperationContract` attributes to the interface. For example, the WCF equivalent of the `greet.proto` Greeter service might be written as follows.
+In WCF, when you're writing your application code, you use one of the following methods:
+
+- You write the application code in a class and decorate methods with the [OperationContract](xref:System.ServiceModel.OperationContractAttribute) attribute.
+- You declare an interface for the service and add [OperationContract](xref:System.ServiceModel.OperationContractAttribute) attributes to the interface.
+
+For example, the WCF equivalent of the `greet.proto` Greeter service might be written as follows:
 
 ```csharp
 [ServiceContract]
@@ -22,21 +27,21 @@ Chapter 3 showed that Protobuf message definitions are used to generate data cla
 
 ## OperationContract properties
 
-The `OperationContract` attribute has properties to control or refine how it works. gRPC methods don’t offer this type of control. The following table sets out those `OperationContract` properties and how the functionality they specify is (or isn’t) dealt with in gRPC.
+The [OperationContract](xref:System.ServiceModel.OperationContractAttribute) attribute has properties to control or refine how it works. gRPC methods don’t offer this type of control. The following table sets out those `OperationContract` properties and how the functionality they specify is (or isn’t) dealt with in gRPC:
 
 | `OperationContract` property | gRPC                                             |
 | ---------------------------- | ------------------------------------------------ |
-| Action                       | SOAP-related, no meaning in gRPC                 |
-| AsyncPattern                 | All gRPC service methods return Tasks            |
-| HasProtectionLevel           | No message encryption; network encryption handled at the transport layer (TLS over HTTP/2) |
-| IsInitiating                 | See gRPC Streaming                               |
-| IsOneWay                     | One-way gRPC methods return Empty results        |
-| IsTerminating                | See gRPC Streaming                               |
-| Name                         | SOAP-related, no meaning in gRPC                 |
-| ProtectionLevel              | No message encryption; network encryption handled at the transport layer (TLS over HTTP/2) |
-| ReplyAction                  | SOAP-related, no meaning in gRPC                 |
+| <xref:System.ServiceModel.OperationContractAttribute.Action>             | SOAP-related, no meaning in gRPC. |
+| <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern>       | All gRPC service methods return `Task` objects. |
+| <xref:System.ServiceModel.OperationContractAttribute.HasProtectionLevel> | No message encryption; network encryption handled at the transport layer (TLS over HTTP/2). |
+| <xref:System.ServiceModel.OperationContractAttribute.IsInitiating>       | See gRPC streaming. |
+| <xref:System.ServiceModel.OperationContractAttribute.IsOneWay>           | One-way gRPC methods return `Empty` results. |
+| <xref:System.ServiceModel.OperationContractAttribute.IsTerminating>      | See gRPC streaming. |
+| <xref:System.ServiceModel.OperationContractAttribute.Name>               | SOAP-related, no meaning in gRPC. |
+| <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel>    | No message encryption; network encryption handled at the transport layer (TLS over HTTP/2). |
+| <xref:System.ServiceModel.OperationContractAttribute.ReplyAction>        | SOAP-related, no meaning in gRPC. |
 
-See [chapter 6](authentication.md) for more information on gRPC security and encryption.
+For more information on gRPC security and encryption, see [chapter 6](authentication.md).
 
 >[!div class="step-by-step"]
 <!-->[Next](wcf-bindings.md)-->

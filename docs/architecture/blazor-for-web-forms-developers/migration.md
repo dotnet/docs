@@ -28,7 +28,8 @@ supported on a migrated app. This includes:
 - Performance improvements in the framework such as `Span<>`
 - Ability to run as web assembly
 - Cross-platform support for Linux and Mac
-- App-local deployment or shared framework deployment without impacting other applications
+- App-local deployment or shared framework deployment without impacting other
+  applications
 
 If these (or other new features) are compelling enough, there may be value in
 migrating the application. This migration can take different shapes; it can be
@@ -38,7 +39,24 @@ are attempting to solve.
 
 ## Choosing server side vs client side
 
-[ TBD ]
+As described in the [hosting models chapter](./hosting-models.md), there are two
+ways to host a Blazor application. The first is server-side, while the other is
+client-side. The server-side uses SignalR connections to manage the DOM updates
+while running any actual code on the server. The client-side hosting runs as
+WebAssembly within a browser and requires no server connections.  There are a
+number of differences that may affect which is best for a specific application:
+
+- Running as WebAssembly is still in development and may not support all
+  features (such as threading) at the current time
+- Chatty communication between the client and server may cause latency issues in
+  server-side mode
+- Access to databases and internal or protected services require a separate
+  service with client side hosting
+
+At the time of writing, the server side model is a much closer model to what you
+may be familiar with as a Web Forms developer. Most of the discussion in this
+chapter will focus on server side hosting as that is both more production ready
+at this time and maps easier to Web Forms.
 
 ## Create a new project
 
@@ -113,15 +131,72 @@ specific features, this package will greatly help in migration.
 
 ## Enable startup process
 
-[ TBD ]
+The startup process for Blazor has changed from Web Forms and follows a similar
+set up for other ASP.NET Core services. When hosted server side, the Blazor
+components are run as part of a normal ASP.NET Core application. When hosted in
+the browser with WebAssembly, the Blazor component uses a similar hosting model
+but is run as a separate service from any of the backend processes. Either way,
+the start up is similar.
+
+The `Global.asax.cs` file is the normal start up page for Web Forms. In the
+eShop project, this is where the IoC container is set up and populated, as well
+as hooking into various lifetime cycles of the application or request. Some of
+these events are handled with middleware (such as `Application_BeginRequest`)
+while others require overriding specific services via dependency injection.
+
+One of the big changes you may notice coming from Web Forms is how pervasive the
+concept of dependency injection is. This has been a guiding principle in the
+design of ASP.NET Core and allows for customization of almost all aspects of the
+ASP.NET Core framework. There is even a built-in service provider that can be
+used out of the box that works for many scenarios. If more customization is
+required, or a framework is already being used, then it can easily be supported
+by many of the community extensions. 
+
+In the original eShop application, you may see that there is some configuration
+for session management. Since server-side Blazor uses SignalR for communication,
+session is not supported as the connections may occur independent of an HTTP
+context. In cases where an application makes use of session, they must be
+rearchitected in order to run as a Blazor application.
+
+For more details about application startup, refer to the following chapter: [App Startup](./app-startup.md).
 
 ## Migrate HTTP modules and handlers to middleware
 
-[ TBD: Link to current doc ]
+HTTP modules and handlers are common patterns in Web Forms to control the
+request pipeline. Classes that implement `IHttpModule` or `IHttpHandler` could
+be registered and process incoming requests. Instead of configuring handlers and
+modules in `web.config` and being processed based on application life cycle
+events, middleware is registered in the startup and is executed in the order in
+which they are registered.
+
+For more details on how to migrate a modules and handlers, please see the
+following
+[documentation](https://docs.microsoft.com/aspnet/core/migration/http-modules).
 
 ## Migrate static files
 
-[ TBD: Include link to doc ]
+In order to serve any static files (be they HTML, CSS, images, JavaScript or
+other), they must be exposed by middleware. By using the `UseStaticFiles`
+method, the web root will be exposed for static access. This web root, by
+default is *wwwroot*, but can be customized. As can be seen in the startup for
+eShop, this is very simple:
+
+```csharp
+public void Configure(IApplicationBuilder app)
+{
+    ...
+
+    app.UseStaticFiles();
+
+    ...
+}
+```
+
+There are many customizations available for this if needed. The eShop project
+doesn't need more than simple static file access, but if you require features
+such as default files or a file browser, see
+[this](https://docs.microsoft.com/aspnet/core/fundamentals/static-files) for
+details on how to enable it.
 
 ## Migrate runtime bundling and minification setup
 
@@ -145,11 +220,67 @@ specific features, this package will greatly help in migration.
 
 ## Migrate config
 
-[ TBD: Include link]
+In a Web Forms application, the most common way to get configuration into a
+project was via `web.config`. This was then surfaced through
+`ConfigurationManager` and services were generally required to parse any object
+their when they need it. With .NET Framework 4.7.2, composability was added to
+configuration via `ConfigurationBuilders`. These builders allowed developers to
+add various sources for configuration that was then composed at run time to
+bring in all the necessary values. ASP.NET Core introduced a new configuration
+system that allows you as a developer to define whatever source makes most sense
+to your application and deployment. The `ConfigurationBuilder` infrastructure
+that you may be using in your Web Forms application was modeled after the
+concepts used in the ASP.NET Core configuration system.
 
-## Integrate dependency injection
+The eShop project used `web.config` to store config values as seen below:
 
-[ TBD ]
+```xml
+<configuration>
+  <configSections>
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+  </configSections>
+  <connectionStrings>
+    <add name="CatalogDBContext" connectionString="Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=Microsoft.eShopOnContainers.Services.CatalogDb; Integrated Security=True; MultipleActiveResultSets=True;" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <appSettings>
+    <add key="UseMockData" value="true" />
+    <add key="UseCustomizationData" value="false" />
+  </appSettings>
+```
+
+This system is useable, but it was common for secrets, such as a connection
+string, to be stored within the `web.config` and then persisted where it
+shouldn't be. With Blazor on ASP.NET Core, the configuration can be defined as:
+
+```json
+{
+  "UseMockData": true,
+  "UseCustomizationData": false
+}
+```
+
+By default, json is used, but xml or any other format could be used. Many are
+available out of the box and more through the community. In the startup class,
+you may see that the constructor takes an `IConfiguration`:
+
+```csharp
+public class Startup
+{
+    public Startup(IConfiguration configuration, IWebHostEnvironment env)
+    {
+        Configuration = configuration;
+        Env = env;
+    }
+
+    ...
+}
+```
+
+By default, environment variables, json and command line options are used to
+construct the configuration object. These can then be access via
+`Configuration[key]` or can be bound to objects using the options framework. For
+more details on customizing this as well as in-depth exploration, see the following
+[documentation](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/).
 
 ## Architectural changes
 

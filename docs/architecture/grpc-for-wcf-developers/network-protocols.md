@@ -17,7 +17,7 @@ The following list shows some of the key features and advantages of HTTP/2:
 
 ### Binary protocol
 
-Request/response cycles no longer need text commands. This simplifies and speeds up implementation of commands. Specifically, parsing data is faster and uses less memory, network latency is reduced with obvious related improvements to speed and there's an overall better use of network resources.
+Request/response cycles no longer need text commands. This simplifies and speeds up implementation of commands. Specifically, parsing data is faster and uses less memory, network latency is reduced with obvious related improvements to speed, and there's an overall better use of network resources.
 
 ### Server push
 

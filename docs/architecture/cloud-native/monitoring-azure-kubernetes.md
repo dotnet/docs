@@ -5,7 +5,7 @@ ms.date: 06/30/2019
 ---
 # Monitoring in Azure Kubernetes Services
 
-The built-in logging in Kubernetes is somewhat primitive. However there are some great options for getting the logs out of Kubernetes and into a place where they can be properly analyzed. If you need to monitor your AKS cluster(s), configuring Elastic Stack for Kubernetes is a great solution.
+The built-in logging in Kubernetes is primitive. However there are some great options for getting the logs out of Kubernetes and into a place where they can be properly analyzed. If you need to monitor your AKS cluster(s), configuring Elastic Stack for Kubernetes is a great solution.
 
 ## Elastic Stack
 
@@ -29,7 +29,7 @@ Azure Container Monitoring supports consuming logs from not just Kubernetes but 
 ![Consuming logs from various containers](media/containers-diagram.png)
 **Figure 7-7**.  Consuming logs from various containers
 
-Log and metric information is gathered not just from the containers running in the cluster but also from the cluster hosts themselves. This allows correlating log information from the two making it much easier to track down an error.
+Log and metric information is gathered not just from the containers running in the cluster but also from the cluster hosts themselves. It allows correlating log information from the two making it much easier to track down an error.
 
 Installing the log collectors differs on [Windows](https://docs.microsoft.com/azure/azure-monitor/insights/containers#configure-a-log-analytics-windows-agent-for-kubernetes) and [Linux](https://docs.microsoft.com/azure/azure-monitor/insights/containers#configure-a-log-analytics-linux-agent-for-kubernetes)
  clusters. But in both cases the log collection is implemented as a Kubernetes [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), meaning that the log collector is run as a container on each of the nodes.

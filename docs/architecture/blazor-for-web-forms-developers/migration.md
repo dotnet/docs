@@ -111,7 +111,7 @@ specific features, this package will greatly help in migration.
 
 [ TBD: include routing ]
 
-## Blazor components
+## Blazor components available out of the box
 
 [ TBD ]
 

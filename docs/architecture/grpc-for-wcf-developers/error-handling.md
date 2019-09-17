@@ -9,17 +9,17 @@ ms.date: 09/02/2019
 
 WCF uses `FaultException<T>` and `FaultContract` to provide detailed error information, including supporting the SOAP Fault standard.
 
-Unfortunately, the current version of gRPC lacks the sophistication found with WCF and only has limited built-in error handling based on simple status codes and metadata. The following table is a quick guide to the most commonly-used status codes.
+Unfortunately, the current version of gRPC lacks the sophistication found with WCF and only has limited built-in error handling based on simple status codes and metadata. The following table is a quick guide to the most commonly used status codes:
 
 | Status Code | Problem |
 | ----------- | ------- |
-| GRPC_STATUS_UNIMPLEMENTED | Method hasn’t been written |
-| GRPC_STATUS_UNAVAILABLE | Problem with the whole service |
-| GRPC_STATUS_UNKNOWN | Invalid response |
-| GRPC_STATUS_INTERNAL | Problem with encoding/decoding |
-| GRPC_STATUS_UNAUTHENTICATED | Authentication Failed |
-| GRPC_STATUS_PERMISSION_DENIED | Authorization Failed |
-| GRPC_STATUS_CANCELLED | Call was cancelled, usually by the caller |
+| `GRPC_STATUS_UNIMPLEMENTED` | Method hasn’t been written. |
+| `GRPC_STATUS_UNAVAILABLE` | Problem with the whole service. |
+| `GRPC_STATUS_UNKNOWN` | Invalid response. |
+| `GRPC_STATUS_INTERNAL` | Problem with encoding/decoding. |
+| `GRPC_STATUS_UNAUTHENTICATED` | Authentication failed. |
+| `GRPC_STATUS_PERMISSION_DENIED` | Authorization failed. |
+| `GRPC_STATUS_CANCELLED` | Call was canceled, usually by the caller. |
 
 ## Raising errors in ASP.NET Core gRPC
 
@@ -42,7 +42,7 @@ public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request
 
 ## Catching errors in gRPC clients
 
-Just like WCF clients can catch `FaultException<T>` errors, a gRPC client can catch an `RpcException` to handle errors. Although `RpcException` is not a generic type, so you can't catch different error types in different blocks, you can use C#'s *exception filters* feature to declare separate `catch` blocks for different status codes.
+Just like WCF clients can catch <xref:System.ServiceModel.FaultException%601> errors, a gRPC client can catch an `RpcException` to handle errors. Since `RpcException` isn't a generic type, you can't catch different error types in different blocks, but you can use C#'s *exception filters* feature to declare separate `catch` blocks for different status codes, as shown in the following example:
 
 ```csharp
 try
@@ -54,7 +54,10 @@ catch (RpcException ex) when (ex.StatusCode == StatusCode.PermissionDenied)
     var userEntry = ex.Trailers.FirstOrDefault(e => e.Key == "User");
     Console.WriteLine($"User '{userEntry.Value}' does not have permission to view this portfolio.");
 }
-catch (RpcException) // Handle any other error type ...
+catch (RpcException) 
+{
+    // Handle any other error type ...
+}
 ```
 
 > [!IMPORTANT]
@@ -62,7 +65,7 @@ catch (RpcException) // Handle any other error type ...
 
 ## gRPC Richer Error Model
 
-Looking ahead, Google has developed a [richer error model](https://cloud.google.com/apis/design/errors#error_model) that is more like WCF's `FaultContract`, which is not yet supported in C#. Currently, it is only available for Go, Java, Python and C++ but is expected to be supported in C# within the next year.
+Looking ahead, Google has developed a [richer error model](https://cloud.google.com/apis/design/errors#error_model) that is more like WCF's [FaultContract](xref:System.ServiceModel.FaultContractAttribute), but isn't supported in C# yet. Currently, it's only available for Go, Java, Python and C++, but support for C# is expected to come next year.
 
 >[!div class="step-by-step"]
 <!-->[Next](ws-protocols.md)-->

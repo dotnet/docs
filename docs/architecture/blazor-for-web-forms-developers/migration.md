@@ -19,6 +19,23 @@ available on [Github](https://github.com/dotnet-architecture/eShopOnBlazor).
 This application is a simple catalog service that provides CRUD capabilities and
 form entry and validation.
 
+As a developer with a working application, there may be questions as to why
+there's a need to migrate to Blazor at all. This is a valid question. Many
+times, there is no need; ASP.NET Web Forms will continue to be supported for
+many years. However, many of the features that Blazor provides will only be
+supported on a migrated app. This includes:
+
+- Performance improvements in the framework such as `Span<>`
+- Ability to run as web assembly
+- Cross-platform support for Linux and Mac
+- App-local deployment or shared framework deployment without impacting other applications
+
+If these (or other new features) are compelling enough, there may be value in
+migrating the application. This migration can take different shapes; it can be
+the entire application, or only certain endpoints that require the changes. The
+choice to migrate is ultimately up to the developer and the business needs they
+are attempting to solve.
+
 ## Choosing server side vs client side
 
 [ TBD ]

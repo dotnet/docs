@@ -1,6 +1,6 @@
 ---
 title: WCF bindings and transports - gRPC for WCF Developers
-description: Learn how the various WCF bindings and transports compare to gRPC.
+description: Learn how the different WCF bindings and transports compare to gRPC.
 author: markrendle
 ms.date: 09/02/2019
 ---

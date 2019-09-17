@@ -15,7 +15,7 @@ ASP.NET Core 3.0 is the first release of ASP.NET that natively supports gRPC as 
 
 As discussed in chapter 1, Google wanted to use the introduction of HTTP/2 to rework Stubby, its internal, general purpose RPC infrastructure. Stubby, renamed gRPC, now could take advantage of standardization and would extend its applicability to mobile computing, the cloud, and the Internet of Things.
 
-To achieve this, the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) established a set of principles that would govern gRPC. The following list shows the most relevant ones and they are mainly concerned with maximizing access and usability:
+To achieve this, the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) established a set of principles that would govern gRPC. The following list shows the most relevant ones that are mainly concerned with maximizing access and usability:
 
 - **Free and open** – All artifacts should be open source with licensing that doesn't constrain developers from adopting gRPC.
 - **Coverage and simplicity** – should be available across every popular platform and simple enough to build on any platform.

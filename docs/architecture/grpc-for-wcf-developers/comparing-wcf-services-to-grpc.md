@@ -7,7 +7,14 @@ ms.date: 09/02/2019
 
 # Comparing WCF to gRPC
 
-The previous chapter should have given you a good look at Protobuf and how messages are handled in gRPC.  Before working through a detailed conversion from WCF to gRPC, it is important to look at how the range of features currently available in WCF are handled in gRPC and what workarounds you can use when there does not appear to be a gRPC equivalent. In particular, this chapter will cover operations and methods, bindings and transports, types of RPC, metadata, error handling and the WS-* protocols.
+The previous chapter should have given you a good look at Protobuf and how gRPC handles messages. Before working through a detailed conversion from WCF to gRPC, it's important to look at how the range of features currently available in WCF are handled in gRPC and what workarounds you can use when there doesn't appear to be a gRPC equivalent. In particular, this chapter will cover the following subjects:
+
+- Operations and methods
+- Bindings and transports
+- RPC types
+- Metadata 
+- Error handling
+- WS-\* protocols
 
 ## gRPC example
 

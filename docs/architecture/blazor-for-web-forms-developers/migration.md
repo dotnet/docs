@@ -9,7 +9,7 @@ ms.date: 09/11/2019
 # Migrating from ASP.NET Web Forms to Blazor
 
 Migrating a code base from ASP.NET Web Forms to Blazor is one that requires
-planning and can take time. In this chapter We will go over the process for each
+planning and can take time. In this chapter, we will go over the process for each
 of these. One thing that can really help ease the transition is to ensure the
 application is adhering to an *n-tier* approach where the app model (in this
 case Web Forms) is separate from the business logic. Without this separation it
@@ -206,7 +206,7 @@ details on how to enable it.
 
 [ TBD: include routing ]
 
-## Blazor components available out of the box
+## Migrate built-in Web Forms controls
 
 [ TBD ]
 

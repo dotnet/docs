@@ -25,7 +25,7 @@ In this tutorial, you create three projects: a library project, tests for that l
 
 Start Visual Studio Code. Press <kbd>Ctrl</kbd>+<kbd>\`</kbd> (the backquote or backtick character) or select **View > Integrated Terminal** from the menu to open an embedded terminal in Visual Studio Code. You can still open an external shell with the Explorer **Open in Command Prompt** command (**Open in Terminal** on Mac or Linux) if you prefer to work outside of Visual Studio Code.
 
-Begin by creating a solution file, which serves as a container for one or more .NET Core projects. In the terminal, run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution *golden.sln* inside a new folder named golden:
+Begin by creating a solution file, which serves as a container for one or more .NET Core projects. In the terminal, run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution *golden.sln* inside a new folder named *golden*:
 
 ```console
 dotnet new sln -o golden

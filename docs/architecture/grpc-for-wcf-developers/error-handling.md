@@ -19,6 +19,7 @@ Unfortunately, the current version of gRPC lacks the sophistication found with W
 | GRPC_STATUS_INTERNAL | Problem with encoding/decoding |
 | GRPC_STATUS_UNAUTHENTICATED | Authentication Failed |
 | GRPC_STATUS_PERMISSION_DENIED | Authorization Failed |
+| GRPC_STATUS_CANCELLED | Call was cancelled, usually by the caller |
 
 ## Raising errors in ASP.NET Core gRPC
 

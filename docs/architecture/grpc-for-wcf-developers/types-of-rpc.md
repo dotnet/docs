@@ -64,39 +64,42 @@ gRPC services can work with streams of messages, in either or both directions. T
 Here is an example of a server streaming RPC.
 
 ```protobuf
-service ThingStreamer {
-    rpc Subscribe(SubscribeRequest) returns (stream Thing);
+service ClockStreamer {
+    rpc Subscribe(ClockSubscribeRequest) returns (stream ClockMessage);
 }
 ```
 
 ```csharp
+public class ClockStreamerService : ClockStreamer.ClockStreamerBase
 {
-    public class ThingStreamerService : ThingStreamer.ThingStreamerBase
+    public override async Task Subscribe(ClockSubscribeRequest request,
+        IServerStreamWriter<ClockMessage> responseStream,
+        ServerCallContext context)
     {
-        public override async Task Subscribe(SubscribeRequest request,
-            IServerStreamWriter<Thing> responseStream,
-            ServerCallContext context)
+        while (!context.CancellationToken.IsCancellationRequested)
         {
-            while (!context.CancellationToken.IsCancellationRequested)
-            {
-                var thing = await _things.GetNext();
-                await responseStream.WriteAsync(new Thing { name = thing.Name});
-            }
+            var time = DateTimeOffset.UtcNow;
+            await responseStream.WriteAsync(new ClockMessage { message = $"The time is {time:t}." });
+            await Task.Delay(TimeSpan.FromSeconds(10), context.CancellationToken);
         }
     }
 }
 ```
 
-```csharp
-public async Task GetThingsAsync(CancellationToken token)
-{
-    var request = new SubscribeRequest();
-    var response = _thingsClient.Subscribe(request);
+This server stream could be consumed from a client application as shown here.
 
-    while (await response.ResponseStream.MoveNext(token))
+```csharp
+public async Task TellTheTimeAsync(CancellationToken token)
+{
+    var channel = GrpcChannel.ForAddress("https://localhost:5001");
+    var client = new ClockStreamer.ClockStreamerClient(channel);
+
+    var request = new ClockSubscribeRequest();
+    var response = client.Subscribe(request);
+
+    await foreach (var update in response.ResponseStream.ReadAllAsync(token))
     {
-        var update = response.ResponseStream.Current;
-        UpdateThingDisplay(update.Name);
+        Console.WriteLine(update.Message);
     }
 }
 ```
@@ -127,6 +130,7 @@ service ThingLog {
 ```csharp
 public class ThingLogService : Protos.ThingLog.ThingLogBase
 {
+    private static readonly ConnectionClosedResponse EmptyResponse = new ConnectionClosedResponse();
     private readonly ILogger<ThingLogService> _logger;
     public ThingLogService(ILogger<ThingLogService> logger)
     {
@@ -139,7 +143,7 @@ public class ThingLogService : Protos.ThingLog.ThingLogBase
         {
             _logger.LogInformation(requestStream.Current.Description);
         }
-        return new ConnectionClosedResponse();
+        return EmptyResponse;
     }
 }
 ```
@@ -249,9 +253,8 @@ public class Chat : IAsyncDisposable
 
     public async ValueTask DisposeAsync()
     {
-        _cancellationTokenSource.Cancel();
-        await _readTask;
         await _stream.RequestStream.CompleteAsync();
+        await _readTask;
         _stream.Dispose();
     }
 }

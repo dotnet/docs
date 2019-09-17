@@ -69,7 +69,7 @@ The gRPC template has helpfully created an example service for us, which was rev
 
 ### Rename and edit the proto file
 
-Go ahead and rename the `Protos/greet.proto` file to `Protos/portfolios.proto` and open it in your editor. Delete everything after the `package` line, then change the `option csharp_namespace`, `package` and `service` names as shown below.
+Go ahead and rename the `Protos/greet.proto` file to `Protos/portfolios.proto` and open it in your editor. Delete everything after the `package` line, then change the `option csharp_namespace`, `package` and `service` names, and remove the default `SayHello` service, so the code looks like this.
 
 ```protobuf
 syntax = "proto3";
@@ -79,7 +79,7 @@ option csharp_namespace = "TraderSys.Portfolios.Protos";
 package PortfolioServer;
 
 service Portfolios {
-
+  // RPCs will go here
 }
 ```
 

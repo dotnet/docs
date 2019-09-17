@@ -223,12 +223,9 @@ static async Task DisplayAsync(IAsyncStreamReader<StockTickerUpdate> stream, Can
             Console.WriteLine($"{update.Symbol}: {update.Price}");
         }
     }
-    catch (RpcException e)
+    catch (RpcException e) when (e.StatusCode == StatusCode.Cancelled)
     {
-        if (e.StatusCode == StatusCode.Cancelled)
-        {
-            return;
-        }
+        return;
     }
     catch (OperationCanceledException)
     {
@@ -466,7 +463,6 @@ When the window is closed and the `MainWindowViewModel` is disposed (from the `C
 ```csharp
 public ValueTask DisposeAsync()
 {
-    _cancellationTokenSource.Cancel();
     try
     {
         await _duplexStream.RequestStream.CompleteAsync().ConfigureAwait(false);

@@ -94,7 +94,7 @@ option csharp_namespace = "TraderSys.Portfolios.Protos";
 package PortfolioServer;
 
 service Portfolios {
-
+  // RPCs will go here
 }
 ```
 

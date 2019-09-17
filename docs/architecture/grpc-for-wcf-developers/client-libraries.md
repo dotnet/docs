@@ -87,6 +87,10 @@ public class GrpcStreamSubscription : IDisposable
             {
                 if (!await reader.MoveNext(token)) break;
             }
+            catch (RpcException e) when (e.StatusCode == Grpc.Core.StatusCode.NotFound)
+            {
+                break;
+            }
             catch (OperationCanceledException)
             {
                 break;

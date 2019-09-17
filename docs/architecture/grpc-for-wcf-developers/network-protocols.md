@@ -7,17 +7,17 @@ ms.date: 09/02/2019
 
 # Network protocols
 
-Unlike WCF, gRPC uses HTTP/2 as a base for its networking. This offers significant advantages over WCF and SOAP, which only operate on HTTP/1.1. For developers wanting to use gRPC, given that there's no alternative to HTTP/2, it would seem to be the ideal moment to explore HTTP/2 in more detail. This will in turn help to identify additional benefits to using gRPC.
+Unlike WCF, gRPC uses HTTP/2 as a base for its networking. This offers significant advantages over WCF and SOAP, which only operate on HTTP/1.1. For developers wanting to use gRPC, given that there's no alternative to HTTP/2, it would seem to be the ideal moment to explore HTTP/2 in more detail and identify additional benefits to using gRPC.
 
-HTTP/2, released by Internet Engineering Task Force in 2015, was derived from the experimental SPDY protocol, which was already being used by Google. It was specifically designed to be simpler, faster and more secure than HTTP/1.1.
+HTTP/2, released by Internet Engineering Task Force in 2015, was derived from the experimental SPDY protocol, which was already being used by Google. It was specifically designed to be simpler, faster, and more secure than HTTP/1.1.
 
 ## Key features of HTTP/2
 
-Some of the key features and advantages of HTTP/2 are discussed below.
+The following list shows some of the key features and advantages of HTTP/2:
 
 ### Binary protocol
 
-Request/response cycles no longer need text commands. This simplifies and speeds up implementation of commands. Specifically, parsing data is faster and uses less memory, network latency is reduced with obvious related improvements to speed and there's an overall better use of network resources.
+Request/response cycles no longer need text commands. This simplifies and speeds up implementation of commands. Specifically, parsing data is faster and uses less memory, network latency is reduced with obvious related improvements to speed, and there's an overall better use of network resources.
 
 ### Server push
 

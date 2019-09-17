@@ -5,19 +5,19 @@ author: markrendle
 ms.date: 09/02/2019
 ---
 
-# WS-* protocols
+# WS-\* protocols
 
-One of the real benefits of working with WCF was that it supported many of the existing *WS-\** standard protocols. In this section, we will briefly cover how these same WS-* protocols are managed in gRPC and, where there is no alternative, discuss what options are available.
+One of the real benefits of working with Windows Communication Foundation (WCF) was that it supported many of the existing _WS-\*_ standard protocols. This section will briefly cover how gRPC manages the same WS-\* protocols and discuss what options are available when there's no alternative.
 
-## Metadata Exchange - WS-Policy, WS-Discovery, etc
+## Metadata Exchange - WS-Policy, WS-Discovery, and so on
 
-SOAP services expose Web Services Description Language (WSDL) schema documents with information about data formats, operations, communication options etc. This could be used to generate Client code.
+SOAP services expose Web Services Description Language (WSDL) schema documents with information such as data formats, operations, or communication options. This could be used to generate the client code.
 
-gRPC works best when servers and clients are generated from the same `.proto` files, but a server reflection optional extension does provide a way to expose dynamic information from a running server. See the [Grpc.Reflection Nuget package](https://nuget.org/packages/Grpc.Reflection) and [the documentation](https://github.com/grpc/grpc/blob/master/doc/csharp/server_reflection.md)
+gRPC works best when servers and clients are generated from the same `.proto` files, but a server reflection optional extension does provide a way to expose dynamic information from a running server. For more information, see the [Grpc.Reflection](https://nuget.org/packages/Grpc.Reflection) NuGet package and the [gRPC C# Server Reflection](https://github.com/grpc/grpc/blob/master/doc/csharp/server_reflection.md) article.
 
-## Security – WS-Security, WS-Federation, XML Encryption, etc
+## Security – WS-Security, WS-Federation, XML Encryption, and so on
 
-We will cover security, authentication and authorization in much more detail in Chapter 6. But it is worth noting here that, unlike WCF, gRPC does not support WS-Security, WS Federation, or XML Encryption. Even so, gRPC offers greater security than WCF because all gRPC communications are automatically encrypted because of HTTP/2 TLS, and can use X509 certificates for mutual client/server authentication.
+Security, authentication, and authorization are covered in much more detail in Chapter 6. But it's worth noting here that, unlike WCF, gRPC doesn't support WS-Security, WS Federation, or XML Encryption. Even so, gRPC offers greater security than WCF because all gRPC communications are automatically encrypted because of HTTP/2 TLS, and can use X509 certificates for mutual client/server authentication.
 
 ## WS-ReliableMessaging
 
@@ -25,8 +25,7 @@ gRPC transport provides similar guarantees to WCF Reliable Sessions without any 
 
 ## WS-Transaction, WS-Coordination
 
-WCF’s implementation of distributed transactions uses Windows’ Microsoft Distributed Transaction Coordinator or MSDTC. It works with resource managers that specifically support it, like SQL Server, MSMQ, Windows file systems, etc. In the modern, open, cross-platform microservices world there is no equivalent. See Appendix A for a discussion of transactions.
-
+WCF’s implementation of distributed transactions uses Windows’ Microsoft Distributed Transaction Coordinator or MSDTC. It works with resource managers that specifically support it, like SQL Server, MSMQ, or Windows file systems. In the modern, open, cross-platform microservices world, there's no equivalent. For a discussion of transactions, see Appendix A.
 
 >[!div class="step-by-step"]
 <!-->[Next](migrating-wcf-to-grpc.md)-->

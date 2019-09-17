@@ -27,7 +27,7 @@ Here are some companies who have implemented these techniques. Think about the s
 | Company | Experience | 
 | :-------- | :-------- |
 | [Netflix](https://www.infoq.com/news/2013/06/netflix/) | Has 600+ services in production. Deploys a hundred times per day. |
-| [Uber](https://eng.uber.com/micro-deploy/) | Has 1,000+ services stored in production. Deploys several thousand builds each week. | WeChat | Has 300+ services in production. Makes almost 1,000 changes per day. |
+| [Uber](https://eng.uber.com/micro-deploy/) | Has 1,000+ services stored in production. Deploys several thousand builds each week. | 
 | [WeChat](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf) | Has 300+ services in production. Makes almost 1,000 changes per day. |
 
 As you can see, Netflix, Uber, and WeChat expose systems that consist of hundreds of independent microservices. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, and individually scale those areas as needed.

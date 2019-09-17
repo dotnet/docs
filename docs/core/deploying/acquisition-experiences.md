@@ -19,16 +19,16 @@ There are various Acquisition options for .NET Core -
 
 Each of these choices has their own strengths. Some options support both initial acquisition, and subsequent notification of updates for the .NET Core runtime and tools, while others don't support update notifications.
 
-|Acquisition Choice|Acquire|Update|
-|:-|:-:|:-:|
-[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | ✔️ | ✔️ |
-[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | ✔️ | ❌ |
-[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | ✔️ | ✔️ |
-[Docker](#Docker)                                                               | ✔️ | ✔️ |
-[Linux Package Managers](#Linux-Package-Managers)                               | ✔️ | ✔️\*|
-[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | ✔️ | ✔️ |
-[Snap store](#Snap-store)                                                       | ✔️ | ✔️ |
-[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | ✔️ | ❌ |
+|Acquisition Choice|Update|
+|:-:|:-:|
+[Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | ✔️ |
+[https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | ❌ |
+[Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | ✔️ |
+[Docker](#Docker)                                                               | ✔️ |
+[Linux Package Managers](#Linux-Package-Managers)                               | ✔️\*|
+[Azure DevOps pipeline Installer Task](#Azure-DevOps-pipeline-Installer-Task)   | ✔️ |
+[Snap store](#Snap-store)                                                       | ✔️ |
+[.NET Core on GitHub](#NET-Core-on-GitHub)                                      | ❌ |
 
 _\*Some package Managers provide update notifications__
 
@@ -139,7 +139,9 @@ You can find more information about deploying your app in a container in the doc
 
   To review instructions for other package managers, change the distro selected at the top of the page. 
 
-* _Starting with RedHat Enterprise Linux 8, you can find the .NET Core Runtime & tools directly as the “dotnet” package in the [AppStream repository](https://developers.redhat.com/blog/2018/11/15/rhel8-introducing-appstreams/).__
+### RedHat Enterprise Linux
+
+Starting with RedHat Enterprise Linux 8, you can find the .NET Core Runtime & tools directly as the “dotnet” package in the [AppStream repository](https://developers.redhat.com/blog/2018/11/15/rhel8-introducing-appstreams/).
 
 
 ## Azure DevOps pipeline Installer Task

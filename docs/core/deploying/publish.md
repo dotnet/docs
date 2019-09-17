@@ -56,11 +56,11 @@ dotnet publish -c Release --self-contained false
 
 ## Self-contained deployments (SCD)
 
-For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these dependencies must be present before the app runs. For more information on version binding at runtime, see the article on [version binding in .NET Core](../versions/selection.md).
+For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these dependencies must be present before the app runs.
 
 Starting with NET Core 2.1 SDK (version 2.1.300), .NET Core supports *patch version roll-forward*. When you create a self-contained deployment, .NET Core tools automatically include the latest serviced runtime of the .NET Core version that your application targets. (The latest serviced runtime includes security patches and other bug fixes.) The serviced runtime does not have to be present on your build system; it is downloaded automatically from NuGet.org. For more information, including instructions on how to opt out of patch version roll forward, see [Self-contained deployment runtime roll forward](runtime-patch-selection.md).
 
-FDD and SCD deployments use separate host executables, so you can sign a host executable for an SCD with your publisher signature.
+Independent SCD deployments use separate host executables, so you can sign a host executable for an SCD with your publisher signature.
 
 ### Why deploy a self-contained deployment?
 
@@ -80,7 +80,7 @@ It also has a number of disadvantages:
 
 - Deploying many self-contained .NET Core apps to a single system can consume significant amounts of disk space, since each app duplicates .NET Core files.
 
-Self-contained deployment is available for Windows Client, Windows Server, MacOS, and Linux platforms.  
+Self-contained deployment is available for Windows Client, Windows Server, MacOS, and Linux platforms. You can build an SCD deployment on any platform regardless of the target platform.
 
 To create a self-contained deployment for a Windows 10 x64 operating system, you would use the following command line:
 
@@ -93,13 +93,6 @@ _Note: creating a self-contained deployment _**requires**_ that you specify a Ru
 For a comprehensive list of all supported Runtime Identifiers (RIDs), refer to the [.NET Core RID Catalog](../rid-catalog.md).
 
 Note: Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core globalization invariant mode. Ordinarily, .NET Core on Linux relies on the ICU libraries for globalization support. In invariant mode, the libraries are excluded with your deployment, and all cultures behave like the invariant culture.
-
-
-Both SCD and FDD deployments for your app can be created for your app through either Visual Studio or the CLI. 
-
-For more information on using Visual Studio to create you app deployment you can, see the guide [Deploy .NET Core apps with Visual Studio](deploy-with-vs.md).
-
-For more information on using the CLI to create you app deployment you can, see the guide Publish [Deploy .NET Core apps with the CLI](deploy-with-cli.md).
 
 
 ## Framework-Dependent Executables (FDE)
@@ -149,7 +142,7 @@ To create a Self-contained, single file executable for the Windows 10 x64 operat
 dotnet publish -c Release -r win10-x64 --self-contained true /p:PublishSingleFile=true
 ```
 
-##Summary
+## Summary
 
 Both Framework-Dependent Deployment and Self-Contained Deployment have their own pros and cons. 
 
@@ -166,11 +159,16 @@ To summarize,
 | Trimming Available                                        | ❌                             | ✔️                        | ❌                            | ✔️                       |  
 
 
+
 ## Step-by-step examples
+
+Both SCD and FDD deployments for your app can be created for your app through either Visual Studio or the CLI. 
 
 For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). 
 
 For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). 
+
+For more information on version binding at runtime, see the article on [version binding in .NET Core](../versions/selection.md).
 
 
 ## See also

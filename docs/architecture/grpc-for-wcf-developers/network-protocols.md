@@ -9,7 +9,7 @@ ms.date: 09/02/2019
 
 Unlike WCF, gRPC uses HTTP/2 as a base for its networking. This offers significant advantages over WCF and SOAP, which only operate on HTTP/1.1. For developers wanting to use gRPC, given that there's no alternative to HTTP/2, it would seem to be the ideal moment to explore HTTP/2 in more detail. This will in turn help to identify additional benefits to using gRPC.
 
-HTTP/2, released by Internet Engineering Task Force in 2015 was derived from the experimental SPDY protocol, which was already being used by Google. It was specifically designed to be simpler, faster and more secure than HTTP/1.1.
+HTTP/2, released by Internet Engineering Task Force in 2015, was derived from the experimental SPDY protocol, which was already being used by Google. It was specifically designed to be simpler, faster and more secure than HTTP/1.1.
 
 ## Key features of HTTP/2
 
@@ -25,7 +25,7 @@ Servers are now able to send data to the client without receiving a request. Ano
 
 ### Request multiplexing over a single TCP connection
 
-This is one of the most important features of HTTP/2. By allowing multiple parallel requests for data, it's now possible to download web files concurrently from a single server. Websites load faster and the need for optimization is reduced.
+This feature is one of the most important innovations of HTTP/2. By allowing multiple parallel requests for data, it's now possible to download web files concurrently from a single server. Websites load faster and the need for optimization is reduced.
 
 ### NetTCP-like performance, cross-platform
 

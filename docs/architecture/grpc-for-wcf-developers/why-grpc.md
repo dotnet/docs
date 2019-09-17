@@ -7,7 +7,7 @@ ms.date: 09/02/2019
 
 # Why gRPC is recommended for WCF developers
 
-Before diving deeply into the language and techniques of gRPC, it's worth pulling together some ideas about why gRPC is the right solution for WCF developers who want to migrate to .NET Core, given there are alternatives available.
+Before diving deeply into the language and techniques of gRPC, it's worth discussing why gRPC is the right solution for WCF developers who want to migrate to .NET Core, given there are alternatives available.
 
 ## Similarity to WCF
 
@@ -19,19 +19,23 @@ Additional reasons why gRPC stands above other solutions are:
 
 ### Performance
 
-As already discussed, using HTTP/2 rather than HTTP/1.1 removes the requirement for human-readability code and instead use the smaller faster binary protocol. This is more efficient for computers to parse. HTTP/2 also supports multiplexing requests over a single connection enabling responses to be sent as soon as they're ready without the need to wait in a queue. Fewer resources are needed when using gRPC, which makes it a good solution to use for mobile devices and over slower networks. [Mark to check]
+As already discussed, using HTTP/2 rather than HTTP/1.1 removes the requirement for human-readable messages and instead uses the smaller faster binary protocol. This is more efficient for computers to parse. HTTP/2 also supports multiplexing requests over a single connection enabling responses to be sent as soon as they're ready without the need to wait in a queue. Fewer resources are needed when using gRPC, which makes it a good solution to use for mobile devices and over slower networks.
 
 ### Interoperability
 
 There are gRPC tools and libraries for all major programming languages and platforms, including .NET, Java, Python, Go, C++, Node.js, Swift, Dart, Ruby, and PHP. Thanks to the Protocol Buffers binary wire format and the efficient code generation for each platform, developers can achieve better performance than WCF's NetTCP bindings while still enjoying full cross-platform support.
 
-### Simplicity and productivity
+### Usability and productivity
 
-gRPC is a comprehensive RPC solution. It has thoroughly addressed the full range of connectivity issues. gRPC works consistently across multiple languages. gRPC is simple with much of the boilerplate auto-generated. So, more developer time is freed up to focus on business logic.
+gRPC is a comprehensive RPC solution. It has thoroughly addressed the full range of connectivity issues. gRPC works consistently across multiple languages. gRPC provides excellent tooling with much of the boilerplate auto-generated. So, more developer time is freed up to focus on business logic.
 
 ### Streaming
 
-gRPC has full bi-directional streaming, which is very similar to WCF's Full Duplex services but without the dependency on complicated network bindings and transports. gRPC streaming can operate over regular internet connections, load balancers, and service meshes.
+gRPC has full bidirectional streaming, which is very similar to WCF's Full Duplex services but without the dependency on complicated network bindings and transports. gRPC streaming can operate over regular internet connections, load balancers, and service meshes.
+
+### Deadline/timeouts and cancellation
+
+gRPC allows clients to specify a maximum time for an RPC to complete. If the deadline is exceeded the server can cancel the operation. Deadlines and cancellations can be propagated through further gRPC calls to help enforce resource usage limits.
 
 ### Security
 

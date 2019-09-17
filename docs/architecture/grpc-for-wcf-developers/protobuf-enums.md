@@ -1,13 +1,13 @@
 ---
 title: Protobuf enumerations - gRPC for WCF Developers
-description: Declaring and using enumerations in Protobuf
+description: Learn how to declare and use enumerations in Protobuf.
 author: markrendle
 ms.date: 09/09/2019
 ---
 
 # Protobuf enumerations
 
-Protobuf supports enumeration types, as seen in the previous section where an `enum` was used to determine the type of a `oneof` field. You can define your own enumeration types and Protobuf will compile them to C# `enum` types. Because Protobuf is designed for use with a variety of languages, the naming conventions for enumerations are different from what you might be used to with C#, but the code generator is clever and converts the names to traditional C# case; if the Pascal-case equivalent of the field name starts with the enumeration name, then it is removed.
+Protobuf supports enumeration types, as seen in the previous section where an enum was used to determine the type of a `oneof` field. You can define your own enumeration types and Protobuf will compile them to C# enum types. Since Protobuf can be used with different languages, the naming conventions for enumerations are different from the C# conventions. However, the code generator is clever and converts the names to the traditional C# case. If the Pascal-case equivalent of the field name starts with the enumeration name, then it's removed.
 
 For example, in this Protobuf enumeration the fields are prefixed with `ACCOUNT_STATUS`, which is equivalent to the Pascal case enum name: `AccountStatus`.
 
@@ -21,7 +21,7 @@ enum AccountStatus {
 }
 ```
 
-So the generator creates a C# `enum` equivalent to the following code.
+So, the generator creates a C# enum equivalent to the following code:
 
 ```csharp
 public enum AccountStatus
@@ -34,7 +34,7 @@ public enum AccountStatus
 }
 ```
 
-Protobuf enumeration definitions **must** have a zero constant as their first field. As in C#, you can declare multiple fields with the same value, but you have to explicitly enable this option using the `allow_alias` option in the enum:
+Protobuf enumeration definitions **must** have a zero constant as their first field. As in C#, you can declare multiple fields with the same value, but you must explicitly enable this option using the `allow_alias` option in the enum:
 
 ```protobuf
 enum AccountStatus {
@@ -48,9 +48,9 @@ enum AccountStatus {
 }
 ```
 
-You can declare enumerations at the top level in a `.proto` file, or nested within a message definition. Nested enumerations&mdash;like nested messages&mdash;will be declared within the `.Types` static class in the generated message class.
+You can declare enumerations at the top level in a `.proto` file, or nested within a message definition. Nested enumerations—like nested messages—will be declared within the `.Types` static class in the generated message class.
 
-There is no way to apply the [`[Flags] attribute`](https://docs.microsoft.com/dotnet/api/system.flagsattribute?view=netcore-3.0) to a Protobuf-generated enum, and Protobuf does not understand bitwise enum combinations. Take the following example.
+There's no way to apply the [[Flags]](xref:System.FlagsAttribute) attribute to a Protobuf-generated enum, and Protobuf doesn't understand bitwise enum combinations. Take a look at the following example:
 
 ```protobuf
 enum Region {
@@ -66,7 +66,7 @@ message Product {
 }
 ```
 
-If you set `product.AvailableIn` to `Region.NorthAmerica | Region.SouthAmerica` it will be serialized as the integer value `3`. When a client or server tries to deserialize the value, it will not find a match in the enum definition for `3` and the result will be `Region.None`.
+If you set `product.AvailableIn` to `Region.NorthAmerica | Region.SouthAmerica`, it's serialized as the integer value `3`. When a client or server tries to deserialize the value, it won't find a match in the enum definition for `3` and the result will be `Region.None`.
 
 The best way to work with multiple enum values in Protobuf is to use a `repeated` field of the enum type.
 

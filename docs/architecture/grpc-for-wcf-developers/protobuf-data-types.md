@@ -64,20 +64,20 @@ message Meeting {
 The generated properties in the C# class aren't the .NET date and time types. The properties use the `Timestamp` and `Duration` classes in the `Google.Protobuf.WellKnownTypes` namespace, which provide methods for converting to and from `DateTimeOffset`, `DateTime`, and `TimeSpan`.
 
 ```csharp
-// Creating from .NET types
+// Create Timestamp and Duration from .NET DateTimeOffset and TimeSpan
 var meeting = new Meeting
 {
     Time = Timestamp.FromDateTimeOffset(meetingTime), // also FromDateTime()
     Duration = Duration.FromTimeSpan(meetingLength)
 };
 
-// Converting to .NET types
+// Convert Timestamp and Duration to .NET DateTimeOffset and TimeSpan
 DateTimeOffset time = meeting.Time.ToDateTimeOffset();
 TimeSpan? duration = meeting.Duration?.ToTimeSpan();
 ```
 
 > [!NOTE]
-> The `Timestamp` type works with UTC times; `DateTimeOffset` values always have an offset of zero, and `DateTime` will have a Kind of UTC.
+> The `Timestamp` type works with UTC times; `DateTimeOffset` values always have an offset of zero, and the `DateTime.Kind` property will always be `DateTimeKind.Utc`.
 
 ### System.Guid
 

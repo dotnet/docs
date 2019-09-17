@@ -25,7 +25,7 @@ The following example illustrates how to use the `if...then...else` expression.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4501.fs)]
 
-```
+```console
 10 is less than 20
 What is your name? John
 How old are you? 9

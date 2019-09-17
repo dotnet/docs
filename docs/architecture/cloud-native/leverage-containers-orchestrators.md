@@ -1,6 +1,6 @@
 ---
 title: Leveraging containers and orchestrators
-description: Architecting Cloud-native .NET Apps for Azure | Leveraging Containers and Orchestrators
+description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
 ms.date: 06/30/2019
 ---
 # Leveraging containers and orchestrators
@@ -9,7 +9,7 @@ Containers and orchestrators are designed to solve problems common to monolithic
 
 ## Challenges with monolithic deployments
 
-Traditionally, most applications have been deployed as a single unit. Such applications are referred to as a monoliths. This general approach of deploying applications as single units even if they are composed of multiple modules or assemblies is known as monolithic architecture, as shown in Figure 3-1.
+Traditionally, most applications have been deployed as a single unit. Such applications are referred to as a monolith. This general approach of deploying applications as single units even if they are composed of multiple modules or assemblies is known as monolithic architecture, as shown in Figure 3-1.
 
 ![Monolithic architecture.](./media/monolithic-architecture.png)
 **Figure 3-1**. Monolithic architecture.
@@ -30,7 +30,7 @@ Monolithic applications are typically deployed into an existing hosting environm
 
 ### Coupling
 
-Monolithic applications are quite likely to have a great deal of coupling between different parts of the application, and between the application and its environment. This can make it difficult to factor out a particular service or concern later, in order to increase its scalability or swap in an alternative implementation. This coupling also leads to much larger potential impacts for changes to the system, requiring extensive testing in larger applications.
+Monolithic applications are likely to have a great deal of coupling between different parts of the application, and between the application and its environment. This can make it difficult to factor out a particular service or concern later, in order to increase its scalability or swap in an alternative implementation. This coupling also leads to much larger potential impacts for changes to the system, requiring extensive testing in larger applications.
 
 ### Technology choice
 
@@ -38,9 +38,9 @@ Monolithic applications are built and deployed as a unit. This offers simplicity
 
 ## What are the benefits of containers and orchestrators?
 
-Docker is the most popular container management and imaging platform and allows you to quickly work with containers on Linux and Windows. Containers provide separate but reproducible application environments that run the same way on any system. This makes them perfect for developing and hosting applications and app components in cloud-native applications. Containers are isolated from one another, so two containers on the same host hardware can have completely different versions of software and even operating system installed, without the dependencies causing conflicts.
+Docker is the most popular container management and imaging platform and allows you to quickly work with containers on Linux and Windows. Containers provide separate but reproducible application environments that run the same way on any system. This makes them perfect for developing and hosting applications and app components in cloud-native applications. Containers are isolated from one another, so two containers on the same host hardware can have different versions of software and even operating system installed, without the dependencies causing conflicts.
 
-What’s more, containers are completely defined by simple files that can be checked into source control. Unlike full servers, even virtual machines, which frequently require manual work to apply updates or install additional services, container infrastructure can easily be version-controlled. Thus, apps built to run in containers can be developed, tested, and deployed using automated tools as part of a build pipeline.
+What’s more, containers are defined by simple files that can be checked into source control. Unlike full servers, even virtual machines, which frequently require manual work to apply updates or install additional services, container infrastructure can easily be version-controlled. Thus, apps built to run in containers can be developed, tested, and deployed using automated tools as part of a build pipeline.
 
 Containers are immutable. Once you have the definition of a container, you can recreate that container and it will run exactly the same way. This immutability lends itself to component-based design. If some parts of an application don’t change as often as others, why redeploy the entire app when you can just deploy the parts that change most frequently? Different features and cross-cutting concerns of an app can be broken up into separate units. Figure 3-2 shows how a monolithic app can take advantage of containers and microservices by delegating certain features or functionality. The remaining functionality in the app itself has also been containerized.
 
@@ -112,7 +112,7 @@ If you're unwilling or unable to build your application following 12 Factor App 
 
 ## Development resources
 
-Below you will find a short list of development resources that may help you get started using containers and orchestrators for your next application. If you're looking for guidance on how to design your cloud-native microservices architecture app, please read this book's companion, [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+Below you will find a short list of development resources that may help you get started using containers and orchestrators for your next application. If you're looking for guidance on how to design your cloud-native microservices architecture app, read this book's companion, [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
 ### Local Kubernetes Development
 

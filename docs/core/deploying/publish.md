@@ -72,7 +72,7 @@ Deploying a Self-contained deployment has two major advantages:
 
 It also has a number of disadvantages:
 
-- Because .NET Core is included in your deployment package, you must select the target platforms for which you build deployment packages in advance.
+- .NET Core is included in your deployment package, so you must select the target platforms for which you build deployment packages in advance so that the right binaries for the target platform can be included with the application.
 
 - You need to include .NET Core, your app, and its third-party dependencies, so the size of your deployment package is relatively large.
 

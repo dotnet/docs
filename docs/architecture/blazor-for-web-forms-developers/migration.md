@@ -675,10 +675,6 @@ documentation.
 
 [ TBD ]
 
-## Migrate data access
-
-[ TBD ]
-
 ## Migrate config
 
 In a Web Forms application, the most common way to get configuration into a
@@ -745,6 +741,28 @@ construct the configuration object. These can then be access via
 `Configuration[key]` or can be bound to objects using the options framework. For
 more details on customizing this as well as in-depth exploration, see the following
 [documentation](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/).
+
+## Migrate data access
+
+Data access is an important aspect of any application. The eShop project uses a
+database to store the catalog information and exposes it via Entity Framework 6.
+Since this is supported on .NET Core 3.0, the project can continue to use it
+without any modifications.
+
+A few changes had to be made to the eShop in order to continue to work:
+
+- `DbContext` on .NET Framework can take a string of form
+  *name=ConnectionString* and will use the connection string on
+  `ConfigurationManager.AppSettings[ConnectionString]` to connect. On .NET Core,
+  this is not supported an you must specifically supply the connection string.
+- Database is accessed in a synchronous way. This will work, but scalability may
+  be affect. This should be moved to an asynchronous pattern.
+
+Although there aren't the same out of the box support for binding to datasets,
+there is still a lot of power given by easily including C# within a Razor page.
+This allows you to calculate something if needed and then output the result. For
+more details on data patterns in Blazor, see the [chapter](./data.md) on data
+access.git
 
 ## Architectural changes
 

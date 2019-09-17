@@ -21,7 +21,9 @@ The *attribute-name* refers to the name (possibly qualified with namespaces) of 
 
 The *arguments* are the arguments to the constructor for the attribute type. If an attribute has a default constructor, the argument list and parentheses can be omitted. Attributes support both positional arguments and named arguments. *Positional arguments* are arguments that are used in the order in which they appear. Named arguments can be used if the attribute has public properties. You can set these by using the following syntax in the argument list.
 
-*property-name* = *property-value*
+```fsharp
+property-name = property-value
+```
 
 Such property initializations can be in any order, but they must follow any positional arguments. Following is an example of an attribute that uses positional arguments and property initializations.
 

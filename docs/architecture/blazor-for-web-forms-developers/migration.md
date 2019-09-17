@@ -25,7 +25,10 @@ form entry and validation.
 
 ## Create a new project
 
-This initial step to begin is to create a new project. This project type is based on the SDK style projects of .NET Core and simplifies much of the boiler plate that was used in previous project formats. For more detail, please see the chapter on [Project Structure](./project-structure).
+This initial step to begin is to create a new project. This project type is
+based on the SDK style projects of .NET Core and simplifies much of the boiler
+plate that was used in previous project formats. For more detail, please see the
+chapter on [Project Structure](./project-structure).
 
 Once the project has been created, you'll want to pull in the libraries that
 were used in the previous project. In previous Web Form projects, you may be
@@ -131,6 +134,6 @@ specific features, this package will greatly help in migration.
 
 [ TBD ]
 
-## Architectual changes
+## Architectural changes
 
 [ TBD ]

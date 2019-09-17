@@ -7,13 +7,13 @@ ms.date: 09/02/2019
 
 # Metadata
 
-It is possible to add generic key/value headers to WCF messages using an [OperationContextScope](https://docs.microsoft.com/dotnet/api/system.servicemodel.operationcontextscope?view=netframework-4.8) and the [OperationContext.OutgoingMessageHeaders](https://docs.microsoft.com/dotnet/api/system.servicemodel.operationcontext.outgoingmessageheaders?view=netframework-4.8) property.
+It's possible to add generic key/value headers to WCF messages using an <xref:System.ServiceModel.OperationContextScope> and the <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders?displayProperty=nameWithType> property.
 
-gRPC calls and responses can also include metadata similar to HTTP headers. These are mostly invisible to gRPC itself and are just passed through to be processed by your application code or middleware. Metadata is represented as Key/Value Pairs where the key is a string and the value is either a string or binary data. You don’t need to specify metadata in the `.proto` file.
+gRPC calls and responses can also include metadata similar to HTTP headers. These are mostly invisible to gRPC itself and are passed through to be processed by your application code or middleware. Metadata is represented as key/value pairs where the key is a string and the value is either a string or binary data. You don’t need to specify metadata in the `.proto` file.
 
-Metadata is handled using the `Metadata` class from the [Grpc.Core](https://www.nuget.org/packages/Grpc.Core/) package. This class can be used with collection initializer syntax.
+Metadata is handled using the `Metadata` class from the [Grpc.Core](https://www.nuget.org/packages/Grpc.Core/) NuGet package. This class can be used with collection initializer syntax.
 
-Here is an example of adding metadata to a call from a C# client.
+The following example shows how to add metadata to a call from a C# client:
 
 ```csharp
 var metadata = new Metadata
@@ -29,7 +29,7 @@ var request = new GetPortfolioRequest
 var response = await client.GetPortfolioAsync(request, metadata);
 ```
 
-gRPC services can access metadata from the `ServerCallContext` argument's `RequestHeaders` property.
+gRPC services can access metadata from the `ServerCallContext` argument's `RequestHeaders` property:
 
 ```csharp
 public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request, ServerCallContext context)
@@ -43,7 +43,7 @@ public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request
 }
 ```
 
-Services can send metadata to clients using the `ResponseTrailers` property of `ServerCallContext`.
+Services can send metadata to clients using the `ResponseTrailers` property of `ServerCallContext`:
 
 ```csharp
 public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request, ServerCallContext context)

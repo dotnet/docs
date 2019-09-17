@@ -136,12 +136,13 @@ You can find more information about deploying your app in a container in the doc
   * [Install .NET Core SDK on Linux](https://dotnet.microsoft.com/download/linux-package-manager/rhel/sdk-2.2.402)
   * [Install .NET Core Runtime on Linux](https://dotnet.microsoft.com/download/linux-package-manager/rhel/runtime-2.2.7)
 
+### Red Hat Enterprise Linux
 
-  To review instructions for other package managers, change the distro selected at the top of the page. 
+If you are using Red Hat Enterprise Linux, Red Hat supports .NET Core within their software collections repositories. More information is available here: [Red Hat Product Documentation for .NET Core](https://access.redhat.com/documentation/en-us/net_core)
 
-### RedHat Enterprise Linux
+Starting with Red Hat Enterprise Linux 8, you can find the .NET Core Runtime & tools directly as the “dotnet” package in the [AppStream repository](https://developers.redhat.com/blog/2018/11/15/rhel8-introducing-appstreams/).
 
-Starting with RedHat Enterprise Linux 8, you can find the .NET Core Runtime & tools directly as the “dotnet” package in the [AppStream repository](https://developers.redhat.com/blog/2018/11/15/rhel8-introducing-appstreams/).
+To review instructions for other package managers, change the distro selected at the top of the page. 
 
 
 ## Azure DevOps pipeline Installer Task

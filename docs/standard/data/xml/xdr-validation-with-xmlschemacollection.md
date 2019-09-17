@@ -18,7 +18,7 @@ If the XML-Data Reduced (XDR) schema you are validating against is stored in the
 
 For example, if the root element of the XML document is `<bookstore xmlns="urn:newbooks-schema">`, when the schema is added to the **XmlSchemaCollection** it references the same namespace, as follows:
 
-```
+```csharp
 xsc.Add("urn:newbooks-schema", "newbooks.xdr")
 ```
 

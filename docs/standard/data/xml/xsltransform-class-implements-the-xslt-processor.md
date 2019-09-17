@@ -176,7 +176,7 @@ xslt.Transform(tmpDoc, null, Console.Out, null);
 
 The example uses the library.xml and print_root.xsl files as input and outputs the following to the console.
 
-```
+```console
 Passing <book genre="novel" ISBN="1-861001-57-5"><title>Pride And Prejudice</title></book> to print_root.xsl
 Root node is book.
 ```

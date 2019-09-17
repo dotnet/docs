@@ -7,34 +7,34 @@ ms.assetid: 5b96ed06-9759-4966-a797-a1d5f6ee50ca
 ADO.NET is a set of classes that expose data access services for .NET Framework programmers. ADO.NET provides a rich set of components for creating distributed, data-sharing applications. It is an integral part of the .NET Framework, providing access to relational, XML, and application data. ADO.NET supports a variety of development needs, including the creation of front-end database clients and middle-tier business objects used by applications, tools, languages, or Internet browsers.  
   
 ## In This Section  
- [What's New in ADO.NET](../../../../docs/framework/data/adonet/whats-new.md)  
+ [What's New in ADO.NET](whats-new.md)  
  Introduces features that are new in ADO.NET.  
   
- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
+ [ADO.NET Overview](ado-net-overview.md)  
  Provides an introduction to the design and components of ADO.NET.  
   
  [Entity Framework](https://go.microsoft.com/fwlink/?LinkID=213876)  
  Describes how to create applications using the Entity Framework.  
   
- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
+ [Securing ADO.NET Applications](securing-ado-net-applications.md)  
  Describes secure coding practices when using ADO.NET.  
   
- [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  
+ [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md)  
  Describes data type mappings between .NET Framework data types and the .NET Framework data providers.  
   
- [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
+ [DataSets, DataTables, and DataViews](./dataset-datatable-dataview/index.md)  
  Describes how to create and use `DataSets`, typed `DataSets`, `DataTables`, and `DataViews`.  
   
- [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)  
+ [LINQ to DataSet](linq-to-dataset.md)  
  Provides information about LINQ to DataSet, including programming examples.  
   
- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
+ [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)  
  Describes how to connect to a data source and how to retrieve and modify data using `Commands`, `DataReaders` and `DataAdapters`.  
   
- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
+ [SQL Server and ADO.NET](./sql/index.md)  
  Describes how to work with features and functionality that are specific to SQL Server.  
   
- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
+ [Oracle and ADO.NET](oracle-and-adonet.md)  
  Describes features and behaviors that are specific to the .NET Framework Data Provider for Oracle.  
   
 ## Related Sections  
@@ -44,7 +44,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)  
  Provides links to LINQ topics and samples using Visual Basic.  
   
- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
+ [WCF Data Services 4.5](../wcf/index.md)  
  Describes how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
   
  [.NET Framework Development Guide](../../development-guide.md)  
@@ -56,4 +56,4 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
 ## See also
 
 - [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

@@ -10,7 +10,7 @@ Gets a flag that indicates whether the exception can be intercepted.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFlags(  
    [out] CorDebugExceptionFlags *pdwFlags  
 );  

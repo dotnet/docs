@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<CompatSortNLSVersion> Element
 Specifies that the runtime should use legacy sort orders when performing string comparisons.  
   
- \<configuration>  
-\<runtime>  
-\<CompatSortNLSVersion> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<CompatSortNLSVersion>**  
   
 ## Syntax  
   

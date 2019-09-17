@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<legacyImpersonationPolicy> Element
 Specifies that the Windows identity does not flow across asynchronous points, regardless of the flow settings for the execution context on the current thread.  
   
- \<configuration>  
-\<runtime>  
-\<legacyImpersonationPolicy>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<legacyImpersonationPolicy>**  
   
 ## Syntax  
   

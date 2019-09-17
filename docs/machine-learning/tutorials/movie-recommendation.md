@@ -2,7 +2,7 @@
 title: 'Tutorial: Build a movie recommender - matrix factorization'
 description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
 author: briacht
-ms.date: 07/09/2019
+ms.date: 08/26/2019
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
 #Customer intent: As a developer, I want to use ML.NET to apply a recommendation learning algorithm so that I can understand how to recommend items based on a user's history.
@@ -14,6 +14,7 @@ This tutorial shows you how to build a movie recommender with ML.NET in a .NET C
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Select a machine learning algorithm
 > * Prepare and load your data
 > * Build and train a model
@@ -156,7 +157,7 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 
 The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`. In this case, you provide the path for your `Test` and `Train` files and indicate both the text file header (so it can use the column names properly) and the comma character data separator (the default separator is a tab).
 
-Add the following as the next two lines of code in the `Main()` method to call your `LoadData()` method and return the `Train` and `Test` data:
+Add the following code in the `Main()` method to call your `LoadData()` method and return the `Train` and `Test` data:
 
 [!code-csharp[LoadDataMain](~/samples/machine-learning/tutorials/MovieRecommendation/Program.cs#LoadDataMain "Add LoadData method to Main")]
 
@@ -463,6 +464,7 @@ The data used in this tutorial is derived from [MovieLens Dataset](http://files.
 In this tutorial, you learned how to:
 
 > [!div class="checklist"]
+>
 > * Select a machine learning algorithm
 > * Prepare and load your data
 > * Build and train a model

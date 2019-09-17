@@ -6,8 +6,9 @@ ms.assetid: d9b3d625-be3f-4768-8e0d-1b7e6929f6a8
 # \<dataContractSerializer> of \<system.runtime.serialization>
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
- \<system.runtime.serialization>  
-\<dataContractSerializer>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.serialization>**](system-runtime-serialization.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<dataContractSerializer>**  
   
 ## Syntax  
   

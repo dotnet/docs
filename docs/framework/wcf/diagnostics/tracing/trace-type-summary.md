@@ -41,12 +41,8 @@ ms.assetid: e639410b-d1d1-479c-b78e-a4701d4e4085
   
  The following is a regular expression that defines an ideal activity in the global scope,  
   
-```  
-R+   
-```  
+`R+`  
   
  with R being the regular expression for an activity in the local scope. This translates to,  
   
-```  
-[R+ = Start ( Critical | Error | Warning | Information | Verbose | Transfer | (Transfer Suspend Transfer Resume) )* Stop]+  
-```
+`[R+ = Start ( Critical | Error | Warning | Information | Verbose | Transfer | (Transfer Suspend Transfer Resume) )* Stop]+`

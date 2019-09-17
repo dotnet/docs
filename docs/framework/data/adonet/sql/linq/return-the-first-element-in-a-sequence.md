@@ -32,5 +32,5 @@ Use the <xref:System.Linq.Enumerable.First%2A> operator to return the first elem
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
-- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+- [Query Examples](query-examples.md)
+- [Downloading Sample Databases](downloading-sample-databases.md)

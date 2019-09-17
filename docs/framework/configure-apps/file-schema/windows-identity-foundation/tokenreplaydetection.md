@@ -7,9 +7,10 @@ author: "BrucePerlerMS"
 # \<tokenReplayDetection>
 Enables token replay detection and specifies the expiration time for tokens.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<tokenReplayDetection>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<tokenReplayDetection>**  
   
 ## Syntax  
   

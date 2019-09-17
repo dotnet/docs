@@ -6,11 +6,12 @@ ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
 # \<security> of \<webHttpBinding>
 Specifies the security requirements for an endpoint configured with a [\<webHttpBinding>](webhttpbinding.md).  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<webHttpBinding>  
-\<binding>  
-\<security>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<webHttpBinding>**](webhttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
 ## Syntax  
   

@@ -15,10 +15,10 @@ ms.author: "ronpet"
 # \<probing> Element
 Specifies application base subdirectories for the common language runtime to search when loading assemblies.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<probing>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<probing>**  
   
 ## Syntax  
   
@@ -36,7 +36,8 @@ Specifies application base subdirectories for the common language runtime to sea
 |`privatePath`|Required attribute.<br /><br /> Specifies subdirectories of the application's base directory that might contain assemblies. Delimit each subdirectory with a semicolon.|  
   
 ### Child Elements  
- None.  
+
+None.  
   
 ### Parent Elements  
   

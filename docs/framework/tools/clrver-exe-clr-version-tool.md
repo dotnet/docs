@@ -17,7 +17,7 @@ The CLR Version tool (Clrver.exe) reports all the installed versions of the comm
   
 ## Syntax  
   
-```  
+```console  
 clrver [option]  
 ```  
   

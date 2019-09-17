@@ -12,6 +12,7 @@ This sample tutorial illustrates using ML.NET to create a GitHub issue classifie
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Prepare your data
 > * Transform the data
 > * Train the model
@@ -367,6 +368,7 @@ Congratulations! You've now successfully built a machine learning model for clas
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > * Prepare your data
 > * Transform the data
 > * Train the model

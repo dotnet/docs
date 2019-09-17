@@ -14,6 +14,7 @@ This tutorial teaches you how to build a Docker image that contains your .NET Co
 You'll learn to:
 
 > [!div class="checklist"]
+>
 > * Create and publish a simple .NET Core app
 > * Create and configure a Dockerfile for .NET Core
 > * Build a Docker image
@@ -56,7 +57,7 @@ dotnet new console -o app -n myapp
 
 Your folder tree will look like the following:
 
-```console
+```
 docker-working
 │   global.json
 │
@@ -180,7 +181,7 @@ The `FROM` command tells Docker to pull down the image tagged **2.2** from the *
 
 Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been cut to save space in the article:
 
-```console
+```
 docker-working
 │   Dockerfile
 │   global.json
@@ -343,7 +344,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 Docker provides the `docker run` command to create and run the container as a single command. This command eliminates the need to run `docker create` and then `docker start`. You can also set this command to automatically delete the container when the container stops. For example, use `docker run -it --rm` to do two things, first, automatically use the current terminal to connect to the container, and then when the container finishes, remove it:
 
-```
+```console
 > docker run -it --rm myimage
 Counter: 1
 Counter: 2
@@ -355,7 +356,7 @@ Counter: 5
 
 With `docker run -it`, the <kbd>CTRL + C</kbd> command will stop process that is running in the container, which in turn, stops the container. Since the `--rm` parameter was provided, the container is automatically deleted when the process is stopped. Verify that it does not exist:
 
-```
+```console
 > docker ps -a
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS    PORTS   NAMES
 ```

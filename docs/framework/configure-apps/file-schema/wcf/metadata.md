@@ -6,8 +6,10 @@ ms.assetid: d09653eb-e355-4c73-b87b-28f93d56480d
 # \<metadata>
 Specifies how service metadata can be processed.  
   
- \<system.ServiceModel>  
-\<client>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<client>**](client.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<metadata>**  
   
 ## Syntax  
   

@@ -34,4 +34,4 @@ The layout of WPF controls can change slightly.
   
 ## See also
 
-- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md)
+- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6.md)

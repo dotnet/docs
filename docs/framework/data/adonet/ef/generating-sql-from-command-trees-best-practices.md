@@ -132,11 +132,11 @@ Also, when flattening joins, participating tables (or subqueries) may have colli
 
 ## Avoid SELECT *
 
-Do not use `SELECT *` to select from base tables. The storage model in an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application may only include a subset of the columns that are in the database table. In this case, `SELECT *` may produce an incorrect result. Instead, you should specify all participating columns by using the column names from the result type of the participating expressions.
+Do not use `SELECT *` to select from base tables. The storage model in an Entity Framework application may only include a subset of the columns that are in the database table. In this case, `SELECT *` may produce an incorrect result. Instead, you should specify all participating columns by using the column names from the result type of the participating expressions.
 
 ## Reuse of Expressions
 
-Expressions may be reused in the query command tree passed by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. Do not assume that each expression appears only once in the query command tree.
+Expressions may be reused in the query command tree passed by the Entity Framework. Do not assume that each expression appears only once in the query command tree.
 
 ## Mapping Primitive Types
 
@@ -144,4 +144,4 @@ When mapping conceptual (EDM) types to provider types, you should map to the wid
 
 ## See also
 
-- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)
+- [SQL Generation](sql-generation.md)

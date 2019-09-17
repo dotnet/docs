@@ -17,7 +17,7 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
 
 - As a separate binary resource stream. This is the recommended method for accessing and changing binary large object (BLOB) data that may represent a photo, video, or any other type of binary encoded data.
 
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] implements the streaming of binary data by using HTTP as defined in the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]. In this mechanism, binary data is treated as a media resource that is separate from but related to an entity, which is called a media link entry. For more information, see [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md).
+[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] implements the streaming of binary data by using HTTP as defined in the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]. In this mechanism, binary data is treated as a media resource that is separate from but related to an entity, which is called a media link entry. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).
 
 > [!TIP]
 > For a step-by-step example of how to create a Windows Presentation Foundation (WPF) client application that downloads binary image files from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] service that stores photos, see the post [Data Services Streaming Provider Series-Part 2: Accessing a Media Resource Stream from the Client](https://go.microsoft.com/fwlink/?LinkId=201637). To download the sample code for the stream photo data service featured in the blog post, see the [Streaming Photo Data Service Sample](https://go.microsoft.com/fwlink/?LinkId=198988) in MSDN Code Gallery.
@@ -68,5 +68,5 @@ In this example, the <xref:System.Data.Services.Client.DataServiceContext.SetSav
 
 ## See also
 
-- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
-- [Binding Data to Controls](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md)
+- [WCF Data Services Client Library](wcf-data-services-client-library.md)
+- [Binding Data to Controls](binding-data-to-controls-wcf-data-services.md)

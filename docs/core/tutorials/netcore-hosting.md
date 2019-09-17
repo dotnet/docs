@@ -17,7 +17,7 @@ This article gives an overview of the steps necessary to start the .NET Core run
 
 Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core. You will need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
 
-You will also want a simple .NET Core application to test the host with, so you should install the [.NET Core SDK](https://www.microsoft.com/net/core) and [build a small .NET Core test app](with-visual-studio.md) (such as a 'Hello World' app). The 'Hello World' app created by the new .NET Core console project template is sufficient.
+You will also want a simple .NET Core application to test the host with, so you should install the [.NET Core SDK](https://dotnet.microsoft.com/download) and [build a small .NET Core test app](with-visual-studio.md) (such as a 'Hello World' app). The 'Hello World' app created by the new .NET Core console project template is sufficient.
 
 ## Hosting APIs
 There are three different APIs that can be used to host .NET Core. This document (and its associated [samples](https://github.com/dotnet/samples/tree/master/core/hosting)) cover all options.
@@ -38,6 +38,7 @@ The following steps detail how to use the `nethost` and `hostfxr` libraries to s
 ### Step 1 - Load HostFxr and get exported hosting functions
 
 The `nethost` library provides the `get_hostfxr_path` function for locating the `hostfxr` library. The `hostfxr` library exposes functions for hosting the .NET Core runtime. The full list of functions can be found in [`hostfxr.h`](https://github.com/dotnet/core-setup/blob/master/src/corehost/cli/hostfxr.h) and the [native hosting design document](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/native-hosting.md). The sample and this tutorial use the following:
+
 * `hostfxr_initialize_for_runtime_config`: Initializes a host context and prepares for initialization of the .NET Core runtime using the specified runtime configuration.
 * `hostfxr_get_runtime_delegate`: Gets a delegate for runtime functionality.
 * `hostfxr_close`: Closes a host context.

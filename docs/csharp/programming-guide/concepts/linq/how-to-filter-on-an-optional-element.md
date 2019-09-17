@@ -41,7 +41,7 @@ foreach(string str in cList)
   
  This code produces the following output:  
   
-```  
+```output  
 Child One Text  
 Child Two Text  
 Child Four Text  
@@ -83,7 +83,7 @@ foreach (string str in cList)
   
  This code produces the following output:  
   
-```  
+```output  
 Child One Text  
 Child Two Text  
 Child Four Text  

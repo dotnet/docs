@@ -31,7 +31,7 @@ foreach (XElement el in purchaseOrders)
   
  This code produces the following output:  
   
-```  
+```output  
 99505  
 ```  
   
@@ -59,7 +59,7 @@ foreach (XElement el in purchaseOrders)
   
  This code produces the following output:  
   
-```  
+```output  
 99505  
 ```  
   

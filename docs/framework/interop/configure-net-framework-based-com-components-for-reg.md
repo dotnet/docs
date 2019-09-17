@@ -160,11 +160,9 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 3. Compile the assembly's source file again and specify the resource file by using the **/win32res** option:  
   
-    ```  
-    /win32res:myresource.res  
-    ```  
+    `/win32res:myresource.res`  
   
-     Again, `myresource.res` is the name of the resource file containing embedded resource.  
+     Again, `myresource.res` is the name of the resource file containing embedded resources.  
   
 ## See also
 

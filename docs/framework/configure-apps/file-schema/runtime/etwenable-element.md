@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<etwEnable> Element
 Specifies whether to enable event tracing for Windows (ETW) for common language runtime events.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<etwEnabled>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<etwEnabled>**  
   
 ## Syntax  
   

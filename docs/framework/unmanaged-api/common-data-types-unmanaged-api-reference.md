@@ -32,9 +32,9 @@ This topic lists simple data types used by the unmanaged APIs for the .NET Frame
 |ProcessID|`typedef UINT_PTR ProcessID;`|corprof.h|The identifier of a managed process.|  
 |ReJITID|`typedef UINT_PTR ReJITID;`|corprof.h|The identifier of a jitted function.|  
 |SIZE_T|`typedef ULONG_PTR SIZE_T;`|corsym.h|A pointer to a 64-bit memory address.|
-|TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|The identifier of an [ICLRTask](../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) instance.|  
+|TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|The identifier of an [ICLRTask](./hosting/iclrtask-interface.md) instance.|  
 |ThreadID|`typedef UINT_PTR ThreadID;`|corprof.h|The identifier of a managed thread.|  
   
 ## See also
 
-- [Unmanaged API Reference](../../../docs/framework/unmanaged-api/index.md)
+- [Unmanaged API Reference](index.md)

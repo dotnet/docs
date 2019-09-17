@@ -13,7 +13,7 @@ HTTP/2, released by Internet Engineering Task Force in 2015, was derived from th
 
 ## Key features of HTTP/2
 
-Some of the key features and advantages of HTTP/2 are discussed below.
+The following list shows some of the key features and advantages of HTTP/2:
 
 ### Binary protocol
 

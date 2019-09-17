@@ -1,7 +1,7 @@
 ---
 title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-ms.date: 09/10/2019
+ms.date: 09/17/2019
 ---
 # dotnet new
 
@@ -17,39 +17,12 @@ ms.date: 09/10/2019
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output] [-u|--uninstall] 
     [--update-apply] [--update-check] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
 ```
-
-# [.NET Core 2.1](#tab/netcore21)
-
-```console
-dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output] [-u|--uninstall] [Template options]
-dotnet new <TEMPLATE> [-l|--list] [--type]
-dotnet new [-h|--help]
-```
-
-# [.NET Core 2.0](#tab/netcore20)
-
-```console
-dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
-dotnet new <TEMPLATE> [-l|--list] [--type]
-dotnet new [-h|--help]
-```
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-```console
-dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template options]
-dotnet new <TEMPLATE> [-l|--list]
-dotnet new [-all|--show-all]
-dotnet new [-h|--help]
-```
-
----
 
 ## Description
 
@@ -65,21 +38,21 @@ The template to instantiate when the command is invoked. Each template might hav
 
 If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column, a substring match is performed on those two columns.
 
-The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets.
+The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
-| Templates                                    | Short Name            | Language     | Tags                                  | Introduced |
+| Templates                                    | Short name            | Language     | Tags                                  | Introduced |
 |----------------------------------------------|-----------------------|--------------|---------------------------------------|------------|
-| Console Application                          | `console`             | [C#], F#, VB | Common/Console                        | 1.0        |
+| Console Application                          | [console](#console)   | [C#], F#, VB | Common/Console                        | 1.0        |
 | Class library                                | `classlib`            | [C#], F#, VB | Common/Library                        | 1.0        |
-| WPF Application                              | `wpf`                 | [C#], VB     | Common/WPF                            | 3.0        |
-| WPF Class library                            | `wpflib`              | [C#], VB     | Common/WPF                            | 3.0        |
-| WPF Custom Control Library                   | `wpfcustomcontrollib` | [C#], VB     | Common/WPF                            | 3.0        |
-| WPF User Control Library                     | `wpfusercontrollib`   | [C#], VB     | Common/WPF                            | 3.0        |
-| Windows Forms (WinForms) Application         | `winforms`            | [C#], VB     | Common/WinForms                       | 3.0        |
-| Windows Forms (WinForms) Class library       | `winformslib`         | [C#], VB     | Common/WinForms                       | 3.0        |
+| WPF Application                              | `wpf`                 | [C#]         | Common/WPF                            | 3.0        |
+| WPF Class library                            | `wpflib`              | [C#]         | Common/WPF                            | 3.0        |
+| WPF Custom Control Library                   | `wpfcustomcontrollib` | [C#]         | Common/WPF                            | 3.0        |
+| WPF User Control Library                     | `wpfusercontrollib`   | [C#]         | Common/WPF                            | 3.0        |
+| Windows Forms (WinForms) Application         | `winforms`            | [C#]         | Common/WinForms                       | 3.0        |
+| Windows Forms (WinForms) Class library       | `winformslib`         | [C#]         | Common/WinForms                       | 3.0        |
 | Worker Service                               | `worker`              | [C#]         | Common/Worker/Web                     | 3.0        |
 | Unit Test Project                            | `mstest`              | [C#], F#, VB | Test/MSTest                           | 1.0        |
-| NUnit 3 Test Project                         | `nunit`               | [C#], F#, VB | Test/NUnit                            | 2.2        |
+| NUnit 3 Test Project                         | `nunit`               | [C#], F#, VB | Test/NUnit                            | 2.1.400    |
 | NUnit 3 Test Item                            | `nunit-test`          | [C#], F#, VB | Test/NUnit                            | 2.2        |
 | xUnit Test Project                           | `xunit`               | [C#], F#, VB | Test/xUnit                            | 1.0        |
 | Razor Component                              | `razorcomponent`      | [C#]         | Web/ASP.NET                           | 3.0        |
@@ -175,13 +148,34 @@ Checks if there are updates available for the template packs that are currently 
 
 Each project template may have additional options available. The core templates have the following additional options:
 
-**console**
+### console
 
-- **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.0` in .NET Core 3.0 SDK. Available in .NET Core 1.x SDK and reintroduced in .NET Core 3.0 SDK.
+- **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.0` in .NET Core 3.0 SDK. Option not available in .NET Core 2.x SDK.
 - 
 - **`--langVersion <VERSION_NUMBER>`** - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
 
 - **`--no-restore`** - If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
+
+**classlib**
+
+- **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp<version>` to create a .NET Core Class Library or `netstandard<version>` to create a .NET Standard Class Library. 
+
+    The following table lists the default values according to the SDK version number you're using:
+
+    | SDK version | Default value    |
+    | 3.x         | `netstandard2.0` |
+    | 2.x         | `netstandard2.0` |
+    | 1.x         | `netstandard1.4` |
+
+- **`--langVersion <VERSION_NUMBER>`** - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
+
+- **`--no-restore`** - Doesn't execute an implicit restore during project creation. Available since .NET Core 2.0 SDK.
+
+**wpf, wpflib, wpfcustomcontrollib, wpfusercontrollib, winforms, winformslib**
+
+- **`--langVersion <VERSION_NUMBER>`** - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
+
+- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
 
 **angular, react, reactredux**
 
@@ -192,14 +186,6 @@ Each project template may have additional options available. The core templates 
 - **`--no-https`** - Project doesn't require HTTPS. This option only applies if `IndividualAuth` or `OrganizationalAuth`** are not being used.
 
 **razorclasslib**
-
-- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
-
-**classlib**
-
-- **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.2` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`**.
-
-- **`--langVersion <VERSION_NUMBER>`** - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3`** to use C# 7.3. Not supported for F#.
 
 - **`--no-restore`** - Doesn't execute an implicit restore during project creation.
 

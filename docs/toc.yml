@@ -234,6 +234,10 @@
       href: core/tools/csproj.md
   - name: Migration
     items:
+    - name: .NET Core 2.2 to 3.0
+      href: core/migration/22-30.md
+    - name: .NET Core 2.1 to 2.2
+      href: core/migration/21-22.md
     - name: .NET Core 2.0 to 2.1
       href: core/migration/20-21.md
     - name: Migrating from project.json

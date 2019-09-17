@@ -19,7 +19,7 @@ Metrics refers to numeric data that is designed to be aggregated and presented u
 
 ## Logging in ASP.NET Core gRPC
 
-ASP.NET Core provides support for logging out-of-the-box, in the form of the [Microsoft.Extensions.Logging package](https://www.nuget.org/packages/Microsoft.Extensions.Logging). This is included with the Web SDK so there is no need to install it manually.
+ASP.NET Core provides support for logging out-of-the-box, in the form of the [Microsoft.Extensions.Logging package](https://www.nuget.org/packages/Microsoft.Extensions.Logging). This is included with the Web SDK so there is no need to install it manually. The gRPC framework writes its internal diagnostic logging messages to ASP.NET Core logging so they can be processed/stored along with the application's own messages.
 
 ### Producing log messages
 
@@ -37,78 +37,15 @@ public class StockData : Stocks.StocksBase
 }
 ```
 
-The `ILogger<T>` interface is generic so that it can use the fully-qualified name of the class that generated the message as the *Log Category*. There is a non-generic `ILogger` interface that can be created with a custom *Log Category* string, but using the generic version means that categories are consistently applied throughout an application.
+A lot of log messages around requests, exceptions, etc. are provided by the ASP.NET Core and gRPC framework components. You should add your own log messages to provide detail and context about application logic rather than lower level concerns.
 
-Log messages are assigned *levels* indicating their importance, which allows the components writing the log output to various destinations whether to include messages or not. These levels allow developers to generate more log messages while debugging or testing code, and fewer messages in production systems to avoid overwhelming the storage providers.
-
-ASP.NET Core provides six log levels, numbered from `0` to `5` and in ascending order of importance.
-
-| Name | Value | Description |
-| ---- | ----- | ----------- |
-| Trace | 0 | Messages that are only useful for debugging and may include data that should not be recorded in production environments. Disabled by default. |
-| Debug | 1 | Messages that are useful for debugging but do not include sensitive data. |
-| Information | 2 | Messages about the general operation of the application. |
-| Warning | 3 | Messages indicating abnormal or unexpected events that do not cause errors but may require investigation. |
-| Error | 4 | Messages about errors that cause an operation to fail. Usually include `Exception` data. |
-| Critical | 5 | Messages indicating problems that require immediate attention, such as loss of database connectivity. |
-
-The level can be specified using the `LogLevel` enum with the `ILogger<T>.Log` method.
-
-```csharp
-_logger.Log(LogLevel.Information, "GetStock request received.");
-```
-
-There are also extension methods for each of the log levels.
-
-```csharp
-_logger.LogTrace("Getting user information for ID '{userId}'", id);
-_logger.LogDebug("Connecting to database");
-_logger.LogInformation("Running query");
-_logger.LogWarning("No records found");
-_logger.LogError(exception, "Error reading data");
-_logger.LogCritical(exception, "Database not available");
-```
-
-### Structured logging
-
-Log files have traditionally been stored as unstructured text data, making them difficult to search in a consistent fashion. *Structured logging* aims to solve this problem by attaching key/value pairs to log entries that can be searched more precisely. ASP.NET Core logging supports structured logging by default; to take advantage of it, you simply need to use a convention when writing log messages.
-
-When using [string interpolation in C#](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated) to format log messages, you might write code like the following.
-
-```csharp
-_logger.LogError(exception, $"Error opening file '{filePath}'.");
-```
-
-This will include the value of the `filePath` variable in the log message, but searching against it as part of the text will be inaccurate, involving regular expressions or wildcards.
-
-To enable structured logging, you can just remove the `$` string interpolation operation from the start of the string literal, and supply the `filePath` variable as an additional parameter to the `LogError` call.
-
-```csharp
-_logger.LogError(exception, "Error opening file '{file}'.", filePath);
-```
-
-Using this syntax, the logger will format the message the same, but the `filePath` variable will be added as a named value `file` on a structured object passed along with the logs. Logging back-ends that support structured logging, such as [Serilog](https://serilog.net/) or [NLog](https://nlog-project.org/) (as of version 4.5) will write this structured object along with the message, as long as the storage target supports it.
-
-Despite having names, the tokens in the message format string are treated as positional parameters, just like in `string.Format`. The first token is treated as `{0}`, the second as `{1}` and so on. If a token is used more than once, the index of the first occurrence is used.
-
-### Storing log data
-
-Log entries are handled by *Providers*, which write the log messages out to various targets. ASP.NET Core logging provides some simple providers via NuGet packages, all prefixed with `Microsoft.Extensions.Logging`.
-
-| Provider | Description |
-| -------- | ----------- |
-| Console  | Writes simple messages to standard output |
-| Debug    | Writes simple messages to a debugger (e.g. Visual Studio) if any is attached |
-| TraceSource | Makes messages available to .NET TraceListener |
-| EventSource | Makes messages available to .NET EventListener |
-| EventLog | Writes messages to the Windows Event Log |
-| AzureAppServices | Writes messages and structured data to Azure "Diagnostic logs" and "Log stream" features |
-
-Writing to other storage systems, like SQL databases, text files, or specialized databases like [Elasticsearch](https://elastic.co), is not natively supported by the core libraries. Support for other platforms can be added using one of the various open source logging libraries available for .NET Core, such as Serilog, NLog or log4net, which have extensions supporting a wide range of logging targets. Refer to the documentation for your preferred library for information on how to configure it to work with ASP.NET Core logging.
+For more information please refer to the [ASP.NET Core Logging documentation](https://docs.microsoft.com/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0).
 
 ## Metrics in ASP.NET Core gRPC
 
-Unlike logging, there is no in-the-box support for producing metrics data in ASP.NET Core. There is an excellent open source library called [App Metrics](https://www.app-metrics.io), which provides an extensive set of types to instrument your code, and additional packages to write metrics to a variety of targets including time-series databases (e.g. Prometheus and InfluxDB), [Azure AppInsights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) and more. The [App.Metrics.AspNetCore.Mvc](https://www.nuget.org/packages/App.Metrics.AspNetCore.Mvc/) package even adds a comprehensive set of basic metrics automatically generated via integration with the ASP.NET Core framework, and the web site provides templates for displaying those the [Grafana](https://grafana.com/) visualization platform.
+The .NET Core framework provides a set of components for measuring performance in the [System.Diagnostics.Tracing](https://www.nuget.org/packages/System.Diagnostics.Tracing/) package. This includes the `EventSource` and `EventCounter` types, which can be used to emit basic numeric data that can be consumed by external processes like the [dotnet-counters global tool](https://github.com/dotnet/diagnostics/blob/master/documentation/dotnet-counters-instructions.md), or Event Tracing for Windows. To learn more about using `EventCounter` in your own code refer to the [EventCounter Introduction Tutorial](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md).
+
+For more advanced metrics, and for writing metric data to a wider range of data stores, there is an excellent open source project called [App Metrics](https://www.app-metrics.io). This suite of libraries provides an extensive set of types to instrument your code, and offers packages to write metrics to a variety of targets including time-series databases (e.g. Prometheus and InfluxDB), [Azure AppInsights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) and more. The [App.Metrics.AspNetCore.Mvc](https://www.nuget.org/packages/App.Metrics.AspNetCore.Mvc/) package even adds a comprehensive set of basic metrics automatically generated via integration with the ASP.NET Core framework, and the web site provides templates for displaying those the [Grafana](https://grafana.com/) visualization platform.
 
 More information and full documentation on AppMetrics is available through their web site at [app-metrics.io](https://app-metrics.io).
 
@@ -169,7 +106,7 @@ The numerical nature of metrics data means that it is ideally suited to drive al
 
 *Distributed tracing* is a relatively recent development in monitoring, which has arisen from the increasing use of microservices and distributed architectures. A single request from a client browser, application or device may be broken down into many steps and sub-requests and involve the use of many services across a network. This makes it difficult to correlate log messages and metrics with the specific request that triggered them.
 
-Although it is still a nascent technology area, distributed tracing has grown quickly in popularity and is now supported by the Cloud Native Computing Foundation, with [the Open Tracing standard](https://opentracing.io) effort attempting to provide vendor-neutral libraries for working with backends like [Jaeger](https://www.jaegertracing.io/) and [Elastic APM](https://www.elastic.co/products/apm).
+Although it is still a nascent technology area, distributed tracing has grown quickly in popularity and is now going through a standardization process. The Cloud Native Computing Foundation created the [the Open Tracing standard](https://opentracing.io), attempting to provide vendor-neutral libraries for working with backends like [Jaeger](https://www.jaegertracing.io/) and [Elastic APM](https://www.elastic.co/products/apm). At the same time, Google created the [OpenCensus project](https://opencensus.io/) to address the same set of problems. These two projects are now in the process of merging into a new project, [OpenTelemetry](https://opentelemetry.io), which aims to be the future industry standard.
 
 ### How distributed tracing works
 
@@ -251,9 +188,15 @@ var activity = new Activity("StockDataService.Get");
 activity.AddBaggage("InstanceId", _myInstanceId);
 ```
 
-### Writing distributed trace data
+### Storing distributed trace data
 
-There is [an OpenTracing NuGet package](https://www.nuget.org/packages/OpenTracing/) which supports all OpenTracing-compliant back-ends. This package can be used independently of `DiagnosticSource`. But there is an additional package from the OpenTracing API Contributions project, [OpenTracing.Contrib.NetCore](https://www.nuget.org/packages/OpenTracing.Contrib.NetCore/), which adds a `DiagnosticSource` listener and writes events and activities to a back-end automatically. Enabling this package is as simple as installing it from NuGet and adding it as a service in your `Startup` class.
+At the time of writing the OpenTelemetry project is still in the early stages, and only alpha-quality packages are available for .NET applications. The OpenTracing project offers more mature libraries, but these will be superseded by the OpenTelemetry libraries in the future.
+
+The OpenTracing API is described below. If you would prefer to use the newer OpenTelemetry API in your application, refer to the [OpenTelemetry .NET SDK repository on GitHub](https://github.com/open-telemetry/opentelemetry-dotnet).
+
+#### Using the OpenTracing package to store distributed trace data
+
+The [an OpenTracing NuGet package](https://www.nuget.org/packages/OpenTracing/) that supports all OpenTracing-compliant back-ends (which can be used independently of `DiagnosticSource`). There is an additional package from the OpenTracing API Contributions project, [OpenTracing.Contrib.NetCore](https://www.nuget.org/packages/OpenTracing.Contrib.NetCore/), which adds a `DiagnosticSource` listener and writes events and activities to a back-end automatically. Enabling this package is as simple as installing it from NuGet and adding it as a service in your `Startup` class.
 
 ```csharp
 public class Startup
@@ -272,7 +215,7 @@ The OpenTracing package is an abstraction layer and as such it requires a back-e
 | Jaeger | [Jaeger](https://www.nuget.org/packages/Jaeger/) | [jaegertracing.io](https://jaegertracing.io) |
 | Elastic APM | [Elastic.Apm.NetCoreAll](https://www.nuget.org/packages/Elastic.Apm.NetCoreAll/) | [elastic.co/products/apm](https://www.elastic.co/products/apm) |
 
-Various proprietary hosted services also offer OpenTracing API implementations. More information on these services is [available from the OpenTracing web site](https://opentracing.io/docs/supported-tracers/).
+For more information on the OpenTracing API for .NET refer to the [OpenTracing for C# repo](https://github.com/opentracing/opentracing-csharp) and the [OpenTracing Contrib C#/.NET Core repo](https://github.com/opentracing-contrib/csharp-netcore) on GitHub.
 
 >[!div class="step-by-step"]
 <!-->[Next](appendix.md)-->

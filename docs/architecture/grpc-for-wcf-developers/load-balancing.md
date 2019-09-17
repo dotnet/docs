@@ -30,6 +30,8 @@ Examples of L7 load balancers include:
 
 As a rule of thumb, L7 load balancers are the best choice for gRPC and other HTTP/2 applications (and for HTTP applications generally, in fact). L4 load balancers will *work* with gRPC applications, but are primarily useful when low latency and low overhead are of paramount importance.
 
+When using TLS encryption, load balancers can terminate the TLS connection and pass unencrypted requests to the backend application, or pass the encrypted request along. Either way, the load balancer will need to be configured with the server's public and private key so that it can decrypt requests for processing.
+
 Refer to the documentation for your preferred load balancer to find out how to configure it to handle HTTP/2 requests with your backend services.
 
 >[!div class="step-by-step"]

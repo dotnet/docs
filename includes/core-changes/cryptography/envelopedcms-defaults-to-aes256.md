@@ -8,7 +8,7 @@ In .NET Core Preview 7 and earlier versions, when <xref:System.Security.Cryptogr
 
 Starting with .NET Core 3.0 Preview 8 (via version 4.6.0 of the [System.Security.Cryptography.Pkcs](https://www.nuget.org/packages/System.Security.Cryptography.Pkcs/) NuGet package), the default algorithm has been changed to AES-256 for algorithm modernization and to improve the security of default options. If a message recipient certificate has a (non-EC) Diffie-Hellman public key, the encryption operation may fail with a <xref:System.Security.Cryptography.CryptographicException> due to limitations in the underlying platform.
 
-In the following sample code, the data is encrypted with TripleDES if running on .NET Core 3.0 Preview 7 or earlier. If running on .NET Core 3.0 Preview 8 or later, it is encrypted with AES-257.
+In the following sample code, the data is encrypted with TripleDES if running on .NET Core 3.0 Preview 7 or earlier. If running on .NET Core 3.0 Preview 8 or later, it is encrypted with AES-256.
 
 ```csharp
 EnvelopedCms cms = new EnvelopedCms(content);

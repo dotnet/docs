@@ -352,7 +352,7 @@ In contrast to the previous point, partial application is a wonderful tool for r
 
 For example, consider the following solution topography:
 
-```console
+```
 MySolution.sln
 |_/ImplementationLogic.fsproj
 |_/ImplementationLogic.Tests.fsproj

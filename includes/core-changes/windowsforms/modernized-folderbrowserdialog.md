@@ -1,6 +1,6 @@
 ### Modernization of the FolderBrowserDialog
 
-The <xref:System.Windows.forms.FolderBrowserDialog> control has change in Windows Forms applications for .NET Core.
+The <xref:System.Windows.Forms.FolderBrowserDialog> control has change in Windows Forms applications for .NET Core.
 
 #### Change description
 

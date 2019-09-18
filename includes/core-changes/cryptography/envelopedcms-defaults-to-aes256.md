@@ -1,10 +1,10 @@
 ### EnvelopedCms defaults to AES-256 encryption
 
-The default symmetric encryption algorithm used by EnvelopedCms has changed from TripleDES to AES-256
+The default symmetric encryption algorithm used by `EnvelopedCms` has changed from TripleDES to AES-256
 
 #### Details
 
-In .NET Core Preview 7 and earlier versions, When EnvelopedCms is used to encrypt data without specifying a symmetric encryption algorithm via a constructor overload, the data was encrypted with the TripleDES/3DES/3DEA/DES3-EDE algorithm.
+In .NET Core Preview 7 and earlier versions, when <xref:System.Security.Cryptography.Pkcs.EnvelopedCms> is used to encrypt data without specifying a symmetric encryption algorithm via a constructor overload, the data was encrypted with the TripleDES/3DES/3DEA/DES3-EDE algorithm.
 
 Starting with .NET Core 3.0 Preview 8 (via version 4.6.0 of the [System.Security.Cryptography.Pkcs](https://www.nuget.org/packages/System.Security.Cryptography.Pkcs/) NuGet package), the default algorithm has been changed to AES-256 for algorithm modernization and to improve the security of default options. If a message recipient certificate has a (non-EC) Diffie-Hellman public key, the encryption operation may fail with a <xref:System.Security.Cryptography.CryptographicException> due to limitations in the underlying platform.
 

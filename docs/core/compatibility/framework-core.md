@@ -1,6 +1,6 @@
 ---
-title: Breaking changes, version 3.0 Preview 8 to 3.0 Preview 9 - .NET Core
-description: Lists the breaking changes from version 3.0 Preview 7 to version 3.0 Preview 8 of .NET Core, ASP.NET Core, and EF Core.
+title: Breaking changes, .NET Framework to .NET Core 3.0 - .NET Core
+description: Lists the breaking changes from .NET Framework to .NET Core 3.0 for Windows Forms and Windows Presentation Foundation.
 ms.date: "09/10/2019"
 author: "rpetrusha"
 ms.author: "ronpet"

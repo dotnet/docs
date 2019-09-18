@@ -82,7 +82,7 @@ Once the tool is installed, you can call it by using its command. Note that the 
 
 If the command is `dotnetsay`, you call it with:
 
-```dotnetcli
+```console
 dotnetsay
 ```
 

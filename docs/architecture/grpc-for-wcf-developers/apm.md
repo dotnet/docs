@@ -19,7 +19,7 @@ Metrics refers to numeric data that is designed to be aggregated and presented u
 
 ## Logging in ASP.NET Core gRPC
 
-ASP.NET Core provides support for logging out-of-the-box, in the form of the [Microsoft.Extensions.Logging package](https://www.nuget.org/packages/Microsoft.Extensions.Logging). The core parts of this library are included with the Web SDK so there is no need to install it manually. By default, log messages are written to standard output (the "console") and to any attached debugger. To write logs to persistent external data stores you may need to import [optional logging sink packages](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers).
+ASP.NET Core provides support for logging out-of-the-box, in the form of the [Microsoft.Extensions.Logging package](https://www.nuget.org/packages/Microsoft.Extensions.Logging). The core parts of this library are included with the Web SDK so there is no need to install it manually. By default, log messages are written to standard output (the "console") and to any attached debugger. To write logs to persistent external data stores you may need to import [optional logging sink packages](https://docs.microsoft.com/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers).
 
 The ASP.NET Core gRPC framework writes detailed diagnostic logging messages to this logging framework so they can be processed/stored along with your application's own messages.
 

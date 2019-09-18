@@ -19,13 +19,13 @@ The following list shows some of the key features and advantages of HTTP/2:
 
 Request/response cycles no longer need text commands. This simplifies and speeds up implementation of commands. Specifically, parsing data is faster and uses less memory, network latency is reduced with obvious related improvements to speed, and there's an overall better use of network resources.
 
-### Server push
+### Streams
 
-Servers are now able to send data to the client without receiving a request. Another efficiency saving. This further increases the efficient use of network resources by anticipating additional information that hasn't been requested yet and pushing it at the same time as the original request, freeing up future TCP connections by doing that.
+Streams allow for the creation of long-lived connections between sender and receiver, over which multiple messages or frames can be sent asynchronously. Multiple streams can operate independently over a single HTTP/2 connection.
 
 ### Request multiplexing over a single TCP connection
 
-This feature is one of the most important innovations of HTTP/2. By allowing multiple parallel requests for data, it's now possible to download web files concurrently from a single server. Websites load faster and the need for optimization is reduced.
+This feature is one of the most important innovations of HTTP/2. By allowing multiple parallel requests for data, it's now possible to download web files concurrently from a single server. Websites load faster and the need for optimization is reduced. Head-of-line (HOL) blocking, where responses that are ready must wait to be sent until an earlier request is completed, is also mitigated (although HOL blocking can still occur at the TCP transport level).
 
 ### NetTCP-like performance, cross-platform
 

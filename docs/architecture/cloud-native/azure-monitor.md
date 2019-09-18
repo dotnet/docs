@@ -1,14 +1,15 @@
 ---
 title: Azure Monitor
-description: Architecting Cloud Native .NET Apps for Azure | Azure Monitor
-ms.date: 06/30/2019
+description: Using Azure Monitor to gain visibility into your system is running.
+ms.date: 09/23/2019
 ---
 
 # Azure Monitor 
 
 No other cloud provider has as mature of a cloud application monitoring solution as that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system, insights into any problems and optimization of your application. 
 
-![Figure 8-3 Azure Monitor, a collection to tools to provide insight into how a cloud native application is functioning.](media/azure_monitor.png)
+![Azure Monitor, a collection to tools to provide insight into how a cloud native application is functioning.](media/azure_monitor.png)
+**Figure 7-9**. Azure Monitor, a collection to tools to provide insight into how a cloud native application is functioning.
 
 ## Gathering logs and metrics
 
@@ -34,7 +35,8 @@ StormEvents
 | render piechart 
 ```
 
-![Figure 8-0 The result of the Application Insights Query](media/application_insights_example.png)
+![The result of the Application Insights Query](media/azure_monitor.png)
+**Figure 7-10**. The result of the Application Insights Query.
 
 There is a [playground for experimenting with Kusto](https://dataexplorer.azure.com/clusters/help/databases/Samples) queries, which is a fantastic place to spend an hour or two. Reading [sample queries](https://docs.microsoft.com/azure/kusto/query/samples) can also be instructive.
 
@@ -42,11 +44,13 @@ There is a [playground for experimenting with Kusto](https://dataexplorer.azure.
 
 There are several different dashboard technologies that may be used to surface the information from Azure Monitor. Perhaps the simplest is to just run queries in Application Insights and [plot the data into a chart](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards). 
 
-![Figure 8-1 An example of Application Insights charts embedded in the main Azure Dashboard](media/azure_dashboard.png)
+![An example of Application Insights charts embedded in the main Azure Dashboard](media/azure_monitor.png)
+**Figure 7-11**. An example of Application Insights charts embedded in the main Azure Dashboard.
 
 These charts can then be embedded in the Azure portal proper through use of the dashboard feature. For users with more exacting requirements such as being able to drill down into several tiers of data Azure Monitor data is available to [Power BI](https://powerbi.microsoft.com/). Power BI is an industry-leading, enterprise class, business intelligence tool that can aggregate data from many different data sources.
 
-![Figure 8-2 An example Power BI dashboards ](media/powerbidashboard.png)
+![An example Power BI dashboard](media/azure_monitor.png)
+**Figure 7-12**. An example Power BI dashboard.
 
 ## Alerts
 
@@ -65,5 +69,5 @@ As common causes of alerts are identified, the alerts can be enhanced with detai
 Azure Monitor automatically leverages machine learning to understand the normal operating parameters of deployed applications. This enables it to detect services that are operating outside of their normal parameters. For instance, the typical weekday traffic on the site might be 10,000 requests per minute. And then, on a given week, suddenly the number of requests hits a highly unusual 20,000 requests per minute. [Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics) will notice this deviation from the norm and trigger an alert. At the same time, the trend analysis is smart enough to avoid firing false positives when the traffic load is expected.  
 
 >[!div class="step-by-step"]
->[Previous](logging.md)
->[Next](monitoring-azure-kubernetes.md)
+>[Previous](monitoring-azure-kubernetes.md)
+>[Next](identity.md) <!-- Next Chapter -->

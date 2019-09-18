@@ -51,7 +51,7 @@ Save this file. The presence of file will force .NET Core to use version 2.2 for
 
 You need a .NET Core app that the Docker container will run. Open your terminal, create a working folder if you haven't already, and enter it. In the working folder, run the following command to create a new project in a subdirectory named app:
 
-```console
+```dotnetcli
 dotnet new console -o app -n myapp
 ```
 
@@ -142,7 +142,7 @@ Before you add your .NET Core app to the Docker image, publish it. You want to m
 
 From the working folder, enter the **app** folder with the example source code and run the following command:
 
-```console
+```dotnetcli
 dotnet publish -c Release
 ```
 

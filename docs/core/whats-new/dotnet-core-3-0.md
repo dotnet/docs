@@ -120,7 +120,7 @@ To publish a single-file executable, set the `PublishSingleFile` in your project
 
 -or-
 
-```console
+```dotnetcli
 dotnet publish -r win10-x64 /p:PublishSingleFile=true
 ```
 
@@ -142,7 +142,7 @@ To enable this tool, add the `<PublishTrimmed>` setting in your project and publ
 </PropertyGroup>
 ```
 
-```console
+```dotnetcli
 dotnet publish -r <rid> -c Release
 ```
 
@@ -192,7 +192,7 @@ To compile your project as ReadyToRun, do the following:
 
 01. Publish a self-contained app. For example, this command creates a self-contained app for the 64-bit version of Windows:
 
-    ```console
+    ```dotnetcli
     dotnet publish -c Release -r win-x64 --self-contained true
     ```
 
@@ -261,7 +261,7 @@ The Windows Desktop component is part of the Windows .NET Core 3.0 SDK.
 
 You can create a new WPF or Windows Forms app with the following `dotnet` commands:
 
-```console
+```dotnetcli
 dotnet new wpf
 dotnet new winforms
 ```

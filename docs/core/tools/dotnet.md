@@ -17,14 +17,14 @@ ms.date: 06/04/2018
 
 # [.NET Core 2.1](#tab/netcore21)
 
-```console
+```dotnetcli
 dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
     [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [--runtimeconfig] [-v|--verbosity] [--version]
 ```
 
 # [.NET Core 2.0](#tab/netcore20)
 
-```console
+```dotnetcli
 dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
     [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx]
     [--runtimeconfig] [-v|--verbosity] [--version]
@@ -32,7 +32,7 @@ dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--de
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```console
+```dotnetcli
 dotnet [command] [arguments] [--additionalprobingpath] [--depsfile] [-d|--diagnostics]
     [--fx-version] [-h|--help] [--info] [--runtimeconfig] [-v|--verbosity] [--version]
 ```

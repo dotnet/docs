@@ -17,7 +17,7 @@ ms.date: 05/29/2018
 
 # [.NET Core 2.1](#tab/netcore21)
 
-```console
+```dotnetcli
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [--blame] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter]
     [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] 
     [-v|--verbosity] [-- <RunSettings arguments>]
@@ -27,7 +27,7 @@ dotnet test [-h|--help]
 
 # [.NET Core 2.0](#tab/netcore20)
 
-```console
+```dotnetcli
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter]
     [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] [-v|--verbosity]
 
@@ -36,7 +36,7 @@ dotnet test [-h|--help]
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```console
+```dotnetcli
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [-d|--diag] [-f|--framework] [--filter] [-l|--logger] [--no-build] [-o|--output] [-s|--settings] [-t|--list-tests]  [-v|--verbosity]
 
 dotnet test [-h|--help]

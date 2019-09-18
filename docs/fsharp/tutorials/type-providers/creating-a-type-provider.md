@@ -894,7 +894,7 @@ let function1 () =
 
 Here’s an image of the resulting code decompiled by using ildasm.exe:
 
-```console
+```il
 .class public abstract auto ansi sealed Module1
 extends [mscorlib]System.Object
 {
@@ -1122,7 +1122,7 @@ You can invoke type providers by using the following tools:
 You can often debug type providers most easily by using fsc.exe on a test script file (for example, script.fsx). You can launch a debugger from a command prompt.
 
 ```console
-  devenv /debugexe fsc.exe script.fsx
+devenv /debugexe fsc.exe script.fsx
 ```
 
   You can use print-to-stdout logging.

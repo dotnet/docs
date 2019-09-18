@@ -28,7 +28,7 @@ helpviewer_keywords:
   - "delegate invocation [C#]"
   - "() operator [C#]"
   - "^ operator [C#]"
-  - "index operator [C#]"
+  - "index from end operator [C#]"
   - "hat operator [C#]"
   - ".. operator [C#]"
   - "range operator [C#]"
@@ -41,7 +41,7 @@ You might use the following operators when you access a type member:
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
 - [`?.` and `?[]` (null-conditional operators)](#null-conditional-operators--and-): to perform a member or element access operation only if an operand is non-null
 - [`()` (invocation)](#invocation-operator-): to call an accessed method or invoke a delegate
-- [`^` (index)](#index-operator-): to indicate that the element position is from the end of a sequence
+- [`^` (index from end)](#index-from-end-operator-): to indicate that the element position is from the end of a sequence
 - [`..` (range)](#range-operator-): to specify a range of indices that you can use to obtain a range of sequence elements
 
 ## Member access operator .
@@ -152,7 +152,7 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 [Cast expressions](type-testing-and-cast.md#cast-operator-), which perform explicit type conversions, also use parentheses.
 
-## Index operator ^
+## Index from end operator ^
 
 Available in C# 8.0 and later, the `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
 

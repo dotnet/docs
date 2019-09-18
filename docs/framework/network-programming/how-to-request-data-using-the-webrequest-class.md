@@ -21,11 +21,11 @@ The following procedure describes the steps to request a resource, such as a Web
 1. Create a <xref:System.Net.WebRequest> instance by calling <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> with the URI of a resource. For example:
 
     ```csharp
-    WebRequest request = WebRequest.Create("http://www.contoso.com/default.html");
+    WebRequest request = WebRequest.Create("https://docs.microsoft.com");
     ```
 
     ```vb
-    Dim request as WebRequest = WebRequest.Create("http://www.contoso.com/default.html")
+    Dim request as WebRequest = WebRequest.Create("https://docs.microsoft.com")
     ```
 
     > [!NOTE]

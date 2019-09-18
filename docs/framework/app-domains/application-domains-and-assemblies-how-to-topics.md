@@ -13,13 +13,13 @@ The following sections contain links to all How-to topics found in the conceptua
   
  **Application Domains**  
   
-- [How to: Create an Application Domain](../../../docs/framework/app-domains/how-to-create-an-application-domain.md)  
+- [How to: Create an Application Domain](how-to-create-an-application-domain.md)  
   
-- [How to: Unload an Application Domain](../../../docs/framework/app-domains/how-to-unload-an-application-domain.md)  
+- [How to: Unload an Application Domain](how-to-unload-an-application-domain.md)  
   
-- [How to: Configure an Application Domain](../../../docs/framework/app-domains/how-to-configure-an-application-domain.md)  
+- [How to: Configure an Application Domain](how-to-configure-an-application-domain.md)  
   
-- [How to: Load Assemblies into an Application Domain](../../../docs/framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)  
+- [How to: Load Assemblies into an Application Domain](how-to-load-assemblies-into-an-application-domain.md)  
   
 - [How to: Obtain Type and Member Information from an Assembly](../reflection-and-codedom/get-type-member-information.md)  
   
@@ -41,12 +41,12 @@ The following sections contain links to all How-to topics found in the conceptua
   
 - [How to: Install an Assembly into the Global Assembly Cache](install-assembly-into-gac.md)  
   
-- [How to: View the Contents of the Global Assembly Cache](../../../docs/framework/app-domains/how-to-view-the-contents-of-the-gac.md)  
+- [How to: View the Contents of the Global Assembly Cache](how-to-view-the-contents-of-the-gac.md)  
   
-- [How to: Remove an Assembly from the Global Assembly Cache](../../../docs/framework/app-domains/how-to-remove-an-assembly-from-the-gac.md)  
+- [How to: Remove an Assembly from the Global Assembly Cache](how-to-remove-an-assembly-from-the-gac.md)  
   
 - [How to: View Assembly Contents](../../standard/assembly/view-contents.md)  
   
 ## See also
 
-- [Application Domains and Assemblies](../../../docs/framework/app-domains/index.md)
+- [Application Domains and Assemblies](index.md)

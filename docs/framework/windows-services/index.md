@@ -21,19 +21,19 @@ Using Visual Studio or the .NET Framework SDK, you can easily create services by
 
 ## In this section
 
-[Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+[Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)
 
 Provides an overview of Windows service applications, the lifetime of a service, and how service applications differ from other common project types.
 
-[Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
+[Walkthrough: Creating a Windows Service Application in the Component Designer](walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
 
 Provides an example of creating a service in Visual Basic and Visual C#.
 
-[Service Application Programming Architecture](../../../docs/framework/windows-services/service-application-programming-architecture.md)
+[Service Application Programming Architecture](service-application-programming-architecture.md)
 
 Explains the language elements used in service programming.
 
-[How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+[How to: Create Windows Services](how-to-create-windows-services.md)
 
 Describes the process of creating and configuring Windows services using the Windows service project template.
 

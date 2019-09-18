@@ -56,7 +56,7 @@ ms.author: "ronpet"
  By default, <xref:System.Lazy%601> objects are thread-safe. That is, if the constructor does not specify the kind of thread safety, the <xref:System.Lazy%601> objects it creates are thread-safe. In multi-threaded scenarios, the first thread to access the <xref:System.Lazy%601.Value%2A> property of a thread-safe <xref:System.Lazy%601> object initializes it for all subsequent accesses on all threads, and all threads share the same data. Therefore, it does not matter which thread initializes the object, and race conditions are benign.  
   
 > [!NOTE]
-> You can extend this consistency to error conditions by using exception caching. For more information, see the next section, [Exceptions in Lazy Objects](../../../docs/framework/performance/lazy-initialization.md#ExceptionsInLazyObjects).  
+> You can extend this consistency to error conditions by using exception caching. For more information, see the next section, [Exceptions in Lazy Objects](lazy-initialization.md#ExceptionsInLazyObjects).  
   
  The following example shows that the same `Lazy<int>` instance has the same value for three separate threads.  
   
@@ -151,4 +151,4 @@ ms.author: "ronpet"
 - [Managed Threading Basics](../../standard/threading/managed-threading-basics.md)
 - [Threads and Threading](../../standard/threading/threads-and-threading.md)
 - [Task Parallel Library (TPL)](../../standard/parallel-programming/task-parallel-library-tpl.md)
-- [How to: Perform Lazy Initialization of Objects](../../../docs/framework/performance/how-to-perform-lazy-initialization-of-objects.md)
+- [How to: Perform Lazy Initialization of Objects](how-to-perform-lazy-initialization-of-objects.md)

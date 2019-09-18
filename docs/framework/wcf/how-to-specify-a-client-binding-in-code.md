@@ -19,7 +19,7 @@ In this example, a client is created to use a calculator service and the binding
   
 1. Use Svcutil.exe from the command line to generate code from service metadata.  
   
-    ```  
+    ```console  
     Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>   
     ```  
   

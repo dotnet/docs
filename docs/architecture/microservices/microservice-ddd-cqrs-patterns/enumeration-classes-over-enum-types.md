@@ -93,7 +93,7 @@ public class CardType : Enumeration
 
 - **CardType.cs**. Sample Enumeration class in eShopOnContainers. \
   <https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/BuyerAggregate/CardType.cs>
-    
+
 - **SmartEnum**. Ardalis - Classes to help produce strongly typed smarter enums in .NET. \
   <https://www.nuget.org/packages/Ardalis.SmartEnum/>
 

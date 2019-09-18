@@ -17,7 +17,7 @@ ms.date: 04/24/2019
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet build-server shutdown [--msbuild] [--razor] [--vbcscompiler]
 dotnet build-server shutdown [-h|--help]
 dotnet build-server [-h|--help]

@@ -1,15 +1,15 @@
 ---
-title: 'Predict prices using regression with Model Builder'
+title: 'Tutorial: Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 07/15/2019
+ms.date: 09/18/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
 ---
 
-# Predict prices using regression with Model Builder
+# Tutorial: Predict prices using regression with Model Builder
 
 Learn how to use ML.NET Model Builder to build a regression model() to predict prices.  The .NET console app that you develop in this tutorial predicts taxi fares based on historical New York taxi fare data.
 
@@ -85,17 +85,9 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 The machine learning task used to train the price prediction model in this tutorial is regression. During the model training process, Model Builder trains separate models using different regression algorithms and settings to find the best performing model for your dataset.
 
-The time required for the model to train is proportionate to the amount of data. Use this chart as guidance to select an adequate value for the `Time to train (seconds)` field:
+The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
 
-*Dataset Size  | Dataset Type       | Avg. Time to train*
-------------- | ------------------ | --------------
-0 - 10 Mb     | Numeric and Text   | 10 sec
-10 - 100 Mb   | Numeric and Text   | 10 min
-100 - 500 Mb  | Numeric and Text   | 30 min
-500 - 1 Gb    | Numeric and Text   | 60 min
-1 Gb+         | Numeric and Text   | 3 hour+
-
-1. Because the training data file is more than 10MB, use 600 seconds (10 minutes) as the value for *Time to train (seconds)*.
+1. Leave the default value as is for *Time to train (seconds)* unless you prefer to train for a longer time.
 2. Select *Start Training*.
 
 Throughout the training process, progress data is displayed in the `Progress` section of the train step.

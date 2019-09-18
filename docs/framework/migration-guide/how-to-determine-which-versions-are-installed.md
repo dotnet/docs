@@ -66,7 +66,7 @@ For information about detecting the installed updates for each version of the .N
 
 3. Check for a DWORD entry named **Release**. If it exists, then you have .NET Framework 4.5 or later versions installed. Its value is a release key that corresponds to a particular version of the .NET Framework. In the following figure, for example, the value of the **Release** entry is *378389*, which is the release key for .NET Framework 4.5.
 
-     ![Registry entry for the .NET Framework 4.5](media/clr-installdir.png "Registry entry for the .NET Framework 4.5")
+     ![Registry entry for the .NET Framework 4.5](./media/clr-installdir.png "Registry entry for the .NET Framework 4.5")
 
 The following table lists the value of the **Release** DWORD on individual operating systems for .NET Framework 4.5 and later versions.
 
@@ -157,7 +157,7 @@ To check for a different minimum-required .NET Framework version, replace *39480
 
     The following figure shows the subkey and its **Version** entry for the .NET Framework 3.5.
 
-    ![The registry entry for the .NET Framework 3.5.](media/net-4-and-earlier.png ".NET Framework 3.5 and earlier versions")
+    ![The registry entry for the .NET Framework 3.5.](./media/net-4-and-earlier.png ".NET Framework 3.5 and earlier versions")
 
 <a name="net_c"></a>
 

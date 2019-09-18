@@ -35,7 +35,7 @@ A Windows Workflow Foundation (WF) expression is any activity that returns a res
   
  When defining a workflow in code, any expression activities can be used. The following example shows the usage of a composition of operator activities to add three numbers.  
   
-```  
+```csharp  
 Variable<int> a = new Variable<int>("a", 1);  
 Variable<int> b = new Variable<int>("b", 2);  
 Variable<int> c = new Variable<int>("c", 3);  
@@ -64,7 +64,7 @@ Sequence w = new Sequence
   
  The same workflow can be expressed more compactly by using C# lambda expressions, as shown in the following example.  
   
-```  
+```csharp  
 Variable<int> a = new Variable<int>("a", 1);  
 Variable<int> b = new Variable<int>("b", 2);  
 Variable<int> c = new Variable<int>("c", 3);  
@@ -85,7 +85,7 @@ Sequence w = new Sequence
   
  The workflow can also be expressed by using Visual Basic expression activities, as shown in the following example.  
   
-```  
+```vb  
 Variable<int> a = new Variable<int>("a", 1);  
 Variable<int> b = new Variable<int>("b", 2);  
 Variable<int> c = new Variable<int>("c", 3);  
@@ -107,7 +107,7 @@ Sequence w = new Sequence
 ## Extending Available Expressions with Custom Expression Activities  
  Expressions in [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] are extensible allowing for additional expression activities to be created. The following example shows an activity that returns a sum of three integer values.  
   
-```  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -134,7 +134,7 @@ namespace ExpressionsDemo
   
  With this new activity you can rewrite the previous workflow that added three values as shown in the following example.  
   
-```  
+```csharp  
 Variable<int> a = new Variable<int>("a", 1);  
 Variable<int> b = new Variable<int>("b", 2);  
 Variable<int> c = new Variable<int>("c", 3);  

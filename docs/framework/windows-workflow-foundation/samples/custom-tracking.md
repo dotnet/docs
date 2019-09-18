@@ -41,7 +41,7 @@ public abstract class TrackingParticipant
 }
 ```
 
- The complete tracking participant is implemented in the ConsoleTrackingParticipant.cs file.The following code example is the <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> method for the custom tracking participant.
+ The complete tracking participant is implemented in the ConsoleTrackingParticipant.cs file. The following code example is the <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> method for the custom tracking participant.
 
 ```csharp
 protected override void Track(TrackingRecord record, TimeSpan timeout)

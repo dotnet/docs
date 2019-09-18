@@ -92,6 +92,8 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (17) **templates** contains the templates used by the SDK. For example, `dotnet new` finds project templates here.
 
+The folders marked with `(*)` are used by multiple packages. Some package formats (e.g. `rpm`) require special handling of such folders. The package maintainer must take care of this.
+
 ## Recommended packages
 
 .NET Core versioning is based on the runtime component `[major].[minor]` version numbers.
@@ -170,8 +172,6 @@ Most distributions require all artifacts to be built from source. This has some 
 - The `NuGetFallbackFolder` is populated using binary artifacts from `nuget.org`. It should remain empty.
 
 Multiple `dotnet-sdk` packages may provide the same files for the `NuGetFallbackFolder`. To avoid issues with the package manager, these files should be identical (checksum, modification date, and so on).
-
-The folders marked with `(*)` are used by multiple packages. Some package formats (e.g. `rpm`) require special handling of such folders. The package maintainer must take care of this.
 
 ## Building packages
 

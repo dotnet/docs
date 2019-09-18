@@ -1,10 +1,10 @@
 ### Modernization of the FolderBrowserDialog
 
-The <xref:System.Windows.Forms.FolderBrowserDialog> control has change in Windows Forms applications for .NET Core.
+The <xref:System.Windows.Forms.FolderBrowserDialog> control has changed in Windows Forms applications for .NET Core.
 
 #### Change description
 
-In the .NET Framework, Windows forms uses the following dialog for the <xref:System.Windows.Forms.FolderBrowserDialog> control.
+In the .NET Framework, Windows forms uses the following dialog for the <xref:System.Windows.Forms.FolderBrowserDialog> control:
 
 ![The FolderBrowserDialogControl in the .NET Framework](~/docs/images/core-changes/windowsforms/modernized-folderbrowserdialog/folderdlg-framework.png)
 
@@ -34,12 +34,12 @@ Windows Forms
 
 #### Affected APIs
 
-- None
+- <xref:System.Windows.Forms.FolderBrowserDialog>
 
 <!-- 
 
 ### Affected APIs
 
-Not detectable via API analysis
+- `System.Windows.Forms.FolderBrowserDialog`
 
 -->

@@ -84,7 +84,7 @@ HousingPrediction prediction = predictionEngine.Predict(inputData);
 
 If you access the `Score` property of the `prediction` object, you should get a value similar to `150079`.
 
-## Batch prediction
+## Multiple predictions
 
 Given the following data, load it into an [`IDataView`](xref:Microsoft.ML.IDataView). In this case, the name of the [`IDataView`](xref:Microsoft.ML.IDataView) is `inputData`. Because `CurrentPrice` is the target or label you're trying to predict using new data, it's assumed there is no value for it at the moment.
 

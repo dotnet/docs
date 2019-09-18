@@ -37,13 +37,13 @@ When it comes to creating and building your app, you have two choices - you can 
 
 [Get the .NET Core tools with Visual Studio](acquisition-experiences.md#Visual-Studio-for-Windows)
 
-[Get the .NET Core tools vith Visual Studio Code](acquisition-experiences.md#Visual-Studio-Code)
+[Get the .NET Core tools with Visual Studio Code](acquisition-experiences.md#Visual-Studio-Code)
 
 
 _There are several other ways to acquire the .NET Core SDK and Runtime, these options are covered in the [.NET Core Acquisition Experiences](acquisition-experiences.md) guide._
 
 
-Once you have acquired the tools, you're ready to build your app. Pick the approach that corresponds to whether in the previous step you chose to use an IDE like Visual Studio or Visual Studio for Mac or the CLI.
+Once you acquire the tools, you're ready to build your app. Pick the approach that corresponds to whether in the previous step you chose to use an IDE like Visual Studio or Visual Studio for Mac or the CLI.
 
 [Build your first .NET Core app using the Command Line Interface (CLI)](../tutorials/using-with-xplat-cli.md)
 
@@ -87,7 +87,7 @@ This document on [.NET Core Packaging](packaging.md) covers packaging your app a
 
 If you create a Framework-Dependent Deployment (FDD) for your app during the publish step, then you need to install the .NET Core Runtime on the target computer. There are several options for acquiring the .NET Core runtime, refer to the [.NET Core Acquisition Experiences](acquisition-experiences.md) guide to select the option that works best for you.
 
-If you chose to create a Self-Contained Deployment (SCD) during the publish step the latest .NET Core runtime is already included with your application, so there's nothing else to do.
+If you chose to create a Self-Contained Deployment (SCD) during the publish step the latest .NET Core runtime is included with your application, so there's nothing else to do.
 
 
 #### **Deploying your app without Packaging/an Installer**
@@ -126,7 +126,7 @@ As a DevOps Engineer you may be responsible for deploying the .NET Core tools an
 
 ### Step 1: Acquire the Core Runtime
 
-When it comes to acquiring the .NET Core runtime and tools, you have several options to choose from so you have the flexibility to pick the approach that is right for your needs. 
+When it comes to acquiring the .NET Core runtime and tools, there are several options to choose from so you have the flexibility to pick the approach that is right for your needs. 
 
 Various acquisition options for the .NET Core runtime and tools are covered in more detail in the [.NET Core Acquisition Experiences guide](acquisition-experiences.md).
 
@@ -142,7 +142,7 @@ When it comes to deploying the .NET Core runtime, you can again choose between v
 
 * Various [Azure App Services](acquisition-experiences.md#azure-app-services) support containers. You create a Docker image for your application and deploy it to one of these services.
  
-* The Azure DevOps pipeline supports the [.NET Core Installer Task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) which can be used to acquire a specific version of .NET Core from the Internet.
+* The Azure DevOps pipeline supports the [.NET Core Installer Task that can be used to acquire a specific version of .NET Core from the Internet.
 
 
 #### Deploying to on-premises clients/servers

@@ -63,7 +63,7 @@ Selecting any of the managed workloads for Web, Desktop or Azure development wil
 
 ![Install Visual Studio for Windows](media/install-vs-windows.png "Install Visual Studio for Windows")
 
-In recent previews of Visual Studio 2019 Update 3, we have made changes to the installation experience for .NET Core in order to make the experience more streamlined and efficient. More details about this can be found in the blog post [Improving .NET Core installation in Visual Studio and on Windows](https://devblogs.microsoft.com/dotnet/improving-net-core-installation-in-visual-studio-and-on-windows/). 
+In recent previews of Visual Studio 2019 Update 3, we have made changes to the installation experience for .NET Core in order to make the experience more streamlined. For more details, see the blog post [Improving .NET Core installation in Visual Studio and on Windows](https://devblogs.microsoft.com/dotnet/improving-net-core-installation-in-visual-studio-and-on-windows/). 
 
 
 
@@ -80,8 +80,9 @@ For more information about .NET Core development on MacOS, see [Get started with
 
 ## Visual Studio Code
 
-Visual Studio Code is a lightweight but powerful source code editor that runs on your desktop and is available for Windows, MacOS, and Linux. 
-While VS Code does not come with .NET Core support in the box, adding .NET Core support is straightforward. You can do this with only a couple of steps.
+Visual Studio Code is a powerful, but lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, MacOS, and Linux.
+
+While VS Code doesn't come with .NET Core support in the box, adding .NET Core support is straightforward. You can add support in a couple of steps.
 
 1. [Install .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 2. [Install the C# extension for VS Code from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
@@ -96,7 +97,7 @@ This site provides downloads for the native installers (MSI for Windows, PKG for
 
 ## Dotnet-install.ps1/.sh Scripts
 
-The dotnet-install scripts are used to perform a non-admin installation of the .NET Core SDK. The .NET Core SDK includes both the .NET Core CLI tools and the shared runtime.
+The dotnet-install scripts are used to perform a non-admin installation of the .NET Core SDK.
 
 The primary usage scenario of these scripts is in automation scenarios and non-admin installations. 
 There are two scripts: one is a PowerShell script that works on Windows and everywhere that PowerShell is supported including [Linux](https://azure.microsoft.com/blog/powershell-is-open-sourced-and-is-available-on-linux/) and [MacOS](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6). The other is a bash script that works on Linux/MacOS. Both scripts have the same behavior.
@@ -131,7 +132,7 @@ You can find more information about deploying your app in a container in the doc
 
 ## Linux Package Managers
 
-* .NET Core packages are available in native package managers for various Linux distros encompassing .deb and .rpm based systems. 
+* .NET Core packages are available in native package managers for various Linux distros encompassing `.deb` and `.rpm` based systems. 
 
   Information about getting .NET Core using a package manager can be found in the document titled [Preparing your Linux system for .NET Core – Using a package manager](https://github.com/dotnet/core/blob/4b39c16ccae64a69799f642f49f3fbf742623a9c/Documentation/linux-setup.md#installation-using-a-package-manager).
 
@@ -142,7 +143,7 @@ You can find more information about deploying your app in a container in the doc
 
 ### Red Hat Enterprise Linux
 
-If you are using Red Hat Enterprise Linux, Red Hat supports .NET Core within their software collections repositories. More information is available here: [Red Hat Product Documentation for .NET Core](https://access.redhat.com/documentation/en-us/net_core)
+If you are using Red Hat Enterprise Linux, Red Hat supports .NET Core within their software collections repositories. For more information, see: [Red Hat Product Documentation for .NET Core](https://access.redhat.com/documentation/en-us/net_core)
 
 Starting with Red Hat Enterprise Linux 8, you can find the .NET Core Runtime & tools directly as the “dotnet” package in the [AppStream repository](https://developers.redhat.com/blog/2018/11/15/rhel8-introducing-appstreams/).
 
@@ -156,7 +157,7 @@ Azure DevOps provides a Task that can be used in build or release pipelines to d
 
 ## Snap Store
 
-Snaps are an emerging application installation and sandboxing technology. These are app packages that are easy to install, work across multiple distros of Linux and dependency-free. 
+Snaps are an emerging application installation and sandboxing technology. They are app packages that are easy to install, work across multiple distros of Linux and dependency-free. 
 
 The [Snap Store](https://snapcraft.io/store) provides a place to upload snaps, and for users to browse and install snaps. [Snaps](https://forum.snapcraft.io/t/system-options/87) update automatically but you can manually control when and how often these updates.
 
@@ -174,5 +175,5 @@ Visit [Snapcraft.io](https://snapcraft.io/) for guidance on preparing your syste
 
 ## Updates and Notifications
 
-For acquisition methods that do not update automatically, .NET Core provides a robust metadata file for discovering updates, allowing the provisioning of updates across development, CI/CD and application target machines. For more information about this, see [.NET Core Update Discovery](../update-discovery-and-deploy.md).
+For acquisition methods that do not update automatically, .NET Core provides a robust metadata file for discovering updates, allowing the provisioning of updates across development, CI/CD, and application target machines. For more information, see [.NET Core Update Discovery](../update-discovery-and-deploy.md).
 

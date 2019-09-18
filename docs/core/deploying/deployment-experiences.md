@@ -9,16 +9,18 @@ ms.custom:
 # .NET Core Deployment Experiences
 
 ## Full Installers
-.NET Core major and minor releases as well as servicing updates always ship as the full product installers, that is the installer carries the entire product even if only a subset of the files are updated.
+.NET Core major and minor releases, and servicing updates always ship as the full product installers, that is the installer carries the entire product even if only a subset of the files is updated.
 
 ## Side by Side installs versus in-place updates
-Before .NET Core 3.0, all .NET Core releases including servicing updates were fully side-by-side installs. If you had installed a minor version, and then installed another minor release or even a patch release for the minor release, both the original and patch versions would always be installed in discrete install locations. 
+Before .NET Core 3.0, all .NET Core releases including servicing updates were fully side-by-side installs. If you installed a minor version, and then installed another minor release or even a patch release for the minor release, both the original and patch versions would always be installed in discrete install locations. 
 
 For example, installing the .NET Core 2.2.14 update when you already have the .NET Core 2.2.13 update installed will result in both .NET Core 2.2.13 and .NET Core 2.2.14 being present on the computer. 
 
-As customers installed multiple updates and the updates accumulated on disk, we received strong feedback that the experience was not desirable. Therefore, changes were made to the installer in .NET Core 3.0.
+As customers installed multiple updates each of these installed side by side and accumulated on disk. We received strong feedback that the experience was undesirable. To address this feedback, changes were made to the installer in .NET Core 3.0.
 
-In .NET Core 3.0 and later versions, new major and minor releases continue to install side by side with earlier major and minor releases. **_Successfully installation of a new patch version will remove any earlier patches for the same minor release._** 
+In .NET Core 3.0 and later versions, new major and minor releases continue to install side by side with earlier major and minor releases. 
+
+**_Successfully installation of a new patch version will remove any earlier patches for the same minor release._** 
 
 For example, installing 3.0.2 when you already have 3.0.1 installed will result in 3.0.2 replacing 3.0.1.
 

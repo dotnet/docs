@@ -125,7 +125,10 @@ At a high level, this code initializes the objects and services automatically wh
 > [!WARNING]
 > [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. For improved performance and thread safety, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of `PredictionEngine` objects for application use. 
 
-Machine learning models are not static and are retrained and redeployed at periodic intervals. One way to get the latest version of the model into your application is to re-deploy the application. However, this means that you would need to account for downtime in your application. This may be undesirable especially when the machine learning components are not a mission-critical part of your application. Fortunately, the `PredictionEnginePool` service does that for you. In the example above, by setting the `watchForChanges` parameter to `true`, the `PredictionEnginePool` starts a [`FileSystemWatcher`](xref:System.IO.FileSystemWatcher) that listens to the file system change notifications and raises events when there is a change to the file. This prompts the `PredictionEnginePool` to automatically reload the model without having to redeploy the application. Similar functionality is available in the `FromUri` method, although the strategy used in that instance is polling. For models stored remotely, the `PredictionEnginePool` polls the remote location for changes every five minutes by default. Depending on your requirements, you can increase or decrease the polling time accordingly. 
+Machine learning models are not static and are retrained and redeployed at periodic intervals. One way to get the latest version of the model into your application is to redeploy the application. However, this means that you would need to account for downtime in your application. This may be undesirable especially when the machine learning components are not a mission-critical part of your application. Fortunately, the `PredictionEnginePool` service does that for you. In the example above, by setting the `watchForChanges` parameter to `true`, the `PredictionEnginePool` starts a [`FileSystemWatcher`](xref:System.IO.FileSystemWatcher) that listens to the file system change notifications and raises events when there is a change to the file. This prompts the `PredictionEnginePool` to automatically reload the model without having to redeploy the application. The model is also given a name by using the `modelName` parameter. In the event you have multiple models hosted in your application, this is a way of referencing them. Similar functionality is available in the `FromUri` method, although the strategy used in that instance is polling. For models stored remotely, the `PredictionEnginePool` polls the remote location for changes every five minutes by default. Depending on your requirements, you can increase or decrease the polling interval accordingly. 
+
+> [!NOTE]
+> The default value for the `watchForChanges` in the `FromUri` method is `true`. Therefore, you only need to provide a file path and the model will reload by default. 
 
 ## Load the model into the function
 
@@ -141,7 +144,7 @@ Replace the existing implementation of *Run* method in *AnalyzeSentiment* class 
 
 [!code-csharp [AnalyzeFunction](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/AnalyzeSentiment.cs#L26-L45)]
 
-When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the `PredictionEnginePool`. The `Predict` method is then called to generate a prediction and return the result to the user. 
+When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the `PredictionEnginePool`. The `Predict` method is then called to to make predictions using the `SentimentAnalysisModel` registered in the `Startup` class and returns the results back to the user if successful.
 
 ## Test locally
 

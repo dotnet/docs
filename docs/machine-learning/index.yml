@@ -45,6 +45,8 @@ landingContent:
             url: /tutorials/image-classification.md
           - text: Classify customer support issues
             url: /tutorials/github-issue-classification.md
+          - text: Detect objects in images using ONNX
+            url: /tutorials/object-detection-onnx.md
   # Card (optional)
   - title: Model Builder and CLI
     linkLists:
@@ -53,9 +55,9 @@ landingContent:
           - text: Predict prices - Model Builder
             url: /tutorials/predict-prices-with-model-builder.md
           - text: Analyze sentiment - AutoML CLI
-            url: /tutorials/mlnet-cli?tabs=windows.md
-          - text: Analyze sentiment - Model Builder & Razor Pages
-            url: /tutorials/mlnet-cli?tabs=windows.md
+            url: /tutorials/mlnet-cli.md
+          - text: Build a Razor Pages web app to analyze sentiment
+            url: /tutorials/sentiment-analysis-model-builder.md
 
   # Concepts card
   - title: Machine learning concepts

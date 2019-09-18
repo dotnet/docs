@@ -1,6 +1,6 @@
 ---
 title: Appendix - gRPC for WCF Developers
-description: Explanation of why distributed transactions are not supported in gRPC
+description: Discussion of distributed transactions and their implementation in modern microservices architectures
 author: markrendle
 ms.date: 09/02/2019
 ---

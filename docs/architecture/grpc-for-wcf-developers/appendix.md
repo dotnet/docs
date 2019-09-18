@@ -17,7 +17,7 @@ If at all possible, it is best to avoid distributed transactions altogether. If 
 
 If that is not possible, then one alternative is to use the Saga pattern. In a saga, updates are processing sequentially; as each update succeeds the next one is triggered. These triggers can be propagated from service to service, or managed by a Saga coordinator or "orchestrator". If an update fails at any point during the process, the services that have already completed their updates apply specific logic to reverse them.
 
-Another option is to use Domain Driven Design (DDD) and Command/Query Responsibility Segregation (CQRS), as described in the [.NET Microservices e-book](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/). In particular, using domain events or [event sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) can help to ensure that updates are consistently&mdash;if not immediately&mdash;applied.
+Another option is to use Domain Driven Design (DDD) and Command/Query Responsibility Segregation (CQRS), as described in the [.NET Microservices e-book](https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/). In particular, using domain events or [event sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) can help to ensure that updates are consistently&mdash;if not immediately&mdash;applied.
 
 >[!div class="step-by-step"]
 <!-->[Next](introduction.md)-->

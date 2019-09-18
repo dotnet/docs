@@ -114,11 +114,14 @@ The following link provides more information if you want to learn about [depende
 
     The *Startup.cs* file opens in the code editor. Add the following using statement to the top of *Startup.cs*:
 
-    [!code-csharp [StartupUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L1-L4)]
+    ```csharp
+    ```
 
     Remove the existing code below the using statements and add the following code to the *Startup.cs* file:
 
-    [!code-csharp [Startup](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L6-L17)]
+    ```csharp
+
+    ```
 
 At a high level, this code initializes the objects and services automatically when requested by the application instead of having to manually do it. 
 
@@ -142,7 +145,28 @@ This code assigns the `PredictionEnginePool` by passing it to the function's con
 
 Replace the existing implementation of *Run* method in *AnalyzeSentiment* class with the following code:
 
-[!code-csharp [AnalyzeFunction](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/AnalyzeSentiment.cs#L26-L45)]
+```csharp
+[FunctionName("AnalyzeSentiment")]
+public async Task<IActionResult> Run(
+[HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
+ILogger log)
+{
+    log.LogInformation("C# HTTP trigger function processed a request.");
+
+    //Parse HTTP Request Body
+    string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+    SentimentData data = JsonConvert.DeserializeObject<SentimentData>(requestBody);
+
+    //Make Prediction
+    SentimentPrediction prediction = _predictionEnginePool.Predict(modelName: "SentimentAnalysisModel", example: data);
+
+    //Convert prediction to string
+    string sentiment = Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative";
+
+    //Return Prediction
+    return (ActionResult)new OkObjectResult(sentiment);
+}
+```
 
 When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the `PredictionEnginePool`. The `Predict` method is then called to to make predictions using the `SentimentAnalysisModel` registered in the `Startup` class and returns the results back to the user if successful.
 

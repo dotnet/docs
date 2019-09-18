@@ -192,13 +192,13 @@ To specify a component parameter in Blazor, use an attribute as you would in ASP
 
 Both ASP.NET Web Forms and Blazor provide an event-based programming model for handling UI events. Examples of such events include button clicks and text input. In ASP.NET Web Forms, you use HTML server controls to handle UI events exposed by the DOM, or you can handle events exposed by web server controls. The events are surfaced on the server through form post-back requests. For example:
 
-*Default.aspx*
+*Counter.ascx*
 
 ```aspx-csharp
 <asp:Button ID="ClickMeButton" runat="server" Text="Click me!" OnClick="ClickMeButton_Click" />
 ```
 
-*Default.aspx.cs*
+*Counter.ascx.cs*
 
 ```csharp
 protected void ClickMeButton_Click(object sender, EventArgs e)

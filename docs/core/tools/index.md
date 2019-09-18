@@ -99,7 +99,7 @@ CLI command structure consists of [the driver ("dotnet")](#driver), [the command
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-```console
+```dotnetcli
 dotnet new console
 dotnet build --output /build_output
 dotnet /build_output/my_app.dll
@@ -107,7 +107,7 @@ dotnet /build_output/my_app.dll
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```console
+```dotnetcli
 dotnet new console
 dotnet restore
 dotnet build --output /build_output
@@ -124,8 +124,8 @@ To run a framework-dependent app, specify the app after the driver, for example,
 
 When you supply a command to the driver, `dotnet.exe` starts the CLI command execution process. For example:
 
-```bash
-> dotnet build
+```dotnetcli
+dotnet build
 ```
 
 First, the driver determines the version of the SDK to use. If there is no ['global.json'](global-json.md), the latest version of the SDK available is used. This might be either a preview or stable version, depending on what is latest on the machine.  Once the SDK version is determined, it executes the command.

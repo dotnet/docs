@@ -17,7 +17,7 @@ ms.date: 08/08/2019
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--interactive] 
     [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output] [--runtime] [-s|--serviceable] 
     [-v|--verbosity] [--version-suffix]
@@ -121,54 +121,54 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 - Pack the project in the current directory:
 
-  ```console
+  ```dotnetcli
   dotnet pack
   ```
 
 - Pack the `app1` project:
 
-  ```console
+  ```dotnetcli
   dotnet pack ~/projects/app1/project.csproj
   ```
 
 - Pack the project in the current directory and place the resulting packages into the `nupkgs` folder:
 
-  ```console
+  ```dotnetcli
   dotnet pack --output nupkgs
   ```
 
 - Pack the project in the current directory into the `nupkgs` folder and skip the build step:
 
-  ```console
+  ```dotnetcli
   dotnet pack --no-build --output nupkgs
   ```
 
 - With the project's version suffix configured as `<VersionSuffix>$(VersionSuffix)</VersionSuffix>` in the *.csproj* file, pack the current project and update the resulting package version with the given suffix:
 
-  ```console
+  ```dotnetcli
   dotnet pack --version-suffix "ci-1234"
   ```
 
 - Set the package version to `2.1.0` with the `PackageVersion` MSBuild property:
 
-  ```console
+  ```dotnetcli
   dotnet pack -p:PackageVersion=2.1.0
   ```
 
 - Pack the project for a specific [target framework](../../standard/frameworks.md):
 
-  ```console
+  ```dotnetcli
   dotnet pack -p:TargetFrameworks=net45
   ```
 
 - Pack the project and use a specific runtime (Windows 10) for the restore operation (.NET Core SDK 2.0 and later versions):
 
-  ```console
+  ```dotnetcli
   dotnet pack --runtime win10-x64
   ```
 
 - Pack the project using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec):
 
-  ```console
+  ```dotnetcli
   dotnet pack ~/projects/app1/project.csproj -p:NuspecFile=~/projects/app1/project.nuspec -p:NuspecBasePath=~/projects/app1/nuget
   ```

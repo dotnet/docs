@@ -20,10 +20,10 @@ AKS clusters can scale in one of two ways:
 - The [cluster autoscaler](https://docs.microsoft.com/azure/aks/cluster-autoscaler) watches for pods that can't be scheduled on nodes because of resource constraints. It adds additional nodes as required.
 - The **horizontal pod autoscaler** uses the Metrics Server in a Kubernetes cluster to monitor the resource demands of pods. If a service needs more resources, the autoscaler increases the number of pods.
 
-Figure 3-19 shows the relationship between these two scaling services.
+Figure 3-13 shows the relationship between these two scaling services.
 
 ![Scaling out an App Service plan.](./media/aks-cluster-autoscaler.png)
-**Figure 3-19**. Scaling out an App Service plan.
+**Figure 3-13**. Scaling out an App Service plan.
 
 These services can also decrease the number of pods or nodes as needed. These two services can work together and are often deployed together in a cluster. When combined, the horizontal pod autoscaler is focused on running the number of pods required to meet application demand. The cluster autoscaler is focused on running the number of nodes required to support the scheduled pods.
 
@@ -39,5 +39,5 @@ Azure Functions automatically support scaling out. The default consumption plan 
 - [Azure Functions scale and hosting](https://docs.microsoft.com/azure/azure-functions/functions-scale)
 
 >[!div class="step-by-step"]
->[Previous](centralized-configuration.md)
->[Next](leverage-containers-orchestrators.md)
+>[Previous](deploy-containers-azure.md)
+>[Next](other-deployment-options.md)

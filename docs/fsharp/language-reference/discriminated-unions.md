@@ -136,7 +136,7 @@ Instead of a virtual method to compute an area or perimeter, as you would use in
 
 The output is as follows:
 
-```
+```console
 Area of circle that has radius 15.000000: 706.858347
 Area of square that has side 10.000000: 100.000000
 Area of rectangle that has height 5.000000 and width 10.000000 is 50.000000

@@ -371,7 +371,7 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 ## Indices and ranges
 
-Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
+Ranges and indices provide a succinct syntax for specifying subranges in an array, [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
 
 This language support relies on two new types, and two new operators:
 

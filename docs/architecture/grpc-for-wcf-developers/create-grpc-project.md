@@ -1,6 +1,6 @@
 ---
 title: Create a new ASP.NET Core gRPC project - gRPC for WCF Developers
-description: Creating a gRPC project using Visual Studio or from the command line
+description: Learn how to create a gRPC project using Visual Studio or from the command line.
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -12,21 +12,21 @@ ms.date: 09/02/2019
 ## Using Visual Studio 2019
 
 > [!IMPORTANT]
-> To work with any .NET Core 3.0 code, you will need at least Visual Studio 2019.3.
+> To develop any .NET Core 3.0 app, you need Visual Studio 2019.3 or later versions.
 
-Create an empty solution called **TraderSys** from the *Blank Solution* template. Add a Solution Folder called `src`, then right-click on the folder and choose *Add -> New Project...* from the context menu. Enter `grpc` in the template search box and you should see a project template called `gRPC Service`.
+Create an empty solution called **TraderSys** from the *Blank Solution* template. Add a Solution Folder called `src`, then right-click on the folder and choose **Add** > **New Project** from the context menu. Enter `grpc` in the template search box and you should see a project template called `gRPC Service`.
 
 ![Add new project dialog showing gRPC Service project template](images/vs2019-new-grpc-project.PNG)
 
-Click *Next* to proceed to the *Configure project* dialog and name the project `TraderSys.Portfolios`, and add an `src` sub-directory to the *Location*.
+Click **Next** to continue to the **Configure project** dialog and name the project `TraderSys.Portfolios`, and add an `src` subdirectory to the **Location**.
 
 ![Configure project dialog](images/vs2019-configure-project.png)
 
-Click *Next* to proceed to the *New gRPC project* dialog.
+Click **Next** to continue to the **New gRPC project** dialog.
 
 ![New gRPC Project dialog](images/vs2019-create-new-grpc-service.png)
 
-At present there are limited options for the service creation. Docker will be introduced later in the book, so leave that checkbox unchecked for now and just click *Create*. Your first ASP.NET Core 3.0 gRPC project will be generated and added to the solution ready to work with. If you don't want to know about working with the `dotnet CLI`, skip to [Clean up the example code](#Clean-up-the-example-code) below.
+At present, there are limited options for the service creation. Docker will be introduced later in the book, so leave that checkbox unchecked for now and just click **Create**. Your first ASP.NET Core 3.0 gRPC project is generated and added to the solution. If you don't want to know about working with the `dotnet CLI`, skip to the [Clean up the example code](#clean-up-the-example-code) section.
 
 ## Using the `dotnet` CLI
 
@@ -43,7 +43,7 @@ dotnet new sln
 > [!TIP]
 > The `dotnet new sln` command will use the name of the current directory as the name of the `.sln` file. You can override this behavior by specifying a name with the `--name` flag.
 
-ASP.NET Core 3.0 comes with a CLI template for gRPC services. Create the new project using this template, putting it into an `src` sub-directory as is the convention for ASP.NET Core projects.
+ASP.NET Core 3.0 comes with a CLI template for gRPC services. Create the new project using this template, putting it into an `src` subdirectory as is the convention for ASP.NET Core projects.
 
 ```console
 dotnet new grpc -o src/TraderSys.Portfolios
@@ -65,7 +65,7 @@ You can now open this solution in Visual Studio 2019, Visual Studio Code, or wha
 
 ## Clean up the example code
 
-The gRPC template has helpfully created an example service for us, which was reviewed earlier in the book. This is not very useful in our stock trading context, so we'll edit things for our first project.
+You've now created an example service using the gRPC template, which was reviewed earlier in the book. This isn't useful in our stock trading context, so we'll edit things for our first project.
 
 ### Rename and edit the proto file
 
@@ -86,9 +86,9 @@ service Portfolios {
 > [!TIP]
 > The template doesn't add the `Protos` namespace part by default, but adding it makes it easier to keep gRPC-generated classes and your own classes clearly separated in your code.
 
-If you rename the `greet.proto` file in an IDE like Visual Studio, a reference to it in the `.csproj` file will be automatically updated. But in VS Code or some other editors this may not happen, and you'll need to edit the project file manually.
+If you rename the `greet.proto` file in an integrated development environment (IDE) like Visual Studio, a reference to this file is automatically updated in the `.csproj` file. But in some other editor, such as Visual Studio Code, this reference isn't updated automatically, so you need to edit the project file manually.
 
-There is a `Protobuf` item element included in the gRPC build targets that lets you specify which `.proto` files should be compiled and which form of code generation is required (i.e. "Server" or "Client").
+In the gRPC build targets, there's a `Protobuf` item element that lets you specify which `.proto` files should be compiled and which form of code generation is required (that is, "Server" or "Client").
 
 ```xml
 <ItemGroup>
@@ -103,11 +103,10 @@ The `GreeterService` class is in the `Services` folder and inherits from `Greete
 ```csharp
 public class PortfolioService : Portfolios.PortfoliosBase
 {
-
 }
 ```
 
-There was a reference to the `GreeterService` class in the `Configure` method in the `Startup` class. If you used refactoring to rename the class this reference should have been updated automatically, but if you didn't you'll need to edit it manually.
+There was a reference to the `GreeterService` class in the `Configure` method in the `Startup` class. If you used refactoring to rename the class, this reference should have been updated automatically. However, if you didn't, you need to edit it manually.
 
 ```csharp
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

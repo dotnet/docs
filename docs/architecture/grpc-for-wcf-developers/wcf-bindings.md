@@ -7,11 +7,11 @@ ms.date: 09/02/2019
 
 # WCF bindings and transports
 
-WCF has lots of different built-in *bindings* that specify different network protocols, wire formats, and other implementation details. gRPC effectively has just one network protocol and one wire format. However, you're still likely to discover that gRPC offers the best solution in most cases. What follows is a short discussion about the most relevant WCF bindings and how they compare to their equivalent in gRPC.
+WCF has lots of different built-in *bindings* that specify different network protocols, wire formats, and other implementation details. gRPC effectively has just one network protocol and one wire format (technically the wire format *may* be customized, but that is beyond the scope of this book). You are likely to discover that gRPC offers the best solution in most cases. What follows is a short discussion about the most relevant WCF bindings and how they compare to their equivalent in gRPC.
 
 ## NetTCP
 
-WCF's NetTCP binding allows for persistent connections, small messages, and two-way messaging but only works between .NET clients and servers. gRPC allows the same functionality but based on an open standard. gRPC has almost all the features of WCF NetTCP binding, although not always in the same way. For example, in WCF, encryption is controlled through configuration and handled in the framework. In gRPC, encryption is achieved at the connection level using HTTP/2 over SSL/TLS.
+WCF's NetTCP binding allows for persistent connections, small messages, and two-way messaging but only works between .NET clients and servers. gRPC allows the same functionality but based on an open standard. gRPC has almost all the features of WCF NetTCP binding, although not always in the same way. For example, in WCF, encryption is controlled through configuration and handled in the framework. In gRPC, encryption is achieved at the connection level using HTTP/2 over TLS.
 
 ## HTTP
 

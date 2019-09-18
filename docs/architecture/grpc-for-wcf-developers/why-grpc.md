@@ -19,7 +19,7 @@ Additional reasons why gRPC stands above other solutions are:
 
 ### Performance
 
-As already discussed, using HTTP/2 rather than HTTP/1.1 removes the requirement for human-readable messages and instead uses the smaller faster binary protocol. This is more efficient for computers to parse. HTTP/2 also supports multiplexing requests over a single connection enabling responses to be sent as soon as they're ready without the need to wait in a queue. Fewer resources are needed when using gRPC, which makes it a good solution to use for mobile devices and over slower networks.
+As already discussed, using HTTP/2 rather than HTTP/1.1 removes the requirement for human-readable messages and instead uses the smaller faster binary protocol. This is more efficient for computers to parse. HTTP/2 also supports multiplexing requests over a single connection enabling responses to be sent as soon as they're ready without the need to wait in a queue (an issue in HTTP/1.1 known as "head-of-line (HOL) blocking"). Fewer resources are needed when using gRPC, which makes it a good solution to use for mobile devices and over slower networks.
 
 ### Interoperability
 
@@ -27,7 +27,7 @@ There are gRPC tools and libraries for all major programming languages and platf
 
 ### Usability and productivity
 
-gRPC is a comprehensive RPC solution. It has thoroughly addressed the full range of connectivity issues. gRPC works consistently across multiple languages. gRPC provides excellent tooling with much of the boilerplate auto-generated. So, more developer time is freed up to focus on business logic.
+gRPC is a comprehensive RPC solution. It has thoroughly addressed the full range of networking and connectivity concerns. gRPC works consistently across multiple languages. gRPC provides excellent tooling, with much of the boilerplate auto-generated, so more developer time is freed up to focus on business logic.
 
 ### Streaming
 
@@ -35,11 +35,11 @@ gRPC has full bidirectional streaming, which is very similar to WCF's Full Duple
 
 ### Deadline/timeouts and cancellation
 
-gRPC allows clients to specify a maximum time for an RPC to complete. If the deadline is exceeded the server can cancel the operation. Deadlines and cancellations can be propagated through further gRPC calls to help enforce resource usage limits.
+gRPC allows clients to specify a maximum time for an RPC to complete. If the specified deadline is exceeded the server can cancel the operation independently of the client. Deadlines and cancellations can be propagated through further gRPC calls to help enforce resource usage limits. Clients may also abort operations when a deadline is exceeded, or earlier if necessary (e.g. due to a user interaction).
 
 ### Security
 
-gRPC is implicitly secure when using HTTP/2 over an SSL/TLS end-to-end encrypted connection. Support for Client Certificate authentication (see chapter 6) further increases security and trust between client and server.
+gRPC is implicitly secure when using HTTP/2 over an TLS end-to-end encrypted connection. Support for Client Certificate authentication (see chapter 6) further increases security and trust between client and server.
 
 >[!div class="step-by-step"]
 <!-->[Next](protocol-buffers.md)-->

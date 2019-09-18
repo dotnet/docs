@@ -1,7 +1,7 @@
 ---
 title: Identity
 description: Architecting Cloud Native .NET Apps for Azure | Identity
-ms.date: 06/30/2019
+ms.date: 09/23/2019
 ---
 # Identity
 
@@ -24,5 +24,5 @@ Typically, the STS is only responsible for authenticating the principal. Determi
 - [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/)
 
 >[!div class="step-by-step"]
->[Previous](identity.md)
+>[Previous](azure-monitor.md)
 >[Next](authentication-authorization.md)

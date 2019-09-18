@@ -17,6 +17,7 @@ Training an object detection model from scratch requires setting millions of par
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Understand the problem
 > - Learn what ONNX is and how it works with ML.NET
 > - Understand the model
@@ -706,6 +707,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Understand the problem
 > - Learn what ONNX is and how it works with ML.NET
 > - Understand the model

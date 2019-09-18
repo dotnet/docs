@@ -159,7 +159,7 @@ This topic outlines the basic steps required to create and dynamically update th
 ## Example  
  Following is a complete listing of the console application used in this example.  
   
-```  
+```csharp
 //-----------------------------------------------------------------  
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.  
 //-----------------------------------------------------------------  

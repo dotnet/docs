@@ -11,7 +11,7 @@ ms.author: "mairaw"
 # Clrver.exe (CLR Version Tool)
 The CLR Version tool (Clrver.exe) reports all the installed versions of the common language runtime (CLR) on the computer.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -52,5 +52,5 @@ clrver [option]
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

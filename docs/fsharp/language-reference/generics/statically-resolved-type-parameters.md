@@ -9,7 +9,7 @@ A *statically resolved type parameter* is a type parameter that is replaced with
 
 ## Syntax
 
-```
+```fsharp
 ˆtype-parameter
 ```
 
@@ -46,7 +46,7 @@ when (^a or ^b) : (static member ( + ) : ^a * ^b -> ^d) and
 
 The output is as follows.
 
-```
+```console
 2
 1.500000
 ```

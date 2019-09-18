@@ -42,7 +42,7 @@ The rotation method can be overridden, as in the Circle class, which is rotation
 
 **Output:**
 
-```
+```console
 Perimeter of square with side length 10.000000 is 40.000000
 Circumference of circle with radius 5.000000 is 31.415927
 Area of Square: 100.000000

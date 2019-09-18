@@ -41,6 +41,7 @@ The following example shows the complete query operation. The complete operation
 ## Next steps
 
 To learn more details about LINQ, start by becoming familiar with some basic concepts in [Query expression basics](../../../linq/query-expression-basics.md), and then read the documentation for the LINQ technology in which you are interested:   
+
 - XML documents: [LINQ to XML](linq-to-xml.md)  
   
 - ADO.NET Entity Framework: [LINQ to entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md)  
@@ -54,3 +55,4 @@ To start working with LINQ in C#, see the tutorial [Working with LINQ](../../../
 ## See also
 
 - [Language-Integrated Query (LINQ) (C#)](./index.md)
+ 

@@ -16,7 +16,7 @@ With Windows Presentation Foundation (WPF) you can customize an existing control
 
 ## Create a style
 
-You can think of a <xref:System.Windows.Style> as a convenient way to apply a set of property values to multiple elements. You can use a style on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> such as a <xref:System.Windows.Window> or a <xref:System.Windows.Controls.Button>.
+You can think of a <xref:System.Windows.Style> as a convenient way to apply a set of property values to one or more elements. You can use a style on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> such as a <xref:System.Windows.Window> or a <xref:System.Windows.Controls.Button>.
 
 The most common way to declare a style is as a resource in the `Resources` section in a XAML file. Because styles are resources, they obey the same scoping rules that apply to all resources. Put simply, where you declare a style affects where the style can be applied. For example, if you declare the style in the root element of your application definition XAML file, the style can be used anywhere in your application.
 
@@ -26,9 +26,11 @@ If you declare the style in one of the application's XAML files, the style can b
 
 [!code-xaml[AppResources](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/WindowSingleResource.xaml#WindowResources)]
 
+A style is made up of `<Setter>` child elements that set properties on the elements the style is applied to. In the example above, notice that the style is set to apply to `TextBlock` types through the `TargetType` attribute. The style will set the <xref:System.Windows.Controls.Control.FontSize%2A> to `15` and the <xref:System.Windows.Controls.Control.FontWeight%2A> to `ExtraBold`. Add a `<Setter>` for each property the style changes.
+
 ## Apply a style implicitly
 
-You can think of a <xref:System.Windows.Style> as a convenient way to apply a set of property values to more than one element. For example, consider the following <xref:System.Windows.Controls.TextBlock> elements and their default appearance in a window:
+A <xref:System.Windows.Style> is a convenient way to apply a set of property values to more than one element. For example, consider the following <xref:System.Windows.Controls.TextBlock> elements and their default appearance in a window:
 
 [!code-xaml[TextBlocks](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#SnippetTextBlocks)]
 
@@ -38,7 +40,7 @@ You can change the default appearance by setting properties, such as <xref:Syste
 
 [!code-xaml[DefaultTextBlockStyle](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#SnippetDefaultTextBlockStyle)]
 
-When you set the <xref:System.Windows.Style.TargetType%2A> of your style to the <xref:System.Windows.Controls.TextBlock> type and omit the `x:Key` attribute, the style is applied to all the <xref:System.Windows.Controls.TextBlock> elements in the xaml file.
+When you set the <xref:System.Windows.Style.TargetType%2A> of your style to the <xref:System.Windows.Controls.TextBlock> type and omit the `x:Key` attribute, the style is applied to all the <xref:System.Windows.Controls.TextBlock> elements scoped to the style, which is generally the XAML file itself.
 
 Now the <xref:System.Windows.Controls.TextBlock> elements appear as follows:
 
@@ -48,7 +50,7 @@ Now the <xref:System.Windows.Controls.TextBlock> elements appear as follows:
 
 If you add an `x:Key` attribute with value to the style, the style is no longer implicitly applied to all elements of <xref:System.Windows.Style.TargetType%2A>. Only elements that explicitly reference the style will have the style applied to them.
 
-Here is the style from the previous section declared with an `x:Key` attribute:
+Here is the style from the previous section, but declared with the `x:Key` attribute:
 
 [!code-xaml[ExplicitStyleDeclare](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/WindowExplicitStyle.xaml#ExplicitStyleDeclare)]
 
@@ -56,11 +58,9 @@ To apply the style, set the <xref:System.Windows.FrameworkElement.Style%2A> prop
 
 [!code-xaml[ExplicitStyleReference](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/WindowExplicitStyle.xaml#ExplicitStyleReference)]
 
-Notice that the first <xref:System.Windows.Controls.TextBlock> element has the style applied to it while the second TextBlock element remains unchanged:
+Notice that the first <xref:System.Windows.Controls.TextBlock> element has the style applied to it while the second TextBlock element remains unchanged. The implicit style from the previous section was changed to a style that declared the `x:Key` attribute, meaning, the only element affected by the style is the one that referenced the style directly.
 
 ![Styling sample screenshot](./media/styles-and-templates-overview/create-a-style-explicit-textblock.png "create-a-style-explicit-textblock")
-
-Notice that the second textbox is unaffected by the style. The implicit style from the previous section no longer exists now that the style declared the `x:Key` attribute.
 
 Once a style is applied, explicitly or implicitly, it becomes sealed and can't be changed. If you want to change a style that has been applied, create a new style to replace the existing one. For more information, see the <xref:System.Windows.Style.IsSealed%2A> property.
 
@@ -81,17 +81,17 @@ Perhaps you want your two <xref:System.Windows.Controls.TextBlock> elements to s
 
 [!code-xaml[TextBlocksExplicit](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetTextBlocksExplicit)]
 
-This `TextBlock` style is now centered, uses a `Comic Sans MS` font with a size of `26`, and the foreground color set to the <xref:System.Windows.Media.LinearGradientBrush> shown in the example. Notice that it overrides the <xref:System.Windows.Controls.Control.FontSize%2A> value of the base style. If there's more than one <xref:System.Windows.Setter> setting the same property in a <xref:System.Windows.Style>, the `Setter` that is declared last takes precedence.
+This `TextBlock` style is now centered, uses a `Comic Sans MS` font with a size of `26`, and the foreground color set to the <xref:System.Windows.Media.LinearGradientBrush> shown in the example. Notice that it overrides the <xref:System.Windows.Controls.Control.FontSize%2A> value of the base style. If there's more than one <xref:System.Windows.Setter> pointing to the same property in a <xref:System.Windows.Style>, the `Setter` that is declared last takes precedence.
 
 The following shows what the <xref:System.Windows.Controls.TextBlock> elements now look like:
 
 ![Styled TextBlocks](./media/styles-and-templates-overview/stylingintro-textblocks.png "StylingIntro_TextBlocks")
 
-This `TitleText` style extends the style that has been created for the <xref:System.Windows.Controls.TextBlock> type. You can also extend a style that has an `x:Key` by using the `x:Key` value.
+This `TitleText` style extends the style that has been created for the <xref:System.Windows.Controls.TextBlock> type, referenced with `BasedOn="{StaticResource {x:Type TextBlock}}"`. You can also extend a style that has an `x:Key` by using the `x:Key` of the style. For example, if there was a style named `Header1` and you wanted to extend that style, you would use `BasedOn="{StaticResource Header1}"`.
 
 ## Relationship of the TargetType property and the x:Key attribute
 
-As previously shown, setting the <xref:System.Windows.Style.TargetType%2A> property to `TextBlock` without assigning the style an `x:Key` causes the style to be applied to all <xref:System.Windows.Controls.TextBlock> elements. In this case, the `x:Key` is implicitly set to `{x:Type TextBlock}`. This means that if you explicitly set the `x:Key` value to anything other than `{x:Type TextBlock}`, the <xref:System.Windows.Style> isn't applied to all `TextBlock` elements automatically. Instead, you must apply the style (by using the `x:Key` value) to the `TextBlock` elements explicitly. If your style is in the resources section and you don't set the `TargetType` property on your style, then you must set the `x:Key` directive.
+As previously shown, setting the <xref:System.Windows.Style.TargetType%2A> property to `TextBlock` without assigning the style an `x:Key` causes the style to be applied to all <xref:System.Windows.Controls.TextBlock> elements. In this case, the `x:Key` is implicitly set to `{x:Type TextBlock}`. This means that if you explicitly set the `x:Key` value to anything other than `{x:Type TextBlock}`, the <xref:System.Windows.Style> isn't applied to all `TextBlock` elements automatically. Instead, you must apply the style (by using the `x:Key` value) to the `TextBlock` elements explicitly. If your style is in the resources section and you don't set the `TargetType` property on your style, then you must set the `x:Key` attribute.
 
 In addition to providing a default value for the `x:Key`, the `TargetType` property specifies the type to which setter properties apply. If you don't specify a `TargetType`, you must qualify the properties in your <xref:System.Windows.Setter> objects with a class name by using the syntax `Property="ClassName.Property"`. For example, instead of setting `Property="FontSize"`, you must set <xref:System.Windows.Setter.Property%2A> to `"TextBlock.FontSize"` or `"Control.FontSize"`.
 

@@ -33,21 +33,25 @@ Step 1 | | Step 2 | | Step 3 | | Step 4 |
 
 When it comes to creating and building your app, you have two choices - you can work with either an IDE like Visual Studio or the Command Line Interface (CLI).
 
-[Acquire the .NET Core tools through Visual Studio]()
+[Get the .NET Core CLI tools from the Microsoft .NET Site](acquisition-experiences.md#Microsoft-NET-site)
 
-[Acquire the .NET Core CLI tools]()
+[Get the .NET Core tools with Visual Studio](acquisition-experiences.md#Visual-Studio-for-Windows)
+
+[Get the .NET Core tools vith Visual Studio Code](acquisition-experiences.md#Visual-Studio-Code)
+
 
 _There are several other ways to acquire the .NET Core SDK and Runtime, these options are covered in the [.NET Core Acquisition Experiences](acquisition-experiences.md) guide._
 
 
 Once you have acquired the tools, you're ready to build your app. Pick the approach that corresponds to whether in the previous step you chose to use an IDE like Visual Studio or Visual Studio for Mac or the CLI.
 
-[Build your first .NET Core app using Visual Studio](https://docs.microsoft.com/dotnet/core/tutorials/with-visual-studio)
- 
 [Build your first .NET Core app using the Command Line Interface (CLI)](../tutorials/using-with-xplat-cli.md)
 
+[Build your first .NET Core app using Visual Studio](../tutorials/with-visual-studio)
 
-Either choice will allow you to create various types of .NET Core applications including ASP.NET Core, WPF, and Windows Forms applications.
+[Build your first .NET Core app using Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet)
+
+Any of these options will allow you to create various types of .NET Core applications including ASP.NET Core, WPF, and Windows Forms applications.
 
 
 <br/>

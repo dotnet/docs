@@ -142,6 +142,8 @@ To create a Self-contained, single file executable for the Windows 10 x64 operat
 dotnet publish -c Release -r win10-x64 --self-contained true /p:PublishSingleFile=true
 ```
 
+_Note: creating a self-contained executable _**requires**_ that you specify a Runtime Identifier (RID) via the -r switch. _
+
 ## Summary
 
 Both Framework-Dependent Deployment and Self-Contained Deployment have their own pros and cons. 

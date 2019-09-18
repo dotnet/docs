@@ -156,24 +156,24 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
   
 ### To use the compiled assembly in your code.  
   
-1. The following example shows how to execute the XSLT transformation by using the compiled style sheet.  
+The following example shows how to execute the XSLT transformation by using the compiled style sheet.  
   
- [!code-csharp[XslTransform_XSLTC#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XslTransform_XSLTC/CS/XslTransform_XSLTC.cs#1)]
- [!code-vb[XslTransform_XSLTC#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XslTransform_XSLTC/VB/XslTransform_XSLTC.vb#1)]  
+[!code-csharp[XslTransform_XSLTC#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XslTransform_XSLTC/CS/XslTransform_XSLTC.cs#1)]
+[!code-vb[XslTransform_XSLTC#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XslTransform_XSLTC/VB/XslTransform_XSLTC.vb#1)]  
   
-   To dynamically link to the compiled assembly, replace
+To dynamically link to the compiled assembly, replace
   
 ```csharp  
 xslt.Load(typeof(Transform))  
 ```  
   
-  with  
+with  
   
 ```csharp 
 xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"))  
 ``` 
   
-  in the example above. For more information on the Assembly.Load method, see <xref:System.Reflection.Assembly.Load%2A>  
+in the example above. For more information on the Assembly.Load method, see <xref:System.Reflection.Assembly.Load%2A>.  
   
 ## See also
 

@@ -23,12 +23,14 @@ An L7 load balancer will parse incoming HTTP/2 requests and pass them on to back
 
 Examples of L7 load balancers include:
 
-- [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview)
 - [Nginx](https://www.nginx.com/)
 - [HAproxy](https://www.haproxy.com/)
 - [Traefik](https://traefik.io/)
 
 As a rule of thumb, L7 load balancers are the best choice for gRPC and other HTTP/2 applications (and for HTTP applications generally, in fact). L4 load balancers will *work* with gRPC applications, but are primarily useful when low latency and low overhead are of paramount importance.
+
+> [!IMPORTANT]
+> At the time of writing, not all L7 load balancers support the full HTTP/2 specification as required by gRPC services.
 
 When using TLS encryption, load balancers can terminate the TLS connection and pass unencrypted requests to the backend application, or pass the encrypted request along. Either way, the load balancer will need to be configured with the server's public and private key so that it can decrypt requests for processing.
 

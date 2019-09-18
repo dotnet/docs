@@ -1,6 +1,6 @@
 ---
 title: Types of RPC - gRPC for WCF Developers
-description: TO BE WRITTEN
+description: A review of the types of Remote Procedure Call supported by WCF and their equivalents in gRPC
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -59,9 +59,13 @@ As you can see, implementing a gRPC unary RPC service method is very similar to 
 
 WCF applications (with certain bindings) can create a persistent connection between client and server, and the server can asynchronously send data to the client until the connection is closed, using a *callback interface*.
 
-gRPC services can work with streams of messages, in either or both directions. This doesn't map exactly to WCF Duplex, but the same result can be achieved.
+gRPC services provide similar functionality with message streams. Streams don't map *exactly* to WCF duplex services in terms of implementation, but the same results can be achieved.
 
-The following example shows a server streaming RPC:
+### gRPC streaming
+
+gRPC supports the creation of persistent streams from client to server, and from server to client. Both types of stream may be active concurrently; this is called bidirectional streaming. Streams can be used for arbitrary, asynchronous messaging over time, or for passing large datasets that are too big to generate and send in a single request or response.
+
+The following example shows a server streaming RPC.
 
 ```protobuf
 service ClockStreamer {
@@ -111,11 +115,11 @@ public async Task TellTheTimeAsync(CancellationToken token)
 
 A WCF duplex service uses a client callback interface that can have multiple methods. A gRPC server streaming service can only send messages over a single stream. If you need multiple methods, use a message type with either [an Any field or a oneof field](protobuf-any-oneof.md) to send different messages, and write code in the client to handle them.
 
-In WCF, the one-way method called from the client returns immediately, but the `ServiceContract` class with the session is kept alive until the connection is closed. In gRPC, the `Task` returned by the implementation method shouldn't complete until the connection is closed.
+In WCF, the one-way method called from the client returns immediately, but the [ServiceContract](https://docs.microsoft.com/dotnet/api/system.servicemodel.servicecontractattribute?view=netframework-4.8) class with the session is kept alive until the connection is closed. In gRPC, the `Task` returned by the implementation method shouldn't complete until the connection is closed.
 
 ## WCF one-way operations and gRPC client streaming
 
-WCF provides one-way operations (marked with `[OperationContract(IsOneWay = true)]`) that the client can call without waiting for a response. gRPC service methods always return a response, even if it's empty, and the client should always `await` that response. For "fire-and-forget" style messaging in gRPC, you can create a client streaming service.
+WCF provides one-way operations (marked with `[OperationContract(IsOneWay = true)]`) that the client can call without waiting for a response. gRPC service methods always return a response, even if it's empty, and the client should always await that response. For "fire-and-forget" style messaging in gRPC, you can create a client streaming service.
 
 ### thing_log.proto
 

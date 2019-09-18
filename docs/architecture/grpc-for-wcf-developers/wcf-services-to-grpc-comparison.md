@@ -1,6 +1,6 @@
 ---
 title: Comparing WCF to gRPC - gRPC for WCF Developers
-description: TO BE WRITTEN
+description: A comparison of the WCF and gRPC frameworks for building distributed applications.
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -12,7 +12,7 @@ The previous chapter should have given you a good look at Protobuf and how gRPC 
 - Operations and methods
 - Bindings and transports
 - RPC types
-- Metadata 
+- Metadata
 - Error handling
 - WS-\* protocols
 

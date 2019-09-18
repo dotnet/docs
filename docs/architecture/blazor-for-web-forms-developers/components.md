@@ -67,7 +67,7 @@ Razor directives start with the `@` character and are typically used at the star
 @namespace MyComponentNamespace
 ```
 
-The following table summarizes the various Razor directives used in Blazor and their ASP.NET Web Forms equivalents, if they exist:
+The following table summarizes the various Razor directives used in Blazor and their ASP.NET Web Forms equivalents, if they exist.
 
 Directive    | Description | Example | ASP.NET Web Forms equivalent 
 -------------| ----------- | ------- | ----------------------------
@@ -150,7 +150,7 @@ Think of Razor components like you would .NET types, because that's exactly what
 
 As seen in the default Blazor projects, it's common to put `@using` directives into a *_Imports.razor* file so that they're imported into all *.razor* files in the same directory and in child directories.
 
-If the namespace for a component isn't in scope, you can specify a component using its full type name, just like you can in C#.
+If the namespace for a component isn't in scope, you can specify a component using its full type name, as you can in C#:
 
 ```razor
 <MyComponentLib.Counter />
@@ -190,7 +190,7 @@ To specify a component parameter in Blazor, use an attribute as you would in ASP
 
 ## Event handlers
 
-Both ASP.NET Web Forms and Blazor provide an event-based programming model for handling UI events. Examples of such events include button clicks and text input. In ASP.NET Web Forms, you use HTML server controls to handle UI events exposed by the DOM, or you can handle events exposed by web server controls. The events are surfaced on the server through form post-back requests. For example:
+Both ASP.NET Web Forms and Blazor provide an event-based programming model for handling UI events. Examples of such events include button clicks and text input. In ASP.NET Web Forms, you use HTML server controls to handle UI events exposed by the DOM, or you can handle events exposed by web server controls. The events are surfaced on the server through form post-back requests. Consider the following Web Forms button click example:
 
 *Counter.ascx*
 
@@ -201,9 +201,12 @@ Both ASP.NET Web Forms and Blazor provide an event-based programming model for h
 *Counter.ascx.cs*
 
 ```csharp
-protected void ClickMeButton_Click(object sender, EventArgs e)
+public partial class Counter : System.Web.UI.UserControl
 {
-    Console.WriteLine("The button was clicked!");
+    protected void ClickMeButton_Click(object sender, EventArgs e)
+    {
+        Console.WriteLine("The button was clicked!");
+    }
 }
 ```
 
@@ -242,7 +245,7 @@ Instead of referring to a method group for an event handler, you can use a lambd
 }
 ```
 
-Event handlers can execute synchronously or asynchronously.
+Event handlers can execute synchronously or asynchronously. For example, the following `OnClick` event handler executes asynchronously:
 
 ```razor
 <button @onclick="OnClick">Click me!</button>
@@ -285,7 +288,7 @@ After an event is handled, the component is rendered to account for any componen
 }
 ```
 
-Components can also define their own events by defining a component parameter of type `EventCallback<TValue>`. Event callbacks support all the variations of DOM UI event handlers: optional args, sync or async, method groups or lambda expressions.
+Components can also define their own events by defining a component parameter of type `EventCallback<TValue>`. Event callbacks support all the variations of DOM UI event handlers: optional arguments, synchronous or asynchronous, method groups, or lambda expressions.
 
 ```razor
 <button class="btn btn-primary" @onclick="OnClick">Click me!</button>
@@ -300,7 +303,7 @@ Components can also define their own events by defining a component parameter of
 
 Blazor provides a simple mechanism to bind data from a UI component to the component's state. This approach differs from the features in ASP.NET Web Forms for binding data from data sources to UI controls. We'll cover handling data from different data sources in the [Dealing with data](data.md) section.
 
-To create a two-way data binding from a UI component to the component's state, use the `@bind` directive attribute. In the example below, the value of the check box is bound to the `isChecked` field.
+To create a two-way data binding from a UI component to the component's state, use the `@bind` directive attribute. In the following example, the value of the check box is bound to the `isChecked` field.
 
 ```razor
 <input type="checkbox" @bind="isChecked" />
@@ -310,7 +313,7 @@ To create a two-way data binding from a UI component to the component's state, u
 }
 ```
 
-When the component is rendered, the value of the checkbox will be set to the value of the `isChecked` field. When the user toggles the checkbox, the `onchange` event is fired and the `isChecked` field is set to the new value. The `@bind` syntax in this case is equivalent to the following markup:
+When the component is rendered, the value of the checkbox is set to the value of the `isChecked` field. When the user toggles the checkbox, the `onchange` event is fired and the `isChecked` field is set to the new value. The `@bind` syntax in this case is equivalent to the following markup:
 
 ```razor
 <input value="@isChecked" @onchange="(UIChangeEventArgs e) => isChecked = e.Value" />
@@ -356,9 +359,9 @@ Password: <input
 }
 ```
 
-To chain a data binding to an underlying UI element, you'll need to set the value and handle the event directly on the UI element instead of using the `@bind` attribute.
+To chain a data binding to an underlying UI element, set the value and handle the event directly on the UI element instead of using the `@bind` attribute.
 
-To bind to a component parameter, use a `@bind-{Parameter}` attribute to specify which parameter you want to bind to.
+To bind to a component parameter, use a `@bind-{Parameter}` attribute to specify the parameter to which you want to bind.
 
 ```razor
 <PasswordBox @bind-Password="password" />
@@ -375,7 +378,7 @@ If the component's state has changed outside of a normal UI event or event callb
 In the example below, a component displays a message from an `AppState` service that can be updated by other parts of the app. The component registers its `StateHasChanged` method with the `AppState.OnChange` event so that the component is rendered whenever the message gets updated.
 
 ```csharp
-public class AppState 
+public class AppState
 {
     public string Message { get; }
 
@@ -407,9 +410,22 @@ public class AppState
 
 ## Component lifecycle
 
-The ASP.NET Web Forms framework has well-defined lifecycle methods for modules, pages, and controls. Blazor components also have a well-defined lifecycle. A component's lifecycle can be used to initialize component state and implement advanced component behaviors. 
+The ASP.NET Web Forms framework has well-defined lifecycle methods for modules, pages, and controls. For example, the following control implements event handlers for the `Init`, `Load`, and `UnLoad` lifecycle events:
 
-All of Blazor's component lifecycle methods have both synchronous and asynchronous versions. This is important because component rendering is synchronous. You can't run asynchronous logic as part of the component rendering. All asynchronous logic must execute as part of an `async` lifecycle method.
+*Counter.ascx.cs*
+
+```csharp
+public partial class Counter : System.Web.UI.UserControl
+{
+    protected void Page_Init(object sender, EventArgs e) { ... }
+    protected void Page_Load(object sender, EventArgs e) { ... }
+    protected void Page_UnLoad(object sender, EventArgs e) { ... }
+}
+```
+
+Blazor components also have a well-defined lifecycle. A component's lifecycle can be used to initialize component state and implement advanced component behaviors. 
+
+All of Blazor's component lifecycle methods have both synchronous and asynchronous versions. Component rendering is synchronous. You can't run asynchronous logic as part of the component rendering. All asynchronous logic must execute as part of an `async` lifecycle method.
 
 ### OnInitialized
 
@@ -417,7 +433,7 @@ The `OnInitialized` and `OnInitializedAsync` methods are used to initialize the 
 
 ```csharp
 protected override void OnInitialized() { ... }
-protected override Task OnInitializedAsync() { ... }
+protected override async Task OnInitializedAsync() { await ... }
 ```
 
 ### OnParametersSet
@@ -426,12 +442,29 @@ The `OnParametersSet` and `OnParametersSetAsync` methods are called when a compo
 
 ```csharp
 protected override void OnParametersSet() { ... }
-protected override async Task OnParametersSetAsync() { ...}
+protected override async Task OnParametersSetAsync() { await ... }
 ```
 
 ### OnAfterRender
 
 The `OnAfterRender` and `OnAfterRenderAsync` methods are called after a component has finished rendering. Element and component references are populated at this point (more on these concepts below). Interactivity with the browser is enabled at this point including interacting with the DOM and support for executing JavaScript. 
+
+```csharp
+protected override void OnAfterRender(bool firstRender)
+{
+    if (firstRender)
+    {
+        ...
+    }
+}
+protected override async Task OnAfterRenderAsync(bool firstRender)
+{
+    if (firstRender)
+    {
+        await ...
+    }
+}
+```
 
 `OnAfterRender` and `OnAfterRenderAsync` *aren't called when prerendering on the server*.
 
@@ -439,7 +472,7 @@ The `firstRender` parameter is `true` the first time the component is rendered; 
 
 ### IDisposable
 
-Blazor components can implement `IDisposable` to dispose of resources when the component is removed from the UI. A Razor component can implement `IDispose` using the `@implements` directive.
+Blazor components can implement `IDisposable` to dispose of resources when the component is removed from the UI. A Razor component can implement `IDispose` by using the `@implements` directive:
 
 ```razor
 @using System
@@ -457,7 +490,7 @@ Blazor components can implement `IDisposable` to dispose of resources when the c
 
 ## Capture component references
 
-In ASP.NET Web Forms, it's common to manipulate a control instance directly in code by referring to its ID. In Blazor, it's also possible to capture and manipulate a reference to a component, although it's much less common. 
+In ASP.NET Web Forms, it's common to manipulate a control instance directly in code by referring to its ID. In Blazor, it's also possible to capture and manipulate a reference to a component, although it's much less common.
 
 To capture a component reference in Blazor, use the `@ref` directive attribute. The value of the attribute should match the name of a settable field with the same type as the referenced component.
 

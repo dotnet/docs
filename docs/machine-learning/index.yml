@@ -38,26 +38,26 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Analyze website comment sentiment
-            url: /tutorials/sentiment-analysis.md
+            url: tutorials/sentiment-analysis.md
           - text: Predict prices with regression
-            url: /tutorials/predict-prices.md
+            url: tutorials/predict-prices.md
           - text: Retrain a TensorFlow image classifier
-            url: /tutorials/image-classification.md
+            url: tutorials/image-classification.md
           - text: Classify customer support issues
-            url: /tutorials/github-issue-classification.md
+            url: tutorials/github-issue-classification.md
           - text: Detect objects in images using ONNX
-            url: /tutorials/object-detection-onnx.md
+            url: tutorials/object-detection-onnx.md
   # Card (optional)
   - title: Model Builder and CLI
     linkLists:
       - linkListType: tutorial
         links:
           - text: Predict prices - Model Builder
-            url: /tutorials/predict-prices-with-model-builder.md
+            url: tutorials/predict-prices-with-model-builder.md
           - text: Analyze sentiment - AutoML CLI
-            url: /tutorials/mlnet-cli.md
+            url: tutorials/mlnet-cli.md
           - text: Build a Razor Pages web app to analyze sentiment
-            url: /tutorials/sentiment-analysis-model-builder.md
+            url: tutorials/sentiment-analysis-model-builder.md
 
   # Concepts card
   - title: Machine learning concepts
@@ -65,15 +65,15 @@ landingContent:
       - linkListType: concept
         links:
           - text: Machine learning model types
-            url: /resources/tasks.md
+            url: resources/tasks.md
           - text: How to choose an algorithm
-            url: /how-to-choose-an-ml-net-algorithm.md
+            url: how-to-choose-an-ml-net-algorithm.md
           - text: Data transforms
-            url: /resources/transforms.md
+            url: resources/transforms.md
           - text: Model evaluation metrics
-            url: /resources/metrics.md
+            url: resources/metrics.md
           - text: Improve model accuracy
-            url: /resources/improve-machine-learning-model-ml-net.md
+            url: resources/improve-machine-learning-model-ml-net.md
 
   # How-to card
   - title: Data and model training
@@ -81,13 +81,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Load data from various sources  
-            url: /how-to-guides/load-data-ml-net.md
+            url: how-to-guides/load-data-ml-net.md
           - text: Prepare data for building a model
-            url: /how-to-guides/prepare-data-ml-net.md
+            url: how-to-guides/prepare-data-ml-net.md
           - text: Train and evaluate a model
-            url: /how-to-guides/train-machine-learning-model-ml-net.md
+            url: how-to-guides/train-machine-learning-model-ml-net.md
           - text: Train a model using cross-validation
-            url: /how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
+            url: how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
 
   # How-to card
   - title: Explain a model
@@ -95,9 +95,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Inspect intermediate values  
-            url: /how-to-guides/inspect-intermediate-data-ml-net.md
+            url: how-to-guides/inspect-intermediate-data-ml-net.md
           - text: Explain model predictions
-            url: /how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md
+            url: how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md
 
   # How-to card
   - title: Use models
@@ -105,11 +105,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Save and load trained models  
-            url: /how-to-guides/save-load-machine-learning-models-ml-net.md
+            url: how-to-guides/save-load-machine-learning-models-ml-net.md
           - text: Make predictions with a trained model
-            url: /how-to-guides/machine-learning-model-predictions-ml-net.md
+            url: how-to-guides/machine-learning-model-predictions-ml-net.md
           - text: Retrain a model
-            url: /how-to-guides/retrain-model-ml-net.md
+            url: how-to-guides/retrain-model-ml-net.md
 
   # How-to card
   - title: Deploy models
@@ -117,9 +117,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Deploy model to Azure Functions  
-            url: /how-to-guides/serve-model-serverless-azure-functions-ml-net.md
+            url: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
           - text: Deploy a model to an ASP.NET Core web API
-            url: /how-to-guides/serve-model-web-api-ml-net.md                 
+            url: how-to-guides/serve-model-web-api-ml-net.md                 
 
   # Reference card
   - title: API reference
@@ -131,6 +131,6 @@ landingContent:
           - text: ML.NET API reference (preview)
             url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
           - text: CLI reference
-            url: /reference/ml-net-cli-reference
+            url: reference/ml-net-cli-reference
           - text: AutoML API reference
             url: https://docs.microsoft.com/dotnet/api/?view=automl-dotnet

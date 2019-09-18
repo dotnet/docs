@@ -1,11 +1,10 @@
 ---
-title: Get started with .NET Core on macOS
+title: "Tutorial: Create a .NET Core solution in macOS using Visual Studio Code"
 description: This document provides the steps and workflow to create a .NET Core Solution using Visual Studio Code.
-author: bleroy
 ms.date: 03/23/2017
 ms.custom: seodec18
 ---
-# Get started with .NET Core on macOS
+# Tutorial: Create a .NET Core solution in macOS using Visual Studio Code
 
 This document provides the steps and workflow to create a .NET Core solution for macOS. Learn how to create projects, unit tests, use the debugging tools, and incorporate third-party libraries via [NuGet](https://www.nuget.org/).
 
@@ -26,13 +25,13 @@ In this tutorial, you create three projects: a library project, tests for that l
 
 Start Visual Studio Code. Press <kbd>Ctrl</kbd>+<kbd>\`</kbd> (the backquote or backtick character) or select **View > Integrated Terminal** from the menu to open an embedded terminal in Visual Studio Code. You can still open an external shell with the Explorer **Open in Command Prompt** command (**Open in Terminal** on Mac or Linux) if you prefer to work outside of Visual Studio Code.
 
-Begin by creating a solution file, which serves as a container for one or more .NET Core projects. In the terminal, create a *golden* folder and open the folder. This folder is the root of your solution. Run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution, *golden.sln*:
+Begin by creating a solution file, which serves as a container for one or more .NET Core projects. In the terminal, run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution *golden.sln* inside a new folder named *golden*:
 
 ```dotnetcli
-dotnet new sln
+dotnet new sln -o golden
 ```
 
-From the *golden* folder, execute the following command to create a library project, which produces two files,*library.csproj* and *Class1.cs*, in the *library* folder:
+Navigate to the new *golden* folder and execute the following command to create a library project, which produces two files,*library.csproj* and *Class1.cs*, in the *library* folder:
 
 ```dotnetcli
 dotnet new classlib -o library

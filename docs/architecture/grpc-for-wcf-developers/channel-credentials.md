@@ -7,7 +7,7 @@ ms.date: 09/02/2019
 
 # Channel credentials
 
-Channel credentials are, as the name implies, attached to the underlying gRPC channel. The standard form of channel credentials uses Client Certificate authentication, where the client provides an SSL/TLS certificate when making the connection, which is verified by the server before allowing any calls to be made.
+Channel credentials are, as the name implies, attached to the underlying gRPC channel. The standard form of channel credentials uses Client Certificate authentication, where the client provides a TLS certificate when making the connection, which is verified by the server before allowing any calls to be made.
 
 Channel credentials can be combined with call credentials to provide comprehensive security for a gRPC service. The channel credentials prove that the client application is permitted to access the service, and the call credentials provide information about the person using the client application.
 
@@ -99,7 +99,8 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        // Assume path to client .pfx file and password are passed from command line
+        // Assume path to a client .pfx file and password are passed from command line
+        // On Windows this would probably be a reference to the Certificate Store
         var cert = new X509Certificate2(args[0], args[1]);
 
         var handler = new HttpClientHandler();

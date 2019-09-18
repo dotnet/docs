@@ -7,7 +7,7 @@ ms.date: 09/02/2019
 
 # Security in gRPC applications
 
-In any real-world scenario, securing applications and services is essential. Security covers two key areas: encrypting network traffic to prevent it from being intercepted by bad actors; and authenticating users to prevent unauthorized system access and apply permissions based on identity. This chapter will cover the facilities for authentication and authorization in gRPC for ASP.NET Core, and discuss network security using SSL/TLS encrypted connections.
+In any real-world scenario, securing applications and services is essential. Security covers two key areas: encrypting network traffic to prevent it from being intercepted by bad actors; and authenticating users to prevent unauthorized system access and apply permissions based on identity. This chapter will cover the facilities for authentication and authorization in gRPC for ASP.NET Core, and discuss network security using TLS encrypted connections.
 
 ## WCF authentication
 
@@ -34,7 +34,7 @@ The call authentication methods are all based on *tokens*; the only real differe
 For more information see the [Authentication and authorization documentation on Microsoft Docs](https://docs.microsoft.com/aspnet/core/grpc/authn-and-authz?view=aspnetcore-3.0).
 
 > [!NOTE]
-> When using gRPC over an SSL/TLS encrypted connection, all traffic between clients and servers is already encrypted, even if you don't use channel-level authentication.
+> When using gRPC over a TLS encrypted connection, all traffic between clients and servers is already encrypted, even if you don't use channel-level authentication.
 
 This chapter will show how to apply call credentials and channel credentials to a gRPC service, and how to use credentials from a .NET Core gRPC client to authenticate with the service.
 

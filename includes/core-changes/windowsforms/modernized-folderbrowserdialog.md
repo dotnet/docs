@@ -6,11 +6,11 @@ The <xref:System.Windows.Forms.FolderBrowserDialog> control has change in Window
 
 In the .NET Framework, Windows forms uses the following dialog for the <xref:System.Windows.Forms.FolderBrowserDialog> control.
 
-![The FolderBrowserDialogControl in the .NET Framework](./media/modernized-folderbrowserdialog/folderdlg-framework.png)
+![The FolderBrowserDialogControl in the .NET Framework](~/docs/images/core-changes/windowsforms/modernized-folderbrowserdialog/folderdlg-framework.png)
 
 In .NET Core 3.0, Windows Forms users a newer COM-based control that was introduced in Windows Vista:
 
-![The FolderBrowserDialogControl in the .NET Core](./media/modernized-folderbrowserdialog/folderdlg-core.png)
+![The FolderBrowserDialogControl in the .NET Core](~/docs/images/core-changes/windowsforms/modernized-folderbrowserdialog/folderdlg-core.png)
 
 #### Version introduced
 

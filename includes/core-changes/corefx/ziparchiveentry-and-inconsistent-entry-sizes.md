@@ -24,10 +24,10 @@ CoreFx
 
 #### Affected APIs
 
-<xref:System.IO.Compression.ZipArchiveEntry.Open?displayProperty=nameWithType>
-<xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory%2A?displayProperty=nameWithType>
-<xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A?displayProperty=nameWithType>
-<xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A?displayProperty=nameWithType>
+- <xref:System.IO.Compression.ZipArchiveEntry.Open?displayProperty=nameWithType>
+- <xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory%2A?displayProperty=nameWithType>
+- <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A?displayProperty=nameWithType>
+- <xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A?displayProperty=nameWithType>
 
 <!--
 

@@ -27,10 +27,10 @@ Cryptography
 
 #### Affected APIs
 
-- `System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes?displayProperty=nameWithType>
-- `System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType>
-- `System.Security.Cryptography.RSAOpenSsl.%23ctor%2A?displayProperty=nameWithType>
-- `System.Security.Cryptography.RSACryptoServiceProvider.%23ctor%2A?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.RSAOpenSsl.%23ctor%2A?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.RSACryptoServiceProvider.%23ctor%2A?displayProperty=nameWithType>
 
 <!--
 ### Affected APIs

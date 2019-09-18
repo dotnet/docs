@@ -4,11 +4,11 @@
 
 In the .NET Framework, the <xref:System.Windows.Forms.Control.DefaultFont?displayProperty=nameWithType> property was set to `Microsoft Sans Serif 8pt`. The following figure shows a window that uses the default font.
 
-![default control font in .NET Framework](./media/control-defaultfont-changed/defaultfont-framework.png)
+![default control font in .NET Framework](~/docs/images/core-changes/windowsforms/control-defaultfont-changed/defaultfont-framework.png)
 
 In .NET Core starting with .NET Core 3.0, it is set to `Segoe UI 9pt` (the same font as <xref:System.Drawing.SystemFonts.MessageBoxFont?displayProperty=nameWithType>). As a result of this change, forms and controls will be sized about 27% larger to account for the larger size of the new default font. For example:
 
-![default control font-in .NET Core](./media/control-defaultfont-changed/defaultfont-core.png)
+![default control font-in .NET Core](~/docs/images/core-changes/windowsforms/control-defaultfont-changed/defaultfont-core.png)
 
 This change was made to align with [Windows UX guidelines](https://docs.microsoft.com/windows/win32/uxguide/vis-fonts#fonts-and-colors).
 

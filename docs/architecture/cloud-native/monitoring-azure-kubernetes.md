@@ -1,7 +1,7 @@
 ---
 title: Monitoring in Azure Kubernetes Services
 description: Monitoring in Azure Kubernetes Services
-ms.date: 06/30/2019
+ms.date: 09/23/2019
 ---
 # Monitoring in Azure Kubernetes Services
 
@@ -37,12 +37,12 @@ Installing the log collectors differs on [Windows](https://docs.microsoft.com/az
 No matter which orchestrator or operating system running the Azure Monitor daemon the log information is forwarded to the same Azure Monitor tools with which users are familiar. This ensures a parallel experience in environments that mix different log sources such as a hybrid Kubernetes/Azure Functions environment.
 
 ![A sample dashboard showing logging and metric information from a number of running containers.](media/containers-dashboard.png)
-**Figure 7-7**. A sample dashboard showing logging and metric information from a number of running containers.
+**Figure 7-8**. A sample dashboard showing logging and metric information from a number of running containers.
 
 ## Log.Finalize()
 
 Logging is one of the most overlooked and yet most important parts of deploying any application at scale. As the size and complexity of applications increase, then so does the difficulty of debugging them. Having top quality logs available makes debugging much easier and moves it from the realm of "nearly impossible" to "a pleasant experience".
 
 >[!div class="step-by-step"]
->[Previous](azure-monitor.md)
->[Next](identity.md) <!-- Next Chapter -->
+>[Previous](logging-with-elastic-stack.md)
+>[Next](azure-monitor.md)

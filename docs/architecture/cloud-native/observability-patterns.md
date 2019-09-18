@@ -1,7 +1,7 @@
 ---
 title: Observability patterns
 description: Observability patterns for cloud-native applications
-ms.date: 06/30/2019
+ms.date: 09/23/2019
 ---
 # Observability patterns
 
@@ -65,4 +65,4 @@ One of the most damaging patterns in alerting is to fire too many alerts for hum
 
 >[!div class="step-by-step"]
 >[Previous](monitoring-health.md)
->[Next](logging.md)
+>[Next](logging-with-elastic-stack.md)

@@ -1,7 +1,7 @@
 ---
 title: Monitoring and health
 description: Monitoring and Health
-ms.date: 06/30/2019
+ms.date: 09/23/2019
 ---
 # Monitoring and health
 

@@ -1,7 +1,7 @@
 ---
 title: Logging with Elastic Stack
 description: Logging using Elastic Stack, Logstash, and Kibana
-ms.date: 06/30/2019
+ms.date: 09/23/2019
 ---
 # Logging with Elastic Stack 
 
@@ -94,4 +94,4 @@ Another option is a [recently announced ELK-as-a-service offering](https://devop
 
 >[!div class="step-by-step"]
 >[Previous](observability-patterns.md)
->[Next](azure-monitor.md)
+>[Next](monitoring-azure-kubernetes.md)

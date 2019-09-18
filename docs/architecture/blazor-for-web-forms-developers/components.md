@@ -3,20 +3,24 @@ title: Build reusable UI components with Blazor
 description: Learn how to build reusable UI components with Blazor and how they compare to ASP.NET Web Forms controls.
 author: danroth27
 ms.author: daroth
-ms.date: 09/16/2019
+ms.date: 09/18/2019
 ---
-
 # Build reusable UI components with Blazor
 
 One of the beautiful things about ASP.NET Web Forms is how it enables encapsulation of reusable pieces of user interface (UI) code into reusable UI controls. Custom user controls can be defined in markup using *.ascx* files. You can also build elaborate server controls in code with full designer support.
 
-Blazor also supports UI encapsulation through *components*. A component is a self-contained chunk of UI. A component maintains its own state and rendering logic. It can define UI event handlers, bind to input data, and manage its own lifecycle. Blazor components are typically defined in a *.razor* file using Razor syntax.
+Blazor also supports UI encapsulation through *components*. A component:
+
+* Is a self-contained chunk of UI.
+* Maintains its own state and rendering logic.
+* Can define UI event handlers, bind to input data, and manage its own lifecycle.
+* Is typically defined in a *.razor* file using Razor syntax.
 
 ## An introduction to Razor
 
 Razor is a light-weight markup templating language based on HTML and C#. With Razor, you can seamlessly transition between markup and C# code to define your component rendering logic. When the *.razor* file is compiled, the rendering logic is captured in a structured way in a .NET class. The name of the compiled class is taken from the *.razor* file name. The namespace is taken from the default namespace for the project and the folder path, or you can explicitly specify the namespace using the `@namespace` directive (more on Razor directives below).
 
-The rendering logic for a component is authored using normal HTML markup with dynamic logic added using C#. The `@` character is used to transition to C#. Razor is typically smart about figuring out when you've switched back to HTML. For example, the following component renders a `<p>` tag with the current time:
+A component's rendering logic is authored using normal HTML markup with dynamic logic added using C#. The `@` character is used to transition to C#. Razor is typically smart about figuring out when you've switched back to HTML. For example, the following component renders a `<p>` tag with the current time:
 
 ```razor
 <p>@DateTime.Now</p>
@@ -57,7 +61,7 @@ Razor directives, like directives in ASP.NET Web Forms, control many aspects of 
 * Imported namespaces
 * Routes
 
-Razor directives all start with the `@` character and are typically used at the start of a new line, often at the start of the file. For example, the `@namespace` directive can be used to control the namespace of the component:
+Razor directives start with the `@` character and are typically used at the start of a new line at the start of the file. For example, the `@namespace` directive defines the component's namespace:
 
 ```razor
 @namespace MyComponentNamespace
@@ -65,18 +69,18 @@ Razor directives all start with the `@` character and are typically used at the 
 
 The following table summarizes the various Razor directives used in Blazor and their ASP.NET Web Forms equivalents, if they exist:
 
-Directive | Description | Example | ASP.NET Web Forms equivalent 
---- | --- | --- | ---
+Directive    | Description | Example | ASP.NET Web Forms equivalent 
+-------------| ----------- | ------- | ----------------------------
 `@attribute` | Adds a class-level attribute to the component. | `@attribute [Authorize]` | None
-`@code` | Add class members to the component. | `@code { ... }` | `<script runat=server>...</script>`
-`@implements` | Implement the specified interface. | `@implements IDisposable` | Use code-behind
-`@inherits` | Inherit from the specified base class. | `@inherits MyComponentBase` | `<%@ Control Inherits="MyUserControlBase" %>`
-`@inject` | Inject a service into the component. | `@inject IJSRuntime JS` | None
-`@layout` | Specify a layout component for the component. | `@layout MainLayout` | `<%@ Page MasterPageFile="~/Site.Master" %>`
+`@code`      | Adds class members to the component. | `@code { ... }` | `<script runat="server">...</script>`
+`@implements`| Implements the specified interface. | `@implements IDisposable` | Use code-behind
+`@inherits`  | Inherits from the specified base class. | `@inherits MyComponentBase` | `<%@ Control Inherits="MyUserControlBase" %>`
+`@inject`    | Injects a service into the component. | `@inject IJSRuntime JS` | None
+`@layout`    | Specifies a layout component for the component. | `@layout MainLayout` | `<%@ Page MasterPageFile="~/Site.Master" %>`
 `@namespace` | Sets the namespace for the component. | `@namespace MyNamespace` | None
-`@page` | Specifies the route for the component. | `@page /product/{id}` | `<%@ Page %>`
+`@page`      | Specifies the route for the component. | `@page "/product/{id}"` | `<%@ Page %>`
 `@typeparam` | Specifies a generic type parameter for the component. | `@typeparam TItem` | Use code-behind
-`@using` | Adds a using statement for the specified namespace. | `@using MyComponentNamespace` | Add namespace in *web.config*
+`@using`     | Specifies a namespace to bring into scope. | `@using MyComponentNamespace` | Add namespace in *web.config*
 
 Razor components also make extensive use of *directive attributes* on elements to control various aspects of how components get compiled (event handling, data binding, component & element references, and so on). Directive attributes all follow a common generic syntax where the values in parenthesis are optional:
 
@@ -87,23 +91,23 @@ Razor components also make extensive use of *directive attributes* on elements t
 The following table summarizes the various Razor directive attributes used in Blazor.
 
 Directive attribute | Description | Example
---- | --- | ---
-`@attributes` | Render a dictionary of attributes. | `<input @attributes="ExtraAttributes" />`
-`@bind` | Create a two-way data binding. | `<input @bind="username" @bind:event="oninput" />`
-`@on{event}` | Add an event handler for the specified event | `<button @onclick="IncrementCount">Click me!</button>`
-`@key` | Specify a key to be used by the diffing algorithm for preserving elements in a collection | `<DetailsEditor @key="person" Details="person.Details" />`
-`@ref` | Capture a reference to the component or HTML element | `<MyDialog @ref="myDialog" />`
+------------------- | ----------- | -------
+`@attributes`       | Renders a dictionary of attributes. | `<input @attributes="ExtraAttributes" />`
+`@bind`             | Creates a two-way data binding. | `<input @bind="username" @bind:event="oninput" />`
+`@on{event}`        | Adds an event handler for the specified event | `<button @onclick="IncrementCount">Click me!</button>`
+`@key`              | Specifies a key to be used by the diffing algorithm for preserving elements in a collection | `<DetailsEditor @key="person" Details="person.Details" />`
+`@ref`              | Captures a reference to the component or HTML element | `<MyDialog @ref="myDialog" />`
 
 The various directive attributes used by Blazor (`@onclick`, `@bind`, `@ref`, and so on) are covered in the sections below and later chapters.
 
 Many of the syntaxes used in *.aspx* and *.ascx* files have parallel syntaxes in Razor. Below is a simple comparison of the syntaxes for ASP.NET Web Forms and Razor.
 
-Syntax | .aspx | Example | .razor | Example
---- | --- | --- | --- | ---
-Directives | `<%@ [directive] %>` | `<%@ Page %>` | `@[directive]` | `@page`
-Code blocks | `<% %>` | `<% int x = 123; %>`  | `@{ }` | `@{ int x = 123; }`
+Syntax       | .aspx | Example | .razor | Example
+------------ | ----- | ------- | ------ | -------
+Directives   | `<%@ [directive] %>` | `<%@ Page %>` | `@[directive]` | `@page`
+Code blocks  | `<% %>` | `<% int x = 123; %>`  | `@{ }` | `@{ int x = 123; }`
 Expressions<br>(HTML encoded) | `<%: %>` | `<%:DateTime.Now %>` | Implicit: `@`<br>Explicit: `@()` | `@DateTime.Now`<br>`@(DateTime.Now)`
-Comments | `<%-- --%>` | `<%-- Commented --%>` | `@* *@` | `@* Commented *@`
+Comments     | `<%-- --%>` | `<%-- Commented --%>` | `@* *@` | `@* Commented *@`
 Data binding | `<%# %>` | `<%# Bind("Name") %>` | `@bind` | `<input @bind="username" />`
 
 To add members to the Razor component class, use the `@code` directive. This technique is similar to using a `<script runat="server">...</script>` block in an ASP.NET Web Forms user control or page.
@@ -131,7 +135,12 @@ Aside from normal HTML, components can also use other components as part of thei
 <Counter />
 ```
 
-Unlike ASP.NET Web Forms, components in Blazor don't have an element prefix (for example, `asp:`) and they don't need to be registered on the page or in *web.config*. You can think of Razor components like you would .NET types, because that's exactly what they are. If the assembly containing the component is referenced, then the component is available to be used. To bring the component's namespace into scope, you use the `@using` directive.
+Unlike ASP.NET Web Forms, components in Blazor:
+
+* Don't use an element prefix (for example, `asp:`).
+* Don't require registration on the page or in the *web.config*.
+
+Think of Razor components like you would .NET types, because that's exactly what they are. If the assembly containing the component is referenced, then the component is available for use. To bring the component's namespace into scope, apply the `@using` directive:
 
 ```razor
 @using MyComponentLib
@@ -139,7 +148,7 @@ Unlike ASP.NET Web Forms, components in Blazor don't have an element prefix (for
 <Counter />
 ```
 
-As seen in the default Blazor projects, it's common to put `@using` directives into a *_Imports.razor* file so that they get imported into all *.razor* files in the same directory and in child directories.
+As seen in the default Blazor projects, it's common to put `@using` directives into a *_Imports.razor* file so that they're imported into all *.razor* files in the same directory and in child directories.
 
 If the namespace for a component isn't in scope, you can specify a component using its full type name, just like you can in C#.
 
@@ -173,7 +182,7 @@ The following `Counter` component defines a component parameter called `Incremen
 }
 ```
 
-To specify a component parameter in Blazor, use an attribute just like you would in ASP.NET Web Forms:
+To specify a component parameter in Blazor, use an attribute as you would in ASP.NET Web Forms:
 
 ```razor
 <Counter IncrementAmount="10" />
@@ -181,9 +190,24 @@ To specify a component parameter in Blazor, use an attribute just like you would
 
 ## Event handlers
 
-Both ASP.NET Web Forms and Blazor provide an event-based programming model for handling UI events, like button clicks, text input, and the like. In ASP.NET Web Forms, you use HTML server controls to handle UI events exposed by the DOM, or you can handle events exposed by web server controls. These events are surfaced on the server through form post back requests.
+Both ASP.NET Web Forms and Blazor provide an event-based programming model for handling UI events. Examples of such events include button clicks and text input. In ASP.NET Web Forms, you use HTML server controls to handle UI events exposed by the DOM, or you can handle events exposed by web server controls. The events are surfaced on the server through form post-back requests. For example:
 
-In Blazor, you can register handlers for DOM UI events directly using directive attributes of the form `@on{event}`, where `{event}` is the name of the event. For example, you can listen for button clicks like this:
+*Counter.ascx*
+
+```aspx-csharp
+<asp:Button ID="ClickMeButton" runat="server" Text="Click me!" OnClick="ClickMeButton_Click" />
+```
+
+*Counter.ascx.cs*
+
+```csharp
+protected void ClickMeButton_Click(object sender, EventArgs e)
+{
+    Console.WriteLine("The button was clicked!");
+}
+```
+
+In Blazor, you can register handlers for DOM UI events directly using directive attributes of the form `@on{event}`. The `{event}` placeholder represents the name of the event. For example, you can listen for button clicks like this:
 
 ```razor
 <button @onclick="OnClick">Click me!</button>
@@ -196,7 +220,7 @@ In Blazor, you can register handlers for DOM UI events directly using directive 
 }
 ```
 
-Event handlers can take an optional event-specific argument to provide more information about the event. For example, mouse events can take a `MouseEventArgs` argument, but it isn't required.
+Event handlers can accept an optional, event-specific argument to provide more information about the event. For example, mouse events can take a `MouseEventArgs` argument, but it isn't required.
 
 ```razor
 <button @onclick="OnClick">Click me!</button>
@@ -544,7 +568,7 @@ The output of this component looks like this:
 
 ## Code-behind
 
-Blazor components are typically authored in a single *.razor* file. However, it's also possible to separate the code and markup using a code-behind file. To use a component file, add a C# file that matches the file name of the component file but with a *.cs* extension added (*Counter.razor.cs*). Use the C# file to define a base class for the component. You can name the base class anything you'd like, but it's common to name the class the same as the component class, but with a `Base` extension added (`CounterBase`). The component-based class need to also derive from `ComponentBase`. Then, in the Razor component file, add the `@inherits` directive to specify the base class for the component (`@inherits CounterBase`).
+A Blazor component is typically authored in a single *.razor* file. However, it's also possible to separate the code and markup using a code-behind file. To use a component file, add a C# file that matches the file name of the component file but with a *.cs* extension added (*Counter.razor.cs*). Use the C# file to define a base class for the component. You can name the base class anything you'd like, but it's common to name the class the same as the component class, but with a `Base` extension added (`CounterBase`). The component-based class must also derive from `ComponentBase`. Then, in the Razor component file, add the `@inherits` directive to specify the base class for the component (`@inherits CounterBase`).
 
 *Counter.razor*
 

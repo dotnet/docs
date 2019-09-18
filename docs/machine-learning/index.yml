@@ -1,69 +1,134 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Landing
+
 title: ML.NET Documentation
+summary: Learn how to use ML.NET, an open-source framework, to build machine learning solutions and integrate them into applications. Tutorials, code examples, and more.
+
 metadata:
-  document_id: na
   title: ML.NET Documentation - Tutorials, API Reference
-  meta.description: Learn how to use ML.NET, an open-source and cross-platform machine learning framework you can use to build custom machine learning solutions and integrate them into .NET applications. Incorporate AI into your apps using the .NET skills you already have and without leaving .NET.
-  ms.topic: landing-page
-  ms.date: 09/16/2019
-  ms.author: nakersha
-  author: natke
-abstract:
   description: Learn how to use ML.NET, an open-source and cross-platform machine learning framework for building custom machine learning solutions and integrating them into .NET applications. Tutorials, code examples, API reference, and other documentation show you how.
-sections:
-- title: Step-by-Step Tutorials
-  items:
-  - type: paragraph
-    text: 'Learn how to create common solutions with ML.NET:'
-  - type: paragraph
-    text: '<b>Develop with the ML.NET API</b>:'
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="/dotnet/machine-learning/tutorials/sentiment-analysis">Analyze sentiment using binary classification</a>
-    - html: <a href="/dotnet/machine-learning/tutorials/github-issue-classification">Categorize GitHub issues using multiclass classification</a></li>
-    - html: <a href="/dotnet/machine-learning/tutorials/predict-prices">Predict prices using regression</a>
-    - html: <a href="/dotnet/machine-learning/tutorials/iris-clustering">Categorize flowers by characteristics using clustering</a>
-    - html: <a href="/dotnet/machine-learning/tutorials/movie-recommendation">Create a movie recommender with matrix factorization</a>
-    - html: <a href="/dotnet/machine-learning/tutorials/image-classification">Build a custom image classifier with TensorFlow</a>
-    - html: <a href="/dotnet/machine-learning/tutorials/object-detection-onnx">Detect objects in images with ONNX</a>
-    - html: <a href="/dotnet/machine-learning/tutorials/text-classification-tf">Classify sentiment of movie reviews using TensorFlow</a>
-  - type: paragraph
-    text: '<b>Use Model Builder</b>, a graphical Visual Studio extension:'
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="/dotnet/machine-learning/tutorials/predict-prices-with-model-builder">Predict prices with Model Builder</a>
-    - html: <a href="/dotnet/machine-learning/tutorials/sentiment-analysis-model-builder">Build a Razor Pages web application to analyze sentiment</a>
-  - type: paragraph
-    text: '<b>Run the ML.NET CLI</b>:'
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="/dotnet/machine-learning/tutorials/mlnet-cli">Analyze sentiment with the ML.NET CLI</a>
-- title: Samples
-  items:
-  - type: paragraph
-    text: See the <a href="https://github.com/dotnet/machinelearning-samples">samples repository</a> on GitHub for applications in C# and F#.
-- title: Reference
-  items:
-  - type: paragraph
-    text: '<b>The ML.NET API</b>'
-  - type: list
-    style: unordered
-    items:
-    - html: 'The <a href="/dotnet/api/?view=ml-dotnet">Release ML.NET API</a> contains components for data handling, algorithms for binary classification, multiclass classification, regression, anomaly detection, time series and forecasting, ranking, model saving and loading, ONNX and TensorFlow model handling, and much more!'
-    - html: 'The <a href="/dotnet/api/?view=ml-dotnet-preview">Preview ML.NET API</a> contains algorithms for recommendation tasks, and support for standard deep learning models.'
-  - type: paragraph
-    text: '<b>The AutoML API</b>'
-  - type: list
-    style: unordered
-    items:
-    - html: '<a href="/dotnet/api/index?view=automl-dotnet">Auto ML API</a>'
-  - type: paragraph
-    text: '<b>ML.NET CLI reference</b>'
-  - type: list
-    style: unordered
-    items:
-    - html: '<a href="/dotnet/machine-learning/reference/ml-net-cli-reference">ML.NET CLI command reference</a>'
+  ms.prod: dotnet-ml
+  ms.topic: landing-page
+  ms.collection: collection
+  author: natke
+  ms.author: nakersha
+  ms.date: 09/18/2019
+
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+
+  # Card (optional)
+  - title: About ML.NET
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is ML.NET?
+            url: how-does-mldotnet-work.md
+      - linkListType: concept
+        links:
+          - text: Model Builder
+            url: automate-training-with-model-builder.md
+          - text: AutoML CLI
+            url: automate-training-with-cli.md
+
+  # Card (optional)
+  - title: Get started with the API
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Analyze website comment sentiment
+            url: /tutorials/sentiment-analysis.md
+          - text: Predict prices with regression
+            url: /tutorials/predict-prices.md
+          - text: Retrain a TensorFlow image classifier
+            url: /tutorials/image-classification.md
+          - text: Classify customer support issues
+            url: /tutorials/github-issue-classification.md
+  # Card (optional)
+  - title: Model Builder and CLI
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Predict prices - Model Builder
+            url: /tutorials/predict-prices-with-model-builder.md
+          - text: Analyze sentiment - AutoML CLI
+            url: /tutorials/mlnet-cli?tabs=windows.md
+          - text: Analyze sentiment - Model Builder & Razor Pages
+            url: /tutorials/mlnet-cli?tabs=windows.md
+
+  # Concepts card
+  - title: Machine learning concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Machine learning model types
+            url: /resources/tasks.md
+          - text: How to choose an algorithm
+            url: /how-to-choose-an-ml-net-algorithm.md
+          - text: Data transforms
+            url: /resources/transforms.md
+          - text: Model evaluation metrics
+            url: /resources/metrics.md
+          - text: Improve model accuracy
+            url: /resources/improve-machine-learning-model-ml-net.md
+
+  # How-to card
+  - title: Data and model training
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Load data from various sources  
+            url: /how-to-guides/load-data-ml-net.md
+          - text: Prepare data for building a model
+            url: /how-to-guides/prepare-data-ml-net.md
+          - text: Train and evaluate a model
+            url: /how-to-guides/train-machine-learning-model-ml-net.md
+          - text: Train a model using cross-validation
+            url: /how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
+
+  # How-to card
+  - title: Explain a model
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Inspect intermediate values  
+            url: /how-to-guides/inspect-intermediate-data-ml-net.md
+          - text: Explain model predictions
+            url: /how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md
+
+  # How-to card
+  - title: Use models
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Save and load trained models  
+            url: /how-to-guides/save-load-machine-learning-models-ml-net.md
+          - text: Make predictions with a trained model
+            url: /how-to-guides/machine-learning-model-predictions-ml-net.md
+          - text: Retrain a model
+            url: /how-to-guides/retrain-model-ml-net.md
+
+  # How-to card
+  - title: Deploy models
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Deploy model to Azure Functions  
+            url: /how-to-guides/serve-model-serverless-azure-functions-ml-net.md
+          - text: Deploy a model to an ASP.NET Core web API
+            url: /how-to-guides/serve-model-web-api-ml-net.md                 
+
+  # Reference card
+  - title: API reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ML.NET API reference  
+            url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+          - text: ML.NET API reference (preview)
+            url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
+          - text: CLI reference
+            url: /reference/ml-net-cli-reference
+          - text: AutoML API reference
+            url: https://docs.microsoft.com/dotnet/api/?view=automl-dotnet

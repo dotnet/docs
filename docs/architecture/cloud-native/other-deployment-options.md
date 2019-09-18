@@ -38,5 +38,5 @@ Azure Container Instances offers the fastest, simplest way to run a container in
 - [Deploy Container Instance from ACR](https://docs.microsoft.com/azure/container-instances/container-instances-using-azure-container-registry#deploy-with-azure-portal)
 
 >[!div class="step-by-step"]
->[Previous](deploy-containers-azure.md)
+>[Previous](scale-containers-serverless.md)
 >[Next](communication-patterns.md) <!-- Next Chapter -->

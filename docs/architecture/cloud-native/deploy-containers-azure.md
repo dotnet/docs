@@ -103,4 +103,4 @@ Next, you can use the `azds prep` command to generate the necessary Docker and H
 
 >[!div class="step-by-step"]
 >[Previous](combine-containers-serverless-approaches.md)
->[Next](other-deployment-options.md)
+>[Next](scale-containers-serverless.md)

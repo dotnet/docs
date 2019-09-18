@@ -39,5 +39,5 @@ Azure Functions automatically support scaling out. The default consumption plan 
 - [Azure Functions scale and hosting](https://docs.microsoft.com/azure/azure-functions/functions-scale)
 
 >[!div class="step-by-step"]
->[Previous](centralized-configuration.md)
->[Next](leverage-containers-orchestrators.md)
+>[Previous](deploy-containers-azure.md)
+>[Next](other-deployment-options.md)

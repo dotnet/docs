@@ -40,7 +40,7 @@ Many applications have long-running processes as part of their workflows. Often 
 Serverless computing is best-used for tasks that do not block the user interface. This means they're not ideal for hosting web applications or web APIs directly. The main reason for this is that serverless solutions are provisioned and scaled on demand. When a new instance of a function is needed, referred to as a *cold start*, it takes time to provision. This time is typically a few seconds, but can be longer depending on a variety of factors. A single instance can often be maintained indefinitely (for instance, by periodically making a request to it), but the cold start issue remains if the number of instances ever needs to scale up.
 
 ![Cold versus warm start](./media/cold-start-warm-start.jpeg)
-**Figure 3-10**. Monolithic architecture.
+**Figure 3-10**. Cold start vs. warm start.
 
 If you need to avoid cold starts entirely, you can choose to switch from a [consumption plan to a dedicated plan](https://azure.microsoft.com/blog/understanding-serverless-cold-start/). You can also [configure one or more pre-warmed instances](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances) with the premium plan so when you need to add another instance, it's already up and ready to go. These options can mitigate one of the key concerns associated with serverless computing.
 

@@ -65,7 +65,7 @@ This information is sufficient to get started. As part of the creation process i
 - Monitoring
 - Tags
 
-This [quickstart walks through deploying an AKS cluster using the Azure portal](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal).
+This [quickstart walks through deploying an AKS cluster using the Azure portal](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
 
 ## Azure Dev Spaces
 

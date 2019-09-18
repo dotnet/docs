@@ -11,10 +11,10 @@ Containers provide many benefits, one of which is portability. You can easily ta
 
 Azure Container Registry (ACR) lets you build, store, and manage images for all of your container deployments. There are other container registries, both public and private, to which you can deploy containers. The benefit of ACR over other options is that you can keep your images close to your production environment, improving build and deployment times. You can also secure them using the same security procedures you use for the rest of your Azure resources, improving security and reducing asset management effort.
 
-You [create a container registry using the Azure Portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) or [using the Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli) or [PowerShell tools](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Creating a new container registry just requires an Azure subscription, a resource group, and a unique name. Figure 3-14 shows the basic options for creating a registry, which will be hosted at *registryname*.azurecr.io.
+You [create a container registry using the Azure Portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) or [using the Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli) or [PowerShell tools](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Creating a new container registry just requires an Azure subscription, a resource group, and a unique name. Figure 3-11 shows the basic options for creating a registry, which will be hosted at *registryname*.azurecr.io.
 
 ![Create container registry](media/create-container-registry.png)
-**Figure 3-14**. Create container registry
+**Figure 3-11**. Create container registry
 
 Once you've created a registry, you'll need to authenticate with it before you can use it. Typically, you'll log into the registry using the Azure CLI command:
 
@@ -90,10 +90,10 @@ All of these steps can be performed using the Azure CLI and new  `azds` command 
 az aks use-dev-spaces -g my-aks-resource-group -n MyAKSCluster
 ```
 
-Next, you can use the `azds prep` command to generate the necessary Docker and Helm chart assets for running the application. Then you run your code in AKS using `azds up`. The first time you run this command, the Helm chart will be installed, and the container(s) will be built and deployed according to your instructions. This may take a few minutes the first time it's run. However, after you make changes, you can connect to your own child dev space using `azds space select` and then deploy and debug your updates in your isolated child dev space. Once you have your dev space up and running, you can send updates to it by re-issuing the `azds up` command or you can use built-in tooling in Visual Studio or Visual Studio Code. With VS Code, you use the command palette to connect to your dev space. Figure 3-17 shows how to launch your web application using Azure Dev Spaces in Visual Studio.
+Next, you can use the `azds prep` command to generate the necessary Docker and Helm chart assets for running the application. Then you run your code in AKS using `azds up`. The first time you run this command, the Helm chart will be installed, and the container(s) will be built and deployed according to your instructions. This may take a few minutes the first time it's run. However, after you make changes, you can connect to your own child dev space using `azds space select` and then deploy and debug your updates in your isolated child dev space. Once you have your dev space up and running, you can send updates to it by re-issuing the `azds up` command or you can use built-in tooling in Visual Studio or Visual Studio Code. With VS Code, you use the command palette to connect to your dev space. Figure 3-12 shows how to launch your web application using Azure Dev Spaces in Visual Studio.
 
 ![Connect to Azure Dev Spaces in Visual Studio](media/azure-dev-spaces-visual-studio-launchsettings.png)
-**Figure 3-16**. Connect to Azure Dev Spaces in Visual Studio
+**Figure 3-12**. Connect to Azure Dev Spaces in Visual Studio
 
 ## References
 

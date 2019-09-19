@@ -88,7 +88,7 @@ Razor components also make extensive use of *directive attributes* on elements t
 @directive(-suffix(:name))(="value")
 ```
 
-The following table summarizes the various Razor directive attributes used in Blazor.
+The following table summarizes the various attributes for Razor directives used in Blazor.
 
 Directive attribute | Description | Example
 ------------------- | ----------- | -------
@@ -125,7 +125,7 @@ To add members to the Razor component class, use the `@code` directive. This tec
 
 Because Razor is based on C#, it must be compiled from within a C# project (*.csproj*). You can't compile *.razor* files from a VB project (*.vbproj*). You can still reference VB projects from your Blazor project. The opposite is true too.
 
-A full [Razor syntax reference](/aspnet/core/mvc/views/razor) is available in the ASP.NET Core documentation.
+For a full Razor syntax reference, see [Razor syntax reference for ASP.NET Core](/aspnet/core/mvc/views/razor).
 
 ## Use components
 
@@ -447,7 +447,7 @@ protected override async Task OnParametersSetAsync() { await ... }
 
 ### OnAfterRender
 
-The `OnAfterRender` and `OnAfterRenderAsync` methods are called after a component has finished rendering. Element and component references are populated at this point (more on these concepts below). Interactivity with the browser is enabled at this point including interacting with the DOM and support for executing JavaScript. 
+The `OnAfterRender` and `OnAfterRenderAsync` methods are called after a component has finished rendering. Element and component references are populated at this point (more on these concepts below). Interactivity with the browser is enabled at this point. Interactions with the DOM and JavaScript execution can safely take place. 
 
 ```csharp
 protected override void OnAfterRender(bool firstRender)
@@ -468,7 +468,7 @@ protected override async Task OnAfterRenderAsync(bool firstRender)
 
 `OnAfterRender` and `OnAfterRenderAsync` *aren't called when prerendering on the server*.
 
-The `firstRender` parameter is `true` the first time the component is rendered; otherwise, it's `false`.
+The `firstRender` parameter is `true` the first time the component is rendered; otherwise, its value is `false`.
 
 ### IDisposable
 
@@ -513,11 +513,11 @@ Manipulating component state directly using component references isn't recommend
 
 ## Capture element references
 
-Blazor components can capture references to an element. Unlike HTML server controls in ASP.NET Web Forms, you can't manipulate the DOM directly using an element reference in Blazor. Blazor handles most DOM interactions for you using its DOM diffing algorithm. Captured element references in Blazor are opaque. However, they can be used to pass a specific element reference in a JavaScript interop call. Learn more about [JavaScript interop](/aspnet/core/blazor/javascript-interop) in the Blazor documentation.
+Blazor components can capture references to an element. Unlike HTML server controls in ASP.NET Web Forms, you can't manipulate the DOM directly using an element reference in Blazor. Blazor handles most DOM interactions for you using its DOM diffing algorithm. Captured element references in Blazor are opaque. However, they're used to pass a specific element reference in a JavaScript interop call. For more information about JavaScript interop, see [ASP.NET Core Blazor JavaScript interop](/aspnet/core/blazor/javascript-interop).
 
 ## Templated components
 
-In ASP.NET Web Forms, you can create *templated controls*. Templated controls enable the developer to specify a portion of the HTML used to render a container control. The mechanics of building templated server controls are somewhat involved, but they enable powerful scenarios for rendering data in a user customizable way. Examples of templated controls include `Repeater` and `DataList`. 
+In ASP.NET Web Forms, you can create *templated controls*. Templated controls enable the developer to specify a portion of the HTML used to render a container control. The mechanics of building templated server controls are complex, but they enable powerful scenarios for rendering data in a user customizable way. Examples of templated controls include `Repeater` and `DataList`. 
 
 Blazor components can also be templated by defining component parameters of type `RenderFragment` or `RenderFragment<T>`. A `RenderFragment` represents a chunk of Razor markup that can then be rendered by the component. A `RenderFragment<T>` is a chunk of Razor markup that takes a parameter that can be specified when the render fragment is rendered.
 

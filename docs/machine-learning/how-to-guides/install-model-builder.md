@@ -40,27 +40,27 @@ ML.NET Model builder can be installed either through the Visual Studio Marketpla
 
 1. In the menu bar, select **Tools** > **Extensions and Updates**
 
-![VS201701](./media/install-model-builder/VS201701.png)
+    ![VS201701](./media/install-model-builder/VS201701.png)
 
-2. Inside the *Extension and Updates* prompt, select the *Online* node.
-3. In the search bar, search for *ML.NET Model Builder* and from the results, select ML.NET Model Builder (Preview)
+1. Inside the *Extension and Updates* prompt, select the *Online* node.
+1. In the search bar, search for *ML.NET Model Builder* and from the results, select ML.NET Model Builder (Preview)
 
-![VS201702](./media/install-model-builder/VS201702.png)
+    ![VS201702](./media/install-model-builder/VS201702.png)
 
-4. Follow the prompts to complete the installation
+1. Follow the prompts to complete the installation
 
 ### Visual Studio 2019
 
 1. On the menu bar, select **Extensions** > **Manage Extensions**
 
-![VS201901](./media/install-model-builder/VS201901.png)
+    ![VS201901](./media/install-model-builder/VS201901.png)
 
-2. Inside the *Extension and Updates* prompt, select the *Online* node.
-3. Type *ML.NET Model Builder* into the search bar select ML.NET Model Builder (Preview)
+1. Inside the *Extension and Updates* prompt, select the *Online* node.
+1. Type *ML.NET Model Builder* into the search bar select ML.NET Model Builder (Preview)
 
-![VS201902](./media/install-model-builder/VS201902.png)
+    ![VS201902](./media/install-model-builder/VS201902.png)
 
-4. Follow the prompts to complete the installation
+1. Follow the prompts to complete the installation
 
 ## Uninstall
 

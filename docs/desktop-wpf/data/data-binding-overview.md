@@ -22,7 +22,7 @@ A typical use of data binding is to place server or local configuration data int
 
 For an example of data binding, take a look at the following application UI from the [Data Binding Demo](https://github.com/microsoft/WPF-Samples/tree/master/Sample%20Applications/DataBindingDemo):
 
-![Data binding sample screenshot](./media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")
+![Data binding sample screenshot](./media/data-binding-overview/demo.png "DataBinding_DataBindingDemo")
 
 The above is the UI of an application that displays a list of auction items. The application demonstrates the following features of data binding:
 
@@ -38,7 +38,7 @@ The above is the UI of an application that displays a list of auction items. The
 
 When the user clicks the *Add Product* button, the following form comes up:
 
-![Add Product Listing page](./media/databinding-demo-addproductlisting.png "DataBinding_Demo_AddProductListing")
+![Add Product Listing page](./media/data-binding-overview/demo-addproductlisting.png "DataBinding_Demo_AddProductListing")
 
 The user can edit the fields in the form, preview the product listing using the short preview and the more detailed preview panes, and then click *submit* to add the new product listing. Any existing grouping, filtering and sorting functionalities will apply to the new entry. In this particular case, the item entered in the above image will be displayed as the second item within the *Computer* category.
 
@@ -333,7 +333,7 @@ You may have noticed that the above example uses a template. In fact, the data w
 
 Without the use of data templates, our application UI in the [What Is Data Binding](#what-is-data-binding) section would look like the following image:
 
-![Data Binding Demo without Data Templates](./media/data-binding-overview/data-binding-demo-templates.png)
+![Data Binding Demo without Data Templates](./media/data-binding-overview/demo-no-template.png)
 
 As shown in the example in the previous section, both the <xref:System.Windows.Controls.ListBox> control and the <xref:System.Windows.Controls.ContentControl> are bound to the entire collection object (or more specifically, the view over the collection object) of *AuctionItem*s. Without specific instructions of how to display the data collection, the <xref:System.Windows.Controls.ListBox> is displaying a string representation of each object in the underlying collection and the <xref:System.Windows.Controls.ContentControl> is displaying a string representation of the object it is bound to.
 
@@ -386,11 +386,11 @@ In addition, you may also use a <xref:System.Windows.Controls.ToolTip> to displa
 
 With the custom <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> and the <xref:System.Windows.Controls.ToolTip>, the *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> looks like the following when there is a validation error:
 
-![Data binding validation error](./media/databindingdemo-validation.PNG "DataBindingDemo_Validation")
+![Data binding validation error](./media/data-binding-overview/demo-validation-date.png "DataBindingDemo_Validation")
 
 If your <xref:System.Windows.Data.Binding> has associated validation rules but you do not specify an <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> on the bound control, a default <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> will be used to notify users when there is a validation error. The default <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> is a control template that defines a red border in the adorner layer. With the default <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> and the <xref:System.Windows.Controls.ToolTip>, the UI of the *StartPriceEntryForm* <xref:System.Windows.Controls.TextBox> looks like the following when there is a validation error:
 
-![Data binding validation error](./media/databindingdemo-validationdefault.PNG "DataBindingDemo_ValidationDefault")
+![Data binding validation error](./media/data-binding-overview/demo-validation-price.png "DataBindingDemo_ValidationDefault")
 
 For an example of how to provide logic to validate all controls in a dialog box, see the Custom Dialog Boxes section in the [Dialog Boxes Overview](../app-development/dialog-boxes-overview.md).
 

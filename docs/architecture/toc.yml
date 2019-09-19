@@ -3,8 +3,10 @@
 - name: E-books
   expanded: true
   items:
-    - name: Architect Modern web applications with ASP.NET Core and Microsoft Azure
+    - name: Architect modern web applications with ASP.NET Core and Microsoft Azure
       href: modern-web-apps-azure/
+    - name: "Architecting cloud-native .NET apps for Azure"
+      href: cloud-native/
     - name: Modernize Existing .NET Applications with Azure cloud and Windows Containers
       href: modernize-with-azure-containers/
     - name: Containerized Docker Application Lifecycle with the Microsoft Platform and Tools

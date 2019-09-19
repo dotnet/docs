@@ -52,7 +52,7 @@ Deployments are the *described state* objects for Pods. If you create a Pod manu
 
 ### Other objects
 
-Pods, Services, and Deployments are just three of the most basic object types. There are dozens of other types of object that are managed by a Kubernetes cluster. For more information, check out the [Kubernetes Concepts documentation](https://kubernetes.io/docs/concepts/).
+Pods, Services, and Deployments are just three of the most basic object types. There are dozens of other types of object that are managed by a Kubernetes cluster. For more information, see the [Kubernetes Concepts](https://kubernetes.io/docs/concepts/) documentation.
 
 ### Namespaces
 

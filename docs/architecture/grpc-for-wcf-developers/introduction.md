@@ -7,9 +7,9 @@ ms.date: 09/02/2019
 
 # Introduction
 
-Helping machines communicate with each other has been one of the primary preoccupations of the digital age. Determining the optimal remote communication mechanism that will suit the interoperability demands of the current infrastructure. As you can imagine, that mechanism changes as either the demands or the infrastructure evolves.
+Helping machines communicate with each other has been one of the primary preoccupations of the digital age. In particular, there is an ongoing effort to determine the optimal remote communication mechanism that will suit the interoperability demands of the current infrastructure. As you can imagine, that mechanism changes as either the demands or the infrastructure evolves.
 
-The release of .NET Core 3.0 marks a shift in the way that Microsoft delivers remote communication solutions to developers who want to deliver services across a range of platforms. For the first time, .NET Core 3.0 doesn't offer Windows Communication Foundation (WCF) out of the box but does provide built-in gRPC functionality.
+The release of .NET Core 3.0 marks a shift in the way that Microsoft delivers remote communication solutions to developers who want to deliver services across a range of platforms. .NET Core doesn't offer Windows Communication Foundation (WCF) out of the box but, with the release of version ASP.NET Core 3.0, it does provide built-in gRPC functionality.
 
 ## History
 
@@ -19,12 +19,12 @@ During the 1990s, the emphasis had been mainly focused on improving internal net
 
 However, the focus soon shifted to how best to optimize communication across multiple platforms promoting a language agnostic approach. Service-oriented architecture (SOA) provided a structure for loosely coupling a broad collection of services that could be provided to an application.
 
-The development of Web Services occurred once all major platforms could access the Internet Web Services because they still couldn’t interact with each other. Web Services have open standards and protocols including:
+The development of *Web Services* occurred once all major platforms could access the Internet, but they still couldn’t interact with each other. Web services have open standards and protocols including:
 
 - XML to tag and code data;
-- SOAP Simple Object Access Protocol to transfer data;
-- Web Services Definition Language WSDL – describes and connects the web service to the client application; *and*
-- UDDI (UNIversal Description Discovery Integration)- enables Web Services to be discoverable by other Services
+- Simple Object Access Protocol (SOAP) to transfer data;
+- Web Services Definition Language (WSDL) – describes and connects the web service to the client application; *and*
+- Universal Description Discovery Integration (UDDI)- enables Web Services to be discoverable by other Services
 
 SOAP defines the rules by which distributed elements of an application can communicate with each other even if they are on different platforms. SOAP is based on XML, so it's human-readable. The sacrifice for making SOAP easily understood is size; SOAP messages are larger than messages in comparable protocols. SOAP was designed to break down monolithic applications into multi-component form without losing security or control. Therefore, WCF was designed to work with that kind of system unlike gRPC, which began as a distributed system.
 
@@ -38,10 +38,10 @@ Advantages to microservices include:
 
 - Changes and upgrades can be handled independently.
 - Error handling becomes more efficient as problems can be traced to specific services that are then isolated, rebuilt, tested, and redeployed independent of the other services.
-- Scalability can be confined to the specific instances or services not the whole application.
-- Development can happen across teams.
+- Scalability can be confined to the specific instances or services rather than the whole application.
+- Development can happen across multiple teams, with less friction than occurs when many teams work on a single codebase.
 
-The move towards increasing virtualization, cloud computing, and the Internet of Things have contributed to the ongoing rise of microservices. However, microservices aren't without their challenges. The fragmented/decentralized infrastructure placed more emphasis on the need for simplicity and speed when communicating between services. This in turn drew attention to the sometimes laborious and contorted nature of SOAP.
+The move towards increasing virtualization, cloud computing, containers and the Internet of Things have contributed to the ongoing rise of microservices. However, microservices aren't without their challenges. The fragmented/decentralized infrastructure placed more emphasis on the need for simplicity and speed when communicating between services. This in turn drew attention to the sometimes laborious and contorted nature of SOAP.
 
 It was into this environment that gRPC was launched, 10 years after Microsoft first released WCF. Evolved directly from Google’s internal infrastructure RPC (Stubby), gRPC was never based on the same standards and protocols that had informed the parameters of many earlier RPCs. Additionally, gRPC was only ever based on HTTP/2 and that's why it could draw on the new capabilities that advanced transport protocol provided. In particular, bidirectional streaming, binary messaging, and multiplexing.
 
@@ -55,7 +55,7 @@ The final section of the book looks at how to get the best from gRPC in practice
 
 ## Whom this guide is for
 
-This guide was written for developers working in .NET or .NET Core who have previously used WCF and who are seeking to migrate their applications to a modern RPC environment for .NET Core 3.0 and later versions. It is hoped that the guide will also be of use more generally for developers upgrading or considering upgrading to .NET Core 3.0 who want to use the built-in gRPC tool.
+This guide was written for developers working in .NET Framework or .NET Core who have previously used WCF and who are seeking to migrate their applications to a modern RPC environment for .NET Core 3.0 and later versions. The guide may also be of use more generally for developers upgrading or considering upgrading to .NET Core 3.0 who want to use the built-in gRPC tools.
 
 >[!div class="step-by-step"]
 <!-->[Next](grpc-overview.md)-->

@@ -144,7 +144,11 @@ To learn more about querying the systemd journal from the command line with `jou
 
 ## HTTPS Certificates for self-hosted applications
 
-When running a gRPC application in production, you should use a proper TLS certificate from a trusted Certificate Authority (CA). This CA could be a public CA, or an internal one for your organization. On Windows hosts, the certificate should be loaded from a secure [Certificate Store](https://docs.microsoft.com/windows/win32/seccrypto/managing-certificates-with-certificate-stores) using the [X509Store class](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). On Linux hosts, the certificate may be created using one of the [X509Certificate2 constructors](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate.-ctor?view=netcore-3.0), either from a file (for example a `.pfx` file protected by a strong password), or from binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
+When running a gRPC application in production, you should use a TLS certificate from a trusted Certificate Authority (CA). This CA could be a public CA, or an internal one for your organization.
+
+On Windows hosts, the certificate may be loaded from a secure [Certificate Store](https://docs.microsoft.com/windows/win32/seccrypto/managing-certificates-with-certificate-stores) using the [X509Store class](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). The `X509Store` class can also be used with the OpenSSL key-store on some Linux hosts.
+
+Certificates may also be created using one of the [X509Certificate2 constructors](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate.-ctor?view=netcore-3.0), either from a file (for example a `.pfx` file protected by a strong password), or from binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
 
 Kestrel can be configured to use a certificate in two ways: from configuration, or in code.
 

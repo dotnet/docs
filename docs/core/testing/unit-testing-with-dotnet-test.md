@@ -19,7 +19,7 @@ Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to cre
 makes it easier to manage both the class library and the unit test project.
 Inside the solution directory, create a *PrimeService* directory. The directory and file structure thus far should be as follows:
 
-```console
+```
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
@@ -46,7 +46,7 @@ Change the directory back to the *unit-testing-using-dotnet-test* directory.
 
 Run the [dotnet sln](../tools/dotnet-sln.md) command to add the class library project to the solution:
 
-```console
+```dotnetcli
 dotnet sln add ./PrimeService/PrimeService.csproj
 ```
 
@@ -54,7 +54,7 @@ dotnet sln add ./PrimeService/PrimeService.csproj
 
 Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
-```console
+```
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
@@ -75,7 +75,7 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added xUnit and the xUnit runner. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```console
+```dotnetcli
 dotnet add reference ../PrimeService/PrimeService.csproj
 ```
 
@@ -83,7 +83,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 The following shows the final solution layout:
 
-```console
+```
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
@@ -96,7 +96,7 @@ The following shows the final solution layout:
 
 To add the test project to the solution, run the [dotnet sln](../tools/dotnet-sln.md) command in the *unit-testing-using-dotnet-test* directory:
 
-```console
+```dotnetcli
 dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 

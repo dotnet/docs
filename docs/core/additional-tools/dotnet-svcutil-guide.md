@@ -58,7 +58,7 @@ From a Windows, macOS, or Linux command window perform the following steps:
 
 2. Create a new C# web project in that directory using the [`dotnet new`](../tools/dotnet-new.md) command as follows:
 
-    ```console
+    ```dotnetcli
     dotnet new web
     ```
 
@@ -66,7 +66,7 @@ From a Windows, macOS, or Linux command window perform the following steps:
     <!-- markdownlint-disable MD023 -->
     # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
 
-    ```console
+    ```dotnetcli
     dotnet tool install --global dotnet-svcutil
     ```
 
@@ -81,7 +81,7 @@ From a Windows, macOS, or Linux command window perform the following steps:
 
     Then restore the _dotnet-svcutil_ package using the [`dotnet restore`](../tools/dotnet-restore.md) command as follows:
 
-    ```console
+    ```dotnetcli
     dotnet restore
     ```
 
@@ -91,13 +91,13 @@ From a Windows, macOS, or Linux command window perform the following steps:
 
     # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
 
-    ```console
+    ```dotnetcli
     dotnet-svcutil http://contoso.com/SayHello.svc
     ```
 
     # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
 
-    ```console
+    ```dotnetcli
     dotnet svcutil http://contoso.com/SayHello.svc
     ```
 
@@ -109,7 +109,7 @@ The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The
 
 1. Restore the WCF packages using the [`dotnet restore`](../tools/dotnet-restore.md) command as follows:
 
-    ```console
+    ```dotnetcli
     dotnet restore
     ```
 
@@ -143,7 +143,7 @@ The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The
 
 5. Run the application using the [`dotnet run`](../tools/dotnet-run.md) command as follows:
 
-    ```console
+    ```dotnetcli
     dotnet run
     ```
 
@@ -155,13 +155,13 @@ You should see the following output:
 For a detailed description of the `dotnet-svcutil` tool parameters, invoke the tool passing the help parameter as follows:
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
 
-```console
+```dotnetcli
 dotnet-svcutil --help
 ```
 
 # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
 
-```console
+```dotnetcli
 dotnet svcutil --help
 ```
 

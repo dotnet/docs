@@ -11,7 +11,7 @@ WCF's network security model is extensive and complex, including transport-level
 
 gRPC massively simplifies secure networking by leaving it up to the underlying HTTP/2 implementation, which can be secured using regular TLS certificates.
 
-Web browsers insist on using TLS connections for HTTP/2, but most programmatic clients, including .NET's `HttpClient`, can use HTTP/2 over unencrypted connections. `HttpClient` *does* require encryption by default, but you can override this using an AppContext switch.
+Web browsers insist on using TLS connections for HTTP/2, but most programmatic clients, including .NET's `HttpClient`, can use HTTP/2 over unencrypted connections. `HttpClient` *does* require encryption by default, but you can override this using an <xref:System.AppContext> switch.
 
 ```csharp
 AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
@@ -21,9 +21,9 @@ For public APIs, you should always use TLS connections and provide valid certifi
 
 For internal services across a corporate network, you should still consider using TLS to secure network traffic to and from your gRPC services.
 
-Communication between microservices in a cluster like Kubernetes or Docker Swarm is generally automatically encrypted by the container networking layer, so implementing TLS in services running exclusively in such a cluster is not necessary. There will be more on this in the "Service Mesh" section of the next chapter.
+Communication between microservices in a cluster like Kubernetes or Docker Swarm is in general automatically encrypted by the container networking layer, so implementing TLS in services running exclusively in such a cluster isn't necessary. There will be more on this subject in the "Service Mesh" section of the next chapter.
 
-If you need to use explicit TLS between services running in Kubernetes, consider using an in-cluster Certificate Authority and a Certificate Manager Controller like [cert-manager](https://docs.cert-manager.io/en/latest/) to automatically assign certificates to services at deployment time.
+If you need to use explicit TLS between services running in Kubernetes, consider using an in-cluster Certificate Authority and a Certificate Manager Controller like [cert-manager](https://docs.cert-manager.io/en/latest/) to assign automatically certificates to services at deployment time.
 
 >[!div class="step-by-step"]
 <!-->[Next](grpc-in-production.md)-->

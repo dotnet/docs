@@ -14,17 +14,20 @@ This section covers how to declare Protobuf messages in `.proto` files, explains
 In WCF, a `Stock` class for a stock market trading application might be defined like the following example:
 
 ```csharp
-[DataContract]
-public class Stock
+namespace TraderSys
 {
-    [DataMember]
-    public int Id { get; set;}
-    [DataMember]
-    public string Symbol { get; set;}
-    [DataMember]
-    public string DisplayName { get; set;}
-    [DataMember]
-    public int MarketId { get; set; }
+    [DataContract]
+    public class Stock
+    {
+        [DataMember]
+        public int Id { get; set;}
+        [DataMember]
+        public string Symbol { get; set;}
+        [DataMember]
+        public string DisplayName { get; set;}
+        [DataMember]
+        public int MarketId { get; set; }
+    }
 }
 ```
 
@@ -32,6 +35,8 @@ To implement the equivalent class in Protobuf, it must be declared in the `.prot
 
 ```protobuf
 syntax "proto3";
+
+option csharp_namespace = "TraderSys";
 
 message Stock {
 
@@ -44,6 +49,8 @@ message Stock {
 ```
 
 The first line declares the syntax version being used. Version 3 of the language was released in 2016 and is the recommended version for gRPC services.
+
+The `option csharp_namespace` line specifies the namespace to be used for the generated C# types. This option will be ignored when the `.proto` file is compiled for other languages. It is common for Protobuf files to contain language-specific options for several languages.
 
 The `Stock` message definition specifies four fields, each with a type, a name, and a field number.
 

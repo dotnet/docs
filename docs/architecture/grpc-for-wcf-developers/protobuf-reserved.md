@@ -21,7 +21,17 @@ message Stock {
 }
 ```
 
-The `reserved` keyword can also be used as a placeholder for fields that might be added in the future.
+The `reserved` keyword can also be used as a placeholder for fields that might be added in the future. Contiguous field numbers can be expressed as a range using the `to` keyword.
+
+```protobuf
+syntax "proto3";
+
+message Info {
+
+    reserved 2, 9 to 11, 15;
+    // ...
+}
+```
 
 >[!div class="step-by-step"]
 <!-->[Next](protobuf-any-oneof.md)-->

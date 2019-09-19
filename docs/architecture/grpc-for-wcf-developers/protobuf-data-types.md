@@ -13,8 +13,8 @@ Protobuf supports a range of native scalar value types. The following table list
 | ------------- | ------------ | ----- |
 | `double`      | `double`     |       |
 | `float`       | `float`      |       |
-| `int32`       | `int`        |       |
-| `int64`       | `long`       |       |
+| `int32`       | `int`        | 1     |
+| `int64`       | `long`       | 1     |
 | `uint32`      | `uint`       |       |
 | `uint64`      | `ulong`      |       |
 | `sint32`      | `int`        | 1     |

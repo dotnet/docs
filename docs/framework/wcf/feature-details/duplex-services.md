@@ -41,7 +41,7 @@ On the client, you must configure an address that the server can use to connect 
 
 If you create a client/service using the `WSHttpBinding` element and you do not include the client callback endpoint, you will receive the following error.
 
-```
+```console
 HTTP could not register URL
 htp://+:80/Temporary_Listen_Addresses/<guid> because TCP port 80 is being used by another application.
 ```

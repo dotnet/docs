@@ -11,6 +11,7 @@ ms.custom: "mvc, seodec18"
 This tutorial teaches you how to use the Microsoft XML Serializer Generator in a C# .NET Core application. During the course of this tutorial, you learn:
 
 > [!div class="checklist"]
+>
 > * How to create a .NET Core app
 > * How to add a reference to the Microsoft.XmlSerializer.Generator package
 > * How to edit your MyApp.csproj to add dependencies
@@ -37,7 +38,7 @@ The following instructions show you how to use XML Serializer Generator in a .NE
 
 Open a command prompt and create a folder named *MyApp*. Navigate to the folder you created and type the following command:
 
-```console
+```dotnetcli
 dotnet new console
 ```
 
@@ -47,7 +48,7 @@ Use the [`dotnet add package`](../tools//dotnet-add-package.md) command to add t
 
 Type:
 
-```console
+```dotnetcli
 dotnet add package Microsoft.XmlSerializer.Generator -v 1.0.0
 ```
 
@@ -100,7 +101,7 @@ Still within the *MyApp* folder, run the application via [`dotnet run`](../tools
 
 Type the following command in your console window:
 
-```console
+```dotnetcli
 dotnet run
 ```
 
@@ -114,6 +115,7 @@ If everything succeeds, an assembly named *MyApp.XmlSerializers.dll* is generate
 
 Congratulations! You have just:
 > [!div class="checklist"]
+>
 > * Created a .NET Core app.
 > * Added a reference to the Microsoft.XmlSerializer.Generator package.
 > * Edited your MyApp.csproj to add dependencies.

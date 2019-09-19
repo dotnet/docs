@@ -15,7 +15,7 @@ This tutorial expects that you have a machine you can use for development. The .
 
 Create a directory named **interpolated**. Make it the current directory and run the following command from a console window:
 
-```console
+```dotnetcli
 dotnet new console
 ```
 

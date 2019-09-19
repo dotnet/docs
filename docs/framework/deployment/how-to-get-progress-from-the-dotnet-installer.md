@@ -45,7 +45,7 @@ The .NET Framework 4.5 is a redistributable runtime. If you develop apps for thi
 
 ## Chainer Sample
 
-The Chainer sample silently launches and tracks .NET Framework 4.5 setup while showing progress. This sample is similar to the Chainer sample provided for the .NET Framework 4. However, in addition, it can avoid system restarts by processing the message box for closing .NET Framework 4 apps. For information about this message box, see [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md). You can use this sample with the .NET Framework 4 installer; in that scenario, the message is simply not sent.
+The Chainer sample silently launches and tracks .NET Framework 4.5 setup while showing progress. This sample is similar to the Chainer sample provided for the .NET Framework 4. However, in addition, it can avoid system restarts by processing the message box for closing .NET Framework 4 apps. For information about this message box, see [Reducing System Restarts During .NET Framework 4.5 Installations](reducing-system-restarts.md). You can use this sample with the .NET Framework 4 installer; in that scenario, the message is simply not sent.
 
 > [!WARNING]
 > You must run the example as an administrator.
@@ -306,5 +306,5 @@ A typical server creates a random MMIO file name, creates the file (as shown in 
 
 ## See also
 
-- [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)
-- [Deployment](../../../docs/framework/deployment/index.md)
+- [Deployment Guide for Developers](deployment-guide-for-developers.md)
+- [Deployment](index.md)

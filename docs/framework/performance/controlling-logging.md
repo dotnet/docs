@@ -17,7 +17,7 @@ You can use event tracing for Windows (ETW) to record common language runtime (C
 
 To capture CLR event information, the CLR provider must be installed on your computer. To confirm that the provider is installed, type `logman query providers` at the command prompt. A list of providers is displayed. This list should contain an entry for the CLR provider, as follows.
 
-```
+```output
 Provider                                 GUID
 -------------------------------------------------------------------------------
 .NET Common Language Runtime    {E13C0D23-CCBC-4E12-931B-D9CC2EEE27E4}.
@@ -79,7 +79,7 @@ To turn on logging, a user must specify three things:
 
 ## Viewing CLR ETW Events
 
-Use the commands listed below to view the CLR ETW events. For a description of the events, see [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md).
+Use the commands listed below to view the CLR ETW events. For a description of the events, see [CLR ETW Events](clr-etw-events.md).
 
 ### To view CLR ETW events using Tracerpt
 
@@ -108,4 +108,4 @@ Use the commands listed below to view the CLR ETW events. For a description of t
 ## See also
 
 - [Windows Performance Toolkit](/windows-hardware/test/wpt/)
-- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)
+- [ETW Events in the Common Language Runtime](etw-events-in-the-common-language-runtime.md)

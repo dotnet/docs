@@ -81,7 +81,7 @@ Create the following folder structure with file content indicated:
 
 Execute the following command:
 
-```console
+```dotnetcli
 dotnet run
 ```
 
@@ -102,7 +102,7 @@ Navigate back to the *src* folder and create a *test* folder with a *NewTypesTes
 
 The test project cannot currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```console
+```dotnetcli
 dotnet add reference ../../src/NewTypes/NewTypes.csproj
 ```
 

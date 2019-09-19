@@ -18,7 +18,7 @@ ms.date: 06/26/2019
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output] [--interactive] [-k|--api-key] [-n|--no-symbols]
     [--no-service-endpoint] [-s|--source] [-sk|--symbol-api-key] [-ss|--symbol-source] [-t|--timeout]
 dotnet nuget push [-h|--help]
@@ -84,37 +84,37 @@ Prints out a short help for the command.
 
 * Pushes *foo.nupkg* to the default push source, specifying an API key:
 
-  ```console
+  ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
   ```
 
 * Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
 
-  ```console
+  ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
   ```
 
 * Pushes *foo.nupkg* to the default push source:
 
-  ```console
+  ```dotnetcli
   dotnet nuget push foo.nupkg
   ```
 
 * Pushes *foo.symbols.nupkg* to the default symbols source:
 
-  ```console
+  ```dotnetcli
   dotnet nuget push foo.symbols.nupkg
   ```
 
 * Pushes *foo.nupkg* to the default push source, specifying a 360-second timeout:
 
-  ```console
+  ```dotnetcli
   dotnet nuget push foo.nupkg --timeout 360
   ```
 
 * Pushes all *.nupkg* files in the current directory to the default push source:
 
-  ```console
+  ```dotnetcli
   dotnet nuget push *.nupkg
   ```
   

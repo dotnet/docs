@@ -91,10 +91,10 @@ Comment out the compiler directive.
   
 ## See also
 
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
-- [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)
-- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
-- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
-- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)
+- [How to: Create, Initialize and Configure Trace Switches](how-to-create-initialize-and-configure-trace-switches.md)
+- [Trace Switches](trace-switches.md)
+- [Trace Listeners](trace-listeners.md)
+- [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md)
 - [How to: Set Environment Variables for the Visual Studio Command Line](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
 - [How to: Invoke the Command-Line Compiler](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)

@@ -11,6 +11,7 @@ Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when yo
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
+>
 > * Extend interfaces safely by adding methods with implementations.
 > * Create parameterized implementations to provide greater flexibility.
 > * Enable implementers to provide a more specific implementation in the form of an override.

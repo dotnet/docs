@@ -17,7 +17,7 @@ This sample illustrates the List-based Publish-Subscribe pattern implemented as 
   
  The service uses duplex communication. The `ISampleContract` service contract is paired up with an `ISampleClientCallback` callback contract. The service implements Subscribe and Unsubscribe service operations, which clients use to join or leave the list of subscribers. The service also implements the `PublishPriceChange` service operation, which the data source program calls to provide the service with new information. The client program implements the `PriceChange` service operation, which the service calls to notify all subscribers of a price change.  
   
-```  
+```csharp  
 // Create a service contract and define the service operations.  
 // NOTE: The service operations must be declared explicitly.  
 [ServiceContract(SessionMode=SessionMode.Required,  
@@ -42,7 +42,7 @@ public interface ISampleClientContract
   
  The service uses a .NET Framework event as the mechanism to inform all subscribers about new information. When a client joins the service by calling Subscribe, it provides an event handler. When a client leaves, it unsubscribes its event handler from the event. When a data source calls the service to report a price change, the service raises the event. This calls each instance of the service, one for each client that has subscribed, and causes their event handlers to execute. Each event handler passes the information to its client through its callback function.  
   
-```  
+```csharp  
 public class PriceChangeEventArgs : EventArgs  
     {  
         public string Item;  

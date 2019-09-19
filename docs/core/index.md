@@ -27,7 +27,7 @@ The latest version is [.NET Core 2.2](whats-new/dotnet-core-2-2.md). New feature
 
 After installing the .NET Core SDK, open a command prompt. Type the following `dotnet` commands to create and run a C# application.
 
-```console
+```dotnetcli
 dotnet new console
 dotnet run
 ```

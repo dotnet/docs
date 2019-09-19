@@ -334,6 +334,7 @@ struct Currency
 ## Marshaling `System.Object`s
 
 On Windows, you can marshal `object`-typed fields to native code. You can marshal these fields to one of three types:
+
 - [`VARIANT`](/windows/win32/api/oaidl/ns-oaidl-variant)
 - [`IUnknown*`](/windows/desktop/api/unknwn/nn-unknwn-iunknown)
 - [`IDispatch*`](/windows/desktop/api/oaidl/nn-oaidl-idispatch)

@@ -39,7 +39,7 @@ COM developers can benefit from the following information about the managed type
 
   Strong-named assemblies that are signed by a publisher can be installed into the global assembly cache. Unsigned assemblies must be installed on the user's machine as private assemblies.
 
-  For additional information, see [Assembly Security Considerations](../app-domains/assembly-security-considerations.md).
+  For additional information, see [Assembly Security Considerations](../../standard/assembly/security-considerations.md).
 
 - Type library inclusion
 
@@ -90,7 +90,7 @@ The [.NET Services Installation Tool (Regsvcs.exe)](../tools/regsvcs-exe-net-ser
 - [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
 - [Qualifying .NET Types for Interoperation](../../standard/native-interop/qualify-net-types-for-interoperation.md)
 - [Introducing the class interface](../../standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface)
-- [Assembly Security Considerations](../app-domains/assembly-security-considerations.md)
+- [Assembly Security Considerations](../../standard/assembly/security-considerations.md)
 - [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)
 - [Registering Assemblies with COM](registering-assemblies-with-com.md)
 - [How to: Embed Type Libraries as Win32 Resources in Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100))

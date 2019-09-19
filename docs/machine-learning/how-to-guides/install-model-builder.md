@@ -39,15 +39,27 @@ ML.NET Model builder can be installed either through the Visual Studio Marketpla
 ### Visual Studio 2017
 
 1. In the menu bar, select **Tools** > **Extensions and Updates**
+
+![VS201701](./media/install-model-builder/VS201701.png)
+
 1. Inside the *Extension and Updates* prompt, select the *Online* node.
 1. In the search bar, search for *ML.NET Model Builder* and from the results, select ML.NET Model Builder (Preview)
+
+![VS201702](./media/install-model-builder/VS201702.png)
+
 1. Follow the prompts to complete the installation
 
 ### Visual Studio 2019
 
 1. On the menu bar, select **Extensions** > **Manage Extensions**
+
+![VS201901](./media/install-model-builder/VS201901.png)
+
 1. Inside the *Extension and Updates* prompt, select the *Online* node.
 1. Type *ML.NET Model Builder* into the search bar select ML.NET Model Builder (Preview)
+
+![VS201902](./media/install-model-builder/VS201902.png)
+
 1. Follow the prompts to complete the installation
 
 ## Uninstall

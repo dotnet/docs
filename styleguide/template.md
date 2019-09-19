@@ -295,7 +295,7 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |Console|console|
 |CSHTML|cshtml|
 |DAX|dax|
-|Dockerfile|Dockerfile|
+|Dockerfile|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|

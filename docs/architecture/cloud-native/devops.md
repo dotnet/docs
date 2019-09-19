@@ -9,7 +9,7 @@ ms.date: 06/30/2019
 
 The favorite mantra of software consultants is to answer "It depends" to any question posed. It isn't because software consultants are fond of not taking a position. It's because there's no one true answer to any questions in software. There's no absolute right and wrong, but rather a balance between opposites.
 
-Take, for instance, the two major schools of developing web applications: Single Page Applications (SPAs) vs. server-side applications. On the one hand, the user experience tends to be better with SPAs and the amount of traffic to the web server can be minimized making it possible to host them on something as simple as static hosting. On the other hand, SPAs tend to be slower to develop and more difficult to test. Which one is the right choice? Well, it depends on your situation.
+Take, for instance, the two major schools of developing web applications: Single Page Applications (SPAs) versus server-side applications. On the one hand, the user experience tends to be better with SPAs and the amount of traffic to the web server can be minimized making it possible to host them on something as simple as static hosting. On the other hand, SPAs tend to be slower to develop and more difficult to test. Which one is the right choice? Well, it depends on your situation.
 
 Cloud-native applications aren't immune to that same dichotomy. They have clear advantages in terms of speed of development, stability, and scalability, but managing them can be quite a bit more difficult.
 
@@ -57,7 +57,7 @@ Before getting down into the actual source control itself, it's probably worth d
 
 Splitting up code for microservices within the Azure DevOps project can be slightly more challenging.
 
-![Figure 11-2 Single vs. Multiple Repositories](./media/single-repository-vs-multiple.png)
+![Figure 11-2 Single versus Multiple Repositories](./media/single-repository-vs-multiple.png)
 
 ### Repository per microservice
 
@@ -108,7 +108,7 @@ In the end, either solution can be used to host the source code for microservice
 
 ### Standard directory structure
 
-Regardless of the single vs. multiple repositories debate each service will have its own directory. One of the best optimizations to allow developers to cross between projects quickly is to maintain a standard directory structure.
+Regardless of the single versus multiple repositories debate each service will have its own directory. One of the best optimizations to allow developers to cross between projects quickly is to maintain a standard directory structure.
 
 ![Figure 11-3 A standard directory structure for both the email and sign-in services](./media/dir-struct.png)
 

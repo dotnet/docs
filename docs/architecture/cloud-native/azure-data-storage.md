@@ -153,7 +153,7 @@ In [Brownfield](https://en.wikipedia.org/wiki/Brownfield_(software_development) 
 
 ### Consistency Models
 
-Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data consistency*, which is a term that refers to the integrity of your data. Distributed databases that rely on replication for high availability, low latency, or both, must make a fundamental tradeoff between read consistency, availability, and latency.
+Earlier in the *Relational versus NoSQL* section, we discussed the subject of *data consistency*, which is a term that refers to the integrity of your data. Distributed databases that rely on replication for high availability, low latency, or both, must make a fundamental tradeoff between read consistency, availability, and latency.
 
 Most distributed databases allow developers to choose between two consistency models: [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency) and [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency). *Strong consistency* is the gold standard of data programmability. It guarantees that a query result will always return the most current data, even if  the system must incur latency waiting for an update to replicate across all database copies. On the other hand, a system configured for *eventual consistency* will return data immediately, even if that data isn't the most current copy. This option enables higher availability, greater scale, and increased performance.
 

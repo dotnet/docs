@@ -168,7 +168,7 @@ Within Kubernetes, there's a similar service for maintaining small pieces of sec
 
 Creating a secret is as simple as finding the base64 version of the values to be stored:
 
-```cli
+```console
 echo -n 'admin' | base64
 YWRtaW4=
 echo -n '1f2d1e2e67df' | base64
@@ -190,7 +190,7 @@ data:
 
 Finally, this file can be loaded into Kubernetes by running the following command:
 
-```cli
+```console
 kubectl apply -f ./secret.yaml
 ```
 

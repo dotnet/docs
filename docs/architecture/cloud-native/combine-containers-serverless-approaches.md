@@ -21,7 +21,7 @@ If you're expecting to benefit from the consumption plan billing for your functi
 
 To wrap an Azure Function in a Docker container, install the Azure Functions Core Tools and then run the following command:
 
-```cli
+```console
 func init ProjectName --docker
 ```
 

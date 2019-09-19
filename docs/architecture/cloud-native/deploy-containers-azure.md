@@ -20,25 +20,25 @@ You [create a container registry using the Azure Portal](https://docs.microsoft.
 
 Once you've created a registry, you'll need to authenticate with it before you can use it. Typically, you'll log into the registry using the Azure CLI command:
 
-```cli
+```azurecli
 az acr login --name *registryname*
 ```
 
 Once you've created a registry in Azure Container Registry, you can use docker commands to push container images to it. Before you can do so, however, you must first tag your image with the fully qualified name (URL) of your ACR login server. This will have the format *registryname*.azurecr.io.
 
-```cli
+```console
 docker tag mycontainer myregistry.azurecr.io/mycontainer:v1
 ```
 
 After you've tagged the image, you use the `docker push` command to push the image to your ACR instance.
 
-```cli
+```console
 docker push myregistry.azurecr.io/mycontainer:v1
 ```
 
 After you push an image to the registry, it's a good idea to remove the image from your local Docker environment, using this command:
 
-```cli
+```console
 docker rmi myregistry.azurecr.io/mycontainer:v1
 ```
 
@@ -88,7 +88,7 @@ The process for working with Azure Dev Spaces involves the following steps:
 
 All of these steps can be performed using the Azure CLI and new  `azds` command line tools. For example, to create a new Azure Dev Space for a given Kubernetes cluster, you would use a command like this one:
 
-```cli
+```azurecli
 az aks use-dev-spaces -g my-aks-resource-group -n MyAKSCluster
 ```
 

@@ -53,9 +53,9 @@ The cloud thrives on scaling. The ability to increase/decrease system resources 
 
 - *Favor scale-out.* Cloud-based applications favor scaling out resources as opposed to scaling up. Scaling out (also known as horizontal scaling) involves adding more service resources to an existing system to meet and share a desired level of performance. Scaling up (also known as vertical scaling) involves replacing existing resources with more powerful hardware (more disk, memory, and processing cores). Scaling out can be invoked automatically with the autoscaling features available in some Azure cloud resources. Scaling out across multiple resources also adds redundancy to the overall system. Finally scaling up a single resource is typically more expensive than scaling out across many smaller resources. Figure 6-8 shows the two approaches:
 
-![Scale up vs. scale out](./media/scale-up-scale-out.png)
+![Scale up versus scale out](./media/scale-up-scale-out.png)
 
-**Figure 6-8.** Scale up vs. scale out
+**Figure 6-8.** Scale up versus scale out
 
 - *Scale proportionally.* When scaling a service, think in terms of *resource sets*. If you were to dramatically scale out a specific service, what impact would that have on back-end data stores, caches and dependent services? Some resources such as Cosmos DB can scale out proportionally, while many others can't. You want to ensure that you don't scale out a resource to a point where it will exhaust other associated resources.
 

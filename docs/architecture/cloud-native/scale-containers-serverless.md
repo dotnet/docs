@@ -23,6 +23,7 @@ AKS clusters can scale in one of two ways:
 Figure 3-13 shows the relationship between these two scaling services.
 
 ![Scaling out an App Service plan.](./media/aks-cluster-autoscaler.png)
+
 **Figure 3-13**. Scaling out an App Service plan.
 
 These services can also reduce the number of pods or nodes as needed. These two services can work together and are often deployed together in a cluster. When combined, the horizontal pod autoscaler is focused on running the number of pods required to meet application demand. The cluster autoscaler is focused on running the number of nodes required to support the scheduled pods.

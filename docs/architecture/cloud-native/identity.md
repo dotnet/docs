@@ -17,7 +17,7 @@ In today's cloud-native identity model, architecture is assumed to be distribute
 
 Modern cloud-native identity solutions typically leverage access tokens that are issued by a secure token service/server (STS) to a security principal once their identity is determined. The access token, typically a JSON Web Token (JWT), includes *claims* about the security principal. These claims will minimally include the user's identity but may also include additional claims that can be used by applications to determine the level of access to grant the principal.
 
-(insert figure showing basic handshake involving a principal, an STS, and an app)
+<!-- (insert figure showing basic handshake involving a principal, an STS, and an app) -->
 
 Typically, the STS is only responsible for authenticating the principal. Determining their level of access to resources is left to other parts of the application.
 

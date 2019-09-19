@@ -58,7 +58,7 @@ The [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patt
 
 ![Circuit breaker pattern in action](./media/circuit-breaker-pattern.png)
 
-Figure 6-5. Circuit breaker pattern in action
+**Figure 6-5**. Circuit breaker pattern in action
 
 In the previous figure, a Circuit Breaker pattern has been added to the original retry pattern. Note how after 10 failed requests, the circuit breakers opens and no longer allows calls to the service. The CheckCircuit value, set at 30 seconds, specifies how often the library allows one request to proceed to the service. If that call succeeds, the circuit closes and the service is once again available to traffic.
 

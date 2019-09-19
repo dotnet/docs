@@ -14,6 +14,7 @@ Containers and orchestrators are designed to solve problems common to monolithic
 Traditionally, most applications have been deployed as a single unit. Such applications are referred to as a monolith. This general approach of deploying applications as single units even if they're composed of multiple modules or assemblies is known as monolithic architecture, as shown in Figure 3-1.
 
 ![Monolithic architecture.](./media/monolithic-architecture.png)
+
 **Figure 3-1**. Monolithic architecture.
 
 Although they have the benefit of simplicity, monolithic architectures face a number of challenges:
@@ -60,7 +61,7 @@ Services built on containers can leverage scaling benefits provided by orchestra
 
 Kubernetes has built-in support for scaling clusters to meet demand. Combined with containerized micro-services, this provides cloud-native applications with the ability to quickly and efficiently respond to spikes in demand with additional resources when and where they're needed.
 
-### Declarative vs. imperative
+### Declarative versus imperative
 
 Kubernetes supports both declarative and imperative object configuration. The imperative approach involves running various commands that tell Kubernetes what to do each step of the way. *Run* this image. *Delete* this pod. *Expose* this port. With the declarative approach, you use a configuration file that describes *what you want* instead of *what to do* and Kubernetes figures out what to do to achieve the desired end state. If you've already configured your cluster using imperative commands, you can export a declarative manifest by using `kubectl get svc SERVICENAME -o yaml > service.yaml`. This will produce a manifest file like this one:
 
@@ -139,6 +140,7 @@ After installing Minikube, you can quickly start using it by running the `miniku
 You can also work with Kubernetes directly from Docker Desktop on Windows. This is your only option if you're using Windows Containers, and is a great choice for non-Windows containers as well. The standard Docker Desktop configuration app is used to configure Kubernetes running from Docker Desktop.
 
 ![Configuring Kubernetes in Docker Desktop](./media/docker-desktop-kubernetes.png)
+
 **Figure 3-4**. Configuring Kubernetes in Docker Desktop.
 
 Docker Desktop is already the most popular tool for configuring and running containerized apps locally. When you work with Docker Desktop, you can develop locally against the exact same set of Docker container images that you'll deploy to production. Docker Desktop is designed to "build, test, and ship" containerized apps locally. Once the images have been shipped to an image registry like Azure Container Registry or Docker Hub, then services like Azure Kubernetes Service (AKS) manage the application in production.
@@ -148,9 +150,10 @@ Docker Desktop is already the most popular tool for configuring and running cont
 Visual Studio supports Docker development for web applications. When you create a new ASP.NET Core application, you're given the option to configure it with Docker support as part of the project creation process, as shown in Figure 3-5.
 
 ![Visual Studio Enable Docker Support](./media/visual-studio-enable-docker-support.png)
+
 **Figure 3-5**. Visual Studio Enable Docker Support
 
-When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example `Dockerfile is shown in Figure 3-6.
+When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example Dockerfile is shown in Figure 3-6.
 
 ```docker
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.0-stretch-slim AS base
@@ -175,11 +178,12 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "WebApplication3.dll"]
 ```
 
-**Figure 3-6**. Visual Studio Generated Docker File
+**Figure 3-6**. Visual Studio generated Dockerfile
 
 The default behavior when the app runs is configured to use Docker as well. Figure 3-7 shows the different run options available from a new ASP.NET Core project created with Docker support added.
 
 ![Visual Studio Docker Run Options](./media/visual-studio-docker-run-options.png)
+
 **Figure 3-7**. Visual Studio Docker Run Options
 
 In addition to local development, [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-10, you can also run the application in Azure Dev Spaces.
@@ -187,11 +191,13 @@ In addition to local development, [Azure Dev Spaces](https://docs.microsoft.com/
 If you don't add Docker support to your ASP.NET Core application when you create it, you can always add it later. From the Visual Studio Solution Explorer, right click on the project and select **Add** > **Docker Support**, as shown in Figure 3-8.
 
 ![Visual Studio Add Docker Support](./media/visual-studio-add-docker-support.png)
+
 **Figure 3-8**. Visual Studio Add Docker Support
 
 In addition to Docker support, you can also add Container Orchestration Support, also shown in Figure 3-11. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
 
 ![Visual Studio Add Orchestrator Support](./media/visual-studio-add-orchestrator-support.png)
+
 **Figure 3-9**. Visual Studio Add Orchestrator Support
 
 ## References

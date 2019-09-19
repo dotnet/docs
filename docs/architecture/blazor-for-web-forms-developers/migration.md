@@ -1,88 +1,44 @@
 ---
-title: Migrating from ASP.NET Web Forms to Blazor
-description: How to approach migrating an existing ASP.NET Web Forms app to Blazor
+title: Migrate from ASP.NET Web Forms to Blazor
+description: Learn how to approach migrating an existing ASP.NET Web Forms app to Blazor.
 author: twsouthwick
 ms.author: tasou
 ms.date: 09/17/2019
 ---
+# Migrate from ASP.NET Web Forms to Blazor
 
-# Migrating from ASP.NET Web Forms to Blazor
+Migrating a code base from ASP.NET Web Forms to Blazor is a time-consuming task that requires planning. This chapter outlines the process. Something that can ease the transition is to ensure the app adheres to an *N-tier* architecture, wherein the app model (in this case, Web Forms) is separate from the business logic. This logical separation of layers makes it clear what needs to move to .NET Core and Blazor.
 
-Migrating a code base from ASP.NET Web Forms to Blazor is one that requires
-planning and can take time. In this chapter, we will go over the process for each
-of these. One thing that can really help ease the transition is to ensure the
-application is adhering to an *n-tier* approach where the app model (in this
-case Web Forms) is separate from the business logic. Without this separation it
-can be very tedious to tease apart what needs to be moved to .NET Core and
-Blazor vs what can be left behind. For this example, we will look at the eShop
-available on [Github](https://github.com/dotnet-architecture/eShopOnBlazor).
-This application is a simple catalog service that provides CRUD capabilities and
-form entry and validation.
+For this example, the eShop app available on [GitHub](https://github.com/dotnet-architecture/eShopOnBlazor) is used. eShop is a catalog service that provides CRUD capabilities via form entry and validation.
 
-As a developer with a working application, there may be questions as to why
-there's a need to migrate to Blazor at all. This is a valid question. Many
-times, there is no need; ASP.NET Web Forms will continue to be supported for
-many years. However, many of the features that Blazor provides will only be
-supported on a migrated app. This includes:
+Why should a working app be migrated to Blazor? Many times, there's no need. ASP.NET Web Forms will continue to be supported for many years. However, many of the features that Blazor provides are only supported on a migrated app. Such features include:
 
-- Performance improvements in the framework such as `Span<>`
-- Ability to run as web assembly
-- Cross-platform support for Linux and Mac
-- App-local deployment or shared framework deployment without impacting other
-  applications
+- Performance improvements in the framework such as `Span<T>`
+- Ability to run as WebAssembly
+- Cross-platform support for Linux and macOS
+- App-local deployment or shared framework deployment without impacting other apps
 
-If these (or other new features) are compelling enough, there may be value in
-migrating the application. This migration can take different shapes; it can be
-the entire application, or only certain endpoints that require the changes. The
-choice to migrate is ultimately up to the developer and the business needs they
-are attempting to solve.
+If these or other new features are compelling enough, there may be value in migrating the app. The migration can take different shapes; it can be the entire app, or only certain endpoints that require the changes. The decision to migrate is ultimately based on the business problems to be solved by the developer.
 
-## Choosing server side vs client side
+## Server-side versus client-side hosting
 
-As described in the [hosting models chapter](./hosting-models.md), there are two
-ways to host a Blazor application. The first is server-side, while the other is
-client-side. The server-side uses SignalR connections to manage the DOM updates
-while running any actual code on the server. The client-side hosting runs as
-WebAssembly within a browser and requires no server connections.  There are a
-number of differences that may affect which is best for a specific application:
+As described in the [hosting models](hosting-models.md) chapter, a Blazor app can be hosted in two different ways: server-side and client-side. The server-side model uses ASP.NET Core SignalR connections to manage the DOM updates while running any actual code on the server. The client-side model runs as WebAssembly within a browser and requires no server connections. There are a number of differences that may affect which is best for a specific app:
 
-- Running as WebAssembly is still in development and may not support all
-  features (such as threading) at the current time
-- Chatty communication between the client and server may cause latency issues in
-  server-side mode
-- Access to databases and internal or protected services require a separate
-  service with client side hosting
+- Running as WebAssembly is still in development and may not support all features (such as threading) at the current time
+- Chatty communication between the client and server may cause latency issues in server-side mode
+- Access to databases and internal or protected services require a separate service with client-side hosting
 
-At the time of writing, the server side model is a much closer model to what you
-may be familiar with as a Web Forms developer. Most of the discussion in this
-chapter will focus on server side hosting as that is both more production ready
-at this time and maps easier to Web Forms.
+At the time of writing, the server-side model more closely resembles Web Forms. Most of this chapter focuses on the server-side hosting model, as it's production-ready.
 
 ## Create a new project
 
-This initial step to begin is to create a new project. This project type is
-based on the SDK style projects of .NET Core and simplifies much of the boiler
-plate that was used in previous project formats. For more detail, please see the
-chapter on [Project Structure](./project-structure.md).
+This initial migration step is to create a new project. This project type is based on the SDK style projects of .NET Core and simplifies much of the boilerplate that was used in previous project formats. For more detail, please see the chapter on [Project Structure](project-structure.md).
 
-Once the project has been created, you'll want to pull in the libraries that
-were used in the previous project. In previous Web Form projects, you may be
-used to `packages.config` to bring in all the NuGet packages required; in new
-SDK-style projects, this has been simplified to `<PackageReference>` nodes
-within the project file. There are many benefits to this, including all
-dependencies are brought in transitively so you only list the dependencies you
-care about.
+Once the project has been created, install the libraries that were used in the previous project. In older Web Forms projects, you may have used the *packages.config* file to list the required NuGet packages. In the new SDK-style project, *packages.config* has been replaced with `<PackageReference>` elements in the project file. A benefit to this approach is that all dependencies are installed transitively. You only list the top-level dependencies you care about.
 
-Many of the dependencies you may be used to using are available for .NET Core,
-including Entity Framework 6, log4net, and others. Often, even if there is no
-.NET Core or .NET Standard version available, the .NET Framework version can be
-installed and used. Your mileage may vary on this as any API used that is not
-available in .NET Core will cause a runtime error. Visual Studio will notify you
-of such packages with a yellow icon on the reference node.
+Many of the dependencies you're using are available for .NET Core, including Entity Framework 6 and log4net. If there's no .NET Core or .NET Standard version available, the .NET Framework version can often be used. Your mileage may vary. Any API used that isn't available in .NET Core causes a runtime error. Visual Studio notifies you of such packages. A yellow icon appears on the project's **References** node in **Solution Explorer**.
 
-In the eShop on Blazor project, you can see these packages that are brought in.
-Previously, the `packages.config` listed every package used in the project,
-resulting in a file almost 50 lines long. A snippet of this is:
+In the Blazor-based eShop project, you can see the packages that are installed. Previously, the *packages.config* file listed every package used in the project, resulting in a file almost 50 lines long. A snippet of *packages.config* is:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -108,43 +64,27 @@ resulting in a file almost 50 lines long. A snippet of this is:
 </packages>
 ```
 
-This includes everything and as a developer it was hard to identify which of
-these are included because you require them, versus required by a different
-dependency. This is simplified in the blazor version as follows:
+The `<packages>` element includes all necessary dependencies. It's difficult to identify which of these packages are included because you require them. Some `<package>` elements are listed simply to satisfy the needs of dependencies you require.
+
+The Blazor project lists the dependencies you require within an `<ItemGroup>` element in the project file:
 
 ```xml
-  <ItemGroup>
+<ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.3" />
     <PackageReference Include="EntityFramework" Version="6.3.0-preview9-19423-04" />
     <PackageReference Include="log4net" Version="2.0.8" />
-  </ItemGroup>
+</ItemGroup>
 ```
 
-One package that will simplify the life of Web Forms developers is to install
-the Windows Compatibility Pack. Although .NET Core is cross platform, there are
-features that are only available on Windows that developers will want to use.
-Systems such as registry, WMI, and directory services that are only available in
-Windows can be made available by installing this compatibility pack. This
-package adds around 20,000 APIs and lights up many services that may be familiar
-to you. The eShop project does not require this, but if your projects use Windows
-specific features, this package will greatly help in migration.
+One NuGet package that simplifies the life of Web Forms developers is the [Windows Compatibility Pack](/dotnet/core/porting/windows-compat-pack). Although .NET Core is cross-platform, some features are only available on Windows. Windows-specific features are made available by installing the compatibility pack. Examples of such features include the Registry, WMI, and Directory Services. The package adds around 20,000 APIs and activates many services with which you may already be familiar. The eShop project doesn't require the compatibility pack; but if your projects use Windows-specific features, the package eases the migration efforts.
 
 ## Enable startup process
 
-The startup process for Blazor has changed from Web Forms and follows a similar
-set up for other ASP.NET Core services. When hosted server side, the Blazor
-components are run as part of a normal ASP.NET Core application. When hosted in
-the browser with WebAssembly, the Blazor component uses a similar hosting model
-but is run as a separate service from any of the backend processes. Either way,
-the start up is similar.
+The startup process for Blazor has changed from Web Forms and follows a similar setup for other ASP.NET Core services. When hosted server-side, Blazor components are run as part of a normal ASP.NET Core app. When hosted in the browser with WebAssembly, Blazor components use a similar hosting model. The difference is the components are run as a separate service from any of the backend processes. Either way, the startup is similar.
 
-The `Global.asax.cs` file is the normal start up page for Web Forms. In the
-eShop project, this is where the IoC container is set up and populated, as well
-as hooking into various lifetime cycles of the application or request. Some of
-these events are handled with middleware (such as `Application_BeginRequest`)
-while others require overriding specific services via dependency injection.
+The *Global.asax.cs* file is the default startup page for Web Forms projects. In the eShop project, this file configures the Inversion of Control (IoC) container and handles the various lifecycle events of the app or request. Some of these events are handled with middleware (such as `Application_BeginRequest`). Other events require the overriding of specific services via dependency injection (DI).
 
-By way of example, the `Global.asax.cs` for the eShop, looks like the following:
+By way of example, the *Global.asax.cs* file for eShop, contains the following code:
 
 ```csharp
 public class Global : HttpApplication, IContainerProviderAccessor
@@ -161,7 +101,7 @@ public class Global : HttpApplication, IContainerProviderAccessor
 
     protected void Application_Start(object sender, EventArgs e)
     {
-        // Code that runs on application startup
+        // Code that runs on app startup
         RouteConfig.RegisterRoutes(RouteTable.Routes);
         BundleConfig.RegisterBundles(BundleTable.Bundles);
         ConfigureContainer();
@@ -211,134 +151,108 @@ public class Global : HttpApplication, IContainerProviderAccessor
 }
 ```
 
-This is transformed to the following for server-sided Blazor:
+The preceding file becomes the `Startup` class in server-side Blazor:
 
 ```csharp
-   public class Startup
+public class Startup
+{
+    public Startup(IConfiguration configuration, IWebHostEnvironment env)
     {
-        public Startup(IConfiguration configuration, IWebHostEnvironment env)
+        Configuration = configuration;
+        Env = env;
+    }
+
+    public IConfiguration Configuration { get; }
+
+    public IWebHostEnvironment Env { get; }
+
+    // This method gets called by the runtime. Use this method to add services to the container.
+    // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddRazorPages();
+        services.AddServerSideBlazor();
+
+        if (Configuration.GetValue<bool>("UseMockData"))
         {
-            Configuration = configuration;
-            Env = env;
+            services.AddSingleton<ICatalogService, CatalogServiceMock>();
+        }
+        else
+        {
+            services.AddScoped<ICatalogService, CatalogService>();
+            services.AddScoped<IDatabaseInitializer<CatalogDBContext>, CatalogDBInitializer>();
+            services.AddSingleton<CatalogItemHiLoGenerator>();
+            services.AddScoped(_ => new CatalogDBContext(Configuration.GetConnectionString("CatalogDBContext")));
+        }
+    }
+
+    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+    {
+        loggerFactory.AddLog4Net("log4Net.xml");
+
+        if (Env.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+        }
+        else
+        {
+            app.UseExceptionHandler("/Home/Error");
         }
 
-        public IConfiguration Configuration { get; }
-
-        public IWebHostEnvironment Env { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-        public void ConfigureServices(IServiceCollection services)
+        // Middleware for Application_BeginRequest
+        app.Use((ctx, next) =>
         {
-            services.AddRazorPages();
-            services.AddServerSideBlazor();
+            LogicalThreadContext.Properties["activityid"] = new ActivityIdHelper(ctx);
+            LogicalThreadContext.Properties["requestinfo"] = new WebRequestInfo(ctx);
+            return next();
+        });
 
-            if (Configuration.GetValue<bool>("UseMockData"))
-            {
-                services.AddSingleton<ICatalogService, CatalogServiceMock>();
-            }
-            else
-            {
-                services.AddScoped<ICatalogService, CatalogService>();
-                services.AddScoped<IDatabaseInitializer<CatalogDBContext>, CatalogDBInitializer>();
-                services.AddSingleton<CatalogItemHiLoGenerator>();
-                services.AddScoped(_ => new CatalogDBContext(Configuration.GetConnectionString("CatalogDBContext")));
-            }
-        }
+        app.UseStaticFiles();
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+        app.UseRouting();
+
+        app.UseEndpoints(endpoints =>
         {
-            loggerFactory.AddLog4Net("log4Net.xml");
+            endpoints.MapBlazorHub();
+            endpoints.MapFallbackToPage("/_Host");
+        });
 
-            if (Env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
+        ConfigDataBase(app);
+    }
 
-            // Middlware for Application_BeginRequest
-            app.Use((ctx, next) =>
-            {
-                LogicalThreadContext.Properties["activityid"] = new ActivityIdHelper(ctx);
-                LogicalThreadContext.Properties["requestinfo"] = new WebRequestInfo(ctx);
-                return next();
-            });
-
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapBlazorHub();
-                endpoints.MapFallbackToPage("/_Host");
-            });
-
-            ConfigDataBase(app);
-        }
-
-        private void ConfigDataBase(IApplicationBuilder app)
+    private void ConfigDataBase(IApplicationBuilder app)
+    {
+        using (var scope = app.ApplicationServices.CreateScope())
         {
-            using (var scope = app.ApplicationServices.CreateScope())
-            {
-                var initializer = scope.ServiceProvider.GetService<IDatabaseInitializer<CatalogDBContext>>();
+            var initializer = scope.ServiceProvider.GetService<IDatabaseInitializer<CatalogDBContext>>();
 
-                if (initializer != null)
-                {
-                    Database.SetInitializer(initializer);
-                }
+            if (initializer != null)
+            {
+                Database.SetInitializer(initializer);
             }
         }
     }
 }
 ```
 
-One of the big changes you may notice coming from Web Forms is how pervasive the
-concept of dependency injection is. This has been a guiding principle in the
-design of ASP.NET Core and allows for customization of almost all aspects of the
-ASP.NET Core framework. There is even a built-in service provider that can be
-used out of the box that works for many scenarios. If more customization is
-required, or a framework is already being used, then it can easily be supported
-by many of the community extensions. 
+One significant change you may notice from Web Forms is the prominence of DI. DI has been a guiding principle in the ASP.NET Core design. It supports customization of almost all aspects of the ASP.NET Core framework. There's even a built-in service provider that can be used for many scenarios. If more customization is required, it can be supported by the many community projects. For example, you can carry forward your third-party DI library investment.
 
-In the original eShop application, you may see that there is some configuration
-for session management. Since server-side Blazor uses SignalR for communication,
-session is not supported as the connections may occur independent of an HTTP
-context. In cases where an application makes use of session, they must be
-rearchitected in order to run as a Blazor application.
+In the original eShop app, there's some configuration for session management. Since server-side Blazor uses ASP.NET Core SignalR for communication, session state isn't supported as the connections may occur independent of an HTTP context. An app that uses session state requires rearchitecting before running as a Blazor app.
 
-For more details about application startup, refer to the following chapter: [App Startup](./app-startup.md).
+For more information about app startup, see [App startup](app-startup.md).
 
 ## Migrate HTTP modules and handlers to middleware
 
-HTTP modules and handlers are common patterns in Web Forms to control the
-request pipeline. Classes that implement `IHttpModule` or `IHttpHandler` could
-be registered and process incoming requests. Instead of configuring handlers and
-modules in `web.config` and being processed based on application life cycle
-events, middleware is registered in the startup and is executed in the order in
-which they are registered.
+HTTP modules and handlers are common patterns in Web Forms to control the HTTP request pipeline. Classes that implement `IHttpModule` or `IHttpHandler` could be registered and process incoming requests. Web Forms configures modules and handlers in the *web.config* file. Web Forms is also heavily based on app lifecycle event handling. ASP.NET Core uses middleware instead. Middlewares are registered in the `Configure` method of the `Startup` class. Middleware execution order is determined by the registration order.
 
-In the section above, there was a life cycle event that is raised by Web Forms
-as the `Application_BeginRequest` method. This is not available in ASP.NET Core,
-so one way to achieve this is by implementing middleware as seen in the
-Startup.cs example above. This middleware does the same logic and then just
-passes control onto the next handler in the middleware pipeline.
+In the [Enable startup process](#enable-startup-process) section, a lifecycle event was raised by Web Forms as the `Application_BeginRequest` method. This event isn't available in ASP.NET Core. One way to achieve this behavior is to implement middleware as seen in the *Startup.cs* file example. This middleware does the same logic and then transfers control to the next handler in the middleware pipeline.
 
-For more details on how to migrate a modules and handlers, please see the
-following
-[documentation](https://docs.microsoft.com/aspnet/core/migration/http-modules).
+For more information on migrating modules and handlers, see [Migrate HTTP handlers and modules to ASP.NET Core middleware](/aspnet/core/migration/http-modules).
 
 ## Migrate static files
 
-In order to serve any static files (be they HTML, CSS, images, JavaScript or
-other), they must be exposed by middleware. By using the `UseStaticFiles`
-method, the web root will be exposed for static access. This web root, by
-default is *wwwroot*, but can be customized. As can be seen in the startup for
-eShop, this is very simple:
+To serve static files (for example, HTML, CSS, images, and JavaScript), the files must be exposed by middleware. Calling the `UseStaticFiles` method enables the serving of static files from the web root path. The default web root directory is *wwwroot*, but it can be customized. As included in the `Configure` method of eShop's `Startup` class:
 
 ```csharp
 public void Configure(IApplicationBuilder app)
@@ -351,39 +265,21 @@ public void Configure(IApplicationBuilder app)
 }
 ```
 
-There are many customizations available for this if needed. The eShop project
-doesn't need more than simple static file access, but if you require features
-such as default files or a file browser, see
-[this](https://docs.microsoft.com/aspnet/core/fundamentals/static-files) for
-details on how to enable it.
+The eShop project enables basic static file access. There are many customizations available for static file access. For information on enabling default files or a file browser, see [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files).
 
 ## Migrate runtime bundling and minification setup
 
-Bundling and minification are common steps to reduce the number and size of
-requests that must be made to retrieve certain kinds of files. JavaScript and
-CSS often undergo some form of bundling or minification before being sent to the
-client. In ASP.NET Web Forms, this was performed at runtime by convention in a
-`BundleConfig` file. In ASP.NET Core, this has been changed to be more
-declarative by defining a file that has the files that need to be minified, as
-well as any options associated with that.
+Bundling and minification are performance optimization techniques for reducing the number and size of server requests to retrieve certain file types. JavaScript and CSS often undergo some form of bundling or minification before being sent to the client. In ASP.NET Web Forms, these optimizations are handled at runtime. The optimization conventions are defined an *App_Start/BundleConfig.cs* file. In ASP.NET Core, a more declarative approach is adopted. A file lists the files to be minified, along with specific minification settings.
 
-For more details on this, please see the [documentation](https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification).
+For more information on bundling and minification, see [Bundle and minify static assets in ASP.NET Core](/aspnet/core/client-side/bundling-and-minification).
 
-## Migrate .aspx pages
+## Migrate ASPX pages
 
-A page in a Web Forms application is a file that ends with `.aspx`. Often, these
-can be mapped to a component in Blazor, which is written in a file with the
-`.razor` extension. For the eShop project, there are five main pages that are
-each converted to a razor page.
+A page in a Web Forms app is a file with the *.aspx* extension. A Web Forms page can often be mapped to a component in Blazor. A Blazor component is authored in a file with the *.razor* extension. For the eShop project, five pages are converted to a Razor page.
 
-For example, the details view is contained in `Details.aspx`, `Details.aspx.cs`,
-`Details.aspx.designer.cs` in the Web Forms project. When converting to Blazor,
-the code behind and markup are combined into `Details.razor` and any razor
-compilation (equivalent to what is in `*.designer.cs` files) is kept in the
-`obj` directory and not directly viewable in the solution explorer. The web
-forms looks like the following:
+For example, the details view is comprised of three files in the Web Forms project: *Details.aspx*, *Details.aspx.cs*, and *Details.aspx.designer.cs*. When converting to Blazor, the code-behind and markup are combined into *Details.razor*. Razor compilation (equivalent to what's in *.designer.cs* files) is stored in the *obj* directory and aren't, by default, viewable in **Solution Explorer**. The Web Forms page consists of the following markup:
 
-```
+```aspx-csharp
 <%@ Page Title="Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Details" %>
 
 <asp:Content ID="Details" ContentPlaceHolderID="MainContent" runat="server">
@@ -470,7 +366,7 @@ forms looks like the following:
 </asp:Content>
 ```
 
-with code behind including the following:
+The preceding markup's code-behind includes the following code:
 
 ```csharp
 using eShopLegacyWebForms.Models;
@@ -501,9 +397,9 @@ namespace eShopLegacyWebForms.Catalog
 }
 ```
 
-When converted to Blazor, this becomes the following:
+When converted to Blazor, the Web Forms page translates to the following code:
 
-```html
+```razor
 @page "/Catalog/Details/{id:int}"
 @inject ICatalogService CatalogService
 @inject ILogger<Details> Logger
@@ -616,26 +512,15 @@ When converted to Blazor, this becomes the following:
 }
 ```
 
-Notice how the code and markup are in the same file and that any injected
-services can be added with the `@inject` attribute. This page is defined to be
-at the *Catalog/Details/{id}* route, where the *id* must be an integer. As
-described in the [routing](./pages-routings.md) section, unlike Web Forms, a
-razor component explicitly states its route and any parameters that is included.
-Many of the controls that are defined in Web Forms may not have an exact
-counterpart in Blazor, but often there is an equivalent HTML snippet that will
-perform the same thing, such as `asp:Label` being plain text.
+Notice that the code and markup are in the same file. Any required services are made accessible with the `@inject` attribute. Per the `@page` directive, this page can be accessed at the `Catalog/Details/{id}` route. The value of the route's `{id}` placeholder has been constrained to an integer. As described in the [routing](pages-routing.md) section, unlike Web Forms, a Razor component explicitly states its route and any parameters that are included. Many Web Forms controls may not have exact counterparts in Blazor. There's often an equivalent HTML snippet that will serve the same purpose. For example, the `<asp:Label />` control can be replaced with an HTML `<label>` element.
 
 ### Model validation in Blazor
 
-If your code includes validation, then you can transfer much of what you have in
-WebForms and have it work with little to no change. A benefit to running in
-Blazor is that the same validation logic can be run without needing custom
-JavaScript. By using DataAnnotations, models can get easy validation.
+If your Web Forms code includes validation, you can transfer much of what you have with little-to-no changes. A benefit to running in Blazor is that the same validation logic can be run without needing custom JavaScript. Data annotations enable easy model validation.
 
-For example, the `Create.aspx` page has a data entry form with validation. An
-example snippet would look like this:
+For example, the *Create.aspx* page has a data entry form with validation. An example snippet would look like this:
 
-```html
+```aspx
 <div class="form-group">
     <label class="control-label col-md-2">Name</label>
     <div class="col-md-3">
@@ -646,9 +531,9 @@ example snippet would look like this:
 </div>
 ```
 
-In Blazor, the equivalent in `Create.razor` looks like the following:
+In Blazor, the equivalent markup is provided in a *Create.razor* file:
 
-```html
+```razor
 <EditForm Model="_item" OnValidSubmit="@...">
     <DataAnnotationsValidator />
 
@@ -664,32 +549,19 @@ In Blazor, the equivalent in `Create.razor` looks like the following:
 </EditForm>
 ```
 
-The `EditForm` context can be wrapped around input and has support for
-validation. Since DataAnnotations are a common way to add validation, that can
-be added via the `DataAnnotationsValidator`. This mechanism is very powerful and
-more details can be found in the [forms
-validation](https://docs.microsoft.com/aspnet/core/blazor/forms-validation)
-documentation.
+The `EditForm` context includes validation support and can be wrapped around input. Data annotations are a common way to add validation. Such validation support can be added via the `DataAnnotationsValidator` component. For more information on this mechanism, see [ASP.NET Core Blazor forms and validation](/aspnet/core/blazor/forms-validation).
 
 ## Migrate built-in Web Forms controls
 
 [ TBD ]
 
-## Migrate config
+## Migrate configuration
 
-In a Web Forms application, the most common way to get configuration into a
-project was via `web.config`. This was then surfaced through
-`ConfigurationManager` and services were generally required to parse any object
-their when they need it. With .NET Framework 4.7.2, composability was added to
-configuration via `ConfigurationBuilders`. These builders allowed developers to
-add various sources for configuration that was then composed at run time to
-bring in all the necessary values. ASP.NET Core introduced a new configuration
-system that allows you as a developer to define whatever source makes most sense
-to your application and deployment. The `ConfigurationBuilder` infrastructure
-that you may be using in your Web Forms application was modeled after the
-concepts used in the ASP.NET Core configuration system.
+In a Web Forms project, configuration data is most commonly stored in the *web.config* file. The configuration data is accessed with `ConfigurationManager`. Services were often required to parse objects. With .NET Framework 4.7.2, composability was added to configuration via `ConfigurationBuilders`. These builders allowed developers to add various sources for configuration that was then composed at runtime to retrieve the necessary values.
 
-The eShop project used `web.config` to store config values as seen below:
+ASP.NET Core introduced a flexible configuration system that allows you to define the configuration source or sources used by your app and deployment. The `ConfigurationBuilder` infrastructure that you may be using in your Web Forms app was modeled after the concepts used in the ASP.NET Core configuration system.
+
+The following snippet demonstrates how the Web Forms eShop project uses *web.config* to store configuration values:
 
 ```xml
 <configuration>
@@ -705,9 +577,7 @@ The eShop project used `web.config` to store config values as seen below:
   </appSettings>
 ```
 
-This system is useable, but it was common for secrets, such as a connection
-string, to be stored within the `web.config` and then persisted where it
-shouldn't be. With Blazor on ASP.NET Core, the configuration can be defined as:
+It's common for secrets, such as database connection strings, to be stored within the *web.config*. The secrets are inevitably persisted in unsecure locations, such as source control. With Blazor on ASP.NET Core, the preceding XML-based configuration is replaced with the following JSON:
 
 ```json
 {
@@ -719,9 +589,9 @@ shouldn't be. With Blazor on ASP.NET Core, the configuration can be defined as:
 }
 ```
 
-By default, json is used, but xml or any other format could be used. Many are
-available out of the box and more through the community. In the startup class,
-you may see that the constructor takes an `IConfiguration`:
+JSON is the default configuration format; however, ASP.NET Core supports many other formats, including XML. There are also several community-supported formats.
+
+The constructor in the Blazor project's `Startup` class accepts an `IConfiguration` instance through a DI technique known as constructor injection:
 
 ```csharp
 public class Startup
@@ -736,57 +606,41 @@ public class Startup
 }
 ```
 
-By default, environment variables, json and command line options are used to
-construct the configuration object. These can then be access via
-`Configuration[key]` or can be bound to objects using the options framework. For
-more details on customizing this as well as in-depth exploration, see the following
-[documentation](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/).
+By default, environment variables, JSON files (*appsettings.json* and *appsettings.{Environment}.json*), and command-line options are registered as valid configuration sources in the configuration object. The configuration sources can be accessed via `Configuration[key]`. A more advanced technique is to bind the configuration data to objects using the options pattern. For more information on configuration and the options pattern, see [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration/) and [Options pattern in ASP.NET Core](/aspnet/core/fundamentals/configuration/options), respectively.
 
 ## Migrate data access
 
-Data access is an important aspect of any application. The eShop project uses a
-database to store the catalog information and exposes it via Entity Framework 6.
-Since this is supported on .NET Core 3.0, the project can continue to use it
-without any modifications.
+Data access is an important aspect of any app. The eShop project stores catalog information in a database and retrieves the data with Entity Framework (EF) 6. Since EF 6 is supported in .NET Core 3.0, the project can continue to use it.
 
-A few changes had to be made to the eShop in order to continue to work:
+The following EF-related changes were necessary to eShop:
 
-- `DbContext` on .NET Framework can take a string of form
-  *name=ConnectionString* and will use the connection string on
-  `ConfigurationManager.AppSettings[ConnectionString]` to connect. On .NET Core,
-  this is not supported an you must specifically supply the connection string.
-- Database is accessed in a synchronous way. This will work, but scalability may
-  be affect. This should be moved to an asynchronous pattern.
+- In .NET Framework, the `DbContext` object accepts a string of the form *name=ConnectionString* and uses the connection string from
+  `ConfigurationManager.AppSettings[ConnectionString]` to connect. In .NET Core, this isn't supported. The connection string must be supplied.
+- The database was accessed in a synchronous way. Though this works, scalability may suffer. This logic should be moved to an asynchronous pattern.
 
-Although there aren't the same out of the box support for binding to datasets,
-there is still a lot of power given by easily including C# within a Razor page.
-This allows you to calculate something if needed and then output the result. For
-more details on data patterns in Blazor, see the [chapter](./data.md) on data
-access.git
+Although there isn't the same native support for dataset binding, Blazor provides flexibility and power with its C# support in a Razor page. For example, you can perform calculations and display the result. For more information on data patterns in Blazor, see the [Data access](data.md) chapter.
 
 ## Architectural changes
 
-Finally, there are some architectural differences that are important to consider
-when migrating to Blazor. Many of these changes are applicable to anything based
-on .NET Core or ASP.NET Core.
+Finally, there are some important architectural differences to consider when migrating to Blazor. Many of these changes are applicable to anything based on .NET Core or ASP.NET Core.
 
-Since Blazor is built on .NET Core, there are considerations in ensuring support on .NET Core. Some of the major changes here include removal of the following features:
+Because Blazor is built on .NET Core, there are considerations in ensuring support on .NET Core. Some of the major changes include the removal of the following features:
 
 - Multiple AppDomains
 - Remoting
 - Code Access Security (CAS)
 - Security Transparency
 
-There are many techniques to identify what changes may be needed to support running on .NET Core which are documented [https://docs.microsoft.com/dotnet/core/porting](here).
+For more information on techniques to identify necessary changes to support running on .NET Core, see [Port your code from .NET Framework to .NET Core](/dotnet/core/porting).
 
-ASP.NET Core is a very different framework than ASP.NET and has some changes that may not initially seem obvious. The main changes are:
+ASP.NET Core is a reimagined version of ASP.NET and has some changes that may not initially seem obvious. The main changes are:
 
-- No synchronization context. This means there is no `HttpContext.Current`, `Thread.CurrentPrinciple` or other static accessors
+- No synchronization context, which means there's no `HttpContext.Current`, `Thread.CurrentPrincipal`, or other static accessors
 - No shadow copying
 - No request queue
 
-Many operations in ASP.NET Core are asynchronous which allows easier off-loading of I/O bound tasks. It is important to never block by using `Task.Wait()` or `Task.GetResult()` which can quickly exhaust threadpool resources.
+Many operations in ASP.NET Core are asynchronous, which allows easier off-loading of I/O-bound tasks. It's important to never block by using `Task.Wait()` or `Task.GetResult()`, which can quickly exhaust thread pool resources.
 
-## Migration Conclusion
+## Migration conclusion
 
-At this point, we have walked through many examples of what it takes to move a Web Forms project to Blazor. For a full example, please see the [eShopOnBlazor](https://github.com/dotnet-architecture/eShopOnBlazor) project.
+At this point, you've seen many examples of what it takes to move a Web Forms project to Blazor. For a full example, see the [eShopOnBlazor](https://github.com/dotnet-architecture/eShopOnBlazor) project.

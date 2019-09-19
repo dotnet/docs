@@ -20,7 +20,7 @@ Data binding is the process that establishes a connection between the applicatio
 
 A typical use of data binding is to place server or local configuration data into forms or other UI controls. In WPF, this concept is expanded to include the binding of a broad range of properties to a variety of data sources. In WPF, dependency properties of elements can be bound to CLR objects (including ADO.NET objects or objects associated with Web Services and Web properties) and XML data.
 
-For an example of data binding, take a look at the following application UI from the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703):
+For an example of data binding, take a look at the following application UI from the [Data Binding Demo](https://github.com/microsoft/WPF-Samples/tree/master/Sample%20Applications/DataBindingDemo):
 
 ![Data binding sample screenshot](./media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")
 

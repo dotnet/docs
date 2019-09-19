@@ -23,9 +23,13 @@ Returns the difference between two numeric expressions or the negative value of 
   
 ## Syntax  
   
-```  
-      expression1 – expression2  
-- or -  
+```vb  
+expression1 – expression2
+```
+  
+or
+
+```vb  
 – expression1  
 ```  
   

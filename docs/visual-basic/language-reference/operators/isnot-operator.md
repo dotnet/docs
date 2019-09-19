@@ -12,7 +12,7 @@ Compares two object reference variables.
   
 ## Syntax  
   
-```  
+```vb  
 result = object1 IsNot object2  
 ```  
   

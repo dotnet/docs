@@ -16,9 +16,9 @@ This chapter will look at how to work with ASP.NET Core 3.0 gRPC projects and de
 
 There's also a comparison of using streaming services versus repeated fields for returning data sets, and the use of client libraries at the end of the chapter.
 
-The sample WCF application is a minimal stub of a set of stock trading services, using the open-source Inversion of Control (IoC) container library called *Autofac* for dependency injection. It includes three services, one for each WCF service type. The services will be discussed in more detail in the following sections. The solution can be downloaded from the [somewhere/TraderSysWCF](https://github.com/somewhere/TraderSysWCF) repository on GitHub. The services use fake data to minimize external dependencies.
+The sample WCF application is a minimal stub of a set of stock trading services, using the open-source Inversion of Control (IoC) container library called *Autofac* for dependency injection. It includes three services, one for each WCF service type. The services will be discussed in more detail in the following sections. The solutions can be downloaded from [RendleLabs/grpc-for-wcf-developers](https://github.com/RendleLabs/grpc-for-wcf-developers) on GitHub. The services use fake data to minimize external dependencies.
 
-The completed gRPC application is available at the [somewhere/TraderSysWCF](https://github.com/somewhere/TraderSysGRPC) repository.
+The samples include the WCF and gRPC implementations of each service.
 
 >[!div class="step-by-step"]
 <!-->[Next](create-project.md)-->

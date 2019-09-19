@@ -32,23 +32,47 @@ landingContent:
           - text: AutoML CLI
             url: automate-training-with-cli.md
 
-  # Card (optional)
+   # Model Builder Card
+  - title: Use Model Builder 
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Install Model Builder
+            url: how-to-guides/install-model-builder.md
+      - linkListType: tutorial
+        links:
+          - text: Predict prices - Model Builder
+            url: tutorials/predict-prices-with-model-builder.md
+          - text: Build a Razor Pages web app to analyze sentiment
+            url: tutorials/sentiment-analysis-model-builder.md
+ 
+  # API Card
   - title: Get started with the API
     linkLists:
       - linkListType: tutorial
         links:
+          - text: Build a TensorFlow image classifier with transfer learning
+            url: tutorials/image-classification.md
           - text: Analyze website comment sentiment
             url: tutorials/sentiment-analysis.md
-          - text: Predict prices with regression
-            url: tutorials/predict-prices.md
-          - text: Retrain a TensorFlow image classifier
-            url: tutorials/image-classification.md
-          - text: Classify customer support issues
-            url: tutorials/github-issue-classification.md
           - text: Detect objects in images using ONNX
             url: tutorials/object-detection-onnx.md
-  # Card (optional)
-  - title: Model Builder and CLI
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Load data from various sources  
+            url: how-to-guides/load-data-ml-net.md
+          - text: Prepare data for building a model
+            url: how-to-guides/prepare-data-ml-net.md
+          - text: Train and evaluate a model
+            url: how-to-guides/train-machine-learning-model-ml-net.md
+          - text: Make predictions with a trained model
+            url: how-to-guides/machine-learning-model-predictions-ml-net.md
+          - text: Save and load a trained model
+            url: how-to-guides/save-load-machine-learning-models-ml-net.md                         
+  
+  # CLI card
+  - title:  CLI
     linkLists:
       - linkListType: tutorial
         links:
@@ -75,51 +99,7 @@ landingContent:
           - text: Improve model accuracy
             url: resources/improve-machine-learning-model-ml-net.md
 
-  # How-to card
-  - title: Data and model training
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Load data from various sources  
-            url: how-to-guides/load-data-ml-net.md
-          - text: Prepare data for building a model
-            url: how-to-guides/prepare-data-ml-net.md
-          - text: Train and evaluate a model
-            url: how-to-guides/train-machine-learning-model-ml-net.md
-          - text: Train a model using cross-validation
-            url: how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
-
-  # How-to card
-  - title: Explain a model
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Inspect intermediate values  
-            url: how-to-guides/inspect-intermediate-data-ml-net.md
-          - text: Explain model predictions
-            url: how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md
-
-  # How-to card
-  - title: Use models
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Save and load trained models  
-            url: how-to-guides/save-load-machine-learning-models-ml-net.md
-          - text: Make predictions with a trained model
-            url: how-to-guides/machine-learning-model-predictions-ml-net.md
-          - text: Retrain a model
-            url: how-to-guides/retrain-model-ml-net.md
-
-  # How-to card
-  - title: Deploy models
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Deploy model to Azure Functions  
-            url: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
-          - text: Deploy a model to an ASP.NET Core web API
-            url: how-to-guides/serve-model-web-api-ml-net.md                 
+ 
 
   # Reference card
   - title: API reference

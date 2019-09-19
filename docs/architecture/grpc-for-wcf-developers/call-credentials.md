@@ -137,7 +137,7 @@ public async Task ShowPortfolioAsync(int portfolioId)
 }
 ```
 
-Now, you've secured your gRPC service using JWT bearer tokens as call credentials.
+Now, you've secured your gRPC service using JWT bearer tokens as call credentials. A version of the [Portfolios sample gRPC application with authentication and authorization added](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/PortfoliosSample/grpc/TraderSysAuth) is on GitHub.
 
 >[!div class="step-by-step"]
 <!-->[Next](channel-credentials.md)-->

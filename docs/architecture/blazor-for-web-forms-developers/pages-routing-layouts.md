@@ -5,7 +5,6 @@ author: danroth27
 ms.author: daroth
 ms.date: 09/19/2019
 ---
-
 # Pages, routing, and layouts
 
 ASP.NET Web Forms apps are composed of pages defined in *.aspx* files. Each page's address is based on its physical file path in the project. When a browser makes a request to the page, the contents of the page are dynamically rendered on the server. The rendering accounts for both the page's HTML markup and its server controls.
@@ -138,7 +137,16 @@ The `LayoutView` component renders its child content within the specified layout
 
 ## Navigation
 
-In ASP.NET Web Forms, you trigger a navigation to a different page by returning a redirect response to the browser. Returning a redirect response isn't typically possible in Blazor. Blazor doesn't use a request-reply model. You can, however, trigger browser navigations directly, just like you can with JavaScript.
+In ASP.NET Web Forms, you trigger navigation to a different page by returning a redirect response to the browser. For example:
+
+```csharp
+protected void NavigateButton_Click(object sender, EventArgs e)
+{
+    Response.Redirect("Counter");
+}
+```
+
+Returning a redirect response isn't typically possible in Blazor. Blazor doesn't use a request-reply model. You can, however, trigger browser navigations directly, as you can with JavaScript.
 
 Blazor provides a `NavigationManager` service that can be used to:
 
@@ -162,7 +170,7 @@ To navigate to a different address, use the `NavigateTo` method:
 }
 ```
 
-You can find descriptions of all the members on [NavigationManager](/aspnet/core/blazor/routing#uri-and-navigation-state-helpers) in the Blazor documentation.
+For a description of all `NavigationManager` members, see [URI and navigation state helpers](/aspnet/core/blazor/routing#uri-and-navigation-state-helpers).
 
 ## Base URLs
 

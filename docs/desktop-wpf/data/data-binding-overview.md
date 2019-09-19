@@ -28,13 +28,13 @@ The above is the UI of an application that displays a list of auction items. The
 
 - The content of the ListBox is bound to a collection of *AuctionItem* objects. An *AuctionItem* object has properties such as *Description*, *StartPrice*, *StartDate*, *Category*, *SpecialFeatures*, etc.
 
-- The data (*AuctionItem* objects) displayed in the `ListBox` is templated so that the description and the current price are shown for each item. The template is created by using a <xref:System.Windows.DataTemplate>. In addition, the appearance of each item depends on the *SpecialFeatures* value of the *AuctionItem* being displayed. If the *SpecialFeatures* value of the *AuctionItem* is *Color*, the item has a blue border. If the value is *Highlight*, the item has an orange border and a star. The [Data Templating](#data_templating) section provides information about data templating.
+- The data (*AuctionItem* objects) displayed in the `ListBox` is templated so that the description and the current price are shown for each item. The template is created by using a <xref:System.Windows.DataTemplate>. In addition, the appearance of each item depends on the *SpecialFeatures* value of the *AuctionItem* being displayed. If the *SpecialFeatures* value of the *AuctionItem* is *Color*, the item has a blue border. If the value is *Highlight*, the item has an orange border and a star. The [Data Templating](#data-templating) section provides information about data templating.
 
-- The user can group, filter, or sort the data using the `CheckBoxes` provided. In the image above, the "Group by category" and "Sort by category and date" `CheckBoxes` are selected. You may have noticed that the data is grouped based on the category of the product, and the category name is in alphabetical order. It is difficult to notice from the image but the items are also sorted by the start date within each category. Sorting is done using a *collection view*. The [Binding to Collections](#binding_to_collections) section discusses collection views.
+- The user can group, filter, or sort the data using the `CheckBoxes` provided. In the image above, the "Group by category" and "Sort by category and date" `CheckBoxes` are selected. You may have noticed that the data is grouped based on the category of the product, and the category name is in alphabetical order. It is difficult to notice from the image but the items are also sorted by the start date within each category. Sorting is done using a *collection view*. The [Binding to Collections](#binding-to-collections) section discusses collection views.
 
-- When the user selects an item, the <xref:System.Windows.Controls.ContentControl> displays the details of the selected item. This experience is called the *Master-Detail scenario*. The [Master-Detail Scenario](#master_detail_scenario) section provides information about this type of binding scenario.
+- When the user selects an item, the <xref:System.Windows.Controls.ContentControl> displays the details of the selected item. This experience is called the *Master-Detail scenario*. The [Master-Detail Scenario](#master-detail-binding-scenario) section provides information about this type of binding scenario.
 
-- The type of the *StartDate* property is <xref:System.DateTime>, which returns a date that includes the time to the millisecond. In this application, a custom converter has been used so that a shorter date string is displayed. The [Data Conversion](#data_conversion) section provides information about converters.
+- The type of the *StartDate* property is <xref:System.DateTime>, which returns a date that includes the time to the millisecond. In this application, a custom converter has been used so that a shorter date string is displayed. The [Data Conversion](#data-conversion) section provides information about converters.
 
 When the user clicks the *Add Product* button, the following form comes up:
 
@@ -42,7 +42,7 @@ When the user clicks the *Add Product* button, the following form comes up:
 
 The user can edit the fields in the form, preview the product listing using the short preview and the more detailed preview panes, and then click *submit* to add the new product listing. Any existing grouping, filtering and sorting functionalities will apply to the new entry. In this particular case, the item entered in the above image will be displayed as the second item within the *Computer* category.
 
-Not shown in this image is the validation logic provided in the *Start Date* <xref:System.Windows.Controls.TextBox>. If the user enters an invalid date (invalid formatting or a past date), the user will be notified with a <xref:System.Windows.Controls.ToolTip> and a red exclamation point next to the <xref:System.Windows.Controls.TextBox>. The [Data Validation](#data_validation) section discusses how to create validation logic.
+Not shown in this image is the validation logic provided in the *Start Date* <xref:System.Windows.Controls.TextBox>. If the user enters an invalid date (invalid formatting or a past date), the user will be notified with a <xref:System.Windows.Controls.ToolTip> and a red exclamation point next to the <xref:System.Windows.Controls.TextBox>. The [Data Validation](#data-validation) section discusses how to create validation logic.
 
 Before going into the different features of data binding outlined above, we will first discuss in the next section the fundamental concepts that are critical to understanding WPF data binding.
 
@@ -122,7 +122,7 @@ If we apply this example to our basic diagram, the resulting figure looks like t
 
 ![Diagram that shows the data binding Background property.](./media/data-binding-overview/data-binding-button-background-example.png)
 
-You may wonder why this binding works even though the *ColorName* property is of type string while the <xref:System.Windows.Controls.Control.Background%2A> property is of type <xref:System.Windows.Media.Brush>. This binding uses default type conversion and is discussed in the [Data Conversion](#data_conversion) section.
+You may wonder why this binding works even though the *ColorName* property is of type string while the <xref:System.Windows.Controls.Control.Background%2A> property is of type <xref:System.Windows.Media.Brush>. This binding uses default type conversion and is discussed in the [Data Conversion](#data-conversion) section.
 
 ### Specifying the binding source
 
@@ -144,11 +144,11 @@ Although we have emphasized that the <xref:System.Windows.Data.Binding.Path%2A> 
 
 [!code-xaml[MasterDetail#EmptyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/MasterDetail/CSharp/Page1.xaml#emptybinding)]
 
-The above example uses the empty binding syntax: {Binding}. In this case, the <xref:System.Windows.Controls.ListBox> inherits the DataContext from a parent DockPanel element (not shown in this example). When the path is not specified, the default is to bind to the entire object. In other words, in this example, the path has been left out because we are binding the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to the entire object. (See the [Binding to Collections](#binding_to_collections) section for an in-depth discussion.)
+The above example uses the empty binding syntax: {Binding}. In this case, the <xref:System.Windows.Controls.ListBox> inherits the DataContext from a parent DockPanel element (not shown in this example). When the path is not specified, the default is to bind to the entire object. In other words, in this example, the path has been left out because we are binding the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to the entire object. (See the [Binding to Collections](#binding-to-collections) section for an in-depth discussion.)
 
 Other than binding to a collection, this scenario is also useful when you want to bind to an entire object instead of just a single property of an object. For example, if your source object is of type string and you simply want to bind to the string itself. Another common scenario is when you want to bind an element to an object with several properties.
 
-You may need to apply custom logic so that the data is meaningful to your bound target property. The custom logic may be in the form of a custom converter (if default type conversion does not exist). See [Data Conversion](#data_conversion) for information about converters.
+You may need to apply custom logic so that the data is meaningful to your bound target property. The custom logic may be in the form of a custom converter (if default type conversion does not exist). See [Data Conversion](#data-conversion) for information about converters.
 
 ### Binding and BindingExpression
 
@@ -171,7 +171,7 @@ A <xref:System.Windows.Data.BindingExpression> object can be obtained through th
 
 In the previous example, the button is red because its <xref:System.Windows.Controls.Control.Background%2A> property is bound to a string property with the value "Red". This string value works because a type converter is present on the <xref:System.Windows.Media.Brush> type to convert the string value to a <xref:System.Windows.Media.Brush>.
 
-Adding this information to the figure the [Creating a Binding](#creating_a_binding) section looks like this:
+Adding this information to the figure the [Creating a Binding](#creating-a-binding) section looks like this:
 
 ![Diagram that shows the data binding Default property.](./media/data-binding-overview/data-binding-button-default-conversion.png)
 
@@ -323,7 +323,7 @@ You can implement the master-detail scenario simply by having two or more contro
 [!code-xaml[DataBindingLab#Master2](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#master2)]
 [!code-xaml[DataBindingLab#Detail](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#detail)]
 
-Notice that both of the controls are bound to the same source, the *listingDataView* static resource (see the definition of this resource in the [How to Create a View section](#how_to_create_a_view)). This binding works because when a singleton object (the <xref:System.Windows.Controls.ContentControl> in this case) is bound to a collection view, it automatically binds to the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> of the view. The <xref:System.Windows.Data.CollectionViewSource> objects automatically synchronize currency and selection. If your list control is not bound to a <xref:System.Windows.Data.CollectionViewSource> object as in this example, then you would need to set its <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> property to `true` for this to work.
+Notice that both of the controls are bound to the same source, the *listingDataView* static resource (see the definition of this resource in the [How to Create a View section](#how-to-create-a-view)). This binding works because when a singleton object (the <xref:System.Windows.Controls.ContentControl> in this case) is bound to a collection view, it automatically binds to the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> of the view. The <xref:System.Windows.Data.CollectionViewSource> objects automatically synchronize currency and selection. If your list control is not bound to a <xref:System.Windows.Data.CollectionViewSource> object as in this example, then you would need to set its <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> property to `true` for this to work.
 
 For other examples, see [Bind to a Collection and Display Information Based on Selection](how-to-bind-to-a-collection-and-display-information-based-on-selection.md) and [Use the Master-Detail Pattern with Hierarchical Data](how-to-use-the-master-detail-pattern-with-hierarchical-data.md).
 
@@ -396,7 +396,7 @@ For an example of how to provide logic to validate all controls in a dialog box,
 
 ### Validation process
 
-Validation usually occurs when the value of a target is transferred to the binding source property. This transfer occurs on <xref:System.Windows.Data.BindingMode.TwoWay> and <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings. To reiterate, what causes a source update depends on the value of the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property, as described in the [What Triggers Source Updates](#what_triggers_source_updates) section.
+Validation usually occurs when the value of a target is transferred to the binding source property. This transfer occurs on <xref:System.Windows.Data.BindingMode.TwoWay> and <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings. To reiterate, what causes a source update depends on the value of the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property, as described in the [What Triggers Source Updates](#what-triggers-source-updates) section.
 
 The following items describe the *validation* process. If a validation error or other type of error occurs at any time during this process, the process is halted.
 

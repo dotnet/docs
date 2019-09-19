@@ -140,7 +140,13 @@ The following link provides more information if you want to learn more about [de
 
 At a high level, this code initializes the objects and services automatically for later use when requested by the application instead of having to manually do it. 
 
-Machine learning models are not static. They are retrained and redeployed at periodic intervals. One way to get the latest version of the model into your application is to redeploy the application. However, this means that you would need to account for downtime in your application. This may be undesirable especially when the machine learning components are not a mission-critical part of your application. Fortunately, the `PredictionEnginePool` service does that for you. In the example above, by setting the `watchForChanges` parameter to `true`, the `PredictionEnginePool` starts a [`FileSystemWatcher`](xref:System.IO.FileSystemWatcher) that listens to the file system change notifications and raises events when there is a change to the file. This prompts the `PredictionEnginePool` to automatically reload the model without having to redeploy the application. The model is also given a name using the `modelName` parameter. In the event you have multiple models hosted in your application, this is a way of referencing them. Similar functionality is available in the `FromUri` method when working with models stored remotely, although the strategy used in that instance is polling. For models stored remotely, the `PredictionEnginePool` polls the remote location for changes every five minutes by default. Depending on your requirements, you can increase or decrease the polling interval accordingly. 
+Machine learning models are not static. As new training data becomes available, the model is retrained and redeployed. One way to get the latest version of the model into your application is to redeploy the entire application. However, this introduces application downtime. The `PredictionEnginePool` service provides a mechanism to reload an updated model without taking your application down. 
+
+Set the `watchForChanges` parameter to `true`, and the `PredictionEnginePool` starts a [`FileSystemWatcher`](xref:System.IO.FileSystemWatcher) that listens to the file system change notifications and raises events when there is a change to the file. This prompts the `PredictionEnginePool` to automatically reload the model.
+
+The model is identified by the `modelName` parameter so that more than one model per application can be reloaded upon change. 
+
+Alternatively, you can use the `FromUri` method when working with models stored remotely. Rather than watching for file changed events, `FromUri` polls the remote location for changes. The polling interval defaults to 5 minutes. You can increase or decrease the polling interval based on your application's requirements.
 
 ## Load the model into the function
 

@@ -40,14 +40,14 @@
       href: fundamentals/display-dialog-popup.md
   - name: Working with data
     items:
-    - name: Add a data source to project
-      href: working-with-data/add-data-source.md
+    - name: Data binding overview
+      href: data/data-binding-overview.md
     - name: Add data binding to a control
-      href: working-with-data/databind-control.md
+      href: data/databind-control.md
     - name: Add validation to a control
-      href: working-with-data/validate-control-input.md
+      href: data/validate-control-input.md
     - name: Display data in a grid control
-      href: working-with-data/use-datagrid-control.md
+      href: data/use-datagrid-control.md
   - name: Package and distribute
     items:
     - name: Package your app with MSIX

@@ -1,6 +1,6 @@
 ---
 title: Call credentials - gRPC for WCF Developers
-description: How to implement and use gRPC call credentials in ASP.NET Core 3.0
+description: How to implement and use gRPC call credentials in ASP.NET Core 3.0.
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -11,9 +11,9 @@ Call credentials are all based on some kind of token passed in metadata with eac
 
 ## WS-Federation
 
-ASP.NET Core supports WS-Federation using the [WsFederation](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.WsFederation) package. This is the closest thing to Windows Authentication that is supported over HTTP/2. Users are authenticated using Active Directory Federation Services (ADFS), which provides a token that can be used to authenticate with ASP.NET Core.
+ASP.NET Core supports WS-Federation using the [WsFederation](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.WsFederation) NuGet package. This is the closest thing to Windows Authentication that is supported over HTTP/2. Users are authenticated using Active Directory Federation Services (ADFS), which provides a token that can be used to authenticate with ASP.NET Core.
 
-For more information on how to get started with this authentication method, please refer to the [Authenticate users with WS-Federation in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authentication/ws-federation?view=aspnetcore-3.0) documentation.
+For more information on how to get started with this authentication method, see the [Authenticate users with WS-Federation in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authentication/ws-federation?view=aspnetcore-3.0) article.
 
 ## JWT Bearer tokens
 
@@ -21,11 +21,11 @@ The [JSON Web Token](https://jwt.io) standard provides a way to encode informati
 
 ASP.NET Core 3.0 can handle JSON Web Tokens using the JWT Bearer package. The configuration is exactly the same for a gRPC application as an ASP.NET Core MVC application.
 
-This chapter will focus on JWT Bearer tokens as they are simpler to develop with than WS-Federation.
+This chapter will focus on JWT Bearer tokens as they're easier to develop with than WS-Federation.
 
 ## Adding authentication and authorization to the server
 
-The JWT Bearer package is not included in ASP.NET Core 3.0 by default; it must be installed from NuGet: [https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer).
+The JWT Bearer package isn't included in ASP.NET Core 3.0 by default. Install the [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) NuGet package in your app.
 
 Add the Authentication service in the Startup class and configure the JWT Bearer handler.
 
@@ -117,7 +117,7 @@ public override async Task<GetResponse> Get(GetRequest request, ServerCallContex
 
 ## Providing call credentials in the client application
 
-Once you have obtained a JWT token from an identity server, you can use it to authenticate gRPC calls from the client by adding it as a metadata header on the call.
+Once you've obtained a JWT token from an identity server, you can use it to authenticate gRPC calls from the client by adding it as a metadata header on the call, as follows:
 
 ```csharp
 public async Task ShowPortfolioAsync(int portfolioId)
@@ -137,7 +137,7 @@ public async Task ShowPortfolioAsync(int portfolioId)
 }
 ```
 
-You have now secured your gRPC service using JWT bearer tokens as call credentials.
+Now, you've secured your gRPC service using JWT bearer tokens as call credentials.
 
 >[!div class="step-by-step"]
 <!-->[Next](channel-credentials.md)-->

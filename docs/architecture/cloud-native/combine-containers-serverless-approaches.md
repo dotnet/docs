@@ -11,7 +11,7 @@ Frequently, microservices-based applications rely heavily on containers, orchest
 
 ## When does it make sense to use containers with serverless?
 
-By default, your serverless functions have no knowledge of the platform on which they will run. However, in some cases you may have specific requirements that make it important for you to customize the container image in which your code will run. You may want to use a custom image because your function relies on a specific language version or has dependencies or configuration requirements that aren't supported by the default image. In these cases, it may make sense to customize your own container and deploy your function in a custom Docker container.
+By default, your serverless functions have no knowledge of the platform on which they'll run. However, in some cases you may have specific requirements that make it important for you to customize the container image in which your code will run. You may want to use a custom image because your function relies on a specific language version or has dependencies or configuration requirements that aren't supported by the default image. In these cases, it may make sense to customize your own container and deploy your function in a custom Docker container.
 
 ## When should you avoid using containers with Azure Functions?
 

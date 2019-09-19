@@ -11,7 +11,7 @@ Containers and orchestrators are designed to solve problems common to monolithic
 
 ## Challenges with monolithic deployments
 
-Traditionally, most applications have been deployed as a single unit. Such applications are referred to as a monolith. This general approach of deploying applications as single units even if they are composed of multiple modules or assemblies is known as monolithic architecture, as shown in Figure 3-1.
+Traditionally, most applications have been deployed as a single unit. Such applications are referred to as a monolith. This general approach of deploying applications as single units even if they're composed of multiple modules or assemblies is known as monolithic architecture, as shown in Figure 3-1.
 
 ![Monolithic architecture.](./media/monolithic-architecture.png)
 **Figure 3-1**. Monolithic architecture.
@@ -46,8 +46,8 @@ What’s more, containers are defined by simple files that can be checked into s
 
 Containers are immutable. Once you have the definition of a container, you can recreate that container and it will run exactly the same way. This immutability lends itself to component-based design. If some parts of an application don’t change as often as others, why redeploy the entire app when you can just deploy the parts that change most frequently? Different features and cross-cutting concerns of an app can be broken up into separate units. Figure 3-2 shows how a monolithic app can take advantage of containers and microservices by delegating certain features or functionality. The remaining functionality in the app itself has also been containerized.
 
-![Breaking up a monolithic app to use microservices in the backend.](./media/breaking-up-monolith-with-backend-microservices.png)
-**Figure 3-2**. Breaking up a monolithic app to use microservices in the backend.
+![Breaking up a monolithic app to use microservices in the back end.](./media/breaking-up-monolith-with-backend-microservices.png)
+**Figure 3-2**. Breaking up a monolithic app to use microservices in the back end.
 
 Cloud-native apps built using separate containers benefit from the ability to deploy as much or as little of an application as needed. Individual services can be hosted on nodes with resources appropriate to each service. The environment each service runs in is immutable, can be shared between dev, test, and production, and can easily be versioned. Coupling between different areas of the application occurs explicitly as calls or messages between services, not compile-time dependencies within the monolith. And any given part of the overall app can choose the technology that makes the most sense for that feature or capability without requiring changes to the rest of the app.
 
@@ -58,7 +58,7 @@ Services built on containers can leverage scaling benefits provided by orchestra
 ![Kubernetes cluster components.](./media/kubernetes-cluster-components.png)
 **Figure 3-3**. Kubernetes cluster components.
 
-Kubernetes has built-in support for scaling clusters to meet demand. Combined with containerized micro-services, this provides cloud-native applications with the ability to quickly and efficiently respond to spikes in demand with additional resources when and where they are needed.
+Kubernetes has built-in support for scaling clusters to meet demand. Combined with containerized micro-services, this provides cloud-native applications with the ability to quickly and efficiently respond to spikes in demand with additional resources when and where they're needed.
 
 ### Declarative vs. imperative
 
@@ -90,7 +90,7 @@ status:
   loadBalancer: {}
 ```
 
-When using declarative configuration, you can preview the changes that will be made prior to committing them by using `kubectl diff -f FOLDERNAME` against the folder where your configuration files are located. Once you're sure you want to apply the changes, run `kubectl apply -f FOLDERNAME`. Add `-R` to recursively process a folder hierarchy.
+When using declarative configuration, you can preview the changes that will be made before committing them by using `kubectl diff -f FOLDERNAME` against the folder where your configuration files are located. Once you're sure you want to apply the changes, run `kubectl apply -f FOLDERNAME`. Add `-R` to recursively process a folder hierarchy.
 
 In addition to services, you can use declarative configuration for other Kubernetes features, such as *deployments*. Declarative deployments are used by deployment controllers to update cluster resources. Deployments are used to roll out new changes, scale up to support more load, or roll back to a previous revision. If a cluster is unstable, declarative deployments provide a mechanism for automatically bringing the cluster back to a desired state.
 
@@ -110,11 +110,11 @@ Organizations that deploy and must subsequently maintain large numbers of applic
 
 ## When should you avoid using containers and orchestrators?
 
-If you're unwilling or unable to build your application following 12 Factor App principles, you'll probably be better off avoiding containers and orchestrators. In these cases, it may be best to move forward with a VM-based hosting platform, or possibly some hybrid system in which you're able to spin off certain pieces of functionality into separate containers or even serverless functions. 
+If you're unwilling or unable to build your application following 12 Factor App principles, you'll probably be better off avoiding containers and orchestrators. In these cases, it may be best to move forward with a VM-based hosting platform, or possibly some hybrid system in which you can spin off certain pieces of functionality into separate containers or even serverless functions. 
 
 ## Development resources
 
-Below you will find a short list of development resources that may help you get started using containers and orchestrators for your next application. If you're looking for guidance on how to design your cloud-native microservices architecture app, read this book's companion, [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+This section shows a short list of development resources that may help you get started using containers and orchestrators for your next application. If you're looking for guidance on how to design your cloud-native microservices architecture app, read this book's companion, [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
 ### Local Kubernetes Development
 

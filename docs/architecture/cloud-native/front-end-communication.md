@@ -28,13 +28,13 @@ While simple to implement, direct client communication would be acceptable only 
 - Duplication of cross-cutting concerns across each microservice.
 - Overly complex client code - clients must keep track of multiple endpoints and handle failures in a resilient way.
 
-Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the front-end applications and backend services. The pattern is shown in Figure 4-3.
+Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](../microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md) between the front-end applications and back-end services. The pattern is shown in Figure 4-3.
 
 ![API Gateway Pattern](./media/api-gateway-pattern.png)
 
 **Figure 4-3.** API gateway pattern
 
-In the previous figure, note how the API Gateway service abstracts the backend core microservices. Implemented as a web API, it acts as a *reverse proxy*, routing incoming traffic to the internal microservices. 
+In the previous figure, note how the API Gateway service abstracts the back-end core microservices. Implemented as a web API, it acts as a *reverse proxy*, routing incoming traffic to the internal microservices. 
 
 The gateway insulates the client from internal service partitioning and refactoring. If you change a back-end service, you accommodate for it in the gateway without breaking the client. It's also your first line of defense for cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the back-end core services to the gateway, simplifying the back-end services.
 

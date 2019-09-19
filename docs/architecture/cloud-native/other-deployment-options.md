@@ -1,9 +1,9 @@
 ---
-title: Other Deployment Options
+title: Other container deployment options
 description: Other Container Deployment Options using Azure
 ms.date: 06/30/2019
 ---
-# Other Container Deployment Options
+# Other container deployment options
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
@@ -28,7 +28,7 @@ To deploy to [Azure Container Instances (ACI)](https://docs.microsoft.com/azure/
 ![Azure Container Registry Run Instance](./media/acr-runinstance-contextmenu.png)
 **Figure 3-14**. Azure Container Registry Run Instance
 
-Creating a container instance from the registry just requires specifying the usual Azure settings (name, subscription, resource group, and location) as well as how much memory to allocate to the container and which port it should listen on. This [quickstart shows how to deploy a container instance to ACI using the Azure portal](https://docs.microsoft.com/azure/container-instances/container-instances-quickstart-portal).
+Creating a container instance from the registry just requires you to specify the usual Azure settings (name, subscription, resource group, and location), how much memory to allocate to the container, and which port it should listen on. This [quickstart shows how to deploy a container instance to ACI using the Azure portal](https://docs.microsoft.com/azure/container-instances/container-instances-quickstart-portal).
 
 Once the deployment completes, find the newly deployed container's IP address and communicate with it over the port you specified.
 

@@ -52,7 +52,7 @@ For scenarios where extensive log manipulation isn't needed there's an alternati
 
 Once the logs have been gathered by Logstash, it needs somewhere to put them. While Logstash supports many different outputs, one of the more exciting ones is Elastic search.
 
-## Elastic Search
+## Elastic search
 
 Elastic search is a powerful search engine that can index logs as they arrive. It makes running queries against the logs quick. Elastic search can handle huge quantities of logs and, in extreme cases, can be scaled out across many nodes. 
 
@@ -80,7 +80,7 @@ A query that searches for the top 10 pages visited by `jill@example.com`, appear
 
 ## Visualizing information with Kibana web dashboards
 
-The final component of the stack is Kibana. This tool is used to provide interactive visualizations in a web dashboard. Dashboards may be crafted even by users who are non-technical. Most data that is resident in the Elasticsearch index, can be included in the Kibana dashboards. Of course, individual users may have different dashboard desires and Kibana enables this through allowing user-specific dashboards. 
+The final component of the stack is Kibana. This tool is used to provide interactive visualizations in a web dashboard. Dashboards may be crafted even by users who are non-technical. Most data that is resident in the Elasticsearch index, can be included in the Kibana dashboards. Individual users may have different dashboard desires and Kibana enables this customization through allowing user-specific dashboards. 
 
 ## Installing Elastic Stack on Azure
 

@@ -1,9 +1,9 @@
 ---
-title: Cloud native resiliency
+title: Cloud-native resiliency
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Resiliency
 ms.date: 06/30/2019
 ---
-# Cloud native resiliency
+# Cloud-native resiliency
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
@@ -11,7 +11,7 @@ Resiliency is the ability of your system to react to failure and still remain fu
 
 Unlike traditional monolithic applications, where everything runs together in a single process, cloud-native systems embrace distributed architecture as shown in Figure 6-1:
 
-![Distributed cloud-native environment](media/distributed-cloud-native-environment.png)
+![Distributed cloud-native environment](./media/distributed-cloud-native-environment.png)
 
 **Figure 6-1.** Distributed cloud-native environment
 

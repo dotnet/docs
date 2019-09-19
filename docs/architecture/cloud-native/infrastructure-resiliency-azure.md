@@ -12,7 +12,7 @@ Building a reliable application in the cloud is different from traditional on-pr
 
 That said, reliable cloud applications display distinct characteristics:
 
-- They're resilient, recover gracefully from problems and continue to function.
+- They're resilient, recover gracefully from problems, and continue to function.
 - They're highly available (HA) and run as designed in a healthy state with no significant downtime.
 
 Understanding how these characteristics work together - and how they affect cost - is essential to building a reliable cloud-native application. We'll next look at ways that you can build resiliency and availability into your cloud-native applications leveraging features from the Azure cloud.
@@ -33,13 +33,13 @@ To architect redundancy, you need to identify the critical paths in your applica
 
 - *Enable [geo-replication](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication).* Geo-replication for services such as Azure SQL Database and Cosmos DB will create secondary replicas of your data across multiple regions. While both services will automatically replicate data within the same region, geo-replication protects you against a regional outage by enabling you to fail over to a secondary region. Another best practice for geo-replication centers around storing container images. To deploy a service in AKS, you need to store and pull the image from a repository. Azure Container Registry integrates with AKS and can securely store container images. To improve performance and availability, consider geo-replicating your images to a registry in each region where you have an AKS cluster. Each AKS cluster then pulls container images from the local container registry in its region as shown in Figure 6-6:
 
-![Replicated resources across regions](media/replicated-resources.png)
+![Replicated resources across regions](./media/replicated-resources.png)
 
 **Figure 6-6**. Replicated resources across regions
 
-- *Implement a DNS traffic load balancer.* [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview) provides high-availability for critical applications by load-balancing at the DNS level. It can route traffic to different regions based on geography, cluster response time and even application endpoint health. For example, Azure Traffic Manager can direct customers to the closest AKS cluster and application instance. If you have multiple AKS clusters in different regions, use Traffic Manager to control how traffic flows to the applications that run in each cluster. Figure 6-7 shows this scenario.
+- *Implement a DNS traffic load balancer.* [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview) provides high-availability for critical applications by load-balancing at the DNS level. It can route traffic to different regions based on geography, cluster response time, and even application endpoint health. For example, Azure Traffic Manager can direct customers to the closest AKS cluster and application instance. If you have multiple AKS clusters in different regions, use Traffic Manager to control how traffic flows to the applications that run in each cluster. Figure 6-7 shows this scenario.
 
-![AKS and Azure Traffic Manager](media/aks-traffic-manager.png)
+![AKS and Azure Traffic Manager](./media/aks-traffic-manager.png)
 
 **Figure 6-7**. AKS and Azure Traffic Manager
 
@@ -53,7 +53,7 @@ The cloud thrives on scaling. The ability to increase/decrease system resources 
 
 - *Favor scale-out.* Cloud-based applications favor scaling out resources as opposed to scaling up. Scaling out (also known as horizontal scaling) involves adding more service resources to an existing system to meet and share a desired level of performance. Scaling up (also known as vertical scaling) involves replacing existing resources with more powerful hardware (more disk, memory, and processing cores). Scaling out can be invoked automatically with the autoscaling features available in some Azure cloud resources. Scaling out across multiple resources also adds redundancy to the overall system. Finally scaling up a single resource is typically more expensive than scaling out across many smaller resources. Figure 6-8 shows the two approaches:
 
-![Scale up vs. scale out](media/scale-up-scale-out.png)
+![Scale up vs. scale out](./media/scale-up-scale-out.png)
 
 **Figure 6-8.** Scale up vs. scale out
 
@@ -63,7 +63,7 @@ The cloud thrives on scaling. The ability to increase/decrease system resources 
 
 - *Take advantage of platform autoscaling features.* Use built-in autoscaling features whenever possible, rather than custom or third-party mechanisms. Where possible, use scheduled scaling rules to ensure that resources are available without a startup delay, but add reactive autoscaling to the rules as appropriate, to cope with unexpected changes in demand. For more information, see [Autoscaling guidance](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling).
 
- - *Scale-up aggressively.* A final practice would be to scale up aggressively so that you can quickly meet immediate spikes in traffic without losing business. And, then scale down (that is, remove unneeded resources) conservatively to keep the system stable. A simple way to implement this is to set the cool down period, which is the time to wait between scaling operations, to five minutes for adding resources and up to fifteen minutes for removing instances.
+ - *Scale-up aggressively.* A final practice would be to scale up aggressively so that you can quickly meet immediate spikes in traffic without losing business. And, then scale down (that is, remove unneeded resources) conservatively to keep the system stable. A simple way to implement this is to set the cool down period, which is the time to wait between scaling operations, to five minutes for adding resources and up to 15 minutes for removing instances.
 
 ## Built-in retry in services
 

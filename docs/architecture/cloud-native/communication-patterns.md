@@ -1,5 +1,5 @@
 ---
-title: Cloud native communication patterns
+title: Cloud-native communication patterns
 description: Learn about key service communication concerns in cloud-native applications
 author: robvet
 ms.date: 08/31/2019
@@ -8,7 +8,7 @@ ms.date: 08/31/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-When constructing a cloud-native system, communication becomes a significant design decision. How does a front-end client application communicate with a backend microservice? How do backend microservices communicate with each other? What are the principles, patterns, and best practices to consider when implementing communication in cloud-native applications?
+When constructing a cloud-native system, communication becomes a significant design decision. How does a front-end client application communicate with a back-end microservice? How do back-end microservices communicate with each other? What are the principles, patterns, and best practices to consider when implementing communication in cloud-native applications?
 
 ## Communication considerations
 

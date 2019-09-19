@@ -9,9 +9,9 @@ ms.date: 09/09/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Moving from the front-end client, we now address backend microservices communicate with each other.
+Moving from the front-end client, we now address back-end microservices communicate with each other.
 
-When constructing a cloud-native application, you'll want to be sensitive to how backend services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete an operation.
+When constructing a cloud-native application, you'll want to be sensitive to how back-end services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as back-end services often rely on one another to complete an operation.
 
 There are several widely accepted approaches to implementing cross-service communication. The *type of communication interaction* will often determine the best approach.
 
@@ -62,7 +62,7 @@ Another option for eliminating microservice-to-micrservice coupling is an [Aggre
 
 **Figure 4-10**. Aggregator microservice
 
-The pattern isolates an operation that makes calls to multiple backend microservices, centralizing its logic into a specialized microservice.  The purple checkout aggregator microservice in the previous figure orchestrates the workflow for the Checkout operation. It includes calls to several backend microservices in a sequenced order. Data from the workflow is aggregated and returned to the caller. While it still implements direct HTTP calls, the aggregator microservice reduces direct dependencies among back-end microservices. 
+The pattern isolates an operation that makes calls to multiple back-end microservices, centralizing its logic into a specialized microservice.  The purple checkout aggregator microservice in the previous figure orchestrates the workflow for the Checkout operation. It includes calls to several back-end microservices in a sequenced order. Data from the workflow is aggregated and returned to the caller. While it still implements direct HTTP calls, the aggregator microservice reduces direct dependencies among back-end microservices. 
 
 ### Request/Reply Pattern
 
@@ -221,4 +221,4 @@ For cloud-native applications that must stream large numbers of events, Azure Ev
 
 >[!div class="step-by-step"]
 >[Previous](front-end-communication.md)
->[Next](rest-and-grpc.md) <!-- Next Chapter -->
+>[Next](rest-grpc.md) <!-- Next Chapter -->

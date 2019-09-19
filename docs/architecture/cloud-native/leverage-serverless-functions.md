@@ -11,7 +11,7 @@ In the spectrum of managing full machines and operating systems to leveraging cl
 
 ## What is serverless?
 
-Serverless computing doesn't mean there isn't a server involved in running your application - the code obviously still runs on a server somewhere. The distinction is that the application development team no longer needs to concern themselves with managing server infrastructure. Serverless computing solutions like Azure Functions help teams increase their productivity and allow organizations to optimize their resources and focus on delivering solutions.
+Serverless computing doesn't mean there isn't a server involved in running your application - the code still runs on a server somewhere. The distinction is that the application development team no longer needs to concern themselves with managing server infrastructure. Serverless computing solutions like Azure Functions help teams increase their productivity and allow organizations to optimize their resources and focus on delivering solutions.
 
 Serverless computing uses event-triggered stateless containers to host your application or part of your application. Serverless platforms can scale up and down to meet demand as-needed. Platforms like Azure Functions have easy direct access to other Azure services like queues, events, and storage.
 
@@ -25,7 +25,7 @@ Serverless is the ultimate abstraction away from running your own hardware. Deve
 - Configuring web servers or machine services to host application software
 - Configuring application software within its platform
 
-Many companies employ dozens of staff and allocate large budgets to support these hardware infrastructure concerns. Simply moving to the cloud eliminates some of these concerns; shifting applications all the way to serverless will eliminate the rest.
+Many companies employ dozens of staff members and allocate large budgets to support these hardware infrastructure concerns. Simply moving to the cloud eliminates some of these concerns; shifting applications all the way to serverless will eliminate the rest.
 
 ## What scenarios are appropriate for serverless?
 
@@ -46,9 +46,9 @@ Serverless computing is best-used for tasks that don't block the user interface.
 
 If you need to avoid cold starts entirely, you can choose to switch from a [consumption plan to a dedicated plan](https://azure.microsoft.com/blog/understanding-serverless-cold-start/). You can also [configure one or more pre-warmed instances](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances) with the premium plan so when you need to add another instance, it's already up and ready to go. These options can mitigate one of the key concerns associated with serverless computing.
 
-You should also typically avoid serverless for long-running tasks. They're best for small pieces of work that can be completed quickly. Most serverless platforms require individual functions to complete within a few minutes. Azure Functions defaults to a 5 minute time out duration (can be configured up to 10 minutes). The Azure Functions premium plan can mitigate this issue as well, defaulting time outs to 30 minutes and allowing an unbounded higher limit to be configured.
+You should also typically avoid serverless for long-running tasks. They're best for small pieces of work that can be completed quickly. Most serverless platforms require individual functions to complete within a few minutes. Azure Functions defaults to a 5-minute time-out duration (can be configured up to 10 minutes). The Azure Functions premium plan can mitigate this issue as well, defaulting time outs to 30 minutes and allowing an unbounded higher limit to be configured.
 
-Finally, leveraging serverless for certain tasks within your application adds complexity. It's often best to architect your application in a modular, loosely-coupled manner first, and then identify if there are benefits serverless would offer that make the additional complexity worthwhile. Many smaller applications will run perfectly well in a single monolithic deployment, without the need for the distributed application architecture serverless computing requires.
+Finally, leveraging serverless for certain tasks within your application adds complexity. It's often best to architect your application in a modular, loosely coupled manner first, and then identify if there are benefits serverless would offer that make the additional complexity worthwhile. Many smaller applications will run perfectly well in a single monolithic deployment, without the need for the distributed application architecture serverless computing requires.
 
 ## References
 

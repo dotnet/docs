@@ -23,7 +23,7 @@ You can provision a SQL Database server and database in minutes. When demand for
 
 Figure 5-12 shows the deployment options for Azure SQL Database.
 
-![Azure SQL deployment options](media/azure-sql-database-deployment-options.png)
+![Azure SQL deployment options](./media/azure-sql-database-deployment-options.png)
 
 **Figure 5-12**. Azure SQL deployment options
 
@@ -109,7 +109,7 @@ Azure Database for PostgreSQL is available as two deployment options: Single Ser
 
 Azure Cosmos DB is a fully managed, globally distributed NoSQL database service that's designed to provide low latency, elastic scalability, managed data consistency, and high availability. In short, if your application needs guaranteed fast response time anywhere in the world, if it's required to be always online and needs unlimited and elastic scalability of throughput and storage, Cosmos DB is a great choice. Figure 5-13 shows a high-level overview of Cosmos DB.
 
-![Overview of Cosmos DB](media/cosmos-db-overview.png)
+![Overview of Cosmos DB](./media/cosmos-db-overview.png)
 
 **Figure 5-13**: Overview of Cosmos DB
 
@@ -137,13 +137,13 @@ With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-d
 
 Cosmos DB is a *multi-model data platform* enabling you to interact with your data using a number of supported NoSQL models, including documents, key-value pairs, wide-column, and graph representations. Internally, data is stored in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types, including strings, bools, and numbers. For each request, the database engine translates data into the model representation you have selected. You can choose from a proprietary Cosmos DB SQL-based API or any of the [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB) shown in Figure 5-14.
 
-![Cosmos DB providers](media/cosmos-db-providers.png)
+![Cosmos DB providers](./media/cosmos-db-providers.png)
 
 **Figure 5-14**: Cosmos DB providers
 
 Note in Figure 5-14 how Cosmos DB supports [Table Storage](https://azure.microsoft.com/services/storage/tables/). Both Cosmos DB and [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) share the same underlying table model and expose many of the same table operations. However, the [Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) provides many premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-15.
 
-![Azure Table API](media/azure-table-api.png)
+![Azure Table API](./media/azure-table-api.png)
 
 **Figure 5-15**: Azure Table API
 
@@ -155,11 +155,11 @@ In [Brownfield](https://en.wikipedia.org/wiki/Brownfield_(software_development) 
 
 Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data consistency*, which is a term that refers to the integrity of your data. Distributed databases that rely on replication for high availability, low latency, or both, must make a fundamental tradeoff between read consistency, availability, and latency.
 
-Most distributed databases allow developers to choose between two consistency models: [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency) and [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency). *Strong consistency* is the gold standard of data programmability. It guarantees that a query result will always return the most current data, even if  the system must incur latency waiting for an update to replicate across all database copies. On the other hand, a system configured for *eventual consistency* will return data immediately, even if that data is not the most current copy. This option enables higher availability, greater scale, and increased performance.
+Most distributed databases allow developers to choose between two consistency models: [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency) and [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency). *Strong consistency* is the gold standard of data programmability. It guarantees that a query result will always return the most current data, even if  the system must incur latency waiting for an update to replicate across all database copies. On the other hand, a system configured for *eventual consistency* will return data immediately, even if that data isn't the most current copy. This option enables higher availability, greater scale, and increased performance.
 
 Azure Cosmos DB offers a spectrum of [five well-defined consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-16. These options enable you to make precise choices and granular tradeoffs with respect to availability and performance based on the needs of your application. These models are well-defined, intuitive, and backed by the service level agreements (SLAs). 
 
-![Cosmos DB consistency levels](media/cosmos-db-consistency-levels.png)
+![Cosmos DB consistency levels](./media/cosmos-db-consistency-levels.png)
 
 **Figure 5-16**: Cosmos DB Consistency Levels
 
@@ -169,7 +169,7 @@ Azure Cosmos DB uses automatic [partitioning](https://docs.microsoft.com/azure/c
 
 You manage data in Cosmos DB data by creating [databases, containers, and items](https://docs.microsoft.com/azure/cosmos-db/databases-containers-items), shown in Figure 5-17.
 
-![Cosmos DB entities](media/cosmos-db-entities.png)
+![Cosmos DB entities](./media/cosmos-db-entities.png)
 
 **Figure 5-17**: Hierarchy of Cosmos DB entities
 
@@ -177,7 +177,7 @@ Note in Figure 5-17 how you start by creating a Cosmos DB database inside of an 
 
 To partition the container, items are divided into distinct subsets called [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data). Logical partitions are created based on the value of a partition key that is associated with each item in a container. Figure 5-18 shows how all items in a logical partition have the same partition key value.
 
-![Cosmos DB partitioning mechanics](media/cosmos-db-partitioning.png)
+![Cosmos DB partitioning mechanics](./media/cosmos-db-partitioning.png)
 
 **Figure 5-18**: Cosmos DB partitioning mechanics
 
@@ -191,13 +191,13 @@ The benefits of caching to improve performance and scalability are well understo
 
 For a cloud-native application, a common location to add caching is inside the API Gateway. The gateway serves as a front end for all incoming requests. By adding caching, you can increase performance and responsiveness by returning cached data and avoiding round-trips to a local database or downstream service. Figure 5-19 shows a caching architecture for a cloud-native application.
 
-![Caching in a cloud-native app](media/caching-in-a-cloud-native-app.png)
+![Caching in a cloud-native app](./media/caching-in-a-cloud-native-app.png)
 
 **Figure 5-19**: Caching in a cloud-native app
 
 A common caching pattern is the [cache-aside pattern](https://docs.microsoft.com/azure/architecture/patterns/cache-aside). For an incoming request, you first query the cache for the response, shown in step #1 in Figure 5-19. If found, the data is returned immediately. If the data doesn't exist in the cache (known as a [cache miss](https://www.techopedia.com/definition/6308/cache-miss)), it's retrieved from the local database or downstream service (step #2), written to the cache for future requests (step #3), and returned to the caller. Care must be taken to periodically evict cached data so that the system remains consistent and accurate.
 
-Additionally, note in Figure 5-19 how the cache is not implemented locally within the boundaries of the service, but instead is consumed as a cloud-based backing service, as discussed in Chapter 1.
+Additionally, note in Figure 5-19 how the cache isn't implemented locally within the boundaries of the service, but instead is consumed as a cloud-based backing service, as discussed in Chapter 1.
 
 [Azure Redis Cache](https://azure.microsoft.com/services/cache/) is a data caching and messaging broker service. It provides high throughput and low-latency access to data for applications. It's fully managed by Microsoft, hosted within Azure, and accessible to any application within or outside of Azure.
 

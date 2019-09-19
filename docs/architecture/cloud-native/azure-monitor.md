@@ -10,7 +10,7 @@ ms.date: 09/23/2019
 
 No other cloud provider has as mature of a cloud application monitoring solution as that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system, insights into any problems and optimization of your application. 
 
-![Azure Monitor, a collection to tools to provide insight into how a cloud-native application is functioning.](media/azure_monitor.png)
+![Azure Monitor, a collection to tools to provide insight into how a cloud-native application is functioning.](./media/azure_monitor.png)
 **Figure 7-9**. Azure Monitor, a collection to tools to provide insight into how a cloud-native application is functioning.
 
 ## Gathering logs and metrics
@@ -37,7 +37,7 @@ StormEvents
 | render piechart 
 ```
 
-![The result of the Application Insights Query](media/azure_monitor.png)
+![The result of the Application Insights Query](./media/azure_monitor.png)
 **Figure 7-10**. The result of the Application Insights Query.
 
 There is a [playground for experimenting with Kusto](https://dataexplorer.azure.com/clusters/help/databases/Samples) queries, which is a fantastic place to spend an hour or two. Reading [sample queries](https://docs.microsoft.com/azure/kusto/query/samples) can also be instructive.
@@ -46,12 +46,12 @@ There is a [playground for experimenting with Kusto](https://dataexplorer.azure.
 
 There are several different dashboard technologies that may be used to surface the information from Azure Monitor. Perhaps the simplest is to just run queries in Application Insights and [plot the data into a chart](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards). 
 
-![An example of Application Insights charts embedded in the main Azure Dashboard](media/azure_monitor.png)
+![An example of Application Insights charts embedded in the main Azure Dashboard](./media/azure_monitor.png)
 **Figure 7-11**. An example of Application Insights charts embedded in the main Azure Dashboard.
 
 These charts can then be embedded in the Azure portal proper through use of the dashboard feature. For users with more exacting requirements such as being able to drill down into several tiers of data Azure Monitor data is available to [Power BI](https://powerbi.microsoft.com/). Power BI is an industry-leading, enterprise class, business intelligence tool that can aggregate data from many different data sources.
 
-![An example Power BI dashboard](media/azure_monitor.png)
+![An example Power BI dashboard](./media/azure_monitor.png)
 **Figure 7-12**. An example Power BI dashboard.
 
 ## Alerts

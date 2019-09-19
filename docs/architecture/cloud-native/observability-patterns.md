@@ -38,12 +38,12 @@ Fortunately, there are some fantastic alternatives to using file system-based lo
 
 It's also helpful to follow some standard practices when building logging that spans many services. For instance, generating a [correlation ID](https://blog.rapid7.com/2016/12/23/the-value-of-correlation-ids/) at the start of a lengthy interaction, and then logging it in each message that is related to that interaction, makes it easier to search for all related messages. One need only find a single message and extract the correlation ID to find all the related messages. Another example is ensuring that the log format is the same for every service, whatever the language or logging library it uses. This standardization makes reading logs much easier. Figure 7-1 demonstrates how a microservices architecture can leverage centralized logging as part of its workflow.
 
-![Logs from various sources are ingested into a centralized log store.](media/centralized-logging.png)
+![Logs from various sources are ingested into a centralized log store.](./media/centralized-logging.png)
 **Figure 7-1**. Logs from various sources are ingested into a centralized log store.
 
 ## When to use monitoring
 
-Some applications are not mission-critical. Maybe they're only used internally, and when a problem occurs, the user can contact the team responsible and the application can be restarted. However, customers often have higher expectations for the applications they consume. If you need to know when problems occur with your application *before* users do, or before users notify you, you need to monitor its current state. Implemented properly, monitoring can let you know about conditions that will lead to problems, letting you address underlying conditions before they result in any user impact.
+Some applications aren't mission-critical. Maybe they're only used internally, and when a problem occurs, the user can contact the team responsible and the application can be restarted. However, customers often have higher expectations for the applications they consume. If you need to know when problems occur with your application *before* users do, or before users notify you, you need to monitor its current state. Implemented properly, monitoring can let you know about conditions that will lead to problems, letting you address underlying conditions before they result in any user impact.
 
 ## Monitoring considerations
 
@@ -61,9 +61,9 @@ If you need to react to problems with your application, you need some way to ale
 
 You can craft queries against the monitoring tools to look for known failure conditions. For instance, queries could search through the incoming logs for indications of HTTP status code 500, which indicates a problem on a web server. As soon as one of these is detected, then an e-mail or an SMS could be sent to the owner of the originating service who can begin to investigate.
 
-Typically though, a single 500 error is not sufficient to determine that a problem has occurred. It could mean that a user mistyped their password or entered some malformed data. The alert queries can be crafted to only fire when a larger than average number of 500 errors are detected.
+Typically though, a single 500 error isn't sufficient to determine that a problem has occurred. It could mean that a user mistyped their password or entered some malformed data. The alert queries can be crafted to only fire when a larger than average number of 500 errors are detected.
 
-One of the most damaging patterns in alerting is to fire too many alerts for humans to investigate. Service owners will rapidly become desensitized to errors that they've previously investigated and found to be benign. When true errors occur then they will be lost in the noise of hundreds of false positives. The parable of the [Boy Who Cried Wolf](https://en.wikipedia.org/wiki/The_Boy_Who_Cried_Wolf) is frequently told to children to warn them of this very danger. It's important to ensure that the alerts that do fire are indicative of a real problem.
+One of the most damaging patterns in alerting is to fire too many alerts for humans to investigate. Service owners will rapidly become desensitized to errors that they've previously investigated and found to be benign. When true errors occur then they'll be lost in the noise of hundreds of false positives. The parable of the [Boy Who Cried Wolf](https://en.wikipedia.org/wiki/The_Boy_Who_Cried_Wolf) is frequently told to children to warn them of this very danger. It's important to ensure that the alerts that do fire are indicative of a real problem.
 
 >[!div class="step-by-step"]
 >[Previous](monitoring-health.md)

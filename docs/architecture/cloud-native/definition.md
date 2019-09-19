@@ -36,7 +36,7 @@ As you can see, Netflix, Uber, and WeChat expose systems that consist of hundred
 
 The speed and agility of cloud native come about from a number of factors. Foremost is cloud infrastructure. Five additional foundational pillars shown in Figure 1-1 also provide the bedrock for cloud-native systems.
 
-![Cloud native foundational pillars](media/cloud-native-foundational-pillars.png)
+![Cloud-native foundational pillars](./media/cloud-native-foundational-pillars.png)
 
 **Figure 1-1**. Cloud-native foundational pillars
 
@@ -101,7 +101,7 @@ Beyond the guidance provided from the 12-factor methodology, there are several c
 
 *Communication*
 
-How will front-end client applications communicate with backed-end core services? Will you allow direct communication? Or, might you abstract the backend services with a gateway façade that provides  flexibility, control, and security?
+How will front-end client applications communicate with backed-end core services? Will you allow direct communication? Or, might you abstract the back-end services with a gateway façade that provides  flexibility, control, and security?
 
 How will back-end core services communicate with each other? Will you allow direct HTTP calls that lead to coupling and impact performance and agility? Or might you consider decoupled messaging with queue and topic technologies?
 
@@ -142,7 +142,7 @@ Built as a distributed set of small, independent services that interact through 
 
 Figure 1-2 contrasts a monolithic application approach with a microservices approach. Note how the monolith is composed of a layered architecture, which executes in a single process. It typically consumes a relational database. The microservice approach, however, segregates functionality into independent services that include logic and data. Each microservice hosts its own datastore.
 
-![Monolithic deployment versus microservices](media/monolithic-vs-microservices.png)
+![Monolithic deployment versus microservices](./media/monolithic-vs-microservices.png)
 
 **Figure 1-2.** Monolithic deployment versus microservices
 
@@ -182,7 +182,7 @@ When needed, you transform the image into a running container instance. The inst
 
 Figure 1-3 shows three different microservices, each in its own container, running on a single host.
 
-![Multiple containers running on a container host](media/hosting-mulitple-containers.png)  
+![Multiple containers running on a container host](./media/hosting-mulitple-containers.png)  
 
 **Figure 1-3**. Multiple containers running on a container host
 
@@ -210,7 +210,7 @@ While tools such as Docker create images and run containers, you also need tools
 
 Figure 1-4 shows management tasks that container orchestrators provide.
 
-![What container orchestrators do](media/what-container-orchestrators-do.png)
+![What container orchestrators do](./media/what-container-orchestrators-do.png)
 
 **Figure 1-4**. What container orchestrators do
 
@@ -245,7 +245,7 @@ Cloud-native systems depend upon many different ancillary resources, such as dat
 
  Figure 1-5 shows many common backing services that cloud-native systems consume.
 
-![Common backing services](media/common-backing-services.png)
+![Common backing services](./media/common-backing-services.png)
 
 **Figure 1-5**. Common backing services
 
@@ -297,7 +297,7 @@ Modern CI/CD systems help fulfill this principle. They provide separate deployme
 
 Figure 1.6 shows the separation across the deployment process.
 
-![Deployments Steps in CI/CD Pipeline](media/build-release-run-pipeline.png)
+![Deployments Steps in CI/CD Pipeline](./media/build-release-run-pipeline.png)
 
 **Figure 1-6**. Deployment steps in a CI/CD Pipeline
 
@@ -317,7 +317,7 @@ Applying these practices, organizations have radically evolved how they ship sof
 
 The Azure cloud includes a new CI/CD service entitled [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/), which is part of the [Azure DevOps](https://azure.microsoft.com/services/devops/) offering shown in Figure 1-7.
 
-![Azure Pipelines in DevOps](media/devops-components.png)
+![Azure Pipelines in DevOps](./media/devops-components.png)
 
 **Figure 1-7**. Azure DevOps offerings
 

@@ -171,6 +171,7 @@ double rSquared = trainedModelMetrics.RSquared;
 ```
 
 In the previous code sample:  
+
 1. Test data set is pre-processed using the data preparation transforms previously defined. 
 2. The trained machine learning model is used to make predictions on the test data.
 3. In the `Evaluate` method, the values in the `CurrentPrice` column of the test data set are compared against the `Score` column of the newly output predictions to calculate the metrics for the regression model, one of which, R-Squared is stored in the `rSquared` variable.

@@ -16,7 +16,7 @@ Allows placement of code within a XAML production. Such code can either be compi
   
 ## XAML Object Element Usage  
   
-```  
+```xaml  
 <x:Code>  
    // code instructions, usually enclosed by CDATA...  
 </x:Code>  

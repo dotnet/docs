@@ -11,6 +11,7 @@ C# 7 introduced basic pattern matching features. Those features are extended in 
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
+>
 > - Recognize situations where pattern matching should be used.
 > - Use pattern matching expressions to implement behavior based on types and property values.
 > - Combine pattern matching with other techniques to create complete algorithms.

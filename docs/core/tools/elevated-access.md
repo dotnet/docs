@@ -21,6 +21,8 @@ You can run commands as root as long as you don’t transition back and forth be
 
 The following instructions demonstrate the recommended way to install, run, and uninstall .NET Core tools that require elevated permissions to execute.
 
+<!-- markdownlint-disable MD025 -->
+
 # [Windows](#tab/windows)
 
 ### Install the global tool

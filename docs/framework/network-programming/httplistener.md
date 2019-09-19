@@ -20,4 +20,4 @@ The <xref:System.Net.HttpListener> class provides a programmatically controlled 
 - [Security Enhancements in Internet Information](https://go.microsoft.com/fwlink/?LinkID=178286)
 - [HttpListener ASPX Host Application Sample](https://go.microsoft.com/fwlink/?LinkID=179560)
 - [HttpListener Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179558)
-- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
+- [Network Programming Samples](network-programming-samples.md)

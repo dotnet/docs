@@ -27,16 +27,16 @@ This topic describes how to troubleshoot potential issues that you might encount
 
   After you successfully build your project with .NET Native, you'll find the output under obj\\*config*\ *arch*\\*projectname*.ilc\out.  The final native package contents can be found under bin\\*arch*\\*config*\AppX. The final native package contents are under \bin\\*arch*\\*config*\AppX if you have deployed the app.
 
-- **Issue:** Your .NET Native-compiled app is throwing runtime exceptions (typically [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) or [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exceptions) that it did not throw when compiled without .NET Native.
+- **Issue:** Your .NET Native-compiled app is throwing runtime exceptions (typically [MissingMetadataException](missingmetadataexception-class-net-native.md) or [MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md) exceptions) that it did not throw when compiled without .NET Native.
 
-  **Resolution:** The exceptions are thrown because .NET Native did not provide either the metadata or the implementation code that is otherwise available through reflection. (For more information, see [.NET Native and Compilation](../../../docs/framework/net-native/net-native-and-compilation.md).) To eliminate the exception, you have to add an entry to your [runtime directives (rd.xml) file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md) so that the .NET Native tool chain can make the metadata or implementation code available at runtime. Two troubleshooters are available that will generate the necessary entry to add to your runtime directives file:
+  **Resolution:** The exceptions are thrown because .NET Native did not provide either the metadata or the implementation code that is otherwise available through reflection. (For more information, see [.NET Native and Compilation](net-native-and-compilation.md).) To eliminate the exception, you have to add an entry to your [runtime directives (rd.xml) file](runtime-directives-rd-xml-configuration-file-reference.md) so that the .NET Native tool chain can make the metadata or implementation code available at runtime. Two troubleshooters are available that will generate the necessary entry to add to your runtime directives file:
 
   - The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/type.html) for types.
 
   - The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/method.html) for methods.
 
-  For more information, see [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md).
+  For more information, see [Reflection and .NET Native](reflection-and-net-native.md).
 
 ## See also
 
-- [Migrating Your Windows Store App to .NET Native](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md)
+- [Migrating Your Windows Store App to .NET Native](migrating-your-windows-store-app-to-net-native.md)

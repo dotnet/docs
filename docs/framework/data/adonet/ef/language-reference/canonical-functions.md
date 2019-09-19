@@ -12,9 +12,9 @@ This section discusses canonical functions that are supported by all data provid
   
  When canonical functions are used in an [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query, the appropriate function will be called at the data source.  
   
- All canonical functions have both null-input behavior and error conditions explicitly specified. Store providers should comply with that behavior, but [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] does not enforce this behavior.  
+ All canonical functions have both null-input behavior and error conditions explicitly specified. Store providers should comply with that behavior, but Entity Framework does not enforce this behavior.  
   
- For LINQ scenarios, queries against the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] involve mapping CLR methods to methods in the underlying data source. The CLR methods map to canonical functions, so that a specific set of methods will correctly map, regardless of the data source.  
+ For LINQ scenarios, queries against the Entity Framework involve mapping CLR methods to methods in the underlying data source. The CLR methods map to canonical functions, so that a specific set of methods will correctly map, regardless of the data source.  
   
 ## Canonical Functions Namespace  
  The namespace for canonical function is <xref:System.Data.Metadata.Edm>. The <xref:System.Data.Metadata.Edm> namespace is automatically included in all queries. However, if another namespace is imported that contains a function with the same name as a canonical function (in the <xref:System.Data.Metadata.Edm> namespace), you must specify the namespace.  

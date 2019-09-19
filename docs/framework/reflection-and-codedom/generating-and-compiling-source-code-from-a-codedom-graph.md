@@ -91,5 +91,5 @@ The <xref:System.CodeDom.Compiler> namespace provides interfaces for generating 
 
 - <xref:System.CodeDom>
 - <xref:System.CodeDom.Compiler>
-- [Dynamic Source Code Generation and Compilation](../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)
+- [Dynamic Source Code Generation and Compilation](dynamic-source-code-generation-and-compilation.md)
 - [CodeDOM Quick Reference](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100))

@@ -1,30 +1,36 @@
 ---
 title: Architecture comparison of ASP.NET Web Forms and Blazor
-description: An architectural comparison of ASP.NET Web Forms and Blazor.
+description: Learn how the architectures of ASP.NET Web Forms and Blazor compare.
 author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019
 ---
-
 # Architecture comparison of ASP.NET Web Forms and Blazor
 
-While ASP.NET Web Forms and Blazor have many similar concepts, they also have differences in how they work. Here, we'll examine the inner workings and architecture of ASP.NET Web Forms and Blazor to see how they compare.
+While ASP.NET Web Forms and Blazor have many similar concepts, there are differences in how they work. This chapter examines the inner workings and architectures of ASP.NET Web Forms and Blazor.
 
 ## ASP.NET Web Forms
 
-ASP.NET Web Forms are built with a page-centric architecture where each request for a location in the application is a separate page that ASP.NET replies with. As pages are requested, the content of the browser are completely replaced with the results of the page requested.
+The ASP.NET Web Forms framework is based on a page-centric architecture. Each HTTP request for a location in the app is a separate page with which ASP.NET responds. As pages are requested, the contents of the browser are replaced with the results of the page requested.
 
-Pages consist of HTML markup, C# or Visual Basic code, a code-behind class that provides logic and event-handling capabilities, and controls. Controls are reusable units of web UI that can be programmatically placed and interacted with on a page. Pages are composed of files that end with *.aspx* containing markup, controls, and some code. The code-behind classes reside in files with the same base name and an *.aspx.cs* or *.aspx.vb* extension depending on the programming language used for the code-behind file. Interestingly, the *.aspx* file contents are interpreted by the web server and re-compiled whenever they change, even while the web server is already running.
+Pages consist of the following components:
 
-Controls can be built with markup and delivered as a `UserControl` with similar structure to the Page with an *.ascx* extension and a code-behind class that resides in an *.ascx.cs* or *.ascx.vb* file. Controls can also be built completely with code, by inheriting from the `WebControl` or `CompositeControl` base classes.
+* HTML markup
+* C# or Visual Basic code
+* A code-behind class containing logic and event-handling capabilities
+* Controls
 
-Pages also have an extension event lifecycle. Each page will raise events for the Initialization, Load, PreRender, and Unload events that occur as the ASP.NET runtime executes the code for the page for every visitor's request.  
+Controls are reusable units of web UI that can be programmatically placed and interacted with on a page. Pages are composed of files that end with *.aspx* containing markup, controls, and some code. The code-behind classes are in files with the same base name and an *.aspx.cs* or *.aspx.vb* extension, depending on the programming language used. Interestingly, the web server interprets contents of the *.aspx* files and compiles them whenever they change. This recompilation occurs even if the web server is already running.
+
+Controls can be built with markup and delivered as user controls. A user control derives from the `UserControl` class and has a similar structure to the Page. Markup for user controls is stored in an *.ascx* file. An accompanying code-behind class resides in an *.ascx.cs* or *.ascx.vb* file. Controls can also be built completely with code, by inheriting from either the `WebControl` or `CompositeControl` base class.
+
+Pages also have an extensive event lifecycle. Each page raises events for the initialization, load, prerender, and unload events that occur as the ASP.NET runtime executes the page's code for each request.
 
 Controls on a Page typically post-back to the same page that presented the control, and carry along with them a payload from a hidden form field called `ViewState`. The `ViewState` field contains information about the state of the controls at the time they were rendered and presented on the page, allowing the ASP.NET runtime to compare and identify changes in the content submitted to the server.
 
 ## Blazor
 
-Blazor is a client-side web UI framework similar in nature to JavaScript front-end frameworks like Angular or React. Blazor handles user interactions and renders UI updates accordingly. Blazor is *not* based on a request-reply model. User interactions are handled as events that aren't in the context of any particular HTTP request.
+Blazor is a client-side web UI framework similar in nature to JavaScript front-end frameworks like Angular or React. Blazor handles user interactions and renders the necessary UI updates. Blazor *isn't* based on a request-reply model. User interactions are handled as events that aren't in the context of any particular HTTP request.
 
 Blazor apps consist of one or more root components that are rendered on an HTML page.
 

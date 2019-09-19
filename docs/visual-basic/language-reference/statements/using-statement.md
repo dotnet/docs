@@ -15,7 +15,7 @@ Declares the beginning of a `Using` block and optionally acquires the system res
   
 ## Syntax  
   
-```  
+```vb  
 Using { resourcelist | resourceexpression }  
     [ statements ]  
 End Using  

@@ -17,7 +17,7 @@ Enables the use of local type inference in declaring variables.
   
 ## Syntax  
   
-```  
+```vb  
 Option Infer { On | Off }  
 ```  
   

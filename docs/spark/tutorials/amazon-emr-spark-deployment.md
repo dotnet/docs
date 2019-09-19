@@ -45,7 +45,7 @@ Before you start, do the following:
 
    Run the following command on Linux.
 
-   ```bash
+   ```dotnetcli
    dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
    ```
 

@@ -45,7 +45,7 @@ You can run the code and see results by pressing **Ctrl**+**F5**.  This runs the
 
 You should now see the following printed to the console window that Visual Studio popped up:
 
-```
+```console
 12 squared is 144!
 ```
 

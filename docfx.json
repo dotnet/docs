@@ -250,7 +250,7 @@
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       },
-      "title": {
+      "titleOverwriteH1": {
         "_csharplang/spec/introduction.md": "Introduction",
         "_csharplang/spec/lexical-structure.md": "Lexical structure",
         "_csharplang/spec/basic-concepts.md": "Basic concepts",

@@ -9,7 +9,7 @@ ms.date: 09/02/2019
 
 WCF's network security model is extensive and complex, including transport-level security using HTTPS or TLS-over-TCP, and message-level security using the WS-Security specification to encrypt individual messages.
 
-gRPC massively simplifies secure networking by leaving it up to the underlying HTTP/2 implementation, which can be secured using regular TLS certificates.
+gRPC leaves secure networking to the underlying HTTP/2 protocol, which can be secured using regular TLS certificates.
 
 Web browsers insist on using TLS connections for HTTP/2, but most programmatic clients, including .NET's `HttpClient`, can use HTTP/2 over unencrypted connections. `HttpClient` *does* require encryption by default, but you can override this using an <xref:System.AppContext> switch.
 

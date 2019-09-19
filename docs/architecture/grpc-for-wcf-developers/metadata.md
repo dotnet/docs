@@ -1,6 +1,6 @@
 ---
 title: Metadata - gRPC for WCF Developers
-description: TO BE WRITTEN
+description: How metadata is used in gRPC to pass additional context between clients and servers
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -9,7 +9,7 @@ ms.date: 09/02/2019
 
 "Metadata" refers to additional data that may be useful while processing requests and responses but is not part of the actual application data. Metadata might include authentication tokens, request identifiers and tags for monitoring purposes, or information about the data like the number of records in a dataset.
 
-It's possible to add generic key/value headers to WCF messages using an <xref:System.ServiceModel.OperationContextScope> and the <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders?displayProperty=nameWithType> property.
+It's possible to add generic key/value headers to WCF messages using an <xref:System.ServiceModel.OperationContextScope> and the <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders?displayProperty=nameWithType> property, and handle them using <xref:System.ServiceModel.Channels.MessageProperties>.
 
 gRPC calls and responses can also include metadata similar to HTTP headers. These are mostly invisible to gRPC itself and are passed through to be processed by your application code or middleware. Metadata is represented as key/value pairs where the key is a string and the value is either a string or binary data. You don’t need to specify metadata in the `.proto` file.
 

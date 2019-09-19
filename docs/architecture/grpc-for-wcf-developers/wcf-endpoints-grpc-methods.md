@@ -31,15 +31,16 @@ The [OperationContract](xref:System.ServiceModel.OperationContractAttribute) att
 
 | `OperationContract` property | gRPC                                             |
 | ---------------------------- | ------------------------------------------------ |
-| <xref:System.ServiceModel.OperationContractAttribute.Action>             | SOAP-related, no meaning in gRPC. |
+| <xref:System.ServiceModel.OperationContractAttribute.Action>             | URI identifying the operation. gRPC uses the name of the `package`, `service` and `rpc` from the `.proto` file. |
 | <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern>       | All gRPC service methods return `Task` objects. |
-| <xref:System.ServiceModel.OperationContractAttribute.HasProtectionLevel> | No message encryption; network encryption handled at the transport layer (TLS over HTTP/2). |
-| <xref:System.ServiceModel.OperationContractAttribute.IsInitiating>       | See [gRPC streaming](rpc-types.md#grpc-streaming). |
+| <xref:System.ServiceModel.OperationContractAttribute.IsInitiating>       | See note below. |
 | <xref:System.ServiceModel.OperationContractAttribute.IsOneWay>           | One-way gRPC methods return `Empty` results or use client streaming. |
-| <xref:System.ServiceModel.OperationContractAttribute.IsTerminating>      | See [gRPC streaming](rpc-types.md#grpc-streaming). |
+| <xref:System.ServiceModel.OperationContractAttribute.IsTerminating>      | See note below. |
 | <xref:System.ServiceModel.OperationContractAttribute.Name>               | SOAP-related, no meaning in gRPC. |
 | <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel>    | No message encryption; network encryption handled at the transport layer (TLS over HTTP/2). |
 | <xref:System.ServiceModel.OperationContractAttribute.ReplyAction>        | SOAP-related, no meaning in gRPC. |
+
+The `IsInitiating` property lets you indicate that a method within a [ServiceContract](xref:System.ServiceModel.ServiceContractAttribute) can't be the first method called as part of a session. The `IsTerminating` property causes the server to close the session after an operation is called (or the client, if used on a callback client). In gRPC, streams are created by single methods and closed explicitly. See [gRPC streaming](rpc-types.md#grpc-streaming).
 
 For more information on gRPC security and encryption, see [chapter 6](authentication.md).
 

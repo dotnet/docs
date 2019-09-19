@@ -15,7 +15,7 @@ The WCF distributed transaction is an implementation of what is known as a [two-
 
 If possible, it's best to avoid distributed transactions altogether. If two items of data are so linked as to require atomic updates, consider handling them both with the same service, and applying those atomic changes using a single request or message to that service.
 
-If that isn't possible, then one alternative is to use the Saga pattern. In a saga, updates are processing sequentially; as each update succeeds the next one is triggered. These triggers can be propagated from service to service, or managed by a Saga coordinator or "orchestrator". If an update fails at any point during the process, the services that have already completed their updates apply specific logic to reverse them.
+If that isn't possible, then one alternative is to use the [Saga pattern](https://microservices.io/patterns/data/saga.html). In a saga, updates are processing sequentially; as each update succeeds the next one is triggered. These triggers can be propagated from service to service, or managed by a saga coordinator or "orchestrator". If an update fails at any point during the process, the services that have already completed their updates apply specific logic to reverse them.
 
 Another option is to use Domain Driven Design (DDD) and Command/Query Responsibility Segregation (CQRS), as described in the [.NET Microservices e-book](https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/). In particular, using domain events or [event sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) can help to ensure that updates are consistently&mdash;if not immediately&mdash;applied.
 

@@ -38,7 +38,7 @@ The following instructions show you how to use XML Serializer Generator in a .NE
 
 Open a command prompt and create a folder named *MyApp*. Navigate to the folder you created and type the following command:
 
-```console
+```dotnetcli
 dotnet new console
 ```
 
@@ -48,7 +48,7 @@ Use the [`dotnet add package`](../tools//dotnet-add-package.md) command to add t
 
 Type:
 
-```console
+```dotnetcli
 dotnet add package Microsoft.XmlSerializer.Generator -v 1.0.0
 ```
 
@@ -101,7 +101,7 @@ Still within the *MyApp* folder, run the application via [`dotnet run`](../tools
 
 Type the following command in your console window:
 
-```console
+```dotnetcli
 dotnet run
 ```
 

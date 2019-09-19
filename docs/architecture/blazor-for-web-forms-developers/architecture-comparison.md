@@ -32,7 +32,7 @@ Blazor apps consist of one or more root components that are rendered on an HTML 
 
 How the user specifies where components should render and how the components are then wired up for user interactions is [hosting model](./hosting-models) specific.
 
-Blazor [components](./components) are .NET classes that represent a reusable piece of UI and resize in files with a RAZOR filename extension.  These components are compiled and deployed as a binary unit, and cannot be updated without recompiling the entire application. Each component maintains its own state and specifies its own rendering logic, which can include rendering other components. Components specify event handlers for specific user interactions to update the component's state.
+Blazor [components](components.md) are .NET classes that represent a reusable piece of UI and reside in files with a *.razor* filename extension. These components are compiled and deployed as a binary unit, and cannot be updated without recompiling the entire application. Each component maintains its own state and specifies its own rendering logic, which can include rendering other components. Components specify event handlers for specific user interactions to update the component's state.
 
 After a component handles an event, Blazor renders the component and keeps track of what changed in the rendered output. Components don't render directly to the Document Object Model (DOM). They instead render to an in-memory representation of the DOM called a `RenderTree` so that Blazor can track the changes. Blazor compares the newly rendered output with the previous output to calculate a UI diff that it then applies efficiently to the DOM.
 

@@ -17,7 +17,7 @@ Kubernetes includes the following functionality:
 - **Ingress** exposes selected services externally, and generally provides load-balancing across instances of those services.
 - **Resource management** attaches external resources such as storage to containers.
 
-This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available from on the [RendleLabs/grpc-for-wcf-developers](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/StockKube) repository on GitHub,
+This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available from on the [RendleLabs/grpc-for-wcf-developers](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub,
 
 ## Kubernetes terminology
 

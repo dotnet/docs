@@ -20,7 +20,7 @@ Data binding is the process that establishes a connection between the applicatio
 
 A typical use of data binding is to place server or local configuration data into forms or other UI controls. In WPF, this concept is expanded to include the binding of a broad range of properties to a variety of data sources. In WPF, dependency properties of elements can be bound to CLR objects (including ADO.NET objects or objects associated with Web Services and Web properties) and XML data.
 
-For an example of data binding, take a look at the following application UI from the [Data Binding Demo](https://github.com/microsoft/WPF-Samples/tree/master/Sample%20Applications/DataBindingDemo):
+For an example of data binding, take a look at the following application UI from the [Data Binding Demo][data-binding-demo]:
 
 ![Data binding sample screenshot](./media/data-binding-overview/demo.png "DataBinding_DataBindingDemo")
 
@@ -228,7 +228,7 @@ Because views do not change the underlying source collections, each source colle
 
 #### How to create a view
 
-One way to create and use a view is to instantiate the view object directly and then use it as the binding source. For example, consider the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703) application shown in the [What Is Data Binding](#what-is-data-binding) section. The application is implemented such that the <xref:System.Windows.Controls.ListBox> binds to a view over the data collection instead of the data collection directly. The following example is extracted from the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703) application. The <xref:System.Windows.Data.CollectionViewSource> class is the XAML proxy of a class that inherits from <xref:System.Windows.Data.CollectionView>. In this particular example, the <xref:System.Windows.Data.CollectionViewSource.Source%2A> of the view is bound to the *AuctionItems* collection (of type <xref:System.Collections.ObjectModel.ObservableCollection%601>) of the current application object.
+One way to create and use a view is to instantiate the view object directly and then use it as the binding source. For example, consider the [Data Binding Demo][data-binding-demo] application shown in the [What Is Data Binding](#what-is-data-binding) section. The application is implemented such that the <xref:System.Windows.Controls.ListBox> binds to a view over the data collection instead of the data collection directly. The following example is extracted from the [Data Binding Demo][data-binding-demo] application. The <xref:System.Windows.Data.CollectionViewSource> class is the XAML proxy of a class that inherits from <xref:System.Windows.Data.CollectionView>. In this particular example, the <xref:System.Windows.Data.CollectionViewSource.Source%2A> of the view is bound to the *AuctionItems* collection (of type <xref:System.Collections.ObjectModel.ObservableCollection%601>) of the current application object.
 
 [!code-xaml[DataBindingLab#WindowResources1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#windowresources1)]
 [!code-xaml[DataBindingLab#CollectionViewSource](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#collectionviewsource)]
@@ -317,7 +317,7 @@ The current item pointer can be affected by any sorting or filtering that is app
 
 The notion of a current item is useful not only for navigation of items in a collection, but also for the master-detail binding scenario. Consider the application UI in the [What Is Data Binding](#what-is-data-binding) section again. In that application, the selection within the <xref:System.Windows.Controls.ListBox> determines the content shown in the <xref:System.Windows.Controls.ContentControl>. To put it in another way, when a <xref:System.Windows.Controls.ListBox> item is selected, the <xref:System.Windows.Controls.ContentControl> shows the details of the selected item.
 
-You can implement the master-detail scenario simply by having two or more controls bound to the same view. The following example from the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703) shows the markup of the <xref:System.Windows.Controls.ListBox> and the <xref:System.Windows.Controls.ContentControl> you see on the application UI in the [What Is Data Binding](#what-is-data-binding) section:
+You can implement the master-detail scenario simply by having two or more controls bound to the same view. The following example from the [Data Binding Demo][data-binding-demo] shows the markup of the <xref:System.Windows.Controls.ListBox> and the <xref:System.Windows.Controls.ContentControl> you see on the application UI in the [What Is Data Binding](#what-is-data-binding) section:
 
 [!code-xaml[DataBindingLab#Master1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#master1)]
 [!code-xaml[DataBindingLab#Master2](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#master2)]
@@ -429,6 +429,8 @@ You can set the attached property <xref:System.Diagnostics.PresentationTraceSour
 - <xref:System.Windows.Controls.DataErrorValidationRule>
 - [Bind to the Results of a LINQ Query](../../framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)
 - [Data Binding](../../framework/wpf/advanced/optimizing-performance-data-binding.md)
-- [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)
+- [Data Binding Demo][data-binding-demo]
 - [How-to articles](../../framework/wpf/data/data-binding-how-to-topics.md)
 - [Bind to an ADO.NET Data Source](../../framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md)
+
+[data-binding-demo]: https://github.com/microsoft/WPF-Samples/tree/master/Sample%20Applications/DataBindingDemo "data binding demo app"

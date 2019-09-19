@@ -27,11 +27,11 @@ There are gRPC tools and libraries for all major programming languages and platf
 
 ### Usability and productivity
 
-gRPC is a comprehensive RPC solution. It has thoroughly addressed the full range of networking and connectivity concerns. gRPC works consistently across multiple languages. gRPC provides excellent tooling, with much of the boilerplate auto-generated, so more developer time is freed up to focus on business logic.
+gRPC is a comprehensive RPC solution. It works consistently across multiple languages and platforms, and provides excellent tooling, with much of the necessary boilerplate code auto-generated, so more developer time is freed up to focus on business logic.
 
 ### Streaming
 
-gRPC has full bidirectional streaming, which is very similar to WCF's Full Duplex services but without the dependency on complicated network bindings and transports. gRPC streaming can operate over regular internet connections, load balancers, and service meshes.
+gRPC has full bidirectional streaming, which provides very similar functionality to WCF's full duplex services. gRPC streaming can operate over regular internet connections, load balancers, and service meshes.
 
 ### Deadline/timeouts and cancellation
 

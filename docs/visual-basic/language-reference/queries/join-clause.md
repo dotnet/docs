@@ -16,7 +16,7 @@ Combines two collections into a single collection. The join operation is based o
   
 ## Syntax  
   
-```  
+```vb  
 Join element In collection _  
   [ joinClause _ ]   
   [ groupJoinClause ... _ ]   

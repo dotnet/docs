@@ -14,7 +14,7 @@ Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedur
   
 ## Syntax  
   
-```  
+```vb  
 [ Call ] procedureName [ (argumentList) ]  
 ```  
   

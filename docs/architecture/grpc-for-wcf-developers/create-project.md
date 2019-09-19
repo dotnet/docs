@@ -7,61 +7,54 @@ ms.date: 09/02/2019
 
 # Create a new ASP.NET Core gRPC project
 
-.NET Core comes with a powerful CLI tool, `dotnet`, which enables you to create and manage projects and solutions from the command line. The tool is closely integrated with Visual Studio 2019, so everything is also available through the familiar GUI interface. This chapter will show both ways to create a new ASP.NET Core gRPC project: first with Visual Studio 2019, then with the `dotnet` CLI.
+.NET Core comes with a powerful CLI tool, `dotnet`, which enables you to create and manage projects and solutions from the command line. The tool is closely integrated with Visual Studio, so everything is also available through the familiar GUI interface. This chapter will show both ways to create a new ASP.NET Core gRPC project: first with Visual Studio, then with the .NET Core CLI.
 
-## Using Visual Studio 2019
+## Create the project using Visual Studio
 
 > [!IMPORTANT]
-> To develop any .NET Core 3.0 app, you need Visual Studio 2019.3 or later versions.
+> To develop any ASP.NET Core 3.0 app, you need Visual Studio 2019.3 or later with the **ASP.NET and web development** workload installed.
 
 Create an empty solution called **TraderSys** from the *Blank Solution* template. Add a Solution Folder called `src`, then right-click on the folder and choose **Add** > **New Project** from the context menu. Enter `grpc` in the template search box and you should see a project template called `gRPC Service`.
 
-![Add new project dialog showing gRPC Service project template](images/vs2019-new-grpc-project.PNG)
+![Add new project dialog showing gRPC Service project template](media/create-project/new-grpc-project.PNG)
 
 Click **Next** to continue to the **Configure project** dialog and name the project `TraderSys.Portfolios`, and add an `src` subdirectory to the **Location**.
 
-![Configure project dialog](images/vs2019-configure-project.png)
+![Configure project dialog](media/create-project/configure-project.png)
 
 Click **Next** to continue to the **New gRPC project** dialog.
 
-![New gRPC Project dialog](images/vs2019-create-new-grpc-service.png)
+![New gRPC Project dialog](media/create-project/create-new-grpc-service.png)
 
 At present, there are limited options for the service creation. Docker will be introduced later in the book, so leave that checkbox unchecked for now and just click **Create**. Your first ASP.NET Core 3.0 gRPC project is generated and added to the solution. If you don't want to know about working with the `dotnet CLI`, skip to the [Clean up the example code](#clean-up-the-example-code) section.
 
-## Using the `dotnet` CLI
+## Create the project using the .NET Core CLI
 
 This section covers the creation of solutions and projects from the command line.
 
-Create a directory called `TraderSys` and `cd` into it, then use the `dotnet` command to create a new, empty solution.
+Create the solution as shown below. The `-o` (or `--output`) flag specifies the output directory, which will be created in the current directory if it does not exist. The solution will be given the same name as the directory, i.e. `TraderSys.sln`. You can provide a different name using the `-n` (or `--name`) flag.
 
-```console
-mkdir TraderSys
+```dotnetcli
+dotnet new sln -o TraderSys
 cd TraderSys
-dotnet new sln
 ```
 
-> [!TIP]
-> The `dotnet new sln` command will use the name of the current directory as the name of the `.sln` file. You can override this behavior by specifying a name with the `--name` flag.
+ASP.NET Core 3.0 comes with a CLI template for gRPC services. Create the new project using this template, putting it into an `src` subdirectory as is the convention for ASP.NET Core projects. The project will be named after the directory (i.e. `TraderSys.Portfolios.csproj`) unless you specify a different name with the `-n` flag.
 
-ASP.NET Core 3.0 comes with a CLI template for gRPC services. Create the new project using this template, putting it into an `src` subdirectory as is the convention for ASP.NET Core projects.
-
-```console
+```dotnetcli
 dotnet new grpc -o src/TraderSys.Portfolios
 ```
 
-> [!TIP]
-> Again, the `dotnet new grpc` command will use the name of the directory containing the project to name the `.csproj` file, and again, you can override this using the `--name` flag if you want.
-
 Finally, add the project to the solution using the `dotnet sln` command.
 
-```console
+```dotnetcli
 dotnet sln add src/TraderSys.Portfolios
 ```
 
 > [!TIP]
 > Since the given directory only contains a single `.csproj` file, you can get away with specifying just the directory to save typing.
 
-You can now open this solution in Visual Studio 2019, Visual Studio Code, or whatever editor you prefer. Screenshots that follow are from Visual Studio 2019.
+You can now open this solution in Visual Studio 2019, Visual Studio Code, or whatever editor you prefer.
 
 ## Clean up the example code
 
@@ -128,4 +121,4 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 In the next section, we'll add functionality to this new service.
 
 >[!div class="step-by-step"]
-<!-->[Next](migrating-request-reply.md)-->
+<!-->[Next](migrate-request-reply.md)-->

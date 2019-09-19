@@ -13,11 +13,11 @@ There are multiple ways to use duplex services in Windows Communication Foundati
 
 ## Server streaming RPC
 
-In the server streaming WCF example, *SimpleStockPriceTicker*, there's a duplex service where the client starts the connection with a list of stock symbols, and the server uses the *callback interface* to send updates as they become available. The client implements that interface and does whatever it does with the stream of real-time information.
+In the server streaming WCF example, *SimpleStockPriceTicker*, there's a duplex service where the client starts the connection with a list of stock symbols, and the server uses the *callback interface* to send updates as they become available. The client implements that interface to respond to calls from the server.
 
 ### The WCF solution
 
-The WCF solution is implemented as a self-hosted NetTCP server in a .NET 4.x console application.
+The WCF solution is implemented as a self-hosted NetTCP server in a .NET Framework 4.x console application.
 
 #### The ServiceContract
 
@@ -77,7 +77,7 @@ message StockTickerUpdate {
 }
 ```
 
-### Implementing the SimpleStockTicker
+### Implement the SimpleStockTicker
 
 Reuse the `StockPriceSubscriber` fake from the WCF project by copying the three classes from the `TraderSys.StockMarket` class library into a new .NET Standard class library in the target solution. To better follow best practices, add a `Factory` type to create instances of it and register the `IStockPriceSubscriberFactory` with ASP.NET Core's dependency injection services.
 
@@ -207,7 +207,7 @@ The stream is passed to an async `DisplayAsync` method; the application then wai
 > [!NOTE]
 > This code is using the new C# 8 "using declaration" syntax to dispose of the stream and the channel when the `Main` method exits. It's a small change, but a nice one that reduces indentations and empty lines.
 
-#### Consuming the stream
+#### Consume the stream
 
 WCF used callback interfaces to allow the server to call methods directly on the client. gRPC streams work differently. The client iterates over the returned stream and processes messages, just as though they were returned from a local method returning an `IEnumerable`.
 
@@ -235,9 +235,9 @@ static async Task DisplayAsync(IAsyncStreamReader<StockTickerUpdate> stream, Can
 ```
 
 > [!TIP]
-> The section at the end of the chapter looks at how to add an extension method and classes to wrap `IAsyncStreamReader<T>` in an `IObservable<T>` for developers using reactive programming patterns.
+> The section on [client libraries](client-libraries.md#iobservable) at the end of this chapter looks at how to add an extension method and classes to wrap `IAsyncStreamReader<T>` in an `IObservable<T>` for developers using reactive programming patterns.
 
-Again, be careful to catch exceptions here because of the possibility of network failure, as well as the <xref:System.OperationCanceledException> that will inevitably be thrown because the code is using a <xref:System.Threading.CancellationToken> to break the loop. The `RpcException` type has a lot of useful information about gRPC runtime errors, including the `StatusCode`. For more information, see [Chapter X section Y]().
+Again, be careful to catch exceptions here because of the possibility of network failure, as well as the <xref:System.OperationCanceledException> that will inevitably be thrown because the code is using a <xref:System.Threading.CancellationToken> to break the loop. The `RpcException` type has a lot of useful information about gRPC runtime errors, including the `StatusCode`. For more information, see [*Error handling* in Chapter 4](error-handling.md)
 
 ## Bidirectional streaming
 
@@ -380,7 +380,7 @@ private async Task HandleActions(IAsyncStreamReader<ActionMessage> requestStream
 > [!TIP]
 > The `switch` statement has a `default` case that logs a warning if an unknown `ActionOneOfCase` value is encountered. This could be useful in indicating that a client is using a later version of the `.proto` file which has added more actions. This is one reason why using a `switch` is better than testing for `null` on known fields.
 
-### Using the FullStockTickerService from a client application
+### Use the FullStockTickerService from a client application
 
 There's a simple .NET Core 3.0 WPF application to demonstrate use of this more complex client. The full application can be found [on GitHub](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTicker).
 
@@ -478,4 +478,4 @@ public ValueTask DisposeAsync()
 Closing request streams enables the server to dispose of its own resources in a timely manner. This improves the efficiency and scalability of services and prevents exceptions.
 
 >[!div class="step-by-step"]
-<!-->[Next](streaming-vs-repeated.md)-->
+<!-->[Next](streaming-versus-repeated.md)-->

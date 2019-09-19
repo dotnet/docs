@@ -20,7 +20,7 @@ Controls can be built with markup and delivered as a `UserControl` with similar 
 
 Pages also have an extension event lifecycle. Each page will raise events for the Initialization, Load, PreRender, and Unload events that occur as the ASP.NET runtime executes the code for the page for every visitor's request.  
 
-Controls on a Page typically post-back to the same page that presented the control, and carry along with them a payload from a hidden form field called ViewState.  The ViewState contains information about the state of the controls at the time they were rendered and presented on the page, allowing the ASP.NET runtime to compare and identify changes in the content submitted to the server.
+Controls on a Page typically post-back to the same page that presented the control, and carry along with them a payload from a hidden form field called `ViewState`.  The `ViewState` field contains information about the state of the controls at the time they were rendered and presented on the page, allowing the ASP.NET runtime to compare and identify changes in the content submitted to the server.
 
 ## Blazor
 

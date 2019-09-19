@@ -1,4 +1,4 @@
-### `Switch.System.Windows.Forms.UseLegacyImages` compatibility switch not supported
+### Switch.System.Windows.Forms.UseLegacyImages compatibility switch not supported
 
 The `Switch.System.Windows.Forms.UseLegacyImages` compatibility switch, which was introduced in .NET Framework 4.8, is not supported in Windows Forms on .NET Core 3.0.
 

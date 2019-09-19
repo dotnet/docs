@@ -1,4 +1,4 @@
-### `Switch.System.Windows.Forms.EnableVisualStyleValidation` compatibility switch not supported
+### Switch.System.Windows.Forms.EnableVisualStyleValidation compatibility switch not supported
 
 The `Switch.System.Windows.Forms.EnableVisualStyleValidation` compatibility switch is not supported in Windows Forms on .NET Core 3.0.
 

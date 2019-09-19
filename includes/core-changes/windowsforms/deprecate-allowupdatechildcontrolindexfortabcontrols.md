@@ -1,4 +1,4 @@
-### `Switch.System.Windows.Forms.AllowUpdateChildControlIndexForTabControls` compatibility switch not supported
+### Switch.System.Windows.Forms.AllowUpdateChildControlIndexForTabControls compatibility switch not supported
 
 The `Switch.System.Windows.Forms.AllowUpdateChildControlIndexForTabControls` compatibility switch is supported in Windows Forms on .NET Framework 4.6 and later versions but is not supported in Windows Forms starting with .NET Core 3.0.
 

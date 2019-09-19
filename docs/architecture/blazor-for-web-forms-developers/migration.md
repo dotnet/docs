@@ -3,7 +3,7 @@ title: Migrate from ASP.NET Web Forms to Blazor
 description: Learn how to approach migrating an existing ASP.NET Web Forms app to Blazor.
 author: twsouthwick
 ms.author: tasou
-ms.date: 09/17/2019
+ms.date: 09/19/2019
 ---
 # Migrate from ASP.NET Web Forms to Blazor
 
@@ -553,7 +553,7 @@ The `EditForm` context includes validation support and can be wrapped around inp
 
 ## Migrate built-in Web Forms controls
 
-[ TBD ]
+*This content is coming soon.*
 
 ## Migrate configuration
 

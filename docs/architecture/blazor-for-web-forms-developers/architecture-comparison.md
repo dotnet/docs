@@ -12,7 +12,15 @@ While ASP.NET Web Forms and Blazor have many similar concepts, they also have di
 
 ## ASP.NET Web Forms
 
-TODO
+ASP.NET Web Forms are built with a page-centric architecture where each request for a location in the application is a separate page that ASP.NET replies with. As pages are requested, the content of the browser are completely replaced with the results of the page requested.
+
+Pages consist of HTML markup, C# or Visual Basic code, a code-behind class that provides logic and event-handling capabilities, and controls. Controls are reusable units of web UI that can be programmatically placed and interacted with on a page. Pages are composed of files that end with *.aspx* containing markup, controls, and some code. The code-behind classes reside in files with the same base name and an *.aspx.cs* or *.aspx.vb* extension depending on the programming language used for the code-behind file. Interestingly, the *.aspx* file contents are interpreted by the web server and re-compiled whenever they change, even while the web server is already running.
+
+Controls can be built with markup and delivered as a `UserControl` with similar structure to the Page with an *.ascx* extension and a code-behind class that resides in an *.ascx.cs* or *.ascx.vb* file. Controls can also be built completely with code, by inheriting from the `WebControl` or `CompositeControl` base classes.
+
+Pages also have an extension event lifecycle. Each page will raise events for the Initialization, Load, PreRender, and Unload events that occur as the ASP.NET runtime executes the code for the page for every visitor's request.  
+
+Controls on a Page typically post-back to the same page that presented the control, and carry along with them a payload from a hidden form field called `ViewState`. The `ViewState` field contains information about the state of the controls at the time they were rendered and presented on the page, allowing the ASP.NET runtime to compare and identify changes in the content submitted to the server.
 
 ## Blazor
 

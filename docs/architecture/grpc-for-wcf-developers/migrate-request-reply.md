@@ -194,7 +194,7 @@ The method's return type is a `Task<T>` where `T` is the response message type. 
 
 ## Migrate the PortfolioData library to .NET Core
 
-At this point, the project needs the Portfolio repository and models contained in the `TraderSys.PortfolioData` class library in the WCF solution. The easiest way to bring them across is to create a new class library using either the Visual Studio *New project* dialog with the *Class Library (.NET Standard)* template, or from the command line using the `dotnet` CLI, running the following commands from the directory containing the `TraderSys.sln` file.
+At this point, the project needs the Portfolio repository and models contained in the `TraderSys.PortfolioData` class library in the WCF solution. The easiest way to bring them across is to create a new class library using either the Visual Studio **New project** dialog with the *Class Library (.NET Standard)* template, or from the command line using the .NET Core CLI, running the following commands from the directory containing the `TraderSys.sln` file.
 
 ```dotnetcli
 dotnet new classlib -o src/TraderSys.PortfolioData

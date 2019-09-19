@@ -40,7 +40,7 @@ Most Kubernetes YAML files will also have a `spec` section that describes the re
 
 ### Pods
 
-Pods are the basic units of execution in Kubernetes; they can run multiple containers, but are also used to run single containers. The pod also includes any storage resources required by the container(s), and the network IP address.
+Pods are the basic units of execution in Kubernetes. They can run multiple containers, but are also used to run single containers. The pod also includes any storage resources required by the container(s), and the network IP address.
 
 ### Services
 

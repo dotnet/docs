@@ -1,13 +1,13 @@
 ---
 title: Self-hosted gRPC applications - gRPC for WCF Developers
-description: Deploying ASP.NET Core gRPC applications as self-hosted services
+description: Deploying ASP.NET Core gRPC applications as self-hosted services.
 author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Self-hosted gRPC applications
 
-Although ASP.NET Core 3.0 applications can be hosted in IIS on Windows Server, at present, it is not possible to host a gRPC application in IIS because some of the HTTP/2 functionality is not yet supported. This functionality is expected in a future update to Windows Server.
+Although ASP.NET Core 3.0 applications can be hosted in IIS on Windows Server, currently it isn't possible to host a gRPC application in IIS because some of the HTTP/2 functionality isn't yet supported. This functionality is expected in a future update to Windows Server.
 
 You can run your application as a Windows Service, or as a Linux service controlled by [systemd](https://en.wikipedia.org/wiki/Systemd), thanks to some new features in the .NET Core 3.0 hosting extensions.
 
@@ -26,9 +26,9 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 ```
 
 > [!NOTE]
-> If the application is not running as a Windows service, the `UseWindowsService` method doesn't do anything.
+> If the application isn't running as a Windows service, the `UseWindowsService` method doesn't do anything.
 
-Now publish your application for the relevant Windows runtime (e.g. `win-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the dotnet CLI using the following command.
+Now publish your application for the relevant Windows runtime (for example, `win-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the dotnet CLI using the following command.
 
 ```console
 dotnet publish -c Release -r win-x64 -o ./publish
@@ -61,15 +61,15 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 ```
 
 > [!NOTE]
-> If the application is not running as a Linux service, the `UseSystemd` method doesn't do anything.
+> If the application isn't running as a Linux service, the `UseSystemd` method doesn't do anything.
 
-Now publish your application for the relevant Linux runtime (e.g. `linux-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the dotnet CLI using the following command.
+Now publish your application for the relevant Linux runtime (for example, `linux-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the dotnet CLI using the following command.
 
 ```console
 dotnet publish -c Release -r linux-x64 -o ./publish
 ```
 
-Copy the complete contents of the `publish` directory to an installation folder on the Linux host. Registering the service requires a special file, called a "unit file", to be added to the `/etc/systemd/system` directory. (You will need root permission to create a file in this folder.) Name the file with the identifier you want `systemd` to use and the `.service` extension, for example, `/etc/systemd/system/myapp.service`.
+Copy the complete contents of the `publish` directory to an installation folder on the Linux host. Registering the service requires a special file, called a "unit file", to be added to the `/etc/systemd/system` directory. You'll need root permission to create a file in this folder. Name the file with the identifier you want `systemd` to use and the `.service` extension. For example, `/etc/systemd/system/myapp.service`.
 
 The service file uses INI format, as shown in this example.
 
@@ -87,14 +87,14 @@ WantedBy=multi-user.target
 
 The `Type=notify` property tells `systemd` that the application will notify it on startup and shutdown. The `WantedBy=multi-user.target` setting will cause the service to start when the Linux system reaches "runlevel 2", meaning a non-graphical multi-user shell is active.
 
-Before `systemd` will recognize the service, it needs to reload its configuration. You control `systemd` using the `systemctl` command. After reloading, use the `status` sub-command to confirm the application has registered successfully.
+Before `systemd` will recognize the service, it needs to reload its configuration. You control `systemd` using the `systemctl` command. After reloading, use the `status` subcommand to confirm the application has registered successfully.
 
 ```console
 sudo systemctl daemon-reload
 sudo systemctl status myapp
 ```
 
-If you have configured the service correctly, the following output will be shown.
+If you've configured the service correctly, the following output will be shown:
 
 ```text
 myapp.service - My gRPC Application
@@ -119,7 +119,7 @@ sudo systemctl enable myapp
 
 ### Logging to journald
 
-The Linux equivalent of the Windows Event Log is `journald`, a structured logging system service that is part of `systemd`. Log messages written to the standard output by a Linux daemon are automatically written to `journald`, so to configure logging levels etc. use the `Console` section of the logging configuration. The `UseSystemd` host builder method automatically configures the console output format to suit the journal.
+The Linux equivalent of the Windows Event Log is `journald`, a structured logging system service that is part of `systemd`. Log messages written to the standard output by a Linux daemon are automatically written to `journald`, so to configure logging levels, use the `Console` section of the logging configuration. The `UseSystemd` host builder method automatically configures the console output format to suit the journal.
 
 Because `journald` is the standard for Linux logs, there are a variety of tools that integrate with it, and you can easily route logs from `journald` to an external logging system. Working locally on the host, you can use the `journalctl` command to view logs from the command line.
 
@@ -130,11 +130,11 @@ sudo journalctl -u myapp
 > [!TIP]
 > If you have a GUI environment available on your host, a few graphical log viewers are available for Linux, such as *QJournalctl* and *gnome-logs*.
 
-To learn more about querying the systemd journal from the command line with journalctl refer to [the man pages](https://manpages.debian.org/buster/systemd/journalctl.1).
+To learn more about querying the systemd journal from the command line with `journalctl`, see [the man pages](https://manpages.debian.org/buster/systemd/journalctl.1).
 
 ## HTTPS Certificates for self-hosted applications
 
-When running a gRPC application in production you should use a proper TLS certificate from a trusted Certificate Authority (CA). This could be a public CA, or an internal one for your organization. On Windows hosts, the certificate should be loaded from a secure [Certificate Store](https://docs.microsoft.com/windows/win32/seccrypto/managing-certificates-with-certificate-stores) using the [X509Store class](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). On Linux hosts, the certificate may be created using one of the [X509Certificate2 constructors](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate.-ctor?view=netcore-3.0), either from a file (for example a `.pfx` file protected by a strong password), or from binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
+When running a gRPC application in production, you should use a proper TLS certificate from a trusted Certificate Authority (CA). This CA could be a public CA, or an internal one for your organization. On Windows hosts, the certificate should be loaded from a secure [Certificate Store](https://docs.microsoft.com/windows/win32/seccrypto/managing-certificates-with-certificate-stores) using the [X509Store class](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). On Linux hosts, the certificate may be created using one of the [X509Certificate2 constructors](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate.-ctor?view=netcore-3.0), either from a file (for example a `.pfx` file protected by a strong password), or from binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
 
 Kestrel can be configured to use a certificate in two ways: from configuration, or in code.
 

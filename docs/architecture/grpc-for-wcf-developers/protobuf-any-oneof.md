@@ -80,7 +80,7 @@ message ChangeNotification {
 
 Fields within the `oneof` set must have unique field numbers within the overall message declaration.
 
-When you use `oneof`, the generated C# code includes an enum that specifies which of the fields has been set. You can use test the enum to find which field is set. Fields that aren't set return `null` or the default value, rather than throwing an exception.
+When you use `oneof`, the generated C# code includes an enum that specifies which of the fields has been set. You can test the enum to find which field is set. Fields that aren't set return `null` or the default value, rather than throwing an exception.
 
 ```csharp
 public void FormatChangeNotification(ChangeNotification change)

@@ -70,7 +70,7 @@ As mentioned previously and as indicated by the arrow in the figure above, the d
 
 You may want your application to enable users to change the data and propagate it back to the source object. Or you may not want to enable users to update the source data. You can control the flow of data by setting the <xref:System.Windows.Data.Binding.Mode%2A> property of your <xref:System.Windows.Data.Binding> object. The following figure illustrates the different types of data flow:
 
-![Data binding data flow](./media/databinding-dataflow.png "DataBinding_DataFlow")
+![Data binding data flow](./media/data-binding-overview/databinding-dataflow.png "DataBinding_DataFlow")
 
 - <xref:System.Windows.Data.BindingMode.OneWay> binding causes changes to the source property to automatically update the target property, but changes to the target property are not propagated back to the source property. This type of binding is appropriate if the control being bound is implicitly read-only. For instance, you may bind to a source such as a stock ticker or perhaps your target property has no control interface provided for making changes, such as a data-bound background color of a table. If there is no need to monitor the changes of the target property, using the <xref:System.Windows.Data.BindingMode.OneWay> binding mode avoids the overhead of the <xref:System.Windows.Data.BindingMode.TwoWay> binding mode.
 

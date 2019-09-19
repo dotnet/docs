@@ -23,7 +23,7 @@ Metrics refers to numeric data that is designed to be aggregated and presented u
 
 ## Logging in ASP.NET Core gRPC
 
-ASP.NET Core provides support for logging out-of-the-box, in the form of the [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet package. The core parts of this library are included with the Web SDK, so there's no need to install it manually. By default, log messages are written to the standard output (the "console") and to any attached debugger. To write logs to persistent external data stores, you may need to import [optional logging sink packages](https://docs.microsoft.com/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers).
+ASP.NET Core provides built-in support for logging, in the form of the [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet package. The core parts of this library are included with the Web SDK, so there's no need to install it manually. By default, log messages are written to the standard output (the "console") and to any attached debugger. To write logs to persistent external data stores, you may need to import [optional logging sink packages](https://docs.microsoft.com/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers).
 
 The ASP.NET Core gRPC framework writes detailed diagnostic logging messages to this logging framework so they can be processed/stored along with your application's own messages.
 
@@ -51,7 +51,7 @@ For more information about writing log messages and available logging sinks and 
 
 The .NET Core runtime provides a set of components for emitting and observing metrics that includes APIs such as the <xref:System.Diagnostics.Tracing.EventSource> and <xref:System.Diagnostics.Tracing.EventCounter> classes. These APIs can be used to emit basic numeric data that can be consumed by external processes like the [dotnet-counters global tool](https://github.com/dotnet/diagnostics/blob/master/documentation/dotnet-counters-instructions.md), or Event Tracing for Windows. For more information about using `EventCounter` in your own code, see the [EventCounter Introduction](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md) tutorial.
 
-For more advanced metrics and for writing metric data to a wider range of data stores, there's an excellent open-source project called [App Metrics](https://www.app-metrics.io). This suite of libraries provides an extensive set of types to instrument your code. It also offers packages to write metrics to different kinds of targets that include time-series databases, such as Prometheus and InfluxDB, [Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview), and more. The [App.Metrics.AspNetCore.Mvc](https://www.nuget.org/packages/App.Metrics.AspNetCore.Mvc/) NuGet package even adds a comprehensive set of basic metrics that are automatically generated via integration with the ASP.NET Core framework, and the web site provides templates for displaying those the [Grafana](https://grafana.com/) visualization platform.
+For more advanced metrics and for writing metric data to a wider range of data stores, there's an excellent open-source project called [App Metrics](https://www.app-metrics.io). This suite of libraries provides an extensive set of types to instrument your code. It also offers packages to write metrics to different kinds of targets that include time-series databases, such as Prometheus and InfluxDB, [Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview), and more. The [App.Metrics.AspNetCore.Mvc](https://www.nuget.org/packages/App.Metrics.AspNetCore.Mvc/) NuGet package even adds a comprehensive set of basic metrics that are automatically generated via integration with the ASP.NET Core framework, and the web site provides [templates](https://www.app-metrics.io/samples/grafana/) for displaying those metrics with the [Grafana](https://grafana.com/) visualization platform.
 
 For more information and documentation about App Metrics, see the [app-metrics.io](https://app-metrics.io) website.
 
@@ -102,7 +102,7 @@ The best way to store metrics data is in a *time-series database*, a specialized
 
 The current go-to solution for visualizing metrics data is [Grafana](https://grafana.com), which works with a wide range of storage providers including Azure Monitor, InfluxDB and Prometheus. The following image shows an example Grafana dashboard that displays metrics from the Linkerd service mesh running the StockData sample:
 
-![Grafana dashboard](images/grafana-screenshot.png)
+![Grafana dashboard](media/application-performance-management/grafana-screenshot.png)
 
 ### Metrics-based alerting
 

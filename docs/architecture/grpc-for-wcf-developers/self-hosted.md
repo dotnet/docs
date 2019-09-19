@@ -11,7 +11,7 @@ Although ASP.NET Core 3.0 applications can be hosted in IIS on Windows Server, c
 
 You can run your application as a Windows Service, or as a Linux service controlled by [systemd](https://en.wikipedia.org/wiki/Systemd), thanks to some new features in the .NET Core 3.0 hosting extensions.
 
-## Running your app as a Windows service
+## Run your app as a Windows service
 
 To configure your ASP.NET Core application to run as a Windows service, install the [Microsoft.Extensions.Hosting.WindowsServices](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices) package from NuGet. Then add a call to `UseWindowsService` to the `CreateHostBuilder` method in `Program.cs`.
 
@@ -28,10 +28,20 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 > [!NOTE]
 > If the application isn't running as a Windows service, the `UseWindowsService` method doesn't do anything.
 
-Now publish your application for the relevant Windows runtime (for example, `win-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the dotnet CLI using the following command.
+Now publish your application, either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the .NET Core CLI.
+
+When you publish a .NET Core application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Core Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET Core runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, refer to the [.NET Core application deployment](https://docs.microsoft.com/dotnet/core/deploying/) documentation.
+
+To publish a self-contained build of the application that does not require the .NET Core 3.0 runtime to be installed on the host, specify the runtime to be included with the application using the `-r` (or `--runtime`) flag.
 
 ```console
 dotnet publish -c Release -r win-x64 -o ./publish
+```
+
+To publish a framework-dependent build, omit the `-r` flag.
+
+```console
+dotnet publish -c Release -o ./publish
 ```
 
 Copy the complete contents of the `publish` directory to an installation folder, and use the [sc utility](https://docs.microsoft.com/windows/desktop/services/controlling-a-service-using-sc) to create a Windows service for the executable.
@@ -40,13 +50,13 @@ Copy the complete contents of the `publish` directory to an installation folder,
 sc create MyService binPath=C:\MyService\MyService.exe
 ```
 
-### Logging to Windows Event Log
+### Log to Windows Event Log
 
 The `UseWindowsService` method automatically adds a [Logging](https://docs.microsoft.com/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0) provider that writes log messages to the Windows Event Log. You can configure logging for this provider by adding an `EventLog` entry to the `Logging` section of `appsettings.json` or other configuration source. The source name used in Event Log can be overridden by setting a `SourceName` property in these settings; if you don't specify a name, the default application name (normally the executable assembly name) will be used.
 
 More information on logging is at the end of this chapter.
 
-## Running your app as a Linux service with systemd
+## Run your app as a Linux service with systemd
 
 To configure your ASP.NET Core application to run as a Linux service (or *daemon* in Linux parlance), install the [Microsoft.Extensions.Hosting.Systemd](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.Systemd) package from NuGet. Then add a call to `UseSystemd` to the `CreateHostBuilder` method in `Program.cs`.
 
@@ -63,7 +73,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 > [!NOTE]
 > If the application isn't running as a Linux service, the `UseSystemd` method doesn't do anything.
 
-Now publish your application for the relevant Linux runtime (for example, `linux-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the dotnet CLI using the following command.
+Now publish your application (either framework-dependent, or self-contained for the relevant Linux runtime, e.g. `linux-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the .NET Core CLI using the following command.
 
 ```console
 dotnet publish -c Release -r linux-x64 -o ./publish
@@ -117,7 +127,7 @@ To tell `systemd` to start the service automatically on system startup, use the 
 sudo systemctl enable myapp
 ```
 
-### Logging to journald
+### Log to journald
 
 The Linux equivalent of the Windows Event Log is `journald`, a structured logging system service that is part of `systemd`. Log messages written to the standard output by a Linux daemon are automatically written to `journald`, so to configure logging levels, use the `Console` section of the logging configuration. The `UseSystemd` host builder method automatically configures the console output format to suit the journal.
 
@@ -138,7 +148,7 @@ When running a gRPC application in production, you should use a proper TLS certi
 
 Kestrel can be configured to use a certificate in two ways: from configuration, or in code.
 
-### Setting HTTPS certificates using configuration
+### Set HTTPS certificates using configuration
 
 The configuration approach requires setting the path to the certificate `.pfx` file and the password in the Kestrel configuration section. In `appsettings.json` that would look like this.
 
@@ -159,7 +169,7 @@ The password should be provided using a secure configuration source such as Azur
 
 You SHOULD NOT store unencrypted passwords in configuration files.
 
-### Setting HTTPS certificates in code
+### Set HTTPS certificates in code
 
 To configure HTTPS on Kestrel in code, use the `ConfigureKestrel` method on `IWebHostBuilder` in the `Program` class.
 

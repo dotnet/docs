@@ -32,7 +32,7 @@ The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ub
 > [!IMPORTANT]
 > Make sure you use the same variant of Linux for the build and the runtime. Applications built and published on one variant may not work on another.
 
-## Creating a Docker image
+## Create a Docker image
 
 A Docker image is defined by a *Dockerfile*, a text file that contains all the commands that are needed to build the application and install any dependencies that are required for either building or running the application. The following example shows the simplest Dockerfile for an ASP.NET Core 3.0 application:
 
@@ -102,7 +102,7 @@ bin/
 obj/
 ```
 
-## Building the image
+## Build the image
 
 For a solution with a single application, and thus a single Dockerfile, it is simplest to put the Dockerfile in the base directory; that is, the same directory as the `.sln` file. In that case, to build the image, use the following `docker build` command from the directory containing the Dockerfile.
 

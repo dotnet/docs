@@ -36,5 +36,9 @@ When using TLS encryption, load balancers can close the TLS connection and pass 
 
 Refer to the documentation for your preferred load balancer to find out how to configure it to handle HTTP/2 requests with your back-end services.
 
+## Load balancing within Kubernetes
+
+See [the section on Service Meshes](service-mesh.md) for a discussion of load balancing across internal services on Kubernetes.
+
 >[!div class="step-by-step"]
-<!-->[Next](apm.md)-->
+<!-->[Next](application-performance-management.md)-->

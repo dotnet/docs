@@ -27,7 +27,7 @@ Using a service mesh, the requests from the application container are sent to th
 
 The following screenshot shows the StockWeb application running with the Linkerd service mesh, with no changes to the application code, or even the Docker image being used. The only change required was the addition of an annotation to the Deployment in the YAML files for the `stockdata` and `stockweb` services.
 
-![StockWeb with Service Mesh](images/stockweb-servicemesh-screenshot.png)
+![StockWeb with Service Mesh](media/service-mesh/stockweb-servicemesh-screenshot.png)
 
 You can see from the Server column that the requests from the StockWeb application have been routed to both replicas of the StockData service, despite originating from a single `HttpClient` instance in the application code. In fact, if you review the code, you'll see that all 100 requests to the StockData service are made simultaneously using the same `HttpClient` instance, yet with the service mesh, those requests will be balanced across however many service instances are available.
 
@@ -49,14 +49,14 @@ More information on each service mesh is available from their respective website
 - [**Linkerd** - linkerd.io](https://linkerd.io)
 - [**Consul** - consul.io/mesh.html](https://consul.io/mesh.html)
 
-## Example: adding Linkerd to a deployment
+## Example: add Linkerd to a deployment
 
 In this example, you'll learn how to use the Linkerd service mesh with the *StockKube* application from [the previous section](kubernetes.md).
 To follow this example, you'll need to [install the Linkerd CLI](https://linkerd.io/2/getting-started/#step-1-install-the-cli). Windows binaries can be downloaded from the GitHub releases section; make sure to use the most recent **stable** release and not one of the edge releases.
 
 With the Linkerd CLI installed, follow the [*Getting Started* instructions on the Linkerd web site] to install the Linkerd components on your Kubernetes cluster. The instructions are straight-forward and installation should only take a couple of minutes on a local Kubernetes instance.
 
-### Adding Linkerd to Kubernetes deployments
+### Add Linkerd to Kubernetes deployments
 
 The Linkerd CLI provides an `inject` command to add the necessary sections and properties to Kubernetes files. You can run the command and write the output to a new file.
 
@@ -74,7 +74,7 @@ linkerd inject stockdata.yml | kubectl apply -f -
 linkerd inject stockweb.yml | kubectl apply -f -
 ```
 
-### Inspecting services in the Linkerd dashboard
+### Inspect services in the Linkerd dashboard
 
 Launch the Linkerd dashboard using the `linkerd` CLI.
 
@@ -84,7 +84,7 @@ linkerd dashboard
 
 The dashboard provides detailed information about all services that are connected to the mesh.
 
-![Linkerd dashboard showing StockKube applications](images/linkerd-screenshot.png)
+![Linkerd dashboard showing StockKube applications](media/service-mesh/linkerd-screenshot.png)
 
 If you increase the number of replicas of the StockData gRPC service as shown in the following example, and refresh the StockWeb page in the browser, you should see a mix of IDs in the Server column, indicating that requests are being served by all the available instances.
 

@@ -58,11 +58,11 @@ Pods, Services, and Deployments are just three of the most basic object types. T
 
 Kubernetes clusters are designed to scale to hundreds or thousands of nodes, and run similar numbers of services. To avoid clashes between object names, namespaces are used to group objects together as part of larger applications. Kubernetes own services run in a `default` namespace. All user objects should be created in their own namespaces to avoid potential clashes with default objects or other tenants in the cluster.
 
-## Getting started with Kubernetes
+## Get started with Kubernetes
 
 If you're running Docker Desktop for Windows or macOS, Kubernetes is already available. Just enable it in the Kubernetes section of the Settings window.
 
-![Enable Kubernetes in Docker Desktop](images/enable-kubernetes-docker-desktop.png)
+![Enable Kubernetes in Docker Desktop](media/kubernetes/enable-kubernetes-docker-desktop.png)
 
 To run a local Kubernetes cluster in Linux, look at [minikube](https://github.com/kubernetes/minikube), or [MicroK8s](https://microk8s.io/) if your Linux distribution supports [snaps](https://snapcraft.io/).
 
@@ -76,7 +76,7 @@ Server Version: version.Info{Major:"1", Minor:"14", GitVersion:"v1.14.6", GitCom
 
 In this example, both the `kubectl` CLI and the Kubernetes server are running version 1.14.6. Each version of `kubectl` is supposed to support the previous and next version of the server, so `kubectl` 1.14 should work with server versions 1.13 and 1.15 as well.
 
-## Running services on Kubernetes
+## Run services on Kubernetes
 
 The sample application has a `kube` directory containing three YAML files. The `namespace.yml` file declares a custom namespace, `stocks`. The `stockdata.yml` file declares the Deployment and the Service for the gRPC application, and the `stockweb.yml` file declares the Deployment and Service for an ASP.NET Core 3.0 MVC web application that consumes the gRPC service.
 
@@ -297,7 +297,7 @@ The output from the `get service` command shows that the HTTP port has been publ
 
 The StockWeb application displays a list of NASDAQ stocks that are retrieved from a simple request-reply service. For demonstration purposes, each line also shows the unique ID of the service instance that returned it.
 
-![StockWeb screenshot](images/stockweb-screenshot.png)
+![StockWeb screenshot](media/kubernetes/stockweb-screenshot.png)
 
 If the number of replicas of the `stockdata` service were increased, you might expect the **Server** value to change from line to line, but in fact all 100 records are always returned from the same instance. If you refresh the page every few seconds, the server ID remains the same. Why does this happen? There are two factors at play here.
 

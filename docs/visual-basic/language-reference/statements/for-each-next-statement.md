@@ -29,7 +29,7 @@ Repeats a group of statements for each element in a collection.
 
 ## Syntax
 
-```
+```vb
 For Each element [ As datatype ] In group
     [ statements ]
     [ Continue For ]

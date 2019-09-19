@@ -8,9 +8,9 @@ ms.date: 09/19/2019
 
 # Forms and validation
 
-The ASP.NET Web Forms framework includes a set of validation server controls that handle validating user input entered into a form (`RequiredFieldValidator`, `CompareValidator`, `RangeValidator`, and so on). ASP.NET Web Forms also supports model binding and validating the model based on data annotations (`[Required]`, `[StringLength]`, `[Range]`, and so on). The validation logic can be enforced both on the server and on the client using unobtrusive JavaScript-based validation. The `ValidationSummary` server control is used to display a summary of the validation errors to the user.
+The ASP.NET Web Forms framework includes a set of validation server controls that handle validating user input entered into a form (`RequiredFieldValidator`, `CompareValidator`, `RangeValidator`, and so on). The ASP.NET Web Forms framework also supports model binding and validating the model based on data annotations (`[Required]`, `[StringLength]`, `[Range]`, and so on). The validation logic can be enforced both on the server and on the client using unobtrusive JavaScript-based validation. The `ValidationSummary` server control is used to display a summary of the validation errors to the user.
 
-One benefit of Blazor is that validation logic can be shared between both the client and the server. ASP.NET provides pre-built JavaScript implementations of many common server validations. In many cases, the developer still has to write JavaScript to fully implement their app-specific validation logic. The same model types, data annotations, and validation logic can be used on both the server and client in Blazor apps.
+Blazor supports the sharing of validation logic between both the client and the server. ASP.NET provides pre-built JavaScript implementations of many common server validations. In many cases, the developer still has to write JavaScript to fully implement their app-specific validation logic. The same model types, data annotations, and validation logic can be used on both the server and client.
 
 Blazor provides a set of input components. The input components handle binding field data to a model and validating the user input when the form is submitted.
 
@@ -23,7 +23,7 @@ Input component | Rendered as
 `InputCheckbox` | `<input type="checkbox">`
 `InputDate`     | `<input type="date">`
 
-The `EditForm` component wraps these input components and orchestrates the validation process through an `EditContext`. When creating an `EditForm`, you specify what model instance to bind to using the `Model` parameter. How validation is performed is extensible but is typically done using data annotations. To enable data annotation-based validation, add the `DataAnnotationsValidator` component as a child of the `EditForm`. The `EditForm` component provides a convenient event for handling valid (`OnValidSubmit`) and invalid (`OnInvalidSubmit`) submissions. There's also a more generic `OnSubmit` event that lets you trigger and handle the validation yourself.
+The `EditForm` component wraps these input components and orchestrates the validation process through an `EditContext`. When creating an `EditForm`, you specify what model instance to bind to using the `Model` parameter. Validation is typically done using data annotations, and it's extensible. To enable data annotation-based validation, add the `DataAnnotationsValidator` component as a child of the `EditForm`. The `EditForm` component provides a convenient event for handling valid (`OnValidSubmit`) and invalid (`OnInvalidSubmit`) submissions. There's also a more generic `OnSubmit` event that lets you trigger and handle the validation yourself.
 
 To display a validation error summary, use the `ValidationSummary` component. To display validation messages for a specific input field, use the `ValidationMessage` component, specifying a lambda expression for the `For` parameter that points to the appropriate model member.
 

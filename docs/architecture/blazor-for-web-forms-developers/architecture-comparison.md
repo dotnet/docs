@@ -16,7 +16,7 @@ ASP.NET Web Forms are built with a page-centric architecture where each request 
 
 Pages are made up of HTML markup, C# or Visual Basic Code, a code-behind class that provides logic and event-handling capabilities, and controls.  Controls are reusable units of web user-interface that can be programmatically placed and interacted with on a page.  Pages are made up of files that end with .ASPX containing markup, controls, and some code.  The code-behind classes reside in files with the same base name and an .ASPX.CS or .ASPX.VB extension depending on the programming language used for the code-behind file.  Interestingly, the ASPX file contents are interpreted by the web server and re-compiled whenever they change, even while the web server is already running.
 
-Controls can be built with markup and delivered as a UserControl with similar structure to the Page with a .ASCX extension and a code-behind class that resides in a .ASCX.CS or .ASCX.VB file.  Controls can also be built completely with code, by inheriting from the WebControl or CompositeControl base classes.
+Controls can be built with markup and delivered as a `UserControl` with similar structure to the Page with an *.ascx* extension and a code-behind class that resides in an *.ascx.cs* or *.ascx.vb* file. Controls can also be built completely with code, by inheriting from the `WebControl` or `CompositeControl` base classes.
 
 Pages also have an extension event life-cycle.  Each page will raise events for the Initialization, Load, PreRender, and Unload events that occur as the ASP.NET runtime executes the code for the page for every visitor's request.  
 

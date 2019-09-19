@@ -11,7 +11,7 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
 ---
 # UI Automation Properties for Clients
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This overview introduces you to [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties as they are exposed to UI Automation client applications.  
   
@@ -21,15 +21,13 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties are read-only. To set properties of a control, you must use the methods of the appropriate control pattern. For example, use <xref:System.Windows.Automation.ScrollPattern.Scroll%2A> to change the position values of a scrolling window.  
   
- To improve performance, property values of controls and control patterns can be cached when <xref:System.Windows.Automation.AutomationElement> objects are retrieved. For more information, see [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md).  
+ To improve performance, property values of controls and control patterns can be cached when <xref:System.Windows.Automation.AutomationElement> objects are retrieved. For more information, see [Caching in UI Automation Clients](caching-in-ui-automation-clients.md).  
   
-<a name="Property_IDs"></a>   
 ## Property IDs  
  Property identifiers (IDs) are unique, constant values that are encapsulated in <xref:System.Windows.Automation.AutomationProperty> objects. UI Automation client applications get these IDs from the <xref:System.Windows.Automation.AutomationElement> class or from the appropriate control pattern class, such as <xref:System.Windows.Automation.ScrollPattern>. UI Automation providers get them from <xref:System.Windows.Automation.AutomationElementIdentifiers> or from one of the control pattern identifiers classes, such as <xref:System.Windows.Automation.ScrollPatternIdentifiers>.  
   
  The numeric <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> of an <xref:System.Windows.Automation.AutomationProperty> is used by providers to identify properties that are being queried for in the <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A?displayProperty=nameWithType> method. In general, client applications do not need to examine the <xref:System.Windows.Automation.AutomationIdentifier.Id%2A>. The <xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName%2A> is used only for debugging and diagnostic purposes.  
   
-<a name="Property_Conditions"></a>   
 ## Property Conditions  
  The property IDs are used in constructing <xref:System.Windows.Automation.PropertyCondition> objects used to find <xref:System.Windows.Automation.AutomationElement> objects. For example, you might wish to find an <xref:System.Windows.Automation.AutomationElement> that has a certain name, or all controls that are enabled. Each <xref:System.Windows.Automation.PropertyCondition> specifies an <xref:System.Windows.Automation.AutomationProperty> identifier and the value that the property must match.  
   
@@ -41,7 +39,6 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
   
 - <xref:System.Windows.Automation.TreeWalker.Condition%2A>  
   
-<a name="Retrieving_Properties"></a>   
 ## Retrieving Properties  
  Some properties of <xref:System.Windows.Automation.AutomationElement> and all properties of a control pattern class are exposed as nested properties of the `Current` or `Cached` property of the <xref:System.Windows.Automation.AutomationElement> or control pattern object.  
   
@@ -67,7 +64,6 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
   
  The `Get` methods return an <xref:System.Object>. The application must cast the returned object to the proper type before using the value.  
   
-<a name="_Default_Property_Values"></a>   
 ## Default Property Values  
  If a UI Automation provider does not implement a property, the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] system is able to supply a default value. For example, if the provider for a control does not support the property identified by <xref:System.Windows.Automation.AutomationElement.HelpTextProperty>, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] returns an empty string. Similarly, if the provider does not support the property identified by <xref:System.Windows.Automation.AutomationElement.IsDockPatternAvailableProperty>, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] returns `false`.  
   
@@ -80,13 +76,11 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
   
  To discover what properties are supported by an element, use <xref:System.Windows.Automation.AutomationElement.GetSupportedProperties%2A>. This returns an array of <xref:System.Windows.Automation.AutomationProperty> identifiers.  
   
-<a name="Property_changed_Events"></a>   
 ## Property-changed Events  
  When a property value on an <xref:System.Windows.Automation.AutomationElement> or control pattern changes, an event is raised. An application can subscribe to such events by calling <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A>, supplying an array of <xref:System.Windows.Automation.AutomationProperty> identifiers as the last parameter in order to specify the properties of interest.  
   
  In the <xref:System.Windows.Automation.AutomationPropertyChangedEventHandler>, you can identify the property that has changed by checking the <xref:System.Windows.Automation.AutomationPropertyChangedEventArgs.Property%2A> member of the event arguments. The arguments also contain the old and new values of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] property that has changed. These values are of type <xref:System.Object> and must be cast to the correct type before being used.  
   
-<a name="Additional_AutomationElement_Properties"></a>   
 ## Additional AutomationElement Properties  
  In addition to the <xref:System.Windows.Automation.AutomationElement.Current%2A> and <xref:System.Windows.Automation.AutomationElement.Cached%2A> property structures, <xref:System.Windows.Automation.AutomationElement> has the following properties, which are retrieved through simple property accessors.  
   
@@ -99,6 +93,6 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
   
 ## See also
 
-- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)
-- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
-- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)
+- [Caching in UI Automation Clients](caching-in-ui-automation-clients.md)
+- [Server-Side UI Automation Provider Implementation](server-side-ui-automation-provider-implementation.md)
+- [Subscribe to UI Automation Events](subscribe-to-ui-automation-events.md)

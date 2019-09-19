@@ -8,7 +8,7 @@ ms.assetid: 5be6b642-e8a6-4565-8ebd-ae73c7b10dc9
 ---
 # ProgressBar Control (Windows Forms)
 > [!IMPORTANT]
->  The <xref:System.Windows.Forms.ToolStripProgressBar> control replaces and adds functionality to the <xref:System.Windows.Forms.ProgressBar> control; however, the <xref:System.Windows.Forms.ProgressBar> control is retained for both backward compatibility and future use, if you choose.  
+> The <xref:System.Windows.Forms.ToolStripProgressBar> control replaces and adds functionality to the <xref:System.Windows.Forms.ProgressBar> control; however, the <xref:System.Windows.Forms.ProgressBar> control is retained for both backward compatibility and future use, if you choose.  
   
  The Windows Forms <xref:System.Windows.Forms.ProgressBar> control indicates the progress of an action by displaying an appropriate number of rectangles arranged in a horizontal bar. When the action is complete, the bar is filled. Progress bars are commonly used to give the user an indication of how long to wait for a protracted action to complete—for instance, when a large file is being loaded.  
   

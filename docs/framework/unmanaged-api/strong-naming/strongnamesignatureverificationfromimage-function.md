@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # StrongNameSignatureVerificationFromImage Function
 Verifies that an assembly that has already been mapped to memory is valid for the associated public key.  
   
- This function has been deprecated. Use the [ICLRStrongName::StrongNameVerificationFromImage](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignatureverificationfromimage-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::StrongNameVerificationFromImage](../hosting/iclrstrongname-strongnamesignatureverificationfromimage-method.md) method instead.  
   
 ## Syntax  
   
@@ -64,10 +64,10 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
- If the `StrongNameSignatureVerificationFromImage` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.  
+ If the `StrongNameSignatureVerificationFromImage` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -77,5 +77,5 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
   
 ## See also
 
-- [StrongNameSignatureVerificationFromImage Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignatureverificationfromimage-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [StrongNameSignatureVerificationFromImage Method](../hosting/iclrstrongname-strongnamesignatureverificationfromimage-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

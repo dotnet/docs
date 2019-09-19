@@ -236,7 +236,7 @@ static void DisplayIdentityInformation()
     ```
 
 > [!NOTE]
->  The Setup.bat batch file is designed to be run from a Windows SDK Command Prompt. It requires that the MSSDK environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Windows SDK Command Prompt.
+> The Setup.bat batch file is designed to be run from a Windows SDK Command Prompt. It requires that the MSSDK environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Windows SDK Command Prompt.
 
 #### To set up and build the sample
 
@@ -249,7 +249,7 @@ static void DisplayIdentityInformation()
 1. Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
 2. Launch service.exe from service\bin.  
   

@@ -20,18 +20,18 @@ The Composition Analysis Tool (Mefx) is a command-line application that analyzes
 ## Basic Syntax  
  Mefx is invoked from the command line in the following format:  
   
-```  
+```console
 mefx [files and directories] [action] [options]  
 ```  
   
  The first set of arguments specify the files and directories from which to load parts for analysis. Specify a file with the `/file:` switch, and a directory with the `/directory:` switch. You can specify multiple files or directories, as shown in the following example:  
   
-```  
+```console  
 mefx /file:MyAddIn.dll /directory:Program\AddIns [action...]  
 ```  
   
 > [!NOTE]
->  Each .dll or .exe should only be loaded one time. If a file is loaded multiple times, the tool may return incorrect information.  
+> Each .dll or .exe should only be loaded one time. If a file is loaded multiple times, the tool may return incorrect information.  
   
  After the list of files and directories, you must specify a command, and any options for that command.  
   
@@ -39,7 +39,7 @@ mefx /file:MyAddIn.dll /directory:Program\AddIns [action...]
 ## Listing Available Parts  
  Use the `/parts` action to list all the parts declared in the files loaded. The result is a simple list of part names.  
   
-```  
+```console
 mefx /file:MyAddIn.dll /parts  
 MyAddIn.AddIn  
 MyAddIn.MemberPart  
@@ -47,7 +47,7 @@ MyAddIn.MemberPart
   
  For more information about the parts, use the `/verbose` option. This will output more information for all available parts. To get more information about a single part, use the `/type` action instead of `/parts`.  
   
-```  
+```console  
 mefx /file:MyAddIn.dll /type:MyAddIn.AddIn /verbose  
 [Part] MyAddIn.MemberPart from: AssemblyCatalog (Assembly=" MyAddIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")  
   [Export] MyAddIn.MemberPart (ContractName=" MyAddIn.MemberPart")  
@@ -57,7 +57,7 @@ mefx /file:MyAddIn.dll /type:MyAddIn.AddIn /verbose
 ## Listing Imports and Exports  
  The `/imports` and `/exports` actions will list all the imported parts and all the exported parts, respectively. You can also list the parts that import or export a particular type by using the `/importers` or `/exporters` actions.  
   
-```  
+```console  
 mefx /file:MyAddIn.dll /importers:MyAddin.MemberPart  
 MyAddin.AddIn  
 ```  
@@ -70,13 +70,13 @@ MyAddin.AddIn
   
  You can use the `/verbose` option with the `/rejected` action to print detailed information about rejected parts. In the following example, the `ClassLibrary1` DLL contains the `AddIn` part, which imports the `MemberPart` and `ChainOne` parts. `ChainOne` imports `ChainTwo`, but `ChainTwo` does not exist. This means that `ChainOne` is rejected, which causes `AddIn` to be rejected.  
   
-```  
+```console  
 mefx /file:ClassLibrary1.dll /rejected /verbose  
 ```  
   
  The following shows the complete output of the previous command:  
   
-```  
+```output
 [Part] ClassLibrary1.AddIn from: AssemblyCatalog (Assembly="ClassLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")  
   [Export] ClassLibrary1.AddIn (ContractName="ClassLibrary1.AddIn")  
   [Import] ClassLibrary1.AddIn.memberPart (ContractName="ClassLibrary1.MemberPart")  
@@ -108,7 +108,7 @@ from: ClassLibrary1.ChainOne from: AssemblyCatalog (Assembly="ClassLibrary1, Ver
  Using the `/causes` action on the previous example would list only information for `ChainOne`, whose unfilled import is the root cause of the rejection of `AddIn`. The `/causes` action can be used in both normal and `/verbose` options.  
   
 > [!NOTE]
->  In most cases, Mefx will be able to diagnose the root cause of a cascading failure. However, in cases where parts are added programmatically to a container, cases involving hierarchical containers, or cases involving custom `ExportProvider` implementations, Mefx will not be able to diagnose the cause. In general, the previously described cases should be avoided where possible, as failures are generally difficult to diagnose.  
+> In most cases, Mefx will be able to diagnose the root cause of a cascading failure. However, in cases where parts are added programmatically to a container, cases involving hierarchical containers, or cases involving custom `ExportProvider` implementations, Mefx will not be able to diagnose the cause. In general, the previously described cases should be avoided where possible, as failures are generally difficult to diagnose.  
   
 <a name="white_lists"></a>   
 ## White Lists  
@@ -116,7 +116,7 @@ from: ClassLibrary1.ChainOne from: AssemblyCatalog (Assembly="ClassLibrary1, Ver
   
  Consider a file named test.txt that contains the text "ClassLibrary1.ChainOne". If you run the `/rejected` action with the `/whitelist` option on the previous example, it will produce the following output:  
   
-```  
+```console
 mefx /file:ClassLibrary1.dll /rejected /whitelist:test.txt  
 [Unexpected] ClassLibrary1.AddIn  
 ClassLibrary1.ChainOne  

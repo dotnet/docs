@@ -11,7 +11,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
  This walkthrough was written by using Visual C# Development Settings.  
   
 ## Prerequisites  
- You must have completed [Walkthrough: Simple Object Model and Query (C#)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-csharp.md). This walkthrough builds on that one, including the presence of the northwnd.mdf file in c:\linqtest5.  
+ You must have completed [Walkthrough: Simple Object Model and Query (C#)](walkthrough-simple-object-model-and-query-csharp.md). This walkthrough builds on that one, including the presence of the northwnd.mdf file in c:\linqtest5.  
   
 ## Overview  
  This walkthrough consists of three main tasks:  
@@ -52,7 +52,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
 2. Press F5 to debug your application.  
   
     > [!NOTE]
-    >  You can eliminate the SQL code in the Console window by commenting out `db.Log = Console.Out;`.  
+    > You can eliminate the SQL code in the Console window by commenting out `db.Log = Console.Out;`.  
   
 3. Press Enter in the Console window to stop debugging.  
   
@@ -80,8 +80,8 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
 4. Press Enter in the console window to stop debugging.  
   
 ## Next Steps  
- The next walkthrough ([Walkthrough: Manipulating Data (C#)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp.md)) demonstrates how to manipulate data. That walkthrough does not require that you save the two walkthroughs in this series that you have already completed.  
+ The next walkthrough ([Walkthrough: Manipulating Data (C#)](walkthrough-manipulating-data-csharp.md)) demonstrates how to manipulate data. That walkthrough does not require that you save the two walkthroughs in this series that you have already completed.  
   
 ## See also
 
-- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+- [Learning by Walkthroughs](learning-by-walkthroughs.md)

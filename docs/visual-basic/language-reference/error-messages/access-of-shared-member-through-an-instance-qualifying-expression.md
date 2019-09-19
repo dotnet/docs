@@ -47,7 +47,7 @@ End Module
 ```  
   
 > [!NOTE]
->  Be alert for the effects of scope when two programming elements have the same name. In the previous example, if you declare an instance by using `Dim testClass as testClass = Nothing`, the compiler treats a call to `testClass.sayHello()` as an access of the method through the class name, and no warning occurs.  
+> Be alert for the effects of scope when two programming elements have the same name. In the previous example, if you declare an instance by using `Dim testClass as testClass = Nothing`, the compiler treats a call to `testClass.sayHello()` as an access of the method through the class name, and no warning occurs.  
   
 ## See also
 

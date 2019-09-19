@@ -25,7 +25,7 @@ The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated
   
 - A thread's COM apartment state is not what was requested. This may cause proxies to be used for COM components that have a threading model different from the current one. This in turn may cause an <xref:System.InvalidCastException> to be thrown when calling the COM object through interfaces that are not set up for cross-apartment marshaling.  
   
-- The COM apartment state of the thread is different than expected. This can cause a <xref:System.Runtime.InteropServices.COMException> with an HRESULT of RPC_E_WRONG_THREAD as well as a <xref:System.InvalidCastException> when making calls on a [Runtime Callable Wrapper](../../../docs/standard/native-interop/runtime-callable-wrapper.md) (RCW). This can also cause some single-threaded COM components to be accessed by multiple threads at the same time, which can lead to corruption or data loss.  
+- The COM apartment state of the thread is different than expected. This can cause a <xref:System.Runtime.InteropServices.COMException> with an HRESULT of RPC_E_WRONG_THREAD as well as a <xref:System.InvalidCastException> when making calls on a [Runtime Callable Wrapper](../../standard/native-interop/runtime-callable-wrapper.md) (RCW). This can also cause some single-threaded COM components to be accessed by multiple threads at the same time, which can lead to corruption or data loss.  
   
 ## Cause  
   
@@ -74,5 +74,5 @@ namespace ApartmentStateMDA
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

@@ -21,8 +21,8 @@ The *attribute-name* refers to the name (possibly qualified with namespaces) of 
 
 The *arguments* are the arguments to the constructor for the attribute type. If an attribute has a default constructor, the argument list and parentheses can be omitted. Attributes support both positional arguments and named arguments. *Positional arguments* are arguments that are used in the order in which they appear. Named arguments can be used if the attribute has public properties. You can set these by using the following syntax in the argument list.
 
-```
-*property-name* = *property-value*
+```fsharp
+property-name = property-value
 ```
 
 Such property initializations can be in any order, but they must follow any positional arguments. Following is an example of an attribute that uses positional arguments and property initializations.
@@ -64,35 +64,34 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
   <tr>
     <td>assembly</td>
-    <td><pre lang="fsharp"><code>[&lt;assembly: AssemblyVersionAttribute("1.0.0.0")&gt;]<code></pre></td> 
+    <td><pre lang="fsharp"><code>[&lt;assembly: AssemblyVersionAttribute("1.0.0.0")&gt;]</code></pre></td> 
   </tr>
   <tr>
     <td>return</td>
-    <td><pre lang="fsharp"><code>let function1 x : [&lt;return: Obsolete&gt;] int = x + 1<code></pre></td> 
+    <td><pre lang="fsharp"><code>let function1 x : [&lt;return: Obsolete&gt;] int = x + 1</code></pre></td> 
   </tr>
   <tr>
     <td>field</td>
-    <td><pre lang="fsharp"><code>[&lt;field: DefaultValue&gt;] val mutable x: int<code></pre></td> 
+    <td><pre lang="fsharp"><code>[&lt;field: DefaultValue&gt;] val mutable x: int</code></pre></td> 
   </tr>
   <tr>
     <td>property</td>
-    <td><pre lang="fsharp"><code>[&lt;property: Obsolete&gt;] this.MyProperty = x<code></pre></td> 
+    <td><pre lang="fsharp"><code>[&lt;property: Obsolete&gt;] this.MyProperty = x</code></pre></td> 
   </tr>
   <tr>
     <td>param</td>
-    <td><pre lang="fsharp"><code>member this.MyMethod([&lt;param: Out&gt;] x : ref&lt;int&gt;) = x := 10<code></pre></td> 
+    <td><pre lang="fsharp"><code>member this.MyMethod([&lt;param: Out&gt;] x : ref&lt;int&gt;) = x := 10</code></pre></td> 
   </tr>
   <tr>
     <td>type</td>
     <td>
         <pre lang="fsharp"><code>
-        [&lt;type: StructLayout(Sequential)&gt;] 
-        type MyStruct = 
-        struct 
-        x : byte
-        y : int
-        end
-        <code></pre>
+[&lt;type: StructLayout(Sequential)&gt;] 
+type MyStruct = 
+struct 
+x : byte
+y : int
+end</code></pre>
     </td>
   </tr>
 </table>

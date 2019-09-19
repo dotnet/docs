@@ -12,7 +12,7 @@ ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
 ---
 # UI Automation Events Overview
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] event notification is a key feature for assistive technologies such as screen readers and screen magnifiers. These UI Automation clients track events that are raised by UI Automation providers when something happens in the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] and use the information to notify end users.  
   
@@ -73,10 +73,10 @@ ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
   
  The <xref:System.Windows.Automation.AutomationEvent> objects used to identify events are obtained by providers from fields in <xref:System.Windows.Automation.AutomationElementIdentifiers> and control pattern identifier classes such as <xref:System.Windows.Automation.DockPatternIdentifiers>. The equivalent fields are obtained by client applications from fields in <xref:System.Windows.Automation.AutomationElement> and control pattern classes such as <xref:System.Windows.Automation.DockPattern>.  
   
- For a list of event identifiers, see [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md).  
+ For a list of event identifiers, see [UI Automation Events for Clients](ui-automation-events-for-clients.md).  
   
 ## See also
 
-- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
-- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
-- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)
+- [UI Automation Events for Clients](ui-automation-events-for-clients.md)
+- [Server-Side UI Automation Provider Implementation](server-side-ui-automation-provider-implementation.md)
+- [Subscribe to UI Automation Events](subscribe-to-ui-automation-events.md)

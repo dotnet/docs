@@ -83,7 +83,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
 1. Add the application's source code.
 
-   Open the *Program.cs* or file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
+   Open the *Program.cs* or *Program.vb* file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
    [!code-csharp[deployment#1](~/samples/snippets/core/deploying/cs/deployment-example.cs)]
    [!code-vb[deployment#1](~/samples/snippets/core/deploying/vb/deployment-example.vb)]
@@ -103,6 +103,8 @@ Deploying a self-contained deployment with no third-party dependencies involves 
    If you've enabled globalization invariant mode, be particularly sure to test whether the absence of culture-sensitive data is suitable for your application.
 
 Once you've finished debugging, you can publish your self-contained deployment:
+
+<!-- markdownlint-disable MD025 -->
 
 # [Visual Studio 15.6 and earlier](#tab/vs156)
 

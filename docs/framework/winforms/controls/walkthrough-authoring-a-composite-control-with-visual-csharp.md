@@ -1,6 +1,8 @@
 ---
 title: "Walkthrough: Authoring a Composite Control with Visual C#"
 ms.date: "03/30/2017"
+dev_langs:
+  - CSharp
 helpviewer_keywords:
   - "custom controls [C#]"
   - "user controls [Windows Forms], creating with Visual C#"
@@ -8,40 +10,38 @@ helpviewer_keywords:
   - "user controls [C#]"
   - "custom controls [Windows Forms], creating"
 ms.assetid: f88481a8-c746-4a36-9479-374ce5f2e91f
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ---
-# Walkthrough: Authoring a Composite Control with Visual C\#
+# Walkthrough: Author a Composite Control with C\#
 
 Composite controls provide a means by which custom graphical interfaces can be created and reused. A composite control is essentially a component with a visual representation. As such, it might consist of one or more Windows Forms controls, components, or blocks of code that can extend functionality by validating user input, modifying display properties, or performing other tasks required by the author. Composite controls can be placed on Windows Forms in the same manner as other controls. In the first part of this walkthrough, you create a simple composite control called `ctlClock`. In the second part of the walkthrough, you extend the functionality of `ctlClock` through inheritance.
 
-> [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
-
-## Creating the Project
+## Create the Project
 
 When you create a new project, you specify its name to set the root namespace, assembly name, and project name, and ensure that the default component will be in the correct namespace.
 
 ### To create the ctlClockLib control library and the ctlClock control
 
-1. On the **File** menu, point to **New**, and then click **Project** to open the **New Project** dialog box.
-
-2. From the list of Visual C# projects, select the **Windows Forms Control Library** project template, type `ctlClockLib` in the **Name** box, and then click **OK**.
+1. In Visual Studio, create a new **Windows Forms Control Library** project, and name it **ctlClockLib**.
 
      The project name, `ctlClockLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ctlClock`, you can specify your `ctlClock` component using `ctlClockLib.ctlClock.`
 
-3. In Solution Explorer, right-click **UserControl1.cs**, and then click **Rename**. Change the file name to `ctlClock.cs`. Click the **Yes** button when you are asked if you want to rename all references to the code element "UserControl1".
+2. In **Solution Explorer**, right-click **UserControl1.cs**, and then click **Rename**. Change the file name to `ctlClock.cs`. Click the **Yes** button when you are asked if you want to rename all references to the code element "UserControl1".
 
     > [!NOTE]
     > By default, a composite control inherits from the <xref:System.Windows.Forms.UserControl> class provided by the system. The <xref:System.Windows.Forms.UserControl> class provides functionality required by all composite controls, and implements standard methods and properties.
 
-4. On the **File** menu, click **Save All** to save the project.
+3. On the **File** menu, click **Save All** to save the project.
 
-## Adding Windows Controls and Components to the Composite Control
+## Add Windows Controls and Components to the Composite Control
 
 A visual interface is an essential part of your composite control. This visual interface is implemented by the addition of one or more Windows controls to the designer surface. In the following demonstration, you will incorporate Windows controls into your composite control and write code to implement functionality.
 
 ### To add a Label and a Timer to your composite control
 
-1. In Solution Explorer, right-click **ctlClock.cs**, and then click **View Designer**.
+1. In **Solution Explorer**, right-click **ctlClock.cs**, and then click **View Designer**.
 
 2. In the **Toolbox**, expand the **Common Controls** node, and then double-click **Label**.
 
@@ -86,13 +86,13 @@ A visual interface is an essential part of your composite control. This visual i
 
 9. On the **File** menu, click **Save All** to save the project.
 
-## Adding Properties to the Composite Control
+## Add Properties to the Composite Control
 
 Your clock control now encapsulates a <xref:System.Windows.Forms.Label> control and a <xref:System.Windows.Forms.Timer> component, each with its own set of inherent properties. While the individual properties of these controls will not be accessible to subsequent users of your control, you can create and expose custom properties by writing the appropriate blocks of code. In the following procedure, you will add properties to your control that enable the user to change the color of the background and text.
 
 ### To add a property to your composite control
 
-1. In Solution Explorer, right-click **ctlClock.cs**, and then click **View Code**.
+1. In **Solution Explorer**, right-click **ctlClock.cs**, and then click **View Code**.
 
      The **Code Editor** for your control opens.
 
@@ -105,7 +105,7 @@ Your clock control now encapsulates a <xref:System.Windows.Forms.Label> control 
 
      These statements create the private variables that you will use to store the values for the properties you are about to create.
 
-3. Type the following code beneath the variable declarations from step 2.
+3. Enter or paste the following code beneath the variable declarations from step 2.
 
     ```csharp
     // Declares the name and type of the property.
@@ -143,25 +143,25 @@ Your clock control now encapsulates a <xref:System.Windows.Forms.Label> control 
 
 4. On the **File** menu, click **Save All** to save the project.
 
-## Testing the Control
+## Test the Control
 
 Controls are not stand-alone applications; they must be hosted in a container. Test your control's run-time behavior and exercise its properties with the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).
 
 ### To test your control
 
-1. Press F5 to build the project and run your control in the **UserControl Test Container**.
+1. Press **F5** to build the project and run your control in the **UserControl Test Container**.
 
 2. In the test container's property grid, locate the `ClockBackColor` property, and then select the property to display the color palette.
 
 3. Choose a color by clicking it.
 
-     The background color of your control changes to the color you selected.
+   The background color of your control changes to the color you selected.
 
 4. Use a similar sequence of events to verify that the `ClockForeColor` property is functioning as expected.
 
-     In this section and the preceding sections, you have seen how components and Windows controls can be combined with code and packaging to provide custom functionality in the form of a composite control. You have learned to expose properties in your composite control, and how to test your control after it is complete. In the next section you will learn how to construct an inherited composite control using `ctlClock` as a base.
+   In this section and the preceding sections, you have seen how components and Windows controls can be combined with code and packaging to provide custom functionality in the form of a composite control. You have learned to expose properties in your composite control, and how to test your control after it is complete. In the next section you will learn how to construct an inherited composite control using `ctlClock` as a base.
 
-## Inheriting from a Composite Control
+## Inherit from a Composite Control
 
 In the previous sections, you learned how to combine Windows controls, components, and code into reusable composite controls. Your composite control can now be used as a base upon which other controls can be built. The process of deriving a class from a base class is called *inheritance*. In this section, you will create a composite control called `ctlAlarmClock`. This control will be derived from its parent control, `ctlClock`. You will learn to extend the functionality of `ctlClock` by overriding parent methods and adding new methods and properties.
 
@@ -169,7 +169,7 @@ The first step in creating an inherited control is to derive it from its parent.
 
 ### To create the inherited control
 
-1. In Solution Explorer, right-click **ctlClockLib**, point to **Add**, and then click **User Control**.
+1. In **Solution Explorer**, right-click **ctlClockLib**, point to **Add**, and then click **User Control**.
 
      The **Add New Item** dialog box opens.
 
@@ -181,18 +181,18 @@ The first step in creating an inherited control is to derive it from its parent.
 
 4. Under **Component Name**, double-click **ctlClock**.
 
-5. In Solution Explorer, browse through the current projects.
+5. In **Solution Explorer**, browse through the current projects.
 
     > [!NOTE]
-    >  A file called **ctlAlarmClock.cs** has been added to the current project.
+    > A file called **ctlAlarmClock.cs** has been added to the current project.
 
-### Adding the Alarm Properties
+### Add the Alarm Properties
 
 Properties are added to an inherited control in the same way they are added to a composite control. You will now use the property declaration syntax to add two properties to your control: `AlarmTime`, which will store the value of the date and time the alarm is to go off, and `AlarmSet`, which will indicate whether the alarm is set.
 
 #### To add properties to your composite control
 
-1. In Solution Explorer, right-click **ctlAlarmClock**, and then click **View Code**.
+1. In **Solution Explorer**, right-click **ctlAlarmClock**, and then click **View Code**.
 
 2. Locate the `public class` statement. Note that your control inherits from `ctlClockLib.ctlClock`. Beneath the opening brace (`{)` statement, type the following code.
 
@@ -225,13 +225,13 @@ Properties are added to an inherited control in the same way they are added to a
     }
     ```
 
-### Adding to the Graphical Interface of the Control
+### Add to the Graphical Interface of the Control
 
 Your inherited control has a visual interface that is identical to the control it inherits from. It possesses the same constituent controls as its parent control, but the properties of the constituent controls will not be available unless they were specifically exposed. You may add to the graphical interface of an inherited composite control in the same manner as you would add to any composite control. To continue adding to your alarm clock's visual interface, you will add a label control that will flash when the alarm is sounding.
 
 #### To add the label control
 
-1. In Solution Explorer, right-click **ctlAlarmClock**, and then click **View Designer**.
+1. In **Solution Explorer**, right-click **ctlAlarmClock**, and then click **View Designer**.
 
      The designer for `ctlAlarmClock` opens in the main window.
 
@@ -254,7 +254,7 @@ Your inherited control has a visual interface that is identical to the control i
     |**TextAlign**|`MiddleCenter`|
     |**Visible**|`false`|
 
-### Adding the Alarm Functionality
+### Add the Alarm Functionality
 
 In the previous procedures, you added properties and a control that will enable alarm functionality in your composite control. In this procedure, you will add code to compare the current time to the alarm time and, if they are the same, to flash an alarm. By overriding the `timer1_Tick` method of `ctlClock` and adding additional code to it, you will extend the capability of `ctlAlarmClock` while retaining all of the inherent functionality of `ctlClock`.
 
@@ -314,7 +314,7 @@ In the previous procedures, you added properties and a control that will enable 
 
 #### To implement the shutoff method
 
-1. In Solution Explorer, right-click **ctlAlarmClock.cs**, and then click **View Designer**.
+1. In **Solution Explorer**, right-click **ctlAlarmClock.cs**, and then click **View Designer**.
 
      The designer opens.
 
@@ -343,21 +343,21 @@ In the previous procedures, you added properties and a control that will enable 
 
 5. On the **File** menu, click **Save All** to save the project.
 
-### Using the Inherited Control on a Form
+### Use the Inherited Control on a Form
 
-You can test your inherited control the same way you tested the base class control, `ctlClock`: Press F5 to build the project and run your control in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).
+You can test your inherited control the same way you tested the base class control, `ctlClock`: Press **F5** to build the project and run your control in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).
 
 To put your control to use, you will need to host it on a form. As with a standard composite control, an inherited composite control cannot stand alone and must be hosted in a form or other container. Since `ctlAlarmClock` has a greater depth of functionality, additional code is required to test it. In this procedure, you will write a simple program to test the functionality of `ctlAlarmClock`. You will write code to set and display the `AlarmTime` property of `ctlAlarmClock`, and will test its inherent functions.
 
 #### To build and add your control to a test form
 
-1. In Solution Explorer, right-click **ctlClockLib**, and then click **Build**.
+1. In **Solution Explorer**, right-click **ctlClockLib**, and then click **Build**.
 
-2. Add a new **Windows Application** project to the solution, and name it `Test`.
+2. Add a new **Windows Application** project to the solution, and name it **Test**.
 
-3. In Solution Explorer, right-click the **References** node for your test project. Click **Add Reference** to display the **Add Reference** dialog box. Click the tab labeled **Projects**. Your `ctlClockLib` project will be listed under **Project Name**. Double-click the project to add the reference to the test project.
+3. In **Solution Explorer**, right-click the **References** node for your test project. Click **Add Reference** to display the **Add Reference** dialog box. Click the tab labeled **Projects**. Your `ctlClockLib` project will be listed under **Project Name**. Double-click the project to add the reference to the test project.
 
-4. In Solution Explorer, right-click **Test**, and then click **Build**.
+4. In **Solution Explorer**, right-click **Test**, and then click **Build**.
 
 5. In the **Toolbox**, expand the **ctlClockLib Components** node.
 
@@ -392,7 +392,7 @@ To put your control to use, you will need to host it on a form. As with a standa
     }
     ```
 
-12. In Solution Explorer, right-click **Test**, and then click **Set as StartUp Project**.
+12. In **Solution Explorer**, right-click **Test**, and then click **Set as StartUp Project**.
 
 13. On the **Debug** menu, click **Start Debugging**.
 
@@ -406,7 +406,7 @@ To put your control to use, you will need to host it on a form. As with a standa
 
 16. Turn off the alarm by clicking `btnAlarmOff`. You may now reset the alarm.
 
-     This walkthrough has covered a number of key concepts. You have learned to create a composite control by combining controls and components into a composite control container. You have learned to add properties to your control, and to write code to implement custom functionality. In the last section, you learned to extend the functionality of a given composite control through inheritance, and to alter the functionality of host methods by overriding those methods.
+This article has covered a number of key concepts. You have learned to create a composite control by combining controls and components into a composite control container. You have learned to add properties to your control, and to write code to implement custom functionality. In the last section, you learned to extend the functionality of a given composite control through inheritance, and to alter the functionality of host methods by overriding those methods.
 
 ## See also
 

@@ -21,11 +21,11 @@ Typically, serializing a <xref:System.TimeZoneInfo> object occurs apart from the
 
 In addition to a resource file that is compiled with the application, several other data stores can be used for time zone information. These include the following:
 
-* The registry. Note that an application should use the subkeys of its own application key to store custom time zone data rather than using the subkeys of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones.
+- The registry. Note that an application should use the subkeys of its own application key to store custom time zone data rather than using the subkeys of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones.
 
-* Configuration files.
+- Configuration files.
 
-* Other system files.
+- Other system files.
 
 ### To save a time zone by serializing it to a .resx file
 
@@ -70,9 +70,9 @@ The key (or **Name**) fields of resources should not contain embedded spaces. Th
 
 This example requires:
 
-* That a reference to System.Windows.Forms.dll and System.Core.dll be added to the project.
+- That a reference to System.Windows.Forms.dll and System.Core.dll be added to the project.
 
-* That the following namespaces be imported:
+- That the following namespaces be imported:
 
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]

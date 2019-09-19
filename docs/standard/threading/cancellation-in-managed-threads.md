@@ -25,7 +25,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
 - Call the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to provide notification of cancellation.  
   
 > [!IMPORTANT]
->  The <xref:System.Threading.CancellationTokenSource> class implements the <xref:System.IDisposable> interface. You should be sure to call the <xref:System.Threading.CancellationTokenSource.Dispose%2A?displayProperty=nameWithType> method when you have finished using the cancellation token source to free any unmanaged resources it holds.  
+> The <xref:System.Threading.CancellationTokenSource> class implements the <xref:System.IDisposable> interface. You should be sure to call the <xref:System.Threading.CancellationTokenSource.Dispose%2A?displayProperty=nameWithType> method when you have finished using the cancellation token source to free any unmanaged resources it holds.  
   
  The following illustration shows the relationship between a token source and all the copies of its token.  
   
@@ -60,7 +60,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
  In the following example, the requesting object creates a <xref:System.Threading.CancellationTokenSource> object, and then passes its <xref:System.Threading.CancellationTokenSource.Token%2A> property to the cancelable operation. The operation that receives the request monitors the value of the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property of the token by polling. When the value becomes `true`, the listener can terminate in whatever manner is appropriate. In this example, the method just exits, which is all that is required in many cases.  
   
 > [!NOTE]
->  The example uses the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> method to demonstrate that the new cancellation framework is compatible with legacy APIs. For an example that uses the new, preferred <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> type, see [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md).  
+> The example uses the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> method to demonstrate that the new cancellation framework is compatible with legacy APIs. For an example that uses the new, preferred <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> type, see [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md).  
   
  [!code-csharp[Cancellation#1](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex1.cs#1)]
  [!code-vb[Cancellation#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex1.vb#1)]  

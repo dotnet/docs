@@ -6,19 +6,22 @@ dev_langs:
   - "vb"
 author: thraka
 ms.author: adegeo
-ms.date: 07/25/2019
+ms.date: 09/17/2019
 ---
 
-# What's new in .NET Core 3.0 (Preview 7)
+# What's new in .NET Core 3.0 (Release Candidate 1)
 
-This article describes what is new in .NET Core 3.0 (through preview 7). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
+This article describes what is new in .NET Core 3.0 through Release Candidate 1 (RC1). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
 
-.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use the [latest release of Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+preview), or Visual Studio Code with the OmniSharp extension.
+.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use [Visual Studio 2019 16.3 Preview 4](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+preview), [Visual Studio for Mac 8.3](https://docs.microsoft.com/visualstudio/mac/install-preview?view=vsmac-2019), or [Visual Studio Code](https://code.visualstudio.com/) with the **C# extension**.
 
-[Download and get started with .NET Core 3.0 preview 7](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
+[Download and get started with .NET Core 3.0 RC1](https://aka.ms/netcore3download) right now on Windows, macOS, or Linux.
 
 For more information about each preview release, see the following announcements:
 
+- [.NET Core 3.0 RC1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-release-candidate-1/)
+- [.NET Core 3.0 Preview 9 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-9/)
+- [.NET Core 3.0 Preview 8 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-8/)
 - [.NET Core 3.0 Preview 7 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-7/)
 - [.NET Core 3.0 Preview 6 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-6/)
 - [.NET Core 3.0 Preview 5 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-5/)
@@ -29,7 +32,9 @@ For more information about each preview release, see the following announcements
 
 ## Production supported preview
 
-.NET Core Preview 7 is considered production ready by Microsoft and is fully supported. Starting with preview 7, releases will focus on polishing .NET Core 3.0 instead of adding new features. For more information about what has changed in preview 7, see the [preview 7 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-7/).
+.NET Core RC1 is considered production ready by Microsoft and is fully supported. Starting with preview 7, releases will focus on polishing .NET Core 3.0 instead of adding new features. For more information about what has changed in RC1, see the [RC1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-release-candidate-1/).
+
+If you're using a previous preview release, you must move to RC1 for continued "Go Live" support.
 
 ## .NET Core SDK Windows Installer
 
@@ -47,11 +52,11 @@ Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet ne
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
- 
+
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
- 
+
 </Project>
 ```
 
@@ -86,7 +91,7 @@ System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runt
 
 ## .NET Platform-Dependent Intrinsics
 
-APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve significant performance improvements in certain scenarios, such as processing data efficiently in parallel. 
+APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve significant performance improvements in certain scenarios, such as processing data efficiently in parallel.
 
 Where appropriate, the .NET libraries have begun using these instructions to improve performance.
 
@@ -98,8 +103,8 @@ For more information, see [.NET Platform Dependent Intrinsics](https://github.co
 
 During `dotnet build` or `dotnet publish`, an executable is created that matches the environment and platform of the SDK you're using. You can expect the same things with these executables as you would other native executables, such as:
 
-* You can double-click on the executable.
-* You can launch the application from a command prompt directly, such as `myapp.exe` on Windows, and `./myapp` on Linux and macOS.
+- You can double-click on the executable.
+- You can launch the application from a command prompt directly, such as `myapp.exe` on Windows, and `./myapp` on Linux and macOS.
 
 ## Single-file executables
 
@@ -116,7 +121,7 @@ To publish a single-file executable, set the `PublishSingleFile` in your project
 
 -or-
 
-```console
+```dotnetcli
 dotnet publish -r win10-x64 /p:PublishSingleFile=true
 ```
 
@@ -138,7 +143,7 @@ To enable this tool, add the `<PublishTrimmed>` setting in your project and publ
 </PropertyGroup>
 ```
 
-```console
+```dotnetcli
 dotnet publish -r <rid> -c Release
 ```
 
@@ -154,7 +159,7 @@ For more information about the IL Linker tool, see the [documentation](https://a
 
 [Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) (TC) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance.
 
-The main benefit of TC is to enable (re-)jitting methods with slower-but-faster to produce code or higher-quality-but-slower to produce code. This helps increase performance of an application as it goes through various stages of execution, from startup through steady-state. This contrasts with the non-TC approach, where every method is compiled a single way (the same as the high-quality tier), which is biased to steady-state over startup performance.
+The main benefit of TC is to enable (re-)jitting methods with a lower-quality-but-faster tier or a higher-quality-but-slower tier. This helps increase performance of an application as it goes through various stages of execution, from startup through steady-state. This contrasts with the non-TC approach, where every method is compiled a single way (the same as the high-quality tier), which is biased to steady-state over startup performance.
 
 To enable Quick JIT (tier 0 jitted code), use this setting in your project file:
 
@@ -188,7 +193,7 @@ To compile your project as ReadyToRun, do the following:
 
 01. Publish a self-contained app. For example, this command creates a self-contained app for the 64-bit version of Windows:
 
-    ```console
+    ```dotnetcli
     dotnet publish -c Release -r win-x64 --self-contained true
     ```
 
@@ -257,7 +262,7 @@ The Windows Desktop component is part of the Windows .NET Core 3.0 SDK.
 
 You can create a new WPF or Windows Forms app with the following `dotnet` commands:
 
-```console
+```dotnetcli
 dotnet new wpf
 dotnet new winforms
 ```
@@ -286,21 +291,21 @@ The .NET Core project file must specify the supported runtimes in the `<RuntimeI
 <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
 ```
 
-## WinForms HighDPI
+## WinForms high DPI
 
-.NET Core Windows Forms applications can set High DPI mode with <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)?displayProperty=nameWithType>. The `SetHighDpiMode` method sets the corresponding High DPI mode unless the setting has been set by other means like `App.Manifest` or P/Invoke before `Application.Run`.
+.NET Core Windows Forms applications can set high DPI mode with <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)?displayProperty=nameWithType>. The `SetHighDpiMode` method sets the corresponding high DPI mode unless the setting has been set by other means like `App.Manifest` or P/Invoke before `Application.Run`.
 
 The possible `highDpiMode` values, as expressed by the <xref:System.Windows.Forms.HighDpiMode?displayProperty=nameWithType> enum are:
 
-* `DpiUnaware`
-* `SystemAware`
-* `PerMonitor`
-* `PerMonitorV2`
-* `DpiUnawareGdiScaled`
+- `DpiUnaware`
+- `SystemAware`
+- `PerMonitor`
+- `PerMonitorV2`
+- `DpiUnawareGdiScaled`
 
-For more information about High DPI modes, see [High DPI Desktop Application Development on Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows).
+For more information about high DPI modes, see [High DPI Desktop Application Development on Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows).
 
-### Ranges and indices
+## Ranges and indices
 
 The new <xref:System.Index?displayProperty=nameWithType> type can be used for indexing. You can create one from an `int` that counts from the beginning, or with a prefix `^` operator (C#) that counts from the end:
 
@@ -319,7 +324,7 @@ var slice = a[i1..i2]; // { 3, 4, 5 }
 
 For more information, see the [ranges and indices tutorial](../../csharp/tutorials/ranges-indexes.md).
 
-### Async streams
+## Async streams
 
 The <xref:System.Collections.Generic.IAsyncEnumerable%601> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable%601>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
 
@@ -330,7 +335,7 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 {
     await foreach (var result in GetResultsAsync())
     {
-        if (result > 20) yield return result; 
+        if (result > 20) yield return result;
     }
 }
 ```
@@ -345,31 +350,31 @@ Floating point APIs are being updated to comply with [IEEE 754-2008 revision](ht
 
 Parsing and formatting fixes include:
 
-* Correctly parse and round inputs of any length.
-* Correctly parse and format negative zero.
-* Correctly parse `Infinity` and `NaN` by doing a case-insensitive check and allowing an optional preceding `+` where applicable.
+- Correctly parse and round inputs of any length.
+- Correctly parse and format negative zero.
+- Correctly parse `Infinity` and `NaN` by doing a case-insensitive check and allowing an optional preceding `+` where applicable.
 
 New <xref:System.Math?displayProperty=nameWithType> APIs include:
 
-* <xref:System.Math.BitIncrement(System.Double)> and <xref:System.Math.BitDecrement(System.Double)>\
+- <xref:System.Math.BitIncrement(System.Double)> and <xref:System.Math.BitDecrement(System.Double)>\
 Corresponds to the `nextUp` and `nextDown` IEEE operations. They return the smallest floating-point number that compares greater or lesser than the input (respectively). For example, `Math.BitIncrement(0.0)` would return `double.Epsilon`.
 
-* <xref:System.Math.MaxMagnitude(System.Double,System.Double)> and <xref:System.Math.MinMagnitude(System.Double,System.Double)>\
+- <xref:System.Math.MaxMagnitude(System.Double,System.Double)> and <xref:System.Math.MinMagnitude(System.Double,System.Double)>\
 Corresponds to the `maxNumMag` and `minNumMag` IEEE operations, they return the value that is greater or lesser in magnitude of the two inputs (respectively). For example, `Math.MaxMagnitude(2.0, -3.0)` would return `-3.0`.
 
-* <xref:System.Math.ILogB(System.Double)>\
+- <xref:System.Math.ILogB(System.Double)>\
 Corresponds to the `logB` IEEE operation that returns an integral value, it returns the integral base-2 log of the input parameter. This method is effectively the same as `floor(log2(x))`, but done with minimal rounding error.
 
-* <xref:System.Math.ScaleB(System.Double,System.Int32)>\
+- <xref:System.Math.ScaleB(System.Double,System.Int32)>\
 Corresponds to the `scaleB` IEEE operation that takes an integral value, it returns effectively `x * pow(2, n)`, but is done with minimal rounding error.
 
-* <xref:System.Math.Log2(System.Double)>\
+- <xref:System.Math.Log2(System.Double)>\
 Corresponds to the `log2` IEEE operation, it returns the base-2 logarithm. It minimizes rounding error.
 
-* <xref:System.Math.FusedMultiplyAdd(System.Double,System.Double,System.Double)>\
-Corresponds to the `fma` IEEE operation, it performs a fused multiply add. That is, it does `(x * y) + z` as a single operation, there-by minimizing the rounding error. An example would be `FusedMultiplyAdd(1e308, 2.0, -1e308)` which returns `1e308`. The regular `(1e308 * 2.0) - 1e308` returns `double.PositiveInfinity`.
+- <xref:System.Math.FusedMultiplyAdd(System.Double,System.Double,System.Double)>\
+Corresponds to the `fma` IEEE operation, it performs a fused multiply add. That is, it does `(x * y) + z` as a single operation, thereby minimizing the rounding error. An example would be `FusedMultiplyAdd(1e308, 2.0, -1e308)` which returns `1e308`. The regular `(1e308 * 2.0) - 1e308` returns `double.PositiveInfinity`.
 
-* <xref:System.Math.CopySign(System.Double,System.Double)>\
+- <xref:System.Math.CopySign(System.Double,System.Double)>\
 Corresponds to the `copySign` IEEE operation, it returns the value of `x`, but with the sign of `y`.
 
 ## Fast built-in JSON support
@@ -398,17 +403,15 @@ Here is an example of reading through the [**launch.json**](https://github.com/d
 
 Here is a sample usage of the `JsonDocument` and `JsonElement` that can be used as a starting point:
 
-Here is a C# 8.0 example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/snippets/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
-
 [!CODE-csharp[JsonDocument](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#ReadJson)]
+
+Here is a C# 8.0 example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/snippets/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
 
 [!CODE-csharp[JsonDocument](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#ReadJsonCall)]
 
 ### JsonSerializer
 
-<xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> is built on top of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> to provide a fast low-memory serialization option when working with JSON documents and fragments.
-
-EXAMINE: https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/docs/SerializerProgrammingModel.md for an example to port to this article
+<xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> is built on top of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> to provide a fast, low-memory serialization option when working with JSON documents and fragments.
 
 Here is an example of serializing an object to JSON:
 
@@ -424,7 +427,7 @@ Here is an example of deserializing a JSON string to an object. You can use the 
 
 ### Type: NativeLibrary
 
-<xref:System.Runtime.InteropServices.NativeLibrary?displayProperty=nameWithType> provides an encapsulation for loading a native library (using the same load logic as .NET Core P/Invoke) and providing the relevant helper functions such as `getSymbol`. For a code example, see the [DLLMap Demo](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin).
+<xref:System.Runtime.InteropServices.NativeLibrary?displayProperty=nameWithType> provides an encapsulation for loading a native library (using the same load logic as .NET Core P/Invoke) and providing the relevant helper functions such as `getSymbol`. For a code example, see the [DLLMap Demo](https://github.com/dotnet/samples/tree/master/core/extensions/DllMapDemo).
 
 ### Windows Native Interop
 
@@ -450,8 +453,8 @@ Many times when you're developing an application, you want to use an unencrypted
 
 .NET Core now takes advantage of [TLS 1.3 support in OpenSSL 1.1.1](https://www.openssl.org/blog/blog/2018/09/11/release111/), when it's available in a given environment. With TLS 1.3:
 
-* Connection times are improved with reduced round trips required between the client and server.
-* Improved security because of the removal of various obsolete and insecure cryptographic algorithms.
+- Connection times are improved with reduced round trips required between the client and server.
+- Improved security because of the removal of various obsolete and insecure cryptographic algorithms.
 
 When available, .NET Core 3.0 uses **OpenSSL 1.1.1**, **OpenSSL 1.1.0**, or **OpenSSL 1.0.2** on a Linux system. When **OpenSSL 1.1.1** is available, both <xref:System.Net.Security.SslStream?displayProperty=nameWithType> and <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> types will use **TLS 1.3** (assuming both the client and server support **TLS 1.3**).
 
@@ -476,20 +479,20 @@ The following code demonstrates using `AesGcm` cipher to encrypt and decrypt ran
 
 All key types, such as *RSA*, *DSA*, *ECDsa*, and *ECDiffieHellman*, support the following formats:
 
-* **Public Key**
-  * X.509 SubjectPublicKeyInfo
+- **Public Key**
+  - X.509 SubjectPublicKeyInfo
 
-* **Private key**
-  * PKCS#8 PrivateKeyInfo
-  * PKCS#8 EncryptedPrivateKeyInfo
+- **Private key**
+  - PKCS#8 PrivateKeyInfo
+  - PKCS#8 EncryptedPrivateKeyInfo
 
 RSA keys also support:
 
-* **Public Key**
-  * PKCS#1 RSAPublicKey
+- **Public Key**
+  - PKCS#1 RSAPublicKey
 
-* **Private key**
-  * PKCS#1 RSAPrivateKey
+- **Private key**
+  - PKCS#1 RSAPrivateKey
 
 The export methods produce DER-encoded binary data, and the import methods expect the same. If a key is stored in the text-friendly PEM format, the caller will need to base64-decode the content before calling an import method.
 
@@ -499,17 +502,19 @@ The export methods produce DER-encoded binary data, and the import methods expec
 
 ## SerialPort for Linux
 
-.NET Core 3.0 supports <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> on Linux.
+.NET Core 3.0 provides basic support for <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> on Linux.
 
 Previously, .NET Core only supported using `SerialPort` on Windows.
+
+For more information about the limited support for the serial port on Linux, see [GitHub issue #33146](https://github.com/dotnet/corefx/issues/33146).
 
 ## Docker and cgroup memory Limits
 
 Starting with Preview 3, running .NET Core 3.0 on Linux with Docker works better with cgroup memory limits. Running a Docker container with memory limits, such as with `docker run -m`, changes how .NET Core behaves.
 
-* Default Garbage Collector (GC) heap size: maximum of 20 mb or 75% of the memory limit on the container.
-* Explicit size can be set as an absolute number or percentage of cgroup limit.
-* Minimum reserved segment size per GC heap is 16 mb. This size reduces the number of heaps that are created on machines.
+- Default Garbage Collector (GC) heap size: maximum of 20 mb or 75% of the memory limit on the container.
+- Explicit size can be set as an absolute number or percentage of cgroup limit.
+- Minimum reserved segment size per GC heap is 16 mb. This size reduces the number of heaps that are created on machines.
 
 ## Smaller Garbage Collection heap sizes
 
@@ -525,8 +530,8 @@ The Garbage Collector can now be configured with the **GCLargePages** setting as
 
 Two packages have been released to NuGet that you can use for GPIO programming:
 
-* [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio)
-* [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings)
+- [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio)
+- [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings)
 
 The GPIO packages include APIs for *GPIO*, *SPI*, *I2C*, and *PWM* devices. The IoT bindings package includes device bindings. For more information, see the [devices GitHub repo](https://github.com/dotnet/iot/blob/master/src/devices/).
 

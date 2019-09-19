@@ -187,7 +187,7 @@ public class GracePeriodManagerService : BackgroundService
             _logger.LogDebug($"GracePeriod task doing background work.");
 
             // This eShopOnContainers method is querying a database table
-            // and publishing events into the Event Bus (RabbitMS / ServiceBus)
+            // and publishing events into the Event Bus (RabbitMQ / ServiceBus)
             CheckConfirmedGracePeriodOrders();
 
             await Task.Delay(_settings.CheckUpdateTime, stoppingToken);
@@ -230,16 +230,16 @@ But even for a `WebHost` deployed into an app pool, there are scenarios like rep
 
 The `IHostedService` interface provides a convenient way to start background tasks in an ASP.NET Core web application (in .NET Core 2.0) or in any process/host (starting in .NET Core 2.1 with `IHost`). Its main benefit is the opportunity you get with the graceful cancellation to clean-up code of your background tasks when the host itself is shutting down.
 
-#### Additional resources
+## Additional resources
 
-- **Building a scheduled task in ASP.NET Core/Standard 2.0** <br/>
-    <https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html>
+- **Building a scheduled task in ASP.NET Core/Standard 2.0**  
+  <https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html>
 
-- **Implementing IHostedService in ASP.NET Core 2.0** <br/>
-    <https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice>
+- **Implementing IHostedService in ASP.NET Core 2.0**  
+  <https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice>
 
-- **GenericHost Sample using ASP.NET Core 2.1** <br/>
-    <https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample>
+- **GenericHost Sample using ASP.NET Core 2.1**  
+  <https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample>
 
 >[!div class="step-by-step"]
 >[Previous](test-aspnet-core-services-web-apps.md)

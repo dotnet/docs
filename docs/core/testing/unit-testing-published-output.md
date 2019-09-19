@@ -10,7 +10,7 @@ ms.custom: "seodec18"
 
 You can run tests on already published output by using the `dotnet vstest` command. This will work on xUnit, MSTest, and NUnit tests. Simply locate the DLL file that was part of your published output and run:
 
-```
+```dotnetcli
 dotnet vstest <MyPublishedTests>.dll
 ```
 
@@ -20,7 +20,7 @@ Where `<MyPublishedTests>` is the name of your published test project.
 
 The commands below demonstrate running tests on a published DLL.
 
-```
+```dotnetcli
 dotnet new mstest -o MyProject.Tests
 cd MyProject.Tests
 dotnet publish -o out

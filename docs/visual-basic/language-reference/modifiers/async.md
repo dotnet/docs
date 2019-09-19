@@ -14,7 +14,7 @@ The `Async` modifier indicates that the method or [lambda expression](../../../v
  An async method provides a convenient way to do potentially long-running work without blocking the caller's thread. The caller of an async method can resume its work without waiting for the async method to finish.  
   
 > [!NOTE]
->  The `Async` and `Await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md).  
+> The `Async` and `Await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md).  
   
  The following example shows the structure of an async method. By convention, async method names end in "Async."  
   

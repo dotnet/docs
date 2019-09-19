@@ -37,7 +37,7 @@ HRESULT CreateApplicationContext (
  [out] A pointer to an application context.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -47,6 +47,6 @@ HRESULT CreateApplicationContext (
   
 ## See also
 
-- [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
-- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)
+- [IAssemblyCache Interface](iassemblycache-interface.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)
+- [Global Assembly Cache](../../app-domains/gac.md)

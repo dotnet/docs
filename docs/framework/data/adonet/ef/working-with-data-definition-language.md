@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: ec50083d-44f4-4093-9b23-5eacd601f96e
 ---
 # Working with Data Definition Language
-Starting with the .NET Framework version 4, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports data definition language (DDL). This allows you to create or delete a database instance based on the connection string and the metadata of the storage (SSDL) model.  
+Starting with the .NET Framework version 4, the Entity Framework supports data definition language (DDL). This allows you to create or delete a database instance based on the connection string and the metadata of the storage (SSDL) model.  
   
  The following methods on the <xref:System.Data.Objects.ObjectContext> use the connection string and the SSDL content to accomplish the following: create or delete the database, check whether the database exists, and view the generated DDL script:  
   
@@ -20,7 +20,7 @@ Starting with the .NET Framework version 4, the [!INCLUDE[adonet_ef](../../../..
 - <xref:System.Data.Objects.ObjectContext.CreateDatabaseScript%2A>  
   
 > [!NOTE]
->  Executing the DDL commands assumes sufficient permissions.  
+> Executing the DDL commands assumes sufficient permissions.  
   
  The methods previously listed delegate most of the work to the underlying ADO.NET data provider. It is the provider’s responsibility to ensure that the naming convention used to generate database objects is consistent with conventions used for querying and updates.  
   

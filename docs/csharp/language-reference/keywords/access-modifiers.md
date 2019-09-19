@@ -31,17 +31,17 @@ Access modifiers are keywords used to specify the declared accessibility of a me
   
  This section also introduces the following:  
   
-- [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md): Using the four access modifiers to declare six levels of accessibility.  
+- [Accessibility Levels](./accessibility-levels.md): Using the four access modifiers to declare six levels of accessibility.  
   
-- [Accessibility Domain](../../../csharp/language-reference/keywords/accessibility-domain.md): Specifies where, in the program sections, a member can be referenced.  
+- [Accessibility Domain](./accessibility-domain.md): Specifies where, in the program sections, a member can be referenced.  
   
-- [Restrictions on Using Accessibility Levels](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md): A summary of the restrictions on using declared accessibility levels.  
+- [Restrictions on Using Accessibility Levels](./restrictions-on-using-accessibility-levels.md): A summary of the restrictions on using declared accessibility levels.  
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)
-- [Access Keywords](../../../csharp/language-reference/keywords/access-keywords.md)
-- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
+- [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
+- [Access Keywords](./access-keywords.md)
+- [Modifiers](./modifiers.md)

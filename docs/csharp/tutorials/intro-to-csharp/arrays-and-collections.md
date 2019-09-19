@@ -9,7 +9,7 @@ ms.custom: mvc
 This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
 class.
 
-This tutorial expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in [Become familiar with the development tools](local-environment.md), with links to more details.
+This tutorial expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in [Become familiar with the development tools](local-environment.md), with links to more details.
 
 ## A basic list example
 
@@ -88,7 +88,8 @@ var index = names.IndexOf("Felipe");
 if (index == -1)
 {
     Console.WriteLine($"When an item is not found, IndexOf returns {index}");
-} else
+}
+else
 {
     Console.WriteLine($"The name {names[index]} is at index {index}");
 }
@@ -97,7 +98,8 @@ index = names.IndexOf("Not Found");
 if (index == -1)
 {
     Console.WriteLine($"When an item is not found, IndexOf returns {index}");
-} else
+}
+else
 {
     Console.WriteLine($"The name {names[index]} is at index {index}");
 
@@ -187,7 +189,7 @@ var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
 
 fibonacciNumbers.Add(previous + previous2);
 
-foreach(var item in fibonacciNumbers)
+foreach (var item in fibonacciNumbers)
     Console.WriteLine(item);
 ```
 
@@ -202,7 +204,7 @@ See if you can put together some of the concepts from this and earlier lessons. 
 
 ## Complete challenge
 
-You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/list-quickstart/Program.cs#L13-L23)
+You can see an example solution by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/list-quickstart/Program.cs#L13-L23).
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
 

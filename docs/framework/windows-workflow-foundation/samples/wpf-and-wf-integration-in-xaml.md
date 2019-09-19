@@ -16,7 +16,7 @@ This sample demonstrates how to create an application that uses Windows Presenta
  The last point of interest in this sample is a <xref:System.Workflow.ComponentModel.Serialization.MarkupExtension> called `DelegateActivityExtension`. The `ProvideValue` method of this markup extension returns a delegate that invokes an embedded activity. This activity runs in an environment that includes the WPF data context and any `x:Name` values in scope. In the `GenericInvoke` method, this environment is provided to the activity through a <xref:System.Activities.Hosting.SymbolResolver> extension. This extension is added to a <xref:System.Activities.WorkflowInvoker> that is then used to invoke the embedded activity whenever the markup extension’s delegate is invoked.
 
 > [!NOTE]
->  The default designer does not support the ShowWindow activity; as such, the ShowWindow.Xaml file does not display correctly in the designer.
+> The default designer does not support the ShowWindow activity; as such, the ShowWindow.Xaml file does not display correctly in the designer.
 
 #### To use this sample
 
@@ -31,10 +31,10 @@ This sample demonstrates how to create an application that uses Windows Presenta
 5. Close the dialog and the console echoes your name.
 
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\WPFWFIntegration`
+> `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\WPFWFIntegration`

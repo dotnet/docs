@@ -68,7 +68,7 @@ Windows Communication Foundation (WCF) provides highly flexible options for cont
   
  When generating WCF clients to unknown or untrusted Web services through the use of metadata exchange, calls to operations on these Web services should suppress the current transaction if possible. The following example demonstrates how to do this.  
   
-```  
+```csharp
 //client code which has an ambient transaction  
 using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Suppress))  
 {  

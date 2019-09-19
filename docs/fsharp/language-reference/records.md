@@ -102,7 +102,8 @@ type Person =
 and Address =
   { Line1: string
     Line2: string
-    PostCode: string }
+    PostCode: string
+    Occupant: Person }
 ```
 
 If you were to define the previous example without the `and` keyword, then it would not compile. The `and` keyword is required for mutually recursive definitions.

@@ -10,7 +10,7 @@ Enumerates the next `celt` [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next(  
       [in] ULONG celt,  
       [out, size_is(celt), length_is(*pceltFetched)] RAWINPUTDEVICE *rgelt,  

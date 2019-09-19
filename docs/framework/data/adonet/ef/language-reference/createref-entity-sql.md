@@ -32,7 +32,7 @@ from LOB.Orders as o
 ## Example  
  The following Entity SQL query uses the CREATEREF operator to fabricate references to an entity in an entity set. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
@@ -40,7 +40,7 @@ from LOB.Orders as o
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [DEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/deref-entity-sql.md)
-- [KEY](../../../../../../docs/framework/data/adonet/ef/language-reference/key-entity-sql.md)
-- [REF](../../../../../../docs/framework/data/adonet/ef/language-reference/ref-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [DEREF](deref-entity-sql.md)
+- [KEY](key-entity-sql.md)
+- [REF](ref-entity-sql.md)

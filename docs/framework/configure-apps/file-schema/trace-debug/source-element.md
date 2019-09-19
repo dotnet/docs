@@ -40,7 +40,7 @@ Specifies a trace source that initiates tracing messages.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<listeners>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/listeners-element-for-source.md)|Contains listeners that collect, store, and route messages.|  
+|[\<listeners>](listeners-element-for-source.md)|Contains listeners that collect, store, and route messages.|  
   
 ### Parent Elements  
   
@@ -78,5 +78,5 @@ Specifies a trace source that initiates tracing messages.
   
 ## See also
 
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
-- [Trace Switches](../../../../../docs/framework/debug-trace-profile/trace-switches.md)
+- [Trace and Debug Settings Schema](index.md)
+- [Trace Switches](../../../debug-trace-profile/trace-switches.md)

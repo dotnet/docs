@@ -33,9 +33,9 @@ You can download the complete Windows Presentation Foundation (WPF) project from
 
 ## Create the program yourself
 
-This example adds to the code that’s developed in [Cancel Remaining Async Tasks after One Is Complete (C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md), and it uses the same UI.
+This example adds to the code that’s developed in [Cancel Remaining Async Tasks after One Is Complete (C#)](./cancel-remaining-async-tasks-after-one-is-complete.md), and it uses the same UI.
 
-To build the example yourself, step by step, follow the instructions in the [Downloading the Example](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md#downloading-the-example) section, but set **CancelAfterOneTask** as the startup project. Add the changes in this topic to the `AccessTheWebAsync` method in that project. The changes are marked with asterisks.
+To build the example yourself, step by step, follow the instructions in the [Downloading the Example](./cancel-remaining-async-tasks-after-one-is-complete.md#downloading-the-example) section, but set **CancelAfterOneTask** as the startup project. Add the changes in this topic to the `AccessTheWebAsync` method in that project. The changes are marked with asterisks.
 
 The **CancelAfterOneTask** project already includes a query that, when executed, creates a collection of tasks. Each call to `ProcessURLAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer:
 
@@ -75,7 +75,7 @@ In the MainWindow.xaml.cs file of the project, make the following changes to the
 Run the program several times to verify that the downloaded lengths don't always appear in the same order.
 
 > [!CAUTION]
-> You can use `WhenAny` in a loop, as described in the example, to solve problems that involve a small number of tasks. However, other approaches are more efficient if you have a large number of tasks to process. For more information and examples, see [Processing tasks as they complete](https://blogs.msdn.microsoft.com/pfxteam/2012/08/02/processing-tasks-as-they-complete/).
+> You can use `WhenAny` in a loop, as described in the example, to solve problems that involve a small number of tasks. However, other approaches are more efficient if you have a large number of tasks to process. For more information and examples, see [Processing tasks as they complete](https://devblogs.microsoft.com/pfxteam/processing-tasks-as-they-complete/).
 
 ## Complete example
 
@@ -222,6 +222,6 @@ namespace ProcessTasksAsTheyFinish
 ## See also
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
-- [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+- [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md)
+- [Asynchronous Programming with async and await (C#)](./index.md)
 - [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

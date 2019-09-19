@@ -30,7 +30,7 @@ WHERE h.ShipDate IS Null
  A *key selector* is a function used in the standard query operators to extract a key from an element. In the key selector function, an expression can be compared with a constant. CLR null semantics are exhibited if an expression is compared to a null constant or if two null constants are compared. Store null semantics are exhibited if two columns with null values in the data source are compared. Key selectors are found in many of the grouping and ordering standard query operators, such as <xref:System.Linq.Queryable.GroupBy%2A>, and are used to select keys by which to order or group the query results.  
   
 ## Null Property on a Null Object  
- In the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)], the properties of a null object are null. When you attempt to reference a property of a null object in the CLR, you will receive a <xref:System.NullReferenceException>. When a LINQ query involves a property of a null object, this can result in inconsistent behavior.  
+ In the Entity Framework, the properties of a null object are null. When you attempt to reference a property of a null object in the CLR, you will receive a <xref:System.NullReferenceException>. When a LINQ query involves a property of a null object, this can result in inconsistent behavior.  
   
  For example, in the following query, the cast to `NewProduct` is done in the command tree layer, which might result in the `Introduced` property being null. If the database defined null comparisons such that the <xref:System.DateTime> comparison evaluates to true, the row will be included.  
   
@@ -42,4 +42,4 @@ WHERE h.ShipDate IS Null
   
 ## See also
 
-- [Expressions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)
+- [Expressions in LINQ to Entities Queries](expressions-in-linq-to-entities-queries.md)

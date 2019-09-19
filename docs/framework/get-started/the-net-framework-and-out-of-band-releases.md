@@ -49,4 +49,4 @@ OOB releases for core common language runtime (CLR) components are delivered thr
 
 ## See also
 
-- [Getting Started](../../../docs/framework/get-started/index.md)
+- [Getting Started](index.md)

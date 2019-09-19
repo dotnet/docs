@@ -32,7 +32,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
 - Extensibility model for new or proprietary image formats.  
   
-- Improved performance and security on native image formats including bitmap (BMP), Joint Photographics Experts Group (JPEG), [!INCLUDE[TLA#tla_png](../../../../includes/tlasharptla-png-md.md)], [!INCLUDE[TLA#tla_tiff](../../../../includes/tlasharptla-tiff-md.md)], [!INCLUDE[TLA#tla_wdp](../../../../includes/tlasharptla-wdp-md.md)], Graphics Interchange Format (GIF), and icon (.ico).  
+- Improved performance and security on native image formats including bitmap (BMP), Joint Photographics Experts Group (JPEG), Portable Network Graphics (PNG), [!INCLUDE[TLA#tla_tiff](../../../../includes/tlasharptla-tiff-md.md)], [!INCLUDE[TLA#tla_wdp](../../../../includes/tlasharptla-wdp-md.md)], Graphics Interchange Format (GIF), and icon (.ico).  
   
 - Preservation of high bit-depth image data up to 8 bits per channel (32 bits per pixel).  
   
@@ -50,7 +50,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
 <a name="_imageformats"></a>   
 ## WPF Image Formats  
- A codec is used to decode or encode a specific media format. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] includes a codec  for BMP, JPEG, [!INCLUDE[TLA2#tla_png](../../../../includes/tla2sharptla-png-md.md)], [!INCLUDE[TLA2#tla_tiff](../../../../includes/tla2sharptla-tiff-md.md)], [!INCLUDE[TLA2#tla_wdp](../../../../includes/tla2sharptla-wdp-md.md)], GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
+ A codec is used to decode or encode a specific media format. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] includes a codec  for BMP, JPEG, PNG, [!INCLUDE[TLA2#tla_tiff](../../../../includes/tla2sharptla-tiff-md.md)], [!INCLUDE[TLA2#tla_wdp](../../../../includes/tla2sharptla-wdp-md.md)], GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
   
  <xref:System.Windows.Media.Imaging.BitmapSource> is an important class used in the decoding and encoding of images. It is the basic building block of the [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] pipeline and represents a single, constant set of pixels at a certain size and resolution. A <xref:System.Windows.Media.Imaging.BitmapSource> can be an individual frame of a multiple frame image, or it can be the result of a transform performed on a <xref:System.Windows.Media.Imaging.BitmapSource>. It is the parent of many of the primary classes used in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] imaging such as <xref:System.Windows.Media.Imaging.BitmapFrame>.  
   
@@ -93,7 +93,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
  The following example shows how to render an image 200 pixels wide using code.  
   
 > [!NOTE]
->  <xref:System.Windows.Media.Imaging.BitmapImage> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> to signal that initialization has completed. Once initialized, property changes are ignored.  
+> <xref:System.Windows.Media.Imaging.BitmapImage> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> to signal that initialization has completed. Once initialized, property changes are ignored.  
   
  [!code-csharp[ImageElementExample_snip#ImageSimpleExampleInlineCode1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml.cs#imagesimpleexampleinlinecode1)]
  [!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode1)]  
@@ -179,7 +179,7 @@ Image brushes can fill shapes, controls, text, and more
  For a sample of the extensibility API, see the [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052). This sample demonstrates how to create a decoder and encoder for a custom image format.  
   
 > [!NOTE]
->  The codec must be digitally signed for the system to recognize it.  
+> The codec must be digitally signed for the system to recognize it.  
   
 ## See also
 

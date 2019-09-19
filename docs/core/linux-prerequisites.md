@@ -17,11 +17,13 @@ This article shows the dependencies needed to develop .NET Core applications on 
 
 ## Supported Linux versions
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.x](#tab/netcore2x)
 
 .NET Core 2.x treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions. 
 
-For download links and more information, see [.NET Core 2.2 downloads](https://www.microsoft.com/net/download/dotnet-core/2.2) or [.NET Core 2.1 downloads](https://www.microsoft.com/net/download/dotnet-core/2.1).
+For download links and more information, see [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2) or [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1).
 
 .NET Core 2.x is supported on the following Linux distributions/versions:
 
@@ -40,7 +42,7 @@ See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-For download links and more information, see [.NET Core 1.1 downloads](https://www.microsoft.com/net/download/dotnet-core/1.1) or [.NET Core 1.0 downloads](https://www.microsoft.com/net/download/dotnet-core/1.0).
+For download links and more information, see [.NET Core 1.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/1.1) or [.NET Core 1.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/1.0).
 
 .NET Core 1.x is supported on the following Linux 64-bit (`x86_64` or `amd64`) distributions/versions:
 
@@ -142,7 +144,7 @@ The [dotnet-install scripts](./tools/dotnet-install-script.md) are used to perfo
 
 The script defaults to installing the latest "LTS" version, which is currently .NET Core 1.1. To install .NET Core 2.1, run the script with the following switch:
 
-```console
+```bash
 ./dotnet-install.sh -c Current
 ```
 

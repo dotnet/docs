@@ -34,4 +34,4 @@ HINSTANCE WINAPI GetALinkMessageDll();
   
 ## See also
 
-- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [Al.exe (Assembly Linker)](../../tools/al-exe-assembly-linker.md)

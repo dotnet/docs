@@ -12,9 +12,9 @@ ms.author: "ronpet"
 
 You can create Component Object Model (COM) wrappers by using Visual Studio 2005 features or the .NET Framework tools Tlbimp.exe and Regasm.exe. Both methods generate two types of COM wrappers:
 
-- A [Runtime Callable Wrapper](../../../docs/standard/native-interop/runtime-callable-wrapper.md) from a type library to run a COM object in managed code.
+- A [Runtime Callable Wrapper](../../standard/native-interop/runtime-callable-wrapper.md) from a type library to run a COM object in managed code.
 
-- A [COM Callable Wrapper](../../../docs/standard/native-interop/com-callable-wrapper.md) with the required registry settings to run a managed object in a native application.
+- A [COM Callable Wrapper](../../standard/native-interop/com-callable-wrapper.md) with the required registry settings to run a managed object in a native application.
 
 In Visual Studio 2005, you can add the COM wrapper as a reference to your project.
 
@@ -39,7 +39,7 @@ You can now write code to access the COM object. You can begin by declaring the 
   
 ### To create a runtime callable wrapper using .NET Framework tools  
   
-- Run the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) tool.  
+- Run the [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md) tool.  
   
  This tool creates an assembly that contains run-time metadata for the types defined in the original type library.  
   
@@ -49,7 +49,7 @@ You can now write code to access the COM object. You can begin by declaring the 
   
 1. Create a Class Library project for the managed class that you want to run in native code. The class must have a parameterless constructor.  
   
-     Verify that you have a complete four-part version number for your assembly in the AssemblyInfo file. This number is required for maintaining versioning in the Windows registry. For more information about version numbers, see [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md).  
+     Verify that you have a complete four-part version number for your assembly in the AssemblyInfo file. This number is required for maintaining versioning in the Windows registry. For more information about version numbers, see [Assembly Versioning](../../standard/assembly/versioning.md).  
   
 2. On the **Project** menu, click **Properties**.  
   
@@ -61,13 +61,13 @@ You can now write code to access the COM object. You can begin by declaring the 
   
 ### To create a COM callable wrapper using .NET Framework tools  
   
-Run the [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md) tool.  
+Run the [Regasm.exe (Assembly Registration Tool)](../tools/regasm-exe-assembly-registration-tool.md) tool.  
   
 This tool reads the assembly metadata and adds the necessary entries to the registry. As a result, COM clients can create .NET Framework classes transparently. You can use the assembly as if it were a native COM class.  
   
-You can run Regasm.exe on an assembly located in any directory, and then run the [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) to move it to the global assembly cache. Moving the assembly does not invalidate location registry entries, because the global assembly cache is always examined if the assembly is not found elsewhere.  
+You can run Regasm.exe on an assembly located in any directory, and then run the [Gacutil.exe (Global Assembly Cache Tool)](../tools/gacutil-exe-gac-tool.md) to move it to the global assembly cache. Moving the assembly does not invalidate location registry entries, because the global assembly cache is always examined if the assembly is not found elsewhere.  
   
 ## See also
 
-- [Runtime Callable Wrapper](../../../docs/standard/native-interop/runtime-callable-wrapper.md)
-- [COM Callable Wrapper](../../../docs/standard/native-interop/com-callable-wrapper.md)
+- [Runtime Callable Wrapper](../../standard/native-interop/runtime-callable-wrapper.md)
+- [COM Callable Wrapper](../../standard/native-interop/com-callable-wrapper.md)

@@ -29,17 +29,17 @@ By default, services run in a different security context than that of the logged
   
 ### To specify the security context for a service  
   
-1. After creating your service, add the necessary installers for it. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
+1. After creating your service, add the necessary installers for it. For more information, see [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md).  
   
 2. In the designer, access the `ProjectInstaller` class and click the service process installer for the service you are working with.  
   
     > [!NOTE]
-    >  For every service application, there are at least two installation components in the `ProjectInstaller` class — one that installs the processes for all services in the project, and one installer for each service the application contains. In this instance, you want to select <xref:System.ServiceProcess.ServiceProcessInstaller>.  
+    > For every service application, there are at least two installation components in the `ProjectInstaller` class — one that installs the processes for all services in the project, and one installer for each service the application contains. In this instance, you want to select <xref:System.ServiceProcess.ServiceProcessInstaller>.  
   
 3. In the **Properties** window, set the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> to the appropriate value.  
   
 ## See also
 
-- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
-- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
-- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+- [Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)
+- [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md)
+- [How to: Create Windows Services](how-to-create-windows-services.md)

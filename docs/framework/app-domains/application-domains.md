@@ -40,7 +40,7 @@ Operating systems and runtime environments typically provide some form of isolat
 - Individual applications can be stopped without stopping the entire process. Using application domains enables you to unload the code running in a single application.  
   
     > [!NOTE]
-    >  You cannot unload individual assemblies or types. Only a complete domain can be unloaded.  
+    > You cannot unload individual assemblies or types. Only a complete domain can be unloaded.  
   
 - Code running in one application cannot directly access code or resources from another application. The common language runtime enforces this isolation by preventing direct calls between objects in different application domains. Objects that pass between domains are either copied or accessed by proxy. If the object is copied, the call to the object is local. That is, both the caller and the object being referenced are in the same application domain. If the object is accessed through a proxy, the call to the object is remote. In this case, the caller and the object being referenced are in different application domains. Cross-domain calls use the same remote call infrastructure as calls between two processes or between two machines. As such, the metadata for the object being referenced must be available to both application domains to allow the method call to be JIT-compiled properly. If the calling domain does not have access to the metadata for the object being called, the compilation might fail with an exception of type <xref:System.IO.FileNotFoundException>. For more information, see [Remote Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100)). The mechanism for determining how objects can be accessed across domains is determined by the object. For more information, see <xref:System.MarshalByRefObject?displayProperty=nameWithType>.  
   
@@ -58,7 +58,7 @@ Operating systems and runtime environments typically provide some form of isolat
   
 - If an assembly is not loaded domain-neutral, it must be JIT-compiled in every application domain in which it is loaded. However, the assembly can be unloaded from the process by unloading all the application domains in which it is loaded.  
   
- The runtime host determines whether to load assemblies as domain-neutral when it loads the runtime into a process. For managed applications, apply the <xref:System.LoaderOptimizationAttribute> attribute to the entry-point method for the process, and specify a value from the associated <xref:System.LoaderOptimization> enumeration. For unmanaged applications that host the common language runtime, specify the appropriate flag when you call the [CorBindToRuntimeEx Function](../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) method.  
+ The runtime host determines whether to load assemblies as domain-neutral when it loads the runtime into a process. For managed applications, apply the <xref:System.LoaderOptimizationAttribute> attribute to the entry-point method for the process, and specify a value from the associated <xref:System.LoaderOptimization> enumeration. For unmanaged applications that host the common language runtime, specify the appropriate flag when you call the [CorBindToRuntimeEx Function](../unmanaged-api/hosting/corbindtoruntimeex-function.md) method.  
   
  There are three options for loading domain-neutral assemblies:  
   
@@ -70,7 +70,7 @@ Operating systems and runtime environments typically provide some form of isolat
   
  JIT-compiled code cannot be shared for assemblies loaded into the load-from context, using the <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class, or loaded from images using overloads of the <xref:System.Reflection.Assembly.Load%2A> method that specify byte arrays.  
   
- Assemblies that have been compiled to native code by using the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) can be shared between application domains, if they are loaded domain-neutral the first time they are loaded into a process.  
+ Assemblies that have been compiled to native code by using the [Ngen.exe (Native Image Generator)](../tools/ngen-exe-native-image-generator.md) can be shared between application domains, if they are loaded domain-neutral the first time they are loaded into a process.  
   
  JIT-compiled code for the assembly that contains the application entry point is shared only if all its dependencies can be shared.  
   
@@ -112,7 +112,7 @@ Operating systems and runtime environments typically provide some form of isolat
 |<xref:System.AppDomain.Unload%2A>|Performs a graceful shutdown of the domain. The application domain is not unloaded until all threads running in the domain have either stopped or are no longer in the domain.|  
   
 > [!NOTE]
->  The common language runtime does not support serialization of global methods, so delegates cannot be used to execute global methods in other application domains.  
+> The common language runtime does not support serialization of global methods, so delegates cannot be used to execute global methods in other application domains.  
   
  The unmanaged interfaces described in the common language runtime Hosting Interfaces Specification also provide access to application domains. Runtime hosts can use interfaces from unmanaged code to create and gain access to the application domains within a process.  
   
@@ -139,7 +139,7 @@ COMPLUS_LoaderOptimization = 1
  When set to 1, the COMPLUS_LoaderOptimization environment flag forces the runtime host to load all assemblies in non-domain-neutral way known as SingleDomain. SingleDomain loads no assemblies as domain-neutral, except Mscorlib, which is always loaded domain-neutral. This setting is called single domain because it is commonly used when the host is running only a single application in the process.  
   
 > [!CAUTION]
->  The COMPLUS_LoaderOptimization environment flag was designed to be used in diagnostic and test scenarios. Having the flag turned on can cause severe slow-down and increase in memory usage.  
+> The COMPLUS_LoaderOptimization environment flag was designed to be used in diagnostic and test scenarios. Having the flag turned on can cause severe slow-down and increase in memory usage.  
   
 ### Code example
 

@@ -16,7 +16,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
 <a name="ThirdParty"></a>
 ## Third-party serializers
 
- Third-part serializers, including Newtonsoft.JSON, typically are reflection-based. Given a binary large object (BLOB) of serialized data, the fields in the data are assigned to a concrete type by looking up the fields of the target type by name. At a minimum, using these libraries causes [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exceptions for each <xref:System.Type> object that you try to serialize or deserialize in a `List<Type>` collection.  
+ Third-part serializers, including Newtonsoft.JSON, typically are reflection-based. Given a binary large object (BLOB) of serialized data, the fields in the data are assigned to a concrete type by looking up the fields of the target type by name. At a minimum, using these libraries causes [MissingMetadataException](missingmetadataexception-class-net-native.md) exceptions for each <xref:System.Type> object that you try to serialize or deserialize in a `List<Type>` collection.  
   
  The easiest way to address issues caused by missing metadata for these serializers is to collect types that will be used in serialization under a single namespace (such as `App.Models`) and apply a `Serialize` metadata directive to it:  
   
@@ -24,7 +24,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
 <Namespace Name="App.Models" Serialize="Required PublicAndInternal" />  
 ```  
   
- For information about the syntax used in the example, see [\<Namespace> Element](../../../docs/framework/net-native/namespace-element-net-native.md).  
+ For information about the syntax used in the example, see [\<Namespace> Element](namespace-element-net-native.md).  
   
 <a name="Microsoft"></a>
 ## Microsoft serializers
@@ -33,7 +33,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
   
 ### typeof used in the constructor
 
- If you call a constructor of these serialization classes and include the C# [typeof](~/docs/csharp/language-reference/operators/type-testing-and-conversion-operators.md#typeof-operator) operator in the method call, **you do not have to do any additional work**. For example, in each of the following calls to a serialization class constructor, the `typeof` keyword is used as part of the expression passed to the constructor.  
+ If you call a constructor of these serialization classes and include the C# [typeof](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) operator in the method call, **you do not have to do any additional work**. For example, in each of the following calls to a serialization class constructor, the `typeof` keyword is used as part of the expression passed to the constructor.  
   
  [!code-csharp[ProjectN#5](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#5)]  
   
@@ -41,7 +41,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
   
 ### typeof used outside the constructor
 
- If you call a constructor of these serialization classes and use the C# [typeof](~/docs/csharp/language-reference/operators/type-testing-and-conversion-operators.md#typeof-operator) operator outside the expression supplied to the constructor’s <xref:System.Type> parameter, as in the following code, the .NET Native compiler cannot resolve the type:  
+ If you call a constructor of these serialization classes and use the C# [typeof](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) operator outside the expression supplied to the constructor’s <xref:System.Type> parameter, as in the following code, the .NET Native compiler cannot resolve the type:  
   
  [!code-csharp[ProjectN#6](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#6)]  
   
@@ -61,11 +61,11 @@ If your app serializes and deserializes objects, you may need to add entries to 
 <Type Name="t" Browse="Required Public" />  
 ```  
   
- For information about the syntax used in the example, see [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md).  
+ For information about the syntax used in the example, see [\<Type> Element](type-element-net-native.md).  
   
 ## See also
 
-- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
-- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
-- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)
-- [\<Namespace> Element](../../../docs/framework/net-native/namespace-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)
+- [\<Type> Element](type-element-net-native.md)
+- [\<Namespace> Element](namespace-element-net-native.md)

@@ -11,10 +11,10 @@ Computation expressions in F# provide a convenient syntax for writing computatio
 
 Computations can take many forms. The most common form of computation is single-threaded execution, which is easy to understand and modify. However, not all forms of computation are as straightforward as single-threaded execution. Some examples include:
 
-* Non-deterministic computations
-* Asynchronous computations
-* Effectful computations
-* Generative computations
+- Non-deterministic computations
+- Asynchronous computations
+- Effectful computations
+- Generative computations
 
 More generally, there are *context-sensitive* computations that you must perform in certain parts of an application. Writing context-sensitive code can be challenging, as it is easy to "leak" computations outside of a given context without abstractions to prevent you from doing so. These abstractions are often challenging to write by yourself, which is why F# has a generalized way to do so called **computation expressions**.
 
@@ -26,7 +26,7 @@ Every computation expression is backed by a *builder* type. The builder type def
 
 All computation expressions have the following form:
 
-```
+```fsharp
 builder-expr { cexper }
 ```
 

@@ -18,4 +18,4 @@ ms.assetid: 993868ca-16e3-47b6-9915-c29cd63b0a21
   
 ## See also
 
-- [Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)
+- [Canonical Functions](canonical-functions.md)

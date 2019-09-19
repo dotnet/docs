@@ -35,7 +35,7 @@ If the function succeeds, the return value is `ERROR_SUCCESS` (0).
 If the function fails, the return value is a non-zero error code defined in *WinError.h*.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.def  
   

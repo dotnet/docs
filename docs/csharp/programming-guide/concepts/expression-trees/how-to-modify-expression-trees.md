@@ -66,5 +66,5 @@ This topic shows you how to modify an expression tree. Expression trees are immu
   
 ## See also
 
-- [How to: Execute Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)
-- [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [How to: Execute Expression Trees (C#)](./how-to-execute-expression-trees.md)
+- [Expression Trees (C#)](./index.md)

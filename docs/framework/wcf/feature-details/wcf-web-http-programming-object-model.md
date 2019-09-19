@@ -82,7 +82,7 @@ The WCF WEB HTTP  Programming Model allows developers to expose Windows Communic
  The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> is an example of extending <xref:System.ServiceModel.Description.WebHttpBehavior>. <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> enables Windows Communication Foundation (WCF) endpoints to receive HTTP requests from a browser-based ASP.NET AJAX client. The [AJAX Service Using HTTP POST](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md) is an example of using this extensibility point.  
   
 > [!WARNING]
->  When using the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>, <xref:System.UriTemplate> are not supported within <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes.  
+> When using the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>, <xref:System.UriTemplate> are not supported within <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes.  
   
 ## WebHttpDispatchOperationSelector  
  The <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> class uses <xref:System.UriTemplate> and <xref:System.UriTemplateTable> classes to dispatch calls to service operations.  

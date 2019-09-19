@@ -31,7 +31,7 @@ foreach (XElement el in elList)
   
  This code produces the following output:  
   
-```  
+```output  
 home  
 work  
 ```  
@@ -57,7 +57,7 @@ foreach (XElement el in elList)
   
  This code produces the following output:  
   
-```  
+```output  
 home  
 work  
 ```  
@@ -86,11 +86,11 @@ foreach (XElement el in elList)
   
  This code produces the following output:  
   
-```  
+```output  
 home  
 work  
 ```  
   
 ## See also
 
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes-overview.md)
+- [LINQ to XML Axes (C#)](./linq-to-xml-axes-overview.md)

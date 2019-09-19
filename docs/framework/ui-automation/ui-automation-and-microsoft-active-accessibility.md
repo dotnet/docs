@@ -10,7 +10,7 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
 ---
 # UI Automation and Microsoft Active Accessibility
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  Microsoft Active Accessibility was the earlier solution for making applications accessible. [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] is the new accessibility model for [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] and is intended to address the needs of assistive technology products and automated testing tools. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] offers many improvements over Active Accessibility.  
   
@@ -104,7 +104,7 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
 |ROLE_SYSTEM_OUTLINEITEM|Tree item|  
 |ROLE_SYSTEM_WINDOW|Window|  
   
- For more information about the different control types, see [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md).  
+ For more information about the different control types, see [UI Automation Control Types](ui-automation-control-types.md).  
   
 <a name="States_and_Properties"></a>   
 ## States and Properties  
@@ -170,7 +170,7 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
 |STATE_SYSTEM_HOTTRACKED|Not available in [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
 |STATE_SYSTEM_PRESSED|Not available in [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
   
- For a complete list of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] property identifiers, see [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md).  
+ For a complete list of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] property identifiers, see [UI Automation Properties Overview](ui-automation-properties-overview.md).  
   
 <a name="uiautomation_events_compare"></a>   
 ## Events  
@@ -245,4 +245,4 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
   
 ## See also
 
-- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)
+- [UI Automation Fundamentals](index.md)

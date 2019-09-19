@@ -14,7 +14,7 @@ ms.assetid: 5001227e-9326-48a4-9dcd-ba1b89ee6653
 This tutorial explains how to create a localized application by using the LocBaml tool.  
   
 > [!NOTE]
->  The LocBaml tool is not a production-ready application. It is presented as a sample that uses some of the localization APIs and illustrates how you might write a localization tool.  
+> The LocBaml tool is not a production-ready application. It is presented as a sample that uses some of the localization APIs and illustrates how you might write a localization tool.  
   
 <a name="Introduction"></a>   
 ## Overview  
@@ -22,19 +22,19 @@ This tutorial explains how to create a localized application by using the LocBam
   
 <a name="Requirements"></a>   
 ## Requirements  
- Over the course of this discussion, you will use [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)], which is a compiler that runs from the command line.  
+ Over the course of this discussion, you will use Microsoft build engine (MSBuild), which is a compiler that runs from the command line.  
   
- Also, you will be instructed to use a project file. For instructions on how to use [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] and project files, see [Build and Deploy](../app-development/building-and-deploying-wpf-applications.md).  
+ Also, you will be instructed to use a project file. For instructions on how to use MSBuild and project files, see [Build and Deploy](../app-development/building-and-deploying-wpf-applications.md).  
   
  All the examples in this discussion use en-US (English-US) as the culture. This enables you to work through the steps of the examples without installing a different language.  
   
 <a name="create_sample_app"></a>   
 ## Create a Sample Application  
- In this step, you will prepare your application for localization. In the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] samples, a HelloApp sample is supplied that will be used for the code examples in this discussion. If you would like to use this sample, download the [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files from the [LocBaml Tool Sample](https://go.microsoft.com/fwlink/?LinkID=160016).  
+ In this step, you will prepare your application for localization. In the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] samples, a HelloApp sample is supplied that will be used for the code examples in this discussion. If you would like to use this sample, download the [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files from the [LocBaml Tool Sample](https://github.com/microsoft/WPF-Samples/tree/master/Tools/LocBaml).  
   
 1. Develop your application to the point where you want to start localization.  
   
-2. Specify the development language in the project file so that [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] generates a main assembly and a satellite assembly (a file with the .resources.dll extension) to contain the neutral language resources. The project file in the HelloApp sample is HelloApp.csproj. In that file, you will find the development language identified as follows:  
+2. Specify the development language in the project file so that MSBuild generates a main assembly and a satellite assembly (a file with the .resources.dll extension) to contain the neutral language resources. The project file in the HelloApp sample is HelloApp.csproj. In that file, you will find the development language identified as follows:  
   
      `<UICulture>en-US</UICulture>`  
   
@@ -102,7 +102,7 @@ This tutorial explains how to create a localized application by using the LocBam
     - **verbose:** Displays verbose mode information.  
   
     > [!NOTE]
-    >  If you need a list of the options when you are running the tool, type     **LocBaml.exe** and press ENTER.  
+    > If you need a list of the options when you are running the tool, type     **LocBaml.exe** and press ENTER.  
   
 <a name="parse_dll"></a>   
 ## Use LocBaml to Parse a File  
@@ -115,7 +115,7 @@ This tutorial explains how to create a localized application by using the LocBam
      **LocBaml.exe /parse HelloApp.resources.dll /out:Hello.csv**  
   
     > [!NOTE]
-    >  If the input file, HelloApp.resources.dll, is not in the same directory as LocBaml.exe move one of the files so that both files are in the same directory.  
+    > If the input file, HelloApp.resources.dll, is not in the same directory as LocBaml.exe move one of the files so that both files are in the same directory.  
   
 3. When you run LocBaml to parse files, the output consists of seven fields delimited by commas (.csv files) or tabs (.txt files). The following shows the parsed .csv file for the HelloApp.resources.dll:
 
@@ -166,7 +166,7 @@ This tutorial explains how to create a localized application by using the LocBam
      **LocBaml.exe /generate HelloApp.resources.dll /trans:Hello.csv /out:c:\ /cul:en-US**  
   
     > [!NOTE]
-    >  If the input file, Hello.csv, is not in the same directory as the executable, LocBaml.exe, move one of the files so that both files are in the same directory.  
+    > If the input file, Hello.csv, is not in the same directory as the executable, LocBaml.exe, move one of the files so that both files are in the same directory.  
   
 2. Replace the old HelloApp.resources.dll file in the C:\HelloApp\Bin\Debug\en-US\HelloApp.resources.dll directory with your newly created HelloApp.resources.dll file.  
   

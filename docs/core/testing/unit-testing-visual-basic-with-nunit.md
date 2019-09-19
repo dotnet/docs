@@ -9,22 +9,24 @@ ms.custom: "seodec18"
 
 This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-vb-nunit/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
+[!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
+
 ## Prerequisites
 
-- [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) or later versions.
+- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Creating the source project
 
 Open a shell window. Create a directory called *unit-testing-vb-nunit* to hold the solution. Inside this new directory, run the following command to create a new solution file for the class library and the test project:
 
-```console
+```dotnetcli
 dotnet new sln
 ```
 
 Next, create a *PrimeService* directory. The following outline shows the file structure so far:
 
-```
+```console
 /unit-testing-vb-nunit
     unit-testing-vb-nunit.sln
     /PrimeService
@@ -32,7 +34,7 @@ Next, create a *PrimeService* directory. The following outline shows the file st
 
 Make *PrimeService* the current directory and run the following command to create the source project:
 
-```console
+```dotnetcli
 dotnet new classlib -lang VB
 ```
 
@@ -52,7 +54,7 @@ End Namespace
 
 Change the directory back to the *unit-testing-vb-using-mstest* directory. Run the following command to add the class library project to the solution:
 
-```console
+```dotnetcli
 dotnet sln add .\PrimeService\PrimeService.vbproj
 ```
 
@@ -60,7 +62,7 @@ dotnet sln add .\PrimeService\PrimeService.vbproj
 
 Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
-```
+```console
 /unit-testing-vb-nunit
     unit-testing-vb-nunit.sln
     /PrimeService
@@ -71,7 +73,7 @@ Next, create the *PrimeService.Tests* directory. The following outline shows the
 
 Make the *PrimeService.Tests* directory the current directory and create a new project using the following command:
 
-```console
+```dotnetcli
 dotnet new nunit -lang VB
 ```
 
@@ -81,7 +83,7 @@ The [dotnet new](../tools/dotnet-new.md) command creates a test project that use
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added NUnit and the NUnit test adapter. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```console
+```dotnetcli
 dotnet add reference ../PrimeService/PrimeService.vbproj
 ```
 
@@ -89,7 +91,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 You have the following final solution layout:
 
-```
+```console
 /unit-testing-vb-nunit
     unit-testing-vb-nunit.sln
     /PrimeService
@@ -102,7 +104,7 @@ You have the following final solution layout:
 
 Execute the following command in the *unit-testing-vb-nunit* directory:
 
-```console
+```dotnetcli
 dotnet sln add .\PrimeService.Tests\PrimeService.Tests.vbproj
 ```
 

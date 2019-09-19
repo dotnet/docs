@@ -18,7 +18,7 @@ This article uses the .NET Core CLI to create and manage a project.
 
 Our example tool will be a console application that generates an ASCII bot and prints a message. First, create a new .NET Core Console Application.
 
-```console
+```dotnetcli
 dotnet new console -o botsay
 ```
 
@@ -112,7 +112,7 @@ static void ShowBot(string message)
 
 Run the project and see the output. Try these variations of the command-line to see different results:
 
-```csharp
+```dotnetcli
 dotnet run
 dotnet run -- "Hello from the bot"
 dotnet run -- hello from the bot
@@ -153,7 +153,7 @@ Even though `<PackageOutputPath>` is optional, use it in this example. Make sure
 
 Next, create a NuGet package for your application.
 
-```console
+```dotnetcli
 dotnet pack
 ```
 
@@ -161,7 +161,7 @@ The `botsay.1.0.0.nupkg` file is created in the folder identified by the `<Packa
 
 Now that you have a package, install the tool from that package:
 
-```console
+```dotnetcli
 dotnet tool install --global --add-source ./nupkg botsay
 ```
 
@@ -169,7 +169,7 @@ The `--add-source` parameter tells the .NET Core CLI to temporarily use the `./n
 
 If installation is successful, a message is displayed showing the command used to call the tool and the version installed, similar to the following example:
 
-```
+```output
 You can invoke the tool using the following command: botsay
 Tool 'botsay' (version '1.0.0') was successfully installed.
 ```
@@ -183,6 +183,6 @@ You should now be able to type `botsay` and get a response from the tool.
 
 Once you're done experimenting with the tool, you can remove it with the following command:
 
-```console
+```dotnetcli
 dotnet tool uninstall -g botsay
 ```

@@ -66,7 +66,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 Column  Name="CustomerId"   =Customer.CustomerId.Heading  
 Column  Name="Name"         =Customer.Name.Heading  
 Column  Name="CustomerId"   =Customer.CustomerId  
@@ -75,4 +75,4 @@ Column  Name="Name"         =Customer.Name
   
 ## See also
 
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes-overview.md)
+- [LINQ to XML Axes (C#)](./linq-to-xml-axes-overview.md)

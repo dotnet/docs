@@ -4,7 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 19745899-f97a-4499-a7c7-e813d1447580
 ---
 # How to: Make Multiple Web Requests in Parallel by Using async and await (C#)
-In an async method, tasks are started when they’re created. The [await](../../../../csharp/language-reference/keywords/await.md) operator is applied to the task at the point in the method where processing can’t continue until the task finishes. Often a task is awaited as soon as it’s created, as the following example shows.  
+In an async method, tasks are started when they’re created. The [await](../../../language-reference/operators/await.md) operator is applied to the task at the point in the method where processing can’t continue until the task finishes. Often a task is awaited as soon as it’s created, as the following example shows.  
   
 ```csharp  
 var result = await someWebAccessMethodAsync(url);  
@@ -29,15 +29,15 @@ var result = await myTask;
  The following program starts three asynchronous web downloads and then awaits them in the order in which they’re called. Notice, when you run the program, that the tasks don’t always finish in the order in which they’re created and awaited. They start to run when they’re created, and one or more of the tasks might finish before the method reaches the await expressions.  
   
 > [!NOTE]
->  To complete this project, you must have Visual Studio 2012 or higher and the .NET Framework 4.5 or higher installed on your computer.  
+> To complete this project, you must have Visual Studio 2012 or higher and the .NET Framework 4.5 or higher installed on your computer.  
   
- For another example that starts multiple tasks at the same time, see [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).  
+ For another example that starts multiple tasks at the same time, see [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md).  
   
  You can download the code for this example from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e).  
   
 ### To set up the project  
   
-1. To set up a WPF application, complete the following steps. You can find detailed instructions for these steps in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
+1. To set up a WPF application, complete the following steps. You can find detailed instructions for these steps in [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md).  
   
     - Create a WPF application that contains a text box and a button. Name the button `startButton`, and name the text box `resultsTextBox`.  
   
@@ -220,6 +220,6 @@ namespace AsyncExample_MultipleTasks
   
 ## See also
 
-- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
-- [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+- [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Asynchronous Programming with async and await (C#)](./index.md)
+- [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md)

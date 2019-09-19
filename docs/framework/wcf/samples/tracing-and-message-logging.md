@@ -9,7 +9,7 @@ ms.assetid: a4f39bfc-3c5e-4d51-a312-71c5c3ce0afd
 This sample demonstrates how to enable tracing and message logging. The resulting traces and message logs are viewed using the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md). This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 ## Tracing  
  Windows Communication Foundation (WCF) uses the tracing mechanism defined in the <xref:System.Diagnostics> namespace. In this tracing model, trace data is produced by trace sources that applications implement. Each source is identified by a name. Trace consumers create trace listeners for the trace sources for which they want to retrieve information. To receive trace data, you must create a listener for the trace source. In WCF, this can be done by adding the following code to either the service’s or client’s configuration file by setting the Service Model trace source `switchValue`:  
@@ -103,7 +103,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
  Messages are logged in XML format in the target directory specified in the configuration file.  
   
 > [!NOTE]
->  Trace files are not created without initially creating the log directory. Make sure that the directory C:\logs\ exists, or specify an alternate logging directory in the listener configuration. See the initial setup instructions at the end of this document for more information.  
+> Trace files are not created without initially creating the log directory. Make sure that the directory C:\logs\ exists, or specify an alternate logging directory in the listener configuration. See the initial setup instructions at the end of this document for more information.  
   
  For more information about message logging, see the [Configuring Message Logging](../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md) topic.  
   
@@ -118,13 +118,13 @@ This sample demonstrates how to enable tracing and message logging. The resultin
 4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\TracingAndLogging`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\TracingAndLogging`  
   
 ## See also
 

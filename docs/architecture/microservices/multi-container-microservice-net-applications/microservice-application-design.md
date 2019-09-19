@@ -84,8 +84,8 @@ Therefore, the units of deployment for microservices (and even for databases in 
 
 ### Additional resources
 
-- **eShopOnContainers GitHub repo. Source code for the reference application**\
-    <https://aka.ms/eShopOnContainers/>
+- **eShopOnContainers GitHub repo. Source code for the reference application** \
+  <https://aka.ms/eShopOnContainers/>
 
 ## Benefits of a microservice-based solution
 
@@ -113,7 +113,7 @@ A microservice based solution like this has many benefits:
 
 A microservice based solution like this also has some drawbacks:
 
-**Distributed application**. Distributing the application adds complexity for developers when they are designing and building the services. For example, developers must implement interservice communication using protocols like HTTP or AMPQ, which adds complexity for testing and exception handling. It also adds latency to the system.
+**Distributed application**. Distributing the application adds complexity for developers when they are designing and building the services. For example, developers must implement inter-service communication using protocols like HTTP or AMPQ, which adds complexity for testing and exception handling. It also adds latency to the system.
 
 **Deployment complexity**. An application that has dozens of microservices types and needs high scalability (it needs to be able to create many instances per service and balance those services across many hosts) means a high degree of deployment complexity for IT operations and management. If you are not using a microservice-oriented infrastructure (like an orchestrator and scheduler), that additional complexity can require far more development efforts than the business application itself.
 
@@ -153,7 +153,7 @@ There are many architectural patterns used by software architects and developers
 
 - [Traditional N-Layered](https://docs.microsoft.com/previous-versions/msp-n-p/ee658109(v=pandp.10)).
 
-- [Domain-Driven Design N-layered](https://blogs.msdn.microsoft.com/cesardelatorre/2011/07/03/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
+- [Domain-Driven Design N-layered](https://devblogs.microsoft.com/cesardelatorre/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
 
 - [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) (as used with [eShopOnWeb](https://aka.ms/WebAppArchitecture))
 

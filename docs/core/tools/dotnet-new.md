@@ -13,9 +13,11 @@ ms.date: 05/06/2019
 
 ## Synopsis
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.2](#tab/netcore22)
 
-```console
+```dotnetcli
 dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
@@ -23,7 +25,7 @@ dotnet new [-h|--help]
 
 # [.NET Core 2.1](#tab/netcore21)
 
-```console
+```dotnetcli
 dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
@@ -31,7 +33,7 @@ dotnet new [-h|--help]
 
 # [.NET Core 2.0](#tab/netcore20)
 
-```console
+```dotnetcli
 dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
@@ -39,7 +41,7 @@ dotnet new [-h|--help]
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```console
+```dotnetcli
 dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template options]
 dotnet new <TEMPLATE> [-l|--list]
 dotnet new [-all|--show-all]
@@ -768,6 +770,6 @@ Create a *global.json* in the current directory setting the SDK version to 2.0.0
 ## See also
 
 - [Custom templates for dotnet new](custom-templates.md)
-- [Create a custom template for dotnet new](~/docs/core/tutorials/create-custom-template.md)
+- [Create a custom template for dotnet new](../tutorials/create-custom-template.md)
 - [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)
 - [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)

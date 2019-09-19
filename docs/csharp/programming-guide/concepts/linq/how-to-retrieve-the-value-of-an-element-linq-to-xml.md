@@ -19,7 +19,7 @@ Console.WriteLine("Value of e:" + (string)e);
   
  This example produces the following output:  
   
-```  
+```output  
 <StringElement>abcde</StringElement>  
 Value of e:abcde  
 ```  
@@ -35,7 +35,7 @@ Console.WriteLine("Value of e:" + (int)e);
   
  This example produces the following output:  
   
-```  
+```output  
 <Age>44</Age>  
 Value of e:44  
 ```  
@@ -55,7 +55,7 @@ Console.WriteLine("Value of e:" + e.Value);
   
  This example produces the following output:  
   
-```  
+```output  
 <StringElement>abcde</StringElement>  
 Value of e:abcde  
 ```  
@@ -125,7 +125,7 @@ Console.WriteLine("v4:{0}", v4 == null ? "element does not exist" : v4.ToString(
   
  This code produces the following output:  
   
-```  
+```output  
 c1:child 1 content  
 c2:2  
 c3:element does not exist  
@@ -141,4 +141,4 @@ v4:element does not exist
   
 ## See also
 
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes-overview.md)
+- [LINQ to XML Axes (C#)](./linq-to-xml-axes-overview.md)

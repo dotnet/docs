@@ -19,7 +19,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
  Because the sample that accompanies this tutorial is implemented in C++/CLI, this tutorial assumes familiarity with the use of C++ to program the Windows API plus an understanding of managed code programming. Familiarity with C++/CLI is helpful but not essential.  
   
 > [!NOTE]
->  This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hosting WPF Content in a Win32 Window Sample](https://go.microsoft.com/fwlink/?LinkID=160004).  
+> This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hosting WPF Content in a Win32 Window Sample](https://go.microsoft.com/fwlink/?LinkID=160004).  
   
 <a name="basic_procedure"></a>   
 ## The Basic Procedure  
@@ -52,13 +52,12 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 8. Communicate with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content by using the reference that you stored in the static field to set properties, and so on.  
   
 > [!NOTE]
->  You can also use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] to implement your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. However, you will have to compile it separately as a dynamic-link library (DLL) and reference that DLL from your [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application. The remainder of the procedure is similar to that outlined above.
+> You can also use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] to implement your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. However, you will have to compile it separately as a dynamic-link library (DLL) and reference that DLL from your [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application. The remainder of the procedure is similar to that outlined above.
 
 <a name="implementing_the_application"></a>
 ## Implementing the Host Application
  This section describes how to host [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a basic [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application. The content itself is implemented in C++/CLI as a managed class. For the most part, it is straightforward [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] programming. The key aspects of the content implementation are discussed in [Implementing the WPF Content](#implementing_the_wpf_page).
 
-<a name="autoNestedSectionsOUTLINE1"></a>
 - [The Basic Application](#the_basic_application)
 
 - [Hosting the WPF Content](#hosting_the_wpf_page)
@@ -100,7 +99,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 4. Select **Common Language Runtime Support (/clr)** from the drop-down list box.
 
 > [!NOTE]
->  This compiler flag allows you to use managed code in your application, but your unmanaged code will still compile as before.
+> This compiler flag allows you to use managed code in your application, but your unmanaged code will still compile as before.
 
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses the single-threaded apartment (STA) threading model. In order to work properly with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content code, you must set the application's threading model to STA by applying an attribute to the entry point.
 
@@ -117,7 +116,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
  The `GetHwnd` method takes size and position information plus the parent window handle and returns the window handle of the hosted [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content.
 
 > [!NOTE]
->  You cannot use a `#using` directive for the `System::Windows::Interop` namespace. Doing so creates a name collision between the <xref:System.Windows.Interop.MSG> structure in that namespace and the MSG structure declared in winuser.h. You must instead use fully-qualified names to access the contents of that namespace.
+> You cannot use a `#using` directive for the `System::Windows::Interop` namespace. Doing so creates a name collision between the <xref:System.Windows.Interop.MSG> structure in that namespace and the MSG structure declared in winuser.h. You must instead use fully-qualified names to access the contents of that namespace.
 
  [!code-cpp[Win32HostingWPFPage#GetHwnd](~/samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/Win32HostingWPFPage.cpp#gethwnd)]
 
@@ -163,7 +162,6 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 ## Implementing the WPF Page
  You can host and use the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content without any knowledge of the actual implementation. If the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content had been packaged in a separate DLL, it could have been built in any common language runtime (CLR) language. Following is a brief walkthrough of the C++/CLI implementation that is used in the sample. This section contains the following subsections.
 
-<a name="autoNestedSectionsOUTLINE2"></a>
 - [Layout](#page_layout)
 
 - [Returning the Data to the Host Window](#returning_data_to_window)

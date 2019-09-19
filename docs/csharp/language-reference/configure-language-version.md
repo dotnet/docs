@@ -6,7 +6,9 @@ ms.date: 07/10/2019
 
 # C# language versioning
 
-The C# compiler determines a default language version based on your project's target framework or frameworks. This is because the C# language may have features that rely on types or runtime components that are not available in every .NET implementation. This also ensures that for whatever target your project is built against, you get the highest compatible language version by default.
+The latest C# compiler determines a default language version based on your project's target framework or frameworks. This is because the C# language may have features that rely on types or runtime components that are not available in every .NET implementation. This also ensures that for whatever target your project is built against, you get the highest compatible language version by default.
+
+The rules in this article apply to the compiler delivered with Visual Studio 2019, or the .NET Core 3.0 SDK. The C# compilers that are part of the Visual Studio 2017 installation or earlier .NET Core SDK versions target C# 7.0 by default. 
 
 ## Defaults
 

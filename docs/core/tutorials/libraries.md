@@ -11,7 +11,7 @@ This article covers how to write libraries for .NET using cross-platform CLI too
 
 ## Prerequisites
 
-You need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core) installed on your machine.
+You need [the .NET Core SDK and CLI](https://dotnet.microsoft.com/download) installed on your machine.
 
 For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](https://dotnet.microsoft.com) installed on a Windows machine.
 
@@ -66,19 +66,20 @@ Keep in mind that some of the .NET Framework versions used here are no longer in
 
 If you want to reach the maximum number of developers and projects, use the .NET Framework 4.0 as your baseline target. To target the .NET Framework, you will need to begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.
 
-```
-.NET Framework 2.0   --> net20
-.NET Framework 3.0   --> net30
-.NET Framework 3.5   --> net35
-.NET Framework 4.0   --> net40
-.NET Framework 4.5   --> net45
-.NET Framework 4.5.1 --> net451
-.NET Framework 4.5.2 --> net452
-.NET Framework 4.6   --> net46
-.NET Framework 4.6.1 --> net461
-.NET Framework 4.6.2 --> net462
-.NET Framework 4.7   --> net47
-```
+| .NET Framework version | TFM      |
+| ---------------------- | -------- |
+| .NET Framework 2.0     | `net20`  |
+| .NET Framework 3.0     | `net30`  |
+| .NET Framework 3.5     | `net35`  |
+| .NET Framework 4.0     | `net40`  |
+| .NET Framework 4.5     | `net45`  |
+| .NET Framework 4.5.1   | `net451` |
+| .NET Framework 4.5.2   | `net452` |
+| .NET Framework 4.6     | `net46`  |
+| .NET Framework 4.6.1   | `net461` |
+| .NET Framework 4.6.2   | `net462` |
+| .NET Framework 4.7     | `net47`  |
+| .NET Framework 4.8     | `net48`  |
 
 You then insert this TFM into the `TargetFramework` section of your project file. For example, here's how you would write a library which targets the .NET Framework 4.0:
 
@@ -242,7 +243,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
 
 1. Restore packages and build projects:
 
-   ```bash
+   ```dotnetcli
    dotnet restore
    dotnet build
    ```
@@ -314,7 +315,7 @@ This will add the three projects above and a solution file which links them toge
 
 The best way to reference a project is to use the .NET Core CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
-```console
+```dotnetcli
 dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
 ```
 

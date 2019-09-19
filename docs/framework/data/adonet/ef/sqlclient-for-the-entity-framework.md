@@ -23,26 +23,26 @@ This section describes the .NET Framework Data Provider for SQL Server (SqlClien
 |2000|2005|2008|  
   
 > [!NOTE]
->  Starting with Visual Studio 2010, the [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) do not support SQL Server 2000.  
+> Starting with Visual Studio 2010, the [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) do not support SQL Server 2000.  
   
 ## Provider Namespace Name  
- All providers must specify a namespace. This property tells the Entity Framework which prefix is used by the provider for specific constructs, such as types and functions. The namespace for SqlClient provider manifests is `SqlServer`. For more information about namespaces, see [Namespaces](../../../../../docs/framework/data/adonet/ef/language-reference/namespaces-entity-sql.md).  
+ All providers must specify a namespace. This property tells the Entity Framework which prefix is used by the provider for specific constructs, such as types and functions. The namespace for SqlClient provider manifests is `SqlServer`. For more information about namespaces, see [Namespaces](./language-reference/namespaces-entity-sql.md).  
   
 ## Types  
- The SqlClient provider for the Entity Framework provides mapping information between conceptual model types and SQL Server types. For more information, see [SqlClient for Entity FrameworkTypes](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-types.md).  
+ The SqlClient provider for the Entity Framework provides mapping information between conceptual model types and SQL Server types. For more information, see [SqlClient for Entity FrameworkTypes](sqlclient-for-ef-types.md).  
   
 ## Functions  
- The SqlClient provider for the Entity Framework defines the list of functions supported by the provider. For a list of the supported functions, see [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md).  
+ The SqlClient provider for the Entity Framework defines the list of functions supported by the provider. For a list of the supported functions, see [SqlClient for Entity Framework Functions](sqlclient-for-ef-functions.md).  
   
 ## In This Section  
- [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)  
+ [SqlClient for Entity Framework Functions](sqlclient-for-ef-functions.md)  
   
- [SqlClient for Entity FrameworkTypes](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-types.md)  
+ [SqlClient for Entity FrameworkTypes](sqlclient-for-ef-types.md)  
   
- [Known Issues in SqlClient for Entity Framework](../../../../../docs/framework/data/adonet/ef/known-issues-in-sqlclient-for-entity-framework.md)  
+ [Known Issues in SqlClient for Entity Framework](known-issues-in-sqlclient-for-entity-framework.md)  
   
 ## See also
 
-- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
-- [Language Reference](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)
-- [Known Issues in SqlClient Provider for Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)
+- [Entity SQL Language](./language-reference/entity-sql-language.md)
+- [Language Reference](./language-reference/index.md)
+- [Known Issues in SqlClient Provider for Entity Framework](sqlclient-for-the-entity-framework.md)

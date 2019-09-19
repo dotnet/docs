@@ -2,7 +2,6 @@
 title: 'Tutorial: Categorize iris flowers - k-means clustering'
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
-ms.author: johalex
 ms.date: 05/16/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18, title-hack-0516
@@ -14,6 +13,7 @@ This tutorial illustrates how to use ML.NET to build a [clustering model](../res
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Understand the problem
 > - Select the appropriate machine learning task
 > - Prepare the data
@@ -181,6 +181,7 @@ Congratulations! You've now successfully built a machine learning model for iris
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Understand the problem
 > - Select the appropriate machine learning task
 > - Prepare the data

@@ -9,7 +9,7 @@ This topic shows how to load XML from a URI by using the <xref:System.Xml.Linq.X
 ## Example  
  The following example shows how to load an XML document from a file. The following example loads books.xml and outputs the XML tree to the console.  
   
- This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).  
   
 ```csharp  
 XElement booksFromFile = XElement.Load(@"books.xml");  

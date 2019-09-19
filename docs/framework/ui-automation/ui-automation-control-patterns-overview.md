@@ -8,14 +8,14 @@ ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
 ---
 # UI Automation Control Patterns Overview
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This overview introduces [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] control patterns. Control patterns provide a way to categorize and expose a control's functionality independent of the control type or the appearance of the control.  
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] uses control patterns to represent common control behaviors. For example, you use the Invoke control pattern for controls that can be invoked (such as buttons) and the Scroll control pattern for controls that have scroll bars (such as list boxes, list views, or combo boxes). Because each control pattern represents a separate functionality, they can be combined to describe the full set of functionality supported by a particular control.  
   
 > [!NOTE]
->  Aggregate controls—built with child controls that provide the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] for functionality exposed by the parent—should implement all control patterns normally associated with each child control. In turn, those same control patterns are not required to be implemented by the child controls.  
+> Aggregate controls—built with child controls that provide the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] for functionality exposed by the parent—should implement all control patterns normally associated with each child control. In turn, those same control patterns are not required to be implemented by the child controls.  
   
 <a name="uiautomation_control_pattern_includes"></a>   
 ## UI Automation Control Pattern Components  
@@ -68,8 +68,8 @@ ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
   
 ## See also
 
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
-- [Control Pattern Mapping for UI Automation Clients](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)
-- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
-- [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md)
-- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)
+- [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md)
+- [UI Automation Overview](ui-automation-overview.md)
+- [UI Automation Properties for Clients](ui-automation-properties-for-clients.md)
+- [UI Automation Events for Clients](ui-automation-events-for-clients.md)

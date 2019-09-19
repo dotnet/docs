@@ -34,10 +34,16 @@
 /docs/visual-basic/** @KathleenDollard
 
 # The ML.NET Guide:
-/docs/machine-learning/** @JRAlexander
+/docs/machine-learning/** @natke
 
 # The .NET for Apache Spark Guide:
 /docs/spark/** @mamccrea
+
+# The .NET Architecture Guide:
+/docs/architecture/** @nishanil
+
+# The Desktop Guide:
+/docs/desktop/** @Thraka
 
 ############### .NET Core ########################
 # What's New
@@ -63,6 +69,10 @@
 /docs/framework/configure-apps/file-schema/wcf/** @HongGit
 /docs/framework/data/wcf/** @HongGit
 /docs/framework/wcf/** @HongGit
+# WPF
+/docs/framework/wpf/** @Thraka
+# Winforms
+/docs/framework/winforms/** @Thraka
 
 ################## .NET STANDARD ##################
 # Analyzers:
@@ -75,6 +85,3 @@
 /docs/standard/base-types/formatting-types/** @rpetrusha
 # .NET threading
 /docs/standard/threading/** @rpetrusha
-
-################## .NET E-BOOKS ##################
-/docs/architecture/** @nishanil

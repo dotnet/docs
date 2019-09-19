@@ -9,7 +9,7 @@ This example shows how to group data, and then generate XML based on the groupin
 ## Example  
  This example first groups data by a category, then generates a new XML file in which the XML hierarchy reflects the grouping.  
   
- This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](./sample-xml-file-numerical-data-linq-to-xml.md).  
   
 ```csharp  
 XElement doc = XElement.Load("Data.xml");  

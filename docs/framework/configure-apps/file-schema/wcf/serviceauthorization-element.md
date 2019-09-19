@@ -6,11 +6,12 @@ ms.assetid: 18cddad5-ddcb-4839-a0ac-1d6f6ab783ca
 # \<serviceAuthorization> element
 Specifies settings that authorize access to service operations  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<serviceAuthorization>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceAuthorization>**  
   
 ## Syntax  
   
@@ -33,7 +34,7 @@ Specifies settings that authorize access to service operations
 |Attribute|Description|  
 |---------------|-----------------|  
 |impersonateCallerForAllOperations|A Boolean value that specifies if all the operations in the service impersonate the caller. The default is `false`.<br /><br /> When a specific service operation impersonates the caller, the thread context is switched to the caller context before executing the specified service.|  
-|principalPermissionMode|Sets the principal used to carry out operations on the server. Values include the following:<br /><br /> -   None<br />-   UseWindowsGroups<br />-   UseAspNetRoles<br />-   Custom<br /><br /> The default value is UseWindowsGroups. The value is of type <xref:System.ServiceModel.Description.PrincipalPermissionMode>. For more information on using this attribute, see [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md).|  
+|principalPermissionMode|Sets the principal used to carry out operations on the server. Values include the following:<br /><br /> -   None<br />-   UseWindowsGroups<br />-   UseAspNetRoles<br />-   Custom<br /><br /> The default value is UseWindowsGroups. The value is of type <xref:System.ServiceModel.Description.PrincipalPermissionMode>. For more information on using this attribute, see [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md).|  
 |roleProviderName|A string that specifies the name of the role provider, which provides role information for a Windows Communication Foundation (WCF) application. The default is an empty string.|  
 |ServiceAuthorizationManagerType|A string containing the type of the service authorization manager. For more information, see <xref:System.ServiceModel.ServiceAuthorizationManager>.|  
   
@@ -47,7 +48,7 @@ Specifies settings that authorize access to service operations
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Contains a collection of settings for the behavior of a service.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Contains a collection of settings for the behavior of a service.|  
   
 ## Remarks  
  This section contains elements affecting authorization, custom role providers, and impersonation.  
@@ -87,14 +88,14 @@ Specifies settings that authorize access to service operations
 </behaviors>
 ```  
   
- For a detailed example of using this configuration element, see [Authorizing Access to Service Operations](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md) and [Authorization Policy](../../../../../docs/framework/wcf/samples/authorization-policy.md).  
+ For a detailed example of using this configuration element, see [Authorizing Access to Service Operations](../../../wcf/samples/authorizing-access-to-service-operations.md) and [Authorization Policy](../../../wcf/samples/authorization-policy.md).  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>
 - <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>
-- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
-- [Authorizing Access to Service Operations](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md)
-- [How to: Create a Custom Authorization Manager for a Service](../../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
-- [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
-- [Authorization Policy](../../../../../docs/framework/wcf/samples/authorization-policy.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Authorizing Access to Service Operations](../../../wcf/samples/authorizing-access-to-service-operations.md)
+- [How to: Create a Custom Authorization Manager for a Service](../../../wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
+- [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
+- [Authorization Policy](../../../wcf/samples/authorization-policy.md)

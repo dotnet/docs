@@ -11,6 +11,8 @@ Helping machines communicate with each other has been one of the primary preoccu
 
 The release of .NET Core 3.0 marks a shift in the way that Microsoft delivers remote communication solutions to developers who want to deliver services across a range of platforms. .NET Core doesn't offer Windows Communication Foundation (WCF) out of the box but, with the release of version ASP.NET Core 3.0, it does provide built-in gRPC functionality.
 
+gRPC is a hugely popular framework in the wider software community, used by developers across many programming languages for modern RPC scenarios. The community and the ecosystem are vibrant and active, with support for the gRPC protocol being added to infrastructure components like Kubernetes, service meshes, load balancers and more. These factors, as well as its performance, efficiency and cross-platform compatibility, make it the natural choice for a successor to WCF.
+
 ## History
 
 The fundamental principle of a computer network as nothing more than a group of computers exchanging data with each other to achieve a set of interrelated tasks hasn't changed since its inception. However, the complexity, scale, and expectations have grown exponentially.  
@@ -26,7 +28,7 @@ The development of *Web Services* occurred once all major platforms could access
 - Web Services Definition Language (WSDL) – describes and connects the web service to the client application; *and*
 - Universal Description Discovery Integration (UDDI)- enables Web Services to be discoverable by other Services
 
-SOAP defines the rules by which distributed elements of an application can communicate with each other even if they are on different platforms. SOAP is based on XML, so it's human-readable. The sacrifice for making SOAP easily understood is size; SOAP messages are larger than messages in comparable protocols. SOAP was designed to break down monolithic applications into multi-component form without losing security or control. Therefore, WCF was designed to work with that kind of system unlike gRPC, which began as a distributed system.
+SOAP defines the rules by which distributed elements of an application can communicate with each other even if they are on different platforms. SOAP is based on XML, so it's human-readable. The sacrifice for making SOAP easily understood is size; SOAP messages are larger than messages in comparable protocols. SOAP was designed to break down monolithic applications into multi-component form without losing security or control. Therefore, WCF was designed to work with that kind of system, unlike gRPC, which began as a distributed system. WCF addressed some of these limitations by developing and documenting proprietary extension protocols for the SOAP stack, but at the cost of lack of support from other platforms.
 
 Windows Communication Foundation is a framework for building services. It was designed in the early 2000s to help developers using early SOA to manage the complexities of working with SOAP. Although it removes the requirement for the developer to write their own SOAP protocols, WCF still uses SOAP to enable interoperability with other systems. WCF was also designed to deliver solutions across multiple protocols (HTTP/1.1, NetTCP, and so on).
 

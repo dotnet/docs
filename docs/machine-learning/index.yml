@@ -25,7 +25,7 @@ landingContent:
         links:
           - text: What is ML.NET?
             url: how-does-mldotnet-work.md
-      - linkListType: concept
+      - linkListType: quickstart
         links:
           - text: Model Builder
             url: automate-training-with-model-builder.md
@@ -64,24 +64,24 @@ landingContent:
             url: how-to-guides/load-data-ml-net.md
           - text: Prepare data for building a model
             url: how-to-guides/prepare-data-ml-net.md
-          - text: Train and evaluate a model
+          - text: Train & evaluate a model
             url: how-to-guides/train-machine-learning-model-ml-net.md
           - text: Make predictions with a trained model
             url: how-to-guides/machine-learning-model-predictions-ml-net.md
-          - text: Save and load a trained model
+          - text: Save & load a trained model
             url: how-to-guides/save-load-machine-learning-models-ml-net.md                         
   
   # CLI card
-  - title:  CLI
+  - title:  ML.NET CLI
     linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Install ML.NET CLI
+            url: how-to-guides/install-ml-net-cli.md
       - linkListType: tutorial
         links:
-          - text: Predict prices - Model Builder
-            url: tutorials/predict-prices-with-model-builder.md
-          - text: Analyze sentiment - AutoML CLI
+          - text: Analyze sentiment - ML.NET CLI & AutoML
             url: tutorials/mlnet-cli.md
-          - text: Build a Razor Pages web app to analyze sentiment
-            url: tutorials/sentiment-analysis-model-builder.md
 
   # Concepts card
   - title: Machine learning concepts

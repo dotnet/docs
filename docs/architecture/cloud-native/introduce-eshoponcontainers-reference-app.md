@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Introducing eShopOnContainers reference app
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Microsoft, in partnership with leading community experts, has produced a full-featured cloud-native microservices reference application, eShopOnContainers. This application is built to showcase using .NET Core and Docker, and optionally Azure, Kubernetes, and Visual Studio, to build an online storefront.
 
 ![eShopOnContainers Sample App Screenshot.](./media/eshoponcontainers-sample-app-screenshot.png)
@@ -58,7 +60,7 @@ The code is organized to support the different microservices, and within each mi
 
 ## Understanding microservices
 
-This book focuses on cloud native applications built using Azure technology. To learn more about microservices best practices and how to architect microservice-based applications, please read the companion book, [.NET Micrososervices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/learn/aspnet/microservices-architecture). The book is available online or in PDF or eReader formats.
+This book focuses on cloud-native applications built using Azure technology. To learn more about microservices best practices and how to architect microservice-based applications, read the companion book, [.NET Microservices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/learn/aspnet/microservices-architecture). The book is available online, in PDF, or eReader formats.
 
 >[!div class="step-by-step"]
 >[Previous](candidate-apps.md)

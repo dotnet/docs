@@ -5,6 +5,8 @@ ms.date: 09/23/2019
 ---
 # Observability patterns
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Just as patterns have been developed to aid in the layout of code in applications, there are patterns for operating applications in a reliable way. Three useful patterns in maintaining applications have emerged: logging, monitoring, and alerts.
 
 ## When to use logging

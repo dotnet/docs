@@ -5,13 +5,15 @@ ms.date: 06/30/2019
 ---
 # Cloud native resiliency
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Resiliency is the ability of your system to react to failure and still remain functional. It isn't about avoiding failure. But it's about accepting that failure is inevitable in cloud-based systems and building your application to respond to it. The end-goal of resiliency is to return the application to a fully functioning state after a failure.
 
-Unlike traditional monolithic applications, where everything runs together in a single process, cloud native systems embrace distributed architecture as shown in Figure 6-1:
+Unlike traditional monolithic applications, where everything runs together in a single process, cloud-native systems embrace distributed architecture as shown in Figure 6-1:
 
-![Distributed cloud native environment](media/distributed-cloud-native-environment.png)
+![Distributed cloud-native environment](media/distributed-cloud-native-environment.png)
 
-**Figure 6-1.** Distributed cloud native environment
+**Figure 6-1.** Distributed cloud-native environment
 
 In the previous figure, note how each client, microservice, and cloud-based [backing service](https://12factor.net/backing-services) executes as a separate process, running across different servers, all communicating via network-based calls.
 

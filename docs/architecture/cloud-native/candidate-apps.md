@@ -6,6 +6,8 @@ ms.date: 08/20/2019
 ---
 # Candidate apps for cloud native
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Look at the apps in your portfolio. How many of them qualify for a cloud-native architecture? All of them? Perhaps some?
 
 Applying a cost/benefit analysis, there's a good chance that most wouldn't support the hefty price tag required to be cloud native. The cost of being cloud native would far exceed the business value of the application.

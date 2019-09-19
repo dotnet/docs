@@ -1,27 +1,29 @@
 ---
-title: Cloudn native data patterns
+title: Cloud-native data patterns
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Data Patterns
 ms.date: 06/30/2019
 ---
-# Cloud native data patterns
+# Cloud-native data patterns
+
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 While decentralized data can lead to improved performance, scalability and cost savings, it also presents many challenges. For example, querying for data across multiple services becomes tricky and complex. Then, there is no support for a distributed transaction. A transaction that spans several microservices must be managed by your code, including a mechanism to roll back changes in the event of a partial transactional failure. Then, a transaction across multiple services will result in [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency) which is discussed later in this chapter.
 
 Let's examine these challenges.
 
-## Cross-Service Queries
+## Cross-service queries
 
 To start, how does an application query data that is distributed across multiple, independent microservices?
 
-This scenario is shwon in Figure 5-4.
+This scenario is shown in Figure 5-4.
 
 ![Cross service query](media/cross-service-query.png)
 
 **Figure 5-4**. Cross-service query
 
-In the prevous figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store of the shopping basket service contains a basket and lineItem table, it does not contain product or pricing information. Instead, that data is found in the product and price microservices, respectfully. But, to add an item, the shopping basket microservice needs product data and pricing data. So how does it obtain product and pricing data?
+In the previous figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store of the shopping basket service contains a basket and lineItem table, it doesn't contain product or pricing information. Instead, that data is found in the product and price microservices, respectfully. But, to add an item, the shopping basket microservice needs product data and pricing data. So how does it obtain product and pricing data?
 
-The shopping basket microservice could make a direct HTTP call to both the product catalog and pricinp microservices shown in Figure 5-5.
+The shopping basket microservice could make a direct HTTP call to both the product catalog and pricing microservices shown in Figure 5-5.
 
 ![Direct http communication](media/direct-http-communication.png)
 
@@ -43,17 +45,13 @@ Instead, a common approach for executing cross-microservice queries system is th
 
 **Figure5-7**. Materialized view pattern
 
-
-
 Start here
-
-
 
 The pattern here is simple. In the data store for the Shopping Basket microservice, you include a local table, called a *read model*, that contains a denormalized copy of the data that is needed from Product and Pricing microservices. Directly placing the data inside the Shopping Basket microservice eliminates the need for making expensive cross-service calls and provides *locality* of data improving response time and reliability while removing coupling and reducing architectural complexity.
 
 The catch is that we now have duplicate data in our system. The good news is duplicate data is not considered an anti-pattern in distributed systems. However, one and only one system can be the owner of any dataset, and you will need to set up a publish/subscribe mechanism that will enable the system of record to update all of the read models when a change to the underlying data occurs.
 
-## Transactional Support
+## Transactional support
 
 While cross-service queries can be complex, implementing cross-service transactions is even more tricky. The inherent challenge of maintaining consistency across data sources that reside in different services cannot be understated. Figure 5-8, shown below, depicts the problem.
 
@@ -75,7 +73,7 @@ In the figure above, the GenerateContent operation has failed in the Music micro
 
 Saga patterns are typically choreographed as a series of related events or orchestrated as a set of related commands.
 
-## CQRS Pattern
+## CQRS pattern
 
 CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that separate operations that read data from those that write data. This pattern can help maximize performance, scalability and security.
 
@@ -95,13 +93,13 @@ By implementing separation, you have the ability to scale reads and writes separ
 
 Typically, CQRS patterns are applied to limited sections of your system based upon specific needs.
 
-## Relational vs NoSQL
+## Relational versus NoSQL
 
-The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies cannot be overstated, especially for distributed cloud native systems. The proliferation of new data technologies in this space has disrupted solutions that were once exclusively solved with relational databases.
+The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies cannot be overstated, especially for distributed cloud-native systems. The proliferation of new data technologies in this space has disrupted solutions that were once exclusively solved with relational databases.
 
 On the one side, relational databases have been a prevalent technology for decades. They are mature, proven and widely implemented. Competing database products, expertise and tooling abounds. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data and have [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) (Atomicity, Consistency, Isolation and Durability) guarantees.
 
-No-SQL databases, on the other side, refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience and availability characteristics. Instead of joing tables of normalized data, NoSQL stores self-describing (schemaless) data and is typically stored in JSON documents. They do not offer [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
+No-SQL databases, on the other side, refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data and is typically stored in JSON documents. They don't offer [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
 
 A way to understand the differences between these types of databases can be found in the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles that can be applied to distributed systems that store state. Figure 5-11 below depicts the three properties of the CAP theorem.
 
@@ -111,11 +109,11 @@ A way to understand the differences between these types of databases can be foun
 
 The theorem states that any distributed data system will offer a trade-off between consistency, availability and partition tolerance and that any database can only guarantee two of the three properties:
 
--   *Consistency* Every node in the cluster will respond with the most recent data, even if it requires blocking a request until all replicas are correctly updated
+- *Consistency*: every node in the cluster will respond with the most recent data, even if it requires blocking a request until all replicas are correctly updated.
 
--   *Availability* Every node will return a response in a reasonable amount of time, even if that response is not the most recent data
+- *Availability*: every node will return a response in a reasonable amount of time, even if that response is not the most recent data.
 
--   *Partition Tolerance* Guarantees that the system will operate if a node fails or loses connectivity with another
+- *Partition Tolerance*: guarantees that the system will operate if a node fails or loses connectivity with another.
 
 Relational databases exhibit consistency and availability, but not so much partition tolerance. Partitioning for a relational database, such as sharding, is difficult and can impact performance.
 
@@ -127,39 +125,30 @@ This is called [eventual consistency](https://en.wikipedia.org/wiki/Eventual_con
 
 NoSQL databases can be categorized by one of the following four models: 
 
--   *Document Store* (mongodb, couchdb, couchbase) - Data (and corresponding metadata) is stored non-relationally in denormalized JSON-based documents inside the database
+- *Document Store* (mongodb, couchdb, couchbase) - Data (and corresponding metadata) is stored non-relationally in denormalized JSON-based documents inside the database
 
--   *Key/Value Store* (redis, riak, memcached) Data is stored in simple key-value pairs with system operations performed against a unique access key that is mapped to a value of user data
+- *Key/Value Store* (redis, riak, memcached) Data is stored in simple key-value pairs with system operations performed against a unique access key that is mapped to a value of user data
 
--   *Wide-Column Store* (hbase, Cassandra) Related data is stored in a columnar format as a set of nested-key/value pairs within a single column with data typically retrieved as a single unit without having to join multiple tables together
+- *Wide-Column Store* (hbase, Cassandra) Related data is stored in a columnar format as a set of nested-key/value pairs within a single column with data typically retrieved as a single unit without having to join multiple tables together
 
--   *Graph stores* (neo4j, titan) Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes
+- *Graph stores* (neo4j, titan) Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes
 
 NoSQL databases can be optimized to deal with large scale data needs, especially when the data is relatively simple. Consider a NoSQL database when: 
 
--   Your workload requires large-scale and high-concurrency
-
--   You have large numbers of users
-
--   Your data can be expressed simply without relationships
-
--   You need to geographically distribute your data
-
--   You don't need ACID guarantees
-
--   Will be deployed to commodity hardware
+- Your workload requires large-scale and high-concurrency.
+- You have large numbers of users.
+- Your data can be expressed simply without relationships.
+- You need to geographically distribute your data.
+- You don't need ACID guarantees.
+- Will be deployed to commodity hardware.
 
 Then, consider a SQL database when:
 
--   Your workloads require medium to large-scale
-
--   Concurrency isn't a major concern
-
--   ACID guarantees are needed
-
--   Data is best expressed relationally
-
--   Will be deployed to large, high-end hardware
+- Your workloads require medium to large-scale.
+- Concurrency isn't a major concern.
+- ACID guarantees are needed.
+- Data is best expressed relationally.
+- Will be deployed to large, high-end hardware.
 
 Next, we visit data storage in the Azure cloud.
 

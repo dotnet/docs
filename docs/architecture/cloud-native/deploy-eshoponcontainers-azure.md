@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Deploying eShopOnContainers to Azure
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 The logic supporting the eShopOnContainers application can be supported by Azure using a variety of services. The recommended approach is to leverage Kubernetes using Azure Kubernetes Service (AKS). This can be combined with Helm deployment to ensure easily repeated infrastructure configuration. Optionally, developers can leverage Azure Dev Spaces for Kubernetes as part of their development process. Another option is to host the functionality of the app using Azure Serverless features like Azure Functions and Azure Logic Apps.
 
 ## Azure Kubernetes Service

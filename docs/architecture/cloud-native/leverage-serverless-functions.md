@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Leveraging serverless functions
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 In the spectrum of managing full machines and operating systems to leveraging cloud capabilities, serverless lives at the extreme end where the only thing you're responsible for is your code, and you only pay for your code when it runs. Azure Functions provides a way to build serverless capabilities into your applications. 
 
 ## What is serverless?
@@ -37,7 +39,7 @@ Many applications have long-running processes as part of their workflows. Often 
 
 ## When should you avoid serverless?
 
-Serverless computing is best-used for tasks that do not block the user interface. This means they're not ideal for hosting web applications or web APIs directly. The main reason for this is that serverless solutions are provisioned and scaled on demand. When a new instance of a function is needed, referred to as a *cold start*, it takes time to provision. This time is typically a few seconds, but can be longer depending on a variety of factors. A single instance can often be maintained indefinitely (for instance, by periodically making a request to it), but the cold start issue remains if the number of instances ever needs to scale up.
+Serverless computing is best-used for tasks that don't block the user interface. This means they're not ideal for hosting web applications or web APIs directly. The main reason for this is that serverless solutions are provisioned and scaled on demand. When a new instance of a function is needed, referred to as a *cold start*, it takes time to provision. This time is typically a few seconds, but can be longer depending on a variety of factors. A single instance can often be maintained indefinitely (for instance, by periodically making a request to it), but the cold start issue remains if the number of instances ever needs to scale up.
 
 ![Cold versus warm start](./media/cold-start-warm-start.png)
 **Figure 3-10**. Cold start vs. warm start.

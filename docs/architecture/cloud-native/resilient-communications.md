@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Resilient communications
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Throughout this book, we've evangelized the merits of moving beyond traditional monolithic application design and embracing a microservice-based architecture where a set of distributed, self-contained services run independently and communicate with each other using standard communication protocols such as HTTP and HTTPS. While such an architecture buys you many important benefits, it also presents many challenges. Consider for example the following concerns:
 
 - *Out-of-process network communication.* Each service communicates over a network protocol which introduces network congestion, latency and transient faults.
@@ -38,7 +40,7 @@ If an instance is unresponsive or fails, the mesh can retry the request on anoth
 
 ## Istio and Envoy
 
-While a few service mesh options currently exist, [Istio](https://istio.io/docs/concepts/what-is-istio/) is the most popular as of the time of this writing. A joint venture from IBM, Google and Lyft, it is an open source offering that can be integrated into a new or existing distributed applications. It provides a consistent and complete solution to secure, connect and monitor microservices. Its features include:
+While a few service mesh options currently exist, [Istio](https://istio.io/docs/concepts/what-is-istio/) is the most popular as of the time of this writing. A joint venture from IBM, Google and Lyft, it's an open source offering that can be integrated into a new or existing distributed applications. It provides a consistent and complete solution to secure, connect and monitor microservices. Its features include:
 
 - Secure service-to-service communication in a cluster with strong identity-based authentication and authorization.
 - Automatic load balancing for HTTP, [gRPC](https://grpc.io/), WebSocket, and TCP traffic.

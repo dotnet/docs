@@ -7,6 +7,8 @@ ms.date: 09/10/2019
 
 # Service Mesh communication infrastructure
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Throughout this chapter, we've explored the challenges of microservice communication. We said that development teams need to be sensitive to how backend services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete operations.
 
 We explored different approaches for implementing synchronous HTTP communication and asynchronous messaging. In each of the cases, the developer is burdened with implementing communication code. Communication code is complex and time intensive. Incorrect decisions can lead to significant performance issues.

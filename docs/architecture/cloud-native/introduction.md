@@ -1,10 +1,12 @@
 ---
 title: Introduction to cloud-native applications
-description: Learn about cloud native computing
+description: Learn about cloud-native computing
 author: robvet
 ms.date: 08/26/2019
 ---
 # Introduction to cloud-native applications
+
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Another day, at the office, working on "the next big thing."
 

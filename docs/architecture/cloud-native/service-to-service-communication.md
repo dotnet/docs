@@ -7,9 +7,11 @@ ms.date: 09/09/2019
 
 # Service-to-service communication
 
-Moving from the front-end client, we now address backend microservcies communicate with each other.
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-When constructing a cloud native application, you'll want to be sensitive to how backend services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete an operation.
+Moving from the front-end client, we now address backend microservices communicate with each other.
+
+When constructing a cloud-native application, you'll want to be sensitive to how backend services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete an operation.
 
 There are several widely accepted approaches to implementing cross-service communication. The *type of communication interaction* will often determine the best approach.
 
@@ -166,13 +168,13 @@ Many advanced features from Azure Service Bus queues are also available for topi
 
 [Scheduled Message Delivery](https://docs.microsoft.com/azure/service-bus-messaging/message-sequencing) tags a message with a specific time for processing. The message won't appear in the topic before that time. [Message Deferral](https://docs.microsoft.com/azure/service-bus-messaging/message-deferral) enables you to defer a retrieval of a message to a later time. Both are commonly used in workflow processing scenarios where operations are processed in a particular order. You can postpone processing of received messages until prior work has been completed.
 
-Service Bus topics are a robust and proven technology for enabling publish/suscribe communication in your cloud-native systems.
+Service Bus topics are a robust and proven technology for enabling publish/subscribe communication in your cloud-native systems.
 
 ### Azure Event Grid
 
 While Azure Service Bus is a battle-tested messaging broker with a full set of enterprise features, [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview) is the new kid on the block.
 
-At first glance, Event Grid may look like just another topic-based messaging system. However, it's different in many ways. Focused on event-driven workloads, it enables real-time event processing, deep Azure integration, and an open-platform - all on serverless infrastructure. It's designed for contemporary cloud native and serverless applications
+At first glance, Event Grid may look like just another topic-based messaging system. However, it's different in many ways. Focused on event-driven workloads, it enables real-time event processing, deep Azure integration, and an open-platform - all on serverless infrastructure. It's designed for contemporary cloud-native and serverless applications
 
 As a centralized *eventing backplane*, or pipe, Event Grid reacts to events inside Azure resources and from your own services.
 

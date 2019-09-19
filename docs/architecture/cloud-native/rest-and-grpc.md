@@ -7,6 +7,8 @@ ms.date: 09/08/2019
 
 # REST and gRPC
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication. REST is an architectural style that promotes interoperability between distributed computer systems. It uses a request/response model where every response from the server is to a request from the client. While widely popular, REST isn't a perfect fit for every problem. A newer communication technology, entitled gRPC, is rapidly gaining popularity and making its way into the cloud-native world.
 
 ## gRPC

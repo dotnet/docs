@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Leveraging containers and orchestrators
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Containers and orchestrators are designed to solve problems common to monolithic deployment approaches.
 
 ## Challenges with monolithic deployments

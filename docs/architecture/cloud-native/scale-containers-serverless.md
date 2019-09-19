@@ -1,6 +1,6 @@
 ---
 title: Scaling containers and serverless applications
-description: Scaling cloud native applications with Azure Kubernetes Service to meet user demand by increasing individual machine resources or increasing the number of machines in an application cluster.
+description: Scaling cloud-native applications with Azure Kubernetes Service to meet user demand by increasing individual machine resources or increasing the number of machines in an application cluster.
 ms.date: 09/23/2019
 ---
 # Scaling containers and serverless applications

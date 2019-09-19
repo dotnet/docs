@@ -6,6 +6,8 @@ ms.date: 06/30/2019
 
 # Infrastructure as code
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Cloud-native applications tend to make use of all sorts of fantastic platform as a service (PaaS) components. On a cloud platform like Azure, these components might include things like storage, Service Bus, and the SignalR service. As applications become more complicated, the number of these services in use is likely to grow. Just as how continuous delivery broke the traditional model of deploying to an environment manually, the rapid pace of change also broke the model of having a centralized IT group manage environments.
 
 Building environments can, and should, also be automated. There's a wide range of well thought out tools that can make the process easy.

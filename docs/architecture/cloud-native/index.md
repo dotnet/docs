@@ -1,6 +1,6 @@
 ---
 title: Architecting Cloud Native .NET Applications for Azure
-description: A guide for building cloud native applications leveraging containers, microservices, and serverless features of Azure.
+description: A guide for building cloud-native applications leveraging containers, microservices, and serverless features of Azure.
 author: ardalis
 ms.date: 03/07/2019
 ---

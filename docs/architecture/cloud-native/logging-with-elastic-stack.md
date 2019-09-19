@@ -5,6 +5,8 @@ ms.date: 09/23/2019
 ---
 # Logging with Elastic Stack 
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 There are many good centralized logging tools and they vary in cost from being free, open-source tools, to more expensive options. In many cases, the free tools are as good as or better than the paid offerings. One such tool is a combination of three open-source components: Elastic search, Logstash, and Kibana. 
 Collectively these tools are known as the Elastic Stack or ELK stack.
 
@@ -82,7 +84,7 @@ The final component of the stack is Kibana. This tool is used to provide interac
 
 ## Installing Elastic Stack on Azure
 
-The Elastic stack can be installed on Azure in a number of ways. As always, it is possible to [provision virtual machines and install Elastic Stack on them directly](https://docs.microsoft.com/azure/virtual-machines/linux/tutorial-elasticsearch). This option is preferred by some experienced users as it offers the highest degree of customizability. Deploying on infrastructure as a service introduces significant management overhead forcing those who take that path to take ownership of all the tasks associated with infrastructure as a service such as securing the machines and keeping up-to-date with patches. 
+The Elastic stack can be installed on Azure in a number of ways. As always, it's possible to [provision virtual machines and install Elastic Stack on them directly](https://docs.microsoft.com/azure/virtual-machines/linux/tutorial-elasticsearch). This option is preferred by some experienced users as it offers the highest degree of customizability. Deploying on infrastructure as a service introduces significant management overhead forcing those who take that path to take ownership of all the tasks associated with infrastructure as a service such as securing the machines and keeping up-to-date with patches. 
 
 An option with less overhead is to make use of one of the many Docker containers on which the Elastic Stack has already been configured. These containers can be dropped into an existing Kubernetes cluster and run alongside application code. The [sebp/elk](https://elk-docker.readthedocs.io/) container is a well-documented and tested Elastic Stack container.
 

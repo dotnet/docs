@@ -6,10 +6,12 @@ ms.date: 09/23/2019
 
 # Azure Monitor 
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 No other cloud provider has as mature of a cloud application monitoring solution as that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system, insights into any problems and optimization of your application. 
 
-![Azure Monitor, a collection to tools to provide insight into how a cloud native application is functioning.](media/azure_monitor.png)
-**Figure 7-9**. Azure Monitor, a collection to tools to provide insight into how a cloud native application is functioning.
+![Azure Monitor, a collection to tools to provide insight into how a cloud-native application is functioning.](media/azure_monitor.png)
+**Figure 7-9**. Azure Monitor, a collection to tools to provide insight into how a cloud-native application is functioning.
 
 ## Gathering logs and metrics
 

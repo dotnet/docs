@@ -6,6 +6,8 @@ ms.date: 08/20/2019
 ---
 # Defining cloud native
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Stop what you’re doing and text 10 of your colleagues. Ask them to define the term “Cloud Native.” Good chance you’ll get eight different answers. Interestingly, six months from now, as cloud-native technologies and practices evolve, so will their definition.
 
 Cloud native is all about changing the way we think about constructing critical business systems.
@@ -192,7 +194,7 @@ Note how well the container model embraces the "Dependencies" principle from the
 
 Containers support both Linux and Windows workloads. The Azure cloud openly embraces both. Interestingly, it's Linux, not Windows Server, that has become the most popular operating system in Azure.
 
-While several container vendors exist, Docker has captured the lion's share of the market. The company has been driving the software container movement. It has become the de facto standard for packaging, deploying, and running cloud native applications.
+While several container vendors exist, Docker has captured the lion's share of the market. The company has been driving the software container movement. It has become the de facto standard for packaging, deploying, and running cloud-native applications.
 
 ### Why containers?
 

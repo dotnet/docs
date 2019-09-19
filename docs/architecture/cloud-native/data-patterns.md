@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Cloud native data patterns
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 While decentralized data can lead to improved performance, scalability and cost savings, it also presents many challenges. Querying for data across microservices is complex. A transaction that spans microservices must be managed programmatically as distributed transactions are not supported in cloud-native applications. You  move from a world of *immediate consistency* to *eventual consistency*.
 
 We discuss these challenges now.
@@ -19,7 +21,7 @@ Figure 5-4 shows this scenario.
 
 **Figure 5-4**. Querying across microservices
 
-Note how in the previous figure we see a shopping basket microservice that adds an item to a user's shopping cart. While the shopping basket's data store contains a basket and lineItem table, it does not contain product or pricing data as those items are found in the product and price microservices. In order to add an item, the shopping basket microservice needs product data and pricing data. What are options to obtain the product and pricing data?
+Note how in the previous figure we see a shopping basket microservice that adds an item to a user's shopping cart. While the shopping basket's data store contains a basket and lineItem table, it doesn't contain product or pricing data as those items are found in the product and price microservices. In order to add an item, the shopping basket microservice needs product data and pricing data. What are options to obtain the product and pricing data?
 
 Figure 5-5 shows the shopping basket microservice making a direct HTTP call to both the product catalog and pricing microservices.
 
@@ -45,7 +47,7 @@ A common approach for executing cross-service queries utilizes the [Materialized
 
 With this pattern, you directly place a local table (known as a *read model*) in the shopping basket service that contains a denormalized copy of the data that is needed from the product and pricing microservices. Placing that data inside the shopping basket microservice eliminates the need for invoking expensive cross-service calls. With the data local to the service, you improve response time and reliability.
 
-The catch with this approach is you now have duplicate data in your system. In cloud native systems, duplicate data is not considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and is commonly implemented in cloud-native systems. However, one and only one system can be the owner of any dataset, and you will need to implement a synchronization mechanism for the system of record to update all of the associated read models, whenever a change to its underlying data occurs.
+The catch with this approach is you now have duplicate data in your system. In cloud-native systems, duplicate data is not considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and is commonly implemented in cloud-native systems. However, one and only one system can be the owner of any dataset, and you will need to implement a synchronization mechanism for the system of record to update all of the associated read models, whenever a change to its underlying data occurs.
 
 ## Transactional support
 
@@ -57,7 +59,7 @@ While queries across microservices are challenging, implementing a transaction a
 
 Note how in the previous figure five independent microservices all participate in a distributed *Create Order* transaction. However, the transaction for each of the five individual microservices must succeed, or all must abort and roll-back the operation. While built-in transactional support is available inside each of the microservices, there is no support for a distributed transaction across all five services.
 
-Since transactional support is essential for this operation to keep the data consistent in each of the microservices, you have to progammatically construct a distributed transaction.
+Since transactional support is essential for this operation to keep the data consistent in each of the microservices, you have to programmatically construct a distributed transaction.
 
 A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It is implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-9 shows a failed transaction with the Saga pattern.
 
@@ -91,11 +93,11 @@ Typically, CQRS patterns are applied to limited sections of your system based up
 
 ## Relational vs NoSQL
 
-The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies cannot be overstated, especially for distributed cloud native systems. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
+The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies cannot be overstated, especially for distributed cloud-native systems. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
 
 On the one side, relational databases have been a prevalent technology for decades. They are mature, proven, and widely implemented. Competing database products, expertise and tooling abounds. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data and have [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) (also known as Atomicity, Consistency, Isolation, and Durability) guarantees.
 
-No-SQL databases, on the other side, refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. They do not offer [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
+No-SQL databases, on the other side, refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. They don't offer [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
 
 A way to understand the differences between these types of databases can be found in the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles that can be applied to distributed systems that store state. Figure 5-11 shows the three properties of the CAP theorem.
 

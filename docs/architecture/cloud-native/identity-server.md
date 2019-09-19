@@ -3,7 +3,9 @@ title: IdentityServer for Cloud Native Apps
 description: Architecting Cloud Native .NET Apps for Azure | IdentityServer
 ms.date: 06/30/2019
 ---
-# IdentityServer for cloud native applications
+# IdentityServer for cloud-native applications
+
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 IdentityServer is an open-source authentication server that implements OpenID Connect (OIDC) and OAuth 2.0 standards for ASP.NET Core. It's designed to provide a common way to authenticate requests to all of your applications, whether they're web, native, mobile, or API endpoints. IdentityServer can be used to implement Single Sign-On (SSO) for multiple applications and application types. It can be used to authenticate actual users via sign in forms and similar user interfaces as well as service-based authentication that typically involves token issuance, verification, and renewal without any user interface. IdentityServer is designed to be a customizable solution. Each instance is typically customized to suit an individual organization and/or set of applications' needs.
 
@@ -88,7 +90,7 @@ IdentityServer also hosts a public demo site that can be used to test various pr
 
 ## JavaScript clients
 
-Many cloud native applications leverage server-side APIs and rich client single page applications (SPAs) on the front end. IdentityServer ships a [JavaScript client](http://docs.identityserver.io/en/latest/quickstarts/6_javascript_client.html) (`oidc-client.js`) via NPM that can be added to SPAs to enable them to use IdentityServer for sign in, sign out, and token-based authentication of web APIs.
+Many cloud-native applications leverage server-side APIs and rich client single page applications (SPAs) on the front end. IdentityServer ships a [JavaScript client](http://docs.identityserver.io/en/latest/quickstarts/6_javascript_client.html) (`oidc-client.js`) via NPM that can be added to SPAs to enable them to use IdentityServer for sign in, sign out, and token-based authentication of web APIs.
 
 ## References
 

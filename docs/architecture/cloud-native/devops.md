@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Cloud Native DevOps
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 The favorite mantra of software consultants is to answer "It depends" to any question posed. It isn't because software consultants are fond of not taking a position. It's because there's no one true answer to any questions in software. There's no absolute right and wrong, but rather a balance between opposites.
 
 Take, for instance, the two major schools of developing web applications: Single Page Applications (SPAs) vs. server-side applications. On the one hand, the user experience tends to be better with SPAs and the amount of traffic to the web server can be minimized making it possible to host them on something as simple as static hosting. On the other hand, SPAs tend to be slower to develop and more difficult to test. Which one is the right choice? Well, it depends on your situation.

@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Deploying containers in Azure
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Containers provide many benefits, one of which is portability. You can easily take the same container you've developed and tested locally and deploy it to Azure where it can run your app in staging and production environments. Azure provides a number of options for container-based app hosting and likewise supports several different means of deployment. The most common and most flexible approach is to deploy your containers to Azure Container Registry (ACR), where they are accessible by whatever services you wish to use to host them. Azure Web App for Containers, Azure Kubernetes Services (AKS), and Azure Container Instance (ACI) all can access container images that have been pushed to ACR.
 
 ## Azure Container Registry

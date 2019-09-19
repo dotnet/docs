@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Application resiliency patterns
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 The first line of defense is software-enabled application resiliency. 
 
 While you could invest considerable time writing your own resiliency framework, such products already exist. For example, [Polly](http://www.thepollyproject.org/) is a comprehensive .NET resilience and transient-fault-handling library that allows developers to express resiliency policies in a fluent and thread-safe manner. Polly targets applications built with either the full .NET Framework or .NET Core. Figure 6-2 shows the resiliency policies (that is, functionality) available from the Polly Library. These policies can be applied individually or combined together.
@@ -19,15 +21,15 @@ Note how in the previous figure the resiliency policies apply to request message
 
 **Figure 6-3**. HTTP status codes to retry
 
-Question: Would you retry an HTTP Status Code of 403 - Forbidden? No. Here, the system is functioning properly, but informing the caller that he or she isn't authorized to perform the requested operation. Care must be taken to retry only those operations caused by failures.
+Question: Would you retry an HTTP Status Code of 403 - Forbidden? No. Here, the system is functioning properly, but informing the caller that they aren't authorized to perform the requested operation. Care must be taken to retry only those operations caused by failures.
 
-As recommended in Chapter 1, Microsoft developers constructing cloud native applications should be targeting  the .NET Core framework. Version 2.1 introduced the [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) library for creating HTTP Client instances for interacting with URL-based resources. Superseding the original HTTPClient class, the factory class supports many enhanced features, one of which is [tight integration](https://docs.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly) with the Polly resiliency library. With it, you can easily define resiliency policies in the application Startup class to to handle partial failures and connectivity issues.
+As recommended in Chapter 1, Microsoft developers constructing cloud-native applications should be targeting .NET Core. Version 2.1 introduced the [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) library for creating HTTP Client instances for interacting with URL-based resources. Superseding the original HTTPClient class, the factory class supports many enhanced features, one of which is [tight integration](../../standard/microservices-architecture/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) with the Polly resiliency library. With it, you can easily define resiliency policies in the application Startup class to handle partial failures and connectivity issues.
 
 Next, let's expand on retry and circuit breaker patterns.
 
 ### Retry pattern
 
-In a distributed cloud native environment, calls to services and cloud resources can fail because of transient (short-lived) failures, which typically correct themselves after a brief period of time. Implementing a retry strategy helps a cloud native service handle these scenarios.
+In a distributed cloud-native environment, calls to services and cloud resources can fail because of transient (short-lived) failures, which typically correct themselves after a brief period of time. Implementing a retry strategy helps a cloud-native service handle these scenarios.
 
 The [Retry pattern](https://docs.microsoft.com/azure/architecture/patterns/retry) enables a service to retry a failed request operation a (configurable) number of times with an exponentially increasing wait time. Figure 6-4 shows a retry in action.
 
@@ -35,7 +37,7 @@ The [Retry pattern](https://docs.microsoft.com/azure/architecture/patterns/retry
 
 **Figure 6-4**. Retry pattern in action
 
-In the prevous figure, a retry pattern has been implemented for a request operation. It's configured to allow up to four retries before failing with a backoff interval (wait time) starting at two seconds, which exponentially doubles for each subsequent attempt.
+In the previous figure, a retry pattern has been implemented for a request operation. It's configured to allow up to four retries before failing with a backoff interval (wait time) starting at two seconds, which exponentially doubles for each subsequent attempt.
 
 - The first invocation fails and returns an HTTP status code of 500. The application waits for two seconds and reties the call.
 - The second invocation also fails and returns an HTTP status code of 500. The application now doubles the backoff interval to four seconds and retries the call.

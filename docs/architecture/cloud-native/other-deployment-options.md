@@ -5,6 +5,8 @@ ms.date: 06/30/2019
 ---
 # Other Container Deployment Options
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 In addition to deploying to AKS, you can also deploy containers to Azure App Service for Containers and Azure Container Instances.
 
 ## When does it make sense to deploy to App Service for Containers?

@@ -6,6 +6,8 @@ ms.date: 06/30/2019
 
 # Azure platform resiliency
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Building a reliable application in the cloud is different from traditional on-premises application development. While historically you purchased higher-end hardware to scale up, in a cloud environment you scale out. Instead of trying to prevent failures, the goal is to minimize their effects and keep the system stable.
 
 That said, reliable cloud applications display distinct characteristics:
@@ -13,7 +15,7 @@ That said, reliable cloud applications display distinct characteristics:
 - They're resilient, recover gracefully from problems and continue to function.
 - They're highly available (HA) and run as designed in a healthy state with no significant downtime.
 
-Understanding how these characteristics work together - and how they affect cost - is essential to building a reliable cloud native application. We'll next look at ways that you can build resiliency and availability into your cloud native applications leveraging features from the Azure cloud.
+Understanding how these characteristics work together - and how they affect cost - is essential to building a reliable cloud-native application. We'll next look at ways that you can build resiliency and availability into your cloud-native applications leveraging features from the Azure cloud.
 
 ## Design with redundancy
 

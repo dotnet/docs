@@ -3,9 +3,11 @@ title: Distributed data
 description: Architecting Cloud Native .NET Apps for Azure | Distributed Data for Cloud Native Apps
 ms.date: 06/30/2019
 ---
-# Distributed data for cloud native apps
+# Distributed data for cloud-native apps
 
-When constructing a cloud native system that consists of many independent microservices, the way you think about data storage changes.
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
+When constructing a cloud-native system that consists of many independent microservices, the way you think about data storage changes.
 
 Traditional monolithic applications favor a centralized data store shown in Figure 5-1. 
 

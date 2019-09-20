@@ -31,7 +31,7 @@ landingContent:
             url: resources/tasks.md
           - text: How to choose an algorithm
             url: how-to-choose-an-ml-net-algorithm.md
-          - text: Data transforms
+          - text: Data transformations
             url: resources/transforms.md
 
    # Model Builder Card
@@ -63,7 +63,6 @@ landingContent:
             url: tutorials/sentiment-analysis.md
           - text: Detect objects in images using ONNX
             url: tutorials/object-detection-onnx.md
-    linkLists:
       - linkListType: how-to-guide
         links:
           - text: Load data from various sources  
@@ -82,7 +81,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: About the ML.NET CLI
+          - text: Automate model training with the ML.NET CLI
             url: automate-training-with-cli.md
       - linkListType: quickstart
         links:

@@ -5,7 +5,6 @@ author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019
 ---
-
 # Blazor for ASP.NET Web Forms Developers
 
 ![Screenshot that shows the Serverless Apps ebook cover.](./media/index/blazor-for-web-forms-developers-cover.png)

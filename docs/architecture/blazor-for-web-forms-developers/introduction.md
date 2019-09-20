@@ -5,7 +5,6 @@ author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019
 ---
-
 # An introduction to Blazor for ASP.NET Web Forms developers
 
 ASP.NET Web Forms has been a staple of .NET web development since the .NET Framework first shipped in 2002. Back when the Web was still largely in its infancy, ASP.NET Web Forms made building web apps simple and productive by adopting many of the patterns that were used for desktop development. In ASP.NET Web Forms, web pages can be quickly composed from reusable UI controls. User interactions are handled naturally as events. A rich ecosystem of Web Forms UI controls provided by Microsoft and control vendors makes connecting to data sources and displaying rich visualizations easy. For the visually inclined, the Web Forms designer provides a simple drag-and-drop interface for managing controls.
@@ -57,4 +56,4 @@ Getting started with Blazor is easy. Go to <https://blazor.net> and follow the l
 
 >[!div class="step-by-step"]
 >[Previous](index.md)
->[Next](hosting-models.md)
+>[Next](architecture-comparison.md)

@@ -644,3 +644,6 @@ Many operations in ASP.NET Core are asynchronous, which allows easier off-loadin
 ## Migration conclusion
 
 At this point, you've seen many examples of what it takes to move a Web Forms project to Blazor. For a full example, see the [eShopOnBlazor](https://github.com/dotnet-architecture/eShopOnBlazor) project.
+
+>[!div class="step-by-step"]
+>[Previous](security-authentication-authorization.md)

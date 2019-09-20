@@ -634,3 +634,7 @@ The visibility of the component's members in the base class must be `protected` 
 ## Additional resources
 
 The preceding isn't an exhaustive treatment of all aspects of Blazor components. For more information on how to [Create and use ASP.NET Core Razor components](/aspnet/core/blazor/components), see the Blazor documentation.
+
+>[!div class="step-by-step"]
+>[Previous](app-startup.md)
+>[Next](pages-routing-layouts.md)

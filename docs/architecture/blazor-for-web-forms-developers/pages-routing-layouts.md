@@ -271,3 +271,7 @@ The rendered output for the page would then be:
 Layouts in Blazor don't typically define the root HTML elements for a page (`<html>`, `<body>`, `<head>`, and so on). The root HTML elements are instead defined in a Blazor app's host page, which is used to render the initial HTML content for the app (see [Bootstrap Blazor](project-structure.md#bootstrap-blazor)). The host page can render multiple root components for the app with surrounding markup.
 
 Components in Blazor, including pages, can't render `<script>` tags. This rendering restriction exists because `<script>` tags get loaded once and then can't be changed. Unexpected behavior may occur if you try to render the tags dynamically using Razor syntax. Instead, all `<script>` tags should be added to the app's host page.
+
+>[!div class="step-by-step"]
+>[Previous](components.md)
+>[Next](state-management.md)

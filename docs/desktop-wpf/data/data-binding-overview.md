@@ -4,6 +4,7 @@ description: Learn about the different data sources you can add to your project 
 author: thraka
 ms.date: 09/19/2019
 ms.author: adegeo
+dev_langs: ["csharp", "vb"]
 ---
 
 # Data Binding Overview
@@ -110,11 +111,11 @@ For an example, see [Control When the TextBox Text Updates the Source](../../fra
 
 ## Creating a binding
 
-To recapitulate some of the concepts discussed in the previous sections, you establish a binding using the <xref:System.Windows.Data.Binding> object, and each binding usually has four components: binding target, target property, binding source, and a path to the source value to use. This section discusses how to set up a binding.
+To restate some of the concepts discussed in the previous sections, you establish a binding using the <xref:System.Windows.Data.Binding> object, and each binding usually has four components: binding target, target property, binding source, and a path to the source value to use. This section discusses how to set up a binding.
 
 Consider the following example, in which the binding source object is a class named *MyData* that is defined in the *SDKSample* namespace. For demonstration purposes, *MyData* class has a string property named *ColorName*, of which the value is set to "Red". Thus, this example generates a button with a red background.
 
-[!code-xaml[BindNonTextProperty#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BindNonTextProperty/CS/Page1.xaml#1)]
+[!code-xaml[BindNonTextProperty](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/AutoConvertPropertyToColor.xaml#BindAutoConvertColor)]
 
 For more information on the binding declaration syntax and examples of how to set up a binding in code, see [Binding Declarations Overview](../../framework/wpf/data/binding-declarations-overview.md).
 
@@ -130,7 +131,7 @@ Notice that in the previous example, the binding source is specified by setting 
 
 There are several ways to specify the binding source object. Using the <xref:System.Windows.FrameworkElement.DataContext%2A> property on a parent element is useful when you are binding multiple properties to the same source. However, sometimes it may be more appropriate to specify the binding source on individual binding declarations. For the previous example, instead of using the <xref:System.Windows.FrameworkElement.DataContext%2A> property, you can specify the binding source by setting the <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> property directly on the binding declaration of the button, as in the following example:
 
-[!code-xaml[BindNonTextProperty#BackgroundBindingCompact](~/samples/snippets/csharp/VS_Snippets_Wpf/BindNonTextProperty/CS/Page2.xaml#backgroundbindingcompact)]
+[!code-xaml[BindNonTextPropertyCompactBinding](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/AutoConvertPropertyToColor.xaml#BindAutoConvertColorCompactBinding)]
 
 Other than setting the <xref:System.Windows.FrameworkElement.DataContext%2A> property on an element directly, inheriting the <xref:System.Windows.FrameworkElement.DataContext%2A> value from an ancestor (such as the button in the first example), and explicitly specifying the binding source by setting the <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> property on the binding (such as the button the last example), you can also use the <xref:System.Windows.Data.Binding.ElementName%2A> property or the <xref:System.Windows.Data.Binding.RelativeSource%2A> property to specify the binding source. The <xref:System.Windows.Data.Binding.ElementName%2A> property is useful when you are binding to other elements in your application, such as when you are using a slider to adjust the width of a button. The <xref:System.Windows.Data.Binding.RelativeSource%2A> property is useful when the binding is specified in a <xref:System.Windows.Controls.ControlTemplate> or a <xref:System.Windows.Style>. For more information, see [Specify the Binding Source](../../framework/wpf/data/how-to-specify-the-binding-source.md).
 
@@ -142,7 +143,7 @@ For syntax information and examples, see the <xref:System.Windows.Data.Binding.P
 
 Although we have emphasized that the <xref:System.Windows.Data.Binding.Path%2A> to the value to use is one of the four necessary components of a binding, in the scenarios that you want to bind to an entire object, the value to use would be the same as the binding source object. In those cases, it is applicable to not specify a <xref:System.Windows.Data.Binding.Path%2A>. Consider the following example:
 
-[!code-xaml[MasterDetail#EmptyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/MasterDetail/CSharp/Page1.xaml#emptybinding)]
+[!code-xaml[EmptyBinding](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/EmptyBinding.xaml#EmptyBinding)]
 
 The above example uses the empty binding syntax: {Binding}. In this case, the <xref:System.Windows.Controls.ListBox> inherits the DataContext from a parent DockPanel element (not shown in this example). When the path is not specified, the default is to bind to the entire object. In other words, in this example, the path has been left out because we are binding the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to the entire object. (See the [Binding to Collections](#binding-to-collections) section for an in-depth discussion.)
 
@@ -156,8 +157,8 @@ Before getting into other features and usages of data binding, it would be usefu
 
 Consider the following example where `myDataObject` is an instance of `MyData` class, `myBinding` is the source <xref:System.Windows.Data.Binding> object, and `MyData` class is a defined class that contains a string property named `MyDataProperty`. This example binds the text content of `mytext`, an instance of <xref:System.Windows.Controls.TextBlock>, to `MyDataProperty`.
 
-[!code-csharp[CodeOnlyBinding#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CodeOnlyBinding/CSharp/binding.cs#1)]
-[!code-vb[CodeOnlyBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CodeOnlyBinding/VisualBasic/App.vb#1)]
+[!code-csharp[CodeOnlyBinding](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/ManualBinding.cs#CodeOnlyBinding)]
+[!code-vb[CodeOnlyBinding](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/vb/ManualBinding.vb#CodeOnlyBinding)]
 
 You can use the same *myBinding* object to create other bindings. For example, you may use *myBinding* object to bind the text content of a check box to *MyDataProperty*. In that scenario, there will be two instances of <xref:System.Windows.Data.BindingExpression> sharing the *myBinding* object.
 
@@ -177,8 +178,8 @@ Adding this information to the figure the [Creating a Binding](#creating-a-bindi
 
 However, what if instead of having a property of type string your binding source object has a *Color* property of type <xref:System.Windows.Media.Color>? In that case, in order for the binding to work you would need to first turn the *Color* property value into something that the <xref:System.Windows.Controls.Control.Background%2A> property accepts. You would need to create a custom converter by implementing the <xref:System.Windows.Data.IValueConverter> interface, as in the following example:
 
-[!code-csharp[ColorPicker_snip#16](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerLib/ColorPicker.cs#16)]
-[!code-vb[ColorPicker_snip#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColorPicker_snip/visualbasic/colorpickerlib/colorpicker.vb#16)]
+[!code-csharp[CodeOnlyBinding](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/ColorBrushConverter.cs#ColorBrushConverter)]
+[!code-vb[CodeOnlyBinding](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/vb/ColorBrushConverter.vb#ColorBrushConverter)]
 
 The <xref:System.Windows.Data.IValueConverter> reference page provides more information.
 

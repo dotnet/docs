@@ -15,10 +15,10 @@ For this example, the eShop app available on [GitHub](https://github.com/dotnet-
 
 Why should a working app be migrated to Blazor? Many times, there's no need. ASP.NET Web Forms will continue to be supported for many years. However, many of the features that Blazor provides are only supported on a migrated app. Such features include:
 
-- Performance improvements in the framework such as `Span<T>`
-- Ability to run as WebAssembly
-- Cross-platform support for Linux and macOS
-- App-local deployment or shared framework deployment without impacting other apps
+* Performance improvements in the framework such as `Span<T>`
+* Ability to run as WebAssembly
+* Cross-platform support for Linux and macOS
+* App-local deployment or shared framework deployment without impacting other apps
 
 If these or other new features are compelling enough, there may be value in migrating the app. The migration can take different shapes; it can be the entire app, or only certain endpoints that require the changes. The decision to migrate is ultimately based on the business problems to be solved by the developer.
 
@@ -26,9 +26,9 @@ If these or other new features are compelling enough, there may be value in migr
 
 As described in the [hosting models](hosting-models.md) chapter, a Blazor app can be hosted in two different ways: server-side and client-side. The server-side model uses ASP.NET Core SignalR connections to manage the DOM updates while running any actual code on the server. The client-side model runs as WebAssembly within a browser and requires no server connections. There are a number of differences that may affect which is best for a specific app:
 
-- Running as WebAssembly is still in development and may not support all features (such as threading) at the current time
-- Chatty communication between the client and server may cause latency issues in server-side mode
-- Access to databases and internal or protected services require a separate service with client-side hosting
+* Running as WebAssembly is still in development and may not support all features (such as threading) at the current time
+* Chatty communication between the client and server may cause latency issues in server-side mode
+* Access to databases and internal or protected services require a separate service with client-side hosting
 
 At the time of writing, the server-side model more closely resembles Web Forms. Most of this chapter focuses on the server-side hosting model, as it's production-ready.
 
@@ -616,9 +616,9 @@ Data access is an important aspect of any app. The eShop project stores catalog 
 
 The following EF-related changes were necessary to eShop:
 
-- In .NET Framework, the `DbContext` object accepts a string of the form *name=ConnectionString* and uses the connection string from
+* In .NET Framework, the `DbContext` object accepts a string of the form *name=ConnectionString* and uses the connection string from
   `ConfigurationManager.AppSettings[ConnectionString]` to connect. In .NET Core, this isn't supported. The connection string must be supplied.
-- The database was accessed in a synchronous way. Though this works, scalability may suffer. This logic should be moved to an asynchronous pattern.
+* The database was accessed in a synchronous way. Though this works, scalability may suffer. This logic should be moved to an asynchronous pattern.
 
 Although there isn't the same native support for dataset binding, Blazor provides flexibility and power with its C# support in a Razor page. For example, you can perform calculations and display the result. For more information on data patterns in Blazor, see the [Data access](data.md) chapter.
 
@@ -628,18 +628,18 @@ Finally, there are some important architectural differences to consider when mig
 
 Because Blazor is built on .NET Core, there are considerations in ensuring support on .NET Core. Some of the major changes include the removal of the following features:
 
-- Multiple AppDomains
-- Remoting
-- Code Access Security (CAS)
-- Security Transparency
+* Multiple AppDomains
+* Remoting
+* Code Access Security (CAS)
+* Security Transparency
 
 For more information on techniques to identify necessary changes to support running on .NET Core, see [Port your code from .NET Framework to .NET Core](/dotnet/core/porting).
 
 ASP.NET Core is a reimagined version of ASP.NET and has some changes that may not initially seem obvious. The main changes are:
 
-- No synchronization context, which means there's no `HttpContext.Current`, `Thread.CurrentPrincipal`, or other static accessors
-- No shadow copying
-- No request queue
+* No synchronization context, which means there's no `HttpContext.Current`, `Thread.CurrentPrincipal`, or other static accessors
+* No shadow copying
+* No request queue
 
 Many operations in ASP.NET Core are asynchronous, which allows easier off-loading of I/O-bound tasks. It's important to never block by using `Task.Wait()` or `Task.GetResult()`, which can quickly exhaust thread pool resources.
 

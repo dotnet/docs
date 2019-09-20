@@ -333,14 +333,7 @@ Without the use of data templates, our application UI in the [What Is Data Bindi
 
 As shown in the example in the previous section, both the <xref:System.Windows.Controls.ListBox> control and the <xref:System.Windows.Controls.ContentControl> are bound to the entire collection object (or more specifically, the view over the collection object) of *AuctionItem*s. Without specific instructions of how to display the data collection, the <xref:System.Windows.Controls.ListBox> is displaying a string representation of each object in the underlying collection and the <xref:System.Windows.Controls.ContentControl> is displaying a string representation of the object it is bound to.
 
-| Reference | Output |
-| --------- | ------ |
-| `@"System.Windows.DataTemplate?text=DataTemplates"` | @"System.Windows.DataTemplate?text=DataTemplates" |
-| `<xref:System.Windows.DataTemplate?title=DataTemplates>`                | <xref:System.Windows.DataTemplate?title=DataTemplates> |
-| `<xref:System.Windows.DataTemplate?text=DataTemplates>`                | <xref:System.Windows.DataTemplate?text=DataTemplates> |
-| `[](xref:System.Windows.DataTemplate?title=Datatemplates)`             | [](xref:System.Windows.DataTemplate?title=Datatemplates) |
-
-To solve that problem, the application defines @"System.Windows.DataTemplate?text=DataTemplates". As shown in the example in the previous section, the <xref:System.Windows.Controls.ContentControl> explicitly uses the *detailsProductListingTemplate* <xref:System.Windows.DataTemplate>. The <xref:System.Windows.Controls.ListBox> control implicitly uses the following <xref:System.Windows.DataTemplate> when displaying the *AuctionItem* objects in the collection:
+To solve that problem, the application defines <xref:System.Windows.DataTemplate?text=DataTemplates>. As shown in the example in the previous section, the <xref:System.Windows.Controls.ContentControl> explicitly uses the *detailsProductListingTemplate* data template. The <xref:System.Windows.Controls.ListBox> control implicitly uses the following data template when displaying the *AuctionItem* objects in the collection:
 
 [!code-xaml[AuctionItemDataTemplate](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/CollectionView.xaml#AuctionItemDataTemplate)]
 
@@ -356,7 +349,7 @@ Most applications that take user input need to have validation logic to ensure t
 
 The WPF data binding model allows you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> object. For example, the following example binds a <xref:System.Windows.Controls.TextBox> to a property named `StartPrice` and adds a <xref:System.Windows.Controls.ExceptionValidationRule> object to the <xref:System.Windows.Data.Binding.ValidationRules%2A?displayProperty=nameWithType> property.
 
-[!code-xaml[DataBindingLab#DefaultValidation](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#defaultvalidation)]
+[!code-xaml[TextboxStartPrice](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/DataValidation.xaml#TextboxStartPrice)]
 
 A <xref:System.Windows.Controls.ValidationRule> object checks whether the value of a property is valid. WPF has the following two types of built-in <xref:System.Windows.Controls.ValidationRule> objects:
 
@@ -366,12 +359,12 @@ A <xref:System.Windows.Controls.ValidationRule> object checks whether the value 
 
 You can also create your own validation rule by deriving from the <xref:System.Windows.Controls.ValidationRule> class and implementing the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method. The following example shows the rule used by the *Add Product Listing* "Start Date" <xref:System.Windows.Controls.TextBox> from the [What Is Data Binding](#what-is-data-binding) section:
 
-[!code-csharp[DataBindingLab#2](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/FutureDateRule.cs#2)]
-[!code-vb[DataBindingLab#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/FutureDateRule.vb#2)]
+[!code-csharp[FutureDateRule](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/FutureDateRule.cs#FutureDateRule)]
+[!code-vb[FutureDateRule](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/vb/FutureDateRule.vb#FutureDateRule)]
 
 The *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> uses this *FutureDateRule*, as shown in the following example:
 
-[!code-xaml[DataBindingLab#CustomValidation](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#customvalidation)]
+[!code-xaml[TextboxStartDate](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/DataValidation.xaml#TextboxStartDate)]
 
 Because the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>, the binding engine updates the source value on every keystroke, which means it also checks every rule in the <xref:System.Windows.Data.Binding.ValidationRules%2A> collection on every keystroke. We discuss this further in the Validation Process section.
 
@@ -379,13 +372,13 @@ Because the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value is <
 
 If the user enters an invalid value, you may want to provide some feedback about the error on the application UI. One way to provide such feedback is to set the <xref:System.Windows.Controls.Validation.ErrorTemplate%2A?displayProperty=nameWithType> attached property to a custom <xref:System.Windows.Controls.ControlTemplate>. As shown in the previous subsection, the *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> uses an <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> called *validationTemplate*. The following example shows the definition of *validationTemplate*:
 
-[!code-xaml[DataBindingLab#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#1)]
+[!code-xaml[ControlTemplate](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/DataValidation.xaml#ControlTemplate)]
 
 The <xref:System.Windows.Controls.AdornedElementPlaceholder> element specifies where the control being adorned should be placed.
 
 In addition, you may also use a <xref:System.Windows.Controls.ToolTip> to display the error message. Both the *StartDateEntryForm* and the *StartPriceEntryForm*<xref:System.Windows.Controls.TextBox>es use the style *textStyleTextBox*, which creates a <xref:System.Windows.Controls.ToolTip> that displays the error message. The following example shows the definition of *textStyleTextBox*. The attached property <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> is `true` when one or more of the bindings on the properties of the bound element are in error.
 
-[!code-xaml[DataBindingLab#14](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#14)]
+[!code-xaml[TextBoxStyle](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/DataValidation.xaml#TextBoxStyle)]
 
 With the custom <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> and the <xref:System.Windows.Controls.ToolTip>, the *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> looks like the following when there is a validation error:
 

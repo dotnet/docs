@@ -59,7 +59,8 @@ Each .NET Core version has a minimum version of Visual Studio required. To verif
 
 The following table lists the minimum version for each SDK:
 
-| .NET Core SDK version | Visual Studio version |
+| .NET Core SDK version | Visual Studio version                      |
+| --------------------- | ------------------------------------------ |
 | 3.0                   | Visual Studio 2019 version 16.3 or higher. |
 | 2.2                   | Visual Studio 2017 version 15.9 or higher. |
 | 2.1                   | Visual Studio 2017 version 15.7 or higher. |

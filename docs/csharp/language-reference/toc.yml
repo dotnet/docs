@@ -293,7 +293,7 @@
     displayName: ">, <, >=, <=, greater, less"
   - name: Member access operators
     href: operators/member-access-operators.md
-    displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation"
+    displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
   - name: Type-testing and cast operators
     href: operators/type-testing-and-cast.md
     displayName: "is operator, is keyword, as operator, as keyword, typeof, (), conversion"
@@ -593,7 +593,7 @@
     href: ../../../_csharplang/proposals/csharp-7.2/conditional-ref.md
   - name: Leading digit separator
     href: ../../../_csharplang/proposals/csharp-7.2/leading-separator.md
-- name: C# 7.3 specfication proposals
+- name: C# 7.3 specification proposals
   items:
   - name: Unmanaged generic type constraints
     href: ../../../_csharplang/proposals/csharp-7.3/blittable.md

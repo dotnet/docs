@@ -14,9 +14,9 @@ Windows Communication Foundation (WCF) is the recommended and secure choice over
   
 - The remote service returns an object by-reference to the client  
   
- For security reasons, sending an object by-reference from the client to the service is not allowed in WCF. A scenario that requires a conversation back and forth between client and server can be achieved in WCF using a duplex service.  For more information about duplex services, see [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md).  
+ For security reasons, sending an object by-reference from the client to the service is not allowed in WCF. A scenario that requires a conversation back and forth between client and server can be achieved in WCF using a duplex service.  For more information about duplex services, see [Duplex Services](../wcf/feature-details/duplex-services.md).  
   
- For more details about creating WCF services and clients for those services, see [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md), [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md), and [Building Clients](../../../docs/framework/wcf/building-clients.md).  
+ For more details about creating WCF services and clients for those services, see [Basic WCF Programming](../wcf/basic-wcf-programming.md), [Designing and Implementing Services](../wcf/designing-and-implementing-services.md), and [Building Clients](../wcf/building-clients.md).  
   
 ## DCOM example code  
  For these scenarios, the DCOM interfaces that are illustrated using WCF have the following structure:  
@@ -76,7 +76,7 @@ public interface ICustomerManager
 ### Step 2: Define the data contract  
  Next you should create a data contract for the service, which will describe how the data will be exchanged between the service and its clients.  Classes described in the data contract should be marked with the [<xref:System.Runtime.Serialization.DataContractAttribute>] attribute. The individual properties or fields you want visible to both client and server should be marked with the [<xref:System.Runtime.Serialization.DataMemberAttribute>] attribute. If you want types derived from a class in the data contract to be allowed, you must identify them with the [<xref:System.Runtime.Serialization.KnownTypeAttribute>] attribute. WCF will only serialize or deserialize types in the service interface and types identified as known types. If you attempt to use a type that is not a known type, an exception will occur.  
   
- For more information about data contracts, see [Data Contracts](../../../docs/framework/wcf/samples/data-contracts.md).  
+ For more information about data contracts, see [Data Contracts](../wcf/samples/data-contracts.md).  
   
 ```csharp  
 [DataContract]  
@@ -164,7 +164,7 @@ public class CustomerService: ICustomerManager
 ```  
   
 ### Step 5: Run the service  
- Finally, you can self-host it in a console application by adding the following lines to the service app, and starting the app. For more information about other ways to host a WCF service application, [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
+ Finally, you can self-host it in a console application by adding the following lines to the service app, and starting the app. For more information about other ways to host a WCF service application, [Hosting Services](../wcf/hosting-services.md).  
   
 ```csharp  
 ServiceHost customerServiceHost = new ServiceHost(typeof(CustomerService));  
@@ -417,7 +417,7 @@ if (sessionBoundObject.GetCurrentValue() == "Hello")
   
 ## See also
 
-- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
-- [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)
-- [Building Clients](../../../docs/framework/wcf/building-clients.md)
-- [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md)
+- [Basic WCF Programming](../wcf/basic-wcf-programming.md)
+- [Designing and Implementing Services](../wcf/designing-and-implementing-services.md)
+- [Building Clients](../wcf/building-clients.md)
+- [Duplex Services](../wcf/feature-details/duplex-services.md)

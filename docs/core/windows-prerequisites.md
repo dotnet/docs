@@ -56,6 +56,8 @@ You can use any editor to develop .NET Core applications using the .NET Core SDK
 
 You can read more about the changes in Visual Studio 2017 in the [release notes](/visualstudio/releasenotes/vs2017-relnotes).
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.x](#tab/netcore2x)
 
 To develop .NET Core apps in Visual Studio 2017 using the .NET Core 2.2 SDK:
@@ -92,8 +94,9 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 
 > [!IMPORTANT]
 > It's possible to use Visual Studio 2015 for .NET Core 1.x development, but it's not recommended for the following reasons:
-  > * The .NET Core tooling is a preview version, which is not supported.
-  > * The projects are project.json-based, which is deprecated.
+>
+> * The .NET Core tooling is a preview version, which is not supported.
+> * The projects are project.json-based, which is deprecated.
 >
 > For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
 

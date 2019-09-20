@@ -16,7 +16,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:Key="stringKeyValue".../>  
 -or-  
 <object x:Key="{markupExtensionUsage}".../>  
@@ -24,7 +24,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
 ## XAML Attribute Usage (WPF-specific)  
   
-```  
+```xaml  
 <object.Resources>  
   <object x:Key="stringKeyValue".../>  
 </object.Resources>  

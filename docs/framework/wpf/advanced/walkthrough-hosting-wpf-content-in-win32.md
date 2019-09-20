@@ -58,7 +58,6 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 ## Implementing the Host Application
  This section describes how to host [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a basic [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application. The content itself is implemented in C++/CLI as a managed class. For the most part, it is straightforward [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] programming. The key aspects of the content implementation are discussed in [Implementing the WPF Content](#implementing_the_wpf_page).
 
-<a name="autoNestedSectionsOUTLINE1"></a>
 - [The Basic Application](#the_basic_application)
 
 - [Hosting the WPF Content](#hosting_the_wpf_page)
@@ -163,7 +162,6 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 ## Implementing the WPF Page
  You can host and use the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content without any knowledge of the actual implementation. If the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content had been packaged in a separate DLL, it could have been built in any common language runtime (CLR) language. Following is a brief walkthrough of the C++/CLI implementation that is used in the sample. This section contains the following subsections.
 
-<a name="autoNestedSectionsOUTLINE2"></a>
 - [Layout](#page_layout)
 
 - [Returning the Data to the Host Window](#returning_data_to_window)

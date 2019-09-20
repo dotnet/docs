@@ -13,7 +13,7 @@ This example declares an array of `String` objects named `zooAnimals`, populates
   
 ## Example  
   
-```  
+```vb  
 Private Sub sortAnimals()  
     Dim zooAnimals(2) As String  
     zooAnimals(0) = "lion"  

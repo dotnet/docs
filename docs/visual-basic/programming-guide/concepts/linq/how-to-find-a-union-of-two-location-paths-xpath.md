@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 Results are identical  
 <Category>A</Category>  
 <Price>24.50</Price>  

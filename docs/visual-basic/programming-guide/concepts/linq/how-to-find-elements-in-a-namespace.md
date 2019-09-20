@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 Results are identical  
 <aw:PurchaseOrder PONumber="11223" Date="2000-01-15" xmlns:aw="http://www.adventure-works.com">  
     <aw:ShippingAddress>  

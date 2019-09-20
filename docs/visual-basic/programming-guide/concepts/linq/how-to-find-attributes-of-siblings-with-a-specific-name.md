@@ -42,7 +42,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 id="bk101"  
 id="bk102"  

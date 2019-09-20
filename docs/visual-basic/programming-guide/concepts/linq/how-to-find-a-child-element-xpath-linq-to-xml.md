@@ -35,7 +35,7 @@ Console.WriteLine(el1)
   
  This example produces the following output:  
   
-```  
+```xml  
 Results are identical  
 <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
 ```  

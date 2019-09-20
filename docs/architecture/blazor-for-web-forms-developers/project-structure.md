@@ -156,11 +156,13 @@ To bootstrap Blazor, the app must:
 * Specify where on the page the root component (*App.Razor*) should be rendered.
 * Add the corresponding Blazor framework script.
 
-In the Blazor Server app, the root component's host page is defined in the *_Host.cshtml* file. This file defines a Razor Page, not a component. Razor Pages use Razor syntax to define a server-addressable page, very much like an *.aspx* page. The `Html.RenderComponent<TComponent>(RenderMode)` method is used to define where a root-level component should be rendered. The `RenderMode` option indicates the manner in which the component should be rendered. The following options exist:
+In the Blazor Server app, the root component's host page is defined in the *_Host.cshtml* file. This file defines a Razor Page, not a component. Razor Pages use Razor syntax to define a server-addressable page, very much like an *.aspx* page. The `Html.RenderComponentAsync<TComponent>(RenderMode)` method is used to define where a root-level component should be rendered. The `RenderMode` option indicates the manner in which the component should be rendered.
 
-* Rendered as static content (`RenderModel.Static`)
-* Rendered interactively once a connection with the browser has been established (`RenderMode.Server`)
-* First prerendered and then rendered interactively (`RenderMode.ServerPrerendered`)
+|Option                        |Description       |
+|------------------------------|------------------|
+|`RenderMode.Server`           |Rendered interactively once a connection with the browser is established|
+|`RenderMode.ServerPrerendered`|First prerendered and then rendered interactively|
+|`RenderMode.Static`           |Rendered as static content|
 
 The script reference to *_framework/blazor.server.js* establishes the real-time connection with the server and then deals with all user interactions and UI updates.
 

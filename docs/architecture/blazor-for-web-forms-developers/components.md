@@ -104,13 +104,13 @@ The various directive attributes used by Blazor (`@onclick`, `@bind`, `@ref`, an
 
 Many of the syntaxes used in *.aspx* and *.ascx* files have parallel syntaxes in Razor. Below is a simple comparison of the syntaxes for ASP.NET Web Forms and Razor.
 
-Syntax       | .aspx | Example | .razor | Example
------------- | ----- | ------- | ------ | -------
-Directives   | `<%@ [directive] %>` | `<%@ Page %>` | `@[directive]` | `@page`
-Code blocks  | `<% %>` | `<% int x = 123; %>`  | `@{ }` | `@{ int x = 123; }`
-Expressions<br>(HTML encoded) | `<%: %>` | `<%:DateTime.Now %>` | Implicit: `@`<br>Explicit: `@()` | `@DateTime.Now`<br>`@(DateTime.Now)`
-Comments     | `<%-- --%>` | `<%-- Commented --%>` | `@* *@` | `@* Commented *@`
-Data binding | `<%# %>` | `<%# Bind("Name") %>` | `@bind` | `<input @bind="username" />`
+|Feature                      |Web Forms           |Syntax               |Razor         |Syntax |
+|-----------------------------|--------------------|---------------------|--------------|-------|
+|Directives                   |`<%@ [directive] %>`|`<%@ Page %>`        |`@[directive]`|`@page`|
+|Code blocks                  |`<% %>`             |`<% int x = 123; %>` |`@{ }`        |`@{ int x = 123; }`|
+|Expressions<br>(HTML-encoded)|`<%: %>`            |`<%:DateTime.Now %>` |Implicit: `@`<br>Explicit: `@()`|`@DateTime.Now`<br>`@(DateTime.Now)`|
+|Comments                     |`<%-- --%>`         |`<%-- Commented --%>`|`@* *@`       |`@* Commented *@`|
+|Data binding                 |`<%# %>`            |`<%# Bind("Name") %>`|`@bind`       |`<input @bind="username" />`|
 
 To add members to the Razor component class, use the `@code` directive. This technique is similar to using a `<script runat="server">...</script>` block in an ASP.NET Web Forms user control or page.
 

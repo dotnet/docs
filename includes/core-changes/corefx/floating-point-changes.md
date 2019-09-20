@@ -6,7 +6,7 @@ Floating point parsing and formatting behavior (by the <xref:System.Double> and 
 
 In .NET Core 2.2 and earlier versions, formatting with <xref:System.Double.ToString%2A?displayProperty=nameWithType> and <xref:System.Single.ToString%2A?displayProperty=nameWithType>, and parsing with <xref:System.Double.Parse%2A?displayProperty=nameWithType>, <xref:System.Double.TryParse%2A?displayProperty=nameWithType>, <xref:System.Single.Parse%2A?displayProperty=nameWithType>, and <xref:System.Single.TryParse%2A?displayProperty=nameWithType> are not IEEE-compliant. As a result, it is impossible to guarantee that a value will roundtrip with any supported standard or custom format string. For some inputs, the attempt to parse a formatted value can fail, and for others, the parsed value doesn't equal the original value.
 
-Starting with .NET Core 3.0, parsing and formatting operations are IEEE 754-compliant. This ensures that the behavior of floating point types in .NET matches that of IEEE-compliant languages such as C#. For more information, see the [Floating-point parsing and formatting improvements in .NET Core 3.0](https://devblogs.microsoft.com/dotnet/floating-point-parsing-and-formatting-improvements-in-net-core-3-0/) blog post.
+Starting with .NET Core 3.0, parsing and formatting operations are IEEE 754-compliant. This ensures that the behavior of floating-point types in .NET matches that of IEEE-compliant languages such as C#. For more information, see the [Floating-point parsing and formatting improvements in .NET Core 3.0](https://devblogs.microsoft.com/dotnet/floating-point-parsing-and-formatting-improvements-in-net-core-3-0/) blog post.
 
 #### Version introduced
 

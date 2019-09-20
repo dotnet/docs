@@ -11,7 +11,7 @@ metadata:
   ms.collection: collection
   author: natke
   ms.author: nakersha
-  ms.date: 09/18/2019
+  ms.date: 09/20/2019
 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -25,16 +25,22 @@ landingContent:
         links:
           - text: What is ML.NET?
             url: how-does-mldotnet-work.md
-      - linkListType: quickstart
+      - linkListType: concept
         links:
-          - text: Model Builder
-            url: automate-training-with-model-builder.md
-          - text: AutoML CLI
-            url: automate-training-with-cli.md
+          - text: Machine learning model types
+            url: resources/tasks.md
+          - text: How to choose an algorithm
+            url: how-to-choose-an-ml-net-algorithm.md
+          - text: Data transforms
+            url: resources/transforms.md
 
    # Model Builder Card
   - title: Use Model Builder 
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Model Builder
+            url: automate-training-with-model-builder.md
       - linkListType: quickstart
         links:
           - text: Install Model Builder
@@ -74,6 +80,10 @@ landingContent:
   # CLI card
   - title:  ML.NET CLI
     linkLists:
+      - linkListType: overview
+        links:
+          - text: ML.NET CLI
+            url: automate-training-with-cli.md
       - linkListType: quickstart
         links:
           - text: Install ML.NET CLI
@@ -82,24 +92,6 @@ landingContent:
         links:
           - text: Analyze sentiment - ML.NET CLI & AutoML
             url: tutorials/mlnet-cli.md
-
-  # Concepts card
-  - title: Machine learning concepts
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Machine learning model types
-            url: resources/tasks.md
-          - text: How to choose an algorithm
-            url: how-to-choose-an-ml-net-algorithm.md
-          - text: Data transforms
-            url: resources/transforms.md
-          - text: Model evaluation metrics
-            url: resources/metrics.md
-          - text: Improve model accuracy
-            url: resources/improve-machine-learning-model-ml-net.md
-
- 
 
   # Reference card
   - title: API reference
@@ -110,7 +102,7 @@ landingContent:
             url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
           - text: ML.NET API reference (preview)
             url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
-          - text: CLI reference
+          - text: ML.NET CLI reference
             url: reference/ml-net-cli-reference
           - text: AutoML API reference
             url: https://docs.microsoft.com/dotnet/api/?view=automl-dotnet

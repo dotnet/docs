@@ -9,9 +9,9 @@ ms.date: 09/11/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Despite their significant project structure differences, ASP.NET Web Forms and Blazor share many similar concepts. Here we will look at the structure of a Blazor project and compare it to an ASP.NET Web Forms project.
+Despite their significant project structure differences, ASP.NET Web Forms and Blazor share many similar concepts. Here, we'll look at the structure of a Blazor project and compare it to an ASP.NET Web Forms project.
 
-To create your first Blazor app, follow the instructions in the [Blazor getting started steps](/aspnet/core/blazor/get-started). You can follow the instructions to create either a Blazor Server app or a Blazor WebAssembly app hosted in ASP.NET Core. Most of the code in both projects is the same; although, the hosting model-specific logic will differ.
+To create your first Blazor app, follow the instructions in the [Blazor getting started steps](/aspnet/core/blazor/get-started). You can follow the instructions to create either a Blazor Server app or a Blazor WebAssembly app hosted in ASP.NET Core. Except for the hosting model-specific logic, most of the code in both projects is the same.
 
 ## Project file
 
@@ -53,7 +53,7 @@ The project file for a Blazor WebAssembly app looks slightly more involved (exac
 
 Blazor WebAssembly projects target .NET Standard instead of .NET Core because they run in the browser on a WebAssembly-based .NET runtime. You can't install .NET into a web browser like you can on a server or developer machine. Consequently, the project references the Blazor framework using individual package references.
 
-By comparison, a default ASP.NET Web Forms project includes almost 300 lines of XML in its *.csproj* file, most of which is explicitly listing the various code and content files in the project. Many of the simplifications in the .NET Core- and .NET Standard-based projects come from the default targets and properties imported by referencing the `Microsoft.NET.Sdk.Web` SDK, often referred to as simply the "Web SDK". The Web SDK includes wildcards and other conveniences that simplify inclusion of code and content files in the project. You don't need to list the files explicitly. When targeting .NET Core, the Web SDK also adds framework references to both the .NET Core and ASP.NET Core shared frameworks. The frameworks are visible from the **Dependencies** > **Frameworks** node in the Solution Explorer window. The shared frameworks are collections of assemblies that were installed on the machine when installing .NET Core.
+By comparison, a default ASP.NET Web Forms project includes almost 300 lines of XML in its *.csproj* file, most of which is explicitly listing the various code and content files in the project. Many of the simplifications in the .NET Core- and .NET Standard-based projects come from the default targets and properties imported by referencing the `Microsoft.NET.Sdk.Web` SDK, often referred to as simply the Web SDK. The Web SDK includes wildcards and other conveniences that simplify inclusion of code and content files in the project. You don't need to list the files explicitly. When targeting .NET Core, the Web SDK also adds framework references to both the .NET Core and ASP.NET Core shared frameworks. The frameworks are visible from the **Dependencies** > **Frameworks** node in the **Solution Explorer** window. The shared frameworks are collections of assemblies that were installed on the machine when installing .NET Core.
 
 Although they're supported, individual assembly references are less common in .NET Core projects. Most project dependencies are handled as NuGet package references. You only need to reference top-level package dependencies in .NET Core projects. Transitive dependencies are included automatically. Instead of using the *packages.config* file commonly found in ASP.NET Web Forms projects to reference packages, package references are added to the project file using the `<PackageReference>` element.
 
@@ -65,7 +65,7 @@ Although they're supported, individual assembly references are less common in .N
 
 ## Entry point
 
-The Blazor Server app's entry point is defined in the *Program.cs* file, just like you would see in a Console app. When the app executes, it creates and runs a web host instance using defaults specific to web apps. The web host manages the Blazor Server app's lifecycle and sets up host-level services like configuration, logging, dependency injection, and the HTTP server. This code is mostly boilerplate and is often left unchanged.
+The Blazor Server app's entry point is defined in the *Program.cs* file, as you would see in a Console app. When the app executes, it creates and runs a web host instance using defaults specific to web apps. The web host manages the Blazor Server app's lifecycle and sets up host-level services. Examples of such services are configuration, logging, dependency injection, and the HTTP server. This code is mostly boilerplate and is often left unchanged.
 
 ```csharp
 public class Program
@@ -90,7 +90,7 @@ Blazor apps have a `Startup` class instead of a *Global.asax* file to define the
 
 ## Static files
 
-Unlike ASP.NET Web Forms projects, not all files in a Blazor project can be requested as static files. Only the files in the *wwwroot* folder are web-addressable. This folder is referred to the app's "web root". Anything outside of the app's web root is *not* web-addressable. This setup provides an additional level of security that prevents accidental exposing of project files over the web.
+Unlike ASP.NET Web Forms projects, not all files in a Blazor project can be requested as static files. Only the files in the *wwwroot* folder are web-addressable. This folder is referred to the app's "web root". Anything outside of the app's web root *isn't* web-addressable. This setup provides an additional level of security that prevents accidental exposing of project files over the web.
 
 ## Configuration
 
@@ -164,7 +164,7 @@ In the Blazor Server app, the root component's host page is defined in the *_Hos
 
 The script reference to *_framework/blazor.server.js* establishes the real-time connection with the server and then deals with all user interactions and UI updates.
 
-```cshtml
+```razor
 @page "/"
 @namespace BlazorApp1.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
@@ -228,11 +228,11 @@ public class Startup
 
 ## Build output
 
-When a Blazor project is built, all Razor component files are compiled along with the project code into a single assembly. Unlike ASP.NET Web Forms projects, Blazor doesn't support runtime compilation of the UI logic.
+When a Blazor project is built, all Razor component and code files are compiled into a single assembly. Unlike ASP.NET Web Forms projects, Blazor doesn't support runtime compilation of the UI logic.
 
 ## Run the app
 
-To run the Blazor Server app, press `F5` in Visual Studio. Blazor apps don't support runtime compilation. To see the results of code changes, including component markup changes, rebuild and restart the app when running with the debugger. If you run without the debugger attached (`Ctrl+F5`), Visual Studio watches for file changes and restarts the app as changes are made. You manually refresh the browser as changes are made.
+To run the Blazor Server app, press `F5` in Visual Studio. Blazor apps don't support runtime compilation. To see the results of code and component markup changes, rebuild and restart the app with the debugger attached. If you run without the debugger attached (`Ctrl+F5`), Visual Studio watches for file changes and restarts the app as changes are made. You manually refresh the browser as changes are made.
 
 To run the Blazor WebAssembly app, choose one of the following approaches:
 

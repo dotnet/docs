@@ -121,14 +121,14 @@ Then add the following changes to the MainWindow.xaml.vb file of that project.
 
 5. If you don’t cancel the program, it produces the following output.
 
-    ```
+    ```console
     Ready to download.
     Length of the downloaded string: 158125.
     ```
 
     If you choose the **Cancel** button before the program finishes downloading the content, the program produces the following output.
 
-    ```
+    ```console
     Ready to download.
     Download canceled.
     ```
@@ -218,7 +218,7 @@ To extend the example yourself, step by step, follow the instructions in the "Do
 
 5. If you don’t cancel the program, it produces the following output.
 
-    ```
+    ```console
     Length of the downloaded string: 35939.
 
     Length of the downloaded string: 237682.
@@ -238,7 +238,7 @@ To extend the example yourself, step by step, follow the instructions in the "Do
 
     If you choose the **Cancel** button before the downloads are complete, the output contains the lengths of the downloads that completed before the cancellation.
 
-    ```
+    ```console
     Length of the downloaded string: 35939.
 
     Length of the downloaded string: 237682.

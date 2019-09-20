@@ -270,7 +270,7 @@ End Sub
   
      The following output should appear.  
   
-    ```  
+    ```console  
     Application can continue working while the Task<T> runs. . . .   
   
     Value of result1 variable:   5  

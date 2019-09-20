@@ -34,11 +34,10 @@ Here are some companies who have implemented these techniques. Think about the s
 
 As you can see, Netflix, Uber, and WeChat expose systems that consist of hundreds of independent microservices. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, and individually scale those areas as needed.
 
-The speed and agility of cloud native come about from a number of factors. Foremost is cloud infrastructure. Five additional foundational pillars shown in Figure 1-1 also provide the bedrock for cloud-native systems.
+The speed and agility of cloud native come about from a number of factors. Foremost is cloud infrastructure. Five additional foundational pillars shown in Figure 1-3 also provide the bedrock for cloud-native systems.
 
 ![Cloud-native foundational pillars](./media/cloud-native-foundational-pillars.png)
-
-**Figure 1-1**. Cloud-native foundational pillars
+**Figure 1-3**. Cloud-native foundational pillars
 
 Let’s take some time to better understand the significance of each pillar.
 
@@ -140,11 +139,11 @@ Built as a distributed set of small, independent services that interact through 
 
 - They compose together to form an application.
 
-Figure 1-2 contrasts a monolithic application approach with a microservices approach. Note how the monolith is composed of a layered architecture, which executes in a single process. It typically consumes a relational database. The microservice approach, however, segregates functionality into independent services that include logic and data. Each microservice hosts its own datastore.
+Figure 1-4 contrasts a monolithic application approach with a microservices approach. Note how the monolith is composed of a layered architecture, which executes in a single process. It typically consumes a relational database. The microservice approach, however, segregates functionality into independent services that include logic and data. Each microservice hosts its own datastore.
 
 ![Monolithic deployment versus microservices](./media/monolithic-vs-microservices.png)
 
-**Figure 1-2.** Monolithic deployment versus microservices
+**Figure 1-4.** Monolithic deployment versus microservices
 
 Note how microservices promote the "One Codebase, One Application" principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
 
@@ -180,11 +179,11 @@ Containerizing a microservice is simple and straightforward. The code, its depen
 
 When needed, you transform the image into a running container instance. The instance runs on any computer that has a [container runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) engine installed. You can have as many instances of the containerized service as needed.
 
-Figure 1-3 shows three different microservices, each in its own container, running on a single host.
+Figure 1-5 shows three different microservices, each in its own container, running on a single host.
 
 ![Multiple containers running on a container host](./media/hosting-mulitple-containers.png)  
 
-**Figure 1-3**. Multiple containers running on a container host
+**Figure 1-5**. Multiple containers running on a container host
 
 Note how each container maintains its own set of dependencies and runtime, which can be different. Here, we see different versions of the Product microservice running on the same host. Each container shares a slice of the underlying host operating system, memory, and processor, but is isolated from one another. 
 
@@ -208,11 +207,11 @@ By sharing the underlying operating system and host resources, containers have a
 
 While tools such as Docker create images and run containers, you also need tools to manage them. Container management is done with a special software program called a container orchestrator. When operating at scale, container orchestration is essential. 
 
-Figure 1-4 shows management tasks that container orchestrators provide.
+Figure 1-6 shows management tasks that container orchestrators provide.
 
 ![What container orchestrators do](./media/what-container-orchestrators-do.png)
 
-**Figure 1-4**. What container orchestrators do
+**Figure 1-6**. What container orchestrators do
 
 The following table describes common orchestration tasks.
 
@@ -243,11 +242,10 @@ Azure Kubernetes Services is covered in detail Chapter 2, *Scaling Cloud-Native 
 
 Cloud-native systems depend upon many different ancillary resources, such as data stores, message brokers, monitoring, and identity services. These services are known as [backing services](https://12factor.net/backing-services).
 
- Figure 1-5 shows many common backing services that cloud-native systems consume.
+ Figure 1-7 shows many common backing services that cloud-native systems consume.
 
 ![Common backing services](./media/common-backing-services.png)
-
-**Figure 1-5**. Common backing services
+**Figure 1-7**. Common backing services
 
 Backing services promote the "Statelessness" principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
 
@@ -295,11 +293,10 @@ The [Twelve-Factor Application](https://12factor.net/), discussed earlier, calls
 
 Modern CI/CD systems help fulfill this principle. They provide separate deployment steps and help ensure consistent and quality code that's readily available to users. 
 
-Figure 1.6 shows the separation across the deployment process.
+Figure 1.8 shows the separation across the deployment process.
 
 ![Deployments Steps in CI/CD Pipeline](./media/build-release-run-pipeline.png)
-
-**Figure 1-6**. Deployment steps in a CI/CD Pipeline
+**Figure 1-8**. Deployment steps in a CI/CD Pipeline
 
 In the previous figure, pay special attention to separation of tasks. 
 
@@ -315,11 +312,11 @@ Applying these practices, organizations have radically evolved how they ship sof
 
 ### Azure Pipelines
 
-The Azure cloud includes a new CI/CD service entitled [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/), which is part of the [Azure DevOps](https://azure.microsoft.com/services/devops/) offering shown in Figure 1-7.
+The Azure cloud includes a new CI/CD service entitled [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/), which is part of the [Azure DevOps](https://azure.microsoft.com/services/devops/) offering shown in Figure 1-9.
 
 ![Azure Pipelines in DevOps](./media/devops-components.png)
 
-**Figure 1-7**. Azure DevOps offerings
+**Figure 1-9**. Azure DevOps offerings
 
 Azure Pipelines is a cloud service that combines continuous integration (CI) and continuous delivery (CD). You can automatically test, build, and ship your code to any target.
 

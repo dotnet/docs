@@ -71,18 +71,18 @@ Razor directives start with the `@` character and are typically used at the star
 
 The following table summarizes the various Razor directives used in Blazor and their ASP.NET Web Forms equivalents, if they exist.
 
-Directive    | Description | Example | ASP.NET Web Forms equivalent 
--------------| ----------- | ------- | ----------------------------
-`@attribute` | Adds a class-level attribute to the component. | `@attribute [Authorize]` | None
-`@code`      | Adds class members to the component. | `@code { ... }` | `<script runat="server">...</script>`
-`@implements`| Implements the specified interface. | `@implements IDisposable` | Use code-behind
-`@inherits`  | Inherits from the specified base class. | `@inherits MyComponentBase` | `<%@ Control Inherits="MyUserControlBase" %>`
-`@inject`    | Injects a service into the component. | `@inject IJSRuntime JS` | None
-`@layout`    | Specifies a layout component for the component. | `@layout MainLayout` | `<%@ Page MasterPageFile="~/Site.Master" %>`
-`@namespace` | Sets the namespace for the component. | `@namespace MyNamespace` | None
-`@page`      | Specifies the route for the component. | `@page "/product/{id}"` | `<%@ Page %>`
-`@typeparam` | Specifies a generic type parameter for the component. | `@typeparam TItem` | Use code-behind
-`@using`     | Specifies a namespace to bring into scope. | `@using MyComponentNamespace` | Add namespace in *web.config*
+|Directive    |Description|Example|Web Forms equivalent|
+|-------------|-----------|-------|--------------------|
+|`@attribute` |Adds a class-level attribute to the component|`@attribute [Authorize]`|None|
+|`@code`      |Adds class members to the component|`@code { ... }`|`<script runat="server">...</script>`|
+|`@implements`|Implements the specified interface|`@implements IDisposable`|Use code-behind|
+|`@inherits`  |Inherits from the specified base class|`@inherits MyComponentBase`|`<%@ Control Inherits="MyUserControlBase" %>`|
+|`@inject`    |Injects a service into the component|`@inject IJSRuntime JS`|None|
+|`@layout`    |Specifies a layout component for the component|`@layout MainLayout`|`<%@ Page MasterPageFile="~/Site.Master" %>`|
+|`@namespace` |Sets the namespace for the component|`@namespace MyNamespace`|None|
+|`@page`      |Specifies the route for the component|`@page "/product/{id}"`|`<%@ Page %>`|
+|`@typeparam` |Specifies a generic type parameter for the component|`@typeparam TItem`|Use code-behind|
+|`@using`     |Specifies a namespace to bring into scope|`@using MyComponentNamespace`|Add namespace in *web.config*|
 
 Razor components also make extensive use of *directive attributes* on elements to control various aspects of how components get compiled (event handling, data binding, component & element references, and so on). Directive attributes all follow a common generic syntax where the values in parenthesis are optional:
 
@@ -92,13 +92,13 @@ Razor components also make extensive use of *directive attributes* on elements t
 
 The following table summarizes the various attributes for Razor directives used in Blazor.
 
-Directive attribute | Description | Example
-------------------- | ----------- | -------
-`@attributes`       | Renders a dictionary of attributes. | `<input @attributes="ExtraAttributes" />`
-`@bind`             | Creates a two-way data binding. | `<input @bind="username" @bind:event="oninput" />`
-`@on{event}`        | Adds an event handler for the specified event | `<button @onclick="IncrementCount">Click me!</button>`
-`@key`              | Specifies a key to be used by the diffing algorithm for preserving elements in a collection | `<DetailsEditor @key="person" Details="person.Details" />`
-`@ref`              | Captures a reference to the component or HTML element | `<MyDialog @ref="myDialog" />`
+|Attribute    |Description|Example|
+|-------------|-----------|-------|
+|`@attributes`|Renders a dictionary of attributes|`<input @attributes="ExtraAttributes" />`|
+|`@bind`      |Creates a two-way data binding    |`<input @bind="username" @bind:event="oninput" />`|
+|`@on{event}` |Adds an event handler for the specified event|`<button @onclick="IncrementCount">Click me!</button>`|
+|`@key`       |Specifies a key to be used by the diffing algorithm for preserving elements in a collection|`<DetailsEditor @key="person" Details="person.Details" />`|
+|`@ref`       |Captures a reference to the component or HTML element|`<MyDialog @ref="myDialog" />`|
 
 The various directive attributes used by Blazor (`@onclick`, `@bind`, `@ref`, and so on) are covered in the sections below and later chapters.
 
@@ -118,7 +118,7 @@ To add members to the Razor component class, use the `@code` directive. This tec
 @code {
     int count = 0;
 
-    void IncrementCount() 
+    void IncrementCount()
     {
         count++;
     }
@@ -218,7 +218,7 @@ In Blazor, you can register handlers for DOM UI events directly using directive 
 <button @onclick="OnClick">Click me!</button>
 
 @code {
-    void OnClick() 
+    void OnClick()
     {
         Console.WriteLine("The button was clicked!);
     }

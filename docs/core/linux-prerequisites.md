@@ -57,11 +57,11 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 # [.NET Core 3.0](#tab/netcore30)
 
-.NET Core 3.0 Preview 9 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions. 
+.NET Core 3.0 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions. 
 
 For download links and more information, see [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
-.NET Core 3.0 Preview 9 is supported on the following Linux distributions/versions. 
+.NET Core 3.0 is supported on the following Linux distributions/versions. 
 
 OS                            | Version               | Architectures  
 ------------------------------|-----------------------|----------------

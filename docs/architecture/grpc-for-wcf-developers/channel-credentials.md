@@ -149,7 +149,7 @@ var grpc = new Portfolios.PortfoliosClient(channel);
 > [!TIP]
 > You can use the `ChannelCredentials.Create` method for a client without certificate authentication, as a useful way to pass token credentials with every call made on the channel.
 
-A version of the [FullStockTicker sample gRPC application with certificate authentication added](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTickerAuth/FullStockTicker) is on GitHub.
+A version of the [FullStockTicker sample gRPC application with certificate authentication added](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTickerAuth/FullStockTicker) is on GitHub.
 
 >[!div class="step-by-step"]
 <!-->[Next](encryption.md)-->

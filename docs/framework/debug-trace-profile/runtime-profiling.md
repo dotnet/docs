@@ -28,7 +28,7 @@ Profiling is a method of gathering performance data in any development or deploy
   
 3. In the Performance Monitor toolbar, click the **Add** icon (the plus sign), if it is present. If it is not present, right-click in the monitor window and select the **Add Counters** option.  
   
-     This opens the **Add Counters** dialog box. The **Available counters** list box displays the available performance objects. There are a number of predefined objects for .NET Framework applications, including those for memory management (**.NET CLR Memory**), interoperability (**.NET CLR Interop**), exception handling (**.NET CLR Exceptions**), and multithreading (**.NET CLR LocksAndThreads**). Each performance object includes a number of individual performance counters. For a list of the performance counters available in Performance Monitor, see [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md).  
+     This opens the **Add Counters** dialog box. The **Available counters** list box displays the available performance objects. There are a number of predefined objects for .NET Framework applications, including those for memory management (**.NET CLR Memory**), interoperability (**.NET CLR Interop**), exception handling (**.NET CLR Exceptions**), and multithreading (**.NET CLR LocksAndThreads**). Each performance object includes a number of individual performance counters. For a list of the performance counters available in Performance Monitor, see [Performance Counters](performance-counters.md).  
   
 4. Select the check box next to a performance object's name to view the list of individual performance counters that it supports.  
   
@@ -40,15 +40,15 @@ Profiling is a method of gathering performance data in any development or deploy
   
      In the **Instances of selected object** list box, click an application name to monitor the performance counter for that application.  
   
-     To differentiate multiple versions of the runtime, or to disambiguate multiple applications with the same name, you must also modify a registry key. For more information, see [Performance Counters and In-Process Side-By-Side Applications](../../../docs/framework/debug-trace-profile/performance-counters-and-in-process-side-by-side-applications.md).  
+     To differentiate multiple versions of the runtime, or to disambiguate multiple applications with the same name, you must also modify a registry key. For more information, see [Performance Counters and In-Process Side-By-Side Applications](performance-counters-and-in-process-side-by-side-applications.md).  
   
 > [!NOTE]
 > When new performance counters are installed while the Performance console is running, stop and restart the Performance console to make the new counters visible.  
   
- If you want to profile an assembly that exists in a zone or on a remote share, make sure that the remote assembly has full trust on the computer that runs the performance counters. If the assembly does not have sufficient trust, the performance counters will not work. For information about granting trust to different zones, see [Caspol.exe (Code Access Security Policy Tool)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md).  
+ If you want to profile an assembly that exists in a zone or on a remote share, make sure that the remote assembly has full trust on the computer that runs the performance counters. If the assembly does not have sufficient trust, the performance counters will not work. For information about granting trust to different zones, see [Caspol.exe (Code Access Security Policy Tool)](../tools/caspol-exe-code-access-security-policy-tool.md).  
   
 > [!NOTE]
-> On systems on which the .NET Framework 4 is installed, the Performance Monitor may not display data for performance counters in some categories, such as **.NET CLR Data** and **.NET CLR Networking**, for applications that were developed using the .NET Framework 1.1. If this is the case, you can configure Performance Monitor to display this data by adding the [\<forcePerformanceCounterUniqueSharedMemoryReads>](../../../docs/framework/configure-apps/file-schema/runtime/forceperformancecounteruniquesharedmemoryreads-element.md) element to the application's configuration file.  
+> On systems on which the .NET Framework 4 is installed, the Performance Monitor may not display data for performance counters in some categories, such as **.NET CLR Data** and **.NET CLR Networking**, for applications that were developed using the .NET Framework 1.1. If this is the case, you can configure Performance Monitor to display this data by adding the [\<forcePerformanceCounterUniqueSharedMemoryReads>](../configure-apps/file-schema/runtime/forceperformancecounteruniquesharedmemoryreads-element.md) element to the application's configuration file.  
   
 ## Reading and Creating Performance Counters Programmatically  
  The .NET Framework provides classes you can use to programmatically access the same performance information that is available in the Performance console. You can also use these classes to create custom performance counters. The following table describes some of the performance monitoring classes that are provided in the .NET Framework.  
@@ -62,4 +62,4 @@ Profiling is a method of gathering performance data in any development or deploy
   
 ## See also
 
-- [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)
+- [Performance Counters](performance-counters.md)

@@ -110,4 +110,4 @@ A constrained execution region (CER) is part of a mechanism for authoring reliab
   
 ## See also
 
-- [Reliability Best Practices](../../../docs/framework/performance/reliability-best-practices.md)
+- [Reliability Best Practices](reliability-best-practices.md)

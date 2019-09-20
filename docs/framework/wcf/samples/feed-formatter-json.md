@@ -12,7 +12,7 @@ This sample shows how to serialize an instance of a <xref:System.ServiceModel.Sy
 ## Writing JSON feeds  
  Writing a JSON feed can be accomplished by using the `JsonFeedFormatter` (implemented in this sample) with the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> as shown in the following sample code.  
   
-```  
+```csharp  
 //Basic feed with sample data  
 SyndicationFeed feed = new SyndicationFeed("Custom JSON feed", "A Syndication extensibility sample", null);  
 feed.LastUpdatedTime = DateTime.Now;  

@@ -52,25 +52,25 @@ In applications, it is possible that handlers that are attached to event sources
   
      For example, if your code uses the following pattern to subscribe to an event:  
   
-    ```  
+    ```csharp  
     source.SomeEvent += new SomeEventEventHandler(OnSomeEvent);  
     ```  
   
      Change it to the following pattern:  
   
-    ```  
+    ```csharp  
     SomeEventWeakEventManager.AddHandler(source, OnSomeEvent);  
     ```  
   
      Similarly, if your code uses the following pattern to unsubscribe from an event:  
   
-    ```  
+    ```csharp  
     source.SomeEvent -= new SomeEventEventHandler(OnSomeEvent);  
     ```  
   
      Change it to the following pattern:  
   
-    ```  
+    ```csharp  
     SomeEventWeakEventManager.RemoveHandler(source, OnSomeEvent);  
     ```  
   
@@ -80,7 +80,7 @@ In applications, it is possible that handlers that are attached to event sources
   
      When you use <xref:System.Windows.WeakEventManager%602> to register event listeners, you supply the event source and <xref:System.EventArgs> type as the type parameters to the class and call <xref:System.Windows.WeakEventManager%602.AddHandler%2A> as shown in the following code:  
   
-    ```  
+    ```csharp  
     WeakEventManager<EventSource, SomeEventEventArgs>.AddHandler(source, "SomeEvent", source_SomeEvent);  
     ```  
   
@@ -102,25 +102,25 @@ In applications, it is possible that handlers that are attached to event sources
   
      For example, if your code uses the following pattern to subscribe to an event:  
   
-    ```  
+    ```csharp  
     source.SomeEvent += new SomeEventEventHandler(OnSomeEvent);  
     ```  
   
      Change it to the following pattern:  
   
-    ```  
+    ```csharp  
     SomeEventWeakEventManager.AddHandler(source, OnSomeEvent);  
     ```  
   
      Similarly, if your code uses the following pattern to unsubscribe to an event:  
   
-    ```  
+    ```csharp  
     source.SomeEvent -= new SomeEventEventHandler(OnSome);  
     ```  
   
      Change it to the following pattern:  
   
-    ```  
+    ```csharp  
     SomeEventWeakEventManager.RemoveHandler(source, OnSomeEvent);  
     ```  
   

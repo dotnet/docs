@@ -8,7 +8,7 @@ Holds a set of members that are defined in markup, which apply to the x:Class of
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:Class="className">  
   <x:Members>  
     oneOrMoreMembers  

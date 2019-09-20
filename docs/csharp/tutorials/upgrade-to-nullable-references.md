@@ -11,6 +11,7 @@ C# 8 introduces **nullable reference types**, which complement reference types t
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
+>
 > - Enable null reference checks as you work with code.
 > - Diagnose and correct different warnings related to null values.
 > - Manage the interface between nullable enabled and nullable disabled contexts.

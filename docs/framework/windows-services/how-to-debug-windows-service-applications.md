@@ -23,7 +23,7 @@ A service must be run from within the context of the Services Control Manager ra
  This article covers debugging a service that's running on the local computer, but you can also debug Windows Services that are running on a remote computer. See [Remote Debugging](/visualstudio/debugger/debug-installed-app-package).  
   
 > [!NOTE]
-> Debugging the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method can be difficult because the Services Control Manager imposes a 30-second limit on all attempts to start a service. For more information, see [Troubleshooting: Debugging Windows Services](../../../docs/framework/windows-services/troubleshooting-debugging-windows-services.md).  
+> Debugging the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method can be difficult because the Services Control Manager imposes a 30-second limit on all attempts to start a service. For more information, see [Troubleshooting: Debugging Windows Services](troubleshooting-debugging-windows-services.md).  
   
 > [!WARNING]
 > To get meaningful information for debugging, the Visual Studio debugger needs to find symbol files for the binaries that are being debugged. If you are debugging a service that you built in Visual Studio, the symbol files (.pdb files) are in the same folder as the executable or library, and the debugger loads them automatically. If you are debugging a service that you didn't build, you should first find symbols for the service and make sure they can be found by the debugger. See [Specify Symbol (.pdb) and Source Files in the Visual Studio Debugger](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger). If you're debugging a system process or want to have symbols for system calls in your services, you should add the Microsoft Symbol Servers. See [Debugging Symbols](/windows/desktop/DxTechArts/debugging-with-symbols).  
@@ -32,9 +32,9 @@ A service must be run from within the context of the Services Control Manager ra
   
 1. Build your service in the Debug configuration.  
   
-2. Install your service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
+2. Install your service. For more information, see [How to: Install and Uninstall Services](how-to-install-and-uninstall-services.md).  
   
-3. Start your service, either from **Services Control Manager**, **Server Explorer**, or from code. For more information, see [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md).  
+3. Start your service, either from **Services Control Manager**, **Server Explorer**, or from code. For more information, see [How to: Start Services](how-to-start-services.md).  
   
 4. Start Visual Studio with administrative credentials so you can attach to system processes.  
   
@@ -60,7 +60,7 @@ A service must be run from within the context of the Services Control Manager ra
   
 10. Set any breakpoints you want to use in your code.  
   
-11. Access the Services Control Manager and manipulate your service, sending stop, pause, and continue commands to hit your breakpoints. For more information about running the Services Control Manager, see [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md). Also, see [Troubleshooting: Debugging Windows Services](../../../docs/framework/windows-services/troubleshooting-debugging-windows-services.md).  
+11. Access the Services Control Manager and manipulate your service, sending stop, pause, and continue commands to hit your breakpoints. For more information about running the Services Control Manager, see [How to: Start Services](how-to-start-services.md). Also, see [Troubleshooting: Debugging Windows Services](troubleshooting-debugging-windows-services.md).  
   
 ## Debugging Tips for Windows Services  
  Attaching to the service's process allows you to debug most, but not all, the code for that service. For example, because the service has already been started, you cannot debug the code in the service's <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method or the code in the `Main` method that is used to load the service this way. One way to work around this limitation is to create a temporary second service in your service application that exists only to aid in debugging. You can install both services, and then start this dummy service to load the service process. Once the temporary service has started the process, you can use the **Debug** menu in Visual Studio to attach to the service process.  
@@ -109,7 +109,7 @@ A service must be run from within the context of the Services Control Manager ra
   
 ## See also
 
-- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
-- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)
-- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)
+- [Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)
+- [How to: Install and Uninstall Services](how-to-install-and-uninstall-services.md)
+- [How to: Start Services](how-to-start-services.md)
 - [Debugging a Service](/windows/desktop/Services/debugging-a-service)

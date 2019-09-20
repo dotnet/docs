@@ -19,7 +19,7 @@ ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
   
  [!INCLUDE[TLA2#tla_winvista](../../../includes/tla2sharptla-winvista-md.md)] supplies providers for standard [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] and Windows Forms controls. In addition, a fallback provider gives partial [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] support to any control that is not served by another server-side provider or proxy but has a Microsoft Active Accessibility implementation. All these providers are automatically loaded and available to client applications.  
   
- For more information on support for [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] and Windows Forms controls, see [UI Automation Support for Standard Controls](../../../docs/framework/ui-automation/ui-automation-support-for-standard-controls.md).  
+ For more information on support for [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] and Windows Forms controls, see [UI Automation Support for Standard Controls](ui-automation-support-for-standard-controls.md).  
   
  Applications can also register other client-side providers.  
   
@@ -45,5 +45,5 @@ ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
   
 ## See also
 
-- [Create a Client-Side UI Automation Provider](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)
-- [Implement UI Automation Providers in a Client Application](../../../docs/framework/ui-automation/implement-ui-automation-providers-in-a-client-application.md)
+- [Create a Client-Side UI Automation Provider](create-a-client-side-ui-automation-provider.md)
+- [Implement UI Automation Providers in a Client Application](implement-ui-automation-providers-in-a-client-application.md)

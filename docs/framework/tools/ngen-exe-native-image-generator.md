@@ -53,7 +53,7 @@ For additional information on using Ngen.exe and the native image service, see [
 > [!NOTE]
 > Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms165073(v=vs.100)).
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 
@@ -386,7 +386,7 @@ Ngen.exe records this information when it generates a native image. When you exe
 
      Changing machine security policy to restrict permissions previously granted to an assembly can cause a previously compiled native image for that assembly to become invalid.
 
-     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](../../../docs/framework/misc/code-access-security.md).
+     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](../misc/code-access-security.md).
 
 <a name="Troubleshooting"></a>
 
@@ -398,13 +398,13 @@ The following troubleshooting topics allow you to see which native images are be
 
 ### Assembly Binding Log Viewer
 
-To confirm that native images are being used by your application, you can use the [Fuslogvw.exe (Assembly Binding Log Viewer)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md). Select **Native Images** in the **Log Categories** box on the binding log viewer window. Fuslogvw.exe provides information about why a native image was rejected.
+To confirm that native images are being used by your application, you can use the [Fuslogvw.exe (Assembly Binding Log Viewer)](fuslogvw-exe-assembly-binding-log-viewer.md). Select **Native Images** in the **Log Categories** box on the binding log viewer window. Fuslogvw.exe provides information about why a native image was rejected.
 
 <a name="MDA"></a>
 
 ### The JITCompilationStart managed debugging assistant
 
-You can use the [jitCompilationStart](../../../docs/framework/debug-trace-profile/jitcompilationstart-mda.md) managed debugging assistant (MDA) to determine when the JIT compiler starts to compile a function.
+You can use the [jitCompilationStart](../debug-trace-profile/jitcompilationstart-mda.md) managed debugging assistant (MDA) to determine when the JIT compiler starts to compile a function.
 
 <a name="OptOut"></a>
 
@@ -556,7 +556,7 @@ For examples relating to the native image service, see [Native Image Service](#n
 
 ## Native Image Task
 
-The native image task is a Windows task that generates and maintains native images. The native image task generates and reclaims native images automatically for supported scenarios. It also enables installers to use [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) to create and update native images at a deferred time.
+The native image task is a Windows task that generates and maintains native images. The native image task generates and reclaims native images automatically for supported scenarios. It also enables installers to use [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md) to create and update native images at a deferred time.
 
 The native image task is registered once for each CPU architecture supported on a computer, to allow compilation for applications that target each architecture:
 
@@ -633,7 +633,7 @@ In the .NET Framework version 2.0, the only interaction with the native image se
 
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
+- [Tools](index.md)
 - [Managed Execution Process](../../standard/managed-execution-process.md)
-- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

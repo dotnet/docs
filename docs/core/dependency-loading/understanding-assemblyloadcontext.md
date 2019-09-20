@@ -91,6 +91,7 @@ Object of type 'IsolatedType' cannot be converted to type 'IsolatedType'.
 ### Debugging type conversion issues
 
 Given a pair of mismatched types it's important to also know:
+
 - Each type's <xref:System.Type.Assembly?displayProperty=nameWithType>
 - Each type's <xref:System.Runtime.Loader.AssemblyLoadContext>, which can be obtained via the <xref:System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(System.Reflection.Assembly)?displayProperty=nameWithType> function.
 

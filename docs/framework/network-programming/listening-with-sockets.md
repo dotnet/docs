@@ -55,8 +55,8 @@ listener.Listen(100);
   
 ## See also
 
-- [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)
-- [Using an Asynchronous Server Socket](../../../docs/framework/network-programming/using-an-asynchronous-server-socket.md)
-- [Using Client Sockets](../../../docs/framework/network-programming/using-client-sockets.md)
-- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)
-- [Sockets](../../../docs/framework/network-programming/sockets.md)
+- [Using a Synchronous Server Socket](using-a-synchronous-server-socket.md)
+- [Using an Asynchronous Server Socket](using-an-asynchronous-server-socket.md)
+- [Using Client Sockets](using-client-sockets.md)
+- [How to: Create a Socket](how-to-create-a-socket.md)
+- [Sockets](sockets.md)

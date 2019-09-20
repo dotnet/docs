@@ -33,11 +33,13 @@ Try not to introduce dependencies on infrastructure when writing unit tests. The
 More information on unit testing in .NET Core projects:
 
 .NET Core unit test projects are supported for:
+
 * [C#](../../csharp/index.md)
 * [F#](../../fsharp/index.md)
 * [Visual Basic](../../visual-basic/index.md) 
 
 You can also choose between:
+
 * [xUnit](https://xunit.github.io) 
 * [NUnit](https://nunit.org)
 * [MSTest](https://github.com/Microsoft/testfx-docs)

@@ -20,6 +20,7 @@ When you create a WCF service, your first task is to define a service contract. 
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Create a **WCF Service Library** project.
 > - Define a service contract interface.
 
@@ -97,6 +98,7 @@ In this tutorial, you learn how to:
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Create a WCF Service Library project.
 > - Define a service contract interface.
 

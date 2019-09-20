@@ -12,13 +12,15 @@ abstract:
 sections:
 - title: Available e-books
   items:
-  - html: '<ul><li><p><a href="containerized-lifecycle/index">Containerized Docker Application Lifecycle with the Microsoft Platform and Tools</a></p>'
+  - html: '<ul><li><p><a href="containerized-lifecycle/index">Containerized Docker application lifecycle with the Microsoft platform and tools</a></p>'
   - html: '<p>This guide is an introduction to the recommended end to end lifecycle processes you''ll use to develop, validate, and deploy containerized Docker applications using Visual Studio and Microsoft Azure.</p></li></ul>'
-  - html: '<ul><li><p><a href="modernize-with-azure-containers/index">Modernize Existing .NET Applications with Azure cloud and Windows Containers</a></p>'
+  - html: '<ul><li><p><a href="modernize-with-azure-containers/index">Modernize existing .NET applications with Azure cloud and Windows containers</a></p>'
   - html: '<p>This guide is an introduction to the strategies you''ll need to migrate existing web applications to the Azure cloud and Windows containers. You''ll learn about code strategies, data migration, orchestrators, and CI/CD processes.</p></li></ul>'
   - html: '<ul><li><p><a href="modern-web-apps-azure/index">Architect modern web applications with ASP.NET Core and Azure</a></p>'
   - html: '<p>This guide is an introduction to the recommended architecture, design, and deployment processes you''ll use to build ASP.NET and ASP.NET Core applications and host those applications in Azure.</p></li></ul>'
-  - html: '<ul><li><p><a href="microservices/index">Architecting Container and Microservice Based Applications</a></p>'
+  - html: '<ul><li><p><a href="microservices/index">Architecting container and microservice-based applications</a></p>'
   - html: '<p>This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.</p></li></ul>'
+  - html: '<ul><li><p><a href="cloud-native/index">Architecting cloud-native .NET apps for Azure</a></p>'
+  - html: '<p>This guide defines what cloud native is, introduces a sample app built using cloud-native principles, and covers topics common to most cloud-native applications.</p></li></ul>'
   - html: '<ul><li><p><a href="serverless/index">Serverless apps: Architecture, patterns, and Azure implementation</a></p>'
   - html: '<p>This is a guide for building serverless applications with examples using Azure. It discusses various architecture and design approaches, the benefits and challenges that come with serverless, and provides scenarios and use cases for serverless apps.</p></li></ul>'

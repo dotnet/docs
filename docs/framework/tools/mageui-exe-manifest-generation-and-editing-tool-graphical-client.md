@@ -8,14 +8,14 @@ ms.assetid: f9e130a6-8117-49c4-839c-c988f641dc14
 ---
 # MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)
 
-MageUI.exe supports the same functionality as the command-line tool Mage.exe, but with a Windows-based user interface (UI). With this tool you can create, edit, and sign deployment and application manifests. New manifests that are created with MageUI.exe target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. Previous versions of MageUI.exe should be used to target previous .NET Framework versions. When adding or removing assemblies from a manifest, or re-signing existing manifests, MageUI.exe does not update the manifest to target [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. For more information, see [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).
+MageUI.exe supports the same functionality as the command-line tool Mage.exe, but with a Windows-based user interface (UI). With this tool you can create, edit, and sign deployment and application manifests. New manifests that are created with MageUI.exe target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. Previous versions of MageUI.exe should be used to target previous .NET Framework versions. When adding or removing assemblies from a manifest, or re-signing existing manifests, MageUI.exe does not update the manifest to target [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. For more information, see [Mage.exe (Manifest Generation and Editing Tool)](mage-exe-manifest-generation-and-editing-tool.md).
 
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 
  Two versions of Mage.exe and MageUI.exe are included as a component of Visual Studio. To see version information, run MageUI.exe, select **Help**, and select **About**. This documentation describes version 4.0.x.x of Mage.exe and MageUI.exe.
 
 > [!NOTE]
-> MageUI.exe does not support the [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) element when saving an application manifest that has already been signed with a certificate using MageUI.exe. Instead, you must use [Mage.exe](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
+> MageUI.exe does not support the [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) element when saving an application manifest that has already been signed with a certificate using MageUI.exe. Instead, you must use [Mage.exe](mage-exe-manifest-generation-and-editing-tool.md).  
   
 ## UIElement List  
  The following table lists the menu and toolbar items that are available.  
@@ -86,7 +86,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |----------------|-----------------|  
 |**Name**|Required. The name of the application manifest. Usually the same as the file name.|  
 |**Version**|Required. The version number of the deployment in the form *N.N.N.N*. Only the first major build number is required. For example, for version 1.0 of an application, valid values would include `1`, `1.0`, `1.0.0`, and `1.0.0.0`.|  
-|**Processor**|Optional. The machine architecture on which this deployment can run. The default is `msil`, or Microsoft Intermediate Language, which is the default format of all managed assemblies. Change this field if you have pre-compiled the assemblies in your application for a specific architecture. For more information about pre-compilation, see [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md).|  
+|**Processor**|Optional. The machine architecture on which this deployment can run. The default is `msil`, or Microsoft Intermediate Language, which is the default format of all managed assemblies. Change this field if you have pre-compiled the assemblies in your application for a specific architecture. For more information about pre-compilation, see [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md).|  
 |**Culture**|Optional. The two-part ISO country and region code in which this application runs. The default is `neutral`.|  
 |**Public key token**|Optional. The public key with which this application manifest has been signed. If this is a new or unsigned manifest, this field will appear as `Unsigned`.|  
   
@@ -188,4 +188,4 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
 - [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)
-- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)
+- [Mage.exe (Manifest Generation and Editing Tool)](mage-exe-manifest-generation-and-editing-tool.md)

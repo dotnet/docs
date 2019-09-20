@@ -110,7 +110,7 @@ You need Visual Studio to complete this walkthrough.
 #### The Basic Structure of the Code-Behind File  
  The code-behind file consists of a single namespace, `MyControls`, which will contain two classes, `MyControl1` and `MyControlEventArgs`.  
   
-```  
+```csharp  
 namespace MyControls  
 {  
   public partial class MyControl1 : Grid  

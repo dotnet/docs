@@ -47,15 +47,15 @@ For download links, see the section [Redistributable Packages](#redistributable-
 
 - You must have administrator privileges to install .NET Framework 4.5 and its point releases.
 
-- .NET Framework 4.5 is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, .NET Framework 4.5.1 is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. .NET Framework 4.5.2 isn't included in any operating systems. .NET Framework 4.6 is included in Windows 10, .NET Framework 4.6.1 is included in Windows 10 November Update, and .NET Framework 4.6.2 is included in Windows 10 Anniversary Update.  .NET Framework 4.7 is included in Windows 10 Creators Update, .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. .NET Framework 4.8 is included in Windows 10 May 2019 Update. For a full list of hardware and software requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md).
+- .NET Framework 4.5 is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, .NET Framework 4.5.1 is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. .NET Framework 4.5.2 isn't included in any operating systems. .NET Framework 4.6 is included in Windows 10, .NET Framework 4.6.1 is included in Windows 10 November Update, and .NET Framework 4.6.2 is included in Windows 10 Anniversary Update.  .NET Framework 4.7 is included in Windows 10 Creators Update, .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. .NET Framework 4.8 is included in Windows 10 May 2019 Update. For a full list of hardware and software requirements, see [System Requirements](../get-started/system-requirements.md).
 
-- Starting with .NET Framework 4.5, your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](../../../docs/framework/deployment/reducing-system-restarts.md).
+- Starting with .NET Framework 4.5, your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](reducing-system-restarts.md).
 
 - Uninstalling .NET Framework 4.5 or one of its point releases also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. (See [Installing the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5a4x27ek(v=vs.100)).)
 
 - The .NET Framework 4.5 redistributable was updated on October 9, 2012 to correct an issue related to an improper timestamp on a digital certificate, which caused the digital signature on files produced and signed by Microsoft to expire prematurely. If you previously installed the .NET Framework 4.5 redistributable package dated August 16, 2012, we recommend that you update your copy with the latest redistributable from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=245484). For more information about this issue, see [Microsoft Security Advisory 2749655](https://docs.microsoft.com/security-updates/SecurityAdvisories/2012/2749655).
 
-For information about how a system administrator can deploy the .NET Framework and its system dependencies across a network, see [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md).
+For information about how a system administrator can deploy the .NET Framework and its system dependencies across a network, see [Deployment Guide for Administrators](guide-for-administrators.md).
 
 ## Deployment options for your app
 
@@ -194,31 +194,23 @@ Both methods allow you to use either the web installer or the offline installer.
 
 To silently chain the .NET Framework installation process and let the .NET Framework installer provide the UI, add the following command to your setup program:
 
-```
-<.NET Framework redistributable> /q /norestart /ChainingPackage <PackageName>
-```
+`<.NET Framework redistributable> /q /norestart /ChainingPackage <PackageName>`
 
 For example, if your executable program is Contoso.exe and you want to silently install the .NET Framework 4.5 offline redistributable package, use the command:
 
-```
-dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
-```
+`dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso`
 
 You can use additional command-line options to customize the installation. For example:
 
 - To provide a way for users to close running .NET Framework apps to minimize system restarts, set passive mode and use the `/showrmui` option as follows:
 
-    ```
-    dotNetFx45_Full_x86_x64.exe /norestart /passive /showrmui /ChainingPackage Contoso
-    ```
+    `dotNetFx45_Full_x86_x64.exe /norestart /passive /showrmui /ChainingPackage Contoso`
 
      This command allows Restart Manager to display a message box that gives users the opportunity to close .NET Framework apps before installing the .NET Framework.
 
 - If you're using the web installer, you can use the `/LCID` option to specify a language pack. For example, to chain the .NET Framework 4.5 web installer to your Contoso setup program and install the Japanese language pack, add the following command to your app's setup process:
 
-    ```
-    dotNetFx45_Full_setup.exe /q /norestart /ChainingPackage Contoso /LCID 1041
-    ```
+    `dotNetFx45_Full_setup.exe /q /norestart /ChainingPackage Contoso /LCID 1041`
 
      If you omit the `/LCID` option, setup will install the language pack that matches the user's MUI setting.
 
@@ -235,7 +227,7 @@ For common return codes, see the [Return Codes](#return-codes) section.
 
 If you have a custom setup package, you may want to silently launch and track the .NET Framework setup while showing your own view of the setup progress. If this is the case, make sure that your code covers the following:
 
-- Check for [.NET Framework hardware and software requirements](../../../docs/framework/get-started/system-requirements.md).
+- Check for [.NET Framework hardware and software requirements](../get-started/system-requirements.md).
 
 - [Detect](#detect_net) whether the correct version of the .NET Framework is already installed on the user’s computer.
 
@@ -244,7 +236,7 @@ If you have a custom setup package, you may want to silently launch and track th
 
 - [Detect](#detecting-the-language-packs) whether the language packs are already installed on the user’s computer.
 
-- If you want to control the deployment, silently launch and track the .NET Framework setup process (see [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)).
+- If you want to control the deployment, silently launch and track the .NET Framework setup process (see [How to: Get Progress from the .NET Framework 4.5 Installer](how-to-get-progress-from-the-dotnet-installer.md)).
 
 - If you’re deploying the offline installer, [chain the language packs separately](#chain_langpack).
 
@@ -288,13 +280,13 @@ The .NET Framework installer writes registry keys when installation is successfu
 
 You can test whether a specific language pack is installed by checking the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\\*LCID* folder in the registry for a DWORD value named `Release`. (Note that "NET Framework Setup" doesn't begin with a period.) *LCID* specifies a locale identifier; see [supported languages](#supported-languages) for a list of these.
 
-For example, to detect whether the full Japanese language pack (LCID=1041) is installed, check for the following values in the registry:
+For example, to detect whether the full Japanese language pack (LCID=1041) is installed, retrieve the following named value from the registry:
 
-```
-Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\1041
-Name: Release
-Type: DWORD
-```
+| | |
+|-|-|
+| Key | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\1041 |
+| Name | Release |
+| Type | DWORD |
 
 To determine whether the final release version of a language pack is installed for a particular version of the .NET Framework from 4.5 through 4.7.2, check the value of the RELEASE key DWORD value described in the previous section, [Detecting the .NET Framework](#detect_net).
 
@@ -331,9 +323,7 @@ Starting with .NET Framework 4.5.1, the package names take the form NDP<`version
 
 To install a language pack with the .NET Framework offline installer, you must chain it to your app's setup. For example, to deploy .NET Framework 4.5.1 offline installer with the Japanese language pack, use the following command:
 
-```
-NDP451-KB2858728-x86-x64-AllOS-JPN.exe /q /norestart /ChainingPackage <ProductName>
-```
+`NDP451-KB2858728-x86-x64-AllOS-JPN.exe /q /norestart /ChainingPackage <ProductName>`
 
 You do not have to chain the language packs if you use the web installer; setup will install the language pack that matches the user's MUI setting. If you want to install a different language, you can use the `/LCID` option to specify a language pack.
 
@@ -435,9 +425,9 @@ The following table lists .NET Framework language packs that are available for .
 
 ## See also
 
-- [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)
-- [System Requirements](../../../docs/framework/get-started/system-requirements.md)
-- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)
-- [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
-- [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)
-- [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)
+- [Deployment Guide for Administrators](guide-for-administrators.md)
+- [System Requirements](../get-started/system-requirements.md)
+- [Install the .NET Framework for developers](../install/guide-for-developers.md)
+- [Troubleshoot blocked .NET Framework installations and uninstallations](../install/troubleshoot-blocked-installations-and-uninstallations.md)
+- [Reducing System Restarts During .NET Framework 4.5 Installations](reducing-system-restarts.md)
+- [How to: Get Progress from the .NET Framework 4.5 Installer](how-to-get-progress-from-the-dotnet-installer.md)

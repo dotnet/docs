@@ -14,6 +14,7 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Amazo
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > * Prepare Microsoft.Spark.Worker
 > * Publish your Spark .NET app
 > * Deploy your app to Amazon EMR Spark
@@ -44,7 +45,7 @@ Before you start, do the following:
 
    Run the following command on Linux.
 
-   ```bash
+   ```dotnetcli
    dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
    ```
 

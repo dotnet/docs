@@ -1,7 +1,7 @@
 ---
 title: What's New in C# 8.0 - C# Guide
 description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
-ms.date: 09/04/2019
+ms.date: 09/20/2019
 ---
 # What's new in C# 8.0
 
@@ -20,7 +20,9 @@ There are many enhancements to the C# language that you can try out already.
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
 - [Indices and ranges](#indices-and-ranges)
+- [Null-coalescing assignment](#null-coalescing-assignment)
 - [Unmanaged constructed types](#unmanaged-constructed-types)
+- [stackalloc in nested expressions](#stackalloc-in-nested-expressions)
 - [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
 
 > [!NOTE]
@@ -370,7 +372,7 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 ## Indices and ranges
 
-Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
+Ranges and indices provide a succinct syntax for specifying subranges in an array, [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
 
 This language support relies on two new types, and two new operators:
 
@@ -442,6 +444,24 @@ var text = words[phrase];
 
 You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).
 
+## Null-coalescing assignment
+
+C# 8.0 introduces the null-coalescing assignment operator `??=`. You can use the `??=` operator to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`.
+
+```csharp
+List<int> numbers = null;
+int? i = null;
+
+numbers ??= new List<int>();
+numbers.Add(i ??= 17);
+numbers.Add(i ??= 20);
+
+Console.WriteLine(string.Join(' ', numbers));  // output: 17 17
+Console.WriteLine(i);  // output: 17
+```
+
+For more information, see the [?? and ??= operators](../language-reference/operators/null-coalescing-operator.md) article.
+
 ## Unmanaged constructed types
 
 In C# 7.3 and earlier, a constructed type (a type that includes at least one type argument) cannot be an [unmanaged type](../language-reference/builtin-types/unmanaged-types.md). Starting with C# 8.0, a constructed value type is unmanaged if it contains fields of unmanaged types only.
@@ -468,6 +488,16 @@ Span<Coords<int>> coordinates = stackalloc[]
 ```
 
 For more information, see [Unmanaged types](../language-reference/builtin-types/unmanaged-types.md).
+
+## stackalloc in nested expressions
+
+Starting with C# 8.0, if the result of a [stackalloc](../language-reference/operators/stackalloc.md) expression is of the <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> type, you can use the `stackalloc` expression in other expressions:
+
+```csharp
+Span<int> numbers = stackalloc[] { 1, 2, 3, 4, 5, 6 };
+var ind = numbers.IndexOfAny(stackalloc[] { 2, 4, 6 ,8 });
+Console.WriteLine(ind);  // output: 1
+```
 
 ## Enhancement of interpolated verbatim strings
 

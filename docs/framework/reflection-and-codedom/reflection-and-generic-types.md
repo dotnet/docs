@@ -32,7 +32,7 @@ ms.author: "ronpet"
   
  Reflection provides methods of <xref:System.Type> and <xref:System.Reflection.MethodInfo> that allow you to access the array of type parameters, and to determine whether an instance of <xref:System.Type> represents a type parameter or an actual type.  
   
- For example code demonstrating the methods discussed here, see [How to: Examine and Instantiate Generic Types with Reflection](../../../docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md).  
+ For example code demonstrating the methods discussed here, see [How to: Examine and Instantiate Generic Types with Reflection](how-to-examine-and-instantiate-generic-types-with-reflection.md).  
   
  The following discussion assumes familiarity with the terminology of generics, such as the difference between type parameters and arguments and open or closed constructed types. For more information, see [Generics](../../standard/generics/index.md).  
   
@@ -143,7 +143,7 @@ generic<typename V, typename W> ref class D : B<int, V> {};
   
 |Title|Description|  
 |-----------|-----------------|  
-|[How to: Examine and Instantiate Generic Types with Reflection](../../../docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md)|Shows how to use the properties and methods of <xref:System.Type> and <xref:System.Reflection.MethodInfo> to examine generic types.|  
+|[How to: Examine and Instantiate Generic Types with Reflection](how-to-examine-and-instantiate-generic-types-with-reflection.md)|Shows how to use the properties and methods of <xref:System.Type> and <xref:System.Reflection.MethodInfo> to examine generic types.|  
 |[Generics](../../standard/generics/index.md)|Describes the generics feature and how it is supported in the .NET Framework.|  
-|[How to: Define a Generic Type with Reflection Emit](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)|Shows how to use reflection emit to generate generic types in dynamic assemblies.|  
-|[Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)|Describes the <xref:System.Type> class and provides code examples that illustrate how to use <xref:System.Type> with various reflection classes to obtain information about constructors, methods, fields, properties, and events.|
+|[How to: Define a Generic Type with Reflection Emit](how-to-define-a-generic-type-with-reflection-emit.md)|Shows how to use reflection emit to generate generic types in dynamic assemblies.|  
+|[Viewing Type Information](viewing-type-information.md)|Describes the <xref:System.Type> class and provides code examples that illustrate how to use <xref:System.Type> with various reflection classes to obtain information about constructors, methods, fields, properties, and events.|

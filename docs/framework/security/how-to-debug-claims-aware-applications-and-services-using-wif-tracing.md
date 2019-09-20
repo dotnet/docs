@@ -98,7 +98,7 @@ author: "BrucePerlerMS"
   
 |**Error ID**|**Error Message**|**Action needed to fix the error**|  
 |-|-|-|  
-|ID4175|The issuer of the security token was not recognized by the IssuerNameRegistry.  To accept security tokens from this issuer, configure the IssuerNameRegistry to return a valid name for this issuer.|This error can be caused by copying a thumbprint from the MMC snap-in and pasting it into the *Web.config* file. Specifically, you can get an extra non-printable character in the text string when copying from the certificate properties window. This extra character causes the thumbprint match to fail.The procedure for correctly copying the thumbprint can be found at [Claims-Based Single Sign-On for the Web and Microsoft Azure](https://docs.microsoft.com/previous-versions/msp-n-p/ff359102%28v=pandp.10%29).|  
+|ID4175|The issuer of the security token was not recognized by the IssuerNameRegistry.  To accept security tokens from this issuer, configure the IssuerNameRegistry to return a valid name for this issuer.|This error can be caused by copying a thumbprint from the MMC snap-in and pasting it into the *Web.config* file. Specifically, you can get an extra non-printable character in the text string when copying from the certificate properties window. This extra character causes the thumbprint match to fail. The procedure for correctly copying the thumbprint can be found at [Claims-Based Single Sign-On for the Web and Microsoft Azure](https://docs.microsoft.com/previous-versions/msp-n-p/ff359102%28v=pandp.10%29).|  
   
 ## Related Items  
   

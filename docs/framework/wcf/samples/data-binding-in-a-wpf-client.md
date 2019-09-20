@@ -11,7 +11,7 @@ This sample demonstrates the use of data binding in a Windows Presentation Found
   
  Data binding allows a data source to be automatically bound to a UI. This simplifies the programming model because it does not require that you programmatically update each UI element with the data from a data object or an array of data objects. You can bind an object to a single UI element or an array to a control that takes multiple inputs, such as a `ListBox`. The following code shows how to bind data to the `DataContext` of a UI element.  
   
-```  
+```csharp  
 // Event handler executed when call is complete  
 void client_GetAlbumListCompleted(object sender, GetAlbumListCompletedEventArgs e)  
 {  

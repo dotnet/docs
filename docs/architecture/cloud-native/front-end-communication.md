@@ -7,6 +7,8 @@ ms.date: 09/08/2019
 
 # Front-end client communication
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 In a cloud-native system, front-end clients (mobile, web, and desktop applications) require a communication channel to interact with independent back-end microservices.  
 
 What are the options?
@@ -22,20 +24,17 @@ With this approach, each microservice has a public endpoint that is accessible b
 While simple to implement, direct client communication would be acceptable only for simple microservice applications. This pattern tightly couples front-end clients to core back-end services, opening the door for a number of problems, including:
 
 - Client susceptibility to back-end service refactoring.
-
 - A wider attack surface as core back-end services are directly exposed.
-
 - Duplication of cross-cutting concerns across each microservice.
-
 - Overly complex client code - clients must keep track of multiple endpoints and handle failures in a resilient way.
 
-Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the front-end applications and backend services. The pattern is shown in Figure 4-3.
+Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](../microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md) between the front-end applications and back-end services. The pattern is shown in Figure 4-3.
 
 ![API Gateway Pattern](./media/api-gateway-pattern.png)
 
 **Figure 4-3.** API gateway pattern
 
-In the previous figure, note how the API Gateway service abstracts the backend core microservices. Implemented as a web API, it acts as a *reverse proxy*, routing incoming traffic to the internal microservices. 
+In the previous figure, note how the API Gateway service abstracts the back-end core microservices. Implemented as a web API, it acts as a *reverse proxy*, routing incoming traffic to the internal microservices. 
 
 The gateway insulates the client from internal service partitioning and refactoring. If you change a back-end service, you accommodate for it in the gateway without breaking the client. It's also your first line of defense for cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling. Many of these cross-cutting concerns can be off-loaded from the back-end core services to the gateway, simplifying the back-end services.
 
@@ -83,7 +82,7 @@ The [Application Gateway Ingress Controller](https://azure.github.io/application
 
 **Figure 4-5.** Application Gateway Ingress Controller
 
-Kuberentes includes a built-in feature that supports HTTP (Level 7) load balancing, called [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/). Ingress defines a set of rules for how microservice instances inside AKS can be exposed to the outside world. In the previous image, the ingress controller interprets the ingress rules configured for the cluster and automatically configures the Azure Application Gateway. Based on those rules, the Application Gateway routes traffic to microservices running inside AKS. The ingress controller listens for changes to ingress rules and makes the appropriate changes to the Azure Application Gateway.
+Kubernetes includes a built-in feature that supports HTTP (Level 7) load balancing, called [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/). Ingress defines a set of rules for how microservice instances inside AKS can be exposed to the outside world. In the previous image, the ingress controller interprets the ingress rules configured for the cluster and automatically configures the Azure Application Gateway. Based on those rules, the Application Gateway routes traffic to microservices running inside AKS. The ingress controller listens for changes to ingress rules and makes the appropriate changes to the Azure Application Gateway.
 
 ## Azure API Management
 
@@ -102,17 +101,11 @@ The publisher portal exposes a management dashboard where administrators expose 
 Here are examples of how policies can affect the behavior of your cloud-native services:  
 
 - Restrict service access.
-
-- Enforce authentication.
-  
+- Enforce authentication.  
 - Throttle calls from a single source, if necessary.
-
 - Enable caching.
-
 - Block calls from specific IP addresses.
-
 - Control the flow of the service.
-
 - Convert requests from SOAP to REST or between different data formats, such as from XML to JSON.
 
 Azure API Management can expose back-end services that are hosted anywhere – in the cloud or your data center. For legacy services that you may expose in your cloud-native systems, it supports both REST and SOAP APIs. Even other Azure services can be exposed through API Management. You could place a managed API on top of an Azure backing service like [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) or [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/). Azure API Management doesn't include built-in load-balancing support and should be used in conjunction with a load-balancing service.
@@ -120,11 +113,8 @@ Azure API Management can expose back-end services that are hosted anywhere – i
 Azure API Management is available across [four different tiers](https://azure.microsoft.com/pricing/details/api-management/):
 
 - Developer
-
 - Basic
-
 - Standard
-
 - Premium
 
 The Developer tier is meant for non-production workloads and evaluation. The other tiers offer progressively more power, features, and higher service level agreements (SLAs). The Premium tier provides [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) and [multi-region support](https://docs.microsoft.com/azure/api-management/api-management-howto-deploy-multi-region). All tiers have a fixed price per hour. 
@@ -140,13 +130,9 @@ It enables API Gateway features for the following use cases:
 The consumption tier uses the same underlying service API Management components, but employs an entirely different architecture based on dynamically allocated resources. It aligns perfectly with the serverless computing model:
 
 - No infrastructure to manage.
-
 - No idle capacity.
-
 - High-availability.
-
 - Automatic scaling.
-
 - Cost is based on actual usage. 
   
 The new consumption tier is a great choice for cloud-native systems that expose serverless resources as APIs. 

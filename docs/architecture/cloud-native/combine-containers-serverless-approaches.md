@@ -5,11 +5,13 @@ ms.date: 06/30/2019
 ---
 # Combining containers and serverless approaches
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Frequently, microservices-based applications rely heavily on containers, orchestration, and message-passing for communication between nodes. This messaging is an ideal task for Azure Functions, but with the rest of the application configured and deployed using Kubernetes and related tools, it would be nice to be able to leverage Azure Functions within this same toolset. Fortunately, you can wrap Azure Functions in Docker containers and deploy them using the same processes and tools as the rest of your Kubernetes-based app.
 
 ## When does it make sense to use containers with serverless?
 
-By default, your serverless functions have no knowledge of the platform on which they will run. However, in some cases you may have specific requirements that make it important for you to customize the container image in which your code will run. You may want to use a custom image because your function relies on a specific language version or has dependencies or configuration requirements that aren't supported by the default image. In these cases, it may make sense to customize your own container and deploy your function in a custom Docker container.
+By default, your serverless functions have no knowledge of the platform on which they'll run. However, in some cases you may have specific requirements that make it important for you to customize the container image in which your code will run. You may want to use a custom image because your function relies on a specific language version or has dependencies or configuration requirements that aren't supported by the default image. In these cases, it may make sense to customize your own container and deploy your function in a custom Docker container.
 
 ## When should you avoid using containers with Azure Functions?
 
@@ -19,7 +21,7 @@ If you're expecting to benefit from the consumption plan billing for your functi
 
 To wrap an Azure Function in a Docker container, install the Azure Functions Core Tools and then run the following command:
 
-```cli
+```console
 func init ProjectName --docker
 ```
 

@@ -1,17 +1,19 @@
 ---
-title: Azure security for cloud native apps
+title: Azure security for cloud-native apps
 description: Architecting Cloud Native .NET Apps for Azure | Azure Security for Cloud Native Apps
 ms.date: 06/30/2019
 ---
-# Azure security for cloud native apps
+# Azure security for cloud-native apps
 
-Cloud native applications can be both easier and more difficult to secure than traditional applications. On the downside, you need to secure more smaller applications and dedicate more energy to build out the security infrastructure. The heterogeneous nature of programming languages and styles in most service deployments also means you need to pay more attention to security bulletins from many different providers. 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
+Cloud-native applications can be both easier and more difficult to secure than traditional applications. On the downside, you need to secure more smaller applications and dedicate more energy to build out the security infrastructure. The heterogeneous nature of programming languages and styles in most service deployments also means you need to pay more attention to security bulletins from many different providers. 
 
 On the flip side, smaller services, each with their own data store, limit the scope of an attack. If an attacker compromises one system, it's probably more difficult for the attacker to make the jump to another system than it is in a monolithic application. Process boundaries are strong boundaries. Also, if a database backup leaks, then the damage is more limited, as that database contains only a subset of data and is unlikely to contain personal data.
 
 ## Threat modeling
 
-No matter if the advantages outweigh the disadvantages of cloud native applications, the same holistic security mindset must be followed. Security and secure thinking must be part of every step of the development and operations story. When planning an application ask questions like:
+No matter if the advantages outweigh the disadvantages of cloud-native applications, the same holistic security mindset must be followed. Security and secure thinking must be part of every step of the development and operations story. When planning an application ask questions like:
 
 * What would be the impact of this data being lost?
 * How can we limit the damage from bad data being injected into this service?
@@ -34,7 +36,7 @@ As an example, think of the tellers at a bank: accessing the safe is an uncommon
 
 In a computer system, a fantastic example is the rights of a user connecting to a database. In many cases, there's a single user account used to both build the database structure and run the application. Except in extreme cases, the account running the application doesn't need the ability to update schema information. There should be several accounts that provide different levels of privilege. The application should only use the permission level that grants read and write access to the data in the tables. This kind of protection would eliminate attacks that aimed to drop database tables or introduce malicious triggers. 
 
-Almost every part of building a cloud native application can benefit from remembering the principle of least privilege. You can find it at play when setting up firewalls, network security groups, roles, and scopes in Role-based access control (RBAC).
+Almost every part of building a cloud-native application can benefit from remembering the principle of least privilege. You can find it at play when setting up firewalls, network security groups, roles, and scopes in Role-based access control (RBAC).
 
 ## Penetration testing
 
@@ -78,7 +80,7 @@ Out of the box, most PaaS Azure resources have only the most basic and permissiv
 
 Fortunately, most Azure resources can be placed into an Azure Virtual Network that allows finer grained access control. Similar to the way that on-premises networks establish private networks that are protected from the wider world, virtual networks are islands of private IP addresses that are located within the Azure network.
 
-![Figure 10-1 A virtual network in Azure](media/virtual-network.png)
+![Figure 10-1 A virtual network in Azure](./media/virtual-network.png)
 **Figure 10-1**. A virtual network in Azure.
 
 In the same way that on-premises networks have a firewall governing access to the network, you can establish a similar firewall at the boundary of the virtual network. By default, all the resources on a virtual network can still talk to the Internet. It's only incoming connections that require some form of explicit firewall exception.
@@ -101,7 +103,7 @@ RBAC is a system that provides an identity to applications running in Azure. App
 
 The first component in RBAC is a security principal. A security principal can be a user, group, service principal, or managed identity. 
 
-![Figure 10-2 Different types of security principals](media/rbac-security-principal.png)
+![Figure 10-2 Different types of security principals](./media/rbac-security-principal.png)
 **Figure 10-2**. Different types of security principals.
 
 * User - Any user who has an account in Azure Active Directory is a user.
@@ -118,7 +120,7 @@ The security principal can be applied to most any resource. This means that it's
 
 A security principal can take on many roles or, using a more sartorial analogy, wear many hats. Each role defines a series of permissions such as "Read messages from Azure Service Bus endpoint". The effective permission set of a security principal is the combination of all the permissions assigned to all the roles that security principal has. Azure has a large number of built-in roles and users can define their own roles.
 
-![Figure 10-3 RBAC role definitions](media/rbac-role-definition.png)
+![Figure 10-3 RBAC role definitions](./media/rbac-role-definition.png)
 **Figure 10-3**. RBAC role definitions.
 
 Built into Azure are also a number of high-level roles such as Owner, Contributor, Reader, and User Account Administrator. With the Owner role, a security principal can access all resources and assign permissions to others. A contributor has the same level of access to all resources but they can't assign permissions. A Reader can only view existing Azure resources and a User Account Administrator can manage access to Azure resources.
@@ -143,7 +145,7 @@ Deny rules take precedence over allow rules. Now representing the same "allow al
 
 As you can imagine, having a large number of roles and scopes can make figuring out the effective permission of a service principal quite difficult. Piling deny rules on top of that, only serves to increase the complexity. Fortunately, there's a permissions calculator that can show the effective permissions for any service principal. It's typically found under the IAM tab in the portal, as shown in Figure 10-3.
 
-![Figure 10-4 Permission calculator for an app service](media/check-rbac.png)
+![Figure 10-4 Permission calculator for an app service](./media/check-rbac.png)
 **Figure 10-4**. Permission calculator for an app service.
 
 ## Securing secrets
@@ -166,7 +168,7 @@ Within Kubernetes, there's a similar service for maintaining small pieces of sec
 
 Creating a secret is as simple as finding the base64 version of the values to be stored:
 
-```cli
+```console
 echo -n 'admin' | base64
 YWRtaW4=
 echo -n '1f2d1e2e67df' | base64
@@ -188,7 +190,7 @@ data:
 
 Finally, this file can be loaded into Kubernetes by running the following command:
 
-```cli
+```console
 kubectl apply -f ./secret.yaml
 ```
 
@@ -210,7 +212,7 @@ This check can be done by an external service such as SSL labs' SSL Server Test.
 
 Even services like Azure SQL databases use TLS encryption to keep data hidden. The interesting part about encrypting the data in transit using TLS is that it isn't possible, even for Microsoft, to listen in on the connection between computers running TLS. This should provide comfort for companies concerned that their data may be at risk from Microsoft proper or even a state actor with more resources than the standard attacker. 
 
-![Figure 10-5 SSL labs report showing a score of A for a Service Bus endpoint.](media/ssl-report.png)
+![Figure 10-5 SSL labs report showing a score of A for a Service Bus endpoint.](./media/ssl-report.png)
 **Figure 10-5**. SSL labs report showing a score of A for a Service Bus endpoint.
 
 While this level of encryption isn't going to be sufficient for all time, it should inspire confidence that Azure TLS connections are quite secure. Azure will continue to evolve its security standards as encryption improves. It's nice to know that there's somebody watching the security standards and updating Azure as they improve.
@@ -239,7 +241,7 @@ The "Transparent" part of TDS comes from the fact that there aren't client chang
 
 Setting up this tier of encryption requires running through a wizard in SQL Server Management Studio to select the sort of encryption and where in Key Vault to store the associated keys. 
 
-![Figure 10-6 Selecting columns in a table to be encrypted using Always Encrypted](media/always-encrypted.png)
+![Figure 10-6 Selecting columns in a table to be encrypted using Always Encrypted](./media/always-encrypted.png)
 **Figure 10-6**. Selecting columns in a table to be encrypted using Always Encrypted.
 
 Client applications that read information from these encrypted columns need to make special allowances to read encrypted data. Connection strings need to be updated with `Column Encryption Setting=Enabled` and client credentials must be retrieved from the Key Vault. The SQL Server client must then be primed with the column encryption keys. Once that is done, the remaining actions use the standard interfaces to SQL Client. That is, tools like Dapper and Entity Framework, which are built on top of SQL Client, will continue to work without changes. Always Encrypted may not yet be available for every SQL Server driver on every language.
@@ -250,7 +252,7 @@ The combination of TDE and Always Encrypted, both of which can be used with clie
 
 Cosmos DB is the newest database provided by Microsoft in Azure. It has been built from the ground up with security and cryptography in mind. AES-256bit encryption is standard for all Cosmos DB databases and can't be disabled. Coupled with the TLS 1.2 requirement for communication, the entire storage solution is encrypted.
 
-![Figure 10-7 The flow of data encryption within Cosmos DB](media/cosmos-encryption.png)
+![Figure 10-7 The flow of data encryption within Cosmos DB](./media/cosmos-encryption.png)
 **Figure 10-7**. The flow of data encryption within Cosmos DB.
 
 While Cosmos DB doesn't provide for supplying customer encryption keys, there has been significant work done by the team to ensure it remains PCI-DSS compliant without that. Cosmos DB also doesn't support any sort of single column encryption similar to Azure SQL's Always Encrypted yet.

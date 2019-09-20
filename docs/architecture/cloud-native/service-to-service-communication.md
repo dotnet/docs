@@ -7,9 +7,11 @@ ms.date: 09/09/2019
 
 # Service-to-service communication
 
-Moving from the front-end client, we now address backend microservcies communicate with each other.
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-When constructing a cloud native application, you'll want to be sensitive to how backend services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as backend services often rely on one another to complete an operation.
+Moving from the front-end client, we now address back-end microservices communicate with each other.
+
+When constructing a cloud-native application, you'll want to be sensitive to how back-end services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as back-end services often rely on one another to complete an operation.
 
 There are several widely accepted approaches to implementing cross-service communication. The *type of communication interaction* will often determine the best approach.
 
@@ -30,7 +32,6 @@ Many times, one microservice might need to *query* another, requiring an immedia
 ### Request/Response Messaging
 
 One option for implementing this scenario is for the calling back-end microservice to make direct HTTP requests to the microservices it needs to query, shown in Figure 4-8.
-
 
 ![Direct HTTP communication](./media/direct-http-communication.png)
 
@@ -60,13 +61,14 @@ Another option for eliminating microservice-to-micrservice coupling is an [Aggre
 
 **Figure 4-10**. Aggregator microservice
 
-The pattern isolates an operation that makes calls to multiple backend microservices, centralizing its logic into a specialized microservice.  The purple checkout aggregator microservice in the previous figure orchestrates the workflow for the Checkout operation. It includes calls to several backend microservices in a sequenced order. Data from the workflow is aggregated and returned to the caller. While it still implements direct HTTP calls, the aggregator microservice reduces direct dependencies among back-end microservices. 
+The pattern isolates an operation that makes calls to multiple back-end microservices, centralizing its logic into a specialized microservice.  The purple checkout aggregator microservice in the previous figure orchestrates the workflow for the Checkout operation. It includes calls to several back-end microservices in a sequenced order. Data from the workflow is aggregated and returned to the caller. While it still implements direct HTTP calls, the aggregator microservice reduces direct dependencies among back-end microservices. 
 
 ### Request/Reply Pattern
 
 Another approach for decoupling synchronous HTTP messages is a [Request-Reply Pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html), which uses queuing communication. Communication using a queue is always a one-way channel, with a producer sending the message and consumer receiving it. With this pattern, both a request queue and response queue are implemented, shown in Figure 4-11.
 
 ![Request-reply pattern](./media/request-reply-pattern.png)
+
 **Figure 4-11**. Request-reply pattern
 
 Here, the message producer creates a query-based message that contains a unique correlation ID and places it into a request queue. The consuming service dequeues the messages, processes it and places the response into the response queue with the same correlation ID. The producer service dequeues the message, matches it with the correlation ID and continues processing. We cover queues in detail in the next section.
@@ -76,6 +78,7 @@ Here, the message producer creates a query-based message that contains a unique 
 Another type of communication interaction is a *command*. A microservice may need another microservice to perform an action. The Ordering microservice may need the Shipping microservice to create a shipment for an approved order. In Figure 4-12, one microservice, called a Producer, sends a message to another microservice, the Consumer, commanding it to do something. 
 
 ![Command interaction with a queue](./media/command-interaction-with-queue.png)
+
 **Figure 4-12**. Command interaction with a queue
 
 Most often, the Producer doesn't require a response and can *fire-and-forget* the message. If a reply is needed, the Consumer sends a separate message back to Producer on another channel. A command message is best sent asynchronously with a message queue. supported by a lightweight message broker. In the previous diagram, note how a queue separates and decouples both services.
@@ -103,6 +106,7 @@ That said, there are limitations with the service:
 Figure 4-13 shows the hierarchy of an Azure Storage Queue.
 
 ![Storage queue hierarchy](./media/storage-queue-hierarchy.png)
+
 **Figure 4-13**. Storage queue hierarchy
 
 In the previous figure, note how storage queues store their messages in the underlying Azure Storage account.
@@ -130,6 +134,7 @@ However, there are some important caveats: Service Bus queues size is limited to
 Figure 4-14 outlines the high-level architecture of a Service Bus queue.
 
 ![Service Bus queue](./media/service-bus-queue.png)
+
 **Figure 4-14**. Service Bus queue
 
 In the previous figure, note the point-to-point relationship. Two instances of the same provider are enqueuing messages into a single Service Bus queue. Each message is consumed by only one of three consumer instances on the right. Next, we discuss how to implement messaging where different consumers may all be interested the same message.
@@ -145,6 +150,7 @@ Eventing is a two-step process. For a given state change, a microservice publish
 Figure 4-15 shows a shopping basket microservice publishing an event with two other microservices subscribing to it.
 
 ![Event-Driven messaging](./media/event-driven-messaging.png)
+
 **Figure 4-15**. Event-Driven messaging
 
 Note the *event bus* component that sits in the middle of the communication channel. It's a custom class that encapsulates the message broker and decouples it from the underlying application. The ordering and inventory microservices independently operate the event with no knowledge of each other, nor the shopping basket microservice. When the registered event is published to the event bus, they act upon it.
@@ -152,6 +158,7 @@ Note the *event bus* component that sits in the middle of the communication chan
 With eventing, we move from queuing technology to *topics*. A [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) is similar to a queue, but supports a one-to-many messaging pattern. One microservice publishes a message. Multiple subscribing microservices can choose to receive and act upon that message. Figure 4-16 shows a topic architecture.
 
 ![Topic architecture](./media/topic-architecture.png)
+
 **Figure 4-16**. Topic architecture
 
 In the previous figure, publishers send messages to the topic. At the end, subscribers receive messages from subscriptions. In the middle, the topic forwards messages to subscriptions based on a set of *rules*, shown in dark blue boxes. Rules act as a filter that forward specific messages to a subscription. Here, a "CreateOrder" event would be sent to Subscription \#1 and Subscription \#3, but not to Subscription \#2. An "OrderCompleted" event would be sent to Subscription \#2 and Subscription \#3.
@@ -166,13 +173,13 @@ Many advanced features from Azure Service Bus queues are also available for topi
 
 [Scheduled Message Delivery](https://docs.microsoft.com/azure/service-bus-messaging/message-sequencing) tags a message with a specific time for processing. The message won't appear in the topic before that time. [Message Deferral](https://docs.microsoft.com/azure/service-bus-messaging/message-deferral) enables you to defer a retrieval of a message to a later time. Both are commonly used in workflow processing scenarios where operations are processed in a particular order. You can postpone processing of received messages until prior work has been completed.
 
-Service Bus topics are a robust and proven technology for enabling publish/suscribe communication in your cloud-native systems.
+Service Bus topics are a robust and proven technology for enabling publish/subscribe communication in your cloud-native systems.
 
 ### Azure Event Grid
 
 While Azure Service Bus is a battle-tested messaging broker with a full set of enterprise features, [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview) is the new kid on the block.
 
-At first glance, Event Grid may look like just another topic-based messaging system. However, it's different in many ways. Focused on event-driven workloads, it enables real-time event processing, deep Azure integration, and an open-platform - all on serverless infrastructure. It's designed for contemporary cloud native and serverless applications
+At first glance, Event Grid may look like just another topic-based messaging system. However, it's different in many ways. Focused on event-driven workloads, it enables real-time event processing, deep Azure integration, and an open-platform - all on serverless infrastructure. It's designed for contemporary cloud-native and serverless applications
 
 As a centralized *eventing backplane*, or pipe, Event Grid reacts to events inside Azure resources and from your own services.
 
@@ -183,6 +190,7 @@ A sweet spot for Event Grid is its deep integration into the fabric of Azure inf
 When publishing and subscribing to native events from Azure resources, no coding is required. With simple configuration, you can integrate events from one Azure resource to another leveraging built-in plumbing for Topics and Subscriptions. Figure 4-17 shows the anatomy of Event Grid.
 
 ![Event Grid anatomy](./media/event-grid-anatomy.png)
+
 **Figure 4-17**. Event Grid anatomy
 
 A major difference between EventGrid and Service Bus is the underlying *message exchange pattern*.
@@ -219,4 +227,4 @@ For cloud-native applications that must stream large numbers of events, Azure Ev
 
 >[!div class="step-by-step"]
 >[Previous](front-end-communication.md)
->[Next](rest-and-grpc.md) <!-- Next Chapter -->
+>[Next](rest-grpc.md) <!-- Next Chapter -->

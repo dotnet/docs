@@ -5,7 +5,9 @@ ms.date: 06/30/2019
 ---
 # Deploying containers in Azure
 
-Containers provide many benefits, one of which is portability. You can easily take the same container you've developed and tested locally and deploy it to Azure where it can run your app in staging and production environments. Azure provides a number of options for container-based app hosting and likewise supports several different means of deployment. The most common and most flexible approach is to deploy your containers to Azure Container Registry (ACR), where they are accessible by whatever services you wish to use to host them. Azure Web App for Containers, Azure Kubernetes Services (AKS), and Azure Container Instance (ACI) all can access container images that have been pushed to ACR.
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
+Containers provide many benefits, one of which is portability. You can easily take the same container you've developed and tested locally and deploy it to Azure where it can run your app in staging and production environments. Azure provides a number of options for container-based app hosting and likewise supports several different means of deployment. The most common and most flexible approach is to deploy your containers to Azure Container Registry (ACR), where they're accessible by whatever services you wish to use to host them. Azure Web App for Containers, Azure Kubernetes Services (AKS), and Azure Container Instance (ACI) all can access container images that have been pushed to ACR.
 
 ## Azure Container Registry
 
@@ -13,30 +15,30 @@ Azure Container Registry (ACR) lets you build, store, and manage images for all 
 
 You [create a container registry using the Azure Portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) or [using the Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli) or [PowerShell tools](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Creating a new container registry just requires an Azure subscription, a resource group, and a unique name. Figure 3-11 shows the basic options for creating a registry, which will be hosted at *registryname*.azurecr.io.
 
-![Create container registry](media/create-container-registry.png)
+![Create container registry](./media/create-container-registry.png)
 **Figure 3-11**. Create container registry
 
 Once you've created a registry, you'll need to authenticate with it before you can use it. Typically, you'll log into the registry using the Azure CLI command:
 
-```cli
+```azurecli
 az acr login --name *registryname*
 ```
 
 Once you've created a registry in Azure Container Registry, you can use docker commands to push container images to it. Before you can do so, however, you must first tag your image with the fully qualified name (URL) of your ACR login server. This will have the format *registryname*.azurecr.io.
 
-```cli
+```console
 docker tag mycontainer myregistry.azurecr.io/mycontainer:v1
 ```
 
 After you've tagged the image, you use the `docker push` command to push the image to your ACR instance.
 
-```cli
+```console
 docker push myregistry.azurecr.io/mycontainer:v1
 ```
 
 After you push an image to the registry, it's a good idea to remove the image from your local Docker environment, using this command:
 
-```cli
+```console
 docker rmi myregistry.azurecr.io/mycontainer:v1
 ```
 
@@ -86,13 +88,13 @@ The process for working with Azure Dev Spaces involves the following steps:
 
 All of these steps can be performed using the Azure CLI and new  `azds` command line tools. For example, to create a new Azure Dev Space for a given Kubernetes cluster, you would use a command like this one:
 
-```cli
+```azurecli
 az aks use-dev-spaces -g my-aks-resource-group -n MyAKSCluster
 ```
 
 Next, you can use the `azds prep` command to generate the necessary Docker and Helm chart assets for running the application. Then you run your code in AKS using `azds up`. The first time you run this command, the Helm chart will be installed, and the container(s) will be built and deployed according to your instructions. This may take a few minutes the first time it's run. However, after you make changes, you can connect to your own child dev space using `azds space select` and then deploy and debug your updates in your isolated child dev space. Once you have your dev space up and running, you can send updates to it by re-issuing the `azds up` command or you can use built-in tooling in Visual Studio or Visual Studio Code. With VS Code, you use the command palette to connect to your dev space. Figure 3-12 shows how to launch your web application using Azure Dev Spaces in Visual Studio.
 
-![Connect to Azure Dev Spaces in Visual Studio](media/azure-dev-spaces-visual-studio-launchsettings.png)
+![Connect to Azure Dev Spaces in Visual Studio](./media/azure-dev-spaces-visual-studio-launchsettings.png)
 **Figure 3-12**. Connect to Azure Dev Spaces in Visual Studio
 
 ## References

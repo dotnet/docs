@@ -6,6 +6,8 @@ ms.date: 06/30/2019
 
 # Infrastructure as code
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Cloud-native applications tend to make use of all sorts of fantastic platform as a service (PaaS) components. On a cloud platform like Azure, these components might include things like storage, Service Bus, and the SignalR service. As applications become more complicated, the number of these services in use is likely to grow. Just as how continuous delivery broke the traditional model of deploying to an environment manually, the rapid pace of change also broke the model of having a centralized IT group manage environments.
 
 Building environments can, and should, also be automated. There's a wide range of well thought out tools that can make the process easy.
@@ -49,7 +51,7 @@ Within this template, one might define a storage container inside the resources 
 
 **Figure 11-11** - An example of a storage account defined in a Resource Manager template
 
-The templates can be parameterized so that one template can be reused with different settings to define development, QA, and production environments. This helps eliminate surprises when migrating to a higher environment that is set up differently from the lower environments. The resources defined in a template are typically all created within a single resource group on Azure (it's possible to define multiple resource groups in a single Resource Manager template but unusual). This makes it very easy to delete an environment by simply deleting the resource group as a whole. Cost analysis can also be run at the resource group level, allowing for quick accounting of how much each environment is costing.
+The templates can be parameterized so that one template can be reused with different settings to define development, QA, and production environments. This helps eliminate surprises when migrating to a higher environment that is set up differently from the lower environments. The resources defined in a template are typically all created within a single resource group on Azure (it's possible to define multiple resource groups in a single Resource Manager template but unusual). This makes it very easy to delete an environment by just deleting the resource group as a whole. Cost analysis can also be run at the resource group level, allowing for quick accounting of how much each environment is costing.
 
 There are many example templates defined in the [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates) project on GitHub that will give a leg up when starting on a new template or adding to an existing one.
 

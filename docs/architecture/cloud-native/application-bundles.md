@@ -6,7 +6,9 @@ ms.date: 06/30/2019
 
 # Cloud Native Application Bundles
 
-A key property of cloud native applications is that they leverage the properties of the cloud to speed up development. This often means that a full application uses different kinds of technologies. Applications may be shipped in Docker containers, some services may use Azure Functions while other parts may run directly on virtual machines allocated on large metal servers with hardware GPU acceleration. No two cloud native applications are the same, so it's been difficult to provide a single mechanism for shipping them.
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
+A key property of cloud-native applications is that they leverage the properties of the cloud to speed up development. This often means that a full application uses different kinds of technologies. Applications may be shipped in Docker containers, some services may use Azure Functions while other parts may run directly on virtual machines allocated on large metal servers with hardware GPU acceleration. No two cloud-native applications are the same, so it's been difficult to provide a single mechanism for shipping them.
 
 The Docker containers may run on Kubernetes using a Helm Chart for deployment. The Azure Functions may be allocated using Terraform templates. Finally, the virtual machines may be allocated using Terraform but built out using Ansible. This is a whole mess of technologies and there has been no way to package them all together into a reasonable package. Until now.
 
@@ -16,7 +18,7 @@ The effort was announced in December of 2018, so there's still a fair bit of wor
 
 The CNABs can contain different kinds of installation technologies. This allows things like Helm Charts, Terraform templates, and Ansible Playbooks to coexist in the same package. Once built, the packages are self-contained and portable; they can be installed from a USB stick.  The packages are cryptographically signed to ensure they originate from the party they claim.
 
-The core of a CNAB is a file called `bundle.json`. This file defines the contents of the bundle, be they Terraform or images or anything else. Figure 11-9 defines a CNAB that invokes some Terraform. Notice, however, that it actually defines an invocation image that is used to invoke the Terraform. When packaged up, the Docker file that is located in the cnab directory is built into a Docker image, which will be included in the bundle. Having Terraform installed inside a Docker container in the bundle means that users don't need to have Terraform installed on their machine to run the bundling.
+The core of a CNAB is a file called `bundle.json`. This file defines the contents of the bundle, be they Terraform or images or anything else. Figure 11-9 defines a CNAB that invokes some Terraform. Notice, however, that it actually defines an invocation image that is used to invoke the Terraform. When packaged up, the Docker file that is located in the *cnab* directory is built into a Docker image, which will be included in the bundle. Having Terraform installed inside a Docker container in the bundle means that users don't need to have Terraform installed on their machine to run the bundling.
 
 ```json
 {
@@ -67,7 +69,7 @@ The core of a CNAB is a file called `bundle.json`. This file defines the content
 
 The `bundle.json` also defines a set of parameters that are passed down into the Terraform. Parameterization of the bundle allows for installation in a variety of different environments.
 
-The CNAB format is also flexible, allowing it to be used against any cloud. It can even be used against on-premise solutions such as [OpenStack](https://www.openstack.org/).
+The CNAB format is also flexible, allowing it to be used against any cloud. It can even be used against on-premises solutions such as [OpenStack](https://www.openstack.org/).
 
 ## DevOps Decisions
 

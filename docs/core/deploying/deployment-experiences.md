@@ -11,7 +11,7 @@ ms.custom:
 <br/>
 
 ## Full Installers
-.NET Core major and minor releases, and servicing updates always ship as the full product installers, that is the installer carries the entire product even if only a subset of the files is updated.
+.NET Core major and minor releases, and servicing updates always ship as the full product installers. The installer carries the entire product even if only a subset of the files is updated.
 
 <br/>
 
@@ -28,12 +28,12 @@ In .NET Core 3.0 and later versions, new major and minor releases continue to in
 
 For example, installing 3.0.2 when you already have 3.0.1 installed will result in 3.0.2 replacing 3.0.1.
 
-Customers that have a strong business need to be conservative and protect against any possibility of an update delivering a breaking change can shield themselves from this possiblity, see [Self-Contained deployments (SCD)](publish.md#self-contained-deployments-scd).
+Customers that have a strong business need to be conservative and protect against any possibility of an update delivering a breaking change can isolate their deployments by creating [Self-Contained deployments (SCD)](publish.md#self-contained-deployments-scd).
 
 <br/>
 
 ## Roll-Forward
-Starting with Core 2.1, .NET Core updates support patch roll-forward. When you create a self-contained deployment, .NET Core tools automatically download the latest servicing version of .NET Core from NuGet.org and include this with your application targets.
+Starting with Core 2.1, .NET Core updates support patch roll-forward. When you create a self-contained deployment, .NET Core tools automatically download the latest servicing version of .NET Core from NuGet.org and include this runtime with your application targets.
 
 .NET Core 3.0 introduces an opt-in feature that allows your app to roll-forward to the latest major version of .NET Core. A new setting has also been added to control how roll-forward is applied to your app. 
 

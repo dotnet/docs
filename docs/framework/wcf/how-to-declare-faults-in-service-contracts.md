@@ -16,7 +16,7 @@ In managed code, exceptions are thrown when error conditions occur. In Windows C
 
 2. Select an operation that can specify an error condition about which clients can expect to be notified. To decide which error conditions justify returning SOAP faults to clients, see [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md).
 
-3. Apply a <xref:System.ServiceModel.FaultContractAttribute?displayProperty=nameWithType> to the selected operation and pass a serializable fault type to the constructor. For details about creating and using serializable types, see [Specifying Data Transfer in Service Contracts](specifying-data-transfer-in-service-contracts.md). The following example shows how to specify that the `SampleMethod` operation can result in a `GreetingFault`.
+3. Apply a <xref:System.ServiceModel.FaultContractAttribute?displayProperty=nameWithType> to the selected operation and pass a serializable fault type to the constructor. For details about creating and using serializable types, see [Specifying Data Transfer in Service Contracts](./feature-details/specifying-data-transfer-in-service-contracts.md). The following example shows how to specify that the `SampleMethod` operation can result in a `GreetingFault`.
 
      [!code-csharp[FaultContractAttribute#4](~/samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/services.cs#4)]
      [!code-vb[FaultContractAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/services.vb#4)]

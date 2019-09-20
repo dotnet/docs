@@ -6,3 +6,28 @@
     href: categories.md    
   - name: Breaking changes
     href: breaking-changes.md  
+  - name: Breaking changes by version
+    items:
+    - name: .NET Framework - .NET Core
+      href: framework-core.md
+    - name: 2.2 - 3.0
+      href: 2.2-3.0.md
+    - name: 3.0 Preview 6 - 3.0 Preview 7
+      href: 3.0.6-3.0.7.md
+    - name: 3.0 Preview 7 - 3.0 Preview 8
+      href: 3.0.7-3.0.8.md
+    - name: 3.0 Preview 8 - 3.0 Preview 9
+      href: 3.0.8-3.0.9.md
+  - name: Breaking changes by category
+    items:
+    - name: CoreFx
+      href: corefx.md
+    - name: Cryptography
+      href: crypto.md
+    - name: Globalization
+      href: glob.md
+    - name: Visual Basic
+      href: vb.md
+    - name: Windows Forms
+      href: winforms.md 
+      

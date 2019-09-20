@@ -56,7 +56,7 @@ End Module
   
  This example produces the following output:  
   
-```  
+```xml  
 abcde  
 ```  
   

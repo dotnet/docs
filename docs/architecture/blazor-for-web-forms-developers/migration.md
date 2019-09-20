@@ -514,7 +514,7 @@ When converted to Blazor, the Web Forms page translates to the following code:
 }
 ```
 
-Notice that the code and markup are in the same file. Any required services are made accessible with the `@inject` attribute. Per the `@page` directive, this page can be accessed at the `Catalog/Details/{id}` route. The value of the route's `{id}` placeholder has been constrained to an integer. As described in the [routing](pages-routing.md) section, unlike Web Forms, a Razor component explicitly states its route and any parameters that are included. Many Web Forms controls may not have exact counterparts in Blazor. There's often an equivalent HTML snippet that will serve the same purpose. For example, the `<asp:Label />` control can be replaced with an HTML `<label>` element.
+Notice that the code and markup are in the same file. Any required services are made accessible with the `@inject` attribute. Per the `@page` directive, this page can be accessed at the `Catalog/Details/{id}` route. The value of the route's `{id}` placeholder has been constrained to an integer. As described in the [routing](pages-routing-layouts.md) section, unlike Web Forms, a Razor component explicitly states its route and any parameters that are included. Many Web Forms controls may not have exact counterparts in Blazor. There's often an equivalent HTML snippet that will serve the same purpose. For example, the `<asp:Label />` control can be replaced with an HTML `<label>` element.
 
 ### Model validation in Blazor
 

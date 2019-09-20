@@ -8,7 +8,7 @@ In .NET Core 2.2 and previous versions, methods such as <xref:System.Environment
 
 The following figure illustrates the difference in version information for the *System.Runtime.dll* assembly for .NET Core 2.2 (on the left) and .NET Core 3.0 (on the right) as displayed by the **Windows Explorer** file properties dialog.
 
-![Difference in product version information](~/docs/images/core-changes/core-fx/version-information-changes/file-details.png)
+![Difference in product version information](~/docs/images/core-changes/corefx/version-information-changes/file-details.png)
 
 #### Version introduced
 

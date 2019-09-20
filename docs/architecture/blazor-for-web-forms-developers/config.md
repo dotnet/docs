@@ -1,6 +1,6 @@
 ---
 title: App configuration
-description: How to configure Blazor apps without web.config.
+description: Learn how to configure Blazor apps without using a web.config file.
 author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019

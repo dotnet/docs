@@ -1,6 +1,6 @@
 ---
 title: State management
-description: Different approaches for handling state in ASP.NET Web Forms and Blazor
+description: Learn about different approaches for managing state in ASP.NET Web Forms and Blazor.
 author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019

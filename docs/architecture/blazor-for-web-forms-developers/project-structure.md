@@ -1,6 +1,6 @@
 ---
 title: Project structure for Blazor apps
-description: Compare the project structures of ASP.NET Web Forms and Blazor projects.
+description: Learn how the project structures of ASP.NET Web Forms and Blazor projects compare.
 author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019

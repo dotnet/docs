@@ -59,7 +59,7 @@ The following example uses a regular expression to verify that a string is in va
 |`(?<=[0-9a-z])`|Continue the match if the character that precedes the @ character is A through Z, a through z, or 0 through 9. The `(?<=[0-9a-z])` construct defines a zero-width positive lookbehind assertion.|  
 |`(?(\[)`|Check whether the character that follows @ is an opening bracket.|  
 |`(\[(\d{1,3}\.){3}\d{1,3}\])`|If it is an opening bracket, match the opening bracket followed by an IP address (four sets of one to three digits, with each set separated by a period) and a closing bracket.|  
-|<code>&#124;(([0-9a-z][-0-9a-z]*[0-9a-z]*\.)+</code>|If the character that follows @ is not an opening bracket, match one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by zero or more occurrences of a hyphen, followed by zero or one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by a period. This pattern can be repeated one or more times, and must be followed by the top-level domain name.|  
+|<code>&#124;(([0-9a-z][-0-9a-z]\*[0-9a-z]\*\\.)+</code>|If the character that follows @ is not an opening bracket, match one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by zero or more occurrences of a hyphen, followed by zero or one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by a period. This pattern can be repeated one or more times, and must be followed by the top-level domain name.|  
 |`[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))`|The top-level domain name must begin and end with an alphanumeric character (a-z, A-Z, and 0-9). It can also include from zero to 22 ASCII characters that are either alphanumeric or hyphens.|  
 |`$`|End the match at the end of the string.|  
   

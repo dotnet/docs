@@ -5,8 +5,9 @@ author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019
 ---
-
 # Project structure for Blazor apps
+
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Despite their significant project structure differences, ASP.NET Web Forms and Blazor share many similar concepts. Here we will look at the structure of a Blazor project and compare it to an ASP.NET Web Forms project.
 

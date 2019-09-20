@@ -5,8 +5,9 @@ author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019
 ---
-
 # Blazor app hosting models
+
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Blazor apps can be hosted in IIS just like ASP.NET Web Forms apps. Blazor apps can also be hosted in one of the following ways:
 

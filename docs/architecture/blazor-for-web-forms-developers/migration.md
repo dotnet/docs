@@ -7,6 +7,8 @@ ms.date: 09/19/2019
 ---
 # Migrate from ASP.NET Web Forms to Blazor
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Migrating a code base from ASP.NET Web Forms to Blazor is a time-consuming task that requires planning. This chapter outlines the process. Something that can ease the transition is to ensure the app adheres to an *N-tier* architecture, wherein the app model (in this case, Web Forms) is separate from the business logic. This logical separation of layers makes it clear what needs to move to .NET Core and Blazor.
 
 For this example, the eShop app available on [GitHub](https://github.com/dotnet-architecture/eShopOnBlazor) is used. eShop is a catalog service that provides CRUD capabilities via form entry and validation.
@@ -512,7 +514,7 @@ When converted to Blazor, the Web Forms page translates to the following code:
 }
 ```
 
-Notice that the code and markup are in the same file. Any required services are made accessible with the `@inject` attribute. Per the `@page` directive, this page can be accessed at the `Catalog/Details/{id}` route. The value of the route's `{id}` placeholder has been constrained to an integer. As described in the [routing](pages-routing.md) section, unlike Web Forms, a Razor component explicitly states its route and any parameters that are included. Many Web Forms controls may not have exact counterparts in Blazor. There's often an equivalent HTML snippet that will serve the same purpose. For example, the `<asp:Label />` control can be replaced with an HTML `<label>` element.
+Notice that the code and markup are in the same file. Any required services are made accessible with the `@inject` attribute. Per the `@page` directive, this page can be accessed at the `Catalog/Details/{id}` route. The value of the route's `{id}` placeholder has been constrained to an integer. As described in the [routing](pages-routing-layouts.md) section, unlike Web Forms, a Razor component explicitly states its route and any parameters that are included. Many Web Forms controls may not have exact counterparts in Blazor. There's often an equivalent HTML snippet that will serve the same purpose. For example, the `<asp:Label />` control can be replaced with an HTML `<label>` element.
 
 ### Model validation in Blazor
 
@@ -644,3 +646,6 @@ Many operations in ASP.NET Core are asynchronous, which allows easier off-loadin
 ## Migration conclusion
 
 At this point, you've seen many examples of what it takes to move a Web Forms project to Blazor. For a full example, see the [eShopOnBlazor](https://github.com/dotnet-architecture/eShopOnBlazor) project.
+
+>[!div class="step-by-step"]
+>[Previous](security-authentication-authorization.md)

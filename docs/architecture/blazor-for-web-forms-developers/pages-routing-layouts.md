@@ -7,6 +7,8 @@ ms.date: 09/19/2019
 ---
 # Pages, routing, and layouts
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 ASP.NET Web Forms apps are composed of pages defined in *.aspx* files. Each page's address is based on its physical file path in the project. When a browser makes a request to the page, the contents of the page are dynamically rendered on the server. The rendering accounts for both the page's HTML markup and its server controls.
 
 In Blazor, each page in the app is a component, typically defined in a *.razor* file, with one or more specified routes. Routing mostly happens client-side without involving a specific server request. The browser first makes a request to the root address of the app. A root `Router` component in the Blazor app then handles intercepting navigation requests and them to the correct component.
@@ -271,3 +273,7 @@ The rendered output for the page would then be:
 Layouts in Blazor don't typically define the root HTML elements for a page (`<html>`, `<body>`, `<head>`, and so on). The root HTML elements are instead defined in a Blazor app's host page, which is used to render the initial HTML content for the app (see [Bootstrap Blazor](project-structure.md#bootstrap-blazor)). The host page can render multiple root components for the app with surrounding markup.
 
 Components in Blazor, including pages, can't render `<script>` tags. This rendering restriction exists because `<script>` tags get loaded once and then can't be changed. Unexpected behavior may occur if you try to render the tags dynamically using Razor syntax. Instead, all `<script>` tags should be added to the app's host page.
+
+>[!div class="step-by-step"]
+>[Previous](components.md)
+>[Next](state-management.md)

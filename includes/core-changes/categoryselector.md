@@ -1,6 +1,6 @@
 > [!div class="op_single_selector"]
 > - [CoreFx](~/docs/core/compatibility/corefx.md)
-> - [Cryptography](~/docs/core/compatibility/crypto.md)
+> - [Cryptography](~/docs/core/compatibility/cryptography.md)
 > - [Globalization](~/docs/core/compatibility/glob.md)
 > - [Visual Basic](~/docs/core/compatibility/vb.md)
 > - [Windows Forms](~/docs/core/compatibility/winforms.md)

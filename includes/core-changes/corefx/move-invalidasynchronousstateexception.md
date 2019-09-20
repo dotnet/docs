@@ -4,7 +4,7 @@ The <xref:System.ComponentModel.InvalidAsynchronousStateException> class has bee
 
 #### Change description
 
-In .NET Core 2.2 and earlier versions, The <xref:System.ComponentModel.InvalidAsynchronousStateException> class is found in the *System.ComponentModel.TypeConverter* assembly.
+In .NET Core 2.2 and earlier versions, the <xref:System.ComponentModel.InvalidAsynchronousStateException> class is found in the *System.ComponentModel.TypeConverter* assembly.
 
 Starting with .NET Core 3.0, it is found in the *System.ComponentModel.Primitives* assembly.
 
@@ -18,7 +18,7 @@ This change only affects applications that use reflection to load the <xref:Syst
 
 #### Category
 
-Windows Forms
+CoreFx
 
 #### Affected APIs
 

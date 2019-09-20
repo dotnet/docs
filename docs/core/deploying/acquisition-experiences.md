@@ -113,7 +113,7 @@ Microsoft provides images that are tailored for specific scenarios. For example,
 
 For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](https://docs.microsoft.com/dotnet/core/docker/intro-net-docker) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
 
-## Azure App Services
+### Azure App Services
 Various Azure services support containers. You create a Docker image for your application and deploy it to one of the following services:
 - [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/)  
   Scale and orchestrate Linux containers using Kubernetes.

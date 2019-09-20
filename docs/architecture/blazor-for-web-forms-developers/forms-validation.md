@@ -15,14 +15,14 @@ Blazor supports the sharing of validation logic between both the client and the 
 
 Blazor provides a set of input components. The input components handle binding field data to a model and validating the user input when the form is submitted.
 
-Input component | Rendered as
---------------- | -----------
-`InputText`     | `<input>`
-`InputTextArea` | `<textarea>`
-`InputSelect`   | `<select>`
-`InputNumber`   | `<input type="number">`
-`InputCheckbox` | `<input type="checkbox">`
-`InputDate`     | `<input type="date">`
+|Input component|Rendered HTML element    |
+|---------------|-------------------------|
+|`InputCheckbox`|`<input type="checkbox">`|
+|`InputDate`    |`<input type="date">`    |
+|`InputNumber`  |`<input type="number">`  |
+|`InputSelect`  |`<select>`               |
+|`InputText`    |`<input>`                |
+|`InputTextArea`|`<textarea>`             |
 
 The `EditForm` component wraps these input components and orchestrates the validation process through an `EditContext`. When creating an `EditForm`, you specify what model instance to bind to using the `Model` parameter. Validation is typically done using data annotations, and it's extensible. To enable data annotation-based validation, add the `DataAnnotationsValidator` component as a child of the `EditForm`. The `EditForm` component provides a convenient event for handling valid (`OnValidSubmit`) and invalid (`OnInvalidSubmit`) submissions. There's also a more generic `OnSubmit` event that lets you trigger and handle the validation yourself.
 

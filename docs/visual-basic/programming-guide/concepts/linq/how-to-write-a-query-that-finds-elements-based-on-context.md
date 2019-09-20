@@ -45,7 +45,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 id = 1  
 id = 3  
 id = 6  
@@ -94,7 +94,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 id = 1  
 id = 3  
 id = 6  

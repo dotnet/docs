@@ -129,7 +129,7 @@ End Module
   
  This example produces the following output:  
   
-```  
+```xml  
 Before Transform  
 ----------------  
 <Root>  
@@ -154,30 +154,32 @@ After Transform
   
 - The pseudo code for the function is quite simple:  
   
+```vb  
+' The function takes an XElement as an argument and returns an XElement.
+'   
+' If an element has an XElement annotation, then  
+'   Return a new XElement  
+'        The name of the new XElement is the annotation element's name.  
+'        All attributes are copied from the annotation to the new node.  
+'        All child nodes are copied from the annotation, with the  
+'            exception that the special node xf:ApplyTransforms is  
+'            recognized, and the source element's child nodes are  
+'            iterated. If the source child node is not an XElement, it  
+'            is copied to the new tree. If the source child is an  
+'            XElement, then it is transformed by calling this function  
+'            recursively.
+'  
+' If an element is not annotated  
+'   Return a new XElement  
+'        The name of the new XElement is the source element's name  
+'        All attributes are copied from the source element to the  
+'            destination's element.  
+'        All child nodes are copied from the source element.  
+'        If the source child node is not an XElement, it is copied to  
+'            the new tree. If the source child is an XElement, then it  
+'            is transformed by calling this function recursively.  
 ```  
-The function takes an XElement as an argument and returns an XElement.   
-If an element has an XElement annotation, then  
-    Return a new XElement  
-        The name of the new XElement is the annotation element's name.  
-        All attributes are copied from the annotation to the new node.  
-        All child nodes are copied from the annotation, with the  
-            exception that the special node xf:ApplyTransforms is  
-            recognized, and the source element's child nodes are  
-            iterated. If the source child node is not an XElement, it  
-            is copied to the new tree. If the source child is an  
-            XElement, then it is transformed by calling this function  
-            recursively.  
-If an element is not annotated  
-    Return a new XElement  
-        The name of the new XElement is the source element's name  
-        All attributes are copied from the source element to the  
-            destination's element.  
-        All child nodes are copied from the source element.  
-        If the source child node is not an XElement, it is copied to  
-            the new tree. If the source child is an XElement, then it  
-            is transformed by calling this function recursively.  
-```  
-  
+
  Following is the implementation of this function:  
   
 ```vb  
@@ -340,7 +342,7 @@ End Module
   
  This example produces the following output:  
   
-```  
+```xml  
 Before Transform  
 ----------------  
 <Root Att1="123">  

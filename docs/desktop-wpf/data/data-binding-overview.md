@@ -333,7 +333,14 @@ Without the use of data templates, our application UI in the [What Is Data Bindi
 
 As shown in the example in the previous section, both the <xref:System.Windows.Controls.ListBox> control and the <xref:System.Windows.Controls.ContentControl> are bound to the entire collection object (or more specifically, the view over the collection object) of *AuctionItem*s. Without specific instructions of how to display the data collection, the <xref:System.Windows.Controls.ListBox> is displaying a string representation of each object in the underlying collection and the <xref:System.Windows.Controls.ContentControl> is displaying a string representation of the object it is bound to.
 
-To solve that problem, the application defines @"System.Windows.DataTemplate?text=DataTemplates". As shown in the example in the previous section, the <xref:System.Windows.Controls.ContentControl> explicitly uses the *detailsProductListingTemplate*<xref:System.Windows.DataTemplate>. The <xref:System.Windows.Controls.ListBox> control implicitly uses the following <xref:System.Windows.DataTemplate> when displaying the *AuctionItem* objects in the collection:
+| Reference | Output |
+| --------- | ------ |
+| `@"System.Windows.DataTemplate?text=DataTemplates"` | @"System.Windows.DataTemplate?text=DataTemplates" |
+| `<xref:System.Windows.DataTemplate?title=DataTemplates>`                | <xref:System.Windows.DataTemplate?title=DataTemplates> |
+| `<xref:System.Windows.DataTemplate?text=DataTemplates>`                | <xref:System.Windows.DataTemplate?text=DataTemplates> |
+| `[](xref:System.Windows.DataTemplate?title=Datatemplates)`             | [](xref:System.Windows.DataTemplate?title=Datatemplates) |
+
+To solve that problem, the application defines @"System.Windows.DataTemplate?text=DataTemplates". As shown in the example in the previous section, the <xref:System.Windows.Controls.ContentControl> explicitly uses the *detailsProductListingTemplate* <xref:System.Windows.DataTemplate>. The <xref:System.Windows.Controls.ListBox> control implicitly uses the following <xref:System.Windows.DataTemplate> when displaying the *AuctionItem* objects in the collection:
 
 [!code-xaml[AuctionItemDataTemplate](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/CollectionView.xaml#AuctionItemDataTemplate)]
 

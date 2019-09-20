@@ -16,7 +16,7 @@ ms.date: 09/02/2019
 
 Create an empty solution called **TraderSys** from the *Blank Solution* template. Add a Solution Folder called `src`, then right-click on the folder and choose **Add** > **New Project** from the context menu. Enter `grpc` in the template search box and you should see a project template called `gRPC Service`.
 
-![Add new project dialog showing gRPC Service project template](media/create-project/new-grpc-project.PNG)
+![Add new project dialog showing gRPC Service project template](media/create-project/new-grpc-project.png)
 
 Click **Next** to continue to the **Configure project** dialog and name the project `TraderSys.Portfolios`, and add an `src` subdirectory to the **Location**.
 

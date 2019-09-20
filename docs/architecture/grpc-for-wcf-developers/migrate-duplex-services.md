@@ -13,7 +13,7 @@ There are multiple ways to use duplex services in Windows Communication Foundati
 
 ## Server streaming RPC
 
-In the [sample SimpleStockTicker WCF solution](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/SimpleStockTickerSample/wcf/SimpleStockTicker), *SimpleStockPriceTicker*, there's a duplex service where the client starts the connection with a list of stock symbols, and the server uses the *callback interface* to send updates as they become available. The client implements that interface to respond to calls from the server.
+In the [sample SimpleStockTicker WCF solution](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/SimpleStockTickerSample/wcf/SimpleStockTicker), *SimpleStockPriceTicker*, there's a duplex service where the client starts the connection with a list of stock symbols, and the server uses the *callback interface* to send updates as they become available. The client implements that interface to respond to calls from the server.
 
 ### The WCF solution
 
@@ -241,7 +241,7 @@ Again, be careful to catch exceptions here because of the possibility of network
 
 ## Bidirectional streaming
 
-A WCF full-duplex service allows for asynchronous, real-time messaging in both directions. In the server streaming example, the client starts a request, then receives a stream of updates. A better version of that service would allow the client to add and remove stocks from the list without having to stop and create a new subscription. That functionality has been implemented in the [FullStockTicker sample solution](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/FullStockTickerSample/wcf/FullStockTicker).
+A WCF full-duplex service allows for asynchronous, real-time messaging in both directions. In the server streaming example, the client starts a request, then receives a stream of updates. A better version of that service would allow the client to add and remove stocks from the list without having to stop and create a new subscription. That functionality has been implemented in the [FullStockTicker sample solution](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/wcf/FullStockTicker).
 
 The `IFullStockTickerService` interface provides three methods:
 
@@ -382,7 +382,7 @@ private async Task HandleActions(IAsyncStreamReader<ActionMessage> requestStream
 
 ### Use the FullStockTickerService from a client application
 
-There's a simple .NET Core 3.0 WPF application to demonstrate use of this more complex client. The full application can be found [on GitHub](https://github.com/RendleLabs/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTicker).
+There's a simple .NET Core 3.0 WPF application to demonstrate use of this more complex client. The full application can be found [on GitHub](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTicker).
 
 The client is used in the `MainWindowViewModel` class, which gets an instance of the `FullStockTicker.FullStockTickerClient` type from dependency injection.
 

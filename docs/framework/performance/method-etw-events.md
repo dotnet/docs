@@ -32,7 +32,7 @@ CLR method events are further subdivided into the following:
 
 ## CLR Method Events
 
-The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)
+The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -168,4 +168,4 @@ The following table shows the event data.
 
 ## See also
 
-- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+- [CLR ETW Events](clr-etw-events.md)

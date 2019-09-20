@@ -20,7 +20,7 @@ In this example, a client console application is created to use a calculator ser
   
 1. Use Svcutil.exe from the command line to generate code from service metadata.  
   
-    ```  
+    ```console  
     Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>   
     ```  
   

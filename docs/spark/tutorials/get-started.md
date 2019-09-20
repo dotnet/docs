@@ -14,6 +14,7 @@ This tutorial teaches you how to run a .NET for Apache Spark app using .NET Core
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > * Prepare your Windows environment for .NET for Apache Spark
 > * Download the **Microsoft.Spark.Worker**
 > * Build and run a simple .NET for Apache Spark application
@@ -120,6 +121,7 @@ Congratulations! You successfully authored and ran a .NET for Apache Spark app.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > * Prepare your Windows environment for .NET for Apache Spark
 > * Download the **Microsoft.Spark.Worker**
 > * Build and run a simple .NET for Apache Spark application

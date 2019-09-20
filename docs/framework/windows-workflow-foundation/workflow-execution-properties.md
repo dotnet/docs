@@ -141,7 +141,7 @@ WorkflowInvoker.Invoke(wf);
   
  When the workflow is invoked, the following output is written to the console window.  
   
-```  
+```console  
 Start blue text.  
 Start red text.  
 Start default text.  

@@ -17,7 +17,7 @@ This article assumes that you know how to use a command line and have a preferre
 
 Open a command prompt/terminal and use the [dotnet new](../../core/tools/dotnet-new.md) command to create new solution file called `FSNetCore`:
 
-```console
+```dotnetcli
 dotnet new sln -o FSNetCore
 ```
 
@@ -34,7 +34,7 @@ Change directories to *FSNetCore*.
 
 Use the `dotnet new` command, create a class library project in the **src** folder named Library.
 
-```console
+```dotnetcli
 dotnet new classlib -lang F# -o src/Library
 ```
 
@@ -62,13 +62,13 @@ let getJsonNetJson value =
 
 Add the Newtonsoft.Json NuGet package to the Library project.
 
-```console
+```dotnetcli
 dotnet add src/Library/Library.fsproj package Newtonsoft.Json
 ```
 
 Add the `Library` project to the `FSNetCore` solution using the [dotnet sln add](../../core/tools/dotnet-sln.md) command:
 
-```console
+```dotnetcli
 dotnet sln add src/Library/Library.fsproj
 ```
 
@@ -78,7 +78,7 @@ Run `dotnet build` to build the project. Unresolved dependencies will be restore
 
 Use the `dotnet new` command, create a console application in the **src** folder named App.
 
-```console
+```dotnetcli
 dotnet new console -lang F# -o src/App
 ```
 
@@ -115,13 +115,13 @@ let main argv =
 
 Add a reference to the `Library` project using [dotnet add reference](../../core/tools/dotnet-add-reference.md).
 
-```console
+```dotnetcli
 dotnet add src/App/App.fsproj reference src/Library/Library.fsproj
 ```
 
 Add the `App` project to the `FSNetCore` solution using the `dotnet sln add` command:
 
-```console
+```dotnetcli
 dotnet sln add src/App/App.fsproj
 ```
 

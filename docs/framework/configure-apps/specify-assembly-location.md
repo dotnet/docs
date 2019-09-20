@@ -61,7 +61,7 @@ There are two ways to specify an assembly's location:
   
 ## See also
 
-- [Assemblies in the Common Language Runtime](../app-domains/assemblies-in-the-common-language-runtime.md)
-- [Programming with Assemblies](../app-domains/programming-with-assemblies.md)
+- [Assemblies in .NET](../../standard/assembly/index.md)
+- [Programming with Assemblies](../../standard/assembly/program.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps by using Configuration Files](index.md)

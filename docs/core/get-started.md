@@ -3,7 +3,7 @@ title: Get started with .NET Core
 description: Find resources to learn how to build .NET Core applications on Windows, Linux and macOS.
 author: thraka
 ms.author: adegeo
-ms.date: 06/27/2018
+ms.date: 09/19/2019
 ---
 
 # Get started with .NET Core
@@ -18,7 +18,7 @@ First, download and install the [.NET Core SDK](https://dotnet.microsoft.com/dow
 
 Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**. Type the following `dotnet` commands to create and run a C# application.
 
-```console
+```dotnetcli
 dotnet new console --output sample1
 dotnet run --project sample1
 ```
@@ -34,6 +34,8 @@ Congratulations! You've created a simple .NET Core application. You can also use
 ## Tutorials
 
 You can get started developing .NET Core applications by following these step-by-step tutorials.
+
+<!-- markdownlint-disable MD025 -->
 
 # [Windows](#tab/windows)
 

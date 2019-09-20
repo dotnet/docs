@@ -112,7 +112,7 @@ You need Visual Studio to complete this walkthrough.
 
 3. Generate a key file named MyControls.snk by running the following command.
 
-    ```
+    ```console
     Sn.exe -k MyControls.snk
     ```
 

@@ -71,7 +71,7 @@ A WCF service is exposed to the world as a collection of endpoints.
 
 The endpoint address enables you to create unique endpoint addresses for each endpoint in a service or, under certain conditions, to share an address across endpoints. The following example shows an address using the HTTPS protocol with a non-default port:
 
-```
+```http
 HTTPS://cohowinery:8005/ServiceModelSamples/CalculatorService
 ```
 

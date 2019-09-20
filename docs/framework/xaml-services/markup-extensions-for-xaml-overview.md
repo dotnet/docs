@@ -67,7 +67,7 @@ Markup extensions are a XAML technique for obtaining a value that is neither a p
   
  For example, suppose the `Collate` markup extension is intended to support only a mode where there is one positional argument that represents its mode, specified as a `CollationMode` enumeration constant. In this case, there should be a constructor with the following form:  
   
-```  
+```csharp  
 public Collate(CollationMode collationMode) {...}  
 ```  
   
@@ -85,7 +85,7 @@ public Collate(CollationMode collationMode) {...}
   
  The arguments are called positional arguments because the order in which the tokens in the usage is encountered corresponds to the positional order of the constructor parameter to which they are assigned. For example, consider the following constructor signature:  
   
-```  
+```csharp  
 public Collate(CollationMode collationMode, object collateThis) {...}  
 ```  
   

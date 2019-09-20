@@ -37,7 +37,7 @@ AllowOptimize=0
 
 You can set the value of each option to 0 or 1, and any absent option defaults to 0. Setting `GenerateTrackingInfo` to 1 and `AllowOptimize` to 0 provides the easiest debugging.
 
-Starting with the .NET Framework version 2.0, the JIT compiler always generates tracking information regardless of the value for `GenerateTrackingInfo`; however, the `AllowOptimize` value still has an effect. When using the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) to precompile the native image without optimization, the .ini file must be present in the target folder with `AllowOptimize=0` when Ngen.exe executes. If you have precompiled an assembly without optimization, you must remove the precompiled code using NGen.exe **/uninstall** option before rerunning Ngen.exe to precompile the code as optimized. If the .ini file isn't present in the folder, by default Ngen.exe precompiles the code as optimized.
+Starting with the .NET Framework version 2.0, the JIT compiler always generates tracking information regardless of the value for `GenerateTrackingInfo`; however, the `AllowOptimize` value still has an effect. When using the [Ngen.exe (Native Image Generator)](../tools/ngen-exe-native-image-generator.md) to precompile the native image without optimization, the .ini file must be present in the target folder with `AllowOptimize=0` when Ngen.exe executes. If you have precompiled an assembly without optimization, you must remove the precompiled code using NGen.exe **/uninstall** option before rerunning Ngen.exe to precompile the code as optimized. If the .ini file isn't present in the folder, by default Ngen.exe precompiles the code as optimized.
 
 The <xref:System.Diagnostics.DebuggableAttribute?displayProperty=nameWithType> controls the settings for an assembly. **DebuggableAttribute** includes two fields that control whether the JIT compiler should optimize and/or generate tracking information. Starting with the .NET Framework version 2.0, the JIT compiler always generates tracking information.
 
@@ -50,6 +50,6 @@ The **DebuggableAttribute** applies to a whole assembly at a time, not to indivi
 
 ## See also
 
-- [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)
-- [Enabling JIT-Attach Debugging](../../../docs/framework/debug-trace-profile/enabling-jit-attach-debugging.md)
+- [Debugging, Tracing, and Profiling](index.md)
+- [Enabling JIT-Attach Debugging](enabling-jit-attach-debugging.md)
 - [Enabling Profiling](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/s5ec0es1(v=vs.100))

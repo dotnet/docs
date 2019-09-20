@@ -273,7 +273,7 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
 - **Introduction to Service Fabric health monitoring** \
   [https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction](/azure/service-fabric/service-fabric-health-introduction)
 
-- **Azure Monitor**
+- **Azure Monitor**  
   <https://azure.microsoft.com/services/monitor/>
 
 >[!div class="step-by-step"]

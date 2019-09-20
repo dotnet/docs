@@ -8,7 +8,7 @@ Starting with .NET Core 3.0, the minimum legal key size reported by the `LegalKe
 
 As a result, in .NET Core 2.2 and earlier versions, a method call such as `RSA.Create(384)` succeeds. In .NET Core 3.0 and later versions, the method call `RSA.Create(384)` throws an exception indicating the size is too small.
 
-These changes was made because OpenSSL, which performs the cryptographic operations on Linux, raised its minimum between versions 1.0.2 and 1.1.0.  .NET Core 3.0 prefers OpenSSL 1.1.x to 1.0.x, and the minimum reported version was raised to reflect this new higher dependency limitation.
+These changes was made because OpenSSL, which performs the cryptographic operations on Linux, raised its minimum between versions 1.0.2 and 1.1.0. .NET Core 3.0 prefers OpenSSL 1.1.x to 1.0.x, and the minimum reported version was raised to reflect this new higher dependency limitation.
 
 #### Version introduced
 

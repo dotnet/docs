@@ -28,7 +28,7 @@ In .NET Core 3.0 and later versions, new major and minor releases continue to in
 
 For example, installing 3.0.2 when you already have 3.0.1 installed will result in 3.0.2 replacing 3.0.1.
 
-Customers that have a strong business need to be conservative and protect against any possibility of an update delivering a breaking change can shield themselves from this possiblity, see [Self-Contained deployments](publish.md#Self-contained deployments-scd).
+Customers that have a strong business need to be conservative and protect against any possibility of an update delivering a breaking change can shield themselves from this possiblity, see [Self-Contained deployments (SCD)](publish.md#self-contained-deployments-scd).
 
 <br/>
 

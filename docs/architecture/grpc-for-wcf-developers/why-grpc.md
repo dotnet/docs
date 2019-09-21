@@ -23,7 +23,7 @@ As already discussed, using HTTP/2 rather than HTTP/1.1 removes the requirement 
 
 ### Interoperability
 
-There are gRPC tools and libraries for all major programming languages and platforms, including .NET, Java, Python, Go, C++, Node.js, Swift, Dart, Ruby, and PHP. Thanks to the Protocol Buffers binary wire format and the efficient code generation for each platform, developers can achieve better performance than WCF's NetTCP bindings while still enjoying full cross-platform support.
+There are gRPC tools and libraries for all major programming languages and platforms, including .NET, Java, Python, Go, C++, Node.js, Swift, Dart, Ruby, and PHP. Thanks to the Protocol Buffers binary wire format and the efficient code generation for each platform, developers can build performant apps while still enjoying full cross-platform support.
 
 ### Usability and productivity
 

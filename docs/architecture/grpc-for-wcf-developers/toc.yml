@@ -68,13 +68,15 @@
       href: streaming-versus-repeated.md
     - name: Client libraries
       href: client-libraries.md
-  - name: gRPC authentication and authorization
-    href: authentication.md
+  - name: Security in gRPC applications
+    href: security.md
     items:
     - name: Call credentials
       href: call-credentials.md
     - name: Channel credentials
       href: channel-credentials.md
+    - name: Encryption
+      href: encryption.md
   - name: gRPC in production
     href: grpc-in-production.md
     items:

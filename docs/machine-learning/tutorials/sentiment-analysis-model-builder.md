@@ -18,6 +18,7 @@ This tutorial shows you how to create an ASP.NET Core Razor Pages application th
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > - Create an ASP.NET Core Razor Pages application
 > - Prepare and understand the data
 > - Choose a scenario
@@ -253,6 +254,7 @@ If you need to reference the Model Builder generated projects at a later time in
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Create an ASP.NET Core Razor Pages application
 > - Prepare and understand the data
 > - Choose a scenario

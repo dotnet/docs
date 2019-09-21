@@ -26,7 +26,7 @@ Single-receiver message-based communication is especially well suited for sendin
 
 Once you start sending message-based communication (either with commands or events), you should avoid mixing message-based communication with synchronous HTTP communication.
 
-![A single microservice receiving an asynchronous message](./media/image18.png)
+![A single microservice receiving an asynchronous message](./media/asynchronous-message-based-communication/single-receiver-message-based-communication.png)
 
 **Figure 4-18**. A single microservice receiving an asynchronous message
 
@@ -48,7 +48,7 @@ As noted earlier in the [Challenges and solutions for distributed data managemen
 
 An important point is that you might want to communicate to multiple microservices that are subscribed to the same event. To do so, you can use publish/subscribe messaging based on event-driven communication, as shown in Figure 4-19. This publish/subscribe mechanism isn't exclusive to the microservice architecture. It's similar to the way [Bounded Contexts](https://martinfowler.com/bliki/BoundedContext.html) in DDD should communicate, or to the way you propagate updates from the write database to the read database in the [Command and Query Responsibility Segregation (CQRS)](https://martinfowler.com/bliki/CQRS.html) architecture pattern. The goal is to have eventual consistency between multiple data sources across your distributed system.
 
-![In asynchronous event-driven communication one microservice publishes events to an event bus and many microservices can subscribe to it, to get notified and act on it.](./media/image19.png)
+![In asynchronous event-driven communication one microservice publishes events to an event bus and many microservices can subscribe to it, to get notified and act on it.](./media/asynchronous-message-based-communication/asynchronous-event-driven-communication.png)
 
 **Figure 4-19**. Asynchronous event-driven message communication
 

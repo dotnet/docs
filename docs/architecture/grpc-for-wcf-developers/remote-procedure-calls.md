@@ -7,5 +7,7 @@ ms.date: 09/02/2019
 
 # Remote procedure calls
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 >[!div class="step-by-step"]
 <!-->[Next](wcf-in-a-nutshell.md)-->

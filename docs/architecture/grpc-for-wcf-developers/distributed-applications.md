@@ -7,5 +7,7 @@ ms.date: 09/02/2019
 
 # Distributed applications and microservices
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 >[!div class="step-by-step"]
 <!-->[Next](remote-procedure-calls.md)-->

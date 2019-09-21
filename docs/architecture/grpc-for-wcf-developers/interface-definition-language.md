@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Interface Definition Language
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 With WCF, services can expose description metadata using the Web Service Definition Language (WSDL), which is generated dynamically using .NET Reflection at runtime. Developers can use this metadata to generate clients for those services, potentially in other languages if a platform-neutral binding such as SOAP over HTTP is used.
 
 gRPC uses the Interface Definition Language (IDL) from Protocol Buffers. The Protocol Buffers IDL is a custom, platform-neutral language with an open specification. Developers hand-code `.proto` files to describe services along with their inputs and outputs. These `.proto` files can then be used to generate language- or platform-specific stubs for clients and servers, allowing multiple different platforms to communicate. By sharing `.proto` files, teams can generate code to use each others' services without needing to take a code dependency.

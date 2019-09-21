@@ -7,7 +7,9 @@ ms.date: 09/09/2019
 
 # Protobuf maps for dictionaries
 
-It is important to be able to represent arbitrary collections of named values in messages. In .NET this is commonly handled using dictionary types. Protobuf's equivalent of the .NET <xref:System.Collections.Generic.IDictionary%602> type is the `map<key_type, value_type>` type. This section shows how to declare a `map` in Protobuf, and how to use the generated code.
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
+It's important to be able to represent arbitrary collections of named values in messages. In .NET this is commonly handled using dictionary types. Protobuf's equivalent of the .NET <xref:System.Collections.Generic.IDictionary%602> type is the `map<key_type, value_type>` type. This section shows how to declare a `map` in Protobuf, and how to use the generated code.
 
 ```protobuf
 message StockPrices {

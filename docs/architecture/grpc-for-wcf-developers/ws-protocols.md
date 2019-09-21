@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # WS-\* protocols
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 One of the real benefits of working with Windows Communication Foundation (WCF) was that it supported many of the existing _WS-\*_ standard protocols. This section will briefly cover how gRPC manages the same WS-\* protocols and discuss what options are available when there's no alternative.
 
 ## Metadata Exchange - WS-Policy, WS-Discovery, and so on

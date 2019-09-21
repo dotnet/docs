@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Security in gRPC applications
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 In any real-world scenario, securing applications and services is essential. Security covers three key areas: encrypting network traffic to prevent it from being intercepted by bad actors; authenticating clients and servers to establish identity and trust; and authorizing clients to control access to systems and apply permissions based on identity.
 
 > [!NOTE]

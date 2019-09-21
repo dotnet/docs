@@ -55,17 +55,17 @@
       href: metadata.md
     - name: Error handling
       href: error-handling.md
-  - name: Migrating a WCF solution to gRPC
-    href: migrating-wcf-to-grpc.md
+  - name: Migrate a WCF solution to gRPC
+    href: migrate-wcf-to-grpc.md
     items:
     - name: Create a new ASP.NET Core gRPC project
-      href: create-grpc-project.md
+      href: create-project.md
     - name: Migrate a WCF request-reply service to gRPC
-      href: migrating-request-reply.md
+      href: migrate-request-reply.md
     - name: Migrate WCF duplex services to gRPC
-      href: migrating-duplex-services.md
+      href: migrate-duplex-services.md
     - name: gRPC streaming services vs repeated fields
-      href: streaming-vs-repeated.md
+      href: streaming-versus-repeated.md
     - name: Client libraries
       href: client-libraries.md
   - name: gRPC authentication and authorization

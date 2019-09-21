@@ -15,7 +15,7 @@ As a Windows Communication Foundation (WCF) developer, you're probably used to d
   - Full duplex with session
 - One-way
 
-It's possible to map these RPC types fairly naturally to existing gRPC concepts and this chapter will look at each of these areas in turn. Similar examples will be explored in much greater depth in [Chapter 5](migrating-wcf-to-grpc.md).
+It's possible to map these RPC types fairly naturally to existing gRPC concepts and this chapter will look at each of these areas in turn. Similar examples will be explored in much greater depth in [Chapter 5](migrate-wcf-to-grpc.md).
 
 | WCF | gRPC |
 | --- | ---- |

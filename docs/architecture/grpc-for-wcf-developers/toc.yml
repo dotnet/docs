@@ -36,16 +36,20 @@
     - name: Protobuf maps for dictionaries
       href: protobuf-maps.md
   - name: Comparing WCF services to gRPC
-    href: comparing-wcf-services-to-grpc.md
+    href: wcf-services-to-grpc-comparison.md
     items:
     - name: WCF Endpoints and gRPC methods
-      href: wcf-endpoints-and-grpc-methods.md
+      href: wcf-endpoints-grpc-methods.md
+    - name: WCF bindings and transports
+      href: wcf-bindings.md
     - name: Types of RPC
-      href: types-of-rpc.md
+      href: rpc-types.md
     - name: Metadata
       href: metadata.md
     - name: Error handling
       href: error-handling.md
+    - name: WS-* protocols
+      href: ws-protocols.md
   - name: Migrate a WCF solution to gRPC
     href: migrate-wcf-to-grpc.md
     items:

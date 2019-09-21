@@ -75,4 +75,5 @@ namespace HelloGrpc
 This chapter will refer to this example code when explaining various concepts and features of gRPC.
 
 >[!div class="step-by-step"]
-<!-->[Next](wcf-endpoints-grpc-methods.md)-->
+>[Previous](protobuf-maps.md)
+>[Next](wcf-endpoints-grpc-methods.md)

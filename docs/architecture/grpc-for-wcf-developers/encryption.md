@@ -28,4 +28,5 @@ Communication between microservices in a cluster like Kubernetes or Docker Swarm
 If you need to use explicit TLS between services running in Kubernetes, consider using an in-cluster Certificate Authority and a Certificate Manager Controller like [cert-manager](https://docs.cert-manager.io/en/latest/) to assign automatically certificates to services at deployment time.
 
 >[!div class="step-by-step"]
-<!-->[Next](grpc-in-production.md)-->
+>[Previous](channel-credentials.md)
+>[Next](grpc-in-production.md)

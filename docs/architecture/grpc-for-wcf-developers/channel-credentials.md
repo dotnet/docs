@@ -154,4 +154,5 @@ var grpc = new Portfolios.PortfoliosClient(channel);
 A version of the [FullStockTicker sample gRPC application with certificate authentication added](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTickerAuth/FullStockTicker) is on GitHub.
 
 >[!div class="step-by-step"]
-<!-->[Next](encryption.md)-->
+>[Previous](call-credentials.md)
+>[Next](encryption.md)

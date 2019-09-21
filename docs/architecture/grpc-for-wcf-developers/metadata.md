@@ -56,6 +56,8 @@ public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request
     context.ResponseTrailers.Add("Responder", _serverName);
     // ...
 }
+```
 
 >[!div class="step-by-step"]
-<!-->[Next](error-handling.md)-->
+>[Previous](rpc-types.md)
+>[Next](error-handling.md)

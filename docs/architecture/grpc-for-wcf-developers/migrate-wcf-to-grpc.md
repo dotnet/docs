@@ -23,4 +23,5 @@ The sample WCF application is a minimal stub of a set of stock trading services,
 The samples include the WCF and gRPC implementations of each service.
 
 >[!div class="step-by-step"]
-<!-->[Next](create-project.md)-->
+>[Previous](ws-protocols.md)
+>[Next](create-project.md)

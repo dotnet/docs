@@ -10,4 +10,4 @@ ms.date: 09/02/2019
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 >[!div class="step-by-step"]
-<!-->[Next](grpc-overview.md)-->
+>[Next](grpc-overview.md)

@@ -34,4 +34,5 @@ MSMQ is a proprietary Windows message queue. WCF's binding to MSMQ enables "fire
 The WebHttpBinding (also known as WCF ReST), with the `WebGet` and `WebInvoke` attributes, enabled you to develop ReSTful APIs that could speak JSON at a time when this was less common than now. Therefore, if you have a RESTful API built with WCF REST, consider migrating it to a regular ASP.NET Core MVC Web API application, which would provide equivalent functionality, rather than converting to gRPC.
 
 >[!div class="step-by-step"]
-<!-->[Next](why-grpc.md)-->
+>[Previous](wcf-endpoints-grpc-methods.md)
+>[Next](rpc-types.md)

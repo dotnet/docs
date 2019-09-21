@@ -20,4 +20,5 @@ Most .NET object serialization techniques, including WCF's data contracts, work 
 The Protobuf wire format itself is a binary encoding, which uses some clever tricks to minimize the number of bytes used to represent messages. Knowledge of the binary encoding format isn't necessary to use Protobuf, but if you're interested you can learn more about it on [the Protocol Buffers web site](https://developers.google.com/protocol-buffers/docs/encoding).
 
 >[!div class="step-by-step"]
-<!-->[Next](protobuf-messages.md)-->
+>[Previous](why-grpc.md)
+>[Next](protobuf-messages.md)

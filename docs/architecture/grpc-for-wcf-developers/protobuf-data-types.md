@@ -183,4 +183,5 @@ namespace CustomTypes
 > Whenever you use custom utility message types like this, you **must** document them with comments in the `.proto` so that other developers can implement conversion to and from the equivalent type in their own language or framework.
 
 >[!div class="step-by-step"]
-<!-->[Next](protobuf-nested-types.md)-->
+>[Previous](protobuf-messages.md)
+>[Next](protobuf-nested-types.md)

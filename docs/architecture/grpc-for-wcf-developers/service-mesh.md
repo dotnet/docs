@@ -122,4 +122,5 @@ spec:
 ```
 
 >[!div class="step-by-step"]
-<!-->[Next](load-balancing.md)-->
+>[Previous](kubernetes.md)
+>[Next](load-balancing.md)

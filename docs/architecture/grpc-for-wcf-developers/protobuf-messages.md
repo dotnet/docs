@@ -90,4 +90,5 @@ The actual code that is generated is far more complicated than this, because eac
 Note that the Protobuf compiler applied `PascalCase` to the property names although they were `camelCase` in the `.proto` file. It's best to use `camelCase` in the message definition so that the code generation for other platforms produces the expected case for their conventions.
 
 >[!div class="step-by-step"]
-<!-->[Next](protobuf-data-types.md)-->
+>[Previous](protocol-buffers.md)
+>[Next](protobuf-data-types.md)

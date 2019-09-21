@@ -43,4 +43,5 @@ Refer to the documentation for your preferred load balancer to find out how to c
 See [the section on Service Meshes](service-mesh.md) for a discussion of load balancing across internal services on Kubernetes.
 
 >[!div class="step-by-step"]
-<!-->[Next](application-performance-management.md)-->
+>[Previous](service-mesh.md)
+>[Next](application-performance-management.md)

@@ -36,4 +36,5 @@ message Info {
 ```
 
 >[!div class="step-by-step"]
-<!-->[Next](protobuf-any-oneof.md)-->
+>[Previous](protobuf-repeated.md)
+>[Next](protobuf-any-oneof.md)

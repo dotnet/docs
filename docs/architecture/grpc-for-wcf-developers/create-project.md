@@ -123,4 +123,5 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 In the next section, we'll add functionality to this new service.
 
 >[!div class="step-by-step"]
-<!-->[Next](migrate-request-reply.md)-->
+>[Previous](migrate-wcf-to-grpc.md)
+>[Next](migrate-request-reply.md)

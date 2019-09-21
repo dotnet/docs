@@ -25,4 +25,5 @@ The following table sets out how the key features of WCF relate to gRPC and wher
 | Security (chapter 6) | Authentication, WS-Security, message encryption | Credentials, ASP.NET Core security, TLS networking |
 
 >[!div class="step-by-step"]
-<!-->[Next](interface-definition-language.md)-->
+>[Previous](grpc-overview.md)
+>[Next](interface-definition-language.md)

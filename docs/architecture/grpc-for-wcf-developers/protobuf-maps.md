@@ -48,4 +48,5 @@ public Order CreateOrder(Dictionary<string, string> attributes)
 For more information about Protobuf, see the official [Protobuf documentation](https://developers.google.com/protocol-buffers/docs/overview).
 
 >[!div class="step-by-step"]
-<!-->[Next](comparing-wcf-services-to-grpc.md)-->
+>[Previous](protobuf-enums.md)
+>[Next](wcf-services-to-grpc-comparison.md)

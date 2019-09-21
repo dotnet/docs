@@ -447,4 +447,5 @@ public class Program
 Now, you've migrated a basic WCF application to an ASP.NET Core gRPC service and created a client to consume the service from a .NET application. The next section will cover the more involved "duplex" services.
 
 >[!div class="step-by-step"]
-<!-->[Next](migrate-duplex-services.md)-->
+>[Previous](create-project.md)
+>[Next](migrate-duplex-services.md)

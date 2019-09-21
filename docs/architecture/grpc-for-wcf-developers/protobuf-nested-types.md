@@ -27,4 +27,5 @@ var inner = new Outer.Types.Inner { Text = "Hello" };
 ```
 
 >[!div class="step-by-step"]
-<!-->[Next](protobuf-repeated.md)-->
+>[Previous](protobuf-data-types.md)
+>[Next](protobuf-repeated.md)

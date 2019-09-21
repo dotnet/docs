@@ -46,4 +46,5 @@ For more information, see the [Authentication and authorization documentation on
 This chapter will show how to apply call credentials and channel credentials to a gRPC service, and how to use credentials from a .NET Core gRPC client to authenticate with the service.
 
 >[!div class="step-by-step"]
-<!-->[Next](call-credentials.md)-->
+>[Previous](client-librearies.md)
+>[Next](call-credentials.md)

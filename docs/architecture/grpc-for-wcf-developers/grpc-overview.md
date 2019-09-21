@@ -28,4 +28,5 @@ To achieve this, the [Cloud Native Computing Foundation (CNCF)](https://www.cncf
 - **Standardized status codes** – the variability of error codes should be reduced to make error handling decisions clearer and, where additional richer error handling is required, a mechanism should be provided for managing this within the metadata exchange.
 
 >[!div class="step-by-step"]
-<!-->[Next](approach.md)-->
+>[Previous](introduction.md)
+>[Next](approach.md)

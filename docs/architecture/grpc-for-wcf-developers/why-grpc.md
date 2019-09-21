@@ -44,4 +44,5 @@ gRPC allows clients to specify a maximum time for an RPC to complete. If the spe
 gRPC is implicitly secure when using HTTP/2 over an TLS end-to-end encrypted connection. Support for Client Certificate authentication (see chapter 6) further increases security and trust between client and server.
 
 >[!div class="step-by-step"]
-<!-->[Next](protocol-buffers.md)-->
+>[Previous](network-protocols.md)
+>[Next](protocol-buffers.md)

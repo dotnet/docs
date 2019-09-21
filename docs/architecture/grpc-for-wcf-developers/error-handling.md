@@ -70,4 +70,5 @@ catch (RpcException)
 Looking ahead, Google has developed a [richer error model](https://cloud.google.com/apis/design/errors#error_model) that is more like WCF's [FaultContract](xref:System.ServiceModel.FaultContractAttribute), but isn't supported in C# yet. Currently, it's only available for Go, Java, Python and C++, but support for C# is expected to come next year.
 
 >[!div class="step-by-step"]
-<!-->[Next](ws-protocols.md)-->
+>[Previous](metadata.md)
+>[Next](ws-protocols.md)

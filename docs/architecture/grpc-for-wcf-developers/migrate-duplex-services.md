@@ -480,4 +480,5 @@ public ValueTask DisposeAsync()
 Closing request streams enables the server to dispose of its own resources in a timely manner. This improves the efficiency and scalability of services and prevents exceptions.
 
 >[!div class="step-by-step"]
-<!-->[Next](streaming-versus-repeated.md)-->
+>[Previous](migrate-request-reply.md)
+>[Next](streaming-versus-repeated.md)

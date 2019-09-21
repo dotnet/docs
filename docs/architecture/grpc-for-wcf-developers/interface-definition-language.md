@@ -28,4 +28,5 @@ The potential disadvantage of Protobuf compared to SOAP is that, because the mes
 > WCF's binary format, used with the NetTCP binding, is much closer to Protobuf in terms of compactness and performance, but NetTCP is only usable between .NET clients and servers, whereas Protobuf is a cross-platform solution.
 
 >[!div class="step-by-step"]
-<!-->[Next](network-protocols.md)-->
+>[Previous](approach.md)
+>[Next](network-protocols.md)

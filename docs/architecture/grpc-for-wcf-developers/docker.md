@@ -151,4 +151,5 @@ docker push internal-registry:5000/myorg/stockdata
 Once the image is in a registry, you can deploy it to individual Docker hosts or to a container orchestration engine like Kubernetes.
 
 >[!div class="step-by-step"]
-<!-->[Next](kubernetes.md)-->
+>[Previous](self-hosted.md)
+>[Next](kubernetes.md)

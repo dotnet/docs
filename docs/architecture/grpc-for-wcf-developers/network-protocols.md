@@ -34,4 +34,5 @@ This feature is one of the most important innovations of HTTP/2. By allowing mul
 Fundamentally, the combination of gRPC and HTTP/2 offer developers at least the equivalent speed and efficiency of NetTCP bindings for WCF, and in some cases even greater speed and efficiency. However, unlike NetTCP, gRPC over HTTP/2 isn't constrained to .NET applications.
 
 >[!div class="step-by-step"]
-<!-->[Next](why-grpc.md)-->
+>[Previous](interface-definition-language.md)
+>[Next](why-grpc.md)

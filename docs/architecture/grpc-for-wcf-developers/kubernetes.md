@@ -90,7 +90,6 @@ kubectl apply -f object.yml
 
 The `apply` command will check the validity of the YAML file and display any errors received from the API, but doesn't wait until all the objects declared in the file have been created as this can take some time. Use the `kubectl get` command with the relevant object types to check on object creation in the cluster.
 
-
 ### The namespace declaration
 
 Namespace declaration is simple and requires only assigning a `name`.
@@ -312,4 +311,5 @@ This means that by default requests to a gRPC service aren't balanced across all
 The next chapter, [Service Meshes](service-mesh.md), will look at how to address this problem.
 
 >[!div class="step-by-step"]
-<!-->[Next](service-mesh.md)-->
+>[Previous](docker.md)
+>[Next](service-mesh.md)

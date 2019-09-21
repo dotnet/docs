@@ -10,4 +10,4 @@ ms.date: 09/02/2019
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 >[!div class="step-by-step"]
-<!-->[Next](remote-procedure-calls.md)-->
+>[Next](remote-procedure-calls.md)

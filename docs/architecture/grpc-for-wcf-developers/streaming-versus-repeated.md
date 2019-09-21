@@ -30,4 +30,5 @@ For datasets where each individual item can be processed separately by the consu
 Another scenario where streams can be useful is where a message is being processed across multiple services. If each service in a chain returns a stream, then the terminal service (that is, the last one in the chain) can start returning messages that can be processed and passed back along the chain to the original requestor, which can either return a stream or aggregate the results into a single response message. This approach lends itself well to patterns like Map/Reduce.
 
 >[!div class="step-by-step"]
-<!-->[Next](client-libraries.md)-->
+>[Previous](migrate-duplex-services.md)
+>[Next](client-libraries.md)

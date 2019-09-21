@@ -73,4 +73,5 @@ If you set `product.AvailableIn` to `Region.NorthAmerica | Region.SouthAmerica`,
 The best way to work with multiple enum values in Protobuf is to use a `repeated` field of the enum type.
 
 >[!div class="step-by-step"]
-<!-->[Next](protobuf-maps.md)-->
+>[Previous](protobuf-any-oneof.md)
+>[Next](protobuf-maps.md)

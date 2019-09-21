@@ -62,4 +62,5 @@ The final section of the book looks at how to get the best from gRPC in practice
 This guide was written for developers working in .NET Framework or .NET Core who have previously used WCF and who are seeking to migrate their applications to a modern RPC environment for .NET Core 3.0 and later versions. The guide may also be of use more generally for developers upgrading or considering upgrading to .NET Core 3.0 who want to use the built-in gRPC tools.
 
 >[!div class="step-by-step"]
-<!-->[Next](grpc-overview.md)-->
+>[Previous](index.md)
+>[Next](grpc-overview.md)

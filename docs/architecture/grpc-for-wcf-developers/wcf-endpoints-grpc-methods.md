@@ -47,4 +47,5 @@ The `IsInitiating` property lets you indicate that a method within a [ServiceCon
 For more information on gRPC security and encryption, see [chapter 6](authentication.md).
 
 >[!div class="step-by-step"]
-<!-->[Next](wcf-bindings.md)-->
+>[Previous](wcf-services-to-grpc-comparison.md)
+>[Next](wcf-bindings.md)

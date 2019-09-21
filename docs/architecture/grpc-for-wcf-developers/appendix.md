@@ -22,4 +22,4 @@ If that isn't possible, then one alternative is to use the [Saga pattern](https:
 Another option is to use Domain Driven Design (DDD) and Command/Query Responsibility Segregation (CQRS), as described in the [.NET Microservices e-book](https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/). In particular, using domain events or [event sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) can help to ensure that updates are consistently&mdash;if not immediately&mdash;applied.
 
 >[!div class="step-by-step"]
-<!-->[Next](introduction.md)-->
+>[Previous](application-performance-management.md)

@@ -106,4 +106,5 @@ public void FormatChangeNotification(ChangeNotification change)
 Setting any field that is part of a `oneof` set will automatically clear any other fields in the set. You can't use `repeated` with `oneof`. Instead, you can create a nested message with either the repeated field or the `oneof` set to work around this limitation.
 
 >[!div class="step-by-step"]
-<!-->[Next](protobuf-enums.md)-->
+>[Previous](protobuf-reserved.md)
+>[Next](protobuf-enums.md)

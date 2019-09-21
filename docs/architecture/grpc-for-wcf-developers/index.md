@@ -73,4 +73,4 @@ Feel free to forward this guide to your team to help ensure a common understandi
   <https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
 
 >[!div class="step-by-step"]
-<!-->[Next](introduction.md)-->
+>[Next](introduction.md)

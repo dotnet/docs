@@ -267,4 +267,5 @@ public class Chat : IAsyncDisposable
 ```
 
 >[!div class="step-by-step"]
-<!-->[Next](metadata.md)-->
+>[Previous](wcf-bindings.md)
+>[Next](metadata.md)

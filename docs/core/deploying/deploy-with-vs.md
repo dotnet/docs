@@ -20,7 +20,7 @@ The following sections show how to use Microsoft Visual Studio to create the fol
 - Self-contained deployment
 - Self-contained deployment with third-party dependencies
 
-For information on using Visual Studio to develop .NET Core applications, see [Prerequisites for .NET Core on Windows](../windows-prerequisites.md#prerequisites-with-visual-studio).
+For information on using Visual Studio to develop .NET Core applications, see [Prerequisites for .NET Core on Windows](../windows-prerequisites.md#prerequisites-to-develop-net-core-apps-with-visual-studio).
 
 ## Framework-dependent deployment
 

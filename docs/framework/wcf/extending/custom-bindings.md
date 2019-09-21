@@ -8,7 +8,7 @@ ms.assetid: 58532b6d-4eea-4a4f-854f-a1c8c842564d
 ---
 # Custom Bindings
 
-You can use the <xref:System.ServiceModel.Channels.CustomBinding> class when one of the system-provided bindings does not meet the requirements of your service. All bindings are constructed from an ordered set of binding elements. Custom bindings can be built from a set of system-provided binding elements or can include user-defined custom binding elements. You can use custom binding elements, for example, to enable the use of new transports or encoders at a service endpoint. For working examples, see [Custom Binding Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751479(v=vs.90)). For more information, see [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).
+You can use the <xref:System.ServiceModel.Channels.CustomBinding> class when one of the system-provided bindings does not meet the requirements of your service. All bindings are constructed from an ordered set of binding elements. Custom bindings can be built from a set of system-provided binding elements or can include user-defined custom binding elements. You can use custom binding elements, for example, to enable the use of new transports or encoders at a service endpoint. For working examples, see [Custom Binding Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751479(v=vs.90)). For more information, see [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md).
 
 ## Construction of a Custom Binding
 
@@ -70,9 +70,9 @@ In addition, you can define your own binding elements and insert them between an
 
 ## See also
 
-- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)
-- [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
-- [How to: Customize a System-Provided Binding](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)
-- [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
-- [Custom Binding](../../../../docs/framework/wcf/samples/custom-binding.md)
+- [Endpoint Creation Overview](../endpoint-creation-overview.md)
+- [Using Bindings to Configure Services and Clients](../using-bindings-to-configure-services-and-clients.md)
+- [System-Provided Bindings](../system-provided-bindings.md)
+- [How to: Customize a System-Provided Binding](how-to-customize-a-system-provided-binding.md)
+- [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md)
+- [Custom Binding](../samples/custom-binding.md)

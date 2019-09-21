@@ -29,7 +29,7 @@ WCF provides base class helpers for this process. (For a diagram of the channel 
 
 - The <xref:System.ServiceModel.Channels.ChannelListenerBase> class implements <xref:System.ServiceModel.Channels.IChannelListener>. It takes care of basic state management.
 
-The following discussion is based upon the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.
+The following discussion is based upon the [Transport: UDP](../samples/transport-udp.md) sample.
 
 ## Creating a channel listener
 

@@ -23,5 +23,5 @@ This topic provides links to the Visual Basic and C# solutions that contain [!IN
   
 ## See also
 
-- [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)
+- [LINQ to SQL](index.md)
 - [LINQ to SQL Walkthroughs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb386295(v=vs.90))

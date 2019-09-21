@@ -18,7 +18,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # ImportTypes2 Method
-Initiates the import of types. Call this method to begin importing types from each scope imported via [ImportFile Method](../../../../docs/framework/unmanaged-api/alink/importfile-method.md).  
+Initiates the import of types. Call this method to begin importing types from each scope imported via [ImportFile Method](importfile-method.md).  
   
 ## Syntax  
   
@@ -47,7 +47,7 @@ HRESULT ImportTypes2(
  Receives enumerator handle for the types in the given scope.  
   
  `ppImportScope`  
- Optionally receives [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md) interface.  
+ Optionally receives [IMetaDataImport2 Interface](../metadata/imetadataimport2-interface.md) interface.  
   
  `pdwCountOfTypes`  
  Optionally receives count of types in the specified scope.  
@@ -60,6 +60,6 @@ HRESULT ImportTypes2(
   
 ## See also
 
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [IALink Interface](ialink-interface.md)
+- [ALink API](index.md)

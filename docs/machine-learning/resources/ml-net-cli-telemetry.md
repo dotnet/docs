@@ -2,7 +2,7 @@
 title: Telemetry collection by ML.NET CLI
 description: Learn about ML.NET CLI telemetry features that collect usage information for analysis, which data is collected, and how to disable it. Also, find links to the .NET license agreement and information about Microsoft GDPR compliance.
 ms.topic: conceptual
-ms.date: 05/05/2019
+ms.date: 09/03/2019
 ms.custom: ""
 ---
 
@@ -31,14 +31,14 @@ Telemetry *is enabled* when you run an [ML.NET CLI command](../reference/ml-net-
 
 The ML.NET CLI telemetry feature is enabled by default.
 
-Opt out of the telemetry feature by setting the `MLDOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`. This environment variable applies globally to the .NET CLI tool.
+Opt out of the telemetry feature by setting the `MLDOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`. This environment variable applies globally to the ML.NET CLI tool.
 
 ## Data points collected
 
 The feature collects the following data:
 
 - What command was invoked, such as `auto-train`
-- Command-line parameter names used (i.e. "dataset-name, label-column-name, ml-task, output-path, max-exploration-time, verbosity")
+- Command-line parameter names used (that is, "dataset-name, label-column-name, ml-task, output-path, max-exploration-time, verbosity")
 - Hashed MAC address: a cryptographically (SHA256) anonymous and unique ID for a machine
 - Timestamp of an invocation
 - Three octet IP address (not full IP address) used only to determine geographical location
@@ -47,12 +47,13 @@ The feature collects the following data:
 - Dataset file-size bucket
 - Operating system and version
 - Value of --task parameter: Categorical values, such as `regression`, `binary-classification`, and `multiclass-classification`
-- ML.NET CLI version (i.e. 0.3.27703.4)
+- ML.NET CLI version (that is, 0.3.27703.4)
 
 The data is sent securely to Microsoft servers using [Azure Application Insights](https://azure.microsoft.com/services/application-insights/) technology, held under restricted access, and used under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
 
 ### Data points not collected
 The telemetry feature *doesn't* collect:
+
 - personal data, such as usernames
 - dataset filenames
 - data from dataset files
@@ -68,6 +69,7 @@ The Microsoft distribution of ML.NET CLI is licensed with the [Microsoft Softwar
 When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) such as `mlnet auto-train`, the ML.NET CLI tool displays disclosure text that tells you how to opt out of telemetry. Text may vary slightly depending on the version of the CLI you're running.
 
 ## See also
+
 - [ML.NET CLI reference](../reference/ml-net-cli-reference.md)
 - [Microsoft Software License Terms: Microsoft .NET Library](https://aka.ms/dotnet-core-eula)
 - [Privacy at Microsoft](https://www.microsoft.com/trustcenter/privacy/)

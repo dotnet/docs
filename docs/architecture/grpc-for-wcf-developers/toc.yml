@@ -3,15 +3,6 @@
   items:
   - name: Introduction
     href: introduction.md
-    items:
-    - name: Distributed applications, microservices, etc.
-      href: distributed-applications.md
-    - name: Remote procedure calls
-      href: remote-procedure-calls.md
-    - name: WCF in a nutshell
-      href: wcf-in-a-nutshell.md
-    - name: gRPC in a nutshell
-      href: grpc-in-a-nutshell.md
   - name: Overview of gRPC
     href: grpc-overview.md
     items:
@@ -59,26 +50,28 @@
       href: error-handling.md
     - name: WS-* protocols
       href: ws-protocols.md
-  - name: Migrating a WCF solution to gRPC
-    href: migrating-wcf-to-grpc.md
+  - name: Migrate a WCF solution to gRPC
+    href: migrate-wcf-to-grpc.md
     items:
     - name: Create a new ASP.NET Core gRPC project
-      href: create-grpc-project.md
+      href: create-project.md
     - name: Migrate a WCF request-reply service to gRPC
-      href: migrating-request-reply.md
+      href: migrate-request-reply.md
     - name: Migrate WCF duplex services to gRPC
-      href: migrating-duplex-services.md
+      href: migrate-duplex-services.md
     - name: gRPC streaming services vs repeated fields
-      href: streaming-vs-repeated.md
+      href: streaming-versus-repeated.md
     - name: Client libraries
       href: client-libraries.md
-  - name: gRPC authentication and authorization
-    href: authentication.md
+  - name: Security in gRPC applications
+    href: security.md
     items:
     - name: Call credentials
       href: call-credentials.md
     - name: Channel credentials
       href: channel-credentials.md
+    - name: Encryption
+      href: encryption.md
   - name: gRPC in production
     href: grpc-in-production.md
     items:
@@ -93,6 +86,6 @@
     - name: Load-balancing
       href: load-balancing.md
     - name: Application Performance Management
-      href: apm.md
+      href: application-performance-management.md
   - name: Appendix
     href: appendix.md

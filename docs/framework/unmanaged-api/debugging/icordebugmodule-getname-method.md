@@ -23,7 +23,7 @@ Gets the file name of the module.
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT GetName(  
     [in] ULONG32 cchName,  
     [out] ULONG32 *pcchName,  

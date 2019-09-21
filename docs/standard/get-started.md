@@ -27,4 +27,4 @@ There are a number of ways to get started with .NET. Because .NET is a massive p
 
 ## Get started using .NET Core on Docker
 
-[Introduction to .NET and Docker](../core/docker/intro-net-docker.md) shows how you can use .NET Core on Windows Docker containers.
+[Introduction to .NET and Docker](../core/docker/introduction.md) shows how you can use .NET Core on Windows Docker containers.

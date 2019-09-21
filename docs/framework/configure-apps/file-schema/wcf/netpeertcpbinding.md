@@ -8,9 +8,10 @@ ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
 # \<netPeerTcpBinding>
 Defines a binding for peer channel specific TCP messaging.  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<netPeerTcpBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<netPeerTcpBinding>**  
   
 ## Syntax  
   

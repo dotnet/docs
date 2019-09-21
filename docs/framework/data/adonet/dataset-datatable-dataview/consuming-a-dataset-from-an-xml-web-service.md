@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 9edd6b71-0fa5-4649-ae1d-ac1c12541019
 ---
 # Consuming a DataSet from an XML Web Service
-The <xref:System.Data.DataSet> was architected with a disconnected design, in part to facilitate the convenient transport of data over the Internet. The **DataSet** is "serializable" in that it can be specified as an input to or output from XML Web services without any additional coding required to stream the contents of the **DataSet** from an XML Web service to a client and back. The **DataSet** is implicitly converted to an XML stream using the DiffGram format, sent over the network, and then reconstructed from the XML stream as a **DataSet** on the receiving end. This gives you a very simple and flexible method for transmitting and returning relational data using XML Web services. For more information about the DiffGram format, see [DiffGrams](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/diffgrams.md).  
+The <xref:System.Data.DataSet> was architected with a disconnected design, in part to facilitate the convenient transport of data over the Internet. The **DataSet** is "serializable" in that it can be specified as an input to or output from XML Web services without any additional coding required to stream the contents of the **DataSet** from an XML Web service to a client and back. The **DataSet** is implicitly converted to an XML stream using the DiffGram format, sent over the network, and then reconstructed from the XML stream as a **DataSet** on the receiving end. This gives you a very simple and flexible method for transmitting and returning relational data using XML Web services. For more information about the DiffGram format, see [DiffGrams](diffgrams.md).  
   
  The following example shows how to create an XML Web service and client that use the **DataSet** to transport relational data (including modified data) and resolve any updates back to the original data source.  
   
@@ -151,7 +151,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
     }  
     ```  
   
-     In a typical scenario, the **UpdateCustomers** method would be written to catch optimistic concurrency violations. For simplicity, the example does not include this. For more information about optimistic concurrency, see [Optimistic Concurrency](../../../../../docs/framework/data/adonet/optimistic-concurrency.md).  
+     In a typical scenario, the **UpdateCustomers** method would be written to catch optimistic concurrency violations. For simplicity, the example does not include this. For more information about optimistic concurrency, see [Optimistic Concurrency](../optimistic-concurrency.md).  
   
 2. Create an XML Web service proxy.  
   
@@ -255,11 +255,11 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
   
 ## See also
 
-- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
-- [Populating a DataSet from a DataAdapter](../../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)
-- [Updating Data Sources with DataAdapters](../../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)
-- [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)
+- [ADO.NET](../index.md)
+- [DataSets, DataTables, and DataViews](index.md)
+- [DataTables](datatables.md)
+- [Populating a DataSet from a DataAdapter](../populating-a-dataset-from-a-dataadapter.md)
+- [Updating Data Sources with DataAdapters](../updating-data-sources-with-dataadapters.md)
+- [DataAdapter Parameters](../dataadapter-parameters.md)
 - [Web Services Description Language Tool (Wsdl.exe)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7h3ystb6(v=vs.100))
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

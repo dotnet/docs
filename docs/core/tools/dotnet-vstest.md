@@ -14,9 +14,11 @@ ms.date: 05/30/2018
 
 ## Synopsis
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.1](#tab/netcore21)
 
-```
+```console
 dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath]
     [--Platform|/Platform] [--Framework|/Framework] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter] [--logger|/logger]
     [-lt|--ListTests|/lt|/ListTests] [--ParentProcessId|/ParentProcessId] [--Port|/Port] [--Diag|/Diag] [--Blame|/Blame] [--InIsolation|/InIsolation]
@@ -25,7 +27,7 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--Tes
 
 # [.NET Core 2.0](#tab/netcore20)
 
-```
+```console
 dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath] 
     [--Platform|/Platform] [--Framework|/Framework] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter] [--logger|/logger]
     [-lt|--ListTests|/lt|/ListTests] [--ParentProcessId|/ParentProcessId] [--Port|/Port] [--Diag|/Diag] [[--] <args>...]] [-?|--Help|/?|/Help]
@@ -33,7 +35,7 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--Tes
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```
+```console
 dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath]
     [--Platform|/Platform] [--Framework|/Framework] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter] [--logger|/logger] 
     [-lt|--ListTests|/lt|/ListTests] [--ParentProcessId|/ParentProcessId] [--Port|/Port] [--Diag|/Diag] [[--] <args>...]] [-?|--Help|/?|/Help]
@@ -93,7 +95,7 @@ Specify a logger for test results.
 
 * To publish test results to Team Foundation Server, use the `TfsPublisher` logger provider:
 
-  ```
+  ```console
   /logger:TfsPublisher;
       Collection=<team project collection url>;
       BuildName=<build name>;
@@ -105,7 +107,7 @@ Specify a logger for test results.
 
 * To log results to a Visual Studio Test Results File (TRX), use the `trx` logger provider. This switch creates a file in the test results directory with given log file name. If `LogFileName` isn't provided, a unique file name is created to hold the test results.
 
-  ```
+  ```console
   /logger:trx [;LogFileName=<Defaults to unique file name>]
   ```
 
@@ -181,7 +183,7 @@ Specify a logger for test results.
 
 * To publish test results to Team Foundation Server, use the `TfsPublisher` logger provider:
 
-  ```
+  ```console
   /logger:TfsPublisher;
       Collection=<team project collection url>;
       BuildName=<build name>;
@@ -193,7 +195,7 @@ Specify a logger for test results.
 
 * To log results to a Visual Studio Test Results File (TRX), use the `trx` logger provider. This switch creates a file in the test results directory with given log file name. If `LogFileName` isn't provided, a unique file name is created to hold the test results.
 
-  ```
+  ```console
   /logger:trx [;LogFileName=<Defaults to unique file name>]
   ```
 
@@ -257,7 +259,7 @@ Specify a logger for test results.
 
 * To publish test results to Team Foundation Server, use the `TfsPublisher` logger provider:
 
-  ```
+  ```console
   /logger:TfsPublisher;
       Collection=<team project collection url>;
       BuildName=<build name>;
@@ -269,7 +271,7 @@ Specify a logger for test results.
 
 * To log results to a Visual Studio Test Results File (TRX), use the `trx` logger provider. This switch creates a file in the test results directory with given log file name. If `LogFileName` isn't provided, a unique file name is created to hold the test results.
 
-  ```
+  ```console
   /logger:trx [;LogFileName=<Defaults to unique file name>]
   ```
 

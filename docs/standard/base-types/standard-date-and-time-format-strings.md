@@ -26,7 +26,7 @@ A standard date and time format string uses a single format specifier to define 
 - To define the text representation of a date and time value that can be converted to a <xref:System.DateTime> or <xref:System.DateTimeOffset> value by a parsing operation.
 
 > [!TIP]
-> You can download the [Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either numeric or date and time values and displays the result string.
+> You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs) and [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb).
 
 Standard date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
 
@@ -448,4 +448,5 @@ Formatting is influenced by properties of the current <xref:System.Globalization
 - <xref:System.DateTimeOffset?displayProperty=nameWithType>
 - [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
 - [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
-- [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+- [Sample: .NET Core WinForms Formatting Utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)
+- [Sample: .NET Core WinForms Formatting Utility (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb)

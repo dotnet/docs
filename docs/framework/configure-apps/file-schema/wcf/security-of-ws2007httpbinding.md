@@ -6,11 +6,12 @@ ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
 # \<security> of \<ws2007HttpBinding>
 Represents the security settings used with the [\<ws2007HttpBinding>](ws2007httpbinding.md) element.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<ws2007HttpBinding>  
-\<binding>  
-\<security>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<ws2007HttpBinding>**](ws2007httpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
 ## Syntax  
   

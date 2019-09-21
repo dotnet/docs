@@ -6,11 +6,12 @@ ms.assetid: 202e430c-c1b9-4343-abe2-ac78c181a3b7
 # \<entries>
 A routing entry that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.  
   
- \<system.serviceModel>  
-\<routing>  
-\<routingTables>  
-\<table>  
-\<entries>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<filterTables>**](filtertables.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<filterTable>**](filtertable.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<entries>**  
   
 ## Syntax  
   

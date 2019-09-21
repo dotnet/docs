@@ -11,6 +11,7 @@ Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when yo
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
+>
 > * Extend interfaces safely by adding methods with implementations.
 > * Create parameterized implementations to provide greater flexibility.
 > * Enable implementers to provide a more specific implementation in the form of an override.
@@ -31,7 +32,7 @@ They defined a second interface that represents an order:
 
 From those interfaces, the team could build a library for their users to create a better experience for their customers. Their goal was to create a deeper relationship with existing customers and improve their relationships with new customers.
 
-Now, it's time to upgrade the library for the next release. One of the requested features enables a loyalty discount for customers that have lots of orders. This new loyalty discount gets applied whenever a customer makes an order. The specific discount is a property of each individual customer. Each implementation of ICustomer can set different rules for the loyalty discount. 
+Now, it's time to upgrade the library for the next release. One of the requested features enables a loyalty discount for customers that have lots of orders. This new loyalty discount gets applied whenever a customer makes an order. The specific discount is a property of each individual customer. Each implementation of `ICustomer` can set different rules for the loyalty discount. 
 
 The most natural way to add this functionality is to enhance the `ICustomer` interface with a method to apply any loyalty discount. This design suggestion caused concern among experienced developers: "Interfaces are immutable once they've been released! This is a breaking change!" C# 8.0 adds *default interface implementations* for upgrading interfaces. The library authors can add new members to the interface and provide a default implementation for those members.
 
@@ -41,7 +42,7 @@ Default interface implementations enable developers to upgrade an interface whil
 
 The team agreed on the most likely default implementation: a loyalty discount for customers.
 
-The upgrade should provide the functionality to set two properties: the number of orders needed to be eligible for the discount, and the percentage of the discount. This makes it a perfect scenario for default interface members. You can add a method to the ICustomer interface, and provide the most likely implementation. All existing, and any new implementations can use the default implementation, or provide their own.
+The upgrade should provide the functionality to set two properties: the number of orders needed to be eligible for the discount, and the percentage of the discount. This makes it a perfect scenario for default interface members. You can add a method to the `ICustomer` interface, and provide the most likely implementation. All existing, and any new implementations can use the default implementation, or provide their own.
 
 First, add the new method to the implementation:
 
@@ -63,7 +64,7 @@ That's a good start. But, the default implementation is too restrictive. Many co
 
 [!code-csharp[VersionTwoImplementation](~/samples/csharp/tutorials/default-interface-members-versions/finished/customer-relationship/ICustomer.cs?name=SnippetLoyaltyDiscountVersionTwo)]
 
-There's many new language capabilities shown in that small code fragment. Interfaces can now include static members, including fields and methods. Different access modifiers are also enabled. The additional fields are private, the new method is public. Any of the modifiers are allowed on interface members.
+There are many new language capabilities shown in that small code fragment. Interfaces can now include static members, including fields and methods. Different access modifiers are also enabled. The additional fields are private, the new method is public. Any of the modifiers are allowed on interface members.
 
 Applications that use the general formula for computing the loyalty discount, but different parameters, don't need to provide a custom implementation; they can set the arguments through a static method. For example, the following code sets a "customer appreciation" that rewards any customer with more than one month's membership:
 

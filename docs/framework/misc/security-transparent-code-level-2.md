@@ -197,9 +197,9 @@ You can skip verification for fully trusted transparent assemblies by setting th
 
 `[assembly: SecurityRules(SecurityRuleSet.Level2, SkipVerificationInFullTrust = true)]`
 
-The <xref:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust%2A> property is `false` by default, so the property must be set to `true` to skip verification. This should be done for optimization purposes only. You should ensure that the transparent code in the assembly is verifiable by using the `transparent` option in the [PEVerify tool](../../../docs/framework/tools/peverify-exe-peverify-tool.md).
+The <xref:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust%2A> property is `false` by default, so the property must be set to `true` to skip verification. This should be done for optimization purposes only. You should ensure that the transparent code in the assembly is verifiable by using the `transparent` option in the [PEVerify tool](../tools/peverify-exe-peverify-tool.md).
 
 ## See also
 
-- [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)
-- [Security Changes](../../../docs/framework/security/security-changes.md)
+- [Security-Transparent Code, Level 1](security-transparent-code-level-1.md)
+- [Security Changes](../security/security-changes.md)

@@ -47,7 +47,6 @@ This walkthrough contains the following sections:
 
 ## Creating the Console Application
 
-<a name="consoleApp"></a>
 1. In Visual Studio, create a Visual C# or Visual Basic **Console Application** project. In this document, the project is named `DataflowBatchDatabase`.
 
 2. In your project, add a reference to System.Data.SqlServerCe.dll and a reference to System.Threading.Tasks.Dataflow.dll.

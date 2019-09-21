@@ -14,7 +14,7 @@ Starting with the .NET Framework 4.6, the <xref:System.Drawing.Icon.ToBitmap%2A?
  This change affects apps that are recompiled to target the .NET Framework 4.6 and that implement special handling for the <xref:System.ArgumentOutOfRangeException> that is thrown when an <xref:System.Drawing.Icon> object has PNG frames. When running under the .NET Framework 4.6, the conversion is successful, an <xref:System.ArgumentOutOfRangeException> is no longer thrown, and therefore the exception handler is no longer invoked.  
   
 ### Mitigation  
- If this behavior is undesirable, you can retain the previous behavior by adding the following element to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
+ If this behavior is undesirable, you can retain the previous behavior by adding the following element to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
   
 ```xml  
 <AppContextSwitchOverrides   
@@ -30,4 +30,4 @@ Starting with the .NET Framework 4.6, the <xref:System.Drawing.Icon.ToBitmap%2A?
   
 ## See also
 
-- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md)
+- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6.md)

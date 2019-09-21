@@ -2,21 +2,21 @@
 title: "<issuerChannelBehaviors> Element"
 ms.date: "03/30/2017"
 ms.assetid: f7378673-8e9b-45b2-98d1-cf5dccdd8c40
+no-loc: [<system.serviceModel>, <behaviors>, <endpointBehaviors>, <behavior>, <clientCredentials>, <issuedToken>, <issuerChannelBehaviors>, <dataContractSerializer>]
 ---
 
 # \<issuerChannelBehaviors> Element
 
 Contains a collection of Windows Communication Foundation (WCF) client endpoint behaviors (defined in the configuration) to be used when communicating with the specified Service Token Services. The defined behaviors cannot include any [\<clientCredentials>](clientcredentials.md) elements.
 
-```xml
-<system.ServiceModel>
-  <behaviors>
-    <endpointBehaviors>
-      <behavior>
-        <clientCredentials>
-          <issuedToken>
-            <issuerChannelBehaviors>
-```
+[\<configuration>](../configuration-element.md)\
+&nbsp;&nbsp;[\<system.serviceModel>](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<behaviors>](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<endpointBehaviors>](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<behavior>](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<clientCredentials>](clientcredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<issuedToken>](issuedtoken.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<issuerChannelBehaviors>
 
 ## Syntax
 
@@ -27,7 +27,7 @@ Contains a collection of Windows Communication Foundation (WCF) client endpoint 
 </issuerChannelBehaviors>
 ```
 
-## Attributes and Elements
+## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.
 
@@ -35,13 +35,13 @@ The following sections describe attributes, child elements, and parent elements.
 
 None.
 
-### Child Elements
+### Child elements
 
 |Element|Description|
 |-------------|-----------------|
 |[\<add>](add-of-issuerchannelbehaviors.md)|Adds a behavior to the collection.|
 
-### Parent Elements
+### Parent elements
 
 |Element|Description|
 |-------------|-----------------|

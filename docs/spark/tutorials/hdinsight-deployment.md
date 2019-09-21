@@ -14,6 +14,7 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Azure
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > * Prepare Microsoft.Spark.Worker
 > * Publish your Spark .NET app
 > * Deploy your app to Azure HDInsight
@@ -100,7 +101,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
    ```bash
    spark-submit \
    --master yarn \
-   --class org.apache.spark.deploy.DotnetRunner \
+   --class org.apache.spark.deploy.dotnet.DotnetRunner \
    --files <comma-separated list of assemblies that contain UDF definitions, if any> \
    abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar \
    abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/<your app>.zip <your app> <app arg 1> <app arg 2> ... <app arg n>
@@ -120,7 +121,7 @@ curl -k -v -X POST "https://<your spark cluster>.azurehdinsight.net/livy/batches
 -d @- << EOF
 {
     "file":"abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar",
-    "className":"org.apache.spark.deploy.DotnetRunner",
+    "className":"org.apache.spark.deploy.dotnet.DotnetRunner",
     "files":["abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/<udf assembly>", "abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/<file>"],
     "args":["abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/<your app>.zip","<your app>","<app arg 1>","<app arg 2>,"...","<app arg n>"]
 }

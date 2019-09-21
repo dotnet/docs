@@ -6,9 +6,11 @@ ms.assetid: ff122116-6042-4792-9f21-275b4f97a105
 # \<netHttpsBinding>
 Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate over HTTPS. When used with a duplex contract, Web Sockets will be used, otherwise HTTPS will be used.  
   
- Root Element  
-Next Element  
-  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<netHttpsBinding>**  
+
 ## Syntax  
   
 ```xml  

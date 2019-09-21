@@ -22,4 +22,4 @@ Friend assembly reference \<reference> is invalid. Strong-name signed assemblies
 ## See also
 
 - <xref:System.Reflection.AssemblyName>
-- [Friend Assemblies](../../../standard/assembly/friend-assemblies.md)
+- [Friend Assemblies](../../../standard/assembly/friend.md)

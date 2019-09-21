@@ -16,7 +16,7 @@ Hosting of [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-ti
 ## IOleCommandTarget  
  WPF Active Document server's implementation of [IOleCommandTarget](https://go.microsoft.com/fwlink/?LinkId=162047) supports numerous navigation-related and browser-specific commands of the standard OLE command group (with a null command group GUID). In addition, it recognizes a custom command group called CGID_PresentationHost. Currently, there is only one command defined within this group.  
   
-```  
+```cpp  
 DEFINE_GUID(CGID_PresentationHost, 0xd0288c55, 0xd6, 0x4f5e, 0xa8, 0x51, 0x79, 0xde, 0xc5, 0x1b, 0x10, 0xec);  
 enum PresentationHostCommands {   
    PHCMDID_TABINTO = 1   

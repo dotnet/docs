@@ -101,7 +101,7 @@ You need to create some classes for your input data and predictions. Add a new c
 
 To make a single prediction, use [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). In order to use [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) in your application you must create it when it's needed. In that case, a best practice to consider is dependency injection.
 
-The following link provides more information if you want to learn about [dependency injection in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1).
+The following link provides more information if you want to learn about [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection).
 
 1. Open the *Startup.cs* class and add the following using statement to the top of the file:
 
@@ -198,4 +198,4 @@ Congratulations! You have successfully served your model to make predictions ove
 
 ## Next Steps
 
-- [Deploy to Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure)
+- [Deploy to Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs#deploy-the-app-to-azure)

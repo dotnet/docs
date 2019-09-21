@@ -111,7 +111,7 @@ client.ClientCredentials.Windows.AllowedImpersonationLevel = TokenImpersonationL
   
 4. To demonstrate that the service impersonates the caller, run the client under a different account than the one the service is running under. To do so, at the command prompt, type:  
   
-    ```  
+    ```console  
     runas /user:<machine-name>\<user-name> client.exe  
     ```  
   

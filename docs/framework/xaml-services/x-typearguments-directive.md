@@ -39,7 +39,7 @@ Passes constraining type arguments of a generic to the constructor of the generi
 ## Usage Examples  
  For these examples, assume that the following XAML namespace definitions are declared:  
   
-```  
+```xaml  
 xmlns:sys="clr-namespace:System;assembly=mscorlib"  
 xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"  
 ```  
